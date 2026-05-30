@@ -1,9 +1,10 @@
 backend:
   name: github
-  repo: آپ_کا_گٹ_ہب_یوزر_نیم/آپ_کی_ریپوزٹری_کا_نام # یہاں اپنا نام لکھیں
-  branch: main # یا master جو بھی آپ کی برانچ کا نام ہے
+  repo: asmmarkettrader-design/asmmarkettrader-design.github.io
+  branch: main # اگر آپ کی برانچ کا نام master ہے تو یہاں master لکھ دیں
+  site_url: https://www.asmveo.com
 
-media_folder: "images/uploads" # جو تصویریں آپ اپلوڈ کریں گے وہ یہاں جائیں گی
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
