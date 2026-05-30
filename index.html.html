@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM Digital Solutions | Global Enterprise Growth Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-dark: #030712;
+            --card-surface: #0b1329;
+            --accent-cyan: #00f2fe;
+            --accent-blue: #0072ff;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --neon-glow: cubic-bezier(0.15, 0.85, 0.45, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Tech Background Network Grid */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: -2;
+        }
+
+        .tech-orb {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            filter: blur(160px);
+            z-index: -1;
+            opacity: 0.25;
+        }
+        .orb-1 { top: -10%; left: -10%; background: var(--accent-cyan); }
+        .orb-2 { top: 40%; right: -10%; background: var(--accent-blue); }
+
+        /* Fixed Premium Header & Menu Tab Switching */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(3, 7, 18, 0.85);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            font-size: 26px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-tabs a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-tabs a:hover, .nav-tabs a.active {
+            color: var(--accent-cyan);
+        }
+
+        .nav-tabs a::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; width: 0; height: 2px;
+            background: var(--accent-cyan);
+            transition: 0.3s;
+        }
+
+        .nav-tabs a:hover::after, .nav-tabs a.active::after {
+            width: 100%;
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            color: #030712;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 242, 254, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 180px 8% 100px 8%;
+            text-align: center;
+        }
+
+        .agency-tag {
+            background: rgba(0, 242, 254, 0.05);
+            border: 1px solid rgba(0, 242, 254, 0.15);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--accent-cyan);
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 1.2;
+            max-width: 950px;
+            margin: 0 auto 25px auto;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 780px;
+            margin: 0 auto 40px auto;
+            font-weight: 300;
+        }
+
+        /* Global Sections Styling */
+        section {
+            padding: 90px 8%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services Grid Architecture */
+        .grid-matrix {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .matrix-card {
+            background: var(--card-surface);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 40px 30px;
+            transition: all 0.4s var(--neon-glow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .matrix-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 242, 254, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 242, 254, 0.08);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .icon-box i {
+            font-size: 24px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .matrix-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .matrix-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        /* Fixed Direct Whatsapp Linking Actions */
+        .card-action-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .matrix-card:hover .card-action-btn {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            color: #030712;
+            border-color: transparent;
+        }
+
+        /* About Us Platform Structure */
+        .about-layout {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--accent-cyan);
+        }
+
+        .about-text p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .stats-infographic {
+            flex: 1;
+            min-width: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-node {
+            background: var(--card-surface);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-bottom: 5px;
+        }
+
+        /* Portfolio Modules */
+        .portfolio-matrix {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-node {
+            background: var(--card-surface);
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .mock-image-container {
+            height: 200px;
+            background: linear-gradient(45deg, #0f172a, #1e293b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .mock-image-container i {
+            font-size: 50px;
+            color: rgba(255, 255, 255, 0.05);
+        }
+
+        .mock-tag {
+            position: absolute;
+            bottom: 15px; left: 15px;
+            background: var(--accent-blue);
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .portfolio-meta {
+            padding: 25px;
+        }
+
+        .portfolio-meta h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-meta p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Contact Hub & Terminal */
+        .contact-hub {
+            background: rgba(11, 19, 41, 0.4);
+            border-radius: 20px;
+            border: 1px solid rgba(0, 242, 254, 0.1);
+            padding: 50px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-channels {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .channel-btn {
+            text-decoration: none;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 16px 32px;
+            border-radius: 10px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: 0.3s;
+        }
+
+        .channel-btn.wa:hover { border-color: #25D366; box-shadow: 0 0 15px rgba(37, 211, 102, 0.15); color: #25D366; }
+        .channel-btn.ml:hover { border-color: #ea4335; box-shadow: 0 0 15px rgba(234, 67, 53, 0.15); color: #ea4335; }
+
+        /* Modernized Tech Footer */
+        footer {
+            padding: 80px 8% 40px 8%;
+            background: #02040a;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .footer-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-brand h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .footer-links h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: var(--accent-cyan);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Responsiveness Configuration */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 38px; }
+            .nav-tabs { display: none; } /* Mobile optimization */
+            nav { padding: 15px 5%; }
+            footer .footer-layout { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tech-orb orb-1"></div>
+    <div class="tech-orb orb-2"></div>
+
+    <nav>
+        <div class="logo-area">
+            <i class="fa-solid fa-layer-group logo-icon"></i>
+            <div class="logo-text">ASM Digital Solutions</div>
+        </div>
+        <div class="nav-tabs">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <a href="https://wa.me/923425478683" class="nav-btn">Get Free Audit</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <span class="agency-tag">🚀 Global Growth Infrastructure</span>
+        <h1>We Do Not Just Build Websites.<br>We Engineer <span>Digital Presence</span>.</h1>
+        <p>ASM Digital Solutions deploys enterprise-grade SEO optimization matrices, high-conversion Paid Ads management, and safe automated Brand Reputation systems engineered to scale your market authority globally.</p>
+        <a href="https://wa.me/923425478683" class="nav-btn" style="padding: 15px 35px;"><i class="fa-fab fa-whatsapp"></i> Initialize Free Diagnostic Audit</a>
+    </section>
+
+    <section id="services">
+        <div class="section-header">
+            <h2>Our Core Competencies</h2>
+            <p>End-to-end digital solutions configured for conversion, growth, and absolute industry dominance.</p>
+        </div>
+
+        <div class="grid-matrix">
+            <div class="matrix-card">
+                <div>
+                    <div class="icon-box"><i class="fa-solid fa-star-half-stroke"></i></div>
+                    <h3>Reputation Management</h3>
+                    <p>Secure premium, geo-targeted business reviews using compliant residential profiles across USA, UK, CA, AU, EU, & UAE platforms.</p>
+                </div>
+                <a href="https://wa.me/923425478683?text=Hi,%20I'm%20interested%20in%20your%20Reputation%20Management%20Services." class="card-action-btn">Deploy Reviews <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="matrix-card">
+                <div>
+                    <div class="icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Professional SEO</h3>
+                    <p>Rank #1 on search networks. High-tier On-Page optimization, technical audits, secure backlinks, guest posts, and GMB growth.</p>
+                </div>
+                <a href="https://wa.me/923425478683?text=Hi,%20I'm%20interested%20in%20your%20Professional%20SEO%20Services." class="card-action-btn">Optimize Rankings <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="matrix-card">
+                <div>
+                    <div class="icon-box"><i class="fa-solid fa-rectangle-ad"></i></div>
+                    <h3>Paid Marketing</h3>
+                    <p>Architecting targeted lead generation and scaling funnels across Google Ads, YouTube Video Networks, Meta, and TikTok.</p>
+                </div>
+                <a href="https://wa.me/923425478683?text=Hi,%20I'm%20interested%20in%20your%20Paid%20Marketing%20Campaigns." class="card-action-btn">Launch Campaigns <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="matrix-card">
+                <div>
+                    <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Engineering</h3>
+                    <p>Complete domain setups, deployment, and A-to-Z code asset management for corporate profiles and heavy E-Commerce assets.</p>
+                </div>
+                <a href="https://wa.me/923425478683?text=Hi,%20I'm%20interested%20in%20your%20Web%20Engineering%20and%20Hosting%20Services." class="card-action-btn">Request Architecture <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="matrix-card">
+                <div>
+                    <div class="icon-box"><i class="fa-solid fa-users-gear"></i></div>
+                    <h3>Social Ecosystems</h3>
+                    <p>Full organic channel management, follower/view acquisition pipelines, and retention tracking for TikTok, YouTube, and Facebook.</p>
+                </div>
+                <a href="https://wa.me/923425478683?text=Hi,%20I'm%20interested%20in%20your%20Social%20Media%20Management%20Services." class="card-action-btn">Scale Operations <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="matrix-card">
+                <div>
+                    <div class="icon-box"><i class="fa-solid fa-video"></i></div>
+                    <h3>Creative Stack & Copy</h3>
+                    <p>High-retention cinematic video editing, premium content writing, and conversion graphic designs optimized for high CTR.</p>
+                </div>
+                <a href="https://wa.me/923425478683?text=Hi,%20I'm%20interested%20in%20your%20Creative%20Stack%20and%20Copy%20Services." class="card-action-btn">Build Assets <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <h2>About Our Infrastructure</h2>
+            <p>Moving away from single-handler freelance operations into verified agency execution.</p>
+        </div>
+        <div class="about-layout">
+            <div class="about-text">
+                <h3>Who We Are</h3>
+                <p>ASM Digital Solutions is an international digital asset engineering group. We specialize in software structures, complex network optimizations, and scalable marketing frameworks tailored strictly for businesses seeking real ROI over mere impressions.</p>
+                <p>Our safe white-hat methodologies mean your business domains, ad accounts, and reputation metrics remain fully secured across algorithmic shifts.</p>
+            </div>
+            <div class="stats-infographic">
+                <div class="stat-node">
+                    <div class="stat-number">100%</div>
+                    <p style="color: var(--text-secondary); font-size: 14px;">Secure Protocols</p>
+                </div>
+                <div class="stat-node">
+                    <div class="stat-number">24/7</div>
+                    <p style="color: var(--text-secondary); font-size: 14px;">Global Monitoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="section-header">
+            <h2>Proven Conversions</h2>
+            <p>A look into the digital frameworks and traffic pipelines we have executed.</p>
+        </div>
+        <div class="portfolio-matrix">
+            <div class="portfolio-node">
+                <div class="mock-image-container">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="mock-tag">SEO & Reputation</span>
+                </div>
+                <div class="portfolio-meta">
+                    <h4>E-Commerce Brand Scale</h4>
+                    <p>Optimized technical SEO footprint and injected geo-targeted trust nodes, increasing organic checkout metrics by 140% in USA regions.</p>
+                </div>
+            </div>
+            <div class="portfolio-node">
+                <div class="mock-image-container">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span class="mock-tag">Web & Ads</span>
+                </div>
+                <div class="portfolio-meta">
+                    <h4>B2B Corporate Pipeline</h4>
+                    <p>Built full-funnel custom reactive interface and deployed cross-network social advertising on Meta/TikTok yielding targeted conversions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-hub">
+            <div class="icon-box" style="margin: 0 auto 20px auto;"><i class="fa-solid fa-headset"></i></div>
+            <h2>Connect with Headquarters</h2>
+            <p style="color: var(--text-secondary); margin-top: 10px;">Ready to exit page 2 of search results? Initiate direct communication with our tactical team below.</p>
+            <div class="contact-channels">
+                <a href="https://wa.me/923425478683" class="channel-btn wa">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 20px;"></i> Direct WhatsApp Line
+                </a>
+                <a href="mailto:Asmmarkettrader@gmail.com" class="channel-btn ml">
+                    <i class="fa-regular fa-envelope" style="font-size: 20px;"></i> Corporate Mailbox
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-layout">
+            <div class="footer-brand">
+                <h3>ASM Digital Solutions</h3>
+                <p>Advanced digital presence engineering, tactical SEO optimization, high-ROI client sourcing, and automated brand preservation. Operational worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation Matrix</h4>
+                <ul>
+                    <li><a href="#home">Home Base</a></li>
+                    <li><a href="#services">Architecture Module</a></li>
+                    <li><a href="#about">About Core</a></li>
+                    <li><a href="#portfolio">Executed Pipelines</a></li>
+                    <li><a href="#contact">Contact Node</a></li>
+                </ul>
+            </div>
+        </div>
+        <p style="text-align: center; font-size: 12px; color: rgba(255,255,255,0.1); border-top: 1px solid rgba(255,255,255,0.02); padding-top: 30px;">&copy; 2026 ASM Digital Solutions Platform. All Operations Standardized. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
