@@ -1,8 +1,11 @@
 backend:
   name: github
   repo: asmmarkettrader-design/asmmarkettrader-design.github.io
-  branch: main # اگر آپ کی برانچ کا نام master ہے تو یہاں master لکھ دیں
+  branch: main
   site_url: https://www.asmveo.com
+  # یہ گٹ ہب لاگ ان کو بغیر نیٹلی فائی کے براہ راست چلائے گا
+  base_url: https://github-oauth-login.asst.workers.dev
+  auth_endpoint: /auth
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
