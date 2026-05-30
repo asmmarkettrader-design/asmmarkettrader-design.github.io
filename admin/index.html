@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asmveo - Content Manager</title>
-  </head>
-  <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmveo - Admin Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); text-align: center; width: 300px; }
+        h2 { margin-bottom: 20px; color: #333; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #0056b3; }
+        .error { color: red; font-size: 14px; margin-top: 10px; display: none; }
+    </style>
+</head>
+<body>
 
-    <script>
-      // یہ اسکرپٹ آپ کی کلائنٹ آئی ڈی کو ڈیش بورڈ کے ساتھ جوڑے گا
-      window.CMS_CONFIG = {
-        backend: {
-          name: "github",
-          repo: "asmmarkettrader-design/asmmarkettrader-design.github.io",
-          branch: "main",
-          client_id: "Ov23li8IyuNGrcMaO3dl", // آپ کی کسٹم کلائنٹ آئی ڈی
-          auth_endpoint: "https://github.com/login/oauth/authorize"
+<div class="login-box" id="loginSection">
+    <h2>ایڈمن لاگ ان</h2>
+    <input type="text" id="username" placeholder="یوزر نیم لکھیں">
+    <input type="password" id="password" placeholder="پاسورڈ لکھیں">
+    <button onclick="checkLogin()">لاگ ان کریں</button>
+    <div class="error" id="errorMsg">غلط یوزر نیم یا پاسورڈ!</div>
+</div>
+
+<div id="dashboardSection" style="display: none; padding: 20px; background: white; width: 80%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: auto;">
+    <h2>خوش آمدید! آپ کا ایڈمن پینل لائیو ہے</h2>
+    <hr>
+    <p>یہاں سے آپ اپنی ویب سائٹ مینیج کر سکتے ہیں۔</p>
+    <button onclick="logout()" style="width: auto; background-color: #dc3545;">لاگ آؤٹ</button>
+</div>
+
+<script>
+    function checkLogin() {
+        const user = document.getElementById("username").value;
+        const pass = document.getElementById("password").value;
+
+        // ⚠️ یہاں آپ کا یوزر نیم اور پاسورڈ سیٹ ہے
+        // آپ اپنی مرضی کا یوزر نیم اور پاسورڈ یہاں بدل سکتے ہیں
+        if (user === "admin" && pass === "Asmveo@2026") {
+            // لاگ ان کامیاب
+            localStorage.setItem("isAdminLoggedIn", "true");
+            showDashboard();
+        } else {
+            // لاگ ان فیل
+            document.getElementById("errorMsg").style.display = "block";
         }
-      };
-    </script>
-  </body>
+    }
+
+    function showDashboard() {
+        document.getElementById("loginSection").style.display = "none";
+        document.getElementById("dashboardSection").style.display = "block";
+    }
+
+    function logout() {
+        localStorage.removeItem("isAdminLoggedIn");
+        location.reload();
+    }
+
+    // پیج لوڈ ہوتے ہی چیک کرو کہ کیا پہلے سے لاگ ان ہے؟
+    if (localStorage.getItem("isAdminLoggedIn") === "true") {
+        showDashboard();
+    }
+</script>
+
+</body>
 </html>
