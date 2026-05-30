@@ -3,8 +3,6 @@ backend:
   repo: asmmarkettrader-design/asmmarkettrader-design.github.io
   branch: main
   site_url: https://www.asmveo.com
-  # یہ لائنز گٹ ہب کو بتائیں گی کہ لاگ ان اسی پیج پر ہینڈل کرنا ہے
-  auth_endpoint: https://github.com/login/oauth/authorize
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
