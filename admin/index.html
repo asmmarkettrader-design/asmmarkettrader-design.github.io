@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asmveo - Admin Login</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .login-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); text-align: center; width: 300px; }
-        h2 { margin-bottom: 20px; color: #333; }
-        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
-        button:hover { background-color: #0056b3; }
-        .error { color: red; font-size: 14px; margin-top: 10px; display: none; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; direction: rtl; }
+        .login-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); text-align: center; width: 320px; }
+        h2 { margin-bottom: 20px; color: #333; font-size: 22px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; text-align: right; font-size: 14px; }
+        button { width: 100%; padding: 12px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; margin-top: 10px; }
+        button:hover { background-color: #218838; }
+        .error { color: #dc3545; font-size: 14px; margin-top: 10px; display: none; font-weight: bold; }
+        .dashboard { display: none; background: white; padding: 40px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); text-align: center; width: 80%; max-width: 600px; }
     </style>
 </head>
 <body>
 
 <div class="login-box" id="loginSection">
-    <h2>ایڈمن لاگ ان</h2>
-    <input type="text" id="username" placeholder="یوزر نیم لکھیں">
-    <input type="password" id="password" placeholder="پاسورڈ لکھیں">
+    <h2>ایڈمن لاگ ان پینل</h2>
+    <input type="text" id="username" placeholder="یوزر نیم درج کریں">
+    <input type="password" id="password" placeholder="پاسورڈ درج کریں">
     <button onclick="checkLogin()">لاگ ان کریں</button>
-    <div class="error" id="errorMsg">غلط یوزر نیم یا پاسورڈ!</div>
+    <div class="error" id="errorMsg">غلط یوزر نیم یا پاسورڈ! دوبارہ کوشش کریں۔</div>
 </div>
 
-<div id="dashboardSection" style="display: none; padding: 20px; background: white; width: 80%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: auto;">
-    <h2>خوش آمدید! آپ کا ایڈمن پینل لائیو ہے</h2>
-    <hr>
-    <p>یہاں سے آپ اپنی ویب سائٹ مینیج کر سکتے ہیں۔</p>
-    <button onclick="logout()" style="width: auto; background-color: #dc3545;">لاگ آؤٹ</button>
+<div class="dashboard" id="dashboardSection">
+    <h2>خوش آمدید! آپ کامیابی سے لاگ ان ہو چکے ہیں 🎉</h2>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <p style="font-size: 16px; color: #555;">یہ آپ کا ذاتی خفیہ ایڈمن ایریا ہے۔ اب یہاں کوئی ڈیکاپ یا نیٹلی فائی شو نہیں ہوگا۔</p>
+    <br>
+    <button onclick="logout()" style="background-color: #dc3545; width: auto; padding: 10px 20px;">لاگ آؤٹ کریں</button>
 </div>
 
 <script>
@@ -36,14 +38,11 @@
         const user = document.getElementById("username").value;
         const pass = document.getElementById("password").value;
 
-        // ⚠️ یہاں آپ کا یوزر نیم اور پاسورڈ سیٹ ہے
-        // آپ اپنی مرضی کا یوزر نیم اور پاسورڈ یہاں بدل سکتے ہیں
+        // ⚠️ یہاں آپ اپنا یوزر نیم اور پاسورڈ تبدیل کر سکتے ہیں
         if (user === "admin" && pass === "Asmveo@2026") {
-            // لاگ ان کامیاب
-            localStorage.setItem("isAdminLoggedIn", "true");
+            localStorage.setItem("myPrivateLogin", "success");
             showDashboard();
         } else {
-            // لاگ ان فیل
             document.getElementById("errorMsg").style.display = "block";
         }
     }
@@ -54,12 +53,12 @@
     }
 
     function logout() {
-        localStorage.removeItem("isAdminLoggedIn");
+        localStorage.removeItem("myPrivateLogin");
         location.reload();
     }
 
-    // پیج لوڈ ہوتے ہی چیک کرو کہ کیا پہلے سے لاگ ان ہے؟
-    if (localStorage.getItem("isAdminLoggedIn") === "true") {
+    // چیک کریں کہ کیا یوزر پہلے سے لاگ ان ہے
+    if (localStorage.getItem("myPrivateLogin") === "success") {
         showDashboard();
     }
 </script>
