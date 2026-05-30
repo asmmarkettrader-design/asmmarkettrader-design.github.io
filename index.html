@@ -1,464 +1,1044 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASM Digital Solutions | Enterprise Architecture &amp; Global Reputation Automation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Orbitron:wght@700;900&amp;display=swap" rel="stylesheet">
+    <title>ASM Digital Solutions - Elite Web Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         :root {
-            --bg-cyber: #060913;
-            --panel-glass: rgba(15, 22, 42, 0.65);
-            --neon-cyan: #00f2fe;
-            --neon-blue: #4facfe;
-            --text-silver: #f1f5f9;
-            --text-dark: #64748b;
+            --bg-dark: #060913;
+            --bg-darker: #0a0e1a;
+            --cyan: #00f2fe;
+            --blue: #4facfe;
+            --purple: #8b5cf6;
+            --text-light: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border: #1a1f3a;
+            --accent: #ff006e;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-        body { background: var(--bg-cyber); color: var(--text-silver); overflow-x: hidden; transition: padding 0.3s ease; }
-
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: var(--bg-cyber); }
-        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 5px; }
-
-        /* Advanced CMS Top Bar */
-        .wp-engine-bar { display: none; background: #1a1f26; border-bottom: 2px solid var(--neon-cyan); color: white; position: fixed; top: 0; left: 0; width: 100%; padding: 12px 5%; justify-content: space-between; align-items: center; z-index: 10000; box-shadow: 0 4px 30px rgba(0,242,254,0.15); font-size: 13px; flex-wrap: wrap; gap: 10px; }
-        .engine-controls { display: flex; align-items: center; gap: 10px; }
-        .wp-engine-bar input { background: #0b0f19; border: 1px solid #334155; color: var(--neon-cyan); padding: 8px 12px; border-radius: 4px; width: 280px; font-size: 12px; }
-        .publish-btn { background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); border: none; color: #000; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; transition: 0.2s; }
-        .publish-btn:hover { box-shadow: 0 0 15px rgba(0,242,254,0.4); }
-        .action-btn { background: #334155; border: none; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: 0.2s; }
-        .action-btn:hover { background: #475569; }
-
-        /* Loader Overlay for Background API Tasks */
-        #cmsLoader { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(6, 9, 19, 0.9); z-index: 20000; justify-content: center; align-items: center; flex-direction: column; color: var(--neon-cyan); font-family: 'Orbitron', sans-serif; font-size: 20px; }
-        .spinner { border: 4px solid rgba(0,242,254,0.1); border-top: 4px solid var(--neon-cyan); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin-bottom: 20px; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-        /* Blog Post Creation Modal */
-        #blogModal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #0f172a; border: 1px solid var(--neon-cyan); width: 90%; max-width: 700px; padding: 30px; border-radius: 12px; z-index: 15000; box-shadow: 0 0 50px rgba(0,0,0,0.8); }
-        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; }
-        .modal-header h3 { font-family: 'Orbitron', sans-serif; color: var(--neon-cyan); }
-        .close-modal { background: none; border: none; color: #ef4444; font-size: 24px; cursor: pointer; }
-        .modal-body input, .modal-body textarea { width: 100%; background: #1e293b; border: 1px solid #334155; color: white; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-family: 'Inter', sans-serif; font-size: 14px; }
-        .modal-body textarea { height: 200px; resize: vertical; }
-
-        header { background: rgba(6, 9, 19, 0.9); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.03); padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 999; flex-wrap: wrap; gap: 15px; }
-        .brand-logo { font-family: 'Orbitron', sans-serif; font-size: 24px; font-weight: 900; background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        nav { display: flex; align-items: center; flex-wrap: wrap; gap: 15px; }
-        nav a { color: var(--text-silver); text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
-        nav a:hover { color: var(--neon-cyan); }
-        .access-trigger { background: linear-gradient(135deg, #1e293b, #0f172a); border: 1px solid rgba(255,255,255,0.08); padding: 8px 14px; border-radius: 6px; font-weight: 700; cursor: pointer; color: var(--text-silver); font-size: 12px; }
-
-        .hero-viewport { padding: 100px 5% 60px; text-align: center; background: radial-gradient(circle at center, rgba(0,242,254,0.05) 0%, transparent 70%); }
-        .hero-viewport h1 { font-family: 'Orbitron', sans-serif; font-size: 38px; font-weight: 900; line-height: 1.2; margin-bottom: 20px; text-transform: uppercase; }
-        .hero-viewport p { font-size: 15px; color: var(--text-dark); max-width: 750px; margin: 0 auto 35px; line-height: 1.6; }
-        .cta-primary { background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); color: #000; padding: 14px 28px; border-radius: 8px; font-weight: 800; text-decoration: none; text-transform: uppercase; display: inline-block; }
-
-        section { padding: 60px 5% 40px; }
-        .section-headline { font-family: 'Orbitron', sans-serif; text-align: center; font-size: 28px; font-weight: 900; margin-bottom: 40px; text-transform: uppercase; }
-        .section-headline span { color: var(--neon-cyan); }
-
-        .about-wrapper { display: flex; flex-direction: column; gap: 30px; }
-        .about-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; width: 100%; }
-        .stat-box { background: var(--panel-glass); border: 1px solid rgba(255,255,255,0.03); padding: 20px; border-radius: 10px; text-align: center; }
-        .stat-number { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 900; color: var(--neon-cyan); }
-        .stat-label { color: var(--text-dark); font-size: 11px; text-transform: uppercase; }
-
-        .services-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .matrix-card { background: var(--panel-glass); border: 1px solid rgba(255,255,255,0.02); padding: 30px 25px; border-radius: 12px; }
-        .matrix-icon { font-size: 32px; color: var(--neon-cyan); margin-bottom: 15px; }
-
-        /* Dynamically Editable Images Class */
-        .editable-img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
-        .img-wrapper { position: relative; overflow: hidden; border-radius: 12px 12px 0 0; }
-        .edit-img-overlay { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,242,254,0.3); backdrop-filter: blur(5px); justify-content: center; align-items: center; color: #000; font-weight: bold; cursor: pointer; text-transform: uppercase; font-size: 14px; z-index: 10; }
-        .img-wrapper:hover .edit-img-overlay.active-engine { display: flex; }
-
-        .portfolio-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .portfolio-item { background: var(--panel-glass); border-radius: 12px; border: 1px solid rgba(255,255,255,0.02); }
-        .portfolio-info { padding: 20px; }
-
-        /* Blog Section Styles */
-        .blog-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .blog-card { background: #0b0f19; border: 1px solid rgba(255,255,255,0.03); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; }
-        .blog-card:hover { border-color: var(--neon-blue); transform: translateY(-3px); }
-        .blog-content { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
-        .blog-date { color: var(--neon-cyan); font-size: 11px; text-transform: uppercase; font-weight: bold; margin-bottom: 10px; display: block; }
-        .blog-content h4 { font-size: 18px; margin-bottom: 12px; line-height: 1.4; }
-        .blog-content p { color: var(--text-dark); font-size: 13px; line-height: 1.6; margin-bottom: 20px; flex-grow: 1; }
-        .read-more { color: var(--text-silver); text-decoration: none; font-size: 12px; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px; display: inline-block; }
-
-        /* Contact Details */
-        .contact-hub { display: flex; flex-direction: column; gap: 30px; }
-        .info-channel { background: var(--panel-glass); padding: 25px; border-radius: 12px; }
-        .channel-row { display: flex; align-items: center; margin-bottom: 20px; }
-        .channel-icon { width: 40px; height: 40px; background: rgba(0,242,254,0.05); border: 1px solid rgba(0,242,254,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--neon-cyan); margin-right: 15px; }
-        .channel-detail a { color: var(--text-silver); text-decoration: none; font-weight: 600; }
-        
-        .interactive-form input, .interactive-form textarea { background: rgba(15, 22, 42, 0.4); border: 1px solid rgba(255,255,255,0.05); padding: 12px 16px; color: white; border-radius: 6px; width: 100%; margin-bottom: 15px; }
-        .form-submit-btn { background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue)); color: #000; border: none; padding: 14px; border-radius: 6px; font-weight: 800; cursor: pointer; width: 100%; }
-
-        footer { background: #03060d; padding: 40px 5%; text-align: center; border-top: 1px solid rgba(255,255,255,0.03); color: var(--text-dark); font-size: 12px; }
-
-        @media (min-width: 768px) {
-            .hero-viewport h1 { font-size: 54px; }
-            .about-wrapper { flex-direction: row; align-items: center; }
-            .about-wrapper > div { flex: 1; }
-            .contact-hub { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; }
-            header { padding: 25px 5%; }
+        html {
+            scroll-behavior: smooth;
         }
 
-        [contenteditable="true"] { border: 1px dashed var(--neon-cyan) !important; background: rgba(0,242,254,0.04) !important; outline: none; padding: 2px; }
-    </style>
-</head>
-<body style="padding-top: 0px;">
-
-<div id="cmsLoader" style="display: none;">
-    <div class="spinner"></div>
-    <span id="loaderText">Compiling Code and Pushing to Production...</span>
-</div>
-
-<div class="wp-engine-bar" id="engineControlSuite" style="display: none;">
-    <div class="engine-controls">
-        <i class="fa-solid fa-microchip" style="color: var(--neon-cyan); font-size: 18px;"></i>
-        <strong>CMS Core v6.0</strong>
-        <input type="password" id="gitHubConsoleKey" placeholder="GitHub Access Token...">
-    </div>
-    <div class="engine-controls">
-        <button class="action-btn" onclick="openBlogEditor()"><i class="fa-solid fa-pen-nib"></i> Write Blog Post</button>
-        <button class="publish-btn" onclick="pushChangesToProduction()"><i class="fa-solid fa-satellite-dish"></i> Save &amp; Deploy</button>
-        <button onclick="killEngineView()" style="background:#ef4444; color:white; border:none; padding:8px 16px; border-radius:4px; cursor:pointer; font-weight:bold;">Exit</button>
-    </div>
-</div>
-
-<div id="blogModal" style="display: none;">
-    <div class="modal-header">
-        <h3>Deploy New Article</h3>
-        <button class="close-modal" onclick="closeBlogEditor()"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div class="modal-body">
-        <input type="text" id="blogInputTitle" placeholder="Article Title (e.g. DNS Optimization Guide)">
-        <input type="file" id="blogInputImage" accept="image/*" style="background: transparent; border: none; padding: 0;">
-        <textarea id="blogInputContent" placeholder="Write your full technical article here... HTML tags like &lt;b&gt; or &lt;br&gt; are supported."></textarea>
-        <button class="publish-btn" style="width: 100%;" onclick="publishBlogPost()"><i class="fa-solid fa-rocket"></i> Inject Post to System</button>
-    </div>
-</div>
-
-<input type="file" id="masterImageUploader" style="display: none;" accept="image/*">
-
-<header>
-    <div class="brand-logo" id="uiLogo">ASM Solutions</div>
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#blog">Knowledge Base</a>
-        <a href="#contact">Contact</a>
-        <button class="access-trigger" id="engineInitBtn" onclick="runConsoleAuthentication()" style="display: block;"><i class="fa-solid fa-fingerprint"></i> System Login</button>
-    </nav>
-</header>
-
-<main>
-    <div class="hero-viewport">
-        <h1 id="uiHeroTitle">Architecting Elite Platforms &amp; Global Authority Structures</h1>
-        <p id="uiHeroParagraph">We build specialized, high-performance software frameworks, implement advanced DNS configurations, and deploy geo-targeted review networks engineered to dominate international tech profiles.</p>
-        <a href="#contact" class="cta-primary">Launch Strategy</a>
-    </div>
-
-    <section id="portfolio">
-        <h2 class="section-headline" id="uiPortfolioTitle">System <span>Deployments</span></h2>
-        <div class="portfolio-matrix">
-            <div class="portfolio-item">
-                <div class="img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=600&amp;q=80" class="editable-img" id="img1" alt="Server Setup">
-                    <div class="edit-img-overlay" onclick="triggerImageChange('img1')"><i class="fa-solid fa-camera"></i> Update Image</div>
-                </div>
-                <div class="portfolio-info">
-                    <span class="portfolio-tag">Networking</span>
-                    <h4 id="p1t">Asmveo Domain Sync</h4>
-                    <p id="p1d">Successful DNS overhaul, proxy deployment, and static continuous deployment routing using GitHub.</p>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="img-wrapper">
-                    <img src="uploads/img_1780154275660_GeminiGeneratedImagev873vnv873vnv873.png" class="editable-img" id="img2" alt="Code Arch">
-                    <div class="edit-img-overlay" onclick="triggerImageChange('img2')"><i class="fa-solid fa-camera"></i> Update Image</div>
-                </div>
-                <div class="portfolio-info">
-                    <span class="portfolio-tag">Software Logic</span>
-                    <h4 id="p2t">Decentralized CMS Node</h4>
-                    <p id="p2d">Integrating real-time visual adjustments directly inside static delivery pipelines safely.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog">
-        <h2 class="section-headline">Technical <span>Insights</span></h2>
-        <div class="blog-matrix" id="blogContainer">
-            <div class="blog-card">
-                <div class="img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=600&amp;q=80" class="editable-img" id="bImg1" alt="Tech News">
-                    <div class="edit-img-overlay" onclick="triggerImageChange('bImg1')"><i class="fa-solid fa-camera"></i> Update Image</div>
-                </div>
-                <div class="blog-content">
-                    <span class="blog-date">May 30, 2026</span>
-                    <h4 id="bt1">The Future of Static Site Automation</h4>
-                    <p id="bd1">Utilizing standard HTML and advanced API routing to bypass heavy database architectures, ensuring 99.9% uptime and immediate global CDN delivery.</p>
-                    <a href="javascript:void(0)" class="read-more">Read Architecture -&gt;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="contact-hub">
-            <div class="info-channel">
-                <div class="channel-row">
-                    <div class="channel-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                    <div class="channel-detail"><a href="https://wa.me/923425478683">+92 342 5478683</a></div>
-                </div>
-                <div class="channel-row">
-                    <div class="channel-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
-                    <div class="channel-detail"><a href="mailto:asmmarkett@gmail.com">asmmarkett@gmail.com</a></div>
-                </div>
-                <div class="channel-row">
-                    <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                    <div class="channel-detail"><a href="https://www.linkedin.com/in/asm-market-traders">LinkedIn Profile</a></div>
-                </div>
-            </div>
-            <form class="interactive-form" onsubmit="event.preventDefault(); alert('Transmission Sent.');">
-                <input type="text" placeholder="Identity / Name" required="">
-                <input type="email" placeholder="Contact Email" required="">
-                <textarea placeholder="Outline parameters..." style="height: 100px;" required=""></textarea>
-                <button type="submit" class="form-submit-btn">Transmit Frame</button>
-            </form>
-        </div>
-    </section>
-</main>
-
-<footer>
-    © 2026 ASM Digital Solutions. Engineered by Hybrid Headless CMS Core.
-</footer>
-
-<script>
-    const GITHUB_REPO = "asmmarkettrader-design/asmmarkettrader-design.github.io";
-    let activeImageTargetId = null;
-
-    // ----- Engine Authentication -----
-    function runConsoleAuthentication() {
-        const user = prompt("Access ID:");
-        const pass = prompt("Secret Key:");
-        if (user === "admin" && pass === "Asmveo@2026") {
-            localStorage.setItem("engineActiveState", "active_auth");
-            wakeVisualEngine();
-        } else {
-            alert("Violation: Access Denied.");
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
-    }
 
-    function wakeVisualEngine() {
-        document.getElementById("engineControlSuite").style.display = "flex";
-        document.body.style.paddingTop = "60px";
-        document.getElementById("engineInitBtn").style.display = "none";
-        
-        // Make Texts Editable
-        const ids = ["uiLogo", "uiHeroTitle", "uiHeroParagraph", "uiPortfolioTitle", "p1t", "p1d", "p2t", "p2d", "bt1", "bd1"];
-        ids.forEach(id => {
-            const el = document.getElementById(id);
-            if(el) el.setAttribute("contenteditable", "true");
-        });
-
-        // Activate Image Overlays
-        document.querySelectorAll('.edit-img-overlay').forEach(overlay => {
-            overlay.classList.add('active-engine');
-        });
-
-        if(localStorage.getItem("persistentGitKey")) {
-            document.getElementById("gitHubConsoleKey").value = localStorage.getItem("persistentGitKey");
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(6, 9, 19, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 1rem 2rem;
         }
-    }
 
-    function killEngineView() {
-        localStorage.removeItem("engineActiveState");
-        location.reload();
-    }
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    // ----- Universal Loader Logic -----
-    function showLoader(text) {
-        document.getElementById('loaderText').innerText = text;
-        document.getElementById('cmsLoader').style.display = 'flex';
-    }
-    function hideLoader() { document.getElementById('cmsLoader').style.display = 'none'; }
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-    // ----- GITHUB API UPLOAD LOGIC (Images) -----
-    function triggerImageChange(imgId) {
-        activeImageTargetId = imgId;
-        document.getElementById("masterImageUploader").click();
-    }
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
 
-    document.getElementById("masterImageUploader").addEventListener("change", async function(event) {
-        const file = event.target.files[0];
-        if(!file) return;
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-        const token = document.getElementById("gitHubConsoleKey").value;
-        if(!token) return alert("Please insert your GitHub Access Token in the top bar first.");
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cyan), var(--blue));
+            transition: width 0.3s ease;
+        }
 
-        showLoader("Uploading Image to Repo...");
+        nav a:hover::after {
+            width: 100%;
+        }
 
-        // Convert to Base64
-        const reader = new FileReader();
-        reader.onload = async function(e) {
-            const base64Content = e.target.result.split(',')[1];
-            const safeFileName = `uploads/img_${Date.now()}_${file.name.replace(/[^a-zA-Z0-9.]/g, '')}`;
+        .btn-login {
+            padding: 0.6rem 1.5rem;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: var(--bg-dark);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
 
-            const targetEndpoint = `https://api.github.com/repos/${GITHUB_REPO}/contents/${safeFileName}`;
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.3);
+        }
 
-            try {
-                const response = await fetch(targetEndpoint, {
-                    method: "PUT",
-                    headers: { "Authorization": `token ${token}`, "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                        message: `CMS: Uploaded new media ${file.name}`,
-                        content: base64Content
-                    })
-                });
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
 
-                if(response.ok) {
-                    const data = await response.json();
-                    // Update DOM immediately with relative path so it's permanent
-                    document.getElementById(activeImageTargetId).src = safeFileName;
-                    alert("Media Uploaded Successfully!");
-                } else {
-                    throw new Error("GitHub API rejected upload. Check token permissions.");
-                }
-            } catch(error) {
-                alert(error.message);
-            } finally {
-                hideLoader();
-                event.target.value = ""; // Reset input
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--cyan);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* ===== ADMIN LOGIN MODAL ===== */
+        .admin-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .admin-modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--bg-darker);
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            padding: 2.5rem;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 20px 60px rgba(0, 242, 254, 0.1);
+        }
+
+        .modal-content h2 {
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            color: var(--text-light);
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--cyan);
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-submit, .btn-cancel {
+            flex: 1;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: var(--bg-dark);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-cancel {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            border: 1px solid var(--border);
+        }
+
+        /* ===== ADMIN BAR ===== */
+        .admin-bar {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: rgba(139, 92, 246, 0.1);
+            border-bottom: 2px solid var(--purple);
+            padding: 1rem 2rem;
+            z-index: 999;
+            backdrop-filter: blur(10px);
+        }
+
+        .admin-bar.active {
+            display: flex;
+        }
+
+        .admin-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .admin-bar-content input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.6rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--purple);
+            border-radius: 5px;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .admin-bar-content input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .admin-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .admin-btn {
+            padding: 0.6rem 1rem;
+            background: var(--purple);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .admin-btn:hover {
+            background: var(--cyan);
+            color: var(--bg-dark);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            margin-top: 80px;
+            padding: 8rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 242, 254, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(79, 172, 254, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
             }
-        };
-        reader.readAsDataURL(file);
-    });
-
-    // ----- BLOG GENERATOR LOGIC -----
-    function openBlogEditor() { document.getElementById('blogModal').style.display = 'block'; }
-    function closeBlogEditor() { document.getElementById('blogModal').style.display = 'none'; }
-
-    async function publishBlogPost() {
-        const title = document.getElementById('blogInputTitle').value;
-        const content = document.getElementById('blogInputContent').value;
-        const fileInput = document.getElementById('blogInputImage');
-        const token = document.getElementById("gitHubConsoleKey").value;
-
-        if(!title || !content || !token) {
-            return alert("Missing fields or GitHub Token.");
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        let imagePath = "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=600&q=80"; // Fallback
-        const uniqueId = "bImg" + Date.now();
-
-        // If user attached an image to the blog
-        if(fileInput.files.length > 0) {
-            showLoader("Uploading Blog Media...");
-            const file = fileInput.files[0];
-            const base64 = await new Promise((resolve) => {
-                const r = new FileReader();
-                r.onload = (e) => resolve(e.target.result.split(',')[1]);
-                r.readAsDataURL(file);
-            });
-            const safeFileName = `uploads/blog_${Date.now()}_${file.name.replace(/[^a-zA-Z0-9.]/g, '')}`;
-            
-            const upRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${safeFileName}`, {
-                method: "PUT",
-                headers: { "Authorization": `token ${token}`, "Content-Type": "application/json" },
-                body: JSON.stringify({ message: "CMS: Blog Cover Image", content: base64 })
-            });
-            if(upRes.ok) imagePath = safeFileName;
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.2;
         }
 
-        // Build HTML Block
-        const dateString = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-        
-        const newPostHTML = `
-        <div class="blog-card">
-            <div class="img-wrapper">
-                <img src="${imagePath}" class="editable-img" id="${uniqueId}" alt="${title}">
-                <div class="edit-img-overlay active-engine" onclick="triggerImageChange('${uniqueId}')"><i class="fa-solid fa-camera"></i> Update Image</div>
-            </div>
-            <div class="blog-content">
-                <span class="blog-date">${dateString}</span>
-                <h4 id="bt_${uniqueId}" contenteditable="true">${title}</h4>
-                <p id="bd_${uniqueId}" contenteditable="true">${content.replace(/\n/g, "<br>")}</p>
-                <a href="javascript:void(0)" class="read-more">Read Architecture -></a>
-            </div>
-        </div>`;
-
-        // Inject into DOM
-        document.getElementById('blogContainer').insertAdjacentHTML('afterbegin', newPostHTML);
-        
-        closeBlogEditor();
-        alert("Post Generated locally. Click 'Save & Deploy' to push changes to GitHub Server.");
-    }
-
-    // ----- DEPLOY ALL CHANGES LOGIC -----
-    async function pushChangesToProduction() {
-        const token = document.getElementById("gitHubConsoleKey").value;
-        if (!token) return alert("🔑 CRITICAL: GitHub Token Missing.");
-        
-        localStorage.setItem("persistentGitKey", token);
-        showLoader("Compiling Code and Pushing to Production...");
-
-        // Prepare DOM for saving (Remove editable tags and UI)
-        const activeIds = document.querySelectorAll('[contenteditable="true"]');
-        activeIds.forEach(el => el.removeAttribute("contenteditable"));
-        
-        document.querySelectorAll('.edit-img-overlay').forEach(el => el.classList.remove('active-engine'));
-        document.getElementById("engineControlSuite").style.display = "none";
-        document.body.style.paddingTop = "0";
-        document.getElementById("engineInitBtn").style.display = "block";
-        document.getElementById("blogModal").style.display = "none";
-        document.getElementById("cmsLoader").style.display = "none";
-
-        const completeHTMLPayload = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
-
-        // Restore UI state for the admin immediately
-        wakeVisualEngine();
-        document.getElementById("cmsLoader").style.display = "flex";
-
-        const targetEndpoint = `https://api.github.com/repos/${GITHUB_REPO}/contents/index.html`;
-
-        try {
-            const fetchMeta = await fetch(targetEndpoint, { headers: { "Authorization": `token ${token}` } });
-            const metaResponse = await fetchMeta.json();
-
-            const executePushStream = await fetch(targetEndpoint, {
-                method: "PUT",
-                headers: { "Authorization": `token ${token}`, "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    message: "CMS Master Deploy: Text/Image/Blog updates",
-                    content: btoa(unescape(encodeURIComponent(completeHTMLPayload))),
-                    sha: metaResponse.sha
-                })
-            });
-
-            if (executePushStream.ok) {
-                hideLoader();
-                alert("🚀 MISSION ACCOMPLISHED: Full build synced! Content & Images will reflect globally within 60 seconds.");
-            } else { throw new Error(); }
-        } catch (f) {
-            hideLoader();
-            alert("❌ TRANSACTION TERMINATED: Check Repo Name and Token scopes.");
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-    }
 
-    // Auto-wake if previously logged in
-    if (localStorage.getItem("engineActiveState") === "active_auth") {
-        wakeVisualEngine();
-    }
-</script>
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
 
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-</body></html>
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: var(--bg-dark);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 242, 254, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cyan);
+            border: 2px solid var(--cyan);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 242, 254, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* ===== STATS SECTION ===== */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 4rem auto 0;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            background: rgba(0, 242, 254, 0.05);
+            border-color: var(--cyan);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, rgba(6, 9, 19, 0.5) 0%, rgba(10, 14, 26, 0.5) 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 242, 254, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            background: rgba(0, 242, 254, 0.05);
+            border-color: var(--cyan);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 242, 254, 0.1);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            border
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM Digital Solutions - Elite Web Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #060913;
+            --bg-darker: #0a0e1a;
+            --cyan: #00f2fe;
+            --blue: #4facfe;
+            --purple: #8b5cf6;
+            --text-light: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --border: #1a1f3a;
+            --accent: #ff006e;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(6, 9, 19, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cyan), var(--blue));
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .btn-login {
+            padding: 0.6rem 1.5rem;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: var(--bg-dark);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.3);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--cyan);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* ===== ADMIN LOGIN MODAL ===== */
+        .admin-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .admin-modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--bg-darker);
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            padding: 2.5rem;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 20px 60px rgba(0, 242, 254, 0.1);
+        }
+
+        .modal-content h2 {
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            color: var(--text-light);
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--cyan);
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-submit, .btn-cancel {
+            flex: 1;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: var(--bg-dark);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-cancel {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            border: 1px solid var(--border);
+        }
+
+        /* ===== ADMIN BAR ===== */
+        .admin-bar {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: rgba(139, 92, 246, 0.1);
+            border-bottom: 2px solid var(--purple);
+            padding: 1rem 2rem;
+            z-index: 999;
+            backdrop-filter: blur(10px);
+        }
+
+        .admin-bar.active {
+            display: flex;
+        }
+
+        .admin-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .admin-bar-content input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.6rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--purple);
+            border-radius: 5px;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .admin-bar-content input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .admin-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .admin-btn {
+            padding: 0.6rem 1rem;
+            background: var(--purple);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .admin-btn:hover {
+            background: var(--cyan);
+            color: var(--bg-dark);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            margin-top: 80px;
+            padding: 8rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 242, 254, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(79, 172, 254, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: var(--bg-dark);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 242, 254, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cyan);
+            border: 2px solid var(--cyan);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 242, 254, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* ===== STATS SECTION ===== */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 4rem auto 0;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            background: rgba(0, 242, 254, 0.05);
+            border-color: var(--cyan);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, rgba(6, 9, 19, 0.5) 0%, rgba(10, 14, 26, 0.5) 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 242, 254, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            background: rgba(0, 242, 254, 0.05);
+            border-color: var(--cyan);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 242, 254, 0.1);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            border
