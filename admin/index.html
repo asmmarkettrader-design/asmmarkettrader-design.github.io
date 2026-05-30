@@ -11,17 +11,23 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     
     <script>
-      // یہ لائن سب سے اہم ہے! یہ آپ کے نیٹلی فائی کے یو آر ایل کو لنک کرے گی
-      // یہاں نیچے 'your-site-name.netlify.app' کی جگہ اپنے نیٹلی فائی کا لنک ڈالیں
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
+      // جیسے ہی پیج لوڈ ہوگا، یہ کوڈ لاگ ان سسٹم کو آپ کے نیٹلی فائی اکاؤنٹ سے جوڑ دے گا
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.netlifyIdentity) {
+          // ⚠️ نیچے والی لائن میں اپنی سائٹ کا اصل نیٹلی فائی لنک ڈالیں (جیسے: your-site.netlify.app)
+          window.netlifyIdentity.init({
+            APIUrl: "https://asmmarkettrader-design-github-io.netlify.app/.netlify/identity"
+          });
+
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>
