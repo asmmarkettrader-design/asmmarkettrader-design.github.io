@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASM Digital Solutions | Enterprise Architecture & Global Reputation Automation</title>
+    <title>ASM Digital Solutions | Enterprise Architecture &amp; Global Reputation Automation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Orbitron:wght@700;900&amp;display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-cyber: #060913;
@@ -114,14 +113,14 @@
         [contenteditable="true"] { border: 1px dashed var(--neon-cyan) !important; background: rgba(0,242,254,0.04) !important; outline: none; padding: 2px; }
     </style>
 </head>
-<body>
+<body style="padding-top: 0px;">
 
-<div id="cmsLoader">
+<div id="cmsLoader" style="display: none;">
     <div class="spinner"></div>
-    <span id="loaderText">Syncing with GitHub Architecture...</span>
+    <span id="loaderText">Compiling Code and Pushing to Production...</span>
 </div>
 
-<div class="wp-engine-bar" id="engineControlSuite">
+<div class="wp-engine-bar" id="engineControlSuite" style="display: none;">
     <div class="engine-controls">
         <i class="fa-solid fa-microchip" style="color: var(--neon-cyan); font-size: 18px;"></i>
         <strong>CMS Core v6.0</strong>
@@ -129,12 +128,12 @@
     </div>
     <div class="engine-controls">
         <button class="action-btn" onclick="openBlogEditor()"><i class="fa-solid fa-pen-nib"></i> Write Blog Post</button>
-        <button class="publish-btn" onclick="pushChangesToProduction()"><i class="fa-solid fa-satellite-dish"></i> Save & Deploy</button>
+        <button class="publish-btn" onclick="pushChangesToProduction()"><i class="fa-solid fa-satellite-dish"></i> Save &amp; Deploy</button>
         <button onclick="killEngineView()" style="background:#ef4444; color:white; border:none; padding:8px 16px; border-radius:4px; cursor:pointer; font-weight:bold;">Exit</button>
     </div>
 </div>
 
-<div id="blogModal">
+<div id="blogModal" style="display: none;">
     <div class="modal-header">
         <h3>Deploy New Article</h3>
         <button class="close-modal" onclick="closeBlogEditor()"><i class="fa-solid fa-xmark"></i></button>
@@ -142,7 +141,7 @@
     <div class="modal-body">
         <input type="text" id="blogInputTitle" placeholder="Article Title (e.g. DNS Optimization Guide)">
         <input type="file" id="blogInputImage" accept="image/*" style="background: transparent; border: none; padding: 0;">
-        <textarea id="blogInputContent" placeholder="Write your full technical article here... HTML tags like <b> or <br> are supported."></textarea>
+        <textarea id="blogInputContent" placeholder="Write your full technical article here... HTML tags like &lt;b&gt; or &lt;br&gt; are supported."></textarea>
         <button class="publish-btn" style="width: 100%;" onclick="publishBlogPost()"><i class="fa-solid fa-rocket"></i> Inject Post to System</button>
     </div>
 </div>
@@ -156,13 +155,13 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#blog">Knowledge Base</a>
         <a href="#contact">Contact</a>
-        <button class="access-trigger" id="engineInitBtn" onclick="runConsoleAuthentication()"><i class="fa-solid fa-fingerprint"></i> System Login</button>
+        <button class="access-trigger" id="engineInitBtn" onclick="runConsoleAuthentication()" style="display: block;"><i class="fa-solid fa-fingerprint"></i> System Login</button>
     </nav>
 </header>
 
 <main>
     <div class="hero-viewport">
-        <h1 id="uiHeroTitle">Architecting Elite Platforms & Global Authority Structures</h1>
+        <h1 id="uiHeroTitle">Architecting Elite Platforms &amp; Global Authority Structures</h1>
         <p id="uiHeroParagraph">We build specialized, high-performance software frameworks, implement advanced DNS configurations, and deploy geo-targeted review networks engineered to dominate international tech profiles.</p>
         <a href="#contact" class="cta-primary">Launch Strategy</a>
     </div>
@@ -172,7 +171,7 @@
         <div class="portfolio-matrix">
             <div class="portfolio-item">
                 <div class="img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" class="editable-img" id="img1" alt="Server Setup">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=600&amp;q=80" class="editable-img" id="img1" alt="Server Setup">
                     <div class="edit-img-overlay" onclick="triggerImageChange('img1')"><i class="fa-solid fa-camera"></i> Update Image</div>
                 </div>
                 <div class="portfolio-info">
@@ -183,7 +182,7 @@
             </div>
             <div class="portfolio-item">
                 <div class="img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" class="editable-img" id="img2" alt="Code Arch">
+                    <img src="uploads/img_1780154275660_GeminiGeneratedImagev873vnv873vnv873.png" class="editable-img" id="img2" alt="Code Arch">
                     <div class="edit-img-overlay" onclick="triggerImageChange('img2')"><i class="fa-solid fa-camera"></i> Update Image</div>
                 </div>
                 <div class="portfolio-info">
@@ -200,14 +199,14 @@
         <div class="blog-matrix" id="blogContainer">
             <div class="blog-card">
                 <div class="img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" class="editable-img" id="bImg1" alt="Tech News">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=600&amp;q=80" class="editable-img" id="bImg1" alt="Tech News">
                     <div class="edit-img-overlay" onclick="triggerImageChange('bImg1')"><i class="fa-solid fa-camera"></i> Update Image</div>
                 </div>
                 <div class="blog-content">
                     <span class="blog-date">May 30, 2026</span>
                     <h4 id="bt1">The Future of Static Site Automation</h4>
                     <p id="bd1">Utilizing standard HTML and advanced API routing to bypass heavy database architectures, ensuring 99.9% uptime and immediate global CDN delivery.</p>
-                    <a href="javascript:void(0)" class="read-more">Read Architecture -></a>
+                    <a href="javascript:void(0)" class="read-more">Read Architecture -&gt;</a>
                 </div>
             </div>
         </div>
@@ -230,9 +229,9 @@
                 </div>
             </div>
             <form class="interactive-form" onsubmit="event.preventDefault(); alert('Transmission Sent.');">
-                <input type="text" placeholder="Identity / Name" required>
-                <input type="email" placeholder="Contact Email" required>
-                <textarea placeholder="Outline parameters..." style="height: 100px;" required></textarea>
+                <input type="text" placeholder="Identity / Name" required="">
+                <input type="email" placeholder="Contact Email" required="">
+                <textarea placeholder="Outline parameters..." style="height: 100px;" required=""></textarea>
                 <button type="submit" class="form-submit-btn">Transmit Frame</button>
             </form>
         </div>
@@ -240,7 +239,7 @@
 </main>
 
 <footer>
-    &copy; 2026 ASM Digital Solutions. Engineered by Hybrid Headless CMS Core.
+    © 2026 ASM Digital Solutions. Engineered by Hybrid Headless CMS Core.
 </footer>
 
 <script>
@@ -460,5 +459,6 @@
         wakeVisualEngine();
     }
 </script>
-</body>
-</html>
+
+
+</body></html>
