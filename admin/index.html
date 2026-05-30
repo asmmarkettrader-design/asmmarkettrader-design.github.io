@@ -7,5 +7,18 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  </head>
+
+    <script>
+      // یہ اسکرپٹ آپ کی کلائنٹ آئی ڈی کو ڈیش بورڈ کے ساتھ جوڑے گا
+      window.CMS_CONFIG = {
+        backend: {
+          name: "github",
+          repo: "asmmarkettrader-design/asmmarkettrader-design.github.io",
+          branch: "main",
+          client_id: "Ov23li8IyuNGrcMaO3dl", // آپ کی کسٹم کلائنٹ آئی ڈی
+          auth_endpoint: "https://github.com/login/oauth/authorize"
+        }
+      };
+    </script>
+  </body>
 </html>
