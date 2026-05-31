@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Syne:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 5%;
+    --foreground: 195 100% 94%;
+    --card: 222 38% 8%;
+    --card-foreground: 195 100% 94%;
+    --popover: 222 38% 8%;
+    --popover-foreground: 195 100% 94%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 222 47% 5%;
+    --secondary: 220 100% 50%;
+    --secondary-foreground: 195 100% 94%;
+    --muted: 222 20% 20%;
+    --muted-foreground: 220 12% 59%;
+    --accent: 195 100% 50%;
+    --accent-foreground: 222 47% 5%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 195 100% 50% / 0.15;
+    --input: 195 100% 50% / 0.15;
+    --ring: 195 100% 50%;
+    --radius: 0.75rem;
+    --sidebar-background: 222 47% 5%;
+    --sidebar-foreground: 195 100% 94%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 222 38% 12%;
+    --sidebar-accent-foreground: 195 100% 94%;
+    --sidebar-border: 195 100% 50% / 0.15;
+    --sidebar-ring: 195 100% 50%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Syne', sans-serif;
+    background-color: #0A0E1A;
+    color: #E0F7FF;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(0, 212, 255, 0.3);
+    color: #FFFFFF;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A0E1A;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 212, 255, 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 212, 255, 0.5);
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(13, 18, 32, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    border-radius: 16px;
+  }
+
+  .glass-card-strong {
+    background: rgba(13, 18, 32, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 16px;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 rounded-full font-orbitron font-semibold text-sm transition-all duration-300;
+    background-color: #00D4FF;
+    color: #0A0E1A;
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 rounded-full font-orbitron font-semibold text-sm transition-all duration-300 border-2;
+    border-color: #00D4FF;
+    color: #00D4FF;
+    background: transparent;
+  }
+
+  .btn-outline:hover {
+    background-color: #00D4FF;
+    color: #0A0E1A;
+  }
+
+  .btn-whatsapp {
+    @apply px-8 py-3 rounded-full font-orbitron font-semibold text-sm transition-all duration-300 flex items-center gap-2;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #FFFFFF;
+  }
+
+  .btn-whatsapp:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+
+  .nav-link {
+    @apply font-syne font-medium text-sm uppercase tracking-widest transition-colors duration-300;
+    color: #8A93A5;
+    position: relative;
+  }
+
+  .nav-link:hover {
+    color: #00D4FF;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #00D4FF;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  .nav-link.active {
+    color: #00D4FF;
+  }
+
+  .nav-link.active::after {
+    transform: scaleX(1);
+  }
+
+  .section-padding {
+    @apply py-20 md:py-24 px-4 sm:px-6 lg:px-8;
+  }
+
+  .grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #00D4FF, #0066FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-border {
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .glow-border:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+}
