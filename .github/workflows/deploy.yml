@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: '0 * * * *' # ہر 1 گھنٹے بعد خود بخود چلے گا تاکہ گوگل کرالرز کو بار بار ریکویسٹ جائے
 
+# گٹ ہب کو فورس کرنا کہ وہ صرف لیٹسٹ نوڈ 24 ہی استعمال کرے
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 permissions:
   contents: write
 
@@ -17,16 +21,16 @@ jobs:
     steps:
       # 1. گٹ ہب سے کوڈ حاصل کرنا
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 2. نوڈ جے ایس (Node.js) سیٹ اپ کرنا
+      # 2. نوڈ جے ایس (Node.js 24) سیٹ اپ کرنا تاکہ فیوچر میں کوڈ خراب نہ ہو
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 24
           cache: 'npm'
 
-      # 3. پراجیکٹ کی فائلیں انسٹال کرنا
+      # 3. پروجیکٹ کی فائلیں انسٹال کرنا
       - name: Install Dependencies
         run: npm install --legacy-peer-deps
 
@@ -38,7 +42,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # اگر آپ کا پروجیکٹ 'build' فولڈر بناتا ہے تو یہاں dist مٹا کر build لکھ دیں
+          # اگر آپ کا پروجیکٹ Vite پر ہے تو 'dist' رہنے دیں۔ 
+          # اگر پروجیکٹ Create React App (CRA) پر ہے تو نیچے dist مٹا کر 'build' لکھ دیں۔
+          folder: dist 
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
