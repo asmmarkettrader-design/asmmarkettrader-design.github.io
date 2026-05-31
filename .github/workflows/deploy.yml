@@ -1,0 +1,49 @@
+name: Deploy Single HTML & Super SEO Injection
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *' # ہر گھنٹے بعد خود بخود چلے گا تاکہ گوگل بوٹ بار بار ویب سائٹ پر آئے
+
+permissions:
+  contents: write
+
+jobs:
+  seo-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. گٹ ہب سے آپ کی انڈیکس فائل حاصل کرنا
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. گوگل بوٹ کو سائیٹ میپ کا راستہ بتانے کے لیے فائل بنانا
+      - name: Generate Robots.txt Dynamically
+        run: |
+          echo "User-agent: *" > robots.txt
+          echo "Allow: /" >> robots.txt
+          echo "" >> robots.txt
+          echo "Sitemap: https://asmveo.com/sitemap.xml" >> robots.txt
+
+      # 3. سنگل انڈیکس فائل کو لائیو کرنا
+      - name: Publish to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: . # اسی فولڈر سے ڈائریکٹ انڈیکس فائل اٹھائے گا
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 4. گوگل سرچ انجن کو ہائی پرائورٹی پنگ بھیجنا
+      - name: Force Google Crawler Refresh
+        run: |
+          echo "🚀 Triggering Googlebot Real-Time Crawler for asmveo.com..."
+          
+          # گوگل کو سائیٹ میپ پنگ بھیجنا
+          curl -s -I "https://www.google.com/ping?sitemap=https://asmveo.com/sitemap.xml"
+          
+          # گوگل بوٹ کا روپ دھار کر ویب سائٹ کو ہٹ کرنا تاکہ انڈیکسنگ تیز ہو جائے
+          curl -s -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" -I "https://asmveo.com/"
+          
+          echo "✅ VIP SEO Signal successfully sent!"
