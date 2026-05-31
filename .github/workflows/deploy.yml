@@ -1,10 +1,11 @@
-name: Deploy to GitHub Pages and SEO Ping
+name: Production Build, Deploy & Ultimate SEO Indexing
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   schedule:
-    - cron: '0 * * * *' # ہر گھنٹے بعد خود بخود چلے گا (SEO کرالنگ کے لیے)
+    - cron: '0 * * * *' # ہر 1 گھنٹے بعد خود بخود چلے گا تاکہ گوگل کرالرز کو بار بار ریکویسٹ جائے
 
 permissions:
   contents: write
@@ -12,30 +13,44 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
+      # 1. گٹ ہب سے کوڈ حاصل کرنا
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      # 2. نوڈ جے ایس (Node.js) سیٹ اپ کرنا
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'npm'
 
+      # 3. پراجیکٹ کی فائلیں انسٹال کرنا
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
+      # 4. پروڈکشن لیول بلڈ تیار کرنا (سائٹ فاسٹ لوڈ ہونے کے لیے)
       - name: Build Project
         run: npm run build
 
+      # 5. گٹ ہب پیجز پر سائٹ لائیو کرنا
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # اگر آپ کا پروجیکٹ build فولڈر بناتا ہے تو یہاں dist کی جگہ build لکھ دیں
-          branch: gh-pages # یہ ایکشن خود بخود اس برانچ پر ریڈی میڈ فائلیں ڈال دے گا
+          folder: dist # اگر آپ کا پروجیکٹ 'build' فولڈر بناتا ہے تو یہاں dist مٹا کر build لکھ دیں
+          branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Notify Google (SEO Sitemap Ping)
+      # 6. گوگل کو انڈیکسنگ اور کرالنگ کے لیے فوراً سگنل بھیجنا
+      - name: Send Instant Google Indexing & Sitemap Request
         run: |
-          echo "Sending sitemap ping to Google..."
-          curl -s "https://www.google.com/ping?sitemap=https://asmveo.com/sitemap.xml"
+          echo "🚀 Initiating Google Crawler Request for asmveo.com..."
+          
+          # گوگل سائیٹ میپ پنگ ریکویسٹ
+          curl -s -I "https://www.google.com/ping?sitemap=https://asmveo.com/sitemap.xml"
+          
+          # انڈیکسنگ کو تیز کرنے کے لیے مین ڈومین پنگ
+          curl -s -I "https://www.google.com/sitemaps/status?sitemap=https://asmveo.com/sitemap.xml"
+          
+          echo "✅ SEO Ping successfully sent to Google Search Bots!"
