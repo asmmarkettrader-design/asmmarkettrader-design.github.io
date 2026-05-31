@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ASM Digital Solutions | Your All-in-One Business Growth Partner</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Syne:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
   <style>
     /* ============================================================
        ROOT VARIABLES & RESET
@@ -609,7 +608,7 @@
     .reveal-delay-4 { transition-delay: 0.4s; }
   </style>
 </head>
-<body>
+<body class="">
 
 <!-- ============================================================
      BACKGROUND EFFECTS
@@ -621,24 +620,24 @@
 <!-- ============================================================
      LOADER OVERLAY
 ============================================================ -->
-<div id="cmsLoader">
+<div id="cmsLoader" class="active">
   <div class="loader-ring"></div>
-  <div class="loader-text" id="loaderText">Syncing to GitHub...</div>
+  <div class="loader-text" id="loaderText">Encoding and pushing to GitHub...</div>
 </div>
 
 <!-- ============================================================
      CMS ADMIN BAR
 ============================================================ -->
-<div id="adminBar">
+<div id="adminBar" class="">
   <div class="admin-bar-brand">
     <i class="fas fa-code-branch" style="margin-right:8px;"></i>
     ASM CMS Engine v2.0
   </div>
   <div class="admin-controls">
-    <input type="password" class="admin-input" id="ghTokenInput" placeholder="Paste GitHub Personal Access Token..." />
+    <input type="password" class="admin-input" id="ghTokenInput" placeholder="Paste GitHub Personal Access Token...">
     <button class="admin-btn-ghost" id="saveTokenBtn">Save Token</button>
     <button class="admin-btn" id="writeBlogBtn"><i class="fas fa-pen-to-square"></i> New Post</button>
-    <button class="admin-btn" id="saveDeployBtn"><i class="fas fa-rocket"></i> Save & Deploy</button>
+    <button class="admin-btn" id="saveDeployBtn"><i class="fas fa-rocket"></i> Save &amp; Deploy</button>
     <button class="admin-btn-ghost" id="logoutBtn"><i class="fas fa-power-off"></i> Logout</button>
   </div>
   <div class="admin-status">
@@ -658,7 +657,7 @@
     </div>
     <div class="form-group">
       <label>Post Title</label>
-      <input type="text" id="blogTitle" placeholder="Enter compelling post title..." />
+      <input type="text" id="blogTitle" placeholder="Enter compelling post title...">
     </div>
     <div class="form-group">
       <label>Category</label>
@@ -666,13 +665,13 @@
         <option>Engineering</option>
         <option>Infrastructure</option>
         <option>Automation</option>
-        <option>SEO & Growth</option>
+        <option>SEO &amp; Growth</option>
         <option>Case Study</option>
       </select>
     </div>
     <div class="form-group">
       <label>Cover Image</label>
-      <input type="file" id="blogCoverImg" accept="image/*" />
+      <input type="file" id="blogCoverImg" accept="image/*">
     </div>
     <div class="form-group">
       <label>Post Content / Excerpt</label>
@@ -688,12 +687,12 @@
 <!-- ============================================================
      HIDDEN FILE INPUT FOR IMAGE EDITING
 ============================================================ -->
-<input type="file" id="imgFileInput" accept="image/*" style="display:none;" />
+<input type="file" id="imgFileInput" accept="image/*" style="display:none;">
 
 <!-- ============================================================
      HEADER / NAVIGATION
 ============================================================ -->
-<header id="mainHeader">
+<header id="mainHeader" style="box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 40px; top: 0px; position: sticky;">
   <nav class="nav-inner">
     <div class="nav-logo">ASM<span style="color:var(--text-dim);">.</span>DS</div>
     <div class="nav-links">
@@ -707,7 +706,7 @@
       <a href="#contact">Contact</a>
     </div>
     <div class="nav-actions">
-      <button class="nav-login-btn" id="cmsLoginBtn">
+      <button class="nav-login-btn" id="cmsLoginBtn" style="">
         <i class="fas fa-lock" style="margin-right:6px;font-size:10px;"></i>System Login
       </button>
       <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
@@ -760,20 +759,20 @@
 ============================================================ -->
 <div class="stats-bar">
   <div class="stats-grid">
-    <div class="stat-item reveal">
+    <div class="stat-item reveal visible">
       <div class="stat-num" data-editable="stat-automation">100%</div>
       <div class="stat-desc">Automation Rate</div>
     </div>
-    <div class="stat-item reveal reveal-delay-1">
+    <div class="stat-item reveal reveal-delay-1 visible">
       <div class="stat-num" data-editable="stat-leads">500K+</div>
       <div class="stat-desc">Leads Processed</div>
     </div>
-    <div class="stat-item reveal reveal-delay-2">
-      <div class="stat-num" data-editable="stat-rating">5.0</div>
+    <div class="stat-item reveal reveal-delay-2 visible">
+      <div class="stat-num" data-editable="stat-rating">4.9</div>
       <div class="stat-desc">Client Rating</div>
     </div>
-    <div class="stat-item reveal reveal-delay-3">
-      <div class="stat-num" data-editable="stat-uptime">24/7</div>
+    <div class="stat-item reveal reveal-delay-3 visible">
+      <div class="stat-num" data-editable="stat-uptime">247/</div>
       <div class="stat-desc">System Uptime</div>
     </div>
   </div>
@@ -785,7 +784,7 @@
 <section id="about" class="alt-bg">
   <div class="container">
     <div class="about-grid">
-      <div class="about-text reveal">
+      <div class="about-text reveal visible">
         <div class="section-tag">Who We Are</div>
         <h2 class="section-title" data-editable="about-title">
           Global <span class="gradient-text">Architecture</span><br>Specialists
@@ -795,25 +794,25 @@
         <p data-editable="about-p2">Our team of elite engineers and automation architects have deployed solutions across Fortune-level tech stacks — from complex DNS matrix configurations to fully automated lead acquisition pipelines running on serverless infrastructure.</p>
         <div class="about-features">
           <div class="feature-row"><i class="fas fa-check-circle"></i> <span>End-to-end enterprise software engineering</span></div>
-          <div class="feature-row"><i class="fas fa-check-circle"></i> <span>Advanced DNS & infrastructure architecture</span></div>
+          <div class="feature-row"><i class="fas fa-check-circle"></i> <span>Advanced DNS &amp; infrastructure architecture</span></div>
           <div class="feature-row"><i class="fas fa-check-circle"></i> <span>Automated marketing pipeline integration</span></div>
-          <div class="feature-row"><i class="fas fa-check-circle"></i> <span>GMB & hyper-local SEO domination</span></div>
+          <div class="feature-row"><i class="fas fa-check-circle"></i> <span>GMB &amp; hyper-local SEO domination</span></div>
         </div>
       </div>
       <div class="about-visual">
-        <div class="about-card reveal reveal-delay-1">
+        <div class="about-card reveal reveal-delay-1 visible">
           <div class="about-card-num" data-editable="about-stat1">100%</div>
           <div class="about-card-label">Automation</div>
         </div>
-        <div class="about-card reveal reveal-delay-2">
+        <div class="about-card reveal reveal-delay-2 visible">
           <div class="about-card-num" data-editable="about-stat2">500K+</div>
           <div class="about-card-label">Leads</div>
         </div>
-        <div class="about-card reveal reveal-delay-3">
-          <div class="about-card-num" data-editable="about-stat3">5.0★</div>
+        <div class="about-card reveal reveal-delay-3 visible">
+          <div class="about-card-num" data-editable="about-stat3">4.9★</div>
           <div class="about-card-label">Rating</div>
         </div>
-        <div class="about-card reveal reveal-delay-4">
+        <div class="about-card reveal reveal-delay-4 visible">
           <div class="about-card-num" data-editable="about-stat4">24/7</div>
           <div class="about-card-label">Uptime</div>
         </div>
@@ -827,14 +826,14 @@
 ============================================================ -->
 <section id="services">
   <div class="container">
-    <div class="services-header reveal">
+    <div class="services-header reveal visible">
       <div class="section-tag">What We Do</div>
-      <h2 class="section-title">Services & <span class="gradient-text">Pricing</span></h2>
+      <h2 class="section-title">Services &amp; <span class="gradient-text">Pricing</span></h2>
       <p class="section-sub">Transparent packages engineered to deliver real, measurable ROI for your business — not just vanity metrics.</p>
     </div>
 
     <!-- SERVICE BLOCK 1: SEO -->
-    <div class="svc-block reveal">
+    <div class="svc-block reveal visible">
       <div class="svc-block-header">
         <div class="svc-block-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
         <div>
@@ -847,10 +846,10 @@
         <div class="svc-feature-col">
           <div class="svc-feature-head"><i class="fas fa-file-code"></i> On-Page SEO</div>
           <ul class="svc-list">
-            <li><i class="fas fa-check"></i> Full technical site audit & fix</li>
+            <li><i class="fas fa-check"></i> Full technical site audit &amp; fix</li>
             <li><i class="fas fa-check"></i> Page speed optimization</li>
-            <li><i class="fas fa-check"></i> Keyword research & mapping</li>
-            <li><i class="fas fa-check"></i> Meta tags, schema & structure</li>
+            <li><i class="fas fa-check"></i> Keyword research &amp; mapping</li>
+            <li><i class="fas fa-check"></i> Meta tags, schema &amp; structure</li>
           </ul>
         </div>
         <div class="svc-feature-col">
@@ -865,7 +864,7 @@
         <div class="svc-feature-col">
           <div class="svc-feature-head"><i class="fas fa-map-location-dot"></i> Local SEO</div>
           <ul class="svc-list">
-            <li><i class="fas fa-check"></i> GMB optimization & management</li>
+            <li><i class="fas fa-check"></i> GMB optimization &amp; management</li>
             <li><i class="fas fa-check"></i> Local citation building</li>
             <li><i class="fas fa-check"></i> Map pack domination strategy</li>
             <li><i class="fas fa-check"></i> Hyper-local keyword targeting</li>
@@ -876,20 +875,20 @@
         <div class="pricing-pill">
           <span class="pricing-from">Starting from</span>
           <span class="pricing-price">$250<span class="pricing-period">/month</span></span>
-          <span class="pricing-note">Custom quotes based on website size & competition</span>
+          <span class="pricing-note">Custom quotes based on website size &amp; competition</span>
         </div>
         <a href="#audit" class="btn-primary"><i class="fas fa-rocket"></i> Get SEO Audit</a>
       </div>
     </div>
 
     <!-- SERVICE BLOCK 2: PAID MARKETING -->
-    <div class="svc-block reveal reveal-delay-1">
+    <div class="svc-block reveal reveal-delay-1 visible">
       <div class="svc-block-header">
         <div class="svc-block-icon" style="background:linear-gradient(135deg,rgba(79,172,254,0.15),rgba(0,242,254,0.08));border-color:rgba(79,172,254,0.3);color:var(--blue);"><i class="fas fa-bullseye"></i></div>
         <div>
           <div class="section-tag" style="margin-bottom:8px;">Service 02</div>
           <h2 class="section-title" style="margin-bottom:8px;">Paid <span class="gradient-text">Marketing</span></h2>
-          <p class="section-sub">Get instant leads and sales with precision-targeted ad campaigns on Google, YouTube, Facebook, Instagram & TikTok.</p>
+          <p class="section-sub">Get instant leads and sales with precision-targeted ad campaigns on Google, YouTube, Facebook, Instagram &amp; TikTok.</p>
         </div>
       </div>
       <div class="paid-channels-grid">
@@ -905,13 +904,13 @@
         </div>
         <div class="channel-card">
           <div class="channel-icon"><i class="fab fa-facebook"></i></div>
-          <div class="channel-name">Facebook & Instagram</div>
+          <div class="channel-name">Facebook &amp; Instagram</div>
           <p class="channel-desc">Hyper-targeted social campaigns using detailed audience segmentation, lookalike audiences, and retargeting funnels for optimal ROAS.</p>
         </div>
         <div class="channel-card">
           <div class="channel-icon"><i class="fab fa-tiktok"></i></div>
           <div class="channel-name">TikTok Ads</div>
-          <p class="channel-desc">Reach younger, high-intent audiences with native-style video creatives and TikTok's powerful interest & behavioral targeting engine.</p>
+          <p class="channel-desc">Reach younger, high-intent audiences with native-style video creatives and TikTok's powerful interest &amp; behavioral targeting engine.</p>
         </div>
       </div>
       <div class="svc-pricing-row">
@@ -925,12 +924,12 @@
     </div>
 
     <!-- SERVICE BLOCK 3: SOFTWARE & AUTOMATION -->
-    <div class="svc-block reveal reveal-delay-2">
+    <div class="svc-block reveal reveal-delay-2 visible">
       <div class="svc-block-header">
         <div class="svc-block-icon" style="background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(0,242,254,0.06));border-color:rgba(34,197,94,0.25);color:#22c55e;"><i class="fas fa-microchip"></i></div>
         <div>
           <div class="section-tag" style="margin-bottom:8px;">Service 03</div>
-          <h2 class="section-title" style="margin-bottom:8px;">Software & <span class="gradient-text">Automation</span></h2>
+          <h2 class="section-title" style="margin-bottom:8px;">Software &amp; <span class="gradient-text">Automation</span></h2>
           <p class="section-sub">Custom enterprise software, advanced DNS infrastructure, and automated pipelines that run your business 24/7 without manual intervention.</p>
         </div>
       </div>
@@ -943,7 +942,7 @@
         </div>
         <div class="service-card">
           <div class="service-icon"><i class="fas fa-network-wired"></i></div>
-          <h3 data-editable="svc2-title">Advanced DNS & Infrastructure</h3>
+          <h3 data-editable="svc2-title">Advanced DNS &amp; Infrastructure</h3>
           <p data-editable="svc2-desc">Complex zone file mapping, CNAME/A record synchronization, system proxies, and multi-region latency optimization for enterprise-grade reliability.</p>
           <span class="service-tag">Infrastructure</span>
         </div>
@@ -964,28 +963,28 @@
 ============================================================ -->
 <section id="why" class="alt-bg">
   <div class="container">
-    <div class="text-center reveal" style="text-align:center;margin-bottom:56px;">
+    <div class="text-center reveal visible" style="text-align:center;margin-bottom:56px;">
       <div class="section-tag">Why ASM</div>
       <h2 class="section-title">Why <span class="gradient-text">Choose Us?</span></h2>
       <p class="section-sub" style="margin:0 auto;">We don't just run campaigns — we become your growth engineering team.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card reveal reveal-delay-1">
+      <div class="why-card reveal reveal-delay-1 visible">
         <div class="why-icon"><i class="fas fa-gears"></i></div>
         <h3>Technical Expertise</h3>
         <p>We are experts in Software Engineering, Networking, and Automation — giving us a deep technical edge over standard marketing agencies.</p>
       </div>
-      <div class="why-card reveal reveal-delay-2">
+      <div class="why-card reveal reveal-delay-2 visible">
         <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
-        <h3>Safe & Secure</h3>
+        <h3>Safe &amp; Secure</h3>
         <p>We use professional, industry-standard tools to ensure your accounts, ad accounts, and Google Business profiles stay fully safe and compliant.</p>
       </div>
-      <div class="why-card reveal reveal-delay-3">
+      <div class="why-card reveal reveal-delay-3 visible">
         <div class="why-icon"><i class="fas fa-chart-line"></i></div>
         <h3>Result Oriented</h3>
         <p>We focus on ROI — Return on Investment — not just clicks or impressions. Every strategy we deploy is measured against real business outcomes.</p>
       </div>
-      <div class="why-card reveal reveal-delay-4">
+      <div class="why-card reveal reveal-delay-4 visible">
         <div class="why-icon"><i class="fas fa-clock"></i></div>
         <h3>24/7 Uptime</h3>
         <p>Our automation systems and monitoring pipelines run around the clock, ensuring your campaigns and infrastructure never miss a beat.</p>
@@ -999,7 +998,7 @@
 ============================================================ -->
 <section id="audit">
   <div class="container">
-    <div class="audit-box reveal">
+    <div class="audit-box reveal visible">
       <div class="audit-glow"></div>
       <div class="audit-content">
         <div class="section-tag">Limited Offer</div>
@@ -1029,14 +1028,14 @@
 ============================================================ -->
 <section id="portfolio" class="alt-bg">
   <div class="container">
-    <div class="portfolio-header reveal">
+    <div class="portfolio-header reveal visible">
       <div class="section-tag">Case Studies</div>
       <h2 class="section-title">Deployed <span class="gradient-text">Projects</span></h2>
       <p class="section-sub">Real-world implementations that showcase our engineering depth and deployment precision.</p>
     </div>
     <div class="portfolio-grid">
 
-      <div class="portfolio-card reveal reveal-delay-1">
+      <div class="portfolio-card reveal reveal-delay-1 visible">
         <div class="portfolio-img-wrap" data-img-target="portfolio-img-1">
           <div class="portfolio-img-placeholder">
             <i class="fas fa-globe"></i>
@@ -1060,7 +1059,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card reveal reveal-delay-2">
+      <div class="portfolio-card reveal reveal-delay-2 visible">
         <div class="portfolio-img-wrap" data-img-target="portfolio-img-2">
           <div class="portfolio-img-placeholder">
             <i class="fas fa-code-branch"></i>
@@ -1083,7 +1082,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card reveal reveal-delay-3">
+      <div class="portfolio-card reveal reveal-delay-3 visible">
         <div class="portfolio-img-wrap" data-img-target="portfolio-img-3">
           <div class="portfolio-img-placeholder">
             <i class="fas fa-bolt"></i>
@@ -1115,21 +1114,339 @@
 ============================================================ -->
 <section id="reviews">
   <div class="container">
-    <div class="reviews-header reveal">
+    <div class="reviews-header reveal visible">
       <div class="section-tag">Client Feedback</div>
       <h2 class="section-title">Global <span class="gradient-text">Reviews</span></h2>
       <p class="section-sub">Verified feedback from our clients across international markets.</p>
     </div>
-    <div class="review-filters reveal">
+    <div class="review-filters reveal visible">
       <button class="filter-btn active" data-filter="all">All Regions</button>
       <button class="filter-btn" data-filter="usa">🇺🇸 USA</button>
       <button class="filter-btn" data-filter="uk">🇬🇧 UK</button>
       <button class="filter-btn" data-filter="canada">🇨🇦 Canada</button>
       <button class="filter-btn" data-filter="global">🌐 Global</button>
     </div>
-    <div class="reviews-grid" id="reviewsGrid">
-      <!-- Injected by JS -->
-    </div>
+    <div class="reviews-grid" id="reviewsGrid"><div class="review-card reveal visible" style="transition-delay: 0s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">JW</div>
+          <div>
+            <div class="reviewer-name">James Whitfield</div>
+            <div class="reviewer-location">New York, USA</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"ASM transformed our entire backend infrastructure. Their DNS configuration expertise cut our latency by 60% and the deployment pipeline they built runs flawlessly."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Jan 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.08s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">SM</div>
+          <div>
+            <div class="reviewer-name">Sarah Mitchell</div>
+            <div class="reviewer-location">Los Angeles, USA</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"Exceptional SEO domination strategy. Our GMB listing jumped from page 4 to the top 3 pack within 6 weeks. The citation network they deployed is incredibly effective."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.16s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">RC</div>
+          <div>
+            <div class="reviewer-name">Robert Chen</div>
+            <div class="reviewer-location">Chicago, USA</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"Their automated pipeline solution connected our 8 disconnected APIs seamlessly. What used to require 3 engineers now runs autonomously on Cron jobs they architected."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Trustpilot</span>
+        <span class="review-date">Mar 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.24s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">ED</div>
+          <div>
+            <div class="reviewer-name">Emily Davidson</div>
+            <div class="reviewer-location">Houston, USA</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"The paid acquisition funnel ASM deployed achieved a 4.2x ROAS in the first month. Their programmatic budget adjustment model is a game-changer for scaling efficiently."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">MT</div>
+          <div>
+            <div class="reviewer-name">Michael Torres</div>
+            <div class="reviewer-location">Seattle, USA</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"World-class enterprise software engineers. The custom backend system they built handles 2M+ daily transactions without breaking a sweat. Incredible technical depth."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Jan 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.08s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">OH</div>
+          <div>
+            <div class="reviewer-name">Oliver Harrington</div>
+            <div class="reviewer-location">London, UK</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"ASM's DNS synchronization work for our multi-region deployment was flawless. Their CNAME matrix setup and Cloudflare proxy configuration exceeded all our technical expectations."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Mar 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.16s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">CW</div>
+          <div>
+            <div class="reviewer-name">Charlotte Webb</div>
+            <div class="reviewer-location">Manchester, UK</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"The SEO citation network ASM built for our UK operations pushed us to #1 for 12 competitive local keywords within 8 weeks. Outstanding hyper-local strategy execution."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Trustpilot</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.24s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">JP</div>
+          <div>
+            <div class="reviewer-name">James Pemberton</div>
+            <div class="reviewer-location">Birmingham, UK</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"Their CI/CD pipeline architecture reduced our deployment time from 45 minutes to under 3 minutes. The GitHub Actions workflow they engineered is production-grade excellence."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Jan 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">AF</div>
+          <div>
+            <div class="reviewer-name">Amelia Foster</div>
+            <div class="reviewer-location">Edinburgh, UK</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"ASM's automation framework handles our entire email marketing pipeline — segmentation, sequencing, and CRM sync. Zero human intervention required. Truly impressive engineering."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Mar 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.08s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">WC</div>
+          <div>
+            <div class="reviewer-name">William Clarke</div>
+            <div class="reviewer-location">Bristol, UK</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"The enterprise software solution ASM delivered is rock-solid. Their proprietary script optimizations gave us a 3x performance boost over our previous stack."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.16s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">LB</div>
+          <div>
+            <div class="reviewer-name">Liam Beaumont</div>
+            <div class="reviewer-location">Toronto, Canada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"ASM's GMB domination strategy for our Canadian market is producing incredible results. We're now ranking in the top 3 for every target keyword in the greater Toronto area."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Mar 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.24s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">SL</div>
+          <div>
+            <div class="reviewer-name">Sophie Lafleur</div>
+            <div class="reviewer-location">Montreal, Canada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"The DNS infrastructure overhaul ASM performed for our Quebec operations was seamless. Zero downtime during migration and we gained measurable performance improvements immediately."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Trustpilot</span>
+        <span class="review-date">Jan 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">NM</div>
+          <div>
+            <div class="reviewer-name">Noah Mackenzie</div>
+            <div class="reviewer-location">Vancouver, Canada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"Their paid acquisition funnel brought our CPL down by 40% within the first campaign cycle. ASM's programmatic approach to budget allocation is genuinely sophisticated."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.08s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">IT</div>
+          <div>
+            <div class="reviewer-name">Isabelle Tremblay</div>
+            <div class="reviewer-location">Calgary, Canada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"The automated data pipeline ASM architected processes our B2B lead data in real-time across 6 platforms. The accuracy and reliability have been extraordinary from day one."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Mar 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.16s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">ER</div>
+          <div>
+            <div class="reviewer-name">Ethan Rivard</div>
+            <div class="reviewer-location">Ottawa, Canada</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"ASM's DevOps team restructured our entire deployment architecture. IaC, containerization, and zero-downtime releases are now standard practice across our organization."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.24s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">AS</div>
+          <div>
+            <div class="reviewer-name">Arjun Sharma</div>
+            <div class="reviewer-location">Singapore</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"Working with ASM on our APAC infrastructure rollout was a masterclass in precision engineering. Their DNS architecture handled our global traffic routing requirements perfectly."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Mar 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">LE</div>
+          <div>
+            <div class="reviewer-name">Lars Eriksson</div>
+            <div class="reviewer-location">Stockholm, Sweden</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"ASM delivered a custom enterprise CRM system that integrated with our existing Nordic market stack flawlessly. The automation components work exactly as specified — impressive."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Trustpilot</span>
+        <span class="review-date">Jan 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.08s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">DR</div>
+          <div>
+            <div class="reviewer-name">Diego Ramirez</div>
+            <div class="reviewer-location">Dubai, UAE</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"The SEO and digital authority strategy ASM deployed for our Middle East expansion delivered a 300% increase in organic search visibility within the first quarter."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.16s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">HM</div>
+          <div>
+            <div class="reviewer-name">Hana Müller</div>
+            <div class="reviewer-location">Berlin, Germany</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"ASM's pipeline automation for our European operations eliminated 40+ hours of manual work per week. The Cron-based sync framework is elegant and completely reliable."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Google Business</span>
+        <span class="review-date">Mar 2025</span>
+      </div>
+    </div><div class="review-card reveal visible" style="transition-delay: 0.24s;">
+      <div class="review-top">
+        <div class="reviewer-info">
+          <div class="reviewer-avatar">KW</div>
+          <div>
+            <div class="reviewer-name">Kenji Watanabe</div>
+            <div class="reviewer-location">Tokyo, Japan</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <p class="review-text">"From initial scoping to final deployment, ASM operates at a level of technical sophistication I haven't encountered elsewhere. Their system architecture is future-proof and scalable."</p>
+      <div class="review-platform">
+        <span class="platform-name"><i class="fas fa-check-circle" style="color:var(--cyan);margin-right:4px;"></i>Clutch.co</span>
+        <span class="review-date">Feb 2025</span>
+      </div>
+    </div></div>
   </div>
 </section>
 
@@ -1139,15 +1456,15 @@
 <section id="blog" class="alt-bg">
   <div class="container">
     <div class="blog-header">
-      <div class="reveal">
+      <div class="reveal visible">
         <div class="section-tag">Technical Insights</div>
         <h2 class="section-title">Latest <span class="gradient-text">Articles</span></h2>
       </div>
-      <a href="#contact" class="btn-ghost reveal" style="align-self:flex-end;">View All <i class="fas fa-arrow-right"></i></a>
+      <a href="#contact" class="btn-ghost reveal visible" style="align-self:flex-end;">View All <i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="blog-grid" id="blogGrid">
       <!-- Default blog cards -->
-      <div class="blog-card reveal reveal-delay-1">
+      <div class="blog-card reveal reveal-delay-1 visible">
         <div class="blog-img">
           <div class="blog-img-placeholder"><i class="fas fa-server"></i></div>
         </div>
@@ -1161,7 +1478,7 @@
           <a href="#" class="blog-read">Read Article <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      <div class="blog-card reveal reveal-delay-2">
+      <div class="blog-card reveal reveal-delay-2 visible">
         <div class="blog-img">
           <div class="blog-img-placeholder"><i class="fas fa-robot"></i></div>
         </div>
@@ -1175,13 +1492,13 @@
           <a href="#" class="blog-read">Read Article <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      <div class="blog-card reveal reveal-delay-3">
+      <div class="blog-card reveal reveal-delay-3 visible">
         <div class="blog-img">
           <div class="blog-img-placeholder"><i class="fas fa-chart-bar"></i></div>
         </div>
         <div class="blog-body">
           <div class="blog-meta">
-            <span class="blog-cat">SEO & Growth</span>
+            <span class="blog-cat">SEO &amp; Growth</span>
             <span class="blog-date">Mar 2025</span>
           </div>
           <h3>Hyper-Local SEO: Algorithmic Citation Networks Explained</h3>
@@ -1199,7 +1516,7 @@
 <section id="contact">
   <div class="container">
     <div class="contact-wrapper">
-      <div class="reveal">
+      <div class="reveal visible">
         <div class="section-tag">Get In Touch</div>
         <h2 class="section-title">Start Your <span class="gradient-text">Project</span></h2>
         <div class="divider"></div>
@@ -1230,21 +1547,21 @@
         </div>
       </div>
 
-      <div class="contact-form-box reveal reveal-delay-2">
+      <div class="contact-form-box reveal reveal-delay-2 visible">
         <h3><i class="fas fa-paper-plane"></i> &nbsp;Send a Message</h3>
         <div class="contact-form">
           <div class="form-row" style="margin-bottom:14px;">
-            <div class="form-group" style="margin:0;"><label>Full Name</label><input type="text" placeholder="Your name" /></div>
-            <div class="form-group" style="margin:0;"><label>Email</label><input type="email" placeholder="your@email.com" /></div>
+            <div class="form-group" style="margin:0;"><label>Full Name</label><input type="text" placeholder="Your name"></div>
+            <div class="form-group" style="margin:0;"><label>Email</label><input type="email" placeholder="your@email.com"></div>
           </div>
           <div class="form-group"><label>Service Required</label>
             <select>
               <option>Custom Enterprise Software</option>
-              <option>Advanced Infrastructure & DNS</option>
-              <option>GMB & SEO Domination</option>
+              <option>Advanced Infrastructure &amp; DNS</option>
+              <option>GMB &amp; SEO Domination</option>
               <option>Paid Acquisition Funnels</option>
               <option>Automated Pipelines</option>
-              <option>DevOps & CI/CD</option>
+              <option>DevOps &amp; CI/CD</option>
             </select>
           </div>
           <div class="form-group"><label>Message</label><textarea placeholder="Describe your project requirements..."></textarea></div>
@@ -1265,7 +1582,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">ASM Digital Solutions</div>
-        <p class="footer-tagline" data-editable="footer-tagline">Architecting Elite Platforms & Global Authority Structures. Enterprise-grade engineering for the modern digital frontier.</p>
+        <p class="footer-tagline" data-editable="footer-tagline">Architecting Elite Platforms &amp; Global Authority Structures. Enterprise-grade engineering for the modern digital frontier.</p>
         <div class="footer-social">
           <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
           <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
@@ -1278,7 +1595,7 @@
         <ul>
           <li><a href="#services">Enterprise Software</a></li>
           <li><a href="#services">DNS Infrastructure</a></li>
-          <li><a href="#services">GMB & SEO</a></li>
+          <li><a href="#services">GMB &amp; SEO</a></li>
           <li><a href="#services">Paid Acquisition</a></li>
           <li><a href="#services">Automation</a></li>
           <li><a href="#services">DevOps</a></li>
@@ -1793,5 +2110,6 @@ window.addEventListener('DOMContentLoaded', () => {
   setupReveal();
 });
 </script>
-</body>
-</html>
+
+
+</body></html>
