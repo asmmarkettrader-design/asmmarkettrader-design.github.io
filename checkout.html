@@ -6,73 +6,40 @@
     <title>Secure Checkout - ASM VEO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .product-card:hover img { transform: scale(1.05); }
-        .product-card img { transition: transform 0.3s ease; }
-    </style>
+    <style>.product-card:hover img { transform: scale(1.05); } .product-card img { transition: transform 0.3s ease; }</style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
-    <!-- Header / Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="/index.html" class="text-2xl font-extrabold text-teal-700 tracking-wider flex items-center">
                 <i class="fas fa-shopping-cart text-3xl mr-2"></i> ASM VEO
             </a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <div class="relative">
-                    <input type="text" placeholder="Search products, brands & stores" class="bg-gray-100 border border-gray-300 rounded-full py-2 px-4 w-96 focus:outline-none focus:ring-2 focus:ring-teal-500">
-                    <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
-                </div>
-            </div>
-            <div class="flex space-x-4">
-                <a href="/checkout.html" class="bg-teal-600 text-white px-6 py-2 rounded-full font-bold hover:bg-teal-700 transition">
-                    <i class="fas fa-truck mr-1"></i> Orders
-                </a>
-            </div>
+            <a href="/checkout.html" class="bg-teal-600 text-white px-6 py-2 rounded-full font-bold hover:bg-teal-700 transition">
+                <i class="fas fa-truck mr-1"></i> Orders
+            </a>
         </div>
     </header>
 
     <div class="container mx-auto px-4 py-10 max-w-3xl">
         <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
-            <div class="bg-teal-50 border-b border-teal-100 p-6 text-center">
-                <h1 class="text-2xl font-extrabold text-teal-800"><i class="fas fa-shield-alt mr-2"></i> Cash on Delivery</h1>
-                <p class="text-sm text-teal-600 mt-1">آپ کا آرڈر موصول ہونے پر ہی پیسے ادا کریں۔</p>
+            <div class="bg-teal-50 p-6 text-center">
+                <h1 class="text-2xl font-extrabold text-teal-800">Cash on Delivery</h1>
+                <p class="text-sm text-teal-600 mt-1">Pay when you receive your order.</p>
             </div>
             <form class="p-6 md:p-8 space-y-5">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-1">Full Name (پورا نام)</label>
-                        <input type="text" class="w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 border p-2.5 bg-gray-50" required placeholder="Ali Abbas">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-1">Mobile Number (موبائل نمبر)</label>
-                        <input type="tel" class="w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 border p-2.5 bg-gray-50" required placeholder="0300-1234567">
-                    </div>
+                    <div><label class="block text-sm font-bold text-gray-700 mb-1">Full Name</label><input type="text" class="w-full border p-2.5 rounded bg-gray-50" required></div>
+                    <div><label class="block text-sm font-bold text-gray-700 mb-1">Mobile</label><input type="tel" class="w-full border p-2.5 rounded bg-gray-50" required></div>
                 </div>
-                <div>
-                    <label class="block text-sm font-bold text-gray-700 mb-1">Delivery Address (مکمل پتہ)</label>
-                    <textarea rows="3" class="w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 border p-2.5 bg-gray-50" required placeholder="مکان نمبر، گلی، محلہ، شہر کا نام..."></textarea>
-                </div>
-                
-                <div class="mt-6 bg-blue-50 p-4 rounded border border-blue-100 flex justify-between items-center">
-                    <div>
-                        <span class="block font-bold text-blue-900">Delivery Charges:</span>
-                        <span class="text-xs text-blue-700">Free delivery nationwide</span>
-                    </div>
-                    <span class="font-extrabold text-lg text-blue-900">Rs 0</span>
-                </div>
-
-                <button type="button" onclick="alert('Congratulations! Your Order has been placed successfully. We will call you for confirmation.')" class="w-full bg-teal-600 text-white font-bold py-3.5 px-4 rounded-lg hover:bg-teal-700 transition duration-300 shadow-md text-lg mt-4">
-                    Confirm Order (آرڈر کنفرم کریں)
-                </button>
+                <div><label class="block text-sm font-bold text-gray-700 mb-1">Address</label><textarea rows="3" class="w-full border p-2.5 rounded bg-gray-50" required></textarea></div>
+                <button type="button" onclick="alert('Order Placed Successfully!')" class="w-full bg-teal-600 text-white font-bold py-3.5 px-4 rounded-lg hover:bg-teal-700 transition mt-4">Confirm Order</button>
             </form>
         </div>
     </div>
     
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-12 py-8 border-t-4 border-teal-600">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-4">ASM VEO Store</h2>
+            <h2 class="text-2xl font-bold mb-2">ASM VEO Store</h2>
             <p class="text-gray-400 mb-4">Built for Pakistan. Trusted Nationwide.</p>
             <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
         </div>
