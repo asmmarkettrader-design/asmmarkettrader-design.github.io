@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14th August Special - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .product-card:hover img { transform: scale(1.05); }
+        .product-card img { transition: transform 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-extrabold text-teal-700 tracking-wider flex items-center">
+                <i class="fas fa-shopping-cart text-3xl mr-2"></i> ASM VEO
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <div class="relative">
+                    <input type="text" placeholder="Search products, brands & stores" class="bg-gray-100 border border-gray-300 rounded-full py-2 px-4 w-96 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <a href="/checkout.html" class="bg-teal-600 text-white px-6 py-2 rounded-full font-bold hover:bg-teal-700 transition">
+                    <i class="fas fa-truck mr-1"></i> Orders
+                </a>
+            </div>
+        </div>
+    </header>
+
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-teal-600 inline-block pb-2">14th August Special</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        
+                <div class="product-card bg-white rounded-lg shadow hover:shadow-xl overflow-hidden flex flex-col border border-gray-100">
+                    <div class="relative overflow-hidden h-48 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1608234808654-2a8875faa7fd?w=500&q=80" alt="Green White Leaf Printed Lawn" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm font-bold text-gray-900 leading-tight mb-1">Green White Leaf Printed Lawn</h3>
+                        <p class="text-xs text-gray-500 mb-2 line-clamp-2 flex-grow">Buy the best Green White Leaf Printed Lawn online in Pakistan at ASM VEO. 2 Piece Women's Unstitched Lawn Suit. Cash on Delivery available.</p>
+                        <div class="mt-auto">
+                            <span class="text-lg font-extrabold text-teal-700 block">Rs 2431</span>
+                            <a href="/checkout.html?id=101" class="mt-3 block text-center bg-teal-600 text-white py-2 rounded text-sm font-bold hover:bg-gray-900 transition w-full">
+                                Order via COD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-lg shadow hover:shadow-xl overflow-hidden flex flex-col border border-gray-100">
+                    <div class="relative overflow-hidden h-48 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b95d4ebf519?w=500&q=80" alt="White Floral Printed Suit" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm font-bold text-gray-900 leading-tight mb-1">White Floral Printed Suit</h3>
+                        <p class="text-xs text-gray-500 mb-2 line-clamp-2 flex-grow">Buy the best White Floral Printed Suit online in Pakistan at ASM VEO. Beautiful 3 piece unstitched summer collection. Cash on Delivery available.</p>
+                        <div class="mt-auto">
+                            <span class="text-lg font-extrabold text-teal-700 block">Rs 3288</span>
+                            <a href="/checkout.html?id=102" class="mt-3 block text-center bg-teal-600 text-white py-2 rounded text-sm font-bold hover:bg-gray-900 transition w-full">
+                                Order via COD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8 border-t-4 border-teal-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">ASM VEO Store</h2>
+            <p class="text-gray-400 mb-4">Built for Pakistan. Trusted Nationwide.</p>
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
