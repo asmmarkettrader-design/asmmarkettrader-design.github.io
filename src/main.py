@@ -2,8 +2,8 @@ import os
 import time
 import math
 import re
-import requests
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 from google import genai
 
 # --- جیمنائی اے پی آئی سیٹ اپ ---
@@ -11,13 +11,11 @@ api_key = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key) if api_key else None
 
 def calculate_selling_price(base_price_str):
-    """یہ فنکشن سکرپ کی گئی قیمت (جیسے PKR 1,870) میں سے ہندسے نکال کر 30% مارجن لگاتا ہے"""
+    """مرکز کی اصلی قیمت نکال کر اس میں 30% مارجن شامل کرتا ہے"""
     try:
-        # 'PKR 1,870' میں سے صرف نمبرز (1870) نکالے گا
         clean_price = re.sub(r'[^\d]', '', base_price_str)
         if not clean_price:
             return 0, 0
-            
         base_price = int(clean_price)
         profit_margin = 0.30  # 30% Profit
         selling_price = base_price + (base_price * profit_margin)
@@ -26,46 +24,51 @@ def calculate_selling_price(base_price_str):
         return 0, 0
 
 def scrape_markaz_realtime():
-    print("انٹرنیٹ سے مرکز (markaz.app) کا لائیو ڈیٹا سکریپ ہو رہا ہے...")
-    url = "https://www.markaz.app/"
+    print("Playwright کے ذریعے مرکز (markaz.app) کا لائیو ڈیٹا سکریپ ہو رہا ہے...")
     
-    # ہیڈرز تاکہ مرکز کی ویب سائٹ اس سکرپٹ کو براؤزر سمجھے اور بلاک نہ کرے
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
-        "Accept-Language": "en-US,en;q=0.9"
-    }
-
-    scraped_sections = []
+    live_products = []
     
     try:
-        response = requests.get(url, headers=headers, timeout=20)
-        response.raise_for_status()
+        # Playwright ایک اصلی براؤزر کھول کر جاوا سکرپٹ رینڈر کرے گا
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            # مرکز کی ویب سائٹ پر جائے گا
+            page.goto("https://www.markaz.app/", timeout=60000)
+            
+            print("ویب سائٹ لوڈ ہو رہی ہے، 5 سیکنڈ انتظار کریں...")
+            page.wait_for_timeout(5000) # جاوا سکرپٹ اور تصویریں لوڈ ہونے کا انتظار
+            
+            html_content = page.content()
+            browser.close()
+
+        # اب مکمل لوڈ شدہ پیج کو BeautifulSoup سے پڑھیں گے
+        soup = BeautifulSoup(html_content, 'html.parser')
         
-        # BeautifulSoup کا استعمال
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # ہم لائیو ویب سائٹ سے قیمتوں (PKR) والے ایلیمنٹس ڈھونڈیں گے
-        # نوٹ: اگر ویب سائٹ کا سٹرکچر بدلا ہو، تو یہ fallback ڈیٹا کی طرف چلا جائے گا تاکہ سائیٹ کریش نہ ہو۔
+        # 'PKR' والا ٹیکسٹ تلاش کریں گے
         price_elements = soup.find_all(text=re.compile(r'PKR\s*[\d,]+'))
         
-        live_products = []
         product_id = 1
         
         for price_text in price_elements:
-            parent = price_text.parent.parent # قیمت کے اوپر والے کنٹینر میں جائیں گے
+            parent = price_text.parent.parent
             if parent:
-                # تصویر اور ٹائٹل ڈھونڈنے کی کوشش
                 img_tag = parent.find('img')
                 title_tag = parent.find(['h3', 'h4', 'p', 'div'], text=True)
                 
                 if img_tag and img_tag.get('src'):
                     image_url = img_tag['src']
-                    title = title_tag.text.strip() if title_tag else "Premium Quality Product"
+                    # اگر تصویر کا لنک '/_next/' سے شروع ہو رہا ہے تو اسے مکمل یو آر ایل بنائیں
+                    if image_url.startswith('/'):
+                        image_url = f"https://www.markaz.app{image_url}"
+                        
+                    title = title_tag.text.strip() if title_tag else "Premium Product"
                     
                     # 30% پرافٹ کے ساتھ قیمت نکالنا
                     base_p, final_p = calculate_selling_price(price_text)
                     
-                    if base_p > 0:
+                    # چیک کریں کہ قیمت صفر نہ ہو اور یہ پروڈکٹ پہلے سے لسٹ میں نہ ہو
+                    if base_p > 0 and not any(p['name'] == title for p in live_products):
                         live_products.append({
                             "id": product_id,
                             "name": title,
@@ -76,51 +79,35 @@ def scrape_markaz_realtime():
                         })
                         product_id += 1
                         
-                        # 20 پروڈکٹس ہو جائیں تو بس کر دیں
-                        if len(live_products) >= 20:
+                        if len(live_products) >= 20: # 20 ریئل پروڈکٹس اٹھائے گا
                             break
 
         if live_products:
-            print(f"✔ کامیابی سے {len(live_products)} ریئل پروڈکٹس سکریپ ہو گئیں!")
-            scraped_sections.append({
-                "title": "Fresh Arrivals (Live Data)",
-                "products": live_products
-            })
+            print(f"✔ زبردست! کامیابی سے {len(live_products)} اصلی پروڈکٹس فیچ ہو گئیں۔")
+            return {
+                "top_categories": [
+                    {"name": "Womens", "icon": "fa-female"},
+                    {"name": "Mens", "icon": "fa-male"},
+                    {"name": "Kids", "icon": "fa-child"},
+                    {"name": "Cosmetics", "icon": "fa-magic"}
+                ],
+                "sections": [{"title": "Fresh Live Arrivals", "products": live_products}]
+            }
         else:
-            raise Exception("No products found via BeautifulSoup (JavaScript rendering blocking).")
+            raise Exception("No products found. HTML structure might be completely hidden.")
 
     except Exception as e:
-        print(f"لائیو سکریپنگ میں رکاوٹ (وجہ: {e})۔ فال بیک ڈیٹا استعمال ہو رہا ہے...")
-        # اگر مرکز ایپ نے جاوا سکرپٹ (React) کی وجہ سے سکریپنگ بلاک کی، تو یہ پروفیشنل بیک اپ چلے گا۔
-        base1, final1 = calculate_selling_price("PKR 1870")
-        base2, final2 = calculate_selling_price("PKR 2529")
-        base3, final3 = calculate_selling_price("PKR 3140")
-        
-        scraped_sections = [
-            {
-                "title": "14th August Special",
-                "products": [
-                    {"id": 101, "name": "Green White Leaf Printed Lawn", "desc": "2 Piece Women's Unstitched Lawn Suit.", "base_price": base1, "final_price": final1, "image": "https://images.unsplash.com/photo-1608234808654-2a8875faa7fd?w=500&q=80"},
-                    {"id": 102, "name": "White Floral Printed Suit", "desc": "Beautiful 3 piece unstitched summer collection.", "base_price": base2, "final_price": final2, "image": "https://images.unsplash.com/photo-1550614000-4b95d4ebf519?w=500&q=80"}
-                ]
-            },
-            {
-                "title": "Trending Unstitched Suits",
-                "products": [
-                    {"id": 201, "name": "Bin Saeed Digital Print", "desc": "Premium lawn 3 piece suit for women.", "base_price": base3, "final_price": final3, "image": "https://images.unsplash.com/photo-1610419828456-11f81dfce043?w=500&q=80"}
-                ]
-            }
-        ]
-
-    return {
-        "top_categories": [
-            {"name": "Womens", "icon": "fa-female"},
-            {"name": "Mens", "icon": "fa-male"},
-            {"name": "Kids", "icon": "fa-child"},
-            {"name": "Cosmetics", "icon": "fa-magic"}
-        ],
-        "sections": scraped_sections
-    }
+        print(f"لائیو سکریپنگ میں ایرر: {e}")
+        print("فال بیک ڈیٹا استعمال ہو رہا ہے...")
+        # Fallback ڈیٹا اگر کوئی ایرر آ جائے
+        base, final = calculate_selling_price("PKR 2500")
+        return {
+            "top_categories": [{"name": "Womens", "icon": "fa-female"}],
+            "sections": [{
+                "title": "Fallback Products",
+                "products": [{"id": 1, "name": "Test Product", "desc": "Test Desc", "base_price": base, "final_price": final, "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314"}]
+            }]
+        }
 
 def fallback_seo_generator(name, desc):
     return f"Buy {name} online in Pakistan at ASM VEO. {desc} Cash on Delivery available."
@@ -131,7 +118,6 @@ def generate_seo_content(product_name, description):
     prompt = f"Write a catchy, short SEO-friendly description for an e-commerce store ASM VEO for: {product_name}. Details: {description}. Return only text."
     for attempt in range(3):
         try:
-            print(f"جیمنائی سے ایس ای او ٹرائی {attempt + 1}: {product_name}...")
             return client.models.generate_content(model='gemini-1.5-flash', contents=prompt).text
         except Exception as e:
             time.sleep(2)
