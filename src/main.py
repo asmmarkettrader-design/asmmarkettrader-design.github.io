@@ -164,7 +164,8 @@ def build_store(data):
         """
         cat_products = [p for p in data["products"] if p["category"] == cat]
         if not cat_products:
-            cat_html += "<p class="col-span-full text-center text-gray-500">No products found in this category.</p>"
+            # یہاں سنٹیکس ایرر کو ٹھیک کیا گیا ہے (ڈبل کوٹس کی جگہ سنگل کوٹس لگائے ہیں)
+            cat_html += '<p class="col-span-full text-center text-gray-500">No products found in this category.</p>'
         else:
             for prod in cat_products:
                 cat_html += f"""
