@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-3xl font-extrabold text-teal-600 tracking-wider">
+                <i class="fas fa-shopping-bag mr-2"></i>ASM VEO
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="/index.html" class="text-gray-600 hover:text-teal-600 font-semibold">Home</a>
+                <a href="#categories" class="text-gray-600 hover:text-teal-600 font-semibold">Shop by Category</a>
+            </div>
+            <a href="/checkout.html" class="bg-teal-600 text-white px-5 py-2 rounded-full font-bold hover:bg-teal-700 transition">
+                <i class="fas fa-truck mr-2"></i>Track Order
+            </a>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-12 max-w-2xl">
+        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div class="bg-teal-600 text-white p-6 text-center">
+                <h1 class="text-3xl font-bold"><i class="fas fa-lock mr-2"></i>Secure Cash on Delivery</h1>
+                <p class="mt-2 text-teal-100">Pay only when you receive your order at your doorstep.</p>
+            </div>
+            <form class="p-8 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 border p-2" required placeholder="Ali Abbas">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Mobile Number</label>
+                        <input type="tel" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 border p-2" required placeholder="0300-1234567">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Complete Delivery Address</label>
+                    <textarea rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 border p-2" required placeholder="House No, Street, Area..."></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">City</label>
+                    <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-teal-500 focus:ring-teal-500 border p-2" required placeholder="Islamabad">
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center justify-between">
+                    <span class="font-bold text-gray-700">Payment Method:</span>
+                    <span class="text-green-600 font-bold bg-green-100 px-3 py-1 rounded-full"><i class="fas fa-money-bill-wave mr-1"></i> Cash on Delivery</span>
+                </div>
+                <button type="button" onclick="alert('Order Confirmed Successfully! Our team will contact you soon.')" class="w-full bg-teal-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-teal-700 transition duration-300 text-lg shadow-lg">
+                    Confirm Order
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">ASM VEO Store</h2>
+            <p class="text-gray-400 mb-4">Premium Products, Delivered Fast Nationwide.</p>
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM VEO Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

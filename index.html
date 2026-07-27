@@ -1,36 +1,135 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>ASM VEO Online Store</title>
-            <style>
-                body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; }
-                header { background-color: #333; color: white; padding: 10px 20px; text-align: center; }
-                .product-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;}
-                .product-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); max-width: 300px;}
-            </style>
-        </head>
-        <body>
-            <header>
-                <h1>Welcome to ASM VEO Store</h1>
-                <p>Premium Products, Delivered Fast</p>
-            </header>
-            <div class="product-list">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-3xl font-extrabold text-teal-600 tracking-wider">
+                <i class="fas fa-shopping-bag mr-2"></i>ASM VEO
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="/index.html" class="text-gray-600 hover:text-teal-600 font-semibold">Home</a>
+                <a href="#categories" class="text-gray-600 hover:text-teal-600 font-semibold">Shop by Category</a>
+            </div>
+            <a href="/checkout.html" class="bg-teal-600 text-white px-5 py-2 rounded-full font-bold hover:bg-teal-700 transition">
+                <i class="fas fa-truck mr-2"></i>Track Order
+            </a>
+        </div>
+    </header>
+
+    <div class="bg-teal-50 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Hand-picked for All</h1>
+            <p class="text-gray-600 mb-8">Curated items — refreshed regularly.</p>
+            
+            <div id="categories" class="flex flex-wrap justify-center gap-6">
+    
+                <a href="/category/womens-fashion.html" class="flex flex-col items-center group">
+                    <div class="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-tags text-2xl"></i>
+                    </div>
+                    <span class="mt-2 font-medium text-gray-700 group-hover:text-teal-600">Womens Fashion</span>
+                </a>
         
-                <div class="product-card">
-                    <h3>Premium Handbag</h3>
-                    <p><strong>Category:</strong> Womens Fashion</p>
-                    <p>High quality leather handbag.</p>
-                    <p style="color: green; font-weight: bold;">Rs 3500</p>
-                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 5px;">Order via COD</button>
+                <a href="/category/mens-fashion.html" class="flex flex-col items-center group">
+                    <div class="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-tags text-2xl"></i>
+                    </div>
+                    <span class="mt-2 font-medium text-gray-700 group-hover:text-teal-600">Mens Fashion</span>
+                </a>
+        
+                <a href="/category/home-decor.html" class="flex flex-col items-center group">
+                    <div class="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-tags text-2xl"></i>
+                    </div>
+                    <span class="mt-2 font-medium text-gray-700 group-hover:text-teal-600">Home Decor</span>
+                </a>
+        
+                <a href="/category/cosmetics.html" class="flex flex-col items-center group">
+                    <div class="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-tags text-2xl"></i>
+                    </div>
+                    <span class="mt-2 font-medium text-gray-700 group-hover:text-teal-600">Cosmetics</span>
+                </a>
+        </div></div></div>
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-6 border-b-2 border-teal-600 inline-block pb-2">Trending Now</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=500&q=80" alt="Premium Leather Handbag" class="w-full h-56 object-cover">
+                <div class="p-5 flex-grow flex flex-col">
+                    <span class="text-xs font-bold text-teal-600 uppercase tracking-wide">Womens Fashion</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">Premium Leather Handbag</h3>
+                    <p class="text-sm text-gray-600 mt-2 flex-grow">Buy the best Premium Leather Handbag online in Pakistan at ASM VEO. High-quality leather handbag for everyday use. Enjoy fast shipping and Cash on Delivery nationwide.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">Rs 3500</span>
+                    </div>
+                    <a href="/checkout.html?product=1" class="mt-4 block text-center bg-gray-900 text-white py-2 rounded-lg font-bold hover:bg-teal-600 transition w-full">
+                        Order via COD
+                    </a>
                 </div>
-                
-                <div class="product-card">
-                    <h3>Mens Casual Watch</h3>
-                    <p><strong>Category:</strong> Mens Fashion</p>
-                    <p>Waterproof analog watch.</p>
-                    <p style="color: green; font-weight: bold;">Rs 1500</p>
-                    <button style="width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 5px;">Order via COD</button>
+            </div>
+        
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1608234808654-2a8875faa7fd?w=500&q=80" alt="Embroidered Unstitched Suit" class="w-full h-56 object-cover">
+                <div class="p-5 flex-grow flex flex-col">
+                    <span class="text-xs font-bold text-teal-600 uppercase tracking-wide">Womens Fashion</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">Embroidered Unstitched Suit</h3>
+                    <p class="text-sm text-gray-600 mt-2 flex-grow">Buy the best Embroidered Unstitched Suit online in Pakistan at ASM VEO. Beautiful 3-piece unstitched lawn suit. Enjoy fast shipping and Cash on Delivery nationwide.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">Rs 4200</span>
+                    </div>
+                    <a href="/checkout.html?product=2" class="mt-4 block text-center bg-gray-900 text-white py-2 rounded-lg font-bold hover:bg-teal-600 transition w-full">
+                        Order via COD
+                    </a>
                 </div>
-                </div></body></html>
+            </div>
+        
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500&q=80" alt="Mens Casual Analog Watch" class="w-full h-56 object-cover">
+                <div class="p-5 flex-grow flex flex-col">
+                    <span class="text-xs font-bold text-teal-600 uppercase tracking-wide">Mens Fashion</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">Mens Casual Analog Watch</h3>
+                    <p class="text-sm text-gray-600 mt-2 flex-grow">Buy the best Mens Casual Analog Watch online in Pakistan at ASM VEO. Waterproof analog watch with leather strap. Enjoy fast shipping and Cash on Delivery nationwide.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">Rs 1500</span>
+                    </div>
+                    <a href="/checkout.html?product=3" class="mt-4 block text-center bg-gray-900 text-white py-2 rounded-lg font-bold hover:bg-teal-600 transition w-full">
+                        Order via COD
+                    </a>
+                </div>
+            </div>
+        
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1522771731478-44eb10e5c776?w=500&q=80" alt="Luxury Bed Sheet Set" class="w-full h-56 object-cover">
+                <div class="p-5 flex-grow flex flex-col">
+                    <span class="text-xs font-bold text-teal-600 uppercase tracking-wide">Home Decor</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-1">Luxury Bed Sheet Set</h3>
+                    <p class="text-sm text-gray-600 mt-2 flex-grow">Buy the best Luxury Bed Sheet Set online in Pakistan at ASM VEO. Soft cotton king size bed sheet with 2 pillow covers. Enjoy fast shipping and Cash on Delivery nationwide.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-xl font-extrabold text-gray-900">Rs 2800</span>
+                    </div>
+                    <a href="/checkout.html?product=4" class="mt-4 block text-center bg-gray-900 text-white py-2 rounded-lg font-bold hover:bg-teal-600 transition w-full">
+                        Order via COD
+                    </a>
+                </div>
+            </div>
+        </div></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-12 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">ASM VEO Store</h2>
+            <p class="text-gray-400 mb-4">Premium Products, Delivered Fast Nationwide.</p>
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM VEO Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
