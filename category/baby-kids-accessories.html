@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby & Kids Accessories - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
+        .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .image-zoom img { transition: transform 0.5s ease; }
+        .product-card:hover .image-zoom img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
+                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+                ASM VEO
+            </a>
+            
+            <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
+                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+                <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+            </div>
+            
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
+                <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
+            </a>
+        </div>
+    </header>
+    
+    <script>
+    function searchProducts() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('product-card');
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].querySelector('h3').innerText.toLowerCase();
+            if (title.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+        <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl font-extrabold text-gray-900">Baby & Kids Accessories</h1>
+                <p class="text-gray-500 mt-2 font-medium">34 Products Found</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/food-pacifier-feeder-spoon-fresh-fruit-food-baby-feeding-safe-fruit-feeder-random-color-9128.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/0-8.jpg" alt="Food Pacifier + Feeder Spoon / Fresh Fruit Food Baby , Feeding Safe Fruit Feeder - Random Color" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Food Pacifier + Feeder Spoon / Fresh Fruit Food Baby , Feeding Safe Fruit Feeder - Random Color</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 514</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 395</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/food-pacifier-feeder-spoon-fresh-fruit-food-baby-feeding-safe-fruit-feeder-random-color-9180.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/0-8.jpg" alt="Food Pacifier + Feeder Spoon/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Food Pacifier + Feeder Spoon/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder (random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 533</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 410</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/food-pacifier-feeder-spoon-fresh-fruit-food-baby-feeding-safe-fruit-feeder-random-color-9290.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/0-8.jpg" alt="Food Pacifier + Feeder Spoon/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ,  (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Food Pacifier + Feeder Spoon/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ,  (random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 552</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 424</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/fruit-pacifier-fresh-fruit-food-baby-feeding-safe-fruit-feeder-random-color-9297.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/0-8.jpg" alt="Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color )" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color )</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 203</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 156</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/fruit-pacifier-fresh-fruit-food-baby-feeding-safe-fruit-feeder-random-color-pack-of-01-9298.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color ) - Pack Of 01" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color ) - Pack Of 01</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 203</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 156</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/fruit-pacifier-fresh-fruit-food-baby-feeding-safe-fruit-feeder-random-color-pack-of-02-9299.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color ) - Pack Of 02" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color ) - Pack Of 02</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 325</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 250</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/fruit-pacifier-fresh-fruit-food-baby-feeding-safe-fruit-feeder-random-color-pack-of-03-9300.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color ) - Pack Of 03" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Fruit Pacifier/ Fresh Fruit Food Baby , Feeding Safe Fruit Feeder ( Random Color ) - Pack Of 03</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 441</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 339</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-9354.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/0c738697c4a2e5d3e1e0cb8f7ee47abd.jpg" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 205</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 157</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-pack-of-1-9355.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - pack of 1" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - pack of 1</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 205</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 157</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-pack-of-2-9356.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - pack of 2" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - pack of 2</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 323</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 248</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-spoon-feeder-silicone-bottle-feeding-random-color-9646.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/22222.jpg" alt="Baby Spoon Feeder Silicone Bottle Feeding (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Spoon Feeder Silicone Bottle Feeding (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 384</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 295</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/silicone-bottle-feeding-baby-spoon-feeder-best-quality-spoon-feeder-random-color-9681.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/22222.jpg" alt="Silicone Bottle Feeding Baby Spoon Feeder - Best Quality Spoon Feeder - Random Color" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Silicone Bottle Feeding Baby Spoon Feeder - Best Quality Spoon Feeder - Random Color</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 388</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 298</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-spoon-feeder-silicone-bottle-feeding-random-color-9745.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/22222.jpg" alt="Baby Spoon Feeder Silicone Bottle Feeding (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Spoon Feeder Silicone Bottle Feeding (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 381</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 293</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/1-pc-kid-friendly-mosquito-repellent-wristband-anti-repellent-mosquito-band-for-kids-random-color-9918.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/51GcQLwFtcL._AC_SX522_.jpg" alt="1 Pc Kid-Friendly Mosquito Repellent Wristband | Anti-Repellent Mosquito Band For Kids (Random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">1 Pc Kid-Friendly Mosquito Repellent Wristband | Anti-Repellent Mosquito Band For Kids (Random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 254</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 195</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/shaping-baby-pillow-baby-pillow-sleep-positioner-new-bedding-neck-support-kids-anti-roll-pillow-random-colors-9938.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-10.38.18-AM.jpeg" alt="Shaping Baby Pillow  – Baby Pillow Sleep Positioner New Bedding Neck Support Kids Anti Roll Pillow(Random Colors)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Shaping Baby Pillow  – Baby Pillow Sleep Positioner New Bedding Neck Support Kids Anti Roll Pillow(Random Colors)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 286</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 220</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-11367.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/0c738697c4a2e5d3e1e0cb8f7ee47abd.jpg" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 205</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 157</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-pack-of-1-11368.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - Pack Of 1" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - Pack Of 1</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 205</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 157</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-pack-of-2-11369.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - Pack Of 2" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - Pack Of 2</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 315</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 242</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-pack-of-3-11370.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - Pack Of 3" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color) - Pack Of 3</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 429</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 330</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/silicone-bottle-feeding-baby-spoon-feeder-random-color-11472.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/22222.jpg" alt="Silicone Bottle Feeding Baby Spoon Feeder (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Silicone Bottle Feeding Baby Spoon Feeder (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 461</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 354</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/student-calculator-lcd-display-large-screen-siicone-buttons-8-digit-handheld-study-electronic-calculator-school-supplies-random-color-12121.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-30-at-11.46.16-AM-7.jpeg" alt="Student Calculator LCD Display Large Screen Siicone Buttons 8-digit Handheld Study Electronic Calculator School Supplies(random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Student Calculator LCD Display Large Screen Siicone Buttons 8-digit Handheld Study Electronic Calculator School Supplies(random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 406</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 312</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-12232.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/0c738697c4a2e5d3e1e0cb8f7ee47abd.jpg" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 241</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 185</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/round-shaped-food-bowl-pet-plastic-food-bowl-random-color-8-inch-12246.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/null-1.webp" alt="round  Shaped food bowl Pet Plastic food bowl (Random Color)  8 inch" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">round  Shaped food bowl Pet Plastic food bowl (Random Color)  8 inch</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 297</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 228</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-spoon-feeder-silicone-bottle-feeding-random-color-12255.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/22222.jpg" alt="Baby Spoon Feeder Silicone Bottle Feeding (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Spoon Feeder Silicone Bottle Feeding (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 377</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 290</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/cat-shaped-double-food-bowl-pet-plastic-food-bowl-random-color-13299.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/WhatsApp-Image-2024-06-07-at-11.08.55-PM-2.jpeg" alt="Cat Shaped Double food bowl Pet Plastic food bowl (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Cat Shaped Double food bowl Pet Plastic food bowl (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 350</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 269</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-solid-baby-fruit-pacifier-fresh-fruit-feeder-infant-teething-toy-nibbler-teether-pacifier-safe-silicone-pacifier-random-color-14188.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/0c738697c4a2e5d3e1e0cb8f7ee47abd.jpg" alt="Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Solid Baby Fruit Pacifier Fresh Fruit Feeder Infant Teething Toy Nibbler Teether Pacifier Safe Silicone Pacifier (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 258</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 198</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/silicone-baby-spoon-feeder-bottle-feeding-random-color-14353.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/22222.jpg" alt="Silicone Baby Spoon Feeder Bottle Feeding (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Silicone Baby Spoon Feeder Bottle Feeding (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 624</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 480</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/doodle-floating-markers-8-pcs-set-painting-drawing-marker-for-kids-14385.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/g-1.webp" alt="Doodle/ Floating Markers ( 8 pcs set) Painting Drawing Marker for kids" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Doodle/ Floating Markers ( 8 pcs set) Painting Drawing Marker for kids</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 990</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 761</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-child-anti-lost-wrist-link-safety-harness-strap-rope-leash-walking-hand-belt-band-wristband-for-toddlers-kids-loss-14409.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/anti_lost_5_2.jpg" alt="Baby Child Anti Lost Wrist Link Safety Harness Strap Rope Leash Walking Hand Belt Band Wristband For Toddlers, Kids Loss" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Child Anti Lost Wrist Link Safety Harness Strap Rope Leash Walking Hand Belt Band Wristband For Toddlers, Kids Loss</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 897</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 690</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pack-of-4-pcs-with-10-refill-copybooks-pen-magic-copy-book-free-wiping-children-s-kid-writing-sticker-practice-copybook-for-calligraphy-14651.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/05/1-29.jpg" alt="Pack Of 4 Pcs With 10 Refill Copybooks Pen Magic Copy Book Free Wiping Children's Kid Writing Sticker Practice Copybook For Calligraphy" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 4 Pcs With 10 Refill Copybooks Pen Magic Copy Book Free Wiping Children's Kid Writing Sticker Practice Copybook For Calligraphy</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 624</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 480</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/colorful-plastic-templates-drawing-ruler-painting-pack-of-2-14691.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/WhatsApp-Image-2023-09-28-at-3.25.01-PM-7.jpeg" alt="Colorful Plastic Templates Drawing Ruler Painting (pack of 2)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Colorful Plastic Templates Drawing Ruler Painting (pack of 2)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 277</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 213</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pack-of-4-pcs-with-5-refill-copybooks-pen-magic-copy-book-free-wiping-children-s-kid-writing-sticker-practice-copybook-for-calligraphy-14699.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/05/1-29.jpg" alt="Pack Of 4 Pcs With 5 Refill Copybooks Pen Magic Copy Book Free Wiping Children's Kid Writing Sticker Practice Copybook For Calligraphy" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 4 Pcs With 5 Refill Copybooks Pen Magic Copy Book Free Wiping Children's Kid Writing Sticker Practice Copybook For Calligraphy</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 479</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 368</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/zoom-water-gun-11cm-full-pack-of-6-pcs-random-color-14724.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/s-l500-3.jpg" alt="Zoom Water Gun 11cm Full pack of 6 Pcs(random color )" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Zoom Water Gun 11cm Full pack of 6 Pcs(random color )</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 624</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 480</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/super-slime-200ml-pack-of-six-colors-14727.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/715JLvCOoyL._AC_SY450_.jpg" alt="Super slime 200ml Pack of Six Colors" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Super slime 200ml Pack of Six Colors</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 953</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 733</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
+                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 text-center pt-6">
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

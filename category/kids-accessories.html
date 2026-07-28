@@ -10,309 +10,449 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
         .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
         .image-zoom img { transition: transform 0.5s ease; }
         .product-card:hover .image-zoom img { transform: scale(1.1); }
-        .category-icon { transition: all 0.3s ease; }
-        .category-item:hover .category-icon { transform: scale(1.1) rotate(5deg); background-color: #0d9488; color: white; }
     </style>
 </head>
 <body class="text-gray-800">
     <!-- Navbar -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
             <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
                 <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
                 ASM VEO
             </a>
-            <div class="hidden md:flex flex-1 max-w-xl mx-8 relative">
-                <input type="text" placeholder="Search for products, brands and more..." class="w-full bg-gray-100 border border-transparent focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+            
+            <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
+                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
                 <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
             </div>
-            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2">
+            
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
                 <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
             </a>
         </div>
     </header>
+    
+    <script>
+    function searchProducts() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('product-card');
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].querySelector('h3').innerText.toLowerCase();
+            if (title.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
 
         <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
             <div class="container mx-auto px-4">
-                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">Kids Accessories</h1>
-                <p class="text-gray-500 mt-2 font-medium">21 Exclusive Products Found</p>
+                <h1 class="text-3xl font-extrabold text-gray-900">Kids Accessories</h1>
+                <p class="text-gray-500 mt-2 font-medium">21 Products Found</p>
             </div>
         </div>
-        <div class="container mx-auto px-4 pb-12">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+        <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/labubu-plush-blind-box-doll-keychain-random-design-bag-charm-collectible-toy-random-color-20.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/cbe818ecbe8a64008c858ed705c39d08.jpeg" alt="LABUBU Plush Blind Box Doll Keychain | Random Design Bag Charm Collectible Toy - Random Color" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">LABUBU Plush Blind Box Doll Keychain | Random Design Bag Charm Collectible Toy - Random Color</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1317</span>
-                            <a href="/checkout.html?id=20" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1317</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1013</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/rotatable-3d-printed-fidget-spinner-ball-push-pop-finger-gyro-sphere-hard-plastic-stress-relief-sensory-desk-toy-random-color-95.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/e9a23e4b60c875bc223a5ea6026dc58f.mp4" alt="Rotatable 3D Printed Fidget Spinner Ball Push Pop Finger Gyro Sphere Hard Plastic Stress Relief Sensory Desk Toy (Random Color)" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Rotatable 3D Printed Fidget Spinner Ball Push Pop Finger Gyro Sphere Hard Plastic Stress Relief Sensory Desk Toy (Random Color)</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1683</span>
-                            <a href="/checkout.html?id=95" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1683</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1294</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/diy-handmade-material-package-for-kids-6-166.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/04b1f20dbdc00423f4b4d5b38b8dd5a4.png" alt="DIY Handmade Material Package for Kids (6+)" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">DIY Handmade Material Package for Kids (6+)</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1281</span>
-                            <a href="/checkout.html?id=166" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1281</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 985</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/urdu-haroof-e-tahaji-puzzle-board-game-educational-wooden-learning-toy-crafted-from-mdf-wood-for-children-and-urdu-literacy-skills-200.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/dd8556cd7f542170ab7097ecd527bea5.mp4" alt="Urdu Haroof-e-Tahaji Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Urdu Literacy Skills" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Urdu Haroof-e-Tahaji Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Urdu Literacy Skills</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 615</span>
-                            <a href="/checkout.html?id=200" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 615</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 473</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/shape-puzzle-board-game-educational-wooden-learning-toy-crafted-from-mdf-wood-for-children-and-geometric-skill-development-201.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/0c8da5063786b28186c6bc5c2a2d7c2b.mp4" alt="Shape Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Geometric Skill Development" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Shape Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Geometric Skill Development</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 524</span>
-                            <a href="/checkout.html?id=201" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 524</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 403</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/math-puzzle-board-game-educational-wooden-learning-toy-crafted-from-mdf-wood-for-children-and-mathematical-skills-development-202.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/b935dbb4356513f4195edd0662ef0c5c.mp4" alt="Math Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Mathematical Skills Development" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Math Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Mathematical Skills Development</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 524</span>
-                            <a href="/checkout.html?id=202" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 524</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 403</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/capital-abc-alphabet-puzzle-board-game-educational-wooden-learning-toy-crafted-from-mdf-wood-for-children-and-early-literacy-skills-203.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/ba208849ddb98ab5b8efc8cce1a6a93c.mp4" alt="Capital ABC Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Capital ABC Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 496</span>
-                            <a href="/checkout.html?id=203" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 496</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 381</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/small-abc-alphabet-puzzle-board-game-educational-wooden-learning-toy-crafted-from-mdf-wood-for-children-and-early-literacy-skills-204.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/9c7c2a0eeb2c1bf6ae6ae3000a2d8272.mp4" alt="Small Abc Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Small Abc Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 496</span>
-                            <a href="/checkout.html?id=204" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 496</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 381</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-water-play-mat-inflatable-tummy-time-activity-play-mat-for-infants-toddlers-239.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/4e46cd4e3b3f4dcb85fb9245c73fa701.mp4" alt="Baby Water Play Mat Inflatable Tummy Time Activity Play Mat for Infants & Toddlers" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Water Play Mat Inflatable Tummy Time Activity Play Mat for Infants & Toddlers</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 779</span>
-                            <a href="/checkout.html?id=239" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 779</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 599</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/kids-girls-hijab-korean-chiffon-with-handmade-flower-black-268.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Kids Girls Hijab Korean Chiffon With Handmade Flower - Black" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Girls Hijab Korean Chiffon With Handmade Flower - Black</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1993</span>
-                            <a href="/checkout.html?id=268" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1993</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1533</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/kids-girls-hijab-korean-chiffon-with-handmade-flower-white-269.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Kids Girls Hijab Korean Chiffon With Handmade Flower - White" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Girls Hijab Korean Chiffon With Handmade Flower - White</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1993</span>
-                            <a href="/checkout.html?id=269" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1993</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1533</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/a4-kids-educational-learning-tracing-book-64-pages-dot-to-dot-activity-workbook-with-2-markers-big-size-313.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/acb38da4f691d95289148db8f2d12c84.mp4" alt="A4 Kids Educational Learning Tracing Book | 64 Pages Dot-to-Dot Activity Workbook with 2 Markers (Big Size)" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">A4 Kids Educational Learning Tracing Book | 64 Pages Dot-to-Dot Activity Workbook with 2 Markers (Big Size)</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 879</span>
-                            <a href="/checkout.html?id=313" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 879</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 676</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/handcrafted-flexible-articulated-wooden-dolphin-fish-sculpture-and-decorative-desk-toy-394.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/bacd26fec3ef5661c53241196e1be12f.mp4" alt="Handcrafted Flexible Articulated Wooden Dolphin Fish Sculpture and Decorative Desk Toy" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Handcrafted Flexible Articulated Wooden Dolphin Fish Sculpture and Decorative Desk Toy</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1263</span>
-                            <a href="/checkout.html?id=394" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1263</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 971</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/inflatable-baby-play-mat-water-play-mat-for-kids-leakproof-baby-tummy-time-pool-type-mat-69x50x8cm-429.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/f9feefab1f650e3c783f6ab4775b8e7c.mp4" alt="Inflatable Baby Play Mat Water Play Mat For Kids Leakproof Baby Tummy Time Pool Type Mat 69x50x8cm" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Inflatable Baby Play Mat Water Play Mat For Kids Leakproof Baby Tummy Time Pool Type Mat 69x50x8cm</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 778</span>
-                            <a href="/checkout.html?id=429" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 778</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 598</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/school-bus-design-kids-water-bottle-with-strap-600ml-random-color-541.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/c79a76f7e2efbbc288790531920827ba.jpeg" alt="School Bus Design Kids Water Bottle With Strap 600ml | Random Color" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">School Bus Design Kids Water Bottle With Strap 600ml | Random Color</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2084</span>
-                            <a href="/checkout.html?id=541" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2084</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1603</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/drift-speed-27mhz-remote-control-rc-toy-truck-for-kids-random-color-794.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/2ff89ac43cf0f9a43aedb46e82232ffe.mp4" alt="Drift Speed 27MHz Remote Control RC Toy Truck for Kids (Random Color)" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Drift Speed 27MHz Remote Control RC Toy Truck for Kids (Random Color)</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2450</span>
-                            <a href="/checkout.html?id=794" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2450</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1884</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/magical-tracing-workbook-set-for-kids-reusable-learning-to-write-alphabet-numbers-line-tracing-practice-book-with-magic-pen-813.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/f2c51b3073fd67dc6e98e46d1910059d.jpeg" alt="Magical Tracing Workbook Set for Kids – Reusable Learning to Write Alphabet, Numbers & Line Tracing Practice Book with Magic Pen" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Magical Tracing Workbook Set for Kids – Reusable Learning to Write Alphabet, Numbers & Line Tracing Practice Book with Magic Pen</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 990</span>
-                            <a href="/checkout.html?id=813" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 990</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 761</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-shower-cap-with-stopper-silicon-baby-shower-cap-soft-safe-material-random-color-835.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/6132215aae1021252628c67cba3d26bd.mp4" alt="Baby Shower Cap With Stopper | Silicon Baby Shower Cap | Soft & Safe Material  | Random Color" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Shower Cap With Stopper | Silicon Baby Shower Cap | Soft & Safe Material  | Random Color</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 276</span>
-                            <a href="/checkout.html?id=835" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 276</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 212</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-hands-free-feeder-bottle-150ml-bpa-free-anti-colic-self-feeding-baby-bottle-with-straw-brush-random-color-836.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/6e8328dc4eb700856d2084555d9a7918.mp4" alt="Baby Hands-Free Feeder Bottle 150ml | BPA-Free Anti-Colic Self Feeding Baby Bottle with Straw Brush (Random Color)" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Hands-Free Feeder Bottle 150ml | BPA-Free Anti-Colic Self Feeding Baby Bottle with Straw Brush (Random Color)</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2815</span>
-                            <a href="/checkout.html?id=836" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2815</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2165</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/holydeer-recovery-toothpaste-7-5-nano-hydroxyapatite-for-enamel-repair-whitening-120gram-838.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/0f97ebb65e6208cefe1e591a5daee158.mp4" alt="Holydeer Recovery Toothpaste | 7.5% Nano-Hydroxyapatite For Enamel Repair & Whitening - 120Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Holydeer Recovery Toothpaste | 7.5% Nano-Hydroxyapatite For Enamel Repair & Whitening - 120Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 332</span>
-                            <a href="/checkout.html?id=838" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 332</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 255</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/baby-spoon-feeder-90ml-silicone-feeding-bottle-with-spoon-infant-toddler-food-supplement-bottle-4206.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/d09554fada25a624991014fc7dee3299.jpeg" alt="Baby Spoon Feeder | 90ml Silicone Feeding Bottle with Spoon | Infant & Toddler Food Supplement Bottle" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Spoon Feeder | 90ml Silicone Feeding Bottle with Spoon | Infant & Toddler Food Supplement Bottle</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 376</span>
-                            <a href="/checkout.html?id=4206" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 376</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 289</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -322,13 +462,14 @@
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
                 <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. We offer nationwide delivery with a secure and seamless shopping experience.</p>
+                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-                <ul class="space-y-2 text-gray-400 text-sm">
-                    <li><a href="/index.html" class="hover:text-teal-400 transition">Home</a></li>
-                    <li><a href="/checkout.html" class="hover:text-teal-400 transition">Checkout</a></li>
+                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
                 </ul>
             </div>
             <div>

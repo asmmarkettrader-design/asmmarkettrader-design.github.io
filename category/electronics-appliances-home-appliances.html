@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics & Appliances > Home Appliances - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
+        .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .image-zoom img { transition: transform 0.5s ease; }
+        .product-card:hover .image-zoom img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
+                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+                ASM VEO
+            </a>
+            
+            <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
+                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+                <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+            </div>
+            
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
+                <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
+            </a>
+        </div>
+    </header>
+    
+    <script>
+    function searchProducts() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('product-card');
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].querySelector('h3').innerText.toLowerCase();
+            if (title.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+        <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl font-extrabold text-gray-900">Electronics & Appliances > Home Appliances</h1>
+                <p class="text-gray-500 mt-2 font-medium">1 Products Found</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/electric-kitchen-water-heater-tap-instant-hot-water-faucet-fast-heating-tankless-faucet-7623.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757832930-68c666e2792ad-WhatsApp-Image-2025-09-11-at-2.52.56-PM.jpeg" alt="Electric Kitchen Water Heater Tap – Instant Hot Water Faucet | Fast Heating Tankless Faucet" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Electric Kitchen Water Heater Tap – Instant Hot Water Faucet | Fast Heating Tankless Faucet</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 4640</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 3569</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
+                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 text-center pt-6">
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

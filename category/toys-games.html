@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys & Games - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
+        .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .image-zoom img { transition: transform 0.5s ease; }
+        .product-card:hover .image-zoom img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
+                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+                ASM VEO
+            </a>
+            
+            <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
+                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+                <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+            </div>
+            
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
+                <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
+            </a>
+        </div>
+    </header>
+    
+    <script>
+    function searchProducts() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('product-card');
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].querySelector('h3').innerText.toLowerCase();
+            if (title.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+        <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl font-extrabold text-gray-900">Toys & Games</h1>
+                <p class="text-gray-500 mt-2 font-medium">54 Products Found</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/infrared-induction-helicopter-intelligent-hand-induction-flying-toy-with-usb-charging-1544.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/3d94ba10c482959f3bb6ac068c2b3d09.mp4" alt="Infrared Induction Helicopter - Intelligent Hand Induction Flying Toy with USB Charging" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Infrared Induction Helicopter - Intelligent Hand Induction Flying Toy with USB Charging</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1993</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1533</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/kids-pocket-watercolor-painting-book-3-in-1-creative-coloring-set-with-built-in-paints-brush-keychain-1860.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/e6151fa0cf89f73ceed4cc7511298f45.mp4" alt="Kids' Pocket Watercolor Painting Book – 3-in-1 Creative Coloring Set with Built-in Paints, Brush & Keychain" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids' Pocket Watercolor Painting Book – 3-in-1 Creative Coloring Set with Built-in Paints, Brush & Keychain</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 423</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 325</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-gaming-finger-sleeves-bundle-1-pair-anti-sweat-touchscreen-random-colour-2502.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/a8ff22602f65a54e04164aa6ec48d41c.jpeg" alt="Premium Gaming Finger Sleeves Bundle 1 Pair Anti Sweat Touchscreen | Random Colour" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Gaming Finger Sleeves Bundle 1 Pair Anti Sweat Touchscreen | Random Colour</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 117</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 90</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/two-way-prank-water-gun-reversible-squirt-battle-toy-outdoor-summer-party-fun-creative-jokes-random-color-3150.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/91279f4d31b54ee123e1f42855c261cc.mp4" alt="Two-Way Prank Water Gun | Reversible Squirt Battle Toy | Outdoor Summer Party Fun & Creative Jokes (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Two-Way Prank Water Gun | Reversible Squirt Battle Toy | Outdoor Summer Party Fun & Creative Jokes (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 624</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 480</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/mess-free-wonder-light-magic-brush-professional-makeup-brush-for-foundation-powder-blush-flawless-beauty-3155.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/c7ff76b3872d6f5d17786622c5fa2ea1.mp4" alt="Mess Free Wonder Light Magic Brush – Professional Makeup Brush For Foundation, Powder, Blush & Flawless Beauty" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Mess Free Wonder Light Magic Brush – Professional Makeup Brush For Foundation, Powder, Blush & Flawless Beauty</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 5917</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 4551</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/gears-building-blocks-toy-puzzle-construction-set-creative-learning-blocks-for-kids-3-boys-girls-3167.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/f4c81d1ff7ec61b3c524b7858c0377dd.mp4" alt="Gears Building Blocks Toy | Puzzle Construction Set | Creative Learning Blocks for Kids 3+ | Boys & Girls" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Gears Building Blocks Toy | Puzzle Construction Set | Creative Learning Blocks for Kids 3+ | Boys & Girls</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 6465</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 4973</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3pcs-rattle-suction-baby-toys-set-fun-sensory-teether-toys-for-infants-and-toddlers-3182.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/a97a651172e57440051ccb7c20ad10a8.png" alt="3PCS Rattle Suction Baby Toys Set Fun Sensory Teether Toys For Infants And Toddlers" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3PCS Rattle Suction Baby Toys Set Fun Sensory Teether Toys For Infants And Toddlers</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1337</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1028</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/remote-control-excavator-toy-kids-construction-vehicle-rc-truck-fun-outdoor-and-indoor-play-3188.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ffac24230c0b6658e2e31d0d1d90833a.jpeg" alt="Remote Control Excavator Toy Kids Construction Vehicle RC Truck Fun Outdoor And Indoor Play" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Remote Control Excavator Toy Kids Construction Vehicle RC Truck Fun Outdoor And Indoor Play</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 5553</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 4271</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/indoor-hanging-table-tennis-toy-kids-fun-paddle-ball-game-for-home-and-classroom-3189.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/6f64ac8cf4738519faa61a55025a7c61.jpeg" alt="Indoor Hanging Table Tennis Toy Kids Fun Paddle Ball Game For Home And Classroom" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Indoor Hanging Table Tennis Toy Kids Fun Paddle Ball Game For Home And Classroom</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2084</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1603</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pack-of-3-assorted-round-emoji-reaction-keychains-plastic-smiley-face-charms-random-designs-3753.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/5801c3b690ccc0da5fb8bc1edca474b0.png" alt="Pack of 3 Assorted Round Emoji Reaction Keychains – Plastic Smiley Face Charms (Random Designs)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack of 3 Assorted Round Emoji Reaction Keychains – Plastic Smiley Face Charms (Random Designs)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 624</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 480</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/racing-control-speed-x-car-toy-1-16-scale-rc-car-3763.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/4d471326e200385057adaeab473744df.png" alt="Racing-Control Speed X Car Toy (1:16 Scale RC Car)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Racing-Control Speed X Car Toy (1:16 Scale RC Car)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 5369</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 4130</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/doraemon-musical-piano-for-kids-fun-educational-piano-toy-for-babies-toddlers-3885.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/34fe898bf73db8fb23dbcd09f8f03ce6.png" alt="Doraemon Musical Piano for Kids – Fun & Educational Piano Toy for Babies & Toddlers" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Doraemon Musical Piano for Kids – Fun & Educational Piano Toy for Babies & Toddlers</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 624</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 480</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/children-s-slide-projector-torch-with-1-reels-slide-dinosaur-animal-patterns-bedtime-night-light-educational-toy-4411.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/cc1f95d72c7a05c431adcf75b11247c2.mp4" alt="Children’s Slide Projector Torch With 1 Reels Slide | Dinosaur & Animal Patterns | Bedtime Night Light | Educational Toy" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Children’s Slide Projector Torch With 1 Reels Slide | Dinosaur & Animal Patterns | Bedtime Night Light | Educational Toy</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 533</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 410</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/soft-dart-shell-ejecting-shotgun-toy-stylish-plastic-blaster-safe-for-kids-24x7-inches-4462.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/ff852f3d391d7df94f26e1948a6e69ce.jpeg" alt="Soft Dart Shell Ejecting Shotgun Toy | Stylish Plastic Blaster | Safe for Kids | 24x7 Inches" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Soft Dart Shell Ejecting Shotgun Toy | Stylish Plastic Blaster | Safe for Kids | 24x7 Inches</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2265</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1742</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/nerf-gun-288-03-soft-bullets-dart-blaster-original-imported-multicolor-toy-gun-for-kids-random-color-4468.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/cda51927d6fb1768aa5f5a4af21ef0ca.jpeg" alt="Nerf Gun 288-03 Soft Bullets Dart Blaster – Original Imported Multicolor Toy Gun for Kids (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Nerf Gun 288-03 Soft Bullets Dart Blaster – Original Imported Multicolor Toy Gun for Kids (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1081</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 831</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3d-flip-magnetic-magic-cube-puzzle-game-variety-geometric-changeable-cube-anti-stress-fidget-toy-for-kids-gifts-random-design-4619.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/cb5a5ccd520bbd7c20f1781494b175a3.mp4" alt="3D Flip Magnetic Magic Cube Puzzle Game Variety Geometric Changeable Cube Anti Stress Fidget Toy For Kids Gifts (Random Design)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3D Flip Magnetic Magic Cube Puzzle Game Variety Geometric Changeable Cube Anti Stress Fidget Toy For Kids Gifts (Random Design)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 479</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 368</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dorco-children-s-soft-toothbrush-with-fun-toy-protective-case-gentle-care-for-kids-teeth-gums-random-design-4696.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/e632d720c01c10e58deab97a8f6420c9.mp4" alt="DORCO Children’s Soft Toothbrush with Fun Toy & Protective Case – Gentle Care for Kids’ Teeth & Gums (Random Design)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">DORCO Children’s Soft Toothbrush with Fun Toy & Protective Case – Gentle Care for Kids’ Teeth & Gums (Random Design)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 333</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 256</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dinosaur-toy-sets-walking-dinosaurs-with-light-and-sound-for-kids-fun-realistic-play-and-parent-child-interaction-4702.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/d237ceef3a7c6e509dcd98b7e9b2358d.mp4" alt="Dinosaur Toy Sets Walking Dinosaurs With Light And Sound For Kids Fun Realistic Play And Parent Child Interaction" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Dinosaur Toy Sets Walking Dinosaurs With Light And Sound For Kids Fun Realistic Play And Parent Child Interaction</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1900</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1461</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/balance-car-doll-with-rotation-musical-sound-3d-lighting-universal-movement-and-battery-operated-princess-toy-4704.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/8f3824c09e73894106685dd48bf37faa.mp4" alt="Balance Car Doll With Rotation Musical Sound 3d Lighting Universal Movement And Battery Operated Princess Toy" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Balance Car Doll With Rotation Musical Sound 3d Lighting Universal Movement And Battery Operated Princess Toy</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2630</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2023</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/princess-motorbike-toy-with-lights-music-and-dolls-pretend-playset-bump-n-go-vehicle-for-girls-kids-age-3-plus-random-color-4709.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/475bc8312b3095000cb57723462a2339.jpeg" alt="Princess Motorbike Toy With Lights Music And Dolls Pretend Playset Bump N Go Vehicle For Girls Kids Age 3 Plus (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Princess Motorbike Toy With Lights Music And Dolls Pretend Playset Bump N Go Vehicle For Girls Kids Age 3 Plus (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 3088</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2375</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/transforming-aeroplane-friction-toy-for-kids-with-quick-character-change-high-quality-abs-material-and-fun-play-random-color-4711.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/b96ec51496f4c37326e45a50eedfe6e1.jpeg" alt="Transforming Aeroplane Friction Toy For Kids With Quick Character Change High Quality Abs Material And Fun Play (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Transforming Aeroplane Friction Toy For Kids With Quick Character Change High Quality Abs Material And Fun Play (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 987</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 759</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/backpack-makeup-toy-set-for-girls-spark-creativity-with-safe-and-fun-pretend-play-supplies-4712.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/d121661b96cc401ebb5601e928bcc3aa.jpeg" alt="Backpack Makeup Toy Set For Girls Spark Creativity With Safe And Fun Pretend Play Supplies" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Backpack Makeup Toy Set For Girls Spark Creativity With Safe And Fun Pretend Play Supplies</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2447</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1882</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/360-stunt-car-toy-double-sided-flip-action-friction-powered-cartoon-themed-racer-durable-safe-kids-toy-car-indoor-outdoor-fun-random-colour-4713.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/f75cd637365246e0f5873a0a9e015d75.jpeg" alt="360° Stunt Car Toy - Double-Sided Flip Action, Friction Powered, Cartoon-Themed Racer - Durable & Safe Kids Toy Car - Indoor & Outdoor Fun (Random Colour)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">360° Stunt Car Toy - Double-Sided Flip Action, Friction Powered, Cartoon-Themed Racer - Durable & Safe Kids Toy Car - Indoor & Outdoor Fun (Random Colour)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 258</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 198</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/electronic-arabic-learning-tablet-kids-educational-toy-learn-prayers-quranic-verses-supplications-4715.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/ad134f53b3d43de3fcaa61f67a548bd9.mp4" alt="Electronic Arabic Learning Tablet | Kids Educational Toy | Learn Prayers, Quranic Verses & Supplications" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Electronic Arabic Learning Tablet | Kids Educational Toy | Learn Prayers, Quranic Verses & Supplications</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1482</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1140</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/40mhz-rc-rotating-stunt-car-battery-operated-remote-control-rotation-flip-car-4720.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/94876e05ea97e7282e7749562f4644ad.jpeg" alt="40MHz RC Rotating Stunt Car – Battery Operated Remote Control Rotation & Flip Car" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">40MHz RC Rotating Stunt Car – Battery Operated Remote Control Rotation & Flip Car</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 4272</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 3286</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/mini-butterfly-makeup-kit-for-kids-fun-pretend-play-beauty-set-4721.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/3cc6e95a7887457b62f648c85b2354ca.png" alt="Mini Butterfly Makeup Kit for Kids – Fun Pretend Play Beauty Set" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Mini Butterfly Makeup Kit for Kids – Fun Pretend Play Beauty Set</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 487</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 374</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/doll-battery-operated-dancing-labubu-toy-with-light-and-sound-labubu-talking-and-speech-repeatin-4723.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/c7f2ff8e2d5ee8ff6ae16f60e15386fd.mp4" alt="Doll Battery Operated Dancing labubu Toy with Light and Sound LABUBU Talking and Speech Repeatin" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Doll Battery Operated Dancing labubu Toy with Light and Sound LABUBU Talking and Speech Repeatin</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2723</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2094</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/magnetic-toys-building-blocks-36-pcs-kids-magnet-balls-and-rods-set-toddler-stem-sticks-toy-learning-educational-block-games-stacking-toys-for-boy-girl-age-3-years-old-preschool-4724.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/a4dcf885f8497b1f632901f1672ce999.mp4" alt="Magnetic Toys Building Blocks - 36 PCS Kids Magnet Balls and Rods Set Toddler STEM Sticks Toy Learning Educational Block Games Stacking Toys for Boy Girl Age 3+ Years Old Preschool" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Magnetic Toys Building Blocks - 36 PCS Kids Magnet Balls and Rods Set Toddler STEM Sticks Toy Learning Educational Block Games Stacking Toys for Boy Girl Age 3+ Years Old Preschool</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2084</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1603</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/high-speed-rail-remote-control-model-train-electric-toy-realistic-design-kids-collectors-5114.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/8701f72133581d437fb3328d370b504e.mp4" alt="High‑Speed Rail Remote Control Model Train | Electric Toy | Realistic Design | Kids & Collectors" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">High‑Speed Rail Remote Control Model Train | Electric Toy | Realistic Design | Kids & Collectors</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 4001</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 3077</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/zipstring-portable-rope-launcher-handheld-kinetic-string-thruster-creative-floating-loop-toy-for-kids-and-adults-random-colour-5283.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/d512723e942dac65064171caec9ddffd.mp4" alt="ZipString Portable Rope Launcher – Handheld Kinetic String Thruster & Creative Floating Loop Toy for Kids and Adults ( random colour )" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">ZipString Portable Rope Launcher – Handheld Kinetic String Thruster & Creative Floating Loop Toy for Kids and Adults ( random colour )</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1137</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 874</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/portable-kids-stainless-steel-cutlery-set-ergonomic-cartoon-spoon-and-fork-with-slim-fit-travel-storage-case-for-school-lunches-picnics-and-toddler-self-feeding-5602.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/2fae67e2fead3c7343a12e454ba4c5fa.mp4" alt="Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 77</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 59</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/portable-kids-stainless-steel-cutlery-set-ergonomic-cartoon-spoon-and-fork-with-slim-fit-travel-storage-case-for-school-lunches-picnics-and-toddler-self-feeding-pink-5603.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding - Pink" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding - Pink</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 897</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 690</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/portable-kids-stainless-steel-cutlery-set-ergonomic-cartoon-spoon-and-fork-with-slim-fit-travel-storage-case-for-school-lunches-picnics-and-toddler-self-feeding-blue-5604.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding - Blue" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding - Blue</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 897</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 690</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/portable-kids-stainless-steel-cutlery-set-ergonomic-cartoon-spoon-and-fork-with-slim-fit-travel-storage-case-for-school-lunches-picnics-and-toddler-self-feeding-yellow-5605.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding - Yellow" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding - Yellow</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 897</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 690</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/soba-top-turbo-professional-1-43-scale-high-speed-slot-car-racing-championship-set-5619.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4dc322be902bd82bdf14b177613dbb2b.mp4" alt="Soba Top Turbo: Professional 1:43 Scale High-Speed Slot Car Racing Championship Set" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Soba Top Turbo: Professional 1:43 Scale High-Speed Slot Car Racing Championship Set</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 8107</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 6236</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/diy-water-beads-decorative-bottle-kit-create-your-own-mesmerizing-sensory-art-piece-5878.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/d8190944f801de73ae739c64c84eda67.mp4" alt="DIY Water Beads Decorative Bottle Kit: Create Your Own Mesmerizing Sensory Art Piece." class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">DIY Water Beads Decorative Bottle Kit: Create Your Own Mesmerizing Sensory Art Piece.</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/kid-s-explorer-binoculars-8x30-optical-lens-for-fun-learning-outdoor-exploration-portable-kid-friendly-mini-binoculars-for-nature-trips-bird-watching-games-travel-adventures-6126.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/7ad15dbcf8b926b91fc82ab1405fbbc5.png" alt="Kid’s Explorer Binoculars – 8x30 Optical Lens for Fun Learning & Outdoor Exploration | Portable, Kid-Friendly Mini Binoculars for Nature Trips, Bird Watching, Games & Travel Adventures" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kid’s Explorer Binoculars – 8x30 Optical Lens for Fun Learning & Outdoor Exploration | Portable, Kid-Friendly Mini Binoculars for Nature Trips, Bird Watching, Games & Travel Adventures</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1081</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 831</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/story-toy-qin-piano-educational-musical-toy-for-kids-with-fun-learning-and-play-features-6132.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/ae1bea525bbe4a3ec19ec89896338db5.jpeg" alt="Story Toy Qin Piano – Educational Musical Toy for Kids with Fun Learning and Play Features" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Story Toy Qin Piano – Educational Musical Toy for Kids with Fun Learning and Play Features</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2174</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1672</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/airplane-inertial-foam-glider-aircraft-toy-plane-model-outdoor-toy-educational-toys-good-quality-random-color-6166.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/fc2d5d9b82fa9cd90cf69e3f197d4eba.mp4" alt="Airplane Inertial Foam Glider Aircraft Toy Plane Model Outdoor Toy Educational Toys Good Quality (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Airplane Inertial Foam Glider Aircraft Toy Plane Model Outdoor Toy Educational Toys Good Quality (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 323</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 248</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/ford-f-150-raptor-pickup-truck-toy-model-with-touch-sensor-realistic-durable-and-easy-to-operate-random-colors-6334.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/14/b2d138c934e9d1257d9595cb4c0c1227.mp4" alt="Ford F-150 Raptor Pickup Truck Toy Model With Touch Sensor – Realistic, Durable, And Easy-To-Operate (Random Colors)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Ford F-150 Raptor Pickup Truck Toy Model With Touch Sensor – Realistic, Durable, And Easy-To-Operate (Random Colors)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 4548</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 3498</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/bubble-bazooka-pro-electric-2-in-1-rocket-bubble-gun-fast-bubbles-for-parties-beach-backyard-fun-6951.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/b5ec915d1204be348e46a4d27c6d8991.jpeg" alt="Bubble Bazooka Pro: Electric 2-In-1 Rocket Bubble Gun — Fast Bubbles For Parties, Beach & Backyard Fun" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Bubble Bazooka Pro: Electric 2-In-1 Rocket Bubble Gun — Fast Bubbles For Parties, Beach & Backyard Fun</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1121</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 862</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-rc-fighter-jet-plane-2-4g-remote-control-foam-airplane-toy-with-lights-high-speed-glider-helicopter-style-stunt-aircraft-for-kids-adults-7013.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/96b09c4804043aa01b8a173915cd5b13.mp4" alt="Premium RC Fighter Jet Plane – 2.4G Remote Control Foam Airplane Toy with Lights | High-Speed Glider | Helicopter Style Stunt Aircraft for Kids & Adults" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium RC Fighter Jet Plane – 2.4G Remote Control Foam Airplane Toy with Lights | High-Speed Glider | Helicopter Style Stunt Aircraft for Kids & Adults</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 6282</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 4832</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/kids-building-blocks-table-with-chair-multi-functional-play-set-for-creative-learning-building-drawing-and-fun-activities-7014.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/a00c30b085eff8be23a43f69d52418f8.mp4" alt="Kids Building Blocks Table With Chair – Multi-Functional Play Set For Creative Learning, Building, Drawing, And Fun Activities" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Building Blocks Table With Chair – Multi-Functional Play Set For Creative Learning, Building, Drawing, And Fun Activities</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 8107</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 6236</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/rechargeable-shark-water-gun-high-pressure-electric-water-blaster-toy-for-kids-long-range-water-shooter-fun-outdoor-summer-play-random-color-7046.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/72afa08e773dea5b86a7e1ce28d09333.mp4" alt="Rechargeable Shark Water Gun – High Pressure Electric Water Blaster Toy For Kids, Long Range Water Shooter, Fun Outdoor Summer Play (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Rechargeable Shark Water Gun – High Pressure Electric Water Blaster Toy For Kids, Long Range Water Shooter, Fun Outdoor Summer Play (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 3271</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2516</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/kids-badminton-tennis-racket-set-easy-to-handle-outdoor-sports-toy-with-2-rackets-1-ball-and-1-shuttlecock-for-fun-indoor-outdoor-play-random-color-7047.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/48308b3b0be98b566647d24d3713579a.jpg" alt="Kids Badminton & Tennis Racket Set – Easy-To-Handle Outdoor Sports Toy With 2 Rackets, 1 Ball, And 1 Shuttlecock For Fun Indoor & Outdoor Play (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Badminton & Tennis Racket Set – Easy-To-Handle Outdoor Sports Toy With 2 Rackets, 1 Ball, And 1 Shuttlecock For Fun Indoor & Outdoor Play (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1446</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1112</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/wooden-kids-play-kitchen-set-with-toy-utensils-velcro-food-montessori-pretend-cooking-playset-7048.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/1ce97694fcd3043a299eaa79e8df2c29.mp4" alt="Wooden Kids Play Kitchen Set with Toy Utensils & Velcro Food – Montessori Pretend Cooking Playset" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Wooden Kids Play Kitchen Set with Toy Utensils & Velcro Food – Montessori Pretend Cooking Playset</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 4822</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 3709</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/fun-popcorn-game-toy-for-kids-interactive-jumping-popcorn-corn-game-with-buckets-tokens-family-party-game-7095.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/8ef210aac17668e1022ec88801aaae26.mp4" alt="Fun Popcorn Game Toy for Kids – Interactive Jumping Popcorn Corn Game with Buckets & Tokens | Family Party Game" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Fun Popcorn Game Toy for Kids – Interactive Jumping Popcorn Corn Game with Buckets & Tokens | Family Party Game</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 4457</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 3428</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/funny-double-sided-reverse-water-gun-mini-tactical-prank-sprayer-toy-for-kids-adults-summer-pool-beach-water-fight-blaster-random-color-7122.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/2dcfe8cccbb9f130f1375592cd8b7df4.mp4" alt="Funny Double-Sided Reverse Water Gun – Mini Tactical Prank Sprayer Toy for Kids & Adults | Summer Pool & Beach Water Fight Blaster (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Funny Double-Sided Reverse Water Gun – Mini Tactical Prank Sprayer Toy for Kids & Adults | Summer Pool & Beach Water Fight Blaster (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 935</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 719</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/kids-magic-glow-pad-3d-light-up-drawing-board-for-creative-play-and-learning-7137.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/db5e1042fafd5242e968531dff807e48.mp4" alt="Kids Magic Glow Pad: 3D Light-Up Drawing Board for Creative Play and Learning" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Magic Glow Pad: 3D Light-Up Drawing Board for Creative Play and Learning</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2541</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1954</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/spider-man-wrist-shooter-transmitter-set-for-kids-multicolour-7180.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/47a5a0cd8a54369c41f79e96a887f44b.mp4" alt="Spider-Man Wrist Shooter ,Transmitter Set For Kids - Multicolour" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Spider-Man Wrist Shooter ,Transmitter Set For Kids - Multicolour</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1008</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 775</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/inflatable-leakproof-tummy-time-water-mat-for-kids-safe-fun-baby-play-mat-random-color-10131.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/d320a4ba32be8a2140b8644147c0a535.mp4" alt="Inflatable Leakproof Tummy Time Water Mat for Kids – Safe & Fun Baby Play Mat (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Inflatable Leakproof Tummy Time Water Mat for Kids – Safe & Fun Baby Play Mat (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 804</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 618</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/lcd-drawing-pen-case-easy-writing-with-eye-protection-lock-screen-large-space-lcd-drawing-pen-case-one-key-erase-random-color-10912.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61fxeM0lA4L._SL1500_.jpg" alt="LCD Drawing Pen Case Easy Writing with Eye Protection, Lock Screen, Large Space LCD Drawing Pen Case-One Key Erase (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">LCD Drawing Pen Case Easy Writing with Eye Protection, Lock Screen, Large Space LCD Drawing Pen Case-One Key Erase (Random Color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1209</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 930</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/money-safe-bank-creative-money-box-atm-11580.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/3_cec6e328-6d34-4504-a892-5fefa0328753.jpg" alt="MONEY SAFE / BANK Creative Money Box ATM" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">MONEY SAFE / BANK Creative Money Box ATM</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 3544</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2726</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/8-5-inch-lcd-writing-tablet-for-kids-digital-drawing-pad-erasable-writing-board-writing-pad-random-color-13175.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/Multi-Colors-–-LCD-Writing-Tablet-8.5-Inches-2.jpeg" alt="8.5 inch LCD writing tablet for kids - digital drawing pad - erasable writing board - writing pad (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">8.5 inch LCD writing tablet for kids - digital drawing pad - erasable writing board - writing pad (random color)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 524</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 403</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
+                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 text-center pt-6">
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

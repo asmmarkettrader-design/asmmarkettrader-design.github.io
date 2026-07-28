@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion & Apparel > Men's Fashion - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
+        .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .image-zoom img { transition: transform 0.5s ease; }
+        .product-card:hover .image-zoom img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
+                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+                ASM VEO
+            </a>
+            
+            <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
+                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+                <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+            </div>
+            
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
+                <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
+            </a>
+        </div>
+    </header>
+    
+    <script>
+    function searchProducts() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('product-card');
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].querySelector('h3').innerText.toLowerCase();
+            if (title.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+        <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl font-extrabold text-gray-900">Fashion & Apparel > Men's Fashion</h1>
+                <p class="text-gray-500 mt-2 font-medium">22 Products Found</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/adjustable-buckleless-elastic-waist-belt-with-metal-hooks-for-jeans-dress-pants-and-casual-wear-226.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/a27f72c08a3f082688e5ef7275d3623e.mp4" alt="Adjustable Buckleless Elastic Waist Belt With Metal Hooks For Jeans, Dress Pants And Casual Wear" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Adjustable Buckleless Elastic Waist Belt With Metal Hooks For Jeans, Dress Pants And Casual Wear</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 970</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 746</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/belebaily-premium-tri-fold-wallet-for-men-10-card-slots-secure-button-closure-large-cash-pocket-1063.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/b5ce5b2ebc16846de8171c3764eedb8e.mp4" alt="Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 990</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 761</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/belebaily-premium-tri-fold-wallet-for-men-10-card-slots-secure-button-closure-large-cash-pocket-black-1064.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket - Black" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket - Black</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 922</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 709</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/belebaily-premium-tri-fold-wallet-for-men-10-card-slots-secure-button-closure-large-cash-pocket-brown-1065.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket - Brown" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket - Brown</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 922</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 709</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/balebaily-long-zipper-wallet-for-men-women-pu-leather-wallet-with-15-card-slots-phone-pocket-and-photo-window-1326.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/aa49114d23490507d9fa4fc82f5889b2.mp4" alt="Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/balebaily-long-zipper-wallet-for-men-women-pu-leather-wallet-with-15-card-slots-phone-pocket-and-photo-window-black-1327.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window - Black" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window - Black</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/balebaily-long-zipper-wallet-for-men-women-pu-leather-wallet-with-15-card-slots-phone-pocket-and-photo-window-light-brown-1328.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window - Light Brown" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window - Light Brown</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/balebaily-long-zipper-wallet-for-men-women-pu-leather-wallet-with-15-card-slots-phone-pocket-and-photo-window-dark-brown-1329.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window - Dark Brown" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Balebaily Long Zipper Wallet for Men & Women PU Leather Wallet with 15 Card Slots Phone Pocket and Photo Window - Dark Brown</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-men-s-wallet-slim-bifold-wallet-for-men-stylish-durable-design-multiple-card-slots-secure-cash-2168.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/80e6c68cc20097dea02721ead4206d0f.png" alt="Premium Men’s Wallet Slim Bifold Wallet for Men Stylish Durable Design Multiple Card Slots Secure Cash" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Men’s Wallet Slim Bifold Wallet for Men Stylish Durable Design Multiple Card Slots Secure Cash</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-men-s-wallet-slim-bifold-wallet-for-men-stylish-durable-design-multiple-card-slots-secure-cash-black-2169.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Premium Men’s Wallet Slim Bifold Wallet for Men Stylish Durable Design Multiple Card Slots Secure Cash - Black" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Men’s Wallet Slim Bifold Wallet for Men Stylish Durable Design Multiple Card Slots Secure Cash - Black</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-men-s-wallet-slim-bifold-wallet-for-men-stylish-durable-design-multiple-card-slots-secure-cash-dark-brown-2170.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Premium Men’s Wallet Slim Bifold Wallet for Men Stylish Durable Design Multiple Card Slots Secure Cash - Dark Brown" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Men’s Wallet Slim Bifold Wallet for Men Stylish Durable Design Multiple Card Slots Secure Cash - Dark Brown</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1354</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1041</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-arm-hand-sleeves-for-sun-protection-uv-protection-cooling-sleeves-with-full-coverage-design-2235.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/d016e34c644b492d28ed854c80acdb76.mp4" alt="Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 377</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 290</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-arm-hand-sleeves-for-sun-protection-uv-protection-cooling-sleeves-with-full-coverage-design-black-2236.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design - Black" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design - Black</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 377</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 290</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-arm-hand-sleeves-for-sun-protection-uv-protection-cooling-sleeves-with-full-coverage-design-skin-2237.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design - Skin" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design - Skin</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 377</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 290</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-arm-hand-sleeves-for-sun-protection-uv-protection-cooling-sleeves-with-full-coverage-design-white-2238.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design - White" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Arm & Hand Sleeves for Sun Protection | UV Protection Cooling Sleeves with Full Coverage Design - White</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 377</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 290</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/slardar-premium-leather-wallet-for-men-stylish-durable-slim-design-with-practical-storage-black-2267.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/934a4f036b9da460c14de1157528fa28.mp4" alt="Slardar Premium Leather Wallet For Men | Stylish Durable Slim Design With Practical Storage | Black" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Slardar Premium Leather Wallet For Men | Stylish Durable Slim Design With Practical Storage | Black</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 552</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 424</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/digital-touch-watch-stylish-led-display-casual-wear-blue-color-without-box-2706.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/a12cac0c0bf9bd56fbc20019e6601f7e.mp4" alt="Digital Touch Watch Stylish LED Display Casual Wear (Blue Color Without Box)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Digital Touch Watch Stylish LED Display Casual Wear (Blue Color Without Box)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 990</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 761</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/digital-touch-watch-stylish-led-display-casual-wear-without-box-2707.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/c80082be677d792aa089c1452f12402c.mp4" alt="Digital Touch Watch Stylish LED Display Casual Wear (Without Box)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Digital Touch Watch Stylish LED Display Casual Wear (Without Box)</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 990</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 761</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/digital-touch-watch-stylish-led-display-casual-wear-without-box-red-2708.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Digital Touch Watch Stylish LED Display Casual Wear (Without Box) - Red" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Digital Touch Watch Stylish LED Display Casual Wear (Without Box) - Red</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 990</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 761</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/digital-touch-watch-stylish-led-display-casual-wear-without-box-orange-2709.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Digital Touch Watch Stylish LED Display Casual Wear (Without Box) - Orange" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Digital Touch Watch Stylish LED Display Casual Wear (Without Box) - Orange</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 990</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 761</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/three-guys-high-elasticity-multi-purpose-gloves-perfect-for-mechanical-work-car-detailing-bike-riding-and-more-3025.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/595ed4520758172b298b0df6b18f198d.jpeg" alt="THREE GUYS High-Elasticity Multi-Purpose Gloves – Perfect for Mechanical Work, Car Detailing, Bike Riding, and More" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">THREE GUYS High-Elasticity Multi-Purpose Gloves – Perfect for Mechanical Work, Car Detailing, Bike Riding, and More</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 533</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 410</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/men-pu-leather-wallet-with-box-multi-card-slots-secure-snap-button-7-card-holders-3-note-compartments-6092.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/2ccb34438bd4663b52780b5ea83f38d1.jpeg" alt="Men PU Leather Wallet with Box | Multi Card Slots & Secure Snap Button | 7 Card Holders & 3 Note Compartments" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Men PU Leather Wallet with Box | Multi Card Slots & Secure Snap Button | 7 Card Holders & 3 Note Compartments</h3>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 862</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 663</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
+                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 text-center pt-6">
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

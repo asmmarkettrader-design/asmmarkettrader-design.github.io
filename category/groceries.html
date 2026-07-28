@@ -10,582 +10,848 @@
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
         .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
         .image-zoom img { transition: transform 0.5s ease; }
         .product-card:hover .image-zoom img { transform: scale(1.1); }
-        .category-icon { transition: all 0.3s ease; }
-        .category-item:hover .category-icon { transform: scale(1.1) rotate(5deg); background-color: #0d9488; color: white; }
     </style>
 </head>
 <body class="text-gray-800">
     <!-- Navbar -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
             <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
                 <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
                 ASM VEO
             </a>
-            <div class="hidden md:flex flex-1 max-w-xl mx-8 relative">
-                <input type="text" placeholder="Search for products, brands and more..." class="w-full bg-gray-100 border border-transparent focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+            
+            <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
+                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
                 <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
             </div>
-            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2">
+            
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
                 <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
             </a>
         </div>
     </header>
+    
+    <script>
+    function searchProducts() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('product-card');
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].querySelector('h3').innerText.toLowerCase();
+            if (title.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
 
         <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
             <div class="container mx-auto px-4">
-                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">Groceries</h1>
-                <p class="text-gray-500 mt-2 font-medium">42 Exclusive Products Found</p>
+                <h1 class="text-3xl font-extrabold text-gray-900">Groceries</h1>
+                <p class="text-gray-500 mt-2 font-medium">42 Products Found</p>
             </div>
         </div>
-        <div class="container mx-auto px-4 pb-12">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+        <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pizza-platter-durable-serving-tray-for-pizza-snacks-appetizers-kitchen-dining-essential-2975.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/18/2f3389aea63c800f88a8455f2eea67d6.jpeg" alt="Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1263</span>
-                            <a href="/checkout.html?id=2975" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1263</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 971</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pizza-platter-durable-serving-tray-for-pizza-snacks-appetizers-kitchen-dining-essential-10-15-2976.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential - 10/15" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential - 10/15</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1176</span>
-                            <a href="/checkout.html?id=2976" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1176</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 904</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pizza-platter-durable-serving-tray-for-pizza-snacks-appetizers-kitchen-dining-essential-13-18-2977.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential - 13/18" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential - 13/18</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1260</span>
-                            <a href="/checkout.html?id=2977" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1260</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 969</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pizza-platter-durable-serving-tray-for-pizza-snacks-appetizers-kitchen-dining-essential-12-5-8-2978.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential - 12.5/8" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pizza Platter – Durable Serving Tray for Pizza, Snacks & Appetizers | Kitchen & Dining Essential - 12.5/8</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1091</span>
-                            <a href="/checkout.html?id=2978" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1091</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 839</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-aluminium-foil-sheet-food-grade-kitchen-foil-roll-for-cooking-baking-bbq-food-wrapping-2-meter-3135.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/2fdf6ea71ad38a6170104fd23b4773a2.jpg" alt="Premium Aluminium Foil Sheet – Food Grade Kitchen Foil Roll for Cooking, Baking, BBQ & Food Wrapping – 2 Meter" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium Aluminium Foil Sheet – Food Grade Kitchen Foil Roll for Cooking, Baking, BBQ & Food Wrapping – 2 Meter</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 388</span>
-                            <a href="/checkout.html?id=3135" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 388</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 298</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/chu-chu-wafer-snack-pack-of-10-providing-delicious-taste-crunchy-everyday-snack-support-4813.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/9c8a1595e7b8c9ae4a810cc547a20cb7.mp4" alt="Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2632</span>
-                            <a href="/checkout.html?id=4813" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2632</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2024</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/chu-chu-wafer-snack-pack-of-10-providing-delicious-taste-crunchy-everyday-snack-support-strawberry-4814.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support - Strawberry" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support - Strawberry</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2632</span>
-                            <a href="/checkout.html?id=4814" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2632</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2024</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/chu-chu-wafer-snack-pack-of-10-providing-delicious-taste-crunchy-everyday-snack-support-chocolate-4815.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support - Chocolate" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support - Chocolate</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2632</span>
-                            <a href="/checkout.html?id=4815" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2632</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2024</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/chu-chu-wafer-snack-pack-of-10-providing-delicious-taste-crunchy-everyday-snack-support-vanilla-4816.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support - Vanilla" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support - Vanilla</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2632</span>
-                            <a href="/checkout.html?id=4816" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2632</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2024</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blissmints-gum-tablets-assorted-fruit-spearmint-flavors-12-piece-pack-for-fresh-breath-banana-mango-strawberry-4844.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/08/4ff49f664efc42d19467f837d02cada5.mp4" alt="BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2706</span>
-                            <a href="/checkout.html?id=4844" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2706</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2081</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blissmints-gum-tablets-assorted-fruit-spearmint-flavors-12-piece-pack-for-fresh-breath-banana-mango-strawberry-strawberry-4845.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - Strawberry" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - Strawberry</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2706</span>
-                            <a href="/checkout.html?id=4845" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2706</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2081</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blissmints-gum-tablets-assorted-fruit-spearmint-flavors-12-piece-pack-for-fresh-breath-banana-mango-strawberry-banana-4846.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - banana" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - banana</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2706</span>
-                            <a href="/checkout.html?id=4846" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2706</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2081</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blissmints-gum-tablets-assorted-fruit-spearmint-flavors-12-piece-pack-for-fresh-breath-banana-mango-strawberry-orange-4847.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - orange" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - orange</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2706</span>
-                            <a href="/checkout.html?id=4847" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2706</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2081</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blissmints-gum-tablets-assorted-fruit-spearmint-flavors-12-piece-pack-for-fresh-breath-banana-mango-strawberry-spearmint-4848.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - spearmint" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - spearmint</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2706</span>
-                            <a href="/checkout.html?id=4848" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2706</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2081</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blissmints-gum-tablets-assorted-fruit-spearmint-flavors-12-piece-pack-for-fresh-breath-banana-mango-strawberry-mango-4849.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - mango" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">BlissMints Gum Tablets - Assorted Fruit & Spearmint Flavors | 12-Piece Pack for Fresh Breath | Banana, Mango, Strawberry - mango</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2706</span>
-                            <a href="/checkout.html?id=4849" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2706</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2081</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/spinzer-himalayan-pink-salt-natural-mineral-rich-pure-taste-perfect-choice-for-daily-cooking-needs-500g-5673.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/5ae64acf0c6a7a63b1cd8f949e7eb57e.png" alt="Spinzer Himalayan Pink Salt Natural Mineral Rich Pure Taste Perfect Choice For Daily Cooking Needs - 500g" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Spinzer Himalayan Pink Salt Natural Mineral Rich Pure Taste Perfect Choice For Daily Cooking Needs - 500g</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 350</span>
-                            <a href="/checkout.html?id=5673" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 350</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 269</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/valam-naturals-mix-seeds-250g-healthy-blend-of-pumpkin-flax-sunflower-sesame-chia-seeds-7149.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/7977a9c4fc6046c3130ac5a2d959c569.png" alt="Valam Naturals Mix Seeds 250g – Healthy Blend of Pumpkin, Flax, Sunflower, Sesame & Chia Seeds" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Valam Naturals Mix Seeds 250g – Healthy Blend of Pumpkin, Flax, Sunflower, Sesame & Chia Seeds</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 624</span>
-                            <a href="/checkout.html?id=7149" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 624</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 480</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/valam-naturals-chia-seeds-100-pure-clean-nutrient-rich-superfood-7158.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/80721ad8ef29ebbfb289b83ff0676a6f.jpeg" alt="Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 852</span>
-                            <a href="/checkout.html?id=7158" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 852</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 655</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/valam-naturals-chia-seeds-100-pure-clean-nutrient-rich-superfood-250gm-7159.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood - 250gm" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood - 250gm</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 852</span>
-                            <a href="/checkout.html?id=7159" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 852</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 655</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/valam-naturals-chia-seeds-100-pure-clean-nutrient-rich-superfood-500gm-7160.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood - 500gm" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood - 500gm</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1492</span>
-                            <a href="/checkout.html?id=7160" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1492</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1147</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/valam-naturals-chia-seeds-100-pure-clean-nutrient-rich-superfood-1000gm-7161.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood - 1000gm" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood - 1000gm</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2723</span>
-                            <a href="/checkout.html?id=7161" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2723</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2094</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/organic-flax-seeds-100-natural-gluten-free-non-gmo-superfood-7162.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/3acb429f26851e4c5b1dad786e0716ba.png" alt="Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 405</span>
-                            <a href="/checkout.html?id=7162" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 405</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 311</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/organic-flax-seeds-100-natural-gluten-free-non-gmo-superfood-250gm-7163.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood - 250gm" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood - 250gm</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 500</span>
-                            <a href="/checkout.html?id=7163" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 500</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 384</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/organic-flax-seeds-100-natural-gluten-free-non-gmo-superfood-500gm-7164.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood - 500gm" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood - 500gm</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 753</span>
-                            <a href="/checkout.html?id=7164" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 753</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 579</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/ashwagandha-powder-pure-and-natural-herbal-supplement-for-stress-relief-energy-immunity-boost-and-overall-wellness-7171.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/b2d5babbfaa26a713cee71893eec1129.jpeg" alt="Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 497</span>
-                            <a href="/checkout.html?id=7171" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 497</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 382</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/ashwagandha-powder-pure-and-natural-herbal-supplement-for-stress-relief-energy-immunity-boost-and-overall-wellness-50-gram-7172.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness - 50 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness - 50 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 497</span>
-                            <a href="/checkout.html?id=7172" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 497</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 382</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/ashwagandha-powder-pure-and-natural-herbal-supplement-for-stress-relief-energy-immunity-boost-and-overall-wellness-100-gram-7173.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness - 100 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness - 100 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 643</span>
-                            <a href="/checkout.html?id=7173" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 643</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 494</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/sunflower-seeds-without-shell-100-natural-peeled-seeds-rich-in-protein-fiber-and-healthy-fats-for-snacking-baking-and-cooking-7174.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/95d685e28918267e97d6ffe6cd8c01b9.png" alt="Sunflower Seeds Without Shell | 100% Natural Peeled Seeds | Rich In Protein, Fiber, And Healthy Fats For Snacking, Baking, And Cooking" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Sunflower Seeds Without Shell | 100% Natural Peeled Seeds | Rich In Protein, Fiber, And Healthy Fats For Snacking, Baking, And Cooking</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 579</span>
-                            <a href="/checkout.html?id=7174" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 579</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 445</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/sunflower-seeds-without-shell-100-natural-peeled-seeds-rich-in-protein-fiber-and-healthy-fats-for-snacking-baking-and-cooking-250-gram-7175.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Sunflower Seeds Without Shell | 100% Natural Peeled Seeds | Rich In Protein, Fiber, And Healthy Fats For Snacking, Baking, And Cooking - 250 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Sunflower Seeds Without Shell | 100% Natural Peeled Seeds | Rich In Protein, Fiber, And Healthy Fats For Snacking, Baking, And Cooking - 250 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 541</span>
-                            <a href="/checkout.html?id=7175" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 541</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 416</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/sunflower-seeds-without-shell-100-natural-peeled-seeds-rich-in-protein-fiber-and-healthy-fats-for-snacking-baking-and-cooking-500-gram-7176.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Sunflower Seeds Without Shell | 100% Natural Peeled Seeds | Rich In Protein, Fiber, And Healthy Fats For Snacking, Baking, And Cooking - 500 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Sunflower Seeds Without Shell | 100% Natural Peeled Seeds | Rich In Protein, Fiber, And Healthy Fats For Snacking, Baking, And Cooking - 500 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 829</span>
-                            <a href="/checkout.html?id=7176" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 829</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 637</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hibiscus-flower-powder-100-pure-and-natural-organic-herbal-powder-for-skin-glow-hair-growth-detox-and-anti-aging-care-7177.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/69ff0ee2a4758cd6f212b6f92e3d4569.jpeg" alt="Hibiscus Flower Powder 100% Pure And Natural | Organic Herbal Powder For Skin Glow, Hair Growth, Detox And Anti-Aging Care" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hibiscus Flower Powder 100% Pure And Natural | Organic Herbal Powder For Skin Glow, Hair Growth, Detox And Anti-Aging Care</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 388</span>
-                            <a href="/checkout.html?id=7177" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 388</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 298</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hibiscus-flower-powder-100-pure-and-natural-organic-herbal-powder-for-skin-glow-hair-growth-detox-and-anti-aging-care-50-gram-7178.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Hibiscus Flower Powder 100% Pure And Natural | Organic Herbal Powder For Skin Glow, Hair Growth, Detox And Anti-Aging Care - 50 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hibiscus Flower Powder 100% Pure And Natural | Organic Herbal Powder For Skin Glow, Hair Growth, Detox And Anti-Aging Care - 50 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 388</span>
-                            <a href="/checkout.html?id=7178" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 388</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 298</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hibiscus-flower-powder-100-pure-and-natural-organic-herbal-powder-for-skin-glow-hair-growth-detox-and-anti-aging-care-100-gram-7179.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Hibiscus Flower Powder 100% Pure And Natural | Organic Herbal Powder For Skin Glow, Hair Growth, Detox And Anti-Aging Care - 100 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hibiscus Flower Powder 100% Pure And Natural | Organic Herbal Powder For Skin Glow, Hair Growth, Detox And Anti-Aging Care - 100 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 579</span>
-                            <a href="/checkout.html?id=7179" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 579</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 445</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/natural-beetroot-powder-100g-for-glowing-skin-pink-lips-healthy-hair-daily-nutrition-pure-and-organic-drink-mix-superfood-7182.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/b5b10e8f4478179102a93ef4f92ffc8b.jpeg" alt="Natural Beetroot Powder 100g | For Glowing Skin, Pink Lips, Healthy Hair & Daily Nutrition | Pure And Organic Drink Mix Superfood" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Natural Beetroot Powder 100g | For Glowing Skin, Pink Lips, Healthy Hair & Daily Nutrition | Pure And Organic Drink Mix Superfood</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 441</span>
-                            <a href="/checkout.html?id=7182" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 441</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 339</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/organic-moringa-leaf-powder-natural-superfood-for-weight-loss-immunity-boost-energy-support-height-growth-refined-herbal-supplement-7183.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/2e24c6658f1ece20eba7057f425e8367.mp4" alt="Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 405</span>
-                            <a href="/checkout.html?id=7183" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 405</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 311</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/organic-moringa-leaf-powder-natural-superfood-for-weight-loss-immunity-boost-energy-support-height-growth-refined-herbal-supplement-250-gram-7184.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement - 250 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement - 250 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 405</span>
-                            <a href="/checkout.html?id=7184" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 405</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 311</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/organic-moringa-leaf-powder-natural-superfood-for-weight-loss-immunity-boost-energy-support-height-growth-refined-herbal-supplement-500-gram-7185.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement - 500 Gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement - 500 Gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 697</span>
-                            <a href="/checkout.html?id=7185" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 697</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 536</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pure-sesame-seeds-nutrient-rich-superfood-for-cooking-baking-wellness-250g-7186.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/cb788fe305e8816e988e147ce61f07e7.jpeg" alt="Pure Sesame Seeds – Nutrient-Rich Superfood for Cooking, Baking & Wellness (250g)" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pure Sesame Seeds – Nutrient-Rich Superfood for Cooking, Baking & Wellness (250g)</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
-                            <a href="/checkout.html?id=7186" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 533</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 410</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-100-natural-pumpkin-seeds-without-shell-fresh-crunchy-and-nutritious-snack-rich-in-protein-magnesium-zinc-omega-3-fatty-acids-7189.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/30e58bf15ef7800c1015d8b454a8918e.mp4" alt="Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 852</span>
-                            <a href="/checkout.html?id=7189" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 852</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 655</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-100-natural-pumpkin-seeds-without-shell-fresh-crunchy-and-nutritious-snack-rich-in-protein-magnesium-zinc-omega-3-fatty-acids-250-gram-7190.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids - 250 gram" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids - 250 gram</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 852</span>
-                            <a href="/checkout.html?id=7190" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 852</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 655</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-100-natural-pumpkin-seeds-without-shell-fresh-crunchy-and-nutritious-snack-rich-in-protein-magnesium-zinc-omega-3-fatty-acids-500g-7191.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids - 500g" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids - 500g</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1437</span>
-                            <a href="/checkout.html?id=7191" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 1437</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 1105</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-100-natural-pumpkin-seeds-without-shell-fresh-crunchy-and-nutritious-snack-rich-in-protein-magnesium-zinc-omega-3-fatty-acids-1-kg-7192.html'">
+                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
                     <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
                         <img src="https://via.placeholder.com/500" alt="Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids - 1 KG" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium 100% Natural Pumpkin Seeds Without Shell – Fresh, Crunchy, And Nutritious Snack | Rich In Protein, Magnesium, Zinc & Omega-3 Fatty Acids - 1 KG</h3>
                         <div class="mt-auto">
-                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2632</span>
-                            <a href="/checkout.html?id=7192" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 2632</span>
+                                <span class="text-xs text-gray-400 line-through">Rs 2024</span>
+                            </div>
+                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -595,13 +861,14 @@
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
                 <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. We offer nationwide delivery with a secure and seamless shopping experience.</p>
+                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-                <ul class="space-y-2 text-gray-400 text-sm">
-                    <li><a href="/index.html" class="hover:text-teal-400 transition">Home</a></li>
-                    <li><a href="/checkout.html" class="hover:text-teal-400 transition">Checkout</a></li>
+                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
                 </ul>
             </div>
             <div>
