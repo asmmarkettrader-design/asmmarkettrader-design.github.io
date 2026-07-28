@@ -178,13 +178,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     
     <meta name="title" content="{title} | Buy Online in Pakistan | ASM VEO">
     <meta name="description" content="{seo_desc}">
-    <meta name="keywords" content="buy {title} in Pakistan, {title} price in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO, Karachi, Lahore, Islamabad">
+    <meta name="keywords" content="buy {title} in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO, Karachi, Lahore, Islamabad">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#047857">
     <link rel="canonical" href="https://www.asmveo.com/">
     
-    <!-- Geo Tags for Local SEO -->
     <meta name="geo.region" content="PK" />
     <meta name="geo.placename" content="Pakistan" />
     <meta name="geo.position" content="30.3753;69.3451" />
@@ -233,7 +232,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     {structured_data}
 
     <script>
-        // GLOBAL API FOR SEARCH AND FILTERS
         window.GLOBAL_SEARCH_INDEX = [];
         let isFetchingSearch = false;
 
@@ -243,11 +241,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             try {{
                 let res = await fetch('/search.json');
                 window.GLOBAL_SEARCH_INDEX = await res.json();
-                initLiveSales(); // Start Fake Sales Popup when data loads
+                initLiveSales(); 
             }} catch(e) {{ console.error("Search data failed to load."); }}
         }}
 
-        // CART SYSTEM
         function getCart() {{ return JSON.parse(localStorage.getItem('asm_cart')) || []; }}
         function saveCart(cart) {{ localStorage.setItem('asm_cart', JSON.stringify(cart)); updateCartBadge(); }}
         
@@ -314,7 +311,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function showToast(msg, icon='fa-check-circle', color='emerald') {{
             const colors = {{ emerald: 'bg-emerald-600', red: 'bg-red-500', gray: 'bg-gray-600', green: 'bg-green-500' }};
             const toast = document.createElement('div');
-            toast.className = `fixed bottom-24 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 flex items-center gap-3 font-bold slide-in`;
+            toast.className = `fixed bottom-24 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 flex items-center gap-3 font-bold slide-in border border-white/20`;
             toast.innerHTML = `<i class="fas ${{icon}} text-xl"></i> ${{msg}}`;
             document.body.appendChild(toast);
             setTimeout(() => {{ toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }}, 3000);
@@ -325,11 +322,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             if (cartIcon) {{ cartIcon.classList.add('scale-125'); setTimeout(() => cartIcon.classList.remove('scale-125'), 200); }}
         }}
 
-        // LIVE SALES POPUP (Social Proof)
         function initLiveSales() {{
             setInterval(() => {{
                 if(!window.GLOBAL_SEARCH_INDEX || window.GLOBAL_SEARCH_INDEX.length === 0) return;
-                if(Math.random() > 0.6) return; // Only show randomly
+                if(Math.random() > 0.6) return; 
                 
                 let prod = window.GLOBAL_SEARCH_INDEX[Math.floor(Math.random() * window.GLOBAL_SEARCH_INDEX.length)];
                 let cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Multan", "Faisalabad", "Peshawar"];
@@ -341,7 +337,36 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 let msg = name + ' from ' + city + ' just bought <br><span class="text-xs font-black">' + shortName + '</span>';
                 
                 showToast(msg, 'fa-shopping-bag', 'emerald');
-            }}, 20000); // Check every 20 seconds
+            }}, 20000); 
+        }}
+
+        async function liveSearch(query) {{
+            let suggestionsDiv = document.getElementById('searchSuggestions');
+            if(!query || query.length < 2) {{ suggestionsDiv.classList.add('hidden'); return; }}
+            
+            await fetchSearchData();
+            query = query.toLowerCase();
+            let results = window.GLOBAL_SEARCH_INDEX.filter(p => 
+                p.name.toLowerCase().includes(query) || p.category.toLowerCase().includes(query)
+            ).slice(0, 6);
+            
+            if(results.length > 0) {{
+                let html = results.map(p => `
+                    <a href="/product/${{p.slug}}.html" class="flex items-center gap-3 p-3 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 border-b border-gray-100 dark:border-gray-700 transition">
+                        <img src="${{p.image}}" class="w-12 h-12 object-cover rounded bg-white">
+                        <div class="flex-1 min-w-0">
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white line-clamp-1">${{p.name}}</h4>
+                            <p class="text-xs font-black text-emerald-600 dark:text-emerald-400">Rs ${{p.final_price}}</p>
+                        </div>
+                    </a>
+                `).join('');
+                html += `<div class="p-2 text-center bg-gray-50 dark:bg-gray-800"><button onclick="executeSearch()" class="text-xs font-bold text-emerald-600 hover:text-emerald-700">View all results <i class="fas fa-arrow-right"></i></button></div>`;
+                suggestionsDiv.innerHTML = html;
+                suggestionsDiv.classList.remove('hidden');
+            }} else {{
+                suggestionsDiv.innerHTML = `<div class="p-4 text-center text-sm text-gray-500">No products found</div>`;
+                suggestionsDiv.classList.remove('hidden');
+            }}
         }}
 
         function executeSearch() {{
@@ -364,19 +389,19 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
         function scrollTop() {{ window.scrollTo({{top: 0, behavior: 'smooth'}}); }}
 
-        // QUICK VIEW MODAL
         function quickView(name, price, image, desc, slug) {{
             let modal = document.getElementById('quickViewModal');
             document.getElementById('qvImage').src = image;
             document.getElementById('qvName').innerText = name;
             document.getElementById('qvPrice').innerText = "Rs " + price;
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{name.replace(/'/g, "\\'") }}', ${{price}}, '${{image}}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{name.replace(/'/g, "\\'") }}', ${{price}}, '${{image}}', event);`);
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{name}}', ${{price}}, '${{image}}', event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{name}}', ${{price}}, '${{image}}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
         }}
+        
         function closeQuickView() {{
             document.getElementById('quickViewModal').classList.add('hidden');
             document.getElementById('quickViewModal').classList.remove('flex');
@@ -385,7 +410,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         window.onload = function() {{
             updateCartBadge();
             updateWishlistBadge();
-            fetchSearchData(); // Silently preload JSON Data for speed
+            fetchSearchData(); 
             
             if (localStorage.getItem('asm_dark') === 'true') {{
                 document.documentElement.classList.add('dark');
@@ -445,8 +470,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             
             <div class="flex-1 min-w-[200px] max-w-xl mx-0 md:mx-8 relative">
                 <label for="searchInput" class="sr-only">Search products in Pakistan</label>
-                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, brands, categories..." class="w-full bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 focus:bg-white dark:focus:bg-gray-700 focus:border-emerald-600 rounded-xl py-3 px-6 outline-none transition-all text-gray-800 dark:text-gray-100 font-semibold shadow-sm">
+                <input type="text" id="searchInput" onfocus="fetchSearchData(); liveSearch(this.value)" onkeyup="liveSearch(this.value)" onkeypress="handleSearch(event)" placeholder="Search products, brands, categories..." autocomplete="off" class="w-full bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 focus:bg-white dark:focus:bg-gray-700 focus:border-emerald-600 rounded-xl py-3 px-6 outline-none transition-all text-gray-800 dark:text-gray-100 font-semibold shadow-sm">
                 <button onclick="executeSearch()" aria-label="Search" class="absolute right-4 top-3 text-gray-500 hover:text-emerald-700"><i class="fas fa-search text-xl" aria-hidden="true"></i></button>
+                <div id="searchSuggestions" class="absolute top-full left-0 w-full mt-2 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 hidden max-h-80 overflow-y-auto z-[60]"></div>
             </div>
             
             <div class="flex items-center gap-3">
@@ -463,7 +489,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </div>
     </header>
 
-    <!-- Cookie Consent -->
     <div id="cookieConsent" class="hidden fixed bottom-20 md:bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-[9998] shadow-2xl">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
@@ -471,13 +496,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 <p class="text-sm">We use cookies to improve your experience. By continuing to browse, you agree to our use of cookies.</p>
             </div>
             <div class="flex gap-3">
-                <a href="/privacy.html" class="text-emerald-400 hover:text-emerald-300 text-sm font-bold">Privacy Policy</a>
+                <a href="/privacy.html" class="text-emerald-400 hover:text-emerald-300 text-sm font-bold mt-2">Privacy Policy</a>
                 <button onclick="acceptCookies()" class="bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-lg font-bold text-sm transition">Accept</button>
             </div>
         </div>
     </div>
 
-    <!-- Mobile Bottom Navigation -->
     <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-[90]">
         <a href="/index.html" class="flex flex-col items-center text-emerald-600 text-xs font-bold"><i class="fas fa-home text-lg mb-1"></i> Home</a>
         <a href="/index.html#products" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold"><i class="fas fa-th-large text-lg mb-1"></i> Categories</a>
@@ -637,7 +661,9 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > prod['final_price'] else 0
     stock_left = random.randint(3, 20)
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
+    
     escaped_name = prod['name'].replace("'", "\\'")
+    escaped_desc = prod['seo_desc'].replace("'", "\\'")
     
     wishlist_btn = ""
     if show_wishlist:
@@ -649,14 +675,14 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             </button>"""
     
     quick_view_btn = f"""
-        <button onclick="quickView('{escaped_name}', {prod['final_price']}, '{prod['image']}', '{prod['seo_desc'].replace("'", "\\'")}', '{prod['slug']}')" 
+        <button onclick="quickView('{escaped_name}', {prod['final_price']}, '{prod['image']}', '{escaped_desc}', '{prod['slug']}')" 
                 class="absolute top-3 right-14 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-emerald-50 transition z-10" 
                 aria-label="Quick View">
             <i class="fas fa-eye text-emerald-600"></i>
         </button>"""
 
     return f"""
-    <div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'">
+    <div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer group" onclick="window.location.href='/product/{prod['slug']}.html'">
         {wishlist_btn}
         {quick_view_btn}
         {f'<div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-black px-2.5 py-1 rounded-lg z-10 shadow-md">-{discount}% OFF</div>' if discount > 0 else ''}
@@ -680,7 +706,6 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
                     <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="w-1/2 bg-emerald-50 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 py-2.5 rounded-xl text-xs font-bold border border-emerald-200 dark:border-emerald-700 hover:bg-emerald-100 dark:hover:bg-emerald-800 transition flex justify-center items-center" aria-label="Add to Cart">
                         <i class="fas fa-cart-plus"></i>
                     </button>
-                    <!-- BUG FIX: Removed extra quote after final_price -->
                     <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="w-1/2 bg-gray-900 dark:bg-emerald-600 text-white py-2.5 rounded-xl text-xs font-bold hover:bg-emerald-700 transition text-center" aria-label="Buy Now">
                         Buy Now
                     </button>
@@ -848,7 +873,7 @@ def generate_static_pages(categories_list):
 
     with open("output/wishlist.html", "w", encoding="utf-8") as f:
         f.write(get_html_header("My Wishlist", categories_list) + """
-        <div class="container mx-auto px-4 py-12">
+        <div class="container mx-auto px-4 py-12 min-h-[50vh]">
             <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1>
             <div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                 <div class="col-span-full text-center py-16 text-gray-500 dark:text-gray-400">
@@ -1031,6 +1056,7 @@ def process_woocommerce_csv():
         stock_left = random.randint(3, 15)
         stock_percentage = math.ceil((stock_left / 50) * 100)
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
+        
         escaped_name = prod['name'].replace("'", "\\'")
         whatsapp_msg = f"Hi! I want to buy {prod['name']} (Rs {prod['final_price']}) from your store."
         
@@ -1382,7 +1408,6 @@ def process_woocommerce_csv():
         </div>
         """
         
-        # BUG FIX: Use Global JSON instead of embedding in every page
         cat_script = f"""
         <script>
             let currentCategory = '{cat_name}';
@@ -1415,10 +1440,11 @@ def process_woocommerce_csv():
             
             function generateCard(p) {{
                 let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
-                let safeName = p.name.replace(/'/g, "\\'");
+                let safeName = p.name.replace(/'/g, "\\\\'");
+                let safeDesc = p.seo_desc ? p.seo_desc.replace(/'/g, "\\\\'") : '';
                 return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${{p.slug}}.html'">
                     <button onclick="toggleWishlist('${{safeName}}', ${{p.final_price}}, '${{p.image}}', event)" class="absolute top-3 right-3 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500"></i></button>
-                    <button onclick="quickView('${{safeName}}', ${{p.final_price}}, '${{p.image}}', '', '${{p.slug}}')" class="absolute top-3 right-14 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-emerald-50 transition z-10"><i class="fas fa-eye text-emerald-600"></i></button>
+                    <button onclick="quickView('${{safeName}}', ${{p.final_price}}, '${{p.image}}', '${{safeDesc}}', '${{p.slug}}')" class="absolute top-3 right-14 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-emerald-50 transition z-10"><i class="fas fa-eye text-emerald-600"></i></button>
                     ${{discount > 0 ? `<div class="absolute top-3 left-3 bg-red-600 text-white text-xs font-black px-2.5 py-1 rounded-lg z-10 shadow-md">-${{discount}}% OFF</div>` : ''}}
                     <div class="image-zoom h-48 md:h-60 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700">
                         <img src="${{p.image}}" alt="${{p.name}}" loading="lazy" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x400/047857/ffffff?text=ASM+VEO'">
@@ -1683,6 +1709,7 @@ def process_woocommerce_csv():
                             <input type="text" id="couponCode" placeholder="Enter ASM10 for 10% off" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-emerald-600 outline-none uppercase">
                             <button type="button" onclick="applyCoupon()" class="bg-gray-900 dark:bg-emerald-600 text-white px-5 rounded-xl font-bold hover:bg-gray-700 transition">Apply</button>
                         </div>
+                        <p id="promoMessage" class="text-xs font-bold mt-2 hidden"></p>
                     </div>
                     
                     <div class="bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl p-5 border border-emerald-100 dark:border-emerald-800 mt-6">
@@ -1725,12 +1752,17 @@ def process_woocommerce_csv():
         
         function applyCoupon() {
             let code = document.getElementById('couponCode').value.toUpperCase();
+            let msg = document.getElementById('promoMessage');
             if (code === 'ASM10') {
                 couponApplied = true;
+                msg.innerText = "Promo applied! 10% OFF.";
+                msg.className = "text-xs font-bold mt-2 text-emerald-600 block";
                 showToast('Coupon applied! 10% discount added.', 'fa-check-circle', 'emerald');
                 renderCart();
             } else {
                 couponApplied = false;
+                msg.innerText = "Invalid or expired promo code.";
+                msg.className = "text-xs font-bold mt-2 text-red-500 block";
                 showToast('Invalid coupon code.', 'fa-times-circle', 'red');
                 renderCart();
             }
