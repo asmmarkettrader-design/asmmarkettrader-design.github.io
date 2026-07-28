@@ -232,8 +232,21 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
-        body {{ font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; transition: background-color 0.3s; padding-bottom: 70px; md:padding-bottom: 0; }}
-        .dark body {{ background-color: #0f172a; color: #e2e8f0; }}
+        
+        /* PAKISTANI FLAG BACKGROUND */
+        body {{ 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: #ffffff; 
+            background-image: linear-gradient(90deg, #ffffff 40px, #01411C 40px); 
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #ffffff;
+            transition: background-color 0.3s; 
+            padding-bottom: 70px; 
+        }}
+        @media (max-width: 768px) {{
+            body {{ background-image: linear-gradient(180deg, #ffffff 30px, #01411C 30px); }}
+        }}
         
         .product-card {{ transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }}
         .product-card:hover {{ transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(1, 65, 28, 0.2); }}
@@ -261,8 +274,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         .carousel-track {{ display: flex; transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }}
         .carousel-slide {{ min-width: 100%; box-sizing: border-box; }}
         
-        .glass {{ background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }}
-        .dark .glass {{ background: rgba(15, 23, 42, 0.85); }}
+        .glass {{ background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #01411C; }}
+        .dark .glass {{ background: rgba(15, 23, 42, 0.95); color: #fff; }}
         
         /* Scroll Reveal Effect */
         .reveal {{ opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }}
@@ -554,7 +567,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         <i class="fas fa-arrow-up text-xl"></i>
     </button>
 
-    <main id="main-content">
+    <main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl">
 """
 
 # ==================== HTML FOOTER ====================
@@ -1190,8 +1203,12 @@ def process_woocommerce_csv():
         if c not in sections_dict: sections_dict[c] = []
         sections_dict[c].append(p)
 
+    # PERFORMANCE FIX: Save search index to a separate JS file instead of bloating the HTML
     search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], 
                                      "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
+    
+    with open("output/search-data.js", "w", encoding="utf-8") as f:
+        f.write(f"let searchIndex = {search_index_json};")
 
     home_html = get_html_header("Home - Premium Online Shopping in Pakistan", categories_list,
                                  "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
@@ -1334,9 +1351,9 @@ def process_woocommerce_csv():
         <div id="defaultContent">
     """
     
-    # OPTIMIZATION: Only show top 8 categories and 4 products each on home page
+    # OPTIMIZATION: Only show top 4 categories and 4 products each on home page for fast load
     total_rendered_products = 0
-    for cat_name, prods in list(sections_dict.items())[:8]:
+    for cat_name, prods in list(sections_dict.items())[:4]:
         cat_slug = make_slug(cat_name)
         sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
         
@@ -1506,11 +1523,13 @@ def process_woocommerce_csv():
     </div>
     """
     
+    # PERFORMANCE FIX: Load search data from external JS file
     home_script = """
+    <script src="/search-data.js" defer></script>
     <script>
-        let searchIndex = __SEARCH_INDEX__;
-        
         function performSearch(query) {
+            if (typeof searchIndex === 'undefined') return; // Wait for search-data.js to load
+            
             query = query.toLowerCase().trim();
             if (!query) {
                 document.getElementById('defaultContent').classList.remove('hidden');
@@ -1563,14 +1582,21 @@ def process_woocommerce_csv():
             
             let resultsDiv = document.createElement('div');
             resultsDiv.innerHTML = html;
-            document.getElementById('searchResultsSection').appendChild(resultsDiv);
+            let srSection = document.getElementById('searchResultsSection');
+            // Clear previous results except heading and count
+            let elements = srSection.children;
+            for(let i = elements.length - 1; i >= 2; i--) {
+                srSection.removeChild(elements[i]);
+            }
+            srSection.appendChild(resultsDiv);
         }
         
         const urlParams = new URLSearchParams(window.location.search);
         const searchQuery = urlParams.get('search');
         if (searchQuery) {
             document.getElementById('searchInput').value = searchQuery;
-            performSearch(searchQuery);
+            // Delay search to ensure search-data.js is loaded
+            setTimeout(() => performSearch(searchQuery), 500);
         }
         
         function renderRecentlyViewed() {
@@ -1600,7 +1626,7 @@ def process_woocommerce_csv():
         window.addEventListener('load', renderRecentlyViewed);
     </script>
     """
-    home_html += home_script.replace("__SEARCH_INDEX__", search_index_json) + get_html_footer()
+    home_html += home_script + get_html_footer()
     
     with open("output/index.html", "w", encoding="utf-8") as f:
         f.write(home_html)
@@ -1678,7 +1704,7 @@ def process_woocommerce_csv():
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number <span class="text-red-600">*</span></label>
-                            <input type="tel" name="Phone_Number" pattern="03[0-9]{2}[0-9]{7}" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#01411C] outline-none" required placeholder="0300-XXXXXXX">
+                            <input type="tel" name="Phone_Number" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#01411C] outline-none" required placeholder="03XXXXXXXXX">
                         </div>
                         <div>
                             <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
@@ -1697,7 +1723,7 @@ def process_woocommerce_csv():
                     <div>
                         <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Coupon Code</label>
                         <div class="flex gap-2">
-                            <input type="text" id="couponCode" placeholder="Enter ASM10 for 10% off" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#01411C] outline-none uppercase">
+                            <input type="text" id="couponCode" placeholder="Enter ASM10 for 10% off (Min Rs 3000)" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#01411C] outline-none uppercase">
                             <button type="button" onclick="applyCoupon()" class="bg-gray-900 text-white px-5 rounded-xl font-bold hover:bg-gray-700 transition">Apply</button>
                         </div>
                     </div>
@@ -1742,15 +1768,28 @@ def process_woocommerce_csv():
         
         function applyCoupon() {
             let code = document.getElementById('couponCode').value;
+            let currentSubtotal = 0;
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('buy_now') === 'true') {
+                currentSubtotal = parseInt(urlParams.get('price'));
+            } else {
+                let cart = getCart();
+                cart.forEach(item => currentSubtotal += parseInt(item.price) * (item.qty || 1));
+            }
+
             if (code === 'ASM10') {
-                couponApplied = true;
-                showToast('Coupon applied! 10% discount added.', 'fa-check-circle', 'pk');
-                renderCart();
+                if (currentSubtotal >= 3000) {
+                    couponApplied = true;
+                    showToast('Coupon applied! 10% discount added.', 'fa-check-circle', 'pk');
+                } else {
+                    couponApplied = false;
+                    showToast('Minimum Rs 3000 shopping required for this coupon.', 'fa-exclamation-circle', 'red');
+                }
             } else {
                 couponApplied = false;
                 showToast('Invalid coupon code.', 'fa-times-circle', 'red');
-                renderCart();
             }
+            renderCart();
         }
 
         function renderCart() {
