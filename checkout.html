@@ -271,7 +271,6 @@
         let container = document.getElementById('cartItemsContainer');
         
         if (isBuyNow && pName && pPrice) {
-            // Direct Buy (Buy Now button)
             subtotal = pPrice;
             finalOrderString = "1x " + pName + " (Rs " + pPrice + ")";
             container.innerHTML = `
@@ -282,7 +281,6 @@
                     </div>
                 </div>`;
         } else {
-            // Load Cart from Local Storage
             let cart = JSON.parse(localStorage.getItem('asm_cart')) || [];
             if(cart.length === 0) {
                 container.innerHTML = `<p class="text-gray-500 font-semibold text-center py-6">Your cart is empty.</p>`;
@@ -305,14 +303,12 @@
             }
         }
 
-        // Update Totals
         if(subtotal > 0) {
             document.getElementById('subtotalDisplay').innerText = "Rs " + subtotal;
             document.getElementById('grandTotalDisplay').innerText = "Rs " + (subtotal + 250);
             document.getElementById('productField').value = finalOrderString + "\n\nGrand Total: Rs " + (subtotal + 250);
         }
 
-        // Form Submission
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
@@ -327,7 +323,7 @@
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
-                    if(!isBuyNow) localStorage.removeItem('asm_cart'); // Clear cart if it was a cart checkout
+                    if(!isBuyNow) localStorage.removeItem('asm_cart'); 
                     alert('Order Confirmed! Total to pay on delivery: ' + document.getElementById('grandTotalDisplay').innerText);
                     window.location.href = '/index.html';
                 } else {
