@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion & Apparel > Women's Fashion - ASM VEO</title>
+    
     <!-- Auto SEO Meta Tags -->
     <meta name="description" content="ASM VEO - Premium Shopping in Pakistan">
     <meta name="keywords" content="Fashion & Apparel > Women's Fashion, buy online, Pakistan, shopping, ASM Digital Solutions, ASM VEO, cash on delivery">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow">
     
+    <!-- Performance Boosters (Preconnect & Prefetch) -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
         .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
@@ -21,25 +31,29 @@
         .product-card:hover .image-zoom img { transform: scale(1.1); }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-900">
     <!-- Navbar -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
-            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
-                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-800 tracking-tight flex items-center gap-2" aria-label="ASM VEO Home">
+                <div class="bg-teal-700 text-white p-2 rounded-lg" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
                 ASM VEO
             </a>
             
             <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
-                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
-                <button onclick="executeSearch()" class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+                <label for="searchInput" class="sr-only">Search any product</label>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-300 focus:border-teal-600 rounded-full py-2.5 px-6 outline-none transition-all text-gray-800">
+                <button onclick="executeSearch()" aria-label="Submit Search" class="absolute right-4 top-2.5 text-gray-600 hover:text-teal-700"><i class="fas fa-search text-lg" aria-hidden="true"></i></button>
             </div>
             
-            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
-                <i class="fas fa-shopping-cart"></i> <span class="hidden md:inline">Cart / Checkout</span>
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-700 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap" aria-label="Go to Checkout">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> <span class="hidden md:inline">Cart / Checkout</span>
             </a>
         </div>
     </header>
+    
+    <!-- Main Content Wrapper (Landmark) -->
+    <main id="main-content">
     
     <script>
     function handleSearch(e) {
@@ -55,308 +69,309 @@
     }
     </script>
 
-        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-200">
+        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-300">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-3xl md:text-5xl font-black text-gray-900">Fashion & Apparel > Women's Fashion</h1>
-                <p class="text-gray-600 mt-3 font-semibold">14 Exclusive Products Available</p>
+                <p class="text-gray-700 mt-3 font-semibold">14 Exclusive Products Available</p>
             </div>
         </div>
         <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/color-changing-ring-stylish-fashion-jewelry-unique-mood-ring-for-men-and-women-everyday-wear-random-design-and-color-500.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/041fa05542d8600507d96a7bbc480d98.mp4" alt="Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring For Men And Women Everyday Wear | Random Design And Color" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/color-changing-ring-stylish-fashion-jewelry-unique-mood-ring-for-men-and-women-everyday-wear-random-design-and-color-500.html'" role="link" aria-label="View details for Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring For Men And Women Everyday Wear | Random Design And Color" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/041fa05542d8600507d96a7bbc480d98.mp4" alt="Image of Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring For Men And Women Everyday Wear | Random Design And Color" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring For Men And Women Everyday Wear | Random Design And Color</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 533</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 859</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 859</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-pvc-waterproof-washbag-portable-clear-toiletry-makeup-kit-organizer-bag-with-top-handle-576.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/33fdabb72a0b79d38f0c7d75e3ca5e48.jpeg" alt="Premium PVC Waterproof Washbag – Portable Clear Toiletry & Makeup Kit Organizer Bag with Top Handle" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/premium-pvc-waterproof-washbag-portable-clear-toiletry-makeup-kit-organizer-bag-with-top-handle-576.html'" role="link" aria-label="View details for Premium PVC Waterproof Washbag – Portable Clear Toiletry & Makeup Kit Organizer Bag with Top Handle" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/33fdabb72a0b79d38f0c7d75e3ca5e48.jpeg" alt="Image of Premium PVC Waterproof Washbag – Portable Clear Toiletry & Makeup Kit Organizer Bag with Top Handle" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Premium PVC Waterproof Washbag – Portable Clear Toiletry & Makeup Kit Organizer Bag with Top Handle</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1263</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 2034</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 2034</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/women-tote-bag-stylish-large-capacity-handbag-for-shopping-travel-daily-use-1579.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/6d461fcb1952a68ae5220a89d630606d.png" alt="Women Tote Bag – Stylish Large Capacity Handbag for Shopping, Travel & Daily Use" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/women-tote-bag-stylish-large-capacity-handbag-for-shopping-travel-daily-use-1579.html'" role="link" aria-label="View details for Women Tote Bag – Stylish Large Capacity Handbag for Shopping, Travel & Daily Use" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/6d461fcb1952a68ae5220a89d630606d.png" alt="Image of Women Tote Bag – Stylish Large Capacity Handbag for Shopping, Travel & Daily Use" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women Tote Bag – Stylish Large Capacity Handbag for Shopping, Travel & Daily Use</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 5460</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 8791</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 8791</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/beauty-bag-makeup-organizer-pouch-travel-cosmetic-storage-bag-for-women-1582.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/d1f2b9ab0f91484445608513c8c39a64.mp4" alt="Beauty Bag Makeup Organizer Pouch Travel Cosmetic Storage Bag for Women" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/beauty-bag-makeup-organizer-pouch-travel-cosmetic-storage-bag-for-women-1582.html'" role="link" aria-label="View details for Beauty Bag Makeup Organizer Pouch Travel Cosmetic Storage Bag for Women" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/d1f2b9ab0f91484445608513c8c39a64.mp4" alt="Image of Beauty Bag Makeup Organizer Pouch Travel Cosmetic Storage Bag for Women" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Beauty Bag Makeup Organizer Pouch Travel Cosmetic Storage Bag for Women</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 5324</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 8572</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 8572</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/2-pcs-premium-silk-lace-women-s-sleepwear-set-t-shirt-trouser-nightwear-free-size-1610.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/930cee3a02ec2f2ce036711125d97a86.jpeg" alt="2 Pcs Premium Silk Lace Women's Sleepwear Set T-Shirt & Trouser Nightwear (Free Size)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/2-pcs-premium-silk-lace-women-s-sleepwear-set-t-shirt-trouser-nightwear-free-size-1610.html'" role="link" aria-label="View details for 2 Pcs Premium Silk Lace Women's Sleepwear Set T-Shirt & Trouser Nightwear (Free Size)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/930cee3a02ec2f2ce036711125d97a86.jpeg" alt="Image of 2 Pcs Premium Silk Lace Women's Sleepwear Set T-Shirt & Trouser Nightwear (Free Size)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">2 Pcs Premium Silk Lace Women's Sleepwear Set T-Shirt & Trouser Nightwear (Free Size)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 2266</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 3649</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 3649</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-pcs-premium-silk-net-black-lace-women-s-sleepwear-set-top-trouser-gown-size-free-1611.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d943d860281fcf46eb9b9adb761f0455.jpeg" alt="3 Pcs Premium Silk & Net Black Lace Women's Sleepwear Set Top Trouser & Gown (Size free)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-pcs-premium-silk-net-black-lace-women-s-sleepwear-set-top-trouser-gown-size-free-1611.html'" role="link" aria-label="View details for 3 Pcs Premium Silk & Net Black Lace Women's Sleepwear Set Top Trouser & Gown (Size free)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d943d860281fcf46eb9b9adb761f0455.jpeg" alt="Image of 3 Pcs Premium Silk & Net Black Lace Women's Sleepwear Set Top Trouser & Gown (Size free)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Pcs Premium Silk & Net Black Lace Women's Sleepwear Set Top Trouser & Gown (Size free)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 3910</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 6296</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 6296</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-pcs-luxurious-silk-net-black-lace-women-s-sleepwear-set-top-short-gown-nightwear-free-size-1612.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d858b1a25e738dc5ba49ed13e560cb6b.jpeg" alt="3 Pcs Luxurious Silk & Net Black Lace Women's Sleepwear Set Top Short & Gown Nightwear (Free Size)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-pcs-luxurious-silk-net-black-lace-women-s-sleepwear-set-top-short-gown-nightwear-free-size-1612.html'" role="link" aria-label="View details for 3 Pcs Luxurious Silk & Net Black Lace Women's Sleepwear Set Top Short & Gown Nightwear (Free Size)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d858b1a25e738dc5ba49ed13e560cb6b.jpeg" alt="Image of 3 Pcs Luxurious Silk & Net Black Lace Women's Sleepwear Set Top Short & Gown Nightwear (Free Size)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Pcs Luxurious Silk & Net Black Lace Women's Sleepwear Set Top Short & Gown Nightwear (Free Size)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 3453</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 5560</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 5560</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-layer-khimar-hijab-set-with-niqab-imported-chiffon-2-piece-set-free-size-black-1665.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/08c761da2f663a15edfda820cc8f9321.mp4" alt="3 Layer Khimar Hijab Set with Niqab – Imported Chiffon 2 Piece Set | Free Size (Black)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-layer-khimar-hijab-set-with-niqab-imported-chiffon-2-piece-set-free-size-black-1665.html'" role="link" aria-label="View details for 3 Layer Khimar Hijab Set with Niqab – Imported Chiffon 2 Piece Set | Free Size (Black)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/08c761da2f663a15edfda820cc8f9321.mp4" alt="Image of 3 Layer Khimar Hijab Set with Niqab – Imported Chiffon 2 Piece Set | Free Size (Black)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Layer Khimar Hijab Set with Niqab – Imported Chiffon 2 Piece Set | Free Size (Black)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1719</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 2768</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 2768</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/half-niqab-with-patti-formal-chiffon-face-cover-soft-lightweight-niqab-1666.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/6e03dd24d88b00cacbc520b347ebb1e1.jpeg" alt="Half Niqab with Patti – Formal Chiffon Face Cover Soft Lightweight Niqab" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/half-niqab-with-patti-formal-chiffon-face-cover-soft-lightweight-niqab-1666.html'" role="link" aria-label="View details for Half Niqab with Patti – Formal Chiffon Face Cover Soft Lightweight Niqab" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/6e03dd24d88b00cacbc520b347ebb1e1.jpeg" alt="Image of Half Niqab with Patti – Formal Chiffon Face Cover Soft Lightweight Niqab" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Half Niqab with Patti – Formal Chiffon Face Cover Soft Lightweight Niqab</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 441</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 711</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 711</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/women-s-naqab-with-elastic-patti-formal-chiffon-niqab-soft-lightweight-face-cover-1667.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/b741657f6e1f4ba39c9ffe5ef6991ea1.jpeg" alt="Women’s Naqab with Elastic Patti – Formal Chiffon Niqab Soft Lightweight Face Cover" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/women-s-naqab-with-elastic-patti-formal-chiffon-niqab-soft-lightweight-face-cover-1667.html'" role="link" aria-label="View details for Women’s Naqab with Elastic Patti – Formal Chiffon Niqab Soft Lightweight Face Cover" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/b741657f6e1f4ba39c9ffe5ef6991ea1.jpeg" alt="Image of Women’s Naqab with Elastic Patti – Formal Chiffon Niqab Soft Lightweight Face Cover" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women’s Naqab with Elastic Patti – Formal Chiffon Niqab Soft Lightweight Face Cover</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 441</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 711</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 711</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-piece-women-s-sleepwear-set-camisole-shorts-lace-gown-soft-satin-nightwear-free-size-1684.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/531d987d14703288f4a4555e777e831c.jpeg" alt="3-Piece Women's Sleepwear Set – Camisole, Shorts & Lace Gown Soft Satin Nightwear Free Size" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-piece-women-s-sleepwear-set-camisole-shorts-lace-gown-soft-satin-nightwear-free-size-1684.html'" role="link" aria-label="View details for 3-Piece Women's Sleepwear Set – Camisole, Shorts & Lace Gown Soft Satin Nightwear Free Size" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/531d987d14703288f4a4555e777e831c.jpeg" alt="Image of 3-Piece Women's Sleepwear Set – Camisole, Shorts & Lace Gown Soft Satin Nightwear Free Size" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3-Piece Women's Sleepwear Set – Camisole, Shorts & Lace Gown Soft Satin Nightwear Free Size</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 3362</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 5413</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 5413</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/portable-folding-makeup-mirror-jewellery-box-3-color-led-beauty-mirror-multi-function-personal-care-organizer-3373.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/10d10fb0ebdf80b2532178bd63b66297.mp4" alt="Portable Folding Makeup Mirror Jewellery Box – 3-Color LED Beauty Mirror, Multi-Function Personal Care Organizer" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/portable-folding-makeup-mirror-jewellery-box-3-color-led-beauty-mirror-multi-function-personal-care-organizer-3373.html'" role="link" aria-label="View details for Portable Folding Makeup Mirror Jewellery Box – 3-Color LED Beauty Mirror, Multi-Function Personal Care Organizer" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/10d10fb0ebdf80b2532178bd63b66297.mp4" alt="Image of Portable Folding Makeup Mirror Jewellery Box – 3-Color LED Beauty Mirror, Multi-Function Personal Care Organizer" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Portable Folding Makeup Mirror Jewellery Box – 3-Color LED Beauty Mirror, Multi-Function Personal Care Organizer</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 2997</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 4826</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 4826</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hair-drying-towel-cap-quick-dry-soft-absorbent-turban-wrap-for-women-anti-frizz-hair-wrap-towel-for-bathroom-salon-use-random-color-4106.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/bcedb5f8f8d5d79cf78974f3a1647221.mp4" alt="Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hair-drying-towel-cap-quick-dry-soft-absorbent-turban-wrap-for-women-anti-frizz-hair-wrap-towel-for-bathroom-salon-use-random-color-4106.html'" role="link" aria-label="View details for Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use (Random Color)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/bcedb5f8f8d5d79cf78974f3a1647221.mp4" alt="Image of Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use (Random Color)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use (Random Color)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 214</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 345</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 345</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/chiffon-saudi-locket-niqab-premium-a1-quality-black-face-veil-black-random-locket-6848.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-17-at-12.13.45-PM-1.jpeg" alt="Chiffon Saudi Locket Niqab – Premium A1 Quality Black Face Veil (Black) (Random Locket )" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/chiffon-saudi-locket-niqab-premium-a1-quality-black-face-veil-black-random-locket-6848.html'" role="link" aria-label="View details for Chiffon Saudi Locket Niqab – Premium A1 Quality Black Face Veil (Black) (Random Locket )" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-17-at-12.13.45-PM-1.jpeg" alt="Image of Chiffon Saudi Locket Niqab – Premium A1 Quality Black Face Veil (Black) (Random Locket )" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Fashion & Apparel > Women's Fashion</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Chiffon Saudi Locket Niqab – Premium A1 Quality Black Face Veil (Black) (Random Locket )</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 605</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 975</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 975</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div></div>
+    </main> <!-- End of Main Landmark -->
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-600">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400" aria-hidden="true"></i> ASM VEO</h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
-                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                <h3 class="text-lg font-bold mb-4 text-white">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-300 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400" aria-hidden="true"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400" aria-hidden="true"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400 text-lg" aria-hidden="true"></i> <a href="https://wa.me/923425478683" aria-label="Contact us on WhatsApp at 0342 54 786 83" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-teal-400">0342 54 786 83</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2"></i> Easy Return Policy</p>
-                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+                <h3 class="text-lg font-bold mb-4 text-white">Safe & Secure</h3>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2" aria-hidden="true"></i> Cash on Delivery Available</p>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2" aria-hidden="true"></i> Easy Return Policy</p>
+                <p class="text-gray-300 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2" aria-hidden="true"></i> 100% Secure Checkout</p>
             </div>
         </div>
         <div class="border-t border-gray-800 text-center pt-6">
-            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+            <p class="text-gray-400 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
         </div>
     </footer>
 </body>

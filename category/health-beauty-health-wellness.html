@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health & Beauty > Health & Wellness - ASM VEO</title>
+    
     <!-- Auto SEO Meta Tags -->
     <meta name="description" content="ASM VEO - Premium Shopping in Pakistan">
     <meta name="keywords" content="Health & Beauty > Health & Wellness, buy online, Pakistan, shopping, ASM Digital Solutions, ASM VEO, cash on delivery">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow">
     
+    <!-- Performance Boosters (Preconnect & Prefetch) -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
         .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
@@ -21,25 +31,29 @@
         .product-card:hover .image-zoom img { transform: scale(1.1); }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-900">
     <!-- Navbar -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
-            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
-                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-800 tracking-tight flex items-center gap-2" aria-label="ASM VEO Home">
+                <div class="bg-teal-700 text-white p-2 rounded-lg" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
                 ASM VEO
             </a>
             
             <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
-                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
-                <button onclick="executeSearch()" class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+                <label for="searchInput" class="sr-only">Search any product</label>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-300 focus:border-teal-600 rounded-full py-2.5 px-6 outline-none transition-all text-gray-800">
+                <button onclick="executeSearch()" aria-label="Submit Search" class="absolute right-4 top-2.5 text-gray-600 hover:text-teal-700"><i class="fas fa-search text-lg" aria-hidden="true"></i></button>
             </div>
             
-            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
-                <i class="fas fa-shopping-cart"></i> <span class="hidden md:inline">Cart / Checkout</span>
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-700 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap" aria-label="Go to Checkout">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> <span class="hidden md:inline">Cart / Checkout</span>
             </a>
         </div>
     </header>
+    
+    <!-- Main Content Wrapper (Landmark) -->
+    <main id="main-content">
     
     <script>
     function handleSearch(e) {
@@ -55,479 +69,480 @@
     }
     </script>
 
-        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-200">
+        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-300">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-3xl md:text-5xl font-black text-gray-900">Health & Beauty > Health & Wellness</h1>
-                <p class="text-gray-600 mt-3 font-semibold">23 Exclusive Products Available</p>
+                <p class="text-gray-700 mt-3 font-semibold">23 Exclusive Products Available</p>
             </div>
         </div>
         <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/2-in-1-water-bottle-with-built-in-7-day-pill-organizer-and-cup-cap-durable-portable-design-for-daily-use-random-color-568.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/fb565c2f39e0bebe7b7fca37bb97fce6.png" alt="2 In 1 Water Bottle With Built In 7 Day Pill Organizer And Cup Cap Durable Portable Design For Daily Use | Random Color" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/2-in-1-water-bottle-with-built-in-7-day-pill-organizer-and-cup-cap-durable-portable-design-for-daily-use-random-color-568.html'" role="link" aria-label="View details for 2 In 1 Water Bottle With Built In 7 Day Pill Organizer And Cup Cap Durable Portable Design For Daily Use | Random Color" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/fb565c2f39e0bebe7b7fca37bb97fce6.png" alt="Image of 2 In 1 Water Bottle With Built In 7 Day Pill Organizer And Cup Cap Durable Portable Design For Daily Use | Random Color" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">2 In 1 Water Bottle With Built In 7 Day Pill Organizer And Cup Cap Durable Portable Design For Daily Use | Random Color</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1081</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1741</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1741</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/collagen-anti-aging-powder-drink-skin-health-beauty-supplement-for-glowing-skin-200gram-1382.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/89ea96160baf17c7c9ceb3cbe238d716.mp4" alt="Collagen Anti-Aging Powder Drink | Skin Health & Beauty Supplement for Glowing Skin - 200Gram" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/collagen-anti-aging-powder-drink-skin-health-beauty-supplement-for-glowing-skin-200gram-1382.html'" role="link" aria-label="View details for Collagen Anti-Aging Powder Drink | Skin Health & Beauty Supplement for Glowing Skin - 200Gram" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/89ea96160baf17c7c9ceb3cbe238d716.mp4" alt="Image of Collagen Anti-Aging Powder Drink | Skin Health & Beauty Supplement for Glowing Skin - 200Gram" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Collagen Anti-Aging Powder Drink | Skin Health & Beauty Supplement for Glowing Skin - 200Gram</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 605</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 975</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 975</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/king-mass-chocolate-protein-weight-gainer-powder-for-muscle-mass-strength-1608.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/fcc1bbfa030c3742d6fd42ccfcb83f90.png" alt="King Mass Chocolate Protein Weight Gainer Powder for Muscle Mass & Strength" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/king-mass-chocolate-protein-weight-gainer-powder-for-muscle-mass-strength-1608.html'" role="link" aria-label="View details for King Mass Chocolate Protein Weight Gainer Powder for Muscle Mass & Strength" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/fcc1bbfa030c3742d6fd42ccfcb83f90.png" alt="Image of King Mass Chocolate Protein Weight Gainer Powder for Muscle Mass & Strength" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">King Mass Chocolate Protein Weight Gainer Powder for Muscle Mass & Strength</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 2815</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 4533</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 4533</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dr-harleys-himalayan-shilajit-gummies-60s-1905.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/11/6f6c374922f53f32c7a5c897796dd410.jpeg" alt="Dr. Harleys Himalayan Shilajit Gummies (60s)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dr-harleys-himalayan-shilajit-gummies-60s-1905.html'" role="link" aria-label="View details for Dr. Harleys Himalayan Shilajit Gummies (60s)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/11/6f6c374922f53f32c7a5c897796dd410.jpeg" alt="Image of Dr. Harleys Himalayan Shilajit Gummies (60s)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Dr. Harleys Himalayan Shilajit Gummies (60s)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 3497</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 5631</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 5631</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/disposable-i-v-drip-set-sterile-intravenous-infusion-set-with-regulator-2529.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/e01cae58469c60c4313ab0d019f95473.webp" alt="Disposable I.V Drip Set – Sterile Intravenous Infusion Set with Regulator" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/disposable-i-v-drip-set-sterile-intravenous-infusion-set-with-regulator-2529.html'" role="link" aria-label="View details for Disposable I.V Drip Set – Sterile Intravenous Infusion Set with Regulator" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/e01cae58469c60c4313ab0d019f95473.webp" alt="Image of Disposable I.V Drip Set – Sterile Intravenous Infusion Set with Regulator" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Disposable I.V Drip Set – Sterile Intravenous Infusion Set with Regulator</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 141</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 228</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 228</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/1-pair-knee-compression-support-sleeve-elastic-knee-brace-for-pain-relief-sports-protection-and-joint-stability-random-color-2559.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/edaa0c3922178934dc084cda8f19ca88.mp4" alt="1 Pair - Knee Compression Support Sleeve Elastic Knee Brace For Pain Relief Sports Protection And Joint Stability (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/1-pair-knee-compression-support-sleeve-elastic-knee-brace-for-pain-relief-sports-protection-and-joint-stability-random-color-2559.html'" role="link" aria-label="View details for 1 Pair - Knee Compression Support Sleeve Elastic Knee Brace For Pain Relief Sports Protection And Joint Stability (Random Color)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/edaa0c3922178934dc084cda8f19ca88.mp4" alt="Image of 1 Pair - Knee Compression Support Sleeve Elastic Knee Brace For Pain Relief Sports Protection And Joint Stability (Random Color)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">1 Pair - Knee Compression Support Sleeve Elastic Knee Brace For Pain Relief Sports Protection And Joint Stability (Random Color)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1172</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1887</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1887</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/the-health-healer-height-grow-powder-natural-height-increase-supplement-for-daily-growth-and-wellness-70g-2562.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/e215bda3159fab65adeb609766292da6.png" alt="The Health Healer Height Grow Powder Natural Height Increase Supplement For Daily Growth And Wellness - 70g" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/the-health-healer-height-grow-powder-natural-height-increase-supplement-for-daily-growth-and-wellness-70g-2562.html'" role="link" aria-label="View details for The Health Healer Height Grow Powder Natural Height Increase Supplement For Daily Growth And Wellness - 70g" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/e215bda3159fab65adeb609766292da6.png" alt="Image of The Health Healer Height Grow Powder Natural Height Increase Supplement For Daily Growth And Wellness - 70g" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">The Health Healer Height Grow Powder Natural Height Increase Supplement For Daily Growth And Wellness - 70g</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 259</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 417</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 417</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/abbott-freestyle-optium-blood-glucose-test-strips-providing-accurate-results-everyday-diabetes-care-support-pack-of-50-2914.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/502c80e51807e6fd0060f26a38526565.mp4" alt="Abbott Freestyle Optium Blood Glucose Test Strips Providing Accurate Results Everyday Diabetes Care Support (Pack of 50)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/abbott-freestyle-optium-blood-glucose-test-strips-providing-accurate-results-everyday-diabetes-care-support-pack-of-50-2914.html'" role="link" aria-label="View details for Abbott Freestyle Optium Blood Glucose Test Strips Providing Accurate Results Everyday Diabetes Care Support (Pack of 50)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/502c80e51807e6fd0060f26a38526565.mp4" alt="Image of Abbott Freestyle Optium Blood Glucose Test Strips Providing Accurate Results Everyday Diabetes Care Support (Pack of 50)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Abbott Freestyle Optium Blood Glucose Test Strips Providing Accurate Results Everyday Diabetes Care Support (Pack of 50)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 4366</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 7030</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 7030</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/100pcs-safety-examination-gloves-premium-protection-comfort-hygiene-for-medical-laboratory-and-everyday-use-with-reliable-performance-medium-3789.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/a3b33c36583aee1391662ee8590cf704.mp4" alt="100PCs Safety Examination Gloves – Premium Protection, Comfort & Hygiene for Medical, Laboratory, and Everyday Use with Reliable Performance (Medium)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/100pcs-safety-examination-gloves-premium-protection-comfort-hygiene-for-medical-laboratory-and-everyday-use-with-reliable-performance-medium-3789.html'" role="link" aria-label="View details for 100PCs Safety Examination Gloves – Premium Protection, Comfort & Hygiene for Medical, Laboratory, and Everyday Use with Reliable Performance (Medium)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/a3b33c36583aee1391662ee8590cf704.mp4" alt="Image of 100PCs Safety Examination Gloves – Premium Protection, Comfort & Hygiene for Medical, Laboratory, and Everyday Use with Reliable Performance (Medium)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">100PCs Safety Examination Gloves – Premium Protection, Comfort & Hygiene for Medical, Laboratory, and Everyday Use with Reliable Performance (Medium)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1993</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 3209</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 3209</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/medi-aqua-3cc-syringes-precision-safety-comfort-for-medical-use-designed-for-accurate-dosage-smooth-injection-reliable-patient-care-every-time-pack-of-100-3790.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/c2514fac40c43374aba202d34f43f3f2.jpeg" alt="Medi Aqua 3cc Syringes – Precision, Safety & Comfort for Medical Use, Designed for Accurate Dosage, Smooth Injection & Reliable Patient Care Every Time (Pack of 100)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/medi-aqua-3cc-syringes-precision-safety-comfort-for-medical-use-designed-for-accurate-dosage-smooth-injection-reliable-patient-care-every-time-pack-of-100-3790.html'" role="link" aria-label="View details for Medi Aqua 3cc Syringes – Precision, Safety & Comfort for Medical Use, Designed for Accurate Dosage, Smooth Injection & Reliable Patient Care Every Time (Pack of 100)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/c2514fac40c43374aba202d34f43f3f2.jpeg" alt="Image of Medi Aqua 3cc Syringes – Precision, Safety & Comfort for Medical Use, Designed for Accurate Dosage, Smooth Injection & Reliable Patient Care Every Time (Pack of 100)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Medi Aqua 3cc Syringes – Precision, Safety & Comfort for Medical Use, Designed for Accurate Dosage, Smooth Injection & Reliable Patient Care Every Time (Pack of 100)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1172</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1887</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1887</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hand-grips-strengthener-adjustable-arm-finger-wrist-exerciser-for-men-women-without-counter-random-color-3873.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/85f8c9544b276222778529b07c8403e2.mp4" alt="Hand Grips Strengthener – Adjustable Arm, Finger & Wrist Exerciser for Men & Women - Without Counter (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hand-grips-strengthener-adjustable-arm-finger-wrist-exerciser-for-men-women-without-counter-random-color-3873.html'" role="link" aria-label="View details for Hand Grips Strengthener – Adjustable Arm, Finger & Wrist Exerciser for Men & Women - Without Counter (Random Color)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/85f8c9544b276222778529b07c8403e2.mp4" alt="Image of Hand Grips Strengthener – Adjustable Arm, Finger & Wrist Exerciser for Men & Women - Without Counter (Random Color)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hand Grips Strengthener – Adjustable Arm, Finger & Wrist Exerciser for Men & Women - Without Counter (Random Color)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 479</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 772</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 772</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hot-shaper-slimming-belt-with-box-adjustable-standard-size-waist-trainer-for-men-and-women-helps-reduce-belly-fat-effectively-3948.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/916374f822a03a70fd451340d90fc731.mp4" alt="Hot Shaper Slimming Belt With Box Adjustable Standard Size Waist Trainer For Men And Women Helps Reduce Belly Fat Effectively" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hot-shaper-slimming-belt-with-box-adjustable-standard-size-waist-trainer-for-men-and-women-helps-reduce-belly-fat-effectively-3948.html'" role="link" aria-label="View details for Hot Shaper Slimming Belt With Box Adjustable Standard Size Waist Trainer For Men And Women Helps Reduce Belly Fat Effectively" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/916374f822a03a70fd451340d90fc731.mp4" alt="Image of Hot Shaper Slimming Belt With Box Adjustable Standard Size Waist Trainer For Men And Women Helps Reduce Belly Fat Effectively" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hot Shaper Slimming Belt With Box Adjustable Standard Size Waist Trainer For Men And Women Helps Reduce Belly Fat Effectively</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1354</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 2180</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 2180</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blueidea-usb-rechargeable-folding-fascia-gun-10-in-1-massager-with-heat-cold-therapy-3992.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/a1a0a836786690dbf5ee7b5f204026cb.jpeg" alt="Blueidea USB Rechargeable Folding Fascia Gun – 10-in-1 Massager with Heat & Cold Therapy" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blueidea-usb-rechargeable-folding-fascia-gun-10-in-1-massager-with-heat-cold-therapy-3992.html'" role="link" aria-label="View details for Blueidea USB Rechargeable Folding Fascia Gun – 10-in-1 Massager with Heat & Cold Therapy" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/a1a0a836786690dbf5ee7b5f204026cb.jpeg" alt="Image of Blueidea USB Rechargeable Folding Fascia Gun – 10-in-1 Massager with Heat & Cold Therapy" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Blueidea USB Rechargeable Folding Fascia Gun – 10-in-1 Massager with Heat & Cold Therapy</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 8838</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 14230</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 14230</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/1-piece-adjustable-compression-knee-support-brace-breathable-elastic-knee-pad-with-strap-for-pain-relief-sports-protection-and-joint-support-with-box-3995.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/1658b407a0e0c7025046b10dfad32fa7.mp4" alt="1 Piece Adjustable Compression Knee Support Brace | Breathable Elastic Knee Pad With Strap For Pain Relief, Sports Protection, And Joint Support (With Box)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/1-piece-adjustable-compression-knee-support-brace-breathable-elastic-knee-pad-with-strap-for-pain-relief-sports-protection-and-joint-support-with-box-3995.html'" role="link" aria-label="View details for 1 Piece Adjustable Compression Knee Support Brace | Breathable Elastic Knee Pad With Strap For Pain Relief, Sports Protection, And Joint Support (With Box)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/1658b407a0e0c7025046b10dfad32fa7.mp4" alt="Image of 1 Piece Adjustable Compression Knee Support Brace | Breathable Elastic Knee Pad With Strap For Pain Relief, Sports Protection, And Joint Support (With Box)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">1 Piece Adjustable Compression Knee Support Brace | Breathable Elastic Knee Pad With Strap For Pain Relief, Sports Protection, And Joint Support (With Box)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 715</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1152</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1152</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/knee-support-band-for-pressure-weaving-with-3d-weave-protection-against-injury-pressure-adjustable-knee-support-for-men-and-women-1-pc-4009.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/9c62e9bcb394ed4ade6353bcb8f45134.mp4" alt="Knee Support Band For Pressure Weaving With 3D Weave Protection Against Injury Pressure Adjustable Knee Support For Men And Women (1 pc)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/knee-support-band-for-pressure-weaving-with-3d-weave-protection-against-injury-pressure-adjustable-knee-support-for-men-and-women-1-pc-4009.html'" role="link" aria-label="View details for Knee Support Band For Pressure Weaving With 3D Weave Protection Against Injury Pressure Adjustable Knee Support For Men And Women (1 pc)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/9c62e9bcb394ed4ade6353bcb8f45134.mp4" alt="Image of Knee Support Band For Pressure Weaving With 3D Weave Protection Against Injury Pressure Adjustable Knee Support For Men And Women (1 pc)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Knee Support Band For Pressure Weaving With 3D Weave Protection Against Injury Pressure Adjustable Knee Support For Men And Women (1 pc)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 715</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1152</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1152</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dr-rubina-weight-loss-solution-herbal-slimming-digestion-energy-support-formula-4046.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/4787a88522efe02a83b65b8c0fd4d8c2.jpg" alt="Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dr-rubina-weight-loss-solution-herbal-slimming-digestion-energy-support-formula-4046.html'" role="link" aria-label="View details for Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/4787a88522efe02a83b65b8c0fd4d8c2.jpg" alt="Image of Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 232</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 374</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 374</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dr-rubina-weight-loss-solution-herbal-slimming-digestion-energy-support-formula-4057.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/cf8334b7c9099f2f29bb8204b190e01f.jpg" alt="Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/dr-rubina-weight-loss-solution-herbal-slimming-digestion-energy-support-formula-4057.html'" role="link" aria-label="View details for Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/cf8334b7c9099f2f29bb8204b190e01f.jpg" alt="Image of Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 405</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 653</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 653</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/herbal-knee-pain-relief-patch-heat-therapy-for-joint-muscle-comfort-natural-ingredients-pack-of-10-pcs-4279.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/5d253e0b958a650ff7d6b8668c8347b0.mp4" alt="Herbal Knee Pain Relief Patch – Heat Therapy for Joint & Muscle Comfort, Natural Ingredients Pack Of 10 Pcs" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/herbal-knee-pain-relief-patch-heat-therapy-for-joint-muscle-comfort-natural-ingredients-pack-of-10-pcs-4279.html'" role="link" aria-label="View details for Herbal Knee Pain Relief Patch – Heat Therapy for Joint & Muscle Comfort, Natural Ingredients Pack Of 10 Pcs" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/5d253e0b958a650ff7d6b8668c8347b0.mp4" alt="Image of Herbal Knee Pain Relief Patch – Heat Therapy for Joint & Muscle Comfort, Natural Ingredients Pack Of 10 Pcs" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Herbal Knee Pain Relief Patch – Heat Therapy for Joint & Muscle Comfort, Natural Ingredients Pack Of 10 Pcs</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 533</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 859</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 859</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/migraine-relief-cap-headache-relief-hat-for-migraine-relief-tension-one-size-fits-all-headache-cap-with-reusable-ice-gel-pack-for-puffy-eyes-stress-relief-random-color-4911.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/60b94cc78c197cff9f19b887b40be652.mp4" alt="Migraine Relief Cap - Headache Relief Hat for Migraine Relief, Tension, One Size Fits All Headache Cap with Reusable Ice Gel Pack for Puffy Eyes, Stress Relief ( Random Color )" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/migraine-relief-cap-headache-relief-hat-for-migraine-relief-tension-one-size-fits-all-headache-cap-with-reusable-ice-gel-pack-for-puffy-eyes-stress-relief-random-color-4911.html'" role="link" aria-label="View details for Migraine Relief Cap - Headache Relief Hat for Migraine Relief, Tension, One Size Fits All Headache Cap with Reusable Ice Gel Pack for Puffy Eyes, Stress Relief ( Random Color )" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/60b94cc78c197cff9f19b887b40be652.mp4" alt="Image of Migraine Relief Cap - Headache Relief Hat for Migraine Relief, Tension, One Size Fits All Headache Cap with Reusable Ice Gel Pack for Puffy Eyes, Stress Relief ( Random Color )" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Migraine Relief Cap - Headache Relief Hat for Migraine Relief, Tension, One Size Fits All Headache Cap with Reusable Ice Gel Pack for Puffy Eyes, Stress Relief ( Random Color )</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 990</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1594</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1594</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/knee-pads-for-baby-adjustable-baby-knee-protector-crawling-safety-and-elbow-pads-random-color-7911.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/4-5.webp" alt="Knee Pads for baby | Adjustable Baby knee Protector Crawling Safety and elbow pads (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/knee-pads-for-baby-adjustable-baby-knee-protector-crawling-safety-and-elbow-pads-random-color-7911.html'" role="link" aria-label="View details for Knee Pads for baby | Adjustable Baby knee Protector Crawling Safety and elbow pads (Random Color)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/4-5.webp" alt="Image of Knee Pads for baby | Adjustable Baby knee Protector Crawling Safety and elbow pads (Random Color)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Knee Pads for baby | Adjustable Baby knee Protector Crawling Safety and elbow pads (Random Color)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 333</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 537</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 537</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blueidea-deep-tissue-fascial-massager-with-4-massage-muscle-massage-gun-random-color-8251.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/f096616ee784a91a3f8e95042d863443.png_750x750.jpg_.webp" alt="Blueidea Deep Tissue fascial massager with 4 massage Muscle Massage Gun (Random color)." class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/blueidea-deep-tissue-fascial-massager-with-4-massage-muscle-massage-gun-random-color-8251.html'" role="link" aria-label="View details for Blueidea Deep Tissue fascial massager with 4 massage Muscle Massage Gun (Random color)." tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/f096616ee784a91a3f8e95042d863443.png_750x750.jpg_.webp" alt="Image of Blueidea Deep Tissue fascial massager with 4 massage Muscle Massage Gun (Random color)." loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Blueidea Deep Tissue fascial massager with 4 massage Muscle Massage Gun (Random color).</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 5917</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 9527</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 9527</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/generic-revoflex-xtreme-home-gym-abs-roller-random-color-8294.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/AB-Wheels-Roller-Abdominal-Muscle-Resistance-Pull-Rope-Trainer-Waist-Exercise-Multi-Functional-Home-Workout-Fitness.jpg_-4.webp" alt="GENERIC REVOFLEX XTREME HOME GYM ABS ROLLER (random color)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/generic-revoflex-xtreme-home-gym-abs-roller-random-color-8294.html'" role="link" aria-label="View details for GENERIC REVOFLEX XTREME HOME GYM ABS ROLLER (random color)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/AB-Wheels-Roller-Abdominal-Muscle-Resistance-Pull-Rope-Trainer-Waist-Exercise-Multi-Functional-Home-Workout-Fitness.jpg_-4.webp" alt="Image of GENERIC REVOFLEX XTREME HOME GYM ABS ROLLER (random color)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">GENERIC REVOFLEX XTREME HOME GYM ABS ROLLER (random color)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 2450</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 3945</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 3945</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/women-sweat-shaper-weight-loss-fat-burning-trainer-slimming-tummy-control-reducing-shapewear-workout-fat-burner-black-8311.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/18-500x500-1.webp" alt="Women Sweat Shaper Weight Loss Fat Burning Trainer Slimming Tummy Control Reducing Shapewear Workout Fat Burner  (black )" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/women-sweat-shaper-weight-loss-fat-burning-trainer-slimming-tummy-control-reducing-shapewear-workout-fat-burner-black-8311.html'" role="link" aria-label="View details for Women Sweat Shaper Weight Loss Fat Burning Trainer Slimming Tummy Control Reducing Shapewear Workout Fat Burner  (black )" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/18-500x500-1.webp" alt="Image of Women Sweat Shaper Weight Loss Fat Burning Trainer Slimming Tummy Control Reducing Shapewear Workout Fat Burner  (black )" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Health & Wellness</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women Sweat Shaper Weight Loss Fat Burning Trainer Slimming Tummy Control Reducing Shapewear Workout Fat Burner  (black )</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1263</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 2034</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 2034</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div></div>
+    </main> <!-- End of Main Landmark -->
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-600">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400" aria-hidden="true"></i> ASM VEO</h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
-                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                <h3 class="text-lg font-bold mb-4 text-white">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-300 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400" aria-hidden="true"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400" aria-hidden="true"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400 text-lg" aria-hidden="true"></i> <a href="https://wa.me/923425478683" aria-label="Contact us on WhatsApp at 0342 54 786 83" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-teal-400">0342 54 786 83</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2"></i> Easy Return Policy</p>
-                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+                <h3 class="text-lg font-bold mb-4 text-white">Safe & Secure</h3>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2" aria-hidden="true"></i> Cash on Delivery Available</p>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2" aria-hidden="true"></i> Easy Return Policy</p>
+                <p class="text-gray-300 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2" aria-hidden="true"></i> 100% Secure Checkout</p>
             </div>
         </div>
         <div class="border-t border-gray-800 text-center pt-6">
-            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+            <p class="text-gray-400 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
         </div>
     </footer>
 </body>

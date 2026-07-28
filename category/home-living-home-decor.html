@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home & Living > Home Decor - ASM VEO</title>
+    
     <!-- Auto SEO Meta Tags -->
     <meta name="description" content="ASM VEO - Premium Shopping in Pakistan">
     <meta name="keywords" content="Home & Living > Home Decor, buy online, Pakistan, shopping, ASM Digital Solutions, ASM VEO, cash on delivery">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow">
     
+    <!-- Performance Boosters (Preconnect & Prefetch) -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
         .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
@@ -21,25 +31,29 @@
         .product-card:hover .image-zoom img { transform: scale(1.1); }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-900">
     <!-- Navbar -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
-            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
-                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-800 tracking-tight flex items-center gap-2" aria-label="ASM VEO Home">
+                <div class="bg-teal-700 text-white p-2 rounded-lg" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
                 ASM VEO
             </a>
             
             <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
-                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
-                <button onclick="executeSearch()" class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+                <label for="searchInput" class="sr-only">Search any product</label>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-300 focus:border-teal-600 rounded-full py-2.5 px-6 outline-none transition-all text-gray-800">
+                <button onclick="executeSearch()" aria-label="Submit Search" class="absolute right-4 top-2.5 text-gray-600 hover:text-teal-700"><i class="fas fa-search text-lg" aria-hidden="true"></i></button>
             </div>
             
-            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
-                <i class="fas fa-shopping-cart"></i> <span class="hidden md:inline">Cart / Checkout</span>
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-700 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap" aria-label="Go to Checkout">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> <span class="hidden md:inline">Cart / Checkout</span>
             </a>
         </div>
     </header>
+    
+    <!-- Main Content Wrapper (Landmark) -->
+    <main id="main-content">
     
     <script>
     function handleSearch(e) {
@@ -55,460 +69,461 @@
     }
     </script>
 
-        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-200">
+        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-300">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-3xl md:text-5xl font-black text-gray-900">Home & Living > Home Decor</h1>
-                <p class="text-gray-600 mt-3 font-semibold">22 Exclusive Products Available</p>
+                <p class="text-gray-700 mt-3 font-semibold">22 Exclusive Products Available</p>
             </div>
         </div>
         <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/aesthetic-3-piece-organizer-home-decor-set-with-oval-tray-mini-vase-decorative-storage-box-vanity-coffee-table-bedroom-decoration-90.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/ddafc6b627b5b4d52abb458ea7313f21.mp4" alt="Aesthetic 3-Piece Organizer & Home Decor Set with Oval Tray, Mini Vase & Decorative Storage Box | Vanity, Coffee Table & Bedroom Decoration" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/aesthetic-3-piece-organizer-home-decor-set-with-oval-tray-mini-vase-decorative-storage-box-vanity-coffee-table-bedroom-decoration-90.html'" role="link" aria-label="View details for Aesthetic 3-Piece Organizer & Home Decor Set with Oval Tray, Mini Vase & Decorative Storage Box | Vanity, Coffee Table & Bedroom Decoration" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/ddafc6b627b5b4d52abb458ea7313f21.mp4" alt="Image of Aesthetic 3-Piece Organizer & Home Decor Set with Oval Tray, Mini Vase & Decorative Storage Box | Vanity, Coffee Table & Bedroom Decoration" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Aesthetic 3-Piece Organizer & Home Decor Set with Oval Tray, Mini Vase & Decorative Storage Box | Vanity, Coffee Table & Bedroom Decoration</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1172</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1887</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1887</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-decorative-wall-art-mdf-wall-fame-8x11-inches-with-double-tape-included-1605.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d7f54b61ea7c487d9a2ccfbf7e51ab41.jpeg" alt="Set of 3 Decorative Wall Art MDF Wall Fame 8x11 Inches with Double Tape Included" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-decorative-wall-art-mdf-wall-fame-8x11-inches-with-double-tape-included-1605.html'" role="link" aria-label="View details for Set of 3 Decorative Wall Art MDF Wall Fame 8x11 Inches with Double Tape Included" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d7f54b61ea7c487d9a2ccfbf7e51ab41.jpeg" alt="Image of Set of 3 Decorative Wall Art MDF Wall Fame 8x11 Inches with Double Tape Included" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Set of 3 Decorative Wall Art MDF Wall Fame 8x11 Inches with Double Tape Included</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 605</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 975</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 975</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/led-light-up-writing-board-with-7-marker-15-15-cm-acrylic-message-pad-with-stand-colorful-diy-notes-erasable-neon-pens-2266.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/d4c3547287366e16130c9d011c5a49b4.mp4" alt="LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message Pad with Stand | Colorful DIY Notes & Erasable Neon Pens" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/led-light-up-writing-board-with-7-marker-15-15-cm-acrylic-message-pad-with-stand-colorful-diy-notes-erasable-neon-pens-2266.html'" role="link" aria-label="View details for LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message Pad with Stand | Colorful DIY Notes & Erasable Neon Pens" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/d4c3547287366e16130c9d011c5a49b4.mp4" alt="Image of LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message Pad with Stand | Colorful DIY Notes & Erasable Neon Pens" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message Pad with Stand | Colorful DIY Notes & Erasable Neon Pens</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1245</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 2005</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 2005</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hills-moon-sun-leaves-wooden-wall-art-6-piece-decorative-frame-set-made-with-wooden-stickytile-size-8x11-inches-each-easy-to-mount-with-double-tape-4195.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/8ba151f32d5ee8da62510765e0b8e94f.jpeg" alt="Hills Moon Sun Leaves Wooden Wall Art – 6 Piece Decorative Frame Set Made With Wooden Stickytile, Size 8x11 Inches Each, Easy To Mount With Double Tape" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/hills-moon-sun-leaves-wooden-wall-art-6-piece-decorative-frame-set-made-with-wooden-stickytile-size-8x11-inches-each-easy-to-mount-with-double-tape-4195.html'" role="link" aria-label="View details for Hills Moon Sun Leaves Wooden Wall Art – 6 Piece Decorative Frame Set Made With Wooden Stickytile, Size 8x11 Inches Each, Easy To Mount With Double Tape" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/8ba151f32d5ee8da62510765e0b8e94f.jpeg" alt="Image of Hills Moon Sun Leaves Wooden Wall Art – 6 Piece Decorative Frame Set Made With Wooden Stickytile, Size 8x11 Inches Each, Easy To Mount With Double Tape" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hills Moon Sun Leaves Wooden Wall Art – 6 Piece Decorative Frame Set Made With Wooden Stickytile, Size 8x11 Inches Each, Easy To Mount With Double Tape</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 973</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1567</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1567</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/khana-kaba-wooden-wall-art-3-piece-islamic-frame-set-made-with-wooden-stickytile-each-frame-8x11-inches-easy-to-install-with-included-double-tape-4196.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/fa6cef9f2b3c8132d12cf8b58b7bf33e.mp4" alt="Khana Kaba Wooden Wall Art – 3 Piece Islamic Frame Set Made With Wooden Stickytile, Each Frame 8x11 Inches, Easy To Install With Included Double Tape" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/khana-kaba-wooden-wall-art-3-piece-islamic-frame-set-made-with-wooden-stickytile-each-frame-8x11-inches-easy-to-install-with-included-double-tape-4196.html'" role="link" aria-label="View details for Khana Kaba Wooden Wall Art – 3 Piece Islamic Frame Set Made With Wooden Stickytile, Each Frame 8x11 Inches, Easy To Install With Included Double Tape" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/fa6cef9f2b3c8132d12cf8b58b7bf33e.mp4" alt="Image of Khana Kaba Wooden Wall Art – 3 Piece Islamic Frame Set Made With Wooden Stickytile, Each Frame 8x11 Inches, Easy To Install With Included Double Tape" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Khana Kaba Wooden Wall Art – 3 Piece Islamic Frame Set Made With Wooden Stickytile, Each Frame 8x11 Inches, Easy To Install With Included Double Tape</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 643</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1036</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1036</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/islamic-wooden-wall-art-frame-1-piece-elegant-decorative-frame-made-with-wooden-stickytile-size-8x11-inches-easy-to-hang-with-included-double-tape-4197.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/45ad6427bf65d96abefbf73ee4411442.jpeg" alt="Islamic Wooden Wall Art Frame – 1 Piece Elegant Decorative Frame Made With Wooden Stickytile, Size 8x11 Inches, Easy To Hang With Included Double Tape" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/islamic-wooden-wall-art-frame-1-piece-elegant-decorative-frame-made-with-wooden-stickytile-size-8x11-inches-easy-to-hang-with-included-double-tape-4197.html'" role="link" aria-label="View details for Islamic Wooden Wall Art Frame – 1 Piece Elegant Decorative Frame Made With Wooden Stickytile, Size 8x11 Inches, Easy To Hang With Included Double Tape" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/45ad6427bf65d96abefbf73ee4411442.jpeg" alt="Image of Islamic Wooden Wall Art Frame – 1 Piece Elegant Decorative Frame Made With Wooden Stickytile, Size 8x11 Inches, Easy To Hang With Included Double Tape" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Islamic Wooden Wall Art Frame – 1 Piece Elegant Decorative Frame Made With Wooden Stickytile, Size 8x11 Inches, Easy To Hang With Included Double Tape</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 297</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 479</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 479</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/islamic-calligraphy-wall-frame-1-piece-decorative-wooden-sticky-tile-art-8x11-inches-with-double-tape-4199.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/67fbd668ce5f23e89c6831ed882dc468.jpeg" alt="Islamic Calligraphy Wall Frame – 1 Piece Decorative Wooden Sticky Tile Art (8x11 Inches) with Double Tape" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/islamic-calligraphy-wall-frame-1-piece-decorative-wooden-sticky-tile-art-8x11-inches-with-double-tape-4199.html'" role="link" aria-label="View details for Islamic Calligraphy Wall Frame – 1 Piece Decorative Wooden Sticky Tile Art (8x11 Inches) with Double Tape" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/67fbd668ce5f23e89c6831ed882dc468.jpeg" alt="Image of Islamic Calligraphy Wall Frame – 1 Piece Decorative Wooden Sticky Tile Art (8x11 Inches) with Double Tape" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Islamic Calligraphy Wall Frame – 1 Piece Decorative Wooden Sticky Tile Art (8x11 Inches) with Double Tape</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 297</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 479</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 479</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/led-galaxy-star-light-usb-powered-rotating-starry-sky-laser-night-light-for-bedroom-car-roof-and-ceiling-decoration-red-color-4221.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/deda198f05b0bbbf43e36bd713997b5b.jpg" alt="LED Galaxy Star Light  – USB Powered Rotating Starry Sky Laser Night Light For Bedroom Car Roof And Ceiling Decoration – Red Color" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/led-galaxy-star-light-usb-powered-rotating-starry-sky-laser-night-light-for-bedroom-car-roof-and-ceiling-decoration-red-color-4221.html'" role="link" aria-label="View details for LED Galaxy Star Light  – USB Powered Rotating Starry Sky Laser Night Light For Bedroom Car Roof And Ceiling Decoration – Red Color" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/deda198f05b0bbbf43e36bd713997b5b.jpg" alt="Image of LED Galaxy Star Light  – USB Powered Rotating Starry Sky Laser Night Light For Bedroom Car Roof And Ceiling Decoration – Red Color" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">LED Galaxy Star Light  – USB Powered Rotating Starry Sky Laser Night Light For Bedroom Car Roof And Ceiling Decoration – Red Color</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 506</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 815</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 815</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-floral-wall-frames-wooden-decorative-art-in-8x11-12x16-inches-with-double-tape-for-easy-mounting-4269.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/99af10e87164f7c45060d67337ddf7e3.jpeg" alt="Set of 3 Floral Wall Frames – Wooden Decorative Art in 8x11 & 12x16 Inches with Double Tape for Easy Mounting" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-floral-wall-frames-wooden-decorative-art-in-8x11-12x16-inches-with-double-tape-for-easy-mounting-4269.html'" role="link" aria-label="View details for Set of 3 Floral Wall Frames – Wooden Decorative Art in 8x11 & 12x16 Inches with Double Tape for Easy Mounting" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/99af10e87164f7c45060d67337ddf7e3.jpeg" alt="Image of Set of 3 Floral Wall Frames – Wooden Decorative Art in 8x11 & 12x16 Inches with Double Tape for Easy Mounting" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Set of 3 Floral Wall Frames – Wooden Decorative Art in 8x11 & 12x16 Inches with Double Tape for Easy Mounting</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 533</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 859</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 859</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-6-islamic-calligraphy-wall-frames-wooden-8x11-inches-with-double-tape-for-easy-mounting-4272.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/454c3b82d6e2a72458d3f2fd9635ccbb.jpeg" alt="Set of 6 Islamic Calligraphy Wall Frames – Wooden 8x11 Inches with Double Tape for Easy Mounting" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-6-islamic-calligraphy-wall-frames-wooden-8x11-inches-with-double-tape-for-easy-mounting-4272.html'" role="link" aria-label="View details for Set of 6 Islamic Calligraphy Wall Frames – Wooden 8x11 Inches with Double Tape for Easy Mounting" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/454c3b82d6e2a72458d3f2fd9635ccbb.jpeg" alt="Image of Set of 6 Islamic Calligraphy Wall Frames – Wooden 8x11 Inches with Double Tape for Easy Mounting" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Set of 6 Islamic Calligraphy Wall Frames – Wooden 8x11 Inches with Double Tape for Easy Mounting</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1134</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1826</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1826</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/wooden-sticky-wall-tiles-ready-to-install-with-adhesive-tape-4327.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/d98aebcdff47d729f69671f527ed458a.jpeg" alt="Wooden Sticky Wall Tiles – Ready to Install with Adhesive Tape" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/wooden-sticky-wall-tiles-ready-to-install-with-adhesive-tape-4327.html'" role="link" aria-label="View details for Wooden Sticky Wall Tiles – Ready to Install with Adhesive Tape" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/d98aebcdff47d729f69671f527ed458a.jpeg" alt="Image of Wooden Sticky Wall Tiles – Ready to Install with Adhesive Tape" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Wooden Sticky Wall Tiles – Ready to Install with Adhesive Tape</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1134</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1826</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1826</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/butterfly-floral-wall-art-3-piece-8x11-wooden-sticky-tile-panels-with-adhesive-tape-for-easy-mounting-4330.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/18d48b0c4ef542d6d7a8ab35a672fa29.jpeg" alt="Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels with Adhesive Tape for Easy Mounting" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/butterfly-floral-wall-art-3-piece-8x11-wooden-sticky-tile-panels-with-adhesive-tape-for-easy-mounting-4330.html'" role="link" aria-label="View details for Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels with Adhesive Tape for Easy Mounting" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/18d48b0c4ef542d6d7a8ab35a672fa29.jpeg" alt="Image of Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels with Adhesive Tape for Easy Mounting" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels with Adhesive Tape for Easy Mounting</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 624</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1005</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1005</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-5pcs-islamic-calligraphy-fabi-ayi-alla-wall-frame-home-decor-blue-4963.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/0e60052e3358351b048b5e3908058b6f.jpeg" alt="Set of 5Pcs Islamic calligraphy Fabi Ayi Alla wall frame, home decor blue" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-5pcs-islamic-calligraphy-fabi-ayi-alla-wall-frame-home-decor-blue-4963.html'" role="link" aria-label="View details for Set of 5Pcs Islamic calligraphy Fabi Ayi Alla wall frame, home decor blue" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/0e60052e3358351b048b5e3908058b6f.jpeg" alt="Image of Set of 5Pcs Islamic calligraphy Fabi Ayi Alla wall frame, home decor blue" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Set of 5Pcs Islamic calligraphy Fabi Ayi Alla wall frame, home decor blue</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1245</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 2005</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 2005</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-leaf-art-wooden-frames-for-wall-decoration-sticky-photo-tiles-5316.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/aa34cdd68a2db449ae18dfa2d324052d.jpg" alt="Set Of 3 Leaf Art Wooden Frames For Wall Decoration / Sticky Photo Tiles" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-leaf-art-wooden-frames-for-wall-decoration-sticky-photo-tiles-5316.html'" role="link" aria-label="View details for Set Of 3 Leaf Art Wooden Frames For Wall Decoration / Sticky Photo Tiles" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/aa34cdd68a2db449ae18dfa2d324052d.jpg" alt="Image of Set Of 3 Leaf Art Wooden Frames For Wall Decoration / Sticky Photo Tiles" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Set Of 3 Leaf Art Wooden Frames For Wall Decoration / Sticky Photo Tiles</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 624</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1005</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1005</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-5-italian-mediterranean-vintage-homes-aesthetic-art-themed-wall-art-wooden-sticky-phototile-frames-for-wall-home-and-girls-room-decoration-5356.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/1ced9739691356907a6400cba54a60f2.png" alt="Set of 5 italian mediterranean vintage homes aesthetic art themed wall art wooden sticky Phototile frames for wall home and girls room decoration" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-5-italian-mediterranean-vintage-homes-aesthetic-art-themed-wall-art-wooden-sticky-phototile-frames-for-wall-home-and-girls-room-decoration-5356.html'" role="link" aria-label="View details for Set of 5 italian mediterranean vintage homes aesthetic art themed wall art wooden sticky Phototile frames for wall home and girls room decoration" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/1ced9739691356907a6400cba54a60f2.png" alt="Image of Set of 5 italian mediterranean vintage homes aesthetic art themed wall art wooden sticky Phototile frames for wall home and girls room decoration" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Set of 5 italian mediterranean vintage homes aesthetic art themed wall art wooden sticky Phototile frames for wall home and girls room decoration</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 970</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1562</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1562</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-motivational-quote-frames-set-of-3-motivational-frame-wall-paintings-for-office-decor-5448.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/252e041cb169190295c5d5b04d03a94b.jpeg" alt="Set Of 3 Motivational Quote Frames/ Set of 3 motivational Frame Wall Paintings, For Office Decor" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-motivational-quote-frames-set-of-3-motivational-frame-wall-paintings-for-office-decor-5448.html'" role="link" aria-label="View details for Set Of 3 Motivational Quote Frames/ Set of 3 motivational Frame Wall Paintings, For Office Decor" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/252e041cb169190295c5d5b04d03a94b.jpeg" alt="Image of Set Of 3 Motivational Quote Frames/ Set of 3 motivational Frame Wall Paintings, For Office Decor" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Set Of 3 Motivational Quote Frames/ Set of 3 motivational Frame Wall Paintings, For Office Decor</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 77</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 124</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 124</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-marble-blue-islamic-wall-art-modern-arabic-calligraphy-islamic-wall-decor-5967.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/1402-275-556338-product-2.jpg" alt="3 Marble Blue Islamic Wall Art Modern Arabic Calligraphy- Islamic Wall Decor" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-marble-blue-islamic-wall-art-modern-arabic-calligraphy-islamic-wall-decor-5967.html'" role="link" aria-label="View details for 3 Marble Blue Islamic Wall Art Modern Arabic Calligraphy- Islamic Wall Decor" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/1402-275-556338-product-2.jpg" alt="Image of 3 Marble Blue Islamic Wall Art Modern Arabic Calligraphy- Islamic Wall Decor" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Marble Blue Islamic Wall Art Modern Arabic Calligraphy- Islamic Wall Decor</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 661</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1065</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1065</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-leaf-art-wooden-frames-for-wall-decoration-sticky-photo-tiles-6201.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/16efdd40c740a06118deabd877cf6ae1.jpg" alt="set of 3 leaf art wooden frames for wall decoration / sticky photo tiles" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-leaf-art-wooden-frames-for-wall-decoration-sticky-photo-tiles-6201.html'" role="link" aria-label="View details for set of 3 leaf art wooden frames for wall decoration / sticky photo tiles" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/16efdd40c740a06118deabd877cf6ae1.jpg" alt="Image of set of 3 leaf art wooden frames for wall decoration / sticky photo tiles" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">set of 3 leaf art wooden frames for wall decoration / sticky photo tiles</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 588</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 947</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 947</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-4-motivational-sticky-canvas-frames-for-wall-decore-sticky-phototiles-for-office-and-home-workplace-6202.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/5d3fd36466e45f83ff87a4b40e828f9b.jpg" alt="set of 4 Motivational sticky canvas frames for wall decore / sticky phototiles for office and home workplace" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-4-motivational-sticky-canvas-frames-for-wall-decore-sticky-phototiles-for-office-and-home-workplace-6202.html'" role="link" aria-label="View details for set of 4 Motivational sticky canvas frames for wall decore / sticky phototiles for office and home workplace" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/5d3fd36466e45f83ff87a4b40e828f9b.jpg" alt="Image of set of 4 Motivational sticky canvas frames for wall decore / sticky phototiles for office and home workplace" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">set of 4 Motivational sticky canvas frames for wall decore / sticky phototiles for office and home workplace</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 624</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1005</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1005</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-5-motivational-sticky-wooden-canvas-frames-for-wall-decore-sticky-phototiles-for-office-home-workplace-6203.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/921b919c6a7f37d4ab17c0aef79d342b.jpeg" alt="set of 5 Motivational sticky wooden canvas frames for wall decore / sticky phototiles for office home workplace" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-5-motivational-sticky-wooden-canvas-frames-for-wall-decore-sticky-phototiles-for-office-home-workplace-6203.html'" role="link" aria-label="View details for set of 5 Motivational sticky wooden canvas frames for wall decore / sticky phototiles for office home workplace" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/921b919c6a7f37d4ab17c0aef79d342b.jpeg" alt="Image of set of 5 Motivational sticky wooden canvas frames for wall decore / sticky phototiles for office home workplace" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">set of 5 Motivational sticky wooden canvas frames for wall decore / sticky phototiles for office home workplace</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 990</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1594</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1594</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-abstract-plant-art-wooden-canvas-frames-for-wall-decore-sticky-phototiles-for-home-and-office-6205.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/a1b81e923f19f3a619bac975c3759197-1.jpg" alt="set of 3 abstract plant art wooden canvas frames for wall decore / sticky phototiles for home and office" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/set-of-3-abstract-plant-art-wooden-canvas-frames-for-wall-decore-sticky-phototiles-for-home-and-office-6205.html'" role="link" aria-label="View details for set of 3 abstract plant art wooden canvas frames for wall decore / sticky phototiles for home and office" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/a1b81e923f19f3a619bac975c3759197-1.jpg" alt="Image of set of 3 abstract plant art wooden canvas frames for wall decore / sticky phototiles for home and office" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">set of 3 abstract plant art wooden canvas frames for wall decore / sticky phototiles for home and office</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 517</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 833</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 833</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pack-of-4-colourful-motivational-words-pictures-wooden-frames-8-by-8-inches-size-for-kids-and-girls-room-wall-art-decoration-sticky-phototiles-6243.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/188c75120daee9afbdbfd429fe71dfea.jpg" alt="Pack of 4 Colourful Motivational Words Pictures Wooden Frames 8 by 8 inches Size for Kids and girls Room Wall Art Decoration / Sticky Phototiles" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/pack-of-4-colourful-motivational-words-pictures-wooden-frames-8-by-8-inches-size-for-kids-and-girls-room-wall-art-decoration-sticky-phototiles-6243.html'" role="link" aria-label="View details for Pack of 4 Colourful Motivational Words Pictures Wooden Frames 8 by 8 inches Size for Kids and girls Room Wall Art Decoration / Sticky Phototiles" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/188c75120daee9afbdbfd429fe71dfea.jpg" alt="Image of Pack of 4 Colourful Motivational Words Pictures Wooden Frames 8 by 8 inches Size for Kids and girls Room Wall Art Decoration / Sticky Phototiles" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Home & Living > Home Decor</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack of 4 Colourful Motivational Words Pictures Wooden Frames 8 by 8 inches Size for Kids and girls Room Wall Art Decoration / Sticky Phototiles</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 661</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1065</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1065</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div></div>
+    </main> <!-- End of Main Landmark -->
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-600">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400" aria-hidden="true"></i> ASM VEO</h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
-                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                <h3 class="text-lg font-bold mb-4 text-white">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-300 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400" aria-hidden="true"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400" aria-hidden="true"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400 text-lg" aria-hidden="true"></i> <a href="https://wa.me/923425478683" aria-label="Contact us on WhatsApp at 0342 54 786 83" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-teal-400">0342 54 786 83</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2"></i> Easy Return Policy</p>
-                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+                <h3 class="text-lg font-bold mb-4 text-white">Safe & Secure</h3>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2" aria-hidden="true"></i> Cash on Delivery Available</p>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2" aria-hidden="true"></i> Easy Return Policy</p>
+                <p class="text-gray-300 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2" aria-hidden="true"></i> 100% Secure Checkout</p>
             </div>
         </div>
         <div class="border-t border-gray-800 text-center pt-6">
-            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+            <p class="text-gray-400 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
         </div>
     </footer>
 </body>

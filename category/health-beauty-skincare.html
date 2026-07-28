@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health & Beauty > Skincare - ASM VEO</title>
+    
     <!-- Auto SEO Meta Tags -->
     <meta name="description" content="ASM VEO - Premium Shopping in Pakistan">
     <meta name="keywords" content="Health & Beauty > Skincare, buy online, Pakistan, shopping, ASM Digital Solutions, ASM VEO, cash on delivery">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow">
     
+    <!-- Performance Boosters (Preconnect & Prefetch) -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
         .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
@@ -21,25 +31,29 @@
         .product-card:hover .image-zoom img { transform: scale(1.1); }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-900">
     <!-- Navbar -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
-            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
-                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-800 tracking-tight flex items-center gap-2" aria-label="ASM VEO Home">
+                <div class="bg-teal-700 text-white p-2 rounded-lg" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
                 ASM VEO
             </a>
             
             <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
-                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
-                <button onclick="executeSearch()" class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+                <label for="searchInput" class="sr-only">Search any product</label>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-300 focus:border-teal-600 rounded-full py-2.5 px-6 outline-none transition-all text-gray-800">
+                <button onclick="executeSearch()" aria-label="Submit Search" class="absolute right-4 top-2.5 text-gray-600 hover:text-teal-700"><i class="fas fa-search text-lg" aria-hidden="true"></i></button>
             </div>
             
-            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
-                <i class="fas fa-shopping-cart"></i> <span class="hidden md:inline">Cart / Checkout</span>
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-700 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap" aria-label="Go to Checkout">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> <span class="hidden md:inline">Cart / Checkout</span>
             </a>
         </div>
     </header>
+    
+    <!-- Main Content Wrapper (Landmark) -->
+    <main id="main-content">
     
     <script>
     function handleSearch(e) {
@@ -55,289 +69,290 @@
     }
     </script>
 
-        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-200">
+        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-300">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-3xl md:text-5xl font-black text-gray-900">Health & Beauty > Skincare</h1>
-                <p class="text-gray-600 mt-3 font-semibold">13 Exclusive Products Available</p>
+                <p class="text-gray-700 mt-3 font-semibold">13 Exclusive Products Available</p>
             </div>
         </div>
         <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/footwear-deodorant-spray-shoe-deo-odor-control-fresh-spray-100ml-872.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/687b058d2f1118993b78f3762602f035.mp4" alt="Footwear Deodorant Spray Shoe Deo Odor Control Fresh Spray (100ml)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/footwear-deodorant-spray-shoe-deo-odor-control-fresh-spray-100ml-872.html'" role="link" aria-label="View details for Footwear Deodorant Spray Shoe Deo Odor Control Fresh Spray (100ml)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/687b058d2f1118993b78f3762602f035.mp4" alt="Image of Footwear Deodorant Spray Shoe Deo Odor Control Fresh Spray (100ml)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Footwear Deodorant Spray Shoe Deo Odor Control Fresh Spray (100ml)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 396</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 638</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 638</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/2-in-1-wiki-skin-polish-exfoliating-brightening-face-and-body-scrub-237ml-1378.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/cbf504997b850ea1fd48ba35b817fc51.jpg" alt="2 In 1 Wiki Skin Polish | Exfoliating & Brightening Face and Body Scrub (237ml)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/2-in-1-wiki-skin-polish-exfoliating-brightening-face-and-body-scrub-237ml-1378.html'" role="link" aria-label="View details for 2 In 1 Wiki Skin Polish | Exfoliating & Brightening Face and Body Scrub (237ml)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/cbf504997b850ea1fd48ba35b817fc51.jpg" alt="Image of 2 In 1 Wiki Skin Polish | Exfoliating & Brightening Face and Body Scrub (237ml)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">2 In 1 Wiki Skin Polish | Exfoliating & Brightening Face and Body Scrub (237ml)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 332</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 535</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 535</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/shape-it-anti-cellulite-slimming-cream-firming-skin-tightening-body-cream-100ml-1381.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/b34ef0a30834f3be97d38880aaf749f3.mp4" alt="Shape It Anti-Cellulite Slimming Cream | Firming & Skin Tightening Body Cream (100ml)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/shape-it-anti-cellulite-slimming-cream-firming-skin-tightening-body-cream-100ml-1381.html'" role="link" aria-label="View details for Shape It Anti-Cellulite Slimming Cream | Firming & Skin Tightening Body Cream (100ml)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/b34ef0a30834f3be97d38880aaf749f3.mp4" alt="Image of Shape It Anti-Cellulite Slimming Cream | Firming & Skin Tightening Body Cream (100ml)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Shape It Anti-Cellulite Slimming Cream | Firming & Skin Tightening Body Cream (100ml)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 388</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 625</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 625</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/arencia-vitamin-c-booster-shot-brightening-skin-radiance-serum-30ml-1384.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/584459310eb3f2a67ea9fbb821b0d49a.mp4" alt="Arencia Vitamin C Booster Shot | Brightening & Skin Radiance Serum (30ml)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/arencia-vitamin-c-booster-shot-brightening-skin-radiance-serum-30ml-1384.html'" role="link" aria-label="View details for Arencia Vitamin C Booster Shot | Brightening & Skin Radiance Serum (30ml)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/584459310eb3f2a67ea9fbb821b0d49a.mp4" alt="Image of Arencia Vitamin C Booster Shot | Brightening & Skin Radiance Serum (30ml)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Arencia Vitamin C Booster Shot | Brightening & Skin Radiance Serum (30ml)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 332</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 535</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 535</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/embryolisse-lait-cr-me-concentr-multi-function-moisturizer-nourishing-face-cream-makeup-base-75ml-1385.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/913bb70aebee2d3e9b222dc100917b6d.mp4" alt="Embryolisse Lait-Crème Concentré Multi-Function Moisturizer | Nourishing Face Cream & Makeup Base (75ml)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/embryolisse-lait-cr-me-concentr-multi-function-moisturizer-nourishing-face-cream-makeup-base-75ml-1385.html'" role="link" aria-label="View details for Embryolisse Lait-Crème Concentré Multi-Function Moisturizer | Nourishing Face Cream & Makeup Base (75ml)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/913bb70aebee2d3e9b222dc100917b6d.mp4" alt="Image of Embryolisse Lait-Crème Concentré Multi-Function Moisturizer | Nourishing Face Cream & Makeup Base (75ml)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Embryolisse Lait-Crème Concentré Multi-Function Moisturizer | Nourishing Face Cream & Makeup Base (75ml)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 405</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 653</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 653</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/south-moon-lipoma-removal-cream-herbal-extract-essence-skin-care-treatment-50g-2511.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/995222110421b0881a8a51ca5d1a8d63.mp4" alt="South Moon Lipoma Removal Cream – Herbal Extract Essence Skin Care Treatment (50g)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/south-moon-lipoma-removal-cream-herbal-extract-essence-skin-care-treatment-50g-2511.html'" role="link" aria-label="View details for South Moon Lipoma Removal Cream – Herbal Extract Essence Skin Care Treatment (50g)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/995222110421b0881a8a51ca5d1a8d63.mp4" alt="Image of South Moon Lipoma Removal Cream – Herbal Extract Essence Skin Care Treatment (50g)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">South Moon Lipoma Removal Cream – Herbal Extract Essence Skin Care Treatment (50g)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 297</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 479</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 479</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/full-heel-pain-anti-crack-silicone-set-anti-crack-full-length-socks-1-pair-3893.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/39ec5afdb38ce02f8ceb36bc260699e7.mp4" alt="Full Heel Pain Anti Crack Silicone Set Anti Crack Full Length Socks – 1 Pair" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/full-heel-pain-anti-crack-silicone-set-anti-crack-full-length-socks-1-pair-3893.html'" role="link" aria-label="View details for Full Heel Pain Anti Crack Silicone Set Anti Crack Full Length Socks – 1 Pair" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/39ec5afdb38ce02f8ceb36bc260699e7.mp4" alt="Image of Full Heel Pain Anti Crack Silicone Set Anti Crack Full Length Socks – 1 Pair" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Full Heel Pain Anti Crack Silicone Set Anti Crack Full Length Socks – 1 Pair</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 350</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 564</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 564</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/half-heel-pain-anti-crack-silicone-set-unisex-anti-crack-pain-relief-01-pair-3894.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/49aeb348f3e4281028725b385f8972e7.mp4" alt="Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Relief - 01 Pair" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/half-heel-pain-anti-crack-silicone-set-unisex-anti-crack-pain-relief-01-pair-3894.html'" role="link" aria-label="View details for Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Relief - 01 Pair" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/49aeb348f3e4281028725b385f8972e7.mp4" alt="Image of Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Relief - 01 Pair" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Relief - 01 Pair</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 193</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 311</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 311</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/1-pair-reusable-silicone-spa-gel-socks-for-dry-feet-and-cracked-heel-treatment-moisturizing-hydrating-softening-and-skin-smoothing-overnight-foot-care-random-color-3932.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/66ef4e2fbe4a9f253969eb511a3eda12.mp4" alt="1 Pair Reusable Silicone Spa Gel Socks For Dry Feet And Cracked Heel Treatment – Moisturizing Hydrating Softening And Skin Smoothing Overnight Foot Care (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/1-pair-reusable-silicone-spa-gel-socks-for-dry-feet-and-cracked-heel-treatment-moisturizing-hydrating-softening-and-skin-smoothing-overnight-foot-care-random-color-3932.html'" role="link" aria-label="View details for 1 Pair Reusable Silicone Spa Gel Socks For Dry Feet And Cracked Heel Treatment – Moisturizing Hydrating Softening And Skin Smoothing Overnight Foot Care (Random Color)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/66ef4e2fbe4a9f253969eb511a3eda12.mp4" alt="Image of 1 Pair Reusable Silicone Spa Gel Socks For Dry Feet And Cracked Heel Treatment – Moisturizing Hydrating Softening And Skin Smoothing Overnight Foot Care (Random Color)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">1 Pair Reusable Silicone Spa Gel Socks For Dry Feet And Cracked Heel Treatment – Moisturizing Hydrating Softening And Skin Smoothing Overnight Foot Care (Random Color)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 675</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1087</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1087</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/cerave-hydrating-skin-polish-gentle-exfoliator-for-smoother-healthier-skin-best-quality-hydrating-skin-polish-4345.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/e0d09c460e50a13404a4e7277acf1618.jpg" alt="CeraVe Hydrating Skin Polish – Gentle Exfoliator for Smoother, Healthier Skin | Best Quality Hydrating Skin Polish" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/cerave-hydrating-skin-polish-gentle-exfoliator-for-smoother-healthier-skin-best-quality-hydrating-skin-polish-4345.html'" role="link" aria-label="View details for CeraVe Hydrating Skin Polish – Gentle Exfoliator for Smoother, Healthier Skin | Best Quality Hydrating Skin Polish" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/e0d09c460e50a13404a4e7277acf1618.jpg" alt="Image of CeraVe Hydrating Skin Polish – Gentle Exfoliator for Smoother, Healthier Skin | Best Quality Hydrating Skin Polish" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">CeraVe Hydrating Skin Polish – Gentle Exfoliator for Smoother, Healthier Skin | Best Quality Hydrating Skin Polish</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 405</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 653</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 653</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/glowrify-eyelight-serum-10ml-dark-circle-remover-under-eye-brightening-serum-4353.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758027353-68c95e59736f4-imgi_44_Glowrify_Eyelight_Serum_for_Dark_Circles_and_Puffy_Eyes_-_10_ml_Bottle3.jpg" alt="Glowrify Eyelight Serum 10ml – Dark Circle Remover & Under Eye Brightening Serum" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/glowrify-eyelight-serum-10ml-dark-circle-remover-under-eye-brightening-serum-4353.html'" role="link" aria-label="View details for Glowrify Eyelight Serum 10ml – Dark Circle Remover & Under Eye Brightening Serum" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758027353-68c95e59736f4-imgi_44_Glowrify_Eyelight_Serum_for_Dark_Circles_and_Puffy_Eyes_-_10_ml_Bottle3.jpg" alt="Image of Glowrify Eyelight Serum 10ml – Dark Circle Remover & Under Eye Brightening Serum" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Glowrify Eyelight Serum 10ml – Dark Circle Remover & Under Eye Brightening Serum</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 406</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 654</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 654</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/windproof-anti-dust-full-face-masks-cycling-ski-breathable-masks-eye-hd-anti-fog-goggles-hood-cover-winter-warm-hat-caps-6762.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/e95ff569105d7cadfffe9d4a4737c8ce.jpg_2200x2200q80.jpg_.webp" alt="Windproof Anti Dust Full Face Masks Cycling Ski Breathable Masks Eye HD Anti Fog Goggles Hood Cover Winter Warm Hat Caps" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/windproof-anti-dust-full-face-masks-cycling-ski-breathable-masks-eye-hd-anti-fog-goggles-hood-cover-winter-warm-hat-caps-6762.html'" role="link" aria-label="View details for Windproof Anti Dust Full Face Masks Cycling Ski Breathable Masks Eye HD Anti Fog Goggles Hood Cover Winter Warm Hat Caps" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/e95ff569105d7cadfffe9d4a4737c8ce.jpg_2200x2200q80.jpg_.webp" alt="Image of Windproof Anti Dust Full Face Masks Cycling Ski Breathable Masks Eye HD Anti Fog Goggles Hood Cover Winter Warm Hat Caps" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Windproof Anti Dust Full Face Masks Cycling Ski Breathable Masks Eye HD Anti Fog Goggles Hood Cover Winter Warm Hat Caps</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 734</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1182</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1182</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/ice-face-roller-comfortable-to-grip-skin-care-beauty-ice-face-roller-mold-random-color-8396.html'">
-                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
-                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/71XgzADxElL._SY450_.jpg" alt="Ice Face Roller Comfortable to Grip Skin Care Beauty Ice Face Roller Mold- (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/ice-face-roller-comfortable-to-grip-skin-care-beauty-ice-face-roller-mold-random-color-8396.html'" role="link" aria-label="View details for Ice Face Roller Comfortable to Grip Skin Care Beauty Ice Face Roller Mold- (Random Color)" tabindex="0">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-200">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/71XgzADxElL._SY450_.jpg" alt="Image of Ice Face Roller Comfortable to Grip Skin Care Beauty Ice Face Roller Mold- (Random Color)" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
+                        <span class="text-[10px] font-bold text-teal-700 uppercase tracking-wider mb-1">Health & Beauty > Skincare</span>
                         <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Ice Face Roller Comfortable to Grip Skin Care Beauty Ice Face Roller Mold- (Random Color)</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
                                 <span class="text-lg md:text-xl font-black text-gray-900">Rs 1043</span>
-                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1680</span>
+                                <span class="text-xs text-gray-500 font-bold line-through">Rs 1680</span>
                             </div>
-                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                            <div class="block text-center bg-teal-50 text-teal-800 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-200 hover:bg-teal-100 transition" aria-hidden="true">
                                 <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div></div>
+    </main> <!-- End of Main Landmark -->
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-600">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400" aria-hidden="true"></i> ASM VEO</h3>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Visit our Facebook page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Visit our Instagram page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400"></i> CEO: Ali Abbas</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400"></i> ASM Digital Solutions</li>
-                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-500 text-lg"></i> <a href="https://wa.me/923425478683" class="hover:text-white transition">0342 54 786 83</a></li>
+                <h3 class="text-lg font-bold mb-4 text-white">Management & Contact</h3>
+                <ul class="space-y-3 text-gray-300 text-sm">
+                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400" aria-hidden="true"></i> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400" aria-hidden="true"></i> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400 text-lg" aria-hidden="true"></i> <a href="https://wa.me/923425478683" aria-label="Contact us on WhatsApp at 0342 54 786 83" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-teal-400">0342 54 786 83</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
-                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2"></i> Easy Return Policy</p>
-                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+                <h3 class="text-lg font-bold mb-4 text-white">Safe & Secure</h3>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2" aria-hidden="true"></i> Cash on Delivery Available</p>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2" aria-hidden="true"></i> Easy Return Policy</p>
+                <p class="text-gray-300 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2" aria-hidden="true"></i> 100% Secure Checkout</p>
             </div>
         </div>
         <div class="border-t border-gray-800 text-center pt-6">
-            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+            <p class="text-gray-400 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
