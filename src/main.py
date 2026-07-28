@@ -22,7 +22,6 @@ def generate_pakistani_names():
                   "Baig", "Mirza", "Hashmi", "Tariq", "Ahmed", "Iqbal", "Hussain", "Aslam", "Akram", "Yousaf",
                   "Shah", "Rana", "Cheema", "Tipu", "Afridi", "Khattak", "Wazir", "Mehmood", "Sattar"]
     
-    # Instantly generate all combinations (No while loop, No hanging)
     all_names = [f"{f} {l}" for f in first_names for l in last_names]
     random.shuffle(all_names)
     return all_names
@@ -248,7 +247,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             body {{ background-image: linear-gradient(180deg, #ffffff 30px, #01411C 30px); }}
         }}
         
-        .product-card {{ transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }}
+        /* PERFORMANCE BOOST: Skip rendering off-screen elements */
+        .product-card {{ transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); content-visibility: auto; contain-intrinsic-size: 400px; }}
         .product-card:hover {{ transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(1, 65, 28, 0.2); }}
         .image-zoom img {{ transition: transform 0.5s ease; }}
         .product-card:hover .image-zoom img {{ transform: scale(1.1); }}
@@ -368,6 +368,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             if (cartIcon) {{ cartIcon.classList.add('scale-125'); setTimeout(() => cartIcon.classList.remove('scale-125'), 200); }}
         }}
 
+        let searchLoaded = false;
+        function loadSearchData() {{
+            if(searchLoaded) return;
+            searchLoaded = true;
+            let script = document.createElement('script');
+            script.src = '/search-data.js';
+            document.head.appendChild(script);
+        }}
+
         function executeSearch() {{
             let val = document.getElementById('searchInput').value;
             if(val.trim() !== "") window.location.href = '/index.html?search=' + encodeURIComponent(val);
@@ -407,6 +416,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('quickViewModal').classList.remove('flex');
         }}
 
+        // Mobile Categories Toggle
+        function toggleMobileCats() {{
+            let menu = document.getElementById('mobileCatMenu');
+            menu.classList.toggle('hidden');
+        }}
+
         // INIT
         window.onload = function() {{
             updateCartBadge();
@@ -442,6 +457,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             }}
             window.addEventListener('scroll', checkReveals);
             checkReveals();
+
+            // Lazy load search data only when user clicks search
+            let searchInput = document.getElementById('searchInput');
+            if(searchInput) {{
+                searchInput.addEventListener('focus', loadSearchData);
+            }}
         }};
 
         function acceptCookies() {{
@@ -462,9 +483,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                             {cat_links}
                         </div>
                     </div>
-                    <a href="/about.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-info-circle mr-1"></i> About</a>
-                    <a href="/contact.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-envelope mr-1"></i> Contact</a>
-                    <a href="/faq.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-question-circle mr-1"></i> FAQ</a>
+                    <!-- Mobile Categories Button -->
+                    <button onclick="toggleMobileCats()" class="md:hidden hover:text-gray-300 transition font-semibold focus:outline-none"><i class="fas fa-list mr-1"></i> Categories</button>
+                    <a href="/about.html" class="hover:text-gray-300 transition font-semibold hidden md:inline"><i class="fas fa-info-circle mr-1"></i> About</a>
+                    <a href="/contact.html" class="hover:text-gray-300 transition font-semibold hidden md:inline"><i class="fas fa-envelope mr-1"></i> Contact</a>
+                    <a href="/faq.html" class="hover:text-gray-300 transition font-semibold hidden md:inline"><i class="fas fa-question-circle mr-1"></i> FAQ</a>
                 </div>
                 <div class="flex items-center gap-3">
                     <button onclick="toggleDarkMode()" class="hover:text-gray-300 transition" aria-label="Toggle Dark Mode"><i class="fas fa-moon dark-mode-icon"></i></button>
@@ -473,10 +496,25 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             </div>
         </div>
 
+        <!-- Mobile Categories Dropdown Menu -->
+        <div id="mobileCatMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+            <div class="container mx-auto px-4 py-2 grid grid-cols-2 gap-2 max-h-60 overflow-y-auto">
+                {''.join([f'<a href="/category/{make_slug(cat)}.html" class="block py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-[#01411C] hover:text-white px-2 rounded">{cat}</a>' for cat in categories_list])}
+            </div>
+        </div>
+
         <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
-            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-[#01411C] dark:text-white tracking-tight flex items-center gap-2" aria-label="ASM VEO Home">
-                <div class="bg-[#01411C] text-white p-2 rounded-lg shadow-md" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
-                ASM VEO
+            <a href="/index.html" class="flex items-center gap-2" aria-label="ASM VEO Home">
+                <!-- PREMIUM ASM VEO LOGO -->
+                <svg width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" fill="#01411C"></circle>
+                    <path d="M65 35 A 25 25 0 1 0 65 65 A 20 20 0 1 1 65 35 Z" fill="#ffffff"></path>
+                    <text x="50" y="58" font-family="Arial" font-size="24" font-weight="900" fill="#01411C" text-anchor="middle">AV</text>
+                </svg>
+                <div class="flex flex-col leading-none">
+                    <span class="text-2xl font-extrabold text-[#01411C] dark:text-white tracking-tight">ASM VEO</span>
+                    <span class="text-[10px] tracking-widest text-gray-500 dark:text-gray-400 font-bold">PAKISTAN</span>
+                </div>
             </a>
             
             <div class="flex-1 min-w-[200px] max-w-xl mx-0 md:mx-8 relative">
@@ -514,7 +552,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
     <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-2xl border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-50">
         <a href="/index.html" class="flex flex-col items-center text-[#01411C] text-xs font-bold"><i class="fas fa-home text-lg mb-1"></i> Home</a>
-        <a href="/index.html#products" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold"><i class="fas fa-th-large text-lg mb-1"></i> Categories</a>
+        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold"><i class="fas fa-th-large text-lg mb-1"></i> Categories</button>
         <a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
             <i class="fas fa-shopping-cart text-lg mb-1"></i> Cart
             <span class="cart-badge absolute -top-1 right-2 bg-red-500 text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
@@ -578,7 +616,14 @@ def get_html_footer():
     <footer class="bg-[#01411C] text-white mt-16 pt-16 pb-20 md:pb-8 border-t-4 border-white">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-3xl font-extrabold mb-4 flex items-center gap-2 text-white"><i class="fas fa-shopping-bag text-white" aria-hidden="true"></i> ASM VEO</h3>
+                <h3 class="text-3xl font-extrabold mb-4 flex items-center gap-2 text-white">
+                    <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="48" fill="#ffffff"></circle>
+                        <path d="M65 35 A 25 25 0 1 0 65 65 A 20 20 0 1 1 65 35 Z" fill="#01411C"></path>
+                        <text x="50" y="58" font-family="Arial" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle">AV</text>
+                    </svg>
+                    ASM VEO
+                </h3>
                 <p class="text-gray-300 text-sm leading-relaxed mb-6 pr-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide Cash on Delivery, 7-day return policy, and a 100% secure shopping experience.</p>
                 <div class="flex gap-4 mb-6">
                     <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#01411C] transition text-white"><i class="fab fa-facebook-f"></i></a>
@@ -667,7 +712,6 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     stock_left = random.randint(3, 20)
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
     
-    # Safe JS string escaping (outside f-string to prevent SyntaxError)
     escaped_name = prod['name'].replace("'", "\\'")
     escaped_desc = prod['seo_desc'].replace("'", "\\'")
     
@@ -1053,7 +1097,6 @@ def process_woocommerce_csv():
         stock_left = random.randint(3, 15)
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
         
-        # Safe JS escape outside f-string
         escaped_name = prod['name'].replace("'", "\\'")
         
         prod_html += f"""
@@ -1087,7 +1130,7 @@ def process_woocommerce_csv():
                     
                     <div class="flex items-center gap-2 mb-6 text-sm">
                         <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full font-bold"><i class="fas fa-fire"></i> Only {stock_left} left!</span>
-                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold"><i class="fas fa-truck"></i> Delivery by {delivery_date}</span>
+                        <span class="bg-green-100 text-green-700 px=3 py-1 rounded-full font-bold"><i class="fas fa-truck"></i> Delivery by {delivery_date}</span>
                     </div>
                     
                     <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-6">{prod['full_desc'][:500] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
@@ -1213,14 +1256,21 @@ def process_woocommerce_csv():
     home_html = get_html_header("Home - Premium Online Shopping in Pakistan", categories_list,
                                  "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
     
-    # Hero Carousel Slider with Pakistani Flag Theme
+    # Hero Carousel Slider with 14 August Banners (2s Auto-Rotate)
     home_html += """
     <div id="heroCarousel" class="relative w-full h-[300px] md:h-[450px] overflow-hidden shadow-xl">
         <div class="carousel-track h-full">
-            <!-- Slide 1 -->
+            <!-- Slide 1: 14 August Independence Day -->
+            <div class="carousel-slide h-full bg-gradient-to-r from-[#01411C] to-[#002a13] flex items-center p-6 md:p-16 text-white relative">
+                <div class="z-10 max-w-lg">
+                    <span class="bg-white text-[#01411C] text-xs font-black px-3 py-1 rounded-full">14 AUGUST SALE</span>
+                    <h2 class="text-3xl md:text-6xl font-extrabold mt-4 mb-4 leading-tight">Independence Day<br>Mega Sale!</h2>
+                    <p class="text-base md:text-lg mb-6 text-gray-200">Celebrate 14 August with Flat 20% OFF. Use code: JASHAN20 at checkout.</p>
+                    <a href="#products" class="bg-white text-[#01411C] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition inline-flex items-center gap-2"><i class="fas fa-shopping-bag"></i> Shop Now</a>
+                </div>
+            </div>
+            <!-- Slide 2: Mega Sale -->
             <div class="carousel-slide h-full animated-bg flex items-center p-6 md:p-16 text-white relative">
-                <div class="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
-                <div class="absolute bottom-10 left-10 w-48 h-48 bg-white/5 rounded-full animate-float" style="animation-delay: 1s;"></div>
                 <div class="z-10 max-w-lg">
                     <span class="bg-white text-[#01411C] text-xs font-black px-3 py-1 rounded-full">MEGA SALE</span>
                     <h2 class="text-3xl md:text-6xl font-extrabold mt-4 mb-4 leading-tight">Flat 50% OFF<br>Premium Products</h2>
@@ -1228,25 +1278,14 @@ def process_woocommerce_csv():
                     <a href="#products" class="bg-white text-[#01411C] px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition inline-flex items-center gap-2"><i class="fas fa-shopping-bag"></i> Shop Now</a>
                 </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="carousel-slide h-full bg-gray-900 flex items-center p-6 md:p-16 text-white relative">
-                <div class="z-10 max-w-lg">
-                    <span class="bg-[#01411C] text-white text-xs font-black px-3 py-1 rounded-full">NEW ARRIVALS</span>
-                    <h2 class="text-3xl md:text-6xl font-extrabold mt-4 mb-4 leading-tight">Latest Gadgets<br>& Accessories</h2>
-                    <p class="text-base md:text-lg mb-6 text-gray-300">100% Genuine products delivered to your doorstep nationwide.</p>
-                    <a href="#products" class="bg-[#01411C] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#002a13] transition inline-flex items-center gap-2"><i class="fas fa-bolt"></i> Explore Now</a>
-                </div>
-                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Gadgets" class="absolute right-0 top-0 h-full w-1/2 object-cover opacity-30 md:opacity-100 hidden md:block">
-            </div>
-            <!-- Slide 3 -->
+            <!-- Slide 3: 14 August Green & White -->
             <div class="carousel-slide h-full bg-gradient-to-r from-gray-900 to-gray-800 flex items-center p-6 md:p-16 text-white relative">
                 <div class="z-10 max-w-lg">
-                    <span class="bg-white text-gray-900 text-xs font-black px-3 py-1 rounded-full">EXCLUSIVE DEALS</span>
-                    <h2 class="text-3xl md:text-6xl font-extrabold mt-4 mb-4 leading-tight">Premium Fashion<br>Collection 2026</h2>
-                    <p class="text-base md:text-lg mb-6 text-gray-300">Trendy clothes & accessories at unbeatable prices in Pakistan.</p>
-                    <a href="#products" class="bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition inline-flex items-center gap-2"><i class="fas fa-tshirt"></i> Browse Fashion</a>
+                    <span class="bg-[#01411C] text-white text-xs font-black px-3 py-1 rounded-full">PAKISTAN ZINDABAD</span>
+                    <h2 class="text-3xl md:text-6xl font-extrabold mt-4 mb-4 leading-tight">Green & White<br>Exclusive Deals</h2>
+                    <p class="text-base md:text-lg mb-6 text-gray-300">Special discounts on top brands to celebrate our Independence Day.</p>
+                    <a href="#products" class="bg-[#01411C] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#002a13] transition inline-flex items-center gap-2"><i class="fas fa-bolt"></i> Explore Now</a>
                 </div>
-                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Fashion" class="absolute right-0 top-0 h-full w-1/2 object-cover opacity-30 md:opacity-100 hidden md:block">
             </div>
         </div>
         <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/60 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
@@ -1275,7 +1314,7 @@ def process_woocommerce_csv():
         function goToSlide(i) { slideIndex = i; updateCarousel(); }
         
         updateCarousel();
-        setInterval(nextSlide, 5000);
+        setInterval(nextSlide, 2000); // 2 seconds auto-rotate
     </script>
     """
 
@@ -1498,7 +1537,6 @@ def process_woocommerce_csv():
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
         """
         
-        # OPTIMIZATION: Render only 4 products per category on home page
         for idx, prod in enumerate(prods[:4]):
             home_html += generate_product_card(prod, lazy=(idx >= 2))
             total_rendered_products += 1
@@ -1523,12 +1561,15 @@ def process_woocommerce_csv():
     </div>
     """
     
-    # PERFORMANCE FIX: Load search data from external JS file
+    # PERFORMANCE FIX: Load search data dynamically when user searches
     home_script = """
-    <script src="/search-data.js" defer></script>
     <script>
         function performSearch(query) {
-            if (typeof searchIndex === 'undefined') return; // Wait for search-data.js to load
+            if (typeof searchIndex === 'undefined') {
+                // Wait for search-data.js to load if not loaded yet
+                setTimeout(() => performSearch(query), 500);
+                return;
+            }
             
             query = query.toLowerCase().trim();
             if (!query) {
@@ -1583,7 +1624,6 @@ def process_woocommerce_csv():
             let resultsDiv = document.createElement('div');
             resultsDiv.innerHTML = html;
             let srSection = document.getElementById('searchResultsSection');
-            // Clear previous results except heading and count
             let elements = srSection.children;
             for(let i = elements.length - 1; i >= 2; i--) {
                 srSection.removeChild(elements[i]);
@@ -1595,8 +1635,8 @@ def process_woocommerce_csv():
         const searchQuery = urlParams.get('search');
         if (searchQuery) {
             document.getElementById('searchInput').value = searchQuery;
-            // Delay search to ensure search-data.js is loaded
-            setTimeout(() => performSearch(searchQuery), 500);
+            loadSearchData(); // Load JS file first
+            setTimeout(() => performSearch(searchQuery), 1000); // Then search
         }
         
         function renderRecentlyViewed() {
@@ -1631,11 +1671,54 @@ def process_woocommerce_csv():
     with open("output/index.html", "w", encoding="utf-8") as f:
         f.write(home_html)
 
-    # ================= CHECKOUT PAGE =================
-    pak_cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Faisalabad", "Multan", 
-                  "Peshawar", "Quetta", "Gujranwala", "Sialkot", "Hyderabad", "Bahawalpur", 
-                  "Sargodha", "Sukkur", "Mardan", "Gujrat", "Larkana", "Kasur", "Rahim Yar Khan", "Other"]
-    city_options = "".join([f"<option value='{city}'>{city}</option>" for city in pak_cities])
+    # ================= CHECKOUT PAGE (TEHSILS DATA) =================
+    # Major Districts and Tehsils of Pakistan for Datalist
+    pak_tehsils = [
+        "Karachi", "Lahore", "Faisalabad", "Rawalpindi", "Multan", "Hyderabad", "Gujranwala", "Peshawar", "Quetta", "Islamabad",
+        "Bahawalpur", "Sargodha", "Sialkot", "Sukkur", "Larkana", "Sheikhupura", "Bhimber", "Mirpur", "Muzaffarabad", "Kotli",
+        "Bannu", "Charsadda", "Mardan", "Nowshera", "Swat", "Dir", "Chitral", "Abbottabad", "Mansehra", "Haripur",
+        "Kohat", "Dera Ismail Khan", "Tank", "Paharpur", "Lakki Marwat", "Karak", "Hangu", "Kurram", "Orakzai", "Khyber",
+        "Mohmand", "Bajaur", "Waziristan", "Dera Ghazi Khan", "Rajanpur", "Layyah", "Muzaffargarh", "Bhakkar", "Khushab", "Jhelum",
+        "Chakwal", "Attock", "Talagang", "Pind Dadan Khan", "Murree", "Kallar Syedan", "Gujar Khan", "Kahuta", "Kotli Sattian", "Taxila",
+        "Wah Cantt", "Hasan Abdal", "Fateh Jang", "Jand", "Pindi Gheb", "Dina", "Sohawa", "Dudial", "Mangla", "Darya Khan",
+        "Mianwali", "Isakhel", "Piplan", "Kamar Mushani", "Bannu", "Domel", "Akora Khattak", "Shabqadar", "Tangi", "Charsadda",
+        "Shabqadar", "Utmanzai", "Risalpur", "Rashakai", "Mardan", "Takht Bhai", "Katlang", "Rustam", "Garhi Kapura", "Mahaban",
+        "Topi", "Swabi", "Lahor", "Razar", "Chota Lahore", "Daggar", "Gadezai", "Dhok", "Nizampur", "Utla",
+        "Shangla", "Alpuri", "Chakar", "Besham", "Puran", "Makhuzai", "Achhrai", "Chail", "Barkana", "Kuzkana",
+        "Buner", "Gagra", "Daggar", "Chamla", "Khwazakhela", "Madyan", "Bahrain", "Kalam", "Matta", "Behrain",
+        "Balakot", "Naran", "Kaghan", "Shinkiari", "Oghi", "Darband", "Baffa", "Mansehra", "Dhodial", "Battagram",
+        "Allai", "Chattar", "Alo", "Banna", "Rashang", "Pattan", "Kolai", "Palas", "Jalkot", "Kandia",
+        "Dasu", "Komila", "Khalo", "Harban", "Seo", "Gowari", "Bhobat", "Chilas", "Darel", "Tangir",
+        "Gilgit", "Skardu", "Hunza", "Nagar", "Ghizer", "Yasin", "Gupis", "Puniyal", "Ishkoman", "Yarkhun",
+        "Chitral", "Mastuj", "Laspur", "Mulkhow", "Torkhow", "Khot", "Karak", "Banda Daud Shah", "Takht-e-Nasrati", "Narri",
+        "Hangu", "Tall", "Thall", "Doaba", "Muhammad Khel", "Muhammadzai", "Sandi", "Torghar", "Makhmour", "Kabul",
+        "Bajaur", "Nawagai", "Mamund", "Salarzai", "Chamarkand", "Utmankhel", "Khar", "Yousaf Khel", "Chakdara", "Timergara",
+        "Dir", "Wari", "Barawal", "Shahi", "Kalkot", "Sheringal", "Patrak", " Khal Qila", "Dir", "Wari",
+        "Quetta", "Chaman", "Pishin", "Qila Abdullah", "Zhob", "Musakhel", "Killa Saifullah", "Barkhan", "Sherani", "Musakhel",
+        "Loralai", "Duki", "Barkhan", "Musakhel", "Kingri", "Kohlu", "Mawand", "Bhambore", "Sibi", "Lehri",
+        "Dhadar", "Bhag", "Kohlu", "Mawand", "Kahan", "Tambu", "Naseerabad", "Chattar", "Tamboo", "Usta Muhammad",
+        "Jafarabad", "Sohbatpur", "Jhal Magsi", "Gandakha", "Kachi", "Dhadar", "Machh", "Bhag", "Sanni", "Shoran",
+        "Khuzdar", "Wadh", "Nal", "Surab", "Kalat", "Mangocher", "Mastung", "Dhadar", "Gunda", "Kharan",
+        "Nushki", "Washuk", "Kharan", "Mashkel", "Dalbandin", "Taufiq", "Nok Kundi", "Dalbandin", "Chagai", "Turbat",
+        "Buleda", "Dasht", "Mand", "Tump", "Kolwah", "Balnigore", "Kech", "Gwadar", "Jiwani", "Ormara",
+        "Pasni", "Pishukan", "Surbandar", "Gwadar", "Panjgur", "Paroom", "Gichk", "Rakhshan", "Washuk", "Khuzdar",
+        "Zehri", "Wadh", "Saruna", "Karkh", "Nal", "Khuzdar", "Kalat", "Mangocher", "Mastung", "Dhadar",
+        "Gwadar", "Pasni", "Ormara", "Jiwani", "Turbat", "Panjgur", "Kharan", "Nushki", "Chagai", "Dalbandin",
+        "Lahore", "Kasur", "Okara", "Sheikhupura", "Nankana Sahib", "Faisalabad", "Toba Tek Singh", "Jhang", "Chiniot", "Sargodha",
+        "Bhalwal", "Kot Momin", "Bhera", "Shahpur", "Sahiwal", "Sillanwali", "Mianwali", "Bhakkar", "Khushab", "Noorpur Thal",
+        "Muzaffargarh", "Kot Addu", "Alipur", "Jatoi", "Layyah", "Chaubara", "Karor Lal Esan", "Bhakkar", "Darya Khan", "Mankera",
+        "Dera Ghazi Khan", "Taunsa Sharif", "Rajanpur", "Rojsan", "Jampur", "Ali Pur", "Rahim Yar Khan", "Sadiqabad", "Liaquatpur", "Khanpur",
+        "Bahawalpur", "Bahawalnagar", "Haroonabad", "Chishtian", "Fort Abbas", "Hasilpur", "Khairpur Tamewali", "Yazman", "Ahmedpur East", "Bahawalpur",
+        "Multan", "Shujabad", "Jalalpur Pirwala", "Vehari", "Burewala", "Mailsi", "Pakpattan", "Arifwala", "Sahiwal", "Chichawatni",
+        "Khanewal", "Mian Channu", "Kabirwala", "Jahanian", "Lodhran", "Kahror Pakka", "Dunyapur", "Dera Ghazi Khan", "Rajanpur", "Layyah",
+        "Gujrat", "Kharian", "Sarai Alamgir", "Jhelum", "Pind Dadan Khan", "Sohawa", "Dina", "Mangla", "Mirpur", "Bhimber",
+        "Kotli", "Rawalakot", "Bagh", "Muzaffarabad", "Neelum", "Athmuqam", "Hattian Bala", "Kel", "Taobat", "Sharda",
+        "Abbaspur", "Hajira", "Forward Kahuta", "Tatrinot", "Mang", "Tolipir", "Nakyal", "Sehnsa", "Dadyal", "Chakswari",
+        "Other"
+    ]
+    # Remove duplicates and sort
+    pak_tehsils = sorted(list(set(pak_tehsils)))
+    tehsil_options = "".join([f"<option value='{t}'>{t}</option>" for t in pak_tehsils])
     delivery_date = (datetime.now() + timedelta(days=3)).strftime("%A, %b %d")
     
     checkout_html = get_html_header("Secure Checkout", categories_list, "Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO.")
@@ -1707,11 +1790,11 @@ def process_woocommerce_csv():
                             <input type="tel" name="Phone_Number" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#01411C] outline-none" required placeholder="03XXXXXXXXX">
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
-                            <select name="City" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#01411C] outline-none font-semibold" required>
-                                <option value="" disabled selected>Select City</option>
-                                {city_options}
-                            </select>
+                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City / Tehsil / District <span class="text-red-600">*</span></label>
+                            <input type="text" name="City" id="cityInput" list="pakTehsils" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#01411C] outline-none font-semibold" required placeholder="Type or select your city/tehsil">
+                            <datalist id="pakTehsils">
+                                {tehsil_options}
+                            </datalist>
                         </div>
                     </div>
                     
