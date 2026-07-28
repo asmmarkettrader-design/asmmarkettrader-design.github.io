@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Items - ASM VEO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
+        .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+        .image-zoom img { transition: transform 0.5s ease; }
+        .product-card:hover .image-zoom img { transform: scale(1.1); }
+        .category-icon { transition: all 0.3s ease; }
+        .category-item:hover .category-icon { transform: scale(1.1) rotate(5deg); background-color: #0d9488; color: white; }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-700 tracking-tight flex items-center gap-2">
+                <div class="bg-teal-600 text-white p-2 rounded-lg"><i class="fas fa-shopping-bag"></i></div>
+                ASM VEO
+            </a>
+            <div class="hidden md:flex flex-1 max-w-xl mx-8 relative">
+                <input type="text" placeholder="Search for products, brands and more..." class="w-full bg-gray-100 border border-transparent focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+                <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+            </div>
+            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2">
+                <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
+            </a>
+        </div>
+    </header>
+
+        <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">Hot Items</h1>
+                <p class="text-gray-500 mt-2 font-medium">66 Exclusive Products Found</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 pb-12">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+        
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 981</span>
+                            <a href="/checkout.html?id=7601" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 981</span>
+                            <a href="/checkout.html?id=7602" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 981</span>
+                            <a href="/checkout.html?id=7603" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">HY Boutique Lot Lining Screen Print Full Sleeve T-Shirt – Premium Quality, Smart Look, Good Stitching, Fashionable Design (Sizes M, L, XL) (Copy)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 981</span>
+                            <a href="/checkout.html?id=7604" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/content.jpeg" alt="Keratin Shampoo &amp;amp– 400ml Professional Hair Care for Smooth, Frizz-Free &amp; Shiny Hair" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Keratin Shampoo &amp;amp– 400ml Professional Hair Care for Smooth, Frizz-Free &amp; Shiny Hair</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1520</span>
+                            <a href="/checkout.html?id=8668" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-17-at-2.09.36-PM-1.jpeg" alt="Brandomatic Manicure Kit, 16-in-1, Nail Clippers, Cuticle Scissors, Nail Files, Nail Polish Remover - Random Color" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Brandomatic Manicure Kit, 16-in-1, Nail Clippers, Cuticle Scissors, Nail Files, Nail Polish Remover - Random Color</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1537</span>
+                            <a href="/checkout.html?id=8762" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-18-at-4.03.09-PM-1.jpeg" alt="Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2266</span>
+                            <a href="/checkout.html?id=8773" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 7" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 7</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2266</span>
+                            <a href="/checkout.html?id=8774" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 8" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 8</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2632</span>
+                            <a href="/checkout.html?id=8775" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 9" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 9</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2266</span>
+                            <a href="/checkout.html?id=8776" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 11" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 11</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2266</span>
+                            <a href="/checkout.html?id=8777" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 6" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Women’s Black Block Heel Sandals with Sparkling Rhinestone Straps | Elegant Party &amp; Casual Footwear - 6</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2266</span>
+                            <a href="/checkout.html?id=8778" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/0-14.jpg" alt="Mini Portable Hair Straightner / Air Smooth, Silky, Frizz-free And Healthy. (with Packing Box) (random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Mini Portable Hair Straightner / Air Smooth, Silky, Frizz-free And Healthy. (with Packing Box) (random Color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 806</span>
+                            <a href="/checkout.html?id=8932" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/S00e8ec0493784006a9f23c87c59a783ek.jpg" alt="Wi-Fi Router USB Cable for Power Bank-Sovo Router Cable 5v-12v | SRC-888" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Wi-Fi Router USB Cable for Power Bank-Sovo Router Cable 5v-12v | SRC-888</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 715</span>
+                            <a href="/checkout.html?id=9570" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/fd8ca5eb744dcd69e156d1d5784cefec.jpg_2200x2200q80.jpg_.webp" alt="Ouve (Type C) Gaming Headset For Pubg Ps5 Csgo Games Wired Earphone Microphone Volume Control In-Ear Headphone For Pc Gamer" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Ouve (Type C) Gaming Headset For Pubg Ps5 Csgo Games Wired Earphone Microphone Volume Control In-Ear Headphone For Pc Gamer</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1902</span>
+                            <a href="/checkout.html?id=9572" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/fd8ca5eb744dcd69e156d1d5784cefec.jpg_2200x2200q80.jpg_.webp" alt="Ouve (3.5mm)  Gaming Headset For Pubg Ps5 Csgo Games Wired Earphone Microphone Volume Control In-Ear Headphone For Pc Gamer" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Ouve (3.5mm)  Gaming Headset For Pubg Ps5 Csgo Games Wired Earphone Microphone Volume Control In-Ear Headphone For Pc Gamer</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1666</span>
+                            <a href="/checkout.html?id=9573" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/kitchen-digital-weight-scale-digital-kitchen-scale-digital-weight-machine-7.webp" alt="Kitchen Weight Scale Electronic Digital Kitchen Scale Digital Weight Machine Digital Weight Scale Digital Weighing Scale Digital Weighing Machine Digital Mini Scale Small Scale Weight Machine" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kitchen Weight Scale Electronic Digital Kitchen Scale Digital Weight Machine Digital Weight Scale Digital Weighing Scale Digital Weighing Machine Digital Mini Scale Small Scale Weight Machine</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1354</span>
+                            <a href="/checkout.html?id=9587" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.33.58-PM.jpeg" alt="[2 in 1] High Coverage Foundation &amp; Makeup Fixer Deal" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">[2 in 1] High Coverage Foundation &amp; Makeup Fixer Deal</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1770</span>
+                            <a href="/checkout.html?id=9720" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/3caf3f6b000ec73834bd64538a0f4401.jpg" alt="6-Piece Cute Bear Keychain Liquid Lipstick Set – Mist Matte Velvet Finish, Moisturizing Lip Stain, Waterproof &amp; Long-Lasting Lip Gloss (6 Colors)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">6-Piece Cute Bear Keychain Liquid Lipstick Set – Mist Matte Velvet Finish, Moisturizing Lip Stain, Waterproof &amp; Long-Lasting Lip Gloss (6 Colors)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1391</span>
+                            <a href="/checkout.html?id=9733" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-03-at-12.05.37-PM.jpeg" alt="Acne Deep Cleansing Foam Facial Cleanser – Exfoliating Natural Rice Water Face Wash with Glutathione for Brightening, Oil Control, and Pore Refining – Gentle Daily Skincare for Acne-Prone &amp; Sensitive Skin 120ml" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Acne Deep Cleansing Foam Facial Cleanser – Exfoliating Natural Rice Water Face Wash with Glutathione for Brightening, Oil Control, and Pore Refining – Gentle Daily Skincare for Acne-Prone &amp; Sensitive Skin 120ml</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1628</span>
+                            <a href="/checkout.html?id=10000" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2024-12-16-at-11.53.06-PM.jpeg" alt="The Health Healer Night Cream 50 Gram | Best Quality Cream | Night Cream" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">The Health Healer Night Cream 50 Gram | Best Quality Cream | Night Cream</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 368</span>
+                            <a href="/checkout.html?id=10068" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/08709b564116924942639d0c76085dbc.jpeg" alt="4-in-1 Multi USB Charging Cable – USB-C to USB-C, USB-C to Lightning, USB-A to USB-C, USB-A to Lightning | Fast PD Charger Cord for iPhone, iPad, Samsung, MacBook" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">4-in-1 Multi USB Charging Cable – USB-C to USB-C, USB-C to Lightning, USB-A to USB-C, USB-A to Lightning | Fast PD Charger Cord for iPhone, iPad, Samsung, MacBook</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 524</span>
+                            <a href="/checkout.html?id=10120" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/71vyh_guwyL.jpg" alt="Portable Mini Shaver for Men and Women Best Quality shaver for men (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Portable Mini Shaver for Men and Women Best Quality shaver for men (random color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 805</span>
+                            <a href="/checkout.html?id=10222" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/27f.webp" alt="Anti Lost child lock | Anti-Lost Wrist Link - Baby Child Anti Lost Wrist Link Safety Harness Strap Hand belt band for toddlers wristband for kids loss best for umrah and hajj, travelling purpose,safe secure (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Anti Lost child lock | Anti-Lost Wrist Link - Baby Child Anti Lost Wrist Link Safety Harness Strap Hand belt band for toddlers wristband for kids loss best for umrah and hajj, travelling purpose,safe secure (Random Color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 806</span>
+                            <a href="/checkout.html?id=10981" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-14-at-9.53.15-PM-1.jpeg" alt="Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1719</span>
+                            <a href="/checkout.html?id=11055" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - Small" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - Small</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1719</span>
+                            <a href="/checkout.html?id=11056" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - Medium" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - Medium</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1719</span>
+                            <a href="/checkout.html?id=11057" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - Large" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - Large</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1719</span>
+                            <a href="/checkout.html?id=11058" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - XL" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Imported Smart care Gel type Knee Brace  Knee Support &amp; Pain Relief for Sport Running - XL</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1719</span>
+                            <a href="/checkout.html?id=11059" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Glass-Mug-1.png" alt="Unicorn Shape 350 ML Glass Mug with Straw and Lid Creative Cartoon Children's Glass Milk Cup Juice Glass Drink Ware Water Bottle 1 pcs (Unicorn Shape )" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Unicorn Shape 350 ML Glass Mug with Straw and Lid Creative Cartoon Children's Glass Milk Cup Juice Glass Drink Ware Water Bottle 1 pcs (Unicorn Shape )</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 990</span>
+                            <a href="/checkout.html?id=11123" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WHeel-Tray-.png" alt="Portable Car Steering Wheel Tray -Multi functional Wheel Desk for Laptop Notebook and Food Steering Wheel Tray" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Portable Car Steering Wheel Tray -Multi functional Wheel Desk for Laptop Notebook and Food Steering Wheel Tray</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1902</span>
+                            <a href="/checkout.html?id=11124" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-07-at-3.55.27-PM.jpeg" alt="Pack Of 4 Temporary Hair Chalks  4 Colors Hair Dye Powder Temporary Hair Styling Chalk Salon  Hair Dye Powder Cake Washable" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 4 Temporary Hair Chalks  4 Colors Hair Dye Powder Temporary Hair Styling Chalk Salon  Hair Dye Powder Cake Washable</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1026</span>
+                            <a href="/checkout.html?id=11228" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Deal-4.jpg" alt="Pack Of 02 | WOKALI Coffee Sherbet Body Scrub 350ml And Whitening Cream 30ml  for Private Areas &amp; Private Part - Underarm" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 02 | WOKALI Coffee Sherbet Body Scrub 350ml And Whitening Cream 30ml  for Private Areas &amp; Private Part - Underarm</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 832</span>
+                            <a href="/checkout.html?id=11233" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Deal-3.jpg" alt="Pack Of 02 | WOKALI Coffee Sherbet Body Scrub 350ml And The Health Healer Night Cream50ml" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 02 | WOKALI Coffee Sherbet Body Scrub 350ml And The Health Healer Night Cream50ml</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 832</span>
+                            <a href="/checkout.html?id=11234" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Deal-5.jpg" alt="Pack Of 02 | The Health Healer Night Cream 50 ml And Whitening Cream 30ml for Private Areas &amp; Private Part – Effective Brightening for Underarms and Sensitive Area for Men and Women | 7 Days Results" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 02 | The Health Healer Night Cream 50 ml And Whitening Cream 30ml for Private Areas &amp; Private Part – Effective Brightening for Underarms and Sensitive Area for Men and Women | 7 Days Results</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 676</span>
+                            <a href="/checkout.html?id=11235" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/ceRA.jpg" alt="Cera Ve Keratin Vitamin E Repair Therapy E02 Hair Mask - 500ml | Deep Hair Repair Solution" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Cera Ve Keratin Vitamin E Repair Therapy E02 Hair Mask - 500ml | Deep Hair Repair Solution</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1455</span>
+                            <a href="/checkout.html?id=11236" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Wokali-A-2.jpg" alt="Pack Of 02 | WOKALI Coffee Sherbet Body Scrub 350ml-WKL692 - Exfoliating &amp; Hydrating Coffee Scrub" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 02 | WOKALI Coffee Sherbet Body Scrub 350ml-WKL692 - Exfoliating &amp; Hydrating Coffee Scrub</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1222</span>
+                            <a href="/checkout.html?id=11237" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2024-12-16-at-11.53.06-PM.jpeg" alt="Pack Of 2 | The Health Healer Night Cream 50ml" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Pack Of 2 | The Health Healer Night Cream 50ml</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 519</span>
+                            <a href="/checkout.html?id=11241" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2024-12-16-at-11.53.06-PM.jpeg" alt="The Health Healer Night Cream 50ml" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">The Health Healer Night Cream 50ml</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 322</span>
+                            <a href="/checkout.html?id=11242" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/5-In-1-Multifunctional-Craft-Mini-Hammer-Screwdriver-Set-Copper-Alloy-Gold-Detachable-Micro-Screwdriver-Service.jpg_350x350xz.jpg_.webp" alt="5 in1 Multifunction Mini Craft Strong Hammer and Screwdriver Hand Tools Set" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">5 in1 Multifunction Mini Craft Strong Hammer and Screwdriver Hand Tools Set</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1081</span>
+                            <a href="/checkout.html?id=11268" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Scaae83e249c046fd93e83cc5ef27eaa2z.jpg_2200x2200q80.jpg_.webp" alt="iron light weight random color Iron Pro - istri - dry iron - electric iron - best for traveling - 220volt - 1000 watt - fast and efficient - powerful pressing - for all fabrics - garment presses" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">iron light weight random color Iron Pro - istri - dry iron - electric iron - best for traveling - 220volt - 1000 watt - fast and efficient - powerful pressing - for all fabrics - garment presses</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 2541</span>
+                            <a href="/checkout.html?id=11294" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/32b818e68e25f2046be9b0196405deef.jpg_2200x2200q80.jpg_.webp" alt="Silicon Toothbrush  taxi design Portable Hand-Held Shaped Infant Soft Bristle 360 Degrees for kids (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Silicon Toothbrush  taxi design Portable Hand-Held Shaped Infant Soft Bristle 360 Degrees for kids (random color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 168</span>
+                            <a href="/checkout.html?id=11915" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/83dec3494b68090891e0aa592921fd4e.jpg" alt="Microfiber Duster for Cleaning with Telescoping Extension Pole" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Microfiber Duster for Cleaning with Telescoping Extension Pole</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1081</span>
+                            <a href="/checkout.html?id=12004" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/27f.webp" alt="Baby Child Anti Lock Wrist Safety Hand Belt Band For Travelling Purpose,safe Secure (random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Baby Child Anti Lock Wrist Safety Hand Belt Band For Travelling Purpose,safe Secure (random Color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 715</span>
+                            <a href="/checkout.html?id=12124" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-23-at-7.39.43-PM.jpeg" alt="Liru Professional Care Vitamin C+E Antioxidant Serum 30 ML" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Liru Professional Care Vitamin C+E Antioxidant Serum 30 ML</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1172</span>
+                            <a href="/checkout.html?id=12199" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/61aSVU7IVL._AC_SL1500_.jpg" alt="Makeup Brush Cleaner Machine, Electric Makeup Brush Cleaner(random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Makeup Brush Cleaner Machine, Electric Makeup Brush Cleaner(random color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1719</span>
+                            <a href="/checkout.html?id=12225" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/3-2.png" alt="(Without Box)1 PC - 360 Degree U-Shaped Baby Toothbrush Children Child Toothbrush Teethers Baby Brush Silicone Kids Teeth Oral Care Cleaning (random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">(Without Box)1 PC - 360 Degree U-Shaped Baby Toothbrush Children Child Toothbrush Teethers Baby Brush Silicone Kids Teeth Oral Care Cleaning (random color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 224</span>
+                            <a href="/checkout.html?id=12767" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/WhatsApp-Image-2024-06-15-at-4.38.31-PM.jpeg" alt="2/4 pcs LED Strip Light  For Motorcycles, Cars Waterproof LED Light Universal Fitment" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">2/4 pcs LED Strip Light  For Motorcycles, Cars Waterproof LED Light Universal Fitment</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 350</span>
+                            <a href="/checkout.html?id=13270" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="2/4 pcs LED Strip Light  For Motorcycles, Cars Waterproof LED Light Universal Fitment - 2 Pcs" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">2/4 pcs LED Strip Light  For Motorcycles, Cars Waterproof LED Light Universal Fitment - 2 Pcs</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 350</span>
+                            <a href="/checkout.html?id=13271" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="2/4 pcs LED Strip Light  For Motorcycles, Cars Waterproof LED Light Universal Fitment - 4 Pcs" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">2/4 pcs LED Strip Light  For Motorcycles, Cars Waterproof LED Light Universal Fitment - 4 Pcs</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 588</span>
+                            <a href="/checkout.html?id=13272" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/61HE5loBsOL._AC_SX569_-1.jpg" alt="Children Whale Spray Cup Sippy Bottle Cartoon Baby with Sippy Kettle Outdoor Portable Children's Cup (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Children Whale Spray Cup Sippy Bottle Cartoon Baby with Sippy Kettle Outdoor Portable Children's Cup (Random Color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1261</span>
+                            <a href="/checkout.html?id=13371" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/7.webp" alt="Mini Portable Karaoke Bluetooth Speaker with 2  Mike Audio Integrated Microphone Home Karaoke Wireless Bluetooth Speaker(Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Mini Portable Karaoke Bluetooth Speaker with 2  Mike Audio Integrated Microphone Home Karaoke Wireless Bluetooth Speaker(Random Color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 5553</span>
+                            <a href="/checkout.html?id=13430" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/HTB1NQqLU7voK1RjSZFNq6AxMVXab.webp" alt="Hot Sale Neck Massager Portable Electric Knocks Cervical Massage Shawls Pain Neck and Shoulder Multi-function Tapping Massager" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Hot Sale Neck Massager Portable Electric Knocks Cervical Massage Shawls Pain Neck and Shoulder Multi-function Tapping Massager</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 7378</span>
+                            <a href="/checkout.html?id=13968" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-23-at-10.18.50-AM-2.jpeg" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14097" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Red" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Red</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14098" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - White" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - White</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14099" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Black" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Black</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14100" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Purple" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Purple</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14101" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Dark Pink" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Dark Pink</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14102" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Light Blue" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Light Blue</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14103" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Light Pink" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Light Pink</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14104" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Dark Blue" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Dark Blue</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14105" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Light Green" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Kids Baby Fairy Wings Fashion Butterfly Wings Dress Up Party 3 pcs set (wing+Stick+ hairband) - Light Green</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 533</span>
+                            <a href="/checkout.html?id=14106" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://via.placeholder.com/500" alt="50M Brushed Gold Silver Floor Edging Waterproof Seam Wall Stickers Wall Gap Ceiling Home Decoration Self-adhesive" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">50M Brushed Gold Silver Floor Edging Waterproof Seam Wall Stickers Wall Gap Ceiling Home Decoration Self-adhesive</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 897</span>
+                            <a href="/checkout.html?id=14209" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/61HE5loBsOL._AC_SX569_-1.jpg" alt="Children Whale Spray Cup Sippy Bottle Cartoon Baby with Sippy Kettle Outdoor Portable Children's Cup (Random Color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Children Whale Spray Cup Sippy Bottle Cartoon Baby with Sippy Kettle Outdoor Portable Children's Cup (Random Color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 1354</span>
+                            <a href="/checkout.html?id=14443" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                        <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/3-2.png" alt="1 PC - 360 Degree U-Shaped Baby Toothbrush Children Child Toothbrush Teethers Baby Brush Silicone Kids Teeth Oral Care Cleaning (With Box)(random color)" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">1 PC - 360 Degree U-Shaped Baby Toothbrush Children Child Toothbrush Teethers Baby Brush Silicone Kids Teeth Oral Care Cleaning (With Box)(random color)</h3>
+                        <div class="mt-auto">
+                            <span class="text-xl font-extrabold text-teal-600 block mb-3">Rs 259</span>
+                            <a href="/checkout.html?id=14580" class="block text-center bg-gray-900 text-white py-2.5 rounded-xl text-sm font-bold hover:bg-teal-600 transition-colors shadow-md">Order via COD</a>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. We offer nationwide delivery with a secure and seamless shopping experience.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="/index.html" class="hover:text-teal-400 transition">Home</a></li>
+                    <li><a href="/checkout.html" class="hover:text-teal-400 transition">Checkout</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
+                <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 text-center pt-6">
+            <p class="text-gray-500 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
