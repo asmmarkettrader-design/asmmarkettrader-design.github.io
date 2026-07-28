@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home & Living > Furniture - ASM VEO</title>
+    <!-- Auto SEO Meta Tags -->
+    <meta name="description" content="ASM VEO - Premium Shopping in Pakistan">
+    <meta name="keywords" content="Home & Living > Furniture, buy online, Pakistan, shopping, ASM Digital Solutions, ASM VEO, cash on delivery">
+    <meta name="author" content="ASM Digital Solutions">
+    <meta name="robots" content="index, follow">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -25,110 +31,71 @@
             </a>
             
             <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
-                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
-                <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+                <button onclick="executeSearch()" class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
             </div>
             
             <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
-                <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
+                <i class="fas fa-shopping-cart"></i> <span class="hidden md:inline">Cart / Checkout</span>
             </a>
         </div>
     </header>
     
     <script>
-    function searchProducts() {
-        let input = document.getElementById('searchInput').value.toLowerCase();
-        let cards = document.getElementsByClassName('product-card');
-        for (let i = 0; i < cards.length; i++) {
-            let title = cards[i].querySelector('h3').innerText.toLowerCase();
-            if (title.includes(input)) {
-                cards[i].style.display = "";
-            } else {
-                cards[i].style.display = "none";
-            }
+    function handleSearch(e) {
+        if (e.key === 'Enter') {
+            executeSearch();
+        }
+    }
+    function executeSearch() {
+        let val = document.getElementById('searchInput').value;
+        if(val.trim() !== "") {
+            window.location.href = '/index.html?search=' + encodeURIComponent(val);
         }
     }
     </script>
 
-        <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200">
-            <div class="container mx-auto px-4">
-                <h1 class="text-3xl font-extrabold text-gray-900">Home & Living > Furniture</h1>
-                <p class="text-gray-500 mt-2 font-medium">4 Products Found</p>
+        <div class="bg-gray-100 py-10 mb-8 border-b border-gray-200">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-3xl md:text-5xl font-black text-gray-900">Home & Living > Furniture</h1>
+                <p class="text-gray-600 mt-3 font-semibold">2 Exclusive Products Available</p>
             </div>
         </div>
         <div class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/puresofa-sofa-cleaner-spray-upholstery-amp-fabric-safe-deep-cleaning-stain-remover-fast-dry-pleasant-scent-150ml-8868.html'">
-                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
-                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/puresofa-sofa-cleaner-spray-upholstery-amp-fabric-safe-deep-cleaning-stain-remover-fast-dry-pleasant-scent-150ml-5014.html'">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/ee0e41bc1090d785a355b99d1c4bf268.mp4" alt="Puresofa | Sofa Cleaner Spray | Upholstery &amp; Fabric Safe | Deep Cleaning | Stain Remover | Fast Dry | Pleasant Scent | 150ml" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Puresofa | Sofa Cleaner Spray | Upholstery &amp; Fabric Safe | Deep Cleaning | Stain Remover | Fast Dry | Pleasant Scent | 150ml</h3>
+                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Furniture</span>
+                        <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">Puresofa | Sofa Cleaner Spray | Upholstery &amp; Fabric Safe | Deep Cleaning | Stain Remover | Fast Dry | Pleasant Scent | 150ml</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 753</span>
-                                <span class="text-xs text-gray-400 line-through">Rs 579</span>
+                                <span class="text-lg md:text-xl font-black text-gray-900">Rs 753</span>
+                                <span class="text-xs text-gray-400 font-bold line-through">Rs 1213</span>
                             </div>
-                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
-                                View Details
+                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                                <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
                             </button>
                         </div>
                     </div>
                 </div>
             
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-door-fancy-amp-portable-foldable-closet-wardrobe-storage-organizer-with-shelves-foe-multi-purpose-9609.html'">
-                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
-                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
+                <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-door-fancy-amp-portable-foldable-closet-wardrobe-storage-organizer-with-shelves-foe-multi-purpose-5473.html'">
+                    <div class="image-zoom h-48 md:h-60 bg-gray-50 overflow-hidden relative border-b border-gray-100">
                         <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/2a9747e92d0111f7d440b1b6a6501cda.jpg" alt="3 Door Fancy &amp; Portable Foldable Closet Wardrobe Storage Organizer with Shelves Foe Multi Purpose" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Door Fancy &amp; Portable Foldable Closet Wardrobe Storage Organizer with Shelves Foe Multi Purpose</h3>
+                        <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-1">Home & Living > Furniture</span>
+                        <h3 class="prod-title text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Door Fancy &amp; Portable Foldable Closet Wardrobe Storage Organizer with Shelves Foe Multi Purpose</h3>
                         <div class="mt-auto">
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 8655</span>
-                                <span class="text-xs text-gray-400 line-through">Rs 6657</span>
+                                <span class="text-lg md:text-xl font-black text-gray-900">Rs 8655</span>
+                                <span class="text-xs text-gray-400 font-bold line-through">Rs 13935</span>
                             </div>
-                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-door-fancy-amp-portable-foldable-closet-wardrobe-storage-organizer-with-shelves-foe-multi-purpose-red-9610.html'">
-                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
-                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
-                        <img src="https://via.placeholder.com/500" alt="3 Door Fancy &amp; Portable Foldable Closet Wardrobe Storage Organizer with Shelves Foe Multi Purpose - Red" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Door Fancy &amp; Portable Foldable Closet Wardrobe Storage Organizer with Shelves Foe Multi Purpose - Red</h3>
-                        <div class="mt-auto">
-                            <div class="flex items-center gap-2 mb-3">
-                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 8655</span>
-                                <span class="text-xs text-gray-400 line-through">Rs 6657</span>
-                            </div>
-                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
-                                View Details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/3-door-fancy-amp-portable-foldable-closet-wardrobe-storage-organizer-with-shelves-foe-multi-purpose-brown-9611.html'">
-                    <div class="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-md z-10 shadow-md">30% OFF</div>
-                    <div class="image-zoom h-48 md:h-60 bg-gray-100 overflow-hidden relative">
-                        <img src="https://via.placeholder.com/500" alt="3 Door Fancy &amp; Portable Foldable Closet Wardrobe Storage Organizer with Shelves Foe Multi Purpose - Brown" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight mb-2 line-clamp-2">3 Door Fancy &amp; Portable Foldable Closet Wardrobe Storage Organizer with Shelves Foe Multi Purpose - Brown</h3>
-                        <div class="mt-auto">
-                            <div class="flex items-center gap-2 mb-3">
-                                <span class="text-lg md:text-xl font-extrabold text-gray-900">Rs 8655</span>
-                                <span class="text-xs text-gray-400 line-through">Rs 6657</span>
-                            </div>
-                            <button class="block text-center bg-teal-600 text-white py-2 rounded-xl text-sm font-bold hover:bg-gray-900 transition-colors w-full">
-                                View Details
+                            <button class="block text-center bg-teal-50 text-teal-700 py-2.5 rounded-xl text-sm font-bold w-full border border-teal-100">
+                                <i class="fas fa-cart-shopping mr-1"></i> Add to Cart
                             </button>
                         </div>
                     </div>
@@ -136,10 +103,14 @@
             </div></div>
     <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
             <div>
                 <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
@@ -152,6 +123,7 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
                 <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2"></i> Easy Return Policy</p>
                 <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
             </div>
         </div>

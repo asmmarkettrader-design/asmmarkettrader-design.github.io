@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Checkout - ASM VEO</title>
+    <!-- Auto SEO Meta Tags -->
+    <meta name="description" content="ASM VEO - Premium Shopping in Pakistan">
+    <meta name="keywords" content="Secure Checkout, buy online, Pakistan, shopping, ASM Digital Solutions, ASM VEO, cash on delivery">
+    <meta name="author" content="ASM Digital Solutions">
+    <meta name="robots" content="index, follow">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -25,106 +31,113 @@
             </a>
             
             <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
-                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search products..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
-                <button class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-200 focus:border-teal-500 rounded-full py-2.5 px-6 outline-none transition-all">
+                <button onclick="executeSearch()" class="absolute right-4 top-2.5 text-gray-500 hover:text-teal-600"><i class="fas fa-search text-lg"></i></button>
             </div>
             
             <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-600 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap">
-                <i class="fas fa-truck-fast"></i> <span class="hidden md:inline">Track Order</span>
+                <i class="fas fa-shopping-cart"></i> <span class="hidden md:inline">Cart / Checkout</span>
             </a>
         </div>
     </header>
     
     <script>
-    function searchProducts() {
-        let input = document.getElementById('searchInput').value.toLowerCase();
-        let cards = document.getElementsByClassName('product-card');
-        for (let i = 0; i < cards.length; i++) {
-            let title = cards[i].querySelector('h3').innerText.toLowerCase();
-            if (title.includes(input)) {
-                cards[i].style.display = "";
-            } else {
-                cards[i].style.display = "none";
-            }
+    function handleSearch(e) {
+        if (e.key === 'Enter') {
+            executeSearch();
+        }
+    }
+    function executeSearch() {
+        let val = document.getElementById('searchInput').value;
+        if(val.trim() !== "") {
+            window.location.href = '/index.html?search=' + encodeURIComponent(val);
         }
     }
     </script>
 
-    <div class="container mx-auto px-4 py-12 max-w-3xl">
-        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
-            <div class="bg-gray-900 p-8 text-center text-white relative">
-                <div class="absolute top-0 left-0 w-full h-1 bg-teal-500"></div>
-                <h1 class="text-3xl font-extrabold"><i class="fas fa-box-open mr-2 text-teal-400"></i> Cash on Delivery Checkout</h1>
-                <p class="text-gray-400 mt-2 text-sm font-medium">Please fill in your details to confirm the order.</p>
-            </div>
-            
-            <form id="checkoutForm" class="p-6 md:p-10 space-y-6">
-                <!-- Hidden subject field for Formspree Email Subject -->
-                <input type="hidden" name="_subject" value="New Order Received on ASM VEO!">
-                <input type="hidden" name="Product_Ordered" id="productField" value="Direct Checkout">
-                <input type="hidden" name="Total_Price" id="priceField" value="">
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Form Section -->
+            <div class="md:w-2/3 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="bg-gray-900 p-6 text-white relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-teal-500"></div>
+                    <h1 class="text-2xl font-extrabold"><i class="fas fa-map-marker-alt text-teal-400 mr-2"></i> Shipping Details</h1>
+                </div>
+                
+                <form id="checkoutForm" class="p-6 md:p-8 space-y-5">
+                    <input type="hidden" name="_subject" value="New Order Received on ASM VEO!">
+                    <input type="hidden" name="Product_Ordered" id="productField" value="Direct Checkout">
+                    <input type="hidden" name="Total_Price" id="priceField" value="">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
-                        <input type="text" name="Full_Name" class="w-full border-2 border-gray-200 p-3.5 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" required placeholder="e.g. Ali Abbas">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Email Address (Optional)</label>
-                        <input type="email" name="Email" class="w-full border-2 border-gray-200 p-3.5 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" placeholder="you@example.com">
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Mobile Number <span class="text-red-500">*</span></label>
-                        <input type="tel" name="Phone_Number" class="w-full border-2 border-gray-200 p-3.5 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" required placeholder="0300-XXXXXXX">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">City <span class="text-red-500">*</span></label>
-                        <select name="City" class="w-full border-2 border-gray-200 p-3.5 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" required>
-                            <option value="" disabled selected>Select your City</option>
-                            <option value='Karachi'>Karachi</option><option value='Lahore'>Lahore</option><option value='Islamabad'>Islamabad</option><option value='Rawalpindi'>Rawalpindi</option><option value='Faisalabad'>Faisalabad</option><option value='Multan'>Multan</option><option value='Peshawar'>Peshawar</option><option value='Quetta'>Quetta</option><option value='Gujranwala'>Gujranwala</option><option value='Sialkot'>Sialkot</option><option value='Hyderabad'>Hyderabad</option><option value='Bahawalpur'>Bahawalpur</option><option value='Sargodha'>Sargodha</option><option value='Other'>Other</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-bold text-gray-700 mb-2">Complete Delivery Address <span class="text-red-500">*</span></label>
-                    <textarea name="Address" rows="3" class="w-full border-2 border-gray-200 p-3.5 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" required placeholder="House No, Street Name, Area..."></textarea>
-                </div>
-                
-                <div>
-                    <label class="block text-sm font-bold text-gray-700 mb-2">Nearest Landmark (Famous Place)</label>
-                    <input type="text" name="Landmark" class="w-full border-2 border-gray-200 p-3.5 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" placeholder="e.g. Near HBL Bank / Masjid">
-                </div>
-                
-                <div class="mt-8 bg-teal-50 p-5 rounded-2xl border border-teal-100 flex flex-col gap-3">
-                    <div class="flex justify-between items-center border-b border-teal-200 pb-3">
-                        <span class="font-bold text-gray-700">Subtotal:</span>
-                        <span class="font-bold text-gray-900" id="subtotalDisplay">Rs 0</span>
-                    </div>
-                    <div class="flex justify-between items-center border-b border-teal-200 pb-3">
-                        <div class="flex items-center gap-2 text-teal-700">
-                            <i class="fas fa-truck-fast"></i> <span class="font-bold">Delivery Charges:</span>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" name="Full_Name" class="w-full border-2 border-gray-200 p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" required placeholder="e.g. Ali Abbas">
                         </div>
-                        <span class="font-bold text-teal-700">Rs 250</span>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                            <input type="email" name="Email" class="w-full border-2 border-gray-200 p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" placeholder="you@example.com">
+                        </div>
                     </div>
-                    <div class="flex justify-between items-center pt-2">
-                        <span class="font-black text-xl text-gray-900">Total to Pay (COD):</span>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Mobile Number <span class="text-red-500">*</span></label>
+                            <input type="tel" name="Phone_Number" class="w-full border-2 border-gray-200 p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" required placeholder="0300-XXXXXXX">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">City <span class="text-red-500">*</span></label>
+                            <select name="City" class="w-full border-2 border-gray-200 p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none font-semibold" required>
+                                <option value="" disabled selected>Select your City</option>
+                                <option value='Karachi'>Karachi</option><option value='Lahore'>Lahore</option><option value='Islamabad'>Islamabad</option><option value='Rawalpindi'>Rawalpindi</option><option value='Faisalabad'>Faisalabad</option><option value='Multan'>Multan</option><option value='Peshawar'>Peshawar</option><option value='Quetta'>Quetta</option><option value='Gujranwala'>Gujranwala</option><option value='Sialkot'>Sialkot</option><option value='Hyderabad'>Hyderabad</option><option value='Bahawalpur'>Bahawalpur</option><option value='Sargodha'>Sargodha</option><option value='Other'>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Complete Delivery Address <span class="text-red-500">*</span></label>
+                        <textarea name="Address" rows="2" class="w-full border-2 border-gray-200 p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" required placeholder="House No, Street Name, Area..."></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Nearest Landmark</label>
+                        <input type="text" name="Landmark" class="w-full border-2 border-gray-200 p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-teal-500 outline-none" placeholder="e.g. Near HBL Bank">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Order Summary Section -->
+            <div class="md:w-1/3">
+                <div class="bg-teal-50 rounded-3xl shadow-lg border border-teal-100 p-6 sticky top-24">
+                    <h2 class="text-xl font-black text-gray-900 mb-4 border-b border-teal-200 pb-3">Order Summary</h2>
+                    <div class="space-y-3 mb-6 text-sm font-semibold text-gray-700">
+                        <div class="flex justify-between">
+                            <span>Subtotal</span>
+                            <span id="subtotalDisplay">Rs 0</span>
+                        </div>
+                        <div class="flex justify-between text-teal-700">
+                            <span>Delivery Charges</span>
+                            <span>Rs 250</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center border-t border-teal-200 pt-4 mb-6">
+                        <span class="font-black text-lg text-gray-900">Total (COD)</span>
                         <span class="font-black text-2xl text-teal-700" id="grandTotalDisplay">Rs 250</span>
                     </div>
+                    <button type="submit" form="checkoutForm" id="submitBtn" class="w-full bg-gray-900 text-white font-black py-4 px-4 rounded-xl hover:bg-teal-600 transition-all duration-300 shadow-xl text-lg transform hover:-translate-y-1">
+                        <i class="fas fa-check-circle mr-2"></i> Confirm Order
+                    </button>
+                    
+                    <div class="mt-6 flex flex-col gap-2 text-xs text-gray-500 font-semibold text-center">
+                        <span class="flex justify-center items-center gap-1"><i class="fas fa-money-bill-wave text-green-500"></i> Pay in Cash upon delivery</span>
+                        <span class="flex justify-center items-center gap-1"><i class="fas fa-shield-alt text-teal-500"></i> Your details are 100% secure</span>
+                    </div>
                 </div>
-
-                <button type="submit" id="submitBtn" class="w-full bg-teal-600 text-white font-black py-4 px-4 rounded-2xl hover:bg-gray-900 transition-all duration-300 shadow-xl text-lg mt-6 transform hover:-translate-y-1">
-                    Confirm Order Now
-                </button>
-            </form>
+            </div>
         </div>
     </div>
     
     <script>
-        // URL se product aur price nikal kar form mein dalna
         const urlParams = new URLSearchParams(window.location.search);
         const productName = urlParams.get('product');
         const productPrice = urlParams.get('price');
@@ -136,11 +149,10 @@
             document.getElementById('grandTotalDisplay').innerText = "Rs " + (parseInt(productPrice) + 250);
         }
 
-        // Formspree AJAX Submission Logic
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing Order...';
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing...';
             btn.disabled = true;
 
             const formData = new FormData(this);
@@ -155,12 +167,12 @@
                     window.location.href = '/index.html';
                 } else {
                     alert('Oops! There was a problem submitting your order. Please try again.');
-                    btn.innerHTML = 'Confirm Order Now';
+                    btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Confirm Order';
                     btn.disabled = false;
                 }
             }).catch(error => {
                 alert('Network Error! Please try again.');
-                btn.innerHTML = 'Confirm Order Now';
+                btn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Confirm Order';
                 btn.disabled = false;
             });
         });
@@ -168,10 +180,14 @@
     
     <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-500">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Your premium destination for high-quality products. Nationwide Cash on Delivery with a secure shopping experience.</p>
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-500 transition"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
             <div>
                 <h3 class="text-lg font-bold mb-4">Management & Contact</h3>
@@ -184,6 +200,7 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">Safe & Secure</h3>
                 <p class="text-gray-400 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2"></i> Cash on Delivery Available</p>
+                <p class="text-gray-400 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2"></i> Easy Return Policy</p>
                 <p class="text-gray-400 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2"></i> 100% Secure Checkout</p>
             </div>
         </div>
