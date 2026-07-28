@@ -319,6 +319,8 @@ def process_woocommerce_csv():
         prod_html = get_html_header(prod['name'], categories_list, prod['seo_desc'])
         reviews_section = generate_reviews(prod['name'])
         
+        safe_name = prod['name'].replace("'", "\\'") # Fix for f-string syntax error
+        
         prod_html += f"""
         <div class="container mx-auto px-4 py-10">
             <nav class="text-sm text-gray-600 mb-6 font-semibold bg-gray-100 p-3 rounded-lg inline-block" aria-label="Breadcrumb">
@@ -349,10 +351,10 @@ def process_woocommerce_csv():
                     <p class="text-gray-700 mb-8 leading-relaxed border-t border-gray-100 pt-6">{prod['full_desc'][:400] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto">
-                        <button onclick="addToCart('{prod['name'].replace("'", "\\'")}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white text-teal-700 py-4 rounded-xl font-black text-lg border-2 border-teal-600 hover:bg-teal-50 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                        <button onclick="addToCart('{safe_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white text-teal-700 py-4 rounded-xl font-black text-lg border-2 border-teal-600 hover:bg-teal-50 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-cart-plus"></i> Add to Cart
                         </button>
-                        <button onclick="buyNow('{prod['name'].replace("'", "\\'")}', {prod['final_price']}, event)" aria-label="Buy Now" class="sm:w-1/2 bg-gray-900 text-white py-4 rounded-xl font-black text-lg hover:bg-teal-700 transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                        <button onclick="buyNow('{safe_name}', {prod['final_price']}, event)" aria-label="Buy Now" class="sm:w-1/2 bg-gray-900 text-white py-4 rounded-xl font-black text-lg hover:bg-teal-700 transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-bolt"></i> Buy Now
                         </button>
                     </div>
@@ -441,6 +443,7 @@ def process_woocommerce_csv():
         
         for idx, prod in enumerate(prods):
             img_loading = 'loading="lazy"' if total_rendered_products >= 4 else 'fetchpriority="high"'
+            safe_name = prod['name'].replace("'", "\\'") # Fix for f-string syntax error
             
             card_ui = f"""
                 <div class="product-card bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'">
@@ -457,10 +460,10 @@ def process_woocommerce_csv():
                             </div>
                             <!-- Two Buttons for Add to Cart and Buy Now -->
                             <div class="flex gap-2 w-full">
-                                <button onclick="addToCart('{prod['name'].replace("'", "\\'")}', {prod['final_price']}, '{prod['image']}', event)" class="w-1/2 bg-teal-50 text-teal-800 py-2.5 rounded-xl text-xs font-bold border border-teal-200 hover:bg-teal-100 transition flex justify-center items-center" aria-label="Add to Cart">
+                                <button onclick="addToCart('{safe_name}', {prod['final_price']}, '{prod['image']}', event)" class="w-1/2 bg-teal-50 text-teal-800 py-2.5 rounded-xl text-xs font-bold border border-teal-200 hover:bg-teal-100 transition flex justify-center items-center" aria-label="Add to Cart">
                                     <i class="fas fa-cart-plus"></i>
                                 </button>
-                                <button onclick="buyNow('{prod['name'].replace("'", "\\'")}', {prod['final_price']}, event)" class="w-1/2 bg-gray-900 text-white py-2.5 rounded-xl text-xs font-bold hover:bg-teal-700 transition text-center" aria-label="Buy Now">
+                                <button onclick="buyNow('{safe_name}', {prod['final_price']}, event)" class="w-1/2 bg-gray-900 text-white py-2.5 rounded-xl text-xs font-bold hover:bg-teal-700 transition text-center" aria-label="Buy Now">
                                     Buy Now
                                 </button>
                             </div>
@@ -658,7 +661,7 @@ def process_woocommerce_csv():
         f.write(checkout_html)
         
     generate_sitemap(sitemap_urls)
-    print("🎉 مکمل پروفیشنل ویب سائٹ، نیویگیشن، کیٹیگریز اور ایڈ ٹو کارٹ کے ساتھ تیار ہے!")
+    print("🎉 مکمل پروفیشنل ویب سائٹ تیار ہے!")
 
 if __name__ == "__main__":
     process_woocommerce_csv()
