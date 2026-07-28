@@ -11,16 +11,14 @@
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow">
     
-    <!-- Performance Boosters (Preconnect & Prefetch) -->
+    <!-- Performance Boosters -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
@@ -29,57 +27,168 @@
         .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
         .image-zoom img { transition: transform 0.5s ease; }
         .product-card:hover .image-zoom img { transform: scale(1.1); }
+        .dropdown:hover .dropdown-menu { display: block; }
     </style>
+
+    <!-- Global Cart Scripts -->
+    <script>
+        function updateCartBadge() {
+            let cart = JSON.parse(localStorage.getItem('asm_cart')) || [];
+            document.getElementById('cart-badge').innerText = cart.length;
+        }
+
+        function addToCart(name, price, image, event) {
+            if(event) event.stopPropagation();
+            let cart = JSON.parse(localStorage.getItem('asm_cart')) || [];
+            cart.push({name: name, price: price, image: image});
+            localStorage.setItem('asm_cart', JSON.stringify(cart));
+            updateCartBadge();
+            
+            // Show toast notification
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-4 right-4 bg-teal-600 text-white px-6 py-3 rounded-xl shadow-2xl z-50 transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold';
+            toast.innerHTML = `<i class="fas fa-check-circle text-xl"></i> Added to Cart!`;
+            document.body.appendChild(toast);
+            setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 300); }, 2000);
+        }
+
+        function buyNow(name, price, event) {
+            if(event) event.stopPropagation();
+            window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
+        }
+
+        function handleSearch(e) {
+            if (e.key === 'Enter') executeSearch();
+        }
+        function executeSearch() {
+            let val = document.getElementById('searchInput').value;
+            if(val.trim() !== "") window.location.href = '/index.html?search=' + encodeURIComponent(val);
+        }
+
+        window.onload = updateCartBadge;
+    </script>
 </head>
 <body class="text-gray-900">
     <!-- Navbar -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+        <!-- Top Bar for Pages & Navigation -->
+        <div class="bg-gray-900 text-white text-xs md:text-sm py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex space-x-4">
+                    <a href="/index.html" class="hover:text-teal-400 transition font-semibold"><i class="fas fa-home mr-1"></i> Home</a>
+                    <div class="relative dropdown z-50 hidden md:block">
+                        <button class="hover:text-teal-400 transition font-semibold focus:outline-none"><i class="fas fa-list mr-1"></i> Categories <i class="fas fa-chevron-down text-[10px] ml-1"></i></button>
+                        <div class="dropdown-menu absolute hidden text-gray-700 bg-white shadow-xl rounded-xl mt-1 w-48 py-2 border border-gray-100">
+                            <a href="/category/automotive.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Automotive</a>
+<a href="/category/automotive-car-accessories.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Automotive > Car Accessories</a>
+<a href="/category/automotive-motorbike-accessories.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Automotive > Motorbike Accessories</a>
+<a href="/category/baby-kids-accessories.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Baby & Kids Accessories</a>
+<a href="/category/beauty-cosmetics-nail-care-tools-.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Beauty & Cosmetics > Nail Care (Tools)</a>
+<a href="/category/bedding-linen-pillows-cushions.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Bedding & Linen > Pillows & Cushions</a>
+<a href="/category/books-stationery.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Books & Stationery</a>
+<a href="/category/books-stationery-office-supplies.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Books & Stationery > Office Supplies</a>
+<a href="/category/cameras-photography-lighting-studio-equipment.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Cameras & Photography > Lighting & Studio Equipment</a>
+<a href="/category/cleaning-organization-storage-boxes-organizers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Cleaning & Organization > Storage Boxes & Organizers</a>
+<a href="/category/electrical-supplies-bulbs.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electrical Supplies > Bulbs</a>
+<a href="/category/electronics-appliances.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electronics & Appliances</a>
+<a href="/category/electronics-appliances-audio-entertainment.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electronics & Appliances > Audio & Entertainment</a>
+<a href="/category/electronics-appliances-cameras-photography.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electronics & Appliances > Cameras & Photography</a>
+<a href="/category/electronics-appliances-computers-laptops.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electronics & Appliances > Computers & Laptops</a>
+<a href="/category/electronics-appliances-gadgets.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electronics & Appliances > Gadgets</a>
+<a href="/category/electronics-appliances-home-appliances.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electronics & Appliances > Home Appliances</a>
+<a href="/category/electronics-appliances-mobile-accessories.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Electronics & Appliances > Mobile & Accessories</a>
+<a href="/category/events-gifting.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Events & Gifting</a>
+<a href="/category/events-gifting-seasonal-items.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Events & Gifting > Seasonal Items</a>
+<a href="/category/exclusive-collection.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Exclusive Collection</a>
+<a href="/category/fashion-apparel.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Fashion & Apparel</a>
+<a href="/category/fashion-apparel-kids-baby-wear.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Fashion & Apparel > Kids & Baby Wear</a>
+<a href="/category/fashion-apparel-men-s-fashion.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Fashion & Apparel > Men's Fashion</a>
+<a href="/category/fashion-apparel-women-s-fashion.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Fashion & Apparel > Women's Fashion</a>
+<a href="/category/gadgets-mini-projectors.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Gadgets > Mini Projectors</a>
+<a href="/category/gadgets-smart-watches.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Gadgets > Smart Watches</a>
+<a href="/category/groceries.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Groceries</a>
+<a href="/category/groceries-baking-and-cooking.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Groceries > Baking and Cooking</a>
+<a href="/category/haircare-hair-styling-tools.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Haircare > Hair Styling Tools</a>
+<a href="/category/health-beauty.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Health & Beauty</a>
+<a href="/category/health-beauty-beauty-cosmetics.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Health & Beauty > Beauty & Cosmetics</a>
+<a href="/category/health-beauty-haircare.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Health & Beauty > Haircare</a>
+<a href="/category/health-beauty-health-wellness.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Health & Beauty > Health & Wellness</a>
+<a href="/category/health-beauty-personal-care.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Health & Beauty > Personal Care</a>
+<a href="/category/health-beauty-skincare.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Health & Beauty > Skincare</a>
+<a href="/category/health-wellness-fitness-equipment.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Health & Wellness > Fitness Equipment</a>
+<a href="/category/home-living.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Home & Living</a>
+<a href="/category/home-living-cleaning-organization.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Home & Living > Cleaning & Organization</a>
+<a href="/category/home-living-furniture.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Home & Living > Furniture</a>
+<a href="/category/home-living-home-decor.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Home & Living > Home Decor</a>
+<a href="/category/home-living-kitchen-dining.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Home & Living > Kitchen & Dining</a>
+<a href="/category/home-appliances-water-heaters-geysers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Home Appliances > Water Heaters & Geysers</a>
+<a href="/category/home-decor-islamic-decor.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Home Decor > Islamic Decor</a>
+<a href="/category/islamic-cultural.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Islamic & Cultural</a>
+<a href="/category/islamic-cultural-islamic-essentials.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Islamic & Cultural > Islamic Essentials</a>
+<a href="/category/kids-accessories.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Kids Accessories</a>
+<a href="/category/kitchen-dining-dinnerware.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Kitchen & Dining > Dinnerware</a>
+<a href="/category/kitchen-dining-kitchen-storage.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Kitchen & Dining > Kitchen Storage</a>
+<a href="/category/kitchen-dining-water-dispensers-filters.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Kitchen & Dining > Water Dispensers & Filters</a>
+<a href="/category/men-s-fashion-perfumes.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Men's Fashion > Perfumes</a>
+<a href="/category/men-s-fashion-t-shirts-polos.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Men's Fashion > T-Shirts & Polos</a>
+<a href="/category/mobile-accessories-earphones-bluetooth-devices.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Mobile & Accessories > Earphones & Bluetooth Devices</a>
+<a href="/category/mobile-accessories-smartwatches-fitness-bands.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Mobile & Accessories > Smartwatches & Fitness Bands</a>
+<a href="/category/oils-lubricants-brake-fluid.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Oils & Lubricants > Brake Fluid</a>
+<a href="/category/pets-animals.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Pets & Animals</a>
+<a href="/category/tools-diy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Tools & DIY</a>
+<a href="/category/tools-diy-hand-tools.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Tools & DIY > Hand Tools</a>
+<a href="/category/tools-diy-paint-renovation.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Tools & DIY > Paint & Renovation</a>
+<a href="/category/toys-games.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Toys & Games</a>
+<a href="/category/toys-games-outdoor-sports-toys.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Toys & Games > Outdoor & Sports Toys</a>
+<a href="/category/travel-outdoor.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Travel & Outdoor</a>
+<a href="/category/travel-outdoor-backpacks-duffel-bags.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Travel & Outdoor > Backpacks & Duffel Bags</a>
+<a href="/category/travel-outdoor-luggage-suitcases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Travel & Outdoor > Luggage & Suitcases</a>
+<a href="/category/travel-outdoor-travel-accessories.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Travel & Outdoor > Travel Accessories</a>
+<a href="/category/women-s-fashion-bags.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Women's Fashion > Bags</a>
+<a href="/category/women-s-fashion-dresses-maxi-dresses.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Women's Fashion > Dresses & Maxi Dresses</a>
+<a href="/category/women-s-fashion-hijabs-scarves-chiffon-.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700">Women's Fashion > Hijabs & Scarves (Chiffon)</a>
+
+                        </div>
+                    </div>
+                    <a href="/about.html" class="hover:text-teal-400 transition font-semibold"><i class="fas fa-info-circle mr-1"></i> About Us</a>
+                    <a href="/contact.html" class="hover:text-teal-400 transition font-semibold"><i class="fas fa-envelope mr-1"></i> Contact</a>
+                </div>
+                <div class="hidden md:block text-teal-400 font-bold"><i class="fas fa-truck-fast"></i> Nationwide Cash on Delivery</div>
+            </div>
+        </div>
+
+        <!-- Main Search Bar Area -->
+        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
             <a href="/index.html" class="text-2xl md:text-3xl font-extrabold text-teal-800 tracking-tight flex items-center gap-2" aria-label="ASM VEO Home">
-                <div class="bg-teal-700 text-white p-2 rounded-lg" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
+                <div class="bg-teal-700 text-white p-2 rounded-lg shadow-md" aria-hidden="true"><i class="fas fa-shopping-bag"></i></div>
                 ASM VEO
             </a>
             
-            <div class="flex-1 min-w-[250px] max-w-xl mx-0 md:mx-8 relative">
-                <label for="searchInput" class="sr-only">Search any product</label>
-                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-100 border border-gray-300 focus:border-teal-600 rounded-full py-2.5 px-6 outline-none transition-all text-gray-800">
-                <button onclick="executeSearch()" aria-label="Submit Search" class="absolute right-4 top-2.5 text-gray-600 hover:text-teal-700"><i class="fas fa-search text-lg" aria-hidden="true"></i></button>
+            <div class="flex-1 min-w-[200px] max-w-xl mx-0 md:mx-8 relative">
+                <label for="searchInput" class="sr-only">Search</label>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search any product..." class="w-full bg-gray-50 border-2 border-gray-200 focus:bg-white focus:border-teal-600 rounded-xl py-3 px-6 outline-none transition-all text-gray-800 font-semibold shadow-sm">
+                <button onclick="executeSearch()" aria-label="Submit" class="absolute right-4 top-3 text-gray-500 hover:text-teal-700"><i class="fas fa-search text-xl" aria-hidden="true"></i></button>
             </div>
             
-            <a href="/checkout.html" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-bold hover:bg-teal-700 transition-colors shadow-lg flex items-center gap-2 whitespace-nowrap" aria-label="Go to Checkout">
-                <i class="fas fa-shopping-cart" aria-hidden="true"></i> <span class="hidden md:inline">Cart / Checkout</span>
+            <a href="/checkout.html" class="relative bg-teal-50 text-teal-800 px-5 py-3 rounded-xl font-bold hover:bg-teal-700 hover:text-white transition-colors border border-teal-200 shadow-sm flex items-center gap-2" aria-label="Go to Cart">
+                <i class="fas fa-shopping-cart text-xl" aria-hidden="true"></i>
+                <span class="hidden md:inline">Cart</span>
+                <span id="cart-badge" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-black px-2 py-0.5 rounded-full shadow">0</span>
             </a>
         </div>
     </header>
-    
-    <!-- Main Content Wrapper (Landmark) -->
     <main id="main-content">
-    
-    <script>
-    function handleSearch(e) {
-        if (e.key === 'Enter') {
-            executeSearch();
-        }
-    }
-    function executeSearch() {
-        let val = document.getElementById('searchInput').value;
-        if(val.trim() !== "") {
-            window.location.href = '/index.html?search=' + encodeURIComponent(val);
-        }
-    }
-    </script>
 
         <div class="container mx-auto px-4 py-10">
-            <nav class="text-sm text-gray-600 mb-6 font-semibold" aria-label="Breadcrumb">
-                <a href="/index.html" class="hover:text-teal-700 transition focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-1">Home</a> &gt; 
-                <a href="/category/home-living-kitchen-dining.html" class="hover:text-teal-700 transition focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-1">Home & Living > Kitchen & Dining</a> &gt; 
-                <span class="text-gray-900" aria-current="page">RAF Electric Stove – Dual Coil Burner, Fast Heating & Easy-to-Clean Portable Cooktop</span>
+            <nav class="text-sm text-gray-600 mb-6 font-semibold bg-gray-100 p-3 rounded-lg inline-block" aria-label="Breadcrumb">
+                <a href="/index.html" class="hover:text-teal-700 transition">Home</a> &gt; 
+                <a href="/category/home-living-kitchen-dining.html" class="hover:text-teal-700 transition">Home & Living > Kitchen & Dining</a> &gt; 
+                <span class="text-teal-800" aria-current="page">RAF Electric Stove – Dual Coil Burner, Fast Heating & Easy-to-Clean Portable Cooktop</span>
             </nav>
             
             <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden flex flex-col md:flex-row mb-12">
                 <div class="md:w-1/2 p-6 flex justify-center items-center bg-gray-50 border-r border-gray-200 relative">
-                    <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-black px-3 py-1.5 rounded-lg z-10 shadow-md" aria-hidden="true">SALE</div>
-                    <!-- fetchpriority="high" and no loading="lazy" for main product image (Lighthouse FCP/LCP Fix) -->
+                    <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-black px-3 py-1.5 rounded-lg z-10 shadow-md">SALE</div>
                     <img src="https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/fc992adbabc6d41539529a2912612522.mp4" alt="Image of RAF Electric Stove – Dual Coil Burner, Fast Heating & Easy-to-Clean Portable Cooktop" fetchpriority="high" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500">
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
@@ -87,55 +196,48 @@
                     <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">RAF Electric Stove – Dual Coil Burner, Fast Heating & Easy-to-Clean Portable Cooktop</h1>
                     
                     <div class="flex items-center gap-3 mb-6" aria-label="Customer Rating">
-                        <div class="text-yellow-500 text-sm" aria-hidden="true"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <div class="text-yellow-500 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                         <span class="text-sm font-semibold text-gray-600">(Verified Reviews)</span>
                     </div>
 
-                    <div class="flex items-center gap-4 mb-6 bg-gray-50 p-4 rounded-2xl w-fit border border-gray-300">
-                        <span class="text-4xl font-black text-teal-800" aria-label="Sale Price">Rs 3728</span>
-                        <span class="text-xl text-gray-500 font-bold line-through" aria-label="Original Price">Rs 6003</span>
+                    <div class="flex items-center gap-4 mb-6 bg-teal-50 p-4 rounded-2xl w-fit border border-teal-100">
+                        <span class="text-4xl font-black text-teal-800">Rs 3728</span>
+                        <span class="text-xl text-gray-500 font-bold line-through">Rs 6003</span>
                     </div>
                     
-                    <div class="mb-6">
-                        <label for="sizeSelect" class="block text-sm font-bold text-gray-800 mb-2">Select Variation / Size (If Applicable)</label>
-                        <select id="sizeSelect" class="w-full md:w-2/3 border-2 border-gray-300 rounded-xl p-3 outline-none focus:border-teal-600 bg-white font-semibold text-gray-800">
-                            <option>Standard / Free Size</option>
-                            <option>Small (S)</option>
-                            <option>Medium (M)</option>
-                            <option>Large (L)</option>
-                        </select>
-                    </div>
-
-                    <p class="text-gray-700 mb-8 leading-relaxed">Cook with confidence using the RAF Electric Stove—featuring dual 2000W coil burners for fast, even heating and easy cleaning.</p>
+                    <p class="text-gray-700 mb-8 leading-relaxed border-t border-gray-100 pt-6">Cook with confidence using the RAF Electric Stove—featuring dual 2000W coil burners for fast, even heating and easy cleaning.</p>
                     
-                    <a href="/checkout.html?product=RAF%20Electric%20Stove%20–%20Dual%20Coil%20Burner,%20Fast%20Heating%20&%20Easy-to-Clean%20Portable%20Cooktop&price=3728" aria-label="Order RAF Electric Stove – Dual Coil Burner, Fast Heating & Easy-to-Clean Portable Cooktop Now" class="bg-gray-900 text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-teal-700 transition-all shadow-lg w-full md:w-2/3 transform hover:-translate-y-1 flex justify-center items-center gap-2 focus:outline-none focus:ring-4 focus:ring-teal-500">
-                        <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart / Order Now
-                    </a>
+                    <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto">
+                        <button onclick="addToCart('RAF Electric Stove – Dual Coil Burner, Fast Heating & Easy-to-Clean Portable Cooktop', 3728, 'https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/fc992adbabc6d41539529a2912612522.mp4', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white text-teal-700 py-4 rounded-xl font-black text-lg border-2 border-teal-600 hover:bg-teal-50 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button onclick="buyNow('RAF Electric Stove – Dual Coil Burner, Fast Heating & Easy-to-Clean Portable Cooktop', 3728, event)" aria-label="Buy Now" class="sm:w-1/2 bg-gray-900 text-white py-4 rounded-xl font-black text-lg hover:bg-teal-700 transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                    </div>
                 </div>
             </div>
             
-            <!-- Reviews Section -->
             <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-8">
                 <h2 class="text-2xl font-extrabold text-gray-900 mb-6 border-b pb-4">Customer Reviews</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                        
         <div class="border-b border-gray-100 py-4">
             <div class="flex items-center gap-2 mb-1">
-                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">B</div>
-                <span class="font-bold text-gray-900">Bilal</span>
+                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">I</div>
+                <span class="font-bold text-gray-900">Iqra</span>
                 <span class="text-[10px] text-green-700 bg-green-50 px-2 py-0.5 rounded-full"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified Buyer</span>
             </div>
             <div class="text-yellow-500 text-xs mb-2" aria-label="5 out of 5 stars">
                 <i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i>
             </div>
-            <p class="text-gray-700 text-sm">Mujhe yeh bohat pasand aaya. Thanks ASM VEO!</p>
+            <p class="text-gray-700 text-sm">100% Genuine product. Will definitely buy again.</p>
         </div>
         
         <div class="border-b border-gray-100 py-4">
             <div class="flex items-center gap-2 mb-1">
-                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">A</div>
-                <span class="font-bold text-gray-900">Ali</span>
+                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">H</div>
+                <span class="font-bold text-gray-900">Hassan</span>
                 <span class="text-[10px] text-green-700 bg-green-50 px-2 py-0.5 rounded-full"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified Buyer</span>
             </div>
             <div class="text-yellow-500 text-xs mb-2" aria-label="5 out of 5 stars">
@@ -146,105 +248,59 @@
         
         <div class="border-b border-gray-100 py-4">
             <div class="flex items-center gap-2 mb-1">
-                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">U</div>
-                <span class="font-bold text-gray-900">Usman</span>
-                <span class="text-[10px] text-green-700 bg-green-50 px-2 py-0.5 rounded-full"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified Buyer</span>
-            </div>
-            <div class="text-yellow-500 text-xs mb-2" aria-label="4 out of 5 stars">
-                <i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i>
-            </div>
-            <p class="text-gray-700 text-sm">100% Genuine product. Will definitely buy again.</p>
-        </div>
-        
-        <div class="border-b border-gray-100 py-4">
-            <div class="flex items-center gap-2 mb-1">
-                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">A</div>
-                <span class="font-bold text-gray-900">Ahmad</span>
+                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">M</div>
+                <span class="font-bold text-gray-900">Maryam</span>
                 <span class="text-[10px] text-green-700 bg-green-50 px-2 py-0.5 rounded-full"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified Buyer</span>
             </div>
             <div class="text-yellow-500 text-xs mb-2" aria-label="5 out of 5 stars">
                 <i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i>
             </div>
-            <p class="text-gray-700 text-sm">Mujhe yeh bohat pasand aaya. Thanks ASM VEO!</p>
+            <p class="text-gray-700 text-sm">Price ke hisaab se kaafi behtar hai. Recommended!</p>
         </div>
-        
-        <div class="border-b border-gray-100 py-4">
-            <div class="flex items-center gap-2 mb-1">
-                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">Z</div>
-                <span class="font-bold text-gray-900">Zohaib</span>
-                <span class="text-[10px] text-green-700 bg-green-50 px-2 py-0.5 rounded-full"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified Buyer</span>
-            </div>
-            <div class="text-yellow-500 text-xs mb-2" aria-label="5 out of 5 stars">
-                <i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i>
-            </div>
-            <p class="text-gray-700 text-sm">Original product mili hai, jesa dikhaya tha wesa hi aaya.</p>
         </div>
-        
-        <div class="border-b border-gray-100 py-4">
-            <div class="flex items-center gap-2 mb-1">
-                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">U</div>
-                <span class="font-bold text-gray-900">Usman</span>
-                <span class="text-[10px] text-green-700 bg-green-50 px-2 py-0.5 rounded-full"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified Buyer</span>
-            </div>
-            <div class="text-yellow-500 text-xs mb-2" aria-label="5 out of 5 stars">
-                <i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i>
-            </div>
-            <p class="text-gray-700 text-sm">100% Genuine product. Will definitely buy again.</p>
-        </div>
-        
-        <div class="border-b border-gray-100 py-4">
-            <div class="flex items-center gap-2 mb-1">
-                <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center font-bold" aria-hidden="true">Z</div>
-                <span class="font-bold text-gray-900">Zohaib</span>
-                <span class="text-[10px] text-green-700 bg-green-50 px-2 py-0.5 rounded-full"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified Buyer</span>
-            </div>
-            <div class="text-yellow-500 text-xs mb-2" aria-label="4 out of 5 stars">
-                <i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i><i class='fas fa-star' aria-hidden='true'></i>
-            </div>
-            <p class="text-gray-700 text-sm">Bohot achi quality hai, delivery bhi time par mili.</p>
-        </div>
-        
-                    </div>
                     <div class="bg-gray-50 p-6 rounded-2xl h-fit border border-gray-300">
                         <h3 class="font-bold text-lg mb-2 text-gray-900">Write a Review</h3>
                         <p class="text-sm text-gray-600 mb-4">Only verified buyers can leave a review after receiving the product to maintain quality standards.</p>
                         <div class="flex items-center gap-2 text-teal-800 font-bold bg-teal-50 p-3 rounded-lg border border-teal-200">
-                            <i class="fas fa-lock" aria-hidden="true"></i> Review form is currently locked.
+                            <i class="fas fa-lock"></i> Review form is currently locked.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-    </main> <!-- End of Main Landmark -->
+    </main>
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16 pt-12 pb-6 border-t-4 border-teal-600">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+    <footer class="bg-gray-900 text-white mt-16 pt-16 pb-8 border-t-4 border-teal-600">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-teal-400" aria-hidden="true"></i> ASM VEO</h3>
-                <p class="text-gray-300 text-sm leading-relaxed mb-4">ASM VEO is a professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
+                <h3 class="text-3xl font-extrabold mb-4 flex items-center gap-2 text-white"><i class="fas fa-shopping-bag text-teal-400" aria-hidden="true"></i> ASM VEO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 pr-4">ASM VEO is a top-tier professional shopping platform bringing you the best products across multiple categories. Enjoy premium quality, nationwide Cash on Delivery, and a 100% secure shopping experience.</p>
                 <div class="flex gap-4">
-                    <a href="#" aria-label="Visit our Facebook page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#" aria-label="Visit our Instagram page" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-teal-600 transition text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4 text-white">Management & Contact</h3>
-                <ul class="space-y-3 text-gray-300 text-sm">
-                    <li class="flex items-center gap-2"><i class="fas fa-user-tie text-teal-400" aria-hidden="true"></i> CEO: Ali Abbas</li>
-                    <li class="flex items-center gap-2"><i class="fas fa-building text-teal-400" aria-hidden="true"></i> ASM Digital Solutions</li>
-                    <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400 text-lg" aria-hidden="true"></i> <a href="https://wa.me/923425478683" aria-label="Contact us on WhatsApp at 0342 54 786 83" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-teal-400">0342 54 786 83</a></li>
+                <h3 class="text-xl font-bold mb-5 text-white border-b border-gray-700 pb-2">Quick Links</h3>
+                <ul class="space-y-3 text-gray-400 text-sm font-semibold">
+                    <li><a href="/index.html" class="hover:text-teal-400 transition"><i class="fas fa-angle-right mr-2 text-teal-600"></i> Home</a></li>
+                    <li><a href="/about.html" class="hover:text-teal-400 transition"><i class="fas fa-angle-right mr-2 text-teal-600"></i> About Us</a></li>
+                    <li><a href="/contact.html" class="hover:text-teal-400 transition"><i class="fas fa-angle-right mr-2 text-teal-600"></i> Contact Us</a></li>
+                    <li><a href="/checkout.html" class="hover:text-teal-400 transition"><i class="fas fa-angle-right mr-2 text-teal-600"></i> Cart / Checkout</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-lg font-bold mb-4 text-white">Safe & Secure</h3>
-                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-money-bill-wave text-green-400 mr-2" aria-hidden="true"></i> Cash on Delivery Available</p>
-                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-undo text-teal-400 mr-2" aria-hidden="true"></i> Easy Return Policy</p>
-                <p class="text-gray-300 text-sm"><i class="fas fa-shield-alt text-teal-400 mr-2" aria-hidden="true"></i> 100% Secure Checkout</p>
+                <h3 class="text-xl font-bold mb-5 text-white border-b border-gray-700 pb-2">Contact Info</h3>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-center gap-3"><div class="bg-gray-800 p-2 rounded text-teal-400"><i class="fas fa-user-tie"></i></div> CEO: Ali Abbas</li>
+                    <li class="flex items-center gap-3"><div class="bg-gray-800 p-2 rounded text-teal-400"><i class="fas fa-building"></i></div> ASM Digital Solutions</li>
+                    <li class="flex items-center gap-3"><div class="bg-green-500 p-2 rounded text-white"><i class="fab fa-whatsapp text-lg"></i></div> <a href="https://wa.me/923425478683" class="hover:text-white transition font-bold text-base">0342 54 786 83</a></li>
+                </ul>
             </div>
         </div>
-        <div class="border-t border-gray-800 text-center pt-6">
-            <p class="text-gray-400 text-sm">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+        <div class="border-t border-gray-800 text-center pt-8">
+            <p class="text-gray-500 text-sm font-semibold">&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
