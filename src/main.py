@@ -16,15 +16,16 @@ def generate_pakistani_names():
                    "Bilal", "Sana", "Adnan", "Farhan", "Nida", "Saba", "Komail", "Mahnoor",
                    "Rizwan", "Sohail", "Asif", "Nadeem", "Tahir", "Amir", "Babar", "Saad", "Fahad", "Junaid",
                    "Hina", "Areeba", "Tooba", "Rabia", "Anila", "Faiza", "Samina", "Naila", "Shazia", "Rimsha",
-                   "Ahsan", "Zeeshan", "Kashif", "Noman", "Waseem", "Imtiaz", "Ghulam", "Sajid", "Rashid", "Aslam"]
+                   "Ahsan", "Zeeshan", "Kashif", "Noman", "Waseem", "Imtiaz", "Ghulam", "Sajid", "Rashid", "Aslam",
+                   "Bilal", "Sana", "Adnan", "Farhan", "Nida", "Saba", "Komail", "Mahnoor", "Ayesha", "Fatima"]
     last_names = ["Khan", "Raza", "Malik", "Sheikh", "Qureshi", "Siddiqui", "Chaudhry", "Butt", "Awan", "Mughal",
                   "Baig", "Mirza", "Hashmi", "Tariq", "Ahmed", "Iqbal", "Hussain", "Aslam", "Akram", "Yousaf",
                   "Shah", "Rana", "Cheema", "Tipu", "Afridi", "Khattak", "Wazir", "Mehmood", "Sattar"]
     
-    names = set()
-    while len(names) < 2000:
-        names.add(f"{random.choice(first_names)} {random.choice(last_names)}")
-    return list(names)
+    # Instantly generate all combinations (No while loop, No hanging)
+    all_names = [f"{f} {l}" for f in first_names for l in last_names]
+    random.shuffle(all_names)
+    return all_names
 
 PAKISTANI_NAMES = generate_pakistani_names()
 
@@ -382,8 +383,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
             
             let safeName = name.replace(/'/g, "\\'");
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${image}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${image}', event);`);
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{image}}', event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{image}}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
