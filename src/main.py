@@ -5,6 +5,7 @@ import re
 import shutil
 import random
 import json
+import urllib.parse
 from datetime import datetime, timedelta
 
 # ==================== 2000 NAMES DATABASE ====================
@@ -395,9 +396,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('qvPrice').innerText = "Rs " + price;
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
             
-            let safeName = name.replace(/'/g, "\\'");
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{image}}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{image}}', event);`);
+            let safeName = JSON.stringify(name);
+            let safeImage = JSON.stringify(image);
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart(${{safeName}}, ${{price}}, ${{safeImage}}, event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow(${{safeName}}, ${{price}}, ${{safeImage}}, event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -696,8 +698,8 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     stock_left = random.randint(3, 20)
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
     
-    escaped_name = prod['name'].replace("'", "\\'")
-    escaped_desc = prod['seo_desc'].replace("'", "\\'")
+    escaped_name = prod['name'].replace("\\", "\\\\").replace("'", "\\'")
+    escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace("'", "\\'")
     
     wishlist_btn = ""
     if show_wishlist:
@@ -739,7 +741,6 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     </div>
     """
     
-    # Safe replacements to avoid f-string backslash issues
     return card.replace("__SAFE_NAME__", escaped_name)\
                .replace("__SAFE_DESC__", escaped_desc)\
                .replace("__PRICE__", str(prod['final_price']))\
@@ -922,7 +923,7 @@ def generate_static_pages(categories_list):
                 if (wl.length === 0) return;
                 container.innerHTML = '';
                 wl.forEach((item, i) => {
-                    let safeName = item.name.replace(/'/g, "\\'");
+                    let safeName = item.name.split("'").join("\\'");
                     container.innerHTML += `
                         <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
                             <div class="h-32 bg-gray-50 dark:bg-gray-700 overflow-hidden">
@@ -1051,7 +1052,7 @@ def process_woocommerce_csv():
     generate_robots_txt()
     generate_manifest()
     
-    # ================= PRODUCT PAGES (WITH NEXT BUTTON) =================
+    # ================= PRODUCT PAGES (WITH NEXT BUTTON & SOCIAL PROOF) =================
     for i, prod in enumerate(products_list):
         reviews_section, avg_rating, review_count = generate_reviews(prod['name'])
         prod['rating'] = avg_rating
@@ -1076,8 +1077,12 @@ def process_woocommerce_csv():
         
         discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > prod['final_price'] else 0
         stock_left = random.randint(3, 15)
+        stock_pct = random.randint(15, 40)
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
-        escaped_name = prod['name'].replace("'", "\\'")
+        escaped_name = prod['name'].replace("\\", "\\\\").replace("'", "\\'")
+        
+        wa_text = f"Hi, I want to order {prod['name']} (Rs {prod['final_price']}). Is it available?"
+        wa_link = f"https://wa.me/923425478683?text={urllib.parse.quote(wa_text)}"
         
         # Next Product Button Logic
         next_prod_html = ""
@@ -1128,21 +1133,35 @@ def process_woocommerce_csv():
                         {f'<span class="bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-lg">Save Rs {prod["fake_price"] - prod["final_price"]}</span>' if discount_pct > 0 else ''}
                     </div>
                     
+                    <!-- Live Stock & Viewers Counter -->
+                    <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl mb-6 border border-gray-100 dark:border-gray-600">
+                        <div class="flex justify-between text-xs font-bold text-gray-600 dark:text-gray-300 mb-2">
+                            <span><i class="fas fa-eye"></i> <span id="liveViewers">15</span> people are viewing this right now</span>
+                            <span><i class="fas fa-fire text-orange-500"></i> Hurry, only {stock_left} left!</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600">
+                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: {stock_pct}%"></div>
+                        </div>
+                    </div>
+                    
                     <div class="flex items-center gap-2 mb-6 text-sm">
-                        <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full font-bold"><i class="fas fa-fire"></i> Only {stock_left} left!</span>
                         <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold"><i class="fas fa-truck"></i> Delivery by {delivery_date}</span>
                     </div>
                     
                     <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-6">{prod['full_desc'][:500] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto">
-                        <button onclick="addToCart('__SAFE_NAME__', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#01411C] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#01411C] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                    <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto main-product-actions">
+                        <button onclick="addToCart('__SAFE_NAME__', {prod['final_price']}, '__IMAGE__', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#01411C] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#01411C] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-cart-plus"></i> Add to Cart
                         </button>
-                        <button onclick="buyNow('__SAFE_NAME__', {prod['final_price']}, '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#01411C] text-white py-4 rounded-xl font-black text-lg hover:bg-[#002a13] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                        <button onclick="buyNow('__SAFE_NAME__', {prod['final_price']}, '__IMAGE__', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#01411C] text-white py-4 rounded-xl font-black text-lg hover:bg-[#002a13] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-bolt"></i> Buy Now
                         </button>
                     </div>
+                    
+                    <a href="{wa_link}" target="_blank" class="mt-4 w-full md:w-5/6 bg-green-500 text-white font-bold py-3 rounded-xl hover:bg-green-600 transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i> Quick Order via WhatsApp
+                    </a>
                     
                     <div class="grid grid-cols-3 gap-3 mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
                         <div class="text-center"><i class="fas fa-shield-alt text-[#01411C] text-xl mb-1"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Secure Payment</p></div>
@@ -1190,8 +1209,19 @@ def process_woocommerce_csv():
             
             {next_prod_html}
         </div>
+        
+        <!-- Sticky Add to Cart Bar for Mobile -->
+        <div id="stickyAddToCart" class="hidden fixed bottom-16 left-0 right-0 bg-white dark:bg-gray-800 shadow-2xl border-t border-gray-200 dark:border-gray-700 p-3 z-40 flex items-center justify-between gap-3 md:hidden">
+            <div class="flex flex-col">
+                <span class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{prod['name']}</span>
+                <span class="text-lg font-black text-[#01411C] dark:text-white">Rs {prod['final_price']}</span>
+            </div>
+            <button onclick="addToCart('__SAFE_NAME__', {prod['final_price']}, '__IMAGE__', event)" class="bg-[#01411C] text-white px-4 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2">
+                <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+        </div>
         """
-        prod_html = prod_html.replace("__SAFE_NAME__", escaped_name)
+        prod_html = prod_html.replace("__SAFE_NAME__", escaped_name).replace("__IMAGE__", prod['image'])
         
         recent_json = json.dumps({"slug": prod['slug'], "name": prod['name'], "image": prod['image'], "final_price": prod['final_price'], "fake_price": prod['fake_price'], "category": prod['category']})
         prod_script = """
@@ -1202,6 +1232,31 @@ def process_woocommerce_csv():
                 document.querySelectorAll('.flex.gap-2 img').forEach(img => img.classList.remove('border-[#01411C]'));
                 thumb.classList.add('border-[#01411C]');
             }
+            
+            // Sticky Add to Cart Bar Logic
+            let stickyBar = document.getElementById('stickyAddToCart');
+            let mainActions = document.querySelector('.main-product-actions');
+            window.addEventListener('scroll', () => {
+                if (mainActions) {
+                    let rect = mainActions.getBoundingClientRect();
+                    if (rect.bottom < 0) {
+                        stickyBar.classList.remove('hidden');
+                    } else {
+                        stickyBar.classList.add('hidden');
+                    }
+                }
+            });
+
+            // Live Viewers Counter Logic
+            let viewers = document.getElementById('liveViewers');
+            setInterval(() => {
+                let current = parseInt(viewers.innerText);
+                let change = Math.floor(Math.random() * 5) - 2; // -2 to +2
+                current += change;
+                if (current < 10) current = 10;
+                if (current > 35) current = 35;
+                viewers.innerText = current;
+            }, 3000);
         </script>
         """
         prod_html += prod_script.replace("__RECENT_JSON__", recent_json) + get_html_footer()
@@ -1542,7 +1597,7 @@ def process_woocommerce_csv():
                 p.category.toLowerCase().includes(query)
             );
             
-            document.getElementById('defaultContent').classList.add('hidden');
+            document.getElementById('defaultContent').classList.remove('hidden');
             document.getElementById('recentlyViewedSection').classList.add('hidden');
             document.getElementById('searchResultsSection').classList.remove('hidden');
             document.getElementById('searchResultsHeading').innerText = 'Search Results for "' + query + '"';
@@ -1551,7 +1606,7 @@ def process_woocommerce_csv():
             let html = '<div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 mt-6">';
             results.forEach(p => {
                 let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
-                let safeName = p.name.replace(/'/g, "\\'");
+                let safeName = p.name.split("'").join("\\'");
                 html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                     ${discount > 0 ? `<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                     <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
@@ -1928,7 +1983,7 @@ def process_woocommerce_csv():
     generate_sitemap(sitemap_urls)
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
     print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)} | 🏙️ Cities: {len(cities)}")
-    print("✨ Optimized for 1s load time with Pagination & Next Product Button!")
+    print("✨ Optimized for 1s load time with Pagination, Next Product Button & Social Proof!")
 
 if __name__ == "__main__":
     process_woocommerce_csv()
