@@ -413,8 +413,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('qvPrice').innerText = "Rs " + price;
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
             
-            let safeName = name.replace(/'/g, "\\'");
-            let safeImage = image.replace(/'/g, "\\'");
+            let safeName = name.replace(/'/g, "\\\\'");
+            let safeImage = image.replace(/'/g, "\\\\'");
             document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{safeImage}}', event); closeQuickView();`);
             document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{safeImage}}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
@@ -628,6 +628,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 def get_html_footer():
     return """
     </main>
+    <!-- Flashmart Style Footer -->
     <footer class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 mt-16 pt-12 pb-20 md:pb-8 border-t-4 border-[#E53935]">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center items-center gap-8 mb-12 pb-8 border-b border-gray-200 dark:border-gray-800">
@@ -698,6 +699,88 @@ def get_html_footer():
 </html>
 """
 
+# ==================== STATIC PAGES ====================
+
+def generate_static_pages(categories_list):
+    print("📄 Generating Static Pages...")
+    
+    pages = {
+        "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-12"><h1 class="text-4xl md:text-5xl font-extrabold text-[#E53935] dark:text-white mb-6">About ASM VEO</h1><p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">Your trusted shopping partner in Pakistan</p></div><div class="grid md:grid-cols-2 gap-8 mb-12"><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-bullseye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Mission</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To provide every Pakistani with access to premium quality products at affordable prices, delivered right to their doorstep with Cash on Delivery convenience.</p></div><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-eye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Vision</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To become Pakistan's most trusted and loved e-commerce platform, known for quality, reliability, and exceptional customer service.</p></div></div><div class="animated-bg text-white rounded-3xl p-8 md:p-12"><h2 class="text-3xl font-bold mb-4">Why Choose ASM VEO?</h2><div class="grid md:grid-cols-3 gap-6 mt-8"><div><i class="fas fa-shield-alt text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">100% Secure</h4><p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p></div><div><i class="fas fa-truck-fast text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Fast Delivery</h4><p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p></div><div><i class="fas fa-undo text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Easy Returns</h4><p class="text-gray-200 text-sm">7-day return policy, no questions asked</p></div></div></div></div>"""),
+        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-500"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-500 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
+        "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl prose dark:prose-invert"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Privacy Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>At ASM VEO, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Information We Collect</h2><p>We collect your name, phone number, email, and shipping address when you place an order.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Data Security</h2><p>We use SSL encryption to protect your data. We never share your personal information with third parties except for shipping purposes.</p></div></div>"""),
+        "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 2-4 business days.</p></div></div>"""),
+        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
+        "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
+        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl text-center"><h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1><p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div>"""),
+        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-20 text-center"><div class="max-w-lg mx-auto"><div class="text-9xl font-black text-[#E53935] mb-4">404</div><h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Oops! Page Not Found</h1><p class="text-gray-500 dark:text-gray-400 mb-8">The page you're looking for doesn't exist.</p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a></div></div>"""),
+        "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"></div></div>
+        <script>
+        function renderWishlist() {
+            let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || [];
+            let container = document.getElementById('wishlistContainer');
+            if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500 dark:text-gray-400"><i class="fas fa-heart-broken text-6xl mb-4 opacity-30"></i><p class="text-lg font-bold">Your wishlist is empty</p></div>'; return; }
+            container.innerHTML = wl.map((item, i) => {
+                let safeName = item.name.replace(/'/g, "\\\\'");
+                return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
+                    <div class="h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
+                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.src='https://via.placeholder.com/400x400/E53935/ffffff?text=ASM+VEO'">
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
+                        <p class="text-lg font-black text-[#E53935] dark:text-emerald-400 mb-3">Rs ${item.price}</p>
+                        <div class="flex gap-2 mt-auto">
+                            <button onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus"></i></button>
+                            <button onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+        function removeWishlistItem(i) { let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || []; wl.splice(i, 1); localStorage.setItem('asm_wishlist', JSON.stringify(wl)); updateWishlistBadge(); renderWishlist(); }
+        window.addEventListener('load', renderWishlist);
+        </script>"""),
+        "order-success.html": ("Order Confirmed!", """<div class="container mx-auto px-4 py-20 text-center"><div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div><h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1><p class="text-gray-500 dark:text-gray-400 text-sm mb-8">Order ID: <span id="orderId" class="font-bold text-[#E53935]"></span></p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a></div>
+        <script>document.getElementById('orderId').innerText = 'ASM-' + Math.floor(100000 + Math.random() * 900000); localStorage.removeItem('asm_cart'); updateCartBadge();</script>""")
+    }
+
+    for filename, (title, content) in pages.items():
+        with open(f"output/{filename}", "w", encoding="utf-8") as f:
+            f.write(minify_html(get_html_header(title, categories_list) + content + get_html_footer()))
+
+    faqs = [
+        ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days. Major cities like Karachi, Lahore, and Islamabad usually receive orders within 2 days. Remote areas may take up to 5 days."),
+        ("Do you offer Cash on Delivery (COD)?", "Yes! We offer Cash on Delivery across all of Pakistan. You pay when you receive your product at your doorstep."),
+        ("What is your return policy?", "We offer a 7-day return policy. If you're not satisfied with your product, you can return it within 7 days for a full refund or exchange. The product must be in its original condition."),
+        ("Are your products genuine?", "Absolutely! We source all our products directly from authorized distributors and manufacturers. Every product is 100% genuine and quality-checked before dispatch.")
+    ]
+    
+    faq_html = get_html_header("Frequently Asked Questions", categories_list)
+    faq_html += """
+    <div class="container mx-auto px-4 py-16 max-w-3xl">
+        <h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Frequently Asked Questions</h1>
+        <div class="space-y-4">
+    """
+    for q, a in faqs:
+        faq_html += f"""
+            <details class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 group">
+                <summary class="p-5 cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between items-center list-none">
+                    {q}
+                    <i class="fas fa-chevron-down text-[#E53935] transition-transform group-open:rotate-180"></i>
+                </summary>
+                <div class="px-5 pb-5 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{a}</div>
+            </details>
+        """
+    faq_html += "</div></div>"
+    
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": []}
+    for q, a in faqs:
+        faq_schema["mainEntity"].append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+    faq_html += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>'
+    faq_html += get_html_footer()
+    
+    with open("output/faq.html", "w", encoding="utf-8") as f:
+        f.write(minify_html(faq_html))
+
 # ==================== SITEMAP & ROBOTS ====================
 
 def generate_sitemap(urls):
@@ -743,7 +826,6 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
     
-    # Properly escape quotes so HTML onclick attributes don't break
     escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
     escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
     alt_name = prod['name'].replace('"', '&quot;')
@@ -905,6 +987,12 @@ def process_woocommerce_csv():
     generate_robots_txt()
     generate_manifest()
     
+    # Extract Search Data to External JS File
+    search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], 
+                                     "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
+    with open("output/search-data.js", "w", encoding="utf-8") as f:
+        f.write(f"let searchIndex = {search_index_json};")
+    
     # ================= PRODUCT PAGES =================
     for i, prod in enumerate(products_list):
         reviews_section, avg_rating, review_count = generate_reviews(prod['name'])
@@ -1004,10 +1092,10 @@ def process_woocommerce_csv():
                     <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-6">{prod['full_desc'][:500] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto main-product-actions">
-                        <button onclick="addToCart('__SAFE_NAME__', {prod['final_price']}, '__IMAGE__', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#E53935] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#E53935] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                        <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#E53935] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#E53935] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-cart-plus"></i> Add to Cart
                         </button>
-                        <button onclick="buyNow('__SAFE_NAME__', {prod['final_price']}, '__IMAGE__', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#E53935] text-white py-4 rounded-xl font-black text-lg hover:bg-[#C62828] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                        <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#E53935] text-white py-4 rounded-xl font-black text-lg hover:bg-[#C62828] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-bolt"></i> Buy Now
                         </button>
                     </div>
@@ -1068,12 +1156,11 @@ def process_woocommerce_csv():
                 <span class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{prod['name']}</span>
                 <span class="text-lg font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
             </div>
-            <button onclick="addToCart('__SAFE_NAME__', {prod['final_price']}, '__IMAGE__', event)" class="bg-[#E53935] text-white px-4 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2">
+            <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="bg-[#E53935] text-white px-4 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2">
                 <i class="fas fa-cart-plus"></i> Add to Cart
             </button>
         </div>
         """
-        prod_html = prod_html.replace("__SAFE_NAME__", escaped_name).replace("__IMAGE__", prod['image'])
         
         recent_json = json.dumps({"slug": prod['slug'], "name": prod['name'], "image": prod['image'], "final_price": prod['final_price'], "fake_price": prod['fake_price'], "category": prod['category']})
         prod_script = """
@@ -1716,7 +1803,7 @@ def process_woocommerce_csv():
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700">
                     <h3 class="font-bold text-gray-900 dark:text-white mb-3 text-sm">Why Shop With Us?</h3>
-                    <div class="grid grid-cols-2 gap-3 text-xs">
+                    <div class="grid grid-cols-2 gap-3 text-xs text-gray-700 dark:text-gray-300">
                         <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-[#E53935]"></i> 100% Secure Checkout</div>
                         <div class="flex items-center gap-2"><i class="fas fa-truck text-[#E53935]"></i> Fast Nationwide Delivery</div>
                         <div class="flex items-center gap-2"><i class="fas fa-undo text-[#E53935]"></i> 7-Day Return Policy</div>
@@ -1751,20 +1838,25 @@ def process_woocommerce_csv():
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number <span class="text-red-600">*</span></label>
-                            <input type="tel" name="Phone_Number" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="03XXXXXXXXX">
+                            <input type="tel" name="Phone_Number" pattern="03[0-9]{{2}}[0-9]{{7}}" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="0300-XXXXXXX">
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City / Tehsil / District <span class="text-red-600">*</span></label>
-                            <input type="text" name="City" id="cityInput" list="pakTehsils" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required placeholder="Type or select your city/tehsil">
-                            <datalist id="pakTehsils">
+                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
+                            <select name="City" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required>
+                                <option value="" disabled selected>Select City</option>
                                 {tehsil_options}
-                            </datalist>
+                            </select>
                         </div>
                     </div>
                     
                     <div>
                         <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label>
                         <textarea name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label>
+                        <textarea name="Order_Notes" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="Any special instructions..."></textarea>
                     </div>
                     
                     <div>
@@ -1956,7 +2048,7 @@ def process_woocommerce_csv():
     generate_sitemap(sitemap_urls)
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
     print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)} | 🏙️ Cities: {len(cities)}")
-    print("✨ All Buttons Fixed & Safe Minifier Integrated!")
+    print("✨ All Buttons Fixed & Static Pages restored successfully!")
 
 if __name__ == "__main__":
     process_woocommerce_csv()
