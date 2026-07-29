@@ -152,7 +152,7 @@ def generate_reviews(product_name):
                 <div class="w-9 h-9 rounded-full bg-[#E53935] text-white flex items-center justify-center font-bold text-sm" aria-hidden="true">{reviewer[0]}</div>
                 <div>
                     <span class="font-bold text-gray-900 dark:text-white text-sm block">{reviewer}</span>
-                    <span class="text-[10px] text-gray-500">{days_ago} days ago</span>
+                    <span class="text-xs text-gray-600 dark:text-gray-400">{days_ago} days ago</span>
                 </div>
                 <span class="ml-auto text-[10px] text-green-700 bg-green-50 px-2 py-1 rounded-full font-bold"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified</span>
             </div>
@@ -175,7 +175,7 @@ def minify_html(html_content):
 
 
 # ==============================================================================
-# HTML HEADER GENERATION
+# HTML HEADER GENERATION (Optimized for PageSpeed & Accessibility)
 # ==============================================================================
 
 def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan", 
@@ -271,10 +271,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="ASM VEO">
     
+    <!-- Preconnects for PageSpeed Optimization -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -411,7 +413,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             const colors = {{ pk: 'bg-[#E53935]', red: 'bg-red-500', gray: 'bg-gray-600', green: 'bg-green-500' }};
             const toast = document.createElement('div');
             toast.className = `fixed bottom-20 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
-            toast.innerHTML = `<i class="fas ${{icon}} text-xl"></i> ${{msg}}`;
+            toast.innerHTML = `<i class="fas ${{icon}} text-xl" aria-hidden="true"></i> ${{msg}}`;
             document.body.appendChild(toast);
             setTimeout(() => {{ toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; setTimeout(() => toast.remove(), 300); }}, 2500);
         }}
@@ -428,6 +430,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             searchLoaded = true;
             let script = document.createElement('script');
             script.src = '/search-data.js';
+            script.defer = true;
             document.head.appendChild(script);
         }}
 
@@ -532,7 +535,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
         function acceptCookies() {{
             localStorage.setItem('asm_cookie_consent', 'true');
-            document.getElementById('cookieConsent').classList.add('hidden');
+            let cc = document.getElementById('cookieConsent');
+            if(cc) cc.classList.add('hidden');
         }}
     </script>
 </head>
@@ -542,7 +546,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         <div class="container mx-auto px-4 flex justify-between items-center">
             <span>Welcome to ASM VEO! Fast Delivery & Cash on Delivery Available</span>
             <div class="flex gap-4 items-center">
-                <button onclick="toggleDarkMode()" class="hover:text-[#E53935]" aria-label="Toggle Dark Mode"><i class="fas fa-moon dark-mode-icon"></i></button>
+                <button onclick="toggleDarkMode()" class="hover:text-[#E53935]" aria-label="Toggle Dark Mode"><i class="fas fa-moon dark-mode-icon" aria-hidden="true"></i></button>
                 <span class="border-l border-gray-700 pl-4">EN</span>
                 <span class="border-l border-gray-700 pl-4">PKR</span>
                 <a href="/about.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">About</a>
@@ -554,8 +558,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <header class="glass shadow-md sticky top-0 z-50 transition-colors border-b border-gray-100 dark:border-gray-800">
         <div class="bg-[#E53935] text-white text-xs md:text-sm py-2 md:hidden">
             <div class="container mx-auto px-4 flex justify-between items-center">
-                <a href="/index.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-home mr-1"></i> Home</a>
-                <button onclick="toggleMobileCats()" class="hover:text-gray-300 transition font-semibold focus:outline-none"><i class="fas fa-list mr-1"></i> Categories</button>
+                <a href="/index.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-home mr-1" aria-hidden="true"></i> Home</a>
+                <button onclick="toggleMobileCats()" class="hover:text-gray-300 transition font-semibold focus:outline-none" aria-label="Toggle Mobile Categories"><i class="fas fa-list mr-1" aria-hidden="true"></i> Categories</button>
             </div>
         </div>
 
@@ -567,14 +571,14 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
         <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
             <a href="/index.html" class="flex items-center gap-2" aria-label="ASM VEO Home">
-                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle cx="50" cy="50" r="48" fill="#E53935"></circle>
                     <path d="M65 35 A 25 25 0 1 0 65 65 A 20 20 0 1 1 65 35 Z" fill="#ffffff"></path>
                     <text x="50" y="58" font-family="Arial" font-size="24" font-weight="900" fill="#E53935" text-anchor="middle">AV</text>
                 </svg>
                 <div class="flex flex-col leading-none">
                     <span class="text-xl font-extrabold text-[#E53935] dark:text-white tracking-tight">ASM VEO</span>
-                    <span class="text-[9px] tracking-widest text-gray-500 dark:text-gray-400 font-bold">PAKISTAN</span>
+                    <span class="text-[9px] tracking-widest text-gray-600 dark:text-gray-400 font-bold">PAKISTAN</span>
                 </div>
             </a>
             
@@ -586,7 +590,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             
             <div class="flex items-center gap-3">
                 <a href="/wishlist.html" class="relative bg-gray-50 text-[#E53935] p-2.5 rounded-xl hover:bg-[#E53935] hover:text-white transition-colors border border-gray-200" aria-label="Wishlist">
-                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart" aria-hidden="true"></i>
                     <span class="wishlist-badge absolute -top-2 -right-2 bg-[#E53935] text-white text-xs font-black px-1.5 py-0.5 rounded-full shadow min-w-[20px] text-center">0</span>
                 </a>
                 <a href="/checkout.html" class="cart-icon-pulse relative bg-[#E53935] text-white px-4 py-2.5 rounded-xl font-bold hover:bg-[#C62828] transition-colors shadow-sm flex items-center gap-2 text-sm" aria-label="Go to Cart">
@@ -600,7 +604,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         <nav class="hidden md:block border-t border-gray-100 dark:border-gray-800">
             <div class="container mx-auto px-4 flex items-center gap-6">
                 <div class="relative dropdown z-50">
-                    <button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors"><i class="fas fa-list"></i> All Categories <i class="fas fa-chevron-down text-[10px]"></i></button>
+                    <button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false"><i class="fas fa-list" aria-hidden="true"></i> All Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i></button>
                     <div class="dropdown-menu absolute hidden text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-200 shadow-2xl rounded-b-xl mt-0 w-56 py-2 border border-gray-100 dark:border-gray-700 max-h-96 overflow-y-auto">
                         {cat_links}
                     </div>
@@ -610,30 +614,30 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 <a href="/about.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">About Us</a>
                 <a href="/contact.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Contact Us</a>
                 <a href="/faq.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">FAQ</a>
-                <div class="ml-auto text-xs font-bold text-gray-500 dark:text-gray-400"><i class="fas fa-phone mr-1 text-[#E53935]"></i> 0342 54 786 83</div>
+                <div class="ml-auto text-xs font-bold text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-1 text-[#E53935]" aria-hidden="true"></i> 0342 54 786 83</div>
             </div>
         </nav>
     </header>
 
     <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-2xl border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-50">
-        <a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold"><i class="fas fa-home text-lg mb-1"></i> Home</a>
-        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold"><i class="fas fa-th-large text-lg mb-1"></i> Categories</button>
+        <a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold"><i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home</a>
+        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories"><i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories</button>
         <a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
-            <i class="fas fa-shopping-cart text-lg mb-1"></i> Cart
+            <i class="fas fa-shopping-cart text-lg mb-1" aria-hidden="true"></i> Cart
             <span class="cart-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
         </a>
         <a href="/wishlist.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
-            <i class="fas fa-heart text-lg mb-1"></i> Wishlist
+            <i class="fas fa-heart text-lg mb-1" aria-hidden="true"></i> Wishlist
             <span class="wishlist-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
         </a>
     </nav>
 
     <div id="exitModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
         <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 max-w-md w-full text-center relative slide-in">
-            <button onclick="document.getElementById('exitModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"><i class="fas fa-times text-xl"></i></button>
-            <i class="fas fa-gift text-6xl text-[#E53935] mb-4"></i>
+            <button onclick="document.getElementById('exitModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white" aria-label="Close Modal"><i class="fas fa-times text-xl" aria-hidden="true"></i></button>
+            <i class="fas fa-gift text-6xl text-[#E53935] mb-4" aria-hidden="true"></i>
             <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Wait! Here's 10% OFF</h2>
-            <p class="text-gray-500 dark:text-gray-400 mb-6">Don't leave empty-handed. Use this code at checkout for an instant 10% discount on your order!</p>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">Don't leave empty-handed. Use this code at checkout for an instant 10% discount on your order!</p>
             <div class="bg-gray-50 border-2 border-dashed border-[#E53935] rounded-xl py-4 mb-6">
                 <span class="text-3xl font-black text-[#E53935] tracking-widest">ASM10</span>
             </div>
@@ -643,18 +647,18 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
     <div id="quickViewModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
         <div class="bg-white dark:bg-gray-800 rounded-3xl max-w-3xl w-full overflow-hidden relative slide-in flex flex-col md:flex-row">
-            <button onclick="closeQuickView()" class="absolute top-4 right-4 bg-white/80 rounded-full p-2 text-gray-700 hover:bg-white z-10"><i class="fas fa-times text-xl"></i></button>
+            <button onclick="closeQuickView()" class="absolute top-4 right-4 bg-white/80 rounded-full p-2 text-gray-700 hover:bg-white z-10" aria-label="Close Quick View"><i class="fas fa-times text-xl" aria-hidden="true"></i></button>
             <div class="md:w-1/2 bg-gray-50 dark:bg-gray-900 p-4 flex items-center justify-center">
-                <img id="qvImage" src="" alt="Product Image" class="max-h-[300px] object-contain rounded-xl" width="300" height="300">
+                <img id="qvImage" src="" alt="Quick View Product Image" class="max-h-[300px] object-contain rounded-xl" width="300" height="300" loading="lazy" decoding="async">
             </div>
             <div class="md:w-1/2 p-6 flex flex-col">
                 <h2 id="qvName" class="text-xl font-extrabold text-gray-900 dark:text-white mb-2"></h2>
                 <p id="qvPrice" class="text-2xl font-black text-[#E53935] dark:text-white mb-3"></p>
-                <p id="qvDesc" class="text-sm text-gray-500 dark:text-gray-400 mb-6"></p>
+                <p id="qvDesc" class="text-sm text-gray-600 dark:text-gray-400 mb-6"></p>
                 <div class="mt-auto flex flex-col gap-2">
-                    <button id="qvAddCart" class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center justify-center gap-2"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-                    <button id="qvBuyNow" class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition flex items-center justify-center gap-2"><i class="fas fa-bolt"></i> Buy Now</button>
-                    <a id="qvLink" href="#" class="text-center text-sm text-[#E53935] hover:underline mt-2">View Full Details</a>
+                    <button id="qvAddCart" class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center justify-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
+                    <button id="qvBuyNow" class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition flex items-center justify-center gap-2"><i class="fas fa-bolt" aria-hidden="true"></i> Buy Now</button>
+                    <a id="qvLink" href="#" class="text-center text-sm text-[#E53935] hover:underline mt-2 font-semibold">View Full Details</a>
                 </div>
             </div>
         </div>
@@ -663,11 +667,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20know%20about%20your%20products" target="_blank" 
        class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all z-50 hover:scale-110 pulse-ring" 
        aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp text-3xl"></i>
+        <i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i>
     </a>
 
     <button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#E53935] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#C62828] transition z-50" aria-label="Back to top">
-        <i class="fas fa-arrow-up text-xl"></i>
+        <i class="fas fa-arrow-up text-xl" aria-hidden="true"></i>
     </button>
 
     <main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl">
@@ -684,11 +688,11 @@ def get_html_footer():
     <footer class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 mt-16 pt-12 pb-20 md:pb-8 border-t-4 border-[#E53935]">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center items-center gap-8 mb-12 pb-8 border-b border-gray-200 dark:border-gray-800">
-                <div class="text-gray-300 dark:text-gray-700 font-extrabold text-2xl">EVERSOURCE</div>
-                <div class="text-gray-300 dark:text-gray-700 font-extrabold text-2xl">LOGO</div>
-                <div class="text-gray-300 dark:text-gray-700 font-extrabold text-2xl">CYCLOPS</div>
-                <div class="text-gray-300 dark:text-gray-700 font-extrabold text-2xl">ENVATO</div>
-                <div class="text-gray-300 dark:text-gray-700 font-extrabold text-2xl">ASM</div>
+                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">EVERSOURCE</div>
+                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">LOGO</div>
+                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">CYCLOPS</div>
+                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">ENVATO</div>
+                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">ASM</div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10">
                 <div>
@@ -731,19 +735,19 @@ def get_html_footer():
                     <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Our Mission</h3>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
                     <div class="flex gap-3">
-                        <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/923425478683" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/923425478683" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
             <div class="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 text-center mb-6">
                 <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Service Center</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions, Karachi, Pakistan</p>
-                <p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-2 text-[#E53935]"></i> <a href="https://wa.me/923425478683" class="font-bold hover:text-[#E53935]">0342 54 786 83</a> (Mon-Sun: 9AM - 11PM)</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><i class="fas fa-building mr-2 text-[#E53935]" aria-hidden="true"></i> ASM Digital Solutions, Karachi, Pakistan</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-2 text-[#E53935]" aria-hidden="true"></i> <a href="https://wa.me/923425478683" class="font-bold hover:text-[#E53935]">0342 54 786 83</a> (Mon-Sun: 9AM - 11PM)</p>
             </div>
             <div class="border-t border-gray-200 dark:border-gray-800 text-center pt-8">
-                <p class="text-gray-500 text-sm font-semibold">&copy; 2026 ASM Digital Solutions. All Rights Reserved. | Powered by ASM VEO</p>
+                <p class="text-gray-600 dark:text-gray-500 text-sm font-semibold">&copy; 2026 ASM Digital Solutions. All Rights Reserved. | Powered by ASM VEO</p>
             </div>
         </div>
     </footer>
@@ -760,13 +764,13 @@ def generate_static_pages(categories_list):
     
     pages = {
         "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-12"><h1 class="text-4xl md:text-5xl font-extrabold text-[#E53935] dark:text-white mb-6">About ASM VEO</h1><p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">Your trusted shopping partner in Pakistan</p></div><div class="grid md:grid-cols-2 gap-8 mb-12"><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-bullseye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Mission</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To provide every Pakistani with access to premium quality products at affordable prices, delivered right to their doorstep with Cash on Delivery convenience.</p></div><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-eye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Vision</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To become Pakistan's most trusted and loved e-commerce platform, known for quality, reliability, and exceptional customer service.</p></div></div><div class="animated-bg text-white rounded-3xl p-8 md:p-12"><h2 class="text-3xl font-bold mb-4">Why Choose ASM VEO?</h2><div class="grid md:grid-cols-3 gap-6 mt-8"><div><i class="fas fa-shield-alt text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">100% Secure</h4><p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p></div><div><i class="fas fa-truck-fast text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Fast Delivery</h4><p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p></div><div><i class="fas fa-undo text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Easy Returns</h4><p class="text-gray-200 text-sm">7-day return policy, no questions asked</p></div></div></div></div>"""),
-        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-500"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-500 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
+        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-600 dark:text-gray-400 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
         "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl prose dark:prose-invert"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Privacy Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>At ASM VEO, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Information We Collect</h2><p>We collect your name, phone number, email, and shipping address when you place an order.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Data Security</h2><p>We use SSL encryption to protect your data. We never share your personal information with third parties except for shipping purposes.</p></div></div>"""),
         "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 2-4 business days.</p></div></div>"""),
         "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
         "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl text-center"><h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1><p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div>"""),
-        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-20 text-center"><div class="max-w-lg mx-auto"><div class="text-9xl font-black text-[#E53935] mb-4">404</div><h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Oops! Page Not Found</h1><p class="text-gray-500 dark:text-gray-400 mb-8">The page you're looking for doesn't exist.</p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a></div></div>"""),
+        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-20 text-center"><div class="max-w-lg mx-auto"><div class="text-9xl font-black text-[#E53935] mb-4">404</div><h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Oops! Page Not Found</h1><p class="text-gray-600 dark:text-gray-400 mb-8">The page you're looking for doesn't exist.</p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a></div></div>"""),
         "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"></div></div>
         <script>
         function renderWishlist() {
@@ -777,14 +781,14 @@ def generate_static_pages(categories_list):
                 let safeName = item.name.replace(/'/g, "\\\\'");
                 return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
                     <div class="h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
-                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.src='https://via.placeholder.com/400x400/E53935/ffffff?text=ASM+VEO'">
+                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.src='https://via.placeholder.com/400x400/E53935/ffffff?text=ASM+VEO'" alt="Product Image" loading="lazy" decoding="async">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
                         <p class="text-lg font-black text-[#E53935] dark:text-emerald-400 mb-3">Rs ${item.price}</p>
                         <div class="flex gap-2 mt-auto">
-                            <button onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus"></i></button>
-                            <button onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition"><i class="fas fa-trash"></i></button>
+                            <button aria-label="Add Wishlist Item to Cart" onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
+                            <button aria-label="Remove from Wishlist" onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition"><i class="fas fa-trash" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>`;
@@ -793,7 +797,7 @@ def generate_static_pages(categories_list):
         function removeWishlistItem(i) { let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || []; wl.splice(i, 1); localStorage.setItem('asm_wishlist', JSON.stringify(wl)); updateWishlistBadge(); renderWishlist(); }
         window.addEventListener('load', renderWishlist);
         </script>"""),
-        "order-success.html": ("Order Confirmed!", """<div class="container mx-auto px-4 py-20 text-center"><div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div><h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1><p class="text-gray-500 dark:text-gray-400 text-sm mb-8">Order ID: <span id="orderId" class="font-bold text-[#E53935]"></span></p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a></div>
+        "order-success.html": ("Order Confirmed!", """<div class="container mx-auto px-4 py-20 text-center"><div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div><h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1><p class="text-gray-600 dark:text-gray-400 text-sm mb-8">Order ID: <span id="orderId" class="font-bold text-[#E53935]"></span></p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a></div>
         <script>document.getElementById('orderId').innerText = 'ASM-' + Math.floor(100000 + Math.random() * 900000); localStorage.removeItem('asm_cart'); updateCartBadge();</script>""")
     }
 
@@ -818,9 +822,9 @@ def generate_static_pages(categories_list):
     for q, a in faqs:
         faq_html += f"""
             <details class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 group">
-                <summary class="p-5 cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between items-center list-none">
+                <summary class="p-5 cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between items-center list-none" aria-expanded="false">
                     {q}
-                    <i class="fas fa-chevron-down text-[#E53935] transition-transform group-open:rotate-180"></i>
+                    <i class="fas fa-chevron-down text-[#E53935] transition-transform group-open:rotate-180" aria-hidden="true"></i>
                 </summary>
                 <div class="px-5 pb-5 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{a}</div>
             </details>
@@ -883,7 +887,7 @@ def generate_manifest():
 
 def generate_product_card(prod, lazy=True, show_wishlist=True):
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
-    img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
+    img_loading = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="sync"'
     
     escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
     escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
@@ -895,18 +899,18 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             <button onclick="toggleWishlist('__SAFE_NAME__', __PRICE__, '__IMAGE__', event)" 
                     class="wishlist-btn absolute top-2 right-2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10" 
                     aria-label="Add to Wishlist">
-                <i class="fas fa-heart text-pink-500 text-sm"></i>
+                <i class="fas fa-heart text-pink-500 text-sm" aria-hidden="true"></i>
             </button>"""
     
     quick_view_btn = """
         <button onclick="quickView('__SAFE_NAME__', __PRICE__, '__IMAGE__', '__SAFE_DESC__', '__SLUG__')" 
                 class="absolute top-2 right-12 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10" 
                 aria-label="Quick View">
-            <i class="fas fa-eye text-[#E53935] text-sm"></i>
+            <i class="fas fa-eye text-[#E53935] text-sm" aria-hidden="true"></i>
         </button>"""
     
     card = f"""
-    <div class="product-card reveal bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'">
+    <div class="product-card reveal bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details for {alt_name}">
         {wishlist_btn}
         {quick_view_btn}
         {f'<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-{discount}% OFF</div>' if discount > 0 else ''}
@@ -919,10 +923,10 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             <div class="mt-auto">
                 <div class="flex items-center gap-1 mb-1">
                     <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
-                    <span class="text-[9px] text-gray-400 font-bold line-through">Rs {prod['fake_price']}</span>
+                    <span class="text-[9px] text-gray-500 dark:text-gray-400 font-bold line-through">Rs {prod['fake_price']}</span>
                 </div>
                 <button onclick="addToCart('__SAFE_NAME__', __PRICE__, '__IMAGE__', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center" aria-label="Add to Cart">
-                    <i class="fas fa-cart-plus"></i>
+                    <i class="fas fa-cart-plus" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -937,27 +941,21 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
 
 
 # ==============================================================================
-# PAGINATION HTML GENERATOR (Fixed Design to Match Screenshot)
+# PAGINATION HTML GENERATOR
 # ==============================================================================
 
 def generate_pagination_html(current_page, total_pages, url_pattern):
-    """
-    Generates exact matching pagination style with blue active square (Screenshot style).
-    url_pattern examples: 'index' or 'category/perfume'
-    """
     if total_pages <= 1: 
         return ""
         
-    html = '<div class="flex justify-center items-center gap-2 mt-12 mb-8 font-semibold text-gray-500 text-lg">'
+    html = '<div class="flex justify-center items-center gap-2 mt-12 mb-8 font-semibold text-gray-600 text-lg" role="navigation" aria-label="Pagination Navigation">'
     
-    # Prev Button ('<' Arrow)
     if current_page > 1:
         prev_slug = url_pattern if current_page - 1 == 1 else f"{url_pattern}-{current_page - 1}"
         html += f'<a href="/{prev_slug}.html" class="px-3 py-1 hover:text-[#007BFF] transition" aria-label="Previous Page">&lt;</a>'
     else:
-        html += '<span class="px-3 py-1 opacity-40 cursor-not-allowed">&lt;</span>'
+        html += '<span class="px-3 py-1 opacity-40 cursor-not-allowed" aria-hidden="true">&lt;</span>'
         
-    # Logic for Pages Display
     pages_to_show = []
     if total_pages <= 7:
         pages_to_show = list(range(1, total_pages + 1))
@@ -969,30 +967,26 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         else:
             pages_to_show = [1, '...', current_page-1, current_page, current_page+1, '...', total_pages]
             
-    # Rendering page numbers
     for p_num in pages_to_show:
         if p_num == '...':
-            html += '<span class="px-2 py-1">...</span>'
+            html += '<span class="px-2 py-1" aria-hidden="true">...</span>'
         elif p_num == current_page:
-            # Active Blue Rounded Box (Matching user's Screenshot)
-            html += f'<span class="bg-[#007BFF] text-white px-4 py-2 rounded-lg shadow-sm">{p_num}</span>'
+            html += f'<span class="bg-[#007BFF] text-white px-4 py-2 rounded-lg shadow-sm" aria-current="page">{p_num}</span>'
         else:
-            # Inactive Plain Text
             p_slug = url_pattern if p_num == 1 else f"{url_pattern}-{p_num}"
-            html += f'<a href="/{p_slug}.html" class="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition">{p_num}</a>'
+            html += f'<a href="/{p_slug}.html" class="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition" aria-label="Go to Page {p_num}">{p_num}</a>'
             
-    # Next Button ('>' Arrow)
     if current_page < total_pages:
         next_slug = f"{url_pattern}-{current_page + 1}"
         html += f'<a href="/{next_slug}.html" class="px-3 py-1 hover:text-[#007BFF] transition" aria-label="Next Page">&gt;</a>'
     else:
-        html += '<span class="px-3 py-1 opacity-40 cursor-not-allowed">&gt;</span>'
+        html += '<span class="px-3 py-1 opacity-40 cursor-not-allowed" aria-hidden="true">&gt;</span>'
         
     html += '</div>'
     return html
 
 # ==============================================================================
-# MAIN PROCESSOR - WITH 404 & PAGINATION FIXES APPLIED
+# MAIN PROCESSOR
 # ==============================================================================
 
 def process_woocommerce_csv():
@@ -1084,7 +1078,7 @@ def process_woocommerce_csv():
         if len(prod['images']) > 1:
             gallery_thumbs = ""
             for idx, img in enumerate(prod['images'][:5]):
-                gallery_thumbs += f'<img src="{img}" alt="Thumbnail {idx+1}" onclick="changeMainImage(this)" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 {"border-[#E53935]" if idx == 0 else "border-gray-200"} hover:border-[#E53935] transition" onerror="this.style.display=\'none\'">'
+                gallery_thumbs += f'<img src="{img}" alt="Thumbnail {idx+1}" onclick="changeMainImage(this)" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 {"border-[#E53935]" if idx == 0 else "border-gray-200"} hover:border-[#E53935] transition" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">'
             gallery_html = f'<div class="flex gap-2 mt-4 overflow-x-auto">{gallery_thumbs}</div>'
         
         breadcrumb_data = {'category': prod['category'], 'name': prod['name'], 'slug': prod['slug']}
@@ -1112,13 +1106,13 @@ def process_woocommerce_csv():
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-16 md:mb-0 reveal">
                 <h2 class="text-xl font-extrabold text-gray-900 dark:text-white mb-4 border-b pb-4">Ready for the next product?</h2>
                 <div class="flex items-center gap-4">
-                    <img src="{next_prod['image']}" alt="{next_prod['name'].replace('"', '&quot;')}" class="w-20 h-20 object-contain rounded-lg border border-gray-100">
+                    <img src="{next_prod['image']}" alt="{next_prod['name'].replace('"', '&quot;')}" class="w-20 h-20 object-contain rounded-lg border border-gray-100" loading="lazy" decoding="async">
                     <div class="flex-grow">
                         <h3 class="font-bold text-sm text-gray-900 dark:text-white line-clamp-2">{next_prod['name']}</h3>
                         <p class="text-lg font-black text-[#E53935] dark:text-white mt-1">Rs {next_prod['final_price']}</p>
                     </div>
                     <a href="/product/{next_prod['slug']}.html" class="bg-[#E53935] text-white py-3 px-6 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center gap-2 whitespace-nowrap">
-                        Next <i class="fas fa-arrow-right"></i>
+                        Next <i class="fas fa-arrow-right" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -1135,7 +1129,7 @@ def process_woocommerce_csv():
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row mb-12 reveal">
                 <div class="md:w-1/2 p-6 flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 relative">
                     {f'<div class="absolute top-4 left-4 bg-[#E53935] text-white text-sm font-black px-3 py-1.5 rounded-lg z-10 shadow-md">-{discount_pct}% OFF</div>' if discount_pct > 0 else ''}
-                    <img id="mainProductImage" src="{prod['image']}" alt="{alt_name}" fetchpriority="high" width="600" height="600" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/600x600/E53935/ffffff?text=ASM+VEO'">
+                    <img id="mainProductImage" src="{prod['image']}" alt="{alt_name}" fetchpriority="high" decoding="sync" width="600" height="600" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/600x600/E53935/ffffff?text=ASM+VEO'">
                     {gallery_html}
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
@@ -1155,37 +1149,37 @@ def process_woocommerce_csv():
                     
                     <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl mb-6 border border-gray-100 dark:border-gray-600">
                         <div class="flex justify-between text-xs font-bold text-gray-600 dark:text-gray-300 mb-2">
-                            <span><i class="fas fa-eye"></i> <span id="liveViewers">15</span> people are viewing this right now</span>
-                            <span><i class="fas fa-fire text-orange-500"></i> Hurry, only {stock_left} left!</span>
+                            <span><i class="fas fa-eye" aria-hidden="true"></i> <span id="liveViewers">15</span> people are viewing this right now</span>
+                            <span><i class="fas fa-fire text-orange-500" aria-hidden="true"></i> Hurry, only {stock_left} left!</span>
                         </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600">
+                        <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-600">
                             <div class="bg-orange-500 h-2.5 rounded-full" style="width: {stock_pct}%"></div>
                         </div>
                     </div>
                     
                     <div class="flex items-center gap-2 mb-6 text-sm">
-                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold"><i class="fas fa-truck"></i> Delivery by {delivery_date}</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-bold"><i class="fas fa-truck" aria-hidden="true"></i> Delivery by {delivery_date}</span>
                     </div>
                     
                     <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-6">{prod['full_desc'][:500] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto main-product-actions">
                         <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#E53935] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#E53935] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
+                            <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
                         </button>
                         <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#E53935] text-white py-4 rounded-xl font-black text-lg hover:bg-[#C62828] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
-                            <i class="fas fa-bolt"></i> Buy Now
+                            <i class="fas fa-bolt" aria-hidden="true"></i> Buy Now
                         </button>
                     </div>
                     
                     <a href="{wa_link}" target="_blank" class="mt-4 w-full md:w-5/6 bg-green-500 text-white font-bold py-3 rounded-xl hover:bg-green-600 transition flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp text-xl"></i> Quick Order via WhatsApp
+                        <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Quick Order via WhatsApp
                     </a>
                     
                     <div class="grid grid-cols-3 gap-3 mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
-                        <div class="text-center"><i class="fas fa-shield-alt text-[#E53935] text-xl mb-1"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Secure Payment</p></div>
-                        <div class="text-center"><i class="fas fa-undo text-[#E53935] text-xl mb-1"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">7-Day Returns</p></div>
-                        <div class="text-center"><i class="fas fa-truck text-[#E53935] text-xl mb-1"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Fast Delivery</p></div>
+                        <div class="text-center"><i class="fas fa-shield-alt text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Secure Payment</p></div>
+                        <div class="text-center"><i class="fas fa-undo text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">7-Day Returns</p></div>
+                        <div class="text-center"><i class="fas fa-truck text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Fast Delivery</p></div>
                     </div>
                 </div>
             </div>
@@ -1194,7 +1188,7 @@ def process_woocommerce_csv():
             
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal">
                 <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4 flex items-center gap-3">
-                    <i class="fas fa-star text-yellow-500"></i> Customer Reviews ({review_count})
+                    <i class="fas fa-star text-yellow-500" aria-hidden="true"></i> Customer Reviews ({review_count})
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>{reviews_section}</div>
@@ -1202,7 +1196,7 @@ def process_woocommerce_csv():
                         <h3 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Write a Review</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Only verified buyers can leave a review after receiving the product to maintain quality standards.</p>
                         <div class="flex items-center gap-2 text-[#E53935] dark:text-white font-bold bg-gray-50 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600">
-                            <i class="fas fa-lock"></i> Review form is currently locked.
+                            <i class="fas fa-lock" aria-hidden="true"></i> Review form is currently locked.
                         </div>
                     </div>
                 </div>
@@ -1212,15 +1206,15 @@ def process_woocommerce_csv():
                 <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4">Product FAQs</h2>
                 <div class="space-y-4">
                     <details class="border border-gray-200 dark:border-gray-700 rounded-xl p-4 group">
-                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none">Is this product genuine? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition"></i></summary>
+                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none" aria-expanded="false">Is this product genuine? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition" aria-hidden="true"></i></summary>
                         <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Yes! We source 100% genuine products directly from authorized distributors. Every product is quality-checked before dispatch.</p>
                     </details>
                     <details class="border border-gray-200 dark:border-gray-700 rounded-xl p-4 group">
-                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none">What is the delivery time? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition"></i></summary>
+                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none" aria-expanded="false">What is the delivery time? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition" aria-hidden="true"></i></summary>
                         <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Delivery takes 2-4 business days across Pakistan. Major cities receive faster delivery.</p>
                     </details>
                     <details class="border border-gray-200 dark:border-gray-700 rounded-xl p-4 group">
-                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none">Can I return this product? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition"></i></summary>
+                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none" aria-expanded="false">Can I return this product? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition" aria-hidden="true"></i></summary>
                         <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Yes, we offer a 7-day return policy. The product must be in its original condition with packaging.</p>
                     </details>
                 </div>
@@ -1234,8 +1228,8 @@ def process_woocommerce_csv():
                 <span class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{prod['name']}</span>
                 <span class="text-lg font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
             </div>
-            <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="bg-[#E53935] text-white px-4 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2">
-                <i class="fas fa-cart-plus"></i> Add to Cart
+            <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="bg-[#E53935] text-white px-4 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2" aria-label="Add to Cart">
+                <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
             </button>
         </div>
         """
@@ -1313,9 +1307,7 @@ def process_woocommerce_csv():
         with open(f"output/city/{city_slug}.html", "w", encoding="utf-8") as f:
             f.write(minify_html(city_html))
 
-    # ==========================================================================
-    # FIX: CATEGORY PAGES GENERATION - GENERATE 100% OF CATEGORIES INDEPENDENTLY
-    # ==========================================================================
+    # ================= CATEGORY PAGES =================
     print("📂 Generating Category Pages...")
     sections_dict = {}
     for p in products_list:
@@ -1352,7 +1344,7 @@ def process_woocommerce_csv():
                 <div class="absolute bottom-10 left-10 w-48 h-48 bg-white/5 rounded-full animate-float" style="animation-delay: 2s;"></div>
                 <div class="container mx-auto px-4 text-center relative z-10">
                     <div class="w-16 h-16 mx-auto rounded-full bg-white/20 backdrop-blur flex items-center justify-center mb-4 text-white shadow-lg">
-                        <i class="fas {get_category_icon(cat_name)} text-3xl"></i>
+                        <i class="fas {get_category_icon(cat_name)} text-3xl" aria-hidden="true"></i>
                     </div>
                     <h1 class="text-3xl md:text-5xl font-black text-white">{cat_name}</h1>
                     <p class="text-gray-200 mt-3 font-bold">{len(prods)} Products Available • Cash on Delivery</p>
@@ -1364,9 +1356,9 @@ def process_woocommerce_csv():
                     <!-- Filters Sidebar -->
                     <aside class="lg:w-64 flex-shrink-0">
                         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-5 sticky top-24">
-                            <h3 class="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2"><i class="fas fa-filter text-[#E53935]"></i> Filters</h3>
+                            <h3 class="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2"><i class="fas fa-filter text-[#E53935]" aria-hidden="true"></i> Filters</h3>
                             <div class="mb-6">
-                                <h4 class="text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">Sort By</h4>
+                                <h4 class="text-sm font-bold text-gray-700 dark:text-gray-300 mb-3"><label for="sortBy">Sort By</label></h4>
                                 <select id="sortBy" onchange="applyFilters()" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white">
                                     <option value="default">Featured</option>
                                     <option value="price-low">Price: Low to High</option>
@@ -1377,12 +1369,12 @@ def process_woocommerce_csv():
                             <div class="mb-6">
                                 <h4 class="text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">Price Range</h4>
                                 <div class="flex items-center gap-2 mb-2">
-                                    <input type="number" id="minPrice" placeholder="Min" value="{int(min_price)}" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white">
-                                    <input type="number" id="maxPrice" placeholder="Max" value="{int(max_price)}" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white">
+                                    <input type="number" id="minPrice" placeholder="Min" value="{int(min_price)}" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white" aria-label="Minimum Price">
+                                    <input type="number" id="maxPrice" placeholder="Max" value="{int(max_price)}" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white" aria-label="Maximum Price">
                                 </div>
                                 <button onclick="applyFilters()" class="w-full bg-[#E53935] text-white py-2 rounded-lg text-sm font-bold hover:bg-[#C62828] transition">Apply Filter</button>
                             </div>
-                            <button onclick="resetFilters()" class="w-full text-gray-500 hover:text-[#E53935] text-sm font-bold transition"><i class="fas fa-undo mr-1"></i> Reset Filters</button>
+                            <button onclick="resetFilters()" class="w-full text-gray-600 hover:text-[#E53935] text-sm font-bold transition"><i class="fas fa-undo mr-1" aria-hidden="true"></i> Reset Filters</button>
                         </div>
                     </aside>
                     
@@ -1392,11 +1384,9 @@ def process_woocommerce_csv():
             """
             
             for prod in current_prods:
-                cat_html += generate_product_card(prod, lazy=False)
+                cat_html += generate_product_card(prod, lazy=True)
             
             cat_html += "</div>"
-            
-            # Apply the Blue Screenshot-Style Pagination
             cat_html += generate_pagination_html(page_num, total_pages, f"category/{cat_slug}")
             cat_html += "</div></div></div>"
             
@@ -1438,7 +1428,7 @@ def process_woocommerce_csv():
                         <button onclick="quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-12 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#E53935] text-sm"></i></button>
                         ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                         <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                            <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
+                            <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" decoding="async" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
                         </div>
                         <div class="p-2 flex flex-col flex-grow">
                             <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -1446,7 +1436,7 @@ def process_woocommerce_csv():
                             <div class="mt-auto">
                                 <div class="flex items-center gap-1 mb-1">
                                     <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
-                                    <span class="text-[9px] text-gray-400 font-bold line-through">Rs ${p.fake_price}</span>
+                                    <span class="text-[9px] text-gray-500 font-bold line-through">Rs ${p.fake_price}</span>
                                 </div>
                                 <button onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center"><i class="fas fa-cart-plus"></i></button>
                             </div>
@@ -1479,7 +1469,7 @@ def process_woocommerce_csv():
 
 
     # ==============================================================================
-    # FIX: HOMEPAGE DYNAMIC PAGINATION (Index-1, Index-2, etc.)
+    # HOMEPAGE DYNAMIC PAGINATION (Index-1, Index-2, etc.)
     # ==============================================================================
     print("🏠 Generating Home Pages with Pagination...")
     all_categories_list = list(sections_dict.items())
@@ -1491,13 +1481,12 @@ def process_woocommerce_csv():
         home_html = get_html_header(page_title, categories_list,
                                      "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
         
-        # Only show the large banners, flash sales, and top bar on Page 1
         if h_page == 1:
             home_html += """
-            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl">
+            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
-                    <div class="carousel-slide h-full relative">
-                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion Sale" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="carousel-slide h-full relative" aria-hidden="false">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion Sale Banner" fetchpriority="high" decoding="sync" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
                         <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
                             <div class="max-w-lg">
@@ -1507,8 +1496,8 @@ def process_woocommerce_csv():
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-slide h-full relative">
-                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Gadgets" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="carousel-slide h-full relative" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Gadgets Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
                         <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
                             <div class="max-w-lg">
@@ -1518,8 +1507,8 @@ def process_woocommerce_csv():
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-slide h-full relative">
-                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80" alt="Mega Sale" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="carousel-slide h-full relative" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80" alt="Mega Sale Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
                         <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
                             <div class="max-w-lg">
@@ -1529,8 +1518,8 @@ def process_woocommerce_csv():
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-slide h-full relative">
-                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1200&q=80" alt="Shoes" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="carousel-slide h-full relative" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1200&q=80" alt="Shoes Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
                         <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
                             <div class="max-w-lg">
@@ -1541,9 +1530,9 @@ def process_woocommerce_csv():
                         </div>
                     </div>
                 </div>
-                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/60 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
-                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/60 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
-                <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20"></div>
+                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
             </div>
             
             <script>
@@ -1552,11 +1541,14 @@ def process_woocommerce_csv():
                 const dotsContainer = document.getElementById('carouselDots');
                 
                 slides.forEach((_, i) => {
-                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition"></button>`;
+                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition focus:outline-none" aria-label="Go to slide ${i + 1}"></button>`;
                 });
                 
                 function updateCarousel() {
                     document.querySelector('.carousel-track').style.transform = `translateX(-${slideIndex * 100}%)`;
+                    slides.forEach((slide, i) => {
+                        slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true');
+                    });
                     document.querySelectorAll('#carouselDots button').forEach((dot, i) => {
                         dot.className = `w-3 h-3 rounded-full transition ${i === slideIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white'}`;
                     });
@@ -1567,7 +1559,7 @@ def process_woocommerce_csv():
                 function goToSlide(i) { slideIndex = i; updateCarousel(); }
                 
                 updateCarousel();
-                setInterval(nextSlide, 2000);
+                setInterval(nextSlide, 3500);
             </script>
             """
 
@@ -1581,7 +1573,7 @@ def process_woocommerce_csv():
                 home_html += f"""
                     <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group">
                         <div class="w-16 h-16 rounded-full bg-gray-50 dark:bg-gray-700 group-hover:bg-[#E53935] flex items-center justify-center transition-all group-hover:scale-105 shadow-sm border border-gray-100 dark:border-gray-600">
-                            <i class="fas {get_category_icon(cat)} text-xl text-[#E53935] group-hover:text-white transition"></i>
+                            <i class="fas {get_category_icon(cat)} text-xl text-[#E53935] group-hover:text-white transition" aria-hidden="true"></i>
                         </div>
                         <span class="text-[10px] md:text-xs font-bold text-gray-700 dark:text-gray-200 group-hover:text-[#E53935] transition line-clamp-1">{cat}</span>
                     </a>
@@ -1592,13 +1584,13 @@ def process_woocommerce_csv():
             <div class="bg-[#E53935] text-white py-6 mt-6">
                 <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div class="flex items-center gap-3">
-                        <i class="fas fa-bolt text-yellow-400 text-3xl animate-pulse"></i>
+                        <i class="fas fa-bolt text-yellow-400 text-3xl animate-pulse" aria-hidden="true"></i>
                         <div>
                             <h2 class="text-2xl font-extrabold">Flash Sale</h2>
                             <p class="text-gray-200 text-sm">Hurry up! Offer ends soon.</p>
                         </div>
                     </div>
-                    <div id="countdown" class="flex gap-3 text-center">
+                    <div id="countdown" class="flex gap-3 text-center" aria-label="Flash Sale Countdown Timer">
                         <div class="bg-white/10 px-4 py-2 rounded-lg"><span id="hours" class="text-2xl font-black text-white">00</span><br><span class="text-xs text-gray-200">Hrs</span></div>
                         <div class="bg-white/10 px-4 py-2 rounded-lg"><span id="minutes" class="text-2xl font-black text-white">00</span><br><span class="text-xs text-gray-200">Min</span></div>
                         <div class="bg-white/10 px-4 py-2 rounded-lg"><span id="seconds" class="text-2xl font-black text-white">00</span><br><span class="text-xs text-gray-200">Sec</span></div>
@@ -1630,36 +1622,34 @@ def process_woocommerce_csv():
             <div class="container mx-auto px-4 py-6">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-truck-fast text-xl"></i></div>
+                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-truck-fast text-xl" aria-hidden="true"></i></div>
                         <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Fast Delivery</h3><p class="text-xs text-gray-500 dark:text-gray-400">All over Pakistan</p></div>
                     </div>
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-money-bill-wave text-xl"></i></div>
+                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-money-bill-wave text-xl" aria-hidden="true"></i></div>
                         <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Cash on Delivery</h3><p class="text-xs text-gray-500 dark:text-gray-400">Pay at your doorstep</p></div>
                     </div>
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-shield-halved text-xl"></i></div>
+                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-shield-halved text-xl" aria-hidden="true"></i></div>
                         <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Secure Shopping</h3><p class="text-xs text-gray-500 dark:text-gray-400">100% Protected</p></div>
                     </div>
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-undo text-xl"></i></div>
+                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-undo text-xl" aria-hidden="true"></i></div>
                         <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Easy Returns</h3><p class="text-xs text-gray-500 dark:text-gray-400">7 Days Return Policy</p></div>
                     </div>
                 </div>
             </div>
             """
 
-        # Add Products Section Wrapper
         home_html += f"""
         <div class='container mx-auto px-4 py-4' id="products">
             <div id="searchResultsSection" class="hidden mb-6">
                 <h2 id="searchResultsHeading" class="text-2xl font-extrabold text-[#E53935] dark:text-white mb-2 border-b pb-2"></h2>
-                <p id="searchResultsCount" class="text-gray-500 text-sm"></p>
+                <p id="searchResultsCount" class="text-gray-600 text-sm"></p>
             </div>
             <div id="defaultContent">
         """
         
-        # Load the relevant categories for this specific paginated home page
         start_c = (h_page - 1) * cats_per_home_page
         end_c = start_c + cats_per_home_page
         page_cats = all_categories_list[start_c:end_c]
@@ -1671,22 +1661,24 @@ def process_woocommerce_csv():
             <div class="mb-14 category-section reveal">
                 <div class="flex justify-between items-center mb-6">
                     <h2 class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white border-l-4 border-[#E53935] pl-4">{cat_name}</h2>
-                    <a href="/category/{cat_slug}.html" class="text-[#E53935] dark:text-white font-bold text-sm bg-gray-50 dark:bg-gray-800 px-5 py-2.5 rounded-full hover:bg-[#E53935] hover:text-white transition-all shadow-sm">View All <i class="fas fa-arrow-right ml-1"></i></a>
+                    <a href="/category/{cat_slug}.html" class="text-[#E53935] dark:text-white font-bold text-sm bg-gray-50 dark:bg-gray-800 px-5 py-2.5 rounded-full hover:bg-[#E53935] hover:text-white transition-all shadow-sm">View All <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i></a>
                 </div>
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
+            # Use fetchpriority high for the very first few products on the first page, lazy for rest
             for idx, prod in enumerate(prods[:6]):
-                home_html += generate_product_card(prod, lazy=(idx >= 3))
+                is_lazy = True
+                if h_page == 1 and idx < 3: 
+                    is_lazy = False
+                home_html += generate_product_card(prod, lazy=is_lazy)
                 
             home_html += "</div></div>"
         
-        home_html += "</div></div>" # Close defaultContent and products wrapper
+        home_html += "</div></div>"
         
-        # ADD THE NEW IMAGE MATCHING PAGINATION DESIGN HERE
         home_html += generate_pagination_html(h_page, total_home_pages, "index")
         
-        # Show Extra Footer Sections only on Page 1
         if h_page == 1:
             home_html += """
             <div class="container mx-auto px-4 py-8 border-t border-gray-200 dark:border-gray-700">
@@ -1743,7 +1735,7 @@ def process_woocommerce_csv():
                         html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                             <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
+                                <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" decoding="async" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
                             </div>
                             <div class="p-2 flex flex-col flex-grow">
                                 <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -1752,7 +1744,7 @@ def process_woocommerce_csv():
                                     <div class="flex items-center gap-1 mb-1">
                                         <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
                                     </div>
-                                    <button onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center"><i class="fas fa-cart-plus"></i></button>
+                                    <button aria-label="Add Searched Item to Cart" onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>`;
@@ -1760,7 +1752,7 @@ def process_woocommerce_csv():
                     html += '</div>';
                     
                     if (results.length === 0) {
-                        html = '<div class="text-center py-16 text-gray-500"><i class="fas fa-search text-6xl mb-4 opacity-30"></i><p class="text-lg font-bold">No products found</p><p class="text-sm mt-2">Try different keywords</p></div>';
+                        html = '<div class="text-center py-16 text-gray-600"><i class="fas fa-search text-6xl mb-4 opacity-30" aria-hidden="true"></i><p class="text-lg font-bold">No products found</p><p class="text-sm mt-2">Try different keywords</p></div>';
                     }
                     
                     let resultsDiv = document.createElement('div');
@@ -1793,12 +1785,11 @@ def process_woocommerce_csv():
                         if (isNaN(discount)) discount = 0;
                         
                         let htmlSafeName = p.name.replace(/"/g, '&quot;');
-                        let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
                         
                         return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                             <div class="h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
+                                <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" decoding="async" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
                             </div>
                             <div class="p-2 flex flex-col flex-grow">
                                 <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-1">${htmlSafeName}</h3>
@@ -1863,7 +1854,7 @@ def process_woocommerce_csv():
     checkout_html = get_html_header("Secure Checkout", categories_list, "Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO.")
     checkout_html += f"""
     <div class="container mx-auto px-4 py-12 max-w-6xl">
-        <h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-lock text-[#E53935]"></i> Secure Checkout</h1>
+        <h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-lock text-[#E53935]" aria-hidden="true"></i> Secure Checkout</h1>
         
         <div class="flex items-center justify-center mb-10">
             <div class="flex items-center text-[#E53935] font-bold">
@@ -1876,8 +1867,8 @@ def process_woocommerce_csv():
                 <span class="ml-2 hidden md:inline">Details</span>
             </div>
             <div class="w-16 md:w-32 h-1 bg-gray-200 mx-2"></div>
-            <div class="flex items-center text-gray-400 font-bold">
-                <div class="w-10 h-10 bg-gray-200 text-gray-400 rounded-full flex items-center justify-center font-black">3</div>
+            <div class="flex items-center text-gray-500 font-bold">
+                <div class="w-10 h-10 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-black">3</div>
                 <span class="ml-2 hidden md:inline">Confirm</span>
             </div>
         </div>
@@ -1885,17 +1876,17 @@ def process_woocommerce_csv():
         <div class="flex flex-col lg:flex-row gap-8">
             <div class="lg:w-1/2">
                 <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 border border-gray-200 dark:border-gray-700 mb-6">
-                    <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-4 border-b pb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-[#E53935]"></i> Your Items</h2>
+                    <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-4 border-b pb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-[#E53935]" aria-hidden="true"></i> Your Items</h2>
                     <div id="cartItemsContainer" class="space-y-4 max-h-[400px] overflow-y-auto pr-2"></div>
                 </div>
                 
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700">
                     <h3 class="font-bold text-gray-900 dark:text-white mb-3 text-sm">Why Shop With Us?</h3>
-                    <div class="grid grid-cols-2 gap-3 text-xs text-gray-700 dark:text-gray-300">
-                        <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-[#E53935]"></i> 100% Secure Checkout</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-truck text-[#E53935]"></i> Fast Nationwide Delivery</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-undo text-[#E53935]"></i> 7-Day Return Policy</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-certificate text-[#E53935]"></i> 100% Genuine Products</div>
+                    <div class="grid grid-cols-2 gap-3 text-xs text-gray-800 dark:text-gray-300">
+                        <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-[#E53935]" aria-hidden="true"></i> 100% Secure Checkout</div>
+                        <div class="flex items-center gap-2"><i class="fas fa-truck text-[#E53935]" aria-hidden="true"></i> Fast Nationwide Delivery</div>
+                        <div class="flex items-center gap-2"><i class="fas fa-undo text-[#E53935]" aria-hidden="true"></i> 7-Day Return Policy</div>
+                        <div class="flex items-center gap-2"><i class="fas fa-certificate text-[#E53935]" aria-hidden="true"></i> 100% Genuine Products</div>
                     </div>
                 </div>
             </div>
@@ -1903,8 +1894,8 @@ def process_woocommerce_csv():
             <div class="lg:w-1/2">
                 <div class="bg-[#E53935] p-6 rounded-t-3xl text-white relative">
                     <div class="absolute top-0 left-0 w-full h-1 bg-white rounded-t-3xl"></div>
-                    <h1 class="text-2xl font-extrabold flex items-center gap-2"><i class="fas fa-map-marker-alt text-white"></i> Shipping Details</h1>
-                    <p class="text-gray-200 text-sm mt-1"><i class="fas fa-truck"></i> Expected delivery: {delivery_date}</p>
+                    <h1 class="text-2xl font-extrabold flex items-center gap-2"><i class="fas fa-map-marker-alt text-white" aria-hidden="true"></i> Shipping Details</h1>
+                    <p class="text-gray-200 text-sm mt-1"><i class="fas fa-truck" aria-hidden="true"></i> Expected delivery: {delivery_date}</p>
                 </div>
                 
                 <form id="checkoutForm" class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-b-3xl shadow-xl border border-gray-200 dark:border-gray-700 border-t-0 space-y-5">
@@ -1914,23 +1905,23 @@ def process_woocommerce_csv():
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
-                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Full Name <span class="text-red-600">*</span></label>
-                            <input type="text" name="Full_Name" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="Your Name">
+                            <label for="fullName" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Full Name <span class="text-red-600">*</span></label>
+                            <input type="text" id="fullName" name="Full_Name" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="Your Name">
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Email Address</label>
-                            <input type="email" name="Email" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="you@example.com">
+                            <label for="emailAddr" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Email Address</label>
+                            <input type="email" id="emailAddr" name="Email" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="you@example.com">
                         </div>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
-                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number <span class="text-red-600">*</span></label>
-                            <input type="tel" name="Phone_Number" pattern="03[0-9]{{2}}[0-9]{{7}}" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="0300-XXXXXXX">
+                            <label for="phoneNum" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number <span class="text-red-600">*</span></label>
+                            <input type="tel" id="phoneNum" name="Phone_Number" pattern="03[0-9]{{2}}[0-9]{{7}}" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="0300-XXXXXXX">
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
-                            <select name="City" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required>
+                            <label for="citySelect" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
+                            <select id="citySelect" name="City" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required>
                                 <option value="" disabled selected>Select City</option>
                                 {tehsil_options}
                             </select>
@@ -1938,20 +1929,20 @@ def process_woocommerce_csv():
                     </div>
                     
                     <div>
-                        <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label>
-                        <textarea name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
+                        <label for="addressInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label>
+                        <textarea id="addressInput" name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
                     </div>
                     
                     <div>
-                        <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label>
-                        <textarea name="Order_Notes" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="Any special instructions..."></textarea>
+                        <label for="orderNotes" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label>
+                        <textarea id="orderNotes" name="Order_Notes" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="Any special instructions..."></textarea>
                     </div>
                     
                     <div>
-                        <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Coupon Code</label>
+                        <label for="couponCode" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Coupon Code</label>
                         <div class="flex gap-2">
                             <input type="text" id="couponCode" placeholder="Enter ASM10 for 10% off (Min Rs 3000)" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none uppercase">
-                            <button type="button" onclick="applyCoupon()" class="bg-gray-900 text-white px-5 rounded-xl font-bold hover:bg-gray-700 transition">Apply</button>
+                            <button type="button" onclick="applyCoupon()" class="bg-gray-900 text-white px-5 rounded-xl font-bold hover:bg-gray-700 transition" aria-label="Apply Coupon">Apply</button>
                         </div>
                     </div>
                     
@@ -1975,14 +1966,14 @@ def process_woocommerce_csv():
                     </div>
 
                     <button type="submit" id="submitBtn" class="w-full bg-[#E53935] text-white font-black py-4 rounded-xl hover:bg-[#C62828] transition-all shadow-xl text-lg transform hover:-translate-y-1 flex items-center justify-center gap-2">
-                        <i class="fas fa-check-circle"></i> Confirm Order
+                        <i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order
                     </button>
                     
                     <a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20order!" class="w-full bg-green-500 text-white font-black py-4 rounded-xl hover:bg-green-600 transition-all shadow-xl text-lg mt-3 flex items-center justify-center gap-2 transform hover:-translate-y-1">
-                        <i class="fab fa-whatsapp text-xl"></i> Order via WhatsApp
+                        <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Order via WhatsApp
                     </a>
                     
-                    <p class="text-center text-xs text-gray-500 dark:text-gray-400 mt-4"><i class="fas fa-lock"></i> Your information is secure and never shared with third parties.</p>
+                    <p class="text-center text-xs text-gray-600 dark:text-gray-400 mt-4"><i class="fas fa-lock" aria-hidden="true"></i> Your information is secure and never shared with third parties.</p>
                 </form>
             </div>
         </div>
@@ -2046,7 +2037,7 @@ def process_woocommerce_csv():
             } else {
                 let cart = getCart();
                 if(cart.length === 0) {
-                    container.innerHTML = `<div class="text-center py-8"><i class="fas fa-shopping-cart text-5xl text-gray-300 mb-3"></i><p class="text-gray-500 font-semibold">Your cart is empty.</p><a href="/index.html" class="inline-block mt-4 bg-[#E53935] text-white px-6 py-2 rounded-xl font-bold">Browse Products</a></div>`;
+                    container.innerHTML = `<div class="text-center py-8"><i class="fas fa-shopping-cart text-5xl text-gray-300 mb-3" aria-hidden="true"></i><p class="text-gray-500 font-semibold">Your cart is empty.</p><a href="/index.html" class="inline-block mt-4 bg-[#E53935] text-white px-6 py-2 rounded-xl font-bold">Browse Products</a></div>`;
                     document.getElementById('submitBtn').disabled = true;
                     document.getElementById('submitBtn').classList.add('opacity-50', 'cursor-not-allowed');
                 } else {
@@ -2061,15 +2052,15 @@ def process_woocommerce_csv():
                         
                         container.innerHTML += `
                         <div class="flex items-center gap-3 bg-gray-50 dark:bg-gray-700 p-3 rounded-xl border border-gray-200 dark:border-gray-600">
-                            <img src="${item.image}" class="w-16 h-16 object-contain rounded-lg bg-white border border-gray-100 p-1" onerror="this.src='https://via.placeholder.com/100x100/E53935/ffffff?text=ASM'">
+                            <img src="${item.image}" class="w-16 h-16 object-contain rounded-lg bg-white border border-gray-100 p-1" onerror="this.src='https://via.placeholder.com/100x100/E53935/ffffff?text=ASM'" loading="lazy" decoding="async" alt="Cart Item Image">
                             <div class="flex-1 min-w-0">
                                 <h3 class="font-bold text-sm text-gray-900 dark:text-white line-clamp-2">${safeHtmlName}</h3>
                                 <p class="text-[#E53935] dark:text-white font-black text-sm">Rs ${item.price}</p>
                                 <div class="flex items-center gap-2 mt-1">
-                                    <button type="button" onclick="updateQty(${index}, -1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-700 dark:text-white font-bold hover:bg-gray-300">-</button>
+                                    <button type="button" aria-label="Decrease Quantity" onclick="updateQty(${index}, -1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-800 dark:text-white font-bold hover:bg-gray-300">-</button>
                                     <span class="font-bold text-sm">${qty}</span>
-                                    <button type="button" onclick="updateQty(${index}, 1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-700 dark:text-white font-bold hover:bg-gray-300">+</button>
-                                    <button type="button" onclick="removeFromCart(${index})" class="ml-2 text-red-500 hover:text-red-700 text-xs"><i class="fas fa-trash"></i></button>
+                                    <button type="button" aria-label="Increase Quantity" onclick="updateQty(${index}, 1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-800 dark:text-white font-bold hover:bg-gray-300">+</button>
+                                    <button type="button" aria-label="Remove Item" onclick="removeFromCart(${index})" class="ml-2 text-red-500 hover:text-red-700 text-xs"><i class="fas fa-trash" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>`;
@@ -2100,7 +2091,7 @@ def process_woocommerce_csv():
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
             btn.disabled = true;
 
             const formData = new FormData(this);
@@ -2116,12 +2107,12 @@ def process_woocommerce_csv():
                     window.location.href = '/order-success.html';
                 } else {
                     showToast('Error submitting order. Try again.', 'fa-exclamation-circle', 'red');
-                    btn.innerHTML = '<i class="fas fa-check-circle"></i> Confirm Order';
+                    btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
                     btn.disabled = false;
                 }
             }).catch(error => {
                 showToast('Network Error! Try WhatsApp instead.', 'fa-wifi', 'red');
-                btn.innerHTML = '<i class="fas fa-check-circle"></i> Confirm Order';
+                btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
                 btn.disabled = false;
             });
         });
@@ -2136,7 +2127,7 @@ def process_woocommerce_csv():
     generate_sitemap(sitemap_urls)
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
     print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)} | 🏙️ Cities: {len(cities)}")
-    print("✨ All Buttons Fixed & Static Pages restored successfully!")
+    print("✨ Accessibility & Performance Fixed successfully!")
 
 if __name__ == "__main__":
     process_woocommerce_csv()
