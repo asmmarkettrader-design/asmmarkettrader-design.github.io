@@ -30,7 +30,6 @@ PAKISTANI_NAMES = generate_pakistani_names()
 
 # ==================== UTILITY FUNCTIONS ====================
 
-# Bug 10 Fix: Global set to prevent duplicate slugs
 GENERATED_SLUGS = set()
 
 def get_price(price_str):
@@ -136,22 +135,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     
     cat_links = ""
     for cat in categories_list:
-        c_slug = make_slug(cat) # Bug 10 fix applies here, but we need consistent mapping
-        # Since make_slug now modifies global state, we must ensure categories are processed once.
-        # To avoid complexity, we map categories to their final slugs before header generation in main.
-        pass
-
-    # Actually, let's handle category links safely outside to avoid global state issues in loops.
-    # We will build cat_links in the main processor and pass it here if needed, 
-    # but to keep the function signature, we'll just build it safely.
-    cat_links = ""
-    for cat in categories_list:
         c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
         cat_links += f'<a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">{cat}</a>\n'
 
     structured_data = ""
     if product_data:
-        # Bug 1 Fix: Escape double quotes for JSON-LD schema
         safe_schema_name = product_data['name'].replace('\\', '\\\\').replace('"', '\\"')
         safe_schema_desc = product_data.get('seo_desc', '').replace('\\', '\\\\').replace('"', '\\"')
         structured_data = f"""
@@ -420,8 +408,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             
             let safeName = name.split("'").join("\\'");
             let safeImage = image.split("'").join("\\'");
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event);`);
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{safeImage}}', event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{safeImage}}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -475,7 +463,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 searchInput.addEventListener('focus', loadSearchData);
             }}
             
-            // Bug 8 Fix: Close mobile menu on outside click
             document.addEventListener('click', function(event) {{
                 let menu = document.getElementById('mobileCatMenu');
                 let btn = document.querySelector('[onclick="toggleMobileCats()"]');
@@ -721,7 +708,6 @@ def get_html_footer():
 # ==================== SITEMAP & ROBOTS ====================
 
 def generate_sitemap(urls):
-    # Bug 5 Fix: Ensure unique URLs in sitemap
     urls = list(set(urls))
     xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     date_str = datetime.now().strftime("%Y-%m-%d")
@@ -761,15 +747,12 @@ def generate_manifest():
 # ==================== PRODUCT CARD GENERATOR ====================
 
 def generate_product_card(prod, lazy=True, show_wishlist=True):
-    # Bug 7 Fix: Prevent ZeroDivisionError
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
-    stock_left = random.randint(3, 20)
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
     
     escaped_name = prod['name'].replace("\\", "\\\\").replace("'", "\\'")
     escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace("'", "\\'")
     
-    # Bug 3 Fix: Escape double quotes for HTML attributes
     alt_name = prod['name'].replace('"', '&quot;')
     
     wishlist_btn = ""
@@ -788,7 +771,6 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             <i class="fas fa-eye text-[#E53935] text-sm"></i>
         </button>"""
     
-    # Bug 4 Fix: Removed Dead Code (wa_text, wa_link)
     card = f"""
     <div class="product-card reveal bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'">
         {wishlist_btn}
@@ -1062,14 +1044,12 @@ def generate_pagination_html(current_page, total_pages, base_url):
     
     html = '<div class="flex justify-center items-center gap-1 md:gap-2 mt-12">'
     
-    # Prev Button
     if current_page > 1:
         prev_slug = base_url if current_page - 1 == 1 else f"{base_url}-{current_page - 1}"
         html += f'<a href="/category/{prev_slug}.html" class="bg-white border border-gray-200 text-[#E53935] px-3 py-2 rounded-lg font-bold hover:bg-gray-50 transition text-sm">&lt;</a>'
     else:
         html += '<span class="bg-gray-100 border border-gray-200 text-gray-400 px-3 py-2 rounded-lg font-bold text-sm cursor-not-allowed">&lt;</span>'
     
-    # Page Numbers Logic
     pages_to_show = []
     if total_pages <= 7:
         pages_to_show = list(range(1, total_pages + 1))
@@ -1090,7 +1070,6 @@ def generate_pagination_html(current_page, total_pages, base_url):
             p_slug = base_url if p_num == 1 else f"{base_url}-{p_num}"
             html += f'<a href="/category/{p_slug}.html" class="bg-white border border-gray-200 text-[#E53935] px-4 py-2 rounded-lg font-bold hover:bg-gray-50 transition text-sm">{p_num}</a>'
             
-    # Next Button
     if current_page < total_pages:
         next_slug = f"{base_url}-{current_page + 1}"
         html += f'<a href="/category/{next_slug}.html" class="bg-white border border-gray-200 text-[#E53935] px-3 py-2 rounded-lg font-bold hover:bg-gray-50 transition text-sm">&gt;</a>'
@@ -1191,18 +1170,16 @@ def process_woocommerce_csv():
                                      product_data=product_schema_data, breadcrumb_data=breadcrumb_data,
                                      og_image=prod['image'])
         
-        # Bug 7 Fix: Safe discount calculation
         discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
         stock_left = random.randint(3, 15)
         stock_pct = random.randint(15, 40)
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
         escaped_name = prod['name'].replace("\\", "\\\\").replace("'", "\\'")
-        alt_name = prod['name'].replace('"', '&quot;') # Bug 3 Fix
+        alt_name = prod['name'].replace('"', '&quot;')
         
         wa_text = f"Hi, I want to order {prod['name']} (Rs {prod['final_price']}). Is it available?"
         wa_link = f"https://wa.me/923425478683?text={urllib.parse.quote(wa_text)}"
         
-        # Next Product Button Logic
         next_prod_html = ""
         if i + 1 < len(products_list):
             next_prod = products_list[i+1]
@@ -1251,7 +1228,6 @@ def process_woocommerce_csv():
                         {f'<span class="bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-lg">Save Rs {prod["fake_price"] - prod["final_price"]}</span>' if discount_pct > 0 else ''}
                     </div>
                     
-                    <!-- Live Stock & Viewers Counter -->
                     <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl mb-6 border border-gray-100 dark:border-gray-600">
                         <div class="flex justify-between text-xs font-bold text-gray-600 dark:text-gray-300 mb-2">
                             <span><i class="fas fa-eye"></i> <span id="liveViewers">15</span> people are viewing this right now</span>
@@ -1328,7 +1304,6 @@ def process_woocommerce_csv():
             {next_prod_html}
         </div>
         
-        <!-- Sticky Add to Cart Bar for Mobile -->
         <div id="stickyAddToCart" class="hidden fixed bottom-16 left-0 right-0 bg-white dark:bg-gray-800 shadow-2xl border-t border-gray-200 dark:border-gray-700 p-3 z-40 flex items-center justify-between gap-3 md:hidden">
             <div class="flex flex-col">
                 <span class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{prod['name']}</span>
@@ -1351,7 +1326,6 @@ def process_woocommerce_csv():
                 thumb.classList.add('border-[#E53935]');
             }
             
-            // Sticky Add to Cart Bar Logic
             let stickyBar = document.getElementById('stickyAddToCart');
             let mainActions = document.querySelector('.main-product-actions');
             window.addEventListener('scroll', () => {
@@ -1365,7 +1339,6 @@ def process_woocommerce_csv():
                 }
             });
 
-            // Live Viewers Counter Logic
             let viewers = document.getElementById('liveViewers');
             setInterval(() => {
                 let current = parseInt(viewers.innerText);
@@ -1422,7 +1395,6 @@ def process_woocommerce_csv():
         if c not in sections_dict: sections_dict[c] = []
         sections_dict[c].append(p)
 
-    # Save search index to a separate JS file
     search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], 
                                      "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
     with open("output/search-data.js", "w", encoding="utf-8") as f:
@@ -1431,7 +1403,6 @@ def process_woocommerce_csv():
     home_html = get_html_header("Home - Premium Online Shopping in Pakistan", categories_list,
                                  "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
     
-    # Hero Carousel
     home_html += """
     <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl">
         <div class="carousel-track h-full">
@@ -1468,28 +1439,6 @@ def process_woocommerce_csv():
                     </div>
                 </div>
             </div>
-            <div class="carousel-slide h-full relative">
-                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1200&q=80" alt="Shoes" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/50"></div>
-                <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                    <div class="max-w-lg">
-                        <span class="bg-white text-gray-900 text-xs font-black px-3 py-1 rounded-full">SHOE FESTIVAL</span>
-                        <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Premium Shoes<br>Unbeatable Prices</h2>
-                        <a href="#products" class="bg-white text-gray-900 px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition text-sm">Explore Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-slide h-full relative">
-                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=80" alt="14 August" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-0 bg-[#E53935]/70"></div>
-                <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                    <div class="max-w-lg">
-                        <span class="bg-white text-[#E53935] text-xs font-black px-3 py-1 rounded-full">14 AUGUST SALE</span>
-                        <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Independence Day<br>Mega Sale!</h2>
-                        <a href="#products" class="bg-white text-[#E53935] px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition text-sm">Shop Now</a>
-                    </div>
-                </div>
-            </div>
         </div>
         <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/60 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
         <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/60 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
@@ -1521,7 +1470,6 @@ def process_woocommerce_csv():
     </script>
     """
 
-    # Flashmart Style Categories Circle Bar
     home_html += """
     <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
         <div class="container mx-auto px-4">
@@ -1609,13 +1557,11 @@ def process_woocommerce_csv():
         <div id="defaultContent">
     """
     
-    # Show top 4 categories and 6 products each on home page
     total_rendered_products = 0
     for cat_name, prods in list(sections_dict.items())[:4]:
         cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
         sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
         
-        # Generate Category Pages with Pagination
         prods_per_page = 24
         total_pages = math.ceil(len(prods) / prods_per_page)
         
@@ -1627,7 +1573,6 @@ def process_woocommerce_csv():
             file_slug = cat_slug if page_num == 1 else f"{cat_slug}-{page_num}"
             page_title = f"{cat_name} - Page {page_num}" if page_num > 1 else cat_name
             
-            # Bug 5 Fix: Add paginated pages to sitemap
             sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
             
             cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. Wide range of {cat_name} with Cash on Delivery from ASM VEO.")
@@ -1657,7 +1602,6 @@ def process_woocommerce_csv():
             
             cat_html += "</div>"
             
-            # Bug 2 Fix: Load search data if undefined in applyFilters
             cat_script_filters = """
             <script>
                 function applyFilters() {
@@ -1744,7 +1688,6 @@ def process_woocommerce_csv():
                         </div>
                     </aside>
                     <div class="flex-1">
-                        <!-- Product grid is above -->
                         {generate_pagination_html(page_num, total_pages, cat_slug)}
                     </div>
                 </div>
@@ -1765,7 +1708,6 @@ def process_woocommerce_csv():
             with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f:
                 f.write(cat_html)
         
-        # Home Page Section
         home_html += f"""
         <div class="mb-14 category-section reveal">
             <div class="flex justify-between items-center mb-6">
@@ -1783,7 +1725,6 @@ def process_woocommerce_csv():
     
     home_html += "</div></div>"
 
-    # Home Page Next Button
     home_html += """
     <div class="container mx-auto px-4 py-8 flex justify-center">
         <a href="/index-2.html" class="bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg flex items-center gap-2">
@@ -1792,7 +1733,7 @@ def process_woocommerce_csv():
     </div>
     """
 
-    home_html += """
+    home_html += f"""
     <div class="container mx-auto px-4 py-8 border-t border-gray-200 dark:border-gray-700">
         <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Shop by City in Pakistan</h2>
         <div class="flex flex-wrap gap-3">
@@ -1840,7 +1781,6 @@ def process_woocommerce_csv():
             results.forEach(p => {
                 let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
                 if (isNaN(discount)) discount = 0;
-                // Bug 9 Fix: Escape HTML chars in recently viewed / search
                 let safeName = p.name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;'); 
                 let escName = p.name.split("'").join("\\'");
                 html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
@@ -2115,7 +2055,6 @@ def process_woocommerce_csv():
             const urlParams = new URLSearchParams(window.location.search);
             const isBuyNow = urlParams.get('buy_now') === 'true';
             const pName = urlParams.get('product');
-            // Bug 6 Fix: Prevent NaN error
             const pPrice = parseInt(urlParams.get('price')) || 0;
             
             let subtotal = 0;
