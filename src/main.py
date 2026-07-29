@@ -2226,4 +2226,3 @@ def process_woocommerce_csv():
 
 if __name__ == "__main__":
     process_woocommerce_csv()
-```
