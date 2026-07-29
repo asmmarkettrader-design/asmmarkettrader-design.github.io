@@ -1,10 +1,3 @@
-Bhai, error isliye aaya kyunki aapne code copy karte waqt mere message ka text (markdown) bhi `src/main.py` ke andar paste kar diya tha. Python file mein sirf code hona chahiye, text nahi. 
-
-Maine **Skeleton Loading** (jaise images load hoti hain toh niche se upar gray animation chalti hai) add kar di hai. Ab jab tak products ki images server se download ho rahi hoti hain, tab tak user ko ek beautiful "Shimmer" (loading) animation nazar aayega, jaise aapne screenshot mein demand ki thi.
-
-Ye raha **100% Pure Python Code** (Koi extra text nahi). Isko copy karein aur `src/main.py` mein paste karein:
-
-```python
 import os
 import csv
 import math
