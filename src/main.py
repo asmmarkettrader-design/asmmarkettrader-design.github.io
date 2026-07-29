@@ -1,11 +1,8 @@
-Bhai, aapki technical audit bohot zabardast thi! Aapne bilkul deep level ke bugs catch kiye hain (jaise JSON-LD quotes aur `ZeroDivisionError`). Maine **saare 10 bugs** fix kar diye hain aur saath hi **Pagination UI (< 1 2 3 ... 113 >)** ko bilkul Markaz/Amazon jaisa professional bana diya hai.
+Bhai, error isliye aaya kyunki aapne code copy karte waqt mere message ka text (markdown) bhi `src/main.py` ke andar paste kar diya tha. Python file mein sirf code hona chahiye, text nahi. 
 
-Ab isme:
-1. **Saare 10 Bugs Fixed:** JSON escaping, ZeroDivision, NaN error, Duplicate Slugs, Dead Code, Sitemap pagination, Mobile menu outside click, sab fix ho gaye hain.
-2. **Advanced Pagination UI (< 1 2 3 ... 113 >):** Category pages par ab exactly aapke screenshot wala pagination aayega.
-3. **Home & Product Next Page:** Home page ke neeche "Next" button add kiya hai (index-2.html banega), aur Product page par "Next Product" ka card already moujood hai.
+Maine **Skeleton Loading** (jaise images load hoti hain toh niche se upar gray animation chalti hai) add kar di hai. Ab jab tak products ki images server se download ho rahi hoti hain, tab tak user ko ek beautiful "Shimmer" (loading) animation nazar aayega, jaise aapne screenshot mein demand ki thi.
 
-Ye raha **100% Bug-Free & Final Optimized Code**. Isko `src/main.py` mein paste karein:
+Ye raha **100% Pure Python Code** (Koi extra text nahi). Isko copy karein aur `src/main.py` mein paste karein:
 
 ```python
 import os
@@ -40,7 +37,6 @@ PAKISTANI_NAMES = generate_pakistani_names()
 
 # ==================== UTILITY FUNCTIONS ====================
 
-# Bug 10 Fix: Global set to prevent duplicate slugs
 GENERATED_SLUGS = set()
 
 def get_price(price_str):
@@ -59,7 +55,6 @@ def make_slug(text):
     if not text: return "uncategorized"
     slug = re.sub(r'[^a-z0-9]+', '-', str(text).lower()).strip('-')
     if not slug: slug = "uncategorized"
-    
     base_slug = slug
     counter = 1
     while slug in GENERATED_SLUGS:
@@ -146,22 +141,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     
     cat_links = ""
     for cat in categories_list:
-        c_slug = make_slug(cat) # Bug 10 fix applies here, but we need consistent mapping
-        # Since make_slug now modifies global state, we must ensure categories are processed once.
-        # To avoid complexity, we map categories to their final slugs before header generation in main.
-        pass
-
-    # Actually, let's handle category links safely outside to avoid global state issues in loops.
-    # We will build cat_links in the main processor and pass it here if needed, 
-    # but to keep the function signature, we'll just build it safely.
-    cat_links = ""
-    for cat in categories_list:
         c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
         cat_links += f'<a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#01411C] hover:text-white transition-colors">{cat}</a>\n'
 
     structured_data = ""
     if product_data:
-        # Bug 1 Fix: Escape double quotes for JSON-LD schema
         safe_schema_name = product_data['name'].replace('\\', '\\\\').replace('"', '\\"')
         safe_schema_desc = product_data.get('seo_desc', '').replace('\\', '\\\\').replace('"', '\\"')
         structured_data = f"""
@@ -315,6 +299,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         
         .animated-bg {{ background: linear-gradient(-45deg, #01411C, #065f46, #01411C, #002a13); background-size: 400% 400%; animation: gradient 15s ease infinite; }}
         @keyframes gradient {{ 0% {{ background-position: 0% 50%; }} 50% {{ background-position: 100% 50%; }} 100% {{ background-position: 0% 50%; }} }}
+        
+        /* SKELETON LOADER */
+        .skeleton-box {{ background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }}
+        .dark .skeleton-box {{ background: linear-gradient(90deg, #2d3748 25%, #4a5568 50%, #2d3748 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }}
+        @keyframes shimmer {{ 0% {{ background-position: 200% 0; }} 100% {{ background-position: -200% 0; }} }}
     </style>
     {structured_data}
 
@@ -490,7 +479,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 searchInput.addEventListener('focus', loadSearchData);
             }}
             
-            // Bug 8 Fix: Close mobile menu on outside click
             document.addEventListener('click', function(event) {{
                 let menu = document.getElementById('mobileCatMenu');
                 let btn = document.querySelector('[onclick="toggleMobileCats()"]');
@@ -702,7 +690,6 @@ def get_html_footer():
 # ==================== SITEMAP & ROBOTS ====================
 
 def generate_sitemap(urls):
-    # Bug 5 Fix: Ensure unique URLs in sitemap
     urls = list(set(urls))
     xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     date_str = datetime.now().strftime("%Y-%m-%d")
@@ -742,15 +729,12 @@ def generate_manifest():
 # ==================== PRODUCT CARD GENERATOR ====================
 
 def generate_product_card(prod, lazy=True, show_wishlist=True):
-    # Bug 7 Fix: Prevent ZeroDivisionError
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
     stock_left = random.randint(3, 20)
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
     
     escaped_name = prod['name'].replace("\\", "\\\\").replace("'", "\\'")
     escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace("'", "\\'")
-    
-    # Bug 3 Fix: Escape double quotes for HTML attributes
     alt_name = prod['name'].replace('"', '&quot;')
     
     wishlist_btn = ""
@@ -769,14 +753,13 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             <i class="fas fa-eye text-[#01411C] text-sm"></i>
         </button>"""
     
-    # Bug 4 Fix: Removed Dead Code (wa_text, wa_link)
     card = f"""
     <div class="product-card reveal bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'">
         {wishlist_btn}
         {quick_view_btn}
         {f'<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-{discount}% OFF</div>' if discount > 0 else ''}
-        <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
+        <div class="image-zoom h-32 md:h-40 skeleton-box overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1 opacity-0 transition-opacity duration-500" onload="this.style.opacity=1;this.parentElement.classList.remove('skeleton-box')" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
         </div>
         <div class="p-2 flex flex-col flex-grow">
             <span class="text-[9px] font-bold text-[#01411C] dark:text-white uppercase tracking-wider mb-1 line-clamp-1">{prod['category']}</span>
@@ -950,7 +933,7 @@ def generate_static_pages(categories_list):
                 <p class="text-gray-500 dark:text-gray-400 mb-8">The page you're looking for doesn't exist or has been moved. Let's get you back on track!</p>
                 <div class="flex gap-4 justify-center flex-wrap">
                     <a href="/index.html" class="bg-[#01411C] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#002a13] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a>
-                    <a href="/contact.html" class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white px8 py-3 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition"><i class="fas fa-headset mr-2"></i> Contact Us</a>
+                    <a href="/contact.html" class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white px8 py-3 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition"><i class="fas fa-headset mr=2"></i> Contact Us</a>
                 </div>
             </div>
         </div>
@@ -979,8 +962,8 @@ def generate_static_pages(categories_list):
                     let safeName = item.name.split("'").join("\\'");
                     container.innerHTML += `
                         <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
-                            <div class="h-32 bg-gray-50 dark:bg-gray-700 overflow-hidden">
-                                <img src="${item.image}" alt="${item.name}" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
+                            <div class="h-32 skeleton-box bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center">
+                                <img src="${item.image}" alt="${item.name}" class="w-full h-full object-contain p-1 opacity-0 transition-opacity duration-500" onload="this.style.opacity=1;this.parentElement.classList.remove('skeleton-box')" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
                             </div>
                             <div class="p-2 flex flex-col flex-grow">
                                 <h3 class="text-[10px] font-bold text-gray-900 dark:text-white line-clamp-2 mb-1">${item.name}</h3>
@@ -1043,14 +1026,12 @@ def generate_pagination_html(current_page, total_pages, base_url):
     
     html = '<div class="flex justify-center items-center gap-1 md:gap-2 mt-12">'
     
-    # Prev Button
     if current_page > 1:
         prev_slug = base_url if current_page - 1 == 1 else f"{base_url}-{current_page - 1}"
         html += f'<a href="/category/{prev_slug}.html" class="bg-white border border-gray-200 text-[#01411C] px-3 py-2 rounded-lg font-bold hover:bg-gray-50 transition text-sm">&lt;</a>'
     else:
         html += '<span class="bg-gray-100 border border-gray-200 text-gray-400 px-3 py-2 rounded-lg font-bold text-sm cursor-not-allowed">&lt;</span>'
     
-    # Page Numbers Logic
     pages_to_show = []
     if total_pages <= 7:
         pages_to_show = list(range(1, total_pages + 1))
@@ -1071,7 +1052,6 @@ def generate_pagination_html(current_page, total_pages, base_url):
             p_slug = base_url if p_num == 1 else f"{base_url}-{p_num}"
             html += f'<a href="/category/{p_slug}.html" class="bg-white border border-gray-200 text-[#01411C] px-4 py-2 rounded-lg font-bold hover:bg-gray-50 transition text-sm">{p_num}</a>'
             
-    # Next Button
     if current_page < total_pages:
         next_slug = f"{base_url}-{current_page + 1}"
         html += f'<a href="/category/{next_slug}.html" class="bg-white border border-gray-200 text-[#01411C] px-3 py-2 rounded-lg font-bold hover:bg-gray-50 transition text-sm">&gt;</a>'
@@ -1172,18 +1152,16 @@ def process_woocommerce_csv():
                                      product_data=product_schema_data, breadcrumb_data=breadcrumb_data,
                                      og_image=prod['image'])
         
-        # Bug 7 Fix: Safe discount calculation
         discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
         stock_left = random.randint(3, 15)
         stock_pct = random.randint(15, 40)
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
         escaped_name = prod['name'].replace("\\", "\\\\").replace("'", "\\'")
-        alt_name = prod['name'].replace('"', '&quot;') # Bug 3 Fix
+        alt_name = prod['name'].replace('"', '&quot;')
         
         wa_text = f"Hi, I want to order {prod['name']} (Rs {prod['final_price']}). Is it available?"
         wa_link = f"https://wa.me/923425478683?text={urllib.parse.quote(wa_text)}"
         
-        # Next Product Button Logic
         next_prod_html = ""
         if i + 1 < len(products_list):
             next_prod = products_list[i+1]
@@ -1232,7 +1210,6 @@ def process_woocommerce_csv():
                         {f'<span class="bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-lg">Save Rs {prod["fake_price"] - prod["final_price"]}</span>' if discount_pct > 0 else ''}
                     </div>
                     
-                    <!-- Live Stock & Viewers Counter -->
                     <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl mb-6 border border-gray-100 dark:border-gray-600">
                         <div class="flex justify-between text-xs font-bold text-gray-600 dark:text-gray-300 mb-2">
                             <span><i class="fas fa-eye"></i> <span id="liveViewers">15</span> people are viewing this right now</span>
@@ -1309,7 +1286,6 @@ def process_woocommerce_csv():
             {next_prod_html}
         </div>
         
-        <!-- Sticky Add to Cart Bar for Mobile -->
         <div id="stickyAddToCart" class="hidden fixed bottom-16 left-0 right-0 bg-white dark:bg-gray-800 shadow-2xl border-t border-gray-200 dark:border-gray-700 p-3 z-40 flex items-center justify-between gap-3 md:hidden">
             <div class="flex flex-col">
                 <span class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{prod['name']}</span>
@@ -1332,7 +1308,6 @@ def process_woocommerce_csv():
                 thumb.classList.add('border-[#01411C]');
             }
             
-            // Sticky Add to Cart Bar Logic
             let stickyBar = document.getElementById('stickyAddToCart');
             let mainActions = document.querySelector('.main-product-actions');
             window.addEventListener('scroll', () => {
@@ -1346,7 +1321,6 @@ def process_woocommerce_csv():
                 }
             });
 
-            // Live Viewers Counter Logic
             let viewers = document.getElementById('liveViewers');
             setInterval(() => {
                 let current = parseInt(viewers.innerText);
@@ -1403,7 +1377,6 @@ def process_woocommerce_csv():
         if c not in sections_dict: sections_dict[c] = []
         sections_dict[c].append(p)
 
-    # Save search index to a separate JS file
     search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], 
                                      "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
     with open("output/search-data.js", "w", encoding="utf-8") as f:
@@ -1412,7 +1385,6 @@ def process_woocommerce_csv():
     home_html = get_html_header("Home - Premium Online Shopping in Pakistan", categories_list,
                                  "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
     
-    # Hero Carousel
     home_html += """
     <div id="heroCarousel" class="relative w-full h-[250px] md:h-[350px] overflow-hidden shadow-xl">
         <div class="carousel-track h-full">
@@ -1572,13 +1544,11 @@ def process_woocommerce_csv():
         <div id="defaultContent">
     """
     
-    # Show top 4 categories and 6 products each on home page
     total_rendered_products = 0
     for cat_name, prods in list(sections_dict.items())[:4]:
         cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
         sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
         
-        # Generate Category Pages with Pagination
         prods_per_page = 24
         total_pages = math.ceil(len(prods) / prods_per_page)
         
@@ -1590,7 +1560,6 @@ def process_woocommerce_csv():
             file_slug = cat_slug if page_num == 1 else f"{cat_slug}-{page_num}"
             page_title = f"{cat_name} - Page {page_num}" if page_num > 1 else cat_name
             
-            # Bug 5 Fix: Add paginated pages to sitemap
             sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
             
             cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. Wide range of {cat_name} with Cash on Delivery from ASM VEO.")
@@ -1620,7 +1589,6 @@ def process_woocommerce_csv():
             
             cat_html += "</div>"
             
-            # Bug 2 Fix: Load search data if undefined in applyFilters
             cat_script_filters = """
             <script>
                 function applyFilters() {
@@ -1655,8 +1623,8 @@ def process_woocommerce_csv():
                         <button onclick="toggleWishlist('${safeName}', ${p.final_price}, '${p.image}', event)" class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500 text-sm"></i></button>
                         <button onclick="quickView('${safeName}', ${p.final_price}, '${p.image}', '${safeDesc}', '${p.slug}')" class="absolute top-2 right-12 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#01411C] text-sm"></i></button>
                         ${discount > 0 ? `<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                        <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                            <img src="${p.image}" alt="${p.name}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
+                        <div class="image-zoom h-32 md:h-40 skeleton-box overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+                            <img src="${p.image}" alt="${p.name}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1 opacity-0 transition-opacity duration-500" onload="this.style.opacity=1;this.parentElement.classList.remove('skeleton-box')" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
                         </div>
                         <div class="p-2 flex flex-col flex-grow">
                             <span class="text-[9px] font-bold text-[#01411C] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -1707,7 +1675,6 @@ def process_woocommerce_csv():
                         </div>
                     </aside>
                     <div class="flex-1">
-                        <!-- Product grid is above -->
                         {generate_pagination_html(page_num, total_pages, cat_slug)}
                     </div>
                 </div>
@@ -1720,15 +1687,18 @@ def process_woocommerce_csv():
                 "seo_desc": p['seo_desc']
             } for p in prods])
             
-            cat_html += cat_script_filters.replace("__PRODUCTS_JSON__", all_prods_json)\
-                                           .replace("__MIN_PRICE__", str(int(min_price)))\
+            cat_html += f"""
+            <script>
+                let allProducts = {all_prods_json};
+            </script>
+            """
+            cat_html += cat_script_filters.replace("__MIN_PRICE__", str(int(min_price)))\
                                            .replace("__MAX_PRICE__", str(int(max_price)))
             cat_html += get_html_footer()
             
             with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f:
                 f.write(cat_html)
         
-        # Home Page Section
         home_html += f"""
         <div class="mb-14 category-section reveal">
             <div class="flex justify-between items-center mb-6">
@@ -1746,7 +1716,6 @@ def process_woocommerce_csv():
     
     home_html += "</div></div>"
 
-    # Home Page Next Button
     home_html += """
     <div class="container mx-auto px-4 py-8 flex justify-center">
         <a href="/index-2.html" class="bg-[#01411C] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#002a13] transition shadow-lg flex items-center gap-2">
@@ -1803,13 +1772,12 @@ def process_woocommerce_csv():
             results.forEach(p => {
                 let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
                 if (isNaN(discount)) discount = 0;
-                // Bug 9 Fix: Escape HTML chars in recently viewed / search
                 let safeName = p.name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
                 let escName = p.name.split("'").join("\\'");
                 html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                     ${discount > 0 ? `<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                    <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                        <img src="${p.image}" alt="${safeName}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
+                    <div class="image-zoom h-32 md:h-40 skeleton-box overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+                        <img src="${p.image}" alt="${safeName}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1 opacity-0 transition-opacity duration-500" onload="this.style.opacity=1;this.parentElement.classList.remove('skeleton-box')" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
                     </div>
                     <div class="p-2 flex flex-col flex-grow">
                         <span class="text-[9px] font-bold text-[#01411C] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -1860,8 +1828,8 @@ def process_woocommerce_csv():
                 let safeName = p.name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
                 return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                     ${discount > 0 ? `<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                    <div class="h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                        <img src="${p.image}" alt="${safeName}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
+                    <div class="h-32 md:h-40 skeleton-box overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+                        <img src="${p.image}" alt="${safeName}" loading="lazy" width="200" height="200" class="w-full h-full object-contain p-1 opacity-0 transition-opacity duration-500" onload="this.style.opacity=1;this.parentElement.classList.remove('skeleton-box')" onerror="this.src='https://via.placeholder.com/200x200/01411C/ffffff?text=ASM+VEO'">
                     </div>
                     <div class="p-2 flex flex-col flex-grow">
                         <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-1">${safeName}</h3>
@@ -2078,7 +2046,6 @@ def process_woocommerce_csv():
             const urlParams = new URLSearchParams(window.location.search);
             const isBuyNow = urlParams.get('buy_now') === 'true';
             const pName = urlParams.get('product');
-            // Bug 6 Fix: Prevent NaN error
             const pPrice = parseInt(urlParams.get('price')) || 0;
             
             let subtotal = 0;
@@ -2185,7 +2152,7 @@ def process_woocommerce_csv():
     generate_sitemap(sitemap_urls)
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
     print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)} | 🏙️ Cities: {len(cities)}")
-    print("✨ All 10 Bugs Fixed & Pagination UI Added!")
+    print("✨ All Bugs Fixed, Skeleton Loading Added & Pagination UI Updated!")
 
 if __name__ == "__main__":
     process_woocommerce_csv()
