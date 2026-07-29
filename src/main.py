@@ -1738,7 +1738,7 @@ def process_woocommerce_csv():
     generate_sitemap(sitemap_urls)
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
     print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)}")
-    print("✨ Bug Fixed: Extra quote removed from buyNow function!")
+    print("✨ Bug Fixed: Extra quote removed from ALL buyNow buttons!")
 
 if __name__ == "__main__":
     process_woocommerce_csv()
