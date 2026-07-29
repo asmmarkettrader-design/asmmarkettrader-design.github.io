@@ -377,8 +377,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('qvName').innerText = name;
             document.getElementById('qvPrice').innerText = "Rs " + price;
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${name.replace(/'/g, "\\'")}', ${price}, '${image}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${name.replace(/'/g, "\\'")}', ${price}, '${image}', event);`);
+            
+            // Safe JS injection without f-string backslash issues
+            let safeName = name.replace(/'/g, "\\'");
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${image}', event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${image}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -647,7 +650,10 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > prod['final_price'] else 0
     stock_left = random.randint(3, 20)
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
+    
+    # Safe JS string escaping (outside f-string to prevent SyntaxError)
     escaped_name = prod['name'].replace("'", "\\'")
+    escaped_desc = prod['seo_desc'].replace("'", "\\'")
     
     wishlist_btn = ""
     if show_wishlist:
@@ -659,7 +665,7 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             </button>"""
     
     quick_view_btn = f"""
-        <button onclick="quickView('{escaped_name}', {prod['final_price']}, '{prod['image']}', '{prod['seo_desc'].replace("'", "\\'")}', '{prod['slug']}')" 
+        <button onclick="quickView('{escaped_name}', {prod['final_price']}, '{prod['image']}', '{escaped_desc}', '{prod['slug']}')" 
                 class="absolute top-3 right-14 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10" 
                 aria-label="Quick View">
             <i class="fas fa-eye text-[#01411C]"></i>
@@ -690,7 +696,7 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
                     <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="w-1/2 bg-gray-50 dark:bg-gray-700 text-[#01411C] dark:text-white py-2.5 rounded-xl text-xs font-bold border border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600 transition flex justify-center items-center" aria-label="Add to Cart">
                         <i class="fas fa-cart-plus"></i>
                     </button>
-                    <button onclick="buyNow('{escaped_name}', {prod['final_price']}', '{prod['image']}', event)" class="w-1/2 bg-[#01411C] text-white py-2.5 rounded-xl text-xs font-bold hover:bg-[#002a13] transition text-center" aria-label="Buy Now">
+                    <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="w-1/2 bg-[#01411C] text-white py-2.5 rounded-xl text-xs font-bold hover:bg-[#002a13] transition text-center" aria-label="Buy Now">
                         Buy Now
                     </button>
                 </div>
@@ -1030,6 +1036,8 @@ def process_woocommerce_csv():
         discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > prod['final_price'] else 0
         stock_left = random.randint(3, 15)
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
+        
+        # Safe JS escape outside f-string
         escaped_name = prod['name'].replace("'", "\\'")
         
         prod_html += f"""
@@ -1072,7 +1080,7 @@ def process_woocommerce_csv():
                         <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#01411C] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#01411C] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-cart-plus"></i> Add to Cart
                         </button>
-                        <button onclick="buyNow('{escaped_name}', {prod['final_price']}', '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#01411C] text-white py-4 rounded-xl font-black text-lg hover:bg-[#002a13] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                        <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#01411C] text-white py-4 rounded-xl font-black text-lg hover:bg-[#002a13] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-bolt"></i> Buy Now
                         </button>
                     </div>
