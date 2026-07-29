@@ -11,16 +11,20 @@ from datetime import datetime, timedelta
 # ==================== 2000 NAMES DATABASE ====================
 
 def generate_pakistani_names():
-    first_names = ["Muhammad", "Ali", "Ahmed", "Hassan", "Hussain", "Bilal", "Usman", "Umar", "Hamza", "Zain", 
-                   "Ayesha", "Fatima", "Maryam", "Zainab", "Hira", "Sana", "Iqra", "Anum", "Sadia", "Aiman",
-                   "Abdullah", "Rehman", "Tariq", "Imran", "Kamran", "Asad", "Faisal", "Shahid", "Waqar", "Naveed",
-                   "Adnan", "Farhan", "Nida", "Saba", "Komail", "Mahnoor",
-                   "Rizwan", "Sohail", "Asif", "Nadeem", "Tahir", "Amir", "Babar", "Saad", "Fahad", "Junaid",
-                   "Hina", "Areeba", "Tooba", "Rabia", "Anila", "Faiza", "Samina", "Naila", "Shazia", "Rimsha",
-                   "Ahsan", "Zeeshan", "Kashif", "Noman", "Waseem", "Imtiaz", "Ghulam", "Sajid", "Rashid", "Aslam"]
-    last_names = ["Khan", "Raza", "Malik", "Sheikh", "Qureshi", "Siddiqui", "Chaudhry", "Butt", "Awan", "Mughal",
-                  "Baig", "Mirza", "Hashmi", "Tariq", "Ahmed", "Iqbal", "Hussain", "Aslam", "Akram", "Yousaf",
-                  "Shah", "Rana", "Cheema", "Tipu", "Afridi", "Khattak", "Wazir", "Mehmood", "Sattar"]
+    first_names = [
+        "Muhammad", "Ali", "Ahmed", "Hassan", "Hussain", "Bilal", "Usman", "Umar", "Hamza", "Zain", 
+        "Ayesha", "Fatima", "Maryam", "Zainab", "Hira", "Sana", "Iqra", "Anum", "Sadia", "Aiman",
+        "Abdullah", "Rehman", "Tariq", "Imran", "Kamran", "Asad", "Faisal", "Shahid", "Waqar", "Naveed",
+        "Adnan", "Farhan", "Nida", "Saba", "Komail", "Mahnoor", "Rizwan", "Sohail", "Asif", "Nadeem", 
+        "Tahir", "Amir", "Babar", "Saad", "Fahad", "Junaid", "Hina", "Areeba", "Tooba", "Rabia", 
+        "Anila", "Faiza", "Samina", "Naila", "Shazia", "Rimsha", "Ahsan", "Zeeshan", "Kashif", "Noman", 
+        "Waseem", "Imtiaz", "Ghulam", "Sajid", "Rashid", "Aslam"
+    ]
+    last_names = [
+        "Khan", "Raza", "Malik", "Sheikh", "Qureshi", "Siddiqui", "Chaudhry", "Butt", "Awan", "Mughal",
+        "Baig", "Mirza", "Hashmi", "Tariq", "Ahmed", "Iqbal", "Hussain", "Aslam", "Akram", "Yousaf",
+        "Shah", "Rana", "Cheema", "Tipu", "Afridi", "Khattak", "Wazir", "Mehmood", "Sattar"
+    ]
     
     all_names = [f"{f} {l}" for f in first_names for l in last_names]
     random.shuffle(all_names)
@@ -42,7 +46,6 @@ def clean_html(raw_html):
     clean_text = re.sub(r'<[^>]+>', ' ', str(raw_html))
     return ' '.join(clean_text.split())
 
-# 100% FIXED SLUG FUNCTION: Ensures consistent slugs to prevent 404 Errors!
 def make_slug(text):
     if not text: return "uncategorized"
     slug = re.sub(r'[^a-z0-9]+', '-', str(text).lower()).strip('-')
@@ -119,7 +122,7 @@ def generate_reviews(product_name):
     avg_rating = round(sum(random.randint(4,5) for _ in range(num_reviews)) / num_reviews, 1)
     return reviews_html, avg_rating, num_reviews
 
-# FIXED HTML MINIFIER - Safely keeps lines to avoid JS issues
+# SAFE HTML MINIFIER (Preserves spaces needed for JS execution)
 def minify_html(html_content):
     html_content = re.sub(r'<!--.*?-->', '', html_content, flags=re.DOTALL)
     html_content = re.sub(r'>\s+<', '><', html_content)
@@ -164,6 +167,23 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     }}
     </script>"""
     
+    if breadcrumb_data:
+        safe_bc_cat = breadcrumb_data['category'].replace('\\', '\\\\').replace('"', '\\"')
+        safe_bc_name = breadcrumb_data['name'].replace('\\', '\\\\').replace('"', '\\"')
+        c_slug = make_slug(breadcrumb_data['category'])
+        structured_data += f"""
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.asmveo.com/" }},
+        {{ "@type": "ListItem", "position": 2, "name": "{safe_bc_cat}", "item": "https://www.asmveo.com/category/{c_slug}.html" }},
+        {{ "@type": "ListItem", "position": 3, "name": "{safe_bc_name}", "item": "https://www.asmveo.com/product/{breadcrumb_data['slug']}.html" }}
+      ]
+    }}
+    </script>"""
+
     og_image_final = og_image or "https://www.asmveo.com/assets/og-image.jpg"
     
     return f"""<!DOCTYPE html>
@@ -175,14 +195,24 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     
     <meta name="title" content="{title} | Buy Online in Pakistan | ASM VEO">
     <meta name="description" content="{seo_desc}">
+    <meta name="keywords" content="buy {title} in Pakistan, {title} price in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO, best online store Pakistan">
+    <meta name="author" content="ASM Digital Solutions">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#E53935">
     <link rel="canonical" href="https://www.asmveo.com/">
+    
+    <meta name="geo.region" content="PK" />
+    <meta name="geo.placename" content="Pakistan" />
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.asmveo.com/">
     <meta property="og:title" content="{title} | ASM VEO">
     <meta property="og:description" content="{seo_desc}">
     <meta property="og:image" content="{og_image_final}">
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -192,7 +222,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         tailwind.config = {{
             darkMode: 'class',
             theme: {{
-                extend: {{ colors: {{ pk: {{ red: '#E53935', light: '#FFEBEE', dark: '#C62828' }} }} }}
+                extend: {{
+                    colors: {{
+                        pk: {{ red: '#E53935', light: '#FFEBEE', dark: '#C62828' }}
+                    }}
+                }}
             }}
         }}
     </script>
@@ -203,7 +237,14 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
         
-        body {{ font-family: 'Plus Jakarta Sans', sans-serif; background: #f3f4f6; color: #1f2937; padding-bottom: 70px; }}
+        body {{ 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: #f3f4f6; 
+            color: #1f2937; 
+            padding-bottom: 70px; 
+            transition: background-color 0.3s;
+        }}
+        @media (min-width: 768px) {{ body {{ padding-bottom: 0; }} }}
         .dark body {{ background: #111827; color: #f3f4f6; }}
         
         .product-card {{ transition: all 0.3s ease; }}
@@ -213,6 +254,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         .dropdown:hover .dropdown-menu {{ display: block; }}
         
         ::-webkit-scrollbar {{ width: 8px; height: 8px; }}
+        ::-webkit-scrollbar-track {{ background: #f1f5f9; }}
         ::-webkit-scrollbar-thumb {{ background: #E53935; border-radius: 4px; }}
         
         .line-clamp-1 {{ display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }}
@@ -504,12 +546,52 @@ def get_html_footer():
 </html>
 """
 
+# ==================== SITEMAP GENERATOR ====================
+
+def generate_sitemap(urls):
+    urls = list(set(urls))
+    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    for url in urls:
+        xml_content += f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n"
+    xml_content += '</urlset>'
+    with open("output/sitemap.xml", "w", encoding="utf-8") as f:
+        f.write(xml_content)
+
+def generate_robots_txt():
+    content = """User-agent: *
+Allow: /
+Disallow: /checkout.html
+
+Sitemap: https://www.asmveo.com/sitemap.xml
+"""
+    with open("output/robots.txt", "w") as f:
+        f.write(content)
+
+def generate_manifest():
+    manifest = {
+        "name": "ASM VEO - Online Shopping in Pakistan",
+        "short_name": "ASM VEO",
+        "description": "Premium online shopping in Pakistan with Cash on Delivery",
+        "start_url": "/index.html",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#E53935",
+        "icons": [
+            {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
+            {"src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"}
+        ]
+    }
+    with open("output/manifest.json", "w") as f:
+        json.dump(manifest, f, indent=2)
+
 # ==================== PRODUCT CARD GENERATOR ====================
 
 def generate_product_card(prod, lazy=True):
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
     img_loading = 'loading="lazy"' if lazy else 'fetchpriority="high"'
     
+    # Safe escaping to prevent JS syntax errors
     escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
     escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
     alt_name = prod['name'].replace('"', '&quot;')
@@ -719,7 +801,7 @@ def generate_static_pages(categories_list):
                         <h3 class="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
                         <p class="text-lg font-black text-[#E53935] dark:text-emerald-400 mb-3">Rs ${item.price}</p>
                         <div class="flex gap-2 mt-auto">
-                            <button onclick="addToCart('${safeName}', ${item.price}, '${item.image}', event)" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus"></i></button>
+                            <button onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus"></i></button>
                             <button onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition"><i class="fas fa-trash"></i></button>
                         </div>
                     </div>
@@ -878,7 +960,7 @@ def process_woocommerce_csv():
     # 2. GENERATE ALL CATEGORY HTML FILES (100% FIXED PRODUCTS NOT LOADING)
     print("📂 Generating Category Pages...")
     for cat_name, prods in sections_dict.items():
-        cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
+        cat_slug = make_slug(cat_name)
         sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
         
         prods_per_page = 24
@@ -1030,7 +1112,7 @@ def process_woocommerce_csv():
     """
     
     for cat_name, prods in list(sections_dict.items())[:6]: 
-        cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
+        cat_slug = make_slug(cat_name)
         home_html += f"""
         <div class="mb-12">
             <div class="flex justify-between items-center mb-6">
@@ -1196,7 +1278,7 @@ def process_woocommerce_csv():
     with open("output/checkout.html", "w", encoding="utf-8") as f: f.write(minify_html(checkout_html))
 
     generate_sitemap(sitemap_urls)
-    print("🎉 Fast, Full-Featured & 100% Bug-Free Website Generated Successfully!")
+    print("🎉 Fast & Bug-Free Website Generated Successfully!")
 
 if __name__ == "__main__":
     process_woocommerce_csv()
