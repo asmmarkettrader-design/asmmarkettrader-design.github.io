@@ -464,6 +464,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         @keyframes gradient {{ 0% {{ background-position: 0% 50%; }} 50% {{ background-position: 100% 50%; }} 100% {{ background-position: 0% 50%; }} }}
     </style>
     {structured_data}
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-M4J4YTPZPQ');
+    </script>
 
     <script>
         // Shopping Cart Logic
