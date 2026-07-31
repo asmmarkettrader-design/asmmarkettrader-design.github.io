@@ -1004,7 +1004,43 @@ def generate_manifest():
     }
     with open("output/manifest.json", "w") as f:
         json.dump(manifest, f, indent=2)
+# ==============================================================================
+# GOOGLE MERCHANT CENTER FEED GENERATOR
+# ==============================================================================
 
+def generate_merchant_feed(products_list):
+    print("🛍️ Generating Google Merchant Center Feed...")
+    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml_content += '<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n'
+    xml_content += '<channel>\n'
+    xml_content += '  <title>ASM VEO Products</title>\n'
+    xml_content += '  <link>https://www.asmveo.com</link>\n'
+    xml_content += '  <description>Premium online shopping in Pakistan with COD</description>\n'
+    
+    for prod in products_list:
+        # XML کے لیے غیر ضروری علامات کو محفوظ (safe) بنانا
+        safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        safe_desc = prod['seo_desc'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        safe_cat = prod['category'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        
+        xml_content += '  <item>\n'
+        xml_content += f"    <g:id>{prod['id']}</g:id>\n"
+        xml_content += f"    <g:title>{safe_title}</g:title>\n"
+        xml_content += f"    <g:description>{safe_desc}</g:description>\n"
+        xml_content += f"    <g:link>https://www.asmveo.com/product/{prod['slug']}.html</g:link>\n"
+        xml_content += f"    <g:image_link>{prod['image']}</g:image_link>\n"
+        xml_content += "    <g:condition>new</g:condition>\n"
+        xml_content += "    <g:availability>in_stock</g:availability>\n"
+        xml_content += f"    <g:price>{prod['final_price']} PKR</g:price>\n"
+        xml_content += "    <g:brand>ASM VEO</g:brand>\n"
+        xml_content += f"    <g:product_type>{safe_cat}</g:product_type>\n"
+        xml_content += '  </item>\n'
+        
+    xml_content += '</channel>\n</rss>'
+    
+    with open("output/merchant-feed.xml", "w", encoding="utf-8") as f:
+        f.write(xml_content)
+    print("✅ Google Merchant Feed generated successfully!")
 # ==============================================================================
 # PRODUCT CARD GENERATOR
 # ==============================================================================
@@ -2253,9 +2289,10 @@ def process_woocommerce_csv():
     print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)} | 🏙️ Cities: {len(cities)}")
     print("✨ Accessibility, Performance, Schema & Broken Links Fixed successfully!")
     
-    # ---------------------------------------------------------
+# ---------------------------------------------------------
     # NEW: EXECUTE AUTO-OPTIMIZATIONS AT THE END OF GENERATION
     # ---------------------------------------------------------
+    generate_merchant_feed(products_list) # <--- مرچنٹ فیڈ یہاں بنے گی
     auto_fix_broken_links("output")
     apply_lighthouse_optimizations("output")
     trigger_google_indexing_api(sitemap_urls)
