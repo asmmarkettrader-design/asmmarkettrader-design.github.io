@@ -1698,14 +1698,14 @@ def process_woocommerce_csv():
         home_html = get_html_header(page_title, categories_list,
                                      "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
         
-       if h_page == 1:
+        if h_page == 1:
             home_html += """
             <!-- 🛠️ SEO FIX 2: H1 Tag Added for Homepage -->
             <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan, Electronics, Fashion & Accessories</h1>
             
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
-                    <div class="carousel-slide h-full relative" aria-hidden="false">
+                    <div class="carousel-slide h-full relative" aria-hidden="false"> 
                         <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion Sale Banner" fetchpriority="high" decoding="sync" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
                         <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
