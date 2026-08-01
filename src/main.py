@@ -282,14 +282,47 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     # 2. Dynamic Title & Meta Description Length Fix
     safe_title = title[:45] + "..." if len(title) > 45 else title
     safe_desc = seo_desc[:155] if seo_desc else "Premium online shopping in Pakistan with Cash on Delivery."
-    # --- 🛠️ SEO FIXES END ---
+    # 🛠️ SEO FIX 1: Identity & Organization Schema (For All Pages)
+    structured_data = """
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ASM VEO",
+      "alternateName": "ASM Digital Solutions",
+      "url": "https://www.asmveo.com/",
+      "logo": "https://www.asmveo.com/assets/icon-512.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+923425478683",
+        "contactType": "customer service",
+        "areaServed": "PK",
+        "availableLanguage": ["en", "Urdu"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/asmveo",
+        "https://www.instagram.com/asmveo"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ASM VEO",
+      "url": "https://www.asmveo.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.asmveo.com/index.html?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>"""
 
-    structured_data = ""
     if product_data:
         safe_schema_name = product_data['name'].replace('\\', '\\\\').replace('"', '\\"')
-        safe_schema_desc = product_data.get('seo_desc', '').replace('\\', '\\\\').replace('"', '\\"')
         
-        structured_data = f"""
+        structured_data += f"""
     <script type="application/ld+json">
     {{
       "@context": "https://schema.org/",
@@ -1665,8 +1698,11 @@ def process_woocommerce_csv():
         home_html = get_html_header(page_title, categories_list,
                                      "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
         
-        if h_page == 1:
+       if h_page == 1:
             home_html += """
+            <!-- 🛠️ SEO FIX 2: H1 Tag Added for Homepage -->
+            <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan, Electronics, Fashion & Accessories</h1>
+            
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
                     <div class="carousel-slide h-full relative" aria-hidden="false">
