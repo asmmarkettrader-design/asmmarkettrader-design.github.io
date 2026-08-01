@@ -260,23 +260,35 @@ def minify_html(html_content):
 
 
 # ==============================================================================
-# HTML HEADER GENERATION (Optimized for PageSpeed, Accessibility & NEW SCHEMA)
+# HTML HEADER GENERATION (Optimized for PageSpeed, Accessibility & SEO FIXES)
 # ==============================================================================
 
-def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan", 
-                    product_data=None, breadcrumb_data=None, og_image=None):
+def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan",
+                    product_data=None, breadcrumb_data=None, og_image=None, custom_canonical=None):
     
     cat_links = ""
     for cat in categories_list:
         c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
         cat_links += f'<a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">{cat}</a>\n'
 
+    # --- 🛠️ SEO FIXES START ---
+    # 1. Dynamic Canonical URL Fix
+    canonical_url = "https://www.asmveo.com/"
+    if custom_canonical:
+        canonical_url = custom_canonical
+    elif product_data and 'slug' in product_data:
+        canonical_url = f"https://www.asmveo.com/product/{product_data['slug']}.html"
+
+    # 2. Dynamic Title & Meta Description Length Fix
+    safe_title = title[:45] + "..." if len(title) > 45 else title
+    safe_desc = seo_desc[:155] if seo_desc else "Premium online shopping in Pakistan with Cash on Delivery."
+    # --- 🛠️ SEO FIXES END ---
+
     structured_data = ""
     if product_data:
         safe_schema_name = product_data['name'].replace('\\', '\\\\').replace('"', '\\"')
         safe_schema_desc = product_data.get('seo_desc', '').replace('\\', '\\\\').replace('"', '\\"')
         
-        # ADVANCED SCHEMA APPLIED HERE: Including MerchantReturnPolicy and OfferShippingDetails
         structured_data = f"""
     <script type="application/ld+json">
     {{
@@ -291,7 +303,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         "priceCurrency": "PKR",
         "price": "{product_data['final_price']}",
         "availability": "https://schema.org/InStock",
-        "url": "https://www.asmveo.com/product/{product_data['slug']}.html",
+        "url": "{canonical_url}",
         "seller": {{ "@type": "Organization", "name": "ASM VEO" }},
         "hasMerchantReturnPolicy": {{
           "@type": "MerchantReturnPolicy",
@@ -350,7 +362,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
       "itemListElement": [
         {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.asmveo.com/" }},
         {{ "@type": "ListItem", "position": 2, "name": "{safe_bc_cat}", "item": "https://www.asmveo.com/category/{c_slug}.html" }},
-        {{ "@type": "ListItem", "position": 3, "name": "{safe_bc_name}", "item": "https://www.asmveo.com/product/{breadcrumb_data['slug']}.html" }}
+        {{ "@type": "ListItem", "position": 3, "name": "{safe_bc_name}", "item": "{canonical_url}" }}
       ]
     }}
     </script>"""
@@ -362,15 +374,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>{title} | Buy Online in Pakistan | ASM VEO</title>
+    <title>{safe_title} | ASM VEO</title>
     
-    <meta name="title" content="{title} | Buy Online in Pakistan | ASM VEO">
-    <meta name="description" content="{seo_desc}">
-    <meta name="keywords" content="buy {title} in Pakistan, {title} price in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO, best online store Pakistan, Karachi, Lahore, Islamabad">
+    <meta name="title" content="{safe_title} | ASM VEO">
+    <meta name="description" content="{safe_desc}">
+    <meta name="keywords" content="buy {safe_title} in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#E53935">
-    <link rel="canonical" href="https://www.asmveo.com/">
+    <link rel="canonical" href="{canonical_url}">
     
     <meta name="geo.region" content="PK" />
     <meta name="geo.placename" content="Pakistan" />
@@ -378,16 +390,16 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="ICBM" content="30.3753, 69.3451" />
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.asmveo.com/">
-    <meta property="og:title" content="{title} | Buy Online in Pakistan | ASM VEO">
-    <meta property="og:description" content="Shop {title} online in Pakistan. Cash on Delivery available. Fast shipping & easy returns.">
+    <meta property="og:url" content="{canonical_url}">
+    <meta property="og:title" content="{safe_title} | ASM VEO">
+    <meta property="og:description" content="{safe_desc}">
     <meta property="og:image" content="{og_image_final}">
     <meta property="og:locale" content="en_PK">
     <meta property="og:site_name" content="ASM VEO">
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="{title} | ASM VEO Pakistan">
-    <meta property="twitter:description" content="Shop {title} online in Pakistan. COD available.">
+    <meta property="twitter:title" content="{safe_title} | ASM VEO">
+    <meta property="twitter:description" content="{safe_desc}">
     <meta property="twitter:image" content="{og_image_final}">
     
     <link rel="manifest" href="/manifest.json">
