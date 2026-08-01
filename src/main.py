@@ -1166,7 +1166,7 @@ def process_woocommerce_csv():
         
     print("🚀 Advanced Script Started! Cleaning old data...")
     
-   if os.path.exists("output"):
+    if os.path.exists("output"):
         shutil.rmtree("output")
         
     os.makedirs("output/category", exist_ok=True)
@@ -1177,7 +1177,6 @@ def process_woocommerce_csv():
     with open("output/CNAME", "w") as f:
         f.write("www.asmveo.com")
         
-    # .nojekyll فائل تاکہ بلاکیج ختم ہو جائے
     with open("output/.nojekyll", "w", encoding="utf-8") as f:
         f.write("")
     
