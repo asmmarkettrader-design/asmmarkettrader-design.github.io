@@ -40,12 +40,11 @@ jobs:
         env:
           GOOGLE_APPLICATION_CREDENTIALS: "gcp-key.json"
         run: |
-          # یہاں main.py کی جگہ اپنے پائتھن سکرپٹ کا اصل نام لکھیں (جیسے script.py)
-          python main.py
+          python src/main.py
 
       - name: Deploy to GitHub Pages (ویب سائٹ لائیو کریں)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output  # صرف output فولڈر کی فائلز لائیو ہوں گی
+          publish_dir: ./output  # صرف output فولڈر کی فائلز لائیو ہوں گی۔
           commit_message: "🚀 Auto-deployed SEO updates, Trending Keywords & fixed broken links"
