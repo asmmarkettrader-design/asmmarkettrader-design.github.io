@@ -2368,6 +2368,27 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             document.getElementById('totalField').value = "Rs " + grandTotal;
         }
 
+// 🌟 1. Trustpilot Invitation Function
+        function sendTrustpilotInvitation() {
+            try {
+                let customerName = document.getElementById('fullName').value;
+                let customerEmail = document.getElementById('emailAddr').value;
+                
+                if (customerEmail && customerName) {
+                    const tp_invitation = {
+                        recipientEmail: customerEmail,
+                        recipientName: customerName,
+                        referenceId: 'ASM-' + Math.floor(100000 + Math.random() * 900000),
+                        source: 'InvitationScript',
+                        templateId: 'invitation_template_GUID', // اگر Trustpilot نے کوئی ID دی ہے تو وہ یہاں ڈالیں
+                    };
+                    tp('createInvitation', tp_invitation);
+                    console.log("Trustpilot Review Email Triggered for: " + customerEmail);
+                }
+            } catch(e) { console.log('Trustpilot error:', e); }
+        }
+
+        // 🌟 2. Form Submit & Order Processing
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
@@ -2381,10 +2402,18 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
+                    // 🌟 3. Trigger Trustpilot HERE (ای میل سینڈ ہونے کے فوراً بعد)
+                    sendTrustpilotInvitation();
+                    
                     const urlParams = new URLSearchParams(window.location.search);
                     if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
                     updateCartBadge();
-                    window.location.href = '/order-success.html';
+                    
+                    // 🌟 4. تھوڑا سا ڈیلے (Delay) تاکہ Trustpilot کا سگنل پیج لوڈ ہونے سے پہلے چلا جائے
+                    setTimeout(() => {
+                        window.location.href = '/order-success.html';
+                    }, 800); 
+                    
                 } else {
                     showToast('Error submitting order. Try again.', 'fa-exclamation-circle', 'red');
                     btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
