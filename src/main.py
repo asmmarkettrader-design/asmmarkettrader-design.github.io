@@ -538,6 +538,13 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+<!-- Trustpilot Invitation Script -->
+    <script>
+        (function(w,d,s,r,n){{w.TrustpilotObject=n;w[n]=w[n]||function(){{(w[n].q=w[n].q||[]).push(arguments)}};
+            a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
+            f.parentNode.insertBefore(a,f)}})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+            tp('register', 'H57UbnePwdaPfseb');
+    </script>
 
     <script>
         // Shopping Cart Logic
