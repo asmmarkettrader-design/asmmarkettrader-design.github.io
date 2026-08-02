@@ -321,9 +321,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
     if product_data:
         safe_schema_name = product_data['name'].replace('\\', '\\\\').replace('"', '\\"')
+        safe_schema_desc = product_data.get('seo_desc', '').replace('\\', '\\\\').replace('"', '\\"')
         
+        # ADVANCED SCHEMA APPLIED HERE: Including MerchantReturnPolicy and OfferShippingDetails
         structured_data += f"""
-    <script type="application/ld+json">
+        <script type="application/ld+json">
     {{
       "@context": "https://schema.org/",
       "@type": "Product",
