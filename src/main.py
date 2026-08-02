@@ -520,6 +520,24 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
       gtag('js', new Date());
       gtag('config', 'G-M4J4YTPZPQ');
     </script>
+    
+<!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '123456789012345'); /* یہاں بعد میں آپ اپنی اصلی پکسل آئی ڈی لگا سکتے ہیں */
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
     <script>
         // Shopping Cart Logic
@@ -1698,7 +1716,7 @@ def process_woocommerce_csv():
     for h_page in range(1, total_home_pages + 1):
         page_title = "Home - Premium Online Shopping in Pakistan" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
         home_html = get_html_header(page_title, categories_list,
-                                     "ASM VEO - Pakistan's premium online shopping destination. Buy quality products with Cash on Delivery, fast shipping & easy returns.")
+                                     "ASM VEO - Premium online shopping in Pakistan for Electronics, Fashion & Home Appliances. Buy quality products with Cash on Delivery & fast shipping.")
         
         if h_page == 1:
             home_html += """
