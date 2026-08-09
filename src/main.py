@@ -1085,6 +1085,7 @@ Allow: /
 Disallow: /checkout.html
 
 Sitemap: https://www.asmveo.com/sitemap.xml
+Sitemap: https://www.asmveo.com/image-sitemap.xml
 """
     with open("output/robots.txt", "w") as f:
         f.write(content)
@@ -1105,6 +1106,22 @@ def generate_manifest():
     }
     with open("output/manifest.json", "w") as f:
         json.dump(manifest, f, indent=2)
+
+def generate_image_sitemap(products_list):
+    print("📸 Generating Image Sitemap...")
+    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml_content += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+    
+    for prod in products_list:
+        safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
+        xml_content += f"  <url>\n    <loc>https://www.asmveo.com/product/{prod['slug']}.html</loc>\n"
+        xml_content += f"    <image:image>\n      <image:loc>{prod['image']}</image:loc>\n      <image:title>{safe_title}</image:title>\n    </image:image>\n  </url>\n"
+    
+    xml_content += '</urlset>'
+    
+    with open("output/image-sitemap.xml", "w", encoding="utf-8") as f:
+        f.write(xml_content)
+        
 # ==============================================================================
 # GOOGLE MERCHANT CENTER FEED GENERATOR
 # ==============================================================================
