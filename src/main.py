@@ -201,8 +201,9 @@ def check_valid_image(prod):
         return prod # اگر 403 (Forbidden) ہے تو رکھ لیں گے (براؤزر میں چل سکتی ہے)
     except Exception:
         return None # ٹائم آؤٹ یا DNS ایرر پر ڈیلیٹ کر دیں
+
 def get_category_icon(category):
-    """Map product categories to FontAwesome icons."""
+    """Map product categories to FontAwesome icons. Enhanced to prevent duplicates."""
     cat_lower = category.lower()
     icons = {
         'perfume|fragrance|scent|attar': 'fa-spray-can',
@@ -215,11 +216,16 @@ def get_category_icon(category):
         'jewelry|jewel|ring|necklace|gold': 'fa-gem',
         'bag|wallet|purse|luggage': 'fa-bag-shopping',
         'book|stationary|pen': 'fa-book',
-        'toy|game|kid|baby': 'fa-gamepad',
+        'toy|game|kid|baby': 'fa-child-reaching',
         'food|grocery|snack|drink': 'fa-basket-shopping',
         'health|medical|fitness|gym': 'fa-heart-pulse',
         'garden|plant|outdoor': 'fa-seedling',
-        'auto|car|bike|motor': 'fa-car',
+        'auto|car|vehicle': 'fa-car',
+        'bike|motorcycle': 'fa-motorcycle',
+        'accessory|accessories': 'fa-headphones',
+        'bedding|linen': 'fa-bed',
+        'tool|hardware': 'fa-hammer',
+        'sport': 'fa-volleyball',
     }
     
     for pattern, icon in icons.items():
@@ -637,8 +643,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function showToast(msg, icon='fa-check-circle', color='pk') {{
             const colors = {{ pk: 'bg-[#E53935]', red: 'bg-red-500', gray: 'bg-gray-600', green: 'bg-green-500' }};
             const toast = document.createElement('div');
-            toast.className = `fixed bottom-20 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
-            toast.innerHTML = `<i class="fas ${{icon}} text-xl" aria-hidden="true"></i> ${{msg}}`;
+            toast.className = `fixed bottom-20 md:bottom-4 right-4 ${colors[color]} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
+            toast.innerHTML = `<i class="fas ${icon} text-xl" aria-hidden="true"></i> ${msg}`;
             document.body.appendChild(toast);
             setTimeout(() => {{ toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; setTimeout(() => toast.remove(), 300); }}, 2500);
         }}
@@ -674,7 +680,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function updateDarkModeIcon() {{
             let isDark = document.documentElement.classList.contains('dark');
             document.querySelectorAll('.dark-mode-icon').forEach(el => {{
-                el.className = `fas ${{isDark ? 'fa-sun' : 'fa-moon'}} dark-mode-icon`;
+                el.className = `fas ${isDark ? 'fa-sun' : 'fa-moon'} dark-mode-icon`;
             }});
         }}
 
@@ -687,10 +693,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('qvPrice').innerText = "Rs " + price;
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
             
-            let safeName = name.replace(/'/g, "\\\\'");
-            let safeImage = image.replace(/'/g, "\\\\'");
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{safeImage}}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{safeImage}}', event);`);
+            let safeName = name.replace(/'/g, "\\'");
+            let safeImage = image.replace(/'/g, "\\'");
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -1003,7 +1009,7 @@ def generate_static_pages(categories_list):
             let container = document.getElementById('wishlistContainer');
             if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500 dark:text-gray-400"><i class="fas fa-heart-broken text-6xl mb-4 opacity-30"></i><p class="text-lg font-bold">Your wishlist is empty</p></div>'; return; }
             container.innerHTML = wl.map((item, i) => {
-                let safeName = item.name.replace(/'/g, "\\\\'");
+                let safeName = item.name.replace(/'/g, "\\'");
                 return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
                     <div class="h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
                         <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();" alt="Product Image" loading="lazy" decoding="async">
@@ -1159,6 +1165,7 @@ def generate_merchant_feed(products_list):
     with open("output/merchant-feed.xml", "w", encoding="utf-8") as f:
         f.write(xml_content)
     print("✅ Google Merchant Feed generated successfully!")
+
 # ==============================================================================
 # PRODUCT CARD GENERATOR
 # ==============================================================================
@@ -1288,6 +1295,7 @@ def process_woocommerce_csv():
         
     with open("output/.nojekyll", "w", encoding="utf-8") as f:
         f.write("")
+        
     # 🛠️ SEO FIX 3: AI Crawlers & LLM Optimization (llms.txt)
     llms_content = """# ASM VEO
 
@@ -1766,7 +1774,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         <button onclick="quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-12 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#E53935] text-sm"></i></button>
                         ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                         <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
+                            <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                         </div>
                         <div class="p-2 flex flex-col flex-grow">
                             <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -1811,7 +1819,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
     # ==============================================================================
     print("🏠 Generating Home Pages with Pagination...")
     all_categories_list = list(sections_dict.items())
-    cats_per_home_page = 4
+    cats_per_home_page = 6  # 🌟 UPDATE: Changed from 4 to 6 categories per home page
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
 
     for h_page in range(1, total_home_pages + 1):
@@ -1824,8 +1832,10 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             <!-- 🛠️ SEO FIX 2: H1 Tag Added for Homepage -->
             <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan, Electronics, Fashion & Accessories</h1>
             
+            <!-- 🌟 UPDATE: 6 NEW CUSTOM BANNERS 🌟 -->
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
+                    <!-- Slide 1: Fashion (Clothes/Girl) -->
                     <div class="carousel-slide h-full relative" aria-hidden="false"> 
                         <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion Sale Banner" fetchpriority="high" decoding="sync" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
@@ -1837,28 +1847,59 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                             </div>
                         </div>
                     </div>
+                    <!-- Slide 2: Electronics (Gadgets, Earbuds, Machines) -->
                     <div class="carousel-slide h-full relative" aria-hidden="true">
                         <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Gadgets Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/50"></div>
+                        <div class="absolute inset-0 bg-black/60"></div>
                         <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
                             <div class="max-w-lg">
-                                <span class="bg-[#E53935] text-white text-xs font-black px-3 py-1 rounded-full">NEW ARRIVALS</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Latest Gadgets<br>& Accessories</h2>
-                                <a href="#products" class="bg-[#E53935] text-white px-6 py-2.5 rounded-lg font-bold hover:bg-[#C62828] transition text-sm">Explore Now</a>
+                                <span class="bg-blue-500 text-white text-xs font-black px-3 py-1 rounded-full">TECH HUB</span>
+                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Smart Gadgets &<br>Electronics</h2>
+                                <p class="text-sm text-gray-200 mb-4 font-semibold">Earbuds, Trimmers, Lights & Mobile Accessories</p>
+                                <a href="#products" class="bg-blue-500 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-blue-600 transition text-sm">Explore Now</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Slide 3: 14 August Sale -->
                     <div class="carousel-slide h-full relative" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80" alt="Mega Sale Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/50"></div>
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="14 August Sale Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-green-900/70"></div>
                         <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
                             <div class="max-w-lg">
-                                <span class="bg-yellow-400 text-black text-xs font-black px-3 py-1 rounded-full">MEGA SALE</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Flat 50% OFF<br>Premium Products</h2>
-                                <a href="#products" class="bg-white text-[#E53935] px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition text-sm">Shop Now</a>
+                                <span class="bg-white text-green-700 text-xs font-black px-3 py-1 rounded-full">14 AUGUST SPECIAL</span>
+                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight text-white">Azaadi Sale<br>Flat 50% OFF</h2>
+                                <p class="text-sm text-gray-200 mb-4 font-semibold">Celebrate Independence with massive discounts!</p>
+                                <a href="#products" class="bg-green-600 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-green-500 transition text-sm border border-white">Grab Offer</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Slide 4: Health & Beauty -->
+                    <div class="carousel-slide h-full relative" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=1200&q=80" alt="Cosmetics Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-pink-900/50"></div>
+                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
+                            <div class="max-w-lg">
+                                <span class="bg-pink-500 text-white text-xs font-black px-3 py-1 rounded-full">BEAUTY & CARE</span>
+                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Premium Cosmetics<br>& Skincare</h2>
+                                <p class="text-sm text-gray-200 mb-4 font-semibold">100% Original Health & Beauty Products</p>
+                                <a href="#products" class="bg-pink-500 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-pink-600 transition text-sm">Shop Beauty</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5: Babies & Kids -->
+                    <div class="carousel-slide h-full relative" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=80" alt="Baby & Kids Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-blue-900/40"></div>
+                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
+                            <div class="max-w-lg">
+                                <span class="bg-purple-500 text-white text-xs font-black px-3 py-1 rounded-full">KIDS COLLECTION</span>
+                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Baby & Kids<br>Essentials</h2>
+                                <p class="text-sm text-gray-200 mb-4 font-semibold">Toys, Clothes & Care Accessories</p>
+                                <a href="#products" class="bg-purple-500 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-purple-600 transition text-sm">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 6: Shoes -->
                     <div class="carousel-slide h-full relative" aria-hidden="true">
                         <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1200&q=80" alt="Shoes Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
@@ -1909,7 +1950,27 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-4 md:grid-cols-8 gap-4 text-center">
             """
-        for cat in categories_list[:8]:
+        
+        # 🌟 UPDATE: UNIQUE ICONS LOGIC 🌟
+        used_icons = set()
+        unique_top_cats = []
+        for cat in categories_list:
+            icon = get_category_icon(cat)
+            if icon not in used_icons:
+                used_icons.add(icon)
+                unique_top_cats.append(cat)
+            if len(unique_top_cats) >= 8:
+                break
+                
+        # If we couldn't find 8 truly unique icons, fill up to 8 with whatever is left
+        if len(unique_top_cats) < 8:
+            for cat in categories_list:
+                if cat not in unique_top_cats:
+                    unique_top_cats.append(cat)
+                if len(unique_top_cats) >= 8:
+                    break
+
+        for cat in unique_top_cats:
             c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
             home_html += f"""
                     <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group">
@@ -2076,7 +2137,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                             <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
+                                <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                             </div>
                             <div class="p-2 flex flex-col flex-grow">
                                 <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -2130,7 +2191,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                             <div class="h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
+                                <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                             </div>
                             <div class="p-2 flex flex-col flex-grow">
                                 <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-1">${htmlSafeName}</h3>
