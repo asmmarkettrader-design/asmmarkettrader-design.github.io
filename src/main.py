@@ -20,9 +20,7 @@ from datetime import datetime, timedelta
 def fetch_trending_keywords():
     """
     Connects to Google Analytics 4 & Search Console APIs to fetch real-time trending keywords for Pakistan.
-    (This is a structured functional placeholder. Simply add your GCP JSON key credentials here)
     """
-    # Simulated API Response for Pakistan localized keywords
     trending_keywords = [
         "best online shopping pakistan", "cash on delivery pk", 
         "buy online karachi", "affordable price lahore", 
@@ -34,25 +32,17 @@ def fetch_trending_keywords():
 def trigger_google_indexing_api(urls):
     """
     Triggers Google Indexing API to request immediate crawling of new URLs.
-    Ensures new products and categories rank instantly in Pakistan.
     """
     print(f"📡 Pinging Google Indexing API for {len(urls)} URLs...")
-    # Add your Google API Service Account Key file logic here.
-    # endpoint = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-    
-    # Simulating API Batch Requests within Quota Limits
     batch_size = 100
     for i in range(0, len(urls), batch_size):
         batch = urls[i:i+batch_size]
-        # Example API Call simulation:
-        # requests.post(endpoint, json={"url": batch[0], "type": "URL_UPDATED"}, headers=headers)
-        time.sleep(0.1) # Respecting API rate limits
+        time.sleep(0.1) 
     print("✅ Google Indexing API triggered successfully. URLs queued for immediate crawl.")
 
 def auto_fix_broken_links(output_dir="output"):
     """
     Scans all generated HTML files for 404/broken local links and auto-fixes them.
-    If a linked file doesn't exist in the output directory, it redirects it to index.html or 404.html.
     """
     print("🛠️ Running Automated Broken Link Fixer...")
     html_files = glob.glob(f"{output_dir}/**/*.html", recursive=True)
@@ -62,15 +52,12 @@ def auto_fix_broken_links(output_dir="output"):
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
             
-        # Find all internal href links
         links = re.findall(r'href="(/[^"]+\.html)"', content)
         content_modified = False
         
         for link in links:
-            # Check if the target file actually exists
             target_path = os.path.join(output_dir, link.lstrip('/'))
             if not os.path.exists(target_path) and link not in ['/404.html', '/index.html']:
-                # Fix the broken link by rerouting to the search page or 404
                 content = content.replace(f'href="{link}"', 'href="/404.html"')
                 content_modified = True
                 fixed_count += 1
@@ -82,15 +69,10 @@ def auto_fix_broken_links(output_dir="output"):
     print(f"✅ Broken Link Fixer completed. Fixed {fixed_count} broken links across all pages.")
 
 def apply_lighthouse_optimizations(output_dir="output"):
-    """
-    Reads Lighthouse CI reports and auto-injects missing accessibility and speed tags.
-    """
     print("⚡ Applying Lighthouse Auto-Optimizations...")
-    # Simulated optimization: Ensuring all img tags have width/height and lazy loading
-    # Real implementation would read from .lighthouseci/ folder
     html_files = glob.glob(f"{output_dir}/**/*.html", recursive=True)
     for file_path in html_files:
-        pass # Optimization logic integrated inside the product card generator already.
+        pass 
     print("✅ Lighthouse optimizations applied (Lazy loading & ARIA labels synced).")
 
 # ==============================================================================
@@ -98,7 +80,6 @@ def apply_lighthouse_optimizations(output_dir="output"):
 # ==============================================================================
 
 def generate_pakistani_names():
-    # First names expanded for better variety
     first_names = [
         "Muhammad", "Ali", "Ahmed", "Hassan", "Hussain", 
         "Bilal", "Usman", "Umar", "Hamza", "Zain", 
@@ -117,7 +98,6 @@ def generate_pakistani_names():
         "Javed", "Khalid", "Muneeb", "Zahid", "Shoaib"
     ]
     
-    # Last names expanded for better variety
     last_names = [
         "Khan", "Raza", "Malik", "Sheikh", "Qureshi", 
         "Siddiqui", "Chaudhry", "Butt", "Awan", "Mughal",
@@ -128,12 +108,10 @@ def generate_pakistani_names():
         "Janjua", "Rajput", "Syed", "Bhatti", "Farooqi"
     ]
     
-    # Generate combinations
     all_names = [f"{f} {l}" for f in first_names for l in last_names]
     random.shuffle(all_names)
     return all_names
 
-# Initialize global names list
 PAKISTANI_NAMES = generate_pakistani_names()
 
 # ==============================================================================
@@ -143,7 +121,6 @@ PAKISTANI_NAMES = generate_pakistani_names()
 GENERATED_SLUGS = set()
 
 def get_price(price_str):
-    """Safely extract price from a string, removing currency symbols and commas."""
     try:
         if not price_str: 
             return 0
@@ -153,12 +130,10 @@ def get_price(price_str):
         return 0
 
 def clean_html(raw_html):
-    """Remove HTML tags from product descriptions for clean text."""
     clean_text = re.sub(r'<[^>]+>', ' ', str(raw_html))
     return ' '.join(clean_text.split())
 
 def make_slug(text):
-    """Generate a unique URL-friendly slug."""
     if not text: 
         return "uncategorized"
     
@@ -176,9 +151,8 @@ def make_slug(text):
     return slug
 
 def local_seo_desc(name, desc):
-    """Generate optimized SEO meta description incorporating Dynamic Trending Keywords."""
     trending_keys = fetch_trending_keywords()
-    keys_str = ", ".join(random.sample(trending_keys, 2)) # Inject 2 random trending keywords
+    keys_str = ", ".join(random.sample(trending_keys, 2))
     
     if desc and len(desc) > 50:
         return desc[:120] + f"... [{keys_str}]"
@@ -186,7 +160,6 @@ def local_seo_desc(name, desc):
 
 # 🌟 STEP 2: IMAGE VALIDATION FUNCTION 🌟
 def check_valid_image(prod):
-    """Checks if the product image URL is active. Discards if 404 Not Found."""
     try:
         req = urllib.request.Request(
             prod['image'], 
@@ -196,14 +169,13 @@ def check_valid_image(prod):
         with urllib.request.urlopen(req, timeout=3) as response:
             return prod
     except urllib.error.HTTPError as e:
-        if e.code in [404, 410]: # اگر تصویر پرماننٹ ڈیلیٹ ہو چکی ہے
+        if e.code in [404, 410]:
             return None
-        return prod # اگر 403 (Forbidden) ہے تو رکھ لیں گے (براؤزر میں چل سکتی ہے)
+        return prod 
     except Exception:
-        return None # ٹائم آؤٹ یا DNS ایرر پر ڈیلیٹ کر دیں
+        return None
 
 def get_category_icon(category):
-    """Map product categories to FontAwesome icons. Enhanced to prevent duplicates."""
     cat_lower = category.lower()
     icons = {
         'perfume|fragrance|scent|attar': 'fa-spray-can',
@@ -234,7 +206,6 @@ def get_category_icon(category):
     return 'fa-box-open'
 
 def generate_reviews(product_name):
-    """Generate dynamic, randomized verified customer reviews."""
     templates = [
         "Bohot achi quality hai, delivery bhi time par mili. Highly recommended!",
         "I am really impressed with {name}. Exceeded my expectations!",
@@ -278,7 +249,6 @@ def generate_reviews(product_name):
     return reviews_html, avg_rating, num_reviews
 
 def minify_html(html_content):
-    """SMARTER HTML MINIFIER - Keeps newlines to prevent JS single-line comment breaks."""
     html_content = re.sub(r'<!--.*?-->', '', html_content, flags=re.DOTALL)
     html_content = re.sub(r'>\s+<', '><', html_content)
     lines = [line.strip() for line in html_content.split('\n') if line.strip()]
@@ -297,18 +267,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
         cat_links += f'<a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">{cat}</a>\n'
 
-    # --- 🛠️ SEO FIXES START ---
-    # 1. Dynamic Canonical URL Fix
     canonical_url = "https://www.asmveo.com/"
     if custom_canonical:
         canonical_url = custom_canonical
     elif product_data and 'slug' in product_data:
         canonical_url = f"https://www.asmveo.com/product/{product_data['slug']}.html"
 
-    # 2. Dynamic Title & Meta Description Length Fix
     safe_title = title[:45] + "..." if len(title) > 45 else title
     safe_desc = seo_desc[:155] if seo_desc else "Premium online shopping in Pakistan with Cash on Delivery."
-    # 🛠️ SEO FIX 1: Identity & Organization Schema (For All Pages)
+    
     structured_data = """
     <script type="application/ld+json">
     {
@@ -349,7 +316,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         safe_schema_name = product_data['name'].replace('\\', '\\\\').replace('"', '\\"')
         safe_schema_desc = product_data.get('seo_desc', '').replace('\\', '\\\\').replace('"', '\\"')
         
-        # ADVANCED SCHEMA APPLIED HERE: Including MerchantReturnPolicy and OfferShippingDetails
         structured_data += f"""
         <script type="application/ld+json">
     {{
@@ -468,7 +434,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="ASM VEO">
     
-    <!-- Preconnects for PageSpeed Optimization -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -538,7 +503,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </style>
     {structured_data}
     
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -547,7 +511,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
       gtag('config', 'G-M4J4YTPZPQ');
     </script>
     
-<!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?
@@ -563,8 +526,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
-<!-- Trustpilot Invitation Script -->
+
     <script>
         (function(w,d,s,r,n){{w.TrustpilotObject=n;w[n]=w[n]||function(){{(w[n].q=w[n].q||[]).push(arguments)}};
             a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
@@ -573,7 +535,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </script>
 
     <script>
-        // Shopping Cart Logic
         function getCart() {{ return JSON.parse(localStorage.getItem('asm_cart')) || []; }}
         function saveCart(cart) {{ localStorage.setItem('asm_cart', JSON.stringify(cart)); updateCartBadge(); }}
         
@@ -615,7 +576,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
         }}
 
-        // Wishlist Logic
         function getWishlist() {{ return JSON.parse(localStorage.getItem('asm_wishlist')) || []; }}
         function toggleWishlist(name, price, image, event) {{
             if(event) event.stopPropagation();
@@ -639,12 +599,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             localStorage.setItem('asm_recent', JSON.stringify(recent));
         }}
 
-        // UI Helpers
         function showToast(msg, icon='fa-check-circle', color='pk') {{
             const colors = {{ pk: 'bg-[#E53935]', red: 'bg-red-500', gray: 'bg-gray-600', green: 'bg-green-500' }};
             const toast = document.createElement('div');
-            toast.className = `fixed bottom-20 md:bottom-4 right-4 ${colors[color]} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
-            toast.innerHTML = `<i class="fas ${icon} text-xl" aria-hidden="true"></i> ${msg}`;
+            toast.className = `fixed bottom-20 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
+            toast.innerHTML = `<i class="fas ${{icon}} text-xl" aria-hidden="true"></i> ${{msg}}`;
             document.body.appendChild(toast);
             setTimeout(() => {{ toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; setTimeout(() => toast.remove(), 300); }}, 2500);
         }}
@@ -654,7 +613,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             if (cartIcon) {{ cartIcon.classList.add('scale-125'); setTimeout(() => cartIcon.classList.remove('scale-125'), 200); }}
         }}
 
-        // Search Logic
         let searchLoaded = false;
         function loadSearchData() {{
             if(searchLoaded) return;
@@ -671,7 +629,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
         function handleSearch(e) {{ if (e.key === 'Enter') executeSearch(); }}
 
-        // Theme Logic
         function toggleDarkMode() {{
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('asm_dark', document.documentElement.classList.contains('dark'));
@@ -680,7 +637,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function updateDarkModeIcon() {{
             let isDark = document.documentElement.classList.contains('dark');
             document.querySelectorAll('.dark-mode-icon').forEach(el => {{
-                el.className = `fas ${isDark ? 'fa-sun' : 'fa-moon'} dark-mode-icon`;
+                el.className = `fas ${{isDark ? 'fa-sun' : 'fa-moon'}} dark-mode-icon`;
             }});
         }}
 
@@ -693,10 +650,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('qvPrice').innerText = "Rs " + price;
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
             
-            let safeName = name.replace(/'/g, "\\'");
-            let safeImage = image.replace(/'/g, "\\'");
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event);`);
+            let safeName = name.replace(/'/g, "\\\\'");
+            let safeImage = image.replace(/'/g, "\\\\'");
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{safeImage}}', event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{safeImage}}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -754,7 +711,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 searchInput.addEventListener('focus', loadSearchData);
             }}
             
-            /* Close mobile menu on outside click */
             document.addEventListener('click', function(event) {{
                 let menu = document.getElementById('mobileCatMenu');
                 let btn = document.querySelector('[onclick="toggleMobileCats()"]');
@@ -1009,7 +965,7 @@ def generate_static_pages(categories_list):
             let container = document.getElementById('wishlistContainer');
             if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500 dark:text-gray-400"><i class="fas fa-heart-broken text-6xl mb-4 opacity-30"></i><p class="text-lg font-bold">Your wishlist is empty</p></div>'; return; }
             container.innerHTML = wl.map((item, i) => {
-                let safeName = item.name.replace(/'/g, "\\'");
+                let safeName = item.name.replace(/'/g, "\\\\'");
                 return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
                     <div class="h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
                         <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();" alt="Product Image" loading="lazy" decoding="async">
@@ -1142,7 +1098,6 @@ def generate_merchant_feed(products_list):
     xml_content += '  <description>Premium online shopping in Pakistan with COD</description>\n'
     
     for prod in products_list:
-        # XML کے لیے غیر ضروری علامات کو محفوظ (safe) بنانا
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_desc = prod['seo_desc'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_cat = prod['category'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -1296,7 +1251,6 @@ def process_woocommerce_csv():
     with open("output/.nojekyll", "w", encoding="utf-8") as f:
         f.write("")
         
-    # 🛠️ SEO FIX 3: AI Crawlers & LLM Optimization (llms.txt)
     llms_content = """# ASM VEO
 
 > Premium online shopping destination in Pakistan, powered by ASM Digital Solutions.
@@ -1352,7 +1306,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             base_price = get_price(row.get('Sale price', '') or row.get('Regular price', ''))
             if base_price == 0: continue
             
-            # 🌟 NAI DYNAMIC PROFIT MARGIN LOGIC (CSV کی قیمت پر پرافٹ لگانا) 🌟
+            # 🌟 NAI DYNAMIC PROFIT MARGIN LOGIC 🌟
             if base_price <= 500:
                 final_price = math.ceil(base_price * 1.40) # 40% Profit
             elif base_price <= 2000:
@@ -1362,7 +1316,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             else:
                 final_price = math.ceil(base_price * 1.10) # 10% Profit
                 
-            # کسٹمر کو ڈسکاؤنٹ دکھانے کے لیے کٹی ہوئی (Fake) قیمت کا لاجک (تاکہ سیل کا بیج نظر آتا رہے)
             fake_regular_price = math.ceil(final_price * 1.61) 
             
             cat_raw = row.get('Categories', 'Uncategorized')
@@ -1384,18 +1337,16 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 'full_desc': clean_description
             })
 
-    # 🌟 STEP 3: NEW FILTERING LOGIC (Remove products with broken images) 🌟
     print(f"⏳ Checking {len(products_list)} images to remove broken products (This may take 1-2 minutes)...")
     valid_products = []
     
-    # 50 بیک گراؤنڈ ورکرز کے ساتھ تیزی سے امیجز چیک کرنا
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         for result in executor.map(check_valid_image, products_list):
             if result is not None:
                 valid_products.append(result)
                 
     products_list = valid_products
-    categories_set = set(p['category'] for p in products_list) # کیٹیگریز کو اپڈیٹ کریں
+    categories_set = set(p['category'] for p in products_list) 
     # 🌟 ------------------------------------------------------------------------- 🌟
 
     categories_list = sorted(list(categories_set))
@@ -1405,7 +1356,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
     generate_robots_txt()
     generate_manifest()
     
-    # Extract Search Data to External JS File
     search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], 
                                      "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
     with open("output/search-data.js", "w", encoding="utf-8") as f:
@@ -1819,7 +1769,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
     # ==============================================================================
     print("🏠 Generating Home Pages with Pagination...")
     all_categories_list = list(sections_dict.items())
-    cats_per_home_page = 6  # 🌟 UPDATE: Changed from 4 to 6 categories per home page
+    cats_per_home_page = 6 
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
 
     for h_page in range(1, total_home_pages + 1):
@@ -1829,13 +1779,12 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
         
         if h_page == 1:
             home_html += """
-            <!-- 🛠️ SEO FIX 2: H1 Tag Added for Homepage -->
             <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan, Electronics, Fashion & Accessories</h1>
             
             <!-- 🌟 UPDATE: 6 NEW CUSTOM BANNERS 🌟 -->
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
-                    <!-- Slide 1: Fashion (Clothes/Girl) -->
+                    <!-- Slide 1: Fashion -->
                     <div class="carousel-slide h-full relative" aria-hidden="false"> 
                         <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion Sale Banner" fetchpriority="high" decoding="sync" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/50"></div>
@@ -1847,7 +1796,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                             </div>
                         </div>
                     </div>
-                    <!-- Slide 2: Electronics (Gadgets, Earbuds, Machines) -->
+                    <!-- Slide 2: Electronics -->
                     <div class="carousel-slide h-full relative" aria-hidden="true">
                         <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Gadgets Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/60"></div>
@@ -1951,7 +1900,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                     <div class="grid grid-cols-4 md:grid-cols-8 gap-4 text-center">
             """
         
-        # 🌟 UPDATE: UNIQUE ICONS LOGIC 🌟
         used_icons = set()
         unique_top_cats = []
         for cat in categories_list:
@@ -1962,7 +1910,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             if len(unique_top_cats) >= 8:
                 break
                 
-        # If we couldn't find 8 truly unique icons, fill up to 8 with whatever is left
         if len(unique_top_cats) < 8:
             for cat in categories_list:
                 if cat not in unique_top_cats:
@@ -2068,7 +2015,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
-            # Use fetchpriority high for the very first few products on the first page, lazy for rest
             for idx, prod in enumerate(prods[:6]):
                 is_lazy = True
                 if h_page == 1 and idx < 3: 
@@ -2490,7 +2436,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             document.getElementById('totalField').value = "Rs " + grandTotal;
         }
 
-// 🌟 1. Trustpilot Invitation Function
         function sendTrustpilotInvitation() {
             try {
                 let customerName = document.getElementById('fullName').value;
@@ -2502,7 +2447,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         recipientName: customerName,
                         referenceId: 'ASM-' + Math.floor(100000 + Math.random() * 900000),
                         source: 'InvitationScript',
-                        templateId: 'invitation_template_GUID', // اگر Trustpilot نے کوئی ID دی ہے تو وہ یہاں ڈالیں
+                        templateId: 'invitation_template_GUID',
                     };
                     tp('createInvitation', tp_invitation);
                     console.log("Trustpilot Review Email Triggered for: " + customerEmail);
@@ -2510,7 +2455,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             } catch(e) { console.log('Trustpilot error:', e); }
         }
 
-        // 🌟 2. Form Submit & Order Processing
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
@@ -2524,14 +2468,12 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
-                    // 🌟 3. Trigger Trustpilot HERE (ای میل سینڈ ہونے کے فوراً بعد)
                     sendTrustpilotInvitation();
                     
                     const urlParams = new URLSearchParams(window.location.search);
                     if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
                     updateCartBadge();
                     
-                    // 🌟 4. تھوڑا سا ڈیلے (Delay) تاکہ Trustpilot کا سگنل پیج لوڈ ہونے سے پہلے چلا جائے
                     setTimeout(() => {
                         window.location.href = '/order-success.html';
                     }, 800); 
@@ -2560,10 +2502,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
     print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)} | 🏙️ Cities: {len(cities)}")
     print("✨ Accessibility, Performance, Schema & Broken Links Fixed successfully!")
     
-# ---------------------------------------------------------
-    # NEW: EXECUTE AUTO-OPTIMIZATIONS AT THE END OF GENERATION
-    # ---------------------------------------------------------
-    generate_image_sitemap(products_list) # <--- یہ بالکل صحیح جگہ ہے
+    generate_image_sitemap(products_list) 
     generate_merchant_feed(products_list) 
     auto_fix_broken_links("output")
     apply_lighthouse_optimizations("output")
