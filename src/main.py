@@ -986,7 +986,7 @@ def generate_static_pages(categories_list):
                 let safeName = item.name.replace(/'/g, "\\\\'");
                 return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
                     <div class="h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
-                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.src='https://via.placeholder.com/400x400/E53935/ffffff?text=ASM+VEO'" alt="Product Image" loading="lazy" decoding="async">
+                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();" alt="Product Image" loading="lazy" decoding="async">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
@@ -1156,7 +1156,7 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
         {quick_view_btn}
         {f'<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-{discount}% OFF</div>' if discount > 0 else ''}
         <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
+            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
         </div>
         <div class="p-2 flex flex-col flex-grow">
             <span class="text-[9px] font-bold text-[#E53935] dark:text-white uppercase tracking-wider mb-1 line-clamp-1">{prod['category']}</span>
@@ -1406,7 +1406,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row mb-12 reveal">
                 <div class="md:w-1/2 p-6 flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 relative">
                     {f'<div class="absolute top-4 left-4 bg-[#E53935] text-white text-sm font-black px-3 py-1.5 rounded-lg z-10 shadow-md">-{discount_pct}% OFF</div>' if discount_pct > 0 else ''}
-                    <img id="mainProductImage" src="{prod['image']}" alt="{alt_name}" fetchpriority="high" decoding="sync" width="600" height="600" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/600x600/E53935/ffffff?text=ASM+VEO'">
+                    <img id="mainProductImage" src="{prod['image']}" alt="{alt_name}" fetchpriority="high" decoding="sync" width="600" height="600" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500" onerror="window.location.href='/index.html';">
                     {gallery_html}
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
@@ -1705,7 +1705,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         <button onclick="quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-12 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#E53935] text-sm"></i></button>
                         ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                         <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                            <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" decoding="async" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
+                            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                         </div>
                         <div class="p-2 flex flex-col flex-grow">
                             <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -2015,7 +2015,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                             <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" decoding="async" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
+                                <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                             </div>
                             <div class="p-2 flex flex-col flex-grow">
                                 <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
@@ -2069,7 +2069,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                             <div class="h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" loading="lazy" decoding="async" width="200" height="200" class="w-full h-full object-contain p-1" onerror="this.src='https://via.placeholder.com/200x200/E53935/ffffff?text=ASM+VEO'">
+                                <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                             </div>
                             <div class="p-2 flex flex-col flex-grow">
                                 <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-1">${htmlSafeName}</h3>
