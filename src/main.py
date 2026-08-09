@@ -1,5 +1,8 @@
 import os
 import csv
+import urllib.request
+import urllib.error
+import concurrent.futures
 import math
 import re
 import shutil
@@ -181,6 +184,23 @@ def local_seo_desc(name, desc):
         return desc[:120] + f"... [{keys_str}]"
     return f"Buy {name} online in Pakistan at best price. {keys_str}. Premium quality with Cash on Delivery, fast shipping & easy returns from ASM VEO."
 
+# 🌟 STEP 2: IMAGE VALIDATION FUNCTION 🌟
+def check_valid_image(prod):
+    """Checks if the product image URL is active. Discards if 404 Not Found."""
+    try:
+        req = urllib.request.Request(
+            prod['image'], 
+            method='HEAD', 
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+        )
+        with urllib.request.urlopen(req, timeout=3) as response:
+            return prod
+    except urllib.error.HTTPError as e:
+        if e.code in [404, 410]: # اگر تصویر پرماننٹ ڈیلیٹ ہو چکی ہے
+            return None
+        return prod # اگر 403 (Forbidden) ہے تو رکھ لیں گے (براؤزر میں چل سکتی ہے)
+    except Exception:
+        return None # ٹائم آؤٹ یا DNS ایرر پر ڈیلیٹ کر دیں
 def get_category_icon(category):
     """Map product categories to FontAwesome icons."""
     cat_lower = category.lower()
@@ -1329,8 +1349,22 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 'full_desc': clean_description
             })
 
+    # 🌟 STEP 3: NEW FILTERING LOGIC (Remove products with broken images) 🌟
+    print(f"⏳ Checking {len(products_list)} images to remove broken products (This may take 1-2 minutes)...")
+    valid_products = []
+    
+    # 50 بیک گراؤنڈ ورکرز کے ساتھ تیزی سے امیجز چیک کرنا
+    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+        for result in executor.map(check_valid_image, products_list):
+            if result is not None:
+                valid_products.append(result)
+                
+    products_list = valid_products
+    categories_set = set(p['category'] for p in products_list) # کیٹیگریز کو اپڈیٹ کریں
+    # 🌟 ------------------------------------------------------------------------- 🌟
+
     categories_list = sorted(list(categories_set))
-    print(f"✔ Total {len(products_list)} products being processed...")
+    print(f"✔ Total {len(products_list)} valid products being processed...")
     
     generate_static_pages(categories_list)
     generate_robots_txt()
