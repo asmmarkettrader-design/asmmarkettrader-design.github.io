@@ -2492,7 +2492,8 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
 # ---------------------------------------------------------
     # NEW: EXECUTE AUTO-OPTIMIZATIONS AT THE END OF GENERATION
     # ---------------------------------------------------------
-    generate_merchant_feed(products_list) # <--- مرچنٹ فیڈ یہاں بنے گی
+    generate_image_sitemap(products_list) # <--- یہ بالکل صحیح جگہ ہے
+    generate_merchant_feed(products_list) 
     auto_fix_broken_links("output")
     apply_lighthouse_optimizations("output")
     trigger_google_indexing_api(sitemap_urls)
