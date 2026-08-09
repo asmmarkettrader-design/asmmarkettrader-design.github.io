@@ -1344,7 +1344,17 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             base_price = get_price(row.get('Sale price', '') or row.get('Regular price', ''))
             if base_price == 0: continue
             
-            final_price = math.ceil(base_price * 1.30)
+            # 🌟 NAI DYNAMIC PROFIT MARGIN LOGIC (CSV کی قیمت پر پرافٹ لگانا) 🌟
+            if base_price <= 500:
+                final_price = math.ceil(base_price * 1.40) # 40% Profit
+            elif base_price <= 2000:
+                final_price = math.ceil(base_price * 1.30) # 30% Profit
+            elif base_price <= 3500:
+                final_price = math.ceil(base_price * 1.20) # 20% Profit
+            else:
+                final_price = math.ceil(base_price * 1.10) # 10% Profit
+                
+            # کسٹمر کو ڈسکاؤنٹ دکھانے کے لیے کٹی ہوئی (Fake) قیمت کا لاجک (تاکہ سیل کا بیج نظر آتا رہے)
             fake_regular_price = math.ceil(final_price * 1.61) 
             
             cat_raw = row.get('Categories', 'Uncategorized')
