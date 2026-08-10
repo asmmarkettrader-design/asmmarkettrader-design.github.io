@@ -1315,6 +1315,10 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 final_price = math.ceil(base_price * 1.20) # 20% Profit
             else:
                 final_price = math.ceil(base_price * 1.10) # 10% Profit
+
+            # 🌟 SPECIFIC PRODUCT PRICE OVERRIDE 🌟
+            if "zafrani cream" in name.lower():
+                final_price = 1599
                 
             fake_regular_price = math.ceil(final_price * 1.61) 
             
