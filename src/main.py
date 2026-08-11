@@ -1726,6 +1726,10 @@ def process_woocommerce_csv():
         discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
         
+        # 🌟 FIX: Added missing stock variables 🌟
+        stock_left = random.randint(3, 15)
+        stock_pct = random.randint(15, 40)
+        
         escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
         alt_name = prod['name'].replace('"', '&quot;')
         
