@@ -2637,12 +2637,15 @@ def process_woocommerce_csv():
                         <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Order via WhatsApp
                     </a>
                     
-                    <p class="text-center text-xs text-gray-600 dark:text-gray-400 mt-4"><i class="fas fa-lock" aria-hidden="true"></i> Your information is secure and never shared with third parties.</p>
+                   <p class="text-center text-xs text-gray-600 dark:text-gray-400 mt-4"><i class="fas fa-lock" aria-hidden="true"></i> Your information is secure and never shared with third parties.</p>
                 </form>
             </div>
         </div>
     </div>
+    """
     
+    # جاوا سکرپٹ کو الگ سٹرنگ میں کر دیا گیا ہے تاکہ پائتھن ایرر نہ دے
+    checkout_script = """
     <script>
         let couponApplied = false;
         
@@ -2808,8 +2811,9 @@ def process_woocommerce_csv():
         window.addEventListener('load', renderCart);
     </script>
     """
+    
     with open("output/checkout.html", "w", encoding="utf-8") as f: 
-        f.write(minify_html(checkout_html + get_html_footer()))
+        f.write(minify_html(checkout_html + checkout_script + get_html_footer()))
     
     generate_sitemap(sitemap_urls)
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
