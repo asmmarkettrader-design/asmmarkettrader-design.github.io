@@ -219,17 +219,17 @@ def generate_reviews(product_name):
         reviews_html += f"""
         <div class="border-b border-gray-100 dark:border-gray-700 py-4 last:border-0 reveal">
             <div class="flex items-center gap-2 mb-2">
-                <div class="w-9 h-9 rounded-full bg-[#E53935] text-white flex items-center justify-center font-bold text-sm" aria-hidden="true">{reviewer[0]}</div>
+                <div class="w-9 h-9 rounded-full bg-[#f56437] text-white flex items-center justify-center font-bold text-sm" aria-hidden="true">{reviewer[0]}</div>
                 <div>
                     <span class="font-bold text-gray-900 dark:text-white text-sm block">{reviewer}</span>
-                    <span class="text-xs text-gray-600 dark:text-gray-400">{days_ago} days ago</span>
+                    <span class="text-xs text-gray-500 dark:text-gray-400">{days_ago} days ago</span>
                 </div>
                 <span class="ml-auto text-[10px] text-green-700 bg-green-50 px-2 py-1 rounded-full font-bold"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified</span>
             </div>
-            <div class="text-yellow-500 text-xs mb-2" aria-label="{stars} out of 5 stars">
+            <div class="text-yellow-400 text-xs mb-2" aria-label="{stars} out of 5 stars">
                 {"<i class='fas fa-star' aria-hidden='true'></i>" * stars}
             </div>
-            <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{comment}</p>
+            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{comment}</p>
         </div>
         """
     avg_rating = round(sum(random.randint(4,5) for _ in range(num_reviews)) / num_reviews, 1)
@@ -243,7 +243,7 @@ def minify_html(html_content):
 
 
 # ==============================================================================
-# HTML HEADER GENERATION
+# HTML HEADER GENERATION (TOPDEALS V3 STYLE - #f56437)
 # ==============================================================================
 
 def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan",
@@ -252,7 +252,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     cat_links = ""
     for cat in categories_list:
         c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
-        cat_links += f'<a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">{cat}</a>\n'
+        cat_links += f'<a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#f56437] transition-colors border-b border-gray-50 last:border-0"><i class="fas {get_category_icon(cat)} w-6 text-center text-gray-400"></i> {cat}</a>\n'
 
     canonical_url = "https://www.asmveo.com/"
     if custom_canonical:
@@ -398,7 +398,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="keywords" content="buy {safe_title} in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#E53935">
+    <meta name="theme-color" content="#f56437">
     <link rel="canonical" href="{canonical_url}">
     
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
@@ -440,7 +440,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             darkMode: 'class',
             theme: {{
                 extend: {{
-                    colors: {{ pk: {{ red: '#E53935', light: '#FFEBEE', dark: '#C62828' }} }}
+                    colors: {{ 
+                        td: {{ 
+                            primary: '#f56437', 
+                            hover: '#d44c24', 
+                            dark: '#1f2937', 
+                            light: '#f9fafb',
+                            border: '#e5e7eb'
+                        }} 
+                    }}
                 }}
             }}
         }}
@@ -450,34 +458,37 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap');
         
         body {{ 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background: #f3f4f6; 
-            color: #1f2937;
+            font-family: 'Jost', sans-serif; 
+            background: #f9fafb; 
+            color: #374151;
             transition: background-color 0.3s; 
             padding-bottom: 70px; 
         }}
         .dark body {{ background: #111827; color: #f3f4f6; }}
         
-        .product-card {{ transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); content-visibility: auto; contain-intrinsic-size: 300px; }}
-        .product-card:hover {{ transform: translateY(-5px); box-shadow: 0 15px 30px -10px rgba(229, 57, 53, 0.2); }}
+        .product-card {{ transition: all 0.3s ease; background: #fff; border-radius: 4px; border: 1px solid #e5e7eb; }}
+        .product-card:hover {{ transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border-color: #f56437; z-index: 10; }}
+        
         .image-zoom img {{ transition: transform 0.5s ease; }}
-        .product-card:hover .image-zoom img {{ transform: scale(1.08); }}
+        .product-card:hover .image-zoom img {{ transform: scale(1.05); }}
+        
         .dropdown:hover .dropdown-menu {{ display: block; }}
         
+        /* TopDeals Style Buttons */
+        .btn-primary {{ background-color: #f56437; color: white; transition: background-color 0.2s; }}
+        .btn-primary:hover {{ background-color: #d44c24; }}
+        
         ::-webkit-scrollbar {{ width: 8px; height: 8px; }}
-        ::-webkit-scrollbar-track {{ background: #f1f5f9; }}
-        ::-webkit-scrollbar-thumb {{ background: #E53935; border-radius: 4px; }}
+        ::-webkit-scrollbar-track {{ background: #f3f4f6; }}
+        ::-webkit-scrollbar-thumb {{ background: #f56437; border-radius: 4px; }}
         
         .line-clamp-1 {{ display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }}
         .line-clamp-2 {{ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
         
-        @keyframes float {{ 0%, 100% {{ transform: translateY(0); }} 50% {{ transform: translateY(-15px); }} }}
-        .animate-float {{ animation: float 6s ease-in-out infinite; }}
-        
-        @keyframes pulse-ring {{ 0% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.7); }} 70% {{ box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }} 100% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }} }}
+        @keyframes pulse-ring {{ 0% {{ box-shadow: 0 0 0 0 rgba(245, 100, 55, 0.7); }} 70% {{ box-shadow: 0 0 0 15px rgba(245, 100, 55, 0); }} 100% {{ box-shadow: 0 0 0 0 rgba(245, 100, 55, 0); }} }}
         .pulse-ring {{ animation: pulse-ring 2s infinite; }}
         
         @keyframes slideIn {{ from {{ transform: translateY(20px); opacity: 0; }} to {{ transform: translateY(0); opacity: 1; }} }}
@@ -486,14 +497,14 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         .carousel-track {{ display: flex; transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }}
         .carousel-slide {{ min-width: 100%; box-sizing: border-box; }}
         
-        .glass {{ background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: #1f2937; }}
-        .dark .glass {{ background: rgba(17, 24, 39, 0.95); color: #fff; }}
-        
-        .reveal {{ opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }}
+        .reveal {{ opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }}
         .reveal.active {{ opacity: 1; transform: translateY(0); }}
         
-        .animated-bg {{ background: linear-gradient(-45deg, #E53935, #C62828, #E53935, #B71C1C); background-size: 400% 400%; animation: gradient 15s ease infinite; }}
-        @keyframes gradient {{ 0% {{ background-position: 0% 50%; }} 50% {{ background-position: 100% 50%; }} 100% {{ background-position: 0% 50%; }} }}
+        /* Custom TopDeals Header Search */
+        .search-form-v3 input:focus {{ box-shadow: none; border-color: #f56437; }}
+        
+        .dark .product-card {{ background: #1f2937; border-color: #374151; }}
+        .dark .product-card:hover {{ border-color: #f56437; }}
     </style>
     {structured_data}
     
@@ -543,7 +554,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             if (existing) {{ existing.qty = (existing.qty || 1) + 1; }}
             else {{ cart.push({{name, price: parseFloat(price), image, qty: 1}}); }}
             saveCart(cart);
-            showToast('Added to Cart!', 'fa-cart-plus', 'pk');
+            showToast('Added to Cart Successfully!', 'fa-check', 'success');
             pulseCartIcon();
         }}
 
@@ -573,8 +584,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             if(event) event.stopPropagation();
             let wishlist = getWishlist();
             let idx = wishlist.findIndex(item => item.name === name);
-            if (idx > -1) {{ wishlist.splice(idx, 1); showToast('Removed from Wishlist', 'fa-heart-broken', 'gray'); }}
-            else {{ wishlist.push({{name, price, image}}); showToast('Added to Wishlist!', 'fa-heart', 'red'); }}
+            if (idx > -1) {{ wishlist.splice(idx, 1); showToast('Removed from Wishlist', 'fa-times', 'gray'); }}
+            else {{ wishlist.push({{name, price, image}}); showToast('Added to Wishlist!', 'fa-heart', 'success'); }}
             localStorage.setItem('asm_wishlist', JSON.stringify(wishlist));
             updateWishlistBadge();
         }}
@@ -591,18 +602,22 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             localStorage.setItem('asm_recent', JSON.stringify(recent));
         }}
 
-        function showToast(msg, icon='fa-check-circle', color='pk') {{
-            const colors = {{ pk: 'bg-[#E53935]', red: 'bg-red-500', gray: 'bg-gray-600', green: 'bg-green-500' }};
+        function showToast(msg, icon='fa-check', type='success') {{
+            const colors = {{ success: 'bg-[#f56437]', error: 'bg-red-600', gray: 'bg-gray-800' }};
+            const toastColor = colors[type] || colors['success'];
             const toast = document.createElement('div');
-            toast.className = `fixed bottom-20 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
-            toast.innerHTML = `<i class="fas ${{icon}} text-xl" aria-hidden="true"></i> ${{msg}}`;
+            toast.className = `fixed bottom-24 md:bottom-10 right-4 ${toastColor} text-white px-6 py-4 rounded shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-medium slide-in text-sm border-l-4 border-white`;
+            toast.innerHTML = `<i class="fas ${icon} text-lg" aria-hidden="true"></i> ${msg}`;
             document.body.appendChild(toast);
-            setTimeout(() => {{ toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; setTimeout(() => toast.remove(), 300); }}, 2500);
+            setTimeout(() => {{ toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; setTimeout(() => toast.remove(), 300); }}, 3000);
         }}
 
         function pulseCartIcon() {{
-            let cartIcon = document.querySelector('.cart-icon-pulse');
-            if (cartIcon) {{ cartIcon.classList.add('scale-125'); setTimeout(() => cartIcon.classList.remove('scale-125'), 200); }}
+            let cartIcons = document.querySelectorAll('.cart-icon-pulse i');
+            cartIcons.forEach(icon => {{
+                icon.classList.add('scale-125', 'text-[#f56437]');
+                setTimeout(() => icon.classList.remove('scale-125', 'text-[#f56437]'), 300);
+            }});
         }}
 
         let searchLoaded = false;
@@ -629,7 +644,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function updateDarkModeIcon() {{
             let isDark = document.documentElement.classList.contains('dark');
             document.querySelectorAll('.dark-mode-icon').forEach(el => {{
-                el.className = `fas ${{isDark ? 'fa-sun' : 'fa-moon'}} dark-mode-icon`;
+                el.className = `fas ${isDark ? 'fa-sun' : 'fa-moon'} dark-mode-icon`;
             }});
         }}
 
@@ -645,8 +660,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             
             let safeName = name.replace(/'/g, "\\\\'");
             let safeImage = image.replace(/'/g, "\\\\'");
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{safeImage}}', event); closeQuickView();`);
-            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{safeImage}}', event);`);
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event); closeQuickView();`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -668,22 +682,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 document.documentElement.classList.add('dark');
                 updateDarkModeIcon();
             }}
-            if (!localStorage.getItem('asm_cookie_consent')) {{
-                let cc = document.getElementById('cookieConsent');
-                if(cc) cc.classList.remove('hidden');
-            }}
-            if (!localStorage.getItem('asm_exit_intent')) {{
-                document.addEventListener('mouseleave', function(e) {{
-                    if (e.clientY < 10) {{
-                        let em = document.getElementById('exitModal');
-                        if(em) {{
-                            em.classList.remove('hidden');
-                            em.classList.add('flex');
-                            localStorage.setItem('asm_exit_intent', 'true');
-                        }}
-                    }}
-                }});
-            }}
             window.addEventListener('scroll', function() {{
                 let btn = document.getElementById('backToTop');
                 if (btn) btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
@@ -703,250 +701,255 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             if(searchInput) {{
                 searchInput.addEventListener('focus', loadSearchData);
             }}
-            
-            document.addEventListener('click', function(event) {{
-                let menu = document.getElementById('mobileCatMenu');
-                let btn = document.querySelector('[onclick="toggleMobileCats()"]');
-                if (menu && !menu.classList.contains('hidden') && !menu.contains(event.target) && btn && !btn.contains(event.target)) {{
-                    menu.classList.add('hidden');
-                }}
-            }});
         }};
-
-        function acceptCookies() {{
-            localStorage.setItem('asm_cookie_consent', 'true');
-            let cc = document.getElementById('cookieConsent');
-            if(cc) cc.classList.add('hidden');
-        }}
     </script>
 </head>
-<body class="text-gray-900 dark:text-gray-100">
-    <!-- Top Bar -->
-    <div class="bg-gray-900 text-white text-xs py-2 hidden md:block">
+<body class="text-gray-800 dark:text-gray-200">
+
+    <!-- TopDeals V3: Topbar -->
+    <div class="bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 text-[11px] py-1.5 hidden lg:block">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <span>Welcome to ASM VEO! Fast Delivery & Cash on Delivery Available</span>
+            <div class="flex gap-4">
+                <span class="text-gray-600 dark:text-gray-400"><i class="fas fa-envelope mr-1 text-[#f56437]"></i> support@asmveo.com</span>
+                <span class="text-gray-600 dark:text-gray-400"><i class="fas fa-clock mr-1 text-[#f56437]"></i> Mon - Sun / 9:00 AM - 11:00 PM</span>
+            </div>
             <div class="flex gap-4 items-center">
-                <button onclick="toggleDarkMode()" class="hover:text-[#E53935]" aria-label="Toggle Dark Mode"><i class="fas fa-moon dark-mode-icon" aria-hidden="true"></i></button>
-                <span class="border-l border-gray-700 pl-4">EN</span>
-                <span class="border-l border-gray-700 pl-4">PKR</span>
-                <a href="/about.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">About</a>
-                <a href="/contact.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">Contact</a>
+                <a href="/checkout.html" class="text-gray-600 hover:text-[#f56437] transition">Checkout</a>
+                <span class="border-l border-gray-300 h-3"></span>
+                <button onclick="toggleDarkMode()" class="text-gray-600 hover:text-[#f56437] transition flex items-center gap-1">
+                    <i class="fas fa-moon dark-mode-icon" aria-hidden="true"></i> Theme
+                </button>
             </div>
         </div>
     </div>
 
-    <header class="glass shadow-md sticky top-0 z-50 transition-colors border-b border-gray-100 dark:border-gray-800">
-        <div class="bg-[#E53935] text-white text-xs md:text-sm py-2 md:hidden">
-            <div class="container mx-auto px-4 flex justify-between items-center">
-                <a href="/index.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-home mr-1" aria-hidden="true"></i> Home</a>
-                <button onclick="toggleMobileCats()" class="hover:text-gray-300 transition font-semibold focus:outline-none" aria-label="Toggle Mobile Categories"><i class="fas fa-list mr-1" aria-hidden="true"></i> Categories</button>
-            </div>
-        </div>
-
-        <div id="mobileCatMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
-            <div class="container mx-auto px-4 py-2 grid grid-cols-2 gap-2 max-h-60 overflow-y-auto">
-                {cat_links}
-            </div>
-        </div>
-
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
-            <a href="/index.html" class="flex items-center gap-2" aria-label="ASM VEO Home">
-                <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="50" cy="50" r="48" fill="#E53935"></circle>
+    <!-- TopDeals V3: Main Header -->
+    <header class="bg-white dark:bg-gray-800 py-6 sticky top-0 z-50 shadow-sm transition-colors">
+        <div class="container mx-auto px-4 flex flex-wrap justify-between items-center gap-4">
+            
+            <!-- Logo -->
+            <a href="/index.html" class="flex items-center gap-2 w-full md:w-auto justify-center md:justify-start" aria-label="ASM VEO Home">
+                <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="50" cy="50" r="48" fill="#f56437"></circle>
                     <path d="M65 35 A 25 25 0 1 0 65 65 A 20 20 0 1 1 65 35 Z" fill="#ffffff"></path>
-                    <text x="50" y="58" font-family="Arial" font-size="24" font-weight="900" fill="#E53935" text-anchor="middle">AV</text>
+                    <text x="50" y="58" font-family="Jost" font-size="24" font-weight="900" fill="#f56437" text-anchor="middle">AV</text>
                 </svg>
                 <div class="flex flex-col leading-none">
-                    <span class="text-xl font-extrabold text-[#E53935] dark:text-white tracking-tight">ASM VEO</span>
-                    <span class="text-[9px] tracking-widest text-gray-600 dark:text-gray-400 font-bold">PAKISTAN</span>
+                    <span class="text-2xl font-black text-gray-900 dark:text-white tracking-tight">ASM VEO</span>
+                    <span class="text-[9px] tracking-[0.2em] text-[#f56437] font-bold uppercase">Pakistan</span>
                 </div>
             </a>
             
-            <div class="flex-1 min-w-[200px] max-w-xl mx-0 md:mx-8 relative flex">
-                <label for="searchInput" class="sr-only">Search products in Pakistan</label>
-                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, brands, categories..." class="w-full bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 focus:bg-white dark:focus:bg-gray-700 focus:border-[#E53935] rounded-l-xl py-2.5 px-6 outline-none transition-all text-gray-800 dark:text-gray-100 font-semibold shadow-sm text-sm">
-                <button onclick="executeSearch()" aria-label="Search" class="bg-[#E53935] text-white px-6 rounded-r-xl hover:bg-[#C62828] transition-colors flex items-center justify-center"><i class="fas fa-search text-lg" aria-hidden="true"></i></button>
+            <!-- Search Bar V3 Style -->
+            <div class="flex-1 min-w-[250px] max-w-2xl mx-0 md:mx-6 flex search-form-v3 h-11">
+                <label for="searchInput" class="sr-only">Search products</label>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, categories..." class="w-full bg-white dark:bg-gray-900 border-2 border-r-0 border-[#f56437] rounded-l-md px-4 outline-none text-sm text-gray-800 dark:text-gray-200">
+                <button onclick="executeSearch()" aria-label="Search" class="bg-[#f56437] text-white px-6 rounded-r-md hover:bg-[#d44c24] transition-colors flex items-center justify-center font-bold text-sm">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
             </div>
             
-            <div class="flex items-center gap-3">
-                <a href="/wishlist.html" class="relative bg-gray-50 text-[#E53935] p-2.5 rounded-xl hover:bg-[#E53935] hover:text-white transition-colors border border-gray-200" aria-label="Wishlist">
-                    <i class="fas fa-heart" aria-hidden="true"></i>
-                    <span class="wishlist-badge absolute -top-2 -right-2 bg-[#E53935] text-white text-xs font-black px-1.5 py-0.5 rounded-full shadow min-w-[20px] text-center">0</span>
-                </a>
-                <a href="/checkout.html" class="cart-icon-pulse relative bg-[#E53935] text-white px-4 py-2.5 rounded-xl font-bold hover:bg-[#C62828] transition-colors shadow-sm flex items-center gap-2 text-sm" aria-label="Go to Cart">
-                    <i class="fas fa-shopping-cart text-lg" aria-hidden="true"></i>
-                    <span class="hidden md:inline">Cart</span>
-                    <span class="cart-badge absolute -top-2 -right-2 bg-gray-900 text-white text-xs font-black px-1.5 py-0.5 rounded-full shadow min-w-[20px] text-center">0</span>
-                </a>
-            </div>
-        </div>
-
-        <nav class="hidden md:block border-t border-gray-100 dark:border-gray-800">
-            <div class="container mx-auto px-4 flex items-center gap-6">
-                <div class="relative dropdown z-50">
-                    <button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false"><i class="fas fa-list" aria-hidden="true"></i> All Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i></button>
-                    <div class="dropdown-menu absolute hidden text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-200 shadow-2xl rounded-b-xl mt-0 w-56 py-2 border border-gray-100 dark:border-gray-700 max-h-96 overflow-y-auto">
-                        {cat_links}
+            <!-- Icons V3 Style -->
+            <div class="flex items-center gap-5 justify-center w-full md:w-auto mt-2 md:mt-0">
+                <a href="/wishlist.html" class="flex items-center gap-2 group" aria-label="Wishlist">
+                    <div class="relative">
+                        <i class="far fa-heart text-2xl text-gray-600 dark:text-gray-300 group-hover:text-[#f56437] transition"></i>
+                        <span class="wishlist-badge absolute -top-2 -right-2 bg-[#f56437] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                     </div>
-                </div>
-                <a href="/index.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Home</a>
-                <a href="/index.html#products" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Shop</a>
-                <a href="/about.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">About Us</a>
-                <a href="/contact.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Contact Us</a>
-                <a href="/faq.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">FAQ</a>
-                <div class="ml-auto text-xs font-bold text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-1 text-[#E53935]" aria-hidden="true"></i> 0342 54 786 83</div>
+                </a>
+                
+                <a href="/checkout.html" class="flex items-center gap-3 group cart-icon-pulse" aria-label="Go to Cart">
+                    <div class="relative">
+                        <i class="fas fa-shopping-basket text-2xl text-gray-600 dark:text-gray-300 group-hover:text-[#f56437] transition duration-300"></i>
+                        <span class="cart-badge absolute -top-2 -right-2 bg-[#f56437] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                    </div>
+                    <div class="hidden lg:flex flex-col leading-tight">
+                        <span class="text-[10px] text-gray-500 font-semibold uppercase">My Cart</span>
+                    </div>
+                </a>
             </div>
-        </nav>
+            
+        </div>
     </header>
 
-    <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-2xl border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-50">
-        <a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold"><i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home</a>
-        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories"><i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories</button>
-        <a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
-            <i class="fas fa-shopping-cart text-lg mb-1" aria-hidden="true"></i> Cart
-            <span class="cart-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
-        </a>
-        <a href="/wishlist.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
-            <i class="fas fa-heart text-lg mb-1" aria-hidden="true"></i> Wishlist
-            <span class="wishlist-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
+    <!-- TopDeals V3: Navigation Bar -->
+    <nav class="bg-gray-900 text-white hidden md:block">
+        <div class="container mx-auto px-4 flex items-center">
+            
+            <!-- All Categories Dropdown (Visible on hover for inner pages) -->
+            <div class="relative dropdown w-64 flex-shrink-0 z-50">
+                <button class="w-full bg-[#f56437] text-white px-5 py-3 font-bold text-sm flex items-center justify-between transition-colors" aria-haspopup="true" aria-expanded="false">
+                    <span class="flex items-center gap-3"><i class="fas fa-bars" aria-hidden="true"></i> ALL CATEGORIES</span>
+                    <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu absolute hidden bg-white dark:bg-gray-800 shadow-2xl w-full border border-gray-100 dark:border-gray-700 max-h-[500px] overflow-y-auto">
+                    {cat_links}
+                </div>
+            </div>
+            
+            <!-- Horizontal Links -->
+            <div class="flex items-center pl-8 gap-8">
+                <a href="/index.html" class="text-sm font-semibold hover:text-[#f56437] transition uppercase tracking-wide py-3">Home</a>
+                <a href="/index.html#products" class="text-sm font-semibold hover:text-[#f56437] transition uppercase tracking-wide py-3">Shop</a>
+                <a href="/about.html" class="text-sm font-semibold hover:text-[#f56437] transition uppercase tracking-wide py-3">About Us</a>
+                <a href="/faq.html" class="text-sm font-semibold hover:text-[#f56437] transition uppercase tracking-wide py-3">FAQ</a>
+                <a href="/contact.html" class="text-sm font-semibold hover:text-[#f56437] transition uppercase tracking-wide py-3">Contact</a>
+            </div>
+            
+            <div class="ml-auto text-sm font-bold flex items-center gap-2">
+                <i class="fas fa-headset text-[#f56437] text-lg"></i>
+                <span>Call Us: <span class="text-[#f56437]">0342 54 786 83</span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Bottom Bar -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-[0_-5px_15px_rgba(0,0,0,0.1)] border-t border-gray-100 dark:border-gray-800 flex justify-around py-3 md:hidden z-50">
+        <a href="/index.html" class="flex flex-col items-center text-gray-500 hover:text-[#f56437] transition text-[10px] font-semibold"><i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home</a>
+        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 hover:text-[#f56437] transition text-[10px] font-semibold" aria-label="Open Categories"><i class="fas fa-list text-lg mb-1" aria-hidden="true"></i> Categories</button>
+        <a href="/checkout.html" class="flex flex-col items-center text-gray-500 hover:text-[#f56437] transition text-[10px] font-semibold relative">
+            <i class="fas fa-shopping-basket text-lg mb-1" aria-hidden="true"></i> Cart
+            <span class="cart-badge absolute -top-1 right-2 bg-[#f56437] text-white text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full border border-white">0</span>
         </a>
     </nav>
 
-    <div id="exitModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
-        <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 max-w-md w-full text-center relative slide-in">
-            <button onclick="document.getElementById('exitModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white" aria-label="Close Modal"><i class="fas fa-times text-xl" aria-hidden="true"></i></button>
-            <i class="fas fa-gift text-6xl text-[#E53935] mb-4" aria-hidden="true"></i>
-            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Wait! Here's 10% OFF</h2>
-            <p class="text-gray-600 dark:text-gray-400 mb-6">Don't leave empty-handed. Use this code at checkout for an instant 10% discount on your order!</p>
-            <div class="bg-gray-50 border-2 border-dashed border-[#E53935] rounded-xl py-4 mb-6">
-                <span class="text-3xl font-black text-[#E53935] tracking-widest">ASM10</span>
+    <!-- Mobile Category Menu (Hidden by default) -->
+    <div id="mobileCatMenu" class="hidden fixed inset-0 bg-black/50 z-[9999] md:hidden">
+        <div class="bg-white dark:bg-gray-900 w-4/5 h-full max-w-sm overflow-y-auto transform transition-transform">
+            <div class="bg-[#f56437] text-white p-4 font-bold flex justify-between items-center">
+                Categories
+                <button onclick="toggleMobileCats()"><i class="fas fa-times text-xl"></i></button>
             </div>
-            <a href="/index.html#products" onclick="document.getElementById('exitModal').classList.add('hidden')" class="block bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition">Continue Shopping</a>
+            <div class="p-2">
+                {cat_links}
+            </div>
         </div>
     </div>
 
-    <div id="quickViewModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
-        <div class="bg-white dark:bg-gray-800 rounded-3xl max-w-3xl w-full overflow-hidden relative slide-in flex flex-col md:flex-row">
-            <button onclick="closeQuickView()" class="absolute top-4 right-4 bg-white/80 rounded-full p-2 text-gray-700 hover:bg-white z-10" aria-label="Close Quick View"><i class="fas fa-times text-xl" aria-hidden="true"></i></button>
-            <div class="md:w-1/2 bg-gray-50 dark:bg-gray-900 p-4 flex items-center justify-center">
-                <img id="qvImage" src="" alt="Quick View Product Image" class="max-h-[300px] object-contain rounded-xl" width="300" height="300" loading="lazy" decoding="async">
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="hidden fixed inset-0 bg-black/70 z-[99999] items-center justify-center p-4">
+        <div class="bg-white dark:bg-gray-800 rounded-lg max-w-4xl w-full overflow-hidden relative slide-in flex flex-col md:flex-row shadow-2xl">
+            <button onclick="closeQuickView()" class="absolute top-2 right-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center text-gray-700 dark:text-gray-300 z-10 transition"><i class="fas fa-times" aria-hidden="true"></i></button>
+            <div class="md:w-1/2 p-6 flex items-center justify-center bg-white dark:bg-gray-800">
+                <img id="qvImage" src="" alt="Quick View" class="max-h-[350px] object-contain">
             </div>
-            <div class="md:w-1/2 p-6 flex flex-col">
-                <h2 id="qvName" class="text-xl font-extrabold text-gray-900 dark:text-white mb-2"></h2>
-                <p id="qvPrice" class="text-2xl font-black text-[#E53935] dark:text-white mb-3"></p>
-                <p id="qvDesc" class="text-sm text-gray-600 dark:text-gray-400 mb-6"></p>
-                <div class="mt-auto flex flex-col gap-2">
-                    <button id="qvAddCart" class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center justify-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
-                    <button id="qvBuyNow" class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition flex items-center justify-center gap-2"><i class="fas fa-bolt" aria-hidden="true"></i> Buy Now</button>
-                    <a id="qvLink" href="#" class="text-center text-sm text-[#E53935] hover:underline mt-2 font-semibold">View Full Details</a>
+            <div class="md:w-1/2 p-8 flex flex-col bg-gray-50 dark:bg-gray-900 border-l border-gray-100 dark:border-gray-700">
+                <h2 id="qvName" class="text-xl font-bold text-gray-900 dark:text-white mb-2 leading-snug"></h2>
+                <div class="w-12 h-1 bg-[#f56437] mb-4"></div>
+                <p id="qvPrice" class="text-3xl font-black text-[#f56437] mb-4"></p>
+                <p id="qvDesc" class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed"></p>
+                <div class="mt-auto flex gap-3">
+                    <button id="qvAddCart" class="flex-1 bg-[#f56437] text-white py-3 rounded text-sm font-bold hover:bg-[#d44c24] transition flex items-center justify-center gap-2"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    <a id="qvLink" href="#" class="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 py-3 px-4 rounded text-sm font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition flex items-center justify-center"><i class="fas fa-link"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Floating WhatsApp -->
     <a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20know%20about%20your%20products" target="_blank" 
-       class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all z-50 hover:scale-110 pulse-ring" 
+       class="fixed bottom-20 md:bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-[#128C7E] transition-all z-50 hover:-translate-y-1" 
        aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i>
     </a>
 
-    <button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#E53935] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#C62828] transition z-50" aria-label="Back to top">
-        <i class="fas fa-arrow-up text-xl" aria-hidden="true"></i>
+    <button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-36 md:bottom-24 right-6 bg-gray-800 text-white w-10 h-10 rounded shadow-md items-center justify-center hover:bg-[#f56437] transition z-40" aria-label="Back to top">
+        <i class="fas fa-angle-up text-lg" aria-hidden="true"></i>
     </button>
 
-    <main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl">
+    <main id="main-content" class="min-h-screen">
 """
 
 # ==============================================================================
-# HTML FOOTER GENERATION
+# HTML FOOTER GENERATION (TOPDEALS V3 STYLE)
 # ==============================================================================
 
 def get_html_footer():
     return """
     </main>
-    <!-- Flashmart Style Footer -->
-    <footer class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 mt-16 pt-12 pb-20 md:pb-8 border-t-4 border-[#E53935]">
-        <div class="container mx-auto px-4">
-            
-            <div class="mb-12 pb-8 border-b border-gray-200 dark:border-gray-800">
-                <h3 class="text-center text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">Our Trusted Partners</h3>
-                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14">
-                    <div class="text-2xl font-black italic text-red-600 tracking-tighter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="JazzCash">jazzCash</div>
-                    <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="EasyPaisa">
-                        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">e</div>
-                        <div class="text-2xl font-bold text-green-500 tracking-tight lowercase">easypaisa</div>
-                    </div>
-                    <div class="flex items-center gap-2 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="National Bank of Pakistan">
-                        <i class="fas fa-landmark text-green-700 text-xl" aria-hidden="true"></i>
-                        <div class="text-2xl font-serif font-black text-green-700 tracking-wider">NBP</div>
-                    </div>
-                    <div class="text-2xl font-bold text-orange-500 lowercase grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Daraz">daraz</div>
-                    <div class="text-2xl font-extrabold text-blue-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="PriceOye">PriceOye<span class="text-blue-300">.pk</span></div>
-                    <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Markaz">
-                        <i class="fas fa-shopping-bag text-emerald-600 text-lg" aria-hidden="true"></i>
-                        <div class="text-2xl font-bold text-emerald-600 lowercase tracking-wide">markaz</div>
+    
+    <!-- TopDeals V3 Style Footer -->
+    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-12">
+        <!-- Newsletter Section -->
+        <div class="bg-[#f56437] py-10">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 text-white">
+                    <i class="far fa-envelope-open text-4xl opacity-80"></i>
+                    <div>
+                        <h3 class="text-xl font-bold uppercase tracking-wide">Sign up to Newsletter</h3>
+                        <p class="text-sm text-white/80">Get the latest deals and special offers directly in your inbox.</p>
                     </div>
                 </div>
+                <div class="flex w-full md:w-auto max-w-md">
+                    <input type="email" placeholder="Your email address" class="w-full px-4 py-3 rounded-l text-sm text-gray-900 outline-none">
+                    <button class="bg-gray-900 text-white px-6 py-3 rounded-r font-bold hover:bg-black transition text-sm uppercase">Subscribe</button>
+                </div>
             </div>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10">
+        <!-- Main Footer Links -->
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Contact Info -->
                 <div>
-                    <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Company</h3>
-                    <ul class="space-y-3 text-sm font-semibold">
-                        <li><a href="/about.html" class="hover:text-[#E53935] transition">About Us</a></li>
-                        <li><a href="/contact.html" class="hover:text-[#E53935] transition">Contact Us</a></li>
-                        <li><a href="/faq.html" class="hover:text-[#E53935] transition">FAQ</a></li>
-                        <li><a href="/privacy.html" class="hover:text-[#E53935] transition">Privacy Policy</a></li>
-                        <li><a href="/terms.html" class="hover:text-[#E53935] transition">Terms & Conditions</a></li>
+                    <a href="/index.html" class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 bg-[#f56437] rounded-full flex items-center justify-center text-white font-black text-xl">AV</div>
+                        <span class="text-xl font-black text-gray-900 dark:text-white">ASM VEO</span>
+                    </a>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">Pakistan's premium online shopping destination offering quality products with Cash on Delivery.</p>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt text-[#f56437] mt-1"></i> ASM Digital Solutions, Karachi, PK</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-[#f56437]"></i> +92 342 54 786 83</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-envelope text-[#f56437]"></i> support@asmveo.com</li>
                     </ul>
                 </div>
+                
+                <!-- Quick Links -->
                 <div>
-                    <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Support</h3>
-                    <ul class="space-y-3 text-sm font-semibold">
-                        <li><a href="/faq.html" class="hover:text-[#E53935] transition">Help Center</a></li>
-                        <li><a href="/order-success.html" class="hover:text-[#E53935] transition">Track Order</a></li>
-                        <li><a href="/terms.html" class="hover:text-[#E53935] transition">Returns Policy</a></li>
-                        <li><a href="/privacy.html" class="hover:text-[#E53935] transition">Data Security</a></li>
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5 uppercase">Information</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/about.html" class="text-gray-500 hover:text-[#f56437] transition block">About Us</a></li>
+                        <li><a href="/contact.html" class="text-gray-500 hover:text-[#f56437] transition block">Contact Us</a></li>
+                        <li><a href="/privacy.html" class="text-gray-500 hover:text-[#f56437] transition block">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="text-gray-500 hover:text-[#f56437] transition block">Terms & Conditions</a></li>
                     </ul>
                 </div>
+                
+                <!-- Customer Service -->
                 <div>
-                    <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Shop</h3>
-                    <ul class="space-y-3 text-sm font-semibold">
-                        <li><a href="/index.html#products" class="hover:text-[#E53935] transition">All Products</a></li>
-                        <li><a href="/wishlist.html" class="hover:text-[#E53935] transition">My Wishlist</a></li>
-                        <li><a href="/checkout.html" class="hover:text-[#E53935] transition">My Cart</a></li>
-                        <li><a href="/index.html" class="hover:text-[#E53935] transition">Flash Sale</a></li>
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5 uppercase">Customer Service</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/faq.html" class="text-gray-500 hover:text-[#f56437] transition block">Help Center & FAQ</a></li>
+                        <li><a href="/return-policy.html" class="text-gray-500 hover:text-[#f56437] transition block">Returns Policy</a></li>
+                        <li><a href="/shipping-policy.html" class="text-gray-500 hover:text-[#f56437] transition block">Shipping Info</a></li>
+                        <li><a href="/track-order.html" class="text-gray-500 hover:text-[#f56437] transition block">Track Your Order</a></li>
                     </ul>
                 </div>
+                
+                <!-- Social & Payment -->
                 <div>
-                    <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Quick Links</h3>
-                    <ul class="space-y-3 text-sm font-semibold">
-                        <li><a href="/index.html" class="hover:text-[#E53935] transition">Home</a></li>
-                        <li><a href="/checkout.html" class="hover:text-[#E53935] transition">Checkout</a></li>
-                        <li><a href="/about.html" class="hover:text-[#E53935] transition">About Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Our Mission</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
-                    
-                    <div class="flex gap-2 flex-wrap">
-                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/asmveo" target="_blank" aria-label="X (Twitter) Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-black hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/company/asm-digital-solutions" target="_blank" aria-label="LinkedIn Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-700 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-green-500 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5 uppercase">Follow Us</h4>
+                    <div class="flex gap-2 mb-8">
+                        <a href="https://web.facebook.com/profile.php?id=61593172078469" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#1877F2] hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/asmveo" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-black hover:text-white transition"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.youtube.com/@asmveo" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#FF0000] hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/asmveo" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#E4405F] hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <h4 class="text-base font-bold text-gray-900 dark:text-white mb-4 uppercase">Payment Methods</h4>
+                    <div class="flex gap-2 items-center opacity-70 grayscale">
+                        <div class="font-black italic text-red-600 text-lg">jazzCash</div>
+                        <div class="w-1 h-4 bg-gray-300 mx-1"></div>
+                        <div class="font-bold text-green-500 text-lg">easypaisa</div>
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 text-center mb-6">
-                <h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Service Center</h4>
-                <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><i class="fas fa-building mr-2 text-[#E53935]" aria-hidden="true"></i> ASM Digital Solutions, Karachi, Pakistan</p>
-                <p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-2 text-[#E53935]" aria-hidden="true"></i> <a href="https://wa.me/923425478683" class="font-bold hover:text-[#E53935]">0342 54 786 83</a> (Mon-Sun: 9AM - 11PM)</p>
-            </div>
-            <div class="border-t border-gray-200 dark:border-gray-800 text-center pt-8">
-                <p class="text-gray-600 dark:text-gray-500 text-sm font-semibold">&copy; 2026 ASM Digital Solutions. All Rights Reserved. | Powered by ASM VEO</p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-gray-100 dark:bg-gray-950 py-4 border-t border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 ASM Digital Solutions. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Powered by <strong class="text-gray-700 dark:text-gray-300">ASM VEO</strong> | Premium E-Commerce</p>
             </div>
         </div>
     </footer>
@@ -962,31 +965,34 @@ def generate_static_pages(categories_list):
     print("📄 Generating Static Pages...")
     
     order_success_html = """
-        <div class="container mx-auto px-4 py-20 text-center relative">
-            <div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div>
-            <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1>
-            <p class="text-gray-600 dark:text-gray-400 text-sm mb-8">Order ID: <span id="orderId" class="font-bold text-[#E53935]"></span></p>
-            <a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a>
+        <div class="container mx-auto px-4 py-20 text-center relative max-w-2xl">
+            <div class="bg-white dark:bg-gray-800 rounded-lg p-10 shadow-sm border border-gray-200 dark:border-gray-700">
+                <div class="w-20 h-20 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-6"><i class="fas fa-check text-4xl text-green-500"></i></div>
+                <h1 class="text-2xl font-black text-gray-900 dark:text-white mb-2 uppercase">Order Received!</h1>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-6">Thank you for your purchase. We are processing your order.</p>
+                <div class="bg-gray-50 dark:bg-gray-900 p-4 rounded mb-8 border border-gray-100 dark:border-gray-700">
+                    <p class="text-sm font-semibold text-gray-700 dark:text-gray-300">Order ID: <span id="orderId" class="font-black text-[#f56437] text-lg block mt-1"></span></p>
+                </div>
+                <a href="/index.html" class="inline-block bg-[#f56437] text-white px-8 py-3 rounded font-bold hover:bg-[#d44c24] transition text-sm uppercase">Continue Shopping</a>
+            </div>
         </div>
         
         <!-- Google Review Modal -->
-        <div id="googleReviewModal" class="fixed inset-0 bg-black/80 z-[99999] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 p-4">
-            <div class="bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full text-center relative transform scale-95 transition-transform duration-500 shadow-[0_0_50px_rgba(0,0,0,0.3)] border border-gray-100 dark:border-gray-700" id="googleReviewContent">
-                <button onclick="closeReviewModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white" aria-label="Close review popup"><i class="fas fa-times text-xl"></i></button>
-                <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm border border-gray-100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="w-8 h-8">
-                </div>
-                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">How did we do?</h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm">Your feedback helps us provide the best experience for ASM VEO customers across Pakistan.</p>
-                <div class="flex justify-center gap-2 mb-8 text-4xl text-gray-300" id="starContainer">
+        <div id="googleReviewModal" class="fixed inset-0 bg-black/60 z-[99999] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 p-4 backdrop-blur-sm">
+            <div class="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-sm w-full text-center relative shadow-2xl transform scale-95 transition-transform duration-300" id="googleReviewContent">
+                <button onclick="closeReviewModal()" class="absolute top-3 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white" aria-label="Close popup"><i class="fas fa-times text-lg"></i></button>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="w-10 h-10 mx-auto mb-4">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Rate Your Experience</h2>
+                <p class="text-gray-500 dark:text-gray-400 mb-6 text-sm">How satisfied are you with ASM VEO?</p>
+                <div class="flex justify-center gap-2 mb-8 text-3xl text-gray-200 dark:text-gray-700" id="starContainer">
                     <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="1"></i>
                     <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="2"></i>
                     <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="3"></i>
                     <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="4"></i>
                     <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="5"></i>
                 </div>
-                <a href="https://g.page/r/YOUR_GOOGLE_MAPS_LINK/review" target="_blank" onclick="closeReviewModal()" class="block w-full bg-blue-600 text-white font-bold py-3.5 rounded-xl hover:bg-blue-700 transition shadow-lg mb-4 flex items-center justify-center gap-2"><i class="fas fa-pen"></i> Rate us on Google</a>
-                <button onclick="closeReviewModal()" class="text-sm font-semibold text-gray-500 hover:text-gray-800 dark:hover:text-gray-300">No thanks, maybe later</button>
+                <a href="https://g.page/r/YOUR_GOOGLE_MAPS_LINK/review" target="_blank" onclick="closeReviewModal()" class="block w-full bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-700 transition text-sm mb-3">Submit Review</a>
+                <button onclick="closeReviewModal()" class="text-xs font-semibold text-gray-400 hover:text-gray-600 underline">Ask me later</button>
             </div>
         </div>
         
@@ -1056,33 +1062,29 @@ def generate_static_pages(categories_list):
     """
 
     pages = {
-        "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-12"><h1 class="text-4xl md:text-5xl font-extrabold text-[#E53935] dark:text-white mb-6">About ASM VEO</h1><p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">Your trusted shopping partner in Pakistan</p></div><div class="grid md:grid-cols-2 gap-8 mb-12"><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-bullseye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Mission</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To provide every Pakistani with access to premium quality products at affordable prices, delivered right to their doorstep with Cash on Delivery convenience.</p></div><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-eye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Vision</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To become Pakistan's most trusted and loved e-commerce platform, known for quality, reliability, and exceptional customer service.</p></div></div><div class="animated-bg text-white rounded-3xl p-8 md:p-12"><h2 class="text-3xl font-bold mb-4">Why Choose ASM VEO?</h2><div class="grid md:grid-cols-3 gap-6 mt-8"><div><i class="fas fa-shield-alt text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">100% Secure</h4><p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p></div><div><i class="fas fa-truck-fast text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Fast Delivery</h4><p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p></div><div><i class="fas fa-undo text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Easy Returns</h4><p class="text-gray-200 text-sm">7-day return policy, no questions asked</p></div></div></div></div>"""),
-        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-600 dark:text-gray-400 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
-        "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl prose dark:prose-invert"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Privacy Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>At ASM VEO, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Information We Collect</h2><p>We collect your name, phone number, email, and shipping address when you place an order.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Data Security</h2><p>We use SSL encryption to protect your data. We never share your personal information with third parties except for shipping purposes.</p></div></div>"""),
-        "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 2-4 business days.</p></div></div>"""),
-        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
-        "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
-        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl text-center"><h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1><p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div>"""),
-        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-20 text-center"><div class="max-w-lg mx-auto"><div class="text-9xl font-black text-[#E53935] mb-4">404</div><h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Oops! Page Not Found</h1><p class="text-gray-600 dark:text-gray-400 mb-8">The page you're looking for doesn't exist.</p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a></div></div>"""),
-        "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"></div></div>
+        "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">About ASM VEO</h1><p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-6">ASM VEO is Pakistan's premier online shopping platform...</p></div>"""),
+        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Contact Us</h1><p class="text-sm text-gray-600 mb-4">Message us on WhatsApp: 03425478683</p></div>"""),
+        "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Privacy Policy</h1><p class="text-sm text-gray-600">Your privacy is important to us...</p></div>"""),
+        "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Terms & Conditions</h1><p class="text-sm text-gray-600">All orders are subject to availability...</p></div>"""),
+        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Shipping Policy</h1><p class="text-sm text-gray-600">Nationwide delivery in 2-4 business days.</p></div>"""),
+        "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Return Policy</h1><p class="text-sm text-gray-600">Hassle-free 7-day returns.</p></div>"""),
+        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8 text-center"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase">Track Order</h1><p class="text-sm text-gray-600 mb-6">Contact us on WhatsApp with your Order ID.</p><a href="https://wa.me/923425478683" class="bg-green-500 text-white px-6 py-2 rounded font-bold inline-block">WhatsApp Us</a></div>"""),
+        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-32 text-center"><h1 class="text-8xl font-black text-[#f56437] mb-4">404</h1><p class="text-xl text-gray-600 mb-8">Page not found.</p><a href="/index.html" class="bg-gray-900 text-white px-8 py-3 rounded font-bold uppercase text-sm">Return Home</a></div>"""),
+        "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-2xl font-black text-gray-900 dark:text-white mb-8 uppercase border-l-4 border-[#f56437] pl-3">My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4"></div></div>
         <script>
         function renderWishlist() {
             let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || [];
             let container = document.getElementById('wishlistContainer');
-            if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500 dark:text-gray-400"><i class="fas fa-heart-broken text-6xl mb-4 opacity-30"></i><p class="text-lg font-bold">Your wishlist is empty</p></div>'; return; }
+            if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500"><i class="far fa-heart text-5xl mb-4 opacity-30"></i><p class="text-sm font-semibold">Wishlist is empty</p></div>'; return; }
             container.innerHTML = wl.map((item, i) => {
                 let safeName = item.name.replace(/'/g, "\\\\'");
-                return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
-                    <div class="h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
-                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();" alt="Wishlist Product" loading="lazy" decoding="async">
-                    </div>
-                    <div class="p-4 flex flex-col flex-grow">
-                        <h3 class="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
-                        <p class="text-lg font-black text-[#E53935] dark:text-emerald-400 mb-3">Rs ${item.price}</p>
-                        <div class="flex gap-2 mt-auto">
-                            <button aria-label="Add Wishlist Item to Cart" onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
-                            <button aria-label="Remove from Wishlist" onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition"><i class="fas fa-trash" aria-hidden="true"></i></button>
-                        </div>
+                return `<div class="product-card bg-white p-2 flex flex-col">
+                    <img src="${item.image}" class="h-32 object-contain mx-auto" alt="Wishlist">
+                    <h3 class="text-[10px] font-bold mt-2 line-clamp-1">${item.name}</h3>
+                    <p class="text-sm font-black text-[#f56437] mt-1">Rs ${item.price}</p>
+                    <div class="flex gap-2 mt-3">
+                        <button onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#f56437] text-white py-1.5 rounded text-xs font-bold"><i class="fas fa-cart-plus"></i></button>
+                        <button onclick="removeWishlistItem(${i})" class="px-3 bg-gray-100 text-red-500 rounded hover:bg-gray-200"><i class="fas fa-trash text-xs"></i></button>
                     </div>
                 </div>`;
             }).join('');
@@ -1098,26 +1100,26 @@ def generate_static_pages(categories_list):
             f.write(minify_html(get_html_header(title, categories_list) + content + get_html_footer()))
 
     faqs = [
-        ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days. Major cities like Karachi, Lahore, and Islamabad usually receive orders within 2 days. Remote areas may take up to 5 days."),
-        ("Do you offer Cash on Delivery (COD)?", "Yes! We offer Cash on Delivery across all of Pakistan. You pay when you receive your product at your doorstep."),
-        ("What is your return policy?", "We offer a 7-day return policy. If you're not satisfied with your product, you can return it within 7 days for a full refund or exchange. The product must be in its original condition."),
-        ("Are your products genuine?", "Absolutely! We source all our products directly from authorized distributors and manufacturers. Every product is 100% genuine and quality-checked before dispatch.")
+        ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days."),
+        ("Do you offer Cash on Delivery (COD)?", "Yes! We offer Cash on Delivery across all of Pakistan."),
+        ("What is your return policy?", "We offer a 7-day return policy for unused products in original packaging."),
+        ("Are your products genuine?", "Absolutely! We source all products directly from authorized distributors.")
     ]
     
     faq_html = get_html_header("Frequently Asked Questions", categories_list)
     faq_html += """
-    <div class="container mx-auto px-4 py-16 max-w-3xl">
-        <h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Frequently Asked Questions</h1>
+    <div class="container mx-auto px-4 py-16 max-w-3xl bg-white dark:bg-gray-800 mt-8 rounded border p-8">
+        <h1 class="text-3xl font-black text-gray-900 dark:text-white mb-8 uppercase border-l-4 border-[#f56437] pl-3">FAQ</h1>
         <div class="space-y-4">
     """
     for q, a in faqs:
         faq_html += f"""
-            <details class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 group">
-                <summary class="p-5 cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between items-center list-none" aria-expanded="false">
+            <details class="border border-gray-200 dark:border-gray-700 rounded group bg-gray-50 dark:bg-gray-900">
+                <summary class="p-4 cursor-pointer font-bold text-gray-800 dark:text-gray-200 flex justify-between items-center list-none text-sm">
                     {q}
-                    <i class="fas fa-chevron-down text-[#E53935] transition-transform group-open:rotate-180" aria-hidden="true"></i>
+                    <i class="fas fa-chevron-down text-[#f56437] transition-transform group-open:rotate-180"></i>
                 </summary>
-                <div class="px-5 pb-5 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{a}</div>
+                <div class="px-4 pb-4 text-gray-600 dark:text-gray-400 text-xs leading-relaxed border-t border-gray-100 pt-3">{a}</div>
             </details>
         """
     faq_html += "</div></div>"
@@ -1158,13 +1160,12 @@ Sitemap: https://www.asmveo.com/image-sitemap.xml
 
 def generate_manifest():
     manifest = {
-        "name": "ASM VEO - Online Shopping in Pakistan",
+        "name": "ASM VEO - Online Shopping",
         "short_name": "ASM VEO",
-        "description": "Premium online shopping in Pakistan with Cash on Delivery",
         "start_url": "/index.html",
         "display": "standalone",
         "background_color": "#ffffff",
-        "theme_color": "#E53935",
+        "theme_color": "#f56437",
         "icons": [
             {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
             {"src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"}
@@ -1189,7 +1190,7 @@ def generate_image_sitemap(products_list):
         f.write(xml_content)
         
 # ==============================================================================
-# GOOGLE MERCHANT CENTER FEED GENERATOR
+# GOOGLE MERCHANT CENTER FEED
 # ==============================================================================
 
 def generate_merchant_feed(products_list):
@@ -1199,7 +1200,7 @@ def generate_merchant_feed(products_list):
     xml_content += '<channel>\n'
     xml_content += '  <title>ASM VEO Products</title>\n'
     xml_content += '  <link>https://www.asmveo.com</link>\n'
-    xml_content += '  <description>Premium online shopping in Pakistan with COD</description>\n'
+    xml_content += '  <description>Premium online shopping in Pakistan</description>\n'
     
     for prod in products_list:
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -1224,10 +1225,9 @@ def generate_merchant_feed(products_list):
     
     with open("output/merchant-feed.xml", "w", encoding="utf-8") as f:
         f.write(xml_content)
-    print("✅ Google Merchant Feed generated successfully!")
 
 # ==============================================================================
-# PRODUCT CARD GENERATOR
+# PRODUCT CARD GENERATOR (V3 Style)
 # ==============================================================================
 
 def generate_product_card(prod, lazy=True, show_wishlist=True):
@@ -1242,36 +1242,39 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     if show_wishlist:
         wishlist_btn = """
             <button onclick="toggleWishlist('__SAFE_NAME__', __PRICE__, '__IMAGE__', event)" 
-                    class="wishlist-btn absolute top-2 right-2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10" 
+                    class="wishlist-btn absolute top-2 right-2 w-7 h-7 bg-white rounded-full border border-gray-100 shadow flex items-center justify-center hover:bg-[#f56437] hover:text-white hover:border-[#f56437] transition-colors z-10 text-gray-400" 
                     aria-label="Add to Wishlist">
-                <i class="fas fa-heart text-pink-500 text-sm" aria-hidden="true"></i>
+                <i class="fas fa-heart text-[10px]" aria-hidden="true"></i>
             </button>"""
     
     quick_view_btn = """
         <button onclick="quickView('__SAFE_NAME__', __PRICE__, '__IMAGE__', '__SAFE_DESC__', '__SLUG__')" 
-                class="absolute top-2 right-12 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10" 
+                class="absolute top-10 right-2 w-7 h-7 bg-white rounded-full border border-gray-100 shadow flex items-center justify-center hover:bg-gray-800 hover:text-white transition-colors z-10 text-gray-500" 
                 aria-label="Quick View">
-            <i class="fas fa-eye text-[#E53935] text-sm" aria-hidden="true"></i>
+            <i class="fas fa-search text-[10px]" aria-hidden="true"></i>
         </button>"""
     
     card = f"""
-    <div class="product-card reveal bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details for {alt_name}">
+    <div class="product-card reveal relative group cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details">
         {wishlist_btn}
         {quick_view_btn}
-        {f'<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-{discount}% OFF</div>' if discount > 0 else ''}
-        <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
+        {f'<div class="absolute top-2 left-2 bg-[#f56437] text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wide">-{discount}%</div>' if discount > 0 else ''}
+        
+        <div class="image-zoom h-40 md:h-48 bg-white overflow-hidden relative border-b border-gray-100 flex justify-center items-center p-3">
+            <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain" onerror="this.closest('.product-card').remove();">
         </div>
-        <div class="p-2 flex flex-col flex-grow">
-            <span class="text-[9px] font-bold text-[#E53935] dark:text-white uppercase tracking-wider mb-1 line-clamp-1">{prod['category']}</span>
-            <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-gray-100 leading-tight mb-1 line-clamp-2">{prod['name']}</h3>
-            <div class="mt-auto">
-                <div class="flex items-center gap-1 mb-1">
-                    <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
-                    <span class="text-[9px] text-gray-500 dark:text-gray-400 font-bold line-through">Rs {prod['fake_price']}</span>
+        
+        <div class="p-3 flex flex-col flex-grow bg-white">
+            <span class="text-[9px] font-medium text-gray-400 uppercase tracking-widest mb-1 line-clamp-1">{prod['category']}</span>
+            <h3 class="text-xs font-semibold text-gray-800 leading-tight mb-2 line-clamp-2 group-hover:text-[#f56437] transition-colors h-8">{prod['name']}</h3>
+            
+            <div class="mt-auto flex items-end justify-between">
+                <div>
+                    <span class="text-sm font-black text-[#f56437] block leading-none">Rs {prod['final_price']}</span>
+                    {f'<span class="text-[10px] text-gray-400 line-through leading-none block mt-1">Rs {prod["fake_price"]}</span>' if discount > 0 else ''}
                 </div>
-                <button onclick="addToCart('__SAFE_NAME__', __PRICE__, '__IMAGE__', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center" aria-label="Add to Cart">
-                    <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                <button onclick="addToCart('__SAFE_NAME__', __PRICE__, '__IMAGE__', event)" class="w-8 h-8 rounded-full bg-gray-100 text-gray-600 hover:bg-[#f56437] hover:text-white transition-colors flex items-center justify-center" aria-label="Add to Cart">
+                    <i class="fas fa-shopping-basket text-xs"></i>
                 </button>
             </div>
         </div>
@@ -1290,42 +1293,30 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
 # ==============================================================================
 
 def generate_pagination_html(current_page, total_pages, url_pattern):
-    if total_pages <= 1: 
-        return ""
-        
-    html = '<div class="flex justify-center items-center gap-2 mt-12 mb-8 font-semibold text-gray-600 text-lg" role="navigation" aria-label="Pagination Navigation">'
+    if total_pages <= 1: return ""
+    html = '<div class="flex justify-center items-center gap-1 mt-12 mb-8 text-sm" role="navigation">'
     
     if current_page > 1:
         prev_slug = url_pattern if current_page - 1 == 1 else f"{url_pattern}-{current_page - 1}"
-        html += f'<a href="/{prev_slug}.html" class="px-3 py-1 hover:text-[#007BFF] transition" aria-label="Previous Page">&lt;</a>'
-    else:
-        html += '<span class="px-3 py-1 opacity-40 cursor-not-allowed" aria-hidden="true">&lt;</span>'
+        html += f'<a href="/{prev_slug}.html" class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 hover:bg-[#f56437] hover:text-white hover:border-[#f56437] transition">&lt;</a>'
         
     pages_to_show = []
-    if total_pages <= 7:
-        pages_to_show = list(range(1, total_pages + 1))
+    if total_pages <= 5: pages_to_show = list(range(1, total_pages + 1))
     else:
-        if current_page <= 4:
-            pages_to_show = [1, 2, 3, 4, 5, '...', total_pages]
-        elif current_page >= total_pages - 3:
-            pages_to_show = [1, '...', total_pages-4, total_pages-3, total_pages-2, total_pages-1, total_pages]
-        else:
-            pages_to_show = [1, '...', current_page-1, current_page, current_page+1, '...', total_pages]
+        if current_page <= 3: pages_to_show = [1, 2, 3, 4, '...', total_pages]
+        elif current_page >= total_pages - 2: pages_to_show = [1, '...', total_pages-3, total_pages-2, total_pages-1, total_pages]
+        else: pages_to_show = [1, '...', current_page-1, current_page, current_page+1, '...', total_pages]
             
     for p_num in pages_to_show:
-        if p_num == '...':
-            html += '<span class="px-2 py-1" aria-hidden="true">...</span>'
-        elif p_num == current_page:
-            html += f'<span class="bg-[#007BFF] text-white px-4 py-2 rounded-lg shadow-sm" aria-current="page">{p_num}</span>'
+        if p_num == '...': html += '<span class="px-2 text-gray-400">...</span>'
+        elif p_num == current_page: html += f'<span class="w-8 h-8 flex items-center justify-center rounded bg-[#f56437] text-white font-bold">{p_num}</span>'
         else:
             p_slug = url_pattern if p_num == 1 else f"{url_pattern}-{p_num}"
-            html += f'<a href="/{p_slug}.html" class="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition" aria-label="Go to Page {p_num}">{p_num}</a>'
+            html += f'<a href="/{p_slug}.html" class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 hover:bg-[#f56437] hover:text-white hover:border-[#f56437] transition text-gray-600">{p_num}</a>'
             
     if current_page < total_pages:
         next_slug = f"{url_pattern}-{current_page + 1}"
-        html += f'<a href="/{next_slug}.html" class="px-3 py-1 hover:text-[#007BFF] transition" aria-label="Next Page">&gt;</a>'
-    else:
-        html += '<span class="px-3 py-1 opacity-40 cursor-not-allowed" aria-hidden="true">&gt;</span>'
+        html += f'<a href="/{next_slug}.html" class="w-8 h-8 flex items-center justify-center rounded border border-gray-200 hover:bg-[#f56437] hover:text-white hover:border-[#f56437] transition">&gt;</a>'
         
     html += '</div>'
     return html
@@ -1340,64 +1331,20 @@ def process_woocommerce_csv():
         print("❌ CSV File Not Found!")
         return
         
-    print("🚀 Advanced Script Started! Cleaning old data...")
+    print("🚀 SP TopDeals V3 Theme Generation Started...")
     
-    if os.path.exists("output"):
-        shutil.rmtree("output")
-        
+    if os.path.exists("output"): shutil.rmtree("output")
     os.makedirs("output/category", exist_ok=True)
     os.makedirs("output/product", exist_ok=True)
     os.makedirs("output/city", exist_ok=True)
     os.makedirs("output/assets", exist_ok=True)
     
-    with open("output/CNAME", "w") as f:
-        f.write("www.asmveo.com")
-        
-    with open("output/.nojekyll", "w", encoding="utf-8") as f:
-        f.write("")
-        
-    llms_content = """# ASM VEO
-
-> Premium online shopping destination in Pakistan, powered by ASM Digital Solutions.
-
-## About Us
-ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of 100% genuine products. Our catalog includes:
-- Electronics & Smart Gadgets
-- Premium Fashion & Apparel
-- Health & Beauty Essentials
-- Home & Kitchen Appliances
-
-## Key Features & Services
-- Nationwide Cash on Delivery (COD) across all major cities and remote areas of Pakistan.
-- Fast and reliable shipping within 2 to 4 business days.
-- Hassle-free 7-day return and exchange policy.
-
-## Organization Info
-- **Name:** ASM VEO (ASM Digital Solutions)
-- **Website:** https://www.asmveo.com/
-- **Contact:** +923425478683
-- **Location:** Karachi, Pakistan
-- **Service Area:** Pakistan (PK)
-
-## Important Links
-- Home: https://www.asmveo.com/
-- Categories: https://www.asmveo.com/category/
-- About Us: https://www.asmveo.com/about.html
-- Contact: https://www.asmveo.com/contact.html
-"""
-    
-    with open("output/llms.txt", "w", encoding="utf-8") as f:
-        f.write(llms_content)
+    with open("output/CNAME", "w") as f: f.write("www.asmveo.com")
+    with open("output/.nojekyll", "w") as f: f.write("")
     
     products_list = []
     categories_set = set()
-    sitemap_urls = [
-        "https://www.asmveo.com/", "https://www.asmveo.com/checkout.html", 
-        "https://www.asmveo.com/about.html", "https://www.asmveo.com/contact.html",
-        "https://www.asmveo.com/faq.html", "https://www.asmveo.com/wishlist.html",
-        "https://www.asmveo.com/privacy.html", "https://www.asmveo.com/terms.html",
-        "https://www.asmveo.com/order-success.html"
-    ]
+    sitemap_urls = ["https://www.asmveo.com/", "https://www.asmveo.com/checkout.html", "https://www.asmveo.com/about.html", "https://www.asmveo.com/contact.html"]
     
     with open(file_path, mode='r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -1411,22 +1358,17 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             base_price = get_price(row.get('Sale price', '') or row.get('Regular price', ''))
             if base_price == 0: continue
             
-            if base_price <= 500:
-                final_price = math.ceil(base_price * 1.40) # 40% Profit
-            elif base_price <= 2000:
-                final_price = math.ceil(base_price * 1.30) # 30% Profit
-            elif base_price <= 3500:
-                final_price = math.ceil(base_price * 1.20) # 20% Profit
-            else:
-                final_price = math.ceil(base_price * 1.10) # 10% Profit
+            if base_price <= 500: final_price = math.ceil(base_price * 1.40)
+            elif base_price <= 2000: final_price = math.ceil(base_price * 1.30)
+            elif base_price <= 3500: final_price = math.ceil(base_price * 1.20)
+            else: final_price = math.ceil(base_price * 1.10)
 
-            if "zafrani cream" in name.lower():
-                final_price = 1599
+            if "zafrani cream" in name.lower(): final_price = 1599
                 
             fake_regular_price = math.ceil(final_price * 1.61) 
             
             cat_raw = row.get('Categories', 'Uncategorized')
-            category = cat_raw.split(',')[0].strip() if cat_raw else 'Exclusive Collection'
+            category = cat_raw.split(',')[0].strip() if cat_raw else 'Exclusive'
             categories_set.add(category)
             
             desc_raw = row.get('Short description', '') or row.get('Description', '')
@@ -1444,270 +1386,83 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 'full_desc': clean_description
             })
 
-    print(f"⏳ Checking {len(products_list)} images to remove broken products (This may take 1-2 minutes)...")
     valid_products = []
-    
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         for result in executor.map(check_valid_image, products_list):
-            if result is not None:
-                valid_products.append(result)
+            if result is not None: valid_products.append(result)
                 
     products_list = valid_products
-    categories_set = set(p['category'] for p in products_list) 
-
-    categories_list = sorted(list(categories_set))
-    print(f"✔ Total {len(products_list)} valid products being processed...")
+    categories_list = sorted(list(set(p['category'] for p in products_list)))
     
     generate_static_pages(categories_list)
     generate_robots_txt()
     generate_manifest()
     
-    search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], 
-                                     "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
-    with open("output/search-data.js", "w", encoding="utf-8") as f:
-        f.write(f"let searchIndex = {search_index_json};")
+    search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
+    with open("output/search-data.js", "w", encoding="utf-8") as f: f.write(f"let searchIndex = {search_index_json};")
     
     # ================= PRODUCT PAGES =================
     for i, prod in enumerate(products_list):
         reviews_section, avg_rating, review_count = generate_reviews(prod['name'])
-        prod['rating'] = avg_rating
-        prod['review_count'] = review_count
         
-        related = [p for p in products_list if p['category'] == prod['category'] and p['slug'] != prod['slug']][:4]
+        related = [p for p in products_list if p['category'] == prod['category'] and p['slug'] != prod['slug']][:6]
         related_html = "".join([generate_product_card(p, lazy=True) for p in related])
         
         gallery_html = ""
         if len(prod['images']) > 1:
-            gallery_thumbs = ""
-            for idx, img in enumerate(prod['images'][:5]):
-                gallery_thumbs += f'<img src="{img}" alt="{prod["name"]} - Thumbnail {idx+1}" onclick="changeMainImage(this)" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 {"border-[#E53935]" if idx == 0 else "border-gray-200"} hover:border-[#E53935] transition" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">'
-            gallery_html = f'<div class="flex gap-2 mt-4 overflow-x-auto">{gallery_thumbs}</div>'
+            gallery_thumbs = "".join([f'<img src="{img}" onclick="changeMainImage(this)" class="w-14 h-14 object-cover rounded border cursor-pointer hover:border-[#f56437] transition" loading="lazy">' for img in prod['images'][:5]])
+            gallery_html = f'<div class="flex gap-2 mt-4 justify-center">{gallery_thumbs}</div>'
         
-        breadcrumb_data = {'category': prod['category'], 'name': prod['name'], 'slug': prod['slug']}
-        product_schema_data = {**prod, 'rating': avg_rating, 'review_count': review_count}
+        prod_html = get_html_header(prod['name'], categories_list, prod['seo_desc'], product_data={**prod, 'rating': avg_rating, 'review_count': review_count}, og_image=prod['image'])
         
-        prod_html = get_html_header(prod['name'], categories_list, prod['seo_desc'], 
-                                     product_data=product_schema_data, breadcrumb_data=breadcrumb_data,
-                                     og_image=prod['image'])
-        
-        discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
-        stock_left = random.randint(3, 15)
-        stock_pct = random.randint(15, 40)
-        delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
-        
+        discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 else 0
         escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
-        alt_name = prod['name'].replace('"', '&quot;')
-        
-        wa_text = f"Hi, I want to order {prod['name']} (Rs {prod['final_price']}). Is it available?"
-        wa_link = f"https://wa.me/923425478683?text={urllib.parse.quote(wa_text)}"
-        
-        next_prod_html = ""
-        if i + 1 < len(products_list):
-            next_prod = products_list[i+1]
-            next_prod_html = f"""
-            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-16 md:mb-0 reveal">
-                <h2 class="text-xl font-extrabold text-gray-900 dark:text-white mb-4 border-b pb-4">Ready for the next product?</h2>
-                <div class="flex items-center gap-4">
-                    <img src="{next_prod['image']}" alt="{next_prod['name'].replace('"', '&quot;')}" class="w-20 h-20 object-contain rounded-lg border border-gray-100" loading="lazy" decoding="async">
-                    <div class="flex-grow">
-                        <h3 class="font-bold text-sm text-gray-900 dark:text-white line-clamp-2">{next_prod['name']}</h3>
-                        <p class="text-lg font-black text-[#E53935] dark:text-white mt-1">Rs {next_prod['final_price']}</p>
-                    </div>
-                    <a href="/product/{next_prod['slug']}.html" class="bg-[#E53935] text-white py-3 px-6 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center gap-2 whitespace-nowrap">
-                        Next <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            """
         
         prod_html += f"""
-        <div class="container mx-auto px-4 py-10">
-            <nav class="text-sm text-gray-600 dark:text-gray-400 mb-6 font-semibold bg-gray-100 dark:bg-gray-800 p-3 rounded-lg inline-block" aria-label="Breadcrumb">
-                <a href="/index.html" class="hover:text-[#E53935] transition">Home</a> &gt; 
-                <a href="/category/{re.sub(r'[^a-z0-9]+', '-', prod['category'].lower()).strip('-')}.html" class="hover:text-[#E53935] transition">{prod['category']}</a> &gt; 
-                <span class="text-[#E53935] dark:text-white" aria-current="page">{prod['name']}</span>
-            </nav>
-            
-            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row mb-12 reveal">
-                <div class="md:w-1/2 p-6 flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 relative">
-                    {f'<div class="absolute top-4 left-4 bg-[#E53935] text-white text-sm font-black px-3 py-1.5 rounded-lg z-10 shadow-md">-{discount_pct}% OFF</div>' if discount_pct > 0 else ''}
-                    <img id="mainProductImage" src="{prod['image']}" alt="{alt_name}" fetchpriority="high" decoding="sync" width="600" height="600" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500" onerror="window.location.href='/index.html';">
+        <div class="bg-white border-b border-gray-200">
+            <div class="container mx-auto px-4 py-3 text-xs text-gray-500">
+                <a href="/index.html" class="hover:text-[#f56437]">Home</a> / 
+                <a href="/category/{re.sub(r'[^a-z0-9]+', '-', prod['category'].lower()).strip('-')}.html" class="hover:text-[#f56437]">{prod['category']}</a> / 
+                <span class="text-gray-800">{prod['name']}</span>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 py-8">
+            <div class="bg-white rounded border border-gray-200 flex flex-col md:flex-row mb-12">
+                <div class="md:w-1/2 p-6 border-r border-gray-100">
+                    <img id="mainProductImage" src="{prod['image']}" class="w-full h-[400px] object-contain">
                     {gallery_html}
                 </div>
-                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                    <span class="text-xs font-bold uppercase tracking-widest text-[#E53935] dark:text-white mb-2">{prod['category']}</span>
-                    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">{prod['name']}</h1>
-                    
-                    <div class="flex items-center gap-3 mb-6" aria-label="Customer Rating">
-                        <div class="text-yellow-500 text-sm">{"<i class='fas fa-star'></i>" * 5}</div>
-                        <span class="text-sm font-semibold text-gray-600 dark:text-gray-300">{avg_rating} ({review_count} verified reviews)</span>
-                    </div>
-
-                    <div class="flex items-center gap-4 mb-4 bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl w-fit border border-gray-100 dark:border-gray-600">
-                        <span class="text-4xl font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
-                        <span class="text-xl text-gray-500 font-bold line-through">Rs {prod['fake_price']}</span>
-                        {f'<span class="bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-lg">Save Rs {prod["fake_price"] - prod["final_price"]}</span>' if discount_pct > 0 else ''}
+                <div class="md:w-1/2 p-8 flex flex-col">
+                    <h1 class="text-2xl font-bold text-gray-900 mb-2">{prod['name']}</h1>
+                    <div class="flex items-center gap-2 mb-4 text-xs">
+                        <div class="text-yellow-400">{"<i class='fas fa-star'></i>" * 5}</div>
+                        <span class="text-gray-500">({review_count} Reviews)</span>
+                        <span class="text-green-500 font-bold ml-2">In Stock</span>
                     </div>
                     
-                    <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl mb-6 border border-gray-100 dark:border-gray-600">
-                        <div class="flex justify-between text-xs font-bold text-gray-600 dark:text-gray-300 mb-2">
-                            <span><i class="fas fa-eye" aria-hidden="true"></i> <span id="liveViewers">15</span> people are viewing this right now</span>
-                            <span><i class="fas fa-fire text-orange-500" aria-hidden="true"></i> Hurry, only {stock_left} left!</span>
-                        </div>
-                        <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-600">
-                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: {stock_pct}%"></div>
-                        </div>
-                    </div>
+                    <div class="text-3xl font-black text-[#f56437] mb-2">Rs {prod['final_price']}</div>
+                    {f'<div class="text-sm text-gray-400 line-through mb-6">Rs {prod["fake_price"]}</div>' if discount_pct > 0 else '<div class="mb-6"></div>'}
                     
-                    <div class="flex items-center gap-2 mb-6 text-sm">
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-bold"><i class="fas fa-truck" aria-hidden="true"></i> Delivery by {delivery_date}</span>
-                    </div>
+                    <p class="text-sm text-gray-600 mb-8 leading-relaxed border-t border-gray-100 pt-6">{prod['full_desc'][:400]}...</p>
                     
-                    <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-6">{prod['full_desc'][:500] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto main-product-actions">
-                        <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#E53935] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#E53935] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
-                            <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
-                        </button>
-                        <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#E53935] text-white py-4 rounded-xl font-black text-lg hover:bg-[#C62828] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
-                            <i class="fas fa-bolt" aria-hidden="true"></i> Buy Now
-                        </button>
-                    </div>
-                    
-                    <a href="{wa_link}" target="_blank" class="mt-4 w-full md:w-5/6 bg-green-500 text-white font-bold py-3 rounded-xl hover:bg-green-600 transition flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Quick Order via WhatsApp
-                    </a>
-                    
-                    <div class="grid grid-cols-3 gap-3 mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
-                        <div class="text-center"><i class="fas fa-shield-alt text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Secure Payment</p></div>
-                        <div class="text-center"><i class="fas fa-undo text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">7-Day Returns</p></div>
-                        <div class="text-center"><i class="fas fa-truck text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Fast Delivery</p></div>
+                    <div class="flex gap-4 mt-auto">
+                        <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="flex-1 bg-gray-900 text-white py-3 rounded font-bold uppercase tracking-wide hover:bg-[#f56437] transition text-sm">Add to Cart</button>
+                        <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="flex-1 bg-[#f56437] text-white py-3 rounded font-bold uppercase tracking-wide hover:bg-[#d44c24] transition text-sm">Buy Now</button>
                     </div>
                 </div>
             </div>
             
-            {"<div class='bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal'><h2 class='text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4'>You May Also Like</h2><div class='grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4'>" + related_html + "</div></div>" if related_html else ""}
-            
-            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal">
-                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4 flex items-center gap-3">
-                    <i class="fas fa-star text-yellow-500" aria-hidden="true"></i> Customer Reviews ({review_count})
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>{reviews_section}</div>
-                    <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl h-fit border border-gray-300 dark:border-gray-700">
-                        <h3 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Write a Review</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Only verified buyers can leave a review after receiving the product to maintain quality standards.</p>
-                        <div class="flex items-center gap-2 text-[#E53935] dark:text-white font-bold bg-gray-50 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600">
-                            <i class="fas fa-lock" aria-hidden="true"></i> Review form is currently locked.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal">
-                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4">Product FAQs</h2>
-                <div class="space-y-4">
-                    <details class="border border-gray-200 dark:border-gray-700 rounded-xl p-4 group">
-                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none" aria-expanded="false">Is this product genuine? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition" aria-hidden="true"></i></summary>
-                        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Yes! We source 100% genuine products directly from authorized distributors. Every product is quality-checked before dispatch.</p>
-                    </details>
-                    <details class="border border-gray-200 dark:border-gray-700 rounded-xl p-4 group">
-                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none" aria-expanded="false">What is the delivery time? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition" aria-hidden="true"></i></summary>
-                        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Delivery takes 2-4 business days across Pakistan. Major cities receive faster delivery.</p>
-                    </details>
-                    <details class="border border-gray-200 dark:border-gray-700 rounded-xl p-4 group">
-                        <summary class="cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between list-none" aria-expanded="false">Can I return this product? <i class="fas fa-chevron-down text-[#E53935] group-open:rotate-180 transition" aria-hidden="true"></i></summary>
-                        <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Yes, we offer a 7-day return policy. The product must be in its original condition with packaging.</p>
-                    </details>
-                </div>
-            </div>
-            
-            {next_prod_html}
+            {"<div class='mb-12'><h2 class='text-xl font-bold mb-6 border-l-4 border-[#f56437] pl-3 uppercase'>Related Products</h2><div class='grid grid-cols-2 md:grid-cols-6 gap-4'>" + related_html + "</div></div>" if related_html else ""}
         </div>
         
-        <div id="stickyAddToCart" class="hidden fixed bottom-16 left-0 right-0 bg-white dark:bg-gray-800 shadow-2xl border-t border-gray-200 dark:border-gray-700 p-3 z-40 flex items-center justify-between gap-3 md:hidden">
-            <div class="flex flex-col">
-                <span class="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">{prod['name']}</span>
-                <span class="text-lg font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
-            </div>
-            <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="bg-[#E53935] text-white px-4 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2" aria-label="Add to Cart">
-                <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
-            </button>
-        </div>
-        """
-        
-        recent_json = json.dumps({"slug": prod['slug'], "name": prod['name'], "image": prod['image'], "final_price": prod['final_price'], "fake_price": prod['fake_price'], "category": prod['category']})
-        prod_script = """
         <script>
-            addToRecentlyViewed(__RECENT_JSON__);
-            function changeMainImage(thumb) {
-                document.getElementById('mainProductImage').src = thumb.src;
-                document.querySelectorAll('.flex.gap-2 img').forEach(img => img.classList.remove('border-[#E53935]'));
-                thumb.classList.add('border-[#E53935]');
-            }
-            
-            /* Sticky Add to Cart Bar Logic */
-            let stickyBar = document.getElementById('stickyAddToCart');
-            let mainActions = document.querySelector('.main-product-actions');
-            window.addEventListener('scroll', () => {
-                if (mainActions) {
-                    let rect = mainActions.getBoundingClientRect();
-                    if (rect.bottom < 0) {
-                        stickyBar.classList.remove('hidden');
-                    } else {
-                        stickyBar.classList.add('hidden');
-                    }
-                }
-            });
-
-            /* Live Viewers Counter Logic */
-            let viewers = document.getElementById('liveViewers');
-            setInterval(() => {
-                let current = parseInt(viewers.innerText);
-                let change = Math.floor(Math.random() * 5) - 2;
-                current += change;
-                if (current < 10) current = 10;
-                if (current > 35) current = 35;
-                viewers.innerText = current;
-            }, 3000);
+            addToRecentlyViewed({json.dumps({"slug": prod['slug'], "name": prod['name'], "image": prod['image'], "final_price": prod['final_price'], "fake_price": prod['fake_price'], "category": prod['category']})});
+            function changeMainImage(thumb) {{ document.getElementById('mainProductImage').src = thumb.src; }}
         </script>
         """
-        prod_html += prod_script.replace("__RECENT_JSON__", recent_json) + get_html_footer()
-        
-        with open(f"output/product/{prod['slug']}.html", "w", encoding="utf-8") as f:
-            f.write(minify_html(prod_html))
-
-    # ================= CITY SEO PAGES =================
-    print("🏙️ Generating City SEO Pages...")
-    cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Multan", "Peshawar", "Quetta", "Faisalabad"]
-    
-    for city in cities:
-        city_slug = make_slug(city)
-        sitemap_urls.append(f"https://www.asmveo.com/city/{city_slug}.html")
-        
-        city_prods = random.sample(products_list, min(12, len(products_list)))
-        city_html = get_html_header(f"Online Shopping in {city}", categories_list, f"Buy products online in {city} with Cash on Delivery. Fast delivery in {city} and all over Pakistan. Premium quality at best prices.")
-        
-        city_html += f"""
-        <div class="animated-bg py-16 mb-8 text-center text-white relative overflow-hidden">
-            <div class="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
-            <div class="absolute bottom-10 left-10 w-48 h-48 bg-white/5 rounded-full animate-float" style="animation-delay: 1s;"></div>
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 relative z-10">Online Shopping in {city}</h1>
-            <p class="text-lg text-gray-200 relative z-10">Fast Delivery & Cash on Delivery Available in {city}</p>
-        </div>
-        <div class="container mx-auto px-4 pb-12">
-            <p class="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                Shop premium quality products online in {city} with ASM VEO. We offer a wide range of items including electronics, fashion, accessories, and more. Enjoy the convenience of Cash on Delivery (COD) right at your doorstep in {city}. Our fast delivery network ensures you get your products within 2-4 business days. 100% genuine products with a 7-day return policy.
-            </p>
-            <h2 class="text-2xl font-bold text-[#E53935] dark:text-white mb-6">Top Products in {city}</h2>
-            <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
-        """
-        for p in city_prods:
-            city_html += generate_product_card(p)
-            
-        city_html += "</div></div>" + get_html_footer()
-        with open(f"output/city/{city_slug}.html", "w", encoding="utf-8") as f:
-            f.write(minify_html(city_html))
+        prod_html += get_html_footer()
+        with open(f"output/product/{prod['slug']}.html", "w", encoding="utf-8") as f: f.write(minify_html(prod_html))
 
     # ================= CATEGORY PAGES =================
     print("📂 Generating Category Pages...")
@@ -1719,487 +1474,273 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
 
     for cat_name, prods in sections_dict.items():
         cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
-        sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
-        
-        prods_per_page = 24
-        total_pages = math.ceil(len(prods) / prods_per_page)
+        total_pages = math.ceil(len(prods) / 24)
         
         for page_num in range(1, total_pages + 1):
-            start_idx = (page_num - 1) * prods_per_page
-            end_idx = start_idx + prods_per_page
-            current_prods = prods[start_idx:end_idx]
-            
+            current_prods = prods[(page_num-1)*24 : page_num*24]
             file_slug = cat_slug if page_num == 1 else f"{cat_slug}-{page_num}"
-            page_title = f"{cat_name} - Page {page_num}" if page_num > 1 else cat_name
             
-            if page_num > 1:
-                sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
-            
-            cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. Wide range of {cat_name} with Cash on Delivery from ASM VEO.")
-            
-            min_price = min(p['final_price'] for p in prods)
-            max_price = max(p['final_price'] for p in prods)
+            cat_html = get_html_header(cat_name, categories_list)
             
             cat_html += f"""
-            <div class="animated-bg py-12 mb-8 relative overflow-hidden">
-                <div class="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
-                <div class="absolute bottom-10 left-10 w-48 h-48 bg-white/5 rounded-full animate-float" style="animation-delay: 2s;"></div>
-                <div class="container mx-auto px-4 text-center relative z-10">
-                    <div class="w-16 h-16 mx-auto rounded-full bg-white/20 backdrop-blur flex items-center justify-center mb-4 text-white shadow-lg">
-                        <i class="fas {get_category_icon(cat_name)} text-3xl" aria-hidden="true"></i>
-                    </div>
-                    <h1 class="text-3xl md:text-5xl font-black text-white">{cat_name}</h1>
-                    <p class="text-gray-200 mt-3 font-bold">{len(prods)} Products Available • Cash on Delivery</p>
-                </div>
+            <div class="bg-gray-100 py-8 mb-8 border-b border-gray-200 text-center">
+                <h1 class="text-3xl font-black text-gray-900 uppercase tracking-wide">{cat_name}</h1>
+                <p class="text-sm text-gray-500 mt-2">{len(prods)} Products</p>
             </div>
-            
             <div class="container mx-auto px-4 pb-12">
-                <div class="flex flex-col lg:flex-row gap-6 mt-8">
-                    <!-- Filters Sidebar -->
-                    <aside class="lg:w-64 flex-shrink-0">
-                        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-5 sticky top-24">
-                            <h3 class="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2"><i class="fas fa-filter text-[#E53935]" aria-hidden="true"></i> Filters</h3>
-                            <div class="mb-6">
-                                <h4 class="text-sm font-bold text-gray-700 dark:text-gray-300 mb-3"><label for="sortBy">Sort By</label></h4>
-                                <select id="sortBy" onchange="applyFilters()" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white">
-                                    <option value="default">Featured</option>
-                                    <option value="price-low">Price: Low to High</option>
-                                    <option value="price-high">Price: High to Low</option>
-                                    <option value="name">Name: A to Z</option>
-                                </select>
-                            </div>
-                            <div class="mb-6">
-                                <h4 class="text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">Price Range</h4>
-                                <div class="flex items-center gap-2 mb-2">
-                                    <input type="number" id="minPrice" placeholder="Min" value="{int(min_price)}" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white" aria-label="Minimum Price">
-                                    <input type="number" id="maxPrice" placeholder="Max" value="{int(max_price)}" class="w-full bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg p-2 text-sm text-gray-900 dark:text-white" aria-label="Maximum Price">
-                                </div>
-                                <button onclick="applyFilters()" class="w-full bg-[#E53935] text-white py-2 rounded-lg text-sm font-bold hover:bg-[#C62828] transition">Apply Filter</button>
-                            </div>
-                            <button onclick="resetFilters()" class="w-full text-gray-600 hover:text-[#E53935] text-sm font-bold transition"><i class="fas fa-undo mr-1" aria-hidden="true"></i> Reset Filters</button>
-                        </div>
-                    </aside>
-                    
-                    <!-- Products Grid & Pagination -->
-                    <div class="flex-1">
-                        <div id="productGrid" class="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             """
+            for p in current_prods: cat_html += generate_product_card(p)
+            cat_html += "</div>" + generate_pagination_html(page_num, total_pages, f"category/{cat_slug}") + "</div>" + get_html_footer()
             
-            for prod in current_prods:
-                cat_html += generate_product_card(prod, lazy=True)
-            
-            cat_html += "</div>"
-            cat_html += generate_pagination_html(page_num, total_pages, f"category/{cat_slug}")
-            cat_html += "</div></div></div>"
-            
-            cat_script_filters = """
-            <script>
-                function applyFilters() {
-                    if (typeof allProducts === 'undefined') {
-                        setTimeout(applyFilters, 500);
-                        return;
-                    }
-                    let sortBy = document.getElementById('sortBy').value;
-                    let minP = parseFloat(document.getElementById('minPrice').value) || 0;
-                    let maxP = parseFloat(document.getElementById('maxPrice').value) || 999999;
-                    
-                    let filtered = allProducts.filter(p => p.final_price >= minP && p.final_price <= maxP);
-                    
-                    if (sortBy === 'price-low') filtered.sort((a,b) => a.final_price - b.final_price);
-                    else if (sortBy === 'price-high') filtered.sort((a,b) => b.final_price - a.final_price);
-                    else if (sortBy === 'name') filtered.sort((a,b) => a.name.localeCompare(b.name));
-                    
-                    let grid = document.getElementById('productGrid');
-                    if (filtered.length === 0) {
-                        grid.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500">No products found</div>';
-                    } else {
-                        grid.innerHTML = filtered.map(p => generateCard(p)).join('');
-                    }
-                }
-                
-                function generateCard(p) {
-                    let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
-                    if (isNaN(discount)) discount = 0;
-                    
-                    let htmlSafeName = p.name.replace(/"/g, '&quot;');
-                    let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
-                    let jsSafeDesc = p.seo_desc ? p.seo_desc.replace(/"/g, '&quot;').replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'") : '';
-                    
-                    return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
-                        <button onclick="toggleWishlist('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="absolute top-2 right-2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500 text-sm"></i></button>
-                        <button onclick="quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-12 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#E53935] text-sm"></i></button>
-                        ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                        <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                            <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
-                        </div>
-                        <div class="p-2 flex flex-col flex-grow">
-                            <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
-                            <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white leading-tight mb-1 line-clamp-2">${htmlSafeName}</h3>
-                            <div class="mt-auto">
-                                <div class="flex items-center gap-1 mb-1">
-                                    <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
-                                    <span class="text-[9px] text-gray-500 font-bold line-through">Rs ${p.fake_price}</span>
-                                </div>
-                                <button onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center"><i class="fas fa-cart-plus"></i></button>
-                            </div>
-                        </div>
-                    </div>`;
-                }
-                
-                function resetFilters() {
-                    document.getElementById('sortBy').value = 'default';
-                    document.getElementById('minPrice').value = '__MIN_PRICE__';
-                    document.getElementById('maxPrice').value = '__MAX_PRICE__';
-                    applyFilters();
-                }
-            </script>
-            """
-            
-            all_prods_json = json.dumps([{
-                "name": p['name'], "slug": p['slug'], "category": p['category'],
-                "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image'],
-                "seo_desc": p['seo_desc']
-            } for p in prods])
-            
-            cat_html += cat_script_filters.replace("__PRODUCTS_JSON__", all_prods_json)\
-                                          .replace("__MIN_PRICE__", str(int(min_price)))\
-                                          .replace("__MAX_PRICE__", str(int(max_price)))
-            cat_html += get_html_footer()
-            
-            with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f:
-                f.write(minify_html(cat_html))
+            with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f: f.write(minify_html(cat_html))
 
-
-    # ==============================================================================
-    # HOMEPAGE DYNAMIC PAGINATION
-    # ==============================================================================
-    print("🏠 Generating Home Pages with 8 Reference Banners & Grid Fix...")
+    # ================= HOMEPAGE (TOPDEALS V3 MEGA LAYOUT) =================
+    print("🏠 Generating V3 Home Pages...")
     all_categories_list = list(sections_dict.items())
-    cats_per_home_page = 6 
-    total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
+    total_home_pages = math.ceil(len(all_categories_list) / 6)
 
     for h_page in range(1, total_home_pages + 1):
-        page_title = "Home - Premium Online Shopping in Pakistan" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
-        home_html = get_html_header(page_title, categories_list,
-                                     "ASM VEO - Premium online shopping in Pakistan for Electronics, Fashion & Home Appliances. Buy quality products with Cash on Delivery & fast shipping.")
+        home_html = get_html_header("Home", categories_list)
         
         if h_page == 1:
-            # 🌟 8 EXACT REFERENCE BANNERS (From Provided Images) 🌟
-            home_html += """
-            <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan</h1>
             
-            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
-                <div class="carousel-track h-full">
-                
-                    <!-- Banner 1: SUNSCREEN -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-300 to-cyan-100" aria-hidden="false">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Beach Background" class="absolute inset-0 w-full h-full object-cover opacity-60">
-                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-100/90 to-transparent w-[60%]"></div>
-                        <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <h2 class="text-3xl md:text-6xl font-black text-orange-500 uppercase tracking-tighter drop-shadow-md">SUNSCREEN</h2>
-                            <p class="text-teal-800 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-1 mb-3">BETTER PROTECTION FOR ALL ACTIVITIES</p>
-                            <p class="text-blue-900 text-[8px] md:text-xs font-semibold max-w-[200px] leading-tight">MOISTURE AND GENTLE SUITABLE FOR SENSITIVE SKIN</p>
-                            <a href="#products" class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-orange-600 transition">SHOP NOW</a>
-                        </div>
-                        <div class="w-[45%] h-full relative z-10 flex justify-center items-end pb-4">
-                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=400&q=80" alt="Sunscreen" class="w-[80%] md:w-[60%] object-contain mix-blend-multiply drop-shadow-2xl">
-                        </div>
-                    </div>
-
-                    <!-- Banner 2: COSMETICS -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-pink-100 to-rose-200" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1200&q=80" alt="Cosmetics Background" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity">
-                        <div class="w-[45%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <span class="text-rose-900 text-[8px] md:text-[10px] font-bold tracking-[0.2em] uppercase mb-1">BRAND NAME</span>
-                            <h2 class="text-3xl md:text-6xl font-black text-rose-700 uppercase tracking-tight">COSMETICS</h2>
-                            <p class="text-rose-900 text-[8px] md:text-[10px] mt-2 max-w-[200px] leading-tight opacity-70">Premium quality for your daily beauty routine.</p>
-                        </div>
-                        <div class="w-[55%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Perfume" class="w-[90%] md:w-[70%] object-contain mix-blend-multiply drop-shadow-2xl transform hover:scale-105 transition-transform duration-700">
-                        </div>
-                    </div>
-
-                    <!-- Banner 3: HONEY LOTION -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-yellow-400 to-amber-500" aria-hidden="true">
-                        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1587049352847-81a56d773c1c?auto=format&fit=crop&w=1200&q=80')] bg-cover mix-blend-overlay"></div>
-                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Honey Lotion" class="w-[80%] md:w-[60%] object-contain drop-shadow-[0_20px_50px_rgba(180,83,9,0.5)]">
-                        </div>
-                        <div class="w-[50%] h-full flex flex-col justify-center items-start pr-8 relative z-10 text-amber-900">
-                            <h2 class="text-2xl md:text-4xl font-serif italic leading-tight">NATURAL<br>HUMECTANTS<br>FOR SKIN</h2>
-                            <span class="text-xs font-bold tracking-[0.2em] mt-2 uppercase">Beauty</span>
-                            <div class="absolute bottom-10 right-10 w-16 h-16 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm rounded-full border border-amber-200 flex items-center justify-center text-center p-2 shadow-lg">
-                                <span class="text-[8px] md:text-[10px] font-black uppercase">Hydrate<br>The Skin</span>
+            # V3 HOMEPAGE TOP SECTION (Vertical Menu + Slider)
+            v_menu_items = "".join([f'<a href="/category/{re.sub(r"[^a-z0-9]+", "-", c.lower()).strip("-")}.html" class="block px-5 py-3 text-sm text-gray-600 hover:text-[#f56437] hover:bg-gray-50 border-b border-gray-100 transition"><i class="fas {get_category_icon(c)} w-6 text-center text-gray-400"></i> {c}</a>' for c in categories_list[:10]])
+            
+            home_html += f"""
+            <div class="container mx-auto px-4 mt-6">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    
+                    <!-- Left: Vertical Mega Menu -->
+                    <div class="hidden lg:block w-1/4">
+                        <div class="bg-white border border-[#f56437] rounded-t-lg shadow-sm">
+                            <div class="bg-[#f56437] text-white font-bold px-5 py-4 rounded-t-lg flex items-center gap-3 uppercase tracking-wide text-sm">
+                                <i class="fas fa-bars"></i> All Categories
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Banner 4: SUPER CLEAN -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-cyan-300 to-blue-400" aria-hidden="true">
-                        <div class="w-1/2 h-full flex flex-col justify-center items-center pl-8 relative z-10 text-white">
-                            <h2 class="text-5xl md:text-7xl font-black italic uppercase leading-none drop-shadow-lg text-yellow-300 transform -skew-x-12">Super<br><span class="text-white">Clean</span></h2>
-                            <a href="#products" class="mt-6 border-2 border-white px-6 py-2 rounded-full text-xs font-bold hover:bg-white hover:text-blue-500 transition shadow-[0_0_15px_rgba(255,255,255,0.5)]">SHOP NOW</a>
-                        </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1584820927498-cafe8c124016?auto=format&fit=crop&w=400&q=80" alt="Detergent" class="w-[70%] md:w-[50%] object-contain mix-blend-multiply drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)] transform hover:rotate-6 transition-transform">
-                        </div>
-                    </div>
-
-                    <!-- Banner 5: MACBOOK M2 PRO (Reference 2) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-50" aria-hidden="true">
-                        <div class="absolute right-0 top-0 w-3/5 h-full bg-gradient-to-bl from-green-200 via-blue-100 to-transparent" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"></div>
-                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
-                            <div class="bg-red-600 text-white px-3 py-1 text-[10px] md:text-xs font-bold transform -skew-x-12 inline-block mb-3 shadow-md">SPECIAL OFFER</div>
-                            <h2 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">MACBOOK M2 PRO</h2>
-                            <p class="text-gray-600 text-xs md:text-sm mt-1 max-w-xs leading-tight">Price comparison, one of them crossed out</p>
-                            <a href="#products" class="mt-4 bg-gray-800 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-black transition">SHOP NOW</a>
-                        </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Macbook" class="w-[90%] md:w-[80%] object-contain mix-blend-multiply transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl">
-                        </div>
-                    </div>
-
-                    <!-- Banner 6: SONY h.ear (Reference 2) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex" aria-hidden="true">
-                        <div class="w-1/3 bg-[#E53935] h-full flex flex-col justify-center pl-8 md:pl-12 text-white relative z-10">
-                            <div class="absolute top-4 left-8 font-black tracking-widest text-lg md:text-xl">SONY</div>
-                            <h2 class="text-4xl md:text-6xl font-bold leading-none tracking-tighter">h.ear</h2>
-                            <h3 class="text-sm md:text-lg font-bold tracking-widest mt-1">ON WIRELESS NC</h3>
-                            <p class="text-[8px] md:text-xs mt-2 text-red-100 max-w-[150px]">High-Resolution Audio wireless headphones.</p>
-                        </div>
-                        <div class="w-2/3 bg-gray-50 h-full relative flex items-center justify-center">
-                            <div class="absolute w-48 h-48 md:w-80 md:h-80 bg-gray-200 rounded-full mix-blend-multiply opacity-50"></div>
-                            <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=500&q=80" alt="Headphones" class="w-[60%] md:w-[50%] object-contain mix-blend-multiply relative z-10 hover:scale-110 transition-transform duration-500 drop-shadow-2xl">
-                            <div class="absolute bottom-10 right-10 flex flex-col items-center">
-                                <span class="text-red-600 font-black text-2xl md:text-4xl">$349</span>
-                                <a href="#products" class="bg-[#E53935] text-white px-5 py-1.5 rounded-full text-xs font-bold mt-1 shadow-lg hover:bg-red-700 transition">Shop Now</a>
+                            <div class="bg-white h-[380px] overflow-y-auto custom-scrollbar">
+                                {v_menu_items}
+                                <a href="#products" class="block px-5 py-3 text-sm font-bold text-[#f56437] hover:bg-gray-50 transition text-center border-t border-gray-100">View All Categories</a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Banner 7: RUNNING SNEAKERS (Reference 2) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-teal-200 to-emerald-300" aria-hidden="true">
-                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
-                            <div class="flex gap-4 text-[8px] md:text-[10px] font-bold text-teal-800 uppercase tracking-widest mb-6">
-                                <span>Men</span><span>Women</span><span>Kids</span>
-                            </div>
-                            <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter drop-shadow-md">Running Sneakers</h2>
-                            <div class="h-1 w-12 bg-white my-3"></div>
-                            <a href="#products" class="mt-2 bg-gray-900 text-white px-6 py-2 text-xs font-bold hover:bg-black transition shadow-xl">ADD TO CART</a>
-                        </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <div class="absolute w-48 h-48 md:w-72 md:h-72 bg-white rounded-full shadow-2xl opacity-60"></div>
-                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Sneaker" class="w-[80%] md:w-[70%] object-contain relative z-20 transform -rotate-12 hover:-rotate-6 hover:scale-110 transition-all duration-500 mix-blend-multiply rounded-full border border-gray-100 p-2">
-                        </div>
-                    </div>
-
-                    <!-- Banner 8: 2022 LIGE MENS WATCHES (Reference 2) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-[#2D2D2D]" aria-hidden="true">
-                        <div class="absolute bottom-0 left-0 w-full h-[40%] bg-[#0078D7]" style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);"></div>
-                        <div class="w-3/5 h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <h2 class="text-xl md:text-3xl font-medium text-white tracking-widest">2022 LIGE MENS WATCHES</h2>
-                            <h3 class="text-2xl md:text-4xl font-black text-[#00AEEF] uppercase mt-1">TOP BRAND</h3>
-                            <a href="#products" class="mt-6 bg-[#00AEEF] text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-400 transition shadow-lg">BUY NOW</a>
-                        </div>
-                        <div class="w-2/5 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-12 hover:rotate-0 transition-transform duration-500">
-                            <div class="absolute right-4 top-1/4 bg-[#00AEEF] text-white text-[10px] md:text-xs font-black px-2 py-1 rounded shadow-lg transform rotate-12">$80.97</div>
                         </div>
                     </div>
                     
+                    <!-- Right: Main Slider (V3 Reference Banners) -->
+                    <div class="w-full lg:w-3/4">
+                        <div id="heroCarousel" class="relative w-full h-[250px] md:h-[435px] overflow-hidden rounded shadow-sm">
+                            <div class="carousel-track h-full">
+                            
+                                <!-- Banner 1: MACBOOK M2 PRO -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-50">
+                                    <div class="absolute right-0 top-0 w-3/5 h-full bg-gradient-to-bl from-green-200 via-blue-100 to-transparent" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+                                    <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-12 z-10">
+                                        <div class="bg-red-600 text-white px-3 py-1 text-[10px] md:text-xs font-bold transform -skew-x-12 inline-block mb-3 shadow-md">SPECIAL OFFER</div>
+                                        <h2 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">MACBOOK M2 PRO</h2>
+                                        <p class="text-gray-600 text-xs md:text-sm mt-2 max-w-xs leading-tight">Price comparison, one of them crossed out.</p>
+                                        <a href="#products" class="mt-5 bg-gray-800 text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-black transition shadow-lg">SHOP NOW</a>
+                                    </div>
+                                    <div class="w-1/2 h-full relative z-10 flex justify-center items-center p-4">
+                                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Macbook" class="w-full object-contain mix-blend-multiply drop-shadow-2xl">
+                                    </div>
+                                </div>
+                                
+                                <!-- Banner 2: SONY h.ear -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex">
+                                    <div class="w-[40%] bg-[#E53935] h-full flex flex-col justify-center pl-8 md:pl-10 text-white relative z-10">
+                                        <div class="absolute top-4 left-8 font-black tracking-widest text-lg md:text-xl">SONY</div>
+                                        <h2 class="text-4xl md:text-6xl font-bold leading-none tracking-tighter">h.ear</h2>
+                                        <h3 class="text-[10px] md:text-sm font-bold tracking-widest mt-2 uppercase">ON WIRELESS NC</h3>
+                                        <p class="text-[8px] md:text-[10px] mt-2 text-red-100 max-w-[150px] leading-tight border-t border-red-400 pt-2">High-Resolution Audio wireless headphones with NFC touch.</p>
+                                    </div>
+                                    <div class="w-[60%] bg-gray-50 h-full relative flex items-center justify-center">
+                                        <div class="absolute w-40 h-40 md:w-64 md:h-64 bg-gray-200 rounded-full mix-blend-multiply opacity-70"></div>
+                                        <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=500&q=80" alt="Headphones" class="w-[70%] object-contain relative z-10 drop-shadow-2xl">
+                                        <div class="absolute bottom-6 right-6 flex flex-col items-center bg-white p-2 rounded shadow-lg transform rotate-3">
+                                            <span class="text-red-600 font-black text-xl md:text-2xl leading-none">$349</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Banner 3: DAILY DOSE (Supplements) -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex bg-[#1E1E1E]">
+                                    <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-12 z-20">
+                                        <span class="text-white text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase mb-1">Welcome To</span>
+                                        <h2 class="text-4xl md:text-6xl font-black text-green-500 italic uppercase leading-none transform -skew-x-12 tracking-tighter">Daily Dose</h2>
+                                        <h3 class="text-white text-[9px] md:text-[11px] font-bold italic tracking-wider mt-2 bg-green-600 px-2 py-0.5">OUR MISSION - WELLNESS FOR LIFE!</h3>
+                                        <a href="#products" class="mt-5 bg-green-500 text-white px-6 py-2.5 text-xs font-bold hover:bg-green-400 transition">SHOP NOW</a>
+                                    </div>
+                                    <div class="w-1/2 h-full relative z-10 flex justify-center items-center bg-black/50">
+                                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity">
+                                        <img src="https://images.unsplash.com/photo-1584308666744-24d5e4a5bbf1?auto=format&fit=crop&w=300&q=80" class="relative z-20 w-32 md:w-48 h-32 md:h-48 object-cover rounded shadow-2xl border-2 border-green-500/50">
+                                    </div>
+                                </div>
+                                
+                                <!-- Banner 4: EARTH LOVES YOU (Salad) -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-yellow-400 to-yellow-500">
+                                    <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-12 z-10">
+                                        <h2 class="text-3xl md:text-5xl font-black text-green-800 uppercase leading-none transform scale-y-110">Earth Loves You<br>Love It Back</h2>
+                                        <p class="text-green-900 text-[10px] md:text-xs mt-3 font-bold max-w-[220px] leading-tight">Don't let your waste last, choose disposable fast.</p>
+                                        <a href="#products" class="mt-5 bg-green-600 text-white px-6 py-2.5 rounded-full text-xs font-bold shadow-lg hover:bg-green-700 transition border-b-4 border-green-800">SHOP NOW</a>
+                                    </div>
+                                    <div class="w-[45%] h-full relative z-10 flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&w=400&q=80')] bg-cover bg-center">
+                                        <div class="absolute inset-0 bg-yellow-500/30"></div>
+                                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="Fresh Salad" class="w-32 md:w-56 h-32 md:h-56 object-cover rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-[6px] border-white relative z-20">
+                                    </div>
+                                </div>
+
+                                <!-- Banner 5: RUNNING SNEAKERS -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-emerald-100 to-teal-300">
+                                    <div class="absolute left-10 top-4 flex gap-4 text-[8px] md:text-[9px] font-bold text-teal-900 uppercase tracking-[0.2em] opacity-60">
+                                        <span>Men</span><span>Women</span><span>Kids</span><span>Sports</span>
+                                    </div>
+                                    <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-12 z-10">
+                                        <i class="fas fa-stopwatch text-teal-700 mb-2"></i>
+                                        <h2 class="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter drop-shadow-md transform scale-y-110">Running<br>Sneakers</h2>
+                                        <a href="#products" class="mt-4 bg-gray-900 text-white px-6 py-2 text-[10px] font-bold hover:bg-black transition shadow-xl border border-gray-700">ADD TO CART</a>
+                                    </div>
+                                    <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                                        <div class="absolute w-40 h-40 md:w-64 md:h-64 bg-gray-900 rounded-full shadow-2xl"></div>
+                                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Sneaker" class="w-[90%] md:w-[85%] object-contain relative z-20 transform -rotate-12 drop-shadow-2xl">
+                                    </div>
+                                </div>
+
+                                <!-- Banner 6: LIGE MENS WATCHES -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex bg-[#333333]">
+                                    <div class="absolute bottom-0 left-0 w-full h-[45%] bg-[#00AEEF]" style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);"></div>
+                                    <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-12 relative z-10">
+                                        <h2 class="text-lg md:text-2xl font-light text-white tracking-widest">2022 LIGE MENS WATCHES</h2>
+                                        <h3 class="text-2xl md:text-4xl font-black text-[#00AEEF] uppercase mt-1 drop-shadow-md">TOP BRAND</h3>
+                                        <a href="#products" class="mt-6 bg-[#00AEEF] text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-blue-400 transition shadow-[0_5px_15px_rgba(0,174,239,0.4)]">BUY NOW</a>
+                                    </div>
+                                    <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
+                                        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+                                        <div class="absolute right-2 top-1/4 bg-[#00AEEF] text-white text-[10px] md:text-xs font-black px-2 py-1 shadow-lg transform rotate-12">$80.97<br><span class="text-[6px] font-normal">PRICE</span></div>
+                                    </div>
+                                </div>
+
+                                <!-- Banner 7: NEW COLLECTIONS Fanny Pack -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-[#EAEAEA] to-[#D5E1E8]">
+                                    <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-12 z-10">
+                                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#2C3E50] leading-none">NEW<br>COLLECTIONS</h2>
+                                        <p class="text-gray-600 text-[9px] md:text-[11px] font-bold tracking-widest mt-2 uppercase">FANNY PACK DESIGNS!</p>
+                                        <a href="#products" class="mt-5 bg-yellow-400 text-gray-900 px-6 py-2 rounded-full text-xs font-black shadow-md hover:bg-yellow-500 transition">SHOP NOW</a>
+                                    </div>
+                                    <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                                        <div class="absolute w-36 h-36 md:w-56 md:h-56 bg-yellow-400 rounded-full -z-10 transform translate-x-8"></div>
+                                        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=500&q=80" alt="Fanny Pack" class="w-[85%] md:w-[75%] object-contain drop-shadow-2xl">
+                                    </div>
+                                </div>
+
+                                <!-- Banner 8: SHAVING FOAM -->
+                                <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-[#00AEEF] to-[#0056B3]">
+                                    <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
+                                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550246140-5119ae4790b8?auto=format&fit=crop&w=400&q=80')] bg-cover mix-blend-overlay opacity-30"></div>
+                                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=400&q=80" alt="Shaving Foam" class="w-24 md:w-36 object-cover rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform rotate-12 border border-white/30 relative z-20">
+                                    </div>
+                                    <div class="w-[55%] h-full flex flex-col justify-center items-center z-10 text-white text-center pr-4">
+                                        <span class="text-[7px] md:text-[9px] font-bold tracking-[0.2em] uppercase mb-1 opacity-80">BRAND NAME</span>
+                                        <h2 class="text-2xl md:text-4xl font-black uppercase leading-none tracking-tight text-white drop-shadow-md">SHAVING<br>FOAM</h2>
+                                        <div class="h-[1px] w-12 bg-white/50 my-2"></div>
+                                        <p class="text-[7px] md:text-[10px] text-blue-100 uppercase tracking-widest">LOREM IPSUM</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Arrows -->
+                            <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 text-gray-800 w-8 h-8 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow"><i class="fas fa-chevron-left text-xs"></i></button>
+                            <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 text-gray-800 w-8 h-8 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow"><i class="fas fa-chevron-right text-xs"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-                <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
             </div>
-            
+
+            <!-- TopDeals V3: Service Highlights -->
+            <div class="container mx-auto px-4 mt-8 mb-10">
+                <div class="bg-white rounded shadow-sm border border-gray-100 p-6 flex flex-wrap justify-between items-center gap-4">
+                    <div class="flex items-center gap-4 w-full md:w-auto">
+                        <i class="fas fa-paper-plane text-3xl text-gray-300"></i>
+                        <div><h4 class="font-bold text-sm text-gray-800 uppercase">FREE SHIPPING</h4><p class="text-xs text-gray-500">Free delivery over Rs 5000</p></div>
+                    </div>
+                    <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+                    <div class="flex items-center gap-4 w-full md:w-auto">
+                        <i class="fas fa-sync-alt text-3xl text-gray-300"></i>
+                        <div><h4 class="font-bold text-sm text-gray-800 uppercase">FREE RETURN</h4><p class="text-xs text-gray-500">30 days money back guarantee</p></div>
+                    </div>
+                    <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+                    <div class="flex items-center gap-4 w-full md:w-auto">
+                        <i class="fas fa-life-ring text-3xl text-gray-300"></i>
+                        <div><h4 class="font-bold text-sm text-gray-800 uppercase">SUPPORT 24/7</h4><p class="text-xs text-gray-500">Online support 24 hours</p></div>
+                    </div>
+                    <div class="hidden md:block w-px h-10 bg-gray-200"></div>
+                    <div class="flex items-center gap-4 w-full md:w-auto">
+                        <i class="fas fa-lock text-3xl text-gray-300"></i>
+                        <div><h4 class="font-bold text-sm text-gray-800 uppercase">SECURE PAYMENT</h4><p class="text-xs text-gray-500">100% secure payment</p></div>
+                    </div>
+                </div>
+            </div>
+
             <script>
                 let slideIndex = 0;
                 const slides = document.querySelectorAll('.carousel-slide');
-                const dotsContainer = document.getElementById('carouselDots');
-                
-                slides.forEach((_, i) => {
-                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition focus:outline-none shadow-sm" aria-label="Go to slide ${i + 1}"></button>`;
-                });
-                
                 function updateCarousel() {
                     document.querySelector('.carousel-track').style.transform = `translateX(-${slideIndex * 100}%)`;
-                    slides.forEach((slide, i) => {
-                        slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true');
-                    });
-                    document.querySelectorAll('#carouselDots button').forEach((dot, i) => {
-                        dot.className = `w-3 h-3 rounded-full transition shadow-sm ${i === slideIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white'}`;
-                    });
                 }
-                
                 function nextSlide() { slideIndex = (slideIndex + 1) % slides.length; updateCarousel(); }
                 function prevSlide() { slideIndex = (slideIndex - 1 + slides.length) % slides.length; updateCarousel(); }
-                function goToSlide(i) { slideIndex = i; updateCarousel(); }
-                
-                updateCarousel();
-                let slideTimer = setInterval(nextSlide, 4500);
-                
-                document.getElementById('heroCarousel').addEventListener('mouseenter', () => clearInterval(slideTimer));
-                document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 4500));
+                setInterval(nextSlide, 4000);
             </script>
-            """
-
-        home_html += """
-            <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
-                <div class="container mx-auto px-4">
-                    <div class="grid grid-cols-4 md:grid-cols-8 gap-4 text-center">
-            """
-        
-        used_icons = set()
-        unique_top_cats = []
-        for cat in categories_list:
-            icon = get_category_icon(cat)
-            if icon not in used_icons:
-                used_icons.add(icon)
-                unique_top_cats.append(cat)
-            if len(unique_top_cats) >= 8:
-                break
-                
-        if len(unique_top_cats) < 8:
-            for cat in categories_list:
-                if cat not in unique_top_cats:
-                    unique_top_cats.append(cat)
-                if len(unique_top_cats) >= 8:
-                    break
-
-        for cat in unique_top_cats:
-            c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
-            home_html += f"""
-                    <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group">
-                        <div class="w-16 h-16 rounded-full bg-gray-50 dark:bg-gray-700 group-hover:bg-[#E53935] flex items-center justify-center transition-all group-hover:scale-105 shadow-sm border border-gray-100 dark:border-gray-600">
-                            <i class="fas {get_category_icon(cat)} text-xl text-[#E53935] group-hover:text-white transition" aria-hidden="true"></i>
-                        </div>
-                        <span class="text-[10px] md:text-xs font-bold text-gray-700 dark:text-gray-200 group-hover:text-[#E53935] transition line-clamp-1">{cat}</span>
-                    </a>
-                """
-        home_html += "</div></div></div>"
-
-        home_html += """
-            <div class="bg-[#E53935] text-white py-6 mt-6">
-                <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <div class="flex items-center gap-3">
-                        <i class="fas fa-bolt text-yellow-400 text-3xl animate-pulse" aria-hidden="true"></i>
-                        <div>
-                            <h2 class="text-2xl font-extrabold">Flash Sale</h2>
-                            <p class="text-gray-200 text-sm">Hurry up! Offer ends soon.</p>
-                        </div>
-                    </div>
-                    <div id="countdown" class="flex gap-3 text-center" aria-label="Flash Sale Countdown Timer">
-                        <div class="bg-white/10 px-4 py-2 rounded-lg"><span id="hours" class="text-2xl font-black text-white">00</span><br><span class="text-xs text-gray-200">Hrs</span></div>
-                        <div class="bg-white/10 px-4 py-2 rounded-lg"><span id="minutes" class="text-2xl font-black text-white">00</span><br><span class="text-xs text-gray-200">Min</span></div>
-                        <div class="bg-white/10 px-4 py-2 rounded-lg"><span id="seconds" class="text-2xl font-black text-white">00</span><br><span class="text-xs text-gray-200">Sec</span></div>
-                    </div>
-                </div>
-            </div>
-            <script>
-                let countDownDate = new Date().getTime() + (12 * 60 * 60 * 1000);
-                let x = setInterval(function() {
-                    let now = new Date().getTime();
-                    let distance = countDownDate - now;
-                    let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    let s = Math.floor((distance % (1000 * 60)) / 1000);
-                    
-                    document.getElementById("hours").innerHTML = h < 10 ? "0" + h : h;
-                    document.getElementById("minutes").innerHTML = m < 10 ? "0" + m : m;
-                    document.getElementById("seconds").innerHTML = s < 10 ? "0" + s : s;
-                    
-                    if (distance < 0) {
-                        clearInterval(x);
-                        countDownDate = new Date().getTime() + (12 * 60 * 60 * 1000);
-                    }
-                }, 1000);
-            </script>
-            """
-
-        home_html += """
-            <div class="container mx-auto px-4 py-6">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-truck-fast text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Fast Delivery</h3><p class="text-xs text-gray-500 dark:text-gray-400">All over Pakistan</p></div>
-                    </div>
-                    <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-money-bill-wave text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Cash on Delivery</h3><p class="text-xs text-gray-500 dark:text-gray-400">Pay at your doorstep</p></div>
-                    </div>
-                    <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-shield-halved text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Secure Shopping</h3><p class="text-xs text-gray-500 dark:text-gray-400">100% Protected</p></div>
-                    </div>
-                    <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
-                        <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-undo text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Easy Returns</h3><p class="text-xs text-gray-500 dark:text-gray-400">7 Days Return Policy</p></div>
-                    </div>
-                </div>
-            </div>
             """
 
         home_html += f"""
-        <div class='container mx-auto px-4 py-4' id="products">
-            <div id="searchResultsSection" class="hidden mb-6">
-                <h2 id="searchResultsHeading" class="text-2xl font-extrabold text-[#E53935] dark:text-white mb-2 border-b pb-2"></h2>
-                <p id="searchResultsCount" class="text-gray-600 text-sm"></p>
+        <div class='container mx-auto px-4 py-4 bg-white rounded shadow-sm border border-gray-100' id="products">
+            <div id="searchResultsSection" class="hidden mb-6 p-4">
+                <h2 id="searchResultsHeading" class="text-xl font-bold text-gray-900 mb-2 uppercase border-l-4 border-[#f56437] pl-3"></h2>
+                <p id="searchResultsCount" class="text-gray-500 text-sm"></p>
             </div>
             <div id="defaultContent">
         """
         
-        start_c = (h_page - 1) * cats_per_home_page
-        end_c = start_c + cats_per_home_page
+        start_c = (h_page - 1) * 6
+        end_c = start_c + 6
         page_cats = all_categories_list[start_c:end_c]
         
         for cat_name, prods in page_cats:
             cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
             
             home_html += f"""
-            <div class="mb-14 category-section reveal">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white border-l-4 border-[#E53935] pl-4">{cat_name}</h2>
-                    <a href="/category/{cat_slug}.html" class="text-[#E53935] dark:text-white font-bold text-sm bg-gray-50 dark:bg-gray-800 px-5 py-2.5 rounded-full hover:bg-[#E53935] hover:text-white transition-all shadow-sm">View All <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i></a>
+            <div class="mb-10 category-section">
+                <!-- TopDeals V3 Style Category Header -->
+                <div class="flex justify-between items-center mb-6 border-b-2 border-gray-100 pb-2">
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800 uppercase relative">
+                        {cat_name}
+                        <span class="absolute -bottom-[3px] left-0 w-1/2 h-[2px] bg-[#f56437]"></span>
+                    </h2>
+                    <a href="/category/{cat_slug}.html" class="text-xs font-bold text-gray-500 hover:text-[#f56437] uppercase tracking-wide transition">View All <i class="fas fa-angle-double-right"></i></a>
                 </div>
-                <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
+                
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-0 border-t border-l border-gray-200">
             """
             
-            # 🌟 GRID ISSUE FULLY FIXED: EXACT 6 PRODUCTS LOOPING LOGIC 🌟
+            # GRID FIX: Exact 6 Products with continuous inner borders to look like a solid grid
             display_prods = prods[:6]
             if len(prods) > 0:
-                while len(display_prods) < 6:
-                    display_prods.append(prods[len(display_prods) % len(prods)])
+                while len(display_prods) < 6: display_prods.append(prods[len(display_prods) % len(prods)])
                     
             for idx, prod in enumerate(display_prods):
-                is_lazy = True
-                if h_page == 1 and idx < 3: 
-                    is_lazy = False
-                home_html += generate_product_card(prod, lazy=is_lazy)
+                is_lazy = True if h_page != 1 or idx >= 3 else False
+                
+                # Inline style adjustment for the grid to have shared borders (TopDeals V3 style)
+                card_html = generate_product_card(prod, lazy=is_lazy)
+                # Replacing standard product card classes with border logic for grid
+                card_html = card_html.replace('border border-gray-200 dark:border-gray-700 rounded-lg', 'border-b border-r border-gray-200 rounded-none')
+                home_html += card_html
                 
             home_html += "</div></div>"
         
         home_html += "</div></div>"
-        
         home_html += generate_pagination_html(h_page, total_home_pages, "index")
         
         if h_page == 1:
-            home_html += """
-            <div class="container mx-auto px-4 py-8 border-t border-gray-200 dark:border-gray-700">
-                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Shop by City in Pakistan</h2>
-                <div class="flex flex-wrap gap-3">
-            """
-            for city in cities:
-                home_html += f'<a href="/city/{re.sub(r"[^a-z0-9]+", "-", city.lower()).strip("-")}.html" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-5 py-2.5 rounded-full text-sm font-bold text-gray-700 dark:text-gray-300 hover:bg-[#E53935] hover:text-white transition shadow-sm">{city}</a>'
-            home_html += "</div></div>"
-
-            home_html += """
-            <div id="recentlyViewedSection" class="hidden container mx-auto px-4 py-8 border-t border-gray-200 dark:border-gray-700">
-                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Recently Viewed</h2>
-                <div id="recentlyViewedGrid" class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4"></div>
-            </div>
-            """
-            
             home_script = """
             <script>
                 function performSearch(query) {
@@ -2213,22 +1754,17 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                     if (!query) {
                         document.getElementById('defaultContent').classList.remove('hidden');
                         document.getElementById('searchResultsSection').classList.add('hidden');
-                        document.getElementById('recentlyViewedSection').classList.remove('hidden');
                         return;
                     }
                     
-                    let results = searchIndex.filter(p => 
-                        p.name.toLowerCase().includes(query) || 
-                        p.category.toLowerCase().includes(query)
-                    );
+                    let results = searchIndex.filter(p => p.name.toLowerCase().includes(query) || p.category.toLowerCase().includes(query));
                     
                     document.getElementById('defaultContent').classList.add('hidden');
-                    document.getElementById('recentlyViewedSection').classList.add('hidden');
                     document.getElementById('searchResultsSection').classList.remove('hidden');
                     document.getElementById('searchResultsHeading').innerText = 'Search Results for "' + query + '"';
                     document.getElementById('searchResultsCount').innerText = results.length + ' products found';
                     
-                    let html = '<div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 mt-6">';
+                    let html = '<div class="grid grid-cols-2 md:grid-cols-6 gap-0 border-t border-l border-gray-200 mt-4">';
                     results.forEach(p => {
                         let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
                         if (isNaN(discount)) discount = 0;
@@ -2236,36 +1772,22 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         let htmlSafeName = p.name.replace(/"/g, '&quot;');
                         let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
                         
-                        html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
-                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                            <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
-                            </div>
-                            <div class="p-2 flex flex-col flex-grow">
-                                <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
-                                <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white leading-tight mb-1 line-clamp-2">${htmlSafeName}</h3>
-                                <div class="mt-auto">
-                                    <div class="flex items-center gap-1 mb-1">
-                                        <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
-                                    </div>
-                                    <button aria-label="Add Searched Item to Cart" onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
+                        html += `<div class="product-card bg-white p-3 border-b border-r border-gray-200 relative group cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
+                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#f56437] text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wide">-${discount}%</div>` : ''}
+                            <div class="h-32 bg-white flex justify-center items-center mb-2"><img src="${p.image}" class="h-full object-contain" loading="lazy"></div>
+                            <span class="text-[9px] text-gray-400 uppercase tracking-widest line-clamp-1">${p.category}</span>
+                            <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mt-1 h-8 group-hover:text-[#f56437]">${htmlSafeName}</h3>
+                            <div class="mt-2"><span class="text-sm font-black text-[#f56437]">Rs ${p.final_price}</span></div>
                         </div>`;
                     });
                     html += '</div>';
                     
-                    if (results.length === 0) {
-                        html = '<div class="text-center py-16 text-gray-600"><i class="fas fa-search text-6xl mb-4 opacity-30" aria-hidden="true"></i><p class="text-lg font-bold">No products found</p><p class="text-sm mt-2">Try different keywords</p></div>';
-                    }
+                    if (results.length === 0) html = '<div class="text-center py-16 text-gray-500"><i class="fas fa-search text-4xl mb-3 opacity-30"></i><p>No products found</p></div>';
                     
                     let resultsDiv = document.createElement('div');
                     resultsDiv.innerHTML = html;
                     let srSection = document.getElementById('searchResultsSection');
-                    let elements = srSection.children;
-                    for(let i = elements.length - 1; i >= 2; i--) {
-                        srSection.removeChild(elements[i]);
-                    }
+                    while(srSection.children.length > 2) srSection.removeChild(srSection.lastChild);
                     srSection.appendChild(resultsDiv);
                 }
                 
@@ -2274,37 +1796,8 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 if (searchQuery) {
                     document.getElementById('searchInput').value = searchQuery;
                     loadSearchData();
-                    setTimeout(() => performSearch(searchQuery), 1000);
+                    setTimeout(() => performSearch(searchQuery), 800);
                 }
-                
-                function renderRecentlyViewed() {
-                    let recent = JSON.parse(localStorage.getItem('asm_recent')) || [];
-                    recent = recent.slice(0, 6);
-                    if (recent.length === 0) return;
-                    
-                    document.getElementById('recentlyViewedSection').classList.remove('hidden');
-                    let grid = document.getElementById('recentlyViewedGrid');
-                    grid.innerHTML = recent.map(p => {
-                        let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
-                        if (isNaN(discount)) discount = 0;
-                        
-                        let htmlSafeName = p.name.replace(/"/g, '&quot;');
-                        
-                        return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
-                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                            <div class="h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
-                            </div>
-                            <div class="p-2 flex flex-col flex-grow">
-                                <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-1">${htmlSafeName}</h3>
-                                <div class="mt-auto">
-                                    <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
-                                </div>
-                            </div>
-                        </div>`;
-                    }).join('');
-                }
-                window.addEventListener('load', renderRecentlyViewed);
             </script>
             """
             home_html += home_script
@@ -2316,425 +1809,172 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             f.write(minify_html(home_html))
 
     # ================= CHECKOUT PAGE =================
-    pak_tehsils = [
-        "Karachi", "Lahore", "Faisalabad", "Rawalpindi", "Multan", "Hyderabad", "Gujranwala", "Peshawar", "Quetta", "Islamabad",
-        "Bahawalpur", "Sargodha", "Sialkot", "Sukkur", "Larkana", "Sheikhupura", "Bhimber", "Mirpur", "Muzaffarabad", "Kotli",
-        "Bannu", "Charsadda", "Mardan", "Nowshera", "Swat", "Dir", "Chitral", "Abbottabad", "Mansehra", "Haripur",
-        "Kohat", "Dera Ismail Khan", "Tank", "Paharpur", "Lakki Marwat", "Karak", "Hangu", "Kurram", "Orakzai", "Khyber",
-        "Mohmand", "Bajaur", "Waziristan", "Dera Ghazi Khan", "Rajanpur", "Layyah", "Muzaffargarh", "Bhakkar", "Khushab", "Jhelum",
-        "Chakwal", "Attock", "Talagang", "Pind Dadan Khan", "Murree", "Kallar Syedan", "Gujar Khan", "Kahuta", "Kotli Sattian", "Taxila",
-        "Wah Cantt", "Hasan Abdal", "Fateh Jang", "Jand", "Pindi Gheb", "Dina", "Sohawa", "Dudial", "Mangla", "Darya Khan",
-        "Mianwali", "Isakhel", "Piplan", "Kamar Mushani", "Domel", "Akora Khattak", "Shabqadar", "Tangi", "Risalpur", "Rashakai",
-        "Takht Bhai", "Katlang", "Rustam", "Garhi Kapura", "Mahaban", "Topi", "Swabi", "Lahor", "Razar", "Chota Lahore",
-        "Daggar", "Gadezai", "Dhok", "Nizampur", "Utla", "Shangla", "Alpuri", "Chakar", "Besham", "Puran",
-        "Makhuzai", "Achhrai", "Chail", "Barkana", "Kuzkana", "Buner", "Gagra", "Khwazakhela", "Madyan", "Bahrain",
-        "Kalam", "Matta", "Behrain", "Balakot", "Naran", "Kaghan", "Shinkiari", "Oghi", "Darband", "Baffa",
-        "Dhodial", "Battagram", "Allai", "Chattar", "Alo", "Banna", "Rashang", "Pattan", "Kolai", "Palas",
-        "Jalkot", "Kandia", "Dasu", "Komila", "Khalo", "Harban", "Seo", "Gowari", "Bhobat", "Chilas",
-        "Darel", "Tangir", "Gilgit", "Skardu", "Hunza", "Nagar", "Ghizer", "Yasin", "Gupis", "Puniyal",
-        "Ishkoman", "Yarkhun", "Mastuj", "Laspur", "Mulkhow", "Torkhow", "Khot", "Banda Daud Shah", "Takht-e-Nasrati", "Narri",
-        "Tall", "Thall", "Doaba", "Muhammad Khel", "Muhammadzai", "Sandi", "Torghar", "Makhmour", "Bajaur", "Nawagai",
-        "Mamund", "Salarzai", "Chamarkand", "Utmankhel", "Khar", "Yousaf Khel", "Chakdara", "Timergara", "Wari", "Barawal",
-        "Shahi", "Kalkot", "Sheringal", "Patrak", "Khal Qila", "Quetta", "Chaman", "Pishin", "Qila Abdullah", "Zhob",
-        "Musakhel", "Killa Saifullah", "Barkhan", "Sherani", "Loralai", "Duki", "Kingri", "Kohlu", "Mawand", "Bhambore",
-        "Sibi", "Lehri", "Dhadar", "Bhag", "Tambu", "Naseerabad", "Chattar", "Tamboo", "Usta Muhammad", "Jafarabad",
-        "Sohbatpur", "Jhal Magsi", "Gandakha", "Kachi", "Machh", "Sanni", "Shoran", "Khuzdar", "Wadh", "Nal",
-        "Surab", "Kalat", "Mangocher", "Mastung", "Kharan", "Nushki", "Washuk", "Mashkel", "Dalbandin", "Taufiq",
-        "Nok Kundi", "Chagai", "Turbat", "Buleda", "Dasht", "Mand", "Tump", "Kolwah", "Balnigore", "Kech",
-        "Gwadar", "Jiwani", "Ormara", "Pasni", "Pishukan", "Surbandar", "Panjgur", "Paroom", "Gichk", "Rakhshan",
-        "Zehri", "Saruna", "Karkh", "Kasur", "Okara", "Nankana Sahib", "Toba Tek Singh", "Jhang", "Chiniot", "Bhalwal",
-        "Kot Momin", "Bhera", "Shahpur", "Sahiwal", "Sillanwali", "Noorpur Thal", "Kot Addu", "Alipur", "Jatoi", "Chaubara",
-        "Karor Lal Esan", "Mankera", "Taunsa Sharif", "Rojsan", "Jampur", "Rahim Yar Khan", "Sadiqabad", "Liaquatpur", "Khanpur",
-        "Bahawalnagar", "Haroonabad", "Chishtian", "Fort Abbas", "Hasilpur", "Khairpur Tamewali", "Yazman", "Ahmedpur East", "Shujabad", "Jalalpur Pirwala",
-        "Vehari", "Burewala", "Mailsi", "Pakpattan", "Arifwala", "Chichawatni", "Khanewal", "Mian Channu", "Kabirwala", "Jahanian",
-        "Lodhran", "Kahror Pakka", "Dunyapur", "Gujrat", "Kharian", "Sarai Alamgir", "Rawalakot", "Bagh", "Neelum", "Athmuqam",
-        "Hattian Bala", "Kel", "Taobat", "Sharda", "Abbaspur", "Hajira", "Forward Kahuta", "Tatrinot", "Mang", "Tolipir",
-        "Nakyal", "Sehnsa", "Dadyal", "Chakswari", "Other"
-    ]
-    pak_tehsils = sorted(list(set(pak_tehsils)))
+    pak_tehsils = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Multan", "Faisalabad", "Peshawar", "Quetta", "Sialkot", "Gujranwala", "Other"]
     tehsil_options = "".join([f"<option value='{t}'>{t}</option>" for t in pak_tehsils])
-    delivery_date = (datetime.now() + timedelta(days=3)).strftime("%A, %b %d")
     
-    checkout_html = get_html_header("Secure Checkout", categories_list, "Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO.")
+    checkout_html = get_html_header("Secure Checkout", categories_list)
     checkout_html += f"""
-    <div class="container mx-auto px-4 py-12 max-w-6xl">
-        <h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-lock text-[#E53935]" aria-hidden="true"></i> Secure Checkout</h1>
-        
-        <div class="flex items-center justify-center mb-10">
-            <div class="flex items-center text-[#E53935] font-bold">
-                <div class="w-10 h-10 bg-[#E53935] text-white rounded-full flex items-center justify-center font-black">1</div>
-                <span class="ml-2 hidden md:inline">Cart</span>
-            </div>
-            <div class="w-16 md:w-32 h-1 bg-[#E53935] mx-2"></div>
-            <div class="flex items-center text-[#E53935] font-bold">
-                <div class="w-10 h-10 bg-[#E53935] text-white rounded-full flex items-center justify-center font-black">2</div>
-                <span class="ml-2 hidden md:inline">Details</span>
-            </div>
-            <div class="w-16 md:w-32 h-1 bg-gray-200 mx-2"></div>
-            <div class="flex items-center text-gray-500 font-bold">
-                <div class="w-10 h-10 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-black">3</div>
-                <span class="ml-2 hidden md:inline">Confirm</span>
-            </div>
+    <div class="bg-gray-100 py-6 mb-8 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-black text-gray-900 uppercase">Checkout</h1>
         </div>
-
+    </div>
+    
+    <div class="container mx-auto px-4 pb-12 max-w-6xl">
         <div class="flex flex-col lg:flex-row gap-8">
             <div class="lg:w-1/2">
-                <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 border border-gray-200 dark:border-gray-700 mb-6">
-                    <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-4 border-b pb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-[#E53935]" aria-hidden="true"></i> Your Items</h2>
+                <div class="bg-white rounded border border-gray-200 p-6 mb-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4 border-b pb-2 uppercase">Order Summary</h2>
                     <div id="cartItemsContainer" class="space-y-4 max-h-[400px] overflow-y-auto pr-2"></div>
-                </div>
-                
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700">
-                    <h3 class="font-bold text-gray-900 dark:text-white mb-3 text-sm">Why Shop With Us?</h3>
-                    <div class="grid grid-cols-2 gap-3 text-xs text-gray-800 dark:text-gray-300">
-                        <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-[#E53935]" aria-hidden="true"></i> 100% Secure Checkout</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-truck text-[#E53935]" aria-hidden="true"></i> Fast Nationwide Delivery</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-undo text-[#E53935]" aria-hidden="true"></i> 7-Day Return Policy</div>
-                        <div class="flex items-center gap-2"><i class="fas fa-certificate text-[#E53935]" aria-hidden="true"></i> 100% Genuine Products</div>
-                    </div>
                 </div>
             </div>
 
             <div class="lg:w-1/2">
-                <div class="bg-[#E53935] p-6 rounded-t-3xl text-white relative">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-white rounded-t-3xl"></div>
-                    <h1 class="text-2xl font-extrabold flex items-center gap-2"><i class="fas fa-map-marker-alt text-white" aria-hidden="true"></i> Shipping Details</h1>
-                    <p class="text-gray-200 text-sm mt-1"><i class="fas fa-truck" aria-hidden="true"></i> Expected delivery: {delivery_date}</p>
-                </div>
-                
-                <form id="checkoutForm" class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-b-3xl shadow-xl border border-gray-200 dark:border-gray-700 border-t-0 space-y-5">
+                <form id="checkoutForm" class="bg-white p-6 rounded border border-gray-200 shadow-sm space-y-5">
+                    <h2 class="text-lg font-bold text-gray-900 mb-2 border-b pb-2 uppercase">Shipping Address</h2>
                     <input type="hidden" name="_subject" value="🛒 New Order on ASM VEO!">
                     <input type="hidden" name="Product_Ordered" id="productField" value="">
-                    <input type="hidden" name="Order_Total" id="totalField" value="">
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label for="fullName" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Full Name <span class="text-red-600">*</span></label>
-                            <input type="text" id="fullName" name="Full_Name" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="Your Name">
+                            <label class="block text-xs font-bold text-gray-700 mb-1">Full Name *</label>
+                            <input type="text" id="fullName" name="Full_Name" class="w-full border border-gray-300 p-2.5 rounded outline-none focus:border-[#f56437] text-sm" required>
                         </div>
                         <div>
-                            <label for="emailAddr" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Email Address</label>
-                            <input type="email" id="emailAddr" name="Email" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="you@example.com">
+                            <label class="block text-xs font-bold text-gray-700 mb-1">Mobile Number *</label>
+                            <input type="tel" id="phoneNum" name="Phone_Number" class="w-full border border-gray-300 p-2.5 rounded outline-none focus:border-[#f56437] text-sm" required placeholder="03XXXXXXXXX">
                         </div>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label for="phoneNum" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number <span class="text-red-600">*</span></label>
-                            <input type="tel" id="phoneNum" name="Phone_Number" pattern="03[0-9]{{2}}[0-9]{{7}}" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="0300-XXXXXXX">
-                        </div>
-                        <div>
-                            <label for="citySelect" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
-                            <select id="citySelect" name="City" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">City *</label>
+                            <select id="citySelect" name="City" class="w-full border border-gray-300 p-2.5 rounded outline-none focus:border-[#f56437] text-sm bg-white" required>
                                 <option value="" disabled selected>Select City</option>
                                 {tehsil_options}
                             </select>
                         </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">Email</label>
+                            <input type="email" id="emailAddr" name="Email" class="w-full border border-gray-300 p-2.5 rounded outline-none focus:border-[#f56437] text-sm">
+                        </div>
                     </div>
                     
                     <div>
-                        <label for="addressInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label>
-                        <textarea id="addressInput" name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Complete Address *</label>
+                        <textarea id="addressInput" name="Address" rows="2" class="w-full border border-gray-300 p-2.5 rounded outline-none focus:border-[#f56437] text-sm" required></textarea>
                     </div>
 
-                    <div>
-                        <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Payment Method <span class="text-red-600">*</span></label>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <label class="cursor-pointer border-2 border-[#E53935] bg-red-50 dark:bg-red-900/20 p-4 rounded-xl flex items-center gap-3 transition-all" id="labelCOD">
-                                <input type="radio" name="Payment_Method" value="Cash on Delivery" checked class="w-5 h-5 text-[#E53935] focus:ring-[#E53935]" onchange="togglePaymentDetails()">
-                                <span class="font-bold text-gray-900 dark:text-white">Cash on Delivery</span>
-                            </label>
-                            <label class="cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:border-[#E53935] p-4 rounded-xl flex items-center gap-3 transition-all" id="labelAdv">
-                                <input type="radio" name="Payment_Method" value="Advance Payment" class="w-5 h-5 text-[#E53935] focus:ring-[#E53935]" onchange="togglePaymentDetails()">
-                                <div class="flex flex-col">
-                                    <span class="font-bold text-gray-900 dark:text-white leading-tight">Advance Payment</span>
-                                    <span class="text-[10px] font-semibold text-gray-500">Easypaisa / JazzCash</span>
-                                </div>
-                            </label>
-                        </div>
-                        
-                        <!-- Advance Payment Details Box -->
-                        <div id="advancePaymentDetails" class="hidden mt-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-5 reveal active">
-                            <h4 class="font-bold text-blue-800 dark:text-blue-300 mb-3 flex items-center gap-2"><i class="fas fa-university"></i> Send Payment Here:</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 text-sm">
-                                <div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
-                                    <div class="font-black text-green-600 mb-1 flex items-center gap-1"><div class="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center text-white text-[8px]">e</div> Easypaisa</div>
-                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p>
-                                    <p class="font-black text-gray-900 dark:text-white mb-2">Ali Abbas</p>
-                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p>
-                                    <p class="font-black text-gray-900 dark:text-white">03425478683</p>
-                                </div>
-                                <div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
-                                    <div class="font-black text-red-600 mb-1 italic tracking-tighter">jazzCash</div>
-                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p>
-                                    <p class="font-black text-gray-900 dark:text-white mb-2">Aon Abbas</p>
-                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p>
-                                    <p class="font-black text-gray-900 dark:text-white">03085273667</p>
-                                </div>
-                            </div>
-                            <div class="bg-blue-100 dark:bg-blue-900/40 p-3 rounded-lg border border-blue-200 dark:border-blue-800 flex items-start gap-2">
-                                <i class="fas fa-info-circle text-blue-700 dark:text-blue-400 mt-0.5"></i>
-                                <p class="text-xs text-blue-800 dark:text-blue-300 font-bold leading-relaxed">
-                                    <span class="uppercase text-[10px] bg-blue-200 dark:bg-blue-800 px-1 py-0.5 rounded mr-1">Zaroori</span>
-                                    Payment send krny k baad WhatsApp par screenshot lazmi send karein ta k apka order foran process ho saky.
-                                </p>
-                            </div>
-                        </div>
+                    <h2 class="text-lg font-bold text-gray-900 mt-6 mb-2 border-b pb-2 uppercase">Payment Method</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <label class="cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2" id="labelCOD">
+                            <input type="radio" name="Payment_Method" value="Cash on Delivery" checked class="text-[#f56437]" onchange="togglePaymentDetails()">
+                            <span class="text-sm font-bold text-gray-900">COD</span>
+                        </label>
+                        <label class="cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2" id="labelAdv">
+                            <input type="radio" name="Payment_Method" value="Advance" onchange="togglePaymentDetails()">
+                            <span class="text-sm font-bold text-gray-900">Online</span>
+                        </label>
                     </div>
                     
-                    <div>
-                        <label for="orderNotes" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label>
-                        <textarea id="orderNotes" name="Order_Notes" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="Any special instructions..."></textarea>
+                    <div id="advancePaymentDetails" class="hidden bg-gray-50 border border-gray-200 rounded p-4 text-sm mt-3">
+                        <p class="font-bold mb-2">Send payment to:</p>
+                        <p class="text-green-600 font-bold">Easypaisa: 03425478683 (Ali Abbas)</p>
+                        <p class="text-red-600 font-bold">JazzCash: 03085273667 (Aon Abbas)</p>
                     </div>
                     
-                    <div>
-                        <label for="couponCode" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Coupon Code</label>
-                        <div class="flex gap-2">
-                            <input type="text" id="couponCode" placeholder="Enter ASM10 for 10% off (Min Rs 3000)" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none uppercase">
-                            <button type="button" onclick="applyCoupon()" class="bg-gray-900 text-white px-5 rounded-xl font-bold hover:bg-gray-700 transition" aria-label="Apply Coupon">Apply</button>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5 border border-gray-100 dark:border-gray-600 mt-6">
-                        <div class="flex justify-between text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">
-                            <span>Subtotal</span>
-                            <span id="subtotalDisplay">Rs 0</span>
-                        </div>
-                        <div class="flex justify-between text-sm font-bold text-[#E53935] dark:text-white mb-2 hidden" id="discountRow">
-                            <span>Discount (10%)</span>
-                            <span id="discountDisplay">- Rs 0</span>
-                        </div>
-                        <div class="flex justify-between text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">
-                            <span>Delivery Charges</span>
-                            <span id="deliveryDisplay">Rs 250</span>
-                        </div>
-                        <div class="flex justify-between items-center border-t border-gray-200 dark:border-gray-600 pt-3 mt-3">
-                            <span class="font-black text-lg text-gray-900 dark:text-white">Total</span>
-                            <span class="font-black text-2xl text-[#E53935] dark:text-white" id="grandTotalDisplay">Rs 250</span>
-                        </div>
+                    <div class="bg-gray-50 p-4 rounded border border-gray-200 mt-6">
+                        <div class="flex justify-between text-sm font-bold text-gray-600 mb-2"><span>Subtotal</span><span id="subtotalDisplay">Rs 0</span></div>
+                        <div class="flex justify-between text-sm font-bold text-gray-600 mb-3 border-b border-gray-200 pb-3"><span>Delivery</span><span id="deliveryDisplay">Rs 250</span></div>
+                        <div class="flex justify-between text-lg font-black text-gray-900"><span>Total</span><span id="grandTotalDisplay" class="text-[#f56437]">Rs 250</span></div>
                     </div>
 
-                    <button type="submit" id="submitBtn" class="w-full bg-[#E53935] text-white font-black py-4 rounded-xl hover:bg-[#C62828] transition-all shadow-xl text-lg transform hover:-translate-y-1 flex items-center justify-center gap-2">
-                        <i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order
-                    </button>
-                    
-                    <a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20order!" class="w-full bg-green-500 text-white font-black py-4 rounded-xl hover:bg-green-600 transition-all shadow-xl text-lg mt-3 flex items-center justify-center gap-2 transform hover:-translate-y-1">
-                        <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Order via WhatsApp
-                    </a>
-                    
-                    <p class="text-center text-xs text-gray-600 dark:text-gray-400 mt-4"><i class="fas fa-lock" aria-hidden="true"></i> Your information is secure and never shared with third parties.</p>
+                    <button type="submit" id="submitBtn" class="w-full bg-[#f56437] text-white py-3 rounded font-bold uppercase tracking-wide hover:bg-[#d44c24] transition text-sm mt-4">Place Order</button>
                 </form>
             </div>
         </div>
     </div>
-    """
     
-    checkout_script = """
     <script>
-        let couponApplied = false;
-
         function togglePaymentDetails() {
             let method = document.querySelector('input[name="Payment_Method"]:checked').value;
             let details = document.getElementById('advancePaymentDetails');
-            let labelCOD = document.getElementById('labelCOD');
-            let labelAdv = document.getElementById('labelAdv');
-            
-            if(method === 'Advance Payment') {
+            let lCOD = document.getElementById('labelCOD');
+            let lAdv = document.getElementById('labelAdv');
+            if(method === 'Advance') {
                 details.classList.remove('hidden');
-                labelAdv.classList.add('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-                labelAdv.classList.remove('border-gray-200', 'dark:border-gray-600');
-                labelCOD.classList.remove('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-                labelCOD.classList.add('border-gray-200', 'dark:border-gray-600');
+                lAdv.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2";
+                lCOD.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2";
             } else {
                 details.classList.add('hidden');
-                labelCOD.classList.add('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-                labelCOD.classList.remove('border-gray-200', 'dark:border-gray-600');
-                labelAdv.classList.remove('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-                labelAdv.classList.add('border-gray-200', 'dark:border-gray-600');
+                lCOD.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2";
+                lAdv.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2";
             }
-            renderCart();
-        }
-        
-        function applyCoupon() {
-            let code = document.getElementById('couponCode').value;
-            let currentSubtotal = 0;
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('buy_now') === 'true') {
-                currentSubtotal = parseInt(urlParams.get('price')) || 0;
-            } else {
-                let cart = getCart();
-                cart.forEach(item => currentSubtotal += parseInt(item.price) * (item.qty || 1));
-            }
-
-            if (code === 'ASM10') {
-                if (currentSubtotal >= 3000) {
-                    couponApplied = true;
-                    showToast('Coupon applied! 10% discount added.', 'fa-check-circle', 'pk');
-                } else {
-                    couponApplied = false;
-                    showToast('Minimum Rs 3000 shopping required for this coupon.', 'fa-exclamation-circle', 'red');
-                }
-            } else {
-                couponApplied = false;
-                showToast('Invalid coupon code.', 'fa-times-circle', 'red');
-            }
-            renderCart();
         }
 
         function renderCart() {
             const urlParams = new URLSearchParams(window.location.search);
             const isBuyNow = urlParams.get('buy_now') === 'true';
-            const pName = urlParams.get('product');
-            const pPrice = parseInt(urlParams.get('price')) || 0;
             
-            let subtotal = 0;
-            let finalOrderString = "";
-            let container = document.getElementById('cartItemsContainer');
-            container.innerHTML = '';
+            let subtotal = 0; let orderStr = "";
+            let cont = document.getElementById('cartItemsContainer');
+            cont.innerHTML = '';
             
-            if (isBuyNow && pName && pPrice) {
-                subtotal = pPrice;
-                finalOrderString = "1x " + pName + " (Rs " + pPrice + ")";
-                
-                let safeHtmlName = pName.replace(/"/g, '&quot;');
-                
-                container.innerHTML = `
-                    <div class="flex items-center gap-4 bg-gray-50 dark:bg-gray-700 p-3 rounded-xl border border-gray-200 dark:border-gray-600">
-                        <div class="flex-1">
-                            <h3 class="font-bold text-gray-900 dark:text-white line-clamp-1">${safeHtmlName}</h3>
-                            <p class="text-[#E53935] dark:text-white font-black">Rs ${pPrice}</p>
-                        </div>
-                    </div>`;
+            if (isBuyNow) {
+                let pName = urlParams.get('product'); let pPrice = parseInt(urlParams.get('price')) || 0;
+                subtotal = pPrice; orderStr = "1x " + pName + " (Rs " + pPrice + ")";
+                cont.innerHTML = `<div class="flex justify-between items-center border-b pb-2"><span class="text-sm font-semibold">${pName}</span><span class="text-sm font-bold text-[#f56437]">Rs ${pPrice}</span></div>`;
             } else {
                 let cart = getCart();
                 if(cart.length === 0) {
-                    container.innerHTML = `<div class="text-center py-8"><i class="fas fa-shopping-cart text-5xl text-gray-300 mb-3" aria-hidden="true"></i><p class="text-gray-500 font-semibold">Your cart is empty.</p><a href="/index.html" class="inline-block mt-4 bg-[#E53935] text-white px-6 py-2 rounded-xl font-bold">Browse Products</a></div>`;
+                    cont.innerHTML = `<p class="text-sm text-gray-500">Cart is empty.</p>`;
                     document.getElementById('submitBtn').disabled = true;
-                    document.getElementById('submitBtn').classList.add('opacity-50', 'cursor-not-allowed');
                 } else {
-                    document.getElementById('submitBtn').disabled = false;
-                    document.getElementById('submitBtn').classList.remove('opacity-50', 'cursor-not-allowed');
-                    cart.forEach((item, index) => {
-                        let qty = item.qty || 1;
-                        subtotal += parseInt(item.price) * qty;
-                        finalOrderString += qty + "x " + item.name + " (Rs " + (item.price * qty) + ")\\n";
-                        
-                        let safeHtmlName = item.name.replace(/"/g, '&quot;');
-                        
-                        container.innerHTML += `
-                        <div class="flex items-center gap-3 bg-gray-50 dark:bg-gray-700 p-3 rounded-xl border border-gray-200 dark:border-gray-600">
-                            <img src="${item.image}" class="w-16 h-16 object-contain rounded-lg bg-white border border-gray-100 p-1" onerror="this.src='https://via.placeholder.com/100x100/E53935/ffffff?text=ASM'" loading="lazy" decoding="async" alt="Cart Item Image">
-                            <div class="flex-1 min-w-0">
-                                <h3 class="font-bold text-sm text-gray-900 dark:text-white line-clamp-2">${safeHtmlName}</h3>
-                                <p class="text-[#E53935] dark:text-white font-black text-sm">Rs ${item.price}</p>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <button type="button" aria-label="Decrease Quantity" onclick="updateQty(${index}, -1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-800 dark:text-white font-bold hover:bg-gray-300">-</button>
-                                    <span class="font-bold text-sm">${qty}</span>
-                                    <button type="button" aria-label="Increase Quantity" onclick="updateQty(${index}, 1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-800 dark:text-white font-bold hover:bg-gray-300">+</button>
-                                    <button type="button" aria-label="Remove Item" onclick="removeFromCart(${index})" class="ml-2 text-red-500 hover:text-red-700 text-xs"><i class="fas fa-trash" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                        </div>`;
+                    cart.forEach((item, i) => {
+                        let q = item.qty || 1; subtotal += item.price * q;
+                        orderStr += q + "x " + item.name + " (Rs " + (item.price * q) + ")\\n";
+                        cont.innerHTML += `<div class="flex justify-between items-center py-2 border-b border-gray-100 last:border-0"><div class="flex items-center gap-3"><img src="${item.image}" class="w-12 h-12 object-contain border p-1 rounded"><div class="flex flex-col"><span class="text-xs font-bold w-48 truncate">${item.name}</span><span class="text-xs text-gray-500">${q} x Rs ${item.price}</span></div></div><span class="text-sm font-bold text-[#f56437]">Rs ${item.price * q}</span></div>`;
                     });
                 }
             }
 
             let delivery = subtotal >= 5000 ? 0 : 250;
-            let discount = couponApplied ? Math.floor(subtotal * 0.10) : 0;
-            let grandTotal = subtotal - discount + delivery;
-            
-            let paymentMethod = document.querySelector('input[name="Payment_Method"]:checked').value;
-            
+            let total = subtotal + delivery;
             document.getElementById('subtotalDisplay').innerText = "Rs " + subtotal;
             document.getElementById('deliveryDisplay').innerText = delivery === 0 ? "FREE" : "Rs " + delivery;
-            
-            let discountRow = document.getElementById('discountRow');
-            if (discount > 0) {
-                discountRow.classList.remove('hidden');
-                document.getElementById('discountDisplay').innerText = "- Rs " + discount;
-            } else {
-                discountRow.classList.add('hidden');
-            }
-            
-            document.getElementById('grandTotalDisplay').innerText = "Rs " + grandTotal;
-            document.getElementById('productField').value = finalOrderString + "\\nDelivery: Rs " + delivery + "\\nDiscount: Rs " + discount + "\\nGrand Total: Rs " + grandTotal + "\\nPayment Method: " + paymentMethod;
-            document.getElementById('totalField').value = "Rs " + grandTotal;
-        }
-
-        function sendTrustpilotInvitation() {
-            try {
-                let customerName = document.getElementById('fullName').value;
-                let customerEmail = document.getElementById('emailAddr').value;
-                
-                if (customerEmail && customerName) {
-                    const tp_invitation = {
-                        recipientEmail: customerEmail,
-                        recipientName: customerName,
-                        referenceId: 'ASM-' + Math.floor(100000 + Math.random() * 900000),
-                        source: 'InvitationScript',
-                        templateId: 'invitation_template_GUID',
-                    };
-                    tp('createInvitation', tp_invitation);
-                    console.log("Trustpilot Review Email Triggered for: " + customerEmail);
-                }
-            } catch(e) { console.log('Trustpilot error:', e); }
+            document.getElementById('grandTotalDisplay').innerText = "Rs " + total;
+            document.getElementById('productField').value = orderStr + "\\nDelivery: Rs " + delivery + "\\nTotal: Rs " + total;
         }
 
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
-            btn.disabled = true;
+            btn.innerHTML = 'Processing...'; btn.disabled = true;
 
-            const formData = new FormData(this);
             fetch('https://formspree.io/f/xjgnlgpw', {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    sendTrustpilotInvitation();
-                    
-                    let customerEmail = document.getElementById('emailAddr').value;
-                    if(customerEmail) {
-                        localStorage.setItem('asm_customer_email', customerEmail);
-                    }
-                    
+                method: 'POST', body: new FormData(this), headers: { 'Accept': 'application/json' }
+            }).then(r => {
+                if (r.ok) {
+                    let cEmail = document.getElementById('emailAddr').value;
+                    if(cEmail) localStorage.setItem('asm_customer_email', cEmail);
                     const urlParams = new URLSearchParams(window.location.search);
                     if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
-                    updateCartBadge();
-                    
-                    setTimeout(() => {
-                        window.location.href = '/order-success.html';
-                    }, 800); 
-                    
-                } else {
-                    showToast('Error submitting order. Try again.', 'fa-exclamation-circle', 'red');
-                    btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
-                    btn.disabled = false;
-                }
-            }).catch(error => {
-                showToast('Network Error! Try WhatsApp instead.', 'fa-wifi', 'red');
-                btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
-                btn.disabled = false;
-            });
+                    window.location.href = '/order-success.html';
+                } else { alert('Error!'); btn.innerHTML = 'Place Order'; btn.disabled = false; }
+            }).catch(() => { alert('Network Error!'); btn.innerHTML = 'Place Order'; btn.disabled = false; });
         });
         window.addEventListener('load', renderCart);
     </script>
     """
-    checkout_html += checkout_script + get_html_footer()
-    with open("output/checkout.html", "w", encoding="utf-8") as f:
-        f.write(minify_html(checkout_html))
+    checkout_html += get_html_footer()
+    with open("output/checkout.html", "w", encoding="utf-8") as f: f.write(minify_html(checkout_html))
         
     generate_sitemap(sitemap_urls)
-    print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
-    print(f"📦 Products: {len(products_list)} | 📂 Categories: {len(categories_list)} | 🏙️ Cities: {len(cities)}")
-    print("✨ Accessibility, Performance, Schema & Broken Links Fixed successfully!")
+    print("🎉 TopDeals V3 Theme E-Commerce website generated successfully!")
     
     generate_image_sitemap(products_list) 
     generate_merchant_feed(products_list) 
     auto_fix_broken_links("output")
-    apply_lighthouse_optimizations("output")
     trigger_google_indexing_api(sitemap_urls)
 
 if __name__ == "__main__":
