@@ -874,13 +874,41 @@ def get_html_footer():
     <!-- Flashmart Style Footer -->
     <footer class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 mt-16 pt-12 pb-20 md:pb-8 border-t-4 border-[#E53935]">
         <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-center items-center gap-8 mb-12 pb-8 border-b border-gray-200 dark:border-gray-800">
-                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">EVERSOURCE</div>
-                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">LOGO</div>
-                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">CYCLOPS</div>
-                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">ENVATO</div>
-                <div class="text-gray-400 dark:text-gray-600 font-extrabold text-2xl">ASM</div>
+            
+            <!-- 🌟 NEW: TRUSTED PARTNERS / COLLABORATION SECTION 🌟 -->
+            <div class="mb-12 pb-8 border-b border-gray-200 dark:border-gray-800">
+                <h3 class="text-center text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">Our Trusted Partners</h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14">
+                    <!-- JazzCash -->
+                    <div class="text-2xl font-black italic text-red-600 tracking-tighter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="JazzCash">jazzCash</div>
+                    
+                    <!-- EasyPaisa -->
+                    <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="EasyPaisa">
+                        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">e</div>
+                        <div class="text-2xl font-bold text-green-500 tracking-tight lowercase">easypaisa</div>
+                    </div>
+                    
+                    <!-- NBP -->
+                    <div class="flex items-center gap-2 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="National Bank of Pakistan">
+                        <i class="fas fa-landmark text-green-700 text-xl" aria-hidden="true"></i>
+                        <div class="text-2xl font-serif font-black text-green-700 tracking-wider">NBP</div>
+                    </div>
+                    
+                    <!-- Daraz -->
+                    <div class="text-2xl font-bold text-orange-500 lowercase grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Daraz">daraz</div>
+                    
+                    <!-- PriceOye -->
+                    <div class="text-2xl font-extrabold text-blue-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="PriceOye">PriceOye<span class="text-blue-300">.pk</span></div>
+                    
+                    <!-- Markaz -->
+                    <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Markaz">
+                        <i class="fas fa-shopping-bag text-emerald-600 text-lg" aria-hidden="true"></i>
+                        <div class="text-2xl font-bold text-emerald-600 lowercase tracking-wide">markaz</div>
+                    </div>
+                </div>
             </div>
+            <!-- 🌟 END COLLABORATION SECTION 🌟 -->
+
             <div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10">
                 <div>
                     <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Company</h3>
@@ -922,9 +950,9 @@ def get_html_footer():
                     <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Our Mission</h3>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
                     <div class="flex gap-3">
-                        <a href="#" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="#" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://wa.me/923425478683" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
