@@ -14,13 +14,10 @@ import time
 from datetime import datetime, timedelta
 
 # ==============================================================================
-# ADVANCED SEO & ANALYTICS APIs (NEW MODULES ADDED)
+# ADVANCED SEO & ANALYTICS APIs
 # ==============================================================================
 
 def fetch_trending_keywords():
-    """
-    Connects to Google Analytics 4 & Search Console APIs to fetch real-time trending keywords for Pakistan.
-    """
     trending_keywords = [
         "best online shopping pakistan", "cash on delivery pk", 
         "buy online karachi", "affordable price lahore", 
@@ -30,9 +27,6 @@ def fetch_trending_keywords():
     return trending_keywords
 
 def trigger_google_indexing_api(urls):
-    """
-    Triggers Google Indexing API to request immediate crawling of new URLs.
-    """
     print(f"📡 Pinging Google Indexing API for {len(urls)} URLs...")
     batch_size = 100
     for i in range(0, len(urls), batch_size):
@@ -41,9 +35,6 @@ def trigger_google_indexing_api(urls):
     print("✅ Google Indexing API triggered successfully. URLs queued for immediate crawl.")
 
 def auto_fix_broken_links(output_dir="output"):
-    """
-    Scans all generated HTML files for 404/broken local links and auto-fixes them.
-    """
     print("🛠️ Running Automated Broken Link Fixer...")
     html_files = glob.glob(f"{output_dir}/**/*.html", recursive=True)
     fixed_count = 0
@@ -76,7 +67,7 @@ def apply_lighthouse_optimizations(output_dir="output"):
     print("✅ Lighthouse optimizations applied (Lazy loading & ARIA labels synced).")
 
 # ==============================================================================
-# 2000 NAMES DATABASE - EXPANDED FOR BETTER RANDOMIZATION
+# 2000 NAMES DATABASE
 # ==============================================================================
 
 def generate_pakistani_names():
@@ -136,7 +127,6 @@ def clean_html(raw_html):
 def make_slug(text):
     if not text: 
         return "uncategorized"
-    
     slug = re.sub(r'[^a-z0-9]+', '-', str(text).lower()).strip('-')
     if not slug: 
         slug = "uncategorized"
@@ -158,7 +148,6 @@ def local_seo_desc(name, desc):
         return desc[:120] + f"... [{keys_str}]"
     return f"Buy {name} online in Pakistan at best price. {keys_str}. Premium quality with Cash on Delivery, fast shipping & easy returns from ASM VEO."
 
-# 🌟 STEP 2: IMAGE VALIDATION FUNCTION 🌟
 def check_valid_image(prod):
     try:
         req = urllib.request.Request(
@@ -180,7 +169,7 @@ def get_category_icon(category):
     icons = {
         'perfume|fragrance|scent|attar': 'fa-spray-can',
         'watch|clock|smartwatch': 'fa-clock',
-        'apparel|cloth|fashion|shirt|dress': 'fa-tshirt',
+        'apparel|cloth|fashion|shirt|dress|lawn': 'fa-tshirt',
         'shoe|footwear|sneaker': 'fa-shoe-prints',
         'electronic|tech|mobile|gadget|phone': 'fa-mobile-screen-button',
         'beauty|cosmetic|makeup|care|skin': 'fa-spa',
@@ -199,7 +188,6 @@ def get_category_icon(category):
         'tool|hardware': 'fa-hammer',
         'sport': 'fa-volleyball',
     }
-    
     for pattern, icon in icons.items():
         if any(word in cat_lower for word in pattern.split('|')):
             return icon
@@ -244,7 +232,6 @@ def generate_reviews(product_name):
             <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{comment}</p>
         </div>
         """
-    
     avg_rating = round(sum(random.randint(4,5) for _ in range(num_reviews)) / num_reviews, 1)
     return reviews_html, avg_rating, num_reviews
 
@@ -256,7 +243,7 @@ def minify_html(html_content):
 
 
 # ==============================================================================
-# HTML HEADER GENERATION (Optimized for PageSpeed, Accessibility & SEO FIXES)
+# HTML HEADER GENERATION
 # ==============================================================================
 
 def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan",
@@ -273,9 +260,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     elif product_data and 'slug' in product_data:
         canonical_url = f"https://www.asmveo.com/product/{product_data['slug']}.html"
 
-    safe_title = title[:45] + "..." if len(title) > 45 else title
-    
-    # 🌟 SEO FIX: Meta Description Capped at 125 characters 🌟
+    safe_title = title[:60] + "..." if len(title) > 60 else title
+    # SEO Fix: Meta Description length capped at 125 chars
     safe_desc = seo_desc[:125] + "..." if seo_desc and len(seo_desc) > 125 else (seo_desc or "Premium online shopping in Pakistan with Cash on Delivery.")
     
     structured_data = """
@@ -416,7 +402,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="theme-color" content="#E53935">
     <link rel="canonical" href="{canonical_url}">
     
-    <!-- 🌟 SEO FIX: Favicon and Hreflang Tags Added 🌟 -->
+    <!-- SEO Fixes: Added Favicon and Hreflang Tags -->
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png">
     <link rel="alternate" hreflang="en-PK" href="{canonical_url}" />
@@ -513,7 +499,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </style>
     {structured_data}
     
-    <!-- 🌟 SEO FIX: Added DEFER attributes to reduce TBT/INP blocking 🌟 -->
+    <!-- SEO Fix: Added DEFER to scripts to prevent block parsing -->
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
     <script defer>
       window.dataLayer = window.dataLayer || [];
@@ -875,7 +861,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 """
 
 # ==============================================================================
-# HTML FOOTER GENERATION (🌟 SEO FIX: Added Social Media Links 🌟)
+# HTML FOOTER GENERATION (SEO Fix: Added Social Media Links)
 # ==============================================================================
 
 def get_html_footer():
@@ -888,28 +874,17 @@ def get_html_footer():
             <div class="mb-12 pb-8 border-b border-gray-200 dark:border-gray-800">
                 <h3 class="text-center text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">Our Trusted Partners</h3>
                 <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14">
-                    <!-- JazzCash -->
                     <div class="text-2xl font-black italic text-red-600 tracking-tighter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="JazzCash">jazzCash</div>
-                    
-                    <!-- EasyPaisa -->
                     <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="EasyPaisa">
                         <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">e</div>
                         <div class="text-2xl font-bold text-green-500 tracking-tight lowercase">easypaisa</div>
                     </div>
-                    
-                    <!-- NBP -->
                     <div class="flex items-center gap-2 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="National Bank of Pakistan">
                         <i class="fas fa-landmark text-green-700 text-xl" aria-hidden="true"></i>
                         <div class="text-2xl font-serif font-black text-green-700 tracking-wider">NBP</div>
                     </div>
-                    
-                    <!-- Daraz -->
                     <div class="text-2xl font-bold text-orange-500 lowercase grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Daraz">daraz</div>
-                    
-                    <!-- PriceOye -->
                     <div class="text-2xl font-extrabold text-blue-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="PriceOye">PriceOye<span class="text-blue-300">.pk</span></div>
-                    
-                    <!-- Markaz -->
                     <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Markaz">
                         <i class="fas fa-shopping-bag text-emerald-600 text-lg" aria-hidden="true"></i>
                         <div class="text-2xl font-bold text-emerald-600 lowercase tracking-wide">markaz</div>
@@ -958,7 +933,6 @@ def get_html_footer():
                     <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Our Mission</h3>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
                     
-                    <!-- 🌟 SEO FIX: Added Comprehensive Social Links to Fix Audit Warning 🌟 -->
                     <div class="flex gap-2 flex-wrap">
                         <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="https://www.youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-youtube" aria-hidden="true"></i></a>
@@ -990,7 +964,7 @@ def get_html_footer():
 def generate_static_pages(categories_list):
     print("📄 Generating Static Pages...")
     
-    # 🌟 NEW FEATURE: GOOGLE REVIEW POPUP (ORDER SUCCESS PAGE) 🌟
+    # 🌟 NEW FEATURE: GOOGLE REVIEW POPUP FIX 🌟
     order_success_html = """
         <div class="container mx-auto px-4 py-20 text-center relative">
             <div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div>
@@ -999,12 +973,12 @@ def generate_static_pages(categories_list):
             <a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a>
         </div>
         
-        <!-- 🌟 Google Review Modal 🌟 -->
-        <div id="googleReviewModal" class="fixed inset-0 bg-black/80 z-[9999] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 p-4">
-            <div class="bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full text-center relative transform scale-95 transition-transform duration-500 shadow-2xl border border-gray-100 dark:border-gray-700" id="googleReviewContent">
+        <!-- Google Review Modal -->
+        <div id="googleReviewModal" class="fixed inset-0 bg-black/80 z-[99999] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 p-4">
+            <div class="bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full text-center relative transform scale-95 transition-transform duration-500 shadow-[0_0_50px_rgba(0,0,0,0.3)] border border-gray-100 dark:border-gray-700" id="googleReviewContent">
                 <button onclick="closeReviewModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white" aria-label="Close review popup"><i class="fas fa-times text-xl"></i></button>
                 <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm border border-gray-100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" class="w-8 h-8">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="w-8 h-8">
                 </div>
                 <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">How did we do?</h2>
                 <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm">Your feedback helps us provide the best experience for ASM VEO customers across Pakistan.</p>
@@ -1027,13 +1001,11 @@ def generate_static_pages(categories_list):
             localStorage.removeItem('asm_cart');
             if(typeof updateCartBadge === 'function') updateCartBadge();
             
-            // Fetch Email & Set Delivery Date (3 Days from today)
             let cEmail = localStorage.getItem('asm_customer_email') || '';
             let dDate = new Date();
             dDate.setDate(dDate.getDate() + 3);
             let estDate = dDate.toISOString().split('T')[0]; 
             
-            // Google Customer Reviews Opt-In
             window.renderOptIn = function() {
                 window.gapi.load('surveyoptin', function() {
                     window.gapi.surveyoptin.render({
@@ -1047,18 +1019,24 @@ def generate_static_pages(categories_list):
                 localStorage.removeItem('asm_customer_email');
             };
 
-            // Custom Review Modal Logic
-            setTimeout(() => {
-                let modal = document.getElementById('googleReviewModal');
-                let content = document.getElementById('googleReviewContent');
-                modal.classList.remove('opacity-0', 'pointer-events-none');
-                content.classList.remove('scale-95');
-                content.classList.add('scale-100');
-            }, 2500);
+            // Enhanced Custom Review Modal Logic (Independant of Google API)
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(() => {
+                    let modal = document.getElementById('googleReviewModal');
+                    let content = document.getElementById('googleReviewContent');
+                    if(modal && content) {
+                        modal.classList.remove('opacity-0', 'pointer-events-none');
+                        content.classList.remove('scale-95');
+                        content.classList.add('scale-100');
+                    }
+                }, 2000);
+            });
 
             function closeReviewModal() {
                 let modal = document.getElementById('googleReviewModal');
-                modal.classList.add('opacity-0', 'pointer-events-none');
+                if(modal) {
+                    modal.classList.add('opacity-0', 'pointer-events-none');
+                }
             }
 
             document.querySelectorAll('.review-star').forEach((star) => {
@@ -1124,7 +1102,6 @@ def generate_static_pages(categories_list):
         with open(f"output/{filename}", "w", encoding="utf-8") as f:
             f.write(minify_html(get_html_header(title, categories_list) + content + get_html_footer()))
 
-    # FAQ Generator with Schema Logic
     faqs = [
         ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days. Major cities like Karachi, Lahore, and Islamabad usually receive orders within 2 days. Remote areas may take up to 5 days."),
         ("Do you offer Cash on Delivery (COD)?", "Yes! We offer Cash on Delivery across all of Pakistan. You pay when you receive your product at your doorstep."),
@@ -1259,11 +1236,11 @@ def generate_merchant_feed(products_list):
 # ==============================================================================
 
 def generate_product_card(prod, lazy=True, show_wishlist=True, is_placeholder=False):
-    # 🌟 NEW: Handles perfectly padded empty slots on homepage 🌟
+    # 🌟 NEW: Dynamic Grid Filler to Ensure Exact 6 Cards Always 🌟
     if is_placeholder:
         return """
         <div class="bg-gray-50 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center p-4 text-center h-full min-h-[220px] md:min-h-[250px] opacity-60">
-            <i class="fas fa-box-open text-3xl md:text-4xl text-gray-400 mb-3"></i>
+            <i class="fas fa-box-open text-3xl md:text-4xl text-gray-400 mb-3" aria-hidden="true"></i>
             <span class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest">More Arrivals<br>Coming Soon</span>
         </div>
         """
@@ -1448,7 +1425,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             base_price = get_price(row.get('Sale price', '') or row.get('Regular price', ''))
             if base_price == 0: continue
             
-            # 🌟 NAI DYNAMIC PROFIT MARGIN LOGIC 🌟
             if base_price <= 500:
                 final_price = math.ceil(base_price * 1.40) # 40% Profit
             elif base_price <= 2000:
@@ -1458,7 +1434,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             else:
                 final_price = math.ceil(base_price * 1.10) # 10% Profit
 
-            # 🌟 SPECIFIC PRODUCT PRICE OVERRIDE 🌟
             if "zafrani cream" in name.lower():
                 final_price = 1599
                 
@@ -1493,7 +1468,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 
     products_list = valid_products
     categories_set = set(p['category'] for p in products_list) 
-    # 🌟 ------------------------------------------------------------------------- 🌟
 
     categories_list = sorted(list(categories_set))
     print(f"✔ Total {len(products_list)} valid products being processed...")
@@ -1911,9 +1885,9 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
 
 
     # ==============================================================================
-    # HOMEPAGE DYNAMIC PAGINATION (Index-1, Index-2, etc.)
+    # HOMEPAGE DYNAMIC PAGINATION
     # ==============================================================================
-    print("🏠 Generating Home Pages with Pagination & Upgraded Banners...")
+    print("🏠 Generating Home Pages with Advanced Professional Banners & Grid Fix...")
     all_categories_list = list(sections_dict.items())
     cats_per_home_page = 6 
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
@@ -1924,107 +1898,122 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                                      "ASM VEO - Premium online shopping in Pakistan for Electronics, Fashion & Home Appliances. Buy quality products with Cash on Delivery & fast shipping.")
         
         if h_page == 1:
-            # 🌟 SEO FIX: Properly sized H1 Header (Max 70 chars) 🌟
+            # 🌟 8 NEW PROFESSIONAL PAKISTANI BANNERS ADDED 🌟
             home_html += """
             <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan</h1>
             
-            <!-- 🌟 ADVANCED CUSTOM BANNERS (Matching Reference Design) 🌟 -->
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
                 
-                    <!-- Slide 1: Valentine's Day / Colorful Clothes -->
-                    <div class="carousel-slide h-full relative bg-white overflow-hidden flex items-center justify-between" aria-hidden="false">
-                        <!-- Paint Drip Effect Shape -->
-                        <div class="absolute top-0 right-0 w-full md:w-[60%] h-12 md:h-20 bg-pink-600" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 40%, 85% 100%, 75% 20%, 65% 100%, 55% 50%, 45% 90%, 35% 30%, 20% 100%, 10% 40%, 0 80%);"></div>
-                        <div class="w-1/3 md:w-1/2 h-full flex justify-end items-center relative z-10 p-4 md:p-8">
-                            <img src="https://images.unsplash.com/photo-1515347619362-79383637207c?auto=format&fit=crop&w=600&q=80" alt="Colorful Clothes Fashion Sale" fetchpriority="high" decoding="sync" class="object-cover w-full max-w-[250px] md:max-w-[400px] h-32 md:h-64 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] transform -rotate-6 border-4 border-white">
+                    <!-- Banner 1: Azaadi Sale (14 August) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-[#118C4F]" aria-hidden="false">
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-20 relative z-10 text-white">
+                            <h2 class="text-3xl md:text-7xl font-black italic tracking-tighter uppercase leading-none drop-shadow-lg">Azaadi</h2>
+                            <h3 class="text-xl md:text-5xl font-bold bg-white text-[#118C4F] px-4 py-1 mt-2 transform -skew-x-12 inline-block">SALE - FLAT 50% OFF</h3>
+                            <a href="#products" class="mt-4 border-2 border-white text-white px-6 py-2 rounded-full font-bold hover:bg-white hover:text-[#118C4F] transition shadow-[0_0_15px_rgba(255,255,255,0.5)]">Shop Now</a>
                         </div>
-                        <div class="w-1/2 md:w-1/2 h-full flex flex-col justify-center items-center text-center relative z-10 px-4">
-                            <h2 class="text-3xl md:text-6xl font-medium text-gray-900 leading-none" style="font-family: 'Brush Script MT', cursive, serif; transform: rotate(-5deg);">Valentine's day</h2>
-                            <h3 class="text-4xl md:text-7xl font-black text-orange-500 uppercase tracking-widest mt-2 drop-shadow-md">Sale</h3>
-                            <div class="absolute right-4 md:right-12 bottom-4 md:bottom-8 text-center hidden md:block">
-                                <div class="flex justify-center items-center gap-1 mb-1">
-                                    <div class="w-4 h-4 bg-red-500 clip-polygon"></div><div class="w-4 h-4 bg-blue-500 clip-polygon"></div><div class="w-4 h-4 bg-green-500 clip-polygon"></div>
-                                </div>
-                                <span class="font-black text-gray-900 text-sm md:text-lg tracking-tighter">ColorfulClothes</span><br>
-                                <span class="text-[8px] md:text-[10px] font-bold text-gray-400 tracking-widest uppercase">Online Best Store</span>
-                            </div>
+                        <div class="w-1/2 h-full relative">
+                            <div class="absolute inset-0 bg-white" style="clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=600&q=80" alt="Pakistan Independence Day" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80" style="clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);">
+                            <div class="absolute right-10 top-10 text-6xl text-[#118C4F] drop-shadow-md hidden md:block">☪</div>
                         </div>
                     </div>
                     
-                    <!-- Slide 2: Lifestyle Home -->
+                    <!-- Banner 2: Premium Lawn Collection -->
                     <div class="carousel-slide h-full relative overflow-hidden flex" aria-hidden="true">
-                        <div class="w-1/3 h-full bg-yellow-300 relative">
-                            <div class="absolute right-0 top-0 w-full h-full bg-white opacity-20" style="clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0% 100%);"></div>
-                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Lifestyle Home Decor" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80">
+                        <img src="https://images.unsplash.com/photo-1583391733958-65e2be536c12?auto=format&fit=crop&w=1200&q=80" alt="Premium Unstitched Lawn" class="absolute inset-0 w-full h-full object-cover opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-50 via-white/80 to-transparent w-[70%]"></div>
+                        <div class="relative z-10 h-full flex flex-col justify-center items-start pl-8 md:pl-20 text-gray-900 w-full md:w-[60%]">
+                            <span class="text-xs md:text-sm font-bold tracking-[0.2em] text-pink-600 mb-2 uppercase">Unstitched & Ready to Wear</span>
+                            <h2 class="text-3xl md:text-6xl font-light font-serif leading-tight">Festive <span class="font-bold">Lawn</span><br>Collection</h2>
+                            <p class="mt-4 text-xs md:text-sm text-gray-700 font-semibold max-w-sm">Premium quality fabrics designed for the Pakistani summer. Elevate your wardrobe today.</p>
+                            <a href="#products" class="mt-6 bg-gray-900 text-white px-8 py-3 font-bold hover:bg-pink-600 transition">Explore Collection</a>
                         </div>
-                        <div class="w-1/3 h-full bg-white flex flex-col justify-center items-center text-center relative shadow-[0_0_50px_rgba(0,0,0,0.1)] z-10">
-                            <div class="flex items-center gap-2">
-                                <div class="w-10 h-10 md:w-16 md:h-16 bg-[#00AEEF] flex items-center justify-center transform rotate-45 shadow-inner rounded-sm">
-                                    <i class="fas fa-heart text-white transform -rotate-45 text-xl md:text-3xl" aria-hidden="true"></i>
-                                </div>
-                                <div class="text-left ml-2">
-                                    <span class="block text-gray-900 text-sm md:text-2xl font-light tracking-wide leading-none">Lifestyle</span>
-                                    <span class="block text-[#00AEEF] text-2xl md:text-5xl font-black uppercase tracking-widest leading-none mt-1">Home</span>
-                                </div>
-                            </div>
+                    </div>
+
+                    <!-- Banner 3: Mega Tech & Gadgets -->
+                    <div class="carousel-slide h-full relative overflow-hidden bg-gray-900 flex" aria-hidden="true">
+                        <div class="absolute right-0 top-0 w-[50%] h-full bg-blue-600" style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+                        <div class="absolute right-0 top-0 w-[48%] h-full bg-black/40 z-10" style="clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-20 relative z-20 text-white">
+                            <div class="bg-yellow-400 text-gray-900 text-xs font-black px-2 py-1 uppercase tracking-widest mb-2">Tech Hub</div>
+                            <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight tracking-tight">Smart<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Gadgets</span></h2>
+                            <p class="mt-2 text-xs md:text-sm text-gray-300">Earbuds, Smartwatches & Mobile Accessories.</p>
+                            <a href="#products" class="mt-4 bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-6 py-2 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(56,189,248,0.6)] transition">Buy Now</a>
                         </div>
-                        <div class="w-1/3 h-full relative bg-gray-100">
-                            <div class="absolute left-0 top-0 w-full h-full bg-white opacity-20" style="clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);"></div>
-                            <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=600&q=80" alt="Bedroom Interior" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80">
+                        <div class="w-1/2 h-full relative z-20 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&fit=crop&w=500&q=80" alt="Tech Gadgets" class="w-48 h-48 md:w-80 md:h-80 object-cover rounded-full border-4 border-cyan-400 shadow-[0_0_30px_rgba(56,189,248,0.5)] transform hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
                     
-                    <!-- Slide 3: Electronic Special Offer -->
-                    <div class="carousel-slide h-full relative overflow-hidden bg-gray-100 flex items-center justify-between px-2 md:px-12" aria-hidden="true" style="background-image: repeating-linear-gradient(45deg, #f3f4f6 25%, transparent 25%, transparent 75%, #f3f4f6 75%, #f3f4f6), repeating-linear-gradient(45deg, #f3f4f6 25%, #ffffff 25%, #ffffff 75%, #f3f4f6 75%, #f3f4f6); background-position: 0 0, 10px 10px; background-size: 20px 20px;">
-                        <div class="w-1/4 flex justify-center z-10">
-                            <div class="bg-[#D32F2F] text-white p-3 md:p-6 text-center transform -skew-x-12 shadow-2xl border-4 border-white">
-                                <h2 class="text-xl md:text-4xl font-black uppercase leading-none">Special<br>Offer</h2>
+                    <!-- Banner 4: Original Cosmetics (Health & Beauty) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-rose-50" aria-hidden="true">
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-20 relative z-10 text-gray-900">
+                            <h2 class="text-2xl md:text-5xl font-serif italic text-rose-800 leading-tight">Flawless<br><span class="font-bold not-italic text-gray-900">Beauty</span></h2>
+                            <div class="h-1 w-16 bg-rose-400 my-4"></div>
+                            <p class="text-xs md:text-sm font-semibold text-gray-600 mb-4">100% Original Skincare & Cosmetics.</p>
+                            <a href="#products" class="border border-rose-800 text-rose-800 px-6 py-2 uppercase text-xs font-bold tracking-widest hover:bg-rose-800 hover:text-white transition">Shop Beauty</a>
+                        </div>
+                        <div class="w-1/2 h-full relative">
+                            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=600&q=80" alt="Cosmetics & Skincare" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-l from-transparent to-rose-50 w-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Banner 5: Home & Kitchen Appliances -->
+                    <div class="carousel-slide h-full relative overflow-hidden bg-[#F3F4F6] flex" aria-hidden="true">
+                        <div class="absolute top-0 left-0 w-full h-full bg-orange-500" style="clip-path: polygon(0 0, 35% 0, 50% 100%, 0% 100%);"></div>
+                        <div class="w-[45%] h-full flex flex-col justify-center items-center text-center relative z-10 text-white px-4">
+                            <i class="fas fa-home text-3xl md:text-5xl mb-2 opacity-80" aria-hidden="true"></i>
+                            <h2 class="text-xl md:text-4xl font-black uppercase tracking-widest">Home &<br>Kitchen</h2>
+                            <a href="#products" class="mt-4 bg-white text-orange-500 px-4 py-2 rounded-full font-bold text-xs hover:shadow-lg transition">Upgrade Today</a>
+                        </div>
+                        <div class="w-[55%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Kitchen Appliances" class="w-[90%] h-[80%] object-cover rounded-xl shadow-2xl border-4 border-white">
+                        </div>
+                    </div>
+
+                    <!-- Banner 6: Men's Eastern Wear -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-[#3e2723]" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=1200&q=80" alt="Men Eastern Wear" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-luminosity">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
+                            <div class="border-2 border-amber-600 p-6 md:p-10 bg-black/30 backdrop-blur-sm">
+                                <h2 class="text-3xl md:text-6xl font-serif text-amber-500 tracking-widest">MEN'S</h2>
+                                <h3 class="text-xl md:text-3xl font-light text-gray-200 mt-2 tracking-[0.3em]">EASTERN WEAR</h3>
+                                <div class="w-24 h-0.5 bg-amber-600 mx-auto my-4"></div>
+                                <a href="#products" class="bg-amber-600 text-white px-6 py-2 font-bold uppercase text-xs hover:bg-amber-700 transition">Discover</a>
                             </div>
                         </div>
-                        <div class="w-2/4 flex justify-center z-10 relative">
-                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-80 md:h-80 bg-white rounded-full blur-3xl opacity-60"></div>
-                            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=800&q=80" alt="Electronics Special Offer" loading="lazy" decoding="async" class="w-[90%] md:w-[70%] drop-shadow-2xl object-cover rounded-xl border border-gray-200">
+                    </div>
+
+                    <!-- Banner 7: Premium Watches & Accessories -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-black" aria-hidden="true">
+                        <div class="w-1/2 h-full relative">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80" alt="Premium Watches" class="absolute inset-0 w-full h-full object-cover opacity-70">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black w-full"></div>
                         </div>
-                        <div class="w-1/4 flex flex-col justify-center items-center z-10">
-                            <a href="#products" class="bg-gradient-to-b from-yellow-300 to-yellow-500 text-blue-900 font-black px-4 md:px-8 py-2 md:py-3 rounded-full shadow-[0_10px_0_#F57F17] hover:translate-y-1 hover:shadow-[0_5px_0_#F57F17] transition-all uppercase tracking-wider text-xs md:text-lg mb-4">Buy Now!</a>
-                            <div class="flex gap-2 opacity-70">
-                                <i class="fab fa-cc-visa text-xl md:text-3xl text-blue-800" aria-hidden="true"></i>
-                                <i class="fab fa-cc-mastercard text-xl md:text-3xl text-orange-600" aria-hidden="true"></i>
-                                <i class="fab fa-cc-paypal text-xl md:text-3xl text-blue-500" aria-hidden="true"></i>
-                            </div>
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pr-8 md:pr-20 relative z-10 text-white text-right ml-auto">
+                            <span class="text-[#D4AF37] font-bold tracking-widest text-xs md:text-sm uppercase mb-2">Luxury Accessories</span>
+                            <h2 class="text-3xl md:text-5xl font-black uppercase leading-none">Timeless<br>Elegance</h2>
+                            <p class="mt-3 text-xs md:text-sm text-gray-400">Premium watches and accessories for him & her.</p>
+                            <a href="#products" class="mt-4 border border-[#D4AF37] text-[#D4AF37] px-6 py-2 hover:bg-[#D4AF37] hover:text-black transition font-bold">Shop Accessories</a>
+                        </div>
+                    </div>
+
+                    <!-- Banner 8: Mega Flash Sale -->
+                    <div class="carousel-slide h-full relative overflow-hidden bg-red-600 flex items-center justify-center" aria-hidden="true" style="background-image: radial-gradient(circle, #E53935 20%, #B71C1C 100%);">
+                        <div class="absolute inset-0 flex justify-center items-center opacity-10">
+                            <i class="fas fa-bolt text-[300px]" aria-hidden="true"></i>
+                        </div>
+                        <div class="relative z-10 text-center text-white px-4">
+                            <div class="inline-block bg-yellow-400 text-red-900 font-black px-6 py-2 rounded-full text-sm md:text-lg uppercase tracking-widest mb-4 transform -rotate-2 shadow-lg">Limited Time Only</div>
+                            <h2 class="text-4xl md:text-7xl font-black uppercase italic leading-none drop-shadow-xl">Mega Flash<br><span class="text-yellow-400">SALE</span></h2>
+                            <p class="mt-4 text-sm md:text-xl font-bold bg-black/40 inline-block px-4 py-1 rounded">Up to 70% OFF on Top Categories</p><br>
+                            <a href="#products" class="inline-block mt-6 bg-white text-red-700 px-8 py-3 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-[0_10px_20px_rgba(0,0,0,0.3)]">GRAB DEALS NOW</a>
                         </div>
                     </div>
                     
-                    <!-- Slide 4: Men's Cloths & Accessories -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex" aria-hidden="true">
-                        <!-- Diagonal Segments -->
-                        <div class="w-1/4 h-full bg-[#5E2B7A] relative" style="clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);">
-                            <div class="absolute left-6 top-6 text-white text-center">
-                                <i class="fas fa-crown text-2xl md:text-4xl" aria-hidden="true"></i><br>
-                                <span class="text-[8px] md:text-xs font-bold uppercase tracking-widest">Men Cloths</span>
-                            </div>
-                            <div class="absolute bottom-10 left-10 text-white">
-                                <h2 class="text-3xl md:text-6xl font-light italic leading-none">get<br><span class="font-black normal-case text-4xl md:text-7xl">this!</span></h2>
-                                <h3 class="text-sm md:text-xl font-bold tracking-widest mt-1">TOPS & TEES</h3>
-                                <a href="#products" class="inline-block bg-[#E53935] text-white text-xs font-bold px-4 py-1 mt-2 hover:bg-white hover:text-[#E53935] transition">SHOP NOW</a>
-                            </div>
-                        </div>
-                        <div class="w-1/4 h-full bg-[#E53935] relative -ml-16" style="clip-path: polygon(40% 0, 100% 0, 60% 100%, 0% 100%);">
-                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" alt="Sports Shoes" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
-                            <div class="absolute top-1/4 right-10 bg-yellow-400 text-gray-900 font-black rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-xs md:text-sm text-center shadow-lg transform rotate-12">20%<br>OFF</div>
-                        </div>
-                        <div class="w-1/4 h-full bg-[#F9A825] relative -ml-16" style="clip-path: polygon(40% 0, 100% 0, 60% 100%, 0% 100%);">
-                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=400&q=80" alt="Sunglasses" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
-                            <div class="absolute top-10 left-10 bg-white text-gray-900 font-black rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-xs md:text-sm text-center shadow-lg transform -rotate-12 border-2 border-dashed border-gray-900">50%<br>OFF</div>
-                        </div>
-                        <div class="w-1/3 h-full bg-[#0D47A1] relative -ml-16 flex-grow" style="clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);">
-                            <img src="https://images.unsplash.com/photo-1593030761757-71fae46af504?auto=format&fit=crop&w=600&q=80" alt="Men Fashion Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500">
-                            <div class="absolute bottom-10 right-10 bg-red-600 text-white font-black rounded-full w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-xs md:text-sm text-center shadow-lg transform rotate-6 border-2 border-white">20%<br>OFF</div>
-                        </div>
-                    </div>
                 </div>
-                
                 <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
                 <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
                 <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
@@ -2182,7 +2171,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
-            # 🌟 NEW: Grid Fix Logic - Pads empty spaces with beautiful placeholder cards 🌟
+            # 🌟 GRID FILLER FIX: Exactly 6 slots generated per category 🌟
             for idx in range(6):
                 is_lazy = True
                 if h_page == 1 and idx < 3: 
@@ -2696,7 +2685,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             } catch(e) { console.log('Trustpilot error:', e); }
         }
 
-document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+        document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
             btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
