@@ -1050,24 +1050,12 @@ def get_html_footer():
                     <img src="/Png logo.jpg" alt="ASM VEO Logo" class="h-14 mb-4 object-contain opacity-90 rounded">
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
                     <div class="flex gap-3">
-                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://x.com/asmveo" target="_blank" aria-label="X (Twitter) Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
-                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://linkedin.com/company/asmveo" target="_blank" aria-label="LinkedIn Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
-                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                        </a>
+                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="https://x.com/asmveo" target="_blank" aria-label="X (Twitter) Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+                        <a href="https://linkedin.com/company/asmveo" target="_blank" aria-label="LinkedIn Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -1740,7 +1728,10 @@ def process_woocommerce_csv():
         
         escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
         alt_name = prod['name'].replace('"', '&quot;')
-        wa_link = f"https://wa.me/923425478683?text={urllib.parse.quote(f'Hi, I want to order {prod['name']} (Rs {prod['final_price']}). Is it available?')}"
+        
+        # 🌟 NEW FIX: Correctly isolated the WhatsApp string to fix syntax errors 🌟
+        wa_text = f"Hi, I want to order {prod['name']} (Rs {prod['final_price']}). Is it available?"
+        wa_link = f"https://wa.me/923425478683?text={urllib.parse.quote(wa_text)}"
         
         next_prod_html = ""
         if i + 1 < len(products_list):
@@ -1788,6 +1779,16 @@ def process_woocommerce_csv():
                         <span class="text-4xl font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
                         <span class="text-xl text-gray-500 font-bold line-through">Rs {prod['fake_price']}</span>
                         {f'<span class="bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-lg">Save Rs {prod["fake_price"] - prod["final_price"]}</span>' if discount_pct > 0 else ''}
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl mb-6 border border-gray-100 dark:border-gray-600">
+                        <div class="flex justify-between text-xs font-bold text-gray-600 dark:text-gray-300 mb-2">
+                            <span><i class="fas fa-eye" aria-hidden="true"></i> <span id="liveViewers">15</span> people are viewing this right now</span>
+                            <span><i class="fas fa-fire text-orange-500" aria-hidden="true"></i> Hurry, only {stock_left} left!</span>
+                        </div>
+                        <div class="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-600">
+                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: {stock_pct}%"></div>
+                        </div>
                     </div>
                     
                     <div class="flex items-center gap-2 mb-6 text-sm">
@@ -1872,6 +1873,7 @@ def process_woocommerce_csv():
             }});
         </script>
         """
+        
         with open(f"output/product/{prod['slug']}.html", "w", encoding="utf-8") as f: 
             f.write(minify_html(prod_html + prod_script + get_html_footer()))
 
@@ -2054,7 +2056,7 @@ def process_woocommerce_csv():
     
     # 🌟 NEW FIX: Ensuring only categories with >= 6 items appear on Home to fix Empty Spaces 🌟
     valid_home_cats = [(cat, prods) for cat, prods in sections_dict.items() if len(prods) >= 6]
-    valid_home_cats.sort(key=lambda x: len(x[1]), reverse=True) # Show biggest categories first
+    valid_home_cats.sort(key=lambda x: len(x[1]), reverse=True) 
     
     if len(valid_home_cats) < 2: 
         valid_home_cats = list(sections_dict.items())
@@ -2068,7 +2070,6 @@ def process_woocommerce_csv():
         home_html = get_html_header(page_title, categories_list, "Premium online shopping in Pakistan for Electronics, Fashion & Home Appliances. Buy quality products with Cash on Delivery & fast shipping.")
         
         if h_page == 1:
-            # 🌟 NEW: Custom Designed Hero Banners based on bannr.png 🌟
             home_html += """
             <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan</h1>
             
@@ -2136,7 +2137,6 @@ def process_woocommerce_csv():
                         </div>
                     </div>
                 </div>
-                
                 <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Previous slide">
                     <i class="fas fa-chevron-left text-sm md:text-base" aria-hidden="true"></i>
                 </button>
@@ -2185,15 +2185,13 @@ def process_woocommerce_csv():
             if icon not in used_icons:
                 used_icons.add(icon)
                 unique_top_cats.append(cat)
-            if len(unique_top_cats) >= 8: 
-                break
+            if len(unique_top_cats) >= 8: break
             
         if len(unique_top_cats) < 8:
             for cat in categories_list:
                 if cat not in unique_top_cats: 
                     unique_top_cats.append(cat)
-                if len(unique_top_cats) >= 8: 
-                    break
+                if len(unique_top_cats) >= 8: break
 
         for cat in unique_top_cats:
             c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
@@ -2293,7 +2291,6 @@ def process_woocommerce_csv():
             """
             for idx, prod in enumerate(prods[:6]):
                 home_html += generate_product_card(prod, lazy=(not (h_page == 1 and idx < 3)))
-                
             home_html += """
                 </div>
             </div>
