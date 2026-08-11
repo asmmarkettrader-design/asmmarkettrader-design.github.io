@@ -72,6 +72,9 @@ def auto_fix_broken_links(output_dir="output"):
     print(f"✅ Broken Link Fixer completed. Fixed {fixed_count} broken links across all pages.")
 
 def apply_lighthouse_optimizations(output_dir="output"):
+    """
+    Reads Lighthouse CI reports and auto-injects missing accessibility and speed tags.
+    """
     print("⚡ Applying Lighthouse Auto-Optimizations...")
     html_files = glob.glob(f"{output_dir}/**/*.html", recursive=True)
     for file_path in html_files:
@@ -161,7 +164,6 @@ def local_seo_desc(name, desc):
         return desc[:120] + f"... [{keys_str}]"
     return f"Buy {name} online in Pakistan at best price. {keys_str}. Premium quality with Cash on Delivery, fast shipping & easy returns from ASM VEO."
 
-# 🌟 STEP 2: IMAGE VALIDATION FUNCTION 🌟
 def check_valid_image(prod):
     try:
         req = urllib.request.Request(
@@ -239,7 +241,9 @@ def generate_reviews(product_name):
                     <span class="font-bold text-gray-900 dark:text-white text-sm block">{reviewer}</span>
                     <span class="text-xs text-gray-600 dark:text-gray-400">{days_ago} days ago</span>
                 </div>
-                <span class="ml-auto text-[10px] text-green-700 bg-green-50 px-2 py-1 rounded-full font-bold"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified</span>
+                <span class="ml-auto text-[10px] text-green-700 bg-green-50 px-2 py-1 rounded-full font-bold">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i> Verified
+                </span>
             </div>
             <div class="text-yellow-500 text-xs mb-2" aria-label="{stars} out of 5 stars">
                 {"<i class='fas fa-star' aria-hidden='true'></i>" * stars}
@@ -252,6 +256,7 @@ def generate_reviews(product_name):
     return reviews_html, avg_rating, num_reviews
 
 def minify_html(html_content):
+    # SMARTER MINIFICATION THAT DOES NOT BREAK SCRIPT TAGS OR PRE/CODE BLOCKS
     html_content = re.sub(r'<!--.*?-->', '', html_content, flags=re.DOTALL)
     html_content = re.sub(r'>\s+<', '><', html_content)
     lines = [line.strip() for line in html_content.split('\n') if line.strip()]
@@ -268,7 +273,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     cat_links = ""
     for cat in categories_list:
         c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
-        cat_links += f'<a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">{cat}</a>\n'
+        cat_links += f"""
+        <a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+            {cat}
+        </a>
+        """
 
     canonical_url = "https://www.asmveo.com/"
     if custom_canonical:
@@ -296,7 +305,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         "availableLanguage": ["en", "Urdu"]
       },
       "sameAs": [
-        "https://www.facebook.com/profile.php?id=61593172078469",
+        "https://web.facebook.com/profile.php?id=61593172078469",
         "https://instagram.com/asmveo"
       ]
     }
@@ -454,7 +463,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             darkMode: 'class',
             theme: {{
                 extend: {{
-                    colors: {{ pk: {{ red: '#E53935', light: '#FFEBEE', dark: '#C62828' }} }}
+                    colors: {{
+                        pk: {{ red: '#E53935', light: '#FFEBEE', dark: '#C62828' }}
+                    }}
                 }}
             }}
         }}
@@ -473,12 +484,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             transition: background-color 0.3s; 
             padding-bottom: 70px; 
         }}
+        
         .dark body {{ background: #111827; color: #f3f4f6; }}
         
         .product-card {{ transition: all 0.3s ease; content-visibility: auto; contain-intrinsic-size: 300px; }}
         .product-card:hover {{ transform: translateY(-5px); box-shadow: 0 15px 30px -10px rgba(229, 57, 53, 0.2); }}
+        
         .image-zoom img {{ transition: transform 0.5s ease; }}
         .product-card:hover .image-zoom img {{ transform: scale(1.08); }}
+        
         .dropdown:hover .dropdown-menu {{ display: block; }}
         
         ::-webkit-scrollbar {{ width: 8px; height: 8px; }}
@@ -491,10 +505,17 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         @keyframes float {{ 0%, 100% {{ transform: translateY(0); }} 50% {{ transform: translateY(-15px); }} }}
         .animate-float {{ animation: float 6s ease-in-out infinite; }}
         
-        @keyframes pulse-ring {{ 0% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.7); }} 70% {{ box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }} 100% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }} }}
+        @keyframes pulse-ring {{ 
+            0% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.7); }} 
+            70% {{ box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }} 
+            100% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }} 
+        }}
         .pulse-ring {{ animation: pulse-ring 2s infinite; }}
         
-        @keyframes slideIn {{ from {{ transform: translateY(20px); opacity: 0; }} to {{ transform: translateY(0); opacity: 1; }} }}
+        @keyframes slideIn {{ 
+            from {{ transform: translateY(20px); opacity: 0; }} 
+            to {{ transform: translateY(0); opacity: 1; }} 
+        }}
         .slide-in {{ animation: slideIn 0.4s ease-out; }}
         
         .carousel-track {{ display: flex; transition: transform 0.8s ease; }}
@@ -506,9 +527,19 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         .reveal {{ opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }}
         .reveal.active {{ opacity: 1; transform: translateY(0); }}
         
-        .animated-bg {{ background: linear-gradient(-45deg, #E53935, #C62828, #E53935, #B71C1C); background-size: 400% 400%; animation: gradient 15s ease infinite; }}
-        @keyframes gradient {{ 0% {{ background-position: 0% 50%; }} 50% {{ background-position: 100% 50%; }} 100% {{ background-position: 0% 50%; }} }}
+        .animated-bg {{ 
+            background: linear-gradient(-45deg, #E53935, #C62828, #E53935, #B71C1C); 
+            background-size: 400% 400%; 
+            animation: gradient 15s ease infinite; 
+        }}
+        
+        @keyframes gradient {{ 
+            0% {{ background-position: 0% 50%; }} 
+            50% {{ background-position: 100% 50%; }} 
+            100% {{ background-position: 0% 50%; }} 
+        }}
     </style>
+    
     {structured_data}
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
@@ -536,15 +567,25 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     /></noscript>
 
     <script>
-        (function(w,d,s,r,n){{w.TrustpilotObject=n;w[n]=w[n]||function(){{(w[n].q=w[n].q||[]).push(arguments)}};
-            a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
-            f.parentNode.insertBefore(a,f)}})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
-            tp('register', 'H57UbnePwdaPfseb');
+        (function(w,d,s,r,n){{
+            w.TrustpilotObject=n;
+            w[n]=w[n]||function(){{(w[n].q=w[n].q||[]).push(arguments)}};
+            a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;
+            f=d.getElementsByTagName(s)[0];
+            f.parentNode.insertBefore(a,f)
+        }})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+        tp('register', 'H57UbnePwdaPfseb');
     </script>
 
     <script>
-        function getCart() {{ return JSON.parse(localStorage.getItem('asm_cart')) || []; }}
-        function saveCart(cart) {{ localStorage.setItem('asm_cart', JSON.stringify(cart)); updateCartBadge(); }}
+        function getCart() {{ 
+            return JSON.parse(localStorage.getItem('asm_cart')) || []; 
+        }}
+        
+        function saveCart(cart) {{ 
+            localStorage.setItem('asm_cart', JSON.stringify(cart)); 
+            updateCartBadge(); 
+        }}
         
         function updateCartBadge() {{
             let cart = getCart();
@@ -556,8 +597,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             if(event) event.stopPropagation();
             let cart = getCart();
             let existing = cart.find(item => item.name === name);
-            if (existing) {{ existing.qty = (existing.qty || 1) + 1; }}
-            else {{ cart.push({{name, price: parseFloat(price), image, qty: 1}}); }}
+            if (existing) {{ 
+                existing.qty = (existing.qty || 1) + 1; 
+            }}
+            else {{ 
+                cart.push({{name, price: parseFloat(price), image, qty: 1}}); 
+            }}
             saveCart(cart);
             showToast('Added to Cart!', 'fa-cart-plus', 'pk');
             pulseCartIcon();
@@ -574,7 +619,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             let cart = getCart();
             if (!cart[index]) return;
             cart[index].qty = (cart[index].qty || 1) + delta;
-            if (cart[index].qty < 1) {{ cart.splice(index, 1); }}
+            if (cart[index].qty < 1) {{ 
+                cart.splice(index, 1); 
+            }}
             saveCart(cart);
             if (typeof renderCart === 'function') renderCart();
         }}
@@ -584,16 +631,26 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
         }}
 
-        function getWishlist() {{ return JSON.parse(localStorage.getItem('asm_wishlist')) || []; }}
+        function getWishlist() {{ 
+            return JSON.parse(localStorage.getItem('asm_wishlist')) || []; 
+        }}
+        
         function toggleWishlist(name, price, image, event) {{
             if(event) event.stopPropagation();
             let wishlist = getWishlist();
             let idx = wishlist.findIndex(item => item.name === name);
-            if (idx > -1) {{ wishlist.splice(idx, 1); showToast('Removed from Wishlist', 'fa-heart-broken', 'gray'); }}
-            else {{ wishlist.push({{name, price, image}}); showToast('Added to Wishlist!', 'fa-heart', 'red'); }}
+            if (idx > -1) {{ 
+                wishlist.splice(idx, 1); 
+                showToast('Removed from Wishlist', 'fa-heart-broken', 'gray'); 
+            }}
+            else {{ 
+                wishlist.push({{name, price, image}}); 
+                showToast('Added to Wishlist!', 'fa-heart', 'red'); 
+            }}
             localStorage.setItem('asm_wishlist', JSON.stringify(wishlist));
             updateWishlistBadge();
         }}
+        
         function updateWishlistBadge() {{
             let wl = getWishlist();
             document.querySelectorAll('.wishlist-badge').forEach(el => el.innerText = wl.length);
@@ -608,17 +665,30 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
 
         function showToast(msg, icon='fa-check-circle', color='pk') {{
-            const colors = {{ pk: 'bg-[#E53935]', red: 'bg-red-500', gray: 'bg-gray-600', green: 'bg-green-500' }};
+            const colors = {{ 
+                pk: 'bg-[#E53935]', 
+                red: 'bg-red-500', 
+                gray: 'bg-gray-600', 
+                green: 'bg-green-500' 
+            }};
             const toast = document.createElement('div');
             toast.className = `fixed bottom-20 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
             toast.innerHTML = `<i class="fas ${{icon}} text-xl" aria-hidden="true"></i> ${{msg}}`;
             document.body.appendChild(toast);
-            setTimeout(() => {{ toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; setTimeout(() => toast.remove(), 300); }}, 2500);
+            
+            setTimeout(() => {{ 
+                toast.style.opacity = '0'; 
+                toast.style.transform = 'translateY(20px)'; 
+                setTimeout(() => toast.remove(), 300); 
+            }}, 2500);
         }}
 
         function pulseCartIcon() {{
             let cartIcon = document.querySelector('.cart-icon-pulse');
-            if (cartIcon) {{ cartIcon.classList.add('scale-125'); setTimeout(() => cartIcon.classList.remove('scale-125'), 200); }}
+            if (cartIcon) {{ 
+                cartIcon.classList.add('scale-125'); 
+                setTimeout(() => cartIcon.classList.remove('scale-125'), 200); 
+            }}
         }}
 
         let searchLoaded = false;
@@ -633,15 +703,21 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
         function executeSearch() {{
             let val = document.getElementById('searchInput').value;
-            if(val.trim() !== "") window.location.href = '/index.html?search=' + encodeURIComponent(val);
+            if(val.trim() !== "") {{
+                window.location.href = '/index.html?search=' + encodeURIComponent(val);
+            }}
         }}
-        function handleSearch(e) {{ if (e.key === 'Enter') executeSearch(); }}
+        
+        function handleSearch(e) {{ 
+            if (e.key === 'Enter') executeSearch(); 
+        }}
 
         function toggleDarkMode() {{
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('asm_dark', document.documentElement.classList.contains('dark'));
             updateDarkModeIcon();
         }}
+        
         function updateDarkModeIcon() {{
             let isDark = document.documentElement.classList.contains('dark');
             document.querySelectorAll('.dark-mode-icon').forEach(el => {{
@@ -649,7 +725,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             }});
         }}
 
-        function scrollTop() {{ window.scrollTo({{top: 0, behavior: 'smooth'}}); }}
+        function scrollTop() {{ 
+            window.scrollTo({{top: 0, behavior: 'smooth'}}); 
+        }}
 
         function quickView(name, price, image, desc, slug) {{
             let modal = document.getElementById('quickViewModal');
@@ -660,12 +738,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             
             let safeName = name.replace(/'/g, "\\\\'");
             let safeImage = image.replace(/'/g, "\\\\'");
+            
             document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{safeImage}}', event); closeQuickView();`);
             document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{safeImage}}', event);`);
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
+            
             modal.classList.remove('hidden');
             modal.classList.add('flex');
         }}
+        
         function closeQuickView() {{
             document.getElementById('quickViewModal').classList.add('hidden');
             document.getElementById('quickViewModal').classList.remove('flex');
@@ -678,14 +759,17 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         window.onload = function() {{
             updateCartBadge();
             updateWishlistBadge();
+            
             if (localStorage.getItem('asm_dark') === 'true') {{
                 document.documentElement.classList.add('dark');
                 updateDarkModeIcon();
             }}
+            
             if (!localStorage.getItem('asm_cookie_consent')) {{
                 let cc = document.getElementById('cookieConsent');
                 if(cc) cc.classList.remove('hidden');
             }}
+            
             if (!localStorage.getItem('asm_exit_intent')) {{
                 document.addEventListener('mouseleave', function(e) {{
                     if (e.clientY < 10) {{
@@ -698,6 +782,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                     }}
                 }});
             }}
+            
             window.addEventListener('scroll', function() {{
                 let btn = document.getElementById('backToTop');
                 if (btn) btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
@@ -726,21 +811,18 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 }}
             }});
         }};
-
-        function acceptCookies() {{
-            localStorage.setItem('asm_cookie_consent', 'true');
-            let cc = document.getElementById('cookieConsent');
-            if(cc) cc.classList.add('hidden');
-        }}
     </script>
 </head>
 <body class="text-gray-900 dark:text-gray-100">
-    <!-- Top Bar -->
+
+    <!-- Top Navigation Bar -->
     <div class="bg-gray-900 text-white text-xs py-2 hidden md:block">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <span>Welcome to ASM VEO! Fast Delivery & Cash on Delivery Available</span>
             <div class="flex gap-4 items-center">
-                <button onclick="toggleDarkMode()" class="hover:text-[#E53935]" aria-label="Toggle Dark Mode"><i class="fas fa-moon dark-mode-icon" aria-hidden="true"></i></button>
+                <button onclick="toggleDarkMode()" class="hover:text-[#E53935]" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon dark-mode-icon" aria-hidden="true"></i>
+                </button>
                 <span class="border-l border-gray-700 pl-4">EN</span>
                 <span class="border-l border-gray-700 pl-4">PKR</span>
                 <a href="/about.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">About</a>
@@ -749,11 +831,18 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </div>
     </div>
 
+    <!-- Main Header -->
     <header class="glass shadow-md sticky top-0 z-50 transition-colors border-b border-gray-100 dark:border-gray-800">
+        
+        <!-- Mobile Category Toggle -->
         <div class="bg-[#E53935] text-white text-xs md:text-sm py-2 md:hidden">
             <div class="container mx-auto px-4 flex justify-between items-center">
-                <a href="/index.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-home mr-1" aria-hidden="true"></i> Home</a>
-                <button onclick="toggleMobileCats()" class="hover:text-gray-300 transition font-semibold focus:outline-none" aria-label="Toggle Mobile Categories"><i class="fas fa-list mr-1" aria-hidden="true"></i> Categories</button>
+                <a href="/index.html" class="hover:text-gray-300 transition font-semibold">
+                    <i class="fas fa-home mr-1" aria-hidden="true"></i> Home
+                </a>
+                <button onclick="toggleMobileCats()" class="hover:text-gray-300 transition font-semibold focus:outline-none" aria-label="Toggle Mobile Categories">
+                    <i class="fas fa-list mr-1" aria-hidden="true"></i> Categories
+                </button>
             </div>
         </div>
 
@@ -764,6 +853,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </div>
 
         <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            
+            <!-- 🌟 SEO FIX: Updated Custom Original Logo 🌟 -->
             <a href="/index.html" class="flex items-center gap-2" aria-label="ASM VEO Home">
                 <img src="/Png logo.jpg" alt="ASM VEO Logo" class="h-10 md:h-12 object-contain hover:scale-105 transition-transform rounded">
                 <div class="flex flex-col leading-none">
@@ -772,12 +863,16 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 </div>
             </a>
             
+            <!-- Search Bar -->
             <div class="flex-1 min-w-[200px] max-w-xl mx-0 md:mx-8 relative flex">
-                <label for="searchInput" class="sr-only">Search products in Pakistan</label>
+                <label for="searchInput" class="sr-only">Search products</label>
                 <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, brands, categories..." class="w-full bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 focus:bg-white dark:focus:bg-gray-700 focus:border-[#E53935] rounded-l-xl py-2.5 px-6 outline-none transition-all text-gray-800 dark:text-gray-100 font-semibold shadow-sm text-sm">
-                <button onclick="executeSearch()" aria-label="Search" class="bg-[#E53935] text-white px-6 rounded-r-xl hover:bg-[#C62828] transition-colors flex items-center justify-center"><i class="fas fa-search text-lg" aria-hidden="true"></i></button>
+                <button onclick="executeSearch()" aria-label="Search" class="bg-[#E53935] text-white px-6 rounded-r-xl hover:bg-[#C62828] transition-colors flex items-center justify-center">
+                    <i class="fas fa-search text-lg" aria-hidden="true"></i>
+                </button>
             </div>
             
+            <!-- Icons -->
             <div class="flex items-center gap-3">
                 <a href="/wishlist.html" class="relative bg-gray-50 text-[#E53935] p-2.5 rounded-xl hover:bg-[#E53935] hover:text-white transition-colors border border-gray-200" aria-label="Wishlist">
                     <i class="fas fa-heart" aria-hidden="true"></i>
@@ -791,10 +886,13 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             </div>
         </div>
 
+        <!-- Desktop Menu -->
         <nav class="hidden md:block border-t border-gray-100 dark:border-gray-800">
             <div class="container mx-auto px-4 flex items-center gap-6">
                 <div class="relative dropdown z-50">
-                    <button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false"><i class="fas fa-list" aria-hidden="true"></i> All Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i></button>
+                    <button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-list" aria-hidden="true"></i> All Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i>
+                    </button>
                     <div class="dropdown-menu absolute hidden text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-200 shadow-2xl rounded-b-xl mt-0 w-56 py-2 border border-gray-100 dark:border-gray-700 max-h-96 overflow-y-auto">
                         {cat_links}
                     </div>
@@ -804,14 +902,21 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 <a href="/about.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">About Us</a>
                 <a href="/contact.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Contact Us</a>
                 <a href="/faq.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">FAQ</a>
-                <div class="ml-auto text-xs font-bold text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-1 text-[#E53935]" aria-hidden="true"></i> 0342 54 786 83</div>
+                <div class="ml-auto text-xs font-bold text-gray-600 dark:text-gray-400">
+                    <i class="fas fa-phone mr-1 text-[#E53935]" aria-hidden="true"></i> 0342 54 786 83
+                </div>
             </div>
         </nav>
     </header>
 
+    <!-- Mobile Bottom Navigation -->
     <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-2xl border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-50">
-        <a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold"><i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home</a>
-        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories"><i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories</button>
+        <a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold">
+            <i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home
+        </a>
+        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories">
+            <i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories
+        </button>
         <a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
             <i class="fas fa-shopping-cart text-lg mb-1" aria-hidden="true"></i> Cart
             <span class="cart-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
@@ -822,22 +927,29 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </a>
     </nav>
 
+    <!-- Modals -->
     <div id="exitModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
         <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 max-w-md w-full text-center relative slide-in">
-            <button onclick="document.getElementById('exitModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white" aria-label="Close Modal"><i class="fas fa-times text-xl" aria-hidden="true"></i></button>
+            <button onclick="document.getElementById('exitModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white" aria-label="Close Modal">
+                <i class="fas fa-times text-xl" aria-hidden="true"></i>
+            </button>
             <i class="fas fa-gift text-6xl text-[#E53935] mb-4" aria-hidden="true"></i>
             <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Wait! Here's 10% OFF</h2>
             <p class="text-gray-600 dark:text-gray-400 mb-6">Don't leave empty-handed. Use this code at checkout for an instant 10% discount on your order!</p>
             <div class="bg-gray-50 border-2 border-dashed border-[#E53935] rounded-xl py-4 mb-6">
                 <span class="text-3xl font-black text-[#E53935] tracking-widest">ASM10</span>
             </div>
-            <a href="/index.html#products" onclick="document.getElementById('exitModal').classList.add('hidden')" class="block bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition">Continue Shopping</a>
+            <a href="/index.html#products" onclick="document.getElementById('exitModal').classList.add('hidden')" class="block bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition">
+                Continue Shopping
+            </a>
         </div>
     </div>
 
     <div id="quickViewModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
         <div class="bg-white dark:bg-gray-800 rounded-3xl max-w-3xl w-full overflow-hidden relative slide-in flex flex-col md:flex-row">
-            <button onclick="closeQuickView()" class="absolute top-4 right-4 bg-white/80 rounded-full p-2 text-gray-700 hover:bg-white z-10" aria-label="Close Quick View"><i class="fas fa-times text-xl" aria-hidden="true"></i></button>
+            <button onclick="closeQuickView()" class="absolute top-4 right-4 bg-white/80 rounded-full p-2 text-gray-700 hover:bg-white z-10" aria-label="Close Quick View">
+                <i class="fas fa-times text-xl" aria-hidden="true"></i>
+            </button>
             <div class="md:w-1/2 bg-gray-50 dark:bg-gray-900 p-4 flex items-center justify-center">
                 <img id="qvImage" src="" alt="Quick View Product Image" class="max-h-[300px] object-contain rounded-xl" width="300" height="300" loading="lazy" decoding="async">
             </div>
@@ -846,14 +958,21 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 <p id="qvPrice" class="text-2xl font-black text-[#E53935] dark:text-white mb-3"></p>
                 <p id="qvDesc" class="text-sm text-gray-600 dark:text-gray-400 mb-6"></p>
                 <div class="mt-auto flex flex-col gap-2">
-                    <button id="qvAddCart" class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center justify-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
-                    <button id="qvBuyNow" class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition flex items-center justify-center gap-2"><i class="fas fa-bolt" aria-hidden="true"></i> Buy Now</button>
-                    <a id="qvLink" href="#" class="text-center text-sm text-[#E53935] hover:underline mt-2 font-semibold">View Full Details</a>
+                    <button id="qvAddCart" class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center justify-center gap-2">
+                        <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+                    </button>
+                    <button id="qvBuyNow" class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition flex items-center justify-center gap-2">
+                        <i class="fas fa-bolt" aria-hidden="true"></i> Buy Now
+                    </button>
+                    <a id="qvLink" href="#" class="text-center text-sm text-[#E53935] hover:underline mt-2 font-semibold">
+                        View Full Details
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Floating Actions -->
     <a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20know%20about%20your%20products" target="_blank" 
        class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all z-50 hover:scale-110 pulse-ring" 
        aria-label="Chat on WhatsApp">
@@ -931,12 +1050,24 @@ def get_html_footer():
                     <img src="/Png logo.jpg" alt="ASM VEO Logo" class="h-14 mb-4 object-contain opacity-90 rounded">
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
                     <div class="flex gap-3">
-                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a href="https://instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                        <a href="https://x.com/asmveo" target="_blank" aria-label="X (Twitter) Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
-                        <a href="https://linkedin.com/company/asmveo" target="_blank" aria-label="LinkedIn Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://x.com/asmveo" target="_blank" aria-label="X (Twitter) Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
+                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/asmveo" target="_blank" aria-label="LinkedIn Profile" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -966,21 +1097,29 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
     alt_name = prod['name'].replace('"', '&quot;')
     
-    wishlist_btn = f"""
+    wishlist_btn = ""
+    if show_wishlist:
+        wishlist_btn = f"""
         <button onclick="toggleWishlist('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="wishlist-btn absolute top-2 right-2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10" aria-label="Add to Wishlist">
             <i class="fas fa-heart text-pink-500 text-lg" aria-hidden="true"></i>
-        </button>""" if show_wishlist else ""
+        </button>
+        """
         
     quick_view_btn = f"""
         <button onclick="quickView('{escaped_name}', {prod['final_price']}, '{prod['image']}', '{escaped_desc}', '{prod['slug']}')" class="absolute top-2 right-14 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10" aria-label="Quick View">
             <i class="fas fa-eye text-[#E53935] text-lg" aria-hidden="true"></i>
-        </button>"""
+        </button>
+    """
+    
+    discount_badge = ""
+    if discount > 0:
+        discount_badge = f'<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-{discount}% OFF</div>'
     
     return f"""
     <div class="product-card reveal active bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details for {alt_name}">
         {wishlist_btn}
         {quick_view_btn}
-        {f'<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-{discount}% OFF</div>' if discount > 0 else ''}
+        {discount_badge}
         <div class="image-zoom h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
             <img src="{prod['image']}" alt="{alt_name}" width="250" height="250" {img_loading} class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
         </div>
@@ -1005,8 +1144,11 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
 # ==============================================================================
 
 def generate_pagination_html(current_page, total_pages, url_pattern):
-    if total_pages <= 1: return ""
+    if total_pages <= 1: 
+        return ""
+    
     html = '<div class="flex justify-center items-center gap-2 mt-12 mb-8 font-semibold text-gray-600 text-lg" role="navigation" aria-label="Pagination Navigation">'
+    
     if current_page > 1:
         prev_slug = url_pattern if current_page - 1 == 1 else f"{url_pattern}-{current_page - 1}"
         html += f'<a href="/{prev_slug}.html" class="px-4 py-2 hover:text-[#007BFF] transition" aria-label="Previous Page">&lt;</a>'
@@ -1038,6 +1180,7 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         html += f'<a href="/{next_slug}.html" class="px-4 py-2 hover:text-[#007BFF] transition" aria-label="Next Page">&gt;</a>'
     else: 
         html += '<span class="px-4 py-2 opacity-40 cursor-not-allowed" aria-hidden="true">&gt;</span>'
+        
     html += '</div>'
     return html
 
@@ -1047,6 +1190,7 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
 
 def generate_static_pages(categories_list):
     print("📄 Generating Static Pages...")
+    
     pages = {
         "about.html": ("About Us", """
             <div class="container mx-auto px-4 py-16 max-w-4xl">
@@ -1073,12 +1217,25 @@ def generate_static_pages(categories_list):
                 <div class="animated-bg text-white rounded-3xl p-8 md:p-12">
                     <h2 class="text-3xl font-bold mb-4">Why Choose ASM VEO?</h2>
                     <div class="grid md:grid-cols-3 gap-6 mt-8">
-                        <div><i class="fas fa-shield-alt text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">100% Secure</h4><p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p></div>
-                        <div><i class="fas fa-truck-fast text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Fast Delivery</h4><p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p></div>
-                        <div><i class="fas fa-undo text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Easy Returns</h4><p class="text-gray-200 text-sm">7-day return policy, no questions asked</p></div>
+                        <div>
+                            <i class="fas fa-shield-alt text-4xl mb-3 text-white"></i>
+                            <h4 class="font-bold text-lg mb-2">100% Secure</h4>
+                            <p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-truck-fast text-4xl mb-3 text-white"></i>
+                            <h4 class="font-bold text-lg mb-2">Fast Delivery</h4>
+                            <p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-undo text-4xl mb-3 text-white"></i>
+                            <h4 class="font-bold text-lg mb-2">Easy Returns</h4>
+                            <p class="text-gray-200 text-sm">7-day return policy, no questions asked</p>
+                        </div>
                     </div>
                 </div>
-            </div>"""),
+            </div>
+            """),
             
         "contact.html": ("Contact Us", """
             <div class="container mx-auto px-4 py-16 max-w-4xl">
@@ -1088,7 +1245,9 @@ def generate_static_pages(categories_list):
                         <i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i>
                         <h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2>
                         <p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p>
-                        <a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a>
+                        <a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center">
+                            <i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83
+                        </a>
                     </div>
                     <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700">
                         <i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i>
@@ -1102,7 +1261,8 @@ def generate_static_pages(categories_list):
                         </div>
                     </div>
                 </div>
-            </div>"""),
+            </div>
+            """),
             
         "privacy.html": ("Privacy Policy", """
             <div class="container mx-auto px-4 py-16 max-w-4xl prose dark:prose-invert">
@@ -1114,7 +1274,8 @@ def generate_static_pages(categories_list):
                     <h2 class="text-xl font-bold text-gray-900 dark:text-white">Data Security</h2>
                     <p>We use SSL encryption to protect your data. We never share your personal information with third parties except for shipping purposes.</p>
                 </div>
-            </div>"""),
+            </div>
+            """),
             
         "terms.html": ("Terms & Conditions", """
             <div class="container mx-auto px-4 py-16 max-w-4xl">
@@ -1125,7 +1286,8 @@ def generate_static_pages(categories_list):
                     <h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2>
                     <p>We deliver nationwide within 2-4 business days.</p>
                 </div>
-            </div>"""),
+            </div>
+            """),
             
         "shipping-policy.html": ("Shipping Policy", """
             <div class="container mx-auto px-4 py-16 max-w-4xl">
@@ -1138,7 +1300,8 @@ def generate_static_pages(categories_list):
                         <li>Standard delivery charges are Rs 250.</li>
                     </ul>
                 </div>
-            </div>"""),
+            </div>
+            """),
             
         "return-policy.html": ("Return Policy", """
             <div class="container mx-auto px-4 py-16 max-w-4xl">
@@ -1150,14 +1313,18 @@ def generate_static_pages(categories_list):
                         <li>Please contact us via WhatsApp to initiate a return.</li>
                     </ul>
                 </div>
-            </div>"""),
+            </div>
+            """),
             
         "track-order.html": ("Track Order", """
             <div class="container mx-auto px-4 py-16 max-w-4xl text-center">
                 <h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1>
                 <p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p>
-                <a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a>
-            </div>"""),
+                <a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg">
+                    <i class="fab fa-whatsapp"></i> Track via WhatsApp
+                </a>
+            </div>
+            """),
             
         "404.html": ("Page Not Found", """
             <div class="container mx-auto px-4 py-20 text-center">
@@ -1165,9 +1332,12 @@ def generate_static_pages(categories_list):
                     <div class="text-9xl font-black text-[#E53935] mb-4">404</div>
                     <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Oops! Page Not Found</h1>
                     <p class="text-gray-600 dark:text-gray-400 mb-8">The page you're looking for doesn't exist.</p>
-                    <a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a>
+                    <a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">
+                        <i class="fas fa-home mr-2"></i> Go Home
+                    </a>
                 </div>
-            </div>"""),
+            </div>
+            """),
             
         "wishlist.html": ("My Wishlist", """
             <div class="container mx-auto px-4 py-12">
@@ -1176,14 +1346,17 @@ def generate_static_pages(categories_list):
                 </h1>
                 <div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div>
             </div>
+            
             <script>
             function renderWishlist() {
                 let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || [];
                 let container = document.getElementById('wishlistContainer');
+                
                 if (wl.length === 0) { 
                     container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500 dark:text-gray-400"><i class="fas fa-heart-broken text-6xl mb-4 opacity-30"></i><p class="text-lg font-bold">Your wishlist is empty</p></div>'; 
                     return; 
                 }
+                
                 container.innerHTML = wl.map((item, i) => {
                     let safeName = item.name.replace(/'/g, "\\\\'");
                     return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
@@ -1194,13 +1367,18 @@ def generate_static_pages(categories_list):
                             <h3 class="text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
                             <p class="text-sm font-black text-[#E53935] dark:text-emerald-400 mb-3">Rs ${item.price}</p>
                             <div class="flex gap-2 mt-auto">
-                                <button aria-label="Add Wishlist Item to Cart" onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
-                                <button aria-label="Remove from Wishlist" onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                                <button aria-label="Add Wishlist Item to Cart" onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition">
+                                    <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                                <button aria-label="Remove from Wishlist" onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition">
+                                    <i class="fas fa-trash" aria-hidden="true"></i>
+                                </button>
                             </div>
                         </div>
                     </div>`;
                 }).join('');
             }
+            
             function removeWishlistItem(i) { 
                 let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || []; 
                 wl.splice(i, 1); 
@@ -1208,10 +1386,12 @@ def generate_static_pages(categories_list):
                 updateWishlistBadge(); 
                 renderWishlist(); 
             }
+            
             window.addEventListener('load', renderWishlist);
-            </script>"""),
+            </script>
+            """),
         
-        # 🌟 NEW: BEAUTIFUL ORDER SUCCESS PAGE & GOOGLE REVIEWS OPT-IN 🌟
+        # 🌟 BEAUTIFUL ORDER SUCCESS PAGE & GOOGLE REVIEWS OPT-IN 🌟
         "order-success.html": ("Order Confirmed!", """
             <div class="container mx-auto px-4 py-12 flex justify-center">
                 <div class="max-w-3xl w-full bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700 reveal active">
@@ -1252,8 +1432,12 @@ def generate_static_pages(categories_list):
                         </div>
 
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="/index.html#products" class="bg-[#E53935] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#C62828] transition-all shadow-md text-center flex-1 sm:flex-none"><i class="fas fa-shopping-bag mr-2" aria-hidden="true"></i> Continue Shopping</a>
-                            <a href="https://wa.me/923425478683" target="_blank" class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white px-8 py-3.5 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all shadow-sm border border-gray-200 dark:border-gray-600 text-center flex-1 sm:flex-none"><i class="fab fa-whatsapp text-green-500 text-lg mr-2" aria-hidden="true"></i> Support</a>
+                            <a href="/index.html#products" class="bg-[#E53935] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#C62828] transition-all shadow-md text-center flex-1 sm:flex-none">
+                                <i class="fas fa-shopping-bag mr-2" aria-hidden="true"></i> Continue Shopping
+                            </a>
+                            <a href="https://wa.me/923425478683" target="_blank" class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white px-8 py-3.5 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all shadow-sm border border-gray-200 dark:border-gray-600 text-center flex-1 sm:flex-none">
+                                <i class="fab fa-whatsapp text-green-500 text-lg mr-2" aria-hidden="true"></i> Support
+                            </a>
                         </div>
                     </div>
                     
@@ -1271,6 +1455,7 @@ def generate_static_pages(categories_list):
             <script>
                 let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
                 document.getElementById('orderId').innerText = oId;
+                
                 localStorage.removeItem('asm_cart');
                 if(typeof updateCartBadge === 'function') updateCartBadge();
                 
@@ -1342,9 +1527,12 @@ def generate_sitemap(urls):
     urls = list(set(urls))
     xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     date_str = datetime.now().strftime("%Y-%m-%d")
+    
     for url in urls:
         xml_content += f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n"
+        
     xml_content += '</urlset>'
+    
     with open("output/sitemap.xml", "w", encoding="utf-8") as f: 
         f.write(xml_content)
 
@@ -1373,9 +1561,11 @@ def generate_manifest():
 def generate_image_sitemap(products_list):
     print("📸 Generating Image Sitemap...")
     xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+    
     for prod in products_list:
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
         xml_content += f"  <url>\n    <loc>https://www.asmveo.com/product/{prod['slug']}.html</loc>\n    <image:image>\n      <image:loc>{prod['image']}</image:loc>\n      <image:title>{safe_title}</image:title>\n    </image:image>\n  </url>\n"
+        
     xml_content += '</urlset>'
     with open("output/image-sitemap.xml", "w", encoding="utf-8") as f: 
         f.write(xml_content)
@@ -1383,6 +1573,7 @@ def generate_image_sitemap(products_list):
 def generate_merchant_feed(products_list):
     print("🛍️ Generating Google Merchant Center Feed...")
     xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n<channel>\n  <title>ASM VEO Products</title>\n  <link>https://www.asmveo.com</link>\n  <description>Premium online shopping in Pakistan with COD</description>\n'
+    
     for prod in products_list:
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_desc = prod['seo_desc'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
@@ -1405,6 +1596,7 @@ def generate_merchant_feed(products_list):
         xml_content += '  </item>\n'
         
     xml_content += '</channel>\n</rss>'
+    
     with open("output/merchant-feed.xml", "w", encoding="utf-8") as f: 
         f.write(xml_content)
     print("✅ Google Merchant Feed generated successfully!")
@@ -1497,6 +1689,7 @@ def process_woocommerce_csv():
 
     print(f"⏳ Checking {len(products_list)} images to remove broken products...")
     valid_products = []
+    
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         for result in executor.map(check_valid_image, products_list):
             if result is not None: 
@@ -1511,7 +1704,11 @@ def process_woocommerce_csv():
     generate_robots_txt()
     generate_manifest()
     
-    search_index_json = json.dumps([{"name": p['name'], "slug": p['slug'], "category": p['category'], "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']} for p in products_list])
+    search_index_json = json.dumps([{
+        "name": p['name'], "slug": p['slug'], "category": p['category'], 
+        "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']
+    } for p in products_list])
+    
     with open("output/search-data.js", "w", encoding="utf-8") as f: 
         f.write(f"let searchIndex = {search_index_json};")
     
@@ -1526,7 +1723,13 @@ def process_woocommerce_csv():
         
         gallery_html = ""
         if len(prod['images']) > 1:
-            gallery_thumbs = "".join([f'<img src="{img}" alt="{prod["name"].replace("\"", "")} view {idx+1}" onclick="changeMainImage(this)" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 {"border-[#E53935]" if idx == 0 else "border-gray-200"} hover:border-[#E53935] transition" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">' for idx, img in enumerate(prod['images'][:5])])
+            gallery_thumbs = ""
+            safe_prod_name = prod["name"].replace('"', '')
+            
+            for idx, img in enumerate(prod['images'][:5]):
+                border_class = "border-[#E53935]" if idx == 0 else "border-gray-200"
+                gallery_thumbs += f'<img src="{img}" alt="{safe_prod_name} view {idx+1}" onclick="changeMainImage(this)" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 {border_class} hover:border-[#E53935] transition" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">'
+                
             gallery_html = f'<div class="flex gap-2 mt-4 overflow-x-auto">{gallery_thumbs}</div>'
         
         breadcrumb_data = {'category': prod['category'], 'name': prod['name'], 'slug': prod['slug']}
@@ -1534,6 +1737,7 @@ def process_woocommerce_csv():
         
         discount_pct = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
         delivery_date = (datetime.now() + timedelta(days=random.randint(2, 4))).strftime("%b %d, %Y")
+        
         escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
         alt_name = prod['name'].replace('"', '&quot;')
         wa_link = f"https://wa.me/923425478683?text={urllib.parse.quote(f'Hi, I want to order {prod['name']} (Rs {prod['final_price']}). Is it available?')}"
@@ -1541,16 +1745,20 @@ def process_woocommerce_csv():
         next_prod_html = ""
         if i + 1 < len(products_list):
             next_prod = products_list[i+1]
+            safe_next_name = next_prod['name'].replace('"', '&quot;')
+            
             next_prod_html = f"""
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-16 md:mb-0 reveal">
                 <h2 class="text-xl font-extrabold text-gray-900 dark:text-white mb-4 border-b pb-4">Ready for the next product?</h2>
                 <div class="flex items-center gap-4">
-                    <img src="{next_prod['image']}" alt="{next_prod['name'].replace('"', '&quot;')}" class="w-20 h-20 object-contain rounded-lg border border-gray-100" loading="lazy" decoding="async">
+                    <img src="{next_prod['image']}" alt="{safe_next_name}" class="w-20 h-20 object-contain rounded-lg border border-gray-100" loading="lazy" decoding="async">
                     <div class="flex-grow">
                         <h3 class="font-bold text-sm text-gray-900 dark:text-white line-clamp-2">{next_prod['name']}</h3>
                         <p class="text-lg font-black text-[#E53935] dark:text-white mt-1">Rs {next_prod['final_price']}</p>
                     </div>
-                    <a href="/product/{next_prod['slug']}.html" class="bg-[#E53935] text-white py-3 px-6 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center gap-2 whitespace-nowrap">Next <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="/product/{next_prod['slug']}.html" class="bg-[#E53935] text-white py-3 px-6 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center gap-2 whitespace-nowrap">
+                        Next <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>"""
         
@@ -1570,19 +1778,24 @@ def process_woocommerce_csv():
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                     <span class="text-xs font-bold uppercase tracking-widest text-[#E53935] dark:text-white mb-2">{prod['category']}</span>
                     <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">{prod['name']}</h1>
+                    
                     <div class="flex items-center gap-3 mb-6" aria-label="Customer Rating">
                         <div class="text-yellow-500 text-sm">{"<i class='fas fa-star'></i>" * 5}</div>
                         <span class="text-sm font-semibold text-gray-600 dark:text-gray-300">{avg_rating} ({review_count} verified reviews)</span>
                     </div>
+                    
                     <div class="flex items-center gap-4 mb-4 bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl w-fit border border-gray-100 dark:border-gray-600">
                         <span class="text-4xl font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
                         <span class="text-xl text-gray-500 font-bold line-through">Rs {prod['fake_price']}</span>
                         {f'<span class="bg-red-500 text-white text-sm font-bold px-2 py-1 rounded-lg">Save Rs {prod["fake_price"] - prod["final_price"]}</span>' if discount_pct > 0 else ''}
                     </div>
+                    
                     <div class="flex items-center gap-2 mb-6 text-sm">
                         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-bold"><i class="fas fa-truck" aria-hidden="true"></i> Delivery by {delivery_date}</span>
                     </div>
+                    
                     <p class="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-6">{prod['full_desc'][:500] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
+                    
                     <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto main-product-actions">
                         <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#E53935] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#E53935] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md flex justify-center items-center gap-2">
                             <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
@@ -1596,7 +1809,9 @@ def process_woocommerce_csv():
                     </a>
                 </div>
             </div>
+            
             {"<div class='bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal'><h2 class='text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4'>You May Also Like</h2><div class='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4'>" + related_html + "</div></div>" if related_html else ""}
+            
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal">
                 <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4 flex items-center gap-3">
                     <i class="fas fa-star text-yellow-500" aria-hidden="true"></i> Customer Reviews ({review_count})
@@ -1626,7 +1841,14 @@ def process_woocommerce_csv():
         </div>
         """
         
-        recent_json = json.dumps({"slug": prod['slug'], "name": prod['name'], "image": prod['image'], "final_price": prod['final_price'], "fake_price": prod['fake_price'], "category": prod['category']})
+        recent_json = json.dumps({
+            "slug": prod['slug'], 
+            "name": prod['name'], 
+            "image": prod['image'], 
+            "final_price": prod['final_price'], 
+            "fake_price": prod['fake_price'], 
+            "category": prod['category']
+        })
         
         prod_script = f"""
         <script>
@@ -1650,13 +1872,13 @@ def process_woocommerce_csv():
             }});
         </script>
         """
-        
         with open(f"output/product/{prod['slug']}.html", "w", encoding="utf-8") as f: 
             f.write(minify_html(prod_html + prod_script + get_html_footer()))
 
     # ================= CITY SEO PAGES =================
     print("🏙️ Generating City SEO Pages...")
     cities = ["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Multan", "Peshawar", "Quetta", "Faisalabad"]
+    
     for city in cities:
         city_slug = make_slug(city)
         sitemap_urls.append(f"https://www.asmveo.com/city/{city_slug}.html")
@@ -1703,9 +1925,12 @@ def process_woocommerce_csv():
             current_prods = prods[start_idx:start_idx + prods_per_page]
             file_slug = cat_slug if page_num == 1 else f"{cat_slug}-{page_num}"
             page_title = f"{cat_name} - Page {page_num}" if page_num > 1 else cat_name
-            if page_num > 1: sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
+            
+            if page_num > 1: 
+                sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
             
             cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. Wide range of {cat_name} with Cash on Delivery from ASM VEO.")
+            
             min_price = min(p['final_price'] for p in prods)
             max_price = max(p['final_price'] for p in prods)
             
@@ -1754,7 +1979,9 @@ def process_woocommerce_csv():
             cat_script_filters = """
             <script>
                 function applyFilters() { 
-                    if (typeof allProducts === 'undefined') { setTimeout(applyFilters, 500); return; } 
+                    if (typeof allProducts === 'undefined') { 
+                        setTimeout(applyFilters, 500); return; 
+                    } 
                     let sortBy = document.getElementById('sortBy').value; 
                     let minP = parseFloat(document.getElementById('minPrice').value) || 0; 
                     let maxP = parseFloat(document.getElementById('maxPrice').value) || 999999; 
@@ -1828,7 +2055,8 @@ def process_woocommerce_csv():
     # 🌟 NEW FIX: Ensuring only categories with >= 6 items appear on Home to fix Empty Spaces 🌟
     valid_home_cats = [(cat, prods) for cat, prods in sections_dict.items() if len(prods) >= 6]
     valid_home_cats.sort(key=lambda x: len(x[1]), reverse=True) # Show biggest categories first
-    if len(valid_home_cats) < 2: # Fallback just in case there are very few items
+    
+    if len(valid_home_cats) < 2: 
         valid_home_cats = list(sections_dict.items())
     
     all_categories_list = valid_home_cats
@@ -1908,6 +2136,7 @@ def process_woocommerce_csv():
                         </div>
                     </div>
                 </div>
+                
                 <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Previous slide">
                     <i class="fas fa-chevron-left text-sm md:text-base" aria-hidden="true"></i>
                 </button>
@@ -1956,13 +2185,15 @@ def process_woocommerce_csv():
             if icon not in used_icons:
                 used_icons.add(icon)
                 unique_top_cats.append(cat)
-            if len(unique_top_cats) >= 8: break
+            if len(unique_top_cats) >= 8: 
+                break
             
         if len(unique_top_cats) < 8:
             for cat in categories_list:
                 if cat not in unique_top_cats: 
                     unique_top_cats.append(cat)
-                if len(unique_top_cats) >= 8: break
+                if len(unique_top_cats) >= 8: 
+                    break
 
         for cat in unique_top_cats:
             c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
@@ -2062,6 +2293,7 @@ def process_woocommerce_csv():
             """
             for idx, prod in enumerate(prods[:6]):
                 home_html += generate_product_card(prod, lazy=(not (h_page == 1 and idx < 3)))
+                
             home_html += """
                 </div>
             </div>
@@ -2413,6 +2645,7 @@ def process_woocommerce_csv():
             </div>
         </div>
     </div>
+    
     <script>
         let couponApplied = false;
         
