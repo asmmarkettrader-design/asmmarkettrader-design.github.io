@@ -14,13 +14,10 @@ import time
 from datetime import datetime, timedelta
 
 # ==============================================================================
-# ADVANCED SEO & ANALYTICS APIs (NEW MODULES ADDED)
+# ADVANCED SEO & ANALYTICS APIs
 # ==============================================================================
 
 def fetch_trending_keywords():
-    """
-    Connects to Google Analytics 4 & Search Console APIs to fetch real-time trending keywords for Pakistan.
-    """
     trending_keywords = [
         "best online shopping pakistan", "cash on delivery pk", 
         "buy online karachi", "affordable price lahore", 
@@ -30,9 +27,6 @@ def fetch_trending_keywords():
     return trending_keywords
 
 def trigger_google_indexing_api(urls):
-    """
-    Triggers Google Indexing API to request immediate crawling of new URLs.
-    """
     print(f"📡 Pinging Google Indexing API for {len(urls)} URLs...")
     batch_size = 100
     for i in range(0, len(urls), batch_size):
@@ -41,9 +35,6 @@ def trigger_google_indexing_api(urls):
     print("✅ Google Indexing API triggered successfully. URLs queued for immediate crawl.")
 
 def auto_fix_broken_links(output_dir="output"):
-    """
-    Scans all generated HTML files for 404/broken local links and auto-fixes them.
-    """
     print("🛠️ Running Automated Broken Link Fixer...")
     html_files = glob.glob(f"{output_dir}/**/*.html", recursive=True)
     fixed_count = 0
@@ -76,7 +67,7 @@ def apply_lighthouse_optimizations(output_dir="output"):
     print("✅ Lighthouse optimizations applied (Lazy loading & ARIA labels synced).")
 
 # ==============================================================================
-# 2000 NAMES DATABASE - EXPANDED FOR BETTER RANDOMIZATION
+# 2000 NAMES DATABASE
 # ==============================================================================
 
 def generate_pakistani_names():
@@ -136,7 +127,6 @@ def clean_html(raw_html):
 def make_slug(text):
     if not text: 
         return "uncategorized"
-    
     slug = re.sub(r'[^a-z0-9]+', '-', str(text).lower()).strip('-')
     if not slug: 
         slug = "uncategorized"
@@ -158,7 +148,6 @@ def local_seo_desc(name, desc):
         return desc[:120] + f"... [{keys_str}]"
     return f"Buy {name} online in Pakistan at best price. {keys_str}. Premium quality with Cash on Delivery, fast shipping & easy returns from ASM VEO."
 
-# 🌟 STEP 2: IMAGE VALIDATION FUNCTION 🌟
 def check_valid_image(prod):
     try:
         req = urllib.request.Request(
@@ -180,7 +169,7 @@ def get_category_icon(category):
     icons = {
         'perfume|fragrance|scent|attar': 'fa-spray-can',
         'watch|clock|smartwatch': 'fa-clock',
-        'apparel|cloth|fashion|shirt|dress': 'fa-tshirt',
+        'apparel|cloth|fashion|shirt|dress|lawn': 'fa-tshirt',
         'shoe|footwear|sneaker': 'fa-shoe-prints',
         'electronic|tech|mobile|gadget|phone': 'fa-mobile-screen-button',
         'beauty|cosmetic|makeup|care|skin': 'fa-spa',
@@ -199,7 +188,6 @@ def get_category_icon(category):
         'tool|hardware': 'fa-hammer',
         'sport': 'fa-volleyball',
     }
-    
     for pattern, icon in icons.items():
         if any(word in cat_lower for word in pattern.split('|')):
             return icon
@@ -244,7 +232,6 @@ def generate_reviews(product_name):
             <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{comment}</p>
         </div>
         """
-    
     avg_rating = round(sum(random.randint(4,5) for _ in range(num_reviews)) / num_reviews, 1)
     return reviews_html, avg_rating, num_reviews
 
@@ -256,7 +243,7 @@ def minify_html(html_content):
 
 
 # ==============================================================================
-# HTML HEADER GENERATION (Optimized for PageSpeed, Accessibility & SEO FIXES)
+# HTML HEADER GENERATION
 # ==============================================================================
 
 def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan",
@@ -273,8 +260,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     elif product_data and 'slug' in product_data:
         canonical_url = f"https://www.asmveo.com/product/{product_data['slug']}.html"
 
-    safe_title = title[:45] + "..." if len(title) > 45 else title
-    safe_desc = seo_desc[:155] if seo_desc else "Premium online shopping in Pakistan with Cash on Delivery."
+    safe_title = title[:60] + "..." if len(title) > 60 else title
+    safe_desc = seo_desc[:125] + "..." if seo_desc and len(seo_desc) > 125 else (seo_desc or "Premium online shopping in Pakistan with Cash on Delivery.")
     
     structured_data = """
     <script type="application/ld+json">
@@ -294,7 +281,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
       },
       "sameAs": [
         "https://www.facebook.com/asmveo",
-        "https://www.instagram.com/asmveo"
+        "https://www.instagram.com/asmveo",
+        "https://www.youtube.com/@asmveo",
+        "https://twitter.com/asmveo",
+        "https://www.linkedin.com/company/asm-digital-solutions"
       ]
     }
     </script>
@@ -376,7 +366,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
       }}
     }}
     </script>"""
-    
+        
     if breadcrumb_data:
         safe_bc_cat = breadcrumb_data['category'].replace('\\', '\\\\').replace('"', '\\"')
         safe_bc_name = breadcrumb_data['name'].replace('\\', '\\\\').replace('"', '\\"')
@@ -410,6 +400,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#E53935">
     <link rel="canonical" href="{canonical_url}">
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png">
+    <link rel="alternate" hreflang="en-PK" href="{canonical_url}" />
     
     <meta name="geo.region" content="PK" />
     <meta name="geo.placename" content="Pakistan" />
@@ -503,15 +497,15 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </style>
     {structured_data}
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
-    <script>
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
       function gtag(){{dataLayer.push(arguments);}}
       gtag('js', new Date());
       gtag('config', 'G-M4J4YTPZPQ');
     </script>
     
-    <script>
+    <script defer>
     !function(f,b,e,v,n,t,s)
     {{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)}};
@@ -523,11 +517,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     fbq('init', '123456789012345'); 
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript><img height="1" width="1" style="display:none" alt="Facebook Pixel" src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1" /></noscript>
 
-    <script>
+    <script defer>
         (function(w,d,s,r,n){{w.TrustpilotObject=n;w[n]=w[n]||function(){{(w[n].q=w[n].q||[]).push(arguments)}};
             a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
             f.parentNode.insertBefore(a,f)}})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
@@ -646,6 +638,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function quickView(name, price, image, desc, slug) {{
             let modal = document.getElementById('quickViewModal');
             document.getElementById('qvImage').src = image;
+            document.getElementById('qvImage').alt = name;
             document.getElementById('qvName').innerText = name;
             document.getElementById('qvPrice').innerText = "Rs " + price;
             document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
@@ -875,39 +868,26 @@ def get_html_footer():
     <footer class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 mt-16 pt-12 pb-20 md:pb-8 border-t-4 border-[#E53935]">
         <div class="container mx-auto px-4">
             
-            <!-- 🌟 NEW: TRUSTED PARTNERS / COLLABORATION SECTION 🌟 -->
             <div class="mb-12 pb-8 border-b border-gray-200 dark:border-gray-800">
                 <h3 class="text-center text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">Our Trusted Partners</h3>
                 <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14">
-                    <!-- JazzCash -->
                     <div class="text-2xl font-black italic text-red-600 tracking-tighter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="JazzCash">jazzCash</div>
-                    
-                    <!-- EasyPaisa -->
                     <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="EasyPaisa">
                         <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">e</div>
                         <div class="text-2xl font-bold text-green-500 tracking-tight lowercase">easypaisa</div>
                     </div>
-                    
-                    <!-- NBP -->
                     <div class="flex items-center gap-2 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="National Bank of Pakistan">
                         <i class="fas fa-landmark text-green-700 text-xl" aria-hidden="true"></i>
                         <div class="text-2xl font-serif font-black text-green-700 tracking-wider">NBP</div>
                     </div>
-                    
-                    <!-- Daraz -->
                     <div class="text-2xl font-bold text-orange-500 lowercase grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Daraz">daraz</div>
-                    
-                    <!-- PriceOye -->
                     <div class="text-2xl font-extrabold text-blue-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="PriceOye">PriceOye<span class="text-blue-300">.pk</span></div>
-                    
-                    <!-- Markaz -->
                     <div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Markaz">
                         <i class="fas fa-shopping-bag text-emerald-600 text-lg" aria-hidden="true"></i>
                         <div class="text-2xl font-bold text-emerald-600 lowercase tracking-wide">markaz</div>
                     </div>
                 </div>
             </div>
-            <!-- 🌟 END COLLABORATION SECTION 🌟 -->
 
             <div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10">
                 <div>
@@ -949,10 +929,14 @@ def get_html_footer():
                 <div>
                     <h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Our Mission</h3>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
-                    <div class="flex gap-3">
-                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-[#E53935] hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    
+                    <div class="flex gap-2 flex-wrap">
+                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/asmveo" target="_blank" aria-label="X (Twitter) Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-black hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/asm-digital-solutions" target="_blank" aria-label="LinkedIn Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-700 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-green-500 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -977,6 +961,100 @@ def get_html_footer():
 def generate_static_pages(categories_list):
     print("📄 Generating Static Pages...")
     
+    order_success_html = """
+        <div class="container mx-auto px-4 py-20 text-center relative">
+            <div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div>
+            <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-8">Order ID: <span id="orderId" class="font-bold text-[#E53935]"></span></p>
+            <a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a>
+        </div>
+        
+        <!-- Google Review Modal -->
+        <div id="googleReviewModal" class="fixed inset-0 bg-black/80 z-[99999] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 p-4">
+            <div class="bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full text-center relative transform scale-95 transition-transform duration-500 shadow-[0_0_50px_rgba(0,0,0,0.3)] border border-gray-100 dark:border-gray-700" id="googleReviewContent">
+                <button onclick="closeReviewModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white" aria-label="Close review popup"><i class="fas fa-times text-xl"></i></button>
+                <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm border border-gray-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="w-8 h-8">
+                </div>
+                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">How did we do?</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm">Your feedback helps us provide the best experience for ASM VEO customers across Pakistan.</p>
+                <div class="flex justify-center gap-2 mb-8 text-4xl text-gray-300" id="starContainer">
+                    <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="1"></i>
+                    <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="2"></i>
+                    <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="3"></i>
+                    <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="4"></i>
+                    <i class="fas fa-star hover:text-yellow-400 cursor-pointer transition-colors review-star" data-val="5"></i>
+                </div>
+                <a href="https://g.page/r/YOUR_GOOGLE_MAPS_LINK/review" target="_blank" onclick="closeReviewModal()" class="block w-full bg-blue-600 text-white font-bold py-3.5 rounded-xl hover:bg-blue-700 transition shadow-lg mb-4 flex items-center justify-center gap-2"><i class="fas fa-pen"></i> Rate us on Google</a>
+                <button onclick="closeReviewModal()" class="text-sm font-semibold text-gray-500 hover:text-gray-800 dark:hover:text-gray-300">No thanks, maybe later</button>
+            </div>
+        </div>
+        
+        <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+        <script>
+            let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('orderId').innerText = oId;
+            localStorage.removeItem('asm_cart');
+            if(typeof updateCartBadge === 'function') updateCartBadge();
+            
+            let cEmail = localStorage.getItem('asm_customer_email') || '';
+            let dDate = new Date();
+            dDate.setDate(dDate.getDate() + 3);
+            let estDate = dDate.toISOString().split('T')[0]; 
+            
+            window.renderOptIn = function() {
+                window.gapi.load('surveyoptin', function() {
+                    window.gapi.surveyoptin.render({
+                        "merchant_id": 5837055220,
+                        "order_id": oId,
+                        "email": cEmail,
+                        "delivery_country": "PK",
+                        "estimated_delivery_date": estDate
+                    });
+                });
+                localStorage.removeItem('asm_customer_email');
+            };
+
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(() => {
+                    let modal = document.getElementById('googleReviewModal');
+                    let content = document.getElementById('googleReviewContent');
+                    if(modal && content) {
+                        modal.classList.remove('opacity-0', 'pointer-events-none');
+                        content.classList.remove('scale-95');
+                        content.classList.add('scale-100');
+                    }
+                }, 2000);
+            });
+
+            function closeReviewModal() {
+                let modal = document.getElementById('googleReviewModal');
+                if(modal) {
+                    modal.classList.add('opacity-0', 'pointer-events-none');
+                }
+            }
+
+            document.querySelectorAll('.review-star').forEach((star) => {
+                star.addEventListener('mouseover', function() {
+                    let val = this.getAttribute('data-val');
+                    document.querySelectorAll('.review-star').forEach((s) => {
+                        if(s.getAttribute('data-val') <= val) {
+                            s.classList.add('text-yellow-400');
+                        } else {
+                            s.classList.remove('text-yellow-400');
+                        }
+                    });
+                });
+            });
+            
+            document.getElementById('starContainer').addEventListener('mouseleave', function() {
+                document.querySelectorAll('.review-star').forEach((s) => {
+                    s.classList.remove('text-yellow-400');
+                });
+            });
+        </script>
+    """
+
     pages = {
         "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-12"><h1 class="text-4xl md:text-5xl font-extrabold text-[#E53935] dark:text-white mb-6">About ASM VEO</h1><p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">Your trusted shopping partner in Pakistan</p></div><div class="grid md:grid-cols-2 gap-8 mb-12"><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-bullseye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Mission</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To provide every Pakistani with access to premium quality products at affordable prices, delivered right to their doorstep with Cash on Delivery convenience.</p></div><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-eye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Vision</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To become Pakistan's most trusted and loved e-commerce platform, known for quality, reliability, and exceptional customer service.</p></div></div><div class="animated-bg text-white rounded-3xl p-8 md:p-12"><h2 class="text-3xl font-bold mb-4">Why Choose ASM VEO?</h2><div class="grid md:grid-cols-3 gap-6 mt-8"><div><i class="fas fa-shield-alt text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">100% Secure</h4><p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p></div><div><i class="fas fa-truck-fast text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Fast Delivery</h4><p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p></div><div><i class="fas fa-undo text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Easy Returns</h4><p class="text-gray-200 text-sm">7-day return policy, no questions asked</p></div></div></div></div>"""),
         "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-600 dark:text-gray-400 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
@@ -996,7 +1074,7 @@ def generate_static_pages(categories_list):
                 let safeName = item.name.replace(/'/g, "\\\\'");
                 return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
                     <div class="h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
-                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();" alt="Product Image" loading="lazy" decoding="async">
+                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();" alt="Wishlist Product" loading="lazy" decoding="async">
                     </div>
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
@@ -1012,42 +1090,13 @@ def generate_static_pages(categories_list):
         function removeWishlistItem(i) { let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || []; wl.splice(i, 1); localStorage.setItem('asm_wishlist', JSON.stringify(wl)); updateWishlistBadge(); renderWishlist(); }
         window.addEventListener('load', renderWishlist);
         </script>"""),
-        "order-success.html": ("Order Confirmed!", """<div class="container mx-auto px-4 py-20 text-center"><div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div><h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1><p class="text-gray-600 dark:text-gray-400 text-sm mb-8">Order ID: <span id="orderId" class="font-bold text-[#E53935]"></span></p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a></div>
-        <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
-        <script>
-            let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
-            document.getElementById('orderId').innerText = oId;
-            localStorage.removeItem('asm_cart');
-            if(typeof updateCartBadge === 'function') updateCartBadge();
-            
-            // Fetch Email & Set Delivery Date (3 Days from today)
-            let cEmail = localStorage.getItem('asm_customer_email') || '';
-            let dDate = new Date();
-            dDate.setDate(dDate.getDate() + 3);
-            let estDate = dDate.toISOString().split('T')[0]; // Format: YYYY-MM-DD
-            
-            // Google Customer Reviews Opt-In
-            window.renderOptIn = function() {
-                window.gapi.load('surveyoptin', function() {
-                    window.gapi.surveyoptin.render({
-                        "merchant_id": 5837055220,
-                        "order_id": oId,
-                        "email": cEmail,
-                        "delivery_country": "PK",
-                        "estimated_delivery_date": estDate
-                    });
-                });
-                // Clean up email from local storage
-                localStorage.removeItem('asm_customer_email');
-            };
-        </script>""")
+        "order-success.html": ("Order Confirmed!", order_success_html)
     }
 
     for filename, (title, content) in pages.items():
         with open(f"output/{filename}", "w", encoding="utf-8") as f:
             f.write(minify_html(get_html_header(title, categories_list) + content + get_html_footer()))
 
-    # FAQ Generator with Schema Logic
     faqs = [
         ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days. Major cities like Karachi, Lahore, and Islamabad usually receive orders within 2 days. Remote areas may take up to 5 days."),
         ("Do you offer Cash on Delivery (COD)?", "Yes! We offer Cash on Delivery across all of Pakistan. You pay when you receive your product at your doorstep."),
@@ -1153,12 +1202,9 @@ def generate_merchant_feed(products_list):
     xml_content += '  <description>Premium online shopping in Pakistan with COD</description>\n'
     
     for prod in products_list:
-        # XML کے لیے غیر ضروری علامات کو محفوظ (safe) بنانا
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_desc = prod['seo_desc'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_cat = prod['category'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        
-        # 🌟 SEO FIX: Image URL Encoding (Fixes "Invalid Image Encoding" Error) 🌟
         safe_image_url = urllib.parse.quote(prod['image'], safe=":/")
         
         xml_content += '  <item>\n'
@@ -1365,7 +1411,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             base_price = get_price(row.get('Sale price', '') or row.get('Regular price', ''))
             if base_price == 0: continue
             
-            # 🌟 NAI DYNAMIC PROFIT MARGIN LOGIC 🌟
             if base_price <= 500:
                 final_price = math.ceil(base_price * 1.40) # 40% Profit
             elif base_price <= 2000:
@@ -1375,7 +1420,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             else:
                 final_price = math.ceil(base_price * 1.10) # 10% Profit
 
-            # 🌟 SPECIFIC PRODUCT PRICE OVERRIDE 🌟
             if "zafrani cream" in name.lower():
                 final_price = 1599
                 
@@ -1410,7 +1454,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 
     products_list = valid_products
     categories_set = set(p['category'] for p in products_list) 
-    # 🌟 ------------------------------------------------------------------------- 🌟
 
     categories_list = sorted(list(categories_set))
     print(f"✔ Total {len(products_list)} valid products being processed...")
@@ -1437,7 +1480,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
         if len(prod['images']) > 1:
             gallery_thumbs = ""
             for idx, img in enumerate(prod['images'][:5]):
-                gallery_thumbs += f'<img src="{img}" alt="Thumbnail {idx+1}" onclick="changeMainImage(this)" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 {"border-[#E53935]" if idx == 0 else "border-gray-200"} hover:border-[#E53935] transition" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">'
+                gallery_thumbs += f'<img src="{img}" alt="{prod["name"]} - Thumbnail {idx+1}" onclick="changeMainImage(this)" class="w-16 h-16 object-cover rounded-lg cursor-pointer border-2 {"border-[#E53935]" if idx == 0 else "border-gray-200"} hover:border-[#E53935] transition" loading="lazy" decoding="async" onerror="this.style.display=\'none\'">'
             gallery_html = f'<div class="flex gap-2 mt-4 overflow-x-auto">{gallery_thumbs}</div>'
         
         breadcrumb_data = {'category': prod['category'], 'name': prod['name'], 'slug': prod['slug']}
@@ -1642,7 +1685,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
         city_slug = make_slug(city)
         sitemap_urls.append(f"https://www.asmveo.com/city/{city_slug}.html")
         
-        city_prods = random.sample(products_list, min(10, len(products_list)))
+        city_prods = random.sample(products_list, min(12, len(products_list)))
         city_html = get_html_header(f"Online Shopping in {city}", categories_list, f"Buy products online in {city} with Cash on Delivery. Fast delivery in {city} and all over Pakistan. Premium quality at best prices.")
         
         city_html += f"""
@@ -1828,9 +1871,9 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
 
 
     # ==============================================================================
-    # HOMEPAGE DYNAMIC PAGINATION (Index-1, Index-2, etc.)
+    # HOMEPAGE DYNAMIC PAGINATION
     # ==============================================================================
-    print("🏠 Generating Home Pages with Pagination...")
+    print("🏠 Generating Home Pages with 8 Reference Banners & Grid Fix...")
     all_categories_list = list(sections_dict.items())
     cats_per_home_page = 6 
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
@@ -1841,91 +1884,132 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                                      "ASM VEO - Premium online shopping in Pakistan for Electronics, Fashion & Home Appliances. Buy quality products with Cash on Delivery & fast shipping.")
         
         if h_page == 1:
+            # 🌟 8 EXACT REFERENCE BANNERS (From Provided Images) 🌟
             home_html += """
-            <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan, Electronics, Fashion & Accessories</h1>
+            <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan</h1>
             
-            <!-- 🌟 UPDATE: 6 NEW CUSTOM BANNERS 🌟 -->
-            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl" aria-label="Featured Promotions Carousel">
+            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
-                    <!-- Slide 1: Fashion -->
-                    <div class="carousel-slide h-full relative" aria-hidden="false"> 
-                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion Sale Banner" fetchpriority="high" decoding="sync" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/50"></div>
-                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                            <div class="max-w-lg">
-                                <span class="bg-[#E53935] text-white text-xs font-black px-3 py-1 rounded-full">FLASH SALE</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Premium Fashion<br>Collection 2026</h2>
-                                <a href="#products" class="bg-white text-[#E53935] px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition text-sm">Shop Now</a>
+                
+                    <!-- Banner 1: SUNSCREEN -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-300 to-cyan-100" aria-hidden="false">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Beach Background" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-100/90 to-transparent w-[60%]"></div>
+                        <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <h2 class="text-3xl md:text-6xl font-black text-orange-500 uppercase tracking-tighter drop-shadow-md">SUNSCREEN</h2>
+                            <p class="text-teal-800 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-1 mb-3">BETTER PROTECTION FOR ALL ACTIVITIES</p>
+                            <p class="text-blue-900 text-[8px] md:text-xs font-semibold max-w-[200px] leading-tight">MOISTURE AND GENTLE SUITABLE FOR SENSITIVE SKIN</p>
+                            <a href="#products" class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-orange-600 transition">SHOP NOW</a>
+                        </div>
+                        <div class="w-[45%] h-full relative z-10 flex justify-center items-end pb-4">
+                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=400&q=80" alt="Sunscreen" class="w-[80%] md:w-[60%] object-contain mix-blend-multiply drop-shadow-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Banner 2: COSMETICS -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-pink-100 to-rose-200" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1200&q=80" alt="Cosmetics Background" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity">
+                        <div class="w-[45%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <span class="text-rose-900 text-[8px] md:text-[10px] font-bold tracking-[0.2em] uppercase mb-1">BRAND NAME</span>
+                            <h2 class="text-3xl md:text-6xl font-black text-rose-700 uppercase tracking-tight">COSMETICS</h2>
+                            <p class="text-rose-900 text-[8px] md:text-[10px] mt-2 max-w-[200px] leading-tight opacity-70">Premium quality for your daily beauty routine.</p>
+                        </div>
+                        <div class="w-[55%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Perfume" class="w-[90%] md:w-[70%] object-contain mix-blend-multiply drop-shadow-2xl transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+
+                    <!-- Banner 3: HONEY LOTION -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-yellow-400 to-amber-500" aria-hidden="true">
+                        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1587049352847-81a56d773c1c?auto=format&fit=crop&w=1200&q=80')] bg-cover mix-blend-overlay"></div>
+                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Honey Lotion" class="w-[80%] md:w-[60%] object-contain drop-shadow-[0_20px_50px_rgba(180,83,9,0.5)]">
+                        </div>
+                        <div class="w-[50%] h-full flex flex-col justify-center items-start pr-8 relative z-10 text-amber-900">
+                            <h2 class="text-2xl md:text-4xl font-serif italic leading-tight">NATURAL<br>HUMECTANTS<br>FOR SKIN</h2>
+                            <span class="text-xs font-bold tracking-[0.2em] mt-2 uppercase">Beauty</span>
+                            <div class="absolute bottom-10 right-10 w-16 h-16 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm rounded-full border border-amber-200 flex items-center justify-center text-center p-2 shadow-lg">
+                                <span class="text-[8px] md:text-[10px] font-black uppercase">Hydrate<br>The Skin</span>
                             </div>
                         </div>
                     </div>
-                    <!-- Slide 2: Electronics -->
-                    <div class="carousel-slide h-full relative" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Gadgets Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/60"></div>
-                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                            <div class="max-w-lg">
-                                <span class="bg-blue-500 text-white text-xs font-black px-3 py-1 rounded-full">TECH HUB</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Smart Gadgets &<br>Electronics</h2>
-                                <p class="text-sm text-gray-200 mb-4 font-semibold">Earbuds, Trimmers, Lights & Mobile Accessories</p>
-                                <a href="#products" class="bg-blue-500 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-blue-600 transition text-sm">Explore Now</a>
+
+                    <!-- Banner 4: SUPER CLEAN -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-cyan-300 to-blue-400" aria-hidden="true">
+                        <div class="w-1/2 h-full flex flex-col justify-center items-center pl-8 relative z-10 text-white">
+                            <h2 class="text-5xl md:text-7xl font-black italic uppercase leading-none drop-shadow-lg text-yellow-300 transform -skew-x-12">Super<br><span class="text-white">Clean</span></h2>
+                            <a href="#products" class="mt-6 border-2 border-white px-6 py-2 rounded-full text-xs font-bold hover:bg-white hover:text-blue-500 transition shadow-[0_0_15px_rgba(255,255,255,0.5)]">SHOP NOW</a>
+                        </div>
+                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1584820927498-cafe8c124016?auto=format&fit=crop&w=400&q=80" alt="Detergent" class="w-[70%] md:w-[50%] object-contain mix-blend-multiply drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)] transform hover:rotate-6 transition-transform">
+                        </div>
+                    </div>
+
+                    <!-- Banner 5: MACBOOK M2 PRO (Reference 2) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-50" aria-hidden="true">
+                        <div class="absolute right-0 top-0 w-3/5 h-full bg-gradient-to-bl from-green-200 via-blue-100 to-transparent" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
+                            <div class="bg-red-600 text-white px-3 py-1 text-[10px] md:text-xs font-bold transform -skew-x-12 inline-block mb-3 shadow-md">SPECIAL OFFER</div>
+                            <h2 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">MACBOOK M2 PRO</h2>
+                            <p class="text-gray-600 text-xs md:text-sm mt-1 max-w-xs leading-tight">Price comparison, one of them crossed out</p>
+                            <a href="#products" class="mt-4 bg-gray-800 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-black transition">SHOP NOW</a>
+                        </div>
+                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Macbook" class="w-[90%] md:w-[80%] object-contain mix-blend-multiply transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Banner 6: SONY h.ear (Reference 2) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex" aria-hidden="true">
+                        <div class="w-1/3 bg-[#E53935] h-full flex flex-col justify-center pl-8 md:pl-12 text-white relative z-10">
+                            <div class="absolute top-4 left-8 font-black tracking-widest text-lg md:text-xl">SONY</div>
+                            <h2 class="text-4xl md:text-6xl font-bold leading-none tracking-tighter">h.ear</h2>
+                            <h3 class="text-sm md:text-lg font-bold tracking-widest mt-1">ON WIRELESS NC</h3>
+                            <p class="text-[8px] md:text-xs mt-2 text-red-100 max-w-[150px]">High-Resolution Audio wireless headphones.</p>
+                        </div>
+                        <div class="w-2/3 bg-gray-50 h-full relative flex items-center justify-center">
+                            <div class="absolute w-48 h-48 md:w-80 md:h-80 bg-gray-200 rounded-full mix-blend-multiply opacity-50"></div>
+                            <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=500&q=80" alt="Headphones" class="w-[60%] md:w-[50%] object-contain mix-blend-multiply relative z-10 hover:scale-110 transition-transform duration-500 drop-shadow-2xl">
+                            <div class="absolute bottom-10 right-10 flex flex-col items-center">
+                                <span class="text-red-600 font-black text-2xl md:text-4xl">$349</span>
+                                <a href="#products" class="bg-[#E53935] text-white px-5 py-1.5 rounded-full text-xs font-bold mt-1 shadow-lg hover:bg-red-700 transition">Shop Now</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Slide 3: 14 August Sale -->
-                    <div class="carousel-slide h-full relative" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="14 August Sale Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-green-900/70"></div>
-                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                            <div class="max-w-lg">
-                                <span class="bg-white text-green-700 text-xs font-black px-3 py-1 rounded-full">14 AUGUST SPECIAL</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight text-white">Azaadi Sale<br>Flat 50% OFF</h2>
-                                <p class="text-sm text-gray-200 mb-4 font-semibold">Celebrate Independence with massive discounts!</p>
-                                <a href="#products" class="bg-green-600 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-green-500 transition text-sm border border-white">Grab Offer</a>
+
+                    <!-- Banner 7: RUNNING SNEAKERS (Reference 2) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-teal-200 to-emerald-300" aria-hidden="true">
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
+                            <div class="flex gap-4 text-[8px] md:text-[10px] font-bold text-teal-800 uppercase tracking-widest mb-6">
+                                <span>Men</span><span>Women</span><span>Kids</span>
                             </div>
+                            <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter drop-shadow-md">Running Sneakers</h2>
+                            <div class="h-1 w-12 bg-white my-3"></div>
+                            <a href="#products" class="mt-2 bg-gray-900 text-white px-6 py-2 text-xs font-bold hover:bg-black transition shadow-xl">ADD TO CART</a>
+                        </div>
+                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                            <div class="absolute w-48 h-48 md:w-72 md:h-72 bg-white rounded-full shadow-2xl opacity-60"></div>
+                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Sneaker" class="w-[80%] md:w-[70%] object-contain relative z-20 transform -rotate-12 hover:-rotate-6 hover:scale-110 transition-all duration-500 mix-blend-multiply rounded-full border border-gray-100 p-2">
                         </div>
                     </div>
-                    <!-- Slide 4: Health & Beauty -->
-                    <div class="carousel-slide h-full relative" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=1200&q=80" alt="Cosmetics Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-pink-900/50"></div>
-                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                            <div class="max-w-lg">
-                                <span class="bg-pink-500 text-white text-xs font-black px-3 py-1 rounded-full">BEAUTY & CARE</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Premium Cosmetics<br>& Skincare</h2>
-                                <p class="text-sm text-gray-200 mb-4 font-semibold">100% Original Health & Beauty Products</p>
-                                <a href="#products" class="bg-pink-500 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-pink-600 transition text-sm">Shop Beauty</a>
-                            </div>
+
+                    <!-- Banner 8: 2022 LIGE MENS WATCHES (Reference 2) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-[#2D2D2D]" aria-hidden="true">
+                        <div class="absolute bottom-0 left-0 w-full h-[40%] bg-[#0078D7]" style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);"></div>
+                        <div class="w-3/5 h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <h2 class="text-xl md:text-3xl font-medium text-white tracking-widest">2022 LIGE MENS WATCHES</h2>
+                            <h3 class="text-2xl md:text-4xl font-black text-[#00AEEF] uppercase mt-1">TOP BRAND</h3>
+                            <a href="#products" class="mt-6 bg-[#00AEEF] text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-400 transition shadow-lg">BUY NOW</a>
+                        </div>
+                        <div class="w-2/5 h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-12 hover:rotate-0 transition-transform duration-500">
+                            <div class="absolute right-4 top-1/4 bg-[#00AEEF] text-white text-[10px] md:text-xs font-black px-2 py-1 rounded shadow-lg transform rotate-12">$80.97</div>
                         </div>
                     </div>
-                    <!-- Slide 5: Babies & Kids -->
-                    <div class="carousel-slide h-full relative" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=1200&q=80" alt="Baby & Kids Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-blue-900/40"></div>
-                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                            <div class="max-w-lg">
-                                <span class="bg-purple-500 text-white text-xs font-black px-3 py-1 rounded-full">KIDS COLLECTION</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Baby & Kids<br>Essentials</h2>
-                                <p class="text-sm text-gray-200 mb-4 font-semibold">Toys, Clothes & Care Accessories</p>
-                                <a href="#products" class="bg-purple-500 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-purple-600 transition text-sm">Discover</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 6: Shoes -->
-                    <div class="carousel-slide h-full relative" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1200&q=80" alt="Shoes Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/50"></div>
-                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                            <div class="max-w-lg">
-                                <span class="bg-white text-gray-900 text-xs font-black px-3 py-1 rounded-full">SHOE FESTIVAL</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight">Premium Shoes<br>Unbeatable Prices</h2>
-                                <a href="#products" class="bg-white text-gray-900 px-6 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition text-sm">Explore Now</a>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
-                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
                 <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
             </div>
             
@@ -1935,7 +2019,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 const dotsContainer = document.getElementById('carouselDots');
                 
                 slides.forEach((_, i) => {
-                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition focus:outline-none" aria-label="Go to slide ${i + 1}"></button>`;
+                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition focus:outline-none shadow-sm" aria-label="Go to slide ${i + 1}"></button>`;
                 });
                 
                 function updateCarousel() {
@@ -1944,7 +2028,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true');
                     });
                     document.querySelectorAll('#carouselDots button').forEach((dot, i) => {
-                        dot.className = `w-3 h-3 rounded-full transition ${i === slideIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white'}`;
+                        dot.className = `w-3 h-3 rounded-full transition shadow-sm ${i === slideIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white'}`;
                     });
                 }
                 
@@ -1953,7 +2037,10 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 function goToSlide(i) { slideIndex = i; updateCarousel(); }
                 
                 updateCarousel();
-                setInterval(nextSlide, 3500);
+                let slideTimer = setInterval(nextSlide, 4500);
+                
+                document.getElementById('heroCarousel').addEventListener('mouseenter', () => clearInterval(slideTimer));
+                document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 4500));
             </script>
             """
 
@@ -2078,7 +2165,13 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
-            for idx, prod in enumerate(prods[:6]):
+            # 🌟 GRID ISSUE FULLY FIXED: EXACT 6 PRODUCTS LOOPING LOGIC 🌟
+            display_prods = prods[:6]
+            if len(prods) > 0:
+                while len(display_prods) < 6:
+                    display_prods.append(prods[len(display_prods) % len(prods)])
+                    
+            for idx, prod in enumerate(display_prods):
                 is_lazy = True
                 if h_page == 1 and idx < 3: 
                     is_lazy = False
@@ -2344,7 +2437,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         <textarea id="addressInput" name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
                     </div>
 
-                    <!-- 🌟 NEW: PAYMENT METHOD SECTION 🌟 -->
                     <div>
                         <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Payment Method <span class="text-red-600">*</span></label>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -2389,7 +2481,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                             </div>
                         </div>
                     </div>
-                    <!-- 🌟 END PAYMENT METHOD SECTION 🌟 -->
                     
                     <div>
                         <label for="orderNotes" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label>
@@ -2442,7 +2533,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
     <script>
         let couponApplied = false;
 
-        // 🌟 NEW: Toggle Payment Method Display 🌟
         function togglePaymentDetails() {
             let method = document.querySelector('input[name="Payment_Method"]:checked').value;
             let details = document.getElementById('advancePaymentDetails');
@@ -2553,7 +2643,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             let discount = couponApplied ? Math.floor(subtotal * 0.10) : 0;
             let grandTotal = subtotal - discount + delivery;
             
-            // Add payment method info to Formspree email
             let paymentMethod = document.querySelector('input[name="Payment_Method"]:checked').value;
             
             document.getElementById('subtotalDisplay').innerText = "Rs " + subtotal;
@@ -2591,7 +2680,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             } catch(e) { console.log('Trustpilot error:', e); }
         }
 
-document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+        document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
             btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
@@ -2606,7 +2695,6 @@ document.getElementById('checkoutForm').addEventListener('submit', function(e) {
                 if (response.ok) {
                     sendTrustpilotInvitation();
                     
-                    // 🌟 NEW: Save Email for Google Customer Reviews 🌟
                     let customerEmail = document.getElementById('emailAddr').value;
                     if(customerEmail) {
                         localStorage.setItem('asm_customer_email', customerEmail);
