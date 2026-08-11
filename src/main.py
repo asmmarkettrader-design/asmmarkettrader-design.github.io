@@ -1125,7 +1125,8 @@ def generate_merchant_feed(products_list):
     xml_content += '  <link>https://www.asmveo.com</link>\n'
     xml_content += '  <description>Premium online shopping in Pakistan with COD</description>\n'
     
-  for prod in products_list:
+    for prod in products_list:
+        # XML کے لیے غیر ضروری علامات کو محفوظ (safe) بنانا
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_desc = prod['seo_desc'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_cat = prod['category'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
