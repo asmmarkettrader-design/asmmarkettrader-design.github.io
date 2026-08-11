@@ -1013,7 +1013,34 @@ def generate_static_pages(categories_list):
         window.addEventListener('load', renderWishlist);
         </script>"""),
         "order-success.html": ("Order Confirmed!", """<div class="container mx-auto px-4 py-20 text-center"><div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div><h1 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Order Confirmed!</h1><p class="text-gray-600 dark:text-gray-400 text-sm mb-8">Order ID: <span id="orderId" class="font-bold text-[#E53935]"></span></p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Continue Shopping</a></div>
-        <script>document.getElementById('orderId').innerText = 'ASM-' + Math.floor(100000 + Math.random() * 900000); localStorage.removeItem('asm_cart'); updateCartBadge();</script>""")
+        <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+        <script>
+            let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
+            document.getElementById('orderId').innerText = oId;
+            localStorage.removeItem('asm_cart');
+            if(typeof updateCartBadge === 'function') updateCartBadge();
+            
+            // Fetch Email & Set Delivery Date (3 Days from today)
+            let cEmail = localStorage.getItem('asm_customer_email') || '';
+            let dDate = new Date();
+            dDate.setDate(dDate.getDate() + 3);
+            let estDate = dDate.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+            
+            // Google Customer Reviews Opt-In
+            window.renderOptIn = function() {
+                window.gapi.load('surveyoptin', function() {
+                    window.gapi.surveyoptin.render({
+                        "merchant_id": 5837055220,
+                        "order_id": oId,
+                        "email": cEmail,
+                        "delivery_country": "PK",
+                        "estimated_delivery_date": estDate
+                    });
+                });
+                // Clean up email from local storage
+                localStorage.removeItem('asm_customer_email');
+            };
+        </script>""")
     }
 
     for filename, (title, content) in pages.items():
@@ -2564,7 +2591,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             } catch(e) { console.log('Trustpilot error:', e); }
         }
 
-        document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
             btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
@@ -2578,6 +2605,12 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             }).then(response => {
                 if (response.ok) {
                     sendTrustpilotInvitation();
+                    
+                    // 🌟 NEW: Save Email for Google Customer Reviews 🌟
+                    let customerEmail = document.getElementById('emailAddr').value;
+                    if(customerEmail) {
+                        localStorage.setItem('asm_customer_email', customerEmail);
+                    }
                     
                     const urlParams = new URLSearchParams(window.location.search);
                     if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
@@ -2598,7 +2631,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 btn.disabled = false;
             });
         });
-
         window.addEventListener('load', renderCart);
     </script>
     """
