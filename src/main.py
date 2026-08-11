@@ -606,8 +606,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             const colors = {{ success: 'bg-[#f56437]', error: 'bg-red-600', gray: 'bg-gray-800' }};
             const toastColor = colors[type] || colors['success'];
             const toast = document.createElement('div');
-            toast.className = `fixed bottom-24 md:bottom-10 right-4 ${toastColor} text-white px-6 py-4 rounded shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-medium slide-in text-sm border-l-4 border-white`;
-            toast.innerHTML = `<i class="fas ${icon} text-lg" aria-hidden="true"></i> ${msg}`;
+            toast.className = 'fixed bottom-24 md:bottom-10 right-4 ' + toastColor + ' text-white px-6 py-4 rounded shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-medium slide-in text-sm border-l-4 border-white';
+            toast.innerHTML = '<i class="fas ' + icon + ' text-lg" aria-hidden="true"></i> ' + msg;
             document.body.appendChild(toast);
             setTimeout(() => {{ toast.style.opacity = '0'; toast.style.transform = 'translateY(20px)'; setTimeout(() => toast.remove(), 300); }}, 3000);
         }}
@@ -644,7 +644,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function updateDarkModeIcon() {{
             let isDark = document.documentElement.classList.contains('dark');
             document.querySelectorAll('.dark-mode-icon').forEach(el => {{
-                el.className = `fas ${isDark ? 'fa-sun' : 'fa-moon'} dark-mode-icon`;
+                el.className = isDark ? 'fas fa-sun dark-mode-icon' : 'fas fa-moon dark-mode-icon';
             }});
         }}
 
@@ -660,7 +660,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             
             let safeName = name.replace(/'/g, "\\\\'");
             let safeImage = image.replace(/'/g, "\\\\'");
-            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event); closeQuickView();`);
+            document.getElementById('qvAddCart').setAttribute('onclick', "addToCart('" + safeName + "', " + price + ", '" + safeImage + "', event); closeQuickView();");
             document.getElementById('qvLink').href = '/product/' + slug + '.html';
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -776,7 +776,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <nav class="bg-gray-900 text-white hidden md:block">
         <div class="container mx-auto px-4 flex items-center">
             
-            <!-- All Categories Dropdown (Visible on hover for inner pages) -->
+            <!-- All Categories Dropdown -->
             <div class="relative dropdown w-64 flex-shrink-0 z-50">
                 <button class="w-full bg-[#f56437] text-white px-5 py-3 font-bold text-sm flex items-center justify-between transition-colors" aria-haspopup="true" aria-expanded="false">
                     <span class="flex items-center gap-3"><i class="fas fa-bars" aria-hidden="true"></i> ALL CATEGORIES</span>
@@ -813,7 +813,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </a>
     </nav>
 
-    <!-- Mobile Category Menu (Hidden by default) -->
+    <!-- Mobile Category Menu -->
     <div id="mobileCatMenu" class="hidden fixed inset-0 bg-black/50 z-[9999] md:hidden">
         <div class="bg-white dark:bg-gray-900 w-4/5 h-full max-w-sm overflow-y-auto transform transition-transform">
             <div class="bg-[#f56437] text-white p-4 font-bold flex justify-between items-center">
@@ -930,13 +930,13 @@ def get_html_footer():
                 <div>
                     <h4 class="text-base font-bold text-gray-900 dark:text-white mb-5 uppercase">Follow Us</h4>
                     <div class="flex gap-2 mb-8">
-                        <a href="https://web.facebook.com/profile.php?id=61593172078469" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#1877F2] hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/asmveo" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-black hover:text-white transition"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://www.youtube.com/@asmveo" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#FF0000] hover:text-white transition"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/asmveo" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#E4405F] hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#1877F2] hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/asmveo" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-black hover:text-white transition"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.youtube.com/@asmveo" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#FF0000] hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/asmveo" target="_blank" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 hover:bg-[#E4405F] hover:text-white transition"><i class="fab fa-instagram"></i></a>
                     </div>
                     <h4 class="text-base font-bold text-gray-900 dark:text-white mb-4 uppercase">Payment Methods</h4>
-                    <div class="flex gap-2 items-center opacity-70 grayscale">
+                    <div class="flex gap-2 items-center opacity-70 grayscale hover:grayscale-0 transition duration-500">
                         <div class="font-black italic text-red-600 text-lg">jazzCash</div>
                         <div class="w-1 h-4 bg-gray-300 mx-1"></div>
                         <div class="font-bold text-green-500 text-lg">easypaisa</div>
@@ -1062,28 +1062,28 @@ def generate_static_pages(categories_list):
     """
 
     pages = {
-        "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">About ASM VEO</h1><p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-6">ASM VEO is Pakistan's premier online shopping platform...</p></div>"""),
-        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Contact Us</h1><p class="text-sm text-gray-600 mb-4">Message us on WhatsApp: 03425478683</p></div>"""),
-        "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Privacy Policy</h1><p class="text-sm text-gray-600">Your privacy is important to us...</p></div>"""),
-        "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Terms & Conditions</h1><p class="text-sm text-gray-600">All orders are subject to availability...</p></div>"""),
-        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Shipping Policy</h1><p class="text-sm text-gray-600">Nationwide delivery in 2-4 business days.</p></div>"""),
-        "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Return Policy</h1><p class="text-sm text-gray-600">Hassle-free 7-day returns.</p></div>"""),
-        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8 text-center"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase">Track Order</h1><p class="text-sm text-gray-600 mb-6">Contact us on WhatsApp with your Order ID.</p><a href="https://wa.me/923425478683" class="bg-green-500 text-white px-6 py-2 rounded font-bold inline-block">WhatsApp Us</a></div>"""),
-        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-32 text-center"><h1 class="text-8xl font-black text-[#f56437] mb-4">404</h1><p class="text-xl text-gray-600 mb-8">Page not found.</p><a href="/index.html" class="bg-gray-900 text-white px-8 py-3 rounded font-bold uppercase text-sm">Return Home</a></div>"""),
-        "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-2xl font-black text-gray-900 dark:text-white mb-8 uppercase border-l-4 border-[#f56437] pl-3">My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4"></div></div>
+        "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">About ASM VEO</h1><p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-6">ASM VEO is Pakistan's premier online shopping platform...</p><div class="grid md:grid-cols-2 gap-8 mt-8"><div class="bg-gray-50 p-6 rounded border"><h3 class="font-bold mb-2">Our Mission</h3><p class="text-sm text-gray-600">To provide premium quality products at affordable prices.</p></div><div class="bg-gray-50 p-6 rounded border"><h3 class="font-bold mb-2">Our Vision</h3><p class="text-sm text-gray-600">To become Pakistan's most trusted e-commerce platform.</p></div></div></div>"""),
+        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-gray-50 p-8 rounded border text-center"><i class="fab fa-whatsapp text-5xl text-green-500 mb-4"></i><h3 class="font-bold mb-2">WhatsApp Support</h3><p class="text-sm text-gray-600 mb-4">Instant support for your queries.</p><a href="https://wa.me/923425478683" class="bg-green-500 text-white px-6 py-2 rounded font-bold inline-block">0342 54 786 83</a></div><div class="bg-gray-50 p-8 rounded border"><h3 class="font-bold mb-4 border-b pb-2">Business Details</h3><p class="text-sm text-gray-600 mb-2"><strong>Company:</strong> ASM Digital Solutions</p><p class="text-sm text-gray-600 mb-2"><strong>CEO:</strong> Ali Abbas</p><p class="text-sm text-gray-600"><strong>Hours:</strong> Mon-Sun, 9AM - 11PM</p></div></div></div>"""),
+        "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Privacy Policy</h1><p class="text-sm text-gray-600 leading-relaxed">Your privacy is important to us. We collect necessary information (name, address, phone number) strictly for order processing and delivery. We use SSL encryption to protect your data and do not share your personal information with third parties.</p></div>"""),
+        "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Terms & Conditions</h1><p class="text-sm text-gray-600 leading-relaxed">All orders are subject to product availability. We currently accept Cash on Delivery (COD) and Advance Payment methods. Prices are listed in PKR. We reserve the right to cancel any order in case of stock unavailability or invalid delivery details.</p></div>"""),
+        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Shipping Policy</h1><ul class="list-disc pl-5 text-sm text-gray-600 space-y-2"><li>We offer nationwide delivery across Pakistan.</li><li>Standard delivery time is 2-4 business days.</li><li>Standard delivery charges are Rs 250.</li><li>Free delivery is available for orders above Rs 5000.</li></ul></div>"""),
+        "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3">Return Policy</h1><p class="text-sm text-gray-600 leading-relaxed mb-4">We offer a 7-day return and exchange policy. To be eligible for a return:</p><ul class="list-disc pl-5 text-sm text-gray-600 space-y-2"><li>The item must be unused and in the same condition that you received it.</li><li>It must be in the original packaging.</li><li>Contact our WhatsApp support to initiate a return.</li></ul></div>"""),
+        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl bg-white dark:bg-gray-800 mt-8 rounded border p-8 text-center"><h1 class="text-3xl font-black text-gray-900 dark:text-white mb-6 uppercase border-l-4 border-[#f56437] pl-3 inline-block">Track Order</h1><p class="text-sm text-gray-600 mb-6 mt-4">To track the status of your order, please click the button below to message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="bg-green-500 text-white px-8 py-3 rounded font-bold inline-block shadow-lg hover:bg-green-600 transition"><i class="fab fa-whatsapp text-lg mr-2"></i> Track via WhatsApp</a></div>"""),
+        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-32 text-center"><h1 class="text-8xl font-black text-[#f56437] mb-4">404</h1><h2 class="text-2xl font-bold text-gray-800 mb-4">Oops! Page Not Found</h2><p class="text-sm text-gray-600 mb-8">The page you are looking for might have been removed or is temporarily unavailable.</p><a href="/index.html" class="bg-gray-900 text-white px-8 py-3 rounded font-bold uppercase text-sm hover:bg-[#f56437] transition">Return to Home</a></div>"""),
+        "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-2xl font-black text-gray-900 dark:text-white mb-8 uppercase border-l-4 border-[#f56437] pl-3">My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 border-t border-l border-gray-200 bg-white"></div></div>
         <script>
         function renderWishlist() {
             let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || [];
             let container = document.getElementById('wishlistContainer');
-            if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500"><i class="far fa-heart text-5xl mb-4 opacity-30"></i><p class="text-sm font-semibold">Wishlist is empty</p></div>'; return; }
+            if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500 border-b border-r border-gray-200"><i class="far fa-heart text-5xl mb-4 opacity-30"></i><p class="text-sm font-semibold">Wishlist is empty</p></div>'; return; }
             container.innerHTML = wl.map((item, i) => {
                 let safeName = item.name.replace(/'/g, "\\\\'");
-                return `<div class="product-card bg-white p-2 flex flex-col">
-                    <img src="${item.image}" class="h-32 object-contain mx-auto" alt="Wishlist">
-                    <h3 class="text-[10px] font-bold mt-2 line-clamp-1">${item.name}</h3>
+                return `<div class="product-card bg-white p-3 flex flex-col border-b border-r border-gray-200 rounded-none relative">
+                    <img src="${item.image}" class="h-32 object-contain mx-auto mb-2" alt="Wishlist">
+                    <h3 class="text-xs font-semibold text-gray-800 mt-2 line-clamp-2 h-8">${item.name}</h3>
                     <p class="text-sm font-black text-[#f56437] mt-1">Rs ${item.price}</p>
-                    <div class="flex gap-2 mt-3">
-                        <button onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#f56437] text-white py-1.5 rounded text-xs font-bold"><i class="fas fa-cart-plus"></i></button>
+                    <div class="flex gap-2 mt-4">
+                        <button onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#f56437] text-white py-1.5 rounded text-xs font-bold hover:bg-[#d44c24]"><i class="fas fa-cart-plus"></i></button>
                         <button onclick="removeWishlistItem(${i})" class="px-3 bg-gray-100 text-red-500 rounded hover:bg-gray-200"><i class="fas fa-trash text-xs"></i></button>
                     </div>
                 </div>`;
@@ -1100,10 +1100,10 @@ def generate_static_pages(categories_list):
             f.write(minify_html(get_html_header(title, categories_list) + content + get_html_footer()))
 
     faqs = [
-        ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days."),
+        ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days. Major cities may receive orders sooner."),
         ("Do you offer Cash on Delivery (COD)?", "Yes! We offer Cash on Delivery across all of Pakistan."),
-        ("What is your return policy?", "We offer a 7-day return policy for unused products in original packaging."),
-        ("Are your products genuine?", "Absolutely! We source all products directly from authorized distributors.")
+        ("What is your return policy?", "We offer a 7-day return policy for unused products in original packaging. Just contact our WhatsApp support."),
+        ("Are your products genuine?", "Absolutely! We source all products directly from authorized distributors and ensure 100% authenticity.")
     ]
     
     faq_html = get_html_header("Frequently Asked Questions", categories_list)
@@ -1255,16 +1255,16 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
         </button>"""
     
     card = f"""
-    <div class="product-card reveal relative group cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details">
+    <div class="product-card reveal relative group cursor-pointer border-b border-r border-gray-200 rounded-none bg-white p-3" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details">
         {wishlist_btn}
         {quick_view_btn}
         {f'<div class="absolute top-2 left-2 bg-[#f56437] text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wide">-{discount}%</div>' if discount > 0 else ''}
         
-        <div class="image-zoom h-40 md:h-48 bg-white overflow-hidden relative border-b border-gray-100 flex justify-center items-center p-3">
+        <div class="image-zoom h-32 md:h-40 bg-white overflow-hidden relative flex justify-center items-center mb-2">
             <img src="{prod['image']}" alt="{alt_name}" width="200" height="200" {img_loading} class="w-full h-full object-contain" onerror="this.closest('.product-card').remove();">
         </div>
         
-        <div class="p-3 flex flex-col flex-grow bg-white">
+        <div class="flex flex-col flex-grow bg-white">
             <span class="text-[9px] font-medium text-gray-400 uppercase tracking-widest mb-1 line-clamp-1">{prod['category']}</span>
             <h3 class="text-xs font-semibold text-gray-800 leading-tight mb-2 line-clamp-2 group-hover:text-[#f56437] transition-colors h-8">{prod['name']}</h3>
             
@@ -1453,7 +1453,7 @@ def process_woocommerce_csv():
                 </div>
             </div>
             
-            {"<div class='mb-12'><h2 class='text-xl font-bold mb-6 border-l-4 border-[#f56437] pl-3 uppercase'>Related Products</h2><div class='grid grid-cols-2 md:grid-cols-6 gap-4'>" + related_html + "</div></div>" if related_html else ""}
+            {"<div class='mb-12'><h2 class='text-xl font-bold mb-6 border-l-4 border-[#f56437] pl-3 uppercase'>Related Products</h2><div class='grid grid-cols-2 md:grid-cols-6 gap-0 border-t border-l border-gray-200'>" + related_html + "</div></div>" if related_html else ""}
         </div>
         
         <script>
@@ -1488,7 +1488,7 @@ def process_woocommerce_csv():
                 <p class="text-sm text-gray-500 mt-2">{len(prods)} Products</p>
             </div>
             <div class="container mx-auto px-4 pb-12">
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-0 border-t border-l border-gray-200 bg-white">
             """
             for p in current_prods: cat_html += generate_product_card(p)
             cat_html += "</div>" + generate_pagination_html(page_num, total_pages, f"category/{cat_slug}") + "</div>" + get_html_footer()
@@ -1505,7 +1505,6 @@ def process_woocommerce_csv():
         
         if h_page == 1:
             
-            # V3 HOMEPAGE TOP SECTION (Vertical Menu + Slider)
             v_menu_items = "".join([f'<a href="/category/{re.sub(r"[^a-z0-9]+", "-", c.lower()).strip("-")}.html" class="block px-5 py-3 text-sm text-gray-600 hover:text-[#f56437] hover:bg-gray-50 border-b border-gray-100 transition"><i class="fas {get_category_icon(c)} w-6 text-center text-gray-400"></i> {c}</a>' for c in categories_list[:10]])
             
             home_html += f"""
@@ -1613,7 +1612,7 @@ def process_woocommerce_csv():
                                         <a href="#products" class="mt-6 bg-[#00AEEF] text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-blue-400 transition shadow-[0_5px_15px_rgba(0,174,239,0.4)]">BUY NOW</a>
                                     </div>
                                     <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
-                                        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+                                        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.8)] transform rotate-12">
                                         <div class="absolute right-2 top-1/4 bg-[#00AEEF] text-white text-[10px] md:text-xs font-black px-2 py-1 shadow-lg transform rotate-12">$80.97<br><span class="text-[6px] font-normal">PRICE</span></div>
                                     </div>
                                 </div>
@@ -1721,18 +1720,17 @@ def process_woocommerce_csv():
                 <div class="grid grid-cols-2 md:grid-cols-6 gap-0 border-t border-l border-gray-200">
             """
             
-            # GRID FIX: Exact 6 Products with continuous inner borders to look like a solid grid
+            # GRID FIX: EXACT 6 PRODUCTS
             display_prods = prods[:6]
             if len(prods) > 0:
-                while len(display_prods) < 6: display_prods.append(prods[len(display_prods) % len(prods)])
+                idx = 0
+                while len(display_prods) < 6:
+                    display_prods.append(prods[idx % len(prods)])
+                    idx += 1
                     
             for idx, prod in enumerate(display_prods):
                 is_lazy = True if h_page != 1 or idx >= 3 else False
-                
-                # Inline style adjustment for the grid to have shared borders (TopDeals V3 style)
                 card_html = generate_product_card(prod, lazy=is_lazy)
-                # Replacing standard product card classes with border logic for grid
-                card_html = card_html.replace('border border-gray-200 dark:border-gray-700 rounded-lg', 'border-b border-r border-gray-200 rounded-none')
                 home_html += card_html
                 
             home_html += "</div></div>"
@@ -1772,10 +1770,10 @@ def process_woocommerce_csv():
                         let htmlSafeName = p.name.replace(/"/g, '&quot;');
                         let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
                         
-                        html += `<div class="product-card bg-white p-3 border-b border-r border-gray-200 relative group cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
+                        html += `<div class="product-card bg-white p-3 border-b border-r border-gray-200 rounded-none relative group cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#f56437] text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wide">-${discount}%</div>` : ''}
                             <div class="h-32 bg-white flex justify-center items-center mb-2"><img src="${p.image}" class="h-full object-contain" loading="lazy"></div>
-                            <span class="text-[9px] text-gray-400 uppercase tracking-widest line-clamp-1">${p.category}</span>
+                            <span class="text-[9px] font-medium text-gray-400 uppercase tracking-widest mb-1 line-clamp-1">${p.category}</span>
                             <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mt-1 h-8 group-hover:text-[#f56437]">${htmlSafeName}</h3>
                             <div class="mt-2"><span class="text-sm font-black text-[#f56437]">Rs ${p.final_price}</span></div>
                         </div>`;
@@ -1823,9 +1821,9 @@ def process_woocommerce_csv():
     <div class="container mx-auto px-4 pb-12 max-w-6xl">
         <div class="flex flex-col lg:flex-row gap-8">
             <div class="lg:w-1/2">
-                <div class="bg-white rounded border border-gray-200 p-6 mb-6">
+                <div class="bg-white rounded border border-gray-200 p-6 mb-6 shadow-sm">
                     <h2 class="text-lg font-bold text-gray-900 mb-4 border-b pb-2 uppercase">Order Summary</h2>
-                    <div id="cartItemsContainer" class="space-y-4 max-h-[400px] overflow-y-auto pr-2"></div>
+                    <div id="cartItemsContainer" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar"></div>
                 </div>
             </div>
 
@@ -1867,17 +1865,17 @@ def process_woocommerce_csv():
 
                     <h2 class="text-lg font-bold text-gray-900 mt-6 mb-2 border-b pb-2 uppercase">Payment Method</h2>
                     <div class="grid grid-cols-2 gap-4">
-                        <label class="cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2" id="labelCOD">
+                        <label class="cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2 transition" id="labelCOD">
                             <input type="radio" name="Payment_Method" value="Cash on Delivery" checked class="text-[#f56437]" onchange="togglePaymentDetails()">
                             <span class="text-sm font-bold text-gray-900">COD</span>
                         </label>
-                        <label class="cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2" id="labelAdv">
+                        <label class="cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2 transition" id="labelAdv">
                             <input type="radio" name="Payment_Method" value="Advance" onchange="togglePaymentDetails()">
                             <span class="text-sm font-bold text-gray-900">Online</span>
                         </label>
                     </div>
                     
-                    <div id="advancePaymentDetails" class="hidden bg-gray-50 border border-gray-200 rounded p-4 text-sm mt-3">
+                    <div id="advancePaymentDetails" class="hidden bg-gray-50 border border-gray-200 rounded p-4 text-sm mt-3 transition-all">
                         <p class="font-bold mb-2">Send payment to:</p>
                         <p class="text-green-600 font-bold">Easypaisa: 03425478683 (Ali Abbas)</p>
                         <p class="text-red-600 font-bold">JazzCash: 03085273667 (Aon Abbas)</p>
@@ -1889,7 +1887,7 @@ def process_woocommerce_csv():
                         <div class="flex justify-between text-lg font-black text-gray-900"><span>Total</span><span id="grandTotalDisplay" class="text-[#f56437]">Rs 250</span></div>
                     </div>
 
-                    <button type="submit" id="submitBtn" class="w-full bg-[#f56437] text-white py-3 rounded font-bold uppercase tracking-wide hover:bg-[#d44c24] transition text-sm mt-4">Place Order</button>
+                    <button type="submit" id="submitBtn" class="w-full bg-[#f56437] text-white py-3 rounded font-bold uppercase tracking-wide hover:bg-[#d44c24] transition shadow-md mt-4 flex items-center justify-center gap-2"><i class="fas fa-check-circle"></i> Place Order</button>
                 </form>
             </div>
         </div>
@@ -1903,12 +1901,12 @@ def process_woocommerce_csv():
             let lAdv = document.getElementById('labelAdv');
             if(method === 'Advance') {
                 details.classList.remove('hidden');
-                lAdv.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2";
-                lCOD.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2";
+                lAdv.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2 transition";
+                lCOD.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2 transition";
             } else {
                 details.classList.add('hidden');
-                lCOD.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2";
-                lAdv.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2";
+                lCOD.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2 transition";
+                lAdv.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2 transition";
             }
         }
 
@@ -1949,7 +1947,8 @@ def process_woocommerce_csv():
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
-            btn.innerHTML = 'Processing...'; btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...'; 
+            btn.disabled = true;
 
             fetch('https://formspree.io/f/xjgnlgpw', {
                 method: 'POST', body: new FormData(this), headers: { 'Accept': 'application/json' }
@@ -1960,8 +1959,8 @@ def process_woocommerce_csv():
                     const urlParams = new URLSearchParams(window.location.search);
                     if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
                     window.location.href = '/order-success.html';
-                } else { alert('Error!'); btn.innerHTML = 'Place Order'; btn.disabled = false; }
-            }).catch(() => { alert('Network Error!'); btn.innerHTML = 'Place Order'; btn.disabled = false; });
+                } else { showToast('Error submitting order!', 'fa-exclamation', 'error'); btn.innerHTML = '<i class="fas fa-check-circle"></i> Place Order'; btn.disabled = false; }
+            }).catch(() => { showToast('Network Error!', 'fa-wifi', 'error'); btn.innerHTML = '<i class="fas fa-check-circle"></i> Place Order'; btn.disabled = false; });
         });
         window.addEventListener('load', renderCart);
     </script>
