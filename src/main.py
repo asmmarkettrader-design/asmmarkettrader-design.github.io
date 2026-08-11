@@ -1871,9 +1871,9 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
 
 
     # ==============================================================================
-    # HOMEPAGE DYNAMIC PAGINATION (Index-1, Index-2, etc.)
+    # HOMEPAGE DYNAMIC PAGINATION
     # ==============================================================================
-    print("🏠 Generating Home Pages with Exact 8 Banners & Perfect Grids...")
+    print("🏠 Generating Home Pages with 8 Reference Banners & Grid Fix...")
     all_categories_list = list(sections_dict.items())
     cats_per_home_page = 6 
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
@@ -1884,15 +1884,69 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                                      "ASM VEO - Premium online shopping in Pakistan for Electronics, Fashion & Home Appliances. Buy quality products with Cash on Delivery & fast shipping.")
         
         if h_page == 1:
-            # 🌟 8 EXACT MATCH REFERENCE BANNERS 🌟
+            # 🌟 8 EXACT REFERENCE BANNERS (From Provided Images) 🌟
             home_html += """
             <h1 class="sr-only">ASM VEO - Premium Online Shopping in Pakistan</h1>
             
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
                 
-                    <!-- Banner 1: MACBOOK M2 PRO -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-50" aria-hidden="false">
+                    <!-- Banner 1: SUNSCREEN -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-300 to-cyan-100" aria-hidden="false">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Beach Background" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-100/90 to-transparent w-[60%]"></div>
+                        <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <h2 class="text-3xl md:text-6xl font-black text-orange-500 uppercase tracking-tighter drop-shadow-md">SUNSCREEN</h2>
+                            <p class="text-teal-800 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-1 mb-3">BETTER PROTECTION FOR ALL ACTIVITIES</p>
+                            <p class="text-blue-900 text-[8px] md:text-xs font-semibold max-w-[200px] leading-tight">MOISTURE AND GENTLE SUITABLE FOR SENSITIVE SKIN</p>
+                            <a href="#products" class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-orange-600 transition">SHOP NOW</a>
+                        </div>
+                        <div class="w-[45%] h-full relative z-10 flex justify-center items-end pb-4">
+                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=400&q=80" alt="Sunscreen" class="w-[80%] md:w-[60%] object-contain mix-blend-multiply drop-shadow-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Banner 2: COSMETICS -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-pink-100 to-rose-200" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1200&q=80" alt="Cosmetics Background" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity">
+                        <div class="w-[45%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <span class="text-rose-900 text-[8px] md:text-[10px] font-bold tracking-[0.2em] uppercase mb-1">BRAND NAME</span>
+                            <h2 class="text-3xl md:text-6xl font-black text-rose-700 uppercase tracking-tight">COSMETICS</h2>
+                            <p class="text-rose-900 text-[8px] md:text-[10px] mt-2 max-w-[200px] leading-tight opacity-70">Premium quality for your daily beauty routine.</p>
+                        </div>
+                        <div class="w-[55%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Perfume" class="w-[90%] md:w-[70%] object-contain mix-blend-multiply drop-shadow-2xl transform hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+
+                    <!-- Banner 3: HONEY LOTION -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-yellow-400 to-amber-500" aria-hidden="true">
+                        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1587049352847-81a56d773c1c?auto=format&fit=crop&w=1200&q=80')] bg-cover mix-blend-overlay"></div>
+                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Honey Lotion" class="w-[80%] md:w-[60%] object-contain drop-shadow-[0_20px_50px_rgba(180,83,9,0.5)]">
+                        </div>
+                        <div class="w-[50%] h-full flex flex-col justify-center items-start pr-8 relative z-10 text-amber-900">
+                            <h2 class="text-2xl md:text-4xl font-serif italic leading-tight">NATURAL<br>HUMECTANTS<br>FOR SKIN</h2>
+                            <span class="text-xs font-bold tracking-[0.2em] mt-2 uppercase">Beauty</span>
+                            <div class="absolute bottom-10 right-10 w-16 h-16 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm rounded-full border border-amber-200 flex items-center justify-center text-center p-2 shadow-lg">
+                                <span class="text-[8px] md:text-[10px] font-black uppercase">Hydrate<br>The Skin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Banner 4: SUPER CLEAN -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-cyan-300 to-blue-400" aria-hidden="true">
+                        <div class="w-1/2 h-full flex flex-col justify-center items-center pl-8 relative z-10 text-white">
+                            <h2 class="text-5xl md:text-7xl font-black italic uppercase leading-none drop-shadow-lg text-yellow-300 transform -skew-x-12">Super<br><span class="text-white">Clean</span></h2>
+                            <a href="#products" class="mt-6 border-2 border-white px-6 py-2 rounded-full text-xs font-bold hover:bg-white hover:text-blue-500 transition shadow-[0_0_15px_rgba(255,255,255,0.5)]">SHOP NOW</a>
+                        </div>
+                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1584820927498-cafe8c124016?auto=format&fit=crop&w=400&q=80" alt="Detergent" class="w-[70%] md:w-[50%] object-contain mix-blend-multiply drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)] transform hover:rotate-6 transition-transform">
+                        </div>
+                    </div>
+
+                    <!-- Banner 5: MACBOOK M2 PRO (Reference 2) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-50" aria-hidden="true">
                         <div class="absolute right-0 top-0 w-3/5 h-full bg-gradient-to-bl from-green-200 via-blue-100 to-transparent" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"></div>
                         <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
                             <div class="bg-red-600 text-white px-3 py-1 text-[10px] md:text-xs font-bold transform -skew-x-12 inline-block mb-3 shadow-md">SPECIAL OFFER</div>
@@ -1904,8 +1958,8 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                             <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Macbook" class="w-[90%] md:w-[80%] object-contain mix-blend-multiply transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl">
                         </div>
                     </div>
-                    
-                    <!-- Banner 2: SONY h.ear -->
+
+                    <!-- Banner 6: SONY h.ear (Reference 2) -->
                     <div class="carousel-slide h-full relative overflow-hidden flex" aria-hidden="true">
                         <div class="w-1/3 bg-[#E53935] h-full flex flex-col justify-center pl-8 md:pl-12 text-white relative z-10">
                             <div class="absolute top-4 left-8 font-black tracking-widest text-lg md:text-xl">SONY</div>
@@ -1923,35 +1977,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         </div>
                     </div>
 
-                    <!-- Banner 3: DAILY DOSE (Supplements) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-[#1E1E1E]" aria-hidden="true">
-                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-20">
-                            <span class="text-white text-xs md:text-sm font-semibold tracking-widest uppercase mb-1">Welcome To</span>
-                            <h2 class="text-4xl md:text-6xl font-black text-green-500 italic uppercase leading-none transform -skew-x-12 tracking-tighter">Daily Dose</h2>
-                            <h3 class="text-white text-[10px] md:text-xs font-bold italic tracking-wider mt-2">OUR MISSION - WELLNESS FOR LIFE!</h3>
-                            <a href="#products" class="mt-4 bg-green-500 text-white px-6 py-2 text-xs font-bold hover:bg-green-400 transition shadow-[0_0_15px_rgba(34,197,94,0.5)]">SHOP NOW</a>
-                        </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-luminosity">
-                            <div class="relative z-20 w-32 md:w-48 h-32 md:h-48 bg-white rounded-xl shadow-2xl flex items-center justify-center p-2 transform rotate-6 border border-gray-200">
-                                <img src="https://images.unsplash.com/photo-1584308666744-24d5e4a5bbf1?auto=format&fit=crop&w=300&q=80" class="object-cover w-full h-full rounded-lg">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Banner 4: EARTH LOVES YOU (Salad/Organic) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-yellow-400 to-yellow-500" aria-hidden="true">
-                        <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
-                            <h2 class="text-3xl md:text-5xl font-black text-green-800 uppercase leading-none">Earth Loves You<br>Love It Back</h2>
-                            <p class="text-green-900 text-[10px] md:text-sm mt-3 font-semibold max-w-[250px] leading-tight">Don't let your waste last, choose disposable fast.</p>
-                            <a href="#products" class="mt-5 bg-green-600 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-green-700 transition">SHOP NOW</a>
-                        </div>
-                        <div class="w-[45%] h-full relative z-10 flex items-center justify-center pr-4">
-                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="Fresh Salad" class="w-40 md:w-64 h-40 md:h-64 object-cover rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-yellow-300 transform hover:rotate-12 transition-transform duration-700">
-                        </div>
-                    </div>
-
-                    <!-- Banner 5: RUNNING SNEAKERS -->
+                    <!-- Banner 7: RUNNING SNEAKERS (Reference 2) -->
                     <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-teal-200 to-emerald-300" aria-hidden="true">
                         <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
                             <div class="flex gap-4 text-[8px] md:text-[10px] font-bold text-teal-800 uppercase tracking-widest mb-6">
@@ -1967,7 +1993,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         </div>
                     </div>
 
-                    <!-- Banner 6: 2022 LIGE MENS WATCHES -->
+                    <!-- Banner 8: 2022 LIGE MENS WATCHES (Reference 2) -->
                     <div class="carousel-slide h-full relative overflow-hidden flex bg-[#2D2D2D]" aria-hidden="true">
                         <div class="absolute bottom-0 left-0 w-full h-[40%] bg-[#0078D7]" style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);"></div>
                         <div class="w-3/5 h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
@@ -1978,33 +2004,6 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         <div class="w-2/5 h-full relative z-10 flex justify-center items-center">
                             <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-12 hover:rotate-0 transition-transform duration-500">
                             <div class="absolute right-4 top-1/4 bg-[#00AEEF] text-white text-[10px] md:text-xs font-black px-2 py-1 rounded shadow-lg transform rotate-12">$80.97</div>
-                        </div>
-                    </div>
-
-                    <!-- Banner 7: NEW COLLECTIONS Fanny Pack -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-100" aria-hidden="true">
-                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
-                            <h2 class="text-3xl md:text-5xl font-serif text-gray-900 leading-none">NEW<br>COLLECTIONS</h2>
-                            <p class="text-gray-700 text-[10px] md:text-xs font-bold tracking-widest mt-2 uppercase">FANNY PACK DESIGNS!</p>
-                            <a href="#products" class="mt-5 bg-yellow-400 text-gray-900 px-6 py-2 rounded-full text-xs font-black shadow-lg hover:bg-yellow-500 transition">SHOP NOW</a>
-                        </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <div class="absolute w-40 h-40 md:w-64 md:h-64 bg-yellow-400 rounded-full -z-10 transform translate-x-4"></div>
-                            <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=500&q=80" alt="Fanny Pack" class="w-[80%] md:w-[70%] object-contain mix-blend-multiply transform hover:scale-110 transition-transform duration-500 drop-shadow-2xl">
-                        </div>
-                    </div>
-
-                    <!-- Banner 8: SHAVING FOAM -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-cyan-400 to-blue-600" aria-hidden="true">
-                        <div class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1550246140-5119ae4790b8?auto=format&fit=crop&w=1200&q=80')] bg-cover mix-blend-overlay"></div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=500&q=80" alt="Shaving Foam" class="w-24 md:w-40 object-cover rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] transform rotate-12 hover:rotate-0 transition-transform duration-500 border-2 border-white/20">
-                        </div>
-                        <div class="w-1/2 h-full flex flex-col justify-center items-end pr-8 md:pr-16 z-10 text-white text-right">
-                            <span class="text-[8px] md:text-[10px] font-bold tracking-[0.3em] uppercase mb-1">BRAND NAME</span>
-                            <h2 class="text-3xl md:text-5xl font-black uppercase leading-none drop-shadow-md">SHAVING<br>FOAM</h2>
-                            <div class="h-0.5 w-16 bg-white/50 my-3"></div>
-                            <p class="text-[8px] md:text-xs text-blue-100 max-w-[200px]">Experience the ultimate freshness and clean shave.</p>
                         </div>
                     </div>
                     
@@ -2166,8 +2165,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
-            # 🌟 GRID ISSUE FULLY FIXED: Exact 6 Products Per Category Array 🌟
-            # (No Placeholders, No Empty Spaces, Only Real Products looped if needed)
+            # 🌟 GRID ISSUE FULLY FIXED: EXACT 6 PRODUCTS LOOPING LOGIC 🌟
             display_prods = prods[:6]
             if len(prods) > 0:
                 while len(display_prods) < 6:
@@ -2736,4 +2734,8 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
     generate_image_sitemap(products_list) 
     generate_merchant_feed(products_list) 
     auto_fix_broken_links("output")
-    apply_lighthouse_Main text ke aadhaar par kaam karne vala AI hoon aur main ismein madad nahin kar sakta.
+    apply_lighthouse_optimizations("output")
+    trigger_google_indexing_api(sitemap_urls)
+
+if __name__ == "__main__":
+    process_woocommerce_csv()
