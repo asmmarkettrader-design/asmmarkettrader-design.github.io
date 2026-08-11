@@ -1097,17 +1097,20 @@ def generate_merchant_feed(products_list):
     xml_content += '  <link>https://www.asmveo.com</link>\n'
     xml_content += '  <description>Premium online shopping in Pakistan with COD</description>\n'
     
-    for prod in products_list:
+  for prod in products_list:
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_desc = prod['seo_desc'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_cat = prod['category'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        
+        # 🌟 SEO FIX: Image URL Encoding (Fixes "Invalid Image Encoding" Error) 🌟
+        safe_image_url = urllib.parse.quote(prod['image'], safe=":/")
         
         xml_content += '  <item>\n'
         xml_content += f"    <g:id>{prod['id']}</g:id>\n"
         xml_content += f"    <g:title>{safe_title}</g:title>\n"
         xml_content += f"    <g:description>{safe_desc}</g:description>\n"
         xml_content += f"    <g:link>https://www.asmveo.com/product/{prod['slug']}.html</g:link>\n"
-        xml_content += f"    <g:image_link>{prod['image']}</g:image_link>\n"
+        xml_content += f"    <g:image_link>{safe_image_url}</g:image_link>\n"
         xml_content += "    <g:condition>new</g:condition>\n"
         xml_content += "    <g:availability>in_stock</g:availability>\n"
         xml_content += f"    <g:price>{prod['final_price']} PKR</g:price>\n"
