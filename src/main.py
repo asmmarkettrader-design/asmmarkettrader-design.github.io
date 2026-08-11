@@ -2316,6 +2316,53 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                         <label for="addressInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label>
                         <textarea id="addressInput" name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
                     </div>
+
+                    <!-- 🌟 NEW: PAYMENT METHOD SECTION 🌟 -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Payment Method <span class="text-red-600">*</span></label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="cursor-pointer border-2 border-[#E53935] bg-red-50 dark:bg-red-900/20 p-4 rounded-xl flex items-center gap-3 transition-all" id="labelCOD">
+                                <input type="radio" name="Payment_Method" value="Cash on Delivery" checked class="w-5 h-5 text-[#E53935] focus:ring-[#E53935]" onchange="togglePaymentDetails()">
+                                <span class="font-bold text-gray-900 dark:text-white">Cash on Delivery</span>
+                            </label>
+                            <label class="cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:border-[#E53935] p-4 rounded-xl flex items-center gap-3 transition-all" id="labelAdv">
+                                <input type="radio" name="Payment_Method" value="Advance Payment" class="w-5 h-5 text-[#E53935] focus:ring-[#E53935]" onchange="togglePaymentDetails()">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-gray-900 dark:text-white leading-tight">Advance Payment</span>
+                                    <span class="text-[10px] font-semibold text-gray-500">Easypaisa / JazzCash</span>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <!-- Advance Payment Details Box -->
+                        <div id="advancePaymentDetails" class="hidden mt-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-5 reveal active">
+                            <h4 class="font-bold text-blue-800 dark:text-blue-300 mb-3 flex items-center gap-2"><i class="fas fa-university"></i> Send Payment Here:</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 text-sm">
+                                <div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+                                    <div class="font-black text-green-600 mb-1 flex items-center gap-1"><div class="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center text-white text-[8px]">e</div> Easypaisa</div>
+                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p>
+                                    <p class="font-black text-gray-900 dark:text-white mb-2">Ali Abbas</p>
+                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p>
+                                    <p class="font-black text-gray-900 dark:text-white">03425478683</p>
+                                </div>
+                                <div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+                                    <div class="font-black text-red-600 mb-1 italic tracking-tighter">jazzCash</div>
+                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p>
+                                    <p class="font-black text-gray-900 dark:text-white mb-2">Aon Abbas</p>
+                                    <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p>
+                                    <p class="font-black text-gray-900 dark:text-white">03085273667</p>
+                                </div>
+                            </div>
+                            <div class="bg-blue-100 dark:bg-blue-900/40 p-3 rounded-lg border border-blue-200 dark:border-blue-800 flex items-start gap-2">
+                                <i class="fas fa-info-circle text-blue-700 dark:text-blue-400 mt-0.5"></i>
+                                <p class="text-xs text-blue-800 dark:text-blue-300 font-bold leading-relaxed">
+                                    <span class="uppercase text-[10px] bg-blue-200 dark:bg-blue-800 px-1 py-0.5 rounded mr-1">Zaroori</span>
+                                    Payment send krny k baad WhatsApp par screenshot lazmi send karein ta k apka order foran process ho saky.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 🌟 END PAYMENT METHOD SECTION 🌟 -->
                     
                     <div>
                         <label for="orderNotes" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label>
@@ -2344,7 +2391,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                             <span id="deliveryDisplay">Rs 250</span>
                         </div>
                         <div class="flex justify-between items-center border-t border-gray-200 dark:border-gray-600 pt-3 mt-3">
-                            <span class="font-black text-lg text-gray-900 dark:text-white">Total (COD)</span>
+                            <span class="font-black text-lg text-gray-900 dark:text-white">Total</span>
                             <span class="font-black text-2xl text-[#E53935] dark:text-white" id="grandTotalDisplay">Rs 250</span>
                         </div>
                     </div>
@@ -2367,6 +2414,29 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
     checkout_script = """
     <script>
         let couponApplied = false;
+
+        // 🌟 NEW: Toggle Payment Method Display 🌟
+        function togglePaymentDetails() {
+            let method = document.querySelector('input[name="Payment_Method"]:checked').value;
+            let details = document.getElementById('advancePaymentDetails');
+            let labelCOD = document.getElementById('labelCOD');
+            let labelAdv = document.getElementById('labelAdv');
+            
+            if(method === 'Advance Payment') {
+                details.classList.remove('hidden');
+                labelAdv.classList.add('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
+                labelAdv.classList.remove('border-gray-200', 'dark:border-gray-600');
+                labelCOD.classList.remove('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
+                labelCOD.classList.add('border-gray-200', 'dark:border-gray-600');
+            } else {
+                details.classList.add('hidden');
+                labelCOD.classList.add('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
+                labelCOD.classList.remove('border-gray-200', 'dark:border-gray-600');
+                labelAdv.classList.remove('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
+                labelAdv.classList.add('border-gray-200', 'dark:border-gray-600');
+            }
+            renderCart();
+        }
         
         function applyCoupon() {
             let code = document.getElementById('couponCode').value;
@@ -2456,6 +2526,9 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             let discount = couponApplied ? Math.floor(subtotal * 0.10) : 0;
             let grandTotal = subtotal - discount + delivery;
             
+            // Add payment method info to Formspree email
+            let paymentMethod = document.querySelector('input[name="Payment_Method"]:checked').value;
+            
             document.getElementById('subtotalDisplay').innerText = "Rs " + subtotal;
             document.getElementById('deliveryDisplay').innerText = delivery === 0 ? "FREE" : "Rs " + delivery;
             
@@ -2468,7 +2541,7 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
             }
             
             document.getElementById('grandTotalDisplay').innerText = "Rs " + grandTotal;
-            document.getElementById('productField').value = finalOrderString + "\\nDelivery: Rs " + delivery + "\\nDiscount: Rs " + discount + "\\nGrand Total: Rs " + grandTotal;
+            document.getElementById('productField').value = finalOrderString + "\\nDelivery: Rs " + delivery + "\\nDiscount: Rs " + discount + "\\nGrand Total: Rs " + grandTotal + "\\nPayment Method: " + paymentMethod;
             document.getElementById('totalField').value = "Rs " + grandTotal;
         }
 
