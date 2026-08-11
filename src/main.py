@@ -1455,13 +1455,19 @@ def process_woocommerce_csv():
             
             {"<div class='mb-12'><h2 class='text-xl font-bold mb-6 border-l-4 border-[#f56437] pl-3 uppercase'>Related Products</h2><div class='grid grid-cols-2 md:grid-cols-6 gap-0 border-t border-l border-gray-200'>" + related_html + "</div></div>" if related_html else ""}
         </div>
+        """
         
+        recent_json = json.dumps({"slug": prod['slug'], "name": prod['name'], "image": prod['image'], "final_price": prod['final_price'], "fake_price": prod['fake_price'], "category": prod['category']})
+        prod_script = """
         <script>
-            addToRecentlyViewed({json.dumps({"slug": prod['slug'], "name": prod['name'], "image": prod['image'], "final_price": prod['final_price'], "fake_price": prod['fake_price'], "category": prod['category']})});
-            function changeMainImage(thumb) {{ document.getElementById('mainProductImage').src = thumb.src; }}
+            addToRecentlyViewed(__RECENT_JSON__);
+            function changeMainImage(thumb) { document.getElementById('mainProductImage').src = thumb.src; }
         </script>
         """
+        
+        prod_html += prod_script.replace("__RECENT_JSON__", recent_json)
         prod_html += get_html_footer()
+        
         with open(f"output/product/{prod['slug']}.html", "w", encoding="utf-8") as f: f.write(minify_html(prod_html))
 
     # ================= CATEGORY PAGES =================
@@ -1505,6 +1511,7 @@ def process_woocommerce_csv():
         
         if h_page == 1:
             
+            # V3 HOMEPAGE TOP SECTION (Vertical Menu + Slider)
             v_menu_items = "".join([f'<a href="/category/{re.sub(r"[^a-z0-9]+", "-", c.lower()).strip("-")}.html" class="block px-5 py-3 text-sm text-gray-600 hover:text-[#f56437] hover:bg-gray-50 border-b border-gray-100 transition"><i class="fas {get_category_icon(c)} w-6 text-center text-gray-400"></i> {c}</a>' for c in categories_list[:10]])
             
             home_html += f"""
@@ -1720,16 +1727,15 @@ def process_woocommerce_csv():
                 <div class="grid grid-cols-2 md:grid-cols-6 gap-0 border-t border-l border-gray-200">
             """
             
-            # GRID FIX: EXACT 6 PRODUCTS
+            # GRID FIX: Exact 6 Products with continuous inner borders to look like a solid grid
             display_prods = prods[:6]
             if len(prods) > 0:
-                idx = 0
-                while len(display_prods) < 6:
-                    display_prods.append(prods[idx % len(prods)])
-                    idx += 1
+                while len(display_prods) < 6: display_prods.append(prods[len(display_prods) % len(prods)])
                     
             for idx, prod in enumerate(display_prods):
                 is_lazy = True if h_page != 1 or idx >= 3 else False
+                
+                # Inline style adjustment for the grid to have shared borders (TopDeals V3 style)
                 card_html = generate_product_card(prod, lazy=is_lazy)
                 home_html += card_html
                 
@@ -1770,10 +1776,10 @@ def process_woocommerce_csv():
                         let htmlSafeName = p.name.replace(/"/g, '&quot;');
                         let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
                         
-                        html += `<div class="product-card bg-white p-3 border-b border-r border-gray-200 rounded-none relative group cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
+                        html += `<div class="product-card bg-white p-3 border-b border-r border-gray-200 relative group cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#f56437] text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wide">-${discount}%</div>` : ''}
                             <div class="h-32 bg-white flex justify-center items-center mb-2"><img src="${p.image}" class="h-full object-contain" loading="lazy"></div>
-                            <span class="text-[9px] font-medium text-gray-400 uppercase tracking-widest mb-1 line-clamp-1">${p.category}</span>
+                            <span class="text-[9px] text-gray-400 uppercase tracking-widest line-clamp-1">${p.category}</span>
                             <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mt-1 h-8 group-hover:text-[#f56437]">${htmlSafeName}</h3>
                             <div class="mt-2"><span class="text-sm font-black text-[#f56437]">Rs ${p.final_price}</span></div>
                         </div>`;
@@ -1821,9 +1827,9 @@ def process_woocommerce_csv():
     <div class="container mx-auto px-4 pb-12 max-w-6xl">
         <div class="flex flex-col lg:flex-row gap-8">
             <div class="lg:w-1/2">
-                <div class="bg-white rounded border border-gray-200 p-6 mb-6 shadow-sm">
+                <div class="bg-white rounded border border-gray-200 p-6 mb-6">
                     <h2 class="text-lg font-bold text-gray-900 mb-4 border-b pb-2 uppercase">Order Summary</h2>
-                    <div id="cartItemsContainer" class="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar"></div>
+                    <div id="cartItemsContainer" class="space-y-4 max-h-[400px] overflow-y-auto pr-2"></div>
                 </div>
             </div>
 
@@ -1865,17 +1871,17 @@ def process_woocommerce_csv():
 
                     <h2 class="text-lg font-bold text-gray-900 mt-6 mb-2 border-b pb-2 uppercase">Payment Method</h2>
                     <div class="grid grid-cols-2 gap-4">
-                        <label class="cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2 transition" id="labelCOD">
+                        <label class="cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2" id="labelCOD">
                             <input type="radio" name="Payment_Method" value="Cash on Delivery" checked class="text-[#f56437]" onchange="togglePaymentDetails()">
                             <span class="text-sm font-bold text-gray-900">COD</span>
                         </label>
-                        <label class="cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2 transition" id="labelAdv">
+                        <label class="cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2" id="labelAdv">
                             <input type="radio" name="Payment_Method" value="Advance" onchange="togglePaymentDetails()">
                             <span class="text-sm font-bold text-gray-900">Online</span>
                         </label>
                     </div>
                     
-                    <div id="advancePaymentDetails" class="hidden bg-gray-50 border border-gray-200 rounded p-4 text-sm mt-3 transition-all">
+                    <div id="advancePaymentDetails" class="hidden bg-gray-50 border border-gray-200 rounded p-4 text-sm mt-3">
                         <p class="font-bold mb-2">Send payment to:</p>
                         <p class="text-green-600 font-bold">Easypaisa: 03425478683 (Ali Abbas)</p>
                         <p class="text-red-600 font-bold">JazzCash: 03085273667 (Aon Abbas)</p>
@@ -1887,7 +1893,7 @@ def process_woocommerce_csv():
                         <div class="flex justify-between text-lg font-black text-gray-900"><span>Total</span><span id="grandTotalDisplay" class="text-[#f56437]">Rs 250</span></div>
                     </div>
 
-                    <button type="submit" id="submitBtn" class="w-full bg-[#f56437] text-white py-3 rounded font-bold uppercase tracking-wide hover:bg-[#d44c24] transition shadow-md mt-4 flex items-center justify-center gap-2"><i class="fas fa-check-circle"></i> Place Order</button>
+                    <button type="submit" id="submitBtn" class="w-full bg-[#f56437] text-white py-3 rounded font-bold uppercase tracking-wide hover:bg-[#d44c24] transition text-sm mt-4">Place Order</button>
                 </form>
             </div>
         </div>
@@ -1901,12 +1907,12 @@ def process_woocommerce_csv():
             let lAdv = document.getElementById('labelAdv');
             if(method === 'Advance') {
                 details.classList.remove('hidden');
-                lAdv.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2 transition";
-                lCOD.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2 transition";
+                lAdv.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2";
+                lCOD.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2";
             } else {
                 details.classList.add('hidden');
-                lCOD.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2 transition";
-                lAdv.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2 transition";
+                lCOD.className = "cursor-pointer border border-[#f56437] bg-orange-50 p-3 rounded flex items-center gap-2";
+                lAdv.className = "cursor-pointer border border-gray-200 p-3 rounded flex items-center gap-2";
             }
         }
 
@@ -1947,8 +1953,7 @@ def process_woocommerce_csv():
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...'; 
-            btn.disabled = true;
+            btn.innerHTML = 'Processing...'; btn.disabled = true;
 
             fetch('https://formspree.io/f/xjgnlgpw', {
                 method: 'POST', body: new FormData(this), headers: { 'Accept': 'application/json' }
@@ -1959,8 +1964,8 @@ def process_woocommerce_csv():
                     const urlParams = new URLSearchParams(window.location.search);
                     if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
                     window.location.href = '/order-success.html';
-                } else { showToast('Error submitting order!', 'fa-exclamation', 'error'); btn.innerHTML = '<i class="fas fa-check-circle"></i> Place Order'; btn.disabled = false; }
-            }).catch(() => { showToast('Network Error!', 'fa-wifi', 'error'); btn.innerHTML = '<i class="fas fa-check-circle"></i> Place Order'; btn.disabled = false; });
+                } else { alert('Error!'); btn.innerHTML = 'Place Order'; btn.disabled = false; }
+            }).catch(() => { alert('Network Error!'); btn.innerHTML = 'Place Order'; btn.disabled = false; });
         });
         window.addEventListener('load', renderCart);
     </script>
