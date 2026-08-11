@@ -261,7 +261,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         canonical_url = f"https://www.asmveo.com/product/{product_data['slug']}.html"
 
     safe_title = title[:60] + "..." if len(title) > 60 else title
-    # SEO Fix: Meta Description length capped at 125 chars
     safe_desc = seo_desc[:125] + "..." if seo_desc and len(seo_desc) > 125 else (seo_desc or "Premium online shopping in Pakistan with Cash on Delivery.")
     
     structured_data = """
@@ -402,7 +401,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="theme-color" content="#E53935">
     <link rel="canonical" href="{canonical_url}">
     
-    <!-- SEO Fixes: Added Favicon and Hreflang Tags -->
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png">
     <link rel="alternate" hreflang="en-PK" href="{canonical_url}" />
@@ -499,7 +497,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </style>
     {structured_data}
     
-    <!-- SEO Fix: Added DEFER to scripts to prevent block parsing -->
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
     <script defer>
       window.dataLayer = window.dataLayer || [];
@@ -861,7 +858,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 """
 
 # ==============================================================================
-# HTML FOOTER GENERATION (SEO Fix: Added Social Media Links)
+# HTML FOOTER GENERATION
 # ==============================================================================
 
 def get_html_footer():
@@ -964,7 +961,6 @@ def get_html_footer():
 def generate_static_pages(categories_list):
     print("📄 Generating Static Pages...")
     
-    # 🌟 NEW FEATURE: GOOGLE REVIEW POPUP FIX 🌟
     order_success_html = """
         <div class="container mx-auto px-4 py-20 text-center relative">
             <div class="w-24 h-24 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce"><i class="fas fa-check text-5xl text-green-600"></i></div>
@@ -1019,7 +1015,6 @@ def generate_static_pages(categories_list):
                 localStorage.removeItem('asm_customer_email');
             };
 
-            // Enhanced Custom Review Modal Logic (Independant of Google API)
             document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     let modal = document.getElementById('googleReviewModal');
@@ -1236,14 +1231,8 @@ def generate_merchant_feed(products_list):
 # ==============================================================================
 
 def generate_product_card(prod, lazy=True, show_wishlist=True, is_placeholder=False):
-    # 🌟 NEW: Dynamic Grid Filler to Ensure Exact 6 Cards Always 🌟
     if is_placeholder:
-        return """
-        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-200 dark:border-gray-700 flex flex-col items-center justify-center p-4 text-center h-full min-h-[220px] md:min-h-[250px] opacity-60">
-            <i class="fas fa-box-open text-3xl md:text-4xl text-gray-400 mb-3" aria-hidden="true"></i>
-            <span class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest">More Arrivals<br>Coming Soon</span>
-        </div>
-        """
+        return ""
 
     discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
     img_loading = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="sync"'
@@ -2171,16 +2160,20 @@ ASM VEO is a trusted e-commerce platform in Pakistan offering a diverse range of
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
-            # 🌟 GRID FILLER FIX: Exactly 6 slots generated per category 🌟
-            for idx in range(6):
+            # 🌟 NEW LOGIC: Grid Filler with Actual Products (NO Placeholders) 🌟
+            # Har haal main exactly 6 products show hongi. Agar category main 6 se kam hain, 
+            # to script doosri categories se random products utha kar grid poori kar dega.
+            display_prods = prods[:6]
+            if len(display_prods) < 6:
+                needed = 6 - len(display_prods)
+                other_prods = [p for p in products_list if p not in display_prods]
+                display_prods.extend(random.sample(other_prods, min(needed, len(other_prods))))
+                
+            for idx, prod in enumerate(display_prods):
                 is_lazy = True
                 if h_page == 1 and idx < 3: 
                     is_lazy = False
-                
-                if idx < len(prods):
-                    home_html += generate_product_card(prods[idx], lazy=is_lazy)
-                else:
-                    home_html += generate_product_card(None, is_placeholder=True)
+                home_html += generate_product_card(prod, lazy=is_lazy)
                 
             home_html += "</div></div>"
         
