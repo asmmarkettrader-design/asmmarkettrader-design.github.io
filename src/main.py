@@ -1568,6 +1568,50 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
         </div>
     </div>
     """
+    # ==============================================================================
+# PAGINATION HTML GENERATOR
+# ==============================================================================
+
+def generate_pagination_html(current_page, total_pages, url_pattern):
+    if total_pages <= 1: 
+        return ""
+    
+    html = '<div class="flex justify-center items-center gap-2 mt-12 mb-8 font-semibold text-gray-600 text-lg" role="navigation" aria-label="Pagination Navigation">'
+    
+    if current_page > 1:
+        prev_slug = url_pattern if current_page - 1 == 1 else f"{url_pattern}-{current_page - 1}"
+        html += f'<a href="/{prev_slug}.html" class="px-4 py-2 hover:text-[#007BFF] transition" aria-label="Previous Page">&lt;</a>'
+    else: 
+        html += '<span class="px-4 py-2 opacity-40 cursor-not-allowed" aria-hidden="true">&lt;</span>'
+        
+    pages_to_show = []
+    if total_pages <= 7: 
+        pages_to_show = list(range(1, total_pages + 1))
+    else:
+        if current_page <= 4: 
+            pages_to_show = [1, 2, 3, 4, 5, '...', total_pages]
+        elif current_page >= total_pages - 3: 
+            pages_to_show = [1, '...', total_pages-4, total_pages-3, total_pages-2, total_pages-1, total_pages]
+        else: 
+            pages_to_show = [1, '...', current_page-1, current_page, current_page+1, '...', total_pages]
+            
+    for p_num in pages_to_show:
+        if p_num == '...': 
+            html += '<span class="px-2 py-2" aria-hidden="true">...</span>'
+        elif p_num == current_page: 
+            html += f'<span class="bg-[#007BFF] text-white px-4 py-2 rounded-lg shadow-sm" aria-current="page">{p_num}</span>'
+        else:
+            p_slug = url_pattern if p_num == 1 else f"{url_pattern}-{p_num}"
+            html += f'<a href="/{p_slug}.html" class="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg transition" aria-label="Go to Page {p_num}">{p_num}</a>'
+            
+    if current_page < total_pages:
+        next_slug = f"{url_pattern}-{current_page + 1}"
+        html += f'<a href="/{next_slug}.html" class="px-4 py-2 hover:text-[#007BFF] transition" aria-label="Next Page">&gt;</a>'
+    else: 
+        html += '<span class="px-4 py-2 opacity-40 cursor-not-allowed" aria-hidden="true">&gt;</span>'
+        
+    html += '</div>'
+    return html
 # ==============================================================================
 # MAIN PROCESSOR
 # ==============================================================================
