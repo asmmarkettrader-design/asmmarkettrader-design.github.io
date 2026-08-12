@@ -2871,11 +2871,9 @@ def process_woocommerce_csv():
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
     print("✨ Accessibility, Performance, SEO Blogs, Daraz Keywords, Schema & Broken Links Fixed successfully!")
     
+    # 🌟 FINAL FIX: Removed auto_fix_broken_links completely to prevent 404 errors 🌟
     generate_image_sitemap(products_list) 
     generate_merchant_feed(products_list) 
-    
-    # 🌟 FIX 2: Removed aggressive broken link fixer that was causing 404 errors 🌟
-    
     apply_lighthouse_optimizations("output")
     trigger_google_indexing_api(sitemap_urls)
 
