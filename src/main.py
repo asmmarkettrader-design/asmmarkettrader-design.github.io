@@ -2195,24 +2195,15 @@ def process_woocommerce_csv():
     # 🌟 NEW: Custom Top 6 Categories Priority Logic 🌟
     def get_cat_priority(cat_tuple):
         cat_name = cat_tuple[0].lower()
-        # 1. Apparel & Fashion
         if any(w in cat_name for w in ['apparel', 'fashion', 'cloth', 'suit', 'wear', 'garment', 'kapde']): return 1
-        # 2. Consumer Electronics & Mobile Accessories
         if any(w in cat_name for w in ['electronic', 'mobile', 'accessor', 'smartwatch', 'earbud', 'charger']): return 2
-        # 3. Health, Beauty & Skincare
         if any(w in cat_name for w in ['health', 'beauty', 'skin', 'cosmetic', 'makeup', 'serum', 'wash']): return 3
-        # 4. Home & Living
         if any(w in cat_name for w in ['home', 'living', 'decor', 'kitchen', 'bedsheet', 'gadget']): return 4
-        # 5. Food & Online Groceries
         if any(w in cat_name for w in ['food', 'grocery', 'snack', 'ration', 'fresh']): return 5
-        # 6. Footwear & Bags
         if any(w in cat_name for w in ['footwear', 'shoe', 'bag', 'sandal', 'sneaker', 'handbag']): return 6
-        # Banki sab next pages par jayengi
         return 99 
 
-    # Pehle products ki tadad ke hisaab se sort karein
     valid_home_cats.sort(key=lambda x: len(x[1]), reverse=True)
-    # Phir aapki custom priority (1 se 6) ke hisaab se sort karein (Top 6 Page 1 par)
     valid_home_cats.sort(key=get_cat_priority)
     
     all_categories_list = valid_home_cats
@@ -2223,140 +2214,203 @@ def process_woocommerce_csv():
         page_title = "Online Shopping in Pakistan | ASM VEO" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
         home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.")
         
+        # 🌟 یھاں سے وہ حصہ شروع ہوتا ہے جو صرف پیج 1 (مین ہوم پیج) پر نظر آئے گا 🌟
         if h_page == 1:
             home_html += """
             <h1 class="sr-only">Pakistan's Trusted Online Shopping Store</h1>
             
-            <div id="heroCarousel" class="relative w-full h-[200px] md:h-[350px] overflow-hidden shadow-sm border-b border-gray-200 dark:border-gray-800" aria-label="Featured Promotions Carousel">
+            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
-                    
-                    <div class="carousel-slide h-full relative bg-gradient-to-r from-orange-100 to-pink-100 dark:from-gray-800 dark:to-gray-900 flex items-center">
-                        <div class="absolute right-0 top-0 h-full w-1/2 md:w-2/3 opacity-90" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000&q=80'); background-size: cover; background-position: center; clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);"></div>
-                        <div class="relative z-10 w-full md:w-1/2 p-6 md:pl-16 text-gray-900 dark:text-white">
-                            <span class="text-orange-600 dark:text-orange-400 font-bold tracking-widest text-[10px] md:text-xs mb-2 block uppercase">A Unique Boutique</span>
-                            <h2 class="text-3xl md:text-5xl font-black mb-3 leading-tight font-serif italic">Summer<br>Collection</h2>
-                            <a href="#products" class="inline-block border-2 border-gray-900 dark:border-white px-6 py-2 text-sm font-bold hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900 transition-colors mt-2">SHOP NOW</a>
+                
+                    <!-- Banner 1: SUNSCREEN -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-300 to-cyan-100" aria-hidden="false">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Beach Background" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-100/90 to-transparent w-[60%]"></div>
+                        <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <h2 class="text-3xl md:text-6xl font-black text-orange-500 uppercase tracking-tighter drop-shadow-md">SUNSCREEN</h2>
+                            <p class="text-teal-800 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-1 mb-3">BETTER PROTECTION FOR ALL ACTIVITIES</p>
+                            <p class="text-blue-900 text-[8px] md:text-xs font-semibold max-w-[200px] leading-tight">MOISTURE AND GENTLE SUITABLE FOR SENSITIVE SKIN</p>
+                            <a href="#products" class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-orange-600 transition">SHOP NOW</a>
+                        </div>
+                        <div class="w-[45%] h-full relative z-10 flex justify-center items-end pb-4">
+                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=400&q=80" alt="Sunscreen" class="w-[80%] md:w-[60%] object-contain mix-blend-multiply drop-shadow-2xl">
                         </div>
                     </div>
-                    
-                    <div class="carousel-slide h-full relative bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900 dark:to-gray-900 flex items-center" aria-hidden="true">
-                        <div class="absolute right-0 top-0 h-full w-1/2 md:w-1/2" style="background-image: url('https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1000&q=80'); background-size: cover; background-position: center; clip-path: circle(70.7% at 75% 50%);"></div>
-                        <div class="relative z-10 w-full p-6 md:pl-16 text-gray-900 dark:text-white">
-                            <div class="bg-red-600 text-white w-fit px-3 py-1 text-[10px] md:text-xs font-black uppercase mb-3 transform -skew-x-12 shadow-lg">Special Offer</div>
-                            <h2 class="text-2xl md:text-4xl font-extrabold mb-1">Smart Electronics</h2>
-                            <p class="text-xs md:text-sm font-semibold text-gray-600 dark:text-gray-300 mb-4">Gadgets that ease your life</p>
-                            <a href="#products" class="inline-block bg-yellow-400 text-black px-6 md:px-8 py-2 md:py-2.5 rounded-full font-black text-[10px] md:text-sm shadow-md hover:scale-105 transition-transform">BUY NOW!</a>
+
+                    <!-- Banner 2: COSMETICS -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-pink-100 to-rose-200" aria-hidden="true">
+                        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1200&q=80" alt="Cosmetics Background" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity">
+                        <div class="w-[45%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <span class="text-rose-900 text-[8px] md:text-[10px] font-bold tracking-[0.2em] uppercase mb-1">BRAND NAME</span>
+                            <h2 class="text-3xl md:text-6xl font-black text-rose-700 uppercase tracking-tight">COSMETICS</h2>
+                            <p class="text-rose-900 text-[8px] md:text-[10px] mt-2 max-w-[200px] leading-tight opacity-70">Premium quality for your daily beauty routine.</p>
+                        </div>
+                        <div class="w-[55%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Perfume" class="w-[90%] md:w-[70%] object-contain mix-blend-multiply drop-shadow-2xl transform hover:scale-105 transition-transform duration-700">
                         </div>
                     </div>
-                    
-                    <div class="carousel-slide h-full relative bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-center" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80" alt="Home Decor" class="absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-20">
-                        <div class="relative z-10 w-full p-6 text-gray-900 dark:text-white">
-                            <div class="flex justify-center items-center gap-2 mb-2">
-                                <i class="fas fa-heart text-blue-500 text-xl md:text-3xl"></i>
-                                <h2 class="text-3xl md:text-5xl font-black">Lifestyle <span class="text-blue-500 font-light">HOME</span></h2>
+
+                    <!-- Banner 3: HONEY LOTION -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-yellow-400 to-amber-500" aria-hidden="true">
+                        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1587049352847-81a56d773c1c?auto=format&fit=crop&w=1200&q=80')] bg-cover mix-blend-overlay"></div>
+                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Honey Lotion" class="w-[80%] md:w-[60%] object-contain drop-shadow-[0_20px_50px_rgba(180,83,9,0.5)]">
+                        </div>
+                        <div class="w-[50%] h-full flex flex-col justify-center items-start pr-8 relative z-10 text-amber-900">
+                            <h2 class="text-2xl md:text-4xl font-serif italic leading-tight">NATURAL<br>HUMECTANTS<br>FOR SKIN</h2>
+                            <span class="text-xs font-bold tracking-[0.2em] mt-2 uppercase">Beauty</span>
+                            <div class="absolute bottom-10 right-10 w-16 h-16 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm rounded-full border border-amber-200 flex items-center justify-center text-center p-2 shadow-lg">
+                                <span class="text-[8px] md:text-[10px] font-black uppercase">Hydrate<br>The Skin</span>
                             </div>
-                            <p class="text-sm md:text-base font-medium tracking-wide">Premium Decor & Essentials</p>
-                            <a href="#products" class="inline-block mt-4 border-b-2 border-blue-500 text-blue-500 font-bold hover:text-blue-700 transition-colors text-sm">Explore Category</a>
                         </div>
                     </div>
-                    
-                    <div class="carousel-slide h-full relative bg-gradient-to-r from-purple-900 to-indigo-900 flex items-center" aria-hidden="true">
-                        <div class="absolute right-0 top-0 h-full w-2/3 opacity-60" style="background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000&q=80'); background-size: cover; background-position: right;"></div>
-                        <div class="absolute right-0 top-0 h-full w-full bg-gradient-to-r from-purple-900 via-purple-900/80 to-transparent"></div>
-                        <div class="relative z-10 w-full p-6 md:pl-16 text-white">
-                            <h2 class="text-4xl md:text-6xl font-black mb-0 leading-none">Get <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">This!</span></h2>
-                            <p class="text-[10px] md:text-sm tracking-widest uppercase font-semibold mb-4 mt-2">Premium Accessories</p>
-                            <div class="flex items-center gap-3">
-                                <span class="bg-red-600 px-3 py-1 font-bold rounded text-lg md:text-xl shadow-lg">50% OFF</span>
-                                <a href="#products" class="text-yellow-400 font-bold text-xs md:text-sm hover:underline">SHOP NOW</a>
+
+                    <!-- Banner 4: SUPER CLEAN -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-cyan-300 to-blue-400" aria-hidden="true">
+                        <div class="w-1/2 h-full flex flex-col justify-center items-center pl-8 relative z-10 text-white">
+                            <h2 class="text-5xl md:text-7xl font-black italic uppercase leading-none drop-shadow-lg text-yellow-300 transform -skew-x-12">Super<br><span class="text-white">Clean</span></h2>
+                            <a href="#products" class="mt-6 border-2 border-white px-6 py-2 rounded-full text-xs font-bold hover:bg-white hover:text-blue-500 transition shadow-[0_0_15px_rgba(255,255,255,0.5)]">SHOP NOW</a>
+                        </div>
+                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1584820927498-cafe8c124016?auto=format&fit=crop&w=400&q=80" alt="Detergent" class="w-[70%] md:w-[50%] object-contain mix-blend-multiply drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)] transform hover:rotate-6 transition-transform">
+                        </div>
+                    </div>
+
+                    <!-- Banner 5: MACBOOK M2 PRO -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-50" aria-hidden="true">
+                        <div class="absolute right-0 top-0 w-3/5 h-full bg-gradient-to-bl from-green-200 via-blue-100 to-transparent" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"></div>
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
+                            <div class="bg-red-600 text-white px-3 py-1 text-[10px] md:text-xs font-bold transform -skew-x-12 inline-block mb-3 shadow-md">SPECIAL OFFER</div>
+                            <h2 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">MACBOOK M2 PRO</h2>
+                            <p class="text-gray-600 text-xs md:text-sm mt-1 max-w-xs leading-tight">Best performance for professionals</p>
+                            <a href="#products" class="mt-4 bg-gray-800 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-black transition">SHOP NOW</a>
+                        </div>
+                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Macbook" class="w-[90%] md:w-[80%] object-contain mix-blend-multiply transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Banner 6: SONY h.ear -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex" aria-hidden="true">
+                        <div class="w-1/3 bg-[#E53935] h-full flex flex-col justify-center pl-8 md:pl-12 text-white relative z-10">
+                            <div class="absolute top-4 left-8 font-black tracking-widest text-lg md:text-xl">SONY</div>
+                            <h2 class="text-4xl md:text-6xl font-bold leading-none tracking-tighter">h.ear</h2>
+                            <h3 class="text-sm md:text-lg font-bold tracking-widest mt-1">ON WIRELESS NC</h3>
+                            <p class="text-[8px] md:text-xs mt-2 text-red-100 max-w-[150px]">High-Resolution Audio wireless headphones.</p>
+                        </div>
+                        <div class="w-2/3 bg-gray-50 h-full relative flex items-center justify-center">
+                            <div class="absolute w-48 h-48 md:w-80 md:h-80 bg-gray-200 rounded-full mix-blend-multiply opacity-50"></div>
+                            <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=500&q=80" alt="Headphones" class="w-[60%] md:w-[50%] object-contain mix-blend-multiply relative z-10 hover:scale-110 transition-transform duration-500 drop-shadow-2xl">
+                            <div class="absolute bottom-10 right-10 flex flex-col items-center">
+                                <span class="text-red-600 font-black text-2xl md:text-4xl">$349</span>
+                                <a href="#products" class="bg-[#E53935] text-white px-5 py-1.5 rounded-full text-xs font-bold mt-1 shadow-lg hover:bg-red-700 transition">Shop Now</a>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="carousel-slide h-full relative" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="Sale Banner" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-green-900/70"></div>
-                        <div class="relative z-10 h-full flex items-center p-6 md:p-16 text-white">
-                            <div class="max-w-lg">
-                                <span class="bg-white text-green-700 text-xs font-black px-3 py-1 rounded-full shadow-lg">SPECIAL</span>
-                                <h2 class="text-3xl md:text-5xl font-extrabold mt-3 mb-3 leading-tight text-white drop-shadow-md">Azaadi Sale<br>Flat 50% OFF</h2>
-                                <a href="#products" class="bg-green-600 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-green-500 transition text-sm border border-white shadow-xl">Grab Offer</a>
+
+                    <!-- Banner 7: RUNNING SNEAKERS -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-teal-200 to-emerald-300" aria-hidden="true">
+                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
+                            <div class="flex gap-4 text-[8px] md:text-[10px] font-bold text-teal-800 uppercase tracking-widest mb-6">
+                                <span>Men</span><span>Women</span><span>Kids</span>
                             </div>
+                            <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter drop-shadow-md">Running Sneakers</h2>
+                            <div class="h-1 w-12 bg-white my-3"></div>
+                            <a href="#products" class="mt-2 bg-gray-900 text-white px-6 py-2 text-xs font-bold hover:bg-black transition shadow-xl">ADD TO CART</a>
+                        </div>
+                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
+                            <div class="absolute w-48 h-48 md:w-72 md:h-72 bg-white rounded-full shadow-2xl opacity-60"></div>
+                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Sneaker" class="w-[80%] md:w-[70%] object-contain relative z-20 transform -rotate-12 hover:-rotate-6 hover:scale-110 transition-all duration-500 mix-blend-multiply rounded-full border border-gray-100 p-2">
+                        </div>
+                    </div>
+
+                    <!-- Banner 8: 2022 LIGE MENS WATCHES -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-[#2D2D2D]" aria-hidden="true">
+                        <div class="absolute bottom-0 left-0 w-full h-[40%] bg-[#0078D7]" style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);"></div>
+                        <div class="w-3/5 h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <h2 class="text-xl md:text-3xl font-medium text-white tracking-widest">2022 LIGE MENS WATCHES</h2>
+                            <h3 class="text-2xl md:text-4xl font-black text-[#00AEEF] uppercase mt-1">TOP BRAND</h3>
+                            <a href="#products" class="mt-6 bg-[#00AEEF] text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-400 transition shadow-lg">BUY NOW</a>
+                        </div>
+                        <div class="w-2/5 h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-12 hover:rotate-0 transition-transform duration-500">
+                            <div class="absolute right-4 top-1/4 bg-[#00AEEF] text-white text-[10px] md:text-xs font-black px-2 py-1 rounded shadow-lg transform rotate-12">$80.97</div>
                         </div>
                     </div>
                     
                 </div>
-                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Previous slide">
-                    <i class="fas fa-chevron-left text-sm md:text-base" aria-hidden="true"></i>
-                </button>
-                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-black/80 transition z-20" aria-label="Next slide">
-                    <i class="fas fa-chevron-right text-sm md:text-base" aria-hidden="true"></i>
-                </button>
+                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
                 <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
             </div>
             
             <script>
-                let slideIndex = 0; 
-                const slides = document.querySelectorAll('.carousel-slide'); 
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('.carousel-slide');
                 const dotsContainer = document.getElementById('carouselDots');
                 
-                slides.forEach((_, i) => { 
-                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-white/50 hover:bg-white transition focus:outline-none" aria-label="Go to slide ${i + 1}"></button>`; 
+                slides.forEach((_, i) => {
+                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition focus:outline-none shadow-sm" aria-label="Go to slide ${i + 1}"></button>`;
                 });
                 
-                function updateCarousel() { 
-                    document.querySelector('.carousel-track').style.transform = `translateX(-${slideIndex * 100}%)`; 
-                    slides.forEach((slide, i) => { 
-                        slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true'); 
-                    }); 
-                    document.querySelectorAll('#carouselDots button').forEach((dot, i) => { 
-                        dot.className = `w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition ${i === slideIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white'}`; 
-                    }); 
+                function updateCarousel() {
+                    document.querySelector('.carousel-track').style.transform = `translateX(-${slideIndex * 100}%)`;
+                    slides.forEach((slide, i) => {
+                        slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true');
+                    });
+                    document.querySelectorAll('#carouselDots button').forEach((dot, i) => {
+                        dot.className = `w-3 h-3 rounded-full transition shadow-sm ${i === slideIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white'}`;
+                    });
                 }
                 
-                function nextSlide() { slideIndex = (slideIndex + 1) % slides.length; updateCarousel(); } 
-                function prevSlide() { slideIndex = (slideIndex - 1 + slides.length) % slides.length; updateCarousel(); } 
+                function nextSlide() { slideIndex = (slideIndex + 1) % slides.length; updateCarousel(); }
+                function prevSlide() { slideIndex = (slideIndex - 1 + slides.length) % slides.length; updateCarousel(); }
                 function goToSlide(i) { slideIndex = i; updateCarousel(); }
                 
-                updateCarousel(); 
-                setInterval(nextSlide, 3500);
+                updateCarousel();
+                let slideTimer = setInterval(nextSlide, 4500);
+                
+                document.getElementById('heroCarousel').addEventListener('mouseenter', () => clearInterval(slideTimer));
+                document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 4500));
             </script>
-            
+            """
+
+            home_html += """
             <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-4 md:grid-cols-8 gap-4 text-center">
             """
-        
-        used_icons = set()
-        unique_top_cats = []
-        for cat in categories_list:
-            icon = get_category_icon(cat)
-            if icon not in used_icons:
-                used_icons.add(icon); unique_top_cats.append(cat)
-            if len(unique_top_cats) >= 8: break
             
-        if len(unique_top_cats) < 8:
+            used_icons = set()
+            unique_top_cats = []
             for cat in categories_list:
-                if cat not in unique_top_cats: unique_top_cats.append(cat)
-                if len(unique_top_cats) >= 8: break
+                icon = get_category_icon(cat)
+                if icon not in used_icons:
+                    used_icons.add(icon)
+                    unique_top_cats.append(cat)
+                if len(unique_top_cats) >= 8:
+                    break
+                    
+            if len(unique_top_cats) < 8:
+                for cat in categories_list:
+                    if cat not in unique_top_cats:
+                        unique_top_cats.append(cat)
+                    if len(unique_top_cats) >= 8:
+                        break
 
-        for cat in unique_top_cats:
-            c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
-            home_html += f"""
-                    <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group">
-                        <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-50 dark:bg-gray-700 group-hover:bg-[#E53935] flex items-center justify-center transition-all group-hover:scale-105 shadow-sm border border-gray-100 dark:border-gray-600">
-                            <i class="fas {get_category_icon(cat)} text-xl text-[#E53935] group-hover:text-white transition" aria-hidden="true"></i>
-                        </div>
-                        <span class="text-[10px] md:text-xs font-bold text-gray-700 dark:text-gray-200 group-hover:text-[#E53935] transition line-clamp-1">{cat}</span>
-                    </a>
-                """
-        
-        home_html += """
-                    </div>
-                </div>
-            </div>
-            
+            for cat in unique_top_cats:
+                c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
+                home_html += f"""
+                        <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group">
+                            <div class="w-16 h-16 rounded-full bg-gray-50 dark:bg-gray-700 group-hover:bg-[#E53935] flex items-center justify-center transition-all group-hover:scale-105 shadow-sm border border-gray-100 dark:border-gray-600">
+                                <i class="fas {get_category_icon(cat)} text-xl text-[#E53935] group-hover:text-white transition" aria-hidden="true"></i>
+                            </div>
+                            <span class="text-[10px] md:text-xs font-bold text-gray-700 dark:text-gray-200 group-hover:text-[#E53935] transition line-clamp-1">{cat}</span>
+                        </a>
+                    """
+            home_html += "</div></div></div>"
+
+            home_html += """
             <div class="bg-[#E53935] text-white py-6 mt-6">
                 <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div class="flex items-center gap-3">
@@ -2373,49 +2427,51 @@ def process_woocommerce_csv():
                     </div>
                 </div>
             </div>
-            
             <script>
                 let countDownDate = new Date().getTime() + (12 * 60 * 60 * 1000);
                 let x = setInterval(function() {
-                    let now = new Date().getTime(); 
+                    let now = new Date().getTime();
                     let distance = countDownDate - now;
-                    let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
-                    let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+                    let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                     let s = Math.floor((distance % (1000 * 60)) / 1000);
                     
-                    document.getElementById("hours").innerHTML = h < 10 ? "0" + h : h; 
-                    document.getElementById("minutes").innerHTML = m < 10 ? "0" + m : m; 
+                    document.getElementById("hours").innerHTML = h < 10 ? "0" + h : h;
+                    document.getElementById("minutes").innerHTML = m < 10 ? "0" + m : m;
                     document.getElementById("seconds").innerHTML = s < 10 ? "0" + s : s;
                     
-                    if (distance < 0) { 
-                        clearInterval(x); 
-                        countDownDate = new Date().getTime() + (12 * 60 * 60 * 1000); 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        countDownDate = new Date().getTime() + (12 * 60 * 60 * 1000);
                     }
                 }, 1000);
             </script>
-            
+            """
+
+            home_html += """
             <div class="container mx-auto px-4 py-6">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
                         <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-truck-fast text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Fast Delivery</h3><p class="text-[10px] text-gray-500 dark:text-gray-400">All over Pakistan</p></div>
+                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Fast Delivery</h3><p class="text-xs text-gray-500 dark:text-gray-400">All over Pakistan</p></div>
                     </div>
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
                         <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-money-bill-wave text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Cash on Delivery</h3><p class="text-[10px] text-gray-500 dark:text-gray-400">Pay at your doorstep</p></div>
+                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Cash on Delivery</h3><p class="text-xs text-gray-500 dark:text-gray-400">Pay at your doorstep</p></div>
                     </div>
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
                         <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-shield-halved text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Secure Shopping</h3><p class="text-[10px] text-gray-500 dark:text-gray-400">100% Protected</p></div>
+                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Secure Shopping</h3><p class="text-xs text-gray-500 dark:text-gray-400">100% Protected</p></div>
                     </div>
                     <div class="reveal bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-center gap-3">
                         <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg text-[#E53935] dark:text-white"><i class="fas fa-undo text-xl" aria-hidden="true"></i></div>
-                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Easy Returns</h3><p class="text-[10px] text-gray-500 dark:text-gray-400">7 Days Return Policy</p></div>
+                        <div><h3 class="font-bold text-sm text-gray-900 dark:text-white">Easy Returns</h3><p class="text-xs text-gray-500 dark:text-gray-400">7 Days Return Policy</p></div>
                     </div>
                 </div>
             </div>
             """
 
+        # 🌟 یھاں سے وہ حصہ شروع ہوتا ہے جو ہر پیج (Page 1, 2, 3...) پر پراڈکٹس دکھائے گا 🌟
         home_html += f"""
         <div class='container mx-auto px-4 py-4' id="products">
             <div id="searchResultsSection" class="hidden mb-6">
@@ -2426,140 +2482,154 @@ def process_woocommerce_csv():
         """
         
         start_c = (h_page - 1) * cats_per_home_page
-        for cat_name, prods in all_categories_list[start_c:start_c + cats_per_home_page]:
+        end_c = start_c + cats_per_home_page
+        page_cats = all_categories_list[start_c:end_c]
+        
+        for cat_name, prods in page_cats:
             cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
             
             home_html += f"""
             <div class="mb-14 category-section reveal">
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-xl md:text-3xl font-black text-gray-900 dark:text-white border-l-4 border-[#E53935] pl-4">{cat_name}</h2>
+                    <h2 class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white border-l-4 border-[#E53935] pl-4">{cat_name}</h2>
                     <a href="/category/{cat_slug}.html" class="text-[#E53935] dark:text-white font-bold text-sm bg-gray-50 dark:bg-gray-800 px-5 py-2.5 rounded-full hover:bg-[#E53935] hover:text-white transition-all shadow-sm">View All <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i></a>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+                <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
-            for idx, prod in enumerate(prods[:6]):
-                home_html += generate_product_card(prod, lazy=(not (h_page == 1 and idx < 3)))
+            display_prods = prods[:6]
+            if len(prods) > 0:
+                while len(display_prods) < 6:
+                    display_prods.append(prods[len(display_prods) % len(prods)])
+                    
+            for idx, prod in enumerate(display_prods):
+                is_lazy = True
+                if h_page == 1 and idx < 3: 
+                    is_lazy = False
+                home_html += generate_product_card(prod, lazy=is_lazy)
                 
-            home_html += """
-                </div>
-            </div>
-            """
+            home_html += "</div></div>"
         
-        home_html += """
-            </div>
-        </div>
-        """ + generate_pagination_html(h_page, total_home_pages, "index")
+        home_html += "</div></div>"
+        
+        home_html += generate_pagination_html(h_page, total_home_pages, "index")
         
         if h_page == 1:
             home_html += """
             <div class="container mx-auto px-4 py-8 border-t border-gray-200 dark:border-gray-700">
-                <h2 class="text-xl md:text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Shop by City in Pakistan</h2>
+                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Shop by City in Pakistan</h2>
                 <div class="flex flex-wrap gap-3">
             """
-            for city in cities: 
+            for city in cities:
                 home_html += f'<a href="/city/{re.sub(r"[^a-z0-9]+", "-", city.lower()).strip("-")}.html" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-5 py-2.5 rounded-full text-sm font-bold text-gray-700 dark:text-gray-300 hover:bg-[#E53935] hover:text-white transition shadow-sm">{city}</a>'
-            
+            home_html += "</div></div>"
+
             home_html += """
-                </div>
-            </div>
-            
             <div id="recentlyViewedSection" class="hidden container mx-auto px-4 py-8 border-t border-gray-200 dark:border-gray-700">
-                <h2 class="text-xl md:text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Recently Viewed</h2>
-                <div id="recentlyViewedGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div>
+                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Recently Viewed</h2>
+                <div id="recentlyViewedGrid" class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4"></div>
             </div>
             """
             
             home_script = """
             <script>
                 function performSearch(query) {
-                    if (typeof searchIndex === 'undefined') { 
-                        loadSearchData(); 
-                        setTimeout(() => performSearch(query), 500); 
-                        return; 
+                    if (typeof searchIndex === 'undefined') {
+                        loadSearchData();
+                        setTimeout(() => performSearch(query), 500);
+                        return;
                     }
-                    query = query.toLowerCase().trim();
-                    if (!query) { 
-                        document.getElementById('defaultContent').classList.remove('hidden'); 
-                        document.getElementById('searchResultsSection').classList.add('hidden'); 
-                        document.getElementById('recentlyViewedSection').classList.remove('hidden'); 
-                        return; 
-                    }
-                    let results = searchIndex.filter(p => p.name.toLowerCase().includes(query) || p.category.toLowerCase().includes(query));
                     
-                    document.getElementById('defaultContent').classList.add('hidden'); 
-                    document.getElementById('recentlyViewedSection').classList.add('hidden'); 
+                    query = query.toLowerCase().trim();
+                    if (!query) {
+                        document.getElementById('defaultContent').classList.remove('hidden');
+                        document.getElementById('searchResultsSection').classList.add('hidden');
+                        document.getElementById('recentlyViewedSection').classList.remove('hidden');
+                        return;
+                    }
+                    
+                    let results = searchIndex.filter(p => 
+                        p.name.toLowerCase().includes(query) || 
+                        p.category.toLowerCase().includes(query)
+                    );
+                    
+                    document.getElementById('defaultContent').classList.add('hidden');
+                    document.getElementById('recentlyViewedSection').classList.add('hidden');
                     document.getElementById('searchResultsSection').classList.remove('hidden');
-                    document.getElementById('searchResultsHeading').innerText = 'Search Results for "' + query + '"'; 
+                    document.getElementById('searchResultsHeading').innerText = 'Search Results for "' + query + '"';
                     document.getElementById('searchResultsCount').innerText = results.length + ' products found';
                     
-                    let html = '<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4 mt-6">';
+                    let html = '<div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 mt-6">';
                     results.forEach(p => {
-                        let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100); 
+                        let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
                         if (isNaN(discount)) discount = 0;
-                        let htmlSafeName = p.name.replace(/"/g, '&quot;'); 
+                        
+                        let htmlSafeName = p.name.replace(/"/g, '&quot;');
                         let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
                         
-                        html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
-                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                            <div class="image-zoom h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" width="250" height="250" loading="lazy" decoding="async" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
+                        html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
+                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
+                            <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+                                <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                             </div>
-                            <div class="p-3 flex flex-col flex-grow">
-                                <span class="text-[10px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
-                                <h3 class="text-xs md:text-sm font-bold text-gray-900 dark:text-white leading-tight mb-2 line-clamp-2">${htmlSafeName}</h3>
+                            <div class="p-2 flex flex-col flex-grow">
+                                <span class="text-[9px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
+                                <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white leading-tight mb-1 line-clamp-2">${htmlSafeName}</h3>
                                 <div class="mt-auto">
-                                    <div class="flex items-center gap-2 mb-2">
-                                        <span class="text-sm md:text-base font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
+                                    <div class="flex items-center gap-1 mb-1">
+                                        <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
                                     </div>
-                                    <button aria-label="Add Searched Item to Cart" onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-2.5 rounded-lg text-xs font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
+                                    <button aria-label="Add Searched Item to Cart" onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>`;
                     });
                     html += '</div>';
                     
-                    if (results.length === 0) { 
-                        html = '<div class="text-center py-16 text-gray-600"><i class="fas fa-search text-6xl mb-4 opacity-30" aria-hidden="true"></i><p class="text-lg font-bold">No products found</p><p class="text-sm mt-2">Try different keywords</p></div>'; 
+                    if (results.length === 0) {
+                        html = '<div class="text-center py-16 text-gray-600"><i class="fas fa-search text-6xl mb-4 opacity-30" aria-hidden="true"></i><p class="text-lg font-bold">No products found</p><p class="text-sm mt-2">Try different keywords</p></div>';
                     }
                     
-                    let resultsDiv = document.createElement('div'); 
+                    let resultsDiv = document.createElement('div');
                     resultsDiv.innerHTML = html;
                     let srSection = document.getElementById('searchResultsSection');
-                    while(srSection.children.length > 2) srSection.removeChild(srSection.lastChild);
+                    let elements = srSection.children;
+                    for(let i = elements.length - 1; i >= 2; i--) {
+                        srSection.removeChild(elements[i]);
+                    }
                     srSection.appendChild(resultsDiv);
                 }
                 
-                const urlParams = new URLSearchParams(window.location.search); 
+                const urlParams = new URLSearchParams(window.location.search);
                 const searchQuery = urlParams.get('search');
-                if (searchQuery) { 
-                    document.getElementById('searchInput').value = searchQuery; 
-                    loadSearchData(); 
-                    setTimeout(() => performSearch(searchQuery), 1000); 
+                if (searchQuery) {
+                    document.getElementById('searchInput').value = searchQuery;
+                    loadSearchData();
+                    setTimeout(() => performSearch(searchQuery), 1000);
                 }
                 
                 function renderRecentlyViewed() {
-                    let recent = JSON.parse(localStorage.getItem('asm_recent')) || []; 
-                    recent = recent.slice(0, 6); 
+                    let recent = JSON.parse(localStorage.getItem('asm_recent')) || [];
+                    recent = recent.slice(0, 6);
                     if (recent.length === 0) return;
                     
-                    document.getElementById('recentlyViewedSection').classList.remove('hidden'); 
+                    document.getElementById('recentlyViewedSection').classList.remove('hidden');
                     let grid = document.getElementById('recentlyViewedGrid');
-                    
                     grid.innerHTML = recent.map(p => {
-                        let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100); 
-                        if (isNaN(discount)) discount = 0; 
+                        let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
+                        if (isNaN(discount)) discount = 0;
+                        
                         let htmlSafeName = p.name.replace(/"/g, '&quot;');
                         
-                        return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
-                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                            <div class="h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" width="250" height="250" loading="lazy" decoding="async" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
+                        return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
+                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
+                            <div class="h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+                                <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
                             </div>
-                            <div class="p-3 flex flex-col flex-grow">
-                                <h3 class="text-xs md:text-sm font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${htmlSafeName}</h3>
+                            <div class="p-2 flex flex-col flex-grow">
+                                <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-1">${htmlSafeName}</h3>
                                 <div class="mt-auto">
-                                    <span class="text-sm md:text-base font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
+                                    <span class="text-xs md:text-sm font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
                                 </div>
                             </div>
                         </div>`;
@@ -2570,8 +2640,11 @@ def process_woocommerce_csv():
             """
             home_html += home_script
             
-        with open(f"output/{'index.html' if h_page == 1 else f'index-{h_page}.html'}", "w", encoding="utf-8") as f: 
-            f.write(minify_html(home_html + get_html_footer()))
+        home_html += get_html_footer()
+        
+        file_name = "index.html" if h_page == 1 else f"index-{h_page}.html"
+        with open(f"output/{file_name}", "w", encoding="utf-8") as f:
+            f.write(minify_html(home_html))
         # ================= CHECKOUT PAGE =================
     print("🛒 Generating Checkout Page...")
     pak_tehsils = [
