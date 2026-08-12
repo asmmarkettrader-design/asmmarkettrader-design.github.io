@@ -1622,11 +1622,11 @@ def process_woocommerce_csv():
         print("❌ CSV File Not Found!")
         return
         
-    print("🚀 Advanced Script Started! Cleaning old data...")
+  print("🚀 Advanced Script Started! Cleaning old data...")
     if os.path.exists("output"): 
         shutil.rmtree("output")
         
- os.makedirs("output/category", exist_ok=True)
+    os.makedirs("output/category", exist_ok=True)
     os.makedirs("output/product", exist_ok=True)
     os.makedirs("output/city", exist_ok=True)
     os.makedirs("output/assets", exist_ok=True)
