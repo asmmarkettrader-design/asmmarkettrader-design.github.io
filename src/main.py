@@ -2183,16 +2183,38 @@ def process_woocommerce_csv():
             with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f:
                 f.write(minify_html(cat_html))
 
-    # ==============================================================================
+   # ==============================================================================
     # HOMEPAGE DYNAMIC PAGINATION
     # ==============================================================================
-    print("🏠 Generating Home Pages with Pagination...")
+    print("🏠 Generating Home Pages with Custom Category Priority...")
     valid_home_cats = [(cat, prods) for cat, prods in sections_dict.items() if len(prods) >= 6]
-    valid_home_cats.sort(key=lambda x: len(x[1]), reverse=True) 
     
     if len(valid_home_cats) < 2: 
         valid_home_cats = list(sections_dict.items())
-        
+
+    # 🌟 NEW: Custom Top 6 Categories Priority Logic 🌟
+    def get_cat_priority(cat_tuple):
+        cat_name = cat_tuple[0].lower()
+        # 1. Apparel & Fashion
+        if any(w in cat_name for w in ['apparel', 'fashion', 'cloth', 'suit', 'wear', 'garment', 'kapde']): return 1
+        # 2. Consumer Electronics & Mobile Accessories
+        if any(w in cat_name for w in ['electronic', 'mobile', 'accessor', 'smartwatch', 'earbud', 'charger']): return 2
+        # 3. Health, Beauty & Skincare
+        if any(w in cat_name for w in ['health', 'beauty', 'skin', 'cosmetic', 'makeup', 'serum', 'wash']): return 3
+        # 4. Home & Living
+        if any(w in cat_name for w in ['home', 'living', 'decor', 'kitchen', 'bedsheet', 'gadget']): return 4
+        # 5. Food & Online Groceries
+        if any(w in cat_name for w in ['food', 'grocery', 'snack', 'ration', 'fresh']): return 5
+        # 6. Footwear & Bags
+        if any(w in cat_name for w in ['footwear', 'shoe', 'bag', 'sandal', 'sneaker', 'handbag']): return 6
+        # Banki sab next pages par jayengi
+        return 99 
+
+    # Pehle products ki tadad ke hisaab se sort karein
+    valid_home_cats.sort(key=lambda x: len(x[1]), reverse=True)
+    # Phir aapki custom priority (1 se 6) ke hisaab se sort karein (Top 6 Page 1 par)
+    valid_home_cats.sort(key=get_cat_priority)
+    
     all_categories_list = valid_home_cats
     cats_per_home_page = 6 
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
