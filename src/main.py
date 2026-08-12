@@ -1622,7 +1622,7 @@ def process_woocommerce_csv():
         print("❌ CSV File Not Found!")
         return
         
-  print("🚀 Advanced Script Started! Cleaning old data...")
+    print("🚀 Advanced Script Started! Cleaning old data...")
     if os.path.exists("output"): 
         shutil.rmtree("output")
         
