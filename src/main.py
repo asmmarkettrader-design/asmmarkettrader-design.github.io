@@ -1246,6 +1246,174 @@ def generate_blog_pages(categories_list):
         f.write(minify_html(full_index_html))
     
     return [f"https://www.asmveo.com/blog/{b['slug']}.html" for b in all_blogs] + ["https://www.asmveo.com/blog.html"]
+    # ==============================================================================
+# STATIC PAGES GENERATION
+# ==============================================================================
+
+def generate_static_pages(categories_list):
+    print("📄 Generating Static Pages...")
+    
+    pages = {
+        "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-12"><h1 class="text-4xl md:text-5xl font-extrabold text-[#E53935] dark:text-white mb-6">About ASM VEO</h1><p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">Your trusted shopping partner in Pakistan</p></div><div class="grid md:grid-cols-2 gap-8 mb-12"><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-bullseye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Mission</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To provide every Pakistani with access to premium quality products at affordable prices, delivered right to their doorstep with Cash on Delivery convenience.</p></div><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-eye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Vision</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To become Pakistan's most trusted and loved e-commerce platform, known for quality, reliability, and exceptional customer service.</p></div></div><div class="animated-bg text-white rounded-3xl p-8 md:p-12"><h2 class="text-3xl font-bold mb-4">Why Choose ASM VEO?</h2><div class="grid md:grid-cols-3 gap-6 mt-8"><div><i class="fas fa-shield-alt text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">100% Secure</h4><p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p></div><div><i class="fas fa-truck-fast text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Fast Delivery</h4><p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p></div><div><i class="fas fa-undo text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Easy Returns</h4><p class="text-gray-200 text-sm">7-day return policy, no questions asked</p></div></div></div></div>"""),
+        "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-600 dark:text-gray-400 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
+        "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl prose dark:prose-invert"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Privacy Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>At ASM VEO, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Information We Collect</h2><p>We collect your name, phone number, email, and shipping address when you place an order.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Data Security</h2><p>We use SSL encryption to protect your data. We never share your personal information with third parties except for shipping purposes.</p></div></div>"""),
+        "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 2-4 business days.</p></div></div>"""),
+        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
+        "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
+        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl text-center"><h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1><p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div>"""),
+        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-20 text-center"><div class="max-w-lg mx-auto"><div class="text-9xl font-black text-[#E53935] mb-4">404</div><h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Oops! Page Not Found</h1><p class="text-gray-600 dark:text-gray-400 mb-8">The page you're looking for doesn't exist.</p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a></div></div>"""),
+        "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div></div>
+        <script>
+        function renderWishlist() {
+            let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || [];
+            let container = document.getElementById('wishlistContainer');
+            if (wl.length === 0) { container.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500 dark:text-gray-400"><i class="fas fa-heart-broken text-6xl mb-4 opacity-30"></i><p class="text-lg font-bold">Your wishlist is empty</p></div>'; return; }
+            container.innerHTML = wl.map((item, i) => {
+                let safeName = item.name.replace(/'/g, "\\\\'");
+                return `<div class="product-card bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col">
+                    <div class="h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-b border-gray-200 dark:border-gray-700">
+                        <img src="${item.image}" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();" alt="Product Image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-3 flex flex-col flex-grow">
+                        <h3 class="text-xs font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">${item.name}</h3>
+                        <p class="text-sm font-black text-[#E53935] dark:text-emerald-400 mb-3">Rs ${item.price}</p>
+                        <div class="flex gap-2 mt-auto">
+                            <button aria-label="Add Wishlist Item to Cart" onclick="addToCart('${safeName}', ${item.price}, '${item.image}')" class="flex-1 bg-[#E53935] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#C62828] transition"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
+                            <button aria-label="Remove from Wishlist" onclick="removeWishlistItem(${i})" class="flex-1 bg-red-50 text-red-600 py-2 rounded-lg text-xs font-bold hover:bg-red-100 transition"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+        function removeWishlistItem(i) { let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || []; wl.splice(i, 1); localStorage.setItem('asm_wishlist', JSON.stringify(wl)); updateWishlistBadge(); renderWishlist(); }
+        window.addEventListener('load', renderWishlist);
+        </script>"""),
+        "order-success.html": ("Order Confirmed!", """
+            <div class="container mx-auto px-4 py-12 flex justify-center">
+                <div class="max-w-3xl w-full bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700 reveal active">
+                    <div class="bg-gradient-to-r from-green-500 to-emerald-600 p-8 text-center text-white relative">
+                        <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-lg animate-bounce">
+                            <i class="fas fa-check text-4xl text-green-500" aria-hidden="true"></i>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Order Confirmed!</h1>
+                        <p class="text-green-100 font-semibold text-lg">Thank you for shopping with ASM VEO.</p>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 mb-8 text-center border border-gray-200 dark:border-gray-600">
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-widest font-bold">Your Order ID</p>
+                            <p id="orderId" class="text-3xl font-black text-[#E53935] tracking-wider"></p>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-10 relative px-2 md:px-8">
+                            <div class="absolute left-6 right-6 top-1/2 transform -translate-y-1/2 h-1 bg-gray-200 dark:bg-gray-600 z-0"></div>
+                            <div class="absolute left-6 top-1/2 transform -translate-y-1/2 w-1/3 h-1 bg-green-500 z-0"></div>
+                            
+                            <div class="relative z-10 flex flex-col items-center">
+                                <div class="w-10 h-10 md:w-12 md:h-12 bg-green-500 text-white rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                                <span class="text-[10px] md:text-xs font-bold mt-2 text-gray-800 dark:text-gray-200">Placed</span>
+                            </div>
+                            <div class="relative z-10 flex flex-col items-center">
+                                <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 dark:bg-gray-600 text-gray-400 rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-box" aria-hidden="true"></i></div>
+                                <span class="text-[10px] md:text-xs font-bold mt-2 text-gray-500 dark:text-gray-400">Processing</span>
+                            </div>
+                            <div class="relative z-10 flex flex-col items-center">
+                                <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 dark:bg-gray-600 text-gray-400 rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-truck" aria-hidden="true"></i></div>
+                                <span class="text-[10px] md:text-xs font-bold mt-2 text-gray-500 dark:text-gray-400">Shipped</span>
+                            </div>
+                            <div class="relative z-10 flex flex-col items-center">
+                                <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 dark:bg-gray-600 text-gray-400 rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-home" aria-hidden="true"></i></div>
+                                <span class="text-[10px] md:text-xs font-bold mt-2 text-gray-500 dark:text-gray-400">Delivered</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="/index.html#products" class="bg-[#E53935] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#C62828] transition-all shadow-md text-center flex-1 sm:flex-none">
+                                <i class="fas fa-shopping-bag mr-2" aria-hidden="true"></i> Continue Shopping
+                            </a>
+                            <a href="https://wa.me/923425478683" target="_blank" class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white px-8 py-3.5 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all shadow-sm border border-gray-200 dark:border-gray-600 text-center flex-1 sm:flex-none">
+                                <i class="fab fa-whatsapp text-green-500 text-lg mr-2" aria-hidden="true"></i> Support
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 dark:bg-blue-900/30 p-6 border-t border-blue-100 dark:border-blue-800 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="w-10 h-10">
+                        <div>
+                            <h4 class="font-bold text-gray-900 dark:text-white text-sm">Google Customer Reviews</h4>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">A Google survey prompt will appear shortly. Please opt-in to rate your experience with ASM VEO once your order arrives!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+            <script>
+                let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
+                document.getElementById('orderId').innerText = oId;
+                
+                localStorage.removeItem('asm_cart');
+                if(typeof updateCartBadge === 'function') updateCartBadge();
+                
+                let cEmail = localStorage.getItem('asm_customer_email') || '';
+                let dDate = new Date();
+                dDate.setDate(dDate.getDate() + 3);
+                let estDate = dDate.toISOString().split('T')[0];
+                
+                window.renderOptIn = function() {
+                    window.gapi.load('surveyoptin', function() {
+                        window.gapi.surveyoptin.render({
+                            "merchant_id": 5837055220,
+                            "order_id": oId,
+                            "email": cEmail,
+                            "delivery_country": "PK",
+                            "estimated_delivery_date": estDate,
+                            "opt_in_style": "CENTER_DIALOG"
+                        });
+                    });
+                    localStorage.removeItem('asm_customer_email');
+                };
+            </script>
+        """)
+    }
+
+    for filename, (title, content) in pages.items():
+        with open(f"output/{filename}", "w", encoding="utf-8") as f:
+            f.write(minify_html(get_html_header(title, categories_list) + content + get_html_footer()))
+
+    faqs = [
+        ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days. Major cities like Karachi, Lahore, and Islamabad usually receive orders within 2 days. Remote areas may take up to 5 days."),
+        ("Do you offer Cash on Delivery (COD)?", "Yes! We offer Cash on Delivery across all of Pakistan. You pay when you receive your product at your doorstep."),
+        ("What is your return policy?", "We offer a 7-day return policy. If you're not satisfied with your product, you can return it within 7 days for a full refund or exchange. The product must be in its original condition."),
+        ("Are your products genuine?", "Absolutely! We source all our products directly from authorized distributors and manufacturers. Every product is 100% genuine and quality-checked before dispatch.")
+    ]
+    
+    faq_html = get_html_header("Frequently Asked Questions", categories_list)
+    faq_html += """
+        <div class="container mx-auto px-4 py-16 max-w-3xl">
+            <h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Frequently Asked Questions</h1>
+            <div class="space-y-4">
+    """
+    for q, a in faqs:
+        faq_html += f"""
+                <details class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 group">
+                    <summary class="p-5 cursor-pointer font-bold text-gray-900 dark:text-white flex justify-between items-center list-none" aria-expanded="false">
+                        {q}
+                        <i class="fas fa-chevron-down text-[#E53935] transition-transform group-open:rotate-180" aria-hidden="true"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{a}</div>
+                </details>
+        """
+    faq_html += """
+            </div>
+        </div>
+    """
+    
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
+    faq_html += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>' + get_html_footer()
+    
+    with open("output/faq.html", "w", encoding="utf-8") as f: 
+        f.write(minify_html(faq_html))
         # ==============================================================================
 # SITEMAP & ROBOTS
 # ==============================================================================
