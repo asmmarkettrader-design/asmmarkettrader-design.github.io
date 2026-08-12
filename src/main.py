@@ -1995,8 +1995,7 @@ def process_woocommerce_csv():
         
         with open(f"output/city/{city_slug}.html", "w", encoding="utf-8") as f: 
             f.write(minify_html(city_html))
-
-    # ================= CATEGORY PAGES =================
+# ================= CATEGORY PAGES =================
     print("📂 Generating Category Pages...")
     sections_dict = {}
     for p in products_list:
@@ -2007,6 +2006,7 @@ def process_woocommerce_csv():
     for cat_name, prods in sections_dict.items():
         cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
         sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
+        
         prods_per_page = 24
         total_pages = math.ceil(len(prods) / prods_per_page)
         
@@ -2016,11 +2016,9 @@ def process_woocommerce_csv():
             current_prods = prods[start_idx:end_idx]
             
             file_slug = cat_slug if page_num == 1 else f"{cat_slug}-{page_num}"
-            
-            # 🌟 Category Custom Meta Title 🌟
             page_title = f"Buy {cat_name} Online in Pakistan | ASM VEO" if page_num == 1 else f"{cat_name} - Page {page_num}"
             
-            if page_num > 1: 
+            if page_num > 1:
                 sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
             
             cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. Wide range of {cat_name} with Cash on Delivery from ASM VEO.")
@@ -2067,13 +2065,15 @@ def process_woocommerce_csv():
                             <button onclick="resetFilters()" class="w-full text-gray-600 hover:text-[#E53935] text-sm font-bold transition"><i class="fas fa-undo mr-1" aria-hidden="true"></i> Reset Filters</button>
                         </div>
                     </aside>
+                    
+                    <!-- Products Grid & Pagination -->
                     <div class="flex-1">
                         <div id="productGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
             """
             
-            for prod in current_prods: 
+            for prod in current_prods:
                 cat_html += generate_product_card(prod, lazy=True)
-                
+            
             cat_html += "</div>"
             cat_html += generate_pagination_html(page_num, total_pages, f"category/{cat_slug}")
             
@@ -2086,7 +2086,7 @@ def process_woocommerce_csv():
                 f"{cat_name.lower()} cash on delivery",
                 f"top {cat_name.lower()} accessories"
             ]
-            tags_html = "".join([f'<a href="/category/{cat_slug}.html" class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-bold hover:bg-[#E53935] hover:text-white transition shadow-sm">{k}</a>' for k in cat_keywords])
+            tags_html = "".join([f'<a href="/index.html?search={urllib.parse.quote(k)}" class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-bold hover:bg-[#E53935] hover:text-white transition shadow-sm">{k}</a>' for k in cat_keywords])
             
             if page_num == 1:
                 cat_html += f"""
@@ -2105,6 +2105,83 @@ def process_woocommerce_csv():
             </div>
             </div></div></div>
             """
+            
+            cat_script_filters = """
+            <script>
+                function applyFilters() {
+                    if (typeof allProducts === 'undefined') {
+                        setTimeout(applyFilters, 500);
+                        return;
+                    }
+                    let sortBy = document.getElementById('sortBy').value;
+                    let minP = parseFloat(document.getElementById('minPrice').value) || 0;
+                    let maxP = parseFloat(document.getElementById('maxPrice').value) || 999999;
+                    
+                    let filtered = allProducts.filter(p => p.final_price >= minP && p.final_price <= maxP);
+                    
+                    if (sortBy === 'price-low') filtered.sort((a,b) => a.final_price - b.final_price);
+                    else if (sortBy === 'price-high') filtered.sort((a,b) => b.final_price - a.final_price);
+                    else if (sortBy === 'name') filtered.sort((a,b) => a.name.localeCompare(b.name));
+                    
+                    let grid = document.getElementById('productGrid');
+                    if (filtered.length === 0) {
+                        grid.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500">No products found</div>';
+                    } else {
+                        grid.innerHTML = filtered.map(p => generateCard(p)).join('');
+                    }
+                }
+                
+                function generateCard(p) {
+                    let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100);
+                    if (isNaN(discount)) discount = 0;
+                    
+                    let htmlSafeName = p.name.replace(/"/g, '&quot;');
+                    let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
+                    let jsSafeDesc = p.seo_desc ? p.seo_desc.replace(/"/g, '&quot;').replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'") : '';
+                    
+                    return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
+                        <button onclick="toggleWishlist('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500 text-lg"></i></button>
+                        <button onclick="quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-14 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#E53935] text-lg"></i></button>
+                        ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
+                        <div class="image-zoom h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+                            <img src="${p.image}" alt="${htmlSafeName}" width="250" height="250" loading="lazy" decoding="async" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
+                        </div>
+                        <div class="p-3 flex flex-col flex-grow">
+                            <span class="text-[10px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
+                            <h3 class="text-xs md:text-sm font-bold text-gray-900 dark:text-white leading-tight mb-2 line-clamp-2">${htmlSafeName}</h3>
+                            <div class="mt-auto">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-sm md:text-base font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
+                                </div>
+                                <button onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-2.5 rounded-lg text-xs font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>`;
+                }
+                
+                function resetFilters() {
+                    document.getElementById('sortBy').value = 'default';
+                    document.getElementById('minPrice').value = '__MIN_PRICE__';
+                    document.getElementById('maxPrice').value = '__MAX_PRICE__';
+                    applyFilters();
+                }
+            </script>
+            """
+            
+            all_prods_json = json.dumps([{
+                "name": p['name'], "slug": p['slug'], "category": p['category'],
+                "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image'],
+                "seo_desc": p['seo_desc']
+            } for p in prods])
+            
+            cat_html += cat_script_filters.replace("__PRODUCTS_JSON__", all_prods_json)\
+                                          .replace("__MIN_PRICE__", str(int(min_price)))\
+                                          .replace("__MAX_PRICE__", str(int(max_price)))
+            cat_html += get_html_footer()
+            
+            # 🌟 YAHAN FILE SAVE HO RAHI HAI 🌟
+            with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f:
+                f.write(minify_html(cat_html))
 
     # ==============================================================================
     # HOMEPAGE DYNAMIC PAGINATION
