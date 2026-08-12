@@ -496,8 +496,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="theme-color" content="#E53935">
     <link rel="canonical" href="{canonical_url}">
     
-    <link rel="icon" type="image/jpeg" href="/Png logo.jpg">
-    <link rel="apple-touch-icon" href="/Png logo.jpg">
+    <link rel="icon" type="image/png" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
     <link rel="alternate" hreflang="en-PK" href="{canonical_url}" />
     <link rel="alternate" hreflang="ur-PK" href="{canonical_url}" />
     <link rel="alternate" hreflang="x-default" href="{canonical_url}" />
@@ -930,7 +930,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             
             <!-- 🌟 SEO FIX: Updated Custom Original Logo 🌟 -->
             <a href="/index.html" class="flex items-center gap-2" aria-label="ASM VEO Home">
-                <img src="/Png logo.jpg" alt="ASM VEO Logo" class="h-10 md:h-12 object-contain hover:scale-105 transition-transform rounded">
+                <img src="/icon.png" alt="ASM VEO Logo" class="h-10 md:h-12 object-contain hover:scale-105 transition-transform rounded">
                 <div class="flex flex-col leading-none">
                     <span class="text-xl font-extrabold text-[#E53935] dark:text-white tracking-tight">ASM VEO</span>
                     <span class="text-[9px] tracking-widest text-gray-600 dark:text-gray-400 font-bold">PAKISTAN</span>
@@ -1122,7 +1122,7 @@ def get_html_footer():
                     </ul>
                 </div>
                 <div>
-                    <img src="/Png logo.jpg" alt="ASM VEO Logo" class="h-14 mb-4 object-contain opacity-90 rounded">
+                    <img src="/icon.png" alt="ASM VEO Logo" class="h-14 mb-4 object-contain opacity-90 rounded">
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p>
                     <div class="flex gap-2 flex-wrap">
                         <a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
@@ -2071,7 +2071,17 @@ def process_woocommerce_csv():
             cat_html += "</div>"
             cat_html += generate_pagination_html(page_num, total_pages, f"category/{cat_slug}")
             
-            # 🌟 Category Content for SEO (1000 Words Strategy Context) 🌟
+            # 🌟 Category Content & Dynamic Related Keywords for SEO 🌟
+            cat_keywords = [
+                f"buy {cat_name.lower()} online pakistan",
+                f"best {cat_name.lower()} store",
+                f"{cat_name.lower()} price in pakistan",
+                f"original {cat_name.lower()} brands",
+                f"{cat_name.lower()} cash on delivery",
+                f"top {cat_name.lower()} accessories"
+            ]
+            tags_html = "".join([f'<a href="/category/{cat_slug}.html" class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-4 py-2 rounded-full text-xs font-bold hover:bg-[#E53935] hover:text-white transition shadow-sm">{k}</a>' for k in cat_keywords])
+            
             if page_num == 1:
                 cat_html += f"""
                 <div class="mt-16 bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-sm border border-gray-200 dark:border-gray-700 prose dark:prose-invert max-w-none">
@@ -2081,84 +2091,14 @@ def process_woocommerce_csv():
                     <p>When selecting the best {cat_name} online, consider factors like brand authenticity, customer reviews, and warranty. We ensure that every product listed in this category passes strict quality assurance tests before reaching your doorstep.</p>
                 </div>
                 """
-            
-            cat_html += "</div></div></div>"
-            
-            cat_script_filters = """
-            <script>
-                function applyFilters() { 
-                    if (typeof allProducts === 'undefined') { 
-                        setTimeout(applyFilters, 500); return; 
-                    } 
-                    let sortBy = document.getElementById('sortBy').value; 
-                    let minP = parseFloat(document.getElementById('minPrice').value) || 0; 
-                    let maxP = parseFloat(document.getElementById('maxPrice').value) || 999999; 
-                    
-                    let filtered = allProducts.filter(p => p.final_price >= minP && p.final_price <= maxP); 
-                    
-                    if (sortBy === 'price-low') filtered.sort((a,b) => a.final_price - b.final_price); 
-                    else if (sortBy === 'price-high') filtered.sort((a,b) => b.final_price - a.final_price); 
-                    else if (sortBy === 'name') filtered.sort((a,b) => a.name.localeCompare(b.name)); 
-                    
-                    let grid = document.getElementById('productGrid'); 
-                    if (filtered.length === 0) { 
-                        grid.innerHTML = '<div class="col-span-full text-center py-16 text-gray-500">No products found</div>'; 
-                    } else { 
-                        grid.innerHTML = filtered.map(p => generateCard(p)).join(''); 
-                    } 
-                } 
                 
-                function generateCard(p) { 
-                    let discount = Math.ceil(((p.fake_price - p.final_price) / p.fake_price) * 100); 
-                    if (isNaN(discount)) discount = 0; 
-                    
-                    let htmlSafeName = p.name.replace(/"/g, '&quot;'); 
-                    let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'"); 
-                    let jsSafeDesc = p.seo_desc ? p.seo_desc.replace(/"/g, '&quot;').replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'") : ''; 
-                    
-                    return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
-                        <button onclick="toggleWishlist('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500 text-lg"></i></button>
-                        <button onclick="quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-14 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#E53935] text-lg"></i></button>
-                        ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                        <div class="image-zoom h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                            <img src="${p.image}" alt="${htmlSafeName}" width="250" height="250" loading="lazy" decoding="async" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
-                        </div>
-                        <div class="p-3 flex flex-col flex-grow">
-                            <span class="text-[10px] font-bold text-[#E53935] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
-                            <h3 class="text-xs md:text-sm font-bold text-gray-900 dark:text-white leading-tight mb-2 line-clamp-2">${htmlSafeName}</h3>
-                            <div class="mt-auto">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="text-sm md:text-base font-black text-[#E53935] dark:text-white">Rs ${p.final_price}</span>
-                                </div>
-                                <button onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="w-full bg-gray-50 text-[#E53935] py-2.5 rounded-lg text-xs font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>`; 
-                } 
-                
-                function resetFilters() { 
-                    document.getElementById('sortBy').value = 'default'; 
-                    document.getElementById('minPrice').value = '__MIN_PRICE__'; 
-                    document.getElementById('maxPrice').value = '__MAX_PRICE__'; 
-                    applyFilters(); 
-                }
-            </script>
+            cat_html += f"""
+            <div class="mt-8 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4"><i class="fas fa-tags text-[#E53935]"></i> Popular Searches in {cat_name}</h3>
+                <div class="flex flex-wrap gap-2">{tags_html}</div>
+            </div>
+            </div></div></div>
             """
-            
-            all_prods_json = json.dumps([{
-                "name": p['name'], "slug": p['slug'], "category": p['category'], 
-                "final_price": p['final_price'], "fake_price": p['fake_price'], 
-                "image": p['image'], "seo_desc": p['seo_desc']
-            } for p in prods])
-            
-            cat_html += cat_script_filters.replace("__PRODUCTS_JSON__", all_prods_json)\
-                                          .replace("__MIN_PRICE__", str(int(min_price)))\
-                                          .replace("__MAX_PRICE__", str(int(max_price)))
-            
-            cat_html += get_html_footer()
-            
-            with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f: 
-                f.write(minify_html(cat_html))
 
     # ==============================================================================
     # HOMEPAGE DYNAMIC PAGINATION
