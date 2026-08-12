@@ -2657,7 +2657,7 @@ def process_woocommerce_csv():
     checkout_script = """
     <script>
         let couponApplied = false;
-
+        
         function togglePaymentDetails() {
             let method = document.querySelector('input[name="Payment_Method"]:checked').value;
             let details = document.getElementById('advancePaymentDetails'); 
