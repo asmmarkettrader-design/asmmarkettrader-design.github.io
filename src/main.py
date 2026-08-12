@@ -1515,7 +1515,59 @@ def generate_merchant_feed(products_list):
     with open("output/merchant-feed.xml", "w", encoding="utf-8") as f: 
         f.write(xml_content)
     print("✅ Google Merchant Feed generated successfully!")
+# ==============================================================================
+# PRODUCT CARD GENERATOR
+# ==============================================================================
 
+def generate_product_card(prod, lazy=True, show_wishlist=True):
+    discount = math.ceil(((prod['fake_price'] - prod['final_price']) / prod['fake_price']) * 100) if prod['fake_price'] > 0 and prod['fake_price'] > prod['final_price'] else 0
+    img_loading = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="sync"'
+    
+    escaped_name = prod['name'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
+    escaped_desc = prod['seo_desc'].replace("\\", "\\\\").replace('"', '&quot;').replace("'", "\\'")
+    alt_name = prod['name'].replace('"', '&quot;')
+    
+    wishlist_btn = ""
+    if show_wishlist:
+        wishlist_btn = f"""
+        <button onclick="toggleWishlist('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="wishlist-btn absolute top-2 right-2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10" aria-label="Add to Wishlist">
+            <i class="fas fa-heart text-pink-500 text-lg" aria-hidden="true"></i>
+        </button>
+        """
+        
+    quick_view_btn = f"""
+        <button onclick="quickView('{escaped_name}', {prod['final_price']}, '{prod['image']}', '{escaped_desc}', '{prod['slug']}')" class="absolute top-2 right-14 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10" aria-label="Quick View">
+            <i class="fas fa-eye text-[#E53935] text-lg" aria-hidden="true"></i>
+        </button>
+    """
+    
+    discount_badge = ""
+    if discount > 0:
+        discount_badge = f'<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-{discount}% OFF</div>'
+    
+    return f"""
+    <div class="product-card reveal active bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details for {alt_name}">
+        {wishlist_btn}
+        {quick_view_btn}
+        {discount_badge}
+        <div class="image-zoom h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
+            <img src="{prod['image']}" alt="{alt_name}" width="250" height="250" {img_loading} class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
+        </div>
+        <div class="p-3 flex flex-col flex-grow">
+            <span class="text-[10px] font-bold text-[#E53935] dark:text-white uppercase tracking-wider mb-1 line-clamp-1">{prod['category']}</span>
+            <h3 class="text-xs md:text-sm font-bold text-gray-900 dark:text-gray-100 leading-tight mb-2 line-clamp-2">{prod['name']}</h3>
+            <div class="mt-auto">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="text-sm md:text-base font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
+                    <span class="text-[10px] text-gray-500 dark:text-gray-400 font-bold line-through">Rs {prod['fake_price']}</span>
+                </div>
+                <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" class="w-full bg-gray-50 text-[#E53935] py-2.5 rounded-lg text-xs font-bold border border-gray-200 hover:bg-[#E53935] hover:text-white transition flex justify-center items-center gap-2" aria-label="Add to Cart">
+                    <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    """
 # ==============================================================================
 # MAIN PROCESSOR
 # ==============================================================================
