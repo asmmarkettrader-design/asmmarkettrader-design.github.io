@@ -1626,10 +1626,16 @@ def process_woocommerce_csv():
     if os.path.exists("output"): 
         shutil.rmtree("output")
         
-    os.makedirs("output/category", exist_ok=True)
+ os.makedirs("output/category", exist_ok=True)
     os.makedirs("output/product", exist_ok=True)
     os.makedirs("output/city", exist_ok=True)
     os.makedirs("output/assets", exist_ok=True)
+    
+    # 🌟 FIX 1: Copying Logo to output folder 🌟
+    if os.path.exists("icon.png"):
+        shutil.copy("icon.png", "output/icon.png")
+    if os.path.exists("Png logo.jpg"):
+        shutil.copy("Png logo.jpg", "output/Png logo.jpg")
     
     with open("output/CNAME", "w") as f: 
         f.write("www.asmveo.com")
@@ -2867,7 +2873,9 @@ def process_woocommerce_csv():
     
     generate_image_sitemap(products_list) 
     generate_merchant_feed(products_list) 
-    auto_fix_broken_links("output")
+    
+    # 🌟 FIX 2: Removed aggressive broken link fixer that was causing 404 errors 🌟
+    
     apply_lighthouse_optimizations("output")
     trigger_google_indexing_api(sitemap_urls)
 
