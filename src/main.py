@@ -2214,8 +2214,9 @@ def process_woocommerce_csv():
         page_title = "Online Shopping in Pakistan | ASM VEO" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
         home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.")
         
-        # 🌟 یھاں سے وہ حصہ شروع ہوتا ہے جو صرف پیج 1 (مین ہوم پیج) پر نظر آئے گا 🌟
-       <h1 class="sr-only">Pakistan's Trusted Online Shopping Store - ASM VEO</h1>
+        if h_page == 1:
+            home_html += """
+            <h1 class="sr-only">Pakistan's Trusted Online Shopping Store - ASM VEO</h1>
             
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
@@ -2317,6 +2318,7 @@ def process_woocommerce_csv():
                 document.getElementById('heroCarousel').addEventListener('mouseenter', () => clearInterval(slideTimer));
                 document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 5000));
             </script>
+            """
 
             home_html += """
             <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
