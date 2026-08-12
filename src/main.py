@@ -2215,132 +2215,76 @@ def process_woocommerce_csv():
         home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.")
         
         # 🌟 یھاں سے وہ حصہ شروع ہوتا ہے جو صرف پیج 1 (مین ہوم پیج) پر نظر آئے گا 🌟
-        if h_page == 1:
-            home_html += """
-            <h1 class="sr-only">Pakistan's Trusted Online Shopping Store</h1>
+       <h1 class="sr-only">Pakistan's Trusted Online Shopping Store - ASM VEO</h1>
             
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
                 
-                    <!-- Banner 1: SUNSCREEN -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-300 to-cyan-100" aria-hidden="false">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Beach Background" class="absolute inset-0 w-full h-full object-cover opacity-60">
-                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-100/90 to-transparent w-[60%]"></div>
+                    <!-- BANNER 1: Fashion & Footwear (Apparel + Footwear & Bags) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-rose-100 to-teal-50" aria-hidden="false">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80')] opacity-10 bg-cover bg-center mix-blend-multiply"></div>
+                        <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-teal-200/60 to-transparent transform skew-x-12 translate-x-10"></div>
+                        
                         <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <h2 class="text-3xl md:text-6xl font-black text-orange-500 uppercase tracking-tighter drop-shadow-md">SUNSCREEN</h2>
-                            <p class="text-teal-800 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-1 mb-3">BETTER PROTECTION FOR ALL ACTIVITIES</p>
-                            <p class="text-blue-900 text-[8px] md:text-xs font-semibold max-w-[200px] leading-tight">MOISTURE AND GENTLE SUITABLE FOR SENSITIVE SKIN</p>
-                            <a href="#products" class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-orange-600 transition">SHOP NOW</a>
-                        </div>
-                        <div class="w-[45%] h-full relative z-10 flex justify-center items-end pb-4">
-                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=400&q=80" alt="Sunscreen" class="w-[80%] md:w-[60%] object-contain mix-blend-multiply drop-shadow-2xl">
-                        </div>
-                    </div>
-
-                    <!-- Banner 2: COSMETICS -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-pink-100 to-rose-200" aria-hidden="true">
-                        <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=1200&q=80" alt="Cosmetics Background" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity">
-                        <div class="w-[45%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <span class="text-rose-900 text-[8px] md:text-[10px] font-bold tracking-[0.2em] uppercase mb-1">BRAND NAME</span>
-                            <h2 class="text-3xl md:text-6xl font-black text-rose-700 uppercase tracking-tight">COSMETICS</h2>
-                            <p class="text-rose-900 text-[8px] md:text-[10px] mt-2 max-w-[200px] leading-tight opacity-70">Premium quality for your daily beauty routine.</p>
-                        </div>
-                        <div class="w-[55%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Perfume" class="w-[90%] md:w-[70%] object-contain mix-blend-multiply drop-shadow-2xl transform hover:scale-105 transition-transform duration-700">
-                        </div>
-                    </div>
-
-                    <!-- Banner 3: HONEY LOTION -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-yellow-400 to-amber-500" aria-hidden="true">
-                        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1587049352847-81a56d773c1c?auto=format&fit=crop&w=1200&q=80')] bg-cover mix-blend-overlay"></div>
-                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Honey Lotion" class="w-[80%] md:w-[60%] object-contain drop-shadow-[0_20px_50px_rgba(180,83,9,0.5)]">
-                        </div>
-                        <div class="w-[50%] h-full flex flex-col justify-center items-start pr-8 relative z-10 text-amber-900">
-                            <h2 class="text-2xl md:text-4xl font-serif italic leading-tight">NATURAL<br>HUMECTANTS<br>FOR SKIN</h2>
-                            <span class="text-xs font-bold tracking-[0.2em] mt-2 uppercase">Beauty</span>
-                            <div class="absolute bottom-10 right-10 w-16 h-16 md:w-24 md:h-24 bg-white/20 backdrop-blur-sm rounded-full border border-amber-200 flex items-center justify-center text-center p-2 shadow-lg">
-                                <span class="text-[8px] md:text-[10px] font-black uppercase">Hydrate<br>The Skin</span>
+                            <span class="bg-gray-900 text-white px-2 py-1 text-[8px] md:text-[10px] font-black tracking-widest uppercase mb-2 shadow-sm rounded-sm">ASM VEO EXCLUSIVE</span>
+                            <h2 class="text-3xl md:text-6xl font-black text-rose-600 uppercase tracking-tighter drop-shadow-sm leading-none">STYLE<br><span class="text-gray-800">REINVENTED</span></h2>
+                            <p class="text-gray-700 text-[9px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Premium Apparel & Footwear</p>
+                            <div class="flex gap-2 mb-3">
+                                <span class="bg-white text-rose-600 border border-rose-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Ready-Made Kapde</span>
+                                <span class="bg-white text-teal-600 border border-teal-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Sneakers & Bags</span>
                             </div>
+                            <a href="#products" class="bg-rose-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-rose-600 hover:scale-105 transition-all">DISCOVER MORE</a>
+                        </div>
+                        
+                        <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80" alt="Sneakers and Fashion" fetchpriority="high" class="w-[80%] md:w-[65%] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.3)] transform -rotate-12 hover:-rotate-6 transition-transform duration-500">
                         </div>
                     </div>
 
-                    <!-- Banner 4: SUPER CLEAN -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-cyan-300 to-blue-400" aria-hidden="true">
-                        <div class="w-1/2 h-full flex flex-col justify-center items-center pl-8 relative z-10 text-white">
-                            <h2 class="text-5xl md:text-7xl font-black italic uppercase leading-none drop-shadow-lg text-yellow-300 transform -skew-x-12">Super<br><span class="text-white">Clean</span></h2>
-                            <a href="#products" class="mt-6 border-2 border-white px-6 py-2 rounded-full text-xs font-bold hover:bg-white hover:text-blue-500 transition shadow-[0_0_15px_rgba(255,255,255,0.5)]">SHOP NOW</a>
+                    <!-- BANNER 2: Electronics & Home (Consumer Electronics + Home & Living) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900" aria-hidden="true">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80')] opacity-20 bg-cover bg-center mix-blend-screen"></div>
+                        <div class="absolute left-1/4 top-1/2 w-64 h-64 bg-blue-500 rounded-full mix-blend-screen filter blur-[80px] opacity-40"></div>
+                        
+                        <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80" alt="Smartwatch and Gadgets" loading="lazy" decoding="async" class="w-[85%] md:w-[70%] object-contain drop-shadow-[0_0_40px_rgba(59,130,246,0.5)] transform hover:scale-110 transition-transform duration-700">
                         </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1584820927498-cafe8c124016?auto=format&fit=crop&w=400&q=80" alt="Detergent" class="w-[70%] md:w-[50%] object-contain mix-blend-multiply drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)] transform hover:rotate-6 transition-transform">
-                        </div>
-                    </div>
 
-                    <!-- Banner 5: MACBOOK M2 PRO -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-blue-50 to-indigo-50" aria-hidden="true">
-                        <div class="absolute right-0 top-0 w-3/5 h-full bg-gradient-to-bl from-green-200 via-blue-100 to-transparent" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);"></div>
-                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
-                            <div class="bg-red-600 text-white px-3 py-1 text-[10px] md:text-xs font-bold transform -skew-x-12 inline-block mb-3 shadow-md">SPECIAL OFFER</div>
-                            <h2 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">MACBOOK M2 PRO</h2>
-                            <p class="text-gray-600 text-xs md:text-sm mt-1 max-w-xs leading-tight">Best performance for professionals</p>
-                            <a href="#products" class="mt-4 bg-gray-800 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-black transition">SHOP NOW</a>
-                        </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Macbook" class="w-[90%] md:w-[80%] object-contain mix-blend-multiply transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl">
-                        </div>
-                    </div>
-
-                    <!-- Banner 6: SONY h.ear -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex" aria-hidden="true">
-                        <div class="w-1/3 bg-[#E53935] h-full flex flex-col justify-center pl-8 md:pl-12 text-white relative z-10">
-                            <div class="absolute top-4 left-8 font-black tracking-widest text-lg md:text-xl">SONY</div>
-                            <h2 class="text-4xl md:text-6xl font-bold leading-none tracking-tighter">h.ear</h2>
-                            <h3 class="text-sm md:text-lg font-bold tracking-widest mt-1">ON WIRELESS NC</h3>
-                            <p class="text-[8px] md:text-xs mt-2 text-red-100 max-w-[150px]">High-Resolution Audio wireless headphones.</p>
-                        </div>
-                        <div class="w-2/3 bg-gray-50 h-full relative flex items-center justify-center">
-                            <div class="absolute w-48 h-48 md:w-80 md:h-80 bg-gray-200 rounded-full mix-blend-multiply opacity-50"></div>
-                            <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=500&q=80" alt="Headphones" class="w-[60%] md:w-[50%] object-contain mix-blend-multiply relative z-10 hover:scale-110 transition-transform duration-500 drop-shadow-2xl">
-                            <div class="absolute bottom-10 right-10 flex flex-col items-center">
-                                <span class="text-red-600 font-black text-2xl md:text-4xl">$349</span>
-                                <a href="#products" class="bg-[#E53935] text-white px-5 py-1.5 rounded-full text-xs font-bold mt-1 shadow-lg hover:bg-red-700 transition">Shop Now</a>
+                        <div class="w-[55%] h-full flex flex-col justify-center items-start pr-8 md:pr-16 relative z-10">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+                                <span class="text-blue-300 text-[9px] md:text-[11px] font-bold tracking-[0.3em] uppercase">ASM VEO TECH</span>
                             </div>
+                            <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight leading-none mb-1">SMART<br><span class="text-blue-400">LIVING</span></h2>
+                            <p class="text-gray-300 text-[9px] md:text-sm mt-2 mb-3 max-w-[250px] leading-relaxed">Upgrade your lifestyle with the latest smartwatches, earbuds, and premium home decor items.</p>
+                            <a href="#products" class="border-2 border-blue-400 text-blue-400 px-6 py-2 rounded-full text-xs font-bold shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:bg-blue-400 hover:text-white transition-all mt-1">UPGRADE NOW</a>
                         </div>
                     </div>
 
-                    <!-- Banner 7: RUNNING SNEAKERS -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-teal-200 to-emerald-300" aria-hidden="true">
-                        <div class="w-1/2 h-full flex flex-col justify-center items-start pl-8 md:pl-16 z-10">
-                            <div class="flex gap-4 text-[8px] md:text-[10px] font-bold text-teal-800 uppercase tracking-widest mb-6">
-                                <span>Men</span><span>Women</span><span>Kids</span>
-                            </div>
-                            <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter drop-shadow-md">Running Sneakers</h2>
-                            <div class="h-1 w-12 bg-white my-3"></div>
-                            <a href="#products" class="mt-2 bg-gray-900 text-white px-6 py-2 text-xs font-bold hover:bg-black transition shadow-xl">ADD TO CART</a>
+                    <!-- BANNER 3: Beauty & Groceries (Health, Beauty + Food & Online Groceries) -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-amber-100 to-green-100" aria-hidden="true">
+                        <div class="absolute right-0 top-0 h-full w-1/2 bg-[url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80')] bg-cover opacity-15 mix-blend-multiply rounded-l-full"></div>
+                        <div class="absolute left-0 bottom-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-[40px] opacity-50"></div>
+                        
+                        <div class="w-[50%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
+                            <span class="bg-green-600 text-white px-3 py-1 text-[8px] md:text-[10px] font-black uppercase tracking-wider mb-2 rounded-br-lg rounded-tl-lg shadow-md">ASM VEO ORGANICS</span>
+                            <h2 class="text-3xl md:text-6xl font-black text-green-800 uppercase tracking-tighter drop-shadow-sm leading-none">PURE &<br><span class="text-amber-600">FRESH</span></h2>
+                            <p class="text-gray-700 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Skincare & Daily Groceries</p>
+                            <p class="text-gray-600 text-[8px] md:text-[11px] mb-4 max-w-[220px] font-semibold leading-tight">From organic serums to daily ration & snacks, delivered fresh to your door.</p>
+                            <a href="#products" class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-2 rounded-full text-xs font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all">SHOP ESSENTIALS</a>
                         </div>
-                        <div class="w-1/2 h-full relative z-10 flex justify-center items-center">
-                            <div class="absolute w-48 h-48 md:w-72 md:h-72 bg-white rounded-full shadow-2xl opacity-60"></div>
-                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Sneaker" class="w-[80%] md:w-[70%] object-contain relative z-20 transform -rotate-12 hover:-rotate-6 hover:scale-110 transition-all duration-500 mix-blend-multiply rounded-full border border-gray-100 p-2">
-                        </div>
-                    </div>
-
-                    <!-- Banner 8: 2022 LIGE MENS WATCHES -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-[#2D2D2D]" aria-hidden="true">
-                        <div class="absolute bottom-0 left-0 w-full h-[40%] bg-[#0078D7]" style="clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);"></div>
-                        <div class="w-3/5 h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <h2 class="text-xl md:text-3xl font-medium text-white tracking-widest">2022 LIGE MENS WATCHES</h2>
-                            <h3 class="text-2xl md:text-4xl font-black text-[#00AEEF] uppercase mt-1">TOP BRAND</h3>
-                            <a href="#products" class="mt-6 bg-[#00AEEF] text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-400 transition shadow-lg">BUY NOW</a>
-                        </div>
-                        <div class="w-2/5 h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=400&q=80" alt="Mens Watch" class="w-32 h-32 md:w-56 md:h-56 object-cover rounded-full border-4 border-gray-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform -rotate-12 hover:rotate-0 transition-transform duration-500">
-                            <div class="absolute right-4 top-1/4 bg-[#00AEEF] text-white text-[10px] md:text-xs font-black px-2 py-1 rounded shadow-lg transform rotate-12">$80.97</div>
+                        
+                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center gap-2 md:gap-4 pr-4">
+                            <!-- Skincare Image -->
+                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=300&q=80" alt="Beauty Serum" loading="lazy" decoding="async" class="w-[45%] object-contain drop-shadow-xl transform hover:-translate-y-2 transition-transform duration-500">
+                            <!-- Grocery Image -->
+                            <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=300&q=80" alt="Fresh Groceries" loading="lazy" decoding="async" class="w-[50%] object-contain drop-shadow-2xl rounded-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
                         </div>
                     </div>
                     
                 </div>
-                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-black/70 transition z-20" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm text-gray-900 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow-md" aria-label="Previous slide"><i class="fas fa-chevron-left text-sm" aria-hidden="true"></i></button>
+                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm text-gray-900 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow-md" aria-label="Next slide"><i class="fas fa-chevron-right text-sm" aria-hidden="true"></i></button>
                 <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
             </div>
             
@@ -2350,7 +2294,7 @@ def process_woocommerce_csv():
                 const dotsContainer = document.getElementById('carouselDots');
                 
                 slides.forEach((_, i) => {
-                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition focus:outline-none shadow-sm" aria-label="Go to slide ${i + 1}"></button>`;
+                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-gray-400 hover:bg-gray-800 transition focus:outline-none shadow-sm" aria-label="Go to slide ${i + 1}"></button>`;
                 });
                 
                 function updateCarousel() {
@@ -2359,7 +2303,7 @@ def process_woocommerce_csv():
                         slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true');
                     });
                     document.querySelectorAll('#carouselDots button').forEach((dot, i) => {
-                        dot.className = `w-3 h-3 rounded-full transition shadow-sm ${i === slideIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white'}`;
+                        dot.className = `w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition shadow-sm ${i === slideIndex ? 'bg-gray-800 scale-125' : 'bg-gray-400 hover:bg-gray-600'}`;
                     });
                 }
                 
@@ -2368,12 +2312,11 @@ def process_woocommerce_csv():
                 function goToSlide(i) { slideIndex = i; updateCarousel(); }
                 
                 updateCarousel();
-                let slideTimer = setInterval(nextSlide, 4500);
+                let slideTimer = setInterval(nextSlide, 5000);
                 
                 document.getElementById('heroCarousel').addEventListener('mouseenter', () => clearInterval(slideTimer));
-                document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 4500));
+                document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 5000));
             </script>
-            """
 
             home_html += """
             <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
