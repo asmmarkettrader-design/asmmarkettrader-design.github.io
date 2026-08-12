@@ -2874,6 +2874,7 @@ def process_woocommerce_csv():
     # 🌟 FINAL FIX: Removed auto_fix_broken_links completely to prevent 404 errors 🌟
     generate_image_sitemap(products_list) 
     generate_merchant_feed(products_list) 
+    auto_fix_broken_links("output")
     apply_lighthouse_optimizations("output")
     trigger_google_indexing_api(sitemap_urls)
 
