@@ -1,5 +1,19 @@
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /category/
+Allow: /product/
+
+# 🌟 GEO FIX: Explicitly allowing AI Crawlers to read site for recommendations 🌟
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
 Disallow: /checkout.html
 
 Sitemap: https://www.asmveo.com/sitemap.xml
