@@ -2947,12 +2947,17 @@ def process_woocommerce_csv():
             btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
             btn.disabled = true;
 
+            // 🌟 YEH LINE MISSING THI (Tracking ID generate karne ke liye) 🌟
+            let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
+
             // 1. Formspree / Email Data
             const formData = new FormData(this);
+            // Formspree me bhi Order ID add kar dete hain taa ke email me bhi aa jaye
+            formData.append("Tracking_ID", oId);
             
             // 2. Google Sheets Database Data
             let orderData = {
-                orderId: oId, // Yeh auto-generated Tracking ID hai
+                orderId: oId, 
                 name: document.getElementById('fullName').value,
                 phone: document.getElementById('phoneNum').value,
                 city: document.getElementById('citySelect').value,
@@ -2964,7 +2969,7 @@ def process_woocommerce_csv():
             };
 
             // Aap ka laya hua Google Apps Script URL
-            const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbwNnfCRoH37X2_h2zDVGD-nrknlg4HDq22I6R9C-a7WoaF113zYj-phDjPdwzUs2xVt/exec';
+            const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec';
 
             // Pehle Google Sheet mein data bhejein
             fetch(GOOGLE_SHEET_URL, {
