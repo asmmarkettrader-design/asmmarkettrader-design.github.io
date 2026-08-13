@@ -2964,7 +2964,7 @@ def process_woocommerce_csv():
             };
 
             // Aap ka laya hua Google Apps Script URL
-            const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec';
+            const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbwNnfCRoH37X2_h2zDVGD-nrknlg4HDq22I6R9C-a7WoaF113zYj-phDjPdwzUs2xVt/exec';
 
             // Pehle Google Sheet mein data bhejein
             fetch(GOOGLE_SHEET_URL, {
