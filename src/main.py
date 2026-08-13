@@ -1831,8 +1831,6 @@ def process_woocommerce_csv():
                         <div class="text-yellow-500 text-sm">{"<i class='fas fa-star'></i>" * 5}</div>
                         <span class="text-sm font-semibold text-gray-600 dark:text-gray-300">{avg_rating} ({review_count} verified reviews)</span>
                     </div>
-                    
-                    {f'<div class="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-lg mb-4 text-sm font-bold border border-blue-200 dark:border-blue-700 inline-block"><i class="fas fa-search"></i> Trending Search: {prod["daraz_kw"]}</div>' if prod.get('daraz_kw') else ''}
 
                     <div class="flex items-center gap-4 mb-4 bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl w-fit border border-gray-100 dark:border-gray-600">
                         <span class="text-4xl font-black text-[#E53935] dark:text-white">Rs {prod['final_price']}</span>
@@ -1854,36 +1852,36 @@ def process_woocommerce_csv():
                         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full font-bold"><i class="fas fa-truck" aria-hidden="true"></i> Delivery by {delivery_date}</span>
                     </div>
                     
-                    {chunked_desc}
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 w-full md:w-5/6 mt-auto main-product-actions">
-                        <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#E53935] dark:text-white py-4 rounded-xl font-black text-lg border-2 border-[#E53935] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                    <!-- 🌟 BUTTONS MOVED UP HERE 🌟 -->
+                    <div class="flex flex-col sm:flex-row gap-4 w-full mt-2 mb-4 main-product-actions">
+                        <button onclick="addToCart('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Add to Cart" class="sm:w-1/2 bg-white dark:bg-gray-700 text-[#E53935] dark:text-white py-3.5 rounded-xl font-black text-lg border-2 border-[#E53935] hover:bg-gray-50 dark:hover:bg-gray-600 transition-all shadow-md transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
                         </button>
-                        <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#E53935] text-white py-4 rounded-xl font-black text-lg hover:bg-[#C62828] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                        <button onclick="buyNow('{escaped_name}', {prod['final_price']}, '{prod['image']}', event)" aria-label="Buy Now" class="sm:w-1/2 bg-[#E53935] text-white py-3.5 rounded-xl font-black text-lg hover:bg-[#C62828] transition-all shadow-lg transform hover:-translate-y-1 flex justify-center items-center gap-2">
                             <i class="fas fa-bolt" aria-hidden="true"></i> Buy Now
                         </button>
                     </div>
-                    <a href="{wa_link}" target="_blank" class="mt-4 w-full md:w-5/6 bg-green-500 text-white font-bold py-3 rounded-xl hover:bg-green-600 transition flex items-center justify-center gap-2">
+                    
+                    <a href="{wa_link}" target="_blank" class="w-full bg-green-500 text-white font-bold py-3.5 rounded-xl hover:bg-green-600 transition flex items-center justify-center gap-2 mb-8 shadow-md">
                         <i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Quick Order via WhatsApp
                     </a>
-                </div>
-            </div>
-            
-            {"<div class='bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal'><h2 class='text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4'>You May Also Like</h2><div class='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4'>" + related_html + "</div></div>" if related_html else ""}
-            
-            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700 p-8 mb-8 reveal">
-                <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-b pb-4 flex items-center gap-3">
-                    <i class="fas fa-star text-yellow-500" aria-hidden="true"></i> Customer Reviews ({review_count})
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>{reviews_section}</div>
-                    <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl h-fit border border-gray-300 dark:border-gray-700">
-                        <h3 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Write a Review</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Only verified buyers can leave a review after receiving the product to maintain quality standards.</p>
-                        <div class="flex items-center gap-2 text-[#E53935] dark:text-white font-bold bg-gray-50 dark:bg-gray-700 p-3 rounded-lg border border-gray-200 dark:border-gray-600">
-                            <i class="fas fa-lock" aria-hidden="true"></i> Review form is currently locked.
-                        </div>
+                    
+                    <!-- 🌟 PRODUCT OVERVIEW MOVED DOWN HERE 🌟 -->
+                    <div class="prose dark:prose-invert max-w-none text-sm leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-6">
+                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Product Overview</h3>
+                        <p class="mb-4">{prod['full_desc'][:250] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
+                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Key Features</h3>
+                        <ul class="list-disc pl-5 mb-4 text-gray-600 dark:text-gray-300">
+                            <li>100% Genuine and authentic product.</li>
+                            <li>Premium build quality ensuring durability.</li>
+                            <li>Highly rated by top customers in Pakistan.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-3 mt-8 pt-6 border-t border-gray-100 dark:border-gray-700">
+                        <div class="text-center"><i class="fas fa-shield-alt text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Secure Payment</p></div>
+                        <div class="text-center"><i class="fas fa-undo text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">7-Day Returns</p></div>
+                        <div class="text-center"><i class="fas fa-truck text-[#E53935] text-xl mb-1" aria-hidden="true"></i><p class="text-xs font-semibold text-gray-600 dark:text-gray-400">Fast Delivery</p></div>
                     </div>
                 </div>
             </div>
