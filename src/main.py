@@ -2942,45 +2942,73 @@ def process_woocommerce_csv():
         }
 
         document.getElementById('checkoutForm').addEventListener('submit', function(e) {
-            e.preventDefault(); 
-            const btn = document.getElementById('submitBtn'); 
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...'; 
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
             btn.disabled = true;
-            
+
+            // 1. Formspree / Email Data
             const formData = new FormData(this);
-            fetch('https://formspree.io/f/xjgnlgpw', { 
-                method: 'POST', body: formData, headers: { 'Accept': 'application/json' } 
+            
+            // 2. Google Sheets Database Data
+            let orderData = {
+                orderId: oId, // Yeh auto-generated Tracking ID hai
+                name: document.getElementById('fullName').value,
+                phone: document.getElementById('phoneNum').value,
+                city: document.getElementById('citySelect').value,
+                address: document.getElementById('addressInput').value,
+                email: document.getElementById('emailAddr').value,
+                paymentMethod: document.querySelector('input[name="Payment_Method"]:checked').value,
+                products: document.getElementById('productField').value,
+                total: document.getElementById('totalField').value
+            };
+
+            // Aap ka laya hua Google Apps Script URL
+            const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec';
+
+            // Pehle Google Sheet mein data bhejein
+            fetch(GOOGLE_SHEET_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(orderData)
+            }).then(() => {
+                console.log("Order safely saved to Google Sheets database!");
+            }).catch(err => console.log("Database error: ", err));
+
+            // Phir aapko Email (Formspree) par notification bhejein
+            fetch('https://formspree.io/f/xjgnlgpw', {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
-                    let customerEmail = document.getElementById('emailAddr').value; 
-                    if(customerEmail) { 
-                        localStorage.setItem('asm_customer_email', customerEmail); 
+                    if (typeof sendTrustpilotInvitation === 'function') {
+                        sendTrustpilotInvitation();
                     }
                     
-                    const urlParams = new URLSearchParams(window.location.search); 
-                    if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart'); 
-                    updateCartBadge();
+                    let customerEmail = document.getElementById('emailAddr').value;
+                    if(customerEmail) localStorage.setItem('asm_customer_email', customerEmail);
                     
-                    setTimeout(() => { window.location.href = '/order-success.html'; }, 800); 
-                } else { 
-                    showToast('Error submitting order. Try again.', 'fa-exclamation-circle', 'red'); 
-                    btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order'; 
-                    btn.disabled = false; 
+                    const urlParams = new URLSearchParams(window.location.search);
+                    if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
+                    if(typeof updateCartBadge === 'function') updateCartBadge();
+                    
+                    setTimeout(() => {
+                        window.location.href = '/order-success.html';
+                    }, 800); 
+                    
+                } else {
+                    showToast('Error submitting order. Try again.', 'fa-exclamation-circle', 'red');
+                    btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
+                    btn.disabled = false;
                 }
-            }).catch(error => { 
-                showToast('Network Error! Try WhatsApp instead.', 'fa-wifi', 'red'); 
-                btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order'; 
-                btn.disabled = false; 
+            }).catch(error => {
+                showToast('Network Error! Try WhatsApp instead.', 'fa-wifi', 'red');
+                btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
+                btn.disabled = false;
             });
         });
-        
-        window.addEventListener('load', renderCart);
-    </script>
-    """
-    
-    with open("output/checkout.html", "w", encoding="utf-8") as f: 
-        f.write(minify_html(checkout_html + checkout_script + get_html_footer()))
-    
     # Run the final functions
     generate_sitemap(sitemap_urls)
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
