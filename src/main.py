@@ -1424,9 +1424,79 @@ def generate_blog_pages(categories_list):
 # STATIC PAGES GENERATION
 # ==============================================================================
 
-def generate_static_pages(categories_list):
+def generate_static_pages(categories_list, products_list=None):
     print("📄 Generating Static Pages...")
     
+    category_payload = [
+        {"name": c, "slug": re.sub(r"[^a-z0-9]+", "-", c.lower()).strip("-")}
+        for c in categories_list
+    ]
+    smart_404_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finding Your Product | ASM VEO</title>
+<meta name="robots" content="noindex,follow">
+<script src="/search-data.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<main class="max-w-5xl mx-auto px-4 py-12">
+<div class="text-center mb-10">
+<div class="w-16 h-16 border-4 border-[#E53935] border-t-transparent rounded-full animate-spin mx-auto mb-5"></div>
+<h1 id="fallbackTitle" class="text-3xl md:text-4xl font-black text-gray-900 mb-3">Finding the best match for you...</h1>
+<p id="fallbackText" class="text-gray-500">This link is no longer available. We are finding the closest live product or category.</p>
+</div>
+<div id="fallbackBox" class="bg-white rounded-3xl shadow-xl border border-gray-200 p-6 md:p-8"></div>
+</main>
+<script>
+(function(){
+const categories=__CATEGORY_JSON__;
+const path=decodeURIComponent(window.location.pathname||"").toLowerCase();
+const slugify=s=>String(s||"").toLowerCase().replace(/\.html?$/i,"").replace(/[^a-z0-9]+/g," ").trim();
+const stop=new Set(["the","and","for","with","from","online","buy","shop","in","of","new","best","asm","veo","product","products"]);
+const tokens=s=>slugify(s).split(/\s+/).filter(x=>x.length>2&&!stop.has(x));
+const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const raw=path.replace(/^\/+/,"").replace(/^(product|products|collections|collection|pages)\//,"").replace(/^category\//,"").replace(/\.html?$/i,"").replace(/-\d+$/,"");
+const q=tokens(raw);
+const products=Array.isArray(window.searchIndex)?window.searchIndex:[];
+function productScore(p){
+let s=0,n=tokens(p.name),c=tokens(p.category),sl=tokens(p.slug);
+q.forEach(t=>{if(n.includes(t))s+=5;if(sl.includes(t))s+=4;if(c.includes(t))s+=3;
+if(n.some(x=>x.includes(t)||t.includes(x)))s+=2;
+if(c.some(x=>x.includes(t)||t.includes(x)))s+=1;}); return s;
+}
+function categoryScore(c){let s=0,t=tokens(c.name);q.forEach(x=>{if(t.includes(x))s+=5;if(t.some(y=>y.includes(x)||x.includes(y)))s+=2;});return s;}
+const rp=products.map(p=>({p,score:productScore(p)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);
+const rc=categories.map(c=>({c,score:categoryScore(c)})).sort((a,b)=>b.score-a.score);
+const bp=rp[0],bc=rc[0];
+
+if(bp&&bp.score>=5){
+document.getElementById("fallbackText").textContent="We found the closest available product. Redirecting you now...";
+setTimeout(()=>location.replace("/product/"+encodeURIComponent(bp.p.slug)+".html"),900);return;
+}
+if(bc&&bc.score>=3){
+document.getElementById("fallbackText").textContent="That item is no longer available, so we are opening its closest category...";
+setTimeout(()=>location.replace("/category/"+bc.c.slug+".html"),900);return;
+}
+
+const list=rp.slice(0,4), cat=bc||(categories[0]||null);
+let html='<div class="grid md:grid-cols-2 gap-6"><div><h2 class="text-xl font-black text-gray-900 mb-4">Closest Products</h2>';
+html+=list.length?'<div class="space-y-3">'+list.map(x=>'<a href="/product/'+encodeURIComponent(x.p.slug)+'.html" class="flex items-center gap-3 p-3 rounded-xl border border-gray-200 hover:border-[#E53935] transition"><img src="'+esc(x.p.image)+'" class="w-16 h-16 object-contain rounded-lg bg-gray-50" alt=""><div><div class="font-bold text-sm text-gray-900">'+esc(x.p.name)+'</div><div class="text-[#E53935] font-black text-sm">Rs '+esc(x.p.final_price)+'</div></div></a>').join("")+'</div>':'<p class="text-gray-500">No exact product match was found.</p>';
+html+='</div><div><h2 class="text-xl font-black text-gray-900 mb-4">Related Category</h2>';
+html+=cat?'<a href="/category/'+cat.c.slug+'.html" class="block p-6 rounded-2xl bg-[#E53935] text-white hover:bg-[#C62828] transition"><div class="text-sm opacity-80 mb-2">Recommended category</div><div class="text-2xl font-black">'+esc(cat.c.name)+'</div><div class="mt-4 font-bold">Open Category →</div></a>':'<p class="text-gray-500">No category match was found.</p>';
+html+='</div></div>';
+document.getElementById("fallbackBox").innerHTML=html;
+const destination=bp?"/product/"+encodeURIComponent(bp.p.slug)+".html":(cat?"/category/"+cat.c.slug+".html":"/");
+setTimeout(()=>location.replace(destination),2200);
+})();
+</script>
+</body>
+</html>
+""".replace("__CATEGORY_JSON__", json.dumps(category_payload, ensure_ascii=False))
+
     pages = {
         "about.html": ("About Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-12"><h1 class="text-4xl md:text-5xl font-extrabold text-[#E53935] dark:text-white mb-6">About ASM VEO</h1><p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">Your trusted shopping partner in Pakistan</p></div><div class="grid md:grid-cols-2 gap-8 mb-12"><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-bullseye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Mission</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To provide every Pakistani with access to premium quality products at affordable prices, delivered right to their doorstep with Cash on Delivery convenience.</p></div><div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700"><div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-eye text-2xl text-[#E53935]"></i></div><h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Our Vision</h3><p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">To become Pakistan's most trusted and loved e-commerce platform, known for quality, reliability, and exceptional customer service.</p></div></div><div class="animated-bg text-white rounded-3xl p-8 md:p-12"><h2 class="text-3xl font-bold mb-4">Why Choose ASM VEO?</h2><div class="grid md:grid-cols-3 gap-6 mt-8"><div><i class="fas fa-shield-alt text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">100% Secure</h4><p class="text-gray-200 text-sm">SSL encrypted checkout with COD option</p></div><div><i class="fas fa-truck-fast text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Fast Delivery</h4><p class="text-gray-200 text-sm">Nationwide delivery in 2-4 business days</p></div><div><i class="fas fa-undo text-4xl mb-3 text-white"></i><h4 class="font-bold text-lg mb-2">Easy Returns</h4><p class="text-gray-200 text-sm">7-day return policy, no questions asked</p></div></div></div></div>"""),
         "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-600 dark:text-gray-400 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
@@ -1436,53 +1506,7 @@ def generate_static_pages(categories_list):
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
         "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#E53935] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#E53935]"><button onclick="trackLocalOrder()" class="bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#C62828]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Pending','Confirmed','Shipped','Delivered'];const status=o.status||'Confirmed';const idx=steps.indexOf(status);r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#E53935]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div>"""),
         "compare.html": ("Compare Products", """<div class="container mx-auto px-4 py-16 max-w-6xl"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"><div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Compare Products</h1><p class="text-gray-600 dark:text-gray-300 mt-2">Compare up to 4 products side by side.</p></div><button onclick="clearCompare();renderComparePage();" class="border border-gray-300 dark:border-gray-600 px-5 py-2.5 rounded-xl font-bold text-sm">Clear All</button></div><div id="comparePageContent"></div><script>function renderComparePage(){let items=[];try{items=JSON.parse(localStorage.getItem('asm_compare'))||[];}catch(e){}const box=document.getElementById('comparePageContent');if(!items.length){box.innerHTML='<div class="bg-white dark:bg-gray-800 rounded-3xl p-12 text-center border border-gray-200 dark:border-gray-700"><i class="fas fa-code-compare text-6xl text-gray-300 mb-5"></i><h2 class="text-2xl font-black text-gray-900 dark:text-white mb-2">Nothing to compare yet</h2><p class="text-gray-500 mb-6">Add products using the compare icon on product cards.</p><a href="/index.html#products" class="inline-block bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold">Browse Products</a></div>';return;}const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const row=(label,fn)=>'<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black text-gray-700 dark:text-gray-300">'+label+'</td>'+items.map(p=>'<td class="p-5 text-center text-gray-600 dark:text-gray-300">'+fn(p)+'</td>').join('')+'</tr>';let html='<div class="overflow-x-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700"><table class="w-full min-w-[760px] text-sm"><thead><tr><th class="text-left p-5 bg-gray-50 dark:bg-gray-700">Feature</th>'+items.map(p=>'<th class="p-5 text-center bg-gray-50 dark:bg-gray-700"><img src="'+p.image+'" class="w-24 h-24 mx-auto object-contain rounded-xl" alt=""><div class="font-bold mt-2 text-gray-900 dark:text-white">'+esc(p.name)+'</div></th>').join('')+'</tr></thead><tbody>';html+=row('Price',p=>'<span class="text-[#E53935] font-black text-lg">Rs '+p.price+'</span>');html+=row('Category',p=>esc(p.category));html+=row('Availability',p=>'<span class="text-green-600 font-bold"><i class="fas fa-check-circle"></i> In Stock</span>');html+=row('Delivery',p=>'2–4 business days');html+=row('Returns',p=>'7-day returns');html+='<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black">Action</td>'+items.map(p=>'<td class="p-5 text-center"><a href="/product/'+p.slug+'.html" class="inline-block bg-[#E53935] text-white px-4 py-2 rounded-lg font-bold">View Product</a></td>').join('')+'</tr></tbody></table></div>';box.innerHTML=html;}window.addEventListener('load',renderComparePage);</script></div>"""),
-        "404.html": ("Finding Product...", """
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Finding Your Product | ASM VEO</title>
-            <script>
-                // 🌟 INTELLIGENT 404 REDIRECT (Search Fallback) 🌟
-                // Yeh script broken link se product ka naam nikal kar auto-search karegi
-                
-                let path = window.location.pathname;
-                
-                // 1. Link mein se fuzool cheezein (product, collection waghera) nikal dein
-                let cleanPath = path.toLowerCase()
-                    .replace('/product/', '')
-                    .replace('/collections/', '')
-                    .replace('/category/', '')
-                    .replace('/pages/', '')
-                    .replace('.html', '');
-                    
-                // 2. Aakhir mein jo product ID hoti hai (jaise -7822), usy hata dein
-                cleanPath = cleanPath.replace(/-[0-9]+$/, '');
-                
-                // 3. Dashes (-) ko spaces mein badal dein ta k search query ban jaye
-                let query = cleanPath.split('-').join(' ').trim();
-                
-                // 4. Agar query valid hai to auto-search pe bhejein, warna homepage pe
-                if (query.length > 2 && query !== 'all') {
-                    window.location.replace("https://www.asmveo.com/index.html?search=" + encodeURIComponent(query));
-                } else {
-                    window.location.replace("https://www.asmveo.com/index.html");
-                }
-            </script>
-            <link rel="preconnect" href="https://cdn.tailwindcss.com">
-            <script src="https://cdn.tailwindcss.com"></script>
-        </head>
-        <body class="bg-gray-50 flex items-center justify-center min-h-screen">
-            <div class="text-center">
-                <div class="w-16 h-16 border-4 border-[#E53935] border-t-transparent rounded-full animate-spin mx-auto mb-6"></div>
-                <h1 class="text-2xl font-black text-gray-900 mb-2">Looking for your item...</h1>
-                <p class="text-gray-500 font-semibold mb-6">We are finding the best match for you.</p>
-                <a href="https://www.asmveo.com/index.html" class="text-sm text-blue-600 underline">Go to Homepage</a>
-            </div>
-        </body>
-        </html>
-        """),
+        "404.html": ("Finding Product...", smart_404_html),
         "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div></div>
         <script>
         function renderWishlist() {
@@ -1956,7 +1980,7 @@ def process_woocommerce_csv():
     blog_urls = generate_blog_pages(categories_list)
     sitemap_urls.extend(blog_urls)
     
-    generate_static_pages(categories_list)
+    generate_static_pages(categories_list, products_list)
     generate_robots_txt()
     generate_manifest()
     
@@ -2423,23 +2447,58 @@ def process_woocommerce_csv():
     if len(valid_home_cats) < 2: 
         valid_home_cats = list(sections_dict.items())
 
-    # 🌟 NEW: Custom Top 6 Categories Priority Logic 🌟
+    # Pakistan-focused Top 6 homepage category selection.
     def get_cat_priority(cat_tuple):
         cat_name = cat_tuple[0].lower()
-        if any(w in cat_name for w in ['apparel', 'fashion', 'cloth', 'suit', 'wear', 'garment', 'kapde']): return 1
-        if any(w in cat_name for w in ['electronic', 'mobile', 'accessor', 'smartwatch', 'earbud', 'charger']): return 2
-        if any(w in cat_name for w in ['health', 'beauty', 'skin', 'cosmetic', 'makeup', 'serum', 'wash']): return 3
-        if any(w in cat_name for w in ['home', 'living', 'decor', 'kitchen', 'bedsheet', 'gadget']): return 4
-        if any(w in cat_name for w in ['food', 'grocery', 'snack', 'ration', 'fresh']): return 5
-        if any(w in cat_name for w in ['footwear', 'shoe', 'bag', 'sandal', 'sneaker', 'handbag']): return 6
-        return 99 
+        groups = [
+            (1, ['fashion','apparel','cloth','clothing','dress','suit','wear','garment','kurta','shalwar','hijab','abaya','kapde']),
+            (2, ['electronic','electronics','mobile','smartphone','computer','laptop','tablet','earbud','headphone','charger','cable','smartwatch','gadget','tech']),
+            (3, ['beauty','cosmetic','makeup','skin','skincare','hair','perfume','fragrance','personal care','serum','cream']),
+            (4, ['home','kitchen','living','furniture','decor','decoration','bedsheet','curtain','cookware','appliance','storage']),
+            (5, ['health','fitness','wellness','medical','supplement','vitamin','exercise','gym']),
+            (6, ['footwear','shoe','shoes','sandal','sneaker','bag','bags','handbag','wallet','luggage']),
+            (7, ['grocery','food','snack','ration','fresh','drink','beverage'])
+        ]
+        for priority, words in groups:
+            if any(w in cat_name for w in words):
+                return priority
+        return 50
 
-    valid_home_cats.sort(key=lambda x: len(x[1]), reverse=True)
+    valid_home_cats = [(cat, list(prods)) for cat, prods in sections_dict.items() if len(prods) > 0]
+    valid_home_cats.sort(key=lambda x: (-len(x[1]), x[0].lower()))
     valid_home_cats.sort(key=get_cat_priority)
-    
+
     all_categories_list = valid_home_cats
-    cats_per_home_page = 6 
-    total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page)
+    cats_per_home_page = 6
+    total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page) if all_categories_list else 1
+
+    def build_home_display_products(cat_name, prods, limit=6):
+        chosen, seen = [], set()
+        for p in prods:
+            if p['slug'] not in seen:
+                chosen.append(p); seen.add(p['slug'])
+                if len(chosen) >= limit: return chosen
+
+        target_priority = get_cat_priority((cat_name, prods))
+        fallback_pool = []
+        for other_cat, other_prods in valid_home_cats:
+            if other_cat != cat_name and get_cat_priority((other_cat, other_prods)) == target_priority:
+                fallback_pool.extend(other_prods)
+        for other_cat, other_prods in valid_home_cats:
+            if other_cat != cat_name:
+                fallback_pool.extend(other_prods)
+
+        for p in fallback_pool:
+            if p['slug'] not in seen:
+                chosen.append(p); seen.add(p['slug'])
+                if len(chosen) >= limit: return chosen
+
+        # Absolute last resort: keep the six-card layout even for tiny categories.
+        if chosen:
+            i=0
+            while len(chosen)<limit:
+                chosen.append(chosen[i % len(chosen)]); i+=1
+        return chosen
 
     for h_page in range(1, total_home_pages + 1):
         page_title = "Online Shopping in Pakistan | ASM VEO" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
@@ -2564,14 +2623,14 @@ def process_woocommerce_csv():
                 if icon not in used_icons:
                     used_icons.add(icon)
                     unique_top_cats.append(cat)
-                if len(unique_top_cats) >= 8:
+                if len(unique_top_cats) >= 6:
                     break
                     
             if len(unique_top_cats) < 8:
                 for cat in categories_list:
                     if cat not in unique_top_cats:
                         unique_top_cats.append(cat)
-                    if len(unique_top_cats) >= 8:
+                    if len(unique_top_cats) >= 6:
                         break
 
             for cat in unique_top_cats:
@@ -2673,11 +2732,8 @@ def process_woocommerce_csv():
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
             """
             
-            display_prods = prods[:6]
-            if len(prods) > 0:
-                while len(display_prods) < 6:
-                    display_prods.append(prods[len(display_prods) % len(prods)])
-                    
+            display_prods = build_home_display_products(cat_name, prods, 6)
+            
             for idx, prod in enumerate(display_prods):
                 is_lazy = True
                 if h_page == 1 and idx < 3: 
