@@ -1612,6 +1612,7 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         
     html += '</div>'
     return html
+    # shopify fix
     def fix_shopify_404_errors():
     """
     پرانی شاپ فائی سائٹ کے 404 لنکس کو نئے ہوم پیج پر 301 ری ڈائریکٹ کرے گا۔
@@ -1630,7 +1631,7 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         "collections/sports-fitness.html", "collections/sweaters.html", "collections/womens-fashion.html",
         "pages/about-us.html", "pages/contact.html", "pages/reviews.html", "pages/shipping-policy.html", 
         "pages/wishlist.html", "blogs/news.html", "blogs/best-electronic-acces.html",
-        "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html", "contact"
+        "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html", "contact.html"
     ]
     
     redirect_html = """<!DOCTYPE html>
@@ -1654,6 +1655,11 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
             pass
             
     print("✅ All Shopify 404 links fixed and redirected to Homepage!")
+
+# ==============================================================================
+# MAIN PROCESSOR
+# ==============================================================================
+def process_woocommerce_csv():
 # ==============================================================================
 # MAIN PROCESSOR
 # ==============================================================================
