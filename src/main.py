@@ -1612,15 +1612,12 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         
     html += '</div>'
     return html
-    # shopify fix
-    def fix_shopify_404_errors():
-    """
-    پرانی شاپ فائی سائٹ کے 404 لنکس کو نئے ہوم پیج پر 301 ری ڈائریکٹ کرے گا۔
-    """
+   # ==============================================================================
+# SHOPIFY 404 FIXER (SAFE MODE)
+# ==============================================================================
+def fix_shopify_404_errors_safe():
     print("🔄 Fixing old Shopify 404 URLs with Auto-Redirects...")
-    
     directories_to_create = ["output/collections", "output/pages", "output/blogs", "output/blogs/news", "output/blogs/news/tagged"]
-    
     for d in directories_to_create:
         os.makedirs(d, exist_ok=True)
     
@@ -1631,35 +1628,26 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         "collections/sports-fitness.html", "collections/sweaters.html", "collections/womens-fashion.html",
         "pages/about-us.html", "pages/contact.html", "pages/reviews.html", "pages/shipping-policy.html", 
         "pages/wishlist.html", "blogs/news.html", "blogs/best-electronic-acces.html",
-        "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html", "contact.html"
+        "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html"
     ]
     
-    redirect_html = """<!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=https://www.asmveo.com/index.html">
-        <link rel="canonical" href="https://www.asmveo.com/index.html">
-        <title>Redirecting...</title>
-    </head>
-    <body>
-        <p>If you are not redirected automatically, follow this <a href="https://www.asmveo.com/index.html">link to our Homepage</a>.</p>
-    </body>
-    </html>"""
+    redirect_html = "<!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv='refresh' content='0; url=https://www.asmveo.com/index.html'><link rel='canonical' href='https://www.asmveo.com/index.html'><title>Redirecting...</title></head><body><p>Redirecting to <a href='https://www.asmveo.com/index.html'>Homepage</a>.</p></body></html>"
     
     for link in shopify_dead_links:
         try:
             with open(f"output/{link}", "w", encoding="utf-8") as f:
                 f.write(redirect_html)
-        except Exception as e:
+        except Exception:
             pass
-            
     print("✅ All Shopify 404 links fixed and redirected to Homepage!")
 
 # ==============================================================================
-# MAIN PROCESSOR
+# SCRIPT EXECUTION
 # ==============================================================================
-def process_woocommerce_csv():
+if __name__ == "__main__":
+    process_woocommerce_csv()
+    fix_shopify_404_errors_safe()
+    
 # ==============================================================================
 # MAIN PROCESSOR
 # ==============================================================================
