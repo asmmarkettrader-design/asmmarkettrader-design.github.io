@@ -543,7 +543,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
         </script>
         
-        <!-- 🌟 SEO FIX: Product FAQ Schema added automatically 🌟 -->
         <script type="application/ld+json">
         {{
           "@context": "https://schema.org",
@@ -570,87 +569,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </script>
         """
         
-        <!-- 🌟 SEO FIX: Product FAQ Schema added automatically 🌟 -->
-        <script type="application/ld+json">
-        {{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {{
-              "@type": "Question",
-              "name": "Is {safe_schema_name} original and genuine?",
-              "acceptedAnswer": {{
-                "@type": "Answer",
-                "text": "Yes! We source 100% genuine products directly from authorized distributors in Pakistan. Every product is quality-checked before dispatch."
-              }}
-            }},
-            {{
-              "@type": "Question",
-              "name": "What is the delivery time for {safe_schema_name}?",
-              "acceptedAnswer": {{
-                "@type": "Answer",
-                "text": "Delivery takes 2-4 business days across Pakistan. Major cities like Talagang, Karachi, Lahore, and Islamabad receive faster delivery."
-              }}
-            }}
-          ]
-        }}
-        </script>
-        """
-        
-        # 🌟 SEO FIX: Product FAQ Schema added automatically 🌟
-        structured_data += f"""
-        <script type="application/ld+json">
-        {{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {{
-              "@type": "Question",
-              "name": "Is {safe_schema_name} original and genuine?",
-              "acceptedAnswer": {{
-                "@type": "Answer",
-                "text": "Yes! We source 100% genuine products directly from authorized distributors in Pakistan. Every product is quality-checked before dispatch."
-              }}
-            }},
-            {{
-              "@type": "Question",
-              "name": "What is the delivery time for {safe_schema_name}?",
-              "acceptedAnswer": {{
-                "@type": "Answer",
-                "text": "Delivery takes 2-4 business days across Pakistan. Major cities like Talagang, Karachi, Lahore, and Islamabad receive faster delivery."
-              }}
-            }}
-          ]
-        }}
-        </script>
-        """
-    <!-- 🌟 SEO FIX: Product FAQ Schema added automatically 🌟 -->
-    <script type="application/ld+json">
-    {{
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {{
-          "@type": "Question",
-          "name": "Is {safe_schema_name} original and genuine?",
-          "acceptedAnswer": {{
-            "@type": "Answer",
-            "text": "Yes! We source 100% genuine products directly from authorized distributors in Pakistan. Every product is quality-checked before dispatch."
-          }}
-        }},
-        {{
-          "@type": "Question",
-          "name": "What is the delivery time for {safe_schema_name}?",
-          "acceptedAnswer": {{
-            "@type": "Answer",
-            "text": "Delivery takes 2-4 business days across Pakistan. Major cities like Karachi, Lahore, and Islamabad receive faster delivery."
-          }}
-        }}
-      ]
-    }}
-    </script>
-    """
-    
     if breadcrumb_data:
         safe_bc_cat = breadcrumb_data['category'].replace('\\', '\\\\').replace('"', '\\"')
         safe_bc_name = breadcrumb_data['name'].replace('\\', '\\\\').replace('"', '\\"')
@@ -671,6 +589,584 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     og_image_final = og_image or "https://www.asmveo.com/Png%20logo.jpg"
     
     return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>{safe_title} | ASM VEO</title>
+    
+    <meta name="title" content="{safe_title} | ASM VEO">
+    <meta name="description" content="{safe_desc}">
+    <meta name="keywords" content="buy {safe_title} in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO">
+    <meta name="author" content="ASM Digital Solutions">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#E53935">
+    <link rel="canonical" href="{canonical_url}">
+    
+    <link rel="icon" type="image/png" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+    <link rel="alternate" hreflang="en-PK" href="{canonical_url}" />
+    <link rel="alternate" hreflang="ur-PK" href="{canonical_url}" />
+    <link rel="alternate" hreflang="x-default" href="{canonical_url}" />
+    
+    <meta name="geo.region" content="PK" />
+    <meta name="geo.placename" content="Pakistan" />
+    <meta name="geo.position" content="30.3753;69.3451" />
+    <meta name="ICBM" content="30.3753, 69.3451" />
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{canonical_url}">
+    <meta property="og:title" content="{safe_title} | ASM VEO">
+    <meta property="og:description" content="{safe_desc}">
+    <meta property="og:image" content="{og_image_final}">
+    <meta property="og:locale" content="en_PK">
+    <meta property="og:site_name" content="ASM VEO">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{safe_title} | ASM VEO">
+    <meta property="twitter:description" content="{safe_desc}">
+    <meta property="twitter:image" content="{og_image_final}">
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ASM VEO">
+    
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {{
+            darkMode: 'class',
+            theme: {{
+                extend: {{
+                    colors: {{
+                        pk: {{ red: '#E53935', light: '#FFEBEE', dark: '#C62828' }}
+                    }}
+                }}
+            }}
+        }}
+    </script>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+        
+        body {{ 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: #f3f4f6; 
+            color: #1f2937;
+            transition: background-color 0.3s; 
+            padding-bottom: 70px; 
+        }}
+        
+        .dark body {{ background: #111827; color: #f3f4f6; }}
+        
+        .product-card {{ transition: all 0.3s ease; content-visibility: auto; contain-intrinsic-size: 300px; }}
+        .product-card:hover {{ transform: translateY(-5px); box-shadow: 0 15px 30px -10px rgba(229, 57, 53, 0.2); }}
+        
+        .image-zoom img {{ transition: transform 0.5s ease; }}
+        .product-card:hover .image-zoom img {{ transform: scale(1.08); }}
+        
+        .dropdown:hover .dropdown-menu {{ display: block; }}
+        
+        ::-webkit-scrollbar {{ width: 8px; height: 8px; }}
+        ::-webkit-scrollbar-track {{ background: #f1f5f9; }}
+        ::-webkit-scrollbar-thumb {{ background: #E53935; border-radius: 4px; }}
+        
+        .line-clamp-1 {{ display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }}
+        .line-clamp-2 {{ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+        
+        @keyframes float {{ 0%, 100% {{ transform: translateY(0); }} 50% {{ transform: translateY(-15px); }} }}
+        .animate-float {{ animation: float 6s ease-in-out infinite; }}
+        
+        @keyframes pulse-ring {{ 
+            0% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.7); }} 
+            70% {{ box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }} 
+            100% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }} 
+        }}
+        .pulse-ring {{ animation: pulse-ring 2s infinite; }}
+        
+        @keyframes slideIn {{ 
+            from {{ transform: translateY(20px); opacity: 0; }} 
+            to {{ transform: translateY(0); opacity: 1; }} 
+        }}
+        .slide-in {{ animation: slideIn 0.4s ease-out; }}
+        
+        .carousel-track {{ display: flex; transition: transform 0.8s ease; }}
+        .carousel-slide {{ min-width: 100%; box-sizing: border-box; }}
+        
+        .glass {{ background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #1f2937; }}
+        .dark .glass {{ background: rgba(17, 24, 39, 0.95); color: #fff; }}
+        
+        .reveal {{ opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }}
+        .reveal.active {{ opacity: 1; transform: translateY(0); }}
+        
+        .animated-bg {{ 
+            background: linear-gradient(-45deg, #E53935, #C62828, #E53935, #B71C1C); 
+            background-size: 400% 400%; 
+            animation: gradient 15s ease infinite; 
+        }}
+        
+        @keyframes gradient {{ 
+            0% {{ background-position: 0% 50%; }} 
+            50% {{ background-position: 100% 50%; }} 
+            100% {{ background-position: 0% 50%; }} 
+        }}
+    </style>
+    
+    {structured_data}
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', 'G-M4J4YTPZPQ');
+    </script>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)}};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '123456789012345'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
+    /></noscript>
+
+    <script>
+        (function(w,d,s,r,n){{
+            w.TrustpilotObject=n;
+            w[n]=w[n]||function(){{(w[n].q=w[n].q||[]).push(arguments)}};
+            a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;
+            f=d.getElementsByTagName(s)[0];
+            f.parentNode.insertBefore(a,f)
+        }})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+        tp('register', 'H57UbnePwdaPfseb');
+    </script>
+
+    <script>
+        function getCart() {{ 
+            return JSON.parse(localStorage.getItem('asm_cart')) || []; 
+        }}
+        
+        function saveCart(cart) {{ 
+            localStorage.setItem('asm_cart', JSON.stringify(cart)); 
+            updateCartBadge(); 
+        }}
+        
+        function updateCartBadge() {{
+            let cart = getCart();
+            let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+            document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
+        }}
+
+        function addToCart(name, price, image, event) {{
+            if(event) event.stopPropagation();
+            let cart = getCart();
+            let existing = cart.find(item => item.name === name);
+            if (existing) {{ 
+                existing.qty = (existing.qty || 1) + 1; 
+            }}
+            else {{ 
+                cart.push({{name, price: parseFloat(price), image, qty: 1}}); 
+            }}
+            saveCart(cart);
+            showToast('Added to Cart!', 'fa-cart-plus', 'pk');
+            pulseCartIcon();
+        }}
+
+        function removeFromCart(index) {{
+            let cart = getCart();
+            cart.splice(index, 1);
+            saveCart(cart);
+            if (typeof renderCart === 'function') renderCart();
+        }}
+
+        function updateQty(index, delta) {{
+            let cart = getCart();
+            if (!cart[index]) return;
+            cart[index].qty = (cart[index].qty || 1) + delta;
+            if (cart[index].qty < 1) {{ 
+                cart.splice(index, 1); 
+            }}
+            saveCart(cart);
+            if (typeof renderCart === 'function') renderCart();
+        }}
+
+        function buyNow(name, price, image, event) {{
+            if(event) event.stopPropagation();
+            window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
+        }}
+
+        function getWishlist() {{ 
+            return JSON.parse(localStorage.getItem('asm_wishlist')) || []; 
+        }}
+        
+        function toggleWishlist(name, price, image, event) {{
+            if(event) event.stopPropagation();
+            let wishlist = getWishlist();
+            let idx = wishlist.findIndex(item => item.name === name);
+            if (idx > -1) {{ 
+                wishlist.splice(idx, 1); 
+                showToast('Removed from Wishlist', 'fa-heart-broken', 'gray'); 
+            }}
+            else {{ 
+                wishlist.push({{name, price, image}}); 
+                showToast('Added to Wishlist!', 'fa-heart', 'red'); 
+            }}
+            localStorage.setItem('asm_wishlist', JSON.stringify(wishlist));
+            updateWishlistBadge();
+        }}
+        
+        function updateWishlistBadge() {{
+            let wl = getWishlist();
+            document.querySelectorAll('.wishlist-badge').forEach(el => el.innerText = wl.length);
+        }}
+
+        function addToRecentlyViewed(product) {{
+            let recent = JSON.parse(localStorage.getItem('asm_recent')) || [];
+            recent = recent.filter(p => p.slug !== product.slug);
+            recent.unshift(product);
+            recent = recent.slice(0, 10);
+            localStorage.setItem('asm_recent', JSON.stringify(recent));
+        }}
+
+        function showToast(msg, icon='fa-check-circle', color='pk') {{
+            const colors = {{ 
+                pk: 'bg-[#E53935]', 
+                red: 'bg-red-500', 
+                gray: 'bg-gray-600', 
+                green: 'bg-green-500' 
+            }};
+            const toast = document.createElement('div');
+            toast.className = `fixed bottom-20 md:bottom-4 right-4 ${{colors[color]}} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
+            toast.innerHTML = `<i class="fas ${{icon}} text-xl" aria-hidden="true"></i> ${{msg}}`;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {{ 
+                toast.style.opacity = '0'; 
+                toast.style.transform = 'translateY(20px)'; 
+                setTimeout(() => toast.remove(), 300); 
+            }}, 2500);
+        }}
+
+        function pulseCartIcon() {{
+            let cartIcon = document.querySelector('.cart-icon-pulse');
+            if (cartIcon) {{ 
+                cartIcon.classList.add('scale-125'); 
+                setTimeout(() => cartIcon.classList.remove('scale-125'), 200); 
+            }}
+        }}
+
+        let searchLoaded = false;
+        function loadSearchData() {{
+            if(searchLoaded) return;
+            searchLoaded = true;
+            let script = document.createElement('script');
+            script.src = '/search-data.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        }}
+
+        function executeSearch() {{
+            let val = document.getElementById('searchInput').value;
+            if(val.trim() !== "") {{
+                window.location.href = '/index.html?search=' + encodeURIComponent(val);
+            }}
+        }}
+        
+        function handleSearch(e) {{ 
+            if (e.key === 'Enter') executeSearch(); 
+        }}
+
+        function toggleDarkMode() {{
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('asm_dark', document.documentElement.classList.contains('dark'));
+            updateDarkModeIcon();
+        }}
+        
+        function updateDarkModeIcon() {{
+            let isDark = document.documentElement.classList.contains('dark');
+            document.querySelectorAll('.dark-mode-icon').forEach(el => {{
+                el.className = `fas ${{isDark ? 'fa-sun' : 'fa-moon'}} dark-mode-icon`;
+            }});
+        }}
+
+        function scrollTop() {{ 
+            window.scrollTo({{top: 0, behavior: 'smooth'}}); 
+        }}
+
+        function quickView(name, price, image, desc, slug) {{
+            let modal = document.getElementById('quickViewModal');
+            document.getElementById('qvImage').src = image;
+            document.getElementById('qvName').innerText = name;
+            document.getElementById('qvPrice').innerText = "Rs " + price;
+            document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
+            
+            let safeName = name.replace(/'/g, "\\\\'");
+            let safeImage = image.replace(/'/g, "\\\\'");
+            
+            document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${{safeName}}', ${{price}}, '${{safeImage}}', event); closeQuickView();`);
+            document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${{safeName}}', ${{price}}, '${{safeImage}}', event);`);
+            document.getElementById('qvLink').href = '/product/' + slug + '.html';
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }}
+        
+        function closeQuickView() {{
+            document.getElementById('quickViewModal').classList.add('hidden');
+            document.getElementById('quickViewModal').classList.remove('flex');
+        }}
+
+        function toggleMobileCats() {{
+            document.getElementById('mobileCatMenu').classList.toggle('hidden');
+        }}
+
+        window.onload = function() {{
+            updateCartBadge();
+            updateWishlistBadge();
+            
+            if (localStorage.getItem('asm_dark') === 'true') {{
+                document.documentElement.classList.add('dark');
+                updateDarkModeIcon();
+            }}
+            
+            if (!localStorage.getItem('asm_cookie_consent')) {{
+                let cc = document.getElementById('cookieConsent');
+                if(cc) cc.classList.remove('hidden');
+            }}
+            
+            if (!localStorage.getItem('asm_exit_intent')) {{
+                document.addEventListener('mouseleave', function(e) {{
+                    if (e.clientY < 10) {{
+                        let em = document.getElementById('exitModal');
+                        if(em) {{
+                            em.classList.remove('hidden');
+                            em.classList.add('flex');
+                            localStorage.setItem('asm_exit_intent', 'true');
+                        }}
+                    }}
+                }});
+            }}
+            
+            window.addEventListener('scroll', function() {{
+                let btn = document.getElementById('backToTop');
+                if (btn) btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+            }});
+
+            let reveals = document.querySelectorAll('.reveal');
+            function checkReveals() {{
+                reveals.forEach(el => {{
+                    let elTop = el.getBoundingClientRect().top;
+                    if (elTop < window.innerHeight - 50) el.classList.add('active');
+                }});
+            }}
+            window.addEventListener('scroll', checkReveals);
+            checkReveals();
+
+            let searchInput = document.getElementById('searchInput');
+            if(searchInput) {{
+                searchInput.addEventListener('focus', loadSearchData);
+            }}
+            
+            document.addEventListener('click', function(event) {{
+                let menu = document.getElementById('mobileCatMenu');
+                let btn = document.querySelector('[onclick="toggleMobileCats()"]');
+                if (menu && !menu.classList.contains('hidden') && !menu.contains(event.target) && btn && !btn.contains(event.target)) {{
+                    menu.classList.add('hidden');
+                }}
+            }});
+        }};
+    </script>
+</head>
+<body class="text-gray-900 dark:text-gray-100">
+
+    <!-- Top Navigation Bar -->
+    <div class="bg-gray-900 text-white text-xs py-2 hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <span>Welcome to ASM VEO! Fast Delivery & Cash on Delivery Available</span>
+            <div class="flex gap-4 items-center">
+                <button onclick="toggleDarkMode()" class="hover:text-[#E53935]" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon dark-mode-icon" aria-hidden="true"></i>
+                </button>
+                <span class="border-l border-gray-700 pl-4">EN</span>
+                <span class="border-l border-gray-700 pl-4">PKR</span>
+                <a href="/about.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">About</a>
+                <a href="/contact.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">Contact</a>
+                <a href="/blog.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4 font-bold text-yellow-400">Our Blog</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="glass shadow-md sticky top-0 z-50 transition-colors border-b border-gray-100 dark:border-gray-800">
+        
+        <!-- Mobile Category Toggle -->
+        <div class="bg-[#E53935] text-white text-xs md:text-sm py-2 md:hidden">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <a href="/index.html" class="hover:text-gray-300 transition font-semibold">
+                    <i class="fas fa-home mr-1" aria-hidden="true"></i> Home
+                </a>
+                <button onclick="toggleMobileCats()" class="hover:text-gray-300 transition font-semibold focus:outline-none" aria-label="Toggle Mobile Categories">
+                    <i class="fas fa-list mr-1" aria-hidden="true"></i> Categories
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileCatMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+            <div class="container mx-auto px-4 py-2 grid grid-cols-2 gap-2 max-h-60 overflow-y-auto">
+                {cat_links}
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            
+            <!-- 🌟 SEO FIX: Updated Custom Original Logo 🌟 -->
+            <a href="/index.html" class="flex items-center gap-2" aria-label="ASM VEO Home">
+                <img src="/icon.png" alt="ASM VEO Logo" class="h-10 md:h-12 object-contain hover:scale-105 transition-transform rounded">
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-extrabold text-[#E53935] dark:text-white tracking-tight">ASM VEO</span>
+                    <span class="text-[9px] tracking-widest text-gray-600 dark:text-gray-400 font-bold">PAKISTAN</span>
+                </div>
+            </a>
+            
+            <!-- Search Bar -->
+            <div class="flex-1 min-w-[200px] max-w-xl mx-0 md:mx-8 relative flex">
+                <label for="searchInput" class="sr-only">Search products</label>
+                <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, brands, categories..." class="w-full bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 focus:bg-white dark:focus:bg-gray-700 focus:border-[#E53935] rounded-l-xl py-2.5 px-6 outline-none transition-all text-gray-800 dark:text-gray-100 font-semibold shadow-sm text-sm">
+                <button onclick="executeSearch()" aria-label="Search" class="bg-[#E53935] text-white px-6 rounded-r-xl hover:bg-[#C62828] transition-colors flex items-center justify-center">
+                    <i class="fas fa-search text-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            
+            <!-- Icons -->
+            <div class="flex items-center gap-3">
+                <a href="/wishlist.html" class="relative bg-gray-50 text-[#E53935] p-2.5 rounded-xl hover:bg-[#E53935] hover:text-white transition-colors border border-gray-200" aria-label="Wishlist">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    <span class="wishlist-badge absolute -top-2 -right-2 bg-[#E53935] text-white text-xs font-black px-1.5 py-0.5 rounded-full shadow min-w-[20px] text-center">0</span>
+                </a>
+                <a href="/checkout.html" class="cart-icon-pulse relative bg-[#E53935] text-white px-4 py-2.5 rounded-xl font-bold hover:bg-[#C62828] transition-colors shadow-sm flex items-center gap-2 text-sm" aria-label="Go to Cart">
+                    <i class="fas fa-shopping-cart text-lg" aria-hidden="true"></i>
+                    <span class="hidden md:inline">Cart</span>
+                    <span class="cart-badge absolute -top-2 -right-2 bg-gray-900 text-white text-xs font-black px-1.5 py-0.5 rounded-full shadow min-w-[20px] text-center">0</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:block border-t border-gray-100 dark:border-gray-800">
+            <div class="container mx-auto px-4 flex items-center gap-6">
+                <div class="relative dropdown z-50">
+                    <button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-list" aria-hidden="true"></i> All Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu absolute hidden text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-200 shadow-2xl rounded-b-xl mt-0 w-56 py-2 border border-gray-100 dark:border-gray-700 max-h-96 overflow-y-auto">
+                        {cat_links}
+                    </div>
+                </div>
+                <a href="/index.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Home</a>
+                <a href="/index.html#products" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Shop</a>
+                <a href="/about.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">About Us</a>
+                <a href="/contact.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Contact Us</a>
+                <a href="/blog.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition text-[#007BFF]">Blog</a>
+                <a href="/faq.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">FAQ</a>
+                <div class="ml-auto text-xs font-bold text-gray-600 dark:text-gray-400">
+                    <i class="fas fa-phone mr-1 text-[#E53935]" aria-hidden="true"></i> 0342 54 786 83
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-2xl border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-50">
+        <a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold">
+            <i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home
+        </a>
+        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories">
+            <i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories
+        </button>
+        <a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
+            <i class="fas fa-shopping-cart text-lg mb-1" aria-hidden="true"></i> Cart
+            <span class="cart-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
+        </a>
+        <a href="/wishlist.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
+            <i class="fas fa-heart text-lg mb-1" aria-hidden="true"></i> Wishlist
+            <span class="wishlist-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
+        </a>
+    </nav>
+
+    <!-- Modals -->
+    <div id="exitModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
+        <div class="bg-white dark:bg-gray-800 rounded-3xl p-8 max-w-md w-full text-center relative slide-in">
+            <button onclick="document.getElementById('exitModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white" aria-label="Close Modal">
+                <i class="fas fa-times text-xl" aria-hidden="true"></i>
+            </button>
+            <i class="fas fa-gift text-6xl text-[#E53935] mb-4" aria-hidden="true"></i>
+            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Wait! Here's 10% OFF</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">Don't leave empty-handed. Use this code at checkout for an instant 10% discount on your order!</p>
+            <div class="bg-gray-50 border-2 border-dashed border-[#E53935] rounded-xl py-4 mb-6">
+                <span class="text-3xl font-black text-[#E53935] tracking-widest">ASM10</span>
+            </div>
+            <a href="/index.html#products" onclick="document.getElementById('exitModal').classList.add('hidden')" class="block bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition">
+                Continue Shopping
+            </a>
+        </div>
+    </div>
+
+    <div id="quickViewModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4">
+        <div class="bg-white dark:bg-gray-800 rounded-3xl max-w-3xl w-full overflow-hidden relative slide-in flex flex-col md:flex-row">
+            <button onclick="closeQuickView()" class="absolute top-4 right-4 bg-white/80 rounded-full p-2 text-gray-700 hover:bg-white z-10" aria-label="Close Quick View">
+                <i class="fas fa-times text-xl" aria-hidden="true"></i>
+            </button>
+            <div class="md:w-1/2 bg-gray-50 dark:bg-gray-900 p-4 flex items-center justify-center">
+                <img id="qvImage" src="" alt="Quick View Product Image" class="max-h-[300px] object-contain rounded-xl" width="300" height="300" loading="lazy" decoding="async">
+            </div>
+            <div class="md:w-1/2 p-6 flex flex-col">
+                <h2 id="qvName" class="text-xl font-extrabold text-gray-900 dark:text-white mb-2"></h2>
+                <p id="qvPrice" class="text-2xl font-black text-[#E53935] dark:text-white mb-3"></p>
+                <p id="qvDesc" class="text-sm text-gray-600 dark:text-gray-400 mb-6"></p>
+                <div class="mt-auto flex flex-col gap-2">
+                    <button id="qvAddCart" class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center justify-center gap-2">
+                        <i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+                    </button>
+                    <button id="qvBuyNow" class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition flex items-center justify-center gap-2">
+                        <i class="fas fa-bolt" aria-hidden="true"></i> Buy Now
+                    </button>
+                    <a id="qvLink" href="#" class="text-center text-sm text-[#E53935] hover:underline mt-2 font-semibold">
+                        View Full Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Actions -->
+    <a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20know%20about%20your%20products" target="_blank" 
+       class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all z-50 hover:scale-110 pulse-ring" 
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i>
+    </a>
+
+    <button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#E53935] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#C62828] transition z-50" aria-label="Back to top">
+        <i class="fas fa-arrow-up text-xl" aria-hidden="true"></i>
+    </button>
+
+    <main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl">
+"""
 <html lang="en">
 <head>
     <meta charset="UTF-8">
