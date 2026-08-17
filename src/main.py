@@ -570,6 +570,33 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </script>
         """
         
+        <!-- 🌟 SEO FIX: Product FAQ Schema added automatically 🌟 -->
+        <script type="application/ld+json">
+        {{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {{
+              "@type": "Question",
+              "name": "Is {safe_schema_name} original and genuine?",
+              "acceptedAnswer": {{
+                "@type": "Answer",
+                "text": "Yes! We source 100% genuine products directly from authorized distributors in Pakistan. Every product is quality-checked before dispatch."
+              }}
+            }},
+            {{
+              "@type": "Question",
+              "name": "What is the delivery time for {safe_schema_name}?",
+              "acceptedAnswer": {{
+                "@type": "Answer",
+                "text": "Delivery takes 2-4 business days across Pakistan. Major cities like Talagang, Karachi, Lahore, and Islamabad receive faster delivery."
+              }}
+            }}
+          ]
+        }}
+        </script>
+        """
+        
         # 🌟 SEO FIX: Product FAQ Schema added automatically 🌟
         structured_data += f"""
         <script type="application/ld+json">
