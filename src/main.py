@@ -143,11 +143,10 @@ def map_daraz_keyword(product_name):
 # EXTERNAL CSV KEYWORDS MATCHER (SMART SEO)
 # ==============================================================================
 def load_external_keywords():
-    """Reads all SEO CSV files robustly, handling different encodings and Semrush formats."""
+    """Reads SEO CSV files. Handles Semrush hidden columns automatically."""
     print("📈 Loading External SEO Keywords from CSV files...")
     all_kws = []
     
-    # Root aur src dono folders mein check kar le ga
     files = glob.glob("keywords/*.csv") + glob.glob("src/keywords/*.csv")
     
     if not files:
@@ -156,33 +155,24 @@ def load_external_keywords():
         
     for file in files:
         try:
-            # utf-8-sig lagane se hidden BOM characters automatically ignore ho jayenge
             with open(file, mode='r', encoding='utf-8-sig', errors='ignore') as f:
                 reader = csv.reader(f)
-                headers = None
-                kw_index = -1
                 count = 0
-                
                 for row in reader:
-                    if not row: continue
+                    if len(row) < 2: continue
                     
-                    # 1. Sab se pehle Keyword wala column dhoondein
-                    if headers is None:
-                        for i, col in enumerate(row):
-                            if 'keyword' in str(col).lower():
-                                headers = row
-                                kw_index = i
-                                break
+                    # Semrush Header ko skip karein
+                    if 'keyword' in str(row[0]).lower() or 'keyword' in str(row[1]).lower():
                         continue
+                        
+                    # 🌟 Semrush CSV Fix: Agar pehla column khali hai to doosra (index 1) utha le 🌟
+                    val = str(row[0]).strip() if str(row[0]).strip() else str(row[1]).strip()
                     
-                    # 2. Phir us column ka data extract karein
-                    if kw_index != -1 and len(row) > kw_index:
-                        val = str(row[kw_index]).strip()
-                        if val:
-                            all_kws.append(val)
-                            count += 1
-                            
-                print(f"✔️ {file}: {count} keywords loaded.")
+                    if val:
+                        all_kws.append(val)
+                        count += 1
+                        
+            print(f"✔️ {file}: {count} keywords loaded.")
         except Exception as e:
             print(f"❌ Error reading {file}: {e}")
             
