@@ -1286,17 +1286,39 @@ def generate_static_pages(categories_list):
         "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
         "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl text-center"><h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1><p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div>"""),
-        "404.html": ("Redirecting...", """
+        "404.html": ("Finding Product...", """
         <!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Redirecting | ASM VEO</title>
+            <title>Finding Your Product | ASM VEO</title>
             <script>
-                // 🌟 SUPER SMART 404 CATCH-ALL REDIRECT 🌟
-                // Yeh script kisi bhi 3000+ dead links ko foran Homepage par redirect kar dega
-                window.location.replace("https://www.asmveo.com/index.html");
+                // 🌟 INTELLIGENT 404 REDIRECT (Search Fallback) 🌟
+                // Yeh script broken link se product ka naam nikal kar auto-search karegi
+                
+                let path = window.location.pathname;
+                
+                // 1. Link mein se fuzool cheezein (product, collection waghera) nikal dein
+                let cleanPath = path.toLowerCase()
+                    .replace('/product/', '')
+                    .replace('/collections/', '')
+                    .replace('/category/', '')
+                    .replace('/pages/', '')
+                    .replace('.html', '');
+                    
+                // 2. Aakhir mein jo product ID hoti hai (jaise -7822), usy hata dein
+                cleanPath = cleanPath.replace(/-[0-9]+$/, '');
+                
+                // 3. Dashes (-) ko spaces mein badal dein ta k search query ban jaye
+                let query = cleanPath.split('-').join(' ').trim();
+                
+                // 4. Agar query valid hai to auto-search pe bhejein, warna homepage pe
+                if (query.length > 2 && query !== 'all') {
+                    window.location.replace("https://www.asmveo.com/index.html?search=" + encodeURIComponent(query));
+                } else {
+                    window.location.replace("https://www.asmveo.com/index.html");
+                }
             </script>
             <link rel="preconnect" href="https://cdn.tailwindcss.com">
             <script src="https://cdn.tailwindcss.com"></script>
@@ -1304,9 +1326,9 @@ def generate_static_pages(categories_list):
         <body class="bg-gray-50 flex items-center justify-center min-h-screen">
             <div class="text-center">
                 <div class="w-16 h-16 border-4 border-[#E53935] border-t-transparent rounded-full animate-spin mx-auto mb-6"></div>
-                <h1 class="text-2xl font-black text-gray-900 mb-2">Finding the best products for you...</h1>
-                <p class="text-gray-500 font-semibold mb-6">Please wait, you are being redirected securely.</p>
-                <a href="https://www.asmveo.com/index.html" class="text-sm text-blue-600 underline">Click here if not redirected automatically</a>
+                <h1 class="text-2xl font-black text-gray-900 mb-2">Looking for your item...</h1>
+                <p class="text-gray-500 font-semibold mb-6">We are finding the best match for you.</p>
+                <a href="https://www.asmveo.com/index.html" class="text-sm text-blue-600 underline">Go to Homepage</a>
             </div>
         </body>
         </html>
