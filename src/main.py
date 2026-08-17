@@ -3,6 +3,7 @@ import csv
 import urllib.request
 import urllib.error
 import concurrent.futures
+import pandas as pd
 import math
 import re
 import shutil
@@ -139,7 +140,61 @@ def map_daraz_keyword(product_name):
         if core_word in p_name:
             return keyword
     return None
+# ==============================================================================
+# EXTERNAL CSV KEYWORDS MATCHER (SMART SEO)
+# ==============================================================================
+def load_external_keywords():
+    """Reads all SEO CSV files from the 'keywords' folder and extracts clean keywords."""
+    print("📈 Loading External SEO Keywords from CSV files...")
+    all_kws = []
+    files = glob.glob("keywords/*.csv")
+    
+    if not files:
+        print("⚠️ No CSV files found in 'keywords' folder. Skipping external SEO.")
+        return []
+        
+    for file in files:
+        try:
+            df = pd.read_csv(file)
+            if 'Keyword' in df.columns:
+                all_kws.extend(df['Keyword'].dropna().tolist())
+        except Exception as e:
+            print(f"Error reading {file}: {e}")
+            
+    blocked_words = ['daraz', 'aliexpress', 'amazon', 'olx', 'xnxx', 'sex', 'porn', 'xxx', 'xnx']
+    clean_kws = []
+    
+    for kw in all_kws:
+        kw = str(kw).lower().strip()
+        if kw and not any(bw in kw for bw in blocked_words):
+            clean_kws.append(kw)
+            
+    clean_kws = list(set(clean_kws))
+    print(f"✅ Extracted {len(clean_kws)} clean, highly-ranked SEO keywords without competitor names!")
+    return clean_kws
 
+EXTERNAL_SEO_KEYWORDS = load_external_keywords()
+
+def map_seo_keywords_to_product(product_name, category):
+    """Finds best matching external keywords for a specific product."""
+    if not EXTERNAL_SEO_KEYWORDS:
+        return []
+        
+    matched_kws = []
+    p_name_lower = product_name.lower()
+    cat_lower = category.lower()
+    
+    for kw in EXTERNAL_SEO_KEYWORDS:
+        kw_core = kw.replace('price in pakistan', '').replace('online', '').strip()
+        kw_words = set(kw_core.split())
+        product_words = set(p_name_lower.split())
+        
+        if len(kw_words.intersection(product_words)) >= 1 or kw_core in cat_lower:
+            matched_kws.append(kw)
+            if len(matched_kws) >= 3: 
+                break
+                
+    return matched_kws
 # ==============================================================================
 # 2000 NAMES DATABASE
 # ==============================================================================
@@ -215,16 +270,19 @@ def make_slug(text):
     GENERATED_SLUGS.add(slug)
     return slug
 
-def local_seo_desc(name, desc, daraz_kw=None):
+def local_seo_desc(name, desc, daraz_kw=None, external_kws=None):
     if daraz_kw:
         base_desc = f"Looking for {daraz_kw}? Buy original {name} online in Pakistan. "
     else:
         base_desc = f"Buy {name} online in Pakistan at best price. "
         
+    if external_kws and len(external_kws) > 0:
+        kws_joined = ", ".join(external_kws)
+        base_desc += f"Top searches include: {kws_joined}. "
+        
     trending_keys = fetch_trending_keywords()
     keys_str = ", ".join(random.sample(trending_keys, 2))
     
-    # 🌟 GEO FIX: Semantic Chunking & Hard Numbers for AI models 🌟
     geo_stat = random.choice([
         "Trusted by 10,000+ verified customers.", 
         "98% positive reviews from buyers.", 
@@ -233,7 +291,7 @@ def local_seo_desc(name, desc, daraz_kw=None):
     ])
     
     full_desc = base_desc + f"{keys_str}. Premium quality with Cash on Delivery, fast shipping & easy returns from ASM VEO. {geo_stat}"
-    return full_desc[:155]
+    return full_desc[:160]
 
 def check_valid_image(prod):
     try:
@@ -1763,11 +1821,14 @@ def process_woocommerce_csv():
             category = cat_raw.split(',')[0].strip() if cat_raw else 'Exclusive Collection'
             categories_set.add(category)
             
-            # 🌟 DARAZ KEYWORD INJECTION 🌟
+           # 🌟 DARAZ KEYWORD INJECTION 🌟
             daraz_kw = map_daraz_keyword(name)
             
+            # 🌟 NEW: External CSV Keywords matching 🌟
+            csv_keywords = map_seo_keywords_to_product(name, category)
+            
             clean_description = clean_html(row.get('Short description', '') or row.get('Description', ''))
-            seo_desc = local_seo_desc(name, clean_description, daraz_kw)
+            seo_desc = local_seo_desc(name, clean_description, daraz_kw, csv_keywords)
             
             product_id = row.get('ID', str(len(products_list)+1))
             slug = make_slug(name) + f"-{product_id}"
