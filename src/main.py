@@ -181,6 +181,29 @@ def load_external_keywords():
     return clean_kws
 
 EXTERNAL_SEO_KEYWORDS = load_external_keywords()
+
+def map_seo_keywords_to_product(product_name, category):
+    """Finds best matching external keywords for a specific product."""
+    if not EXTERNAL_SEO_KEYWORDS:
+        return []
+        
+    matched_kws = []
+    p_name_lower = product_name.lower()
+    cat_lower = category.lower()
+    
+    for kw in EXTERNAL_SEO_KEYWORDS:
+        # Keyword ke alfaaz ko alag alag kar ke match karein
+        kw_core = kw.replace('price in pakistan', '').replace('online', '').strip()
+        kw_words = set(kw_core.split())
+        product_words = set(p_name_lower.split())
+        
+        # Agar keyword ka koi bhi lafz product ke naam ya category se match karta hai to add kar lo
+        if len(kw_words.intersection(product_words)) >= 1 or kw_core in cat_lower:
+            matched_kws.append(kw)
+            if len(matched_kws) >= 3: # Har product ke liye 3 best keywords kafi hain
+                break
+                
+    return matched_kws
 # ==============================================================================
 # 2000 NAMES DATABASE
 # ==============================================================================
