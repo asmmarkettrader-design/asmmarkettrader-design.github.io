@@ -1244,63 +1244,135 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         transition: background-color 0.3s;
         padding-bottom: 70px;
     }}
+    
+    .dark body {{ 
+        background: #111827; 
+        color: #f3f4f6; 
+    }}
+    
+    .product-card {{ 
+        transition: all 0.3s ease; 
+        content-visibility: auto; 
+        contain-intrinsic-size: 300px; 
+    }}
+    
+    .product-card:hover {{ 
+        transform: translateY(-5px); 
+        box-shadow: 0 15px 30px -10px rgba(229, 57, 53, 0.2); 
+    }}
+    
+    .image-zoom img {{ 
+        transition: transform 0.5s ease; 
+    }}
+    
+    .product-card:hover .image-zoom img {{ 
+        transform: scale(1.08); 
+    }}
+    
+    .dropdown:hover .dropdown-menu {{ 
+        display: block; 
+    }}
+    
+    ::-webkit-scrollbar {{ 
+        width: 8px; 
+        height: 8px; 
+    }}
+    
+    ::-webkit-scrollbar-track {{ 
+        background: #f1f5f9; 
+    }}
+    
+    ::-webkit-scrollbar-thumb {{ 
+        background: #E53935; 
+        border-radius: 4px; 
+    }}
+    
+    .line-clamp-1 {{ 
+        display: -webkit-box; 
+        -webkit-line-clamp: 1; 
+        -webkit-box-orient: vertical; 
+        overflow: hidden; 
+    }}
+    
+    .line-clamp-2 {{ 
+        display: -webkit-box; 
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical; 
+        overflow: hidden; 
+    }}
+    
+    @keyframes float {{ 
+        0%, 100% {{ transform: translateY(0); }} 
+        50% {{ transform: translateY(-15px); }} 
+    }}
+    
+    .animate-float {{ 
+        animation: float 6s ease-in-out infinite; 
+    }}
+    
+    @keyframes pulse-ring {{ 
+        0% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.7); }} 
+        70% {{ box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }} 
+        100% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }} 
+    }}
+    
+    .pulse-ring {{ 
+        animation: pulse-ring 2s infinite; 
+    }}
+    
+    @keyframes slideIn {{ 
+        from {{ transform: translateY(20px); opacity: 0; }} 
+        to {{ transform: translateY(0); opacity: 1; }} 
+    }}
+    
+    .slide-in {{ 
+        animation: slideIn 0.4s ease-out; 
+    }}
+    
+    .carousel-track {{ 
+        display: flex; 
+        transition: transform 0.8s ease; 
+    }}
+    
+    .carousel-slide {{ 
+        min-width: 100%; 
+        box-sizing: border-box; 
+    }}
+    
+    .glass {{ 
+        background: rgba(255, 255, 255, 0.95); 
+        backdrop-filter: blur(10px); 
+        color: #1f2937; 
+    }}
+    
+    .dark .glass {{ 
+        background: rgba(17, 24, 39, 0.95); 
+        color: #fff; 
+    }}
+    
+    .reveal {{ 
+        opacity: 0; 
+        transform: translateY(40px); 
+        transition: all 0.8s ease; 
+    }}
+    
+    .reveal.active {{ 
+        opacity: 1; 
+        transform: translateY(0); 
+    }}
+    
+    .animated-bg {{ 
+        background: linear-gradient(-45deg, #E53935, #C62828, #E53935, #B71C1C); 
+        background-size: 400% 400%; 
+        animation: gradient 15s ease infinite; 
+    }}
+    
+    @keyframes gradient {{ 
+        0% {{ background-position: 0% 50%; }} 
+        50% {{ background-position: 100% 50%; }} 
+        100% {{ background-position: 0% 50%; }} 
+    }}
 </style>
-"""
-        
-        .dark body {{ background: #111827; color: #f3f4f6; }}
-        
-        .product-card {{ transition: all 0.3s ease; content-visibility: auto; contain-intrinsic-size: 300px; }}
-        .product-card:hover {{ transform: translateY(-5px); box-shadow: 0 15px 30px -10px rgba(229, 57, 53, 0.2); }}
-        
-        .image-zoom img {{ transition: transform 0.5s ease; }}
-        .product-card:hover .image-zoom img {{ transform: scale(1.08); }}
-        
-        .dropdown:hover .dropdown-menu {{ display: block; }}
-        
-        ::-webkit-scrollbar {{ width: 8px; height: 8px; }}
-        ::-webkit-scrollbar-track {{ background: #f1f5f9; }}
-        ::-webkit-scrollbar-thumb {{ background: #E53935; border-radius: 4px; }}
-        
-        .line-clamp-1 {{ display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }}
-        .line-clamp-2 {{ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
-        
-        @keyframes float {{ 0%, 100% {{ transform: translateY(0); }} 50% {{ transform: translateY(-15px); }} }}
-        .animate-float {{ animation: float 6s ease-in-out infinite; }}
-        
-        @keyframes pulse-ring {{ 
-            0% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.7); }} 
-            70% {{ box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }} 
-            100% {{ box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }} 
-        }}
-        .pulse-ring {{ animation: pulse-ring 2s infinite; }}
-        
-        @keyframes slideIn {{ 
-            from {{ transform: translateY(20px); opacity: 0; }} 
-            to {{ transform: translateY(0); opacity: 1; }} 
-        }}
-        .slide-in {{ animation: slideIn 0.4s ease-out; }}
-        
-        .carousel-track {{ display: flex; transition: transform 0.8s ease; }}
-        .carousel-slide {{ min-width: 100%; box-sizing: border-box; }}
-        
-        .glass {{ background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #1f2937; }}
-        .dark .glass {{ background: rgba(17, 24, 39, 0.95); color: #fff; }}
-        
-        .reveal {{ opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }}
-        .reveal.active {{ opacity: 1; transform: translateY(0); }}
-        
-        .animated-bg {{ 
-            background: linear-gradient(-45deg, #E53935, #C62828, #E53935, #B71C1C); 
-            background-size: 400% 400%; 
-            animation: gradient 15s ease infinite; 
-        }}
-        
-        @keyframes gradient {{ 
-            0% {{ background-position: 0% 50%; }} 
-            50% {{ background-position: 100% 50%; }} 
-            100% {{ background-position: 0% 50%; }} 
-        }}
-    </style>
     
     {structured_data}
     
