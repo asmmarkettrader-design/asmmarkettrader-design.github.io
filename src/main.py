@@ -1233,16 +1233,19 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
-        
-        body {{ 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background: #f3f4f6; 
-            color: #1f2937;
-            transition: background-color 0.3s; 
-            padding-bottom: 70px; 
-        }}
+    html = f"""
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+    body {{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: #f3f4f6;
+        color: #1f2937;
+        transition: background-color 0.3s;
+        padding-bottom: 70px;
+    }}
+</style>
+"""
         
         .dark body {{ background: #111827; color: #f3f4f6; }}
         
