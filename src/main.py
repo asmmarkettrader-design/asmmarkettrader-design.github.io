@@ -713,7 +713,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             background-size: 400% 400%; 
             animation: gradient 15s ease infinite; 
         }}
-        
+    
         @keyframes gradient {{ 
             0% {{ background-position: 0% 50%; }} 
             50% {{ background-position: 100% 50%; }} 
