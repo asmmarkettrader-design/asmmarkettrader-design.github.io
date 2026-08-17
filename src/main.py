@@ -1167,13 +1167,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </button>
 
     <main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl">
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>{safe_title} | ASM VEO</title>
-    
     <meta name="title" content="{safe_title} | ASM VEO">
     <meta name="description" content="{safe_desc}">
     <meta name="keywords" content="buy {safe_title} in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO">
@@ -1233,7 +1226,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
     
-    html = f"""
+    
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
 
@@ -1244,18 +1237,18 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         transition: background-color 0.3s;
         padding-bottom: 70px;
     }}
-    
-    .dark body {{ 
-        background: #111827; 
-        color: #f3f4f6; 
+
+    .dark body {{
+        background: #111827;
+        color: #f3f4f6;
     }}
-    
-    .product-card {{ 
-        transition: all 0.3s ease; 
-        content-visibility: auto; 
-        contain-intrinsic-size: 300px; 
+
+    .product-card {{
+        transition: all 0.3s ease;
+        content-visibility: auto;
+        contain-intrinsic-size: 300px;
     }}
-    
+</style>
     .product-card:hover {{ 
         transform: translateY(-5px); 
         box-shadow: 0 15px 30px -10px rgba(229, 57, 53, 0.2); 
