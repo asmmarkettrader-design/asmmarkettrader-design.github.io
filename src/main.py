@@ -1286,7 +1286,31 @@ def generate_static_pages(categories_list):
         "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
         "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl text-center"><h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1><p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div>"""),
-        "404.html": ("Page Not Found", """<div class="container mx-auto px-4 py-20 text-center"><div class="max-w-lg mx-auto"><div class="text-9xl font-black text-[#E53935] mb-4">404</div><h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Oops! Page Not Found</h1><p class="text-gray-600 dark:text-gray-400 mb-8">The page you're looking for doesn't exist.</p><a href="/index.html" class="inline-block bg-[#E53935] text-white px-8 py-3 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg"><i class="fas fa-home mr-2"></i> Go Home</a></div></div>"""),
+        "404.html": ("Redirecting...", """
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Redirecting | ASM VEO</title>
+            <script>
+                // 🌟 SUPER SMART 404 CATCH-ALL REDIRECT 🌟
+                // Yeh script kisi bhi 3000+ dead links ko foran Homepage par redirect kar dega
+                window.location.replace("https://www.asmveo.com/index.html");
+            </script>
+            <link rel="preconnect" href="https://cdn.tailwindcss.com">
+            <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+        <body class="bg-gray-50 flex items-center justify-center min-h-screen">
+            <div class="text-center">
+                <div class="w-16 h-16 border-4 border-[#E53935] border-t-transparent rounded-full animate-spin mx-auto mb-6"></div>
+                <h1 class="text-2xl font-black text-gray-900 mb-2">Finding the best products for you...</h1>
+                <p class="text-gray-500 font-semibold mb-6">Please wait, you are being redirected securely.</p>
+                <a href="https://www.asmveo.com/index.html" class="text-sm text-blue-600 underline">Click here if not redirected automatically</a>
+            </div>
+        </body>
+        </html>
+        """),
         "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div></div>
         <script>
         function renderWishlist() {
