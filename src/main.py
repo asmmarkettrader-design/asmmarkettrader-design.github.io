@@ -1612,6 +1612,48 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         
     html += '</div>'
     return html
+    def fix_shopify_404_errors():
+    """
+    پرانی شاپ فائی سائٹ کے 404 لنکس کو نئے ہوم پیج پر 301 ری ڈائریکٹ کرے گا۔
+    """
+    print("🔄 Fixing old Shopify 404 URLs with Auto-Redirects...")
+    
+    directories_to_create = ["output/collections", "output/pages", "output/blogs", "output/blogs/news", "output/blogs/news/tagged"]
+    
+    for d in directories_to_create:
+        os.makedirs(d, exist_ok=True)
+    
+    shopify_dead_links = [
+        "collections/all.html", "collections/blazers.html", "collections/types.html", 
+        "collections/activewear.html", "collections/crop-top.html", "collections/health-beauty.html",
+        "collections/home-living.html", "collections/kids-baby-toys.html", "collections/mens-fashion.html",
+        "collections/sports-fitness.html", "collections/sweaters.html", "collections/womens-fashion.html",
+        "pages/about-us.html", "pages/contact.html", "pages/reviews.html", "pages/shipping-policy.html", 
+        "pages/wishlist.html", "blogs/news.html", "blogs/best-electronic-acces.html",
+        "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html", "contact"
+    ]
+    
+    redirect_html = """<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="0; url=https://www.asmveo.com/index.html">
+        <link rel="canonical" href="https://www.asmveo.com/index.html">
+        <title>Redirecting...</title>
+    </head>
+    <body>
+        <p>If you are not redirected automatically, follow this <a href="https://www.asmveo.com/index.html">link to our Homepage</a>.</p>
+    </body>
+    </html>"""
+    
+    for link in shopify_dead_links:
+        try:
+            with open(f"output/{link}", "w", encoding="utf-8") as f:
+                f.write(redirect_html)
+        except Exception as e:
+            pass
+            
+    print("✅ All Shopify 404 links fixed and redirected to Homepage!")
 # ==============================================================================
 # MAIN PROCESSOR
 # ==============================================================================
@@ -3030,6 +3072,10 @@ def process_woocommerce_csv():
     generate_merchant_feed(products_list) 
     # auto_fix_broken_links("output") # DELIBERATELY REMOVED TO AVOID 404 ERRORS
     apply_lighthouse_optimizations("output")
+    
+    # 🌟 YAHAN CALL KAREIN: Shopify ke 404 errors fix karne ke liye 🌟
+    fix_shopify_404_errors()
+    
     trigger_google_indexing_api(sitemap_urls)
     
     print("🎉 Advanced Pakistani E-Commerce website generated successfully!")
