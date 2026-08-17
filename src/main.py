@@ -1167,7 +1167,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </button>
 
     <main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl">
-"""
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
