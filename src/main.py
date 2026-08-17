@@ -12,6 +12,31 @@ import urllib.parse
 import glob
 import time
 from datetime import datetime, timedelta
+
+# ===== ASM VEO ADVANCED SHOPPING ENGINE: PHASES 1-9 =====
+PAKISTAN_DELIVERY_ZONES = {'Karachi': (250, 2, 3), 'Lahore': (250, 2, 3), 'Islamabad': (250, 2, 3), 'Rawalpindi': (250, 2, 3), 'Faisalabad': (250, 2, 4), 'Multan': (250, 2, 4), 'Gujranwala': (250, 2, 4), 'Sialkot': (250, 2, 4), 'Peshawar': (300, 3, 5), 'Quetta': (350, 4, 6), 'Hyderabad': (250, 2, 4), 'Bahawalpur': (300, 3, 5), 'Sargodha': (300, 3, 5), 'Sukkur': (300, 3, 5), 'Larkana': (300, 3, 5), 'Sheikhupura': (250, 2, 4), 'Mardan': (300, 3, 5), 'Abbottabad': (300, 3, 5), 'Mansehra': (300, 3, 5), 'Haripur': (300, 3, 5), 'Nowshera': (300, 3, 5), 'Swat': (350, 4, 6), 'Dir': (350, 4, 6), 'Chitral': (400, 5, 7), 'Bannu': (350, 4, 6), 'Charsadda': (300, 3, 5), 'Muzaffarabad': (350, 4, 6), 'Mirpur': (300, 3, 5), 'Kotli': (350, 4, 6), 'Bhimber': (350, 4, 6)}
+
+def delivery_info_for_city(city):
+    c=PAKISTAN_DELIVERY_ZONES.get(city,(300,3,6)); return {"charge":c[0],"min_days":c[1],"max_days":c[2]}
+
+def infer_brand(product_name):
+    known=['Apple','Samsung','Vivo','Oppo','Xiaomi','Realme','Huawei','Sony','JBL','Anker','Arabiyat','Himalaya','Dove','Golden Pearl','Fitron','Nutella','Buldak','Pokemon']
+    low=product_name.lower(); return next((b for b in known if b.lower() in low),'ASM VEO')
+
+def smart_related_products(products,current,limit=6):
+    ct=set(re.findall(r'[a-z0-9]+',current.get('name','').lower())); cc=current.get('category','').lower(); scored=[]
+    for p in products:
+        if p.get('slug')==current.get('slug'): continue
+        pt=set(re.findall(r'[a-z0-9]+',p.get('name','').lower())); score=12 if p.get('category','').lower()==cc else 0
+        score += min(6,len(ct & pt)*3)
+        try:
+            gap=abs(float(p.get('final_price',0))-float(current.get('final_price',0)))/max(float(current.get('final_price',1)),1)
+            score += 5 if gap<=.20 else 2 if gap<=.40 else 0
+        except Exception: pass
+        if p.get('daraz_kw') and p.get('daraz_kw')==current.get('daraz_kw'): score+=4
+        scored.append((score,p))
+    scored.sort(key=lambda x:(-x[0],x[1].get('name','').lower())); return [p for _,p in scored[:limit]]
+
 def fix_shopify_404_errors_safe():
     print("🔄 Fixing old Shopify 404 URLs with Auto-Redirects...")
     import os
@@ -29,7 +54,7 @@ def fix_shopify_404_errors_safe():
         "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html"
     ]
     
-    redirect_html = "<!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv='refresh' content='0; url=https://www.asmveo.com/index.html'><title>Redirecting...</title></head><body><script>window.location.href='https://www.asmveo.com/index.html';</script></body></html>"
+    redirect_html = "<!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv='refresh' content='0; url=/404.html'><title>Finding your product...</title></head><body><script>window.location.replace('/404.html');</script></body></html>"
     
     for link in shopify_dead_links:
         try:
@@ -58,15 +83,11 @@ def fetch_trending_keywords():
     return trending_keywords
 
 def trigger_google_indexing_api(urls):
-    """
-    Triggers Google Indexing API to request immediate crawling of new URLs.
-    """
-    print(f"📡 Pinging Google Indexing API for {len(urls)} URLs...")
-    batch_size = 100
-    for i in range(0, len(urls), batch_size):
-        batch = urls[i:i+batch_size]
-        time.sleep(0.1) 
-    print("✅ Google Indexing API triggered successfully. URLs queued for immediate crawl.")
+    os.makedirs("output",exist_ok=True)
+    with open("output/google-indexing-queue.txt","w",encoding="utf-8") as f:
+        f.write("# Submit these URLs via Google Search Console or an authenticated API workflow.\n")
+        for url in urls: f.write(url+"\n")
+    print(f"📡 Prepared {len(urls)} URLs for Google crawl submission.")
 
 def auto_fix_broken_links(output_dir="output"):
     """
@@ -490,7 +511,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
           "description": "{safe_schema_desc}",
           "sku": "ASM-{product_data['id']}",
           "mpn": "ASM-{product_data['id']}",
-          "brand": {{ "@type": "Brand", "name": "ASM VEO" }},
+          "brand": {{ "@type": "Brand", "name": "{product_data.get('brand', 'ASM VEO')}" }},
+          "category": "{product_data.get('category', 'Online Shopping')}",
+          "url": "{canonical_url}",
           "offers": {{
             "@type": "Offer",
             "priceCurrency": "PKR",
@@ -536,11 +559,6 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
               }}
             }}
           }},
-          "aggregateRating": {{
-            "@type": "AggregateRating",
-            "ratingValue": "{product_data.get('rating', 4.5)}",
-            "reviewCount": "{product_data.get('review_count', 10)}"
-          }}
         }}
         </script>
         
@@ -598,7 +616,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     
     <meta name="title" content="{safe_title} | ASM VEO">
     <meta name="description" content="{safe_desc}">
-    <meta name="keywords" content="buy {safe_title} in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO">
+    <meta name="keywords" content="buy {safe_title} in Pakistan, {safe_title} price in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#E53935">
@@ -882,6 +900,17 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             panel.classList.remove('hidden');
         }}
         function hideSearchSuggestions() {{ let p=document.getElementById('searchSuggestions'); if(p) setTimeout(()=>p.classList.add('hidden'),180); }}
+        function smartSearchResults(query) {{
+            query=String(query||'').toLowerCase().trim(); if(!query) return [];
+            const synonyms={{mobile:'smartphone',phone:'mobile',earbuds:'earphone',perfume:'fragrance',ladies:'women',men:'mens',laptop:'computer'}};
+            const terms=query.split(/\s+/).map(t=>synonyms[t]||t);
+            function sim(a,b){{if(a===b)return 1;if(a.includes(b)||b.includes(a))return .8;return 0;}}
+            return (typeof searchIndex==='undefined'?[]:searchIndex.map(p=>{{
+                let hay=(p.name+' '+p.category+' '+(p.brand||'')).toLowerCase(),score=0;
+                terms.forEach(t=>{{if(hay.includes(t))score+=10;else hay.split(/\s+/).forEach(w=>score+=Math.round(sim(t,w)*3));}});
+                if(hay.includes(query))score+=20; return {{p,score}};
+            }}).filter(x=>x.score>=4).sort((a,b)=>b.score-a.score).map(x=>x.p));
+        }}
 
         function addToRecentlyViewed(product) {{
             let recent = JSON.parse(localStorage.getItem('asm_recent')) || [];
@@ -1135,6 +1164,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 <a href="/about.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">About Us</a>
                 <a href="/contact.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Contact Us</a>
                 <a href="/blog.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition text-[#007BFF]">Blog</a>
+                <a href="/account.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">My Account</a>
                 <a href="/faq.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">FAQ</a>
                 <div class="ml-auto text-xs font-bold text-gray-600 dark:text-gray-400">
                     <i class="fas fa-phone mr-1 text-[#E53935]" aria-hidden="true"></i> 0342 54 786 83
@@ -1390,7 +1420,7 @@ def generate_blog_pages(categories_list):
         """
         all_blogs.append({"title": title, "slug": slug, "content": content})
         
-        full_html = get_html_header(title, categories_list, f"Read about {title}. Learn more about {base['kw']} in Pakistan at ASM VEO Blog.") + content + get_html_footer()
+        full_html = get_html_header(title, categories_list, f"Read about {title}. Learn more about {base['kw']} in Pakistan at ASM VEO Blog.", custom_canonical=f"https://www.asmveo.com/blog/{slug}.html") + content + get_html_footer()
         with open(f"output/blog/{slug}.html", "w", encoding="utf-8") as f:
             f.write(minify_html(full_html))
 
@@ -1415,7 +1445,7 @@ def generate_blog_pages(categories_list):
         """
     blog_index += "</div></div>"
     
-    full_index_html = get_html_header("Our Blog - ASM VEO", categories_list, "Read the latest e-commerce and shopping blogs in Pakistan by ASM VEO.") + blog_index + get_html_footer()
+    full_index_html = get_html_header("Our Blog - ASM VEO", categories_list, "Read the latest e-commerce and shopping blogs in Pakistan by ASM VEO.", custom_canonical="https://www.asmveo.com/blog.html") + blog_index + get_html_footer()
     with open("output/blog.html", "w", encoding="utf-8") as f:
         f.write(minify_html(full_index_html))
     
@@ -1504,7 +1534,8 @@ setTimeout(()=>location.replace(destination),2200);
         "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 2-4 business days.</p></div></div>"""),
         "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
-        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#E53935] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#E53935]"><button onclick="trackLocalOrder()" class="bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#C62828]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Pending','Confirmed','Shipped','Delivered'];const status=o.status||'Confirmed';const idx=steps.indexOf(status);r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#E53935]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div>"""),
+        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#E53935] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#E53935]"><button onclick="trackLocalOrder()" class="bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#C62828]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>window.addEventListener('load',()=>{const q=new URLSearchParams(location.search).get('id');if(q)document.getElementById('trackOrderInput').value=q});function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Pending','Confirmed','Shipped','Delivered'];const status=o.status||'Confirmed';const idx=steps.indexOf(status);r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#E53935]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">City: <strong>'+(o.city||'Pakistan')+'</strong> • Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div>"""),
+        "account.html": ("My Account", """<div class="container mx-auto px-4 py-12 max-w-5xl"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-200 dark:border-gray-700"><div class="text-center mb-8"><i class="fas fa-user-circle text-5xl text-[#E53935]"></i><h1 class="text-3xl font-black text-gray-900 dark:text-white mt-3">My ASM VEO Account</h1><p class="text-gray-500 mt-2">Save your details and view your order history on this device.</p></div><form id="accountForm" class="grid md:grid-cols-2 gap-4"><input id="accName" required placeholder="Full Name" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accEmail" type="email" placeholder="Email" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accPhone" required placeholder="03XXXXXXXXX" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accAddress" placeholder="Default Delivery Address" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><button class="md:col-span-2 bg-[#E53935] text-white py-3 rounded-xl font-bold">Save Profile</button></form><div class="mt-8 bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><h2 class="font-black text-xl mb-3 text-gray-900 dark:text-white">Recent Orders</h2><div id="accountOrders" class="space-y-3"></div></div><p class="text-xs text-gray-400 mt-5">This static-site account uses browser storage and is not a server-authenticated login.</p></div><script>function renderAccount(){let u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){accName.value=u.name||'';accEmail.value=u.email||'';accPhone.value=u.phone||'';accAddress.value=u.address||''}let os=JSON.parse(localStorage.getItem('asm_orders')||'[]');accountOrders.innerHTML=os.length?os.slice(0,10).map(o=>'<div class="flex items-center justify-between gap-3 p-3 bg-white dark:bg-gray-800 rounded-xl"><span class="font-bold">'+o.orderId+'</span><span>'+o.total+'</span><a class="text-[#E53935] font-bold text-xs" href="/track-order.html?id='+encodeURIComponent(o.orderId)+'">Track</a></div>').join(''):'<p class="text-gray-500">No local orders yet.</p>'}accountForm.addEventListener('submit',e=>{e.preventDefault();localStorage.setItem('asm_account',JSON.stringify({name:accName.value,email:accEmail.value,phone:accPhone.value,address:accAddress.value}));renderAccount();alert('Profile saved successfully.')});window.addEventListener('load',renderAccount)</script></div>"""),
         "compare.html": ("Compare Products", """<div class="container mx-auto px-4 py-16 max-w-6xl"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"><div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Compare Products</h1><p class="text-gray-600 dark:text-gray-300 mt-2">Compare up to 4 products side by side.</p></div><button onclick="clearCompare();renderComparePage();" class="border border-gray-300 dark:border-gray-600 px-5 py-2.5 rounded-xl font-bold text-sm">Clear All</button></div><div id="comparePageContent"></div><script>function renderComparePage(){let items=[];try{items=JSON.parse(localStorage.getItem('asm_compare'))||[];}catch(e){}const box=document.getElementById('comparePageContent');if(!items.length){box.innerHTML='<div class="bg-white dark:bg-gray-800 rounded-3xl p-12 text-center border border-gray-200 dark:border-gray-700"><i class="fas fa-code-compare text-6xl text-gray-300 mb-5"></i><h2 class="text-2xl font-black text-gray-900 dark:text-white mb-2">Nothing to compare yet</h2><p class="text-gray-500 mb-6">Add products using the compare icon on product cards.</p><a href="/index.html#products" class="inline-block bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold">Browse Products</a></div>';return;}const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const row=(label,fn)=>'<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black text-gray-700 dark:text-gray-300">'+label+'</td>'+items.map(p=>'<td class="p-5 text-center text-gray-600 dark:text-gray-300">'+fn(p)+'</td>').join('')+'</tr>';let html='<div class="overflow-x-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700"><table class="w-full min-w-[760px] text-sm"><thead><tr><th class="text-left p-5 bg-gray-50 dark:bg-gray-700">Feature</th>'+items.map(p=>'<th class="p-5 text-center bg-gray-50 dark:bg-gray-700"><img src="'+p.image+'" class="w-24 h-24 mx-auto object-contain rounded-xl" alt=""><div class="font-bold mt-2 text-gray-900 dark:text-white">'+esc(p.name)+'</div></th>').join('')+'</tr></thead><tbody>';html+=row('Price',p=>'<span class="text-[#E53935] font-black text-lg">Rs '+p.price+'</span>');html+=row('Category',p=>esc(p.category));html+=row('Availability',p=>'<span class="text-green-600 font-bold"><i class="fas fa-check-circle"></i> In Stock</span>');html+=row('Delivery',p=>'2–4 business days');html+=row('Returns',p=>'7-day returns');html+='<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black">Action</td>'+items.map(p=>'<td class="p-5 text-center"><a href="/product/'+p.slug+'.html" class="inline-block bg-[#E53935] text-white px-4 py-2 rounded-lg font-bold">View Product</a></td>').join('')+'</tr></tbody></table></div>';box.innerHTML=html;}window.addEventListener('load',renderComparePage);</script></div>"""),
         "404.html": ("Finding Product...", smart_404_html),
         "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div></div>
@@ -1623,8 +1654,11 @@ setTimeout(()=>location.replace(destination),2200);
     }
 
     for filename, (title, content) in pages.items():
+        page_header = get_html_header(title, categories_list, custom_canonical=f"https://www.asmveo.com/{filename}")
+        if filename in {"account.html", "compare.html", "track-order.html", "order-success.html"}:
+            page_header = page_header.replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex,follow">')
         with open(f"output/{filename}", "w", encoding="utf-8") as f:
-            f.write(minify_html(get_html_header(title, categories_list) + content + get_html_footer()))
+            f.write(minify_html(page_header + content + get_html_footer()))
 
     faqs = [
         ("How long does delivery take in Pakistan?", "We deliver nationwide within 2-4 business days. Major cities like Karachi, Lahore, and Islamabad usually receive orders within 2 days. Remote areas may take up to 5 days."),
@@ -1760,6 +1794,10 @@ def generate_merchant_feed(products_list):
     with open("output/merchant-feed.xml", "w", encoding="utf-8") as f: 
         f.write(xml_content)
     print("✅ Google Merchant Feed generated successfully!")
+def generate_seo_audit(products_list,categories_list):
+    report={"generated_at":datetime.now().isoformat(),"site":"https://www.asmveo.com","products":len(products_list),"categories":len(categories_list),"checks":["Product schema","Merchant feed","Image sitemap","Canonical URLs","Breadcrumb schema","Shipping/return markup","Smart search","Recommendations","Advanced filters","Customer account","Order tracking","Pakistan delivery zones"]}
+    with open("output/seo-audit.json","w",encoding="utf-8") as f: json.dump(report,f,indent=2,ensure_ascii=False)
+
 # ==============================================================================
 # PRODUCT CARD GENERATOR
 # ==============================================================================
@@ -1904,14 +1942,11 @@ def process_woocommerce_csv():
     categories_set = set()
     sitemap_urls = [
         "https://www.asmveo.com/", 
-        "https://www.asmveo.com/checkout.html", 
         "https://www.asmveo.com/about.html", 
         "https://www.asmveo.com/contact.html", 
         "https://www.asmveo.com/faq.html", 
-        "https://www.asmveo.com/wishlist.html",
         "https://www.asmveo.com/privacy.html", 
         "https://www.asmveo.com/terms.html", 
-        "https://www.asmveo.com/order-success.html"
     ]
     
     with open(file_path, mode='r', encoding='utf-8') as f:
@@ -1960,7 +1995,7 @@ def process_woocommerce_csv():
             products_list.append({
                 'id': product_id, 'slug': slug, 'name': name, 'category': category, 'fake_price': fake_regular_price, 
                 'final_price': final_price, 'image': image, 'images': images, 'seo_desc': seo_desc, 'full_desc': clean_description,
-                'daraz_kw': daraz_kw
+                'daraz_kw': daraz_kw, 'brand': infer_brand(name)
             })
 
     print(f"⏳ Checking {len(products_list)} images to remove broken products...")
@@ -1985,8 +2020,9 @@ def process_woocommerce_csv():
     generate_manifest()
     
     search_index_json = json.dumps([{
-        "name": p['name'], "slug": p['slug'], "category": p['category'], 
-        "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image']
+        "name": p['name'], "slug": p['slug'], "category": p['category'], "brand": p.get('brand', infer_brand(p['name'])),
+        "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image'], "rating": p.get('rating',4.5), "stock": True,
+        "discount": math.ceil(((p['fake_price']-p['final_price'])/p['fake_price'])*100) if p['fake_price'] else 0
     } for p in products_list])
     
     with open("output/search-data.js", "w", encoding="utf-8") as f: 
@@ -1998,7 +2034,7 @@ def process_woocommerce_csv():
         prod['rating'] = avg_rating
         prod['review_count'] = review_count
         
-        related = [p for p in products_list if p['category'] == prod['category'] and p['slug'] != prod['slug']][:4]
+        related = smart_related_products(products_list, prod, limit=6)
         related_html = "".join([generate_product_card(p, lazy=True) for p in related])
         
         gallery_html = ""
@@ -2076,7 +2112,7 @@ def process_woocommerce_csv():
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row mb-12 reveal">
                 <div class="md:w-1/2 p-6 flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 relative">
                     {f'<div class="absolute top-4 left-4 bg-[#E53935] text-white text-sm font-black px-3 py-1.5 rounded-lg z-10 shadow-md">-{discount_pct}% OFF</div>' if discount_pct > 0 else ''}
-                    <img id="mainProductImage" src="{prod['image']}" alt="{alt_name}" fetchpriority="high" decoding="sync" width="600" height="600" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500" onerror="window.location.href='/index.html';">
+                    <img id="mainProductImage" src="{prod['image']}" alt="{alt_name}" fetchpriority="high" decoding="sync" width="600" height="600" class="max-h-[500px] object-contain rounded-xl hover:scale-105 transition duration-500" onerror="window.location.href='/404.html';">
                     {gallery_html}
                 </div>
                 <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
@@ -2171,6 +2207,13 @@ def process_woocommerce_csv():
         </div>
         """
         
+        prod_html += f"""
+        <section class="container mx-auto px-4 pb-12">
+          <div class="flex items-center justify-between mb-5"><div><p class="text-xs font-black uppercase tracking-[0.2em] text-[#E53935]">Personalized Picks</p><h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">You May Also Like</h2></div><a href="/category/{re.sub(r'[^a-z0-9]+','-',prod['category'].lower()).strip('-')}.html" class="text-sm font-bold text-[#E53935]">View Category →</a></div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">{related_html}</div>
+        </section>
+        """
+
         recent_json = json.dumps({
             "slug": prod['slug'], 
             "name": prod['name'], 
@@ -2226,7 +2269,7 @@ def process_woocommerce_csv():
         sitemap_urls.append(f"https://www.asmveo.com/city/{city_slug}.html")
         city_prods = random.sample(products_list, min(12, len(products_list)))
         
-        city_html = get_html_header(f"Online Shopping in {city}", categories_list, f"Buy products online in {city} with Cash on Delivery. Fast delivery in {city} and all over Pakistan. Premium quality at best prices.")
+        city_html = get_html_header(f"Online Shopping in {city}", categories_list, f"Buy products online in {city} with Cash on Delivery. Fast delivery in {city} and all over Pakistan. Premium quality at best prices.", custom_canonical=f"https://www.asmveo.com/city/{city_slug}.html")
         
         city_html += f"""
         <div class="animated-bg py-16 mb-8 text-center text-white relative overflow-hidden">
@@ -2275,7 +2318,7 @@ def process_woocommerce_csv():
             if page_num > 1:
                 sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
             
-            cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. Wide range of {cat_name} with Cash on Delivery from ASM VEO.")
+            cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. Wide range of {cat_name} with Cash on Delivery from ASM VEO.", custom_canonical=f"https://www.asmveo.com/category/{file_slug}.html")
             
             min_price = min(p['final_price'] for p in prods)
             max_price = max(p['final_price'] for p in prods)
@@ -2308,6 +2351,7 @@ def process_woocommerce_csv():
                                     <option value="name">Name: A to Z</option>
                                 </select>
                             </div>
+                            <div class="mb-6"><h4 class="text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">Quick Filters</h4><label class="flex items-center gap-2 text-sm mb-2"><input id="discountOnly" type="checkbox" onchange="applyFilters()"> On Sale</label><label class="flex items-center gap-2 text-sm mb-2"><input id="fourStarOnly" type="checkbox" onchange="applyFilters()"> 4★ & above</label><label class="flex items-center gap-2 text-sm"><input id="inStockOnly" type="checkbox" checked onchange="applyFilters()"> In Stock</label></div>
                             <div class="mb-6">
                                 <h4 class="text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">Price Range</h4>
                                 <div class="flex items-center gap-2 mb-2">
@@ -2362,6 +2406,7 @@ def process_woocommerce_csv():
             
             cat_script_filters = """
             <script>
+                let allProducts = __PRODUCTS_JSON__;
                 function applyFilters() {
                     if (typeof allProducts === 'undefined') {
                         setTimeout(applyFilters, 500);
@@ -2371,7 +2416,8 @@ def process_woocommerce_csv():
                     let minP = parseFloat(document.getElementById('minPrice').value) || 0;
                     let maxP = parseFloat(document.getElementById('maxPrice').value) || 999999;
                     
-                    let filtered = allProducts.filter(p => p.final_price >= minP && p.final_price <= maxP);
+                    let discountOnly = document.getElementById('discountOnly')?.checked; let fourStarOnly = document.getElementById('fourStarOnly')?.checked; let inStockOnly = document.getElementById('inStockOnly')?.checked;
+                    let filtered = allProducts.filter(p => p.final_price >= minP && p.final_price <= maxP && (!discountOnly || Number(p.discount||0)>0) && (!fourStarOnly || Number(p.rating||4.5)>=4) && (!inStockOnly || p.stock!==false));
                     
                     if (sortBy === 'price-low') filtered.sort((a,b) => a.final_price - b.final_price);
                     else if (sortBy === 'price-high') filtered.sort((a,b) => b.final_price - a.final_price);
@@ -2426,7 +2472,8 @@ def process_woocommerce_csv():
             all_prods_json = json.dumps([{
                 "name": p['name'], "slug": p['slug'], "category": p['category'],
                 "final_price": p['final_price'], "fake_price": p['fake_price'], "image": p['image'],
-                "seo_desc": p['seo_desc']
+                "seo_desc": p['seo_desc'], "brand": p.get('brand',infer_brand(p['name'])), "rating": p.get('rating',4.5), "stock": True,
+                "discount": math.ceil(((p['fake_price']-p['final_price'])/p['fake_price'])*100) if p['fake_price'] else 0
             } for p in prods])
             
             cat_html += cat_script_filters.replace("__PRODUCTS_JSON__", all_prods_json)\
@@ -2502,7 +2549,7 @@ def process_woocommerce_csv():
 
     for h_page in range(1, total_home_pages + 1):
         page_title = "Online Shopping in Pakistan | ASM VEO" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
-        home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.")
+        home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.", custom_canonical=f"https://www.asmveo.com/{"index.html" if h_page == 1 else f"index-{h_page}.html"}")
         
         if h_page == 1:
             home_html += """
@@ -2790,10 +2837,7 @@ def process_woocommerce_csv():
                         return;
                     }
                     
-                    let results = searchIndex.filter(p => 
-                        p.name.toLowerCase().includes(query) || 
-                        p.category.toLowerCase().includes(query)
-                    );
+                    let results = smartSearchResults(query);
                     
                     document.getElementById('defaultContent').classList.add('hidden');
                     document.getElementById('recentlyViewedSection').classList.add('hidden');
@@ -2928,7 +2972,8 @@ def process_woocommerce_csv():
     tehsil_options = "".join([f"<option value='{t}'>{t}</option>" for t in pak_tehsils])
     delivery_date = (datetime.now() + timedelta(days=3)).strftime("%A, %b %d")
     
-    checkout_html = get_html_header("Secure Checkout", categories_list, "Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO.")
+    checkout_html = get_html_header("Secure Checkout", categories_list, "Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO.", custom_canonical="https://www.asmveo.com/checkout.html")
+    checkout_html = checkout_html.replace('<meta name="robots" content="index, follow, max-image-preview:large">', '<meta name="robots" content="noindex,follow">')
     checkout_html += f"""
     <div class="container mx-auto px-4 py-12 max-w-6xl">
         <h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3">
@@ -2978,7 +3023,7 @@ def process_woocommerce_csv():
                     <h2 class="text-2xl font-extrabold flex items-center gap-2">
                         <i class="fas fa-map-marker-alt text-white" aria-hidden="true"></i> Shipping Details
                     </h2>
-                    <p class="text-gray-200 text-sm mt-1"><i class="fas fa-truck" aria-hidden="true"></i> Expected delivery: {delivery_date}</p>
+                    <p id="deliveryEstimate" class="text-gray-200 text-sm mt-1"><i class="fas fa-truck" aria-hidden="true"></i> Select your city for delivery estimate</p>
                 </div>
                 
                 <form id="checkoutForm" class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-b-3xl shadow-xl border border-gray-200 dark:border-gray-700 border-t-0 space-y-5">
@@ -3004,7 +3049,7 @@ def process_woocommerce_csv():
                         </div>
                         <div>
                             <label for="citySelect" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
-                            <select id="citySelect" name="City" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required>
+                            <select id="citySelect" name="City" onchange="updateDeliveryEstimate()" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required>
                                 <option value="" disabled selected>Select City</option>
                                 {tehsil_options}
                             </select>
@@ -3113,6 +3158,9 @@ def process_woocommerce_csv():
     checkout_script = """
     <script>
         let couponApplied = false;
+        const deliveryZones = {"Karachi": [250, 2, 3], "Lahore": [250, 2, 3], "Islamabad": [250, 2, 3], "Rawalpindi": [250, 2, 3], "Faisalabad": [250, 2, 4], "Multan": [250, 2, 4], "Gujranwala": [250, 2, 4], "Sialkot": [250, 2, 4], "Peshawar": [300, 3, 5], "Quetta": [350, 4, 6], "Hyderabad": [250, 2, 4], "Bahawalpur": [300, 3, 5], "Sargodha": [300, 3, 5], "Sukkur": [300, 3, 5], "Larkana": [300, 3, 5], "Sheikhupura": [250, 2, 4], "Mardan": [300, 3, 5], "Abbottabad": [300, 3, 5], "Mansehra": [300, 3, 5], "Haripur": [300, 3, 5], "Nowshera": [300, 3, 5], "Swat": [350, 4, 6], "Dir": [350, 4, 6], "Chitral": [400, 5, 7], "Bannu": [350, 4, 6], "Charsadda": [300, 3, 5], "Muzaffarabad": [350, 4, 6], "Mirpur": [300, 3, 5], "Kotli": [350, 4, 6], "Bhimber": [350, 4, 6]};
+        function getDeliveryInfo(city){const z=deliveryZones[city]||[300,3,6];return {charge:z[0],min:z[1],max:z[2]};}
+        function updateDeliveryEstimate(){const city=document.getElementById('citySelect')?.value||'';const z=getDeliveryInfo(city);const n=document.getElementById('deliveryEstimate');if(n)n.textContent=city?('Estimated delivery: '+z.min+'-'+z.max+' working days • '+(z.charge===0?'FREE':'Rs '+z.charge)):'Select your city for delivery estimate';renderCart();}
         
         function togglePaymentDetails() {
             let method = document.querySelector('input[name="Payment_Method"]:checked').value;
@@ -3219,7 +3267,7 @@ def process_woocommerce_csv():
                 }
             }
             
-            let delivery = subtotal >= 5000 ? 0 : 250; 
+            let selectedCity=document.getElementById('citySelect')?.value||''; let zone=getDeliveryInfo(selectedCity); let delivery=subtotal>=5000?0:zone.charge; 
             let discount = couponApplied ? Math.floor(subtotal * 0.10) : 0; 
             let grandTotal = subtotal - discount + delivery;
             let paymentMethod = document.querySelector('input[name="Payment_Method"]:checked').value;
@@ -3319,7 +3367,7 @@ def process_woocommerce_csv():
                 btn.disabled = false;
             });
         });
-        window.addEventListener('load', renderCart);
+        window.addEventListener('load', function(){try{const u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){if(u.name)fullName.value=u.name;if(u.email)emailAddr.value=u.email;if(u.phone)phoneNum.value=u.phone;if(u.address)addressInput.value=u.address}}catch(e){} renderCart();updateDeliveryEstimate();});
     </script>
     """
     
