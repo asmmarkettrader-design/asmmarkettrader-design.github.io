@@ -12,7 +12,32 @@ import urllib.parse
 import glob
 import time
 from datetime import datetime, timedelta
-
+def fix_shopify_404_errors_safe():
+    print("🔄 Fixing old Shopify 404 URLs with Auto-Redirects...")
+    import os
+    directories_to_create = ["output/collections", "output/pages", "output/blogs", "output/blogs/news", "output/blogs/news/tagged"]
+    for d in directories_to_create:
+        os.makedirs(d, exist_ok=True)
+    
+    shopify_dead_links = [
+        "collections/all.html", "collections/blazers.html", "collections/types.html", 
+        "collections/activewear.html", "collections/crop-top.html", "collections/health-beauty.html",
+        "collections/home-living.html", "collections/kids-baby-toys.html", "collections/mens-fashion.html",
+        "collections/sports-fitness.html", "collections/sweaters.html", "collections/womens-fashion.html",
+        "pages/about-us.html", "pages/contact.html", "pages/reviews.html", "pages/shipping-policy.html", 
+        "pages/wishlist.html", "blogs/news.html", "blogs/best-electronic-acces.html",
+        "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html"
+    ]
+    
+    redirect_html = "<!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv='refresh' content='0; url=https://www.asmveo.com/index.html'><title>Redirecting...</title></head><body><script>window.location.href='https://www.asmveo.com/index.html';</script></body></html>"
+    
+    for link in shopify_dead_links:
+        try:
+            with open(f"output/{link}", "w", encoding="utf-8") as f:
+                f.write(redirect_html)
+        except Exception:
+            pass
+    print("✅ All Shopify 404 links fixed and redirected to Homepage!")
 # ==============================================================================
 # ADVANCED SEO & ANALYTICS APIs
 # ==============================================================================
@@ -1612,42 +1637,7 @@ def generate_pagination_html(current_page, total_pages, url_pattern):
         
     html += '</div>'
     return html
-   # ==============================================================================
-# SHOPIFY 404 FIXER (SAFE MODE)
-# ==============================================================================
-def fix_shopify_404_errors_safe():
-    print("🔄 Fixing old Shopify 404 URLs with Auto-Redirects...")
-    directories_to_create = ["output/collections", "output/pages", "output/blogs", "output/blogs/news", "output/blogs/news/tagged"]
-    for d in directories_to_create:
-        os.makedirs(d, exist_ok=True)
-    
-    shopify_dead_links = [
-        "collections/all.html", "collections/blazers.html", "collections/types.html", 
-        "collections/activewear.html", "collections/crop-top.html", "collections/health-beauty.html",
-        "collections/home-living.html", "collections/kids-baby-toys.html", "collections/mens-fashion.html",
-        "collections/sports-fitness.html", "collections/sweaters.html", "collections/womens-fashion.html",
-        "pages/about-us.html", "pages/contact.html", "pages/reviews.html", "pages/shipping-policy.html", 
-        "pages/wishlist.html", "blogs/news.html", "blogs/best-electronic-acces.html",
-        "blogs/discover-the-best-de.html", "blogs/mens-fashion-b.html"
-    ]
-    
-    redirect_html = "<!DOCTYPE html><html><head><meta charset='UTF-8'><meta http-equiv='refresh' content='0; url=https://www.asmveo.com/index.html'><link rel='canonical' href='https://www.asmveo.com/index.html'><title>Redirecting...</title></head><body><p>Redirecting to <a href='https://www.asmveo.com/index.html'>Homepage</a>.</p></body></html>"
-    
-    for link in shopify_dead_links:
-        try:
-            with open(f"output/{link}", "w", encoding="utf-8") as f:
-                f.write(redirect_html)
-        except Exception:
-            pass
-    print("✅ All Shopify 404 links fixed and redirected to Homepage!")
-
-# ==============================================================================
-# SCRIPT EXECUTION
-# ==============================================================================
-if __name__ == "__main__":
-    process_woocommerce_csv()
-    fix_shopify_404_errors_safe()
-    
+  
 # ==============================================================================
 # MAIN PROCESSOR
 # ==============================================================================
@@ -3068,7 +3058,7 @@ def process_woocommerce_csv():
     apply_lighthouse_optimizations("output")
     
     # 🌟 YAHAN CALL KAREIN: Shopify ke 404 errors fix karne ke liye 🌟
-    fix_shopify_404_errors()
+    fix_shopify_404_errors_safe()
     
     trigger_google_indexing_api(sitemap_urls)
     
