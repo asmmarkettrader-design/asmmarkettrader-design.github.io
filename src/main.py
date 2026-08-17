@@ -474,67 +474,104 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         safe_schema_name = product_data['name'].replace('\\', '\\\\').replace('"', '\\"')
         safe_schema_desc = product_data.get('seo_desc', '').replace('\\', '\\\\').replace('"', '\\"')
         
+        # 🌟 SMART FIX: Force Google to read PKR and show "In Stock" using OpenGraph Product Tags 🌟
         structured_data += f"""
+        <meta property="product:price:amount" content="{product_data['final_price']}">
+        <meta property="product:price:currency" content="PKR">
+        <meta property="product:availability" content="in stock">
+        <meta property="product:condition" content="new">
+        
         <script type="application/ld+json">
-    {{
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "{safe_schema_name}",
-      "image": ["{product_data['image']}"],
-      "description": "{safe_schema_desc}",
-      "brand": {{ "@type": "Brand", "name": "ASM VEO" }},
-      "offers": {{
-        "@type": "Offer",
-        "priceCurrency": "PKR",
-        "price": "{product_data['final_price']}",
-        "availability": "https://schema.org/InStock",
-        "url": "{canonical_url}",
-        "seller": {{ "@type": "Organization", "name": "ASM VEO" }},
-        "hasMerchantReturnPolicy": {{
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "PK",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-          "merchantReturnDays": "7",
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn",
-          "merchantReturnLink": "https://www.asmveo.com/return-policy.html"
-        }},
-        "shippingDetails": {{
-          "@type": "OfferShippingDetails",
-          "shippingRate": {{
-            "@type": "MonetaryAmount",
-            "value": "250",
-            "currency": "PKR"
-          }},
-          "shippingDestination": {{
-            "@type": "DefinedRegion",
-            "addressCountry": "PK"
-          }},
-          "deliveryTime": {{
-            "@type": "ShippingDeliveryTime",
-            "handlingTime": {{
-              "@type": "QuantitativeValue",
-              "minValue": "0",
-              "maxValue": "1",
-              "unitCode": "d"
+        {{
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "{safe_schema_name}",
+          "image": ["{product_data['image']}"],
+          "description": "{safe_schema_desc}",
+          "sku": "ASM-{product_data['id']}",
+          "mpn": "ASM-{product_data['id']}",
+          "brand": {{ "@type": "Brand", "name": "ASM VEO" }},
+          "offers": {{
+            "@type": "Offer",
+            "priceCurrency": "PKR",
+            "price": "{product_data['final_price']}",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition",
+            "url": "{canonical_url}",
+            "seller": {{ "@type": "Organization", "name": "ASM VEO" }},
+            "hasMerchantReturnPolicy": {{
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "PK",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": "7",
+              "returnMethod": "https://schema.org/ReturnByMail",
+              "returnFees": "https://schema.org/FreeReturn",
+              "merchantReturnLink": "https://www.asmveo.com/return-policy.html"
             }},
-            "transitTime": {{
-              "@type": "QuantitativeValue",
-              "minValue": "2",
-              "maxValue": "4",
-              "unitCode": "d"
+            "shippingDetails": {{
+              "@type": "OfferShippingDetails",
+              "shippingRate": {{
+                "@type": "MonetaryAmount",
+                "value": "250",
+                "currency": "PKR"
+              }},
+              "shippingDestination": {{
+                "@type": "DefinedRegion",
+                "addressCountry": "PK"
+              }},
+              "deliveryTime": {{
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {{
+                  "@type": "QuantitativeValue",
+                  "minValue": "0",
+                  "maxValue": "1",
+                  "unitCode": "d"
+                }},
+                "transitTime": {{
+                  "@type": "QuantitativeValue",
+                  "minValue": "2",
+                  "maxValue": "4",
+                  "unitCode": "d"
+                }}
+              }}
             }}
+          }},
+          "aggregateRating": {{
+            "@type": "AggregateRating",
+            "ratingValue": "{product_data.get('rating', 4.5)}",
+            "reviewCount": "{product_data.get('review_count', 10)}"
           }}
         }}
-      }},
-      "aggregateRating": {{
-        "@type": "AggregateRating",
-        "ratingValue": "{product_data.get('rating', 4.5)}",
-        "reviewCount": "{product_data.get('review_count', 10)}"
-      }}
-    }}
-    </script>
-    
+        </script>
+        """
+        
+        # 🌟 SEO FIX: Product FAQ Schema added automatically 🌟
+        structured_data += f"""
+        <script type="application/ld+json">
+        {{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {{
+              "@type": "Question",
+              "name": "Is {safe_schema_name} original and genuine?",
+              "acceptedAnswer": {{
+                "@type": "Answer",
+                "text": "Yes! We source 100% genuine products directly from authorized distributors in Pakistan. Every product is quality-checked before dispatch."
+              }}
+            }},
+            {{
+              "@type": "Question",
+              "name": "What is the delivery time for {safe_schema_name}?",
+              "acceptedAnswer": {{
+                "@type": "Answer",
+                "text": "Delivery takes 2-4 business days across Pakistan. Major cities like Talagang, Karachi, Lahore, and Islamabad receive faster delivery."
+              }}
+            }}
+          ]
+        }}
+        </script>
+        """
     <!-- 🌟 SEO FIX: Product FAQ Schema added automatically 🌟 -->
     <script type="application/ld+json">
     {{
