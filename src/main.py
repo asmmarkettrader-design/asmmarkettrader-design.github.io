@@ -143,10 +143,12 @@ def map_daraz_keyword(product_name):
 # EXTERNAL CSV KEYWORDS MATCHER (SMART SEO)
 # ==============================================================================
 def load_external_keywords():
-    """Reads all SEO CSV files from the 'keywords' folder using built-in CSV module."""
+    """Reads all SEO CSV files robustly, handling different encodings and Semrush formats."""
     print("📈 Loading External SEO Keywords from CSV files...")
     all_kws = []
-    files = glob.glob("keywords/*.csv")
+    
+    # Root aur src dono folders mein check kar le ga
+    files = glob.glob("keywords/*.csv") + glob.glob("src/keywords/*.csv")
     
     if not files:
         print("⚠️ No CSV files found in 'keywords' folder. Skipping external SEO.")
@@ -154,18 +156,35 @@ def load_external_keywords():
         
     for file in files:
         try:
-            with open(file, mode='r', encoding='utf-8') as f:
-                reader = csv.DictReader(f)
+            # utf-8-sig lagane se hidden BOM characters automatically ignore ho jayenge
+            with open(file, mode='r', encoding='utf-8-sig', errors='ignore') as f:
+                reader = csv.reader(f)
+                headers = None
+                kw_index = -1
+                count = 0
+                
                 for row in reader:
-                    # CSV mein se 'Keyword' wala column dhoond kar read karna
-                    for key in row.keys():
-                        if key and 'keyword' in key.lower():
-                            val = row[key]
-                            if val:
-                                all_kws.append(str(val))
-                            break
+                    if not row: continue
+                    
+                    # 1. Sab se pehle Keyword wala column dhoondein
+                    if headers is None:
+                        for i, col in enumerate(row):
+                            if 'keyword' in str(col).lower():
+                                headers = row
+                                kw_index = i
+                                break
+                        continue
+                    
+                    # 2. Phir us column ka data extract karein
+                    if kw_index != -1 and len(row) > kw_index:
+                        val = str(row[kw_index]).strip()
+                        if val:
+                            all_kws.append(val)
+                            count += 1
+                            
+                print(f"✔️ {file}: {count} keywords loaded.")
         except Exception as e:
-            print(f"Error reading {file}: {e}")
+            print(f"❌ Error reading {file}: {e}")
             
     # Daraz aur fuzool words ko nikalne ke liye Strict Filter
     blocked_words = ['daraz', 'aliexpress', 'amazon', 'olx', 'xnxx', 'sex', 'porn', 'xxx', 'xnx']
@@ -181,7 +200,6 @@ def load_external_keywords():
     return clean_kws
 
 EXTERNAL_SEO_KEYWORDS = load_external_keywords()
-
 def map_seo_keywords_to_product(product_name, category):
     """Finds best matching external keywords for a specific product."""
     if not EXTERNAL_SEO_KEYWORDS:
