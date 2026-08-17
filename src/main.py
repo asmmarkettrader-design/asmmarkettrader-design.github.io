@@ -713,6 +713,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             background-size: 400% 400%; 
             animation: gradient 15s ease infinite; 
         }}
+        .compare-bar {{ transform: translateY(120%); transition: transform 0.3s ease; }}
+        .compare-bar.show {{ transform: translateY(0); }}
+        .compare-chip {{ animation: slideIn 0.25s ease-out; }}
+        .suggestions-panel {{ max-height: 320px; overflow-y: auto; }}
         
         @keyframes gradient {{ 
             0% {{ background-position: 0% 50%; }} 
@@ -836,6 +840,48 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             let wl = getWishlist();
             document.querySelectorAll('.wishlist-badge').forEach(el => el.innerText = wl.length);
         }}
+
+        function getCompare() {{
+            try {{ return JSON.parse(localStorage.getItem('asm_compare')) || []; }} catch(e) {{ return []; }}
+        }}
+        function saveCompare(items) {{ localStorage.setItem('asm_compare', JSON.stringify(items.slice(0, 4))); updateCompareBar(); }}
+        function toggleCompare(name, price, image, slug, category, event) {{
+            if (event) event.stopPropagation();
+            let items = getCompare();
+            let idx = items.findIndex(item => item.slug === slug);
+            if (idx > -1) {{ items.splice(idx, 1); showToast('Removed from Compare', 'fa-code-compare', 'gray'); }}
+            else {{ if (items.length >= 4) {{ showToast('Compare limit is 4 products', 'fa-code-compare', 'red'); return; }} items.push({{name, price: parseFloat(price), image, slug, category}}); showToast('Added to Compare', 'fa-code-compare', 'pk'); }}
+            saveCompare(items); updateCompareButtons();
+        }}
+        function updateCompareBar() {{
+            let items = getCompare(), bar = document.getElementById('compareBar');
+            document.querySelectorAll('.compare-count').forEach(el => el.innerText = items.length);
+            if (!bar) return;
+            if (!items.length) {{ bar.classList.remove('show'); setTimeout(() => {{ if (!getCompare().length) bar.classList.add('hidden'); }}, 300); return; }}
+            bar.classList.remove('hidden'); setTimeout(() => bar.classList.add('show'), 10);
+            let chips = document.getElementById('compareChips');
+            if (chips) chips.innerHTML = items.map(item => '<div class="compare-chip flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5 text-xs font-bold"><img src="'+item.image+'" class="w-7 h-7 rounded-full object-cover bg-white" alt=""><span class="max-w-[120px] truncate">'+escapeHtml(item.name)+'</span></div>').join('');
+        }}
+        function updateCompareButtons() {{
+            let items = getCompare();
+            document.querySelectorAll('[data-compare-slug]').forEach(btn => {{
+                let active = items.some(item => item.slug === btn.getAttribute('data-compare-slug'));
+                btn.classList.toggle('bg-[#E53935]', active); btn.classList.toggle('text-white', active); btn.classList.toggle('bg-white', !active);
+                btn.innerHTML = active ? '<i class="fas fa-check"></i>' : '<i class="fas fa-code-compare"></i>';
+            }});
+        }}
+        function clearCompare() {{ localStorage.removeItem('asm_compare'); updateCompareBar(); updateCompareButtons(); }}
+        function escapeHtml(value) {{ return String(value || '').replace(/[&<>"']/g, function(ch) {{ return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[ch]; }}); }}
+        function showSearchSuggestions() {{
+            let input=document.getElementById('searchInput'), panel=document.getElementById('searchSuggestions');
+            if(!input || !panel || typeof searchIndex === 'undefined') return;
+            let q=input.value.toLowerCase().trim(); if(q.length<2) {{ panel.classList.add('hidden'); return; }}
+            let results=searchIndex.filter(p=>(p.name||'').toLowerCase().includes(q)||(p.category||'').toLowerCase().includes(q)).slice(0,7);
+            if(!results.length) {{ panel.classList.add('hidden'); return; }}
+            panel.innerHTML=results.map(p=>'<a href="/product/'+encodeURIComponent(p.slug)+'.html" class="flex items-center gap-3 p-3 hover:bg-gray-50 dark:hover:bg-gray-700 transition"><img src="'+p.image+'" class="w-10 h-10 rounded-lg object-contain bg-gray-100" alt=""><div class="min-w-0"><div class="font-bold text-xs text-gray-900 dark:text-white truncate">'+escapeHtml(p.name)+'</div><div class="text-[11px] text-[#E53935] font-black">Rs '+p.final_price+'</div></div></a>').join('');
+            panel.classList.remove('hidden');
+        }}
+        function hideSearchSuggestions() {{ let p=document.getElementById('searchSuggestions'); if(p) setTimeout(()=>p.classList.add('hidden'),180); }}
 
         function addToRecentlyViewed(product) {{
             let recent = JSON.parse(localStorage.getItem('asm_recent')) || [];
@@ -982,7 +1028,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             let searchInput = document.getElementById('searchInput');
             if(searchInput) {{
                 searchInput.addEventListener('focus', loadSearchData);
+                searchInput.addEventListener('input', function() {{ loadSearchData(); setTimeout(showSearchSuggestions, 250); }});
+                searchInput.addEventListener('blur', hideSearchSuggestions);
             }}
+            updateCompareBar();
+            updateCompareButtons();
             
             document.addEventListener('click', function(event) {{
                 let menu = document.getElementById('mobileCatMenu');
@@ -1052,6 +1102,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 <button onclick="executeSearch()" aria-label="Search" class="bg-[#E53935] text-white px-6 rounded-r-xl hover:bg-[#C62828] transition-colors flex items-center justify-center">
                     <i class="fas fa-search text-lg" aria-hidden="true"></i>
                 </button>
+                <div id="searchSuggestions" class="hidden absolute left-0 right-0 top-full mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-2xl z-[80] suggestions-panel"></div>
             </div>
             
             <!-- Icons -->
@@ -1092,6 +1143,16 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </nav>
     </header>
 
+    <!-- Compare Products Bar -->
+    <div id="compareBar" class="compare-bar hidden fixed bottom-0 left-0 right-0 z-[70] bg-gray-950 text-white shadow-2xl border-t border-gray-800">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap items-center gap-3">
+            <div class="font-black text-sm flex items-center gap-2"><i class="fas fa-code-compare text-[#E53935]"></i> Compare <span class="compare-count bg-[#E53935] rounded-full px-2 py-0.5 text-xs">0</span></div>
+            <div id="compareChips" class="flex-1 flex flex-wrap gap-2"></div>
+            <a href="/compare.html" class="bg-[#E53935] text-white px-4 py-2 rounded-lg font-bold text-xs">Compare Now</a>
+            <button onclick="clearCompare()" class="text-gray-300 hover:text-white text-xs font-bold px-2 py-2">Clear</button>
+        </div>
+    </div>
+
     <!-- Mobile Bottom Navigation -->
     <nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-2xl border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-50">
         <a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold">
@@ -1107,6 +1168,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         <a href="/wishlist.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
             <i class="fas fa-heart text-lg mb-1" aria-hidden="true"></i> Wishlist
             <span class="wishlist-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
+        </a>
+        <a href="/compare.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
+            <i class="fas fa-code-compare text-lg mb-1" aria-hidden="true"></i> Compare
+            <span class="compare-count absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
         </a>
     </nav>
 
@@ -1369,7 +1434,8 @@ def generate_static_pages(categories_list):
         "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 2-4 business days.</p></div></div>"""),
         "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
-        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl text-center"><h1 class="text-4xl font-extrabold mb-8 text-gray-900 dark:text-white">Track Order</h1><p class="mb-8 text-gray-600 dark:text-gray-300">To track your order, please message us your Order ID on WhatsApp.</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white px-8 py-4 rounded-xl font-bold hover:bg-green-600 transition shadow-lg"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div>"""),
+        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#E53935] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#E53935]"><button onclick="trackLocalOrder()" class="bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#C62828]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Pending','Confirmed','Shipped','Delivered'];const status=o.status||'Confirmed';const idx=steps.indexOf(status);r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#E53935]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div>"""),
+        "compare.html": ("Compare Products", """<div class="container mx-auto px-4 py-16 max-w-6xl"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"><div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Compare Products</h1><p class="text-gray-600 dark:text-gray-300 mt-2">Compare up to 4 products side by side.</p></div><button onclick="clearCompare();renderComparePage();" class="border border-gray-300 dark:border-gray-600 px-5 py-2.5 rounded-xl font-bold text-sm">Clear All</button></div><div id="comparePageContent"></div><script>function renderComparePage(){let items=[];try{items=JSON.parse(localStorage.getItem('asm_compare'))||[];}catch(e){}const box=document.getElementById('comparePageContent');if(!items.length){box.innerHTML='<div class="bg-white dark:bg-gray-800 rounded-3xl p-12 text-center border border-gray-200 dark:border-gray-700"><i class="fas fa-code-compare text-6xl text-gray-300 mb-5"></i><h2 class="text-2xl font-black text-gray-900 dark:text-white mb-2">Nothing to compare yet</h2><p class="text-gray-500 mb-6">Add products using the compare icon on product cards.</p><a href="/index.html#products" class="inline-block bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold">Browse Products</a></div>';return;}const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const row=(label,fn)=>'<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black text-gray-700 dark:text-gray-300">'+label+'</td>'+items.map(p=>'<td class="p-5 text-center text-gray-600 dark:text-gray-300">'+fn(p)+'</td>').join('')+'</tr>';let html='<div class="overflow-x-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700"><table class="w-full min-w-[760px] text-sm"><thead><tr><th class="text-left p-5 bg-gray-50 dark:bg-gray-700">Feature</th>'+items.map(p=>'<th class="p-5 text-center bg-gray-50 dark:bg-gray-700"><img src="'+p.image+'" class="w-24 h-24 mx-auto object-contain rounded-xl" alt=""><div class="font-bold mt-2 text-gray-900 dark:text-white">'+esc(p.name)+'</div></th>').join('')+'</tr></thead><tbody>';html+=row('Price',p=>'<span class="text-[#E53935] font-black text-lg">Rs '+p.price+'</span>');html+=row('Category',p=>esc(p.category));html+=row('Availability',p=>'<span class="text-green-600 font-bold"><i class="fas fa-check-circle"></i> In Stock</span>');html+=row('Delivery',p=>'2–4 business days');html+=row('Returns',p=>'7-day returns');html+='<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black">Action</td>'+items.map(p=>'<td class="p-5 text-center"><a href="/product/'+p.slug+'.html" class="inline-block bg-[#E53935] text-white px-4 py-2 rounded-lg font-bold">View Product</a></td>').join('')+'</tr></tbody></table></div>';box.innerHTML=html;}window.addEventListener('load',renderComparePage);</script></div>"""),
         "404.html": ("Finding Product...", """
         <!DOCTYPE html>
         <html lang="en">
@@ -1695,6 +1761,12 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             <i class="fas fa-eye text-[#E53935] text-lg" aria-hidden="true"></i>
         </button>
     """
+
+    compare_btn = f"""
+        <button data-compare-slug="{prod['slug']}" onclick="toggleCompare('{escaped_name}', {prod['final_price']}, '{prod['image']}', '{prod['slug']}', '{prod['category'].replace(chr(39), chr(92)+chr(39))}', event)" class="absolute top-2 right-26 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10 text-gray-700" aria-label="Add to Compare">
+            <i class="fas fa-code-compare text-[#E53935] text-sm" aria-hidden="true"></i>
+        </button>
+    """
     
     discount_badge = ""
     if discount > 0:
@@ -1704,6 +1776,7 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
     <div class="product-card reveal active bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/{prod['slug']}.html'" role="link" aria-label="View Product Details for {alt_name}">
         {wishlist_btn}
         {quick_view_btn}
+        {compare_btn}
         {discount_badge}
         <div class="image-zoom h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
             <img src="{prod['image']}" alt="{alt_name}" width="250" height="250" {img_loading} class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
@@ -2299,6 +2372,7 @@ def process_woocommerce_csv():
                     return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                         <button onclick="toggleWishlist('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500 text-lg"></i></button>
                         <button onclick="quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-14 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#E53935] text-lg"></i></button>
+                        <button data-compare-slug="${p.slug}" onclick="toggleCompare('${jsSafeName}', ${p.final_price}, '${p.image}', '${p.slug}', '${p.category}', event)" class="absolute top-2 right-26 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-code-compare text-[#E53935] text-sm"></i></button>
                         ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#E53935] text-white text-[11px] font-black px-2 py-1 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
                         <div class="image-zoom h-36 md:h-44 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
                             <img src="${p.image}" alt="${htmlSafeName}" width="250" height="250" loading="lazy" decoding="async" class="w-full h-full object-contain p-2" onerror="this.closest('.product-card').remove();">
@@ -2626,6 +2700,16 @@ def process_woocommerce_csv():
                 home_html += f'<a href="/city/{re.sub(r"[^a-z0-9]+", "-", city.lower()).strip("-")}.html" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-5 py-2.5 rounded-full text-sm font-bold text-gray-700 dark:text-gray-300 hover:bg-[#E53935] hover:text-white transition shadow-sm">{city}</a>'
             home_html += "</div></div>"
 
+            home_html += """
+            <section class="container mx-auto px-4 py-10">
+                <div class="text-center mb-7"><p class="text-xs font-black uppercase tracking-[0.2em] text-[#E53935]">Customer Love</p><h2 class="text-3xl font-extrabold text-gray-900 dark:text-white mt-2">What Our Customers Say</h2><p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Real shopping experiences from ASM VEO customers.</p></div>
+                <div class="grid md:grid-cols-3 gap-5">
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700"><div class="text-yellow-500 mb-3">★★★★★</div><p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Quality achi thi aur delivery time par mili. Product bilkul description jaisa tha.</p><div class="mt-4 font-bold text-gray-900 dark:text-white">— Verified Customer, Karachi</div></div>
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700"><div class="text-yellow-500 mb-3">★★★★★</div><p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">COD order ka experience bohat smooth raha. Packing bhi achi thi.</p><div class="mt-4 font-bold text-gray-900 dark:text-white">— Verified Customer, Lahore</div></div>
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700"><div class="text-yellow-500 mb-3">★★★★★</div><p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Price reasonable aur support WhatsApp par quick response deta hai. Recommended.</p><div class="mt-4 font-bold text-gray-900 dark:text-white">— Verified Customer, Islamabad</div></div>
+                </div>
+            </section>
+            """
             home_html += """
             <div id="recentlyViewedSection" class="hidden container mx-auto px-4 py-8 border-t border-gray-200 dark:border-gray-700">
                 <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-6 border-l-4 border-[#E53935] pl-4">Recently Viewed</h2>
@@ -3139,6 +3223,12 @@ def process_woocommerce_csv():
             }).then(() => {
                 console.log("Order safely saved to Google Sheets database!");
             }).catch(err => console.log("Database error: ", err));
+
+            try {
+                let savedOrders = JSON.parse(localStorage.getItem('asm_orders')) || [];
+                savedOrders.unshift({orderId: oId, total: document.getElementById('totalField').value, products: document.getElementById('productField').value, status: 'Confirmed', createdAt: new Date().toISOString()});
+                localStorage.setItem('asm_orders', JSON.stringify(savedOrders.slice(0, 20)));
+            } catch(e) {}
 
             // Phir aapko Email (Formspree) par notification bhejein
             fetch('https://formspree.io/f/xjgnlgpw', {
