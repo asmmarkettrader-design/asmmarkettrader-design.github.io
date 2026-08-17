@@ -3,7 +3,6 @@ import csv
 import urllib.request
 import urllib.error
 import concurrent.futures
-import pandas as pd
 import math
 import re
 import shutil
@@ -144,7 +143,7 @@ def map_daraz_keyword(product_name):
 # EXTERNAL CSV KEYWORDS MATCHER (SMART SEO)
 # ==============================================================================
 def load_external_keywords():
-    """Reads all SEO CSV files from the 'keywords' folder and extracts clean keywords."""
+    """Reads all SEO CSV files from the 'keywords' folder using built-in CSV module."""
     print("📈 Loading External SEO Keywords from CSV files...")
     all_kws = []
     files = glob.glob("keywords/*.csv")
@@ -155,12 +154,20 @@ def load_external_keywords():
         
     for file in files:
         try:
-            df = pd.read_csv(file)
-            if 'Keyword' in df.columns:
-                all_kws.extend(df['Keyword'].dropna().tolist())
+            with open(file, mode='r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    # CSV mein se 'Keyword' wala column dhoond kar read karna
+                    for key in row.keys():
+                        if key and 'keyword' in key.lower():
+                            val = row[key]
+                            if val:
+                                all_kws.append(str(val))
+                            break
         except Exception as e:
             print(f"Error reading {file}: {e}")
             
+    # Daraz aur fuzool words ko nikalne ke liye Strict Filter
     blocked_words = ['daraz', 'aliexpress', 'amazon', 'olx', 'xnxx', 'sex', 'porn', 'xxx', 'xnx']
     clean_kws = []
     
@@ -174,27 +181,6 @@ def load_external_keywords():
     return clean_kws
 
 EXTERNAL_SEO_KEYWORDS = load_external_keywords()
-
-def map_seo_keywords_to_product(product_name, category):
-    """Finds best matching external keywords for a specific product."""
-    if not EXTERNAL_SEO_KEYWORDS:
-        return []
-        
-    matched_kws = []
-    p_name_lower = product_name.lower()
-    cat_lower = category.lower()
-    
-    for kw in EXTERNAL_SEO_KEYWORDS:
-        kw_core = kw.replace('price in pakistan', '').replace('online', '').strip()
-        kw_words = set(kw_core.split())
-        product_words = set(p_name_lower.split())
-        
-        if len(kw_words.intersection(product_words)) >= 1 or kw_core in cat_lower:
-            matched_kws.append(kw)
-            if len(matched_kws) >= 3: 
-                break
-                
-    return matched_kws
 # ==============================================================================
 # 2000 NAMES DATABASE
 # ==============================================================================
