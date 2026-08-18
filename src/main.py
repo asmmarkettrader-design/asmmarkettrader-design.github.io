@@ -3430,36 +3430,6 @@ def process_woocommerce_csv():
         window.addEventListener('load', function(){try{const u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){if(u.name)document.getElementById('fullName').value=u.name;if(u.email)document.getElementById('emailAddr').value=u.email;if(u.phone)document.getElementById('phoneNum').value=u.phone;if(u.address)document.getElementById('addressInput').value=u.address}}catch(e){} renderCart();updateDeliveryEstimate();});
     </script>
     """
-                
-                // Save Order Locally for Tracking Page
-                try {
-                    let savedOrders = JSON.parse(localStorage.getItem('asm_orders')) || [];
-                    savedOrders.unshift({orderId: oId, total: document.getElementById('totalField').value, products: document.getElementById('productField').value, status: 'Confirmed', createdAt: new Date().toISOString()});
-                    localStorage.setItem('asm_orders', JSON.stringify(savedOrders.slice(0, 20)));
-                } catch(e) {}
-
-                // Trustpilot & Cleanup
-                if (typeof sendTrustpilotInvitation === 'function') {
-                    sendTrustpilotInvitation();
-                }
-                
-                let customerEmail = document.getElementById('emailAddr').value;
-                if(customerEmail) localStorage.setItem('asm_customer_email', customerEmail);
-                
-                const urlParams = new URLSearchParams(window.location.search);
-                if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
-                if(typeof updateCartBadge === 'function') updateCartBadge();
-                
-                // Redirect to Success Page
-                setTimeout(() => {
-                    window.location.href = '/order-success.html';
-                }, 800); 
-                
-            }).catch(error => {
-                showToast('Network Error! Order not placed. Try WhatsApp instead.', 'fa-wifi', 'red');
-                btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
-                btn.disabled = false;
-            });
     
     checkout_html += checkout_script + get_html_footer()
     with open("output/checkout.html", "w", encoding="utf-8") as f:
