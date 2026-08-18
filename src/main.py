@@ -3378,12 +3378,7 @@ def process_woocommerce_csv():
             // 🌟 YEH LINE MISSING THI (Tracking ID generate karne ke liye) 🌟
             let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
 
-            // 1. Formspree / Email Data
-            const formData = new FormData(this);
-            // Formspree me bhi Order ID add kar dete hain taa ke email me bhi aa jaye
-            formData.append("Tracking_ID", oId);
-            
-            // 2. Google Sheets Database Data
+           // 🌟 GOOGLE SHEETS & AUTOMATIC EMAIL ENGINE 🌟
             let orderData = {
                 orderId: oId, 
                 name: document.getElementById('fullName').value,
@@ -3396,61 +3391,46 @@ def process_woocommerce_csv():
                 total: document.getElementById('totalField').value
             };
 
-            // Aap ka laya hua Google Apps Script URL
+            // ⚠️ Yahan apna Naya wala Google Script URL dalein (agar change hua hai) ⚠️
             const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec';
 
-            // Pehle Google Sheet mein data bhejein
+            // Sirf ek hi request jayegi jo Sheet me save bhi karegi aur 2 Emails bhi bhejegii
             fetch(GOOGLE_SHEET_URL, {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(orderData)
             }).then(() => {
-                console.log("Order safely saved to Google Sheets database!");
-            }).catch(err => console.log("Database error: ", err));
+                
+                // Save Order Locally for Tracking Page
+                try {
+                    let savedOrders = JSON.parse(localStorage.getItem('asm_orders')) || [];
+                    savedOrders.unshift({orderId: oId, total: document.getElementById('totalField').value, products: document.getElementById('productField').value, status: 'Confirmed', createdAt: new Date().toISOString()});
+                    localStorage.setItem('asm_orders', JSON.stringify(savedOrders.slice(0, 20)));
+                } catch(e) {}
 
-            try {
-                let savedOrders = JSON.parse(localStorage.getItem('asm_orders')) || [];
-                savedOrders.unshift({orderId: oId, total: document.getElementById('totalField').value, products: document.getElementById('productField').value, status: 'Confirmed', createdAt: new Date().toISOString()});
-                localStorage.setItem('asm_orders', JSON.stringify(savedOrders.slice(0, 20)));
-            } catch(e) {}
-
-            // Phir aapko Email (Formspree) par notification bhejein
-            fetch('https://formspree.io/f/xjgnlgpw', {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    if (typeof sendTrustpilotInvitation === 'function') {
-                        sendTrustpilotInvitation();
-                    }
-                    
-                    let customerEmail = document.getElementById('emailAddr').value;
-                    if(customerEmail) localStorage.setItem('asm_customer_email', customerEmail);
-                    
-                    const urlParams = new URLSearchParams(window.location.search);
-                    if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
-                    if(typeof updateCartBadge === 'function') updateCartBadge();
-                    
-                    setTimeout(() => {
-                        window.location.href = '/order-success.html';
-                    }, 800); 
-                    
-                } else {
-                    showToast('Error submitting order. Try again.', 'fa-exclamation-circle', 'red');
-                    btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
-                    btn.disabled = false;
+                // Trustpilot & Cleanup
+                if (typeof sendTrustpilotInvitation === 'function') {
+                    sendTrustpilotInvitation();
                 }
+                
+                let customerEmail = document.getElementById('emailAddr').value;
+                if(customerEmail) localStorage.setItem('asm_customer_email', customerEmail);
+                
+                const urlParams = new URLSearchParams(window.location.search);
+                if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
+                if(typeof updateCartBadge === 'function') updateCartBadge();
+                
+                // Redirect to Success Page
+                setTimeout(() => {
+                    window.location.href = '/order-success.html';
+                }, 800); 
+                
             }).catch(error => {
-                showToast('Network Error! Try WhatsApp instead.', 'fa-wifi', 'red');
+                showToast('Network Error! Order not placed. Try WhatsApp instead.', 'fa-wifi', 'red');
                 btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
                 btn.disabled = false;
             });
-        });
-        window.addEventListener('load', function(){try{const u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){if(u.name)fullName.value=u.name;if(u.email)emailAddr.value=u.email;if(u.phone)phoneNum.value=u.phone;if(u.address)addressInput.value=u.address}}catch(e){} renderCart();updateDeliveryEstimate();});
-    </script>
-    """
     
     checkout_html += checkout_script + get_html_footer()
     with open("output/checkout.html", "w", encoding="utf-8") as f:
