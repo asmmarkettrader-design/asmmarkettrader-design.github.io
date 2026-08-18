@@ -14,10 +14,21 @@ import time
 from datetime import datetime, timedelta
 
 # ===== ASM VEO ADVANCED SHOPPING ENGINE: PHASES 1-9 =====
-PAKISTAN_DELIVERY_ZONES = {'Karachi': (250, 2, 3), 'Lahore': (250, 2, 3), 'Islamabad': (250, 2, 3), 'Rawalpindi': (250, 2, 3), 'Faisalabad': (250, 2, 4), 'Multan': (250, 2, 4), 'Gujranwala': (250, 2, 4), 'Sialkot': (250, 2, 4), 'Peshawar': (300, 3, 5), 'Quetta': (350, 4, 6), 'Hyderabad': (250, 2, 4), 'Bahawalpur': (300, 3, 5), 'Sargodha': (300, 3, 5), 'Sukkur': (300, 3, 5), 'Larkana': (300, 3, 5), 'Sheikhupura': (250, 2, 4), 'Mardan': (300, 3, 5), 'Abbottabad': (300, 3, 5), 'Mansehra': (300, 3, 5), 'Haripur': (300, 3, 5), 'Nowshera': (300, 3, 5), 'Swat': (350, 4, 6), 'Dir': (350, 4, 6), 'Chitral': (400, 5, 7), 'Bannu': (350, 4, 6), 'Charsadda': (300, 3, 5), 'Muzaffarabad': (350, 4, 6), 'Mirpur': (300, 3, 5), 'Kotli': (350, 4, 6), 'Bhimber': (350, 4, 6)}
+PAKISTAN_DELIVERY_ZONES = {
+    'Karachi': (149, 2, 3), 'Lahore': (149, 2, 3), 'Islamabad': (149, 2, 3),
+    'Rawalpindi': (149, 2, 3), 'Faisalabad': (149, 2, 4), 'Multan': (149, 2, 4),
+    'Gujranwala': (149, 2, 4), 'Sialkot': (149, 2, 4), 'Peshawar': (149, 3, 5),
+    'Quetta': (149, 4, 6), 'Hyderabad': (149, 2, 4), 'Bahawalpur': (149, 3, 5),
+    'Sargodha': (149, 3, 5), 'Sukkur': (149, 3, 5), 'Larkana': (149, 3, 5),
+    'Sheikhupura': (149, 2, 4), 'Mardan': (149, 3, 5), 'Abbottabad': (149, 3, 5),
+    'Mansehra': (149, 3, 5), 'Haripur': (149, 3, 5), 'Nowshera': (149, 3, 5),
+    'Swat': (149, 4, 6), 'Dir': (149, 4, 6), 'Chitral': (149, 5, 7),
+    'Bannu': (149, 4, 6), 'Charsadda': (149, 3, 5), 'Muzaffarabad': (149, 4, 6),
+    'Mirpur': (149, 3, 5), 'Kotli': (149, 4, 6), 'Bhimber': (149, 4, 6)
+}
 
 def delivery_info_for_city(city):
-    c=PAKISTAN_DELIVERY_ZONES.get(city,(300,3,6)); return {"charge":c[0],"min_days":c[1],"max_days":c[2]}
+    c=PAKISTAN_DELIVERY_ZONES.get(city,(149,3,6)); return {"charge":c[0],"min_days":c[1],"max_days":c[2]}
 
 def infer_brand(product_name):
     known=['Apple','Samsung','Vivo','Oppo','Xiaomi','Realme','Huawei','Sony','JBL','Anker','Arabiyat','Himalaya','Dove','Golden Pearl','Fitron','Nutella','Buldak','Pokemon']
@@ -161,78 +172,104 @@ def map_daraz_keyword(product_name):
             return keyword
     return None
 # ==============================================================================
-# EXTERNAL CSV KEYWORDS MATCHER (SMART SEO)
-# ==============================================================================
+# EXTERNAL CSV KEYWORDS MATCHER (FAST + RELEVANCE-BASED SEO)
+# ============================================================================== 
+KEYWORD_STOPWORDS = {
+    'in','on','at','for','to','of','and','the','a','an','with','from','near','best',
+    'online','buy','shop','shopping','price','prices','pakistan','pk','cheap','sale'
+}
+EXTERNAL_SEO_KEYWORDS = []
+KEYWORD_TOKEN_INDEX = {}
+PRODUCT_KEYWORD_USAGE = set()
+
+
+def _keyword_tokens(text):
+    words = re.findall(r'[a-z0-9]+', str(text).lower())
+    return {w for w in words if len(w) >= 3 and w not in KEYWORD_STOPWORDS}
+
+
 def load_external_keywords():
-    """Reads SEO CSV files. Handles Semrush hidden columns automatically."""
+    """Load keyword CSVs once and build an inverted token index for fast product matching."""
     print("📈 Loading External SEO Keywords from CSV files...")
-    all_kws = []
-    
-    files = glob.glob("keywords/*.csv") + glob.glob("src/keywords/*.csv")
-    
+    files = sorted(set(
+        glob.glob('keywords/*.csv') + glob.glob('keywords/**/*.csv', recursive=True) +
+        glob.glob('src/keywords/*.csv') + glob.glob('src/keywords/**/*.csv', recursive=True)
+    ))
     if not files:
-        print("⚠️ No CSV files found in 'keywords' folder. Skipping external SEO.")
+        print("⚠️ No CSV files found in keywords/ or src/keywords/. Blog SEO will use product/category terms only.")
         return []
-        
+
+    blocked = {'daraz','aliexpress','amazon','olx','xnxx','sex','porn','xxx','xnx'}
+    values = set()
     for file in files:
         try:
-            with open(file, mode='r', encoding='utf-8-sig', errors='ignore') as f:
+            with open(file, 'r', encoding='utf-8-sig', errors='ignore', newline='') as f:
                 reader = csv.reader(f)
-                count = 0
-                for row in reader:
-                    if len(row) < 2: continue
-                    
-                    # Semrush Header ko skip karein
-                    if 'keyword' in str(row[0]).lower() or 'keyword' in str(row[1]).lower():
-                        continue
-                        
-                    # 🌟 Semrush CSV Fix: Agar pehla column khali hai to doosra (index 1) utha le 🌟
-                    val = str(row[0]).strip() if str(row[0]).strip() else str(row[1]).strip()
-                    
-                    if val:
-                        all_kws.append(val)
-                        count += 1
-                        
-            print(f"✔️ {file}: {count} keywords loaded.")
-        except Exception as e:
-            print(f"❌ Error reading {file}: {e}")
-            
-    # Daraz aur fuzool words ko nikalne ke liye Strict Filter
-    blocked_words = ['daraz', 'aliexpress', 'amazon', 'olx', 'xnxx', 'sex', 'porn', 'xxx', 'xnx']
-    clean_kws = []
-    
-    for kw in all_kws:
-        kw = str(kw).lower().strip()
-        if kw and not any(bw in kw for bw in blocked_words):
-            clean_kws.append(kw)
-            
-    clean_kws = list(set(clean_kws))
-    print(f"✅ Extracted {len(clean_kws)} clean, highly-ranked SEO keywords without competitor names!")
-    return clean_kws
+                rows = list(reader)
+            for row in rows:
+                if not row:
+                    continue
+                # Prefer the first non-empty cell that looks like a search phrase.
+                candidates = [str(cell).strip() for cell in row[:6] if str(cell).strip()]
+                if not candidates:
+                    continue
+                if any(c.lower() in {'keyword','keywords','search term','search query'} for c in candidates):
+                    continue
+                # Semrush/keyword exports can place the keyword in column 2 or 3.
+                val = next((c.lower().strip() for c in candidates if re.search(r'[a-z]', c) and not re.fullmatch(r'[\d.,%$+-]+', c)), '')
+                if len(val) < 2 or len(val) > 120:
+                    continue
+                if any(b in val for b in blocked):
+                    continue
+                values.add(re.sub(r'\s+', ' ', val))
+            print(f"✔️ {file}: keywords scanned.")
+        except Exception as exc:
+            print(f"❌ Error reading {file}: {exc}")
+
+    keywords = sorted(values, key=lambda x: (len(_keyword_tokens(x)), len(x)), reverse=True)
+    # Keep the index compact; an enormous keyword list slows both builds and browsers.
+    if len(keywords) > 12000:
+        keywords = keywords[:12000]
+    for kw in keywords:
+        for token in _keyword_tokens(kw):
+            KEYWORD_TOKEN_INDEX.setdefault(token, []).append(kw)
+    print(f"✅ Loaded {len(keywords)} clean SEO keywords; indexed {len(KEYWORD_TOKEN_INDEX)} useful terms.")
+    return keywords
+
 
 EXTERNAL_SEO_KEYWORDS = load_external_keywords()
-def map_seo_keywords_to_product(product_name, category):
-    """Finds best matching external keywords for a specific product."""
+
+
+def map_seo_keywords_to_product(product_name, category, limit=5):
+    """Return only genuinely relevant CSV keywords for a product; avoids keyword stuffing."""
     if not EXTERNAL_SEO_KEYWORDS:
         return []
-        
-    matched_kws = []
-    p_name_lower = product_name.lower()
-    cat_lower = category.lower()
-    
-    for kw in EXTERNAL_SEO_KEYWORDS:
-        # Keyword ke alfaaz ko alag alag kar ke match karein
-        kw_core = kw.replace('price in pakistan', '').replace('online', '').strip()
-        kw_words = set(kw_core.split())
-        product_words = set(p_name_lower.split())
-        
-        # Agar keyword ka koi bhi lafz product ke naam ya category se match karta hai to add kar lo
-        if len(kw_words.intersection(product_words)) >= 1 or kw_core in cat_lower:
-            matched_kws.append(kw)
-            if len(matched_kws) >= 3: # Har product ke liye 3 best keywords kafi hain
-                break
-                
-    return matched_kws
+    product_tokens = _keyword_tokens(product_name)
+    category_tokens = _keyword_tokens(category)
+    candidates = set()
+    for token in product_tokens | category_tokens:
+        candidates.update(KEYWORD_TOKEN_INDEX.get(token, []))
+
+    scored = []
+    name_lower = str(product_name).lower()
+    cat_lower = str(category).lower()
+    for kw in candidates:
+        kw_tokens = _keyword_tokens(kw)
+        overlap_name = len(kw_tokens & product_tokens)
+        overlap_cat = len(kw_tokens & category_tokens)
+        phrase_bonus = 8 if kw in name_lower else 0
+        category_bonus = 5 if kw in cat_lower else 0
+        score = overlap_name * 7 + overlap_cat * 4 + phrase_bonus + category_bonus
+        # Require a real topical connection, not a generic word like "online".
+        if score >= 7:
+            scored.append((score, len(kw_tokens), kw))
+
+    scored.sort(key=lambda x: (-x[0], -x[1], x[2]))
+    matches = [kw for _, _, kw in scored[:limit]]
+    PRODUCT_KEYWORD_USAGE.update(matches)
+    return matches
+
+
 # ==============================================================================
 # 2000 NAMES DATABASE
 # ==============================================================================
@@ -309,27 +346,18 @@ def make_slug(text):
     return slug
 
 def local_seo_desc(name, desc, daraz_kw=None, external_kws=None):
+    """Create concise, product-specific SEO copy without unsupported ranking/customer claims."""
+    parts = [f"Buy {name} online in Pakistan from ASM VEO."]
     if daraz_kw:
-        base_desc = f"Looking for {daraz_kw}? Buy original {name} online in Pakistan. "
-    else:
-        base_desc = f"Buy {name} online in Pakistan at best price. "
-        
-    if external_kws and len(external_kws) > 0:
-        kws_joined = ", ".join(external_kws)
-        base_desc += f"Top searches include: {kws_joined}. "
-        
-    trending_keys = fetch_trending_keywords()
-    keys_str = ", ".join(random.sample(trending_keys, 2))
-    
-    geo_stat = random.choice([
-        "Trusted by 10,000+ verified customers.", 
-        "98% positive reviews from buyers.", 
-        "Ranked #1 for quality.",
-        "Over 5,000 units sold nationwide."
-    ])
-    
-    full_desc = base_desc + f"{keys_str}. Premium quality with Cash on Delivery, fast shipping & easy returns from ASM VEO. {geo_stat}"
-    return full_desc[:160]
+        parts.append(f"Search term: {daraz_kw}.")
+    if external_kws:
+        parts.append("Related searches: " + ", ".join(external_kws[:3]) + ".")
+    clean = re.sub(r'\s+', ' ', desc or '').strip()
+    if clean:
+        parts.append(clean[:90])
+    parts.append("Cash on Delivery, Rs 149 standard delivery, and easy returns.")
+    return re.sub(r'\s+', ' ', ' '.join(parts))[:160]
+
 
 def check_valid_image(prod):
     try:
@@ -439,7 +467,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                     product_data=None, breadcrumb_data=None, og_image=None, custom_canonical=None):
     
     cat_links = ""
-    for cat in categories_list:
+    for cat in categories_list[:12]:
         c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
         cat_links += f"""
         <a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
@@ -455,6 +483,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
     safe_title = title[:60] + "..." if len(title) > 60 else title
     safe_desc = seo_desc[:125] + "..." if seo_desc and len(seo_desc) > 125 else (seo_desc or "Premium online shopping in Pakistan with Cash on Delivery.")
+    keyword_meta = ", ".join(product_data.get('seo_keywords', [])[:5]) if product_data and product_data.get('seo_keywords') else ""
+    keyword_meta = (keyword_meta + ", " if keyword_meta else "") + f"buy {safe_title} in Pakistan, {safe_title} price in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO"
     
     structured_data = """
     <script type="application/ld+json">
@@ -535,7 +565,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
               "@type": "OfferShippingDetails",
               "shippingRate": {{
                 "@type": "MonetaryAmount",
-                "value": "250",
+                "value": "149",
                 "currency": "PKR"
               }},
               "shippingDestination": {{
@@ -616,7 +646,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     
     <meta name="title" content="{safe_title} | ASM VEO">
     <meta name="description" content="{safe_desc}">
-    <meta name="keywords" content="buy {safe_title} in Pakistan, {safe_title} price in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO">
+    <meta name="keywords" content="{keyword_meta}">
     <meta name="author" content="ASM Digital Solutions">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#E53935">
@@ -656,7 +686,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <script>
         tailwind.config = {{
             darkMode: 'class',
@@ -903,11 +933,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function smartSearchResults(query) {{
             query=String(query||'').toLowerCase().trim(); if(!query) return [];
             const synonyms={{mobile:'smartphone',phone:'mobile',earbuds:'earphone',perfume:'fragrance',ladies:'women',men:'mens',laptop:'computer'}};
-            const terms=query.split(/\s+/).map(t=>synonyms[t]||t);
+            const terms=query.split(/\\s+/).map(t=>synonyms[t]||t);
             function sim(a,b){{if(a===b)return 1;if(a.includes(b)||b.includes(a))return .8;return 0;}}
             return (typeof searchIndex==='undefined'?[]:searchIndex.map(p=>{{
                 let hay=(p.name+' '+p.category+' '+(p.brand||'')).toLowerCase(),score=0;
-                terms.forEach(t=>{{if(hay.includes(t))score+=10;else hay.split(/\s+/).forEach(w=>score+=Math.round(sim(t,w)*3));}});
+                terms.forEach(t=>{{if(hay.includes(t))score+=10;else hay.split(/\\s+/).forEach(w=>score+=Math.round(sim(t,w)*3));}});
                 if(hay.includes(query))score+=20; return {{p,score}};
             }}).filter(x=>x.score>=4).sort((a,b)=>b.score-a.score).map(x=>x.p));
         }}
@@ -1353,104 +1383,115 @@ def get_html_footer():
 """
 
 # ==============================================================================
-# BLOG GENERATOR (NEW: 100 SEO Articles Logic)
-# ==============================================================================
+# BLOG GENERATOR (KEYWORD-DRIVEN + PERFORMANCE SAFE)
+# ============================================================================== 
+MAX_SEO_BLOGS = 30
 
-def generate_blog_pages(categories_list):
-    print("✍️ Generating 100 SEO Blog Articles...")
-    os.makedirs("output/blog", exist_ok=True)
-    
-    blog_topics = [
-        {"title": "Best Online Shopping Sites in Pakistan 2026", "kw": "online shopping pakistan"},
-        {"title": "Top 10 Smart Gadgets You Need This Year", "kw": "smart gadgets pakistan"},
-        {"title": "Men's Fashion Guide: What to Wear in Summer", "kw": "men's fashion pakistan"},
-        {"title": "Affordable Beauty Products for Glowing Skin", "kw": "beauty products pakistan"},
-        {"title": "Kitchen Gadgets That Will Save Your Time", "kw": "kitchen accessories pakistan"},
-        {"title": "Why Cash on Delivery is Best in Pakistan", "kw": "cash on delivery pakistan"},
-        {"title": "The Ultimate Guide to Buying Electronics Online", "kw": "buy electronics online"},
-        {"title": "Trendy Women's Fashion in Pakistan", "kw": "women's fashion pakistan"},
-        {"title": "Top Car Accessories for Road Trips", "kw": "car accessories pakistan"},
-        {"title": "How to Setup a Smart Home on a Budget", "kw": "smart home products pakistan"}
-    ]
-    
+
+def _keyword_category(keyword, categories_list):
+    kt = _keyword_tokens(keyword)
+    best = None
+    best_score = 0
+    for cat in categories_list:
+        score = len(kt & _keyword_tokens(cat))
+        if score > best_score:
+            best, best_score = cat, score
+    return best
+
+
+def generate_blog_pages(categories_list, products_list=None):
+    """Generate a small set of useful articles from unused CSV keywords.
+    We deliberately cap this at 30 to avoid thousands of thin pages and slow builds."""
+    print("✍️ Generating keyword-focused SEO blog articles...")
+    os.makedirs('output/blog', exist_ok=True)
+    products_list = products_list or []
+
+    remaining = [kw for kw in EXTERNAL_SEO_KEYWORDS if kw not in PRODUCT_KEYWORD_USAGE]
+    # Prefer phrases with 2+ useful terms; avoid near-duplicates.
+    candidates = []
+    seen_stems = set()
+    for kw in remaining:
+        toks = _keyword_tokens(kw)
+        if len(toks) < 2:
+            continue
+        stem = ' '.join(sorted(toks))
+        if stem in seen_stems:
+            continue
+        seen_stems.add(stem)
+        candidates.append(kw)
+        if len(candidates) >= MAX_SEO_BLOGS:
+            break
+
+    # If CSV is unavailable or small, supplement with real category topics.
+    if len(candidates) < 8:
+        for cat in categories_list:
+            kw = f"{cat} in Pakistan"
+            if kw.lower() not in {x.lower() for x in candidates}:
+                candidates.append(kw)
+            if len(candidates) >= min(MAX_SEO_BLOGS, 8):
+                break
+
     all_blogs = []
-    for i in range(1, 101):
-        base = blog_topics[i % 10]
-        title = f"{base['title']} - Part {i}" if i > 10 else base['title']
+    for kw in candidates[:MAX_SEO_BLOGS]:
+        category = _keyword_category(kw, categories_list)
+        related = []
+        if category:
+            related = [p for p in products_list if p.get('category') == category][:6]
+        if len(related) < 6:
+            # Fill with products sharing keyword tokens.
+            kt = _keyword_tokens(kw)
+            extra = [p for p in products_list if kt & _keyword_tokens(p.get('name',''))]
+            for p in extra:
+                if p not in related:
+                    related.append(p)
+                if len(related) >= 6:
+                    break
+
+        title = f"{kw.title()} – Buying Guide & Best Picks in Pakistan"
         slug = make_slug(title)
-        
-        # 🌟 GEO FIX: Semantic Chunking for AI models in Blog 🌟
+        product_links = ''.join(
+            f'<li><a class="text-[#E53935] font-bold hover:underline" href="/product/{p["slug"]}.html">{p["name"]}</a> – Rs {p["final_price"]}</li>'
+            for p in related[:6]
+        )
+        category_link = ''
+        if category:
+            cslug = make_slug(category)
+            category_link = f'<a href="/category/{cslug}.html" class="inline-block bg-[#E53935] text-white px-5 py-3 rounded-xl font-bold">Browse {category}</a>'
+
         content = f"""
-        <div class="container mx-auto px-4 py-16 max-w-4xl prose dark:prose-invert">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-[#E53935] dark:text-white mb-6">{title}</h1>
-            <div class="flex items-center gap-4 text-sm text-gray-500 mb-8 border-b pb-4">
-                <span><i class="fas fa-calendar"></i> {datetime.now().strftime('%B %d, %Y')}</span>
-                <span><i class="fas fa-user"></i> ASM Digital Solutions</span>
-                <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded font-bold">{base['kw']}</span>
-            </div>
-            
-            <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700">
-                <h2 class="text-2xl font-bold mb-4">Introduction to {base['kw']}</h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                    When it comes to <strong>{base['kw']}</strong>, ASM VEO stands out as a trusted leader. 
-                    According to a recent 2026 survey, <em>over 78% of consumers</em> prefer platforms that offer reliable cash on delivery and 100% original products.
-                </p>
-                
-                <h3 class="text-xl font-bold mb-3">Key Features to Look For</h3>
-                <ul class="list-disc pl-6 mb-6 text-gray-600 dark:text-gray-300">
-                    <li>Authenticity and warranty of products.</li>
-                    <li>Fast shipping across major cities like Karachi, Lahore, and Islamabad.</li>
-                    <li>Secure packaging and easy return policies.</li>
-                </ul>
-                
-                <h3 class="text-xl font-bold mb-3">Customer Quotation</h3>
-                <blockquote class="border-l-4 border-[#E53935] pl-4 italic text-gray-700 dark:text-gray-400 mb-6 bg-gray-50 dark:bg-gray-900 p-4 rounded-r-lg">
-                    "I always struggle with finding genuine items online, but discovering ASM VEO changed my perspective on {base['kw']}. Highly recommended!" — Sarah A., Lahore.
-                </blockquote>
-                
-                <h2 class="text-2xl font-bold mb-4">Conclusion</h2>
-                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    If you want to experience the best in Pakistan, always choose platforms that prioritize user trust. Explore our store today for premium collections.
-                </p>
-            </div>
-            <div class="mt-8 text-center">
-                <a href="/index.html#products" class="inline-block bg-[#E53935] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#C62828] transition shadow-lg">Start Shopping Now</a>
-            </div>
-        </div>
-        """
-        all_blogs.append({"title": title, "slug": slug, "content": content})
-        
-        full_html = get_html_header(title, categories_list, f"Read about {title}. Learn more about {base['kw']} in Pakistan at ASM VEO Blog.", custom_canonical=f"https://www.asmveo.com/blog/{slug}.html") + content + get_html_footer()
-        with open(f"output/blog/{slug}.html", "w", encoding="utf-8") as f:
+        <main class="container mx-auto px-4 py-12 max-w-4xl">
+          <article class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700 p-6 md:p-10">
+            <nav class="text-sm text-gray-500 mb-5" aria-label="Breadcrumb"><a href="/index.html">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; <span>{kw}</span></nav>
+            <h1 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white mb-5">{title}</h1>
+            <p class="text-gray-600 dark:text-gray-300 leading-8 mb-8">Looking for <strong>{kw}</strong> in Pakistan? This ASM VEO guide helps shoppers compare relevant products, understand what to check before buying, and find related options available from our store.</p>
+            <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-3">What to check before buying</h2>
+            <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-2 mb-8">
+              <li>Compare the product specification with your actual requirement.</li>
+              <li>Check price, availability, product images and delivery information.</li>
+              <li>Choose the option that offers the best balance of quality, features and value.</li>
+              <li>For online orders in Pakistan, confirm your city and delivery details at checkout.</li>
+            </ul>
+            <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-3">Related products</h2>
+            <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-2 mb-8">{product_links or '<li>Explore our latest collections for more options.</li>'}</ul>
+            <div class="flex flex-wrap gap-3">{category_link}<a href="/index.html" class="border border-gray-300 dark:border-gray-600 px-5 py-3 rounded-xl font-bold">Shop All Products</a></div>
+          </article>
+        </main>"""
+        all_blogs.append({'title': title, 'slug': slug, 'keyword': kw, 'content': content})
+        full_html = get_html_header(title, categories_list, f"{title}. Helpful shopping guide for Pakistan with related products from ASM VEO.", custom_canonical=f"https://www.asmveo.com/blog/{slug}.html") + content + get_html_footer()
+        with open(f'output/blog/{slug}.html', 'w', encoding='utf-8') as f:
             f.write(minify_html(full_html))
 
-    # Generate Blog Index Page
-    blog_index = f"""
-    <div class="animated-bg py-16 mb-8 text-center text-white relative overflow-hidden">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 relative z-10">ASM VEO Official Blog</h1>
-        <p class="text-lg text-gray-200 relative z-10">Latest News, Guides, and Trends in Pakistan</p>
-    </div>
-    <div class="container mx-auto px-4 pb-16 max-w-6xl">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    """
-    for blog in all_blogs[:30]: 
-        blog_index += f"""
-        <a href="/blog/{blog['slug']}.html" class="bg-white dark:bg-gray-800 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700 p-6 hover:shadow-xl hover:-translate-y-1 transition transform flex flex-col h-full group">
-            <div class="w-12 h-12 bg-gray-50 dark:bg-gray-700 rounded-full flex items-center justify-center mb-4 text-[#E53935] group-hover:bg-[#E53935] group-hover:text-white transition">
-                <i class="fas fa-newspaper text-xl"></i>
-            </div>
-            <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2">{blog['title']}</h2>
-            <p class="text-sm text-gray-500 mt-auto flex items-center gap-2"><i class="fas fa-arrow-right"></i> Read Article</p>
-        </a>
-        """
-    blog_index += "</div></div>"
-    
-    full_index_html = get_html_header("Our Blog - ASM VEO", categories_list, "Read the latest e-commerce and shopping blogs in Pakistan by ASM VEO.", custom_canonical="https://www.asmveo.com/blog.html") + blog_index + get_html_footer()
-    with open("output/blog.html", "w", encoding="utf-8") as f:
+    cards = ''.join(
+        f'<a href="/blog/{b["slug"]}.html" class="bg-white dark:bg-gray-800 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700 p-6 hover:shadow-xl transition flex flex-col h-full"><h2 class="text-lg font-bold text-gray-900 dark:text-white mb-2">{b["title"]}</h2><p class="text-sm text-gray-500 mt-auto">Read guide →</p></a>'
+        for b in all_blogs
+    )
+    blog_index = f'<div class="animated-bg py-12 mb-8 text-center text-white"><h1 class="text-4xl font-black">ASM VEO Shopping Guides</h1><p class="mt-2">Useful product and buying guides for shoppers in Pakistan</p></div><div class="container mx-auto px-4 pb-16"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">{cards}</div></div>'
+    full_index_html = get_html_header('Shopping Guides - ASM VEO', categories_list, 'Useful product buying guides and shopping topics for Pakistan.', custom_canonical='https://www.asmveo.com/blog.html') + blog_index + get_html_footer()
+    with open('output/blog.html', 'w', encoding='utf-8') as f:
         f.write(minify_html(full_index_html))
-    
-    return [f"https://www.asmveo.com/blog/{b['slug']}.html" for b in all_blogs] + ["https://www.asmveo.com/blog.html"]
-    # ==============================================================================
+    print(f'✅ Generated {len(all_blogs)} focused blog pages from unused keywords.')
+    return [f"https://www.asmveo.com/blog/{b['slug']}.html" for b in all_blogs] + ['https://www.asmveo.com/blog.html']
+
 # STATIC PAGES GENERATION
 # ==============================================================================
 
@@ -1470,7 +1511,7 @@ def generate_static_pages(categories_list, products_list=None):
 <title>Finding Your Product | ASM VEO</title>
 <meta name="robots" content="noindex,follow">
 <script src="/search-data.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com" defer></script>
 </head>
 <body class="bg-gray-50 min-h-screen">
 <main class="max-w-5xl mx-auto px-4 py-12">
@@ -1485,11 +1526,11 @@ def generate_static_pages(categories_list, products_list=None):
 (function(){
 const categories=__CATEGORY_JSON__;
 const path=decodeURIComponent(window.location.pathname||"").toLowerCase();
-const slugify=s=>String(s||"").toLowerCase().replace(/\.html?$/i,"").replace(/[^a-z0-9]+/g," ").trim();
+const slugify=s=>String(s||"").toLowerCase().replace(/\\.html?$/i,"").replace(/[^a-z0-9]+/g," ").trim();
 const stop=new Set(["the","and","for","with","from","online","buy","shop","in","of","new","best","asm","veo","product","products"]);
-const tokens=s=>slugify(s).split(/\s+/).filter(x=>x.length>2&&!stop.has(x));
+const tokens=s=>slugify(s).split(/\\s+/).filter(x=>x.length>2&&!stop.has(x));
 const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const raw=path.replace(/^\/+/,"").replace(/^(product|products|collections|collection|pages)\//,"").replace(/^category\//,"").replace(/\.html?$/i,"").replace(/-\d+$/,"");
+const raw=path.replace(/^\\/+/,"").replace(/^(product|products|collections|collection|pages)\\//,"").replace(/^category\\//,"").replace(/\\\\.html?$/i,"").replace(/-\\d+$/,"");
 const q=tokens(raw);
 const products=Array.isArray(window.searchIndex)?window.searchIndex:[];
 function productScore(p){
@@ -1532,7 +1573,7 @@ setTimeout(()=>location.replace(destination),2200);
         "contact.html": ("Contact Us", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold text-[#E53935] dark:text-white mb-8 text-center">Contact Us</h1><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">WhatsApp Support</h2><p class="text-gray-600 dark:text-gray-300 mb-6">Quick and instant support for all your queries. Message us anytime!</p><a href="https://wa.me/923425478683" class="inline-block bg-green-500 text-white font-black py-4 px-8 rounded-xl hover:bg-green-600 transition shadow-lg w-full text-center"><i class="fab fa-whatsapp mr-2"></i> 0342 54 786 83</a></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700"><i class="fas fa-headset text-6xl text-[#E53935] mb-4"></i><h2 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Business Hours</h2><ul class="text-gray-600 dark:text-gray-300 space-y-2"><li class="flex justify-between"><span>Monday - Sunday</span><span class="font-bold">9AM - 11PM</span></li></ul><div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-building mr-2 text-[#E53935]"></i> ASM Digital Solutions</p><p class="text-sm text-gray-600 dark:text-gray-400 mt-1"><i class="fas fa-user-tie mr-2 text-[#E53935]"></i> CEO: Ali Abbas</p></div></div></div></div>"""),
         "privacy.html": ("Privacy Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl prose dark:prose-invert"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Privacy Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>At ASM VEO, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Information We Collect</h2><p>We collect your name, phone number, email, and shipping address when you place an order.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">Data Security</h2><p>We use SSL encryption to protect your data. We never share your personal information with third parties except for shipping purposes.</p></div></div>"""),
         "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 2-4 business days.</p></div></div>"""),
-        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 250.</li></ul></div></div>"""),
+        "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 149.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
         "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#E53935] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#E53935]"><button onclick="trackLocalOrder()" class="bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#C62828]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>window.addEventListener('load',()=>{const q=new URLSearchParams(location.search).get('id');if(q)document.getElementById('trackOrderInput').value=q});function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Pending','Confirmed','Shipped','Delivered'];const status=o.status||'Confirmed';const idx=steps.indexOf(status);r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#E53935]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">City: <strong>'+(o.city||'Pakistan')+'</strong> • Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div>"""),
         "account.html": ("My Account", """<div class="container mx-auto px-4 py-12 max-w-5xl"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-200 dark:border-gray-700"><div class="text-center mb-8"><i class="fas fa-user-circle text-5xl text-[#E53935]"></i><h1 class="text-3xl font-black text-gray-900 dark:text-white mt-3">My ASM VEO Account</h1><p class="text-gray-500 mt-2">Save your details and view your order history on this device.</p></div><form id="accountForm" class="grid md:grid-cols-2 gap-4"><input id="accName" required placeholder="Full Name" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accEmail" type="email" placeholder="Email" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accPhone" required placeholder="03XXXXXXXXX" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accAddress" placeholder="Default Delivery Address" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><button class="md:col-span-2 bg-[#E53935] text-white py-3 rounded-xl font-bold">Save Profile</button></form><div class="mt-8 bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><h2 class="font-black text-xl mb-3 text-gray-900 dark:text-white">Recent Orders</h2><div id="accountOrders" class="space-y-3"></div></div><p class="text-xs text-gray-400 mt-5">This static-site account uses browser storage and is not a server-authenticated login.</p></div><script>function renderAccount(){let u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){accName.value=u.name||'';accEmail.value=u.email||'';accPhone.value=u.phone||'';accAddress.value=u.address||''}let os=JSON.parse(localStorage.getItem('asm_orders')||'[]');accountOrders.innerHTML=os.length?os.slice(0,10).map(o=>'<div class="flex items-center justify-between gap-3 p-3 bg-white dark:bg-gray-800 rounded-xl"><span class="font-bold">'+o.orderId+'</span><span>'+o.total+'</span><a class="text-[#E53935] font-bold text-xs" href="/track-order.html?id='+encodeURIComponent(o.orderId)+'">Track</a></div>').join(''):'<p class="text-gray-500">No local orders yet.</p>'}accountForm.addEventListener('submit',e=>{e.preventDefault();localStorage.setItem('asm_account',JSON.stringify({name:accName.value,email:accEmail.value,phone:accPhone.value,address:accAddress.value}));renderAccount();alert('Profile saved successfully.')});window.addEventListener('load',renderAccount)</script></div>"""),
@@ -1995,24 +2036,27 @@ def process_woocommerce_csv():
             products_list.append({
                 'id': product_id, 'slug': slug, 'name': name, 'category': category, 'fake_price': fake_regular_price, 
                 'final_price': final_price, 'image': image, 'images': images, 'seo_desc': seo_desc, 'full_desc': clean_description,
-                'daraz_kw': daraz_kw, 'brand': infer_brand(name)
+                'daraz_kw': daraz_kw, 'seo_keywords': csv_keywords, 'brand': infer_brand(name)
             })
 
-    print(f"⏳ Checking {len(products_list)} images to remove broken products...")
-    valid_products = []
-    
-    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
-        for result in executor.map(check_valid_image, products_list):
-            if result is not None: 
-                valid_products.append(result)
-                
-    products_list = valid_products
+    # Remote HEAD checks are slow and unreliable on large catalogs. Browser-level onerror handling
+    # plus the generated 404 recovery is faster. Enable strict checking only with STRICT_IMAGE_CHECK=1.
+    if os.environ.get('STRICT_IMAGE_CHECK') == '1':
+        print(f"⏳ Strict image validation enabled for {len(products_list)} products...")
+        valid_products = []
+        with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
+            for result in executor.map(check_valid_image, products_list):
+                if result is not None:
+                    valid_products.append(result)
+        products_list = valid_products
+    else:
+        print(f"⚡ Skipping remote image HEAD checks for faster builds ({len(products_list)} products).")
     categories_set = set(p['category'] for p in products_list) 
     categories_list = sorted(list(categories_set))
     print(f"✔ Total {len(products_list)} valid products being processed...")
     
     # 🌟 NEW: Generating 100 SEO Blogs 🌟
-    blog_urls = generate_blog_pages(categories_list)
+    blog_urls = generate_blog_pages(categories_list, products_list)
     sitemap_urls.extend(blog_urls)
     
     generate_static_pages(categories_list, products_list)
@@ -2088,6 +2132,10 @@ def process_woocommerce_csv():
                 </div>
             </div>"""
             
+        related_searches_html = ""
+        if prod.get('seo_keywords'):
+            related_searches_html = '<div class="mt-5"><h3 class="text-sm font-black text-gray-900 dark:text-white mb-2">Related searches</h3><div class="flex flex-wrap gap-2">' + ''.join([f'<a href="/index.html?search={urllib.parse.quote(k)}" class="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1.5 rounded-full text-xs font-bold hover:bg-[#E53935] hover:text-white transition">{k}</a>' for k in prod.get('seo_keywords', [])[:5]]) + '</div></div>'
+
         # 🌟 GEO FIX: Semantic Chunking for Product Descriptions 🌟
         chunked_desc = f"""
         <div class="prose dark:prose-invert max-w-none text-sm leading-relaxed mt-4">
@@ -2099,6 +2147,7 @@ def process_woocommerce_csv():
                 <li>Premium build quality ensuring durability.</li>
                 <li>Highly rated by top customers in Pakistan.</li>
             </ul>
+            {related_searches_html}
         </div>
         """
         
@@ -2267,7 +2316,7 @@ def process_woocommerce_csv():
     for city in cities:
         city_slug = make_slug(city)
         sitemap_urls.append(f"https://www.asmveo.com/city/{city_slug}.html")
-        city_prods = random.sample(products_list, min(12, len(products_list)))
+        city_prods = products_list[:min(8, len(products_list))]
         
         city_html = get_html_header(f"Online Shopping in {city}", categories_list, f"Buy products online in {city} with Cash on Delivery. Fast delivery in {city} and all over Pakistan. Premium quality at best prices.", custom_canonical=f"https://www.asmveo.com/city/{city_slug}.html")
         
@@ -2515,9 +2564,9 @@ def process_woocommerce_csv():
     valid_home_cats.sort(key=lambda x: (-len(x[1]), x[0].lower()))
     valid_home_cats.sort(key=get_cat_priority)
 
-    all_categories_list = valid_home_cats
+    all_categories_list = valid_home_cats[:6]
     cats_per_home_page = 6
-    total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page) if all_categories_list else 1
+    total_home_pages = 1 if all_categories_list else 1
 
     def build_home_display_products(cat_name, prods, limit=6):
         chosen, seen = [], set()
@@ -3133,11 +3182,11 @@ def process_woocommerce_csv():
                         </div>
                         <div class="flex justify-between text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">
                             <span>Delivery Charges</span>
-                            <span id="deliveryDisplay">Rs 250</span>
+                            <span id="deliveryDisplay">Rs 149</span>
                         </div>
                         <div class="flex justify-between items-center border-t border-gray-200 dark:border-gray-600 pt-3 mt-3">
                             <span class="font-black text-lg text-gray-900 dark:text-white">Total</span>
-                            <span class="font-black text-2xl text-[#E53935] dark:text-white" id="grandTotalDisplay">Rs 250</span>
+                            <span class="font-black text-2xl text-[#E53935] dark:text-white" id="grandTotalDisplay">Rs 149</span>
                         </div>
                     </div>
 
@@ -3159,8 +3208,8 @@ def process_woocommerce_csv():
     checkout_script = """
     <script>
         let couponApplied = false;
-        const deliveryZones = {"Karachi": [250, 2, 3], "Lahore": [250, 2, 3], "Islamabad": [250, 2, 3], "Rawalpindi": [250, 2, 3], "Faisalabad": [250, 2, 4], "Multan": [250, 2, 4], "Gujranwala": [250, 2, 4], "Sialkot": [250, 2, 4], "Peshawar": [300, 3, 5], "Quetta": [350, 4, 6], "Hyderabad": [250, 2, 4], "Bahawalpur": [300, 3, 5], "Sargodha": [300, 3, 5], "Sukkur": [300, 3, 5], "Larkana": [300, 3, 5], "Sheikhupura": [250, 2, 4], "Mardan": [300, 3, 5], "Abbottabad": [300, 3, 5], "Mansehra": [300, 3, 5], "Haripur": [300, 3, 5], "Nowshera": [300, 3, 5], "Swat": [350, 4, 6], "Dir": [350, 4, 6], "Chitral": [400, 5, 7], "Bannu": [350, 4, 6], "Charsadda": [300, 3, 5], "Muzaffarabad": [350, 4, 6], "Mirpur": [300, 3, 5], "Kotli": [350, 4, 6], "Bhimber": [350, 4, 6]};
-        function getDeliveryInfo(city){const z=deliveryZones[city]||[300,3,6];return {charge:z[0],min:z[1],max:z[2]};}
+        const deliveryZones = {"Karachi": [149, 2, 3], "Lahore": [149, 2, 3], "Islamabad": [149, 2, 3], "Rawalpindi": [149, 2, 3], "Faisalabad": [149, 2, 4], "Multan": [149, 2, 4], "Gujranwala": [149, 2, 4], "Sialkot": [149, 2, 4], "Peshawar": [149, 3, 5], "Quetta": [149, 4, 6], "Hyderabad": [149, 2, 4], "Bahawalpur": [149, 3, 5], "Sargodha": [149, 3, 5], "Sukkur": [149, 3, 5], "Larkana": [149, 3, 5], "Sheikhupura": [149, 2, 4], "Mardan": [149, 3, 5], "Abbottabad": [149, 3, 5], "Mansehra": [149, 3, 5], "Haripur": [149, 3, 5], "Nowshera": [149, 3, 5], "Swat": [149, 4, 6], "Dir": [149, 4, 6], "Chitral": [149, 5, 7], "Bannu": [149, 4, 6], "Charsadda": [149, 3, 5], "Muzaffarabad": [149, 4, 6], "Mirpur": [149, 3, 5], "Kotli": [149, 4, 6], "Bhimber": [149, 4, 6]};
+        function getDeliveryInfo(city){const z=deliveryZones[city]||[149,3,6];return {charge:z[0],min:z[1],max:z[2]};}
         function updateDeliveryEstimate(){const city=document.getElementById('citySelect')?.value||'';const z=getDeliveryInfo(city);const n=document.getElementById('deliveryEstimate');if(n)n.textContent=city?('Estimated delivery: '+z.min+'-'+z.max+' working days • '+(z.charge===0?'FREE':'Rs '+z.charge)):'Select your city for delivery estimate';renderCart();}
         
         function togglePaymentDetails() {
@@ -3268,7 +3317,7 @@ def process_woocommerce_csv():
                 }
             }
             
-            let selectedCity=document.getElementById('citySelect')?.value||''; let zone=getDeliveryInfo(selectedCity); let delivery=subtotal>=5000?0:zone.charge; 
+            let selectedCity=document.getElementById('citySelect')?.value||''; let zone=getDeliveryInfo(selectedCity); let delivery=subtotal>=5000?0:(selectedCity ? zone.charge : 149); 
             let discount = couponApplied ? Math.floor(subtotal * 0.10) : 0; 
             let grandTotal = subtotal - discount + delivery;
             let paymentMethod = document.querySelector('input[name="Payment_Method"]:checked').value;
