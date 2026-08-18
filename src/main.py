@@ -2549,7 +2549,8 @@ def process_woocommerce_csv():
 
     for h_page in range(1, total_home_pages + 1):
         page_title = "Online Shopping in Pakistan | ASM VEO" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
-        home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.", custom_canonical=f"https://www.asmveo.com/{"index.html" if h_page == 1 else f"index-{h_page}.html"}")
+        home_filename = "index.html" if h_page == 1 else f"index-{h_page}.html"
+        home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.", custom_canonical=f"https://www.asmveo.com/{home_filename}")
         
         if h_page == 1:
             home_html += """
