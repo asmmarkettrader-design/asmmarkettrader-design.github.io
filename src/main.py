@@ -3378,7 +3378,7 @@ def process_woocommerce_csv():
             // 🌟 YEH LINE MISSING THI (Tracking ID generate karne ke liye) 🌟
             let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
 
-           // 🌟 GOOGLE SHEETS & AUTOMATIC EMAIL ENGINE 🌟
+          // 🌟 GOOGLE SHEETS & AUTOMATIC EMAIL ENGINE 🌟
             let orderData = {
                 orderId: oId, 
                 name: document.getElementById('fullName').value,
@@ -3391,16 +3391,45 @@ def process_woocommerce_csv():
                 total: document.getElementById('totalField').value
             };
 
-            // ⚠️ Yahan apna Naya wala Google Script URL dalein (agar change hua hai) ⚠️
             const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec';
 
-            // Sirf ek hi request jayegi jo Sheet me save bhi karegi aur 2 Emails bhi bhejegii
             fetch(GOOGLE_SHEET_URL, {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(orderData)
             }).then(() => {
+                
+                try {
+                    let savedOrders = JSON.parse(localStorage.getItem('asm_orders')) || [];
+                    savedOrders.unshift({orderId: oId, total: document.getElementById('totalField').value, products: document.getElementById('productField').value, status: 'Confirmed', createdAt: new Date().toISOString()});
+                    localStorage.setItem('asm_orders', JSON.stringify(savedOrders.slice(0, 20)));
+                } catch(e) {}
+
+                if (typeof sendTrustpilotInvitation === 'function') {
+                    sendTrustpilotInvitation();
+                }
+                
+                let customerEmail = document.getElementById('emailAddr').value;
+                if(customerEmail) localStorage.setItem('asm_customer_email', customerEmail);
+                
+                const urlParams = new URLSearchParams(window.location.search);
+                if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
+                if(typeof updateCartBadge === 'function') updateCartBadge();
+                
+                setTimeout(() => {
+                    window.location.href = '/order-success.html';
+                }, 800); 
+                
+            }).catch(error => {
+                showToast('Network Error! Order not placed. Try WhatsApp instead.', 'fa-wifi', 'red');
+                btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
+                btn.disabled = false;
+            });
+        });
+        window.addEventListener('load', function(){try{const u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){if(u.name)document.getElementById('fullName').value=u.name;if(u.email)document.getElementById('emailAddr').value=u.email;if(u.phone)document.getElementById('phoneNum').value=u.phone;if(u.address)document.getElementById('addressInput').value=u.address}}catch(e){} renderCart();updateDeliveryEstimate();});
+    </script>
+    """
                 
                 // Save Order Locally for Tracking Page
                 try {
