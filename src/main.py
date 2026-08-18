@@ -345,6 +345,15 @@ def make_slug(text):
     GENERATED_SLUGS.add(slug)
     return slug
 
+def make_product_seo_title(name, external_kws=None):
+    base = re.sub(r'\s+', ' ', str(name or '')).strip()
+    kw = next((k for k in (external_kws or []) if k and k.lower() not in base.lower()), '')
+    if kw:
+        candidate = f"{base} | {kw.title()}"
+    else:
+        candidate = f"{base} | Buy Online in Pakistan"
+    return candidate[:68]
+
 def local_seo_desc(name, desc, daraz_kw=None, external_kws=None):
     """Create concise, product-specific SEO copy without unsupported ranking/customer claims."""
     parts = [f"Buy {name} online in Pakistan from ASM VEO."]
@@ -686,7 +695,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {{
             darkMode: 'class',
@@ -700,8 +709,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
     </script>
     
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
@@ -922,11 +930,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function escapeHtml(value) {{ return String(value || '').replace(/[&<>"']/g, function(ch) {{ return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[ch]; }}); }}
         function showSearchSuggestions() {{
             let input=document.getElementById('searchInput'), panel=document.getElementById('searchSuggestions');
-            if(!input || !panel || typeof searchIndex === 'undefined') return;
+            if(!input || !panel) return;
+            let index = window.searchSuggestIndex || window.searchIndex || [];
             let q=input.value.toLowerCase().trim(); if(q.length<2) {{ panel.classList.add('hidden'); return; }}
-            let results=searchIndex.filter(p=>(p.name||'').toLowerCase().includes(q)||(p.category||'').toLowerCase().includes(q)).slice(0,7);
+            let results=index.filter(p=>(p.name||'').toLowerCase().includes(q)||(p.category||'').toLowerCase().includes(q)||(p.brand||'').toLowerCase().includes(q)).slice(0,8);
             if(!results.length) {{ panel.classList.add('hidden'); return; }}
-            panel.innerHTML=results.map(p=>'<a href="/product/'+encodeURIComponent(p.slug)+'.html" class="flex items-center gap-3 p-3 hover:bg-gray-50 dark:hover:bg-gray-700 transition"><img src="'+p.image+'" class="w-10 h-10 rounded-lg object-contain bg-gray-100" alt=""><div class="min-w-0"><div class="font-bold text-xs text-gray-900 dark:text-white truncate">'+escapeHtml(p.name)+'</div><div class="text-[11px] text-[#E53935] font-black">Rs '+p.final_price+'</div></div></a>').join('');
+            panel.innerHTML=results.map(p=>'<a href="/product/'+encodeURIComponent(p.slug)+'.html" class="flex items-center gap-3 p-3 hover:bg-gray-50 dark:hover:bg-gray-700 transition"><div class="w-10 h-10 rounded-lg bg-red-50 text-[#E53935] flex items-center justify-center flex-shrink-0"><i class="fas fa-magnifying-glass text-sm"></i></div><div class="min-w-0"><div class="font-bold text-xs text-gray-900 dark:text-white truncate">'+escapeHtml(p.name)+'</div><div class="text-[11px] text-[#E53935] font-black">Rs '+p.final_price+'</div></div></a>').join('');
             panel.classList.remove('hidden');
         }}
         function hideSearchSuggestions() {{ let p=document.getElementById('searchSuggestions'); if(p) setTimeout(()=>p.classList.add('hidden'),180); }}
@@ -978,12 +987,25 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
 
         let searchLoaded = false;
-        function loadSearchData() {{
-            if(searchLoaded) return;
+        let searchSuggestionsLoaded = false;
+        function loadSearchData(callback) {{
+            if (window.searchIndex) {{ if (callback) callback(); return; }}
+            if (searchLoaded) {{ if (callback) setTimeout(callback, 80); return; }}
             searchLoaded = true;
             let script = document.createElement('script');
             script.src = '/search-data.js';
-            script.defer = true;
+            script.onload = function() {{ if (callback) callback(); }};
+            script.onerror = function() {{ searchLoaded = false; if (callback) callback(); }};
+            document.head.appendChild(script);
+        }}
+        function loadSearchSuggestions(callback) {{
+            if (window.searchSuggestIndex) {{ if (callback) callback(); return; }}
+            if (searchSuggestionsLoaded) {{ if (callback) setTimeout(callback, 50); return; }}
+            searchSuggestionsLoaded = true;
+            let script = document.createElement('script');
+            script.src = '/search-suggest-data.js';
+            script.onload = function() {{ if (callback) callback(); }};
+            script.onerror = function() {{ searchSuggestionsLoaded = false; if (callback) callback(); }};
             document.head.appendChild(script);
         }}
 
@@ -1086,8 +1108,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
             let searchInput = document.getElementById('searchInput');
             if(searchInput) {{
-                searchInput.addEventListener('focus', loadSearchData);
-                searchInput.addEventListener('input', function() {{ loadSearchData(); setTimeout(showSearchSuggestions, 250); }});
+                loadSearchSuggestions();
+                searchInput.addEventListener('focus', function() {{ loadSearchSuggestions(showSearchSuggestions); }});
+                searchInput.addEventListener('input', function() {{ loadSearchSuggestions(showSearchSuggestions); }});
                 searchInput.addEventListener('blur', hideSearchSuggestions);
             }}
             updateCompareBar();
@@ -1511,7 +1534,7 @@ def generate_static_pages(categories_list, products_list=None):
 <title>Finding Your Product | ASM VEO</title>
 <meta name="robots" content="noindex,follow">
 <script src="/search-data.js"></script>
-<script src="https://cdn.tailwindcss.com" defer></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 min-h-screen">
 <main class="max-w-5xl mx-auto px-4 py-12">
@@ -2036,7 +2059,7 @@ def process_woocommerce_csv():
             products_list.append({
                 'id': product_id, 'slug': slug, 'name': name, 'category': category, 'fake_price': fake_regular_price, 
                 'final_price': final_price, 'image': image, 'images': images, 'seo_desc': seo_desc, 'full_desc': clean_description,
-                'daraz_kw': daraz_kw, 'seo_keywords': csv_keywords, 'brand': infer_brand(name)
+                'daraz_kw': daraz_kw, 'seo_keywords': csv_keywords, 'seo_title': make_product_seo_title(name, csv_keywords), 'brand': infer_brand(name)
             })
 
     # Remote HEAD checks are slow and unreliable on large catalogs. Browser-level onerror handling
@@ -2070,7 +2093,14 @@ def process_woocommerce_csv():
     } for p in products_list])
     
     with open("output/search-data.js", "w", encoding="utf-8") as f: 
-        f.write(f"let searchIndex = {search_index_json};")
+        f.write(f"window.searchIndex = {search_index_json};")
+
+    search_suggest_json = json.dumps([{
+        "name": p["name"], "slug": p["slug"], "category": p["category"],
+        "brand": p.get("brand", "ASM VEO"), "final_price": p["final_price"]
+    } for p in products_list], ensure_ascii=False, separators=(",", ":"))
+    with open("output/search-suggest-data.js", "w", encoding="utf-8") as f:
+        f.write(f"window.searchSuggestIndex = {search_suggest_json};")
     
     # ================= PRODUCT PAGES =================
     for i, prod in enumerate(products_list):
@@ -2095,7 +2125,7 @@ def process_woocommerce_csv():
         breadcrumb_data = {'category': prod['category'], 'name': prod['name'], 'slug': prod['slug']}
         product_schema_data = {**prod, 'rating': avg_rating, 'review_count': review_count}
         
-        prod_html = get_html_header(prod['name'], categories_list, prod['seo_desc'], 
+        prod_html = get_html_header(prod.get('seo_title', prod['name']), categories_list, prod['seo_desc'], 
                                      product_data=product_schema_data, breadcrumb_data=breadcrumb_data,
                                      og_image=prod['image'])
         
@@ -2141,6 +2171,7 @@ def process_woocommerce_csv():
         <div class="prose dark:prose-invert max-w-none text-sm leading-relaxed mt-4">
             <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Product Overview</h3>
             <p class="mb-4">{prod['full_desc'][:250] if len(prod['full_desc']) > 50 else prod['seo_desc']}</p>
+            <p class="mb-4">Looking for {', '.join(prod.get('seo_keywords', [])[:3]) or prod['category'].lower()}? This product is available online in Pakistan with Cash on Delivery and Rs 149 standard delivery.</p>
             <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Key Features</h3>
             <ul class="list-disc pl-5 mb-4">
                 <li>100% Genuine and authentic product.</li>
@@ -2353,7 +2384,7 @@ def process_woocommerce_csv():
         cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
         sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
         
-        prods_per_page = 24
+        prods_per_page = 12
         total_pages = math.ceil(len(prods) / prods_per_page)
         
         for page_num in range(1, total_pages + 1):
@@ -2564,9 +2595,9 @@ def process_woocommerce_csv():
     valid_home_cats.sort(key=lambda x: (-len(x[1]), x[0].lower()))
     valid_home_cats.sort(key=get_cat_priority)
 
-    all_categories_list = valid_home_cats[:6]
+    all_categories_list = valid_home_cats
     cats_per_home_page = 6
-    total_home_pages = 1 if all_categories_list else 1
+    total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page) if all_categories_list else 1
 
     def build_home_display_products(cat_name, prods, limit=6):
         chosen, seen = [], set()
@@ -2610,7 +2641,7 @@ def process_woocommerce_csv():
                 
                     <!-- BANNER 1: Fashion & Footwear (Apparel + Footwear & Bags) -->
                     <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-rose-100 to-teal-50" aria-hidden="false">
-                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80')] opacity-10 bg-cover bg-center mix-blend-multiply"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-teal-100/40"></div>
                         <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-teal-200/60 to-transparent transform skew-x-12 translate-x-10"></div>
                         
                         <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
@@ -2631,7 +2662,7 @@ def process_woocommerce_csv():
 
                     <!-- BANNER 2: Electronics & Home (Consumer Electronics + Home & Living) -->
                     <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900" aria-hidden="true">
-                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80')] opacity-20 bg-cover bg-center mix-blend-screen"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-900 to-gray-900 opacity-80"></div>
                         <div class="absolute left-1/4 top-1/2 w-64 h-64 bg-blue-500 rounded-full mix-blend-screen filter blur-[80px] opacity-40"></div>
                         
                         <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
@@ -2651,7 +2682,7 @@ def process_woocommerce_csv():
 
                     <!-- BANNER 3: Beauty & Groceries (Health, Beauty + Food & Online Groceries) -->
                     <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-amber-100 to-green-100" aria-hidden="true">
-                        <div class="absolute right-0 top-0 h-full w-1/2 bg-[url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80')] bg-cover opacity-15 mix-blend-multiply rounded-l-full"></div>
+                        <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-green-200/70 to-transparent rounded-l-full"></div>
                         <div class="absolute left-0 bottom-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-[40px] opacity-50"></div>
                         
                         <div class="w-[50%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
