@@ -469,20 +469,116 @@ def minify_html(html_content):
 
 # ==============================================================================
 # ==============================================================================
+# ASM VEO TOP-LEVEL CATEGORY SYSTEM
+# ==============================================================================
+TOP_CATEGORY_DEFINITIONS = [
+    ("Fashion & Apparel", ["fashion","apparel","cloth","clothing","dress","suit","wear","garment","kurta","shalwar","hijab","abaya","lawn","textile"]),
+    ("Electronics & Mobile", ["electronic","electronics","mobile","smartphone","computer","laptop","tablet","earbud","earphone","headphone","charger","cable","smartwatch","gadget","tech","camera","gaming","projector"]),
+    ("Beauty & Personal Care", ["beauty","cosmetic","makeup","skin","skincare","hair","perfume","fragrance","personal care","serum","cream","shampoo","soap"]),
+    ("Home & Kitchen", ["home","kitchen","living","furniture","decor","decoration","bedsheet","curtain","cookware","appliance","storage","organizer","bedding","linen"]),
+    ("Health & Fitness", ["health","fitness","wellness","medical","supplement","vitamin","exercise","gym","nebulizer","weight machine","massage"]),
+    ("Automotive", ["automotive","auto","car","vehicle","motorbike","motorcycle","bike","car accessory","vehicle cleaning"]),
+    ("Baby & Kids", ["baby","kids","kid","toy","toys","children","game","school","baby care","nursery"]),
+]
+
+NAV_CATEGORY_TREE = []
+NAV_MAIN_CATEGORIES = []
+
+def classify_top_category(raw_category):
+    text = str(raw_category or '').lower()
+    scores = []
+    for idx, (label, words) in enumerate(TOP_CATEGORY_DEFINITIONS):
+        score = sum(1 for w in words if w in text)
+        scores.append((score, -idx, label))
+    best = max(scores, key=lambda x: (x[0], x[1]))
+    return best[2] if best[0] > 0 else None
+
+def extract_subcategory(raw_category, top_category=None):
+    text = re.sub(r'\s+', ' ', str(raw_category or '')).strip(' >|,')
+    if not text:
+        return top_category or 'Other'
+    parts = [p.strip() for p in re.split(r'\s*(?:>|\||»|/|,)\s*', text) if p.strip()]
+    leaf = parts[-1] if parts else text
+    if top_category and leaf.lower() == top_category.lower():
+        return 'All Products'
+    return leaf
+
+def build_top_category_navigation(products_list):
+    grouped = {label: [] for label, _ in TOP_CATEGORY_DEFINITIONS}
+    raw_subs = {label: {} for label, _ in TOP_CATEGORY_DEFINITIONS}
+    for p in products_list:
+        top = p.get('top_category') or classify_top_category(p.get('category',''))
+        if not top:
+            continue
+        grouped.setdefault(top, []).append(p)
+        sub = p.get('subcategory') or extract_subcategory(p.get('category',''), top)
+        raw_subs.setdefault(top, {})[sub] = raw_subs.setdefault(top, {}).get(sub, 0) + 1
+    ordered = []
+    for label, _ in TOP_CATEGORY_DEFINITIONS:
+        prods = grouped.get(label, [])
+        if prods:
+            ordered.append((label, prods, raw_subs.get(label, {})))
+    if len(ordered) < 7:
+        leftovers = [p for p in products_list if not (p.get('top_category') or classify_top_category(p.get('category','')))]
+        if leftovers:
+            ordered.append(('More Categories', leftovers, {}))
+    return ordered[:7]
+
+def build_category_menu_html(nav_tree):
+    if not nav_tree:
+        return '<a href="/categories.html" class="block px-4 py-3 font-bold">All Categories</a>'
+    chunks = []
+    for label, prods, subs in nav_tree:
+        slug = re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-')
+        image = next((p.get('image') for p in prods if p.get('image')), '')
+        sub_items = sorted(subs.items(), key=lambda x: (-x[1], x[0].lower()))[:12]
+        sub_html = ''.join(
+            f'<a href="/category/{re.sub(r"[^a-z0-9]+","-",s.lower()).strip("-")}.html" class="block py-1.5 text-xs text-gray-600 dark:text-gray-300 hover:text-[#E53935]">{s}</a>'
+            for s, _ in sub_items if s != 'All Products'
+        )
+        chunks.append(f'''
+        <div class="min-w-[210px] rounded-xl border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-800 p-3 hover:shadow-md transition">
+            <a href="/category/{slug}.html" class="flex items-center gap-3 mb-2">
+                <img src="{image}" alt="{label}" class="w-12 h-12 rounded-lg object-cover bg-gray-100" loading="lazy" decoding="async">
+                <span class="font-extrabold text-sm text-gray-900 dark:text-white">{label}</span>
+            </a>
+            <div class="pl-1">{sub_html}</div>
+            <a href="/category/{slug}.html" class="inline-flex mt-2 text-[11px] font-black text-[#E53935]">View All →</a>
+        </div>''')
+    return ''.join(chunks)
+
+def generate_categories_page(nav_tree, categories_list):
+    html = get_html_header('All Categories - ASM VEO', categories_list, 'Browse all main categories and subcategories for online shopping in Pakistan.', custom_canonical='https://www.asmveo.com/categories.html')
+    html += '''<section class="container mx-auto px-4 py-10"><div class="text-center mb-8"><p class="text-xs font-black uppercase tracking-[0.2em] text-[#E53935]">Shop by Category</p><h1 class="text-3xl md:text-4xl font-black text-gray-900 dark:text-white mt-2">All Categories</h1><p class="text-gray-500 dark:text-gray-400 mt-2">Explore ASM VEO main categories and their subcategories.</p></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">'''
+    for label, prods, subs in nav_tree:
+        slug = re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-')
+        image = next((p.get('image') for p in prods if p.get('image')), '')
+        sub_items = sorted(subs.items(), key=lambda x: (-x[1], x[0].lower()))[:20]
+        html += f'''<div class="rounded-2xl overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-xl transition"><a href="/category/{slug}.html"><div class="h-40 bg-gray-100 dark:bg-gray-700"><img src="{image}" alt="{label}" class="w-full h-full object-cover" loading="lazy" decoding="async"></div><div class="p-5"><h2 class="text-xl font-black text-gray-900 dark:text-white">{label}</h2><p class="text-xs text-gray-500 mt-1">{len(prods)} products</p></a><div class="mt-4 space-y-1">'''
+        for sub, _ in sub_items:
+            if sub == 'All Products':
+                continue
+            sslug = re.sub(r'[^a-z0-9]+','-',sub.lower()).strip('-')
+            html += f'<a href="/category/{sslug}.html" class="block text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-[#E53935]">{sub} →</a>'
+        html += '</div></div></div>'
+    html += '</div></section>' + get_html_footer()
+    with open('output/categories.html','w',encoding='utf-8') as f:
+        f.write(minify_html(html))
+
+
+# ==============================================================================
 # HTML HEADER GENERATION
 # ==============================================================================
 
 def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan",
                     product_data=None, breadcrumb_data=None, og_image=None, custom_canonical=None):
     
-    cat_links = ""
-    for cat in categories_list[:12]:
-        c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
-        cat_links += f"""
-        <a href="/category/{c_slug}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
-            {cat}
-        </a>
-        """
+    # Use the parent/subcategory tree when available so the header never lists
+    # Women's Fashion / Men's Fashion / Dresses as separate top-level categories.
+    cat_links = build_category_menu_html(NAV_CATEGORY_TREE) if NAV_CATEGORY_TREE else ''.join(
+        f'<a href="/category/{re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-")}.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">{cat}</a>'
+        for cat in categories_list[:7]
+    )
 
     canonical_url = "https://www.asmveo.com/"
     if custom_canonical:
@@ -730,7 +826,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         .image-zoom img {{ transition: transform 0.5s ease; }}
         .product-card:hover .image-zoom img {{ transform: scale(1.08); }}
         
-        .dropdown:hover .dropdown-menu {{ display: block; }}
+        .dropdown:hover .dropdown-menu {{ display: grid; }}
+        .dropdown.menu-open .dropdown-menu {{ display: grid; }}
         
         ::-webkit-scrollbar {{ width: 8px; height: 8px; }}
         ::-webkit-scrollbar-track {{ background: #f1f5f9; }}
@@ -1064,6 +1161,11 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.getElementById('mobileCatMenu').classList.toggle('hidden');
         }}
 
+        function toggleCategoryMenu() {{
+            const wrap = document.getElementById('desktopCategoryDropdown');
+            if (wrap) wrap.classList.toggle('menu-open');
+        }}
+
         window.onload = function() {{
             updateCartBadge();
             updateWishlistBadge();
@@ -1122,6 +1224,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 if (menu && !menu.classList.contains('hidden') && !menu.contains(event.target) && btn && !btn.contains(event.target)) {{
                     menu.classList.add('hidden');
                 }}
+                let desktopWrap = document.getElementById('desktopCategoryDropdown');
+                if (desktopWrap && desktopWrap.classList.contains('menu-open') && !desktopWrap.contains(event.target)) {{
+                    desktopWrap.classList.remove('menu-open');
+                }}
             }});
         }};
     </script>
@@ -1161,8 +1267,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         </div>
 
         <div id="mobileCatMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
-            <div class="container mx-auto px-4 py-2 grid grid-cols-2 gap-2 max-h-60 overflow-y-auto">
+            <div class="container mx-auto px-4 py-3 grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[70vh] overflow-y-auto">
                 {cat_links}
+                <a href="/categories.html" class="sm:col-span-2 bg-[#E53935] text-white rounded-xl px-4 py-3 text-center font-black text-sm">View All Categories</a>
             </div>
         </div>
 
@@ -1204,12 +1311,13 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         <!-- Desktop Menu -->
         <nav class="hidden md:block border-t border-gray-100 dark:border-gray-800">
             <div class="container mx-auto px-4 flex items-center gap-6">
-                <div class="relative dropdown z-50">
-                    <button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-list" aria-hidden="true"></i> All Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i>
+                <div id="desktopCategoryDropdown" class="relative dropdown z-50">
+                    <button onclick="toggleCategoryMenu()" class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-list" aria-hidden="true"></i> Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i>
                     </button>
-                    <div class="dropdown-menu absolute hidden text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-200 shadow-2xl rounded-b-xl mt-0 w-56 py-2 border border-gray-100 dark:border-gray-700 max-h-96 overflow-y-auto">
+                    <div class="dropdown-menu absolute hidden left-0 top-full text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-200 shadow-2xl rounded-b-2xl mt-0 w-[min(94vw,1100px)] p-4 border border-gray-100 dark:border-gray-700 max-h-[70vh] overflow-y-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                         {cat_links}
+                        <a href="/categories.html" class="lg:col-span-4 bg-[#E53935] text-white rounded-xl px-4 py-3 text-center font-black text-sm hover:bg-[#C62828]">View All Categories</a>
                     </div>
                 </div>
                 <a href="/index.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Home</a>
@@ -1862,6 +1970,38 @@ def generate_seo_audit(products_list,categories_list):
     report={"generated_at":datetime.now().isoformat(),"site":"https://www.asmveo.com","products":len(products_list),"categories":len(categories_list),"checks":["Product schema","Merchant feed","Image sitemap","Canonical URLs","Breadcrumb schema","Shipping/return markup","Smart search","Recommendations","Advanced filters","Customer account","Order tracking","Pakistan delivery zones"]}
     with open("output/seo-audit.json","w",encoding="utf-8") as f: json.dump(report,f,indent=2,ensure_ascii=False)
 
+# ============================================================================
+# PARENT CATEGORY PAGES
+# ============================================================================
+def generate_parent_category_pages(nav_tree, categories_list, sitemap_urls):
+    for label, prods, subs in nav_tree:
+        slug = re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-')
+        url = f"https://www.asmveo.com/category/{slug}.html"
+        if url not in sitemap_urls:
+            sitemap_urls.append(url)
+        page_title = f"{label} Online Shopping in Pakistan | ASM VEO"
+        page = get_html_header(page_title, categories_list, f"Shop {label} online in Pakistan at competitive prices. Cash on Delivery and Rs 149 standard delivery from ASM VEO.", custom_canonical=url)
+        image = next((p.get('image') for p in prods if p.get('image')), '')
+        page += f'''<section class="animated-bg py-10 mb-8 text-white"><div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-6"><div class="w-28 h-28 rounded-2xl overflow-hidden bg-white/20 shadow-xl"><img src="{image}" alt="{label}" class="w-full h-full object-cover"></div><div><p class="text-xs font-black uppercase tracking-[0.2em] opacity-80">ASM VEO CATEGORY</p><h1 class="text-3xl md:text-5xl font-black mt-1">{label}</h1><p class="mt-2 text-white/80">{len(prods)} products • Online Shopping in Pakistan</p></div></div></section>'''
+        sub_map = {}
+        for prod in prods:
+            sub_map.setdefault(prod.get('subcategory') or extract_subcategory(prod.get('category',''), label), prod)
+        if len(sub_map) > 1:
+            page += '<section class="container mx-auto px-4 pb-6"><h2 class="text-xl font-black mb-4 text-gray-900 dark:text-white">Shop by Subcategory</h2><div class="flex flex-wrap gap-3">'
+            for sub, prod in sorted(sub_map.items(), key=lambda x:x[0].lower())[:20]:
+                if sub == 'All Products':
+                    continue
+                ss = re.sub(r'[^a-z0-9]+','-',sub.lower()).strip('-')
+                page += f'<a href="/category/{ss}.html" class="flex items-center gap-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-3 py-2 shadow-sm hover:border-[#E53935] transition"><img src="{prod.get("image","")}" alt="{sub}" class="w-9 h-9 rounded-lg object-cover"><span class="text-sm font-bold text-gray-800 dark:text-gray-200">{sub}</span></a>'
+            page += '</div></section>'
+        page += '<section class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">'
+        for prod in prods[:24]:
+            page += generate_product_card(prod, lazy=True)
+        page += '</div></section>' + get_html_footer()
+        with open(f'output/category/{slug}.html','w',encoding='utf-8') as f:
+            f.write(minify_html(page))
+
+
 # ==============================================================================
 # PRODUCT CARD GENERATOR
 # ==============================================================================
@@ -2011,6 +2151,7 @@ def process_woocommerce_csv():
         "https://www.asmveo.com/faq.html", 
         "https://www.asmveo.com/privacy.html", 
         "https://www.asmveo.com/terms.html", 
+        "https://www.asmveo.com/categories.html",
     ]
     
     with open(file_path, mode='r', encoding='utf-8') as f:
@@ -2040,7 +2181,9 @@ def process_woocommerce_csv():
             fake_regular_price = math.ceil(final_price * 1.61) 
             
             cat_raw = row.get('Categories', 'Uncategorized')
-            category = cat_raw.split(',')[0].strip() if cat_raw else 'Exclusive Collection'
+            category = cat_raw.strip() if cat_raw else 'Exclusive Collection'
+            top_category = classify_top_category(category) or 'More Categories'
+            subcategory = extract_subcategory(category, top_category)
             categories_set.add(category)
             
            # 🌟 DARAZ KEYWORD INJECTION 🌟
@@ -2057,7 +2200,7 @@ def process_woocommerce_csv():
             sitemap_urls.append(f"https://www.asmveo.com/product/{slug}.html")
             
             products_list.append({
-                'id': product_id, 'slug': slug, 'name': name, 'category': category, 'fake_price': fake_regular_price, 
+                'id': product_id, 'slug': slug, 'name': name, 'category': category, 'top_category': top_category, 'subcategory': subcategory, 'fake_price': fake_regular_price, 
                 'final_price': final_price, 'image': image, 'images': images, 'seo_desc': seo_desc, 'full_desc': clean_description,
                 'daraz_kw': daraz_kw, 'seo_keywords': csv_keywords, 'seo_title': make_product_seo_title(name, csv_keywords), 'brand': infer_brand(name)
             })
@@ -2076,9 +2219,15 @@ def process_woocommerce_csv():
         print(f"⚡ Skipping remote image HEAD checks for faster builds ({len(products_list)} products).")
     categories_set = set(p['category'] for p in products_list) 
     categories_list = sorted(list(categories_set))
+    NAV_CATEGORY_TREE[:] = build_top_category_navigation(products_list)
+    NAV_MAIN_CATEGORIES[:] = [item[0] for item in NAV_CATEGORY_TREE]
     print(f"✔ Total {len(products_list)} valid products being processed...")
+    print("🗂️ Top navigation categories:", ', '.join(NAV_MAIN_CATEGORIES))
     
-    # 🌟 NEW: Generating 100 SEO Blogs 🌟
+    # Generate the dedicated parent/subcategory browser.
+    generate_categories_page(NAV_CATEGORY_TREE, categories_list)
+    
+    # 🌟 NEW: Generating SEO Blogs 🌟
     blog_urls = generate_blog_pages(categories_list, products_list)
     sitemap_urls.extend(blog_urls)
     
@@ -2566,66 +2715,39 @@ def process_woocommerce_csv():
                 f.write(minify_html(cat_html))
 
    # ==============================================================================
-    # HOMEPAGE DYNAMIC PAGINATION
-    # ==============================================================================
-    print("🏠 Generating Home Pages with Custom Category Priority...")
-    valid_home_cats = [(cat, prods) for cat, prods in sections_dict.items() if len(prods) >= 6]
-    
-    if len(valid_home_cats) < 2: 
-        valid_home_cats = list(sections_dict.items())
+    generate_parent_category_pages(NAV_CATEGORY_TREE, categories_list, sitemap_urls)
 
-    # Pakistan-focused Top 6 homepage category selection.
-    def get_cat_priority(cat_tuple):
-        cat_name = cat_tuple[0].lower()
-        groups = [
-            (1, ['fashion','apparel','cloth','clothing','dress','suit','wear','garment','kurta','shalwar','hijab','abaya','kapde']),
-            (2, ['electronic','electronics','mobile','smartphone','computer','laptop','tablet','earbud','headphone','charger','cable','smartwatch','gadget','tech']),
-            (3, ['beauty','cosmetic','makeup','skin','skincare','hair','perfume','fragrance','personal care','serum','cream']),
-            (4, ['home','kitchen','living','furniture','decor','decoration','bedsheet','curtain','cookware','appliance','storage']),
-            (5, ['health','fitness','wellness','medical','supplement','vitamin','exercise','gym']),
-            (6, ['footwear','shoe','shoes','sandal','sneaker','bag','bags','handbag','wallet','luggage']),
-            (7, ['grocery','food','snack','ration','fresh','drink','beverage'])
-        ]
-        for priority, words in groups:
-            if any(w in cat_name for w in words):
-                return priority
-        return 50
-
-    valid_home_cats = [(cat, list(prods)) for cat, prods in sections_dict.items() if len(prods) > 0]
-    valid_home_cats.sort(key=lambda x: (-len(x[1]), x[0].lower()))
-    valid_home_cats.sort(key=get_cat_priority)
-
-    all_categories_list = valid_home_cats
-    cats_per_home_page = 6
-    total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page) if all_categories_list else 1
+    # HOMEPAGE: EXACTLY 7 PARENT CATEGORIES / 6 IMAGE-BEARING PRODUCTS EACH
+    print("🏠 Generating Home Pages with 7 parent categories...")
+    home_parent_groups = [(label, list(prods)) for label, prods, _subs in NAV_CATEGORY_TREE]
 
     def build_home_display_products(cat_name, prods, limit=6):
         chosen, seen = [], set()
         for p in prods:
-            if p['slug'] not in seen:
-                chosen.append(p); seen.add(p['slug'])
-                if len(chosen) >= limit: return chosen
-
-        target_priority = get_cat_priority((cat_name, prods))
-        fallback_pool = []
-        for other_cat, other_prods in valid_home_cats:
-            if other_cat != cat_name and get_cat_priority((other_cat, other_prods)) == target_priority:
-                fallback_pool.extend(other_prods)
-        for other_cat, other_prods in valid_home_cats:
-            if other_cat != cat_name:
-                fallback_pool.extend(other_prods)
-
-        for p in fallback_pool:
-            if p['slug'] not in seen:
-                chosen.append(p); seen.add(p['slug'])
-                if len(chosen) >= limit: return chosen
-
-        # Absolute last resort: keep the six-card layout even for tiny categories.
-        if chosen:
-            i=0
-            while len(chosen)<limit:
-                chosen.append(chosen[i % len(chosen)]); i+=1
+            slug = p.get('slug')
+            image = str(p.get('image') or '').strip()
+            if not slug or slug in seen or not image or image.lower().startswith(('data:', 'javascript:')):
+                continue
+            chosen.append(p)
+            seen.add(slug)
+            if len(chosen) == limit:
+                break
         return chosen
+
+    # Keep the requested seven parent categories in their fixed Pakistan-first order.
+    # Never fill a section with products from another parent category.
+    full_parent_groups = [(c, p) for c, p in home_parent_groups if len(build_home_display_products(c, p, 6)) == 6]
+    if len(full_parent_groups) >= 7:
+        home_parent_groups = full_parent_groups[:7]
+    else:
+        # If inventory is temporarily thin, retain the first seven parent categories
+        # rather than silently mixing unrelated products.
+        home_parent_groups = home_parent_groups[:7]
+        print(f"⚠️ {len(full_parent_groups)} parent categories currently have 6+ image-bearing products.")
+
+    all_categories_list = home_parent_groups
+    cats_per_home_page = 7
+    total_home_pages = 1
 
     for h_page in range(1, total_home_pages + 1):
         page_title = "Online Shopping in Pakistan | ASM VEO" if h_page == 1 else f"Home - Page {h_page} - Premium Online Shopping in Pakistan"
@@ -2700,6 +2822,23 @@ def process_woocommerce_csv():
                             <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=300&q=80" alt="Fresh Groceries" loading="lazy" decoding="async" class="w-[50%] object-contain drop-shadow-2xl rounded-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
                         </div>
                     </div>
+
+                    <!-- BANNER 4: ASM VEO Mega Savings -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-red-700 via-[#E53935] to-orange-500" aria-hidden="true">
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_75%_35%,rgba(255,255,255,.25),transparent_35%)]"></div>
+                        <div class="absolute -right-16 -bottom-20 w-72 h-72 rounded-full border-[30px] border-white/10"></div>
+                        <div class="w-[56%] h-full flex flex-col justify-center pl-8 md:pl-16 relative z-10 text-white">
+                            <span class="inline-flex w-fit bg-white text-[#E53935] px-3 py-1 rounded-full text-[8px] md:text-[10px] font-black tracking-[0.18em] uppercase shadow-lg">ASM VEO MEGA SAVINGS</span>
+                            <h2 class="text-3xl md:text-6xl font-black uppercase leading-none tracking-tight mt-3">SMART<br><span class="text-yellow-300">DEALS</span></h2>
+                            <p class="text-white/90 text-[9px] md:text-sm font-bold uppercase tracking-widest mt-3">Daily deals • COD • Rs 149 delivery</p>
+                            <a href="#products" class="w-fit mt-4 bg-gray-950 text-white px-7 py-2.5 rounded-full text-xs font-black hover:bg-white hover:text-gray-950 transition shadow-xl">SHOP TODAY</a>
+                        </div>
+                        <div class="w-[44%] h-full relative z-10 flex items-center justify-center">
+                            <div class="relative w-[72%] md:w-[58%] aspect-square rounded-[2rem] bg-white/10 backdrop-blur-sm border border-white/30 shadow-2xl flex items-center justify-center rotate-3">
+                                <div class="text-center text-white"><div class="text-5xl md:text-7xl font-black">UP<br><span class="text-yellow-300">TO</span></div><div class="text-2xl md:text-4xl font-black">50% OFF</div><div class="text-[8px] md:text-xs font-bold tracking-widest mt-2">SELECTED PRODUCTS</div></div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                 <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm text-gray-900 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow-md" aria-label="Previous slide"><i class="fas fa-chevron-left text-sm" aria-hidden="true"></i></button>
@@ -2741,36 +2880,20 @@ def process_woocommerce_csv():
             home_html += """
             <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
                 <div class="container mx-auto px-4">
-                    <div class="grid grid-cols-4 md:grid-cols-8 gap-4 text-center">
+                    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3 md:gap-4 text-center">
             """
             
-            used_icons = set()
-            unique_top_cats = []
-            for cat in categories_list:
-                icon = get_category_icon(cat)
-                if icon not in used_icons:
-                    used_icons.add(icon)
-                    unique_top_cats.append(cat)
-                if len(unique_top_cats) >= 6:
-                    break
-                    
-            if len(unique_top_cats) < 8:
-                for cat in categories_list:
-                    if cat not in unique_top_cats:
-                        unique_top_cats.append(cat)
-                    if len(unique_top_cats) >= 6:
-                        break
-
-            for cat in unique_top_cats:
+            for cat, cat_prods, _subs in NAV_CATEGORY_TREE:
                 c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
+                cat_image = next((p.get('image') for p in cat_prods if p.get('image')), '')
                 home_html += f"""
-                        <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group">
-                            <div class="w-16 h-16 rounded-full bg-gray-50 dark:bg-gray-700 group-hover:bg-[#E53935] flex items-center justify-center transition-all group-hover:scale-105 shadow-sm border border-gray-100 dark:border-gray-600">
-                                <i class="fas {get_category_icon(cat)} text-xl text-[#E53935] group-hover:text-white transition" aria-hidden="true"></i>
+                        <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group rounded-xl p-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                            <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden bg-gray-50 dark:bg-gray-700 group-hover:ring-2 group-hover:ring-[#E53935] transition-all shadow-sm border border-gray-100 dark:border-gray-600">
+                                <img src="{cat_image}" alt="{cat}" class="w-full h-full object-cover" loading="lazy" decoding="async">
                             </div>
-                            <span class="text-[10px] md:text-xs font-bold text-gray-700 dark:text-gray-200 group-hover:text-[#E53935] transition line-clamp-1">{cat}</span>
+                            <span class="text-[10px] md:text-xs font-bold text-gray-700 dark:text-gray-200 group-hover:text-[#E53935] transition line-clamp-2">{cat}</span>
                         </a>
-                    """
+                """
             home_html += "</div></div></div>"
 
             home_html += """
@@ -2844,9 +2967,7 @@ def process_woocommerce_csv():
             <div id="defaultContent">
         """
         
-        start_c = (h_page - 1) * cats_per_home_page
-        end_c = start_c + cats_per_home_page
-        page_cats = all_categories_list[start_c:end_c]
+        page_cats = all_categories_list[:cats_per_home_page]
         
         for cat_name, prods in page_cats:
             cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
