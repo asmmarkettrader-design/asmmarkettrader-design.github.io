@@ -11,6 +11,7 @@ import json
 import urllib.parse
 import glob
 import time
+import hashlib
 from datetime import datetime, timedelta
 
 # ===== ASM VEO ADVANCED SHOPPING ENGINE: PHASES 1-9 =====
@@ -328,6 +329,26 @@ def clean_html(raw_html):
     clean_text = re.sub(r'<[^>]+>', ' ', str(raw_html))
     return ' '.join(clean_text.split())
 
+def make_safe_file_slug(text, max_length=72):
+    """Create a deterministic filesystem-safe slug for generated filenames/URLs.
+
+    Linux/ext4 limits a single filename component to 255 bytes. We keep
+    generated category filenames well below that limit and append a short
+    hash when truncation is necessary so different long categories do not
+    collide.
+    """
+    try:
+        max_length = min(int(max_length), 72)
+    except Exception:
+        max_length = 72
+    source = str(text or 'uncategorized').strip()
+    slug = re.sub(r'[^a-z0-9]+', '-', source.lower()).strip('-') or 'uncategorized'
+    if len(slug) <= max_length:
+        return slug
+    digest = hashlib.sha1(source.encode('utf-8')).hexdigest()[:10]
+    keep = max(1, max_length - len(digest) - 1)
+    return f"{slug[:keep].rstrip('-')}-{digest}"
+
 def make_slug(text):
     if not text: 
         return "uncategorized"
@@ -529,11 +550,11 @@ def build_category_menu_html(nav_tree):
         return '<a href="/categories.html" class="block px-4 py-3 font-bold">All Categories</a>'
     chunks = []
     for label, prods, subs in nav_tree:
-        slug = re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-')
+        slug = make_safe_file_slug(label, 72)
         image = next((p.get('image') for p in prods if p.get('image')), '')
         sub_items = sorted(subs.items(), key=lambda x: (-x[1], x[0].lower()))[:12]
         sub_html = ''.join(
-            f'<a href="/category/{re.sub(r"[^a-z0-9]+","-",s.lower()).strip("-")}.html" class="block py-1.5 text-xs text-gray-600 dark:text-gray-300 hover:text-[#E53935]">{s}</a>'
+            f'<a href="/category/{make_safe_file_slug(s, 72)}.html" class="block py-1.5 text-xs text-gray-600 dark:text-gray-300 hover:text-[#E53935]">{s}</a>'
             for s, _ in sub_items if s != 'All Products'
         )
         chunks.append(f'''
@@ -551,7 +572,7 @@ def generate_categories_page(nav_tree, categories_list):
     html = get_html_header('All Categories - ASM VEO', categories_list, 'Browse all main categories and subcategories for online shopping in Pakistan.', custom_canonical='https://www.asmveo.com/categories.html')
     html += '''<section class="container mx-auto px-4 py-10"><div class="text-center mb-8"><p class="text-xs font-black uppercase tracking-[0.2em] text-[#E53935]">Shop by Category</p><h1 class="text-3xl md:text-4xl font-black text-gray-900 dark:text-white mt-2">All Categories</h1><p class="text-gray-500 dark:text-gray-400 mt-2">Explore ASM VEO main categories and their subcategories.</p></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">'''
     for label, prods, subs in nav_tree:
-        slug = re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-')
+        slug = make_safe_file_slug(label, 72)
         image = next((p.get('image') for p in prods if p.get('image')), '')
         sub_items = sorted(subs.items(), key=lambda x: (-x[1], x[0].lower()))[:20]
         html += f'''<div class="rounded-2xl overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-xl transition"><a href="/category/{slug}.html"><div class="h-40 bg-gray-100 dark:bg-gray-700"><img src="{image}" alt="{label}" class="w-full h-full object-cover" loading="lazy" decoding="async"></div><div class="p-5"><h2 class="text-xl font-black text-gray-900 dark:text-white">{label}</h2><p class="text-xs text-gray-500 mt-1">{len(prods)} products</p></a><div class="mt-4 space-y-1">'''
@@ -726,7 +747,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     if breadcrumb_data:
         safe_bc_cat = breadcrumb_data['category'].replace('\\', '\\\\').replace('"', '\\"')
         safe_bc_name = breadcrumb_data['name'].replace('\\', '\\\\').replace('"', '\\"')
-        c_slug = re.sub(r'[^a-z0-9]+', '-', breadcrumb_data['category'].lower()).strip('-')
+        c_slug = make_safe_file_slug(breadcrumb_data['category'], 72)
         structured_data += f"""
     <script type="application/ld+json">
     {{
@@ -758,6 +779,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <link rel="canonical" href="{canonical_url}">
     
     <link rel="icon" type="image/png" href="/icon.png">
+    <script src="/firebase-config.js"></script>
 <link rel="apple-touch-icon" href="/icon.png">
     <link rel="alternate" hreflang="en-PK" href="{canonical_url}" />
     <link rel="alternate" hreflang="ur-PK" href="{canonical_url}" />
@@ -1626,7 +1648,18 @@ def generate_blog_pages(categories_list, products_list=None):
 # STATIC PAGES GENERATION
 # ==============================================================================
 
+def generate_firebase_config():
+    """Write Firebase Web config from GitHub Actions/build environment variables."""
+    cfg={"apiKey":os.environ.get("FIREBASE_API_KEY",""),"authDomain":os.environ.get("FIREBASE_AUTH_DOMAIN",""),"projectId":os.environ.get("FIREBASE_PROJECT_ID",""),"storageBucket":os.environ.get("FIREBASE_STORAGE_BUCKET",""),"messagingSenderId":os.environ.get("FIREBASE_MESSAGING_SENDER_ID",""),"appId":os.environ.get("FIREBASE_APP_ID","")}
+    if not all(cfg[k] for k in ("apiKey","authDomain","projectId","appId")):
+        print("⚠️ Firebase config not supplied; account page will keep guest checkout available.")
+        return
+    with open("output/firebase-config.js","w",encoding="utf-8") as f:f.write("window.ASM_FIREBASE_CONFIG="+json.dumps(cfg,ensure_ascii=False)+";")
+    print("✅ Firebase web config generated.")
+
+
 def generate_static_pages(categories_list, products_list=None):
+    generate_firebase_config()
     print("📄 Generating Static Pages...")
     
     category_payload = [
@@ -1707,7 +1740,23 @@ setTimeout(()=>location.replace(destination),2200);
         "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 2-4 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 149.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#E53935] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
         "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#E53935] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#E53935]"><button onclick="trackLocalOrder()" class="bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#C62828]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>window.addEventListener('load',()=>{const q=new URLSearchParams(location.search).get('id');if(q)document.getElementById('trackOrderInput').value=q});function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Pending','Confirmed','Shipped','Delivered'];const status=o.status||'Confirmed';const idx=steps.indexOf(status);r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#E53935]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">City: <strong>'+(o.city||'Pakistan')+'</strong> • Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div>"""),
-        "account.html": ("My Account", """<div class="container mx-auto px-4 py-12 max-w-5xl"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-200 dark:border-gray-700"><div class="text-center mb-8"><i class="fas fa-user-circle text-5xl text-[#E53935]"></i><h1 class="text-3xl font-black text-gray-900 dark:text-white mt-3">My ASM VEO Account</h1><p class="text-gray-500 mt-2">Save your details and view your order history on this device.</p></div><form id="accountForm" class="grid md:grid-cols-2 gap-4"><input id="accName" required placeholder="Full Name" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accEmail" type="email" placeholder="Email" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accPhone" required placeholder="03XXXXXXXXX" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accAddress" placeholder="Default Delivery Address" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><button class="md:col-span-2 bg-[#E53935] text-white py-3 rounded-xl font-bold">Save Profile</button></form><div class="mt-8 bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><h2 class="font-black text-xl mb-3 text-gray-900 dark:text-white">Recent Orders</h2><div id="accountOrders" class="space-y-3"></div></div><p class="text-xs text-gray-400 mt-5">This static-site account uses browser storage and is not a server-authenticated login.</p></div><script>function renderAccount(){let u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){accName.value=u.name||'';accEmail.value=u.email||'';accPhone.value=u.phone||'';accAddress.value=u.address||''}let os=JSON.parse(localStorage.getItem('asm_orders')||'[]');accountOrders.innerHTML=os.length?os.slice(0,10).map(o=>'<div class="flex items-center justify-between gap-3 p-3 bg-white dark:bg-gray-800 rounded-xl"><span class="font-bold">'+o.orderId+'</span><span>'+o.total+'</span><a class="text-[#E53935] font-bold text-xs" href="/track-order.html?id='+encodeURIComponent(o.orderId)+'">Track</a></div>').join(''):'<p class="text-gray-500">No local orders yet.</p>'}accountForm.addEventListener('submit',e=>{e.preventDefault();localStorage.setItem('asm_account',JSON.stringify({name:accName.value,email:accEmail.value,phone:accPhone.value,address:accAddress.value}));renderAccount();alert('Profile saved successfully.')});window.addEventListener('load',renderAccount)</script></div>"""),
+        "account.html": ("My Account", """
+<div class="container mx-auto px-4 py-12 max-w-5xl">
+  <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 md:p-8 border border-gray-200 dark:border-gray-700">
+    <div class="text-center mb-8"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-[#E53935] text-3xl"><i class="fas fa-user-shield"></i></div><h1 class="text-3xl font-black text-gray-900 dark:text-white mt-4">My ASM VEO Account</h1><p class="text-gray-500 dark:text-gray-400 mt-2">Optional account for faster checkout and secure profile access. Guest checkout remains available.</p></div>
+    <div id="accountStatus" class="hidden mb-5 rounded-xl px-4 py-3 text-sm font-semibold"></div>
+    <div id="authPanel" class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-5"><h2 class="text-xl font-black text-gray-900 dark:text-white mb-4">Create Account</h2><form id="signupForm" class="space-y-3"><input id="signupName" required maxlength="80" placeholder="Full Name" class="w-full border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="signupPhone" maxlength="20" placeholder="Phone (03XXXXXXXXX)" class="w-full border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="signupEmail" required type="email" maxlength="160" placeholder="Email Address" class="w-full border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="signupPassword" required type="password" minlength="8" maxlength="128" placeholder="Password (8+ characters)" class="w-full border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><button class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828]">Create Account & Verify Email</button></form></div>
+      <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-5"><h2 class="text-xl font-black text-gray-900 dark:text-white mb-4">Sign In</h2><form id="loginForm" class="space-y-3"><input id="loginEmail" required type="email" placeholder="Email Address" class="w-full border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="loginPassword" required type="password" placeholder="Password" class="w-full border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><button class="w-full bg-gray-900 dark:bg-white dark:text-gray-900 text-white py-3 rounded-xl font-bold">Sign In</button></form><button id="forgotPassword" type="button" class="mt-4 text-sm font-bold text-[#E53935] hover:underline">Forgot Password?</button><p class="text-xs text-gray-500 dark:text-gray-400 mt-5">Email verification and password recovery are handled by Firebase Authentication. Passwords are never stored by ASM VEO as plain text.</p></div>
+    </div>
+    <div id="profilePanel" class="hidden mt-6 rounded-2xl border border-gray-200 dark:border-gray-700 p-5"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-5"><div><p class="text-xs font-black uppercase tracking-wider text-[#E53935]">Signed in</p><h2 id="profileEmail" class="text-xl font-black text-gray-900 dark:text-white"></h2><p id="verificationState" class="text-sm mt-1"></p></div><button id="logoutBtn" class="border border-gray-300 dark:border-gray-600 px-5 py-2.5 rounded-xl font-bold">Sign Out</button></div><form id="profileForm" class="grid md:grid-cols-2 gap-3"><input id="profileName" maxlength="80" placeholder="Full Name" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="profilePhone" maxlength="20" placeholder="Phone" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="profileAddress" maxlength="250" placeholder="Default Delivery Address" class="md:col-span-2 border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><button class="md:col-span-2 bg-[#E53935] text-white py-3 rounded-xl font-bold">Save Profile</button></form><div class="mt-7 bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><h3 class="font-black text-lg text-gray-900 dark:text-white mb-3">Orders on this device</h3><div id="accountOrders" class="space-y-3"></div><p class="text-xs text-gray-500 dark:text-gray-400 mt-4">The existing Google Sheets order workflow is unchanged.</p></div></div>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script>
+(function(){const C=window.ASM_FIREBASE_CONFIG||null,box=document.getElementById('accountStatus'),authPanel=document.getElementById('authPanel'),profilePanel=document.getElementById('profilePanel');const msg=(t,g)=>{box.textContent=t;box.className='mb-5 rounded-xl px-4 py-3 text-sm font-semibold '+(g?'bg-green-50 text-green-700 border border-green-200':'bg-red-50 text-red-700 border border-red-200')};const orders=()=>{let o=[];try{o=JSON.parse(localStorage.getItem('asm_orders')||'[]')}catch(e){}accountOrders.innerHTML=o.length?o.slice(0,10).map(x=>'<div class="flex items-center justify-between gap-3 p-3 bg-white dark:bg-gray-800 rounded-xl"><b>'+String(x.orderId||'Order')+'</b><span>'+String(x.total||'')+'</span><a class="text-[#E53935] font-bold text-xs" href="/track-order.html?id='+encodeURIComponent(x.orderId||'')+'">Track</a></div>').join(''):'<p class="text-gray-500">No local orders yet.</p>'};if(!C){msg('Firebase configuration is not included in this build yet. Guest checkout is still available. Set FIREBASE_* build variables to enable accounts.');orders();return}try{if(!firebase.apps.length)firebase.initializeApp(C)}catch(e){msg('Firebase initialization failed: '+e.message);return}const a=firebase.auth(),db=firebase.firestore();const save=async(u,d)=>{await db.collection('users').doc(u.uid).set({...d,updatedAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true})};const show=async(u)=>{if(!u){authPanel.classList.remove('hidden');profilePanel.classList.add('hidden');return}authPanel.classList.add('hidden');profilePanel.classList.remove('hidden');profileEmail.textContent=u.email||'';verificationState.innerHTML=u.emailVerified?'<span class="text-green-600 font-bold">✓ Email verified</span>':'<span class="text-amber-600 font-bold">Email not verified</span> <button id="resendVerification" class="underline">Resend</button>';orders();try{const d=(await db.collection('users').doc(u.uid).get()).data()||{};profileName.value=d.name||u.displayName||'';profilePhone.value=d.phone||'';profileAddress.value=d.address||''}catch(e){}const r=document.getElementById('resendVerification');if(r)r.onclick=async()=>{try{await u.sendEmailVerification();msg('Verification email sent.',true)}catch(e){msg(e.message)}}};a.onAuthStateChanged(show);signupForm.addEventListener('submit',async e=>{e.preventDefault();try{const c=await a.createUserWithEmailAndPassword(signupEmail.value.trim(),signupPassword.value);await c.user.updateProfile({displayName:signupName.value.trim()});await c.user.sendEmailVerification();await save(c.user,{name:signupName.value.trim(),phone:signupPhone.value.trim(),email:c.user.email});msg('Account created. Check your email and verify your account.',true)}catch(e){msg(e.message)}});loginForm.addEventListener('submit',async e=>{e.preventDefault();try{const c=await a.signInWithEmailAndPassword(loginEmail.value.trim(),loginPassword.value);if(!c.user.emailVerified){await c.user.sendEmailVerification();msg('Email is not verified. A new verification email was sent.');return}msg('Signed in successfully.',true)}catch(e){msg(e.message)}});forgotPassword.onclick=async()=>{const e=loginEmail.value.trim();if(!e)return msg('Enter your email first.');try{await a.sendPasswordResetEmail(e);msg('Password reset email sent.',true)}catch(x){msg(x.message)}};logoutBtn.onclick=()=>a.signOut();profileForm.addEventListener('submit',async e=>{e.preventDefault();if(!a.currentUser)return;try{await save(a.currentUser,{name:profileName.value.trim(),phone:profilePhone.value.trim(),address:profileAddress.value.trim(),email:a.currentUser.email});await a.currentUser.updateProfile({displayName:profileName.value.trim()});msg('Profile saved.',true)}catch(x){msg(x.message)}})})();
+</script>
+"""),
         "compare.html": ("Compare Products", """<div class="container mx-auto px-4 py-16 max-w-6xl"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"><div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Compare Products</h1><p class="text-gray-600 dark:text-gray-300 mt-2">Compare up to 4 products side by side.</p></div><button onclick="clearCompare();renderComparePage();" class="border border-gray-300 dark:border-gray-600 px-5 py-2.5 rounded-xl font-bold text-sm">Clear All</button></div><div id="comparePageContent"></div><script>function renderComparePage(){let items=[];try{items=JSON.parse(localStorage.getItem('asm_compare'))||[];}catch(e){}const box=document.getElementById('comparePageContent');if(!items.length){box.innerHTML='<div class="bg-white dark:bg-gray-800 rounded-3xl p-12 text-center border border-gray-200 dark:border-gray-700"><i class="fas fa-code-compare text-6xl text-gray-300 mb-5"></i><h2 class="text-2xl font-black text-gray-900 dark:text-white mb-2">Nothing to compare yet</h2><p class="text-gray-500 mb-6">Add products using the compare icon on product cards.</p><a href="/index.html#products" class="inline-block bg-[#E53935] text-white px-6 py-3 rounded-xl font-bold">Browse Products</a></div>';return;}const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const row=(label,fn)=>'<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black text-gray-700 dark:text-gray-300">'+label+'</td>'+items.map(p=>'<td class="p-5 text-center text-gray-600 dark:text-gray-300">'+fn(p)+'</td>').join('')+'</tr>';let html='<div class="overflow-x-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700"><table class="w-full min-w-[760px] text-sm"><thead><tr><th class="text-left p-5 bg-gray-50 dark:bg-gray-700">Feature</th>'+items.map(p=>'<th class="p-5 text-center bg-gray-50 dark:bg-gray-700"><img src="'+p.image+'" class="w-24 h-24 mx-auto object-contain rounded-xl" alt=""><div class="font-bold mt-2 text-gray-900 dark:text-white">'+esc(p.name)+'</div></th>').join('')+'</tr></thead><tbody>';html+=row('Price',p=>'<span class="text-[#E53935] font-black text-lg">Rs '+p.price+'</span>');html+=row('Category',p=>esc(p.category));html+=row('Availability',p=>'<span class="text-green-600 font-bold"><i class="fas fa-check-circle"></i> In Stock</span>');html+=row('Delivery',p=>'2–4 business days');html+=row('Returns',p=>'7-day returns');html+='<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black">Action</td>'+items.map(p=>'<td class="p-5 text-center"><a href="/product/'+p.slug+'.html" class="inline-block bg-[#E53935] text-white px-4 py-2 rounded-lg font-bold">View Product</a></td>').join('')+'</tr></tbody></table></div>';box.innerHTML=html;}window.addEventListener('load',renderComparePage);</script></div>"""),
         "404.html": ("Finding Product...", smart_404_html),
         "wishlist.html": ("My Wishlist", """<div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div></div>
@@ -1975,7 +2024,7 @@ def generate_seo_audit(products_list,categories_list):
 # ============================================================================
 def generate_parent_category_pages(nav_tree, categories_list, sitemap_urls):
     for label, prods, subs in nav_tree:
-        slug = re.sub(r'[^a-z0-9]+','-',label.lower()).strip('-')
+        slug = make_safe_file_slug(label, 72)
         url = f"https://www.asmveo.com/category/{slug}.html"
         if url not in sitemap_urls:
             sitemap_urls.append(url)
@@ -1991,14 +2040,15 @@ def generate_parent_category_pages(nav_tree, categories_list, sitemap_urls):
             for sub, prod in sorted(sub_map.items(), key=lambda x:x[0].lower())[:20]:
                 if sub == 'All Products':
                     continue
-                ss = re.sub(r'[^a-z0-9]+','-',sub.lower()).strip('-')
+                ss = make_safe_file_slug(sub, 72)
                 page += f'<a href="/category/{ss}.html" class="flex items-center gap-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl px-3 py-2 shadow-sm hover:border-[#E53935] transition"><img src="{prod.get("image","")}" alt="{sub}" class="w-9 h-9 rounded-lg object-cover"><span class="text-sm font-bold text-gray-800 dark:text-gray-200">{sub}</span></a>'
             page += '</div></section>'
         page += '<section class="container mx-auto px-4 pb-12"><div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">'
         for prod in prods[:24]:
             page += generate_product_card(prod, lazy=True)
         page += '</div></section>' + get_html_footer()
-        with open(f'output/category/{slug}.html','w',encoding='utf-8') as f:
+        safe_slug = make_safe_file_slug(slug, 72)
+        with open(f'output/category/{safe_slug}.html','w',encoding='utf-8') as f:
             f.write(minify_html(page))
 
 
@@ -2335,7 +2385,7 @@ def process_woocommerce_csv():
         <div class="container mx-auto px-4 py-10">
             <nav class="text-sm text-gray-600 dark:text-gray-400 mb-6 font-semibold bg-gray-100 dark:bg-gray-800 p-3 rounded-lg inline-block" aria-label="Breadcrumb">
                 <a href="/index.html" class="hover:text-[#E53935] transition">Home</a> &gt; 
-                <a href="/category/{re.sub(r'[^a-z0-9]+', '-', prod['category'].lower()).strip('-')}.html" class="hover:text-[#E53935] transition">{prod['category']}</a> &gt; 
+                <a href="/category/{make_safe_file_slug(prod['category'], 72)}.html" class="hover:text-[#E53935] transition">{prod['category']}</a> &gt; 
                 <span class="text-[#E53935] dark:text-white" aria-current="page">{prod['name']}</span>
             </nav>
             <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col md:flex-row mb-12 reveal">
@@ -2438,7 +2488,7 @@ def process_woocommerce_csv():
         
         prod_html += f"""
         <section class="container mx-auto px-4 pb-12">
-          <div class="flex items-center justify-between mb-5"><div><p class="text-xs font-black uppercase tracking-[0.2em] text-[#E53935]">Personalized Picks</p><h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">You May Also Like</h2></div><a href="/category/{re.sub(r'[^a-z0-9]+','-',prod['category'].lower()).strip('-')}.html" class="text-sm font-bold text-[#E53935]">View Category →</a></div>
+          <div class="flex items-center justify-between mb-5"><div><p class="text-xs font-black uppercase tracking-[0.2em] text-[#E53935]">Personalized Picks</p><h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">You May Also Like</h2></div><a href="/category/{make_safe_file_slug(prod['category'], 72)}.html" class="text-sm font-bold text-[#E53935]">View Category →</a></div>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">{related_html}</div>
         </section>
         """
@@ -2530,7 +2580,7 @@ def process_woocommerce_csv():
         sections_dict[c].append(p)
 
     for cat_name, prods in sections_dict.items():
-        cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
+        cat_slug = make_safe_file_slug(cat_name, 72)
         sitemap_urls.append(f"https://www.asmveo.com/category/{cat_slug}.html")
         
         prods_per_page = 12
@@ -2541,7 +2591,7 @@ def process_woocommerce_csv():
             end_idx = start_idx + prods_per_page
             current_prods = prods[start_idx:end_idx]
             
-            file_slug = cat_slug if page_num == 1 else f"{cat_slug}-{page_num}"
+            file_slug = make_safe_file_slug(cat_slug if page_num == 1 else f"{cat_slug}-{page_num}", 72)
             page_title = f"Buy {cat_name} Online in Pakistan | ASM VEO" if page_num == 1 else f"{cat_name} - Page {page_num}"
             
             if page_num > 1:
@@ -2557,8 +2607,8 @@ def process_woocommerce_csv():
                 <div class="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
                 <div class="absolute bottom-10 left-10 w-48 h-48 bg-white/5 rounded-full animate-float" style="animation-delay: 2s;"></div>
                 <div class="container mx-auto px-4 text-center relative z-10">
-                    <div class="w-16 h-16 mx-auto rounded-full bg-white/20 backdrop-blur flex items-center justify-center mb-4 text-white shadow-lg">
-                        <i class="fas {get_category_icon(cat_name)} text-3xl" aria-hidden="true"></i>
+                    <div class="w-20 h-20 mx-auto rounded-2xl bg-white/20 backdrop-blur overflow-hidden mb-4 shadow-lg border border-white/30">
+                        <img src="{prods[0].get('image','')}" alt="{cat_name} category" class="w-full h-full object-cover" loading="eager" decoding="async">
                     </div>
                     <h1 class="text-3xl md:text-5xl font-black text-white">{cat_name}</h1>
                     <p class="text-gray-200 mt-3 font-bold">{len(prods)} Products Available • Cash on Delivery</p>
@@ -2711,7 +2761,8 @@ def process_woocommerce_csv():
             cat_html += get_html_footer()
             
             # 🌟 YAHAN FILE SAVE HO RAHI HAI 🌟
-            with open(f"output/category/{file_slug}.html", "w", encoding="utf-8") as f:
+            safe_file_slug = make_safe_file_slug(file_slug, 72)
+            with open(f"output/category/{safe_file_slug}.html", "w", encoding="utf-8") as f:
                 f.write(minify_html(cat_html))
 
    # ==============================================================================
@@ -2761,15 +2812,16 @@ def process_woocommerce_csv():
             <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
                 <div class="carousel-track h-full">
                 
-                    <!-- BANNER 1: Fashion & Footwear (Apparel + Footwear & Bags) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-rose-100 to-teal-50" aria-hidden="false">
+                    <!-- BANNER 1: Pakistan Mega Sale -->
+                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-green-100 via-white to-green-50" aria-hidden="false">
+                        <div class="absolute inset-0 opacity-15 bg-[linear-gradient(90deg,#006600_0%,#006600_28%,#ffffff_28%,#ffffff_100%)]"></div><div class="absolute right-[12%] top-[12%] text-7xl md:text-9xl opacity-20 select-none">🇵🇰</div>
                         <div class="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-teal-100/40"></div>
                         <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-teal-200/60 to-transparent transform skew-x-12 translate-x-10"></div>
                         
                         <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <span class="bg-gray-900 text-white px-2 py-1 text-[8px] md:text-[10px] font-black tracking-widest uppercase mb-2 shadow-sm rounded-sm">ASM VEO EXCLUSIVE</span>
-                            <h2 class="text-3xl md:text-6xl font-black text-rose-600 uppercase tracking-tighter drop-shadow-sm leading-none">STYLE<br><span class="text-gray-800">REINVENTED</span></h2>
-                            <p class="text-gray-700 text-[9px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Premium Apparel & Footwear</p>
+                            <span class="bg-gray-900 text-white px-2 py-1 text-[8px] md:text-[10px] font-black tracking-widest uppercase mb-2 shadow-sm rounded-sm">🇵🇰 ASM VEO PAKISTAN MEGA SALE</span>
+                            <h2 class="text-3xl md:text-6xl font-black text-rose-600 uppercase tracking-tighter drop-shadow-sm leading-none">UP TO<br><span class="text-[#E53935]">70% OFF</span></h2>
+                            <p class="text-gray-700 text-[9px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Best Online Shopping Platform in Pakistan • ASM VEO</p>
                             <div class="flex gap-2 mb-3">
                                 <span class="bg-white text-rose-600 border border-rose-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Ready-Made Kapde</span>
                                 <span class="bg-white text-teal-600 border border-teal-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Sneakers & Bags</span>
@@ -2884,7 +2936,7 @@ def process_woocommerce_csv():
             """
             
             for cat, cat_prods, _subs in NAV_CATEGORY_TREE:
-                c_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
+                c_slug = make_safe_file_slug(cat, 72)
                 cat_image = next((p.get('image') for p in cat_prods if p.get('image')), '')
                 home_html += f"""
                         <a href="/category/{c_slug}.html" class="flex flex-col items-center gap-2 group rounded-xl p-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition">
@@ -2970,7 +3022,7 @@ def process_woocommerce_csv():
         page_cats = all_categories_list[:cats_per_home_page]
         
         for cat_name, prods in page_cats:
-            cat_slug = re.sub(r'[^a-z0-9]+', '-', cat_name.lower()).strip('-')
+            cat_slug = make_safe_file_slug(cat_name, 72)
             
             home_html += f"""
             <div class="mb-14 category-section reveal">
