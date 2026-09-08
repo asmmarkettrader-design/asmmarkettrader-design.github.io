@@ -134,7 +134,7 @@ let cart = getCart();
 let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
 document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
 }
-function addToCart(name, price, image, event, slug) {
+function addToCart(name, price, image, event) {
 if(event) event.stopPropagation();
 let cart = getCart();
 let existing = cart.find(item => item.name === name);
@@ -142,7 +142,7 @@ if (existing) {
 existing.qty = (existing.qty || 1) + 1;
 }
 else {
-cart.push({name, price: parseFloat(price), image, slug: slug || '', qty: 1});
+cart.push({name, price: parseFloat(price), image, qty: 1});
 }
 saveCart(cart);
 showToast('Added to Cart!', 'fa-cart-plus', 'pk');
@@ -164,9 +164,9 @@ cart.splice(index, 1);
 saveCart(cart);
 if (typeof renderCart === 'function') renderCart();
 }
-function buyNow(name, price, image, event, slug) {
+function buyNow(name, price, image, event) {
 if(event) event.stopPropagation();
-window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price + '&slug=' + encodeURIComponent(slug || '');
+window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
 }
 function getWishlist() {
 return JSON.parse(localStorage.getItem('asm_wishlist')) || [];
@@ -327,8 +327,8 @@ document.getElementById('qvPrice').innerText = "Rs " + price;
 document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
 let safeName = name.replace(/'/g, "\\'");
 let safeImage = image.replace(/'/g, "\\'");
-document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event); closeQuickView();`);
-document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event);`);
+document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event, slug); closeQuickView();`);
+document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event, slug);`);
 document.getElementById('qvLink').href = '/product/' + slug + '.html';
 modal.classList.remove('hidden');
 modal.classList.add('flex');

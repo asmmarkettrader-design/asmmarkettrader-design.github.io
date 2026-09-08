@@ -134,7 +134,7 @@ let cart = getCart();
 let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
 document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
 }
-function addToCart(name, price, image, event, slug) {
+function addToCart(name, price, image, event) {
 if(event) event.stopPropagation();
 let cart = getCart();
 let existing = cart.find(item => item.name === name);
@@ -142,7 +142,7 @@ if (existing) {
 existing.qty = (existing.qty || 1) + 1;
 }
 else {
-cart.push({name, price: parseFloat(price), image, slug: slug || '', qty: 1});
+cart.push({name, price: parseFloat(price), image, qty: 1});
 }
 saveCart(cart);
 showToast('Added to Cart!', 'fa-cart-plus', 'pk');
@@ -164,9 +164,9 @@ cart.splice(index, 1);
 saveCart(cart);
 if (typeof renderCart === 'function') renderCart();
 }
-function buyNow(name, price, image, event, slug) {
+function buyNow(name, price, image, event) {
 if(event) event.stopPropagation();
-window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price + '&slug=' + encodeURIComponent(slug || '');
+window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
 }
 function getWishlist() {
 return JSON.parse(localStorage.getItem('asm_wishlist')) || [];
@@ -327,8 +327,8 @@ document.getElementById('qvPrice').innerText = "Rs " + price;
 document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
 let safeName = name.replace(/'/g, "\\'");
 let safeImage = image.replace(/'/g, "\\'");
-document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event); closeQuickView();`);
-document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event);`);
+document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event, slug); closeQuickView();`);
+document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event, slug);`);
 document.getElementById('qvLink').href = '/product/' + slug + '.html';
 modal.classList.remove('hidden');
 modal.classList.add('flex');
@@ -464,216 +464,26 @@ aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp text-3xl" aria-hidden="t
 </h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 text-sm"><div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"><div class="font-black text-green-600 mb-1 flex items-center gap-1"><div class="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center text-white text-[8px]">e</div> Easypaisa</div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p><p class="font-black text-gray-900 dark:text-white mb-2">Ali Abbas</p><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p><p class="font-black text-gray-900 dark:text-white">03425478683</p></div><div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"><div class="font-black text-red-600 mb-1 italic tracking-tighter">jazzCash</div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p><p class="font-black text-gray-900 dark:text-white mb-2">Aon Abbas</p><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p><p class="font-black text-gray-900 dark:text-white">03085273667</p></div></div><div class="bg-blue-100 dark:bg-blue-900/40 p-3 rounded-lg border border-blue-200 dark:border-blue-800 flex items-start gap-2"><i class="fas fa-info-circle text-blue-700 dark:text-blue-400 mt-0.5"></i><p class="text-xs text-blue-800 dark:text-blue-300 font-bold leading-relaxed"><span class="uppercase text-[10px] bg-blue-200 dark:bg-blue-800 px-1 py-0.5 rounded mr-1">Zaroori</span>
 Payment send krny k baad WhatsApp par screenshot lazmi send karein ta k apka order foran process ho saky.
 </p></div></div></div><div><label for="orderNotes" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label><textarea id="orderNotes" name="Order_Notes" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="Any special instructions..."></textarea></div><div><label for="couponCode" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Coupon Code</label><div class="flex gap-2"><input type="text" id="couponCode" placeholder="Enter ASM10 for 10% off (Min Rs 3000)" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none uppercase"><button type="button" onclick="applyCoupon()" class="bg-gray-900 text-white px-5 rounded-xl font-bold hover:bg-gray-700 transition" aria-label="Apply Coupon">Apply</button></div></div><div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5 border border-gray-100 dark:border-gray-600 mt-6"><div class="flex justify-between text-sm font-bold text-gray-700 dark:text-gray-300 mb-2"><span>Subtotal</span><span id="subtotalDisplay">Rs 0</span></div><div class="flex justify-between text-sm font-bold text-[#E53935] dark:text-white mb-2 hidden" id="discountRow"><span>Discount (10%)</span><span id="discountDisplay">- Rs 0</span></div><div class="flex justify-between text-sm font-bold text-gray-700 dark:text-gray-300 mb-2"><span>Delivery Charges</span><span id="deliveryDisplay">Rs 180</span></div><div class="flex justify-between items-center border-t border-gray-200 dark:border-gray-600 pt-3 mt-3"><span class="font-black text-lg text-gray-900 dark:text-white">Total</span><span class="font-black text-2xl text-[#E53935] dark:text-white" id="grandTotalDisplay">Rs 180</span></div></div><button type="submit" id="submitBtn" class="w-full bg-[#E53935] text-white font-black py-4 rounded-xl hover:bg-[#C62828] transition-all shadow-xl text-lg transform hover:-translate-y-1 flex items-center justify-center gap-2"><i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order
-</button><a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20order!" class="w-full bg-green-500 text-white font-black py-4 rounded-xl hover:bg-green-600 transition-all shadow-xl text-lg mt-3 flex items-center justify-center gap-2 transform hover:-translate-y-1"><i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Order via WhatsApp
+</button><a id="checkoutWhatsApp" href="https://wa.me/923425478683?text=Hi%20ASM%20VEO,%20I%20want%20to%20place%20an%20order" class="w-full bg-green-500 text-white font-black py-4 rounded-xl hover:bg-green-600 transition-all shadow-xl text-lg mt-3 flex items-center justify-center gap-2 transform hover:-translate-y-1"><i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Order via WhatsApp
 </a><p class="text-center text-xs text-gray-600 dark:text-gray-400 mt-4"><i class="fas fa-lock" aria-hidden="true"></i> Your information is secure and never shared with third parties.</p></form></div></div></div><script>
-let couponApplied = false;
-const deliveryZones = {"Karachi": [149, 2, 3], "Lahore": [149, 2, 3], "Islamabad": [149, 2, 3], "Rawalpindi": [149, 2, 3], "Faisalabad": [149, 2, 4], "Multan": [149, 2, 4], "Gujranwala": [149, 2, 4], "Sialkot": [149, 2, 4], "Peshawar": [149, 3, 5], "Quetta": [149, 4, 6], "Hyderabad": [149, 2, 4], "Bahawalpur": [149, 3, 5], "Sargodha": [149, 3, 5], "Sukkur": [149, 3, 5], "Larkana": [149, 3, 5], "Sheikhupura": [149, 2, 4], "Mardan": [149, 3, 5], "Abbottabad": [149, 3, 5], "Mansehra": [149, 3, 5], "Haripur": [149, 3, 5], "Nowshera": [149, 3, 5], "Swat": [149, 4, 6], "Dir": [149, 4, 6], "Chitral": [149, 5, 7], "Bannu": [149, 4, 6], "Charsadda": [149, 3, 5], "Muzaffarabad": [149, 4, 6], "Mirpur": [149, 3, 5], "Kotli": [149, 4, 6], "Bhimber": [149, 4, 6]};
-function getDeliveryInfo(city){const z=deliveryZones[city]||[149,3,6];return {charge:z[0],min:z[1],max:z[2]};}
-function updateDeliveryEstimate(){const city=document.getElementById('citySelect')?.value||'';const z=getDeliveryInfo(city);const n=document.getElementById('deliveryEstimate');if(n)n.textContent=city?('Estimated delivery: '+z.min+'-'+z.max+' working days • '+(z.charge===0?'FREE':'Rs '+z.charge)):'Select your city for delivery estimate';renderCart();}
-function togglePaymentDetails() {
-let method = document.querySelector('input[name="Payment_Method"]:checked').value;
-let details = document.getElementById('advancePaymentDetails');
-let labelCOD = document.getElementById('labelCOD');
-let labelAdv = document.getElementById('labelAdv');
-if(method === 'Advance Payment') {
-details.classList.remove('hidden');
-labelAdv.classList.add('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-labelAdv.classList.remove('border-gray-200', 'dark:border-gray-600');
-labelCOD.classList.remove('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-labelCOD.classList.add('border-gray-200', 'dark:border-gray-600');
-} else {
-details.classList.add('hidden');
-labelCOD.classList.add('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-labelCOD.classList.remove('border-gray-200', 'dark:border-gray-600');
-labelAdv.classList.remove('border-[#E53935]', 'bg-red-50', 'dark:bg-red-900/20');
-labelAdv.classList.add('border-gray-200', 'dark:border-gray-600');
-}
-renderCart();
-}
-function applyCoupon() {
-let code = document.getElementById('couponCode').value;
-let currentSubtotal = 0;
-const urlParams = new URLSearchParams(window.location.search);
-if (urlParams.get('buy_now') === 'true') {
-currentSubtotal = parseInt(urlParams.get('price')) || 0;
-} else {
-let cart = getCart();
-cart.forEach(item => currentSubtotal += parseInt(item.price) * (item.qty || 1));
-}
-if (code === 'ASM10') {
-if (currentSubtotal >= 3000) {
-couponApplied = true;
-showToast('Coupon applied! 10% discount added.', 'fa-check-circle', 'pk');
-} else {
-couponApplied = false;
-showToast('Minimum Rs 3000 shopping required for this coupon.', 'fa-exclamation-circle', 'red');
-}
-} else {
-couponApplied = false;
-showToast('Invalid coupon code.', 'fa-times-circle', 'red');
-}
-renderCart();
-}
-function updateCheckoutWhatsApp() {
-const urlParams = new URLSearchParams(window.location.search);
-const base = 'https://www.asmveo.com';
-let lines = ['Hi ASM VEO, I want to place an order:'];
-if (urlParams.get('buy_now') === 'true') {
-const name = urlParams.get('product') || '';
-const price = urlParams.get('price') || '';
-const slug = urlParams.get('slug') || '';
-lines.push('1x ' + name + ' (Rs ' + price + ')');
-if (slug) lines.push('Product: ' + base + '/product/' + encodeURIComponent(slug) + '.html');
-} else {
-let cart = getCart();
-cart.forEach(item => {
-const qty = item.qty || 1;
-lines.push(qty + 'x ' + item.name + ' (Rs ' + (Number(item.price) * qty) + ')');
-if (item.slug) lines.push('Product: ' + base + '/product/' + encodeURIComponent(item.slug) + '.html');
-});
-}
-const el = document.getElementById('checkoutWhatsApp');
-if (el) el.href = 'https://wa.me/923425478683?text=' + encodeURIComponent(lines.join('\n'));
-}
-function renderCart() {
-const urlParams = new URLSearchParams(window.location.search);
-const isBuyNow = urlParams.get('buy_now') === 'true';
-const pName = urlParams.get('product');
-const pPrice = parseInt(urlParams.get('price')) || 0;
-const pSlug = urlParams.get('slug') || '';
-const siteBase = 'https://www.asmveo.com';
-let subtotal = 0;
-let finalOrderString = "";
-let container = document.getElementById('cartItemsContainer');
-container.innerHTML = '';
-if (isBuyNow && pName && pPrice) {
-subtotal = pPrice;
-finalOrderString = "1x " + pName + " (Rs " + pPrice + ")" + (pSlug ? "
-Product: " + siteBase + "/product/" + encodeURIComponent(pSlug) + ".html" : "");
-let safeHtmlName = pName.replace(/"/g, '&quot;');
-container.innerHTML = `
-<div class="flex items-center gap-4 bg-gray-50 dark:bg-gray-700 p-3 rounded-xl border border-gray-200 dark:border-gray-600"><div class="flex-1"><h3 class="font-bold text-gray-900 dark:text-white line-clamp-1">${safeHtmlName}</h3><p class="text-[#E53935] dark:text-white font-black">Rs ${pPrice}</p></div></div>`;
-} else {
-let cart = getCart();
-if(cart.length === 0) {
-container.innerHTML = `<div class="text-center py-8"><i class="fas fa-shopping-cart text-5xl text-gray-300 mb-3" aria-hidden="true"></i><p class="text-gray-500 font-semibold">Your cart is empty.</p><a href="/index.html" class="inline-block mt-4 bg-[#E53935] text-white px-6 py-2 rounded-xl font-bold">Browse Products</a></div>`;
-document.getElementById('submitBtn').disabled = true;
-document.getElementById('submitBtn').classList.add('opacity-50', 'cursor-not-allowed');
-} else {
-document.getElementById('submitBtn').disabled = false;
-document.getElementById('submitBtn').classList.remove('opacity-50', 'cursor-not-allowed');
-cart.forEach((item, index) => {
-let qty = item.qty || 1;
-subtotal += parseInt(item.price) * qty;
-finalOrderString += qty + "x " + item.name + " (Rs " + (item.price * qty) + ")\n";
-let safeHtmlName = item.name.replace(/"/g, '&quot;');
-container.innerHTML += `
-<div class="flex items-center gap-3 bg-gray-50 dark:bg-gray-700 p-3 rounded-xl border border-gray-200 dark:border-gray-600"><img src="${item.image}" class="w-16 h-16 object-contain rounded-lg bg-white border border-gray-100 p-1" onerror="this.src='https://via.placeholder.com/100x100/E53935/ffffff?text=ASM'" loading="lazy" decoding="async" alt="Cart Item"><div class="flex-1 min-w-0"><h3 class="font-bold text-sm text-gray-900 dark:text-white line-clamp-2">${safeHtmlName}</h3><p class="text-[#E53935] dark:text-white font-black text-sm">Rs ${item.price}</p><div class="flex items-center gap-2 mt-1"><button type="button" aria-label="Decrease" onclick="updateQty(${index}, -1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-800 dark:text-white font-bold hover:bg-gray-300">-</button><span class="font-bold text-sm">${qty}</span><button type="button" aria-label="Increase" onclick="updateQty(${index}, 1)" class="w-6 h-6 bg-gray-200 dark:bg-gray-600 rounded text-gray-800 dark:text-white font-bold hover:bg-gray-300">+</button><button type="button" aria-label="Remove" onclick="removeFromCart(${index})" class="ml-2 text-red-500 hover:text-red-700 text-xs"><i class="fas fa-trash" aria-hidden="true"></i></button></div></div></div>`;
-});
-}
-}
-let selectedCity=document.getElementById('citySelect')?.value||''; let zone=getDeliveryInfo(selectedCity); let delivery=subtotal>=5000?0:(selectedCity ? zone.charge : 149);
-let discount = couponApplied ? Math.floor(subtotal * 0.10) : 0;
-let grandTotal = subtotal - discount + delivery;
-let paymentMethod = document.querySelector('input[name="Payment_Method"]:checked').value;
-document.getElementById('subtotalDisplay').innerText = "Rs " + subtotal;
-document.getElementById('deliveryDisplay').innerText = delivery === 0 ? "FREE" : "Rs " + delivery;
-let discountRow = document.getElementById('discountRow');
-if (discount > 0) {
-discountRow.classList.remove('hidden');
-document.getElementById('discountDisplay').innerText = "- Rs " + discount;
-} else {
-discountRow.classList.add('hidden');
-}
-document.getElementById('grandTotalDisplay').innerText = "Rs " + grandTotal;
-document.getElementById('productField').value = finalOrderString + "\nDelivery: Rs " + delivery + "\nDiscount: Rs " + discount + "\nGrand Total: Rs " + grandTotal + "\nPayment Method: " + paymentMethod;
-document.getElementById('totalField').value = "Rs " + grandTotal;
-updateCheckoutWhatsApp();
-}
-document.getElementById('checkoutForm').addEventListener('submit', function(e) {
-e.preventDefault();
-const btn = document.getElementById('submitBtn');
-btn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
-btn.disabled = true;
-// Original working ASM tracking ID flow.
-let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
-const formData = new FormData(this);
-formData.append("Tracking_ID", oId);
-// Product links are already included in Product_Ordered; also send a dedicated field.
-const productDetails = document.getElementById('productField').value || '';
-formData.append("Product_Links", productDetails);
-// Original Google Apps Script / Google Sheets integration.
-let orderData = {
-orderId: oId,
-name: document.getElementById('fullName').value,
-phone: document.getElementById('phoneNum').value,
-city: document.getElementById('citySelect').value,
-address: document.getElementById('addressInput').value,
-email: document.getElementById('emailAddr').value,
-paymentMethod: document.querySelector('input[name="Payment_Method"]:checked').value,
-products: productDetails,
-productLinks: productDetails,
-total: document.getElementById('totalField').value
-};
-const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec';
-// Fire both integrations independently so a slow/failing Sheets request cannot block email.
-const sheetPromise = fetch(GOOGLE_SHEET_URL, {
-method: 'POST',
-mode: 'no-cors',
-headers: { 'Content-Type': 'application/json' },
-body: JSON.stringify(orderData)
-}).then(() => {
-console.log("Order sent to Google Sheets database.");
-return true;
-}).catch(err => {
-console.error("Google Sheets error:", err);
-return false;
-});
-// Keep a local backup exactly as before.
-try {
-let savedOrders = JSON.parse(localStorage.getItem('asm_orders')) || [];
-savedOrders.unshift({
-orderId: oId,
-total: document.getElementById('totalField').value,
-products: productDetails,
-status: 'Confirmed',
-createdAt: new Date().toISOString()
-});
-localStorage.setItem('asm_orders', JSON.stringify(savedOrders.slice(0, 20)));
-} catch(e) {}
-// Original working Formspree email integration.
-const emailPromise = fetch('https://formspree.io/f/xjgnlgpw', {
-method: 'POST',
-body: formData,
-headers: { 'Accept': 'application/json' }
-}).then(response => {
-if (!response.ok) throw new Error('Email service returned HTTP ' + response.status);
-return response.json().catch(() => ({}));
-}).then(() => {
-console.log("Order email sent successfully.");
-return true;
-}).catch(error => {
-console.error("Email error:", error);
-return false;
-});
-// Do not make one integration's failure automatically cancel the other.
-Promise.all([sheetPromise, emailPromise]).then(([sheetOk, emailOk]) => {
-if (!sheetOk && !emailOk) {
-showToast('Network Error! Order was saved on this device. Please use WhatsApp to confirm.', 'fa-wifi', 'red');
-btn.innerHTML = '<i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order';
-btn.disabled = false;
-return;
-}
-if (!sheetOk) console.warn('Email succeeded, but Google Sheets did not confirm the request.');
-if (!emailOk) console.warn('Google Sheets request completed, but email did not succeed.');
-if (typeof sendTrustpilotInvitation === 'function') sendTrustpilotInvitation();
-let customerEmail = document.getElementById('emailAddr').value;
-if(customerEmail) localStorage.setItem('asm_customer_email', customerEmail);
-const urlParams = new URLSearchParams(window.location.search);
-if(urlParams.get('buy_now') !== 'true') localStorage.removeItem('asm_cart');
-if(typeof updateCartBadge === 'function') updateCartBadge();
-setTimeout(() => { window.location.href = '/order-success.html'; }, 800);
-});
-});
-window.addEventListener('load', function(){try{const u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){if(u.name)fullName.value=u.name;if(u.email)emailAddr.value=u.email;if(u.phone)phoneNum.value=u.phone;if(u.address)addressInput.value=u.address}}catch(e){} renderCart();updateDeliveryEstimate();});
+let couponApplied=false;
+const DELIVERY_FEE=180;
+const deliveryZones={"Karachi":[180,2,3],"Lahore":[180,2,3],"Islamabad":[180,2,3],"Rawalpindi":[180,2,3],"Faisalabad":[180,2,4],"Multan":[180,2,4],"Gujranwala":[180,2,4],"Sialkot":[180,2,4],"Peshawar":[180,3,5],"Quetta":[180,4,6],"Hyderabad":[180,2,4],"Bahawalpur":[180,3,5],"Sargodha":[180,3,5],"Sukkur":[180,3,5],"Larkana":[180,3,5],"Sheikhupura":[180,2,4],"Mardan":[180,3,5],"Abbottabad":[180,3,5],"Mansehra":[180,3,5],"Haripur":[180,3,5],"Nowshera":[180,3,5],"Swat":[180,4,6],"Dir":[180,4,6],"Chitral":[180,5,7],"Bannu":[180,4,6],"Charsadda":[180,3,5],"Muzaffarabad":[180,4,6],"Mirpur":[180,3,5],"Kotli":[180,4,6],"Bhimber":[180,4,6]};
+function getDeliveryInfo(city){const z=deliveryZones[city]||[DELIVERY_FEE,3,5];return{charge:z[0],min:z[1],max:z[2]};}
+function getCheckoutItems(){const u=new URLSearchParams(location.search);if(u.get('buy_now')==='true'){const name=u.get('product')||'',price=Number(u.get('price'))||0,slug=u.get('slug')||'';return name&&price>0?[{name,price,qty:1,image:'',slug}]:[];}return(getCart()||[]).map(i=>({name:String(i.name||''),price:Number(i.price)||0,qty:Math.max(1,Number(i.qty)||1),image:i.image||'',slug:i.slug||''})).filter(i=>i.name&&i.price>0);}
+function updateDeliveryEstimate(){const city=document.getElementById('citySelect')?.value||'',z=getDeliveryInfo(city),n=document.getElementById('deliveryEstimate');if(n)n.textContent=city?('Estimated delivery: '+z.min+'-'+z.max+' working days • Rs '+z.charge):'Select your city for delivery estimate';renderCart();}
+function togglePaymentDetails(){const r=document.querySelector('input[name="Payment_Method"]:checked');if(!r)return;const adv=r.value==='Advance Payment',d=document.getElementById('advancePaymentDetails'),c=document.getElementById('labelCOD'),a=document.getElementById('labelAdv');d.classList.toggle('hidden',!adv);a.classList.toggle('border-[#E53935]',adv);a.classList.toggle('bg-red-50',adv);c.classList.toggle('border-[#E53935]',!adv);c.classList.toggle('bg-red-50',!adv);renderCart();}
+function applyCoupon(){const code=(document.getElementById('couponCode')?.value||'').trim().toUpperCase(),sub=getCheckoutItems().reduce((s,i)=>s+i.price*i.qty,0);if(code==='ASM10'&&sub>=3000){couponApplied=true;showToast('Coupon applied! 10% discount added.','fa-check-circle','pk');}else{couponApplied=false;showToast(code==='ASM10'?'Minimum Rs 3000 shopping required for this coupon.':'Invalid coupon code.','fa-exclamation-circle','red');}renderCart();}
+function updateCheckoutWhatsApp(){const items=getCheckoutItems(),city=document.getElementById('citySelect')?.value||'',z=getDeliveryInfo(city),sub=items.reduce((s,i)=>s+i.price*i.qty,0),disc=couponApplied?Math.floor(sub*.10):0,total=sub-disc+z.charge,pay=document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery';let lines=['Hi ASM VEO, I want to place an order:'];items.forEach(i=>{lines.push(i.qty+'x '+i.name+' (Rs '+(i.price*i.qty)+')');if(i.slug)lines.push('Product: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html');});lines.push('Subtotal: Rs '+sub,'Delivery Charges: Rs '+z.charge,'Discount: Rs '+disc,'Grand Total: Rs '+total,'Payment Method: '+pay);const el=document.getElementById('checkoutWhatsApp');if(el)el.href='https://wa.me/923425478683?text='+encodeURIComponent(lines.join('
+'));}
+function renderCart(){const items=getCheckoutItems(),container=document.getElementById('cartItemsContainer');if(!container)return;let sub=0;container.innerHTML='';const buy=new URLSearchParams(location.search).get('buy_now')==='true';if(!items.length){container.innerHTML='<div class="text-center py-8"><p class="text-gray-500 font-semibold">Your cart is empty.</p><a href="/index.html" class="inline-block mt-4 bg-[#E53935] text-white px-6 py-2 rounded-xl font-bold">Browse Products</a></div>';document.getElementById('submitBtn').disabled=true;}else{document.getElementById('submitBtn').disabled=false;items.forEach((i,idx)=>{const line=i.price*i.qty;sub+=line;const safe=String(i.name).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));const controls=buy?'':'<div class="flex items-center gap-2 mt-1"><button type="button" onclick="updateQty('+idx+',-1)" class="w-7 h-7 bg-gray-200 rounded">−</button><span>'+i.qty+'</span><button type="button" onclick="updateQty('+idx+',1)" class="w-7 h-7 bg-gray-200 rounded">+</button><button type="button" onclick="removeFromCart('+idx+')" class="ml-2 text-red-500"><i class="fas fa-trash"></i></button></div>';container.innerHTML+='<div class="flex items-center gap-3 bg-gray-50 dark:bg-gray-700 p-3 rounded-xl border border-gray-200 dark:border-gray-600">'+(i.image?'<img src="'+i.image+'" class="w-16 h-16 object-contain rounded-lg bg-white border p-1" loading="lazy" alt="Cart Item">':'')+'<div class="flex-1 min-w-0"><h3 class="font-bold text-sm text-gray-900 dark:text-white line-clamp-2">'+safe+'</h3><p class="text-xs text-gray-500">Rs '+i.price+' × '+i.qty+'</p><p class="text-[#E53935] font-black">Rs '+line+'</p>'+controls+'</div></div>';});}const city=document.getElementById('citySelect')?.value||'',z=getDeliveryInfo(city),disc=couponApplied?Math.floor(sub*.10):0,total=sub-disc+z.charge;document.getElementById('subtotalDisplay').innerText='Rs '+sub;document.getElementById('deliveryDisplay').innerText='Rs '+z.charge;document.getElementById('grandTotalDisplay').innerText='Rs '+total;const dr=document.getElementById('discountRow');if(disc>0){dr.classList.remove('hidden');document.getElementById('discountDisplay').innerText='- Rs '+disc;}else dr.classList.add('hidden');const pay=document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery';const lines=items.map(i=>i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'
+Product: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':''));document.getElementById('productField').value=lines.join('
+')+'
+Subtotal: Rs '+sub+'
+Delivery Charges: Rs '+z.charge+'
+Discount: Rs '+disc+'
+Grand Total: Rs '+total+'
+Payment Method: '+pay;document.getElementById('totalField').value='Rs '+total;updateCheckoutWhatsApp();}
+document.getElementById('checkoutForm').addEventListener('submit',async function(e){e.preventDefault();e.stopPropagation();const form=this,btn=document.getElementById('submitBtn');if(!form.checkValidity()){form.reportValidity();return;}const items=getCheckoutItems();if(!items.length){showToast('Your cart is empty.','fa-cart-shopping','red');return;}renderCart();const orderId='ASM-'+Math.floor(100000+Math.random()*900000),formData=new FormData(form);formData.append('Tracking_ID',orderId);formData.append('Product_Links',document.getElementById('productField').value);const orderData={orderId:orderId,name:document.getElementById('fullName').value.trim(),phone:document.getElementById('phoneNum').value.trim(),city:document.getElementById('citySelect').value,address:document.getElementById('addressInput').value.trim(),email:document.getElementById('emailAddr').value.trim(),paymentMethod:document.querySelector('input[name="Payment_Method"]:checked')?.value||'',products:document.getElementById('productField').value,productLinks:document.getElementById('productField').value,total:document.getElementById('totalField').value};btn.disabled=true;btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Processing Order...';try{let saved=JSON.parse(localStorage.getItem('asm_orders')||'[]');saved.unshift({orderId,total:orderData.total,products:orderData.products,status:'Submitted',createdAt:new Date().toISOString()});localStorage.setItem('asm_orders',JSON.stringify(saved.slice(0,20)));}catch(_){ }const sheetPromise=fetch('https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(orderData)}).then(()=>true).catch(err=>{console.error('Google Sheets error',err);return false;});const emailPromise=fetch('https://formspree.io/f/xjgnlgpw',{method:'POST',body:formData,headers:{'Accept':'application/json'}}).then(r=>{if(!r.ok)throw new Error('Email HTTP '+r.status);return true;}).catch(err=>{console.error('Email error',err);return false;});const[sheetOk,emailOk]=await Promise.all([sheetPromise,emailPromise]);if(!sheetOk&&!emailOk){showToast('Network issue: order saved on this device. Please confirm by WhatsApp.','fa-wifi','red');btn.disabled=false;btn.innerHTML='<i class="fas fa-check-circle"></i> Confirm Order';return;}try{const ce=document.getElementById('emailAddr').value.trim();if(ce)localStorage.setItem('asm_customer_email',ce);}catch(_){ }if(new URLSearchParams(location.search).get('buy_now')!=='true')localStorage.removeItem('asm_cart');if(typeof updateCartBadge==='function')updateCartBadge();window.location.href='/order-success.html?order='+encodeURIComponent(orderId);});
+window.addEventListener('load',function(){try{const u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){if(u.name)fullName.value=u.name;if(u.email)emailAddr.value=u.email;if(u.phone)phoneNum.value=u.phone;if(u.address)addressInput.value=u.address;}}catch(_){ }togglePaymentDetails();renderCart();updateDeliveryEstimate();});
 </script></main><footer class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 mt-16 pt-12 pb-20 md:pb-8 border-t-4 border-[#E53935]"><div class="container mx-auto px-4"><div class="mb-12 pb-8 border-b border-gray-200 dark:border-gray-800"><h3 class="text-center text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">Our Trusted Partners</h3><div class="flex flex-wrap justify-center items-center gap-8 md:gap-14"><div class="text-2xl font-black italic text-red-600 tracking-tighter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="JazzCash">jazzCash</div><div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="EasyPaisa"><div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">e</div><div class="text-2xl font-bold text-green-500 tracking-tight lowercase">easypaisa</div></div><div class="flex items-center gap-2 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="National Bank of Pakistan"><i class="fas fa-landmark text-green-700 text-xl" aria-hidden="true"></i><div class="text-2xl font-serif font-black text-green-700 tracking-wider">NBP</div></div><div class="text-2xl font-bold text-orange-500 lowercase grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Daraz">daraz</div><div class="text-2xl font-extrabold text-blue-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="PriceOye">PriceOye<span class="text-blue-300">.pk</span></div><div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Markaz"><i class="fas fa-shopping-bag text-emerald-600 text-lg" aria-hidden="true"></i><div class="text-2xl font-bold text-emerald-600 lowercase tracking-wide">markaz</div></div></div></div><div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10"><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Company</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/about.html" class="hover:text-[#E53935] transition">About Us</a></li><li><a href="/contact.html" class="hover:text-[#E53935] transition">Contact Us</a></li><li><a href="/blog.html" class="hover:text-[#E53935] transition text-[#007BFF]">Our Blog</a></li><li><a href="/faq.html" class="hover:text-[#E53935] transition">FAQ</a></li><li><a href="/privacy.html" class="hover:text-[#E53935] transition">Privacy Policy</a></li><li><a href="/terms.html" class="hover:text-[#E53935] transition">Terms & Conditions</a></li></ul></div><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Support</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/faq.html" class="hover:text-[#E53935] transition">Help Center</a></li><li><a href="/order-success.html" class="hover:text-[#E53935] transition">Track Order</a></li><li><a href="/terms.html" class="hover:text-[#E53935] transition">Returns Policy</a></li><li><a href="/privacy.html" class="hover:text-[#E53935] transition">Data Security</a></li></ul></div><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Shop</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/index.html#products" class="hover:text-[#E53935] transition">All Products</a></li><li><a href="/wishlist.html" class="hover:text-[#E53935] transition">My Wishlist</a></li><li><a href="/checkout.html" class="hover:text-[#E53935] transition">My Cart</a></li><li><a href="/index.html" class="hover:text-[#E53935] transition">Flash Sale</a></li></ul></div><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Quick Links</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/index.html" class="hover:text-[#E53935] transition">Home</a></li><li><a href="/checkout.html" class="hover:text-[#E53935] transition">Checkout</a></li><li><a href="/about.html" class="hover:text-[#E53935] transition">About Us</a></li></ul></div><div><img src="/icon.png" alt="ASM VEO Logo" class="h-14 mb-4 object-contain opacity-90 rounded"><p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p><div class="flex gap-2 flex-wrap"><a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="https://instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-youtube" aria-hidden="true"></i></a><a href="https://twitter.com/asmveo" target="_blank" aria-label="X (Twitter) Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-black hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/asm-digital-solutions" target="_blank" aria-label="LinkedIn Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-700 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a><a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-green-500 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div></div></div><div class="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 text-center mb-6"><h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Service Center</h4><p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><i class="fas fa-building mr-2 text-[#E53935]" aria-hidden="true"></i> ASM Digital Solutions, Karachi, Pakistan</p><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-2 text-[#E53935]" aria-hidden="true"></i><a href="https://wa.me/923425478683" class="font-bold hover:text-[#E53935]">0342 54 786 83</a> (Mon-Sun: 9AM - 11PM)</p></div><div class="border-t border-gray-200 dark:border-gray-800 text-center pt-8"><p class="text-gray-600 dark:text-gray-500 text-sm font-semibold">&copy; 2026 ASM Digital Solutions. All Rights Reserved. | Powered by ASM VEO</p></div></div></footer></body></html>
