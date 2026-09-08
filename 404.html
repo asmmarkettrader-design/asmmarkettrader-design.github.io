@@ -134,7 +134,7 @@ let cart = getCart();
 let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
 document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
 }
-function addToCart(name, price, image, event) {
+function addToCart(name, price, image, event, slug) {
 if(event) event.stopPropagation();
 let cart = getCart();
 let existing = cart.find(item => item.name === name);
@@ -142,7 +142,7 @@ if (existing) {
 existing.qty = (existing.qty || 1) + 1;
 }
 else {
-cart.push({name, price: parseFloat(price), image, qty: 1});
+cart.push({name, price: parseFloat(price), image, slug: slug || '', qty: 1});
 }
 saveCart(cart);
 showToast('Added to Cart!', 'fa-cart-plus', 'pk');
@@ -164,9 +164,9 @@ cart.splice(index, 1);
 saveCart(cart);
 if (typeof renderCart === 'function') renderCart();
 }
-function buyNow(name, price, image, event) {
+function buyNow(name, price, image, event, slug) {
 if(event) event.stopPropagation();
-window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
+window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price + '&slug=' + encodeURIComponent(slug || '');
 }
 function getWishlist() {
 return JSON.parse(localStorage.getItem('asm_wishlist')) || [];

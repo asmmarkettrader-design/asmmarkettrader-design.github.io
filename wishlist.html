@@ -134,7 +134,7 @@ let cart = getCart();
 let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
 document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
 }
-function addToCart(name, price, image, event) {
+function addToCart(name, price, image, event, slug) {
 if(event) event.stopPropagation();
 let cart = getCart();
 let existing = cart.find(item => item.name === name);
@@ -142,7 +142,7 @@ if (existing) {
 existing.qty = (existing.qty || 1) + 1;
 }
 else {
-cart.push({name, price: parseFloat(price), image, qty: 1});
+cart.push({name, price: parseFloat(price), image, slug: slug || '', qty: 1});
 }
 saveCart(cart);
 showToast('Added to Cart!', 'fa-cart-plus', 'pk');
@@ -164,9 +164,9 @@ cart.splice(index, 1);
 saveCart(cart);
 if (typeof renderCart === 'function') renderCart();
 }
-function buyNow(name, price, image, event) {
+function buyNow(name, price, image, event, slug) {
 if(event) event.stopPropagation();
-window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price;
+window.location.href = '/checkout.html?buy_now=true&product=' + encodeURIComponent(name) + '&price=' + price + '&slug=' + encodeURIComponent(slug || '');
 }
 function getWishlist() {
 return JSON.parse(localStorage.getItem('asm_wishlist')) || [];
@@ -457,7 +457,7 @@ Continue Shopping
 View Full Details
 </a></div></div></div></div><a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20know%20about%20your%20products" target="_blank"
 class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all z-50 hover:scale-110 pulse-ring"
-aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i></a><button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#E53935] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#C62828] transition z-50" aria-label="Back to top"><i class="fas fa-arrow-up text-xl" aria-hidden="true"></i></button><main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl"><div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4"></div></div><script>
+aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i></a><button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#E53935] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#C62828] transition z-50" aria-label="Back to top"><i class="fas fa-arrow-up text-xl" aria-hidden="true"></i></button><main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl"><div class="container mx-auto px-4 py-12"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-heart text-pink-500"></i> My Wishlist</h1><div id="wishlistContainer" class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-4"></div></div><script>
 function renderWishlist() {
 let wl = JSON.parse(localStorage.getItem('asm_wishlist')) || [];
 let container = document.getElementById('wishlistContainer');
