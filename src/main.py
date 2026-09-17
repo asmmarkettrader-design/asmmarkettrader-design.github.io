@@ -1057,6 +1057,8 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
 
         window.onload = function() {{
+            document.documentElement.classList.remove('dark');
+            localStorage.removeItem('asm_dark');
             updateCartBadge();
             updateWishlistBadge();
             
@@ -1123,15 +1125,53 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <div class="asm-top-strip text-white text-[11px] py-2 hidden md:block">
       <div class="container mx-auto px-4 flex justify-between items-center"><div class="flex items-center gap-8 font-semibold"><span><i class="fas fa-truck mr-2"></i> Fast Delivery Across Pakistan</span><span><i class="fas fa-box mr-2"></i> Cash on Delivery Available</span><span><i class="fas fa-shield-halved mr-2"></i> Secure Shopping</span></div><div class="flex gap-4"><span>PKR</span><a href="/contact.html">Support</a></div></div>
     </div>
-    <header class="asm-main-header sticky top-0 z-50">
-      <div class="md:hidden bg-[#087443] text-white text-xs py-2"><div class="container mx-auto px-4 flex justify-between"><a href="/index.html" class="font-semibold"><i class="fas fa-home mr-1"></i> Home</a><button onclick="toggleMobileCats()" class="font-semibold"><i class="fas fa-list mr-1"></i> Categories</button></div></div>
-      <div id="mobileCatMenu" class="hidden md:hidden bg-white border-b border-gray-100"><div class="container mx-auto px-4 py-3 grid grid-cols-2 gap-2 max-h-64 overflow-y-auto">{cat_links}</div></div>
-      <div class="container mx-auto px-4 py-3 md:py-4 flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-5">
-        <a href="/index.html" class="flex items-center gap-2 min-w-max"><img src="/icon.png" alt="ASM VEO Logo" class="h-11 md:h-14 w-11 md:w-14 object-contain rounded-xl"><div class="leading-none"><div class="asm-brand-title text-xl md:text-2xl font-black">ASM VEO</div><div class="text-[9px] md:text-[10px] tracking-[.28em] text-[#087443] font-black mt-1">PAKISTAN</div></div></a>
-        <div class="asm-search-wrap order-3 md:order-none w-full md:flex-1 md:max-w-2xl md:mx-4 relative flex"><input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search for products, brands and more..." class="w-full py-3 px-5 outline-none text-gray-800 font-semibold text-sm"><button onclick="executeSearch()" class="asm-search-btn text-white px-6"><i class="fas fa-search"></i></button><div id="searchSuggestions" class="hidden absolute left-0 right-0 top-full mt-2 bg-white border border-gray-200 rounded-2xl shadow-2xl z-[80] suggestions-panel overflow-hidden"></div></div>
-        <div class="ml-auto flex items-center gap-2 md:gap-3"><a href="/account.html" class="asm-icon-btn hidden sm:flex items-center gap-2 px-3 py-2"><i class="fas fa-user"></i><span class="hidden lg:inline text-xs font-bold text-gray-700">Account</span></a><a href="/wishlist.html" class="asm-icon-btn relative w-11 h-11 flex items-center justify-center"><i class="fas fa-heart"></i><span class="wishlist-badge absolute -top-2 -right-1 bg-[#087443] text-white text-[10px] font-black min-w-[20px] h-5 px-1 rounded-full flex items-center justify-center">0</span></a><a href="/checkout.html" class="asm-cart-btn cart-icon-pulse relative px-4 h-11 flex items-center gap-2 font-bold text-sm"><i class="fas fa-shopping-cart"></i><span class="hidden lg:inline">Cart</span><span class="cart-badge absolute -top-2 -right-1 bg-[#F7B733] text-[#043D25] text-[10px] font-black min-w-[20px] h-5 px-1 rounded-full flex items-center justify-center">0</span></a></div>
+    <div class="asm-utility-bar hidden md:block">
+      <div class="asm-shell asm-utility-inner">
+        <span><i class="fas fa-truck-fast"></i> Fast Delivery Across Pakistan</span>
+        <span><i class="fas fa-money-bill-wave"></i> Cash on Delivery Available</span>
+        <span><i class="fas fa-shield-halved"></i> 100% Secure Shopping</span>
+        <span class="asm-social-mini"><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-tiktok"></i><i class="fab fa-youtube"></i></span>
       </div>
-      <nav class="asm-nav hidden md:block"><div class="container mx-auto px-4 flex items-center h-11"><div class="relative dropdown z-50 mr-3 h-full"><button class="h-full px-4 font-bold text-sm flex items-center gap-2"><i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down text-[9px]"></i></button><div class="dropdown-menu absolute hidden text-gray-700 bg-white shadow-2xl rounded-b-2xl w-64 py-2 border border-gray-100 max-h-96 overflow-y-auto">{cat_links}</div></div><a href="/index.html" class="h-full px-4 flex items-center text-sm font-bold">Home</a><a href="/categories.html" class="h-full px-4 flex items-center text-sm font-bold">Categories</a><a href="/index.html#products" class="h-full px-4 flex items-center text-sm font-bold">Shop</a><a href="/blog.html" class="h-full px-4 flex items-center text-sm font-bold">Blogs</a><a href="/contact.html" class="h-full px-4 flex items-center text-sm font-bold">Contact</a><div class="ml-auto h-full flex items-center px-4 text-xs font-bold bg-white/10">🇵🇰 Pakistan</div></div></nav>
+    </div>
+    <header class="asm-main-header sticky top-0 z-50">
+      <div class="asm-shell asm-header-main">
+        <a href="/index.html" class="asm-logo" aria-label="ASM VEO Pakistan Home">
+          <img src="/icon.png" alt="ASM VEO Pakistan" loading="eager" decoding="async">
+          <span><strong>ASM VEO</strong><small>PAKISTAN</small></span>
+        </a>
+        <div class="asm-search-wrap relative">
+          <label for="searchInput" class="sr-only">Search products</label>
+          <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search for products, brands and more..." autocomplete="off">
+          <button onclick="executeSearch()" aria-label="Search"><i class="fas fa-search"></i></button>
+          <div id="searchSuggestions" class="hidden absolute left-0 right-0 top-full mt-2 bg-white border border-gray-200 rounded-2xl shadow-2xl z-[80] suggestions-panel overflow-hidden"></div>
+        </div>
+        <div class="asm-header-actions">
+          <a href="/account.html" class="asm-account-link"><span class="asm-circle-icon"><i class="far fa-user"></i></span><span><b>Account</b><small>Login / Register</small></span></a>
+          <a href="/wishlist.html" class="asm-head-action" aria-label="Wishlist"><span class="asm-circle-icon"><i class="far fa-heart"></i><em class="wishlist-badge">0</em></span></a>
+          <a href="/checkout.html" class="asm-head-cart" aria-label="Cart"><span class="asm-circle-icon"><i class="fas fa-shopping-cart"></i><em class="cart-badge">0</em></span><span><b>Cart</b><small>Rs 0</small></span></a>
+        </div>
+      </div>
+      <nav class="asm-nav">
+        <div class="asm-shell asm-nav-inner">
+          <div class="relative dropdown asm-all-cats">
+            <button class="asm-all-cats-btn"><i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-menu absolute hidden bg-white shadow-2xl rounded-b-2xl w-72 py-2 border border-gray-100 max-h-96 overflow-y-auto">{cat_links}</div>
+          </div>
+          <a href="/index.html">Home</a>
+          <a href="/categories.html">Categories</a>
+          <a href="/index.html#flash-sale">Flash Sale</a>
+          <a href="/index.html#best-sellers">Best Sellers</a>
+          <a href="/index.html#products">New Arrivals</a>
+          <a href="/blog.html">Blogs</a>
+          <a href="/contact.html">Contact</a>
+          <span class="asm-country"><span>🇵🇰</span> Pakistan <i class="fas fa-chevron-down"></i></span>
+        </div>
+      </nav>
+      <div class="asm-mobile-head md:hidden">
+        <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="/categories.html"><i class="fas fa-list"></i> Categories</a>
+        <a href="/account.html"><i class="far fa-user"></i> Account</a>
+      </div>
     </header>
 
     <!-- Compare Products Bar -->
@@ -1145,25 +1185,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </div>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="asm-mobile-nav fixed bottom-0 left-0 right-0 bg-white flex justify-around py-2 md:hidden z-50">
-        <a href="/index.html" class="flex flex-col items-center text-[#087443] text-xs font-bold">
-            <i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home
-        </a>
-        <button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories">
-            <i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories
-        </button>
-        <a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
-            <i class="fas fa-shopping-cart text-lg mb-1" aria-hidden="true"></i> Cart
-            <span class="cart-badge absolute -top-1 right-2 bg-[#087443] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
-        </a>
-        <a href="/wishlist.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
-            <i class="fas fa-heart text-lg mb-1" aria-hidden="true"></i> Wishlist
-            <span class="wishlist-badge absolute -top-1 right-2 bg-[#087443] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
-        </a>
-        <a href="/compare.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative">
-            <i class="fas fa-code-compare text-lg mb-1" aria-hidden="true"></i> Compare
-            <span class="compare-count absolute -top-1 right-2 bg-[#087443] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span>
-        </a>
+    <nav class="asm-mobile-nav fixed bottom-0 left-0 right-0 bg-white md:hidden z-50">
+      <a href="/index.html" class="active"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="/categories.html"><i class="fas fa-th-large"></i><span>Categories</span></a>
+      <a href="/checkout.html" class="relative"><i class="fas fa-shopping-cart"></i><span>Cart</span><b class="cart-badge">0</b></a>
+      <a href="/wishlist.html" class="relative"><i class="far fa-heart"></i><span>Wishlist</span><b class="wishlist-badge">0</b></a>
+      <a href="/account.html" class="relative"><i class="far fa-user"></i><span>Account</span></a>
     </nav>
 
     <!-- Modals -->
@@ -1233,8 +1260,24 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 def get_html_footer():
     return """
     </main>
-    <section class="asm-trust-strip mt-14"><div class="container mx-auto px-4 py-6 grid grid-cols-2 lg:grid-cols-4 gap-5"><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-shield-halved"></i></div><div><div class="font-black text-sm">Secure Payments</div><div class="text-[11px] text-white/70">Protected checkout</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-truck-fast"></i></div><div><div class="font-black text-sm">Fast Delivery</div><div class="text-[11px] text-white/70">Across Pakistan</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-rotate-left"></i></div><div><div class="font-black text-sm">Easy Returns</div><div class="text-[11px] text-white/70">7-day return policy</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-headset"></i></div><div><div class="font-black text-sm">Customer Support</div><div class="text-[11px] text-white/70">WhatsApp assistance</div></div></div></div></section>
-    <footer class="asm-footer pt-10 pb-24 md:pb-8"><div class="container mx-auto px-4"><div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-9"><div class="col-span-2 md:col-span-1"><div class="flex items-center gap-2 mb-4"><img src="/icon.png" alt="ASM VEO" class="w-12 h-12 object-contain rounded-xl bg-white p-1"><div><div class="text-xl font-black text-white">ASM VEO</div><div class="text-[9px] tracking-[.25em] text-emerald-200 font-bold">PAKISTAN</div></div></div><p class="footer-muted text-xs leading-6">Online shopping across Pakistan with Cash on Delivery, useful product information and customer support.</p></div><div><h3 class="font-black mb-4 pb-2 border-b">Shop</h3><ul class="space-y-2 text-xs"><li><a href="/index.html#products">All Products</a></li><li><a href="/categories.html">Categories</a></li><li><a href="/wishlist.html">Wishlist</a></li><li><a href="/checkout.html">Cart & Checkout</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Support</h3><ul class="space-y-2 text-xs"><li><a href="/faq.html">Help Center</a></li><li><a href="/track-order.html">Track Order</a></li><li><a href="/return-policy.html">Returns</a></li><li><a href="/shipping-policy.html">Shipping</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Company</h3><ul class="space-y-2 text-xs"><li><a href="/about.html">About Us</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/blog.html">Blogs</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Contact</h3><div class="space-y-3 text-xs footer-muted"><a class="flex items-center gap-2" href="https://wa.me/923425478683"><i class="fab fa-whatsapp text-emerald-300 text-lg"></i> 0342 54 786 83</a><div class="asm-pakistan-note rounded-xl p-3 text-white font-bold leading-5">🇵🇰 پاکستان کی ہر ضرورت<br>اب ایک جگہ!</div></div></div></div><div class="border-t border-white/10 pt-5 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] footer-muted"><span>© 2026 ASM Digital Solutions. All Rights Reserved.</span><span>Made for shoppers across Pakistan 🇵🇰</span></div></div></footer>
+    <section class="asm-trust-strip">
+      <div class="asm-shell asm-trust-grid">
+        <div><i class="fas fa-shield-halved"></i><span><b>100% Secure Payments</b><small>SSL Encrypted</small></span></div>
+        <div><i class="fas fa-truck-fast"></i><span><b>Fast & Reliable Delivery</b><small>All Over Pakistan</small></span></div>
+        <div><i class="fas fa-rotate-left"></i><span><b>Easy Returns</b><small>No Questions Asked</small></span></div>
+        <div><i class="fas fa-headset"></i><span><b>24/7 Customer Support</b><small>We're Here to Help</small></span></div>
+      </div>
+    </section>
+    <footer class="asm-footer">
+      <div class="asm-shell asm-footer-grid">
+        <div class="asm-footer-brand"><a href="/index.html" class="asm-logo footer-logo"><img src="/icon.png" alt="ASM VEO" loading="lazy"><span><strong>ASM VEO</strong><small>PAKISTAN</small></span></a><p>Shop Smart, Live Better — quality products and convenient online shopping across Pakistan.</p><div class="asm-footer-social"><a href="https://www.facebook.com/profile.php?id=61593172078469" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://instagram.com/asmveo" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://wa.me/923425478683" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div></div>
+        <div><h3>Quick Links</h3><a href="/index.html">Home</a><a href="/about.html">About Us</a><a href="/contact.html">Contact Us</a><a href="/faq.html">FAQs</a></div>
+        <div><h3>Categories</h3><a href="/categories.html">Fashion & Apparel</a><a href="/categories.html">Electronics</a><a href="/categories.html">Mobile Accessories</a><a href="/categories.html">Beauty & Personal Care</a><a href="/categories.html">Home & Kitchen</a><a href="/categories.html">Health & Wellness</a><a href="/categories.html">Kids & Babies</a></div>
+        <div><h3>Customer Support</h3><a href="/track-order.html">Track Order</a><a href="/return-policy.html">Return Policy</a><a href="/shipping-policy.html">Shipping Policy</a><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms & Conditions</a></div>
+        <div class="asm-newsletter"><h3>Stay Connected</h3><p>Get shopping updates and offers.</p><form onsubmit="return false"><input type="email" placeholder="Enter your email address" aria-label="Email address"><button type="submit" aria-label="Subscribe"><i class="fas fa-arrow-right"></i></button></form><div class="asm-payment-icons"><span>VISA</span><span>●●</span><span>jazzCash</span><span>easypaisa</span></div><div class="asm-pak-note">پاکستان کی ہر ضرورت<br><b>اب ایک جگہ!</b> 🇵🇰</div></div>
+      </div>
+      <div class="asm-shell asm-footer-bottom"><span>© 2026 ASM VEO Pakistan. All rights reserved.</span><span>Made with ❤️ in Pakistan 🇵🇰</span></div>
+    </footer>
     </body></html>
     """
 
@@ -3143,108 +3186,34 @@ def process_woocommerce_csv():
             home_html += """
             <h1 class="sr-only">Pakistan's Trusted Online Shopping Store - ASM VEO</h1>
             
-            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
-                <div class="carousel-track h-full">
-                
-                    <!-- BANNER 1: Fashion & Footwear (Apparel + Footwear & Bags) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-emerald-50 to-green-100" aria-hidden="false">
-                        <div class="absolute inset-0 bg-gradient-to-r from-white/80 via-emerald-50/30 to-green-100/50"></div>
-                        <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-emerald-200/60 to-transparent transform skew-x-12 translate-x-10"></div>
-                        
-                        <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <span class="bg-gray-900 text-white px-2 py-1 text-[8px] md:text-[10px] font-black tracking-widest uppercase mb-2 shadow-sm rounded-sm">ASM VEO PAKISTAN</span>
-                            <h2 class="text-3xl md:text-6xl font-black text-rose-600 uppercase tracking-tighter drop-shadow-sm leading-none">SHOP SMART<br><span class="text-[#087443]">LIVE BETTER</span></h2>
-                            <p class="text-gray-700 text-[9px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Pakistan’s Trusted Online Store</p>
-                            <div class="flex gap-2 mb-3">
-                                <span class="bg-white text-rose-600 border border-rose-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Ready-Made Kapde</span>
-                                <span class="bg-white text-teal-600 border border-teal-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Sneakers & Bags</span>
-                            </div>
-                            <a href="#products" class="bg-rose-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-rose-600 hover:scale-105 transition-all">SHOP NOW</a>
-                        </div>
-                        
-                        <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80" alt="Sneakers and Fashion" fetchpriority="high" class="w-[80%] md:w-[65%] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.3)] transform -rotate-12 hover:-rotate-6 transition-transform duration-500">
-                        </div>
-                    </div>
-
-                    <!-- BANNER 2: Electronics & Home (Consumer Electronics + Home & Living) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-[#043D25] via-[#065C35] to-[#043D25]" aria-hidden="true">
-                        <div class="absolute inset-0 bg-gradient-to-r from-[#043D25] via-[#065C35] to-[#043D25] opacity-80"></div>
-                        <div class="absolute left-1/4 top-1/2 w-64 h-64 bg-blue-500 rounded-full mix-blend-screen filter blur-[80px] opacity-40"></div>
-                        
-                        <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80" alt="Smartwatch and Gadgets" loading="lazy" decoding="async" class="w-[85%] md:w-[70%] object-contain drop-shadow-[0_0_40px_rgba(59,130,246,0.5)] transform hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="w-[55%] h-full flex flex-col justify-center items-start pr-8 md:pr-16 relative z-10">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-                                <span class="text-blue-300 text-[9px] md:text-[11px] font-bold tracking-[0.3em] uppercase">ASM VEO TECH</span>
-                            </div>
-                            <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight leading-none mb-1">SMART<br><span class="text-blue-400">LIVING</span></h2>
-                            <p class="text-gray-300 text-[9px] md:text-sm mt-2 mb-3 max-w-[250px] leading-relaxed">Upgrade your lifestyle with the latest smartwatches, earbuds, and premium home decor items.</p>
-                            <a href="#products" class="border-2 border-blue-400 text-blue-400 px-6 py-2 rounded-full text-xs font-bold shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:bg-blue-400 hover:text-white transition-all mt-1">UPGRADE NOW</a>
-                        </div>
-                    </div>
-
-                    <!-- BANNER 3: Beauty & Groceries (Health, Beauty + Food & Online Groceries) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-amber-100 to-green-100" aria-hidden="true">
-                        <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-green-200/70 to-transparent rounded-l-full"></div>
-                        <div class="absolute left-0 bottom-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-[40px] opacity-50"></div>
-                        
-                        <div class="w-[50%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <span class="bg-green-600 text-white px-3 py-1 text-[8px] md:text-[10px] font-black uppercase tracking-wider mb-2 rounded-br-lg rounded-tl-lg shadow-md">ASM VEO ORGANICS</span>
-                            <h2 class="text-3xl md:text-6xl font-black text-green-800 uppercase tracking-tighter drop-shadow-sm leading-none">PURE &<br><span class="text-amber-600">FRESH</span></h2>
-                            <p class="text-gray-700 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Skincare & Daily Groceries</p>
-                            <p class="text-gray-600 text-[8px] md:text-[11px] mb-4 max-w-[220px] font-semibold leading-tight">From organic serums to daily ration & snacks, delivered fresh to your door.</p>
-                            <a href="#products" class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-2 rounded-full text-xs font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all">SHOP ESSENTIALS</a>
-                        </div>
-                        
-                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center gap-2 md:gap-4 pr-4">
-                            <!-- Skincare Image -->
-                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=300&q=80" alt="Beauty Serum" loading="lazy" decoding="async" class="w-[45%] object-contain drop-shadow-xl transform hover:-translate-y-2 transition-transform duration-500">
-                            <!-- Grocery Image -->
-                            <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=300&q=80" alt="Fresh Groceries" loading="lazy" decoding="async" class="w-[50%] object-contain drop-shadow-2xl rounded-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                        </div>
-                    </div>
-                    
-                </div>
-                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm text-gray-900 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow-md" aria-label="Previous slide"><i class="fas fa-chevron-left text-sm" aria-hidden="true"></i></button>
-                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm text-gray-900 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow-md" aria-label="Next slide"><i class="fas fa-chevron-right text-sm" aria-hidden="true"></i></button>
-                <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
-            </div>
-            
+            <section id="heroCarousel" class="asm-hero" aria-label="Featured promotions">
+              <div class="asm-hero-bg"></div>
+              <button class="asm-hero-arrow left" onclick="prevSlide()" aria-label="Previous banner"><i class="fas fa-chevron-left"></i></button>
+              <div class="asm-hero-copy">
+                <span class="asm-kicker">PAKISTAN'S TRUSTED ONLINE STORE</span>
+                <h2>Shop Smart<br><span>Live Better</span></h2>
+                <p>Electronics <b>|</b> Fashion <b>|</b> Home Appliances <b>|</b> Beauty <b>|</b> More</p>
+                <div class="asm-hero-benefits"><span><i class="fas fa-truck-fast"></i> Fast Delivery</span><span><i class="fas fa-money-bill-wave"></i> Cash on Delivery</span><span><i class="fas fa-shield-halved"></i> Secure Shopping</span></div>
+                <a href="#products" class="asm-hero-btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <div class="asm-hero-products">
+                <div class="asm-hero-product hp1"><img src="https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?auto=format&fit=crop&w=500&q=80" alt="Laptop" loading="eager"></div>
+                <div class="asm-hero-product hp2"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=350&q=80" alt="Smartphone" loading="eager"></div>
+                <div class="asm-hero-product hp3"><img src="https://images.unsplash.com/photo-1585386959984-a41552231693?auto=format&fit=crop&w=350&q=80" alt="Beauty bag" loading="lazy"></div>
+                <div class="asm-hero-product hp4"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=350&q=80" alt="Air fryer" loading="lazy"></div>
+              </div>
+              <div class="asm-pak-flag"><span>🇵🇰</span></div>
+              <button class="asm-hero-arrow right" onclick="nextSlide()" aria-label="Next banner"><i class="fas fa-chevron-right"></i></button>
+              <div id="carouselDots" class="asm-hero-dots"><button class="active"></button><button></button><button></button></div>
+            </section>
             <script>
-                let slideIndex = 0;
-                const slides = document.querySelectorAll('.carousel-slide');
-                const dotsContainer = document.getElementById('carouselDots');
-                
-                slides.forEach((_, i) => {
-                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-gray-400 hover:bg-gray-800 transition focus:outline-none shadow-sm" aria-label="Go to slide ${i + 1}"></button>`;
-                });
-                
-                function updateCarousel() {
-                    document.querySelector('.carousel-track').style.transform = `translateX(-${slideIndex * 100}%)`;
-                    slides.forEach((slide, i) => {
-                        slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true');
-                    });
-                    document.querySelectorAll('#carouselDots button').forEach((dot, i) => {
-                        dot.className = `w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition shadow-sm ${i === slideIndex ? 'bg-gray-800 scale-125' : 'bg-gray-400 hover:bg-gray-600'}`;
-                    });
-                }
-                
-                function nextSlide() { slideIndex = (slideIndex + 1) % slides.length; updateCarousel(); }
-                function prevSlide() { slideIndex = (slideIndex - 1 + slides.length) % slides.length; updateCarousel(); }
-                function goToSlide(i) { slideIndex = i; updateCarousel(); }
-                
-                updateCarousel();
-                let slideTimer = setInterval(nextSlide, 5000);
-                
-                document.getElementById('heroCarousel').addEventListener('mouseenter', () => clearInterval(slideTimer));
-                document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 5000));
+              let slideIndex=0;
+              function updateCarousel(){document.querySelectorAll('#carouselDots button').forEach((d,i)=>d.classList.toggle('active',i===slideIndex));}
+              function nextSlide(){slideIndex=(slideIndex+1)%3;updateCarousel();}
+              function prevSlide(){slideIndex=(slideIndex-1+3)%3;updateCarousel();}
+              setInterval(nextSlide,6000);
             </script>
             """
-
             home_html += """
             <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
                 <div class="container mx-auto px-4">
@@ -3268,6 +3237,45 @@ def process_woocommerce_csv():
                         </a>
                     """
             home_html += "</div></div></div>"
+            # ===== REFERENCE-STYLE PROMOTIONAL TILES + BEST SELLERS =====
+            def pick_rep(words):
+                for pp in products_list:
+                    hay=" ".join([str(pp.get("name","")),str(pp.get("category","")),str(pp.get("subcategory",""))]).lower()
+                    if pp.get("image") and pp.get("slug") and any(w in hay for w in words):
+                        return pp
+                return None
+
+            promo_defs=[
+                ("Electronics",["electronic","laptop","mobile","earbud","headphone"],"UP TO 50% OFF"),
+                ("Trendy Styles",["fashion","apparel","clothing","dress","shirt","bag"],"FRESH PICKS"),
+                ("Beauty Deals",["beauty","cosmetic","skincare","perfume","makeup"],"GLOW NATURALLY"),
+                ("Home Essentials",["home","kitchen","appliance","cook","air fryer"],"FOR A BETTER HOME")
+            ]
+            promo_html=[]
+            for title,words,tag in promo_defs:
+                pp=pick_rep(words); img=(pp or {}).get("image","/icon.png")
+                slug=(pp or {}).get("slug",category_slug(title))
+                target=f"/product/{slug}.html" if pp else f"/category/{category_slug(title)}.html"
+                promo_html.append(f'<a href="{target}" class="asm-promo-tile"><div><small>{html_lib.escape(tag)}</small><h3>{html_lib.escape(title)}</h3><span>Shop Now <i class="fas fa-arrow-right"></i></span></div><img src="{html_lib.escape(str(img),quote=True)}" alt="{html_lib.escape(title)}" loading="lazy"></a>')
+
+            best_pool=[]; seen_bs=set()
+            for pp in products_list:
+                if pp.get("image") and pp.get("slug") and pp.get("slug") not in seen_bs:
+                    try:
+                        rp=float(pp.get("regular_price") or 0); fp=float(pp.get("final_price") or 0); disc=((rp-fp)/rp*100) if rp>fp>0 else 0
+                    except Exception: disc=0
+                    best_pool.append((disc,pp)); seen_bs.add(pp.get("slug"))
+            best_pool=[p for _d,p in sorted(best_pool,key=lambda x:(-x[0],len(str(x[1].get("name","")))))[:6]]
+            best_cards=''.join(generate_product_card(pp,lazy=True) for pp in best_pool)
+            home_html += f"""
+            <section class="asm-promo-wrap container mx-auto px-4" aria-label="Shopping promotions">
+              <div class="asm-promo-grid">{''.join(promo_html)}</div>
+            </section>
+            <section id="best-sellers" class="asm-best-sellers container mx-auto px-4" aria-label="Best Sellers">
+              <div class="asm-section-heading"><div><span class="asm-section-kicker">TOP PICKS</span><h2><i class="fas fa-star"></i> Best Sellers</h2><p>Top Rated Products Loved by Thousands</p></div><a href="/index.html#products">View All <i class="fas fa-arrow-right"></i></a></div>
+              <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">{best_cards}</div>
+            </section>
+            """
 
             # ===== FLASH SALE: 21 SMALL, MIXED, CONTINUOUSLY-SCROLLING TOP PICKS =====
             # The static catalog has no real-time sales counter. We therefore select stable
@@ -3341,7 +3349,7 @@ def process_woocommerce_csv():
                     )
                 cards=''.join(flash_cards)
                 home_html += """
-                <section class="flash-sale-section" aria-label="Flash Sale">
+                <section id="flash-sale" class="flash-sale-section" aria-label="Flash Sale">
                     <div class="container mx-auto px-4">
                         <div class="flash-sale-heading">
                             <div>
@@ -3379,7 +3387,7 @@ def process_woocommerce_csv():
                     @keyframes asmFlashRing{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
                     @media (min-width:768px){.flash-sale-section{padding:18px 0 20px}.flash-sale-heading h2{font-size:25px}.flash-ring-group{gap:18px;padding-right:18px}.flash-ring-item{width:104px;min-width:104px}.flash-ring-image{width:82px;height:82px}.flash-ring-name{font-size:11px;line-height:13px}.flash-ring-price{font-size:12px}}
                     @media (prefers-reduced-motion:reduce){.flash-ring-track{animation:none;overflow-x:auto}}
-                </style>
+        \n        /* ===== ASM VEO REFERENCE DESIGN — MATCHES APPROVED PAKISTAN MOCKUP ===== */\n        :root{{--g:#006b3c;--g2:#004d2c;--g3:#087443;--mint:#e9f7f0;--gold:#f7b733;--ink:#0e2a1d;--line:#dbe9e1;--soft:#f7fbf9}}\n        html{{scroll-behavior:smooth}}\n        body{{background:#fff!important;color:var(--ink)!important;font-family:'Plus Jakarta Sans',sans-serif!important;padding-bottom:0!important}}\n        .dark body{{background:#fff!important;color:var(--ink)!important}}\n        .asm-shell{{width:min(1400px,calc(100% - 48px));margin:0 auto}}\n        .asm-utility-bar{{background:linear-gradient(90deg,#003b23,#006b3c,#003b23);color:#fff;font-size:12px;font-weight:700}}\n        .asm-utility-inner{{height:32px;display:flex;align-items:center;justify-content:space-between}}.asm-utility-inner span{{display:flex;align-items:center;gap:7px}}.asm-utility-inner i{{font-size:12px}}.asm-social-mini{{gap:14px!important;font-size:12px}}\n        .asm-main-header{{background:#fff!important;border:0!important;box-shadow:0 4px 18px rgba(0,55,32,.08)!important;color:var(--ink)!important}}\n        .asm-header-main{{min-height:78px;display:flex;align-items:center;gap:28px}}.asm-logo{{display:flex;align-items:center;gap:9px;text-decoration:none!important;min-width:220px}}.asm-logo img{{width:58px;height:58px;object-fit:contain;border-radius:13px}}.asm-logo span{{display:flex;flex-direction:column;line-height:1}}.asm-logo strong{{font-size:25px;font-weight:900;letter-spacing:-.04em;color:var(--g2)}}.asm-logo small{{font-size:10px;font-weight:900;letter-spacing:.28em;color:var(--g3);margin-top:6px}}\n        .asm-search-wrap{{flex:1;max-width:650px;height:43px;border:1.5px solid #cadbd2;border-radius:11px;display:flex;background:#fff;overflow:visible;box-shadow:0 3px 12px rgba(0,60,35,.04)}}.asm-search-wrap input{{flex:1;border:0!important;outline:0!important;padding:0 16px;background:#fff!important;color:#183226!important;font-size:13px;font-weight:600}}.asm-search-wrap button{{width:58px;border:0;background:var(--g2);color:#fff;font-size:18px;border-radius:0 10px 10px 0}}.asm-search-wrap button:hover{{background:var(--g3)}}\n        .asm-header-actions{{margin-left:auto;display:flex;align-items:center;gap:18px}}.asm-account-link,.asm-head-cart{{display:flex;align-items:center;gap:9px;text-decoration:none!important;color:var(--ink)!important}}.asm-account-link small,.asm-head-cart small{{display:block;font-size:9px;color:#6a7a72;font-weight:600;margin-top:3px}}.asm-account-link b,.asm-head-cart b{{font-size:12px}}.asm-circle-icon{{width:39px;height:39px;border:1px solid #d9e7df;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--g2);background:#fff;position:relative}}.asm-circle-icon em,.asm-head-cart .cart-badge{{position:absolute;top:-6px;right:-7px;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--g2);color:#fff;font-size:9px;font-style:normal;font-weight:900;display:flex;align-items:center;justify-content:center}}.asm-head-cart .asm-circle-icon{{background:var(--g2);color:#fff;border-color:var(--g2)}}\n        .asm-nav{{background:linear-gradient(90deg,#004c2c,#006b3c,#004c2c);height:42px;color:#fff}}.asm-nav-inner{{height:100%;display:flex;align-items:center}}.asm-nav a,.asm-nav button{{height:100%;display:flex;align-items:center;padding:0 19px;color:#fff!important;text-decoration:none!important;font-size:12px;font-weight:800}}.asm-nav a:hover{{background:rgba(255,255,255,.09)}}.asm-all-cats{{height:100%}}.asm-all-cats-btn{{background:#005d34;border-radius:0 0 8px 8px;border:0;gap:9px}}.asm-all-cats .dropdown-menu{{top:42px;left:0;z-index:100}}.asm-country{{margin-left:auto;height:100%;padding:0 18px;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);font-size:11px;font-weight:800}}.asm-mobile-head{{display:none}}\n        .asm-hero{{position:relative;min-height:330px;overflow:hidden;background:linear-gradient(100deg,#e9f8f0 0%,#d9f1e5 43%,#f4fbf6 100%);border-bottom:1px solid #d7e9df}}.asm-hero-bg{{position:absolute;inset:0;background:radial-gradient(circle at 78% 48%,rgba(255,255,255,.85),transparent 28%),linear-gradient(90deg,rgba(255,255,255,.75),transparent 55%),linear-gradient(180deg,rgba(255,255,255,.1),rgba(0,107,60,.08))}}.asm-hero-copy{{position:relative;z-index:3;width:min(600px,45%);padding:48px 0 42px max(24px,calc((100vw - 1400px)/2 + 24px))}}.asm-kicker{{font-size:14px;letter-spacing:.06em;font-weight:900;color:#0a4c31}}.asm-hero-copy h2{{font-size:56px;line-height:.95;margin:9px 0 12px;font-weight:900;letter-spacing:-.055em;color:#073d27}}.asm-hero-copy h2 span{{color:#0c9a55}}.asm-hero-copy p{{font-size:13px;font-weight:700;margin-bottom:18px}}.asm-hero-copy p b{{color:#0a8c4e}}.asm-hero-benefits{{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px}}.asm-hero-benefits span{{font-size:11px;font-weight:800;display:flex;gap:6px;align-items:center}}.asm-hero-benefits i{{color:var(--g3)}}.asm-hero-btn{{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#102719!important;padding:10px 25px;border-radius:9px;font-size:12px;font-weight:900;text-decoration:none!important;box-shadow:0 8px 20px rgba(247,183,51,.22)}}.asm-hero-products{{position:absolute;z-index:2;right:12%;bottom:15px;width:48%;height:285px}}.asm-hero-product{{position:absolute;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 18px 18px rgba(0,0,0,.18))}}.asm-hero-product img{{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}}.hp1{{width:280px;height:190px;left:13%;bottom:18px}}.hp2{{width:135px;height:180px;left:39%;bottom:30px}}.hp3{{width:180px;height:175px;left:53%;bottom:24px}}.hp4{{width:180px;height:175px;left:71%;bottom:24px}}.asm-pak-flag{{position:absolute;right:28px;top:35px;z-index:3;font-size:80px;filter:drop-shadow(0 8px 8px rgba(0,0,0,.12))}}.asm-hero-arrow{{position:absolute;z-index:5;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;border-radius:50%;background:#fff;color:var(--g2);box-shadow:0 5px 14px rgba(0,0,0,.12)}}.asm-hero-arrow.left{{left:20px}}.asm-hero-arrow.right{{right:20px}}.asm-hero-dots{{position:absolute;bottom:9px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:5}}.asm-hero-dots button{{width:7px;height:7px;border:0;border-radius:50%;background:#b8c9c0}}.asm-hero-dots button.active{{background:var(--g3);transform:scale(1.3)}}\n        .category-image-ring{{width:76px!important;height:76px!important;background:linear-gradient(145deg,#f2fbf6,#e3f4eb)!important;border:1px solid #d3e8dc!important;box-shadow:0 5px 16px rgba(0,70,40,.08)!important}}.category-image-ring img{{padding:9px!important}}.category-home-link{{padding:5px 3px}}.category-home-link span{{font-size:11px!important;color:#102b1e!important}}\n        .flash-sale-section{{max-width:1400px!important}}.flash-sale-heading h2{{font-size:27px!important}}.flash-ring-item{{width:105px!important;min-width:105px!important}}.flash-ring-image{{width:82px!important;height:82px!important}}.flash-ring-name{{font-size:10px!important;color:#16372a!important}}.flash-ring-price{{font-size:12px!important}}\n        .asm-promo-wrap{{margin-top:8px}}.asm-promo-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}}.asm-promo-tile{{min-height:125px;border-radius:11px;overflow:hidden;position:relative;text-decoration:none!important;display:flex;align-items:center;padding:17px 16px;background:#e8f6ef;color:#0a3322!important;border:1px solid #d7e9df}}.asm-promo-tile:nth-child(1){{background:linear-gradient(105deg,#005d34,#0a8150);color:#fff!important}}.asm-promo-tile:nth-child(2){{background:#ffdfe4}}.asm-promo-tile:nth-child(3){{background:#cceef8}}.asm-promo-tile:nth-child(4){{background:#ffe9a9}}.asm-promo-tile div{{position:relative;z-index:2}}.asm-promo-tile small{{display:block;font-size:9px;font-weight:900;margin-bottom:5px}}.asm-promo-tile h3{{font-size:20px;font-weight:900;margin:0 0 9px}}.asm-promo-tile span{{font-size:10px;font-weight:800}}.asm-promo-tile img{{position:absolute;right:-5px;bottom:-5px;width:58%;height:110px;object-fit:contain;mix-blend-mode:multiply}}.asm-best-sellers{{padding-top:22px}}.asm-section-heading{{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:10px}}.asm-section-heading h2{{font-size:24px;font-weight:900;margin:2px 0;color:#073d27}}.asm-section-heading h2 i{{color:#087443;font-size:20px}}.asm-section-heading p{{font-size:10px;color:#718078;margin:0}}.asm-section-kicker{{font-size:9px;font-weight:900;letter-spacing:.16em;color:#087443}}.asm-section-heading>a{{background:#006b3c;color:#fff!important;padding:8px 15px;border-radius:999px;font-size:10px;font-weight:900;text-decoration:none!important}}\n        .product-card{{border:1px solid #dce9e2!important;border-radius:11px!important;box-shadow:0 2px 9px rgba(0,65,38,.04)!important}}.product-card:hover{{transform:translateY(-2px)!important;box-shadow:0 8px 18px rgba(0,65,38,.1)!important}}.product-card .image-zoom{{height:175px!important;background:#fff!important;border:0!important}}.product-card .p-2{{padding:10px!important}}.product-card h3{{font-size:11px!important}}.product-card button{{background:#006b3c!important;color:#fff!important;border:0!important}}.product-card .text-\[9px\]{{color:#087443!important}}.product-card .text-\[10px\],.product-card .text-xs{{color:#102b1e!important}}\n        .asm-trust-strip{{background:linear-gradient(90deg,#00472a,#006b3c,#00472a);color:#fff;margin-top:30px}}.asm-trust-grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:15px 0}}.asm-trust-grid>div{{display:flex;align-items:center;justify-content:center;gap:11px;border-right:1px solid rgba(255,255,255,.13)}}.asm-trust-grid>div:last-child{{border:0}}.asm-trust-grid i{{font-size:25px}}.asm-trust-grid b,.asm-trust-grid small{{display:block}}.asm-trust-grid b{{font-size:11px}}.asm-trust-grid small{{font-size:9px;opacity:.75;margin-top:3px}}.asm-footer{{background:#003b25!important;color:#d7ebe1!important;padding:32px 0 0}}.asm-footer-grid{{display:grid;grid-template-columns:1.35fr 1fr 1.4fr 1.2fr 1.35fr;gap:30px;padding-bottom:26px}}.asm-footer h3{{font-size:12px!important;color:#fff!important;margin:0 0 11px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.12)!important}}.asm-footer a{{display:block;color:#c5ded2!important;font-size:10px;margin:6px 0;text-decoration:none}}.asm-footer a:hover{{color:#fff!important}}.footer-logo{{min-width:0}}.footer-logo img{{width:48px;height:48px;background:#fff}}.footer-logo strong{{font-size:18px}}.asm-footer-brand p,.asm-newsletter p{{font-size:10px;line-height:1.6;color:#a9c7b8;margin:10px 0}}.asm-footer-social{{display:flex;gap:7px}}.asm-footer-social a{{width:28px;height:28px;border:1px solid rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0}}.asm-newsletter form{{display:flex;border:1px solid rgba(255,255,255,.2);border-radius:7px;overflow:hidden}}.asm-newsletter input{{min-width:0;flex:1;background:rgba(255,255,255,.06)!important;color:#fff!important;border:0!important;padding:9px;font-size:9px}}.asm-newsletter button{{width:38px;border:0;background:#087443;color:#fff}}.asm-payment-icons{{display:flex;gap:8px;align-items:center;margin-top:14px;font-size:8px;font-weight:900}}.asm-pak-note{{margin-top:14px;font-family:'Noto Nastaliq Urdu',serif;font-size:12px;text-align:right;color:#fff}}.asm-footer-bottom{{border-top:1px solid rgba(255,255,255,.12);padding:14px 0;display:flex;justify-content:space-between;font-size:9px;color:#92b3a3}}.asm-mobile-nav{{height:65px;border-top:1px solid #dce9e2;box-shadow:0 -5px 18px rgba(0,50,30,.08);padding:6px 4px;justify-content:space-around}}.asm-mobile-nav a{{flex:1;text-align:center;color:#64736b;text-decoration:none!important;font-size:9px;font-weight:800;position:relative}}.asm-mobile-nav a i{{display:block;font-size:18px;margin-bottom:3px}}.asm-mobile-nav a.active{{color:#006b3c}}.asm-mobile-nav b{{position:absolute;top:-2px;right:24%;background:#006b3c;color:#fff;border-radius:50%;font-size:7px;min-width:14px;height:14px;display:flex;align-items:center;justify-content:center}}.dropdown:hover .dropdown-menu{{display:block}}\n        @media(max-width:767px){{.asm-shell{{width:calc(100% - 24px)}}.asm-header-main{{min-height:116px;display:grid;grid-template-columns:1fr auto;gap:10px;padding:9px 0}}.asm-logo{{min-width:0}}.asm-logo img{{width:43px;height:43px}}.asm-logo strong{{font-size:20px}}.asm-logo small{{font-size:8px;margin-top:4px}}.asm-header-actions{{gap:7px}}.asm-account-link{{display:none}}.asm-head-action .asm-circle-icon,.asm-head-cart .asm-circle-icon{{width:38px;height:38px}}.asm-head-cart>span:last-child{{display:none}}.asm-search-wrap{{grid-column:1/-1;max-width:none;width:100%;height:40px}}.asm-search-wrap button{{width:51px}}.asm-nav{{display:none}}.asm-mobile-head{{height:37px;background:#006b3c;color:#fff;display:flex;align-items:center;justify-content:space-around}}.asm-mobile-head a{{color:#fff!important;text-decoration:none!important;font-size:10px;font-weight:800}}.asm-mobile-head i{{margin-right:4px}}.asm-hero{{min-height:245px}}.asm-hero-copy{{width:60%;padding:25px 0 28px 12px}}.asm-kicker{{font-size:8px}}.asm-hero-copy h2{{font-size:34px}}.asm-hero-copy p{{font-size:8px;margin-bottom:10px}}.asm-hero-benefits{{gap:7px;margin-bottom:10px}}.asm-hero-benefits span{{font-size:7px}}.asm-hero-btn{{padding:7px 13px;font-size:9px}}.asm-hero-products{{right:-8%;bottom:3px;width:55%;height:210px}}.hp1{{width:170px;height:120px;left:4%;bottom:30px}}.hp2{{width:85px;height:115px;left:35%;bottom:45px}}.hp3{{width:105px;height:105px;left:52%;bottom:32px}}.hp4{{width:105px;height:105px;left:72%;bottom:28px}}.asm-pak-flag{{font-size:43px;right:7px;top:15px}}.asm-hero-arrow{{width:27px;height:27px;font-size:10px}}.asm-hero-arrow.left{{left:6px}}.asm-hero-arrow.right{{right:6px}}.category-image-ring{{width:60px!important;height:60px!important}}.category-home-link span{{font-size:8px!important}}.flash-sale-section{{margin-left:12px!important;margin-right:12px!important;border-radius:16px!important}}.flash-sale-heading h2{{font-size:20px!important}}.flash-ring-item{{width:83px!important;min-width:83px!important}}.flash-ring-image{{width:62px!important;height:62px!important}}.flash-ring-name{{font-size:8px!important;line-height:10px!important}}.flash-ring-price{{font-size:9px!important}}.asm-promo-grid{{grid-template-columns:repeat(2,1fr);gap:8px}}.asm-promo-tile{{min-height:90px;padding:10px}}.asm-promo-tile h3{{font-size:13px}}.asm-promo-tile small{{font-size:7px}}.asm-promo-tile span{{font-size:7px}}.asm-promo-tile img{{height:80px}}.asm-section-heading h2{{font-size:18px}}.asm-section-heading p{{font-size:8px}}.asm-section-heading>a{{font-size:8px;padding:6px 10px}}.product-card .image-zoom{{height:125px!important}}.product-card h3{{font-size:9px!important}}.asm-trust-grid{{grid-template-columns:repeat(2,1fr);padding:10px 0}}.asm-trust-grid>div{{justify-content:flex-start;padding:6px}}.asm-trust-grid i{{font-size:18px}}.asm-trust-grid b{{font-size:8px}}.asm-trust-grid small{{font-size:7px}}.asm-footer-grid{{grid-template-columns:1fr 1fr;gap:18px}}.asm-footer-brand,.asm-newsletter{{grid-column:1/-1}}.asm-footer-bottom{{font-size:8px}}.asm-footer{{padding-bottom:72px}}.asm-mobile-nav{{display:flex!important}}.asm-best-sellers{{padding-top:18px}}}}\n        @media(min-width:768px){{.asm-mobile-nav{{display:none!important}}}}\n        @media(prefers-reduced-motion:reduce){{*{{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}}}\n        </style>
                 <script>
                 (function(){
                     const track=document.querySelector('.flash-ring-track');
