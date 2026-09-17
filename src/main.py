@@ -1517,7 +1517,7 @@ const path=decodeURIComponent(window.location.pathname||"").toLowerCase();
 const slugify=s=>String(s||"").toLowerCase().replace(/\\.html?$/i,"").replace(/[^a-z0-9]+/g," ").trim();
 const stop=new Set(["the","and","for","with","from","online","buy","shop","in","of","new","best","asm","veo","product","products"]);
 const tokens=s=>slugify(s).split(/\\s+/).filter(x=>x.length>2&&!stop.has(x));
-const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",""":"&quot;","'":"&#39;"}[c]));
+const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const raw=path.replace(/^\\/+/,"").replace(/^(product|products|collections|collection|pages)\\//,"").replace(/^category\\//,"").replace(/\\\\.html?$/i,"").replace(/-\\d+$/,"");
 const q=tokens(raw);
 const products=Array.isArray(window.searchIndex)?window.searchIndex:[];
@@ -3755,21 +3755,4 @@ def process_woocommerce_csv():
         "Takht Bhai", "Katlang", "Rustam", "Garhi Kapura", "Mahaban", "Topi", "Swabi", "Lahor", "Razar", "Chota Lahore", 
         "Daggar", "Gadezai", "Dhok", "Nizampur", "Utla", "Shangla", "Alpuri", "Chakar", "Besham", "Puran", 
         "Makhuzai", "Achhrai", "Chail", "Barkana", "Kuzkana", "Buner", "Gagra", "Khwazakhela", "Madyan", "Bahrain", 
-        "Kalam", "Matta", "Behrain", "Balakot", "Naran", "Kaghan", "Shinkiari", "Oghi", "Darband", "Baffa", 
-        "Dhodial", "Battagram", "Allai", "Chattar", "Alo", "Banna", "Rashang", "Pattan", "Kolai", "Palas", 
-        "Jalkot", "Kandia", "Dasu", "Komila", "Khalo", "Harban", "Seo", "Gowari", "Bhobat", "Chilas", 
-        "Darel", "Tangir", "Gilgit", "Skardu", "Hunza", "Nagar", "Ghizer", "Yasin", "Gupis", "Puniyal", 
-        "Ishkoman", "Yarkhun", "Mastuj", "Laspur", "Mulkhow", "Torkhow", "Khot", "Banda Daud Shah", "Takht-e-Nasrati", "Narri", 
-        "Tall", "Thall", "Doaba", "Muhammad Khel", "Muhammadzai", "Sandi", "Torghar", "Makhmour", "Bajaur", "Nawagai", 
-        "Mamund", "Salarzai", "Chamarkand", "Utmankhel", "Khar", "Yousaf Khel", "Chakdara", "Timergara", "Wari", "Barawal", 
-        "Shahi", "Kalkot", "Sheringal", "Patrak", "Khal Qila", "Quetta", "Chaman", "Pishin", "Qila Abdullah", "Zhob", 
-        "Musakhel", "Killa Saifullah", "Barkhan", "Sherani", "Loralai", "Duki", "Kingri", "Kohlu", "Mawand", "Bhambore", 
-        "Sibi", "Lehri", "Dhadar", "Bhag", "Tambu", "Naseerabad", "Chattar", "Tamboo", "Usta Muhammad", "Jafarabad", 
-        "Sohbatpur", "Jhal Magsi", "Gandakha", "Kachi", "Machh", "Sanni", "Shoran", "Khuzdar", "Wadh", "Nal", 
-        "Surab", "Kalat", "Mangocher", "Mastung", "Kharan", "Nushki", "Washuk", "Mashkel", "Dalbandin", "Taufiq", 
-        "Nok Kundi", "Chagai", "Turbat", "Buleda", "Dasht", "Mand", "Tump", "Kolwah", "Balnigore", "Kech", 
-        "Gwadar", "Jiwani", "Ormara", "Pasni", "Pishukan", "Surbandar", "Panjgur", "Paroom", "Gichk", "Rakhshan", 
-        "Zehri", "Saruna", "Karkh", "Kasur", "Okara", "Nankana Sahib", "Toba Tek Singh", "Jhang", "Chiniot", "Bhalwal", 
-        "Kot Momin", "Bhera", "Shahpur", "Sahiwal", "Sillanwali", "Noorpur Thal", "Kot Addu", "Alipur", "Jatoi", "Chaubara", 
-        "Karor Lal Esan", "Mankera", "Taunsa Sharif", "Rojsan", "Jampur", "Rahim Yar Khan", "Sadiqabad", "Liaquatpur", "Khanpur", 
-        "Bahawalnagar", "Haroonabad", "Chishtian", "Fort Abbas", "Hasilpur", "Khairpur Tamewali", "
+        "Kalam", "Matta", "Behrain", "Balakot", "Naran", "Kaghan", "Shinkiari", "Oghi", "Darband", "
