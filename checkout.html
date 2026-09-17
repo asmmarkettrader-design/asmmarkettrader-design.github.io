@@ -1,0 +1,656 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"><title>Secure Checkout | ASM VEO</title><meta name="title" content="Secure Checkout | ASM VEO"><meta name="description" content="Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO."><meta name="keywords" content="buy Secure Checkout in Pakistan, Secure Checkout price in Pakistan, online shopping Pakistan, cash on delivery, ASM VEO"><meta name="author" content="ASM Digital Solutions"><meta name="robots" content="noindex,follow"><meta name="theme-color" content="#E53935"><link rel="canonical" href="https://www.asmveo.com/checkout.html"><link rel="icon" type="image/png" href="/icon.png"><link rel="apple-touch-icon" href="/icon.png"><link rel="alternate" hreflang="en-PK" href="https://www.asmveo.com/checkout.html" /><link rel="alternate" hreflang="ur-PK" href="https://www.asmveo.com/checkout.html" /><link rel="alternate" hreflang="x-default" href="https://www.asmveo.com/checkout.html" /><meta name="geo.region" content="PK" /><meta name="geo.placename" content="Pakistan" /><meta name="geo.position" content="30.3753;69.3451" /><meta name="ICBM" content="30.3753, 69.3451" /><meta property="og:type" content="website"><meta property="og:url" content="https://www.asmveo.com/checkout.html"><meta property="og:title" content="Secure Checkout | ASM VEO"><meta property="og:description" content="Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO."><meta property="og:image" content="https://www.asmveo.com/Png%20logo.jpg"><meta property="og:locale" content="en_PK"><meta property="og:site_name" content="ASM VEO"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:title" content="Secure Checkout | ASM VEO"><meta property="twitter:description" content="Complete your order with Cash on Delivery. Fast and secure checkout at ASM VEO."><meta property="twitter:image" content="https://www.asmveo.com/Png%20logo.jpg"><link rel="manifest" href="/manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="ASM VEO"><link rel="preconnect" href="https://cdn.tailwindcss.com"><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><script src="https://cdn.tailwindcss.com"></script><script>
+tailwind.config = {
+darkMode: 'class',
+theme: {
+extend: {
+colors: {
+pk: { red: '#E53935', light: '#FFEBEE', dark: '#C62828' }
+}
+}
+}
+}
+</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+body {
+font-family: 'Plus Jakarta Sans', sans-serif;
+background: #f3f4f6;
+color: #1f2937;
+transition: background-color 0.3s;
+padding-bottom: 70px;
+}
+.dark body { background: #111827; color: #f3f4f6; }
+.product-card { transition: all 0.3s ease; content-visibility: auto; contain-intrinsic-size: 300px; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px -10px rgba(229, 57, 53, 0.2); }
+.image-zoom img { transition: transform 0.5s ease; }
+.product-card:hover .image-zoom img { transform: scale(1.08); }
+.dropdown:hover .dropdown-menu { display: block; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #E53935; border-radius: 4px; }
+.line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+.animate-float { animation: float 6s ease-in-out infinite; }
+@keyframes pulse-ring {
+0% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.7); }
+70% { box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }
+100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }
+}
+.pulse-ring { animation: pulse-ring 2s infinite; }
+@keyframes slideIn {
+from { transform: translateY(20px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+.slide-in { animation: slideIn 0.4s ease-out; }
+.carousel-track { display: flex; transition: transform 0.8s ease; }
+.carousel-slide { min-width: 100%; box-sizing: border-box; }
+.glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #1f2937; }
+.dark .glass { background: rgba(17, 24, 39, 0.95); color: #fff; }
+.reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+.animated-bg {
+background: linear-gradient(-45deg, #E53935, #C62828, #E53935, #B71C1C);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+.compare-bar { transform: translateY(120%); transition: transform 0.3s ease; }
+.compare-bar.show { transform: translateY(0); }
+.compare-chip { animation: slideIn 0.25s ease-out; }
+.suggestions-panel { max-height: 320px; overflow-y: auto; }
+@keyframes gradient {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+</style><script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"name": "ASM VEO",
+"alternateName": "ASM Digital Solutions",
+"url": "https://www.asmveo.com/",
+"logo": "https://www.asmveo.com/Png%20logo.jpg",
+"contactPoint": {
+"@type": "ContactPoint",
+"telephone": "+923425478683",
+"contactType": "customer service",
+"areaServed": "PK",
+"availableLanguage": ["en", "Urdu"]
+},
+"sameAs": [
+"https://www.facebook.com/profile.php?id=61593172078469",
+"https://instagram.com/asmveo"
+]
+}
+</script><script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"name": "ASM VEO",
+"url": "https://www.asmveo.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://www.asmveo.com/index.html?search={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-M4J4YTPZPQ"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M4J4YTPZPQ');
+</script><script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '123456789012345');
+fbq('track', 'PageView');
+</script><noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
+/></noscript><script>
+(function(w,d,s,r,n){
+w.TrustpilotObject=n;
+w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)};
+a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;
+f=d.getElementsByTagName(s)[0];
+f.parentNode.insertBefore(a,f)
+})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+tp('register', 'H57UbnePwdaPfseb');
+</script><script>
+function getCart() {
+return JSON.parse(localStorage.getItem('asm_cart')) || [];
+}
+function saveCart(cart) {
+localStorage.setItem('asm_cart', JSON.stringify(cart));
+updateCartBadge();
+}
+function updateCartBadge() {
+let cart = getCart();
+let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
+}
+function addToCart(name, price, image, event, slug) {
+if(event) event.stopPropagation();
+let cart = getCart();
+let existing = cart.find(item => item.name === name);
+if (existing) {
+existing.qty = (existing.qty || 1) + 1;
+}
+else {
+cart.push({name: String(name || ''), price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1});
+}
+saveCart(cart);
+showToast('Added to Cart!', 'fa-cart-plus', 'pk');
+pulseCartIcon();
+}
+function removeFromCart(index) {
+let cart = getCart();
+cart.splice(index, 1);
+saveCart(cart);
+if (typeof renderCart === 'function') renderCart();
+}
+function updateQty(index, delta) {
+let cart = getCart();
+if (!cart[index]) return;
+cart[index].qty = (cart[index].qty || 1) + delta;
+if (cart[index].qty < 1) {
+cart.splice(index, 1);
+}
+saveCart(cart);
+if (typeof renderCart === 'function') renderCart();
+}
+function buyNow(name, price, image, event, slug) {
+if(event) event.stopPropagation();
+const item = {name: String(name || ''), price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1};
+if (!item.name || item.price <= 0) { showToast('Product information is unavailable.', 'fa-exclamation-circle', 'red'); return; }
+try { localStorage.setItem('asm_buy_now', JSON.stringify(item)); } catch(e) {}
+window.location.href = '/checkout.html?buy_now=true';
+}
+function getWishlist() {
+return JSON.parse(localStorage.getItem('asm_wishlist')) || [];
+}
+function toggleWishlist(name, price, image, event) {
+if(event) event.stopPropagation();
+let wishlist = getWishlist();
+let idx = wishlist.findIndex(item => item.name === name);
+if (idx > -1) {
+wishlist.splice(idx, 1);
+showToast('Removed from Wishlist', 'fa-heart-broken', 'gray');
+}
+else {
+wishlist.push({name, price, image});
+showToast('Added to Wishlist!', 'fa-heart', 'red');
+}
+localStorage.setItem('asm_wishlist', JSON.stringify(wishlist));
+updateWishlistBadge();
+}
+function updateWishlistBadge() {
+let wl = getWishlist();
+document.querySelectorAll('.wishlist-badge').forEach(el => el.innerText = wl.length);
+}
+function getCompare() {
+try { return JSON.parse(localStorage.getItem('asm_compare')) || []; } catch(e) { return []; }
+}
+function saveCompare(items) { localStorage.setItem('asm_compare', JSON.stringify(items.slice(0, 4))); updateCompareBar(); }
+function toggleCompare(name, price, image, slug, category, event) {
+if (event) event.stopPropagation();
+let items = getCompare();
+let idx = items.findIndex(item => item.slug === slug);
+if (idx > -1) { items.splice(idx, 1); showToast('Removed from Compare', 'fa-code-compare', 'gray'); }
+else { if (items.length >= 4) { showToast('Compare limit is 4 products', 'fa-code-compare', 'red'); return; } items.push({name, price: parseFloat(price), image, slug, category}); showToast('Added to Compare', 'fa-code-compare', 'pk'); }
+saveCompare(items); updateCompareButtons();
+}
+function updateCompareBar() {
+let items = getCompare(), bar = document.getElementById('compareBar');
+document.querySelectorAll('.compare-count').forEach(el => el.innerText = items.length);
+if (!bar) return;
+if (!items.length) { bar.classList.remove('show'); setTimeout(() => { if (!getCompare().length) bar.classList.add('hidden'); }, 300); return; }
+bar.classList.remove('hidden'); setTimeout(() => bar.classList.add('show'), 10);
+let chips = document.getElementById('compareChips');
+if (chips) chips.innerHTML = items.map(item => '<div class="compare-chip flex items-center gap-2 bg-white/10 rounded-full px-3 py-1.5 text-xs font-bold"><img src="'+item.image+'" class="w-7 h-7 rounded-full object-cover bg-white" alt=""><span class="max-w-[120px] truncate">'+escapeHtml(item.name)+'</span></div>').join('');
+}
+function updateCompareButtons() {
+let items = getCompare();
+document.querySelectorAll('[data-compare-slug]').forEach(btn => {
+let active = items.some(item => item.slug === btn.getAttribute('data-compare-slug'));
+btn.classList.toggle('bg-[#E53935]', active); btn.classList.toggle('text-white', active); btn.classList.toggle('bg-white', !active);
+btn.innerHTML = active ? '<i class="fas fa-check"></i>' : '<i class="fas fa-code-compare"></i>';
+});
+}
+function clearCompare() { localStorage.removeItem('asm_compare'); updateCompareBar(); updateCompareButtons(); }
+function escapeHtml(value) { return String(value || '').replace(/[&<>"']/g, function(ch) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]; }); }
+function showSearchSuggestions() {
+let input=document.getElementById('searchInput'), panel=document.getElementById('searchSuggestions');
+if(!input || !panel) return;
+let index = window.searchSuggestIndex || window.searchIndex || [];
+let q=input.value.toLowerCase().trim(); if(q.length<2) { panel.classList.add('hidden'); return; }
+let results=index.filter(p=>(p.name||'').toLowerCase().includes(q)||(p.category||'').toLowerCase().includes(q)||(p.brand||'').toLowerCase().includes(q)).slice(0,8);
+if(!results.length) { panel.classList.add('hidden'); return; }
+panel.innerHTML=results.map(p=>'<a href="/product/'+encodeURIComponent(p.slug)+'.html" class="flex items-center gap-3 p-3 hover:bg-gray-50 dark:hover:bg-gray-700 transition"><div class="w-10 h-10 rounded-lg bg-red-50 text-[#E53935] flex items-center justify-center flex-shrink-0"><i class="fas fa-magnifying-glass text-sm"></i></div><div class="min-w-0"><div class="font-bold text-xs text-gray-900 dark:text-white truncate">'+escapeHtml(p.name)+'</div><div class="text-[11px] text-[#E53935] font-black">Rs '+p.final_price+'</div></div></a>').join('');
+panel.classList.remove('hidden');
+}
+function hideSearchSuggestions() { let p=document.getElementById('searchSuggestions'); if(p) setTimeout(()=>p.classList.add('hidden'),180); }
+function smartSearchResults(query) {
+query=String(query||'').toLowerCase().trim(); if(!query) return [];
+const synonyms={mobile:'smartphone',phone:'mobile',earbuds:'earphone',perfume:'fragrance',ladies:'women',men:'mens',laptop:'computer'};
+const terms=query.split(/\s+/).map(t=>synonyms[t]||t);
+function sim(a,b){if(a===b)return 1;if(a.includes(b)||b.includes(a))return .8;return 0;}
+return (typeof searchIndex==='undefined'?[]:searchIndex.map(p=>{
+let hay=(p.name+' '+p.category+' '+(p.brand||'')).toLowerCase(),score=0;
+terms.forEach(t=>{if(hay.includes(t))score+=10;else hay.split(/\s+/).forEach(w=>score+=Math.round(sim(t,w)*3));});
+if(hay.includes(query))score+=20; return {p,score};
+}).filter(x=>x.score>=4).sort((a,b)=>b.score-a.score).map(x=>x.p));
+}
+function addToRecentlyViewed(product) {
+let recent = JSON.parse(localStorage.getItem('asm_recent')) || [];
+recent = recent.filter(p => p.slug !== product.slug);
+recent.unshift(product);
+recent = recent.slice(0, 10);
+localStorage.setItem('asm_recent', JSON.stringify(recent));
+}
+function showToast(msg, icon='fa-check-circle', color='pk') {
+const colors = {
+pk: 'bg-[#E53935]',
+red: 'bg-red-500',
+gray: 'bg-gray-600',
+green: 'bg-green-500'
+};
+const toast = document.createElement('div');
+toast.className = `fixed bottom-20 md:bottom-4 right-4 ${colors[color]} text-white px-6 py-3 rounded-xl shadow-2xl z-[9999] transform transition-all duration-300 translate-y-0 opacity-100 flex items-center gap-3 font-bold slide-in`;
+toast.innerHTML = `<i class="fas ${icon} text-xl" aria-hidden="true"></i> ${msg}`;
+document.body.appendChild(toast);
+setTimeout(() => {
+toast.style.opacity = '0';
+toast.style.transform = 'translateY(20px)';
+setTimeout(() => toast.remove(), 300);
+}, 2500);
+}
+function pulseCartIcon() {
+let cartIcon = document.querySelector('.cart-icon-pulse');
+if (cartIcon) {
+cartIcon.classList.add('scale-125');
+setTimeout(() => cartIcon.classList.remove('scale-125'), 200);
+}
+}
+let searchLoaded = false;
+let searchSuggestionsLoaded = false;
+function loadSearchData(callback) {
+if (window.searchIndex) { if (callback) callback(); return; }
+if (searchLoaded) { if (callback) setTimeout(callback, 80); return; }
+searchLoaded = true;
+let script = document.createElement('script');
+script.src = '/search-data.js';
+script.onload = function() { if (callback) callback(); };
+script.onerror = function() { searchLoaded = false; if (callback) callback(); };
+document.head.appendChild(script);
+}
+function loadSearchSuggestions(callback) {
+if (window.searchSuggestIndex) { if (callback) callback(); return; }
+if (searchSuggestionsLoaded) { if (callback) setTimeout(callback, 50); return; }
+searchSuggestionsLoaded = true;
+let script = document.createElement('script');
+script.src = '/search-suggest-data.js';
+script.onload = function() { if (callback) callback(); };
+script.onerror = function() { searchSuggestionsLoaded = false; if (callback) callback(); };
+document.head.appendChild(script);
+}
+function executeSearch() {
+let val = document.getElementById('searchInput').value;
+if(val.trim() !== "") {
+window.location.href = '/index.html?search=' + encodeURIComponent(val);
+}
+}
+function handleSearch(e) {
+if (e.key === 'Enter') executeSearch();
+}
+function toggleDarkMode() {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('asm_dark', document.documentElement.classList.contains('dark'));
+updateDarkModeIcon();
+}
+function updateDarkModeIcon() {
+let isDark = document.documentElement.classList.contains('dark');
+document.querySelectorAll('.dark-mode-icon').forEach(el => {
+el.className = `fas ${isDark ? 'fa-sun' : 'fa-moon'} dark-mode-icon`;
+});
+}
+function scrollTop() {
+window.scrollTo({top: 0, behavior: 'smooth'});
+}
+function quickView(name, price, image, desc, slug) {
+let modal = document.getElementById('quickViewModal');
+document.getElementById('qvImage').src = image;
+document.getElementById('qvName').innerText = name;
+document.getElementById('qvPrice').innerText = "Rs " + price;
+document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
+let safeName = name.replace(/'/g, "\\'");
+let safeImage = image.replace(/'/g, "\\'");
+document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event, slug); closeQuickView();`);
+document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event, slug);`);
+document.getElementById('qvLink').href = '/product/' + slug + '.html';
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+function closeQuickView() {
+document.getElementById('quickViewModal').classList.add('hidden');
+document.getElementById('quickViewModal').classList.remove('flex');
+}
+function toggleMobileCats() {
+document.getElementById('mobileCatMenu').classList.toggle('hidden');
+}
+window.onload = function() {
+updateCartBadge();
+updateWishlistBadge();
+if (localStorage.getItem('asm_dark') === 'true') {
+document.documentElement.classList.add('dark');
+updateDarkModeIcon();
+}
+if (!localStorage.getItem('asm_cookie_consent')) {
+let cc = document.getElementById('cookieConsent');
+if(cc) cc.classList.remove('hidden');
+}
+if (!localStorage.getItem('asm_exit_intent')) {
+document.addEventListener('mouseleave', function(e) {
+if (e.clientY < 10) {
+let em = document.getElementById('exitModal');
+if(em) {
+em.classList.remove('hidden');
+em.classList.add('flex');
+localStorage.setItem('asm_exit_intent', 'true');
+}
+}
+});
+}
+window.addEventListener('scroll', function() {
+let btn = document.getElementById('backToTop');
+if (btn) btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+});
+let reveals = document.querySelectorAll('.reveal');
+function checkReveals() {
+reveals.forEach(el => {
+let elTop = el.getBoundingClientRect().top;
+if (elTop < window.innerHeight - 50) el.classList.add('active');
+});
+}
+window.addEventListener('scroll', checkReveals);
+checkReveals();
+let searchInput = document.getElementById('searchInput');
+if(searchInput) {
+loadSearchSuggestions();
+searchInput.addEventListener('focus', function() { loadSearchSuggestions(showSearchSuggestions); });
+searchInput.addEventListener('input', function() { loadSearchSuggestions(showSearchSuggestions); });
+searchInput.addEventListener('blur', hideSearchSuggestions);
+}
+updateCompareBar();
+updateCompareButtons();
+document.addEventListener('click', function(event) {
+let menu = document.getElementById('mobileCatMenu');
+let btn = document.querySelector('[onclick="toggleMobileCats()"]');
+if (menu && !menu.classList.contains('hidden') && !menu.contains(event.target) && btn && !btn.contains(event.target)) {
+menu.classList.add('hidden');
+}
+});
+};
+</script></head><body class="text-gray-900 dark:text-gray-100"><div class="bg-gray-900 text-white text-xs py-2 hidden md:block"><div class="container mx-auto px-4 flex justify-between items-center"><span>Welcome to ASM VEO! Fast Delivery & Cash on Delivery Available</span><div class="flex gap-4 items-center"><button onclick="toggleDarkMode()" class="hover:text-[#E53935]" aria-label="Toggle Dark Mode"><i class="fas fa-moon dark-mode-icon" aria-hidden="true"></i></button><span class="border-l border-gray-700 pl-4">EN</span><span class="border-l border-gray-700 pl-4">PKR</span><a href="/about.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">About</a><a href="/contact.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4">Contact</a><a href="/blog.html" class="hover:text-[#E53935] border-l border-gray-700 pl-4 font-bold text-yellow-400">Our Blog</a></div></div></div><header class="glass shadow-md sticky top-0 z-50 transition-colors border-b border-gray-100 dark:border-gray-800"><div class="bg-[#E53935] text-white text-xs md:text-sm py-2 md:hidden"><div class="container mx-auto px-4 flex justify-between items-center"><a href="/index.html" class="hover:text-gray-300 transition font-semibold"><i class="fas fa-home mr-1" aria-hidden="true"></i> Home
+</a><button onclick="toggleMobileCats()" class="hover:text-gray-300 transition font-semibold focus:outline-none" aria-label="Toggle Mobile Categories"><i class="fas fa-list mr-1" aria-hidden="true"></i> Categories
+</button></div></div><div id="mobileCatMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700"><div class="container mx-auto px-4 py-2 grid grid-cols-2 gap-2 max-h-60 overflow-y-auto"><a href="/category/audio-entertainment.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Audio & Entertainment
+</a><a href="/category/automotive.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Automotive
+</a><a href="/category/baby-kids-accessories.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Baby & Kids Accessories
+</a><a href="/category/backpacks-duffel-bags.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Backpacks & Duffel Bags
+</a><a href="/category/baking-and-cooking.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Baking and Cooking
+</a><a href="/category/beauty-cosmetics.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Beauty & Cosmetics
+</a><a href="/category/beauty-personal-care.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Beauty & Personal Care
+</a><a href="/category/bedding-linen.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Bedding & Linen
+</a><a href="/category/books-stationery.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Books & Stationery
+</a><a href="/category/cameras-photography.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Cameras & Photography
+</a><a href="/category/chemicals-raw-materials.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Chemicals & Raw Materials
+</a><a href="/category/cleaning-organization.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Cleaning & Organization
+</a></div></div><div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4"><a href="/index.html" class="flex items-center gap-2" aria-label="ASM VEO Home"><img src="/icon.png" alt="ASM VEO Logo" class="h-10 md:h-12 object-contain hover:scale-105 transition-transform rounded"><div class="flex flex-col leading-none"><span class="text-xl font-extrabold text-[#E53935] dark:text-white tracking-tight">ASM VEO</span><span class="text-[9px] tracking-widest text-gray-600 dark:text-gray-400 font-bold">PAKISTAN</span></div></a><div class="flex-1 min-w-[200px] max-w-xl mx-0 md:mx-8 relative flex"><label for="searchInput" class="sr-only">Search products</label><input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, brands, categories..." class="w-full bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 focus:bg-white dark:focus:bg-gray-700 focus:border-[#E53935] rounded-l-xl py-2.5 px-6 outline-none transition-all text-gray-800 dark:text-gray-100 font-semibold shadow-sm text-sm"><button onclick="executeSearch()" aria-label="Search" class="bg-[#E53935] text-white px-6 rounded-r-xl hover:bg-[#C62828] transition-colors flex items-center justify-center"><i class="fas fa-search text-lg" aria-hidden="true"></i></button><div id="searchSuggestions" class="hidden absolute left-0 right-0 top-full mt-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-2xl z-[80] suggestions-panel"></div></div><div class="flex items-center gap-3"><a href="/wishlist.html" class="relative bg-gray-50 text-[#E53935] p-2.5 rounded-xl hover:bg-[#E53935] hover:text-white transition-colors border border-gray-200" aria-label="Wishlist"><i class="fas fa-heart" aria-hidden="true"></i><span class="wishlist-badge absolute -top-2 -right-2 bg-[#E53935] text-white text-xs font-black px-1.5 py-0.5 rounded-full shadow min-w-[20px] text-center">0</span></a><a href="/checkout.html" class="cart-icon-pulse relative bg-[#E53935] text-white px-4 py-2.5 rounded-xl font-bold hover:bg-[#C62828] transition-colors shadow-sm flex items-center gap-2 text-sm" aria-label="Go to Cart"><i class="fas fa-shopping-cart text-lg" aria-hidden="true"></i><span class="hidden md:inline">Cart</span><span class="cart-badge absolute -top-2 -right-2 bg-gray-900 text-white text-xs font-black px-1.5 py-0.5 rounded-full shadow min-w-[20px] text-center">0</span></a></div></div><nav class="hidden md:block border-t border-gray-100 dark:border-gray-800"><div class="container mx-auto px-4 flex items-center gap-6"><div class="relative dropdown z-50"><button class="bg-[#E53935] text-white px-4 py-2.5 font-bold text-sm flex items-center gap-2 hover:bg-[#C62828] transition-colors" aria-haspopup="true" aria-expanded="false"><i class="fas fa-list" aria-hidden="true"></i> All Categories <i class="fas fa-chevron-down text-[10px]" aria-hidden="true"></i></button><div class="dropdown-menu absolute hidden text-gray-700 bg-white dark:bg-gray-800 dark:text-gray-200 shadow-2xl rounded-b-xl mt-0 w-56 py-2 border border-gray-100 dark:border-gray-700 max-h-96 overflow-y-auto"><a href="/category/audio-entertainment.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Audio & Entertainment
+</a><a href="/category/automotive.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Automotive
+</a><a href="/category/baby-kids-accessories.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Baby & Kids Accessories
+</a><a href="/category/backpacks-duffel-bags.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Backpacks & Duffel Bags
+</a><a href="/category/baking-and-cooking.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Baking and Cooking
+</a><a href="/category/beauty-cosmetics.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Beauty & Cosmetics
+</a><a href="/category/beauty-personal-care.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Beauty & Personal Care
+</a><a href="/category/bedding-linen.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Bedding & Linen
+</a><a href="/category/books-stationery.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Books & Stationery
+</a><a href="/category/cameras-photography.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Cameras & Photography
+</a><a href="/category/chemicals-raw-materials.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Chemicals & Raw Materials
+</a><a href="/category/cleaning-organization.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#E53935] hover:text-white transition-colors">
+Cleaning & Organization
+</a></div></div><a href="/index.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Home</a><a href="/index.html#products" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Shop</a><a href="/about.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">About Us</a><a href="/contact.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">Contact Us</a><a href="/blog.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition text-[#007BFF]">Blog</a><a href="/account.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">My Account</a><a href="/faq.html" class="py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:text-[#E53935] transition">FAQ</a><div class="ml-auto text-xs font-bold text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-1 text-[#E53935]" aria-hidden="true"></i> 0342 54 786 83
+</div></div></nav></header><div id="compareBar" class="compare-bar hidden fixed bottom-0 left-0 right-0 z-[70] bg-gray-950 text-white shadow-2xl border-t border-gray-800"><div class="container mx-auto px-4 py-3 flex flex-wrap items-center gap-3"><div class="font-black text-sm flex items-center gap-2"><i class="fas fa-code-compare text-[#E53935]"></i> Compare <span class="compare-count bg-[#E53935] rounded-full px-2 py-0.5 text-xs">0</span></div><div id="compareChips" class="flex-1 flex flex-wrap gap-2"></div><a href="/compare.html" class="bg-[#E53935] text-white px-4 py-2 rounded-lg font-bold text-xs">Compare Now</a><button onclick="clearCompare()" class="text-gray-300 hover:text-white text-xs font-bold px-2 py-2">Clear</button></div></div><nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-2xl border-t border-gray-100 dark:border-gray-800 flex justify-around py-2 md:hidden z-50"><a href="/index.html" class="flex flex-col items-center text-[#E53935] text-xs font-bold"><i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home
+</a><button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories"><i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories
+</button><a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative"><i class="fas fa-shopping-cart text-lg mb-1" aria-hidden="true"></i> Cart
+<span class="cart-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span></a><a href="/wishlist.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative"><i class="fas fa-heart text-lg mb-1" aria-hidden="true"></i> Wishlist
+<span class="wishlist-badge absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span></a><a href="/compare.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative"><i class="fas fa-code-compare text-lg mb-1" aria-hidden="true"></i> Compare
+<span class="compare-count absolute -top-1 right-2 bg-[#E53935] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span></a></nav><div id="exitModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4"><div class="bg-white dark:bg-gray-800 rounded-3xl p-8 max-w-md w-full text-center relative slide-in"><button onclick="document.getElementById('exitModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white" aria-label="Close Modal"><i class="fas fa-times text-xl" aria-hidden="true"></i></button><i class="fas fa-gift text-6xl text-[#E53935] mb-4" aria-hidden="true"></i><h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Wait! Here's 10% OFF</h2><p class="text-gray-600 dark:text-gray-400 mb-6">Don't leave empty-handed. Use this code at checkout for an instant 10% discount on your order!</p><div class="bg-gray-50 border-2 border-dashed border-[#E53935] rounded-xl py-4 mb-6"><span class="text-3xl font-black text-[#E53935] tracking-widest">ASM10</span></div><a href="/index.html#products" onclick="document.getElementById('exitModal').classList.add('hidden')" class="block bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition">
+Continue Shopping
+</a></div></div><div id="quickViewModal" class="hidden fixed inset-0 bg-black/70 z-[9999] items-center justify-center p-4"><div class="bg-white dark:bg-gray-800 rounded-3xl max-w-3xl w-full overflow-hidden relative slide-in flex flex-col md:flex-row"><button onclick="closeQuickView()" class="absolute top-4 right-4 bg-white/80 rounded-full p-2 text-gray-700 hover:bg-white z-10" aria-label="Close Quick View"><i class="fas fa-times text-xl" aria-hidden="true"></i></button><div class="md:w-1/2 bg-gray-50 dark:bg-gray-900 p-4 flex items-center justify-center"><img id="qvImage" src="" alt="Quick View Product Image" class="max-h-[300px] object-contain rounded-xl" width="300" height="300" loading="lazy" decoding="async"></div><div class="md:w-1/2 p-6 flex flex-col"><h2 id="qvName" class="text-xl font-extrabold text-gray-900 dark:text-white mb-2"></h2><p id="qvPrice" class="text-2xl font-black text-[#E53935] dark:text-white mb-3"></p><p id="qvDesc" class="text-sm text-gray-600 dark:text-gray-400 mb-6"></p><div class="mt-auto flex flex-col gap-2"><button id="qvAddCart" class="w-full bg-[#E53935] text-white py-3 rounded-xl font-bold hover:bg-[#C62828] transition flex items-center justify-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart
+</button><button id="qvBuyNow" class="w-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 rounded-xl font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition flex items-center justify-center gap-2"><i class="fas fa-bolt" aria-hidden="true"></i> Buy Now
+</button><a id="qvLink" href="#" class="text-center text-sm text-[#E53935] hover:underline mt-2 font-semibold">
+View Full Details
+</a></div></div></div></div><a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20know%20about%20your%20products" target="_blank"
+class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all z-50 hover:scale-110 pulse-ring"
+aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i></a><button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#E53935] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#C62828] transition z-50" aria-label="Back to top"><i class="fas fa-arrow-up text-xl" aria-hidden="true"></i></button><main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl"><div class="container mx-auto px-4 py-12 max-w-6xl"><h1 class="text-3xl font-extrabold text-[#E53935] dark:text-white mb-8 flex items-center gap-3"><i class="fas fa-lock text-[#E53935]" aria-hidden="true"></i> Secure Checkout
+</h1><div class="flex items-center justify-center mb-10"><div class="flex items-center text-[#E53935] font-bold"><div class="w-10 h-10 bg-[#E53935] text-white rounded-full flex items-center justify-center font-black">1</div><span class="ml-2 hidden md:inline">Cart</span></div><div class="w-16 md:w-32 h-1 bg-[#E53935] mx-2"></div><div class="flex items-center text-[#E53935] font-bold"><div class="w-10 h-10 bg-[#E53935] text-white rounded-full flex items-center justify-center font-black">2</div><span class="ml-2 hidden md:inline">Details</span></div><div class="w-16 md:w-32 h-1 bg-gray-200 mx-2"></div><div class="flex items-center text-gray-500 font-bold"><div class="w-10 h-10 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-black">3</div><span class="ml-2 hidden md:inline">Confirm</span></div></div><div class="flex flex-col lg:flex-row gap-8"><div class="lg:w-1/2"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-6 border border-gray-200 dark:border-gray-700 mb-6"><h2 class="text-2xl font-black text-gray-900 dark:text-white mb-4 border-b pb-4 flex items-center gap-2"><i class="fas fa-shopping-bag text-[#E53935]" aria-hidden="true"></i> Your Items
+</h2><div id="cartItemsContainer" class="space-y-4 max-h-[400px] overflow-y-auto pr-2"></div></div><div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700"><h3 class="font-bold text-gray-900 dark:text-white mb-3 text-sm">Why Shop With Us?</h3><div class="grid grid-cols-2 gap-3 text-xs text-gray-800 dark:text-gray-300"><div class="flex items-center gap-2"><i class="fas fa-shield-alt text-[#E53935]" aria-hidden="true"></i> 100% Secure Checkout</div><div class="flex items-center gap-2"><i class="fas fa-truck text-[#E53935]" aria-hidden="true"></i> Fast Nationwide Delivery</div><div class="flex items-center gap-2"><i class="fas fa-undo text-[#E53935]" aria-hidden="true"></i> 7-Day Return Policy</div><div class="flex items-center gap-2"><i class="fas fa-certificate text-[#E53935]" aria-hidden="true"></i> Catalog-Based Product Information</div></div></div></div><div class="lg:w-1/2"><div class="bg-[#E53935] p-6 rounded-t-3xl text-white relative"><div class="absolute top-0 left-0 w-full h-1 bg-white rounded-t-3xl"></div><h2 class="text-2xl font-extrabold flex items-center gap-2"><i class="fas fa-map-marker-alt text-white" aria-hidden="true"></i> Shipping Details
+</h2><p id="deliveryEstimate" class="text-gray-200 text-sm mt-1"><i class="fas fa-truck" aria-hidden="true"></i> Select your city for delivery estimate</p></div><form id="checkoutForm" class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-b-3xl shadow-xl border border-gray-200 dark:border-gray-700 border-t-0 space-y-5"><input type="hidden" name="_subject" value="🛒 New Order on ASM VEO!"><input type="hidden" name="Product_Ordered" id="productField" value=""><input type="hidden" name="Order_Total" id="totalField" value=""><div class="grid grid-cols-1 md:grid-cols-2 gap-5"><div><label for="fullName" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Full Name <span class="text-red-600">*</span></label><input type="text" id="fullName" name="Full_Name" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="Your Name"></div><div><label for="emailAddr" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Email Address</label><input type="email" id="emailAddr" name="Email" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="you@example.com"></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-5"><div><label for="phoneNum" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number <span class="text-red-600">*</span></label><input type="tel" id="phoneNum" name="Phone_Number" pattern="03[0-9]{2}[0-9]{7}" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="0300-XXXXXXX"></div><div><label for="citySelect" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label><select id="citySelect" name="City" onchange="updateDeliveryEstimate()" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none font-semibold" required><option value="" disabled selected>Select City</option><option value='Abbaspur'>Abbaspur</option><option value='Abbottabad'>Abbottabad</option><option value='Achhrai'>Achhrai</option><option value='Ahmedpur East'>Ahmedpur East</option><option value='Akora Khattak'>Akora Khattak</option><option value='Alipur'>Alipur</option><option value='Allai'>Allai</option><option value='Alo'>Alo</option><option value='Alpuri'>Alpuri</option><option value='Arifwala'>Arifwala</option><option value='Athmuqam'>Athmuqam</option><option value='Attock'>Attock</option><option value='Baffa'>Baffa</option><option value='Bagh'>Bagh</option><option value='Bahawalnagar'>Bahawalnagar</option><option value='Bahawalpur'>Bahawalpur</option><option value='Bahrain'>Bahrain</option><option value='Bajaur'>Bajaur</option><option value='Balakot'>Balakot</option><option value='Balnigore'>Balnigore</option><option value='Banda Daud Shah'>Banda Daud Shah</option><option value='Banna'>Banna</option><option value='Bannu'>Bannu</option><option value='Barawal'>Barawal</option><option value='Barkana'>Barkana</option><option value='Barkhan'>Barkhan</option><option value='Battagram'>Battagram</option><option value='Behrain'>Behrain</option><option value='Besham'>Besham</option><option value='Bhag'>Bhag</option><option value='Bhakkar'>Bhakkar</option><option value='Bhalwal'>Bhalwal</option><option value='Bhambore'>Bhambore</option><option value='Bhera'>Bhera</option><option value='Bhimber'>Bhimber</option><option value='Bhobat'>Bhobat</option><option value='Buleda'>Buleda</option><option value='Buner'>Buner</option><option value='Burewala'>Burewala</option><option value='Chagai'>Chagai</option><option value='Chail'>Chail</option><option value='Chakar'>Chakar</option><option value='Chakdara'>Chakdara</option><option value='Chakswari'>Chakswari</option><option value='Chakwal'>Chakwal</option><option value='Chaman'>Chaman</option><option value='Chamarkand'>Chamarkand</option><option value='Charsadda'>Charsadda</option><option value='Chattar'>Chattar</option><option value='Chaubara'>Chaubara</option><option value='Chichawatni'>Chichawatni</option><option value='Chilas'>Chilas</option><option value='Chiniot'>Chiniot</option><option value='Chishtian'>Chishtian</option><option value='Chitral'>Chitral</option><option value='Chota Lahore'>Chota Lahore</option><option value='Dadyal'>Dadyal</option><option value='Daggar'>Daggar</option><option value='Dalbandin'>Dalbandin</option><option value='Darband'>Darband</option><option value='Darel'>Darel</option><option value='Darya Khan'>Darya Khan</option><option value='Dasht'>Dasht</option><option value='Dasu'>Dasu</option><option value='Dera Ghazi Khan'>Dera Ghazi Khan</option><option value='Dera Ismail Khan'>Dera Ismail Khan</option><option value='Dhadar'>Dhadar</option><option value='Dhodial'>Dhodial</option><option value='Dhok'>Dhok</option><option value='Dina'>Dina</option><option value='Dir'>Dir</option><option value='Doaba'>Doaba</option><option value='Domel'>Domel</option><option value='Dudial'>Dudial</option><option value='Duki'>Duki</option><option value='Dunyapur'>Dunyapur</option><option value='Faisalabad'>Faisalabad</option><option value='Fateh Jang'>Fateh Jang</option><option value='Fort Abbas'>Fort Abbas</option><option value='Forward Kahuta'>Forward Kahuta</option><option value='Gadezai'>Gadezai</option><option value='Gagra'>Gagra</option><option value='Gandakha'>Gandakha</option><option value='Garhi Kapura'>Garhi Kapura</option><option value='Ghizer'>Ghizer</option><option value='Gichk'>Gichk</option><option value='Gilgit'>Gilgit</option><option value='Gowari'>Gowari</option><option value='Gujar Khan'>Gujar Khan</option><option value='Gujranwala'>Gujranwala</option><option value='Gujrat'>Gujrat</option><option value='Gupis'>Gupis</option><option value='Gwadar'>Gwadar</option><option value='Hajira'>Hajira</option><option value='Hangu'>Hangu</option><option value='Harban'>Harban</option><option value='Haripur'>Haripur</option><option value='Haroonabad'>Haroonabad</option><option value='Hasan Abdal'>Hasan Abdal</option><option value='Hasilpur'>Hasilpur</option><option value='Hattian Bala'>Hattian Bala</option><option value='Hunza'>Hunza</option><option value='Hyderabad'>Hyderabad</option><option value='Isakhel'>Isakhel</option><option value='Ishkoman'>Ishkoman</option><option value='Islamabad'>Islamabad</option><option value='Jafarabad'>Jafarabad</option><option value='Jahanian'>Jahanian</option><option value='Jalalpur Pirwala'>Jalalpur Pirwala</option><option value='Jalkot'>Jalkot</option><option value='Jampur'>Jampur</option><option value='Jand'>Jand</option><option value='Jatoi'>Jatoi</option><option value='Jhal Magsi'>Jhal Magsi</option><option value='Jhang'>Jhang</option><option value='Jhelum'>Jhelum</option><option value='Jiwani'>Jiwani</option><option value='Kabirwala'>Kabirwala</option><option value='Kachi'>Kachi</option><option value='Kaghan'>Kaghan</option><option value='Kahror Pakka'>Kahror Pakka</option><option value='Kahuta'>Kahuta</option><option value='Kalam'>Kalam</option><option value='Kalat'>Kalat</option><option value='Kalkot'>Kalkot</option><option value='Kallar Syedan'>Kallar Syedan</option><option value='Kamar Mushani'>Kamar Mushani</option><option value='Kandia'>Kandia</option><option value='Karachi'>Karachi</option><option value='Karak'>Karak</option><option value='Karkh'>Karkh</option><option value='Karor Lal Esan'>Karor Lal Esan</option><option value='Kasur'>Kasur</option><option value='Katlang'>Katlang</option><option value='Kech'>Kech</option><option value='Kel'>Kel</option><option value='Khairpur Tamewali'>Khairpur Tamewali</option><option value='Khal Qila'>Khal Qila</option><option value='Khalo'>Khalo</option><option value='Khanewal'>Khanewal</option><option value='Khanpur'>Khanpur</option><option value='Khar'>Khar</option><option value='Kharan'>Kharan</option><option value='Kharian'>Kharian</option><option value='Khot'>Khot</option><option value='Khushab'>Khushab</option><option value='Khuzdar'>Khuzdar</option><option value='Khwazakhela'>Khwazakhela</option><option value='Khyber'>Khyber</option><option value='Killa Saifullah'>Killa Saifullah</option><option value='Kingri'>Kingri</option><option value='Kohat'>Kohat</option><option value='Kohlu'>Kohlu</option><option value='Kolai'>Kolai</option><option value='Kolwah'>Kolwah</option><option value='Komila'>Komila</option><option value='Kot Addu'>Kot Addu</option><option value='Kot Momin'>Kot Momin</option><option value='Kotli'>Kotli</option><option value='Kotli Sattian'>Kotli Sattian</option><option value='Kurram'>Kurram</option><option value='Kuzkana'>Kuzkana</option><option value='Lahor'>Lahor</option><option value='Lahore'>Lahore</option><option value='Lakki Marwat'>Lakki Marwat</option><option value='Larkana'>Larkana</option><option value='Laspur'>Laspur</option><option value='Layyah'>Layyah</option><option value='Lehri'>Lehri</option><option value='Liaquatpur'>Liaquatpur</option><option value='Lodhran'>Lodhran</option><option value='Loralai'>Loralai</option><option value='Machh'>Machh</option><option value='Madyan'>Madyan</option><option value='Mahaban'>Mahaban</option><option value='Mailsi'>Mailsi</option><option value='Makhmour'>Makhmour</option><option value='Makhuzai'>Makhuzai</option><option value='Mamund'>Mamund</option><option value='Mand'>Mand</option><option value='Mang'>Mang</option><option value='Mangla'>Mangla</option><option value='Mangocher'>Mangocher</option><option value='Mankera'>Mankera</option><option value='Mansehra'>Mansehra</option><option value='Mardan'>Mardan</option><option value='Mashkel'>Mashkel</option><option value='Mastuj'>Mastuj</option><option value='Mastung'>Mastung</option><option value='Matta'>Matta</option><option value='Mawand'>Mawand</option><option value='Mian Channu'>Mian Channu</option><option value='Mianwali'>Mianwali</option><option value='Mirpur'>Mirpur</option><option value='Mohmand'>Mohmand</option><option value='Muhammad Khel'>Muhammad Khel</option><option value='Muhammadzai'>Muhammadzai</option><option value='Mulkhow'>Mulkhow</option><option value='Multan'>Multan</option><option value='Murree'>Murree</option><option value='Musakhel'>Musakhel</option><option value='Muzaffarabad'>Muzaffarabad</option><option value='Muzaffargarh'>Muzaffargarh</option><option value='Nagar'>Nagar</option><option value='Nakyal'>Nakyal</option><option value='Nal'>Nal</option><option value='Nankana Sahib'>Nankana Sahib</option><option value='Naran'>Naran</option><option value='Narri'>Narri</option><option value='Naseerabad'>Naseerabad</option><option value='Nawagai'>Nawagai</option><option value='Neelum'>Neelum</option><option value='Nizampur'>Nizampur</option><option value='Nok Kundi'>Nok Kundi</option><option value='Noorpur Thal'>Noorpur Thal</option><option value='Nowshera'>Nowshera</option><option value='Nushki'>Nushki</option><option value='Oghi'>Oghi</option><option value='Okara'>Okara</option><option value='Orakzai'>Orakzai</option><option value='Ormara'>Ormara</option><option value='Other'>Other</option><option value='Paharpur'>Paharpur</option><option value='Pakpattan'>Pakpattan</option><option value='Palas'>Palas</option><option value='Panjgur'>Panjgur</option><option value='Paroom'>Paroom</option><option value='Pasni'>Pasni</option><option value='Patrak'>Patrak</option><option value='Pattan'>Pattan</option><option value='Peshawar'>Peshawar</option><option value='Pind Dadan Khan'>Pind Dadan Khan</option><option value='Pindi Gheb'>Pindi Gheb</option><option value='Piplan'>Piplan</option><option value='Pishin'>Pishin</option><option value='Pishukan'>Pishukan</option><option value='Puniyal'>Puniyal</option><option value='Puran'>Puran</option><option value='Qila Abdullah'>Qila Abdullah</option><option value='Quetta'>Quetta</option><option value='Rahim Yar Khan'>Rahim Yar Khan</option><option value='Rajanpur'>Rajanpur</option><option value='Rakhshan'>Rakhshan</option><option value='Rashakai'>Rashakai</option><option value='Rashang'>Rashang</option><option value='Rawalakot'>Rawalakot</option><option value='Rawalpindi'>Rawalpindi</option><option value='Razar'>Razar</option><option value='Risalpur'>Risalpur</option><option value='Rojsan'>Rojsan</option><option value='Rustam'>Rustam</option><option value='Sadiqabad'>Sadiqabad</option><option value='Sahiwal'>Sahiwal</option><option value='Salarzai'>Salarzai</option><option value='Sandi'>Sandi</option><option value='Sanni'>Sanni</option><option value='Sarai Alamgir'>Sarai Alamgir</option><option value='Sargodha'>Sargodha</option><option value='Saruna'>Saruna</option><option value='Sehnsa'>Sehnsa</option><option value='Seo'>Seo</option><option value='Shabqadar'>Shabqadar</option><option value='Shahi'>Shahi</option><option value='Shahpur'>Shahpur</option><option value='Shangla'>Shangla</option><option value='Sharda'>Sharda</option><option value='Sheikhupura'>Sheikhupura</option><option value='Sherani'>Sherani</option><option value='Sheringal'>Sheringal</option><option value='Shinkiari'>Shinkiari</option><option value='Shoran'>Shoran</option><option value='Shujabad'>Shujabad</option><option value='Sialkot'>Sialkot</option><option value='Sibi'>Sibi</option><option value='Sillanwali'>Sillanwali</option><option value='Skardu'>Skardu</option><option value='Sohawa'>Sohawa</option><option value='Sohbatpur'>Sohbatpur</option><option value='Sukkur'>Sukkur</option><option value='Surab'>Surab</option><option value='Surbandar'>Surbandar</option><option value='Swabi'>Swabi</option><option value='Swat'>Swat</option><option value='Takht Bhai'>Takht Bhai</option><option value='Takht-e-Nasrati'>Takht-e-Nasrati</option><option value='Talagang'>Talagang</option><option value='Tall'>Tall</option><option value='Tamboo'>Tamboo</option><option value='Tambu'>Tambu</option><option value='Tangi'>Tangi</option><option value='Tangir'>Tangir</option><option value='Tank'>Tank</option><option value='Taobat'>Taobat</option><option value='Tatrinot'>Tatrinot</option><option value='Taufiq'>Taufiq</option><option value='Taunsa Sharif'>Taunsa Sharif</option><option value='Taxila'>Taxila</option><option value='Thall'>Thall</option><option value='Timergara'>Timergara</option><option value='Toba Tek Singh'>Toba Tek Singh</option><option value='Tolipir'>Tolipir</option><option value='Topi'>Topi</option><option value='Torghar'>Torghar</option><option value='Torkhow'>Torkhow</option><option value='Tump'>Tump</option><option value='Turbat'>Turbat</option><option value='Usta Muhammad'>Usta Muhammad</option><option value='Utla'>Utla</option><option value='Utmankhel'>Utmankhel</option><option value='Vehari'>Vehari</option><option value='Wadh'>Wadh</option><option value='Wah Cantt'>Wah Cantt</option><option value='Wari'>Wari</option><option value='Washuk'>Washuk</option><option value='Waziristan'>Waziristan</option><option value='Yarkhun'>Yarkhun</option><option value='Yasin'>Yasin</option><option value='Yazman'>Yazman</option><option value='Yousaf Khel'>Yousaf Khel</option><option value='Zehri'>Zehri</option><option value='Zhob'>Zhob</option></select></div></div><div><label for="addressInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label><textarea id="addressInput" name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea></div><div><fieldset><legend class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Payment Method <span class="text-red-600">*</span></legend><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><label class="cursor-pointer border-2 border-[#E53935] bg-red-50 dark:bg-red-900/20 p-4 rounded-xl flex items-center gap-3 transition-all" id="labelCOD"><input type="radio" name="Payment_Method" value="Cash on Delivery" checked class="w-5 h-5 text-[#E53935] focus:ring-[#E53935]" onchange="togglePaymentDetails()"><span class="font-bold text-gray-900 dark:text-white">Cash on Delivery</span></label><label class="cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:border-[#E53935] p-4 rounded-xl flex items-center gap-3 transition-all" id="labelAdv"><input type="radio" name="Payment_Method" value="Advance Payment" class="w-5 h-5 text-[#E53935] focus:ring-[#E53935]" onchange="togglePaymentDetails()"><div class="flex flex-col"><span class="font-bold text-gray-900 dark:text-white leading-tight">Advance Payment</span><span class="text-[10px] font-semibold text-gray-500">Easypaisa / JazzCash</span></div></label></div></fieldset><div id="advancePaymentDetails" class="hidden mt-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-5 reveal active"><h3 class="font-bold text-blue-800 dark:text-blue-300 mb-3 flex items-center gap-2"><i class="fas fa-university"></i> Send Payment Here:
+</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 text-sm"><div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"><div class="font-black text-green-600 mb-1 flex items-center gap-1"><div class="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center text-white text-[8px]">e</div> Easypaisa</div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p><p class="font-black text-gray-900 dark:text-white mb-2">Ali Abbas</p><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p><p class="font-black text-gray-900 dark:text-white">03425478683</p></div><div class="bg-white dark:bg-gray-800 p-3 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"><div class="font-black text-red-600 mb-1 italic tracking-tighter">jazzCash</div><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Title</p><p class="font-black text-gray-900 dark:text-white mb-2">Aon Abbas</p><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Account Number</p><p class="font-black text-gray-900 dark:text-white">03085273667</p></div></div><div class="bg-blue-100 dark:bg-blue-900/40 p-3 rounded-lg border border-blue-200 dark:border-blue-800 flex items-start gap-2"><i class="fas fa-info-circle text-blue-700 dark:text-blue-400 mt-0.5"></i><p class="text-xs text-blue-800 dark:text-blue-300 font-bold leading-relaxed"><span class="uppercase text-[10px] bg-blue-200 dark:bg-blue-800 px-1 py-0.5 rounded mr-1">Zaroori</span>
+Payment send krny k baad WhatsApp par screenshot lazmi send karein ta k apka order foran process ho saky.
+</p></div></div></div><div><label for="orderNotes" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label><textarea id="orderNotes" name="Order_Notes" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none" placeholder="Any special instructions..."></textarea></div><div><label for="couponCode" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Coupon Code</label><div class="flex gap-2"><input type="text" id="couponCode" placeholder="Enter ASM10 for 10% off (Min Rs 3000)" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#E53935] outline-none uppercase"><button type="button" onclick="applyCoupon()" class="bg-gray-900 text-white px-5 rounded-xl font-bold hover:bg-gray-700 transition" aria-label="Apply Coupon">Apply</button></div></div><div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5 border border-gray-100 dark:border-gray-600 mt-6"><div class="flex justify-between text-sm font-bold text-gray-700 dark:text-gray-300 mb-2"><span>Subtotal</span><span id="subtotalDisplay">Rs 0</span></div><div class="flex justify-between text-sm font-bold text-[#E53935] dark:text-white mb-2 hidden" id="discountRow"><span>Discount (10%)</span><span id="discountDisplay">- Rs 0</span></div><div class="flex justify-between text-sm font-bold text-gray-700 dark:text-gray-300 mb-2"><span>Delivery Charges</span><span id="deliveryDisplay">Rs 180</span></div><div class="flex justify-between items-center border-t border-gray-200 dark:border-gray-600 pt-3 mt-3"><span class="font-black text-lg text-gray-900 dark:text-white">Total</span><span class="font-black text-2xl text-[#E53935] dark:text-white" id="grandTotalDisplay">Rs 180</span></div></div><button type="submit" id="submitBtn" class="w-full bg-[#E53935] text-white font-black py-4 rounded-xl hover:bg-[#C62828] transition-all shadow-xl text-lg transform hover:-translate-y-1 flex items-center justify-center gap-2"><i class="fas fa-check-circle" aria-hidden="true"></i> Confirm Order
+</button><a id="checkoutWhatsApp" href="https://wa.me/923425478683?text=Hi%20ASM%20VEO,%20I%20want%20to%20place%20an%20order" class="w-full bg-green-500 text-white font-black py-4 rounded-xl hover:bg-green-600 transition-all shadow-xl text-lg mt-3 flex items-center justify-center gap-2 transform hover:-translate-y-1"><i class="fab fa-whatsapp text-xl" aria-hidden="true"></i> Order via WhatsApp
+</a><p class="text-center text-xs text-gray-600 dark:text-gray-400 mt-4"><i class="fas fa-lock" aria-hidden="true"></i> Your information is secure and never shared with third parties.</p></form></div></div></div><script>
+let couponApplied = false;
+const DELIVERY_FEE = 180;
+const deliveryZones = {"Karachi":[180,2,3],"Lahore":[180,2,3],"Islamabad":[180,2,3],"Rawalpindi":[180,2,3],"Faisalabad":[180,2,4],"Multan":[180,2,4],"Gujranwala":[180,2,4],"Sialkot":[180,2,4],"Peshawar":[180,3,5],"Quetta":[180,4,6],"Hyderabad":[180,2,4],"Bahawalpur":[180,3,5],"Sargodha":[180,3,5],"Sukkur":[180,3,5],"Larkana":[180,3,5],"Sheikhupura":[180,2,4],"Mardan":[180,3,5],"Abbottabad":[180,3,5],"Mansehra":[180,3,5],"Haripur":[180,3,5],"Nowshera":[180,3,5],"Swat":[180,4,6],"Dir":[180,4,6],"Chitral":[180,5,7],"Bannu":[180,4,6],"Charsadda":[180,3,5],"Muzaffarabad":[180,4,6],"Mirpur":[180,3,5],"Kotli":[180,4,6],"Bhimber":[180,4,6]};
+function getDeliveryInfo(city){const z=deliveryZones[city]||[DELIVERY_FEE,3,5];return{charge:Number(z[0])||DELIVERY_FEE,min:z[1],max:z[2]};}
+function normalizeCheckoutItem(i){
+if(!i)return null;
+const name=String(i.name||'').trim();
+const price=Number(i.price);
+const qty=Math.max(1,parseInt(i.qty,10)||1);
+if(!name || !Number.isFinite(price) || price<=0)return null;
+return {name,price,image:String(i.image||''),slug:String(i.slug||''),qty};
+}
+function getCheckoutItems(){
+const u=new URLSearchParams(location.search);
+if(u.get('buy_now')==='true'){
+try{
+const saved=normalizeCheckoutItem(JSON.parse(localStorage.getItem('asm_buy_now')||'null'));
+if(saved)return [saved];
+}catch(e){}
+const name=u.get('product')||'',price=Number(u.get('price'))||0,image=u.get('image')||'',slug=u.get('slug')||'';
+const fallback=normalizeCheckoutItem({name,price,image,slug,qty:1});
+return fallback?[fallback]:[];
+}
+let cart=[];
+try{cart=JSON.parse(localStorage.getItem('asm_cart')||'[]');}catch(e){cart=[];}
+return Array.isArray(cart)?cart.map(normalizeCheckoutItem).filter(Boolean):[];
+}
+function updateDeliveryEstimate(){
+const city=document.getElementById('citySelect')?.value||'';
+const z=getDeliveryInfo(city);
+const n=document.getElementById('deliveryEstimate');
+if(n)n.textContent=city?('Estimated delivery: '+z.min+'-'+z.max+' working days • Rs '+z.charge):'Select your city for delivery estimate';
+renderCart();
+}
+function togglePaymentDetails(){
+const r=document.querySelector('input[name="Payment_Method"]:checked');
+if(!r)return;
+const adv=r.value==='Advance Payment';
+const d=document.getElementById('advancePaymentDetails'),c=document.getElementById('labelCOD'),a=document.getElementById('labelAdv');
+if(d)d.classList.toggle('hidden',!adv);
+if(a){a.classList.toggle('border-[#E53935]',adv);a.classList.toggle('bg-red-50',adv);}
+if(c){c.classList.toggle('border-[#E53935]',!adv);c.classList.toggle('bg-red-50',!adv);}
+renderCart();
+}
+function applyCoupon(){
+const code=(document.getElementById('couponCode')?.value||'').trim().toUpperCase();
+const sub=getCheckoutItems().reduce((s,i)=>s+(i.price*i.qty),0);
+if(code==='ASM10'&&sub>=3000){couponApplied=true;showToast('Coupon applied! 10% discount added.','fa-check-circle','pk');}
+else{couponApplied=false;showToast(code==='ASM10'?'Minimum Rs 3000 shopping required for this coupon.':'Invalid coupon code.','fa-exclamation-circle','red');}
+renderCart();
+}
+function buildCheckoutTotals(){
+const items=getCheckoutItems();
+const city=document.getElementById('citySelect')?.value||'';
+const z=getDeliveryInfo(city);
+const subtotal=items.reduce((s,i)=>s+(Number(i.price)||0)*(Number(i.qty)||1),0);
+const discount=couponApplied?Math.floor(subtotal*.10):0;
+const total=Math.max(0,subtotal-discount+z.charge);
+return {items,city,delivery:z.charge,subtotal,discount,total,payment:document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery'};
+}
+function updateCheckoutWhatsApp(){
+const t=buildCheckoutTotals();
+const lines=['Hi ASM VEO, I want to place an order:'];
+t.items.forEach(i=>{
+lines.push(i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')');
+if(i.slug)lines.push('Product: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html');
+});
+lines.push('Subtotal: Rs '+t.subtotal,'Delivery Charges: Rs '+t.delivery,'Discount: Rs '+t.discount,'Grand Total: Rs '+t.total,'Payment Method: '+t.payment);
+const el=document.getElementById('checkoutWhatsApp');
+if(el)el.href='https://wa.me/923425478683?text='+encodeURIComponent(lines.join('\n'));
+}
+function renderCart(){
+const container=document.getElementById('cartItemsContainer');
+if(!container)return;
+const t=buildCheckoutTotals();
+container.innerHTML='';
+const isBuyNow=new URLSearchParams(location.search).get('buy_now')==='true';
+const submit=document.getElementById('submitBtn');
+if(!t.items.length){
+container.innerHTML='<div class="text-center py-8"><p class="text-gray-500 font-semibold">Your cart is empty.</p><a href="/index.html" class="inline-block mt-4 bg-[#E53935] text-white px-6 py-2 rounded-xl font-bold">Browse Products</a></div>';
+if(submit)submit.disabled=true;
+}else{
+if(submit)submit.disabled=false;
+t.items.forEach((i,idx)=>{
+const line=i.price*i.qty;
+const safe=String(i.name).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const safeImage=String(i.image||'').replace(/"/g,'&quot;');
+const productLink=i.slug?'<a class="text-[11px] text-[#E53935] font-bold hover:underline" href="/product/'+encodeURIComponent(i.slug)+'.html">View product</a>':'';
+const controls=isBuyNow?'':'<div class="flex items-center gap-2 mt-2"><button type="button" onclick="updateQty('+idx+',-1)" class="w-8 h-8 bg-gray-200 dark:bg-gray-600 rounded-lg font-black">−</button><span class="min-w-[24px] text-center font-bold">'+i.qty+'</span><button type="button" onclick="updateQty('+idx+',1)" class="w-8 h-8 bg-gray-200 dark:bg-gray-600 rounded-lg font-black">+</button><button type="button" onclick="removeFromCart('+idx+')" class="ml-2 text-red-500" aria-label="Remove item"><i class="fas fa-trash"></i></button></div>';
+container.innerHTML+='<div class="flex items-start gap-3 bg-gray-50 dark:bg-gray-700 p-3 rounded-xl border border-gray-200 dark:border-gray-600"><div class="w-20 h-20 flex-shrink-0 bg-white rounded-lg border p-1 flex items-center justify-center">'+(safeImage?'<img src="'+safeImage+'" class="w-full h-full object-contain rounded" loading="lazy" alt="'+safe+'" onerror="this.style.display:none;">':'<i class="fas fa-image text-gray-300"></i>')+'</div><div class="flex-1 min-w-0"><h3 class="font-bold text-sm text-gray-900 dark:text-white leading-snug">'+safe+'</h3><p class="text-xs text-gray-500 dark:text-gray-300 mt-1">Rs '+i.price+' × '+i.qty+'</p><p class="text-[#E53935] font-black text-base mt-1">Rs '+line+'</p>'+productLink+controls+'</div></div>';
+});
+}
+const subEl=document.getElementById('subtotalDisplay'),delEl=document.getElementById('deliveryDisplay'),totalEl=document.getElementById('grandTotalDisplay'),discRow=document.getElementById('discountRow'),discEl=document.getElementById('discountDisplay');
+if(subEl)subEl.innerText='Rs '+t.subtotal;
+if(delEl)delEl.innerText='Rs '+t.delivery;
+if(totalEl)totalEl.innerText='Rs '+t.total;
+if(discRow){if(t.discount>0){discRow.classList.remove('hidden');if(discEl)discEl.innerText='- Rs '+t.discount;}else discRow.classList.add('hidden');}
+const productText=t.items.map(i=>i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'\nProduct: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join('\n');
+const pf=document.getElementById('productField'),tf=document.getElementById('totalField');
+if(pf)pf.value=productText+'\nSubtotal: Rs '+t.subtotal+'\nDelivery Charges: Rs '+t.delivery+'\nDiscount: Rs '+t.discount+'\nGrand Total: Rs '+t.total+'\nPayment Method: '+t.payment;
+if(tf)tf.value='Rs '+t.total;
+updateCheckoutWhatsApp();
+}
+async function submitCheckoutOrder(e){
+e.preventDefault();
+e.stopPropagation();
+const form=e.currentTarget||document.getElementById('checkoutForm');
+const btn=document.getElementById('submitBtn');
+if(!form)return false;
+if(!form.checkValidity()){form.reportValidity();return false;}
+const t=buildCheckoutTotals();
+if(!t.items.length){showToast('Your cart is empty.','fa-cart-shopping','red');return false;}
+renderCart();
+const orderId='ASM-'+Math.floor(100000+Math.random()*900000);
+const pf=document.getElementById('productField'),tf=document.getElementById('totalField');
+const products=pf?.value||'';
+const total=tf?.value||('Rs '+t.total);
+const orderData={
+orderId:orderId,
+name:(document.getElementById('fullName')?.value||'').trim(),
+phone:(document.getElementById('phoneNum')?.value||'').trim(),
+city:document.getElementById('citySelect')?.value||'',
+address:(document.getElementById('addressInput')?.value||'').trim(),
+email:(document.getElementById('emailAddr')?.value||'').trim(),
+paymentMethod:t.payment,
+products:products,
+productLinks:t.items.map(i=>i.slug?'https://www.asmveo.com/product/'+i.slug+'.html':'').filter(Boolean).join('\n'),
+subtotal:t.subtotal,
+deliveryCharges:t.delivery,
+discount:t.discount,
+total:total,
+orderNotes:(document.getElementById('orderNotes')?.value||'').trim()
+};
+if(btn){btn.disabled=true;btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Processing Order...';}
+try{
+const saved=JSON.parse(localStorage.getItem('asm_orders')||'[]');
+saved.unshift({...orderData,status:'Submitted',createdAt:new Date().toISOString()});
+localStorage.setItem('asm_orders',JSON.stringify(saved.slice(0,20)));
+}catch(err){console.warn('Local order backup failed',err);}
+const formData=new FormData(form);
+formData.set('Tracking_ID',orderId);
+formData.set('Product_Ordered',products);
+formData.set('Order_Total',total);
+formData.set('Product_Links',orderData.productLinks);
+formData.set('Subtotal',String(t.subtotal));
+formData.set('Delivery_Charges',String(t.delivery));
+formData.set('Discount',String(t.discount));
+let sheetOk=false,emailOk=false;
+try{
+await fetch('https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify(orderData),keepalive:true});
+sheetOk=true;
+}catch(err){console.error('Google Sheets submission failed',err);}
+try{
+const r=await fetch('https://formspree.io/f/xjgnlgpw',{method:'POST',body:formData,headers:{'Accept':'application/json'},keepalive:true});
+if(!r.ok)throw new Error('Email HTTP '+r.status);
+emailOk=true;
+}catch(err){console.error('Email submission failed',err);}
+try{const ce=(document.getElementById('emailAddr')?.value||'').trim();if(ce)localStorage.setItem('asm_customer_email',ce);}catch(err){}
+// The local backup is already stored. Clear checkout state after processing so the cart cannot duplicate the order.
+localStorage.removeItem('asm_cart');
+localStorage.removeItem('asm_buy_now');
+if(typeof updateCartBadge==='function')updateCartBadge();
+if(!sheetOk&&!emailOk){
+const wa=document.getElementById('checkoutWhatsApp');
+if(btn){btn.disabled=false;btn.innerHTML='<i class="fas fa-check-circle"></i> Confirm Order';}
+showToast('Order saved locally, but network submission failed. Please use WhatsApp to confirm.','fa-wifi','red');
+if(wa)setTimeout(()=>wa.scrollIntoView({behavior:'smooth',block:'center'}),300);
+return false;
+}
+window.location.href='/order-success.html?order='+encodeURIComponent(orderId);
+return false;
+}
+function initCheckout(){
+const form=document.getElementById('checkoutForm');
+if(form && !form.dataset.checkoutBound){form.addEventListener('submit',submitCheckoutOrder);form.dataset.checkoutBound='1';}
+try{
+const u=JSON.parse(localStorage.getItem('asm_account')||'null');
+if(u){if(u.name)document.getElementById('fullName').value=u.name;if(u.email)document.getElementById('emailAddr').value=u.email;if(u.phone)document.getElementById('phoneNum').value=u.phone;if(u.address)document.getElementById('addressInput').value=u.address;}
+}catch(err){}
+togglePaymentDetails();
+renderCart();
+updateDeliveryEstimate();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initCheckout);else initCheckout();
+</script></main><footer class="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 mt-16 pt-12 pb-20 md:pb-8 border-t-4 border-[#E53935]"><div class="container mx-auto px-4"><div class="mb-12 pb-8 border-b border-gray-200 dark:border-gray-800"><h3 class="text-center text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-6">Our Trusted Partners</h3><div class="flex flex-wrap justify-center items-center gap-8 md:gap-14"><div class="text-2xl font-black italic text-red-600 tracking-tighter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="JazzCash">jazzCash</div><div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="EasyPaisa"><div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold">e</div><div class="text-2xl font-bold text-green-500 tracking-tight lowercase">easypaisa</div></div><div class="flex items-center gap-2 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="National Bank of Pakistan"><i class="fas fa-landmark text-green-700 text-xl" aria-hidden="true"></i><div class="text-2xl font-serif font-black text-green-700 tracking-wider">NBP</div></div><div class="text-2xl font-bold text-orange-500 lowercase grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Daraz">daraz</div><div class="text-2xl font-extrabold text-blue-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="PriceOye">PriceOye<span class="text-blue-300">.pk</span></div><div class="flex items-center gap-1 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none" aria-label="Markaz"><i class="fas fa-shopping-bag text-emerald-600 text-lg" aria-hidden="true"></i><div class="text-2xl font-bold text-emerald-600 lowercase tracking-wide">markaz</div></div></div></div><div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10"><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Company</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/about.html" class="hover:text-[#E53935] transition">About Us</a></li><li><a href="/contact.html" class="hover:text-[#E53935] transition">Contact Us</a></li><li><a href="/blog.html" class="hover:text-[#E53935] transition text-[#007BFF]">Our Blog</a></li><li><a href="/faq.html" class="hover:text-[#E53935] transition">FAQ</a></li><li><a href="/privacy.html" class="hover:text-[#E53935] transition">Privacy Policy</a></li><li><a href="/terms.html" class="hover:text-[#E53935] transition">Terms & Conditions</a></li></ul></div><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Support</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/faq.html" class="hover:text-[#E53935] transition">Help Center</a></li><li><a href="/order-success.html" class="hover:text-[#E53935] transition">Track Order</a></li><li><a href="/terms.html" class="hover:text-[#E53935] transition">Returns Policy</a></li><li><a href="/privacy.html" class="hover:text-[#E53935] transition">Data Security</a></li></ul></div><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Shop</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/index.html#products" class="hover:text-[#E53935] transition">All Products</a></li><li><a href="/wishlist.html" class="hover:text-[#E53935] transition">My Wishlist</a></li><li><a href="/checkout.html" class="hover:text-[#E53935] transition">My Cart</a></li><li><a href="/index.html" class="hover:text-[#E53935] transition">Flash Sale</a></li></ul></div><div><h3 class="text-lg font-bold mb-5 text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-800 pb-2">Quick Links</h3><ul class="space-y-3 text-sm font-semibold"><li><a href="/index.html" class="hover:text-[#E53935] transition">Home</a></li><li><a href="/checkout.html" class="hover:text-[#E53935] transition">Checkout</a></li><li><a href="/about.html" class="hover:text-[#E53935] transition">About Us</a></li></ul></div><div><img src="/icon.png" alt="ASM VEO Logo" class="h-14 mb-4 object-contain opacity-90 rounded"><p class="text-sm text-gray-600 dark:text-gray-400 mb-4">ASM VEO is Pakistan's premium online shopping platform by <strong class="text-gray-900 dark:text-white">ASM Digital Solutions</strong>. Enjoy premium quality products, nationwide COD, and 100% secure shopping.</p><div class="flex gap-2 flex-wrap"><a href="https://web.facebook.com/profile.php?id=61593172078469" target="_blank" aria-label="Facebook Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><a href="https://instagram.com/asmveo" target="_blank" aria-label="Instagram Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="https://www.youtube.com/@asmveo" target="_blank" aria-label="YouTube Channel" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-red-600 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-youtube" aria-hidden="true"></i></a><a href="https://twitter.com/asmveo" target="_blank" aria-label="X (Twitter) Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-black hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/asm-digital-solutions" target="_blank" aria-label="LinkedIn Page" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-blue-700 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a><a href="https://wa.me/923425478683" target="_blank" aria-label="WhatsApp Us" class="w-9 h-9 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center hover:bg-green-500 hover:text-white transition text-gray-900 dark:text-white"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></div></div></div><div class="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 text-center mb-6"><h4 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">Service Center</h4><p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><i class="fas fa-building mr-2 text-[#E53935]" aria-hidden="true"></i> ASM Digital Solutions, Karachi, Pakistan</p><p class="text-sm text-gray-600 dark:text-gray-400"><i class="fas fa-phone mr-2 text-[#E53935]" aria-hidden="true"></i><a href="https://wa.me/923425478683" class="font-bold hover:text-[#E53935]">0342 54 786 83</a> (Mon-Sun: 9AM - 11PM)</p></div><div class="border-t border-gray-200 dark:border-gray-800 text-center pt-8"><p class="text-gray-600 dark:text-gray-500 text-sm font-semibold">&copy; 2026 ASM Digital Solutions. All Rights Reserved. | Powered by ASM VEO</p></div></div></footer></body></html>
