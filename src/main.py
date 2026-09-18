@@ -918,7 +918,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 existing.qty = (existing.qty || 1) + 1; 
             }}
             else {{ 
-                cart.push({{name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:1,bundleDiscount:0}}); 
+                cart.push({{name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:1,bundleDiscount:0,flashEligible:false}}); 
             }}
             saveCart(cart);
             showToast('Added to Cart!', 'fa-cart-plus', 'pk');
@@ -929,8 +929,24 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             let cart=getCart();
             let existing=cart.find(item=>item.name===name);
             if(existing) {{ existing.qty=Math.max(existing.qty||1, qty); existing.bundleDiscount=Math.max(existing.bundleDiscount||0, saving||0); }}
-            else {{ cart.push({{name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:qty,bundleDiscount:parseFloat(saving)||0}}); }}
+            else {{ cart.push({{name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:qty,bundleDiscount:parseFloat(saving)||0,flashEligible:false}}); }}
             saveCart(cart); showToast(qty+' item bundle added — save Rs '+(saving||0), 'fa-tags', 'pk'); pulseCartIcon();
+        }}
+
+        function addFlashSelection(items){{
+            const selected=Array.isArray(items)?items:[];
+            if(selected.length!==3){{showToast('Please select exactly 3 Flash Sale products.','fa-bolt','red');return false;}}
+            let cart=getCart();
+            selected.forEach(i=>{{
+                const name=String(i.name||'').trim(), price=Number(i.price)||0;
+                if(!name||price<=0)return;
+                const existing=cart.find(x=>x.slug&&i.slug&&x.slug===i.slug);
+                if(existing){{existing.qty=(existing.qty||1)+1;existing.flashEligible=true;}}
+                else{{cart.push({{name,price,image:String(i.image||''),slug:String(i.slug||''),qty:1,bundleDiscount:0,flashEligible:true}});}}
+            }});
+            saveCart(cart); showToast('3 Flash Sale products added — free delivery unlocked.','fa-truck-fast','pk');
+            window.location.href='/checkout.html?flash_bundle=true';
+            return true;
         }}
 
         function removeFromCart(index) {{
@@ -2535,6 +2551,7 @@ def process_woocommerce_csv():
             category, subcategory, childcategory = normalize_category_hierarchy(cat_raw, all_text)
             confidence = category_confidence(cat_raw, all_text, category, subcategory, childcategory)
 
+            product_id = str(row.get('ID') or row.get('SKU') or (len(products_list)+1)).strip()
             perfume_text = (name + " " + str(cat_raw) + " " + str(subcategory) + " " + str(childcategory)).lower()
             is_perfume = bool(re.search(r"\b(perfume|perfumes|fragrance|fragrances|attar|oud|cologne|eau de parfum|eau de toilette|body spray|perfume oil)\b", perfume_text))
             perfume_price_applied = False
@@ -2553,7 +2570,6 @@ def process_woocommerce_csv():
 
             csv_keywords = seo_keywords_for_product(name, category, subcategory, limit=7)
             seo_desc = local_seo_desc(name, clean_description, None, csv_keywords)
-            product_id = str(row.get('ID') or row.get('SKU') or (len(products_list)+1)).strip()
             slug = safe_filename(name, 80) + "-" + safe_filename(product_id, 24)
             slug = safe_filename(slug, 100)
             sitemap_urls.append(f"{SITE_URL}/product/{slug}.html")
@@ -3291,110 +3307,84 @@ def process_woocommerce_csv():
         home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.", custom_canonical=f"https://www.asmveo.com/{home_filename}")
         
         if h_page == 1:
-            home_html += """
+            # ===== PAKISTAN-THEMED MAIN HERO BANNERS =====
+            def hero_products(words, count=3):
+                pool=[]; seen=set()
+                for pp in products_list:
+                    hay=' '.join([str(pp.get('name','')),str(pp.get('category','')),str(pp.get('subcategory','')),str(pp.get('childcategory',''))]).lower()
+                    if pp.get('image') and pp.get('slug') and any(w in hay for w in words) and pp.get('slug') not in seen:
+                        pool.append(pp); seen.add(pp.get('slug'))
+                return pool[:count]
+
+            hero_sets=[
+                ("Pakistan Shopping Festival","Shop Smart • Live Better","Fashion & everyday picks","Fashion",["fashion","apparel","clothing","dress","wear","bag","shoe"]),
+                ("Pakistan Tech Deals","Smart Tech • Better Living","Gadgets & electronics for everyday use","Electronics",["electronic","laptop","computer","earbud","headphone","smartwatch","gadget","camera","speaker"]),
+                ("Beauty & Care Edit","Beauty • Care • Confidence","Beauty and personal-care essentials","Beauty & Personal Care",["beauty","cosmetic","makeup","skin","skincare","hair care","perfume","fragrance"]),
+                ("Home & Kitchen Picks","Made for Pakistani Homes","Kitchen, home and daily essentials","Home & Kitchen",["home","kitchen","living","furniture","decor","cookware","appliance","storage","cleaning"]),
+            ]
+            hero_slides=[]
+            for hi,(title,kicker,sub,cat,words) in enumerate(hero_sets):
+                hprods=hero_products(words,3)
+                if not hprods: hprods=[pp for pp in products_list if pp.get('image') and pp.get('slug')][:3]
+                product_visuals=[]
+                for pp in hprods:
+                    img=html_lib.escape(str(pp.get('image','')),quote=True); nm=html_lib.escape(str(pp.get('name','')))
+                    loading='eager' if hi==0 else 'lazy'
+                    product_visuals.append(f'<a href="/product/{pp.get("slug")}.html" class="hero-product"><img src="{img}" alt="{nm}" loading="{loading}" decoding="async"><span>{nm}</span></a>')
+                flag='<span class="pk-flag"><i></i><b></b></span>'
+                cat_has_products=bool(hero_products(words,1))
+                hero_href=f'/category/{category_slug(cat)}.html' if cat_has_products else '/categories.html'
+                hero_slides.append(f'''<div class="asm-hero-slide {"is-active" if hi==0 else ""}" aria-hidden="{"false" if hi==0 else "true"}">
+                    <div class="hero-greenwash"></div><div class="hero-pattern"></div>
+                    <div class="hero-copy"><div class="hero-topline">{flag}<span>ASM VEO • PAKISTAN</span></div>
+                    <span class="hero-kicker">{html_lib.escape(kicker)}</span><h2>{html_lib.escape(title)}</h2><p>{html_lib.escape(sub)}</p>
+                    <div class="hero-badges"><span>Cash on Delivery</span><span>All Pakistan</span><span>Flat Rs 180 Delivery</span></div>
+                    <a href="{hero_href}" class="hero-cta">SHOP {html_lib.escape(cat.upper())} <i class="fas fa-arrow-right"></i></a></div>
+                    <div class="hero-products">{"".join(product_visuals)}</div>
+                </div>''')
+
+            home_html += f'''
             <h1 class="sr-only">Pakistan's Trusted Online Shopping Store - ASM VEO</h1>
-            
-            <div id="heroCarousel" class="relative w-full h-[250px] md:h-[400px] overflow-hidden shadow-xl bg-gray-100" aria-label="Featured Promotions Carousel">
-                <div class="carousel-track h-full">
-                
-                    <!-- BANNER 1: Fashion & Footwear (Apparel + Footwear & Bags) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-emerald-50 to-green-100" aria-hidden="false">
-                        <div class="absolute inset-0 bg-gradient-to-r from-white/80 via-emerald-50/30 to-green-100/50"></div>
-                        <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-emerald-200/60 to-transparent transform skew-x-12 translate-x-10"></div>
-                        
-                        <div class="w-[55%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <span class="bg-gray-900 text-white px-2 py-1 text-[8px] md:text-[10px] font-black tracking-widest uppercase mb-2 shadow-sm rounded-sm">ASM VEO PAKISTAN</span>
-                            <h2 class="text-3xl md:text-6xl font-black text-rose-600 uppercase tracking-tighter drop-shadow-sm leading-none">SHOP SMART<br><span class="text-[#087443]">LIVE BETTER</span></h2>
-                            <p class="text-gray-700 text-[9px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Pakistan’s Trusted Online Store</p>
-                            <div class="flex gap-2 mb-3">
-                                <span class="bg-white text-rose-600 border border-rose-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Ready-Made Kapde</span>
-                                <span class="bg-white text-teal-600 border border-teal-200 px-2 py-0.5 rounded text-[8px] md:text-[10px] font-bold shadow-sm">Sneakers & Bags</span>
-                            </div>
-                            <a href="#products" class="bg-rose-500 text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-rose-600 hover:scale-105 transition-all">SHOP NOW</a>
-                        </div>
-                        
-                        <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80" alt="Sneakers and Fashion" fetchpriority="high" class="w-[80%] md:w-[65%] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.3)] transform -rotate-12 hover:-rotate-6 transition-transform duration-500">
-                        </div>
-                    </div>
-
-                    <!-- BANNER 2: Electronics & Home (Consumer Electronics + Home & Living) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-br from-[#043D25] via-[#065C35] to-[#043D25]" aria-hidden="true">
-                        <div class="absolute inset-0 bg-gradient-to-r from-[#043D25] via-[#065C35] to-[#043D25] opacity-80"></div>
-                        <div class="absolute left-1/4 top-1/2 w-64 h-64 bg-blue-500 rounded-full mix-blend-screen filter blur-[80px] opacity-40"></div>
-                        
-                        <div class="w-[45%] h-full relative z-10 flex justify-center items-center">
-                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80" alt="Smartwatch and Gadgets" loading="lazy" decoding="async" class="w-[85%] md:w-[70%] object-contain drop-shadow-[0_0_40px_rgba(59,130,246,0.5)] transform hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="w-[55%] h-full flex flex-col justify-center items-start pr-8 md:pr-16 relative z-10">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-                                <span class="text-blue-300 text-[9px] md:text-[11px] font-bold tracking-[0.3em] uppercase">ASM VEO TECH</span>
-                            </div>
-                            <h2 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight leading-none mb-1">SMART<br><span class="text-blue-400">LIVING</span></h2>
-                            <p class="text-gray-300 text-[9px] md:text-sm mt-2 mb-3 max-w-[250px] leading-relaxed">Upgrade your lifestyle with the latest smartwatches, earbuds, and premium home decor items.</p>
-                            <a href="#products" class="border-2 border-blue-400 text-blue-400 px-6 py-2 rounded-full text-xs font-bold shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:bg-blue-400 hover:text-white transition-all mt-1">UPGRADE NOW</a>
-                        </div>
-                    </div>
-
-                    <!-- BANNER 3: Beauty & Groceries (Health, Beauty + Food & Online Groceries) -->
-                    <div class="carousel-slide h-full relative overflow-hidden flex bg-gradient-to-r from-amber-100 to-green-100" aria-hidden="true">
-                        <div class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-green-200/70 to-transparent rounded-l-full"></div>
-                        <div class="absolute left-0 bottom-0 w-32 h-32 bg-yellow-300 rounded-full mix-blend-multiply filter blur-[40px] opacity-50"></div>
-                        
-                        <div class="w-[50%] h-full flex flex-col justify-center items-start pl-8 md:pl-16 relative z-10">
-                            <span class="bg-green-600 text-white px-3 py-1 text-[8px] md:text-[10px] font-black uppercase tracking-wider mb-2 rounded-br-lg rounded-tl-lg shadow-md">ASM VEO ORGANICS</span>
-                            <h2 class="text-3xl md:text-6xl font-black text-green-800 uppercase tracking-tighter drop-shadow-sm leading-none">PURE &<br><span class="text-amber-600">FRESH</span></h2>
-                            <p class="text-gray-700 text-[10px] md:text-sm font-bold uppercase tracking-widest mt-2 mb-3">Skincare & Daily Groceries</p>
-                            <p class="text-gray-600 text-[8px] md:text-[11px] mb-4 max-w-[220px] font-semibold leading-tight">From organic serums to daily ration & snacks, delivered fresh to your door.</p>
-                            <a href="#products" class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-2 rounded-full text-xs font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all">SHOP ESSENTIALS</a>
-                        </div>
-                        
-                        <div class="w-[50%] h-full relative z-10 flex justify-center items-center gap-2 md:gap-4 pr-4">
-                            <!-- Skincare Image -->
-                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=300&q=80" alt="Beauty Serum" loading="lazy" decoding="async" class="w-[45%] object-contain drop-shadow-xl transform hover:-translate-y-2 transition-transform duration-500">
-                            <!-- Grocery Image -->
-                            <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=300&q=80" alt="Fresh Groceries" loading="lazy" decoding="async" class="w-[50%] object-contain drop-shadow-2xl rounded-2xl border-4 border-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                        </div>
-                    </div>
-                    
-                </div>
-                <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm text-gray-900 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow-md" aria-label="Previous slide"><i class="fas fa-chevron-left text-sm" aria-hidden="true"></i></button>
-                <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm text-gray-900 w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-white transition z-20 shadow-md" aria-label="Next slide"><i class="fas fa-chevron-right text-sm" aria-hidden="true"></i></button>
-                <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20" aria-label="Carousel Navigation Dots"></div>
-            </div>
-            
+            <section id="heroCarousel" class="asm-hero" aria-label="ASM VEO Pakistan promotions">
+                <div class="asm-hero-track">{"".join(hero_slides)}</div>
+                <button type="button" onclick="asmHeroPrev()" class="asm-hero-nav left" aria-label="Previous banner"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" onclick="asmHeroNext()" class="asm-hero-nav right" aria-label="Next banner"><i class="fas fa-chevron-right"></i></button>
+                <div id="asmHeroDots" class="asm-hero-dots"></div>
+            </section>
+            <style>
+            .asm-hero{{position:relative;overflow:hidden;margin:0 auto;min-height:255px;background:#063d27;border-bottom:4px solid #f3c542}}
+            .asm-hero-track{{display:flex;width:100%;transition:transform .45s ease;will-change:transform}}
+            .asm-hero-slide{{min-width:100%;min-height:255px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(115deg,#063d27 0%,#087443 55%,#f4f8f2 100%);color:#fff}}
+            .hero-greenwash{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,48,30,.98) 0%,rgba(8,116,67,.88) 50%,rgba(255,255,255,.08) 100%)}}
+            .hero-pattern{{position:absolute;right:-80px;top:-120px;width:360px;height:360px;border-radius:50%;border:70px solid rgba(255,255,255,.08);box-shadow:0 0 0 55px rgba(255,255,255,.04)}}
+            .hero-copy{{position:relative;z-index:3;width:52%;padding:24px 20px 24px 7%;max-width:700px}}
+            .hero-topline{{display:flex;align-items:center;gap:7px;font-size:9px;font-weight:900;letter-spacing:1.8px;margin-bottom:8px}}
+            .pk-flag{{width:27px;height:18px;background:#fff;border-radius:2px;position:relative;display:inline-block;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,.2)}}
+            .pk-flag:before{{content:"";position:absolute;left:0;top:0;width:7px;height:18px;background:#fff}}
+            .pk-flag:after{{content:"";position:absolute;left:7px;top:0;width:20px;height:18px;background:#087443}}
+            .pk-flag i{{position:absolute;z-index:2;left:14px;top:4px;width:8px;height:8px;border:1px solid #fff;border-radius:50%}}
+            .pk-flag b{{position:absolute;z-index:3;left:17px;top:3px;width:6px;height:6px;background:#087443;border-radius:50%}}
+            .hero-kicker{{display:inline-block;background:#f3c542;color:#123c28;padding:5px 9px;border-radius:999px;font-size:9px;font-weight:900;text-transform:uppercase;margin-bottom:7px}}
+            .hero-copy h2{{font-size:31px;line-height:.96;font-weight:950;letter-spacing:-1px;margin:0 0 7px;text-transform:uppercase}}
+            .hero-copy p{{font-size:11px;font-weight:700;color:#e8f5ee;max-width:330px;margin:0 0 10px}}
+            .hero-badges{{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}}
+            .hero-badges span{{font-size:8px;font-weight:900;padding:5px 7px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.1)}}
+            .hero-cta{{display:inline-flex;align-items:center;gap:7px;background:#fff;color:#087443;padding:9px 14px;border-radius:999px;font-size:10px;font-weight:950;box-shadow:0 6px 18px rgba(0,0,0,.18)}}
+            .hero-products{{position:relative;z-index:3;width:48%;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 5% 12px 0}}
+            .hero-product{{width:29%;max-width:145px;text-decoration:none;color:#123c28;background:#fff;border:2px solid rgba(255,255,255,.75);border-radius:18px;padding:7px;box-shadow:0 12px 28px rgba(0,0,0,.18);transform:rotate(-2deg)}}
+            .hero-product:nth-child(2){{transform:translateY(-8px) rotate(2deg)}}.hero-product:nth-child(3){{transform:rotate(4deg)}}
+            .hero-product img{{width:100%;height:115px;object-fit:contain;border-radius:12px;background:#f7faf8}}
+            .hero-product span{{display:block;font-size:8px;line-height:10px;font-weight:800;margin:6px 2px 2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
+            .asm-hero-nav{{position:absolute;z-index:6;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.18);color:#fff;backdrop-filter:blur(5px)}}
+            .asm-hero-nav.left{{left:10px}}.asm-hero-nav.right{{right:10px}}
+            .asm-hero-dots{{position:absolute;z-index:6;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:5px}}
+            .asm-hero-dots button{{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.45);padding:0}}.asm-hero-dots button.active{{background:#f3c542;transform:scale(1.25)}}
+            @media(max-width:767px){{.asm-hero,.asm-hero-slide{{min-height:230px}}.hero-copy{{width:58%;padding:18px 7px 20px 18px}}.hero-copy h2{{font-size:23px}}.hero-copy p{{font-size:9px;max-width:220px}}.hero-badges span{{font-size:7px;padding:4px 5px}}.hero-cta{{font-size:8px;padding:8px 10px}}.hero-products{{width:42%;gap:4px;padding-right:8px}}.hero-product{{width:45%;padding:4px;border-radius:11px}}.hero-product:nth-child(3){{display:none}}.hero-product img{{height:82px}}.hero-product span{{font-size:7px;line-height:8px;margin-top:4px}}.hero-topline{{font-size:7px;letter-spacing:1px}}.pk-flag{{width:22px;height:15px}}.pk-flag:after{{height:15px;left:6px;width:16px}}.pk-flag:before{{height:15px}}.pk-flag i{{left:11px;top:3px;width:7px;height:7px}}.pk-flag b{{left:14px;top:2px;width:5px;height:5px}}}}
+            </style>
             <script>
-                let slideIndex = 0;
-                const slides = document.querySelectorAll('.carousel-slide');
-                const dotsContainer = document.getElementById('carouselDots');
-                
-                slides.forEach((_, i) => {
-                    dotsContainer.innerHTML += `<button onclick="goToSlide(${i})" class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-gray-400 hover:bg-gray-800 transition focus:outline-none shadow-sm" aria-label="Go to slide ${i + 1}"></button>`;
-                });
-                
-                function updateCarousel() {
-                    document.querySelector('.carousel-track').style.transform = `translateX(-${slideIndex * 100}%)`;
-                    slides.forEach((slide, i) => {
-                        slide.setAttribute('aria-hidden', i === slideIndex ? 'false' : 'true');
-                    });
-                    document.querySelectorAll('#carouselDots button').forEach((dot, i) => {
-                        dot.className = `w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition shadow-sm ${i === slideIndex ? 'bg-gray-800 scale-125' : 'bg-gray-400 hover:bg-gray-600'}`;
-                    });
-                }
-                
-                function nextSlide() { slideIndex = (slideIndex + 1) % slides.length; updateCarousel(); }
-                function prevSlide() { slideIndex = (slideIndex - 1 + slides.length) % slides.length; updateCarousel(); }
-                function goToSlide(i) { slideIndex = i; updateCarousel(); }
-                
-                updateCarousel();
-                let slideTimer = setInterval(nextSlide, 5000);
-                
-                document.getElementById('heroCarousel').addEventListener('mouseenter', () => clearInterval(slideTimer));
-                document.getElementById('heroCarousel').addEventListener('mouseleave', () => slideTimer = setInterval(nextSlide, 5000));
+            (function(){{const root=document.getElementById('heroCarousel');if(!root)return;const track=root.querySelector('.asm-hero-track');const slides=[...root.querySelectorAll('.asm-hero-slide')];const dots=document.getElementById('asmHeroDots');let i=0,timer;slides.forEach((_,n)=>{{const b=document.createElement('button');b.type='button';b.onclick=()=>go(n);dots.appendChild(b);}});function paint(){{track.style.transform='translate3d(-'+(i*100)+'%,0,0)';slides.forEach((sl,n)=>sl.setAttribute('aria-hidden',n===i?'false':'true'));dots.querySelectorAll('button').forEach((b,n)=>b.classList.toggle('active',n===i));}}function go(n){{i=(n+slides.length)%slides.length;paint();}}window.asmHeroNext=()=>go(i+1);window.asmHeroPrev=()=>go(i-1);function start(){{clearInterval(timer);timer=setInterval(()=>go(i+1),6000)}}paint();start();root.addEventListener('mouseenter',()=>clearInterval(timer));root.addEventListener('mouseleave',start);}})();
             </script>
-            """
+            '''
 
             home_html += """
             <div class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 py-6">
@@ -3443,11 +3433,17 @@ def process_woocommerce_csv():
                     safe=html_lib.escape(str(p.get('name',''))); img=html_lib.escape(str(p.get('image','')),quote=True); slug=p.get('slug',''); base=float(p.get('catalog_base_price') or p.get('final_price') or 0); flash_price=round(base*1.40+100)
                     flash_cards.append(f'<a href="/product/{slug}.html" class="flash-ring-item"><span class="flash-ring-image"><img src="{img}" alt="{safe}" loading="lazy" decoding="async"></span><span class="flash-ring-name">{safe}</span><span class="flash-ring-price">Rs {flash_price:,}</span></a>')
                 cards=''.join(flash_cards)
-                home_html += f'''<section class="flash-sale-section" aria-label="Flash Sale"><div class="container mx-auto px-4"><div class="flash-sale-heading"><div><h2>⚡ Flash Sale <span class="free-delivery-tag">Free Home Delivery</span></h2><p>Pick any 3 items and get free home delivery</p></div><span>20 EACH CATEGORY</span></div><div class="flash-ring-viewport"><div class="flash-ring-track"><div class="flash-ring-group">{cards}</div><div class="flash-ring-group" aria-hidden="true">{cards}</div></div></div></div></section><style>.flash-sale-section{{margin-top:18px;padding:16px 0 18px;background:linear-gradient(180deg,#fff,#f7fbf8);border-top:1px solid #e3eee7;border-bottom:1px solid #e3eee7;overflow:hidden}}.flash-sale-heading{{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}}.flash-sale-heading h2{{margin:0;font-size:22px;font-weight:900;color:#111827}}.free-delivery-tag{{font-size:11px;background:#fff4c2;color:#087443;border:1px solid #e6d26b;padding:5px 9px;border-radius:999px;vertical-align:middle;margin-left:5px}}.flash-sale-heading p{{margin:6px 0 0;font-size:11px;color:#667085}}.flash-sale-heading>span{{font-size:9px;font-weight:900;letter-spacing:1px;color:#087443;border:1px solid #b9d8c5;border-radius:999px;padding:6px 9px}}.flash-ring-viewport{{width:100%;overflow:hidden}}.flash-ring-track{{display:flex;width:max-content;animation:asmFlashRing 65s linear infinite;will-change:transform}}.flash-ring-group{{display:flex;gap:14px;padding-right:14px;flex:none}}.flash-ring-item{{width:88px;min-width:88px;display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:inherit}}.flash-ring-image{{width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;border:2px solid #e5eee8;box-shadow:0 3px 10px rgba(0,0,0,.08);overflow:hidden}}.flash-ring-image img{{width:100%;height:100%;object-fit:contain;padding:7px}}.flash-ring-name{{width:100%;margin-top:7px;font-size:10px;line-height:12px;font-weight:700;color:#374151;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}.flash-ring-price{{margin-top:3px;font-size:11px;font-weight:900;color:#087443;white-space:nowrap}}@keyframes asmFlashRing{{from{{transform:translate3d(0,0,0)}}to{{transform:translate3d(-50%,0,0)}}}}@media(min-width:768px){{.flash-ring-item{{width:104px;min-width:104px}}.flash-ring-image{{width:82px;height:82px}}}}@media(prefers-reduced-motion:reduce){{.flash-ring-track{{animation:none;overflow-x:auto}}}}</style>'''
+                home_html += f'''<section class="flash-sale-section" aria-label="Flash Sale"><div class="container mx-auto px-4"><div class="flash-sale-heading"><div><h2>⚡ Flash Sale <span class="free-delivery-tag">Free Home Delivery</span></h2><p>Pick any 3 items from Flash Sale and get free home delivery</p></div><div class="flash-actions"><span>UNDER RS 1,500</span><a href="/flash-sale.html" class="flash-view-all">View All <i class="fas fa-arrow-right"></i></a></div></div><div class="flash-ring-viewport"><div class="flash-ring-track"><div class="flash-ring-group">{cards}</div><div class="flash-ring-group" aria-hidden="true">{cards}</div></div></div></div></section><style>.flash-sale-section{{margin-top:18px;padding:16px 0 18px;background:linear-gradient(180deg,#fff,#f7fbf8);border-top:1px solid #e3eee7;border-bottom:1px solid #e3eee7;overflow:hidden}}.flash-sale-heading{{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}}.flash-sale-heading h2{{margin:0;font-size:22px;font-weight:900;color:#111827}}.free-delivery-tag{{font-size:11px;background:#fff4c2;color:#087443;border:1px solid #e6d26b;padding:5px 9px;border-radius:999px;vertical-align:middle;margin-left:5px}}.flash-sale-heading p{{margin:6px 0 0;font-size:11px;color:#667085}}.flash-actions{{display:flex;align-items:center;gap:7px;flex-shrink:0}}.flash-actions>span{{font-size:9px;font-weight:900;letter-spacing:1px;color:#087443;border:1px solid #b9d8c5;border-radius:999px;padding:6px 9px}}.flash-view-all{{font-size:10px;font-weight:900;background:#087443;color:#fff;padding:7px 11px;border-radius:999px;text-decoration:none;white-space:nowrap}}.flash-ring-viewport{{width:100%;overflow:hidden}}.flash-ring-track{{display:flex;width:max-content;animation:asmFlashRing 75s linear infinite;will-change:transform}}.flash-ring-group{{display:flex;gap:14px;padding-right:14px;flex:none}}.flash-ring-item{{width:88px;min-width:88px;display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:inherit}}.flash-ring-image{{width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;border:2px solid #e5eee8;box-shadow:0 3px 10px rgba(0,0,0,.08);overflow:hidden}}.flash-ring-image img{{width:100%;height:100%;object-fit:contain;padding:7px}}.flash-ring-name{{width:100%;margin-top:7px;font-size:10px;line-height:12px;font-weight:700;color:#374151;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}.flash-ring-price{{margin-top:3px;font-size:11px;font-weight:900;color:#087443;white-space:nowrap}}@keyframes asmFlashRing{{from{{transform:translate3d(0,0,0)}}to{{transform:translate3d(-50%,0,0)}}}}@media(max-width:767px){{.flash-sale-heading{{align-items:flex-start}}.flash-sale-heading h2{{font-size:18px}}.flash-actions{{flex-direction:column;align-items:flex-end}}.flash-actions>span{{display:none}}.flash-view-all{{font-size:9px;padding:6px 9px}}}}@media(min-width:768px){{.flash-ring-item{{width:104px;min-width:104px}}.flash-ring-image{{width:82px;height:82px}}}}@media(prefers-reduced-motion:reduce){{.flash-ring-track{{animation:none;overflow-x:auto}}}}</style>'''
             promo_data=[("Electronics Deals","Smart gadgets & everyday tech","Electronics","https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1000&q=85"),("Fashion Edit","Fresh styles for Pakistan","Fashion","https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=85"),("Beauty Deals","Beauty & personal care picks","Beauty & Personal Care","https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85"),("Better Home","Kitchen, decor & daily essentials","Home & Kitchen","https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=85")]
             promo_cards=[]
-            for title,sub,cat,img in promo_data: promo_cards.append(f'<div class="promo-card"><img src="{img}" alt="{html_lib.escape(title)}" loading="lazy"><div class="promo-overlay"><span>{html_lib.escape(sub)}</span><h3>{html_lib.escape(title)}</h3><a href="/category/{category_slug(cat)}.html">Shop Now <i class="fas fa-arrow-right"></i></a></div></div>')
-            home_html += '<section class="container mx-auto px-4 py-8"><div class="promo-grid">'+''.join(promo_cards)+'</div></section><style>.promo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.promo-card{height:190px;border-radius:20px;overflow:hidden;position:relative;background:#0a4d31}.promo-card img{width:100%;height:100%;object-fit:cover}.promo-overlay{position:absolute;inset:auto 0 0;padding:28px 18px 16px;background:linear-gradient(transparent,rgba(2,35,20,.92));color:#fff}.promo-overlay span{font-size:10px;font-weight:700}.promo-overlay h3{font-size:21px;font-weight:900;margin:3px 0 9px}.promo-overlay a{display:inline-flex;gap:6px;background:#f4c542;color:#123c28;padding:7px 12px;border-radius:999px;font-size:11px;font-weight:900}@media(max-width:767px){.promo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.promo-card{height:150px}.promo-overlay{padding:20px 10px 10px}.promo-overlay h3{font-size:15px}.promo-overlay span{font-size:8px}.promo-overlay a{font-size:9px;padding:6px 9px}}</style>'
+            for title,sub,cat,img in promo_data:
+                words=[w.lower() for w in cat.split()] + [cat.lower()]
+                cands=hero_products(words,3)
+                if not cands: cands=[pp for pp in products_list if pp.get('image') and pp.get('slug')][:3]
+                mini=''.join(f'<a href="/product/{pp.get("slug")}.html" class="promo-product"><img src="{html_lib.escape(str(pp.get("image","")),quote=True)}" alt="{html_lib.escape(str(pp.get("name","")))}" loading="lazy"></a>' for pp in cands)
+                promo_href=f'/category/{category_slug(cat)}.html' if hero_products(words,1) else '/categories.html'
+                promo_cards.append(f'<div class="promo-card"><img class="promo-bg" src="{img}" alt="{html_lib.escape(title)}" loading="lazy"><div class="promo-flag">PAKISTAN</div><div class="promo-product-row">{mini}</div><div class="promo-overlay"><span>{html_lib.escape(sub)}</span><h3>{html_lib.escape(title)}</h3><a href="{promo_href}">Shop Now <i class="fas fa-arrow-right"></i></a></div></div>')
+            home_html += '<section class="container mx-auto px-4 py-8"><div class="promo-grid">'+''.join(promo_cards)+'</div></section><style>.promo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.promo-card{height:210px;border-radius:20px;overflow:hidden;position:relative;background:#0a4d31;border:1px solid #d7e8dd;box-shadow:0 8px 25px rgba(6,92,53,.09)}.promo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.88)}.promo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,48,30,.05),rgba(2,35,20,.88))}.promo-flag{position:absolute;z-index:3;top:10px;left:10px;background:#fff;color:#087443;font-size:8px;font-weight:950;padding:5px 8px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.14)}.promo-flag:before{content:"";display:inline-block;width:12px;height:8px;background:#087443;margin-right:4px;vertical-align:-1px;box-shadow:inset 3px 0 #fff}.promo-product-row{position:absolute;z-index:3;right:10px;top:10px;display:flex;gap:4px}.promo-product{width:38px;height:38px;border-radius:10px;background:#fff;padding:3px;box-shadow:0 3px 10px rgba(0,0,0,.18);display:block}.promo-product img{width:100%;height:100%;object-fit:contain;border-radius:7px}.promo-overlay{position:absolute;z-index:4;inset:auto 0 0;padding:46px 15px 13px;background:linear-gradient(transparent,rgba(2,35,20,.96));color:#fff}.promo-overlay span{font-size:9px;font-weight:800}.promo-overlay h3{font-size:20px;font-weight:950;margin:3px 0 8px}.promo-overlay a{display:inline-flex;gap:6px;background:#f4c542;color:#123c28;padding:7px 12px;border-radius:999px;font-size:10px;font-weight:950}@media(max-width:767px){.promo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.promo-card{height:165px;border-radius:15px}.promo-product-row{right:7px;top:7px}.promo-product{width:29px;height:29px}.promo-flag{top:7px;left:7px;font-size:7px;padding:4px 6px}.promo-overlay{padding:34px 9px 9px}.promo-overlay h3{font-size:14px}.promo-overlay span{font-size:7px}.promo-overlay a{font-size:8px;padding:6px 9px}}</style>'
             best_candidates=[]
             def best_score(p):
                 try: reg=float(p.get('regular_price') or 0); fin=float(p.get('final_price') or 0); disc=((reg-fin)/reg*100) if reg>fin>0 else 0
@@ -3467,7 +3463,7 @@ def process_woocommerce_csv():
             for cname,p in best_mix:
                 safe=html_lib.escape(str(p.get('name','')));img=html_lib.escape(str(p.get('image','')),quote=True);slug=p.get('slug','')
                 best_cards.append(f'<a href="/product/{slug}.html" class="best-item"><div class="best-image"><img src="{img}" alt="{safe}" loading="lazy"></div><span class="best-cat">{html_lib.escape(cname)}</span><span class="best-name">{safe}</span><strong>Rs {float(p.get("final_price") or 0):,.0f}</strong></a>')
-            home_html += '<section class="container mx-auto px-4 py-8"><div class="section-head"><div><p>TOP PICKS</p><h2>Best Sellers</h2></div><span>80 MIXED PRODUCTS</span></div><div class="best-viewport"><div class="best-track"><div class="best-group">'+''.join(best_cards)+'</div><div class="best-group" aria-hidden="true">'+''.join(best_cards)+'</div></div></div></section><style>.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}.section-head p{font-size:10px;letter-spacing:2px;font-weight:900;color:#087443;margin:0}.section-head h2{font-size:28px;font-weight:900;margin:2px 0 0;color:#101828}.section-head>span{font-size:9px;font-weight:900;color:#087443;border:1px solid #cfe1d5;border-radius:999px;padding:6px 9px}.best-viewport{overflow:hidden;width:100%}.best-track{display:flex;width:max-content;animation:asmBest 70s linear infinite;will-change:transform}.best-group{display:flex;gap:12px;padding-right:12px}.best-item{width:150px;min-width:150px;background:#fff;border:1px solid #e4eee8;border-radius:16px;padding:10px;text-decoration:none;color:#101828}.best-image{height:120px;border-radius:12px;background:#f7faf8;display:flex;align-items:center;justify-content:center;overflow:hidden}.best-image img{width:100%;height:100%;object-fit:contain;padding:7px}.best-cat{display:block;font-size:8px;font-weight:900;color:#087443;text-transform:uppercase;margin-top:8px}.best-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;line-height:14px;font-weight:700;height:28px;margin-top:3px}.best-item strong{display:block;color:#087443;font-size:13px;margin-top:6px}@keyframes asmBest{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}@media(max-width:767px){.section-head h2{font-size:22px}.best-item{width:120px;min-width:120px}.best-image{height:95px}.best-group{gap:9px}.best-track{animation-duration:55s}}@media(prefers-reduced-motion:reduce){.best-track{animation:none;overflow-x:auto}}</style>'
+            home_html += '<section class="container mx-auto px-4 py-8"><div class="section-head"><div><p>TOP PICKS</p><h2>Best Sellers</h2></div><span>80 MIXED PRODUCTS</span></div><div class="best-viewport"><div class="best-track"><div class="best-group">'+''.join(best_cards)+'</div><div class="best-group" aria-hidden="true">'+''.join(best_cards)+'</div></div></div></section><style>.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}.section-head p{font-size:10px;letter-spacing:2px;font-weight:900;color:#087443;margin:0}.section-head h2{font-size:28px;font-weight:900;margin:2px 0 0;color:#101828}.section-head>span{font-size:9px;font-weight:900;color:#087443;border:1px solid #cfe1d5;border-radius:999px;padding:6px 9px}.best-viewport{overflow:hidden;width:100%}.best-track{display:flex;width:max-content;animation:asmBest 150s linear infinite;will-change:transform}.best-group{display:flex;gap:12px;padding-right:12px}.best-item{width:150px;min-width:150px;background:#fff;border:1px solid #e4eee8;border-radius:16px;padding:10px;text-decoration:none;color:#101828}.best-image{height:120px;border-radius:12px;background:#f7faf8;display:flex;align-items:center;justify-content:center;overflow:hidden}.best-image img{width:100%;height:100%;object-fit:contain;padding:7px}.best-cat{display:block;font-size:8px;font-weight:900;color:#087443;text-transform:uppercase;margin-top:8px}.best-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;line-height:14px;font-weight:700;height:28px;margin-top:3px}.best-item strong{display:block;color:#087443;font-size:13px;margin-top:6px}@keyframes asmBest{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}@media(max-width:767px){.section-head h2{font-size:22px}.best-item{width:120px;min-width:120px}.best-image{height:95px}.best-group{gap:9px}.best-track{animation-duration:120s}}@media(prefers-reduced-motion:reduce){.best-track{animation:none;overflow-x:auto}}</style>'
 
             home_html += """
             <div class="container mx-auto px-4 py-6">
@@ -3670,6 +3666,26 @@ def process_woocommerce_csv():
         file_name = "index.html" if h_page == 1 else f"index-{h_page}.html"
         with open(f"output/{file_name}", "w", encoding="utf-8") as f:
             f.write(minify_html(home_html))
+    # ================= FULL FLASH SALE PAGE =================
+    flash_all=[]; flash_seen=set()
+    for pp in products_list:
+        base=float(pp.get('catalog_base_price') or pp.get('final_price') or 0)
+        if 0<base<=1500 and pp.get('image') and pp.get('slug') and pp.get('slug') not in flash_seen:
+            flash_all.append(pp); flash_seen.add(pp.get('slug'))
+    flash_all.sort(key=lambda x:(float(x.get('catalog_base_price') or 0), str(x.get('name','')).lower()))
+    flash_cards_full=[]
+    for pp in flash_all:
+        nm=html_lib.escape(str(pp.get('name',''))); img=html_lib.escape(str(pp.get('image','')),quote=True); slug=html_lib.escape(str(pp.get('slug','')),quote=True)
+        base=float(pp.get('catalog_base_price') or pp.get('final_price') or 0); fp=round(base*1.40+100)
+        flash_cards_full.append(f'''<article class="flash-select-card" data-name="{nm}" data-price="{fp}" data-image="{img}" data-slug="{slug}"><label><input type="checkbox" class="flash-check"><span class="flash-checkmark"><i class="fas fa-check"></i></span><span class="flash-select-image"><img src="{img}" alt="{nm}" loading="lazy" decoding="async"></span><span class="flash-select-name">{nm}</span><strong>Rs {fp:,}</strong></label></article>''')
+    flash_html=get_html_header('Flash Sale Under Rs 1,500 | ASM VEO',categories_list,'Select any 3 eligible Flash Sale products and get free home delivery.',custom_canonical=f'{SITE_URL}/flash-sale.html')
+    flash_html += f'''<main class="container mx-auto px-4 py-8 max-w-7xl"><div class="flash-page-head"><div><p>⚡ ASM VEO PAKISTAN</p><h1>Flash Sale</h1><h2>Products under Rs 1,500</h2><span>Select any 3 products → free home delivery</span></div><div class="flash-selection-box"><b id="flashCount">0 / 3 selected</b><button id="flashCheckoutBtn" type="button" disabled>Select 3 & Checkout</button></div></div><div id="flashGrid" class="flash-select-grid">{"".join(flash_cards_full) if flash_cards_full else '<p class="text-gray-500">No Flash Sale products are currently available.</p>'}</div></main><style>.flash-page-head{{display:flex;justify-content:space-between;gap:18px;align-items:center;background:linear-gradient(120deg,#063d27,#087443);color:#fff;border-radius:22px;padding:22px;margin-bottom:22px;border-bottom:4px solid #f3c542}}.flash-page-head p{{margin:0 0 4px;font-size:9px;font-weight:950;letter-spacing:2px;color:#f4d56d}}.flash-page-head h1{{font-size:34px;line-height:1;font-weight:950;margin:0}}.flash-page-head h2{{font-size:17px;font-weight:900;margin:4px 0}}.flash-page-head span{{font-size:10px;color:#e7f5ee;font-weight:700}}.flash-selection-box{{background:#fff;color:#123c28;border-radius:16px;padding:12px;min-width:190px;text-align:center}}.flash-selection-box b{{display:block;font-size:13px;margin-bottom:8px}}.flash-selection-box button{{width:100%;border:0;background:#f4c542;color:#123c28;padding:9px 11px;border-radius:999px;font-size:10px;font-weight:950;cursor:pointer}}.flash-selection-box button:disabled{{opacity:.45;cursor:not-allowed}}.flash-select-grid{{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}}.flash-select-card{{background:#fff;border:1px solid #e1ebe5;border-radius:15px;padding:8px;position:relative;transition:border-color .15s,box-shadow .15s}}.flash-select-card.selected{{border-color:#087443;box-shadow:0 0 0 2px rgba(8,116,67,.12)}}.flash-select-card label{{display:block;cursor:pointer}}.flash-check{{position:absolute;opacity:0;pointer-events:none}}.flash-checkmark{{position:absolute;right:8px;top:8px;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#eef5f1;color:#087443;font-size:9px;z-index:2}}.flash-select-card.selected .flash-checkmark{{background:#087443;color:#fff}}.flash-select-image{{display:block;height:145px;background:#f8faf9;border-radius:11px;overflow:hidden}}.flash-select-image img{{width:100%;height:100%;object-fit:contain;padding:8px}}.flash-select-name{{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;height:30px;font-size:10px;line-height:15px;font-weight:800;color:#24332b;margin-top:7px}}.flash-select-card strong{{display:block;color:#087443;font-size:13px;margin-top:5px}}@media(max-width:1024px){{.flash-select-grid{{grid-template-columns:repeat(4,minmax(0,1fr))}}}}@media(max-width:767px){{.flash-page-head{{padding:16px;border-radius:16px;align-items:flex-start}}.flash-page-head h1{{font-size:26px}}.flash-page-head h2{{font-size:14px}}.flash-selection-box{{min-width:130px;padding:9px}}.flash-selection-box b{{font-size:10px}}.flash-select-grid{{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}}.flash-select-image{{height:100px}}.flash-select-name{{font-size:9px;line-height:12px;height:24px}}.flash-select-card strong{{font-size:11px}}}}</style><script>
+(function(){{const cards=[...document.querySelectorAll('.flash-select-card')],count=document.getElementById('flashCount'),btn=document.getElementById('flashCheckoutBtn');function selected(){{return cards.filter(c=>c.querySelector('.flash-check').checked)}}function paint(){{const a=selected();count.textContent=a.length+' / 3 selected';btn.disabled=a.length!==3;cards.forEach(c=>c.classList.toggle('selected',c.querySelector('.flash-check').checked));}}cards.forEach(card=>{{const cb=card.querySelector('.flash-check');cb.addEventListener('change',()=>{{if(cb.checked&&selected().length>3){{cb.checked=false;showToast('Only 3 Flash Sale products can be selected.','fa-bolt','red')}}paint()}})}});btn.addEventListener('click',()=>{{const a=selected();if(a.length!==3)return;addFlashSelection(a.map(c=>({{name:c.dataset.name,price:c.dataset.price,image:c.dataset.image,slug:c.dataset.slug}})))}});paint()}})();
+</script>'''
+    flash_html += get_html_footer()
+    Path('output/flash-sale.html').write_text(minify_html(flash_html),encoding='utf-8')
+    sitemap_urls.append(f'{SITE_URL}/flash-sale.html')
+
         # ================= CHECKOUT PAGE =================
     print("🛒 Generating Checkout Page...")
     pak_tehsils = [
@@ -3718,6 +3734,7 @@ def process_woocommerce_csv():
         <h1 class="text-3xl font-extrabold text-[#087443] dark:text-white mb-8 flex items-center gap-3">
             <i class="fas fa-lock text-[#087443]" aria-hidden="true"></i> Secure Checkout
         </h1>
+        <div id="flashDeliveryNote" class="hidden mb-5 bg-green-50 border border-green-200 text-[#087443] rounded-xl px-4 py-3 text-sm font-bold"></div>
         
         <div class="flex items-center justify-center mb-10">
             <div class="flex items-center text-[#087443] font-bold">
@@ -3906,7 +3923,7 @@ function normalizeCheckoutItem(i){
     const price=Number(i.price);
     const qty=Math.max(1,parseInt(i.qty,10)||1);
     if(!name || !Number.isFinite(price) || price<=0)return null;
-    return {name,price,image:String(i.image||''),slug:String(i.slug||''),qty};
+    return {name,price,image:String(i.image||''),slug:String(i.slug||''),qty,bundleDiscount:Math.max(0,Number(i.bundleDiscount)||0),flashEligible:i.flashEligible===true};
 }
 function getCheckoutItems(){
     const u=new URLSearchParams(location.search);
@@ -3927,7 +3944,7 @@ function updateDeliveryEstimate(){
     const city=document.getElementById('citySelect')?.value||'';
     const z=getDeliveryInfo(city);
     const n=document.getElementById('deliveryEstimate');
-    if(n)n.textContent=city?('Estimated delivery: '+z.min+'-'+z.max+' working days • Rs '+z.charge):'Select your city for delivery estimate';
+    if(n)n.textContent=city?(buildCheckoutTotals().delivery===0?'Free home delivery unlocked • Estimated '+z.min+'-'+z.max+' working days':'Estimated delivery: '+z.min+'-'+z.max+' working days • Rs '+z.charge):'Select your city for delivery estimate';
     renderCart();
 }
 function togglePaymentDetails(){
@@ -3952,9 +3969,15 @@ function buildCheckoutTotals(){
     const city=document.getElementById('citySelect')?.value||'';
     const z=getDeliveryInfo(city);
     const subtotal=items.reduce((s,i)=>s+(Number(i.price)||0)*(Number(i.qty)||1),0);
-    const bundleDiscount=items.reduce((sum,i)=>sum+Math.min(Number(i.bundleDiscount||0),Math.max(0,(Number(i.price)||0)*(Number(i.qty)||1))),0); const couponDiscount=couponApplied?Math.floor(Math.max(0,subtotal-bundleDiscount)*.05):0; const eligibleQty=items.filter(i=>Number(i.price||0)>0&&Number(i.price||0)<=1500).reduce((sum,i)=>sum+(Number(i.qty)||1),0); const freeThree=eligibleQty>=3; const highValueFour=items.some(i=>Number(i.price||0)>3500&&Number(i.qty||1)>=4); const discount=bundleDiscount+couponDiscount;
-    const total=Math.max(0,subtotal-discount+z.charge);
-    return {items,city,delivery:effectiveDelivery,subtotal,discount,total,payment:document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery'};
+    const bundleDiscount=items.reduce((sum,i)=>sum+Math.min(Number(i.bundleDiscount||0),Math.max(0,(Number(i.price)||0)*(Number(i.qty)||1))),0);
+    const couponDiscount=couponApplied?Math.floor(Math.max(0,subtotal-bundleDiscount)*.05):0;
+    const flashEligibleQty=items.filter(i=>i.flashEligible===true).reduce((sum,i)=>sum+(Number(i.qty)||1),0);
+    const freeThree=flashEligibleQty>=3;
+    const highValueFour=items.some(i=>Number(i.price||0)>3500&&Number(i.qty||1)>=4);
+    const effectiveDelivery=(freeThree||highValueFour)?0:z.charge;
+    const discount=bundleDiscount+couponDiscount;
+    const total=Math.max(0,subtotal-discount+effectiveDelivery);
+    return {items,city,delivery:effectiveDelivery,subtotal,discount,total,payment:document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery',freeThree,highValueFour,flashEligibleQty};
 }
 function updateCheckoutWhatsApp(){
     const t=buildCheckoutTotals();
@@ -3989,6 +4012,8 @@ function renderCart(){
         });
     }
     const subEl=document.getElementById('subtotalDisplay'),delEl=document.getElementById('deliveryDisplay'),totalEl=document.getElementById('grandTotalDisplay'),discRow=document.getElementById('discountRow'),discEl=document.getElementById('discountDisplay');
+    const flashNote=document.getElementById('flashDeliveryNote');
+    if(flashNote){{flashNote.classList.toggle('hidden',!(t.freeThree||t.highValueFour));flashNote.textContent=t.freeThree?'Flash Sale: 3 selected products qualify for free home delivery.':'Free delivery unlocked for the eligible bundle.';}}
     if(subEl)subEl.innerText='Rs '+t.subtotal;
     if(delEl)delEl.innerText='Rs '+t.delivery;
     if(totalEl)totalEl.innerText='Rs '+t.total;
