@@ -255,7 +255,7 @@ if (existing) {
 existing.qty = (existing.qty || 1) + 1;
 }
 else {
-cart.push({name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:1,bundleDiscount:0});
+cart.push({name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:1,bundleDiscount:0,flashEligible:false});
 }
 saveCart(cart);
 showToast('Added to Cart!', 'fa-cart-plus', 'pk');
@@ -265,8 +265,23 @@ function addBundleToCart(name, price, image, slug, qty, saving) {
 let cart=getCart();
 let existing=cart.find(item=>item.name===name);
 if(existing) { existing.qty=Math.max(existing.qty||1, qty); existing.bundleDiscount=Math.max(existing.bundleDiscount||0, saving||0); }
-else { cart.push({name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:qty,bundleDiscount:parseFloat(saving)||0}); }
+else { cart.push({name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:qty,bundleDiscount:parseFloat(saving)||0,flashEligible:false}); }
 saveCart(cart); showToast(qty+' item bundle added — save Rs '+(saving||0), 'fa-tags', 'pk'); pulseCartIcon();
+}
+function addFlashSelection(items){
+const selected=Array.isArray(items)?items:[];
+if(selected.length!==3){showToast('Please select exactly 3 Flash Sale products.','fa-bolt','red');return false;}
+let cart=getCart();
+selected.forEach(i=>{
+const name=String(i.name||'').trim(), price=Number(i.price)||0;
+if(!name||price<=0)return;
+const existing=cart.find(x=>x.slug&&i.slug&&x.slug===i.slug);
+if(existing){existing.qty=(existing.qty||1)+1;existing.flashEligible=true;}
+else{cart.push({name,price,image:String(i.image||''),slug:String(i.slug||''),qty:1,bundleDiscount:0,flashEligible:true});}
+});
+saveCart(cart); showToast('3 Flash Sale products added — free delivery unlocked.','fa-truck-fast','pk');
+window.location.href='/checkout.html?flash_bundle=true';
+return true;
 }
 function removeFromCart(index) {
 let cart = getCart();
