@@ -271,13 +271,11 @@ saveCart(cart); showToast(qty+' item bundle added — save Rs '+(saving||0), 'fa
 function addFlashSelection(items){
 const selected=Array.isArray(items)?items:[];
 if(selected.length!==3){showToast('Please select exactly 3 Flash Sale products.','fa-bolt','red');return false;}
-let cart=getCart();
+let cart=getCart().filter(x=>x.flashEligible!==true);
 selected.forEach(i=>{
 const name=String(i.name||'').trim(), price=Number(i.price)||0;
 if(!name||price<=0)return;
-const existing=cart.find(x=>x.slug&&i.slug&&x.slug===i.slug);
-if(existing){existing.qty=(existing.qty||1)+1;existing.flashEligible=true;}
-else{cart.push({name,price,image:String(i.image||''),slug:String(i.slug||''),qty:1,bundleDiscount:0,flashEligible:true});}
+cart.push({name,price,image:String(i.image||''),slug:String(i.slug||''),qty:1,bundleDiscount:0,flashEligible:true});
 });
 saveCart(cart); showToast('3 Flash Sale products added — free delivery unlocked.','fa-truck-fast','pk');
 window.location.href='/checkout.html?flash_bundle=true';

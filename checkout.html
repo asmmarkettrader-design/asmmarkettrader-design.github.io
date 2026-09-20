@@ -271,13 +271,11 @@ saveCart(cart); showToast(qty+' item bundle added — save Rs '+(saving||0), 'fa
 function addFlashSelection(items){
 const selected=Array.isArray(items)?items:[];
 if(selected.length!==3){showToast('Please select exactly 3 Flash Sale products.','fa-bolt','red');return false;}
-let cart=getCart();
+let cart=getCart().filter(x=>x.flashEligible!==true);
 selected.forEach(i=>{
 const name=String(i.name||'').trim(), price=Number(i.price)||0;
 if(!name||price<=0)return;
-const existing=cart.find(x=>x.slug&&i.slug&&x.slug===i.slug);
-if(existing){existing.qty=(existing.qty||1)+1;existing.flashEligible=true;}
-else{cart.push({name,price,image:String(i.image||''),slug:String(i.slug||''),qty:1,bundleDiscount:0,flashEligible:true});}
+cart.push({name,price,image:String(i.image||''),slug:String(i.slug||''),qty:1,bundleDiscount:0,flashEligible:true});
 });
 saveCart(cart); showToast('3 Flash Sale products added — free delivery unlocked.','fa-truck-fast','pk');
 window.location.href='/checkout.html?flash_bundle=true';
@@ -660,7 +658,7 @@ const subtotal=items.reduce((s,i)=>s+(Number(i.price)||0)*(Number(i.qty)||1),0);
 const bundleDiscount=items.reduce((sum,i)=>sum+Math.min(Number(i.bundleDiscount||0),Math.max(0,(Number(i.price)||0)*(Number(i.qty)||1))),0);
 const couponDiscount=couponApplied?Math.floor(Math.max(0,subtotal-bundleDiscount)*.05):0;
 const flashEligibleQty=items.filter(i=>i.flashEligible===true).reduce((sum,i)=>sum+(Number(i.qty)||1),0);
-const freeThree=flashEligibleQty>=3;
+const freeThree=flashEligibleQty===3;
 const highValueFour=items.some(i=>Number(i.price||0)>3500&&Number(i.qty||1)>=4);
 const effectiveDelivery=(freeThree||highValueFour)?0:z.charge;
 const discount=bundleDiscount+couponDiscount;
