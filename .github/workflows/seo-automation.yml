@@ -1,14 +1,14 @@
 name: ASM VEO Auto SEO & Deployment
 
 on:
-  # یہ کمانڈ ہر روز رات 12 بجے (UTC) سکرپٹ کو خود بخود چلائے گی
+  # Daily build at 00:00 UTC
   schedule:
     - cron: '0 0 * * *'
-  # یہ کمانڈ آپ کو گٹ ہب پر بٹن دبا کر مینوئل (Manual) سکرپٹ چلانے کی سہولت دے گی
-  workflow_dispatch: 
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
 
 permissions:
-  contents: write # تاکہ نیا کوڈ GitHub Pages پر پش کیا جا سکے
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -16,35 +16,74 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Setup Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies (لائبریریز انسٹال کریں)
+      - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          # ہم گوگل کی APIs اور دیگر ضروری پیکجز انسٹال کر رہے ہیں
           pip install requests beautifulsoup4 google-auth google-auth-httplib2 google-auth-oauthlib google-api-python-client
 
-      - name: Setup GCP Credentials (گوگل کلاؤڈ کی چابی سیٹ کریں)
+      - name: Setup GCP Credentials
         env:
           GCP_KEY: ${{ secrets.GCP_CREDENTIALS }}
         run: |
-          echo "$GCP_KEY" > gcp-key.json
-          export GOOGLE_APPLICATION_CREDENTIALS="gcp-key.json"
+          if [ -n "$GCP_KEY" ]; then
+            printf '%s' "$GCP_KEY" > gcp-key.json
+            echo "GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/gcp-key.json" >> "$GITHUB_ENV"
+          else
+            echo "GCP_CREDENTIALS secret is not configured; continuing without it."
+          fi
 
-      - name: Run Advanced SEO Script (آپ کا پائتھن سکرپٹ چلائیں)
+      - name: Run Advanced SEO Script
+        run: python src/main.py
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: "gcp-key.json"
-        run: |
-          python src/main.py
+          PRODUCT_CSV: woocommerce-products-export.csv
 
-      - name: Deploy to GitHub Pages (ویب سائٹ لائیو کریں)
-        uses: peaceiris/actions-gh-pages@v3
+      # Save the editable master price sheet on the repository's main branch.
+      # actions-gh-pages publishes only ./output to gh-pages; it does NOT commit
+      # files generated in the repository root.
+      - name: Commit product-prices.txt to repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -s product-prices.txt ]; then
+            echo "::error::product-prices.txt was not created or is empty."
+            echo "Check that src/main.py completed its price-sheet writer."
+            exit 1
+          fi
+
+          echo "Price sheet found: $(wc -l < product-prices.txt) lines"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add product-prices.txt
+
+          if git diff --cached --quiet; then
+            echo "product-prices.txt is unchanged; no repository commit needed."
+          else
+            git commit -m "Save ASM VEO product price sheet"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+            echo "product-prices.txt committed to ${GITHUB_REF_NAME}."
+          fi
+
+      - name: Verify Output Price Sheet
+        run: |
+          if [ ! -s output/product-prices.txt ]; then
+            echo "::error::output/product-prices.txt is missing or empty."
+            exit 1
+          fi
+          echo "Output copy verified."
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output  # صرف output فولڈر کی فائلز لائیو ہوں گی۔
-          commit_message: "🚀 Auto-deployed SEO updates, Trending Keywords & fixed broken links"
+          publish_dir: ./output
+          commit_message: "Deploy ASM VEO website"
