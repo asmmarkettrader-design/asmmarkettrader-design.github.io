@@ -2472,130 +2472,210 @@ onAuthStateChanged(auth,u=>{{if(u) status.textContent=(u.emailVerified?'Verified
 
 PRICE_LIST_FILENAME = os.environ.get("PRICE_LIST_FILENAME", "product-prices.txt")
 PRICE_LIST_PATH = Path(PRICE_LIST_FILENAME)
+PRODUCT_PRICE_DIR = Path(os.environ.get("PRODUCT_PRICE_DIR", "product-prices"))
+
+
+def _parse_stock_value(value):
+    value = str(value or "").strip().lower().replace("_", " ")
+    if value in {"in stock", "instock", "yes", "true", "1", "available"}:
+        return True
+    if value in {"out of stock", "outofstock", "no", "false", "0", "unavailable"}:
+        return False
+    return None
+
+
+def _parse_product_control_file(file_path):
+    """Read a single editable product control file (key: value format)."""
+    data = {}
+    try:
+        for raw in Path(file_path).read_text(encoding="utf-8-sig").splitlines():
+            if not raw.strip() or raw.lstrip().startswith("#"):
+                continue
+            if ":" not in raw:
+                continue
+            key, value = raw.split(":", 1)
+            data[key.strip().lower().replace(" ", "_")] = value.strip()
+    except Exception as exc:
+        print(f"⚠️ Could not read product control file {file_path}: {exc}")
+        return None
+    name = data.get("product_name") or data.get("name")
+    pid = data.get("product_id") or data.get("id")
+    slug = data.get("slug")
+    if not (name or pid or slug):
+        return None
+    main_price = get_price(data.get("regular_price") or data.get("main_price") or data.get("price"))
+    sale_price = get_price(data.get("sale_price") or data.get("discount_price"))
+    stock = _parse_stock_value(data.get("stock_status") or data.get("stock"))
+    return {
+        "name": name or "", "id": str(pid or "").strip(), "slug": str(slug or "").strip(),
+        "main_price": float(main_price or sale_price or 0),
+        "discount_price": float(sale_price or main_price or 0),
+        "stock": stock,
+        "meta_title": data.get("meta_title", ""),
+        "meta_description": data.get("meta_description", ""),
+        "description": data.get("description", ""),
+        "brand": data.get("brand", ""), "category": data.get("category", ""),
+        "subcategory": data.get("subcategory", ""), "sku": data.get("sku", ""),
+        "tags": data.get("tags", ""), "attributes": data.get("attributes", ""),
+    }
+
 
 def _parse_price_override_file(path=PRICE_LIST_PATH):
-    """Read the repository-local editable product control sheet.
-    Format: Product Name | Description | Main Price | Discount Price | Stock | Product ID | Slug
-    Legacy 6-column price files are also supported.
-    """
+    """Load legacy master TSV and the newer product-prices/*.txt files."""
     by_id, by_slug, by_name = {}, {}, {}
     csv_hash = ""
-    if not path.exists():
-        return by_id, by_slug, by_name, csv_hash
-    try:
-        with path.open("r", encoding="utf-8") as f:
-            for raw in f:
-                line = raw.rstrip("\r\n")
+
+    def add_record(rec):
+        if not rec:
+            return
+        if rec.get("id"):
+            by_id[str(rec["id"])] = rec
+        if rec.get("slug"):
+            by_slug[str(rec["slug"])] = rec
+        if rec.get("name"):
+            by_name[str(rec["name"]).casefold()] = rec
+
+    if path.exists():
+        try:
+            for raw in path.read_text(encoding="utf-8-sig").splitlines():
+                line = raw.strip("\r\n")
                 if line.startswith("# CSV SHA256:"):
-                    csv_hash = line.split(":", 1)[1].strip(); continue
-                if not line.strip() or line.lstrip().startswith("#"): continue
+                    csv_hash = line.split(":", 1)[1].strip()
+                    continue
+                if not line.strip() or line.lstrip().startswith("#"):
+                    continue
                 parts = line.split("\t")
-                if not parts or parts[0].strip().lower() in {"product name", "name"}: continue
-                if len(parts) >= 7:
-                    name, desc = parts[0].strip(), parts[1].strip()
-                    main_price, discount_price = get_price(parts[2]), get_price(parts[3])
-                    stock_raw, pid, slug = parts[4], parts[5].strip(), parts[6].strip()
+                if len(parts) < 2 or parts[0].strip().lower() in {"product name", "name"}:
+                    continue
+                name = parts[0].strip()
+                if len(parts) >= 6:
+                    main_price, discount_price = get_price(parts[1]), get_price(parts[2])
+                    stock_raw, pid, slug = parts[3], parts[4].strip(), parts[5].strip()
                 else:
-                    name = parts[0].strip(); desc = ""
-                    main_price = get_price(parts[1]) if len(parts) > 1 else 0
-                    discount_price = get_price(parts[2]) if len(parts) > 2 else main_price
-                    stock_raw = parts[3] if len(parts) > 3 else ""
-                    pid = parts[4].strip() if len(parts) > 4 else ""
-                    slug = parts[5].strip() if len(parts) > 5 else ""
-                def parse_stock(value):
-                    v = str(value).strip().lower()
-                    if v in {"in stock", "instock", "yes", "true", "1", "available"}: return True
-                    if v in {"out of stock", "outofstock", "no", "false", "0", "unavailable"}: return False
-                    return None
-                if main_price <= 0 and discount_price <= 0: continue
-                rec = {"name": name, "description": desc,
-                       "main_price": float(main_price or discount_price),
-                       "discount_price": float(discount_price or main_price),
-                       "price": float(discount_price or main_price),
-                       "stock": parse_stock(stock_raw), "id": pid, "slug": slug}
-                if pid: by_id[pid] = rec
-                if slug: by_slug[slug] = rec
-                by_name[name.casefold()] = rec
-    except Exception as e:
-        print(f"⚠️ Could not read {path}: {e}")
+                    main_price = get_price(parts[1])
+                    discount_price = main_price
+                    stock_raw = parts[2] if len(parts) >= 3 else ""
+                    pid = parts[3].strip() if len(parts) >= 4 else ""
+                    slug = parts[4].strip() if len(parts) >= 5 else ""
+                add_record({"name": name, "main_price": float(main_price or discount_price or 0),
+                            "discount_price": float(discount_price or main_price or 0),
+                            "stock": _parse_stock_value(stock_raw), "id": pid, "slug": slug})
+        except Exception as exc:
+            print(f"⚠️ Could not read legacy price sheet {path}: {exc}")
+
+    if PRODUCT_PRICE_DIR.exists():
+        for product_file in sorted(PRODUCT_PRICE_DIR.glob("*.txt")):
+            add_record(_parse_product_control_file(product_file))
+
     return by_id, by_slug, by_name, csv_hash
 
+
 def _apply_price_override(product, by_id, by_slug, by_name):
-    rec = by_id.get(str(product.get("id", ""))) or by_slug.get(str(product.get("slug", ""))) or by_name.get(str(product.get("name", "")).casefold())
-    if not rec: return False
-    main = float(rec.get("main_price") or 0); discount = float(rec.get("discount_price") or 0)
-    if main > 0: product["regular_price"] = main
+    rec = (by_id.get(str(product.get("id", "")))
+           or by_slug.get(str(product.get("slug", "")))
+           or by_name.get(str(product.get("name", "")).casefold()))
+    if not rec:
+        # New catalog entries start as In Stock; edit their control file to change this.
+        product["stock"] = True
+        return False
+    main = float(rec.get("main_price") or 0)
+    discount = float(rec.get("discount_price") or 0)
+    if main > 0:
+        product["regular_price"] = main
     if discount > 0:
-        product["final_price"] = discount; product["sale_price"] = discount
+        product["final_price"] = discount
+        product["sale_price"] = discount
     elif main > 0:
-        product["final_price"] = main; product["sale_price"] = main
-    if rec.get("description", "").strip(): product["description"] = rec["description"].strip()
-    if rec.get("name", "").strip(): product["name"] = rec["name"].strip()
-    if rec.get("stock") is not None: product["stock"] = bool(rec["stock"])
+        product["final_price"] = main
+        product["sale_price"] = main
     product["manual_price_override"] = True
-    product["manual_content_override"] = True
+    if rec.get("stock") is not None:
+        product["stock"] = bool(rec["stock"])
+    if rec.get("meta_title"):
+        product["seo_title"] = rec["meta_title"]
+    if rec.get("meta_description"):
+        product["seo_desc"] = rec["meta_description"]
+    if rec.get("description"):
+        product["full_desc"] = rec["description"]
+    for field in ("brand", "tags", "attributes"):
+        if rec.get(field):
+            product[field] = rec[field]
     return True
 
+
+def _safe_control_filename(product):
+    title = safe_filename(product.get("name", "product"), 82)
+    pid = safe_filename(product.get("id", "no-id"), 28)
+    return f"{title}-{pid}.txt"
+
+
 def _write_price_override_file(products, path=PRICE_LIST_PATH, csv_hash="", preserve_existing=True):
-    path = Path(path)
-    existing = {}
-    if preserve_existing and path.exists():
-        try:
-            old_by_id, old_by_slug, old_by_name, _ = _parse_price_override_file(path)
-            for rec in list(old_by_id.values()) + list(old_by_slug.values()) + list(old_by_name.values()):
-                key = rec.get("id") or rec.get("slug") or rec.get("name", "").casefold()
-                existing[key] = rec
-        except Exception as e:
-            print(f"⚠️ Could not preserve editable product rows: {e}")
-
+    """Create one editable text file per product and a compact legacy index."""
+    PRODUCT_PRICE_DIR.mkdir(parents=True, exist_ok=True)
     rows = []
+    written = set()
     for prod in products:
-        name = str(prod.get("name", "")).replace("\\t", " ").replace("\\r", " ").replace("\\n", " ").strip()
-        desc = str(prod.get("description", "") or "").replace("\\t", " ").replace("\\r", " ").replace("\\n", " ").strip()
-        pid = str(prod.get("id", "")).replace("\\t", " ").strip()
-        slug = str(prod.get("slug", "")).replace("\\t", " ").strip()
-        key = pid or slug or name.casefold()
-        old = existing.get(key) or existing.get(name.casefold())
-        if old:
-            name = old.get("name") or name
-            desc = old.get("description") or desc
-            main = float(old.get("main_price") or prod.get("regular_price") or prod.get("final_price") or 0)
-            discount = float(old.get("discount_price") or prod.get("final_price") or main)
-            stock = "In Stock" if old.get("stock") is True else "Out of Stock" if old.get("stock") is False else ("In Stock" if prod.get("stock", True) else "Out of Stock")
-        else:
-            main = float(prod.get("regular_price") or prod.get("final_price") or 0)
-            discount = float(prod.get("final_price") or main)
-            stock = "In Stock" if prod.get("stock", True) else "Out of Stock"
-        rows.append((name, desc, main, discount, stock, pid, slug))
+        name = str(prod.get("name", "Product")).replace("\t", " ").replace("\r", " ").replace("\n", " ").strip()
+        pid = str(prod.get("id", "")).replace("\t", " ").strip()
+        slug = str(prod.get("slug", "")).replace("\t", " ").strip()
+        filename = _safe_control_filename(prod)
+        target = PRODUCT_PRICE_DIR / filename
+        # The loaded file has already been applied to prod; values here now reflect manual edits.
+        regular = float(prod.get("regular_price") or prod.get("final_price") or 0)
+        sale = float(prod.get("final_price") or regular)
+        stock = "In Stock" if prod.get("stock", True) else "Out of Stock"
+        meta_title = str(prod.get("seo_title") or name).replace("\r", " ").replace("\n", " ")
+        meta_desc = str(prod.get("seo_desc") or "").replace("\r", " ").replace("\n", " ")
+        description = str(prod.get("full_desc") or "").replace("\r", " ").replace("\n", " ")
+        fields = [
+            "# ASM VEO individual product control file — edit values after the colon.",
+            "# Keep Product ID and Slug unchanged so the next build matches this product.",
+            f"Product Name: {name}", f"Product ID: {pid}", f"SKU: {prod.get('sku', '')}",
+            f"Slug: {slug}", f"Category: {prod.get('category', '')}",
+            f"Subcategory: {prod.get('subcategory', '')}", f"Brand: {prod.get('brand', '')}",
+            f"Meta Title: {meta_title}", f"Meta Description: {meta_desc}",
+            f"Description: {description}", f"Regular Price: {regular:g}",
+            f"Sale Price: {sale:g}", f"Stock Status: {stock}",
+            f"Tags: {prod.get('tags', '')}", f"Attributes: {prod.get('attributes', '')}",
+        ]
+        tmp = target.with_suffix(target.suffix + ".tmp")
+        tmp.write_text("\n".join(fields) + "\n", encoding="utf-8")
+        tmp.replace(target)
+        written.add(filename)
+        rows.append((name, regular, sale, stock, pid, slug))
 
-    rows.sort(key=lambda x: x[0].casefold())
+    # Remove obsolete per-product files only after all current products were written.
+    # This keeps the directory aligned with the CSV catalog and avoids stale products.
+    for old_file in PRODUCT_PRICE_DIR.glob("*.txt"):
+        if old_file.name not in written:
+            try:
+                old_file.unlink()
+            except OSError as exc:
+                print(f"⚠️ Could not remove obsolete control file {old_file}: {exc}")
+
+    rows.sort(key=lambda row: row[0].casefold())
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     with tmp.open("w", encoding="utf-8") as f:
-        f.write("# ASM VEO Editable Product Control Sheet — TAB-separated; opens in Excel/Google Sheets\\n")
+        f.write("# ASM VEO product index. Edit individual files inside product-prices/ for durable changes.\n")
         if csv_hash:
-            f.write(f"# CSV SHA256: {csv_hash}\\n")
-        f.write("# Edit Product Name, Description, Main Price, Discount Price and Stock. Do not edit Product ID/Slug.\\n")
-        f.write("Product Name\\tDescription\\tMain Price\\tDiscount Price\\tStock\\tProduct ID\\tSlug\\n")
+            f.write(f"# CSV SHA256: {csv_hash}\n")
+        f.write("Product Name\tMain Price\tDiscount Price\tStock\tProduct ID\tSlug\n")
         for row in rows:
-            f.write("\\t".join([row[0], row[1], f"{row[2]:g}", f"{row[3]:g}", row[4], row[5], row[6]]) + "\\n")
+            f.write("\t".join([row[0], f"{row[1]:g}", f"{row[2]:g}", row[3], row[4], row[5]]) + "\n")
     tmp.replace(path)
-    if not path.is_file() or path.stat().st_size == 0:
-        raise RuntimeError(f"Price sheet was not created correctly: {path}")
-    print(f"✅ product-prices.txt written: {len(rows)} products -> {path.resolve()}")
+    print(f"🗂️ Saved {len(rows)} individual product files in {PRODUCT_PRICE_DIR}/")
 
 
 def _copy_price_list_to_output(path=PRICE_LIST_PATH):
-    path = Path(path)
-    output_path = Path("output") / path.name
-    if not path.is_file() or path.stat().st_size == 0:
-        raise FileNotFoundError(f"Master price sheet is missing or empty: {path.resolve()}")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(path, output_path)
-    if not output_path.is_file() or output_path.stat().st_size != path.stat().st_size:
-        raise RuntimeError(f"Price sheet copy verification failed: {output_path.resolve()}")
-    print(f"📄 Price sheet copied to: {output_path.resolve()}")
-
+    # Editable product-prices/ files stay in the source repository, not public Pages.
+    try:
+        output_dir = Path("output")
+        output_dir.mkdir(parents=True, exist_ok=True)
+        if path.exists():
+            shutil.copy2(path, output_dir / path.name)
+    except Exception as exc:
+        print(f"⚠️ Could not copy price index to output: {exc}")
 
 def process_woocommerce_csv():
     file_path = os.environ.get("PRODUCT_CSV", "woocommerce-products-export.csv")
@@ -2609,13 +2689,7 @@ def process_woocommerce_csv():
     except Exception:
         current_csv_hash = ""
     price_overrides_by_id, price_overrides_by_slug, price_overrides_by_name, saved_csv_hash = _parse_price_override_file()
-    if saved_csv_hash and current_csv_hash and saved_csv_hash != current_csv_hash:
-        # A genuinely changed CSV starts a new catalog-price snapshot. This lets CSV changes
-        # introduce new products/prices, while manual price edits persist across normal rebuilds.
-        print("💰 CSV changed since the last build — refreshing saved prices from the new CSV.")
-        price_overrides_by_id, price_overrides_by_slug, price_overrides_by_name = {}, {}, {}
-    else:
-        print(f"💰 Loaded {len(price_overrides_by_id) + len(price_overrides_by_slug)} saved price identifiers." if (price_overrides_by_id or price_overrides_by_slug) else "💰 No existing product-prices.txt; creating it from CSV.")
+    print(f"💰 Loaded {len(price_overrides_by_id)} product IDs, {len(price_overrides_by_slug)} slugs and {len(price_overrides_by_name)} names from saved product controls." if (price_overrides_by_id or price_overrides_by_slug or price_overrides_by_name) else "💰 No saved product controls found; creating individual files from CSV.")
     if os.path.exists("output"): 
         shutil.rmtree("output")
         
