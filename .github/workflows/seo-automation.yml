@@ -47,30 +47,32 @@ jobs:
         env:
           PRODUCT_CSV: woocommerce-products-export.csv
 
-      # Save the editable master price sheet on the repository's main branch.
-      # actions-gh-pages publishes only ./output to gh-pages; it does NOT commit
-      # files generated in the repository root.
-      - name: Commit product-prices.txt to repository
+      # Save the editable per-product control files in the source repository.
+      # They are intentionally NOT copied into the public ./output website.
+      - name: Commit individual product control files
         shell: bash
         run: |
           set -euo pipefail
+          if [ ! -d product-prices ] || [ -z "$(find product-prices -maxdepth 1 -type f -name '*.txt' -print -quit)" ]; then
+            echo "::error::product-prices/ is missing or contains no product files."
+            exit 1
+          fi
           if [ ! -s product-prices.txt ]; then
-            echo "::error::product-prices.txt was not created or is empty."
-            echo "Check that src/main.py completed its price-sheet writer."
+            echo "::error::product-prices.txt index was not created or is empty."
             exit 1
           fi
 
-          echo "Price sheet found: $(wc -l < product-prices.txt) lines"
+          echo "Individual product files: $(find product-prices -maxdepth 1 -type f -name '*.txt' | wc -l)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add product-prices.txt
+          git add product-prices/ product-prices.txt
 
           if git diff --cached --quiet; then
-            echo "product-prices.txt is unchanged; no repository commit needed."
+            echo "Product control files are unchanged; no repository commit needed."
           else
-            git commit -m "Save ASM VEO product price sheet"
+            git commit -m "Save ASM VEO individual product controls"
             git push origin "HEAD:${GITHUB_REF_NAME}"
-            echo "product-prices.txt committed to ${GITHUB_REF_NAME}."
+            echo "Product controls committed to ${GITHUB_REF_NAME}."
           fi
 
       - name: Verify Output Price Sheet
