@@ -2537,6 +2537,7 @@ def _apply_price_override(product, by_id, by_slug, by_name):
     return True
 
 def _write_price_override_file(products, path=PRICE_LIST_PATH, csv_hash="", preserve_existing=True):
+    path = Path(path)
     existing = {}
     if preserve_existing and path.exists():
         try:
@@ -2546,16 +2547,16 @@ def _write_price_override_file(products, path=PRICE_LIST_PATH, csv_hash="", pres
                 existing[key] = rec
         except Exception as e:
             print(f"⚠️ Could not preserve editable product rows: {e}")
+
     rows = []
     for prod in products:
-        name = str(prod.get("name", "")).replace("\t", " ").replace("\r", " ").replace("\n", " ").strip()
-        desc = str(prod.get("description", "") or "").replace("\t", " ").replace("\r", " ").replace("\n", " ").strip()
-        pid = str(prod.get("id", "")).replace("\t", " ").strip()
-        slug = str(prod.get("slug", "")).replace("\t", " ").strip()
+        name = str(prod.get("name", "")).replace("\\t", " ").replace("\\r", " ").replace("\\n", " ").strip()
+        desc = str(prod.get("description", "") or "").replace("\\t", " ").replace("\\r", " ").replace("\\n", " ").strip()
+        pid = str(prod.get("id", "")).replace("\\t", " ").strip()
+        slug = str(prod.get("slug", "")).replace("\\t", " ").strip()
         key = pid or slug or name.casefold()
         old = existing.get(key) or existing.get(name.casefold())
         if old:
-            # Preserve every manually edited field, including title and description.
             name = old.get("name") or name
             desc = old.get("description") or desc
             main = float(old.get("main_price") or prod.get("regular_price") or prod.get("final_price") or 0)
@@ -2566,22 +2567,35 @@ def _write_price_override_file(products, path=PRICE_LIST_PATH, csv_hash="", pres
             discount = float(prod.get("final_price") or main)
             stock = "In Stock" if prod.get("stock", True) else "Out of Stock"
         rows.append((name, desc, main, discount, stock, pid, slug))
+
     rows.sort(key=lambda x: x[0].casefold())
+    path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     with tmp.open("w", encoding="utf-8") as f:
-        f.write("# ASM VEO Editable Product Control Sheet — TAB-separated; opens in Excel/Google Sheets\n")
-        if csv_hash: f.write(f"# CSV SHA256: {csv_hash}\n")
-        f.write("# Edit Product Name, Description, Main Price, Discount Price and Stock. Do not edit Product ID/Slug.\n")
-        f.write("Product Name\tDescription\tMain Price\tDiscount Price\tStock\tProduct ID\tSlug\n")
+        f.write("# ASM VEO Editable Product Control Sheet — TAB-separated; opens in Excel/Google Sheets\\n")
+        if csv_hash:
+            f.write(f"# CSV SHA256: {csv_hash}\\n")
+        f.write("# Edit Product Name, Description, Main Price, Discount Price and Stock. Do not edit Product ID/Slug.\\n")
+        f.write("Product Name\\tDescription\\tMain Price\\tDiscount Price\\tStock\\tProduct ID\\tSlug\\n")
         for row in rows:
-            f.write("\t".join([row[0], row[1], f"{row[2]:g}", f"{row[3]:g}", row[4], row[5], row[6]]) + "\n")
+            f.write("\\t".join([row[0], row[1], f"{row[2]:g}", f"{row[3]:g}", row[4], row[5], row[6]]) + "\\n")
     tmp.replace(path)
+    if not path.is_file() or path.stat().st_size == 0:
+        raise RuntimeError(f"Price sheet was not created correctly: {path}")
+    print(f"✅ product-prices.txt written: {len(rows)} products -> {path.resolve()}")
+
 
 def _copy_price_list_to_output(path=PRICE_LIST_PATH):
-    try:
-        if path.exists(): shutil.copy2(path, Path("output") / path.name)
-    except Exception as e:
-        print(f"⚠️ Could not copy {path.name} into output: {e}")
+    path = Path(path)
+    output_path = Path("output") / path.name
+    if not path.is_file() or path.stat().st_size == 0:
+        raise FileNotFoundError(f"Master price sheet is missing or empty: {path.resolve()}")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(path, output_path)
+    if not output_path.is_file() or output_path.stat().st_size != path.stat().st_size:
+        raise RuntimeError(f"Price sheet copy verification failed: {output_path.resolve()}")
+    print(f"📄 Price sheet copied to: {output_path.resolve()}")
+
 
 def process_woocommerce_csv():
     file_path = os.environ.get("PRODUCT_CSV", "woocommerce-products-export.csv")
