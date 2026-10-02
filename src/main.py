@@ -2521,7 +2521,7 @@ def _parse_product_control_file(file_path):
 
 
 def _parse_price_override_file(path=PRICE_LIST_PATH):
-    """Load legacy master TSV and the newer product-prices/*.txt files."""
+    """Load legacy master TSV and recursively read numbered product-prices folders."""
     by_id, by_slug, by_name = {}, {}, {}
     csv_hash = ""
 
@@ -2564,7 +2564,7 @@ def _parse_price_override_file(path=PRICE_LIST_PATH):
             print(f"⚠️ Could not read legacy price sheet {path}: {exc}")
 
     if PRODUCT_PRICE_DIR.exists():
-        for product_file in sorted(PRODUCT_PRICE_DIR.glob("*.txt")):
+        for product_file in sorted(PRODUCT_PRICE_DIR.rglob("*.txt")):
             add_record(_parse_product_control_file(product_file))
 
     return by_id, by_slug, by_name, csv_hash
@@ -2614,12 +2614,16 @@ def _write_price_override_file(products, path=PRICE_LIST_PATH, csv_hash="", pres
     PRODUCT_PRICE_DIR.mkdir(parents=True, exist_ok=True)
     rows = []
     written = set()
-    for prod in products:
+    for product_index, prod in enumerate(products):
         name = str(prod.get("name", "Product")).replace("\t", " ").replace("\r", " ").replace("\n", " ").strip()
         pid = str(prod.get("id", "")).replace("\t", " ").strip()
         slug = str(prod.get("slug", "")).replace("\t", " ").strip()
-        filename = _safe_control_filename(prod)
-        target = PRODUCT_PRICE_DIR / filename
+        filename = _safe_control_filename(prod)  # Product name + stable product ID
+        folder_start = (product_index // 1000) * 1000
+        folder_end = folder_start + 999
+        product_folder = PRODUCT_PRICE_DIR / f"{folder_start:04d}-{folder_end:04d}"
+        product_folder.mkdir(parents=True, exist_ok=True)
+        target = product_folder / filename
         # The loaded file has already been applied to prod; values here now reflect manual edits.
         regular = float(prod.get("regular_price") or prod.get("final_price") or 0)
         sale = float(prod.get("final_price") or regular)
@@ -2641,17 +2645,24 @@ def _write_price_override_file(products, path=PRICE_LIST_PATH, csv_hash="", pres
         tmp = target.with_suffix(target.suffix + ".tmp")
         tmp.write_text("\n".join(fields) + "\n", encoding="utf-8")
         tmp.replace(target)
-        written.add(filename)
+        written.add(str(target.relative_to(PRODUCT_PRICE_DIR)))
         rows.append((name, regular, sale, stock, pid, slug))
 
     # Remove obsolete per-product files only after all current products were written.
     # This keeps the directory aligned with the CSV catalog and avoids stale products.
-    for old_file in PRODUCT_PRICE_DIR.glob("*.txt"):
-        if old_file.name not in written:
+    for old_file in PRODUCT_PRICE_DIR.rglob("*.txt"):
+        relative_name = str(old_file.relative_to(PRODUCT_PRICE_DIR))
+        if relative_name not in written:
             try:
                 old_file.unlink()
             except OSError as exc:
                 print(f"⚠️ Could not remove obsolete control file {old_file}: {exc}")
+    for folder in sorted((p for p in PRODUCT_PRICE_DIR.rglob("*") if p.is_dir()),
+                         key=lambda p: len(p.parts), reverse=True):
+        try:
+            folder.rmdir()
+        except OSError:
+            pass
 
     rows.sort(key=lambda row: row[0].casefold())
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -2664,7 +2675,7 @@ def _write_price_override_file(products, path=PRICE_LIST_PATH, csv_hash="", pres
         for row in rows:
             f.write("\t".join([row[0], f"{row[1]:g}", f"{row[2]:g}", row[3], row[4], row[5]]) + "\n")
     tmp.replace(path)
-    print(f"🗂️ Saved {len(rows)} individual product files in {PRODUCT_PRICE_DIR}/")
+    print(f"🗂️ Saved {len(rows)} name-based product files in numbered folders under {PRODUCT_PRICE_DIR}/ (max 1,000 per folder).")
 
 
 def _copy_price_list_to_output(path=PRICE_LIST_PATH):
