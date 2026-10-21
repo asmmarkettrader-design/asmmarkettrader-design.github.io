@@ -47,22 +47,34 @@ jobs:
         env:
           PRODUCT_CSV: woocommerce-products-export.csv
 
-      # Save the editable per-product control files in the source repository.
-      # They are intentionally NOT copied into the public ./output website.
-      - name: Commit individual product control files
+      # main.py writes controls into numbered subfolders (0000-0999, 1000-1999, ...)
+      # and recreates them from the CSV if the old files were deleted.
+      - name: Verify and Commit Individual Product Control Files
         shell: bash
         run: |
           set -euo pipefail
-          if [ ! -d product-prices ] || [ -z "$(find product-prices -maxdepth 1 -type f -name '*.txt' -print -quit)" ]; then
-            echo "::error::product-prices/ is missing or contains no product files."
+
+          if [ ! -d product-prices ]; then
+            echo "::error::product-prices/ was not created by src/main.py."
             exit 1
           fi
+
+          CONTROL_COUNT="$(find product-prices -type f -name '*.txt' -print | wc -l | tr -d ' ')"
+          if [ "$CONTROL_COUNT" -eq 0 ]; then
+            echo "::error::No individual product control files were generated under product-prices/."
+            echo "Check that woocommerce-products-export.csv exists and contains valid product rows."
+            exit 1
+          fi
+
           if [ ! -s product-prices.txt ]; then
             echo "::error::product-prices.txt index was not created or is empty."
             exit 1
           fi
 
-          echo "Individual product files: $(find product-prices -maxdepth 1 -type f -name '*.txt' | wc -l)"
+          echo "Individual product control files (recursive): $CONTROL_COUNT"
+          echo "Numbered folders:"
+          find product-prices -mindepth 1 -maxdepth 1 -type d -print | sort
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add product-prices/ product-prices.txt
@@ -77,6 +89,7 @@ jobs:
 
       - name: Verify Output Price Sheet
         run: |
+          set -euo pipefail
           if [ ! -s output/product-prices.txt ]; then
             echo "::error::output/product-prices.txt is missing or empty."
             exit 1
