@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Gold Brightening & Glowing Beauty Cream | 100g | Radiant Skin | Premium Skincare
 Product ID: hhc-3756200
 SKU: hhc-3756200
@@ -7,11 +8,16 @@ Slug: zafrani-gold-brightening-glowing-beauty-cream-100g-radiant-skin-premium-sk
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/622c08961b51d2d0362cca41319d8b0b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/622c08961b51d2d0362cca41319d8b0b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/8a3f00422a7cbc02d89d8c3f1af09245.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/a0c5123b2b4a69081dd042bf073e4f3a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/a80df8e3a9456c92c6b2501cd4e7a55d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/5938177ea76470a65d8e8746404d5e9c.jpeg
 Meta Title: Zafrani Gold Brightening & Glowing Beauty Cream | 100g | Radiant Ski
 Meta Description: Buy Zafrani Gold Brightening & Glowing Beauty Cream | 100g | Radiant Skin | Premium Skincare online in Pakistan from ASM VEO. Zafrani Gold Beauty Cream, 100g. B
 Description: Zafrani Gold Beauty Cream, 100g. Brightening and glowing formula for radiant, smooth, and nourished skin.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

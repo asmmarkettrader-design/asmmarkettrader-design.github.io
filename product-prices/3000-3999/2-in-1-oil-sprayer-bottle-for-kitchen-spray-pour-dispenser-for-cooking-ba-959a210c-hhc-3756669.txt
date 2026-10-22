@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Oil Sprayer Bottle for Kitchen – Spray & Pour Dispenser for Cooking, Baking and BBQ
 Product ID: hhc-3756669
 SKU: hhc-3756669
@@ -7,11 +8,16 @@ Slug: 2-in-1-oil-sprayer-bottle-for-kitchen-spray-pour-dispenser-for-cooking-959
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/e8b0755f17aa0ac3b364bd0ad9143c50.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/e8b0755f17aa0ac3b364bd0ad9143c50.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/1f84af4cac4a0bf7486d2ec7158dcb07.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/d184b92891f761ec3b8c6c1eea77bc82.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/5b354530478dee9952dac6a2774d89f8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/fabd9e35997475946d0bade8f8b3ea77.jpeg
 Meta Title: 2-in-1 Oil Sprayer Bottle for Kitchen – Spray & Pour Dispenser for C
 Meta Description: Buy 2-in-1 Oil Sprayer Bottle for Kitchen – Spray & Pour Dispenser for Cooking, Baking and BBQ online in Pakistan from ASM VEO. A versatile 2-in-1 oil sprayer b
 Description: A versatile 2-in-1 oil sprayer bottle designed for precise spraying and easy pouring. Perfect for cooking, baking, grilling, and salad dressing with controlled oil usage and less waste.
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

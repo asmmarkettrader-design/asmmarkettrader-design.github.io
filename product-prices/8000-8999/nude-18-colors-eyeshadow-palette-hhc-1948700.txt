@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nude 18 Colors Eyeshadow Palette
 Product ID: hhc-1948700
 SKU: hhc-1948700
@@ -7,11 +8,16 @@ Slug: nude-18-colors-eyeshadow-palette-hhc-1948700
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-10.28.39-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-10.28.39-PM.jpeg
 Meta Title: Nude 18 Colors Eyeshadow Palette | Buy Online in Pakistan
 Meta Description: Buy Nude 18 Colors Eyeshadow Palette online in Pakistan from ASM VEO. Material: PowderThe New Eyeshadow PaletteA game-changing palette that reinvents nude with
 Description: Material: PowderThe New Eyeshadow PaletteA game-changing palette that reinvents nude with revolutionary textures and colors18 Color Eye ShadowPackage Includes:1 x 18 Color Eyeshadow
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

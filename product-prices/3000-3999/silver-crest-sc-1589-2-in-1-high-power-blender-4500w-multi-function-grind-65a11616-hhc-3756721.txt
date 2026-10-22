@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silver Crest SC-1589 2 in 1 High Power Blender 4500W – Multi-Function Grinder & Smoothie Maker
 Product ID: hhc-3756721
 SKU: hhc-3756721
@@ -7,11 +8,16 @@ Slug: silver-crest-sc-1589-2-in-1-high-power-blender-4500w-multi-function-gri-65
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/b6c8e1eded5689933e6e836227ddc634.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/b6c8e1eded5689933e6e836227ddc634.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/56e377ca481e90ae6f5d05ed60ba1f44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/5cedfa3fb8b01c32f66c097cfc3c5dab.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/87d95b7f1e3d11d1feaadaa3e9adee46.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/954161968421bae6d0d308f407965a5a.jpg
 Meta Title: Silver Crest SC-1589 2 in 1 High Power Blender 4500W – Multi-Functio
 Meta Description: Buy Silver Crest SC-1589 2 in 1 High Power Blender 4500W – Multi-Function Grinder & Smoothie Maker online in Pakistan from ASM VEO. Silver Crest SC-1589 is a po
 Description: Silver Crest SC-1589 is a powerful 2 in 1 blender designed for blending, grinding, and food preparation. With a strong 4500W motor and durable stainless steel blades, it easily handles fruits, vegetables, spices, soybeans, and more for smooth and consistent results.
-Regular Price: 5675
-Sale Price: 5675
+Wholesale Price: 5675
+Regular Price: 9450
+Sale Price: 7558
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

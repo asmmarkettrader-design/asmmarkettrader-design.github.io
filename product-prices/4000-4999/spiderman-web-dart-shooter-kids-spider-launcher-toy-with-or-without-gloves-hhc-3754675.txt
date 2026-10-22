@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Spiderman Web Dart Shooter | Kids Spider Launcher Toy | With or Without Gloves
 Product ID: hhc-3754675
 SKU: hhc-3754675
@@ -7,11 +8,16 @@ Slug: spiderman-web-dart-shooter-kids-spider-launcher-toy-with-or-without-gloves
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/2d8d83bcee39868a0d0438e307ef6995.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/2d8d83bcee39868a0d0438e307ef6995.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/a0c424d78f6b17f044c6908460b5bed4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/a1942827e65d989182400d85a129d281.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/bb96a8b259af65f04fcf54477c229d56.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/eacb7c4f4f30bc28b7e438c79eef5c11.jpeg
 Meta Title: Spiderman Web Dart Shooter | Kids Spider Launcher Toy | With or With
 Meta Description: Buy Spiderman Web Dart Shooter | Kids Spider Launcher Toy | With or Without Gloves online in Pakistan from ASM VEO. Spiderman Web Shooter Web Dart Shooter toy W
 Description: Spiderman Web Shooter Web Dart Shooter toy With Darts Launcher - Avengers Spiderman Gift Toys For Boys For Kids Spider Web Shooting Game - Kids Spider peter Hero Role Play Launcher Gloves with Wrist Toy Set, No way home Movie Theme, Plastic & Nylon string
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

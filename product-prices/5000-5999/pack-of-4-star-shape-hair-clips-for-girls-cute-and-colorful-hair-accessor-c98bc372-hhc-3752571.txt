@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 4 Star Shape Hair Clips For Girls – Cute And Colorful Hair Accessories For Kids Styling And Daily Wear (Multicolor)
 Product ID: hhc-3752571
 SKU: hhc-3752571
@@ -7,11 +8,16 @@ Slug: pack-of-4-star-shape-hair-clips-for-girls-cute-and-colorful-hair-access-c9
 Category: Fashion
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/aa46e98f366e575f08baf1026082866e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/aa46e98f366e575f08baf1026082866e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/e8d46ba8dc1f54038ca6ab9a840f2e2a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/886adfea5fd68b161de207ea16b8e40b.jpeg
 Meta Title: Pack Of 4 Star Shape Hair Clips For Girls – Cute And Colorful Hair A
 Meta Description: Buy Pack Of 4 Star Shape Hair Clips For Girls – Cute And Colorful Hair Accessories For Kids Styling And Daily Wear (Multicolor) online in Pakistan from ASM VEO.
 Description: Cute Star Shape Multicolor Hair Clips Pack Of 4, Perfect For Kids, Easy To Wear, Durable, And Stylish For Daily Use Or Special Occasions.
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: A8512 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear With Gradient Lenses
 Product ID: hhc-3760299
 SKU: hhc-3760299
@@ -7,11 +8,16 @@ Slug: a8512-las-ladies-fancy-rimless-sunglasses-stylish-fashion-eyewear-with-767
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: A8512 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/fad7fd6ad1f2f59963f8d40841599854.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/fad7fd6ad1f2f59963f8d40841599854.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/06e8582e4dd237602d06dcb608c859e0.jpeg
+Meta Title: A8512 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear 
 Meta Description: Buy A8512 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear With Gradient Lenses online in Pakistan from ASM VEO. Elegant Ladies Fancy Sunglasses Fe
 Description: Elegant Ladies Fancy Sunglasses Featuring A Rimless Design And Stylish Gradient Lenses. Available In Multiple Color Variations For Everyday Fashion Wear.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: WIKI Special Skin Care Polish With Peeling Cream 200ml & 24K Gold Brighter Powder 100ml – Ultra Whitening Formula
 Product ID: hhc-3752683
 SKU: hhc-3752683
@@ -7,11 +8,16 @@ Slug: wiki-special-skin-care-polish-with-peeling-cream-200ml-24k-gold-brighte-fb
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/b952d7f9db97b3fc8ce1650080c8a492.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/b952d7f9db97b3fc8ce1650080c8a492.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/adfc56f7bc953530439514ed6f062e45.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/4049d7b35759d320afb69932b85bb06f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/0ddfde5b045471a5d3a03d2faee8bb70.jpg
 Meta Title: WIKI Special Skin Care Polish With Peeling Cream 200ml & 24K Gold Br
 Meta Description: Buy WIKI Special Skin Care Polish With Peeling Cream 200ml & 24K Gold Brighter Powder 100ml – Ultra Whitening Formula online in Pakistan from ASM VEO. Give your
 Description: Give your skin the glow and care it deserves with WIKI Special Skincare. This premium skincare combo includes:
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

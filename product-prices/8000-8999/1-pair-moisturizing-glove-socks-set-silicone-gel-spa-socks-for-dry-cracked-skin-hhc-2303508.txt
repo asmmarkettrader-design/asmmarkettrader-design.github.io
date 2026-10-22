@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (1 Pair) Moisturizing Glove Socks Set, Silicone Gel Spa Socks For Dry Cracked Skin
 Product ID: hhc-2303508
 SKU: hhc-2303508
@@ -7,11 +8,16 @@ Slug: 1-pair-moisturizing-glove-socks-set-silicone-gel-spa-socks-for-dry-cracked
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/31-uSjMRfLL.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/31-uSjMRfLL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/517KTUFEiL._SL1207_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-12-at-12.49.08-AM-1.jpeg
 Meta Title: (1 Pair) Moisturizing Glove Socks Set, Silicone Gel Spa Socks For Dr
 Meta Description: Buy (1 Pair) Moisturizing Glove Socks Set, Silicone Gel Spa Socks For Dry Cracked Skin online in Pakistan from ASM VEO. About this item 【How to Use】Slather your
 Description: About this item 【How to Use】Slather your feet in lotion before you slip them on -- try a foot cream for calluses, or even a hand cream for dry, cracked hands, which will work just as wonderfully on your heels and feet. 【Package Included】1 Pair Moisturizing Gloves and 1 Pair Moisturizing Socks. Washable and unisex, can be washed repeatedly, Long reusable cycle. Meet your daily requirement of using. original picture
-Regular Price: 573
-Sale Price: 573
+Wholesale Price: 523
+Regular Price: 1020
+Sale Price: 818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

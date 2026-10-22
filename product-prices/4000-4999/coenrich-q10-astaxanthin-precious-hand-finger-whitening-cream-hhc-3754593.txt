@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CoenRich Q10 Astaxanthin Precious Hand & Finger Whitening Cream
 Product ID: hhc-3754593
 SKU: hhc-3754593
@@ -7,11 +8,16 @@ Slug: coenrich-q10-astaxanthin-precious-hand-finger-whitening-cream-hhc-3754593
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/b56eb4d72c3018a2de639514ac5b9ba6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/b56eb4d72c3018a2de639514ac5b9ba6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/8daea917c12d02d79530397e17af22f7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/16062bec573e98d9767bd0517b6553b1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/71a89c09e5253bdcef1b9900ddd3d6ae.png
 Meta Title: CoenRich Q10 Astaxanthin Precious Hand & Finger Whitening Cream | Bu
 Meta Description: Buy CoenRich Q10 Astaxanthin Precious Hand & Finger Whitening Cream online in Pakistan from ASM VEO. Revitalize and brighten your hands with this intensive, age
 Description: Revitalize and brighten your hands with this intensive, age-defying treatment. Formulated with powerful antioxidants like Astaxanthin and Coenzyme Q10, this cream targets fine lines and dark spots to restore a youthful, radiant glow to your hands and fingers.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

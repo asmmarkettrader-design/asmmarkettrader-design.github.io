@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 360° Rotating Makeup Brush Storage Box | Desktop Cosmetic Organizer for Brushes, Lipsticks, Eyebrow Pencils & Beauty Tools
 Product ID: hhc-3753327
 SKU: hhc-3753327
@@ -7,11 +8,16 @@ Slug: 360-rotating-makeup-brush-storage-box-desktop-cosmetic-organizer-for-br-0c
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/132c0246c4dd77207385ca079f4ea906.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/132c0246c4dd77207385ca079f4ea906.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/fbf1d26a786e5e218db2470b8ea9ba6f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/92501645c116bbac396d8e4b7c5509af.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/478d28f28c3a6add76040c1c94e1aa97.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/ab0954271e23d431e19ecc48ae92a53f.jpg
 Meta Title: 360° Rotating Makeup Brush Storage Box | Desktop Cosmetic Organizer
 Meta Description: Buy 360° Rotating Makeup Brush Storage Box | Desktop Cosmetic Organizer for Brushes, Lipsticks, Eyebrow Pencils & Beauty Tools online in Pakistan from ASM VEO.
 Description: Keep your vanity neat with the 360° Rotating Makeup Brush Storage Box — perfect for organizing brushes, lipsticks, and cosmetics.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

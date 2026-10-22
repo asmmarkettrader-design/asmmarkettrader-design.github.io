@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Charming Hand Chain Bracelet | Beautiful Charming Hand Chain Bracelet For Boys and Men
 Product ID: hhc-3292384
 SKU: hhc-3292384
@@ -7,11 +8,16 @@ Slug: stainless-steel-charming-hand-chain-bracelet-beautiful-charming-hand-ch-e7
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-20-at-8.51.26-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-20-at-8.51.26-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-27-at-6.32.35-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-27-at-6.32.35-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-27-at-6.32.37-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-27-at-6.32.37-AM-1.jpeg
 Meta Title: Stainless Steel Charming Hand Chain Bracelet | Beautiful Charming Ha
 Meta Description: Buy Stainless Steel Charming Hand Chain Bracelet | Beautiful Charming Hand Chain Bracelet For Boys and Men online in Pakistan from ASM VEO. Stainless Steel Char
 Description: Stainless Steel Charming Hand Chain Bracelet | Beautiful Charming Hand Chain Bracelet For Boys and MenItem Type: BraceletBraceletType: Hand Chain Charm BraceletGender: MaleFine or Fashion: FashionColor: Silver, Golden, Black
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (Small Size) 3in1 Peeler Knife Stainless Steel | Multifunctional Fruit & Vegetable Peeler With Wooden Handle | Kitchen Vegetable Cutter Slicer Tool & Bottle Opener
 Product ID: hhc-3763597
 SKU: hhc-3763597
@@ -7,11 +8,16 @@ Slug: small-size-3in1-peeler-knife-stainless-steel-multifunctional-fruit-vege-90
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/d73ef102cc753a2ad85760794d3ead90.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/d73ef102cc753a2ad85760794d3ead90.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/df6c8c7d3e96c41ffd37a55ba0521aec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/63f3ee0beeff74a7594d6fc6f9295f15.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/a1c9a6a9061403f4c6dba8f97df0df5c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/eb6abe65d9e85897745f590148bb34e3.jpg
 Meta Title: (Small Size) 3in1 Peeler Knife Stainless Steel | Multifunctional Fru
 Meta Description: Buy (Small Size) 3in1 Peeler Knife Stainless Steel | Multifunctional Fruit & Vegetable Peeler With Wooden Handle | Kitchen Vegetable Cutter Slicer Tool & Bottle
 Description: Make kitchen preparation easier with this 3-in-1 stainless steel peeler knife. Featuring a wooden handle, it is ideal for peeling fruits and vegetables, slicing, cutting, and opening bottles.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

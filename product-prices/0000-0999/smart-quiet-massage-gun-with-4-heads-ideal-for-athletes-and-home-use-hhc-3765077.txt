@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Smart Quiet Massage Gun with 4 Heads Ideal for athletes and home use
 Product ID: hhc-3765077
 SKU: hhc-3765077
@@ -7,11 +8,16 @@ Slug: smart-quiet-massage-gun-with-4-heads-ideal-for-athletes-and-home-use-hhc-3
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/d952d283a91d7eda2472a7a18a19ca6f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/d952d283a91d7eda2472a7a18a19ca6f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/cfca104d9a60e7fed55bf43e1a44a707.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/5e9f3c8fb287b57acde7498793e7b6e3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/cfbfb7db972427d358bdb8344c1e8cdf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/1d8f99e098361c567e2a7313513cb013.jpeg
 Meta Title: Smart Quiet Massage Gun with 4 Heads Ideal for athletes and home use
 Meta Description: Buy Smart Quiet Massage Gun with 4 Heads Ideal for athletes and home use online in Pakistan from ASM VEO. Smart Massage Gun with high-torque brushless motor (32
 Description: Smart Massage Gun with high-torque brushless motor (3200rpm). Ultra-quiet operation (35dB). Includes 4 different massage heads for targeted muscle relief. Ideal for athletes and home use.
-Regular Price: 1828
-Sale Price: 1828
+Wholesale Price: 1828
+Regular Price: 3310
+Sale Price: 2648
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

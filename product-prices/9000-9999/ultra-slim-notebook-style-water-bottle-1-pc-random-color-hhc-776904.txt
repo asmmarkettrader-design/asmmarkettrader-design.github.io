@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ultra Slim Notebook Style Water Bottle - 1 Pc (Random Color)
 Product ID: hhc-776904
 SKU: hhc-776904
@@ -7,11 +8,16 @@ Slug: ultra-slim-notebook-style-water-bottle-1-pc-random-color-hhc-776904
 Category: Books & Stationery
 Subcategory: Office Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/413ZqofpBLL.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/413ZqofpBLL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-04-at-6.36.34-PM.jpeg
 Meta Title: Ultra Slim Notebook Style Water Bottle - 1 Pc (Random Color) | Buy O
 Meta Description: Buy Ultra Slim Notebook Style Water Bottle - 1 Pc (Random Color) online in Pakistan from ASM VEO. Product Details: Notebook style Ultra Slim water Bottle MEMO B
 Description: Product Details: Notebook style Ultra Slim water Bottle MEMO BOTTLE with hole to carry handle. Made of food grade plastic Leak Proof Lid Slides into your bag Convenient to handle in your hands like a memo or a notebook. It has a printed inspiring message "Do your Best" travelling / Office, School, Colleges, Outdoor Activities, Sports Size: 380ml Package Include: 1x Notebook style Water Bottle
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

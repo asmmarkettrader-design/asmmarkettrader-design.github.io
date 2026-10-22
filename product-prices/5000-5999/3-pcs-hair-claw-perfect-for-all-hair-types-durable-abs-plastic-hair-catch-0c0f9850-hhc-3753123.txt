@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pcs Hair Claw Perfect For All Hair Types Durable Abs Plastic Hair Catcher Set For Women And Girls (Random Color)
 Product ID: hhc-3753123
 SKU: hhc-3753123
@@ -7,11 +8,16 @@ Slug: 3-pcs-hair-claw-perfect-for-all-hair-types-durable-abs-plastic-hair-cat-0c
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: 3 Pcs Hair Claw Perfect For All Hair Types Durable Abs Plastic Hair
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/46a1b78a54f924b438738aca615c643c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/46a1b78a54f924b438738aca615c643c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/33eaac50bcd7a5ee81bc7d101abcb40d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/6cbb460698d5fe7a1b4f1854d4c29ce8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/5ce226d88d32fe0bce8c80520b318ad0.jpeg
+Meta Title: 3 Pcs Hair Claw Perfect For All Hair Types Durable Abs Plastic Hair 
 Meta Description: Buy 3 Pcs Hair Claw Perfect For All Hair Types Durable Abs Plastic Hair Catcher Set For Women And Girls (Random Color) online in Pakistan from ASM VEO. Stylish
 Description: Stylish 3 Pcs Medium Length Multicolor Hair Claw Set Designed For All Hair Types, Offering A Strong Grip, Elegant Look, And Durable Build For Everyday Use.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

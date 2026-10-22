@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Solar Tungsten Filament Wall Lamp – Outdoor Intelligent Induction Light for Garden, Courtyard & Villa
 Product ID: hhc-2386202
 SKU: hhc-2386202
@@ -7,11 +8,16 @@ Slug: solar-tungsten-filament-wall-lamp-outdoor-intelligent-induction-light-f-d2
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-3.07.07-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-3.07.07-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-3.07.07-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-3.07.06-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-3.07.06-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-3.07.05-PM.jpeg
 Meta Title: Solar Tungsten Filament Wall Lamp – Outdoor Intelligent Induction Li
 Meta Description: Buy Solar Tungsten Filament Wall Lamp – Outdoor Intelligent Induction Light for Garden, Courtyard & Villa online in Pakistan from ASM VEO. Solar Tungsten Filame
 Description: Solar Tungsten Filament Wall Lamp – Outdoor Intelligent Induction Light for Garden, Courtyard & Villa
-Regular Price: 909
-Sale Price: 909
+Wholesale Price: 859
+Regular Price: 1630
+Sale Price: 1306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

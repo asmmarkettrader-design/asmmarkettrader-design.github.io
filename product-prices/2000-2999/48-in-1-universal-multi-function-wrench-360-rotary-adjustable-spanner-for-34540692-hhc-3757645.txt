@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 48-In-1 Universal Multi-Function Wrench 360° Rotary Adjustable Spanner for Nuts & Bolts
 Product ID: hhc-3757645
 SKU: hhc-3757645
@@ -7,11 +8,16 @@ Slug: 48-in-1-universal-multi-function-wrench-360-rotary-adjustable-spanner-f-34
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/dac93e75ede368151cfd35aca075603a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/dac93e75ede368151cfd35aca075603a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/51a09926d2e1ac1a3a1d89d17aa9eb90.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/59e76e4014ed6a9e4b94925792f130a7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/bee1dbbeea20ab6380ac463e8d1e6609.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/689544b89f998fc06a4e670377d96423.jpg
 Meta Title: 48-In-1 Universal Multi-Function Wrench 360° Rotary Adjustable Spann
 Meta Description: Buy 48-In-1 Universal Multi-Function Wrench 360° Rotary Adjustable Spanner for Nuts & Bolts online in Pakistan from ASM VEO. A versatile 48-in-1 multi-function
 Description: A versatile 48-in-1 multi-function wrench with a 360-degree rotating head, designed to fit and tighten multiple sizes of nuts and bolts efficiently with one tool.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

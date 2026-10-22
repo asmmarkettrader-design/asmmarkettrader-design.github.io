@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Metal Mug Stand Holder Tree Rack – Modern Space-Saving Mug Organizer with Smooth Hooks for Kitchen & Coffee Corner Decor
 Product ID: hhc-3753756
 SKU: hhc-3753756
@@ -7,11 +8,16 @@ Slug: metal-mug-stand-holder-tree-rack-modern-space-saving-mug-organizer-with-d9
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/2e0da5f9a3e2acd9c7ad663cfb7d4333.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/2e0da5f9a3e2acd9c7ad663cfb7d4333.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/e80fdb4944c6a9418ff0fee20e036c9a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/60c81fa1e5a86a8c3e9662be1dd2c7e8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/e4b6cc893d7939fd7d4d074675637c9d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/adf10ea2830b898d3a5130fa189d050b.jpg
 Meta Title: Metal Mug Stand Holder Tree Rack – Modern Space-Saving Mug Organizer
 Meta Description: Buy Metal Mug Stand Holder Tree Rack – Modern Space-Saving Mug Organizer with Smooth Hooks for Kitchen & Coffee Corner Decor online in Pakistan from ASM VEO. A
 Description: A mug stand is a compact, decorative holder designed to neatly organize and display mugs. It saves space, keeps mugs easily accessible, and adds a stylish touch to kitchen countertops or dining areas.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

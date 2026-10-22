@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M28 TWS Wireless Earbuds With Charging Case Premium Quality Smooth Sound Comfortable Fit Durable Build
 Product ID: hhc-3754475
 SKU: hhc-3754475
@@ -7,11 +8,16 @@ Slug: m28-tws-wireless-earbuds-with-charging-case-premium-quality-smooth-soun-c9
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/59c3f5b7c2e6566975986ffed96014c5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/59c3f5b7c2e6566975986ffed96014c5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/56ee41942928dc788038d897838613bd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/57d19c0741a9b676b0ab52f917780eac.jpg
 Meta Title: M28 TWS Wireless Earbuds With Charging Case Premium Quality Smooth S
 Meta Description: Buy M28 TWS Wireless Earbuds With Charging Case Premium Quality Smooth Sound Comfortable Fit Durable Build online in Pakistan from ASM VEO. M28 TWS Wireless Ear
 Description: M28 TWS Wireless Earbuds With Charging Case Provides Premium Quality Smooth Sound Comfortable Fit Durable Build Easy Use And Reliable Utility
-Regular Price: 1344
-Sale Price: 1344
+Wholesale Price: 1294
+Regular Price: 2370
+Sale Price: 1897
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

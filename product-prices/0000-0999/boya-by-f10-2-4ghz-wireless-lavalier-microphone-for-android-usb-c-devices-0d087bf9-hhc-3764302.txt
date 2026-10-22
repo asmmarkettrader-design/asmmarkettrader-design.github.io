@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: *BOYA BY-F10 2.4GHz Wireless Lavalier Microphone for Android USB-C Devices – Noise Cancelling, Plug & Play, 50m Range, 9h Battery* (With IPhone Connector)
 Product ID: hhc-3764302
 SKU: hhc-3764302
@@ -7,11 +8,16 @@ Slug: boya-by-f10-2-4ghz-wireless-lavalier-microphone-for-android-usb-c-devic-0d
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/1670268ff1f9c1a3405028c9d9a925f6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/1670268ff1f9c1a3405028c9d9a925f6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/e5f7e6dc8f1c3a4516771ffa060dc2fe.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/c8a01747ef3eed4a85cedb6046bef958.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/2bfe27939616e709d290b629e39abad0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/cacb0fd97a37547c97123bd1926944d5.jpg
 Meta Title: *BOYA BY-F10 2.4GHz Wireless Lavalier Microphone for Android USB-C D
 Meta Description: Buy *BOYA BY-F10 2.4GHz Wireless Lavalier Microphone for Android USB-C Devices – Noise Cancelling, Plug & Play, 50m Range, 9h Battery* (With IPhone Connector) o
 Description: BOYA BY-F10 2.4GHz Wireless Lavalier Microphone delivers clear, professional audio with noise cancellation and a wireless range of up to 50m. With up to 9 hours of battery life and Plug & Play setup, it’s ideal for YouTube, TikTok, vlogging, interviews, live streaming, and online classes. Comes with an iPhone connector.
-Regular Price: 4551
-Sale Price: 4551
+Wholesale Price: 4551
+Regular Price: 7620
+Sale Price: 6096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

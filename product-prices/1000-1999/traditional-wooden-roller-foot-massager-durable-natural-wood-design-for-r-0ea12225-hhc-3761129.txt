@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Traditional Wooden Roller Foot Massager Durable Natural Wood Design For Relaxation Stress Relief And Improved Blood Circulation
 Product ID: hhc-3761129
 SKU: hhc-3761129
@@ -7,11 +8,16 @@ Slug: traditional-wooden-roller-foot-massager-durable-natural-wood-design-for-0e
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
-Meta Title: Traditional Wooden Roller Foot Massager Durable Natural Wood Design
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/dea2944e905517fbacaf1dd024f7420f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/dea2944e905517fbacaf1dd024f7420f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/7dda8115a77b034ae2aa6a1efca5e5be.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/873fc115cabf9ea11a7f178acd4dacba.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/8f2f6b29ba50f2b942401245182ee492.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/927bee6c6b995abba0afece31d805053.jpg
+Meta Title: Traditional Wooden Roller Foot Massager Durable Natural Wood Design 
 Meta Description: Buy Traditional Wooden Roller Foot Massager Durable Natural Wood Design For Relaxation Stress Relief And Improved Blood Circulation online in Pakistan from ASM
 Description: Traditional Wooden Roller Foot Massager Durable Natural Wood Design Provides Relaxation Stress Relief And Blood Circulation.
-Regular Price: 1035
-Sale Price: 1035
+Wholesale Price: 985
+Regular Price: 1860
+Sale Price: 1488
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

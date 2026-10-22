@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Smart Sealer LS 245 Quick Easy Bag Sealing Lightweight Portable Design Keeps Snacks And Food Fresh Convenient Household Tool
 Product ID: hhc-3764498
 SKU: hhc-3764498
@@ -7,11 +8,16 @@ Slug: smart-sealer-ls-245-quick-easy-bag-sealing-lightweight-portable-design-674
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/63218ce926d77c6a97b059459414e7fc.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/63218ce926d77c6a97b059459414e7fc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/2ca1f5df1a76a8d9f8e1e50dddc5a3ec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/b1f707eb4fb3a46f6cf7fad00509172e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/d24815922810504e35660eeecca0ba6f.jpg
 Meta Title: Smart Sealer LS 245 Quick Easy Bag Sealing Lightweight Portable Desi
 Meta Description: Buy Smart Sealer LS 245 Quick Easy Bag Sealing Lightweight Portable Design Keeps Snacks And Food Fresh Convenient Household Tool online in Pakistan from ASM VEO
 Description: Smart Sealer LS 245 Quick Easy Bag Sealing Lightweight Portable Design Keeps Snacks And Food Fresh Convenient Household Tool.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Kids Markhor Printed Tracksuit | Full Sleeves Round Neck T-Shirt & Trouser Set – Warm, Stylish & Comfortable Outfit
 Product ID: hhc-3753483
 SKU: hhc-3753483
@@ -7,11 +8,16 @@ Slug: winter-kids-markhor-printed-tracksuit-full-sleeves-round-neck-t-shirt-t-3c
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/068a9e3f294bf1e7305a0a5be5bd7994.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/068a9e3f294bf1e7305a0a5be5bd7994.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/a8fec475d7a67931823859d0992f548b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/1ae026100f5df15dfeb6cba18bf146aa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/5aa7770c0c88a1175ebbb343acdcb0cc.jpeg
 Meta Title: Winter Kids Markhor Printed Tracksuit | Full Sleeves Round Neck T-Sh
 Meta Description: Buy Winter Kids Markhor Printed Tracksuit | Full Sleeves Round Neck T-Shirt & Trouser Set – Warm, Stylish & Comfortable Outfit online in Pakistan from ASM VEO.
 Description: Trendy Markhor printed winter tracksuit for kids featuring a full-sleeve round neck shirt and trouser. Soft, warm, and perfect for daily wear.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

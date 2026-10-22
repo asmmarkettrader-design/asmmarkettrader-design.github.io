@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Summer Collection Full Grey Hoodie Father And Son Printed For Men And Boys
 Product ID: hhc-3752560
 SKU: hhc-3752560
@@ -7,11 +8,16 @@ Slug: new-summer-collection-full-grey-hoodie-father-and-son-printed-for-men-and-
 Category: Fashion
 Subcategory: Trucksuits & Activewear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/ba9a631f511869683dd4ddb14065b858.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/ba9a631f511869683dd4ddb14065b858.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/43a1c0095027c6ec8e3dca15290e9b5b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/4e8295fb79cd09b8a16b494bbc704cf3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/5622673195424731a70b58f242aadea1.jpeg
 Meta Title: New Summer Collection Full Grey Hoodie Father And Son Printed For Me
 Meta Description: Buy New Summer Collection Full Grey Hoodie Father And Son Printed For Men And Boys online in Pakistan from ASM VEO. New Summer Collection Full Grey Hoodie Fathe
 Description: New Summer Collection Full Grey Hoodie Father And Son Printed For Men And Boys. Style: Comfortable, Fashion , Casual. Available in Medium, Large, and XL Sizes.
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

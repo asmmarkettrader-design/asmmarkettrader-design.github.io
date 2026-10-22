@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cartoon Flash Carriage Musical Toy – Light & Sound Fun for Kids
 Product ID: hhc-3756358
 SKU: hhc-3756358
@@ -7,11 +8,16 @@ Slug: cartoon-flash-carriage-musical-toy-light-sound-fun-for-kids-hhc-3756358
 Category: Toys & Games
 Subcategory: Stuff Toys
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/e2ac7f4d08ab5222e0a57518cea1fa8b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/e2ac7f4d08ab5222e0a57518cea1fa8b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/0cc43edd4319b5fe9b9c7d008d20ef06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/3a5419afc3dda465163c5c947db56460.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/0a83d05fb0ca6e33c02f830c3519e0df.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/3b9e217e144e19eb4a4ae6af3301ac0c.png
 Meta Title: Cartoon Flash Carriage Musical Toy – Light & Sound Fun for Kids | Bu
 Meta Description: Buy Cartoon Flash Carriage Musical Toy – Light & Sound Fun for Kids online in Pakistan from ASM VEO. Delight your little ones with the Cartoon Flash Carriage Mu
 Description: Delight your little ones with the Cartoon Flash Carriage Musical Toy, featuring lights, music, and engaging sounds that promote hand-eye coordination, motor skills, and visual development. Safe, fun, and perfect for playtime!
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

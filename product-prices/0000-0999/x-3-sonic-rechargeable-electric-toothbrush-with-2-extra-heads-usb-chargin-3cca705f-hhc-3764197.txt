@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: X-3 Sonic Rechargeable Electric Toothbrush With 2 Extra Heads | USB Charging Rechargeable Total Washable Electronic Whitening Teeth Brush for Oral Care
 Product ID: hhc-3764197
 SKU: hhc-3764197
@@ -7,11 +8,16 @@ Slug: x-3-sonic-rechargeable-electric-toothbrush-with-2-extra-heads-usb-charg-3c
 Category: Grooming Products
 Subcategory: Brushes
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/aa5dd2a3fd0d91894f69bbac884ac24c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/aa5dd2a3fd0d91894f69bbac884ac24c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/a9f6de6a4160eb9cc1aec495f58dc38d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/f6ca87e9ec678ef0fbb1a8440d896506.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/ed4ef2bc778e242b43919b7a7e59baad.jpg
 Meta Title: X-3 Sonic Rechargeable Electric Toothbrush With 2 Extra Heads | USB
 Meta Description: Buy X-3 Sonic Rechargeable Electric Toothbrush With 2 Extra Heads | USB Charging Rechargeable Total Washable Electronic Whitening Teeth Brush for Oral Care onli
 Description: Upgrade your oral care routine with this Rechargeable Electric Toothbrush featuring 2 extra brush heads. USB rechargeable and fully washable, it provides effective cleaning for teeth and gums. Its powerful brushing action helps remove plaque and surface stains while supporting a fresher, cleaner, bri
-Regular Price: 818
-Sale Price: 818
+Wholesale Price: 768
+Regular Price: 1470
+Sale Price: 1174
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

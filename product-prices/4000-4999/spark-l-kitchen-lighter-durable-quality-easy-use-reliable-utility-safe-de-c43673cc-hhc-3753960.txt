@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Spark L Kitchen Lighter Durable Quality Easy Use Reliable Utility Safe Design Perfect Choice For Daily Cooking Household Needs
 Product ID: hhc-3753960
 SKU: hhc-3753960
@@ -7,11 +8,16 @@ Slug: spark-l-kitchen-lighter-durable-quality-easy-use-reliable-utility-safe-c43
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/be0eb89ad1f0fde393905914d20d5ce0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/be0eb89ad1f0fde393905914d20d5ce0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/9a4721b5bd432167faabeec3ae44f940.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/9cb47b911b919c7d4cfe6b7376c4dc57.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/5c00e0973216528fa6e6435c6dc06215.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/57103ac8d8c24a6be45142e020c1cf26.jpeg
 Meta Title: Spark L Kitchen Lighter Durable Quality Easy Use Reliable Utility Sa
 Meta Description: Buy Spark L Kitchen Lighter Durable Quality Easy Use Reliable Utility Safe Design Perfect Choice For Daily Cooking Household Needs online in Pakistan from ASM V
 Description: Kitchen Lighter Provides Durable Quality Easy Use Reliable Utility And Safe Design
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

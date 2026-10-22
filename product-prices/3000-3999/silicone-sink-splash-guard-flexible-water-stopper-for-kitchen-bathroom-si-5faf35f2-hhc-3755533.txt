@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Sink Splash Guard | Flexible Water Stopper for Kitchen & Bathroom Sinks | Prevents Splashes & Spills (Random Color)
 Product ID: hhc-3755533
 SKU: hhc-3755533
@@ -7,11 +8,16 @@ Slug: silicone-sink-splash-guard-flexible-water-stopper-for-kitchen-bathroom-5fa
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/98ffef0008760c63374148cf4adc6576.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/98ffef0008760c63374148cf4adc6576.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/17/041be3c03a5fcb248601468a1f96359c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/1780f4fddd8523509a7575073b0d040d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/d67b27d17930c95901125928e165b997.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/fbe127c9fccc3d1edfde4ffaa7964e58.jpeg
 Meta Title: Silicone Sink Splash Guard | Flexible Water Stopper for Kitchen & Ba
 Meta Description: Buy Silicone Sink Splash Guard | Flexible Water Stopper for Kitchen & Bathroom Sinks | Prevents Splashes & Spills (Random Color) online in Pakistan from ASM VEO
 Description: Prevent messy splashes and spills around your sink with this Silicone Sink Splash Guard. Made from flexible, high-quality silicone, it easily fits around kitchen and bathroom sinks. Its simple, tool-free design ensures a clean and dry countertop. Comes in random colors.
-Regular Price: 383
-Sale Price: 383
+Wholesale Price: 333
+Regular Price: 710
+Sale Price: 560
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Cream – Premium Saffron Cream for Daily Skincare - 500ml
 Product ID: hhc-3763730
 SKU: hhc-3763730
@@ -7,11 +8,16 @@ Slug: zafrani-cream-premium-saffron-cream-for-daily-skincare-500ml-hhc-3763730
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/35cf99399e686861e8baeec3ef6985e3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/35cf99399e686861e8baeec3ef6985e3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/4048eb3ffe462ecbea2a04a5fb33ef4c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/f2a0d9ab94a76495bfa84098ef23d243.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/b1c1adf5f92387b8e3fb5f7f75a92123.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/05d0f2ff79299ab7b47de52148bb6d8c.jpeg
 Meta Title: Zafrani Cream – Premium Saffron Cream for Daily Skincare - 500ml | B
 Meta Description: Buy Zafrani Cream – Premium Saffron Cream for Daily Skincare - 500ml online in Pakistan from ASM VEO. Zafrani Cream with a rich, smooth texture, presented in a
 Description: Zafrani Cream with a rich, smooth texture, presented in a convenient cosmetic jar for easy daily skincare use.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

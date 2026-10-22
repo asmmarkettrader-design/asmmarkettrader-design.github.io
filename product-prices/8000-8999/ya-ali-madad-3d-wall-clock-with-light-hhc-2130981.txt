@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ya Ali Madad 3d Wall Clock with light
 Product ID: hhc-2130981
 SKU: hhc-2130981
@@ -7,11 +8,16 @@ Slug: ya-ali-madad-3d-wall-clock-with-light-hhc-2130981
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-15.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-15.webp
 Meta Title: Ya Ali Madad 3d Wall Clock with light | Buy Online in Pakistan
 Meta Description: Buy Ya Ali Madad 3d Wall Clock with light online in Pakistan from ASM VEO. New Islamic Wall Clock I The New Wall Clock I Wall Clock Wall Clock I Wall clocks for
 Description: New Islamic Wall Clock I The New Wall Clock I Wall Clock Wall Clock I Wall clocks for bedroom I Quartz Watch DIY Design Decoration Piece for Home Decor I Offices and for Gift Items Wall Clock Metrial wood Size 20 inch Thickness 3mm lasani wood
-Regular Price: 657
-Sale Price: 657
+Wholesale Price: 607
+Regular Price: 1180
+Sale Price: 940
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

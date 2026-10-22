@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium RC Fighter Jet Plane 24G Remote Control Foam Airplane Toy High Speed Glider Stunt Aircraft for Kids Adults
 Product ID: hhc-3755059
 SKU: hhc-3755059
@@ -7,11 +8,16 @@ Slug: premium-rc-fighter-jet-plane-24g-remote-control-foam-airplane-toy-high-e46
 Category: Toys & Games
 Subcategory: Outdoor & Sports Toys
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/ee8a4c8a3fc5c577270835d0953c196b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/ee8a4c8a3fc5c577270835d0953c196b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/380caaab3d7288ffcfc77be73bdb428f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/ea2586ffabbb2730c597b5d4228ea64d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/a774d9ac9ecc9e4c9443bf2e4d4f1bc5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/aea7f15d044d0fea16abf410bc36ac70.jpeg
 Meta Title: Premium RC Fighter Jet Plane 24G Remote Control Foam Airplane Toy Hi
 Meta Description: Buy Premium RC Fighter Jet Plane 24G Remote Control Foam Airplane Toy High Speed Glider Stunt Aircraft for Kids Adults online in Pakistan from ASM VEO. Durable
 Description: Durable RC fighter jet with lights high speed glider design and stunt performance for kids and adults.
-Regular Price: 3779
-Sale Price: 3779
+Wholesale Price: 3779
+Regular Price: 6370
+Sale Price: 5093
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

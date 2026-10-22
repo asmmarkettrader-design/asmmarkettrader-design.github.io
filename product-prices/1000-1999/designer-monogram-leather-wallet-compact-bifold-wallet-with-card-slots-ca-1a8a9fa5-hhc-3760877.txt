@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Designer Monogram Leather Wallet – Compact Bifold Wallet with Card Slots & Cash Pocket | Slim Everyday Wallet
 Product ID: hhc-3760877
 SKU: hhc-3760877
@@ -7,11 +8,16 @@ Slug: designer-monogram-leather-wallet-compact-bifold-wallet-with-card-slots-1a8
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/f08f55fdec43fa89e80bebba2daa2d5a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/f08f55fdec43fa89e80bebba2daa2d5a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/a53c6478236c0917994b284ad2092be6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/0464dd212a936dc686181d89dcb748a6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/5f17ed9d93d879e0dd0f8aec6121e4a4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/9f53912f008288f76142614ffcd392ab.jpg
 Meta Title: Designer Monogram Leather Wallet – Compact Bifold Wallet with Card S
 Meta Description: Buy Designer Monogram Leather Wallet – Compact Bifold Wallet with Card Slots & Cash Pocket | Slim Everyday Wallet online in Pakistan from ASM VEO. Stylish and c
 Description: Stylish and compact PU leather wallet featuring a premium monogram-inspired embossed design. Equipped with 5 card slots and 1 cash pocket, this lightweight bifold wallet is perfect for everyday use, travel, and gifting.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

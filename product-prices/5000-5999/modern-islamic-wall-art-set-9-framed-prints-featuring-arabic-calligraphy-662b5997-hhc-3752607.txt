@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern Islamic Wall Art Set – 9 Framed Prints Featuring Arabic Calligraphy & Cultural Photography
 Product ID: hhc-3752607
 SKU: hhc-3752607
@@ -7,11 +8,16 @@ Slug: modern-islamic-wall-art-set-9-framed-prints-featuring-arabic-calligraph-66
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/46fd5b603ca6c240fb9545e9da3c0b94.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/46fd5b603ca6c240fb9545e9da3c0b94.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/a4a0054548a6497a3910f751c4a461bf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/5349e1d3d31d99e39463abcf8723168b.jpeg
 Meta Title: Modern Islamic Wall Art Set – 9 Framed Prints Featuring Arabic Calli
 Meta Description: Buy Modern Islamic Wall Art Set – 9 Framed Prints Featuring Arabic Calligraphy & Cultural Photography online in Pakistan from ASM VEO. Add a touch of elegance a
 Description: Add a touch of elegance and culture to your space with this 9-piece wall art frame set featuring Islamic calligraphy and architectural photography. Includes 4 frames sized 8x11 inches and 5 frames sized 5x7 inches, with double-sided tape for easy wall mounting. Perfect for modern home decor.
-Regular Price: 1316
-Sale Price: 1316
+Wholesale Price: 1266
+Regular Price: 2320
+Sale Price: 1858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5-piece screwdriver tape measure art knife combination set
 Product ID: hhc-3753906
 SKU: hhc-3753906
@@ -7,11 +8,16 @@ Slug: 5-piece-screwdriver-tape-measure-art-knife-combination-set-hhc-3753906
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/0e43a2e3fe2e2493ea8686a1e215f9e0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/0e43a2e3fe2e2493ea8686a1e215f9e0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/78b64572f823c0d994eb82de260d229b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/988383932d9d547e257f0a284420622b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/a1582f71c410d26c474c22fdc734814c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/53d5db6802d4027d10a5ecdb8cccfd98.jpeg
 Meta Title: 5-piece screwdriver tape measure art knife combination set | Buy Onl
 Meta Description: Buy 5-piece screwdriver tape measure art knife combination set online in Pakistan from ASM VEO. Practical 5-piece tool set including screwdriver, tape measure,
 Description: Practical 5-piece tool set including screwdriver, tape measure, and art knife, ideal for repairs, measuring, and cutting tasks.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

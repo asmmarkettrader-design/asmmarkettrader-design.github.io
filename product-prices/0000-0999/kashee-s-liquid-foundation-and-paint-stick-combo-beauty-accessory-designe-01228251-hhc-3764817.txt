@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashee's Liquid Foundation And Paint Stick Combo - Beauty Accessory Designed For Makeup Application And Daily Skincare Routine
 Product ID: hhc-3764817
 SKU: hhc-3764817
@@ -7,11 +8,16 @@ Slug: kashee-s-liquid-foundation-and-paint-stick-combo-beauty-accessory-desig-01
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Kashee's Liquid Foundation And Paint Stick Combo - Beauty Accessory
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/a5df5de4d1b4bcb01986276ed8f7c9bb.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/a5df5de4d1b4bcb01986276ed8f7c9bb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/0a0b3c9e8a38fe617a14004a2c511a65.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/fe6e10a0a52df4fc341a446077998632.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/6b34fa09ddfb11b418f5062a701a55ce.jpg
+Meta Title: Kashee's Liquid Foundation And Paint Stick Combo - Beauty Accessory 
 Meta Description: Buy Kashee's Liquid Foundation And Paint Stick Combo - Beauty Accessory Designed For Makeup Application And Daily Skincare Routine online in Pakistan from ASM V
 Description: Liquid Foundation Size: 30ml Paint Stick Foundation Size: 30ml
-Regular Price: 1337
-Sale Price: 1337
+Wholesale Price: 1287
+Regular Price: 2360
+Sale Price: 1888
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

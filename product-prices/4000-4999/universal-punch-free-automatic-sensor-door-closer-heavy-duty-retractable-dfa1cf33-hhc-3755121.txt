@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Punch-Free Automatic Sensor Door Closer | Heavy-Duty Retractable Steel Cable Door Closer for Home, Office, and Internal Sliding or Swing Doors
 Product ID: hhc-3755121
 SKU: hhc-3755121
@@ -7,11 +8,16 @@ Slug: universal-punch-free-automatic-sensor-door-closer-heavy-duty-retractabl-df
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/01851984cb5fd7701c602a65114ffb91.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/01851984cb5fd7701c602a65114ffb91.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/0047ab287329c0ea4d39facddb727cd3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/53a180538298b66c25e89f11ea92e107.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/397355332839dacc9bd8d437feee4f86.jfif
 Meta Title: Universal Punch-Free Automatic Sensor Door Closer | Heavy-Duty Retra
 Meta Description: Buy Universal Punch-Free Automatic Sensor Door Closer | Heavy-Duty Retractable Steel Cable Door Closer for Home, Office, and Internal Sliding or Swing Doors onl
 Description: Keep your space private and climate-controlled with this easy-to-install, punch-free automatic door closer. Featuring a high-quality 1.2-meter steel wire rope and a strong tensile force, it automatically pulls doors shut after they are opened. Perfect for bedrooms, home offices, and bathrooms, it ins
-Regular Price: 518
-Sale Price: 518
+Wholesale Price: 468
+Regular Price: 950
+Sale Price: 762
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

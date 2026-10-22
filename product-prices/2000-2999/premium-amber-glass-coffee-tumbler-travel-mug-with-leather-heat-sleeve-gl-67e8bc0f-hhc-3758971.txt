@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Amber Glass Coffee Tumbler – Travel Mug with Leather Heat Sleeve, Glass Straw (400ml)
 Product ID: hhc-3758971
 SKU: hhc-3758971
@@ -7,11 +8,16 @@ Slug: premium-amber-glass-coffee-tumbler-travel-mug-with-leather-heat-sleeve-67e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/ddfe8f776baef2bb3817d6275d3ae0a8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/ddfe8f776baef2bb3817d6275d3ae0a8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/a975cacdf2f6d28b1469fc9b59db750d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/f61c6263a0e46e52303e031980127959.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/274716806ed2a004762dcd47cfe6d8a7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/84a53d295e244b70205387c765dc23eb.png
 Meta Title: Premium Amber Glass Coffee Tumbler – Travel Mug with Leather Heat Sl
 Meta Description: Buy Premium Amber Glass Coffee Tumbler – Travel Mug with Leather Heat Sleeve, Glass Straw (400ml) online in Pakistan from ASM VEO. Sip your favorite drinks in s
 Description: Sip your favorite drinks in style with this Amber Glass Coffee Tumbler. Featuring a luxurious leather protective sleeve and a reusable glass straw, this eco-friendly travel mug is perfect for iced coffee, lattes, or tea, keeping your hands comfortable and your drink spill-free.
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

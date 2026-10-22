@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: TDS Meter M1S White Portable Accurate Reliable Durable Best Quality Practical Choice For Water Quality Testing And Monitoring
 Product ID: hhc-3763739
 SKU: hhc-3763739
@@ -7,11 +8,16 @@ Slug: tds-meter-m1s-white-portable-accurate-reliable-durable-best-quality-pra-b2
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: TDS Meter M1S White Portable Accurate Reliable Durable Best Quality
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/8b304b647dca48f100fabe58951991ed.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/8b304b647dca48f100fabe58951991ed.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/9899e425ef8194df2a2e32023c6a65f8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/f37924e1f1bf8595b9acb27f2ab440de.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/8ac3531586e8a74dc57590fbafab1ede.jpg
+Meta Title: TDS Meter M1S White Portable Accurate Reliable Durable Best Quality 
 Meta Description: Buy TDS Meter M1S White Portable Accurate Reliable Durable Best Quality Practical Choice For Water Quality Testing And Monitoring online in Pakistan from ASM VE
 Description: TDS Meter M1S White Portable Accurate Reliable Durable Best Quality Practical Choice For Water Quality Testing And Monitoring.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

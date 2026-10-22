@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 in 1 Computer Keyboard Cleaner Brush Kit – Multi-Function Earphone Cleaning Pen & Keycap Puller Tool Set
 Product ID: hhc-3756544
 SKU: hhc-3756544
@@ -7,11 +8,16 @@ Slug: 7-in-1-computer-keyboard-cleaner-brush-kit-multi-function-earphone-clea-70
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/70bd6c6828765423d1e9ef0c643c92b8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/70bd6c6828765423d1e9ef0c643c92b8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/13a60c4cbd1cf2159b731475f505f91c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/d4267718da0464ec49219f025d2b2351.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/f3aafdaa8bc406aeda88c3f2c15a3828.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/448865d132b362771e31f26838a9a228.jpeg
 Meta Title: 7 in 1 Computer Keyboard Cleaner Brush Kit – Multi-Function Earphone
 Meta Description: Buy 7 in 1 Computer Keyboard Cleaner Brush Kit – Multi-Function Earphone Cleaning Pen & Keycap Puller Tool Set online in Pakistan from ASM VEO. Keep your keyboa
 Description: Keep your keyboard, earphones, and electronic devices dust-free with this 7 in 1 Computer Cleaning Kit. Designed for deep and precise cleaning, this multi-functional tool set includes brushes, cleaning pen, and keycap puller for complete maintenance of your gadgets.
-Regular Price: 895
-Sale Price: 895
+Wholesale Price: 845
+Regular Price: 1610
+Sale Price: 1285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

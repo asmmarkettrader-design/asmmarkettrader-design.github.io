@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mesh Nebulizer Battery Operated Silent Operation Compact Design Perfect Choice For Daily Breathing And Health Care Needs
 Product ID: hhc-3754258
 SKU: hhc-3754258
@@ -7,11 +8,16 @@ Slug: mesh-nebulizer-battery-operated-silent-operation-compact-design-perfect-21
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/c55b0865156cb3dee975e56f99a7f02a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/c55b0865156cb3dee975e56f99a7f02a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/22cf64584cc3fd379e0cdd334b0f1660.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/19535e562bf59dc980c460d9dbaf04c8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/cc53d95f00b9bed43087e9dee6f6b469.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/7f2b329b47a5fa23357d05c15adc004c.jpeg
 Meta Title: Mesh Nebulizer Battery Operated Silent Operation Compact Design Perf
 Meta Description: Buy Mesh Nebulizer Battery Operated Silent Operation Compact Design Perfect Choice For Daily Breathing And Health Care Needs online in Pakistan from ASM VEO. Me
 Description: Mesh Nebulizer Battery Operated Provides Durable Quality Reliable Utility Comfortable Use Silent Operation And Compact Design
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

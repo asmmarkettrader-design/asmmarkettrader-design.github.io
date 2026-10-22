@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury Ottoman Mandala Velvet Prayer Rug – Deep Blue & Black 70x115 cm | Elegant Islamic Janamaz
 Product ID: hhc-3764550
 SKU: hhc-3764550
@@ -7,11 +8,16 @@ Slug: luxury-ottoman-mandala-velvet-prayer-rug-deep-blue-black-70x115-cm-eleg-1c
 Category: Islamic & Cultural
 Subcategory: Islamic Essentials
 Brand: ASM VEO
-Meta Title: Luxury Ottoman Mandala Velvet Prayer Rug – Deep Blue & Black 70x115
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/87a6a9b179b911c71839bfaa7767a15c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/87a6a9b179b911c71839bfaa7767a15c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/90bc2b36744042ddff87e44d2a9783a1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/71964951c6e5486dd57b6aa815067eb1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/8b49ec26482331e455e9860c6288bf4e.jpg
+Meta Title: Luxury Ottoman Mandala Velvet Prayer Rug – Deep Blue & Black 70x115 
 Meta Description: Buy Luxury Ottoman Mandala Velvet Prayer Rug – Deep Blue & Black 70x115 cm | Elegant Islamic Janamaz online in Pakistan from ASM VEO. Luxury Ottoman Mandala Vel
 Description: Luxury Ottoman Mandala Velvet Prayer Rug in Deep Blue & Black with a 70x115 cm size. Elegant and traditional Janamaz designed for daily Salah and personal use.
-Regular Price: 2067
-Sale Price: 2067
+Wholesale Price: 2067
+Regular Price: 3710
+Sale Price: 2970
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

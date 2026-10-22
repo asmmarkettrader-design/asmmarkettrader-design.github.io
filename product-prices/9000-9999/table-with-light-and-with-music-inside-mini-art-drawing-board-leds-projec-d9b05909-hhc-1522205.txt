@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Table with light and with music inside | Mini Art Drawing Board Leds Projector Light Toy Children Kids Painting Table Small Desk(Random Color)
 Product ID: hhc-1522205
 SKU: hhc-1522205
@@ -7,11 +8,16 @@ Slug: table-with-light-and-with-music-inside-mini-art-drawing-board-leds-proj-d9
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-3.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/1-4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/3-3.webp
 Meta Title: Table with light and with music inside | Mini Art Drawing Board Leds
 Meta Description: Buy Table with light and with music inside | Mini Art Drawing Board Leds Projector Light Toy Children Kids Painting Table Small Desk(Random Color) online in Pak
 Description: Mini Art Drawing Board Led Projector Light Toy Children Kids Painting Table Small Desk Educational Learning Craft Painting ToolSame As Per PictureMini Art Drawing Board Led Projector Light Toy Children Kids Painting Table Small Desk Educational Learning Craft Painting ToolOriginal Product Picture Product PicturesOriginal Picture
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

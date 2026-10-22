@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acrylic Sticky Heart 🤍 | 1.5 Inch.
 Product ID: hhc-1037098
 SKU: hhc-1037098
@@ -7,11 +8,16 @@ Slug: acrylic-sticky-heart-1-5-inch-hhc-1037098
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-05-at-2.43.17-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-05-at-2.43.17-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-05-at-2.43.16-AM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-05-at-2.43.16-AM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-05-at-2.43.16-AM.jpeg
 Meta Title: Acrylic Sticky Heart 🤍 | 1.5 Inch. | Buy Online in Pakistan
 Meta Description: Buy Acrylic Sticky Heart 🤍 | 1.5 Inch. online in Pakistan from ASM VEO. Mini Size Circle Mirror Feature heart shaped design, simple and decorative, which a grea
 Description: Mini Size Circle Mirror Feature heart shaped design, simple and decorative, which a great gift choice for your friends. With this set, you can DIY and create makeup mirrors of your own styles. It has a nice looking and resistance to scratch, which is safe and secure. Sufficient quantity and you can also share them with your family and friends. Lightweight and portable, compact size for easy to carry and use.
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

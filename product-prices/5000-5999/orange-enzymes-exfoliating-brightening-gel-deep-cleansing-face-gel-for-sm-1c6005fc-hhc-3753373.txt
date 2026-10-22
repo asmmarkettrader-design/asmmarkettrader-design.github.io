@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Orange Enzymes Exfoliating & Brightening Gel | Deep Cleansing Face Gel for Smooth, Glowing & Refreshed Skin (100g)
 Product ID: hhc-3753373
 SKU: hhc-3753373
@@ -7,11 +8,16 @@ Slug: orange-enzymes-exfoliating-brightening-gel-deep-cleansing-face-gel-for-1c6
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/fd3ae76b0a552cada645ad236cca3c83.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/fd3ae76b0a552cada645ad236cca3c83.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/2df7928b3017f04ce9cdf33bfc4f0827.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/bb03bf11d37c6015cd75ee2d803fee5b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/336d47bd769ffd377106feb4bfa37d2e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/4feb6d5e7e46cbe3e4a834477b10e181.jpg
 Meta Title: Orange Enzymes Exfoliating & Brightening Gel | Deep Cleansing Face G
 Meta Description: Buy Orange Enzymes Exfoliating & Brightening Gel | Deep Cleansing Face Gel for Smooth, Glowing & Refreshed Skin (100g) online in Pakistan from ASM VEO. Orange E
 Description: Orange Enzymes Gel gently exfoliates and brightens skin, removing dead cells for a smoother, glowing, and refreshed complexion.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

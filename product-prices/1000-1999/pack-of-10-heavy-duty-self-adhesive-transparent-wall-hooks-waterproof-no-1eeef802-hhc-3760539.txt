@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 10 Heavy-Duty Self-Adhesive Transparent Wall Hooks – Waterproof No-Drilling Screw & Nail Traceless Wall Organizers
 Product ID: hhc-3760539
 SKU: hhc-3760539
@@ -7,11 +8,16 @@ Slug: pack-of-10-heavy-duty-self-adhesive-transparent-wall-hooks-waterproof-n-1e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/8f99750aed1aef87e46781feca3724e1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/8f99750aed1aef87e46781feca3724e1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/cfd256ae6a9f8f0107972ae63bb392c7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/6f6b923d327f8c866532b1ddff6e7c17.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/31735cc23ff8e9e95a8ac15ebe11aaa8.png
 Meta Title: Pack of 10 Heavy-Duty Self-Adhesive Transparent Wall Hooks – Waterpr
 Meta Description: Buy Pack of 10 Heavy-Duty Self-Adhesive Transparent Wall Hooks – Waterproof No-Drilling Screw & Nail Traceless Wall Organizers online in Pakistan from ASM VEO.
 Description: Organize your space completely damage-free with this Pack of 10 Heavy-Duty Self-Adhesive Transparent Wall Hooks.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

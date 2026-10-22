@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Valam Naturals Dried Rosemary Leaves 100g – 100% Natural, Preservative-Free Herb for Cooking, Hair & Scalp Care, and Immune Support
 Product ID: hhc-3752754
 SKU: hhc-3752754
@@ -7,11 +8,16 @@ Slug: valam-naturals-dried-rosemary-leaves-100g-100-natural-preservative-free-1b
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/cd2a5e4abf43d6431a1513d1dc7f5547.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/cd2a5e4abf43d6431a1513d1dc7f5547.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/37bd7eefa4c6fc422f730bf36c332b6e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/8eb8a37033b50e7177e93dc6f436f403.png
 Meta Title: Valam Naturals Dried Rosemary Leaves 100g – 100% Natural, Preservati
 Meta Description: Buy Valam Naturals Dried Rosemary Leaves 100g – 100% Natural, Preservative-Free Herb for Cooking, Hair & Scalp Care, and Immune Support online in Pakistan from
 Description: Valam Naturals Dried Rosemary Leaves (100g) are 100% natural and preservative-free, perfect for enhancing flavor in your dishes or for use in hair and scalp care. Rich in antioxidants, these premium-quality dried herbs support immune and respiratory health naturally.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

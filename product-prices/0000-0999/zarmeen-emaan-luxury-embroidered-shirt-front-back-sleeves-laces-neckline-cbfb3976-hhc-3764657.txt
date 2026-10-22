@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zarmeen Emaan Luxury Embroidered Shirt Front Back Sleeves Laces Neckline Daman Patch Premium Viscose Trouser Pure Bamber Dupatta
 Product ID: hhc-3764657
 SKU: hhc-3764657
@@ -7,11 +8,16 @@ Slug: zarmeen-emaan-luxury-embroidered-shirt-front-back-sleeves-laces-necklin-cb
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/8e722f77df223b7591c3a91b5a3c0f4d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/8e722f77df223b7591c3a91b5a3c0f4d.jpg
 Meta Title: Zarmeen Emaan Luxury Embroidered Shirt Front Back Sleeves Laces Neck
 Meta Description: Buy Zarmeen Emaan Luxury Embroidered Shirt Front Back Sleeves Laces Neckline Daman Patch Premium Viscose Trouser Pure Bamber Dupatta online in Pakistan from ASM
 Description: Zarmeen Emaan Luxury Embroidered Shirt Front Back Sleeves Laces Neckline Daman Patch Premium Viscose Trouser Pure Bamber Dupatta.
-Regular Price: 7640
-Sale Price: 7640
+Wholesale Price: 7640
+Regular Price: 12640
+Sale Price: 10112
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

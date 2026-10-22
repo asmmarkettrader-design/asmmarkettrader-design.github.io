@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hand &amp; Foot Moisturizing Cream 150g
 Product ID: hhc-1893175
 SKU: hhc-1893175
@@ -7,11 +8,16 @@ Slug: hand-amp-foot-moisturizing-cream-150g-hhc-1893175
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsAppImage2023-03-03at4.58.55PM-1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsAppImage2023-03-03at4.58.55PM-1.webp
 Meta Title: Hand &amp; Foot Moisturizing Cream 150g | Buy Online in Pakistan
 Meta Description: Buy Hand &amp; Foot Moisturizing Cream 150g online in Pakistan from ASM VEO. product details Our Hand &amp; Foot Moisturizing Cream is expertly formulated to pr
 Description: product details Our Hand &amp; Foot Moisturizing Cream is expertly formulated to provide maximum hydration, nourishment, and softness for your skin. With its powerful moisturizing properties, you can say goodbye to dry, rough skin and hello to smooth, supple hands and feet. Experience the benefits for yourself today.
-Regular Price: 514
-Sale Price: 514
+Wholesale Price: 464
+Regular Price: 940
+Sale Price: 756
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

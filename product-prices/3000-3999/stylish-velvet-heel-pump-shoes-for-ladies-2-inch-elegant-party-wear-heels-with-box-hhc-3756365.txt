@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish Velvet Heel Pump Shoes for Ladies – 2 Inch Elegant Party Wear Heels with box
 Product ID: hhc-3756365
 SKU: hhc-3756365
@@ -7,11 +8,16 @@ Slug: stylish-velvet-heel-pump-shoes-for-ladies-2-inch-elegant-party-wear-hee-e7
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/a169564d7b5d459212f11e28bdf72b7a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/a169564d7b5d459212f11e28bdf72b7a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/15/0cc83cbe29f2fff44987518bb3cc450a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/15/0c916860ca5961b98e471be73ee3f749.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/15/0417dc63f99c22418e2a0bec237edcb7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/15/7fec0138c4de3613d3ec52b0b8eded20.jpg
 Meta Title: Stylish Velvet Heel Pump Shoes for Ladies – 2 Inch Elegant Party Wea
 Meta Description: Buy Stylish Velvet Heel Pump Shoes for Ladies – 2 Inch Elegant Party Wear Heels with box online in Pakistan from ASM VEO. Elegant ladies’ velvet heel pump shoes
 Description: Elegant ladies’ velvet heel pump shoes with a stylish buckle design and comfortable 2-inch heel. Perfect for casual wear, parties, weddings, and events. Made from premium quality material, suitable for both indoor and outdoor use, offering style and all-day comfort.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

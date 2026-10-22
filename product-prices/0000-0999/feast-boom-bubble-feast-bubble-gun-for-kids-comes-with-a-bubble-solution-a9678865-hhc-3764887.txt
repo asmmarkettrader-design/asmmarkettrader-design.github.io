@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Feast Boom Bubble Feast Bubble Gun for Kids Comes with a bubble solution bottle (Random Color)
 Product ID: hhc-3764887
 SKU: hhc-3764887
@@ -7,11 +8,16 @@ Slug: feast-boom-bubble-feast-bubble-gun-for-kids-comes-with-a-bubble-solutio-a9
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/a8c93cbabf0810289f9773fcd554057a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/a8c93cbabf0810289f9773fcd554057a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/529d0fb24d5becf0db851f04ddd31978.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/0921b0567daeae68d176fb35deebef3b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/28bd6826d053b3ed4ffd81a8a18c8e78.jpeg
 Meta Title: Feast Boom Bubble Feast Bubble Gun for Kids Comes with a bubble solu
 Meta Description: Buy Feast Boom Bubble Feast Bubble Gun for Kids Comes with a bubble solution bottle (Random Color) online in Pakistan from ASM VEO. Feast Boom Bubble Feast bubb
 Description: Feast Boom Bubble Feast bubble gun for kids. Comes with a bubble solution bottle, tray, and bubble wand attachment. Fun summer activity for children to improve hand-on ability.
-Regular Price: 874
-Sale Price: 874
+Wholesale Price: 824
+Regular Price: 1570
+Sale Price: 1255
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

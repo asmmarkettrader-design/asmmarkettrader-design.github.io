@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Peshawari Chappal Naram Qadam Pro Handmade Original Leather Light Weight Traditional Tyre Sole For Men
 Product ID: hhc-3761737
 SKU: hhc-3761737
@@ -7,11 +8,16 @@ Slug: peshawari-chappal-naram-qadam-pro-handmade-original-leather-light-weigh-e9
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/f9ba18099e5ecf94664f1dc6aa28029d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/f9ba18099e5ecf94664f1dc6aa28029d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/3db1413440a9e76df3d61b0710f5755a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/71ac36bcee6927ce715b875803057e3d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/fcef878ca6691fae1e1d4ce01869e6f5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/a41f37578a7eceb307aef7c8a4bcec95.jpeg
 Meta Title: Peshawari Chappal Naram Qadam Pro Handmade Original Leather Light We
 Meta Description: Buy Peshawari Chappal Naram Qadam Pro Handmade Original Leather Light Weight Traditional Tyre Sole For Men online in Pakistan from ASM VEO. Peshawari Chappal Na
 Description: Peshawari Chappal Naram Qadam Pro Is Handmade Using Original Leather. Features A Light Weight Design With Foam Sole And Traditional Tyre Sole.
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

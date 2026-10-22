@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5pc Set Stainless Steel Bowl with Lid Kitchen Refrigerator Food Storage Mixing Bowls Sealed
 Product ID: hhc-3761734
 SKU: hhc-3761734
@@ -7,11 +8,16 @@ Slug: 5pc-set-stainless-steel-bowl-with-lid-kitchen-refrigerator-food-storage-09
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/ae558ad8f1e5579fb0460cf656eda46b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/ae558ad8f1e5579fb0460cf656eda46b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/40a3e5893b028ea1ad9d0ecc583e1e31.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/3047e7b4b2b3073d2d5f9eaf428778cf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/c5c8583f5635822a90c569662247e330.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/12/a94f6f695fb90255e59c35197b3732a5.jpg
 Meta Title: 5pc Set Stainless Steel Bowl with Lid Kitchen Refrigerator Food Stor
 Meta Description: Buy 5pc Set Stainless Steel Bowl with Lid Kitchen Refrigerator Food Storage Mixing Bowls Sealed online in Pakistan from ASM VEO. 1. Durable material: Made of hi
 Description: 1. Durable material: Made of high quality food grade stainless steel, non-toxic and odorless, safe to use. 2.Exquisitely polished: The interior of the polished mirror finish will keep the shine lasting and lasting, just like the new one! 3. Perfect design: Due to deepened design, don't worry about
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

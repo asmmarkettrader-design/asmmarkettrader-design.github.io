@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foldable Car Windshield Sunshade Umbrella Heat Shield UV Protection For Front Windshield Interior Protection | Size 30cm
 Product ID: hhc-3761468
 SKU: hhc-3761468
@@ -7,11 +8,16 @@ Slug: foldable-car-windshield-sunshade-umbrella-heat-shield-uv-protection-for-f4
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Foldable Car Windshield Sunshade Umbrella Heat Shield UV Protection
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/3539f4633b050f3e2b4734a01c46365b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/3539f4633b050f3e2b4734a01c46365b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/08ee2aff78f0c79ef245fb1503eac8b9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/f9e07c5410c663fa5690fe39e9dbd173.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/eca99668b2945781f97082f0ab12bf5c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/abe406304ba14efa7e938b2f37ba122a.webp
+Meta Title: Foldable Car Windshield Sunshade Umbrella Heat Shield UV Protection 
 Meta Description: Buy Foldable Car Windshield Sunshade Umbrella Heat Shield UV Protection For Front Windshield Interior Protection | Size 30cm online in Pakistan from ASM VEO. Fo
 Description: Foldable Car Windshield Sunshade Umbrella Helps Reduce Heat And Protects The Vehicle Interior From Sun Exposure.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

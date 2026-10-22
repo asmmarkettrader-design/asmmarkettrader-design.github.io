@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 4 Fancy Indicators for All Bikes + Free Backlight | Compatible with CD 70, 125
 Product ID: hhc-2739162
 SKU: hhc-2739162
@@ -7,11 +8,16 @@ Slug: set-of-4-fancy-indicators-for-all-bikes-free-backlight-compatible-with-cd-
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-15-at-2.04.16-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-15-at-2.04.16-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-15-at-2.04.15-AM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-15-at-2.04.15-AM-1.jpeg
 Meta Title: Set of 4 Fancy Indicators for All Bikes + Free Backlight | Compatibl
 Meta Description: Buy Set of 4 Fancy Indicators for All Bikes + Free Backlight | Compatible with CD 70, 125 online in Pakistan from ASM VEO. Product Description 4 pieces Led Indi
 Description: Product Description 4 pieces Led Indicators With Free Led Back Light Led indicators For Bike Led Back Light For Bikes 1 Back light Free Gift For Bikes [video width="478" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Video-2025-02-15-at-2.25.39-AM.mp4"][/video] &nbsp;
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

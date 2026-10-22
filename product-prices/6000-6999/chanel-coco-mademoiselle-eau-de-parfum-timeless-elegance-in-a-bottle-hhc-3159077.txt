@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CHANEL Coco Mademoiselle Eau de Parfum – Timeless Elegance in a Bottle
 Product ID: hhc-3159077
 SKU: hhc-3159077
@@ -7,11 +8,16 @@ Slug: chanel-coco-mademoiselle-eau-de-parfum-timeless-elegance-in-a-bottle-hhc-3
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/f9bb06a2-f712-4ff2-8477-d223dcc49303-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/f9bb06a2-f712-4ff2-8477-d223dcc49303-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/images-22-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/images-21-1.jpeg
 Meta Title: CHANEL Coco Mademoiselle Eau de Parfum – Timeless Elegance in a Bott
 Meta Description: Buy CHANEL Coco Mademoiselle Eau de Parfum – Timeless Elegance in a Bottle online in Pakistan from ASM VEO. Description:CHANEL Coco Mademoiselle Eau de Parfum i
 Description: Description:CHANEL Coco Mademoiselle Eau de Parfum is a bold and elegant fragrance that captures the spirit of a modern, independent woman. With its fresh and sensual blend, this iconic perfume opens with vibrant orange and bergamot, followed by a heart of rose and jasmine, and settles into warm base notes of patchouli, vetiver, vanilla, and white musk.Inspired by the free and daring spirit of Coco Chanel, this scent is both light and intense, making it perfect for both day and evening wear. The sleek, luxurious bottle reflects the sophistication of the fragrance within.Fragrance Notes:Top: Orange, BergamotMiddle: Rose, JasmineBase: Patchouli, Vetiver, Vanilla, White MuskWhy You’ll Love It:Long-lasting Eau de Parfum concentrationA refined, feminine scent with depth and freshnessSignature fragrance for confident, stylish womenElegant bottle design, perfect for giftingEmbrace the allure of Coco Chanel with this timeless fragrance.
-Regular Price: 1261
-Sale Price: 1261
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

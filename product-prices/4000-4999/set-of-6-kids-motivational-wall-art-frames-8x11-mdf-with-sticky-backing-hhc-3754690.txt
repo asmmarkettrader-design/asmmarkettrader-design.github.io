@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 6 Kids' Motivational Wall Art Frames – 8x11" MDF with Sticky Backing
 Product ID: hhc-3754690
 SKU: hhc-3754690
@@ -7,11 +8,16 @@ Slug: set-of-6-kids-motivational-wall-art-frames-8x11-mdf-with-sticky-backing-hh
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 6 Kids' Motivational Wall Art Frames – 8x11" MDF with Sticky
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/f07368bc2f300a54970989a389bd9bcc.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/f07368bc2f300a54970989a389bd9bcc.jpg
+Meta Title: Set of 6 Kids' Motivational Wall Art Frames – 8x11" MDF with Sticky 
 Meta Description: Buy Set of 6 Kids' Motivational Wall Art Frames – 8x11" MDF with Sticky Backing online in Pakistan from ASM VEO. Six MDF wooden frames with cheerful quotes and
 Description: Six MDF wooden frames with cheerful quotes and illustrations. Easy to mount with pre-attached tape.
-Regular Price: 755
-Sale Price: 755
+Wholesale Price: 705
+Regular Price: 1350
+Sale Price: 1082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

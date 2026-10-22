@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flamingo Platinum Hard Wax Car Polish 200G – High Gloss Carnauba Paste Wax with Hydrophobic Protection for All Vehicle Paint Colors
 Product ID: hhc-3762817
 SKU: hhc-3762817
@@ -7,11 +8,16 @@ Slug: flamingo-platinum-hard-wax-car-polish-200g-high-gloss-carnauba-paste-wa-e0
 Category: Automotive
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/33426995e820dffb4918cf9972ce35c9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/33426995e820dffb4918cf9972ce35c9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/651ef7779d644d8e2bdbda440af8259b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/cd817ee48f1b67b5946b52e8ade2f44a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/6a973346267473f279d4f91a686bc7a4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/37d71e2145a01d9d08419d59d816a41d.jpeg
 Meta Title: Flamingo Platinum Hard Wax Car Polish 200G – High Gloss Carnauba Pas
 Meta Description: Buy Flamingo Platinum Hard Wax Car Polish 200G – High Gloss Carnauba Paste Wax with Hydrophobic Protection for All Vehicle Paint Colors online in Pakistan from
 Description: Protect and enhance your vehicle's finish with Flamingo Platinum Hard Wax Car Polish. Formulated with Brazilian carnauba wax, synthetic polymers, and protective silicones, it delivers a deep glossy shine while shielding paint from UV rays, water spots, dust, and environmental contaminants.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

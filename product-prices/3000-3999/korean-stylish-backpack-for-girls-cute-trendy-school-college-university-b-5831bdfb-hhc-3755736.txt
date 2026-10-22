@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Korean Stylish Backpack for Girls | Cute & Trendy School, College & University Bag | Spacious, Lightweight & Durable Daily Backpack
 Product ID: hhc-3755736
 SKU: hhc-3755736
@@ -7,11 +8,16 @@ Slug: korean-stylish-backpack-for-girls-cute-trendy-school-college-university-58
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/0f72980ff1acce64884664bf24bfc141.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/0f72980ff1acce64884664bf24bfc141.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/72a5e796fdf0538a47c3a61f64146df5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/1f26277d551b8c13f0c8b82f22058f46.jpeg
 Meta Title: Korean Stylish Backpack for Girls | Cute & Trendy School, College &
 Meta Description: Buy Korean Stylish Backpack for Girls | Cute & Trendy School, College & University Bag | Spacious, Lightweight & Durable Daily Backpack online in Pakistan from
 Description: Trendy Korean-style backpack designed for girls. Lightweight, spacious, and perfect for school, college, and university daily use.
-Regular Price: 2445
-Sale Price: 2445
+Wholesale Price: 2445
+Regular Price: 4350
+Sale Price: 3481
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

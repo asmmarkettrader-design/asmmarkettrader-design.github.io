@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tab Washing Machine Cleaner – Effervescent Detergent Tablets, Deep Clean for Washer & Pipes, Keeps Machine Fresh
 Product ID: hhc-3754203
 SKU: hhc-3754203
@@ -7,11 +8,16 @@ Slug: tab-washing-machine-cleaner-effervescent-detergent-tablets-deep-clean-f-7e
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/8dd74bf37d59ce6d5ad5784fb442ec72.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/8dd74bf37d59ce6d5ad5784fb442ec72.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/d6b6e802194b381c2802235b5874aa05.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/e94d51ff1a8bd9c27c7202541463c6ec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/55927b8d63e05d3c2827349ef32b14e0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/39c8eeb3dec6aa9bae5d24e02cb9e255.jpg
 Meta Title: Tab Washing Machine Cleaner – Effervescent Detergent Tablets, Deep C
 Meta Description: Buy Tab Washing Machine Cleaner – Effervescent Detergent Tablets, Deep Clean for Washer & Pipes, Keeps Machine Fresh online in Pakistan from ASM VEO. Effervesce
 Description: Effervescent washing machine cleaner tablets, keep washer and pipes clean, fresh, and hygienic.
-Regular Price: 257
-Sale Price: 257
+Wholesale Price: 207
+Regular Price: 520
+Sale Price: 370
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

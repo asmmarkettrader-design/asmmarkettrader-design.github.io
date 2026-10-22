@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dymatize Super Mass Gainer High-Calorie Weight Gainer Protein Powder
 Product ID: hhc-3760823
 SKU: hhc-3760823
@@ -7,11 +8,16 @@ Slug: dymatize-super-mass-gainer-high-calorie-weight-gainer-protein-powder-hhc-3
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/a84e3dda771485ebd56382895796b656.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/a84e3dda771485ebd56382895796b656.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/063a2119f2d5b7992c39a2fab310d6b2.jpeg
 Meta Title: Dymatize Super Mass Gainer High-Calorie Weight Gainer Protein Powder
 Meta Description: Buy Dymatize Super Mass Gainer High-Calorie Weight Gainer Protein Powder online in Pakistan from ASM VEO. Dymatize Super Mass Gainer is a high-calorie protein s
 Description: Dymatize Super Mass Gainer is a high-calorie protein supplement designed to support rapid weight gain and muscle growth with a powerful blend of protein, carbs, creatine, and essential nutrients.
-Regular Price: 2150
-Sale Price: 2150
+Wholesale Price: 2150
+Regular Price: 3850
+Sale Price: 3082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

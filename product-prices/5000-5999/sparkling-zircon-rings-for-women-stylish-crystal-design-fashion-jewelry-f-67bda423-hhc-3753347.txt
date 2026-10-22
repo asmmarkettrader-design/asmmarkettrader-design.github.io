@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sparkling Zircon Rings For Women | Stylish Crystal Design Fashion Jewelry For Daily And Party Wear PXJ-133
 Product ID: hhc-3753347
 SKU: hhc-3753347
@@ -7,11 +8,16 @@ Slug: sparkling-zircon-rings-for-women-stylish-crystal-design-fashion-jewelry-67
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/c8090c056cbdc48e269b59e3b8b5ede5.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/c8090c056cbdc48e269b59e3b8b5ede5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/5cb55f4f2f08da43d1fac6265708a9b4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/a27e812fc31cbdc60af3d0d8002ffd86.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/0cc5fd0a1c3fb4649fa222f0683d86e5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/90313692e0177e4b776b6c44ca4fcc04.jpeg
 Meta Title: Sparkling Zircon Rings For Women | Stylish Crystal Design Fashion Je
 Meta Description: Buy Sparkling Zircon Rings For Women | Stylish Crystal Design Fashion Jewelry For Daily And Party Wear PXJ-133 online in Pakistan from ASM VEO. Beautiful Sparkl
 Description: Beautiful Sparkling Zircon Rings Designed To Add Shine And Elegance To Your Everyday And Party Outfits.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

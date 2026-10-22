@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ladies Square Dial Digital Watch Stylish Design Clear Display Comfortable Strap Easy To Use Reliable Performance Perfect For Daily Wear
 Product ID: hhc-3753815
 SKU: hhc-3753815
@@ -7,11 +8,16 @@ Slug: ladies-square-dial-digital-watch-stylish-design-clear-display-comfortab-21
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/b1e0f03352776c9b5f0306a5b3c98b88.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/b1e0f03352776c9b5f0306a5b3c98b88.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/a2e8427318649101a14b032d6f63386d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/4179f65644b8494a3429b9aa0485aa20.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/c37f2c0c2e7aa950e54e42513a35fff7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/b2740ce2117dd889fb96cbd851c38f1b.jpeg
 Meta Title: Ladies Square Dial Digital Watch Stylish Design Clear Display Comfor
 Meta Description: Buy Ladies Square Dial Digital Watch Stylish Design Clear Display Comfortable Strap Easy To Use Reliable Performance Perfect For Daily Wear online in Pakistan f
 Description: Ladies Square Dial Digital Watch Provides Stylish Design Clear Display Comfortable Strap And Reliable Performance
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Corolla 96 Radiator Cooling Plate AE110/AE111 Red
 Product ID: hhc-3763786
 SKU: hhc-3763786
@@ -7,11 +8,16 @@ Slug: corolla-96-radiator-cooling-plate-ae110-ae111-red-hhc-3763786
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/9f2032f9f91fc979ecf2f5ceb715165d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/9f2032f9f91fc979ecf2f5ceb715165d.jpeg
 Meta Title: Corolla 96 Radiator Cooling Plate AE110/AE111 Red | Buy Online in Pa
 Meta Description: Buy Corolla 96 Radiator Cooling Plate AE110/AE111 Red online in Pakistan from ASM VEO. Upgrade your Corolla’s engine bay with this stylish red radiator cooling
 Description: Upgrade your Corolla’s engine bay with this stylish red radiator cooling plate, designed for a clean and sporty appearance.
-Regular Price: 3709
-Sale Price: 3709
+Wholesale Price: 3709
+Regular Price: 6250
+Sale Price: 5002
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

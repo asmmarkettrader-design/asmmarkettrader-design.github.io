@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cleopatra Super Plus Sanitary Pads – Pack of 10 Maxi Thick Pads
 Product ID: hhc-3763121
 SKU: hhc-3763121
@@ -7,11 +8,16 @@ Slug: cleopatra-super-plus-sanitary-pads-pack-of-10-maxi-thick-pads-hhc-3763121
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/a72d1cffce8b8e8e9501054a25d9d881.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/a72d1cffce8b8e8e9501054a25d9d881.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/927eba71f900bc5c471cb025a2dee42a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/f79cd0ae2581b1311038e97ed885c140.jpeg
 Meta Title: Cleopatra Super Plus Sanitary Pads – Pack of 10 Maxi Thick Pads | Bu
 Meta Description: Buy Cleopatra Super Plus Sanitary Pads – Pack of 10 Maxi Thick Pads online in Pakistan from ASM VEO. Stay comfortable and protected with Cleopatra Super Plus Sa
 Description: Stay comfortable and protected with Cleopatra Super Plus Sanitary Pads. Designed with a soft cotton surface, maxi-thick absorbency, breathable comfort, and long-lasting odor protection for reliable everyday use.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

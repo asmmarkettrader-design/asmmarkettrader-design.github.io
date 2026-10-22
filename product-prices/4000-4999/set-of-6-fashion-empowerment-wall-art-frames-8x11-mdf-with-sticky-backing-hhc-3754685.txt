@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 6 Fashion & Empowerment Wall Art Frames – 8x11" MDF with Sticky Backing
 Product ID: hhc-3754685
 SKU: hhc-3754685
@@ -7,11 +8,16 @@ Slug: set-of-6-fashion-empowerment-wall-art-frames-8x11-mdf-with-sticky-backing-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/431004b05cc2cfd441d37994b2cc78b3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/431004b05cc2cfd441d37994b2cc78b3.jpg
 Meta Title: Set of 6 Fashion & Empowerment Wall Art Frames – 8x11" MDF with Stic
 Meta Description: Buy Set of 6 Fashion & Empowerment Wall Art Frames – 8x11" MDF with Sticky Backing online in Pakistan from ASM VEO. Six MDF wooden frames with bold, beauty-insp
 Description: Six MDF wooden frames with bold, beauty-inspired quotes and illustrations. Easy to mount with sticky tape.
-Regular Price: 753
-Sale Price: 753
+Wholesale Price: 703
+Regular Price: 1350
+Sale Price: 1079
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

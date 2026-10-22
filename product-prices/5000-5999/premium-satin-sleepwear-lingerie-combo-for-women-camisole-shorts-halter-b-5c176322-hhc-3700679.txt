@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Satin Sleepwear & Lingerie Combo for Women | Camisole, Shorts & Halter Bikini | Free Size | (DC-4002)
 Product ID: hhc-3700679
 SKU: hhc-3700679
@@ -7,11 +8,16 @@ Slug: premium-satin-sleepwear-lingerie-combo-for-women-camisole-shorts-halter-5c
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_181813.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_181813.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_182003.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250830_092634-2.png
 Meta Title: Premium Satin Sleepwear & Lingerie Combo for Women | Camisole, Short
 Meta Description: Buy Premium Satin Sleepwear & Lingerie Combo for Women | Camisole, Shorts & Halter Bikini | Free Size | (DC-4002) online in Pakistan from ASM VEO. Premium Satin
 Description: Premium Satin Sleepwear & Lingerie Combo for Women | Camisole, Shorts & Halter Bikini | Free Size
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Khana Kaba Wooden Wall Art – 3 Piece Islamic Frame Set Made With Wooden Stickytile, Each Frame 8x11 Inches, Easy To Install With Included Double Tape
 Product ID: hhc-3752522
 SKU: hhc-3752522
@@ -7,11 +8,16 @@ Slug: khana-kaba-wooden-wall-art-3-piece-islamic-frame-set-made-with-wooden-s-c7
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/fa6cef9f2b3c8132d12cf8b58b7bf33e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/fa6cef9f2b3c8132d12cf8b58b7bf33e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/0c8a985425bf3761d5adad705b9228c4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/75772b69beffc997661eca11e1ee3bdf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/f2f417b068c11209432f3c1a2c00e92f.png
 Meta Title: Khana Kaba Wooden Wall Art – 3 Piece Islamic Frame Set Made With Woo
 Meta Description: Buy Khana Kaba Wooden Wall Art – 3 Piece Islamic Frame Set Made With Wooden Stickytile, Each Frame 8x11 Inches, Easy To Install With Included Double Tape online
 Description: Elegant 3 Piece Khana Kaba Wooden Wall Art Frame Set Made From Durable Wooden Stickytile, Each 8x11 Inches With Double Tape For Easy Wall Mounting.
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

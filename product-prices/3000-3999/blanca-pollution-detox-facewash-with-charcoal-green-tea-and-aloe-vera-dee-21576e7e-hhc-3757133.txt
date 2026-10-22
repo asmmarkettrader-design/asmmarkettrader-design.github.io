@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Blanca Pollution Detox Facewash With Charcoal Green Tea And Aloe Vera Deep Cleansing 100ml
 Product ID: hhc-3757133
 SKU: hhc-3757133
@@ -7,11 +8,16 @@ Slug: blanca-pollution-detox-facewash-with-charcoal-green-tea-and-aloe-vera-d-21
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/dfddf30248006f3e87f759419d55d25c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/dfddf30248006f3e87f759419d55d25c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/6b676755102a019d297188561ac30001.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/91a1dc4cc15583de9d094b3a281547bf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/0de0abd006ac8ebb4d192d50b9c54efb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/4c1deb4d38e3a2f091a7173e45097d19.jpeg
 Meta Title: Blanca Pollution Detox Facewash With Charcoal Green Tea And Aloe Ver
 Meta Description: Buy Blanca Pollution Detox Facewash With Charcoal Green Tea And Aloe Vera Deep Cleansing 100ml online in Pakistan from ASM VEO. Blanca Pollution Detox Facewash
 Description: Blanca Pollution Detox Facewash Deeply Cleanses Skin Removes Impurities And Maintains Natural Moisture For A Fresh Revitalized Glow.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

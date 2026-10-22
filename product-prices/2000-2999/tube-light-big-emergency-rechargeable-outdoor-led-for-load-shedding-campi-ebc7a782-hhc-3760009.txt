@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tube Light Big Emergency Rechargeable Outdoor LED For load shedding camping and everyday lighting needs
 Product ID: hhc-3760009
 SKU: hhc-3760009
@@ -7,11 +8,16 @@ Slug: tube-light-big-emergency-rechargeable-outdoor-led-for-load-shedding-cam-eb
 Category: Electrical Supplies
 Subcategory: Bulbs
 Brand: ASM VEO
-Meta Title: Tube Light Big Emergency Rechargeable Outdoor LED For load shedding
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/f2f6dfcacdba8daf52ca97a94b7252d5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/f2f6dfcacdba8daf52ca97a94b7252d5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/bfdfd71f6d748828e5e36212212081ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/2377a4de4a28951e2b632e4b548ebbdb.jpeg
+Meta Title: Tube Light Big Emergency Rechargeable Outdoor LED For load shedding 
 Meta Description: Buy Tube Light Big Emergency Rechargeable Outdoor LED For load shedding camping and everyday lighting needs online in Pakistan from ASM VEO. Bright, reliable, a
 Description: Bright, reliable, and easy to use, this rechargeable LED tube light is perfect for emergencies, outdoor use, load shedding, camping, and everyday lighting needs. Designed for long-lasting performance with powerful illumination and portable convenience.
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

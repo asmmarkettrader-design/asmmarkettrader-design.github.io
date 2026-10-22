@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Product Showcase: Premium Coconut Whitening Moisturizing Body Lotion - Luxurious Skincare
 Product ID: hhc-3754291
 SKU: hhc-3754291
@@ -7,11 +8,16 @@ Slug: product-showcase-premium-coconut-whitening-moisturizing-body-lotion-lux-85
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/62cc029808faa1406fd373fd0b69d848.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/62cc029808faa1406fd373fd0b69d848.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/fceb0136ff6ca4e13abd8a164dd7dc7b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/4eab9f2c54ced3e67d2991c0e02a68f4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/e6cc10aa34b3be5bf1fdfd890d598698.png
 Meta Title: Product Showcase: Premium Coconut Whitening Moisturizing Body Lotion
 Meta Description: Buy Product Showcase: Premium Coconut Whitening Moisturizing Body Lotion - Luxurious Skincare online in Pakistan from ASM VEO. A stunning vertical photograph sh
 Description: A stunning vertical photograph showcasing a bottle of "Whitening Moisturizing Body Lotion with Coconut" displayed on a marble surface. The scene is styled with whole and halved coconuts, green palm fronds, and a soft, sunlit bathroom backdrop, emphasizing the product's natural, hydrating ingredients
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

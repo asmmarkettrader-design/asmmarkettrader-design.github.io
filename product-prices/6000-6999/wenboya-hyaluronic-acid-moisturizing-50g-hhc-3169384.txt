@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wenboya hyaluronic acid moisturizing (50G)
 Product ID: hhc-3169384
 SKU: hhc-3169384
@@ -7,11 +8,16 @@ Slug: wenboya-hyaluronic-acid-moisturizing-50g-hhc-3169384
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-3.23.46-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-3.23.46-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/fd6a8cb8-e86c-43c7-aa17-b53164e166e3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/s-l960-1-2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/s-l960-7.webp
 Meta Title: Wenboya hyaluronic acid moisturizing (50G) | Buy Online in Pakistan
 Meta Description: Buy Wenboya hyaluronic acid moisturizing (50G) online in Pakistan from ASM VEO. Wenboya Hyaluronic Acid Moisturizing Serum Deep hydration meets gentle skincare
 Description: Wenboya Hyaluronic Acid Moisturizing Serum Deep hydration meets gentle skincare with Wenboya's Hyaluronic Acid Moisturizing cream . Formulated with high-purity hyaluronic acid, this lightweight cream penetrates deeply to deliver intense moisture, improving skin elasticity and leaving your complexion plump, smooth, and refreshed. Ideal for all skin types, including sensitive skin, it helps restore the skin’s natural barrier and retains moisture for long-lasting hydration throughout the day. Key Benefits: Deeply hydrates and locks in moisture Improves skin texture and suppleness Lightweight, non-greasy, and fast-absorbing [video width="474" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Video-2025-05-07-at-3.27.17-PM.mp4"][/video]
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Couple Leopard Print & Black Satin Sleepwear Set – 4 Pcs Robe & Nightdress Set (DC-1021)
 Product ID: hhc-3756312
 SKU: hhc-3756312
@@ -7,11 +8,16 @@ Slug: couple-leopard-print-black-satin-sleepwear-set-4-pcs-robe-nightdress-set-d
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/31948d7ecd13f7a934e1b9bc49dcf4bf.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/31948d7ecd13f7a934e1b9bc49dcf4bf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/dea838698167265250356077f7a62586.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/41d14a355ea6d8dd65844b81597fdb2e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/e83bdb5d38c63b3d04e69a16dcc4c831.png
 Meta Title: Couple Leopard Print & Black Satin Sleepwear Set – 4 Pcs Robe & Nigh
 Meta Description: Buy Couple Leopard Print & Black Satin Sleepwear Set – 4 Pcs Robe & Nightdress Set (DC-1021) online in Pakistan from ASM VEO. Luxury 4-piece couple sleepwear se
 Description: Luxury 4-piece couple sleepwear set featuring a men’s leopard print robe with shorts and a women’s black satin nightdress with matching leopard print robe. Stylish, comfortable, and perfect for romantic nights.
-Regular Price: 3849
-Sale Price: 3849
+Wholesale Price: 3849
+Regular Price: 6480
+Sale Price: 5184
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

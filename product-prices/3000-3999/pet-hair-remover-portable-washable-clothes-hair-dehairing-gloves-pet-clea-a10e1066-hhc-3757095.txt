@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pet Hair Remover Portable Washable Clothes Hair Dehairing Gloves Pet Cleaning Products Pet Accessories
 Product ID: hhc-3757095
 SKU: hhc-3757095
@@ -7,11 +8,16 @@ Slug: pet-hair-remover-portable-washable-clothes-hair-dehairing-gloves-pet-cl-a1
 Category: Pets & Animals
 Subcategory: Grooming Products
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/97006e423bc148b5001ad61c90a65f3a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/97006e423bc148b5001ad61c90a65f3a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/b25a8dc8383b14a4e4ea730fa11a4187.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/0710570b95de9a2fb9a410b288c21165.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/d2d7db7b7f7131de12ca3de1bf733ac5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/a5a0da2f60debf74ae9d5aafb77c9450.jpeg
 Meta Title: Pet Hair Remover Portable Washable Clothes Hair Dehairing Gloves Pet
 Meta Description: Buy Pet Hair Remover Portable Washable Clothes Hair Dehairing Gloves Pet Cleaning Products Pet Accessories online in Pakistan from ASM VEO. Multi-purpose groomi
 Description: Multi-purpose grooming gloves that easily remove loose hair, dust, and dirt while giving your pet a gentle massage.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

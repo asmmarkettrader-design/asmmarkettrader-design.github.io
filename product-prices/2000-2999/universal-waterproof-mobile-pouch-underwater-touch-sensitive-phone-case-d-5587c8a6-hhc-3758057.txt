@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Waterproof Mobile Pouch | Underwater Touch Sensitive Phone Case | Dry Bag for Rain, Swimming & Travel | Premium Protection Cover (Random Color)
 Product ID: hhc-3758057
 SKU: hhc-3758057
@@ -7,11 +8,16 @@ Slug: universal-waterproof-mobile-pouch-underwater-touch-sensitive-phone-case-55
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/cf951724157f09e18b2d09cbd395ef87.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/cf951724157f09e18b2d09cbd395ef87.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/e076963344a86a7987a747108558d580.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/54d87b395754696673ea0fc87a3a380f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/22a92bde1c0005331133d4ca3a42781d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/438e022ce259c799c4513f6ed26cdb37.jpg
 Meta Title: Universal Waterproof Mobile Pouch | Underwater Touch Sensitive Phone
 Meta Description: Buy Universal Waterproof Mobile Pouch | Underwater Touch Sensitive Phone Case | Dry Bag for Rain, Swimming & Travel | Premium Protection Cover (Random Color) on
 Description: Keep your smartphone safe and dry with this Universal Waterproof Mobile Pouch. Featuring a secure dual-lock seal and touch-sensitive transparent material, it provides full protection against water, rain, and dust while allowing you to use your phone underwater.
-Regular Price: 255
-Sale Price: 255
+Wholesale Price: 205
+Regular Price: 518
+Sale Price: 368
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

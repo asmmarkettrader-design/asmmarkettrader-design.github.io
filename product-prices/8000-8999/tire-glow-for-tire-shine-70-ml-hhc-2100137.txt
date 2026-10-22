@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tire glow for tire shine 70 ML
 Product ID: hhc-2100137
 SKU: hhc-2100137
@@ -7,11 +8,16 @@ Slug: tire-glow-for-tire-shine-70-ml-hhc-2100137
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.23.03-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.23.03-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.23.03-PM.jpeg
 Meta Title: Tire glow for tire shine 70 ML | Buy Online in Pakistan
 Meta Description: Buy Tire glow for tire shine 70 ML online in Pakistan from ASM VEO. Discription Giving show-car look Prevent from dust Long Lasting desirable shine Resistant Ca
 Description: Discription Giving show-car look Prevent from dust Long Lasting desirable shine Resistant to wash from weather. Available in 70ml * Harris Tyre Glow adds shine to your tires.• Easy to apply and long-lasting formula.• Suitable for all types of tires.• Made in Pakistan with high-quality ingredients.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rose Essential Oil for Hair Growth Nutrient Solution Hair Growth Essence Liquid Fast Natural Hair Loss Treatment Hair Care, 100% Pure Natural 30ml
 Product ID: hhc-856681
 SKU: hhc-856681
@@ -7,11 +8,16 @@ Slug: rose-essential-oil-for-hair-growth-nutrient-solution-hair-growth-essenc-21
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2024-03-06-at-1.44.41-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2024-03-06-at-1.44.41-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2024-03-06-at-1.44.26-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2024-03-06-at-1.44.25-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2024-03-06-at-1.44.25-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2024-03-06-at-1.44.24-PM-1.jpeg
 Meta Title: Rose Essential Oil for Hair Growth Nutrient Solution Hair Growth Ess
 Meta Description: Buy Rose Essential Oil for Hair Growth Nutrient Solution Hair Growth Essence Liquid Fast Natural Hair Loss Treatment Hair Care, 100% Pure Natural 30ml online in
 Description: Rose Essential Oil for Hair Growth Nutrient Solution Hair Growth Essence Liquid Fast Natural Hair Loss Treatment Hair Care, 100% Pure Natural 30ml
-Regular Price: 726
-Sale Price: 726
+Wholesale Price: 676
+Regular Price: 1300
+Sale Price: 1040
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

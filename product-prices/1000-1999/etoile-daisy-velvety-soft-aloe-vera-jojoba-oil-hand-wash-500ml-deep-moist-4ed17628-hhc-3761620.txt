@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Etoile Daisy Velvety Soft Aloe Vera & Jojoba Oil Hand Wash 500ml – Deep Moisturizing Liquid Hand Soap for Soft & Healthy Hands in Pakistan
 Product ID: hhc-3761620
 SKU: hhc-3761620
@@ -7,11 +8,16 @@ Slug: etoile-daisy-velvety-soft-aloe-vera-jojoba-oil-hand-wash-500ml-deep-moi-4e
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/5db2c7d45728f96df1cdfec0e82da92f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/5db2c7d45728f96df1cdfec0e82da92f.png
 Meta Title: Etoile Daisy Velvety Soft Aloe Vera & Jojoba Oil Hand Wash 500ml – D
 Meta Description: Buy Etoile Daisy Velvety Soft Aloe Vera & Jojoba Oil Hand Wash 500ml – Deep Moisturizing Liquid Hand Soap for Soft & Healthy Hands in Pakistan online in Pakista
 Description: Enjoy clean, soft, and nourished hands with Etoile Daisy Velvety Soft Aloe Vera & Jojoba Oil Hand Wash, enriched with Aloe Vera and Jojoba Oil to gently cleanse while helping maintain your skin's natural moisture.
-Regular Price: 506
-Sale Price: 506
+Wholesale Price: 456
+Regular Price: 930
+Sale Price: 744
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heavy-Duty 110GSM Storage Bag – Foldable Closet Organizer for Clothes, Quilts & Blankets
 Product ID: hhc-3764998
 SKU: hhc-3764998
@@ -7,11 +8,16 @@ Slug: heavy-duty-110gsm-storage-bag-foldable-closet-organizer-for-clothes-qui-1c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/fbbf878952be98c67fb886018dda186e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/fbbf878952be98c67fb886018dda186e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/c47626aa92395cb4f5d5b253d6ac9c78.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/c1d1ed4a33c81c3760fecd38d34137fa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/9e1101ab84f5f8e8aa73b2dba5ab5994.jpg
 Meta Title: Heavy-Duty 110GSM Storage Bag – Foldable Closet Organizer for Clothe
 Meta Description: Buy Heavy-Duty 110GSM Storage Bag – Foldable Closet Organizer for Clothes, Quilts & Blankets online in Pakistan from ASM VEO. Declutter your wardrobe with the H
 Description: Declutter your wardrobe with the Heavy-Duty 110GSM Storage Bag. Crafted from thickened, breathable non-woven fabric with a clear viewing window, this spacious closet organizer protects your quilts, blankets, and seasonal garments from dust while keeping your space neatly arranged.
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

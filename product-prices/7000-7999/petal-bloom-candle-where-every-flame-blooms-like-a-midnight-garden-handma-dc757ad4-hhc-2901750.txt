@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Petal Bloom Candle | Where Every Flame Blooms Like a Midnight Garden – Handmade Jasmine Sambac Soy Wax Candle - 100 gram
 Product ID: hhc-2901750
 SKU: hhc-2901750
@@ -7,11 +8,16 @@ Slug: petal-bloom-candle-where-every-flame-blooms-like-a-midnight-garden-hand-dc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Petal-Bloom.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Petal-Bloom.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/petal-bloom.jpg
 Meta Title: Petal Bloom Candle | Where Every Flame Blooms Like a Midnight Garden
 Meta Description: Buy Petal Bloom Candle | Where Every Flame Blooms Like a Midnight Garden – Handmade Jasmine Sambac Soy Wax Candle - 100 gram online in Pakistan from ASM VEO. Pe
 Description: Petal Bloom Candle | Where Every Flame Blooms Like a Midnight Garden – Handmade Jasmine Sambac Soy Wax Candle - 100 gram Product Description: Net Weight: 100 grams(Exclusive of jar weight) Made with 100% pure Soy Wax Eco Friendly Burn time upto 25 hours Purely handmade Product Notes: rich, floral, and intoxicating aroma Intense, sweet, and exotic floral scent Motiya (Jasmine Sambac-symbol of purity and love)
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

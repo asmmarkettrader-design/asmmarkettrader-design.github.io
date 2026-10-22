@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital Kids Camera With Fun Photo Modes, HD Lens, Rechargeable Battery And Durable Child-Friendly Design For Photography Learning And Creative Play (Random Color)
 Product ID: hhc-3753675
 SKU: hhc-3753675
@@ -7,11 +8,16 @@ Slug: digital-kids-camera-with-fun-photo-modes-hd-lens-rechargeable-battery-a-0b
 Category: Gadgets
 Subcategory: Smart Watches
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/2b37a24688c696c9b822fb474065b190.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/2b37a24688c696c9b822fb474065b190.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/129749598da18c077b3817a5eb5d5807.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/537a32a45247d0a3f09240bb1d3bdf4d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/c7ca642f46397b93113aa4320218aaa0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/72bf35f2fbecdceb4fa29d97c741be6e.jpg
 Meta Title: Digital Kids Camera With Fun Photo Modes, HD Lens, Rechargeable Batt
 Meta Description: Buy Digital Kids Camera With Fun Photo Modes, HD Lens, Rechargeable Battery And Durable Child-Friendly Design For Photography Learning And Creative Play (Random
 Description: A Cute And Durable Digital Kids Camera Designed To Help Children Capture Photos And Videos Easily With Fun Modes, HD Lens And Rechargeable Battery.
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

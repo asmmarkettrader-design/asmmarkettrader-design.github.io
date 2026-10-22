@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AirPods Pro 2nd Generation Wireless Bluetooth Earbuds – Premium Sound, Noise Cancellation & Touch Control
 Product ID: hhc-3758710
 SKU: hhc-3758710
@@ -7,11 +8,16 @@ Slug: airpods-pro-2nd-generation-wireless-bluetooth-earbuds-premium-sound-noi-63
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/15/bb2887a9a225e510b4621de6da6c7424.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/15/bb2887a9a225e510b4621de6da6c7424.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/1356c05d8583d323a56401d2f24f8f73.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/7db2a21577987ffc366937136a2f719f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/4662362d8b5873454201fe60daa2cff8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/61e96200e4263f2ca18ef07a9c96700b.jpeg
 Meta Title: AirPods Pro 2nd Generation Wireless Bluetooth Earbuds – Premium Soun
 Meta Description: Buy AirPods Pro 2nd Generation Wireless Bluetooth Earbuds – Premium Sound, Noise Cancellation & Touch Control online in Pakistan from ASM VEO. Premium stereo so
 Description: Premium stereo sound with deep bass and clear audio quality Advanced noise isolation for immersive music and calling experience Fast and stable Bluetooth wireless connectivity Smart touch controls for music, calls, and voice assistant access Comfortable ergonomic in-ear design for long-time use Port
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

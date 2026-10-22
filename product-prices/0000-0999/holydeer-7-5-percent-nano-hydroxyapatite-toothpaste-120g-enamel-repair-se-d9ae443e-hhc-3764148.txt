@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Holydeer 7.5 Percent Nano Hydroxyapatite Toothpaste 120G Enamel Repair Sensitivity Relief Whitening Practical Choice For Daily Oral Care
 Product ID: hhc-3764148
 SKU: hhc-3764148
@@ -7,11 +8,16 @@ Slug: holydeer-7-5-percent-nano-hydroxyapatite-toothpaste-120g-enamel-repair-d9a
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/e8ad42895fe1fb3c4e97cfc4c5bc35cb.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/e8ad42895fe1fb3c4e97cfc4c5bc35cb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/e0505035a64baa6e39ceb677de5d3f22.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/2a08cfb3ecd4664ff863e378dc646e5b.jpg
 Meta Title: Holydeer 7.5 Percent Nano Hydroxyapatite Toothpaste 120G Enamel Repa
 Meta Description: Buy Holydeer 7.5 Percent Nano Hydroxyapatite Toothpaste 120G Enamel Repair Sensitivity Relief Whitening Practical Choice For Daily Oral Care online in Pakistan
 Description: Holydeer 7.5 Percent Nano Hydroxyapatite Toothpaste 120G Enamel Repair Sensitivity Relief Whitening Practical Choice For Daily Oral Care.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

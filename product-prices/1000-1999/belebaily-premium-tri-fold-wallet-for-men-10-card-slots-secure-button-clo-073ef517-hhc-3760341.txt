@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket
 Product ID: hhc-3760341
 SKU: hhc-3760341
@@ -7,11 +8,16 @@ Slug: belebaily-premium-tri-fold-wallet-for-men-10-card-slots-secure-button-c-07
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/b5ce5b2ebc16846de8171c3764eedb8e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/b5ce5b2ebc16846de8171c3764eedb8e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/22c788d6cbbcd7dba362b2ce9a2ddbd2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/debdbe8ab5c11f070a0c51623c71e4d5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/4b1e457f90b0b217eabc7b169104055a.jpg
 Meta Title: Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Bu
 Meta Description: Buy Belebaily Premium Tri-Fold Wallet for Men – 10 Card Slots, Secure Button Closure, Large Cash Pocket online in Pakistan from ASM VEO. The Balebaily Tri-Fold
 Description: The Balebaily Tri-Fold Wallet is the perfect combination of modern style, excellent finishing and everyday convenience. It features 10 card slots, a large cash pocket and a secure button closure that keeps your cards and cash safe. Its three-fold design makes it compact and comfortable despite its large storage capacity. This beautiful wallet is available in black and brown colors.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

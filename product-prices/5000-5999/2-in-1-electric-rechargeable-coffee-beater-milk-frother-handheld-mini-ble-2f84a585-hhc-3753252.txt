@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Electric Rechargeable Coffee Beater & Milk Frother – Handheld Mini Blender & Egg Beater for Kitchen Use
 Product ID: hhc-3753252
 SKU: hhc-3753252
@@ -7,11 +8,16 @@ Slug: 2-in-1-electric-rechargeable-coffee-beater-milk-frother-handheld-mini-b-2f
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/1b6e7ce6726590dda3024268a7e008c4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/1b6e7ce6726590dda3024268a7e008c4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/948aa27184e28e9379d8703ad8720c02.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/c26d0179410799a474db62c8a1448906.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/32a7be4029e3bb86159b53c46fe1bcb2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/69cbbc963fd983d342c3da27c0fbdb65.jpeg
 Meta Title: 2-in-1 Electric Rechargeable Coffee Beater & Milk Frother – Handheld
 Meta Description: Buy 2-in-1 Electric Rechargeable Coffee Beater & Milk Frother – Handheld Mini Blender & Egg Beater for Kitchen Use online in Pakistan from ASM VEO. Rechargeable
 Description: Rechargeable 2-in-1 electric beater and frother for coffee, milk, and eggs — powerful, portable, and easy to use.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flamingo Plastic Restorer 300ML – Nano Technology Trim Reviver for Faded Exterior Plastic | Long-Lasting Shine & Protection
 Product ID: hhc-3757147
 SKU: hhc-3757147
@@ -7,11 +8,16 @@ Slug: flamingo-plastic-restorer-300ml-nano-technology-trim-reviver-for-faded-771
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/3c8f3596adb743abd2c7c37b0a47fa90.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/3c8f3596adb743abd2c7c37b0a47fa90.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/be0a7799d50331f492704c9ff936b645.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/51b6e57022ba74f97c43a47e2901fbff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/8540dfe606f58cb885ba65963bae8cd9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/7571d458f6299f4a64626806bc2fb0f3.jpeg
 Meta Title: Flamingo Plastic Restorer 300ML – Nano Technology Trim Reviver for F
 Meta Description: Buy Flamingo Plastic Restorer 300ML – Nano Technology Trim Reviver for Faded Exterior Plastic | Long-Lasting Shine & Protection online in Pakistan from ASM VEO.
 Description: Restore your car’s faded plastic trims with Flamingo Plastic Restorer 300ML. Its nano-tech formula penetrates deeply to revive color, enhance shine, and provide long-lasting protection with an easy, drip-free application for a like-new finish.
-Regular Price: 1176
-Sale Price: 1176
+Wholesale Price: 1126
+Regular Price: 2070
+Sale Price: 1659
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Micro Men’s Tracksuit Cup Hand Print – Comfortable Sportswear | Gym & Workout Suit
 Product ID: hhc-3763139
 SKU: hhc-3763139
@@ -7,11 +8,16 @@ Slug: premium-micro-men-s-tracksuit-cup-hand-print-comfortable-sportswear-gym-92
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/7591194ea6e985c3cac5a10d89727e64.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/7591194ea6e985c3cac5a10d89727e64.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/947ac4834df88f956a770d6623e0e509.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/a7540b1fb08d372d1c73e44b6e60f8ab.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/5b9758f5ac1f563b1d61355eeb621a62.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/af979525bac2e14887eb13e36cff1c7e.jpeg
 Meta Title: Premium Micro Men’s Tracksuit Cup Hand Print – Comfortable Sportswea
 Meta Description: Buy Premium Micro Men’s Tracksuit Cup Hand Print – Comfortable Sportswear | Gym & Workout Suit online in Pakistan from ASM VEO. Premium Micro Men's Tracksuit Wi
 Description: Premium Micro Men's Tracksuit With Cup Hand Print. Suitable For Gym, Workout, Sports, And Casual Wear. Available In Multiple Colors And Sizes.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable 300W Solar Powered LED Work Light IP66 Waterproof
 Product ID: hhc-3765469
 SKU: hhc-3765469
@@ -7,11 +8,16 @@ Slug: portable-300w-solar-powered-led-work-light-ip66-waterproof-hhc-3765469
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/d5c34ecf514350d82c5125cda6122d38.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/d5c34ecf514350d82c5125cda6122d38.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/6c9941de2f5cb4230a3b42cf6c7252f8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/94e8ff11064da81178cf546b0061adf0.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/31123fd687c40df43fb40179bd99fb3f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/03dea6077b01926ed62d158b9b0e418e.webp
 Meta Title: Portable 300W Solar Powered LED Work Light IP66 Waterproof | Buy Onl
 Meta Description: Buy Portable 300W Solar Powered LED Work Light IP66 Waterproof online in Pakistan from ASM VEO. The Portable 300W LED Work Light delivers powerful illumination
 Description: The Portable 300W LED Work Light delivers powerful illumination with a 5000lm high-brightness output, making it ideal for camping, outdoor work, and emergency lighting. Equipped with solar power and USB charging options, it ensures reliable performance anytime, anywhere.With 4 adjustable lighting modes, this work light adapts to different environments and needs. Its IP66 waterproof rating provides durability against rain and harsh weather, while the compact design makes it easy to carry and set up. A versatile and dependable lighting solution for outdoor enthusiasts and professionals alike.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

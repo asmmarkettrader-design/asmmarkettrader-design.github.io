@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HY Boutique Men's Summer shirt & Shorts Tracksuit Set – Lightweight & Comfortable Casual Wear
 Product ID: hhc-3760368
 SKU: hhc-3760368
@@ -7,11 +8,16 @@ Slug: hy-boutique-men-s-summer-shirt-shorts-tracksuit-set-lightweight-comfort-2b
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: HY Boutique Men's Summer shirt & Shorts Tracksuit Set – Lightweight
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/18a6e045f84e57360b1dc53c4d838011.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/18a6e045f84e57360b1dc53c4d838011.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/ab1a915b4757bd4f2d864b2c40555013.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/84538d9d60c9b3a83d1f5dd815cf1968.jpeg
+Meta Title: HY Boutique Men's Summer shirt & Shorts Tracksuit Set – Lightweight 
 Meta Description: Buy HY Boutique Men's Summer shirt & Shorts Tracksuit Set – Lightweight & Comfortable Casual Wear online in Pakistan from ASM VEO. Stay cool and comfortable dur
 Description: Stay cool and comfortable during hot summer days with the HY Boutique Men's Summer shirt Tracksuit Set. This stylish 2-piece outfit includes a sleeveless shirt and matching shorts, made from soft and breathable fabric for everyday wear, workouts, sports, and casual outings.
-Regular Price: 883
-Sale Price: 883
+Wholesale Price: 833
+Regular Price: 1580
+Sale Price: 1268
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Printed Tracksuits for Kids & Babies | Warm & Cozy Sweatshirt Set | Stylish Winter Clothes for Boys & Girls FOR BABY AND KIDS
 Product ID: hhc-3753375
 SKU: hhc-3753375
@@ -7,11 +8,16 @@ Slug: winter-printed-tracksuits-for-kids-babies-warm-cozy-sweatshirt-set-styl-84
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/c416030435ad82fa46a9cef8d2332d90.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/c416030435ad82fa46a9cef8d2332d90.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/2f41829ca871f9ea557fa9082a2a09f3.png
 Meta Title: Winter Printed Tracksuits for Kids & Babies | Warm & Cozy Sweatshirt
 Meta Description: Buy Winter Printed Tracksuits for Kids & Babies | Warm & Cozy Sweatshirt Set | Stylish Winter Clothes for Boys & Girls FOR BABY AND KIDS online in Pakistan from
 Description: Soft and warm printed winter tracksuits for kids and babies — cozy, stylish, and perfect for daily wear in cold weather.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

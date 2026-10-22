@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: K06A Motorcycle Helmet Bluetooth Headset – BT 6.0 Wireless Earphone with CVC Intelligent Noise Reduction, IP67 Waterproof, 800mAh Battery & Type-C Fast Charging
 Product ID: hhc-3761269
 SKU: hhc-3761269
@@ -7,11 +8,16 @@ Slug: k06a-motorcycle-helmet-bluetooth-headset-bt-6-0-wireless-earphone-with-008
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: K06A Motorcycle Helmet Bluetooth Headset – BT 6.0 Wireless Earphone
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/e419dbbe3b8437b555761deef50383c9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/e419dbbe3b8437b555761deef50383c9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/e58cc1c0ff6aa55a67cdbfd9c5870101.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/bb82710e50604494c295698d92b51ce7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/be05f556a0d5b88f3672483b59184503.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/85dabbc7edf897f575a81f503676bd5a.jpeg
+Meta Title: K06A Motorcycle Helmet Bluetooth Headset – BT 6.0 Wireless Earphone 
 Meta Description: Buy K06A Motorcycle Helmet Bluetooth Headset – BT 6.0 Wireless Earphone with CVC Intelligent Noise Reduction, IP67 Waterproof, 800mAh Battery & Type-C Fast Char
 Description: Stay connected safely on every ride with the K06A Motorcycle Helmet Bluetooth Headset.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

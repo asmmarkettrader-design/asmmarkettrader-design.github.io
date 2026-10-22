@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M / Logo Premium Slim Book Shape Leather Wallet for Men – 2 Cash Pockets, 6 Card Slots, 2 SIM Slots
 Product ID: hhc-3761889
 SKU: hhc-3761889
@@ -7,11 +8,16 @@ Slug: m-logo-premium-slim-book-shape-leather-wallet-for-men-2-cash-pockets-6-26a
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/76aca7af563b2c0a8b3a23116747c450.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/76aca7af563b2c0a8b3a23116747c450.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/9393da831a932c26422653de8d4bd28d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/cafc13ccc40c2dfbaad3cbe48683f43e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/7ba57c8cbe055bd4c3ed104e0ff0ebca.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/67cdf33b00f548fb01c52ecc20d67d77.webp
 Meta Title: M / Logo Premium Slim Book Shape Leather Wallet for Men – 2 Cash Poc
 Meta Description: Buy M / Logo Premium Slim Book Shape Leather Wallet for Men – 2 Cash Pockets, 6 Card Slots, 2 SIM Slots online in Pakistan from ASM VEO. Premium M / Logo Slim B
 Description: Premium M / Logo Slim Book Shape Wallet is made of high quality leather. It has 2 Cash Pockets, 6 Card Slots, 2 SIM Slots. Its slim and stylish design is perfect for everyday use. It is available in four beautiful colors: Black, Light Brown, Dark Brown and Grey.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

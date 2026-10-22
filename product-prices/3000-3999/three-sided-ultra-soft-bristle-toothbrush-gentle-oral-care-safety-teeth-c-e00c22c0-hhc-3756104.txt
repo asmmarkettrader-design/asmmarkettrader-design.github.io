@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Three-Sided Ultra Soft Bristle Toothbrush – Gentle Oral Care Safety Teeth Cleaning Brush | Pack of 2
 Product ID: hhc-3756104
 SKU: hhc-3756104
@@ -7,11 +8,16 @@ Slug: three-sided-ultra-soft-bristle-toothbrush-gentle-oral-care-safety-teeth-e0
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Three-Sided Ultra Soft Bristle Toothbrush – Gentle Oral Care Safety
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/31fa275aaeb9910ccadec92d72327530.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/31fa275aaeb9910ccadec92d72327530.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/95d44499491f1238be31518b1d754f86.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/1bedd223d5018d142c7724fff5ceba3c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/cc0e536722cba2a693142fabee3b6326.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/8f504fffa1ce00fe89d6ff4eec7a1b21.jpg
+Meta Title: Three-Sided Ultra Soft Bristle Toothbrush – Gentle Oral Care Safety 
 Meta Description: Buy Three-Sided Ultra Soft Bristle Toothbrush – Gentle Oral Care Safety Teeth Cleaning Brush | Pack of 2 online in Pakistan from ASM VEO. Three-sided soft hair
 Description: Three-sided soft hair toothbrush with ultra-fine bristles for gentle, effective, and complete teeth cleaning. Safe for sensitive gums and daily oral care.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

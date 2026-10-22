@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yf 286 Three In One Charger Durable Reliable Fast Charging Compact Design Suitable For Multiple Devices
 Product ID: hhc-3756106
 SKU: hhc-3756106
@@ -7,11 +8,16 @@ Slug: yf-286-three-in-one-charger-durable-reliable-fast-charging-compact-desi-94
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/ccb313f6fa5a7fea8d08c50079cdf1f8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/ccb313f6fa5a7fea8d08c50079cdf1f8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/f2c5f3b4949536c1cc2d931cad3cb4b5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/6a9a98197ddbdbd489db7672d41b38d9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/0ace2c34aeeb733075275e17b3272eb4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/ebea6cbd56c1014c5719f698312f005d.jpeg
 Meta Title: Yf 286 Three In One Charger Durable Reliable Fast Charging Compact D
 Meta Description: Buy Yf 286 Three In One Charger Durable Reliable Fast Charging Compact Design Suitable For Multiple Devices online in Pakistan from ASM VEO. Yf 286 Three In One
 Description: Yf 286 Three In One Charger Designed For Durable Reliable And Convenient Everyday Use
-Regular Price: 3709
-Sale Price: 3709
+Wholesale Price: 3709
+Regular Price: 6250
+Sale Price: 5002
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

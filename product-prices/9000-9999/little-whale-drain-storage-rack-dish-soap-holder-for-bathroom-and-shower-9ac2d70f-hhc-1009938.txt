@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Little Whale Drain Storage Rack Dish Soap Holder for Bathroom and Shower Self Draining Waterfall Soap Tray Kitchen (Random Color)
 Product ID: hhc-1009938
 SKU: hhc-1009938
@@ -7,11 +8,16 @@ Slug: little-whale-drain-storage-rack-dish-soap-holder-for-bathroom-and-showe-9a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/5-5.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/5-5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/4-5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/3-3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/2-3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/1-2.jpg
 Meta Title: Little Whale Drain Storage Rack Dish Soap Holder for Bathroom and Sh
 Meta Description: Buy Little Whale Drain Storage Rack Dish Soap Holder for Bathroom and Shower Self Draining Waterfall Soap Tray Kitchen (Random Color) online in Pakistan from AS
 Description: Product Description Name: Little Whale Drain Storage Rack Material: PP+ABS Color: random Purpose: toilet storage/drain and moisture-proof/tidy space Double layer drainage design, more thorough drainage, extend the service life of soap. The drain board can be disassembled to pour out the excess soap water to prevent the soap from softening. Easy to take, small objects can also be placed, more convenient to take. It has strong bearing capacity, firm sticking, waterproof and not easy to fall off.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

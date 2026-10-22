@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Speed-x SP-E27 Bulb Camera 1080P Wifi 360 Degree Panoramic Night Vision
 Product ID: hhc-3764537
 SKU: hhc-3764537
@@ -7,11 +8,16 @@ Slug: speed-x-sp-e27-bulb-camera-1080p-wifi-360-degree-panoramic-night-vision-hh
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/5337b76e644fa6980573fb39eba9248b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/5337b76e644fa6980573fb39eba9248b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/154d1d2be3dd4160bb6153dd347357d4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/39d28adc656e2ba38e6d4222106029ab.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/394f260c648124aeb84c65fa83867455.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/81d25c7cd7c83647b883ca4d9a003818.jpg
 Meta Title: Speed-x SP-E27 Bulb Camera 1080P Wifi 360 Degree Panoramic Night Vis
 Meta Description: Buy Speed-x SP-E27 Bulb Camera 1080P Wifi 360 Degree Panoramic Night Vision online in Pakistan from ASM VEO. Speed-x SP-E27 Smart Bulb Camera. Features: 1080P F
 Description: Speed-x SP-E27 Smart Bulb Camera. Features: 1080P Full HD video quality, 360-degree panoramic view (355° pan, 90° tilt), Two-way audio, Motion detection, Full-color night vision. Connectivity: 2.4GHz Wi-Fi (Tuya Smart / Smart Life compatible). Specifications: E27 bulb holder, Supports TF card up to 128GB. Dimensions: 15cm x 6.5cm.
-Regular Price: 4269
-Sale Price: 4269
+Wholesale Price: 4269
+Regular Price: 7160
+Sale Price: 5730
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

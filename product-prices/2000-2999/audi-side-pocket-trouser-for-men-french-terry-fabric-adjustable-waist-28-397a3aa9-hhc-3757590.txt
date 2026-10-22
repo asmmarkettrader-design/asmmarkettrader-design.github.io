@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Audi Side Pocket Trouser For Men French Terry Fabric Adjustable Waist 28 To 34 Inches Length 39 Inches
 Product ID: hhc-3757590
 SKU: hhc-3757590
@@ -7,11 +8,16 @@ Slug: audi-side-pocket-trouser-for-men-french-terry-fabric-adjustable-waist-2-39
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/72d4ea70aba1d79f9fb98d12e4da4a6e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/72d4ea70aba1d79f9fb98d12e4da4a6e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4c050233c02f4e317cd1931edea61c07.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/b02df0eb9757a114ce6b8a57323f1828.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/a81087a9c0bc7157112bb0308065c8ab.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/e837a70229c4e069886ea822730a7b80.jpeg
 Meta Title: Audi Side Pocket Trouser For Men French Terry Fabric Adjustable Wais
 Meta Description: Buy Audi Side Pocket Trouser For Men French Terry Fabric Adjustable Waist 28 To 34 Inches Length 39 Inches online in Pakistan from ASM VEO. Audi Side Pocket Tro
 Description: Audi Side Pocket Trouser For Men French Terry Fabric Adjustable Waist 28 To 34 Inches Length 39 Inches.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

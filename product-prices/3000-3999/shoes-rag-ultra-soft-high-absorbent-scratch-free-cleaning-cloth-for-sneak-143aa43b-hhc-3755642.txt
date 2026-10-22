@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shoes Rag – Ultra-Soft, High-Absorbent, Scratch-Free Cleaning Cloth for Sneakers, Leather Shoes & Daily Footwear Care
 Product ID: hhc-3755642
 SKU: hhc-3755642
@@ -7,11 +8,16 @@ Slug: shoes-rag-ultra-soft-high-absorbent-scratch-free-cleaning-cloth-for-sne-14
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Shoes Rag – Ultra-Soft, High-Absorbent, Scratch-Free Cleaning Cloth
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/7dbd9f7e925dc1997e20d9fb2fcf5423.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/7dbd9f7e925dc1997e20d9fb2fcf5423.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/7779788ad80a24a5e444a298db805489.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/0997208cffc6785fb02feced3b04b89c.jpeg
+Meta Title: Shoes Rag – Ultra-Soft, High-Absorbent, Scratch-Free Cleaning Cloth 
 Meta Description: Buy Shoes Rag – Ultra-Soft, High-Absorbent, Scratch-Free Cleaning Cloth for Sneakers, Leather Shoes & Daily Footwear Care online in Pakistan from ASM VEO. A sup
 Description: A super-soft, high-absorbent shoes rag designed to clean, shine, and protect all types of footwear without scratching. Perfect for sneaker lovers and daily shoe care.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

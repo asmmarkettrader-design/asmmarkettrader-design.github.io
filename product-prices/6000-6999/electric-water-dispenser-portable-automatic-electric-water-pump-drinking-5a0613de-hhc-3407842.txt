@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Water Dispenser Portable Automatic Electric Water Pump Drinking Bottle Switch USB Rechargeable Water Pump Machine
 Product ID: hhc-3407842
 SKU: hhc-3407842
@@ -7,11 +8,16 @@ Slug: electric-water-dispenser-portable-automatic-electric-water-pump-drinkin-5a
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-1.23.48-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-1.23.48-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-1.23.48-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-1.23.47-PM-1.jpeg
 Meta Title: Electric Water Dispenser Portable Automatic Electric Water Pump Drin
 Meta Description: Buy Electric Water Dispenser Portable Automatic Electric Water Pump Drinking Bottle Switch USB Rechargeable Water Pump Machine online in Pakistan from ASM VEO.
 Description: Electric Water Dispenser Portable Automatic Electric Water Pump Drinking Bottle Switch USB Rechargeable Water Pump MachineDescription:Automatic Electrical Water Pump Dispenser Type: 4 Walts Voltage: DC-5V Battery Capacity: 1200mA Material: ABS+Silicon Portable USB charging Portable Elegant &amp; Stylish Design High Quality Material Easy Turn On/Off Button Fits to 2 to 5 Gallon Water Bottles Instructions:Please recharge it for 4 hours before the first use.Do not use this product to extract alcohol, oil and other irritating liquids.Do not use this product to extract hot water more than 55℃.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

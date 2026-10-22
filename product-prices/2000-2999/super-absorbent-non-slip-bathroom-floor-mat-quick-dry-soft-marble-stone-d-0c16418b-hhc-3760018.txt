@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Super Absorbent Non-Slip Bathroom Floor Mat - Quick-Dry Soft Marble Stone Design 23 × 15 inch
 Product ID: hhc-3760018
 SKU: hhc-3760018
@@ -7,11 +8,16 @@ Slug: super-absorbent-non-slip-bathroom-floor-mat-quick-dry-soft-marble-stone-0c
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: Super Absorbent Non-Slip Bathroom Floor Mat - Quick-Dry Soft Marble
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/1bc5546ea4fce65374d0c25dbc5fa543.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/1bc5546ea4fce65374d0c25dbc5fa543.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/6bb8fe8c509ad123f0140e7fb677a0a4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/cbb82d30d8bd414eb59564a42c7e07a7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/1e5133a0daaab1545278f0f8ad81389d.jpeg
+Meta Title: Super Absorbent Non-Slip Bathroom Floor Mat - Quick-Dry Soft Marble 
 Meta Description: Buy Super Absorbent Non-Slip Bathroom Floor Mat - Quick-Dry Soft Marble Stone Design 23 × 15 inch online in Pakistan from ASM VEO. Add a touch of luxury to your
 Description: Add a touch of luxury to your bathroom with this Super Absorbent Non-Slip Floor Mat. Featuring a sophisticated marble stone design, this 23 × 15 inch mat offers exceptional water absorption and a secure, slip-resistant base for everyday safety.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

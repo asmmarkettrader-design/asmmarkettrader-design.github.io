@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aluminum Foil Butyl Rubber Tapes Self Adhesive Waterproof Tape 2 inch x 1.5 MTR
 Product ID: hhc-1061333
 SKU: hhc-1061333
@@ -7,11 +8,16 @@ Slug: aluminum-foil-butyl-rubber-tapes-self-adhesive-waterproof-tape-2-inch-x-1-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/433df6bea3c34d3246218c21e03ab15c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/433df6bea3c34d3246218c21e03ab15c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-13-at-1.15.54-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-13-at-1.15.54-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-13-at-1.15.53-PM-2-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-13-at-1.15.53-PM-1.jpeg
 Meta Title: Aluminum Foil Butyl Rubber Tapes Self Adhesive Waterproof Tape 2 inc
 Meta Description: Buy Aluminum Foil Butyl Rubber Tapes Self Adhesive Waterproof Tape 2 inch x 1.5 MTR online in Pakistan from ASM VEO. Product Description:Our leak proof tape is
 Description: Product Description:Our leak proof tape is built with highs quality butyl rubber and provides a durable bond at low and high temperatures.Conformable backing and pressure sensitive adhesive means it will adhere properly to a variety of smooth and irregular surfaces.Butyl seal tape is elastic, smooth and corrosion resistant, it has good waterproof performance, which can stops leak effectively.Size: 2 inch x 1.5 MTR
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

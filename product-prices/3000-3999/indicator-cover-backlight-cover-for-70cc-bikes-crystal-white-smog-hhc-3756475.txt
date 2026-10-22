@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Indicator Cover & Backlight Cover for 70cc Bikes – Crystal White & Smog
 Product ID: hhc-3756475
 SKU: hhc-3756475
@@ -7,11 +8,16 @@ Slug: indicator-cover-backlight-cover-for-70cc-bikes-crystal-white-smog-hhc-3756
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/f7638c275e50128e4176008376c4fd51.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/f7638c275e50128e4176008376c4fd51.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/106b33cf417144864fb4c7356f3a9eb6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/889589374c2c71882a0e8a5fe3814592.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/8c18e5c07a29f30857ce2156cf9938b5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/c939d16050eef5189eeda433fa388645.jpeg
 Meta Title: Indicator Cover & Backlight Cover for 70cc Bikes – Crystal White & S
 Meta Description: Buy Indicator Cover & Backlight Cover for 70cc Bikes – Crystal White & Smog online in Pakistan from ASM VEO. Upgrade your 70cc bike’s look with high-quality Ind
 Description: Upgrade your 70cc bike’s look with high-quality Indicator Covers and Backlight Covers available in stylish Crystal White and Smog finishes. Designed for durability, perfect fit, and enhanced appearance.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

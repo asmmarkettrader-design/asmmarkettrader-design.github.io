@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Winter Tracksuits | Warm Sweatshirt & Trouser Set for Boys & Girls | Cozy Baby Winter Clothes for Everyday Wear FOR BABY AND KIDS
 Product ID: hhc-3753376
 SKU: hhc-3753376
@@ -7,11 +8,16 @@ Slug: kids-winter-tracksuits-warm-sweatshirt-trouser-set-for-boys-girls-cozy-0ff
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/b17945ceff8b8f14679690433b9cf5cd.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/b17945ceff8b8f14679690433b9cf5cd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/2f41829ca871f9ea557fa9082a2a09f3.png
 Meta Title: Kids Winter Tracksuits | Warm Sweatshirt & Trouser Set for Boys & Gi
 Meta Description: Buy Kids Winter Tracksuits | Warm Sweatshirt & Trouser Set for Boys & Girls | Cozy Baby Winter Clothes for Everyday Wear FOR BABY AND KIDS online in Pakistan fr
 Description: Soft and warm winter tracksuit set for kids and babies — includes sweatshirt and trousers for ultimate comfort and style.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 Eyebrow Trimmer and Shaver, Recebrow Removal Flawless Hair Remover 2 in 1 Hair Remover Trimmer For Women, Flawless Facial Machine Razor, Painless Eye (With Box )
 Product ID: hhc-3366864
 SKU: hhc-3366864
@@ -7,11 +8,16 @@ Slug: 2-in-1-eyebrow-trimmer-and-shaver-recebrow-removal-flawless-hair-remove-0d
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/best-eyebrow-trimmer.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/best-eyebrow-trimmer.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/electric-eyebrow-shaver.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/electric-eyebrow-trimmer-Copy.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/eyebrow-shaver-pen.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/eyebrow-shaver.jpg
 Meta Title: 2 in 1 Eyebrow Trimmer and Shaver, Recebrow Removal Flawless Hair Re
 Meta Description: Buy 2 in 1 Eyebrow Trimmer and Shaver, Recebrow Removal Flawless Hair Remover 2 in 1 Hair Remover Trimmer For Women, Flawless Facial Machine Razor, Painless Eye
 Description: 2-in-1 Eyebrow Trimmer and Facial Hair Remover designed for convenient grooming. Ideal for shaping eyebrows and removing unwanted facial hair with a compact, easy-to-use design. Comes with a box.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

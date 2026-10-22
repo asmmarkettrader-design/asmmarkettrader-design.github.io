@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sleeveless Multi-Tone Body Stocking Night Dress for Women | Free Size | Lightweight & Breathable
 Product ID: hhc-3756089
 SKU: hhc-3756089
@@ -7,11 +8,16 @@ Slug: sleeveless-multi-tone-body-stocking-night-dress-for-women-free-size-lig-57
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/a127c4ba6ed8dc92b07081e2c512d4c4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/a127c4ba6ed8dc92b07081e2c512d4c4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/205e3f67a5d601fcbbebbe09f2cb86a6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/bd1d91078241b4437fd50361e0ea626b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/731cdc74c6097319f8ccc281b2e57825.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/0dd970b8b37b4554308926a52d153de4.png
 Meta Title: Sleeveless Multi-Tone Body Stocking Night Dress for Women | Free Siz
 Meta Description: Buy Sleeveless Multi-Tone Body Stocking Night Dress for Women | Free Size | Lightweight & Breathable online in Pakistan from ASM VEO. Stylish sleeveless multi-t
 Description: Stylish sleeveless multi-tone body stocking night dress made from lightweight, breathable fabric for all-night comfort. Free size with a flattering fit, perfect for sleepwear or intimate wear.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

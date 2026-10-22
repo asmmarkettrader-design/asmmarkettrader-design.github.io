@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Slim Metallic Pop-Up Card Holder – Minimalist RFID Blocking Wallet with Leather Wrap (Black)
 Product ID: hhc-3758539
 SKU: hhc-3758539
@@ -7,11 +8,16 @@ Slug: slim-metallic-pop-up-card-holder-minimalist-rfid-blocking-wallet-with-l-34
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/2ebeb67910132fa805fd1b5bf03b574b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/2ebeb67910132fa805fd1b5bf03b574b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/200f28f81c212894de5ebcaa107f43d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/d087946983a3bebe3bdb3c6c7262121a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/0b7ff6183d61ef4bc9ad5ac68493efe4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/64364ea0a1f71a0729d35d2ac9ef26c3.jpeg
 Meta Title: Slim Metallic Pop-Up Card Holder – Minimalist RFID Blocking Wallet w
 Meta Description: Buy Slim Metallic Pop-Up Card Holder – Minimalist RFID Blocking Wallet with Leather Wrap (Black) online in Pakistan from ASM VEO. Upgrade your carry with the Sl
 Description: Upgrade your carry with the Slim Metallic Pop-Up Card Holder. Featuring a quick-access trigger mechanism and a sleek black leather wrap, this minimalist wallet securely holds your cards and cash while protecting your data with RFID-blocking technology.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

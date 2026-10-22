@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Waves Earbuds with Iphone – Bluetooth , ANC Noise Reduction, Deep Bass & Touch Control
 Product ID: hhc-3757196
 SKU: hhc-3757196
@@ -7,11 +8,16 @@ Slug: waves-earbuds-with-iphone-bluetooth-anc-noise-reduction-deep-bass-touch-co
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/cf65e1674610d211eeb1f39bd579c00c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/cf65e1674610d211eeb1f39bd579c00c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/0f026406f786b0936d9e7e73d67e88d0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/ecf50f706606b1ae2d1563c060897077.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/580f0e56320dcd1a5b9954803c0c8d12.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/ed80f646bdb1c530bb3fa6c23ffea085.jpeg
 Meta Title: Waves Earbuds with Iphone – Bluetooth , ANC Noise Reduction, Deep Ba
 Meta Description: Buy Waves Earbuds with Iphone – Bluetooth , ANC Noise Reduction, Deep Bass & Touch Control online in Pakistan from ASM VEO. Waves Wireless Earbuds come with adv
 Description: Waves Wireless Earbuds come with advanced Bluetooth connectivity, Iphone, and active noise cancellation. Designed for clear sound, deep bass, and comfortable fit, these earbuds are perfect for daily use, calls, and music.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

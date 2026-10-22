@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Wooden Hangers – Pack of 20 Durable Slim Hangers with Pants Bar – Smooth Finish for Closet Organization (Brown &amp; Light Wood) (With Box)
 Product ID: hhc-3697813
 SKU: hhc-3697813
@@ -7,11 +8,16 @@ Slug: premium-wooden-hangers-pack-of-20-durable-slim-hangers-with-pants-bar-s-aa
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: Premium Wooden Hangers – Pack of 20 Durable Slim Hangers with Pants
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_22_be94ca3e-1d32-4c1f-b8f9-4c467fad6253-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_22_be94ca3e-1d32-4c1f-b8f9-4c467fad6253-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_17_ef66249a-6b99-4977-a66e-c0e104ec67ee-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_202_fead15aa-ab24-4ddd-b62d-0d5250aa0741-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_199_fddc78cf-47a1-4e5b-bd55-6a7246ed9dc0-1.jpg
+Meta Title: Premium Wooden Hangers – Pack of 20 Durable Slim Hangers with Pants 
 Meta Description: Buy Premium Wooden Hangers – Pack of 20 Durable Slim Hangers with Pants Bar – Smooth Finish for Closet Organization (Brown &amp; Light Wood) (With Box) online i
 Description: Premium Wooden Hangers – Pack of 20 Durable Slim Hangers with Pants Bar – Smooth Finish for Closet Organization (Brown &amp; Light Wood) (With Box)
-Regular Price: 3990
-Sale Price: 3990
+Wholesale Price: 3990
+Regular Price: 6710
+Sale Price: 5367
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

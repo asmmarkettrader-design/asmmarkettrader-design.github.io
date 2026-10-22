@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Freedom – Impression of CK One | Citrus Aromatic Extrait de Parfum for Men & Women | 50ml with Premium Box & Carry Bag
 Product ID: hhc-3761514
 SKU: hhc-3761514
 Slug: freedom-impression-of-ck-one-citrus-aromatic-extrait-de-parfum-for-men-4ae87ed0-hhc-3761514
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/9fcfe66004717272ce0dfbc0ac9c3843.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/9fcfe66004717272ce0dfbc0ac9c3843.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/5be55f47d1d470d13c0931401c4e9608.png
 Meta Title: Freedom – Impression of CK One | Citrus Aromatic Extrait de Parfum f
 Meta Description: Buy Freedom – Impression of CK One | Citrus Aromatic Extrait de Parfum for Men & Women | 50ml with Premium Box & Carry Bag online in Pakistan from ASM VEO. Expe
 Description: Experience the timeless freshness of Freedom, inspired by CK One. This long-lasting Extrait de Parfum blends vibrant citrus, delicate florals, and clean woody musk for a refreshing unisex fragrance. Comes with a premium box and carry bag, making it perfect for daily wear or gifting.
-Regular Price: 3599
-Sale Price: 3599
+Wholesale Price: 2571
+Regular Price: 4560
+Sale Price: 3651
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

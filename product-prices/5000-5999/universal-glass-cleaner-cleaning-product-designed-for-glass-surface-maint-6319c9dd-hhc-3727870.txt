@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Glass Cleaner - Cleaning Product Designed For Glass Surface Maintenance And Daily Household Care Routine
 Product ID: hhc-3727870
 SKU: hhc-3727870
@@ -7,11 +8,16 @@ Slug: universal-glass-cleaner-cleaning-product-designed-for-glass-surface-mai-63
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/imgi_125_imgi_51_71rFjjIp6iL._AC_SL1500_37e66a1e-5cd7-4bf3-9c96-e70a4d309a95-1024x1024-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/imgi_125_imgi_51_71rFjjIp6iL._AC_SL1500_37e66a1e-5cd7-4bf3-9c96-e70a4d309a95-1024x1024-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/imgi_27_imgi_6_71wegWzG2aL._AC_SL1500-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/81MgO-12IRL.jpg
 Meta Title: Universal Glass Cleaner - Cleaning Product Designed For Glass Surfac
 Meta Description: Buy Universal Glass Cleaner - Cleaning Product Designed For Glass Surface Maintenance And Daily Household Care Routine online in Pakistan from ASM VEO. The Univ
 Description: The Universal Glass Cleaner Is A Cleaning Product Formulated To Help Provide Glass Surface Maintenance And Daily Household Care Utility During Use.
-Regular Price: 311
-Sale Price: 311
+Wholesale Price: 261
+Regular Price: 602
+Sale Price: 452
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Meal-It 3-Compartment Lunch Box (1000 ml Large) – Leak-Resistant Meal Prep Container for Neatly Separated Food Items
 Product ID: hhc-3753992
 SKU: hhc-3753992
@@ -7,11 +8,16 @@ Slug: meal-it-3-compartment-lunch-box-1000-ml-large-leak-resistant-meal-prep-61c
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/a8fe26907c53c69d30b2b281b5c4d683.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/a8fe26907c53c69d30b2b281b5c4d683.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/01556b53af6d47e2b741aef1c7a78c1b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/1187906ca1c1f1db0da44d71a5d2cdc8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/7dfb0fd58d6e666f9ed7938449764366.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/dc383bf92d3150d1e2aa62edcaee8e7e.jpg
 Meta Title: Meal-It 3-Compartment Lunch Box (1000 ml Large) – Leak-Resistant Mea
 Meta Description: Buy Meal-It 3-Compartment Lunch Box (1000 ml Large) – Leak-Resistant Meal Prep Container for Neatly Separated Food Items online in Pakistan from ASM VEO. Meal-i
 Description: Meal-it Box (Large 1000 ML) Description ​This is a compartmentalized lunch box or meal prep container designed to keep different food items separated.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

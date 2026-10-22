@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Branded Men’s Shorts Pocket BLACK | MEN | for Gym, Sports &amp; Fitness
 Product ID: hhc-3194645
 SKU: hhc-3194645
@@ -7,11 +8,16 @@ Slug: branded-men-s-shorts-pocket-black-men-for-gym-sports-amp-fitness-hhc-31946
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/b4bcd4e5085529a69ac7eba0d7dd61c3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/b4bcd4e5085529a69ac7eba0d7dd61c3.jpeg
 Meta Title: Branded Men’s Shorts Pocket BLACK | MEN | for Gym, Sports &amp; Fitn
 Meta Description: Buy Branded Men’s Shorts Pocket BLACK | MEN | for Gym, Sports &amp; Fitness online in Pakistan from ASM VEO. Branded Men’s Shorts Pocket BLACKSizes:MediumLargeE
 Description: Branded Men’s Shorts Pocket BLACKSizes:MediumLargeExtra LargeDetails:100% New &amp; Good QualityLook SmartGood StitchedReady to WearEasy WashPremium QualityFashionable Design Men’s Shorts Pocket BLACKNote: We recommend hand wash for long lasting life.Size Chart:Product's Picture:
-Regular Price: 465
-Sale Price: 465
+Wholesale Price: 415
+Regular Price: 850
+Sale Price: 682
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

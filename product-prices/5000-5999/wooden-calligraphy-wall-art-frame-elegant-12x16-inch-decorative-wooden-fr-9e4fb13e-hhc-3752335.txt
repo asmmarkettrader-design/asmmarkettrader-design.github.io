@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Calligraphy Wall Art Frame – Elegant 12x16 Inch Decorative Wooden Frame | Premium Quality Spiritual Home & Office Wall Decor
 Product ID: hhc-3752335
 SKU: hhc-3752335
@@ -7,11 +8,16 @@ Slug: wooden-calligraphy-wall-art-frame-elegant-12x16-inch-decorative-wooden-9e4
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/d3179e8a6805b1e908e0f4b3289854e3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/d3179e8a6805b1e908e0f4b3289854e3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/83604afa5727654388025c27a76bcad0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/ec93c65834784b812e253de84d5e9b54.mp4
 Meta Title: Wooden Calligraphy Wall Art Frame – Elegant 12x16 Inch Decorative Wo
 Meta Description: Buy Wooden Calligraphy Wall Art Frame – Elegant 12x16 Inch Decorative Wooden Frame | Premium Quality Spiritual Home & Office Wall Decor online in Pakistan from
 Description: Wooden Calligraphy Wall Art Frame – Elegant 12x16 Inch Decorative Wooden Frame | Premium Quality Spiritual Home & Office Wall Decor
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

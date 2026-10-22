@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Motivational Wall Art Frames – 8x11" MDF Wooden Phototiles with Sticky Tape for Easy Wall Mounting
 Product ID: hhc-3754742
 SKU: hhc-3754742
@@ -7,11 +8,16 @@ Slug: set-of-3-motivational-wall-art-frames-8x11-mdf-wooden-phototiles-with-s-03
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 3 Motivational Wall Art Frames – 8x11" MDF Wooden Phototiles
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/13a16fe559083b1a1f6eb3eb4ec9e354.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/13a16fe559083b1a1f6eb3eb4ec9e354.webp
+Meta Title: Set of 3 Motivational Wall Art Frames – 8x11" MDF Wooden Phototiles 
 Meta Description: Buy Set of 3 Motivational Wall Art Frames – 8x11" MDF Wooden Phototiles with Sticky Tape for Easy Wall Mounting online in Pakistan from ASM VEO. Elevate your sp
 Description: Elevate your space with this set of three motivational wall art frames, crafted from high-quality MDF wood. Each 8x11 inch phototile features a spiritually uplifting design and comes with pre-attached sticky tape for effortless wall mounting.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

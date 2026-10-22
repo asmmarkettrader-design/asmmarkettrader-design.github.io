@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Water dancing speakers ( bullet shape)  (random color)
 Product ID: hhc-2177476
 SKU: hhc-2177476
@@ -7,11 +8,16 @@ Slug: water-dancing-speakers-bullet-shape-random-color-hhc-2177476
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-16-at-5.04.36-PM-3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-16-at-5.04.36-PM-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-16-at-5.04.36-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-16-at-5.04.36-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/b91fd6630207eb282666d49545e6e9a6.jpeg
 Meta Title: Water dancing speakers ( bullet shape) (random color) | Buy Online i
 Meta Description: Buy Water dancing speakers ( bullet shape) (random color) online in Pakistan from ASM VEO. Bullet shape water dancing speaker Cash on Delivery, Rs 180 standard
 Description: Bullet shape water dancing speaker
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

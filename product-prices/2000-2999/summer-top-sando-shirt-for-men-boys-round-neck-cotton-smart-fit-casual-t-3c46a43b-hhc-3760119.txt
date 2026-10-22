@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Summer Top Sando Shirt for Men & Boys – Round Neck Cotton Smart Fit Casual T-Shirt – Trendy Spring & Summer Wear
 Product ID: hhc-3760119
 SKU: hhc-3760119
@@ -7,11 +8,16 @@ Slug: summer-top-sando-shirt-for-men-boys-round-neck-cotton-smart-fit-casual-3c4
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Summer Top Sando Shirt for Men & Boys – Round Neck Cotton Smart Fit
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/03/ef5bcd4e74950717c75a9fb4b0f78a9a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/03/ef5bcd4e74950717c75a9fb4b0f78a9a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/4630a14778a3313d4dabefbfa0f6cb1e.jpeg
+Meta Title: Summer Top Sando Shirt for Men & Boys – Round Neck Cotton Smart Fit 
 Meta Description: Buy Summer Top Sando Shirt for Men & Boys – Round Neck Cotton Smart Fit Casual T-Shirt – Trendy Spring & Summer Wear online in Pakistan from ASM VEO. Upgrade yo
 Description: Upgrade your casual wardrobe with this stylish printed Sando tee shirt for men and boys. Made from soft and breathable cotton fabric, it offers all-day comfort with a smart fit design. Perfect for daily wear, casual outings, college, travel, and seasonal styling.
-Regular Price: 428
-Sale Price: 428
+Wholesale Price: 378
+Regular Price: 780
+Sale Price: 627
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

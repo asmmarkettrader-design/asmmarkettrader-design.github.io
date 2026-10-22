@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish LV Style Embossed Pattern Men's Wallet With Classic Design And Durable Material Available In Multiple Colors For Daily Use
 Product ID: hhc-3764211
 SKU: hhc-3764211
@@ -7,11 +8,16 @@ Slug: stylish-lv-style-embossed-pattern-men-s-wallet-with-classic-design-and-0f1
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/1d495b06ac3fcdcf4823f5eee0fdd7a8.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/1d495b06ac3fcdcf4823f5eee0fdd7a8.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/c7bf9f8d44c207764580dc2b086ff885.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/f55be0f820a7ac241a7790f137f0aa9f.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/2b36b1452e8ccae10421b217bc7ce04b.jpg
 Meta Title: Stylish LV Style Embossed Pattern Men's Wallet With Classic Design A
 Meta Description: Buy Stylish LV Style Embossed Pattern Men's Wallet With Classic Design And Durable Material Available In Multiple Colors For Daily Use online in Pakistan from A
 Description: Stylish LV Style Embossed Pattern Men's Wallet With Durable Material And Classic Design, Available In Multiple Colors And Suitable For Daily Use.
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

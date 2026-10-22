@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Portable Stainless Steel Nose Hair Trimmer | Manual Grooming Tool | Safe & Durable
 Product ID: hhc-3755451
 SKU: hhc-3755451
@@ -7,11 +8,16 @@ Slug: mini-portable-stainless-steel-nose-hair-trimmer-manual-grooming-tool-sa-f2
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/39ac748ea02dc01a959897201ee67fa9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/39ac748ea02dc01a959897201ee67fa9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/519905052fa5a8968d669be9b939a590.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/8e5aa95a42a9b1651a18c4a4024e95a9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/9a47e1c87e70f99acb5497c1c5f95314.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/8116cdbd8e49760992d33dd9670b02bc.jpeg
 Meta Title: Mini Portable Stainless Steel Nose Hair Trimmer | Manual Grooming To
 Meta Description: Buy Mini Portable Stainless Steel Nose Hair Trimmer | Manual Grooming Tool | Safe & Durable online in Pakistan from ASM VEO. Compact manual nose hair trimmer ma
 Description: Compact manual nose hair trimmer made of stainless steel. Portable, safe, and easy to use for daily grooming.
-Regular Price: 369
-Sale Price: 369
+Wholesale Price: 319
+Regular Price: 688
+Sale Price: 538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

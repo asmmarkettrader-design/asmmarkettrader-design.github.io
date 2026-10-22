@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Car Ashtray Door Mounted Smokeless Ash Tray With Lid Auto Truck Trash Bin Garbage Can Stainless Steel Liner Accessory
 Product ID: hhc-3760345
 SKU: hhc-3760345
@@ -7,11 +8,16 @@ Slug: portable-car-ashtray-door-mounted-smokeless-ash-tray-with-lid-auto-truc-03
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/b3649bdc00fc68b8c4f4d278f4e21c88.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/b3649bdc00fc68b8c4f4d278f4e21c88.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/d7c5edce67a71ff03264782c217b9144.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/19a7de241d450fd36e661fa9eb13abee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/7d3443a620f3669bf6d64beade2e1d9b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/29ba109c057f7a00234c4d2675b2c4e5.jpg
 Meta Title: Portable Car Ashtray Door Mounted Smokeless Ash Tray With Lid Auto T
 Meta Description: Buy Portable Car Ashtray Door Mounted Smokeless Ash Tray With Lid Auto Truck Trash Bin Garbage Can Stainless Steel Liner Accessory online in Pakistan from ASM V
 Description: Portable Car Ashtray Door Mounted Smokeless Ash Tray With Lid Auto Truck Trash Bin Garbage Can Stainless Steel Liner Accessory
-Regular Price: 1063
-Sale Price: 1063
+Wholesale Price: 1013
+Regular Price: 1870
+Sale Price: 1498
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

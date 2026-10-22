@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Cream Embossed Velvet Prayer Mat (Janamaz)
 Product ID: hhc-3764602
 SKU: hhc-3764602
@@ -7,11 +8,16 @@ Slug: royal-cream-embossed-velvet-prayer-mat-janamaz-hhc-3764602
 Category: Islamic & Cultural
 Subcategory: Islamic Essentials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/a3cfc4374447a841dac7c794b4838195.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/a3cfc4374447a841dac7c794b4838195.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/18b39301f342401759f719caf716582e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/6959b48abc754f08747d577fa6d84d75.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/64afa8340f4bc804094c39fb63422172.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/fa400dacc527981978d5f73847939663.jpg
 Meta Title: Royal Cream Embossed Velvet Prayer Mat (Janamaz) | Buy Online in Pak
 Meta Description: Buy Royal Cream Embossed Velvet Prayer Mat (Janamaz) online in Pakistan from ASM VEO. Experience tranquility and supreme comfort during daily worship with this
 Description: Experience tranquility and supreme comfort during daily worship with this Luxury Embossed Velvet Prayer Mat. Crafted from ultra-soft, high-density velvet fabric, it features a classic diamond-quilted pattern accented by intricate self-embossed motifs along the borders. The cream-hued fabric is complemented by elegant gold-toned braided edges and lush tassels, blending timeless aesthetic appeal with functional padding. Designed to provide exceptional knee and floor support, this 75 \times 120\text{ cm} rug is an exquisite addition to any home or a thoughtful gift for loved ones.
-Regular Price: 1050
-Sale Price: 1050
+Wholesale Price: 1000
+Regular Price: 1890
+Sale Price: 1510
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

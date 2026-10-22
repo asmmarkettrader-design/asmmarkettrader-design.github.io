@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: iPhone 3 Pin 40W Fast Charger | USB-C PD Power Adapter for iPhone & iPad
 Product ID: hhc-3757848
 SKU: hhc-3757848
@@ -7,11 +8,16 @@ Slug: iphone-3-pin-40w-fast-charger-usb-c-pd-power-adapter-for-iphone-ipad-hhc-3
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/3601f4a00a5948d498f013a91bc8c173.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/3601f4a00a5948d498f013a91bc8c173.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/2efe0f502640e7285c3baa4e6a07c485.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/7495c21ccae14c4a3bb92fe31a4b401e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/07921a706352e519a56ee1fafcd50b86.jpeg
 Meta Title: iPhone 3 Pin 40W Fast Charger | USB-C PD Power Adapter for iPhone &
 Meta Description: Buy iPhone 3 Pin 40W Fast Charger | USB-C PD Power Adapter for iPhone & iPad online in Pakistan from ASM VEO. High-speed 40W 3-pin charger with USB-C PD support
 Description: High-speed 40W 3-pin charger with USB-C PD support for iPhone and iPad. Fast, safe, and reliable charging adapter.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

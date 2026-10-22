@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Leak Proof Spray Leakage Seal rapid Stop Leaking Water Proof Spray 500ml
 Product ID: hhc-3753967
 SKU: hhc-3753967
@@ -7,11 +8,16 @@ Slug: leak-proof-spray-leakage-seal-rapid-stop-leaking-water-proof-spray-500ml-h
 Category: Tools & DIY
 Subcategory: Plumbing Fixtures
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/dc7dc4b2a1cb51e419b7eb094761047c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/dc7dc4b2a1cb51e419b7eb094761047c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/5bf0ca0acb57a77efbf921fa4a24a5c2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/4371866c9e5fbf7f2a27649bd031fd2b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/e83c6081f93de057abbdcd36b1f4ccbf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/601b1cf2ff796d64d7003a8010bd9f79.jpg
 Meta Title: Leak Proof Spray Leakage Seal rapid Stop Leaking Water Proof Spray 5
 Meta Description: Buy Leak Proof Spray Leakage Seal rapid Stop Leaking Water Proof Spray 500ml online in Pakistan from ASM VEO. Instantly stops leaks and forms a waterproof, prot
 Description: Instantly stops leaks and forms a waterproof, protective seal. Application Self-Spraying for easy, quick, and precise application in narrow spaces.
-Regular Price: 1063
-Sale Price: 1063
+Wholesale Price: 1013
+Regular Price: 1870
+Sale Price: 1498
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

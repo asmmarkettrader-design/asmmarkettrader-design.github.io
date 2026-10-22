@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5in1 Vegetable Cutter | Multifunctional Stainless Steel Vegetable Cutter & Slicer | Kitchen Tool
 Product ID: hhc-3756134
 SKU: hhc-3756134
@@ -7,11 +8,16 @@ Slug: 5in1-vegetable-cutter-multifunctional-stainless-steel-vegetable-cutter-0c8
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/e74dd8085f146f1887bf1b39b9855c58.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/e74dd8085f146f1887bf1b39b9855c58.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/b317404fb7ba8317113994af1a7a0553.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/785161ba8f668969469df6d16be1bfea.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/128aea2f21da30276abfb8358a4d8d7f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/1b6d814009d6090a3e60c4f9e1f7a885.jpeg
 Meta Title: 5in1 Vegetable Cutter | Multifunctional Stainless Steel Vegetable Cu
 Meta Description: Buy 5in1 Vegetable Cutter | Multifunctional Stainless Steel Vegetable Cutter & Slicer | Kitchen Tool online in Pakistan from ASM VEO. Durable stainless steel 5i
 Description: Durable stainless steel 5in1 cutter and slicer for easy vegetable prep, saving time in the kitchen.
-Regular Price: 643
-Sale Price: 643
+Wholesale Price: 593
+Regular Price: 1150
+Sale Price: 920
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

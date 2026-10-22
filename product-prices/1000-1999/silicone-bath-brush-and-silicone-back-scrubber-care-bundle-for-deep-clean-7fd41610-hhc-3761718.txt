@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Bath Brush And Silicone Back Scrubber Care Bundle For Deep Cleansing And Gentle Body Care (Random Color)
 Product ID: hhc-3761718
 SKU: hhc-3761718
@@ -7,11 +8,16 @@ Slug: silicone-bath-brush-and-silicone-back-scrubber-care-bundle-for-deep-cle-7f
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
-Meta Title: Silicone Bath Brush And Silicone Back Scrubber Care Bundle For Deep
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/5abfc83aeff674f2dc4b6282215e4fde.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/5abfc83aeff674f2dc4b6282215e4fde.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/328d664fa7812d2e3f2ff4313c4f389b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/83df39dadae180b5ea590739992b04d5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/c0dc5867dcc55d3ffcdbf2ec240a6494.jpeg
+Meta Title: Silicone Bath Brush And Silicone Back Scrubber Care Bundle For Deep 
 Meta Description: Buy Silicone Bath Brush And Silicone Back Scrubber Care Bundle For Deep Cleansing And Gentle Body Care (Random Color) online in Pakistan from ASM VEO. Silicone
 Description: Silicone Bath Brush And Silicone Back Scrubber Bundle Designed For Deep Cleansing And Gentle Everyday Body Care.
-Regular Price: 439
-Sale Price: 439
+Wholesale Price: 389
+Regular Price: 800
+Sale Price: 644
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

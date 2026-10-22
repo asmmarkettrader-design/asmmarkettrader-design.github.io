@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High‑Quality Water Bottle Stand | Metal Rack Dispenser | Durable & Stable Holder for Home & Office | 19 Ltr bottle stand with nozzle
 Product ID: hhc-3754926
 SKU: hhc-3754926
@@ -7,11 +8,16 @@ Slug: high-quality-water-bottle-stand-metal-rack-dispenser-durable-stable-hol-2b
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/a276174a38fa7afc645a16a73fa93f5b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/a276174a38fa7afc645a16a73fa93f5b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/ff2f231c4b6dab60a3488202a4623f7a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/6ea17921bff6b6c2de4a3a61d14e916a.jpeg
 Meta Title: High‑Quality Water Bottle Stand | Metal Rack Dispenser | Durable & S
 Meta Description: Buy High‑Quality Water Bottle Stand | Metal Rack Dispenser | Durable & Stable Holder for Home & Office | 19 Ltr bottle stand with nozzle online in Pakistan from
 Description: High‑Quality Water Bottle Stand | Metal Rack Dispenser | Durable & Stable Holder for Home & Office | 19 Ltr bottle stand with nozzle
-Regular Price: 938
-Sale Price: 938
+Wholesale Price: 888
+Regular Price: 1680
+Sale Price: 1348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

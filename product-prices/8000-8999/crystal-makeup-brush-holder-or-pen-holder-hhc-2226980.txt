@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Crystal makeup brush Holder Or Pen Holder
 Product ID: hhc-2226980
 SKU: hhc-2226980
@@ -7,11 +8,16 @@ Slug: crystal-makeup-brush-holder-or-pen-holder-hhc-2226980
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-26-at-5.08.06-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-26-at-5.08.06-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-26-at-5.08.03-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-26-at-5.08.03-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-26-at-5.06.09-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-26-at-5.06.08-PM.jpeg
 Meta Title: Crystal makeup brush Holder Or Pen Holder | Buy Online in Pakistan
 Meta Description: Buy Crystal makeup brush Holder Or Pen Holder online in Pakistan from ASM VEO. Product Description: Modern and simple design great for decorating wardrobe, desk
 Description: Product Description: Modern and simple design great for decorating wardrobe, desk, table, or tabletop at home. Perfect for organizing makeup brushes, cosmetics, toothbrushes, pencil desk supplies, and candle holders. Easy to clean, spin and spin for easy access to items always at hand. It is an elegant and novel house decor gift for graduations, birthdays, anniversaries, and special occasions to your mother, friends, and relatives.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

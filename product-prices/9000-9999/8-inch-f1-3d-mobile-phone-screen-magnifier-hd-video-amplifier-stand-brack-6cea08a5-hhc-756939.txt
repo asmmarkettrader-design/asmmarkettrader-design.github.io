@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 8 Inch F1 3D Mobile Phone Screen Magnifier HD Video Amplifier Stand Bracket with Movie Game Magnifying Folding Phone Desk Holder
 Product ID: hhc-756939
 SKU: hhc-756939
@@ -7,11 +8,16 @@ Slug: 8-inch-f1-3d-mobile-phone-screen-magnifier-hd-video-amplifier-stand-bra-6c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 8 Inch F1 3D Mobile Phone Screen Magnifier HD Video Amplifier Stand
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/b0fcf364-4721-454c-8d33-cca51173b5ce-300x233-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/b0fcf364-4721-454c-8d33-cca51173b5ce-300x233-1.jpeg
+Meta Title: 8 Inch F1 3D Mobile Phone Screen Magnifier HD Video Amplifier Stand 
 Meta Description: Buy 8 Inch F1 3D Mobile Phone Screen Magnifier HD Video Amplifier Stand Bracket with Movie Game Magnifying Folding Phone Desk Holder online in Pakistan from ASM
 Description: 8 Inch F1 3D Mobile Phone Screen Magnifier HD Video Amplifier Stand Bracket with Movie Game Magnifying Folding Phone Desk Holder
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

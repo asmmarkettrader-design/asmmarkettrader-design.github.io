@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shape It Anti-Cellulite Slimming Cream | Firming & Skin Tightening Body Cream (100ml)
 Product ID: hhc-3757907
 SKU: hhc-3757907
@@ -7,11 +8,16 @@ Slug: shape-it-anti-cellulite-slimming-cream-firming-skin-tightening-body-cream-
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/b34ef0a30834f3be97d38880aaf749f3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/b34ef0a30834f3be97d38880aaf749f3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/b3eafb48f3c2a83c4ccb30f1e7646a21.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/7aea9b2a1a1bdcde59e5c4c1f88aa7a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/ea894923f843dfd829d3508ee1d8031a.jpeg
 Meta Title: Shape It Anti-Cellulite Slimming Cream | Firming & Skin Tightening B
 Meta Description: Buy Shape It Anti-Cellulite Slimming Cream | Firming & Skin Tightening Body Cream (100ml) online in Pakistan from ASM VEO. Advanced anti-cellulite cream that he
 Description: Advanced anti-cellulite cream that helps firm skin, reduce the appearance of cellulite, and improve body contour. Smooth and fast-absorbing formula.
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

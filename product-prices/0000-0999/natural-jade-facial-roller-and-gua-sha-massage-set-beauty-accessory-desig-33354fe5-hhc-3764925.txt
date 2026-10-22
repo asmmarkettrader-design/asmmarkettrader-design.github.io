@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Natural Jade Facial Roller And Gua Sha Massage Set - Beauty Accessory Designed For Facial Massage And Daily Skincare Routine
 Product ID: hhc-3764925
 SKU: hhc-3764925
@@ -7,11 +8,16 @@ Slug: natural-jade-facial-roller-and-gua-sha-massage-set-beauty-accessory-des-33
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7e1d85dcbcd0a10926b2eff2ec2bac1c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7e1d85dcbcd0a10926b2eff2ec2bac1c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/16843b0b8cb699773d2f7a4f2a8a1454.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/e89ecd95e19c37fa50549c9e7b16132d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7a1d917485e6b37d245dd2b58978f4a6.jpeg
 Meta Title: Natural Jade Facial Roller And Gua Sha Massage Set - Beauty Accessor
 Meta Description: Buy Natural Jade Facial Roller And Gua Sha Massage Set - Beauty Accessory Designed For Facial Massage And Daily Skincare Routine online in Pakistan from ASM VEO
 Description: This Natural Jade Facial Roller And Gua Sha Massage Set Provides A Reliable Solution For Beauty Accessories And Routine Facial Massage Needs. Formulated To Deliver Massage Benefits While Supporting Natural Jade Facial Roller And Gua Sha Massage Set Utility, It Fits Seamlessly Into Your Regular Facial Massage Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Facial Massage Requirements, This Natural Jade Facial Roller And Gua Sha Massage Set Serves As An Essential Beauty Accessory For Daily Life.Key FeaturesNatural Jade Facial Roller And Gua Sha Massage Set Formulated For Beauty AccessoriesDelivers Facial Massage And Supports Daily Skincare UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Facial Massage And Skincare RoutinesDesigned For Easy Operation And Convenient UseEssential Beauty Accessory For Everyday MaintenanceIncludes handle roller and gua sha stone
-Regular Price: 415
-Sale Price: 415
+Wholesale Price: 365
+Regular Price: 760
+Sale Price: 608
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

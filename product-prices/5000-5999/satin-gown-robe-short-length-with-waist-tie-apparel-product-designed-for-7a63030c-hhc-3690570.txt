@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Satin Gown/Robe - Short Length With Waist Tie - Apparel Product Designed For Sleep And Daily Lounging Routine (DC-1001)
 Product ID: hhc-3690570
 SKU: hhc-3690570
@@ -7,11 +8,16 @@ Slug: satin-gown-robe-short-length-with-waist-tie-apparel-product-designed-fo-7a
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/DeWatermark.ai_1756292550994.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/DeWatermark.ai_1756292550994.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/DeWatermark.ai_1756292320155.jpeg
 Meta Title: Satin Gown/Robe - Short Length With Waist Tie - Apparel Product Desi
 Meta Description: Buy Satin Gown/Robe - Short Length With Waist Tie - Apparel Product Designed For Sleep And Daily Lounging Routine (DC-1001) online in Pakistan from ASM VEO. The
 Description: The Satin Gown/Robe - Short Length With Waist Tie Is An Apparel Product Formulated To Help Provide Sleep And Daily Lounging Utility During Use.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

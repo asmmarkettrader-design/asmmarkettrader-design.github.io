@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Microfiber Sponge Pad with Grip Handle
 Product ID: hhc-2567722
 SKU: hhc-2567722
@@ -7,11 +8,16 @@ Slug: microfiber-sponge-pad-with-grip-handle-hhc-2567722
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/microfiber-glove-7.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/microfiber-glove-7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/microfiber-glove-6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/microfiber-glove-5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/microfiber-glove-4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/microfiber-glove-3.webp
 Meta Title: Microfiber Sponge Pad with Grip Handle | Buy Online in Pakistan
 Meta Description: Buy Microfiber Sponge Pad with Grip Handle online in Pakistan from ASM VEO. Royal Microfiber Sponge Pad with Grip Handle – Soft and highly absorbent cleaning sp
 Description: Royal Microfiber Sponge Pad with Grip Handle – Soft and highly absorbent cleaning sponge designed for efficient home and car cleaning. Features premium microfiber material with a comfortable grip handle for better control and easy use.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

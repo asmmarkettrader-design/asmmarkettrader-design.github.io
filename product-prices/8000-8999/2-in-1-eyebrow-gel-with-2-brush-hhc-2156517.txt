@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 eyebrow gel with 2 brush
 Product ID: hhc-2156517
 SKU: hhc-2156517
@@ -7,11 +8,16 @@ Slug: 2-in-1-eyebrow-gel-with-2-brush-hhc-2156517
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.44.15-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.44.15-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.44.16-PM-1.jpeg
 Meta Title: 2 in 1 eyebrow gel with 2 brush | Buy Online in Pakistan
 Meta Description: Buy 2 in 1 eyebrow gel with 2 brush online in Pakistan from ASM VEO. 2 in 1 eyebrow gel with 2 brush • Product Type: Eyebrow Color With Brush • Product Details
 Description: 2 in 1 eyebrow gel with 2 brush • Product Type: Eyebrow Color With Brush • Product Details: Rich Color, Ultra Fine Tip, Long lasting, Waterproof, Smudge Proof, Double Head Design • Color: Brown, Black • Package Includes: 2 x Eyebrow Colors, 2 x Brushes • Disclaimer: Before using a new cosmetic product, conduct a test on a small area of your skin • If you have a specific allergy or sensitivity, check the ingredients to avoid a reaction • Always read the warning labels and directions on the package for using any cosmetic products.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

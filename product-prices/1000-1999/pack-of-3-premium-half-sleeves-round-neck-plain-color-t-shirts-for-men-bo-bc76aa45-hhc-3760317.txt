@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 Premium Half Sleeves Round Neck Plain Color T-Shirts for Men & Boys – Soft Comfortable Fabric
 Product ID: hhc-3760317
 SKU: hhc-3760317
@@ -7,11 +8,16 @@ Slug: pack-of-3-premium-half-sleeves-round-neck-plain-color-t-shirts-for-men-bc7
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/6a4d375a53b847639247aa9ba86f7bcd.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/6a4d375a53b847639247aa9ba86f7bcd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/3f25572213b2fa97bbb0042158b1e819.jpeg
 Meta Title: Pack of 3 Premium Half Sleeves Round Neck Plain Color T-Shirts for M
 Meta Description: Buy Pack of 3 Premium Half Sleeves Round Neck Plain Color T-Shirts for Men & Boys – Soft Comfortable Fabric online in Pakistan from ASM VEO. Pack of 3 premium p
 Description: Pack of 3 premium plain T-shirts featuring a round neck and half sleeves. Made from comfortable fabric for daily wear, casual outings, and summer use.
-Regular Price: 1069
-Sale Price: 1069
+Wholesale Price: 1019
+Regular Price: 1880
+Sale Price: 1507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

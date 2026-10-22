@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ice Genie Silicone Ice Cube Maker - 120 Ice Cube Capacity Space Saving Ice Bucket Containers Food Grade Material Freezer Beverage Cooler
 Product ID: hhc-3761656
 SKU: hhc-3761656
@@ -7,11 +8,16 @@ Slug: ice-genie-silicone-ice-cube-maker-120-ice-cube-capacity-space-saving-ic-df
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/e8075eb877be05b43c48f0c52ec8c253.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/e8075eb877be05b43c48f0c52ec8c253.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/f2dc9d2810691953d8ade9db81f8ed0f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/bab765f7d90e6986028176eebbb475d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/46ebf4b5023e4b67c092402b69608d96.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/e6e782bc5af67398e3e0d0c7fcf1b7be.jpeg
 Meta Title: Ice Genie Silicone Ice Cube Maker - 120 Ice Cube Capacity Space Savi
 Meta Description: Buy Ice Genie Silicone Ice Cube Maker - 120 Ice Cube Capacity Space Saving Ice Bucket Containers Food Grade Material Freezer Beverage Cooler online in Pakistan
 Description: The Ice Genie Silicone Ice Cube Maker Features A One Hundred Twenty Ice Cube Capacity Space Saving Ice Bucket Layout Crafted For Easy Storage.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

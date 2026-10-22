@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 360° Outdoor Kitchen Lighter – USB Rechargeable Electronic Arc Lighter with Flexible Neck, Safety Lock, Windproof & Eco-Friendly Design (Random Colors)
 Product ID: hhc-3755623
 SKU: hhc-3755623
@@ -7,11 +8,16 @@ Slug: 360-outdoor-kitchen-lighter-usb-rechargeable-electronic-arc-lighter-wit-11
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/4371d87008f43ce9a13b130203fb68af.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/4371d87008f43ce9a13b130203fb68af.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/8e348bd9584799b6e6c426d1fb66870e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/cf8153e93e9e3150c06e7e5ad6c9ced3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/0986eb311dc6cf0bf7e419114390b197.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/4eaba4711fb2949500f3febe2f78dac0.jpg
 Meta Title: 360° Outdoor Kitchen Lighter – USB Rechargeable Electronic Arc Light
 Meta Description: Buy 360° Outdoor Kitchen Lighter – USB Rechargeable Electronic Arc Lighter with Flexible Neck, Safety Lock, Windproof & Eco-Friendly Design (Random Colors) onli
 Description: The 360° Outdoor Kitchen Lighter features a flexible rotating neck and windproof electronic arc for safe, effortless lighting. USB rechargeable and eco-friendly, it includes a safety lock for added protection and is perfect for kitchens, BBQs, candles, and outdoor use. (Random colors)
-Regular Price: 484
-Sale Price: 484
+Wholesale Price: 434
+Regular Price: 890
+Sale Price: 711
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

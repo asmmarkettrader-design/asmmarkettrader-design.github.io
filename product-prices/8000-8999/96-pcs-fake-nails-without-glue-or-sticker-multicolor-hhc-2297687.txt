@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 96 Pcs Fake Nails Without Glue Or Sticker Multicolor
 Product ID: hhc-2297687
 SKU: hhc-2297687
@@ -7,11 +8,16 @@ Slug: 96-pcs-fake-nails-without-glue-or-sticker-multicolor-hhc-2297687
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-10-at-1.50.20-AM-3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-10-at-1.50.20-AM-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/1-28.jpeg
 Meta Title: 96 Pcs Fake Nails Without Glue Or Sticker Multicolor | Buy Online in
 Meta Description: Buy 96 Pcs Fake Nails Without Glue Or Sticker Multicolor online in Pakistan from ASM VEO. 96 Pcs Fake Nails Without Glue Or Sticker• Material: Acrylic • Color:
 Description: 96 Pcs Fake Nails Without Glue Or Sticker• Material: Acrylic • Color: Multicolor • Product Feature: Customization, Endless Creativity • Package Includes: 96 x Fake Nails
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

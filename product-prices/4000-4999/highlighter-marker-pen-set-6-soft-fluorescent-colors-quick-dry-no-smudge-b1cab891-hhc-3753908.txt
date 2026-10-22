@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Highlighter Marker Pen Set – 6 Soft Fluorescent Colors, Quick-Dry, No Smudge, Water-Based Ink
 Product ID: hhc-3753908
 SKU: hhc-3753908
@@ -7,11 +8,16 @@ Slug: highlighter-marker-pen-set-6-soft-fluorescent-colors-quick-dry-no-smudg-b1
 Category: Books & Stationery
 Subcategory: Art & Craft Materials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/9946d984a8422c4f0d147610372e5aba.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/9946d984a8422c4f0d147610372e5aba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/682c589c00c3f928f95d7d3138682a82.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/2d2e2da0b297bb33a5ebe7e5f433f7bc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/150cf94a85d06b9779162acbe36f02f6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/d9062d14dbeb3c23ff1f6be387bcc517.jpeg
 Meta Title: Highlighter Marker Pen Set – 6 Soft Fluorescent Colors, Quick-Dry, N
 Meta Description: Buy Highlighter Marker Pen Set – 6 Soft Fluorescent Colors, Quick-Dry, No Smudge, Water-Based Ink online in Pakistan from ASM VEO. Highlighter Marker Pen Set 6
 Description: Highlighter Marker Pen Set 6 Soft Fluorescent Colors | Pack of 6 | Water-Based Ink | 10ML Each | Smooth Quick-Dry, No Smudge | For Office, Adult Notes, Planning, Journals, Organization
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish Kitchen Wall Decor Sign – Modern Utensil Design Wall Art for Dining & Cooking Space (5x12 inches)
 Product ID: hhc-3753049
 SKU: hhc-3753049
@@ -7,11 +8,16 @@ Slug: stylish-kitchen-wall-decor-sign-modern-utensil-design-wall-art-for-dini-e9
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/75a1e8ec6e9b5128b32471612e84b9ed.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/75a1e8ec6e9b5128b32471612e84b9ed.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/cb737053d75e3d161757452877a9af65.jpeg
 Meta Title: Stylish Kitchen Wall Decor Sign – Modern Utensil Design Wall Art for
 Meta Description: Buy Stylish Kitchen Wall Decor Sign – Modern Utensil Design Wall Art for Dining & Cooking Space (5x12 inches) online in Pakistan from ASM VEO. Elevate your cook
 Description: Elevate your cooking area with this modern kitchen wall decor sign featuring spoon, fork, and knife design. A perfect decorative piece to add charm, style, and personality to your kitchen or dining space.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

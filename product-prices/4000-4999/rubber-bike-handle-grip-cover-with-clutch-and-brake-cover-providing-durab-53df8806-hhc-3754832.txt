@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rubber Bike Handle Grip Cover With Clutch And Brake Cover Providing Durable Quality Comfortable Use (Random Color)
 Product ID: hhc-3754832
 SKU: hhc-3754832
@@ -7,11 +8,16 @@ Slug: rubber-bike-handle-grip-cover-with-clutch-and-brake-cover-providing-dur-53
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
-Meta Title: Rubber Bike Handle Grip Cover With Clutch And Brake Cover Providing
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/941c78010bbda836fecc0c33cab374f6.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/941c78010bbda836fecc0c33cab374f6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/0e2e639fbc2e923e23ffab36f746345b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/1add239da31971dc3273d76b68a0256e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/544aaf72d045325821a2c251f1cf591e.jpeg
+Meta Title: Rubber Bike Handle Grip Cover With Clutch And Brake Cover Providing 
 Meta Description: Buy Rubber Bike Handle Grip Cover With Clutch And Brake Cover Providing Durable Quality Comfortable Use (Random Color) online in Pakistan from ASM VEO. Rubber B
 Description: Rubber Bike Handle Grip Cover With Clutch And Brake Cover Offering Durable Quality Comfortable Use And Reliable Daily Riding Support
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

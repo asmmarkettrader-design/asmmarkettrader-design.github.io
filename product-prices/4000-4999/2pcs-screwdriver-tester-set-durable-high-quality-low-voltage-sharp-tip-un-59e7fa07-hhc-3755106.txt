@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2Pcs Screwdriver Tester Set | Durable, High Quality | Low Voltage | Sharp Tip & Unbreakable Handle
 Product ID: hhc-3755106
 SKU: hhc-3755106
@@ -7,11 +8,16 @@ Slug: 2pcs-screwdriver-tester-set-durable-high-quality-low-voltage-sharp-tip-59e
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/5ecc24db8b4deb6766a8fbfce928ccf6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/5ecc24db8b4deb6766a8fbfce928ccf6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/8e9630c6134776695f7d5ca19f222588.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/73381c2c8ff85613068e04e9680a9d0d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/f25f9ffa0e97a801e0b1d85382b4cf9c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/64d9d8544819f829e88a3b1753d72e7b.jpg
 Meta Title: 2Pcs Screwdriver Tester Set | Durable, High Quality | Low Voltage |
 Meta Description: Buy 2Pcs Screwdriver Tester Set | Durable, High Quality | Low Voltage | Sharp Tip & Unbreakable Handle online in Pakistan from ASM VEO. 2Pcs screwdriver tester
 Description: 2Pcs screwdriver tester set. Durable, high‑quality design with sharp tip and unbreakable handle. Ideal for electrical works.
-Regular Price: 248
-Sale Price: 248
+Wholesale Price: 198
+Regular Price: 507
+Sale Price: 357
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

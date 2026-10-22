@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yayashi Sp-4 Ultra Whitening Toothpaste Probiotic Stain Remover Stain Removing Toothpaste, Protects Gums Freshens Breath, for Everyone
 Product ID: hhc-3753970
 SKU: hhc-3753970
@@ -7,11 +8,16 @@ Slug: yayashi-sp-4-ultra-whitening-toothpaste-probiotic-stain-remover-stain-r-91
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/279861880edcaa8037d96feca201351e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/279861880edcaa8037d96feca201351e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/3b5c4cbf6d95517dfd0cead6ea03af6f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/1111819467d8dd4f5502bc9ba5ced220.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/83d3e3edd296387251898f735d1fc96c.jpg
 Meta Title: Yayashi Sp-4 Ultra Whitening Toothpaste Probiotic Stain Remover Stai
 Meta Description: Buy Yayashi Sp-4 Ultra Whitening Toothpaste Probiotic Stain Remover Stain Removing Toothpaste, Protects Gums Freshens Breath, for Everyone online in Pakistan fr
 Description: Yayashi Sp-4 Ultra Whitening Toothpaste Probiotic Stain Remover Stain Removing Toothpaste, Protects Gums Freshens Breath, for Everyone
-Regular Price: 379
-Sale Price: 379
+Wholesale Price: 329
+Regular Price: 704
+Sale Price: 554
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

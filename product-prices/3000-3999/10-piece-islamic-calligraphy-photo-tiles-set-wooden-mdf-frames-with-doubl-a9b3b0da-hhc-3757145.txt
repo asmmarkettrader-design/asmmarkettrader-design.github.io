@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 Piece Islamic Calligraphy Photo Tiles Set Wooden MDF Frames With Double Tape For Wall Decoration
 Product ID: hhc-3757145
 SKU: hhc-3757145
@@ -7,11 +8,16 @@ Slug: 10-piece-islamic-calligraphy-photo-tiles-set-wooden-mdf-frames-with-dou-a9
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 10 Piece Islamic Calligraphy Photo Tiles Set Wooden MDF Frames With
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/6479c875eed0c44d7264cce03f7ab2e6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/6479c875eed0c44d7264cce03f7ab2e6.jpeg
+Meta Title: 10 Piece Islamic Calligraphy Photo Tiles Set Wooden MDF Frames With 
 Meta Description: Buy 10 Piece Islamic Calligraphy Photo Tiles Set Wooden MDF Frames With Double Tape For Wall Decoration online in Pakistan from ASM VEO. Elegant 10 Piece Islami
 Description: Elegant 10 Piece Islamic Calligraphy Photo Tiles Set Crafted From Wooden MDF With Double Tape For Easy Installation
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

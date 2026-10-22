@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Islamic Calligraphy Wall Art Frame Set of 10 | Elegant Multi-Size Frames for Home, Office & Prayer Room Decor – Premium Quality Wooden Artwork
 Product ID: hhc-3752343
 SKU: hhc-3752343
@@ -7,11 +8,16 @@ Slug: wooden-islamic-calligraphy-wall-art-frame-set-of-10-elegant-multi-size-c64
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/5c0abee1a6d09ba2f74ad6bfdfccd69b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/5c0abee1a6d09ba2f74ad6bfdfccd69b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/49e374f6c69eedbe6846acd3c575d529.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/11050643e1cdf23e71647b49d5ff23c1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/788efb69bbe79fd51df4761f1732771c.mp4
 Meta Title: Wooden Islamic Calligraphy Wall Art Frame Set of 10 | Elegant Multi-
 Meta Description: Buy Wooden Islamic Calligraphy Wall Art Frame Set of 10 | Elegant Multi-Size Frames for Home, Office & Prayer Room Decor – Premium Quality Wooden Artwork online
 Description: Wooden Islamic Calligraphy Wall Art Frame Set of 10
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cerave Hydrating Hyaluronic Acid Serum 30ml – Lightweight Face Serum For Intense Hydration, Smooth Skin Texture, And Long Lasting Moisture Retention
 Product ID: hhc-3752536
 SKU: hhc-3752536
@@ -7,11 +8,16 @@ Slug: cerave-hydrating-hyaluronic-acid-serum-30ml-lightweight-face-serum-for-bad
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/e24b41ceb77c6ef66c1bc33f2ada1a85.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/e24b41ceb77c6ef66c1bc33f2ada1a85.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/ead42c24532c85fd9a2b65c337ec7c53.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/5f8eb3319e68282aae2b88b37fa7252f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/9b21f37c1dc7073d2fe021c23920fb68.png
 Meta Title: Cerave Hydrating Hyaluronic Acid Serum 30ml – Lightweight Face Serum
 Meta Description: Buy Cerave Hydrating Hyaluronic Acid Serum 30ml – Lightweight Face Serum For Intense Hydration, Smooth Skin Texture, And Long Lasting Moisture Retention online
 Description: Cerave Hydrating Hyaluronic Acid Serum 30ml Provides Deep Hydration, Restores Smoothness, And Helps Maintain Skin’s Natural Barrier With Essential Ceramides.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

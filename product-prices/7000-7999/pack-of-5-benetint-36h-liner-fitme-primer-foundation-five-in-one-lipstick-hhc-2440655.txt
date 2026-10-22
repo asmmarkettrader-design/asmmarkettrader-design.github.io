@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (Pack Of 5) Benetint / 36H Liner / Fitme Primer / Foundation / Five In One Lipstick
 Product ID: hhc-2440655
 SKU: hhc-2440655
@@ -7,11 +8,16 @@ Slug: pack-of-5-benetint-36h-liner-fitme-primer-foundation-five-in-one-lipstick-
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: (Pack Of 5) Benetint / 36H Liner / Fitme Primer / Foundation / Five
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-10-at-9.31.24-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-10-at-9.31.24-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-10-at-9.31.23-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-10-at-9.31.23-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-10-at-9.31.22-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-10-at-9.31.21-AM.jpeg
+Meta Title: (Pack Of 5) Benetint / 36H Liner / Fitme Primer / Foundation / Five 
 Meta Description: Buy (Pack Of 5) Benetint / 36H Liner / Fitme Primer / Foundation / Five In One Lipstick online in Pakistan from ASM VEO. Product Details:Pack Of 5 5 In 1 Lipsti
 Description: Product Details:Pack Of 5 5 In 1 Lipstick Benetint 36H Liner Fitme Primer Foundation1. 5 in 1 LipstickUse: Apply to lips for color, or use on cheeks as a blush for a natural flush.2. BenetintUse: Apply a few dots to lips and cheeks, blend for a long-lasting, natural tint.3. 36H LinerUse: Draw along the upper and lower lash lines for defined eyes. Use for bold or subtle eyeliner looks.4. FitMe PrimerUse: Apply a thin layer on clean skin to create a smooth base and extend the wear of foundation.5. FoundationUse: Apply to your face using a brush, sponge, or fingers to even out your skin tone and create a flawless finish.These five products help you achieve a natural, long-lasting makeup look
-Regular Price: 1441
-Sale Price: 1441
+Wholesale Price: 1391
+Regular Price: 2540
+Sale Price: 2035
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

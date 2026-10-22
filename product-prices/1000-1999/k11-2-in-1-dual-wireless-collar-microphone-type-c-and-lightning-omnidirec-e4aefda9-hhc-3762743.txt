@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: K11 2-In-1 Dual Wireless Collar Microphone Type-C And Lightning Omnidirectional Lavalier Mic - Electronic Accessory Designed For Audio Recording And Daily Streaming Routine
 Product ID: hhc-3762743
 SKU: hhc-3762743
@@ -7,11 +8,16 @@ Slug: k11-2-in-1-dual-wireless-collar-microphone-type-c-and-lightning-omnidir-e4
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/f7d24c310f076b4c8a7bee0ba3b93510.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/f7d24c310f076b4c8a7bee0ba3b93510.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/19f2995dffa42f872426bcab6ec9370b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/3af72d28188ec972b389698bc3a58a20.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/27f3a03e51d0f5d115724af50b155137.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/d1e59fc99ab3e26483ef29f2a3a89eaa.jpg
 Meta Title: K11 2-In-1 Dual Wireless Collar Microphone Type-C And Lightning Omni
 Meta Description: Buy K11 2-In-1 Dual Wireless Collar Microphone Type-C And Lightning Omnidirectional Lavalier Mic - Electronic Accessory Designed For Audio Recording And Daily S
 Description: The K11 2-In-1 Dual Wireless Collar Microphone Type-C And Lightning Omnidirectional Lavalier Mic Is An Electronic Accessory Formulated To Help Provide Audio Recording And Streaming During Daily Use.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

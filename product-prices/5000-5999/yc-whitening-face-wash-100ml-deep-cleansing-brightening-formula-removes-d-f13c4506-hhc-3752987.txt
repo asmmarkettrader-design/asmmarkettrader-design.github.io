@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: YC Whitening Face Wash 100ml | Deep Cleansing Brightening Formula | Removes Dirt, Oil, And Impurities For Soft, Smooth, And Glowing Skin
 Product ID: hhc-3752987
 SKU: hhc-3752987
@@ -7,11 +8,16 @@ Slug: yc-whitening-face-wash-100ml-deep-cleansing-brightening-formula-removes-f1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/e3d77a823fe2f57f87662016652721c4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/e3d77a823fe2f57f87662016652721c4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/99874518ebc55817665b8fa107ed69ca.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/f3756e2e6fe6e4c9998c70495649b934.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/7efef6cb6e57011f2b0a31beb9dcf591.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/9c3b36df4cd48934175073ec6c788ebb.jpeg
 Meta Title: YC Whitening Face Wash 100ml | Deep Cleansing Brightening Formula |
 Meta Description: Buy YC Whitening Face Wash 100ml | Deep Cleansing Brightening Formula | Removes Dirt, Oil, And Impurities For Soft, Smooth, And Glowing Skin online in Pakistan
 Description: YC Whitening Face Wash 100ml Deeply Cleanses And Brightens The Skin, Removing Dirt, Excess Oil, And Impurities For A Fresh, Soft, And Radiant Complexion.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multipurpose 3-in-1 Laser Level, Ruler, and Spirit Level Tool with Triple Bubble Vials for Precise Home Improvement & Construction Tasks
 Product ID: hhc-3755275
 SKU: hhc-3755275
@@ -7,11 +8,16 @@ Slug: multipurpose-3-in-1-laser-level-ruler-and-spirit-level-tool-with-triple-27
 Category: Tools & DIY
 Subcategory: Electrical Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/59ef66fe9924e8313fd1971537f93853.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/59ef66fe9924e8313fd1971537f93853.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/415e420ac81cc6b4d8698e98a2bc9044.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/63470cef019393618ae5d52e5c918622.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/b87786db2b295b280cb816e1b9cffbf5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/27b29787b3fe8aaea17b38a36c753796.png
 Meta Title: Multipurpose 3-in-1 Laser Level, Ruler, and Spirit Level Tool with T
 Meta Description: Buy Multipurpose 3-in-1 Laser Level, Ruler, and Spirit Level Tool with Triple Bubble Vials for Precise Home Improvement & Construction Tasks online in Pakistan
 Description: A versatile all-in-one leveling tool featuring a built-in laser, a standard 6-inch ruler base, and three distinct spirit level vials ($45^{\circ}$, horizontal, and vertical). Designed for maximum accuracy in hanging pictures, installing shelving, and DIY carpentry projects.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

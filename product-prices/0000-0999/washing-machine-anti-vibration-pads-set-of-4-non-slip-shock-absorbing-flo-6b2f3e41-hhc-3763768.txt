@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Washing Machine Anti-Vibration Pads Set of 4 – Non-Slip Shock Absorbing Floor Protectors
 Product ID: hhc-3763768
 SKU: hhc-3763768
@@ -7,11 +8,16 @@ Slug: washing-machine-anti-vibration-pads-set-of-4-non-slip-shock-absorbing-f-6b
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/530f16ab8296374db21d42ff5eb8780e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/530f16ab8296374db21d42ff5eb8780e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/fb09e3a5fa91fec0b6b071af34df1346.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/f15d06d5cca6f98ee4703c104d4735c1.jpg
 Meta Title: Washing Machine Anti-Vibration Pads Set of 4 – Non-Slip Shock Absorb
 Meta Description: Buy Washing Machine Anti-Vibration Pads Set of 4 – Non-Slip Shock Absorbing Floor Protectors online in Pakistan from ASM VEO. Set of 4 anti-vibration pads desig
 Description: Set of 4 anti-vibration pads designed to support washing machine feet and reduce movement and vibration.
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

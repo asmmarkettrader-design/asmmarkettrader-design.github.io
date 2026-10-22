@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Butterfly Leafs Design Stickytiles Frame Providing Creative Artistic Pattern Elegant Look  Modern Appearance
 Product ID: hhc-3755258
 SKU: hhc-3755258
@@ -7,11 +8,16 @@ Slug: 3pcs-butterfly-leafs-design-stickytiles-frame-providing-creative-artist-8f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/40394d3850890c2a7b9576d95edce893.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/40394d3850890c2a7b9576d95edce893.jpeg
 Meta Title: 3pcs Butterfly Leafs Design Stickytiles Frame Providing Creative Art
 Meta Description: Buy 3pcs Butterfly Leafs Design Stickytiles Frame Providing Creative Artistic Pattern Elegant Look Modern Appearance online in Pakistan from ASM VEO. 3pcs Butte
 Description: 3pcs Butterfly Leafs Design Stickytiles Frame Offering Creative Artistic Pattern Elegant Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

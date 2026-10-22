@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sukoon Joint On Essential Oil Blend 30ML – Natural Pain Relief for Joints, Back, Knee, Arthritis, Strains & Sprains
 Product ID: hhc-3756628
 SKU: hhc-3756628
@@ -7,11 +8,16 @@ Slug: sukoon-joint-on-essential-oil-blend-30ml-natural-pain-relief-for-joints-d4
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/f11e2f60647b1c2c15404330e1365733.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/f11e2f60647b1c2c15404330e1365733.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/bde65c8a6133a61768b4ba79877494df.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/43aba95c315834a9ed14400444a3dda6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/0482771799e8ffda8c5fef2cd201b64e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/1a2dc80575e931cab3cb1cc6f3f2ab17.jpeg
 Meta Title: Sukoon Joint On Essential Oil Blend 30ML – Natural Pain Relief for J
 Meta Description: Buy Sukoon Joint On Essential Oil Blend 30ML – Natural Pain Relief for Joints, Back, Knee, Arthritis, Strains & Sprains online in Pakistan from ASM VEO. Sukoon
 Description: Sukoon Joint On Essential Oil Blend is a powerful herbal formulation designed to provide fast and effective relief from joint pain, back pain, arthritis discomfort, knee pain, tennis elbow, strains, and sprains. Its natural essential oil formula absorbs quickly to soothe muscles and improve mobility.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

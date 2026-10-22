@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vegetable Chopper 18 Pcs Set Manual Onion Chopper Food Slicer Dicer Grater Potato Cutter With Handle Multi-Function Kitchen Tool
 Product ID: hhc-3762504
 SKU: hhc-3762504
@@ -7,11 +8,16 @@ Slug: vegetable-chopper-18-pcs-set-manual-onion-chopper-food-slicer-dicer-gra-53
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Vegetable Chopper 18 Pcs Set Manual Onion Chopper Food Slicer Dicer
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/0a6bd0f79b1e37f97c749211237d2da5.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/0a6bd0f79b1e37f97c749211237d2da5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/a5cdb60368619939ca2efef867740aee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/c509d105075efca2325b844266cf4a59.jpg
+Meta Title: Vegetable Chopper 18 Pcs Set Manual Onion Chopper Food Slicer Dicer 
 Meta Description: Buy Vegetable Chopper 18 Pcs Set Manual Onion Chopper Food Slicer Dicer Grater Potato Cutter With Handle Multi-Function Kitchen Tool online in Pakistan from ASM
 Description: The Vegetable Chopper 18 Pcs Set Manual Onion Chopper Food Slicer Dicer Grater Potato Cutter With Handle Multi-Function Kitchen Tool Is A Kitchen Utensil Formulated To Help Provide Food Preparation And Vegetable Cutting During Daily Use.
-Regular Price: 2235
-Sale Price: 2235
+Wholesale Price: 2235
+Regular Price: 4000
+Sale Price: 3197
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

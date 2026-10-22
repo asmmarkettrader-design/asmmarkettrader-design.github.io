@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zoeva 15 Piece Makeup Brushes Set With Pouch - Cosmetic Product Designed For Face Care And Daily Makeup Routine (Random Color)
 Product ID: hhc-3764001
 SKU: hhc-3764001
@@ -7,11 +8,16 @@ Slug: zoeva-15-piece-makeup-brushes-set-with-pouch-cosmetic-product-designed-ed9
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/e776950ad187ae5ea3fbe0d33bc77289.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/e776950ad187ae5ea3fbe0d33bc77289.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/85bcf104196630028335e84ca24ddca4.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/96b22db85e39cfb84d12540c42215de3.jfif
 Meta Title: Zoeva 15 Piece Makeup Brushes Set With Pouch - Cosmetic Product Desi
 Meta Description: Buy Zoeva 15 Piece Makeup Brushes Set With Pouch - Cosmetic Product Designed For Face Care And Daily Makeup Routine (Random Color) online in Pakistan from ASM V
 Description: The Zoeva 15 Piece Makeup Brushes Set With Pouch Is A Cosmetic Product Formulated To Help Provide Face Care And Daily Makeup Utility During Use.
-Regular Price: 1203
-Sale Price: 1203
+Wholesale Price: 1153
+Regular Price: 2120
+Sale Price: 1697
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

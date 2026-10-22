@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: JUST TAKE IT EASY Printed T-Shirt | Cotton Jersey | Casual Wear | Comfortable & Stylish
 Product ID: hhc-3756794
 SKU: hhc-3756794
@@ -7,11 +8,16 @@ Slug: just-take-it-easy-printed-t-shirt-cotton-jersey-casual-wear-comfortable-st
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/ee74a3d3e265769a990eaddebe611c51.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/ee74a3d3e265769a990eaddebe611c51.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/ecfd07c257cac87417b70bfae2cfbf05.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/b98f222df2748a148572a81ff2e643f4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/f51372e291b85a933d9c7266d97eda1c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/77dd9dacb6adb54a33c64fcff3aefc31.webp
 Meta Title: JUST TAKE IT EASY Printed T-Shirt | Cotton Jersey | Casual Wear | Co
 Meta Description: Buy JUST TAKE IT EASY Printed T-Shirt | Cotton Jersey | Casual Wear | Comfortable & Stylish online in Pakistan from ASM VEO. Trendy printed T-shirt made from so
 Description: Trendy printed T-shirt made from soft cotton jersey fabric. Comfortable, breathable, and stylish for everyday casual wear.
-Regular Price: 579
-Sale Price: 579
+Wholesale Price: 529
+Regular Price: 1030
+Sale Price: 827
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

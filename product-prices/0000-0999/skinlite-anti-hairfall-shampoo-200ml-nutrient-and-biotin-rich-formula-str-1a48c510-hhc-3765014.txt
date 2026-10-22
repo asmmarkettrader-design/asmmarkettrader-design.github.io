@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SkinLite Anti Hairfall Shampoo 200ml Nutrient And Biotin Rich Formula Strengthens Roots Reduces Hair Loss Promotes Healthy Thick Hair
 Product ID: hhc-3765014
 SKU: hhc-3765014
@@ -7,11 +8,16 @@ Slug: skinlite-anti-hairfall-shampoo-200ml-nutrient-and-biotin-rich-formula-s-1a
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/4916e7a375f6b8df40c018f7a5e8e7fa.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/4916e7a375f6b8df40c018f7a5e8e7fa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/be1243b6969bef95962dde2fa363cf43.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/5dba5797ab0f904d22839f739c012a31.jpg
 Meta Title: SkinLite Anti Hairfall Shampoo 200ml Nutrient And Biotin Rich Formul
 Meta Description: Buy SkinLite Anti Hairfall Shampoo 200ml Nutrient And Biotin Rich Formula Strengthens Roots Reduces Hair Loss Promotes Healthy Thick Hair online in Pakistan fro
 Description: SkinLite Anti Hairfall Shampoo 200ml Is Specially Formulated With A Powerful Blend Of Nutrients And Biotin To Strengthen Hair Roots And Reduce Hair Fall. Its nourishing formula enhances natural hydration, combats dryness, and prevents breakage, leaving hair smooth, thick, and healthy. Suitable for all hair types, this shampoo provides daily care that supports scalp health and promotes stronger, fuller hair. A reliable solution for those seeking effective hair fall control and long lasting nourishment.Key Features:SkinLite Anti Hairfall Shampoo 200mlNutrient And Biotin Rich FormulaStrengthens Hair Roots And Reduces Hair LossEnhances Natural Hydration And Combats DrynessPrevents Breakage For Healthy Thick HairSuitable For All Hair Types And Daily Use
-Regular Price: 1056
-Sale Price: 1056
+Wholesale Price: 1006
+Regular Price: 1860
+Sale Price: 1489
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

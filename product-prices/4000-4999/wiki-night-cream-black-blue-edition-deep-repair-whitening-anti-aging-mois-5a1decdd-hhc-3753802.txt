@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: WIKI Night Cream – Black & Blue Edition | Deep Repair, Whitening, Anti-Aging & Moisturizing Night Treatment for Bright, Smooth, Glowing Skin
 Product ID: hhc-3753802
 SKU: hhc-3753802
@@ -7,11 +8,16 @@ Slug: wiki-night-cream-black-blue-edition-deep-repair-whitening-anti-aging-mo-5a
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/df7ad08dea99312ba28f3289d9c6c82c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/df7ad08dea99312ba28f3289d9c6c82c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/2c6a06ec3cac68eba0419a55e32c8506.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/3c0d17e9cc161905a510fecdaa95d8f0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/8f6e9e41554918a4fa5b2d2e653df87e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/4086e7331e080debbc740b55f28ddd9e.png
 Meta Title: WIKI Night Cream – Black & Blue Edition | Deep Repair, Whitening, An
 Meta Description: Buy WIKI Night Cream – Black & Blue Edition | Deep Repair, Whitening, Anti-Aging & Moisturizing Night Treatment for Bright, Smooth, Glowing Skin online in Pakis
 Description: WIKI Night Cream delivers overnight skin repair, brightening, and deep hydration. Its special Black & Blue Edition formula helps fade spots, soften skin, and improve texture.
-Regular Price: 235
-Sale Price: 235
+Wholesale Price: 185
+Regular Price: 488
+Sale Price: 338
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

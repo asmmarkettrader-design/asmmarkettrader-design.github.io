@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 PCs Silicon Remote Cover | Soft Protective Silicone Case For TV, AC, And LED Remotes – Anti-Slip, Durable, And Easy To Clean
 Product ID: hhc-3753356
 SKU: hhc-3753356
@@ -7,11 +8,16 @@ Slug: 1-pcs-silicon-remote-cover-soft-protective-silicone-case-for-tv-ac-and-2fb
 Category: Cleaning & Organization
 Subcategory: Storage Boxes & Organizers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/a4b3506929847b14d5716c3227141223.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/a4b3506929847b14d5716c3227141223.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/2d176e32e1ee4ad8dfdd43d58bd275d9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/7cd513226c64fc8a16e2b0c2366b2cd6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/70171c2a5a6239d6d5451eebc3d5c47d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/ac318b32d62be062bae9a96f02bf322b.jpg
 Meta Title: 1 PCs Silicon Remote Cover | Soft Protective Silicone Case For TV, A
 Meta Description: Buy 1 PCs Silicon Remote Cover | Soft Protective Silicone Case For TV, AC, And LED Remotes – Anti-Slip, Durable, And Easy To Clean online in Pakistan from ASM V
 Description: Durable Silicon Remote Cover Designed To Protect Your Remote From Dust, Scratches, And Damage While Offering A Comfortable Grip.
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heaven Dove Keratin Facial Essence Serum Moisturizing Brightening Special Skin Care – 30 ml
 Product ID: hhc-2377698
 SKU: hhc-2377698
@@ -7,11 +8,16 @@ Slug: heaven-dove-keratin-facial-essence-serum-moisturizing-brightening-speci-0b
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: Dove
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/heaven-Dove-facial-essence-karatin2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/heaven-Dove-facial-essence-karatin2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-25-at-8.10.38-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-25-at-8.10.33-PM.jpeg
 Meta Title: Heaven Dove Keratin Facial Essence Serum Moisturizing Brightening Sp
 Meta Description: Buy Heaven Dove Keratin Facial Essence Serum Moisturizing Brightening Special Skin Care – 30 ml online in Pakistan from ASM VEO. Features Oil-Control Refine Por
 Description: Features Oil-Control Refine Pores Anti-Oxidation Whitening Smooth Moisturizing Brightening Penetrates into the bottom of the skin, improves various skin problems, increases skin elasticity, refines pores, brightens skin tone, moisturizes, and keeps skin balanced and young. How to use: After cleansing, apply appropriate amount on face and neck, then massage gently until absorbed. Use morning and evening for better results.
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

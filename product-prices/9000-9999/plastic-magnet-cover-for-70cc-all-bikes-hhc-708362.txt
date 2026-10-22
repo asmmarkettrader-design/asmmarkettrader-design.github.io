@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Plastic magnet cover for 70cc all bikes
 Product ID: hhc-708362
 SKU: hhc-708362
@@ -7,11 +8,16 @@ Slug: plastic-magnet-cover-for-70cc-all-bikes-hhc-708362
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.17.04-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.17.04-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.17.03-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.17.03-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.17.03-PM-3.jpeg
 Meta Title: Plastic magnet cover for 70cc all bikes | Buy Online in Pakistan
 Meta Description: Buy Plastic magnet cover for 70cc all bikes online in Pakistan from ASM VEO. Plastic magnet cover for 70cc all bikes Cash on Delivery, Rs 180 standard delivery,
 Description: Plastic magnet cover for 70cc all bikes
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

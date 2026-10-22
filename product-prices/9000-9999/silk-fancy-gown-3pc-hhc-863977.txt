@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silk Fancy Gown 3pc
 Product ID: hhc-863977
 SKU: hhc-863977
@@ -7,11 +8,16 @@ Slug: silk-fancy-gown-3pc-hhc-863977
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/b6986c61-429c-4513-8077-f87e96c96208.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/b6986c61-429c-4513-8077-f87e96c96208.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/8f945f44-75c9-412f-80e7-4c14ea5746e1.jpeg
 Meta Title: Silk Fancy Gown 3pc | Buy Online in Pakistan
 Meta Description: Buy Silk Fancy Gown 3pc online in Pakistan from ASM VEO. Set Includes: ●Finest Stitched Silk Shirt with Trouser ●Beautifully Embroided Silk Gown of Cash on Deli
 Description: Set Includes: ●Finest Stitched Silk Shirt with Trouser ●Beautifully Embroided Silk Gown of Large Flair Colors: 3 colours available Black, blue ,gray Size: small/Medium/large Chest:20/21/22 Inner length:37 Gown length:48
-Regular Price: 2404
-Sale Price: 2404
+Wholesale Price: 2404
+Regular Price: 4280
+Sale Price: 3425
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

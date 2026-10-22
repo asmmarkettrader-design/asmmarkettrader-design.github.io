@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Product Portable Mini Bag Sealer & Cutter – Handheld Thermal Heat Sealing Machine for Plastic Food Storage Bags
 Product ID: hhc-3764825
 SKU: hhc-3764825
@@ -7,11 +8,16 @@ Slug: professional-product-portable-mini-bag-sealer-cutter-handheld-thermal-h-9c
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/cbe3b3a7cd30e638cadf2f3eb63112eb.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/cbe3b3a7cd30e638cadf2f3eb63112eb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/45bdf6be8c6556045e9f7d280348fa53.jpg
 Meta Title: Professional Product Portable Mini Bag Sealer & Cutter – Handheld Th
 Meta Description: Buy Professional Product Portable Mini Bag Sealer & Cutter – Handheld Thermal Heat Sealing Machine for Plastic Food Storage Bags online in Pakistan from ASM VEO
 Description: Keep snacks, produce, and leftovers fresh with the 2-in-1 Portable Mini Bag Sealer. This compact handheld device uses rapid thermal heat technology to create an airtight seal on plastic, foil, and chip bags in seconds, locking in flavor and preventing food waste. Features a hidden built-in bag cutter
-Regular Price: 432
-Sale Price: 432
+Wholesale Price: 382
+Regular Price: 790
+Sale Price: 633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

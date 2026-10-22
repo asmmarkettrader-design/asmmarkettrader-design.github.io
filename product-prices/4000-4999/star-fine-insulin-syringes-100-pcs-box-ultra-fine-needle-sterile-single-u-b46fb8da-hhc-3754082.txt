@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Star Fine Insulin Syringes – 100 Pcs Box | Ultra-Fine Needle, Sterile & Single-Use Medical Syringes
 Product ID: hhc-3754082
 SKU: hhc-3754082
@@ -7,11 +8,16 @@ Slug: star-fine-insulin-syringes-100-pcs-box-ultra-fine-needle-sterile-single-b4
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/d17ca40a78b3b1a138129a746bc5239f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/d17ca40a78b3b1a138129a746bc5239f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/c13a71c63982e36db1a73e7e7572a682.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/dc5a8cff2bd6d8d0d7f212de7a2978c7.jpeg
 Meta Title: Star Fine Insulin Syringes – 100 Pcs Box | Ultra-Fine Needle, Steril
 Meta Description: Buy Star Fine Insulin Syringes – 100 Pcs Box | Ultra-Fine Needle, Sterile & Single-Use Medical Syringes online in Pakistan from ASM VEO. A box of 100 high-quali
 Description: A box of 100 high-quality Star Fine insulin syringes designed for safe, smooth, and accurate insulin administration. Features an ultra-fine needle, clear measurement markings, and sterile single-use packaging.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

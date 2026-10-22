@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Child Safety Fridge Lock – Self Adhesive Baby Proof Lock for Refrigerator, Cabinets & Drawers | Strong, Easy Installation
 Product ID: hhc-3754193
 SKU: hhc-3754193
@@ -7,11 +8,16 @@ Slug: child-safety-fridge-lock-self-adhesive-baby-proof-lock-for-refrigerator-9c
 Category: Tools & DIY
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/64cea14d9adb89861f27609e4e7b5e88.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/64cea14d9adb89861f27609e4e7b5e88.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/0cdf65f1a1b68f095a20147fb39d9c45.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/5d6db3cbe9d8b0adbbf0de907c8da6c8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/08189119ef82e47d877e193a21b8caa1.jpg
 Meta Title: Child Safety Fridge Lock – Self Adhesive Baby Proof Lock for Refrige
 Meta Description: Buy Child Safety Fridge Lock – Self Adhesive Baby Proof Lock for Refrigerator, Cabinets & Drawers | Strong, Easy Installation online in Pakistan from ASM VEO. K
 Description: Keep your little ones safe with this self-adhesive child safety fridge lock, designed to prevent kids from opening refrigerators, cabinets, or drawers. Easy to install, durable, and ideal for baby-proofing any home.
-Regular Price: 343
-Sale Price: 343
+Wholesale Price: 293
+Regular Price: 650
+Sale Price: 500
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

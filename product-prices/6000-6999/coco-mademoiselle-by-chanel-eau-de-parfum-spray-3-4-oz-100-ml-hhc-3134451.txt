@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: COCO MADEMOISELLE by Chanel – Eau de Parfum Spray 3.4 oz / 100 ml
 Product ID: hhc-3134451
 SKU: hhc-3134451
@@ -7,11 +8,16 @@ Slug: coco-mademoiselle-by-chanel-eau-de-parfum-spray-3-4-oz-100-ml-hhc-3134451
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/470871742_1494639967885962_2772970951464604580_n.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/470871742_1494639967885962_2772970951464604580_n.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/485160464_972535581692331_8472409453191173841_n.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/486251629_970677618592595_4756509845836731586_n.jpg
 Meta Title: COCO MADEMOISELLE by Chanel – Eau de Parfum Spray 3.4 oz / 100 ml |
 Meta Description: Buy COCO MADEMOISELLE by Chanel – Eau de Parfum Spray 3.4 oz / 100 ml online in Pakistan from ASM VEO. Timeless elegance in a bottle. COCO MADEMOISELLE is a mod
 Description: Timeless elegance in a bottle. COCO MADEMOISELLE is a modern, sophisticated fragrance that embodies the essence of Chanel’s iconic style—bold, confident, and irresistibly chic. A harmonious blend of citrus, floral, and oriental notes, this Eau de Parfum is designed for the woman who radiates luxury and independence.✨ Key Features:✔ Iconic Scent Profile – A captivating mix of fresh citrus, lush florals, and warm oriental undertones. ✔ Luxurious Longevity – Eau de Parfum concentration ensures 8-12 hours of lasting wear. ✔ Signature Chanel Elegance – Housed in a sleek, amber-toned bottle with minimalist lines and a gold cap. ✔ Versatile Appeal – Perfect for daytime sophistication or evening glamour.🌹 Scent Profile:Top Notes: Orange, Bergamot, Mandarin – A bright, zesty opening.Heart Notes: Jasmine, Rose, Mimosa – A floral heart that exudes femininity.Base Notes: Patchouli, Vanilla, Vetiver, White Musk – Warm, sensual depth with a modern edge
-Regular Price: 1576
-Sale Price: 1576
+Wholesale Price: 1126
+Regular Price: 2070
+Sale Price: 1659
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

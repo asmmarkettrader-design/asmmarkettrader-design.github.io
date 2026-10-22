@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 PC High Pigment Matte Lipgloss | Lip Glow Oil |  Lip Plumper | Lip Stain | Matte Lipgloss
 Product ID: hhc-2901365
 SKU: hhc-2901365
@@ -7,11 +8,16 @@ Slug: 3-pc-high-pigment-matte-lipgloss-lip-glow-oil-lip-plumper-lip-stain-mat-13
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.10.35-PM_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.10.35-PM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.10.35-PM-1.jpeg
 Meta Title: 3 PC High Pigment Matte Lipgloss | Lip Glow Oil | Lip Plumper | Lip
 Meta Description: Buy 3 PC High Pigment Matte Lipgloss | Lip Glow Oil | Lip Plumper | Lip Stain | Matte Lipgloss online in Pakistan from ASM VEO. 3 PC High Pigment Matte Lipgloss
 Description: 3 PC High Pigment Matte Lipgloss | Lip Glow Oil | Lip Plumper | Lip Stain | Matte Lipgloss【Lip Gloss Set】This lip gloss has a moisturizing formula that conditions your lips with a glass-like finish, keeping them hydrated and making your makeup last longer. This lip kit will keep your lips moisturized whether you're going about your day-to-day or attending a special occasion.【Moisturizing】The lip glow oil is enriched with cherry seed oil, deeply nourishes lips, long-lasting moisturizing,locks in moisture without making them dry and cracked, and leaves your lips reflecting shine like glass and water, a swipe of hydration will instantly make your lips more sexy.Material: LiquidTexture: MatteShade: Shades Of Red, Shades Of PinkProduct Feature: High PigmentedPackage Includes: 3 x Lip Gloss
-Regular Price: 950
-Sale Price: 950
+Wholesale Price: 900
+Regular Price: 1710
+Sale Price: 1365
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

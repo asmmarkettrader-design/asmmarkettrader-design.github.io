@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Oil Bottle with Silicone Brush – Durable Kitchen Tool for Easy Cooking and Baking Use.( Random Color)
 Product ID: hhc-3753980
 SKU: hhc-3753980
@@ -7,11 +8,16 @@ Slug: oil-bottle-with-silicone-brush-durable-kitchen-tool-for-easy-cooking-an-7e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/757f151d92bb5be27d5195cb439b9a60.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/757f151d92bb5be27d5195cb439b9a60.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/5452796a3db769c940c29a0dcb607a5a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/319ee175a3805229ff9c778c53a9d15d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/7bf70324b23f6eb918e61ce3e551715a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/e9ae635c264ef6dfb6937b7b61bba220.jpg
 Meta Title: Oil Bottle with Silicone Brush – Durable Kitchen Tool for Easy Cooki
 Meta Description: Buy Oil Bottle with Silicone Brush – Durable Kitchen Tool for Easy Cooking and Baking Use.( Random Color) online in Pakistan from ASM VEO. Durable oil bottle wi
 Description: Durable oil bottle with silicone brush, easy to use for cooking, baking, grilling, and everyday kitchen tasks.
-Regular Price: 340
-Sale Price: 340
+Wholesale Price: 290
+Regular Price: 645
+Sale Price: 495
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

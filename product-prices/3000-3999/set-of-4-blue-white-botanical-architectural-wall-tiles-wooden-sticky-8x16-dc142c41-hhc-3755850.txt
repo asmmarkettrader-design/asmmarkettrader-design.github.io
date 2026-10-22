@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 4 Blue & White Botanical & Architectural Wall Tiles | Wooden Sticky | 8x16" & 8x11" | Double Tape Included
 Product ID: hhc-3755850
 SKU: hhc-3755850
@@ -7,11 +8,16 @@ Slug: set-of-4-blue-white-botanical-architectural-wall-tiles-wooden-sticky-8x-dc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/37d7372e532f7748f2be46e48dfb3f37.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/37d7372e532f7748f2be46e48dfb3f37.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/5b7d01446adbb5d637b45a9e59addb63.jpeg
 Meta Title: Set of 4 Blue & White Botanical & Architectural Wall Tiles | Wooden
 Meta Description: Buy Set of 4 Blue & White Botanical & Architectural Wall Tiles | Wooden Sticky | 8x16" & 8x11" | Double Tape Included online in Pakistan from ASM VEO. Pack of 4
 Description: Pack of 4 decorative wooden sticky tiles with blue & white botanical and architectural designs. Includes double tape.
-Regular Price: 909
-Sale Price: 909
+Wholesale Price: 859
+Regular Price: 1630
+Sale Price: 1306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

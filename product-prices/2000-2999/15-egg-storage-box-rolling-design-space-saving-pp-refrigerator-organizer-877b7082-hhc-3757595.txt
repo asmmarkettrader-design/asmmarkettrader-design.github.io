@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 15 Egg Storage Box Rolling Design Space Saving PP Refrigerator Organizer Multi Layer Egg Holder| Random Colour
 Product ID: hhc-3757595
 SKU: hhc-3757595
@@ -7,11 +8,16 @@ Slug: 15-egg-storage-box-rolling-design-space-saving-pp-refrigerator-organize-87
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/eeb366ca09a109bf42d56fba7a29a3a6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/eeb366ca09a109bf42d56fba7a29a3a6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/777d129d084fc5b109465caa489b4bac.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/f6be62971c87ee6fefaa4b8221e5c5b7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/560238b23a12be9d2123b6b95a004aae.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/5c43dbf7d50add7085d6ece0aa09ba32.jpg
 Meta Title: 15 Egg Storage Box Rolling Design Space Saving PP Refrigerator Organ
 Meta Description: Buy 15 Egg Storage Box Rolling Design Space Saving PP Refrigerator Organizer Multi Layer Egg Holder| Random Colour online in Pakistan from ASM VEO. 15 Egg Stora
 Description: 15 Egg Storage Box Rolling Design Space Saving PP Refrigerator Organizer Multi Layer Egg Holder.
-Regular Price: 495
-Sale Price: 495
+Wholesale Price: 445
+Regular Price: 910
+Sale Price: 728
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

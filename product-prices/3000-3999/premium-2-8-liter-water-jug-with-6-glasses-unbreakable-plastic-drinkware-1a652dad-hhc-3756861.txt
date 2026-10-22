@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium 2.8 Liter Water Jug with 6 Glasses – Unbreakable Plastic Drinkware Set for Home & Office (Random Color)
 Product ID: hhc-3756861
 SKU: hhc-3756861
@@ -7,11 +8,16 @@ Slug: premium-2-8-liter-water-jug-with-6-glasses-unbreakable-plastic-drinkwar-1a
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/002f82f2cd79323065c56a6874fd9e50.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/002f82f2cd79323065c56a6874fd9e50.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/ac121ed9d6c2bb011426151e3343206f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/bac7f5bd6fec34b493d00ed5cddf872e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/e98912ca6727599928dc0f58047b1091.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/16493919bf8d6a787a362bccbe48a926.png
 Meta Title: Premium 2.8 Liter Water Jug with 6 Glasses – Unbreakable Plastic Dri
 Meta Description: Buy Premium 2.8 Liter Water Jug with 6 Glasses – Unbreakable Plastic Drinkware Set for Home & Office (Random Color) online in Pakistan from ASM VEO. Premium 2.8
 Description: Premium 2.8 liter water jug with 6 matching glasses made from durable unbreakable plastic. Ideal for serving water, juice, and cold beverages at home, office, or outdoor gatherings.
-Regular Price: 861
-Sale Price: 861
+Wholesale Price: 811
+Regular Price: 1540
+Sale Price: 1236
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

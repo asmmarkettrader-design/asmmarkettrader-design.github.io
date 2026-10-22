@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: S925 Elegant Butterfly with Pearl Tassels Drop Earrings – Delicate, Feminine & Stylish Fashion Jewelry for Women & Girls(Pair)
 Product ID: hhc-3753993
 SKU: hhc-3753993
@@ -7,11 +8,16 @@ Slug: s925-elegant-butterfly-with-pearl-tassels-drop-earrings-delicate-femini-dd
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: S925 Elegant Butterfly with Pearl Tassels Drop Earrings – Delicate,
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/32e6aac9f05ed9d1ff1a85f8937b5c73.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/32e6aac9f05ed9d1ff1a85f8937b5c73.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/41895e8eb313dcb63087427795866143.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/0524a23a4a8a4f86680a545bfc872211.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/a5c74dfcc0e478b27f1bf4675f17cbbc.jpeg
+Meta Title: S925 Elegant Butterfly with Pearl Tassels Drop Earrings – Delicate, 
 Meta Description: Buy S925 Elegant Butterfly with Pearl Tassels Drop Earrings – Delicate, Feminine & Stylish Fashion Jewelry for Women & Girls(Pair) online in Pakistan from ASM V
 Description: Adorn your look with these Elegant Butterfly with Pearl Tassels Drop Earrings, featuring a charming butterfly motif paired with smooth dangling pearls for a soft, graceful shine. Lightweight, trendy, and ideal for both casual and festive styling.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DIY Small Plaster Painting Kit for Kids – Fun & Creative Arts and Crafts Set
 Product ID: hhc-3764708
 SKU: hhc-3764708
@@ -7,11 +8,16 @@ Slug: diy-small-plaster-painting-kit-for-kids-fun-creative-arts-and-crafts-set-h
 Category: Educational & Creative
 Subcategory: DIY Project Kits
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/f6af4850cd8d0609cfe20113fad0067a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/f6af4850cd8d0609cfe20113fad0067a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/bca1810a601b5deea0d5d60224f49851.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/54f47bfc762ba8852585cba4aabc347c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/234d7931a477eb14f58c8111bfca52bd.jpeg
 Meta Title: DIY Small Plaster Painting Kit for Kids – Fun & Creative Arts and Cr
 Meta Description: Buy DIY Small Plaster Painting Kit for Kids – Fun & Creative Arts and Crafts Set online in Pakistan from ASM VEO. Unleash your child’s creativity with the DIY S
 Description: Unleash your child’s creativity with the DIY Small Plaster Painting Kit. Designed specifically for young artists, this all-in-one craft set includes smooth plaster figures, vibrant non-toxic paints, and brushes to provide hours of engaging, screen-free fun.
-Regular Price: 488
-Sale Price: 488
+Wholesale Price: 438
+Regular Price: 900
+Sale Price: 717
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

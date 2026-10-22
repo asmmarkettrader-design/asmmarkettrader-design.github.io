@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bahadur YOLO Triangular Eraser Set (Bucket of 72 Pcs)
 Product ID: hhc-3764019
 SKU: hhc-3764019
@@ -7,11 +8,16 @@ Slug: bahadur-yolo-triangular-eraser-set-bucket-of-72-pcs-hhc-3764019
 Category: Books & Stationery
 Subcategory: Office Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/0a7454a70e39abe55c7b3ac4dc62d4d1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/0a7454a70e39abe55c7b3ac4dc62d4d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/da88c6bffc09719aca0d25112a04e4eb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/de9c06df7eb4874dc34f48a4ac5d5292.jpeg
 Meta Title: Bahadur YOLO Triangular Eraser Set (Bucket of 72 Pcs) | Buy Online i
 Meta Description: Buy Bahadur YOLO Triangular Eraser Set (Bucket of 72 Pcs) online in Pakistan from ASM VEO. A 72-piece bucket of triangular erasers featuring three sharp edges f
 Description: A 72-piece bucket of triangular erasers featuring three sharp edges for precision erasing. Non-dust, soft, and durable, these colorful erasers are ideal for students, artists, and classroom stationery supplies.
-Regular Price: 573
-Sale Price: 573
+Wholesale Price: 523
+Regular Price: 1020
+Sale Price: 818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Water Bottle For Drinking / Water Bottel For Fridge Transparent Water Bottle (Random Color) 1700 ml
 Product ID: hhc-2658787
 SKU: hhc-2658787
@@ -7,11 +8,16 @@ Slug: water-bottle-for-drinking-water-bottel-for-fridge-transparent-water-bot-54
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/9c07d191732283910d27d9828fa4891a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/9c07d191732283910d27d9828fa4891a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-29-at-8.52.13-PM.jpeg
 Meta Title: Water Bottle For Drinking / Water Bottel For Fridge Transparent Wate
 Meta Description: Buy Water Bottle For Drinking / Water Bottel For Fridge Transparent Water Bottle (Random Color) 1700 ml online in Pakistan from ASM VEO. &nbsp; WaterBottleis Ca
 Description: &nbsp; WaterBottleis Capacity of 1 Bottle: 1700 ml Premium Quality materia Bottlebottle is a bpa proof product.Its size and light weight make it suitable for indoor as well as outdoor activities. Convenient-It is ultra-convenient to use everyday for the home, office, school, etc. Fashion design - with a stylish design to be cool everywhere. Easy to clean - nothing sticks inside.The wide mouth of the bottle is designed to add ice, water. Hand carry/ ultra-portable - water bottle light weightand easy transportation. To be hydrated all day, always makes you look cool and feel natural.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

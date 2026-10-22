@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: V-BENZ Original Electric Roll On Wax Depilator Heater Hair Removal Machine (Wax Cartridge Included) – Model: V-5889
 Product ID: hhc-3754438
 SKU: hhc-3754438
@@ -7,11 +8,16 @@ Slug: v-benz-original-electric-roll-on-wax-depilator-heater-hair-removal-mach-3f
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/bdba66c346b5621d597cda561a4903be.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/bdba66c346b5621d597cda561a4903be.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/12c0de2e3b1d55e15cefcada7fbad6d8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/ec1194810a71fe5586728ad0d7978b7c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/c4c7fb998417ad7d303a9c7c4491e7e9.jpg
 Meta Title: V-BENZ Original Electric Roll On Wax Depilator Heater Hair Removal M
 Meta Description: Buy V-BENZ Original Electric Roll On Wax Depilator Heater Hair Removal Machine (Wax Cartridge Included) – Model: V-5889 online in Pakistan from ASM VEO. CONVENI
 Description: CONVENIENT and ELEGANT – Perfect for waxing in salons, at home, with your friends, on vacation, or anywhere you go. A stylish addition to any home beauty set. Perfect waxing tool for mobile technicians DURABLE and LIGHT – High quality and hot temperature resistant materials and heavy-duty electric c
-Regular Price: 3566
-Sale Price: 3566
+Wholesale Price: 3566
+Regular Price: 6020
+Sale Price: 4816
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

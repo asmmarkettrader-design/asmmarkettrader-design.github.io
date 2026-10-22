@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Roti Mat | Large Size 50x40cm Silicon Roti Mat For Kitchen |  Non-stick Baking Mat Kneading Dough Pad (Random Color)
 Product ID: hhc-3756254
 SKU: hhc-3756254
@@ -7,11 +8,16 @@ Slug: silicone-roti-mat-large-size-50x40cm-silicon-roti-mat-for-kitchen-non-s-de
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/41c65542ee5d2333422fa1e2512b9eda.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/41c65542ee5d2333422fa1e2512b9eda.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/9affc9dc651eb8bf9cdab29baae9ebc6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/16d4d7461c81d4f63cca05a06dc8ca51.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/ae1be9d57f0ce802c440aef2ca7f8fbf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/97002063b849d8f7d118f0ff7bc0eb8d.jpg
 Meta Title: Silicone Roti Mat | Large Size 50x40cm Silicon Roti Mat For Kitchen
 Meta Description: Buy Silicone Roti Mat | Large Size 50x40cm Silicon Roti Mat For Kitchen | Non-stick Baking Mat Kneading Dough Pad (Random Color) online in Pakistan from ASM VEO
 Description: Non-stick Silicone Roti Mat for kneading dough, rolling roti, and baking. Large size, food-grade silicone with strong grip, easy to clean, reusable, and perfect for daily kitchen tasks.
-Regular Price: 421
-Sale Price: 421
+Wholesale Price: 371
+Regular Price: 770
+Sale Price: 616
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

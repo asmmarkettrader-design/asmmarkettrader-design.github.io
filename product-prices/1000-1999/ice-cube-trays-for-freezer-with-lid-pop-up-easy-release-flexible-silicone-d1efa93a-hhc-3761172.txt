@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ice Cube Trays For Freezer With Lid Pop Up Easy Release Flexible Silicone Bottom Durable And Convenient Ice Mold | Random Color
 Product ID: hhc-3761172
 SKU: hhc-3761172
@@ -7,11 +8,16 @@ Slug: ice-cube-trays-for-freezer-with-lid-pop-up-easy-release-flexible-silico-d1
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/c2a314c0a8452ed0769507f38a9ab314.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/c2a314c0a8452ed0769507f38a9ab314.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/34a6b7ba0b513dab4d283590a1541e44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/6062fddad93e2ad4a26eb778805ed740.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/c6f909ba92af60040a981921a79339dc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/ccde704d11453495ba16172b5b0d9d54.jpeg
 Meta Title: Ice Cube Trays For Freezer With Lid Pop Up Easy Release Flexible Sil
 Meta Description: Buy Ice Cube Trays For Freezer With Lid Pop Up Easy Release Flexible Silicone Bottom Durable And Convenient Ice Mold | Random Color online in Pakistan from ASM
 Description: Ice Cube Trays For Freezer With Lid Pop Up Easy Release Flexible Silicone Bottom Durable Convenient And Easy To Use.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

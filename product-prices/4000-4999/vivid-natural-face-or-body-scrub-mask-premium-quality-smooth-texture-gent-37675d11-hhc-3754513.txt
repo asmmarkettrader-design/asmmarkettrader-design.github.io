@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vivid Natural Face Or Body Scrub Mask Premium Quality Smooth Texture Gentle Formula Comfortable Use | 200g
 Product ID: hhc-3754513
 SKU: hhc-3754513
@@ -7,11 +8,16 @@ Slug: vivid-natural-face-or-body-scrub-mask-premium-quality-smooth-texture-ge-37
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/922f0ab18d4ff84b2af8d5d682b712f9.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/922f0ab18d4ff84b2af8d5d682b712f9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/d7d954cbcb1ba1868e9ed8718a498074.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/22338669f6f0cc58f366dcaca425445c.jpeg
 Meta Title: Vivid Natural Face Or Body Scrub Mask Premium Quality Smooth Texture
 Meta Description: Buy Vivid Natural Face Or Body Scrub Mask Premium Quality Smooth Texture Gentle Formula Comfortable Use | 200g online in Pakistan from ASM VEO. Vivid Natural Fa
 Description: Vivid Natural Face Or Body Scrub Mask Provides Premium Quality Smooth Texture Gentle Formula Comfortable Use And Reliable Utility
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

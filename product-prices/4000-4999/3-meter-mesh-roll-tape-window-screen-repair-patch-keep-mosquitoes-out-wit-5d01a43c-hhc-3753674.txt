@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Meter - Mesh Roll Tape Window Screen Repair Patch Keep Mosquitoes Out With Anti Insect Self Adhesive Mesh Patch Tape
 Product ID: hhc-3753674
 SKU: hhc-3753674
@@ -7,11 +8,16 @@ Slug: 3-meter-mesh-roll-tape-window-screen-repair-patch-keep-mosquitoes-out-w-5d
 Category: Tools & DIY
 Subcategory: Plumbing Fixtures
 Brand: ASM VEO
-Meta Title: 3 Meter - Mesh Roll Tape Window Screen Repair Patch Keep Mosquitoes
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/cd24de37e453418ec34a0a05f137125f.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/cd24de37e453418ec34a0a05f137125f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/85d2ff6ca6a6eb7d15a528bf8219ea5f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/32047719fc9442bbb2f06db5a9e4df1a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/dce14fbccea5b1afc977d15dc7948f19.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/cd78b7a73c5dd46b23509f4fab7e424c.jpg
+Meta Title: 3 Meter - Mesh Roll Tape Window Screen Repair Patch Keep Mosquitoes 
 Meta Description: Buy 3 Meter - Mesh Roll Tape Window Screen Repair Patch Keep Mosquitoes Out With Anti Insect Self Adhesive Mesh Patch Tape online in Pakistan from ASM VEO. Stro
 Description: Strong Self Adhesive Mesh Patch Tape For Quick Window Screen Repair
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

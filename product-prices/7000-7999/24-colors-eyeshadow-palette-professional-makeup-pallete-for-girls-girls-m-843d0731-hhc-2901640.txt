@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 24 Colors Eyeshadow Palette Professional Makeup Pallete for Girls | Girls Makeup Kit | Eyeshadow Palette | Beauty Makeup kit (random shades)
 Product ID: hhc-2901640
 SKU: hhc-2901640
@@ -7,11 +8,16 @@ Slug: 24-colors-eyeshadow-palette-professional-makeup-pallete-for-girls-girls-84
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-11.46.34-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-11.46.34-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-11.46.34-AM.jpeg
 Meta Title: 24 Colors Eyeshadow Palette Professional Makeup Pallete for Girls |
 Meta Description: Buy 24 Colors Eyeshadow Palette Professional Makeup Pallete for Girls | Girls Makeup Kit | Eyeshadow Palette | Beauty Makeup kit (random shades) online in Pakis
 Description: 24 Colors Eyeshadow Palette Professional Makeup Pallete for Girls | Girls Makeup Kit | Eyeshadow Palette | Beauty Makeup kit (random shades) • Material: Powder • Texture: Glossy, High Pigmented • Shade: Multicolor • Product Feature: Glitter, Waterproof • Package Includes: 1 x Eyeshadow Palette
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

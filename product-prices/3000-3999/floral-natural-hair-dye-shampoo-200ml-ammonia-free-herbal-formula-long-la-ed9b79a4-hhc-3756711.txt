@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Floral Natural Hair Dye Shampoo | 200ml | Ammonia-Free Herbal Formula | Long-Lasting Gray Coverage
 Product ID: hhc-3756711
 SKU: hhc-3756711
@@ -7,11 +8,16 @@ Slug: floral-natural-hair-dye-shampoo-200ml-ammonia-free-herbal-formula-long-ed9
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/a18f6aaf56eb2e96b050be9636ab105b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/a18f6aaf56eb2e96b050be9636ab105b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/48c646d32885b9586d0ff0ec16389620.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/05814ddd0aeb605b854f10fdafea4559.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/942376dd0d0e91e3672b5f2f7ef20ecc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/afcb643d4830269c0764212962317118.jpeg
 Meta Title: Floral Natural Hair Dye Shampoo | 200ml | Ammonia-Free Herbal Formul
 Meta Description: Buy Floral Natural Hair Dye Shampoo | 200ml | Ammonia-Free Herbal Formula | Long-Lasting Gray Coverage online in Pakistan from ASM VEO. Herbal hair dye shampoo
 Description: Herbal hair dye shampoo with ginseng & Fo-Ti. Ammonia-free formula provides long-lasting gray coverage while keeping hair healthy & shiny.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 Star Car Charger With Android Wire And 1 USB Slot 1 Amp
 Product ID: hhc-3757831
 SKU: hhc-3757831
@@ -7,11 +8,16 @@ Slug: 7-star-car-charger-with-android-wire-and-1-usb-slot-1-amp-hhc-3757831
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/e9ee5eefec0429c195af2b599c681fbb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/e9ee5eefec0429c195af2b599c681fbb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/f16e9d3854ee100d95aca93c0e1b3c31.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/c7343f3a97254eeda537bf7e28310afe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/0e5e5e2cc25d881c88a73c74d7bd0c95.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/2759ffe39300de218be4a980a7583c5c.jpeg
 Meta Title: 7 Star Car Charger With Android Wire And 1 USB Slot 1 Amp | Buy Onli
 Meta Description: Buy 7 Star Car Charger With Android Wire And 1 USB Slot 1 Amp online in Pakistan from ASM VEO. 7 Star Car Charger With Aluminium Body Android Wire And 1 USB Slo
 Description: 7 Star Car Charger With Aluminium Body Android Wire And 1 USB Slot 1 Amp Output
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

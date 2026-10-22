@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 30 Read And Rhyme Flip Books Phonics Learning Set With 300 Words For Kids
 Product ID: hhc-3757829
 SKU: hhc-3757829
@@ -7,11 +8,16 @@ Slug: 30-read-and-rhyme-flip-books-phonics-learning-set-with-300-words-for-kids-
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/7aeb5e3ec97818a459ac9ece6f3a441d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/7aeb5e3ec97818a459ac9ece6f3a441d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/a14693e9f7c2cf54c245b5d3581e09d5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/ace808f098acf216f0bba6117431a640.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/7864c1ed0627d4a6ec4a67d40875460e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/34aed6271a55ed52add39498660b3d70.jpeg
 Meta Title: 30 Read And Rhyme Flip Books Phonics Learning Set With 300 Words For
 Meta Description: Buy 30 Read And Rhyme Flip Books Phonics Learning Set With 300 Words For Kids online in Pakistan from ASM VEO. 30 Read And Rhyme Flip Books Phonics Set Featurin
 Description: 30 Read And Rhyme Flip Books Phonics Set Featuring 300 Words To Build Reading Confidence And Vocabulary
-Regular Price: 2726
-Sale Price: 2726
+Wholesale Price: 2726
+Regular Price: 4820
+Sale Price: 3860
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Everglow Vitamin C Face Wash – Brightening & Refreshing Cleanser (120 ml)
 Product ID: hhc-3756192
 SKU: hhc-3756192
@@ -7,11 +8,16 @@ Slug: everglow-vitamin-c-face-wash-brightening-refreshing-cleanser-120-ml-hhc-37
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/75743b22d26ae0c9e06a55975e3e32ba.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/75743b22d26ae0c9e06a55975e3e32ba.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/ba7f7c6e01bb90df5aa700a3b397845a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/db595495f19db5e5b131b846e333586c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/15156970ec212a0d23fd33ac2f318dd1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/355244807b70e2cfbc35bc0360befa27.png
 Meta Title: Everglow Vitamin C Face Wash – Brightening & Refreshing Cleanser (12
 Meta Description: Buy Everglow Vitamin C Face Wash – Brightening & Refreshing Cleanser (120 ml) online in Pakistan from ASM VEO. Everglow Vitamin C Face Wash gently cleanses, bri
 Description: Everglow Vitamin C Face Wash gently cleanses, brightens, and refreshes your skin while helping reduce dullness and impurities. Enriched with Vitamin C, it leaves your skin feeling fresh, soft, and radiant after every wash.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

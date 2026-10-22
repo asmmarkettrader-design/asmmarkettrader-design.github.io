@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Relax Vitamin C Daily Face Serum – Brightening, Anti-Aging & Hydrating Formula For Healthy Radiant Skin (30ml)
 Product ID: hhc-3753168
 SKU: hhc-3753168
@@ -7,11 +8,16 @@ Slug: relax-vitamin-c-daily-face-serum-brightening-anti-aging-hydrating-formu-7e
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/37d4bab0af57a5b83a95993da5c03934.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/37d4bab0af57a5b83a95993da5c03934.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/2ec293755030c32e3761b264d748b6fa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/b4548a06c49bf2b7502d0d2a86948a64.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/1fdc96b1490e34aa8fe81919b9446479.jpg
 Meta Title: Relax Vitamin C Daily Face Serum – Brightening, Anti-Aging & Hydrati
 Meta Description: Buy Relax Vitamin C Daily Face Serum – Brightening, Anti-Aging & Hydrating Formula For Healthy Radiant Skin (30ml) online in Pakistan from ASM VEO. Relax Vitami
 Description: Relax Vitamin C Daily Face Serum – Brightening, Anti-Aging & Hydrating Formula For Healthy Radiant Skin (30ml)
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

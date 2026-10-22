@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Edgeless Microfiber Cleaning Towels | 40×40 cm | 450 GSM | Ultra Soft & Durable ( Random Colour)
 Product ID: hhc-3756197
 SKU: hhc-3756197
@@ -7,11 +8,16 @@ Slug: edgeless-microfiber-cleaning-towels-40-40-cm-450-gsm-ultra-soft-durable-3c
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/d8b2c13a6dc3fcdeb53d528cac16f0f3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/d8b2c13a6dc3fcdeb53d528cac16f0f3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/76548e0375656d2caa785adfa064ad00.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/488445db36f6c2c3425d027d8fba2483.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/17b7e380e7bc3be4c85544a72c4a018e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/2e5c49bb3fdd1500cef48f41b8066dc6.jpeg
 Meta Title: Edgeless Microfiber Cleaning Towels | 40×40 cm | 450 GSM | Ultra Sof
 Meta Description: Buy Edgeless Microfiber Cleaning Towels | 40×40 cm | 450 GSM | Ultra Soft & Durable ( Random Colour) online in Pakistan from ASM VEO. Premium edgeless microfibe
 Description: Premium edgeless microfiber towels, 40×40 cm, 450 GSM. Ultra-soft, lint-free, and durable for cleaning, polishing, and detailing.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

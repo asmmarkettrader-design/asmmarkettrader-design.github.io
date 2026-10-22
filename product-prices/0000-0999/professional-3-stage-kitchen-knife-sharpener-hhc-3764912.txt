@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional 3-Stage Kitchen Knife Sharpener
 Product ID: hhc-3764912
 SKU: hhc-3764912
@@ -7,11 +8,16 @@ Slug: professional-3-stage-kitchen-knife-sharpener-hhc-3764912
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/5b73ea8ed746c508714427fa8f2539a2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/5b73ea8ed746c508714427fa8f2539a2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/59fc1ef6391b08b169a5a6a69d0cee72.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/d23f8f60d51807327df0420504cf0a69.jpeg
 Meta Title: Professional 3-Stage Kitchen Knife Sharpener | Buy Online in Pakista
 Meta Description: Buy Professional 3-Stage Kitchen Knife Sharpener online in Pakistan from ASM VEO. ackle fine repairs with the 24-in-1 Portable Precision Screwdriver Set. Housed
 Description: ackle fine repairs with the 24-in-1 Portable Precision Screwdriver Set. Housed in a sleek, push-to-open magnetic aluminum storage case, this professional repair kit includes 24 interchangeable S2 alloy steel magnetic bits and an ergonomic handle.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

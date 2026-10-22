@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 3 Motivational Sticky Canvas Frames - Interior Decor Piece Crafted For Wall Display And Daily Inspiration Practice - Size 8x11
 Product ID: hhc-3755717
 SKU: hhc-3755717
@@ -7,11 +8,16 @@ Slug: set-of-3-motivational-sticky-canvas-frames-interior-decor-piece-crafted-ec
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/b1553e27f31694206976fa3ec4e9d1d3.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/b1553e27f31694206976fa3ec4e9d1d3.jfif
 Meta Title: Set Of 3 Motivational Sticky Canvas Frames - Interior Decor Piece Cr
 Meta Description: Buy Set Of 3 Motivational Sticky Canvas Frames - Interior Decor Piece Crafted For Wall Display And Daily Inspiration Practice - Size 8x11 online in Pakistan fro
 Description: The Set Of 3 Motivational Sticky Canvas Frames Is An Interior Decor Piece Created To Assist With Wall Display And Daily Inspiration Purpose During Application.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

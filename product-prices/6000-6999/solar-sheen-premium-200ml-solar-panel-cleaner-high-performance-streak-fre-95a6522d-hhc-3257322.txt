@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Solar Sheen – Premium 200ml Solar Panel Cleaner | High-Performance, Streak-Free Cleaning Solution for Dust, Dirt, and Residue Removal
 Product ID: hhc-3257322
 SKU: hhc-3257322
@@ -7,11 +8,16 @@ Slug: solar-sheen-premium-200ml-solar-panel-cleaner-high-performance-streak-f-95
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/2c6e0689a5ebc032abab06a21a374a17.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/2c6e0689a5ebc032abab06a21a374a17.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-23-at-6.57.07-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-23-at-6.57.08-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-23-at-6.57.08-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-23-at-6.57.07-PM-1.jpeg
 Meta Title: Solar Sheen – Premium 200ml Solar Panel Cleaner | High-Performance,
 Meta Description: Buy Solar Sheen – Premium 200ml Solar Panel Cleaner | High-Performance, Streak-Free Cleaning Solution for Dust, Dirt, and Residue Removal online in Pakistan fro
 Description: Solar Sheen – Premium 200ml Solar Panel Cleaner | High-Performance, Streak-Free Cleaning Solution for Dust, Dirt, and Residue Removal
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sabawoon 30W Super Fast Type-C to iPhone Data Cable – 1000mm Fast Charging Cable
 Product ID: hhc-3759875
 SKU: hhc-3759875
@@ -7,11 +8,16 @@ Slug: sabawoon-30w-super-fast-type-c-to-iphone-data-cable-1000mm-fast-charging-c
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/29b101f90c453bba0c207600377aaaf9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/29b101f90c453bba0c207600377aaaf9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/b64650ffd0d6a77cca22498ed9ebaa01.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/2b3d48f5eab2935da1852160c2c62556.jpeg
 Meta Title: Sabawoon 30W Super Fast Type-C to iPhone Data Cable – 1000mm Fast Ch
 Meta Description: Buy Sabawoon 30W Super Fast Type-C to iPhone Data Cable – 1000mm Fast Charging Cable online in Pakistan from ASM VEO. Sabawoon 30W Super Fast Type-C to iPhone D
 Description: Sabawoon 30W Super Fast Type-C to iPhone Data Cable is designed for fast charging and stable data transfer. With a durable build and 1000mm length, this cable is perfect for daily use at home, office, or travel. Compatible with iPhone devices supporting Lightning charging.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

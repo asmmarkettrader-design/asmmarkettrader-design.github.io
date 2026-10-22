@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6Pcs Islamic Wall Frame Set | Decorative Multi-Size Frames For Home & Office | Double Tape Included
 Product ID: hhc-3758027
 SKU: hhc-3758027
@@ -7,11 +8,16 @@ Slug: 6pcs-islamic-wall-frame-set-decorative-multi-size-frames-for-home-offic-01
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/717540e99d4a5f6acdbfc1161868926e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/717540e99d4a5f6acdbfc1161868926e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/8bdda10d9ce7ae9fd1912dc60367fc90.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/78374177f75140f8ec0ed13f6af9d4c6.jpeg
 Meta Title: 6Pcs Islamic Wall Frame Set | Decorative Multi-Size Frames For Home
 Meta Description: Buy 6Pcs Islamic Wall Frame Set | Decorative Multi-Size Frames For Home & Office | Double Tape Included online in Pakistan from ASM VEO. Elegant 6Pcs Islamic Wa
 Description: Elegant 6Pcs Islamic Wall Frame Set | Includes 2 Frames (12x16), 2 Frames (8x11), And 2 Frames (5x7 Inches)
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Eyebrow Trimmer and Shaver,Rechargeable Flawless Hair Remover
 Product ID: hhc-3756643
 SKU: hhc-3756643
@@ -7,11 +8,16 @@ Slug: electric-eyebrow-trimmer-and-shaver-rechargeable-flawless-hair-remover-hhc
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/a55284057aae0e48a18f82aa3f1f9369.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/a55284057aae0e48a18f82aa3f1f9369.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/17ed6e9b2fc656df1a4094aad499ef4a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/7639f7b6e49a982e633ad8847595fb9d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/4a58b8bbf2f3a6e673d4819e282ffafd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/a7bd2cd92c9e9dcffe5ea00fab316a38.png
 Meta Title: Electric Eyebrow Trimmer and Shaver,Rechargeable Flawless Hair Remov
 Meta Description: Buy Electric Eyebrow Trimmer and Shaver,Rechargeable Flawless Hair Remover online in Pakistan from ASM VEO. Premium Sparkle Beauty Trimmer – Smooth & Painless H
 Description: Premium Sparkle Beauty Trimmer – Smooth & Painless Hair Removal Elegant Diamond Finish Rechargeable Facial Trimmer Travel Friendly.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

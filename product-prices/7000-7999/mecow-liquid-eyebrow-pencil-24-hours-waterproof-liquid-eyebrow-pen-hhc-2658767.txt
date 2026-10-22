@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mecow Liquid Eyebrow Pencil  24 Hours Waterproof Liquid Eyebrow Pen
 Product ID: hhc-2658767
 SKU: hhc-2658767
@@ -7,11 +8,16 @@ Slug: mecow-liquid-eyebrow-pencil-24-hours-waterproof-liquid-eyebrow-pen-hhc-265
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-30-at-12.17.28-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-30-at-12.17.28-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61Rvm0msLS._AC_SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61Rvm0msLS._AC_SL1000_-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61IGIAprmiS._AC_SL1001_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/610lPksSHaS._AC_SL1000_.jpg
 Meta Title: Mecow Liquid Eyebrow Pencil 24 Hours Waterproof Liquid Eyebrow Pen |
 Meta Description: Buy Mecow Liquid Eyebrow Pencil 24 Hours Waterproof Liquid Eyebrow Pen online in Pakistan from ASM VEO. description24 Hours Waterproof Liquid Eyebrow Pen * Usin
 Description: description24 Hours Waterproof Liquid Eyebrow Pen * Using this eyebrow brush, you can easily draw lines like your eyebrows. * This eyebrow brush has a liquid texture and a delicate quad tip. * With this product, you can fill in the eyebrows and give a natural and beautiful effect to your eyebrows.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

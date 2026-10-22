@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1PC Cute Bow Straw Cap Cover for 10mm Straws – Fits Stanley Tumbler Cups, Dustproof & Leak-Resistant (Random Color)
 Product ID: hhc-3752329
 SKU: hhc-3752329
@@ -7,11 +8,16 @@ Slug: 1pc-cute-bow-straw-cap-cover-for-10mm-straws-fits-stanley-tumbler-cups-a18
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: 1PC Cute Bow Straw Cap Cover for 10mm Straws – Fits Stanley Tumbler
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/ff1dca8d3feee18f9cd85f381b8bfacc.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/ff1dca8d3feee18f9cd85f381b8bfacc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/2c5f9d1b23d08284e4eb235a5a3ad577.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/1143234343864f4e45583b86f8aa6ca1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/263dbcbd93a8ced9b7a402b6502f261a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/afd4337e3ce32572625e67652be27366.jpg
+Meta Title: 1PC Cute Bow Straw Cap Cover for 10mm Straws – Fits Stanley Tumbler 
 Meta Description: Buy 1PC Cute Bow Straw Cap Cover for 10mm Straws – Fits Stanley Tumbler Cups, Dustproof & Leak-Resistant (Random Color) online in Pakistan from ASM VEO. Cute bo
 Description: Cute bow-shaped straw cap cover designed for 10mm straws. Perfect fit for Stanley Tumbler cups, helps keep straws clean, dust-free, and stylish.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

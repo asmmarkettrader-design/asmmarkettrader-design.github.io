@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 12 - Huda Beauty Lipsticks - Cosmetic Product Designed For Lip Makeup And Daily Beauty Routine (Random Color)
 Product ID: hhc-3764058
 SKU: hhc-3764058
@@ -7,11 +8,16 @@ Slug: pack-of-12-huda-beauty-lipsticks-cosmetic-product-designed-for-lip-make-47
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/1129ec49a016267f61ba252312c1ab5e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/1129ec49a016267f61ba252312c1ab5e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/ace46d315b1e07cde6b8011005af8c6b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/6d0a64ff5135c12eacee4a2a6c5160bc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/2157a3a917a26d66e1e5dc8d7c3d43d4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/b8e8999a22e6c32ca0e72395100322e2.jpg
 Meta Title: Pack Of 12 - Huda Beauty Lipsticks - Cosmetic Product Designed For L
 Meta Description: Buy Pack Of 12 - Huda Beauty Lipsticks - Cosmetic Product Designed For Lip Makeup And Daily Beauty Routine (Random Color) online in Pakistan from ASM VEO. The P
 Description: The Pack Of 12 Huda Beauty Lipsticks Is A Cosmetic Product Formulated To Help Provide Lip Makeup And Daily Beauty Utility During Use.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FV Refreshing Essence Foundation
 Product ID: hhc-1949715
 SKU: hhc-1949715
@@ -7,11 +8,16 @@ Slug: fv-refreshing-essence-foundation-hhc-1949715
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.37.18-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.37.18-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.37.18-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.37.17-PM-1.jpeg
 Meta Title: FV Refreshing Essence Foundation | Buy Online in Pakistan
 Meta Description: Buy FV Refreshing Essence Foundation online in Pakistan from ASM VEO. FV Refreshing Essence FoundationBrand: FVSize 30gMaterial: LiquidFor All Skin TypesSkin Ca
 Description: FV Refreshing Essence FoundationBrand: FVSize 30gMaterial: LiquidFor All Skin TypesSkin Care Dry Oil Skin Long-lasting Base Makeup MoisturizingPackage Includes: 1 × FV Pump Foundation
-Regular Price: 721
-Sale Price: 721
+Wholesale Price: 671
+Regular Price: 1290
+Sale Price: 1033
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

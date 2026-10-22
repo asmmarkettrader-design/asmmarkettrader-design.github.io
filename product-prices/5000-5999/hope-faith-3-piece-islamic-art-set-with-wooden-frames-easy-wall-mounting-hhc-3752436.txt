@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hope & Faith – 3-Piece Islamic Art Set with Wooden Frames & Easy Wall Mounting
 Product ID: hhc-3752436
 SKU: hhc-3752436
@@ -7,11 +8,16 @@ Slug: hope-faith-3-piece-islamic-art-set-with-wooden-frames-easy-wall-mounting-h
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/9903cdf70b2ee9d791def6b05b1f1f01.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/9903cdf70b2ee9d791def6b05b1f1f01.jpeg
 Meta Title: Hope & Faith – 3-Piece Islamic Art Set with Wooden Frames & Easy Wal
 Meta Description: Buy Hope & Faith – 3-Piece Islamic Art Set with Wooden Frames & Easy Wall Mounting online in Pakistan from ASM VEO. Add a touch of inspiration to your home with
 Description: Add a touch of inspiration to your home with this 3-piece Islamic wall art set, featuring “Start with Bismillah,” “Allah,” and “Hope with Inshallah.” Crafted from durable wooden frames and available in two sizes (8x11” & 12x16”), each piece includes double-sided tape for easy wall mounting.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

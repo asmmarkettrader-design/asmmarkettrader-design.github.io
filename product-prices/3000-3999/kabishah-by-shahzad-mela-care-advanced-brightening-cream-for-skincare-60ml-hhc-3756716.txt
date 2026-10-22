@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kabishah By Shahzad Mela Care Advanced Brightening Cream For Skincare(60ml)
 Product ID: hhc-3756716
 SKU: hhc-3756716
@@ -7,11 +8,16 @@ Slug: kabishah-by-shahzad-mela-care-advanced-brightening-cream-for-skincare-60ml
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/bb1985141c59347b3723676069f001df.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/bb1985141c59347b3723676069f001df.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/a670f0808e207428570e0588ffc66a35.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/c55ede4efb70cf40d77abfbf622e5d5c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/d8203af039aa1a33713cdc642c7a12dc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/d4d5684b169fa34d275b6e6b691429ba.jpeg
 Meta Title: Kabishah By Shahzad Mela Care Advanced Brightening Cream For Skincar
 Meta Description: Buy Kabishah By Shahzad Mela Care Advanced Brightening Cream For Skincare(60ml) online in Pakistan from ASM VEO. Kabishah By Shahzad Mela Care Advanced Brighten
 Description: Kabishah By Shahzad Mela Care Advanced Brightening Cream Designed For Daily Skincare Use
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

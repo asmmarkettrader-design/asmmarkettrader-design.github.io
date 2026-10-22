@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Long-Handle Fascial Gun Massager – Ergonomic Percussion Massage Tool with 4 Interchangeable Heads – Rechargeable Full Body Muscle Relaxer
 Product ID: hhc-3758291
 SKU: hhc-3758291
@@ -7,11 +8,16 @@ Slug: long-handle-fascial-gun-massager-ergonomic-percussion-massage-tool-with-d9
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/3566f4943784b061f1dbd3d136431ab8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/3566f4943784b061f1dbd3d136431ab8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/4598084a02fae45d64626bf1406592a9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/fb85db22dee4297bf0f6fd462d9b1a3b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/fc7d4a72b44fd2c363cdcf4cd9178d38.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/9e9022893d28ec41b662d1e523499886.jpeg
 Meta Title: Long-Handle Fascial Gun Massager – Ergonomic Percussion Massage Tool
 Meta Description: Buy Long-Handle Fascial Gun Massager – Ergonomic Percussion Massage Tool with 4 Interchangeable Heads – Rechargeable Full Body Muscle Relaxer online in Pakistan
 Description: Relieve muscle tension and reach every spot with ease using this Long-Handle Fascial Gun Massager.
-Regular Price: 4271
-Sale Price: 4271
+Wholesale Price: 4271
+Regular Price: 7160
+Sale Price: 5732
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

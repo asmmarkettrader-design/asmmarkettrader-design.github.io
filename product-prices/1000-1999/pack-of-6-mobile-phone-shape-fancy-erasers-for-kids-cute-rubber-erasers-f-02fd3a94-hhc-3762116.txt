@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 6 Mobile Phone Shape Fancy Erasers for Kids – Cute Rubber Erasers for School, Drawing & Stationery (3 Small + 3 Large) - Multi Color
 Product ID: hhc-3762116
 SKU: hhc-3762116
@@ -7,11 +8,16 @@ Slug: pack-of-6-mobile-phone-shape-fancy-erasers-for-kids-cute-rubber-erasers-02
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/79325facd55cfdc8198ed6787c03b2c4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/79325facd55cfdc8198ed6787c03b2c4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/297bce1cb43bdebf6f832483007df921.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/42aa0b9f20c159973b5667151a0d15b8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/10cfc38a93a38da6e34d95be00c16a7e.jpeg
 Meta Title: Pack of 6 Mobile Phone Shape Fancy Erasers for Kids – Cute Rubber Er
 Meta Description: Buy Pack of 6 Mobile Phone Shape Fancy Erasers for Kids – Cute Rubber Erasers for School, Drawing & Stationery (3 Small + 3 Large) - Multi Color online in Pakis
 Description: Make learning more fun with this Pack of 6 Mobile Phone Shape Fancy Erasers.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

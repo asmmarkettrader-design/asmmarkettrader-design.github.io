@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ruilang SMD Emergency Light Model RL-9171 - Electronic Lighting Device Designed For Illumination And Emergency Power Backup Routine (Random Color)
 Product ID: hhc-3762529
 SKU: hhc-3762529
@@ -7,11 +8,16 @@ Slug: ruilang-smd-emergency-light-model-rl-9171-electronic-lighting-device-de-31
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/968d6700b860311e789ba8190f0ecb33.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/968d6700b860311e789ba8190f0ecb33.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/6779cadeaeaea8f50f700c37f200e2cf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/aac5e9c79083035992d2bc4ffdf1c73a.jpeg
 Meta Title: Ruilang SMD Emergency Light Model RL-9171 - Electronic Lighting Devi
 Meta Description: Buy Ruilang SMD Emergency Light Model RL-9171 - Electronic Lighting Device Designed For Illumination And Emergency Power Backup Routine (Random Color) online in
 Description: The Ruilang SMD Emergency Light Model RL-9171 Is An Electronic Lighting Device Formulated To Help Provide Illumination And Emergency Backup During Daily Use.
-Regular Price: 1050
-Sale Price: 1050
+Wholesale Price: 1000
+Regular Price: 1890
+Sale Price: 1510
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

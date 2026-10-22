@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Adjustable Laptop Stand, Aluminum Foldable Laptop Stand with 360° Rotation, Height Adjustable, Portable and Convenient SG-19
 Product ID: hhc-3764878
 SKU: hhc-3764878
@@ -7,11 +8,16 @@ Slug: adjustable-laptop-stand-aluminum-foldable-laptop-stand-with-360-rotatio-f4
 Category: Electronics
 Subcategory: Computers & Laptops
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/5faa016d17f7f49c880932663c717d74.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/5faa016d17f7f49c880932663c717d74.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/6aef49fc72aa630e1cada467d9c39c42.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/de8999a5c7d53b2c26134865f6b0f751.jpeg
 Meta Title: Adjustable Laptop Stand, Aluminum Foldable Laptop Stand with 360° Ro
 Meta Description: Buy Adjustable Laptop Stand, Aluminum Foldable Laptop Stand with 360° Rotation, Height Adjustable, Portable and Convenient SG-19 online in Pakistan from ASM VEO
 Description: 360-degree rotating laptop and tablet stand. Durable all-metal construction, steady, and adjustable to multiple angles for ergonomic viewing. Model: SG-19. Perfect for desk setups and workspace organization.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

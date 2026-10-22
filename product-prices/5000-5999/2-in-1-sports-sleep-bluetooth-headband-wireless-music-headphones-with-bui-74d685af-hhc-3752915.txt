@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Sports & Sleep Bluetooth Headband – Wireless Music Headphones with Built-in Mic, Elastic Eye Mask for Workout, Travel & Relaxation
 Product ID: hhc-3752915
 SKU: hhc-3752915
@@ -7,11 +8,16 @@ Slug: 2-in-1-sports-sleep-bluetooth-headband-wireless-music-headphones-with-b-74
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/084440a75cacd66413e4fb747e71fe8b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/084440a75cacd66413e4fb747e71fe8b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/fa12ed0a0df55c914ea67c29621c2542.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/472dd03afc613d82a802c00ea5ecbcb6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/3e9eb7676e08fbdb4dbeb56096fd3542.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/6f0ed1812d00f023f7379f27605ea0be.jpg
 Meta Title: 2-in-1 Sports & Sleep Bluetooth Headband – Wireless Music Headphones
 Meta Description: Buy 2-in-1 Sports & Sleep Bluetooth Headband – Wireless Music Headphones with Built-in Mic, Elastic Eye Mask for Workout, Travel & Relaxation online in Pakistan
 Description: 2-in-1 Bluetooth headband for sleep and sports. Soft, stretchable design with built-in wireless headphones for music, calls, and relaxation during workouts, travel, or bedtime.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

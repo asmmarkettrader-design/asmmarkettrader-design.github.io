@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Voltage Tester Pen | Electrical Test Pencil | Detector Pen with LED Red & Green Lights
 Product ID: hhc-3755585
 SKU: hhc-3755585
@@ -7,11 +8,16 @@ Slug: voltage-tester-pen-electrical-test-pencil-detector-pen-with-led-red-green-
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/a25094280a30c41031792074c8e050b5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/a25094280a30c41031792074c8e050b5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/f7f5c6af134ea02240cf1865cfec97c0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/2141e3637ea98db372aab341422bbad9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/2ca2f00f20affc5585cb2934ade9e480.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/a6811273e9065fd8ab238083ab9cb3b0.jpg
 Meta Title: Voltage Tester Pen | Electrical Test Pencil | Detector Pen with LED
 Meta Description: Buy Voltage Tester Pen | Electrical Test Pencil | Detector Pen with LED Red & Green Lights online in Pakistan from ASM VEO. Voltage tester pen with LED highligh
 Description: Voltage tester pen with LED highlight lights (red & green). Clear visibility even in sunlight.
-Regular Price: 296
-Sale Price: 296
+Wholesale Price: 246
+Regular Price: 579
+Sale Price: 429
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

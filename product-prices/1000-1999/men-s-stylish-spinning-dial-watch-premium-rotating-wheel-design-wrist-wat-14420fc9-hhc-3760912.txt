@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men's Stylish Spinning Dial Watch – Premium Rotating Wheel Design Wrist Watch for Men (Without Box)
 Product ID: hhc-3760912
 SKU: hhc-3760912
@@ -7,11 +8,16 @@ Slug: men-s-stylish-spinning-dial-watch-premium-rotating-wheel-design-wrist-w-14
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/b4731c3187f75a98861a15618adbb35c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/b4731c3187f75a98861a15618adbb35c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/20/dc8939efb305cbbb7f9780e77bf05de3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/20/6556e8d885ce4c1d2910ff144e3d444c.jpeg
 Meta Title: Men's Stylish Spinning Dial Watch – Premium Rotating Wheel Design Wr
 Meta Description: Buy Men's Stylish Spinning Dial Watch – Premium Rotating Wheel Design Wrist Watch for Men (Without Box) online in Pakistan from ASM VEO. Stand out with this fas
 Description: Stand out with this fashionable men's spinning dial watch featuring a unique rotating wheel design, durable construction, and comfortable fit. Perfect for casual, sporty, and everyday wear.
-Regular Price: 2080
-Sale Price: 2080
+Wholesale Price: 2080
+Regular Price: 3740
+Sale Price: 2988
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

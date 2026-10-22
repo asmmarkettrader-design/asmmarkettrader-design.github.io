@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium 80Pcs Car Interior Wipes – Quick Shine, Dust Removal & Streak-Free
 Product ID: hhc-3753893
 SKU: hhc-3753893
@@ -7,11 +8,16 @@ Slug: premium-80pcs-car-interior-wipes-quick-shine-dust-removal-streak-free-hhc-
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/50efb7b8a98e7672338ab79f48e290c3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/50efb7b8a98e7672338ab79f48e290c3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/d5e72f2145a4dadf8d55ea74f0e00160.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/5892b6faff92e3e94675bdc88a3a3cee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/23ae4b562b4f8b5a598e473d7dcb6268.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/d56be7f066c5d2927a58d694bcb47f26.jpeg
 Meta Title: Premium 80Pcs Car Interior Wipes – Quick Shine, Dust Removal & Strea
 Meta Description: Buy Premium 80Pcs Car Interior Wipes – Quick Shine, Dust Removal & Streak-Free online in Pakistan from ASM VEO. Car Interior Cleaning Wipes – Fast, streak-free
 Description: Car Interior Cleaning Wipes – Fast, streak-free cleaning for dashboards, leather, and plastic surfaces. Perfect for daily use.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

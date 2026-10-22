@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 6 Punjtan Pak Name Wall Art Photo Tile Frame
 Product ID: hhc-3428191
 SKU: hhc-3428191
@@ -7,11 +8,16 @@ Slug: set-of-6-punjtan-pak-name-wall-art-photo-tile-frame-hhc-3428191
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/1f9d2a3cb9154f32cf0b7a2c32e53bb7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/1f9d2a3cb9154f32cf0b7a2c32e53bb7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/1f9d2a3cb9154f32cf0b7a2c32e53bb7.jpeg
 Meta Title: Set of 6 Punjtan Pak Name Wall Art Photo Tile Frame | Buy Online in
 Meta Description: Buy Set of 6 Punjtan Pak Name Wall Art Photo Tile Frame online in Pakistan from ASM VEO. No of Frames: 6 Size: 8×11 inch Material: Wooden High quality Sticky ta
 Description: No of Frames: 6 Size: 8×11 inch Material: Wooden High quality Sticky tape attached on the wall for sticking on the wall. High quality Digital Printing. Islamic painting in the home offers both aesthetic and spiritual benefits. It often features intricate geometric patterns, calligraphy, and floral designs that create a sense of harmony and tranquility. These artworks can serve as daily reminders of faith and spirituality, encouraging mindfulness and inner peace. Additionally, Islamic art avoids depictions of living beings, focusing instead on abstract beauty, which aligns with the values of modesty and reflection in a Muslim household. Its presence can also enhance the cultural and artistic appreciation of Islamic heritage
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

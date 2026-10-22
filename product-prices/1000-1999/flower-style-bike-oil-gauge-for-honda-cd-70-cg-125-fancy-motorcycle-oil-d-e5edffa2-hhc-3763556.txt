@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flower Style Bike Oil Gauge for Honda CD 70 & CG 125 | Fancy Motorcycle Oil Dipstick Decoration
 Product ID: hhc-3763556
 SKU: hhc-3763556
@@ -7,11 +8,16 @@ Slug: flower-style-bike-oil-gauge-for-honda-cd-70-cg-125-fancy-motorcycle-oil-e5
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/963c3a44902f955514b987df60d88ede.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/963c3a44902f955514b987df60d88ede.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/2b98128321da7b6ebb4ffbf10e487c27.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/80996279d90796ba6300a39f5536db4c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/490cc57e28884968e7d2b5a25a9fc106.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/bcd74c79fb2c6cb0a2714283a34e5f59.jpg
 Meta Title: Flower Style Bike Oil Gauge for Honda CD 70 & CG 125 | Fancy Motorcy
 Meta Description: Buy Flower Style Bike Oil Gauge for Honda CD 70 & CG 125 | Fancy Motorcycle Oil Dipstick Decoration online in Pakistan from ASM VEO. Premium flower-style oil ga
 Description: Premium flower-style oil gauge dipstick designed for Honda CD 70, CG 125 and compatible motorcycles. Easy to install, waterproof and made for adding a stylish decorative touch to your bike.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

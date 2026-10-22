@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS Citrus Wash & Gloss Car Shampoo – High Foam Snow Foam Car Wash for Deep Cleaning & Shine
 Product ID: hhc-3756909
 SKU: hhc-3756909
 Slug: three-guys-citrus-wash-gloss-car-shampoo-high-foam-snow-foam-car-wash-f-c0c6fd10-hhc-3756909
-Category: Automotive
+Category: Beauty & Personal Care
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/b4c189ec437297fa8cf601aa063b27b2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/b4c189ec437297fa8cf601aa063b27b2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/e9c2f3f86f6628fc4fad864b1afaaff9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/2539774a6f369a3adeadbced08cca1c6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/efc1b4be55f6bbd9a31b7c4b4b0185dd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/3477291eba0dff8d351361c3111478c3.jpg
 Meta Title: THREE GUYS Citrus Wash & Gloss Car Shampoo – High Foam Snow Foam Car
 Meta Description: Buy THREE GUYS Citrus Wash & Gloss Car Shampoo – High Foam Snow Foam Car Wash for Deep Cleaning & Shine online in Pakistan from ASM VEO. THREE GUYS Citrus Wash
 Description: THREE GUYS Citrus Wash & Gloss Car Shampoo produces rich high foam to remove dirt, dust, and road grime while enhancing your car’s shine. The German engineered formula gently cleans and leaves a smooth glossy finish.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

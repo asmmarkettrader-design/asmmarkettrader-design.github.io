@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Popup ice cube tray Silicone Mould Jelly Shots/Chocolate (Random Color)
 Product ID: hhc-1627882
 SKU: hhc-1627882
@@ -7,11 +8,16 @@ Slug: popup-ice-cube-tray-silicone-mould-jelly-shots-chocolate-random-color-hhc-
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/4258924346c1b04c6bf5347ed2d90fa2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/4258924346c1b04c6bf5347ed2d90fa2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/1d2f6ade86a540290b8ddb40fe7ff062.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/1e6b388025dbb7987c398da0168da6a8.jpeg
 Meta Title: Popup ice cube tray Silicone Mould Jelly Shots/Chocolate (Random Col
 Meta Description: Buy Popup ice cube tray Silicone Mould Jelly Shots/Chocolate (Random Color) online in Pakistan from ASM VEO. Food-Grade Material - These ice cube trays with lid
 Description: Food-Grade Material - These ice cube trays with lids are made of food grade silicone and plastic, assuring the drink/food made by these ice cube trays are durable and reusable.Easy Release - Simply press onto the silicone bottom of the ice cube trays to release ice into your glass.Wide Variety of Uses - These ice cube trays with lids are not only used to chill drinks, also used to make all kinds of summer delicacies, such as popsicles, puddings, fruit jellies, chocolates and cakes, great silicone ice cube tray for all people.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

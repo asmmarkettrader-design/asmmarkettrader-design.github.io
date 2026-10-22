@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bubble Shape Tissue Box Holder | Non-Slip Plastic Cover For Stylish Storage | Random Colour
 Product ID: hhc-3757959
 SKU: hhc-3757959
@@ -7,11 +8,16 @@ Slug: bubble-shape-tissue-box-holder-non-slip-plastic-cover-for-stylish-stora-e8
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/4d9bedaaa11df3358b54dde6fdab4817.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/4d9bedaaa11df3358b54dde6fdab4817.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/b8e83a5a19aea8c1b4e06d21c4b8de73.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/c959a0bcfc8837af4bf8a7e70f048eec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/17b2b10e89d64b3319541fea3786e297.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/bcf7dcbfb71b4a9d0293c1b5d5c4c428.jpg
 Meta Title: Bubble Shape Tissue Box Holder | Non-Slip Plastic Cover For Stylish
 Meta Description: Buy Bubble Shape Tissue Box Holder | Non-Slip Plastic Cover For Stylish Storage | Random Colour online in Pakistan from ASM VEO. Bubble Shape Plastic Tissue Box
 Description: Bubble Shape Plastic Tissue Box Holder With Non-Slip Design For Neat And Stylish Tissue Storage
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

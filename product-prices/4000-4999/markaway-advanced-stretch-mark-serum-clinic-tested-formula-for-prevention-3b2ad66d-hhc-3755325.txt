@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Markaway Advanced Stretch Mark Serum – Clinic-Tested Formula for Prevention & Fading | Retinol, Hydroquinone, & AHA/BHA-Free
 Product ID: hhc-3755325
 SKU: hhc-3755325
@@ -7,11 +8,16 @@ Slug: markaway-advanced-stretch-mark-serum-clinic-tested-formula-for-preventi-3b
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/ab61216ffb23ab03eba4c6b3cef95317.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/ab61216ffb23ab03eba4c6b3cef95317.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/4f782b026cb5c48090577336d094e02f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/dcd89c85f24c36d8a5d1be2e8d939edc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/391f8f9bc299e14dabe34b8ac7d5f618.jpeg
 Meta Title: Markaway Advanced Stretch Mark Serum – Clinic-Tested Formula for Pre
 Meta Description: Buy Markaway Advanced Stretch Mark Serum – Clinic-Tested Formula for Prevention & Fading | Retinol, Hydroquinone, & AHA/BHA-Free online in Pakistan from ASM VEO
 Description: Experience smoother, more resilient skin with Markaway Stretch Mark Serum. Specially formulated to both prevent new marks and fade existing ones, this gentle yet effective serum is clinically tested and allergy-free. Designed for all skin types, it delivers deep hydration and skin-repairing nutrients
-Regular Price: 318
-Sale Price: 318
+Wholesale Price: 268
+Regular Price: 612
+Sale Price: 462
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

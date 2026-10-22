@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BIOAQUA Rice Raw Pulp Eye Cream - 20g
 Product ID: hhc-2382195
 SKU: hhc-2382195
@@ -7,11 +8,16 @@ Slug: bioaqua-rice-raw-pulp-eye-cream-20g-hhc-2382195
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-8.27.27-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-8.27.27-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-8.27.27-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-8.27.26-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-7.07.18-PM.jpeg
 Meta Title: BIOAQUA Rice Raw Pulp Eye Cream - 20g | Buy Online in Pakistan
 Meta Description: Buy BIOAQUA Rice Raw Pulp Eye Cream - 20g online in Pakistan from ASM VEO. Description:Protect tender eye skinReplenish moisture, make double eye more bright an
 Description: Description:Protect tender eye skinReplenish moisture, make double eye more bright and movingThis eye cream provides extra moisturizing properties to keep hydration intact and provide skin whitening effect on the dark circles.Rice Raw Pulp Eye CreamHow to useafter washing, take the required amount of this product and gently tap on the area around the eyes, massage until completely dissolved. completely absorbed.Original Picture &amp; video[video width="848" height="480" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2024-11-30-at-11.39.58-AM.mp4"][/video]
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

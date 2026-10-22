@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Makeup Bundle Deal
 Product ID: hhc-2121894
 SKU: hhc-2121894
@@ -7,11 +8,16 @@ Slug: makeup-bundle-deal-hhc-2121894
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.51.54-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.51.54-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.51.53-PM.jpeg
 Meta Title: Makeup Bundle Deal | Buy Online in Pakistan
 Meta Description: Buy Makeup Bundle Deal online in Pakistan from ASM VEO. &nbsp; Makeup Bundle • Material: Liquid • Product Feature: 5 in 1 • Package Includes: 1 x Cash on Delive
 Description: &nbsp; Makeup Bundle • Material: Liquid • Product Feature: 5 in 1 • Package Includes: 1 x Makeup Fixer, 1 x Foundation, 1 x Highlighter, 1 x Beauty Blender, 1 x Tint • Note: Before using any new cosmetic product, perform a patch test on a small skin area. Verify ingredients for allergies and follow package warnings and directions.
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

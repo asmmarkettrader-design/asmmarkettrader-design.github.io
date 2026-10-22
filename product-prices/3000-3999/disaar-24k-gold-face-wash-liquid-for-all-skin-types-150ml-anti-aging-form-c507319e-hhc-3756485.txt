@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Disaar 24K Gold Face Wash Liquid For All Skin Types 150Ml Anti Aging Formula Organic And Natural Cleanser
 Product ID: hhc-3756485
 SKU: hhc-3756485
@@ -7,11 +8,16 @@ Slug: disaar-24k-gold-face-wash-liquid-for-all-skin-types-150ml-anti-aging-fo-c5
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/68385154e05e3d837dc93fd9b69039ca.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/68385154e05e3d837dc93fd9b69039ca.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/7c16e585d0c212ecc67c665b5f0351aa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/0f4140058524f5feb4d8327638d7614d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/3d08227766eb51edad309dd791f97aec.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/271384c3eb0b1fb86188ab26fef89204.jpeg
 Meta Title: Disaar 24K Gold Face Wash Liquid For All Skin Types 150Ml Anti Aging
 Meta Description: Buy Disaar 24K Gold Face Wash Liquid For All Skin Types 150Ml Anti Aging Formula Organic And Natural Cleanser online in Pakistan from ASM VEO. Disaar 24K Gold F
 Description: Disaar 24K Gold Face Wash Is A Liquid Cleanser Designed For All Skin Types With Anti Aging Formula For Extra Glowing And Shining Skin.
-Regular Price: 669
-Sale Price: 669
+Wholesale Price: 619
+Regular Price: 1200
+Sale Price: 958
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

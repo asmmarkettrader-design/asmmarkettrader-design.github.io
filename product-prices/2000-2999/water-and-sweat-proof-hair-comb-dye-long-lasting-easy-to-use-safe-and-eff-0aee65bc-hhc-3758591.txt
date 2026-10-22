@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Water And Sweat Proof Hair Comb Dye Long Lasting Easy To Use Safe And Effective Hair Coloring Solution
 Product ID: hhc-3758591
 SKU: hhc-3758591
@@ -7,11 +8,16 @@ Slug: water-and-sweat-proof-hair-comb-dye-long-lasting-easy-to-use-safe-and-e-0a
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/9583a2479d1727fd748e6b4270a69b7e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/9583a2479d1727fd748e6b4270a69b7e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/0196d1722bc78fcbb338791aaea0d42f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/4e29b9102550335eb9f2013c29ed4550.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/5dc11b562eaeddb8f890294d2be264e8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/bd32c34700be9ae5b220d6576b533a22.jpg
 Meta Title: Water And Sweat Proof Hair Comb Dye Long Lasting Easy To Use Safe An
 Meta Description: Buy Water And Sweat Proof Hair Comb Dye Long Lasting Easy To Use Safe And Effective Hair Coloring Solution online in Pakistan from ASM VEO. Water And Sweat Proo
 Description: Water And Sweat Proof Hair Comb Dye Long Lasting Easy To Use Safe And Effective Hair Coloring Solution
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

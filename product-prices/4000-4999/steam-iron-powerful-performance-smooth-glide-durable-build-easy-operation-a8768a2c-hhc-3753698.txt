@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Steam Iron Powerful Performance Smooth Glide Durable Build Easy Operation Reliable Daily Use ~ Non Rotatable
 Product ID: hhc-3753698
 SKU: hhc-3753698
@@ -7,11 +8,16 @@ Slug: steam-iron-powerful-performance-smooth-glide-durable-build-easy-operati-a8
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/c35efa0547b6bef3b5c59de1e44d532e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/c35efa0547b6bef3b5c59de1e44d532e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/99475c935d7fd7a8deedc0988cdbca21.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/5f9fe61c35f3d04f0a27631f42b6f865.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/5a720539c8dfcac62cacc3a46b204352.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/e5fef8b17cebe284112d36069353a8bd.jpeg
 Meta Title: Steam Iron Powerful Performance Smooth Glide Durable Build Easy Oper
 Meta Description: Buy Steam Iron Powerful Performance Smooth Glide Durable Build Easy Operation Reliable Daily Use ~ Non Rotatable online in Pakistan from ASM VEO. Steam Iron Pro
 Description: Steam Iron Provides Powerful Performance And Smooth Glide For Reliable Daily Use
-Regular Price: 1457
-Sale Price: 1457
+Wholesale Price: 1407
+Regular Price: 2570
+Sale Price: 2058
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

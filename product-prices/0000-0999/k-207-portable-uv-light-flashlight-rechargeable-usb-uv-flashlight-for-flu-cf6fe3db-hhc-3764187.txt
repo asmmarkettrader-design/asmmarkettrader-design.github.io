@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: K-207 Portable UV Light Flashlight Rechargeable USB UV Flashlight for Fluorescent Detection, Currency, Stain & Security Mark Inspection
 Product ID: hhc-3764187
 SKU: hhc-3764187
@@ -7,11 +8,16 @@ Slug: k-207-portable-uv-light-flashlight-rechargeable-usb-uv-flashlight-for-f-cf
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/23ab81e4ea68816c9be53ea8a585033a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/23ab81e4ea68816c9be53ea8a585033a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/bbd3953a41f464468240eb97400db1e7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/24c0e59c3df89432d98d0a0131e66ba0.jpeg
 Meta Title: K-207 Portable UV Light Flashlight Rechargeable USB UV Flashlight fo
 Meta Description: Buy K-207 Portable UV Light Flashlight Rechargeable USB UV Flashlight for Fluorescent Detection, Currency, Stain & Security Mark Inspection online in Pakistan f
 Description: UV Currency Checker Rechargeable Light | Portable Lightweight UV Torch for Banknote Security Feature, Stain & Security Mark Inspection
-Regular Price: 515
-Sale Price: 515
+Wholesale Price: 465
+Regular Price: 950
+Sale Price: 758
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

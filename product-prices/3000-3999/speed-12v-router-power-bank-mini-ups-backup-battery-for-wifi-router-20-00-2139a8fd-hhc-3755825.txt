@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Speed 12V Router Power Bank – Mini UPS Backup Battery for WiFi Router - 20,000 mAh (Charger Not Included)
 Product ID: hhc-3755825
 SKU: hhc-3755825
@@ -7,11 +8,16 @@ Slug: speed-12v-router-power-bank-mini-ups-backup-battery-for-wifi-router-20-213
 Category: Mobile & Accessories
 Subcategory: Chargers & Power Banks
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/2d2d61003ab749b1521fe4bf154653a4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/2d2d61003ab749b1521fe4bf154653a4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/987f1f60ad61a1b10084c61f40e09331.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/664b54a260ba3a5a92ff36b8923c0e1b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/8d1dc0c2679c6e7d69cccdb5f8d5ed85.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/4032e2d3101819681aed8eef74d1f9dc.png
 Meta Title: Speed 12V Router Power Bank – Mini UPS Backup Battery for WiFi Route
 Meta Description: Buy Speed 12V Router Power Bank – Mini UPS Backup Battery for WiFi Router - 20,000 mAh (Charger Not Included) online in Pakistan from ASM VEO. Compact 12V route
 Description: Compact 12V router power bank providing reliable backup power for WiFi routers & small electronic devices during power outages.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

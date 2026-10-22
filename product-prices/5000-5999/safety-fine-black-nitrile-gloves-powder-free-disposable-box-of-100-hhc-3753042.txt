@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Safety Fine Black Nitrile Gloves – Powder-Free, Disposable – Box of 100
 Product ID: hhc-3753042
 SKU: hhc-3753042
@@ -7,11 +8,16 @@ Slug: safety-fine-black-nitrile-gloves-powder-free-disposable-box-of-100-hhc-375
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Safety Fine Black Nitrile Gloves – Powder-Free, Disposable – Box of
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/96a4e49d5ebb82b961f44e0afbace071.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/96a4e49d5ebb82b961f44e0afbace071.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/01374ab9e0174f6dedd326303bdc2b97.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/1020ef84ffa891f4988ad0bd4b883497.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/b24bbad0aa4c346edb35833aa14a79c8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/6014b0c0b34f5d597378ba04072a65bf.webp
+Meta Title: Safety Fine Black Nitrile Gloves – Powder-Free, Disposable – Box of 
 Meta Description: Buy Safety Fine Black Nitrile Gloves – Powder-Free, Disposable – Box of 100 online in Pakistan from ASM VEO. Durable and powder-free black nitrile gloves design
 Description: Durable and powder-free black nitrile gloves designed for hygiene, safety, and comfort. Ideal for medical, lab, and food handling use.100 pieces per box.
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

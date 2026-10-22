@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5Pcs BedSheet Clips | Non‑Slip Plastic Clamps | Quilt, Blanket, Curtain & Cover Holder Buckles (Random colour)
 Product ID: hhc-3755326
 SKU: hhc-3755326
@@ -7,11 +8,16 @@ Slug: 5pcs-bedsheet-clips-non-slip-plastic-clamps-quilt-blanket-curtain-cover-e2
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/e62396e5b2ad470fb9db6ded7d9f901b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/e62396e5b2ad470fb9db6ded7d9f901b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/8f3ae8ee5b73c185bf3afc186367d461.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/8e4d294e6dcb55bbcaa1e4ed1844ea21.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/93cea49c24c65255040f36d69efc6387.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/ae83e2ff002f13e403b578a1d442bca1.jpeg
 Meta Title: 5Pcs BedSheet Clips | Non‑Slip Plastic Clamps | Quilt, Blanket, Curt
 Meta Description: Buy 5Pcs BedSheet Clips | Non‑Slip Plastic Clamps | Quilt, Blanket, Curtain & Cover Holder Buckles (Random colour) online in Pakistan from ASM VEO. Set of 5 pla
 Description: Set of 5 plastic non‑slip clips. Securely holds bedsheets, quilts, blankets, curtains, and covers in place.
-Regular Price: 179
-Sale Price: 179
+Wholesale Price: 129
+Regular Price: 404
+Sale Price: 254
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mickey Mouse Backpack Set With Matching Pencil Case Cartoon Hand Graphics Nylon Printed Design 43x13x31 Cm
 Product ID: hhc-3760522
 SKU: hhc-3760522
@@ -7,11 +8,16 @@ Slug: mickey-mouse-backpack-set-with-matching-pencil-case-cartoon-hand-graphi-db
 Category: Books & Stationery
 Subcategory: Laptops & Computers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/0337582217239018458322ba2de90206.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/0337582217239018458322ba2de90206.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/0337582217239018458322ba2de90206.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/acf05004a2c948a9d6bac6f361df6290.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/5b42945ca1ff1b5b16246a04b40d136e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/9c456c95c699c108916a5d85873f5f73.jpeg
 Meta Title: Mickey Mouse Backpack Set With Matching Pencil Case Cartoon Hand Gra
 Meta Description: Buy Mickey Mouse Backpack Set With Matching Pencil Case Cartoon Hand Graphics Nylon Printed Design 43x13x31 Cm online in Pakistan from ASM VEO. Mickey Mouse Bac
 Description: Mickey Mouse Backpack Set With Matching Pencil Case Cartoon Hand Graphics Nylon Printed Design Durable And Stylish.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

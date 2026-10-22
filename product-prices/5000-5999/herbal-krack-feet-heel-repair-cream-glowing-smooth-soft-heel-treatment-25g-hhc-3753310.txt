@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Herbal Krack Feet Heel Repair Cream | Glowing Smooth Soft Heel Treatment | 25g
 Product ID: hhc-3753310
 SKU: hhc-3753310
@@ -7,11 +8,16 @@ Slug: herbal-krack-feet-heel-repair-cream-glowing-smooth-soft-heel-treatment-25g
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/9d9f65d720a37379449a3a03de69ba4f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/9d9f65d720a37379449a3a03de69ba4f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/0851d6bedaf78a921aa05a5cccefcee4.jpeg
 Meta Title: Herbal Krack Feet Heel Repair Cream | Glowing Smooth Soft Heel Treat
 Meta Description: Buy Herbal Krack Feet Heel Repair Cream | Glowing Smooth Soft Heel Treatment | 25g online in Pakistan from ASM VEO. Foot Krack Cream repairs cracked heels in ju
 Description: Foot Krack Cream repairs cracked heels in just 7 days — deeply moisturizes, softens rough skin, and restores smooth, healthy feet.
-Regular Price: 432
-Sale Price: 432
+Wholesale Price: 382
+Regular Price: 790
+Sale Price: 633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

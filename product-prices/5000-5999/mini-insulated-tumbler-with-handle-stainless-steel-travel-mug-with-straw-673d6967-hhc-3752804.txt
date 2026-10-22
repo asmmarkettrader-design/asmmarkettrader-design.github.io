@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Insulated Tumbler with Handle – Stainless Steel Travel Mug with Straw Lid (Hot & Cold) (480ml)
 Product ID: hhc-3752804
 SKU: hhc-3752804
@@ -7,11 +8,16 @@ Slug: mini-insulated-tumbler-with-handle-stainless-steel-travel-mug-with-stra-67
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/4d11c441b724f705b6e5121aa6b21c12.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/4d11c441b724f705b6e5121aa6b21c12.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/ccbfc0842b8e42bf4985b70b34eab8ee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/f6f8f786c38e9292c41c78926190b2ef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/f3758f5b1795d9f790d33348d303c8c4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/457ed8be0794b3ea4c04141c445bd068.jpeg
 Meta Title: Mini Insulated Tumbler with Handle – Stainless Steel Travel Mug with
 Meta Description: Buy Mini Insulated Tumbler with Handle – Stainless Steel Travel Mug with Straw Lid (Hot & Cold) (480ml) online in Pakistan from ASM VEO. Sip in style with this
 Description: Sip in style with this compact mini insulated tumbler. Featuring a sturdy handle and straw lid, it keeps drinks hot or cold for hours—perfect for coffee, tea, or hydration on the go.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

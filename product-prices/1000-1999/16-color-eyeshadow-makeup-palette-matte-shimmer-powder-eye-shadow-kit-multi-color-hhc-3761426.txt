@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 16 Color Eyeshadow Makeup Palette Matte & Shimmer Powder Eye Shadow Kit - Multi Color
 Product ID: hhc-3761426
 SKU: hhc-3761426
@@ -7,11 +8,16 @@ Slug: 16-color-eyeshadow-makeup-palette-matte-shimmer-powder-eye-shadow-kit-m-6a
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: 16 Color Eyeshadow Makeup Palette Matte & Shimmer Powder Eye Shadow
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/0f04334ad6c7b4e32ba6d11f493b1f00.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/0f04334ad6c7b4e32ba6d11f493b1f00.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/17ba3e1be15e5edb7f23ca83001f72d3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/fe706717fc068b7fa9ec216251a38d5e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/16cfecce0653c4f4254921bd24a9e7cb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/bc524ddb2ec536d8729fa1a3b5c0804c.jpeg
+Meta Title: 16 Color Eyeshadow Makeup Palette Matte & Shimmer Powder Eye Shadow 
 Meta Description: Buy 16 Color Eyeshadow Makeup Palette Matte & Shimmer Powder Eye Shadow Kit - Multi Color online in Pakistan from ASM VEO. Create stunning eye makeup looks with
 Description: Create stunning eye makeup looks with the 16 Color Eyeshadow Palette. Featuring a beautiful mix of matte and shimmer shades, this multi-color powder palette is perfect for everyday wear, party makeup, and professional looks with smooth, blendable pigmentation.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

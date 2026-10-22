@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gegemon Black Hairdressing Wand | Instant Hair Color Stick | Quick Touch-Up | Easy Application 16g
 Product ID: hhc-3756290
 SKU: hhc-3756290
@@ -7,11 +8,16 @@ Slug: gegemon-black-hairdressing-wand-instant-hair-color-stick-quick-touch-up-e7
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/4f8e5130533b3001aa82113493c4ba14.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/4f8e5130533b3001aa82113493c4ba14.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/95178a1ab01caa61367eeb143b604a58.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/f619b16cb9a45228e510c86055992c26.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/2375930686c55e8c9f0350ec53a77094.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/90757a5c9083fcee848480833b517492.jpeg
 Meta Title: Gegemon Black Hairdressing Wand | Instant Hair Color Stick | Quick T
 Meta Description: Buy Gegemon Black Hairdressing Wand | Instant Hair Color Stick | Quick Touch-Up | Easy Application 16g online in Pakistan from ASM VEO. Gegemon hairdressing wan
 Description: Gegemon hairdressing wand delivers instant black hair color. Easy-to-use stick for quick touch-ups, covering grays, and enhancing shine.
-Regular Price: 944
-Sale Price: 944
+Wholesale Price: 894
+Regular Price: 1700
+Sale Price: 1356
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

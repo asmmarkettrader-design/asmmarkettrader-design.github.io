@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Botox Cream Advanced Skincare Formula For Reducing Wrinkles And Restoring Youthful Glow - 20g
 Product ID: hhc-3755249
 SKU: hhc-3755249
@@ -7,11 +8,16 @@ Slug: botox-cream-advanced-skincare-formula-for-reducing-wrinkles-and-restori-69
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/129ed4dfd2b0527331457bea4326cedb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/129ed4dfd2b0527331457bea4326cedb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/edc9c98f11f3a92297c167df56552dbf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/ced500f86df3ef976b5bc90b91ffc483.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/9055b6cbd368c72b2230e2bab88d712d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/8cd9d33f85b9be8485db9d943f69dd6f.jpeg
 Meta Title: Botox Cream Advanced Skincare Formula For Reducing Wrinkles And Rest
 Meta Description: Buy Botox Cream Advanced Skincare Formula For Reducing Wrinkles And Restoring Youthful Glow - 20g online in Pakistan from ASM VEO. Botox Cream Helps Reduce Wrin
 Description: Botox Cream Helps Reduce Wrinkles And Fine Lines While Improving Skin Firmness And Smoothness
-Regular Price: 255
-Sale Price: 255
+Wholesale Price: 205
+Regular Price: 518
+Sale Price: 368
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

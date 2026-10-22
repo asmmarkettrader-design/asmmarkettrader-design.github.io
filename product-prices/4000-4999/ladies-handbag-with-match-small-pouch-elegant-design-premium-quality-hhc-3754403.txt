@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ladies Handbag With Match Small Pouch Elegant Design Premium Quality
 Product ID: hhc-3754403
 SKU: hhc-3754403
@@ -7,11 +8,16 @@ Slug: ladies-handbag-with-match-small-pouch-elegant-design-premium-quality-hhc-3
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/60447d85860fd8665966c5106746a367.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/60447d85860fd8665966c5106746a367.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/dffce56c48d284fb3ab23940b74da8a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/929721b359c4009851fcfe39cf410036.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/34a336ca85a7d26cf1a58cd3da21ee06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/adeab062671f59919b380936e53fa83f.jpeg
 Meta Title: Ladies Handbag With Match Small Pouch Elegant Design Premium Quality
 Meta Description: Buy Ladies Handbag With Match Small Pouch Elegant Design Premium Quality online in Pakistan from ASM VEO. Ladies Handbag With Match Small Pouch Provides Elegant
 Description: Ladies Handbag With Match Small Pouch Provides Elegant Design Premium Quality Smooth Finish Easy Carry Durable Construction And Reliable Utility
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

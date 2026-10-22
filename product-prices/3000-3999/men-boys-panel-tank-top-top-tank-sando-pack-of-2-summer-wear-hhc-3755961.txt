@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men Boys Panel Tank Top | Top Tank Sando Pack of 2 Summer Wear
 Product ID: hhc-3755961
 SKU: hhc-3755961
@@ -7,11 +8,16 @@ Slug: men-boys-panel-tank-top-top-tank-sando-pack-of-2-summer-wear-hhc-3755961
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/c2e46418a6b397b4e21d1c4044b278d7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/c2e46418a6b397b4e21d1c4044b278d7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/2e62e3aa5d3a53a89ff65ae82cec7625.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/0ef07e269c6cb6bc5191dbfacddbe4c9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/9a078486866a1346c1199ec5b5bfbea8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/2018668916d4ff9549cca0200bbfbed9.jpeg
 Meta Title: Men Boys Panel Tank Top | Top Tank Sando Pack of 2 Summer Wear | Buy
 Meta Description: Buy Men Boys Panel Tank Top | Top Tank Sando Pack of 2 Summer Wear online in Pakistan from ASM VEO. Men Boys Panel Tank Top | Top Tank Sando Pack of 2 Summer We
 Description: Men Boys Panel Tank Top | Top Tank Sando Pack of 2 Summer Wear
-Regular Price: 1175
-Sale Price: 1175
+Wholesale Price: 1125
+Regular Price: 2070
+Sale Price: 1658
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

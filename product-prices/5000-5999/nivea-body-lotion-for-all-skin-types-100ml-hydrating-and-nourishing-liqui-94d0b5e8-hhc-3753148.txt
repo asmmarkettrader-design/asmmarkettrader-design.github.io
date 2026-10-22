@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nivea Body Lotion For All Skin Types 100ml | Hydrating And Nourishing Liquid Lotion For Smooth, Soft, And Healthy Skin
 Product ID: hhc-3753148
 SKU: hhc-3753148
@@ -7,11 +8,16 @@ Slug: nivea-body-lotion-for-all-skin-types-100ml-hydrating-and-nourishing-liq-94
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/e6e4ede87bdd05cd05a111f0b9094c35.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/e6e4ede87bdd05cd05a111f0b9094c35.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/e9fe70c3d60c0b2940da2b2c8347e8a4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/65eedf859fe03a8a18711a649d7ee02a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/bceab1d3a1eb5b869f1909a1fb44f4bf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/6ee35c9268f3f6f5657acd95ddabef8e.jpeg
 Meta Title: Nivea Body Lotion For All Skin Types 100ml | Hydrating And Nourishin
 Meta Description: Buy Nivea Body Lotion For All Skin Types 100ml | Hydrating And Nourishing Liquid Lotion For Smooth, Soft, And Healthy Skin online in Pakistan from ASM VEO. Nive
 Description: Nivea Body Lotion For All Skin Types Provides Deep Hydration And Nourishment, Leaving Skin Smooth, Soft, And Moisturized All Day.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

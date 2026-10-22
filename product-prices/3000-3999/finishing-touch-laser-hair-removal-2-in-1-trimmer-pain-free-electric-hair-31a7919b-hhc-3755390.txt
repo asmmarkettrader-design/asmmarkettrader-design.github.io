@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Finishing Touch Laser Hair Removal | 2‑in‑1 Trimmer | Pain‑Free Electric Hair Removal for Women
 Product ID: hhc-3755390
 SKU: hhc-3755390
@@ -7,11 +8,16 @@ Slug: finishing-touch-laser-hair-removal-2-in-1-trimmer-pain-free-electric-ha-31
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/1ed3af29e746c017931cf3d81d1ffa70.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/1ed3af29e746c017931cf3d81d1ffa70.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/9d1205a6115dff710f76b1db55fe1a58.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/8ebbe9a1db922bd89634b71877a6ac77.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/e8777e0106a2a09b7daee52bf35fb689.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/85c95de2b2580d13864f41294a5f152e.jpg
 Meta Title: Finishing Touch Laser Hair Removal | 2‑in‑1 Trimmer | Pain‑Free Elec
 Meta Description: Buy Finishing Touch Laser Hair Removal | 2‑in‑1 Trimmer | Pain‑Free Electric Hair Removal for Women online in Pakistan from ASM VEO. Finishing Touch 2‑in‑1 lase
 Description: Finishing Touch 2‑in‑1 laser hair removal trimmer. Pain‑free, instant function for smooth skin.
-Regular Price: 980
-Sale Price: 980
+Wholesale Price: 930
+Regular Price: 1760
+Sale Price: 1408
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

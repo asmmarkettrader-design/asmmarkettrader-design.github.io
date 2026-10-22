@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Croc-Embossed Vegan Leather Crossbody Bag with Elegant Gold-Tone Chain Strap and Iconic Signature Hardware
 Product ID: hhc-3754490
 SKU: hhc-3754490
@@ -7,11 +8,16 @@ Slug: premium-croc-embossed-vegan-leather-crossbody-bag-with-elegant-gold-ton-1e
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/e4839578630e108b86b4ddccb925fbda.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/e4839578630e108b86b4ddccb925fbda.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/5a5d13e62276201c70d48a3be6b843f1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/9b6b7c3676bcbd1cbf35927d1cc3900e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/ed43c376401766f6e5d47ae0a6dd3473.jpeg
 Meta Title: Premium Croc-Embossed Vegan Leather Crossbody Bag with Elegant Gold-
 Meta Description: Buy Premium Croc-Embossed Vegan Leather Crossbody Bag with Elegant Gold-Tone Chain Strap and Iconic Signature Hardware online in Pakistan from ASM VEO. Elevate
 Description: Elevate your accessory game with this sophisticated textured crossbody bag. Featuring a premium croc-embossed finish and striking gold-tone hardware, it is the perfect blend of modern luxury and timeless style for any occasion.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

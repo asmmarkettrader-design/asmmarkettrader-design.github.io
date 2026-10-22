@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CeraVe Hydrating Facial Cleanser - 236 ml - Refresh The Skin Without Over-Stripping It
 Product ID: hhc-2454923
 SKU: hhc-2454923
@@ -7,11 +8,16 @@ Slug: cerave-hydrating-facial-cleanser-236-ml-refresh-the-skin-without-over-s-5d
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-12-at-6.12.21-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-12-at-6.12.21-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-12-at-6.12.21-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-12-at-6.12.21-PM.jpeg
 Meta Title: CeraVe Hydrating Facial Cleanser - 236 ml - Refresh The Skin Without
 Meta Description: Buy CeraVe Hydrating Facial Cleanser - 236 ml - Refresh The Skin Without Over-Stripping It online in Pakistan from ASM VEO. Product description• Material: Liqui
 Description: Product description• Material: Liquid • Hydrating Cleanser Was Designed To Cleanse • Refresh The Skin Without Over-Stripping It Or Leaving It Feeling Tight And Dry • Package Includes: 1 x Hydrating Facial Cleanser 236ml SA Hydrating Facial Cleanser is ideal for improving skin smoothness and refining texture. It deeply nourishes the skin while helping to brighten and even out the complexion.
-Regular Price: 1128
-Sale Price: 1128
+Wholesale Price: 1078
+Regular Price: 1990
+Sale Price: 1591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flamingo Scratch Remover 300ML – Car Paint Scratch Repair & Shine Restorer
 Product ID: hhc-3757309
 SKU: hhc-3757309
@@ -7,11 +8,16 @@ Slug: flamingo-scratch-remover-300ml-car-paint-scratch-repair-shine-restorer-hhc
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/8889ed6d72d96f426a27d24a28706b29.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/8889ed6d72d96f426a27d24a28706b29.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/b288d394da903eb9c1ad814a90c890a6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/cd44c83c8619e80bf73ff23388ce4a93.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/6dc51cfdf39f695762c8979b0747ff74.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/5763e065ee5a1dd7e22b1d38f66e9918.jpeg
 Meta Title: Flamingo Scratch Remover 300ML – Car Paint Scratch Repair & Shine Re
 Meta Description: Buy Flamingo Scratch Remover 300ML – Car Paint Scratch Repair & Shine Restorer online in Pakistan from ASM VEO. Flamingo Scratch Remover is a high-performance,
 Description: Flamingo Scratch Remover is a high-performance, non-abrasive formula designed to eliminate fine scratches, swirl marks, and haze from your car’s paint. It restores original color and shine, giving your vehicle a smooth, like-new finish quickly and easily.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

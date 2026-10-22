@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: USB Goose Neck WiFi Camera V382 Pro App HD 1080P 2MP Wide Angle Flexible Camera
 Product ID: hhc-1787982
 SKU: hhc-1787982
@@ -7,11 +8,16 @@ Slug: usb-goose-neck-wifi-camera-v382-pro-app-hd-1080p-2mp-wide-angle-flexible-c
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/6-6.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/6-6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/5-13.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/4-22.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/3-31.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/2-38.webp
 Meta Title: USB Goose Neck WiFi Camera V382 Pro App HD 1080P 2MP Wide Angle Flex
 Meta Description: Buy USB Goose Neck WiFi Camera V382 Pro App HD 1080P 2MP Wide Angle Flexible Camera online in Pakistan from ASM VEO. USB Goose Neck WiFi Camera V382 Pro with HD
 Description: USB Goose Neck WiFi Camera V382 Pro with HD 1080P and 2MP video, flexible goose-neck design, wide 160° viewing angle, WiFi connectivity and support for up to 128GB memory card.
-Regular Price: 5183
-Sale Price: 5183
+Wholesale Price: 5183
+Regular Price: 8650
+Sale Price: 6918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 9 Inch Spike Roller for Epoxy Paint – Bubble Removal Tool for Floor Coating
 Product ID: hhc-3757548
 SKU: hhc-3757548
@@ -7,11 +8,16 @@ Slug: 9-inch-spike-roller-for-epoxy-paint-bubble-removal-tool-for-floor-coating-
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
-Meta Title: 9 Inch Spike Roller for Epoxy Paint – Bubble Removal Tool for Floor
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/ae9bf3b246911508daf229b1e53aa6f0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/ae9bf3b246911508daf229b1e53aa6f0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/519101f7bb4ba92fe51077ec663395ea.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/99ec1c1b3de305453b320c2ebe407070.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/812114868d74307b04905d3e0a25d5d9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/e164672f709f5159cdee7c325e359f47.jpeg
+Meta Title: 9 Inch Spike Roller for Epoxy Paint – Bubble Removal Tool for Floor 
 Meta Description: Buy 9 Inch Spike Roller for Epoxy Paint – Bubble Removal Tool for Floor Coating online in Pakistan from ASM VEO. 9-inch spike roller designed for epoxy paint ap
 Description: 9-inch spike roller designed for epoxy paint application. Removes air bubbles and ensures smooth, even floor coating.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

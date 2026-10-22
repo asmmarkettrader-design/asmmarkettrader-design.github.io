@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kemei Professional Hair Removal System KM-519A
 Product ID: hhc-3764227
 SKU: hhc-3764227
@@ -7,11 +8,16 @@ Slug: kemei-professional-hair-removal-system-km-519a-hhc-3764227
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/26/a7426ca6d322372040951603a5bbdbdf.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/26/a7426ca6d322372040951603a5bbdbdf.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/f8f3649016090c8cabe1a0c6bf008cfb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/031d05117ecc3ae91f50b6ac77e213b3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/c2e3aaf881df08def866a14f07ac362e.jpg
 Meta Title: Kemei Professional Hair Removal System KM-519A | Buy Online in Pakis
 Meta Description: Buy Kemei Professional Hair Removal System KM-519A online in Pakistan from ASM VEO. Kemei Professional KM-519A Hair Removal System. Luxurious complete set featu
 Description: Kemei Professional KM-519A Hair Removal System. Luxurious complete set featuring epilation, precise shaving, and exfoliation. Rechargeable, cordless use up to 40 minutes, travel-friendly, dual-speed, and easy to clean. Perfect for sensitive areas.
-Regular Price: 3498
-Sale Price: 3498
+Wholesale Price: 3498
+Regular Price: 5910
+Sale Price: 4727
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

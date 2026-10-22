@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100 Pcs Disposable Food Cover Plastic Shopper Bags
 Product ID: hhc-2171859
 SKU: hhc-2171859
@@ -7,11 +8,16 @@ Slug: 100-pcs-disposable-food-cover-plastic-shopper-bags-hhc-2171859
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/100-pcs-disposable-food-cover-plastic-shopper-bags-7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/100-pcs-disposable-food-cover-plastic-shopper-bags-7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/100-pcs-disposable-food-cover-plastic-shopper-bags-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/100-pcs-disposable-food-cover-plastic-shopper-bags-6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/100-pcs-disposable-food-cover-plastic-shopper-bags-4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/100-pcs-disposable-food-cover-plastic-shopper-bags-8.jpeg
 Meta Title: 100 Pcs Disposable Food Cover Plastic Shopper Bags | Buy Online in P
 Meta Description: Buy 100 Pcs Disposable Food Cover Plastic Shopper Bags online in Pakistan from ASM VEO. Description100 pcsStrong and durableNot easy to breakEasily lengthen 3 t
 Description: Description100 pcsStrong and durableNot easy to breakEasily lengthen 3 timeWrap Elastic Food Lids For Fruit Bowls Cups Caps Storage Kitchen Fresh Keeping Saver Bag*er,
-Regular Price: 255
-Sale Price: 255
+Wholesale Price: 205
+Regular Price: 518
+Sale Price: 368
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

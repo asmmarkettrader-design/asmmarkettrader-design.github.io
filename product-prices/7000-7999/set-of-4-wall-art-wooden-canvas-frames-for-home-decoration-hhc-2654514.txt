@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: set of 4 wall art wooden canvas frames for home decoration
 Product ID: hhc-2654514
 SKU: hhc-2654514
@@ -7,11 +8,16 @@ Slug: set-of-4-wall-art-wooden-canvas-frames-for-home-decoration-hhc-2654514
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/6d101ce0a7008ecdd3b2e2572bb351e4.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/6d101ce0a7008ecdd3b2e2572bb351e4.jpg
 Meta Title: set of 4 wall art wooden canvas frames for home decoration | Buy Onl
 Meta Description: Buy set of 4 wall art wooden canvas frames for home decoration online in Pakistan from ASM VEO. Size of each frame is 8x11inchWooden Materialwith Sticky double
 Description: Size of each frame is 8x11inchWooden Materialwith Sticky double tapeAfter Packeging Dimension. Length-Width: (9-12inches)Weight: 800gram
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

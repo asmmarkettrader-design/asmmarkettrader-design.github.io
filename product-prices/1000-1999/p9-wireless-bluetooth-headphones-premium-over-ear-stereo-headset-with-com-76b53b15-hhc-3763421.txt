@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: P9 Wireless Bluetooth Headphones – Premium Over-Ear Stereo Headset with Comfortable Ear Cushions
 Product ID: hhc-3763421
 SKU: hhc-3763421
@@ -7,11 +8,16 @@ Slug: p9-wireless-bluetooth-headphones-premium-over-ear-stereo-headset-with-c-76
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/c60e0fc8a5a70d6f2f5e70825152b813.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/c60e0fc8a5a70d6f2f5e70825152b813.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/15a5663bfc49e6a81722b9a92513dc16.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/6e76f9975a8066a446a86a7ef8a052b4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/f5e0dcfe4da66562d72223050cce6186.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/c2cf617a8f01f0d02a4f29f4169b2639.jpg
 Meta Title: P9 Wireless Bluetooth Headphones – Premium Over-Ear Stereo Headset w
 Meta Description: Buy P9 Wireless Bluetooth Headphones – Premium Over-Ear Stereo Headset with Comfortable Ear Cushions online in Pakistan from ASM VEO. Enjoy immersive wireless a
 Description: Enjoy immersive wireless audio with the P9 Wireless Bluetooth Headphones, featuring a stylish over-ear design, soft cushioned ear cups, convenient control buttons, and a comfortable fit for music, calls, gaming, and everyday use.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

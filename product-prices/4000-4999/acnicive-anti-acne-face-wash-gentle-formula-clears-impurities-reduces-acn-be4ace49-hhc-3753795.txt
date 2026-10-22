@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acnicive Anti Acne Face Wash Gentle Formula Clears Impurities Reduces Acne Refreshes Skin Provides Smooth And Healthy Look For Daily Use - 100ml
 Product ID: hhc-3753795
 SKU: hhc-3753795
@@ -7,11 +8,16 @@ Slug: acnicive-anti-acne-face-wash-gentle-formula-clears-impurities-reduces-a-be
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/a70468dc86d5fec72f79b80cbccbc179.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/a70468dc86d5fec72f79b80cbccbc179.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/c41c707076271d0ed94cd75667ad30d4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/d89fb6a3613f58da30960f4426f437bd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/23d38cd4baccfabfc5ac49bc1b29091e.jpeg
 Meta Title: Acnicive Anti Acne Face Wash Gentle Formula Clears Impurities Reduce
 Meta Description: Buy Acnicive Anti Acne Face Wash Gentle Formula Clears Impurities Reduces Acne Refreshes Skin Provides Smooth And Healthy Look For Daily Use - 100ml online in P
 Description: Acnicive Anti Acne Face Wash Provides Gentle Formula Clears Impurities Reduces Acne And Refreshes Skin
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

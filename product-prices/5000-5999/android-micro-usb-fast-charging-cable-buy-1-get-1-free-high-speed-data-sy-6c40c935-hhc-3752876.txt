@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Android Micro USB Fast Charging Cable – Buy 1 Get 1 Free, High-Speed Data Sync, Durable Design
 Product ID: hhc-3752876
 SKU: hhc-3752876
@@ -7,11 +8,16 @@ Slug: android-micro-usb-fast-charging-cable-buy-1-get-1-free-high-speed-data-6c4
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/d9ebed72a89668e93744121bd3af55e9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/d9ebed72a89668e93744121bd3af55e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/6f3eb838d0669610ace00c6346250bd0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/d75b8156489feb683c9bad39796b87b0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/b7490fd34c4f25a28b629e9e4c830a26.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/e97bca532af0c5a25babe9168e63b4af.jpeg
 Meta Title: Android Micro USB Fast Charging Cable – Buy 1 Get 1 Free, High-Speed
 Meta Description: Buy Android Micro USB Fast Charging Cable – Buy 1 Get 1 Free, High-Speed Data Sync, Durable Design online in Pakistan from ASM VEO. Charge faster and smarter wi
 Description: Charge faster and smarter with this Android Micro USB Fast Charging Cable. Enjoy a Buy 1 Get 1 Free offer with this durable, high-speed cable—perfect for quick charging and reliable data transfer across all compatible Android devices.
-Regular Price: 323
-Sale Price: 323
+Wholesale Price: 273
+Regular Price: 620
+Sale Price: 470
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

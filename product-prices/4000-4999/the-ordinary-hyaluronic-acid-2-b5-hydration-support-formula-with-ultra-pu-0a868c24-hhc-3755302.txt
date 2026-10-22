@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula With Ultra Pure Vegan Hyaluronic Acid 30 Ml
 Product ID: hhc-3755302
 SKU: hhc-3755302
@@ -7,11 +8,16 @@ Slug: the-ordinary-hyaluronic-acid-2-b5-hydration-support-formula-with-ultra-0a8
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula With
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/319f08ca296d13b76046fc0148799650.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/319f08ca296d13b76046fc0148799650.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/12b60ef7dd02a3554dad5b9271b01a78.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/fff07a67bae05e7ec2bfe8074acf3efa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/13afb39ed61a667e8027e21d054b06be.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/3a56622d378dfd937e3af943843990ab.jpeg
+Meta Title: The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula With 
 Meta Description: Buy The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula With Ultra Pure Vegan Hyaluronic Acid 30 Ml online in Pakistan from ASM VEO. The Ordinary Hya
 Description: The Ordinary Hyaluronic Acid 2% + B5 Is A Hydration Support Formula With Ultra Pure Vegan Hyaluronic Acid In A 30 Ml Bottle.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

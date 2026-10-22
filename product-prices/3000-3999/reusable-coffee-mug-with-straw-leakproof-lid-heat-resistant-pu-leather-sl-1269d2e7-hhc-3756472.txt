@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Reusable Coffee Mug with Straw – Leakproof Lid & Heat-Resistant PU Leather Sleeve for Hot & Cold Drinks (300ml)
 Product ID: hhc-3756472
 SKU: hhc-3756472
@@ -7,11 +8,16 @@ Slug: reusable-coffee-mug-with-straw-leakproof-lid-heat-resistant-pu-leather-126
 Category: Kitchen & Dining
 Subcategory: Cookware
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/e3062ba86ac2337aec854766177813bb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/e3062ba86ac2337aec854766177813bb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/201edaf45b16e9c461bb36cfd03b56b7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/f3aa1d3a31524d76682eadb3d70654b4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/d65821afdf106153d50d081494ae5432.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/b30dba1d81805dfc0e3a49f691e88a1d.jpeg
 Meta Title: Reusable Coffee Mug with Straw – Leakproof Lid & Heat-Resistant PU L
 Meta Description: Buy Reusable Coffee Mug with Straw – Leakproof Lid & Heat-Resistant PU Leather Sleeve for Hot & Cold Drinks (300ml) online in Pakistan from ASM VEO. Enjoy your
 Description: Enjoy your favorite beverages in style with this reusable 300 ml coffee mug featuring a leakproof lid, reusable straw, and a heat-resistant PU leather sleeve. Perfect for hot or cold drinks at home, work, or on the go.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

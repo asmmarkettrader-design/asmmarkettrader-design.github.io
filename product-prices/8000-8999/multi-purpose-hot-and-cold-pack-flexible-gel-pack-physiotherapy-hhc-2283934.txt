@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi-Purpose Hot and Cold Pack Flexible Gel Pack Physiotherapy
 Product ID: hhc-2283934
 SKU: hhc-2283934
@@ -7,11 +8,16 @@ Slug: multi-purpose-hot-and-cold-pack-flexible-gel-pack-physiotherapy-hhc-228393
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/16.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/16.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-08-at-4.50.31-PM.jpeg
 Meta Title: Multi-Purpose Hot and Cold Pack Flexible Gel Pack Physiotherapy | Bu
 Meta Description: Buy Multi-Purpose Hot and Cold Pack Flexible Gel Pack Physiotherapy online in Pakistan from ASM VEO. Key Features Hot And Cold Pouches can be used for medically
 Description: Key Features Hot And Cold Pouches can be used for medically need and therapies. Reusable ice packs used as cooling cold packs or soothing heat pads. Cold therapy is a highly effective method for treating acute sports injuries, activity injuries to soft tissue. Our gel ice packs may also be used to apply heat therapy or thermotherapy for pain relief. Heated gel ice packs are beneficial to those with arthritis and stiff muscles and tissue injuries. The correct application of ice packs for injuries can aid the healing process in a few ways. They constrict blood vessels, which reduces swelling and the blood flow around the injury. Ice packs will help to numb the pain and prevent muscle spasms. &nbsp; &nbsp;
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

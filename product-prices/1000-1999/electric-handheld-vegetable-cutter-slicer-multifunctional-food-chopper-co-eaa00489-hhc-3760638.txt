@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Handheld Vegetable Cutter Slicer Multifunctional Food Chopper Compact Durable And Easy To Use Kitchen Tool
 Product ID: hhc-3760638
 SKU: hhc-3760638
@@ -7,11 +8,16 @@ Slug: electric-handheld-vegetable-cutter-slicer-multifunctional-food-chopper-eaa
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/ab68810ae445b78ebb38541b8060a731.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/ab68810ae445b78ebb38541b8060a731.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/da974c3303a49e8f89e96a8a2f6534bf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/8298deba0ae195fa19154b772cba6be6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/da9c1635fdb8b0b5e374456edd13f04d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/dc8f6009f6bae92a9220059a794f7f9e.jpg
 Meta Title: Electric Handheld Vegetable Cutter Slicer Multifunctional Food Chopp
 Meta Description: Buy Electric Handheld Vegetable Cutter Slicer Multifunctional Food Chopper Compact Durable And Easy To Use Kitchen Tool online in Pakistan from ASM VEO. Electri
 Description: Electric Handheld Vegetable Cutter Slicer Multifunctional Food Chopper Compact Durable And Convenient For Daily Cooking.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

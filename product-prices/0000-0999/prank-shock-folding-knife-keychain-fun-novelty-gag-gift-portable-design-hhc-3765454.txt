@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Prank Shock Folding Knife Keychain | Fun Novelty Gag Gift Portable Design
 Product ID: hhc-3765454
 SKU: hhc-3765454
@@ -7,11 +8,16 @@ Slug: prank-shock-folding-knife-keychain-fun-novelty-gag-gift-portable-design-hh
 Category: Seasonal Items
 Subcategory: New Year Items
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/f5ff399653b8eb3210a23a4a895d3821.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/f5ff399653b8eb3210a23a4a895d3821.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/3d9a55e216511d188f0274cdf9995afd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/f823310d7457057cfc6a7de19b0a2cca.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/9526a4bb281a181f91a27c344d1145c7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/1bf6a5c7eba386aa8199005fce924951.jpg
 Meta Title: Prank Shock Folding Knife Keychain | Fun Novelty Gag Gift Portable D
 Meta Description: Buy Prank Shock Folding Knife Keychain | Fun Novelty Gag Gift Portable Design online in Pakistan from ASM VEO. The Prank Shock Folding Knife Keychain is a uniqu
 Description: The Prank Shock Folding Knife Keychain is a unique novelty accessory designed for fun and laughter. Compact and portable, it doubles as a keychain while delivering a harmless shock prank to unsuspecting friends.Crafted with a folding knife-style design, it adds a playful twist to everyday carry items. Perfect as a gag gift, party trick, or lighthearted joke, this keychain ensures entertainment and surprise wherever you go.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

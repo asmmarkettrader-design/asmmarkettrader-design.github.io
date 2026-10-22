@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RONIN FLEXIN 1.2m Braided USB to Micro USB Fast Charging & Data Cable – Compatible with Android & iPhone
 Product ID: hhc-3756405
 SKU: hhc-3756405
@@ -7,11 +8,16 @@ Slug: ronin-flexin-1-2m-braided-usb-to-micro-usb-fast-charging-data-cable-com-39
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/b428d57e1a0ec3421f0aba14016490ff.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/b428d57e1a0ec3421f0aba14016490ff.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/4d703e191469785ec91acc15c0677c16.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/fb9e33c6c7d650500405172e7f532df4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/5f81727900583c32feeab6bfbca2abf7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/492640de39fbb26b28dfc0579de709dc.png
 Meta Title: RONIN FLEXIN 1.2m Braided USB to Micro USB Fast Charging & Data Cabl
 Meta Description: Buy RONIN FLEXIN 1.2m Braided USB to Micro USB Fast Charging & Data Cable – Compatible with Android & iPhone online in Pakistan from ASM VEO. Durable and flexib
 Description: Durable and flexible, the RONIN FLEXIN braided cable delivers fast charging and reliable data transfer for both Android and iPhone devices. 1.2m length for convenience anywhere.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

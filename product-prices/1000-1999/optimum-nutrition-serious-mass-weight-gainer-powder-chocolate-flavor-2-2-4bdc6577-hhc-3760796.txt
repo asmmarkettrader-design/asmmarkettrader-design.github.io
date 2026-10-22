@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Optimum Nutrition Serious Mass Weight Gainer Powder Chocolate Flavor 2.2 Pounds 1 Kg High Calorie Supplement
 Product ID: hhc-3760796
 SKU: hhc-3760796
@@ -7,11 +8,16 @@ Slug: optimum-nutrition-serious-mass-weight-gainer-powder-chocolate-flavor-2-4bd
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/535a82a249812b41e1129175833afb1e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/535a82a249812b41e1129175833afb1e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/96350b7f9440ff8c15b4a2d3125fa1e5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/cafd6a2b91c41dd6142f6a136d198230.jpeg
 Meta Title: Optimum Nutrition Serious Mass Weight Gainer Powder Chocolate Flavor
 Meta Description: Buy Optimum Nutrition Serious Mass Weight Gainer Powder Chocolate Flavor 2.2 Pounds 1 Kg High Calorie Supplement online in Pakistan from ASM VEO. Optimum Nutrit
 Description: Optimum Nutrition Serious Mass Weight Gainer Powder Chocolate Flavor 2.2 Pounds 1 Kg High Calorie Formula For Muscle Growth.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

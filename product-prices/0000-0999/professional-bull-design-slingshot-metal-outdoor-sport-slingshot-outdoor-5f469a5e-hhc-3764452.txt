@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Bull Design Slingshot Metal Outdoor Sport Slingshot - Outdoor Accessory Designed For Sport And Daily Utility Routine
 Product ID: hhc-3764452
 SKU: hhc-3764452
@@ -7,11 +8,16 @@ Slug: professional-bull-design-slingshot-metal-outdoor-sport-slingshot-outdoo-5f
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/75a52de78ae5ddfb925593fecbefb5ae.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/75a52de78ae5ddfb925593fecbefb5ae.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/638044de87211c6f7316eadad5622d5f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/2aaf8b0671a3566e389621df8e377639.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/ef4a8c32b89255cb3972638b0a6cb9f8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/dc6cc3309903502bdd442c5957c91734.jpg
 Meta Title: Professional Bull Design Slingshot Metal Outdoor Sport Slingshot - O
 Meta Description: Buy Professional Bull Design Slingshot Metal Outdoor Sport Slingshot - Outdoor Accessory Designed For Sport And Daily Utility Routine online in Pakistan from AS
 Description: The Professional Bull Design Slingshot Metal Outdoor Sport Slingshot Is An Outdoor Accessory Formulated To Help Provide Sport And Daily Utility During Use.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

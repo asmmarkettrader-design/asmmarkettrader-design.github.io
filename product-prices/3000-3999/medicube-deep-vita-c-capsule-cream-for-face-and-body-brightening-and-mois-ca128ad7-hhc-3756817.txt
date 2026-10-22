@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Medicube Deep Vita C Capsule Cream For Face And Body Brightening And Moisturizing Skin Care Cream 55g
 Product ID: hhc-3756817
 SKU: hhc-3756817
@@ -7,11 +8,16 @@ Slug: medicube-deep-vita-c-capsule-cream-for-face-and-body-brightening-and-mo-ca
 Category: Beauty & Personal Care
 Subcategory: Skin Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/af1889659defbc36e940f57de846fb3e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/af1889659defbc36e940f57de846fb3e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/9fdec06be30c126bb473f9749e05f10d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/6a642e78b4442c62249f7fe2d474981d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/9690fd4acf362215e797d1445b980186.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/f654e82ee9b2aac250370d865136fde5.mp4
 Meta Title: Medicube Deep Vita C Capsule Cream For Face And Body Brightening And
 Meta Description: Buy Medicube Deep Vita C Capsule Cream For Face And Body Brightening And Moisturizing Skin Care Cream 55g online in Pakistan from ASM VEO. Medicube Deep Vita C
 Description: Medicube Deep Vita C Capsule Cream Designed For Face And Body Care. Helps Improve Skin Brightness And Provides Moisturizing Support For Daily Skin Care.
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

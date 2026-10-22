@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Safety Pin – Elegant And Durable Accessory With Traditional Design For Daily Wear And Spiritual Significance
 Product ID: hhc-3753538
 SKU: hhc-3753538
@@ -7,11 +8,16 @@ Slug: islamic-safety-pin-elegant-and-durable-accessory-with-traditional-desig-a7
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: Islamic Safety Pin – Elegant And Durable Accessory With Traditional
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/ab111326a65ace89775457ded3a3b8d2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/ab111326a65ace89775457ded3a3b8d2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/1768a739cfc6be6b3c29c15be84bb1a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/5b620d7c7fdc8f88383beade1b48b4f9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/b430d66067068f815069e0b60a309958.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/9f386c6449bd8da62c3766910dfb1af8.jpeg
+Meta Title: Islamic Safety Pin – Elegant And Durable Accessory With Traditional 
 Meta Description: Buy Islamic Safety Pin – Elegant And Durable Accessory With Traditional Design For Daily Wear And Spiritual Significance online in Pakistan from ASM VEO. Islami
 Description: Islamic Safety Pin Is A Beautiful And Durable Accessory Designed With A Traditional Touch, Perfect For Daily Use And Modest Styling.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

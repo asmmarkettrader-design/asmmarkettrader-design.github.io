@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Sticky Tiles 12Pcs Set Featuring Islamic Names In Gold Calligraphy With 5x7 Inches Frame Size
 Product ID: hhc-3759764
 SKU: hhc-3759764
@@ -7,11 +8,16 @@ Slug: wooden-sticky-tiles-12pcs-set-featuring-islamic-names-in-gold-calligrap-6b
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/204b9232a2f12277a93c63db88c85c93.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/204b9232a2f12277a93c63db88c85c93.jpeg
 Meta Title: Wooden Sticky Tiles 12Pcs Set Featuring Islamic Names In Gold Callig
 Meta Description: Buy Wooden Sticky Tiles 12Pcs Set Featuring Islamic Names In Gold Calligraphy With 5x7 Inches Frame Size online in Pakistan from ASM VEO. Enhance Your Interior
 Description: Enhance Your Interior With This 12Pcs Set Of Wooden Sticky Tiles. Each 5x7 Inches Tile Features Elegant Gold Calligraphy Representing Sacred Islamic Names Against A Textured Dark Background.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Cleaner & Degreaser – Heavy Duty, Germ-Killing & Grease-Fighting Formula | THREE GUYS - German Engineered (250) ML
 Product ID: hhc-3756983
 SKU: hhc-3756983
@@ -7,11 +8,16 @@ Slug: kitchen-cleaner-degreaser-heavy-duty-germ-killing-grease-fighting-formu-e9
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/4c5edcb6518a3b3576e400ebe0e71661.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/4c5edcb6518a3b3576e400ebe0e71661.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/b8ae7eb5e6647c65225c8ab8e644f9ee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/d53a3969e87ea4c86fac472718de31ca.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/2cee2d78c90932d90ea952a761e621bb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/985b7141902a64217bc0fee115cba049.jpeg
 Meta Title: Kitchen Cleaner & Degreaser – Heavy Duty, Germ-Killing & Grease-Figh
 Meta Description: Buy Kitchen Cleaner & Degreaser – Heavy Duty, Germ-Killing & Grease-Fighting Formula | THREE GUYS - German Engineered (250) ML online in Pakistan from ASM VEO.
 Description: Powerful kitchen cleaner and degreaser that cuts through tough grease, oil, and food stains while helping eliminate germs. Ideal for stovetops, countertops, sinks, tiles, and kitchen appliances, leaving surfaces clean, fresh, and hygienic with minimal effort.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

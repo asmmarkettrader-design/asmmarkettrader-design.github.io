@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Monkey D. Luffy Anime Acrylic Keychain Double-Sided Printed – Cute Cartoon Character Key Ring for Backpack, Bag, Keys & Accessories
 Product ID: hhc-3763013
 SKU: hhc-3763013
@@ -7,11 +8,16 @@ Slug: monkey-d-luffy-anime-acrylic-keychain-double-sided-printed-cute-cartoon-6d
 Category: Books & Stationery
 Subcategory: Jewelry
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/360471ba8dd4451026715d5dba2e2994.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/360471ba8dd4451026715d5dba2e2994.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/b76e207539cfb3e5355ccc3b5043efeb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/6b98402616b9680f177a5480f72c151d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/9796873277240ccaceede3b617c3cfed.jpg
 Meta Title: Monkey D. Luffy Anime Acrylic Keychain Double-Sided Printed – Cute C
 Meta Description: Buy Monkey D. Luffy Anime Acrylic Keychain Double-Sided Printed – Cute Cartoon Character Key Ring for Backpack, Bag, Keys & Accessories online in Pakistan from
 Description: Monkey D. Luffy Anime Acrylic Keychain – Glossy, High-Quality Both side Printed size in inches (2" x 1.8")
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

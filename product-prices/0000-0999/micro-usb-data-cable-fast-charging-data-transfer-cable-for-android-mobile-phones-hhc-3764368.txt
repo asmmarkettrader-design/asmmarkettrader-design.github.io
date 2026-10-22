@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Micro USB Data Cable – Fast Charging & Data Transfer Cable for Android Mobile Phones
 Product ID: hhc-3764368
 SKU: hhc-3764368
@@ -7,11 +8,16 @@ Slug: micro-usb-data-cable-fast-charging-data-transfer-cable-for-android-mobile-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/6ff198f452da88a8fb7fb5d6dc7296f6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/6ff198f452da88a8fb7fb5d6dc7296f6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/0fa918a632b547d570929fc310973e44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/c7076490967db87b0acb1d132a365431.jpg
 Meta Title: Micro USB Data Cable – Fast Charging & Data Transfer Cable for Andro
 Meta Description: Buy Micro USB Data Cable – Fast Charging & Data Transfer Cable for Android Mobile Phones online in Pakistan from ASM VEO. Micro USB Data Cable designed for fast
 Description: Micro USB Data Cable designed for fast charging and data transfer. Suitable for compatible Android mobile phones and other Micro USB devices.
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

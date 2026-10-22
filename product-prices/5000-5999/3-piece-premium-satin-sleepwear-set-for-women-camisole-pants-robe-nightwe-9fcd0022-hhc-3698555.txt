@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-Piece Premium Satin Sleepwear Set for Women – Camisole, Pants & Robe | Nightwear & Loungewear | Free Size (DC-3002)
 Product ID: hhc-3698555
 SKU: hhc-3698555
@@ -7,11 +8,16 @@ Slug: 3-piece-premium-satin-sleepwear-set-for-women-camisole-pants-robe-night-9f
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_170723.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_170723.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_170717.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_172235-2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_172940.png
 Meta Title: 3-Piece Premium Satin Sleepwear Set for Women – Camisole, Pants & Ro
 Meta Description: Buy 3-Piece Premium Satin Sleepwear Set for Women – Camisole, Pants & Robe | Nightwear & Loungewear | Free Size (DC-3002) online in Pakistan from ASM VEO. The 3
 Description: The 3-Piece Premium Satin Sleepwear Set for Women – Camisole, Pants & Robe | Nightwear & Loungewear | Free Size , Elevate your nighttime elegance with this 3-Piece Premium Satin Sleepwear Set
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

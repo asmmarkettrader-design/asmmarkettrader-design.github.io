@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Apple Hair Color 200ml | Long-Lasting Shine And Smooth Finish | Nourishing Hair Dye For Natural, Vibrant, And Lustrous Color (Dark Brown)
 Product ID: hhc-3752980
 SKU: hhc-3752980
@@ -7,11 +8,16 @@ Slug: apple-hair-color-200ml-long-lasting-shine-and-smooth-finish-nourishing-549
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/124e3efc81bf523f8c9e3260291bacfd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/124e3efc81bf523f8c9e3260291bacfd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/727270e2a77ecf6c20e0da7de1b98750.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/556a32829d7a0e14d20968897f05cc23.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/cb3b8562d7ebd665fd4e4a69d950f087.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/b964e72a8904f388ee58a04a6a17d700.jpg
 Meta Title: Apple Hair Color 200ml | Long-Lasting Shine And Smooth Finish | Nour
 Meta Description: Buy Apple Hair Color 200ml | Long-Lasting Shine And Smooth Finish | Nourishing Hair Dye For Natural, Vibrant, And Lustrous Color (Dark Brown) online in Pakistan
 Description: Premium Apple Hair Color Enriched With Conditioning Ingredients For Smooth, Shiny, And Vibrant Hair With Long-Lasting Color Protection.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

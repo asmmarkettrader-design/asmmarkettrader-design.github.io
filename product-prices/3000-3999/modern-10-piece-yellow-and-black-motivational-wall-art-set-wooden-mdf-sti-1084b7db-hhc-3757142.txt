@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern 10 Piece Yellow And Black Motivational Wall Art Set Wooden MDF Sticky Phototile Frames | Double Tape Included
 Product ID: hhc-3757142
 SKU: hhc-3757142
@@ -7,11 +8,16 @@ Slug: modern-10-piece-yellow-and-black-motivational-wall-art-set-wooden-mdf-s-10
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/5d2c3b68c253d392e05f671b310a0892.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/5d2c3b68c253d392e05f671b310a0892.jpeg
 Meta Title: Modern 10 Piece Yellow And Black Motivational Wall Art Set Wooden MD
 Meta Description: Buy Modern 10 Piece Yellow And Black Motivational Wall Art Set Wooden MDF Sticky Phototile Frames | Double Tape Included online in Pakistan from ASM VEO. Stylis
 Description: Stylish 10 Piece Motivational Wall Art Set Featuring Yellow And Black Designs On Wooden MDF Frames With Double Tape For Easy Installation.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: POVOS Nose & Ear Trimmer - Rechargeable Type-C
 Product ID: hhc-3765255
 SKU: hhc-3765255
@@ -7,11 +8,16 @@ Slug: povos-nose-ear-trimmer-rechargeable-type-c-hhc-3765255
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/cae1aa31ad28c44e594ae5130306e8c2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/cae1aa31ad28c44e594ae5130306e8c2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/900311d665c71ac9ad660272d0308ca8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/a430abe23c68515e7f346c22c5abfa16.jpeg
 Meta Title: POVOS Nose & Ear Trimmer - Rechargeable Type-C | Buy Online in Pakis
 Meta Description: Buy POVOS Nose & Ear Trimmer - Rechargeable Type-C online in Pakistan from ASM VEO. POVOS Nose &amp; Ear Trimmer (PR210). Rechargeable trimmer with Type-C charg
 Description: POVOS Nose &amp; Ear Trimmer (PR210). Rechargeable trimmer with Type-C charging cable included. Perfect for precise and painless grooming. Features a compact design, easy to clean, and long battery life. Package includes the trimmer and charging cable.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

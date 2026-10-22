@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality Durable Laptop Stand Big Size Non Rotating Stable Support Improves Posture Ergonomics Keeps Device Cool
 Product ID: hhc-3764874
 SKU: hhc-3764874
@@ -7,11 +8,16 @@ Slug: high-quality-durable-laptop-stand-big-size-non-rotating-stable-support-b87
 Category: Furniture
 Subcategory: Office Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/62d6a07424de53c8bd796774f3de557f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/62d6a07424de53c8bd796774f3de557f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/1740150450339ec4a311740f0cc650da.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/88ad25b19b92cc505c4f45203781d32a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/e68999f77bad546a98b7e12b5da280e0.jpeg
 Meta Title: High Quality Durable Laptop Stand Big Size Non Rotating Stable Suppo
 Meta Description: Buy High Quality Durable Laptop Stand Big Size Non Rotating Stable Support Improves Posture Ergonomics Keeps Device Cool online in Pakistan from ASM VEO. High Q
 Description: High Quality Durable Laptop Stand Big Size Non Rotating Stable Support Improves Posture Ergonomics Keeps Device Cool.
-Regular Price: 3323
-Sale Price: 3323
+Wholesale Price: 3323
+Regular Price: 5620
+Sale Price: 4500
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

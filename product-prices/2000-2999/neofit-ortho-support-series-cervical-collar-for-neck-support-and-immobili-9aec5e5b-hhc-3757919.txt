@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Neofit Ortho Support Series Cervical Collar For Neck Support And Immobilization | Free Size
 Product ID: hhc-3757919
 SKU: hhc-3757919
@@ -7,11 +8,16 @@ Slug: neofit-ortho-support-series-cervical-collar-for-neck-support-and-immobi-9a
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/02aad86215cad330c8d85f9720b42b61.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/02aad86215cad330c8d85f9720b42b61.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/ee8c33eda6c9b6d1b0db0fec3228a631.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/abe3721db7d7d9f3cb0fbf449e82eeb3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/85d3d9bf54352a0d92b56994bd835409.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/42bca3dab0b6dfcefbd4b0ec4c0c7921.jpeg
 Meta Title: Neofit Ortho Support Series Cervical Collar For Neck Support And Imm
 Meta Description: Buy Neofit Ortho Support Series Cervical Collar For Neck Support And Immobilization | Free Size online in Pakistan from ASM VEO. Neofit Cervical Collar From The
 Description: Neofit Cervical Collar From The Ortho Support Series Provides Neck Support And Immobilization With Comfortable Free Size Fit
-Regular Price: 1281
-Sale Price: 1281
+Wholesale Price: 1231
+Regular Price: 2260
+Sale Price: 1808
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: UDY (Ulric De Varens) Paris Perfume For Men Eau de toilette 100ml
 Product ID: hhc-2283433
 SKU: hhc-2283433
@@ -7,11 +8,16 @@ Slug: udy-ulric-de-varens-paris-perfume-for-men-eau-de-toilette-100ml-hhc-228343
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/s-l1600-3.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/s-l1600-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/s-l1600-2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/s-l1600-1-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/ForMen.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/UDV-ForMen-100ML.webp
 Meta Title: UDY (Ulric De Varens) Paris Perfume For Men Eau de toilette 100ml |
 Meta Description: Buy UDY (Ulric De Varens) Paris Perfume For Men Eau de toilette 100ml online in Pakistan from ASM VEO. UDY (Ulric De Varens) Paris Perfume For Men Eau de toilet
 Description: UDY (Ulric De Varens) Paris Perfume For Men Eau de toilette 100ml
-Regular Price: 972
-Sale Price: 972
+Wholesale Price: 550
+Regular Price: 1280
+Sale Price: 1022
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

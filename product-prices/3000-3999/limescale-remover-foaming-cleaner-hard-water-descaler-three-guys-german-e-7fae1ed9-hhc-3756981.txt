@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Limescale Remover – Foaming Cleaner & Hard Water Descaler | THREE GUYS - German Engineered (250)
 Product ID: hhc-3756981
 SKU: hhc-3756981
@@ -7,11 +8,16 @@ Slug: limescale-remover-foaming-cleaner-hard-water-descaler-three-guys-german-7f
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/f98ba8b805a8406358524db532861d8e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/f98ba8b805a8406358524db532861d8e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/45d3c8acffd1f5ee401df2d40510f6a2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/862cb20e93199a1b2d2ad56189327f12.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/fa9903524d3f2e0008ae80f2a9d3c9fe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/aa61bb46c30d5c6ddcde7b0e5cb5ac8f.jpeg
 Meta Title: Limescale Remover – Foaming Cleaner & Hard Water Descaler | THREE GU
 Meta Description: Buy Limescale Remover – Foaming Cleaner & Hard Water Descaler | THREE GUYS - German Engineered (250) online in Pakistan from ASM VEO. Powerful foaming limescale
 Description: Powerful foaming limescale remover that quickly dissolves hard water stains, mineral deposits, and soap scum from surfaces like taps, sinks, tiles, and showers. Leaves surfaces clean, shiny, and scale-free with an easy-to-use spray formula.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

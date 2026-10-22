@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sum Art Silque Shampoo Providing Gentle Care Nourishing Formula Strengthening Quality Everyday Hair Support - 180ML
 Product ID: hhc-3755375
 SKU: hhc-3755375
@@ -7,11 +8,16 @@ Slug: sum-art-silque-shampoo-providing-gentle-care-nourishing-formula-strengt-df
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/874e5ff8876994e398027408ae22578f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/874e5ff8876994e398027408ae22578f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/b7c4aaa72de2534fb4aa4bf5408b945d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/83ab7124be0aba52f11ba7eae375154a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/2f6dfd5d9e4713894a9888b461aff583.jpeg
 Meta Title: Sum Art Silque Shampoo Providing Gentle Care Nourishing Formula Stre
 Meta Description: Buy Sum Art Silque Shampoo Providing Gentle Care Nourishing Formula Strengthening Quality Everyday Hair Support - 180ML online in Pakistan from ASM VEO. Sum Art
 Description: Sum Art Silque Shampoo Offering Gentle Care Nourishing Formula Strengthening Quality Reliable Performance Smooth Texture And Daily Hair Support
-Regular Price: 608
-Sale Price: 608
+Wholesale Price: 558
+Regular Price: 1090
+Sale Price: 869
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

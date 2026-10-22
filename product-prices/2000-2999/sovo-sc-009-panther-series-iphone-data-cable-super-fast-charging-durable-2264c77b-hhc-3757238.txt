@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SOVO SC-009 Panther Series iPhone Data Cable – Super Fast Charging & Durable Silica Gel Build
 Product ID: hhc-3757238
 SKU: hhc-3757238
@@ -7,11 +8,16 @@ Slug: sovo-sc-009-panther-series-iphone-data-cable-super-fast-charging-durabl-22
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/973acace3e30fcfa00567ae12c9de33a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/973acace3e30fcfa00567ae12c9de33a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/c3c67c8fb2cc5e7e9f3fb46313c750ed.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/3931493581b0076230640a9478c5330d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/09e5c6512a0ff6a0220e295d08703207.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/a552ba7e3435db32db312f6befdd9177.png
 Meta Title: SOVO SC-009 Panther Series iPhone Data Cable – Super Fast Charging &
 Meta Description: Buy SOVO SC-009 Panther Series iPhone Data Cable – Super Fast Charging & Durable Silica Gel Build online in Pakistan from ASM VEO. The SOVO SC-009 Panther Serie
 Description: The SOVO SC-009 Panther Series iPhone cable delivers fast charging and efficient data transfer with a durable silica gel design for long-lasting performance.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

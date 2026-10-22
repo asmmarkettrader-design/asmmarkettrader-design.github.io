@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Purito Mighty Bamboo Panthenol Cream 100ml – Deep Hydration, Skin Barrier Repair & Soothing Moisturizer
 Product ID: hhc-3754195
 SKU: hhc-3754195
@@ -7,11 +8,16 @@ Slug: purito-mighty-bamboo-panthenol-cream-100ml-deep-hydration-skin-barrier-ca0
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/02df0751aed1ac8782b61ffcd622a1cc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/02df0751aed1ac8782b61ffcd622a1cc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/4103e00d417c19248e27eed607d287a0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/9c77aec8f4f5c863b2a637cdfb49749a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/2909c02da51bc71ab0626fa8a8a95c17.jpeg
 Meta Title: Purito Mighty Bamboo Panthenol Cream 100ml – Deep Hydration, Skin Ba
 Meta Description: Buy Purito Mighty Bamboo Panthenol Cream 100ml – Deep Hydration, Skin Barrier Repair & Soothing Moisturizer online in Pakistan from ASM VEO. A gentle, hydrating
 Description: A gentle, hydrating, and skin-repairing cream enriched with Bamboo Extract and Panthenol to strengthen the skin barrier, calm irritation, and deliver long-lasting moisture for soft, healthy, glowing skin.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

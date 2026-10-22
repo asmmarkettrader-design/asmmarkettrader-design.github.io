@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AVA Skin Care Whitening Fade Spots Serum - Advanced Brightening Treatment To Reduce Dark Spots Uneven Skin Tone And Promote Radiant Complexion - 30ML
 Product ID: hhc-3761760
 SKU: hhc-3761760
@@ -7,11 +8,16 @@ Slug: ava-skin-care-whitening-fade-spots-serum-advanced-brightening-treatment-ea
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/ff58b73a2d572f3a7fee6d90be1ec7e3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/ff58b73a2d572f3a7fee6d90be1ec7e3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/4e895cde71191503606f4ff36de4f694.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/785380416c9a6a11c2e8b4b0f3bb8f8c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/5e740f17acc3c627cc1f677a5f66b759.jpeg
 Meta Title: AVA Skin Care Whitening Fade Spots Serum - Advanced Brightening Trea
 Meta Description: Buy AVA Skin Care Whitening Fade Spots Serum - Advanced Brightening Treatment To Reduce Dark Spots Uneven Skin Tone And Promote Radiant Complexion - 30ML online
 Description: The AVA Skin Care Whitening Fade Spots Serum Is A Potent Brightening Treatment Formulated To Effectively Reduce Dark Spots And Improve Uneven Skin Tone.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

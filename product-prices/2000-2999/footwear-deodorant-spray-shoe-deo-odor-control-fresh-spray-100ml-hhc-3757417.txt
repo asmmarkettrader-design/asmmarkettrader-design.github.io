@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Footwear Deodorant Spray Shoe Deo Odor Control Fresh Spray (100ml)
 Product ID: hhc-3757417
 SKU: hhc-3757417
@@ -7,11 +8,16 @@ Slug: footwear-deodorant-spray-shoe-deo-odor-control-fresh-spray-100ml-hhc-37574
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/d4ec55e6f641ac53b06a7e1d86c3d645.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/d4ec55e6f641ac53b06a7e1d86c3d645.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/e7b94dc62c01d28881c8d66cf6793f60.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/fca09104f4a32df3f5163ba4c61591fa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/58d44ad779947671b6b5579cafc23add.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/3d09ac51e36107a9b55d4cb69073a8cb.jpeg
 Meta Title: Footwear Deodorant Spray Shoe Deo Odor Control Fresh Spray (100ml) |
 Meta Description: Buy Footwear Deodorant Spray Shoe Deo Odor Control Fresh Spray (100ml) online in Pakistan from ASM VEO. Footwear deodorant spray designed to eliminate shoe odor
 Description: Footwear deodorant spray designed to eliminate shoe odor and keep feet fresh with long-lasting protection.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

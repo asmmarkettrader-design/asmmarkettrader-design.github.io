@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Back Seat Coat Hanger – Keep Clothes Neat and Organized
 Product ID: hhc-3756576
 SKU: hhc-3756576
@@ -7,11 +8,16 @@ Slug: car-back-seat-coat-hanger-keep-clothes-neat-and-organized-hhc-3756576
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/dbd8cf9fb6523b485f99ea695da481e4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/dbd8cf9fb6523b485f99ea695da481e4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/eaea4d4be44a2fc808b12fb1de15dbd4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/8e5d4b85069d034df44510dab2458c6a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/86a4d4a679544d13277c809365e0b926.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/59bd15d84062172bd5cb44fb1c822779.jpeg
 Meta Title: Car Back Seat Coat Hanger – Keep Clothes Neat and Organized | Buy On
 Meta Description: Buy Car Back Seat Coat Hanger – Keep Clothes Neat and Organized online in Pakistan from ASM VEO. Easily hang coats, jackets, suits, and dresses in your car to k
 Description: Easily hang coats, jackets, suits, and dresses in your car to keep them wrinkle-free and organized. Quick installation on any car headrest, perfect for commuting and travel.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

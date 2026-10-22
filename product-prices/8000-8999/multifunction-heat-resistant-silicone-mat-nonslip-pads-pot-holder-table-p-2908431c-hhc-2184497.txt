@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multifunction Heat Resistant Silicone Mat  Nonslip Pads Pot Holder Table Place mat (random color)
 Product ID: hhc-2184497
 SKU: hhc-2184497
@@ -7,11 +8,16 @@ Slug: multifunction-heat-resistant-silicone-mat-nonslip-pads-pot-holder-table-29
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-9.14.34-PM_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-9.14.34-PM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-9.14.35-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-9.14.34-PM-1.jpeg
 Meta Title: Multifunction Heat Resistant Silicone Mat Nonslip Pads Pot Holder Ta
 Meta Description: Buy Multifunction Heat Resistant Silicone Mat Nonslip Pads Pot Holder Table Place mat (random color) online in Pakistan from ASM VEO. Made of high duty silione
 Description: Made of high duty silione material, it is non-slip and resistant to high and low temperature Place the hot dishes, hot pot or drinks, Protect the table surface.. Stylish appearance ( Table Decoration ) and exquisite workmanship Non-toxic and tasteless Soft and flexiable, unbreakable and can be use for a long time Easy to clean and dishwasher safe
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

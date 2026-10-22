@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 14 in 1 Makeup Deal  Professional Makeup Deal, Make-up Fixer  Foundation
 Product ID: hhc-2526605
 SKU: hhc-2526605
@@ -7,11 +8,16 @@ Slug: 14-in-1-makeup-deal-professional-makeup-deal-make-up-fixer-foundation-hhc-
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-27-at-2.58.18-PM_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-27-at-2.58.18-PM_cleanup.png
 Meta Title: 14 in 1 Makeup Deal Professional Makeup Deal, Make-up Fixer Foundati
 Meta Description: Buy 14 in 1 Makeup Deal Professional Makeup Deal, Make-up Fixer Foundation online in Pakistan from ASM VEO. Package includesMake-up Fixer1 x Concealer 1 x Lip P
 Description: Package includesMake-up Fixer1 x Concealer 1 x Lip Pencil 2 1 x Beauty Blender 1 x Foundation 1 x 3 in 1 Pen 1 x Eyeliner 1 x Kajal 1 x Lipgloss 1 x Hàndi Base 1 x Lose powder 1 x Primer 1 x Mascara
-Regular Price: 1812
-Sale Price: 1812
+Wholesale Price: 1812
+Regular Price: 3280
+Sale Price: 2626
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

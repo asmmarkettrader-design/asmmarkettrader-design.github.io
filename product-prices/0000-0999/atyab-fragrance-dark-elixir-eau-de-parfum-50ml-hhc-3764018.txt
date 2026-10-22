@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ATYAB Fragrance Dark Elixir Eau De Parfum (50ml)
 Product ID: hhc-3764018
 SKU: hhc-3764018
 Slug: atyab-fragrance-dark-elixir-eau-de-parfum-50ml-hhc-3764018
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Perfumes
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/1f9a4209219e87d1688df94358d852c8.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/1f9a4209219e87d1688df94358d852c8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/49b4a2a5cf7976d8c82e728b50c96062.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/11ce267526a56575fedef33d53f99875.png
 Meta Title: ATYAB Fragrance Dark Elixir Eau De Parfum (50ml) | Buy Online in Pak
 Meta Description: Buy ATYAB Fragrance Dark Elixir Eau De Parfum (50ml) online in Pakistan from ASM VEO. Discover Dark Elixir, a premium fragrance by ATYAB Fragrance, created for
 Description: Discover Dark Elixir, a premium fragrance by ATYAB Fragrance, created for those who embrace confidence, intensity and sophistication.
-Regular Price: 5193
+Wholesale Price: 3709
+Regular Price: 6490
 Sale Price: 5193
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

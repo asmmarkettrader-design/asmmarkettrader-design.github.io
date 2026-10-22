@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Smart Percussion Massage Gun – High-Intensity Deep Tissue Muscle Massager With 4 Interchangeable Heads
 Product ID: hhc-3756141
 SKU: hhc-3756141
@@ -7,11 +8,16 @@ Slug: professional-smart-percussion-massage-gun-high-intensity-deep-tissue-mu-dc
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/ac17815e4b1d7ad0e5eff16a22abb59e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/ac17815e4b1d7ad0e5eff16a22abb59e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/b5ac03d8a36f3327f5e1b28d27ab62b4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/a8b69c8209f4ef3a2c808ff99bc75e9d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/90b4f130b204b0500e0fdc2b4bcfb4c1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/154b61daa960b89a8b42394c2c6c0f2b.webp
 Meta Title: Professional Smart Percussion Massage Gun – High-Intensity Deep Tiss
 Meta Description: Buy Professional Smart Percussion Massage Gun – High-Intensity Deep Tissue Muscle Massager With 4 Interchangeable Heads online in Pakistan from ASM VEO. Profess
 Description: Professional Smart Percussion Massage Gun Designed For Deep Tissue Muscle Relief, Recovery, And Pain Reduction.
-Regular Price: 1855
-Sale Price: 1855
+Wholesale Price: 1855
+Regular Price: 3360
+Sale Price: 2684
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: L’Oréal Paris True Match Super-Blendable Foundation – Natural Finish Liquid Makeup
 Product ID: hhc-3754109
 SKU: hhc-3754109
@@ -7,11 +8,16 @@ Slug: l-or-al-paris-true-match-super-blendable-foundation-natural-finish-liquid-
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/02973c009f76b585fd73496a7ab722ae.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/02973c009f76b585fd73496a7ab722ae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/404993a2d1d4d5bbe8a291d27cfa5a08.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/b2b339953d308dc11224867f5e548325.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/e5f401877e71acedc49b282195c71805.png
 Meta Title: L’Oréal Paris True Match Super-Blendable Foundation – Natural Finish
 Meta Description: Buy L’Oréal Paris True Match Super-Blendable Foundation – Natural Finish Liquid Makeup online in Pakistan from ASM VEO. L’Oréal Paris True Match Foundation deli
 Description: L’Oréal Paris True Match Foundation delivers a super-blendable, natural finish that perfectly matches your skin tone and texture. Lightweight, smooth, and ideal for everyday flawless coverage.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

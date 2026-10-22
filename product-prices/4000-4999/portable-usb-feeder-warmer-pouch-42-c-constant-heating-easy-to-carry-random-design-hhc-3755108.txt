@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable USB Feeder Warmer Pouch | 42°C Constant Heating | Easy‑to‑Carry | Random Design
 Product ID: hhc-3755108
 SKU: hhc-3755108
@@ -7,11 +8,16 @@ Slug: portable-usb-feeder-warmer-pouch-42-c-constant-heating-easy-to-carry-ra-01
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/bf4dccdc8671012ee53a281b5c8d1704.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/bf4dccdc8671012ee53a281b5c8d1704.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/be376eea19775741218b8b7f40356e50.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/519a13f7be3686783efd00e1ec6257c2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/72cebd564192c7b2414ebf34b9f1e601.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/592221d80d76fedb8df2eb1f629f72bc.jpg
 Meta Title: Portable USB Feeder Warmer Pouch | 42°C Constant Heating | Easy‑to‑C
 Meta Description: Buy Portable USB Feeder Warmer Pouch | 42°C Constant Heating | Easy‑to‑Carry | Random Design online in Pakistan from ASM VEO. Portable USB feeder warmer pouch w
 Description: Portable USB feeder warmer pouch with 42°C constant temperature cycle. Easy‑to‑carry design, random style.
-Regular Price: 1013
-Sale Price: 1013
+Wholesale Price: 963
+Regular Price: 1820
+Sale Price: 1456
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

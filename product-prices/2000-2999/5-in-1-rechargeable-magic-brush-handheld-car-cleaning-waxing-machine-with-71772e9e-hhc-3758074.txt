@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 in 1 Rechargeable Magic Brush – Handheld Car Cleaning & Waxing Machine with Multiple Brush Heads
 Product ID: hhc-3758074
 SKU: hhc-3758074
@@ -7,11 +8,16 @@ Slug: 5-in-1-rechargeable-magic-brush-handheld-car-cleaning-waxing-machine-wi-71
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/df0c5472169298ca00fd97a71a578b24.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/df0c5472169298ca00fd97a71a578b24.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/17f861659175576f9246f1e130c10aa1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/18c6dd3de8576875b6b505fee5c808b3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/c0053f2dff76d6bf84ff4c7b4cbb7de2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/3c118f98fd18337d90d565a55783fb23.jpeg
 Meta Title: 5 in 1 Rechargeable Magic Brush – Handheld Car Cleaning & Waxing Mac
 Meta Description: Buy 5 in 1 Rechargeable Magic Brush – Handheld Car Cleaning & Waxing Machine with Multiple Brush Heads online in Pakistan from ASM VEO. Make car cleaning easy w
 Description: Make car cleaning easy with 5 in 1 Rechargeable Magic Brush. Powerful handheld tool with multiple heads for washing, polishing, and waxing.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

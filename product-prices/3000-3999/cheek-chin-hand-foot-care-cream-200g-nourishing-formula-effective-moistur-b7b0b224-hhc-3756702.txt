@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cheek & Chin Hand & Foot Care Cream | 200g | Nourishing Formula | Effective Moisturizing & Everyday Skin Care
 Product ID: hhc-3756702
 SKU: hhc-3756702
@@ -7,11 +8,16 @@ Slug: cheek-chin-hand-foot-care-cream-200g-nourishing-formula-effective-moist-b7
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/01f7efec45d9947002853377f4425fe6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/01f7efec45d9947002853377f4425fe6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/463bc18baf3e74a7daedd852b883ba78.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/433506d4706342219dd0011ed37e6466.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/62a5c5e61496f35ed3693b207755fb6b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/8c42a1835a105bc8975ff2d902f5dc19.jpeg
 Meta Title: Cheek & Chin Hand & Foot Care Cream | 200g | Nourishing Formula | Ef
 Meta Description: Buy Cheek & Chin Hand & Foot Care Cream | 200g | Nourishing Formula | Effective Moisturizing & Everyday Skin Care online in Pakistan from ASM VEO. 200g hand & f
 Description: 200g hand & foot care cream with nourishing formula. Provides effective moisturizing for soft, smooth, and healthy skin.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

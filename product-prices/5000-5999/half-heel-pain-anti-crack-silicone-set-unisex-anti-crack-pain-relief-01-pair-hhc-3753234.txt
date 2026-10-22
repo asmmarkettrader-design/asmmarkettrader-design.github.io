@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Relief - 01 Pair
 Product ID: hhc-3753234
 SKU: hhc-3753234
@@ -7,11 +8,16 @@ Slug: half-heel-pain-anti-crack-silicone-set-unisex-anti-crack-pain-relief-01-pa
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/49aeb348f3e4281028725b385f8972e7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/49aeb348f3e4281028725b385f8972e7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/05f244bdbbb6db49f4b277ba4f511fa8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/0d1b774574a913ae2801d2976387a341.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/c6d952c3c9d02768d496fa02cd539c84.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/bdffbed66280f54dfecf6a59c189e6a5.jpg
 Meta Title: Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Reli
 Meta Description: Buy Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Relief - 01 Pair online in Pakistan from ASM VEO. Half Heel Pain Anti-Crack Silicone Set – U
 Description: Half Heel Pain Anti-Crack Silicone Set – Unisex Anti-Crack Pain Relief - 01 Pair
-Regular Price: 198
-Sale Price: 198
+Wholesale Price: 148
+Regular Price: 432
+Sale Price: 282
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

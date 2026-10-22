@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Derma Roller 540 Titanium Needle (0.5mm)
 Product ID: hhc-2386116
 SKU: hhc-2386116
@@ -7,11 +8,16 @@ Slug: derma-roller-540-titanium-needle-0-5mm-hhc-2386116
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/DER-011-W7962_-_Derma_Roller_-_Micro_Titanium_Needle_Roller_-_0.5mm_s9n2-gz_1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/DER-011-W7962_-_Derma_Roller_-_Micro_Titanium_Needle_Roller_-_0.5mm_s9n2-gz_1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/1-32_8707e338-a85e-4d6a-8fa4-3fcab25c7247-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/Skin-Therapy-540-Micro-Needle-Derma-Roller-in-Pakistan-1-500x554-1.jpg
 Meta Title: Derma Roller 540 Titanium Needle (0.5mm) | Buy Online in Pakistan
 Meta Description: Buy Derma Roller 540 Titanium Needle (0.5mm) online in Pakistan from ASM VEO. Derma Roller 540 Titanium Needle (0.5mm) Cash on Delivery, Rs 180 standard deliver
 Description: Derma Roller 540 Titanium Needle (0.5mm)
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

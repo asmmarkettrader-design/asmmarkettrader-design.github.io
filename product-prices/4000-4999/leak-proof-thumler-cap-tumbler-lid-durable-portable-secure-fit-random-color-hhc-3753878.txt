@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Leak-Proof Thumler Cap / Tumbler Lid – Durable, Portable, Secure Fit – Random Color
 Product ID: hhc-3753878
 SKU: hhc-3753878
@@ -7,11 +8,16 @@ Slug: leak-proof-thumler-cap-tumbler-lid-durable-portable-secure-fit-random-colo
 Category: Kitchen & Dining
 Subcategory: Kitchen Storage
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/3c1c0629902a57eadaada348006cce06.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/3c1c0629902a57eadaada348006cce06.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/70a433f68c7bee663229b238dfb2b9ce.jpeg
 Meta Title: Leak-Proof Thumler Cap / Tumbler Lid – Durable, Portable, Secure Fit
 Meta Description: Buy Leak-Proof Thumler Cap / Tumbler Lid – Durable, Portable, Secure Fit – Random Color online in Pakistan from ASM VEO. Leak-proof tumbler cap designed for a s
 Description: Leak-proof tumbler cap designed for a secure fit, preventing spills and maintaining hygiene. Available in random colors.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

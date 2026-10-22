@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vacuum Cleaner Household Powerful  2 In 1 Dual Mode Cordless Handheld Wireless Handy Portable light weight Vacuum Cleaner
 Product ID: hhc-1319884
 SKU: hhc-1319884
@@ -7,11 +8,16 @@ Slug: vacuum-cleaner-household-powerful-2-in-1-dual-mode-cordless-handheld-wi-cf
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/ea054c0d2a9d368a1b52664a645f426c.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/ea054c0d2a9d368a1b52664a645f426c.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-09-at-7.51.27-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-09-at-7.51.04-PM-1.jpeg
 Meta Title: Vacuum Cleaner Household Powerful 2 In 1 Dual Mode Cordless Handheld
 Meta Description: Buy Vacuum Cleaner Household Powerful 2 In 1 Dual Mode Cordless Handheld Wireless Handy Portable light weight Vacuum Cleaner online in Pakistan from ASM VEO. 2
 Description: 2 in 1 portable vacuum cleaner 150 watt Powerful 2 attachments Easy usage Portable One of the critical features is the suction power, determining the vacuum's ability to lift dirt and debris from different surfaces. This vacuum cleaners often feature adjustable height settings to accommodate various carpet heights and floor types. Versatile enough to clean various surfaces, including carpets, hardwood floors, tiles, and upholstery, providing an all-in-one cleaning solution.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

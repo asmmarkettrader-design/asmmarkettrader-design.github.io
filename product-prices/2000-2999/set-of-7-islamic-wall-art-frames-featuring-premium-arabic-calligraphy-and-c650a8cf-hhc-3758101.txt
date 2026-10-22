@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 7 Islamic Wall Art Frames Featuring Premium Arabic Calligraphy and Quranic Verses Elegant Gold and Turquoise Minimalist Home Gallery Wall Decor With Double Size Tape
 Product ID: hhc-3758101
 SKU: hhc-3758101
@@ -7,11 +8,16 @@ Slug: set-of-7-islamic-wall-art-frames-featuring-premium-arabic-calligraphy-a-c6
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/2496a6b560421ca10c6a6bf6e55f5eee.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/2496a6b560421ca10c6a6bf6e55f5eee.jpeg
 Meta Title: Set of 7 Islamic Wall Art Frames Featuring Premium Arabic Calligraph
 Meta Description: Buy Set of 7 Islamic Wall Art Frames Featuring Premium Arabic Calligraphy and Quranic Verses Elegant Gold and Turquoise Minimalist Home Gallery Wall Decor With
 Description: Elevate your home with this premium 7-piece Islamic Gallery Wall Set. Featuring one 12x16, three 8x11, and three 5x7 inch frames, it showcases elegant gold and turquoise Arabic calligraphy. These high-definition prints create a sophisticated and peaceful spiritual atmosphere in any modern interior.
-Regular Price: 1203
-Sale Price: 1203
+Wholesale Price: 1153
+Regular Price: 2120
+Sale Price: 1697
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

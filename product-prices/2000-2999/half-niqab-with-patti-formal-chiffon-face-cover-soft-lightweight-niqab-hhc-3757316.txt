@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Half Niqab with Patti – Formal Chiffon Face Cover Soft Lightweight Niqab
 Product ID: hhc-3757316
 SKU: hhc-3757316
@@ -7,11 +8,16 @@ Slug: half-niqab-with-patti-formal-chiffon-face-cover-soft-lightweight-niqab-hhc
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/6e03dd24d88b00cacbc520b347ebb1e1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/6e03dd24d88b00cacbc520b347ebb1e1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/d56f30febe306617ef92418840d64995.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/31e1af308d9d7ad4b2f76336534a00bb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/c9fb2260360be771f9232daf6fd84055.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/02f99852fc13a3cd72939409ade3b6b7.jpeg
 Meta Title: Half Niqab with Patti – Formal Chiffon Face Cover Soft Lightweight N
 Meta Description: Buy Half Niqab with Patti – Formal Chiffon Face Cover Soft Lightweight Niqab online in Pakistan from ASM VEO. Comfortable half niqab made from formal chiffon fa
 Description: Comfortable half niqab made from formal chiffon fabric with patti style for a secure fit. Lightweight and breathable for daily wear.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

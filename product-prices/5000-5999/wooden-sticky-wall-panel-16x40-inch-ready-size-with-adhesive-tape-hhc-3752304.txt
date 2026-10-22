@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Sticky Wall Panel – 16x40 Inch Ready Size with Adhesive Tape
 Product ID: hhc-3752304
 SKU: hhc-3752304
@@ -7,11 +8,16 @@ Slug: wooden-sticky-wall-panel-16x40-inch-ready-size-with-adhesive-tape-hhc-3752
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Wooden Sticky Wall Panel – 16x40 Inch Ready Size with Adhesive Tape
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/33dc4218cc2f896b3fc470bd3d31a040.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/33dc4218cc2f896b3fc470bd3d31a040.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/f305a63e926269948169f6572dfc1430.jpeg
+Meta Title: Wooden Sticky Wall Panel – 16x40 Inch Ready Size with Adhesive Tape 
 Meta Description: Buy Wooden Sticky Wall Panel – 16x40 Inch Ready Size with Adhesive Tape online in Pakistan from ASM VEO. Upgrade your space with these 16x40 inch ready-size woo
 Description: Upgrade your space with these 16x40 inch ready-size wooden sticky wall tiles. Designed for quick and hassle-free installation, each tile comes with strong sticky tape included, so no extra tools or glue are required. The high-quality wooden finish adds a modern and natural touch to your walls, making
-Regular Price: 980
-Sale Price: 980
+Wholesale Price: 930
+Regular Price: 1760
+Sale Price: 1408
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

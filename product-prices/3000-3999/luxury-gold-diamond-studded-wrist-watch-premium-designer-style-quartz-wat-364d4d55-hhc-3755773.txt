@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury Gold Diamond-Studded Wrist Watch – Premium Designer Style Quartz Watch for Men & Women (Without Box)
 Product ID: hhc-3755773
 SKU: hhc-3755773
@@ -7,11 +8,16 @@ Slug: luxury-gold-diamond-studded-wrist-watch-premium-designer-style-quartz-w-36
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/5026db7422f342f4ee137186801d7119.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/5026db7422f342f4ee137186801d7119.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/523fe98b2565d4c14d25dcbcf626199d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/afa76801f2e157ed448798490700d7c6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/08680403d68c693aee20622137f775ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/a5fb648e9122bcc2d97d14ead627c08b.jpeg
 Meta Title: Luxury Gold Diamond-Studded Wrist Watch – Premium Designer Style Qua
 Meta Description: Buy Luxury Gold Diamond-Studded Wrist Watch – Premium Designer Style Quartz Watch for Men & Women (Without Box) online in Pakistan from ASM VEO. Elevate your st
 Description: Elevate your style with this stunning luxury gold wrist watch, beautifully adorned with sparkling crystal stones and a premium metal strap. Perfect for parties, weddings, and daily elegance.
-Regular Price: 3288
-Sale Price: 3288
+Wholesale Price: 3288
+Regular Price: 5570
+Sale Price: 4454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

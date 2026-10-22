@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HAQKALI Professional Care Vitamin C & Collagen Moisturizing Face Mask - Restoring, Toning, and Brightening (pack of 10)
 Product ID: hhc-3754339
 SKU: hhc-3754339
@@ -7,11 +8,16 @@ Slug: haqkali-professional-care-vitamin-c-collagen-moisturizing-face-mask-res-89
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/83b4416738fb314909d6ad5861416f4f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/83b4416738fb314909d6ad5861416f4f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/af6fb340d9cf10f48b6cf902384f42d2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/93c1fb326ead9c94e53a109391c3ce20.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/617938570e1d7c91d6527ed98e9a8807.jpeg
 Meta Title: HAQKALI Professional Care Vitamin C & Collagen Moisturizing Face Mas
 Meta Description: Buy HAQKALI Professional Care Vitamin C & Collagen Moisturizing Face Mask - Restoring, Toning, and Brightening (pack of 10) online in Pakistan from ASM VEO. The
 Description: The HAQKALI Vitamin C & Collagen Face Mask is a moisturizing sheet mask designed for deep hydration and skin revitalization. Infused with potent Vitamin C for brightening and Collagen for elasticity, this formula works to restore, tone, and significantly improve skin dryness, leaving your complexion
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

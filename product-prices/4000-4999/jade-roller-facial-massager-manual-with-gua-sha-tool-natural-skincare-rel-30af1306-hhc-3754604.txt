@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Jade Roller Facial Massager | Manual | With Gua Sha Tool | Natural Skincare | Relax & Refresh
 Product ID: hhc-3754604
 SKU: hhc-3754604
@@ -7,11 +8,16 @@ Slug: jade-roller-facial-massager-manual-with-gua-sha-tool-natural-skincare-r-30
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/70b599809d40bb228a479b1a480428b2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/70b599809d40bb228a479b1a480428b2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/88865b33a7938833a77d1cedd0480dd7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/d6ca286c9e719c97168b186bca24aaa3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/16fa05b5b98a7cb09bee15400f18b803.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/568cf7c5f32eed450260deff23be608b.jpg
 Meta Title: Jade Roller Facial Massager | Manual | With Gua Sha Tool | Natural S
 Meta Description: Buy Jade Roller Facial Massager | Manual | With Gua Sha Tool | Natural Skincare | Relax & Refresh online in Pakistan from ASM VEO. Jade Roller facial massager w
 Description: Jade Roller facial massager with Gua Sha tool, manual skincare set for relaxation and refreshing glow
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

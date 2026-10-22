@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Premium Wooden Wall Art Photo Tile Frames (8×11 Inches) – Spiritual Home Décor
 Product ID: hhc-3754951
 SKU: hhc-3754951
@@ -7,11 +8,16 @@ Slug: set-of-3-premium-wooden-wall-art-photo-tile-frames-8-11-inches-spiritua-8f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/f4e2c25e634afa2fa21b6f4c4cd452e7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/f4e2c25e634afa2fa21b6f4c4cd452e7.jpeg
 Meta Title: Set of 3 Premium Wooden Wall Art Photo Tile Frames (8×11 Inches) – S
 Meta Description: Buy Set of 3 Premium Wooden Wall Art Photo Tile Frames (8×11 Inches) – Spiritual Home Décor online in Pakistan from ASM VEO. Enhance your living space with this
 Description: Enhance your living space with this elegant Set of 3 Wooden Wall Art Photo Tile Frames, crafted to bring a calm, spiritual, and modern vibe to your home or office.
-Regular Price: 473
-Sale Price: 473
+Wholesale Price: 423
+Regular Price: 870
+Sale Price: 694
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

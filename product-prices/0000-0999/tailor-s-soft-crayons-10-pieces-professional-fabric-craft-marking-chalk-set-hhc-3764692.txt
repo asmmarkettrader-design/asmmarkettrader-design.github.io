@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tailor's Soft Crayons – 10 Pieces Professional Fabric craft Marking Chalk Set
 Product ID: hhc-3764692
 SKU: hhc-3764692
@@ -7,11 +8,16 @@ Slug: tailor-s-soft-crayons-10-pieces-professional-fabric-craft-marking-chalk-se
 Category: Tools & DIY
 Subcategory: Other
 Brand: ASM VEO
-Meta Title: Tailor's Soft Crayons – 10 Pieces Professional Fabric craft Marking
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/48567ef86447e60415efc2d724d24fb1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/48567ef86447e60415efc2d724d24fb1.jpg
+Meta Title: Tailor's Soft Crayons – 10 Pieces Professional Fabric craft Marking 
 Meta Description: Buy Tailor's Soft Crayons – 10 Pieces Professional Fabric craft Marking Chalk Set online in Pakistan from ASM VEO. Achieve precise, clean fabric markings with t
 Description: Achieve precise, clean fabric markings with the Tailor's Soft Crayons 10-Piece Set. Formulated with a soft wax base, these smooth-gliding marking crayons leave clear, visible lines on a variety of fabrics without dragging or snagging, making them an essential tool for tailors, dressmakers DIY crafter
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

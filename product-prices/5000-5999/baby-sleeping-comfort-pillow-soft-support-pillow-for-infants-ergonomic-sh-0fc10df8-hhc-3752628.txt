@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Baby Sleeping Comfort Pillow – Soft Support Pillow For Infants – Ergonomic Shape For Head, Neck And Back – Breathable And Washable Fabric
 Product ID: hhc-3752628
 SKU: hhc-3752628
@@ -7,11 +8,16 @@ Slug: baby-sleeping-comfort-pillow-soft-support-pillow-for-infants-ergonomic-0fc
 Category: Bedding & Linen
 Subcategory: Pillows & Cushions
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/384a3fcafc038b9e4d1d7840d804c44c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/384a3fcafc038b9e4d1d7840d804c44c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/ec63e41e23fccffc62d5143be74624f7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/c120c11d3b2ff66bd4a2064f61eb720b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/2e5590aff9c0fbecc126e46367c61fd5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/cdd4af5f974c767d3341f80726af7a0c.png
 Meta Title: Baby Sleeping Comfort Pillow – Soft Support Pillow For Infants – Erg
 Meta Description: Buy Baby Sleeping Comfort Pillow – Soft Support Pillow For Infants – Ergonomic Shape For Head, Neck And Back – Breathable And Washable Fabric online in Pakistan
 Description: Soft And Comfortable Baby Sleeping Pillow Designed To Provide Head, Neck And Back Support For Infants. Made With Breathable, Washable Fabric For Safe Sleep.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

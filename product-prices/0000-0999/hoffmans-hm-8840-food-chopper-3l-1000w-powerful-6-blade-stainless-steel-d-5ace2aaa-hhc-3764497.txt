@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hoffmans HM 8840 Food Chopper 3L 1000W Powerful 6 Blade Stainless Steel Design Efficient Kitchen Tool For Quick And Easy Food Preparation
 Product ID: hhc-3764497
 SKU: hhc-3764497
@@ -7,11 +8,16 @@ Slug: hoffmans-hm-8840-food-chopper-3l-1000w-powerful-6-blade-stainless-steel-5a
 Category: Kitchen & Dining
 Subcategory: Kitchen Storage
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/7ef21e1771cda527714bafb94fca6569.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/7ef21e1771cda527714bafb94fca6569.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/fe17602928098d7594b9efdd856eb1f5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/cf8ca198e4694638d44f818122469573.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/145893d2017b46ad1918c2801e13af62.jpeg
 Meta Title: Hoffmans HM 8840 Food Chopper 3L 1000W Powerful 6 Blade Stainless St
 Meta Description: Buy Hoffmans HM 8840 Food Chopper 3L 1000W Powerful 6 Blade Stainless Steel Design Efficient Kitchen Tool For Quick And Easy Food Preparation online in Pakistan
 Description: Hoffmans HM 8840 Food Chopper 3L 1000W Powerful 6 Blade Stainless Steel Design Efficient Kitchen Tool For Quick And Easy Food Preparation.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

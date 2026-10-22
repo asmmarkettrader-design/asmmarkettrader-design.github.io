@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 In 1 Multifunctional Metal Keychain Stainless Steel Travel Tool With Good Finishing
 Product ID: hhc-3757274
 SKU: hhc-3757274
@@ -7,11 +8,16 @@ Slug: 7-in-1-multifunctional-metal-keychain-stainless-steel-travel-tool-with-e50
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/5730a746d1ca0853d34bd655860c4f15.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/5730a746d1ca0853d34bd655860c4f15.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/a421b0122ba6b939e4931eeed33c93d4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/f45f4bd69a9f800807d5fdf6265a8ff0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/dc73eefa3b5da190a729dd1f661d30d7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/474ebc7f988549d4ff7c491f5bf28ee3.jpeg
 Meta Title: 7 In 1 Multifunctional Metal Keychain Stainless Steel Travel Tool Wi
 Meta Description: Buy 7 In 1 Multifunctional Metal Keychain Stainless Steel Travel Tool With Good Finishing online in Pakistan from ASM VEO. 7 In 1 High Quality Stainless Steel M
 Description: 7 In 1 High Quality Stainless Steel Multifunctional Metal Keychain With Good Finishing Essential Tool For Travelers.
-Regular Price: 480
-Sale Price: 480
+Wholesale Price: 430
+Regular Price: 880
+Sale Price: 705
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

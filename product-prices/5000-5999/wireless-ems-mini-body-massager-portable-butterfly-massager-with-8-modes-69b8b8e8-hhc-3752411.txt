@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wireless EMS Mini Body Massager – Portable Butterfly Massager with 8 Modes for Blood Circulation & Pain Relief
 Product ID: hhc-3752411
 SKU: hhc-3752411
@@ -7,11 +8,16 @@ Slug: wireless-ems-mini-body-massager-portable-butterfly-massager-with-8-mode-69
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/31562762a3de8cbf426bfb86423261e5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/31562762a3de8cbf426bfb86423261e5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/ab15187c952e33d8b36a42d4bcc1223e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/ccdd0b79359ed537b89bb4d744ad59f2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/38e1d5aec3055103df71ea97d24e3ba5.jpeg
 Meta Title: Wireless EMS Mini Body Massager – Portable Butterfly Massager with 8
 Meta Description: Buy Wireless EMS Mini Body Massager – Portable Butterfly Massager with 8 Modes for Blood Circulation & Pain Relief online in Pakistan from ASM VEO. Compact wire
 Description: Compact wireless EMS butterfly massager with 8 adjustable modes for effective pain relief, muscle relaxation, and improved blood circulation. Portable and easy to use anytime.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

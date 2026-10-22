@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: V999 5-in-1 Ultra Fast Multi-Mode Cable | Best Quality Cable For Multiple Devices | Charging Cable | Data Cable | Mobile Phone Cable | 5 in 1 Cable
 Product ID: hhc-3361970
 SKU: hhc-3361970
@@ -7,11 +8,16 @@ Slug: v999-5-in-1-ultra-fast-multi-mode-cable-best-quality-cable-for-multiple-0d
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/drs1-658880-ispk-0223_1_200525145332348723.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/drs1-658880-ispk-0223_1_200525145332348723.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-20-at-3.30.05-PM_cleanup.png
 Meta Title: V999 5-in-1 Ultra Fast Multi-Mode Cable | Best Quality Cable For Mul
 Meta Description: Buy V999 5-in-1 Ultra Fast Multi-Mode Cable | Best Quality Cable For Multiple Devices | Charging Cable | Data Cable | Mobile Phone Cable | 5 in 1 Cable online i
 Description: V999 5-in-1 Ultra Fast Multi-Mode Cable | Best Quality Cable For Multiple Devices | Charging Cable | Data Cable | Mobile Phone Cable | 5 in 1 CableKey Features:5-in-1 Design – Supports multiple connectors for various devicesUltra-Fast Charging – Delivers efficient power to all connected devicesData Transfer Support – Stable and fast syncingHigh Compatibility – Works with Android, iPhone, and other USB-enabled devicesBest Quality Build – Durable, flexible, and travel-friendlyApplications:Charging CableData CableMobile Phone CableUniversal 5-in-1 Cable
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

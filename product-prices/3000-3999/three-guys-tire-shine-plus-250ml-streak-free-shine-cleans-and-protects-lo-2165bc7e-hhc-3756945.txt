@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Three Guys Tire Shine Plus 250ml – Streak-Free Shine Cleans And Protects Long-Lasting Wet Look Premium Tire Care Spray
 Product ID: hhc-3756945
 SKU: hhc-3756945
@@ -7,11 +8,16 @@ Slug: three-guys-tire-shine-plus-250ml-streak-free-shine-cleans-and-protects-216
 Category: Automotive
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/baa25b31b31531012b07bd8d6f401e20.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/baa25b31b31531012b07bd8d6f401e20.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/26088a9f264a71c54364b811e37ce2f9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/eba2496ad88303016d5d2135f6a765e9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/5bc9f291072f024f91b90e3a8765b61f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/ece09141abe9910ae6f3672d530c0e91.jpg
 Meta Title: Three Guys Tire Shine Plus 250ml – Streak-Free Shine Cleans And Prot
 Meta Description: Buy Three Guys Tire Shine Plus 250ml – Streak-Free Shine Cleans And Protects Long-Lasting Wet Look Premium Tire Care Spray online in Pakistan from ASM VEO. Prem
 Description: Premium German-Engineered Tire Shine Spray That Cleans Protects And Delivers A Long-Lasting Wet Look With Streak-Free Finish.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

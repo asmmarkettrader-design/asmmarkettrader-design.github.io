@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: USB Flexible Moon & Earth Projection Light with 6 lenses
 Product ID: hhc-3764334
 SKU: hhc-3764334
@@ -7,11 +8,16 @@ Slug: usb-flexible-moon-earth-projection-light-with-6-lenses-hhc-3764334
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/17c05ece67d81781d438216898d4c497.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/17c05ece67d81781d438216898d4c497.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/23ad50c6ddc729f6aa669d76d93ac90a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/529bd952beb10bbd4622458685748599.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/1216912394d1e6aae6cf6577e280beea.jpeg
 Meta Title: USB Flexible Moon & Earth Projection Light with 6 lenses | Buy Onlin
 Meta Description: Buy USB Flexible Moon & Earth Projection Light with 6 lenses online in Pakistan from ASM VEO. USB Powered Moon/Earth Projector with 6 lenses $flexible gooseneck
 Description: USB Powered Moon/Earth Projector with 6 lenses $flexible gooseneck. Features interchangeable projection lenses (moon/earth patterns) to create a beautiful aesthetic mood in your bedroom, office, or gaming setup. Easy to plug and play via USB. Flexible arm allows for 360-degree rotation. Includes multiple projection slides.
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

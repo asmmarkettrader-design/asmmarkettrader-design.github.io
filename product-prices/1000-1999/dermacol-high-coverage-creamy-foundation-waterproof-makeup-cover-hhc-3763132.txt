@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dermacol High Coverage Creamy Foundation – Waterproof Makeup Cover
 Product ID: hhc-3763132
 SKU: hhc-3763132
@@ -7,11 +8,16 @@ Slug: dermacol-high-coverage-creamy-foundation-waterproof-makeup-cover-hhc-37631
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/4b30ed99444170eedde20f56c0d9f306.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/4b30ed99444170eedde20f56c0d9f306.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/88e8d6cca2de40a99954c9dbe53117bc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/78a2d0e83b27a62f72f8e6a60b1c1810.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/7a662585aefa14ee0616c5ed892c4857.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/02/a26da52052a33a2d98f1243289feb399.jpeg
 Meta Title: Dermacol High Coverage Creamy Foundation – Waterproof Makeup Cover |
 Meta Description: Buy Dermacol High Coverage Creamy Foundation – Waterproof Makeup Cover online in Pakistan from ASM VEO. Achieve a smooth, flawless-looking complexion with Derma
 Description: Achieve a smooth, flawless-looking complexion with Dermacol High Coverage Creamy Foundation. Its highly pigmented formula provides strong coverage and is designed for a long-lasting makeup finish.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6PCS Matte Brown Velvet Lipstick Mini Nude Makeup Lip Kit Set – Long Lasting Velvet Matte Lipsticks
 Product ID: hhc-3760868
 SKU: hhc-3760868
@@ -7,11 +8,16 @@ Slug: 6pcs-matte-brown-velvet-lipstick-mini-nude-makeup-lip-kit-set-long-last-17
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/9a5ca46cd8545029fec5f112df8f2c16.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/9a5ca46cd8545029fec5f112df8f2c16.jpeg
 Meta Title: 6PCS Matte Brown Velvet Lipstick Mini Nude Makeup Lip Kit Set – Long
 Meta Description: Buy 6PCS Matte Brown Velvet Lipstick Mini Nude Makeup Lip Kit Set – Long Lasting Velvet Matte Lipsticks online in Pakistan from ASM VEO. A beautiful 6-piece min
 Description: A beautiful 6-piece mini lipstick set featuring trendy nude and brown shades with a smooth velvet matte finish. Lightweight, long-lasting, and perfect for daily wear, parties, and special occasions.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

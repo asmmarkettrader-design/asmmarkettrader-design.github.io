@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Beevana Ultra Strength Pain Relief Cream With Bee Venom For Arthritis And Inflammation 30g
 Product ID: hhc-3757466
 SKU: hhc-3757466
@@ -7,11 +8,16 @@ Slug: beevana-ultra-strength-pain-relief-cream-with-bee-venom-for-arthritis-a-96
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/35bd6601b18409f2fe83bef47860dbd4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/35bd6601b18409f2fe83bef47860dbd4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/3aee0e51264b372ab9a0291b37bcc5fe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/5b6635792181ba83d4f60057d87573d2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/2e006d0875b91d25db8587c4edbd9a47.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/8002849df98ccee95ce031a0362a71db.jpg
 Meta Title: Beevana Ultra Strength Pain Relief Cream With Bee Venom For Arthriti
 Meta Description: Buy Beevana Ultra Strength Pain Relief Cream With Bee Venom For Arthritis And Inflammation 30g online in Pakistan from ASM VEO. Beevana Ultra Strength Pain Reli
 Description: Beevana Ultra Strength Pain Relief Cream With Bee Venom For Arthritis And Inflammation 30g.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

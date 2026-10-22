@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pair Medicated Insole for Shoes – Pain Relief, Shock Absorption, Arch Support & All-Day Comfort for Walking, Sports & Daily Wear
 Product ID: hhc-3755747
 SKU: hhc-3755747
@@ -7,11 +8,16 @@ Slug: 1-pair-medicated-insole-for-shoes-pain-relief-shock-absorption-arch-sup-7e
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/f0de933126b1fc77b23a9beae74bb706.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/f0de933126b1fc77b23a9beae74bb706.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/dc15f134dbf235f2be33a4d33d28c91d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/64eb2f199e67fcbad94da82bc2f11ba2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/145407849ec8b93ac64323e13cabbc80.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/20/9e4b93aff4eac4a56c7b03cd84494010.jpeg
 Meta Title: 1 Pair Medicated Insole for Shoes – Pain Relief, Shock Absorption, A
 Meta Description: Buy 1 Pair Medicated Insole for Shoes – Pain Relief, Shock Absorption, Arch Support & All-Day Comfort for Walking, Sports & Daily Wear online in Pakistan from A
 Description: These medicated insoles provide instant comfort, reduce foot pain, support arches, and absorb shock for all-day walking, running, and daily use.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

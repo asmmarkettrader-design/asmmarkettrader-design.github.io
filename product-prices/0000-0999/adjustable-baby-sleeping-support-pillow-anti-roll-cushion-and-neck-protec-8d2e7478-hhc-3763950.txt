@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Adjustable Baby Sleeping Support Pillow Anti Roll Cushion And Neck Protection Infant Sleep Positioner | Random Colour
 Product ID: hhc-3763950
 SKU: hhc-3763950
@@ -7,11 +8,16 @@ Slug: adjustable-baby-sleeping-support-pillow-anti-roll-cushion-and-neck-prot-8d
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/fce983100520bd1d95bf7e935ce0cc56.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/fce983100520bd1d95bf7e935ce0cc56.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/2733bc7e160fc7037ceee694eb865ad1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/774708adf7d766b5a153b2c0329f7367.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/9e2b2d154a8070b3356c045890ab0f15.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/31b572f93cddfea4b4c7e4756e3e951b.webp
 Meta Title: Adjustable Baby Sleeping Support Pillow Anti Roll Cushion And Neck P
 Meta Description: Buy Adjustable Baby Sleeping Support Pillow Anti Roll Cushion And Neck Protection Infant Sleep Positioner | Random Colour online in Pakistan from ASM VEO. Adjus
 Description: Adjustable Baby Sleeping Support Pillow Anti Roll Cushion And Neck Protection Infant Sleep Positioner | Random Colour
-Regular Price: 255
-Sale Price: 255
+Wholesale Price: 205
+Regular Price: 518
+Sale Price: 368
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

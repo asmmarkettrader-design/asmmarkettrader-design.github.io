@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Islamic Calligraphy Wall Art – MDF Wooden Phototile Frames (8x11") with Adhesive Back
 Product ID: hhc-3754682
 SKU: hhc-3754682
@@ -7,11 +8,16 @@ Slug: set-of-3-islamic-calligraphy-wall-art-mdf-wooden-phototile-frames-8x11-7d3
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 3 Islamic Calligraphy Wall Art – MDF Wooden Phototile Frames
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/fccc4b2c54e7d2c569f17c80c4098351.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/fccc4b2c54e7d2c569f17c80c4098351.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/d8e80df4d78b6e2b31d57e82081cb2b9.png
+Meta Title: Set of 3 Islamic Calligraphy Wall Art – MDF Wooden Phototile Frames 
 Meta Description: Buy Set of 3 Islamic Calligraphy Wall Art – MDF Wooden Phototile Frames (8x11") with Adhesive Back online in Pakistan from ASM VEO. Set of 3 Islamic calligraphy
 Description: Set of 3 Islamic calligraphy frames made from MDF wood, each 8x11". Includes adhesive tape for easy wall mounting. Designed to bring a spiritual touch to your space.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

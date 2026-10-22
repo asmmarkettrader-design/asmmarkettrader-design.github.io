@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 24-in-1 Portable Precision Screwdriver Set with Box Packing
 Product ID: hhc-3764916
 SKU: hhc-3764916
@@ -7,11 +8,16 @@ Slug: 24-in-1-portable-precision-screwdriver-set-with-box-packing-hhc-3764916
 Category: Tools & DIY
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/2dc7d6f2cecc7b9ff5f29278fdb76cd5.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/2dc7d6f2cecc7b9ff5f29278fdb76cd5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/1f8b7e91f39a7157fe54fc0f5967b796.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/e622f36e7d058d56a39a7cd83f8cd6f3.jpg
 Meta Title: 24-in-1 Portable Precision Screwdriver Set with Box Packing | Buy On
 Meta Description: Buy 24-in-1 Portable Precision Screwdriver Set with Box Packing online in Pakistan from ASM VEO. ackle fine repairs with the 24-in-1 Portable Precision Screwdri
 Description: ackle fine repairs with the 24-in-1 Portable Precision Screwdriver Set. Housed in a sleek, push-to-open magnetic aluminum storage case, this professional repair kit includes 24 interchangeable S2 alloy steel magnetic bits and an ergonomic handle. Ideal for repairing smartphones, laptops, eyeglasses
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

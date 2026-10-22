@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Digital Luggage Scale – LCD Display & Unit Conversion for Travel
 Product ID: hhc-3752168
 SKU: hhc-3752168
@@ -7,11 +8,16 @@ Slug: portable-digital-luggage-scale-lcd-display-unit-conversion-for-travel-hhc-
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757840793-68c68599e9773-imgi_54_8fa7eddb3b869fe68f95ba2ddb2e019b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757840793-68c68599e9773-imgi_54_8fa7eddb3b869fe68f95ba2ddb2e019b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757840791-68c68597b7fb1-imgi_53_cc116c8aacb7ba2e2784bbd5fb140da2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757840789-68c685957dae2-imgi_51_2096d596c42ce29a4e5c71fc75b73608.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757840786-68c685924038d-imgi_52_5e20c8b9f4e6dde40a7f596eddd1a695.jpg
 Meta Title: Portable Digital Luggage Scale – LCD Display & Unit Conversion for T
 Meta Description: Buy Portable Digital Luggage Scale – LCD Display & Unit Conversion for Travel online in Pakistan from ASM VEO. Travel smart with this portable digital luggage s
 Description: Travel smart with this portable digital luggage scale featuring a backlit LCD display, stainless steel hook, and unit conversion. Lightweight and easy to use, it's perfect for avoiding overweight baggage fees.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

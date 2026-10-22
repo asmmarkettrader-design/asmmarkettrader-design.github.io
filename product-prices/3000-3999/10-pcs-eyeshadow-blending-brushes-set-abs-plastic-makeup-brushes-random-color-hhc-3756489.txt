@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 Pcs Eyeshadow Blending Brushes Set Abs Plastic Makeup Brushes (Random Color)
 Product ID: hhc-3756489
 SKU: hhc-3756489
@@ -7,11 +8,16 @@ Slug: 10-pcs-eyeshadow-blending-brushes-set-abs-plastic-makeup-brushes-random-co
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/3441c25f25cc5659ef07b094deab4bd2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/3441c25f25cc5659ef07b094deab4bd2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/434889429db6f45dfa08eeb997c10202.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/b708c0dd0d32ccb5c6dda5aca6a7412e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/2281d9660e7c5246ee895e3028405d52.jpeg
 Meta Title: 10 Pcs Eyeshadow Blending Brushes Set Abs Plastic Makeup Brushes (Ra
 Meta Description: Buy 10 Pcs Eyeshadow Blending Brushes Set Abs Plastic Makeup Brushes (Random Color) online in Pakistan from ASM VEO. 10 Pcs Eyeshadow Blending Brushes Made With
 Description: 10 Pcs Eyeshadow Blending Brushes Made With Abs Plastic In Design
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

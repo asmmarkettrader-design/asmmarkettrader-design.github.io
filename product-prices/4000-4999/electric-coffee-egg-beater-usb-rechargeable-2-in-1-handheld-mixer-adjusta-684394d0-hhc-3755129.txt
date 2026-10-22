@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Coffee & Egg Beater | USB Rechargeable | 2‑in‑1 Handheld Mixer | Adjustable Speed Frother & Milk Foamer
 Product ID: hhc-3755129
 SKU: hhc-3755129
@@ -7,11 +8,16 @@ Slug: electric-coffee-egg-beater-usb-rechargeable-2-in-1-handheld-mixer-adjus-68
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/3ba3f5076bbf993185519ebd7a3769e1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/3ba3f5076bbf993185519ebd7a3769e1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/b0d2100875d81eb9a9127f3c3081b122.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/5d1560e6dcb82f2dea9675f4f904f8ad.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/cd6f84ccffeb9fc38a13a3d770198eb7.jpg
 Meta Title: Electric Coffee & Egg Beater | USB Rechargeable | 2‑in‑1 Handheld Mi
 Meta Description: Buy Electric Coffee & Egg Beater | USB Rechargeable | 2‑in‑1 Handheld Mixer | Adjustable Speed Frother & Milk Foamer online in Pakistan from ASM VEO. USB rechar
 Description: USB rechargeable handheld coffee & egg beater. 2‑in‑1 design with adjustable speed. Perfect for milk frothing, coffee, and eggs.
-Regular Price: 909
-Sale Price: 909
+Wholesale Price: 859
+Regular Price: 1630
+Sale Price: 1306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

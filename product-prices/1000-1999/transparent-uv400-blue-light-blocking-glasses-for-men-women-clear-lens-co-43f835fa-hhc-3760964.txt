@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Transparent UV400 Blue Light Blocking Glasses for Men & Women | Clear Lens Computer & Mobile Eyewear | Stylish Unisex Frame with Protective Glasses Box
 Product ID: hhc-3760964
 SKU: hhc-3760964
@@ -7,11 +8,16 @@ Slug: transparent-uv400-blue-light-blocking-glasses-for-men-women-clear-lens-43f
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/2bb2223186f0acbbc7c1e009ee1a39cf.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/2bb2223186f0acbbc7c1e009ee1a39cf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/90ece77cf083b17c4592138b21ff0b16.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/85e793b3860eee48f0db0d45586e575a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/24b1845c76e4010e228a8e931536197c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/767026399a966aa5dee647e143d20568.jpeg
 Meta Title: Transparent UV400 Blue Light Blocking Glasses for Men & Women | Clea
 Meta Description: Buy Transparent UV400 Blue Light Blocking Glasses for Men & Women | Clear Lens Computer & Mobile Eyewear | Stylish Unisex Frame with Protective Glasses Box onli
 Description: Protect your eyes while staying stylish with these UV400 blue light blocking glasses. Featuring clear lenses, a lightweight frame, and a modern transparent design, these glasses are perfect for computer, laptop, mobile, gaming, and office use. Comes with a protective glasses box and secure packaging
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

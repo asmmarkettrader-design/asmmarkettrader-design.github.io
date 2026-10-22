@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magic Hose Pipe 100 Ft (Random Color)
 Product ID: hhc-1617449
 SKU: hhc-1617449
@@ -7,11 +8,16 @@ Slug: magic-hose-pipe-100-ft-random-color-hhc-1617449
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/Magic-Hose-Pipe-copy-4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/Magic-Hose-Pipe-copy-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/Magic-Hose-Pipe-copy-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/WhatsApp-Image-2022-09-08-at-5.45.42-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-28-at-1.46.05-PM-1.jpeg
 Meta Title: Magic Hose Pipe 100 Ft (Random Color) | Buy Online in Pakistan
 Meta Description: Buy Magic Hose Pipe 100 Ft (Random Color) online in Pakistan from ASM VEO. DESCRIPTIONTwist free, tangle free, kink-freeExtremely lightweightDurable, reliable a
 Description: DESCRIPTIONTwist free, tangle free, kink-freeExtremely lightweightDurable, reliable all hoseIncludes easy release connectorsMake watering easy &amp; hassle-freeWith 8 functions spray gun and quick version connectorLength: 100ft[video width="626" height="360" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2022/02/videoplayback-1.mp4"][/video][video width="432" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2022/09/WhatsApp-Video-2022-09-08-at-5.45.43-PM.mp4"][/video]
-Regular Price: 1609
-Sale Price: 1609
+Wholesale Price: 1609
+Regular Price: 2940
+Sale Price: 2352
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

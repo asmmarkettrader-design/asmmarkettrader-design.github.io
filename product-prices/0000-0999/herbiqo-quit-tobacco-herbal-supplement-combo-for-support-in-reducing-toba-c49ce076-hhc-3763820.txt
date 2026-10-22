@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Herbiqo Quit Tobacco Herbal Supplement Combo For Support In Reducing Tobacco Cravings From Cigarettes, Paan, Gutka, Bidi And Naswar
 Product ID: hhc-3763820
 SKU: hhc-3763820
@@ -7,11 +8,16 @@ Slug: herbiqo-quit-tobacco-herbal-supplement-combo-for-support-in-reducing-to-c4
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/08f7a5b9d2d98ead06d37248a784c091.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/08f7a5b9d2d98ead06d37248a784c091.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/72660350bb45c79da23dc95448721ce1.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/ee42d88d9f8154a9fa1580a044f27728.jfif
 Meta Title: Herbiqo Quit Tobacco Herbal Supplement Combo For Support In Reducing
 Meta Description: Buy Herbiqo Quit Tobacco Herbal Supplement Combo For Support In Reducing Tobacco Cravings From Cigarettes, Paan, Gutka, Bidi And Naswar online in Pakistan from
 Description: Herbiqo Quit Tobacco Herbal Supplement Is Made With 100% Natural Ingredients And Intended To Help Reduce Tobacco Cravings And Support Those Trying To Quit Cigarettes, Paan, Gutka, Bidi Or Naswar.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Seat Belt Clip Extender Safety Lock Buckle
 Product ID: hhc-2241586
 SKU: hhc-2241586
@@ -7,11 +8,16 @@ Slug: car-seat-belt-clip-extender-safety-lock-buckle-hhc-2241586
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/61EMVZKdb2L._AC_SX569_-1-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/61EMVZKdb2L._AC_SX569_-1-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/71lrNpD4QTL._AC_SY355_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/61EMVZKdb2L._AC_SX569_-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-30-at-8.11.12-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-30-at-8.11.12-PM.jpeg
 Meta Title: Car Seat Belt Clip Extender Safety Lock Buckle | Buy Online in Pakis
 Meta Description: Buy Car Seat Belt Clip Extender Safety Lock Buckle online in Pakistan from ASM VEO. Car Seat Belt Clip Extender Safety Lock Buckle Universal seat belt clips wit
 Description: Car Seat Belt Clip Extender Safety Lock Buckle Universal seat belt clips with top quality material amazing ✅Safety of Your Car ✅Seat Belt with Push Buttons ✅Seat Belt Clips with Logo ✅Fancy Seat Belt Clip ✅Double Buckle original picture
-Regular Price: 565
-Sale Price: 565
+Wholesale Price: 515
+Regular Price: 1010
+Sale Price: 807
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

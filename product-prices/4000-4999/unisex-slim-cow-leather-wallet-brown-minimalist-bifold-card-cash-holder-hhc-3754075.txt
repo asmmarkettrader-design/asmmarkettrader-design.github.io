@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Unisex Slim Cow Leather Wallet – Brown | Minimalist Bifold Card & Cash Holder
 Product ID: hhc-3754075
 SKU: hhc-3754075
@@ -7,11 +8,16 @@ Slug: unisex-slim-cow-leather-wallet-brown-minimalist-bifold-card-cash-holder-hh
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/b029393e88c46a851038bb9c07185af9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/b029393e88c46a851038bb9c07185af9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/8ac4082112fb7e5d704f195d8dfcf633.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/c5499c5f617054e124ddf945bd98d31c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/9533ed418c4c760a9d6d6bc4db372568.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/c1321e5365a3dbd0ac2e8e233cda91ac.png
 Meta Title: Unisex Slim Cow Leather Wallet – Brown | Minimalist Bifold Card & Ca
 Meta Description: Buy Unisex Slim Cow Leather Wallet – Brown | Minimalist Bifold Card & Cash Holder online in Pakistan from ASM VEO. A sleek and minimalist unisex wallet made fro
 Description: A sleek and minimalist unisex wallet made from genuine cow leather, designed in a classic brown color. This slim bifold wallet provides practical storage while maintaining a clean, stylish look suitable for both men and women.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

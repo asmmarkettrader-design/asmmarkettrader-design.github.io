@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Buds Pro 10 Wireless Earbuds With ANC ENC Touch Controls Durable Reliable Hi Fi Stereo Sound Practical Choice For Music Calls Gaming And Travel
 Product ID: hhc-3763623
 SKU: hhc-3763623
@@ -7,11 +8,16 @@ Slug: buds-pro-10-wireless-earbuds-with-anc-enc-touch-controls-durable-reliab-26
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/6f59034c37556e050e85cc6a7d56c2da.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/6f59034c37556e050e85cc6a7d56c2da.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/3fe7ca0348d9ced6bf36a45cdb2fadef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/bc30b596720861090ec06899044c3080.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/29ce860a44301af29980247a4e953a7d.png
 Meta Title: Buds Pro 10 Wireless Earbuds With ANC ENC Touch Controls Durable Rel
 Meta Description: Buy Buds Pro 10 Wireless Earbuds With ANC ENC Touch Controls Durable Reliable Hi Fi Stereo Sound Practical Choice For Music Calls Gaming And Travel online in Pa
 Description: Buds Pro 10 Wireless Earbuds ANC ENC Touch Controls Durable Reliable Hi Fi Stereo Sound Practical Choice For Music Calls Gaming And Travel.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

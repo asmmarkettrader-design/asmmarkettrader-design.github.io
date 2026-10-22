@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Creative Racing Car Pencil Eraser for Kids School Stationery Eraser - Random Color
 Product ID: hhc-3761738
 SKU: hhc-3761738
@@ -7,11 +8,16 @@ Slug: creative-racing-car-pencil-eraser-for-kids-school-stationery-eraser-random
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
-Meta Title: Creative Racing Car Pencil Eraser for Kids School Stationery Eraser
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/96a969a8d3a24fdba71264cbb91eff30.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/96a969a8d3a24fdba71264cbb91eff30.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/0cfb03fd4ae374a6254fa7dc200007d7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/95688b3292eaa786301a9119b63031f6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/be859312d38753eee5480d19076e6bfd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/8b441d1c3139fa6452df78c4b23db365.jpeg
+Meta Title: Creative Racing Car Pencil Eraser for Kids School Stationery Eraser 
 Meta Description: Buy Creative Racing Car Pencil Eraser for Kids School Stationery Eraser - Random Color online in Pakistan from ASM VEO. Make erasing fun with the Creative Racin
 Description: Make erasing fun with the Creative Racing Car Pencil Eraser. Designed in a colorful sports car shape, this eraser is perfect for school, drawing, homework, and as a fun gift for kids. Random color will be delivered.
-Regular Price: 207
-Sale Price: 207
+Wholesale Price: 157
+Regular Price: 446
+Sale Price: 296
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

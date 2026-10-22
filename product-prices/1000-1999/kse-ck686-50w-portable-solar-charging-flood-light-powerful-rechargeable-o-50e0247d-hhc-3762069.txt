@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: KSE CK686 50W Portable Solar Charging Flood Light - Powerful Rechargeable Outdoor Lighting For Camping, Emergencies, And Work Sites
 Product ID: hhc-3762069
 SKU: hhc-3762069
@@ -7,11 +8,16 @@ Slug: kse-ck686-50w-portable-solar-charging-flood-light-powerful-rechargeable-50
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/cdfeb6a30a2c1e37cb943f161bc7c34c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/cdfeb6a30a2c1e37cb943f161bc7c34c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/038f8c4e918aad7c2e7333cf25b4ad01.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/4cebeff69426bf7f05567c5195d5503c.jpeg
 Meta Title: KSE CK686 50W Portable Solar Charging Flood Light - Powerful Recharg
 Meta Description: Buy KSE CK686 50W Portable Solar Charging Flood Light - Powerful Rechargeable Outdoor Lighting For Camping, Emergencies, And Work Sites online in Pakistan from
 Description: The KSE CK686 50W Portable Solar Charging Flood Light Provides Bright, Sustainable Illumination For Various Outdoor And Emergency Situations.
-Regular Price: 1531
-Sale Price: 1531
+Wholesale Price: 1531
+Regular Price: 2810
+Sale Price: 2247
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

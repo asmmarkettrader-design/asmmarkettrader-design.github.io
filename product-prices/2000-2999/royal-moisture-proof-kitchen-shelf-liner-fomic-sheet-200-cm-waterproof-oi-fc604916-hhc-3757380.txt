@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Moisture-Proof Kitchen Shelf Liner Fomic Sheet 200 cm | Waterproof, Oil-Resistant & Easy-Clean Drawer Mat
 Product ID: hhc-3757380
 SKU: hhc-3757380
@@ -7,11 +8,16 @@ Slug: royal-moisture-proof-kitchen-shelf-liner-fomic-sheet-200-cm-waterproof-fc6
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/7bf5a197928a9a1a4a6b2b9009b64a27.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/7bf5a197928a9a1a4a6b2b9009b64a27.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/423ab0f31b7acadba694eaa782a8b01e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/5fe805d2ec6fe829213c9106400d29f6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/30847559a19d0e9f3bb7f7cedc0c1f55.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/5a9f37faa0f700f088a12b8e2d0d27cd.jpg
 Meta Title: Royal Moisture-Proof Kitchen Shelf Liner Fomic Sheet 200 cm | Waterp
 Meta Description: Buy Royal Moisture-Proof Kitchen Shelf Liner Fomic Sheet 200 cm | Waterproof, Oil-Resistant & Easy-Clean Drawer Mat online in Pakistan from ASM VEO. Keep your k
 Description: Keep your kitchen clean and organized with this durable, moisture-proof shelf liner. Made from high-quality foamic material, it protects surfaces from spills, stains, and scratches while adding a stylish touch with its vibrant designs.
-Regular Price: 424
-Sale Price: 424
+Wholesale Price: 374
+Regular Price: 780
+Sale Price: 621
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

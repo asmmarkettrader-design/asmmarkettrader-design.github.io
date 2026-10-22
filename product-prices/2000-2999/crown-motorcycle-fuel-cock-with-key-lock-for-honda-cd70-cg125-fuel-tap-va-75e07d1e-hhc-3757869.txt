@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Crown Motorcycle Fuel Cock with Key Lock for Honda CD70 & CG125 – Fuel Tap Valve with Reserve Function
 Product ID: hhc-3757869
 SKU: hhc-3757869
@@ -7,11 +8,16 @@ Slug: crown-motorcycle-fuel-cock-with-key-lock-for-honda-cd70-cg125-fuel-tap-75e
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/0dff6fbd9fceea6cd0ce0ef916f9e48c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/0dff6fbd9fceea6cd0ce0ef916f9e48c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/2dc9a9b01b08ee1fbac9168db2b1dd64.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/5a7f81806490962dec6bbc1f51b6268e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/162e0b9e7ea74a5d5cad099df75a6053.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/13cf2f02ababfbf899fcd274b1c23897.jpeg
 Meta Title: Crown Motorcycle Fuel Cock with Key Lock for Honda CD70 & CG125 – Fu
 Meta Description: Buy Crown Motorcycle Fuel Cock with Key Lock for Honda CD70 & CG125 – Fuel Tap Valve with Reserve Function online in Pakistan from ASM VEO. Durable motorcycle f
 Description: Durable motorcycle fuel cock with built-in key lock for secure fuel control. Designed for smooth fuel flow management with On/Off/Reserve functionality, compatible with Honda CD70 and CG125 models.
-Regular Price: 712
-Sale Price: 712
+Wholesale Price: 662
+Regular Price: 1280
+Sale Price: 1020
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

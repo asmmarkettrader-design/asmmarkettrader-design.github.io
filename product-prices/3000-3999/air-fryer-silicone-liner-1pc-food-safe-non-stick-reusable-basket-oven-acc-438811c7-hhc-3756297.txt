@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Air Fryer Silicone Liner | 1pc | Food-Safe Non-Stick | Reusable Basket & Oven Accessory (Random Colour)
 Product ID: hhc-3756297
 SKU: hhc-3756297
@@ -7,11 +8,16 @@ Slug: air-fryer-silicone-liner-1pc-food-safe-non-stick-reusable-basket-oven-a-43
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/16a6f8ad5825e7dd2c6620c0a64ad5a9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/16a6f8ad5825e7dd2c6620c0a64ad5a9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/b121cc107768a61c9f2e8f2b999dca39.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/e3989c1ff626b23ebe0dec5132506bf8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/e48b456cfcb67628c3a5c9f17e40b81b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/4248f1bb899bbc3143c662b6ea8c9c1b.jpeg
 Meta Title: Air Fryer Silicone Liner | 1pc | Food-Safe Non-Stick | Reusable Bask
 Meta Description: Buy Air Fryer Silicone Liner | 1pc | Food-Safe Non-Stick | Reusable Basket & Oven Accessory (Random Colour) online in Pakistan from ASM VEO. Reusable silicone l
 Description: Reusable silicone liner for air fryers and ovens. Food-safe, non-stick, heat-resistant, and a replacement for flammable parchment paper.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

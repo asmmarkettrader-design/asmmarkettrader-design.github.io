@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal 2-in-1 Motorcycle Cup Holder & Mobile Phone Bracket (HT-506) – Anti-Shake Adjustable Bike Handlebar Mount
 Product ID: hhc-3760434
 SKU: hhc-3760434
@@ -7,11 +8,16 @@ Slug: universal-2-in-1-motorcycle-cup-holder-mobile-phone-bracket-ht-506-anti-0f
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/2636c441fe9a4d5b6e7df76ea3fc4f2e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/2636c441fe9a4d5b6e7df76ea3fc4f2e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/62ccd5c62f8b0a3afd7e4919693ce485.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/d22a882d28f865edc8b51ad83728cecf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/107db18b6116dfba29feecc08182a2dd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/eb7dcef7b6835b05e4c9a599d928ba67.jpeg
 Meta Title: Universal 2-in-1 Motorcycle Cup Holder & Mobile Phone Bracket (HT-50
 Meta Description: Buy Universal 2-in-1 Motorcycle Cup Holder & Mobile Phone Bracket (HT-506) – Anti-Shake Adjustable Bike Handlebar Mount online in Pakistan from ASM VEO. Stay re
 Description: Stay refreshed and connected on every ride with the Universal 2-in-1 Motorcycle Cup Holder & Mobile Phone Bracket.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

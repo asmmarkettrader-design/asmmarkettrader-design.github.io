@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Waterproof Eyeliner & Stamp Liner Pen – Dual-Sided Matte Black Liquid Eyeliner with Precise Felt Tip and Winged Design Seal
 Product ID: hhc-3761318
 SKU: hhc-3761318
@@ -7,11 +8,16 @@ Slug: 2-in-1-waterproof-eyeliner-stamp-liner-pen-dual-sided-matte-black-liqui-6f
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/ba6accdccb002bfce2f5ddcc1ea74455.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/ba6accdccb002bfce2f5ddcc1ea74455.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/54e80675375cc72cf8826e8c8bd8c5b5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/f5012e6baf2bc8b175d141ed4a8f8a99.jpeg
 Meta Title: 2-in-1 Waterproof Eyeliner & Stamp Liner Pen – Dual-Sided Matte Blac
 Meta Description: Buy 2-in-1 Waterproof Eyeliner & Stamp Liner Pen – Dual-Sided Matte Black Liquid Eyeliner with Precise Felt Tip and Winged Design Seal online in Pakistan from A
 Description: Achieve the perfect, symmetrical winged eyeliner look in seconds with this 2-in-1 Waterproof Stamp Liner Pen.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

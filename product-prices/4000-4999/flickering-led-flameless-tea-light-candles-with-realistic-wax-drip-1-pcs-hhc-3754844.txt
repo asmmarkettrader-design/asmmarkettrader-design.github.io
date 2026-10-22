@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flickering LED Flameless Tea Light Candles with Realistic Wax Drip (1 pcs)
 Product ID: hhc-3754844
 SKU: hhc-3754844
@@ -7,11 +8,16 @@ Slug: flickering-led-flameless-tea-light-candles-with-realistic-wax-drip-1-pcs-h
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/f2c93eaca4871a6530d57a3e72fbabd8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/f2c93eaca4871a6530d57a3e72fbabd8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/b1347d82b88e6d6a11de9cd716442e3d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/15d54746acebc48704c5691be2951046.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/7564c2d7f0c85beef28e1242d1e968f3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/9e7624ad851b0c3c9f7f1d5d28be2181.jpg
 Meta Title: Flickering LED Flameless Tea Light Candles with Realistic Wax Drip (
 Meta Description: Buy Flickering LED Flameless Tea Light Candles with Realistic Wax Drip (1 pcs) online in Pakistan from ASM VEO. A pack of battery-operated LED tea lights featur
 Description: A pack of battery-operated LED tea lights featuring a warm flickering flame and a unique "dripping wax" aesthetic. These flameless candles provide a romantic, hazard-free ambiance for weddings, parties, or everyday home decor.
-Regular Price: 207
-Sale Price: 207
+Wholesale Price: 157
+Regular Price: 446
+Sale Price: 296
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

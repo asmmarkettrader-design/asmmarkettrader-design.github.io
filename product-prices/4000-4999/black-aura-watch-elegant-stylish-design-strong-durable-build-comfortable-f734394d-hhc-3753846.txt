@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Aura Watch Elegant Stylish Design Strong Durable Build Comfortable Strap Clear Display Perfect Accessory For Daily Wear And Special Occasions
 Product ID: hhc-3753846
 SKU: hhc-3753846
@@ -7,11 +8,16 @@ Slug: black-aura-watch-elegant-stylish-design-strong-durable-build-comfortabl-f7
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/cbf87a9a3b2a37ddf63749b23bb31c87.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/cbf87a9a3b2a37ddf63749b23bb31c87.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/d5266c20ee02625a7fc1ebdfaff56daf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/fb4b7f8ebd6e1ec1a6e73ddd94fae059.jpeg
 Meta Title: Black Aura Watch Elegant Stylish Design Strong Durable Build Comfort
 Meta Description: Buy Black Aura Watch Elegant Stylish Design Strong Durable Build Comfortable Strap Clear Display Perfect Accessory For Daily Wear And Special Occasions online i
 Description: Black Aura Watch Provides Elegant Design Durable Build Comfortable Strap And Clear Display For Daily Wear
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

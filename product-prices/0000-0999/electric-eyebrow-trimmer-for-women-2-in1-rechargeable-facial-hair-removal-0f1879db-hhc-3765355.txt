@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Eyebrow Trimmer for Women 2 In1 Rechargeable Facial Hair Removal and Eyebrow Shaver Painless Face Razor Body Epilator
 Product ID: hhc-3765355
 SKU: hhc-3765355
@@ -7,11 +8,16 @@ Slug: electric-eyebrow-trimmer-for-women-2-in1-rechargeable-facial-hair-remov-0f
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/f422d49f98607d1211dedae601337f6f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/f422d49f98607d1211dedae601337f6f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/16aff79ba07906db8d5e8784e480aca0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/c24bce950522c90dc9c7d4862d7792b8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/7e29ab0355a4d6f4f4b311f7fe9ed89b.jpg
 Meta Title: Electric Eyebrow Trimmer for Women 2 In1 Rechargeable Facial Hair Re
 Meta Description: Buy Electric Eyebrow Trimmer for Women 2 In1 Rechargeable Facial Hair Removal and Eyebrow Shaver Painless Face Razor Body Epilator online in Pakistan from ASM V
 Description: 2-in-1 Rechargeable Eyebrow Trimmer for Women This Electric Eyebrow Trimmer combines eyebrow shaping and facial hair removal in one compact device, offering a convenient solution for daily grooming needs.Painless &amp; Gentle Facial Hair Removal Designed as a Painless Electric Razor, this Face Epilator ensures smooth results without irritation, making it ideal for sensitive skin and everyday use.Built-in LED Light for Precision Equipped with a built-in LED light, this Facial Razor enhances visibility during use, allowing for accurate trimming and shaping in any lighting condition.USB Rechargeable Battery Included Powered by a rechargeable battery, this Portable Women Epilator comes with USB charging and includes batteries for immediate use.
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

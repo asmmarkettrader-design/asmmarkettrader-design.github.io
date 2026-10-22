@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Afnan 9PM Perfume – Unisex EDP 100ml Blue, Long-Lasting Elegant Fragrance for Men & Women
 Product ID: hhc-3754349
 SKU: hhc-3754349
 Slug: afnan-9pm-perfume-unisex-edp-100ml-blue-long-lasting-elegant-fragrance-9e98bcde-hhc-3754349
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/1fce3e057e8e3e1f6a075580c3fd97a4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/1fce3e057e8e3e1f6a075580c3fd97a4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/a60348b23bf0ba356b7b6449bd1b849d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/b4aa27114ec0f99dee4b0d516981f141.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/ea5b2159a3a7f00eeb26c14c0f38e773.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/586e192c60c09bb2403480327cf3160b.jpeg
 Meta Title: Afnan 9PM Perfume – Unisex EDP 100ml Blue, Long-Lasting Elegant Frag
 Meta Description: Buy Afnan 9PM Perfume – Unisex EDP 100ml Blue, Long-Lasting Elegant Fragrance for Men & Women online in Pakistan from ASM VEO. Afnan 9PM perfume unisex EDP 100m
 Description: Afnan 9PM perfume unisex EDP 100ml blue, elegant long-lasting fragrance for men and women, perfect for daily wear and special occasions.
-Regular Price: 1163
-Sale Price: 1163
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

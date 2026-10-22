@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Laptop Bag Durable Quality Reliable Utility Comfortable Carry Stylish Design Compact Build
 Product ID: hhc-3754066
 SKU: hhc-3754066
@@ -7,11 +8,16 @@ Slug: laptop-bag-durable-quality-reliable-utility-comfortable-carry-stylish-d-07
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/248a8a85de090d1a87904593a9b4c22a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/248a8a85de090d1a87904593a9b4c22a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/e6976ee62f716e44572d17148dc35927.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/90a512ec92f612415d377fef44e30058.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/827c506f049712a01ea449051bd06207.jpeg
 Meta Title: Laptop Bag Durable Quality Reliable Utility Comfortable Carry Stylis
 Meta Description: Buy Laptop Bag Durable Quality Reliable Utility Comfortable Carry Stylish Design Compact Build online in Pakistan from ASM VEO. Laptop Bag Provides Durable Qual
 Description: Laptop Bag Provides Durable Quality Reliable Utility Comfortable Carry Stylish Design And Compact Build
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

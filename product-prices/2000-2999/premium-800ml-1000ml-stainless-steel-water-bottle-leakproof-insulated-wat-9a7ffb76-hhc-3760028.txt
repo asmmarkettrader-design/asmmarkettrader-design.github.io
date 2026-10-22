@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium 800ml/1000ml Stainless Steel Water Bottle – Leakproof Insulated Water Flask (Random Color)
 Product ID: hhc-3760028
 SKU: hhc-3760028
@@ -7,11 +8,16 @@ Slug: premium-800ml-1000ml-stainless-steel-water-bottle-leakproof-insulated-w-9a
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/b1ed1cbc192066eb29367968a32ca462.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/b1ed1cbc192066eb29367968a32ca462.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/d62d30061899be69a5103d3809de97be.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/143c03b5a9a65998fb90a6ecaf1445ca.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/79724c46eb4c331ef1818eb2beefd62c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/1954d24767c63ff74fd9fb3e0220acfe.jpg
 Meta Title: Premium 800ml/1000ml Stainless Steel Water Bottle – Leakproof Insula
 Meta Description: Buy Premium 800ml/1000ml Stainless Steel Water Bottle – Leakproof Insulated Water Flask (Random Color) online in Pakistan from ASM VEO. Stay hydrated wherever y
 Description: Stay hydrated wherever you go with this premium stainless steel water bottle. Designed with a leakproof lid and durable construction, it helps keep your beverages fresh while offering a sleek and portable design. Available in 800ml and 1000ml capacities with random color selection.
-Regular Price: 1849
-Sale Price: 1849
+Wholesale Price: 1849
+Regular Price: 3340
+Sale Price: 2676
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

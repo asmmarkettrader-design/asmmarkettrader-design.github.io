@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 in 1 Makeup Deal / Huda Beauty Makeup Bundle perfect for all your beauty
 Product ID: hhc-2555236
 SKU: hhc-2555236
@@ -7,11 +8,16 @@ Slug: 10-in-1-makeup-deal-huda-beauty-makeup-bundle-perfect-for-all-your-beauty-
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/69091b6760d9475295358e4a438e8bf2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/69091b6760d9475295358e4a438e8bf2.png
 Meta Title: 10 in 1 Makeup Deal / Huda Beauty Makeup Bundle perfect for all your
 Meta Description: Buy 10 in 1 Makeup Deal / Huda Beauty Makeup Bundle perfect for all your beauty online in Pakistan from ASM VEO. 10 in 1 Makeup Deal Huda Beauty Makeup BundleEl
 Description: 10 in 1 Makeup Deal Huda Beauty Makeup BundleElevate your beauty game with this 10-in-1 Huda Beauty makeup bundle! Featuring everything from vibrant eyeshadows, foundation, waterproof mascara, and long-lasting lipsticks, to essential tools like a makeup sponge and setting spray. Achieve a flawless, long-lasting look with this complete beauty package! 10 in 1 Makeup Deal Make-up Fixer Hàndi Base Lipgloss Primer Lose Powder Concealer Pan Cake 5 in 1 Lipstick TV Stick Makeup Foundation
-Regular Price: 1953
-Sale Price: 1953
+Wholesale Price: 1953
+Regular Price: 3520
+Sale Price: 2817
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lady Fancy Fashion Socks Pack Of 10 Pairs Durable Comfortable Stretchable Breathable Best Quality Practical Choice For Daily Wear
 Product ID: hhc-3763683
 SKU: hhc-3763683
@@ -7,11 +8,16 @@ Slug: lady-fancy-fashion-socks-pack-of-10-pairs-durable-comfortable-stretchab-da
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/b951fcaea29c2cfbb698aa12b41dd7a7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/b951fcaea29c2cfbb698aa12b41dd7a7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/0d969d8f3ef77b905769f94ef7b8d348.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/3829179014ca807294e5e936e85ef5cf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/a01023d6c1f82ad8d88bc7de25eb3e2f.jpg
 Meta Title: Lady Fancy Fashion Socks Pack Of 10 Pairs Durable Comfortable Stretc
 Meta Description: Buy Lady Fancy Fashion Socks Pack Of 10 Pairs Durable Comfortable Stretchable Breathable Best Quality Practical Choice For Daily Wear online in Pakistan from AS
 Description: Lady Fancy Fashion Socks Pack Of 10 Pairs Durable Comfortable Stretchable Breathable Best Quality Practical Choice For Daily Wear.
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Printed Grey Hoodie for Teens & Adults – Black Skull Graphic, Premium Fabric
 Product ID: hhc-3752567
 SKU: hhc-3752567
@@ -7,11 +8,16 @@ Slug: printed-grey-hoodie-for-teens-adults-black-skull-graphic-premium-fabric-hh
 Category: Fashion
 Subcategory: Fitness & Gym
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/b6ee05c3ea02a3d854f8a284fc9beebe.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/b6ee05c3ea02a3d854f8a284fc9beebe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/cbe6c00d641768835f71738807f44994.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/2bf38dd4dad7bf5bd426ce8a7e583043.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/7cdfd884f3458d54b9b029793b5c45b9.jpeg
 Meta Title: Printed Grey Hoodie for Teens & Adults – Black Skull Graphic, Premiu
 Meta Description: Buy Printed Grey Hoodie for Teens & Adults – Black Skull Graphic, Premium Fabric online in Pakistan from ASM VEO. Stay bold and stylish this summer with our pre
 Description: Stay bold and stylish this summer with our premium grey hoodie featuring a sleek black skull print. Designed for both girls and boys, it’s the perfect blend of comfort, fashion, and attitude.
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

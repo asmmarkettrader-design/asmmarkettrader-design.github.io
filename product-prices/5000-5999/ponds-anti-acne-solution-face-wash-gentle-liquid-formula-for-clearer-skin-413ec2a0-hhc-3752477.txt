@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ponds Anti Acne Solution Face Wash – Gentle Liquid Formula For Clearer Skin Oil Control And Acne Prevention – 100 Gram Pack
 Product ID: hhc-3752477
 SKU: hhc-3752477
@@ -7,11 +8,16 @@ Slug: ponds-anti-acne-solution-face-wash-gentle-liquid-formula-for-clearer-sk-41
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/b3a4b96bf22eecf302dd1a3e61fe893b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/b3a4b96bf22eecf302dd1a3e61fe893b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/e7786798e742d0ee31ed4390bf1a0a2a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/79a586e89128b32fd9d48072483a0f54.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/1ac8849128f50cac07f5935d33c9dd29.jpeg
 Meta Title: Ponds Anti Acne Solution Face Wash – Gentle Liquid Formula For Clear
 Meta Description: Buy Ponds Anti Acne Solution Face Wash – Gentle Liquid Formula For Clearer Skin Oil Control And Acne Prevention – 100 Gram Pack online in Pakistan from ASM VEO.
 Description: Face Wash, A 100 Gram Liquid Formula That Controls Oil And Fights Acne Effectively.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

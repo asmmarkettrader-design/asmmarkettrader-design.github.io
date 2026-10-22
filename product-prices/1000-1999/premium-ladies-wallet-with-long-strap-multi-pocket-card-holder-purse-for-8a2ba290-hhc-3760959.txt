@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Ladies Wallet with Long Strap – Multi Pocket Card Holder Purse for Mobile, Cash & Essentials
 Product ID: hhc-3760959
 SKU: hhc-3760959
@@ -7,11 +8,16 @@ Slug: premium-ladies-wallet-with-long-strap-multi-pocket-card-holder-purse-fo-8a
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/582b6a086c4263f208f76a6921cb3740.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/582b6a086c4263f208f76a6921cb3740.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/df8b2c168440019b9e2dd36ad9a6ea7b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/0463de9fb06886883257cd7d311b4135.jpeg
 Meta Title: Premium Ladies Wallet with Long Strap – Multi Pocket Card Holder Pur
 Meta Description: Buy Premium Ladies Wallet with Long Strap – Multi Pocket Card Holder Purse for Mobile, Cash & Essentials online in Pakistan from ASM VEO. Stylish and elegant la
 Description: Stylish and elegant ladies wallet with long shoulder strap. Features 4 card slots, 5 spacious pockets, secure zip compartment, and enough space for mobile phone, cash, power bank, keys, and other daily essentials. Available in multiple attractive colors.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

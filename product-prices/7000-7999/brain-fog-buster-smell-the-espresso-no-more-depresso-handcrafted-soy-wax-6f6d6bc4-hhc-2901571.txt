@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Brain Fog Buster Smell the Espresso, No More Depresso! – Handcrafted Soy Wax Coffee Scented Candle - 100gm
 Product ID: hhc-2901571
 SKU: hhc-2901571
@@ -7,11 +8,16 @@ Slug: brain-fog-buster-smell-the-espresso-no-more-depresso-handcrafted-soy-wa-6f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Brain-Fog-Buster-1-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Brain-Fog-Buster-1-1.jpeg
 Meta Title: Brain Fog Buster Smell the Espresso, No More Depresso! – Handcrafted
 Meta Description: Buy Brain Fog Buster Smell the Espresso, No More Depresso! – Handcrafted Soy Wax Coffee Scented Candle - 100gm online in Pakistan from ASM VEO. Brain Fog Buster
 Description: Brain Fog Buster Smell the Espresso, No More Depresso! – Handcrafted Soy Wax Coffee Scented Candle - 100gm Product Description: Net weight: 100 grams (exclusive of jar weight) Made with 100% pure Soy Wax. Eco Friendly. Burn time upto 25 Hours. Purely Handmade Product Notes: Fresh roasted coffee beans Slightly bitter yet uplifting aroma Warm, nutty undertones
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

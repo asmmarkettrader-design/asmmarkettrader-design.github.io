@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vacuum Storage Bags Set Of 5 With Hand Pump Space Saver Compression Bags For Clothes Bedding And Travel
 Product ID: hhc-3761412
 SKU: hhc-3761412
@@ -7,11 +8,16 @@ Slug: vacuum-storage-bags-set-of-5-with-hand-pump-space-saver-compression-bag-c7
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: Vacuum Storage Bags Set Of 5 With Hand Pump Space Saver Compression
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/4586ac13cca40a4c8cdcd4e226438e9d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/4586ac13cca40a4c8cdcd4e226438e9d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/cefa8884227b073dd2e7e7665cf45f1e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/2e0243360c2f6cfbccc9673e608a6e8a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/464156cadd66c2f2bfda8c5cf78a5d37.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/95eb5baac84ec2295a025e30be9c8095.jpg
+Meta Title: Vacuum Storage Bags Set Of 5 With Hand Pump Space Saver Compression 
 Meta Description: Buy Vacuum Storage Bags Set Of 5 With Hand Pump Space Saver Compression Bags For Clothes Bedding And Travel online in Pakistan from ASM VEO. Vacuum Storage Bags
 Description: Vacuum Storage Bags Set Includes 5 Bags And 1 Hand Pump Designed For Clothes Bedding And Travel Space Saving.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

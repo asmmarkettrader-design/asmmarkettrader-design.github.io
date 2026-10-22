@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Airox USB Type-C to Type-C 60W Fast Charging Data Cable – Black
 Product ID: hhc-3761480
 SKU: hhc-3761480
@@ -7,11 +8,16 @@ Slug: airox-usb-type-c-to-type-c-60w-fast-charging-data-cable-black-hhc-3761480
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/7eabd9cd33238f5efe65aff27f35af4d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/7eabd9cd33238f5efe65aff27f35af4d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/1899e29726aceb3c7ffd881422b9e9dc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/1e3e9302f453263a3fb197a0ffcd58c7.jpeg
 Meta Title: Airox USB Type-C to Type-C 60W Fast Charging Data Cable – Black | Bu
 Meta Description: Buy Airox USB Type-C to Type-C 60W Fast Charging Data Cable – Black online in Pakistan from ASM VEO. Charge your devices faster with the Airox Type-C to Type-C
 Description: Charge your devices faster with the Airox Type-C to Type-C 60W Fast Charging Cable. Designed for high-speed charging and reliable data transfer
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

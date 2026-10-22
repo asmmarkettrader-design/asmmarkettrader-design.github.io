@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Airpod Pro 2 White Bluetooth 5.3 Noise-Cancelling Earbuds with Charging Case
 Product ID: hhc-3762474
 SKU: hhc-3762474
@@ -7,11 +8,16 @@ Slug: airpod-pro-2-white-bluetooth-5-3-noise-cancelling-earbuds-with-charging-ca
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/9570f38aafe49f7a3ae71f1076f6f91e.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/9570f38aafe49f7a3ae71f1076f6f91e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/694f47feecc7cb99982d7430f5883365.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/01b78001162240ac9f2f2e05eb0fc37e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/6dc0390b11285c6627179a76245762ab.webp
 Meta Title: Airpod Pro 2 White Bluetooth 5.3 Noise-Cancelling Earbuds with Charg
 Meta Description: Buy Airpod Pro 2 White Bluetooth 5.3 Noise-Cancelling Earbuds with Charging Case online in Pakistan from ASM VEO. White Bluetooth 5.3 Noise-Cancelling Earbuds w
 Description: White Bluetooth 5.3 Noise-Cancelling Earbuds with Charging Case Material: Plastic Connectivity Tech: Bluetooth Bluetooth Version: Bluetooth 5.3 Product Feature: Active Noise Cancellation, Noise-Cancelling Earbuds, Dual Transparency Mode Color: White
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

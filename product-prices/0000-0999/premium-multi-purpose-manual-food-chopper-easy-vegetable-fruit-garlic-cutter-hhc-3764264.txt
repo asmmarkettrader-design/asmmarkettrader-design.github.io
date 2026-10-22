@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Multi-Purpose Manual Food Chopper – Easy Vegetable, Fruit & Garlic Cutter
 Product ID: hhc-3764264
 SKU: hhc-3764264
@@ -7,11 +8,16 @@ Slug: premium-multi-purpose-manual-food-chopper-easy-vegetable-fruit-garlic-cutt
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Premium Multi-Purpose Manual Food Chopper – Easy Vegetable, Fruit &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/9cad456b29229b13314220e3f7d0c4dd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/9cad456b29229b13314220e3f7d0c4dd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/f9240ad74d5b433386d92c34461afd69.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/0b8141f6df7e3a0119e2fb903a947eb8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/7b1da4cf19458b4565d75cab142f78fb.webp
+Meta Title: Premium Multi-Purpose Manual Food Chopper – Easy Vegetable, Fruit & 
 Meta Description: Buy Premium Multi-Purpose Manual Food Chopper – Easy Vegetable, Fruit & Garlic Cutter online in Pakistan from ASM VEO. Premium manual food chopper designed for
 Description: Premium manual food chopper designed for quick and easy chopping of vegetables, fruits, garlic, nuts, and other kitchen ingredients. Its compact design and sharp stainless-steel blades make food preparation faster and more convenient.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

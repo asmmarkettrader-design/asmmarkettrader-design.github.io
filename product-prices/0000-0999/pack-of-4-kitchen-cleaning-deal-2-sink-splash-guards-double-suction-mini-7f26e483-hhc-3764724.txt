@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 4 Kitchen Cleaning Deal 2 Sink Splash Guards Double Suction Mini Mop Faucet Shower Clip Practical Sink Organization Set
 Product ID: hhc-3764724
 SKU: hhc-3764724
@@ -7,11 +8,16 @@ Slug: pack-of-4-kitchen-cleaning-deal-2-sink-splash-guards-double-suction-min-7f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Pack Of 4 Kitchen Cleaning Deal 2 Sink Splash Guards Double Suction
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/e99dcc8000f0aacb5fb3d1a078d93de9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/e99dcc8000f0aacb5fb3d1a078d93de9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/3543c87e40018e9bbc25ebc0fa704a0d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/896129e2fc0809fb7f1969c8e07d585b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/4e19d34a5cc0d84a65482ede16c1a36e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/5e1755f56b26ecbae753a97984e7345f.jpg
+Meta Title: Pack Of 4 Kitchen Cleaning Deal 2 Sink Splash Guards Double Suction 
 Meta Description: Buy Pack Of 4 Kitchen Cleaning Deal 2 Sink Splash Guards Double Suction Mini Mop Faucet Shower Clip Practical Sink Organization Set online in Pakistan from ASM
 Description: Pack Of 4 Kitchen Cleaning Deal Provides Essential Tools To Keep Your Sink Area Organized And Clean. The set includes two 16 inch sink splash guards to prevent water mess, one double suction mini mop for quick and efficient cleaning, and one faucet shower clip for added convenience. Designed for everyday household use, this combo ensures efficiency, cleanliness, and organization in the kitchen. Lightweight yet durable, it is a practical solution for maintaining a dry and tidy sink area.Key Features:Pack Of 4 Kitchen Cleaning Deal For Household UseIncludes 2 Sink Splash Guards (16 Inch)Double Suction Mini Mop For Quick CleaningFaucet Shower Clip Adds Convenience To Sink AreaHelps Maintain Dry And Organized Kitchen SinkDurable Lightweight Set For Everyday Cleaning Tasks
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

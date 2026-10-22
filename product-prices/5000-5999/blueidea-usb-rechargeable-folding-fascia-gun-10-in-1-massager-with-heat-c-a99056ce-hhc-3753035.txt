@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Blueidea USB Rechargeable Folding Fascia Gun – 10-in-1 Massager with Heat & Cold Therapy
 Product ID: hhc-3753035
 SKU: hhc-3753035
@@ -7,11 +8,16 @@ Slug: blueidea-usb-rechargeable-folding-fascia-gun-10-in-1-massager-with-heat-a9
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/a1a0a836786690dbf5ee7b5f204026cb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/a1a0a836786690dbf5ee7b5f204026cb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/226f7e537d77b02fcf869671a6a7958c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/b37db7cd02214b8ceff63950a1031db4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/ec1c162c4b4dee1ed63e5064ae5140fa.jpeg
 Meta Title: Blueidea USB Rechargeable Folding Fascia Gun – 10-in-1 Massager with
 Meta Description: Buy Blueidea USB Rechargeable Folding Fascia Gun – 10-in-1 Massager with Heat & Cold Therapy online in Pakistan from ASM VEO. Deep Tissue with Heat Cold Head Ad
 Description: Deep Tissue with Heat Cold Head Adjustable Angles Portable
-Regular Price: 6798
-Sale Price: 6798
+Wholesale Price: 6798
+Regular Price: 11270
+Sale Price: 9017
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

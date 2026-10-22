@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Piece Rubber Set for 70cc & CG 125 Motorcycles – Chain Cover, Handle Nut, Kick, Brake & Gear Lever Rubbers – Random Colors
 Product ID: hhc-3756741
 SKU: hhc-3756741
@@ -7,11 +8,16 @@ Slug: 6-piece-rubber-set-for-70cc-cg-125-motorcycles-chain-cover-handle-nut-k-53
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/c2e841ed4d6891e90ce331a17e4bb65f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/c2e841ed4d6891e90ce331a17e4bb65f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/1ad6481bd7fba985efbaa2f88f466e8f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/80e0214ece6557661e7fbd10fb67ad42.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/6f1c4528f58c94d99bdecaf7e92e8a8f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/49921db714642c11e93fc0ab2b3e2339.png
 Meta Title: 6 Piece Rubber Set for 70cc & CG 125 Motorcycles – Chain Cover, Hand
 Meta Description: Buy 6 Piece Rubber Set for 70cc & CG 125 Motorcycles – Chain Cover, Handle Nut, Kick, Brake & Gear Lever Rubbers – Random Colors online in Pakistan from ASM VEO
 Description: Complete 6 piece motorcycle rubber set for 70cc and CG 125 bikes. Includes chain cover rubber, handle nut rubber, kick rubber, brake rubber, and gear lever rubber. Durable material with random color delivery.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

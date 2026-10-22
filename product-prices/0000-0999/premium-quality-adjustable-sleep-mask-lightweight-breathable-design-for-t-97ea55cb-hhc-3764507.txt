@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Quality Adjustable Sleep Mask | Lightweight Breathable Design For Travel & Home Use
 Product ID: hhc-3764507
 SKU: hhc-3764507
@@ -7,11 +8,16 @@ Slug: premium-quality-adjustable-sleep-mask-lightweight-breathable-design-for-97
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/c07d6d9afd6bafff8b35cfb6141e5981.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/c07d6d9afd6bafff8b35cfb6141e5981.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/25e8a7b992e17c0bcaeac7378fdc23d6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/f23e58d92f89d433858ba1d937f13a98.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/c7f9359f53b9b87f80a5a199db53547f.jpeg
 Meta Title: Premium Quality Adjustable Sleep Mask | Lightweight Breathable Desig
 Meta Description: Buy Premium Quality Adjustable Sleep Mask | Lightweight Breathable Design For Travel & Home Use online in Pakistan from ASM VEO. The Premium Quality Adjustable
 Description: The Premium Quality Adjustable Sleep Mask is designed to deliver total comfort and relaxation. Made from lightweight, breathable material, it ensures a soft touch against the skin while blocking out all light for a complete blackout experience.Perfect for travel or home use, this mask features an adjustable strap for a secure fit, making it ideal for long flights, naps, or nighttime rest. Its ergonomic design promotes uninterrupted sleep and helps you wake up refreshed every time.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

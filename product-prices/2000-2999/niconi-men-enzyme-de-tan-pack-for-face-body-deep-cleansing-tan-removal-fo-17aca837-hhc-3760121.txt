@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Niconi Men Enzyme De-Tan Pack for Face & Body | Deep Cleansing Tan Removal Formula | 300gram
 Product ID: hhc-3760121
 SKU: hhc-3760121
@@ -7,11 +8,16 @@ Slug: niconi-men-enzyme-de-tan-pack-for-face-body-deep-cleansing-tan-removal-17a
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/a42bb6b977b9f803f8f3825fa6d32ca5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/a42bb6b977b9f803f8f3825fa6d32ca5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/81d0cad72a8e24a69ae9a0ad55e956f1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/db27ef9578cab0a589799683877da015.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/d3a2cdae0be63f91e1e2b51c8311cf24.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/429d520976c14b4b1c25879be7d4f793.png
 Meta Title: Niconi Men Enzyme De-Tan Pack for Face & Body | Deep Cleansing Tan R
 Meta Description: Buy Niconi Men Enzyme De-Tan Pack for Face & Body | Deep Cleansing Tan Removal Formula | 300gram online in Pakistan from ASM VEO. Niconi Men Enzyme De-Tan Pack
 Description: Niconi Men Enzyme De-Tan Pack is specially formulated to help reduce tanning, remove impurities, and refresh dull skin. Suitable for both face and body, this enzyme-rich formula deeply cleanses while promoting a brighter and more even-looking complexion.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

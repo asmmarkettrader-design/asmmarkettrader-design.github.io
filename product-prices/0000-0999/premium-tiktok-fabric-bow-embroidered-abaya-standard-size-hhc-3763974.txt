@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium TikTok Fabric Bow Embroidered Abaya – Standard Size
 Product ID: hhc-3763974
 SKU: hhc-3763974
@@ -7,11 +8,16 @@ Slug: premium-tiktok-fabric-bow-embroidered-abaya-standard-size-hhc-3763974
 Category: Islamic Essentials
 Subcategory: Abayas & Hijabs
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/09b5b34086b48508061a07300a63d43b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/09b5b34086b48508061a07300a63d43b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/cc297d3b585c7e28453eaeaa2a22d5a2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/30892e9e8e8a7e3ab143a2cea10b947a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/0c41707438f6898056c48d4de9841ab6.jpg
 Meta Title: Premium TikTok Fabric Bow Embroidered Abaya – Standard Size | Buy On
 Meta Description: Buy Premium TikTok Fabric Bow Embroidered Abaya – Standard Size online in Pakistan from ASM VEO. An elegant front-open greyish-blue abaya crafted from smooth Ti
 Description: An elegant front-open greyish-blue abaya crafted from smooth TikTok silk fabric. Features detailed white bow motifs scattered across the silhouette, wide sleeves with tassel accents, and a modest, comfortable drape.
-Regular Price: 4130
-Sale Price: 4130
+Wholesale Price: 4130
+Regular Price: 6940
+Sale Price: 5549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

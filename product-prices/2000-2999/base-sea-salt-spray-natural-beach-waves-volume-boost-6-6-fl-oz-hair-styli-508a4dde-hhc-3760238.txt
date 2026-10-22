@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Base+ Sea Salt Spray – Natural Beach Waves & Volume Boost ( 6.6 fl oz) Hair Styling Mist - 200ml
 Product ID: hhc-3760238
 SKU: hhc-3760238
@@ -7,11 +8,16 @@ Slug: base-sea-salt-spray-natural-beach-waves-volume-boost-6-6-fl-oz-hair-sty-50
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/32feebb91771e970e811153c18ebfd98.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/32feebb91771e970e811153c18ebfd98.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/c31f0814d2a89d92f7ee608f2058017f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/b312ac77e2b2ef2bf0576c8c3d909216.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/5698c39c69a8a2bb72321b9cfcb947bc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/9faff1c665b9487d1aa7f6a28620e581.jpeg
 Meta Title: Base+ Sea Salt Spray – Natural Beach Waves & Volume Boost ( 6.6 fl o
 Meta Description: Buy Base+ Sea Salt Spray – Natural Beach Waves & Volume Boost ( 6.6 fl oz) Hair Styling Mist - 200ml online in Pakistan from ASM VEO. Achieve effortless, textur
 Description: Achieve effortless, textured beach waves with the Base+ Sea Salt Spray. Specially formulated to provide an instant volume boost and a flexible, light hold, this 200ml hair styling mist adds gritty texture and definition to all hair types. Perfect for creating a messy,
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Check Pattern Loungewear Set For Women Stylish Design Smooth Comfort Easy Wear
 Product ID: hhc-3754392
 SKU: hhc-3754392
@@ -7,11 +8,16 @@ Slug: check-pattern-loungewear-set-for-women-stylish-design-smooth-comfort-easy-
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/9a78e14fdc1a84860af97672c732c303.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/9a78e14fdc1a84860af97672c732c303.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/572607e3a37adf6ae514d0c57720a9a5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/b14ae01d2e32e37a1c79015ea11ba1e5.jpeg
 Meta Title: Check Pattern Loungewear Set For Women Stylish Design Smooth Comfort
 Meta Description: Buy Check Pattern Loungewear Set For Women Stylish Design Smooth Comfort Easy Wear online in Pakistan from ASM VEO. Check Pattern Loungewear Set For Women Provi
 Description: Check Pattern Loungewear Set For Women Provides Stylish Design Smooth Comfort Easy Wear Durable Stitching And Reliable Utility
-Regular Price: 1371
-Sale Price: 1371
+Wholesale Price: 1321
+Regular Price: 2420
+Sale Price: 1936
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

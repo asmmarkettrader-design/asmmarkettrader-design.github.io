@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hand Grips Strengthener – Adjustable Arm, Finger & Wrist Exerciser for Men & Women - Without Counter (Random Color)
 Product ID: hhc-3753263
 SKU: hhc-3753263
@@ -7,11 +8,16 @@ Slug: hand-grips-strengthener-adjustable-arm-finger-wrist-exerciser-for-men-w-f4
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/85f8c9544b276222778529b07c8403e2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/85f8c9544b276222778529b07c8403e2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/a807378ddf85a50a3f52c64fd832f4d5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/adb9d82ac6f5b4113c5c1b30f8aed5e4.jpg
 Meta Title: Hand Grips Strengthener – Adjustable Arm, Finger & Wrist Exerciser f
 Meta Description: Buy Hand Grips Strengthener – Adjustable Arm, Finger & Wrist Exerciser for Men & Women - Without Counter (Random Color) online in Pakistan from ASM VEO. Durable
 Description: Durable hand grip strengthener for men and women — improves grip, wrist power, and finger strength for fitness training.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

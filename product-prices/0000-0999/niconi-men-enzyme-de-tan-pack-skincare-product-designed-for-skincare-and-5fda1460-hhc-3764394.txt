@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Niconi Men Enzyme De Tan Pack - Skincare Product Designed For Skincare And Daily Care Routine - 100ml
 Product ID: hhc-3764394
 SKU: hhc-3764394
@@ -7,11 +8,16 @@ Slug: niconi-men-enzyme-de-tan-pack-skincare-product-designed-for-skincare-an-5f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/5ea67963a2aa0fde688b6d52dcebee5b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/5ea67963a2aa0fde688b6d52dcebee5b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/d75fd78fdda9245747949d14c79f3535.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/6c3f0fcd74d6d9056da8deb9fde59f79.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/27657eb725e4aa41b7a3aafc49d84837.jpg
 Meta Title: Niconi Men Enzyme De Tan Pack - Skincare Product Designed For Skinca
 Meta Description: Buy Niconi Men Enzyme De Tan Pack - Skincare Product Designed For Skincare And Daily Care Routine - 100ml online in Pakistan from ASM VEO. This Niconi Men Enzym
 Description: This Niconi Men Enzyme De Tan Pack Provides A Reliable Solution For Skincare Products And Routine Skincare Needs. Formulated To Deliver Care Benefits While Supporting Niconi Men Enzyme De Tan Pack Utility, It Fits Seamlessly Into Your Regular Skincare Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Skincare Requirements, This Niconi Men Enzyme De Tan Pack Serves As An Essential Skincare Accessory For Daily Life.Key FeaturesNiconi Men Enzyme De Tan Pack Formulated For Skincare ProductsDelivers Skincare And Supports Daily Care UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Skincare And Care RoutinesDesigned For Easy Operation And Convenient UseEssential Skincare Accessory For Everyday Maintenance
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

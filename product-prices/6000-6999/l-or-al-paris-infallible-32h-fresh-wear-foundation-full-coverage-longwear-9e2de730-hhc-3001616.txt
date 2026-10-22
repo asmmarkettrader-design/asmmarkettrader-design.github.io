@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: L'Oréal Paris Infallible 32H Fresh Wear Foundation, Full-coverage, Longwear, Weightless Smooth Finish, Water-proof and Transfer-proof, with Vitamin C 30ml
 Product ID: hhc-3001616
 SKU: hhc-3001616
@@ -7,11 +8,16 @@ Slug: l-or-al-paris-infallible-32h-fresh-wear-foundation-full-coverage-longwe-9e
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/dc6d33680b947e334c7e35df720bf1f1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/dc6d33680b947e334c7e35df720bf1f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/7986e8262d8ac7825c3816cbe2cbdbd1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/61tCv0NwmTL._AC_SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/91Bssr-FXlL._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/3600523614486_3_1024x1024.jpg
 Meta Title: L'Oréal Paris Infallible 32H Fresh Wear Foundation, Full-coverage, L
 Meta Description: Buy L'Oréal Paris Infallible 32H Fresh Wear Foundation, Full-coverage, Longwear, Weightless Smooth Finish, Water-proof and Transfer-proof, with Vitamin C 30ml o
 Description: L'Oréal Paris Infallible 32H Fresh Wear Foundation, Full-coverage, Longwear, Weightless Smooth Finish, Water-proof and Transfer-proof, with Vitamin C PRODUCT DESCRIPTION Indulge in flawless beauty with Infaillible 32H Fresh Wear Foundation. This long-lasting, high-coverage formula, enriched with vitamin C and SPF25, corrects imperfections and provides a luminous complexion for up to 32 hours. Offers a luminous complexion that stands strong for up to 32 hours — no transfers, just enduring radiance! Advantages: Long-lasting and high coverage for up to 32 hours; New, lighter, and longer-lasting formula for a luminous complexion: Corrects and minimizes the appearance of imperfections for a natural effect: Enriched with vitamin C and SPF25 for added skincare benefits; Offers protection against sun exposure: No transfer formula for enduring radiance. Quality: Made in China [video width="720" height="1280" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/04/Shade-Match_-Loreal-Infallible-32H-Fresh-Wear-Foundation-_-Waysheblushes.mp4"][/video] Original Pictures
-Regular Price: 783
-Sale Price: 783
+Wholesale Price: 733
+Regular Price: 1400
+Sale Price: 1123
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

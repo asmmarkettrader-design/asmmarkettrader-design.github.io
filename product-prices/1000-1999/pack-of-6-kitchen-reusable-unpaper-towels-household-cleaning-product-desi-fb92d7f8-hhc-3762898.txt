@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 6 - Kitchen Reusable UNpaper Towels - Household Cleaning Product Designed For Sustainable Kitchen Maintenance And Daily Cleanup Routine
 Product ID: hhc-3762898
 SKU: hhc-3762898
@@ -7,11 +8,16 @@ Slug: pack-of-6-kitchen-reusable-unpaper-towels-household-cleaning-product-de-fb
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/a1cd1e232f780a4bcfa0f856ea1630a8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/a1cd1e232f780a4bcfa0f856ea1630a8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/99a7aedaaa4744fdf60fce3f44d83f68.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/54462524d0d20a1bf624dfd4a0cda1cb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/29d89c8205378257a3f51b1e6a1fb2c8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/41f2b1890fc4d35abd09f3ac8b8d9401.jpeg
 Meta Title: Pack of 6 - Kitchen Reusable UNpaper Towels - Household Cleaning Pro
 Meta Description: Buy Pack of 6 - Kitchen Reusable UNpaper Towels - Household Cleaning Product Designed For Sustainable Kitchen Maintenance And Daily Cleanup Routine online in Pa
 Description: The Kitchen Reusable UNpaper Towels Is A Household Cleaning Product Formulated To Help Provide Sustainable Kitchen Maintenance And Cleanup During Daily Use.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

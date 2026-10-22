@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Women's Mini Aura Watch Providing Elegant Design Comfortable Use  Stylish Appearance And Everyday Wear
 Product ID: hhc-3755082
 SKU: hhc-3755082
@@ -7,11 +8,16 @@ Slug: women-s-mini-aura-watch-providing-elegant-design-comfortable-use-stylis-c2
 Category: Fashion
 Subcategory: Sunglasses & Watches
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/0a08d6349336e24aeb35d95481781e02.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/0a08d6349336e24aeb35d95481781e02.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/6badbfc8f1165fbcc9a816bf038f0189.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/4d013d8688476faa58a5872c2a41250d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/c5cb42d1196cc3bcd3e8d8e305e006b3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/51da4745250d5f4999acee10851008f9.jpeg
 Meta Title: Women's Mini Aura Watch Providing Elegant Design Comfortable Use Sty
 Meta Description: Buy Women's Mini Aura Watch Providing Elegant Design Comfortable Use Stylish Appearance And Everyday Wear online in Pakistan from ASM VEO. Mini Aura Watch Offer
 Description: Mini Aura Watch Offering Elegant Design Advanced Features Durable Quality Reliable Performance And Stylish Daily Smart Wear Support
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Melodine Japanese Soothing Massage Gel – Muscle Repair & Fast Pain Relief Therapy | 50 gm
 Product ID: hhc-3755966
 SKU: hhc-3755966
@@ -7,11 +8,16 @@ Slug: melodine-japanese-soothing-massage-gel-muscle-repair-fast-pain-relief-t-78
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/1592d20d8c94fbb979cbd1a7d9fca956.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/1592d20d8c94fbb979cbd1a7d9fca956.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/d3143111e6435f9839df2aefd83b4999.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/a7d39bb2ceeb7b5cd3094ac82f5f70c0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/651763716a56dae8b06080475321b03e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/4175cd292f71472f7c04bf10b6ba938b.webp
 Meta Title: Melodine Japanese Soothing Massage Gel – Muscle Repair & Fast Pain R
 Meta Description: Buy Melodine Japanese Soothing Massage Gel – Muscle Repair & Fast Pain Relief Therapy | 50 gm online in Pakistan from ASM VEO. Experience targeted pain relief a
 Description: Experience targeted pain relief and muscle recovery with Melodine Japanese Soothing Massage Gel, inspired by traditional Japanese wellness therapy. This advanced massage gel penetrates deep into muscles and joints to ease stiffness, soreness, and everyday body pain. Ideal for athletes, office worke
-Regular Price: 289
-Sale Price: 289
+Wholesale Price: 239
+Regular Price: 568
+Sale Price: 418
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

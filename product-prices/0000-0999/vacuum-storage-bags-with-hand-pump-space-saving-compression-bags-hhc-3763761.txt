@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vacuum Storage Bags with Hand Pump – Space Saving Compression Bags
 Product ID: hhc-3763761
 SKU: hhc-3763761
@@ -7,11 +8,16 @@ Slug: vacuum-storage-bags-with-hand-pump-space-saving-compression-bags-hhc-37637
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/967228a2162c78e2b78ecb72ed2565c4.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/967228a2162c78e2b78ecb72ed2565c4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/8355bb43027a2f0cdea790add60025d6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/397ff0ca813f3b711c2f4accdced920a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/6c164867a26367047e95423ae7abdb72.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/73a4fb9382ac4f41eb71ef03d1e4f375.webp
 Meta Title: Vacuum Storage Bags with Hand Pump – Space Saving Compression Bags |
 Meta Description: Buy Vacuum Storage Bags with Hand Pump – Space Saving Compression Bags online in Pakistan from ASM VEO. Reusable vacuum storage bags with a hand pump, designed
 Description: Reusable vacuum storage bags with a hand pump, designed to compress clothes, bedding and other soft items while saving valuable storage space.
-Regular Price: 1393
-Sale Price: 1393
+Wholesale Price: 1343
+Regular Price: 2460
+Sale Price: 1967
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

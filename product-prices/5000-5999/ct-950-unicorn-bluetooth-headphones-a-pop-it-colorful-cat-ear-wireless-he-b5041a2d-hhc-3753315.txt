@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CT-950 Unicorn Bluetooth Headphones | A-POP It Colorful Cat Ear Wireless Headset with LED Lights for Women & Kids
 Product ID: hhc-3753315
 SKU: hhc-3753315
@@ -7,11 +8,16 @@ Slug: ct-950-unicorn-bluetooth-headphones-a-pop-it-colorful-cat-ear-wireless-b50
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/f4369a6069ff7227a337c948850d182a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/f4369a6069ff7227a337c948850d182a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/ce51bb9dafb42f8792a58e59a3515293.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/a83934f6b4ccb702f55e42165ed97a94.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/f6de918068780536833fce81af82aaaa.jpg
 Meta Title: CT-950 Unicorn Bluetooth Headphones | A-POP It Colorful Cat Ear Wire
 Meta Description: Buy CT-950 Unicorn Bluetooth Headphones | A-POP It Colorful Cat Ear Wireless Headset with LED Lights for Women & Kids online in Pakistan from ASM VEO. CT-950 Un
 Description: CT-950 Unicorn Bluetooth Headphones combine fun, color, and comfort with cute cat ears, LED lights, and wireless connectivity.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

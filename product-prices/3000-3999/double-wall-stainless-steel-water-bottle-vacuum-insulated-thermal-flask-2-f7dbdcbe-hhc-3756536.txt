@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Double Wall Stainless Steel Water Bottle – Vacuum Insulated Thermal Flask | 24H Cold & 12H Hot | Leakproof Design
 Product ID: hhc-3756536
 SKU: hhc-3756536
@@ -7,11 +8,16 @@ Slug: double-wall-stainless-steel-water-bottle-vacuum-insulated-thermal-flask-f7
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Double Wall Stainless Steel Water Bottle – Vacuum Insulated Thermal
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/c5f496b2fa642a095f4b7165d69d4e8c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/c5f496b2fa642a095f4b7165d69d4e8c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/d37d9c1b73d3ae36183a5b2977ee705d.jpeg
+Meta Title: Double Wall Stainless Steel Water Bottle – Vacuum Insulated Thermal 
 Meta Description: Buy Double Wall Stainless Steel Water Bottle – Vacuum Insulated Thermal Flask | 24H Cold & 12H Hot | Leakproof Design online in Pakistan from ASM VEO. Capacity:
 Description: Capacity: 1000ml (1 Liter) • Double Wall Vacuum Insulation • Keeps Cold up to 24 Hours • Keeps Hot up to 12 Hours • 100% Leakproof Lid • Premium Stainless Steel Body • Rust Resistant & Durable • Easy to Carry Strap • Ideal for Travel, Office, Gym & School • BPA Free & Safe Material
-Regular Price: 2018
-Sale Price: 2018
+Wholesale Price: 2018
+Regular Price: 3630
+Sale Price: 2904
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

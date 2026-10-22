@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Makeup Practice Dummy Face – Reusable Silicone Eye Makeup Training Model for Beginners
 Product ID: hhc-1955151
 SKU: hhc-1955151
@@ -7,11 +8,16 @@ Slug: makeup-practice-dummy-face-reusable-silicone-eye-makeup-training-model-125
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-24-at-12.16.33-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-24-at-12.16.33-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-24-at-12.16.32-AM-1.jpeg
 Meta Title: Makeup Practice Dummy Face – Reusable Silicone Eye Makeup Training M
 Meta Description: Buy Makeup Practice Dummy Face – Reusable Silicone Eye Makeup Training Model for Beginners online in Pakistan from ASM VEO. Reusable makeup practice dummy desig
 Description: Reusable makeup practice dummy designed for practicing eye makeup, eyeliner, eyeshadow, and other cosmetic techniques.
-Regular Price: 1344
-Sale Price: 1344
+Wholesale Price: 1294
+Regular Price: 2370
+Sale Price: 1897
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

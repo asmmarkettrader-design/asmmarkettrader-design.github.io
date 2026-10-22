@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pcs Luxurious Silk & Net Black Lace Women's Sleepwear Set Top Short & Gown Nightwear (Free Size)
 Product ID: hhc-3757476
 SKU: hhc-3757476
@@ -7,11 +8,16 @@ Slug: 3-pcs-luxurious-silk-net-black-lace-women-s-sleepwear-set-top-short-gow-1b
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d858b1a25e738dc5ba49ed13e560cb6b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d858b1a25e738dc5ba49ed13e560cb6b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/de1d7512298337169b0b31f0acaef62f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/416633d8badc1d9fb95701d4ee22ff55.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/f1a498dbd2cfd3078206c41df2966628.jpeg
 Meta Title: 3 Pcs Luxurious Silk & Net Black Lace Women's Sleepwear Set Top Shor
 Meta Description: Buy 3 Pcs Luxurious Silk & Net Black Lace Women's Sleepwear Set Top Short & Gown Nightwear (Free Size) online in Pakistan from ASM VEO. Elegant 3-piece women’s
 Description: Elegant 3-piece women’s sleepwear set made with silk and net lace. Includes top, shorts, and gown for a stylish and comfortable nightwear look.
-Regular Price: 2656
-Sale Price: 2656
+Wholesale Price: 2656
+Regular Price: 4710
+Sale Price: 3766
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

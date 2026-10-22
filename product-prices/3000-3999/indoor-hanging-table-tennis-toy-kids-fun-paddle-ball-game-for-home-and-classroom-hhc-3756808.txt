@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Indoor Hanging Table Tennis Toy Kids Fun Paddle Ball Game For Home And Classroom
 Product ID: hhc-3756808
 SKU: hhc-3756808
@@ -7,11 +8,16 @@ Slug: indoor-hanging-table-tennis-toy-kids-fun-paddle-ball-game-for-home-and-cla
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/6f64ac8cf4738519faa61a55025a7c61.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/6f64ac8cf4738519faa61a55025a7c61.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/786fea79cc76c648cfe1847b4de02ce2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ebc32301dd371d61878730918dfc8342.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/e1c270c54b77da67c9fc49a14028d20a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/19c31be0df228f58817a70a8227fd79f.jpeg
 Meta Title: Indoor Hanging Table Tennis Toy Kids Fun Paddle Ball Game For Home A
 Meta Description: Buy Indoor Hanging Table Tennis Toy Kids Fun Paddle Ball Game For Home And Classroom online in Pakistan from ASM VEO. Indoor Hanging Table Tennis Toy Designed F
 Description: Indoor Hanging Table Tennis Toy Designed For Kids Fun And Coordination. Easy To Hang And Play, Perfect For Home, Classroom, Or Indoor Activities.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

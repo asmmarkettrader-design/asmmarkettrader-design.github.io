@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SOVO SH-15 Stereo Earphone Handsfree – High Quality Wired Earphones with Deep Bass, Clear Sound & Comfortable Fit for Calls & Music
 Product ID: hhc-3757193
 SKU: hhc-3757193
@@ -7,11 +8,16 @@ Slug: sovo-sh-15-stereo-earphone-handsfree-high-quality-wired-earphones-with-60b
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
-Meta Title: SOVO SH-15 Stereo Earphone Handsfree – High Quality Wired Earphones
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/20e1399f29ee037a3ec1c2d14f763960.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/20e1399f29ee037a3ec1c2d14f763960.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/5260be12970feac4eb95ee5ff693377e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/215d3e238531baa4e75c486f5459879d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/cc02818b563f5d3f01ff28132808b105.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/a098834a7da857331454870ea7c34abb.jpeg
+Meta Title: SOVO SH-15 Stereo Earphone Handsfree – High Quality Wired Earphones 
 Meta Description: Buy SOVO SH-15 Stereo Earphone Handsfree – High Quality Wired Earphones with Deep Bass, Clear Sound & Comfortable Fit for Calls & Music online in Pakistan from
 Description: SOVO SH-15 Stereo Earphone offers clear sound, deep bass, and a comfortable in-ear design. Perfect for music, calls, and everyday use with durable and reliable performance.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

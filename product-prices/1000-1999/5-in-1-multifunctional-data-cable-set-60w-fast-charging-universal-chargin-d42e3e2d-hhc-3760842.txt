@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 In 1 Multifunctional Data Cable Set 60W Fast Charging Universal Charging Pins Durable Portable Charger Cable Kit
 Product ID: hhc-3760842
 SKU: hhc-3760842
@@ -7,11 +8,16 @@ Slug: 5-in-1-multifunctional-data-cable-set-60w-fast-charging-universal-charg-d4
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/a714bc037eac228edd0e9c603b2cb846.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/a714bc037eac228edd0e9c603b2cb846.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/4b97f10a4cae4f7ca2ccd6850d762ed7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/5732c30c264b8b0fed6b6f75491fed05.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/e6401a81db929d4a352fcc54f8c8d31a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/23adc8fc2ad14b7a1a2a68d6cce3d461.jpg
 Meta Title: 5 In 1 Multifunctional Data Cable Set 60W Fast Charging Universal Ch
 Meta Description: Buy 5 In 1 Multifunctional Data Cable Set 60W Fast Charging Universal Charging Pins Durable Portable Charger Cable Kit online in Pakistan from ASM VEO. 5 In 1 M
 Description: 5 In 1 Multifunctional Data Cable Set 60W Fast Charging Universal Charging Pins Compact Durable And Portable Charger Kit.
-Regular Price: 439
-Sale Price: 439
+Wholesale Price: 389
+Regular Price: 800
+Sale Price: 644
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

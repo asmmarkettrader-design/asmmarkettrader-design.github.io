@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tea Town Cardamom Tea Elaichi Chai Unique Aromatic Blend
 Product ID: hhc-3757787
 SKU: hhc-3757787
@@ -7,11 +8,16 @@ Slug: tea-town-cardamom-tea-elaichi-chai-unique-aromatic-blend-hhc-3757787
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/d71448f7161dfa88ab2e6ee676b1058a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/d71448f7161dfa88ab2e6ee676b1058a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/0af563b34e26dac1d9fa9486a45b10cd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/52c37c5f5f5bfe4c9ffd7e8f2e36406f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/768c5e5ce1b5a0d8cad30059f107a839.jpeg
 Meta Title: Tea Town Cardamom Tea Elaichi Chai Unique Aromatic Blend | Buy Onlin
 Meta Description: Buy Tea Town Cardamom Tea Elaichi Chai Unique Aromatic Blend online in Pakistan from ASM VEO. Tea Town Cardamom Tea With 100 Percent Original Crushed Cardamom F
 Description: Tea Town Cardamom Tea With 100 Percent Original Crushed Cardamom For Unique Aroma And Flavor
-Regular Price: 2305
-Sale Price: 2305
+Wholesale Price: 2305
+Regular Price: 4120
+Sale Price: 3292
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HAOKALI Professional Care Organic Rice & Vitamin E Face Mask  - Firming Pores, Nourishing, Moisturizing & Whitening Skin(pack of 10)
 Product ID: hhc-3754362
 SKU: hhc-3754362
@@ -7,11 +8,16 @@ Slug: haokali-professional-care-organic-rice-vitamin-e-face-mask-firming-pore-54
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/253ebc1d8587ced1624c10baa2346765.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/253ebc1d8587ced1624c10baa2346765.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/db35e293401336bfa8d951e66883d32c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/0eb72618f56166a21956eacda2fb133d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/20057c444b9163b9b5a25cf03ad4c1ed.png
 Meta Title: HAOKALI Professional Care Organic Rice & Vitamin E Face Mask - Firmi
 Meta Description: Buy HAOKALI Professional Care Organic Rice & Vitamin E Face Mask - Firming Pores, Nourishing, Moisturizing & Whitening Skin(pack of 10) online in Pakistan from
 Description: A set of 10 HAOKALI Organic Rice & Vitamin E sheet masks designed for comprehensive skincare. This mask deeply nourishes and moisturizes, while actively working to firm and shrink pores. It also helps to improve dryness and brighten the skin for a soft, tender, and rejuvenated complexion.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

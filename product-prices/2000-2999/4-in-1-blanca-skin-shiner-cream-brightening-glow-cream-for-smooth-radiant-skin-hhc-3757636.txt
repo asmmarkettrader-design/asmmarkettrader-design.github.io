@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4 In 1  Blanca Skin  Shiner Cream – Brightening & Glow Cream for Smooth Radiant Skin
 Product ID: hhc-3757636
 SKU: hhc-3757636
@@ -7,11 +8,16 @@ Slug: 4-in-1-blanca-skin-shiner-cream-brightening-glow-cream-for-smooth-radiant-
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/33b8e0570430aec968ce134fb113507b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/33b8e0570430aec968ce134fb113507b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/1cf66b55ca8b6ba00c3705c7f4761467.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/ecd7d6c6e483055ad92097ab50ca009c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/c6e1c202b64561d6f5d8a3a545f5a467.jpeg
 Meta Title: 4 In 1 Blanca Skin Shiner Cream – Brightening & Glow Cream for Smoot
 Meta Description: Buy 4 In 1 Blanca Skin Shiner Cream – Brightening & Glow Cream for Smooth Radiant Skin online in Pakistan from ASM VEO. Blanca Skin Shiner cream helps improve s
 Description: Blanca Skin Shiner cream helps improve skin glow, smoothness, and overall appearance. Lightweight formula for daily use.
-Regular Price: 1203
-Sale Price: 1203
+Wholesale Price: 1153
+Regular Price: 2120
+Sale Price: 1697
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

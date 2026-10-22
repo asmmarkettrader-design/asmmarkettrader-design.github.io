@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Roll N Go Cosmetic Bag
 Product ID: hhc-671372
 SKU: hhc-671372
@@ -7,11 +8,16 @@ Slug: roll-n-go-cosmetic-bag-hhc-671372
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/a6cc6ccb1965977f05929559061e0566.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/a6cc6ccb1965977f05929559061e0566.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/22b43cc10de761bc869d3e6354c1cebe.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/2f84b61c13c28b886ea302f6e326caef.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-11-at-12.19.02-AM-1.jpeg
 Meta Title: Roll N Go Cosmetic Bag | Buy Online in Pakistan
 Meta Description: Buy Roll N Go Cosmetic Bag online in Pakistan from ASM VEO. Product detailsMaterial: Cloth, PVC, ZipperRoll Up Measurements: 24x11.5cm (D x W)Unrolled Cash on D
 Description: Product detailsMaterial: Cloth, PVC, ZipperRoll Up Measurements: 24x11.5cm (D x W)Unrolled Dimensions: 50x24 cm (LxW)4 Transparent Zippered compartmentsIdeal for cosmetics, toiletries and jewelryHangers and rolls for compact storage, snap fastenerBest travel bag for cosmetics and toiletries.Holds everything in separate compartments.4 spacious zippered compartments, Roll-N-Go can hold and store cosmetics, toiletries, jewelry and more.This compact yet roomy cosmetic and toiletry bag stores easily and made with a convenient hanging loop
-Regular Price: 306
-Sale Price: 306
+Wholesale Price: 256
+Regular Price: 594
+Sale Price: 444
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

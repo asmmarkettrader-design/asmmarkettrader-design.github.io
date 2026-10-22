@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4pcs motivational sticky phototile Wooden Material wall frames for home decor 365 days (8x11inches)
 Product ID: hhc-3257061
 SKU: hhc-3257061
@@ -7,11 +8,16 @@ Slug: 4pcs-motivational-sticky-phototile-wooden-material-wall-frames-for-home-e8
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/aed77429e3f373cb18dd7698d4510cc2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/aed77429e3f373cb18dd7698d4510cc2.jpeg
 Meta Title: 4pcs motivational sticky phototile Wooden Material wall frames for h
 Meta Description: Buy 4pcs motivational sticky phototile Wooden Material wall frames for home decor 365 days (8x11inches) online in Pakistan from ASM VEO. No of Frames: 4Size : 8
 Description: No of Frames: 4Size : 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Laminated print to protect colors. motivational designs which will give your enterior a spiritual vibe. Can be customised with you own pictures.High quality Finishing
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

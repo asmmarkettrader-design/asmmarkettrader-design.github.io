@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 96 PCs nails set without glue or sticker
 Product ID: hhc-2121844
 SKU: hhc-2121844
@@ -7,11 +8,16 @@ Slug: 96-pcs-nails-set-without-glue-or-sticker-hhc-2121844
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.59.26-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.59.26-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.59.26-PM.jpeg
 Meta Title: 96 PCs nails set without glue or sticker | Buy Online in Pakistan
 Meta Description: Buy 96 PCs nails set without glue or sticker online in Pakistan from ASM VEO. 96 PCs nails set without glue or sticker • Material: Acrylic • Color: Multicolor •
 Description: 96 PCs nails set without glue or sticker • Material: Acrylic • Color: Multicolor • Product Feature: Chip-Resistant • Package Includes: 96 x Fake Nails • Note: Before using any new cosmetic product, perform a patch test on a small skin area. Verify ingredients for allergies and follow package warnings and directions.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

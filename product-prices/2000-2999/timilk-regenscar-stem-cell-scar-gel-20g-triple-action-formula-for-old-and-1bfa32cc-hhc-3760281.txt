@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Timilk Regenscar Stem Cell Scar Gel 20g Triple Action Formula For Old And New Scars Surgical Marks Skin Renewal
 Product ID: hhc-3760281
 SKU: hhc-3760281
@@ -7,11 +8,16 @@ Slug: timilk-regenscar-stem-cell-scar-gel-20g-triple-action-formula-for-old-a-1b
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/dc3be4be489aca8fb1455c51c358d3bb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/dc3be4be489aca8fb1455c51c358d3bb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/ed33e0f90eec38898e24dc37f0bc7223.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/f46fad115127ff3c9e281d7d49eb0f4a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/4b4a3e891fc49aa3af1bee4fa56e397c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/c6c56e155a2b9e947694830d1ab48a2a.png
 Meta Title: Timilk Regenscar Stem Cell Scar Gel 20g Triple Action Formula For Ol
 Meta Description: Buy Timilk Regenscar Stem Cell Scar Gel 20g Triple Action Formula For Old And New Scars Surgical Marks Skin Renewal online in Pakistan from ASM VEO. Timilk Rege
 Description: Timilk Regenscar Stem Cell Scar Gel 20g Triple Action Formula For Old And New Scars And Skin Renewal.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

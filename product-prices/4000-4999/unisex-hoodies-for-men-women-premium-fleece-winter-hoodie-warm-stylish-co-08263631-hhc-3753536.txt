@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Unisex Hoodies for Men & Women | Premium Fleece Winter Hoodie | Warm, Stylish & Comfortable Casual Wear
 Product ID: hhc-3753536
 SKU: hhc-3753536
@@ -7,11 +8,16 @@ Slug: unisex-hoodies-for-men-women-premium-fleece-winter-hoodie-warm-stylish-082
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/48b7b3aafbb4b07e8193da1cbbd5b58a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/48b7b3aafbb4b07e8193da1cbbd5b58a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/dd9a2a5ee79c6fbd2f063f7a369683b3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/8fba102430eda4f693c272a7e395e9d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/31fbd68918b8aeb156afe183accb5645.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/33fc27f12f1fc9e373f94b1d834c0970.jpeg
 Meta Title: Unisex Hoodies for Men & Women | Premium Fleece Winter Hoodie | Warm
 Meta Description: Buy Unisex Hoodies for Men & Women | Premium Fleece Winter Hoodie | Warm, Stylish & Comfortable Casual Wear online in Pakistan from ASM VEO. Stay cozy and styli
 Description: Stay cozy and stylish with unisex fleece hoodies for men and women — soft, warm, and perfect for winter casual wear or outdoor comfort.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

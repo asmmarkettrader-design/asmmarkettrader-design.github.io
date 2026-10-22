@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Decoration home decoration item 9 pcs ISLAMIC FRAME board wall decor photo on wall PHOTO TILE canvas art decor for home easy set up with both side tape
 Product ID: hhc-3754546
 SKU: hhc-3754546
@@ -7,11 +8,16 @@ Slug: decoration-home-decoration-item-9-pcs-islamic-frame-board-wall-decor-ph-82
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/4b17aecf1497728c8990f29133801ce0.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/4b17aecf1497728c8990f29133801ce0.jpg
 Meta Title: Decoration home decoration item 9 pcs ISLAMIC FRAME board wall decor
 Meta Description: Buy Decoration home decoration item 9 pcs ISLAMIC FRAME board wall decor photo on wall PHOTO TILE canvas art decor for home easy set up with both side tape onli
 Description: Add a touch of spiritual elegance to your home with this 9-frame Islamic calligraphy wall art set, featuring beautifully crafted names of Allah (الله) and Muhammad (ﷺ). Each frame is made from high-quality wood, showcasing vibrant Arabic calligraphy with artistic backgrounds that complement any mode
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

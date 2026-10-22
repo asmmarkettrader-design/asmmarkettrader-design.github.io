@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 Men's Cotton Banyan Vest – Soft, Breathable & Comfortable Daily Wear Undershirts for Men
 Product ID: hhc-3760310
 SKU: hhc-3760310
@@ -7,11 +8,16 @@ Slug: pack-of-3-men-s-cotton-banyan-vest-soft-breathable-comfortable-daily-we-8b
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Pack of 3 Men's Cotton Banyan Vest – Soft, Breathable & Comfortable
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/d01e7271fb248c76fc16eda14ebaa791.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/d01e7271fb248c76fc16eda14ebaa791.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/adfb98c5a333d28c6b887c80cee91c31.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/57ffab4e3df0d392a02116e2aba7c990.jpeg
+Meta Title: Pack of 3 Men's Cotton Banyan Vest – Soft, Breathable & Comfortable 
 Meta Description: Buy Pack of 3 Men's Cotton Banyan Vest – Soft, Breathable & Comfortable Daily Wear Undershirts for Men online in Pakistan from ASM VEO. Pack of 3 premium qualit
 Description: Pack of 3 premium quality men's banyan vests made from soft and breathable fabric for all-day comfort. Ideal for daily wear, home wear, and layering under shirts.
-Regular Price: 911
-Sale Price: 911
+Wholesale Price: 861
+Regular Price: 1640
+Sale Price: 1308
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

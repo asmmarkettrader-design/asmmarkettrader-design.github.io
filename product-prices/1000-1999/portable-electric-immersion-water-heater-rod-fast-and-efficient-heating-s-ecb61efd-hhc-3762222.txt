@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Electric Immersion Water Heater Rod - Fast And Efficient Heating Solution Designed For Use In Buckets And Mugs
 Product ID: hhc-3762222
 SKU: hhc-3762222
@@ -7,11 +8,16 @@ Slug: portable-electric-immersion-water-heater-rod-fast-and-efficient-heating-ec
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/2506364686acb7857644af855f9e171e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/2506364686acb7857644af855f9e171e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/eb3b9636ee4672ebc58857e2d731358a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/b937fa0f1e73f2fb1a221c97dae1e194.jpeg
 Meta Title: Portable Electric Immersion Water Heater Rod - Fast And Efficient He
 Meta Description: Buy Portable Electric Immersion Water Heater Rod - Fast And Efficient Heating Solution Designed For Use In Buckets And Mugs online in Pakistan from ASM VEO. The
 Description: The Portable Electric Immersion Water Heater Rod Is A Convenient Tool Designed To Quickly Heat Water Directly In Buckets Or Mugs For Immediate Use.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

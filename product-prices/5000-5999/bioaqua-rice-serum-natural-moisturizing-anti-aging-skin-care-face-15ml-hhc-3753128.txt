@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bioaqua Rice Serum Natural Moisturizing Anti Aging Skin Care Face (15ml)
 Product ID: hhc-3753128
 SKU: hhc-3753128
@@ -7,11 +8,16 @@ Slug: bioaqua-rice-serum-natural-moisturizing-anti-aging-skin-care-face-15ml-hhc
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/2069c8f35a7ed691bf57180a5a8ed472.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/2069c8f35a7ed691bf57180a5a8ed472.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/e871070a78d53c724bd6fd95ac720e9b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/00d0cfc331f805e72d7d8d61023e9a99.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/49ce374a1684fe6501b3bb4ceb37b569.jpeg
 Meta Title: Bioaqua Rice Serum Natural Moisturizing Anti Aging Skin Care Face (1
 Meta Description: Buy Bioaqua Rice Serum Natural Moisturizing Anti Aging Skin Care Face (15ml) online in Pakistan from ASM VEO. Bioaqua Rice Serum Natural Moisturizing Anti Aging
 Description: Bioaqua Rice Serum Natural Moisturizing Anti Aging Skin Care Face (15ml)
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

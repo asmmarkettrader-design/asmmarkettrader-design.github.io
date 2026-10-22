@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Derma Suction Pore Cleaning Device With Powerful Vacuum Action Gently Removes Dirt, Oil, And Blackheads, Leaving Skin Clean, Smooth, And Refreshed (Cell Operated)
 Product ID: hhc-3752638
 SKU: hhc-3752638
@@ -7,11 +8,16 @@ Slug: derma-suction-pore-cleaning-device-with-powerful-vacuum-action-gently-r-4e
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/a0aeedd855ad83a95d1aa9faad44b763.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/a0aeedd855ad83a95d1aa9faad44b763.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/9770b25ea0645349c094965ecc63b849.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/ecd1b34fe7c211c6e98f5f17c8a6c6f8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/72b8208567d0562368ad685a0c34f976.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/2374f1714ec55ca0f511d8ee809e7cfe.jpg
 Meta Title: Derma Suction Pore Cleaning Device With Powerful Vacuum Action Gentl
 Meta Description: Buy Derma Suction Pore Cleaning Device With Powerful Vacuum Action Gently Removes Dirt, Oil, And Blackheads, Leaving Skin Clean, Smooth, And Refreshed (Cell Ope
 Description: Derma Suction Pore Cleaning Device With Powerful Vacuum Action Gently Removes Dirt, Oil, And Blackheads, Leaving Skin Clean, Smooth, And Refreshed.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

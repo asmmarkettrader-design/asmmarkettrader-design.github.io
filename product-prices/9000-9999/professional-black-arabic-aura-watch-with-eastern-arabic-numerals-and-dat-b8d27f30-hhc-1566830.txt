@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Black Arabic Aura Watch With Eastern Arabic Numerals And Date Elegant Durable Stylish Unique And Modern (Without Box)
 Product ID: hhc-1566830
 SKU: hhc-1566830
@@ -7,11 +8,16 @@ Slug: professional-black-arabic-aura-watch-with-eastern-arabic-numerals-and-d-b8
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/b8cb65b4a78c04e123bd7b57d4052e1f.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/b8cb65b4a78c04e123bd7b57d4052e1f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/3b3e0c24f569935eea7a1dcbaa55feaa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/c3fd671afd2b0b3c087da5d73bb58764.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/132ba0c06b480517812cddb50673801b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/251de43ca15cd79f2663e70fb5b78313.jpg
 Meta Title: Professional Black Arabic Aura Watch With Eastern Arabic Numerals An
 Meta Description: Buy Professional Black Arabic Aura Watch With Eastern Arabic Numerals And Date Elegant Durable Stylish Unique And Modern (Without Box) online in Pakistan from A
 Description: Men’s Luxury Aura Black Arabic Numeral Watch – Matte Black Analog Wristwatch with Eastern Arabic Dial – Modern Minimalist Waterproof Timepiece, Black Watch for Men
-Regular Price: 950
-Sale Price: 950
+Wholesale Price: 900
+Regular Price: 1710
+Sale Price: 1365
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Make Your Own Slime- Slime Making Kit - Slime Kits For Girls and Boys - Slime Kit For Kids
 Product ID: hhc-721501
 SKU: hhc-721501
@@ -7,11 +8,16 @@ Slug: make-your-own-slime-slime-making-kit-slime-kits-for-girls-and-boys-slim-39
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/d8e7d9af636a423da2c4257ad329517a.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/d8e7d9af636a423da2c4257ad329517a.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/7828743ccd180bf7682d87cfc07a609c.jpg_750x750.jpg_-1.webp
 Meta Title: Make Your Own Slime- Slime Making Kit - Slime Kits For Girls and Boy
 Meta Description: Buy Make Your Own Slime- Slime Making Kit - Slime Kits For Girls and Boys - Slime Kit For Kids online in Pakistan from ASM VEO. Product details Quality Product
 Description: Product details Quality Product How to Make Slime Fun for children 100% Safe Easy to MIXand MAKE For 6+ Children
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

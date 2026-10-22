@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Chando Natural Foaming Face Wash Lemon – Oil Control & Refreshing Cleanser for All Skin Types (100g)
 Product ID: hhc-3752493
 SKU: hhc-3752493
@@ -7,11 +8,16 @@ Slug: chando-natural-foaming-face-wash-lemon-oil-control-refreshing-cleanser-b10
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/c00556ed77806a368a2bb9992e796b29.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/c00556ed77806a368a2bb9992e796b29.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/3fb59baf4f1a8dd97e3db8bf76bf7af7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/98dc7bc62fc28f56d2549e4fb0efdedd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/52ff9058fb353716d5a756ee03e0f900.png
 Meta Title: Chando Natural Foaming Face Wash Lemon – Oil Control & Refreshing Cl
 Meta Description: Buy Chando Natural Foaming Face Wash Lemon – Oil Control & Refreshing Cleanser for All Skin Types (100g) online in Pakistan from ASM VEO. Chando Lemon Foaming F
 Description: Chando Lemon Foaming Face Wash gently cleanses, removes excess oil, and refreshes skin for a clear and radiant look. Suitable for all skin types.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

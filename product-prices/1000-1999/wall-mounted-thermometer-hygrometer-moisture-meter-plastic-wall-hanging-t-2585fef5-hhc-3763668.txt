@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wall Mounted Thermometer Hygrometer Moisture Meter Plastic Wall Hanging Thermometer for Indoor Outdoor Home Garden Greenhouse Planting Humidity , Incubator households, laboratories, vegetable greenhouses, agriculture, Temperature Meter Instrument
 Product ID: hhc-3763668
 SKU: hhc-3763668
@@ -7,11 +8,16 @@ Slug: wall-mounted-thermometer-hygrometer-moisture-meter-plastic-wall-hanging-25
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/1ca1b5c659cf977e9724d4814f911269.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/1ca1b5c659cf977e9724d4814f911269.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/f758b4bbfbca9a342d9638211b71732b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/06d9d12a8d67f67af070724fbb8083c2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/867324054e3cbfa449b160bd242e737b.jpg
 Meta Title: Wall Mounted Thermometer Hygrometer Moisture Meter Plastic Wall Hang
 Meta Description: Buy Wall Mounted Thermometer Hygrometer Moisture Meter Plastic Wall Hanging Thermometer for Indoor Outdoor Home Garden Greenhouse Planting Humidity , Incubator
 Description: •Brand new and high quality. • Material:plastic.Color:As the picture. •Size:13 x6.8x1.4cm.Indoor/Outdoor Thermometer with Hygrometer. • Precision made tube thermometer and humidity coil for accurate readings. • Temperature range from 0 to 120 degrees F.Temperature range from -20 to 50 degrees C.
-Regular Price: 565
-Sale Price: 565
+Wholesale Price: 515
+Regular Price: 1010
+Sale Price: 807
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

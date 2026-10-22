@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Buds Pro 5 Wireless Bluetooth Earbuds ANC ENC Touch Control Earphones
 Product ID: hhc-3760894
 SKU: hhc-3760894
@@ -7,11 +8,16 @@ Slug: buds-pro-5-wireless-bluetooth-earbuds-anc-enc-touch-control-earphones-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/11cfb8e4c2afe1a3d1951409ab6d7dbb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/11cfb8e4c2afe1a3d1951409ab6d7dbb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/ecca06ad28fb16657d458b01cb766ced.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/ad9c8a6f1918ccceb9c881920c4b4e4a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/e1af05676b20564178cdb07c4d480a27.jpeg
 Meta Title: Buds Pro 5 Wireless Bluetooth Earbuds ANC ENC Touch Control Earphone
 Meta Description: Buy Buds Pro 5 Wireless Bluetooth Earbuds ANC ENC Touch Control Earphones online in Pakistan from ASM VEO. Buds Pro 5 wireless earbuds with ANC/ENC noise reduct
 Description: Buds Pro 5 wireless earbuds with ANC/ENC noise reduction and touch control. Random color.
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

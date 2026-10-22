@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Master 3-Inch Adhesive Plaster – Strong, Breathable & Skin-Friendly Medical Tape for Wound Protection, Bandage Fixing & First-Aid Use
 Product ID: hhc-3755658
 SKU: hhc-3755658
@@ -7,11 +8,16 @@ Slug: master-3-inch-adhesive-plaster-strong-breathable-skin-friendly-medical-c35
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
-Meta Title: Master 3-Inch Adhesive Plaster – Strong, Breathable & Skin-Friendly
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/571647756134dfa496bef463b07b77c4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/571647756134dfa496bef463b07b77c4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/79a6fbb5d00b86756e45e7dfa51a9a9d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/318c372999ebc502ab237d4314fdf573.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/55dc7a6b1dadb7e7ee5f0562f00b9d61.jpeg
+Meta Title: Master 3-Inch Adhesive Plaster – Strong, Breathable & Skin-Friendly 
 Meta Description: Buy Master 3-Inch Adhesive Plaster – Strong, Breathable & Skin-Friendly Medical Tape for Wound Protection, Bandage Fixing & First-Aid Use online in Pakistan fro
 Description: Durable 3-inch adhesive plaster designed for effective wound care and secure bandage fixation. Breathable, flexible, and gentle on skin.
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

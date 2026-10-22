@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Transparent Acrylic LED Dry Erase Message Board 20x20cm White Stand With Glowing Display
 Product ID: hhc-3760022
 SKU: hhc-3760022
@@ -7,11 +8,16 @@ Slug: transparent-acrylic-led-dry-erase-message-board-20x20cm-white-stand-wit-ab
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
-Meta Title: Transparent Acrylic LED Dry Erase Message Board 20x20cm White Stand
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/a5bd2ac6eb539eb287846386b50dace9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/a5bd2ac6eb539eb287846386b50dace9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/d073c7fee33693433a5ed024af07749f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/735660e2389f50c073571f9a12d8d188.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/684d70c74b96dfda32e1557e8a60b441.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/aae46f4e7b97f5b892e96acf7cc789f9.jpg
+Meta Title: Transparent Acrylic LED Dry Erase Message Board 20x20cm White Stand 
 Meta Description: Buy Transparent Acrylic LED Dry Erase Message Board 20x20cm White Stand With Glowing Display online in Pakistan from ASM VEO. Transparent Acrylic LED Dry Erase
 Description: Transparent Acrylic LED Dry Erase Message Board 20x20cm White Stand With LED Glowing Display For Notes And Creativity.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

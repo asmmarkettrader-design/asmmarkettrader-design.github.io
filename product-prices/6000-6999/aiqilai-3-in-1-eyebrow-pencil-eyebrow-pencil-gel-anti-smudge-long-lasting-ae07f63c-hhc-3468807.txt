@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aiqilai 3 in 1 Eyebrow Pencil | Eyebrow Pencil Gel | Anti-Smudge | Long-Lasting | Three-in-One | Double-Headed | Folding Eyebrow Trimming Knife | Brush
 Product ID: hhc-3468807
 SKU: hhc-3468807
@@ -7,11 +8,16 @@ Slug: aiqilai-3-in-1-eyebrow-pencil-eyebrow-pencil-gel-anti-smudge-long-lasti-ae
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-10.54.03-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-10.54.03-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-10.53.59-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-10.54.00-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-10.54.00-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-10.54.00-AM-2.jpeg
 Meta Title: Aiqilai 3 in 1 Eyebrow Pencil | Eyebrow Pencil Gel | Anti-Smudge | L
 Meta Description: Buy Aiqilai 3 in 1 Eyebrow Pencil | Eyebrow Pencil Gel | Anti-Smudge | Long-Lasting | Three-in-One | Double-Headed | Folding Eyebrow Trimming Knife | Brush onli
 Description: Aiqilai 3 in 1 Eyebrow Pencil | Eyebrow Pencil Gel | Anti-Smudge | Long-Lasting | Three-in-One | Double-Headed | Folding Eyebrow Trimming Knife | Brush Description: Product Type: 3 in 1 Eyebrow Pen Material: Liquid Includes: Eyebrow Tip, Razor, Brush (All in One Pen) Features: Anti-Smudge, Long-Lasting, Convenient Folding Trimming Knife &amp; Double-Headed Brush for Perfect Brows Product Original Video [video width="474" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Video-2025-07-10-at-3.55.26-PM.mp4"][/video]
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

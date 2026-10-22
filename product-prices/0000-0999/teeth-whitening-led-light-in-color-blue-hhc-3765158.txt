@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Teeth Whitening Led Light in Color: Blue
 Product ID: hhc-3765158
 SKU: hhc-3765158
@@ -7,11 +8,16 @@ Slug: teeth-whitening-led-light-in-color-blue-hhc-3765158
 Category: Beauty & Personal Care
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/1af0824584a42fc7e8a76af443b68249.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/1af0824584a42fc7e8a76af443b68249.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/182978c84e4f0f28db7c03a4d5b631ca.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/01eee8ed41add7b9c65cb4286a5b61ee.jpeg
 Meta Title: Teeth Whitening Led Light in Color: Blue | Buy Online in Pakistan
 Meta Description: Buy Teeth Whitening Led Light in Color: Blue online in Pakistan from ASM VEO. Transform your smile with advanced photodynamic technology using the Blue Light LE
 Description: Transform your smile with advanced photodynamic technology using the Blue Light LED Teeth Whitening Device. Over time, daily habits such as drinking coffee, tea, or red wine, alongside natural aging, cause deep-set organic stains on teeth enamel. Standard whitening gels can take weeks to show subtle changes, but when paired with targeted blue LED light therapy, oxidation accelerates rapidly, dramatically reducing treatment time while maximizing results.
-Regular Price: 648
-Sale Price: 648
+Wholesale Price: 598
+Regular Price: 1160
+Sale Price: 927
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

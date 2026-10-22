@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kaaba Wall Art – 3-Piece  Wooden Sticky Tile Frames with Adhesive Tape for Easy Mounting
 Product ID: hhc-3752295
 SKU: hhc-3752295
@@ -7,11 +8,16 @@ Slug: kaaba-wall-art-3-piece-wooden-sticky-tile-frames-with-adhesive-tape-for-26
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/4e441d1da59db1002d9bfae81121258a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/4e441d1da59db1002d9bfae81121258a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/666a730cac6a3edbbf689890b9102d81.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/cb0418d7be155cacef10a6bbcafa84db.mp4
 Meta Title: Kaaba Wall Art – 3-Piece Wooden Sticky Tile Frames with Adhesive Tap
 Meta Description: Buy Kaaba Wall Art – 3-Piece Wooden Sticky Tile Frames with Adhesive Tape for Easy Mounting online in Pakistan from ASM VEO. Elevate your space with this stunni
 Description: Elevate your space with this stunning 3-piece Kaaba wall art. Each panel is crafted from premium wooden sticky tiles and comes with adhesive tape for effortless wall mounting. A perfect blend of spiritual elegance and modern design—no nails, no hassle.
-Regular Price: 109
-Sale Price: 109
+Wholesale Price: 59
+Regular Price: 298
+Sale Price: 148
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

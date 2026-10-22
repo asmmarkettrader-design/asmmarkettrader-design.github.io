@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3000W Water Heater Faucet – Instant Heating Tap with Grow Free Installation for Home and Kitchen Use
 Product ID: hhc-3753973
 SKU: hhc-3753973
@@ -7,11 +8,16 @@ Slug: 3000w-water-heater-faucet-instant-heating-tap-with-grow-free-installati-67
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/19e308cb88adbbe73a2a5b08ce358702.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/19e308cb88adbbe73a2a5b08ce358702.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/f56c0b04217a1a135f5a72e194fe7eea.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/8acc25956e037e2b64378402f41a9d88.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/e51aa6461cab6bc5a329296d0940145b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/31d0a6430b30327988f0c7d07fc4348b.jpg
 Meta Title: 3000W Water Heater Faucet – Instant Heating Tap with Grow Free Insta
 Meta Description: Buy 3000W Water Heater Faucet – Instant Heating Tap with Grow Free Installation for Home and Kitchen Use online in Pakistan from ASM VEO. 3000W water heater fau
 Description: 3000W water heater faucet with instant heating, Grow Free installation, durable design for home and kitchen use.
-Regular Price: 4271
-Sale Price: 4271
+Wholesale Price: 4271
+Regular Price: 7160
+Sale Price: 5732
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

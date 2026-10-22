@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Adjustable Pedal Exerciser For Home Workout | Legs Exerciser Gym Tool | Portable Pedal Cycle For Home
 Product ID: hhc-3764439
 SKU: hhc-3764439
@@ -7,11 +8,16 @@ Slug: adjustable-pedal-exerciser-for-home-workout-legs-exerciser-gym-tool-por-15
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/cbfad4ebce54c926f6faa45985c3121b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/cbfad4ebce54c926f6faa45985c3121b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/8d0ab51b8c370651328709cbfc44e969.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/f6cf1c43baf61d86c2a023cdc15a5f6a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/19435ac5caf752fbec64be0082e5a62a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/d75537e7556133c1ea9577d2038b1686.jpg
 Meta Title: Adjustable Pedal Exerciser For Home Workout | Legs Exerciser Gym Too
 Meta Description: Buy Adjustable Pedal Exerciser For Home Workout | Legs Exerciser Gym Tool | Portable Pedal Cycle For Home online in Pakistan from ASM VEO. Stay active at home w
 Description: Stay active at home with this adjustable pedal exerciser. Ideal for low-impact leg and arm workouts, its compact portable design makes daily exercise convenient for beginners and fitness enthusiasts.
-Regular Price: 3738
-Sale Price: 3738
+Wholesale Price: 3738
+Regular Price: 6300
+Sale Price: 5039
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AVEL Heat Aerosol Fire Extinguishing Device Automatic Fire Suppression System QRR0.01G
 Product ID: hhc-3763581
 SKU: hhc-3763581
@@ -7,11 +8,16 @@ Slug: avel-heat-aerosol-fire-extinguishing-device-automatic-fire-suppression-332
 Category: Tools & DIY
 Subcategory: Electrical Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/b19da7bcccdd520935265daf827dad58.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/b19da7bcccdd520935265daf827dad58.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/c73d8e90e37dcc411101fc595c6da05c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/f6af9ad97c230d52f3efaf2cc75f430b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/7aec26849617205baec3668b90944d76.jpeg
 Meta Title: AVEL Heat Aerosol Fire Extinguishing Device Automatic Fire Suppressi
 Meta Description: Buy AVEL Heat Aerosol Fire Extinguishing Device Automatic Fire Suppression System QRR0.01G online in Pakistan from ASM VEO. The AVEL Heat Aerosol Fire Extinguis
 Description: The AVEL Heat Aerosol Fire Extinguishing Device is an automatic fire suppression unit designed for use in suitable enclosed spaces and equipment applications. Model QRR0.01G features a heat-activated design for automatic fire extinguishing.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

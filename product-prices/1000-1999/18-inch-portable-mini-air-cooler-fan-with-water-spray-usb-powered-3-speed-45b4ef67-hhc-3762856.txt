@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 18-Inch Portable Mini Air Cooler Fan with Water Spray, USB Powered, 3-Speed Cooling & LED Light
 Product ID: hhc-3762856
 SKU: hhc-3762856
@@ -7,11 +8,16 @@ Slug: 18-inch-portable-mini-air-cooler-fan-with-water-spray-usb-powered-3-spe-45
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: 18-Inch Portable Mini Air Cooler Fan with Water Spray, USB Powered,
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/fe9b1ad0bc5536788e3130bb2ef5076e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/fe9b1ad0bc5536788e3130bb2ef5076e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/4ce98082185d90563ec35365878fb068.jpeg
+Meta Title: 18-Inch Portable Mini Air Cooler Fan with Water Spray, USB Powered, 
 Meta Description: Buy 18-Inch Portable Mini Air Cooler Fan with Water Spray, USB Powered, 3-Speed Cooling & LED Light online in Pakistan from ASM VEO. Stay cool anywhere with thi
 Description: Stay cool anywhere with this portable mini air cooler fan featuring water mist spray, 3 adjustable fan speeds, LED light, and USB-powered operation. Perfect for home, office, travel, and personal cooling.
-Regular Price: 2725
-Sale Price: 2725
+Wholesale Price: 2725
+Regular Price: 4820
+Sale Price: 3859
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

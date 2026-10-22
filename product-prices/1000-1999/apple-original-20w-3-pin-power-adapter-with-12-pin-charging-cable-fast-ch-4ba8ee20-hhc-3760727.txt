@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Apple Original 20W 3-Pin Power Adapter with 12-Pin Charging Cable | Fast Charging Wall Charger for iPhone & Apple Devices
 Product ID: hhc-3760727
 SKU: hhc-3760727
@@ -7,11 +8,16 @@ Slug: apple-original-20w-3-pin-power-adapter-with-12-pin-charging-cable-fast-4ba
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/c8f10d0f6472e675c2a80aee33b69061.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/c8f10d0f6472e675c2a80aee33b69061.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/4cf2233117a477bff8e7a5c3b0dc3f1e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/10ef751f357f2e1ee15287e7c11d0d68.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/9355de00fc0cf4c4896a0c2ee7297591.jpeg
 Meta Title: Apple Original 20W 3-Pin Power Adapter with 12-Pin Charging Cable |
 Meta Description: Buy Apple Original 20W 3-Pin Power Adapter with 12-Pin Charging Cable | Fast Charging Wall Charger for iPhone & Apple Devices online in Pakistan from ASM VEO. C
 Description: Charge your Apple devices quickly and safely with the Apple Original 20W 3-Pin Power Adapter and 12-Pin Charging Cable. Designed for fast charging, reliable performance, and long-lasting durability.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: WaxVac Ear Cleaner
 Product ID: hhc-1116225
 SKU: hhc-1116225
@@ -7,11 +8,16 @@ Slug: waxvac-ear-cleaner-hhc-1116225
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/3-7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/3-7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/2-17.jpeg
 Meta Title: WaxVac Ear Cleaner | Buy Online in Pakistan
 Meta Description: Buy WaxVac Ear Cleaner online in Pakistan from ASM VEO. WaxVac Ear Cleaner:Safe and effective way to clean and dry your earsWaxVac cleaner is powe Cash on Deliv
 Description: WaxVac Ear Cleaner:Safe and effective way to clean and dry your earsWaxVac cleaner is powerful yet gentleDraws dirt particles and moisture out of the ear without causing damageSafety guard to prevent the tip from entering too far into the ear canalExamining light on the tip to provide additional visibility while cleaningDissembles quickly for cleaningSanitary tip each timeBattery operated
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

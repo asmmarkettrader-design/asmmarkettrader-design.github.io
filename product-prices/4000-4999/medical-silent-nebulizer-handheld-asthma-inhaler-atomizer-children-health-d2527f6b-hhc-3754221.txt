@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Medical Silent Nebulizer Handheld Asthma Inhaler Atomizer Children Health Care Mini Portable Nebulizer Humidifier
 Product ID: hhc-3754221
 SKU: hhc-3754221
@@ -7,11 +8,16 @@ Slug: medical-silent-nebulizer-handheld-asthma-inhaler-atomizer-children-heal-d2
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/4c3e2a1d7d0a8e3752660f0eb780c13e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/4c3e2a1d7d0a8e3752660f0eb780c13e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/a0fa6806e12cc4119a6901389f110f60.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/f1dbffd12469f557cb25357ae7c69c49.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/54683506d533bccb8a68b19d60a9381c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/d0a5637df44717e42ae518bc53cef343.jpeg
 Meta Title: Medical Silent Nebulizer Handheld Asthma Inhaler Atomizer Children H
 Meta Description: Buy Medical Silent Nebulizer Handheld Asthma Inhaler Atomizer Children Health Care Mini Portable Nebulizer Humidifier online in Pakistan from ASM VEO. Medical S
 Description: Medical Silent Nebulizer Provides Durable Quality Reliable Utility Comfortable Use Compact Design And Effective Performance
-Regular Price: 1064
-Sale Price: 1064
+Wholesale Price: 1014
+Regular Price: 1880
+Sale Price: 1500
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

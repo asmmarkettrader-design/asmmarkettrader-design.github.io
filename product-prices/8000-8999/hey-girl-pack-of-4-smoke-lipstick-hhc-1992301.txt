@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hey Girl Pack of 4 Smoke Lipstick
 Product ID: hhc-1992301
 SKU: hhc-1992301
@@ -7,11 +8,16 @@ Slug: hey-girl-pack-of-4-smoke-lipstick-hhc-1992301
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-10.29.37-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-10.29.37-PM.jpeg
 Meta Title: Hey Girl Pack of 4 Smoke Lipstick | Buy Online in Pakistan
 Meta Description: Buy Hey Girl Pack of 4 Smoke Lipstick online in Pakistan from ASM VEO. &nbsp; Hey Girl Pack of 4 Smoke Lipstick • Material: Creamy • Product Type: High Pigmente
 Description: &nbsp; Hey Girl Pack of 4 Smoke Lipstick • Material: Creamy • Product Type: High Pigmented Lipstick • Product Details: Highly Pigmented, Smooth Texture, Beautiful Velvety Texture, Rich color • Package Includes: 4 x Lipstick [video width="848" height="480" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Video-2024-09-18-at-6.16.02-PM.mp4"][/video]
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

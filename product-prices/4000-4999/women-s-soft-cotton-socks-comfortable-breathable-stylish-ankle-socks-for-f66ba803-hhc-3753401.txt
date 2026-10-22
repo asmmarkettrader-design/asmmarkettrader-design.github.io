@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Women’s Soft Cotton Socks | Comfortable, Breathable & Stylish Ankle Socks for Ladies – Perfect for Daily Wear & All Seasons
 Product ID: hhc-3753401
 SKU: hhc-3753401
@@ -7,11 +8,16 @@ Slug: women-s-soft-cotton-socks-comfortable-breathable-stylish-ankle-socks-fo-f6
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/29b0701fdd9b7890304098ea2642ebea.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/29b0701fdd9b7890304098ea2642ebea.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/a09451d62f9b03d0a8a776c2292d8e4f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/bad5e40efa78e606a772e800c6b77ce4.jpeg
 Meta Title: Women’s Soft Cotton Socks | Comfortable, Breathable & Stylish Ankle
 Meta Description: Buy Women’s Soft Cotton Socks | Comfortable, Breathable & Stylish Ankle Socks for Ladies – Perfect for Daily Wear & All Seasons online in Pakistan from ASM VEO.
 Description: Soft, breathable cotton socks for ladies — perfect blend of comfort and style for everyday wear in all seasons.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

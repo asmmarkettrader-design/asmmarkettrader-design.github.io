@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gucci Flora Eau de Parfum – 100ml Premium Long-Lasting Fragrance for Women, Elegant Floral Scent
 Product ID: hhc-3754356
 SKU: hhc-3754356
 Slug: gucci-flora-eau-de-parfum-100ml-premium-long-lasting-fragrance-for-wome-efd01e5e-hhc-3754356
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3e724723ef2b02cf53edc9ddf1396063.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3e724723ef2b02cf53edc9ddf1396063.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/dd26c7caf9808e0249fc3aedc3b6b3ba.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/f343c9533dc381d5dd9be1a768a4248e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3cf7b17710c838f9d501981b8d2dc8f4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/ae4f51814f997759011eed6211cf682a.jpeg
 Meta Title: Gucci Flora Eau de Parfum – 100ml Premium Long-Lasting Fragrance for
 Meta Description: Buy Gucci Flora Eau de Parfum – 100ml Premium Long-Lasting Fragrance for Women, Elegant Floral Scent online in Pakistan from ASM VEO. Gucci Flora Eau de Parfum
 Description: Gucci Flora Eau de Parfum 100ml, premium floral fragrance with long-lasting freshness, elegant scent perfect for women.
-Regular Price: 1359
-Sale Price: 1359
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

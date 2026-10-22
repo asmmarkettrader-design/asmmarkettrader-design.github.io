@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Horse Imperial Premium Tri-Fold Wallet – 10 Card Slots | Dual Cash Pockets | Zipper Pocket | Unisex Wallet
 Product ID: hhc-3760204
 SKU: hhc-3760204
@@ -7,11 +8,16 @@ Slug: horse-imperial-premium-tri-fold-wallet-10-card-slots-dual-cash-pockets-a3e
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/4afbb6afdcf7d43c621c1a954b921f76.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/4afbb6afdcf7d43c621c1a954b921f76.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/dd19ba2ce9751c08fc93a7c1aa3ac2d0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/aa184853ac1c2cc198a46d10a753fddc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/cd47517338898394ef06114b21ecbd06.png
 Meta Title: Horse Imperial Premium Tri-Fold Wallet – 10 Card Slots | Dual Cash P
 Meta Description: Buy Horse Imperial Premium Tri-Fold Wallet – 10 Card Slots | Dual Cash Pockets | Zipper Pocket | Unisex Wallet online in Pakistan from ASM VEO. The Horse Imperi
 Description: The Horse Imperial Tri-Fold Wallet is a premium unisex wallet featuring 10 card slots, 2 cash pockets and 1 zip pocket. Suitable for both men and women, this wallet is available in White, Black and Beige and is a great choice for everyday use.
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

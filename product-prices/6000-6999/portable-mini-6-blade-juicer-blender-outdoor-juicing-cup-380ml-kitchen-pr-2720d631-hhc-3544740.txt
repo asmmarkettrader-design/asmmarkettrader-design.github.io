@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Mini 6 Blade Juicer Blender | Outdoor Juicing Cup (380Ml) - Kitchen Product Designed For Juice Preparation And Daily Beverage Routine Rechargeable [Random Color]
 Product ID: hhc-3544740
 SKU: hhc-3544740
@@ -7,11 +8,16 @@ Slug: portable-mini-6-blade-juicer-blender-outdoor-juicing-cup-380ml-kitchen-272
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/2-5.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/2-5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/Screenshot-2022-12-26-7.14.05-PM.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-07-12-at-3.43.06-PM-2-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-07-12-at-3.43.06-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/266d422dbe001669bef88f3ce10ab0bc-1.jpg
 Meta Title: Portable Mini 6 Blade Juicer Blender | Outdoor Juicing Cup (380Ml) -
 Meta Description: Buy Portable Mini 6 Blade Juicer Blender | Outdoor Juicing Cup (380Ml) - Kitchen Product Designed For Juice Preparation And Daily Beverage Routine Rechargeable
 Description: The Portable Mini 6 Blade Juicer Blender | Outdoor Juicing Cup (380Ml) Is A Kitchen Product Formulated To Help Provide Juice Preparation And Daily Beverage Utility During Use.
-Regular Price: 1240
-Sale Price: 1240
+Wholesale Price: 1190
+Regular Price: 2190
+Sale Price: 1750
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sultan Al Quloob Men Perfume Long Lasting fragrance 100 Ml | Best Quality Long Lasting Perfume For Men
 Product ID: hhc-3395906
 SKU: hhc-3395906
@@ -7,11 +8,16 @@ Slug: sultan-al-quloob-men-perfume-long-lasting-fragrance-100-ml-best-quality-92
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-24-at-8.26.14-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-24-at-8.26.14-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-24-at-8.26.12-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-24-at-8.26.11-PM.jpeg
 Meta Title: Sultan Al Quloob Men Perfume Long Lasting fragrance 100 Ml | Best Qu
 Meta Description: Buy Sultan Al Quloob Men Perfume Long Lasting fragrance 100 Ml | Best Quality Long Lasting Perfume For Men online in Pakistan from ASM VEO. Sultan Al Quloob Men
 Description: Sultan Al Quloob Men Perfume Long Lasting fragrance 100 Ml | Best Quality Long Lasting Perfume For Men • Fragrance Name: Eau De Parfume • Gender Type: Unisex • Product Features: Long Lasting, Irresistible Fragrance, Refreshing, Strong Scent Notes. Evokes Confidence and Composure • Package Includes: 1 x Perfume • Disclaimer: Before using a new cosmetic product, try a test on a small area of your skin. If you have a specific allergy or sensitivity, check the ingredients to avoid a reaction. Always read warning labels and directions on the package for using any cosmetics. Lasting: upto 4 hours Quality: Copy
-Regular Price: 911
-Sale Price: 911
+Wholesale Price: 550
+Regular Price: 1200
+Sale Price: 961
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

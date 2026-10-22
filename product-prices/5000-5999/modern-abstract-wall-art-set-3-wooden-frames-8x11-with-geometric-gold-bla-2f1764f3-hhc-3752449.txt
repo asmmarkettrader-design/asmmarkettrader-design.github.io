@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern Abstract Wall Art Set – 3 Wooden Frames (8x11”) with Geometric Gold & Black Designs | Easy Wall Mounting with Double Tape
 Product ID: hhc-3752449
 SKU: hhc-3752449
@@ -7,11 +8,16 @@ Slug: modern-abstract-wall-art-set-3-wooden-frames-8x11-with-geometric-gold-b-2f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/c9c08c3f1e00f5b76ae20e70b01e9207.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/c9c08c3f1e00f5b76ae20e70b01e9207.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/9d76adc1786ad8fce7338447ff11ccdc.jpeg
 Meta Title: Modern Abstract Wall Art Set – 3 Wooden Frames (8x11”) with Geometri
 Meta Description: Buy Modern Abstract Wall Art Set – 3 Wooden Frames (8x11”) with Geometric Gold & Black Designs | Easy Wall Mounting with Double Tape online in Pakistan from ASM
 Description: Add a bold, modern touch to your space with this 3-piece abstract wall art set, featuring geometric designs in black, gold, white, and grey tones. Each 8x11 inch wooden frame includes double-sided tape for easy wall mounting—perfect for contemporary interiors.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

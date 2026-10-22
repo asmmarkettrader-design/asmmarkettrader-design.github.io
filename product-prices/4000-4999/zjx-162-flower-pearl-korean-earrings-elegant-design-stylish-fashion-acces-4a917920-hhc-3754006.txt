@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ZJX-162 Flower Pearl Korean Earrings – Elegant Design, Stylish Fashion Accessory for Women
 Product ID: hhc-3754006
 SKU: hhc-3754006
@@ -7,11 +8,16 @@ Slug: zjx-162-flower-pearl-korean-earrings-elegant-design-stylish-fashion-acc-4a
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/960dc6ffec62f8b6679c214d4e1649e7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/960dc6ffec62f8b6679c214d4e1649e7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/073c289838ef216bc31d535960d7366d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/68a42899583eecfb96f17ffef2770e50.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/976d3812964a2a5c7095f80ba5d46c6b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/49a588490ec25afafabc17be5e12fbe2.jpeg
 Meta Title: ZJX-162 Flower Pearl Korean Earrings – Elegant Design, Stylish Fashi
 Meta Description: Buy ZJX-162 Flower Pearl Korean Earrings – Elegant Design, Stylish Fashion Accessory for Women online in Pakistan from ASM VEO. ZJX-162 flower pearl Korean earr
 Description: ZJX-162 flower pearl Korean earrings, stylish accessory for women, perfect for fashion and daily wear.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

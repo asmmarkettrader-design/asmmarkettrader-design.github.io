@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Imran Khan Signature Scent Eau de Parfum for Men – Bold, Charismatic & Timeless Fragrance Inspired by Leadership & Legacy | 100ml
 Product ID: hhc-3760866
 SKU: hhc-3760866
 Slug: imran-khan-signature-scent-eau-de-parfum-for-men-bold-charismatic-timel-013c0c5f-hhc-3760866
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/ca229169349f04113b3789378aeb01ea.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/ca229169349f04113b3789378aeb01ea.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/44b737aabb6360e03f6ad37ed1570d40.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/4773b4ab527dffbe69c32ffc40da0cdf.jpeg
 Meta Title: Imran Khan Signature Scent Eau de Parfum for Men – Bold, Charismatic
 Meta Description: Buy Imran Khan Signature Scent Eau de Parfum for Men – Bold, Charismatic & Timeless Fragrance Inspired by Leadership & Legacy | 100ml online in Pakistan from AS
 Description: A sophisticated men's fragrance crafted for confidence and distinction. Imran Khan Signature Scent combines fresh, woody, and masculine notes to create a long-lasting aroma that reflects strength, charisma, and timeless elegance. Perfect for daily wear, formal occasions, and special events.
-Regular Price: 1359
-Sale Price: 1359
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

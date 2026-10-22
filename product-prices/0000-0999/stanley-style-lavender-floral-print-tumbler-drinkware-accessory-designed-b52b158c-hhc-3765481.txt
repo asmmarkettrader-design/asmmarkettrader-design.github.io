@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stanley Style Lavender Floral Print Tumbler - Drinkware Accessory Designed For Liquid Hydration And Daily Travel Routine - 600ML
 Product ID: hhc-3765481
 SKU: hhc-3765481
@@ -7,11 +8,16 @@ Slug: stanley-style-lavender-floral-print-tumbler-drinkware-accessory-designe-b5
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/bcb8d9d9ad136c82dc043650cd5f57eb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/bcb8d9d9ad136c82dc043650cd5f57eb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/c52449c2094d0b68cb114bce412cf8e8.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/da663e1dd6bbb6df4d8efb8eb474f6dd.jfif
 Meta Title: Stanley Style Lavender Floral Print Tumbler - Drinkware Accessory De
 Meta Description: Buy Stanley Style Lavender Floral Print Tumbler - Drinkware Accessory Designed For Liquid Hydration And Daily Travel Routine - 600ML online in Pakistan from ASM
 Description: This Stanley Style Lavender Floral Print Tumbler Provides A Reliable Solution For Drinkware Accessories And Routine Liquid Hydration Needs. Formulated To Deliver Travel Benefits While Supporting Stanley Style Lavender Floral Print Tumbler Utility, It Fits Seamlessly Into Your Regular Liquid Hydration Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Liquid Hydration Requirements, This Stanley Style Lavender Floral Print Tumbler Serves As An Essential Drinkware Accessory For Daily Life.Key FeaturesStanley Style Lavender Floral Print Tumbler Formulated For Drinkware AccessoriesDelivers Liquid Hydration And Supports Daily Travel UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Liquid Hydration And Travel RoutinesDesigned For Easy Operation And Convenient UseEssential Drinkware Accessory For Everyday Maintenance
-Regular Price: 2362
-Sale Price: 2362
+Wholesale Price: 2362
+Regular Price: 4210
+Sale Price: 3369
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

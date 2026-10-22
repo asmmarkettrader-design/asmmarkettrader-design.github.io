@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multipurpose Liquid Transfer Pump | Portable Manual Oil, Water, Fuel Hand Transfer Pump
 Product ID: hhc-2131493
 SKU: hhc-2131493
@@ -7,11 +8,16 @@ Slug: multipurpose-liquid-transfer-pump-portable-manual-oil-water-fuel-hand-t-cd
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/61mc554j0yL._AC_SX450_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/61mc554j0yL._AC_SX450_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/61ZumNHYiAL._AC_SY450_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/51HEmJmcgFS._AC_SY450_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/614RmOJYQJL._AC_SY450_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/c995781ceb317abe282eb4a456a62ce8.webp
 Meta Title: Multipurpose Liquid Transfer Pump | Portable Manual Oil, Water, Fuel
 Meta Description: Buy Multipurpose Liquid Transfer Pump | Portable Manual Oil, Water, Fuel Hand Transfer Pump online in Pakistan from ASM VEO. Multipurpose Liquid Transfer Pump |
 Description: Multipurpose Liquid Transfer Pump | Portable Manual Oil, Water, Fuel Hand Transfer Pump -Size 5 & 6.5 Feet
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

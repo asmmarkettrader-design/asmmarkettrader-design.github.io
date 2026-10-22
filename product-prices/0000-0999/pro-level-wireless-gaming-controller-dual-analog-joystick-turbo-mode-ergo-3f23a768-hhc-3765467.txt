@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pro-Level Wireless Gaming Controller – Dual Analog Joystick, Turbo Mode & Ergonomic Grip
 Product ID: hhc-3765467
 SKU: hhc-3765467
@@ -7,11 +8,16 @@ Slug: pro-level-wireless-gaming-controller-dual-analog-joystick-turbo-mode-er-3f
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/51ded87346e6eb8ccb5dd98c18da2468.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/51ded87346e6eb8ccb5dd98c18da2468.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/ec4290b6a7a1e64f2a06c4572d81dad6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/c1bdea2ae402edd87b958b9a01abfbd6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/d1695025dc77e3a22ce77665c6dbeb20.jpg
 Meta Title: Pro-Level Wireless Gaming Controller – Dual Analog Joystick, Turbo M
 Meta Description: Buy Pro-Level Wireless Gaming Controller – Dual Analog Joystick, Turbo Mode & Ergonomic Grip online in Pakistan from ASM VEO. Upgrade your gaming experience wit
 Description: Upgrade your gaming experience with this Pro-Level Wireless Gaming Controller. Featuring dual analog joysticks, 19 responsive buttons, Turbo mode for rapid fire, and an ergonomic design for long-lasting comfort. Compatible with multiple platforms for ultimate versatility. Built with high-quality components for precision control.
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

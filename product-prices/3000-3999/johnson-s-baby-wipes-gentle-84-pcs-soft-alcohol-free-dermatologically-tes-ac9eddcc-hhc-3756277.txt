@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Johnson’s Baby Wipes Gentle 84 Pcs – Soft, Alcohol-Free, Dermatologically Tested Wipes for Newborn & Sensitive Skin
 Product ID: hhc-3756277
 SKU: hhc-3756277
@@ -7,11 +8,16 @@ Slug: johnson-s-baby-wipes-gentle-84-pcs-soft-alcohol-free-dermatologically-t-ac
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/08f3015e89d4131fae1e562f0e37e541.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/08f3015e89d4131fae1e562f0e37e541.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/018351bde25d6f9c0e8c0e7400280fae.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/853d5f2e0d1753df25418d2570c66c94.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/87b255df9c217f36142efdd317953c99.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/dcfe7c4cafed2ee04ca7f265bf9f58a6.jpeg
 Meta Title: Johnson’s Baby Wipes Gentle 84 Pcs – Soft, Alcohol-Free, Dermatologi
 Meta Description: Buy Johnson’s Baby Wipes Gentle 84 Pcs – Soft, Alcohol-Free, Dermatologically Tested Wipes for Newborn & Sensitive Skin online in Pakistan from ASM VEO. Soft an
 Description: Soft and gentle baby wipes designed to cleanse delicate skin while keeping it moisturized and fresh. Ideal for everyday use.
-Regular Price: 341
-Sale Price: 341
+Wholesale Price: 291
+Regular Price: 646
+Sale Price: 496
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

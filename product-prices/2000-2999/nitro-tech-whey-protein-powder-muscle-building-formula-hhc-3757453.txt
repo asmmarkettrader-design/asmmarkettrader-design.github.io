@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nitro Tech Whey Protein Powder – Muscle Building Formula
 Product ID: hhc-3757453
 SKU: hhc-3757453
@@ -7,11 +8,16 @@ Slug: nitro-tech-whey-protein-powder-muscle-building-formula-hhc-3757453
 Category: Home & Kitchen
 Subcategory: Fitness & Gym
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/9cf6d0135fec5bf76da252544a6e583f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/9cf6d0135fec5bf76da252544a6e583f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/735ade7a1ab60f6d08d735a4cd8b4d31.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/fc1e085c0586328aee62cdeb47deb49d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/6f1b3d5ea29c8c21a5092f1fdd4c516a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/21d573bbcba53a0b3a801d128d378390.jpeg
 Meta Title: Nitro Tech Whey Protein Powder – Muscle Building Formula | Buy Onlin
 Meta Description: Buy Nitro Tech Whey Protein Powder – Muscle Building Formula online in Pakistan from ASM VEO. Nitro Tech whey protein powder designed for muscle growth and reco
 Description: Nitro Tech whey protein powder designed for muscle growth and recovery. Fast-absorbing formula with high-quality protein.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

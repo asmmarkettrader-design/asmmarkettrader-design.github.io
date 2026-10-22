@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Body Wash | Coconut & Nut Oil | Bio‑Organic | 500 ml | Deep Hydration for Dry & Sensitive Skin
 Product ID: hhc-3754818
 SKU: hhc-3754818
@@ -7,11 +8,16 @@ Slug: yardlie-body-wash-coconut-nut-oil-bio-organic-500-ml-deep-hydration-for-9f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/f822a91729042dab5bd0e0d7c5a37e42.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/f822a91729042dab5bd0e0d7c5a37e42.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/5e1bf7eaa07d636568e5318ba64621b3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/a5ddc6a7fab16131bf0fd7654201cb38.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/f1743f4054d9d1115d5e827a428aebeb.jpeg
 Meta Title: Yardlie Body Wash | Coconut & Nut Oil | Bio‑Organic | 500 ml | Deep
 Meta Description: Buy Yardlie Body Wash | Coconut & Nut Oil | Bio‑Organic | 500 ml | Deep Hydration for Dry & Sensitive Skin online in Pakistan from ASM VEO. Yardlie Bio‑Organic
 Description: Yardlie Bio‑Organic Body Wash, Coconut & Nut Oil, 500 ml. Deep hydration for dry and sensitive skin.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

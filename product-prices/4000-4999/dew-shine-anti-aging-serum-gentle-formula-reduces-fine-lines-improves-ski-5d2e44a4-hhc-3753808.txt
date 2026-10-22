@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dew Shine Anti Aging Serum Gentle Formula Reduces Fine Lines Improves Skin Elasticity Provides Radiant Glow And Smooth Texture For Daily Use - 30ml
 Product ID: hhc-3753808
 SKU: hhc-3753808
@@ -7,11 +8,16 @@ Slug: dew-shine-anti-aging-serum-gentle-formula-reduces-fine-lines-improves-s-5d
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/561b59a0ac7d7dd2c3039f1196c162eb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/561b59a0ac7d7dd2c3039f1196c162eb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/06b0342cc033c8a78e9454be6da8037b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/3a00e0733920d78a0a3002bb9667a566.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/b9b45fae2e6938d23bf593648f3a1259.jpeg
 Meta Title: Dew Shine Anti Aging Serum Gentle Formula Reduces Fine Lines Improve
 Meta Description: Buy Dew Shine Anti Aging Serum Gentle Formula Reduces Fine Lines Improves Skin Elasticity Provides Radiant Glow And Smooth Texture For Daily Use - 30ml online i
 Description: Dew Shine Anti Aging Serum Provides Gentle Formula Reduces Fine Lines Improves Skin Elasticity And Radiant Glow
-Regular Price: 2558
-Sale Price: 2558
+Wholesale Price: 2558
+Regular Price: 4540
+Sale Price: 3633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

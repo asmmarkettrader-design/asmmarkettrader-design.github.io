@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ABS Canadian Style Rear Trunk Spoiler with Brake Light for Toyota Corolla (2009–2014)
 Product ID: hhc-3764283
 SKU: hhc-3764283
@@ -7,11 +8,16 @@ Slug: abs-canadian-style-rear-trunk-spoiler-with-brake-light-for-toyota-corol-c3
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/99f1265dfb0a93078fb7c6a2021e1cc9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/99f1265dfb0a93078fb7c6a2021e1cc9.jpeg
 Meta Title: ABS Canadian Style Rear Trunk Spoiler with Brake Light for Toyota Co
 Meta Description: Buy ABS Canadian Style Rear Trunk Spoiler with Brake Light for Toyota Corolla (2009–2014) online in Pakistan from ASM VEO. A Canadian-style ABS rear trunk spoil
 Description: A Canadian-style ABS rear trunk spoiler featuring an integrated LED brake light, designed for 2009–2014 Toyota Corolla models. Delivers enhanced rear aerodynamics, improved braking visibility, and a sporty OEM-inspired profile.
-Regular Price: 7359
-Sale Price: 7359
+Wholesale Price: 7359
+Regular Price: 12180
+Sale Price: 9747
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

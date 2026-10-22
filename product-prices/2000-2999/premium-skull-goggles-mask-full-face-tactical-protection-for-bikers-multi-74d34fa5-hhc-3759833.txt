@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Skull Goggles Mask – Full Face Tactical Protection for Bikers (Multi-Color Iridium Lens)
 Product ID: hhc-3759833
 SKU: hhc-3759833
@@ -7,11 +8,16 @@ Slug: premium-skull-goggles-mask-full-face-tactical-protection-for-bikers-mul-74
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/b1a0994ac9c038be95a839d9f8fa41e3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/b1a0994ac9c038be95a839d9f8fa41e3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/63000bbae55ec20efd666b5b8cc0c9b0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/9e942e0326523a65179e71cefac32692.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/c8b2114ae2219e822401ba27cc52adcb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/d9ebb082f14b020c717a018b35f3650b.jpeg
 Meta Title: Premium Skull Goggles Mask – Full Face Tactical Protection for Biker
 Meta Description: Buy Premium Skull Goggles Mask – Full Face Tactical Protection for Bikers (Multi-Color Iridium Lens) online in Pakistan from ASM VEO. Upgrade your riding gear w
 Description: Upgrade your riding gear with the Premium Skull Goggles Mask, specifically designed for bikers who demand both style and maximum safety on the road. This mask provides a bold, tactical look while offering essential protection against wind, dust, and debris.
-Regular Price: 1077
-Sale Price: 1077
+Wholesale Price: 1027
+Regular Price: 1900
+Sale Price: 1518
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Neck Portable No Bladeless Hanging Neck Rechargeable Air Cooler Mini Summer Sport Fan (Random Colors)
 Product ID: hhc-1330963
 SKU: hhc-1330963
@@ -7,11 +8,16 @@ Slug: mini-neck-portable-no-bladeless-hanging-neck-rechargeable-air-cooler-mi-40
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/6-2.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/6-2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/5-2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/4-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/3-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/06/2-3.webp
 Meta Title: Mini Neck Portable No Bladeless Hanging Neck Rechargeable Air Cooler
 Meta Description: Buy Mini Neck Portable No Bladeless Hanging Neck Rechargeable Air Cooler Mini Summer Sport Fan (Random Colors) online in Pakistan from ASM VEO. Mini Neck Portab
 Description: Mini Neck Portable No Bladeless Hanging Neck Rechargeable Air Cooler Mini Summer Sport Fan (Random Colors)
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

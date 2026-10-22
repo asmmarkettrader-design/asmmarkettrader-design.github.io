@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Stickytile Frames For Home Decoration Durable Material Easy Installation And Everyday Use With Elegant Look - Pack of 3Pcs
 Product ID: hhc-3753664
 SKU: hhc-3753664
@@ -7,11 +8,16 @@ Slug: wooden-stickytile-frames-for-home-decoration-durable-material-easy-inst-32
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/caa24fd68b7ff2de0b167a6ed132f3ec.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/caa24fd68b7ff2de0b167a6ed132f3ec.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/e56f63bc9b92008bd8410cb6189e6b39.jpeg
 Meta Title: Wooden Stickytile Frames For Home Decoration Durable Material Easy I
 Meta Description: Buy Wooden Stickytile Frames For Home Decoration Durable Material Easy Installation And Everyday Use With Elegant Look - Pack of 3Pcs online in Pakistan from AS
 Description: Wooden Stickytile Frames Designed For Easy Use And Stylish Home Decoration
-Regular Price: 825
-Sale Price: 825
+Wholesale Price: 775
+Regular Price: 1480
+Sale Price: 1184
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

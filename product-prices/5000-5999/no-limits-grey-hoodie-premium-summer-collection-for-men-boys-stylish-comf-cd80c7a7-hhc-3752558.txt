@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: No Limits Grey Hoodie – Premium Summer Collection for Men & Boys | Stylish, Comfortable & Casual Wear
 Product ID: hhc-3752558
 SKU: hhc-3752558
@@ -7,11 +8,16 @@ Slug: no-limits-grey-hoodie-premium-summer-collection-for-men-boys-stylish-co-cd
 Category: Fashion
 Subcategory: Trucksuits & Activewear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/cbe6c00d641768835f71738807f44994.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/cbe6c00d641768835f71738807f44994.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/ce461e1455dfc3b411e06318c7524d52.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/e6135baa24d078cfee66ff145cf88f82.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/1a6f544b71c664712181242d08f2c29e.jpeg
 Meta Title: No Limits Grey Hoodie – Premium Summer Collection for Men & Boys | S
 Meta Description: Buy No Limits Grey Hoodie – Premium Summer Collection for Men & Boys | Stylish, Comfortable & Casual Wear online in Pakistan from ASM VEO. Step into summer with
 Description: Step into summer with confidence in our No Limits Grey Hoodie—crafted for comfort, styled for impact. Featuring bold printed graphics and premium fabric, it’s the perfect blend of fashion and motivation for men and boys.
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

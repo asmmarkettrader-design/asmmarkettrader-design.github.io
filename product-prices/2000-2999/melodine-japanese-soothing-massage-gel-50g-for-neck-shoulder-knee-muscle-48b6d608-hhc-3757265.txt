@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Melodine Japanese Soothing Massage Gel (50g) – For Neck, Shoulder, Knee & Muscle Pain Relief - Fast Acting
 Product ID: hhc-3757265
 SKU: hhc-3757265
@@ -7,11 +8,16 @@ Slug: melodine-japanese-soothing-massage-gel-50g-for-neck-shoulder-knee-muscl-48
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/a7e19d1a13f0f316b66508da0e318c8a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/a7e19d1a13f0f316b66508da0e318c8a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/01377ab43269661e747c08294d8decae.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/39f8da69938e74cff6f9d8a3a5bec9e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/0d8e18c0e930edb30d8d5f8a97177462.jpeg
 Meta Title: Melodine Japanese Soothing Massage Gel (50g) – For Neck, Shoulder, K
 Meta Description: Buy Melodine Japanese Soothing Massage Gel (50g) – For Neck, Shoulder, Knee & Muscle Pain Relief - Fast Acting online in Pakistan from ASM VEO. Experience fast-
 Description: Experience fast-acting relief with Melodine Japanese Soothing Massage Gel. Specially formulated for targeted muscle and joint support, this non-greasy gel uses advanced Japanese technology to soothe aches in the neck, shoulders, and knees while promoting muscle repair.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

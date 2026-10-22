@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Calligraphy Photo Tiles Large 3pcs Elegant Design Compact Build Perfect Choice For Home Office And Gift Use
 Product ID: hhc-3754196
 SKU: hhc-3754196
@@ -7,11 +8,16 @@ Slug: islamic-calligraphy-photo-tiles-large-3pcs-elegant-design-compact-build-ab
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/2e6bdae4e491a97b6c1fde189b844352.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/2e6bdae4e491a97b6c1fde189b844352.jpeg
 Meta Title: Islamic Calligraphy Photo Tiles Large 3pcs Elegant Design Compact Bu
 Meta Description: Buy Islamic Calligraphy Photo Tiles Large 3pcs Elegant Design Compact Build Perfect Choice For Home Office And Gift Use online in Pakistan from ASM VEO. Islamic
 Description: Islamic Calligraphy Photo Tiles Provide Durable Quality Reliable Utility Comfortable Use Elegant Design And Compact Build
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

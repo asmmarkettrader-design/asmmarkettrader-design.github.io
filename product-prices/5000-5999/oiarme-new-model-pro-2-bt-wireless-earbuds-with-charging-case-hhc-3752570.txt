@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Oiarme New Model Pro 2 BT – Wireless Earbuds with Charging Case
 Product ID: hhc-3752570
 SKU: hhc-3752570
@@ -7,11 +8,16 @@ Slug: oiarme-new-model-pro-2-bt-wireless-earbuds-with-charging-case-hhc-3752570
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/71bcabffa992fac68fb3a57e018557a5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/71bcabffa992fac68fb3a57e018557a5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/85b13d9f40cea901eb8c9b4cac5203fd.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/f98695f82958aebdedd49ba41efd65fb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/0439328ddd89cb01d05398d820566b92.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/e78adfb992395043b4f43751bd18d949.mp4
 Meta Title: Oiarme New Model Pro 2 BT – Wireless Earbuds with Charging Case | Bu
 Meta Description: Buy Oiarme New Model Pro 2 BT – Wireless Earbuds with Charging Case online in Pakistan from ASM VEO. High-quality Oiarme Pro 2 BT earbuds with magnetic design,
 Description: High-quality Oiarme Pro 2 BT earbuds with magnetic design, long battery life, wireless charging, and Type-C cable.
-Regular Price: 2305
-Sale Price: 2305
+Wholesale Price: 2305
+Regular Price: 4120
+Sale Price: 3292
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

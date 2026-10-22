@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pond’s Pure White Face Wash with Activated Charcoal – Deep Cleansing & Brightening Daily Face Cleanser (100g)
 Product ID: hhc-3752478
 SKU: hhc-3752478
@@ -7,11 +8,16 @@ Slug: pond-s-pure-white-face-wash-with-activated-charcoal-deep-cleansing-brig-9c
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/b71b8948e437f60234f0722075562637.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/b71b8948e437f60234f0722075562637.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/c700d18db242a43afdc0bd0b6d3b7c09.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/916687c603676af362810f47622c1ec0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/694d96be17c175cac3539c811c8b1501.jpeg
 Meta Title: Pond’s Pure White Face Wash with Activated Charcoal – Deep Cleansing
 Meta Description: Buy Pond’s Pure White Face Wash with Activated Charcoal – Deep Cleansing & Brightening Daily Face Cleanser (100g) online in Pakistan from ASM VEO. Pond’s Pure W
 Description: Pond’s Pure White Face Wash with activated charcoal deeply cleanses pores, removes dirt and excess oil, and leaves skin fresh, bright, and radiant. Perfect for daily use.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: USB Dormitory Camping Small Ceiling Fan Rechargeable With 8 Hour Timer Night Light And 4 Speed Portable Design
 Product ID: hhc-3757093
 SKU: hhc-3757093
@@ -7,11 +8,16 @@ Slug: usb-dormitory-camping-small-ceiling-fan-rechargeable-with-8-hour-timer-090
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/c9f9e968547741779ee856105ea8cd63.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/c9f9e968547741779ee856105ea8cd63.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/cfff803ed80dfd1c674cb326145a108a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/b632e6ca4608c4494bf7d2dc2ff6f506.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/997a17852e049abcb8a213260dc4b647.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/c37155709563f14dfc9d7fb5f2903478.png
 Meta Title: USB Dormitory Camping Small Ceiling Fan Rechargeable With 8 Hour Tim
 Meta Description: Buy USB Dormitory Camping Small Ceiling Fan Rechargeable With 8 Hour Timer Night Light And 4 Speed Portable Design online in Pakistan from ASM VEO. Rechargeable
 Description: Rechargeable USB Ceiling Fan With Night Light 8 Hour Timer And 4 Speed Settings Perfect For Dormitory Camping And Portable Use.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tri-Stage Windshield Wiper Pair Blades for All Brand Cars, Honda City, Honda Civic, Toyota Corolla, Suzuki Swift, Suzuki Cultus, Suzuki Alto, All models
 Product ID: hhc-3756185
 SKU: hhc-3756185
@@ -7,11 +8,16 @@ Slug: tri-stage-windshield-wiper-pair-blades-for-all-brand-cars-honda-city-ho-e0
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/9d424bf8f188dd5bdd37cf9c2abdc0d5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/9d424bf8f188dd5bdd37cf9c2abdc0d5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/f65d1bf04d6fed3d73a02cb0a7b0236e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/b12b1be6db81dcfe87f1512efceb327f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/510a7682057074397257c03f57790e67.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/01649c2e36cc9aa5a849aa2549063a06.jpeg
 Meta Title: Tri-Stage Windshield Wiper Pair Blades for All Brand Cars, Honda Cit
 Meta Description: Buy Tri-Stage Windshield Wiper Pair Blades for All Brand Cars, Honda City, Honda Civic, Toyota Corolla, Suzuki Swift, Suzuki Cultus, Suzuki Alto, All models onl
 Description: High-performance tri-stage windshield wiper blades designed for smooth, streak-free wiping in all weather conditions. Compatible with all car brands including Honda, Toyota, and Suzuki models.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

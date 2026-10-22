@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: STAINLESS STEEL VACUUM FLASK SET, 500ML WITH 2CUPS (random color)
 Product ID: hhc-1998211
 SKU: hhc-1998211
@@ -7,11 +8,16 @@ Slug: stainless-steel-vacuum-flask-set-500ml-with-2cups-random-color-hhc-1998211
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-18-at-9.23.37-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-18-at-9.23.37-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-18-at-9.23.36-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-21-at-4.41.42-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-21-at-4.41.42-PM-2.jpeg
 Meta Title: STAINLESS STEEL VACUUM FLASK SET, 500ML WITH 2CUPS (random color) |
 Meta Description: Buy STAINLESS STEEL VACUUM FLASK SET, 500ML WITH 2CUPS (random color) online in Pakistan from ASM VEO. DescriptionOur Stainless Steel Vacuum Flask Set is double
 Description: DescriptionOur Stainless Steel Vacuum Flask Set is double walled and vacuum insulated, which keeps your favorite beverage hot or cold for hours. Made of food-grade stainless steel, the Stainless Steel Vacuum Flask Set, 500ml with 2cups is durable and easy to clean. it can be used for a long time. Portable &amp; convenient: The travel mug is lightweight and portable, which can be easily carried anywhere. it is very suitable for outdoor activities such as camping, hiking, traveling, fishing, etc.
-Regular Price: 1485
-Sale Price: 1485
+Wholesale Price: 1435
+Regular Price: 2620
+Sale Price: 2098
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

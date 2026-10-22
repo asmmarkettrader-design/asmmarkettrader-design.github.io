@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashee'S Creamy High Pigmented Lip Pencil - Makeup Product Designed For Personal Style And Daily Beauty Routine
 Product ID: hhc-3762910
 SKU: hhc-3762910
@@ -7,11 +8,16 @@ Slug: kashee-s-creamy-high-pigmented-lip-pencil-makeup-product-designed-for-p-ab
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Kashee'S Creamy High Pigmented Lip Pencil - Makeup Product Designed
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/b20dfebe976cc938cf6acc195238322f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/b20dfebe976cc938cf6acc195238322f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/2fe09d397629488f8ca60312090fea2f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/94b96d7eee4fab54257b01bd039dcf88.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/83d17a3da80a532af5747fd600a7d9ff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/f86de9624b97413b9a496d8e0c25f54c.jpeg
+Meta Title: Kashee'S Creamy High Pigmented Lip Pencil - Makeup Product Designed 
 Meta Description: Buy Kashee'S Creamy High Pigmented Lip Pencil - Makeup Product Designed For Personal Style And Daily Beauty Routine online in Pakistan from ASM VEO. The Kashee'
 Description: The Kashee'S Creamy High Pigmented Lip Pencil Is A Makeup Product Formulated To Help Provide Personal Style And Lip Definition During Daily Use.
-Regular Price: 852
-Sale Price: 852
+Wholesale Price: 802
+Regular Price: 1530
+Sale Price: 1223
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

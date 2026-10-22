@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magsafe Apple Wireless Mobile Charger Fast Charging Compatible All Devices - Electronic Accessory Designed For Power And Charging Routine
 Product ID: hhc-3762582
 SKU: hhc-3762582
@@ -7,11 +8,16 @@ Slug: magsafe-apple-wireless-mobile-charger-fast-charging-compatible-all-devi-65
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/e793b6389cc48277ecaa6984e0639d31.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/e793b6389cc48277ecaa6984e0639d31.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/e3f8f8ffd1389e1bfa8250fa290f948c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/1b643e1153db02e6c84e033da3ee1763.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/46e87f9bd731147687998bdeab1f878f.jpg
 Meta Title: Magsafe Apple Wireless Mobile Charger Fast Charging Compatible All D
 Meta Description: Buy Magsafe Apple Wireless Mobile Charger Fast Charging Compatible All Devices - Electronic Accessory Designed For Power And Charging Routine online in Pakistan
 Description: The Magsafe Apple Wireless Mobile Charger Fast Charging Compatible All Devices Is An Electronic Accessory Formulated To Help Provide Power And Charging During Daily Use.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

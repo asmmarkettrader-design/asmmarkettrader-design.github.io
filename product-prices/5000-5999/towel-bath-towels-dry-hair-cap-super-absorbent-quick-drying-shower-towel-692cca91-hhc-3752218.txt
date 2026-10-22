@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Towel Bath Towels - Dry Hair Cap Super Absorbent Quick-Drying Shower Towel (Random Color)
 Product ID: hhc-3752218
 SKU: hhc-3752218
@@ -7,11 +8,16 @@ Slug: towel-bath-towels-dry-hair-cap-super-absorbent-quick-drying-shower-towe-69
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757929419-68c7dfcba0984-2023_10_bec8bbfe7aaf46f2211ebb70e0d2991f.jpg_750x750.jpg_-(1).webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757929419-68c7dfcba0984-2023_10_bec8bbfe7aaf46f2211ebb70e0d2991f.jpg_750x750.jpg_-(1).webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757929417-68c7dfc9e1645-2024_08_WhatsApp-Image-2023-08-16-at-4.53.02-PM-600x631-1-(1).jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757929420-68c7dfcc03ceb-2023_10_07c32697f16fc460ced0621b745a21c1.jpg_750x750.jpg_-(1).webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757929419-68c7dfcb454e5-2023_10_17776082e5190356372a4d3774e6d520.jpg_750x750.jpg_.webp
 Meta Title: Towel Bath Towels - Dry Hair Cap Super Absorbent Quick-Drying Shower
 Meta Description: Buy Towel Bath Towels - Dry Hair Cap Super Absorbent Quick-Drying Shower Towel (Random Color) online in Pakistan from ASM VEO. Soft and absorbent hair drying to
 Description: Soft and absorbent hair drying towel wrap, perfect for quick and gentle drying after showers. Lightweight, easy to use, and available in multiple vibrant colors—ideal for home, gym, or travel use.
-Regular Price: 214
-Sale Price: 214
+Wholesale Price: 164
+Regular Price: 456
+Sale Price: 306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

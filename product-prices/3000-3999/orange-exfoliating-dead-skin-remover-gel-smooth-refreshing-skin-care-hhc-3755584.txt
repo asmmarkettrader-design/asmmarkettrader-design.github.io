@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Orange Exfoliating Dead Skin Remover Gel | Smooth & Refreshing Skin Care
 Product ID: hhc-3755584
 SKU: hhc-3755584
@@ -7,11 +8,16 @@ Slug: orange-exfoliating-dead-skin-remover-gel-smooth-refreshing-skin-care-hhc-3
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/892d70991be9c641d5fc206d8eeeee3a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/892d70991be9c641d5fc206d8eeeee3a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/fd55a24553251df3e53508a98a1e2ec4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/62f4af310ce5444bc7ade2115b8e9153.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/b40af26e87bcf71d4eec26d80135bc0b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/dfcb905e778e33749c8c37aa8fceb1e2.png
 Meta Title: Orange Exfoliating Dead Skin Remover Gel | Smooth & Refreshing Skin
 Meta Description: Buy Orange Exfoliating Dead Skin Remover Gel | Smooth & Refreshing Skin Care online in Pakistan from ASM VEO. Orange exfoliating gel, Removes dead skin gently,
 Description: Orange exfoliating gel, Removes dead skin gently, leaving skin smooth, fresh, and revitalized.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

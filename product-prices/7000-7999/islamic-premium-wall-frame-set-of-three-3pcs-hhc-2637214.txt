@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Premium Wall Frame Set of Three (3Pcs)
 Product ID: hhc-2637214
 SKU: hhc-2637214
@@ -7,11 +8,16 @@ Slug: islamic-premium-wall-frame-set-of-three-3pcs-hhc-2637214
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/jjjj.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/jjjj.jpg
 Meta Title: Islamic Premium Wall Frame Set of Three (3Pcs) | Buy Online in Pakis
 Meta Description: Buy Islamic Premium Wall Frame Set of Three (3Pcs) online in Pakistan from ASM VEO. Material: MDFColor: MulticolorEach Frame Size: 11x8 inchesEasy to Install wi
 Description: Material: MDFColor: MulticolorEach Frame Size: 11x8 inchesEasy to Install with Double Tape.Decoration ItemsPerfect Home Decoration ItemIslamic Wall ArtWall Decoration Items
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

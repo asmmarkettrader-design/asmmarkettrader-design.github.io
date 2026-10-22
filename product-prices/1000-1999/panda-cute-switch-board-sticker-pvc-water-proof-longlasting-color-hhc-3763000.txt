@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Panda Cute Switch Board Sticker Pvc Water Proof Longlasting Color
 Product ID: hhc-3763000
 SKU: hhc-3763000
@@ -7,11 +8,16 @@ Slug: panda-cute-switch-board-sticker-pvc-water-proof-longlasting-color-hhc-3763
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/53724ef8c16bc5da2e29c90817a9267f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/53724ef8c16bc5da2e29c90817a9267f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/d5da276b6d65d26c65a119c19811b0b6.jpg
 Meta Title: Panda Cute Switch Board Sticker Pvc Water Proof Longlasting Color |
 Meta Description: Buy Panda Cute Switch Board Sticker Pvc Water Proof Longlasting Color online in Pakistan from ASM VEO. Panda Cute Switch Board Sticker Pvc Water Proof Longlasti
 Description: Panda Cute Switch Board Sticker Pvc Water Proof Longlasting Color and Pasting Sticker
-Regular Price: 304
-Sale Price: 304
+Wholesale Price: 254
+Regular Price: 591
+Sale Price: 441
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

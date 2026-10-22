@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heaven Dove One Drop Keratin whitening Cream and Essence 55ml
 Product ID: hhc-2002283
 SKU: hhc-2002283
@@ -7,11 +8,16 @@ Slug: heaven-dove-one-drop-keratin-whitening-cream-and-essence-55ml-hhc-2002283
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: Dove
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/8ef2ff86-7e4f-4ee2-932c-fd3b7d95de83_480x480.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/8ef2ff86-7e4f-4ee2-932c-fd3b7d95de83_480x480.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/8e6c33056520d9565f4e78fc377151cf_jpg_1024x1024.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-10.35.52-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-10.35.52-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-10.35.53-PM.jpeg
 Meta Title: Heaven Dove One Drop Keratin whitening Cream and Essence 55ml | Buy
 Meta Description: Buy Heaven Dove One Drop Keratin whitening Cream and Essence 55ml online in Pakistan from ASM VEO. product details Heaven Dove Whitening Cream ESSENCE Professio
 Description: product details Heaven Dove Whitening Cream ESSENCE Professional Keratin 55ml Specially formulated with a blend of active ingredients to regenerate and repair skin, whilst reducing visible fine lines and wrinkles. Gives a shining, instant white and moisturized skin. Gives you long lasting fairness. It makes your skin glow and improve the complexion of skin. &nbsp;
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Helmet Wireless Earphone K06A – Bluetooth Helmet Intercom Headset with RGB Control Knob & Noise Reduction
 Product ID: hhc-3756600
 SKU: hhc-3756600
@@ -7,11 +8,16 @@ Slug: helmet-wireless-earphone-k06a-bluetooth-helmet-intercom-headset-with-rg-50
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/a440daf664272670d870667b3b32d28f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/a440daf664272670d870667b3b32d28f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/c27d0821c33ba6d24d7c90793f7a4216.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/ba8c8d6ae96994cd4f0b2e7df55ad76f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/6528608504efe6b346e0ae7b57088652.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/414e497f267d6c0b5f2fa6cd64df5978.jpg
 Meta Title: Helmet Wireless Earphone K06A – Bluetooth Helmet Intercom Headset wi
 Meta Description: Buy Helmet Wireless Earphone K06A – Bluetooth Helmet Intercom Headset with RGB Control Knob & Noise Reduction online in Pakistan from ASM VEO. K06A Helmet Wirel
 Description: K06A Helmet Wireless Earphone is a smart Bluetooth headset designed for motorcycle helmets. It features clear stereo sound, built-in microphone, intelligent noise reduction, and a stylish RGB control knob for easy operation while riding.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

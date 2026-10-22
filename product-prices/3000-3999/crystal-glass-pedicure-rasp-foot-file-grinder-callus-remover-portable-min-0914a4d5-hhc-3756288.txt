@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Crystal Glass Pedicure Rasp | Foot File Grinder | Callus Remover | Portable Mini Beauty Epilator ( Random Color)
 Product ID: hhc-3756288
 SKU: hhc-3756288
@@ -7,11 +8,16 @@ Slug: crystal-glass-pedicure-rasp-foot-file-grinder-callus-remover-portable-m-09
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/f003defee41357b9d0f33199bcc582c5.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/f003defee41357b9d0f33199bcc582c5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/4858a0d54e4e15ad405afe12def2c7a1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/92bd131e515b2670dfff08d53e3c6ec8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/ca0b651c07472fc7905856bf50429900.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/66022dfa7971cd10090195ae3dfa4c77.webp
 Meta Title: Crystal Glass Pedicure Rasp | Foot File Grinder | Callus Remover | P
 Meta Description: Buy Crystal Glass Pedicure Rasp | Foot File Grinder | Callus Remover | Portable Mini Beauty Epilator ( Random Color) online in Pakistan from ASM VEO. Crystal gl
 Description: Crystal glass pedicure rasp for smooth feet. Portable callus remover & mini beauty epilator for facial and body care.
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

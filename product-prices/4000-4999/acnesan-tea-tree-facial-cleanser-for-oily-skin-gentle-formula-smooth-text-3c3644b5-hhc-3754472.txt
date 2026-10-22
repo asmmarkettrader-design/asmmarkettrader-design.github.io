@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acnesan Tea Tree Facial Cleanser For Oily Skin Gentle Formula Smooth Texture Deep Cleansing - 100ML
 Product ID: hhc-3754472
 SKU: hhc-3754472
@@ -7,11 +8,16 @@ Slug: acnesan-tea-tree-facial-cleanser-for-oily-skin-gentle-formula-smooth-te-3c
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4c4444b986efd865d804b435d98c1900.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4c4444b986efd865d804b435d98c1900.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/590868ecf47c061f05a3acfd1217e9f4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/88987254ad087ac59d4bfae37058f831.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/40bb543605bf07f006f8face5618cc8c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4005588449c618f26dad464aff82b929.jpeg
 Meta Title: Acnesan Tea Tree Facial Cleanser For Oily Skin Gentle Formula Smooth
 Meta Description: Buy Acnesan Tea Tree Facial Cleanser For Oily Skin Gentle Formula Smooth Texture Deep Cleansing - 100ML online in Pakistan from ASM VEO. Acnesan Tea Tree Facial
 Description: Acnesan Tea Tree Facial Cleanser For Oily Skin Provides Gentle Formula Smooth Texture Deep Cleansing Premium Quality Comfortable Use And Reliable Utility
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

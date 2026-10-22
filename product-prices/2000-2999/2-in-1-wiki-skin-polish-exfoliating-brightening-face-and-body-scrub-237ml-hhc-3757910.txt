@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 In 1 Wiki Skin Polish | Exfoliating & Brightening Face and Body Scrub (237ml)
 Product ID: hhc-3757910
 SKU: hhc-3757910
@@ -7,11 +8,16 @@ Slug: 2-in-1-wiki-skin-polish-exfoliating-brightening-face-and-body-scrub-237ml-
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/cbf504997b850ea1fd48ba35b817fc51.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/cbf504997b850ea1fd48ba35b817fc51.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/56e89622fbf986b2d1876f57ef58823d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/913f916d3e02362481323cf6f930bcd7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/d84445084e5f6adba87a70b2f9bd739a.jpeg
 Meta Title: 2 In 1 Wiki Skin Polish | Exfoliating & Brightening Face and Body Sc
 Meta Description: Buy 2 In 1 Wiki Skin Polish | Exfoliating & Brightening Face and Body Scrub (237ml) online in Pakistan from ASM VEO. Effective skin polish that exfoliates dead
 Description: Effective skin polish that exfoliates dead skin cells, smooths texture, and enhances natural glow for face and body.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

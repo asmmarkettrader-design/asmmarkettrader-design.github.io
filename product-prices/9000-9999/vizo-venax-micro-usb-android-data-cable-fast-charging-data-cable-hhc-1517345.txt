@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VIZO Venax Micro-USB/Android Data Cable Fast Charging Data Cable
 Product ID: hhc-1517345
 SKU: hhc-1517345
@@ -7,11 +8,16 @@ Slug: vizo-venax-micro-usb-android-data-cable-fast-charging-data-cable-hhc-15173
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WEBTECH-VIZO-DETAIL-20TH-AUGUST_page-0046_cleanup-1.png
 Meta Title: VIZO Venax Micro-USB/Android Data Cable Fast Charging Data Cable | B
 Meta Description: Buy VIZO Venax Micro-USB/Android Data Cable Fast Charging Data Cable online in Pakistan from ASM VEO. Fast charging 2.5Amp 100 Copper in Wire One Meter Cable Hi
 Description: Fast charging 2.5Amp 100 Copper in Wire One Meter Cable High Quality with Quick Charge Data Synchronization
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

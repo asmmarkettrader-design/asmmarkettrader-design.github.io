@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Nutrition Gain Fast Anabolic Weight Gain Supplement 1kg Vanilla Ice Cream Flavor
 Product ID: hhc-3757507
 SKU: hhc-3757507
@@ -7,11 +8,16 @@ Slug: universal-nutrition-gain-fast-anabolic-weight-gain-supplement-1kg-vanil-f4
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/652b2f001a1692b9e0964f3069e980cb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/652b2f001a1692b9e0964f3069e980cb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/6936dcc1ba02757c7db2e07cc8804587.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/813fb6b63b58199903c4164fdffa2e43.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/34519a16e71adfca911f895f52bdc40b.jpeg
 Meta Title: Universal Nutrition Gain Fast Anabolic Weight Gain Supplement 1kg Va
 Meta Description: Buy Universal Nutrition Gain Fast Anabolic Weight Gain Supplement 1kg Vanilla Ice Cream Flavor online in Pakistan from ASM VEO. Universal Nutrition Gain Fast An
 Description: Universal Nutrition Gain Fast Anabolic Weight Gain Supplement 1kg Vanilla Ice Cream Flavor For Muscle Growth.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

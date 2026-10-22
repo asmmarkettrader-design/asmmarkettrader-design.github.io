@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2Pcs RGB 17cm Silicon Flexible 9-LED Strip DRL Daytime Multicolor Light | SMD LED Fancy Light (RGB) For Car Bumper And Bikes
 Product ID: hhc-1461328
 SKU: hhc-1461328
@@ -7,11 +8,16 @@ Slug: 2pcs-rgb-17cm-silicon-flexible-9-led-strip-drl-daytime-multicolor-light-8a
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-17-at-6.20.58-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-17-at-6.20.58-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-17-at-6.21.00-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-17-at-6.21.00-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-17-at-6.21.00-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-17-at-6.20.59-PM-1.jpeg
 Meta Title: 2Pcs RGB 17cm Silicon Flexible 9-LED Strip DRL Daytime Multicolor Li
 Meta Description: Buy 2Pcs RGB 17cm Silicon Flexible 9-LED Strip DRL Daytime Multicolor Light | SMD LED Fancy Light (RGB) For Car Bumper And Bikes online in Pakistan from ASM VEO
 Description: 2Pcs RGB 17cm Silicon Flexible 9-LED Strip DRL Daytime Multicolor Light | SMD LED Fancy Light (RGB) For Car Bumper And Bikes
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

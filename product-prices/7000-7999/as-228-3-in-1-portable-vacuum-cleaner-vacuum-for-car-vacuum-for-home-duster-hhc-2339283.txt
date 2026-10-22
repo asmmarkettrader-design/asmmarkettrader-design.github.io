@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AS 228 - 3 In 1 Portable Vacuum Cleaner, vacuum for car - vacuum for home - duster
 Product ID: hhc-2339283
 SKU: hhc-2339283
@@ -7,11 +8,16 @@ Slug: as-228-3-in-1-portable-vacuum-cleaner-vacuum-for-car-vacuum-for-home-duste
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/vacuum1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/vacuum1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/5715a8921d1ad84da85f335cee766062.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-03-14-at-3.15.07-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/S2c0787b5920d4ae0964e273a68f236638_jpg_960x960q80_jpg_720x.jpeg
 Meta Title: AS 228 - 3 In 1 Portable Vacuum Cleaner, vacuum for car - vacuum for
 Meta Description: Buy AS 228 - 3 In 1 Portable Vacuum Cleaner, vacuum for car - vacuum for home - duster online in Pakistan from ASM VEO. product details charging cable ; Type-c
 Description: product details charging cable ; Type-c can be charged) With a reduced charging time of around 3 hours, different kinds of suction ; nozzles which can help you clean hard-to-reach places easily and remove the sticky dust Rechargeable ; Electric Air DusterBuilt-in large 6000mAh lithium batteries allow this duster to run for nearly 30 minutes continuously. [video width="360" height="456" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2024-11-16-at-5.44.12-PM.mp4"][/video] &nbsp;
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

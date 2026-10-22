@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RB Cosmetics Real Beauty Olive & Charcoal Black Peel‑Off Mask | Deep Cleansing & Purifying Care | Original
 Product ID: hhc-3754820
 SKU: hhc-3754820
@@ -7,11 +8,16 @@ Slug: rb-cosmetics-real-beauty-olive-charcoal-black-peel-off-mask-deep-cleans-28
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/ec7fbf79d0379c3f72a689c9b4327c26.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/ec7fbf79d0379c3f72a689c9b4327c26.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/f1b7d6cde504d7909ff48b722ed57bb3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/75352f15d1605244e3de353744269bf0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/bdcf8bf4c363c483603f660e0631a383.jpeg
 Meta Title: RB Cosmetics Real Beauty Olive & Charcoal Black Peel‑Off Mask | Deep
 Meta Description: Buy RB Cosmetics Real Beauty Olive & Charcoal Black Peel‑Off Mask | Deep Cleansing & Purifying Care | Original online in Pakistan from ASM VEO. RB Cosmetics Rea
 Description: RB Cosmetics Real Beauty Olive & Charcoal Black Peel‑Off Mask. Purifies, detoxifies, and rejuvenates skin with deep cleansing action.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

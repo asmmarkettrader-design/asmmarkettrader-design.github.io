@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AVA Skincare Whitening Face Wash 100ml Gentle Daily Cleanser Brightening Formula For Clear Radiant And Healthy Skin
 Product ID: hhc-3765024
 SKU: hhc-3765024
@@ -7,11 +8,16 @@ Slug: ava-skincare-whitening-face-wash-100ml-gentle-daily-cleanser-brightenin-36
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/b82a3054f20624f554c7d935088ac88c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/b82a3054f20624f554c7d935088ac88c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/34b00bf6a3323bcaadbe8de59d090217.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/841b7a6369f8e9b585aaf60899c33e95.jpeg
 Meta Title: AVA Skincare Whitening Face Wash 100ml Gentle Daily Cleanser Brighte
 Meta Description: Buy AVA Skincare Whitening Face Wash 100ml Gentle Daily Cleanser Brightening Formula For Clear Radiant And Healthy Skin online in Pakistan from ASM VEO. AVA Ski
 Description: AVA Skincare Whitening Face Wash 100ml Is Specially Formulated To Brighten And Refresh Skin With Every Wash. Its gentle yet effective cleansing formula removes dirt, oil, and impurities while supporting a clear and radiant complexion. Lightweight and suitable for all skin types, this face wash provides a smooth cleansing experience without dryness. Designed for daily use, it enhances natural glow and promotes healthy looking skin, making it an essential addition to any skincare routine.Key Features:AVA Skincare Whitening Face Wash 100mlGentle Cleanser For Bright And Clear SkinRemoves Dirt Oil And Impurities EffectivelyWhitening Formula Enhances Natural GlowSuitable For Daily Use Without DrynessCrafted With Quality Ingredients For Healthy SkinPromotes Radiant And Fresh Complexion
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

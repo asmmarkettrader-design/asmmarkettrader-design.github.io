@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (pack of 2 ) Fancy Look lip balm colorless
 Product ID: hhc-2147072
 SKU: hhc-2147072
@@ -7,11 +8,16 @@ Slug: pack-of-2-fancy-look-lip-balm-colorless-hhc-2147072
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.20.57-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.20.57-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.20.57-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.20.56-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.20.55-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.20.55-PM-1.jpeg
 Meta Title: (pack of 2 ) Fancy Look lip balm colorless | Buy Online in Pakistan
 Meta Description: Buy (pack of 2 ) Fancy Look lip balm colorless online in Pakistan from ASM VEO. Fancy Look lip balm colourless Material:Glossy Product Type: lip balm colourless
 Description: Fancy Look lip balm colourless Material:Glossy Product Type: lip balm colourless Package Include: 2 × lip balm [video width="540" height="714" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Video-2024-10-09-at-1.20.57-PM.mp4"][/video]
-Regular Price: 643
-Sale Price: 643
+Wholesale Price: 593
+Regular Price: 1150
+Sale Price: 920
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

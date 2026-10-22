@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Whitening Cream Beauty And Supports Daily Skincare Utility Offers Consistent Performance For Daily Needs  500g
 Product ID: hhc-3764205
 SKU: hhc-3764205
@@ -7,11 +8,16 @@ Slug: zafrani-whitening-cream-beauty-and-supports-daily-skincare-utility-offe-b5
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/1029efac4e5f50d61fe099e7d0dd2841.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/1029efac4e5f50d61fe099e7d0dd2841.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/256e3597365f33928018d7643bdc4d5f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/b0f11a6d5824d7bc91d9947b60169645.jpg
 Meta Title: Zafrani Whitening Cream Beauty And Supports Daily Skincare Utility O
 Meta Description: Buy Zafrani Whitening Cream Beauty And Supports Daily Skincare Utility Offers Consistent Performance For Daily Needs 500g online in Pakistan from ASM VEO. This
 Description: This Zafrani Cream Whitening And Moisturizing Beauty Cream Provides A Reliable Solution For Skincare Products And Routine Beauty Needs. Formulated To Deliver Skincare Benefits While Supporting Zafrani Cream Whitening And Moisturizing Beauty Cream Utility,
-Regular Price: 525
-Sale Price: 525
+Wholesale Price: 475
+Regular Price: 960
+Sale Price: 772
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

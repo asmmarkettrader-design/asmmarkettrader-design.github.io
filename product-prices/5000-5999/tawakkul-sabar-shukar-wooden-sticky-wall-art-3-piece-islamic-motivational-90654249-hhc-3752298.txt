@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tawakkul | Sabar | Shukar Wooden Sticky Wall Art – 3 Piece Islamic Motivational Frame Set, 8x11 inch Each with Easy Sticky Tape Installation
 Product ID: hhc-3752298
 SKU: hhc-3752298
@@ -7,11 +8,16 @@ Slug: tawakkul-sabar-shukar-wooden-sticky-wall-art-3-piece-islamic-motivation-90
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/ea09d4404aa5dfd42dc7ccc5fd19a313.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/ea09d4404aa5dfd42dc7ccc5fd19a313.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/f1435d8b1bd7614de6945319844bf895.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/76f06a05611600c178a1a3a914ed3849.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/600553031eb7d3c55f7926f309e01bf5.png
 Meta Title: Tawakkul | Sabar | Shukar Wooden Sticky Wall Art – 3 Piece Islamic M
 Meta Description: Buy Tawakkul | Sabar | Shukar Wooden Sticky Wall Art – 3 Piece Islamic Motivational Frame Set, 8x11 inch Each with Easy Sticky Tape Installation online in Pakis
 Description: Tawakkul | Sabar | Shukar Wooden Sticky Wall Art – 3 Piece Islamic Motivational Frame Set, 8x11 inch Each with Easy Sticky Tape Installation
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

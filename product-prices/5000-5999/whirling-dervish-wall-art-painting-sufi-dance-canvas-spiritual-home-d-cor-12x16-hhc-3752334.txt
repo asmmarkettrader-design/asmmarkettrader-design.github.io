@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Whirling Dervish Wall Art Painting – Sufi Dance Canvas, Spiritual Home Décor (12x16)
 Product ID: hhc-3752334
 SKU: hhc-3752334
@@ -7,11 +8,16 @@ Slug: whirling-dervish-wall-art-painting-sufi-dance-canvas-spiritual-home-d-cor-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/bdcb7ee376cb38dd67e933e89e8c1506.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/bdcb7ee376cb38dd67e933e89e8c1506.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/f0a9188d21a154b394bb4d41f303604e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/2a7fa4a17b621fc16e5d6a26e38ace26.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/f90f7f68001f77b59a98d6503a21f9c4.jpeg
 Meta Title: Whirling Dervish Wall Art Painting – Sufi Dance Canvas, Spiritual Ho
 Meta Description: Buy Whirling Dervish Wall Art Painting – Sufi Dance Canvas, Spiritual Home Décor (12x16) online in Pakistan from ASM VEO. Vibrant Whirling Dervish canvas painti
 Description: Vibrant Whirling Dervish canvas painting, showcasing Sufi dance art with warm colors. A stunning statement piece for living rooms, offices, or spiritual spaces.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

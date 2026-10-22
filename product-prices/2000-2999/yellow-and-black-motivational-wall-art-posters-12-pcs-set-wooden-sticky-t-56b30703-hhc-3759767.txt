@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yellow And Black Motivational Wall Art Posters 12 Pcs Set Wooden Sticky Tiles 5x7 Inches Easy Mounting
 Product ID: hhc-3759767
 SKU: hhc-3759767
@@ -7,11 +8,16 @@ Slug: yellow-and-black-motivational-wall-art-posters-12-pcs-set-wooden-sticky-56
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/9a741ad503c9271d6461d8678b3dbe5e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/9a741ad503c9271d6461d8678b3dbe5e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/d46cc842747643d097925d414c0eff9c.jpeg
 Meta Title: Yellow And Black Motivational Wall Art Posters 12 Pcs Set Wooden Sti
 Meta Description: Buy Yellow And Black Motivational Wall Art Posters 12 Pcs Set Wooden Sticky Tiles 5x7 Inches Easy Mounting online in Pakistan from ASM VEO. Yellow And Black Mot
 Description: Yellow And Black Motivational Wall Art Posters 12 Pcs Set Wooden Sticky Tiles 5x7 Inches With Tape For Easy Mounting.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

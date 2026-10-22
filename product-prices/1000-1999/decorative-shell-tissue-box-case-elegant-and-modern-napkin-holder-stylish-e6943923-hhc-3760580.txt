@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Decorative Shell Tissue Box Case Elegant And Modern Napkin Holder Stylish Daily Use Home And Office Accessory
 Product ID: hhc-3760580
 SKU: hhc-3760580
@@ -7,11 +8,16 @@ Slug: decorative-shell-tissue-box-case-elegant-and-modern-napkin-holder-styli-e6
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/c8e9e147f0331d5a6b834ca46822f1a0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/c8e9e147f0331d5a6b834ca46822f1a0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/38c08b3fe78cf8b531a10523f12cf614.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/8cec355a6e01e2d3cd17b07ee4fdab8f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/8ddb5d00ca3138cb6b5fa0424c5ee113.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/aa43b4bc4d7172ebe99a8a3e9da1096b.jpg
 Meta Title: Decorative Shell Tissue Box Case Elegant And Modern Napkin Holder St
 Meta Description: Buy Decorative Shell Tissue Box Case Elegant And Modern Napkin Holder Stylish Daily Use Home And Office Accessory online in Pakistan from ASM VEO. Decorative Sh
 Description: Decorative Shell Tissue Box Case Elegant And Modern Napkin Holder Stylish And Practical For Daily Home And Office Use.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

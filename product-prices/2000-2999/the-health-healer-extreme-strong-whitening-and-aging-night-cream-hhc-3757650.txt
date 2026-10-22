@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Health Healer Extreme Strong Whitening And Aging Night Cream
 Product ID: hhc-3757650
 SKU: hhc-3757650
@@ -7,11 +8,16 @@ Slug: the-health-healer-extreme-strong-whitening-and-aging-night-cream-hhc-37576
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/0c2c2353d1c3e2073a06554e5b97102b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/0c2c2353d1c3e2073a06554e5b97102b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/05053a64636b7c13e11d7d3daf5ca076.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/246c2f1f0347ab359ca42646c89bc25f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/307e7278fe0e1ddf30dc9449386c0164.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/8da0fca87a4331e5c14aeb6fe43b9161.jpeg
 Meta Title: The Health Healer Extreme Strong Whitening And Aging Night Cream | B
 Meta Description: Buy The Health Healer Extreme Strong Whitening And Aging Night Cream online in Pakistan from ASM VEO. Premium Whitening And Anti Aging Night Cream For Healthy A
 Description: Premium Whitening And Anti Aging Night Cream For Healthy And Radiant Skin
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

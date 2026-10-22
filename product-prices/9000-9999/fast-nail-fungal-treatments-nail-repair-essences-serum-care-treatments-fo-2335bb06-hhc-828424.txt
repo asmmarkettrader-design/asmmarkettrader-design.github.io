@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fast Nail Fungal Treatments Nail Repair Essences Serum Care Treatments Foot Nail Fungus Removal Gel Paronychia Onychomycosis
 Product ID: hhc-828424
 SKU: hhc-828424
@@ -7,11 +8,16 @@ Slug: fast-nail-fungal-treatments-nail-repair-essences-serum-care-treatments-233
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/S4249138959414106b5191275815af3e3k.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/S4249138959414106b5191275815af3e3k.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/S501fa51127834d789e90114b45d7a1c0E.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/1-20-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/Se2762b79676c440387c313303df34f9a9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/S608fe347bf2e4fea819f30d3620431ebc.webp
 Meta Title: Fast Nail Fungal Treatments Nail Repair Essences Serum Care Treatmen
 Meta Description: Buy Fast Nail Fungal Treatments Nail Repair Essences Serum Care Treatments Foot Nail Fungus Removal Gel Paronychia Onychomycosis online in Pakistan from ASM VEO
 Description: Fast Nail Fungal Treatments Nail Repair Essences Serum Care Treatments Foot Nail Fungus Removal Gel Paronychia Onychomycosis
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

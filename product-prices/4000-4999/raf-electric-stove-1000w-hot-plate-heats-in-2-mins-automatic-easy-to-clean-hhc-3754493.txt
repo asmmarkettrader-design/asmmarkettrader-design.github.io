@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RAF Electric Stove | 1000W Hot Plate | Heats in 2 Mins | Automatic & Easy to Clean
 Product ID: hhc-3754493
 SKU: hhc-3754493
@@ -7,11 +8,16 @@ Slug: raf-electric-stove-1000w-hot-plate-heats-in-2-mins-automatic-easy-to-clean
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/08a1977cec497809d74af5ecd055a3fb.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/08a1977cec497809d74af5ecd055a3fb.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/21eb9b1e1541cca812478f6b9c7fec50.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/e660b3453948e85d0e1ac87250490c8b.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/ca7089ae0224064aa7ca968be1d26861.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/17b0c2386b69b95d26cb2dde880c1050.webp
 Meta Title: RAF Electric Stove | 1000W Hot Plate | Heats in 2 Mins | Automatic &
 Meta Description: Buy RAF Electric Stove | 1000W Hot Plate | Heats in 2 Mins | Automatic & Easy to Clean online in Pakistan from ASM VEO. 1000W electric stove hot plate heats up
 Description: 1000W electric stove hot plate heats up in just 2 minutes, automatic and easy to clean.
-Regular Price: 1708
-Sale Price: 1708
+Wholesale Price: 1708
+Regular Price: 3110
+Sale Price: 2486
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

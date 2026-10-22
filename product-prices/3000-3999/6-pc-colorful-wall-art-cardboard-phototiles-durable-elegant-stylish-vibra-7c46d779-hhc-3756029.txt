@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 PC Colorful Wall Art Cardboard Phototiles Durable Elegant Stylish Vibrant And Unique Decorative Home And Office Collection
 Product ID: hhc-3756029
 SKU: hhc-3756029
@@ -7,11 +8,16 @@ Slug: 6-pc-colorful-wall-art-cardboard-phototiles-durable-elegant-stylish-vib-7c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 6 PC Colorful Wall Art Cardboard Phototiles Durable Elegant Stylish
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/9f404a9e8bc4687ef56e844a1c09bc19.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/9f404a9e8bc4687ef56e844a1c09bc19.jpeg
+Meta Title: 6 PC Colorful Wall Art Cardboard Phototiles Durable Elegant Stylish 
 Meta Description: Buy 6 PC Colorful Wall Art Cardboard Phototiles Durable Elegant Stylish Vibrant And Unique Decorative Home And Office Collection online in Pakistan from ASM VEO
 Description: 6 PC Colorful Wall Art Cardboard Phototiles Designed For Durable Elegant And Vibrant Decoration
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

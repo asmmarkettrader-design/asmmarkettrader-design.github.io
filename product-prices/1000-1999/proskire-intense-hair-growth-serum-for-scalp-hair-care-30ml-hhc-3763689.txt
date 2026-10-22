@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Proskire Intense Hair Growth Serum for Scalp & Hair Care - 30ml
 Product ID: hhc-3763689
 SKU: hhc-3763689
@@ -7,11 +8,16 @@ Slug: proskire-intense-hair-growth-serum-for-scalp-hair-care-30ml-hhc-3763689
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/7e0ba8e252a664d7f104c774b28d8d1e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/7e0ba8e252a664d7f104c774b28d8d1e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/44fa40cc0d7d9a4cc3795cfcd674f255.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/a66f0643f3080803110de991550ab390.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/d09ee601850743cff9f9dd1dad6d6e5d.jpeg
 Meta Title: Proskire Intense Hair Growth Serum for Scalp & Hair Care - 30ml | Bu
 Meta Description: Buy Proskire Intense Hair Growth Serum for Scalp & Hair Care - 30ml online in Pakistan from ASM VEO. Proskire Intense Hair Growth Serum 30ml is a scalp care ser
 Description: Proskire Intense Hair Growth Serum 30ml is a scalp care serum designed for regular hair and scalp care.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

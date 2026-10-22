@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3d Moving Sandscapes Frame |  Moving Sand Lamp frame ( Random Color )7inch
 Product ID: hhc-2156091
 SKU: hhc-2156091
@@ -7,11 +8,16 @@ Slug: 3d-moving-sandscapes-frame-moving-sand-lamp-frame-random-color-7inch-hhc-2
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/Sand23_600x.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/Sand23_600x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/sand12_600x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/sand19_600x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/sand22_600x-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/sand20_600x.webp
 Meta Title: 3d Moving Sandscapes Frame | Moving Sand Lamp frame ( Random Color )
 Meta Description: Buy 3d Moving Sandscapes Frame | Moving Sand Lamp frame ( Random Color )7inch online in Pakistan from ASM VEO. 3d Moving Sandscapes Frame | Moving Sand Lamp fra
 Description: 3d Moving Sandscapes Frame | Moving Sand Lamp frame ( Random Color )7inch
-Regular Price: 1225
-Sale Price: 1225
+Wholesale Price: 1175
+Regular Price: 2160
+Sale Price: 1728
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

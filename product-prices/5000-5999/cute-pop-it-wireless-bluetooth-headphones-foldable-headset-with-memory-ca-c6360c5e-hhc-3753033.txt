@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cute Pop It Wireless Bluetooth Headphones Foldable Headset With Memory Card Support Wired And Wireless Modes Durable Quality Comfortable Use - Without Box(Random Color)
 Product ID: hhc-3753033
 SKU: hhc-3753033
@@ -7,11 +8,16 @@ Slug: cute-pop-it-wireless-bluetooth-headphones-foldable-headset-with-memory-c63
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/2013e80eb08635b960c1f8dbfe359a47.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/2013e80eb08635b960c1f8dbfe359a47.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/0ddfbe364fbdd5404e2417fca604cebf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/476b629df8c26c8a080151a039e2e080.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/9cb2280138a7bfb12487b0e80b37a2ce.jpeg
 Meta Title: Cute Pop It Wireless Bluetooth Headphones Foldable Headset With Memo
 Meta Description: Buy Cute Pop It Wireless Bluetooth Headphones Foldable Headset With Memory Card Support Wired And Wireless Modes Durable Quality Comfortable Use - Without Box(R
 Description: Adorable Pop It Headphones With Wireless Bluetooth And Wired Support, Built-In Memory Card Slot, And Soft Earpads For Comfortable Listening.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

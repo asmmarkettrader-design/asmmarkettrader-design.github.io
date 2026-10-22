@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dolphin Paint Brush – High Quality Brush for Smooth Wall Painting
 Product ID: hhc-3757592
 SKU: hhc-3757592
@@ -7,11 +8,16 @@ Slug: dolphin-paint-brush-high-quality-brush-for-smooth-wall-painting-hhc-375759
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/e22a488bdb9a64861d93a4f263b72420.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/e22a488bdb9a64861d93a4f263b72420.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/5e3dfef8df3a80e723d21c20b5c8046a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/863e70ff5127109c9bf6ec44e5fd1ea2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/b9c76de510d75dbe1d1219480b65741e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/3ec9aa7407a7eaf2232cf201ade7136c.png
 Meta Title: Dolphin Paint Brush – High Quality Brush for Smooth Wall Painting |
 Meta Description: Buy Dolphin Paint Brush – High Quality Brush for Smooth Wall Painting online in Pakistan from ASM VEO. Premium Dolphin paint brush for smooth and even paint app
 Description: Premium Dolphin paint brush for smooth and even paint application. Suitable for walls, wood, and general painting work.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

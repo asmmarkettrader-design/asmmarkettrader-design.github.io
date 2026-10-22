@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital Finger Counter LED Electronic Tasbeeh & Tally Counter 99999 Counts | Random Color
 Product ID: hhc-3761285
 SKU: hhc-3761285
@@ -7,11 +8,16 @@ Slug: digital-finger-counter-led-electronic-tasbeeh-tally-counter-99999-count-63
 Category: Islamic & Cultural
 Subcategory: Islamic Essentials
 Brand: ASM VEO
-Meta Title: Digital Finger Counter LED Electronic Tasbeeh & Tally Counter 99999
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/439c0681d59adcda538d0543b08f1fa2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/439c0681d59adcda538d0543b08f1fa2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/5f7211c785342d78f0f846ef5c0e2656.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/081b88fc71640545163f136cc7b70835.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/804732efe8cd5ca9acf9a8ed31173804.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/edf8d0dbbc59aba00499b6664c6bed81.jpeg
+Meta Title: Digital Finger Counter LED Electronic Tasbeeh & Tally Counter 99999 
 Meta Description: Buy Digital Finger Counter LED Electronic Tasbeeh & Tally Counter 99999 Counts | Random Color online in Pakistan from ASM VEO. Digital Finger Counter With LED D
 Description: Digital Finger Counter With LED Display Offers 99999 Counts, One-Touch Operation, And Comfortable Finger Ring Design For Tasbeeh, Zikr, Sports, And Event Counting
-Regular Price: 248
-Sale Price: 248
+Wholesale Price: 198
+Regular Price: 507
+Sale Price: 357
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

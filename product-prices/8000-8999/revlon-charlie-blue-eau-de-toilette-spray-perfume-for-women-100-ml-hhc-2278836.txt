@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: REVLON Charlie Blue Eau de Toilette Spray Perfume for Women 100 ML
 Product ID: hhc-2278836
 SKU: hhc-2278836
@@ -7,11 +8,16 @@ Slug: revlon-charlie-blue-eau-de-toilette-spray-perfume-for-women-100-ml-hhc-227
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/s-l1600-1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/s-l1600-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/71vFyCgreLL._AC_SL1500_643x696_crop_top.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-06-at-3.27.12-PM.jpeg
 Meta Title: REVLON Charlie Blue Eau de Toilette Spray Perfume for Women 100 ML |
 Meta Description: Buy REVLON Charlie Blue Eau de Toilette Spray Perfume for Women 100 ML online in Pakistan from ASM VEO. About this itemBrandRevlonScentFloral, Rose, Musk, WoodT
 Description: About this itemBrandRevlonScentFloral, Rose, Musk, WoodTypeEau de ToiletteItem formLiquidcopy
-Regular Price: 1576
-Sale Price: 1576
+Wholesale Price: 1126
+Regular Price: 2070
+Sale Price: 1659
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 6 glossy lipgloss  Matte Finish
 Product ID: hhc-2111424
 SKU: hhc-2111424
@@ -7,11 +8,16 @@ Slug: pack-of-6-glossy-lipgloss-matte-finish-hhc-2111424
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.52.57-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.52.57-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.52.56-PM-1.jpeg
 Meta Title: Pack of 6 glossy lipgloss Matte Finish | Buy Online in Pakistan
 Meta Description: Buy Pack of 6 glossy lipgloss Matte Finish online in Pakistan from ASM VEO. &nbsp; Pack of 6 glossy lipgloss • Material: Liquid • Product Feature: Matte Finish
 Description: &nbsp; Pack of 6 glossy lipgloss • Material: Liquid • Product Feature: Matte Finish • Package Includes: 6 x Lip Gloss • Note: Before using any new cosmetic product, perform a patch test on a small skin area. Verify ingredients for allergies and follow package warnings and directions. &nbsp;
-Regular Price: 1064
-Sale Price: 1064
+Wholesale Price: 1014
+Regular Price: 1880
+Sale Price: 1500
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

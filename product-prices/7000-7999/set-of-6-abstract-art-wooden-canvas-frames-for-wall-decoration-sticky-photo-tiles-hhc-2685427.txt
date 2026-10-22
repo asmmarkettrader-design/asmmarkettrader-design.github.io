@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: set of 6 abstract art wooden canvas frames for wall decoration / sticky photo tiles
 Product ID: hhc-2685427
 SKU: hhc-2685427
@@ -7,11 +8,16 @@ Slug: set-of-6-abstract-art-wooden-canvas-frames-for-wall-decoration-sticky-p-ab
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/6e99b89a3f0fb4dbfb3f1aca8e81de44.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/6e99b89a3f0fb4dbfb3f1aca8e81de44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/c983dba097d3ca272d427254d88e4edb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/e3e77dfea44ffde2c3a5b58f43198d89.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/ed978fc34fadd1918c18e892a74f8d45.jpeg
 Meta Title: set of 6 abstract art wooden canvas frames for wall decoration / sti
 Meta Description: Buy set of 6 abstract art wooden canvas frames for wall decoration / sticky photo tiles online in Pakistan from ASM VEO. set of 6 abstract art wooden canvas fra
 Description: set of 6 abstract art wooden canvas framesAvailable size :8x11inchessticky tape attached at the back for sticking on the wallhigh quality laminated print. colours will never fade.After Packeging Dimension. Length-Width: (9-12inches)Weight: 1000gram
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

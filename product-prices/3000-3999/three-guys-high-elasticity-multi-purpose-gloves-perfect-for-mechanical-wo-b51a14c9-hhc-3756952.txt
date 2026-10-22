@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS High-Elasticity Multi-Purpose Gloves – Perfect for Mechanical Work, Car Detailing, Bike Riding, and More
 Product ID: hhc-3756952
 SKU: hhc-3756952
@@ -7,11 +8,16 @@ Slug: three-guys-high-elasticity-multi-purpose-gloves-perfect-for-mechanical-b51
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/595ed4520758172b298b0df6b18f198d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/595ed4520758172b298b0df6b18f198d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/670fdac6e5c9a90da728549fb4bce7ee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/ccdd467d07a2c0735817da97d8a203e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/51cce0d7ae90f749397b44d89a7dd119.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/fc04a47fe69b9cfdd4c9b4fa31a0724e.jpg
 Meta Title: THREE GUYS High-Elasticity Multi-Purpose Gloves – Perfect for Mechan
 Meta Description: Buy THREE GUYS High-Elasticity Multi-Purpose Gloves – Perfect for Mechanical Work, Car Detailing, Bike Riding, and More online in Pakistan from ASM VEO. Premium
 Description: Premium Cotton Gloves With High Elasticity And Durable Grip Designed For Comfort And Versatility In All Tasks.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

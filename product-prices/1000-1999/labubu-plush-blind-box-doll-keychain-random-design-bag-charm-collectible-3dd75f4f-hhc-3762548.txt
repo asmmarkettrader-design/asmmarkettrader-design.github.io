@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: LABUBU Plush Blind Box Doll Keychain | Random Design Bag Charm Collectible Toy - Random Color
 Product ID: hhc-3762548
 SKU: hhc-3762548
@@ -7,11 +8,16 @@ Slug: labubu-plush-blind-box-doll-keychain-random-design-bag-charm-collectibl-3d
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/cbe818ecbe8a64008c858ed705c39d08.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/cbe818ecbe8a64008c858ed705c39d08.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/49f29bc22007ef4a082dc16c3cd789c9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/48cdd974a82380ad1de9a0d72572f41e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/3d5742ebdcc31f7c0c0c7bb5634e123f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/225ed321c858e801bfc5b68c850651b5.jpeg
 Meta Title: LABUBU Plush Blind Box Doll Keychain | Random Design Bag Charm Colle
 Meta Description: Buy LABUBU Plush Blind Box Doll Keychain | Random Design Bag Charm Collectible Toy - Random Color online in Pakistan from ASM VEO. Add a fun surprise to your co
 Description: Add a fun surprise to your collection with the LABUBU Plush Blind Box Doll Keychain. Each blind box includes one random LABUBU plush figure that can be used as a keychain or bag charm. Soft, collectible, and perfect for gifting.
-Regular Price: 1063
-Sale Price: 1063
+Wholesale Price: 1013
+Regular Price: 1870
+Sale Price: 1498
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

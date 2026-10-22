@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use (Random Color)
 Product ID: hhc-3752691
 SKU: hhc-3752691
@@ -7,11 +8,16 @@ Slug: hair-drying-towel-cap-quick-dry-soft-absorbent-turban-wrap-for-women-an-b8
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/bcedb5f8f8d5d79cf78974f3a1647221.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/bcedb5f8f8d5d79cf78974f3a1647221.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/e8b164bd789497f7f0342f422e021f38.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/05574429dd33c7b2d42e06b39ac2a66a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/032327fb0b4e40dc87e15444446925ea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/f5580cc46a8f2ecd3fc9c4f4eff83c05.jpg
+Meta Title: Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for 
 Meta Description: Buy Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use (Random Color) online in Pak
 Description: Experience quick and gentle hair drying with our Microfiber Hair Drying Towel Cap. Made from ultra-soft, super-absorbent microfiber material, it reduces frizz, prevents hair damage, and dries your hair faster than regular towels. Perfect for daily use at home, gym, or salon.
-Regular Price: 214
-Sale Price: 214
+Wholesale Price: 164
+Regular Price: 456
+Sale Price: 306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

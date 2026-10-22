@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DE-HOI Moisturizing Cream, 100g, Rejuvenated, Refreshed, Brightening
 Product ID: hhc-3158700
 SKU: hhc-3158700
@@ -7,11 +8,16 @@ Slug: de-hoi-moisturizing-cream-100g-rejuvenated-refreshed-brightening-hhc-31587
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-11.05.09-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-11.05.09-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-11.26.08-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-11.26.07-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-07-at-11.26.06-AM-1.jpeg
 Meta Title: DE-HOI Moisturizing Cream, 100g, Rejuvenated, Refreshed, Brightening
 Meta Description: Buy DE-HOI Moisturizing Cream, 100g, Rejuvenated, Refreshed, Brightening online in Pakistan from ASM VEO. Moisturizing Cream [ 48H Hydration ] -- Instantly repl
 Description: Moisturizing Cream [ 48H Hydration ] -- Instantly replenishes, intensely nourishes and soothes skin dryness for 48 hours. [ 3 Essential Ingrendients ] --Contains Hyaluronic acid, Vitamin E and Shea Butter formula, absorb quickly without greasy sticky feel, keep skin safe and moisturized all day. [ All In 1 ] -- For Face and body or can be used as a hand cream for dry skin relief, suitable for all type of skin. How To Use Apply daily to face, neck, body or wherever skin needed. For external using only, keep out of eyes, stop use if irritation happens. &nbsp; ORIGINAL PICTURE
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

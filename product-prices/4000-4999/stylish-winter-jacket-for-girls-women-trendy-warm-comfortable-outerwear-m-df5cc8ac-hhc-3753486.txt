@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish Winter Jacket for Girls & Women | Trendy, Warm & Comfortable Outerwear – Most Demanding Fashion Article
 Product ID: hhc-3753486
 SKU: hhc-3753486
@@ -7,11 +8,16 @@ Slug: stylish-winter-jacket-for-girls-women-trendy-warm-comfortable-outerwear-df
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/8e3e2fcce3ad8f8780885e1f0dbfaba2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/8e3e2fcce3ad8f8780885e1f0dbfaba2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/c4738f308c1ea86a9715999bff5ea69c.jpeg
 Meta Title: Stylish Winter Jacket for Girls & Women | Trendy, Warm & Comfortable
 Meta Description: Buy Stylish Winter Jacket for Girls & Women | Trendy, Warm & Comfortable Outerwear – Most Demanding Fashion Article online in Pakistan from ASM VEO. Chic and co
 Description: Chic and cozy winter jacket for girls & women, combining warmth, comfort, and modern fashion. A must-have trendy outfit this season.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

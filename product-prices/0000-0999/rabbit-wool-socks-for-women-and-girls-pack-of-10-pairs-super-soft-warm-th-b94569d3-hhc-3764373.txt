@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rabbit Wool Socks For Women And Girls Pack Of 10 Pairs Super Soft Warm Thermal Nordic Heart Pattern Cozy Breathable Stretchable Imported Winter Comfort | Random Color
 Product ID: hhc-3764373
 SKU: hhc-3764373
@@ -7,11 +8,16 @@ Slug: rabbit-wool-socks-for-women-and-girls-pack-of-10-pairs-super-soft-warm-b94
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/e3a22cbcf9e802e551aac252a047d397.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/e3a22cbcf9e802e551aac252a047d397.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/6fa0c5172fb6f59122654d9bdd6999b6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/39d12df1b738b924573d5e12a62b04c2.jpg
 Meta Title: Rabbit Wool Socks For Women And Girls Pack Of 10 Pairs Super Soft Wa
 Meta Description: Buy Rabbit Wool Socks For Women And Girls Pack Of 10 Pairs Super Soft Warm Thermal Nordic Heart Pattern Cozy Breathable Stretchable Imported Winter Comfort | Ra
 Description: Rabbit Wool Socks For Women And Girls Pack Of 10 Pairs Super Soft Warm Thermal Nordic Heart Pattern Cozy Breathable Stretchable Imported Winter Comfort.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Joyroom JR-T03s Pro 2 ANC TWS Wireless Earbuds | Wireless Bluetooth Earbuds | HiFi Sound | Long Battery Life | Free Premium Case
 Product ID: hhc-1566930
 SKU: hhc-1566930
@@ -7,11 +8,16 @@ Slug: joyroom-jr-t03s-pro-2-anc-tws-wireless-earbuds-wireless-bluetooth-earbu-0d
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/97a2a0112874c95837fa4a7ed9057b63.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/97a2a0112874c95837fa4a7ed9057b63.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/8b7a6181cb6d100d01552957f0dfd86a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/d6c2778cb5c5d445f2b7ca1e4381ea6e.png
 Meta Title: Joyroom JR-T03s Pro 2 ANC TWS Wireless Earbuds | Wireless Bluetooth
 Meta Description: Buy Joyroom JR-T03s Pro 2 ANC TWS Wireless Earbuds | Wireless Bluetooth Earbuds | HiFi Sound | Long Battery Life | Free Premium Case online in Pakistan from ASM
 Description: Joyroom JR‑T03S Plus wireless earbuds with HiFi sound, Bluetooth connectivity, long battery life, and a premium case. Compatible with iOS & Android.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

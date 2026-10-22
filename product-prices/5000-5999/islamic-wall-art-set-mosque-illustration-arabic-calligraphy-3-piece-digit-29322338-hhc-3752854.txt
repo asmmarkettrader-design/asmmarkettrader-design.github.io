@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Wall Art Set – Mosque Illustration & Arabic Calligraphy, 3-Piece Digital Print on Wood
 Product ID: hhc-3752854
 SKU: hhc-3752854
@@ -7,11 +8,16 @@ Slug: islamic-wall-art-set-mosque-illustration-arabic-calligraphy-3-piece-dig-29
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/8ca179618a3fe9acc68a6c02b7ff2c8d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/8ca179618a3fe9acc68a6c02b7ff2c8d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/beac6f05ec3fe3634d6fddfc4e5b693b.jpeg
 Meta Title: Islamic Wall Art Set – Mosque Illustration & Arabic Calligraphy, 3-P
 Meta Description: Buy Islamic Wall Art Set – Mosque Illustration & Arabic Calligraphy, 3-Piece Digital Print on Wood online in Pakistan from ASM VEO. Elevate your space with this
 Description: Elevate your space with this 3-piece Islamic wall art set featuring a detailed mosque illustration and elegant Arabic calligraphy. Digitally printed on durable wood, it’s perfect for adding spiritual charm and modern style to any room.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

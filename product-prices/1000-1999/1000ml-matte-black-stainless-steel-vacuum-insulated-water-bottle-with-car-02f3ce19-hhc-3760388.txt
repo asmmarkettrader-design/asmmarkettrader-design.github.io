@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1000ml Matte Black Stainless Steel Vacuum Insulated Water Bottle With Carrying Strap Durable And Stylish
 Product ID: hhc-3760388
 SKU: hhc-3760388
@@ -7,11 +8,16 @@ Slug: 1000ml-matte-black-stainless-steel-vacuum-insulated-water-bottle-with-c-02
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/433ab49c2730a0eb8b5e83cb2dca4290.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/433ab49c2730a0eb8b5e83cb2dca4290.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/e44f68027544013642c341a3475476e1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/55a1b93bdec03d3da06362506a965164.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/715d8ed996ca17dedc6c5ba98709817e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/6d87d11ed652f0deec632f0ab5898e30.jpeg
 Meta Title: 1000ml Matte Black Stainless Steel Vacuum Insulated Water Bottle Wit
 Meta Description: Buy 1000ml Matte Black Stainless Steel Vacuum Insulated Water Bottle With Carrying Strap Durable And Stylish online in Pakistan from ASM VEO. 1000ml Matte Black
 Description: 1000ml Matte Black Stainless Steel Vacuum Insulated Water Bottle With Carrying Strap Premium Quality Design.
-Regular Price: 2445
-Sale Price: 2445
+Wholesale Price: 2445
+Regular Price: 4350
+Sale Price: 3481
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

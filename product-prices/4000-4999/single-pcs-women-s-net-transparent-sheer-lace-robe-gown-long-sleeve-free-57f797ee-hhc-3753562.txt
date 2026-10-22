@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Single Pcs Women’s Net Transparent Sheer Lace Robe Gown – Long Sleeve Free-Size Nightwear With Satin Belt For Elegant And Stylish Comfort (DC-1051)
 Product ID: hhc-3753562
 SKU: hhc-3753562
@@ -7,11 +8,16 @@ Slug: single-pcs-women-s-net-transparent-sheer-lace-robe-gown-long-sleeve-fre-57
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/e2ddac557c453d4ce2d24bc66dd46d3b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/e2ddac557c453d4ce2d24bc66dd46d3b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/ef39225c9bea14c318c07d1dbd671345.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/d8d7f35c7d43f343fae562454dbcc848.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/14/05d24a9e2e69df47467bd5e5d94f1c13.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/14/7860843bc67ed459d77407e9b64d18ea.png
 Meta Title: Single Pcs Women’s Net Transparent Sheer Lace Robe Gown – Long Sleev
 Meta Description: Buy Single Pcs Women’s Net Transparent Sheer Lace Robe Gown – Long Sleeve Free-Size Nightwear With Satin Belt For Elegant And Stylish Comfort (DC-1051) online i
 Description: Single Pcs Women’s Net Lace Robe Provides Elegant, Comfortable, And Free-Size Nightwear With A Sheer Design And Satin Belt For A Stylish Look.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

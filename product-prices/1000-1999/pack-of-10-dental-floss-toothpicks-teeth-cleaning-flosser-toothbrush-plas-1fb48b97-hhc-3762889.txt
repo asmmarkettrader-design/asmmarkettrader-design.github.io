@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 10 - Dental Floss Toothpicks Teeth Cleaning Flosser Toothbrush Plastic Toothpick Dental Floss Sticks And Tooth Picks Teeth Plaque Remover (Random Color)
 Product ID: hhc-3762889
 SKU: hhc-3762889
@@ -7,11 +8,16 @@ Slug: pack-of-10-dental-floss-toothpicks-teeth-cleaning-flosser-toothbrush-pl-1f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/1d12e6a2256ce18462d8a055a9b4d462.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/1d12e6a2256ce18462d8a055a9b4d462.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/99f629abf25adf018e4ce3de17645b26.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/676d66cdd23c4560f3875d59e8f943b0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/5ed36dfe81bb55cfc6645ff6e738f161.jpeg
 Meta Title: Pack of 10 - Dental Floss Toothpicks Teeth Cleaning Flosser Toothbru
 Meta Description: Buy Pack of 10 - Dental Floss Toothpicks Teeth Cleaning Flosser Toothbrush Plastic Toothpick Dental Floss Sticks And Tooth Picks Teeth Plaque Remover (Random Co
 Description: The Dental Floss Toothpicks Teeth Cleaning Flosser Toothbrush Plastic Toothpick Dental Floss Sticks And Tooth Picks Teeth Plaque Remover Is A Personal Care Product Formulated To Help Provide Oral Hygiene And Dental Cleaning During Daily Use.
-Regular Price: 220
-Sale Price: 220
+Wholesale Price: 170
+Regular Price: 465
+Sale Price: 315
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pointed-Toe Mesh Slingback Flats with Bow
 Product ID: hhc-3754666
 SKU: hhc-3754666
@@ -7,11 +8,16 @@ Slug: pointed-toe-mesh-slingback-flats-with-bow-hhc-3754666
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/415fa2a2bc63de85c1b4d068501259a6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/415fa2a2bc63de85c1b4d068501259a6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/33a2454e44123760a0ccefcdc5097288.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/f692398e83344b3f25356c0fb531be54.jpeg
 Meta Title: Pointed-Toe Mesh Slingback Flats with Bow | Buy Online in Pakistan
 Meta Description: Buy Pointed-Toe Mesh Slingback Flats with Bow online in Pakistan from ASM VEO. Elevate your daily ensemble with these sophisticated pointed-toe flats. Featuring
 Description: Elevate your daily ensemble with these sophisticated pointed-toe flats. Featuring a breathable mesh upper and a delicate bow accent, these slingback shoes combine modern textures with a classic silhouette for effortless style and comfort.
-Regular Price: 2726
-Sale Price: 2726
+Wholesale Price: 2726
+Regular Price: 4820
+Sale Price: 3860
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

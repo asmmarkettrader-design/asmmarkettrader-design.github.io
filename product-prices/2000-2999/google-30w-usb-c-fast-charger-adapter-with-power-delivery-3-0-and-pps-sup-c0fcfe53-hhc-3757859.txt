@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Google 30W USB-C Fast Charger Adapter with Power Delivery 3.0 and PPS Support ~ Without Cable
 Product ID: hhc-3757859
 SKU: hhc-3757859
@@ -7,11 +8,16 @@ Slug: google-30w-usb-c-fast-charger-adapter-with-power-delivery-3-0-and-pps-s-c0
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/688449e9d3a5d1d8b8fb8a6c80238e72.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/688449e9d3a5d1d8b8fb8a6c80238e72.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/ed1b125217b0dec83e7191b9631fd769.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/6a628bb990667ce79c7c7f629af003e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/f3d52c89346bfa0a28332ecd5f823fb6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/e28e8829a7587155cf3b37c73fa9655c.jpg
 Meta Title: Google 30W USB-C Fast Charger Adapter with Power Delivery 3.0 and PP
 Meta Description: Buy Google 30W USB-C Fast Charger Adapter with Power Delivery 3.0 and PPS Support ~ Without Cable online in Pakistan from ASM VEO. Compact and efficient 30W USB
 Description: Compact and efficient 30W USB-C charger designed for fast and reliable charging of Google Pixel and other compatible devices.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Disposable Plastic Wrap Covers Elastic Tight Food Grade Fresh Keeping Dust Proof Insect Proof Kitchen Accessories
 Product ID: hhc-3753694
 SKU: hhc-3753694
@@ -7,11 +8,16 @@ Slug: disposable-plastic-wrap-covers-elastic-tight-food-grade-fresh-keeping-d-2c
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/8792649f344c1704d9b90ac27adc5ecb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/8792649f344c1704d9b90ac27adc5ecb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/028a83a08b2d943940c15ce4d45dffa2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/3a88fbe802a0c75606b3073e80652c6e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/5887ae6b8bad6a645c9b545141f138b6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/142ba30b4872fea9999fdb9092526fcf.webp
 Meta Title: Disposable Plastic Wrap Covers Elastic Tight Food Grade Fresh Keepin
 Meta Description: Buy Disposable Plastic Wrap Covers Elastic Tight Food Grade Fresh Keeping Dust Proof Insect Proof Kitchen Accessories online in Pakistan from ASM VEO. Disposabl
 Description: Disposable Plastic Wrap Covers Provide Elastic Tight Fit And Food Grade Protection
-Regular Price: 220
-Sale Price: 220
+Wholesale Price: 170
+Regular Price: 465
+Sale Price: 315
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

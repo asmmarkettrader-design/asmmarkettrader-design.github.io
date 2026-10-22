@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Ecrin Hair Removal Foaming Spray - Advance Formula with Refreshing Fragrance (200ml)
 Product ID: hhc-3752634
 SKU: hhc-3752634
@@ -7,11 +8,16 @@ Slug: new-ecrin-hair-removal-foaming-spray-advance-formula-with-refreshing-fr-ec
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/a38241d2d007426c7bc8cf03e68737c9.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/a38241d2d007426c7bc8cf03e68737c9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/a838f96add14c4f10f8ded261e55ea50.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/93101528d126f0cbd8448dbc1075a171.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/0aa94c55f12a09dd68aefd98499aa101.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/1ee3bbce7368cb0db48e106f6a0325cb.jpg
 Meta Title: New Ecrin Hair Removal Foaming Spray - Advance Formula with Refreshi
 Meta Description: Buy New Ecrin Hair Removal Foaming Spray - Advance Formula with Refreshing Fragrance (200ml) online in Pakistan from ASM VEO. New Ecrin Hair Removal Foaming Spr
 Description: New Ecrin Hair Removal Foaming Spray - Advance Formula with Refreshing Fragrance (200ml)
-Regular Price: 1074
-Sale Price: 1074
+Wholesale Price: 767
+Regular Price: 1460
+Sale Price: 1172
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

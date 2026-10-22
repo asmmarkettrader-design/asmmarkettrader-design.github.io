@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Musical Sprinkle Popper Cake Topper – Surprise Party Decoration
 Product ID: hhc-3756127
 SKU: hhc-3756127
@@ -7,11 +8,16 @@ Slug: musical-sprinkle-popper-cake-topper-surprise-party-decoration-hhc-3756127
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/19cd3189ef4a3e434a961b186fa6dbb1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/19cd3189ef4a3e434a961b186fa6dbb1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/dd60695ff126f74ee0cec1d93de11c99.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/693c925b1abea5f27425c8117bf69d50.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/ca7b82bac28351d770454f9b0a08a704.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/75263862856f39899542fe461a0ca3e2.jpeg
 Meta Title: Musical Sprinkle Popper Cake Topper – Surprise Party Decoration | Bu
 Meta Description: Buy Musical Sprinkle Popper Cake Topper – Surprise Party Decoration online in Pakistan from ASM VEO. Make celebrations extra magical with this Musical Sprinkle
 Description: Make celebrations extra magical with this Musical Sprinkle Popper Cake Topper! Plays cheerful music while popping colorful sprinkles for a fun surprise moment—perfect for birthdays, parties, and special occasions.
-Regular Price: 523
-Sale Price: 523
+Wholesale Price: 473
+Regular Price: 960
+Sale Price: 770
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

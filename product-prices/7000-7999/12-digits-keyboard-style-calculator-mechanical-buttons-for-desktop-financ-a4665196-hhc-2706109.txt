@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 12 digits Keyboard Style Calculator | Mechanical Buttons for Desktop financial accounting cell operated (random color)
 Product ID: hhc-2706109
 SKU: hhc-2706109
@@ -7,11 +8,16 @@ Slug: 12-digits-keyboard-style-calculator-mechanical-buttons-for-desktop-fina-a4
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/7BB3912A-174B-4309-AB10-D5F444FA87B1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/7BB3912A-174B-4309-AB10-D5F444FA87B1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/S8575cf3b983448898b2e980661034ca8Q.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/S714a395cccd94b58bc47b24c94869a33M.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/Scd62f081df5b4ef5ac2bb6272566e5f00.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/S89b2118214d54319b0fad556b65a2db5B.jpg_720x720q80.jpg_.webp
 Meta Title: 12 digits Keyboard Style Calculator | Mechanical Buttons for Desktop
 Meta Description: Buy 12 digits Keyboard Style Calculator | Mechanical Buttons for Desktop financial accounting cell operated (random color) online in Pakistan from ASM VEO. Prod
 Description: Product Description Imported Calculator • Sleek &amp; Stylish Design • Comes in Random Colors • Precise Calculations Can be Performed
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

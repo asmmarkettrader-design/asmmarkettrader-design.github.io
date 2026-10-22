@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4-Piece Colorful Serving Platter Set – BPA-Free Snack, Sushi, Appetizer & Dessert Plates with Built-in Dipping Bowls for Parties & Everyday Use (Random Color)
 Product ID: hhc-3753261
 SKU: hhc-3753261
@@ -7,11 +8,16 @@ Slug: 4-piece-colorful-serving-platter-set-bpa-free-snack-sushi-appetizer-des-95
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/132ec31ed052e4bbccc14162928eec62.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/132ec31ed052e4bbccc14162928eec62.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/f2bf2129db05a9e7d8ae6d61b138989d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/65eac6fdd05f948acbaf7e98b157aaf1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/5e0df6e565e61713d1a03b41b6cb57e0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/96a3e6c23a9886f8f6c3b3554720abc5.jpg
 Meta Title: 4-Piece Colorful Serving Platter Set – BPA-Free Snack, Sushi, Appeti
 Meta Description: Buy 4-Piece Colorful Serving Platter Set – BPA-Free Snack, Sushi, Appetizer & Dessert Plates with Built-in Dipping Bowls for Parties & Everyday Use (Random Colo
 Description: 4-Piece Colorful Serving Platter Set – BPA-Free Snack, Sushi, Appetizer & Dessert Plates with Built-in Dipping Bowls for Parties & Everyday Use (Random Color)
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

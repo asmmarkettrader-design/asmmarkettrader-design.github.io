@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fit Me Matte And Poreless Liquid Foundation 115 Ivory For Daily Makeup And Natural Look - 30ML
 Product ID: hhc-3754104
 SKU: hhc-3754104
@@ -7,11 +8,16 @@ Slug: fit-me-matte-and-poreless-liquid-foundation-115-ivory-for-daily-makeup-de5
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/c58071eb41d30c77ca9527862058928c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/c58071eb41d30c77ca9527862058928c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/eb14946a129532aa3c368bcee430cd61.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/7894f826d987b9e170ac4d6031fccc78.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/997d12c2962fd8c9c7f9d82916d74386.jpeg
 Meta Title: Fit Me Matte And Poreless Liquid Foundation 115 Ivory For Daily Make
 Meta Description: Buy Fit Me Matte And Poreless Liquid Foundation 115 Ivory For Daily Makeup And Natural Look - 30ML online in Pakistan from ASM VEO. Fit Me Matte And Poreless Li
 Description: Fit Me Matte And Poreless Liquid Foundation 115 Ivory Provides Durable Quality Reliable Utility Comfortable Use And Smooth Texture
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

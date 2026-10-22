@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: V23 – Simple Micro USB Charger with Built-in Cable | Best Quality Charger Android - Vizo V23 Charger - Mobile Phone Charger ( Random Color )
 Product ID: hhc-3391700
 SKU: hhc-3391700
@@ -7,11 +8,16 @@ Slug: v23-simple-micro-usb-charger-with-built-in-cable-best-quality-charger-a-86
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/v23-small-c-450x450_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/v23-small-c-450x450_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/098228cb-be6a-4cda-9d78-ee1d5c615d58.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/99a65d3966a2e7b20466420f4b6a3aff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/cee0461e875f6a0fc649560d0aadb24d.jpeg
 Meta Title: V23 – Simple Micro USB Charger with Built-in Cable | Best Quality Ch
 Meta Description: Buy V23 – Simple Micro USB Charger with Built-in Cable | Best Quality Charger Android - Vizo V23 Charger - Mobile Phone Charger ( Random Color ) online in Pakis
 Description: V23 – Simple Micro USB Charger with Built-in Cable | Best Quality Charger Android - Vizo V23 Charger - Mobile Phone Charger ( Random Color )Product Details:Output Power: 1A Standard ChargingInput Voltage: AC 100–240VCable Type: Built-in Micro USB CableUSB Ports: No Extra USB PortFeaturesCompact and Lightweight DesignEasy to Carry – Ideal for TravelCompatibility:Compatible with all Micro USB Supported Devices(e.g., Android phones, Bluetooth speakers, power banks, etc.)
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

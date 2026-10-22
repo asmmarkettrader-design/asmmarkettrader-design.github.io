@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Removal Tool – Quick &amp; Easy Epilator for Smooth Skin, Portable &amp; Painless Electric Hair Remover for Face, Arms, Legs &amp; Body, Gentle Exfoliation &amp; Long-Lasting Results
 Product ID: hhc-3723362
 SKU: hhc-3723362
@@ -7,11 +8,16 @@ Slug: hair-removal-tool-quick-amp-easy-epilator-for-smooth-skin-portable-amp-8d1
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/715711c025daa7afa86d5634badadc83.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/715711c025daa7afa86d5634badadc83.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/WhatsApp-Image-2025-09-04-at-2.03.53-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/WhatsApp-Image-2025-09-04-at-2.03.53-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/WhatsApp-Image-2025-09-04-at-2.03.52-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/fccfaad642f1aebfd9ad6d9f9566e768.jpeg
 Meta Title: Hair Removal Tool – Quick &amp; Easy Epilator for Smooth Skin, Porta
 Meta Description: Buy Hair Removal Tool – Quick &amp; Easy Epilator for Smooth Skin, Portable &amp; Painless Electric Hair Remover for Face, Arms, Legs &amp; Body, Gentle Exfolia
 Description: Hair Removal Tool – Quick &amp; Easy Epilator for Smooth Skin, Portable &amp; Painless Electric Hair Remover for Face, Arms, Legs &amp; Body, Gentle Exfoliation &amp; Long-Lasting ResultsAchieve silky-smooth skin with the Hair Removal Tool – Quick and Easy Epilator, designed for fast, effective, and painless hair removal. This compact and portable device gently removes hair from the root, leaving your skin smooth for weeks instead of days. Suitable for use on the face, arms, legs, underarms, and body, it ensures precision and efficiency without irritation. The lightweight design makes it perfect for at-home use or travel, while its ergonomic grip provides easy handling and comfort. With consistent use, hair grows back finer and softer, giving you long-lasting results and salon-quality smoothness in the comfort of your home.Product Original Photo
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

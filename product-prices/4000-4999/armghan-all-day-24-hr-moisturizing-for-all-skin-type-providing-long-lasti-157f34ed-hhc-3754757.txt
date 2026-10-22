@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Armghan All Day 24 Hr Moisturizing For All Skin Type Providing Long Lasting Hydration Gentle Care - 140ML
 Product ID: hhc-3754757
 SKU: hhc-3754757
@@ -7,11 +8,16 @@ Slug: armghan-all-day-24-hr-moisturizing-for-all-skin-type-providing-long-las-15
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Armghan All Day 24 Hr Moisturizing For All Skin Type Providing Long
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/9e0bdb2bc25d5392eb339d4f96aa919a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/9e0bdb2bc25d5392eb339d4f96aa919a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/ce149c58680070aa2d7cf81d49924325.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/c155f2f6b701f26f34f202d4f1a3dd65.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/415bddb380cca4b85f02b421c5901b5b.jpeg
+Meta Title: Armghan All Day 24 Hr Moisturizing For All Skin Type Providing Long 
 Meta Description: Buy Armghan All Day 24 Hr Moisturizing For All Skin Type Providing Long Lasting Hydration Gentle Care - 140ML online in Pakistan from ASM VEO. Armghan All Day 2
 Description: Armghan All Day 24 Hr Moisturizing For All Skin Type Offering Long Lasting Hydration Gentle Care And Comfortable Daily Use
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

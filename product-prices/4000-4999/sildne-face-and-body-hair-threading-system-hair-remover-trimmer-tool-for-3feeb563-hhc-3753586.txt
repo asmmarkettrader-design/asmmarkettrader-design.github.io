@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sildne Face And Body Hair Threading System Hair Remover Trimmer Tool For Women Designed For Face And Body Hair Threading And Trimming
 Product ID: hhc-3753586
 SKU: hhc-3753586
@@ -7,11 +8,16 @@ Slug: sildne-face-and-body-hair-threading-system-hair-remover-trimmer-tool-fo-3f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/964bc37b87637c4cc0c3b07587120b9c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/964bc37b87637c4cc0c3b07587120b9c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/486bc0b5ddd2c00194ac76009e4448bd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/d246000abe65c55160da9e98c50d37bd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/1044a3e4c243c072be22d83aa09ed33c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/92407418b04d530dd9bbdbe1459d090b.jpg
 Meta Title: Sildne Face And Body Hair Threading System Hair Remover Trimmer Tool
 Meta Description: Buy Sildne Face And Body Hair Threading System Hair Remover Trimmer Tool For Women Designed For Face And Body Hair Threading And Trimming online in Pakistan fro
 Description: Sildne Face And Body Hair Threading System Hair Remover Trimmer Tool For Women Provides A Tool For Threading And Trimming Face And Body Hair.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 4 Egg Shaper Kitchen Tools Star, Heart, Round, Flower Shaped Stainless Steel -  (random color )
 Product ID: hhc-1888167
 SKU: hhc-1888167
@@ -7,11 +8,16 @@ Slug: pack-of-4-egg-shaper-kitchen-tools-star-heart-round-flower-shaped-stain-43
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/05/8.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/05/8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/05/6-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/05/2-4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-07-at-8.02.55-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-07-at-8.02.54-PM.jpeg
 Meta Title: Pack of 4 Egg Shaper Kitchen Tools Star, Heart, Round, Flower Shaped
 Meta Description: Buy Pack of 4 Egg Shaper Kitchen Tools Star, Heart, Round, Flower Shaped Stainless Steel - (random color ) online in Pakistan from ASM VEO. DescriptionColor: Si
 Description: DescriptionColor: Silver Quantity: 4pc Size: 10cm x 10cm/3.94"x 3.94" (Approx.) Height: 1.5cm/0.59" (Approx.) Shape: Flower, Heart, Circle, Star Package Includes: 4x Egg Mould
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

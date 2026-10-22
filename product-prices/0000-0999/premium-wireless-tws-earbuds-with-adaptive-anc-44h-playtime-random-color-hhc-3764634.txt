@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Wireless TWS Earbuds with Adaptive ANC & 44H Playtime (Random Color)
 Product ID: hhc-3764634
 SKU: hhc-3764634
@@ -7,11 +8,16 @@ Slug: premium-wireless-tws-earbuds-with-adaptive-anc-44h-playtime-random-color-h
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/069d6e3c0c8ccd315185f74b9005a5f8.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/069d6e3c0c8ccd315185f74b9005a5f8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/30392d5afc6ebf3d6f7e3445c6732f74.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/f01a6b273ccd7afdddc54784089b6205.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/5f4e824c8f78901a8d57f47486e3a96f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/3c3abcad234492b9a3e1a811c68b1e3b.webp
 Meta Title: Premium Wireless TWS Earbuds with Adaptive ANC & 44H Playtime (Rando
 Meta Description: Buy Premium Wireless TWS Earbuds with Adaptive ANC & 44H Playtime (Random Color) online in Pakistan from ASM VEO. Premium TWS Wireless Earbuds for OnePlus and o
 Description: Premium TWS Wireless Earbuds for OnePlus and other devices. Features Adaptive Active Noise Cancellation (up to 49dB) for an immersive sound experience. Equipped with a high-capacity charging case offering up to 44 hours of total playback time. Designed with deep bass, intuitive touch controls, and a built-in microphone for clear calls. Perfect for sports and daily use.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

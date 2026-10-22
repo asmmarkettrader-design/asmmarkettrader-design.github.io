@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fancy indicator for Bike Mini size flexible unbreakable yellow color 4 pcs
 Product ID: hhc-727077
 SKU: hhc-727077
@@ -7,11 +8,16 @@ Slug: fancy-indicator-for-bike-mini-size-flexible-unbreakable-yellow-color-4-pcs
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-28-at-12.24.22-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-28-at-12.24.22-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-28-at-12.24.21-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-28-at-12.24.21-PM-2.jpeg
 Meta Title: Fancy indicator for Bike Mini size flexible unbreakable yellow color
 Meta Description: Buy Fancy indicator for Bike Mini size flexible unbreakable yellow color 4 pcs online in Pakistan from ASM VEO. product details Discription Fancy indicator for
 Description: product details Discription Fancy indicator for Bike Small size Mini size flexible unbreakable 04 pcs Orignal Pictures Yello Color
-Regular Price: 453
-Sale Price: 453
+Wholesale Price: 403
+Regular Price: 830
+Sale Price: 664
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

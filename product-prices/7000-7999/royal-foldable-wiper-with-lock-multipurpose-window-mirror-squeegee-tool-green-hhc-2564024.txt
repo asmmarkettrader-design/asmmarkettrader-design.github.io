@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Foldable Wiper with Lock – Multipurpose Window & Mirror Squeegee Tool (Green)
 Product ID: hhc-2564024
 SKU: hhc-2564024
@@ -7,11 +8,16 @@ Slug: royal-foldable-wiper-with-lock-multipurpose-window-mirror-squeegee-tool-gr
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/f87efd48c36563398db6f82dcd56b195.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/f87efd48c36563398db6f82dcd56b195.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/4.webp
 Meta Title: Royal Foldable Wiper with Lock – Multipurpose Window & Mirror Squeeg
 Meta Description: Buy Royal Foldable Wiper with Lock – Multipurpose Window & Mirror Squeegee Tool (Green) online in Pakistan from ASM VEO. Royal Foldable Wiper with Lock – Multip
 Description: Royal Foldable Wiper with Lock – Multipurpose window and mirror squeegee designed for smooth and streak-free cleaning. Features a foldable handle with secure lock system for easy storage and comfortable use.
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

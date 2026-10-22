@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Handcrafted Wooden Palm Massager – Reflexology & Acupressure Hand Roller
 Product ID: hhc-3758401
 SKU: hhc-3758401
 Slug: handcrafted-wooden-palm-massager-reflexology-acupressure-hand-roller-hhc-3758401
-Category: Beauty & Personal Care
+Category: Health & Wellness
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/04/0f927885f1299f3525996adb9c405f55.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/04/0f927885f1299f3525996adb9c405f55.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/04/804f864c8539b91e28172516cd73e178.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/04/8d8e04365f634a35d226d4e5461c0de2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/04/88e89b4917ac7fd903865d2d3bdc584b.jpeg
 Meta Title: Handcrafted Wooden Palm Massager – Reflexology & Acupressure Hand Ro
 Meta Description: Buy Handcrafted Wooden Palm Massager – Reflexology & Acupressure Hand Roller online in Pakistan from ASM VEO. Relieve hand fatigue and improve circulation with
 Description: Relieve hand fatigue and improve circulation with this authentic Wooden Palm Massager. Handcrafted from natural wood, this manual tool features a compact, textured design to deliver targeted acupressure relief for your hands and palms.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

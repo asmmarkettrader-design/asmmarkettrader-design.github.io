@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 3 Botanical Islamic Wall Art Prints Sabr Shukr Dua Wooden MDF Frames Sticky Photo Tiles 8x11 Inches
 Product ID: hhc-3757151
 SKU: hhc-3757151
@@ -7,11 +8,16 @@ Slug: set-of-3-botanical-islamic-wall-art-prints-sabr-shukr-dua-wooden-mdf-fr-19
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/29/5c6f53ecd14fd278f0343ea655c4070f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/29/5c6f53ecd14fd278f0343ea655c4070f.jpeg
 Meta Title: Set Of 3 Botanical Islamic Wall Art Prints Sabr Shukr Dua Wooden MDF
 Meta Description: Buy Set Of 3 Botanical Islamic Wall Art Prints Sabr Shukr Dua Wooden MDF Frames Sticky Photo Tiles 8x11 Inches online in Pakistan from ASM VEO. Set Of 3 Botanic
 Description: Set Of 3 Botanical Islamic Wall Art Prints Featuring Calligraphy For Sabr Shukr And Dua Printed On Wooden MDF Frames With Double Tape.
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

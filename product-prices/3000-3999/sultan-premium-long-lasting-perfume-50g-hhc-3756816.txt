@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sultan Premium Long Lasting Perfume 50g
 Product ID: hhc-3756816
 SKU: hhc-3756816
@@ -7,11 +8,16 @@ Slug: sultan-premium-long-lasting-perfume-50g-hhc-3756816
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ffcfb0849b56b2ef6bd6b760c6aa8976.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ffcfb0849b56b2ef6bd6b760c6aa8976.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/8135fd76a0b5e77cccb6e526f3e1749a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/df7c321a01eeb7d971c34bf4cfd1176c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/add6a7c77d863d333b2686cbeec7fe54.jpeg
 Meta Title: Sultan Premium Long Lasting Perfume 50g | Buy Online in Pakistan
 Meta Description: Buy Sultan Premium Long Lasting Perfume 50g online in Pakistan from ASM VEO. Sultan Premium Long Lasting Perfume 50g A+ Copy offers a rich and captivating fragr
 Description: Sultan Premium Long Lasting Perfume 50g A+ Copy offers a rich and captivating fragrance designed for everyday elegance. With its concentrated formula and premium quality scent, this perfume provides long-lasting freshness and a luxurious feel suitable for both men and women.
-Regular Price: 985
-Sale Price: 985
+Wholesale Price: 368
+Regular Price: 1290
+Sale Price: 1035
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

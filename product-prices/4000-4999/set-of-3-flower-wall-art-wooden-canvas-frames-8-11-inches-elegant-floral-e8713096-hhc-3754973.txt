@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Flower Wall Art Wooden Canvas Frames (8×11 Inches) – Elegant Floral Home Wall Décor
 Product ID: hhc-3754973
 SKU: hhc-3754973
@@ -7,11 +8,16 @@ Slug: set-of-3-flower-wall-art-wooden-canvas-frames-8-11-inches-elegant-flora-e8
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/b3056822dd4f1d9d8a7ce9a00d349ee2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/b3056822dd4f1d9d8a7ce9a00d349ee2.jpeg
 Meta Title: Set of 3 Flower Wall Art Wooden Canvas Frames (8×11 Inches) – Elegan
 Meta Description: Buy Set of 3 Flower Wall Art Wooden Canvas Frames (8×11 Inches) – Elegant Floral Home Wall Décor online in Pakistan from ASM VEO. Beautify your living space wit
 Description: Beautify your living space with this charming set of 3 flower wall art wooden canvas frames. Crafted from durable wooden material, each 8×11 inch frame features elegant floral designs and comes with a back hook for easy wall hanging, with sticky double tape also available on demand.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

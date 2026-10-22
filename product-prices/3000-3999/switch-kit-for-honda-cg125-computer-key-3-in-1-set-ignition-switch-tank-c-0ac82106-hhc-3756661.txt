@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Switch Kit for Honda CG125 Computer Key 3 in 1 Set – Ignition Switch, Tank Cap & Side Lock (Single Key Operated)
 Product ID: hhc-3756661
 SKU: hhc-3756661
@@ -7,11 +8,16 @@ Slug: switch-kit-for-honda-cg125-computer-key-3-in-1-set-ignition-switch-tank-0a
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/1a4c2c7ed485534d7d79d5d1fa114894.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/1a4c2c7ed485534d7d79d5d1fa114894.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/22af194d89f2939d592f2ab2d623a86d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/b36c421932a1655c29efd7c27ecf58cc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/ea7b5a9a53c018afec76a6d4c2099f05.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/baed4276989b1eb49e3aa48618c6dff1.png
 Meta Title: Switch Kit for Honda CG125 Computer Key 3 in 1 Set – Ignition Switch
 Meta Description: Buy Switch Kit for Honda CG125 Computer Key 3 in 1 Set – Ignition Switch, Tank Cap & Side Lock (Single Key Operated) online in Pakistan from ASM VEO. Upgrade yo
 Description: Upgrade your bike security with this 3 in 1 Switch Kit for Honda CG125 Computer Key model. Includes ignition switch, fuel tank cap, and side lock, all operated with a single key for convenience and reliability.
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

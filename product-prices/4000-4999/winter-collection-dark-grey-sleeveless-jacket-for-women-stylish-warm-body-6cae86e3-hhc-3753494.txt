@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Collection Dark Grey Sleeveless Jacket for Women | Stylish & Warm Body Warmer | Trendy Winter Layering Outerwear
 Product ID: hhc-3753494
 SKU: hhc-3753494
@@ -7,11 +8,16 @@ Slug: winter-collection-dark-grey-sleeveless-jacket-for-women-stylish-warm-bo-6c
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/43578a655782a74eb3972d865f4ca74f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/43578a655782a74eb3972d865f4ca74f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/b2f589ba9d97eee4b3096c4c3c0a0fc6.jpeg
 Meta Title: Winter Collection Dark Grey Sleeveless Jacket for Women | Stylish &
 Meta Description: Buy Winter Collection Dark Grey Sleeveless Jacket for Women | Stylish & Warm Body Warmer | Trendy Winter Layering Outerwear online in Pakistan from ASM VEO. Chi
 Description: Chic dark grey sleeveless winter jacket for women. Lightweight, warm, and perfect for layering over sweaters or hoodies.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

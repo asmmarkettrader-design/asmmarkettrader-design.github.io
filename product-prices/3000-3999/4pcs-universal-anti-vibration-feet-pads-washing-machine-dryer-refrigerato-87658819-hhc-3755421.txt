@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4Pcs Universal Anti‑Vibration Feet Pads | Washing Machine, Dryer, Refrigerator & Furniture Non‑Slip Rubber Mat (Small Size)
 Product ID: hhc-3755421
 SKU: hhc-3755421
@@ -7,11 +8,16 @@ Slug: 4pcs-universal-anti-vibration-feet-pads-washing-machine-dryer-refrigera-87
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/7093190bbe23a81a91c5d0903635e8b4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/7093190bbe23a81a91c5d0903635e8b4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/0cca49c6c90d038f8b979a87af970f92.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/4d7f1e5f0fa150f195abe7cf04998a42.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/ca9c28c1c109a35e8e8ee578aae70bea.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/c67b1c2a7a19ce8d0c73068e9a1c75b3.jpg
 Meta Title: 4Pcs Universal Anti‑Vibration Feet Pads | Washing Machine, Dryer, Re
 Meta Description: Buy 4Pcs Universal Anti‑Vibration Feet Pads | Washing Machine, Dryer, Refrigerator & Furniture Non‑Slip Rubber Mat (Small Size) online in Pakistan from ASM VEO.
 Description: Set of 4 rubber anti‑vibration pads. Keeps washing machines, dryers, refrigerators, and furniture stable and non‑slip.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

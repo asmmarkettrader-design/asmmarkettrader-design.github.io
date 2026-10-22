@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hydra Facial Blackhead & Whitehead Remover O-Clean Deep Pore Purifying Micro-Bubble Device
 Product ID: hhc-3764186
 SKU: hhc-3764186
@@ -7,11 +8,16 @@ Slug: hydra-facial-blackhead-whitehead-remover-o-clean-deep-pore-purifying-mi-99
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/b6b33c1a39a3639fb3276119819fabbb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/b6b33c1a39a3639fb3276119819fabbb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/6f23412d7bcd074531eb3b93a256e318.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/6b5a486639dad44db5cdbc88d0b74e82.jpeg
 Meta Title: Hydra Facial Blackhead & Whitehead Remover O-Clean Deep Pore Purifyi
 Meta Description: Buy Hydra Facial Blackhead & Whitehead Remover O-Clean Deep Pore Purifying Micro-Bubble Device online in Pakistan from ASM VEO. Professional-style facial pore v
 Description: Professional-style facial pore vacuum with micro bubble cleansing technology, 6 suction heads, and 3 adjustable suction gears for deep cleansing, blackhead and whitehead removal, and smoother-looking skin.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ehmzny Hairdressing Wand - Instant White Hair Cover Up (20g)
 Product ID: hhc-3764900
 SKU: hhc-3764900
@@ -7,11 +8,16 @@ Slug: ehmzny-hairdressing-wand-instant-white-hair-cover-up-20g-hhc-3764900
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/a626e169b25d722d22e80bc1a1cc24a0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/a626e169b25d722d22e80bc1a1cc24a0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/234c9894d3ddc5245d5647c87af260b4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7f575a54796814490ba91cf1ca44dca3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/f3659676459e802ee0d3f00be2fbd734.jpeg
 Meta Title: Ehmzny Hairdressing Wand - Instant White Hair Cover Up (20g) | Buy O
 Meta Description: Buy Ehmzny Hairdressing Wand - Instant White Hair Cover Up (20g) online in Pakistan from ASM VEO. Ehmzny Hairdressing Wand for white hair coverage. Simple and c
 Description: Ehmzny Hairdressing Wand for white hair coverage. Simple and convenient application, instant results for covering grey roots. Net content: 20g. Durable and easy to carry.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

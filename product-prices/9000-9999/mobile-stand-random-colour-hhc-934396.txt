@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mobile Stand Random Colour
 Product ID: hhc-934396
 SKU: hhc-934396
@@ -7,11 +8,16 @@ Slug: mobile-stand-random-colour-hhc-934396
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-16-at-11.57.36-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-16-at-11.57.36-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/49c3c709d6d6930e723f5e8f7e2fba98-800x800-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/e9b6f57fb0cbe89026354ce723674042-800x800-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/1f0f6abc97126bb80b8aa4c0ff2b629a.jpg_750x750.jpg_-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/96234377a3ee2d713e6b6a0e76a329a9.jpg_750x750.jpg_.webp
 Meta Title: Mobile Stand Random Colour | Buy Online in Pakistan
 Meta Description: Buy Mobile Stand Random Colour online in Pakistan from ASM VEO. Product DescriptionFeatures random colors - Material: , metal, rubber - Smartphone Stand a Cash
 Description: Product DescriptionFeatures random colors - Material: , metal, rubber - Smartphone Stand advanced materials, easy to deform and damage. - Adjustable Cell Phone Stand Suitable for most mobile phones, adjustable cell phone Stand folding design, easy to carry. - The bottom is designed with a non- pad to attach more firmly to the table. - Foldable Phone Holder features high-grade materials, adjustable angles and heights, and a simple and sophisticated look. - Folding Desk Phone Stand makes a for your friends, making it convenient for them to watch videos while eating.
-Regular Price: 383
-Sale Price: 383
+Wholesale Price: 333
+Regular Price: 710
+Sale Price: 560
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

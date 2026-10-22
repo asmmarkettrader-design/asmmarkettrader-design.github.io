@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zipper Roti Cover - Random Color
 Product ID: hhc-3764921
 SKU: hhc-3764921
@@ -7,11 +8,16 @@ Slug: zipper-roti-cover-random-color-hhc-3764921
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/1ec7e3d98540d7b6100d08173b5ab73b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/1ec7e3d98540d7b6100d08173b5ab73b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/c3b2beaa2538459ca60d4faae5da6108.jpg
 Meta Title: Zipper Roti Cover - Random Color | Buy Online in Pakistan
 Meta Description: Buy Zipper Roti Cover - Random Color online in Pakistan from ASM VEO. Zipper Roti Cover, random color. High-quality fabric cover to keep rotis warm and fresh. D
 Description: Zipper Roti Cover, random color. High-quality fabric cover to keep rotis warm and fresh. Durable zipper design for easy access. Essential kitchen storage accessory.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Art Crafts BiRdsWall Stickers  (pack of 8 pcs )
 Product ID: hhc-815102
 SKU: hhc-815102
@@ -7,11 +8,16 @@ Slug: 3d-art-crafts-birdswall-stickers-pack-of-8-pcs-hhc-815102
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/9691bb82-fc38-44d4-8fa1-ad51fff595ea-1-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/9691bb82-fc38-44d4-8fa1-ad51fff595ea-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/a4e7b980-acc2-4d35-882c-db3a3be021c8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/7b0d5c26-1b7e-430a-b014-27d5ba3a1c3d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/fda639b3-ba95-4574-8771-b6ba8a25c668.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/6a574f12-6bef-48e4-92ac-583f60168a22.jpeg
 Meta Title: 3D Art Crafts BiRdsWall Stickers (pack of 8 pcs ) | Buy Online in Pa
 Meta Description: Buy 3D Art Crafts BiRdsWall Stickers (pack of 8 pcs ) online in Pakistan from ASM VEO. Colorful BiRDs Wall Decals Removable DIY 3D Art Crafts BiRdsWall Stickers
 Description: Colorful BiRDs Wall Decals Removable DIY 3D Art Crafts BiRdsWall Stickers for Home Offices Classroom School Room Girls Bedroom Wall Decorations pack of 8 pcs .
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

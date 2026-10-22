@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nova Hair Dryer NV 1290 | Quick Dry Foldable Hair Dryer | Fast Heat Compact Travel Dryer
 Product ID: hhc-3755292
 SKU: hhc-3755292
@@ -7,11 +8,16 @@ Slug: nova-hair-dryer-nv-1290-quick-dry-foldable-hair-dryer-fast-heat-compact-0b
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/80cd69f05d45d2beee496c4d93fd12f9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/80cd69f05d45d2beee496c4d93fd12f9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/e5c40cec2a9ea96dd3bb194b0533985c.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/8a53c6f8fd00a7883b97141e33cc7a4a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/49806901f73df6de2a5d58c2bafa693f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/b9c8b703c4842dc5e7196c7048223ad9.jpg
 Meta Title: Nova Hair Dryer NV 1290 | Quick Dry Foldable Hair Dryer | Fast Heat
 Meta Description: Buy Nova Hair Dryer NV 1290 | Quick Dry Foldable Hair Dryer | Fast Heat Compact Travel Dryer online in Pakistan from ASM VEO. Nova Hair Dryer NV 1290 delivers q
 Description: Nova Hair Dryer NV 1290 delivers quick, efficient drying with fast heat technology. Its foldable, compact design makes it perfect for travel and everyday use. Lightweight yet powerful, this hair dryer ensures smooth styling, reduced drying time, and convenient storage for home, gym, or on-the-go gro
-Regular Price: 1006
-Sale Price: 1006
+Wholesale Price: 956
+Regular Price: 1810
+Sale Price: 1446
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

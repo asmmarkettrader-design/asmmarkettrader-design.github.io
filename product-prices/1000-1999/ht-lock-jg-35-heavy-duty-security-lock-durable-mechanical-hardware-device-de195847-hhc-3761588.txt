@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HT Lock JG-35 - Heavy Duty Security Lock Durable Mechanical Hardware Device High Performance Protection Safety Lock For Doors And Gates
 Product ID: hhc-3761588
 SKU: hhc-3761588
@@ -7,11 +8,16 @@ Slug: ht-lock-jg-35-heavy-duty-security-lock-durable-mechanical-hardware-devi-de
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/83455363f07fe5a1785afb79f72ebd69.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/83455363f07fe5a1785afb79f72ebd69.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/f2552742f8992010f0e3c8626895ad33.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/1e9817c6d5d2f094601ce0e1333f6225.jpeg
 Meta Title: HT Lock JG-35 - Heavy Duty Security Lock Durable Mechanical Hardware
 Meta Description: Buy HT Lock JG-35 - Heavy Duty Security Lock Durable Mechanical Hardware Device High Performance Protection Safety Lock For Doors And Gates online in Pakistan f
 Description: A High Quality HT Lock JG-35 Designed To Provide Reliable Mechanical Security Durable Protection And Safe Locking Performance For Your Property.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 111 Pcs Fast-Fill Magic Water Balloons Kit - Quick-Fill Self-Sealing Water Bombs for Outdoor Water War Games & Summer Party Supplies
 Product ID: hhc-3758146
 SKU: hhc-3758146
@@ -7,11 +8,16 @@ Slug: 111-pcs-fast-fill-magic-water-balloons-kit-quick-fill-self-sealing-wate-5b
 Category: Events & Gifting
 Subcategory: Party Decorations
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/464260a4cf7d81d834bfb8fe8fc7d8ae.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/464260a4cf7d81d834bfb8fe8fc7d8ae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/5243e3ff32420e8de00c0c5dde94e248.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/9a903b3f5c5e393055bc27deb086023d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/ece053392481c06e2d7fde313f0abbe4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/d93988b5ac2027f4be82820968d6fff5.jpg
 Meta Title: 111 Pcs Fast-Fill Magic Water Balloons Kit - Quick-Fill Self-Sealing
 Meta Description: Buy 111 Pcs Fast-Fill Magic Water Balloons Kit - Quick-Fill Self-Sealing Water Bombs for Outdoor Water War Games & Summer Party Supplies online in Pakistan from
 Description: Get ready for the ultimate water war with this 111-piece Magic Water Balloon Kit. Featuring fast-fill technology and self-sealing stems, you can fill dozens of balloons in seconds.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Medicube Turmeric Overnight Wrapping Peel Off Mask 75ml Korean Skincare With Collagen For Glowing Elastic Skin - Made In Korea
 Product ID: hhc-3757130
 SKU: hhc-3757130
@@ -7,11 +8,16 @@ Slug: medicube-turmeric-overnight-wrapping-peel-off-mask-75ml-korean-skincare-71
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/ce9fff273399427a66493709c9e6e517.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/ce9fff273399427a66493709c9e6e517.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/084b919e676311fc5bf1f27448e65567.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/379afe89c2c5b49efe4308260f04a7d1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/f015c7115c64bae9e8d6f4af17261b19.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/9851fe1982fc43af9c699bdff4c5b306.jpg
 Meta Title: Medicube Turmeric Overnight Wrapping Peel Off Mask 75ml Korean Skinc
 Meta Description: Buy Medicube Turmeric Overnight Wrapping Peel Off Mask 75ml Korean Skincare With Collagen For Glowing Elastic Skin - Made In Korea online in Pakistan from ASM V
 Description: Medicube Turmeric Overnight Wrapping Peel Off Mask 75ml Nourishes Dull Uneven Skin With Hydrolyzed Collagen For Radiant Glow And Elasticity.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

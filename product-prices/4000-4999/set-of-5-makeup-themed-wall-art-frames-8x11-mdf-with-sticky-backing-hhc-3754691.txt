@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 5 Makeup-Themed Wall Art Frames – 8x11" MDF with Sticky Backing
 Product ID: hhc-3754691
 SKU: hhc-3754691
 Slug: set-of-5-makeup-themed-wall-art-frames-8x11-mdf-with-sticky-backing-hhc-3754691
-Category: Home & Kitchen
+Category: Beauty & Personal Care
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/bbd4f66fe19cff1fb317fb72ab2f65e2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/bbd4f66fe19cff1fb317fb72ab2f65e2.jpg
 Meta Title: Set of 5 Makeup-Themed Wall Art Frames – 8x11" MDF with Sticky Backi
 Meta Description: Buy Set of 5 Makeup-Themed Wall Art Frames – 8x11" MDF with Sticky Backing online in Pakistan from ASM VEO. Five MDF wooden frames with beauty-inspired designs.
 Description: Five MDF wooden frames with beauty-inspired designs. Easy to mount with pre-attached tape.
-Regular Price: 755
-Sale Price: 755
+Wholesale Price: 705
+Regular Price: 1350
+Sale Price: 1082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

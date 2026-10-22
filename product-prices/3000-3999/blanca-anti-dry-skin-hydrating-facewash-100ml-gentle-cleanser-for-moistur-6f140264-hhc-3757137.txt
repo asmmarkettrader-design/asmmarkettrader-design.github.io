@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Blanca Anti Dry Skin Hydrating Facewash 100ml Gentle Cleanser For Moisturized Smooth And Healthy Skin
 Product ID: hhc-3757137
 SKU: hhc-3757137
@@ -7,11 +8,16 @@ Slug: blanca-anti-dry-skin-hydrating-facewash-100ml-gentle-cleanser-for-moist-6f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/15e4fa0cbd63e5a5af0be4955d8ea3a2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/15e4fa0cbd63e5a5af0be4955d8ea3a2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/c632b26c76ca903f6f7b658238bf369a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/fe0124f3c3ee555c60a4e1e4d8ef536e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/5b174e3a6827bb8fc63d53ac71c4953a.jpeg
 Meta Title: Blanca Anti Dry Skin Hydrating Facewash 100ml Gentle Cleanser For Mo
 Meta Description: Buy Blanca Anti Dry Skin Hydrating Facewash 100ml Gentle Cleanser For Moisturized Smooth And Healthy Skin online in Pakistan from ASM VEO. Blanca Anti Dry Skin
 Description: Blanca Anti Dry Skin Hydrating Facewash 100ml Deeply Cleanses While Restoring Moisture Balance For Soft Smooth And Nourished Skin.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

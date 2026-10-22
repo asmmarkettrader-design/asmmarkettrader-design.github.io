@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Liru Collagen Vitamin-C Face Serum 30ml
 Product ID: hhc-2209416
 SKU: hhc-2209416
@@ -7,11 +8,16 @@ Slug: liru-collagen-vitamin-c-face-serum-30ml-hhc-2209416
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/4-11.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/4-11.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/3-18.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/2-32.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-51.webp
 Meta Title: Liru Collagen Vitamin-C Face Serum 30ml | Buy Online in Pakistan
 Meta Description: Buy Liru Collagen Vitamin-C Face Serum 30ml online in Pakistan from ASM VEO. Liru Collagen Vitamin-E Face Serum 30ml Skin Care Cosmetics Facial Brightening Mois
 Description: Liru Collagen Vitamin-E Face Serum 30ml Skin Care Cosmetics Facial Brightening Moisturizing Collagen Vitamin C Beauty Face Serum Facial Serum for Girls Imported Product Skin Care Products Best Skin Care Serum Collagen Vitamin E face serum Anti-aging serum Skin rejuvenation serum Vitamin E skincare Collagen boosting serum Face moisturizer Facial serum for aging skin
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 In 1 Belly Belt Waist Shaper Postpartum Recovery Body Shaper Slimming Maternity Belly Shaper Comfortable Breathable Durable Support
 Product ID: hhc-3753687
 SKU: hhc-3753687
@@ -7,11 +8,16 @@ Slug: 3-in-1-belly-belt-waist-shaper-postpartum-recovery-body-shaper-slimming-6f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/216e6e89789fa21bbfe008dba261c24d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/216e6e89789fa21bbfe008dba261c24d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/1d1aa033d2d5b474ab853d1ee6527936.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/4e4c8687ec4c4d81a52eb7a30550cfb1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/8de1635a6442371d14436be9dabd0104.jpeg
 Meta Title: 3 In 1 Belly Belt Waist Shaper Postpartum Recovery Body Shaper Slimm
 Meta Description: Buy 3 In 1 Belly Belt Waist Shaper Postpartum Recovery Body Shaper Slimming Maternity Belly Shaper Comfortable Breathable Durable Support online in Pakistan fro
 Description: 3 In 1 Belly Belt Waist Shaper Provides Comfortable Support And Postpartum Recovery
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

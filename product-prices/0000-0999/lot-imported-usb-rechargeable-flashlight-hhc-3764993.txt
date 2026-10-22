@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lot Imported USB Rechargeable Flashlight
 Product ID: hhc-3764993
 SKU: hhc-3764993
@@ -7,11 +8,16 @@ Slug: lot-imported-usb-rechargeable-flashlight-hhc-3764993
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/17b1b54849d12968cbd4a5dec593560c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/17b1b54849d12968cbd4a5dec593560c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/868324b4963e4b62a60b11f66a52a45e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/c9460a77fd0dd58a34c6376fa8a1efe0.jpg
 Meta Title: Lot Imported USB Rechargeable Flashlight | Buy Online in Pakistan
 Meta Description: Buy Lot Imported USB Rechargeable Flashlight online in Pakistan from ASM VEO. Light up your path with the Lot Imported COBA USB Rechargeable Flashlight. Enginee
 Description: Light up your path with the Lot Imported COBA USB Rechargeable Flashlight. Engineered with ultra-bright LED technology, an adjustable telescopic zoom, multiple lighting modes, and USB rechargeability, this durable tactical torch is built for outdoor exploration, power outages, and emergency survival
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

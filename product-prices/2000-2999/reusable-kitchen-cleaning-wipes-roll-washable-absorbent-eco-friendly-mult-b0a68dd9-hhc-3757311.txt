@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Reusable Kitchen Cleaning Wipes Roll – Washable, Absorbent & Eco-Friendly Multi-Purpose Cleaning Sheets
 Product ID: hhc-3757311
 SKU: hhc-3757311
@@ -7,11 +8,16 @@ Slug: reusable-kitchen-cleaning-wipes-roll-washable-absorbent-eco-friendly-mu-b0
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/4553d623028332abcbd610dfb6f60c73.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/4553d623028332abcbd610dfb6f60c73.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/cf8252861aa6eeb6d283e200be77a570.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/1bef65160eaccc4004d2bb930f2903b1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/f16926e59760e5eaa49c86c22aa6f101.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/ca2dff0dc80a75a393e60d9f183ad739.jpg
 Meta Title: Reusable Kitchen Cleaning Wipes Roll – Washable, Absorbent & Eco-Fri
 Meta Description: Buy Reusable Kitchen Cleaning Wipes Roll – Washable, Absorbent & Eco-Friendly Multi-Purpose Cleaning Sheets online in Pakistan from ASM VEO. Reusable Kitchen Cl
 Description: Reusable Kitchen Cleaning Wipes are durable, highly absorbent, and perfect for everyday cleaning. Ideal for dishes, countertops, and kitchen surfaces, these washable multi-purpose wipes offer a cost-effective and eco-friendly solution for a spotless home.
-Regular Price: 1230
-Sale Price: 1230
+Wholesale Price: 1180
+Regular Price: 2170
+Sale Price: 1736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

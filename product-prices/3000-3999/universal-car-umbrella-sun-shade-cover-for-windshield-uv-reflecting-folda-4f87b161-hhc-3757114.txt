@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Car Umbrella Sun Shade Cover for Windshield UV Reflecting Foldable Front Car Sunshade Umbrella
 Product ID: hhc-3757114
 SKU: hhc-3757114
@@ -7,11 +8,16 @@ Slug: universal-car-umbrella-sun-shade-cover-for-windshield-uv-reflecting-fol-4f
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Universal Car Umbrella Sun Shade Cover for Windshield UV Reflecting
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/1f3d788c6f53aa4fff48da1240e21f8b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/1f3d788c6f53aa4fff48da1240e21f8b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/4e7635e6ca01ca94d1071d43034f412a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/17e3666f7bf75be1351e797ffd74cc75.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/077be3e3e79d9f028961c5b515089318.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/c8e395470c0e4001ea46e486ce36c65b.jpeg
+Meta Title: Universal Car Umbrella Sun Shade Cover for Windshield UV Reflecting 
 Meta Description: Buy Universal Car Umbrella Sun Shade Cover for Windshield UV Reflecting Foldable Front Car Sunshade Umbrella online in Pakistan from ASM VEO. Universal Car Umbr
 Description: Universal Car Umbrella Sun Shade Cover for Windshield UV Reflecting Foldable Front Car Sunshade Umbrella
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

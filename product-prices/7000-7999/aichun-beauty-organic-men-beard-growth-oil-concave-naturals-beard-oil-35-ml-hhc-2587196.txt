@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aichun Beauty Organic Men Beard Growth Oil Concave Naturals Beard Oil 35 ML
 Product ID: hhc-2587196
 SKU: hhc-2587196
@@ -7,11 +8,16 @@ Slug: aichun-beauty-organic-men-beard-growth-oil-concave-naturals-beard-oil-35-m
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.35.41-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.35.41-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.35.40-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.35.40-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.35.40-PM.jpeg
 Meta Title: Aichun Beauty Organic Men Beard Growth Oil Concave Naturals Beard Oi
 Meta Description: Buy Aichun Beauty Organic Men Beard Growth Oil Concave Naturals Beard Oil 35 ML online in Pakistan from ASM VEO. Aichun Beauty Organic Men Beard Growth Oil Conc
 Description: Aichun Beauty Organic Men Beard Growth Oil Concave Naturals Beard Oil 35 MLSize: 30ml Restores damaged follicles. Nourishing ingredients restore hair follicles to a healthy state.Effective ingredients activate dormant hair follicles, stimulate their activity. Charm. Mustache, sideburns, chest hair makes a man more attractive.Key featureMaterial: OilProduct Type: Concave Naturals Beard OilProduct Details: Perfect For Early Stages Of Beard Growth, Moisturizing Properties Treat Beard Dandruff And Flaking, Eases The Itchy Phase Of New Beards By Hydrating The Skin, Achieve A Silky Smooth Beard Without The Unwanted Build Up Of Traditional ProductsActivation of the hair follicles. Restores and activates the hair follicles.Package Includes: 1 x OilWeight: 30 Ml
-Regular Price: 432
-Sale Price: 432
+Wholesale Price: 382
+Regular Price: 790
+Sale Price: 633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

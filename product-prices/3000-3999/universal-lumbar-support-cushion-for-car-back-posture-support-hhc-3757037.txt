@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Lumbar Support Cushion For Car | Back Posture Support
 Product ID: hhc-3757037
 SKU: hhc-3757037
@@ -7,11 +8,16 @@ Slug: universal-lumbar-support-cushion-for-car-back-posture-support-hhc-3757037
 Category: Automotive
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/2d4dd02da5be1e3da8b7820f789c2986.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/2d4dd02da5be1e3da8b7820f789c2986.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/3fd53fd63456d5f7aeed3df6dbf0125e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/018322209fc18784e8c6011a96a5902d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/cb2e3376739301242ba684d4738fec0b.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/22d9f36fb3d9bbc455e7ab5448378449.jpg
 Meta Title: Universal Lumbar Support Cushion For Car | Back Posture Support | Bu
 Meta Description: Buy Universal Lumbar Support Cushion For Car | Back Posture Support online in Pakistan from ASM VEO. Universal Lumbar Support Cushion For Car | Back Posture Sup
 Description: Universal Lumbar Support Cushion For Car | Back Posture Support
-Regular Price: 1741
-Sale Price: 1741
+Wholesale Price: 1741
+Regular Price: 3160
+Sale Price: 2530
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

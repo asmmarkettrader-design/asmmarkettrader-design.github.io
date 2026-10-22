@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Imported Baby Diaper Maternity Mother Bag Durable Spacious Stylish Practical Choice For Travel Nursing And Daily Baby Care
 Product ID: hhc-3763532
 SKU: hhc-3763532
@@ -7,11 +8,16 @@ Slug: imported-baby-diaper-maternity-mother-bag-durable-spacious-stylish-prac-84
 Category: Backpacks & Duffel Bags
 Subcategory: Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/b4be1a21b8399c55f6fd6cea1f78af0e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/b4be1a21b8399c55f6fd6cea1f78af0e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/ce90c228e1b9dc9686e3d88997865699.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/7dc55f9681eac11ee7eeafd94b5c34d3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/8bf5e7ed0d97d94a10ac0605edee745c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/6e2fab73a6e8c832252d03871510d399.jpg
 Meta Title: Imported Baby Diaper Maternity Mother Bag Durable Spacious Stylish P
 Meta Description: Buy Imported Baby Diaper Maternity Mother Bag Durable Spacious Stylish Practical Choice For Travel Nursing And Daily Baby Care online in Pakistan from ASM VEO.
 Description: Imported Baby Diaper Maternity Mother Bag Durable Spacious Stylish Practical Choice For Travel Nursing And Daily Baby Care.
-Regular Price: 3498
-Sale Price: 3498
+Wholesale Price: 3498
+Regular Price: 5910
+Sale Price: 4727
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

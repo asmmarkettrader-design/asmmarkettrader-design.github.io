@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Derma Smooth – Gentle Daily Personal Care Solution
 Product ID: hhc-3754150
 SKU: hhc-3754150
@@ -7,11 +8,16 @@ Slug: derma-smooth-gentle-daily-personal-care-solution-hhc-3754150
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/19828ca12d99b6b0d49ee3e56dddd28a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/19828ca12d99b6b0d49ee3e56dddd28a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/b12cb153bb2a7041a732cd4649237d49.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/a707ef45d44a729343a473461e0c5b51.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/9a24e332df055749a67f661e60ddf989.webp
 Meta Title: Derma Smooth – Gentle Daily Personal Care Solution | Buy Online in P
 Meta Description: Buy Derma Smooth – Gentle Daily Personal Care Solution online in Pakistan from ASM VEO. Experience refined daily care with Derma Smooth. Its gentle, skin-friend
 Description: Experience refined daily care with Derma Smooth. Its gentle, skin-friendly formula ensures everyday comfort, freshness, and soft, smooth skin.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

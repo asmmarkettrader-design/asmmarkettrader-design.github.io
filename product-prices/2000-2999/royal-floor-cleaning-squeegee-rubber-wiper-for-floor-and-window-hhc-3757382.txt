@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Floor Cleaning Squeegee | Rubber Wiper for Floor And Window
 Product ID: hhc-3757382
 SKU: hhc-3757382
@@ -7,11 +8,16 @@ Slug: royal-floor-cleaning-squeegee-rubber-wiper-for-floor-and-window-hhc-375738
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/8be739d716827a5662c6ab587ae65046.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/8be739d716827a5662c6ab587ae65046.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/441f3b0f7fcc4d97ead545d2cae58200.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/8b3af8a030dc4a16e79f9ff521d02cb8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/0038b1b615cb77ddd65c5cb2b6d37cb0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/9f2199804ae8ad6c1e540e7d9e0b777d.jpg
 Meta Title: Royal Floor Cleaning Squeegee | Rubber Wiper for Floor And Window |
 Meta Description: Buy Royal Floor Cleaning Squeegee | Rubber Wiper for Floor And Window online in Pakistan from ASM VEO. Keep your surfaces spotless with this durable and efficie
 Description: Keep your surfaces spotless with this durable and efficient floor cleaning squeegee. Designed with a high-quality rubber blade, it effortlessly removes water, spills, and dirt from floors, tiles, glass, and windows without leaving streaks.
-Regular Price: 1260
-Sale Price: 1260
+Wholesale Price: 1210
+Regular Price: 2220
+Sale Price: 1778
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

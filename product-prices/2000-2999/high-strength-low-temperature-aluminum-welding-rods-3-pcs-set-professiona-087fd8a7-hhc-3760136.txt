@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High-Strength Low Temperature Aluminum Welding Rods - 3 Pcs Set | Professional Metal Repair & Brazing Solution
 Product ID: hhc-3760136
 SKU: hhc-3760136
@@ -7,11 +8,16 @@ Slug: high-strength-low-temperature-aluminum-welding-rods-3-pcs-set-professio-08
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/d841c1c09865b67c1f9df7e64c5bf76b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/d841c1c09865b67c1f9df7e64c5bf76b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/2e44ecb06ba9358b0a541667bd1dc219.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/911cfaba1037a98c4292f3f1a5cb0d31.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/0ab12448039a4edc7d1e2de02148320a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/0cf6c14794c976023b1a921af1413554.jpeg
 Meta Title: High-Strength Low Temperature Aluminum Welding Rods - 3 Pcs Set | Pr
 Meta Description: Buy High-Strength Low Temperature Aluminum Welding Rods - 3 Pcs Set | Professional Metal Repair & Brazing Solution online in Pakistan from ASM VEO. Fix leaks, c
 Description: Fix leaks, cracks, and broken metal joints effortlessly with this 3-Piece Low Temperature Welding Rod Set. Perfect for repairing aluminum, copper, and iron components, these high-efficiency melt rods require no complex welding machinery, making them ideal for quick home DIY fixes and professional.
-Regular Price: 296
-Sale Price: 296
+Wholesale Price: 246
+Regular Price: 579
+Sale Price: 429
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shoe Wipes | 80 Pcs Instant Cleaner | Quick Dirt & Stain Removal | Shoe Cleaning Kit
 Product ID: hhc-3754668
 SKU: hhc-3754668
@@ -7,11 +8,16 @@ Slug: shoe-wipes-80-pcs-instant-cleaner-quick-dirt-stain-removal-shoe-cleaning-k
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/9219518ec7404adb3a6ba9816e118c69.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/9219518ec7404adb3a6ba9816e118c69.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/b82210a728213996a045096f938ee0a0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/1644369f6c3ee2ae0255c10a2b87645d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/a3d518291dfcdaad56bcd7c0a08f19ea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/716b0f94d6c6cafca36b6c926a4a8d97.jpg
 Meta Title: Shoe Wipes | 80 Pcs Instant Cleaner | Quick Dirt & Stain Removal | S
 Meta Description: Buy Shoe Wipes | 80 Pcs Instant Cleaner | Quick Dirt & Stain Removal | Shoe Cleaning Kit online in Pakistan from ASM VEO. Shoe Wipes 80 pcs, instant cleaner for
 Description: Shoe Wipes 80 pcs, instant cleaner for quick dirt and stain removal. Perfect shoe cleaning kit.
-Regular Price: 242
-Sale Price: 242
+Wholesale Price: 192
+Regular Price: 498
+Sale Price: 348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

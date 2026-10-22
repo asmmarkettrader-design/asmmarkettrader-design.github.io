@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Collection Women’s Plain Grey Charcoal Jacket | Stylish & Warm Outerwear | Elegant Winter Fashion for Ladies
 Product ID: hhc-3753505
 SKU: hhc-3753505
@@ -7,11 +8,16 @@ Slug: winter-collection-women-s-plain-grey-charcoal-jacket-stylish-warm-outer-29
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/b1f01f6b1ae36dd8aafe73abc5cdd1cc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/b1f01f6b1ae36dd8aafe73abc5cdd1cc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/9beb7248f7bd77f124f865348b8fe9f7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/441dfab63925d41676d23fca71d8f810.jpeg
 Meta Title: Winter Collection Women’s Plain Grey Charcoal Jacket | Stylish & War
 Meta Description: Buy Winter Collection Women’s Plain Grey Charcoal Jacket | Stylish & Warm Outerwear | Elegant Winter Fashion for Ladies online in Pakistan from ASM VEO. Classic
 Description: Classic plain grey charcoal winter jacket for women. Soft, warm, and versatile — perfect for daily wear, casual outings, and winter layering.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

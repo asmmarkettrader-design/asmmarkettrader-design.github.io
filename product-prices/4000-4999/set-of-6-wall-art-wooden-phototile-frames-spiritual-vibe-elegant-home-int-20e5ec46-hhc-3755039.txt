@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 6 Wall Art Wooden Phototile Frames Spiritual Vibe Elegant Home Interior Wall Decor
 Product ID: hhc-3755039
 SKU: hhc-3755039
@@ -7,11 +8,16 @@ Slug: set-of-6-wall-art-wooden-phototile-frames-spiritual-vibe-elegant-home-i-20
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/65c2400bedfcef88e3369d49f0dbd8fc.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/65c2400bedfcef88e3369d49f0dbd8fc.jpeg
 Meta Title: Set of 6 Wall Art Wooden Phototile Frames Spiritual Vibe Elegant Hom
 Meta Description: Buy Set of 6 Wall Art Wooden Phototile Frames Spiritual Vibe Elegant Home Interior Wall Decor online in Pakistan from ASM VEO. High quality MDF wooden frames wi
 Description: High quality MDF wooden frames with sticky tape and spiritual designs to beautify your walls.
-Regular Price: 753
-Sale Price: 753
+Wholesale Price: 703
+Regular Price: 1350
+Sale Price: 1079
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

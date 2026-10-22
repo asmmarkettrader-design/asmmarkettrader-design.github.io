@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Velvet Knee Warmer Soft Comfortable Fabric Durable Build Stylish Design Provides Warmth And Support Perfect For Daily Wear And Cold Weather Protection
 Product ID: hhc-3753851
 SKU: hhc-3753851
@@ -7,11 +8,16 @@ Slug: velvet-knee-warmer-soft-comfortable-fabric-durable-build-stylish-design-51
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/70e0bde5d5adf96a75bbbe7e8483479b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/70e0bde5d5adf96a75bbbe7e8483479b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/3c9e90c85023a92080de9ee9a4ed1c02.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/8af0f5c15a0b7006684856d5b40b1750.jpeg
 Meta Title: Velvet Knee Warmer Soft Comfortable Fabric Durable Build Stylish Des
 Meta Description: Buy Velvet Knee Warmer Soft Comfortable Fabric Durable Build Stylish Design Provides Warmth And Support Perfect For Daily Wear And Cold Weather Protection onlin
 Description: Velvet Knee Warmer Provides Soft Comfortable Fabric Durable Build Stylish Design Warmth And Support
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

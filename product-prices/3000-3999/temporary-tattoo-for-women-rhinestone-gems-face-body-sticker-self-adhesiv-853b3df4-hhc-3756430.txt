@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Temporary Tattoo for Women – Rhinestone Gems Face & Body Sticker | Self-Adhesive Crystal Makeup Decoration for Parties & Festivals (Random Design)
 Product ID: hhc-3756430
 SKU: hhc-3756430
@@ -7,11 +8,16 @@ Slug: temporary-tattoo-for-women-rhinestone-gems-face-body-sticker-self-adhes-85
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/41edf43b0ab68e23a6a47df2e3e601e1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/41edf43b0ab68e23a6a47df2e3e601e1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/8c3c90b825ee6052ba96d6927ea3d9e6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/b0352fb04b36d8f47ce50862a92c21c2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/2a44a4d8f869f818015188dcd44b38ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/c4d4bb73681fb506433f4a79040ece62.jpeg
 Meta Title: Temporary Tattoo for Women – Rhinestone Gems Face & Body Sticker | S
 Meta Description: Buy Temporary Tattoo for Women – Rhinestone Gems Face & Body Sticker | Self-Adhesive Crystal Makeup Decoration for Parties & Festivals (Random Design) online in
 Description: Sparkle like a mermaid! Stunning rhinestone face stickers with crystal gems and self-adhesive design, perfect for parties, festivals, or creative makeup looks.
-Regular Price: 248
-Sale Price: 248
+Wholesale Price: 198
+Regular Price: 507
+Sale Price: 357
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

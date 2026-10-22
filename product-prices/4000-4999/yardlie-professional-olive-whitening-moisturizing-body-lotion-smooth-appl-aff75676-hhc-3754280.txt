@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Professional Olive Whitening Moisturizing Body Lotion Smooth Application For Skincare - 200ML
 Product ID: hhc-3754280
 SKU: hhc-3754280
@@ -7,11 +8,16 @@ Slug: yardlie-professional-olive-whitening-moisturizing-body-lotion-smooth-ap-af
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/96a6590cc61c1b32f9719f71da02a0b0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/96a6590cc61c1b32f9719f71da02a0b0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/2d2ba153d06a4ea14a1408e2435ac7b6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/470dd34b696a8fc1392d48f2b683b91d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/81e7ddbfa7a2357e056e152f4e66631d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/52d042377b1208a29a42ffedea7af757.jpeg
 Meta Title: Yardlie Professional Olive Whitening Moisturizing Body Lotion Smooth
 Meta Description: Buy Yardlie Professional Olive Whitening Moisturizing Body Lotion Smooth Application For Skincare - 200ML online in Pakistan from ASM VEO. Yardlie Professional
 Description: Yardlie Professional Olive Whitening Moisturizing Body Lotion Provides Durable Quality Reliable Utility Comfortable Use Smooth Application And Compact Design
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Blanca Spotless Glow Face Wash 100ml Gentle Cleanser For Bright Clear And Radiant Skin
 Product ID: hhc-3757135
 SKU: hhc-3757135
@@ -7,11 +8,16 @@ Slug: blanca-spotless-glow-face-wash-100ml-gentle-cleanser-for-bright-clear-a-a9
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/1ceb452cac3988466a9d3551f6856766.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/1ceb452cac3988466a9d3551f6856766.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/2d4226245c2f19570bfbe6a4e9f72b09.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/736bb194cbd9526a50c1c1e8bb826c73.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/f4656d752fc99ced0b416c0dc85b9149.jpeg
 Meta Title: Blanca Spotless Glow Face Wash 100ml Gentle Cleanser For Bright Clea
 Meta Description: Buy Blanca Spotless Glow Face Wash 100ml Gentle Cleanser For Bright Clear And Radiant Skin online in Pakistan from ASM VEO. Blanca Spotless Glow Face Wash 100ml
 Description: Blanca Spotless Glow Face Wash 100ml Effectively Cleanses Dirt Oil And Impurities For A Clear Smooth And Radiant Complexion.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

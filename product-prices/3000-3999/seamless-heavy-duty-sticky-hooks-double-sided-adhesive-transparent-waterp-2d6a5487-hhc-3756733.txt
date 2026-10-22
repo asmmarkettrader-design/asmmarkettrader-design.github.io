@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Seamless Heavy Duty Sticky Hooks | Double-Sided Adhesive | Transparent Waterproof Wall Hangers | Bathroom & Kitchen
 Product ID: hhc-3756733
 SKU: hhc-3756733
@@ -7,11 +8,16 @@ Slug: seamless-heavy-duty-sticky-hooks-double-sided-adhesive-transparent-wate-2d
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/6c8a8b05288b568016ff78f2304c7016.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/6c8a8b05288b568016ff78f2304c7016.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/ca9584778502762a02865645e2acb7cd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/19ef512a71276b88ed97f22d30f8d5c1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/9a9e993a309708361eeac0cb2f62e3de.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/b046e8979d294351bc86dc89bf0a8bd7.jpeg
 Meta Title: Seamless Heavy Duty Sticky Hooks | Double-Sided Adhesive | Transpare
 Meta Description: Buy Seamless Heavy Duty Sticky Hooks | Double-Sided Adhesive | Transparent Waterproof Wall Hangers | Bathroom & Kitchen online in Pakistan from ASM VEO. Strong
 Description: Strong seamless sticky hooks with double-sided adhesive. Transparent, waterproof, and multipurpose for bathroom, kitchen, and wall hanging.
-Regular Price: 313
-Sale Price: 313
+Wholesale Price: 263
+Regular Price: 604
+Sale Price: 454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

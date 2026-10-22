@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Electric Coffee Frother & Milk Beater – Handheld Foam Maker with Stainless Steel Whisk, USB Charging, and Powerful Motor
 Product ID: hhc-3752642
 SKU: hhc-3752642
@@ -7,11 +8,16 @@ Slug: rechargeable-electric-coffee-frother-milk-beater-handheld-foam-maker-wi-77
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/c612f1a4c2b58362f42d7198bca0d9cb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/c612f1a4c2b58362f42d7198bca0d9cb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/9c94c09326842ea80ae2fa74e2364874.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/25afbec5ed4be43b9f2bbb52633b31dd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/fa3a33c8103e8eefed58c9df2f63c110.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/7dedfb6d397722b4723cf6d9af3ddb49.jpeg
 Meta Title: Rechargeable Electric Coffee Frother & Milk Beater – Handheld Foam M
 Meta Description: Buy Rechargeable Electric Coffee Frother & Milk Beater – Handheld Foam Maker with Stainless Steel Whisk, USB Charging, and Powerful Motor online in Pakistan fro
 Description: Make barista-style coffee anywhere with this rechargeable handheld coffee frother — quick, powerful, and easy to use for perfect foam every time.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

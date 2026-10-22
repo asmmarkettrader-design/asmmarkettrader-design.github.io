@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Eventone‑C Cream | L‑Glutathione + Vitamin C | 10 g | Treats Skin Darkness & Pigmentation
 Product ID: hhc-3754934
 SKU: hhc-3754934
@@ -7,11 +8,16 @@ Slug: eventone-c-cream-l-glutathione-vitamin-c-10-g-treats-skin-darkness-pigment
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/f52430238ffa55b8947b3d8b923384e6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/f52430238ffa55b8947b3d8b923384e6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/5cb2cc86f42b9aa2a614c09fea802822.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/62b3fba393b706638f57191a3b08200c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/9bce31e4eeebbc09a6b122e21a7b0b99.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/a97778fb418431e61ca6dd0080de7b01.jpeg
 Meta Title: Eventone‑C Cream | L‑Glutathione + Vitamin C | 10 g | Treats Skin Da
 Meta Description: Buy Eventone‑C Cream | L‑Glutathione + Vitamin C | 10 g | Treats Skin Darkness & Pigmentation online in Pakistan from ASM VEO. Eventone‑C Cream, 10 g. Enriched
 Description: Eventone‑C Cream, 10 g. Enriched with L‑Glutathione and Vitamin C to reduce skin darkness and pigmentation.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

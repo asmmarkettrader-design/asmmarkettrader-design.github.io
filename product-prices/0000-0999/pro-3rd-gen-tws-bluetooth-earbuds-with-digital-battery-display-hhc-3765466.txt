@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pro 3rd Gen TWS Bluetooth Earbuds with Digital Battery Display
 Product ID: hhc-3765466
 SKU: hhc-3765466
@@ -7,11 +8,16 @@ Slug: pro-3rd-gen-tws-bluetooth-earbuds-with-digital-battery-display-hhc-3765466
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/13890c44bae912a6a6d1cf2983985c09.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/13890c44bae912a6a6d1cf2983985c09.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/458a47b434492ecf021ac321992ef568.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/fc926aef65c8b1f85a28fd391369aa23.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/1b267539076f49cba775be2322237c5f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/25fe689864b38cf75e21227ce0ffda34.jpg
 Meta Title: Pro 3rd Gen TWS Bluetooth Earbuds with Digital Battery Display | Buy
 Meta Description: Buy Pro 3rd Gen TWS Bluetooth Earbuds with Digital Battery Display online in Pakistan from ASM VEO. Pro 3rd Gen TWS (True Wireless Stereo) Bluetooth Earbuds. Hi
 Description: Pro 3rd Gen TWS (True Wireless Stereo) Bluetooth Earbuds. High-quality wireless earphones with smart touch control, deep bass stereo sound, and a digital battery display. Compatible with all Bluetooth-enabled devices. Includes a charging case with a convenient battery level indicator. Specs: - Type: In-ear wireless - Connection: Bluetooth - Features: Touch control, digital display, deep bass -
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

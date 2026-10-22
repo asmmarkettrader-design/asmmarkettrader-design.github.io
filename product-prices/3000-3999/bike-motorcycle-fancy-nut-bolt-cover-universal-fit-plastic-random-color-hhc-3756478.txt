@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bike Motorcycle Fancy Nut Bolt Cover – Universal Fit (Plastic, Random-Color)
 Product ID: hhc-3756478
 SKU: hhc-3756478
@@ -7,11 +8,16 @@ Slug: bike-motorcycle-fancy-nut-bolt-cover-universal-fit-plastic-random-color-hh
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/f22de1f98947821851cf79e82031f60a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/f22de1f98947821851cf79e82031f60a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/66b3696c94bbdf74d481a4005968c332.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/47903527892051ad3bfd64eb1b5401cb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/7327d69bff0992e2c3b8edcca4c709be.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/20b198038c2b070df4c9d23b32366fff.jpeg
 Meta Title: Bike Motorcycle Fancy Nut Bolt Cover – Universal Fit (Plastic, Rando
 Meta Description: Buy Bike Motorcycle Fancy Nut Bolt Cover – Universal Fit (Plastic, Random-Color) online in Pakistan from ASM VEO. Stylish and durable plastic nut bolt covers de
 Description: Stylish and durable plastic nut bolt covers designed to enhance the look of all bikes and motorcycles. Available in multiple vibrant colors for a custom finish.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

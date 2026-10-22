@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foldable Inflatable LED Camping Light with Magnetic Base & Storage Pouch
 Product ID: hhc-3762361
 SKU: hhc-3762361
@@ -7,11 +8,16 @@ Slug: foldable-inflatable-led-camping-light-with-magnetic-base-storage-pouch-hhc
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/e4099964670415b95fbe47e178a39b1d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/e4099964670415b95fbe47e178a39b1d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/6ef011d1407ac68077370476c5ddc19e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/f4048f024c45f977fb2b4680991e72e2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/3ed2008ef5fea9107bdc6396b9c8894b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/48659f8e8f1645d44491c21b2626a50b.jpeg
 Meta Title: Foldable Inflatable LED Camping Light with Magnetic Base & Storage P
 Meta Description: Buy Foldable Inflatable LED Camping Light with Magnetic Base & Storage Pouch online in Pakistan from ASM VEO. Portable foldable inflatable camping light with ma
 Description: Portable foldable inflatable camping light with magnetic base, bright LED illumination, and compact storage pouch for outdoor and emergency use.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

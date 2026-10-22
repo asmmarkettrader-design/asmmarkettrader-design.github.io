@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Forever Bloom Filmfish Foundation Light Spectrum Sunscreen Serum SPF 50 Moisturizing Formula 30g
 Product ID: hhc-3761467
 SKU: hhc-3761467
@@ -7,11 +8,16 @@ Slug: forever-bloom-filmfish-foundation-light-spectrum-sunscreen-serum-spf-50-98
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/afaa573ccf92d2c1f3e0293fdae098b3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/afaa573ccf92d2c1f3e0293fdae098b3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/b5bdd68fffebbc605c778db66655ab48.jpeg
 Meta Title: Forever Bloom Filmfish Foundation Light Spectrum Sunscreen Serum SPF
 Meta Description: Buy Forever Bloom Filmfish Foundation Light Spectrum Sunscreen Serum SPF 50 Moisturizing Formula 30g online in Pakistan from ASM VEO. Forever Bloom Filmfish Fou
 Description: Forever Bloom Filmfish Foundation Light Spectrum Sunscreen Serum SPF 50 Helps Moisturize And Even Skin Tone With Color Mimicking Technology.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

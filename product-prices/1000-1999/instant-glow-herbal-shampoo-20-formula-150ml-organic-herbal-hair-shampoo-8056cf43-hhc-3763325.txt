@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Instant Glow Herbal Shampoo 20+ Formula 150ml | Organic Herbal Hair Shampoo for Hair Growth & Hair Fall Control | Dandruff & Frizz Control | Scalp Nourishing Shampoo
 Product ID: hhc-3763325
 SKU: hhc-3763325
@@ -7,11 +8,16 @@ Slug: instant-glow-herbal-shampoo-20-formula-150ml-organic-herbal-hair-shampo-80
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/5259781ca176b9e46a8442bb81c31585.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/5259781ca176b9e46a8442bb81c31585.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/4c35cf0dce62e65770d5b8d06f1ab39c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/49573c041fd39ee3ded6c80139b6b45f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/f329889469759135f45a039aa9e6353c.png
 Meta Title: Instant Glow Herbal Shampoo 20+ Formula 150ml | Organic Herbal Hair
 Meta Description: Buy Instant Glow Herbal Shampoo 20+ Formula 150ml | Organic Herbal Hair Shampoo for Hair Growth & Hair Fall Control | Dandruff & Frizz Control | Scalp Nourishin
 Description: Instant Glow Herbal Shampoo 20+ Formula 150ml is a herbal hair-care shampoo formulated to cleanse and refresh the scalp while helping control dandruff, hair fall, and frizz. It supports healthier-looking, softer, smoother, and naturally shinier hair.
-Regular Price: 622
-Sale Price: 622
+Wholesale Price: 572
+Regular Price: 1110
+Sale Price: 889
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

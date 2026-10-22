@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: PVC Vinyl Black Board Wall Sticker Removable, with (2 pcs chalks)  For Kids Bedroom Size/Dimension 16*60 cm Size
 Product ID: hhc-2115464
 SKU: hhc-2115464
@@ -7,11 +8,16 @@ Slug: pvc-vinyl-black-board-wall-sticker-removable-with-2-pcs-chalks-for-kids-c3
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/3-3.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/3-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/5.webp
 Meta Title: PVC Vinyl Black Board Wall Sticker Removable, with (2 pcs chalks) Fo
 Meta Description: Buy PVC Vinyl Black Board Wall Sticker Removable, with (2 pcs chalks) For Kids Bedroom Size/Dimension 16*60 cm Size online in Pakistan from ASM VEO. Easy to ins
 Description: Easy to install just peel and paste on wall Blackboard. Instructions - the surface you wish to attach your Blackboard to must first be clean and free from dust, grease, or any other contamination. Freshly painted or lacquered surfaces must be allowed to completely cure before the Blackboard is applied. Simply peel this blackboard off from backing paper and apply it to the design area.Press firmly to squeeze out any air bubbles.Grab a cloth and give Blackboard a few wipes down to ensure that the Blackboard is firmly stuck to the surface.Black board with 2 chalksSize : 16*60 inch
-Regular Price: 220
-Sale Price: 220
+Wholesale Price: 170
+Regular Price: 465
+Sale Price: 315
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

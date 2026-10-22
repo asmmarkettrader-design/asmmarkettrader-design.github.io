@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 360° Stunt Car Toy - Double-Sided Flip Action, Friction Powered, Cartoon-Themed Racer - Durable & Safe Kids Toy Car - Indoor & Outdoor Fun (Random Colour)
 Product ID: hhc-3755556
 SKU: hhc-3755556
@@ -7,11 +8,16 @@ Slug: 360-stunt-car-toy-double-sided-flip-action-friction-powered-cartoon-the-c8
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/f75cd637365246e0f5873a0a9e015d75.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/f75cd637365246e0f5873a0a9e015d75.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/3db957592f19f6d0b82752f52e304562.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/7bb87fa975ceaad56cb35135b6d87363.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/e29bbbcf271ddda09b4d53f8a70ac585.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/2540ef46126a15f8cd699c4a5bb17001.jpeg
 Meta Title: 360° Stunt Car Toy - Double-Sided Flip Action, Friction Powered, Car
 Meta Description: Buy 360° Stunt Car Toy - Double-Sided Flip Action, Friction Powered, Cartoon-Themed Racer - Durable & Safe Kids Toy Car - Indoor & Outdoor Fun (Random Colour) o
 Description: 360° Rotating & Flipping Stunt Car - Perform amazing stunts effortlessly.
-Regular Price: 248
-Sale Price: 248
+Wholesale Price: 198
+Regular Price: 507
+Sale Price: 357
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 240W 2-in-1 Data Cable With Stand | 1.5 Meter C to C USB Data Cable | Fast Charging Nylon Braided Mobile Cable
 Product ID: hhc-3764031
 SKU: hhc-3764031
@@ -7,11 +8,16 @@ Slug: 240w-2-in-1-data-cable-with-stand-1-5-meter-c-to-c-usb-data-cable-fast-3f2
 Category: Electronics
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/ae6813e0632aeb3cc9c91b083a5a87be.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/ae6813e0632aeb3cc9c91b083a5a87be.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/2c4736727defe2383c7d3ce84e73e7d6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/be59ecee2442b25332fe293e8380aa08.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/601ac32e799c2398a163e8cc7aa2bfea.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/cd701645452a6869de55b829bed771f1.jpg
 Meta Title: 240W 2-in-1 Data Cable With Stand | 1.5 Meter C to C USB Data Cable
 Meta Description: Buy 240W 2-in-1 Data Cable With Stand | 1.5 Meter C to C USB Data Cable | Fast Charging Nylon Braided Mobile Cable online in Pakistan from ASM VEO. 240W 2-in-1
 Description: 240W 2-in-1 USB C to C Data Cable with built-in stand and 1.5-meter length. Fast charging, reliable data transfer, and durable nylon braided construction make it perfect for everyday use.
-Regular Price: 765
-Sale Price: 765
+Wholesale Price: 715
+Regular Price: 1370
+Sale Price: 1097
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

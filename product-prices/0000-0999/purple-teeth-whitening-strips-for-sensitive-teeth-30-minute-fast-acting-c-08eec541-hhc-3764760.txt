@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Purple Teeth Whitening Strips for Sensitive Teeth 30-Minute Fast Acting Colour Corrector for White Teeth
 Product ID: hhc-3764760
 SKU: hhc-3764760
@@ -7,11 +8,16 @@ Slug: purple-teeth-whitening-strips-for-sensitive-teeth-30-minute-fast-acting-08
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/d4fb9be6c9b24be2e6e5a7fb1d83bfc5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/d4fb9be6c9b24be2e6e5a7fb1d83bfc5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/0fdc3e7d49a6a51201d6611d5b7e5bf6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/5905eb1670bfbda1140faf5d4aaf7192.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/c09fdf58988dd5c08986466c7895fd38.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/2d9907539a9090f4185075ab477cb644.jpg
 Meta Title: Purple Teeth Whitening Strips for Sensitive Teeth 30-Minute Fast Act
 Meta Description: Buy Purple Teeth Whitening Strips for Sensitive Teeth 30-Minute Fast Acting Colour Corrector for White Teeth online in Pakistan from ASM VEO. Purple Teeth White
 Description: Purple Teeth Whitening Strips designed for sensitive teeth. These strips feature 30-minute fast-acting colour correction technology to help whiten teeth effectively while remaining enamel-safe. Ideal for a salon-worthy smile at home. - Type: Purple Whitening Strips - Usage: 30 minutes application - Benefits: Instant brightness, gentle, no irritation, enamel safe.Made in china7 strips
-Regular Price: 664
-Sale Price: 664
+Wholesale Price: 614
+Regular Price: 1190
+Sale Price: 950
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Toothpaste Dispenser With 5 Brush Holder Wall Mounted Automatic Hands Free Toothpaste Dispenser
 Product ID: hhc-1181842
 SKU: hhc-1181842
@@ -7,11 +8,16 @@ Slug: toothpaste-dispenser-with-5-brush-holder-wall-mounted-automatic-hands-f-1f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/4c174d3ed4410b80296aa2c3a19b1578.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/4c174d3ed4410b80296aa2c3a19b1578.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/9c61eb6ca66c5af4c3ba9083ebe3f20f.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/dd451a1025bcae7a078aadb07b9f64ae.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/cfea6e92-a768-4a19-99ea-bb8034e21fd2.jpeg
 Meta Title: Toothpaste Dispenser With 5 Brush Holder Wall Mounted Automatic Hand
 Meta Description: Buy Toothpaste Dispenser With 5 Brush Holder Wall Mounted Automatic Hands Free Toothpaste Dispenser online in Pakistan from ASM VEO. Wall Mounted Automatic Toot
 Description: Wall Mounted Automatic Toothpaste Dispenser with 5 Brush Holder – Hands-free, hygienic, and space-saving solution to keep your bathroom organized and your toothpaste easily accessible.
-Regular Price: 635
-Sale Price: 635
+Wholesale Price: 585
+Regular Price: 1140
+Sale Price: 908
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

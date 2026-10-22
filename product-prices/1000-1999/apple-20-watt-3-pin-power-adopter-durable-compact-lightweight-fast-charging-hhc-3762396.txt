@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Apple 20 Watt 3 Pin Power Adopter Durable Compact Lightweight Fast Charging
 Product ID: hhc-3762396
 SKU: hhc-3762396
@@ -7,11 +8,16 @@ Slug: apple-20-watt-3-pin-power-adopter-durable-compact-lightweight-fast-chargin
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/58b4007b9d45ba7e036424bd92f1dc4b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/58b4007b9d45ba7e036424bd92f1dc4b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/84127dc82ffe560e6adc436de72f2c4c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/0a00bc42ff8d2f2f18e49f4f5a28153c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/a135ffb2d77a6394807474355123dfb4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/3fac1b2fd7e675e2d71613442dd18e30.jpeg
 Meta Title: Apple 20 Watt 3 Pin Power Adopter Durable Compact Lightweight Fast C
 Meta Description: Buy Apple 20 Watt 3 Pin Power Adopter Durable Compact Lightweight Fast Charging online in Pakistan from ASM VEO. Apple 20 Watt 3 Pin Power Adopter Durable Compa
 Description: Apple 20 Watt 3 Pin Power Adopter Durable Compact Fast Charging Accessory For IOS Devices.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

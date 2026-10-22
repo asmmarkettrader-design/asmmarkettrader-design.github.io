@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Catchglow Natural Beauty Glass Skin Whitening Day Cream 30g Radiant Glow Skincare
 Product ID: hhc-3757461
 SKU: hhc-3757461
@@ -7,11 +8,16 @@ Slug: catchglow-natural-beauty-glass-skin-whitening-day-cream-30g-radiant-glo-10
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Catchglow Natural Beauty Glass Skin Whitening Day Cream 30g Radiant
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/477c87f84b8208ad9650abf5a88af8ed.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/477c87f84b8208ad9650abf5a88af8ed.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/a624eba06ed3cfdf8b3467745f63f7bc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/67a4d30374e8fcfc56d77e5e741d098c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/9057008c6ecb9edd165d230580b86f27.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/beab8f24814449eac53fee2e92eabc34.jpeg
+Meta Title: Catchglow Natural Beauty Glass Skin Whitening Day Cream 30g Radiant 
 Meta Description: Buy Catchglow Natural Beauty Glass Skin Whitening Day Cream 30g Radiant Glow Skincare online in Pakistan from ASM VEO. Catchglow Natural Beauty Glass Skin White
 Description: Catchglow Natural Beauty Glass Skin Whitening Day Cream 30g For Radiant And Smooth Skin.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

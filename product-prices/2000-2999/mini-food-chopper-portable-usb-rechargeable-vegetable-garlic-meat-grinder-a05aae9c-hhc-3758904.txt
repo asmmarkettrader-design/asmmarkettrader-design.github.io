@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Food Chopper Portable USB Rechargeable Vegetable Garlic Meat Grinder | With Cable - Size 250ml
 Product ID: hhc-3758904
 SKU: hhc-3758904
@@ -7,11 +8,16 @@ Slug: mini-food-chopper-portable-usb-rechargeable-vegetable-garlic-meat-grind-a0
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/13836c94bd0f5dffa503e391922f893e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/13836c94bd0f5dffa503e391922f893e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/6dbd5c5312beedab3cae6fb980164381.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/6ffa1636c307dd73eb100aba910e9edd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/6540db2fb82e16a0688efba287a3ab88.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/fcbe21d4f688eaa62be0d3b78eb8f185.jpg
 Meta Title: Mini Food Chopper Portable USB Rechargeable Vegetable Garlic Meat Gr
 Meta Description: Buy Mini Food Chopper Portable USB Rechargeable Vegetable Garlic Meat Grinder | With Cable - Size 250ml online in Pakistan from ASM VEO. Portable mini food chop
 Description: Portable mini food chopper designed for chopping vegetables, garlic, onion, and meat with one-click operation in a compact USB rechargeable design.
-Regular Price: 1133
-Sale Price: 1133
+Wholesale Price: 1083
+Regular Price: 2000
+Sale Price: 1598
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

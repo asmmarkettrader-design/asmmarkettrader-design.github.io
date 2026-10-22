@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 2 5ml Metal Body Perfume Atomizer Spray Bottle - Random Color
 Product ID: hhc-3764723
 SKU: hhc-3764723
 Slug: pack-of-2-5ml-metal-body-perfume-atomizer-spray-bottle-random-color-hhc-3764723
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/39d1035697f88e2fd7dd948039f41551.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/39d1035697f88e2fd7dd948039f41551.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/5e20b58cc911629c74ebe0549c947f81.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/78fd5c1b631f11abec62e6b79fad2aca.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/492d6a0542e733e30af6350f751b53d4.jpeg
 Meta Title: Pack of 2 5ml Metal Body Perfume Atomizer Spray Bottle - Random Colo
 Meta Description: Buy Pack of 2 5ml Metal Body Perfume Atomizer Spray Bottle - Random Color online in Pakistan from ASM VEO. 5ml Metal Body Perfume Atomizer Spray Bottle - Perfec
 Description: 5ml Metal Body Perfume Atomizer Spray Bottle - Perfect for travel. Lightweight, durable, and easy to refill. Note: This listing is for a pack of 2.
-Regular Price: 989
-Sale Price: 989
+Wholesale Price: 256
+Regular Price: 1300
+Sale Price: 1039
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

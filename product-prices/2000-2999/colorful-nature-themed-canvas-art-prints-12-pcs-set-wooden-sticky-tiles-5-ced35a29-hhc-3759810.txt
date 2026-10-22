@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Colorful Nature Themed Canvas Art Prints 12 Pcs Set Wooden Sticky Tiles 5x7 Inches Easy Mounting
 Product ID: hhc-3759810
 SKU: hhc-3759810
@@ -7,11 +8,16 @@ Slug: colorful-nature-themed-canvas-art-prints-12-pcs-set-wooden-sticky-tiles-ce
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/5691ad0ac802a2f4ba2f79bae097ce7d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/5691ad0ac802a2f4ba2f79bae097ce7d.jpeg
 Meta Title: Colorful Nature Themed Canvas Art Prints 12 Pcs Set Wooden Sticky Ti
 Meta Description: Buy Colorful Nature Themed Canvas Art Prints 12 Pcs Set Wooden Sticky Tiles 5x7 Inches Easy Mounting online in Pakistan from ASM VEO. Colorful Nature Themed Can
 Description: Colorful Nature Themed Canvas Art Prints 12 Pcs Set Wooden Sticky Tiles 5x7 Inches With Tape For Easy Mounting.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

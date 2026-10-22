@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FC Organic Coconut Milk Luxury Repair Conditioner - 120ml
 Product ID: hhc-3764075
 SKU: hhc-3764075
@@ -7,11 +8,16 @@ Slug: fc-organic-coconut-milk-luxury-repair-conditioner-120ml-hhc-3764075
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/e0bb13b77162eaa7a02e181b7c32c63e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/e0bb13b77162eaa7a02e181b7c32c63e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/abc65fef40cfab8d2704c936c35a8c57.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/1858c0f564517f70f0dc0036f121ee68.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/2ca68da86ba96c73a2e1080a5c4313af.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/210bc275139204f0c293277f5a6b6a5a.png
 Meta Title: FC Organic Coconut Milk Luxury Repair Conditioner - 120ml | Buy Onli
 Meta Description: Buy FC Organic Coconut Milk Luxury Repair Conditioner - 120ml online in Pakistan from ASM VEO. A rich, creamy rinse-off conditioner enriched with Coconut Milk,
 Description: A rich, creamy rinse-off conditioner enriched with Coconut Milk, Ceramides, Argan Oil, and Keratin. Dermatologically tested to deeply nourish dry, rough, and damaged hair, leaving it silky, smooth, and manageable.
-Regular Price: 1035
-Sale Price: 1035
+Wholesale Price: 985
+Regular Price: 1860
+Sale Price: 1488
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

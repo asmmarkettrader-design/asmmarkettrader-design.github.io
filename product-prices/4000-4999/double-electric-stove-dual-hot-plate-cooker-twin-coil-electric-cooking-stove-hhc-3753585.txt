@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Double Electric Stove | Dual Hot Plate Cooker | Twin Coil Electric Cooking Stove
 Product ID: hhc-3753585
 SKU: hhc-3753585
@@ -7,11 +8,16 @@ Slug: double-electric-stove-dual-hot-plate-cooker-twin-coil-electric-cooking-sto
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/95de0260490e1d6fe0730abd4d66c181.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/95de0260490e1d6fe0730abd4d66c181.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/8d68e76ecfa2b36b9210335a1d5d4af2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/6c45bd75ea6aa0755b82d70f69c82cb7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/6ccc75a0defb6ac9c3635c89b8c39948.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/b10e8a16f9290d94b2b69ca035f7ded4.png
 Meta Title: Double Electric Stove | Dual Hot Plate Cooker | Twin Coil Electric C
 Meta Description: Buy Double Electric Stove | Dual Hot Plate Cooker | Twin Coil Electric Cooking Stove online in Pakistan from ASM VEO. Efficient double electric stove with twin
 Description: Efficient double electric stove with twin heating plates for faster, multi-task cooking. Perfect for homes, hostels, offices, and small kitchens
-Regular Price: 2815
-Sale Price: 2815
+Wholesale Price: 2815
+Regular Price: 4980
+Sale Price: 3980
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

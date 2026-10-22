@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Smart Infrared PIR Motion Sensor E27 Bulb Holder | Auto On/Off Socket Switch | Energy Saving Lamp Base
 Product ID: hhc-3756140
 SKU: hhc-3756140
@@ -7,11 +8,16 @@ Slug: smart-infrared-pir-motion-sensor-e27-bulb-holder-auto-on-off-socket-swi-d4
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/02d553c004f0e24a264aee46cae69f8a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/02d553c004f0e24a264aee46cae69f8a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/34e1ff11258a308245a1bb74b433d1ed.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/1705c26178fcc1bb752a2d0b5491b373.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/38e9a02044db08c5bea2183699cce1b1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/05b8874ccbd78afeef6e90788e797e7e.png
 Meta Title: Smart Infrared PIR Motion Sensor E27 Bulb Holder | Auto On/Off Socke
 Meta Description: Buy Smart Infrared PIR Motion Sensor E27 Bulb Holder | Auto On/Off Socket Switch | Energy Saving Lamp Base online in Pakistan from ASM VEO. Automatic PIR motion
 Description: Automatic PIR motion sensor bulb holder with E27 socket. Energy-saving design for home, garage, corridor, and bathroom use.
-Regular Price: 840
-Sale Price: 840
+Wholesale Price: 790
+Regular Price: 1510
+Sale Price: 1206
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

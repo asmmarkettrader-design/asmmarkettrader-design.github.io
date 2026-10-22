@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pc Mini Heat Sealing Machine 2-in-1 Cutter & Sealer | USB Rechargeable Food Bag Sealer for Snacks & Storage (Random Color)
 Product ID: hhc-3752372
 SKU: hhc-3752372
@@ -7,11 +8,16 @@ Slug: 1-pc-mini-heat-sealing-machine-2-in-1-cutter-sealer-usb-rechargeable-fo-fa
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/094d124b0430c75f2649711881e3fd5f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/094d124b0430c75f2649711881e3fd5f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/a98ce4eafa84ac0a484e125249853fad.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/8c5a2efb91fdaa36b79abb8523183a8a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/56c3ea8de386dabb75d5545bd0325bdf.jpg
 Meta Title: 1 Pc Mini Heat Sealing Machine 2-in-1 Cutter & Sealer | USB Recharge
 Meta Description: Buy 1 Pc Mini Heat Sealing Machine 2-in-1 Cutter & Sealer | USB Rechargeable Food Bag Sealer for Snacks & Storage (Random Color) online in Pakistan from ASM VEO
 Description: Compact 2-in-1 Heat Sealing Machine designed to seal and cut food bags with ease. USB rechargeable, portable, and perfect for keeping snacks, chips, and food items fresh.
-Regular Price: 448
-Sale Price: 448
+Wholesale Price: 398
+Regular Price: 820
+Sale Price: 657
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

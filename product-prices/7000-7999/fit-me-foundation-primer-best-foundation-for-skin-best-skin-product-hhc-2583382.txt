@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fit Me Foundation Primer | Best Foundation For Skin | Best Skin Product
 Product ID: hhc-2583382
 SKU: hhc-2583382
@@ -7,11 +8,16 @@ Slug: fit-me-foundation-primer-best-foundation-for-skin-best-skin-product-hhc-25
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.23.03-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.23.03-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.23.03-PM-2.jpeg
 Meta Title: Fit Me Foundation Primer | Best Foundation For Skin | Best Skin Prod
 Meta Description: Buy Fit Me Foundation Primer | Best Foundation For Skin | Best Skin Product online in Pakistan from ASM VEO. Fit Me Foundation Primer | Best Foundation For Skin
 Description: Fit Me Foundation Primer | Best Foundation For Skin | Best Skin Product Product Description: Matte &amp; Poreless Foundation Primer Material: Cream Texture: Smooth Color: Turquoise Product Features: Matte finish, poreless effect Volume: 50 ml Package Includes: 1 x Foundation Primer Usage Instructions: Before using any new cosmetic product, perform a patch test on a small area of skin to check for allergies. Follow package warnings and directions for best results. Note: This product provides a matte, poreless finish, ideal for preparing the skin before applying foundation. Note: Before using any new cosmetic product, perform a patch test on a small skin area. Verify ingredients for allergies and follow package warnings and directions.
-Regular Price: 384
-Sale Price: 384
+Wholesale Price: 334
+Regular Price: 711
+Sale Price: 561
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

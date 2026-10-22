@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: LQL Surprise Ice Cream Van – Fun Playset for Kids with Colorful Design and Interactive Features
 Product ID: hhc-3753915
 SKU: hhc-3753915
@@ -7,11 +8,16 @@ Slug: lql-surprise-ice-cream-van-fun-playset-for-kids-with-colorful-design-an-06
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/a94a1de9fcd305d6c39b24941bed9d33.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/a94a1de9fcd305d6c39b24941bed9d33.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/1789c3a93e7ac474a799d921243fe039.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/fe96eb13978f35919ee2da3e1b4558f2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/7d43b96d8536e70995f740969c91250d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/53e2c107215187184d19360b57b174c7.jpg
 Meta Title: LQL Surprise Ice Cream Van – Fun Playset for Kids with Colorful Desi
 Meta Description: Buy LQL Surprise Ice Cream Van – Fun Playset for Kids with Colorful Design and Interactive Features online in Pakistan from ASM VEO. Colorful LQL Surprise Ice C
 Description: Colorful LQL Surprise Ice Cream Van toy playset for kids, designed with fun interactive features to spark imagination and play.
-Regular Price: 2305
-Sale Price: 2305
+Wholesale Price: 2305
+Regular Price: 4120
+Sale Price: 3292
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

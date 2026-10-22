@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acorn Premium All-Rounder 9-Inch Paint Roller – Professional Series Multi-Purpose Painting Tool with Ergonomic Grip – High-Quality Roller for All Paint Types
 Product ID: hhc-3757550
 SKU: hhc-3757550
@@ -7,11 +8,16 @@ Slug: acorn-premium-all-rounder-9-inch-paint-roller-professional-series-multi-78
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
-Meta Title: Acorn Premium All-Rounder 9-Inch Paint Roller – Professional Series
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/fa58b516be5a39b6d0c5313fd11b4256.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/fa58b516be5a39b6d0c5313fd11b4256.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/7694fc71e5af2f0adbb320f33b14a871.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/b27a8076cd1469fc14fec63496361a67.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/6a93c56afd95bb1530a4b8b8d418322f.png
+Meta Title: Acorn Premium All-Rounder 9-Inch Paint Roller – Professional Series 
 Meta Description: Buy Acorn Premium All-Rounder 9-Inch Paint Roller – Professional Series Multi-Purpose Painting Tool with Ergonomic Grip – High-Quality Roller for All Paint Type
 Description: Achieve a professional finish with the Acorn 9-Inch All-Rounder Paint Roller. Part of the Professional Series, this multi-purpose tool is designed for all paint types, ensuring smooth and even coverage on every surface. Its durable construction and ergonomic blue-yellow handle make it perfect.
-Regular Price: 860
-Sale Price: 860
+Wholesale Price: 810
+Regular Price: 1540
+Sale Price: 1234
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

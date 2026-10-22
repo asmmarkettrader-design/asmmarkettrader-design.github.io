@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High-Power Green Laser Pointer 303 with Safety Lock
 Product ID: hhc-3764214
 SKU: hhc-3764214
@@ -7,11 +8,16 @@ Slug: high-power-green-laser-pointer-303-with-safety-lock-hhc-3764214
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/cb9790cff896ac842291813520fc024e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/cb9790cff896ac842291813520fc024e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/1df076d2ad830186c50b4f97be12de21.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/0abea788e09dad0158a1bc314f69171c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/c0cce042030069b7bfa2922e0e56dece.png
 Meta Title: High-Power Green Laser Pointer 303 with Safety Lock | Buy Online in
 Meta Description: Buy High-Power Green Laser Pointer 303 with Safety Lock online in Pakistan from ASM VEO. High-power green laser pointer, perfect for presentations, astronomy, h
 Description: High-power green laser pointer, perfect for presentations, astronomy, hiking, and outdoor adventures. Made with a durable aluminum alloy body. Features a safety lock design with keys to prevent accidental use. Includes rechargeable battery and charger. Packet details: - Includes: 1 Green Laser Pointer, 1 Rechargeable Battery, 1 Charger, 2 Safety Keys. - Wholesale Rate (per packet): Rs 800. - Minimum Order Quantity (wholesale): 6 packets.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

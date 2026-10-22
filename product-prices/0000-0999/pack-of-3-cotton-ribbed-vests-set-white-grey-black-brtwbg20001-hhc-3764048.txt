@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 Cotton Ribbed Vests Set (White, Grey, Black) – BRTWBG20001
 Product ID: hhc-3764048
 SKU: hhc-3764048
 Slug: pack-of-3-cotton-ribbed-vests-set-white-grey-black-brtwbg20001-hhc-3764048
 Category: Fashion
-Subcategory: Men's Fashion
+Subcategory: Underwear & Innerwear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/9d5aa1e8c9aeaf2284dbe38ce27977c4.PNG
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/9d5aa1e8c9aeaf2284dbe38ce27977c4.PNG, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/65ea7485364f79b2418043d29df2e460.JPG, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/dd0a8319af81ad266135cf7e492bab1e.PNG, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/df18651698985e7e3becfc679a374963.PNG, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/2e650c2f134c58ab8115378ffb5886da.jpg
 Meta Title: Pack of 3 Cotton Ribbed Vests Set (White, Grey, Black) – BRTWBG20001
 Meta Description: Buy Pack of 3 Cotton Ribbed Vests Set (White, Grey, Black) – BRTWBG20001 online in Pakistan from ASM VEO. A essential 3-pack set of men's ribbed cotton tank top
 Description: A essential 3-pack set of men's ribbed cotton tank tops in classic white, grey, and black. Made from soft, breathable 100% cotton fabric for all-day comfort, perfect for layering or casual lounge wear.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

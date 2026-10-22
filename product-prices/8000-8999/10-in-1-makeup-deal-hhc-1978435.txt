@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 in 1 Makeup Deal
 Product ID: hhc-1978435
 SKU: hhc-1978435
@@ -7,11 +8,16 @@ Slug: 10-in-1-makeup-deal-hhc-1978435
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-17-at-11.03.13-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-17-at-11.03.13-PM-2.jpeg
 Meta Title: 10 in 1 Makeup Deal | Buy Online in Pakistan
 Meta Description: Buy 10 in 1 Makeup Deal online in Pakistan from ASM VEO. 1×Miss Rose Makeup Fixer 1×Smiss Rose Liquid Foundation 1×Bene Tint 1×Mascara 1×Peal Off N Cash on Deli
 Description: 1×Miss Rose Makeup Fixer 1×Smiss Rose Liquid Foundation 1×Bene Tint 1×Mascara 1×Peal Off Nail Paint(Random) 1×36h Eyeliner 1×Fitme Primer 1×Makeup Brush 1×Beauty Blender 1×lip pencil [video width="480" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Video-2024-07-17-at-11.03.13-PM.mp4"][/video]
-Regular Price: 1541
-Sale Price: 1541
+Wholesale Price: 1541
+Regular Price: 2820
+Sale Price: 2260
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

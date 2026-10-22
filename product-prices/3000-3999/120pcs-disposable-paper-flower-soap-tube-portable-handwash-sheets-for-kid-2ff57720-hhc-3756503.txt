@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 120pcs Disposable Paper Flower Soap Tube – Portable Handwash Sheets for Kids & Adults | Travel-Friendly Pocket Soap Flakes
 Product ID: hhc-3756503
 SKU: hhc-3756503
@@ -7,11 +8,16 @@ Slug: 120pcs-disposable-paper-flower-soap-tube-portable-handwash-sheets-for-k-2f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: 120pcs Disposable Paper Flower Soap Tube – Portable Handwash Sheets
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/a8911283e09d7d6f0f5b41709b801a31.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/a8911283e09d7d6f0f5b41709b801a31.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/b7002e02f99d77011bf9c78714324500.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/34aada0a52548019ee5e204b6a60b375.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/2297779550d1d269b7d7b5c611ba5e42.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/4a9b213d4a25f4a45bff49ce1960c22d.jpg
+Meta Title: 120pcs Disposable Paper Flower Soap Tube – Portable Handwash Sheets 
 Meta Description: Buy 120pcs Disposable Paper Flower Soap Tube – Portable Handwash Sheets for Kids & Adults | Travel-Friendly Pocket Soap Flakes online in Pakistan from ASM VEO.
 Description: 120pcs Disposable Paper Flower Soap Tube – Portable Handwash Sheets for Kids & Adults | Travel-Friendly Pocket Soap Flakes
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

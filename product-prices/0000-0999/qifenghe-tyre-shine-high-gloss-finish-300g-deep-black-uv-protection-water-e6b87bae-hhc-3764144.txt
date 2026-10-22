@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Qifenghe Tyre Shine High Gloss Finish 300G Deep Black UV Protection Water Repellent Practical Choice For Long Lasting Tyre Care
 Product ID: hhc-3764144
 SKU: hhc-3764144
@@ -7,11 +8,16 @@ Slug: qifenghe-tyre-shine-high-gloss-finish-300g-deep-black-uv-protection-wat-e6
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Qifenghe Tyre Shine High Gloss Finish 300G Deep Black UV Protection
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/010a0aa778d836972186ef2a4d351674.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/010a0aa778d836972186ef2a4d351674.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/639861a3ee7e4a903660f2aacf110f3d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/62f799433465b40fb49d81527b3b8455.jpeg
+Meta Title: Qifenghe Tyre Shine High Gloss Finish 300G Deep Black UV Protection 
 Meta Description: Buy Qifenghe Tyre Shine High Gloss Finish 300G Deep Black UV Protection Water Repellent Practical Choice For Long Lasting Tyre Care online in Pakistan from ASM
 Description: Qifenghe Tyre Shine High Gloss Finish 300G Deep Black UV Protection Water Repellent Practical Choice For Long Lasting Tyre Care.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

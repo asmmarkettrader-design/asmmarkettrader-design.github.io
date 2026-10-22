@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Classic Winter Jacket For Men- Zipper Style, Stay Warm And Stylish- Comfortable Fleece Material
 Product ID: hhc-3755127
 SKU: hhc-3755127
@@ -7,11 +8,16 @@ Slug: classic-winter-jacket-for-men-zipper-style-stay-warm-and-stylish-comfor-83
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
-Meta Title: Classic Winter Jacket For Men- Zipper Style, Stay Warm And Stylish-
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/f28874338a29c23fd096f468eba3d809.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/f28874338a29c23fd096f468eba3d809.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/0f742678f9008cb94bc6e2c4e7b6c8da.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/2d38c54e81caec7b452e59c109c3f632.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/624a0622d41bb3b94193503640fc7b16.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/51a95153a2fda24d8be613a30e260c79.jpeg
+Meta Title: Classic Winter Jacket For Men- Zipper Style, Stay Warm And Stylish- 
 Meta Description: Buy Classic Winter Jacket For Men- Zipper Style, Stay Warm And Stylish- Comfortable Fleece Material online in Pakistan from ASM VEO. Classic Winter Jacket For M
 Description: Classic Winter Jacket For Men- Zipper Style, Stay Warm And Stylish- Comfortable Fleece Material
-Regular Price: 1089
-Sale Price: 1089
+Wholesale Price: 1039
+Regular Price: 1920
+Sale Price: 1535
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

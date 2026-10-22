@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Purple Instant Teeth Whitening Strips (14 Treatments)
 Product ID: hhc-3764749
 SKU: hhc-3764749
@@ -7,11 +8,16 @@ Slug: purple-instant-teeth-whitening-strips-14-treatments-hhc-3764749
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/5a57429a3ee6f9bc384b92b538b7fe13.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/5a57429a3ee6f9bc384b92b538b7fe13.webp
 Meta Title: Purple Instant Teeth Whitening Strips (14 Treatments) | Buy Online i
 Meta Description: Buy Purple Instant Teeth Whitening Strips (14 Treatments) online in Pakistan from ASM VEO. A 14-treatment pack of purple instant teeth whitening strips. Feature
 Description: A 14-treatment pack of purple instant teeth whitening strips. Features color correcting technology to neutralize yellow undertones, fast 30-minute express application, and a gentle, sensitive-free formula.
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

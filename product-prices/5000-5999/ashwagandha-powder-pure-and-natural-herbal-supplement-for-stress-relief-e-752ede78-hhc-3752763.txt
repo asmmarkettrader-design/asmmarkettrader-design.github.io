@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness
 Product ID: hhc-3752763
 SKU: hhc-3752763
@@ -7,11 +8,16 @@ Slug: ashwagandha-powder-pure-and-natural-herbal-supplement-for-stress-relief-75
 Category: Groceries
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/b2d5babbfaa26a713cee71893eec1129.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/b2d5babbfaa26a713cee71893eec1129.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/d9b63f3f02f54387d27be380242e4369.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/7ca074893474183da5532906559e2476.png
 Meta Title: Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress R
 Meta Description: Buy Ashwagandha Powder Pure And Natural | Herbal Supplement For Stress Relief, Energy, Immunity Boost, And Overall Wellness online in Pakistan from ASM VEO. Pur
 Description: Pure And Natural Ashwagandha Powder Supports Stress Relief, Enhances Energy, Boosts Immunity, And Promotes Overall Physical And Mental Wellness.
-Regular Price: 432
-Sale Price: 432
+Wholesale Price: 382
+Regular Price: 790
+Sale Price: 633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

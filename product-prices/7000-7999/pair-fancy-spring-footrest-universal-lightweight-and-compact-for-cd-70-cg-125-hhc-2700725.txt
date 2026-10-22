@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (Pair) Fancy Spring Footrest Universal Lightweight and compact for CD 70 / CG 125
 Product ID: hhc-2700725
 SKU: hhc-2700725
@@ -7,11 +8,16 @@ Slug: pair-fancy-spring-footrest-universal-lightweight-and-compact-for-cd-70-cg-
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-05-at-3.25.31-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-05-at-3.25.31-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-05-at-3.25.30-PM-1.jpeg
 Meta Title: (Pair) Fancy Spring Footrest Universal Lightweight and compact for C
 Meta Description: Buy (Pair) Fancy Spring Footrest Universal Lightweight and compact for CD 70 / CG 125 online in Pakistan from ASM VEO. Product Description【Humanized Design】 It
 Description: Product Description【Humanized Design】 It is easy and convenient to install and remove. increases friction to ensure safety.Motorcycle Fancy Spring Footrest Paidan for CD 70 / CG 125high quality medal body, easy to install【Stable Construct]: provide protection for speed shifting system. Convenient tool for picking up another person by bicycle.【Easy to Use】Lightweight and compact bicycle footrest , Can be used on the bike axis, easy to pedal or station people.Attach onto axle to perform bike tricks.Original Picture
-Regular Price: 528
-Sale Price: 528
+Wholesale Price: 478
+Regular Price: 970
+Sale Price: 777
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

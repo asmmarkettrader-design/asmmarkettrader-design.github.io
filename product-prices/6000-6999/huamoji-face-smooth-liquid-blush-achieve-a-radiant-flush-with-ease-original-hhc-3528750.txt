@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HUAMOJI Face Smooth Liquid Blush - Achieve a Radiant Flush with Ease Original
 Product ID: hhc-3528750
 SKU: hhc-3528750
@@ -7,11 +8,16 @@ Slug: huamoji-face-smooth-liquid-blush-achieve-a-radiant-flush-with-ease-origina
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/AD2FBD5F-D907-4C19-AE7B-4B2561485A21_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/AD2FBD5F-D907-4C19-AE7B-4B2561485A21_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/AB029061-B9A9-4AEC-846D-89EDCEE2D5A3_cleanup-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/A99EC9B8-DA93-4506-B21D-7BB9B2B30EE0.webp
 Meta Title: HUAMOJI Face Smooth Liquid Blush - Achieve a Radiant Flush with Ease
 Meta Description: Buy HUAMOJI Face Smooth Liquid Blush - Achieve a Radiant Flush with Ease Original online in Pakistan from ASM VEO. Unlock the beauty of a naturally radiant comp
 Description: Unlock the beauty of a naturally radiant complexion with this face smooth liquid blush, designed to deliver a soft, dewy finish that enhances your features effortlessly. This innovative formula blends the freshness of a liquid with the smoothness of a cream, making it the perfect companion for a natural flush or a bolder, more sculpted look. Its silky texture glides onto the skin with ease, creating a seamless, second-skin finish without any chalky residue or patchiness. The buildable formula lets you control your glow—from a delicate hint of color to a vibrant pop that brightens your entire face. Whether you're aiming for a soft pink flush or a warm coral tone, this blush adapts beautifully to all skin tones. Easy to apply with fingers, sponge, or brush, it melts into the skin, offering a fresh, youthful glow that lasts from morning to night. Ideal for everyday wear or special occasions, this liquid blush delivers long-lasting color that won’t fade or smear. Enjoy a smooth, glowing complexion that looks naturally radiant and feels weightless all day long. Perfect for all makeup lovers who want color, comfort, and control in one effortless step Shades Of Pink Color Product Original Picture
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

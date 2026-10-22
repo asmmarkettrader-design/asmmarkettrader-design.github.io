@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 PCs FV Edelweiss Permeable Light Essence Foundation Liquid
 Product ID: hhc-3765453
 SKU: hhc-3765453
 Slug: 1-pcs-fv-edelweiss-permeable-light-essence-foundation-liquid-hhc-3765453
-Category: Beauty & Cosmetics
+Category: Beauty & Personal Care
 Subcategory: Face Makeup (Foundation)
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/875d4b29ff89ce5536d93776b0ad7a12.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/875d4b29ff89ce5536d93776b0ad7a12.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/6286cb541a96519fc8c0814deb7064fd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/b294bbef4926f62c4a6b7cacbedbc10d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/7b42da3bcedaf6a7fe8a62629ccab4d3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/4a3e6fb3816f434c555a39ee255f394a.jpg
 Meta Title: 1 PCs FV Edelweiss Permeable Light Essence Foundation Liquid | Buy O
 Meta Description: Buy 1 PCs FV Edelweiss Permeable Light Essence Foundation Liquid online in Pakistan from ASM VEO. FV Edelweiss Permeable Light Essence Foundation Liquid deliver
 Description: FV Edelweiss Permeable Light Essence Foundation Liquid delivers lightweight, breathable coverage with a smooth, natural finish. Infused with Edelweiss essence, it helps keep skin hydrated, fresh, and radiant throughout the day. Perfect for everyday wear.Shade : V02
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

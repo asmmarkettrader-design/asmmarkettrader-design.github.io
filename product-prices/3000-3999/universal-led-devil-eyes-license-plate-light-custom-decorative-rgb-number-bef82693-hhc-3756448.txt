@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal LED Devil Eyes License Plate Light – Custom Decorative RGB Number Plate Frames for Motorcycles & Cars (Multiple Eye Designs)
 Product ID: hhc-3756448
 SKU: hhc-3756448
@@ -7,11 +8,16 @@ Slug: universal-led-devil-eyes-license-plate-light-custom-decorative-rgb-numb-be
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/eb01f1472fd2d01376b638f9e39d606e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/eb01f1472fd2d01376b638f9e39d606e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/e803605c198ba409b48e62fed395eea8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/0851a716572c317c2b3907b42cccd9e4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/d9052a1f7a3af4528f6075e36611b9af.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/97ab9972be5db6c921f4dda80a856ba5.png
 Meta Title: Universal LED Devil Eyes License Plate Light – Custom Decorative RGB
 Meta Description: Buy Universal LED Devil Eyes License Plate Light – Custom Decorative RGB Number Plate Frames for Motorcycles & Cars (Multiple Eye Designs) online in Pakistan fr
 Description: Give your bike or car a bold and aggressive makeover! The Universal LED Devil Eyes Number Plate Light gives your ride a unique “Angry Look” with high-intensity RGB lighting. With easy installation, a weatherproof design, and multiple eye styles, it’s the perfect customization option for your vehicle.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

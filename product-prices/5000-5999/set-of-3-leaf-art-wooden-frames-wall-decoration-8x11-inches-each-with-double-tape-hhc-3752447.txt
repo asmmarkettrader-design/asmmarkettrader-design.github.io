@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Leaf Art Wooden Frames – Wall Decoration (8x11 Inches Each with Double Tape)
 Product ID: hhc-3752447
 SKU: hhc-3752447
@@ -7,11 +8,16 @@ Slug: set-of-3-leaf-art-wooden-frames-wall-decoration-8x11-inches-each-with-d-50
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 3 Leaf Art Wooden Frames – Wall Decoration (8x11 Inches Each
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/0e93ca27b131a5cc60bf512aae9d01c3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/0e93ca27b131a5cc60bf512aae9d01c3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/c333bffbed5794d53113b1cc2bf8af4b.webp
+Meta Title: Set of 3 Leaf Art Wooden Frames – Wall Decoration (8x11 Inches Each 
 Meta Description: Buy Set of 3 Leaf Art Wooden Frames – Wall Decoration (8x11 Inches Each with Double Tape) online in Pakistan from ASM VEO. Beautiful set of 3 leaf art wooden fr
 Description: Beautiful set of 3 leaf art wooden frames, each 8x11 inches. Comes with double tape for easy wall mounting, perfect for home or office décor.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2L Manual Food Chopper | Stainless Steel Push Chopper | Kitchen Multi-purpose Vegetable and Nuts Chopper
 Product ID: hhc-3763454
 SKU: hhc-3763454
@@ -7,11 +8,16 @@ Slug: 2l-manual-food-chopper-stainless-steel-push-chopper-kitchen-multi-purpo-7b
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/486d55e8fabca9933d3ff96d5a56b01e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/486d55e8fabca9933d3ff96d5a56b01e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/790c20e3224562cd557fab99e79cc2bf.jpg
 Meta Title: 2L Manual Food Chopper | Stainless Steel Push Chopper | Kitchen Mult
 Meta Description: Buy 2L Manual Food Chopper | Stainless Steel Push Chopper | Kitchen Multi-purpose Vegetable and Nuts Chopper online in Pakistan from ASM VEO. Make everyday cook
 Description: Make everyday cooking quicker and easier with the 2L Manual Food Chopper, designed for efficiency and convenience in any kitchen. Equipped with durable stainless steel blades, this push-type chopper delivers consistent results without the need for electricity.
-Regular Price: 1133
-Sale Price: 1133
+Wholesale Price: 1083
+Regular Price: 2000
+Sale Price: 1598
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

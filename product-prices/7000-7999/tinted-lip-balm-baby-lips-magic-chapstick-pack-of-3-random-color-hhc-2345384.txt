@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tinted Lip Balm, Baby Lips Magic Chapstick (Pack of 3) (Random Color)
 Product ID: hhc-2345384
 SKU: hhc-2345384
@@ -7,11 +8,16 @@ Slug: tinted-lip-balm-baby-lips-magic-chapstick-pack-of-3-random-color-hhc-23453
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-20-at-1.22.21-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-20-at-1.22.21-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-20-at-1.54.53-PM-1_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-20-at-1.54.53-PM-2_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-20-at-1.54.54-PM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-20-at-1.54.54-PM-1_cleanup.png
 Meta Title: Tinted Lip Balm, Baby Lips Magic Chapstick (Pack of 3) (Random Color
 Meta Description: Buy Tinted Lip Balm, Baby Lips Magic Chapstick (Pack of 3) (Random Color) online in Pakistan from ASM VEO. Baby Lips Magic Chapstick (Pack of 3) &nbsp; Baby Lip
 Description: Baby Lips Magic Chapstick (Pack of 3) &nbsp; Baby Lip Balm High Quality Lip Moisturizer Pigmented: This lip balm adds color to your lips when you apply it. It has a soft pink shade which looks cute and matches with any outfit. Moisturizes: This lip balm makes sure that your lips don’t get dry and are moisturized at all time. Color: Multi-colored * Lip Balm * Prevent Chapped Lips * Healthy and safe * Moisturizing * Hydrated Package Includes: 3 × Lip Balm
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

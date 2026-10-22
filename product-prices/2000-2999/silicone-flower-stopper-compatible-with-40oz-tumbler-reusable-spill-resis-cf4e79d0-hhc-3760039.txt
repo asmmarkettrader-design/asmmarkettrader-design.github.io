@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Flower Stopper Compatible with 40oz Tumbler | Reusable Spill-Resistant Straw Cover | Random Color
 Product ID: hhc-3760039
 SKU: hhc-3760039
@@ -7,11 +8,16 @@ Slug: silicone-flower-stopper-compatible-with-40oz-tumbler-reusable-spill-res-cf
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/1197de64a40b89fbea64fd1b64b24079.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/02/1197de64a40b89fbea64fd1b64b24079.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/7aeb9ffeff63f721b35f200f7cb6a007.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/e7a41501d9405422d323983ecb100f08.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/7536234475faa3887594cd207c4ea006.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/c7d4e792cbbdea24c1cc38ed4138ba9b.jpeg
 Meta Title: Silicone Flower Stopper Compatible with 40oz Tumbler | Reusable Spil
 Meta Description: Buy Silicone Flower Stopper Compatible with 40oz Tumbler | Reusable Spill-Resistant Straw Cover | Random Color online in Pakistan from ASM VEO. Add a stylish to
 Description: Add a stylish touch to your favorite 40oz tumbler with this silicone flower stopper. Designed to fit securely over the straw opening, it helps protect your drink from dust and spills while adding a decorative floral look. Made from durable, food-grade silicone and available in random colors.
-Regular Price: 340
-Sale Price: 340
+Wholesale Price: 290
+Regular Price: 645
+Sale Price: 495
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

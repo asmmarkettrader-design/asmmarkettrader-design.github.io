@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 240W Type-C to Type-C Fast Charging Cable with Adjustable Stand – 1.5M PD 3.1 90° Elbow Gaming Cable
 Product ID: hhc-3758068
 SKU: hhc-3758068
@@ -7,11 +8,16 @@ Slug: 240w-type-c-to-type-c-fast-charging-cable-with-adjustable-stand-1-5m-pd-25
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/ccdf64638ce83e64513ba4da771e885f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/ccdf64638ce83e64513ba4da771e885f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/9df8fe85faec76158a4200efe7029734.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/9477c6b26439cbe66f3c70159f7d4224.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/50d0e65474bd47157e4fb86d8c114ef0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/89ec0b35d3a83979ce557c3eb802836d.jpeg
 Meta Title: 240W Type-C to Type-C Fast Charging Cable with Adjustable Stand – 1.
 Meta Description: Buy 240W Type-C to Type-C Fast Charging Cable with Adjustable Stand – 1.5M PD 3.1 90° Elbow Gaming Cable online in Pakistan from ASM VEO. Powerful 240W fast cha
 Description: Powerful 240W fast charging cable with built-in adjustable stand. Perfect for gaming, streaming, and fast charging with a comfortable 90° design.
-Regular Price: 922
-Sale Price: 922
+Wholesale Price: 872
+Regular Price: 1660
+Sale Price: 1324
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

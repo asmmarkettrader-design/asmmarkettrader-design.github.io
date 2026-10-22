@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Ramba Perfume For Men - 100 ML | Luxury Fragrance For Men
 Product ID: hhc-2618552
 SKU: hhc-2618552
@@ -7,11 +8,16 @@ Slug: royal-ramba-perfume-for-men-100-ml-luxury-fragrance-for-men-hhc-2618552
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/1da5511f9ccd5046d7603725c89c32ce.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/1da5511f9ccd5046d7603725c89c32ce.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/d681d51bdc511e4f4a11714670892a35.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/38e8ae2f89df23bf11248c785bb067df.jpeg
 Meta Title: Royal Ramba Perfume For Men - 100 ML | Luxury Fragrance For Men | Bu
 Meta Description: Buy Royal Ramba Perfume For Men - 100 ML | Luxury Fragrance For Men online in Pakistan from ASM VEO. Royal Ramba Perfume For Men - 100 ML | Luxury Fragrance For
 Description: Royal Ramba Perfume For Men - 100 ML | Luxury Fragrance For MenFeatures:Lovable soft fragranceQuantity 100mlCologne Type: Eau De PerfumeLong Lasting Fragrance with up-to 3 Hours Of long lastingQuantity: 100mlChina product
-Regular Price: 1359
-Sale Price: 1359
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

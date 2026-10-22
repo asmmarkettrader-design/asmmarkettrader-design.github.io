@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Organizer and Storage Kitchen Supplies Organizers Rotatable Rack Accessories Cabinet Organizer Hook Up Storage Rack (random color )
 Product ID: hhc-803540
 SKU: hhc-803540
@@ -7,11 +8,16 @@ Slug: kitchen-organizer-and-storage-kitchen-supplies-organizers-rotatable-rac-08
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Kitchen Organizer and Storage Kitchen Supplies Organizers Rotatable
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/2832978b89b6ebde43479977add8896c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/2832978b89b6ebde43479977add8896c.jpeg
+Meta Title: Kitchen Organizer and Storage Kitchen Supplies Organizers Rotatable 
 Meta Description: Buy Kitchen Organizer and Storage Kitchen Supplies Organizers Rotatable Rack Accessories Cabinet Organizer Hook Up Storage Rack (random color ) online in Pakist
 Description: Installation process: Find a clean and flat wall and wipe it clean, then attach the patch, and then attach the hook after 24 hours, and use the hook to hang the item after one day.Suitable for multiple scenes, suitable for kitchen, bathroom, living room, behind the door, etc.Brand new ABS material, strong and durable, the patch is pasted seamlessly, strong and firm.1*pothook &amp; 1*pasterSticker
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

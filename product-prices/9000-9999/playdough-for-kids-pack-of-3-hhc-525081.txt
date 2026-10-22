@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Playdough for kids pack of 3
 Product ID: hhc-525081
 SKU: hhc-525081
@@ -7,11 +8,16 @@ Slug: playdough-for-kids-pack-of-3-hhc-525081
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-24-at-3.47.57-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-24-at-3.47.57-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-24-at-3.47.13-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-24-at-3.47.12-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-24-at-3.47.12-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-24-at-3.47.12-PM.jpeg
 Meta Title: Playdough for kids pack of 3 | Buy Online in Pakistan
 Meta Description: Buy Playdough for kids pack of 3 online in Pakistan from ASM VEO. Type: Clay / dough Art &amp; Moulding Ideal For: Boys and Girls Non-toxic Material: Clay C Cas
 Description: Type: Clay / dough Art &amp; Moulding Ideal For: Boys and Girls Non-toxic Material: Clay Clay is a fine-grained natural rock or soil material. With the help of clay you can make anything. A wonderful creative case with many different accessories to prepare ice creams, coloured cookies. So beautiful Assorted colors Modeling dough. Super soft and pliable modeling dough. Ideal for young children. Nontoxic and washable.
-Regular Price: 298
-Sale Price: 298
+Wholesale Price: 248
+Regular Price: 582
+Sale Price: 432
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

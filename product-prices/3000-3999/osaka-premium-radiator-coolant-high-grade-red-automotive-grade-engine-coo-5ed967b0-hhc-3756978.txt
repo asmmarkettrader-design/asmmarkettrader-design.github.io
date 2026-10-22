@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: OSAKA Premium Radiator Coolant - High Grade Red (Automotive Grade) | Engine Cooling System Protector | Metal Corrosion Prevention (2L)
 Product ID: hhc-3756978
 SKU: hhc-3756978
@@ -7,11 +8,16 @@ Slug: osaka-premium-radiator-coolant-high-grade-red-automotive-grade-engine-c-5e
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/5f41fdaa598e362da53e170c37fd09c2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/5f41fdaa598e362da53e170c37fd09c2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/9c19d8378cc52b8f368c467d35516bd9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/1cc0ac5168f81f5a9169dc2fb8909f73.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/d86138ed8c2dbb2cb7906e906b26097b.jpg
 Meta Title: OSAKA Premium Radiator Coolant - High Grade Red (Automotive Grade) |
 Meta Description: Buy OSAKA Premium Radiator Coolant - High Grade Red (Automotive Grade) | Engine Cooling System Protector | Metal Corrosion Prevention (2L) online in Pakistan fr
 Description: OSAKA Premium Radiator Coolant Red is a high-grade automotive coolant that protects the engine cooling system from overheating, rust, and metal corrosion. Helps maintain stable engine temperature and smooth performance. 2L.
-Regular Price: 705
-Sale Price: 705
+Wholesale Price: 655
+Regular Price: 1260
+Sale Price: 1010
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Trending M-Design RFID Wallet | Compact PU Card Holder with Coin Pocket for Men & Women
 Product ID: hhc-3761740
 SKU: hhc-3761740
@@ -7,11 +8,16 @@ Slug: trending-m-design-rfid-wallet-compact-pu-card-holder-with-coin-pocket-f-a9
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/c8ffd439e3445017646f1fcd48c778ac.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/c8ffd439e3445017646f1fcd48c778ac.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/edac2759733fbffdd8708b7fd9edb099.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/afdd004e1908ee1100ee7bfbbf4260f2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/af2e65acfaecb9945b19926de1708c2a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/6ce673ed842171bf28082800f6cd08e7.jpeg
 Meta Title: Trending M-Design RFID Wallet | Compact PU Card Holder with Coin Poc
 Meta Description: Buy Trending M-Design RFID Wallet | Compact PU Card Holder with Coin Pocket for Men & Women online in Pakistan from ASM VEO. Keep your essentials organized with
 Description: Keep your essentials organized with the RFID M-Design Wallet. Made from durable PU material with a smooth finish, this compact short wallet features RFID blocking protection, 5 card slots, 1 ID window, a spacious cash compartment, and a secure coin pocket. Its slim, pocket-friendly design makes it p
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

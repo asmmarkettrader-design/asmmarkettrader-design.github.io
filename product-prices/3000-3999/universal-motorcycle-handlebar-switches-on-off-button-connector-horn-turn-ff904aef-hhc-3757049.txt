@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Motorcycle Handlebar Switches ON/OFF Button Connector Horn Turn Signal Lights Head Spot Light Switch
 Product ID: hhc-3757049
 SKU: hhc-3757049
@@ -7,11 +8,16 @@ Slug: universal-motorcycle-handlebar-switches-on-off-button-connector-horn-tu-ff
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/298d5bd8d17adea562dcb0f83f9df220.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/298d5bd8d17adea562dcb0f83f9df220.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/fd4e160da7e4eef3b2de31c9048dec27.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/dacdc433231b9b1da351ea60202c8187.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/827973186445874d216d8650902e3c0b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/2f6b99c5d800aefeb12b69a99e1b7393.jpeg
 Meta Title: Universal Motorcycle Handlebar Switches ON/OFF Button Connector Horn
 Meta Description: Buy Universal Motorcycle Handlebar Switches ON/OFF Button Connector Horn Turn Signal Lights Head Spot Light Switch online in Pakistan from ASM VEO. Universal Mo
 Description: Universal Motorcycle Handlebar Switches ON/OFF Button Connector Horn Turn Signal Lights Head Spot Light Switch
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Jolen Creme Bleach - Lightens Dark Hair on Face and Body - Gentle & Effective Formula - 1 oz
 Product ID: hhc-3754335
 SKU: hhc-3754335
@@ -7,11 +8,16 @@ Slug: jolen-creme-bleach-lightens-dark-hair-on-face-and-body-gentle-effective-21
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Jolen Creme Bleach - Lightens Dark Hair on Face and Body - Gentle &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/26e313ee80858462ed1df5779ac5f107.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/26e313ee80858462ed1df5779ac5f107.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/faf46a249df2a8538f336f8c30e1a394.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/e17f8ec8fa305d2686a52809be0dfd01.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/5a3323c197a72cf1948e40be5eee1c29.png
+Meta Title: Jolen Creme Bleach - Lightens Dark Hair on Face and Body - Gentle & 
 Meta Description: Buy Jolen Creme Bleach - Lightens Dark Hair on Face and Body - Gentle & Effective Formula - 1 oz online in Pakistan from ASM VEO. Jolen Creme Bleach is a gentle
 Description: Jolen Creme Bleach is a gentle and effective solution for lightening dark, unwanted hair on the face and body. This easy-to-use formula quickly blends away hair so it virtually disappears, leaving your skin feeling smooth and looking radiant
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Plate Set Pack of 10 – Plastic Split Bone Dish Plates with Holder | Durable Serving Plates (Random Colors)
 Product ID: hhc-3756672
 SKU: hhc-3756672
@@ -7,11 +8,16 @@ Slug: plate-set-pack-of-10-plastic-split-bone-dish-plates-with-holder-durable-16
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/e344f7af0cafb27ab17aaf069b6c211b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/e344f7af0cafb27ab17aaf069b6c211b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/253e47daa1c6f66a8e2c8fa4431eb3bb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/39d22f67e88be5239af6deffd2aa0ab3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/98e39486bec22d560392515e0c92df50.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/77800025ad706df129f0f5bbf0d39ed3.jpg
 Meta Title: Plate Set Pack of 10 – Plastic Split Bone Dish Plates with Holder |
 Meta Description: Buy Plate Set Pack of 10 – Plastic Split Bone Dish Plates with Holder | Durable Serving Plates (Random Colors) online in Pakistan from ASM VEO. Practical and du
 Description: Practical and durable pack of 10 plastic split bone dish plates with a convenient holder. Ideal for serving meals, snacks, and gatherings at home or outdoor events.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

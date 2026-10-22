@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aura Hair Care Paddle Brush Durable Lightweight Design Smooth Detangling And Styling Suitable For All Hair Types
 Product ID: hhc-3765033
 SKU: hhc-3765033
@@ -7,11 +8,16 @@ Slug: aura-hair-care-paddle-brush-durable-lightweight-design-smooth-detanglin-89
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/0eb37662c79c127ae30b4bf2a636b1e3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/0eb37662c79c127ae30b4bf2a636b1e3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/63de710730faabb9d67cc14031c5ea98.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/09938a6e7412c139cda7da339c0c31a9.jpg
 Meta Title: Aura Hair Care Paddle Brush Durable Lightweight Design Smooth Detang
 Meta Description: Buy Aura Hair Care Paddle Brush Durable Lightweight Design Smooth Detangling And Styling Suitable For All Hair Types online in Pakistan from ASM VEO. Aura Hair
 Description: Aura Hair Care Paddle Brush Is Designed To Provide Effortless Detangling And Styling For All Hair Types. Crafted with durable lightweight material, it features a wide paddle head that glides smoothly through hair, reducing tangles and breakage. Perfect for daily grooming, professional salon use, or travel, this brush ensures comfort and reliability. Its sleek design makes it a practical and stylish addition to any hair care routine, offering long lasting performance and healthy hair results.Key Features:Aura Hair Care Paddle BrushDurable Lightweight Construction For Long Lasting UseWide Paddle Head For Smooth Detangling And StylingReduces Tangles And Breakage For Healthy HairSuitable For All Hair Types And Daily GroomingIdeal For Professional Salons Home Use And Travel
-Regular Price: 439
-Sale Price: 439
+Wholesale Price: 389
+Regular Price: 800
+Sale Price: 644
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

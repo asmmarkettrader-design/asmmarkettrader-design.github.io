@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Piece Adjustable Compression Knee Support Brace | Breathable Elastic Knee Pad With Strap For Pain Relief, Sports Protection, And Joint Support (With Box)
 Product ID: hhc-3753006
 SKU: hhc-3753006
 Slug: 1-piece-adjustable-compression-knee-support-brace-breathable-elastic-kn-df41f504-hhc-3753006
-Category: Beauty & Personal Care
-Subcategory: Health & Wellness
+Category: Health & Wellness
+Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/1658b407a0e0c7025046b10dfad32fa7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/1658b407a0e0c7025046b10dfad32fa7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/c74c2ef3104892885bc14cfbc544a5eb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/246f68920bcb766684747895f1bd9f98.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/d097dc7d2f47ea02d7f296e1a9aadf84.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/a660c7b770e93ab5d5ee5fa4d23c1084.jpg
 Meta Title: 1 Piece Adjustable Compression Knee Support Brace | Breathable Elast
 Meta Description: Buy 1 Piece Adjustable Compression Knee Support Brace | Breathable Elastic Knee Pad With Strap For Pain Relief, Sports Protection, And Joint Support (With Box)
 Description: High-Quality Adjustable Knee Support Brace Designed For Comfort, Stability, And Pain Relief During Sports, Exercise, Or Daily Activities.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

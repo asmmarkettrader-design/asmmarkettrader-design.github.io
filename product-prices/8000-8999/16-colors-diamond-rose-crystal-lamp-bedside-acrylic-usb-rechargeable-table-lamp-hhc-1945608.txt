@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 16 Colors Diamond Rose Crystal Lamp Bedside Acrylic Usb Rechargeable Table Lamp
 Product ID: hhc-1945608
 SKU: hhc-1945608
@@ -7,11 +8,16 @@ Slug: 16-colors-diamond-rose-crystal-lamp-bedside-acrylic-usb-rechargeable-table
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/255.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/255.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/254.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/253.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/252.jpg
 Meta Title: 16 Colors Diamond Rose Crystal Lamp Bedside Acrylic Usb Rechargeable
 Meta Description: Buy 16 Colors Diamond Rose Crystal Lamp Bedside Acrylic Usb Rechargeable Table Lamp online in Pakistan from ASM VEO. 16 Colors Diamond Rose Crystal Lamp Bedside
 Description: 16 Colors Diamond Rose Crystal Lamp Bedside Acrylic Usb Rechargeable Table Lamp
-Regular Price: 1316
-Sale Price: 1316
+Wholesale Price: 1266
+Regular Price: 2320
+Sale Price: 1858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Car Pedal Lock Anti Theft Lock Pedal Lock 8 holes for almost all Cars
 Product ID: hhc-3757046
 SKU: hhc-3757046
@@ -7,11 +8,16 @@ Slug: universal-car-pedal-lock-anti-theft-lock-pedal-lock-8-holes-for-almost-all
 Category: Automotive
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/b4cb6c660d604348ac9073e7285e29b7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/b4cb6c660d604348ac9073e7285e29b7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/d3bedb574f5a65b88801f4f6d9865b00.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/fbc797e4b9f07e9e52cd3b9f92fd30a9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/b44b9a65063021aa6259dce56f05edf2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/178d494d481a181e56f8e22c4708b385.jpg
 Meta Title: Universal Car Pedal Lock Anti Theft Lock Pedal Lock 8 holes for almo
 Meta Description: Buy Universal Car Pedal Lock Anti Theft Lock Pedal Lock 8 holes for almost all Cars online in Pakistan from ASM VEO. Secure your car with this universal pedal l
 Description: Secure your car with this universal pedal lock featuring 8 adjustable holes for a perfect fit. Built for durability and strong anti-theft protection, it is suitable for almost all cars.
-Regular Price: 2516
-Sale Price: 2516
+Wholesale Price: 2516
+Regular Price: 4470
+Sale Price: 3577
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

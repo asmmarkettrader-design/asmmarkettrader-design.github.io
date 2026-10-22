@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Air Mattress Car Back Seat Inflatable Air Mattress Bed
 Product ID: hhc-1992971
 SKU: hhc-1992971
@@ -7,11 +8,16 @@ Slug: car-air-mattress-car-back-seat-inflatable-air-mattress-bed-hhc-1992971
 Category: Home & Kitchen
 Subcategory: Bedding & Linen
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/4013b9c9428cfabfd97e394382502375.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/4013b9c9428cfabfd97e394382502375.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/1-11.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/3-4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/p-1.jpeg
 Meta Title: Car Air Mattress Car Back Seat Inflatable Air Mattress Bed | Buy Onl
 Meta Description: Buy Car Air Mattress Car Back Seat Inflatable Air Mattress Bed online in Pakistan from ASM VEO. Car Air Mattress Car Back Seat Inflatable Air Mattress Bed Cash
 Description: Car Air Mattress Car Back Seat Inflatable Air Mattress Bed
-Regular Price: 6236
-Sale Price: 6236
+Wholesale Price: 6236
+Regular Price: 10360
+Sale Price: 8287
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

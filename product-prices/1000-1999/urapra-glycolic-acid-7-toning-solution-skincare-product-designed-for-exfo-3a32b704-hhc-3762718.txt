@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Urapra Glycolic Acid 7% Toning Solution - Skincare Product Designed For Exfoliation And Skin Toning Routine - 100ML
 Product ID: hhc-3762718
 SKU: hhc-3762718
@@ -7,11 +8,16 @@ Slug: urapra-glycolic-acid-7-toning-solution-skincare-product-designed-for-ex-3a
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Urapra Glycolic Acid 7% Toning Solution - Skincare Product Designed
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/d129a6e82661fdd54cc9ada4cc3c3a81.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/d129a6e82661fdd54cc9ada4cc3c3a81.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/d2bd46604d61127960888d700918bfb5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/07845d0002d9bb61567e7ba459a84be4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/d00bbe64ea6bf65a93b445654394d20d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/0a8d881736caf0cb4894e9e3f06d2dbf.jpeg
+Meta Title: Urapra Glycolic Acid 7% Toning Solution - Skincare Product Designed 
 Meta Description: Buy Urapra Glycolic Acid 7% Toning Solution - Skincare Product Designed For Exfoliation And Skin Toning Routine - 100ML online in Pakistan from ASM VEO. The Ura
 Description: The Urapra Glycolic Acid 7% Toning Solution Is A Skincare Product Formulated To Help Provide Skin Exfoliation And Toning During Daily Use.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: PVC Clothes Line 20M With Hooks | Heavy Duty Galvanized Steel Core Laundry Wet Rope | Durable PVC Coated Clothesline Wire
 Product ID: hhc-3760098
 SKU: hhc-3760098
@@ -7,11 +8,16 @@ Slug: pvc-clothes-line-20m-with-hooks-heavy-duty-galvanized-steel-core-laundr-bb
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/2d13435a50c6a3ed8dca472353be10d9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/2d13435a50c6a3ed8dca472353be10d9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/1f052d9a295a0ebb9ecf16a642980aca.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/6c7b7936d31829cd34e1f1388df7836b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/5ad752b199c6c3781c1685e6238c9e1b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/aa490cb1b0956dc6e04449308655c46c.png
 Meta Title: PVC Clothes Line 20M With Hooks | Heavy Duty Galvanized Steel Core L
 Meta Description: Buy PVC Clothes Line 20M With Hooks | Heavy Duty Galvanized Steel Core Laundry Wet Rope | Durable PVC Coated Clothesline Wire online in Pakistan from ASM VEO. H
 Description: Hang your laundry safely with this heavy-duty 20-Meter PVC Coated Clothesline Wire. Built with a strong galvanized steel core, this weather-resistant laundry rope resists sagging and rust, making it perfect for both indoor and outdoor wet clothes drying.
-Regular Price: 341
-Sale Price: 341
+Wholesale Price: 291
+Regular Price: 646
+Sale Price: 496
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

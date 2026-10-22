@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fast Nail Fungus Treatment Serum – Nail Repair Essence for Finger & Toenail Care (All-Natural Formula)
 Product ID: hhc-3752258
 SKU: hhc-3752258
@@ -7,11 +8,16 @@ Slug: fast-nail-fungus-treatment-serum-nail-repair-essence-for-finger-toenail-10
 Category: Beauty & Cosmetics
 Subcategory: Nail Care (Tools)
 Brand: ASM VEO
-Meta Title: Fast Nail Fungus Treatment Serum – Nail Repair Essence for Finger &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/312b1d0d320711cf3ce22a95132f7c76.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/312b1d0d320711cf3ce22a95132f7c76.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/8dc2c3428e18a4c815b0564046120d13.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/6f1e130b354d21f175c6f4d95e9b25e9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/d32941cf8fe347c2d0e5d57a1b66e56c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/11d0762f529aa1d58f32a282b31736c6.webp
+Meta Title: Fast Nail Fungus Treatment Serum – Nail Repair Essence for Finger & 
 Meta Description: Buy Fast Nail Fungus Treatment Serum – Nail Repair Essence for Finger & Toenail Care (All-Natural Formula) online in Pakistan from ASM VEO. All-natural nail rep
 Description: All-natural nail repair serum designed to remove fungus, restore discolored nails, and repair damaged cuticles. Hydrates, strengthens, and protects for healthy-looking nails.
-Regular Price: 200
-Sale Price: 200
+Wholesale Price: 150
+Regular Price: 435
+Sale Price: 285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

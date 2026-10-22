@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Airox 5 In 1 Rechargeable Flash Light – Type-C Charging | Black
 Product ID: hhc-3761479
 SKU: hhc-3761479
@@ -7,11 +8,16 @@ Slug: airox-5-in-1-rechargeable-flash-light-type-c-charging-black-hhc-3761479
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/a7ab5bb15d63c0919f1265d5c5a15624.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/a7ab5bb15d63c0919f1265d5c5a15624.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/af532cc7fa651bd732d17d0b07f72e2d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/fa78bc2b30545bd16e266307ecd5dfcc.jpeg
 Meta Title: Airox 5 In 1 Rechargeable Flash Light – Type-C Charging | Black | Bu
 Meta Description: Buy Airox 5 In 1 Rechargeable Flash Light – Type-C Charging | Black online in Pakistan from ASM VEO. The Airox 5 In 1 Rechargeable Flash Light is a powerful and
 Description: The Airox 5 In 1 Rechargeable Flash Light is a powerful and versatile lighting solution designed for everyday use and emergencies.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

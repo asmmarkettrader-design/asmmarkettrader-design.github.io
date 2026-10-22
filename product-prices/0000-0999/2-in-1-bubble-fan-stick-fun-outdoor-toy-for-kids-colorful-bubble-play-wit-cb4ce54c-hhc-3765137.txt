@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 In 1 Bubble Fan Stick Fun Outdoor Toy For Kids Colorful Bubble Play With Cooling Fan Function
 Product ID: hhc-3765137
 SKU: hhc-3765137
@@ -7,11 +8,16 @@ Slug: 2-in-1-bubble-fan-stick-fun-outdoor-toy-for-kids-colorful-bubble-play-w-cb
 Category: Pet Toys & Beds
 Subcategory: Pet Toys
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/ddeaa7cf9c23889e9b3eb499e870d0b0.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/ddeaa7cf9c23889e9b3eb499e870d0b0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/cb5f290ab2eeefd1d65f52b301f18676.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/f723d694e10f7afd4e60a6f233eecd29.jpg
 Meta Title: 2 In 1 Bubble Fan Stick Fun Outdoor Toy For Kids Colorful Bubble Pla
 Meta Description: Buy 2 In 1 Bubble Fan Stick Fun Outdoor Toy For Kids Colorful Bubble Play With Cooling Fan Function online in Pakistan from ASM VEO. 2 In 1 Bubble Fan Stick Is
 Description: 2 In 1 Bubble Fan Stick Is A Creative And Entertaining Toy Designed For Kids To Enjoy Outdoor Play. Combining a bubble maker with a cooling fan, it delivers double the fun by creating colorful bubbles while keeping children refreshed. Lightweight and easy to use, this toy is perfect for summer activities, parties, and family gatherings. Its durable design ensures safe play and long lasting entertainment, making it an ideal choice for children’s outdoor fun.Key Features:2 In 1 Bubble Fan Stick For KidsCombines Bubble Maker And Cooling Fan FunctionCreates Colorful Bubbles For Outdoor EntertainmentLightweight Durable And Easy To OperatePerfect For Summer Play Parties And Family GatheringsSafe Fun And Engaging Toy For Children
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Winter Tracksuit Set | Fleece Jumper & Bottoms for Boys & Girls – Warm Sweatshirt & Trouser Outfit for Cold Weather FOR BABY AND KIDS
 Product ID: hhc-3753408
 SKU: hhc-3753408
@@ -7,11 +8,16 @@ Slug: kids-winter-tracksuit-set-fleece-jumper-bottoms-for-boys-girls-warm-swe-18
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/54c8920afc56cf33293f390bf0e1852f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/54c8920afc56cf33293f390bf0e1852f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/cd3fba8d8be3a70fcdd0d0ca638cc7b1.png
 Meta Title: Kids Winter Tracksuit Set | Fleece Jumper & Bottoms for Boys & Girls
 Meta Description: Buy Kids Winter Tracksuit Set | Fleece Jumper & Bottoms for Boys & Girls – Warm Sweatshirt & Trouser Outfit for Cold Weather FOR BABY AND KIDS online in Pakista
 Description: Warm fleece winter tracksuit for kids — jumper and matching bottoms keep boys and girls cozy, comfortable, and stylish.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 PCs of Men's Summer Cotton Sando Vest Sleeveless Tank Top Breathable Soft Lightweight Casual Gym Sports Innerwear Comfortable
 Product ID: hhc-3760079
 SKU: hhc-3760079
 Slug: 3-pcs-of-men-s-summer-cotton-sando-vest-sleeveless-tank-top-breathable-a18eda31-hhc-3760079
 Category: Fashion
-Subcategory: Men's Fashion
+Subcategory: Underwear & Innerwear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/b9dbf1a7d462944cf93df91b082c8233.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/b9dbf1a7d462944cf93df91b082c8233.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/fbfb7d6ff143ca887a29815cfc012511.jpeg
 Meta Title: 3 PCs of Men's Summer Cotton Sando Vest Sleeveless Tank Top Breathab
 Meta Description: Buy 3 PCs of Men's Summer Cotton Sando Vest Sleeveless Tank Top Breathable Soft Lightweight Casual Gym Sports Innerwear Comfortable online in Pakistan from ASM
 Description: Stay cool and comfortable with this premium cotton sando vest. Made from soft, breathable fabric, it is perfect for summer wear, workouts, lounging, and everyday use.
-Regular Price: 1165
-Sale Price: 1165
+Wholesale Price: 1115
+Regular Price: 2050
+Sale Price: 1643
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

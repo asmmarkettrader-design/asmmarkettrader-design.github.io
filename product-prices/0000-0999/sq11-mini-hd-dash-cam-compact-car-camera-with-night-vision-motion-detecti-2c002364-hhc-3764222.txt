@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SQ11 Mini HD Dash Cam Compact Car Camera With Night Vision Motion Detection And HD Video Recording For Car Security And Recording
 Product ID: hhc-3764222
 SKU: hhc-3764222
@@ -7,11 +8,16 @@ Slug: sq11-mini-hd-dash-cam-compact-car-camera-with-night-vision-motion-detec-2c
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/fe615c03e2eee822e5441b775995a054.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/fe615c03e2eee822e5441b775995a054.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/3f21278679bf66fd8cdccef2b2b12d37.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/e40e47202978fef4e7944f66fda68f76.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/6be0483ec795b18dd3cf150993b987f7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/dd48eaec7ddf97aa4d664af2df8d66b8.jpg
 Meta Title: SQ11 Mini HD Dash Cam Compact Car Camera With Night Vision Motion De
 Meta Description: Buy SQ11 Mini HD Dash Cam Compact Car Camera With Night Vision Motion Detection And HD Video Recording For Car Security And Recording online in Pakistan from AS
 Description: SQ11 Mini HD Dash Cam With Compact Design, Night Vision, Motion Detection, And HD Video Recording, Suitable For Car Security And Recording.
-Regular Price: 1716
-Sale Price: 1716
+Wholesale Price: 1716
+Regular Price: 3120
+Sale Price: 2497
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

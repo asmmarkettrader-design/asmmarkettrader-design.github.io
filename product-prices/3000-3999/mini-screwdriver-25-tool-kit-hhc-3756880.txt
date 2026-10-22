@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Screwdriver 25 Tool Kit
 Product ID: hhc-3756880
 SKU: hhc-3756880
@@ -7,11 +8,16 @@ Slug: mini-screwdriver-25-tool-kit-hhc-3756880
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/e10c03f469dca8a34af53b3b5b5d536a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/e10c03f469dca8a34af53b3b5b5d536a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/85ceec6f687109cbc2b52fecc5c80362.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/1b32d28b1dfa38f3cf4aa5da51e58427.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/a2ee5f4a62fadfc187502ea6fdad6680.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/494ff8bb93c1bd9f77a3db82f31923a1.png
 Meta Title: Mini Screwdriver 25 Tool Kit | Buy Online in Pakistan
 Meta Description: Buy Mini Screwdriver 25 Tool Kit online in Pakistan from ASM VEO. 25 Tools in One Handy Kit No need to carry a big toolbox This small kit gives you 25 usefu Cas
 Description: 25 Tools in One Handy Kit No need to carry a big toolbox This small kit gives you 25 useful tools in one place perfect for fixing things at home office or on the go
-Regular Price: 523
-Sale Price: 523
+Wholesale Price: 473
+Regular Price: 960
+Sale Price: 770
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

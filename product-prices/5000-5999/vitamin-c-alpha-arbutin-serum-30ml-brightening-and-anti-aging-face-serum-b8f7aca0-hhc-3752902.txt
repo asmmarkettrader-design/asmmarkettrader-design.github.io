@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vitamin C + Alpha Arbutin Serum 30ml | Brightening And Anti-Aging Face Serum | Reduces Dark Spots, Pigmentation, And Boosts Radiant, Even-Toned Skin
 Product ID: hhc-3752902
 SKU: hhc-3752902
@@ -7,11 +8,16 @@ Slug: vitamin-c-alpha-arbutin-serum-30ml-brightening-and-anti-aging-face-seru-b8
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/a6946a398f7b02a556dd58b425e937ab.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/a6946a398f7b02a556dd58b425e937ab.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/0a005a4b84a3316f8809b9bc968c3120.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/7d2e75a2164721060d31077952ba276a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/d38f1b421620892f2044153c3af4fcf3.png
 Meta Title: Vitamin C + Alpha Arbutin Serum 30ml | Brightening And Anti-Aging Fa
 Meta Description: Buy Vitamin C + Alpha Arbutin Serum 30ml | Brightening And Anti-Aging Face Serum | Reduces Dark Spots, Pigmentation, And Boosts Radiant, Even-Toned Skin online
 Description: Powerful Brightening Serum With Vitamin C And Alpha Arbutin That Reduces Dark Spots, Evens Skin Tone, And Restores Natural Radiance For Healthy, Glowing Skin.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

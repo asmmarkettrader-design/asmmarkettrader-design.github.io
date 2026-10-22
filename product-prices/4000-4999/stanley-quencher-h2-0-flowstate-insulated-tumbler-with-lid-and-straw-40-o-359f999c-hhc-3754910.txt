@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stanley Quencher H2.0 FlowState™ Insulated Tumbler with Lid and Straw - 40 oz | With Box ( RANDOM COLOUR )
 Product ID: hhc-3754910
 SKU: hhc-3754910
@@ -7,11 +8,16 @@ Slug: stanley-quencher-h2-0-flowstate-insulated-tumbler-with-lid-and-straw-40-35
 Category: Home & Kitchen
 Subcategory: Fitness & Gym
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/d646a9fa44575b2526a4711e8a776100.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/d646a9fa44575b2526a4711e8a776100.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/296bd3969b0a519f4738d2dca98c3e45.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/bc112629e50a61bfe1525fd9ab7eaaf0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/456d53593f4056e2fb5d0501e1782646.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/3bb2b487e72adcc77865bd5f1c0f09ae.jpeg
 Meta Title: Stanley Quencher H2.0 FlowState™ Insulated Tumbler with Lid and Stra
 Meta Description: Buy Stanley Quencher H2.0 FlowState™ Insulated Tumbler with Lid and Straw - 40 oz | With Box ( RANDOM COLOUR ) online in Pakistan from ASM VEO. Stay hydrated al
 Description: Stay hydrated all day with the industry-leading 40 oz Quencher H2.0. Engineered with recycled stainless steel and vacuum insulation, this tumbler keeps your drinks ice-cold for hours. Featuring the versatile FlowState™ lid and an ergonomic handle, it is designed to fit comfortably in most car cup hol
-Regular Price: 3358
-Sale Price: 3358
+Wholesale Price: 3358
+Regular Price: 5680
+Sale Price: 4545
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

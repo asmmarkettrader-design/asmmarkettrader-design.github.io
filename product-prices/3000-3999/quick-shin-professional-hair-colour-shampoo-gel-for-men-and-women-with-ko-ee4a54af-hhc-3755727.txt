@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Quick Shin Professional Hair Colour Shampoo Gel For Men And Women With Korean Ingredient - 200ML
 Product ID: hhc-3755727
 SKU: hhc-3755727
@@ -7,11 +8,16 @@ Slug: quick-shin-professional-hair-colour-shampoo-gel-for-men-and-women-with-ee4
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/25e6be8211a6f086187a6a42b50bb313.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/25e6be8211a6f086187a6a42b50bb313.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/01d3b841a7f4b2006e49af2dfc99ebd0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/6903444c65274bf6902d221889d66f55.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/02028d4e507e45e4b5c288e0b2af67dd.jpeg
 Meta Title: Quick Shin Professional Hair Colour Shampoo Gel For Men And Women Wi
 Meta Description: Buy Quick Shin Professional Hair Colour Shampoo Gel For Men And Women With Korean Ingredient - 200ML online in Pakistan from ASM VEO. Quick Shin Professional Ha
 Description: Quick Shin Professional Hair Colour Shampoo Gel Provides Natural Black And Brown Shades With 100 Percent Grey Coverage
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

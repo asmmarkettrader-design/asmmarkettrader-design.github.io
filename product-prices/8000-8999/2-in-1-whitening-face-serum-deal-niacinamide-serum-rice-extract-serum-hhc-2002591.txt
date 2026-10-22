@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 Whitening Face Serum Deal ,Niacinamide Serum + Rice Extract Serum
 Product ID: hhc-2002591
 SKU: hhc-2002591
@@ -7,11 +8,16 @@ Slug: 2-in-1-whitening-face-serum-deal-niacinamide-serum-rice-extract-serum-hhc-
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-10.40.51-PM-2_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-10.40.51-PM-2_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-10.40.51-PM-1.jpeg
 Meta Title: 2 in 1 Whitening Face Serum Deal ,Niacinamide Serum + Rice Extract S
 Meta Description: Buy 2 in 1 Whitening Face Serum Deal ,Niacinamide Serum + Rice Extract Serum online in Pakistan from ASM VEO. product detailsPack of 2 • Material: Liquid • Prod
 Description: product detailsPack of 2 • Material: Liquid • Product Feature: Anti-Aging, Whitening • Package Includes: 1 x Niacinamide Serum, 1 x Rice Extract Serum
-Regular Price: 1089
-Sale Price: 1089
+Wholesale Price: 1039
+Regular Price: 1920
+Sale Price: 1535
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

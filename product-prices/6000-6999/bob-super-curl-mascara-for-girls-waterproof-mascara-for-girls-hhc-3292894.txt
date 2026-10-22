@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BOB Super Curl Mascara for Girls  / waterproof Mascara for Girls
 Product ID: hhc-3292894
 SKU: hhc-3292894
@@ -7,11 +8,16 @@ Slug: bob-super-curl-mascara-for-girls-waterproof-mascara-for-girls-hhc-3292894
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/5de53261-b1dc-4bb1-b0b7-11489b3c310b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/5de53261-b1dc-4bb1-b0b7-11489b3c310b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/Bob-eyeliner-curl-800x800-1-600x600-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/Bob-black-mascara-600x600-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/7d22dbec96e4e34886a804eebe34d7ad_800x-600x600-1.jpg
 Meta Title: BOB Super Curl Mascara for Girls / waterproof Mascara for Girls | Bu
 Meta Description: Buy BOB Super Curl Mascara for Girls / waterproof Mascara for Girls online in Pakistan from ASM VEO. Product details of BOB Super Curl waterproof Mascara for Gi
 Description: Product details of BOB Super Curl waterproof Mascara for Girls Ayzal collection Bob showy curl mascara Waterproof Color: Black Long lasting Attraction [video width="478" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Video-2025-05-29-at-6.49.52-PM.mp4"][/video]
-Regular Price: 587
-Sale Price: 587
+Wholesale Price: 537
+Regular Price: 1050
+Sale Price: 839
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Matte Water Bottle 500ml Perfect for water & juice or coffee (Random color)
 Product ID: hhc-3764709
 SKU: hhc-3764709
@@ -7,11 +8,16 @@ Slug: premium-matte-water-bottle-500ml-perfect-for-water-juice-or-coffee-random-
 Category: Fitness Gear
 Subcategory: Water Bottles
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/1aa85424a324db48bff5247732d28f0b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/1aa85424a324db48bff5247732d28f0b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/8ba47cb27eefa3a6a2ed36311db92a2f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/f908c928d4e67ded4330b8b82dc9fe84.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/de55f7dcde45c22327a29a868d50a743.jpeg
 Meta Title: Premium Matte Water Bottle 500ml Perfect for water & juice or coffee
 Meta Description: Buy Premium Matte Water Bottle 500ml Perfect for water & juice or coffee (Random color) online in Pakistan from ASM VEO. Premium Matte Finish Water Bottle, 500m
 Description: Premium Matte Finish Water Bottle, 500ml capacity. Perfect for water, juice, milk, or coffee. Lightweight and easy to carry, ideal for daily use. Note: Random colour will be provided.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

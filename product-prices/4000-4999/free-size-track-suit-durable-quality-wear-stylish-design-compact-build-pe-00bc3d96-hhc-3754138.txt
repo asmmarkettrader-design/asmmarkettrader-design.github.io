@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Free Size Track Suit Durable Quality Wear Stylish Design Compact Build Perfect Choice For Daily Sports Gym Travel And Casual Use
 Product ID: hhc-3754138
 SKU: hhc-3754138
@@ -7,11 +8,16 @@ Slug: free-size-track-suit-durable-quality-wear-stylish-design-compact-build-00b
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/1c2671399d16b0f6e164a633073bf990.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/1c2671399d16b0f6e164a633073bf990.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/b6c56827df7326234805109b575050e8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/e8293c5cd2f307de33b85f911614440b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/705f6af6e630dc5d14c439572a870c15.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/d95ee6a265c09c5322615f3294de0f09.jpeg
 Meta Title: Free Size Track Suit Durable Quality Wear Stylish Design Compact Bui
 Meta Description: Buy Free Size Track Suit Durable Quality Wear Stylish Design Compact Build Perfect Choice For Daily Sports Gym Travel And Casual Use online in Pakistan from ASM
 Description: Free Size Track Suit Provides Durable Quality Reliable Utility Comfortable Wear Stylish Design And Compact Build
-Regular Price: 1342
-Sale Price: 1342
+Wholesale Price: 1292
+Regular Price: 2370
+Sale Price: 1895
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

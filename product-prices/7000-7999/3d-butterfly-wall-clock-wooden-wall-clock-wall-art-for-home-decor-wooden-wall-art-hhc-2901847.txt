@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3d Butterfly wall clock | Wooden Wall Clock | Wall Art for Home Decor | Wooden Wall Art
 Product ID: hhc-2901847
 SKU: hhc-2901847
@@ -7,11 +8,16 @@ Slug: 3d-butterfly-wall-clock-wooden-wall-clock-wall-art-for-home-decor-woode-54
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-17-at-12.55.08-PM-1_cleanup-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-17-at-12.55.08-PM-1_cleanup-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-17-at-12.55.08-PM_cleanup.png
 Meta Title: 3d Butterfly wall clock | Wooden Wall Clock | Wall Art for Home Deco
 Meta Description: Buy 3d Butterfly wall clock | Wooden Wall Clock | Wall Art for Home Decor | Wooden Wall Art online in Pakistan from ASM VEO. 3d Butterfly wall clock | Wooden Wa
 Description: 3d Butterfly wall clock | Wooden Wall Clock | Wall Art for Home Decor | Wooden Wall Art • Perfect for home decoration and kids' bedroom. • Modern 3D Wall Clock with Quartz movement. • Easy to assemble with manual instructions. Meterial wood Size 25 inch Thickness 3mm lasani wood
-Regular Price: 458
-Sale Price: 458
+Wholesale Price: 408
+Regular Price: 840
+Sale Price: 672
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

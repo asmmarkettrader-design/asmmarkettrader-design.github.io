@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Beisheng Men's Leather Strap Watch  Perfect for formal and casual occasions - Brown
 Product ID: hhc-3764527
 SKU: hhc-3764527
@@ -7,11 +8,16 @@ Slug: beisheng-men-s-leather-strap-watch-perfect-for-formal-and-casual-occasions
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/20881e87d10b5663eb6398fb6aecc242.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/20881e87d10b5663eb6398fb6aecc242.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/8bd1086ea49ea3a0ec0db286158e6087.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/b8fe35384d310c8d0270edfb63f88357.jpeg
 Meta Title: Beisheng Men's Leather Strap Watch Perfect for formal and casual occ
 Meta Description: Buy Beisheng Men's Leather Strap Watch Perfect for formal and casual occasions - Brown online in Pakistan from ASM VEO. Elegant Beisheng men's watch featuring a
 Description: Elegant Beisheng men's watch featuring a durable leather strap. Each piece comes in a sleek black gift box. Perfect for formal and casual occasions. Specifications: Analogue display, durable strapChronograaf workingDate workingWith box
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

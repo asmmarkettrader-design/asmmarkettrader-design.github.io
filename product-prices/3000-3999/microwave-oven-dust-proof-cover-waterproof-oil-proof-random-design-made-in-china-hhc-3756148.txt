@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Microwave Oven Dust Proof Cover | Waterproof & Oil-proof | Random Design | Made in China
 Product ID: hhc-3756148
 SKU: hhc-3756148
@@ -7,11 +8,16 @@ Slug: microwave-oven-dust-proof-cover-waterproof-oil-proof-random-design-made-in
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/d30b883925bd7e8d49fc3af8b351b437.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/d30b883925bd7e8d49fc3af8b351b437.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/d88578217f37b4a7d3b699671ee1a75e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/23ace8ca28c817f0bcc9976f7316494e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/da4683b8bfb525c6f4466efff425c7e2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/9c87a93917642cbe84f00f27ad9b8e82.jpeg
 Meta Title: Microwave Oven Dust Proof Cover | Waterproof & Oil-proof | Random De
 Meta Description: Buy Microwave Oven Dust Proof Cover | Waterproof & Oil-proof | Random Design | Made in China online in Pakistan from ASM VEO. Protective microwave oven cover wi
 Description: Protective microwave oven cover with waterproof, oil-proof, and dust-proof design. Keeps your appliance clean with random stylish patterns.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

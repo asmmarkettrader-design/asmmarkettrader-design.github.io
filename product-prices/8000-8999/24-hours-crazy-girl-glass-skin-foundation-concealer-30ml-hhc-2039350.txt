@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 24 Hours Crazy Girl Glass Skin Foundation + Concealer (30Ml)
 Product ID: hhc-2039350
 SKU: hhc-2039350
@@ -7,11 +8,16 @@ Slug: 24-hours-crazy-girl-glass-skin-foundation-concealer-30ml-hhc-2039350
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-2.59.53-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-2.59.53-PM-1.jpeg
 Meta Title: 24 Hours Crazy Girl Glass Skin Foundation + Concealer (30Ml) | Buy O
 Meta Description: Buy 24 Hours Crazy Girl Glass Skin Foundation + Concealer (30Ml) online in Pakistan from ASM VEO. 24 Hours Crazy Girl Glass Skin Foundation + Concealer &nbsp; *
 Description: 24 Hours Crazy Girl Glass Skin Foundation + Concealer &nbsp; * Size: 30Ml * Material: Liquid It has high coverage over your skin. * It can last a long time, up to 24 hours. * It covers scars and dark circles evenly. * It consists of a high-profile concealer to hide blemishes. * It gives an even tone coverage * It gives simple, smooth skin and a glow the whole day. Package Includes: 1 × Foundation
-Regular Price: 809
-Sale Price: 809
+Wholesale Price: 759
+Regular Price: 1450
+Sale Price: 1161
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Axis-Y Dark Spot Correcting Glow Serum – 5% Niacinamide with Squalane for Brightening & Even Skin Tone - 50g
 Product ID: hhc-3759852
 SKU: hhc-3759852
@@ -7,11 +8,16 @@ Slug: axis-y-dark-spot-correcting-glow-serum-5-niacinamide-with-squalane-for-5aa
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/c5d0e9ca5f94506aa29850c6af8f7030.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/c5d0e9ca5f94506aa29850c6af8f7030.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/df97faf3bdbee89a1d079b6c6efc3ff0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/e0f2b855e237c626d925c18b0bf04103.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/d03d3bee11273b3b08d862731b832d95.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/53855afdfa6e49d0e61675a4c598175d.jpeg
 Meta Title: Axis-Y Dark Spot Correcting Glow Serum – 5% Niacinamide with Squalan
 Meta Description: Buy Axis-Y Dark Spot Correcting Glow Serum – 5% Niacinamide with Squalane for Brightening & Even Skin Tone - 50g online in Pakistan from ASM VEO. Revitalize you
 Description: Revitalize your complexion with the Axis-Y Dark Spot Correcting Glow Serum. Formulated with 5% Niacinamide and plant-derived Squalane, this serum effectively corrects dark spots, brightens uneven skin tone, and locks in moisture for a healthy, glowing look all day.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

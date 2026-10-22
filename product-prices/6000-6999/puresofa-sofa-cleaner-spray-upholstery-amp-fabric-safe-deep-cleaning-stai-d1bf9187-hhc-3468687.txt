@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Puresofa | Sofa Cleaner Spray | Upholstery &amp; Fabric Safe | Deep Cleaning | Stain Remover | Fast Dry | Pleasant Scent | 150ml
 Product ID: hhc-3468687
 SKU: hhc-3468687
@@ -7,11 +8,16 @@ Slug: puresofa-sofa-cleaner-spray-upholstery-amp-fabric-safe-deep-cleaning-st-d1
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/ee0e41bc1090d785a355b99d1c4bf268.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/ee0e41bc1090d785a355b99d1c4bf268.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-12.51.17-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-12.51.17-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-12.51.16-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Image-2025-07-10-at-12.51.14-PM-1.jpeg
 Meta Title: Puresofa | Sofa Cleaner Spray | Upholstery &amp; Fabric Safe | Deep
 Meta Description: Buy Puresofa | Sofa Cleaner Spray | Upholstery &amp; Fabric Safe | Deep Cleaning | Stain Remover | Fast Dry | Pleasant Scent | 150ml online in Pakistan from ASM
 Description: Puresofa | Sofa Cleaner Spray | Upholstery &amp; Fabric Safe | Deep Cleaning | Stain Remover | Fast Dry | Pleasant Scent | 150ml1️⃣ Deep Cleans: Effectively removes dirt, grime, and stubborn stains from sofas and upholstery. 2️⃣ Safe on Fabrics: Gentle formula designed for all types of fabric and upholstered furniture. 3️⃣ Quick Drying: Dries fast without leaving residue or dampness behind. 4️⃣ Pleasant Scent: Leaves your sofa smelling fresh and clean. 5️⃣ Easy to Use: Convenient spray bottle for effortless application and spot cleaning. [video width="720" height="1280"
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

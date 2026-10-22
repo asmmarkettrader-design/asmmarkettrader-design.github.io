@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Samsung Galaxy Buds 3 Pro AI True Wireless Bluetooth Earbuds, Noise Cancelling, Sound Optimization, Redesigned Comfort Fit, Silver
 Product ID: hhc-3756921
 SKU: hhc-3756921
@@ -7,11 +8,16 @@ Slug: samsung-galaxy-buds-3-pro-ai-true-wireless-bluetooth-earbuds-noise-canc-8d
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Samsung
-Meta Title: Samsung Galaxy Buds 3 Pro AI True Wireless Bluetooth Earbuds, Noise
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/4664f26ec660ab6811cff7ac3d85d23a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/4664f26ec660ab6811cff7ac3d85d23a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/e739b6b88d388c2fa43f237593f3c5dd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/39c585d85b41fad3824c48d8f5a71448.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/8a6b005e58193a81238615837f746241.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/ff91e6d7d3ee63e9261c9724a49ff5be.jpg
+Meta Title: Samsung Galaxy Buds 3 Pro AI True Wireless Bluetooth Earbuds, Noise 
 Meta Description: Buy Samsung Galaxy Buds 3 Pro AI True Wireless Bluetooth Earbuds, Noise Cancelling, Sound Optimization, Redesigned Comfort Fit, Silver online in Pakistan from A
 Description: SAMSUNG Galaxy Buds 3 Pro AI True Wireless Bluetooth Earbuds, Noise Cancelling, Sound Optimization, Real-Time Interpreter, Redesigned Comfort Fit Latin American Version (Silver)
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

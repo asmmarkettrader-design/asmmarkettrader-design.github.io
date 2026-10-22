@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 15 in 1 Makeup Deal
 Product ID: hhc-1932778
 SKU: hhc-1932778
@@ -7,11 +8,16 @@ Slug: 15-in-1-makeup-deal-hhc-1932778
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-6.06.14-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-6.06.14-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-6.06.13-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/9894864fc2462e02afa40f30c3cde461.jpg_2200x2200q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/41RWfBtwjIL._AC_UF10001000_QL80_-e1695481289823-800x763-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/f3390873516f1abf38fbbb76d02723d8.jpg_2200x2200q80.jpg_.webp
 Meta Title: 15 in 1 Makeup Deal | Buy Online in Pakistan
 Meta Description: Buy 15 in 1 Makeup Deal online in Pakistan from ASM VEO. &nbsp; 15 in 1 Makeup Deal Material: Powder, Cream, Liquid Package Includes: 1 × FacePowde Cash on Deli
 Description: &nbsp; 15 in 1 Makeup Deal Material: Powder, Cream, Liquid Package Includes: 1 × FacePowder (2-in-1), 1 × Kajal, 1 × Tint, 1 × Makeup Fixer, 1 × Concealer, 1 × Foundation, 1 × Primer, 1 × Mascara, 1 × Liner, 1 × Blender, 5 × Makeup Brush &nbsp; Original Product Video [video width="364" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Video-2024-08-21-at-9.17.55-PM.mp4"][/video] Product Pictures
-Regular Price: 2235
-Sale Price: 2235
+Wholesale Price: 2235
+Regular Price: 4000
+Sale Price: 3197
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

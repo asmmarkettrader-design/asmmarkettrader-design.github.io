@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Cuikca Textured Leather Bifold Wallet - Fashion Accessory Designed For Personal Style And Daily Carry Routine
 Product ID: hhc-3762900
 SKU: hhc-3762900
@@ -7,11 +8,16 @@ Slug: black-cuikca-textured-leather-bifold-wallet-fashion-accessory-designed-2fc
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/34f4145102a2e25a79a208c3b6bcdc36.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/34f4145102a2e25a79a208c3b6bcdc36.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/1c676ebcae6f47573a1c011d9592743f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/d08459fe927b4053e6b5b14d876f1e7d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/4c1504e5ac073d0bfddf0a014ba0f8bc.png
 Meta Title: Black Cuikca Textured Leather Bifold Wallet - Fashion Accessory Desi
 Meta Description: Buy Black Cuikca Textured Leather Bifold Wallet - Fashion Accessory Designed For Personal Style And Daily Carry Routine online in Pakistan from ASM VEO. The Bla
 Description: The Black Cuikca Textured Leather Bifold Wallet Is A Fashion Accessory Formulated To Help Provide Personal Style And Secure Storage During Daily Use.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

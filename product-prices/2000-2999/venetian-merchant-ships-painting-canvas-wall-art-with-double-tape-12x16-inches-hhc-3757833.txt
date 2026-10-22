@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Venetian Merchant Ships Painting Canvas Wall Art With Double Tape | 12x16 Inches
 Product ID: hhc-3757833
 SKU: hhc-3757833
@@ -7,11 +8,16 @@ Slug: venetian-merchant-ships-painting-canvas-wall-art-with-double-tape-12x16-in
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/c5497ebf38b9d4f2b668406aaabc361e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/c5497ebf38b9d4f2b668406aaabc361e.jpeg
 Meta Title: Venetian Merchant Ships Painting Canvas Wall Art With Double Tape |
 Meta Description: Buy Venetian Merchant Ships Painting Canvas Wall Art With Double Tape | 12x16 Inches online in Pakistan from ASM VEO. Decorate Your Home With This Painting Of V
 Description: Decorate Your Home With This Painting Of Venetian Merchant Ships Canvas Wall Art Measuring 12x16 Inches And Featuring Double Tape For Easy Mounting.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

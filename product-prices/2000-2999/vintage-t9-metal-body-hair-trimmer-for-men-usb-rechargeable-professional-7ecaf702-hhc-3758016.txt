@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vintage T9 Metal Body Hair Trimmer for Men – USB Rechargeable Professional Hair Clipper | Precision Beard, Hair & Detailing Grooming Tool
 Product ID: hhc-3758016
 SKU: hhc-3758016
@@ -7,11 +8,16 @@ Slug: vintage-t9-metal-body-hair-trimmer-for-men-usb-rechargeable-professiona-7e
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/e555f605cf19c427e3d289bda5a4bf04.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/e555f605cf19c427e3d289bda5a4bf04.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/3dc41530b7e34593926a73b9bce2b398.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/31136ac069cfc440a360a5c1b5465a5e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/995ddac5141d57d4750505162aa73078.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/cc718308ab28abecaa483e592bf2c57a.jpeg
 Meta Title: Vintage T9 Metal Body Hair Trimmer for Men – USB Rechargeable Profes
 Meta Description: Buy Vintage T9 Metal Body Hair Trimmer for Men – USB Rechargeable Professional Hair Clipper | Precision Beard, Hair & Detailing Grooming Tool online in Pakistan
 Description: A premium all-metal grooming machine that blends vintage style with modern performance — perfect for sharp, clean, and precise haircuts anytime.
-Regular Price: 817
-Sale Price: 817
+Wholesale Price: 767
+Regular Price: 1460
+Sale Price: 1172
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

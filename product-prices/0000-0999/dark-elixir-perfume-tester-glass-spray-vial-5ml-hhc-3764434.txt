@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dark Elixir Perfume Tester – Glass Spray Vial - 5ml
 Product ID: hhc-3764434
 SKU: hhc-3764434
 Slug: dark-elixir-perfume-tester-glass-spray-vial-5ml-hhc-3764434
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Perfumes
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/343c2bbc071d71e5946049672b7abc8a.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/343c2bbc071d71e5946049672b7abc8a.webp
 Meta Title: Dark Elixir Perfume Tester – Glass Spray Vial - 5ml | Buy Online in
 Meta Description: Buy Dark Elixir Perfume Tester – Glass Spray Vial - 5ml online in Pakistan from ASM VEO. A compact perfume tester vial for the "DARK ELIXIR" fragrance. It featu
 Description: A compact perfume tester vial for the "DARK ELIXIR" fragrance. It features a clear cylindrical glass bottle containing yellow liquid, complete with a black spray nozzle and a matching black cap.
-Regular Price: 915
-Sale Price: 915
+Wholesale Price: 480
+Regular Price: 1210
+Sale Price: 965
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High-Frequency Vibration Ultrasonic Cleaner Machine – Portable Cleaning Device For Jewelry, Glasses, And Watches (Random Color)
 Product ID: hhc-3753359
 SKU: hhc-3753359
@@ -7,11 +8,16 @@ Slug: high-frequency-vibration-ultrasonic-cleaner-machine-portable-cleaning-d-14
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/cbd58b90e96bf2cd9736884714053067.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/cbd58b90e96bf2cd9736884714053067.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/7b249e0ddf7ed97517f02a8879cef921.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/750a58d3ed5b03b90a5eadead20b4458.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/d39dcdb1365ade629b98f99a7bba12e9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/19bf18419d42ed19d5f8ced37be43dfb.webp
 Meta Title: High-Frequency Vibration Ultrasonic Cleaner Machine – Portable Clean
 Meta Description: Buy High-Frequency Vibration Ultrasonic Cleaner Machine – Portable Cleaning Device For Jewelry, Glasses, And Watches (Random Color) online in Pakistan from ASM
 Description: Efficient High-Frequency Ultrasonic Cleaner Machine Designed For Deep Cleaning Jewelry, Glasses, And Watches With Advanced Vibration Technology.
-Regular Price: 954
-Sale Price: 954
+Wholesale Price: 904
+Regular Price: 1710
+Sale Price: 1371
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

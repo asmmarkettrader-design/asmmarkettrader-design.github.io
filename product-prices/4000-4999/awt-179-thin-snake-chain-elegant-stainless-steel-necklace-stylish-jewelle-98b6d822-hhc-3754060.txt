@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AWT-179 Thin Snake Chain – Elegant Stainless Steel Necklace, Stylish Jewellery Accessory for Women
 Product ID: hhc-3754060
 SKU: hhc-3754060
@@ -7,11 +8,16 @@ Slug: awt-179-thin-snake-chain-elegant-stainless-steel-necklace-stylish-jewel-98
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/b10d68731fe0729f049a6dc68ac53c17.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/b10d68731fe0729f049a6dc68ac53c17.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/4df2865158b3e88030a0e2a1c5553f11.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/d2c9047d3350097ba8bf1af00aa390f9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/3c67a6fa4f72e880fc78f6c5b8c044b1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/18ed15226a4f4f9b901620385d0eab42.jpeg
 Meta Title: AWT-179 Thin Snake Chain – Elegant Stainless Steel Necklace, Stylish
 Meta Description: Buy AWT-179 Thin Snake Chain – Elegant Stainless Steel Necklace, Stylish Jewellery Accessory for Women online in Pakistan from ASM VEO. AWT-179 thin snake chain
 Description: AWT-179 thin snake chain necklace, stylish stainless steel design for women, perfect for fashion and daily wear.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

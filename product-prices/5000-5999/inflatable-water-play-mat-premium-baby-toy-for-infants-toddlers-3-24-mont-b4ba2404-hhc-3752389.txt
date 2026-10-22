@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Inflatable Water Play Mat – Premium Baby Toy for Infants & Toddlers (3–24 Months), Muscle Strengthening & Sensory Development, 27.4x21.5x2.2 inch (Random Color)
 Product ID: hhc-3752389
 SKU: hhc-3752389
@@ -7,11 +8,16 @@ Slug: inflatable-water-play-mat-premium-baby-toy-for-infants-toddlers-3-24-mo-b4
 Category: Events & Gifting
 Subcategory: Other
 Brand: ASM VEO
-Meta Title: Inflatable Water Play Mat – Premium Baby Toy for Infants & Toddlers
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/0822e9fe5a40a1d02a3f52d8ea90f5bf.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/0822e9fe5a40a1d02a3f52d8ea90f5bf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/62d09228dc18b52a923845dfae7ef7bf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/df1c3f62cbb6eb1d26395dbbec70a3d7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/81a9d27974d6386f90bcb6ed274fdcc3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/cb0d88e654e3847f141803eece2f5adb.png
+Meta Title: Inflatable Water Play Mat – Premium Baby Toy for Infants & Toddlers 
 Meta Description: Buy Inflatable Water Play Mat – Premium Baby Toy for Infants & Toddlers (3–24 Months), Muscle Strengthening & Sensory Development, 27.4x21.5x2.2 inch (Random Co
 Description: Baby water play mats are designed to provide a sensory and engaging play experience for infants. Inflatable Tummy Time Baby Water mat is a perfect gift for babies aged 3 to 12 months. They are usually made of durable and not harmful materials, ensuring safety for the baby. The play mat is filled with
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1Pcs Silicone Gripster Grip Strengthener Finger Stretcher Hand Grip Trainer Gym Fitness Training And Exercise Hand Strengthened
 Product ID: hhc-3756395
 SKU: hhc-3756395
@@ -7,11 +8,16 @@ Slug: 1pcs-silicone-gripster-grip-strengthener-finger-stretcher-hand-grip-tra-3b
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
-Meta Title: 1Pcs Silicone Gripster Grip Strengthener Finger Stretcher Hand Grip
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/e98a89ca0e5426a2a9b7f4fe5e24c29f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/e98a89ca0e5426a2a9b7f4fe5e24c29f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/edbc8d1c70fa2e0c51b5bcce4895ddac.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/793d5b1a90f0cf3f499cfa8715fb7048.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/2e2d041edf590cb5a3080252dce31576.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/894340fecaa7b482f637499ce373f608.png
+Meta Title: 1Pcs Silicone Gripster Grip Strengthener Finger Stretcher Hand Grip 
 Meta Description: Buy 1Pcs Silicone Gripster Grip Strengthener Finger Stretcher Hand Grip Trainer Gym Fitness Training And Exercise Hand Strengthened online in Pakistan from ASM
 Description: How to Use It? Place your fingers into the loops. Slowly expand your hand outward to feel the resistance. Hold for 2–3 seconds and release slowly. Repeat for 3 sets of 15–20 reps for maximum results!
-Regular Price: 492
-Sale Price: 492
+Wholesale Price: 442
+Regular Price: 900
+Sale Price: 723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

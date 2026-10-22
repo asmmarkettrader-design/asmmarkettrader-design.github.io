@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CeraVe 6 In 1 Hydrating Mineral Facial Kit For Deep Cleansing, Brightening And Glowing Skin
 Product ID: hhc-3753319
 SKU: hhc-3753319
@@ -7,11 +8,16 @@ Slug: cerave-6-in-1-hydrating-mineral-facial-kit-for-deep-cleansing-brighteni-3a
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/383a92fe178e95d2fb54a76e69abab62.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/383a92fe178e95d2fb54a76e69abab62.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/cacb2f0d2bbed6d9ca6ddd73a07548e9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/48d59743e2672132872791ec3ee3629b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/78fa71740078e1dd1e2316e28f48d57d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/61fb354dc6d8e49c8130b6ec27742c42.jpg
 Meta Title: CeraVe 6 In 1 Hydrating Mineral Facial Kit For Deep Cleansing, Brigh
 Meta Description: Buy CeraVe 6 In 1 Hydrating Mineral Facial Kit For Deep Cleansing, Brightening And Glowing Skin online in Pakistan from ASM VEO. CeraVe 6 In 1 Hydrating Mineral
 Description: CeraVe 6 In 1 Hydrating Mineral Facial Kit Deeply Cleanses, Exfoliates, And Nourishes The Skin For A Smooth, Radiant, And Healthy Glow.
-Regular Price: 1190
-Sale Price: 1190
+Wholesale Price: 1140
+Regular Price: 2100
+Sale Price: 1679
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

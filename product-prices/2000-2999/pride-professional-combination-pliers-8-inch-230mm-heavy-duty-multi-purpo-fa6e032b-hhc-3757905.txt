@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: PRIDE Professional Combination Pliers 8 Inch (230mm) Heavy Duty Multi-Purpose Hand Tool
 Product ID: hhc-3757905
 SKU: hhc-3757905
@@ -7,11 +8,16 @@ Slug: pride-professional-combination-pliers-8-inch-230mm-heavy-duty-multi-pur-fa
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/ddb2636bdcab228f9efd9d318d4ae915.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/ddb2636bdcab228f9efd9d318d4ae915.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/93947ee3d94e04bfe28185ddd7937d1e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/6034dc4b7cca1d7f688607b1abd7af62.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/829352fd3796d27b959dd72ad3fe1944.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/ba8bae9377a5e3db4014d2edefb947d8.jpeg
 Meta Title: PRIDE Professional Combination Pliers 8 Inch (230mm) Heavy Duty Mult
 Meta Description: Buy PRIDE Professional Combination Pliers 8 Inch (230mm) Heavy Duty Multi-Purpose Hand Tool online in Pakistan from ASM VEO. Durable and reliable combination pl
 Description: Durable and reliable combination pliers designed for cutting, gripping, and twisting tasks. Built with high-quality forged steel and ergonomic anti-slip handles for professional and home use.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

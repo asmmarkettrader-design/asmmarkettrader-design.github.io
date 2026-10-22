@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100Pcs Safety Blood Collection Tube erfect Choice For Medical Blood Storage And Laboratory Needs - 3ML
 Product ID: hhc-3754115
 SKU: hhc-3754115
@@ -7,11 +8,16 @@ Slug: 100pcs-safety-blood-collection-tube-erfect-choice-for-medical-blood-sto-79
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: 100Pcs Safety Blood Collection Tube erfect Choice For Medical Blood
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/83ec4aade203f3d1767a12bd805d0635.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/83ec4aade203f3d1767a12bd805d0635.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/d78b0c2db39792cc25d8b74045c25f44.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/7e86d056761b294ba0975ece12b03993.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/3df72ea2f57822906e0648512285991b.jpeg
+Meta Title: 100Pcs Safety Blood Collection Tube erfect Choice For Medical Blood 
 Meta Description: Buy 100Pcs Safety Blood Collection Tube erfect Choice For Medical Blood Storage And Laboratory Needs - 3ML online in Pakistan from ASM VEO. Safety Blood Collect
 Description: Safety Blood Collection Tube Provides Durable Quality Reliable Utility Comfortable Use Secure Seal And Compact Design
-Regular Price: 1576
-Sale Price: 1576
+Wholesale Price: 1576
+Regular Price: 2880
+Sale Price: 2308
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

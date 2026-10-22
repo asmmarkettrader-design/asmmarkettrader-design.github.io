@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heavy Premium Quality Powder Coated Mosquito Coil Holder Durable Stylish Safe And Long Lasting (Random Color)
 Product ID: hhc-3755907
 SKU: hhc-3755907
@@ -7,11 +8,16 @@ Slug: heavy-premium-quality-powder-coated-mosquito-coil-holder-durable-stylis-a3
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/942bc980429eaf11bc233678f903390f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/942bc980429eaf11bc233678f903390f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/6c2ce3455715832c7af66a920cdcb0ee.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/8f7a5ca82a7d23f02728cfe6a154822b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/243a363d8b70ddf1e8de3798e2d16e22.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/83516a92882696fc381f703cdce2ec28.jpg
 Meta Title: Heavy Premium Quality Powder Coated Mosquito Coil Holder Durable Sty
 Meta Description: Buy Heavy Premium Quality Powder Coated Mosquito Coil Holder Durable Stylish Safe And Long Lasting (Random Color) online in Pakistan from ASM VEO. Heavy Premium
 Description: Heavy Premium Quality Powder Coated Mosquito Coil Holder Designed For Safety And Durability
-Regular Price: 214
-Sale Price: 214
+Wholesale Price: 164
+Regular Price: 456
+Sale Price: 306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

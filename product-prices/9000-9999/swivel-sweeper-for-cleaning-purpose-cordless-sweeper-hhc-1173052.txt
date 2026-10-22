@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: swivel sweeper, for cleaning purpose. Cordless Sweeper.
 Product ID: hhc-1173052
 SKU: hhc-1173052
@@ -7,11 +8,16 @@ Slug: swivel-sweeper-for-cleaning-purpose-cordless-sweeper-hhc-1173052
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/510j86HGjUS._AC_SL1500_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/510j86HGjUS._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/81ElSzSe6JS._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/71Pwq9fgeKS._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/282894a6-1b27-4beb-9cb3-4b16f2a89c20.jpeg
 Meta Title: swivel sweeper, for cleaning purpose. Cordless Sweeper. | Buy Online
 Meta Description: Buy swivel sweeper, for cleaning purpose. Cordless Sweeper. online in Pakistan from ASM VEO. Swivels 360 degrees and cleans in any direction Corner brushes spin
 Description: Swivels 360 degrees and cleans in any direction Corner brushes spin at 4000 RPM, making it easy to clean crumbs and messes along base boards and tight corners Low profile design makes it easy to clean under furniture Does not require expensive, messy bags Removable, cleanable, reusable bristles Cordless and rechargeable Lightweight at 2lbs and snaps up for easy storage Safe on all floor surfaces
-Regular Price: 4271
-Sale Price: 4271
+Wholesale Price: 4271
+Regular Price: 7160
+Sale Price: 5732
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

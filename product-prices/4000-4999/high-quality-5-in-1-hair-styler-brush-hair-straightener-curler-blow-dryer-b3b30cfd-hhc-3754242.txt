@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality 5 In 1 Hair Styler Brush Hair Straightener Curler Blow Dryer Volumizer Negative Ionic Electric Air Wrap With Detachable Brush Heads
 Product ID: hhc-3754242
 SKU: hhc-3754242
@@ -7,11 +8,16 @@ Slug: high-quality-5-in-1-hair-styler-brush-hair-straightener-curler-blow-dry-b3
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: High Quality 5 In 1 Hair Styler Brush Hair Straightener Curler Blow
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/2cb01c175919ece3b0de607d38ffd320.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/2cb01c175919ece3b0de607d38ffd320.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/d5a8e5c637962f253c88f6934fcca34c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/66c4cd17213ef9e44207c2d7450f5d77.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/a13018c6c2fb712d6486430334dea974.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/4c94adac344ea60b1a93f9d15ce1f6a7.jpeg
+Meta Title: High Quality 5 In 1 Hair Styler Brush Hair Straightener Curler Blow 
 Meta Description: Buy High Quality 5 In 1 Hair Styler Brush Hair Straightener Curler Blow Dryer Volumizer Negative Ionic Electric Air Wrap With Detachable Brush Heads online in P
 Description: High Quality 5 In 1 Hair Styler Brush Provides Durable Quality Reliable Utility Comfortable Use Compact Design And Effective Performance
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

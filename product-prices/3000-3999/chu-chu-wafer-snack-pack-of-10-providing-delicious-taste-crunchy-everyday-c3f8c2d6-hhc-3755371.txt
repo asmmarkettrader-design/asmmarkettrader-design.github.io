@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support
 Product ID: hhc-3755371
 SKU: hhc-3755371
@@ -7,11 +8,16 @@ Slug: chu-chu-wafer-snack-pack-of-10-providing-delicious-taste-crunchy-everyd-c3
 Category: Groceries
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/9c8a1595e7b8c9ae4a810cc547a20cb7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/9c8a1595e7b8c9ae4a810cc547a20cb7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/8344df3337f1120fd07bbd6547d6fb0c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/70b9c0395605104ece955fe18206f354.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/96e6a286a12a7189c89903dae9c5ccd1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/0e2afe465af2e22203658d3a613d6337.jpeg
 Meta Title: Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Eve
 Meta Description: Buy Chu Chu Wafer Snack Pack Of 10 Providing Delicious Taste Crunchy Everyday Snack Support online in Pakistan from ASM VEO. Chu Chu Wafer Snack Pack Of 10 Offe
 Description: Chu Chu Wafer Snack Pack Of 10 Offering Delicious Taste Crunchy Texture Reliable Quality Convenient Packaging And Daily Snack Support
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

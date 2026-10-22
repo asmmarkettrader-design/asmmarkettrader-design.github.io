@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nude Shades Lip Pencils - Long Lasting High Pigmented Precise Definition Waterproof Lip Liner
 Product ID: hhc-3761561
 SKU: hhc-3761561
@@ -7,11 +8,16 @@ Slug: nude-shades-lip-pencils-long-lasting-high-pigmented-precise-definition-863
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/df8deedb3cdea136e2b3147f13157b22.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/df8deedb3cdea136e2b3147f13157b22.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/e695046815ab67950be3a857f54cae04.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/abfda7e8f809f08960bff247c03f438c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/ff241746e7784ceed4f255c05648381f.jpeg
 Meta Title: Nude Shades Lip Pencils - Long Lasting High Pigmented Precise Defini
 Meta Description: Buy Nude Shades Lip Pencils - Long Lasting High Pigmented Precise Definition Waterproof Lip Liner online in Pakistan from ASM VEO. A Collection Of Nude Shades L
 Description: A Collection Of Nude Shades Lip Pencils Crafted To Provide Precise Outlining, Rich Color Payoff, And Easy Blending For A Beautiful Lip Look.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

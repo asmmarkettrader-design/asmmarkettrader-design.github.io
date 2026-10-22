@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: A8 Portable Mini Electric Shaver for Men Home Razor Travel Razor
 Product ID: hhc-1955569
 SKU: hhc-1955569
@@ -7,11 +8,16 @@ Slug: a8-portable-mini-electric-shaver-for-men-home-razor-travel-razor-hhc-19555
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/3-6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/3-6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/2-6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/1-11.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-07-14-at-2.38.05-PM.jpeg
 Meta Title: A8 Portable Mini Electric Shaver for Men Home Razor Travel Razor | B
 Meta Description: Buy A8 Portable Mini Electric Shaver for Men Home Razor Travel Razor online in Pakistan from ASM VEO. A8 Portable Mini Electric Shaver for Men Home Razor Travel
 Description: A8 Portable Mini Electric Shaver for Men Home Razor Travel Razor
-Regular Price: 1260
-Sale Price: 1260
+Wholesale Price: 1210
+Regular Price: 2220
+Sale Price: 1778
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

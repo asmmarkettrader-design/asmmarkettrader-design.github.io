@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: T03 & T05 Portable Warm Light Camping Lamp with Hanging Hook – Rechargeable Emergency LED Lantern
 Product ID: hhc-3758972
 SKU: hhc-3758972
@@ -7,11 +8,16 @@ Slug: t03-t05-portable-warm-light-camping-lamp-with-hanging-hook-rechargeable-5e
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/aa2ce97fd04f206f39bf5180b402737e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/aa2ce97fd04f206f39bf5180b402737e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/fbcaea4afdfbe263511f7b5319a73f62.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/2a9ebdae8843b9c8d1f50b9a3e45e7bc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/2bdc77d7274df349ad149f9c75d78b6d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/9a02c906044f4f7057893bfd14dfa3fe.png
 Meta Title: T03 & T05 Portable Warm Light Camping Lamp with Hanging Hook – Recha
 Meta Description: Buy T03 & T05 Portable Warm Light Camping Lamp with Hanging Hook – Rechargeable Emergency LED Lantern online in Pakistan from ASM VEO. Portable rechargeable cam
 Description: Portable rechargeable camping lamp with warm yellow LED light, durable plastic body, hanging hook, and up to 4–6 hours backup. Ideal for camping, emergency use, outdoor activities, and home lighting.
-Regular Price: 944
-Sale Price: 944
+Wholesale Price: 894
+Regular Price: 1700
+Sale Price: 1356
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Clinic Luer Lock Auto Disable Syringes With Needle – Pack Of 100 Sterile Medical Disposable Syringes For Safe Injections
 Product ID: hhc-3753368
 SKU: hhc-3753368
@@ -7,11 +8,16 @@ Slug: clinic-luer-lock-auto-disable-syringes-with-needle-pack-of-100-sterile-78f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/a6c12d58850932c526420cf656d0e9da.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/a6c12d58850932c526420cf656d0e9da.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/27f4be23433f8ee3467d584bcd6e30c4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/20a11512465b5ad7685305636b169200.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/ed635aaa4dc5dcdb8375c4160cc6e51b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/624f0d9427da1b54917e33549057379d.jpeg
 Meta Title: Clinic Luer Lock Auto Disable Syringes With Needle – Pack Of 100 Ste
 Meta Description: Buy Clinic Luer Lock Auto Disable Syringes With Needle – Pack Of 100 Sterile Medical Disposable Syringes For Safe Injections online in Pakistan from ASM VEO. Hi
 Description: High-Quality Clinic 3ml & 5ml Luer Lock Auto Disable Syringes With Needle, Pack Of 100, Designed For Safe, Sterile, And Accurate Medical Use.
-Regular Price: 980
-Sale Price: 980
+Wholesale Price: 930
+Regular Price: 1760
+Sale Price: 1408
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

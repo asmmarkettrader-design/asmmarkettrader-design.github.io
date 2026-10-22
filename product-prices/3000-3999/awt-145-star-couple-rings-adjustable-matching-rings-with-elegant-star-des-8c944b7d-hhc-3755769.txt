@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AWT-145 Star Couple Rings Adjustable Matching Rings With Elegant Star Design For Couples
 Product ID: hhc-3755769
 SKU: hhc-3755769
@@ -7,11 +8,16 @@ Slug: awt-145-star-couple-rings-adjustable-matching-rings-with-elegant-star-d-8c
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/16b984f211b6c4f33ea92ac07bff6931.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/16b984f211b6c4f33ea92ac07bff6931.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/c34e29b612e24dc5bef89fa050722259.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/40b67fe6e5ec22b5d5cd8f571100784a.webp
 Meta Title: AWT-145 Star Couple Rings Adjustable Matching Rings With Elegant Sta
 Meta Description: Buy AWT-145 Star Couple Rings Adjustable Matching Rings With Elegant Star Design For Couples online in Pakistan from ASM VEO. AWT-145 Star Couple Rings Offer A
 Description: AWT-145 Star Couple Rings Offer A Beautiful Matching Star Design For Couples.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Urapra Glycolic Acid 7 Percent Toning Solution Smooth Exfoliation Gentle Care Easy Absorption Radiant Glow - 100ML
 Product ID: hhc-3754324
 SKU: hhc-3754324
@@ -7,11 +8,16 @@ Slug: urapra-glycolic-acid-7-percent-toning-solution-smooth-exfoliation-gentl-fd
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/6203e485d8de4850e37d0e24eb7574c3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/6203e485d8de4850e37d0e24eb7574c3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/792cd20b0d1540162626def6f00f8079.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3d589f1eabf72f9f2583b558a240b02a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/63ad2e12cb62482b9da1d5facf86fea0.jpeg
 Meta Title: Urapra Glycolic Acid 7 Percent Toning Solution Smooth Exfoliation Ge
 Meta Description: Buy Urapra Glycolic Acid 7 Percent Toning Solution Smooth Exfoliation Gentle Care Easy Absorption Radiant Glow - 100ML online in Pakistan from ASM VEO. Urapra G
 Description: Urapra Glycolic Acid 7 Percent Toning Solution Provides Smooth Exfoliation Gentle Care Easy Absorption Radiant Glow And Comfortable Use
-Regular Price: 285
-Sale Price: 285
+Wholesale Price: 235
+Regular Price: 562
+Sale Price: 412
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

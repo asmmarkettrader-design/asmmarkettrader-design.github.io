@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Charcoal Teeth Whitening Powder
 Product ID: hhc-1331171
 SKU: hhc-1331171
@@ -7,11 +8,16 @@ Slug: charcoal-teeth-whitening-powder-hhc-1331171
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2024-02-03at3.33.46PM.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2024-02-03at3.33.46PM.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/CharcoalTeethPowder.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-04-01-at-2.59.44-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-04-01-at-2.59.44-PM.jpeg
 Meta Title: Charcoal Teeth Whitening Powder | Buy Online in Pakistan
 Meta Description: Buy Charcoal Teeth Whitening Powder online in Pakistan from ASM VEO. Description &nbsp; Charcoal Teeth Whitening Powder teeth whitening formula was handcrafted
 Description: Description &nbsp; Charcoal Teeth Whitening Powder teeth whitening formula was handcrafted with care &amp; made with safe ingredients. We manufacture our products without things like synthetic additives &nbsp; Original Product Picture
-Regular Price: 783
-Sale Price: 783
+Wholesale Price: 733
+Regular Price: 1400
+Sale Price: 1123
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

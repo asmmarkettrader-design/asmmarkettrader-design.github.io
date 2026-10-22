@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D wooden 3 Piece Long Leaf Panels | Wall Hanging wooden Art | Wall art I Wall art for room decoration
 Product ID: hhc-2594678
 SKU: hhc-2594678
@@ -7,11 +8,16 @@ Slug: 3d-wooden-3-piece-long-leaf-panels-wall-hanging-wooden-art-wall-art-i-w-70
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/4_ea1f6bcc-2ae6-4d26-9d4e-02a14bb5e19e.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/4_ea1f6bcc-2ae6-4d26-9d4e-02a14bb5e19e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/6_d58010b0-c933-46d5-b309-25895a7a7243.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/1_2f7352c3-1a2b-4022-9b8c-a62fef237fb6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/3_cc719c09-81e9-4f45-aaa7-58e3cd0137d4.webp
 Meta Title: 3D wooden 3 Piece Long Leaf Panels | Wall Hanging wooden Art | Wall
 Meta Description: Buy 3D wooden 3 Piece Long Leaf Panels | Wall Hanging wooden Art | Wall art I Wall art for room decoration online in Pakistan from ASM VEO. 3D Wooden wall art D
 Description: 3D Wooden wall art Description Metrial Wooden Size each frame 8 inch Thickness 3mm wooden 3 piece long leaf panels for wall decoration .• Made of high-quality wooden material. • 3D design adds depth and texture to walls .• Perfect for bedroom, living room, or office. • Easy to hang and install on any wall .• Adds a natural and calming touch to any space.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

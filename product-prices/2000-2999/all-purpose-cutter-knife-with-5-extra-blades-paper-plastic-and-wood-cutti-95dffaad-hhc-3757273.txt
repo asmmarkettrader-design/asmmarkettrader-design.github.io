@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: All Purpose Cutter Knife With 5 Extra Blades Paper Plastic And Wood Cutting Tool 18mm Steel Blade Rubber Grip
 Product ID: hhc-3757273
 SKU: hhc-3757273
@@ -7,11 +8,16 @@ Slug: all-purpose-cutter-knife-with-5-extra-blades-paper-plastic-and-wood-cut-95
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
-Meta Title: All Purpose Cutter Knife With 5 Extra Blades Paper Plastic And Wood
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/d3b015ba4391bb17d9d2ead9e07d01a8.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/d3b015ba4391bb17d9d2ead9e07d01a8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/93ece82666128f5de0a485c6ff55bd79.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/a2497cc16bc3118f99a4eefd89554ef3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/7787e95776433898778e843757fd81a3.jpeg
+Meta Title: All Purpose Cutter Knife With 5 Extra Blades Paper Plastic And Wood 
 Meta Description: Buy All Purpose Cutter Knife With 5 Extra Blades Paper Plastic And Wood Cutting Tool 18mm Steel Blade Rubber Grip online in Pakistan from ASM VEO. All Purpose C
 Description: All Purpose Cutter Knife With 5 Extra Blades Featuring Sharp 18mm Steel Blades And Non Slip Rubber Grip.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

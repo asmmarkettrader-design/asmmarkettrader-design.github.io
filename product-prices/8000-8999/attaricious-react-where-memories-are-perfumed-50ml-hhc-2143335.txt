@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Attaricious React (WHERE MEMORIES ARE PERFUMED) (50ml)
 Product ID: hhc-2143335
 SKU: hhc-2143335
@@ -7,11 +8,16 @@ Slug: attaricious-react-where-memories-are-perfumed-50ml-hhc-2143335
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/3b7dc19588d3c7d7055fcd6a1fa2bddc.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/3b7dc19588d3c7d7055fcd6a1fa2bddc.jpeg
 Meta Title: Attaricious React (WHERE MEMORIES ARE PERFUMED) (50ml) | Buy Online
 Meta Description: Buy Attaricious React (WHERE MEMORIES ARE PERFUMED) (50ml) online in Pakistan from ASM VEO. Szie 50ml Bottle Indulge in the luxurious fusion of React, a fragran
 Description: Szie 50ml Bottle Indulge in the luxurious fusion of React, a fragrance that masterfully blends opulence with decadence. This unique scent opens with the rich warmth of saffron and the velvety allure of rose, leading into a heart of exotic oud and dark, gourmet chocolate. The fragrance deepens with earthy patchouli, enveloped in the creamy richness of amber and musk, creating a sensual, gourmand experience. Perfect for those who crave a blend of oriental elegance and sweet indulgence, React is an unforgettable journey of luxury and sophistication. React is not just a perfume; it’s an inspiration in a bottle. Ideal for dynamic individuals who thrive on innovation and creativity, this scent is perfect for daily wear, whether you're in a boardroom, a brainstorming session, or coding late into the night. Unleash your potential and leave a trail of freshness wherever you go with React.
-Regular Price: 3423
-Sale Price: 3423
+Wholesale Price: 2445
+Regular Price: 4350
+Sale Price: 3481
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

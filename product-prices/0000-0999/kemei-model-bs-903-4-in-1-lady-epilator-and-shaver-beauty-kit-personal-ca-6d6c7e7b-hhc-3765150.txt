@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kemei Model BS 903 4 In 1 Lady Epilator And Shaver Beauty Kit - Personal Care Accessory Designed For Hair Removal And Daily Maintenance Routine
 Product ID: hhc-3765150
 SKU: hhc-3765150
@@ -7,11 +8,16 @@ Slug: kemei-model-bs-903-4-in-1-lady-epilator-and-shaver-beauty-kit-personal-6d6
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/3f16b9ef16a47d3846b86bf802be7b56.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/3f16b9ef16a47d3846b86bf802be7b56.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/5a464d4810a354921963813240d448df.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/034b6e056f91b2ef5b01db9b54f58c39.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/a947c09c3f084efa8e557e3306b3bee4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/9c7580cbb0414660e2f593870ad93b92.jpg
 Meta Title: Kemei Model BS 903 4 In 1 Lady Epilator And Shaver Beauty Kit - Pers
 Meta Description: Buy Kemei Model BS 903 4 In 1 Lady Epilator And Shaver Beauty Kit - Personal Care Accessory Designed For Hair Removal And Daily Maintenance Routine online in Pa
 Description: This Kemei Model BS 903 4 In 1 Lady Epilator And Shaver Beauty Kit Provides A Reliable Solution For Personal Care Accessories And Routine Hair Removal Needs. Formulated To Deliver Maintenance Benefits While Supporting Kemei Model BS 903 4 In 1 Lady Epilator And Shaver Beauty Kit Utility, It Fits Seamlessly Into Your Regular Hair Removal Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Hair Removal Requirements, This Kemei Model BS 903 4 In 1 Lady Epilator And Shaver Beauty Kit Serves As An Essential Personal Care Accessory For Daily Life.Key FeaturesKemei Model BS 903 4 In 1 Lady Epilator And Shaver Beauty Kit Formulated For Personal Care AccessoriesDelivers Hair Removal And Supports Daily Maintenance UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Hair Removal And Maintenance RoutinesDesigned For Easy Operation And Convenient UseEssential Personal Care Accessory For Everyday Maintenance
-Regular Price: 3990
-Sale Price: 3990
+Wholesale Price: 3990
+Regular Price: 6710
+Sale Price: 5367
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dopamine Drizzle | Dopamine in Every Flick – Handmade Fresh Floral Soy Wax Candle - 100 gram
 Product ID: hhc-2901659
 SKU: hhc-2901659
@@ -7,11 +8,16 @@ Slug: dopamine-drizzle-dopamine-in-every-flick-handmade-fresh-floral-soy-wax-672
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Dopamine-Drizzle.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Dopamine-Drizzle.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/dopamine-drizzle.jpg
 Meta Title: Dopamine Drizzle | Dopamine in Every Flick – Handmade Fresh Floral S
 Meta Description: Buy Dopamine Drizzle | Dopamine in Every Flick – Handmade Fresh Floral Soy Wax Candle - 100 gram online in Pakistan from ASM VEO. Dopamine Drizzle | Dopamine in
 Description: Dopamine Drizzle | Dopamine in Every Flick – Handmade Fresh Floral Soy Wax Candle - 100 gram Product Description Net Weight: 100 grams(Exclusive of jar weight) Made with 100% pure Soy Wax Eco Friendly Burn time upto 25 hours Purely handmade Product Notes Light, fresh, slightly green unique floral scent Dopamine in every flick Boost your mood, spark your joy
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

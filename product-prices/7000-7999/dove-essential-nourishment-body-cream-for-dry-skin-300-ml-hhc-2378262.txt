@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dove Essential Nourishment Body Cream For Dry Skin, 300 ml
 Product ID: hhc-2378262
 SKU: hhc-2378262
@@ -7,11 +8,16 @@ Slug: dove-essential-nourishment-body-cream-for-dry-skin-300-ml-hhc-2378262
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: Dove
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-27-at-12.37.55-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-27-at-12.37.55-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-27-at-12.37.54-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-27-at-12.37.54-PM.jpeg
 Meta Title: Dove Essential Nourishment Body Cream For Dry Skin, 300 ml | Buy Onl
 Meta Description: Buy Dove Essential Nourishment Body Cream For Dry Skin, 300 ml online in Pakistan from ASM VEO. Dove Essential Nourishment Body Cream For Dry Skin, 300 ml Size:
 Description: Dove Essential Nourishment Body Cream For Dry Skin, 300 ml Size: 300ml Provides deep nourishment your dry skin Contains natural skin nutrients, rich essential oils &amp; glycelin Tackles dry and flaky skin in a whole new way Provide long lasting softness. Light, non-greasy and get absorbed instantly to give you smooth and soft skin Gives you long-lasting soft and smooth skin
-Regular Price: 669
-Sale Price: 669
+Wholesale Price: 619
+Regular Price: 1200
+Sale Price: 958
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

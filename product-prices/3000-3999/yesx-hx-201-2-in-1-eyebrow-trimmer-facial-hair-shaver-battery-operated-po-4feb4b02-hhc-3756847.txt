@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: YESX HX-201 2-in-1 Eyebrow Trimmer & Facial Hair Shaver | Battery-Operated | Portable Grooming Tool
 Product ID: hhc-3756847
 SKU: hhc-3756847
@@ -7,11 +8,16 @@ Slug: yesx-hx-201-2-in-1-eyebrow-trimmer-facial-hair-shaver-battery-operated-4fe
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/17/106b6e5502f0987801315003428d399b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/17/106b6e5502f0987801315003428d399b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/c99b9a843d1bf08bc9269e123d4273a4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/0958852118cd730ec2da97934e476b39.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/a567205ada1d98a1288e74ef589b5c81.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/74e3f8c3f4c0ac7d7eb883a708d27358.jpg
 Meta Title: YESX HX-201 2-in-1 Eyebrow Trimmer & Facial Hair Shaver | Battery-Op
 Meta Description: Buy YESX HX-201 2-in-1 Eyebrow Trimmer & Facial Hair Shaver | Battery-Operated | Portable Grooming Tool online in Pakistan from ASM VEO. YESX HX-201 2-in-1 batt
 Description: YESX HX-201 2-in-1 battery-operated trimmer. Eyebrow shaping & facial hair shaving in one portable grooming device.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

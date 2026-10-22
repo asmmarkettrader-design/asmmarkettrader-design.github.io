@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Neubic cow leather sneakers for Men (Beige)
 Product ID: hhc-2083136
 SKU: hhc-2083136
@@ -7,11 +8,16 @@ Slug: neubic-cow-leather-sneakers-for-men-beige-hhc-2083136
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp_Image_2024-09-22_at_7.31.44_PM-removebg-preview-2-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp_Image_2024-09-22_at_7.31.44_PM-removebg-preview-2-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp_Image_2024-09-22_at_7.31.45_PM-removebg-preview-1-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp_Image_2024-09-22_at_7.31.43_PM-removebg-preview-1-1.png
 Meta Title: Neubic cow leather sneakers for Men (Beige) | Buy Online in Pakistan
 Meta Description: Buy Neubic cow leather sneakers for Men (Beige) online in Pakistan from ASM VEO. Neubic cow leather sneakers &nbsp; Waterproof leather used in army shoes Color:
 Description: Neubic cow leather sneakers &nbsp; Waterproof leather used in army shoes Color: Beige Weight: 0.6 kilo Sizes available: 6 to 11 (original product video) [video width="476" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Video-2024-09-30-at-10.19.14-AM.mp4"][/video]
-Regular Price: 2656
-Sale Price: 2656
+Wholesale Price: 2656
+Regular Price: 4710
+Sale Price: 3766
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Wipes 2-IN-1 CLEANSE + BRIGHTENS (50pc in 1 pouch)
 Product ID: hhc-2398418
 SKU: hhc-2398418
@@ -7,11 +8,16 @@ Slug: kitchen-wipes-2-in-1-cleanse-brightens-50pc-in-1-pouch-hhc-2398418
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-02-at-5.53.40-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-02-at-5.53.40-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/218e9d192ede37b32bdeab0ceb870bf1.png_2200x2200q80.png_.webp
 Meta Title: Kitchen Wipes 2-IN-1 CLEANSE + BRIGHTENS (50pc in 1 pouch) | Buy Onl
 Meta Description: Buy Kitchen Wipes 2-IN-1 CLEANSE + BRIGHTENS (50pc in 1 pouch) online in Pakistan from ASM VEO. Kitchen Wipes A need of Every Home for cleaning kitchen easily.
 Description: Kitchen Wipes A need of Every Home for cleaning kitchen easily. wipes, you can quickly and easily clean grime, dirt, grass stains, scuffs, mud, and salt from your kitchen Ideal for cleaning greasy kitchen stove, tiles, hood, utensils and counter tops. Convenient and hygienic way of keeping kitchen clean. (50pc in 1 pouch) [video width="360" height="640" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Video-2024-12-02-at-5.53.44-PM.mp4"][/video]
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

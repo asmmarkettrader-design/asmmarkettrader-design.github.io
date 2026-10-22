@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Wall Art Set - Modern Classic Style Painted Scenes, Wood MDF  Photo Tile Frame Orientation for Living Room, Bedroom, Home Office - Art Deco Themed Paintings
 Product ID: hhc-3160197
 SKU: hhc-3160197
@@ -7,11 +8,16 @@ Slug: 3pcs-wall-art-set-modern-classic-style-painted-scenes-wood-mdf-photo-ti-60
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/8390cc29cd341e5a05b6e14b883efc1e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/8390cc29cd341e5a05b6e14b883efc1e.jpeg
 Meta Title: 3pcs Wall Art Set - Modern Classic Style Painted Scenes, Wood MDF Ph
 Meta Description: Buy 3pcs Wall Art Set - Modern Classic Style Painted Scenes, Wood MDF Photo Tile Frame Orientation for Living Room, Bedroom, Home Office - Art Deco Themed Paint
 Description: 3pcs Wall Art Set - Modern Classic Style Painted Scenes, Wood MDF Photo Tile Frame Orientation for Living Room, Bedroom, Home Office - Art Deco Themed Paintings No of frames : 3 Size each frame 8x11 Full design size 28x11 High quality Digital print Mdf Wood Material High quality Sticky tape attached on the wall for sticking on the wall.
-Regular Price: 432
-Sale Price: 432
+Wholesale Price: 382
+Regular Price: 790
+Sale Price: 633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

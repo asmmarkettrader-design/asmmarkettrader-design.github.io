@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Air 39 Wireless Earbuds – Transparent Display, ENC Noise Cancellation & Bluetooth 5.3 Gaming Earbuds
 Product ID: hhc-3763484
 SKU: hhc-3763484
@@ -7,11 +8,16 @@ Slug: air-39-wireless-earbuds-transparent-display-enc-noise-cancellation-blue-1d
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/3563fc029489b7843101f9543ed3a620.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/3563fc029489b7843101f9543ed3a620.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/0aa8a28013237e03d7fabb17d01aa0e3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/383d3d30ee57eaf9248bdb941cd51d4e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/fc8a43dd572c3d1f9060b10534429627.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/77d04333127dff633ca835ab41784106.jpg
 Meta Title: Air 39 Wireless Earbuds – Transparent Display, ENC Noise Cancellatio
 Meta Description: Buy Air 39 Wireless Earbuds – Transparent Display, ENC Noise Cancellation & Bluetooth 5.3 Gaming Earbuds online in Pakistan from ASM VEO. Enjoy a stylish wirele
 Description: Enjoy a stylish wireless audio experience with Air 39 Earbuds featuring Bluetooth 5.3, ENC noise cancellation, a transparent digital display case, and a compact gaming-friendly design.
-Regular Price: 796
-Sale Price: 796
+Wholesale Price: 746
+Regular Price: 1430
+Sale Price: 1142
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

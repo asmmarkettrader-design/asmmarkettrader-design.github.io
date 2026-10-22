@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Side Pocket Summer Stylish Short for Men | Casual Loose Shorts for Summer, Outdoors, Fitness | Solid Color | Elastic Sweatpant
 Product ID: hhc-3194662
 SKU: hhc-3194662
@@ -7,11 +8,16 @@ Slug: black-side-pocket-summer-stylish-short-for-men-casual-loose-shorts-for-806
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/c3bec788d9af8144470ff6eefe1db4cd.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/c3bec788d9af8144470ff6eefe1db4cd.jpeg
 Meta Title: Black Side Pocket Summer Stylish Short for Men | Casual Loose Shorts
 Meta Description: Buy Black Side Pocket Summer Stylish Short for Men | Casual Loose Shorts for Summer, Outdoors, Fitness | Solid Color | Elastic Sweatpant online in Pakistan from
 Description: Black Side Pocket Summer Stylish ShortSizes:MediumLargeExtra LargeNote: We recommend hand wash for long lasting life.Size Chart:Product's Picture:
-Regular Price: 495
-Sale Price: 495
+Wholesale Price: 445
+Regular Price: 910
+Sale Price: 728
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multy Blossom Kids Winter Collection Set Providing Warm Comfort Stylish Design Everyday Winter Wear Support
 Product ID: hhc-3755083
 SKU: hhc-3755083
@@ -7,11 +8,16 @@ Slug: multy-blossom-kids-winter-collection-set-providing-warm-comfort-stylish-f9
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/95f49012a0f340cf3ba0d5dd95a9d4ad.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/95f49012a0f340cf3ba0d5dd95a9d4ad.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/f9d1882b27f5d946761815c17cbfbbdf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/07f899d4d4325e130a170c79c4a1af27.jpeg
 Meta Title: Multy Blossom Kids Winter Collection Set Providing Warm Comfort Styl
 Meta Description: Buy Multy Blossom Kids Winter Collection Set Providing Warm Comfort Stylish Design Everyday Winter Wear Support online in Pakistan from ASM VEO. Multy Blossom K
 Description: Multy Blossom Kids Winter Collection Set Offering Warm Comfort Stylish Design Durable Quality Reliable Performance And Stylish Daily Winter Wear Support
-Regular Price: 1230
-Sale Price: 1230
+Wholesale Price: 1180
+Regular Price: 2170
+Sale Price: 1736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

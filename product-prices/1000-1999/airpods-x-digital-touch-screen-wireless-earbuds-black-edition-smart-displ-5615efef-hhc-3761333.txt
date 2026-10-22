@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AirPods X Digital Touch Screen Wireless Earbuds – Black Edition | Smart Display Charging Case | Bluetooth Earphones | Touch Control
 Product ID: hhc-3761333
 SKU: hhc-3761333
@@ -7,11 +8,16 @@ Slug: airpods-x-digital-touch-screen-wireless-earbuds-black-edition-smart-dis-56
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/20d5f4c28b04ebb1a82d588350ab9e2c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/20d5f4c28b04ebb1a82d588350ab9e2c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/7687944da835102ee43a6bcfffc4caf7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/023623f272fb8c5c8a19a98bebc1bbf3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/ddf65a9119a8df500612c1ffef7b27a4.png
 Meta Title: AirPods X Digital Touch Screen Wireless Earbuds – Black Edition | Sm
 Meta Description: Buy AirPods X Digital Touch Screen Wireless Earbuds – Black Edition | Smart Display Charging Case | Bluetooth Earphones | Touch Control online in Pakistan from
 Description: Experience premium wireless audio with the AirPods X Digital Touch Screen – Black Edition.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

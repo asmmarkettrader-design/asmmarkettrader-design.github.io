@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: WIKI Special Skincare Brighter & 2 In 1 Polish With Peeling Cream – Ultra Whitening
 Product ID: hhc-3752538
 SKU: hhc-3752538
@@ -7,11 +8,16 @@ Slug: wiki-special-skincare-brighter-2-in-1-polish-with-peeling-cream-ultra-whit
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: WIKI Special Skincare Brighter & 2 In 1 Polish With Peeling Cream –
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/23e6ae1d72cc90669adf341a27ef4a42.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/23e6ae1d72cc90669adf341a27ef4a42.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/40dc206ba902e87244bf0a3bce22e5a9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/409ab72c319a4b237d6dd54b625bc4f6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/5c088e1257c6e79037b5467aca5f5c7c.jpg
+Meta Title: WIKI Special Skincare Brighter & 2 In 1 Polish With Peeling Cream – 
 Meta Description: Buy WIKI Special Skincare Brighter & 2 In 1 Polish With Peeling Cream – Ultra Whitening online in Pakistan from ASM VEO. Wiki SPECIAL SKINCARE's POLISH Skin Pee
 Description: Wiki SPECIAL SKINCARE's POLISH Skin Peeling Cream and Brighter Power are designed to deliver instant glow, gentle exfoliation, and radiant skin.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

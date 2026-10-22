@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 6 Sticky Wooden Canvas Frames For Wall Decore Aesthatic Art / Sticky Phototiles For Room Wall Decoration
 Product ID: hhc-3754882
 SKU: hhc-3754882
@@ -7,11 +8,16 @@ Slug: set-of-6-sticky-wooden-canvas-frames-for-wall-decore-aesthatic-art-stic-3c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/2010bb3d43f6832e15475e0e9271b92b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/2010bb3d43f6832e15475e0e9271b92b.jpeg
 Meta Title: Set Of 6 Sticky Wooden Canvas Frames For Wall Decore Aesthatic Art /
 Meta Description: Buy Set Of 6 Sticky Wooden Canvas Frames For Wall Decore Aesthatic Art / Sticky Phototiles For Room Wall Decoration online in Pakistan from ASM VEO. Set Of 6 St
 Description: Set Of 6 Sticky Wooden Canvas Frames For Wall Decore Aesthatic Art / Sticky Phototiles For Room Wall Decoration
-Regular Price: 755
-Sale Price: 755
+Wholesale Price: 705
+Regular Price: 1350
+Sale Price: 1082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

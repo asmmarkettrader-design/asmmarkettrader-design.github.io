@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BTS Photo Cards Pack of 9 | K-Pop BTS Army Collectible Cards | High Quality Single Side Printed Photo Cards for Phone, Wall & Room Decoration
 Product ID: hhc-3763003
 SKU: hhc-3763003
@@ -7,11 +8,16 @@ Slug: bts-photo-cards-pack-of-9-k-pop-bts-army-collectible-cards-high-quality-14
 Category: Books & Stationery
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/e939609168b8be76afd3bda9318df711.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/e939609168b8be76afd3bda9318df711.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/af3469f2ba43ede84f1328d8a0d7ea4b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/2329cd029dbbbc84343d47f6db07f4c3.jpg
 Meta Title: BTS Photo Cards Pack of 9 | K-Pop BTS Army Collectible Cards | High
 Meta Description: Buy BTS Photo Cards Pack of 9 | K-Pop BTS Army Collectible Cards | High Quality Single Side Printed Photo Cards for Phone, Wall & Room Decoration online in Paki
 Description: Show your love for BTS with this Pack of 9 premium-quality photo cards. Featuring vibrant single-side prints with rounded corners, these collectible cards are perfect for decorating phone cases, books, cupboards, walls, or adding to your K-pop collection.
-Regular Price: 307
-Sale Price: 307
+Wholesale Price: 257
+Regular Price: 596
+Sale Price: 446
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

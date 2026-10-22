@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Handheld Turbo Fan with LED Display – 3-Speed Rechargeable Cooling Fan for Home & Travel
 Product ID: hhc-3763852
 SKU: hhc-3763852
@@ -7,11 +8,16 @@ Slug: portable-handheld-turbo-fan-with-led-display-3-speed-rechargeable-cooli-7f
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: Portable Handheld Turbo Fan with LED Display – 3-Speed Rechargeable
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/bf8881207d82e2c574874607ebca0a2c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/bf8881207d82e2c574874607ebca0a2c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/c679926dba0477650fd7df3213a7ec86.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/0e30377438c5c917d320030b4e97c3c4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/cea730d7cf2089db89d1a752f848ac05.jpeg
+Meta Title: Portable Handheld Turbo Fan with LED Display – 3-Speed Rechargeable 
 Meta Description: Buy Portable Handheld Turbo Fan with LED Display – 3-Speed Rechargeable Cooling Fan for Home & Travel online in Pakistan from ASM VEO. Portable 3-speed handheld
 Description: Portable 3-speed handheld fan with LED display, rechargeable design, and compact build for convenient cooling.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

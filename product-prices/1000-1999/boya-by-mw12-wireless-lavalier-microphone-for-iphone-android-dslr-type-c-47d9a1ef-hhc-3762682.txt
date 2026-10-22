@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BOYA BY-MW12  Wireless Lavalier Microphone for iPhone, Android & DSLR | Type-C & Lightning | Noise Reduction | Live Streaming, Vlogging & Recording Mic
 Product ID: hhc-3762682
 SKU: hhc-3762682
@@ -7,11 +8,16 @@ Slug: boya-by-mw12-wireless-lavalier-microphone-for-iphone-android-dslr-type-47d
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/be29e59838aa1e70d2f0717bdc2b9cf8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/be29e59838aa1e70d2f0717bdc2b9cf8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/2571237982248a4d4238937f6239493f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/afe7e8bcda655144ac8218c6cc29f083.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/057f40b30d3987a65deb2247f175bd06.webp
 Meta Title: BOYA BY-MW12 Wireless Lavalier Microphone for iPhone, Android & DSLR
 Meta Description: Buy BOYA BY-MW12 Wireless Lavalier Microphone for iPhone, Android & DSLR | Type-C & Lightning | Noise Reduction | Live Streaming, Vlogging & Recording Mic onlin
 Description: Capture crystal-clear audio with the BOYA BY-MW12/BY-MW13 Wireless Lavalier Microphone. Designed for vloggers, content creators, live streamers, and mobile journalists, it features stable 2.4GHz wireless transmission, intelligent noise reduction, ultra-low latency, and plug-and-play operation for sma
-Regular Price: 2235
-Sale Price: 2235
+Wholesale Price: 2235
+Regular Price: 4000
+Sale Price: 3197
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

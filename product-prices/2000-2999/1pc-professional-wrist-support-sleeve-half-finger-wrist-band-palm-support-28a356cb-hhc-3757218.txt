@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1Pc Professional Wrist Support Sleeve Half Finger Wrist Band Palm Support For Sports And Daily Use
 Product ID: hhc-3757218
 SKU: hhc-3757218
@@ -7,11 +8,16 @@ Slug: 1pc-professional-wrist-support-sleeve-half-finger-wrist-band-palm-suppo-28
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/7464c97229842c6c7d13aa4ed2053203.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/7464c97229842c6c7d13aa4ed2053203.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/d519ddae5226404241db6e84775d08eb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/20150a487ac2b1c07d2ce792fd6d7ace.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/d76a987a2d5dfa557c4845108fa097af.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/2ad15ace8371cbeab56684508c36f6fa.jpg
 Meta Title: 1Pc Professional Wrist Support Sleeve Half Finger Wrist Band Palm Su
 Meta Description: Buy 1Pc Professional Wrist Support Sleeve Half Finger Wrist Band Palm Support For Sports And Daily Use online in Pakistan from ASM VEO. Professional Wrist Suppo
 Description: Professional Wrist Support Sleeve With Half Finger Design Provides Wrist And Palm Stability For Sports Workouts And Daily Comfort.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

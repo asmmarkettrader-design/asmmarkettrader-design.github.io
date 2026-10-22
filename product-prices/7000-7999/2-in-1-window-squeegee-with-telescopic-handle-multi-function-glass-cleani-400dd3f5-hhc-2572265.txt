@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Window Squeegee with Telescopic Handle – Multi-Function Glass Cleaning Tool for Home &amp; Office
 Product ID: hhc-2572265
 SKU: hhc-2572265
@@ -7,11 +8,16 @@ Slug: 2-in-1-window-squeegee-with-telescopic-handle-multi-function-glass-clea-40
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2-in-1-mope-6.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2-in-1-mope-6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2-in-1-mope-5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2-in-1-mope-4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2-in-1-mope-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2-in-1-mope-2.webp
 Meta Title: 2-in-1 Window Squeegee with Telescopic Handle – Multi-Function Glass
 Meta Description: Buy 2-in-1 Window Squeegee with Telescopic Handle – Multi-Function Glass Cleaning Tool for Home &amp; Office online in Pakistan from ASM VEO. Royal 2-in-1 Windo
 Description: Royal 2-in-1 Window Squeegee with Telescopic Handle – Multi-function glass cleaning tool designed for streak-free window and mirror cleaning. Features a dual-sided design with sponge scrubber and rubber squeegee for effective dust, soap, and water removal.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

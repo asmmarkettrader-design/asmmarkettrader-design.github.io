@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SAFETY Lithium Heparin Vacuum Blood Collection Tubes (Glass, 3ml, 13x75mm) - Pack of 100
 Product ID: hhc-3754119
 SKU: hhc-3754119
@@ -7,11 +8,16 @@ Slug: safety-lithium-heparin-vacuum-blood-collection-tubes-glass-3ml-13x75mm-cd8
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/53407e9277f535cac7bd828a2b6de263.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/53407e9277f535cac7bd828a2b6de263.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/343401e02990f937cd781f860e960f90.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/74d7d909da98b39dda2752f5e7c33ba0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/2b4a7dade6d49759d2641761f7bbaf08.jpeg
 Meta Title: SAFETY Lithium Heparin Vacuum Blood Collection Tubes (Glass, 3ml, 13
 Meta Description: Buy SAFETY Lithium Heparin Vacuum Blood Collection Tubes (Glass, 3ml, 13x75mm) - Pack of 100 online in Pakistan from ASM VEO. Premium green top safety blood col
 Description: Premium green top safety blood collection tube containing heparin for fast plasma separation. Ideal for clinical chemistry, electrolyte testing, and urgent laboratory analysis.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

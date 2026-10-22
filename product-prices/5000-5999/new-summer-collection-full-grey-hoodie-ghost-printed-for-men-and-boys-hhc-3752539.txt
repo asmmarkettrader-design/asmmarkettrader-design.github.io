@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Summer Collection Full Grey Hoodie ghost Printed For Men And Boys
 Product ID: hhc-3752539
 SKU: hhc-3752539
@@ -7,11 +8,16 @@ Slug: new-summer-collection-full-grey-hoodie-ghost-printed-for-men-and-boys-hhc-
 Category: Fashion
 Subcategory: Trucksuits & Activewear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/ea638c9dab84196bc2471f05529f66ec.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/ea638c9dab84196bc2471f05529f66ec.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/2bac1f8e490213426f9949c382ac71f2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/f8e8f463b71153a545ef013df7d33d33.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/575d1b5b57f10a39ed305a76eb07b084.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/14c160eb032b8699d2dcac9fd962232f.jpeg
 Meta Title: New Summer Collection Full Grey Hoodie ghost Printed For Men And Boy
 Meta Description: Buy New Summer Collection Full Grey Hoodie ghost Printed For Men And Boys online in Pakistan from ASM VEO. New Summer Collection Full Grey Hoodie ghost Printed
 Description: New Summer Collection Full Grey Hoodie ghost Printed For Men And Boys
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

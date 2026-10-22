@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern 2-Piece Abstract Flower Wall Frame Set – Navy, Mustard & Gray Leaf Designs
 Product ID: hhc-3757975
 SKU: hhc-3757975
@@ -7,11 +8,16 @@ Slug: modern-2-piece-abstract-flower-wall-frame-set-navy-mustard-gray-leaf-desig
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/5699508210d440c4330933d26784abc8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/5699508210d440c4330933d26784abc8.jpeg
 Meta Title: Modern 2-Piece Abstract Flower Wall Frame Set – Navy, Mustard & Gray
 Meta Description: Buy Modern 2-Piece Abstract Flower Wall Frame Set – Navy, Mustard & Gray Leaf Designs online in Pakistan from ASM VEO. Modern 2-Piece Abstract Flower Wall Frame
 Description: Modern 2-Piece Abstract Flower Wall Frame Set – Navy, Mustard & Gray Leaf Designs
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

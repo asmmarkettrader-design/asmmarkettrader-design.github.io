@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tresemme Deep Smoothie Hair Mask - Hair Care Product Designed For Hair Nourishment And Daily Grooming Routine -  500ml
 Product ID: hhc-3764816
 SKU: hhc-3764816
@@ -7,11 +8,16 @@ Slug: tresemme-deep-smoothie-hair-mask-hair-care-product-designed-for-hair-no-f9
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/bf510d2fe70d6e9c1d6f782fd8463912.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/bf510d2fe70d6e9c1d6f782fd8463912.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/fcad0b8ea709d14f4cbfe2458dc0b7ac.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/49828b4418185b9680dd6b0251213685.jpg
 Meta Title: Tresemme Deep Smoothie Hair Mask - Hair Care Product Designed For Ha
 Meta Description: Buy Tresemme Deep Smoothie Hair Mask - Hair Care Product Designed For Hair Nourishment And Daily Grooming Routine - 500ml online in Pakistan from ASM VEO. Hair
 Description: Hair mask is an intensive, deep-conditioning treatment designed to nourish, repair, and hydrate hair much more deeply than a regular daily conditioner.
-Regular Price: 895
-Sale Price: 895
+Wholesale Price: 845
+Regular Price: 1610
+Sale Price: 1285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acrylic Ring Mirror Wall Decor
 Product ID: hhc-2385961
 SKU: hhc-2385961
@@ -7,11 +8,16 @@ Slug: acrylic-ring-mirror-wall-decor-hhc-2385961
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.39.59-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.39.59-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.39.58-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.38.19-AM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.38.19-AM-2.jpeg
 Meta Title: Acrylic Ring Mirror Wall Decor | Buy Online in Pakistan
 Meta Description: Buy Acrylic Ring Mirror Wall Decor online in Pakistan from ASM VEO. Description Features Made of Acrylic material with a smooth surface and good texture, crea C
 Description: Description Features Made of Acrylic material with a smooth surface and good texture, creating a good mirror effect. Extremely lightweight Best work on flat and smooth surfaces. Ideal for gifts and crafts, business gifts, holiday gifts, promotion gifts, and home decorations. Acrylic Ring Golden Matrial Acrylic Thickness 1mm size 30 inches Large size 4.5 inch medium size 3.5 inch small size 3 inch
-Regular Price: 809
-Sale Price: 809
+Wholesale Price: 759
+Regular Price: 1450
+Sale Price: 1161
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Self cleaning hair comb (random color)
 Product ID: hhc-2226499
 SKU: hhc-2226499
@@ -7,11 +8,16 @@ Slug: self-cleaning-hair-comb-random-color-hhc-2226499
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/17115551366ae0f0681c7a0bfffdf5380382f470d5.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/17115551366ae0f0681c7a0bfffdf5380382f470d5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/17115551363648dfa1ee6297d7a8153313bbd401aa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/1711555136ec7e38cb69e5f0b99bb05dc3232c36aa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/1711555136e16c9ed09b116f24c05fcdf609842311.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/17115551363a20d96201d256e97e6226b272b3ff72.jpg
 Meta Title: Self cleaning hair comb (random color) | Buy Online in Pakistan
 Meta Description: Buy Self cleaning hair comb (random color) online in Pakistan from ASM VEO. Self-Cleaning Anti-Static Massage Comb:- Innovative massage particles, each one-pull
 Description: Self-Cleaning Anti-Static Massage Comb:- Innovative massage particles, each one-pull clean massage comb has small round particles, which can massage the scalp and treat the hair gently, providing a comfortable spa-like experience. Ergonomic Comb:- The shape of the Self Cleaning Hairbrush conforms to the ergonomic handle. It has a better carding feeling. Every carding is enjoyable. Easy to Use:- One-pull Clean Massage Comb Just rotate the handle and the airbag will immediately release all hair and debris! The easy-to-use handle ensures that it does not slip out of your hand. Suitable for All Hair Types:- One-pull Clean Massage Comb with Retractable Bristles Gently penetrate and untie even the most stubborn tangles. This comb is perfect for various hair types, including straight, curly, fine, thick, damaged, and even extended hair. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-Regular Price: 453
-Sale Price: 453
+Wholesale Price: 403
+Regular Price: 830
+Sale Price: 664
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

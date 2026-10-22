@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Automatic Electric Water Bottle Pump Dispenser With USB Rechargeable System For Easy One-Touch Water Dispensing At Home, Office And Outdoor Use
 Product ID: hhc-3753636
 SKU: hhc-3753636
@@ -7,11 +8,16 @@ Slug: automatic-electric-water-bottle-pump-dispenser-with-usb-rechargeable-sy-0d
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/54c873cce85b3f9e119cbda9046aa012.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/54c873cce85b3f9e119cbda9046aa012.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/6df2e2f81213119e210c68b7f48e6dd9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/b278434a11831778a4526efc11b2ad91.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/33dcc987d4f0893c09215375ea588347.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/c35cba9f78e3e0bc77345540a9ae38a6.jpg
 Meta Title: Automatic Electric Water Bottle Pump Dispenser With USB Rechargeable
 Meta Description: Buy Automatic Electric Water Bottle Pump Dispenser With USB Rechargeable System For Easy One-Touch Water Dispensing At Home, Office And Outdoor Use online in Pa
 Description: A Convenient USB Rechargeable Electric Water Pump Dispenser Designed For Effortless And Hygienic One-Touch Water Pouring From Large Bottles.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

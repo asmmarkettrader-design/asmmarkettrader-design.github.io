@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Sink Baffle Splash Guard - Double Suction
 Product ID: hhc-3764955
 SKU: hhc-3764955
@@ -7,11 +8,16 @@ Slug: silicone-sink-baffle-splash-guard-double-suction-hhc-3764955
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/59268ba87aee5ee6d374660ed0199c6b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/59268ba87aee5ee6d374660ed0199c6b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/72845f8b30c6d57275921ea27518acb5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/e4c3b4bf9af54e6688655a5fb6862053.jpg
 Meta Title: Silicone Sink Baffle Splash Guard - Double Suction | Buy Online in P
 Meta Description: Buy Silicone Sink Baffle Splash Guard - Double Suction online in Pakistan from ASM VEO. Keep your kitchen counters dry and clean with the Silicone Kitchen Sink
 Description: Keep your kitchen counters dry and clean with the Silicone Kitchen Sink Splash Guard. Featuring a flexible design and secure double suction cups, this durable water barrier prevents splashing while you wash dishes, vegetables, or fruits.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

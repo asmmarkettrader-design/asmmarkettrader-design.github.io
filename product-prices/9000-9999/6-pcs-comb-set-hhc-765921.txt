@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 pcs comb set
 Product ID: hhc-765921
 SKU: hhc-765921
@@ -7,11 +8,16 @@ Slug: 6-pcs-comb-set-hhc-765921
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/5ca2ca1f-3b96-4743-a4dc-100dc9a1545a-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/5ca2ca1f-3b96-4743-a4dc-100dc9a1545a-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/39d29847-920d-4e91-8f99-2fa2dccd8cd1-1.jpeg
 Meta Title: 6 pcs comb set | Buy Online in Pakistan
 Meta Description: Buy 6 pcs comb set online in Pakistan from ASM VEO. Women Hair Accesories - Pack Of 6 Item Type: Hair Styling Accessories Material: A+ Grade P Cash on Delivery,
 Description: Women Hair Accesories - Pack Of 6 Item Type: Hair Styling Accessories Material: A+ Grade Plastic Color: Black Quantity: 1 Set (Includes 6pc)
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

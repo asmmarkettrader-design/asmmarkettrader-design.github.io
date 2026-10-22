@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Star Utility Knife - Durable And Versatile Handheld Cutting Tool Designed For Precision Work, Crafts, Packaging, And General Utility Tasks
 Product ID: hhc-3762144
 SKU: hhc-3762144
@@ -7,11 +8,16 @@ Slug: star-utility-knife-durable-and-versatile-handheld-cutting-tool-designed-a1
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/1ad2f150b1c8c6c4fe8f7c8b273be0df.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/1ad2f150b1c8c6c4fe8f7c8b273be0df.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/4eb35a7c67ab96687797cb3ab554095e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/825e1b12ae8189c816b28d7771072fa8.jpeg
 Meta Title: Star Utility Knife - Durable And Versatile Handheld Cutting Tool Des
 Meta Description: Buy Star Utility Knife - Durable And Versatile Handheld Cutting Tool Designed For Precision Work, Crafts, Packaging, And General Utility Tasks online in Pakista
 Description: The Star Utility Knife Is A Reliable And Versatile Cutting Tool Designed For Precise Performance Across Various Tasks, Crafts, And Daily Utility Needs.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

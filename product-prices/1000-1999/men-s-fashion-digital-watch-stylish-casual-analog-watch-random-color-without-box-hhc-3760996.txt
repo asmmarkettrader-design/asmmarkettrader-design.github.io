@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men's Fashion Digital Watch | Stylish Casual Analog Watch (Random Color Without Box)
 Product ID: hhc-3760996
 SKU: hhc-3760996
@@ -7,11 +8,16 @@ Slug: men-s-fashion-digital-watch-stylish-casual-analog-watch-random-color-witho
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/fd96a07ce765a347f9c2ed636b324468.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/fd96a07ce765a347f9c2ed636b324468.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/18cb381baf8ed4da4647af63fa013a5d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/06c908ac1ab5cce148977b64ae8e81ee.jpeg
 Meta Title: Men's Fashion Digital Watch | Stylish Casual Analog Watch (Random Co
 Meta Description: Buy Men's Fashion Digital Watch | Stylish Casual Analog Watch (Random Color Without Box) online in Pakistan from ASM VEO. Stylish men's wrist watch with a moder
 Description: Stylish men's wrist watch with a modern and elegant design. Made for everyday wear, featuring a comfortable strap and attractive dial. Available in random colors and supplied without a box.
-Regular Price: 396
-Sale Price: 396
+Wholesale Price: 346
+Regular Price: 729
+Sale Price: 579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

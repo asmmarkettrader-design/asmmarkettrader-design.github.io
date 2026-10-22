@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Solar Interaction Wall Lamp Outdoor Motion Sensor Light Solar Powered LED Wall Light Waterproof
 Product ID: hhc-3758175
 SKU: hhc-3758175
@@ -7,11 +8,16 @@ Slug: solar-interaction-wall-lamp-outdoor-motion-sensor-light-solar-powered-l-7b
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/5ea6ec056f225a8e81b451c4c57287e0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/5ea6ec056f225a8e81b451c4c57287e0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/cae21a76d90f6c9d352938f5b734976e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/213ea91dcd54dbd4fa58d967f9076b7d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/fc9b05084a60c63aa10eb9e0328e00ad.jpeg
 Meta Title: Solar Interaction Wall Lamp Outdoor Motion Sensor Light Solar Powere
 Meta Description: Buy Solar Interaction Wall Lamp Outdoor Motion Sensor Light Solar Powered LED Wall Light Waterproof online in Pakistan from ASM VEO. Solar-powered wall lamp wit
 Description: Solar-powered wall lamp with motion sensor and automatic lighting, ideal for outdoor security and energy saving.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

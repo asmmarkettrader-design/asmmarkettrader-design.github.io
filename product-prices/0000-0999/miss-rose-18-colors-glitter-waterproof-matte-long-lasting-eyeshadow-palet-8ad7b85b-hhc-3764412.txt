@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Miss Rose 18 Colors Glitter Waterproof Matte Long Lasting Eyeshadow Palette Durable Stylish Practical Choice For Professional And Daily Makeup
 Product ID: hhc-3764412
 SKU: hhc-3764412
@@ -7,11 +8,16 @@ Slug: miss-rose-18-colors-glitter-waterproof-matte-long-lasting-eyeshadow-pal-8a
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Miss Rose 18 Colors Glitter Waterproof Matte Long Lasting Eyeshadow
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/c0bbf69fb00dec46ce24a303ea67cf6c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/c0bbf69fb00dec46ce24a303ea67cf6c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/f7302c55a05c2d3fae4a1bf7d4964ec7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/b005cc1cfad5384269fbc70ceb1d69fc.jpg
+Meta Title: Miss Rose 18 Colors Glitter Waterproof Matte Long Lasting Eyeshadow 
 Meta Description: Buy Miss Rose 18 Colors Glitter Waterproof Matte Long Lasting Eyeshadow Palette Durable Stylish Practical Choice For Professional And Daily Makeup online in Pak
 Description: Miss Rose 18 Colors Glitter Waterproof Matte Long Lasting Eyeshadow Palette Durable Stylish Practical Choice For Professional And Daily Makeup.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

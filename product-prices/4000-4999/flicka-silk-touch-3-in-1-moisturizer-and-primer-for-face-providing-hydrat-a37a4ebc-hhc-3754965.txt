@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flicka Silk Touch 3 In 1 Moisturizer And Primer For Face Providing Hydrating Care Smooth Texture Comfortable Use
 Product ID: hhc-3754965
 SKU: hhc-3754965
@@ -7,11 +8,16 @@ Slug: flicka-silk-touch-3-in-1-moisturizer-and-primer-for-face-providing-hydr-a3
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/d5ed9f034176a76072c0ccfaade499c1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/d5ed9f034176a76072c0ccfaade499c1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/964956df75893eee50ae25a3e3fc98fc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/e12562e56fbdd9f753bdb62772d849ee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/342bd4e2d041ad5b947a9248a9d3e569.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/15df707970aa7a1ea16063a55b7d8a6c.jpeg
 Meta Title: Flicka Silk Touch 3 In 1 Moisturizer And Primer For Face Providing H
 Meta Description: Buy Flicka Silk Touch 3 In 1 Moisturizer And Primer For Face Providing Hydrating Care Smooth Texture Comfortable Use online in Pakistan from ASM VEO. Flicka Sil
 Description: Flicka Silk Touch 3 In 1 Moisturizer And Primer For Face Offering Hydrating Care Smooth Texture Reliable Performance And Stylish Daily Skincare Support
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

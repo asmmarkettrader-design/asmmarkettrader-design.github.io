@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Calvin Klein CK One Eau De Toilette Spray Perfume – 100ml / 3.4 FL. OZ.
 Product ID: hhc-3764143
 SKU: hhc-3764143
 Slug: calvin-klein-ck-one-eau-de-toilette-spray-perfume-100ml-3-4-fl-oz-hhc-3764143
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Calvin Klein CK One Eau De Toilette Spray Perfume – 100ml / 3.4 FL.
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/8bccf7d39187ec5a09d51f76f5f252d6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/8bccf7d39187ec5a09d51f76f5f252d6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/b926959d4f0df4b9bc7e8ffb97899cb8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/9f37427407df685e9d8aa8c16ce1231b.jpg
+Meta Title: Calvin Klein CK One Eau De Toilette Spray Perfume – 100ml / 3.4 FL. 
 Meta Description: Buy Calvin Klein CK One Eau De Toilette Spray Perfume – 100ml / 3.4 FL. OZ. online in Pakistan from ASM VEO. An iconic unisex Eau De Toilette fragrance featurin
 Description: An iconic unisex Eau De Toilette fragrance featuring a clean, citrus-fresh aroma. Blends zesty bergamot, green tea, and warm amber in a frosted glass bottle for effortless, everyday all-gender wear.
-Regular Price: 1065
-Sale Price: 1065
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

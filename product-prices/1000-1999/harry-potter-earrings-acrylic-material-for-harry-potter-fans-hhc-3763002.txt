@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Harry Potter Earrings Acrylic Material For Harry Potter Fans
 Product ID: hhc-3763002
 SKU: hhc-3763002
@@ -7,11 +8,16 @@ Slug: harry-potter-earrings-acrylic-material-for-harry-potter-fans-hhc-3763002
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/c5613e9eb048a6f57de059c392eb6a9f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/c5613e9eb048a6f57de059c392eb6a9f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/56853a6e45d018258763803a48024cab.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/bfb0099172d2035404c485dc815fd8f9.jpg
 Meta Title: Harry Potter Earrings Acrylic Material For Harry Potter Fans | Buy O
 Meta Description: Buy Harry Potter Earrings Acrylic Material For Harry Potter Fans online in Pakistan from ASM VEO. These Earrings are specialy made for them who cant wear heavyw
 Description: These Earrings are specialy made for them who cant wear heavyweight earrgins they are very light and no wieght
-Regular Price: 369
-Sale Price: 369
+Wholesale Price: 319
+Regular Price: 688
+Sale Price: 538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

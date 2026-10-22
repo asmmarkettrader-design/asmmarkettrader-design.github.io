@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement
 Product ID: hhc-3752757
 SKU: hhc-3752757
 Slug: organic-moringa-leaf-powder-natural-superfood-for-weight-loss-immunity-820505a2-hhc-3752757
-Category: Groceries
+Category: Health & Wellness
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/2e24c6658f1ece20eba7057f425e8367.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/2e24c6658f1ece20eba7057f425e8367.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/cc104e2d7b5e2f7e087215a6fbb1a7ee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/6e0d2c4ac6cec87605fc9ad2913f8caf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/57777bd5b491ce47750925f6ba0bff92.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/6932eaf272c76688e0398658848c9e20.png
 Meta Title: Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Imm
 Meta Description: Buy Organic Moringa Leaf Powder | Natural Superfood For Weight Loss, Immunity Boost, Energy Support & Height Growth | Refined Herbal Supplement online in Pakist
 Description: Experience The Power Of Organic Moringa Leaf Powder, A Natural Superfood That Promotes Weight Loss, Boosts Immunity, Increases Energy, And Supports Height Growth.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

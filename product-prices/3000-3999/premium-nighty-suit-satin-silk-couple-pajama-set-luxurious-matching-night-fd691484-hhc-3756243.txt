@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Nighty Suit Satin Silk Couple Pajama Set – Luxurious Matching Night Wear for Men & Women (3 Pcs) | SKU: DC-C005
 Product ID: hhc-3756243
 SKU: hhc-3756243
@@ -7,11 +8,16 @@ Slug: premium-nighty-suit-satin-silk-couple-pajama-set-luxurious-matching-nig-fd
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/c72b0664dfa0a85bc4a7a8267097cfac.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/c72b0664dfa0a85bc4a7a8267097cfac.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/e7597f942d1ce77e7a7f2eceb4e8d146.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/8c5be856c6e501e42ff64a096705eeee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/69d7eb2b8ea3833b1910f0aa39ffac20.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/34b9cb339ae6e5274ce0f2d3984ab540.png
 Meta Title: Premium Nighty Suit Satin Silk Couple Pajama Set – Luxurious Matchin
 Meta Description: Buy Premium Nighty Suit Satin Silk Couple Pajama Set – Luxurious Matching Night Wear for Men & Women (3 Pcs) | SKU: DC-C005 online in Pakistan from ASM VEO. Ind
 Description: Indulge in comfort and elegance with this Premium Satin Silk Couple Pajama Set. Crafted for couples who love matching nightwear, this 3-piece set offers a smooth, glossy finish, relaxed fit, and timeless colors—perfect for restful nights and cozy moments together.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

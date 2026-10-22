@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bluetooth Headset with Digital Display & IPX4 Protection
 Product ID: hhc-3762689
 SKU: hhc-3762689
@@ -7,11 +8,16 @@ Slug: bluetooth-headset-with-digital-display-ipx4-protection-hhc-3762689
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/03657896daa42d0abe9447baca856611.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/03657896daa42d0abe9447baca856611.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/dead7e1d160b92edb238698e59f146f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/f92d0296303bf13878915c5abc8945b9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/da060fe615735d88d788369d7f5ff9bb.jpg
 Meta Title: Bluetooth Headset with Digital Display & IPX4 Protection | Buy Onlin
 Meta Description: Buy Bluetooth Headset with Digital Display & IPX4 Protection online in Pakistan from ASM VEO. Bluetooth Headset with Digital Display & IPX4 Protection Connectiv
 Description: Bluetooth Headset with Digital Display & IPX4 Protection Connectivity: Bluetooth V5.0 to V5.4, ~10m range. Battery Life: 6 to 45+ hours playback, 120–300+ hours standby. Charging: 1-2 hours via Type-C or Micro USB. Audio Driver: 10mm–13mm (providing ~90dB–98dB sensitivity). Frequency Response: 20Hz
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Combo Deal Silicon Gloves And Silicon Socks Durable Quality Comfortable Fit Soft Texture Perfect Choice For Skin Care Relaxation Travel And Household Need
 Product ID: hhc-3754016
 SKU: hhc-3754016
@@ -7,11 +8,16 @@ Slug: combo-deal-silicon-gloves-and-silicon-socks-durable-quality-comfortable-1e
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/9810d5377ba007f235a95dfdc2f13665.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/9810d5377ba007f235a95dfdc2f13665.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/d459b1200b7fe4f3f01e87d09c61f13d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/b23e0ed6c761b0b8094bd991191f4d2f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/3f98bf156ecc3c858eeb99d3583deb8e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/a341ab88965772c7e5af4ad784a6dcc0.jpeg
 Meta Title: Combo Deal Silicon Gloves And Silicon Socks Durable Quality Comforta
 Meta Description: Buy Combo Deal Silicon Gloves And Silicon Socks Durable Quality Comfortable Fit Soft Texture Perfect Choice For Skin Care Relaxation Travel And Household Need o
 Description: Combo Deal Silicon Gloves And Silicon Socks Provide Durable Quality Comfortable Fit Soft Texture And Stylish Design
-Regular Price: 739
-Sale Price: 739
+Wholesale Price: 689
+Regular Price: 1320
+Sale Price: 1059
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

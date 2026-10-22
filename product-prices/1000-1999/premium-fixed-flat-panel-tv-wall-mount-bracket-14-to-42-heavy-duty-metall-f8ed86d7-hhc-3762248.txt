@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Fixed Flat Panel TV Wall Mount Bracket (14" To 42") – Heavy Duty Metallic LED/LCD Television Stand For Secure And Reliable Mounting
 Product ID: hhc-3762248
 SKU: hhc-3762248
@@ -7,11 +8,16 @@ Slug: premium-fixed-flat-panel-tv-wall-mount-bracket-14-to-42-heavy-duty-meta-f8
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
-Meta Title: Premium Fixed Flat Panel TV Wall Mount Bracket (14" To 42") – Heavy
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/b6840da383728876c8bb68f7d9fd84d7.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/b6840da383728876c8bb68f7d9fd84d7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/b77ee01a58a3a9f7bde2d71af81a02d0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/95522272eea4b748a14f29de624630ff.jpeg
+Meta Title: Premium Fixed Flat Panel TV Wall Mount Bracket (14" To 42") – Heavy 
 Meta Description: Buy Premium Fixed Flat Panel TV Wall Mount Bracket (14" To 42") – Heavy Duty Metallic LED/LCD Television Stand For Secure And Reliable Mounting online in Pakist
 Description: The Premium Fixed Flat Panel TV Wall Mount Bracket Is A Heavy Duty Metallic Stand Designed To Securely Hold 14 Inch To 42 Inch LED And LCD Televisions.
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

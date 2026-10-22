@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bare Anatomy Rosemary & Rice Water Hair Growth Spray – 200ml | Strengthen & Thicken Hair | Made In India
 Product ID: hhc-3756795
 SKU: hhc-3756795
@@ -7,11 +8,16 @@ Slug: bare-anatomy-rosemary-rice-water-hair-growth-spray-200ml-strengthen-thi-9e
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/dadbc0fef486f85490851f8502e5de6e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/dadbc0fef486f85490851f8502e5de6e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/662f6ce9521e8c515a2f42b6a3c496f7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/1138b51c0eaca938bbb83fdd9be31630.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/96dcf8bab8c93be297648302f8430dc9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/dc420c3f256b23f337dc95a54d44941b.jpeg
 Meta Title: Bare Anatomy Rosemary & Rice Water Hair Growth Spray – 200ml | Stren
 Meta Description: Buy Bare Anatomy Rosemary & Rice Water Hair Growth Spray – 200ml | Strengthen & Thicken Hair | Made In India online in Pakistan from ASM VEO. Nourish and revita
 Description: Nourish and revitalize your hair with Bare Anatomy Rosemary & Rice Water Hair Growth Spray. Formulated to control hair fall, boost thickness, and promote healthy hair growth. Suitable for all hair types.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

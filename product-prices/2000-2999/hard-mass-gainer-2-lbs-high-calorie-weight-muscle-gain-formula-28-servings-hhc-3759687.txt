@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hard Mass Gainer 2 lbs – High Calorie Weight & Muscle Gain Formula | 28 Servings
 Product ID: hhc-3759687
 SKU: hhc-3759687
@@ -7,11 +8,16 @@ Slug: hard-mass-gainer-2-lbs-high-calorie-weight-muscle-gain-formula-28-servings
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/f5999615ea2863ee998e5bdfe4a0da96.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/f5999615ea2863ee998e5bdfe4a0da96.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/61e7381ae07c8b17829fce20da6b90d2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/8a7c4ca1525408093af0534213683a55.jpeg
 Meta Title: Hard Mass Gainer 2 lbs – High Calorie Weight & Muscle Gain Formula |
 Meta Description: Buy Hard Mass Gainer 2 lbs – High Calorie Weight & Muscle Gain Formula | 28 Servings online in Pakistan from ASM VEO. Hard Mass Gainer 2 lbs is a high-calorie m
 Description: Hard Mass Gainer 2 lbs is a high-calorie muscle building supplement designed to support healthy weight gain, strength, and recovery. With 28 servings per pack, it delivers a balanced blend of protein, carbohydrates, and essential nutrients ideal for athletes, gym beginners, and hard gainers.
-Regular Price: 2865
-Sale Price: 2865
+Wholesale Price: 2865
+Regular Price: 5060
+Sale Price: 4048
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yayashi SP 4 Ultra Whitening Toothpaste – Strong Stain Removal & Fresh Breath Daily Oral Care (120g)
 Product ID: hhc-3755457
 SKU: hhc-3755457
@@ -7,11 +8,16 @@ Slug: yayashi-sp-4-ultra-whitening-toothpaste-strong-stain-removal-fresh-brea-02
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/40b0a60ec8579e9f201d451dd71b2528.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/40b0a60ec8579e9f201d451dd71b2528.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/ecf93fe2bffb5e3133a2598da22a53d7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/5dc93e883f6d192371ebb54bc673f2ab.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/9052ce399a6d49a6ed517ca663e72674.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/5a74810122ebeb8691c734ab2ff2f6fc.jpg
 Meta Title: Yayashi SP 4 Ultra Whitening Toothpaste – Strong Stain Removal & Fre
 Meta Description: Buy Yayashi SP 4 Ultra Whitening Toothpaste – Strong Stain Removal & Fresh Breath Daily Oral Care (120g) online in Pakistan from ASM VEO. Yayashi SP 4 Ultra Whi
 Description: Yayashi SP 4 Ultra Whitening Toothpaste delivers powerful stain removal, long-lasting fresh breath, and daily oral care support. Its advanced whitening formula helps brighten teeth while keeping your mouth clean and refreshed.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

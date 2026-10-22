@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 15 in 1 Makeup Deal Makeup Fixer  Lip Glose  Concealer  Primer  Foundation and may more
 Product ID: hhc-2324283
 SKU: hhc-2324283
@@ -7,11 +8,16 @@ Slug: 15-in-1-makeup-deal-makeup-fixer-lip-glose-concealer-primer-foundation-ef8
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-15-at-11.46.42-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-15-at-11.46.42-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/6O.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/1-144.webp
 Meta Title: 15 in 1 Makeup Deal Makeup Fixer Lip Glose Concealer Primer Foundati
 Meta Description: Buy 15 in 1 Makeup Deal Makeup Fixer Lip Glose Concealer Primer Foundation and may more online in Pakistan from ASM VEO. product details15 in 1 Makeup DealMakeu
 Description: product details15 in 1 Makeup DealMakeup FixerLip GloseConcealerPrimerFoundationLipstickBeauty BlenderLip Pencil 2Eyeliner3 in 1 lip PenPen CakeLose PowderHandi BaseTv StickSome products brand can be Random depends upon availability [video width="720" height="1280" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2024-11-27-at-11.32.11-AM.mp4"][/video] [video width="720" height="1280" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2024-11-15-at-11.46.43-PM.mp4"][/video]
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

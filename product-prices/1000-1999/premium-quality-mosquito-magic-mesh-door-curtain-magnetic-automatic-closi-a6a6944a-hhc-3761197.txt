@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Quality Mosquito Magic Mesh Door Curtain | Magnetic Automatic Closing Insect Screen | Easy Install Fly & Mosquito Net for Home
 Product ID: hhc-3761197
 SKU: hhc-3761197
@@ -7,11 +8,16 @@ Slug: premium-quality-mosquito-magic-mesh-door-curtain-magnetic-automatic-clo-a6
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/8383443bad25a0ecd28af472e1643393.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/8383443bad25a0ecd28af472e1643393.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/b938f6544b4f8fa8e5bf005b39ae74cf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/22c98313d466b1681a3cfa17bc566537.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/4664ede156f863996ff0d270ebf237d1.jpeg
 Meta Title: Premium Quality Mosquito Magic Mesh Door Curtain | Magnetic Automati
 Meta Description: Buy Premium Quality Mosquito Magic Mesh Door Curtain | Magnetic Automatic Closing Insect Screen | Easy Install Fly & Mosquito Net for Home online in Pakistan fr
 Description: Keep mosquitoes, flies, and other insects outside with the Premium Quality Mosquito Magic Mesh. Featuring strong magnetic closure, durable mesh fabric, and a tool-free installation, it allows fresh air to flow while protecting your home from unwanted bugs.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

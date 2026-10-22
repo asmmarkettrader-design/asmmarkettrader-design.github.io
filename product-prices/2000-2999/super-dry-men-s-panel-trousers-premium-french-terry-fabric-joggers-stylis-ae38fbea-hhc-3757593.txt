@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Super Dry Men’s Panel Trousers | Premium French Terry Fabric Joggers | Stylish Contrast Panel Slim-Fit Sweatpants for Gym & Casual Wear
 Product ID: hhc-3757593
 SKU: hhc-3757593
@@ -7,11 +8,16 @@ Slug: super-dry-men-s-panel-trousers-premium-french-terry-fabric-joggers-styl-ae
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/904e64688f3a48d81e99febf5aa9fe65.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/904e64688f3a48d81e99febf5aa9fe65.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/21fe4a06579a90c4ab51d44ae03fca12.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/519c3503a9b278a5a6a536f7d0044396.jpeg
 Meta Title: Super Dry Men’s Panel Trousers | Premium French Terry Fabric Joggers
 Meta Description: Buy Super Dry Men’s Panel Trousers | Premium French Terry Fabric Joggers | Stylish Contrast Panel Slim-Fit Sweatpants for Gym & Casual Wear online in Pakistan f
 Description: Level up your comfort and style with these Super Dry Panel Trousers. Crafted from high-quality French Terry fabric, these trousers feature a modern contrast panel design and a comfortable adjustable fit. Perfect for gym sessions, morning runs, or a relaxed casual day out.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

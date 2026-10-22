@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Single Pcs Stylish & Comfortable Long Silk Nightgown - Free Size (SKU R-002)
 Product ID: hhc-3759129
 SKU: hhc-3759129
@@ -7,11 +8,16 @@ Slug: single-pcs-stylish-comfortable-long-silk-nightgown-free-size-sku-r-002-hhc
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/ee6a1b8ff8f48acf6676debd3de05d81.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/ee6a1b8ff8f48acf6676debd3de05d81.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/0c7d1e9f692af153ce1fbf1e4611ac99.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/6f9f1708704a654e73529ed087242ff4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/28d27b5f26009446f42fc48a7439b373.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/2c89f0d24bda340f12623185ceb4161c.jpeg
 Meta Title: Single Pcs Stylish & Comfortable Long Silk Nightgown - Free Size (SK
 Meta Description: Buy Single Pcs Stylish & Comfortable Long Silk Nightgown - Free Size (SKU R-002) online in Pakistan from ASM VEO. Single Pcs Stylish & Comfortable Long Silk Nig
 Description: Single Pcs Stylish & Comfortable Long Silk Nightgown - Free Size
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

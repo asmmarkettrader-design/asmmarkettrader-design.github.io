@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Maybelline Superstay Lumi Matte Foundation 220 - Beauty Accessory Designed For Makeup Application And Daily Skincare Routine
 Product ID: hhc-3765076
 SKU: hhc-3765076
@@ -7,11 +8,16 @@ Slug: maybelline-superstay-lumi-matte-foundation-220-beauty-accessory-designe-9c
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/be25d99f7775a2e4996287e4bf95f7d8.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/be25d99f7775a2e4996287e4bf95f7d8.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/039351ec45d84a54ed2687f73ac4b86a.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/b15a945fa8b2f862dd3d609946ed9887.jfif
 Meta Title: Maybelline Superstay Lumi Matte Foundation 220 - Beauty Accessory De
 Meta Description: Buy Maybelline Superstay Lumi Matte Foundation 220 - Beauty Accessory Designed For Makeup Application And Daily Skincare Routine online in Pakistan from ASM VEO
 Description: This Maybelline Superstay Lumi Matte Foundation 220 Provides A Reliable Solution For Beauty Accessories And Routine Makeup Application Needs. Formulated To Deliver Application Benefits While Supporting Maybelline Superstay Lumi Matte Foundation 220 Utility, It Fits Seamlessly Into Your Regular Makeup Application Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Makeup Application Requirements, This Maybelline Superstay Lumi Matte Foundation 220 Serves As An Essential Beauty Accessory For Daily Life.Key FeaturesMaybelline Superstay Lumi Matte Foundation 220 Formulated For Beauty AccessoriesDelivers Makeup Application And Supports Daily Skincare UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Makeup Application And Skincare RoutinesDesigned For Easy Operation And Convenient UseEssential Beauty Accessory For Everyday Maintenance
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

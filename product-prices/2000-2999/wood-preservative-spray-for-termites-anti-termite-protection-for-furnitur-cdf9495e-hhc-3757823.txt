@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wood Preservative Spray for Termites | Anti-Termite Protection for Furniture & Wooden Surfaces (500ML)
 Product ID: hhc-3757823
 SKU: hhc-3757823
@@ -7,11 +8,16 @@ Slug: wood-preservative-spray-for-termites-anti-termite-protection-for-furnit-cd
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/70f05458738edcf7bc2f7652c1c9ce5c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/70f05458738edcf7bc2f7652c1c9ce5c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/0c333d5ed7ecec042429f3845076cbf0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/a3fb11f325fd310c07091f57daf1076d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/e327eb503f4898d613ebbf570fc57287.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/6ff555baf1f3bcf189f4daec57eb1f26.jpeg
 Meta Title: Wood Preservative Spray for Termites | Anti-Termite Protection for F
 Meta Description: Buy Wood Preservative Spray for Termites | Anti-Termite Protection for Furniture & Wooden Surfaces (500ML) online in Pakistan from ASM VEO. Effective anti-termi
 Description: Effective anti-termite wood preservative spray that protects furniture and wooden surfaces from termites, insects, and damage.
-Regular Price: 1344
-Sale Price: 1344
+Wholesale Price: 1294
+Regular Price: 2370
+Sale Price: 1897
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

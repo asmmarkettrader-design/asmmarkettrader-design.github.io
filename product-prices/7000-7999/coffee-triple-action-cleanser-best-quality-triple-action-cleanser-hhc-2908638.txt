@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Coffee Triple Action Cleanser | Best Quality Triple Action Cleanser
 Product ID: hhc-2908638
 SKU: hhc-2908638
@@ -7,11 +8,16 @@ Slug: coffee-triple-action-cleanser-best-quality-triple-action-cleanser-hhc-2908
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Coffee2tripleaction-moontouch.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Coffee2tripleaction-moontouch.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/CoffeeTripleAction-moontouch.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsAppImage2023-02-21at7.11.28PM.jpg
 Meta Title: Coffee Triple Action Cleanser | Best Quality Triple Action Cleanser
 Meta Description: Buy Coffee Triple Action Cleanser | Best Quality Triple Action Cleanser online in Pakistan from ASM VEO. Coffee Triple Action Cleanser | Best Quality Triple Act
 Description: Coffee Triple Action Cleanser | Best Quality Triple Action Cleanser Coffee Triple Action Cleanser is a premium skincare product designed to provide a deep and refreshing cleanse with its unique triple-action formula. Infused with natural coffee extracts, it effectively removes dirt, excess oil, and impurities while exfoliating and rejuvenating the skin. This cleanser not only cleanses but also revitalizes the skin, leaving it soft, smooth, and refreshed. Ideal for all skin types, it helps maintain a healthy glow, making it the perfect addition to your daily skincare routine. Experience the best in quality and care with this powerful yet gentle cleanser.
-Regular Price: 604
-Sale Price: 604
+Wholesale Price: 554
+Regular Price: 1080
+Sale Price: 863
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

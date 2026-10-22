@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: TOUCH LAMP PORTABLE SPEAKER Bluetooth Speaker | Smart Touch Night Light Desk Lamp Color Changing
 Product ID: hhc-2344387
 SKU: hhc-2344387
@@ -7,11 +8,16 @@ Slug: touch-lamp-portable-speaker-bluetooth-speaker-smart-touch-night-light-d-d2
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/1bd8cdb3586b1c43715220669df92130.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/1bd8cdb3586b1c43715220669df92130.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/3586b1c43715220669df92130.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/76c2ea9d76f23356a754518554961aff.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/d642fcfe658295f73a558b6222a76ed6.jpeg
 Meta Title: TOUCH LAMP PORTABLE SPEAKER Bluetooth Speaker | Smart Touch Night Li
 Meta Description: Buy TOUCH LAMP PORTABLE SPEAKER Bluetooth Speaker | Smart Touch Night Light Desk Lamp Color Changing online in Pakistan from ASM VEO. Sixonic Portable, Recharge
 Description: Sixonic Portable, Rechargeable, Multi-Functional SpeakerTouch FeatureMulti-Colors FeatureLamp Light FeatureBluetooth FeatureMicro SD Card, USB, and Aux Line Input SupportedRechargeable Battery (1500 mAh)Power Supply: DC 5V /500mABattery: DC 3.7 VFrequency: 50HZ~20KHZProduct Size: (L) x (W) 4 x 5 inchTouch Lamp Bluetooth Speaker Wireless Portable Bluetooth Touch Color Control LED Lamp
-Regular Price: 1288
-Sale Price: 1288
+Wholesale Price: 1238
+Regular Price: 2270
+Sale Price: 1818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

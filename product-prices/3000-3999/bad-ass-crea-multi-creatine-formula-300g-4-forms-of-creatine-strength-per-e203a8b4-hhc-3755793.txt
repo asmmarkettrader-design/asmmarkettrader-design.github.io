@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BAD ASS CREA Multi‑Creatine Formula 300g | 4 Forms of Creatine | Strength & Performance Support
 Product ID: hhc-3755793
 SKU: hhc-3755793
@@ -7,11 +8,16 @@ Slug: bad-ass-crea-multi-creatine-formula-300g-4-forms-of-creatine-strength-p-e2
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/20550337b181cbf43e1f70751090b702.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/20550337b181cbf43e1f70751090b702.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/acd673cccc7076a869aa5894ca6c1397.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/ef38e06604e0f865eeb9e522345febec.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/67df1f81ee9935ad9a854abb2217350c.jpeg
 Meta Title: BAD ASS CREA Multi‑Creatine Formula 300g | 4 Forms of Creatine | Str
 Meta Description: Buy BAD ASS CREA Multi‑Creatine Formula 300g | 4 Forms of Creatine | Strength & Performance Support online in Pakistan from ASM VEO. BAD ASS CREA, 300g unflavor
 Description: BAD ASS CREA, 300g unflavored. Advanced multi‑creatine formula with 4 types of creatine for strength & performance.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

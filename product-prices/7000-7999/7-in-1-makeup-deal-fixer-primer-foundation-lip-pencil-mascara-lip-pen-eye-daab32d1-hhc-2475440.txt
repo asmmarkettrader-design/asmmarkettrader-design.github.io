@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 in 1 Makeup Deal - Fixer, Primer , Foundation,  Lip pencil,  Mascara,  Lip Pen,  Eyeshadow Pallet
 Product ID: hhc-2475440
 SKU: hhc-2475440
@@ -7,11 +8,16 @@ Slug: 7-in-1-makeup-deal-fixer-primer-foundation-lip-pencil-mascara-lip-pen-e-da
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/product_pic1723575863.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/product_pic1723575863.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/5b_3e21c0c3-6d83-4e26-aef6-333a4a4f7cd6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-11.57.42-PM-600x600-1.jpeg
 Meta Title: 7 in 1 Makeup Deal - Fixer, Primer , Foundation, Lip pencil, Mascara
 Meta Description: Buy 7 in 1 Makeup Deal - Fixer, Primer , Foundation, Lip pencil, Mascara, Lip Pen, Eyeshadow Pallet online in Pakistan from ASM VEO. Package includesMakeup Fixe
 Description: Package includesMakeup Fixer Make-up prime Makeup found Lip pencil Mascara Lip Pen Eyeshadow PalletQuality Copy
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

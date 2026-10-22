@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tuz Long Lasting Liquid Blush Flawless Coverage Natural Tint Easy Blend Smooth Application
 Product ID: hhc-3754315
 SKU: hhc-3754315
@@ -7,11 +8,16 @@ Slug: tuz-long-lasting-liquid-blush-flawless-coverage-natural-tint-easy-blend-af
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/28a47f94b61f678a410d02acb7cd5169.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/28a47f94b61f678a410d02acb7cd5169.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/24ddc757918cc1b9d7a1e4a23c214f0f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/7b73cdca649874e70aa49433eb82b506.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/b8d7cc635de232de8d7572bb54218fd1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/847986d56b87bb229cf7a8a51e3c981c.jpeg
 Meta Title: Tuz Long Lasting Liquid Blush Flawless Coverage Natural Tint Easy Bl
 Meta Description: Buy Tuz Long Lasting Liquid Blush Flawless Coverage Natural Tint Easy Blend Smooth Application online in Pakistan from ASM VEO. Tuz Long Lasting Liquid Blush Pr
 Description: Tuz Long Lasting Liquid Blush Provides Flawless Coverage Natural Tint Easy Blend Smooth Application And Comfortable Wear
-Regular Price: 727
-Sale Price: 727
+Wholesale Price: 677
+Regular Price: 1300
+Sale Price: 1042
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

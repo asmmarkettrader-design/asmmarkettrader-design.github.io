@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: XING YING Gaming RGB Mouse | RGB LED Backlit Wired Gaming Mouse | Ergonomic Computer Mouse for PC and Laptop
 Product ID: hhc-3765344
 SKU: hhc-3765344
@@ -7,11 +8,16 @@ Slug: xing-ying-gaming-rgb-mouse-rgb-led-backlit-wired-gaming-mouse-ergonomic-60
 Category: Electronics
 Subcategory: Computers & Laptops
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/1345c1c5013a9c6d5380094a5e7f7ff0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/1345c1c5013a9c6d5380094a5e7f7ff0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/9ec31cc0d4df11c6f9688ea89a976e76.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/c37167d7995d89a1eac346e65919d195.jpeg
 Meta Title: XING YING Gaming RGB Mouse | RGB LED Backlit Wired Gaming Mouse | Er
 Meta Description: Buy XING YING Gaming RGB Mouse | RGB LED Backlit Wired Gaming Mouse | Ergonomic Computer Mouse for PC and Laptop online in Pakistan from ASM VEO. Xing Ying Gami
 Description: Xing Ying Gaming RGB Mouse. Features ergonomic design with vibrant RGB lighting, precise tracking for gaming, and durable USB wired connectivity. Perfect for PC gamers looking for a budget-friendly gaming mouse.
-Regular Price: 1477
-Sale Price: 1477
+Wholesale Price: 1427
+Regular Price: 2610
+Sale Price: 2086
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

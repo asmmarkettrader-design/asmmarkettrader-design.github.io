@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mustard Hair Oil | Natural Nourishment | Strong, Thick & Shiny Hair | Hair Fall Control & Growth Support | 100Ml
 Product ID: hhc-3756718
 SKU: hhc-3756718
@@ -7,11 +8,16 @@ Slug: mustard-hair-oil-natural-nourishment-strong-thick-shiny-hair-hair-fall-0db
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/deef489de671f0ec0cf3e889b70cbe7b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/deef489de671f0ec0cf3e889b70cbe7b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/355f85c09a6b5cacedc3f406d4baa50e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/715a77886ec75321a2cdd2e8e74c1dcf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/17a592af63d0b6ae5c0a60284fcfd485.jpeg
 Meta Title: Mustard Hair Oil | Natural Nourishment | Strong, Thick & Shiny Hair
 Meta Description: Buy Mustard Hair Oil | Natural Nourishment | Strong, Thick & Shiny Hair | Hair Fall Control & Growth Support | 100Ml online in Pakistan from ASM VEO. 100% natur
 Description: 100% natural mustard hair oil enriched with Vitamin E & fatty acids. Strengthens roots, controls hair fall, reduces dandruff & boosts growth.
-Regular Price: 1511
-Sale Price: 1511
+Wholesale Price: 1461
+Regular Price: 2670
+Sale Price: 2135
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

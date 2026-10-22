@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Huda Beauty Lip Pencil Set - 12 Shades
 Product ID: hhc-3764166
 SKU: hhc-3764166
@@ -7,11 +8,16 @@ Slug: huda-beauty-lip-pencil-set-12-shades-hhc-3764166
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/55a8ff02347e072c4a0ea2493924baaa.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/55a8ff02347e072c4a0ea2493924baaa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/859c49dd7f6c4c83cb98ac512ca4a2a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/60f15833364ccd4b4752a63dda0d3bb4.jpg
 Meta Title: Huda Beauty Lip Pencil Set - 12 Shades | Buy Online in Pakistan
 Meta Description: Buy Huda Beauty Lip Pencil Set - 12 Shades online in Pakistan from ASM VEO. A 12-piece matte lip pencil collection featuring a wide array of nude, pink, red, an
 Description: A 12-piece matte lip pencil collection featuring a wide array of nude, pink, red, and berry shades. Glides on smoothly for precise lip definition, contouring, and long-lasting color wear.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

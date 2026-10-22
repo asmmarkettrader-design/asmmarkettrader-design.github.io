@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wireless Bluetooth Speaker with Bluetooth 5.0 & LED Control
 Product ID: hhc-3762476
 SKU: hhc-3762476
@@ -7,11 +8,16 @@ Slug: wireless-bluetooth-speaker-with-bluetooth-5-0-led-control-hhc-3762476
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/c2a7b76661e9fab80ea748411c27bb74.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/c2a7b76661e9fab80ea748411c27bb74.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/67c53b34c1f7b39d0c92094d6eeef312.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/6f256c42e595bdb10a9a33bedfe40af8.webp
 Meta Title: Wireless Bluetooth Speaker with Bluetooth 5.0 & LED Control | Buy On
 Meta Description: Buy Wireless Bluetooth Speaker with Bluetooth 5.0 & LED Control online in Pakistan from ASM VEO. Enjoy rich stereo sound with deep bass and clear treble for mus
 Description: Enjoy rich stereo sound with deep bass and clear treble for music, movies, and podcasts. Connect easily via Bluetooth 5.0 with a stable range of up to 10 meters. Portable, lightweight design with up to 8–10 hours of rechargeable battery life. Built-in microphone, multiple input options (TF, AUX, USB
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

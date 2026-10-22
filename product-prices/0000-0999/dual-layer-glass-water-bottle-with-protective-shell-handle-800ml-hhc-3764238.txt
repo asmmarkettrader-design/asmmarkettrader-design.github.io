@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dual-Layer Glass Water Bottle with Protective Shell & Handle (800ml)
 Product ID: hhc-3764238
 SKU: hhc-3764238
@@ -7,11 +8,16 @@ Slug: dual-layer-glass-water-bottle-with-protective-shell-handle-800ml-hhc-37642
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/d976cd7a0701e6d47b6ba51815f11c44.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/d976cd7a0701e6d47b6ba51815f11c44.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/f9b5382aaa1166c433ac626a91600526.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/30a0b22b4f0b2e3c39543c6315883143.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/e2622568ae26b19d9623b9b6665a6578.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/9cb8d3b217b2589b50d576625db40c30.webp
 Meta Title: Dual-Layer Glass Water Bottle with Protective Shell & Handle (800ml)
 Meta Description: Buy Dual-Layer Glass Water Bottle with Protective Shell & Handle (800ml) online in Pakistan from ASM VEO. An 800ml travel water bottle featuring a pure glass in
 Description: An 800ml travel water bottle featuring a pure glass inner liner wrapped in a protective, impact-resistant outer shell. Comes equipped with an ergonomic side handle, reusable straw, and leak-proof lid for safe everyday hydration.
-Regular Price: 2404
-Sale Price: 2404
+Wholesale Price: 2404
+Regular Price: 4280
+Sale Price: 3425
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

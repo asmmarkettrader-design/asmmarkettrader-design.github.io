@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Stylish LV Wallet | Elegant Designer Leather Men’s Wallet With Durable Slim Storage
 Product ID: hhc-3757986
 SKU: hhc-3757986
@@ -7,11 +8,16 @@ Slug: premium-stylish-lv-wallet-elegant-designer-leather-men-s-wallet-with-du-d5
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/858adc1fbdbfb55d2887d23fd0121757.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/858adc1fbdbfb55d2887d23fd0121757.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/457881beefbb684f274b9993ba59f6d7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/e3555c3fc2e9c45c57090157f8ad6dd6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/b9d9da5cfb7c331c5177e4c7c033fe99.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/96ef01539ae0dbde61d4cdd06413d585.jpg
 Meta Title: Premium Stylish LV Wallet | Elegant Designer Leather Men’s Wallet Wi
 Meta Description: Buy Premium Stylish LV Wallet | Elegant Designer Leather Men’s Wallet With Durable Slim Storage online in Pakistan from ASM VEO. Premium LV Branded Stylish Leat
 Description: Premium LV Branded Stylish Leather Wallet Offering Elegant Design, Durable Quality, And Practical Slim Storage
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

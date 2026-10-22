@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Earrings Eidi Cards – Pack of 27 Mini Festive Cards without Jewellery (Random Designs)
 Product ID: hhc-3756434
 SKU: hhc-3756434
@@ -7,11 +8,16 @@ Slug: earrings-eidi-cards-pack-of-27-mini-festive-cards-without-jewellery-ran-5b
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/ba45aa09319ef8395da324f7fb68d385.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/ba45aa09319ef8395da324f7fb68d385.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/b4bc42521410cbfa77208175dfb21e48.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/57b1f090cb3db1d247126446adfb41b6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/a58e96a9e40855688caddb6a8e2338a9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/08094fbd4e0b1d7a4d5f69696d3bfd31.jpeg
 Meta Title: Earrings Eidi Cards – Pack of 27 Mini Festive Cards without Jeweller
 Meta Description: Buy Earrings Eidi Cards – Pack of 27 Mini Festive Cards without Jewellery (Random Designs) online in Pakistan from ASM VEO. Celebrate Eid in style with this Pac
 Description: Celebrate Eid in style with this Pack of 27 mini Eidi cards specially designed for gifting earrings and small jewelry. Compact in size (approx. 2.7 x 3.7 inches) with random festive designs, perfect for elegant Eidi presentation.
-Regular Price: 488
-Sale Price: 488
+Wholesale Price: 438
+Regular Price: 900
+Sale Price: 717
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

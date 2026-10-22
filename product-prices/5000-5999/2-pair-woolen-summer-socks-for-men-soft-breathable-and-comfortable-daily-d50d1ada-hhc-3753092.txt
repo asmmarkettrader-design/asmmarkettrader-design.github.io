@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 Pair Woolen Summer Socks For Men – Soft, Breathable, And Comfortable Daily Wear Socks For All-Season Use (Random Design)
 Product ID: hhc-3753092
 SKU: hhc-3753092
@@ -7,11 +8,16 @@ Slug: 2-pair-woolen-summer-socks-for-men-soft-breathable-and-comfortable-dail-d5
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/d6abd2d34d494135b11df2edde99897e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/d6abd2d34d494135b11df2edde99897e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/5b699d80faa796101c35f46c951b2c6b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/166fb6cd01d1ff824f2343c25e763863.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/990895011778d986d0a0e14a075eb02b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/66a623cfcdf0e0d4c4936c683fa5d269.jpeg
 Meta Title: 2 Pair Woolen Summer Socks For Men – Soft, Breathable, And Comfortab
 Meta Description: Buy 2 Pair Woolen Summer Socks For Men – Soft, Breathable, And Comfortable Daily Wear Socks For All-Season Use (Random Design) online in Pakistan from ASM VEO.
 Description: Pack Of 2 Woolen Summer Socks For Men Featuring Soft, Breathable Fabric And Random Stylish Designs For Everyday Comfort And Durability.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

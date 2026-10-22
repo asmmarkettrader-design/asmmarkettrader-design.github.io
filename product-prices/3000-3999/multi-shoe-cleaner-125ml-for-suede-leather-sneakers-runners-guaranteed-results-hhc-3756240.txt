@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi Shoe Cleaner | 125ml | For Suede, Leather, Sneakers & Runners | Guaranteed Results
 Product ID: hhc-3756240
 SKU: hhc-3756240
@@ -7,11 +8,16 @@ Slug: multi-shoe-cleaner-125ml-for-suede-leather-sneakers-runners-guaranteed-res
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/f028b6313b33893a5e1d6b7259442399.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/f028b6313b33893a5e1d6b7259442399.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/118250f24b2560c6e3eefaa24093b9fc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/abe2237e3beb900a008057dda7b03998.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/c1c9bfda969bc27966c01e85d48c87f7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/9de0f16f134c6c2f5351c818f40c5fbf.png
 Meta Title: Multi Shoe Cleaner | 125ml | For Suede, Leather, Sneakers & Runners
 Meta Description: Buy Multi Shoe Cleaner | 125ml | For Suede, Leather, Sneakers & Runners | Guaranteed Results online in Pakistan from ASM VEO. 125ml Multi Shoe Cleaner for suede
 Description: 125ml Multi Shoe Cleaner for suede, leather, sneakers, and runners. Effective cleaning with 💯 result guarantee.
-Regular Price: 586
-Sale Price: 586
+Wholesale Price: 536
+Regular Price: 1050
+Sale Price: 837
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

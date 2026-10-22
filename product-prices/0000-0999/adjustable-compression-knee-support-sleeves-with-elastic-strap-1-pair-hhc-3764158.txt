@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Adjustable Compression Knee Support Sleeves with Elastic Strap (1 Pair)
 Product ID: hhc-3764158
 SKU: hhc-3764158
@@ -7,11 +8,16 @@ Slug: adjustable-compression-knee-support-sleeves-with-elastic-strap-1-pair-hhc-
 Category: Health & Wellness
 Subcategory: First Aid & Medical Devices
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/335c8cb64921c253f971d000438bb008.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/335c8cb64921c253f971d000438bb008.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/c20a165943ea7bfc109e0e1faedab0c3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/26c1d9c9128fe9193a3841e058ddd4dc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/ed7065fb18b49a296d6a0831f8cc8dc7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/8142d7dd7182bc6063d071c9d76d0fc7.jpg
 Meta Title: Adjustable Compression Knee Support Sleeves with Elastic Strap (1 Pa
 Meta Description: Buy Adjustable Compression Knee Support Sleeves with Elastic Strap (1 Pair) online in Pakistan from ASM VEO. A pair of breathable compression knee sleeves featu
 Description: A pair of breathable compression knee sleeves featuring dual adjustable pressure straps. Designed to relieve joint pressure, provide firm stability, and prevent injury during sports, running, workouts, and daily wear.
-Regular Price: 1230
-Sale Price: 1230
+Wholesale Price: 1180
+Regular Price: 2170
+Sale Price: 1736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

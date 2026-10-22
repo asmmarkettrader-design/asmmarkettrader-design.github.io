@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 30 pcs set box Electric Pedicure Tool Foot Care Hard Dead Cuticle Skin Calluses Remover
 Product ID: hhc-1071988
 SKU: hhc-1071988
@@ -7,11 +8,16 @@ Slug: 30-pcs-set-box-electric-pedicure-tool-foot-care-hard-dead-cuticle-skin-b11
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-08-30-at-5.32.09-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-08-30-at-5.32.09-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-08-30-at-5.32.09-PM.jpeg
 Meta Title: 30 pcs set box Electric Pedicure Tool Foot Care Hard Dead Cuticle Sk
 Meta Description: Buy 30 pcs set box Electric Pedicure Tool Foot Care Hard Dead Cuticle Skin Calluses Remover online in Pakistan from ASM VEO. product details Grinding Foot Exfol
 Description: product details Grinding Foot Exfoliating, Smooth Your Feet Anytime, AnywhereTraps Shaving, Gently Remove The Plantar Skin, Make Your Skin Becomes Soft And Smooth.Perfect For Rough, Dry Areas And Tough Calluses.Kindly refer the product description before buying the product.Package Includes:1 Piece Foot Callus Remover 30 Pieces Head (Probattery operator
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

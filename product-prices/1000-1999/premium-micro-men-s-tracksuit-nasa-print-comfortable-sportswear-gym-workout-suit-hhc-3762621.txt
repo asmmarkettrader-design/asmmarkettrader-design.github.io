@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Micro Men’s Tracksuit Nasa Print – Comfortable Sportswear | Gym & Workout Suit
 Product ID: hhc-3762621
 SKU: hhc-3762621
@@ -7,11 +8,16 @@ Slug: premium-micro-men-s-tracksuit-nasa-print-comfortable-sportswear-gym-workou
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/45cb9f6f7c317b98c642a0ccd809725b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/45cb9f6f7c317b98c642a0ccd809725b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/cb5edfa82e8d25cc0b381e2209c8c92b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/0fece1c03b1e107f20f499606e2f4266.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/a5cf9768b4e4d6b3a0bd024c005f8930.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/ae7e88baa94d0c0815e71d739aa62b17.jpeg
 Meta Title: Premium Micro Men’s Tracksuit Nasa Print – Comfortable Sportswear |
 Meta Description: Buy Premium Micro Men’s Tracksuit Nasa Print – Comfortable Sportswear | Gym & Workout Suit online in Pakistan from ASM VEO. Premium Micro Men’s Tracksuit With N
 Description: Premium Micro Men’s Tracksuit With NASA Print. Includes Shirt And Trouser. Available In M, L, And XL Sizes With Multiple Color Options.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

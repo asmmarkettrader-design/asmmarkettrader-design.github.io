@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 144 PCs nails box colorful and Shiny nails box (Random Color)
 Product ID: hhc-2156160
 SKU: hhc-2156160
@@ -7,11 +8,16 @@ Slug: 144-pcs-nails-box-colorful-and-shiny-nails-box-random-color-hhc-2156160
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.00.43-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.00.43-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.00.43-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.00.42-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.00.42-PM.jpeg
 Meta Title: 144 PCs nails box colorful and Shiny nails box (Random Color) | Buy
 Meta Description: Buy 144 PCs nails box colorful and Shiny nails box (Random Color) online in Pakistan from ASM VEO. 144 PCs nails box Material:Nails Product Type:Color full nail
 Description: 144 PCs nails box Material:Nails Product Type:Color full nails box Package Include: 1 × nails box(144 PCs nails) without glue or sticker [video width="576" height="1024" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Video-2024-10-11-at-4.00.44-PM.mp4"][/video]
-Regular Price: 783
-Sale Price: 783
+Wholesale Price: 733
+Regular Price: 1400
+Sale Price: 1123
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

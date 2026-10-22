@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 16 Colors Diamond Rose Crystal Touch Lamp Bedside Acrylic Usb Rechargeable Table Lamp - With Remote
 Product ID: hhc-2151128
 SKU: hhc-2151128
@@ -7,11 +8,16 @@ Slug: 16-colors-diamond-rose-crystal-touch-lamp-bedside-acrylic-usb-rechargea-bd
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/255.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/255.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/254.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/06/252.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/16767471255781.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/S130082ae473a456a836bed9a6a9a2b59z.jpg_640x640Q90.jpg_1.webp
 Meta Title: 16 Colors Diamond Rose Crystal Touch Lamp Bedside Acrylic Usb Rechar
 Meta Description: Buy 16 Colors Diamond Rose Crystal Touch Lamp Bedside Acrylic Usb Rechargeable Table Lamp - With Remote online in Pakistan from ASM VEO. 16 Colors Diamond Rose
 Description: 16 Colors Diamond Rose Crystal Touch Lamp Bedside Acrylic Usb Rechargeable Table Lamp - With Remote
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

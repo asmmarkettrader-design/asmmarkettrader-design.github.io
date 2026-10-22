@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: iPhone Lightning to Headphone Jack Adapter | Single Handfree Connector for Apple iPhones
 Product ID: hhc-3757858
 SKU: hhc-3757858
@@ -7,11 +8,16 @@ Slug: iphone-lightning-to-headphone-jack-adapter-single-handfree-connector-fo-6f
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/d387dc37fc592a43626beb11dc668ac4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/d387dc37fc592a43626beb11dc668ac4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/40434a76829e944101158b243e956cae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/c4235cc9de5569c13e4cd355af49871e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/5c012af235f3b2c057b09cdd997ad307.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/54eb8a245fc25587b08012a98bb244f9.jpeg
 Meta Title: iPhone Lightning to Headphone Jack Adapter | Single Handfree Connect
 Meta Description: Buy iPhone Lightning to Headphone Jack Adapter | Single Handfree Connector for Apple iPhones online in Pakistan from ASM VEO. Lightning to headphone adapter for
 Description: Lightning to headphone adapter for iPhone. Single connector allows you to use wired handfree/earphones with all Lightning port iPhones. Compact, durable, and easy to use.
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

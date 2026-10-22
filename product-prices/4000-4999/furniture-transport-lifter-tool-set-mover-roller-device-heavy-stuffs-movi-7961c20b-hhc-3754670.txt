@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Furniture Transport Lifter Tool Set | Mover Roller Device | Heavy Stuffs Moving Hand Tools
 Product ID: hhc-3754670
 SKU: hhc-3754670
@@ -7,11 +8,16 @@ Slug: furniture-transport-lifter-tool-set-mover-roller-device-heavy-stuffs-mo-79
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/cf5411256a08d5c206f849fb48fe60d1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/cf5411256a08d5c206f849fb48fe60d1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/121829ad3d85dc2b559b5d5246532311.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/3a8fbdfbb56aa4509d375fcc6b361a8d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/e59d718ff20ab99b51e30ae81fbaa8b6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/ace28368bddac008bf159ccf1473623c.jpg
 Meta Title: Furniture Transport Lifter Tool Set | Mover Roller Device | Heavy St
 Meta Description: Buy Furniture Transport Lifter Tool Set | Mover Roller Device | Heavy Stuffs Moving Hand Tools online in Pakistan from ASM VEO. Furniture transport lifter tool
 Description: Furniture transport lifter tool set with roller device, ideal for moving heavy furniture and household items easily.
-Regular Price: 1401
-Sale Price: 1401
+Wholesale Price: 1351
+Regular Price: 2470
+Sale Price: 1978
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

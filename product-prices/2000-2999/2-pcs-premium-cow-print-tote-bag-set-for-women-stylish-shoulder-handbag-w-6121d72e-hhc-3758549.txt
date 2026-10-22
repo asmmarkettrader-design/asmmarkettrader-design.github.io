@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 Pcs Premium Cow Print Tote Bag Set for Women – Stylish Shoulder Handbag with Matching Pouch
 Product ID: hhc-3758549
 SKU: hhc-3758549
@@ -7,11 +8,16 @@ Slug: 2-pcs-premium-cow-print-tote-bag-set-for-women-stylish-shoulder-handbag-61
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/5b723c5152d21c80ea69483a7d09be33.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/5b723c5152d21c80ea69483a7d09be33.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/7e41f0c53e7d0c76b13638d23a57bd73.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/541d556e7975e3276fadddd4187adc3a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/aaf24868c5ed7fdb3768e1f0436b283a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/99d6a78919f2f51f1d4c008a1a2f1e3b.jpeg
 Meta Title: 2 Pcs Premium Cow Print Tote Bag Set for Women – Stylish Shoulder Ha
 Meta Description: Buy 2 Pcs Premium Cow Print Tote Bag Set for Women – Stylish Shoulder Handbag with Matching Pouch online in Pakistan from ASM VEO. Crafted with a fashionable de
 Description: Crafted with a fashionable design and practical functionality, this handbag set adds a chic touch to any outfit. The matching pouch helps keep small essentials organized, making it both stylish and convenient.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: F3 Mobile Screen Magnifier | Enlarged Mobile Screen Amplifier Large Screen Eyes Protection (Random Color)
 Product ID: hhc-3752981
 SKU: hhc-3752981
@@ -7,11 +8,16 @@ Slug: f3-mobile-screen-magnifier-enlarged-mobile-screen-amplifier-large-scree-37
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/679c83384e7e74ca95e6b07e3ddc5063.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/679c83384e7e74ca95e6b07e3ddc5063.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/2b1174979e7a932fd3fdda6f33d36fe5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/c0c75e1fed86464a49f29c9cdf979009.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/c429309dc7c50115d03b4f7f3836d7b1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/81797e0d4bdcc28418e28faf360fb0c3.jpeg
 Meta Title: F3 Mobile Screen Magnifier | Enlarged Mobile Screen Amplifier Large
 Meta Description: Buy F3 Mobile Screen Magnifier | Enlarged Mobile Screen Amplifier Large Screen Eyes Protection (Random Color) online in Pakistan from ASM VEO. F3 Mobile Screen
 Description: F3 Mobile Screen Magnifier | Enlarged Mobile Screen Amplifier Large Screen Eyes Protection (Random Color)
-Regular Price: 410
-Sale Price: 410
+Wholesale Price: 360
+Regular Price: 750
+Sale Price: 600
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

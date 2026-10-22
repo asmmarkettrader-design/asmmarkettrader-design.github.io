@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 Skin Care Deal | The Ordinary Face Wash Azelaic Acid Suspension 10% &amp; Niacinamide Serum
 Product ID: hhc-3208278
 SKU: hhc-3208278
@@ -7,11 +8,16 @@ Slug: 2-in-1-skin-care-deal-the-ordinary-face-wash-azelaic-acid-suspension-10-20
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-24-at-12.30.06-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-24-at-12.30.06-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-24-at-12.31.34-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-24-at-12.31.35-AM.jpeg
 Meta Title: 2 in 1 Skin Care Deal | The Ordinary Face Wash Azelaic Acid Suspensi
 Meta Description: Buy 2 in 1 Skin Care Deal | The Ordinary Face Wash Azelaic Acid Suspension 10% &amp; Niacinamide Serum online in Pakistan from ASM VEO. 2 in 1 Skin Care Deal |
 Description: 2 in 1 Skin Care Deal | The Ordinary Azelaic Acid Suspension 10% &amp; Niacinamide SerumThe Ordinary Face Wash is a gentle, effective cleanser designed to remove dirt, oil, and impurities without stripping the skin’s natural moisture. This 100ml bottle features a balanced, soothing formula that refreshes the skin while promoting a clean, healthy complexion. Ideal for all skin types, this face wash is free from harsh chemicals, making it a great addition to your daily skincare routine. Its mild texture ensures a smooth, non-drying cleanse, leaving your skin feeling fresh and nourished after every use.The Ordinary face washGentle cleanserDaily face wash100ml face washSkin cleanserAll skin types face washHydrating face washNon-drying cleanserSoothing face washReal Picture of the Product:
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

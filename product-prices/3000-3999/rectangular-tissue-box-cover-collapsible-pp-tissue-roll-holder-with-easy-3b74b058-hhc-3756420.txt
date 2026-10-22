@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rectangular Tissue Box Cover – Collapsible PP Tissue Roll Holder with Easy Top Access
 Product ID: hhc-3756420
 SKU: hhc-3756420
@@ -7,11 +8,16 @@ Slug: rectangular-tissue-box-cover-collapsible-pp-tissue-roll-holder-with-eas-3b
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/d7ded5ab756fce912add22d628139167.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/d7ded5ab756fce912add22d628139167.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/bbe82febbf9c00872914ce03da2755ca.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/0d1aa90e40f203ed6896b306510581ee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/20f79ae449b6d46fb35c046eaf61a72b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/9cb3dfb178c9c84ab37645297be8a582.jpeg
 Meta Title: Rectangular Tissue Box Cover – Collapsible PP Tissue Roll Holder wit
 Meta Description: Buy Rectangular Tissue Box Cover – Collapsible PP Tissue Roll Holder with Easy Top Access online in Pakistan from ASM VEO. Keep your tissues clean, organized, a
 Description: Keep your tissues clean, organized, and easily accessible with this Rectangular Tissue Box Cover. Made from durable pure PP material, this compact and collapsible holder prevents dust buildup while adding a neat touch to any space.
-Regular Price: 573
-Sale Price: 573
+Wholesale Price: 523
+Regular Price: 1020
+Sale Price: 818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Huda Beauty The New Nude Eyeshadow Palette - 18 Pan Ultra-Pigmented Shadow Collection with Mattes
 Product ID: hhc-3754187
 SKU: hhc-3754187
@@ -7,11 +8,16 @@ Slug: huda-beauty-the-new-nude-eyeshadow-palette-18-pan-ultra-pigmented-shado-75
 Category: Events & Gifting
 Subcategory: Smart Watches
 Brand: ASM VEO
-Meta Title: Huda Beauty The New Nude Eyeshadow Palette - 18 Pan Ultra-Pigmented
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/e52dc7e88f81bb98bb07feba24f3ea6a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/e52dc7e88f81bb98bb07feba24f3ea6a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/06/6c69e5fc9b83bdac496ab398cda24689.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/aae64dbe7198ec6962be00f566d97d89.png
+Meta Title: Huda Beauty The New Nude Eyeshadow Palette - 18 Pan Ultra-Pigmented 
 Meta Description: Buy Huda Beauty The New Nude Eyeshadow Palette - 18 Pan Ultra-Pigmented Shadow Collection with Mattes online in Pakistan from ASM VEO. Reinvent your neutral eye
 Description: Reinvent your neutral eye looks with the Huda Beauty New Nude Palette. This 18-shade game-changer features a versatile mix of buttery mattes, transformative duo-chrome shimmers, pressed glitters, and a creamy concealer base, all focused on flattering pink, mauve, and rosy-brown tones.
-Regular Price: 587
-Sale Price: 587
+Wholesale Price: 537
+Regular Price: 1050
+Sale Price: 839
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

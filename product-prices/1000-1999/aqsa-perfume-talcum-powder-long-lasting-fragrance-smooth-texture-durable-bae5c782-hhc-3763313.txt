@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aqsa Perfume Talcum Powder Long Lasting Fragrance Smooth Texture Durable Reliable Practical Choice For Daily Freshness And Comfort | Random Color
 Product ID: hhc-3763313
 SKU: hhc-3763313
@@ -7,11 +8,16 @@ Slug: aqsa-perfume-talcum-powder-long-lasting-fragrance-smooth-texture-durabl-ba
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/3c20ac15d4eb505f3910b43501be4753.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/3c20ac15d4eb505f3910b43501be4753.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/f93889c3fe4961b3166fe74d689b1adf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/90253be2f9d43d3ca89d2909824eb8cd.jpeg
 Meta Title: Aqsa Perfume Talcum Powder Long Lasting Fragrance Smooth Texture Dur
 Meta Description: Buy Aqsa Perfume Talcum Powder Long Lasting Fragrance Smooth Texture Durable Reliable Practical Choice For Daily Freshness And Comfort | Random Color online in
 Description: Aqsa Perfume Talcum Powder Long Lasting Fragrance Smooth Texture Durable Reliable Practical Choice For Daily Freshness And Comfort.
-Regular Price: 980
-Sale Price: 980
+Wholesale Price: 410
+Regular Price: 1290
+Sale Price: 1030
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

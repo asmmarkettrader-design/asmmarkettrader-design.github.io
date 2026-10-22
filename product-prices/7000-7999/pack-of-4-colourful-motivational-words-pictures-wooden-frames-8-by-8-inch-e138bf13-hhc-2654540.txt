@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 4 Colourful Motivational Words Pictures Wooden Frames 8 by 8 inches Size for Kids and girls Room Wall Art Decoration / Sticky Phototiles
 Product ID: hhc-2654540
 SKU: hhc-2654540
@@ -7,11 +8,16 @@ Slug: pack-of-4-colourful-motivational-words-pictures-wooden-frames-8-by-8-in-e1
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/188c75120daee9afbdbfd429fe71dfea.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/188c75120daee9afbdbfd429fe71dfea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/366afa5c98eef6385a999bcfa2d33e1f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/752aac5d1dffa5b0e004eb8b18f5a73b.jpg
 Meta Title: Pack of 4 Colourful Motivational Words Pictures Wooden Frames 8 by 8
 Meta Description: Buy Pack of 4 Colourful Motivational Words Pictures Wooden Frames 8 by 8 inches Size for Kids and girls Room Wall Art Decoration / Sticky Phototiles online in P
 Description: No of Frames: 4Size : 8x8inch each Material: Wooden High quality Sticky tape attached for sticking on the wall. High quality Printing and laminated photos so that Colours wont fade away. Colourful Motivational quotes designs perfect for decorating kids and girls roomAfter Packeging Dimension. Length-Width: (9-12inches)Weight: 800gram
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

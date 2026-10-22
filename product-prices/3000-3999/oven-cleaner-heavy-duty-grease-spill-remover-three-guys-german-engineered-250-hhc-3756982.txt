@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Oven Cleaner – Heavy-Duty Grease & Spill Remover | THREE GUYS - German Engineered (250)
 Product ID: hhc-3756982
 SKU: hhc-3756982
@@ -7,11 +8,16 @@ Slug: oven-cleaner-heavy-duty-grease-spill-remover-three-guys-german-engineered-
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/44a1dd5102aafe9da641a532e69c2175.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/44a1dd5102aafe9da641a532e69c2175.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/2f89192356460c1afb7dde3e3b4033f2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/52878d40fe042ab26a71337e57db03e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/2d46037f37013a598dcc633f46d2b5a9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/3349436ed1563026fbc2e805f7d9f11f.jpg
 Meta Title: Oven Cleaner – Heavy-Duty Grease & Spill Remover | THREE GUYS - Germ
 Meta Description: Buy Oven Cleaner – Heavy-Duty Grease & Spill Remover | THREE GUYS - German Engineered (250) online in Pakistan from ASM VEO. Powerful oven cleaner designed to r
 Description: Powerful oven cleaner designed to remove stubborn grease, burnt food, and tough spills from ovens, grills, and baking trays. The fast-acting formula breaks down baked-on residue, leaving kitchen surfaces clean and hygienic with minimal scrubbing.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

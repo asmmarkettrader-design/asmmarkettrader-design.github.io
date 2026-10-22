@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Hair Straightening Comb Wireless Charging Portable Multifunctional Hair Care Styling Comb (Random Color)
 Product ID: hhc-3757081
 SKU: hhc-3757081
@@ -7,11 +8,16 @@ Slug: mini-hair-straightening-comb-wireless-charging-portable-multifunctional-3b
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/24493913f8a8f34505b039736fedda25.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/24493913f8a8f34505b039736fedda25.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/3957d1f98d2abf6632681a4ebd2d15a3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/8fdc5bcfd12f1145be793fcbe28cca7b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/e8df5520e9de6e13335923a298ce41fa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/c86e76d8320e71618abb0db52da146ef.png
 Meta Title: Mini Hair Straightening Comb Wireless Charging Portable Multifunctio
 Meta Description: Buy Mini Hair Straightening Comb Wireless Charging Portable Multifunctional Hair Care Styling Comb (Random Color) online in Pakistan from ASM VEO. Portable Mini
 Description: Portable Mini Hair Straightening Comb With Wireless Charging Designed For Safe Styling Without Damaging Hair Perfect For Daily Use.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 360° Outdoor Kitchen Lighter – USB Rechargeable Electronic Arc Lighter with Flexible Neck, Safety Lock, Windproof & Eco-Friendly Design (Random Colors)
 Product ID: hhc-3755595
 SKU: hhc-3755595
@@ -7,11 +8,16 @@ Slug: 360-outdoor-kitchen-lighter-usb-rechargeable-electronic-arc-lighter-wit-11
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/493bc1caafa165a82d95c7f8921f9681.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/493bc1caafa165a82d95c7f8921f9681.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/ce4f30021791ea86596a0cd5aef19da0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/5283eb8d40825af8069001167d55ebd6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/e6691ee9c528edca3acecdbb414ec435.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/fe36534c8fe92a882c318f2409b9548d.jpeg
 Meta Title: 360° Outdoor Kitchen Lighter – USB Rechargeable Electronic Arc Light
 Meta Description: Buy 360° Outdoor Kitchen Lighter – USB Rechargeable Electronic Arc Lighter with Flexible Neck, Safety Lock, Windproof & Eco-Friendly Design (Random Colors) onli
 Description: The 360° Outdoor Kitchen Lighter features a flexible rotating neck and windproof electronic arc for safe, effortless lighting. USB rechargeable and eco-friendly, it includes a safety lock for added protection and is perfect for kitchens, BBQs, candles, and outdoor use. (Random colors)
-Regular Price: 465
-Sale Price: 465
+Wholesale Price: 415
+Regular Price: 850
+Sale Price: 682
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

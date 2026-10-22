@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pair Silicone Dishwashing Gloves Durable Quality Comfortable Grip Reliable Performance Easy Cleaning (Random Color)
 Product ID: hhc-3754753
 SKU: hhc-3754753
@@ -7,11 +8,16 @@ Slug: 1-pair-silicone-dishwashing-gloves-durable-quality-comfortable-grip-rel-94
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: 1 Pair Silicone Dishwashing Gloves Durable Quality Comfortable Grip
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/f5b165d7c5011d7a36ff9b9488b73902.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/f5b165d7c5011d7a36ff9b9488b73902.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/66d3d693f1f4b5fe1948fe7bad383787.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/e4c8316ab8fb327875997bcebbf435dd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/8333af071a5f90daba52af179a701ec6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/b7b9305c538edd1f04e0752ff9c48b14.jpg
+Meta Title: 1 Pair Silicone Dishwashing Gloves Durable Quality Comfortable Grip 
 Meta Description: Buy 1 Pair Silicone Dishwashing Gloves Durable Quality Comfortable Grip Reliable Performance Easy Cleaning (Random Color) online in Pakistan from ASM VEO. Silic
 Description: Silicone Dishwashing Gloves Offering Durable Quality Comfortable Grip Reliable Performance And Easy Cleaning
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

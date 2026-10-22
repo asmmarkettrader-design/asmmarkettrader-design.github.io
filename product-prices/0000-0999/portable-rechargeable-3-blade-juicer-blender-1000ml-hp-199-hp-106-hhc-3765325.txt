@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Rechargeable 3-Blade Juicer Blender 1000ml (HP-199/HP-106)
 Product ID: hhc-3765325
 SKU: hhc-3765325
@@ -7,11 +8,16 @@ Slug: portable-rechargeable-3-blade-juicer-blender-1000ml-hp-199-hp-106-hhc-3765
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Portable Rechargeable 3-Blade Juicer Blender 1000ml (HP-199/HP-106)
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/39f7d18b6ca3f7cd4517a65290913a42.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/39f7d18b6ca3f7cd4517a65290913a42.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/837e18f37754154f485ff6dff3ab8efc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/1aabb07add15bed5b758c34687cc726f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/49a96957a65f15ea0cc5480998bc72e4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/841af908acbe097afee71251e4db264f.mp4
+Meta Title: Portable Rechargeable 3-Blade Juicer Blender 1000ml (HP-199/HP-106) 
 Meta Description: Buy Portable Rechargeable 3-Blade Juicer Blender 1000ml (HP-199/HP-106) online in Pakistan from ASM VEO. Portable Rechargeable 3-Blade Juicer Blender 1000ml (HP
 Description: Portable Rechargeable 3-Blade Juicer Blender 1000ml (HP-199/HP-106). Powerful electric juice maker, smoothie mixer with USB charging. Heavy duty personal blender perfect for travel, gym, and office use. 1000ml capacity. Features multiple modes: Juice, Garlic, Crush Ice, and Wash.
-Regular Price: 7920
-Sale Price: 7920
+Wholesale Price: 7920
+Regular Price: 13100
+Sale Price: 10476
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

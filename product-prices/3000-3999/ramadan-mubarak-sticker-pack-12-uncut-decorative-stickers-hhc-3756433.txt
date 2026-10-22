@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ramadan Mubarak Sticker Pack – 12 Uncut Decorative Stickers
 Product ID: hhc-3756433
 SKU: hhc-3756433
@@ -7,11 +8,16 @@ Slug: ramadan-mubarak-sticker-pack-12-uncut-decorative-stickers-hhc-3756433
 Category: Events & Gifting
 Subcategory: Gift Wrapping & Boxes
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/499a0f30f91da63409481586710d892a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/499a0f30f91da63409481586710d892a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/b63bb6522242c08bb089dc5e5288c461.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/7a53a2d63d4ca4f860538cc2e9523f50.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/62ff5404a614c2a825afdb2bd5481724.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/1d01bf4f085661b5d70c0c17784f0c88.jpeg
 Meta Title: Ramadan Mubarak Sticker Pack – 12 Uncut Decorative Stickers | Buy On
 Meta Description: Buy Ramadan Mubarak Sticker Pack – 12 Uncut Decorative Stickers online in Pakistan from ASM VEO. Celebrate the spirit of Ramadan with this beautifully designed
 Description: Celebrate the spirit of Ramadan with this beautifully designed pack of 12 uncut Ramadan Mubarak stickers—perfect for gifts, decorations, and festive crafts.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

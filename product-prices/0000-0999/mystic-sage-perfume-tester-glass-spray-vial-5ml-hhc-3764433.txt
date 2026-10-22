@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mystic Sage Perfume Tester – Glass Spray Vial - 5ml
 Product ID: hhc-3764433
 SKU: hhc-3764433
 Slug: mystic-sage-perfume-tester-glass-spray-vial-5ml-hhc-3764433
-Category: Events & Gifting
+Category: Beauty & Personal Care
 Subcategory: Gift Wrapping & Boxes
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/977a17626cf6f9e1df583e932251eda4.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/977a17626cf6f9e1df583e932251eda4.webp
 Meta Title: Mystic Sage Perfume Tester – Glass Spray Vial - 5ml | Buy Online in
 Meta Description: Buy Mystic Sage Perfume Tester – Glass Spray Vial - 5ml online in Pakistan from ASM VEO. A compact perfume tester vial for the "Mystic Sage" fragrance. It featu
 Description: A compact perfume tester vial for the "Mystic Sage" fragrance. It features a clear cylindrical glass bottle, a black spray pump with a ribbed collar, and a matching smooth black cap.
-Regular Price: 932
-Sale Price: 932
+Wholesale Price: 480
+Regular Price: 1230
+Sale Price: 982
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

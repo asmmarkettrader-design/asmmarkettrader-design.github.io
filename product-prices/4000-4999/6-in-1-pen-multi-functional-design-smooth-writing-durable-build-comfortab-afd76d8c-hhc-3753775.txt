@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 In 1 Pen Multi Functional Design Smooth Writing Durable Build Comfortable Grip Stylish Look Perfect For Office School And Daily Use (Random Color)
 Product ID: hhc-3753775
 SKU: hhc-3753775
@@ -7,11 +8,16 @@ Slug: 6-in-1-pen-multi-functional-design-smooth-writing-durable-build-comfort-af
 Category: Office Supplies
 Subcategory: Pens & Markers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/a3fd421efcdf5c8b25fb1411058422c9.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/a3fd421efcdf5c8b25fb1411058422c9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/34e2237a03416d284fe64f5fd71645b3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/bf81dda1ee7448f0bdfa5cec6daf4aec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/a03ddf4aa4b3218c8956c04dc83744c0.jpeg
 Meta Title: 6 In 1 Pen Multi Functional Design Smooth Writing Durable Build Comf
 Meta Description: Buy 6 In 1 Pen Multi Functional Design Smooth Writing Durable Build Comfortable Grip Stylish Look Perfect For Office School And Daily Use (Random Color) online
 Description: 6 In 1 Pen Provides Multi Functional Design Smooth Writing Durable Build And Comfortable Grip For Daily Use
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

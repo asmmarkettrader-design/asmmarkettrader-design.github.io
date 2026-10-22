@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Car Windscreen Sunshade 130 by 60 CM,For Hatchback ,Small Cars ,,Anti heat material -Universal Car Sun shade 130 by 60 CM
 Product ID: hhc-3757040
 SKU: hhc-3757040
@@ -7,11 +8,16 @@ Slug: universal-car-windscreen-sunshade-130-by-60-cm-for-hatchback-small-cars-61
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
-Meta Title: Universal Car Windscreen Sunshade 130 by 60 CM,For Hatchback ,Small
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/b3541e0d2dff3a2d5312489b60937459.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/b3541e0d2dff3a2d5312489b60937459.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/8e2e09155d4c79d5fc913f7fc85d33a3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/1022a09f6a6d1a9aea51c810d73551bd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/c875d83fa1f5e98b5f5cd44d3d2d082e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/a06fd92519ee8f2b5eff2facaf34b647.png
+Meta Title: Universal Car Windscreen Sunshade 130 by 60 CM,For Hatchback ,Small 
 Meta Description: Buy Universal Car Windscreen Sunshade 130 by 60 CM,For Hatchback ,Small Cars ,,Anti heat material -Universal Car Sun shade 130 by 60 CM online in Pakistan from
 Description: Universal Car Windscreen Sunshade 130 by 60 CM,For Hatchback ,Small Cars ,,Anti heat material -Universal Car Sun shade 130 by 60 CM
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

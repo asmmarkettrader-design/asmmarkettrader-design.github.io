@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MEMO CX07 Magnetic Mobile Phone Cooling Fan 15W RGB Gaming Cooler for Android & iPhone | Silent Semiconductor Cooling Radiator for PUBG, Free Fire & COD Mobile
 Product ID: hhc-3762110
 SKU: hhc-3762110
@@ -7,11 +8,16 @@ Slug: memo-cx07-magnetic-mobile-phone-cooling-fan-15w-rgb-gaming-cooler-for-a-06
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/e976e7334829610d966c056bc6b272ff.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/e976e7334829610d966c056bc6b272ff.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/286284ec62dd748a6ad2187220126ce7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/92c93b8259290c2ba55e1de9fa771faa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/e6770f21d6262204950d23d9bb2f8ec4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/a475a1f3f39a4de78d7fc6c1423f1bc1.jpeg
 Meta Title: MEMO CX07 Magnetic Mobile Phone Cooling Fan 15W RGB Gaming Cooler fo
 Meta Description: Buy MEMO CX07 Magnetic Mobile Phone Cooling Fan 15W RGB Gaming Cooler for Android & iPhone | Silent Semiconductor Cooling Radiator for PUBG, Free Fire & COD Mob
 Description: Keep your smartphone cool during intense gaming sessions with the MEMO CX07 Magnetic Mobile Gaming Cooler. Featuring 15W fast semiconductor cooling, RGB lighting, ultra-quiet operation, and magnetic attachment, it's compatible with Android and iPhone devices for smooth, lag-free gameplay.
-Regular Price: 2852
-Sale Price: 2852
+Wholesale Price: 2852
+Regular Price: 5040
+Sale Price: 4030
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

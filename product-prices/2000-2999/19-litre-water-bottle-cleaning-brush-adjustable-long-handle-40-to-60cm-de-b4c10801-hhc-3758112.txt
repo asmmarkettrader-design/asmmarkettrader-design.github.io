@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 19 Litre Water Bottle Cleaning Brush Adjustable Long Handle 40 to 60cm Deep Cleaning Brush for Gallon Bottles (Random Color)
 Product ID: hhc-3758112
 SKU: hhc-3758112
@@ -7,11 +8,16 @@ Slug: 19-litre-water-bottle-cleaning-brush-adjustable-long-handle-40-to-60cm-b4c
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/2b4f3850882b02c20689c1ca03ec6364.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/2b4f3850882b02c20689c1ca03ec6364.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/e613c76be6173df74ed15b6942c4aea7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/ce6de26098a775d63075c4924910a6f8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/7db5bedbec475d20a51829416fea0cc4.jpeg
 Meta Title: 19 Litre Water Bottle Cleaning Brush Adjustable Long Handle 40 to 60
 Meta Description: Buy 19 Litre Water Bottle Cleaning Brush Adjustable Long Handle 40 to 60cm Deep Cleaning Brush for Gallon Bottles (Random Color) online in Pakistan from ASM VEO
 Description: Adjustable long-handle brush designed for deep cleaning 19L water bottles. Reaches easily inside for effective cleaning.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

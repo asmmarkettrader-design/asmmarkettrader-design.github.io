@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CWH-003 Depilatory Wax Heater Kit with Wax Paper
 Product ID: hhc-3765514
 SKU: hhc-3765514
@@ -7,11 +8,16 @@ Slug: cwh-003-depilatory-wax-heater-kit-with-wax-paper-hhc-3765514
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/bd127d64301b6e6f24f5f6492d02f333.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/bd127d64301b6e6f24f5f6492d02f333.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/03ff4654f04f2049a15bbc3e9fde8ca9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/4a9ba18a345343181dea1f0cdbb872b2.jpeg
 Meta Title: CWH-003 Depilatory Wax Heater Kit with Wax Paper | Buy Online in Pak
 Meta Description: Buy CWH-003 Depilatory Wax Heater Kit with Wax Paper online in Pakistan from ASM VEO. Glamorous CWH-003 Depilatory Wax Heater Kit. Ideal for professional or hom
 Description: Glamorous CWH-003 Depilatory Wax Heater Kit. Ideal for professional or home hair removal. Includes wax heater unit, power cord, and depilatory wax paper strips. Easy, safe, and fast hair removal.
-Regular Price: 1345
-Sale Price: 1345
+Wholesale Price: 1295
+Regular Price: 2370
+Sale Price: 1899
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

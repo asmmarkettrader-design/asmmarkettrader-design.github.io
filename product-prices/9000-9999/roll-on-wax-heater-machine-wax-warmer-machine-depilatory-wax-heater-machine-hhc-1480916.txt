@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Roll On Wax Heater Machine, Wax Warmer Machine, Depilatory Wax Heater Machine
 Product ID: hhc-1480916
 SKU: hhc-1480916
@@ -7,11 +8,16 @@ Slug: roll-on-wax-heater-machine-wax-warmer-machine-depilatory-wax-heater-machin
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/3-12.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/3-12.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/result-4-2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/result-3-3-1.png
 Meta Title: Roll On Wax Heater Machine, Wax Warmer Machine, Depilatory Wax Heate
 Meta Description: Buy Roll On Wax Heater Machine, Wax Warmer Machine, Depilatory Wax Heater Machine online in Pakistan from ASM VEO. Roll On Wax Heater Machine, Wax Warmer Machin
 Description: Roll On Wax Heater Machine, Wax Warmer Machine, Depilatory Wax Heater Machine
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

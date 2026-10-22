@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gift Pack Cotton Mix King Size Bedsheet - 3pc Set
 Product ID: hhc-3765125
 SKU: hhc-3765125
@@ -7,11 +8,16 @@ Slug: gift-pack-cotton-mix-king-size-bedsheet-3pc-set-hhc-3765125
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/d4ca6e1586f13b4ba6cfda17d0149196.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/d4ca6e1586f13b4ba6cfda17d0149196.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/98922ec9842da10e6355d30807e3db66.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/8ecf152dcd6a7c9dd7940c2fe07be14f.jpg
 Meta Title: Gift Pack Cotton Mix King Size Bedsheet - 3pc Set | Buy Online in Pa
 Meta Description: Buy Gift Pack Cotton Mix King Size Bedsheet - 3pc Set online in Pakistan from ASM VEO. Elevate your bedroom luxury or delight a loved one with the Gift Pack Cot
 Description: Elevate your bedroom luxury or delight a loved one with the Gift Pack Cotton Mix King Size Bedsheet 3-Piece Set. Crafted from a durable, ultra-soft cotton blend, this king-size ensemble combines breathable comfort with elegant styling, complete in a premium presentation gift box.
-Regular Price: 1716
-Sale Price: 1716
+Wholesale Price: 1716
+Regular Price: 3120
+Sale Price: 2497
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

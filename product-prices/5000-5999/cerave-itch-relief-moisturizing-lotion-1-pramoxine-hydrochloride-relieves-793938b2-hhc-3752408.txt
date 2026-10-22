@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CeraVe Itch Relief Moisturizing Lotion – 1% Pramoxine Hydrochloride, Relieves Itching & Hydrates Dry Skin, 237ml
 Product ID: hhc-3752408
 SKU: hhc-3752408
@@ -7,11 +8,16 @@ Slug: cerave-itch-relief-moisturizing-lotion-1-pramoxine-hydrochloride-reliev-79
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/bbfaff68ec556b0deec314192a966789.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/bbfaff68ec556b0deec314192a966789.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/a12da47cb7aef5e565c586eb58757bac.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/aa357ea346b708be27da46f6b72af305.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/13742ef330939d982ed43979c02af808.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/e9a65b40fd8afae5c8f7b4ce5df99f24.jpg
 Meta Title: CeraVe Itch Relief Moisturizing Lotion – 1% Pramoxine Hydrochloride,
 Meta Description: Buy CeraVe Itch Relief Moisturizing Lotion – 1% Pramoxine Hydrochloride, Relieves Itching & Hydrates Dry Skin, 237ml online in Pakistan from ASM VEO. CeraVe Itc
 Description: CeraVe Itch Relief Moisturizing Lotion with 1% Pramoxine Hydrochloride provides fast-acting itch relief while hydrating dry skin with 3 essential ceramides.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

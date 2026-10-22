@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luckarm Wireless Digital Doorbell – High Quality & Easy Installation
 Product ID: hhc-3756307
 SKU: hhc-3756307
@@ -7,11 +8,16 @@ Slug: luckarm-wireless-digital-doorbell-high-quality-easy-installation-hhc-37563
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/29fe565da89674c4088aaec6f7ff1c36.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/29fe565da89674c4088aaec6f7ff1c36.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/668f7e10f381de6d6bd2beabfbbc9e4d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/37802ebff21d632ee3c3054417c3f575.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/d3582fb27a498718a2ec56f60a580d0e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/ce135327ab1e3294da08ebfa83e0faed.jpeg
 Meta Title: Luckarm Wireless Digital Doorbell – High Quality & Easy Installation
 Meta Description: Buy Luckarm Wireless Digital Doorbell – High Quality & Easy Installation online in Pakistan from ASM VEO. Luckarm Wireless Digital Doorbell made in China, desig
 Description: Luckarm Wireless Digital Doorbell made in China, designed for clear sound, strong signal range, and easy installation. A reliable and high-quality doorbell for home or office use.
-Regular Price: 1541
-Sale Price: 1541
+Wholesale Price: 1491
+Regular Price: 2720
+Sale Price: 2177
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

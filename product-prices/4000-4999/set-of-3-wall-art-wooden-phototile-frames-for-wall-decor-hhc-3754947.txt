@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Wall Art Wooden Phototile Frames for Wall Decor
 Product ID: hhc-3754947
 SKU: hhc-3754947
@@ -7,11 +8,16 @@ Slug: set-of-3-wall-art-wooden-phototile-frames-for-wall-decor-hhc-3754947
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/80766615e646eaa7b98d14066a824cd3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/80766615e646eaa7b98d14066a824cd3.jpeg
 Meta Title: Set of 3 Wall Art Wooden Phototile Frames for Wall Decor | Buy Onlin
 Meta Description: Buy Set of 3 Wall Art Wooden Phototile Frames for Wall Decor online in Pakistan from ASM VEO. Set of 3 Wall Art Wooden Phototile Frames for Wall Decor Cash on D
 Description: Set of 3 Wall Art Wooden Phototile Frames for Wall Decor
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

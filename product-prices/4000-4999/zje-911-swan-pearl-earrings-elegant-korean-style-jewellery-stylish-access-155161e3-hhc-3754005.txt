@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ZJE-911 Swan Pearl Earrings – Elegant Korean Style Jewellery , Stylish Accessory for Women
 Product ID: hhc-3754005
 SKU: hhc-3754005
@@ -7,11 +8,16 @@ Slug: zje-911-swan-pearl-earrings-elegant-korean-style-jewellery-stylish-acce-15
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/12ff5506f68cf59ca752cd9d4da6fb24.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/12ff5506f68cf59ca752cd9d4da6fb24.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/c92299dbb5461fde6ddcaa9299b11759.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/be267e93cc5bcc12b8ca8afcf6dd4996.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/c6ffce6a80f84ce7fb3977f2c1eeec8d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/d8ce38df2e0d01d8f35abf989f378c3f.jpeg
 Meta Title: ZJE-911 Swan Pearl Earrings – Elegant Korean Style Jewellery , Styli
 Meta Description: Buy ZJE-911 Swan Pearl Earrings – Elegant Korean Style Jewellery , Stylish Accessory for Women online in Pakistan from ASM VEO. ZJE-911 swan pearl earrings, sty
 Description: ZJE-911 swan pearl earrings, stylish design for women, perfect for fashion and daily wear.
-Regular Price: 411
-Sale Price: 411
+Wholesale Price: 361
+Regular Price: 752
+Sale Price: 602
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

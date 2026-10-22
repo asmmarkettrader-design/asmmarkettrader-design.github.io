@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Intense Oud (Inspired by Ameer al Oud) ( 50ML)
 Product ID: hhc-2143319
 SKU: hhc-2143319
@@ -7,11 +8,16 @@ Slug: intense-oud-inspired-by-ameer-al-oud-50ml-hhc-2143319
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/ee1ef2a2bff894ced61528a2ce2e4e1c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/ee1ef2a2bff894ced61528a2ce2e4e1c.jpeg
 Meta Title: Intense Oud (Inspired by Ameer al Oud) ( 50ML) | Buy Online in Pakis
 Meta Description: Buy Intense Oud (Inspired by Ameer al Oud) ( 50ML) online in Pakistan from ASM VEO. Size: 50ML Immerse yourself in the rich, opulent world of Intense Oud, a fra
 Description: Size: 50ML Immerse yourself in the rich, opulent world of Intense Oud, a fragrance that epitomizes luxury and tradition. This exquisite scent is a tribute to the timeless allure of oud, blended with the warmth of amber and the depth of smoky incense. Intense Oud opens with a captivating burst of spicy notes, leading into a heart of pure oud, balanced by the sweetness of vanilla and the earthiness of patchouli. The fragrance settles into a deep, woody base that lingers with an aura of regal elegance and mystique. Perfect for those who appreciate classic oriental fragrances, Intense Oud leaves a lasting impression of sophistication and grandeur. Main Accords: Woody, Oud, Vanilla, Sweet, Amber, Musky
-Regular Price: 2834
-Sale Price: 2834
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

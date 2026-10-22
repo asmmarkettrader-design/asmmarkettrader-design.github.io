@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Balebaily Long Wallet Slim Multi Pocket PU Leather Design
 Product ID: hhc-3763805
 SKU: hhc-3763805
@@ -7,11 +8,16 @@ Slug: balebaily-long-wallet-slim-multi-pocket-pu-leather-design-hhc-3763805
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/d8584be71bf4257b58311b99c4dcd262.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/d8584be71bf4257b58311b99c4dcd262.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/dd83aefea76cff8e9631209b4c487001.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/3ae9fe7f790bf50f43a2ff188cbad816.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/b4839304c91c7b2fd2a792ac137e4673.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/8b8a9aec83c2c6475a2c4156b75c9ac0.jpeg
 Meta Title: Balebaily Long Wallet Slim Multi Pocket PU Leather Design | Buy Onli
 Meta Description: Buy Balebaily Long Wallet Slim Multi Pocket PU Leather Design online in Pakistan from ASM VEO. Balebaily Long Wallet Features Slim Multi Pocket Design Crafted F
 Description: Balebaily Long Wallet Features Slim Multi Pocket Design Crafted From Durable PU Leather.
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

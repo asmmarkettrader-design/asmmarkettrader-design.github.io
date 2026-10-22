@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 8 Pcs Professional Toolset With Storage Box - Tool Set Designed For Hardware Maintenance And Daily Repair Routine
 Product ID: hhc-3764268
 SKU: hhc-3764268
@@ -7,11 +8,16 @@ Slug: 8-pcs-professional-toolset-with-storage-box-tool-set-designed-for-hardw-a2
 Category: Tools & DIY
 Subcategory: Power Tools
 Brand: ASM VEO
-Meta Title: 8 Pcs Professional Toolset With Storage Box - Tool Set Designed For
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/136512cb647ede956ff3f732d3e86e5b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/136512cb647ede956ff3f732d3e86e5b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/8de90c66e50d36b29a4b7e1dc0f5aa24.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/92832290c915120412f8f38d52400551.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/426cb1d77dcc36dc9c48081f8ae1105e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/ed7c662a488ec94399ebff821c16e6fb.jpg
+Meta Title: 8 Pcs Professional Toolset With Storage Box - Tool Set Designed For 
 Meta Description: Buy 8 Pcs Professional Toolset With Storage Box - Tool Set Designed For Hardware Maintenance And Daily Repair Routine online in Pakistan from ASM VEO. The 8 Pcs
 Description: The 8 Pcs Professional Toolset With Storage Box Is A Tool Set Formulated To Help Provide Hardware Maintenance And Daily Repair Utility During Use.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Easy Spin Magical Mop Set with Steel Bucket | 360 Degree Rotating Microfiber Mop Head | Home & Office Floor Cleaning Tool
 Product ID: hhc-3762494
 SKU: hhc-3762494
@@ -7,11 +8,16 @@ Slug: easy-spin-magical-mop-set-with-steel-bucket-360-degree-rotating-microfi-db
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/e3708a36c5f6fda673e4fb9b96d26216.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/e3708a36c5f6fda673e4fb9b96d26216.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/40fa3bf495d6e28fb3da80cd2a51953d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/6edf0e9cf9eb40b9ddbf3b35ef730db7.jpg
 Meta Title: Easy Spin Magical Mop Set with Steel Bucket | 360 Degree Rotating Mi
 Meta Description: Buy Easy Spin Magical Mop Set with Steel Bucket | 360 Degree Rotating Microfiber Mop Head | Home & Office Floor Cleaning Tool online in Pakistan from ASM VEO. M
 Description: Make household cleaning effortless with the Easy Spin Magical Mop Set. Designed with a sturdy steel bucket and a 360-degree rotating microfiber mop head, this mop reaches corners, under furniture, and hard-to-clean areas with ease. The highly absorbent microfiber material effectively captures dust,
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

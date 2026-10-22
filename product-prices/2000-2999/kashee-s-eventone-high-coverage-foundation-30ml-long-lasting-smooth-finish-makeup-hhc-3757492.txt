@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashee’s Eventone High Coverage Foundation 30ml Long Lasting Smooth Finish Makeup
 Product ID: hhc-3757492
 SKU: hhc-3757492
@@ -7,11 +8,16 @@ Slug: kashee-s-eventone-high-coverage-foundation-30ml-long-lasting-smooth-fin-3c
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Kashee’s Eventone High Coverage Foundation 30ml Long Lasting Smooth
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/22552eb93eb72d60a8b0810e1ab6da3d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/22552eb93eb72d60a8b0810e1ab6da3d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/01bc75d9b37d9dfd32415a77c4375ad6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/f1678d7b5e7b5bf014a9a65065af8e5e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/e2dd6f6c419f04a7ced9e964587c1536.jpeg
+Meta Title: Kashee’s Eventone High Coverage Foundation 30ml Long Lasting Smooth 
 Meta Description: Buy Kashee’s Eventone High Coverage Foundation 30ml Long Lasting Smooth Finish Makeup online in Pakistan from ASM VEO. Kashee’s Eventone High Coverage Foundatio
 Description: Kashee’s Eventone High Coverage Foundation 30ml For Flawless And Even Skin Tone.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

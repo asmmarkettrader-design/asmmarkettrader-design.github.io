@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Citizen Rolex Chain Stainless Steel Link Bracelet Band for Apple Watch 8 7 6 5 4 SE Ultra 42/44/45/49mm
 Product ID: hhc-279999
 SKU: hhc-279999
@@ -7,11 +8,16 @@ Slug: citizen-rolex-chain-stainless-steel-link-bracelet-band-for-apple-watch-4e3
 Category: Electronics
 Subcategory: Gadgets
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/02/s-l1600-16.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/02/s-l1600-16.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/02/s-l1600-2-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/02/s-l1600-6-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/02/s-l1600-9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/02/s-l1600-10.jpg
 Meta Title: Citizen Rolex Chain Stainless Steel Link Bracelet Band for Apple Wat
 Meta Description: Buy Citizen Rolex Chain Stainless Steel Link Bracelet Band for Apple Watch 8 7 6 5 4 SE Ultra 42/44/45/49mm online in Pakistan from ASM VEO. Features: ● 100% Br
 Description: Features: ● 100% Brand new and high quality. ●Material: Stainless Steel. ●This stainless steel band is specially designed for apple watch. ●Made of high quality stainless steel, hi-tech surface watch band, surface texture feels exquisite, it is a perfect companion mixed with fashion, nobility. ●This stainless steel watch band is the perfect choice for those who want to make their watch noble and stylish at a convenient way. ●This band comes with connectors on both ends, easy to install and remove. ●Adjustable strap length - The length of this strap can be adjusted to your wrist.
-Regular Price: 2516
-Sale Price: 2516
+Wholesale Price: 2516
+Regular Price: 4470
+Sale Price: 3577
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

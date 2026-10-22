@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Finezo WiFi Router Power Bank 12V 6000mAh – Router Mini UPS with LED Digital Voltage Display, 5-6 Hours Backup, 0.5A & 1A, Portable WiFi Power Backup
 Product ID: hhc-3763881
 SKU: hhc-3763881
@@ -7,11 +8,16 @@ Slug: finezo-wifi-router-power-bank-12v-6000mah-router-mini-ups-with-led-digi-df
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/fbd246a438a4e48dfbbb621c560b0cd3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/fbd246a438a4e48dfbbb621c560b0cd3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/2228b86e200011c9f8e7ca7856e3a2f4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/84c1c53085b742b5828b31963630e6ae.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/511cc0fe2368ea5553f0786656512226.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/49d2aadf6033457a9dda6119db13a063.jpg
 Meta Title: Finezo WiFi Router Power Bank 12V 6000mAh – Router Mini UPS with LED
 Meta Description: Buy Finezo WiFi Router Power Bank 12V 6000mAh – Router Mini UPS with LED Digital Voltage Display, 5-6 Hours Backup, 0.5A & 1A, Portable WiFi Power Backup online
 Description: Finezo WiFi Router Power Bank 12V 6000mAh with Volt Display – Router UPS 5-6 Hours Backup, Portable WiFi Power Backup for Router & Modem
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

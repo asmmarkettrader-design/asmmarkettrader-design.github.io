@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pedi Spin High Precision Electric Callus And Foot Hardness File Cell Operated With Polishing And Vacuuming
 Product ID: hhc-1096425
 SKU: hhc-1096425
@@ -7,11 +8,16 @@ Slug: pedi-spin-high-precision-electric-callus-and-foot-hardness-file-cell-op-06
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/41ke54ehLXL._AC_-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/41ke54ehLXL._AC_-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/41gb8nmHG4L._AC_SY450_-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/31XQo29KnsL._AC_SX450_-1.jpg
 Meta Title: Pedi Spin High Precision Electric Callus And Foot Hardness File Cell
 Meta Description: Buy Pedi Spin High Precision Electric Callus And Foot Hardness File Cell Operated With Polishing And Vacuuming online in Pakistan from ASM VEO. Pedi Spin High P
 Description: Pedi Spin High Precision Electric Callus And Foot Hardness File Cell Operated With Polishing And Vacuuming Dead Skin.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

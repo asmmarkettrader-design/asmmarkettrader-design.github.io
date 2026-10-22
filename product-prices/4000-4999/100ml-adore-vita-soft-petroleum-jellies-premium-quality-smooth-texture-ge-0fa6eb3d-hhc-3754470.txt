@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100ML Adore Vita Soft Petroleum Jellies Premium Quality Smooth Texture Gentle Formula Comfortable Use
 Product ID: hhc-3754470
 SKU: hhc-3754470
@@ -7,11 +8,16 @@ Slug: 100ml-adore-vita-soft-petroleum-jellies-premium-quality-smooth-texture-0fa
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4fceca05e19c64c2d8a70b5c568534aa.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4fceca05e19c64c2d8a70b5c568534aa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/e4486346a95cce1dea14e9fa6d0a3fbb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4d721a78ef535c2610d0ab39596972fb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/0b4bc78dc49a9c44d9431378cfee4c80.jpeg
 Meta Title: 100ML Adore Vita Soft Petroleum Jellies Premium Quality Smooth Textu
 Meta Description: Buy 100ML Adore Vita Soft Petroleum Jellies Premium Quality Smooth Texture Gentle Formula Comfortable Use online in Pakistan from ASM VEO. Adore Vita Soft Petro
 Description: Adore Vita Soft Petroleum Jellies Provides Premium Quality Smooth Texture Gentle Formula Comfortable Use Reliable Utility And Effective Protection
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

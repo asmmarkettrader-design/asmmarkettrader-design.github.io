@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable LED Reading Lamp With Clip - Lightweight Flexible Night Book Light For Eye Care Comfortable Bedtime Reading And Travel (Random Color)
 Product ID: hhc-3761507
 SKU: hhc-3761507
@@ -7,11 +8,16 @@ Slug: portable-led-reading-lamp-with-clip-lightweight-flexible-night-book-lig-90
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/0f74b5153742243ccd910ffe68e00098.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/0f74b5153742243ccd910ffe68e00098.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/a8ee591ac7bdce02dd52f1054d1f93c9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/07cf45a1ee45da7f0f78fe0f1f5ca4f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/4a2948f72b10754419be1186dda8cdea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/ebd35c4284f650c7a0ae7abd0a830c72.jpeg
 Meta Title: Portable LED Reading Lamp With Clip - Lightweight Flexible Night Boo
 Meta Description: Buy Portable LED Reading Lamp With Clip - Lightweight Flexible Night Book Light For Eye Care Comfortable Bedtime Reading And Travel (Random Color) online in Pak
 Description: A Compact Portable LED Reading Lamp Featuring A Sturdy Clip For Easy Attachment And A Flexible Neck To Direct Light Exactly Where Needed.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

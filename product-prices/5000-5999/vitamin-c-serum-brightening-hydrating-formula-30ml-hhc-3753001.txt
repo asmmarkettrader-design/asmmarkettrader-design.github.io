@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vitamin C Serum - Brightening Hydrating Formula (30ml)
 Product ID: hhc-3753001
 SKU: hhc-3753001
@@ -7,11 +8,16 @@ Slug: vitamin-c-serum-brightening-hydrating-formula-30ml-hhc-3753001
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/e143283af4387aaf7fbae4b968fe8388.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/e143283af4387aaf7fbae4b968fe8388.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/b2c7b09297f25cb84b64e7298b061aad.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/9e57300629120c16e3222bc370cc1fed.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/ade149e47c9c2c1e3f685be64440356c.jpg
 Meta Title: Vitamin C Serum - Brightening Hydrating Formula (30ml) | Buy Online
 Meta Description: Buy Vitamin C Serum - Brightening Hydrating Formula (30ml) online in Pakistan from ASM VEO. Our Vitamin C Serum is a potent antioxidant formula designed to brig
 Description: Our Vitamin C Serum is a potent antioxidant formula designed to brighten, hydrate, and protect your skin. Infused with 15% Vitamin C, 0.5% Ferulic Acid, and Vitamin E, this advanced serum targets dullness, uneven tone, fine lines, and signs of aging. With Sodium Hyaluronate and Glycerin.
-Regular Price: 1351
-Sale Price: 1351
+Wholesale Price: 1301
+Regular Price: 2380
+Sale Price: 1907
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

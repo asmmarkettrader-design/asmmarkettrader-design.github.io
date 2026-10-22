@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Anti Rust Remover Spray 750ml Bottle – Heavy Duty Rust Cleaning Solution for Metal Surfaces
 Product ID: hhc-3757575
 SKU: hhc-3757575
@@ -7,11 +8,16 @@ Slug: anti-rust-remover-spray-750ml-bottle-heavy-duty-rust-cleaning-solution-675
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/f97b25472a09c206bf255aaf38dbca35.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/f97b25472a09c206bf255aaf38dbca35.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/d562f4888e78a3c0f7696308a916576c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/f2d636c6d26a99329854ec6fc2d21708.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/407b87d4296c9a3948d1da205d5becb6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/7a687e81ebf8f2d2d8b7058cd33ed4ef.jpeg
 Meta Title: Anti Rust Remover Spray 750ml Bottle – Heavy Duty Rust Cleaning Solu
 Meta Description: Buy Anti Rust Remover Spray 750ml Bottle – Heavy Duty Rust Cleaning Solution for Metal Surfaces online in Pakistan from ASM VEO. Powerful anti-rust spray design
 Description: Powerful anti-rust spray designed to remove rust, corrosion, and oxidation from metal surfaces. Ideal for home, garage, and industrial use with an easy spray trigger bottle.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aluminum Foil Butyl Waterproof Adhesive Tape – Super Strong Seal & Repair (W: 2 inch , L: 7 yards)
 Product ID: hhc-3754151
 SKU: hhc-3754151
@@ -7,11 +8,16 @@ Slug: aluminum-foil-butyl-waterproof-adhesive-tape-super-strong-seal-repair-w-0d
 Category: Tools & DIY
 Subcategory: Plumbing Fixtures
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/709c0fb538de43f2ceaaad272fc4c743.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/709c0fb538de43f2ceaaad272fc4c743.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/493bf63c9e58fa2cca42bd2f65dfde93.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/270f4cc0cb518034539bb75fcc1ee058.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/1b52c95a0310ccb01781b05c13ff6a96.jpeg
 Meta Title: Aluminum Foil Butyl Waterproof Adhesive Tape – Super Strong Seal & R
 Meta Description: Buy Aluminum Foil Butyl Waterproof Adhesive Tape – Super Strong Seal & Repair (W: 2 inch , L: 7 yards) online in Pakistan from ASM VEO. Seal, repair, and stop l
 Description: Seal, repair, and stop leaks with this Aluminum Foil Butyl Adhesive Tape. Strong, waterproof, and versatile for long-lasting fixes.
-Regular Price: 245
-Sale Price: 245
+Wholesale Price: 195
+Regular Price: 502
+Sale Price: 352
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

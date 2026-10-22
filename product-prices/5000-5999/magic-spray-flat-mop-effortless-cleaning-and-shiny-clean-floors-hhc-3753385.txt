@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magic Spray Flat Mop – Effortless Cleaning And Shiny Clean Floors
 Product ID: hhc-3753385
 SKU: hhc-3753385
@@ -7,11 +8,16 @@ Slug: magic-spray-flat-mop-effortless-cleaning-and-shiny-clean-floors-hhc-375338
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/58eae59c892cd71f13ce0691c7ace56a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/58eae59c892cd71f13ce0691c7ace56a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/985dbeb16ef7ca5ed7dceace63437c81.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/853e30592c139303e719f1bab69dedd0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/19e64e0643d156d0fdedf1f1e57f1a4c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/d38cf98b5b01283aaee0e8404265568c.jpg
 Meta Title: Magic Spray Flat Mop – Effortless Cleaning And Shiny Clean Floors |
 Meta Description: Buy Magic Spray Flat Mop – Effortless Cleaning And Shiny Clean Floors online in Pakistan from ASM VEO. High-Quality Magic Spray Flat Mop Imported And Assembled
 Description: High-Quality Magic Spray Flat Mop Imported And Assembled Designed For Effortless Cleaning And Shiny Floors With Easy Spray Function.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

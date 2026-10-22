@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fashion Sweatshirt & Pajama Tracksuit for Kids | Winter Clothing Set for Baby Boys & Girls – Warm, Soft & Stylish Outfit FOR KIDS AND BABY
 Product ID: hhc-3753440
 SKU: hhc-3753440
@@ -7,11 +8,16 @@ Slug: fashion-sweatshirt-pajama-tracksuit-for-kids-winter-clothing-set-for-ba-0a
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/07f527c70b5f1b907e22b7fc92a196b7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/07f527c70b5f1b907e22b7fc92a196b7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/3f701587e737d998dae8991525ee5e16.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/29be3becc13b62a3bf2cf35a84e18db7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/376c06720c7886bd5cbcfb735e65a5f2.jpeg
 Meta Title: Fashion Sweatshirt & Pajama Tracksuit for Kids | Winter Clothing Set
 Meta Description: Buy Fashion Sweatshirt & Pajama Tracksuit for Kids | Winter Clothing Set for Baby Boys & Girls – Warm, Soft & Stylish Outfit FOR KIDS AND BABY online in Pakista
 Description: Cozy winter tracksuit set for baby boys and girls — includes a soft sweatshirt and pajama trouser for warmth and style.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

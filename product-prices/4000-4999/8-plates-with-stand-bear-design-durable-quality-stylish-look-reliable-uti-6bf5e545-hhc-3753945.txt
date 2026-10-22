@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 8 Plates With Stand Bear Design Durable Quality Stylish Look Reliable Utility Perfect Choice For Daily Use (Random Color)
 Product ID: hhc-3753945
 SKU: hhc-3753945
@@ -7,11 +8,16 @@ Slug: 8-plates-with-stand-bear-design-durable-quality-stylish-look-reliable-u-6b
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/b9d83017b4c734500083654806c50005.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/b9d83017b4c734500083654806c50005.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/992e188a290525c4388a3b9d5c731255.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/d72300753097949348779417e60c9696.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/8dc4ee3c185e478b369ad27db6635ab6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/07e26ee3f25307721528e10329757f23.jpeg
 Meta Title: 8 Plates With Stand Bear Design Durable Quality Stylish Look Reliabl
 Meta Description: Buy 8 Plates With Stand Bear Design Durable Quality Stylish Look Reliable Utility Perfect Choice For Daily Use (Random Color) online in Pakistan from ASM VEO. 8
 Description: 8 Plates With Stand Bear Design Provides Durable Quality Stylish Look And Reliable Utility
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

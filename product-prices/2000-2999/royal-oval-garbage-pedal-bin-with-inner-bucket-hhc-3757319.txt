@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Oval Garbage Pedal Bin With Inner Bucket
 Product ID: hhc-3757319
 SKU: hhc-3757319
@@ -7,11 +8,16 @@ Slug: royal-oval-garbage-pedal-bin-with-inner-bucket-hhc-3757319
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/d27e304c46ca5febb9ef289edaec9c4e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/d27e304c46ca5febb9ef289edaec9c4e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/d52797d054d7e23fa7a683578d917a4f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/953b45467bf235ac85bcab78469e5e1c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/1db75a0733e6fff6a4a1b1bf2fb11612.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/3c8b2d08119cbc3e88c593d167a93826.jpg
 Meta Title: Royal Oval Garbage Pedal Bin With Inner Bucket | Buy Online in Pakis
 Meta Description: Buy Royal Oval Garbage Pedal Bin With Inner Bucket online in Pakistan from ASM VEO. Keep your space clean and hygienic with Royal pedal dustbin, designed for co
 Description: Keep your space clean and hygienic with Royal pedal dustbin, designed for convenient hands-free use and modern living. Made from durable, high-quality material, it features a sturdy foot pedal for easy opening and a secure lid to contain odors.
-Regular Price: 6656
-Sale Price: 6656
+Wholesale Price: 6656
+Regular Price: 11040
+Sale Price: 8833
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

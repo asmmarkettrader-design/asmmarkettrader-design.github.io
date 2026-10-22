@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heavy Duty End Cutting Pincers – High Carbon Steel Nail Puller & Cutting Tool
 Product ID: hhc-3764251
 SKU: hhc-3764251
@@ -7,11 +8,16 @@ Slug: heavy-duty-end-cutting-pincers-high-carbon-steel-nail-puller-cutting-tool-
 Category: Tools & DIY
 Subcategory: Power Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/3debc5f16e0976b8d09afaef630f986a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/3debc5f16e0976b8d09afaef630f986a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/eb8ea807e25731078068756b2bc2d040.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/3fcff52ff371502b2a47f45683f3bd1e.jpg
 Meta Title: Heavy Duty End Cutting Pincers – High Carbon Steel Nail Puller & Cut
 Meta Description: Buy Heavy Duty End Cutting Pincers – High Carbon Steel Nail Puller & Cutting Tool online in Pakistan from ASM VEO. Heavy-duty end cutting pincers made from high
 Description: Heavy-duty end cutting pincers made from high carbon steel with a strong grip, durable construction, and comfortable PVC-coated handles.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

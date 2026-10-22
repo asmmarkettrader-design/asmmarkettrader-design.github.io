@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Japanese Instant Pain Relief Soothing Massage Gel Fast Acting Formula Relieves Discomfort Calms Muscles And Provides Relaxing Comfort - 50g
 Product ID: hhc-3753786
 SKU: hhc-3753786
@@ -7,11 +8,16 @@ Slug: japanese-instant-pain-relief-soothing-massage-gel-fast-acting-formula-r-70
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/152fd14ff43e016bd8fba260e21ede77.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/152fd14ff43e016bd8fba260e21ede77.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/3ee91cfe5b7f3215f97c28dec73b3375.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/831aebfcdd3218c41336a8da6b76773e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/de43a3ec5c9d67e976c1c60ddfdb1157.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/750798e98610d13d030e694a0e8db30d.jpeg
 Meta Title: Japanese Instant Pain Relief Soothing Massage Gel Fast Acting Formul
 Meta Description: Buy Japanese Instant Pain Relief Soothing Massage Gel Fast Acting Formula Relieves Discomfort Calms Muscles And Provides Relaxing Comfort - 50g online in Pakist
 Description: Japanese Instant Pain Relief Soothing Massage Gel Provides Fast Acting Formula That Relieves Discomfort And Calms Muscles
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

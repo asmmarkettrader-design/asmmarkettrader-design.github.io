@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4 in 1 Fascial Fitness Chargeable Massager
 Product ID: hhc-1204564
 SKU: hhc-1204564
@@ -7,11 +8,16 @@ Slug: 4-in-1-fascial-fitness-chargeable-massager-hhc-1204564
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/542fecfc74befa5866cf778298616fb5.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/542fecfc74befa5866cf778298616fb5.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/b140419a637de49aa000881bfc3e6228.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/e5b5f90d5937c4fc4ab35b50b6b4df01.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/d76e02fce8a8ddb866708cf7c3ba9258.jpg_750x750.jpg_-1.webp
 Meta Title: 4 in 1 Fascial Fitness Chargeable Massager | Buy Online in Pakistan
 Meta Description: Buy 4 in 1 Fascial Fitness Chargeable Massager online in Pakistan from ASM VEO. Product details of 4 in 1 Fascial Fitness Chargeable Massager Item No.PL-664Work
 Description: Product details of 4 in 1 Fascial Fitness Chargeable Massager Item No.PL-664Working TimeYou turn it off/15 minutes working timing functionMassage Heads4 Heads and 1 mesh coverSpeed6 levels of massage intensity/speed regulationSpeed Levels1200-3000rpmFunctionMuscle massage, Daily massage Introducing our Massager: Relieve Tension and Reduce Muscle Fatigue for Ultimate Relaxation Specifications of 4 in 1 Fascial Fitness Chargeable Massager
-Regular Price: 7781
-Sale Price: 7781
+Wholesale Price: 7781
+Regular Price: 12870
+Sale Price: 10295
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

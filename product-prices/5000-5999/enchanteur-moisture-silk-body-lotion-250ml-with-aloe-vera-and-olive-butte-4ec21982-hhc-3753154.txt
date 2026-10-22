@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Enchanteur Moisture Silk Body Lotion 250ml With Aloe Vera And Olive Butter | Deeply Nourishing, Hydrating, And Softening Skin Lotion For All Skin Types
 Product ID: hhc-3753154
 SKU: hhc-3753154
@@ -7,11 +8,16 @@ Slug: enchanteur-moisture-silk-body-lotion-250ml-with-aloe-vera-and-olive-but-4e
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Enchanteur Moisture Silk Body Lotion 250ml With Aloe Vera And Olive
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/41677aadf3f545680b0d623e93554728.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/41677aadf3f545680b0d623e93554728.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/4ca9a80665670733958895d3e34c5f34.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/5d54e43b28d01bcf7ad18b8bdae1f0a4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/78dbfd097abecd5f19c22932d4fc9cdb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/bdbb2892c1187b2c679485568321d06e.jpeg
+Meta Title: Enchanteur Moisture Silk Body Lotion 250ml With Aloe Vera And Olive 
 Meta Description: Buy Enchanteur Moisture Silk Body Lotion 250ml With Aloe Vera And Olive Butter | Deeply Nourishing, Hydrating, And Softening Skin Lotion For All Skin Types onli
 Description: Enchanteur Moisture Silk Body Lotion Nourishes And Hydrates The Skin With Aloe Vera And Olive Butter, Leaving It Soft, Smooth, And Beautifully Fragrant.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

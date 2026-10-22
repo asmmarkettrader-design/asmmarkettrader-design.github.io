@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SmartGel Cockroach Killer Gel 20g (ORIGINAL) | Ants & Insects Killer Smart Gel | Odorless & Mess Free For Home & Office Use
 Product ID: hhc-3757788
 SKU: hhc-3757788
@@ -7,11 +8,16 @@ Slug: smartgel-cockroach-killer-gel-20g-original-ants-insects-killer-smart-ge-19
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/fc218f4bda903d99578f0a55a51f23c6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/fc218f4bda903d99578f0a55a51f23c6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/3054f3a3e6708813f04920cabce24f1d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/502eb52e339702927fb0a859bf34a775.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/8f89714e86906b3b2dc257af5d2152c9.jpg
 Meta Title: SmartGel Cockroach Killer Gel 20g (ORIGINAL) | Ants & Insects Killer
 Meta Description: Buy SmartGel Cockroach Killer Gel 20g (ORIGINAL) | Ants & Insects Killer Smart Gel | Odorless & Mess Free For Home & Office Use online in Pakistan from ASM VEO.
 Description: SmartGel kills cockroaches, ants, and insects quickly. Odorless, mess-free formula ensures easy use and long-lasting protection at home or office. 100% original
-Regular Price: 668
-Sale Price: 668
+Wholesale Price: 618
+Regular Price: 1200
+Sale Price: 956
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

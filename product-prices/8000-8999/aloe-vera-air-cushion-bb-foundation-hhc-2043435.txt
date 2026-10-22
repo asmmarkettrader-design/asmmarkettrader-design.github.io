@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aloe Vera Air Cushion BB Foundation
 Product ID: hhc-2043435
 SKU: hhc-2043435
@@ -7,11 +8,16 @@ Slug: aloe-vera-air-cushion-bb-foundation-hhc-2043435
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-7.38.51-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-7.38.51-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-7.38.51-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-7.38.50-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-7.38.49-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-13-at-7.38.49-PM.jpeg
 Meta Title: Aloe Vera Air Cushion BB Foundation | Buy Online in Pakistan
 Meta Description: Buy Aloe Vera Air Cushion BB Foundation online in Pakistan from ASM VEO. description Item form: Gel Colour 1: NATURAL COLOR Skin type: All Finish type: Dewy, Ra
 Description: description Item form: Gel Colour 1: NATURAL COLOR Skin type: All Finish type: Dewy, Radiant, Matte, Natural Coverage: Medium Product benefits: Color Correction
-Regular Price: 643
-Sale Price: 643
+Wholesale Price: 593
+Regular Price: 1150
+Sale Price: 920
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

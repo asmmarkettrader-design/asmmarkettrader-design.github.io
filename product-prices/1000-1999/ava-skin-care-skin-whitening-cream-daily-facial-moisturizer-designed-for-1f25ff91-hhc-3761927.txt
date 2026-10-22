@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AVA Skin Care Skin Whitening Cream - Daily Facial Moisturizer Designed For Brightening And Improving Skin Tone Appearance - 30g
 Product ID: hhc-3761927
 SKU: hhc-3761927
@@ -7,11 +8,16 @@ Slug: ava-skin-care-skin-whitening-cream-daily-facial-moisturizer-designed-fo-1f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/a6bc70874af62022bc49b37b499a9dfe.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/a6bc70874af62022bc49b37b499a9dfe.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/e62f390408be216c1165788d1f295a5e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/6fabd08d8c89d95fbe4acacb2fd06d96.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/17f1c068d128f91c099b6d98b2712a4a.jpeg
 Meta Title: AVA Skin Care Skin Whitening Cream - Daily Facial Moisturizer Design
 Meta Description: Buy AVA Skin Care Skin Whitening Cream - Daily Facial Moisturizer Designed For Brightening And Improving Skin Tone Appearance - 30g online in Pakistan from ASM
 Description: The AVA Skin Care Skin Whitening Cream Is A Daily Facial Cream Formulated To Help Brighten The Skin And Achieve A More Even And Radiant Complexion.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

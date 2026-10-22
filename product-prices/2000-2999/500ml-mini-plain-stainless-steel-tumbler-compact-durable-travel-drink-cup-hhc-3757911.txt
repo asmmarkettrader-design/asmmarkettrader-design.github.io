@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 500ml Mini Plain Stainless Steel Tumbler | Compact Durable Travel Drink Cup
 Product ID: hhc-3757911
 SKU: hhc-3757911
@@ -7,11 +8,16 @@ Slug: 500ml-mini-plain-stainless-steel-tumbler-compact-durable-travel-drink-cup-
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/00a9ae0d659c18be86f9ab1c4d1b81be.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/00a9ae0d659c18be86f9ab1c4d1b81be.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/8fefa10954e28d4132fad09df29b3665.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/df101a252e3559933267d7d5a42cd252.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/df0c7e25b1d15aafdc05351f99e82b4a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/4246bc1c03600a75f039222cdb67b149.jpeg
 Meta Title: 500ml Mini Plain Stainless Steel Tumbler | Compact Durable Travel Dr
 Meta Description: Buy 500ml Mini Plain Stainless Steel Tumbler | Compact Durable Travel Drink Cup online in Pakistan from ASM VEO. Premium 500ml stainless steel tumbler, durable
 Description: Premium 500ml stainless steel tumbler, durable and easy to carry—perfect for daily use while keeping drinks fresh.
-Regular Price: 2417
-Sale Price: 2417
+Wholesale Price: 2417
+Regular Price: 4300
+Sale Price: 3443
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

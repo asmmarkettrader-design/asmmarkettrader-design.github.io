@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DT-1700 Remington Styler Active Frizz Control Powerful Hair Dryer
 Product ID: hhc-2567417
 SKU: hhc-2567417
@@ -7,11 +8,16 @@ Slug: dt-1700-remington-styler-active-frizz-control-powerful-hair-dryer-hhc-2567
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61a2bbe0-2860-4826-8800-3e287be27dc5.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61a2bbe0-2860-4826-8800-3e287be27dc5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-09-at-1.03.21-AM.jpeg
 Meta Title: DT-1700 Remington Styler Active Frizz Control Powerful Hair Dryer |
 Meta Description: Buy DT-1700 Remington Styler Active Frizz Control Powerful Hair Dryer online in Pakistan from ASM VEO. Product Description Powerful 3000 Watt Ceramic Ionic gril
 Description: Product Description Powerful 3000 Watt Ceramic Ionic grille for even heat and anti static 2 speed settings Eco Setting – Using dryer on the mid heat setting saves more energy than using it on the high heat setting Cool Shot Concentrator Removable easy clean rear grille Hang up loop Original Picture
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

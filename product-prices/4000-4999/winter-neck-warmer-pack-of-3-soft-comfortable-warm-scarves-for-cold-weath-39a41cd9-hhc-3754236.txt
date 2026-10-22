@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Neck Warmer – Pack of 3 Soft Comfortable Warm Scarves for Cold Weather & Outdoor Use
 Product ID: hhc-3754236
 SKU: hhc-3754236
@@ -7,11 +8,16 @@ Slug: winter-neck-warmer-pack-of-3-soft-comfortable-warm-scarves-for-cold-wea-39
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/f6eba6ca232d692a3d330130868c66ef.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/f6eba6ca232d692a3d330130868c66ef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/a20e685591c38d48ee58a8ab1ca0ea18.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/aca0a50de20e2f047702c9c21df46baa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/4530350303038ba517fdcf549d5ec58e.mp4
 Meta Title: Winter Neck Warmer – Pack of 3 Soft Comfortable Warm Scarves for Col
 Meta Description: Buy Winter Neck Warmer – Pack of 3 Soft Comfortable Warm Scarves for Cold Weather & Outdoor Use online in Pakistan from ASM VEO. Winter neck warmer pack of 3, s
 Description: Winter neck warmer pack of 3, soft and comfortable fabric provides warmth and protection, perfect for outdoor activities, daily wear, and cold weather.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

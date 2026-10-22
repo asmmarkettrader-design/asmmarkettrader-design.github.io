@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable 3 Speed Neck Fan - Hanging Sports Neck Fan Heavy Duty Rechargeable Portable Hands Free Wearable Cooling Device (Random Color)
 Product ID: hhc-3761576
 SKU: hhc-3761576
@@ -7,11 +8,16 @@ Slug: rechargeable-3-speed-neck-fan-hanging-sports-neck-fan-heavy-duty-rechar-10
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/a94455657dfabd2880f0348d483701be.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/a94455657dfabd2880f0348d483701be.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/fe6c4909ac101a8f5340feb68ba33877.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/819f828f12e0a866afe839a08b62d77f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/fc7c97fa9939fce286717bf41448f714.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/51cc1931183aee9b1f597cd9508b88d0.webp
 Meta Title: Rechargeable 3 Speed Neck Fan - Hanging Sports Neck Fan Heavy Duty R
 Meta Description: Buy Rechargeable 3 Speed Neck Fan - Hanging Sports Neck Fan Heavy Duty Rechargeable Portable Hands Free Wearable Cooling Device (Random Color) online in Pakista
 Description: A Heavy Duty Rechargeable 3 Speed Neck Fan Designed As A Convenient Hanging Sports Neck Fan Offering Practical Hands Free Personal Cooling.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

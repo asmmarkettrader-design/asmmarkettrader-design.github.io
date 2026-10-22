@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Ferrari Inspired Long Wallet – Slim Bi-Fold Men’s Clutch & Travel Organizer with Elegant Logo Detail
 Product ID: hhc-3758721
 SKU: hhc-3758721
@@ -7,11 +8,16 @@ Slug: premium-ferrari-inspired-long-wallet-slim-bi-fold-men-s-clutch-travel-o-b4
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/68e06f2fc9b8f1bb7cd87829fdc09a23.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/68e06f2fc9b8f1bb7cd87829fdc09a23.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/a240f35ce971aef11d6fd60b1ff46512.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/10e0b238e67a6c9127ff2e7c7b75669a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/bcb4268cbb0e3ae295337e58c942abd4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/5faac53bfce7bd7983ec0ea47d122a0c.png
 Meta Title: Premium Ferrari Inspired Long Wallet – Slim Bi-Fold Men’s Clutch & T
 Meta Description: Buy Premium Ferrari Inspired Long Wallet – Slim Bi-Fold Men’s Clutch & Travel Organizer with Elegant Logo Detail online in Pakistan from ASM VEO. Rev up your st
 Description: Rev up your style with this Ferrari Inspired Long Wallet. Crafted for those who appreciate sleek design and high-speed aesthetics, this long bi-fold wallet offers a slim profile with ample space for your currency, cards, and documents.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

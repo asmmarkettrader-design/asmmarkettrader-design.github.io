@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Devil Eye Bike Backlight – Universal 12V LED Brake Tail Light with Multicolor RGB Dynamic Flash for 125cc Motorcycles (Random Color)
 Product ID: hhc-3759718
 SKU: hhc-3759718
@@ -7,11 +8,16 @@ Slug: premium-devil-eye-bike-backlight-universal-12v-led-brake-tail-light-wit-0c
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/2b1c966f63f70eeff1fa043c4bbfdc40.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/2b1c966f63f70eeff1fa043c4bbfdc40.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/dcbc74b430cc0237b1511304e94f9bfc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/a3a648ea05ea573e5098abe7e962fdbc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/2192636a6c7504cbfa5bdc855a296073.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/e9c742371b323d77c62048cbd481a30b.png
 Meta Title: Premium Devil Eye Bike Backlight – Universal 12V LED Brake Tail Ligh
 Meta Description: Buy Premium Devil Eye Bike Backlight – Universal 12V LED Brake Tail Light with Multicolor RGB Dynamic Flash for 125cc Motorcycles (Random Color) online in Pakis
 Description: Give your motorcycle a fierce look with this Devil Eye Bike Backlight. Featuring an aggressive demonic gaze with automatically changing random colors, this bright 12V LED tail light is perfect for CG125 and other 125cc bikes.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

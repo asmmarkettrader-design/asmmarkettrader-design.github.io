@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Moisturizing Spa Socks Silicone Gel Socks for Women Repairing Softening Dry Cracked Feet Comfortable Care (Random Color)
 Product ID: hhc-3755050
 SKU: hhc-3755050
@@ -7,11 +8,16 @@ Slug: moisturizing-spa-socks-silicone-gel-socks-for-women-repairing-softening-8f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/68668b8f8fa60a04646654adfcd6713a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/68668b8f8fa60a04646654adfcd6713a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/14224859638dee9f019a31c687e5682b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/e87de2d00249e963cf366f583e949353.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/1776f6affd5d89b1ae103b179e6093b7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/d98c49860da3f5ec39cb546b3744404c.jpeg
 Meta Title: Moisturizing Spa Socks Silicone Gel Socks for Women Repairing Soften
 Meta Description: Buy Moisturizing Spa Socks Silicone Gel Socks for Women Repairing Softening Dry Cracked Feet Comfortable Care (Random Color) online in Pakistan from ASM VEO. So
 Description: Soft silicone gel spa socks that repair cracked feet and deeply moisturize for smooth healthy skin.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

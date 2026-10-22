@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Collection Women’s Sleeveless Jacket | Stylish & Warm Body Warmer for Ladies | Trendy Winter Outerwear
 Product ID: hhc-3753493
 SKU: hhc-3753493
@@ -7,11 +8,16 @@ Slug: winter-collection-women-s-sleeveless-jacket-stylish-warm-body-warmer-fo-96
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/ad02f0a9c17435b9b35ca5df56af83d4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/ad02f0a9c17435b9b35ca5df56af83d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/00e07ee2aea929c928705ed3410d8543.jpeg
 Meta Title: Winter Collection Women’s Sleeveless Jacket | Stylish & Warm Body Wa
 Meta Description: Buy Winter Collection Women’s Sleeveless Jacket | Stylish & Warm Body Warmer for Ladies | Trendy Winter Outerwear online in Pakistan from ASM VEO. Chic women’s
 Description: Chic women’s sleeveless winter jacket, designed for warmth and style. Perfect for layering, travel, and casual cold-weather outfits.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

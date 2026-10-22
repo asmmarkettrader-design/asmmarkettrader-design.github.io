@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS Radiator Coolant – Premium Grade Green | Anti-Corrosion & Overheating Protection | Inorganic Acid Technology (IAT) | 4000 ML
 Product ID: hhc-3756973
 SKU: hhc-3756973
@@ -7,11 +8,16 @@ Slug: three-guys-radiator-coolant-premium-grade-green-anti-corrosion-overheat-30
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/6771fe561d642642fcd0f098d10871a6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/6771fe561d642642fcd0f098d10871a6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/8a8c7a62a3ef70d89b9113622dcbb1b7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/7389e29efedc0c7f18edc8e95360f6ec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/56f0def03c05a71db00b85fe9642480e.png
 Meta Title: THREE GUYS Radiator Coolant – Premium Grade Green | Anti-Corrosion &
 Meta Description: Buy THREE GUYS Radiator Coolant – Premium Grade Green | Anti-Corrosion & Overheating Protection | Inorganic Acid Technology (IAT) | 4000 ML online in Pakistan f
 Description: THREE GUYS Radiator Coolant – Premium Grade Green | Anti-Corrosion & Overheating Protection | Inorganic Acid Technology (IAT) | 4000 ML
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

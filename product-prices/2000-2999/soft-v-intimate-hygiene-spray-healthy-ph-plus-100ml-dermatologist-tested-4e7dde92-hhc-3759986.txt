@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Soft V Intimate Hygiene Spray Healthy PH Plus 100ml Dermatologist Tested Formula 100ml
 Product ID: hhc-3759986
 SKU: hhc-3759986
@@ -7,11 +8,16 @@ Slug: soft-v-intimate-hygiene-spray-healthy-ph-plus-100ml-dermatologist-teste-4e
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/b33148d1dd3094b188bb4a83f594a11a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/b33148d1dd3094b188bb4a83f594a11a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/bf576ab5befabf96049f91d8ce949c41.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/1b714bea8fcf0568c49dc0a90766e5a5.png
 Meta Title: Soft V Intimate Hygiene Spray Healthy PH Plus 100ml Dermatologist Te
 Meta Description: Buy Soft V Intimate Hygiene Spray Healthy PH Plus 100ml Dermatologist Tested Formula 100ml online in Pakistan from ASM VEO. Soft V Intimate Hygiene Spray Health
 Description: Soft V Intimate Hygiene Spray Healthy PH Plus 100ml Hypoallergenic Formula For Daily Freshness And Care.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

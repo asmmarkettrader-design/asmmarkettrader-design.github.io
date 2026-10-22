@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi Purpose Nail Manicure Care Set Providing Complete Grooming Everyday Nail Care Support
 Product ID: hhc-3755013
 SKU: hhc-3755013
@@ -7,11 +8,16 @@ Slug: multi-purpose-nail-manicure-care-set-providing-complete-grooming-everyd-cd
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/f80416ab523b4565b295e8ea893bf975.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/f80416ab523b4565b295e8ea893bf975.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/ace1c0db5e30f22eb4aabfe11510a76a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/a6ff5e567dc3014dab3aea13c4b34e50.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/8caed710594907a1a1ae8c329ad248ee.jpeg
 Meta Title: Multi Purpose Nail Manicure Care Set Providing Complete Grooming Eve
 Meta Description: Buy Multi Purpose Nail Manicure Care Set Providing Complete Grooming Everyday Nail Care Support online in Pakistan from ASM VEO. Multi Purpose Nail Manicure Car
 Description: Multi Purpose Nail Manicure Care Set Offering Complete Grooming Durable Quality Reliable Performance And Stylish Daily Nail Care Support
-Regular Price: 432
-Sale Price: 432
+Wholesale Price: 382
+Regular Price: 790
+Sale Price: 633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

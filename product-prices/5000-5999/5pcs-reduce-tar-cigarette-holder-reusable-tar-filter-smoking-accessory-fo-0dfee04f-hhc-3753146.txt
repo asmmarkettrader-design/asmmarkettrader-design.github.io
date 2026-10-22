@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5PCS Reduce Tar Cigarette Holder | Reusable Tar Filter Smoking Accessory For Cleaner And Smoother Smoking Experience
 Product ID: hhc-3753146
 SKU: hhc-3753146
@@ -7,11 +8,16 @@ Slug: 5pcs-reduce-tar-cigarette-holder-reusable-tar-filter-smoking-accessory-0df
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/6bc44ecb64d8965044d9475c4c32e27b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/6bc44ecb64d8965044d9475c4c32e27b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/20a3f27579fe4d2a98229f7382114d71.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/40f38d9add913885eddc167b836738d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/ee9ca3078d1426afc3577d423da12551.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/0d3636735fdcd940bee35891363401e8.jpeg
 Meta Title: 5PCS Reduce Tar Cigarette Holder | Reusable Tar Filter Smoking Acces
 Meta Description: Buy 5PCS Reduce Tar Cigarette Holder | Reusable Tar Filter Smoking Accessory For Cleaner And Smoother Smoking Experience online in Pakistan from ASM VEO. 5PCS R
 Description: 5PCS Reduce Tar Cigarette Holder | Reusable Tar Filter Smoking Accessory For Cleaner And Smoother Smoking Experience
-Regular Price: 515
-Sale Price: 515
+Wholesale Price: 465
+Regular Price: 950
+Sale Price: 758
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

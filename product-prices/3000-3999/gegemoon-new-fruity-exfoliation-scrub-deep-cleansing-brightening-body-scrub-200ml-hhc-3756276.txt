@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gegemoon New Fruity Exfoliation Scrub – Deep Cleansing & Brightening Body Scrub (200ml)
 Product ID: hhc-3756276
 SKU: hhc-3756276
@@ -7,11 +8,16 @@ Slug: gegemoon-new-fruity-exfoliation-scrub-deep-cleansing-brightening-body-s-d3
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/c5b54a452e27af945c7e5e84c4c9da04.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/c5b54a452e27af945c7e5e84c4c9da04.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/01ce5acd83f832f9d5f559c196b077a6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/cd0e161223ac97801c1126d74b87f070.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/5a54590364843d6e160a501b867a4d76.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/e2d95375205fcb2e4bd160d85cd06c7f.png
 Meta Title: Gegemoon New Fruity Exfoliation Scrub – Deep Cleansing & Brightening
 Meta Description: Buy Gegemoon New Fruity Exfoliation Scrub – Deep Cleansing & Brightening Body Scrub (200ml) online in Pakistan from ASM VEO. Refresh and renew your skin with Ge
 Description: Refresh and renew your skin with Gegemoon Fruity Exfoliation Scrub. Infused with fruity extracts, this 200ml scrub gently removes dead skin cells, leaving your skin smooth, soft, and glowing. Available in Tangerine, Apricot, Melon, Watermelon, Berries, and Blueberry variants.
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

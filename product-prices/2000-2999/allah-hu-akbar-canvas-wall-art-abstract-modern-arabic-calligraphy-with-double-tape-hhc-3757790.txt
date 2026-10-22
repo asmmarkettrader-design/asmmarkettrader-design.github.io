@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Allah Hu Akbar Canvas Wall Art Abstract Modern Arabic Calligraphy With Double Tape
 Product ID: hhc-3757790
 SKU: hhc-3757790
@@ -7,11 +8,16 @@ Slug: allah-hu-akbar-canvas-wall-art-abstract-modern-arabic-calligraphy-with-a16
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/50cd158d5e97deef9126d67f5b4fd338.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/50cd158d5e97deef9126d67f5b4fd338.jpeg
 Meta Title: Allah Hu Akbar Canvas Wall Art Abstract Modern Arabic Calligraphy Wi
 Meta Description: Buy Allah Hu Akbar Canvas Wall Art Abstract Modern Arabic Calligraphy With Double Tape online in Pakistan from ASM VEO. Allah Hu Akbar Canvas Wall Art Featuring
 Description: Allah Hu Akbar Canvas Wall Art Featuring Abstract Modern Arabic Calligraphy With Double Tape
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

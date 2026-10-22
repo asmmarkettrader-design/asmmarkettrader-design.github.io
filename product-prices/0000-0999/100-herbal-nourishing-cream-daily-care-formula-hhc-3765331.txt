@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100% Herbal Nourishing Cream | Daily Care Formula
 Product ID: hhc-3765331
 SKU: hhc-3765331
@@ -7,11 +8,16 @@ Slug: 100-herbal-nourishing-cream-daily-care-formula-hhc-3765331
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/58488ca18dff9cdfaf87c7b4e9d2c72c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/58488ca18dff9cdfaf87c7b4e9d2c72c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/8c3a5c28ad67cf5f5d0e98e69bec45bc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/5fce7801fd147658062898501c7859f5.jpg
 Meta Title: 100% Herbal Nourishing Cream | Daily Care Formula | Buy Online in Pa
 Meta Description: Buy 100% Herbal Nourishing Cream | Daily Care Formula online in Pakistan from ASM VEO. Struggling with dry, dull, or uneven skin? Give your skin the natural car
 Description: Struggling with dry, dull, or uneven skin? Give your skin the natural care it deserves with our Herbal Care Cream! 🌸Formulated with 100% natural ingredients, this chemical-free cream deeply moisturizes and helps restore your skin's natural firmness and radiance.Key Benefits:100% Natural &amp; Chemical-Free: Safe, gentle, and free from harsh substances.Deep Hydration &amp; Firming: Improves skin texture for a softer, smoother feel.Non-Greasy Formula: Absorbs quickly without leaving a heavy or sticky residue.Suitable for All Skin Types: Perfect for your daily skincare routine.
-Regular Price: 1204
-Sale Price: 1204
+Wholesale Price: 1154
+Regular Price: 2120
+Sale Price: 1699
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

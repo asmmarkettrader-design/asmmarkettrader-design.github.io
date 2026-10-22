@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wellice Blue De Cahal Perfume Shampoo – Long-Lasting Fragrance, Deep Clean & Silky Smooth Hair Care
 Product ID: hhc-3753294
 SKU: hhc-3753294
@@ -7,11 +8,16 @@ Slug: wellice-blue-de-cahal-perfume-shampoo-long-lasting-fragrance-deep-clean-39
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/33b7f893a476a06ffe7798592b6b1657.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/33b7f893a476a06ffe7798592b6b1657.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/a498e2f721c104e314708eabed6ed1c5.jpg
 Meta Title: Wellice Blue De Cahal Perfume Shampoo – Long-Lasting Fragrance, Deep
 Meta Description: Buy Wellice Blue De Cahal Perfume Shampoo – Long-Lasting Fragrance, Deep Clean & Silky Smooth Hair Care online in Pakistan from ASM VEO. Infused with Blue De Ca
 Description: Infused with Blue De Cahal perfume, this shampoo deeply cleanses hair while leaving a long-lasting, luxurious scent.
-Regular Price: 2540
-Sale Price: 2540
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

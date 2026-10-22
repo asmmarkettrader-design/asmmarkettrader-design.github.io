@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nails Polish And Lip Pencils Combo Deal - Beauty Accessory Designed For Makeup Application And Daily Skincare Routine (12 Lip Pencils + 6 Nail Polishes)
 Product ID: hhc-3765084
 SKU: hhc-3765084
@@ -7,11 +8,16 @@ Slug: nails-polish-and-lip-pencils-combo-deal-beauty-accessory-designed-for-m-97
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Nails Polish And Lip Pencils Combo Deal - Beauty Accessory Designed
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/9bef4ffd2fb851dceff00d1234b31196.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/9bef4ffd2fb851dceff00d1234b31196.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/6e9523db1600c8e5777fbf271fbc7e24.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/e88678bba6d4082cd4acc5eb82efa543.jpg
+Meta Title: Nails Polish And Lip Pencils Combo Deal - Beauty Accessory Designed 
 Meta Description: Buy Nails Polish And Lip Pencils Combo Deal - Beauty Accessory Designed For Makeup Application And Daily Skincare Routine (12 Lip Pencils + 6 Nail Polishes) onl
 Description: This Nails Polish And Lip Pencils Combo Deal Provides A Reliable Solution For Beauty Accessories And Routine Makeup Application Needs. Formulated To Deliver Application Benefits While Supporting Nails Polish And Lip Pencils Combo Deal Utility, It Fits Seamlessly Into Your Regular Makeup Application Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Makeup Application Requirements, This Nails Polish And Lip Pencils Combo Deal Serves As An Essential Beauty Accessory For Daily Life.Key FeaturesNails Polish And Lip Pencils Combo Deal Formulated For Beauty AccessoriesDelivers Makeup Application And Supports Daily Skincare UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Makeup Application And Skincare RoutinesDesigned For Easy Operation And Convenient UseEssential Beauty Accessory For Everyday MaintenanceNails &amp; Lips Makeup Deal. Package includes: - 1 x Pencil pack (12 Pcs Flormar Matte Color Lipsticks) - 6 x Mode Love Vitamin Nail Polish (20ml each) Quality makeup set for daily use.
-Regular Price: 2516
-Sale Price: 2516
+Wholesale Price: 2516
+Regular Price: 4470
+Sale Price: 3577
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

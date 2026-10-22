@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dr. Harleys Vitamin D3 Gummies (60 Gummies)
 Product ID: hhc-3756893
 SKU: hhc-3756893
@@ -7,11 +8,16 @@ Slug: dr-harleys-vitamin-d3-gummies-60-gummies-hhc-3756893
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/033990d3b3c7affdd170f7c90f014601.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/033990d3b3c7affdd170f7c90f014601.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/1001cf57d869951ce8c86fce675cae92.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/1adc0717bf477b9f430c0f9b65f556b7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/d476ec98848d1c9d31e9b173b4b4c0c4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/76a5d5f64447c9eac6c303ad665f9852.jpeg
 Meta Title: Dr. Harleys Vitamin D3 Gummies (60 Gummies) | Buy Online in Pakistan
 Meta Description: Buy Dr. Harleys Vitamin D3 Gummies (60 Gummies) online in Pakistan from ASM VEO. Delicious gummies packed with Vitamin D3, the “sunshine vitamin,” to support st
 Description: Delicious gummies packed with Vitamin D3, the “sunshine vitamin,” to support strong bones, healthy teeth, improved immunity, and overall wellness. Easy to chew and ideal for daily nutrition.
-Regular Price: 1882
-Sale Price: 1882
+Wholesale Price: 1882
+Regular Price: 3400
+Sale Price: 2721
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

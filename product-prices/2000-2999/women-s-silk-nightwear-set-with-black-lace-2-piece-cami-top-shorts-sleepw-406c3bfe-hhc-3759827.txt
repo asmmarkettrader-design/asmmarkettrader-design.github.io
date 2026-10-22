@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Women's Silk Nightwear Set with Black Lace – 2 Piece Cami Top & Shorts Sleepwear (Free Size) [SKU R-012]
 Product ID: hhc-3759827
 SKU: hhc-3759827
@@ -7,11 +8,16 @@ Slug: women-s-silk-nightwear-set-with-black-lace-2-piece-cami-top-shorts-slee-40
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/8602cf43809f294bb08e3d4b0144f5cb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/8602cf43809f294bb08e3d4b0144f5cb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/c29ac5ffac19127225be69b85e96b0b5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/86291eb1bf8f5603e4ad7516c0698e2a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/3399cd86a0dc1575db6a85ee003cf935.jpeg
 Meta Title: Women's Silk Nightwear Set with Black Lace – 2 Piece Cami Top & Shor
 Meta Description: Buy Women's Silk Nightwear Set with Black Lace – 2 Piece Cami Top & Shorts Sleepwear (Free Size) [SKU R-012] online in Pakistan from ASM VEO. Bring elegance and
 Description: Bring elegance and comfort to your evenings with this luxury Silk nightwear set. Featuring a stylish cami top and matching shorts with black lace detailing, this Free Size set is designed for a smooth, high-end feel and a perfect night’s rest.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

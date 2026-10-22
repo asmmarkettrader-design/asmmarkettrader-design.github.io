@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Senying 60W Soldering Iron Set (3Pcs Set) - Hardware Product Designed For Electronics Repair And Daily Tool Maintenance Routine
 Product ID: hhc-3764120
 SKU: hhc-3764120
@@ -7,11 +8,16 @@ Slug: senying-60w-soldering-iron-set-3pcs-set-hardware-product-designed-for-e-aa
 Category: Tools & DIY
 Subcategory: Electrical Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/ff614925b62cd086d8e7507f687028a5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/ff614925b62cd086d8e7507f687028a5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/099667dfbcc7c9d3cb9b99ef32b65e30.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/2fb78c01badcb182b147726eb51be812.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/8d7c47ab0641cc659b5ef1d2bd75878f.jpeg
 Meta Title: Senying 60W Soldering Iron Set (3Pcs Set) - Hardware Product Designe
 Meta Description: Buy Senying 60W Soldering Iron Set (3Pcs Set) - Hardware Product Designed For Electronics Repair And Daily Tool Maintenance Routine online in Pakistan from ASM
 Description: The Senying 60W Soldering Iron Set Is A Hardware Product Formulated To Help Provide Electronics Repair And Daily Tool Maintenance Utility During Use.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

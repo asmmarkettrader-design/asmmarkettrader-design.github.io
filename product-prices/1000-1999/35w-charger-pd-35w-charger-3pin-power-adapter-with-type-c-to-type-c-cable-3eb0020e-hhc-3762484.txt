@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 35W Charger PD 35W Charger 3PIN Power Adapter With Type-C to Type-C Cable And Without Cable Compatible with 15 & 16 Series
 Product ID: hhc-3762484
 SKU: hhc-3762484
@@ -7,11 +8,16 @@ Slug: 35w-charger-pd-35w-charger-3pin-power-adapter-with-type-c-to-type-c-cab-3e
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
-Meta Title: 35W Charger PD 35W Charger 3PIN Power Adapter With Type-C to Type-C
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/52a38435b2d008c4e82f396977249e8f.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/52a38435b2d008c4e82f396977249e8f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/254360c43a04d7fcb73b55f271a09125.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/f5928356eb68361e54a7863eb0f7f752.webp
+Meta Title: 35W Charger PD 35W Charger 3PIN Power Adapter With Type-C to Type-C 
 Meta Description: Buy 35W Charger PD 35W Charger 3PIN Power Adapter With Type-C to Type-C Cable And Without Cable Compatible with 15 & 16 Series online in Pakistan from ASM VEO.
 Description: 35W Charger PD 35W Charger 3PIN Power Adapter With Type-C to Type-C Cable And Without Cable Compatible with 15 & 16 Series lick Buynow And Choose Options Carefully Option 1 : Only 35w Charger Option 2 : 35w Charger With Type C To Type C Cable For 15 Pro Max 16 Pro Max Option 3 : 35w Charger With Typ
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

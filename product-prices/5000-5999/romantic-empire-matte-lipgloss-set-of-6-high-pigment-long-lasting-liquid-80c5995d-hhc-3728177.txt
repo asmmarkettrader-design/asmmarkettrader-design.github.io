@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Romantic Empire Matte Lipgloss Set of 6 – High Pigment, Long-Lasting Liquid Lip Gloss | Shades of Red Collection
 Product ID: hhc-3728177
 SKU: hhc-3728177
@@ -7,11 +8,16 @@ Slug: romantic-empire-matte-lipgloss-set-of-6-high-pigment-long-lasting-liqui-80
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/Copilot_20250905_174809.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/Copilot_20250905_174809.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/Copilot_20250905_174800.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/WhatsApp-Image-2025-09-03-at-1.49.46-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/WhatsApp-Image-2025-09-03-at-1.49.46-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/Copilot_20250905_175154-1.png
 Meta Title: Romantic Empire Matte Lipgloss Set of 6 – High Pigment, Long-Lasting
 Meta Description: Buy Romantic Empire Matte Lipgloss Set of 6 – High Pigment, Long-Lasting Liquid Lip Gloss | Shades of Red Collection online in Pakistan from ASM VEO. Romantic E
 Description: Romantic Empire Matte Lipgloss Set of 6 – High Pigment, Long-Lasting Liquid Lip Gloss | Shades of Red Collection
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 28‑Pcs Screw Tool Set | High‑Quality Screwdrivers & Bits | Durable Repair & Assembly Kit
 Product ID: hhc-3755299
 SKU: hhc-3755299
@@ -7,11 +8,16 @@ Slug: 28-pcs-screw-tool-set-high-quality-screwdrivers-bits-durable-repair-assemb
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/2c152b53721a5f6d2b0faad4d1debc27.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/2c152b53721a5f6d2b0faad4d1debc27.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/5f5ec14f04a9c85e7ade248fb4d6cda6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/0529363019cb91a0d278129dc942a98f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/5fe34ba1e986db63facba6bf86826b5f.jpeg
 Meta Title: 28‑Pcs Screw Tool Set | High‑Quality Screwdrivers & Bits | Durable R
 Meta Description: Buy 28‑Pcs Screw Tool Set | High‑Quality Screwdrivers & Bits | Durable Repair & Assembly Kit online in Pakistan from ASM VEO. 28‑piece screw tool set with preci
 Description: 28‑piece screw tool set with precision screwdrivers and bits. Durable, versatile kit for home, office & professional use.
-Regular Price: 879
-Sale Price: 879
+Wholesale Price: 829
+Regular Price: 1580
+Sale Price: 1262
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

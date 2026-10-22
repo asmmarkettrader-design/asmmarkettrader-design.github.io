@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-in-1 Professional Camera & Mobile Tripod Stand – Adjustable & Foldable
 Product ID: hhc-3764164
 SKU: hhc-3764164
@@ -7,11 +8,16 @@ Slug: 3-in-1-professional-camera-mobile-tripod-stand-adjustable-foldable-hhc-376
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/1b3aa56d28afafbc1026d466553fc540.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/1b3aa56d28afafbc1026d466553fc540.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/ad02506665adc0dbcc4f3b5897c7bc98.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/0eeb26a09b14a3a8d4ac2d2837ac3d24.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/b8cc15592411228e815d46da1743fb5a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/1f5daaf1939e77f54aac525f80f56b53.jpg
 Meta Title: 3-in-1 Professional Camera & Mobile Tripod Stand – Adjustable & Fold
 Meta Description: Buy 3-in-1 Professional Camera & Mobile Tripod Stand – Adjustable & Foldable online in Pakistan from ASM VEO. Capture steady photos and videos with this 3-in-1
 Description: Capture steady photos and videos with this 3-in-1 Professional Camera &amp; Mobile Tripod Stand. Its adjustable and foldable design allows you to easily set the desired height and carry it wherever you go. Perfect for smartphones, cameras, vlogging, live streaming, video calls, tutorials, and professional or everyday photography.Key Features:3-in-1 versatile tripod standCompatible with mobile phones and camerasAdjustable height for flexible positioningFoldable and portable designProvides stable support for photography and videoIdeal for vlogging, live streaming, and content creationEasy to set up and carry
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: KS ONE 2-In-1 Waterproof Lip Gloss & Eyeshadow Color – Multicolor
 Product ID: hhc-3756210
 SKU: hhc-3756210
@@ -7,11 +8,16 @@ Slug: ks-one-2-in-1-waterproof-lip-gloss-eyeshadow-color-multicolor-hhc-3756210
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/b52645c54360d71d7e054f5629dfcfc7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/b52645c54360d71d7e054f5629dfcfc7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/2ce67ae1bf14a2b95edc3ad014f4a976.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/29f58ddaf67e8eefe2705a2453371733.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/487b886c2318247bca5e975fc420aedc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/f7c4720f625d3b9edaef6e59bab45d1f.jpeg
 Meta Title: KS ONE 2-In-1 Waterproof Lip Gloss & Eyeshadow Color – Multicolor |
 Meta Description: Buy KS ONE 2-In-1 Waterproof Lip Gloss & Eyeshadow Color – Multicolor online in Pakistan from ASM VEO. KS ONE 2-In-1 Waterproof Lip Gloss & Eyeshadow delivers v
 Description: KS ONE 2-In-1 Waterproof Lip Gloss & Eyeshadow delivers vibrant multicolor shine with long-lasting wear. Perfect for effortless, on-the-go beauty.
-Regular Price: 761
-Sale Price: 761
+Wholesale Price: 711
+Regular Price: 1360
+Sale Price: 1091
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

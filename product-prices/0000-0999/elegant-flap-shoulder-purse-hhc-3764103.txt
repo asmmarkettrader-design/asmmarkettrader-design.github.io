@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Elegant Flap Shoulder Purse
 Product ID: hhc-3764103
 SKU: hhc-3764103
@@ -7,11 +8,16 @@ Slug: elegant-flap-shoulder-purse-hhc-3764103
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/381625fed1af0ce58e8603862628b7ea.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/381625fed1af0ce58e8603862628b7ea.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/40b89f2576115c930da1742a92605a7f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/d42360bbb5634fd7edd9e3829a387823.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/a3042ca163d399db9bae3d106b2964ec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/486ca5cc3ca937b8d61dc1416fd005f0.jpeg
 Meta Title: Elegant Flap Shoulder Purse | Buy Online in Pakistan
 Meta Description: Buy Elegant Flap Shoulder Purse online in Pakistan from ASM VEO. A stylish and spacious shoulder purse designed for everyday use. It features a neat flap d Cash
 Description: A stylish and spacious shoulder purse designed for everyday use. It features a neat flap design, secure gold-tone clasp, strong handle, and a well-shaped interior for daily essentials. Available in 5 colours, it offers a simple, elegant look for any occasion and is suitable for
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

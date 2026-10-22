@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Pcs High Pigmented Velvet Matte Lipstick Set – Long-Lasting Multicolor Lip Shades With Smooth, Soft Texture For A Perfect Everyday Glam Look
 Product ID: hhc-3753240
 SKU: hhc-3753240
@@ -7,11 +8,16 @@ Slug: 6-pcs-high-pigmented-velvet-matte-lipstick-set-long-lasting-multicolor-7ae
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/ab8b6956516bc24bea303ca3a46ca742.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/ab8b6956516bc24bea303ca3a46ca742.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/89a834c21089bd76b5a84bee500d8afc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/111d06e7b19426e015589b95dfd342a2.jpeg
 Meta Title: 6 Pcs High Pigmented Velvet Matte Lipstick Set – Long-Lasting Multic
 Meta Description: Buy 6 Pcs High Pigmented Velvet Matte Lipstick Set – Long-Lasting Multicolor Lip Shades With Smooth, Soft Texture For A Perfect Everyday Glam Look online in Pak
 Description: High Pigmented 6 Pcs Velvet Matte Lipstick Set With Rich Multicolor Shades Offering Smooth Texture, Intense Color, And Long-Lasting Wear.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

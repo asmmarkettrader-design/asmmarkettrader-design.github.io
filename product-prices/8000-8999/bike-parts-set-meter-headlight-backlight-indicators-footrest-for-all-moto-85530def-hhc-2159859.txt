@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bike Parts Set (Meter,Headlight,Backlight,Indicators,Footrest) For all motorcycle cd70 and China cd70
 Product ID: hhc-2159859
 SKU: hhc-2159859
@@ -7,11 +8,16 @@ Slug: bike-parts-set-meter-headlight-backlight-indicators-footrest-for-all-mo-85
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-10.27.49-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-10.27.49-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-10.27.49-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-11-12-at-1.49.07-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-11-12-at-1.55.11-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-11-12-at-1.53.30-PM-1.jpeg
 Meta Title: Bike Parts Set (Meter,Headlight,Backlight,Indicators,Footrest) For a
 Meta Description: Buy Bike Parts Set (Meter,Headlight,Backlight,Indicators,Footrest) For all motorcycle cd70 and China cd70 online in Pakistan from ASM VEO. Discription Product d
 Description: Discription Product details of Bike Parts Set (Meter,Headlight,Backlight,Indicators,Footrest) For all motorcycle cd70 and China cd70 parts kit set for All bike CD70 &amp; China Cd70 Indicators Backlight Headlight Meter Footrest parts kit set for All bike CD70 &amp; China Cd70 Indicators Backlight Headlight Meter Footrest [video width="848" height="480" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Video-2024-12-31-at-1.06.42-PM.mp4"][/video]
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

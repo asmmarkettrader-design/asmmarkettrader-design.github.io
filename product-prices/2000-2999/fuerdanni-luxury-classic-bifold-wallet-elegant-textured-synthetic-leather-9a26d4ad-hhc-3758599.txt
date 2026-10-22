@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fuerdanni Luxury Classic Bifold Wallet – Elegant Textured Synthetic Leather Wallet for Men
 Product ID: hhc-3758599
 SKU: hhc-3758599
@@ -7,11 +8,16 @@ Slug: fuerdanni-luxury-classic-bifold-wallet-elegant-textured-synthetic-leath-9a
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Fuerdanni Luxury Classic Bifold Wallet – Elegant Textured Synthetic
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/b667df710f3e3ddc77bdf365e12d2394.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/b667df710f3e3ddc77bdf365e12d2394.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/3761bd0a371441482dc65efbbb2b3396.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/1a27ebd1b2cea828ce256fb9078320ef.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/369eb420d7e28d97102b63136bff23d9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/d5cafb2dbdda413955574d16cb951649.png
+Meta Title: Fuerdanni Luxury Classic Bifold Wallet – Elegant Textured Synthetic 
 Meta Description: Buy Fuerdanni Luxury Classic Bifold Wallet – Elegant Textured Synthetic Leather Wallet for Men online in Pakistan from ASM VEO. Organize your essentials in styl
 Description: Organize your essentials in style with this Fuerdanni Classic Bifold Wallet. Featuring a unique combination of linear textures and a smooth wood-grain finish, this slim wallet offers a sophisticated look for professional and casual daily use.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

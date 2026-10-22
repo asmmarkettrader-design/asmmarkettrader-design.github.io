@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Car Air Pump 260PSI DC 12V Electric Compressor Powerful Tyre Inflator For Car Truck SUV Motorcycle
 Product ID: hhc-3757535
 SKU: hhc-3757535
@@ -7,11 +8,16 @@ Slug: portable-car-air-pump-260psi-dc-12v-electric-compressor-powerful-tyre-i-9b
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/36c90b7ad6ad73d6f67b79d71d28af2a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/36c90b7ad6ad73d6f67b79d71d28af2a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/e5d63a9aecd3df67c61726d75ca36366.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/17dadc294e2be31960f6146c36a27055.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/d8d8ab6881af1e16229499506a1b55fd.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/3ce2157bfeb9b6c08ca3f8f067f8b891.jpg
 Meta Title: Portable Car Air Pump 260PSI DC 12V Electric Compressor Powerful Tyr
 Meta Description: Buy Portable Car Air Pump 260PSI DC 12V Electric Compressor Powerful Tyre Inflator For Car Truck SUV Motorcycle online in Pakistan from ASM VEO. Portable Car Ai
 Description: Portable Car Air Pump 260PSI DC 12V Electric Compressor Powerful Tyre Inflator For Car Truck SUV Motorcycle.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

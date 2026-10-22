@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premier Nasal Dilator White Starter Kit – Sleep and Sport Nasal Dilator for 15 Days of Better Breathing & Snoring Relief
 Product ID: hhc-3760986
 SKU: hhc-3760986
@@ -7,11 +8,16 @@ Slug: premier-nasal-dilator-white-starter-kit-sleep-and-sport-nasal-dilator-f-26
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/37fd563962cddd69915c4ede00c56a7d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/37fd563962cddd69915c4ede00c56a7d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/3f8b7fc59db1def337e6207a25abd92a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/d7331ed0ee07ebd81861155ed2edf12d.jpg
 Meta Title: Premier Nasal Dilator White Starter Kit – Sleep and Sport Nasal Dila
 Meta Description: Buy Premier Nasal Dilator White Starter Kit – Sleep and Sport Nasal Dilator for 15 Days of Better Breathing & Snoring Relief online in Pakistan from ASM VEO. Br
 Description: Breathe easy and improve your airflow with the Premier Nasal Dilator White Starter Kit. Specially engineered for both sleep and sport,
-Regular Price: 755
-Sale Price: 755
+Wholesale Price: 705
+Regular Price: 1350
+Sale Price: 1082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

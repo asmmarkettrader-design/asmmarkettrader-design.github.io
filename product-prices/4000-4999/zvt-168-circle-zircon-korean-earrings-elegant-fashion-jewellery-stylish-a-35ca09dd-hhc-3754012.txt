@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ZVT-168 Circle Zircon Korean Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women
 Product ID: hhc-3754012
 SKU: hhc-3754012
@@ -7,11 +8,16 @@ Slug: zvt-168-circle-zircon-korean-earrings-elegant-fashion-jewellery-stylish-35
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/35c24611b4f5512d320aca3303f525e9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/35c24611b4f5512d320aca3303f525e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/dd8f2b770b8cfa21615c054a3e815bc6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/61ac45c1fcfddb6ea952c29ce82e751a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/056f9ab71f2952769daead26e5060761.jpeg
 Meta Title: ZVT-168 Circle Zircon Korean Earrings – Elegant Fashion Jewellery, S
 Meta Description: Buy ZVT-168 Circle Zircon Korean Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women online in Pakistan from ASM VEO. ZVT-168 circle zircon Korean
 Description: ZVT-168 circle zircon Korean earrings, stylish and durable design for women’s fashion and daily wear.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

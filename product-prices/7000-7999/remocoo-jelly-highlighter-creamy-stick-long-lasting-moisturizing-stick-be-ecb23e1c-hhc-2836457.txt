@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Remocoo Jelly highlighter Creamy Stick Long Lasting Moisturizing Stick | Best Quality Moisturising Stick
 Product ID: hhc-2836457
 SKU: hhc-2836457
@@ -7,11 +8,16 @@ Slug: remocoo-jelly-highlighter-creamy-stick-long-lasting-moisturizing-stick-ecb
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-4.07.25-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-4.07.25-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-3.06.35-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-3.06.34-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-3.06.33-PM.jpeg
 Meta Title: Remocoo Jelly highlighter Creamy Stick Long Lasting Moisturizing Sti
 Meta Description: Buy Remocoo Jelly highlighter Creamy Stick Long Lasting Moisturizing Stick | Best Quality Moisturising Stick online in Pakistan from ASM VEO. Remocoo Jelly high
 Description: Remocoo Jelly highlighter Creamy Stick Long Lasting Moisturizing Stick | Best Quality Moisturising Stick Material:Creamy Product Type:jelly highlighter Shades:Shade 1, Shade 2, Shade 3, Shade 4, Shade 5, Shade 6, &nbsp;
-Regular Price: 643
-Sale Price: 643
+Wholesale Price: 593
+Regular Price: 1150
+Sale Price: 920
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

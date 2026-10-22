@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FLY Universal Mechanical Bike & Motorcycle Phone Mount – 360° Adjustable Handlebar Bracket for Bicycles, Scooters & E-Bikes
 Product ID: hhc-3760432
 SKU: hhc-3760432
@@ -7,11 +8,16 @@ Slug: fly-universal-mechanical-bike-motorcycle-phone-mount-360-adjustable-han-03
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/502dbd9bdfa9b1fe681fb07baa8fe534.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/502dbd9bdfa9b1fe681fb07baa8fe534.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/85a54ef62c318dc1dc360acf5f6d3dab.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/b9113ea39125ae460ee70198fa128923.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/25df1592d79dcd35eecc1469e72577e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/917e1d021b300c7ce82322d62343a0c7.jpeg
 Meta Title: FLY Universal Mechanical Bike & Motorcycle Phone Mount – 360° Adjust
 Meta Description: Buy FLY Universal Mechanical Bike & Motorcycle Phone Mount – 360° Adjustable Handlebar Bracket for Bicycles, Scooters & E-Bikes online in Pakistan from ASM VEO.
 Description: Ride securely with the FLY Universal Mechanical Handlebar Phone Mount. Engineered with a heavy-duty mechanical locking grip
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

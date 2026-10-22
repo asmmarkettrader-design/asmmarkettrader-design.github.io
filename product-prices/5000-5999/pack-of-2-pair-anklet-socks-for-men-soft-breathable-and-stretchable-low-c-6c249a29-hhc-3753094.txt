@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 2 Pair Anklet Socks For Men – Soft, Breathable, And Stretchable Low-Cut Socks For Daily Comfort And Style (Random Design)
 Product ID: hhc-3753094
 SKU: hhc-3753094
@@ -7,11 +8,16 @@ Slug: pack-of-2-pair-anklet-socks-for-men-soft-breathable-and-stretchable-low-6c
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/8978a9bc29acd8f5e46650aba53cc4ab.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/8978a9bc29acd8f5e46650aba53cc4ab.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/242a1ec0f4d77b71080d7bfe98adc90f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/549bdcaf6202861cd629758eca0db9de.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/90a55636b9b3ecf9eea06a76e1eef460.jpeg
 Meta Title: Pack Of 2 Pair Anklet Socks For Men – Soft, Breathable, And Stretcha
 Meta Description: Buy Pack Of 2 Pair Anklet Socks For Men – Soft, Breathable, And Stretchable Low-Cut Socks For Daily Comfort And Style (Random Design) online in Pakistan from AS
 Description: Pack Of 2 Pair Anklet Socks For Men Featuring Soft, Breathable Fabric And Random Stylish Designs For Comfortable Daily Wear.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

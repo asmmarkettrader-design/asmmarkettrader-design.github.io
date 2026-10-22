@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: PERFECT CARE Hair Serum | Ultimate Gloss Formula with Argan Oil & Vitamin E | Rapid Growth, Anti-Greying, Anti-Hairfall & Density Promotion (4.2 Fl.Oz/120mL)
 Product ID: hhc-3754329
 SKU: hhc-3754329
@@ -7,11 +8,16 @@ Slug: perfect-care-hair-serum-ultimate-gloss-formula-with-argan-oil-vitamin-e-b8
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/9e0d10e5fd906aab7f38a40fccbb30c4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/9e0d10e5fd906aab7f38a40fccbb30c4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/9a2c1c69a6dee37889f7d56c17113a9d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/97f12eaa1fa7f574874cfc1848635321.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/6edd013770d2f88eb59281215d587fa2.png
 Meta Title: PERFECT CARE Hair Serum | Ultimate Gloss Formula with Argan Oil & Vi
 Meta Description: Buy PERFECT CARE Hair Serum | Ultimate Gloss Formula with Argan Oil & Vitamin E | Rapid Growth, Anti-Greying, Anti-Hairfall & Density Promotion (4.2 Fl.Oz/120mL
 Description: Achieve Ultimate Gloss and stronger hair with PERFECT CARE Hair Serum. Enriched with Argan Oil and Vitamin E, this 120mL formula is designed for rapid hair growth, anti-greying action, and powerful anti-hairfall protection to promote visible hair density.
-Regular Price: 1786
-Sale Price: 1786
+Wholesale Price: 1786
+Regular Price: 3240
+Sale Price: 2591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

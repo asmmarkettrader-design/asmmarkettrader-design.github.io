@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sabawoon USB-C To Lightning Cable | 1m White Fast Charging & Data Transfer Cord
 Product ID: hhc-3758471
 SKU: hhc-3758471
@@ -7,11 +8,16 @@ Slug: sabawoon-usb-c-to-lightning-cable-1m-white-fast-charging-data-transfer-cor
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/0dfc80415c5fa64e8a66f27eb762fa08.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/0dfc80415c5fa64e8a66f27eb762fa08.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/55cb76171d0d9091776ca2a42242a4b1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/d2822107136eec2de9ad8c6a5fc39c22.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/bcb76f10694572009e3e87beb6f53ddb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/91d76ac5124db8962872ffbfcb61a632.png
 Meta Title: Sabawoon USB-C To Lightning Cable | 1m White Fast Charging & Data Tr
 Meta Description: Buy Sabawoon USB-C To Lightning Cable | 1m White Fast Charging & Data Transfer Cord online in Pakistan from ASM VEO. High-Quality Sabawoon USB-C To Lightning Ca
 Description: High-Quality Sabawoon USB-C To Lightning Cable | 1-Meter Length | Fast Charging & Reliable Data Transfer
-Regular Price: 586
-Sale Price: 586
+Wholesale Price: 536
+Regular Price: 1050
+Sale Price: 837
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

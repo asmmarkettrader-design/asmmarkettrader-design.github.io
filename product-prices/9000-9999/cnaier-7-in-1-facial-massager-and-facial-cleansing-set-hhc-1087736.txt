@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CNAIER 7 in 1 Facial Massager and Facial Cleansing Set
 Product ID: hhc-1087736
 SKU: hhc-1087736
@@ -7,11 +8,16 @@ Slug: cnaier-7-in-1-facial-massager-and-facial-cleansing-set-hhc-1087736
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/02c35ac6de4767c3b1a0410a47d7e124.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/02c35ac6de4767c3b1a0410a47d7e124.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/05207bf7f819b4b057abffa0f534c238.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/H5376db7ac0b64fe2960811768853d257b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/Hf4847a149eb347868063962d2d8b9b38z.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/H022185f13f3c4cb9b157cea8169abce5Y.jpg
 Meta Title: CNAIER 7 in 1 Facial Massager and Facial Cleansing Set | Buy Online
 Meta Description: Buy CNAIER 7 in 1 Facial Massager and Facial Cleansing Set online in Pakistan from ASM VEO. DESCRIPTION: Effectively clean through your pore, prevent whelk and
 Description: DESCRIPTION: Effectively clean through your pore, prevent whelk and fade the black eye It comes with 7different heads to fit different request, and all heads can rotate 360 degrees Meet your need of both cleaning and massage on face or body Suitable for daily use . It is suitable for all types of skins.Smooth skin texture, skin refresh Modeling beautiful, not changeful form, high temperature resistant,do not harm the Skin Note: Its Cell operated
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

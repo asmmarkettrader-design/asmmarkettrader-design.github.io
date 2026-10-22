@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 In 1 Deal FV Orange Gel And Flicka Pack Of 3 With Liquid Foundation And Primer
 Product ID: hhc-3757304
 SKU: hhc-3757304
@@ -7,11 +8,16 @@ Slug: 3-in-1-deal-fv-orange-gel-and-flicka-pack-of-3-with-liquid-foundation-and-
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/a1e35f864619ad8d5510d8ac6d7f46bd.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/a1e35f864619ad8d5510d8ac6d7f46bd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/48d1902c86e955373a34ae228431c5f8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/253b6cf5f5bb8f7dad469733234fdf13.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/47453c8c047bc324d476140efa9876bf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/47216c6135f33d2d95ef1069cfe71545.jpeg
 Meta Title: 3 In 1 Deal FV Orange Gel And Flicka Pack Of 3 With Liquid Foundatio
 Meta Description: Buy 3 In 1 Deal FV Orange Gel And Flicka Pack Of 3 With Liquid Foundation And Primer online in Pakistan from ASM VEO. 3 In 1 Deal Pack Of 3 Includes Orange Gel
 Description: 3 In 1 Deal Pack Of 3 Includes Orange Gel Liquid Foundation And Primer Premium Cream Based Formula.
-Regular Price: 1089
-Sale Price: 1089
+Wholesale Price: 1039
+Regular Price: 1920
+Sale Price: 1535
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

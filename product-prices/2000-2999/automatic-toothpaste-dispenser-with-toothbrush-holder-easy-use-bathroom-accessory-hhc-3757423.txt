@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Automatic Toothpaste Dispenser With Toothbrush Holder Easy Use Bathroom Accessory
 Product ID: hhc-3757423
 SKU: hhc-3757423
@@ -7,11 +8,16 @@ Slug: automatic-toothpaste-dispenser-with-toothbrush-holder-easy-use-bathroom-fe
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/63afe4a1bc090c0da3b2e032dc908161.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/63afe4a1bc090c0da3b2e032dc908161.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/fd536003418ec7f1f823261c665f0c6d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/3c1f0aaa369d64d79ec9b8cf97377638.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/c2a1f85197f3525c181a903ce1a0cee2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/7c96b4db499c71138df893042f0ad4e4.jpg
 Meta Title: Automatic Toothpaste Dispenser With Toothbrush Holder Easy Use Bathr
 Meta Description: Buy Automatic Toothpaste Dispenser With Toothbrush Holder Easy Use Bathroom Accessory online in Pakistan from ASM VEO. Automatic Toothpaste Dispenser With Tooth
 Description: Automatic Toothpaste Dispenser With Toothbrush Holder Convenient And Hygienic Bathroom Accessory.
-Regular Price: 456
-Sale Price: 456
+Wholesale Price: 406
+Regular Price: 840
+Sale Price: 669
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

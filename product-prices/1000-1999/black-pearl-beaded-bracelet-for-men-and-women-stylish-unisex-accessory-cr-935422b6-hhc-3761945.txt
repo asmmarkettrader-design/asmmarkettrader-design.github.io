@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Pearl Beaded Bracelet For Men And Women - Stylish Unisex Accessory Crafted With Alloy And Decorative Beads In A Free Size Design
 Product ID: hhc-3761945
 SKU: hhc-3761945
@@ -7,11 +8,16 @@ Slug: black-pearl-beaded-bracelet-for-men-and-women-stylish-unisex-accessory-935
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/4a853f452eec91ce425b21f61038ac81.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/4a853f452eec91ce425b21f61038ac81.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/370d9e254420b5c8fa6293b98cc217e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/6b7f63e54042cd5c93b61e733b0f4e0f.jpeg
 Meta Title: Black Pearl Beaded Bracelet For Men And Women - Stylish Unisex Acces
 Meta Description: Buy Black Pearl Beaded Bracelet For Men And Women - Stylish Unisex Accessory Crafted With Alloy And Decorative Beads In A Free Size Design online in Pakistan fr
 Description: The Black Pearl Beaded Bracelet Is A Stylish Unisex Accessory Featuring A Durable Alloy Construction And Decorative Beads In A Comfortable Free Size Fit.
-Regular Price: 207
-Sale Price: 207
+Wholesale Price: 157
+Regular Price: 446
+Sale Price: 296
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

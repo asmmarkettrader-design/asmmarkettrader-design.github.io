@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: XMOP Floor Mop | Advanced Cleaning Technology | Easy Floor Wiping | Microfiber Head | Durable & Portable | With 1 Cloth
 Product ID: hhc-3756321
 SKU: hhc-3756321
@@ -7,11 +8,16 @@ Slug: xmop-floor-mop-advanced-cleaning-technology-easy-floor-wiping-microfibe-e7
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/f2df74b0adbefe80a1e59f9c7003d89f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/f2df74b0adbefe80a1e59f9c7003d89f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/8d0bf3e269ca638180a729e2a8cb05a3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/1bf34b18bb9259259549798e945e5990.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/81757b4e281ee933f77d802276eed930.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/aaa6916b4bbcb6263a786ca990a67e05.jpg
 Meta Title: XMOP Floor Mop | Advanced Cleaning Technology | Easy Floor Wiping |
 Meta Description: Buy XMOP Floor Mop | Advanced Cleaning Technology | Easy Floor Wiping | Microfiber Head | Durable & Portable | With 1 Cloth online in Pakistan from ASM VEO. XMO
 Description: XMOP floor mop with microfiber head for flawless cleaning. Easy to use, lightweight, and perfect for tiles, sinks, and all floor types.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ancher Plus 2200 Watt Hotplate – High-Power Electric Cooking Solution
 Product ID: hhc-3756780
 SKU: hhc-3756780
@@ -7,11 +8,16 @@ Slug: ancher-plus-2200-watt-hotplate-high-power-electric-cooking-solution-hhc-37
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/8ec5579cb1620554ac08a0761fc2270b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/8ec5579cb1620554ac08a0761fc2270b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/4dc9ef748d48fb76854b84284ae5c4b5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/e164a0f5f5b67c495860d4ceba38f719.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/dd384ada5bd9b9d53b962dccc6f7a6df.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/c18742ee36a524db9ee24c75746f1297.jpeg
 Meta Title: Ancher Plus 2200 Watt Hotplate – High-Power Electric Cooking Solutio
 Meta Description: Buy Ancher Plus 2200 Watt Hotplate – High-Power Electric Cooking Solution online in Pakistan from ASM VEO. Efficient and powerful, the Ancher Plus 2200 Watt Hot
 Description: Efficient and powerful, the Ancher Plus 2200 Watt Hotplate delivers fast, even heating for all your cooking needs. Compact, durable, and easy to use, it is ideal for kitchens, offices, or small spaces.
-Regular Price: 5324
-Sale Price: 5324
+Wholesale Price: 5324
+Regular Price: 8880
+Sale Price: 7101
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

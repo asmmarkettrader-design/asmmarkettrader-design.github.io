@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flicka Professional Silk Touch Milk-Cream Concentrate – 3-in-1 Moisturizer, Primer & Makeup Remover - 60g
 Product ID: hhc-3754859
 SKU: hhc-3754859
@@ -7,11 +8,16 @@ Slug: flicka-professional-silk-touch-milk-cream-concentrate-3-in-1-moisturize-26
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/af6647ebac52dca8c73c2787319c44e6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/af6647ebac52dca8c73c2787319c44e6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/4f622b9cd831dc2dd0f2b0825f36e58a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/91e66c45406c9f062173bda6e676f49d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/4c1f6a47136be7932b8a3cc33589aae4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/e8114994065bcaf3a5c4ac2916b799aa.png
 Meta Title: Flicka Professional Silk Touch Milk-Cream Concentrate – 3-in-1 Moist
 Meta Description: Buy Flicka Professional Silk Touch Milk-Cream Concentrate – 3-in-1 Moisturizer, Primer & Makeup Remover - 60g online in Pakistan from ASM VEO. Experience the ul
 Description: Experience the ultimate multitasker with Flicka Professional Silk Touch Milk-Cream. This luxurious, lightweight formula acts as a deep moisturizer, a smoothing makeup primer, and a gentle cleanser. Enriched with Aloe Vera and Shea Butter, it leaves skin feeling velvety soft, hydrated, and perfectly p
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

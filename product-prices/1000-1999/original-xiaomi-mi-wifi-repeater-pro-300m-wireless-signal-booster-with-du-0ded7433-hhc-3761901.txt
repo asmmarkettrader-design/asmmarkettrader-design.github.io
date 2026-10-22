@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Original Xiaomi Mi Wifi Repeater Pro 300m - Wireless Signal Booster With Dual External Antenna For Expanded Network Coverage
 Product ID: hhc-3761901
 SKU: hhc-3761901
@@ -7,11 +8,16 @@ Slug: original-xiaomi-mi-wifi-repeater-pro-300m-wireless-signal-booster-with-0de
 Category: Electronics
 Subcategory: Gadgets
 Brand: Xiaomi
-Meta Title: Original Xiaomi Mi Wifi Repeater Pro 300m - Wireless Signal Booster
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/a72cc0f8f8891f1ffd8699042e31e7d9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/a72cc0f8f8891f1ffd8699042e31e7d9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/49245750f03b9e9d70ea40a7998de203.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/d7487e077520e438b5053ac1024f24f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/0092122744195e3167fee1300cb9faf2.jpeg
+Meta Title: Original Xiaomi Mi Wifi Repeater Pro 300m - Wireless Signal Booster 
 Meta Description: Buy Original Xiaomi Mi Wifi Repeater Pro 300m - Wireless Signal Booster With Dual External Antenna For Expanded Network Coverage online in Pakistan from ASM VEO
 Description: The Original Xiaomi Mi Wifi Repeater Pro 300m Is A Powerful Wireless Amplifier Designed To Eliminate Dead Zones And Extend Network Coverage Throughout Your Home.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

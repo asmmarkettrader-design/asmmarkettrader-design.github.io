@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sky Humidifier | Ultrasonic Air Humidifier & Aroma Diffuser | Cool Mist Maker for Fresh, Moist & Relaxing Room Atmosphere
 Product ID: hhc-3753338
 SKU: hhc-3753338
@@ -7,11 +8,16 @@ Slug: sky-humidifier-ultrasonic-air-humidifier-aroma-diffuser-cool-mist-maker-88
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/d46042f479fd67f4981d85359c01aacd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/d46042f479fd67f4981d85359c01aacd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/1e597097b49b1cbd2395a45e56e44a21.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/ff74c69c1f792399b1557acea5f3476e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/a2c6885fb03e4752a83b759d3993907c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/a36a78cd92e7e9b3e2f68ab6fa2f9190.jpg
 Meta Title: Sky Humidifier | Ultrasonic Air Humidifier & Aroma Diffuser | Cool M
 Meta Description: Buy Sky Humidifier | Ultrasonic Air Humidifier & Aroma Diffuser | Cool Mist Maker for Fresh, Moist & Relaxing Room Atmosphere online in Pakistan from ASM VEO. S
 Description: Sky Humidifier adds moisture and freshness to the air — ideal for bedrooms, offices, and living spaces with calming LED lights.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

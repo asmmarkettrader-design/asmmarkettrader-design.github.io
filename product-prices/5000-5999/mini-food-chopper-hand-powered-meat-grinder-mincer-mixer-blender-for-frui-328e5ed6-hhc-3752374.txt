@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Food Chopper – Hand-Powered Meat Grinder, Mincer, Mixer & Blender for Fruits, Vegetables, Nuts, and Meat | Powerful & Portable Kitchen Tool
 Product ID: hhc-3752374
 SKU: hhc-3752374
@@ -7,11 +8,16 @@ Slug: mini-food-chopper-hand-powered-meat-grinder-mincer-mixer-blender-for-fr-32
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/b84b3e39608d51fb92bee974a960d16d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/b84b3e39608d51fb92bee974a960d16d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/75a118549994f04df2f81b873ac76d99.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/fa1d4f10a90c15d1f3c9c09c771c8a00.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/21b5d35ac71b6a5c2cd18400b0d79023.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/8779c1ace5aef01d3b366bf854cc51ad.jpg
 Meta Title: Mini Food Chopper – Hand-Powered Meat Grinder, Mincer, Mixer & Blend
 Meta Description: Buy Mini Food Chopper – Hand-Powered Meat Grinder, Mincer, Mixer & Blender for Fruits, Vegetables, Nuts, and Meat | Powerful & Portable Kitchen Tool online in P
 Description: Chop, mince, blend, and mix with ease using this hand-powered mini food chopper. A powerful, portable, and versatile tool for everyday kitchen tasks.
-Regular Price: 421
-Sale Price: 421
+Wholesale Price: 371
+Regular Price: 770
+Sale Price: 616
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

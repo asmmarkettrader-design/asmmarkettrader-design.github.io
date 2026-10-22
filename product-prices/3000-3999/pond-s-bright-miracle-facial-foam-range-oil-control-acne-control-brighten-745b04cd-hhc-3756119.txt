@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: POND’S Bright Miracle Facial Foam Range – Oil Control, Acne Control, Brightening & Whip Collagen Face Wash
 Product ID: hhc-3756119
 SKU: hhc-3756119
@@ -7,11 +8,16 @@ Slug: pond-s-bright-miracle-facial-foam-range-oil-control-acne-control-bright-74
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/70ce9663eb07be3bced95828571a6d0e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/70ce9663eb07be3bced95828571a6d0e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/0d38641989fcd312022dd196537476bc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/53eff9b48edca6c9002e0e54de27783a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/b47f28f725cbf8b61fe5cc22c17502d0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/31/09617accef5e2fe6a47a3a0365cab7c4.jpeg
 Meta Title: POND’S Bright Miracle Facial Foam Range – Oil Control, Acne Control,
 Meta Description: Buy POND’S Bright Miracle Facial Foam Range – Oil Control, Acne Control, Brightening & Whip Collagen Face Wash online in Pakistan from ASM VEO. POND’S Bright Mi
 Description: POND’S Bright Miracle facial foam range advanced Niasorcinol™ technology ke sath aata hai jo oil control, acne reduction, skin brightening aur gentle cleansing provide karta hai. Har skin concern ke liye ek perfect solution.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magic Water Drawing Book for Kids – Reusable Mess-Free Coloring Book with Magic Pen
 Product ID: hhc-3764049
 SKU: hhc-3764049
@@ -7,11 +8,16 @@ Slug: magic-water-drawing-book-for-kids-reusable-mess-free-coloring-book-with-25
 Category: Books & Stationery
 Subcategory: Art & Craft Materials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/e889ab345c3fe9d133d4fc52ee33bb1c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/e889ab345c3fe9d133d4fc52ee33bb1c.jpeg
 Meta Title: Magic Water Drawing Book for Kids – Reusable Mess-Free Coloring Book
 Meta Description: Buy Magic Water Drawing Book for Kids – Reusable Mess-Free Coloring Book with Magic Pen online in Pakistan from ASM VEO. A reusable magic water coloring book de
 Description: A reusable magic water coloring book designed for mess-free drawing and learning. Simply fill the included pen with clean water to reveal colorful hidden pictures, which fade away as pages dry for endless coloring fun.
-Regular Price: 210
-Sale Price: 210
+Wholesale Price: 160
+Regular Price: 450
+Sale Price: 300
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

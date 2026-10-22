@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bear Storage Box For Clothes Designed As A Storage Box Suitable For Holding Clothes (Random Colors)
 Product ID: hhc-3753590
 SKU: hhc-3753590
@@ -7,11 +8,16 @@ Slug: bear-storage-box-for-clothes-designed-as-a-storage-box-suitable-for-hol-f4
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: Bear Storage Box For Clothes Designed As A Storage Box Suitable For
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/d43cec647d42f20df4b422535abfa9b0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/d43cec647d42f20df4b422535abfa9b0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/5c3acb851e0f4f3fbdaef53d11f861eb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/abd215c2cc8e99cc8e02fa67218a27f5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/2d8a44b995dbc81d37bf5c2be5ef6dcd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/b31110b11fe8f0dd289f81b362a3e1e7.jpeg
+Meta Title: Bear Storage Box For Clothes Designed As A Storage Box Suitable For 
 Meta Description: Buy Bear Storage Box For Clothes Designed As A Storage Box Suitable For Holding Clothes (Random Colors) online in Pakistan from ASM VEO. Bear Storage Box For Cl
 Description: Bear Storage Box For Clothes Provides A Storage Box Intended For Organizing Clothes.
-Regular Price: 257
-Sale Price: 257
+Wholesale Price: 207
+Regular Price: 520
+Sale Price: 370
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

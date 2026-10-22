@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Comfortable Baby Carrier Belt (Random Color)
 Product ID: hhc-2166968
 SKU: hhc-2166968
@@ -7,11 +8,16 @@ Slug: comfortable-baby-carrier-belt-random-color-hhc-2166968
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/10/1-7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/10/1-7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/10/2...jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/10/3-6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/5-4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/4-4.jpg
 Meta Title: Comfortable Baby Carrier Belt (Random Color) | Buy Online in Pakista
 Meta Description: Buy Comfortable Baby Carrier Belt (Random Color) online in Pakistan from ASM VEO. [video width="360" height="360" mp4="https://hhcnewapp.blr1.digitaloceanspaces
 Description: [video width="360" height="360" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2023/07/WhatsApp-Video-2023-07-31-at-12.54.18-AM.mp4"][/video]Original Video[video width="480" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Video-2024-10-16-at-1.11.18-AM.mp4"][/video]Double Sided AdjustmentIdeal Weight DistributionWell-constructed DesignSecure BucklesDurable FabricFinely StitchedCarrying Capacity: 3.5-12 KGSuitable for 4-12 Months Old
-Regular Price: 1260
-Sale Price: 1260
+Wholesale Price: 1210
+Regular Price: 2220
+Sale Price: 1778
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

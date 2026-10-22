@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Samsung Usb Data Cable P 1000 Durable Quality Reliable Utility Easy Connectivity
 Product ID: hhc-3754029
 SKU: hhc-3754029
@@ -7,11 +8,16 @@ Slug: samsung-usb-data-cable-p-1000-durable-quality-reliable-utility-easy-connec
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Samsung
-Meta Title: Samsung Usb Data Cable P 1000 Durable Quality Reliable Utility Easy
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/f7edbe955011fc5c8d287d0cc63626c8.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/f7edbe955011fc5c8d287d0cc63626c8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/6de100499d1783cb4f0c318a074c95b7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/28e2ef1430713d8d0afc148e2acaf5e8.jpeg
+Meta Title: Samsung Usb Data Cable P 1000 Durable Quality Reliable Utility Easy 
 Meta Description: Buy Samsung Usb Data Cable P 1000 Durable Quality Reliable Utility Easy Connectivity online in Pakistan from ASM VEO. Samsung Usb Data Cable P 1000 Provides Dur
 Description: Samsung Usb Data Cable P 1000 Provides Durable Quality Reliable Utility Easy Connectivity And Compact Design
-Regular Price: 383
-Sale Price: 383
+Wholesale Price: 333
+Regular Price: 710
+Sale Price: 560
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

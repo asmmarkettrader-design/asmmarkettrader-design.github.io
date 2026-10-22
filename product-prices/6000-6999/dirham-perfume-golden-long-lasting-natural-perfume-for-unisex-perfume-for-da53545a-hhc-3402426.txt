@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dirham Perfume Golden - Long-Lasting | Natural Perfume For Unisex | Perfume For Unisex | Fragrance For Men - 100 ml
 Product ID: hhc-3402426
 SKU: hhc-3402426
@@ -7,11 +8,16 @@ Slug: dirham-perfume-golden-long-lasting-natural-perfume-for-unisex-perfume-f-da
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-24-at-8.16.35-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-24-at-8.16.35-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-24-at-8.16.36-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/imgi_59_Sa1d7853bdf0d4a80afa5f52bd87bf37b9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/Web_Photo_Editor-2-7.jpg
 Meta Title: Dirham Perfume Golden - Long-Lasting | Natural Perfume For Unisex |
 Meta Description: Buy Dirham Perfume Golden - Long-Lasting | Natural Perfume For Unisex | Perfume For Unisex | Fragrance For Men - 100 ml online in Pakistan from ASM VEO. Dirham
 Description: Dirham Perfume Golden - Long-Lasting | Natural Perfume For Unisex | Perfume For Unisex | Fragrance For Men - 100 ml Perfume Name: Dirham Natural Perfume Bottle Size: 100ml Long-lasting fragrance: 3 to 4 hours Ideal for daily use and special occasions Fresh and sophisticated scent Guaranteed to captivate the senses Quality: Copy Material: Liquid Gender Type: Unisex Color: Golden Quantity: 100 ml Package Includes: 1 x Perfume
-Regular Price: 983
-Sale Price: 983
+Wholesale Price: 537
+Regular Price: 1290
+Sale Price: 1033
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

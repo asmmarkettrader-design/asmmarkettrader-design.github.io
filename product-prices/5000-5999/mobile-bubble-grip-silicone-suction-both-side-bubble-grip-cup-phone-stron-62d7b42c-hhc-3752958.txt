@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mobile Bubble Grip | Silicone Suction Both Side Bubble Grip Cup Phone Strong Holder For Hands-Free Use | Universal Mobile Phone Stand (Random Color)
 Product ID: hhc-3752958
 SKU: hhc-3752958
@@ -7,11 +8,16 @@ Slug: mobile-bubble-grip-silicone-suction-both-side-bubble-grip-cup-phone-str-62
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/eac2c2648a8a29ce84bfbe31b1e4c6aa.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/eac2c2648a8a29ce84bfbe31b1e4c6aa.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/0f785e80f9669812483dd07d882d01db.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/b70145cd59e3b3a680ab08780aeb3ed7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/09198e80580d5d5a2f1ca7c3bd26a8f3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/6e618aac337bb7cb5db3e142e068628a.jpeg
 Meta Title: Mobile Bubble Grip | Silicone Suction Both Side Bubble Grip Cup Phon
 Meta Description: Buy Mobile Bubble Grip | Silicone Suction Both Side Bubble Grip Cup Phone Strong Holder For Hands-Free Use | Universal Mobile Phone Stand (Random Color) online
 Description: Durable Silicone Bubble Grip With Double-Sided Suction Cups For A Secure, Hands-Free Mobile Holding Experience. Suitable For All Smartphone Models.
-Regular Price: 176
-Sale Price: 176
+Wholesale Price: 126
+Regular Price: 399
+Sale Price: 249
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

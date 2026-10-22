@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Crown Intense Men’s Perfume – 100ml Long-Lasting Eau de Parfum with 24-Hour Scent
 Product ID: hhc-3752877
 SKU: hhc-3752877
@@ -7,11 +8,16 @@ Slug: crown-intense-men-s-perfume-100ml-long-lasting-eau-de-parfum-with-24-hour-
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Crown Intense Men’s Perfume – 100ml Long-Lasting Eau de Parfum with
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/a36a3aaf91a2543a5edcbe3eac84f8cc.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/a36a3aaf91a2543a5edcbe3eac84f8cc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/206a9bab8f806f8c9858317d2fc29646.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/904845153c8ef74806a268c1d83b35fd.jpeg
+Meta Title: Crown Intense Men’s Perfume – 100ml Long-Lasting Eau de Parfum with 
 Meta Description: Buy Crown Intense Men’s Perfume – 100ml Long-Lasting Eau de Parfum with 24-Hour Scent online in Pakistan from ASM VEO. Experience bold masculinity with Crown In
 Description: Experience bold masculinity with Crown Intense Men’s Perfume. This 100ml fragrance offers a powerful scent profile and a guaranteed 24-hour lasting effect—perfect for all-day freshness and confidence.
-Regular Price: 2030
-Sale Price: 2030
+Wholesale Price: 1450
+Regular Price: 2650
+Sale Price: 2119
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

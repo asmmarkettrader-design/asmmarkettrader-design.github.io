@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rainbow Flawless & Painless Face Hair Remover single with cable
 Product ID: hhc-3765468
 SKU: hhc-3765468
@@ -7,11 +8,16 @@ Slug: rainbow-flawless-painless-face-hair-remover-single-with-cable-hhc-3765468
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/e99add26fdad677a74ea908f24618c44.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/e99add26fdad677a74ea908f24618c44.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/7f090e1292b06f18795914493cb476bb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/dcdd0bf7736a492a50bee1bc71d3426e.jpg
 Meta Title: Rainbow Flawless & Painless Face Hair Remover single with cable | Bu
 Meta Description: Buy Rainbow Flawless & Painless Face Hair Remover single with cable online in Pakistan from ASM VEO. The Rainbow Flawless &amp; Painless Face Hair Remover is a
 Description: The Rainbow Flawless &amp; Painless Face Hair Remover is a sleek and efficient beauty tool designed for smooth and painless facial hair removal. Its compact USB rechargeable design makes it convenient for daily grooming at home or while traveling.Gentle on sensitive skin, this device ensures a flawless finish without irritation. Easy to use and portable, it comes with a charging cable for added convenience, making it a must-have for effortless beauty care.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

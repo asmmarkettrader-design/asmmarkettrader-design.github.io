@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Heel Protector Sleeve for Cracked Heels & Pain Relief – Breathable & Cushioned Support
 Product ID: hhc-3752837
 SKU: hhc-3752837
@@ -7,11 +8,16 @@ Slug: silicone-heel-protector-sleeve-for-cracked-heels-pain-relief-breathable-0c
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/a57d3ff2ecff124e274fd9e601100337.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/a57d3ff2ecff124e274fd9e601100337.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/2ab178c287845df9b9013d1c8b434156.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/21e6c7959af6da88769e08d42d1dadb1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/bd32d482d1bc9ff05b76574603a6f933.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/41e66a8fab6b34297b9235c8e9870c52.jpg
 Meta Title: Silicone Heel Protector Sleeve for Cracked Heels & Pain Relief – Bre
 Meta Description: Buy Silicone Heel Protector Sleeve for Cracked Heels & Pain Relief – Breathable & Cushioned Support online in Pakistan from ASM VEO. Relieve heel pain and preve
 Description: Relieve heel pain and prevent cracks with this soft, breathable silicone heel sleeve. Designed for all-day comfort, it cushions your heel and supports your ankle while walking or standing.
-Regular Price: 228
-Sale Price: 228
+Wholesale Price: 178
+Regular Price: 477
+Sale Price: 327
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

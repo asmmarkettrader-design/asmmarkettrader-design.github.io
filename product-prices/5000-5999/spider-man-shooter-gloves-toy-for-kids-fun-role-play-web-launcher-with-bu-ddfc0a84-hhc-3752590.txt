@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Spider Man Shooter Gloves Toy For Kids – Fun Role Play Web Launcher With Bullets And Launcher Set For Boys And Girls
 Product ID: hhc-3752590
 SKU: hhc-3752590
@@ -7,11 +8,16 @@ Slug: spider-man-shooter-gloves-toy-for-kids-fun-role-play-web-launcher-with-ddf
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
-Meta Title: Spider Man Shooter Gloves Toy For Kids – Fun Role Play Web Launcher
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/b55c2ef637145b5cc635d626e96378f8.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/b55c2ef637145b5cc635d626e96378f8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/2536877b6d3ac9ba36f971942aed9578.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/0e7cdf0ef7fcb4b87cfc7a424376ad46.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/255f1c58ba0bf72fd8f8025b74d9163f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/d60bae85e91e581981e56d6077de6f54.jpeg
+Meta Title: Spider Man Shooter Gloves Toy For Kids – Fun Role Play Web Launcher 
 Meta Description: Buy Spider Man Shooter Gloves Toy For Kids – Fun Role Play Web Launcher With Bullets And Launcher Set For Boys And Girls online in Pakistan from ASM VEO. Exciti
 Description: Exciting Spider Man Shooter Gloves Toy For Kids With Web Launcher And Bullets, Perfect For Fun Role Play, Entertainment, And Adventure Playtime.
-Regular Price: 846
-Sale Price: 846
+Wholesale Price: 796
+Regular Price: 1520
+Sale Price: 1214
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

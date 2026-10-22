@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Piece Canvas Wall Art Set Modern Arabic Calligraphy SubhanAllah Allahu Akbar Alhamdulillah | Size 8x11 | Double Tape Include
 Product ID: hhc-3757148
 SKU: hhc-3757148
@@ -7,11 +8,16 @@ Slug: 3-piece-canvas-wall-art-set-modern-arabic-calligraphy-subhanallah-allah-0c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/29/095a3f9430f0f7e00b47b5825465f5df.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/29/095a3f9430f0f7e00b47b5825465f5df.jpeg
 Meta Title: 3 Piece Canvas Wall Art Set Modern Arabic Calligraphy SubhanAllah Al
 Meta Description: Buy 3 Piece Canvas Wall Art Set Modern Arabic Calligraphy SubhanAllah Allahu Akbar Alhamdulillah | Size 8x11 | Double Tape Include online in Pakistan from ASM V
 Description: 3 Piece Canvas Wall Art Set Featuring Modern Arabic Calligraphy Designs SubhanAllah Allahu Akbar And Alhamdulillah Printed On High Quality Canvas.
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

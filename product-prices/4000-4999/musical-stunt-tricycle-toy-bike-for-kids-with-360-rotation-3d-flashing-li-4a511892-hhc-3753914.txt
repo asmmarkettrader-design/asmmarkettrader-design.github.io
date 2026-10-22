@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Musical Stunt Tricycle Toy Bike for Kids with 360° Rotation, 3D Flashing Lights, Music & Bump and Go Action
 Product ID: hhc-3753914
 SKU: hhc-3753914
@@ -7,11 +8,16 @@ Slug: musical-stunt-tricycle-toy-bike-for-kids-with-360-rotation-3d-flashing-4a5
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/97069bb67c186abf94b6bd8e4a4f40aa.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/97069bb67c186abf94b6bd8e4a4f40aa.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/a3de0873ae059cf12fd5b861d5738b60.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/2f398fafbc85db10d23de8ab636991a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/1eb8c3183b589d466d1d40a2b9beff53.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/e96d7ad6ec4065ecc7a75a4c56a25b90.jpeg
 Meta Title: Musical Stunt Tricycle Toy Bike for Kids with 360° Rotation, 3D Flas
 Meta Description: Buy Musical Stunt Tricycle Toy Bike for Kids with 360° Rotation, 3D Flashing Lights, Music & Bump and Go Action online in Pakistan from ASM VEO. Exciting musica
 Description: Exciting musical stunt tricycle toy for kids with 360° rotation, colorful 3D flashing lights, cheerful music, and bump & go action.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

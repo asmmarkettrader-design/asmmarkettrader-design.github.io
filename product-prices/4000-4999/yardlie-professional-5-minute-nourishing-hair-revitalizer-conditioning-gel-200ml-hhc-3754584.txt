@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Professional 5-Minute Nourishing Hair Revitalizer & Conditioning Gel (200ml)
 Product ID: hhc-3754584
 SKU: hhc-3754584
@@ -7,11 +8,16 @@ Slug: yardlie-professional-5-minute-nourishing-hair-revitalizer-conditioning-gel
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/c80df9cd605926534844a9f930610c7d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/c80df9cd605926534844a9f930610c7d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/1de515b69776af53444e88c2d7d51070.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/ad111206304839a3d183e3499669bca0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/a3e8918a09c0a82c9997b7d7d9925ad9.jpeg
 Meta Title: Yardlie Professional 5-Minute Nourishing Hair Revitalizer & Conditio
 Meta Description: Buy Yardlie Professional 5-Minute Nourishing Hair Revitalizer & Conditioning Gel (200ml) online in Pakistan from ASM VEO. Experience a salon-quality transformat
 Description: Experience a salon-quality transformation in just 5 minutes. This professional-grade conditioning gel is infused with avocado and olive extracts to deeply nourish hair from root to tip. Designed for both men and women, the advanced formula provides long-lasting luster, incredible softness, and a silk
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

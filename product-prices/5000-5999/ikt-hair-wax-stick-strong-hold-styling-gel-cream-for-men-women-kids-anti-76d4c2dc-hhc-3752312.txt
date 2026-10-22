@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: IKT Hair Wax Stick – Strong Hold Styling Gel Cream for Men, Women & Kids, Anti-Frizz & Edge Control
 Product ID: hhc-3752312
 SKU: hhc-3752312
@@ -7,11 +8,16 @@ Slug: ikt-hair-wax-stick-strong-hold-styling-gel-cream-for-men-women-kids-ant-76
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: IKT Hair Wax Stick – Strong Hold Styling Gel Cream for Men, Women &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/10d5e6bc432d6b9364427640b3862014.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/10d5e6bc432d6b9364427640b3862014.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/b14e9c97602ca571499cfafa217a2e48.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/3a4623446f979011a53decd2cc96cebb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/8d4a63ea2adddf08ca5467cec3a08605.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/041c522877c07b1d2ce935daa71a2b4f.webp
+Meta Title: IKT Hair Wax Stick – Strong Hold Styling Gel Cream for Men, Women & 
 Meta Description: Buy IKT Hair Wax Stick – Strong Hold Styling Gel Cream for Men, Women & Kids, Anti-Frizz & Edge Control online in Pakistan from ASM VEO. IKT Hair Wax Stick Gel
 Description: IKT Hair Wax Stick Gel Cream Styling Hair Frizz Fixed Fluffy Children Men and Women Styling Wax Edge ControlMaterial: SyntheticTexture: SmoothHair Types: All Hair TypesProduct Feature: Frizz Control, Style, NourishColor: BeigeVolume: 75g PRODUCT ORIGINAL PICTURE AND VIDEO [video width="480" height="864" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/08/WhatsApp-Video-2025-08-18-at-6.46.50-PM.mp4"][/video]
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

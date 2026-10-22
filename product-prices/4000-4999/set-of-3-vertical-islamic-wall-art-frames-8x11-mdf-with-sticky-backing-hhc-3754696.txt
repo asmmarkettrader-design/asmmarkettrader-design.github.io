@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Vertical Islamic Wall Art Frames – 8x11" MDF with Sticky Backing
 Product ID: hhc-3754696
 SKU: hhc-3754696
@@ -7,11 +8,16 @@ Slug: set-of-3-vertical-islamic-wall-art-frames-8x11-mdf-with-sticky-backing-hhc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/540fd881f05a29e1dc8a02650a07bc24.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/540fd881f05a29e1dc8a02650a07bc24.jfif
 Meta Title: Set of 3 Vertical Islamic Wall Art Frames – 8x11" MDF with Sticky Ba
 Meta Description: Buy Set of 3 Vertical Islamic Wall Art Frames – 8x11" MDF with Sticky Backing online in Pakistan from ASM VEO. Three MDF wooden frames with Arabic calligraphy.
 Description: Three MDF wooden frames with Arabic calligraphy. Easy to mount with pre-attached tape.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Scraper with Durable Handle | Multi-Purpose Cleaning & Surface Scraping Tool
 Product ID: hhc-3757810
 SKU: hhc-3757810
@@ -7,11 +8,16 @@ Slug: stainless-steel-scraper-with-durable-handle-multi-purpose-cleaning-surf-0c
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/9b778154f247234f005abc2efe9d0683.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/9b778154f247234f005abc2efe9d0683.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/1e9e03c6ca89d1bba75fa7e8fc67f04e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/2ebd32daf614f0229632ffabd6212d0b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/2303b6e8b541251a20355ef49cb6b79b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/0b151e348cec9306fb46ac58fcffc8a5.jpeg
 Meta Title: Stainless Steel Scraper with Durable Handle | Multi-Purpose Cleaning
 Meta Description: Buy Stainless Steel Scraper with Durable Handle | Multi-Purpose Cleaning & Surface Scraping Tool online in Pakistan from ASM VEO. A strong and durable stainless
 Description: A strong and durable stainless steel scraper designed for removing paint, stains, stickers, and dirt from various surfaces. Ideal for home, kitchen, and workshop use.
-Regular Price: 396
-Sale Price: 396
+Wholesale Price: 346
+Regular Price: 729
+Sale Price: 579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

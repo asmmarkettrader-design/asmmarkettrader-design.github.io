@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: [Pack Of 2] Shorts COTTON JERSEY FABRIC FOR SUMMER | Jersey Shorts for Men
 Product ID: hhc-3194980
 SKU: hhc-3194980
@@ -7,11 +8,16 @@ Slug: pack-of-2-shorts-cotton-jersey-fabric-for-summer-jersey-shorts-for-men-hhc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/5290b13d9e963c7940f7abbfb8133a9f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/5290b13d9e963c7940f7abbfb8133a9f.jpeg
 Meta Title: [Pack Of 2] Shorts COTTON JERSEY FABRIC FOR SUMMER | Jersey Shorts f
 Meta Description: Buy [Pack Of 2] Shorts COTTON JERSEY FABRIC FOR SUMMER | Jersey Shorts for Men online in Pakistan from ASM VEO. [Pack Of 2] Shorts COTTON JERSEY FABRIC FOR SUMM
 Description: [Pack Of 2] Shorts COTTON JERSEY FABRIC FOR SUMMERSizes:MediumLargeExtra LargeDetails:100% New &amp; Good Quality FabricLook SmartReady to WearEasy WashFabric JerseyNote: We recommend hand wash for long lasting life.Size Chart:Product's Picture:
-Regular Price: 878
-Sale Price: 878
+Wholesale Price: 828
+Regular Price: 1580
+Sale Price: 1261
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

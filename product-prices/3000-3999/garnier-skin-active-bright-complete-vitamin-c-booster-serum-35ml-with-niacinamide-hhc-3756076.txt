@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Garnier Skin Active Bright Complete Vitamin C Booster Serum | 35ml | With Niacinamide
 Product ID: hhc-3756076
 SKU: hhc-3756076
@@ -7,11 +8,16 @@ Slug: garnier-skin-active-bright-complete-vitamin-c-booster-serum-35ml-with-n-f8
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/e3a93f1f7ed6e88742b070a538c5108d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/e3a93f1f7ed6e88742b070a538c5108d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/13a482dd2998e93f58f3cd8d0e50f486.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/9a14eb8b447664a31b06f8be8a54ddc9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/7bcd7e88017a738fe50ab4e07383e59c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/623e432872b530f2f0ff38b384d248a8.jpeg
 Meta Title: Garnier Skin Active Bright Complete Vitamin C Booster Serum | 35ml |
 Meta Description: Buy Garnier Skin Active Bright Complete Vitamin C Booster Serum | 35ml | With Niacinamide online in Pakistan from ASM VEO. Garnier Bright Complete Vitamin C Boo
 Description: Garnier Bright Complete Vitamin C Booster Serum (35ml). Enriched with Niacinamide for radiant, even‑toned skin.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

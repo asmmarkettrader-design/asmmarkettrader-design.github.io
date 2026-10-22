@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rain Suit For Men Women Waterproof Lightweight Durable Comfortable Easy To Wear
 Product ID: hhc-3761978
 SKU: hhc-3761978
@@ -7,11 +8,16 @@ Slug: rain-suit-for-men-women-waterproof-lightweight-durable-comfortable-easy-to
 Category: Travel & Outdoor
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/327d062d09e87ade054fb640c62142fb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/327d062d09e87ade054fb640c62142fb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/a7ddaf884bb4bc1ca84381921fc327f6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/c70f11a4ac1f9a9becdd7e1783422845.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/ad1573aaec09f481517cd4b7fccdedc0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/2a0cb67ba647cd36b09807a0a55c95e8.jpg
 Meta Title: Rain Suit For Men Women Waterproof Lightweight Durable Comfortable E
 Meta Description: Buy Rain Suit For Men Women Waterproof Lightweight Durable Comfortable Easy To Wear online in Pakistan from ASM VEO. Rain Suit For Men Women Waterproof Lightwei
 Description: Rain Suit For Men Women Waterproof Lightweight Durable Comfortable Easy To Wear Perfect For Outdoor Travel And Daily Use.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RB Cosmetics Real Beauty 24K Gold Mask | Hydrating & Brightening | Luxury Skincare Treatment | Original
 Product ID: hhc-3754819
 SKU: hhc-3754819
@@ -7,11 +8,16 @@ Slug: rb-cosmetics-real-beauty-24k-gold-mask-hydrating-brightening-luxury-ski-34
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/71a1e4f6a6b067f04cf123e48ca3f1c7.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/71a1e4f6a6b067f04cf123e48ca3f1c7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/2804e5081d4d2604718de28b9b9a48f7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/f56733884de2ba3cfc3ce30dace7f1ec.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/1f67e81729b9a4ed34b059fd6f1287cf.jpeg
 Meta Title: RB Cosmetics Real Beauty 24K Gold Mask | Hydrating & Brightening | L
 Meta Description: Buy RB Cosmetics Real Beauty 24K Gold Mask | Hydrating & Brightening | Luxury Skincare Treatment | Original online in Pakistan from ASM VEO. RB Cosmetics Real B
 Description: RB Cosmetics Real Beauty 24K Gold Mask. Hydrates, brightens, and rejuvenates skin with a luxurious gold formula.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

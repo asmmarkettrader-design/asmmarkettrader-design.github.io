@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Best Quality Winter Wear Plain Jacket for Ladies & Girls | Warm, Stylish & Comfortable Outerwear for Cold Weather
 Product ID: hhc-3753487
 SKU: hhc-3753487
@@ -7,11 +8,16 @@ Slug: best-quality-winter-wear-plain-jacket-for-ladies-girls-warm-stylish-com-37
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/6b16792bca468c78d33de928e441f751.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/6b16792bca468c78d33de928e441f751.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/8ce1f1aec3d3d8ff8537e105558423a0.jpeg
 Meta Title: Best Quality Winter Wear Plain Jacket for Ladies & Girls | Warm, Sty
 Meta Description: Buy Best Quality Winter Wear Plain Jacket for Ladies & Girls | Warm, Stylish & Comfortable Outerwear for Cold Weather online in Pakistan from ASM VEO. Premium-q
 Description: Premium-quality plain winter jacket for ladies and girls. Soft, warm, and stylish — perfect for daily wear in cold weather.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

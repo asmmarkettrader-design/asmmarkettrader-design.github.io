@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Probon Professional Tools 8 Inch (200mm) SK5 Pruning Shears - Tool Product Designed For Gardening And Daily Pruning Routine
 Product ID: hhc-3763251
 SKU: hhc-3763251
@@ -7,11 +8,16 @@ Slug: probon-professional-tools-8-inch-200mm-sk5-pruning-shears-tool-product-161
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/6fac0cf41c7d44a1268fefa700dcb8ac.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/6fac0cf41c7d44a1268fefa700dcb8ac.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/79b17782137a24c0e24f24867e02eb80.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/d90541526125fddf14b5364ddda3ee97.jpeg
 Meta Title: Probon Professional Tools 8 Inch (200mm) SK5 Pruning Shears - Tool P
 Meta Description: Buy Probon Professional Tools 8 Inch (200mm) SK5 Pruning Shears - Tool Product Designed For Gardening And Daily Pruning Routine online in Pakistan from ASM VEO.
 Description: The Probon Professional Tools 8 Inch (200mm) SK5 Pruning Shears Is A Tool Product Formulated To Help Provide Gardening And Daily Pruning Utility During Use.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

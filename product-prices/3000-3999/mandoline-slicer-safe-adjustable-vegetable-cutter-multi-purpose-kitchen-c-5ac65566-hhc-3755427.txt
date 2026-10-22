@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mandoline Slicer | Safe Adjustable Vegetable Cutter | Multi‑Purpose Kitchen Chopper & Manual Grater ( Random Colour )
 Product ID: hhc-3755427
 SKU: hhc-3755427
@@ -7,11 +8,16 @@ Slug: mandoline-slicer-safe-adjustable-vegetable-cutter-multi-purpose-kitchen-5a
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/c2ef18910acf0a6fd3fecb8b479f6380.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/c2ef18910acf0a6fd3fecb8b479f6380.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/ebac01b1aaf70ff48b8d17da151a071b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/554b7d9532c90467435df27cd965c48c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/cd6de6476392ed524b1e36b7e5210497.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/0b56dbd893432bdd9f24f68145510156.jpeg
 Meta Title: Mandoline Slicer | Safe Adjustable Vegetable Cutter | Multi‑Purpose
 Meta Description: Buy Mandoline Slicer | Safe Adjustable Vegetable Cutter | Multi‑Purpose Kitchen Chopper & Manual Grater ( Random Colour ) online in Pakistan from ASM VEO. Safe
 Description: Safe mandoline slicer and vegetable cutter. Adjustable blades for slicing, chopping, and grating. Multi‑purpose kitchen tool.
-Regular Price: 1561
-Sale Price: 1561
+Wholesale Price: 1561
+Regular Price: 2860
+Sale Price: 2287
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

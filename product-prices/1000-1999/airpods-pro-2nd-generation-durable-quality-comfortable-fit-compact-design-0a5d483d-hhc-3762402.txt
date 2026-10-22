@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AirPods Pro 2nd Generation Durable Quality Comfortable Fit Compact Design With Active Noise Cancellation | Black
 Product ID: hhc-3762402
 SKU: hhc-3762402
@@ -7,11 +8,16 @@ Slug: airpods-pro-2nd-generation-durable-quality-comfortable-fit-compact-desi-0a
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/eb5dd9cb9b03303b4949457ed22d183f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/eb5dd9cb9b03303b4949457ed22d183f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/62dfc70a1aaa5a6c1d92c788b37bf8e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/c1989f4f8303f441b4d52c71e8508bdc.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/f2938abc63c245ada0bcea297c9d38ea.jpeg
 Meta Title: AirPods Pro 2nd Generation Durable Quality Comfortable Fit Compact D
 Meta Description: Buy AirPods Pro 2nd Generation Durable Quality Comfortable Fit Compact Design With Active Noise Cancellation | Black online in Pakistan from ASM VEO. AirPods Pr
 Description: AirPods Pro 2nd Generation Durable Quality Comfortable Fit Compact Design Affordable Practical Choice Reliable Performance Perfect For Music Calls Travel And Daily Use.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

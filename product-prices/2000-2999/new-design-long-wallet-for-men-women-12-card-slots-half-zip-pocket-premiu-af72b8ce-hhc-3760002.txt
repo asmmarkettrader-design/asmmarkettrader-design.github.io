@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Design Long Wallet for Men & Women | 12 Card Slots | Half Zip Pocket | Premium Quality Long Purse
 Product ID: hhc-3760002
 SKU: hhc-3760002
@@ -7,11 +8,16 @@ Slug: new-design-long-wallet-for-men-women-12-card-slots-half-zip-pocket-prem-af
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/24/2e7bf941171a9f83002c14daafc18251.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/24/2e7bf941171a9f83002c14daafc18251.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/439fbcdec3a5abece28034770f99fa04.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/24/b5dfb8fb7657498bf02fa0537e9a650c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/3efa6fcf3844c742ef3fc1574af116f8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/3eed7cc335da9999bb63549f9540865b.png
 Meta Title: New Design Long Wallet for Men & Women | 12 Card Slots | Half Zip Po
 Meta Description: Buy New Design Long Wallet for Men & Women | 12 Card Slots | Half Zip Pocket | Premium Quality Long Purse online in Pakistan from ASM VEO. Premium quality new d
 Description: Premium quality new design long wallet, the best choice for both men and women. ✔ 12 card slots ✔ 2 full cash pockets ✔ Half zip pocket ✔ Convenient to hold coins and keys ✔ Three beautiful colors: Black, Light Brown, Dark Brown ✔ Stylish, sturdy and perfect for everyday use ✔ Available with new packaging
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

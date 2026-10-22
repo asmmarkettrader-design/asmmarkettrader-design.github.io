@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Air31 TWS Wireless Earbuds – Crystal Clear Transparent Shell Earphones with LED Digital Power Display and Bluetooth V5.3 - Random Color
 Product ID: hhc-3761291
 SKU: hhc-3761291
@@ -7,11 +8,16 @@ Slug: air31-tws-wireless-earbuds-crystal-clear-transparent-shell-earphones-wi-0c
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/4a5e4b7353e3138019e9105f55b9d402.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/4a5e4b7353e3138019e9105f55b9d402.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/fc317d38d2d2541264a80d27286f7ac7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/6027a54747988b5c92419f8d9db6f5d0.jpeg
 Meta Title: Air31 TWS Wireless Earbuds – Crystal Clear Transparent Shell Earphon
 Meta Description: Buy Air31 TWS Wireless Earbuds – Crystal Clear Transparent Shell Earphones with LED Digital Power Display and Bluetooth V5.3 - Random Color online in Pakistan f
 Description: Step into the future of audio with the Air31 TWS Wireless Earbuds. Featuring a highly distinct transparent case and earbud design, these true wireless stereo earphones deliver crisp sound and low-latency performance powered by Bluetooth V5.3 technology.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

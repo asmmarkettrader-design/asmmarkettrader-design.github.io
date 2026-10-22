@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Girls Beige Printed Stitched Co Ord Set With Long Sleeve Shirt And Matching Trouser
 Product ID: hhc-3762466
 SKU: hhc-3762466
@@ -7,11 +8,16 @@ Slug: girls-beige-printed-stitched-co-ord-set-with-long-sleeve-shirt-and-matc-fc
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/4d5f9df7628e6cc400472acf9ce4809d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/4d5f9df7628e6cc400472acf9ce4809d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/dbc9aa9ec797ba8520c948f83109e352.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/64a0034baab3a507d1e985aa77b840f8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/a78af3df79361dfc26edcc4759299556.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/89019ce43215ab537155cfe8919344bd.jpeg
 Meta Title: Girls Beige Printed Stitched Co Ord Set With Long Sleeve Shirt And M
 Meta Description: Buy Girls Beige Printed Stitched Co Ord Set With Long Sleeve Shirt And Matching Trouser online in Pakistan from ASM VEO. Girls Beige Stitched Co Ord Set Featuri
 Description: Girls Beige Stitched Co Ord Set Featuring A Printed Long Sleeve Shirt And Matching Trouser. Suitable For Casual And Everyday Wear.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

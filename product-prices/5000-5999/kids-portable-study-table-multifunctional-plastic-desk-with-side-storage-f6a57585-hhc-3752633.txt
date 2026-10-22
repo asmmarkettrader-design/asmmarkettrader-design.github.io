@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Portable Study Table – Multifunctional Plastic Desk with Side Storage (Random Color)
 Product ID: hhc-3752633
 SKU: hhc-3752633
@@ -7,11 +8,16 @@ Slug: kids-portable-study-table-multifunctional-plastic-desk-with-side-storag-f6
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/4788c3170b35708cda429889c6505416.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/4788c3170b35708cda429889c6505416.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/727d73da7f37608c02dbf0e8f12e790d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/5462dcd23fc52a4fc414f411704a6e4b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/e32aa6e8e15c0b0a9d1b43945bdc44e9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/04/8a803eff31142a1934eb684caea79b55.png
 Meta Title: Kids Portable Study Table – Multifunctional Plastic Desk with Side S
 Meta Description: Buy Kids Portable Study Table – Multifunctional Plastic Desk with Side Storage (Random Color) online in Pakistan from ASM VEO. Durable and lightweight kids’ stu
 Description: Durable and lightweight kids’ study table with side storage, perfect for reading, writing, drawing, and snack time. Compact, portable, and easy to clean.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Botox Bee Venom Whitening & Moisturizing Cream – Anti-Aging, Brightening & Skin Firming Facial Care (20g)
 Product ID: hhc-3753086
 SKU: hhc-3753086
@@ -7,11 +8,16 @@ Slug: botox-bee-venom-whitening-moisturizing-cream-anti-aging-brightening-ski-47
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/4773e4260d0d9a01355669e24b4644cf.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/4773e4260d0d9a01355669e24b4644cf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/26565308a2eb49fb254d773bb5448ba1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/47700284237285a612df90ab65c66174.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/ddb54e110f8af92d9a64620eb45cdbb5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/596d3fcf35575fd8f10ed69e05e35b5f.jpg
 Meta Title: Botox Bee Venom Whitening & Moisturizing Cream – Anti-Aging, Brighte
 Meta Description: Buy Botox Bee Venom Whitening & Moisturizing Cream – Anti-Aging, Brightening & Skin Firming Facial Care (20g) online in Pakistan from ASM VEO. Botox Bee Venom W
 Description: Botox Bee Venom Whitening & Moisturizing Cream – Anti-Aging, Brightening & Skin Firming Facial Care (20g)
-Regular Price: 306
-Sale Price: 306
+Wholesale Price: 256
+Regular Price: 594
+Sale Price: 444
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flicka 2-In-1 Makeup Deal – Primer (60g) + Foundation (30g) Combo
 Product ID: hhc-3756354
 SKU: hhc-3756354
@@ -7,11 +8,16 @@ Slug: flicka-2-in-1-makeup-deal-primer-60g-foundation-30g-combo-hhc-3756354
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/25b8fa8355ecdf01c01a5a87ad3f2193.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/25b8fa8355ecdf01c01a5a87ad3f2193.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/f2cc089b19792fe0e1f41c16b433d156.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/dc84841b55a5b2e5edbe8d32109cfa29.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/c07be5ad187844c65ca6388f9c4dc62b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/dac082b1e5dddddecf89c62dbe80c5f2.png
 Meta Title: Flicka 2-In-1 Makeup Deal – Primer (60g) + Foundation (30g) Combo |
 Meta Description: Buy Flicka 2-In-1 Makeup Deal – Primer (60g) + Foundation (30g) Combo online in Pakistan from ASM VEO. Get a flawless, long-lasting base with the Flicka 2-In-1
 Description: Get a flawless, long-lasting base with the Flicka 2-In-1 Makeup Deal. This value combo includes a lightweight primer (60g) to smooth and prep your skin, plus a perfectly blendable foundation (30g) for even, natural-looking coverage.
-Regular Price: 937
-Sale Price: 937
+Wholesale Price: 887
+Regular Price: 1680
+Sale Price: 1346
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CeraVe Facial Moisturizing Lotion – Hydrating & Gentle for All Skin Types, 200ml
 Product ID: hhc-3756570
 SKU: hhc-3756570
@@ -7,11 +8,16 @@ Slug: cerave-facial-moisturizing-lotion-hydrating-gentle-for-all-skin-types-200m
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: CeraVe Facial Moisturizing Lotion – Hydrating & Gentle for All Skin
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/305fe0b5ef727295f28cedbd4232d3e4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/305fe0b5ef727295f28cedbd4232d3e4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/783daf3a04bba9b3a4c186a729986559.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/b14d57579f51739f9bcfc8f8baf7a1f2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/97f6ead63d7d071b2fdf1914f589cfb1.jpeg
+Meta Title: CeraVe Facial Moisturizing Lotion – Hydrating & Gentle for All Skin 
 Meta Description: Buy CeraVe Facial Moisturizing Lotion – Hydrating & Gentle for All Skin Types, 200ml online in Pakistan from ASM VEO. Lightweight facial moisturizer with essent
 Description: Lightweight facial moisturizer with essential ceramides and hyaluronic acid to hydrate, restore, and protect skin all day. Suitable for sensitive skin.
-Regular Price: 657
-Sale Price: 657
+Wholesale Price: 607
+Regular Price: 1180
+Sale Price: 940
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

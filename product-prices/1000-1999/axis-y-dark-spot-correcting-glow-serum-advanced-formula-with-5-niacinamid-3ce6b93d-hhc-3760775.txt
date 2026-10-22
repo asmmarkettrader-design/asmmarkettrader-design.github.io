@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AXIS-Y Dark Spot Correcting Glow Serum – Advanced Formula with 5% Niacinamide & Squalane for Radiant Skin - 50ml
 Product ID: hhc-3760775
 SKU: hhc-3760775
@@ -7,11 +8,16 @@ Slug: axis-y-dark-spot-correcting-glow-serum-advanced-formula-with-5-niacinam-3c
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/92addf2b840d337f068112d2c49616c1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/92addf2b840d337f068112d2c49616c1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/35b002f893727a2df4962e4f8df0d516.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/8f805ab8df09ff175566b1448fddadc9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/cb169bf587727fe31633db8876ef108b.jpeg
 Meta Title: AXIS-Y Dark Spot Correcting Glow Serum – Advanced Formula with 5% Ni
 Meta Description: Buy AXIS-Y Dark Spot Correcting Glow Serum – Advanced Formula with 5% Niacinamide & Squalane for Radiant Skin - 50ml online in Pakistan from ASM VEO. Brighten y
 Description: Brighten your complexion and fade stubborn hyperpigmentation with the AXIS-Y Dark Spot Correcting Glow Serum.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

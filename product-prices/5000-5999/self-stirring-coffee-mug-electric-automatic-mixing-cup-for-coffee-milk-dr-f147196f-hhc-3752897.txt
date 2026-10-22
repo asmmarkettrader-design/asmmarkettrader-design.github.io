@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Self Stirring Coffee Mug – Electric Automatic Mixing Cup for Coffee, Milk, & Drinks | Rechargeable, Waterproof, Self Mixing Glass Mug for Home & Office ~ 500 ml
 Product ID: hhc-3752897
 SKU: hhc-3752897
@@ -7,11 +8,16 @@ Slug: self-stirring-coffee-mug-electric-automatic-mixing-cup-for-coffee-milk-f14
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/16/1a5272a82e4aba5f99aece6aa8097d41.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/16/1a5272a82e4aba5f99aece6aa8097d41.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/ec055e59207559a3d2184ee6a8a4fcb0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/953f933a853ff68970525cea8f9920df.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/a55c05b3407355f7992ce2d634aeab5a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/9aa4e90fd5fc4017baf8591cf37799d8.jpg
 Meta Title: Self Stirring Coffee Mug – Electric Automatic Mixing Cup for Coffee,
 Meta Description: Buy Self Stirring Coffee Mug – Electric Automatic Mixing Cup for Coffee, Milk, & Drinks | Rechargeable, Waterproof, Self Mixing Glass Mug for Home & Office ~ 50
 Description: Enjoy perfectly mixed drinks anytime with this Self Stirring Electric Coffee Mug! Featuring one-button automatic mixing, waterproof design, and a sleek glass body—ideal for coffee, milk, tea, or protein shakes at home or office.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

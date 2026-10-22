@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flying Butterfly Wooden Wall Decor  Butterflies  WALL Decor
 Product ID: hhc-2373607
 SKU: hhc-2373607
@@ -7,11 +8,16 @@ Slug: flying-butterfly-wooden-wall-decor-butterflies-wall-decor-hhc-2373607
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/5f70438f3ba81cd05a6065644e05f427.png_2200x2200q80.png_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/5f70438f3ba81cd05a6065644e05f427.png_2200x2200q80.png_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/e877f9de8a031da24c90045b17483fb1.png_2200x2200q80.png_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/c6e455647482f1c085d235edbc7de49f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/5f70438f3ba81cd05a6065644e05f427.png
 Meta Title: Flying Butterfly Wooden Wall Decor Butterflies WALL Decor | Buy Onli
 Meta Description: Buy Flying Butterfly Wooden Wall Decor Butterflies WALL Decor online in Pakistan from ASM VEO. Description: Material Wooden Size 30 inch Thickness 3mm wooden ea
 Description: Description: Material Wooden Size 30 inch Thickness 3mm wooden easy to quick installation Total 30 butterflies Be your own decorator - you never have to hire someone who can do it for you, individual decoration of any room or hallway in your home has never been easier Product Original Video [video width="478" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2025-03-17-at-4.01.54-PM.mp4"][/video]
-Regular Price: 388
-Sale Price: 388
+Wholesale Price: 338
+Regular Price: 717
+Sale Price: 567
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

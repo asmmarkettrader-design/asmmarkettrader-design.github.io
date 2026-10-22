@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Klink Dashboard Polish Motia/JASMINE/ROSE 70ml
 Product ID: hhc-2100082
 SKU: hhc-2100082
@@ -7,11 +8,16 @@ Slug: klink-dashboard-polish-motia-jasmine-rose-70ml-hhc-2100082
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.21.57-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.21.57-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.21.56-PM.jpeg
 Meta Title: Klink Dashboard Polish Motia/JASMINE/ROSE 70ml | Buy Online in Pakis
 Meta Description: Buy Klink Dashboard Polish Motia/JASMINE/ROSE 70ml online in Pakistan from ASM VEO. Discription Klink Protectant is specially formulated to clean, shine &amp; p
 Description: Discription Klink Protectant is specially formulated to clean, shine &amp; protect your cars &amp; bikes. For use on interior &amp; exterior - plastic, vinyl, rubber, trim. Simply spray &amp; wipe off with a high-quality microfibre cloth such as Harris Supreme Quick or Harris Supreme Shine Microfibres. Klink Protectant is specially formulated to clean, shine &amp; protect your cars &amp; bikes. For use on interior &amp; exterior - plastic, vinyl, rubber, trim. Simply spray &amp; wipe off with a high-quality microfibre cloth such as Harris Supreme Quick or Harris Supreme Shine Microfibres.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zig Zag  Black Choker With Earrings for girls
 Product ID: hhc-442157
 SKU: hhc-442157
@@ -7,11 +8,16 @@ Slug: zig-zag-black-choker-with-earrings-for-girls-hhc-442157
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/44b880de-b510-4011-8f7a-ef28b6641294.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/44b880de-b510-4011-8f7a-ef28b6641294.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/90a587b5-ec45-4d49-b081-8fca0228ea9a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/14494728-4d1a-445c-83b1-4afaf03cedb5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/d29a58ad-388a-41a7-bed7-59a2d817815f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/6bf2d56c-5122-4258-b8fa-5eef58a0224a.jpeg
 Meta Title: Zig Zag Black Choker With Earrings for girls | Buy Online in Pakista
 Meta Description: Buy Zig Zag Black Choker With Earrings for girls online in Pakistan from ASM VEO. DetailBlack With EarringsMaterial AlloyKeep away from WaterDoori At Back I ste
 Description: DetailBlack With EarringsMaterial AlloyKeep away from WaterDoori At Back I stead of Chain
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

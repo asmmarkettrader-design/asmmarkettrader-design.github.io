@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3CE 10-Piece Lipstick And Lip Tint - Cosmetic Product Designed For Lip Makeup And Daily Beauty Routine (Mix Color)
 Product ID: hhc-3764061
 SKU: hhc-3764061
@@ -7,11 +8,16 @@ Slug: 3ce-10-piece-lipstick-and-lip-tint-cosmetic-product-designed-for-lip-ma-b2
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/e64d3833c87ff01dc2ac50bdb65031bf.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/e64d3833c87ff01dc2ac50bdb65031bf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/76b49ed33353804aa2de9976b774bac2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/33aa4f76109d5968a66bd993d7d832ff.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/695237e9277d5a48e6faf88f546ade57.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/92af7fa837e4803f82e5c56fe23ec170.jpg
 Meta Title: 3CE 10-Piece Lipstick And Lip Tint - Cosmetic Product Designed For L
 Meta Description: Buy 3CE 10-Piece Lipstick And Lip Tint - Cosmetic Product Designed For Lip Makeup And Daily Beauty Routine (Mix Color) online in Pakistan from ASM VEO. The 3CE
 Description: The 3CE 10-Piece Lipstick And Lip Tint Is A Cosmetic Product Formulated To Help Provide Lip Makeup And Daily Beauty Utility During Use.
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

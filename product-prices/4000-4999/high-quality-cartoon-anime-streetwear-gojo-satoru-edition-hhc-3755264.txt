@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High-Quality  Cartoon Anime Streetwear - Gojo Satoru Edition
 Product ID: hhc-3755264
 SKU: hhc-3755264
@@ -7,11 +8,16 @@ Slug: high-quality-cartoon-anime-streetwear-gojo-satoru-edition-hhc-3755264
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/a1c8d0d59bc60a025b0aeccd7a101836.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/a1c8d0d59bc60a025b0aeccd7a101836.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/a2f2bc29f8a4b86ba2c74c7d37bee0ec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/b9e63415db890becf06e22079a0afe38.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/36b87857136d08cfd074f636d52376c0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/41239506bc2470e3d63d8ae889f1d7cb.jpeg
 Meta Title: High-Quality Cartoon Anime Streetwear - Gojo Satoru Edition | Buy On
 Meta Description: Buy High-Quality Cartoon Anime Streetwear - Gojo Satoru Edition online in Pakistan from ASM VEO. High-Quality Cartoon Anime Streetwear - Gojo Satoru Edition Cas
 Description: High-Quality Cartoon Anime Streetwear - Gojo Satoru Edition
-Regular Price: 1132
-Sale Price: 1132
+Wholesale Price: 1082
+Regular Price: 2000
+Sale Price: 1596
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

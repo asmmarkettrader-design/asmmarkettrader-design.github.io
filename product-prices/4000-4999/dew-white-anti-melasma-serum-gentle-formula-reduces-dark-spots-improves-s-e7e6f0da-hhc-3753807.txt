@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dew White Anti Melasma Serum Gentle Formula Reduces Dark Spots Improves Skin Tone Provides Radiant Glow And Smooth Texture For Daily Use - 30ml
 Product ID: hhc-3753807
 SKU: hhc-3753807
@@ -7,11 +8,16 @@ Slug: dew-white-anti-melasma-serum-gentle-formula-reduces-dark-spots-improves-e7
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/870ba1d3385b839215faeb3b00114d7e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/870ba1d3385b839215faeb3b00114d7e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/109b61e8a7d3110a0e4ea5e26cd56b43.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/b374c8f6d103acdfa1560f7f660bddd2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/d67891e413422e05b86e4028f7238289.jpeg
 Meta Title: Dew White Anti Melasma Serum Gentle Formula Reduces Dark Spots Impro
 Meta Description: Buy Dew White Anti Melasma Serum Gentle Formula Reduces Dark Spots Improves Skin Tone Provides Radiant Glow And Smooth Texture For Daily Use - 30ml online in Pa
 Description: Dew White Anti Melasma Serum Provides Gentle Formula Reduces Dark Spots Improves Skin Tone And Radiant Glow
-Regular Price: 2193
-Sale Price: 2193
+Wholesale Price: 2193
+Regular Price: 3930
+Sale Price: 3141
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

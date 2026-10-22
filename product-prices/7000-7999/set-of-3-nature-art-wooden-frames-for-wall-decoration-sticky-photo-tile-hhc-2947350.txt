@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 3 Nature Art Wooden Frames For Wall Decoration / Sticky Photo Tile
 Product ID: hhc-2947350
 SKU: hhc-2947350
@@ -7,11 +8,16 @@ Slug: set-of-3-nature-art-wooden-frames-for-wall-decoration-sticky-photo-tile-hh
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/ee726c8b7d2dbb9fad012c1e35965edf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/ee726c8b7d2dbb9fad012c1e35965edf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/75144546275ddef5e2eea3fe5ee4785f.jpeg
 Meta Title: Set Of 3 Nature Art Wooden Frames For Wall Decoration / Sticky Photo
 Meta Description: Buy Set Of 3 Nature Art Wooden Frames For Wall Decoration / Sticky Photo Tile online in Pakistan from ASM VEO. Set Of 3 Nature Art Wooden Frames For Wall Decora
 Description: Set Of 3 Nature Art Wooden Frames For Wall Decoration / Sticky Photo TileWall Frame for Room DecorationMaterial: Wooden Board and PhotopaperSize: 8 inches (Width) x 11 inches (Height)Weight: 0.5 kgCustomizable: You can send any picture of your choiceStickable Frames: Easy to stick on the wallPerfect for adding a personalized touch to your space!
-Regular Price: 432
-Sale Price: 432
+Wholesale Price: 382
+Regular Price: 790
+Sale Price: 633
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

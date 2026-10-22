@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AirPods Pro 2 Type-C Charging Case with Buzzer Sound | Wireless Earbuds with Noise Reduction (Without Box)
 Product ID: hhc-3757865
 SKU: hhc-3757865
@@ -7,11 +8,16 @@ Slug: airpods-pro-2-type-c-charging-case-with-buzzer-sound-wireless-earbuds-w-10
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/90ecfec1f9898c6130156cc7160a0bcc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/90ecfec1f9898c6130156cc7160a0bcc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/8defb782fd06fd3d97dcbcdf893927c7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/eead829cffa1d9d46768bc8bd25a2dd0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/cd6d59d2552b108b97d29da14c956abf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/5fbd66135f99552cfbe6374dea1439c2.jpeg
 Meta Title: AirPods Pro 2 Type-C Charging Case with Buzzer Sound | Wireless Earb
 Meta Description: Buy AirPods Pro 2 Type-C Charging Case with Buzzer Sound | Wireless Earbuds with Noise Reduction (Without Box) online in Pakistan from ASM VEO. AirPods Pro 2 wi
 Description: AirPods Pro 2 with Type-C charging case and built-in buzzer feature for easy tracking. Designed for clear sound, deep bass, and comfortable daily use.
-Regular Price: 1063
-Sale Price: 1063
+Wholesale Price: 1013
+Regular Price: 1870
+Sale Price: 1498
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bubble Bazooka Pro Electric 2 In 1 - Toy Device Designed For Bubble Play And Daily Entertainment Routine
 Product ID: hhc-3764447
 SKU: hhc-3764447
@@ -7,11 +8,16 @@ Slug: bubble-bazooka-pro-electric-2-in-1-toy-device-designed-for-bubble-play-46c
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
-Meta Title: Bubble Bazooka Pro Electric 2 In 1 - Toy Device Designed For Bubble
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/999c1be2cd20f306854206c95489d6d0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/999c1be2cd20f306854206c95489d6d0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/a6f1085c55b965ad93100de183ab55e1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/b95b3af92e7887641197d87c9078441d.jpg
+Meta Title: Bubble Bazooka Pro Electric 2 In 1 - Toy Device Designed For Bubble 
 Meta Description: Buy Bubble Bazooka Pro Electric 2 In 1 - Toy Device Designed For Bubble Play And Daily Entertainment Routine online in Pakistan from ASM VEO. The Bubble Bazooka
 Description: The Bubble Bazooka Pro Electric 2 In 1 Is A Toy Device Formulated To Help Provide Bubble Play And Daily Entertainment Utility During Use.
-Regular Price: 909
-Sale Price: 909
+Wholesale Price: 859
+Regular Price: 1630
+Sale Price: 1306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

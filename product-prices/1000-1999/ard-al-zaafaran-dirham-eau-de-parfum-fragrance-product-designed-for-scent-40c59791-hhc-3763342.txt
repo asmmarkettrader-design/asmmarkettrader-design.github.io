@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ard Al Zaafaran Dirham Eau de Parfum - Fragrance Product Designed For Scent And Daily Personal Care Routine - 100ML
 Product ID: hhc-3763342
 SKU: hhc-3763342
 Slug: ard-al-zaafaran-dirham-eau-de-parfum-fragrance-product-designed-for-sce-40c59791-hhc-3763342
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/943d3edc7b36f54faa479a9d56705950.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/943d3edc7b36f54faa479a9d56705950.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/a61f9a4650054ed274429d37429d2521.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/7065616e3c3a3dcc184c359774dd1a11.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/d852e42b05703c7ba78ff8cb0d771300.png
 Meta Title: Ard Al Zaafaran Dirham Eau de Parfum - Fragrance Product Designed Fo
 Meta Description: Buy Ard Al Zaafaran Dirham Eau de Parfum - Fragrance Product Designed For Scent And Daily Personal Care Routine - 100ML online in Pakistan from ASM VEO. The Ard
 Description: The Ard Al Zaafaran Dirham Eau de Parfum Is A Fragrance Product Formulated To Help Provide Scent And Daily Personal Care Utility During Use.
-Regular Price: 964
-Sale Price: 964
+Wholesale Price: 480
+Regular Price: 1270
+Sale Price: 1014
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

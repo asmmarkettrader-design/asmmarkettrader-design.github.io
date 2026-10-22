@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Party Balloons Pack | 100 pcs | Random Colours | Perfect for Birthdays, Events & Celebrations
 Product ID: hhc-3754620
 SKU: hhc-3754620
@@ -7,11 +8,16 @@ Slug: party-balloons-pack-100-pcs-random-colours-perfect-for-birthdays-events-69
 Category: Events & Gifting
 Subcategory: Party Decorations
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/8b98e3c514b25b5cdfbf7bf0167c481b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/8b98e3c514b25b5cdfbf7bf0167c481b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/ff312f850dd8c3e7c092e0dc3a5efc5c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/f3828745a4b0b8a9dbd92981359ef0b6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/74c70a0f0e7da6a50edf2bc58081d0d4.jpeg
 Meta Title: Party Balloons Pack | 100 pcs | Random Colours | Perfect for Birthda
 Meta Description: Buy Party Balloons Pack | 100 pcs | Random Colours | Perfect for Birthdays, Events & Celebrations online in Pakistan from ASM VEO. Pack of 100 party balloons in
 Description: Pack of 100 party balloons in random colours, ideal for birthdays, events, and celebrations.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

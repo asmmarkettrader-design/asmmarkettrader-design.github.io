@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Solar Interaction Wall Lamp | Outdoor Waterproof LED Motion Sensor Solar Light (Model 888)
 Product ID: hhc-3761305
 SKU: hhc-3761305
@@ -7,11 +8,16 @@ Slug: solar-interaction-wall-lamp-outdoor-waterproof-led-motion-sensor-solar-f2d
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/ca7450382c1aa7572e975da995de4dbb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/ca7450382c1aa7572e975da995de4dbb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/cc68f18a6f8a35b3141ccce0c91bccc2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/03/5568a4551fab4a4bd015802f083a30d7.jpeg
 Meta Title: Solar Interaction Wall Lamp | Outdoor Waterproof LED Motion Sensor S
 Meta Description: Buy Solar Interaction Wall Lamp | Outdoor Waterproof LED Motion Sensor Solar Light (Model 888) online in Pakistan from ASM VEO. Light up your outdoor spaces wit
 Description: Light up your outdoor spaces with the Solar Interaction Wall Lamp Model 888. Featuring a built-in motion sensor, three lighting modes, and solar-powered charging, this waterproof LED wall light is ideal for gardens, patios, garages, pathways, and boundary walls. No wiring or electricity required.
-Regular Price: 948
-Sale Price: 948
+Wholesale Price: 898
+Regular Price: 1700
+Sale Price: 1362
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

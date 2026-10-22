@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Islamic Stickytiles Frames Providing Elegant Design Durable Quality Home Decoration
 Product ID: hhc-3755188
 SKU: hhc-3755188
@@ -7,11 +8,16 @@ Slug: 3pcs-islamic-stickytiles-frames-providing-elegant-design-durable-qualit-42
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/a48908d8ddd34b57cce78bf35c9d54d8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/a48908d8ddd34b57cce78bf35c9d54d8.jpeg
 Meta Title: 3pcs Islamic Stickytiles Frames Providing Elegant Design Durable Qua
 Meta Description: Buy 3pcs Islamic Stickytiles Frames Providing Elegant Design Durable Quality Home Decoration online in Pakistan from ASM VEO. 3pcs Islamic Stickytiles Frames Of
 Description: 3pcs Islamic Stickytiles Frames Offering Elegant Design Durable Quality Reliable Performance Stylish Appearance And Daily Home Decoration Support
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Handcrafted Wooden Sparrow Wall Decor – Nature-Inspired 3 Panel Wall Art for Home & Office
 Product ID: hhc-3753050
 SKU: hhc-3753050
@@ -7,11 +8,16 @@ Slug: handcrafted-wooden-sparrow-wall-decor-nature-inspired-3-panel-wall-art-9df
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/75a33de77d99258f8be3d4704e383ea1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/75a33de77d99258f8be3d4704e383ea1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/8175cdb0daa6cd15f956fd325d41d3bd.jpeg
 Meta Title: Handcrafted Wooden Sparrow Wall Decor – Nature-Inspired 3 Panel Wall
 Meta Description: Buy Handcrafted Wooden Sparrow Wall Decor – Nature-Inspired 3 Panel Wall Art for Home & Office online in Pakistan from ASM VEO. Add a touch of nature to your wa
 Description: Add a touch of nature to your walls with this elegant 3-piece wooden sparrow wall art set, featuring beautifully crafted bird silhouettes perfect for living rooms, bedrooms, and hallways.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VHT- 11 10000mAH Power bank with Dual USB Ports
 Product ID: hhc-1517504
 SKU: hhc-1517504
@@ -7,11 +8,16 @@ Slug: vht-11-10000mah-power-bank-with-dual-usb-ports-hhc-1517504
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-16.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-16.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/3-5.jpg
 Meta Title: VHT- 11 10000mAH Power bank with Dual USB Ports | Buy Online in Paki
 Meta Description: Buy VHT- 11 10000mAH Power bank with Dual USB Ports online in Pakistan from ASM VEO. 10000 MAH Quick SupportSingle Ports Supported FAST CHARGINGDigital DisplayD
 Description: 10000 MAH Quick SupportSingle Ports Supported FAST CHARGINGDigital DisplayDevice With Type C Android iPhone Wirewith 2 Led LightsSupport Memory Card: NoWaterproof: NoColor: Sky BlueType: Power bankCompatible with all mobile phones, music players, portable gaming devices and rechargeable speakersOn the coming holidays, birthdays, festivals and occasions, they will be one of the best gifts for your family and friends.POwer bank : 1000mahOutput : Working capacity 7000 &amp; 3000mah use current under
-Regular Price: 2685
-Sale Price: 2685
+Wholesale Price: 2685
+Regular Price: 4760
+Sale Price: 3805
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

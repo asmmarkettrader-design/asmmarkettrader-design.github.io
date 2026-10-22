@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 PCs Gun-Shaped Gel Pen – Stylish Metal Body, Smooth Writing, Unique Design Gift for Kids, Students & Collectors
 Product ID: hhc-3755638
 SKU: hhc-3755638
@@ -7,11 +8,16 @@ Slug: 1-pcs-gun-shaped-gel-pen-stylish-metal-body-smooth-writing-unique-desig-13
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/308b7778a0b9f57ec942e9035e84a946.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/308b7778a0b9f57ec942e9035e84a946.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/9083b24007f7a744ee2554a842a5e970.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/9ee5bc6b7ae29754fe61857655085037.jpeg
 Meta Title: 1 PCs Gun-Shaped Gel Pen – Stylish Metal Body, Smooth Writing, Uniqu
 Meta Description: Buy 1 PCs Gun-Shaped Gel Pen – Stylish Metal Body, Smooth Writing, Unique Design Gift for Kids, Students & Collectors online in Pakistan from ASM VEO. A stylish
 Description: A stylish gun-shaped gel pen crafted with a metallic body, smooth ink flow, and a realistic mini-rifle design—perfect for students, gifting, and collectors.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

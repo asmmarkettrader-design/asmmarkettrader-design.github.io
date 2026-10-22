@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sabawoon 25W GaN A+C Super Fast Charger Perfect for smartphones earbuds & tablet with Cable
 Product ID: hhc-3759850
 SKU: hhc-3759850
@@ -7,11 +8,16 @@ Slug: sabawoon-25w-gan-a-c-super-fast-charger-perfect-for-smartphones-earbuds-61
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/a94a2e0a4e8e823e669d34b0fef6273f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/a94a2e0a4e8e823e669d34b0fef6273f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/e617fa0a043b757ae4756f77ae4fa67e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/262ca193835d0e86cb7b786a294e0a72.jpeg
 Meta Title: Sabawoon 25W GaN A+C Super Fast Charger Perfect for smartphones earb
 Meta Description: Buy Sabawoon 25W GaN A+C Super Fast Charger Perfect for smartphones earbuds & tablet with Cable online in Pakistan from ASM VEO. Charge your devices quickly and
 Description: Charge your devices quickly and safely with the Sabawoon 25W GaN Super Fast Charger. Designed with advanced GaN technology, this compact charger delivers efficient charging performance with dual A+C output support. Perfect for smartphones, earbuds, tablets, and other compatible devices. Includes char
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

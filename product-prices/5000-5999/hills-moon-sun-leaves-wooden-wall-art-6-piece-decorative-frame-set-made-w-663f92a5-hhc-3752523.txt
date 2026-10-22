@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hills Moon Sun Leaves Wooden Wall Art – 6 Piece Decorative Frame Set Made With Wooden Stickytile, Size 8x11 Inches Each, Easy To Mount With Double Tape
 Product ID: hhc-3752523
 SKU: hhc-3752523
@@ -7,11 +8,16 @@ Slug: hills-moon-sun-leaves-wooden-wall-art-6-piece-decorative-frame-set-made-66
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/8ba151f32d5ee8da62510765e0b8e94f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/8ba151f32d5ee8da62510765e0b8e94f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/4e4d15e489e792158296d04f9e2a7ac8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/04d739b78c385efe746a5a17fcd62be9.png
 Meta Title: Hills Moon Sun Leaves Wooden Wall Art – 6 Piece Decorative Frame Set
 Meta Description: Buy Hills Moon Sun Leaves Wooden Wall Art – 6 Piece Decorative Frame Set Made With Wooden Stickytile, Size 8x11 Inches Each, Easy To Mount With Double Tape onli
 Description: Beautiful 6 Piece Hills, Moon, Sun, And Leaves Wooden Wall Art Frame Set Crafted From Wooden Stickytile, Each 8x11 Inches, With Double Tape For Easy Installation.
-Regular Price: 798
-Sale Price: 798
+Wholesale Price: 748
+Regular Price: 1430
+Sale Price: 1145
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

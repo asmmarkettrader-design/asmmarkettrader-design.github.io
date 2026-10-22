@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Motorcycle 3D Breathable Non-Slip Seat Cushion Pad – Pain Relief Comfort Cover for CD 70, CD 100, GS 150, GR 150, YBR and Similar Bike Seats
 Product ID: hhc-3756803
 SKU: hhc-3756803
@@ -7,11 +8,16 @@ Slug: motorcycle-3d-breathable-non-slip-seat-cushion-pad-pain-relief-comfort-691
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/e79ab9abf25cba48b1eaa24dac5f36bf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/e79ab9abf25cba48b1eaa24dac5f36bf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/b048236bd684944db450946f746cbd06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/557e3c5a597702ed1a5d791b6a139a9c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/1358a25fe9837d0ca44db90af1d7e004.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/78e33839a49af0ec837c5894b1e15573.jpg
 Meta Title: Motorcycle 3D Breathable Non-Slip Seat Cushion Pad – Pain Relief Com
 Meta Description: Buy Motorcycle 3D Breathable Non-Slip Seat Cushion Pad – Pain Relief Comfort Cover for CD 70, CD 100, GS 150, GR 150, YBR and Similar Bike Seats online in Pakis
 Description: High-quality 3D breathable motorcycle seat cushion designed to reduce pressure and improve riding comfort. The non-slip base keeps the pad securely in place while the ventilated structure helps reduce heat buildup during long rides. Compatible with CD 70, CD 100, GS 150, GR 150, YBR and similar motor
-Regular Price: 2235
-Sale Price: 2235
+Wholesale Price: 2235
+Regular Price: 4000
+Sale Price: 3197
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bow Knot Pearl Earrings with Zircon – Korean Style (PJX-113)
 Product ID: hhc-3752535
 SKU: hhc-3752535
@@ -7,11 +8,16 @@ Slug: bow-knot-pearl-earrings-with-zircon-korean-style-pjx-113-hhc-3752535
 Category: Fashion
 Subcategory: Jewelry
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/33dbbc71edf310d2bdf7ed3d32197097.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/33dbbc71edf310d2bdf7ed3d32197097.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/c3f2b3a43070983f836dc14185f400f3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/adcad8bfd9ae87827a530b93746f55e1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/6274357f928b5a2d8db875427dc4ae23.jpeg
 Meta Title: Bow Knot Pearl Earrings with Zircon – Korean Style (PJX-113) | Buy O
 Meta Description: Buy Bow Knot Pearl Earrings with Zircon – Korean Style (PJX-113) online in Pakistan from ASM VEO. Add a graceful touch to your look with these Korean-style knot
 Description: Add a graceful touch to your look with these Korean-style knot-shaped pearl earrings, accented with sparkling zircon stones. Available in silver and golden finishes, they’re perfect for both everyday elegance and special occasions.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

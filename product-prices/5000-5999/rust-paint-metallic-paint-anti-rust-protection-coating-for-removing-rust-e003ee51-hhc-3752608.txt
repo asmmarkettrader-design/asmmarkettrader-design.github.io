@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rust Paint Metallic Paint Anti Rust Protection Coating For Removing Rust From Metal - Random Color (With Brush 300gm)
 Product ID: hhc-3752608
 SKU: hhc-3752608
@@ -7,11 +8,16 @@ Slug: rust-paint-metallic-paint-anti-rust-protection-coating-for-removing-rus-e0
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
-Meta Title: Rust Paint Metallic Paint Anti Rust Protection Coating For Removing
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/17b4a25fa1cf0512abac03c095b0c5f8.gif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/17b4a25fa1cf0512abac03c095b0c5f8.gif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/51f9e474a2421676b2a57ea557458944.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/259e5ec63588f55fe47f34d9da61ca1b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/47fc5e382a04cd17fa8bfe6b9506643c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/1b9e6894d495447c573b0e5897143364.jpg
+Meta Title: Rust Paint Metallic Paint Anti Rust Protection Coating For Removing 
 Meta Description: Buy Rust Paint Metallic Paint Anti Rust Protection Coating For Removing Rust From Metal - Random Color (With Brush 300gm) online in Pakistan from ASM VEO. High-
 Description: High-quality Random metallic rust paint with anti-rust protection – removes rust, prevents corrosion, and adds a durable protective finish. Includes brush (300gm)
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

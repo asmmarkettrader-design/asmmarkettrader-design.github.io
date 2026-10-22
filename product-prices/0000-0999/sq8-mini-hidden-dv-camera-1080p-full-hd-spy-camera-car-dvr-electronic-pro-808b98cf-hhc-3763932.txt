@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SQ8 Mini Hidden DV Camera 1080P Full HD Spy Camera & Car DVR - Electronic Product Designed For Recording And Daily Video Routine ~ Rechargeable
 Product ID: hhc-3763932
 SKU: hhc-3763932
@@ -7,11 +8,16 @@ Slug: sq8-mini-hidden-dv-camera-1080p-full-hd-spy-camera-car-dvr-electronic-p-80
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/7369c48fa8408f7e6c0b91b27e3efdd2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/7369c48fa8408f7e6c0b91b27e3efdd2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/47f31841eb05d7cfc4e4353819d32fe9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/f7a6645e0cb1654d649e410d767a6c87.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/2a08650db4aa35929e324c0244928d45.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/0ef663b6be6ff2064ed8b266dfd6f7d3.jpeg
 Meta Title: SQ8 Mini Hidden DV Camera 1080P Full HD Spy Camera & Car DVR - Elect
 Meta Description: Buy SQ8 Mini Hidden DV Camera 1080P Full HD Spy Camera & Car DVR - Electronic Product Designed For Recording And Daily Video Routine ~ Rechargeable online in Pa
 Description: The SQ8 Mini Hidden DV Camera 1080P Full HD Spy Camera & Car DVR Is An Electronic Product Formulated To Help Provide Recording And Daily Video Utility During Use.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

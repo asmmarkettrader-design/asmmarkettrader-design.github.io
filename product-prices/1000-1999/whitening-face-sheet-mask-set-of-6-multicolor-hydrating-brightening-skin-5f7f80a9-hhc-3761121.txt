@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Whitening Face Sheet Mask Set Of 6 Multicolor Hydrating Brightening Skin Care Masks For Radiant Smooth And Glowing Skin | Random Flavor
 Product ID: hhc-3761121
 SKU: hhc-3761121
@@ -7,11 +8,16 @@ Slug: whitening-face-sheet-mask-set-of-6-multicolor-hydrating-brightening-ski-5f
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Whitening Face Sheet Mask Set Of 6 Multicolor Hydrating Brightening
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/d7a58c2f0e76f56d6144ed23c242c0b6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/d7a58c2f0e76f56d6144ed23c242c0b6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/aecd518ecb23b8c14617975927d0a4cf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/5b79fae8623d9a3045da160df0633188.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/281120ae49b9cb3766f2c4fbd84fa20f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/4b263c72758174f95976b4de67e2ed70.jpeg
+Meta Title: Whitening Face Sheet Mask Set Of 6 Multicolor Hydrating Brightening 
 Meta Description: Buy Whitening Face Sheet Mask Set Of 6 Multicolor Hydrating Brightening Skin Care Masks For Radiant Smooth And Glowing Skin | Random Flavor online in Pakistan f
 Description: Whitening Face Sheet Mask Set Of 6 Multicolor Hydrating Brightening Skin Care Masks Designed For Radiant Glowing Skin.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

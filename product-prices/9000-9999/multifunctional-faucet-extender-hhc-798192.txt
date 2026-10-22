@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multifunctional Faucet Extender
 Product ID: hhc-798192
 SKU: hhc-798192
@@ -7,11 +8,16 @@ Slug: multifunctional-faucet-extender-hhc-798192
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/c1d1a078f858f5e57e28231b1c9ab61c.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/c1d1a078f858f5e57e28231b1c9ab61c.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/e68100a73521efab4aa4cb7badd46eb4.jpg_750x750.jpg_.webp
 Meta Title: Multifunctional Faucet Extender | Buy Online in Pakistan
 Meta Description: Buy Multifunctional Faucet Extender online in Pakistan from ASM VEO. Features: Perfect for kitchen, bathroom or laundry room sinks, this handy, flexible spray.
 Description: Features: Perfect for kitchen, bathroom or laundry room sinks, this handy, flexible spray. -like water, large contact area, even watering, saves water. User-friendly design with hose faucet spraye the kitchen sink. Easy to operate, easy to clean, it is placed directly on the faucet, and it can be easily pulled from the flow adjustment spray &nbsp; &nbsp; [video width="720" height="960" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Video-2023-11-09-at-12.54.09-PM.mp4"][/video]
-Regular Price: 3007
-Sale Price: 3007
+Wholesale Price: 3007
+Regular Price: 5110
+Sale Price: 4089
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

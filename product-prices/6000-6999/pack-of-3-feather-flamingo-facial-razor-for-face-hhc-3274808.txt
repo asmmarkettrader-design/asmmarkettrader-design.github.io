@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 3- Feather Flamingo Facial Razor For Face
 Product ID: hhc-3274808
 SKU: hhc-3274808
@@ -7,11 +8,16 @@ Slug: pack-of-3-feather-flamingo-facial-razor-for-face-hhc-3274808
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/pack-of-3-feather-flamingo-facial-razor-for-face-4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/pack-of-3-feather-flamingo-facial-razor-for-face-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/pack-of-3-feather-flamingo-facial-razor-for-face-3.jpeg
 Meta Title: Pack Of 3- Feather Flamingo Facial Razor For Face | Buy Online in Pa
 Meta Description: Buy Pack Of 3- Feather Flamingo Facial Razor For Face online in Pakistan from ASM VEO. Pack Of 3- Feather Flamingo Facial Razor for Face, Eyebrows &amp; Body sh
 Description: Pack Of 3- Feather Flamingo Facial Razor for Face, Eyebrows &amp; Body shaving | Facial Touch-up Razor | Flamingo Facial Razors for Face, Eyebrows &amp; Body Hair Removal | Facial Razors for Body, Face, Eyebrows Hair Removal [video width="478" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Video-2025-05-26-at-3.28.17-PM.mp4"][/video]
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

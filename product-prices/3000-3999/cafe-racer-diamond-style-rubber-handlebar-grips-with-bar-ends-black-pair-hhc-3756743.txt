@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cafe Racer Diamond Style Rubber Handlebar Grips with Bar Ends – Black (Pair)
 Product ID: hhc-3756743
 SKU: hhc-3756743
@@ -7,11 +8,16 @@ Slug: cafe-racer-diamond-style-rubber-handlebar-grips-with-bar-ends-black-pair-h
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/5fb59c496ab626827b6897701d661843.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/5fb59c496ab626827b6897701d661843.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/eeb4dc76b19e3a0aa1d4047365a54a5a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/753422a696d35fe3a6043d47efa47dad.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/e3a8f2f1ccf2c560d0e1605189028b49.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/0ff3b3542954d44e3e4e994661e2738e.jpeg
 Meta Title: Cafe Racer Diamond Style Rubber Handlebar Grips with Bar Ends – Blac
 Meta Description: Buy Cafe Racer Diamond Style Rubber Handlebar Grips with Bar Ends – Black (Pair) online in Pakistan from ASM VEO. Upgrade your motorcycle with these diamond-pat
 Description: Upgrade your motorcycle with these diamond-pattern rubber handlebar grips featuring integrated bar ends. Designed for cafe racer and custom bikes, this 2-piece black grip set delivers enhanced comfort, control, and classic styling.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

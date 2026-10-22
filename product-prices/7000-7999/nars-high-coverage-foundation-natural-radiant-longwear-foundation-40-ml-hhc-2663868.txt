@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: NARS high coverage foundation Natural Radiant Longwear Foundation 40 ml
 Product ID: hhc-2663868
 SKU: hhc-2663868
@@ -7,11 +8,16 @@ Slug: nars-high-coverage-foundation-natural-radiant-longwear-foundation-40-ml-hh
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-31-at-2.50.18-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-31-at-2.50.18-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-31-at-2.50.18-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-31-at-2.50.17-PM.jpeg
 Meta Title: NARS high coverage foundation Natural Radiant Longwear Foundation 40
 Meta Description: Buy NARS high coverage foundation Natural Radiant Longwear Foundation 40 ml online in Pakistan from ASM VEO. Description Material: Creamy Product Type: high cov
 Description: Description Material: Creamy Product Type: high coverage foundation Package include: 1 foundation Immediately strengthens skin &amp; improves its clarity over time. Helps defend against environmental aggressors &amp; blue light. Instantly blurs imperfections, smooths the look of textured skin &amp; conceals blemishes, dark spots &amp; redness. Light Reflecting Complex helps reflect light like a prism by addressing luminosity at the surface of skin. Provides breathable, all-day wear. Gives medium, buildable coverage with a natural finish. Suitable for most skin types, including sensitive skin. Free of mineral oil, parabens &amp; silicone. Available in a wide range of shades for matching. Original Picture
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

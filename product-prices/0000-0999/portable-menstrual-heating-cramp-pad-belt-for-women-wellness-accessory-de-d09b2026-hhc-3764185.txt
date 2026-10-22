@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Menstrual Heating Cramp Pad Belt For Women - Wellness Accessory Designed For Personal Comfort And Daily Relaxation Routine
 Product ID: hhc-3764185
 SKU: hhc-3764185
@@ -7,11 +8,16 @@ Slug: portable-menstrual-heating-cramp-pad-belt-for-women-wellness-accessory-d09
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/eb0bd23d0c2ebcf247863832d685ec50.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/eb0bd23d0c2ebcf247863832d685ec50.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/bc0fe10a2a4f7ab51ce9204e9d040a1f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/76f1b9f644f87172ee8530582eb8f91f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/9e1cd1a0e6659bd8f36697575b8f6739.jpeg
 Meta Title: Portable Menstrual Heating Cramp Pad Belt For Women - Wellness Acces
 Meta Description: Buy Portable Menstrual Heating Cramp Pad Belt For Women - Wellness Accessory Designed For Personal Comfort And Daily Relaxation Routine online in Pakistan from
 Description: The Portable Menstrual Heating Cramp Pad Belt For Women Is A Wellness Accessory Formulated To Help Provide Personal Comfort And Daily Relaxation Utility During Use.
-Regular Price: 1308
-Sale Price: 1308
+Wholesale Price: 1258
+Regular Price: 2310
+Sale Price: 1846
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

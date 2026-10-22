@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Eidi Card – 4x5 Size , Single Card Only (Random Design)
 Product ID: hhc-3756604
 SKU: hhc-3756604
@@ -7,11 +8,16 @@ Slug: eidi-card-4x5-size-single-card-only-random-design-hhc-3756604
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/9d7b8186c0c48b9e9fd638333b16d584.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/9d7b8186c0c48b9e9fd638333b16d584.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/0c62aa919e57b1a285de92b60d86fddd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/735a48aa89910f2122fbac34adbf10ed.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/ef404cad5037660e0f4f664e0b0883df.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/cc85178f283ae61dda6ceae6391f650f.jpeg
 Meta Title: Eidi Card – 4x5 Size , Single Card Only (Random Design) | Buy Online
 Meta Description: Buy Eidi Card – 4x5 Size , Single Card Only (Random Design) online in Pakistan from ASM VEO. Celebrate special occasions with this elegant Eidi card. Sized 4x5,
 Description: Celebrate special occasions with this elegant Eidi card. Sized 4x5, this card is perfect for gifting money or heartfelt messages. Single card included.
-Regular Price: 179
-Sale Price: 179
+Wholesale Price: 129
+Regular Price: 404
+Sale Price: 254
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

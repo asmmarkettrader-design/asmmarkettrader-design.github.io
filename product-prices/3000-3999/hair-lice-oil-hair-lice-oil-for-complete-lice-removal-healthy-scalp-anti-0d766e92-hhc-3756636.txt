@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Lice Oil | Hair Lice Oil For Complete Lice Removal & Healthy Scalp | Anti Lice Treatment | Hair Lice Oil | 100 ml
 Product ID: hhc-3756636
 SKU: hhc-3756636
@@ -7,11 +8,16 @@ Slug: hair-lice-oil-hair-lice-oil-for-complete-lice-removal-healthy-scalp-ant-0d
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/eaadd308ff66195a527e397daabf4329.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/eaadd308ff66195a527e397daabf4329.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/420ec8cddcf13dd74b75a0d091ab9f2e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/8ba7af313f17e9d75a07eaf80c4d39ad.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/a5eed8f72439c47c40c30500b361ca83.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/17dbcb8b904a93cbe183c1ba3bf214d0.jpeg
 Meta Title: Hair Lice Oil | Hair Lice Oil For Complete Lice Removal & Healthy Sc
 Meta Description: Buy Hair Lice Oil | Hair Lice Oil For Complete Lice Removal & Healthy Scalp | Anti Lice Treatment | Hair Lice Oil | 100 ml online in Pakistan from ASM VEO. Scal
 Description: ScalpStory Hair Lice Oil is a powerful herbal formula designed to remove head lice and nits effectively while soothing the scalp. Enriched with neem, tea tree, and coconut oil, it helps prevent re-infestation and promotes healthier, stronger hair.
-Regular Price: 1511
-Sale Price: 1511
+Wholesale Price: 1461
+Regular Price: 2670
+Sale Price: 2135
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

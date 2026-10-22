@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2pcs Round Blind Spot Mirrors – Wide-Angle Lens for Enhanced Rear and Side View Visibility – Convex Mirror for Cars, SUVs, and Trucks – Universal Fit Safety Accessory - Glass Material
 Product ID: hhc-3073049
 SKU: hhc-3073049
@@ -7,11 +8,16 @@ Slug: 2pcs-round-blind-spot-mirrors-wide-angle-lens-for-enhanced-rear-and-sid-78
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/764668cd6f97cd91f61a6f520b94204e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/764668cd6f97cd91f61a6f520b94204e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/1c30f3e74a81040a8004ab481de08efb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/17b2c0afd9d3a3df22f80eba7b2e5791.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/44929d3aa3c7705d40b37396d7019dd4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/32749eff793f063d0b38e0e97a633c0a.jpg
 Meta Title: 2pcs Round Blind Spot Mirrors – Wide-Angle Lens for Enhanced Rear an
 Meta Description: Buy 2pcs Round Blind Spot Mirrors – Wide-Angle Lens for Enhanced Rear and Side View Visibility – Convex Mirror for Cars, SUVs, and Trucks – Universal Fit Safety
 Description: 2pcs Round Blind Spot Mirrors – Wide-Angle Lens for Enhanced Rear and Side View Visibility – Convex Mirror for Cars, SUVs, and Trucks – Universal Fit Safety Accessory - Glass Material
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

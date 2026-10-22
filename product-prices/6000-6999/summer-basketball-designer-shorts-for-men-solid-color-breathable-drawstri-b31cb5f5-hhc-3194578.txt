@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Summer Basketball Designer Shorts for Men | Solid Color | Breathable Drawstring Loose | Casual Short | High Quality [Black]
 Product ID: hhc-3194578
 SKU: hhc-3194578
@@ -7,11 +8,16 @@ Slug: summer-basketball-designer-shorts-for-men-solid-color-breathable-drawst-b3
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/1c743147d298462ab425a7fda3c41d2d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/1c743147d298462ab425a7fda3c41d2d.jpeg
 Meta Title: Summer Basketball Designer Shorts for Men | Solid Color | Breathable
 Meta Description: Buy Summer Basketball Designer Shorts for Men | Solid Color | Breathable Drawstring Loose | Casual Short | High Quality [Black] online in Pakistan from ASM VEO.
 Description: Summer Designer Stylish ShortSizes:MediumLargeExtra LargeNote: We recommend hand wash for long lasting life. Fabric: JerseySize Chart:Product Image:
-Regular Price: 465
-Sale Price: 465
+Wholesale Price: 415
+Regular Price: 850
+Sale Price: 682
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

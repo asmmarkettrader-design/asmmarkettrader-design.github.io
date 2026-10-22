@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula - 100gram
 Product ID: hhc-3753260
 SKU: hhc-3753260
@@ -7,11 +8,16 @@ Slug: dr-rubina-weight-loss-solution-herbal-slimming-digestion-energy-support-9c
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/93fc89f073aafcfd657183f1e83aed24.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/93fc89f073aafcfd657183f1e83aed24.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/f59058bf8d8e765d63df9c5108474ed5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/4e94353cb13347502911a4ea6edc5262.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/c1e5753f38cb7f8df9ed8732b1bd0609.jpeg
 Meta Title: Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energ
 Meta Description: Buy Dr. Rubina Weight Loss Solution | Herbal Slimming, Digestion & Energy Support Formula - 100gram online in Pakistan from ASM VEO. Herbal weight loss formula
 Description: Herbal weight loss formula by Dr. Rubina — supports fat burning, boosts digestion, and enhances daily energy naturally.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

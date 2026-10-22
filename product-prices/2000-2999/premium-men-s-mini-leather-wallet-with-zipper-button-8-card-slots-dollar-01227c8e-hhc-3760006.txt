@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Men’s Mini Leather Wallet With Zipper & Button | 8 Card Slots | Dollar Size | With Box
 Product ID: hhc-3760006
 SKU: hhc-3760006
@@ -7,11 +8,16 @@ Slug: premium-men-s-mini-leather-wallet-with-zipper-button-8-card-slots-dolla-01
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/24/10bdd26bd2d6ccb4cb738a41277889f0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/24/10bdd26bd2d6ccb4cb738a41277889f0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/24/049f828e1effb5e3ae76ac5c1c213a00.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/11ce223fe09a50dacbea202e59d9fd73.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/ce800585b969d7f95d0d7c05c8e16261.png
 Meta Title: Premium Men’s Mini Leather Wallet With Zipper & Button | 8 Card Slot
 Meta Description: Buy Premium Men’s Mini Leather Wallet With Zipper & Button | 8 Card Slots | Dollar Size | With Box online in Pakistan from ASM VEO. Premium Men's Mini Leather W
 Description: Premium Men's Mini Leather Wallet with excellent quality and stylish design. It has 8 card slots, 2 slip pockets, zip pocket, inner coin pocket and strong button lock. This wallet is available in Black, Light Brown and Dark Brown colors and comes with a beautiful box. Perfect choice for daily use and gifting.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

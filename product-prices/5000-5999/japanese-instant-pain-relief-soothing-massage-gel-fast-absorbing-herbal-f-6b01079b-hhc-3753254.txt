@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Japanese Instant Pain Relief Soothing Massage Gel – Fast-Absorbing Herbal Formula for Muscle, Joint & Body Pain | 60 g
 Product ID: hhc-3753254
 SKU: hhc-3753254
@@ -7,11 +8,16 @@ Slug: japanese-instant-pain-relief-soothing-massage-gel-fast-absorbing-herbal-6b
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/cd0d39b7e91e00e56b2b78d983807b24.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/cd0d39b7e91e00e56b2b78d983807b24.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/e328045e4cf01b46cb0f7238d0e4e7fb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/e87767a9944eba90223dcacb01673811.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/f494436ff8a0ce41a8daa2e8de6e9ce9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/43d089ef3ac43d4085dd5f06c46eb2c6.jpeg
 Meta Title: Japanese Instant Pain Relief Soothing Massage Gel – Fast-Absorbing H
 Meta Description: Buy Japanese Instant Pain Relief Soothing Massage Gel – Fast-Absorbing Herbal Formula for Muscle, Joint & Body Pain | 60 g online in Pakistan from ASM VEO. Inst
 Description: Instant pain relief gel with Japanese herbal formula — relaxes muscles, soothes joints, and absorbs quickly without grease.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

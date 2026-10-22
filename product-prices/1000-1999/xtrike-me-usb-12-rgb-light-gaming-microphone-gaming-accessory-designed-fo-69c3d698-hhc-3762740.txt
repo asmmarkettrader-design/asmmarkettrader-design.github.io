@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Xtrike Me Usb 12 Rgb Light Gaming Microphone - Gaming Accessory Designed For Audio Recording And Daily Streaming Routine
 Product ID: hhc-3762740
 SKU: hhc-3762740
@@ -7,11 +8,16 @@ Slug: xtrike-me-usb-12-rgb-light-gaming-microphone-gaming-accessory-designed-69c
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/18e7d0134c5821a8ec663d1e0f2404c3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/18e7d0134c5821a8ec663d1e0f2404c3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/4babfe2e34e594eb37ace2b714f57582.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/7b040e553c90df781112955f33c944c7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/1f1b5e90984dda957c8551d875bbbd4a.jpeg
 Meta Title: Xtrike Me Usb 12 Rgb Light Gaming Microphone - Gaming Accessory Desi
 Meta Description: Buy Xtrike Me Usb 12 Rgb Light Gaming Microphone - Gaming Accessory Designed For Audio Recording And Daily Streaming Routine online in Pakistan from ASM VEO. Th
 Description: The Xtrike Me Usb 12 Rgb Light Gaming Microphone Is A Gaming Accessory Formulated To Help Provide Audio Recording And Streaming During Daily Use.
-Regular Price: 3793
-Sale Price: 3793
+Wholesale Price: 3793
+Regular Price: 6390
+Sale Price: 5111
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Blanca Acne And Oil Control Face Wash 100ml Gentle Cleanser For Clear Balanced And Healthy Skin
 Product ID: hhc-3757131
 SKU: hhc-3757131
@@ -7,11 +8,16 @@ Slug: blanca-acne-and-oil-control-face-wash-100ml-gentle-cleanser-for-clear-b-f9
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/82080e9704cb1e0499bc268e0364f35a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/82080e9704cb1e0499bc268e0364f35a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/c026c5028f92aea3b6f8bc4d0b1baaf3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/2b4a12a9fc194a25a73bbf53c36bf732.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/2b8e151abf1d88f2b8fa8f5ab3da5c9e.jpeg
 Meta Title: Blanca Acne And Oil Control Face Wash 100ml Gentle Cleanser For Clea
 Meta Description: Buy Blanca Acne And Oil Control Face Wash 100ml Gentle Cleanser For Clear Balanced And Healthy Skin online in Pakistan from ASM VEO. Blanca Acne And Oil Control
 Description: Blanca Acne And Oil Control Face Wash 100ml Effectively Removes Excess Oil Dirt And Impurities For Clear Smooth And Refreshed Skin.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

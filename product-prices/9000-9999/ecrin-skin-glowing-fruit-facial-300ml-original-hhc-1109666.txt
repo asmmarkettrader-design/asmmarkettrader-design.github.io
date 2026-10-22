@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ecrin Skin Glowing Fruit Facial 300ml (Original)
 Product ID: hhc-1109666
 SKU: hhc-1109666
@@ -7,11 +8,16 @@ Slug: ecrin-skin-glowing-fruit-facial-300ml-original-hhc-1109666
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-22-at-8.52.48-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-22-at-8.52.48-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-22-at-8.52.05-PM.jpeg
 Meta Title: Ecrin Skin Glowing Fruit Facial 300ml (Original) | Buy Online in Pak
 Meta Description: Buy Ecrin Skin Glowing Fruit Facial 300ml (Original) online in Pakistan from ASM VEO. Product description:The "Ecrin Glowing Facial" is a premium skincare treat
 Description: Product description:The "Ecrin Glowing Facial" is a premium skincare treatment designed to enhance the radiance and overall health of your skin. This luxurious facial experience is offered by the esteemed skincare brand "Ecrin" and is meticulously crafted to provide a comprehensive and rejuvenating skincare regimen. [video width="720" height="1280" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Video-2024-05-14-at-3.29.35-PM-2.mp4"][/video]
-Regular Price: 649
-Sale Price: 649
+Wholesale Price: 599
+Regular Price: 1160
+Sale Price: 929
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

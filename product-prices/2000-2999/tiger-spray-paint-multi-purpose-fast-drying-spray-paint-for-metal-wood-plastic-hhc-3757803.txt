@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tiger Spray Paint – Multi-Purpose Fast Drying Spray Paint for Metal, Wood & Plastic
 Product ID: hhc-3757803
 SKU: hhc-3757803
@@ -7,11 +8,16 @@ Slug: tiger-spray-paint-multi-purpose-fast-drying-spray-paint-for-metal-wood-pla
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/df4d98295d67e06340b67e897a13b250.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/df4d98295d67e06340b67e897a13b250.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/161e63f84f36dfd586a6005dc3696bf3.jpeg
 Meta Title: Tiger Spray Paint – Multi-Purpose Fast Drying Spray Paint for Metal,
 Meta Description: Buy Tiger Spray Paint – Multi-Purpose Fast Drying Spray Paint for Metal, Wood & Plastic online in Pakistan from ASM VEO. Tiger Spray Paint provides smooth cover
 Description: Tiger Spray Paint provides smooth coverage, fast drying, and a durable finish for various surfaces.
-Regular Price: 623
-Sale Price: 623
+Wholesale Price: 573
+Regular Price: 1110
+Sale Price: 891
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multipurpose 4-in-1 Laser Level, Ruler, and Spirit Level Tool with Triple Bubble Vials for Precise Home Improvement & Construction Tasks
 Product ID: hhc-3757170
 SKU: hhc-3757170
@@ -7,11 +8,16 @@ Slug: multipurpose-4-in-1-laser-level-ruler-and-spirit-level-tool-with-triple-7c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/0fde4d5f58f27348dd41118292ea75a2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/0fde4d5f58f27348dd41118292ea75a2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/80aaf21e58785ba29986dadafa258fdc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/63795567566825fb1fde6ebb4413f016.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/e6d75425e4c239652363805a46a38ce2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/ebed48ce53553afb2016aea0adce0832.jpg
 Meta Title: Multipurpose 4-in-1 Laser Level, Ruler, and Spirit Level Tool with T
 Meta Description: Buy Multipurpose 4-in-1 Laser Level, Ruler, and Spirit Level Tool with Triple Bubble Vials for Precise Home Improvement & Construction Tasks online in Pakistan
 Description: This tool is a Jinyuda Laser Level-pro, a multifunctional device designed for precision alignment and measurement in DIY and construction projects. It typically combines multiple features into a single compact unit:
-Regular Price: 2305
-Sale Price: 2305
+Wholesale Price: 2305
+Regular Price: 4120
+Sale Price: 3292
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish Charcoal & Black Winter Zipper Jacket For Men | Premium Fleece Full Sleeve Casual Jacket
 Product ID: hhc-3258238
 SKU: hhc-3258238
@@ -7,11 +8,16 @@ Slug: stylish-charcoal-black-winter-zipper-jacket-for-men-premium-fleece-full-f9
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/image-5.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/image-5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/image-2-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-19-at-3.17.00-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/0f76cc74e0669ba3fb6eaa2812db2d06.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/c916b7ee2b85f72fab755114c4f9b8fe.jpg
 Meta Title: Stylish Charcoal & Black Winter Zipper Jacket For Men | Premium Flee
 Meta Description: Buy Stylish Charcoal & Black Winter Zipper Jacket For Men | Premium Fleece Full Sleeve Casual Jacket online in Pakistan from ASM VEO. Stylish Charcoal & Black W
 Description: Stylish Charcoal & Black Winter Zipper Jacket Made From Premium Fleece Fabric. Features Full Sleeves, Front Zipper, And A Comfortable Fit For Everyday Winter Wear.
-Regular Price: 1146
-Sale Price: 1146
+Wholesale Price: 1096
+Regular Price: 2020
+Sale Price: 1616
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

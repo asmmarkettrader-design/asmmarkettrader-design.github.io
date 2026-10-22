@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 8Pcs Bear Shape Plate Set | Creative Food-Grade Plastic Plates With Stand | Random Colour
 Product ID: hhc-3758086
 SKU: hhc-3758086
@@ -7,11 +8,16 @@ Slug: 8pcs-bear-shape-plate-set-creative-food-grade-plastic-plates-with-stand-86
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/e88600bd3b69340c086b882c15ca1a7b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/e88600bd3b69340c086b882c15ca1a7b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/274d05301d2219e788d754f83df62e91.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/e9c26234e7d42a861caaeee73b7a0e14.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/9a15966651fd75919962ea31a342ad54.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/8e17144db2de5a76a0b53a2e934c7095.jpeg
 Meta Title: 8Pcs Bear Shape Plate Set | Creative Food-Grade Plastic Plates With
 Meta Description: Buy 8Pcs Bear Shape Plate Set | Creative Food-Grade Plastic Plates With Stand | Random Colour online in Pakistan from ASM VEO. Reusable 8Pcs Bear Shape Plate Se
 Description: Reusable 8Pcs Bear Shape Plate Set | Multi-Functional Plastic Plates With Stand & Double Tape
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

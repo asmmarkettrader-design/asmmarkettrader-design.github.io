@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Couple Matching Romantic Robe / Gown Set – Sensual Net Nightwear for Men & Women (Pack of 2) | SKU: DC-C004
 Product ID: hhc-3756242
 SKU: hhc-3756242
@@ -7,11 +8,16 @@ Slug: couple-matching-romantic-robe-gown-set-sensual-net-nightwear-for-men-wo-f8
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/8087646f8170452997c16d4765122061.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/8087646f8170452997c16d4765122061.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/46878128b26165326a85c2710d12cb7b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/d0f3f27d5b5895d47f7341380f3602d0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/e8435d26ca3dd15952fdc898bfcb3eef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/10/6c030af3a951832be1bc575e09362865.png
 Meta Title: Couple Matching Romantic Robe / Gown Set – Sensual Net Nightwear for
 Meta Description: Buy Couple Matching Romantic Robe / Gown Set – Sensual Net Nightwear for Men & Women (Pack of 2) | SKU: DC-C004 online in Pakistan from ASM VEO. Exquisite coupl
 Description: Exquisite couple net gown set designed to add romance and elegance to your intimate moments. Made with soft, sensual net fabric, this matching robe set is perfect for couples who love stylish and comfortable nightwear.
-Regular Price: 2726
-Sale Price: 2726
+Wholesale Price: 2726
+Regular Price: 4820
+Sale Price: 3860
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

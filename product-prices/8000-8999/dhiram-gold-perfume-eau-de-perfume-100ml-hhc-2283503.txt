@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dhiram Gold Perfume Eau de Perfume  100ml
 Product ID: hhc-2283503
 SKU: hhc-2283503
@@ -7,11 +8,16 @@ Slug: dhiram-gold-perfume-eau-de-perfume-100ml-hhc-2283503
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/IMG_5740.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/IMG_5740.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/IMG_5739.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/1708493894Dirham-Gold-by-Ard-Al-Zaafaran-Perfume-In-Pakistan.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-06-at-3.26.41-PM.jpeg
 Meta Title: Dhiram Gold Perfume Eau de Perfume 100ml | Buy Online in Pakistan
 Meta Description: Buy Dhiram Gold Perfume Eau de Perfume 100ml online in Pakistan from ASM VEO. product detailsperfume a luxurious and oriental fragrance that captures the essenc
 Description: product detailsperfume a luxurious and oriental fragrance that captures the essence of Arabian gold.This premium scent is perfect for those who appreciate the finer things in life and want to make a statement.Dhiram Gold perfume is a 4 hours long-lasting fragrance that is perfect for special occasions or everyday wear. Its unique blend of notes will leave a lasting impression and make you feel confident and dignified.Suitable for: UnisexThe oriental fragrance family suggests it might have a warm and exotic character, while being suitable for both men and women.product quality ; copyLasting 4 hours
-Regular Price: 1457
-Sale Price: 1457
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

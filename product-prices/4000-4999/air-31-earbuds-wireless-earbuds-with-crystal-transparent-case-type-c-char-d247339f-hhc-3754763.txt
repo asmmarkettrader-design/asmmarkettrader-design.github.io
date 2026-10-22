@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Air 31 Earbuds Wireless Earbuds With Crystal Transparent Case Type C Charging And Bluetooth 5.3 Providing Durable Quality - Random Color
 Product ID: hhc-3754763
 SKU: hhc-3754763
@@ -7,11 +8,16 @@ Slug: air-31-earbuds-wireless-earbuds-with-crystal-transparent-case-type-c-ch-d2
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/61210a8fef02aaf27d6934fec30d124a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/61210a8fef02aaf27d6934fec30d124a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/9878c2350bb1eb6a60c94774ded93131.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/0b25131204edb5342bb761883f9c7e56.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/657ccf5ca1283db3e6952b5ab7e74a57.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/900390aa5227976db6cbd0ce7d149428.jpeg
 Meta Title: Air 31 Earbuds Wireless Earbuds With Crystal Transparent Case Type C
 Meta Description: Buy Air 31 Earbuds Wireless Earbuds With Crystal Transparent Case Type C Charging And Bluetooth 5.3 Providing Durable Quality - Random Color online in Pakistan
 Description: Air 31 Earbuds Wireless With Crystal Transparent Case Type C Charging And Bluetooth 5.3 Offering Comfortable Daily Use
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

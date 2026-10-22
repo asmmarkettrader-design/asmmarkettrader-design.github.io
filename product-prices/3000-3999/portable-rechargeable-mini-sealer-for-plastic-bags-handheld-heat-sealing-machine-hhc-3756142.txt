@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Rechargeable Mini Sealer For Plastic Bags | Handheld Heat Sealing Machine
 Product ID: hhc-3756142
 SKU: hhc-3756142
@@ -7,11 +8,16 @@ Slug: portable-rechargeable-mini-sealer-for-plastic-bags-handheld-heat-sealing-m
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/5ec68b5ae809c7d9d9a79061726bfbd4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/5ec68b5ae809c7d9d9a79061726bfbd4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/f35b15c6c8a01b4132935b291c8b452c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/1d2cea09ce9cfa74532d86b051dd98fe.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/edf77723f5becbd85578871b42e09d73.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/1345b94a006cf15997d050e86785319c.jpg
 Meta Title: Portable Rechargeable Mini Sealer For Plastic Bags | Handheld Heat S
 Meta Description: Buy Portable Rechargeable Mini Sealer For Plastic Bags | Handheld Heat Sealing Machine online in Pakistan from ASM VEO. Portable Rechargeable Mini Sealer helps
 Description: Portable Rechargeable Mini Sealer helps reseal plastic bags easily to keep food fresh and protected from moisture and air.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Forever Mini Facial Cleansing Brush For All Skin Types
 Product ID: hhc-822982
 SKU: hhc-822982
@@ -7,11 +8,16 @@ Slug: forever-mini-facial-cleansing-brush-for-all-skin-types-hhc-822982
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.58.32-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.58.32-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.58.33-PM-1.jpeg
 Meta Title: Forever Mini Facial Cleansing Brush For All Skin Types | Buy Online
 Meta Description: Buy Forever Mini Facial Cleansing Brush For All Skin Types online in Pakistan from ASM VEO. Facial CleanserElectric MassagerRechargeableWaterproofUltrasonicBest
 Description: Facial CleanserElectric MassagerRechargeableWaterproofUltrasonicBest For CleansingLightweightEasy to CarryHandy
-Regular Price: 726
-Sale Price: 726
+Wholesale Price: 676
+Regular Price: 1300
+Sale Price: 1040
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

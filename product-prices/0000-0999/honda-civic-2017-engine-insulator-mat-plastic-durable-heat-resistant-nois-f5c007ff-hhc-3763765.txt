@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Honda Civic 2017 Engine Insulator Mat Plastic Durable Heat Resistant Noise Reduction Practical Choice For Engine Bay Protection And Performance
 Product ID: hhc-3763765
 SKU: hhc-3763765
@@ -7,11 +8,16 @@ Slug: honda-civic-2017-engine-insulator-mat-plastic-durable-heat-resistant-no-f5
 Category: Automotive
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/86275344d0e231873c626102cf006822.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/86275344d0e231873c626102cf006822.jpeg
 Meta Title: Honda Civic 2017 Engine Insulator Mat Plastic Durable Heat Resistant
 Meta Description: Buy Honda Civic 2017 Engine Insulator Mat Plastic Durable Heat Resistant Noise Reduction Practical Choice For Engine Bay Protection And Performance online in Pa
 Description: Honda Civic 2017 Engine Insulator Mat Plastic Durable Heat Resistant Noise Reduction Practical Choice For Engine Bay Protection And Performance.
-Regular Price: 2305
-Sale Price: 2305
+Wholesale Price: 2305
+Regular Price: 4120
+Sale Price: 3292
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

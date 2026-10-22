@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Sliding Tile Puzzle Gel Pen for Kids (1 Pc – Random Color & Design)
 Product ID: hhc-3764242
 SKU: hhc-3764242
@@ -7,11 +8,16 @@ Slug: mini-sliding-tile-puzzle-gel-pen-for-kids-1-pc-random-color-design-hhc-376
 Category: Books & Stationery
 Subcategory: Office Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/b5f0564f0dc20a7aee6c523e3e9a44cc.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/b5f0564f0dc20a7aee6c523e3e9a44cc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/c953ad1fb9e5ec9d1f761e75c0619136.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/963515881296e556c66250972ec973bc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/579877d2bff183d91a189f397d63c57d.jpg
 Meta Title: Mini Sliding Tile Puzzle Gel Pen for Kids (1 Pc – Random Color & Des
 Meta Description: Buy Mini Sliding Tile Puzzle Gel Pen for Kids (1 Pc – Random Color & Design) online in Pakistan from ASM VEO. A creative writing gel pen featuring an interactiv
 Description: A creative writing gel pen featuring an interactive mini sliding tile puzzle built into the cap. Combines smooth gel ink performance with a fun brain-teaser game for school, study, and party favors.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

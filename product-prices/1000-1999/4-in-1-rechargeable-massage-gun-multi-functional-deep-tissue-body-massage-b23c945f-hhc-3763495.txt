@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4-in-1 Rechargeable Massage Gun – Multi-Functional Deep Tissue Body Massager with 4 Massage Heads, Type-C Charging & Long Battery Life
 Product ID: hhc-3763495
 SKU: hhc-3763495
@@ -7,11 +8,16 @@ Slug: 4-in-1-rechargeable-massage-gun-multi-functional-deep-tissue-body-massa-b2
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
-Meta Title: 4-in-1 Rechargeable Massage Gun – Multi-Functional Deep Tissue Body
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/9dfab50abb5c329fe96eb9b2a57d485c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/9dfab50abb5c329fe96eb9b2a57d485c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/eea865bcb132209306f293deb0979f53.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/190fba5dc2071fd45826dd21ec53c31f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/ab20579e841d3f91f64c0310292457be.jpg
+Meta Title: 4-in-1 Rechargeable Massage Gun – Multi-Functional Deep Tissue Body 
 Meta Description: Buy 4-in-1 Rechargeable Massage Gun – Multi-Functional Deep Tissue Body Massager with 4 Massage Heads, Type-C Charging & Long Battery Life online in Pakistan fr
 Description: The 4-in-1 Rechargeable Massage Gun is a versatile and easy-to-use handheld massager designed for everyday relaxation and body massage. Its ergonomic gun-style design provides a comfortable grip, while the included interchangeable massage heads allow you to choose different massage styles according to your preference.The rechargeable design eliminates the need for continuous wired use, and Type-C charging makes powering the device simple and convenient. With its long-lasting battery, compact size, and lightweight construction, it can easily be carried and used at home, at the gym, in the office, or while travelling. The product comes in multiple attractive colours, with the colour sent randomly.Features4-in-1 Multi-Functional DesignMultiple Interchangeable Massage HeadsPremium Quality BuildRechargeable BatteryType-C ChargingLong Battery LifeCordless &amp; Portable DesignErgonomic Handheld GripEasy One-Button OperationSuitable for Different Body AreasConvenient for Home, Office &amp; Gym UseCompact &amp; Easy to CarryMultiple Colour OptionsColour Sent Randomly
-Regular Price: 2516
-Sale Price: 2516
+Wholesale Price: 2516
+Regular Price: 4470
+Sale Price: 3577
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

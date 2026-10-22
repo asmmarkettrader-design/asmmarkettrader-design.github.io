@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Argan Oil Shampoo | Professional Perfect Care | 750 ml | Fights Hair Loss & Repairs Damage
 Product ID: hhc-3755026
 SKU: hhc-3755026
@@ -7,11 +8,16 @@ Slug: yardlie-argan-oil-shampoo-professional-perfect-care-750-ml-fights-hair-331
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/2af02e2712360500f5438948de35228f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/2af02e2712360500f5438948de35228f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/7e53c9d9dfb411ffe1cf095197172791.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/15a58b051ffbf3c6936ae64403d3a61c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/ee85837aa2b2036f2fcf65e49ba49935.jpeg
 Meta Title: Yardlie Argan Oil Shampoo | Professional Perfect Care | 750 ml | Fig
 Meta Description: Buy Yardlie Argan Oil Shampoo | Professional Perfect Care | 750 ml | Fights Hair Loss & Repairs Damage online in Pakistan from ASM VEO. Professional argan oil s
 Description: Professional argan oil shampoo, 750 ml. Helps fight hair loss, repair damaged hair, and restore natural smoothness.
-Regular Price: 3007
-Sale Price: 3007
+Wholesale Price: 3007
+Regular Price: 5110
+Sale Price: 4089
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

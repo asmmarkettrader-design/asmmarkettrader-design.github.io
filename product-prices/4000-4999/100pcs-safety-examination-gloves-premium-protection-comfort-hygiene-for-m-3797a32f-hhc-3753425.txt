@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100PCs Safety Examination Gloves – Premium Protection, Comfort & Hygiene for Medical, Laboratory, and Everyday Use with Reliable Performance (Medium)
 Product ID: hhc-3753425
 SKU: hhc-3753425
@@ -7,11 +8,16 @@ Slug: 100pcs-safety-examination-gloves-premium-protection-comfort-hygiene-for-37
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/a3b33c36583aee1391662ee8590cf704.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/a3b33c36583aee1391662ee8590cf704.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/0eb8249302809ac8d1a7318efa17f120.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/56acf73b946405c5d4d420b6ff9a3a26.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/c20f6c6dda71e91ef9143d21a5cca472.jpeg
 Meta Title: 100PCs Safety Examination Gloves – Premium Protection, Comfort & Hyg
 Meta Description: Buy 100PCs Safety Examination Gloves – Premium Protection, Comfort & Hygiene for Medical, Laboratory, and Everyday Use with Reliable Performance (Medium) online
 Description: Durable, comfortable examination gloves offering reliable protection and hygiene for medical, lab, and everyday use.
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

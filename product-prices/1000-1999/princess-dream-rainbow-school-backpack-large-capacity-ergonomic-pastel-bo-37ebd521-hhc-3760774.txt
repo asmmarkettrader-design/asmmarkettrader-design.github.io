@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Princess Dream Rainbow School Backpack – Large Capacity Ergonomic Pastel Book Bag for Girls (44×31×13 cm)
 Product ID: hhc-3760774
 SKU: hhc-3760774
@@ -7,11 +8,16 @@ Slug: princess-dream-rainbow-school-backpack-large-capacity-ergonomic-pastel-37e
 Category: Fashion
 Subcategory: Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/36531d24b2cfc64e2943fdc0bcf50545.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/36531d24b2cfc64e2943fdc0bcf50545.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/e63a8d8390daa954ca2b31387ebb7856.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/7595c60a2bc3735121890ff6eda0da43.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/6f38bb37693f0684d18c56d6fe2b0ef4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/b766259aa5eb7f26d191c1581be2bcba.jpeg
 Meta Title: Princess Dream Rainbow School Backpack – Large Capacity Ergonomic Pa
 Meta Description: Buy Princess Dream Rainbow School Backpack – Large Capacity Ergonomic Pastel Book Bag for Girls (44×31×13 cm) online in Pakistan from ASM VEO. Make heading to s
 Description: Make heading to school magical with the Princess Dream Rainbow School Backpack
-Regular Price: 3849
-Sale Price: 3849
+Wholesale Price: 3849
+Regular Price: 6480
+Sale Price: 5184
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

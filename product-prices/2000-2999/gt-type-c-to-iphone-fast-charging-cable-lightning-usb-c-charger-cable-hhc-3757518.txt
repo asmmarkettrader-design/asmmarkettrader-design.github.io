@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: GT Type C to IPhone Fast Charging Cable Lightning USB-C Charger Cable
 Product ID: hhc-3757518
 SKU: hhc-3757518
@@ -7,11 +8,16 @@ Slug: gt-type-c-to-iphone-fast-charging-cable-lightning-usb-c-charger-cable-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/08524f833e76cde6a6ec57e369b8bccd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/08524f833e76cde6a6ec57e369b8bccd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/2b0f1bf36eb8a8be5a3a8526d4b4b740.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/f302b02190b0cb54dd75f27d259bf84e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/70aa59b03c96de7b46714f4086226610.jpeg
 Meta Title: GT Type C to IPhone Fast Charging Cable Lightning USB-C Charger Cabl
 Meta Description: Buy GT Type C to IPhone Fast Charging Cable Lightning USB-C Charger Cable online in Pakistan from ASM VEO. GT Type C to iPhone cable for fast charging and high-
 Description: GT Type C to iPhone cable for fast charging and high-speed data transfer. Durable and reliable for daily use.
-Regular Price: 369
-Sale Price: 369
+Wholesale Price: 319
+Regular Price: 688
+Sale Price: 538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

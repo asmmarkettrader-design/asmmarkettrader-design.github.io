@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bruno Kitchen Vegetable  cutter and  Slicer   Fast and Professional Vegetable cutter
 Product ID: hhc-2272925
 SKU: hhc-2272925
@@ -7,11 +8,16 @@ Slug: bruno-kitchen-vegetable-cutter-and-slicer-fast-and-professional-vegetable-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/14270.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/14270.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/14269.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/14271.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/08ca922456dfe32208a2cb226ac08809.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-01-at-5.09.40-PM.jpeg
 Meta Title: Bruno Kitchen Vegetable cutter and Slicer Fast and Professional Vege
 Meta Description: Buy Bruno Kitchen Vegetable cutter and Slicer Fast and Professional Vegetable cutter online in Pakistan from ASM VEO. Description Fast and Professional Vegetabl
 Description: Description Fast and Professional Vegetable cutter and slicer. The best kitchen gadget instrument specially helps you chop onions, cheese, sausages, French fries and other vegetables of any size to 1-6mm. Forget the hassle of spending all that time standing on the kitchen counter just trying to chop your vegetables finely. Time Saving Best for Salad Cutting Vegetable slicer Fast cutting and sharp blades Slicing and Chopping Working so fast Best for potato and onion cutting Color: White&amp; Grey Type: Vegetable cutter, Slicer &amp; Dicer Material: Plastic Made: Germany Bruno is specially a vegetable cutter made in Germany for cutting salad and vegetables. It is mostly using at hotels as professional salad cutter it works very fast and save your time, its basic function is to cut and make salad of different shape also you can make round shape chips
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

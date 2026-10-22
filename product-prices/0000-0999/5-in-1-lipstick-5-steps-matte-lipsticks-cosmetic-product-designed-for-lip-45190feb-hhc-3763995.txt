@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 In 1 Lipstick - 5 Steps Matte Lipsticks - Cosmetic Product Designed For Lip Care And Daily Makeup Routine (Random Color)
 Product ID: hhc-3763995
 SKU: hhc-3763995
@@ -7,11 +8,16 @@ Slug: 5-in-1-lipstick-5-steps-matte-lipsticks-cosmetic-product-designed-for-l-45
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/5d47c2edbae247b174cbff5346483c1b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/5d47c2edbae247b174cbff5346483c1b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/e66c6e418a5eee9508b0d0d53e845cf5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/def95056ceb27e9c981064b2ce9c5932.jpeg
 Meta Title: 5 In 1 Lipstick - 5 Steps Matte Lipsticks - Cosmetic Product Designe
 Meta Description: Buy 5 In 1 Lipstick - 5 Steps Matte Lipsticks - Cosmetic Product Designed For Lip Care And Daily Makeup Routine (Random Color) online in Pakistan from ASM VEO.
 Description: The 5 In 1 Lipstick - 5 Steps Matte Lipsticks Is A Cosmetic Product Formulated To Help Provide Lip Care And Daily Makeup Utility During Use.
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

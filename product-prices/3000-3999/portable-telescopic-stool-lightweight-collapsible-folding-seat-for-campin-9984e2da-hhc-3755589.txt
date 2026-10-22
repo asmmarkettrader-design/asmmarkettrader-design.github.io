@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Telescopic Stool Lightweight Collapsible Folding Seat For Camping Fishing Hiking And Outdoor Activities With Adjustable Height (Random Color)
 Product ID: hhc-3755589
 SKU: hhc-3755589
@@ -7,11 +8,16 @@ Slug: portable-telescopic-stool-lightweight-collapsible-folding-seat-for-camp-99
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/38e8028148ab74c8840c8c11d7f41728.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/38e8028148ab74c8840c8c11d7f41728.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/722fe03cc9af59294bde67467b49e43b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/7eddf3b081752e99839859e34f8c2f70.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/01e81d6e7c7ec468c81d9609f9bef5d8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/11ef0980e35e24c4f90a11dbada8f889.jpg
 Meta Title: Portable Telescopic Stool Lightweight Collapsible Folding Seat For C
 Meta Description: Buy Portable Telescopic Stool Lightweight Collapsible Folding Seat For Camping Fishing Hiking And Outdoor Activities With Adjustable Height (Random Color) onlin
 Description: Portable Telescopic Stool Lightweight Collapsible Folding Seat With Adjustable Height For Camping Fishing Hiking And Outdoor Activities
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ear Pick 6 pcs with Storage Bag Dig Ear Wax Remover Cleaner Care Portable Travel Kit Cleaner Spoon (Random Color)
 Product ID: hhc-983327
 SKU: hhc-983327
@@ -7,11 +8,16 @@ Slug: ear-pick-6-pcs-with-storage-bag-dig-ear-wax-remover-cleaner-care-portab-0c
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/38b34f9a-b6a9-4abc-b57c-9f07ccccfd05-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/38b34f9a-b6a9-4abc-b57c-9f07ccccfd05-1.jpeg
 Meta Title: Ear Pick 6 pcs with Storage Bag Dig Ear Wax Remover Cleaner Care Por
 Meta Description: Buy Ear Pick 6 pcs with Storage Bag Dig Ear Wax Remover Cleaner Care Portable Travel Kit Cleaner Spoon (Random Color) online in Pakistan from ASM VEO. Ear Pick
 Description: Ear Pick 6 pcs with Storage Bag Dig Ear Wax Remover Cleaner Care Portable Travel Kit Cleaner Spoon
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

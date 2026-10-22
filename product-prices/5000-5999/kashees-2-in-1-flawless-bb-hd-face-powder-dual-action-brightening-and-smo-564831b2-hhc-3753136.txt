@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashees 2 In 1 Flawless BB HD Face Powder – Dual Action Brightening And Smoothing Powder For Perfect Coverage And Long-Lasting Matte Finish
 Product ID: hhc-3753136
 SKU: hhc-3753136
@@ -7,11 +8,16 @@ Slug: kashees-2-in-1-flawless-bb-hd-face-powder-dual-action-brightening-and-s-56
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Kashees 2 In 1 Flawless BB HD Face Powder – Dual Action Brightening
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/be2659138893c49db47588b8fe682951.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/be2659138893c49db47588b8fe682951.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/c8c586d7e36c8bc10249802a49c36e35.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/01431699cadbb8e953ee3c69c7a2c302.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/07288b2335b9b5c3267304221fdcc14d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/9a74ec49423b1a2248f4927193935c43.jpeg
+Meta Title: Kashees 2 In 1 Flawless BB HD Face Powder – Dual Action Brightening 
 Meta Description: Buy Kashees 2 In 1 Flawless BB HD Face Powder – Dual Action Brightening And Smoothing Powder For Perfect Coverage And Long-Lasting Matte Finish online in Pakist
 Description: Kashees 2 In 1 Flawless BB HD Face Powder Provides Smooth, Natural Coverage With A Long-Lasting Matte Finish For A Radiant Look All Day.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

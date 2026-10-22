@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality Non-toxic Kids Drawing Use 6 Pack Acrylic Paints Set 6 Colors 3ml
 Product ID: hhc-883377
 SKU: hhc-883377
@@ -7,11 +8,16 @@ Slug: high-quality-non-toxic-kids-drawing-use-6-pack-acrylic-paints-set-6-colors
 Category: Books & Stationery
 Subcategory: Art & Craft Materials
 Brand: ASM VEO
-Meta Title: High Quality Non-toxic Kids Drawing Use 6 Pack Acrylic Paints Set 6
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-02-at-12.47.30-PM-9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-02-at-12.47.30-PM-9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-02-at-12.47.30-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-02-at-12.47.30-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-02-at-12.47.30-PM-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-02-at-12.47.30-PM-4.jpeg
+Meta Title: High Quality Non-toxic Kids Drawing Use 6 Pack Acrylic Paints Set 6 
 Meta Description: Buy High Quality Non-toxic Kids Drawing Use 6 Pack Acrylic Paints Set 6 Colors 3ml online in Pakistan from ASM VEO. product details High Quality Non-toxic Kids
 Description: product details High Quality Non-toxic Kids Drawing Use 6 Pack Acrylic Paints Set 6 Colors 3ml &nbsp;
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

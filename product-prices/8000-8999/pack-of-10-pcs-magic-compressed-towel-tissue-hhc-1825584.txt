@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 10 pcs Magic Compressed Towel Tissue
 Product ID: hhc-1825584
 SKU: hhc-1825584
@@ -7,11 +8,16 @@ Slug: pack-of-10-pcs-magic-compressed-towel-tissue-hhc-1825584
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-24-at-1.28.22-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-24-at-1.28.22-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-24-at-1.28.21-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-24-at-1.28.21-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-24-at-1.28.20-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-24-at-1.28.20-PM-1.jpeg
 Meta Title: Pack of 10 pcs Magic Compressed Towel Tissue | Buy Online in Pakista
 Meta Description: Buy Pack of 10 pcs Magic Compressed Towel Tissue online in Pakistan from ASM VEO. Material: paper, Colour : whiteShape: roundEach pack contains 10 coin tissue i
 Description: Material: paper, Colour : whiteShape: roundEach pack contains 10 coin tissue individually packed like a candyKeep it handy for everyday household applicationsStow in your purse or walletStash a few in your sports kitStore several in your glove compartment or trunkEntertain your friends at dinner parties[video width="720" height="720" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Video-2024-07-24-at-1.28.21-PM-online-video-cutter.com_.mp4"][/video]
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

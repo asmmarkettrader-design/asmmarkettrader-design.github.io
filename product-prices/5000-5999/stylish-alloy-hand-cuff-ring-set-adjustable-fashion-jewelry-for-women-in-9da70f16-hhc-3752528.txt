@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish Alloy Hand Cuff Ring Set – Adjustable Fashion Jewelry for Women in Silver & Golden (SKU: QST-166)
 Product ID: hhc-3752528
 SKU: hhc-3752528
@@ -7,11 +8,16 @@ Slug: stylish-alloy-hand-cuff-ring-set-adjustable-fashion-jewelry-for-women-i-9d
 Category: Fashion
 Subcategory: Jewelry
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/4cab4c2332e8f6fbb26cb7d4f54caa86.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/4cab4c2332e8f6fbb26cb7d4f54caa86.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/9b360f8c49135c3fe562139a2b714ec5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/d88cad006ea9f03c9e922b4a009a110e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/414cf32f5147f4491d130670c50eebbb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/5093f3c03e5b65bc65961e95ef9a181c.jpeg
 Meta Title: Stylish Alloy Hand Cuff Ring Set – Adjustable Fashion Jewelry for Wo
 Meta Description: Buy Stylish Alloy Hand Cuff Ring Set – Adjustable Fashion Jewelry for Women in Silver & Golden (SKU: QST-166) online in Pakistan from ASM VEO. Elegant alloy han
 Description: Elegant alloy hand cuff ring set designed with a floral pattern, available in silver and golden colors – perfect for adding style to any outfit.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

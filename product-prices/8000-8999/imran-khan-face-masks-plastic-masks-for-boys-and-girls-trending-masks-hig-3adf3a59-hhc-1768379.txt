@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Imran Khan Face masks - Plastic Masks - For Boys And Girls - Trending Masks - High Quality Face masks.
 Product ID: hhc-1768379
 SKU: hhc-1768379
@@ -7,11 +8,16 @@ Slug: imran-khan-face-masks-plastic-masks-for-boys-and-girls-trending-masks-h-3a
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-27-at-1.21.19-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-27-at-1.21.19-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-07-at-10.02.14-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-07-at-10.02.14-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-07-at-10.02.13-PM-1.jpeg
 Meta Title: Imran Khan Face masks - Plastic Masks - For Boys And Girls - Trendin
 Meta Description: Buy Imran Khan Face masks - Plastic Masks - For Boys And Girls - Trending Masks - High Quality Face masks. online in Pakistan from ASM VEO. Imran Khan Face mask
 Description: Imran Khan Face masks - Plastic Masks - For Boys And Girls - Trending Masks - High Quality Face masks. Imran khan mask Plastic material
-Regular Price: 284
-Sale Price: 284
+Wholesale Price: 234
+Regular Price: 561
+Sale Price: 411
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

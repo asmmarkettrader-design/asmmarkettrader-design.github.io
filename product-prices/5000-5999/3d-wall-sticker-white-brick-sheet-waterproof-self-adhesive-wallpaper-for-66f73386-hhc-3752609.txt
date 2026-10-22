@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Wall Sticker White Brick Sheet – Waterproof Self Adhesive Wallpaper For Bedroom, Living Room, And Home Décor – Size (2x2.5FT)
 Product ID: hhc-3752609
 SKU: hhc-3752609
@@ -7,11 +8,16 @@ Slug: 3d-wall-sticker-white-brick-sheet-waterproof-self-adhesive-wallpaper-fo-66
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/157f5b4dc5945d85c22a9bebee8ec7d6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/157f5b4dc5945d85c22a9bebee8ec7d6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/8b220cae323598e64d2eb16a42acbdd0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/f6163bae2e3e524260e01ae43a3671c4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/a37bf2e3505f56099a7f76832394048b.jpg
 Meta Title: 3D Wall Sticker White Brick Sheet – Waterproof Self Adhesive Wallpap
 Meta Description: Buy 3D Wall Sticker White Brick Sheet – Waterproof Self Adhesive Wallpaper For Bedroom, Living Room, And Home Décor – Size (2x2.5FT) online in Pakistan from ASM
 Description: High Quality 3D White Brick Wall Sticker, Waterproof And Self Adhesive, Perfect For Bedroom, Living Room, And Stylish Home Decor.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Handy Stitch Portable Cordless Sewing Machine | Quick Fabric Repairs & Easy Stitching Tool
 Product ID: hhc-1945647
 SKU: hhc-1945647
@@ -7,11 +8,16 @@ Slug: handy-stitch-portable-cordless-sewing-machine-quick-fabric-repairs-easy-ad
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/WhatsApp-Image-2024-03-11-at-4.25.44-AM-600x600-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/WhatsApp-Image-2024-03-11-at-4.25.44-AM-600x600-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/0897db90c3d086eba73c81e71e44a654.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/a06fc4f438b489d523cf2c5202d60f26.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/9da528fe9486a7dac4ebaecab95dda90.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/89162e8176d8c6d22855bff7f10bcdf5.webp
 Meta Title: Handy Stitch Portable Cordless Sewing Machine | Quick Fabric Repairs
 Meta Description: Buy Handy Stitch Portable Cordless Sewing Machine | Quick Fabric Repairs & Easy Stitching Tool online in Pakistan from ASM VEO. Handy Stitch Portable Cordless S
 Description: Handy Stitch Portable Cordless Sewing Machine – Compact and easy to use, perfect for quick repairs and stitching on all types of fabrics at home or on the go.
-Regular Price: 1193
-Sale Price: 1193
+Wholesale Price: 1143
+Regular Price: 2100
+Sale Price: 1683
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

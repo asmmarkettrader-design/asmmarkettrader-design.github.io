@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Reusable Mouse Catcher Trap Clip | Humane Rat Catcher | Safe & Easy to Use
 Product ID: hhc-3761477
 SKU: hhc-3761477
@@ -7,11 +8,16 @@ Slug: reusable-mouse-catcher-trap-clip-humane-rat-catcher-safe-easy-to-use-hhc-3
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/db4fc1e77e1790cecc534aeff8ecf7d9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/db4fc1e77e1790cecc534aeff8ecf7d9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/ed79f60dee6e421cda75d68c477004bd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/7e1b110a0a3dd1a712bd8fcb45872963.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/5061d599263579e3ce80f4651a62666a.jpeg
 Meta Title: Reusable Mouse Catcher Trap Clip | Humane Rat Catcher | Safe & Easy
 Meta Description: Buy Reusable Mouse Catcher Trap Clip | Humane Rat Catcher | Safe & Easy to Use online in Pakistan from ASM VEO. Keep your home, kitchen, office, or warehouse fr
 Description: Keep your home, kitchen, office, or warehouse free from rats and mice with this Reusable Mouse Catcher Trap Clip.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

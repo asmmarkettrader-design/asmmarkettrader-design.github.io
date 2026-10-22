@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Brown And White Aura Watch Elegant Stylish Design Durable Build Comfortable Strap Clear Display Perfect For Daily Wear And Special Occasions
 Product ID: hhc-3753784
 SKU: hhc-3753784
@@ -7,11 +8,16 @@ Slug: brown-and-white-aura-watch-elegant-stylish-design-durable-build-comfort-f0
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/40c967a6d4d391faa2db16345758ec17.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/40c967a6d4d391faa2db16345758ec17.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/a2e0da8318d64b7c452656a61af904da.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/4da0aa92b808825d623443813614a5f7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/12c6929e5a9689daef8f58500586d2dd.jpeg
 Meta Title: Brown And White Aura Watch Elegant Stylish Design Durable Build Comf
 Meta Description: Buy Brown And White Aura Watch Elegant Stylish Design Durable Build Comfortable Strap Clear Display Perfect For Daily Wear And Special Occasions online in Pakis
 Description: Brown And White Aura Watch Provides Elegant Stylish Design Durable Build Comfortable Strap And Clear Display For Daily Wear
-Regular Price: 866
-Sale Price: 866
+Wholesale Price: 816
+Regular Price: 1550
+Sale Price: 1243
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

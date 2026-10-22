@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 Pcs Professional Hair Styling Comb Set | Barber, Salon & Personal Grooming Combs Kit
 Product ID: hhc-3763367
 SKU: hhc-3763367
@@ -7,11 +8,16 @@ Slug: 10-pcs-professional-hair-styling-comb-set-barber-salon-personal-groomin-82
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/225af5421421afc6e3edb9df3fe19b4b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/225af5421421afc6e3edb9df3fe19b4b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/f61ec111242b39a1827f15a261d0f2ae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/2149a5fd77e9a4616d105ae4097b5a94.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/f77208dce14735f89fb392eb2245fb1a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/5efafeae1b3298d42834c29a13bdb183.jpeg
 Meta Title: 10 Pcs Professional Hair Styling Comb Set | Barber, Salon & Personal
 Meta Description: Buy 10 Pcs Professional Hair Styling Comb Set | Barber, Salon & Personal Grooming Combs Kit online in Pakistan from ASM VEO. Achieve salon-quality hairstyling w
 Description: Achieve salon-quality hairstyling with this 10 Pcs Professional Hair Styling Comb Set. Featuring a variety of combs for cutting, styling, sectioning, detangling, and everyday grooming, this durable ABS plastic set is perfect for barbers, hairstylists, and personal use.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

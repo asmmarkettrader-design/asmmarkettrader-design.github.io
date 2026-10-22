@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gold Facial Set 50ml With Mini Polisher + Free Sponge
 Product ID: hhc-1323082
 SKU: hhc-1323082
@@ -7,11 +8,16 @@ Slug: gold-facial-set-50ml-with-mini-polisher-free-sponge-hhc-1323082
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/7064c68ac8bc41d538167165ee003470.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/7064c68ac8bc41d538167165ee003470.jpeg
 Meta Title: Gold Facial Set 50ml With Mini Polisher + Free Sponge | Buy Online i
 Meta Description: Buy Gold Facial Set 50ml With Mini Polisher + Free Sponge online in Pakistan from ASM VEO. Gold Facial Set 50ml With Mini Polisher + Free SpongeHelps removing b
 Description: Gold Facial Set 50ml With Mini Polisher + Free SpongeHelps removing blemish and pigmentationTightens the skin, reduces wrinkles and lighten age spotsHelps preventing pimples and blemishesCools and refreshes skinA Complete all Purposes Facial with GoldExtractsHydra TreatmentImproves skin complexion
-Regular Price: 2889
-Sale Price: 2889
+Wholesale Price: 2889
+Regular Price: 5100
+Sale Price: 4080
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

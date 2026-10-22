@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Transparent Self-Adhesive Wall Hooks Sticker – Strong Hold, No Drill, Damage-Free Hanging - Pack of 10
 Product ID: hhc-3756844
 SKU: hhc-3756844
@@ -7,11 +8,16 @@ Slug: transparent-self-adhesive-wall-hooks-sticker-strong-hold-no-drill-damag-4a
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/b1064325fe04e7b3d712373ef259a45c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/b1064325fe04e7b3d712373ef259a45c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/239a226e8a23ad3844de9ca78c2ec644.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/34d87fcaddb063acaccc95007d090e6b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/695ed972fdd98724b3d3fd1284f3b813.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/4ca1e05a03f979519e57e160890e3a46.jpg
 Meta Title: Transparent Self-Adhesive Wall Hooks Sticker – Strong Hold, No Drill
 Meta Description: Buy Transparent Self-Adhesive Wall Hooks Sticker – Strong Hold, No Drill, Damage-Free Hanging - Pack of 10 online in Pakistan from ASM VEO. Transparent Self-Adh
 Description: Transparent Self-Adhesive Wall Hooks are a smart and convenient solution for organizing your home or office. Made with high-quality clear material, these hooks blend seamlessly into any décor while providing a strong and reliable hold.
-Regular Price: 200
-Sale Price: 200
+Wholesale Price: 150
+Regular Price: 435
+Sale Price: 285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

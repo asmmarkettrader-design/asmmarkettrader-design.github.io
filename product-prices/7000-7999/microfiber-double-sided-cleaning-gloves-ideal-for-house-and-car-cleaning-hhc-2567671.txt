@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Microfiber Double-Sided Cleaning Gloves - Ideal for House and Car Cleaning
 Product ID: hhc-2567671
 SKU: hhc-2567671
@@ -7,11 +8,16 @@ Slug: microfiber-double-sided-cleaning-gloves-ideal-for-house-and-car-cleaning-h
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/double-glove-9.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/double-glove-9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/double-glove-8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/double-glove-7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/double-glove-6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/double-glove-5.webp
 Meta Title: Microfiber Double-Sided Cleaning Gloves - Ideal for House and Car Cl
 Meta Description: Buy Microfiber Double-Sided Cleaning Gloves - Ideal for House and Car Cleaning online in Pakistan from ASM VEO. Royal Microfiber Double-Sided Cleaning Gloves –
 Description: Royal Microfiber Double-Sided Cleaning Gloves – Soft and highly absorbent cleaning gloves designed for effective house and car cleaning. Made with premium double-sided microfiber chenille material that easily traps dust, dirt, and water without scratching surfaces.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

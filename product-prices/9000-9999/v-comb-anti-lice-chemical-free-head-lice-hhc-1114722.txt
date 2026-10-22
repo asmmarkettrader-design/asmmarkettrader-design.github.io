@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: V-COMB Anti-lice Chemical Free Head Lice
 Product ID: hhc-1114722
 SKU: hhc-1114722
@@ -7,11 +8,16 @@ Slug: v-comb-anti-lice-chemical-free-head-lice-hhc-1114722
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/3-4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/3-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/2-6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/e95a91389461d7cec3f021feaa171339.jpeg
 Meta Title: V-COMB Anti-lice Chemical Free Head Lice | Buy Online in Pakistan
 Meta Description: Buy V-COMB Anti-lice Chemical Free Head Lice online in Pakistan from ASM VEO. V-COMB Anti-lice Chemical Free Head Lice Cash on Delivery, Rs 180 standard deliver
 Description: V-COMB Anti-lice Chemical Free Head Lice
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

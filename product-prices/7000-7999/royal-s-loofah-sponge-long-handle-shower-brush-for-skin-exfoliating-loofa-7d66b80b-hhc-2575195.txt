@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal's Loofah Sponge – Long Handle Shower Brush for Skin Exfoliating, Loofah on a Stick for Men & Women
 Product ID: hhc-2575195
 SKU: hhc-2575195
@@ -7,11 +8,16 @@ Slug: royal-s-loofah-sponge-long-handle-shower-brush-for-skin-exfoliating-loo-7d
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/stick-lofa-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/stick-lofa-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/stick-lofa-2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/stick-lofa-3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/stick-lofa-4.png
 Meta Title: Royal's Loofah Sponge – Long Handle Shower Brush for Skin Exfoliatin
 Meta Description: Buy Royal's Loofah Sponge – Long Handle Shower Brush for Skin Exfoliating, Loofah on a Stick for Men & Women online in Pakistan from ASM VEO. Royal Loofah Spong
 Description: Royal Loofah Sponge with Long Handle – Comfortable long-handle shower brush designed for deep cleansing and gentle skin exfoliation. Features a soft mesh loofah that creates rich foam while removing dirt, oil, and dead skin cells effectively.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

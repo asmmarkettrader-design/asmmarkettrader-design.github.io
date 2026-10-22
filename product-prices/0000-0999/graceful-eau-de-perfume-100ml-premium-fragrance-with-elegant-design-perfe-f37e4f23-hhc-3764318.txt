@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Graceful Eau De Perfume 100ml Premium Fragrance With Elegant Design Perfect For Daily Wear
 Product ID: hhc-3764318
 SKU: hhc-3764318
 Slug: graceful-eau-de-perfume-100ml-premium-fragrance-with-elegant-design-per-f37e4f23-hhc-3764318
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Perfumes
 Brand: ASM VEO
-Meta Title: Graceful Eau De Perfume 100ml Premium Fragrance With Elegant Design
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/b21448da946a92bdd5007524da1daa09.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/b21448da946a92bdd5007524da1daa09.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/26/c302af612b6cc574c04110ebe248db57.webp
+Meta Title: Graceful Eau De Perfume 100ml Premium Fragrance With Elegant Design 
 Meta Description: Buy Graceful Eau De Perfume 100ml Premium Fragrance With Elegant Design Perfect For Daily Wear online in Pakistan from ASM VEO. Premium Eau De Perfume With Eleg
 Description: Premium Eau De Perfume With Elegant Design And Refreshing Aroma For Daily Wear
-Regular Price: 925
-Sale Price: 925
+Wholesale Price: 480
+Regular Price: 1220
+Sale Price: 975
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

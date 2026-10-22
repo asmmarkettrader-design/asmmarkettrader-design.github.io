@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Plastic food cover pack off 100 pcs
 Product ID: hhc-1047361
 SKU: hhc-1047361
@@ -7,11 +8,16 @@ Slug: plastic-food-cover-pack-off-100-pcs-hhc-1047361
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/100-Pieces-Disposable-PE-Fresh-keeping-Bag-Cling-Film-Sleeve-Elastic-Food-Dust-Cover-Food-Cling.jpg_-1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/100-Pieces-Disposable-PE-Fresh-keeping-Bag-Cling-Film-Sleeve-Elastic-Food-Dust-Cover-Food-Cling.jpg_-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/100-Pieces-Disposable-PE-Fresh-keeping-Bag-Cling-Film-Sleeve-Elastic-Food-Dust-Cover-Food-Cling.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-10-at-12.39.58-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-10-at-12.39.58-PM.jpeg
 Meta Title: Plastic food cover pack off 100 pcs | Buy Online in Pakistan
 Meta Description: Buy Plastic food cover pack off 100 pcs online in Pakistan from ASM VEO. Plastic food cover pack off 100 pcs Cash on Delivery, Rs 180 standard delivery, and eas
 Description: Plastic food cover pack off 100 pcs
-Regular Price: 261
-Sale Price: 261
+Wholesale Price: 211
+Regular Price: 526
+Sale Price: 376
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

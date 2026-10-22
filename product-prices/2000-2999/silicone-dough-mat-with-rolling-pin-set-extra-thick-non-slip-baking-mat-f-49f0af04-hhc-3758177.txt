@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Dough Mat With Rolling Pin Set | Extra Thick Non-Slip Baking Mat For Pizza & Bread | Random Color
 Product ID: hhc-3758177
 SKU: hhc-3758177
@@ -7,11 +8,16 @@ Slug: silicone-dough-mat-with-rolling-pin-set-extra-thick-non-slip-baking-mat-49
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/ace062f895394738e5f6fc044c7f867b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/ace062f895394738e5f6fc044c7f867b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/4fd0285853526490eb5ccd9aded51d26.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/8a6a4ebbfced0d4c6183c46ec0712f7f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/7ad2379d76c24c2538d2cb520effc8d6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/dbdc1f311bb70a6309a8e3ff446db54f.jpeg
 Meta Title: Silicone Dough Mat With Rolling Pin Set | Extra Thick Non-Slip Bakin
 Meta Description: Buy Silicone Dough Mat With Rolling Pin Set | Extra Thick Non-Slip Baking Mat For Pizza & Bread | Random Color online in Pakistan from ASM VEO. Durable Silicone
 Description: Durable Silicone Dough Mat With Rolling Pin | Non-Slip, Non-Stick, Extra Thick Kneading Mat For Baking
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

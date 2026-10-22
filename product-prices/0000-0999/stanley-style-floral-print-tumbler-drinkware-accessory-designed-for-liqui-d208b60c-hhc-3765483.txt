@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stanley Style Floral Print Tumbler - Drinkware Accessory Designed For Liquid Hydration And Daily Travel Routine - Pink 600ml
 Product ID: hhc-3765483
 SKU: hhc-3765483
@@ -7,11 +8,16 @@ Slug: stanley-style-floral-print-tumbler-drinkware-accessory-designed-for-liq-d2
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/d4dd5df059868ec6c7e1bd51c5f14720.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/d4dd5df059868ec6c7e1bd51c5f14720.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/69ae76b04e6fc8f9742ac8913afce2e7.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/3c81e924ff10d35e60045003f1ba2d10.jfif
 Meta Title: Stanley Style Floral Print Tumbler - Drinkware Accessory Designed Fo
 Meta Description: Buy Stanley Style Floral Print Tumbler - Drinkware Accessory Designed For Liquid Hydration And Daily Travel Routine - Pink 600ml online in Pakistan from ASM VEO
 Description: This Stanley Style Floral Print Tumbler Provides A Reliable Solution For Drinkware Accessories And Routine Liquid Hydration Needs. Formulated To Deliver Travel Benefits While Supporting Stanley Style Floral Print Tumbler Utility, It Fits Seamlessly Into Your Regular Liquid Hydration Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Liquid Hydration Requirements, This Stanley Style Floral Print Tumbler Serves As An Essential Drinkware Accessory For Daily Life.Key FeaturesStanley Style Floral Print Tumbler Formulated For Drinkware AccessoriesDelivers Liquid Hydration And Supports Daily Travel UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Liquid Hydration And Travel RoutinesDesigned For Easy Operation And Convenient UseEssential Drinkware Accessory For Everyday Maintenance
-Regular Price: 2362
-Sale Price: 2362
+Wholesale Price: 2362
+Regular Price: 4210
+Sale Price: 3369
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

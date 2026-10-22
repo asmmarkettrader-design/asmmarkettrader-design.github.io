@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 9 pcs universe unique Combo Wallart set for Home Decoration
 Product ID: hhc-3166068
 SKU: hhc-3166068
@@ -7,11 +8,16 @@ Slug: 9-pcs-universe-unique-combo-wallart-set-for-home-decoration-hhc-3166068
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/b6de9b0ca7a0d53febe14741cbec016e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/b6de9b0ca7a0d53febe14741cbec016e.jpg
 Meta Title: 9 pcs universe unique Combo Wallart set for Home Decoration | Buy On
 Meta Description: Buy 9 pcs universe unique Combo Wallart set for Home Decoration online in Pakistan from ASM VEO. Material: Mdf WoodQuantity- 9 pcsSize:8 x 11 INCH PER FRAMEProd
 Description: Material: Mdf WoodQuantity- 9 pcsSize:8 x 11 INCH PER FRAMEProduct Type: Most Unique Combo Wall Art setSetup: both side Gum Tape (Free)Attractive Design and high quality.Easy to install and arrange •Adds a touch of elegance to any roomIdeal for gifting to friends and familyEnhances the beauty of your living spaceA must-have for home decor enthusiastsNice decoration and increase elegance to your home.Perfect for Living room, study room, prayer room, office room etc.Perfect gift for family, friends.#wall decoration
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

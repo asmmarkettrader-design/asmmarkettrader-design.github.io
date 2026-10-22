@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FLiCKA Silk Touch 3‑in‑1 Moisturizer & Primer | Hydrating, Lightweight, Long‑Lasting | Pore Minimizer | 60g
 Product ID: hhc-3755622
 SKU: hhc-3755622
@@ -7,11 +8,16 @@ Slug: flicka-silk-touch-3-in-1-moisturizer-primer-hydrating-lightweight-long-f0c
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/92240117ac1de041d0cfc471c9bc7d49.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/92240117ac1de041d0cfc471c9bc7d49.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/58ed2018f51585e47423ee0967703d54.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/85bb5cefcf8af37db6892279f199dfb6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/e7db58c74520b17aa75c9c5e27255c01.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/14a7ef740b26da9b58a24268e11a5639.jpeg
 Meta Title: FLiCKA Silk Touch 3‑in‑1 Moisturizer & Primer | Hydrating, Lightweig
 Meta Description: Buy FLiCKA Silk Touch 3‑in‑1 Moisturizer & Primer | Hydrating, Lightweight, Long‑Lasting | Pore Minimizer | 60g online in Pakistan from ASM VEO. FLiCKA Silk Tou
 Description: FLiCKA Silk Touch 3‑in‑1 moisturizer and primer. Hydrating, lightweight, pore‑minimizing formula. Dermatologically tested for all skin types.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

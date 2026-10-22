@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 In 1 Permanent Eyelash Extension Set Professional Lash Kit
 Product ID: hhc-3761430
 SKU: hhc-3761430
@@ -7,11 +8,16 @@ Slug: 3-in-1-permanent-eyelash-extension-set-professional-lash-kit-hhc-3761430
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/8adb6b3b1fb44e555fb64e844ad94c67.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/8adb6b3b1fb44e555fb64e844ad94c67.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/7e5bed0c03a5df968e8c79e54286938b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/bce2e4c8da264be3057fe2dab426626b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/788932e468510e1c8a47cc2dfe72d9ac.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/12751bc5962f8a826b4b057a278a1f6c.jpeg
 Meta Title: 3 In 1 Permanent Eyelash Extension Set Professional Lash Kit | Buy O
 Meta Description: Buy 3 In 1 Permanent Eyelash Extension Set Professional Lash Kit online in Pakistan from ASM VEO. 3 In 1 Permanent Eyelash Extension Set Provides Long Lasting L
 Description: 3 In 1 Permanent Eyelash Extension Set Provides Long Lasting Lash Enhancement With Professional Quality Tools.
-Regular Price: 1246
-Sale Price: 1246
+Wholesale Price: 1196
+Regular Price: 2200
+Sale Price: 1758
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Meeoow Club 10 Min Painless Body Wax Powder – Mogra Scented Herbal Hair Removal Powder (100g)
 Product ID: hhc-3758950
 SKU: hhc-3758950
@@ -7,11 +8,16 @@ Slug: meeoow-club-10-min-painless-body-wax-powder-mogra-scented-herbal-hair-r-ed
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/26ea4bea5c9cb08355a5aaaed0b5a4ef.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/26ea4bea5c9cb08355a5aaaed0b5a4ef.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/635fe451b603b3bf6252c0e6ed57c4ba.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/2d89706a32b66a363e9fa898d2be0e4c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/f61e277a7cb2e040af9a49e76b84e3b4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/1995bb0b7237dc284d696ebd79e29666.jpeg
 Meta Title: Meeoow Club 10 Min Painless Body Wax Powder – Mogra Scented Herbal H
 Meta Description: Buy Meeoow Club 10 Min Painless Body Wax Powder – Mogra Scented Herbal Hair Removal Powder (100g) online in Pakistan from ASM VEO. Say goodbye to painful waxing
 Description: Say goodbye to painful waxing and shaving with Meeoow Club Painless Body Wax Powder. This herbal-based formula removes unwanted hair in just 10 minutes while leaving your skin smooth, bright, and smelling like fresh Mogra.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

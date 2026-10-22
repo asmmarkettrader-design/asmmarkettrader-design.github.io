@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 pair Universal Handle Gloves For Bike – Winter Motorcycle Riding Gloves, Windproof And Warm Hand Protection For All Bikes
 Product ID: hhc-3752717
 SKU: hhc-3752717
@@ -7,11 +8,16 @@ Slug: 1-pair-universal-handle-gloves-for-bike-winter-motorcycle-riding-gloves-d4
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/6d3df325a2fbc30eef4ed92f4c84dcd5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/6d3df325a2fbc30eef4ed92f4c84dcd5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/112237757b6a403688a8ac7008cc377f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/25b18e58767bcb3844c236cc144ce5f5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/a84e7962c65a85267df6ad303fb04fb7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/bbe550a68cddca6ebd532aea12551db0.jpeg
 Meta Title: 1 pair Universal Handle Gloves For Bike – Winter Motorcycle Riding G
 Meta Description: Buy 1 pair Universal Handle Gloves For Bike – Winter Motorcycle Riding Gloves, Windproof And Warm Hand Protection For All Bikes online in Pakistan from ASM VEO.
 Description: 2Pcs Universal Handle Gloves For Bikes Provide Warmth, Comfort, And Wind Protection During Winter Rides. Perfect For All Motorcycles And Scooters.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

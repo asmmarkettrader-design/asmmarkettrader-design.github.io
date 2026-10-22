@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Markhor Gold Sticker 2 To 3 Inches Waterproof Durable Strong Adhesive High Quality Vinyl PVC Practical Choice For Bikes Cars And Cycles
 Product ID: hhc-3764005
 SKU: hhc-3764005
@@ -7,11 +8,16 @@ Slug: premium-markhor-gold-sticker-2-to-3-inches-waterproof-durable-strong-ad-71
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/6bc80283a51eb4719e66bcdda6c271be.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/6bc80283a51eb4719e66bcdda6c271be.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/66a1165cf20707649303f4f3e8d8d973.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/411a7dd8cf299854bd114acd21fd0833.jpg
 Meta Title: Premium Markhor Gold Sticker 2 To 3 Inches Waterproof Durable Strong
 Meta Description: Buy Premium Markhor Gold Sticker 2 To 3 Inches Waterproof Durable Strong Adhesive High Quality Vinyl PVC Practical Choice For Bikes Cars And Cycles online in Pa
 Description: Premium Markhor Gold Sticker 2 To 3 Inches Waterproof Durable Strong Adhesive High Quality Vinyl PVC Practical Choice For Bikes Cars And Cycles.
-Regular Price: 248
-Sale Price: 248
+Wholesale Price: 198
+Regular Price: 507
+Sale Price: 357
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

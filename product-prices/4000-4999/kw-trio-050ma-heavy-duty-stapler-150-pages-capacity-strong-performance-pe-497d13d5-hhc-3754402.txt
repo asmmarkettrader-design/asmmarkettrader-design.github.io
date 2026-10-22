@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: KW Trio 050MA Heavy Duty Stapler 150 Pages Capacity Strong Performance Perfect Choice For Office And School Use
 Product ID: hhc-3754402
 SKU: hhc-3754402
@@ -7,11 +8,16 @@ Slug: kw-trio-050ma-heavy-duty-stapler-150-pages-capacity-strong-performance-497
 Category: Books & Stationery
 Subcategory: Office Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/804659121b13a1d36e79fd7ac2b57399.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/804659121b13a1d36e79fd7ac2b57399.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/804659121b13a1d36e79fd7ac2b57399.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/90d86cacb6bf3ac10315f97a2e1fbdc8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/90d86cacb6bf3ac10315f97a2e1fbdc8.png
 Meta Title: KW Trio 050MA Heavy Duty Stapler 150 Pages Capacity Strong Performan
 Meta Description: Buy KW Trio 050MA Heavy Duty Stapler 150 Pages Capacity Strong Performance Perfect Choice For Office And School Use online in Pakistan from ASM VEO. KW Trio 050
 Description: KW Trio 050MA Heavy Duty Stapler Provides 150 Pages Capacity Strong Performance Durable Construction Smooth Operation And Reliable Utility
-Regular Price: 6377
-Sale Price: 6377
+Wholesale Price: 6377
+Regular Price: 10590
+Sale Price: 8470
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

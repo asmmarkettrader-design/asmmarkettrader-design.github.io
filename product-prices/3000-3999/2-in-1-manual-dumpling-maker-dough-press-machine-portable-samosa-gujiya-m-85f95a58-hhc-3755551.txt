@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa & Gujiya Mould Tool | Easy Kitchen DIY Pastry Accessory
 Product ID: hhc-3755551
 SKU: hhc-3755551
@@ -7,11 +8,16 @@ Slug: 2-in-1-manual-dumpling-maker-dough-press-machine-portable-samosa-gujiya-85
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/fbfe14ea400172011ce19b5110535880.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/fbfe14ea400172011ce19b5110535880.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/527ad002f6b7ea2c94f4b3c1904c7aef.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/7df5aad84225f11c2a3781902e828747.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/003b7d5d82311378503a9b142daac9dd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/ac3f10e4d16d22406307559c86d81f6e.jpg
 Meta Title: 2-in-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa
 Meta Description: Buy 2-in-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa & Gujiya Mould Tool | Easy Kitchen DIY Pastry Accessory online in Pakistan from ASM VEO
 Description: Effortlessly create perfect dumplings and samosas in seconds! This innovative 2-in-1 tool features a built-in dough press and a folding mould. Made from food-grade, BPA-free material, it ensures uniform shapes and tight seals every time, making it a must-have for busy kitchens and DIY cooking enthusi
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

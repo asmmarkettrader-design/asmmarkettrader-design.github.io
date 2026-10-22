@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sweet 2 in 1 Mustache and Nose Trimmer (Cell Operated)
 Product ID: hhc-1088015
 SKU: hhc-1088015
@@ -7,11 +8,16 @@ Slug: sweet-2-in-1-mustache-and-nose-trimmer-cell-operated-hhc-1088015
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/1599642619_787.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/1599642619_787.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/1599642622_788.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/1599642618_786.jpg
 Meta Title: Sweet 2 in 1 Mustache and Nose Trimmer (Cell Operated) | Buy Online
 Meta Description: Buy Sweet 2 in 1 Mustache and Nose Trimmer (Cell Operated) online in Pakistan from ASM VEO. DESCRIPTION: Nose Hair Trimmer| sweet 2 in 1 nose, ear and hair trim
 Description: DESCRIPTION: Nose Hair Trimmer| sweet 2 in 1 nose, ear and hair trimmer Switch-on sweet 2 in 1 nose, ear and hair trimmer and put inside your nostril to trim the nasal hair. There might be some cut hair left inside your nostrils so to get rid of them, blow strongly through your nose. This apparatus is only for nose, ear and hair do not use for any other purposes. Stereoscopic arched tool that never hurt the nasal cavity. Removable washing blade is easy to clean the blade under running water tap. Stainless steel blade with 360 degree rotation. Suitable for Eyebrow Trim the nasal hair Shaver Shielding cover Sword net Curved , stainless steel blade never touches your skin Ergonomically shaped sliding on\ off switch
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

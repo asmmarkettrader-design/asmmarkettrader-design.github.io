@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal's Anti-Slip Transparent Drawer and Fridge Mat
 Product ID: hhc-3759029
 SKU: hhc-3759029
@@ -7,11 +8,16 @@ Slug: royal-s-anti-slip-transparent-drawer-and-fridge-mat-hhc-3759029
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/944db763d0e4a5b6ce7cf273e6419b9b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/944db763d0e4a5b6ce7cf273e6419b9b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/48c33a25153af687fe217fea6f9a4f22.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/3bc24c6df452454a6ccbed60e4d082b8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/390c5caa225e172d3be948184d5cb221.jpeg
 Meta Title: Royal's Anti-Slip Transparent Drawer and Fridge Mat | Buy Online in
 Meta Description: Buy Royal's Anti-Slip Transparent Drawer and Fridge Mat online in Pakistan from ASM VEO. Royal Transparent Shelf Mats – Premium transparent shelf liners designe
 Description: Royal Transparent Shelf Mats – Premium transparent shelf liners designed to protect shelves, drawers, cabinets, and refrigerator surfaces from scratches, spills, and stains. Made with durable anti-slip material featuring elegant textured designs for better grip and surface protection.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

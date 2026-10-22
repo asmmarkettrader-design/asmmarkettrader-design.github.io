@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rasasi Body Spray ( Blue Lady ) - 200ml Sensual and Bold Fragrance Premium Quality | Luxury Fragrance Body Spray For Women ( Original )
 Product ID: hhc-2618220
 SKU: hhc-2618220
@@ -7,11 +8,16 @@ Slug: rasasi-body-spray-blue-lady-200ml-sensual-and-bold-fragrance-premium-qu-c2
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2df69281c8bc41a39e98b6c39504bc93.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2df69281c8bc41a39e98b6c39504bc93.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/71HM1fU7JcL._SL1500.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/718PSE4OQLL._SL1500.jpg
 Meta Title: Rasasi Body Spray ( Blue Lady ) - 200ml Sensual and Bold Fragrance P
 Meta Description: Buy Rasasi Body Spray ( Blue Lady ) - 200ml Sensual and Bold Fragrance Premium Quality | Luxury Fragrance Body Spray For Women ( Original ) online in Pakistan f
 Description: Rasasi Body Spray ( Blue Lady ) - 200ml Sensual and Bold Fragrance Premium Quality | Luxury Fragrance Body Spray For Women ( Original ) Rasasi Blue Lady a very fresh floral bouquet with citrus notes and fruity touches. The green note gives more freshness and more diffusion. The accord finishes with a soft musky powdery effect and a lasting woody note.Best for Routine or Casual UseNonstop Protection from Body OdorLong Lasting All Day Keep You Refresh ( Up-to 5 Hours Of Long lasting ).Easy To UseAvailable in 200 mlWithout Box
-Regular Price: 1359
-Sale Price: 1359
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

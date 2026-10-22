@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Keratin Hair Serum & BNB Organic Rice Extract Face Serum Deal - 120ml
 Product ID: hhc-2451005
 SKU: hhc-2451005
@@ -7,11 +8,16 @@ Slug: 2-in-1-keratin-hair-serum-bnb-organic-rice-extract-face-serum-deal-120ml-h
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/33325eb92a31cdb25eca7e5b770d2a77.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/33325eb92a31cdb25eca7e5b770d2a77.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/805ca8cbda06d47e2cfb19f44735a47a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/dd0306bbe6c0ac15b7525383a6abfe66.jpeg
 Meta Title: 2-in-1 Keratin Hair Serum & BNB Organic Rice Extract Face Serum Deal
 Meta Description: Buy 2-in-1 Keratin Hair Serum & BNB Organic Rice Extract Face Serum Deal - 120ml online in Pakistan from ASM VEO. A convenient 2-in-1 beauty deal featuring a Ke
 Description: A convenient 2-in-1 beauty deal featuring a Keratin Hair Serum for hair care and a BNB Organic Rice Extract Serum for facial skincare. Perfect for adding simple hair and skin care to your daily routine.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

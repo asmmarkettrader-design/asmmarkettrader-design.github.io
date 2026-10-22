@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Slim Lift Fat Burning Belly Patch - 5 Pieces Set For Targeted Abdominal Support And Daily Convenience
 Product ID: hhc-3761885
 SKU: hhc-3761885
@@ -7,11 +8,16 @@ Slug: slim-lift-fat-burning-belly-patch-5-pieces-set-for-targeted-abdominal-s-6d
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/8789c946c5b339e5d86c367bce45a302.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/8789c946c5b339e5d86c367bce45a302.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/4391c5a0d57e5b187fa4981e4c3567b0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/15/5bb201cb75373e92704ab3c43d2d46af.png
 Meta Title: Slim Lift Fat Burning Belly Patch - 5 Pieces Set For Targeted Abdomi
 Meta Description: Buy Slim Lift Fat Burning Belly Patch - 5 Pieces Set For Targeted Abdominal Support And Daily Convenience online in Pakistan from ASM VEO. The Slim Lift Fat Bur
 Description: The Slim Lift Fat Burning Belly Patch Set Includes 5 Pieces Designed For Easy Application And Targeted Use On The Abdominal Area.
-Regular Price: 866
-Sale Price: 866
+Wholesale Price: 816
+Regular Price: 1550
+Sale Price: 1243
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

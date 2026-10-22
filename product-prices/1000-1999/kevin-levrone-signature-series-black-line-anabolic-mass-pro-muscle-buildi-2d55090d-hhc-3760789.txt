@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kevin Levrone Signature Series Black Line Anabolic Mass Pro Muscle Building Weight Gainer – 2 LBS (908g)
 Product ID: hhc-3760789
 SKU: hhc-3760789
@@ -7,11 +8,16 @@ Slug: kevin-levrone-signature-series-black-line-anabolic-mass-pro-muscle-buil-2d
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/bf8ab5612e90d293269f88e821c48a6c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/bf8ab5612e90d293269f88e821c48a6c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/5a0033e666260e73c6b7184d0de99358.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/f9a2a53320cc85af2a5e94c77153583e.jpeg
 Meta Title: Kevin Levrone Signature Series Black Line Anabolic Mass Pro Muscle B
 Meta Description: Buy Kevin Levrone Signature Series Black Line Anabolic Mass Pro Muscle Building Weight Gainer – 2 LBS (908g) online in Pakistan from ASM VEO. Trigger extreme mu
 Description: Trigger extreme muscle growth and shatter your strength limits with Kevin Levrone Signature Series Black Line Anabolic Mass.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

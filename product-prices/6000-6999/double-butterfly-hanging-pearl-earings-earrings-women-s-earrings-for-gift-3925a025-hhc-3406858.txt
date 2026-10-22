@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Double Butterfly Hanging Pearl Earings / Earrings Women's Earrings for Gift  / for girls
 Product ID: hhc-3406858
 SKU: hhc-3406858
@@ -7,11 +8,16 @@ Slug: double-butterfly-hanging-pearl-earings-earrings-women-s-earrings-for-gi-39
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/new5.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/new5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/j32.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-23-at-6.39.28-AM-1.jpeg
 Meta Title: Double Butterfly Hanging Pearl Earings / Earrings Women's Earrings f
 Meta Description: Buy Double Butterfly Hanging Pearl Earings / Earrings Women's Earrings for Gift / for girls online in Pakistan from ASM VEO. Double Butterfly Hanging Pearl Eari
 Description: Double Butterfly Hanging Pearl Earings | Colour Silver Golden Elevate your elegance with the enchanting Golden Wings Earrings, a perfect blend of grace and sparkle. These delicately crafted earrings feature shimmering butterfly motifs with mother-of-pearl inlays, framed in radiant gold tones. Each wing is accented with dazzling cubic zirconia and a teardrop-shaped crystal that gently sways with every movement, capturing the light from every angle.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

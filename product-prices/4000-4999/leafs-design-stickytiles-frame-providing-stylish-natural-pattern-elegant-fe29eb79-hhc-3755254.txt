@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Leafs Design Stickytiles Frame Providing Stylish Natural Pattern Elegant Modern Appearance
 Product ID: hhc-3755254
 SKU: hhc-3755254
@@ -7,11 +8,16 @@ Slug: leafs-design-stickytiles-frame-providing-stylish-natural-pattern-elegan-fe
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/462d0c1dc65829abb4189d74a8efa911.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/462d0c1dc65829abb4189d74a8efa911.jpeg
 Meta Title: Leafs Design Stickytiles Frame Providing Stylish Natural Pattern Ele
 Meta Description: Buy Leafs Design Stickytiles Frame Providing Stylish Natural Pattern Elegant Modern Appearance online in Pakistan from ASM VEO. Leafs Design Stickytiles Frame O
 Description: Leafs Design Stickytiles Frame Offering Stylish Natural Pattern Elegant Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

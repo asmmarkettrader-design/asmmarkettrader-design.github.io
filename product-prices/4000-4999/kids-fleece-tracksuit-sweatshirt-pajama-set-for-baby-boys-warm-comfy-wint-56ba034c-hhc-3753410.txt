@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Fleece Tracksuit | Sweatshirt & Pajama Set for Baby Boys – Warm, Comfy Winter Outfit for Daily Wear FOR BABY AND KIDS
 Product ID: hhc-3753410
 SKU: hhc-3753410
@@ -7,11 +8,16 @@ Slug: kids-fleece-tracksuit-sweatshirt-pajama-set-for-baby-boys-warm-comfy-wi-56
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/000af97e5391baf06381d389d1d5c305.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/000af97e5391baf06381d389d1d5c305.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/ebfc508edeef02b2f73d94d084161c3b.png
 Meta Title: Kids Fleece Tracksuit | Sweatshirt & Pajama Set for Baby Boys – Warm
 Meta Description: Buy Kids Fleece Tracksuit | Sweatshirt & Pajama Set for Baby Boys – Warm, Comfy Winter Outfit for Daily Wear FOR BABY AND KIDS online in Pakistan from ASM VEO.
 Description: Soft fleece sweatshirt and pajama tracksuit for baby boys — keeps them warm, cozy, and comfortable all winter long.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

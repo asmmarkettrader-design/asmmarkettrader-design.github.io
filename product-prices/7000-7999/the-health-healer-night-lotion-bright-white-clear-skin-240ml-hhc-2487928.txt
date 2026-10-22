@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Health Healer Night Lotion BRIGHT WHITE CLEAR SKIN (240ml)
 Product ID: hhc-2487928
 SKU: hhc-2487928
@@ -7,11 +8,16 @@ Slug: the-health-healer-night-lotion-bright-white-clear-skin-240ml-hhc-2487928
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-29-at-12.36.36-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-29-at-12.36.36-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-29-at-11.59.37-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-29-at-12.00.09-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/Screenshot-2024-10-29-4.08.15-PM.png
 Meta Title: The Health Healer Night Lotion BRIGHT WHITE CLEAR SKIN (240ml) | Buy
 Meta Description: Buy The Health Healer Night Lotion BRIGHT WHITE CLEAR SKIN (240ml) online in Pakistan from ASM VEO. Product Description Whitening &amp; Anti Aging Night Lotion
 Description: Product Description Whitening &amp; Anti Aging Night Lotion • Material: Cream • This Powerful Night Lotion Is Designed To Brighten • Rejuvenate Your Skin While You Sleep • With Its Potent Formula, It Targets Discoloration And Signs Of Aging • Leaving Your Skin Looking Radiant And Youthful • Package Includes: 1 x Night Lotion &nbsp; • Removes Pigmentation Anti-aging Whiten your Skin tone Naturally About this itemon repeated use, it provides moisturised skin and even skin tone as it works on your skin through the night This lotion for men and women is great for all seasons It is dermatologically tested for all skin types Weight: 270 Gram Original Image
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

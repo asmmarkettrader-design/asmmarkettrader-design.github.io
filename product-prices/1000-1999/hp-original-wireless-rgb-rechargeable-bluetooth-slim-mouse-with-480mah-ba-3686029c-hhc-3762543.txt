@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HP Original Wireless RGB Rechargeable Bluetooth Slim Mouse with 480mAh Battery – Black
 Product ID: hhc-3762543
 SKU: hhc-3762543
@@ -7,11 +8,16 @@ Slug: hp-original-wireless-rgb-rechargeable-bluetooth-slim-mouse-with-480mah-368
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/8a586a01e7e85cd179eb316726f825ee.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/8a586a01e7e85cd179eb316726f825ee.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/e98d2172c45ddf7ed4129145911080e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/abb6daf38c64a5fa7dd32f5a7982be93.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/a01711699d8e7403a5b8a833c7664364.jpeg
 Meta Title: HP Original Wireless RGB Rechargeable Bluetooth Slim Mouse with 480m
 Meta Description: Buy HP Original Wireless RGB Rechargeable Bluetooth Slim Mouse with 480mAh Battery – Black online in Pakistan from ASM VEO. Enjoy smooth and wireless performanc
 Description: Enjoy smooth and wireless performance with the HP Original Wireless RGB Rechargeable Slim Mouse. It features Bluetooth and wireless connectivity, RGB lighting, a built-in 480mAh rechargeable battery, fast charging support, and long battery backup.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

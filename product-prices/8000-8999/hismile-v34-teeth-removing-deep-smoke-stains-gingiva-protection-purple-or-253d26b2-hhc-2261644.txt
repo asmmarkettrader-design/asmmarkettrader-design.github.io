@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HISMILE V34 Teeth Removing Deep Smoke Stains Gingiva Protection Purple Orthopedic Toothpaste Cleans Oral Cavity Brightness Teeth 30ml
 Product ID: hhc-2261644
 SKU: hhc-2261644
@@ -7,11 +8,16 @@ Slug: hismile-v34-teeth-removing-deep-smoke-stains-gingiva-protection-purple-253
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/s-l500-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/s-l500-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/shopping-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/shopping-2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/shopping-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/shopping.webp
 Meta Title: HISMILE V34 Teeth Removing Deep Smoke Stains Gingiva Protection Purp
 Meta Description: Buy HISMILE V34 Teeth Removing Deep Smoke Stains Gingiva Protection Purple Orthopedic Toothpaste Cleans Oral Cavity Brightness Teeth 30ml online in Pakistan fro
 Description: V34 is an instant teeth whitener that’s peroxide-free, designed to work exactly like a concealer, but for your teeth. Through colour correcting technology, it conceals the yellow tones in your teeth to improve and enhance the whiteness of your smile Clinically proven whitening Non-invasive whitening treatment Perfect for darker yellow tooth shades V34 is the perfect non-invasive whitening solution designed to conceal those pesky yellow stains that you just can’t seem to keep away. A fast whitening solution designed for daily use, the same way you would use a concealer for your skin. Quality: Copy With box [video width="480" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Video-2024-10-17-at-2.12.51-PM.mp4"][/video] Product Original Video [video width="476" height="856" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2025-06-17-at-6.44.23-PM.mp4"][/video] [video width="476" height="856" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2025-06-17-at-6.44.03-PM.mp4"][/video]
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

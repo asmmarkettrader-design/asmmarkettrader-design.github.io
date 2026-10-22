@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Remote Control Excavator Toy Kids Construction Vehicle RC Truck Fun Outdoor And Indoor Play
 Product ID: hhc-3756809
 SKU: hhc-3756809
@@ -7,11 +8,16 @@ Slug: remote-control-excavator-toy-kids-construction-vehicle-rc-truck-fun-out-55
 Category: Toys & Games
 Subcategory: Outdoor & Sports Toys
 Brand: ASM VEO
-Meta Title: Remote Control Excavator Toy Kids Construction Vehicle RC Truck Fun
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ffac24230c0b6658e2e31d0d1d90833a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ffac24230c0b6658e2e31d0d1d90833a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/b4d6ac5ce7b2661a66aa869badb9a4d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/20a1a5fad60c7fcd25214c7d16e487df.mp4
+Meta Title: Remote Control Excavator Toy Kids Construction Vehicle RC Truck Fun 
 Meta Description: Buy Remote Control Excavator Toy Kids Construction Vehicle RC Truck Fun Outdoor And Indoor Play online in Pakistan from ASM VEO. Remote Control Excavator Toy De
 Description: Remote Control Excavator Toy Designed For Kids Fun And Learning. Features Realistic Movements, Easy To Control, Perfect For Indoor And Outdoor Play.
-Regular Price: 4271
-Sale Price: 4271
+Wholesale Price: 4271
+Regular Price: 7160
+Sale Price: 5732
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 in 1  HUDA  Beauty  Professional  Eyes Cheeks Lips (Lipsticks)
 Product ID: hhc-2319116
 SKU: hhc-2319116
@@ -7,11 +8,16 @@ Slug: 3-in-1-huda-beauty-professional-eyes-cheeks-lips-lipsticks-hhc-2319116
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-13-at-2.47.37-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-13-at-2.47.37-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-15-at-11.39.44-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-15-at-11.39.46-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-15-at-11.39.45-AM.jpeg
 Meta Title: 3 in 1 HUDA Beauty Professional Eyes Cheeks Lips (Lipsticks) | Buy O
 Meta Description: Buy 3 in 1 HUDA Beauty Professional Eyes Cheeks Lips (Lipsticks) online in Pakistan from ASM VEO. product details3 in 1 Lip Pen Huda BeautyEyes Cheeks LipsHigh
 Description: product details3 in 1 Lip Pen Huda BeautyEyes Cheeks LipsHigh quality ingredients with silky shine color, can last for all day long.Smudge proof and convenient twist up format for deep strokelipstick &amp; Gives a Matte finish lookOriginal Product Video[video width="480" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Video-2024-07-25-at-6.36.45-PM.mp4"][/video]
-Regular Price: 313
-Sale Price: 313
+Wholesale Price: 263
+Regular Price: 604
+Sale Price: 454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

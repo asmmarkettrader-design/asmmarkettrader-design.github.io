@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Levels Dimming LED Desk Lamp – Smart Touch Control Flexible Eye-Protection Study Light
 Product ID: hhc-3760692
 SKU: hhc-3760692
@@ -7,11 +8,16 @@ Slug: 3-levels-dimming-led-desk-lamp-smart-touch-control-flexible-eye-protect-aa
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/5ce0b9351a759a1b52c66106cc9ba05a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/5ce0b9351a759a1b52c66106cc9ba05a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/cdc2e04b6fd957922e3bd35b6b876f0d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/9e8ea35a258fef4fbe7f5ecd29c11ef9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/bce021eaeff037ba84d1a09aa99252ee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/a4d87f2cb515b53afa9f3d6adc0ba985.jpeg
 Meta Title: 3 Levels Dimming LED Desk Lamp – Smart Touch Control Flexible Eye-Pr
 Meta Description: Buy 3 Levels Dimming LED Desk Lamp – Smart Touch Control Flexible Eye-Protection Study Light online in Pakistan from ASM VEO. Brighten up your study desk or wor
 Description: Brighten up your study desk or workspace with this modern 3 Levels Dimming LED Desk Lamp.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

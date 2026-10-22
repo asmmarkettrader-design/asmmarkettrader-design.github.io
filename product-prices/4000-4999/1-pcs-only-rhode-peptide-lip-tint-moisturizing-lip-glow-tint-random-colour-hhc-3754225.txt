@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 pcs only Rhode Peptide Lip Tint | Moisturizing Lip Glow Tint (Random Colour)
 Product ID: hhc-3754225
 SKU: hhc-3754225
@@ -7,11 +8,16 @@ Slug: 1-pcs-only-rhode-peptide-lip-tint-moisturizing-lip-glow-tint-random-colour
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/8ff78bd949667c81819d091ec03e2f40.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/8ff78bd949667c81819d091ec03e2f40.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/7bb5867151258783bfe4cda2204bf345.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/d3e8e51783560024fd1a581fe1a86d00.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/237408ed5c6a519291bca7d330863a4c.jpeg
 Meta Title: 1 pcs only Rhode Peptide Lip Tint | Moisturizing Lip Glow Tint (Rand
 Meta Description: Buy 1 pcs only Rhode Peptide Lip Tint | Moisturizing Lip Glow Tint (Random Colour) online in Pakistan from ASM VEO. A hydrating peptide-infused lip tint that de
 Description: A hydrating peptide-infused lip tint that delivers glossy color, smooth moisture, and a soft plumping effect.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

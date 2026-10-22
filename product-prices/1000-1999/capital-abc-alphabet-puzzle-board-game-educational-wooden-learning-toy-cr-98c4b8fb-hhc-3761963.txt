@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Capital ABC Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills
 Product ID: hhc-3761963
 SKU: hhc-3761963
@@ -7,11 +8,16 @@ Slug: capital-abc-alphabet-puzzle-board-game-educational-wooden-learning-toy-98c
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/ba208849ddb98ab5b8efc8cce1a6a93c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/ba208849ddb98ab5b8efc8cce1a6a93c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/2a9e5cce7c7bd3d627bd9be004d4778a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/626dac61e4815390b9c814aea0377ca3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/050f4fa8639560513e4f6c337ce0b46a.jpeg
 Meta Title: Capital ABC Alphabet Puzzle Board Game - Educational Wooden Learning
 Meta Description: Buy Capital ABC Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills online in Pakistan fro
 Description: The Capital Abc Alphabet Puzzle Board Game Is An Educational Toy Designed To Help Children Learn The Alphabet Through Engaging Hands On Puzzle Play.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

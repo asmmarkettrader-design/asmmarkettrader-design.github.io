@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Pepper Corer & Vegetable Slicer – Multifunction Jalapeno Core Remover, Fruit & Seed Extractor Tool
 Product ID: hhc-3753215
 SKU: hhc-3753215
@@ -7,11 +8,16 @@ Slug: stainless-steel-pepper-corer-vegetable-slicer-multifunction-jalapeno-co-7f
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/5b3c52612ed28629584ca694c782f4d7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/5b3c52612ed28629584ca694c782f4d7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/80c71789d445ca3cca343629546e658f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/d1edc584ebccb48f9e9c8e19ecdc948b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/c098c1056632ffb9163e6e455001ea58.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/4a1560a9b65a2781743d33c36177fcd7.jpeg
 Meta Title: Stainless Steel Pepper Corer & Vegetable Slicer – Multifunction Jala
 Meta Description: Buy Stainless Steel Pepper Corer & Vegetable Slicer – Multifunction Jalapeno Core Remover, Fruit & Seed Extractor Tool online in Pakistan from ASM VEO. Easy-to-
 Description: Easy-to-use stainless steel pepper corer removes seeds and cores from peppers, jalapenos, and fruits effortlessly and safely.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

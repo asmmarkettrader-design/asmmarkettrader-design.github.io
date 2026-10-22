@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Samsung 45W Super Fast Charging Adapter (EP-TA845) – Type-C Power Adapter
 Product ID: hhc-3764157
 SKU: hhc-3764157
@@ -7,11 +8,16 @@ Slug: samsung-45w-super-fast-charging-adapter-ep-ta845-type-c-power-adapter-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Samsung
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/46ab6d3a71a77a2d9ff4b18b66998398.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/46ab6d3a71a77a2d9ff4b18b66998398.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/51c57e68ff75cac190dbd6676ead244a.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/dabebddaecb1cd202b4f8b61695ff685.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/0b3a93346bc43445dacb08a8e2b5f396.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/3ced5a6af41d3cb87dd51692f3b73990.jpeg
 Meta Title: Samsung 45W Super Fast Charging Adapter (EP-TA845) – Type-C Power Ad
 Meta Description: Buy Samsung 45W Super Fast Charging Adapter (EP-TA845) – Type-C Power Adapter online in Pakistan from ASM VEO. Experience high-speed power with the Samsung 45W
 Description: Experience high-speed power with the Samsung 45W Super Fast Charging Travel Adapter (EP-TA845). Equipped with USB-C Power Delivery (PD 3.0) technology, it delivers fast, efficient, and safe charging for flagship smartphones and tablets. Its compact build makes it the ideal power
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

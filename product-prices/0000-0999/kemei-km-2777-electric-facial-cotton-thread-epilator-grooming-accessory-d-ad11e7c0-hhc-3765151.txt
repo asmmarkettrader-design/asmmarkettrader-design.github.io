@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kemei KM 2777 Electric Facial Cotton Thread Epilator - Grooming Accessory Designed For Facial Hair Removal And Daily Maintenance Routine
 Product ID: hhc-3765151
 SKU: hhc-3765151
@@ -7,11 +8,16 @@ Slug: kemei-km-2777-electric-facial-cotton-thread-epilator-grooming-accessory-ad
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/95a093688cfe4d1363e40badd3d96f32.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/95a093688cfe4d1363e40badd3d96f32.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/f627ce732dc296ee7266e01d12982088.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/6ba812f616b1150bf5df64eb1b36e830.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/150e60d0cd9eb1d85d1f09494172f6d8.png
 Meta Title: Kemei KM 2777 Electric Facial Cotton Thread Epilator - Grooming Acce
 Meta Description: Buy Kemei KM 2777 Electric Facial Cotton Thread Epilator - Grooming Accessory Designed For Facial Hair Removal And Daily Maintenance Routine online in Pakistan
 Description: This Kemei KM 2777 Electric Facial Cotton Thread Epilator Provides A Reliable Solution For Grooming Accessories And Routine Facial Hair Removal Needs. Formulated To Deliver Hair Removal Benefits While Supporting Kemei KM 2777 Electric Facial Cotton Thread Epilator Utility, It Fits Seamlessly Into Your Regular Facial Hair Removal Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Facial Hair Removal Requirements, This Kemei KM 2777 Electric Facial Cotton Thread Epilator Serves As An Essential Grooming Accessory For Daily Life.Key FeaturesKemei KM 2777 Electric Facial Cotton Thread Epilator Formulated For Grooming AccessoriesDelivers Facial Hair Removal And Supports Daily Maintenance UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Facial Hair Removal And Maintenance RoutinesDesigned For Easy Operation And Convenient UseEssential Grooming Accessory For Everyday Maintenance
-Regular Price: 4130
-Sale Price: 4130
+Wholesale Price: 4130
+Regular Price: 6940
+Sale Price: 5549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

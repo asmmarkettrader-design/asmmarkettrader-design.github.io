@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Summer Tracksuit for Men with New Luxury Design – Premium T-Shirt & Shorts Set – Comfortable Casual
 Product ID: hhc-3760268
 SKU: hhc-3760268
@@ -7,11 +8,16 @@ Slug: summer-tracksuit-for-men-with-new-luxury-design-premium-t-shirt-shorts-93e
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Summer Tracksuit for Men with New Luxury Design – Premium T-Shirt &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/1028d807b6618545321957ce426b74a3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/1028d807b6618545321957ce426b74a3.jpeg
+Meta Title: Summer Tracksuit for Men with New Luxury Design – Premium T-Shirt & 
 Meta Description: Buy Summer Tracksuit for Men with New Luxury Design – Premium T-Shirt & Shorts Set – Comfortable Casual online in Pakistan from ASM VEO. Upgrade your summer war
 Description: Upgrade your summer wardrobe with this stylish luxury design tracksuit for men. Featuring a comfortable round-neck T-shirt and matching shorts, this lightweight outfit is perfect for casual wear, workouts, outdoor activities, and everyday comfort.
-Regular Price: 1060
-Sale Price: 1060
+Wholesale Price: 1010
+Regular Price: 1870
+Sale Price: 1494
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

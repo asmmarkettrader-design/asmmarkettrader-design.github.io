@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Round Hair Brush for Blow Drying & Styling | Smooth, Volumizing Ceramic Barrel Brush with Heat-Resistant Bristles | Perfect for Straightening, Curling, Root Lift & Salon-Style
 Product ID: hhc-3753899
 SKU: hhc-3753899
@@ -7,11 +8,16 @@ Slug: professional-round-hair-brush-for-blow-drying-styling-smooth-volumizing-ac
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/309d4b6bfc502e398a8981c892cfb206.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/309d4b6bfc502e398a8981c892cfb206.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/1bedaaf5cfedb5aa62304341cca2996b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/a8daf30324e2478d7d92f884a56d2814.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/a1c209037d0ffc6a35b25086855c6dd7.png
 Meta Title: Professional Round Hair Brush for Blow Drying & Styling | Smooth, Vo
 Meta Description: Buy Professional Round Hair Brush for Blow Drying & Styling | Smooth, Volumizing Ceramic Barrel Brush with Heat-Resistant Bristles | Perfect for Straightening,
 Description: Achieve salon-style blowouts at home with this Professional Round Hair Styling Brush. Designed for volume, shine, smoothing, and frizz control — perfect for all hair types.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

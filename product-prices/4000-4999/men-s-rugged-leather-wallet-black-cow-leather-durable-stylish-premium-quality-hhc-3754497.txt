@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men’s Rugged Leather Wallet | Black Cow Leather | Durable & Stylish | Premium Quality
 Product ID: hhc-3754497
 SKU: hhc-3754497
@@ -7,11 +8,16 @@ Slug: men-s-rugged-leather-wallet-black-cow-leather-durable-stylish-premium-qual
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/3d512b8f06ae4fc943960f7771ef25b3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/3d512b8f06ae4fc943960f7771ef25b3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/ccd7917d47f298da4482d0c16ba8120f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/281fb86f4f197bad6918f42fdaf344be.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/c95d3864bdf08f5e3108fc7c7ed436aa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/b3264ba210c19aa11b35bd6fa0cf9205.jpeg
 Meta Title: Men’s Rugged Leather Wallet | Black Cow Leather | Durable & Stylish
 Meta Description: Buy Men’s Rugged Leather Wallet | Black Cow Leather | Durable & Stylish | Premium Quality online in Pakistan from ASM VEO. Men’s rugged wallet crafted from prem
 Description: Men’s rugged wallet crafted from premium cow leather in black, durable and stylish for everyday use.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

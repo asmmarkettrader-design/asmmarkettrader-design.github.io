@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Ideas 16-in-1 Multifunctional Vegetable Slicer & Chopper Set
 Product ID: hhc-3764360
 SKU: hhc-3764360
@@ -7,11 +8,16 @@ Slug: kitchen-ideas-16-in-1-multifunctional-vegetable-slicer-chopper-set-hhc-376
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/82344eb3cdfd4ea3249aa2f2d82b3761.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/82344eb3cdfd4ea3249aa2f2d82b3761.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/11eb219b233095ee874baf1f02af553c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/07375d8425b48383dbb607a0ef5d299c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/9e4f724ad1e03ab558b4cb4db9302284.jpg
 Meta Title: Kitchen Ideas 16-in-1 Multifunctional Vegetable Slicer & Chopper Set
 Meta Description: Buy Kitchen Ideas 16-in-1 Multifunctional Vegetable Slicer & Chopper Set online in Pakistan from ASM VEO. A 16-piece multifunctional vegetable chopper and slice
 Description: A 16-piece multifunctional vegetable chopper and slicer featuring interchangeable stainless steel blades, a catch container, and a press lid. Designed for effortless dicing, slicing, grating, and chopping.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: One Man Show By Jacques Bogart EDT Perfume For Men 100ML
 Product ID: hhc-2618879
 SKU: hhc-2618879
@@ -7,11 +8,16 @@ Slug: one-man-show-by-jacques-bogart-edt-perfume-for-men-100ml-hhc-2618879
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-14-at-4.07.57-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-14-at-4.07.57-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-14-at-4.07.56-PM-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-14-at-4.07.56-PM-2.jpeg
 Meta Title: One Man Show By Jacques Bogart EDT Perfume For Men 100ML | Buy Onlin
 Meta Description: Buy One Man Show By Jacques Bogart EDT Perfume For Men 100ML online in Pakistan from ASM VEO. Product Description One Man Show by Jacques Bogart is a Chypre fra
 Description: Product Description One Man Show by Jacques Bogart is a Chypre fragrance for men. One Man Show was launched in 1980. The nose behind this fragrance is Roger Pellegrino. Top notes are artemisia, caraway, galbanum, basil, bergamot and brazilian rosewood; middle notes are labdanum, nutmeg, spices, carnation, patchouli, jasmine, vetiver, rose, pine tree needles and geranium; base notes are leather, sandalwood, tonka bean, amber, coconut, vanilla, oakmoss, cedar and styrax. FRAGRANCE NAME: ONE MAN SHOW FRAGRANCE TYPE: EAU DE TOILETTE SPRAY GENDER: FOR MEN It is recommended for romantic wear Long lasting Up-To 3 hours of lasting
-Regular Price: 1065
-Sale Price: 1065
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

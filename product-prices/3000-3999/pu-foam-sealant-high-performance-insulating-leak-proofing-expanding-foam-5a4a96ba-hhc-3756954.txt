@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: PU Foam Sealant – High-Performance Insulating & Leak-Proofing Expanding Foam - 750ml - THREE GUYS (German Engineered) l Crack Filler | P U
 Product ID: hhc-3756954
 SKU: hhc-3756954
@@ -7,11 +8,16 @@ Slug: pu-foam-sealant-high-performance-insulating-leak-proofing-expanding-foa-5a
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/ce0e1979404d725d67c47431bd2d1fde.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/ce0e1979404d725d67c47431bd2d1fde.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/f267782a1c2b8a9498bf028c2f285e41.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/4c3ad3218fcf80418cab0e4df4234175.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/76bf8d0da08ad84f73c996e80ce6e137.jpg
 Meta Title: PU Foam Sealant – High-Performance Insulating & Leak-Proofing Expand
 Meta Description: Buy PU Foam Sealant – High-Performance Insulating & Leak-Proofing Expanding Foam - 750ml - THREE GUYS (German Engineered) l Crack Filler | P U online in Pakista
 Description: Premium German-Engineered Pu Foam Sealant That Fills Gaps Seals Leaks And Provides Thermal And Acoustic Insulation.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

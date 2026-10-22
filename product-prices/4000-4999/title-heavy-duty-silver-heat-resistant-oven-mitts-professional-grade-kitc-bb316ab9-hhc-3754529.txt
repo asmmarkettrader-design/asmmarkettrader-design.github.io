@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Title: Heavy-Duty Silver Heat-Resistant Oven Mitts – Professional Grade Kitchen Safety (Pair)
 Product ID: hhc-3754529
 SKU: hhc-3754529
@@ -7,11 +8,16 @@ Slug: title-heavy-duty-silver-heat-resistant-oven-mitts-professional-grade-ki-bb
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/80b20bc36bc61627be2600be17d1a5b6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/80b20bc36bc61627be2600be17d1a5b6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/526859308b1fe17a07eb05038ee25c33.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/5496b02a930ae52103f6c74e444ca064.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/57d68c6257022d7ac223907bfe80bbb4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/ff7070d70a656fbc5fa11126b9a8bd09.jpeg
 Meta Title: Title: Heavy-Duty Silver Heat-Resistant Oven Mitts – Professional Gr
 Meta Description: Buy Title: Heavy-Duty Silver Heat-Resistant Oven Mitts – Professional Grade Kitchen Safety (Pair) online in Pakistan from ASM VEO. Protect your hands with these
 Description: Protect your hands with these professional-grade, heat-resistant oven mitts. Featuring a textured silver finish for superior grip and a soft interior for comfort, these mitts are designed for safely handling hot cookware
-Regular Price: 298
-Sale Price: 298
+Wholesale Price: 248
+Regular Price: 582
+Sale Price: 432
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Pcs Bob Matte Lipstick Super Stay Set
 Product ID: hhc-1922259
 SKU: hhc-1922259
@@ -7,11 +8,16 @@ Slug: 6-pcs-bob-matte-lipstick-super-stay-set-hhc-1922259
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/8ad9859ac0ebb18219d639ca52547f29.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/8ad9859ac0ebb18219d639ca52547f29.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-10.49.42-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/c2ce6db12a9183eb440c086a5f8e519e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/6caa1214510db88e0580c6b06d62318b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/2cb73e3eca3af72e5de85ee36c2e51b9.jpeg
 Meta Title: 6 Pcs Bob Matte Lipstick Super Stay Set | Buy Online in Pakistan
 Meta Description: Buy 6 Pcs Bob Matte Lipstick Super Stay Set online in Pakistan from ASM VEO. 6 Pcs Bob Matte Lipstick Super Stay Set With Matte Finish Cash on Delivery, Rs 180
 Description: 6 Pcs Bob Matte Lipstick Super Stay Set With Matte Finish
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

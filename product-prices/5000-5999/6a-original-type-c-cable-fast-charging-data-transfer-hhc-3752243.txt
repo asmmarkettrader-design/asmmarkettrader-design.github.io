@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6A Original Type-C Cable – Fast Charging & Data Transfer
 Product ID: hhc-3752243
 SKU: hhc-3752243
@@ -7,11 +8,16 @@ Slug: 6a-original-type-c-cable-fast-charging-data-transfer-hhc-3752243
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758085014-68ca3f96e2b0a-imgi_80_d0809023c095f9aaf46f288ff95bca0d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758085014-68ca3f96e2b0a-imgi_80_d0809023c095f9aaf46f288ff95bca0d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758085015-68ca3f97558a9-imgi_81_b8fa44ca6fdca9ab44d4c2100e9a3ddf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758085015-68ca3f97bbd78-imgi_66_S924825ab659442b091533661272c2905f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758085014-68ca3f968ab4a-imgi_75_30af79c534e230913c622a58cbbe4bee.jpg
 Meta Title: 6A Original Type-C Cable – Fast Charging & Data Transfer | Buy Onlin
 Meta Description: Buy 6A Original Type-C Cable – Fast Charging & Data Transfer online in Pakistan from ASM VEO. Durable 6A original Type-C cable with ultra-fast charging and stab
 Description: Durable 6A original Type-C cable with ultra-fast charging and stable data transfer. Perfect for smartphones, tablets, and Type-C compatible devices.
-Regular Price: 207
-Sale Price: 207
+Wholesale Price: 157
+Regular Price: 446
+Sale Price: 296
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

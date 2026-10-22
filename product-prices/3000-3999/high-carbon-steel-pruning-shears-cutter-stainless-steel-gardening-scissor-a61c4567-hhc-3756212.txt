@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Carbon Steel Pruning Shears Cutter – Stainless Steel Gardening Scissor for Plant & Branch Cutting
 Product ID: hhc-3756212
 SKU: hhc-3756212
@@ -7,11 +8,16 @@ Slug: high-carbon-steel-pruning-shears-cutter-stainless-steel-gardening-sciss-a6
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
-Meta Title: High Carbon Steel Pruning Shears Cutter – Stainless Steel Gardening
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/e4087c482eac40ebf6c63ae30df36433.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/e4087c482eac40ebf6c63ae30df36433.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/630e553150d82f1ca22f312f2afe385f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/43b6b849fe14687411c2625a01778d37.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/e4161e489b4942ef1ff4fb1e9b722184.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/f5c348c9daeb753f2640eb31601c1c3a.jpeg
+Meta Title: High Carbon Steel Pruning Shears Cutter – Stainless Steel Gardening 
 Meta Description: Buy High Carbon Steel Pruning Shears Cutter – Stainless Steel Gardening Scissor for Plant & Branch Cutting online in Pakistan from ASM VEO. Durable High Carbon
 Description: Durable High Carbon Steel Pruning Shears Designed For Easy And Precise Cutting Of Plants And Small Branches. Ideal For Home Gardening Use.
-Regular Price: 538
-Sale Price: 538
+Wholesale Price: 488
+Regular Price: 990
+Sale Price: 792
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

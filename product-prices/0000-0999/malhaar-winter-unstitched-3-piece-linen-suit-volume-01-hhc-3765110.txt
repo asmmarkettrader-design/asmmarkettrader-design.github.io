@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Malhaar Winter Unstitched 3-Piece Linen Suit - Volume 01
 Product ID: hhc-3765110
 SKU: hhc-3765110
@@ -7,11 +8,16 @@ Slug: malhaar-winter-unstitched-3-piece-linen-suit-volume-01-hhc-3765110
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/67e2394b4dfcd50ff62cb269fb83c8eb.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/67e2394b4dfcd50ff62cb269fb83c8eb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/acde0e60c62193c6e46349a1fe313f2e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/0d9399a857d0f4a7809c38354fef0cd5.jpg
 Meta Title: Malhaar Winter Unstitched 3-Piece Linen Suit - Volume 01 | Buy Onlin
 Meta Description: Buy Malhaar Winter Unstitched 3-Piece Linen Suit - Volume 01 online in Pakistan from ASM VEO. Malhaar Winter Unstitched Collection Volume 01. 3-piece suit inclu
 Description: Malhaar Winter Unstitched Collection Volume 01. 3-piece suit including: - Digital Printed Linen Shirt (3.00 Mtrs) - Digital Printed Linen Dupatta (2.50 Mtrs) - Dyed Linen Trouser (2.50 Mtrs) Care Instructions: Dry clean not recommended; soak in water before stitching. Note: Rs 5495 is the market retail price; wholesale cog is set at ~Rs 2750 (approx 50% of retail) for estimation. Please confirm your actual bulk rate.
-Regular Price: 3709
-Sale Price: 3709
+Wholesale Price: 3709
+Regular Price: 6250
+Sale Price: 5002
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Screwdriver Set 8 in 1 SW‑6308A | Mobile Repairing Kit | Torx, Star, Cross & Slotted Screwdrivers
 Product ID: hhc-3755296
 SKU: hhc-3755296
@@ -7,11 +8,16 @@ Slug: screwdriver-set-8-in-1-sw-6308a-mobile-repairing-kit-torx-star-cross-sl-ed
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/668375d429867211da82745ea377e6ce.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/668375d429867211da82745ea377e6ce.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/ad585e808134f26b67a01847afe7b56e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/0bc01d85415b362d8487ebf7634d6d81.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/09168f20ffb9a1341bc0ed21cf8a1212.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/0a6917ab1ffde1e4afbacaca8f1ab6cf.jpeg
 Meta Title: Screwdriver Set 8 in 1 SW‑6308A | Mobile Repairing Kit | Torx, Star,
 Meta Description: Buy Screwdriver Set 8 in 1 SW‑6308A | Mobile Repairing Kit | Torx, Star, Cross & Slotted Screwdrivers online in Pakistan from ASM VEO. 8‑in‑1 SW‑6308A screwdriv
 Description: 8‑in‑1 SW‑6308A screwdriver set. Lightweight, durable, safe to use. Perfect for mobile, computer, camera, glasses & watch repairs.
-Regular Price: 528
-Sale Price: 528
+Wholesale Price: 478
+Regular Price: 970
+Sale Price: 777
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Apple Airpods Pro 2 - Personal Audio Equipment Created For Sound Playback And Daily Listening Session - Black
 Product ID: hhc-2345155
 SKU: hhc-2345155
@@ -7,11 +8,16 @@ Slug: black-apple-airpods-pro-2-personal-audio-equipment-created-for-sound-pl-ad
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/2-43.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/2-43.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/ba40c3f69f84f8e8898dd1dac0e71423.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/92db9ccd81330b34f95d21d146a1c0fb.webp
 Meta Title: Black Apple Airpods Pro 2 - Personal Audio Equipment Created For Sou
 Meta Description: Buy Black Apple Airpods Pro 2 - Personal Audio Equipment Created For Sound Playback And Daily Listening Session - Black online in Pakistan from ASM VEO. The Bla
 Description: The Black Apple Airpods Pro 2 Is A Personal Audio Equipment Item Formulated To Assist Sound Playback And Daily Listening Routine During Operation.
-Regular Price: 1260
-Sale Price: 1260
+Wholesale Price: 1210
+Regular Price: 2220
+Sale Price: 1778
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

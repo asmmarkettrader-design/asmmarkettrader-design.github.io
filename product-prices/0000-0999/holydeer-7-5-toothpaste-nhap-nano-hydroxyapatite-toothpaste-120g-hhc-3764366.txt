@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Holydeer 7.5% Toothpaste nHAP Nano-Hydroxyapatite Toothpaste 120g
 Product ID: hhc-3764366
 SKU: hhc-3764366
@@ -7,11 +8,16 @@ Slug: holydeer-7-5-toothpaste-nhap-nano-hydroxyapatite-toothpaste-120g-hhc-37643
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/69c96c0ae2f99aeed183be5c43eb1b9a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/69c96c0ae2f99aeed183be5c43eb1b9a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/b72e7d5508c520163bd29f56690ddb2b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/87cdf45d693743b4c434674c1a597b6e.jpeg
 Meta Title: Holydeer 7.5% Toothpaste nHAP Nano-Hydroxyapatite Toothpaste 120g |
 Meta Description: Buy Holydeer 7.5% Toothpaste nHAP Nano-Hydroxyapatite Toothpaste 120g online in Pakistan from ASM VEO. A fluoride-free toothpaste formulated with 7.5% nano-hydr
 Description: A fluoride-free toothpaste formulated with 7.5% nano-hydroxyapatite (nHAP) to repair enamel, soothe sensitivity, and strengthen tooth surface minerals. Delivers a clean, fresh mint flavor for daily oral care.
-Regular Price: 306
-Sale Price: 306
+Wholesale Price: 256
+Regular Price: 594
+Sale Price: 444
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Double Side Silicone Suction Pad Phone Holder – Self-Adhesive Square Rubber Grip Pad for All Mobiles & Tablets
 Product ID: hhc-3756729
 SKU: hhc-3756729
@@ -7,11 +8,16 @@ Slug: double-side-silicone-suction-pad-phone-holder-self-adhesive-square-rubb-23
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/13603e86caf2e9a601e55840219f8f23.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/13603e86caf2e9a601e55840219f8f23.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/e829c9082ac733b2604ae46e3646f2ea.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/1e811f9bd6c6d31daf356f6648365c89.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/26bc1e5f7bdd8b4a33cae11a885d71b4.jpeg
 Meta Title: Double Side Silicone Suction Pad Phone Holder – Self-Adhesive Square
 Meta Description: Buy Double Side Silicone Suction Pad Phone Holder – Self-Adhesive Square Rubber Grip Pad for All Mobiles & Tablets online in Pakistan from ASM VEO. Strong doubl
 Description: Strong double-sided silicone suction pad designed to securely hold your mobile phone or tablet on smooth surfaces. Washable, reusable, and compatible with all devices.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

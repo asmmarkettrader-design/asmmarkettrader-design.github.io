@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Anti Lice Metal Comb with 4 Filters | Stainless Steel Fine Tooth Head Lice & Nit Removal Comb
 Product ID: hhc-3761257
 SKU: hhc-3761257
@@ -7,11 +8,16 @@ Slug: anti-lice-metal-comb-with-4-filters-stainless-steel-fine-tooth-head-lic-17
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/247acce64b0b29d2be6fcb584792d8c1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/247acce64b0b29d2be6fcb584792d8c1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/65c291f08b858ad23d8e17f4c97d20a1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/970d8e8f2e1a21cbc8e739b3020a9cc4.jpeg
 Meta Title: Anti Lice Metal Comb with 4 Filters | Stainless Steel Fine Tooth Hea
 Meta Description: Buy Anti Lice Metal Comb with 4 Filters | Stainless Steel Fine Tooth Head Lice & Nit Removal Comb online in Pakistan from ASM VEO. Remove head lice and nits eff
 Description: Remove head lice and nits effectively with this Anti Lice Metal Comb featuring durable stainless steel teeth and 4 replaceable filters. Designed for safe, gentle, and effective lice removal for both kids and adults.
-Regular Price: 1925
-Sale Price: 1925
+Wholesale Price: 1925
+Regular Price: 3470
+Sale Price: 2779
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

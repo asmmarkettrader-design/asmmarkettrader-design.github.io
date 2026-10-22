@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Sink Wire Drain Cleaner | 90cm Spring Cleaning Stick
 Product ID: hhc-3757923
 SKU: hhc-3757923
@@ -7,11 +8,16 @@ Slug: stainless-steel-sink-wire-drain-cleaner-90cm-spring-cleaning-stick-hhc-375
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/94d5f859eaef8a82d5eb8661443e0a4e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/94d5f859eaef8a82d5eb8661443e0a4e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/629ed660c440e6ebc5d33187bd6ca0ec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/c23dae8eb0e1f91e3d258778d3866578.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/17abaa6af183dd60924660eaf6afebf8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/128156f544d4b715640630dd5fb6944d.png
 Meta Title: Stainless Steel Sink Wire Drain Cleaner | 90cm Spring Cleaning Stick
 Meta Description: Buy Stainless Steel Sink Wire Drain Cleaner | 90cm Spring Cleaning Stick online in Pakistan from ASM VEO. Durable Stainless Steel Drain Cleaner Wire 90cm Spring
 Description: Durable Stainless Steel Drain Cleaner Wire 90cm Spring Stick For Sink And Pipe Cleaning
-Regular Price: 313
-Sale Price: 313
+Wholesale Price: 263
+Regular Price: 604
+Sale Price: 454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Whitening Cream 250g – Skin Brightening And Moisturizing Face Cream For Smooth And Glowing Skin
 Product ID: hhc-3753194
 SKU: hhc-3753194
@@ -7,11 +8,16 @@ Slug: zafrani-whitening-cream-250g-skin-brightening-and-moisturizing-face-cre-b3
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/0d172056a894497834c155ca89a443f7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/0d172056a894497834c155ca89a443f7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/d56b5ffed347288be37ee5223596beec.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/db84b8254ea4d88e4f30808938b8a6d3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/b56b734a9981ee59475f7e9d4172584a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/a346bff3212f0ce920598c73059dc08b.jpeg
 Meta Title: Zafrani Whitening Cream 250g – Skin Brightening And Moisturizing Fac
 Meta Description: Buy Zafrani Whitening Cream 250g – Skin Brightening And Moisturizing Face Cream For Smooth And Glowing Skin online in Pakistan from ASM VEO. Zafrani Whitening C
 Description: Zafrani Whitening Cream 250g Helps Brighten Skin Tone, Reduce Dark Spots, And Restore Natural Glow While Keeping Skin Soft And Hydrated.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

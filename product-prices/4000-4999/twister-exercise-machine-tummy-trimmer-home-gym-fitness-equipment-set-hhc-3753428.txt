@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Twister Exercise Machine & Tummy Trimmer | Home Gym Fitness Equipment Set
 Product ID: hhc-3753428
 SKU: hhc-3753428
 Slug: twister-exercise-machine-tummy-trimmer-home-gym-fitness-equipment-set-hhc-3753428
-Category: Beauty & Personal Care
-Subcategory: Health & Wellness
+Category: Health & Wellness
+Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/a31c77f326a806a20337452af1906108.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/a31c77f326a806a20337452af1906108.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/39b64492a01882201e011f24a98a53f9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/004b6fb2e9d234afd2ac1d7c47b34377.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/3eb802f1b5537f0eb9fb44f65a0d8dfc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/fd4cb9baecc6ec9e4a0774e8b5c86887.jpeg
 Meta Title: Twister Exercise Machine & Tummy Trimmer | Home Gym Fitness Equipmen
 Meta Description: Buy Twister Exercise Machine & Tummy Trimmer | Home Gym Fitness Equipment Set online in Pakistan from ASM VEO. Complete home gym combo with Twister Exercise Dis
 Description: Complete home gym combo with Twister Exercise Disc and Double Spring Tummy Trimmer — perfect for abs, waist, and full-body workouts.
-Regular Price: 1220
-Sale Price: 1220
+Wholesale Price: 1170
+Regular Price: 2150
+Sale Price: 1721
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lace Robe With Matching Panty Set For Nightwear Featuring Lace And Satin Material Available In Multiple Colors For Comfortable Use
 Product ID: hhc-3764440
 SKU: hhc-3764440
 Slug: lace-robe-with-matching-panty-set-for-nightwear-featuring-lace-and-sati-84b93efa-hhc-3764440
 Category: Fashion
-Subcategory: Women's Fashion
+Subcategory: Underwear & Innerwear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/f4396274fe891b1b6216e85a2c6f3948.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/f4396274fe891b1b6216e85a2c6f3948.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/729f981f2e950fadd7f2ba65b7754b37.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/29099d201bc031225dda69a7bf139786.jpeg
 Meta Title: Lace Robe With Matching Panty Set For Nightwear Featuring Lace And S
 Meta Description: Buy Lace Robe With Matching Panty Set For Nightwear Featuring Lace And Satin Material Available In Multiple Colors For Comfortable Use online in Pakistan from A
 Description: Lace Robe With Matching Panty Set Featuring Lace And Satin Material, Available In Multiple Colors And Designed For Nightwear Use.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

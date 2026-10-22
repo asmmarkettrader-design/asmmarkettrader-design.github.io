@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Simple Multifunctional Towel Bar | No-Drill Wall Mounted Bathroom Organizer | Strong Load-Bearing 10kg | 50cm
 Product ID: hhc-3758518
 SKU: hhc-3758518
@@ -7,11 +8,16 @@ Slug: simple-multifunctional-towel-bar-no-drill-wall-mounted-bathroom-organiz-8b
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/71adbace497bbc26970176754284dcbd.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/71adbace497bbc26970176754284dcbd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/c5d30d56aba5c5cb803a729977505498.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/2e5fd293539fcec5c0da9fdcd28cdf70.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/21569dfbbd7e76bd5dd6c509f7f99493.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/b3c89da8b5b64a0f9b9946edd9380603.jpeg
 Meta Title: Simple Multifunctional Towel Bar | No-Drill Wall Mounted Bathroom Or
 Meta Description: Buy Simple Multifunctional Towel Bar | No-Drill Wall Mounted Bathroom Organizer | Strong Load-Bearing 10kg | 50cm online in Pakistan from ASM VEO. Durable Multi
 Description: Durable Multifunctional Towel Bar | Adhesive Mount | Strong 10kg Load Capacity | Includes Hook For Extra Storage
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

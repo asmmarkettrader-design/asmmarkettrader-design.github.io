@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-Piece Wooden StickyTile Frame Set – 8x11 Inch Wall Art Frames with Double Tape
 Product ID: hhc-3752735
 SKU: hhc-3752735
@@ -7,11 +8,16 @@ Slug: 3-piece-wooden-stickytile-frame-set-8x11-inch-wall-art-frames-with-double-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/127dc7ca5fe22263548e29b1367eca12.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/127dc7ca5fe22263548e29b1367eca12.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/824e166bc812cb4b37534eba522e8ada.jpeg
 Meta Title: 3-Piece Wooden StickyTile Frame Set – 8x11 Inch Wall Art Frames with
 Meta Description: Buy 3-Piece Wooden StickyTile Frame Set – 8x11 Inch Wall Art Frames with Double Tape online in Pakistan from ASM VEO. Elevate your wall decor with this 3-piece
 Description: Elevate your wall decor with this 3-piece Wooden StickyTile Frame Set. Each 8x11 inch frame comes with double-sided tape for easy, drill-free mounting—perfect for adding charm to any space.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Varicose Veins Treatment Spray – Advanced Formula for Spider Veins, Leg Pain & Swelling Relief ~ 30ml
 Product ID: hhc-3756853
 SKU: hhc-3756853
@@ -7,11 +8,16 @@ Slug: varicose-veins-treatment-spray-advanced-formula-for-spider-veins-leg-pa-4f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Varicose Veins Treatment Spray – Advanced Formula for Spider Veins,
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/d07edf67ce28150d0ee88ac72c22e326.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/d07edf67ce28150d0ee88ac72c22e326.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/6413f77621496659cc160c099f940bb9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/9b30b2a7e5342217e60514f0578bd5e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/3f979776480158a7cc8f1b21e212baab.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/55ee5fe65767421bfdf415da97b52dd7.jpeg
+Meta Title: Varicose Veins Treatment Spray – Advanced Formula for Spider Veins, 
 Meta Description: Buy Varicose Veins Treatment Spray – Advanced Formula for Spider Veins, Leg Pain & Swelling Relief ~ 30ml online in Pakistan from ASM VEO. A fast-absorbing topi
 Description: A fast-absorbing topical spray designed to reduce the appearance of spider veins and varicose veins while helping relieve leg pain, swelling, and discomfort. Lightweight, non-greasy formula suitable for daily use.
-Regular Price: 255
-Sale Price: 255
+Wholesale Price: 205
+Regular Price: 518
+Sale Price: 368
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

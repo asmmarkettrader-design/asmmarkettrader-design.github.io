@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 13 PRO MAX,12 PRO MAX,11 PRO MAX 35W type-C Fast Charging Power Adapter US Pin | PD 3.0 High Speed Wall Charger | 35 Watt Safe Charge Adapter
 Product ID: hhc-3762485
 SKU: hhc-3762485
@@ -7,11 +8,16 @@ Slug: 13-pro-max-12-pro-max-11-pro-max-35w-type-c-fast-charging-power-adapter-5e
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/b34d32405b2c9f4645c22491c091b70d.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/b34d32405b2c9f4645c22491c091b70d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/006ac328a2f622d4453b74677e3d6042.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/470d1b56e0ba7c48fb07672fec0f0e41.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/662176ab15010c3a55ca0078c60c086e.webp
 Meta Title: 13 PRO MAX,12 PRO MAX,11 PRO MAX 35W type-C Fast Charging Power Adap
 Meta Description: Buy 13 PRO MAX,12 PRO MAX,11 PRO MAX 35W type-C Fast Charging Power Adapter US Pin | PD 3.0 High Speed Wall Charger | 35 Watt Safe Charge Adapter online in Paki
 Description: 16 PRO MAX,14 PRO MAX,13 PRO MAX,12 PRO MAX,11 PRO MAX 35W type-C Fast Charging Power Adapter US Pin | PD 3.0 High Speed Wall Charger | 35 Watt Safe Charge Adapter 35W high-speed fast charging output PD 3.0 USB-C Power Delivery technology Optimized fo fast charging support Safe charging
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

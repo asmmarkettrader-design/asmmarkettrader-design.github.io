@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Motivational Quote Wall Art Frames – 8x11" MDF with Sticky Backing
 Product ID: hhc-3754692
 SKU: hhc-3754692
@@ -7,11 +8,16 @@ Slug: set-of-3-motivational-quote-wall-art-frames-8x11-mdf-with-sticky-backing-h
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 3 Motivational Quote Wall Art Frames – 8x11" MDF with Sticky
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/2b50d5585d60f9874d8b676ed19e07d2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/2b50d5585d60f9874d8b676ed19e07d2.png
+Meta Title: Set of 3 Motivational Quote Wall Art Frames – 8x11" MDF with Sticky 
 Meta Description: Buy Set of 3 Motivational Quote Wall Art Frames – 8x11" MDF with Sticky Backing online in Pakistan from ASM VEO. 3 MDF wooden frames featuring motivational quot
 Description: 3 MDF wooden frames featuring motivational quotes and floral artwork. Easy to mount with sticky tape.
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

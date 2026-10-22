@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Beaded Stretch Bracelet – Fashion Accessory
 Product ID: hhc-3752573
 SKU: hhc-3752573
@@ -7,11 +8,16 @@ Slug: beaded-stretch-bracelet-fashion-accessory-hhc-3752573
 Category: Fashion
 Subcategory: Jewelry
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/c700003b24b31d1ff7e8447f7bdbcebd.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/c700003b24b31d1ff7e8447f7bdbcebd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/b1c699be095e4a50a04ae5c252b12b1c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/666b28da99a8a7232ba8c7fe55f02205.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/798b27717b3db526cc1b81d9e3d9680a.jpeg
 Meta Title: Beaded Stretch Bracelet – Fashion Accessory | Buy Online in Pakistan
 Meta Description: Buy Beaded Stretch Bracelet – Fashion Accessory online in Pakistan from ASM VEO. Trendy elastic beaded bracelet in random colors. Perfect for daily wear, stacki
 Description: Trendy elastic beaded bracelet in random colors. Perfect for daily wear, stacking, or gifting.
-Regular Price: 179
-Sale Price: 179
+Wholesale Price: 129
+Regular Price: 404
+Sale Price: 254
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

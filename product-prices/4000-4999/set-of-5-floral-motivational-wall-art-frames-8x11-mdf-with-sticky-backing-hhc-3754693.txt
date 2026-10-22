@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 5 Floral Motivational Wall Art Frames – 8x11" MDF with Sticky Backing
 Product ID: hhc-3754693
 SKU: hhc-3754693
@@ -7,11 +8,16 @@ Slug: set-of-5-floral-motivational-wall-art-frames-8x11-mdf-with-sticky-backing-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/6dd4f532a503ceebce49268298296d71.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/6dd4f532a503ceebce49268298296d71.jpg
 Meta Title: Set of 5 Floral Motivational Wall Art Frames – 8x11" MDF with Sticky
 Meta Description: Buy Set of 5 Floral Motivational Wall Art Frames – 8x11" MDF with Sticky Backing online in Pakistan from ASM VEO. Five MDF wooden frames with floral-themed moti
 Description: Five MDF wooden frames with floral-themed motivational quotes. Easy to mount with pre-attached tape.
-Regular Price: 668
-Sale Price: 668
+Wholesale Price: 618
+Regular Price: 1200
+Sale Price: 956
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

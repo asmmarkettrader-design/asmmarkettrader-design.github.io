@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Car Interior Cleaning Wipes – Quick Shine, Dust Removal & Streak-Free (40 Wipes In 1 Box)
 Product ID: hhc-3753469
 SKU: hhc-3753469
@@ -7,11 +8,16 @@ Slug: premium-car-interior-cleaning-wipes-quick-shine-dust-removal-streak-fre-96
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/eeecf9b8a02d570cf63b7fa92ee847cb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/eeecf9b8a02d570cf63b7fa92ee847cb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/443af25829751e540b01deeb6130f261.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/916af5303ecd3f7c364e75bdade48c00.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/ad35144a0d7817cf1f59b93d74cf1556.jpeg
 Meta Title: Premium Car Interior Cleaning Wipes – Quick Shine, Dust Removal & St
 Meta Description: Buy Premium Car Interior Cleaning Wipes – Quick Shine, Dust Removal & Streak-Free (40 Wipes In 1 Box) online in Pakistan from ASM VEO. Car Interior Cleaning Wip
 Description: Car Interior Cleaning Wipes – Fast, streak-free cleaning for dashboards, leather, and plastic surfaces. Perfect for daily use.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SUPEN FAST Type C To 3.5mm Headphone Jack Charge Adapter Durable Quality Easy Connectivity (Random Color)
 Product ID: hhc-3753971
 SKU: hhc-3753971
@@ -7,11 +8,16 @@ Slug: supen-fast-type-c-to-3-5mm-headphone-jack-charge-adapter-durable-qualit-ca
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/ab9573ac8f16cca0663efd887ddb9f3a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/ab9573ac8f16cca0663efd887ddb9f3a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/10c755b065953c690762864fa8ab954c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/b2caa0c18228490c7120b880691b4545.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/025043525d8a94ba98d04b6420e8d480.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/6bd2ea25a8d42df12d94097db2047398.jpeg
 Meta Title: SUPEN FAST Type C To 3.5mm Headphone Jack Charge Adapter Durable Qua
 Meta Description: Buy SUPEN FAST Type C To 3.5mm Headphone Jack Charge Adapter Durable Quality Easy Connectivity (Random Color) online in Pakistan from ASM VEO. SUPEN FAST Type C
 Description: SUPEN FAST Type C To 3.5mm Headphone Jack Charge Adapter Provides Durable Quality Easy Connectivity Reliable Utility And Compact Design
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

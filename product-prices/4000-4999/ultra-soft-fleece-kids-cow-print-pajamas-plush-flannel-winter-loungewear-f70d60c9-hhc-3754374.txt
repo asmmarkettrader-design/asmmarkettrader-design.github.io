@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ultra-Soft Fleece Kids Cow Print Pajamas | Plush Flannel Winter Loungewear Set for Boys & Girls
 Product ID: hhc-3754374
 SKU: hhc-3754374
@@ -7,11 +8,16 @@ Slug: ultra-soft-fleece-kids-cow-print-pajamas-plush-flannel-winter-loungewea-f7
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/5696168cba501a4c0b8ad355302ca06c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/5696168cba501a4c0b8ad355302ca06c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/09abd3fce96877d454502525947a6d79.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/8245ecd5f5eb1012d5c3bfdf1ef75407.png
 Meta Title: Ultra-Soft Fleece Kids Cow Print Pajamas | Plush Flannel Winter Loun
 Meta Description: Buy Ultra-Soft Fleece Kids Cow Print Pajamas | Plush Flannel Winter Loungewear Set for Boys & Girls online in Pakistan from ASM VEO. The perfect blend of cozy w
 Description: The perfect blend of cozy warmth and adorable style! This unisex two-piece pajama set features a playful black and white cow print, crafted from ultra-soft, plush fleece material. Ideal for chilly nights, lounging at home, or fun sleepovers.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Multi Peeler – Ergonomic Fruit and Vegetable Peeler with Hanging Hook
 Product ID: hhc-3758353
 SKU: hhc-3758353
@@ -7,11 +8,16 @@ Slug: stainless-steel-multi-peeler-ergonomic-fruit-and-vegetable-peeler-with-bf0
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Stainless Steel Multi Peeler – Ergonomic Fruit and Vegetable Peeler
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/c0d3c5de4f84e4a9224fd4136e7e7c55.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/c0d3c5de4f84e4a9224fd4136e7e7c55.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/0c71e4cb0f0ce6ca09313dbf9d5bd1b4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/e791aa47b02f199179f8c4542c3e1357.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/834dc8cdff89c33f34c6938f59098d7e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/6ed91471ba22b569cd24ff82cfc36339.jpg
+Meta Title: Stainless Steel Multi Peeler – Ergonomic Fruit and Vegetable Peeler 
 Meta Description: Buy Stainless Steel Multi Peeler – Ergonomic Fruit and Vegetable Peeler with Hanging Hook online in Pakistan from ASM VEO. Make your kitchen prep quick and easy
 Description: Make your kitchen prep quick and easy with the Stainless Steel Multi Peeler. Featuring a sharp, specialized stainless steel blade, this manual tool effortlessly peels both fruits and vegetables for smooth and fast cooking preparation.
-Regular Price: 252
-Sale Price: 252
+Wholesale Price: 202
+Regular Price: 513
+Sale Price: 363
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

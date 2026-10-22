@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pc Saira Collection White Rose Lawn Suit Vol 907 Premium Quality Fabric Elegant Design Comfortable Stylish Practical Choice For Casual And Semi Formal Wear
 Product ID: hhc-3763966
 SKU: hhc-3763966
@@ -7,11 +8,16 @@ Slug: 3-pc-saira-collection-white-rose-lawn-suit-vol-907-premium-quality-fabr-77
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/60204aed642b0aaee9113fcadbb99bf1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/60204aed642b0aaee9113fcadbb99bf1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/aacecb6bf83868638385faad99dc92e1.jpg
 Meta Title: 3 Pc Saira Collection White Rose Lawn Suit Vol 907 Premium Quality F
 Meta Description: Buy 3 Pc Saira Collection White Rose Lawn Suit Vol 907 Premium Quality Fabric Elegant Design Comfortable Stylish Practical Choice For Casual And Semi Formal Wea
 Description: Saira Collection White Rose Lawn Suit Vol 907 Premium Quality Fabric Elegant Design Comfortable Stylish Practical Choice For Casual And Semi Formal Wear.
-Regular Price: 5043
-Sale Price: 5043
+Wholesale Price: 5043
+Regular Price: 8420
+Sale Price: 6736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

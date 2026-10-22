@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pcs Luxury Silk Nightwear Set with Lace Trim – Satin Sleepwear for Women Free Size
 Product ID: hhc-3759729
 SKU: hhc-3759729
@@ -7,11 +8,16 @@ Slug: 3-pcs-luxury-silk-nightwear-set-with-lace-trim-satin-sleepwear-for-wome-ea
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/5afa709e1af8f998c115c89421e1fac3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/5afa709e1af8f998c115c89421e1fac3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/5eff9be31da055267c9601611cc70de6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/4737b3d1693a9ccc3207198c3d91d762.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/c4e08051d32c0c0bdd1dd5a254055820.jpeg
 Meta Title: 3 Pcs Luxury Silk Nightwear Set with Lace Trim – Satin Sleepwear for
 Meta Description: Buy 3 Pcs Luxury Silk Nightwear Set with Lace Trim – Satin Sleepwear for Women Free Size online in Pakistan from ASM VEO. Feel elegant and comfortable with this
 Description: Feel elegant and comfortable with this 3-piece luxury silk nightwear set featuring soft satin fabric and delicate lace trim. Perfect for sleeping, lounging, bridal wear, and special nights.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

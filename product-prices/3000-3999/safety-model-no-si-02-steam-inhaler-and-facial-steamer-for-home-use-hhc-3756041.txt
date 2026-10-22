@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Safety Model No SI-02 Steam Inhaler And Facial Steamer For Home Use
 Product ID: hhc-3756041
 SKU: hhc-3756041
@@ -7,11 +8,16 @@ Slug: safety-model-no-si-02-steam-inhaler-and-facial-steamer-for-home-use-hhc-37
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Safety Model No SI-02 Steam Inhaler And Facial Steamer For Home Use
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/2d4c352f2f3131c29ce3dd7683712341.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/2d4c352f2f3131c29ce3dd7683712341.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/d79bd3a2d2428db8c5e14365b66bff2b.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/6837784b5aaeebd7f50666430316ce0a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/97971f8ef3edaff500878bb142f873c4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/d375448413631429b0f9763cf929eac5.webp
+Meta Title: Safety Model No SI-02 Steam Inhaler And Facial Steamer For Home Use 
 Meta Description: Buy Safety Model No SI-02 Steam Inhaler And Facial Steamer For Home Use online in Pakistan from ASM VEO. Safety Model No SI-02 Steam Inhaler And Facial Steamer
 Description: Safety Model No SI-02 Steam Inhaler And Facial Steamer Designed For Comfortable Home Use
-Regular Price: 3498
-Sale Price: 3498
+Wholesale Price: 3498
+Regular Price: 5910
+Sale Price: 4727
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

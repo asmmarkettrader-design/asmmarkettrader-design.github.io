@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heavy Duty Pad Lock | Desi Lock with 2 Keys | Strong Security for Doors, Cabinets & Home Safety
 Product ID: hhc-3755297
 SKU: hhc-3755297
@@ -7,11 +8,16 @@ Slug: heavy-duty-pad-lock-desi-lock-with-2-keys-strong-security-for-doors-cab-02
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/ddc5954c1e1b5d78554e2dbe9b7dfe84.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/ddc5954c1e1b5d78554e2dbe9b7dfe84.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/88903932601ba0800e4991dfd1aae006.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/fe69a6b039cecd29537f4301fa115ba9.jpeg
 Meta Title: Heavy Duty Pad Lock | Desi Lock with 2 Keys | Strong Security for Do
 Meta Description: Buy Heavy Duty Pad Lock | Desi Lock with 2 Keys | Strong Security for Doors, Cabinets & Home Safety online in Pakistan from ASM VEO. Heavy duty pad lock with 2
 Description: Heavy duty pad lock with 2 keys. Durable, reliable, and perfect for securing doors, cabinets, and property.
-Regular Price: 586
-Sale Price: 586
+Wholesale Price: 536
+Regular Price: 1050
+Sale Price: 837
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

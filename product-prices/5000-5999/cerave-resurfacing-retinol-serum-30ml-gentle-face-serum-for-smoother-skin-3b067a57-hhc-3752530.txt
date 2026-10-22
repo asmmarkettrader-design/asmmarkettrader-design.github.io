@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cerave Resurfacing Retinol Serum 30ml – Gentle Face Serum For Smoother Skin Texture, Reduces Post Acne Marks, And Restores Healthy Radiant Complexion
 Product ID: hhc-3752530
 SKU: hhc-3752530
@@ -7,11 +8,16 @@ Slug: cerave-resurfacing-retinol-serum-30ml-gentle-face-serum-for-smoother-sk-3b
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/b9aba694d76067b824b1105f1c4ab949.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/b9aba694d76067b824b1105f1c4ab949.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/949cb31da101e0e3e54f7bd2b1296c18.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/89062f0469acfeefe09f50c092c2cc05.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/109f53019177a7c7fcd6660a0fe557c5.png
 Meta Title: Cerave Resurfacing Retinol Serum 30ml – Gentle Face Serum For Smooth
 Meta Description: Buy Cerave Resurfacing Retinol Serum 30ml – Gentle Face Serum For Smoother Skin Texture, Reduces Post Acne Marks, And Restores Healthy Radiant Complexion online
 Description: Cerave Resurfacing Retinol Serum 30ml Helps Improve Skin Texture, Reduce Post Acne Marks, And Brighten Complexion With A Gentle Yet Effective Formula.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

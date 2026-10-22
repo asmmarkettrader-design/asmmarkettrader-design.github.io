@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Kaaba And Kalma Stickytiles Frames Providing Spiritual Design Elegant Look  Modern Appearance And Home Decoration
 Product ID: hhc-3755206
 SKU: hhc-3755206
@@ -7,11 +8,16 @@ Slug: 3pcs-kaaba-and-kalma-stickytiles-frames-providing-spiritual-design-eleg-a9
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/3b0ae5ca1b224b281e51284c4aca00e0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/3b0ae5ca1b224b281e51284c4aca00e0.jpeg
 Meta Title: 3pcs Kaaba And Kalma Stickytiles Frames Providing Spiritual Design E
 Meta Description: Buy 3pcs Kaaba And Kalma Stickytiles Frames Providing Spiritual Design Elegant Look Modern Appearance And Home Decoration online in Pakistan from ASM VEO. 3pcs
 Description: 3pcs Kaaba And Kalma Stickytiles Frames Offering Spiritual Design Elegant Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Child Anti Lost Wrist Strap Rope - Safety Accessory Designed For Child Protection And Daily Security Routine (Random Color)
 Product ID: hhc-3764261
 SKU: hhc-3764261
@@ -7,11 +8,16 @@ Slug: child-anti-lost-wrist-strap-rope-safety-accessory-designed-for-child-pr-64
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/5873c99fcb50c094985218e20189f1ed.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/5873c99fcb50c094985218e20189f1ed.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/5732314403c905b3b427e161c622c591.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/a50fff74c0039322eedbe443c5194019.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/ba47ca3a31fbc1b6feb93f645b503dc0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/d49eba08f63970afa6dded3c2cc27694.jpg
 Meta Title: Child Anti Lost Wrist Strap Rope - Safety Accessory Designed For Chi
 Meta Description: Buy Child Anti Lost Wrist Strap Rope - Safety Accessory Designed For Child Protection And Daily Security Routine (Random Color) online in Pakistan from ASM VEO.
 Description: The Child Anti Lost Wrist Strap Rope Is A Safety Accessory Formulated To Help Provide Child Protection And Daily Security Utility During Use.
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

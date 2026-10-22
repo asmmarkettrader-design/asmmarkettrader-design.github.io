@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Head & Neck Cap Beanies Combo | Woolen Winter Beanie with Neck Warmer Muffler for Men & Women – Warm, Cozy & Stylish
 Product ID: hhc-3753433
 SKU: hhc-3753433
@@ -7,11 +8,16 @@ Slug: head-neck-cap-beanies-combo-woolen-winter-beanie-with-neck-warmer-muffl-45
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/62d8317418092eb45abf943e0d81f118.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/62d8317418092eb45abf943e0d81f118.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/8e1f06e560990d02df1e247185408ec5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/d54d0bbbaae4e6d5936fc491430cc155.png
 Meta Title: Head & Neck Cap Beanies Combo | Woolen Winter Beanie with Neck Warme
 Meta Description: Buy Head & Neck Cap Beanies Combo | Woolen Winter Beanie with Neck Warmer Muffler for Men & Women – Warm, Cozy & Stylish online in Pakistan from ASM VEO. Stay w
 Description: Stay warm this winter with the woolen beanie and neck warmer combo — soft, cozy, and perfect for men and women.
-Regular Price: 909
-Sale Price: 909
+Wholesale Price: 859
+Regular Price: 1630
+Sale Price: 1306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

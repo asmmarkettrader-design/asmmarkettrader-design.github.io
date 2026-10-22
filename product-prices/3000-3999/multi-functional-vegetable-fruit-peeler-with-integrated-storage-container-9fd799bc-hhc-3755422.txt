@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi‑Functional Vegetable & Fruit Peeler | With Integrated Storage Container | Easy Kitchen Tool - 7 inches (Random Colour)
 Product ID: hhc-3755422
 SKU: hhc-3755422
@@ -7,11 +8,16 @@ Slug: multi-functional-vegetable-fruit-peeler-with-integrated-storage-contain-9f
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/2704307decf8363c6e4fb8ac59e73c1f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/2704307decf8363c6e4fb8ac59e73c1f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/8b513d6ecf240a63ee63f6d69778e3af.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/a68c12e50f3de9d6ff05aaec350de990.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/b57cd324fd3d14d48df2ddc88a75fbe7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/ef3a0fdb9cce385bfaaf329b3723a2e7.jpeg
 Meta Title: Multi‑Functional Vegetable & Fruit Peeler | With Integrated Storage
 Meta Description: Buy Multi‑Functional Vegetable & Fruit Peeler | With Integrated Storage Container | Easy Kitchen Tool - 7 inches (Random Colour) online in Pakistan from ASM VEO
 Description: Peeler with built‑in storage container. Multi‑functional design for peeling and collecting fruits & vegetables.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Emelie 2 in 1 Matte Pressed Powder
 Product ID: hhc-2236373
 SKU: hhc-2236373
@@ -7,11 +8,16 @@ Slug: emelie-2-in-1-matte-pressed-powder-hhc-2236373
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-153.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-153.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/51d669d836b0d4a469ad5c0cb6e4eb72.jpg_720x720q80.jpg_.webp
 Meta Title: Emelie 2 in 1 Matte Pressed Powder | Buy Online in Pakistan
 Meta Description: Buy Emelie 2 in 1 Matte Pressed Powder online in Pakistan from ASM VEO. 2 in 1 Matte Long Lasting Powder Pressed Powder Long Wear Waterproof Radiant Finish 100%
 Description: 2 in 1 Matte Long Lasting Powder Pressed Powder Long Wear Waterproof Radiant Finish 100% Original
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

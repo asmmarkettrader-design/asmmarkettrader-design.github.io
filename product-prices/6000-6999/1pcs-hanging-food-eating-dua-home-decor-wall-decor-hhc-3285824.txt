@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1Pcs Hanging Food eating Dua home decor, wall decor
 Product ID: hhc-3285824
 SKU: hhc-3285824
@@ -7,11 +8,16 @@ Slug: 1pcs-hanging-food-eating-dua-home-decor-wall-decor-hhc-3285824
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/7bbc3383-8300-42fa-abac-b338d51b6a31.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/7bbc3383-8300-42fa-abac-b338d51b6a31.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/0a86e4e3-df7d-4c17-8111-28cf58e6bbfc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/7b05ae79-f37a-45a2-ab13-fa0be21ea0af.jpeg
 Meta Title: 1Pcs Hanging Food eating Dua home decor, wall decor | Buy Online in
 Meta Description: Buy 1Pcs Hanging Food eating Dua home decor, wall decor online in Pakistan from ASM VEO. 8×4 inches■ High-Quality Printing.■ 2-3mm thick wooden back frame. Cash
 Description: 8×4 inches■ High-Quality Printing.■ 2-3mm thick wooden back frame.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

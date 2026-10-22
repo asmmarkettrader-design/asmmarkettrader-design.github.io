@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-In-1 Universal Cup Phone Drinks Holder Bicycle Adjustable Cell Phone Holder Water Bottle Multifunctional Universal Cup Holder
 Product ID: hhc-3760090
 SKU: hhc-3760090
@@ -7,11 +8,16 @@ Slug: 2-in-1-universal-cup-phone-drinks-holder-bicycle-adjustable-cell-phone-981
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/8f055ddaefca7d265fb42a206321cfd2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/8f055ddaefca7d265fb42a206321cfd2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/5456a480f3ccd0eb854bf33bd8346513.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/0b50661b9621a96b1bf1498e15ebfdae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/a9ca4acfe02f8c2c1733aed9f81e49ff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/a1cb3fc7207da0924f2354d2cf44bf80.jpeg
 Meta Title: 2-In-1 Universal Cup Phone Drinks Holder Bicycle Adjustable Cell Pho
 Meta Description: Buy 2-In-1 Universal Cup Phone Drinks Holder Bicycle Adjustable Cell Phone Holder Water Bottle Multifunctional Universal Cup Holder online in Pakistan from ASM
 Description: A highly convenient 2-in-1 multifunctional holder designed for bicycles, strollers, and motorcycles. It securely holds your water bottle or drink cup on one side while providing a dedicated, accessible slot for your smartphone on the other.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

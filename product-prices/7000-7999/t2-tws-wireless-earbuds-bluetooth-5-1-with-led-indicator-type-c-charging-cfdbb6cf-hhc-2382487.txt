@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: T2 TWS Wireless Earbuds Bluetooth 5.1 with LED Indicator, Type-C Charging Case, Noise Reduction & Long Battery Backup
 Product ID: hhc-2382487
 SKU: hhc-2382487
@@ -7,11 +8,16 @@ Slug: t2-tws-wireless-earbuds-bluetooth-5-1-with-led-indicator-type-c-chargin-cf
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-11.03.47-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-11.03.47-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-11.03.46-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-11.03.45-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-11.03.38-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/223768d7420749addce1ef1cd15c8cc1.jpeg
 Meta Title: T2 TWS Wireless Earbuds Bluetooth 5.1 with LED Indicator, Type-C Cha
 Meta Description: Buy T2 TWS Wireless Earbuds Bluetooth 5.1 with LED Indicator, Type-C Charging Case, Noise Reduction & Long Battery Backup online in Pakistan from ASM VEO. T2 TW
 Description: T2 TWS Wireless Earbuds come with Bluetooth 5.1, LED status indicator, and a powerful charging case for extended music time. Enjoy clear sound, stable connection, noise reduction, and comfortable lightweight design.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

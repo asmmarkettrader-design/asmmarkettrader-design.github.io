@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7.5% nHAP White Tooth Repair Hydroxyapatite Toothpaste – Advanced Enamel Whitening & Stain Reduction (120g)
 Product ID: hhc-3760298
 SKU: hhc-3760298
@@ -7,11 +8,16 @@ Slug: 7-5-nhap-white-tooth-repair-hydroxyapatite-toothpaste-advanced-enamel-w-fc
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/72ae551f9e81cf718ed148215abebc7d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/72ae551f9e81cf718ed148215abebc7d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/2a2b7b99b7e378d0befe8f311bd1d050.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/229c506d80fe6f46de82464c6a7947e2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/20eb93eec51fbc46942ee08473f34a25.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/350a90be4041578cefa49b7bd2a4b897.png
 Meta Title: 7.5% nHAP White Tooth Repair Hydroxyapatite Toothpaste – Advanced En
 Meta Description: Buy 7.5% nHAP White Tooth Repair Hydroxyapatite Toothpaste – Advanced Enamel Whitening & Stain Reduction (120g) online in Pakistan from ASM VEO. Restore your sm
 Description: Restore your smile's natural brilliance with the 7.5% nHAP White Tooth Repair Hydroxyapatite Toothpaste.
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

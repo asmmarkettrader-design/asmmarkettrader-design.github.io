@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen All-Purpose Stain Remover Cleaning Powder - 250g
 Product ID: hhc-825769
 SKU: hhc-825769
@@ -7,11 +8,16 @@ Slug: kitchen-all-purpose-stain-remover-cleaning-powder-250g-hhc-825769
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-16-at-3.30.17-PM-1-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-16-at-3.30.17-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-16-at-3.30.17-PM.jpeg
 Meta Title: Kitchen All-Purpose Stain Remover Cleaning Powder - 250g | Buy Onlin
 Meta Description: Buy Kitchen All-Purpose Stain Remover Cleaning Powder - 250g online in Pakistan from ASM VEO. Kitchen All-Purpose Stain Remover Cleaning Powder,Powerful All Pur
 Description: Kitchen All-Purpose Stain Remover Cleaning Powder,Powerful All Purpose Cleaning Powder,Powder Cleanser Original, Household Cleaning Powder Weight: 250 gm
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

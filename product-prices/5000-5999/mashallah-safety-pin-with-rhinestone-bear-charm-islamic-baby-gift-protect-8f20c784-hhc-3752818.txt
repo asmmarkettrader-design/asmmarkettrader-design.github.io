@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mashallah Safety Pin with Rhinestone Bear Charm – Islamic Baby Gift & Protection Accessory
 Product ID: hhc-3752818
 SKU: hhc-3752818
@@ -7,11 +8,16 @@ Slug: mashallah-safety-pin-with-rhinestone-bear-charm-islamic-baby-gift-prote-8f
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: Mashallah Safety Pin with Rhinestone Bear Charm – Islamic Baby Gift
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/3d2bad6b912d7db67fd012d7ea32d0ad.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/3d2bad6b912d7db67fd012d7ea32d0ad.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/8a4fd3e37576fce1748f97090c6d82b6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/8d537a1fffa3b5f9a93a5e74d78e161b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/b4a8766322c41880a325ef1726927e9a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/4bd9369e605a9941b9df10c94828cc5f.jpeg
+Meta Title: Mashallah Safety Pin with Rhinestone Bear Charm – Islamic Baby Gift 
 Meta Description: Buy Mashallah Safety Pin with Rhinestone Bear Charm – Islamic Baby Gift & Protection Accessory online in Pakistan from ASM VEO. Elegant gold-toned safety pin fe
 Description: Elegant gold-toned safety pin featuring sparkling rhinestones, a crowned bear charm, and the Arabic "Mashallah" inscription. A perfect gift for newborns, offering both style and spiritual protection.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

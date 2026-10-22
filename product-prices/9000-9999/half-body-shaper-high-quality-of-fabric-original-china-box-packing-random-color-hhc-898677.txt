@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Half Body Shaper High Quality of Fabric (Original China ) Box Packing (random color)
 Product ID: hhc-898677
 SKU: hhc-898677
@@ -7,11 +8,16 @@ Slug: half-body-shaper-high-quality-of-fabric-original-china-box-packing-random-
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-05-at-6.51.29-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-05-at-6.51.29-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-05-at-6.51.30-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-05-at-6.51.31-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-05-at-6.51.31-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-05-at-6.51.32-PM-1.jpeg
 Meta Title: Half Body Shaper High Quality of Fabric (Original China ) Box Packin
 Meta Description: Buy Half Body Shaper High Quality of Fabric (Original China ) Box Packing (random color) online in Pakistan from ASM VEO. product details free size Original Chi
 Description: product details free size Original China High Quality of Fabric [video width="480" height="832" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Video-2024-01-25-at-11.00.17-AM-online-video-cutter.com-1.mp4"][/video]
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

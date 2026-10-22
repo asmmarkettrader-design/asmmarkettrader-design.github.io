@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AUJ-939 Korean Fish Tail Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women
 Product ID: hhc-3754091
 SKU: hhc-3754091
@@ -7,11 +8,16 @@ Slug: auj-939-korean-fish-tail-earrings-elegant-fashion-jewellery-stylish-acc-12
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/f348f57d482f5b7d875f5afda8f6b519.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/f348f57d482f5b7d875f5afda8f6b519.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/3a4b814e2a92915e48325662bb5c3ddd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/299d1b074569c56d9538b92d8e2ef081.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/2ce32cecbfeb630a8c460b556b3c0b44.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/413d37ed237fde77ce418ab5e7af888c.jpeg
 Meta Title: AUJ-939 Korean Fish Tail Earrings – Elegant Fashion Jewellery, Styli
 Meta Description: Buy AUJ-939 Korean Fish Tail Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women online in Pakistan from ASM VEO. AUJ-939 Korean fish tail earring
 Description: AUJ-939 Korean fish tail earrings, stylish design for women, perfect for fashion and daily wear.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

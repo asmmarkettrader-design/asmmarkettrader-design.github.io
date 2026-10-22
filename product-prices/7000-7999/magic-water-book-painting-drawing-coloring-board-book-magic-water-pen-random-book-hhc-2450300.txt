@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magic Water Book Painting Drawing Coloring Board Book Magic Water Pen (random book )
 Product ID: hhc-2450300
 SKU: hhc-2450300
@@ -7,11 +8,16 @@ Slug: magic-water-book-painting-drawing-coloring-board-book-magic-water-pen-r-26
 Category: Books & Stationery
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/a473657c-8bcd-4a58-a06d-ef41803bc226.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/a473657c-8bcd-4a58-a06d-ef41803bc226.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/2c9e6036-05f1-4532-ad6f-36cee4b822a9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-03-25-at-3.48.31-AM-1.jpeg
 Meta Title: Magic Water Book Painting Drawing Coloring Board Book Magic Water Pe
 Meta Description: Buy Magic Water Book Painting Drawing Coloring Board Book Magic Water Pen (random book ) online in Pakistan from ASM VEO. Magic Water Book Painting Drawing Colo
 Description: Magic Water Book Painting Drawing Coloring Board Book Magic Water Pen (random book )
-Regular Price: 214
-Sale Price: 214
+Wholesale Price: 164
+Regular Price: 456
+Sale Price: 306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

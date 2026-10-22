@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Instant Hair Color Dye Comb Stick Root Touch-Up Cover Gray Hair Long Lasting 20g
 Product ID: hhc-3761459
 SKU: hhc-3761459
@@ -7,11 +8,16 @@ Slug: instant-hair-color-dye-comb-stick-root-touch-up-cover-gray-hair-long-lasti
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/476874f8ee809b4d4769accffdf44751.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/476874f8ee809b4d4769accffdf44751.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/0133404c7809bf7226e005238091aaa9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/ebd0513175efa60f5ef12bb91299dc64.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/3d8f22ec89ca4bfa0247684b46fddd95.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/bfe3854bacef6eb1f28d50004e594f26.jpeg
 Meta Title: Instant Hair Color Dye Comb Stick Root Touch-Up Cover Gray Hair Long
 Meta Description: Buy Instant Hair Color Dye Comb Stick Root Touch-Up Cover Gray Hair Long Lasting 20g online in Pakistan from ASM VEO. Refresh your look instantly with the Hair
 Description: Refresh your look instantly with the Hair Color Dye Comb Stick. Designed for quick root touch-ups and gray hair coverage, this easy-to-use comb stick provides smooth, natural-looking color in just a few strokes.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: metal Body - Vintage T9 Trimmer and Hair Clipper Cutting Machine For Men
 Product ID: hhc-3201793
 SKU: hhc-3201793
@@ -7,11 +8,16 @@ Slug: metal-body-vintage-t9-trimmer-and-hair-clipper-cutting-machine-for-men-hhc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-20-at-10.34.55-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-20-at-10.34.55-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-20-at-10.34.54-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-20-at-10.34.52-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-20-at-10.34.51-AM.jpeg
 Meta Title: metal Body - Vintage T9 Trimmer and Hair Clipper Cutting Machine For
 Meta Description: Buy metal Body - Vintage T9 Trimmer and Hair Clipper Cutting Machine For Men online in Pakistan from ASM VEO. T9 Professional Vintage Hair Trimmer Cash on Deliv
 Description: T9 Professional Vintage Hair Trimmer
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

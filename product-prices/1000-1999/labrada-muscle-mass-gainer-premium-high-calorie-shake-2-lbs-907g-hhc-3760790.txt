@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Labrada Muscle Mass Gainer Premium High-Calorie Shake – 2 LBS (907g)
 Product ID: hhc-3760790
 SKU: hhc-3760790
@@ -7,11 +8,16 @@ Slug: labrada-muscle-mass-gainer-premium-high-calorie-shake-2-lbs-907g-hhc-37607
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/5c7f087c4b1f05fcd2e2b6d01b5a3b4a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/5c7f087c4b1f05fcd2e2b6d01b5a3b4a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/490460c6665b3a916844900ded7fdcf4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/6cf932acd289be312fa7c488df17bd12.jpeg
 Meta Title: Labrada Muscle Mass Gainer Premium High-Calorie Shake – 2 LBS (907g)
 Meta Description: Buy Labrada Muscle Mass Gainer Premium High-Calorie Shake – 2 LBS (907g) online in Pakistan from ASM VEO. Force your muscles into rapid growth and overcome a st
 Description: Force your muscles into rapid growth and overcome a stubborn metabolism with Labrada Muscle Mass Gainer.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

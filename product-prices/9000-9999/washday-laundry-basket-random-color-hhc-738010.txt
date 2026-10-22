@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: washday laundry basket (random color)
 Product ID: hhc-738010
 SKU: hhc-738010
@@ -7,11 +8,16 @@ Slug: washday-laundry-basket-random-color-hhc-738010
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/8c194f53a5de9077dd63740d2e3f37e9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/8c194f53a5de9077dd63740d2e3f37e9.jpeg
 Meta Title: washday laundry basket (random color) | Buy Online in Pakistan
 Meta Description: Buy washday laundry basket (random color) online in Pakistan from ASM VEO. Product detailsThe folding design of the laundry basket is easy to use and storeHandl
 Description: Product detailsThe folding design of the laundry basket is easy to use and storeHandle: The handles is flexible, durable, and not easy to be damagedPurpose: Suitable for storing clothing, home textiles, toys, baby product and pet productMaterial: Made of EVA with lining cotton, durable and long service lifePractical: It has large capacity, saving space, and can be put in many placesSpecifications:Material: Material: EVA, Lining CottonSize: Length:44cm(17.32in), Wide:33cm(12.99in), High:53cm(20.87in)
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

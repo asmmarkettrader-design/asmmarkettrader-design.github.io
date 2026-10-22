@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Care Kit  A maintenance kit for your car to clean indoor and outdoor / Keep Your Car Gleaming and Fresh
 Product ID: hhc-2571089
 SKU: hhc-2571089
@@ -7,11 +8,16 @@ Slug: car-care-kit-a-maintenance-kit-for-your-car-to-clean-indoor-and-outdoor-97
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-5.01.49-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-5.01.49-AM-1.jpeg
 Meta Title: Car Care Kit A maintenance kit for your car to clean indoor and outd
 Meta Description: Buy Car Care Kit A maintenance kit for your car to clean indoor and outdoor / Keep Your Car Gleaming and Fresh online in Pakistan from ASM VEO. Car Care Kit: A
 Description: Car Care Kit: A maintenance kit for your car to clean indoor n outdoor 👌 Package includes: 3 in 1 Ceramic spray 100ml (For outside body) Car renovate cream (for leather/tyre/inside cleaning) Car interior Cleaning Wipes Micro fiber Cloth Brush for tyre cleaning Shining sponge [video width="1080" height="1920" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Video-2025-01-10-at-5.01.30-AM.mp4"][/video]
-Regular Price: 1742
-Sale Price: 1742
+Wholesale Price: 1742
+Regular Price: 3160
+Sale Price: 2532
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

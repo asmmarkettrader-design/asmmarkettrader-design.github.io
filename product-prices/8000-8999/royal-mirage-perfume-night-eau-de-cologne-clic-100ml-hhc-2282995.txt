@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Mirage Perfume Night Eau De Cologne Clic 100ml
 Product ID: hhc-2282995
 SKU: hhc-2282995
@@ -7,11 +8,16 @@ Slug: royal-mirage-perfume-night-eau-de-cologne-clic-100ml-hhc-2282995
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/16557981170824277.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/16557981170824277.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/16557981167716496.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/16557981158005528.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/16557981153315777.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-06-at-3.29.00-PM.jpeg
 Meta Title: Royal Mirage Perfume Night Eau De Cologne Clic 100ml | Buy Online in
 Meta Description: Buy Royal Mirage Perfume Night Eau De Cologne Clic 100ml online in Pakistan from ASM VEO. product detailsRoyal Mirage Perfume Night Eau De Cologne ClassicConven
 Description: product detailsRoyal Mirage Perfume Night Eau De Cologne ClassicConvenient spray bottle for easy applicationPerfect for formal events, nights out, or everyday wearItem Weight ; 100mlScent ; Refreshingtarget use body part ; neckitem form ; SPRAY
-Regular Price: 1379
-Sale Price: 1379
+Wholesale Price: 985
+Regular Price: 1860
+Sale Price: 1488
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

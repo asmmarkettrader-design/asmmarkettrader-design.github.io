@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ( Pack Of 6 ) Daisy Rose High Pigment Lipgloss
 Product ID: hhc-2319492
 SKU: hhc-2319492
@@ -7,11 +8,16 @@ Slug: pack-of-6-daisy-rose-high-pigment-lipgloss-hhc-2319492
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-14-at-11.53.13-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-14-at-11.53.13-PM-1.jpeg
 Meta Title: ( Pack Of 6 ) Daisy Rose High Pigment Lipgloss | Buy Online in Pakis
 Meta Description: Buy ( Pack Of 6 ) Daisy Rose High Pigment Lipgloss online in Pakistan from ASM VEO. &nbsp; 6 in 1 High Pigment Lipgloss Pack of 6 • Material: Liquid • Texture:
 Description: &nbsp; 6 in 1 High Pigment Lipgloss Pack of 6 • Material: Liquid • Texture: Glossy • Color: Red, Pink • Product Feature: Moisturizing, Smudge Proof • Package Includes: 6 x Lip Gloss
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

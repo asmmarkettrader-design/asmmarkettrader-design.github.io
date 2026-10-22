@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cold White Skin Cream | Premium Nourishing Body Lotion For Smooth & Radiant Skin | 100g
 Product ID: hhc-3758127
 SKU: hhc-3758127
@@ -7,11 +8,16 @@ Slug: cold-white-skin-cream-premium-nourishing-body-lotion-for-smooth-radiant-56
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/b131d2c807f1f6d8db36cff7f9d37c33.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/b131d2c807f1f6d8db36cff7f9d37c33.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/773adb611e81041d3dbaafd7fd227000.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/33f5b81acbc16ad19e668467cc9bf032.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/55578caad21710d83b02f9b892eb5b73.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/9f7032f40d8460e1c83164c98fb5d8b4.jpg
 Meta Title: Cold White Skin Cream | Premium Nourishing Body Lotion For Smooth &
 Meta Description: Buy Cold White Skin Cream | Premium Nourishing Body Lotion For Smooth & Radiant Skin | 100g online in Pakistan from ASM VEO. Hydrating And Nourishing Body Lotio
 Description: Hydrating And Nourishing Body Lotion With Niacinamide, Carbomer, And Xanthan Gum For Healthy-Looking Skin
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

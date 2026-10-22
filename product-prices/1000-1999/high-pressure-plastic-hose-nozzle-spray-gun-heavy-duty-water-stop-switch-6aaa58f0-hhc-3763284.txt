@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High-Pressure Plastic Hose Nozzle Spray Gun - Heavy Duty Water Stop Switch Jet Nozzle
 Product ID: hhc-3763284
 SKU: hhc-3763284
@@ -7,11 +8,16 @@ Slug: high-pressure-plastic-hose-nozzle-spray-gun-heavy-duty-water-stop-switc-6a
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: High-Pressure Plastic Hose Nozzle Spray Gun - Heavy Duty Water Stop
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/bd74e317cb06101a79b5aab6736c6bef.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/bd74e317cb06101a79b5aab6736c6bef.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/a599bb3696ce289b348b11bffd0cf2a2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/7f0cd696e4efb9a93302b6e1281fcaa1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/c647a3eedbcf3a8114987c7f9c2e0190.jpeg
+Meta Title: High-Pressure Plastic Hose Nozzle Spray Gun - Heavy Duty Water Stop 
 Meta Description: Buy High-Pressure Plastic Hose Nozzle Spray Gun - Heavy Duty Water Stop Switch Jet Nozzle online in Pakistan from ASM VEO. The High-Pressure Plastic Hose Nozzle
 Description: The High-Pressure Plastic Hose Nozzle Spray Gun - Heavy Duty Water Stop Switch Jet Nozzle Is A Tool Product Formulated To Help Provide Watering And Daily Maintenance Utility During Use.
-Regular Price: 284
-Sale Price: 284
+Wholesale Price: 234
+Regular Price: 561
+Sale Price: 411
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Scale - High Precision Digital Electronic Food Weight Measurement Device Compact Portable Cooking Baking Scale Balance Tool
 Product ID: hhc-3761627
 SKU: hhc-3761627
@@ -7,11 +8,16 @@ Slug: kitchen-scale-high-precision-digital-electronic-food-weight-measurement-37
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/ee0617207039ccc5f58c73962955f800.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/ee0617207039ccc5f58c73962955f800.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/2db16373e9860fba2367ea123eb7f245.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/d528bea65afeb6371b51f5181d9979f3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/d1c61f17f2f2fb28448bdaaa7518f450.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/828d8e9cf66b75d13972c1c532efafc4.jpeg
 Meta Title: Kitchen Scale - High Precision Digital Electronic Food Weight Measur
 Meta Description: Buy Kitchen Scale - High Precision Digital Electronic Food Weight Measurement Device Compact Portable Cooking Baking Scale Balance Tool online in Pakistan from
 Description: A High Precision Digital Kitchen Scale Designed For Accurate Weight Measurement Of Food Cooking Ingredients And Reliable Baking Portion Sizes.
-Regular Price: 1007
-Sale Price: 1007
+Wholesale Price: 957
+Regular Price: 1810
+Sale Price: 1448
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 6 Nude shades bullet lipstick
 Product ID: hhc-2111408
 SKU: hhc-2111408
@@ -7,11 +8,16 @@ Slug: pack-of-6-nude-shades-bullet-lipstick-hhc-2111408
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.51.51-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.51.51-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.51.51-PM.jpeg
 Meta Title: Pack of 6 Nude shades bullet lipstick | Buy Online in Pakistan
 Meta Description: Buy Pack of 6 Nude shades bullet lipstick online in Pakistan from ASM VEO. Nude shades bullet lipstick • Material: Cream • Product Feature: Matte Finish • Packa
 Description: Nude shades bullet lipstick • Material: Cream • Product Feature: Matte Finish • Package Includes: 6 x Lipstick • Note: Before using any new cosmetic product, perform a patch test on a small skin area. Verify ingredients for allergies and follow package warnings and directions. &nbsp;
-Regular Price: 1134
-Sale Price: 1134
+Wholesale Price: 1084
+Regular Price: 2000
+Sale Price: 1599
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

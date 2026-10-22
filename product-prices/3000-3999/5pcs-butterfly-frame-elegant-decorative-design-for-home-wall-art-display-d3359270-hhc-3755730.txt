@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5pcs Butterfly Frame Elegant Decorative Design For Home Wall Art Display And Stylish Interior Decoration
 Product ID: hhc-3755730
 SKU: hhc-3755730
@@ -7,11 +8,16 @@ Slug: 5pcs-butterfly-frame-elegant-decorative-design-for-home-wall-art-displa-d3
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/21148936a21130e0aa0ffb9d7a6f039f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/21148936a21130e0aa0ffb9d7a6f039f.jpeg
 Meta Title: 5pcs Butterfly Frame Elegant Decorative Design For Home Wall Art Dis
 Meta Description: Buy 5pcs Butterfly Frame Elegant Decorative Design For Home Wall Art Display And Stylish Interior Decoration online in Pakistan from ASM VEO. 5pcs Butterfly Fra
 Description: 5pcs Butterfly Frame Provides Elegant Decorative Design For Stylish Home And Wall Art Display
-Regular Price: 965
-Sale Price: 965
+Wholesale Price: 915
+Regular Price: 1730
+Sale Price: 1387
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

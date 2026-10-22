@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 in 1 Makeup Deal Make-up +Makeup Fixer  +5 in 1 lipstick + LipPencil 2 Eyeliner
 Product ID: hhc-2731420
 SKU: hhc-2731420
@@ -7,11 +8,16 @@ Slug: 10-in-1-makeup-deal-make-up-makeup-fixer-5-in-1-lipstick-lippencil-2-eyeli
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2024-10-11-at-4.37.18-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2024-10-11-at-4.37.18-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/huda-beauty-5-in-1lipstick-4-600x600-1.jpg
 Meta Title: 10 in 1 Makeup Deal Make-up +Makeup Fixer +5 in 1 lipstick + LipPenc
 Meta Description: Buy 10 in 1 Makeup Deal Make-up +Makeup Fixer +5 in 1 lipstick + LipPencil 2 Eyeliner online in Pakistan from ASM VEO. 10 in 1 Makeup Deal DetailsMakeup Fixer5
 Description: 10 in 1 Makeup Deal DetailsMakeup Fixer5 in 1 lipstickLipPencil 2EyelinerCake linerLose powderLipglossBene TintTV Stick
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

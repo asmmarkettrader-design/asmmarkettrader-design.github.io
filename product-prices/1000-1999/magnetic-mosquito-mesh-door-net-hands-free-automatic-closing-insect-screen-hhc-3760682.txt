@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magnetic Mosquito Mesh Door Net – Hands-Free Automatic Closing Insect Screen
 Product ID: hhc-3760682
 SKU: hhc-3760682
@@ -7,11 +8,16 @@ Slug: magnetic-mosquito-mesh-door-net-hands-free-automatic-closing-insect-screen
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/bfa14be4040618d9bc970e21274e0d00.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/bfa14be4040618d9bc970e21274e0d00.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/3a521444fda418f6d2341bf33594ff37.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/46a67beb7fc4f7016825c81dcd5e10ac.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/08dc2c8ff91cb1c67e377044507b957d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/e9e9ce44a51323f3be1beb8563a1804a.jpg
 Meta Title: Magnetic Mosquito Mesh Door Net – Hands-Free Automatic Closing Insec
 Meta Description: Buy Magnetic Mosquito Mesh Door Net – Hands-Free Automatic Closing Insect Screen online in Pakistan from ASM VEO. Keep annoying bugs out while letting fresh air
 Description: Keep annoying bugs out while letting fresh air in with this Magnetic Mosquito Mesh Door Net.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

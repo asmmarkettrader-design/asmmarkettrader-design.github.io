@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Airpods Pro 2 And Airpods Pro Cases - Electronic Accessory Designed For Device Protection And Portable Storage Routine (Random Color)
 Product ID: hhc-3762498
 SKU: hhc-3762498
@@ -7,11 +8,16 @@ Slug: airpods-pro-2-and-airpods-pro-cases-electronic-accessory-designed-for-d-5c
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
-Meta Title: Airpods Pro 2 And Airpods Pro Cases - Electronic Accessory Designed
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/ccd15ffa61276fd40d3426039db5c125.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/ccd15ffa61276fd40d3426039db5c125.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/38a6ba218d8c8b4fe7ce760e30d4545c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/ef1537ccf203f4951114edccf8ff00b0.png
+Meta Title: Airpods Pro 2 And Airpods Pro Cases - Electronic Accessory Designed 
 Meta Description: Buy Airpods Pro 2 And Airpods Pro Cases - Electronic Accessory Designed For Device Protection And Portable Storage Routine (Random Color) online in Pakistan fro
 Description: The Airpods Pro 2 And Airpods Pro Cases Is An Electronic Accessory Formulated To Help Provide Device Protection And Portable Storage During Daily Use.
-Regular Price: 424
-Sale Price: 424
+Wholesale Price: 374
+Regular Price: 780
+Sale Price: 621
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

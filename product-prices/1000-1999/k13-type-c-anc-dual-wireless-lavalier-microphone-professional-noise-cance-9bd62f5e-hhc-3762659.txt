@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: K13 Type-C ANC Dual Wireless Lavalier Microphone Professional Noise Cancelling Clip-On Mic Charging Case Video Recording
 Product ID: hhc-3762659
 SKU: hhc-3762659
@@ -7,11 +8,16 @@ Slug: k13-type-c-anc-dual-wireless-lavalier-microphone-professional-noise-can-9b
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: K13 Type-C ANC Dual Wireless Lavalier Microphone Professional Noise
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/863c389d1da4747e46018fbd7d9478d4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/863c389d1da4747e46018fbd7d9478d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/16157d7cd3f2c66ad9b282d06672d996.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/9658f59551b6f0126b40535f1047b9d6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/a90bbe5a31dfc80dc7c476d5849f83d6.jpeg
+Meta Title: K13 Type-C ANC Dual Wireless Lavalier Microphone Professional Noise 
 Meta Description: Buy K13 Type-C ANC Dual Wireless Lavalier Microphone Professional Noise Cancelling Clip-On Mic Charging Case Video Recording online in Pakistan from ASM VEO. Th
 Description: The K13 Type-C ANC Dual Wireless Lavalier Microphone Professional Noise Cancelling Clip-On Mic Charging Case Video Recording Is An Electronic Accessory Formulated To Help Provide Audio Recording And Noise Cancellation During Daily Use.
-Regular Price: 2584
-Sale Price: 2584
+Wholesale Price: 2584
+Regular Price: 4580
+Sale Price: 3668
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

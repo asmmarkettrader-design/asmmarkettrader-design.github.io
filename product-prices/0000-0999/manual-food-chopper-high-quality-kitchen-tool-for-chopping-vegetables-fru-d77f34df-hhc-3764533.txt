@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Manual Food Chopper – High Quality Kitchen Tool for Chopping Vegetables, Fruits, Herbs & Other Ingredients
 Product ID: hhc-3764533
 SKU: hhc-3764533
@@ -7,11 +8,16 @@ Slug: manual-food-chopper-high-quality-kitchen-tool-for-chopping-vegetables-f-d7
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/285b0c1a9fc1e385e7f2aa2fc2ce0ba3.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/285b0c1a9fc1e385e7f2aa2fc2ce0ba3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/368aed44ea65bc3286c5e3b43f8b1b17.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/df5c04c2754fb96d53226110f2756ed0.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/21e8fba441afce7fc47233938dc17fcb.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/61a5f37f37bccf5811f300f4c70202fe.jpg
 Meta Title: Manual Food Chopper – High Quality Kitchen Tool for Chopping Vegetab
 Meta Description: Buy Manual Food Chopper – High Quality Kitchen Tool for Chopping Vegetables, Fruits, Herbs & Other Ingredients online in Pakistan from ASM VEO. Manual Food Chop
 Description: Manual Food Chopper designed for convenient chopping and food preparation. A practical kitchen tool for chopping vegetables, fruits, herbs, and other ingredients.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

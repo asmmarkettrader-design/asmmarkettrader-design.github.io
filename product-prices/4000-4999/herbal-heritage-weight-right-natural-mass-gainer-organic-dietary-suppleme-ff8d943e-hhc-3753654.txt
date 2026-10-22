@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Herbal Heritage WEIGHT-RIGHT Natural Mass Gainer – Organic Dietary Supplement for Healthy Weight Gain (100g)
 Product ID: hhc-3753654
 SKU: hhc-3753654
@@ -7,11 +8,16 @@ Slug: herbal-heritage-weight-right-natural-mass-gainer-organic-dietary-supple-ff
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/c56c1db8ef51ca7a245fb90e8b48e247.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/c56c1db8ef51ca7a245fb90e8b48e247.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/cb6e82ef4adbb11f02fe3e626d759513.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/54329e175da6c03328f6372dc8cbdd0f.jpeg
 Meta Title: Herbal Heritage WEIGHT-RIGHT Natural Mass Gainer – Organic Dietary S
 Meta Description: Buy Herbal Heritage WEIGHT-RIGHT Natural Mass Gainer – Organic Dietary Supplement for Healthy Weight Gain (100g) online in Pakistan from ASM VEO. Boost your bod
 Description: Boost your body’s natural growth with Herbal Heritage WEIGHT-RIGHT, an all-natural organic mass gainer. This dietary supplement supports healthy weight gain and muscle development using herbal ingredients for safe, effective results.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood
 Product ID: hhc-3752796
 SKU: hhc-3752796
@@ -7,11 +8,16 @@ Slug: organic-flax-seeds-100-natural-gluten-free-non-gmo-superfood-hhc-3752796
 Category: Groceries
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/3acb429f26851e4c5b1dad786e0716ba.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/3acb429f26851e4c5b1dad786e0716ba.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/a66f5c9053a9d70f4f464a75cc54f24e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/ff945f99f75bcb4a101107ca79dbd756.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/37390886e419f3c4b591b8eb77dbbf04.jpeg
 Meta Title: Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood |
 Meta Description: Buy Organic Flax Seeds – 100% Natural, Gluten-Free & Non-GMO Superfood online in Pakistan from ASM VEO. Premium Organic Flax Seeds packed with omega-3, fiber, a
 Description: Premium Organic Flax Seeds packed with omega-3, fiber, and essential nutrients. 100% natural, vegan, gluten-free, and non-GMO — perfect for smoothies, salads, and healthy recipes.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

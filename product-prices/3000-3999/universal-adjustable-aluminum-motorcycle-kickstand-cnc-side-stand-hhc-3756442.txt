@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Adjustable Aluminum Motorcycle Kickstand – CNC Side Stand
 Product ID: hhc-3756442
 SKU: hhc-3756442
@@ -7,11 +8,16 @@ Slug: universal-adjustable-aluminum-motorcycle-kickstand-cnc-side-stand-hhc-3756
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
-Meta Title: Universal Adjustable Aluminum Motorcycle Kickstand – CNC Side Stand
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/6e91bffde73bc77ec476e0dd61770350.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/6e91bffde73bc77ec476e0dd61770350.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/70525e01df6928ec625ee4c2d2260436.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/2931f36ae7f5de3a0f8d4af539851fa8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/c58e0c4cdda379dceeeff27c3f86a8a5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/40f643a76367a9ca4c309028fd33e15c.jpeg
+Meta Title: Universal Adjustable Aluminum Motorcycle Kickstand – CNC Side Stand 
 Meta Description: Buy Universal Adjustable Aluminum Motorcycle Kickstand – CNC Side Stand online in Pakistan from ASM VEO. Durable and stylish CNC-machined aluminum kickstand for
 Description: Durable and stylish CNC-machined aluminum kickstand for motorcycles, featuring adjustable height and universal compatibility. Available in vibrant red, orange, and blue finishes.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

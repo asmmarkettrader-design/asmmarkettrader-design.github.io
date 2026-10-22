@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: TOY TRIBE F1 - 12 pcs Car set  Pull back Race cars for Kids (random design &amp; color)
 Product ID: hhc-1010547
 SKU: hhc-1010547
@@ -7,11 +8,16 @@ Slug: toy-tribe-f1-12-pcs-car-set-pull-back-race-cars-for-kids-random-design-amp
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-03-at-2.22.02-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-03-at-2.22.02-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-03-at-2.13.40-PM-1-600x800-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-03-at-2.13.40-PM-2-1-600x800-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-03-at-2.13.40-PM-3-600x450-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/f7d6c594-ba36-4811-a2d4-51538803750b_cleanup-1-1.png
 Meta Title: TOY TRIBE F1 - 12 pcs Car set Pull back Race cars for Kids (random d
 Meta Description: Buy TOY TRIBE F1 - 12 pcs Car set Pull back Race cars for Kids (random design &amp; color) online in Pakistan from ASM VEO. TOY TRIBE OFF road - 12 pcs Car set
 Description: TOY TRIBE OFF road - 12 pcs Car set Pull back Race cars for Kids Best Gift Size 7cm Pvc material metal look
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 RAF Coffee And Juice Electric Blender | Premium Quality Multifunctional Kitchen Blender For Smoothies, Juices, And Coffee | Powerful Motor & Durable Design
 Product ID: hhc-3752741
 SKU: hhc-3752741
@@ -7,11 +8,16 @@ Slug: 2-in-1-raf-coffee-and-juice-electric-blender-premium-quality-multifunct-23
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/f20806114754afe5ae8c61201e091315.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/f20806114754afe5ae8c61201e091315.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/aeba15116bd3b7109b9d8e84dfe997df.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/e52a815630cabb346ead029d3ef3e84b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/45c8c2526342baf866187b5918ad490c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/8064aea5ce7490f3344683317b60686f.jpg
 Meta Title: 2 in 1 RAF Coffee And Juice Electric Blender | Premium Quality Multi
 Meta Description: Buy 2 in 1 RAF Coffee And Juice Electric Blender | Premium Quality Multifunctional Kitchen Blender For Smoothies, Juices, And Coffee | Powerful Motor & Durable
 Description: RAF Coffee And Juice Electric Blender Offers Powerful Blending Performance For Smoothies, Juices, And Coffee With Premium Quality And Stylish Design.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

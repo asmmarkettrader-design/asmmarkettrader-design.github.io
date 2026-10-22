@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heart & Square Shape Fur Catcher for Washing Machine | Reusable Lint Remover Ball – Random Color Hair & Thread Filter Medium to large size
 Product ID: hhc-3753400
 SKU: hhc-3753400
@@ -7,11 +8,16 @@ Slug: heart-square-shape-fur-catcher-for-washing-machine-reusable-lint-remove-20
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/3c6090c5234e2811ebdadfafec837518.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/3c6090c5234e2811ebdadfafec837518.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/612a972f5b9a70e1cdfc9810b7a7e666.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/256c07130c996cc336b120b51780cec6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/e49e930d2be7e1ef13b25952229ecb66.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/b5c8491160576640cf9d07f7657a314b.jpeg
 Meta Title: Heart & Square Shape Fur Catcher for Washing Machine | Reusable Lint
 Meta Description: Buy Heart & Square Shape Fur Catcher for Washing Machine | Reusable Lint Remover Ball – Random Color Hair & Thread Filter Medium to large size online in Pakista
 Description: Reusable heart and square shape fur catcher removes lint, hair, and debris from clothes in the washing machine — random color.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

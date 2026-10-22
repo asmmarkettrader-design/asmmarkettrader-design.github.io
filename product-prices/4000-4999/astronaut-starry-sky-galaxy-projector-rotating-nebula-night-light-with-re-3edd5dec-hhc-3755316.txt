@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Astronaut Starry Sky Galaxy Projector Rotating Nebula Night Light with Remote Control & Timer for Kids Room & Home Decor ( random )
 Product ID: hhc-3755316
 SKU: hhc-3755316
@@ -7,11 +8,16 @@ Slug: astronaut-starry-sky-galaxy-projector-rotating-nebula-night-light-with-3ed
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/0514566de6cd730314263b5b6637692c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/0514566de6cd730314263b5b6637692c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/6d9eb13d059636ece0bb83ba4813f385.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/32c140e5f8543a2556986da210e57591.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/f260c1f3dc01020f84eed55219082800.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/d2b40468f9bb07080108146e058a7403.jpg
 Meta Title: Astronaut Starry Sky Galaxy Projector Rotating Nebula Night Light wi
 Meta Description: Buy Astronaut Starry Sky Galaxy Projector Rotating Nebula Night Light with Remote Control & Timer for Kids Room & Home Decor ( random ) online in Pakistan from
 Description: Transform any room into a breathtaking cosmic wonder with this Astronaut Galaxy Projector. Featuring vibrant nebula effects and twinkling stars, this 360° rotating night light creates a soothing, immersive atmosphere perfect for sleep, relaxation, or parties.
-Regular Price: 1576
-Sale Price: 1576
+Wholesale Price: 1576
+Regular Price: 2880
+Sale Price: 2308
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

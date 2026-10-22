@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 Islamic Wall Decor Kaaba Wall Art 8×11 (1pcs Size) Inches Abstract Allah Muhammed Art
 Product ID: hhc-3286152
 SKU: hhc-3286152
@@ -7,11 +8,16 @@ Slug: 2-islamic-wall-decor-kaaba-wall-art-8-11-1pcs-size-inches-abstract-alla-56
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/kaba.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/kaba.jpg
 Meta Title: 2 Islamic Wall Decor Kaaba Wall Art 8×11 (1pcs Size) Inches Abstract
 Meta Description: Buy 2 Islamic Wall Decor Kaaba Wall Art 8×11 (1pcs Size) Inches Abstract Allah Muhammed Art online in Pakistan from ASM VEO. Size : 8x11inches Wooden Material H
 Description: Size : 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Beautiful islamic calligraphy designs which will give your enterior a spiritual vibe. High quality Finishing [video width="472" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Video-2025-05-30-at-11.34.20-AM.mp4"][/video]
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

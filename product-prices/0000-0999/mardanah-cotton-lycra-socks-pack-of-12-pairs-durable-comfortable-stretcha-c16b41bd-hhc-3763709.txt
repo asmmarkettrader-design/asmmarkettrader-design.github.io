@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mardanah Cotton Lycra Socks Pack Of 12 Pairs Durable Comfortable Stretchable Breathable Best Quality Practical Choice For Daily Wear
 Product ID: hhc-3763709
 SKU: hhc-3763709
@@ -7,11 +8,16 @@ Slug: mardanah-cotton-lycra-socks-pack-of-12-pairs-durable-comfortable-stretc-c1
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/37f18c2afe8bbc600bf9bb9a73f60995.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/37f18c2afe8bbc600bf9bb9a73f60995.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/3e5958563e1a86bff0a30b5eb56b8d44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/555b6b6df4ff08695db62020e4847662.jpg
 Meta Title: Mardanah Cotton Lycra Socks Pack Of 12 Pairs Durable Comfortable Str
 Meta Description: Buy Mardanah Cotton Lycra Socks Pack Of 12 Pairs Durable Comfortable Stretchable Breathable Best Quality Practical Choice For Daily Wear online in Pakistan from
 Description: Mardanah Cotton Lycra Socks Pack Of 12 Pairs Durable Comfortable Stretchable Breathable Best Quality Practical Choice For Daily Wear.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

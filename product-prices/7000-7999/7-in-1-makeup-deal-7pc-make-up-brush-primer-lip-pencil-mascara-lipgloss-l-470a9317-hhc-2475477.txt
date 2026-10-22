@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 in 1 MakeUp Deal - 7pc Make-up Brush, Primer,  Lip pencil, Mascara, Lipgloss, LipPen, Liquid Foundation (Random)
 Product ID: hhc-2475477
 SKU: hhc-2475477
@@ -7,11 +8,16 @@ Slug: 7-in-1-makeup-deal-7pc-make-up-brush-primer-lip-pencil-mascara-lipgloss-47
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/images-4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/images-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/16a_afdde0fb-cb79-4ec0-9eb1-8f3ab1f878c7_1880x.jpeg
 Meta Title: 7 in 1 MakeUp Deal - 7pc Make-up Brush, Primer, Lip pencil, Mascara,
 Meta Description: Buy 7 in 1 MakeUp Deal - 7pc Make-up Brush, Primer, Lip pencil, Mascara, Lipgloss, LipPen, Liquid Foundation (Random) online in Pakistan from ASM VEO. Package i
 Description: Package include:Primer 7pc Make-up Brush Lip pencil Mascara Lipgloss LipPen Liquid Foundation (Random)
-Regular Price: 1441
-Sale Price: 1441
+Wholesale Price: 1391
+Regular Price: 2540
+Sale Price: 2035
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

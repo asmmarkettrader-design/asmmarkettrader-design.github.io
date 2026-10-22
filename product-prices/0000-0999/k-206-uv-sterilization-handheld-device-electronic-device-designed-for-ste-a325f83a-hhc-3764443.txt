@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: K 206 UV Sterilization Handheld Device - Electronic Device Designed For Sterilization And Daily Care Routine
 Product ID: hhc-3764443
 SKU: hhc-3764443
@@ -7,11 +8,16 @@ Slug: k-206-uv-sterilization-handheld-device-electronic-device-designed-for-s-a3
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: K 206 UV Sterilization Handheld Device - Electronic Device Designed
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/51ec1f8b201d3f07296b839b151b72e2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/51ec1f8b201d3f07296b839b151b72e2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/c77a90a875803ba089d6340a6102d741.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/4f1e01d165a6036dd4d560ae9b247b35.jpg
+Meta Title: K 206 UV Sterilization Handheld Device - Electronic Device Designed 
 Meta Description: Buy K 206 UV Sterilization Handheld Device - Electronic Device Designed For Sterilization And Daily Care Routine online in Pakistan from ASM VEO. The K 206 UV S
 Description: The K 206 UV Sterilization Handheld Device Is An Electronic Device Formulated To Help Provide Sterilization And Daily Care Utility During Use.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

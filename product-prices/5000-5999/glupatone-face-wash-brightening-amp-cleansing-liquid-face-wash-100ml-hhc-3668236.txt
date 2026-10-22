@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Glupatone Face Wash – Brightening &amp; Cleansing Liquid Face Wash, 100ml
 Product ID: hhc-3668236
 SKU: hhc-3668236
@@ -7,11 +8,16 @@ Slug: glupatone-face-wash-brightening-amp-cleansing-liquid-face-wash-100ml-hhc-3
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Glupatone Face Wash – Brightening &amp; Cleansing Liquid Face Wash,
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_60_fbabae7f118390d61162a6d1df767e09-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_60_fbabae7f118390d61162a6d1df767e09-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/imgi_61_af362ee31586b72b93d24211eab18fd1-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250822_154708-1.png
+Meta Title: Glupatone Face Wash – Brightening &amp; Cleansing Liquid Face Wash, 
 Meta Description: Buy Glupatone Face Wash – Brightening &amp; Cleansing Liquid Face Wash, 100ml online in Pakistan from ASM VEO. Glupatone Face Wash – Brightening &amp; Cleansing
 Description: Glupatone Face Wash – Brightening &amp; Cleansing Liquid Face Wash, 100mlKeep your skin fresh and glowing with Glupatone Face Wash (100ml). This gentle liquid formula deeply cleanses to remove dirt, excess oil, and impurities, leaving your skin clean, bright, and refreshed. Suitable for daily use, it helps maintain clear and healthy-looking skin, making it perfect for all skin types.Key Features:Effective Cleansing – Removes dirt, oil, and impuritiesBrightening Formula – Promotes a healthy and radiant glowLiquid Texture – Smooth and easy-to-use formulaDaily Use – Gentle on skin for everyday cleansing100ml Size – Convenient and travel-friendlyPackage Includes:1 x Glupatone Face Wash (100ml)Product original Picture
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Classic Men's Genuine Leather Bifold Wallet - Premium Slim Pocket Organizer with ID Window
 Product ID: hhc-3759960
 SKU: hhc-3759960
@@ -7,11 +8,16 @@ Slug: classic-men-s-genuine-leather-bifold-wallet-premium-slim-pocket-organiz-3d
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/635e32728dbace8b6d5dc810af88555f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/635e32728dbace8b6d5dc810af88555f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/b135bffb749c428758566a79f91316d3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/fb8cd0339aeceaba82e64358d906ed14.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/a56d91dddd2a4c9aa0f6e6401e1a385e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/589d99bf12e9a7ef001917db35a6ee4d.jpeg
 Meta Title: Classic Men's Genuine Leather Bifold Wallet - Premium Slim Pocket Or
 Meta Description: Buy Classic Men's Genuine Leather Bifold Wallet - Premium Slim Pocket Organizer with ID Window online in Pakistan from ASM VEO. A timeless and durable men's bif
 Description: A timeless and durable men's bifold wallet crafted from high-quality genuine leather. Designed with a slim profile and precision stitching, it features multiple card slots and a clear ID window for effortless daily organization.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

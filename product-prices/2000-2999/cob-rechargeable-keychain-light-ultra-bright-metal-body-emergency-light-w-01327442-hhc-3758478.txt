@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: COB Rechargeable Keychain Light – Ultra Bright Metal Body Emergency Light with Type-C Charging (With Cable)
 Product ID: hhc-3758478
 SKU: hhc-3758478
@@ -7,11 +8,16 @@ Slug: cob-rechargeable-keychain-light-ultra-bright-metal-body-emergency-light-01
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: COB Rechargeable Keychain Light – Ultra Bright Metal Body Emergency
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/81c28a301a848158fe1cba06693d1bbe.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/81c28a301a848158fe1cba06693d1bbe.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/0fd699c64a23e4af40510c78690748d8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/9c87fb6819ab7c0c18d51833c61d3e7b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/c807042897dd9cd04c4737ee3fbb4812.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/819b484e41376665d511741182d58bce.png
+Meta Title: COB Rechargeable Keychain Light – Ultra Bright Metal Body Emergency 
 Meta Description: Buy COB Rechargeable Keychain Light – Ultra Bright Metal Body Emergency Light with Type-C Charging (With Cable) online in Pakistan from ASM VEO. A compact and p
 Description: A compact and powerful COB Rechargeable Keychain Light featuring a durable metal body. This versatile tool works as a pocket-sized flashlight, bottle opener, and emergency light with modern Type-C fast charging.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

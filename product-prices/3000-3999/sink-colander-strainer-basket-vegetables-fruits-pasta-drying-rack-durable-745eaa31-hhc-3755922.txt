@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sink Colander Strainer Basket | Vegetables, Fruits, Pasta & Drying Rack | Durable Kitchen Tool
 Product ID: hhc-3755922
 SKU: hhc-3755922
@@ -7,11 +8,16 @@ Slug: sink-colander-strainer-basket-vegetables-fruits-pasta-drying-rack-durab-74
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/d9adbeaa4075c9cb1d716caf24c5b864.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/d9adbeaa4075c9cb1d716caf24c5b864.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/0956d407b798bec6b836ac28a644d0dc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/fd80957cb0a63bc09df2ff6654d28190.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/79f0e9edc8508e752091ae85304dae3c.jpeg
 Meta Title: Sink Colander Strainer Basket | Vegetables, Fruits, Pasta & Drying R
 Meta Description: Buy Sink Colander Strainer Basket | Vegetables, Fruits, Pasta & Drying Rack | Durable Kitchen Tool online in Pakistan from ASM VEO. Durable sink colander strain
 Description: Durable sink colander strainer basket with 5mm holes. Ideal for washing vegetables, fruits, pasta & drying dishes.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

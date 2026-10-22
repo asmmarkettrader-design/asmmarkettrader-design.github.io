@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pixi Collagen &amp; Retinol Serum
 Product ID: hhc-1949589
 SKU: hhc-1949589
@@ -7,11 +8,16 @@ Slug: pixi-collagen-amp-retinol-serum-hhc-1949589
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.22.11-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.22.11-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.22.11-PM.jpeg
 Meta Title: Pixi Collagen &amp; Retinol Serum | Buy Online in Pakistan
 Meta Description: Buy Pixi Collagen &amp; Retinol Serum online in Pakistan from ASM VEO. Pixi Collagen &amp; Retinol Serum &nbsp; Helps In: REMOVES PREVENTS ACNE MARKS BLEMISHES:
 Description: Pixi Collagen &amp; Retinol Serum &nbsp; Helps In: REMOVES PREVENTS ACNE MARKS BLEMISHES: High grade pure Vitamin B3 (Niacinamide) added in this serum is clinically proven to reduce acne marks Material: Liquid Weight: 30 ML &nbsp; Package Includes: 1 × Serum
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

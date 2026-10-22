@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Glow natural Glutathione Alpha Arbutin Skin Brightening Cream (50g)
 Product ID: hhc-2487880
 SKU: hhc-2487880
@@ -7,11 +8,16 @@ Slug: glow-natural-glutathione-alpha-arbutin-skin-brightening-cream-50g-hhc-2487
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Glow natural Glutathione Alpha Arbutin Skin Brightening Cream (50g)
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/TJM_6601_c653723a-e076-45e5-80bd-81b027e846f6.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/TJM_6601_c653723a-e076-45e5-80bd-81b027e846f6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/DSC_0427.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/TJM_7041.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-03-at-1.45.48-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-03-at-1.45.48-PM.jpeg
+Meta Title: Glow natural Glutathione Alpha Arbutin Skin Brightening Cream (50g) 
 Meta Description: Buy Glow natural Glutathione Alpha Arbutin Skin Brightening Cream (50g) online in Pakistan from ASM VEO. Glow natural Glutathione Alpha Arbutin Skin Brightening
 Description: Glow natural Glutathione Alpha Arbutin Skin Brightening Cream (50g)
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

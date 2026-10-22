@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: School Backpack for Daily Use – High Quality Durable Material with Multiple Pockets
 Product ID: hhc-3755733
 SKU: hhc-3755733
@@ -7,11 +8,16 @@ Slug: school-backpack-for-daily-use-high-quality-durable-material-with-multip-94
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/1b492a4b0eaecf1de769690e0e2a461a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/1b492a4b0eaecf1de769690e0e2a461a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/bc3c8038c535827673e71cefd89acd6e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/52e86590266444f4582679c3313e3344.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/dbfa3f85a0d34da814cf82bcdcfac78f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/32a336a77bc8ba74c636db63b89713fc.jpeg
 Meta Title: School Backpack for Daily Use – High Quality Durable Material with M
 Meta Description: Buy School Backpack for Daily Use – High Quality Durable Material with Multiple Pockets online in Pakistan from ASM VEO. Bright and stylish kids’ school backpac
 Description: Bright and stylish kids’ school backpack featuring multiple zip compartments, inner organizers, and a lightweight design — perfect for daily school use, travel, and tuition.
-Regular Price: 2726
-Sale Price: 2726
+Wholesale Price: 2726
+Regular Price: 4820
+Sale Price: 3860
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

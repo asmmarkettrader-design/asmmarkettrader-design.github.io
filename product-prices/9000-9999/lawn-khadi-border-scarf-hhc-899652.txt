@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lawn khadi border scarf
 Product ID: hhc-899652
 SKU: hhc-899652
@@ -7,11 +8,16 @@ Slug: lawn-khadi-border-scarf-hhc-899652
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-06-at-5.12.48-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-06-at-5.12.48-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-06-at-5.12.47-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-06-at-5.12.47-PM.jpeg
 Meta Title: Lawn khadi border scarf | Buy Online in Pakistan
 Meta Description: Buy Lawn khadi border scarf online in Pakistan from ASM VEO. Lawn khadi border scarf Cash on Delivery, Rs 180 standard delivery, and easy returns.
 Description: Lawn khadi border scarf
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Leakproof Replacement Lid Compatible with 40oz Tumblers | Random Color
 Product ID: hhc-3760040
 SKU: hhc-3760040
@@ -7,11 +8,16 @@ Slug: leakproof-replacement-lid-compatible-with-40oz-tumblers-random-color-hhc-3
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/c706cdf0958331a9b50695605fee28de.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/c706cdf0958331a9b50695605fee28de.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/c0a2942223cca567e43cf11862671409.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/6e6e96f6fdb011e011afd19bb5e74a66.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/a3f664f3eaaaefad66098a04750d8da8.jpeg
 Meta Title: Leakproof Replacement Lid Compatible with 40oz Tumblers | Random Col
 Meta Description: Buy Leakproof Replacement Lid Compatible with 40oz Tumblers | Random Color online in Pakistan from ASM VEO. Upgrade your favorite 40oz tumbler with this durable
 Description: Upgrade your favorite 40oz tumbler with this durable leakproof replacement lid. Designed for a secure fit, it helps prevent spills and keeps your drinks protected while on the go. Available in random colors.
-Regular Price: 622
-Sale Price: 622
+Wholesale Price: 572
+Regular Price: 1110
+Sale Price: 889
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

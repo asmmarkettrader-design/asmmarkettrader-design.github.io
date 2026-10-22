@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4 Pcs High Pigment Warda Beauty Little Smoke Mate Lipstick - Random Color
 Product ID: hhc-2474222
 SKU: hhc-2474222
@@ -7,11 +8,16 @@ Slug: 4-pcs-high-pigment-warda-beauty-little-smoke-mate-lipstick-random-color-hh
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: 4 Pcs High Pigment Warda Beauty Little Smoke Mate Lipstick - Random
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.18.01-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.18.01-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.18.01-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.18.00-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.18.00-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/1-6.jpg
+Meta Title: 4 Pcs High Pigment Warda Beauty Little Smoke Mate Lipstick - Random 
 Meta Description: Buy 4 Pcs High Pigment Warda Beauty Little Smoke Mate Lipstick - Random Color online in Pakistan from ASM VEO. Product description Pack of 4 Mate Lipstick High
 Description: Product description Pack of 4 Mate Lipstick High quality ingredients with silky shine color, can last for all day long. Smudge proof and convenient twist up format for deep stroke lipstick &amp; Gives a Matte finish look Portable size, easy to carry. Suitable for home use
-Regular Price: 755
-Sale Price: 755
+Wholesale Price: 705
+Regular Price: 1350
+Sale Price: 1082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

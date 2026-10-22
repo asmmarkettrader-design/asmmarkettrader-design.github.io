@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Eyelash Curler, Makeup Tool With Silicone Cushioned Curler Pad ,Creates Eye-Opening &amp; Lifted Lashes (random color)
 Product ID: hhc-1997479
 SKU: hhc-1997479
@@ -7,11 +8,16 @@ Slug: eyelash-curler-makeup-tool-with-silicone-cushioned-curler-pad-creates-e-92
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/61P6p9bB72L._AC_SL1500_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/61P6p9bB72L._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/51lFG16JAL._AC_SY300_SX300_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-12.43.55-PM-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-12.43.55-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-04-at-12.43.55-PM-1.jpeg
 Meta Title: Eyelash Curler, Makeup Tool With Silicone Cushioned Curler Pad ,Crea
 Meta Description: Buy Eyelash Curler, Makeup Tool With Silicone Cushioned Curler Pad ,Creates Eye-Opening &amp; Lifted Lashes (random color) online in Pakistan from ASM VEO. Desc
 Description: Description• Round angled cage designed to follow contours and curves on most eye shapes • D handle design helps keep curler in place as you curl making it the perfect tool for beginners learning to curl lashes for the first time. • Spring release open mechanism for faster and easier use • Bouncy pinch proof curl, perfect for beginners • 100% Silicone pad for a crease free curl
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

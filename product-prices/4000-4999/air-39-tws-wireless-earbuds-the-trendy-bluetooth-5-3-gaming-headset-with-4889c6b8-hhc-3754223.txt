@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Air 39 TWS Wireless Earbuds: The Trendy Bluetooth 5.3 Gaming Headset with Transparent Charging Case (random colour)
 Product ID: hhc-3754223
 SKU: hhc-3754223
@@ -7,11 +8,16 @@ Slug: air-39-tws-wireless-earbuds-the-trendy-bluetooth-5-3-gaming-headset-wit-48
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/a86c534012c05e03484a26c9c4bc5bad.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/a86c534012c05e03484a26c9c4bc5bad.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/bdd8496411969f850026fddcf9c5a8ec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/f1b82d0cbcc474265fd3cce22535a7ea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/4a931f1875a9cf615df214dde2df00ff.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/c4889f2bdf91e1c649458da957f67ba1.jpg
 Meta Title: Air 39 TWS Wireless Earbuds: The Trendy Bluetooth 5.3 Gaming Headset
 Meta Description: Buy Air 39 TWS Wireless Earbuds: The Trendy Bluetooth 5.3 Gaming Headset with Transparent Charging Case (random colour) online in Pakistan from ASM VEO. Experie
 Description: Experience the future of audio with the Air 39 TWS Wireless Earbuds. Featuring a trendy transparent charging case with a clear LED Display
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

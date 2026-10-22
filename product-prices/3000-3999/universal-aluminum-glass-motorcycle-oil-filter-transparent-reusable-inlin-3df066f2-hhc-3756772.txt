@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Aluminum Glass Motorcycle Oil Filter – Transparent Reusable Inline Oil Filter for Motorbikes (Random Color)
 Product ID: hhc-3756772
 SKU: hhc-3756772
@@ -7,11 +8,16 @@ Slug: universal-aluminum-glass-motorcycle-oil-filter-transparent-reusable-inl-3d
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/94fd6a9e3acad7b5a2bdbf768faf766b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/94fd6a9e3acad7b5a2bdbf768faf766b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/a49ac319ba06d244d45fb6921fae39f3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/750e5a022fd4607a9ef560860deb59f7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/cc922ba8123ae1d32d6205068035925c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/d96d095e21aa1eabf860c7521031bff5.jpg
 Meta Title: Universal Aluminum Glass Motorcycle Oil Filter – Transparent Reusabl
 Meta Description: Buy Universal Aluminum Glass Motorcycle Oil Filter – Transparent Reusable Inline Oil Filter for Motorbikes (Random Color) online in Pakistan from ASM VEO. Durab
 Description: Durable universal motorcycle oil filter made from aluminum alloy and transparent glass. Designed for easy oil flow monitoring and long-lasting filtration performance for most motorcycles.
-Regular Price: 643
-Sale Price: 643
+Wholesale Price: 593
+Regular Price: 1150
+Sale Price: 920
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

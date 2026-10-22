@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Mini Juicer – Portable Blender & Smoothie Maker with Built-In Straw | Compact Fruit Extractor for Travel & Home Use
 Product ID: hhc-3756652
 SKU: hhc-3756652
@@ -7,11 +8,16 @@ Slug: professional-mini-juicer-portable-blender-smoothie-maker-with-built-in-b55
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/9f4a07b964af645679bb8016be3071a6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/9f4a07b964af645679bb8016be3071a6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/4a26bb8b88320b787924d3d32e5f2ead.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/240a29074e67e8329b29763b3c07063b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/a0b12b3d2ac8b9b308f9cc2e878ace3e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/83ee25e736db95e06aa1399eff28e470.webp
 Meta Title: Professional Mini Juicer – Portable Blender & Smoothie Maker with Bu
 Meta Description: Buy Professional Mini Juicer – Portable Blender & Smoothie Maker with Built-In Straw | Compact Fruit Extractor for Travel & Home Use online in Pakistan from ASM
 Description: A compact and powerful mini juicer designed for fresh smoothies and juices anytime, anywhere. Features a built-in straw for easy drinking and a portable design perfect for travel, office, gym, and home use.
-Regular Price: 1342
-Sale Price: 1342
+Wholesale Price: 1292
+Regular Price: 2370
+Sale Price: 1895
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

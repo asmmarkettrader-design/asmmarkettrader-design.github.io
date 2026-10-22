@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BIOGENESISS KUTZ-6 Extreme Thermogenic Fat Burner – Advanced Metabolic Support & Energy Booster for Weight Management (60 Dietary Tablets)
 Product ID: hhc-3755057
 SKU: hhc-3755057
@@ -7,11 +8,16 @@ Slug: biogenesiss-kutz-6-extreme-thermogenic-fat-burner-advanced-metabolic-su-c6
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/ce0bcc60798f5682231c459ddd824339.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/ce0bcc60798f5682231c459ddd824339.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/17f801808221b95c626b1f05db30120d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/c0930cbf4133818163beace4c07dd9e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/e77ef70e9c8331db4c96ea4ef09024d5.jpeg
 Meta Title: BIOGENESISS KUTZ-6 Extreme Thermogenic Fat Burner – Advanced Metabol
 Meta Description: Buy BIOGENESISS KUTZ-6 Extreme Thermogenic Fat Burner – Advanced Metabolic Support & Energy Booster for Weight Management (60 Dietary Tablets) online in Pakista
 Description: Ignite your fitness journey with KUTZ-6 Fat Burner. Formulated by Biogenesiss, this advanced dietary supplement is designed to boost metabolism, enhance focus, and provide the sustained energy you need to crush your workouts and reach your weight management goals faster.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

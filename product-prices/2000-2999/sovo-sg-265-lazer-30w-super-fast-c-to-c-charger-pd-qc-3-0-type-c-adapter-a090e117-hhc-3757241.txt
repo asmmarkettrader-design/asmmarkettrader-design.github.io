@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SOVO SG-265 LAZER 30W Super Fast C to C Charger – PD & QC 3.0 Type-C Adapter with Type-C Cable
 Product ID: hhc-3757241
 SKU: hhc-3757241
@@ -7,11 +8,16 @@ Slug: sovo-sg-265-lazer-30w-super-fast-c-to-c-charger-pd-qc-3-0-type-c-adapte-a0
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/bcb49336671f34582d5f3f40df995977.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/bcb49336671f34582d5f3f40df995977.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/d0731d36e90385921eddab06de63cbb1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/1f1add6491b75f8c8ee6305ad56041d7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/dd1699856ac2a3f2d47260a9e87fc394.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/b201e75758ab9597f851ae538118c8a7.jpeg
 Meta Title: SOVO SG-265 LAZER 30W Super Fast C to C Charger – PD & QC 3.0 Type-C
 Meta Description: Buy SOVO SG-265 LAZER 30W Super Fast C to C Charger – PD & QC 3.0 Type-C Adapter with Type-C Cable online in Pakistan from ASM VEO. SOVO SG-265 LAZER 30W fast c
 Description: SOVO SG-265 LAZER 30W fast charger with Type-C to Type-C cable. Supports PD & QC 3.0 for fast, safe, and efficient charging of smartphones and other devices.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

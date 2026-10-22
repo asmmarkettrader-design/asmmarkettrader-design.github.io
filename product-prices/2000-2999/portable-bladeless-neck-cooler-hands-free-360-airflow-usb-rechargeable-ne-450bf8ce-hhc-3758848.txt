@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Bladeless Neck Cooler – Hands-Free 360° Airflow USB Rechargeable Neck Fan for Indoor & Outdoor Use ~ 1200 mAh
 Product ID: hhc-3758848
 SKU: hhc-3758848
@@ -7,11 +8,16 @@ Slug: portable-bladeless-neck-cooler-hands-free-360-airflow-usb-rechargeable-450
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/1b8ab53c2e9a1736e175c73c8aba7c6b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/1b8ab53c2e9a1736e175c73c8aba7c6b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/1b8ab53c2e9a1736e175c73c8aba7c6b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/4072213419904c1742dbaab4cd6f2c94.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/4190711f1f7aab559763bd37cb7a1700.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/cdce5b3ac022a283afb78344cd83bcdb.webp
 Meta Title: Portable Bladeless Neck Cooler – Hands-Free 360° Airflow USB Recharg
 Meta Description: Buy Portable Bladeless Neck Cooler – Hands-Free 360° Airflow USB Rechargeable Neck Fan for Indoor & Outdoor Use ~ 1200 mAh online in Pakistan from ASM VEO. Keep
 Description: Keep your cool anywhere with the Portable Bladeless Neck Cooler. This innovative, hands-free fan provides a steady breeze around your neck without the worry of hair getting caught. Featuring a lightweight design and USB recharging, it’s the ultimate summer companion for commuting, working, or exercis
-Regular Price: 1108
-Sale Price: 1108
+Wholesale Price: 1058
+Regular Price: 1950
+Sale Price: 1562
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

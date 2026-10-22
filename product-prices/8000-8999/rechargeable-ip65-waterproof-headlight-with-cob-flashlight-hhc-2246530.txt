@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Ip65 Waterproof Headlight With COB Flashlight
 Product ID: hhc-2246530
 SKU: hhc-2246530
@@ -7,11 +8,16 @@ Slug: rechargeable-ip65-waterproof-headlight-with-cob-flashlight-hhc-2246530
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-10-31-at-6.27.51-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-10-31-at-6.27.51-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-10-31-at-6.27.51-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-10-31-at-6.27.50-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-10-31-at-6.27.50-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-10-31-at-6.27.49-PM-1.jpeg
 Meta Title: Rechargeable Ip65 Waterproof Headlight With COB Flashlight | Buy Onl
 Meta Description: Buy Rechargeable Ip65 Waterproof Headlight With COB Flashlight online in Pakistan from ASM VEO. Rechargeable IP65 Waterproof Headlight with COB FlashlightBright
 Description: Rechargeable IP65 Waterproof Headlight with COB FlashlightBright, durable, and hands-free — this rechargeable headlight features a powerful COB LED for wide illumination and a focused beam option for distance lighting. With IP65 waterproof protection, it’s perfect for outdoor adventures, camping, hiking, and repair work in any weather. Comfortable adjustable strap and long-lasting rechargeable battery make it your reliable lighting companion.
-Regular Price: 590
-Sale Price: 590
+Wholesale Price: 540
+Regular Price: 1050
+Sale Price: 843
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

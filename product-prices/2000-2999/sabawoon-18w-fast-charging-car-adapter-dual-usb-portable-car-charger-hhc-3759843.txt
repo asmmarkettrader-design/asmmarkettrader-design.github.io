@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sabawoon 18W Fast Charging Car Adapter – Dual USB Portable Car Charger
 Product ID: hhc-3759843
 SKU: hhc-3759843
@@ -7,11 +8,16 @@ Slug: sabawoon-18w-fast-charging-car-adapter-dual-usb-portable-car-charger-hhc-3
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/2e5fceb536b5c87305acfcc06fd700e6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/2e5fceb536b5c87305acfcc06fd700e6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/4747c74f92af1c2f64e530d505407884.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/4545d3484ef9111415958c3da2581700.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/20/6f8987e5dc2e323f26881625b438e13d.jpeg
 Meta Title: Sabawoon 18W Fast Charging Car Adapter – Dual USB Portable Car Charg
 Meta Description: Buy Sabawoon 18W Fast Charging Car Adapter – Dual USB Portable Car Charger online in Pakistan from ASM VEO. Charge your devices on the go with the Sabawoon 18W
 Description: Charge your devices on the go with the Sabawoon 18W Car Adapter. Designed for fast and stable charging, this compact car charger supports multiple mobile devices and provides reliable performance for daily use. Built with normal quality material and an easy-to-use design for convenient travel chargin
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

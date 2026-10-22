@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood
 Product ID: hhc-3752797
 SKU: hhc-3752797
@@ -7,11 +8,16 @@ Slug: valam-naturals-chia-seeds-100-pure-clean-nutrient-rich-superfood-hhc-37527
 Category: Groceries
 Subcategory: Baking and Cooking
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/80721ad8ef29ebbfb289b83ff0676a6f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/80721ad8ef29ebbfb289b83ff0676a6f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/c075d9c437d8299b4e38df1ab9041333.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/090d235110265c4227d54324bb867fc1.jpeg
 Meta Title: Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfo
 Meta Description: Buy Valam Naturals Chia Seeds – 100% Pure, Clean & Nutrient-Rich Superfood online in Pakistan from ASM VEO. Fuel your day with Valam Naturals Chia Seeds—100% na
 Description: Fuel your day with Valam Naturals Chia Seeds—100% natural, neat, and clean superfood packed with fiber, protein, and omega-3s. Perfect for smoothies, salads, baking, and more.
-Regular Price: 705
-Sale Price: 705
+Wholesale Price: 655
+Regular Price: 1260
+Sale Price: 1010
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Calcium Lactate Gluconate BP/USP Grade 50g | High Purity Calcium Ingredient
 Product ID: hhc-3763964
 SKU: hhc-3763964
@@ -7,11 +8,16 @@ Slug: calcium-lactate-gluconate-bp-usp-grade-50g-high-purity-calcium-ingredient-
 Category: Chemicals & Raw Materials
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/d49068b27ea458dd83041e440a02fb3a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/d49068b27ea458dd83041e440a02fb3a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/d138fd227a2c9acad10f4ad0e054fbb8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/fe2f3106912cb9c1d6720f3d82e83ba2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/1f666d19c85e749552544d6adeb16b75.jpg
 Meta Title: Calcium Lactate Gluconate BP/USP Grade 50g | High Purity Calcium Ing
 Meta Description: Buy Calcium Lactate Gluconate BP/USP Grade 50g | High Purity Calcium Ingredient online in Pakistan from ASM VEO. Calcium Lactate Gluconate BP USP Grade Premium
 Description: Calcium Lactate Gluconate BP USP Grade Premium Quality Calcium Source Durable Reliable Practical Choice For Pharmaceutical And Nutritional Formulations.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

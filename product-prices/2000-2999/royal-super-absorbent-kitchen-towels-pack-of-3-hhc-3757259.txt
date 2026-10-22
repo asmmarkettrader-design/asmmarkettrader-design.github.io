@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Super Absorbent Kitchen Towels - Pack of 3
 Product ID: hhc-3757259
 SKU: hhc-3757259
@@ -7,11 +8,16 @@ Slug: royal-super-absorbent-kitchen-towels-pack-of-3-hhc-3757259
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/151ea64528c5e48de8059a660df7599f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/151ea64528c5e48de8059a660df7599f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/404a7fd56b6803c537f0de286ace924b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/c2c50d153c6c9612f6cd788f2f87a63f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/cb30f23f11b93899906c9a880d838a8e.png
 Meta Title: Royal Super Absorbent Kitchen Towels - Pack of 3 | Buy Online in Pak
 Meta Description: Buy Royal Super Absorbent Kitchen Towels - Pack of 3 online in Pakistan from ASM VEO. Upgrade your kitchen cleaning with the Royal Super Absorbent Kitchen Towel
 Description: Upgrade your kitchen cleaning with the Royal Super Absorbent Kitchen Towels (Pack of 3). Made from premium microfiber with a waffle weave texture, these towels quickly absorb water, oil, and spills while leaving surfaces streak-free. Soft yet durable, they are perfect for dishes, countertops, and
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

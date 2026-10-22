@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Niconi Men Enzyme De-Tan Pack for Face & Body – 180g
 Product ID: hhc-3764141
 SKU: hhc-3764141
@@ -7,11 +8,16 @@ Slug: niconi-men-enzyme-de-tan-pack-for-face-body-180g-hhc-3764141
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/ef2fad92826e6cba3dfa347ff4544cf2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/ef2fad92826e6cba3dfa347ff4544cf2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/225e6fb037168e3b5a61b738ee23c27d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/8d7f288a2248963c40d89f539824aaca.jpg
 Meta Title: Niconi Men Enzyme De-Tan Pack for Face & Body – 180g | Buy Online in
 Meta Description: Buy Niconi Men Enzyme De-Tan Pack for Face & Body – 180g online in Pakistan from ASM VEO. A 180g enzyme-infused de-tan pack formulated specifically for men's fa
 Description: A 180g enzyme-infused de-tan pack formulated specifically for men's face and body. Gently exfoliates dead skin cells, targets sun tan, and restores natural skin radiance and smooth texture.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

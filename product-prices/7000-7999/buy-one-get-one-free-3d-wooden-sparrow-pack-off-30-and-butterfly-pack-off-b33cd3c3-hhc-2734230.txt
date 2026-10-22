@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Buy One Get One Free 3D Wooden Sparrow ( Pack off 30 ) And Butterfly ( Pack off 30 ) Wooden Wall Decoration Items for Home, Bedrooms Inspire Kids and Look Decent
 Product ID: hhc-2734230
 SKU: hhc-2734230
@@ -7,11 +8,16 @@ Slug: buy-one-get-one-free-3d-wooden-sparrow-pack-off-30-and-butterfly-pack-o-b3
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-12-at-12.02.50-AM_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-12-at-12.02.50-AM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-12-at-12.02.49-AM-1_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-01-16-at-11.41.42-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-01-16-at-11.41.42-PM-1-1024x1003-1.jpeg
 Meta Title: Buy One Get One Free 3D Wooden Sparrow ( Pack off 30 ) And Butterfly
 Meta Description: Buy Buy One Get One Free 3D Wooden Sparrow ( Pack off 30 ) And Butterfly ( Pack off 30 ) Wooden Wall Decoration Items for Home, Bedrooms Inspire Kids and Look D
 Description: Buy One Get One Free 3D Wooden Sparrow ( Pack off 30 ) And Butterfly ( Pack off 30 ) Wooden Wall Decoration Items for Home, Bedrooms Inspire Kids and Look Decent Description: Material: Wooden Size different size of sparrow And butterfly like 3 inch 2 inch 1.5 inch Thickness 3mm wooden Buy One Sparrow ( Pack Off 30 ) &amp; Get One Butterfly ( Pack Off 30 ) = Total 60pcs
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

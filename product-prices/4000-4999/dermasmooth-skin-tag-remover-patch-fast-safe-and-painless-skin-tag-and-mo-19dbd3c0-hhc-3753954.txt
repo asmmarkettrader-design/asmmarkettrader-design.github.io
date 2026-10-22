@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DermaSmooth Skin Tag Remover Patch – Fast, Safe, And Painless Skin Tag And Mole Removal Solution With No Scarring Or Pigmentation
 Product ID: hhc-3753954
 SKU: hhc-3753954
@@ -7,11 +8,16 @@ Slug: dermasmooth-skin-tag-remover-patch-fast-safe-and-painless-skin-tag-and-19d
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/07f155d6736185375b3c61f1d5b64627.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/07f155d6736185375b3c61f1d5b64627.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/2b48933100d49ce33a8ba6be0f6eade4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/b0c1e1f8fb3e3f02a1d71ecee8f51fe6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/f91c68b772f35dd2b5104d39f0a8d831.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/b624ee30f047e62139ed370cb2d020a9.jpeg
 Meta Title: DermaSmooth Skin Tag Remover Patch – Fast, Safe, And Painless Skin T
 Meta Description: Buy DermaSmooth Skin Tag Remover Patch – Fast, Safe, And Painless Skin Tag And Mole Removal Solution With No Scarring Or Pigmentation online in Pakistan from AS
 Description: DermaSmooth Skin Tag Remover Patch offers a fast, safe, and painless way to remove skin tags and moles — with no scarring or pigmentation.
-Regular Price: 220
-Sale Price: 220
+Wholesale Price: 170
+Regular Price: 465
+Sale Price: 315
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

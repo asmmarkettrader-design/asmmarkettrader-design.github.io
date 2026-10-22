@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Liquid Shilajit | Purified & Refined | FDA, GMP, ISO 9001, Qarshi Certified | Safe & Effective
 Product ID: hhc-3755066
 SKU: hhc-3755066
@@ -7,11 +8,16 @@ Slug: liquid-shilajit-purified-refined-fda-gmp-iso-9001-qarshi-certified-safe-53
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/03c15dbaa3b99ee0d0c478a1d231d0ca.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/03c15dbaa3b99ee0d0c478a1d231d0ca.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/a85f787d35cd767f3d82baa4a1e0f7ed.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/4370e5c44fdd4f452d8c568157ea05a6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/2a07a7723f78b46d2e4cafae9779e3d5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/dc180e6c8eb56200b21178ba5a79fc93.jpeg
 Meta Title: Liquid Shilajit | Purified & Refined | FDA, GMP, ISO 9001, Qarshi Ce
 Meta Description: Buy Liquid Shilajit | Purified & Refined | FDA, GMP, ISO 9001, Qarshi Certified | Safe & Effective online in Pakistan from ASM VEO. Premium Liquid Shilajit, car
 Description: Premium Liquid Shilajit, carefully purified to remove heavy metals. Certified safe, fast absorption, supports energy, stamina & vitality.
-Regular Price: 3007
-Sale Price: 3007
+Wholesale Price: 3007
+Regular Price: 5110
+Sale Price: 4089
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

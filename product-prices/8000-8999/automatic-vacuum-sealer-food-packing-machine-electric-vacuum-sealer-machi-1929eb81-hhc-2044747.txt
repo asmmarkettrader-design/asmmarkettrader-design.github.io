@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Automatic Vacuum Sealer Food Packing Machine | Electric Vacuum Sealer Machine With 10 Bags
 Product ID: hhc-2044747
 SKU: hhc-2044747
@@ -7,11 +8,16 @@ Slug: automatic-vacuum-sealer-food-packing-machine-electric-vacuum-sealer-mac-19
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/1c43e20306c266b5283f150d90e37636.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/1c43e20306c266b5283f150d90e37636.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/7f84db8bfbb48e06ab71963d417b0aa2.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/9e5dbb8c133825860960321a9d75aef4.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/WhatsApp-Image-2023-09-21-at-6.16.46-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-14-at-3.31.03-PM.jpeg
 Meta Title: Automatic Vacuum Sealer Food Packing Machine | Electric Vacuum Seale
 Meta Description: Buy Automatic Vacuum Sealer Food Packing Machine | Electric Vacuum Sealer Machine With 10 Bags online in Pakistan from ASM VEO. Automatic Vacuum Sealer Food Pac
 Description: Automatic Vacuum Sealer Food Packing Machine | Electric Vacuum Sealer Machine With 10 Bags
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

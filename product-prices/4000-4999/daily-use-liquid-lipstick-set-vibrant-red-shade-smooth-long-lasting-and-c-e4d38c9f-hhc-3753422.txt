@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Daily Use Liquid Lipstick Set | Vibrant Red Shade – Smooth, Long-Lasting, and Comfortable for Everyday Wear
 Product ID: hhc-3753422
 SKU: hhc-3753422
@@ -7,11 +8,16 @@ Slug: daily-use-liquid-lipstick-set-vibrant-red-shade-smooth-long-lasting-and-e4
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/04947edd28fde02b4c00450c59f4034d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/04947edd28fde02b4c00450c59f4034d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/5fcf9911bdabd1fd76449a89462d07b1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/eb5f4360223bd44868b5dc75c9bc4cd2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/82c0d48fe29cb752df1680dcd2024045.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/1e38369d797f861ff67334d8cf353e84.jpeg
 Meta Title: Daily Use Liquid Lipstick Set | Vibrant Red Shade – Smooth, Long-Las
 Meta Description: Buy Daily Use Liquid Lipstick Set | Vibrant Red Shade – Smooth, Long-Lasting, and Comfortable for Everyday Wear online in Pakistan from ASM VEO. Liquid lipstick
 Description: Liquid lipstick in a bold red shade — smooth, long-lasting, and perfect for daily use to keep your lips vibrant and elegant.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

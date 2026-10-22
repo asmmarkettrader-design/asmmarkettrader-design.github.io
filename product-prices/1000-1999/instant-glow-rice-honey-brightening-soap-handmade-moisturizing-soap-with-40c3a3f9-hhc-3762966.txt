@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Instant Glow Rice & Honey Brightening Soap – Handmade Moisturizing Soap with Rice Extract & Natural Honey for Glowing, Soft & Even-Toned Skin | Paraben & Sulfate Free
 Product ID: hhc-3762966
 SKU: hhc-3762966
@@ -7,11 +8,16 @@ Slug: instant-glow-rice-honey-brightening-soap-handmade-moisturizing-soap-wit-40
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/0d985aec893c3af9e032cf20e105815a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/0d985aec893c3af9e032cf20e105815a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/c920aa3eb4c388cfa8c5abbf1188fd8e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/518323582ba6e60f8b100183619ba6cf.jpeg
 Meta Title: Instant Glow Rice & Honey Brightening Soap – Handmade Moisturizing S
 Meta Description: Buy Instant Glow Rice & Honey Brightening Soap – Handmade Moisturizing Soap with Rice Extract & Natural Honey for Glowing, Soft & Even-Toned Skin | Paraben & Su
 Description: Reveal naturally radiant, healthy-looking skin with Instant Glow Rice & Honey Brightening Soap. Infused with Rice Extract and Natural Honey, this handmade soap gently cleanses, exfoliates, and moisturizes while helping improve skin tone and leaving your skin soft, smooth, and refreshed.
-Regular Price: 739
-Sale Price: 739
+Wholesale Price: 689
+Regular Price: 1320
+Sale Price: 1059
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

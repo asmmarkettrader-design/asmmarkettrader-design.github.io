@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 9-Inch Desktop Water Mist Fan – Portable Humidifier Air Cooler with 5-Hole Spray, 3 Speed Modes, and LED Night Light (Not Rechargeable)
 Product ID: hhc-3758260
 SKU: hhc-3758260
@@ -7,11 +8,16 @@ Slug: 9-inch-desktop-water-mist-fan-portable-humidifier-air-cooler-with-5-hol-91
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
-Meta Title: 9-Inch Desktop Water Mist Fan – Portable Humidifier Air Cooler with
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/e3d7aa69bba5a3bd02cdb70f458a1e96.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/e3d7aa69bba5a3bd02cdb70f458a1e96.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/44a09ae415fc300ff1c664d38a8ff7e4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/df461d3f03badad615fa487758fc7a9b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/a57491feb5a73b4398177a08579c26e4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/22f32974cd2aaf6b351d111a9f70f55b.webp
+Meta Title: 9-Inch Desktop Water Mist Fan – Portable Humidifier Air Cooler with 
 Meta Description: Buy 9-Inch Desktop Water Mist Fan – Portable Humidifier Air Cooler with 5-Hole Spray, 3 Speed Modes, and LED Night Light (Not Rechargeable) online in Pakistan f
 Description: Stay cool and refreshed with this 9.5-inch Portable Mist Fan. This versatile desktop cooler combines a powerful fan with a 5-hole misting system to lower temperatures and humidify your personal space.
-Regular Price: 2557
-Sale Price: 2557
+Wholesale Price: 2557
+Regular Price: 4540
+Sale Price: 3632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Solar Charge Motion Sensor Solar Waterproof Wall Lamp (Model Bk-888)
 Product ID: hhc-3763022
 SKU: hhc-3763022
@@ -7,11 +8,16 @@ Slug: solar-charge-motion-sensor-solar-waterproof-wall-lamp-model-bk-888-hhc-376
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/0d1862ac2207b19fbe58549542d9c48b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/0d1862ac2207b19fbe58549542d9c48b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/90579db5e17ed2cde2a5b4f1c72c997a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/da3f3e7cab480390ff507e09b56ef9e8.jpeg
 Meta Title: Solar Charge Motion Sensor Solar Waterproof Wall Lamp (Model Bk-888)
 Meta Description: Buy Solar Charge Motion Sensor Solar Waterproof Wall Lamp (Model Bk-888) online in Pakistan from ASM VEO. Solar Charge Motion Sensor Solar Waterproof Wall Lamp
 Description: Solar Charge Motion Sensor Solar Waterproof Wall Lamp 888 Big Size Durable Comfortable Stylish Affordable Practical Choice Reliable Performance Perfect For Outdoor Lighting And Security.
-Regular Price: 924
-Sale Price: 924
+Wholesale Price: 874
+Regular Price: 1660
+Sale Price: 1327
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

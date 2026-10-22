@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-in-1 Type-C Fast Charging Cable – 3A Output | Multi-Device USB Charging Cable for Android & Type-C Devices Random Color
 Product ID: hhc-3762475
 SKU: hhc-3762475
@@ -7,11 +8,16 @@ Slug: 3-in-1-type-c-fast-charging-cable-3a-output-multi-device-usb-charging-c-91
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/9c904bdc49f81d25748e32aa3bb819c2.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/9c904bdc49f81d25748e32aa3bb819c2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/d8021a6ab9acc2c7331e02eeb7b196e8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/4ef68411d5f0e388d72e4e4e8d990a22.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/18cf09100f7024ee4f9ba6e4a98ea46e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/5b776b00c9862593df1ac2ebd7f36fa8.webp
 Meta Title: 3-in-1 Type-C Fast Charging Cable – 3A Output | Multi-Device USB Cha
 Meta Description: Buy 3-in-1 Type-C Fast Charging Cable – 3A Output | Multi-Device USB Charging Cable for Android & Type-C Devices Random Color online in Pakistan from ASM VEO. C
 Description: Charge multiple compatible devices with a single cable using this 3-in-1 Type-C Fast Charging Cable. Featuring up to 3A output, a durable design, and compact size, it is ideal for home, office, travel, and everyday charging.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

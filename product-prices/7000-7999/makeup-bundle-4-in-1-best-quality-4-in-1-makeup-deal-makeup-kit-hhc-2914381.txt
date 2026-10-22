@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Makeup Bundle (4 in 1) | Best Quality 4 in 1 Makeup Deal | Makeup Kit
 Product ID: hhc-2914381
 SKU: hhc-2914381
@@ -7,11 +8,16 @@ Slug: makeup-bundle-4-in-1-best-quality-4-in-1-makeup-deal-makeup-kit-hhc-291438
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsAppImage2023-12-06at2.12.55PM.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsAppImage2023-12-06at2.12.55PM.jpg
 Meta Title: Makeup Bundle (4 in 1) | Best Quality 4 in 1 Makeup Deal | Makeup Ki
 Meta Description: Buy Makeup Bundle (4 in 1) | Best Quality 4 in 1 Makeup Deal | Makeup Kit online in Pakistan from ASM VEO. Makeup Bundle (4 in 1) | Best Quality 4 in 1 Makeup D
 Description: Makeup Bundle (4 in 1) | Best Quality 4 in 1 Makeup Deal | Makeup Kit Makeup Bundle 01 This must-have bundle is your perfect companion for a flawless look. It contains all you need to create a beautiful base, whether you're prepping for your wedding day or just want an everyday makeup look. COLOR: ALL IVORY + LOOSE POWDER LIGHT BB Cream Liquid Foundation 100ml Bridal Soft Base 10g Makeup Powder Foundation ( 20 gram ) Makeup Loose Powder ( 20 gram)
-Regular Price: 3544
-Sale Price: 3544
+Wholesale Price: 3544
+Regular Price: 5980
+Sale Price: 4787
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

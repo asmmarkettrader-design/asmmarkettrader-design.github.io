@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Erorex 20W QC-1.0 Fast Charging Adapter for Android iOS
 Product ID: hhc-3762483
 SKU: hhc-3762483
@@ -7,11 +8,16 @@ Slug: erorex-20w-qc-1-0-fast-charging-adapter-for-android-ios-hhc-3762483
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/df2936875ebc4fb2b11f9f2ac11d2cac.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/df2936875ebc4fb2b11f9f2ac11d2cac.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/eae3874cede5997e5f1f3f074d8d19fb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/509b0b935499aca73f7552b0a3d24f51.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/a16cf85147af942d2850a63e62437b0a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/b39e301e70ddea831a0154f59afb3c5e.jpeg
 Meta Title: Erorex 20W QC-1.0 Fast Charging Adapter for Android iOS | Buy Online
 Meta Description: Buy Erorex 20W QC-1.0 Fast Charging Adapter for Android iOS online in Pakistan from ASM VEO. Erorex 20W QC-1.0 Fast Charging Adapter for Android iOS Erorex High
 Description: Erorex 20W QC-1.0 Fast Charging Adapter for Android iOS Erorex High Quality fast Adapter, QC-C13_20W Quick and fast Charging, Compatible with Android and iOS Device_Erorex Chargers durable and portable
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

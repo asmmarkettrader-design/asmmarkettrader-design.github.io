@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Line Belly Belt Waist Trimmer & Belly Shaper Belt | Slimming, Sweat & Posture Support Belt for Men & Women
 Product ID: hhc-3753525
 SKU: hhc-3753525
@@ -7,11 +8,16 @@ Slug: line-belly-belt-waist-trimmer-belly-shaper-belt-slimming-sweat-posture-876
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/854b927fd2aa6ec304d1daea7204ca71.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/854b927fd2aa6ec304d1daea7204ca71.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/203a9aedd8148db84dc73cd30eff4503.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/7fd9e5e0703ef9ac95407f7bdb259b95.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/9f0045e25f4db919d27e2310d185824c.jpeg
 Meta Title: Line Belly Belt Waist Trimmer & Belly Shaper Belt | Slimming, Sweat
 Meta Description: Buy Line Belly Belt Waist Trimmer & Belly Shaper Belt | Slimming, Sweat & Posture Support Belt for Men & Women online in Pakistan from ASM VEO. Shape your waist
 Description: Shape your waist and burn fat faster with the Line Belly Belt Waist Trimmer & Body Shaper — perfect for workouts or daily wear.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

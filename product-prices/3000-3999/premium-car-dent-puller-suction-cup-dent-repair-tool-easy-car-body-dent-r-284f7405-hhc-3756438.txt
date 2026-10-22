@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Car Dent Puller | Suction Cup Dent Repair Tool | Easy Car Body Dent Removal ( Random Colour)
 Product ID: hhc-3756438
 SKU: hhc-3756438
@@ -7,11 +8,16 @@ Slug: premium-car-dent-puller-suction-cup-dent-repair-tool-easy-car-body-dent-28
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/cce9626fde25bbc7a37f6f39a8d4add3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/cce9626fde25bbc7a37f6f39a8d4add3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/90e288991677b335d0c2dcf7a727bb3d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/33cd5b4f87cafec85e8294f0fd8f17e8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/57d74f32f956da079d708564bf4f3852.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/782e713fedb1b00f286dcd9fd940f9cc.jpg
 Meta Title: Premium Car Dent Puller | Suction Cup Dent Repair Tool | Easy Car Bo
 Meta Description: Buy Premium Car Dent Puller | Suction Cup Dent Repair Tool | Easy Car Body Dent Removal ( Random Colour) online in Pakistan from ASM VEO. Durable suction cup de
 Description: Durable suction cup dent puller for car body repair. Simple, effective tool to remove dents and restore smooth surface.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

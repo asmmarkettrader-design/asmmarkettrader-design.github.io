@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1PC Soap Box Wall Mounted Light Luxury Soap Holder Punch Free Drain Laundry Soap Box Easy Cleaning | Random Colour
 Product ID: hhc-3757963
 SKU: hhc-3757963
@@ -7,11 +8,16 @@ Slug: 1pc-soap-box-wall-mounted-light-luxury-soap-holder-punch-free-drain-lau-2e
 Category: Personal Care
 Subcategory: Bath & Body (Soaps)
 Brand: ASM VEO
-Meta Title: 1PC Soap Box Wall Mounted Light Luxury Soap Holder Punch Free Drain
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/e287f375b26f8db5c5440b4ed1436bdb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/e287f375b26f8db5c5440b4ed1436bdb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/192e5b6ac55729b2fcd51c7ccd5867ad.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/5498ad9a320deff083c7027929fe4745.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/612e56405fa008c157a9180fcaf27ed5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/5477813e4b6435ec3dd5a0d9fbb4590a.jpg
+Meta Title: 1PC Soap Box Wall Mounted Light Luxury Soap Holder Punch Free Drain 
 Meta Description: Buy 1PC Soap Box Wall Mounted Light Luxury Soap Holder Punch Free Drain Laundry Soap Box Easy Cleaning | Random Colour online in Pakistan from ASM VEO. 1PC Soap
 Description: 1PC Soap Box Wall Mounted Light Luxury Soap Holder Punch Free Design With Drain For Easy Cleaning.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

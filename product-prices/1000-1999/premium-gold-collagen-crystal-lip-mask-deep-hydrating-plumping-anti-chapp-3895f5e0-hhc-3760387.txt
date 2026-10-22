@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Gold Collagen Crystal Lip Mask – Deep Hydrating, Plumping & Anti-Chapping Gel Patches for Soft & Pink Lips - 75g
 Product ID: hhc-3760387
 SKU: hhc-3760387
@@ -7,11 +8,16 @@ Slug: premium-gold-collagen-crystal-lip-mask-deep-hydrating-plumping-anti-cha-38
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Premium Gold Collagen Crystal Lip Mask – Deep Hydrating, Plumping &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/55565bf64a95a623879da3885ab3dd07.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/55565bf64a95a623879da3885ab3dd07.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/65302c417f3c224a2a1cad541b8e2285.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/3a798c6fbf10844153a00ab46201431c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/f4ed222836210fb27c4e420d9de90c8c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/cd13f2cb066f013269fb2e2580d65bdc.jpeg
+Meta Title: Premium Gold Collagen Crystal Lip Mask – Deep Hydrating, Plumping & 
 Meta Description: Buy Premium Gold Collagen Crystal Lip Mask – Deep Hydrating, Plumping & Anti-Chapping Gel Patches for Soft & Pink Lips - 75g online in Pakistan from ASM VEO. Hy
 Description: Hydrate, plump, and restore your lips with the Luxury Gold Collagen Crystal Lip Mask. Infused with active plant collagen and deep-moisturizing nutrients, these custom-shaped hydrogel patches instantly soften chapped skin, fade fine lip lines, and bring back a natural, healthy pink glow.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

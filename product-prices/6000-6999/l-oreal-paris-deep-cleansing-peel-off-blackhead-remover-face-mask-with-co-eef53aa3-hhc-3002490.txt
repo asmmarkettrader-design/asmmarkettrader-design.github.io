@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: L'Oreal Paris Deep Cleansing Peel-Off Blackhead Remover Face Mask with Collagen – Pore-Minimizing, Purifying Formula for Smooth, Radiant Skin – 100ml Tube for All Skin Types
 Product ID: hhc-3002490
 SKU: hhc-3002490
@@ -7,11 +8,16 @@ Slug: l-oreal-paris-deep-cleansing-peel-off-blackhead-remover-face-mask-with-eef
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/Addasubheading_4_cfeaf13a-04b0-42fa-b719-959a8c93c935_800x.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/Addasubheading_4_cfeaf13a-04b0-42fa-b719-959a8c93c935_800x.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.09.19-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.09.18-AM-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.09.18-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.09.17-AM.jpeg
 Meta Title: L'Oreal Paris Deep Cleansing Peel-Off Blackhead Remover Face Mask wi
 Meta Description: Buy L'Oreal Paris Deep Cleansing Peel-Off Blackhead Remover Face Mask with Collagen – Pore-Minimizing, Purifying Formula for Smooth, Radiant Skin – 100ml Tube f
 Description: L'Oreal Paris Deep Cleansing Peel-Off Blackhead Remover Face Mask with Collagen – Pore-Minimizing, Purifying Formula for Smooth, Radiant Skin – 100ml Tube for All Skin Types Experience a spa-like treatment at home with the L'Oreal Paris Deep Cleansing Peel-Off Blackhead Remover Face Mask with Collagen. Specially formulated to target stubborn blackheads, unclog pores, and remove impurities, this peel-off mask is infused with skin-loving collagen to help improve elasticity and promote a firmer, more youthful complexion. Its purifying formula works deep within the pores to reduce excess oil and refine skin texture, leaving your face feeling smooth, refreshed, and visibly radiant. Suitable for all skin types, this 100ml tube is your go-to solution for clearer, healthier-looking skin with every use. Material: liquid Product Type: peel off blackhead remover mask Package include: 1 mask Net: 100 ml Product Original Picture
-Regular Price: 487
-Sale Price: 487
+Wholesale Price: 437
+Regular Price: 900
+Sale Price: 716
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

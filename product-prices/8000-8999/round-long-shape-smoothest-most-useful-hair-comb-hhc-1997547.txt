@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Round long Shape Smoothest Most Useful Hair Comb
 Product ID: hhc-1997547
 SKU: hhc-1997547
@@ -7,11 +8,16 @@ Slug: round-long-shape-smoothest-most-useful-hair-comb-hhc-1997547
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/6931798813241-1_1800x1800.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/6931798813241-1_1800x1800.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/lg_gkyireLuuYPSDLCHXSjUrXXKc4AIefcojPaaQB86.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/6931798813241-2_1800x1800.webp
 Meta Title: Round long Shape Smoothest Most Useful Hair Comb | Buy Online in Pak
 Meta Description: Buy Round long Shape Smoothest Most Useful Hair Comb online in Pakistan from ASM VEO. Description Round long Shape Smoothest Most Useful Hair Comb For Boys Girl
 Description: Description Round long Shape Smoothest Most Useful Hair Comb For Boys Girls, Best hair comb, Hair comb for detangling, Hair comb for all hair types, Versatile hair comb
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

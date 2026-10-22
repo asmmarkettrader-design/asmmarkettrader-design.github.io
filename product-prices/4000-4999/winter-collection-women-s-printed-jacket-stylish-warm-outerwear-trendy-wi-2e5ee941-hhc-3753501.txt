@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Collection Women’s Printed Jacket | Stylish & Warm Outerwear | Trendy Winter Fashion for Ladies
 Product ID: hhc-3753501
 SKU: hhc-3753501
@@ -7,11 +8,16 @@ Slug: winter-collection-women-s-printed-jacket-stylish-warm-outerwear-trendy-2e5
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/b822816553f660170e24a8502ae9ef17.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/b822816553f660170e24a8502ae9ef17.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/edf195ad4d4cc89b3e80f0f7849d92b9.jpeg
 Meta Title: Winter Collection Women’s Printed Jacket | Stylish & Warm Outerwear
 Meta Description: Buy Winter Collection Women’s Printed Jacket | Stylish & Warm Outerwear | Trendy Winter Fashion for Ladies online in Pakistan from ASM VEO. Chic printed winter
 Description: Chic printed winter jacket for women. Soft, warm, and stylish — perfect for casual outings, daily wear, and winter layering.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

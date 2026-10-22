@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: JOOP! Homme  Eau De Toilette Spray For Men  125 Ml
 Product ID: hhc-2303720
 SKU: hhc-2303720
@@ -7,11 +8,16 @@ Slug: joop-homme-eau-de-toilette-spray-for-men-125-ml-hhc-2303720
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/D_NQ_NP_798218-MLB53199697755_012023-F.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/D_NQ_NP_798218-MLB53199697755_012023-F.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/D_NQ_NP_809470-MLB53199725462_012023-F.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/D_NQ_NP_787137-MLB53199719650_012023-F.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/61IT7XO645L.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/61rT7wjpZJL._SL1500_.jpg
 Meta Title: JOOP! Homme Eau De Toilette Spray For Men 125 Ml | Buy Online in Pak
 Meta Description: Buy JOOP! Homme Eau De Toilette Spray For Men 125 Ml online in Pakistan from ASM VEO. Product detailsJoop By Joop! Eau De Toilette SprayProduct Key FeaturesFrag
 Description: Product detailsJoop By Joop! Eau De Toilette SprayProduct Key FeaturesFragrance NameHommeTypeEau de ToiletteDimensionsVolume6.7ozAdditional Product FeaturesGenderMen
-Regular Price: 1457
-Sale Price: 1457
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

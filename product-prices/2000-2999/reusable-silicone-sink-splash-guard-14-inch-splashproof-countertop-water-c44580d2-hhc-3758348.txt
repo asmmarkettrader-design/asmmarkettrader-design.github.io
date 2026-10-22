@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Reusable Silicone Sink Splash Guard – 14 Inch Splashproof Countertop Water Barrier With suction (Random Color)
 Product ID: hhc-3758348
 SKU: hhc-3758348
@@ -7,11 +8,16 @@ Slug: reusable-silicone-sink-splash-guard-14-inch-splashproof-countertop-wate-c4
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/7224d87e573cecc60548667b16f3bfb4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/7224d87e573cecc60548667b16f3bfb4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/696646e078f6481c24256da3e47296e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/c5e3923bab335ef65f00c607b5bf543c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/90d092e99e0da9bf01ec240776b86e58.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/e63abf6545f6d2beb09c4dad496def23.jpeg
 Meta Title: Reusable Silicone Sink Splash Guard – 14 Inch Splashproof Countertop
 Meta Description: Buy Reusable Silicone Sink Splash Guard – 14 Inch Splashproof Countertop Water Barrier With suction (Random Color) online in Pakistan from ASM VEO. Keep your su
 Description: Keep your surfaces dry and clean with the Reusable Silicone Sink Splash Guard. This 14-inch splashproof water barrier features a strong suction cup design, making it the perfect tool to prevent water from splashing onto your clothes or countertops while washing dishes.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

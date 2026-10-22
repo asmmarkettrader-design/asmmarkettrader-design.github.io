@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Hand Fan with LED Display | 5 Speed Modes Portable Mini Handy Fan for Kids & School Use
 Product ID: hhc-3758136
 SKU: hhc-3758136
@@ -7,11 +8,16 @@ Slug: rechargeable-hand-fan-with-led-display-5-speed-modes-portable-mini-hand-6e
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/cd62bebb930c38c9d2996ad95893c169.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/cd62bebb930c38c9d2996ad95893c169.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/a371fc6a0406d3a373ea64f1c4f8c970.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/81fe41d45ffb427b45306c91a8a13497.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/5d023f01aeba4096b1c1aedd5b01f865.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/bd369540cc8af7b575ef061594c926f9.png
 Meta Title: Rechargeable Hand Fan with LED Display | 5 Speed Modes Portable Mini
 Meta Description: Buy Rechargeable Hand Fan with LED Display | 5 Speed Modes Portable Mini Handy Fan for Kids & School Use online in Pakistan from ASM VEO. Stay cool anywhere wit
 Description: Stay cool anywhere with this compact rechargeable hand fan featuring an LED display and 5 adjustable speed modes. Lightweight, portable, and perfect for kids, school, travel, and daily use.
-Regular Price: 908
-Sale Price: 908
+Wholesale Price: 858
+Regular Price: 1630
+Sale Price: 1304
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

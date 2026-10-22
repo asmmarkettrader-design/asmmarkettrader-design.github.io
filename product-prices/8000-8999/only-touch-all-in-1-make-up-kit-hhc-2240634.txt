@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Only Touch All In 1 Make Up Kit
 Product ID: hhc-2240634
 SKU: hhc-2240634
@@ -7,11 +8,16 @@ Slug: only-touch-all-in-1-make-up-kit-hhc-2240634
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/mini-make-up-kit-5042-t-y-a-original-imagfz8gaqztcnex-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/mini-make-up-kit-5042-t-y-a-original-imagfz8gaqztcnex-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/mini-make-up-kit-5042-t-y-a-original-imagfz8gb3uhbeqa-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-31-at-1.01.54-PM-1.jpeg
 Meta Title: Only Touch All In 1 Make Up Kit | Buy Online in Pakistan
 Meta Description: Buy Only Touch All In 1 Make Up Kit online in Pakistan from ASM VEO. Description: Elevate your beauty routine with the only Touch Essentials All-in-One Makeup C
 Description: Description: Elevate your beauty routine with the only Touch Essentials All-in-One Makeup Kit, designed for every occasion, from daily wear to special events. This compact kit includes eight versatile eyeshadows, allowing endless looks with both matte and shimmer finishes. Two blushers provide a natural glow, while two setting powders perfect your complexion for a flawless finish. Three richly pigmented lipsticks ensure your lips stay bold and beautiful. Complete with a built-in mirror, this kit is your go-to for effortless glam on the go. Perfect for all skin tones, it's a must-have for makeup lovers and beginners alike.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

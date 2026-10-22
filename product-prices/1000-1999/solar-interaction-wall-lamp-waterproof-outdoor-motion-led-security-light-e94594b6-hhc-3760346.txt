@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Solar Interaction Wall Lamp Waterproof Outdoor Motion LED Security Light (Model YX-778-1W)
 Product ID: hhc-3760346
 SKU: hhc-3760346
@@ -7,11 +8,16 @@ Slug: solar-interaction-wall-lamp-waterproof-outdoor-motion-led-security-ligh-e9
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/f891eed8ffd5c9c29e19694d40a472f8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/f891eed8ffd5c9c29e19694d40a472f8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/b8e5e9f198b9d72e2958446e3731b47c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/290aa5252977a8f040d406a861298d2c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/ddf6f5fc3a90fab2cb2cc3d554ad77a1.jpeg
 Meta Title: Solar Interaction Wall Lamp Waterproof Outdoor Motion LED Security L
 Meta Description: Buy Solar Interaction Wall Lamp Waterproof Outdoor Motion LED Security Light (Model YX-778-1W) online in Pakistan from ASM VEO. Illuminate your outdoor spaces w
 Description: Illuminate your outdoor spaces with the YX-778-1W Solar Interaction Wall Lamp. Featuring solar-powered charging, motion sensing technology, waterproof construction, and bright LED illumination, it's ideal for gardens, patios, driveways, pathways, and home security lighting.
-Regular Price: 938
-Sale Price: 938
+Wholesale Price: 888
+Regular Price: 1680
+Sale Price: 1348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 210cm Portable Tripod Stand for Photography & Live Studio
 Product ID: hhc-3764234
 SKU: hhc-3764234
@@ -7,11 +8,16 @@ Slug: 210cm-portable-tripod-stand-for-photography-live-studio-hhc-3764234
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/4217bb93d1174ba8c699596c814480bb.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/4217bb93d1174ba8c699596c814480bb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/c0fcdd745e3044d1a8d42747d1ca1619.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/c425c54dae70bc19e1f532cc04e11c0d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/0624a2e36fc606a6a0d9f060b75ebc1c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/423d7ac0eab009ca2218cc7ceabd4e26.jpg
 Meta Title: 210cm Portable Tripod Stand for Photography & Live Studio | Buy Onli
 Meta Description: Buy 210cm Portable Tripod Stand for Photography & Live Studio online in Pakistan from ASM VEO. High-quality portable 210cm tripod stand, perfect for photography
 Description: High-quality portable 210cm tripod stand, perfect for photography, video recording, live streaming, and ring lights. Specs: - Adjustable Height: 70cm - 210cm - Folded length: 67cm - Sturdy and lightweight for easy transport - Versatile for studio or outdoor use
-Regular Price: 1219
-Sale Price: 1219
+Wholesale Price: 1169
+Regular Price: 2150
+Sale Price: 1720
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CHANDO Naturals Foaming Face Wash Charcoal – Deep Cleansing & Blackhead Control
 Product ID: hhc-3752497
 SKU: hhc-3752497
@@ -7,11 +8,16 @@ Slug: chando-naturals-foaming-face-wash-charcoal-deep-cleansing-blackhead-contro
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/391581e1bc04944698c169fbdc9b956a.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/391581e1bc04944698c169fbdc9b956a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/3d3e282a094aa8c26a50aeec9371c893.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/38501e0c17bbbbb40e5c5e4fd2b09d5d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/2b5df284aa2fdffdbd5b54edbc2a11fe.webp
 Meta Title: CHANDO Naturals Foaming Face Wash Charcoal – Deep Cleansing & Blackh
 Meta Description: Buy CHANDO Naturals Foaming Face Wash Charcoal – Deep Cleansing & Blackhead Control online in Pakistan from ASM VEO. Foaming Face Wash Charcoal deeply cleanses
 Description: Foaming Face Wash Charcoal deeply cleanses pores, removes oil and impurities, and helps control blackheads for a clear, refreshed complexion.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

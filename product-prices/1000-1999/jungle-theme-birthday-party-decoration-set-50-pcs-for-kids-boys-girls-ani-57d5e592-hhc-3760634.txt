@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Jungle Theme Birthday Party Decoration Set 50 Pcs for Kids Boys & Girls – Animal Safari Birthday Balloon Combo with Happy Birthday Banner, Foil Curtains & Number Balloon
 Product ID: hhc-3760634
 SKU: hhc-3760634
@@ -7,11 +8,16 @@ Slug: jungle-theme-birthday-party-decoration-set-50-pcs-for-kids-boys-girls-a-57
 Category: Events & Gifting
 Subcategory: Party Decorations
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/ea6a2553cff5e61ec5863e7fca1e7c2f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/ea6a2553cff5e61ec5863e7fca1e7c2f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/56d45d5deb1dde2e2ca985ae925f0a3c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/f0f05c634506d15bb22bdc23fcf56636.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/c9210328f684a858f717c6a4191a1dc5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/14/a9dd01554b833b7bd90b63151068532f.jpg
 Meta Title: Jungle Theme Birthday Party Decoration Set 50 Pcs for Kids Boys & Gi
 Meta Description: Buy Jungle Theme Birthday Party Decoration Set 50 Pcs for Kids Boys & Girls – Animal Safari Birthday Balloon Combo with Happy Birthday Banner, Foil Curtains & N
 Description: Make your child’s birthday extra special with this 50-piece Jungle Theme Birthday Decoration Set. Featuring animal foil balloons, a golden Happy Birthday banner, foil curtains, colorful balloons, and a number balloon, this complete safari-themed party pack is perfect for 1st to 5th birthday celebrati
-Regular Price: 1625
-Sale Price: 1625
+Wholesale Price: 1625
+Regular Price: 2970
+Sale Price: 2374
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

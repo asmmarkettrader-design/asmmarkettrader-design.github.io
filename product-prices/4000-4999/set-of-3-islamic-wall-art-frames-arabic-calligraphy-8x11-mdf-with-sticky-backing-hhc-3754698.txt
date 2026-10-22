@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Islamic Wall Art Frames – Arabic Calligraphy, 8x11" MDF with Sticky Backing
 Product ID: hhc-3754698
 SKU: hhc-3754698
@@ -7,11 +8,16 @@ Slug: set-of-3-islamic-wall-art-frames-arabic-calligraphy-8x11-mdf-with-sticky-b
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/185c18e245e27a5e4c87a75e73075d73.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/185c18e245e27a5e4c87a75e73075d73.jpg
 Meta Title: Set of 3 Islamic Wall Art Frames – Arabic Calligraphy, 8x11" MDF wit
 Meta Description: Buy Set of 3 Islamic Wall Art Frames – Arabic Calligraphy, 8x11" MDF with Sticky Backing online in Pakistan from ASM VEO. Three MDF wooden frames featuring Isla
 Description: Three MDF wooden frames featuring Islamic calligraphy. Easy to mount with pre-attached tape.
-Regular Price: 487
-Sale Price: 487
+Wholesale Price: 437
+Regular Price: 900
+Sale Price: 716
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

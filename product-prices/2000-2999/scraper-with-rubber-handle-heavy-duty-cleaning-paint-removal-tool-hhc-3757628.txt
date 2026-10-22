@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Scraper with Rubber Handle – Heavy Duty Cleaning & Paint Removal Tool
 Product ID: hhc-3757628
 SKU: hhc-3757628
@@ -7,11 +8,16 @@ Slug: scraper-with-rubber-handle-heavy-duty-cleaning-paint-removal-tool-hhc-3757
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/f954da771a25fd168579b194959369f3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/f954da771a25fd168579b194959369f3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/8b6cd05ab94d1156867a7bea355dffb8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/5a5763cdb4573dc2a879437c3f2ad869.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/b7d0c35c859fa4176765d34adddf0e50.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/55eeba5ca8f58646a7662a60a93bcb7c.jpeg
 Meta Title: Scraper with Rubber Handle – Heavy Duty Cleaning & Paint Removal Too
 Meta Description: Buy Scraper with Rubber Handle – Heavy Duty Cleaning & Paint Removal Tool online in Pakistan from ASM VEO. Durable scraper with rubber handle for cleaning, pain
 Description: Durable scraper with rubber handle for cleaning, paint removal, and surface preparation. Strong grip and easy to use.
-Regular Price: 2334
-Sale Price: 2334
+Wholesale Price: 2334
+Regular Price: 4160
+Sale Price: 3331
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

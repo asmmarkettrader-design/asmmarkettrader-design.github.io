@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Pcs Nude & Red Matte Lip Gloss Set | High Pigmented Long Lasting Liquid Lipstick Collection
 Product ID: hhc-3763366
 SKU: hhc-3763366
@@ -7,11 +8,16 @@ Slug: 6-pcs-nude-red-matte-lip-gloss-set-high-pigmented-long-lasting-liquid-l-0d
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/d669ce1870888ea998018b96fa81cdaf.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/d669ce1870888ea998018b96fa81cdaf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/be3b300b7e125f64c9554633e3cebe18.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/774741890d00c23f13827425cfe335e1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/325f3a15b9bef6a60f8c5c77462b73be.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/6fe063d0116a9f37524fc196260575a9.jpeg
 Meta Title: 6 Pcs Nude & Red Matte Lip Gloss Set | High Pigmented Long Lasting L
 Meta Description: Buy 6 Pcs Nude & Red Matte Lip Gloss Set | High Pigmented Long Lasting Liquid Lipstick Collection online in Pakistan from ASM VEO. Upgrade your makeup collectio
 Description: Upgrade your makeup collection with this 6 Pcs Matte Lip Gloss Set, featuring beautiful nude and red shades for every occasion. The highly pigmented liquid formula delivers rich color, a smooth matte finish, and comfortable all-day wear. Perfect for daily use, parties, weddings, and gifting.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids “Never Give Up” Printed Black & Black Tracksuit Set | Winter Fleece Sweatshirt & Trouser Outfit for Boys & Girls – Warm & Motivational FOR BABY AND KIDS
 Product ID: hhc-3753464
 SKU: hhc-3753464
@@ -7,11 +8,16 @@ Slug: kids-never-give-up-printed-black-black-tracksuit-set-winter-fleece-swea-17
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/97d3df918dd6cfb754eac088f9a229d0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/97d3df918dd6cfb754eac088f9a229d0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/be2bbe385f29fc18c96e03e898d81622.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/ec976efc12688cc18696ad31fb59d184.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/0aeb5d4338763786801887c6e2b5cfea.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/671577a8665fa1374efda391eb2d02f0.jpeg
 Meta Title: Kids “Never Give Up” Printed Black & Black Tracksuit Set | Winter Fl
 Meta Description: Buy Kids “Never Give Up” Printed Black & Black Tracksuit Set | Winter Fleece Sweatshirt & Trouser Outfit for Boys & Girls – Warm & Motivational FOR BABY AND KID
 Description: Stylish “Never Give Up” printed black winter tracksuit for kids. Soft fleece sweatshirt and trouser set — warm, comfy, and full of motivation.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

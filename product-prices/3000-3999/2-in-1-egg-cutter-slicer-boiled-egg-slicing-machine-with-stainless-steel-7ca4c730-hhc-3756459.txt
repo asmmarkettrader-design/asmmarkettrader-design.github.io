@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Egg Cutter & Slicer – Boiled Egg Slicing Machine with Stainless Steel Cutting Wires, Kitchen Cooking Tool | Random Color
 Product ID: hhc-3756459
 SKU: hhc-3756459
@@ -7,11 +8,16 @@ Slug: 2-in-1-egg-cutter-slicer-boiled-egg-slicing-machine-with-stainless-stee-7c
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/bb4006f6ffb8fc758fdc45a21ea2f7a4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/bb4006f6ffb8fc758fdc45a21ea2f7a4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/0a07b7b2c169e31103bdc6c9deb4e3c6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/58a9d7e7dae8e208357b1bbdc9eda942.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/e3885695040527d73cce391182c5cae7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/e1293ff955d322789818ea739b85b705.jpeg
 Meta Title: 2-in-1 Egg Cutter & Slicer – Boiled Egg Slicing Machine with Stainle
 Meta Description: Buy 2-in-1 Egg Cutter & Slicer – Boiled Egg Slicing Machine with Stainless Steel Cutting Wires, Kitchen Cooking Tool | Random Color online in Pakistan from ASM
 Description: Effortlessly slice or wedge boiled eggs with this versatile 2-in-1 egg cutter. Perfect for salads, sandwiches, and garnishes, it ensures uniform, professional cuts every time.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

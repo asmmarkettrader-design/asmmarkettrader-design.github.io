@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 500ml Premium Sports Water Bottle – Durable, Leakproof & Lightweight for Daily Use (Random Color)
 Product ID: hhc-3761017
 SKU: hhc-3761017
@@ -7,11 +8,16 @@ Slug: 500ml-premium-sports-water-bottle-durable-leakproof-lightweight-for-dai-00
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/da4c70fa41a231531f18f996e8a25868.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/da4c70fa41a231531f18f996e8a25868.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/c7339a86fcf490a90bdcd77764ff92ed.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/0f652e372233d1897935dd11660a7f7a.jpeg
 Meta Title: 500ml Premium Sports Water Bottle – Durable, Leakproof & Lightweight
 Meta Description: Buy 500ml Premium Sports Water Bottle – Durable, Leakproof & Lightweight for Daily Use (Random Color) online in Pakistan from ASM VEO. Stay properly hydrated du
 Description: Stay properly hydrated during intense workouts, outdoor tracks, or long daily commutes with the 500ml Premium Sports Water Bottle. Engineered to combine a lightweight, easy-to-carry form factor with a rugged,
-Regular Price: 1344
-Sale Price: 1344
+Wholesale Price: 1294
+Regular Price: 2370
+Sale Price: 1897
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

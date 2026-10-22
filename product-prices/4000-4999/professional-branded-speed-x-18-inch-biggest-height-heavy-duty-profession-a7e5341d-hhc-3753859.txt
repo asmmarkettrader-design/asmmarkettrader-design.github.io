@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Branded Speed-X 18-Inch Biggest Height Heavy Duty Professional Laptop Stand Aluminium Alloy Creative Adjustable Folding Portable With Pouch Cover And 6 Angles Adjustable
 Product ID: hhc-3753859
 SKU: hhc-3753859
@@ -7,11 +8,16 @@ Slug: professional-branded-speed-x-18-inch-biggest-height-heavy-duty-professi-a7
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/9d43b4ec3883680b18944bdeefd2400f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/9d43b4ec3883680b18944bdeefd2400f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/151a0c185dc2c25a4bf1d982a03d9a1c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/32c3b129184b0174f7c33bbd47d7cbbe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/f4e96e5ad6b083306d742d3552261f57.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/6dec7bab699f81c2cf146e5a7fbcc218.jpeg
 Meta Title: Professional Branded Speed-X 18-Inch Biggest Height Heavy Duty Profe
 Meta Description: Buy Professional Branded Speed-X 18-Inch Biggest Height Heavy Duty Professional Laptop Stand Aluminium Alloy Creative Adjustable Folding Portable With Pouch Cov
 Description: Speed X Laptop Stand Provides Heavy Duty Build Adjustable Folding Aluminium Alloy Material And 6 Angles Support
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

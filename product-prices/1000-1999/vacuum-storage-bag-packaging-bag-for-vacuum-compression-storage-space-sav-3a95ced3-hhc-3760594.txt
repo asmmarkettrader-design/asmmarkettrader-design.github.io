@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vacuum Storage Bag Packaging Bag for Vacuum Compression Storage Space Saving Storage Organizer (5 bags with Pump)
 Product ID: hhc-3760594
 SKU: hhc-3760594
@@ -7,11 +8,16 @@ Slug: vacuum-storage-bag-packaging-bag-for-vacuum-compression-storage-space-s-3a
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/2f0a0e42e7d928acb94f817c74ce486c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/2f0a0e42e7d928acb94f817c74ce486c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/b2265bbc0cf40eda6b985158da094433.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/a92e0c0191869ec76480c13ab050db3e.jpeg
 Meta Title: Vacuum Storage Bag Packaging Bag for Vacuum Compression Storage Spac
 Meta Description: Buy Vacuum Storage Bag Packaging Bag for Vacuum Compression Storage Space Saving Storage Organizer (5 bags with Pump) online in Pakistan from ASM VEO. Premium q
 Description: Premium quality vacuum storage bag for clothes, blankets, quilts, pillows, and seasonal items. Compresses bulky items to save storage space while protecting from dust, moisture, and insects.
-Regular Price: 1344
-Sale Price: 1344
+Wholesale Price: 1294
+Regular Price: 2370
+Sale Price: 1897
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

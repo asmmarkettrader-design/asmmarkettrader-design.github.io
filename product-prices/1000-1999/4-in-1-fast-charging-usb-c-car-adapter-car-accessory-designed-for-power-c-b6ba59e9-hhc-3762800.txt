@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4 In 1 Fast Charging Usb-C Car Adapter - Car Accessory Designed For Power Charging And Daily Travel Routine - With Light
 Product ID: hhc-3762800
 SKU: hhc-3762800
@@ -7,11 +8,16 @@ Slug: 4-in-1-fast-charging-usb-c-car-adapter-car-accessory-designed-for-power-b6
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
-Meta Title: 4 In 1 Fast Charging Usb-C Car Adapter - Car Accessory Designed For
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/4ceb8be62a18ff6521ead3ff25cd0e57.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/4ceb8be62a18ff6521ead3ff25cd0e57.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/40587bffb7384120b98e00fd56bb4e0d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/eae2fd1f61a03c6853aec2db670b079a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/29/b4b394b3eb26228c105790af24017440.jpeg
+Meta Title: 4 In 1 Fast Charging Usb-C Car Adapter - Car Accessory Designed For 
 Meta Description: Buy 4 In 1 Fast Charging Usb-C Car Adapter - Car Accessory Designed For Power Charging And Daily Travel Routine - With Light online in Pakistan from ASM VEO. Th
 Description: The 4 In 1 Fast Charging Usb-C Car Adapter Is A Car Accessory Formulated To Help Provide Power Charging And Connectivity During Daily Use.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

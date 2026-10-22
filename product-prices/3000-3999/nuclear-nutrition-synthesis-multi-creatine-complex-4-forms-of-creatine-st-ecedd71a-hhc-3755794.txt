@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nuclear Nutrition Synthesis Multi Creatine Complex | 4 Forms of Creatine | Strength & Performance Support 300g
 Product ID: hhc-3755794
 SKU: hhc-3755794
@@ -7,11 +8,16 @@ Slug: nuclear-nutrition-synthesis-multi-creatine-complex-4-forms-of-creatine-ece
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/bf966998e16f76716766190dfd343342.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/bf966998e16f76716766190dfd343342.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/e8abe842995ba085d1495ec6586a0a57.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/31ed222c8322cd5e453be8f87d91ee15.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/6c479098f6b856d553c2913205637674.jpeg
 Meta Title: Nuclear Nutrition Synthesis Multi Creatine Complex | 4 Forms of Crea
 Meta Description: Buy Nuclear Nutrition Synthesis Multi Creatine Complex | 4 Forms of Creatine | Strength & Performance Support 300g online in Pakistan from ASM VEO. Nuclear Nutr
 Description: Nuclear Nutrition Synthesis Multi Creatine Complex. 4 creatine forms, zero sugar. Supports strength & performance.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

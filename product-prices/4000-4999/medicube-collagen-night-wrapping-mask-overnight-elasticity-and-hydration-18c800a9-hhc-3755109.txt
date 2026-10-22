@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Medicube Collagen Night Wrapping Mask Overnight Elasticity And Hydration Peel Off Mask Providing Gentle Care - 75ML
 Product ID: hhc-3755109
 SKU: hhc-3755109
@@ -7,11 +8,16 @@ Slug: medicube-collagen-night-wrapping-mask-overnight-elasticity-and-hydratio-18
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/e3327e77b0684af673345f39fa4733f7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/e3327e77b0684af673345f39fa4733f7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/15e54be92f87fa72f242b06258e6cfcf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/ac6e6ff35f508b92c5ff781df8eb4ea3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/b3a6c5d165a08eddef072c425c7ae8e4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/b0cb46acf162709a33606b0da9d81b2a.png
 Meta Title: Medicube Collagen Night Wrapping Mask Overnight Elasticity And Hydra
 Meta Description: Buy Medicube Collagen Night Wrapping Mask Overnight Elasticity And Hydration Peel Off Mask Providing Gentle Care - 75ML online in Pakistan from ASM VEO. Overnig
 Description: Overnight collagen night mask. Deeply hydrates, repairs, and restores skin elasticity while you sleep.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

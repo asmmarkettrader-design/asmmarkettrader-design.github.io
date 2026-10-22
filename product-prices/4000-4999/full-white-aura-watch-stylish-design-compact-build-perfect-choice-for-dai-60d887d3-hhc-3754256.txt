@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Full White Aura Watch Stylish Design Compact Build Perfect Choice For Daily Use And Fashion Needs (Without Box)
 Product ID: hhc-3754256
 SKU: hhc-3754256
@@ -7,11 +8,16 @@ Slug: full-white-aura-watch-stylish-design-compact-build-perfect-choice-for-d-60
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/55b6b980d61ab2575ef59a6f705e4c9b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/55b6b980d61ab2575ef59a6f705e4c9b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/80e7bbb8f7fd7defd65ebf6804bcdf49.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/b44b055d781d508eb9a3729585c8578a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/8c7c378df24994c3772add4e5f360fea.jpeg
 Meta Title: Full White Aura Watch Stylish Design Compact Build Perfect Choice Fo
 Meta Description: Buy Full White Aura Watch Stylish Design Compact Build Perfect Choice For Daily Use And Fashion Needs (Without Box) online in Pakistan from ASM VEO. Full White
 Description: Full White Aura Watch Provides Durable Quality Reliable Utility Comfortable Wear Stylish Design And Compact Build
-Regular Price: 804
-Sale Price: 804
+Wholesale Price: 754
+Regular Price: 1440
+Sale Price: 1153
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

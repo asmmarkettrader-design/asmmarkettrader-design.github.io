@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: set of 6 Motivational wooden canvas frames for wall decore / sticky phototiles
 Product ID: hhc-2654280
 SKU: hhc-2654280
@@ -7,11 +8,16 @@ Slug: set-of-6-motivational-wooden-canvas-frames-for-wall-decore-sticky-phototil
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
-Meta Title: set of 6 Motivational wooden canvas frames for wall decore / sticky
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/5b7af079935b6e62db5dd9a11d737d6d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/5b7af079935b6e62db5dd9a11d737d6d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/46bf76b21c5da28ff8ae89981a280d8a-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/acce2c0f02bec0ca6e72aae5c0eafe28.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/acce2c0f02bec0ca6e72aae5c0eafe28.jpg_720x720q80.jpg_.webp
+Meta Title: set of 6 Motivational wooden canvas frames for wall decore / sticky 
 Meta Description: Buy set of 6 Motivational wooden canvas frames for wall decore / sticky phototiles online in Pakistan from ASM VEO. No of Frames: 6 Available in two sizes: 8x11
 Description: No of Frames: 6 Available in two sizes: 8x11inch Material: WoodenHigh quality Sticky tape attached on the wall for sticking on the wall. Hanging Hooks can also be attached on demandHigh quality Digital Printing. Laminated prints so thar Colours will not fade away.These are Motivarional wall art wooden canvas frames perfect for decorating home office or workplace. Material used are of high quality and modern design gives a new easthetic look to your room.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

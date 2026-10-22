@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Grid Japanese Dip Sauce Tray Plastic Sauce Dish Multi Section Condiment Tray for Dips Snacks and Sushi (Random Color)
 Product ID: hhc-3758080
 SKU: hhc-3758080
@@ -7,11 +8,16 @@ Slug: 3-grid-japanese-dip-sauce-tray-plastic-sauce-dish-multi-section-condime-95
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/4a48549aaa2695f6569a899518c4762a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/4a48549aaa2695f6569a899518c4762a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/fbdce962144ced62aa126a63fa3796f3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/33e596c11e991a20e6de3d69c08c385f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/e452043f5415a9bbeca4e3a4ebbaf332.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/56dcc4f351e0ed9c12d35d679b1e48d9.jpeg
 Meta Title: 3 Grid Japanese Dip Sauce Tray Plastic Sauce Dish Multi Section Cond
 Meta Description: Buy 3 Grid Japanese Dip Sauce Tray Plastic Sauce Dish Multi Section Condiment Tray for Dips Snacks and Sushi (Random Color) online in Pakistan from ASM VEO. Com
 Description: Compact 3-section sauce tray ideal for serving dips, chutneys, sauces, and snacks. Perfect for sushi, BBQ, and everyday dining.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

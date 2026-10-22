@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 10-Professional Hairdressing Combs For Women And Men
 Product ID: hhc-721468
 SKU: hhc-721468
@@ -7,11 +8,16 @@ Slug: pack-of-10-professional-hairdressing-combs-for-women-and-men-hhc-721468
 Category: Pets & Animals
 Subcategory: Grooming Products
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/e714d819e6ff09f0a55251073732e211.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/e714d819e6ff09f0a55251073732e211.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/b7bc7b0773023376fb0c4ff8d9924298.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/35fec8f89d3f20095adde54c72538357.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/efd907244475601f935e37371c613d92.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/d525f4814fccae95857524cd4f8a5d38.jpg_750x750.jpg_-1.webp
 Meta Title: Pack of 10-Professional Hairdressing Combs For Women And Men | Buy O
 Meta Description: Buy Pack of 10-Professional Hairdressing Combs For Women And Men online in Pakistan from ASM VEO. Product details Wide tooth combs For detangling Hairs Enable y
 Description: Product details Wide tooth combs For detangling Hairs Enable you to smooth your hair gently Hair Styling Tools Easy Styling Combs Reliable Quality Best Price Large Comb Easy to Comb Wet Hair Easy to Comb Tangling Hair High quality
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium High-Quality Beauty Box – Hard Shell Makeup Case with Modern X-Design
 Product ID: hhc-3758542
 SKU: hhc-3758542
@@ -7,11 +8,16 @@ Slug: premium-high-quality-beauty-box-hard-shell-makeup-case-with-modern-x-desig
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/c9de581604ccac504bcdd64c0a90c541.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/c9de581604ccac504bcdd64c0a90c541.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/dc306572b72c63ed35e27649968d43a4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/4ca10e1bcc8cff8cefe804a4dfbd790d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/4f2ffc71e0422c55c5dcfa3c98c51a34.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/1ac4508f16f78cb0fddda455e7635631.png
 Meta Title: Premium High-Quality Beauty Box – Hard Shell Makeup Case with Modern
 Meta Description: Buy Premium High-Quality Beauty Box – Hard Shell Makeup Case with Modern X-Design online in Pakistan from ASM VEO. Protect your luxury cosmetics with this High-
 Description: Protect your luxury cosmetics with this High-Quality Beauty Box. Featuring a sophisticated X-embossed design and a durable hard-shell exterior, this travel-ready vanity case offers premium protection for all your beauty essentials.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

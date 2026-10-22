@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Montessori Quiet Busy Book for Toddlers – 12 Theme Educational Learning Activity Book for Kids | Early Development Toy
 Product ID: hhc-3753274
 SKU: hhc-3753274
@@ -7,11 +8,16 @@ Slug: montessori-quiet-busy-book-for-toddlers-12-theme-educational-learning-a-82
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/701117f73ae9712004dc0ee4b463665f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/701117f73ae9712004dc0ee4b463665f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/9570aa7727c983441b7b5b019ff41998.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/62cba0c084fcf42fe1afd90774bea5ce.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/febd756a36bf342679eae628a4d2512e.jpg
 Meta Title: Montessori Quiet Busy Book for Toddlers – 12 Theme Educational Learn
 Meta Description: Buy Montessori Quiet Busy Book for Toddlers – 12 Theme Educational Learning Activity Book for Kids | Early Development Toy online in Pakistan from ASM VEO. Inte
 Description: Interactive Montessori busy book with 12 themes — boosts learning, focus, and fine motor skills for toddlers and preschoolers.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

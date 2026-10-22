@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Studio Glow (4 Bulb Vanity Light)
 Product ID: hhc-695549
 SKU: hhc-695549
@@ -7,11 +8,16 @@ Slug: studio-glow-4-bulb-vanity-light-hhc-695549
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/s-l960-3-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/s-l960-3-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/s-l960-2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/s-l960-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/s-l960.jpg
 Meta Title: Studio Glow (4 Bulb Vanity Light) | Buy Online in Pakistan
 Meta Description: Buy Studio Glow (4 Bulb Vanity Light) online in Pakistan from ASM VEO. Studio Glow Vanity Make Up Light Cordless Portable Design Stay-Cool Bulbs. Turn any mirro
 Description: Studio Glow Vanity Make Up Light Cordless Portable Design Stay-Cool Bulbs. Turn any mirror into a professional makeup mirror with Studio Glow LED make up lighting. Lightweight and portable, easy set up, requires four AA batteries. Handy suction cups to attach to any flat surface, like a mirror.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

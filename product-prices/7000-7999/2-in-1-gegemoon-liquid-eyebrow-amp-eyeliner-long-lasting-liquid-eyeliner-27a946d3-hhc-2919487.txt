@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 Gegemoon Liquid Eyebrow &amp; Eyeliner | Long Lasting Liquid Eyeliner &amp; Eyebrow Pencil
 Product ID: hhc-2919487
 SKU: hhc-2919487
@@ -7,11 +8,16 @@ Slug: 2-in-1-gegemoon-liquid-eyebrow-amp-eyeliner-long-lasting-liquid-eyeline-27
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-06-at-2.23.36-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-06-at-2.23.36-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-06-at-2.23.36-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-06-at-2.23.35-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-06-at-2.23.36-PM-3.jpeg
 Meta Title: 2 in 1 Gegemoon Liquid Eyebrow &amp; Eyeliner | Long Lasting Liquid
 Meta Description: Buy 2 in 1 Gegemoon Liquid Eyebrow &amp; Eyeliner | Long Lasting Liquid Eyeliner &amp; Eyebrow Pencil online in Pakistan from ASM VEO. 2 in 1 Gegemoon Liquid Ey
 Description: 2 in 1 Gegemoon Liquid Eyebrow &amp; Eyeliner | Long Lasting Liquid Eyeliner &amp; Eyebrow Pencil Material: liquid Product Type: 2 in 1 eyebrow pen Package Includes: 1 x Eyebrows Pencil, 1 x Eyeliner
-Regular Price: 488
-Sale Price: 488
+Wholesale Price: 438
+Regular Price: 900
+Sale Price: 717
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

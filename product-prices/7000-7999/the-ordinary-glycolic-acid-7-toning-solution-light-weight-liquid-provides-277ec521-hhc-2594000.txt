@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Ordinary Glycolic Acid 7% Toning Solution Light Weight Liquid Provides Sun Protection 240ml
 Product ID: hhc-2594000
 SKU: hhc-2594000
@@ -7,11 +8,16 @@ Slug: the-ordinary-glycolic-acid-7-toning-solution-light-weight-liquid-provid-27
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/ORD-GATS-bmin.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/ORD-GATS-bmin.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/mas-rdn-glycolic-acid-7pct-toning-solution-lifestyle_1024x1024-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/The-Ordinary-Glycolic-Acid-7-Toning-Solution-240ML-2_360x.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.56.56-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-12.56.56-PM-1.jpeg
 Meta Title: The Ordinary Glycolic Acid 7% Toning Solution Light Weight Liquid Pr
 Meta Description: Buy The Ordinary Glycolic Acid 7% Toning Solution Light Weight Liquid Provides Sun Protection 240ml online in Pakistan from ASM VEO. Product DescriptionThe Ordi
 Description: Product DescriptionThe Ordinary Glycolic Acid 7% Toning Solution gently exfoliates skin, removing dead cells for a brighter, more revitalized complexion. This AHA is formulated with a focus on minimizing irritation and enhancing skin health.SIZE: 240 MLSKIN TYPE: ALL SKIN TYPESIDEAL FOR: DRYNESS | UNEVEN SKIN TONE | DULLNESSFORMULATION: LIGHTWEIGHT LIQUIDExfoliates the skin with alpha hydroxy acidImproves skin radiance and visible clarityReducing irritation, dullnessEnhances skin texture with continued useProvides sun protectionFragrance freeUse in eveningIt is a daily use productQuality : Copy
-Regular Price: 1996
-Sale Price: 1996
+Wholesale Price: 1996
+Regular Price: 3590
+Sale Price: 2875
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

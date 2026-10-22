@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Scenic Mountain Waterfall Wooden Art Frame | Peaceful Forest Cabin Wall Decor |Artistic Nature Painting Piece 12x16 Inches
 Product ID: hhc-3757893
 SKU: hhc-3757893
@@ -7,11 +8,16 @@ Slug: scenic-mountain-waterfall-wooden-art-frame-peaceful-forest-cabin-wall-d-57
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/b47f4d8147e22e6641692e000c583bd0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/b47f4d8147e22e6641692e000c583bd0.jpeg
 Meta Title: Scenic Mountain Waterfall Wooden Art Frame | Peaceful Forest Cabin W
 Meta Description: Buy Scenic Mountain Waterfall Wooden Art Frame | Peaceful Forest Cabin Wall Decor |Artistic Nature Painting Piece 12x16 Inches online in Pakistan from ASM VEO.
 Description: Bring the calming essence of the wilderness into your home with this Majestic Waterfall Cabin Wooden Art Frame. This 12x16 inch piece captures a serene forest landscape featuring a glowing sunset and a hidden cabin. Includes double tape for an instant, drill-free installation.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

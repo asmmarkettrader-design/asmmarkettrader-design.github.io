@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 30 Pcs Eidi Note Size Envelopes – Mix Colors | Pakistani Currency Money Envelopes for Eidi, Weddings & Gift Giving | Without Adhesive Tape
 Product ID: hhc-3762297
 SKU: hhc-3762297
@@ -7,11 +8,16 @@ Slug: 30-pcs-eidi-note-size-envelopes-mix-colors-pakistani-currency-money-env-2f
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/8401828e1df2447b5e87a6994c46c347.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/8401828e1df2447b5e87a6994c46c347.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/bf3a1acc4810584ca8da679bfd3081fa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/c797f7dc0c682cb80661db0494ca62ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/baaa68ae7612ed7212e38a16f81edc99.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/22/85cd614153d638a21341e2115dfdc770.jpeg
 Meta Title: 30 Pcs Eidi Note Size Envelopes – Mix Colors | Pakistani Currency Mo
 Meta Description: Buy 30 Pcs Eidi Note Size Envelopes – Mix Colors | Pakistani Currency Money Envelopes for Eidi, Weddings & Gift Giving | Without Adhesive Tape online in Pakista
 Description: Celebrate every special occasion with this 30 Pieces Eidi Note Size Envelopes Set.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

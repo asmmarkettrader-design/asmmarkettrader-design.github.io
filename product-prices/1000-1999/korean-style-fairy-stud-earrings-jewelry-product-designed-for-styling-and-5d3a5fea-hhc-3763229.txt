@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Korean-Style Fairy Stud Earrings - Jewelry Product Designed For Styling And Daily Outfit Routine
 Product ID: hhc-3763229
 SKU: hhc-3763229
@@ -7,11 +8,16 @@ Slug: korean-style-fairy-stud-earrings-jewelry-product-designed-for-styling-a-5d
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/5d46decc0dd04e75bfbd5a3900f69398.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/5d46decc0dd04e75bfbd5a3900f69398.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/f35eb78fdbadf384e2d390a8eb6f8207.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/cac9c3be47d9eae9f962e3983add268b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/9466d3ad72ea34a36a71186c9f7128d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/5ded01440bd6fa190536c51e1e57cb1c.jpeg
 Meta Title: Korean-Style Fairy Stud Earrings - Jewelry Product Designed For Styl
 Meta Description: Buy Korean-Style Fairy Stud Earrings - Jewelry Product Designed For Styling And Daily Outfit Routine online in Pakistan from ASM VEO. The Korean-Style Fairy Stu
 Description: The Korean-Style Fairy Stud Earrings Is A Jewelry Product Formulated To Help Provide Styling And Daily Outfit Utility During Use.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

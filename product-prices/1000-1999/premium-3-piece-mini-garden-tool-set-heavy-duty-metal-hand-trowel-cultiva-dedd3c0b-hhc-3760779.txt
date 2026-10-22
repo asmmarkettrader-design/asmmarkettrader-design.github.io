@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium 3-Piece Mini Garden Tool Set – Heavy-Duty Metal Hand Trowel, Cultivator Rake, and Ergonomic Garden Fork for Indoor and Outdoor Plant Care
 Product ID: hhc-3760779
 SKU: hhc-3760779
@@ -7,11 +8,16 @@ Slug: premium-3-piece-mini-garden-tool-set-heavy-duty-metal-hand-trowel-culti-de
 Category: Tools & DIY
 Subcategory: Gardening Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/c7e3e02ddc17585b5b448ad7525e0149.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/c7e3e02ddc17585b5b448ad7525e0149.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/666a8cea9f74d4d42a5d7262c1b12ce7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/7259d93d812ef6e1d8ffd38c8663b09e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/c19591bbfdceda3dd00e9015e97286d4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/391848e20d7eba18b518cfdf543f55ce.png
 Meta Title: Premium 3-Piece Mini Garden Tool Set – Heavy-Duty Metal Hand Trowel,
 Meta Description: Buy Premium 3-Piece Mini Garden Tool Set – Heavy-Duty Metal Hand Trowel, Cultivator Rake, and Ergonomic Garden Fork for Indoor and Outdoor Plant Care online in
 Description: Nurture your indoor plants, succulents, and small garden beds effortlessly with this Premium 3-Piece Mini Garden Tool Set.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

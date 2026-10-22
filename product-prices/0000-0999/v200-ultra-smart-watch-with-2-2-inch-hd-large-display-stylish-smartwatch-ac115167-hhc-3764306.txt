@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: V200 Ultra Smart Watch with 2.2-Inch HD Large Display | Stylish Smartwatch for Men & Women
 Product ID: hhc-3764306
 SKU: hhc-3764306
@@ -7,11 +8,16 @@ Slug: v200-ultra-smart-watch-with-2-2-inch-hd-large-display-stylish-smartwatc-ac
 Category: Gadgets
 Subcategory: Smart Watches
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/63077a6052540fafdf0c62e6bc77a06b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/63077a6052540fafdf0c62e6bc77a06b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/129e54800b5f78f71278e6a864fb91e6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/fc6afb5ae9c8955291357fd78e4fc39f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/0b956a8716575d34f82cbe13fefa2113.jpg
 Meta Title: V200 Ultra Smart Watch with 2.2-Inch HD Large Display | Stylish Smar
 Meta Description: Buy V200 Ultra Smart Watch with 2.2-Inch HD Large Display | Stylish Smartwatch for Men & Women online in Pakistan from ASM VEO. V200 Ultra Smart Watch featuring
 Description: V200 Ultra Smart Watch featuring a large 2.2-inch HD display with a stylish design. Ideal for everyday wear, notifications, time tracking, and convenient smart features.
-Regular Price: 2152
-Sale Price: 2152
+Wholesale Price: 2152
+Regular Price: 3860
+Sale Price: 3085
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

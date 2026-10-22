@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 In 1 Eyebrow Pencil Brush And Razor Comfortable Use Smooth Application Compact Design For Daily Grooming Needs
 Product ID: hhc-3754282
 SKU: hhc-3754282
@@ -7,11 +8,16 @@ Slug: 3-in-1-eyebrow-pencil-brush-and-razor-comfortable-use-smooth-applicatio-10
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/488c93098a4da70eda12246e9d43ea5f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/488c93098a4da70eda12246e9d43ea5f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/457727896a22bdf5ad79ccb7f7453eb7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/cf51b0e08b77cb7a5e3c3e9cba92b5f5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/ad9d658907830629ba24540b66dfc0ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/738a50ad8a9895fe65e967442707046a.jpeg
 Meta Title: 3 In 1 Eyebrow Pencil Brush And Razor Comfortable Use Smooth Applica
 Meta Description: Buy 3 In 1 Eyebrow Pencil Brush And Razor Comfortable Use Smooth Application Compact Design For Daily Grooming Needs online in Pakistan from ASM VEO. 3 In 1 Eye
 Description: 3 In 1 Eyebrow Pencil Brush And Razor Provides Durable Quality Reliable Utility Comfortable Use Smooth Application And Compact Design
-Regular Price: 587
-Sale Price: 587
+Wholesale Price: 537
+Regular Price: 1050
+Sale Price: 839
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

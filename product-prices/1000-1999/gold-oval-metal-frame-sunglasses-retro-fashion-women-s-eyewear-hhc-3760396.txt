@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gold Oval Metal Frame Sunglasses | Retro Fashion Women's Eyewear
 Product ID: hhc-3760396
 SKU: hhc-3760396
@@ -7,11 +8,16 @@ Slug: gold-oval-metal-frame-sunglasses-retro-fashion-women-s-eyewear-hhc-3760396
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/ef731563197364f384689e7aededa791.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/ef731563197364f384689e7aededa791.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/99b43aff49c60903e1361222c6d2b677.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/17/54b7e9772ac2a3011cfdc5e1fbee220a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/bd7673ed2b6ebc6d924ea35b4a18e776.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/cf7b653a6dc050a5e42a8d1f264d707d.jfif
 Meta Title: Gold Oval Metal Frame Sunglasses | Retro Fashion Women's Eyewear | B
 Meta Description: Buy Gold Oval Metal Frame Sunglasses | Retro Fashion Women's Eyewear online in Pakistan from ASM VEO. Elegant women's oval sunglasses featuring a premium gold m
 Description: Elegant women's oval sunglasses featuring a premium gold metal frame, lightweight design, and comfortable fit. Perfect for casual wear, travel, driving, and outdoor styling.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

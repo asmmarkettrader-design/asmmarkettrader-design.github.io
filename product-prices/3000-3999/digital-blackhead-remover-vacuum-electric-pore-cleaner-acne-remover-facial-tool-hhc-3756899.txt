@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital Blackhead Remover Vacuum – Electric Pore Cleaner & Acne Remover Facial Tool
 Product ID: hhc-3756899
 SKU: hhc-3756899
@@ -7,11 +8,16 @@ Slug: digital-blackhead-remover-vacuum-electric-pore-cleaner-acne-remover-facial
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/4a835abe275f5f85bf75f8f22db19b6c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/4a835abe275f5f85bf75f8f22db19b6c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/17/511b3978f10a445a4ce5af22ba58dd01.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/46cf41a0b9712775b1f02518a14dfc4d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/486f02fcd033fffb96112efa7b82e8cf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/798602359fbed36b29b7ed656458e5da.jpg
 Meta Title: Digital Blackhead Remover Vacuum – Electric Pore Cleaner & Acne Remo
 Meta Description: Buy Digital Blackhead Remover Vacuum – Electric Pore Cleaner & Acne Remover Facial Tool online in Pakistan from ASM VEO. The Digital Blackhead Remover is a powe
 Description: The Digital Blackhead Remover is a powerful electric pore cleaner designed to remove blackheads, whiteheads, and excess oil from the skin. Its vacuum suction technology deeply cleans pores and helps keep your skin fresh and smooth.
-Regular Price: 993
-Sale Price: 993
+Wholesale Price: 943
+Regular Price: 1780
+Sale Price: 1427
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

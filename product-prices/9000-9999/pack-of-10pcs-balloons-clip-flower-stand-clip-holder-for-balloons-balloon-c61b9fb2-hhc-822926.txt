@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 10pcs Balloons Clip - Flower Stand Clip Holder for Balloons - Balloons Tie Holder Birthday Wedding Party Decoration
 Product ID: hhc-822926
 SKU: hhc-822926
@@ -7,11 +8,16 @@ Slug: pack-of-10pcs-balloons-clip-flower-stand-clip-holder-for-balloons-ballo-c6
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Pack Of 10pcs Balloons Clip - Flower Stand Clip Holder for Balloons
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.55.30-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.55.30-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.55.25-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.55.26-PM-3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.55.26-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-15-at-1.55.26-PM-2.jpeg
+Meta Title: Pack Of 10pcs Balloons Clip - Flower Stand Clip Holder for Balloons 
 Meta Description: Buy Pack Of 10pcs Balloons Clip - Flower Stand Clip Holder for Balloons - Balloons Tie Holder Birthday Wedding Party Decoration online in Pakistan from ASM VEO.
 Description: Diameter:6.5cmSize (1 inch =2.54 cm, 1 cm=0.39 inch) :Note: Please allow 0.5-1 inch differs due to manual measurement.Material: PlasticColor:WhitePieces : 6 PiecesDiameter:6.5cmSize (1 inch =2.54 cm, 1 cm=0.39 inch) :Note: Please allow 0.5-1 inch differs due to manual measurement.Material: PlasticColor:White
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

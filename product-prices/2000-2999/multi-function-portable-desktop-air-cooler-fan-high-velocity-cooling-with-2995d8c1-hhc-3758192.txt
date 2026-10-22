@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi-Function Portable Desktop Air Cooler Fan – High-Velocity Cooling with LED Lighting, Adjustable Speed, and Built-in Humidifier Mist (Size 10 Inch)
 Product ID: hhc-3758192
 SKU: hhc-3758192
@@ -7,11 +8,16 @@ Slug: multi-function-portable-desktop-air-cooler-fan-high-velocity-cooling-wi-29
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/a95118ee89b1893f4fd7c9c16ab040a9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/a95118ee89b1893f4fd7c9c16ab040a9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/8fed5c966946bc42d47631cb05ac7a1a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/5d1096840e5f3841de13fef57e75b6ae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/5784140541cf7bbfb1d2db4c67826327.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/27/6293cbbefe377e6d5c32d307423cb003.jpeg
 Meta Title: Multi-Function Portable Desktop Air Cooler Fan – High-Velocity Cooli
 Meta Description: Buy Multi-Function Portable Desktop Air Cooler Fan – High-Velocity Cooling with LED Lighting, Adjustable Speed, and Built-in Humidifier Mist (Size 10 Inch) onli
 Description: Stay cool and comfortable with this 3-in-1 Portable Air Cooler Fan. Featuring adjustable speed controls, a built-in misting function for extra cooling, and vibrant LED lighting, it’s the perfect modern solution for your office desk, study area, or bedside table.
-Regular Price: 2235
-Sale Price: 2235
+Wholesale Price: 2235
+Regular Price: 4000
+Sale Price: 3197
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

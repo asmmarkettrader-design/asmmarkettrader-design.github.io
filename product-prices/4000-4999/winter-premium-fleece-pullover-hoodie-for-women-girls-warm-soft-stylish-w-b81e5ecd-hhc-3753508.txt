@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Premium Fleece Pullover Hoodie for Women & Girls | Warm, Soft & Stylish Winter Wear | Cozy Casual Hoodie
 Product ID: hhc-3753508
 SKU: hhc-3753508
@@ -7,11 +8,16 @@ Slug: winter-premium-fleece-pullover-hoodie-for-women-girls-warm-soft-stylish-b8
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/e121d6d0b92897aab9fa748d0603edd3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/e121d6d0b92897aab9fa748d0603edd3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/edefef35da77870a590b88fc0b28d00d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/87f673998cf433f425d76f6a1d46e26b.jpeg
 Meta Title: Winter Premium Fleece Pullover Hoodie for Women & Girls | Warm, Soft
 Meta Description: Buy Winter Premium Fleece Pullover Hoodie for Women & Girls | Warm, Soft & Stylish Winter Wear | Cozy Casual Hoodie online in Pakistan from ASM VEO. Soft and wa
 Description: Soft and warm premium fleece pullover hoodie for women and girls. Perfect for winter casual wear, outings, and cozy indoor comfort.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

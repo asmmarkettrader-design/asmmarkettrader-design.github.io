@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Whitening Powder (50g) discover fresh and fair look
 Product ID: hhc-1884079
 SKU: hhc-1884079
@@ -7,11 +8,16 @@ Slug: whitening-powder-50g-discover-fresh-and-fair-look-hhc-1884079
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Whitening_Powder_Small_537bc73e-9b86-4fe4-ab0f-4587f1f36523.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Whitening_Powder_Small_537bc73e-9b86-4fe4-ab0f-4587f1f36523.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Whitening-Powder-50g.webp
 Meta Title: Whitening Powder (50g) discover fresh and fair look | Buy Online in
 Meta Description: Buy Whitening Powder (50g) discover fresh and fair look online in Pakistan from ASM VEO. product details product ;Whitening Powder net weight : 50g discover fre
 Description: product details product ;Whitening Powder net weight : 50g discover fresh and fair look your beauty is our strength
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

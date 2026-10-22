@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Heating Pad Heat Pouch Hot Water Bottle Bag – Random Color
 Product ID: hhc-2357338
 SKU: hhc-2357338
@@ -7,11 +8,16 @@ Slug: electric-heating-pad-heat-pouch-hot-water-bottle-bag-random-color-hhc-2357
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Electric Heating Pad Heat Pouch Hot Water Bottle Bag – Random Color
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-22-at-4.02.08-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-22-at-4.02.08-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-22-at-4.02.02-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-22-at-4.02.02-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-22-at-4.02.02-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-22-at-4.02.04-PM-2.jpeg
+Meta Title: Electric Heating Pad Heat Pouch Hot Water Bottle Bag – Random Color 
 Meta Description: Buy Electric Heating Pad Heat Pouch Hot Water Bottle Bag – Random Color online in Pakistan from ASM VEO. Enjoy soothing warmth with this electric heating pad, d
 Description: Enjoy soothing warmth with this electric heating pad, designed for convenient heat therapy and relaxation. Suitable for the back, abdomen, legs, and other areas, with color supplied randomly.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

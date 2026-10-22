@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lily Gauze Swab / Sponge Pad – Pack of 12 Sterile, Soft & Absorbent Medical Pads for Wound Care, Dressing, Cleaning & First-Aid Use
 Product ID: hhc-3755664
 SKU: hhc-3755664
@@ -7,11 +8,16 @@ Slug: lily-gauze-swab-sponge-pad-pack-of-12-sterile-soft-absorbent-medical-pa-ea
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Lily Gauze Swab / Sponge Pad – Pack of 12 Sterile, Soft & Absorbent
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/e56ae9c384a3866d2217b3c6141c1952.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/e56ae9c384a3866d2217b3c6141c1952.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/db68ab1bce189fb7ebfbdabb7d9f7298.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/5726f25038a7c0dcc2078b43ecd651ec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/bbf79ef19ba71effd691037ab1a28240.jpeg
+Meta Title: Lily Gauze Swab / Sponge Pad – Pack of 12 Sterile, Soft & Absorbent 
 Meta Description: Buy Lily Gauze Swab / Sponge Pad – Pack of 12 Sterile, Soft & Absorbent Medical Pads for Wound Care, Dressing, Cleaning & First-Aid Use online in Pakistan from
 Description: Pack of 12 sterile, soft, and highly absorbent gauze swabs/sponge pads for safe wound care, dressing, and first-aid applications.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

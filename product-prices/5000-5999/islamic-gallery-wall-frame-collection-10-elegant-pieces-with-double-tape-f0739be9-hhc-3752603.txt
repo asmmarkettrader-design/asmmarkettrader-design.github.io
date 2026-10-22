@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Gallery Wall Frame Collection – 10 Elegant Pieces with Double Tape for Easy Mounting
 Product ID: hhc-3752603
 SKU: hhc-3752603
@@ -7,11 +8,16 @@ Slug: islamic-gallery-wall-frame-collection-10-elegant-pieces-with-double-tap-f0
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/d909b80eaca4cdd41ddca4eae60be7c2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/d909b80eaca4cdd41ddca4eae60be7c2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/b53119d2e131eba47f89303272fbebf7.jpeg
 Meta Title: Islamic Gallery Wall Frame Collection – 10 Elegant Pieces with Doubl
 Meta Description: Buy Islamic Gallery Wall Frame Collection – 10 Elegant Pieces with Double Tape for Easy Mounting online in Pakistan from ASM VEO. Enhance your space with this 1
 Description: Enhance your space with this 10-piece Islamic Wall Art Frame Set, featuring elegant Arabic calligraphy and abstract designs in calming tones. Includes double tape for easy wall mounting—perfect for modern, faith-inspired home décor.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

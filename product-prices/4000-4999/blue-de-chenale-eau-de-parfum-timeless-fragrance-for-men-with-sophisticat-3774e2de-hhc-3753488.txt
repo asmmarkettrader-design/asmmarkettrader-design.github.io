@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Blue De Chenale Eau De Parfum – Timeless Fragrance For Men With Sophisticated, Woody, And Aromatic (100 ml)
 Product ID: hhc-3753488
 SKU: hhc-3753488
 Slug: blue-de-chenale-eau-de-parfum-timeless-fragrance-for-men-with-sophistic-3774e2de-hhc-3753488
-Category: Events & Gifting
+Category: Beauty & Personal Care
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/f3428a2669cb75a5a36198b5a03b1ed8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/f3428a2669cb75a5a36198b5a03b1ed8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/7383bd0c32918b6e20a13b9406f21ca2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/c36cad5882da8f8ca73a6acba67da0ff.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/feed5526597cbd2617e34b688aa1a2ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/65abd26f7cc79c9130799dff86b00093.jpeg
 Meta Title: Blue De Chenale Eau De Parfum – Timeless Fragrance For Men With Soph
 Meta Description: Buy Blue De Chenale Eau De Parfum – Timeless Fragrance For Men With Sophisticated, Woody, And Aromatic (100 ml) online in Pakistan from ASM VEO. Blue De Chenale
 Description: Blue De Chenale Eau De Parfum Is A Refined Fragrance For Men That Combines Woody And Aromatic Notes To Create A Bold, Elegant, And Timeless Scent.
-Regular Price: 3031
-Sale Price: 3031
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

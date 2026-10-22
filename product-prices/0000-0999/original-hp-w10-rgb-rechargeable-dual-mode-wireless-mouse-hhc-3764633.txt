@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Original HP W10 RGB Rechargeable Dual-Mode Wireless Mouse
 Product ID: hhc-3764633
 SKU: hhc-3764633
@@ -7,11 +8,16 @@ Slug: original-hp-w10-rgb-rechargeable-dual-mode-wireless-mouse-hhc-3764633
 Category: Electronics
 Subcategory: Computers & Laptops
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/60c9da4b711f087d3eca944cf7552b37.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/60c9da4b711f087d3eca944cf7552b37.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/35943f1e6df072c066a26ac7f2b03290.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/e94099c292b52ba91e9ad363b531f8c8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/953f443f4d6cd7a6c0714245f4eb16b4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/32afceadcbc2cc6b7485e6c708af96a7.png
 Meta Title: Original HP W10 RGB Rechargeable Dual-Mode Wireless Mouse | Buy Onli
 Meta Description: Buy Original HP W10 RGB Rechargeable Dual-Mode Wireless Mouse online in Pakistan from ASM VEO. Original HP W10 Professional Dual-Mode Gaming &amp; Office Mouse.
 Description: Original HP W10 Professional Dual-Mode Gaming &amp; Office Mouse. Features: - Dual-Mode: Bluetooth 5.1 &amp; 2.4GHz Wireless (USB receiver included) - RGB LED lighting - Rechargeable battery - Silent Click technology - Sleek and ergonomic design. Note: A high-quality rechargeable mouse suitable for both gaming and professional office use.
-Regular Price: 938
-Sale Price: 938
+Wholesale Price: 888
+Regular Price: 1680
+Sale Price: 1348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

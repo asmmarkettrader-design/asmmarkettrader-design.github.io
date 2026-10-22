@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M9 Pro Wireless Microphone / Wireless Microphone Video Recording Microphone For Streaming
 Product ID: hhc-3762479
 SKU: hhc-3762479
@@ -7,11 +8,16 @@ Slug: m9-pro-wireless-microphone-wireless-microphone-video-recording-micropho-9b
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/a2a7763b01acf0c066962855de33410b.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/a2a7763b01acf0c066962855de33410b.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/5df4b732bfc6362955816e5db9b5b61e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/e6bd155aabaf9f45a074b5d7de8a2924.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/e238592e002f141642aad45832df176f.webp
 Meta Title: M9 Pro Wireless Microphone / Wireless Microphone Video Recording Mic
 Meta Description: Buy M9 Pro Wireless Microphone / Wireless Microphone Video Recording Microphone For Streaming online in Pakistan from ASM VEO. M9 Pro Wireless Microphone – The
 Description: M9 Pro Wireless Microphone – The Best Noise Cancelling Mic for Vlogging & Streaming Looking for the best wireless mic for vlogging that delivers studio-quality audio without breaking the bank? The M9 Pro Wireless Microphone is your perfect choice! With advanced noise cancellation, long battery life,
-Regular Price: 3358
-Sale Price: 3358
+Wholesale Price: 3358
+Regular Price: 5680
+Sale Price: 4545
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

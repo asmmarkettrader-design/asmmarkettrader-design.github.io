@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Navy Blue Ghost Skull Printed Tracksuit Set | Winter Fleece Sweatshirt & Trouser Outfit for Boys & Girls – Warm, Trendy & Cool | FOR BABY AND KIDS
 Product ID: hhc-3753465
 SKU: hhc-3753465
@@ -7,11 +8,16 @@ Slug: kids-navy-blue-ghost-skull-printed-tracksuit-set-winter-fleece-sweatshi-ee
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/ecd8b16045bc4045c434d8373cbd2c40.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/ecd8b16045bc4045c434d8373cbd2c40.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/4044b8f79f6f01d30fc11deab842d802.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/5d90a546a6ba647e9d25cb4baa9c852b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/d8b632cd7486d7d4b2a5d5ab62541161.jpeg
 Meta Title: Kids Navy Blue Ghost Skull Printed Tracksuit Set | Winter Fleece Swe
 Meta Description: Buy Kids Navy Blue Ghost Skull Printed Tracksuit Set | Winter Fleece Sweatshirt & Trouser Outfit for Boys & Girls – Warm, Trendy & Cool | FOR BABY AND KIDS onli
 Description: Stylish Ghost Skull printed navy blue winter tracksuit for kids. Cozy fleece sweatshirt and trouser set — soft, warm, and full of attitude.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 4 Transparent Silicon Table Corner Protector
 Product ID: hhc-1542830
 SKU: hhc-1542830
@@ -7,11 +8,16 @@ Slug: pack-of-4-transparent-silicon-table-corner-protector-hhc-1542830
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/2-1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/2-1.webp
 Meta Title: Pack Of 4 Transparent Silicon Table Corner Protector | Buy Online in
 Meta Description: Buy Pack Of 4 Transparent Silicon Table Corner Protector online in Pakistan from ASM VEO. Color: Transparent Applicable To: Table Material: PVC soft rubber Type
 Description: Color: Transparent Applicable To: Table Material: PVC soft rubber Type: Edge &amp; Corner Guards [video width="720" height="720" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2022/10/Md082oCbfiVVBWW4SRq_285616640444_hd_hq.mp4"][/video]
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

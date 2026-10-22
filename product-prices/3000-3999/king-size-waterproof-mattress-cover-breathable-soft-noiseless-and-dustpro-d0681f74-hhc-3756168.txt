@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: King Size Waterproof Mattress Cover | Breathable, Soft, Noiseless, And Dustproof Protection For Ultimate Bed Comfort And Hygiene (Random Color)
 Product ID: hhc-3756168
 SKU: hhc-3756168
@@ -7,11 +8,16 @@ Slug: king-size-waterproof-mattress-cover-breathable-soft-noiseless-and-dustp-d0
 Category: Home & Kitchen
 Subcategory: Bedding & Linen
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/603f93858a9e67ef7adfef331304ab86.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/603f93858a9e67ef7adfef331304ab86.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/5d15343eda0902b5e28d0789f5c930a8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/0eb0f16bfc2ee8af89315941ae7c63aa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/e3dbb62e09da7df0c6ae543360bef5ab.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/cf0351da78150f826cdec1674a1adfa7.png
 Meta Title: King Size Waterproof Mattress Cover | Breathable, Soft, Noiseless, A
 Meta Description: Buy King Size Waterproof Mattress Cover | Breathable, Soft, Noiseless, And Dustproof Protection For Ultimate Bed Comfort And Hygiene (Random Color) online in Pa
 Description: High Quality King Size Waterproof Mattress Cover That Protects Against Spills, Stains, Dust, And Allergens While Ensuring Comfort, Breathability, And Durability.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

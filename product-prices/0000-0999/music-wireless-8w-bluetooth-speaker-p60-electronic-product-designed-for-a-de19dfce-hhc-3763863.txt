@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Music Wireless 8W Bluetooth Speaker P60 - Electronic Product Designed For Audio And Daily Sound Routine (Random Color)
 Product ID: hhc-3763863
 SKU: hhc-3763863
@@ -7,11 +8,16 @@ Slug: music-wireless-8w-bluetooth-speaker-p60-electronic-product-designed-for-de
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/197fb793c0ed7a9d042ad7fcce497a72.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/197fb793c0ed7a9d042ad7fcce497a72.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/eddd64d7c43016947c9942a6aa7f385d.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/12ee9f830b4f4dcee6c422012541d383.jpeg
 Meta Title: Music Wireless 8W Bluetooth Speaker P60 - Electronic Product Designe
 Meta Description: Buy Music Wireless 8W Bluetooth Speaker P60 - Electronic Product Designed For Audio And Daily Sound Routine (Random Color) online in Pakistan from ASM VEO. The
 Description: The Music Wireless 8W Bluetooth Speaker P60 Is An Electronic Product Formulated To Help Provide Audio And Daily Sound Utility During Use.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

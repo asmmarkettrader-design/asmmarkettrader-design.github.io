@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Fabric Cleaning Brush, Cloth Brush, Cloth Washing Brush, Fabric Cleaning Brush, Stain Removing Brush, (Random Color))
 Product ID: hhc-2575479
 SKU: hhc-2575479
@@ -7,11 +8,16 @@ Slug: premium-fabric-cleaning-brush-cloth-brush-cloth-washing-brush-fabric-cl-d4
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Sa65d4d10e8554447a7177b033e604641a.jpg_220x220q75.jpg_-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/Sa65d4d10e8554447a7177b033e604641a.jpg_220x220q75.jpg_-1.jpg
 Meta Title: Premium Fabric Cleaning Brush, Cloth Brush, Cloth Washing Brush, Fab
 Meta Description: Buy Premium Fabric Cleaning Brush, Cloth Brush, Cloth Washing Brush, Fabric Cleaning Brush, Stain Removing Brush, (Random Color)) online in Pakistan from ASM VE
 Description: PRODUCT DESCRIPTIONRoyal Touch premium cloth brush is made of longer flexible bristles for quick cleaning. The one small side of the brush consist of harder bristles for cleaning tough stains and the rest bristles are softer for normal cleaning. The edges of the brush is smooth which ensure that your clothes are safe while using it. It has an ergonomic design with comfort grip for easy cleaning.PRODUCT HIGHLIGHTSMaterial: PlasticPerfect combination of hard and soft bristlesComfort and ergonomic designCleans fabrics thoroughly without damaging fine threadsPRODUCT INFORMATIONLENGTH (6INC/15CM) BREATH (3INC/7CM)
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

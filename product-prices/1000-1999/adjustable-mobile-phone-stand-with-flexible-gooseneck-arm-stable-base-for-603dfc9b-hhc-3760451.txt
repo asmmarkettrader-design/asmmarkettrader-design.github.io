@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Adjustable Mobile Phone Stand with Flexible Gooseneck Arm & Stable Base for Recording, Live Streaming & Video Calls
 Product ID: hhc-3760451
 SKU: hhc-3760451
@@ -7,11 +8,16 @@ Slug: adjustable-mobile-phone-stand-with-flexible-gooseneck-arm-stable-base-f-60
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/75df5b4ae57d79fcbf55a378cd9ff8d8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/75df5b4ae57d79fcbf55a378cd9ff8d8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/b4e868272e130b39c84e7a2bb51efbcd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/90f02ff71e1cc394fdc756ead8a66223.jpeg
 Meta Title: Adjustable Mobile Phone Stand with Flexible Gooseneck Arm & Stable B
 Meta Description: Buy Adjustable Mobile Phone Stand with Flexible Gooseneck Arm & Stable Base for Recording, Live Streaming & Video Calls online in Pakistan from ASM VEO. A versa
 Description: A versatile mobile phone stand featuring a flexible gooseneck arm, adjustable height, and sturdy base. Perfect for recording videos, live streaming, online meetings, video calls, podcasts, and content creation at home or in the office.
-Regular Price: 523
-Sale Price: 523
+Wholesale Price: 473
+Regular Price: 960
+Sale Price: 770
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

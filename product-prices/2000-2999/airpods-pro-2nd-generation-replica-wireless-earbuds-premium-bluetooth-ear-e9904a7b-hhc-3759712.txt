@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AirPods Pro 2nd Generation Replica Wireless Earbuds – Premium Bluetooth Earphones with Charging Case
 Product ID: hhc-3759712
 SKU: hhc-3759712
@@ -7,11 +8,16 @@ Slug: airpods-pro-2nd-generation-replica-wireless-earbuds-premium-bluetooth-e-e9
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/c51365ab3de91ebb8f60b031ba2b001b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/c51365ab3de91ebb8f60b031ba2b001b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/8a5881056787941b977a6115490f0ca6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/80d8f8767d33d767a62ea140e328062d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/f4d6d21cede7a8ff05498744dbefc407.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/34f4cd2730c07ff4b81ccf2f1c0e9db6.jpg
 Meta Title: AirPods Pro 2nd Generation Replica Wireless Earbuds – Premium Blueto
 Meta Description: Buy AirPods Pro 2nd Generation Replica Wireless Earbuds – Premium Bluetooth Earphones with Charging Case online in Pakistan from ASM VEO. Premium replica design
 Description: Premium replica design inspired by AirPods Pro 2nd Generation High-quality stereo sound with balanced bass and clear vocals Stable Bluetooth connectivity for fast and smooth pairing Smart touch control for music, calls, and voice assistant access Comfortable ergonomic in-ear design for daily use Por
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

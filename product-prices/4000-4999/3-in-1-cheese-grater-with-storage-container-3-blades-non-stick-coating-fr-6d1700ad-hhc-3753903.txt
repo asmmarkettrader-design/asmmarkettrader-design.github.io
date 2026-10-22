@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-in-1 Cheese Grater with Storage Container, 3 Blades, Non-Stick Coating, Fruit & Vegetable Slicer Peeler-1Pc
 Product ID: hhc-3753903
 SKU: hhc-3753903
@@ -7,11 +8,16 @@ Slug: 3-in-1-cheese-grater-with-storage-container-3-blades-non-stick-coating-6d1
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/4bb95eb1bbb3c62a8b696c4441b0e85b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/4bb95eb1bbb3c62a8b696c4441b0e85b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/30b99cb00e75cf97de57f88914a5ba35.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/36ecba942ee98542ff6d8e74cb6f64e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/dffaab69f490b4d24366a27a9630cb24.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/015318d93b76c43bd029c69af96ca64c.jpeg
 Meta Title: 3-in-1 Cheese Grater with Storage Container, 3 Blades, Non-Stick Coa
 Meta Description: Buy 3-in-1 Cheese Grater with Storage Container, 3 Blades, Non-Stick Coating, Fruit & Vegetable Slicer Peeler-1Pc online in Pakistan from ASM VEO. 3 in 1 Cheese
 Description: 3 in 1 Cheese Grater for Kitchen with Storage Container 3 Blade Non-Stick Coating Shredder Square and Apple Shape Fruit Vegetable Grater Slicer Peeler Box for Kitchen | 1 Pcs
-Regular Price: 523
-Sale Price: 523
+Wholesale Price: 473
+Regular Price: 960
+Sale Price: 770
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

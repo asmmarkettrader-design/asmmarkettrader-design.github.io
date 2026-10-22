@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Scentia Your Story Blue de Chanel Everglow Edition – Luxury Long-Lasting Perfume 50ml
 Product ID: hhc-3756191
 SKU: hhc-3756191
@@ -7,11 +8,16 @@ Slug: scentia-your-story-blue-de-chanel-everglow-edition-luxury-long-lasting-770
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/429a06a1c2c769e9d6c5565d723c60ba.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/429a06a1c2c769e9d6c5565d723c60ba.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/461ab9704dc6d92c8f30b896a734d35e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/ee66ee7bc9017675467c488f5954745f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/b430eeb4111a6663ca89c25c806fe2c0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/d86aa6b881a33c3dcae47175ab33289c.jpeg
 Meta Title: Scentia Your Story Blue de Chanel Everglow Edition – Luxury Long-Las
 Meta Description: Buy Scentia Your Story Blue de Chanel Everglow Edition – Luxury Long-Lasting Perfume 50ml online in Pakistan from ASM VEO. Experience elegance with Scentia Your
 Description: Experience elegance with Scentia Your Story Blue de Chanel Everglow Edition. A luxurious 50ml fragrance that combines sophistication and long-lasting charm for every occasion.
-Regular Price: 3620
-Sale Price: 3620
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

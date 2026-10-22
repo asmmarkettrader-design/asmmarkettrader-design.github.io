@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Knee Warmers For Comfort Protection Easy Wearing And Daily Use With Soft Material And Reliable Design (1 Pair)
 Product ID: hhc-3753667
 SKU: hhc-3753667
@@ -7,11 +8,16 @@ Slug: knee-warmers-for-comfort-protection-easy-wearing-and-daily-use-with-sof-78
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: Knee Warmers For Comfort Protection Easy Wearing And Daily Use With
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/52962faae82bb587efbebb7216f60b02.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/52962faae82bb587efbebb7216f60b02.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/593c71928522c82675ed54866a4af173.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/76e6a102747290a9f0f7edaff245f214.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/73d7aacc77d3196c3775c909943738b8.png
+Meta Title: Knee Warmers For Comfort Protection Easy Wearing And Daily Use With 
 Meta Description: Buy Knee Warmers For Comfort Protection Easy Wearing And Daily Use With Soft Material And Reliable Design (1 Pair) online in Pakistan from ASM VEO. Knee Warmers
 Description: Knee Warmers Designed For Comfort And Daily Protection
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

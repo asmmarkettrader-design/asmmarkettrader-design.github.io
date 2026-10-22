@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Arencia Vitamin C Booster Shot Face & Eye Moisturizer 30ml
 Product ID: hhc-3764203
 SKU: hhc-3764203
 Slug: arencia-vitamin-c-booster-shot-face-eye-moisturizer-30ml-hhc-3764203
-Category: Beauty & Cosmetics
+Category: Beauty & Personal Care
 Subcategory: Face Makeup (Foundation)
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/9515ee4ee0293fcf081c84a6a5094279.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/9515ee4ee0293fcf081c84a6a5094279.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/7f0109db784d66c9f151756970ad6afb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/174b14a2c51605853f1f64f7819dbc52.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/157fcbb709fb533a5815f4d14a1882da.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/de6606b8ee91ed99465bd7aa84fd5910.jpeg
 Meta Title: Arencia Vitamin C Booster Shot Face & Eye Moisturizer 30ml | Buy Onl
 Meta Description: Buy Arencia Vitamin C Booster Shot Face & Eye Moisturizer 30ml online in Pakistan from ASM VEO. Arencia Vitamin C Booster Shot (30ml) - A potent face and eye cr
 Description: Arencia Vitamin C Booster Shot (30ml) - A potent face and eye cream moisturizer. Formulated with 5% Vitamin C complex and Glutathione to visibly reduce hyperpigmentation, improve skin firmness, and support the skin's natural defense against aging. Softens the appearance of fine lines and pores for a radiant, healthier complexion. Suitable for daily use.Quality : Copy
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

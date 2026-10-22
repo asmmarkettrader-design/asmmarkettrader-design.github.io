@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (PACK OF 3)Spin Mop Refill - Extra Head, Additional Microfiber Mop Round Shape Mop Heads
 Product ID: hhc-2575433
 SKU: hhc-2575433
@@ -7,11 +8,16 @@ Slug: pack-of-3-spin-mop-refill-extra-head-additional-microfiber-mop-round-sh-86
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/51EZLPzsYhL._SL1500_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/51EZLPzsYhL._SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61Rxn2MyLKS._SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61lac61wtZL._AC_SL1031__cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/6159IyZTDlL._AC_SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61Bxu7l7xrL._AC_SL1500_.jpg
 Meta Title: (PACK OF 3)Spin Mop Refill - Extra Head, Additional Microfiber Mop R
 Meta Description: Buy (PACK OF 3)Spin Mop Refill - Extra Head, Additional Microfiber Mop Round Shape Mop Heads online in Pakistan from ASM VEO. (PACK OF 3)Spin Mop Refill - Extra
 Description: (PACK OF 3)Spin Mop Refill - Extra Head, Additional Microfiber Mop Round Shape Mop Heads
-Regular Price: 993
-Sale Price: 993
+Wholesale Price: 943
+Regular Price: 1780
+Sale Price: 1427
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

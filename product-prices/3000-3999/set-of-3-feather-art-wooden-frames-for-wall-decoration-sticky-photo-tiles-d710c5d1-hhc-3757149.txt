@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 3 Feather Art Wooden Frames For Wall Decoration Sticky Photo Tiles With Double Tape 8x11 Inches
 Product ID: hhc-3757149
 SKU: hhc-3757149
@@ -7,11 +8,16 @@ Slug: set-of-3-feather-art-wooden-frames-for-wall-decoration-sticky-photo-til-d7
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set Of 3 Feather Art Wooden Frames For Wall Decoration Sticky Photo
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/29/6709f4ede64597635943839c847ab178.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/29/6709f4ede64597635943839c847ab178.jpeg
+Meta Title: Set Of 3 Feather Art Wooden Frames For Wall Decoration Sticky Photo 
 Meta Description: Buy Set Of 3 Feather Art Wooden Frames For Wall Decoration Sticky Photo Tiles With Double Tape 8x11 Inches online in Pakistan from ASM VEO. Set Of 3 Feather Art
 Description: Set Of 3 Feather Art Wooden Frames Stylish Wall Decoration Printed On Wooden MDF With Double Tape For Easy Installation.
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

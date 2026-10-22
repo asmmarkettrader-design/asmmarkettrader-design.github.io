@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100 Pcs Disposable Food Cover Plastic Bags - Kitchen Accessory Designed For Food Protection And Daily Storage Routine
 Product ID: hhc-3764270
 SKU: hhc-3764270
@@ -7,11 +8,16 @@ Slug: 100-pcs-disposable-food-cover-plastic-bags-kitchen-accessory-designed-f-d2
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/4ca8d7c6232cd8be7fb537470c238aa1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/4ca8d7c6232cd8be7fb537470c238aa1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/0d884b59f096a23e18f2973ce9311a2f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/d5790abed5423fc6bda92cbdc4a5cefd.jpg
 Meta Title: 100 Pcs Disposable Food Cover Plastic Bags - Kitchen Accessory Desig
 Meta Description: Buy 100 Pcs Disposable Food Cover Plastic Bags - Kitchen Accessory Designed For Food Protection And Daily Storage Routine online in Pakistan from ASM VEO. The 1
 Description: The 100 Pcs Disposable Food Cover Plastic Bags Is A Kitchen Accessory Formulated To Help Provide Food Protection And Daily Storage Utility During Use.
-Regular Price: 284
-Sale Price: 284
+Wholesale Price: 234
+Regular Price: 561
+Sale Price: 411
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

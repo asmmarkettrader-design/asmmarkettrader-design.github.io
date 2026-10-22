@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SAFETY Disposable Gel & Clot Activator Serum Separator Vacuum Blood Collection Tubes (Glass, 3ml, 13x75mm) - Pack of 100
 Product ID: hhc-3754116
 SKU: hhc-3754116
@@ -7,11 +8,16 @@ Slug: safety-disposable-gel-clot-activator-serum-separator-vacuum-blood-colle-f3
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
-Meta Title: SAFETY Disposable Gel & Clot Activator Serum Separator Vacuum Blood
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/c80f0655a11bd111b13ff4d172ffc8da.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/c80f0655a11bd111b13ff4d172ffc8da.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/6d9e708e4889e7906b8bdedd744be256.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/4e11deacbe1ef6dd81e561843e5f0e3e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/6788a781dfa93ceda855f757302f8ce1.png
+Meta Title: SAFETY Disposable Gel & Clot Activator Serum Separator Vacuum Blood 
 Meta Description: Buy SAFETY Disposable Gel & Clot Activator Serum Separator Vacuum Blood Collection Tubes (Glass, 3ml, 13x75mm) - Pack of 100 online in Pakistan from ASM VEO. Hi
 Description: High-quality yellow top blood collection tube designed for serum separation and reliable sample processing. Ideal for hospitals, clinics, labs, and diagnostic centers.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

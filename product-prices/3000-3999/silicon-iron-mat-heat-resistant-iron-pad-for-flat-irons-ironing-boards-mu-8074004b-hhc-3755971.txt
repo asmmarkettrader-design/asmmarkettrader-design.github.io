@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicon Iron Mat | Heat-Resistant Iron Pad For Flat Irons & Ironing Boards | Multipurpose Silicone Iron Mat | Home & Kitchen Item
 Product ID: hhc-3755971
 SKU: hhc-3755971
@@ -7,11 +8,16 @@ Slug: silicon-iron-mat-heat-resistant-iron-pad-for-flat-irons-ironing-boards-807
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/f3ab16b7661ad3d700de528975812e39.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/f3ab16b7661ad3d700de528975812e39.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/9fdb12480eb34c43316f72ef204bab6c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/034e963e1bc44efab3e27f9b4161beec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/1e682006d2743af986e6a77c79331508.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/27/acccaeaedd9c5cb85fecf561b2661bc5.jpg
 Meta Title: Silicon Iron Mat | Heat-Resistant Iron Pad For Flat Irons & Ironing
 Meta Description: Buy Silicon Iron Mat | Heat-Resistant Iron Pad For Flat Irons & Ironing Boards | Multipurpose Silicone Iron Mat | Home & Kitchen Item online in Pakistan from AS
 Description: Protect your surfaces from heat damage with this premium silicone iron mat. Made from high-quality, heat-resistant silicone, it safely holds hot irons, pans, kettles, and cookware without slipping or burning countertops. Flexible, durable, and easy to clean, this multipurpose mat is perfect for iron
-Regular Price: 409
-Sale Price: 409
+Wholesale Price: 359
+Regular Price: 750
+Sale Price: 598
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

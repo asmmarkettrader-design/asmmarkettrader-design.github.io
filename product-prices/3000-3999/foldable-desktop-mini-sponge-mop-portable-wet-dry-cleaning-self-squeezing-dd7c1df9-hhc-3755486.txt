@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foldable Desktop Mini Sponge Mop | Portable Wet & Dry Cleaning | Self‑Squeezing Mop for Kitchen, Bathroom, Car & Glass
 Product ID: hhc-3755486
 SKU: hhc-3755486
@@ -7,11 +8,16 @@ Slug: foldable-desktop-mini-sponge-mop-portable-wet-dry-cleaning-self-squeezi-dd
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/5e8ce2de80d4c649a2c2d8dcd6ee6145.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/5e8ce2de80d4c649a2c2d8dcd6ee6145.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/c3bdd8df30fd2cf9daf0e69cc471598a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/f997258d235935349559b274d435bf07.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/2ac88ab14213db67cbb0f439796d1a64.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/1c8241f42e2b7330c7b613f083721a78.jpg
 Meta Title: Foldable Desktop Mini Sponge Mop | Portable Wet & Dry Cleaning | Sel
 Meta Description: Buy Foldable Desktop Mini Sponge Mop | Portable Wet & Dry Cleaning | Self‑Squeezing Mop for Kitchen, Bathroom, Car & Glass online in Pakistan from ASM VEO. Comp
 Description: Compact foldable sponge mop for small spaces. Portable, self‑squeezing design for wet & dry cleaning.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

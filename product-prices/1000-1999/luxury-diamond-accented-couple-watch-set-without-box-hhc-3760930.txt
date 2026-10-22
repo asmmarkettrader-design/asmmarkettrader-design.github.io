@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury Diamond-Accented Couple Watch Set (Without Box)
 Product ID: hhc-3760930
 SKU: hhc-3760930
@@ -7,11 +8,16 @@ Slug: luxury-diamond-accented-couple-watch-set-without-box-hhc-3760930
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/20/de29b2ee99386bb70d614ecf14c58f14.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/20/de29b2ee99386bb70d614ecf14c58f14.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/20/5300b6e65b07aceefebf79c0a95c7d63.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/20/b04c05c2a1c42c632cef428921e5bb3c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/20/bc15db2538e8ed3b3b7d86a5f166d5f4.jpeg
 Meta Title: Luxury Diamond-Accented Couple Watch Set (Without Box) | Buy Online
 Meta Description: Buy Luxury Diamond-Accented Couple Watch Set (Without Box) online in Pakistan from ASM VEO. Celebrate your bond with the breathtaking IKE Collection Luxury Coup
 Description: Celebrate your bond with the breathtaking IKE Collection Luxury Couple Watch Set. Crafted for couples who appreciate timeless elegance, this set features a larger masculine watch and a matching smaller feminine watch, both fully adorned with shimmering crystal diamond accents.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

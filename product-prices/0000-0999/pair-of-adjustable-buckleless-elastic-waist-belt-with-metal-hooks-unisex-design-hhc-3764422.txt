@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pair Of Adjustable Buckleless Elastic Waist Belt with Metal Hooks - Unisex Design
 Product ID: hhc-3764422
 SKU: hhc-3764422
@@ -7,11 +8,16 @@ Slug: pair-of-adjustable-buckleless-elastic-waist-belt-with-metal-hooks-unisex-d
 Category: Fashion
 Subcategory: Belts & Wallets
 Brand: ASM VEO
-Meta Title: Pair Of Adjustable Buckleless Elastic Waist Belt with Metal Hooks -
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/2625da2e804e75226dac3c6160d91956.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/2625da2e804e75226dac3c6160d91956.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/ad5d316cb5e7902706a17fa116bb47f9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/19429360f03d5458a953b2eb4565c243.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/d8c60aa6ecf53bd7580c990a9d989696.png
+Meta Title: Pair Of Adjustable Buckleless Elastic Waist Belt with Metal Hooks - 
 Meta Description: Buy Pair Of Adjustable Buckleless Elastic Waist Belt with Metal Hooks - Unisex Design online in Pakistan from ASM VEO. Adjustable, buckleless elastic waist belt
 Description: Adjustable, buckleless elastic waist belt with durable metal hooks. Perfect for jeans, dress pants, and casual wear. Provides a comfortable, flat, and seamless fit without the bulk of a traditional buckle.
-Regular Price: 430
-Sale Price: 430
+Wholesale Price: 380
+Regular Price: 790
+Sale Price: 630
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

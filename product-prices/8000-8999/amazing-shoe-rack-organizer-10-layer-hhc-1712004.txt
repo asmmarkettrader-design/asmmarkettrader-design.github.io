@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Amazing Shoe Rack Organizer | 10 Layer
 Product ID: hhc-1712004
 SKU: hhc-1712004
@@ -7,11 +8,16 @@ Slug: amazing-shoe-rack-organizer-10-layer-hhc-1712004
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/5659c5850835a082291eb47a6a2f626e-1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/5659c5850835a082291eb47a6a2f626e-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/1acb7ba5d123d6912f3a4cafc609eb65-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/4459fbf3c6ae98a8cfb0249d88262802-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/1-1-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/258da5c6ce7b35210ae9eaf2a3d0c9f6.jpg_750x750.jpg_-1.jpg
 Meta Title: Amazing Shoe Rack Organizer | 10 Layer | Buy Online in Pakistan
 Meta Description: Buy Amazing Shoe Rack Organizer | 10 Layer online in Pakistan from ASM VEO. Amazing Shoe Rack Organizer | 10 Layer Cash on Delivery, Rs 180 standard delivery, a
 Description: Amazing Shoe Rack Organizer | 10 Layer
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

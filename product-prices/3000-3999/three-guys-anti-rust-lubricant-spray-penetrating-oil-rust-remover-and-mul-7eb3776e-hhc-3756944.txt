@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Three Guys Anti-Rust Lubricant Spray – Penetrating Oil Rust Remover And Multi-Purpose De-Rust Spray German Engineered
 Product ID: hhc-3756944
 SKU: hhc-3756944
@@ -7,11 +8,16 @@ Slug: three-guys-anti-rust-lubricant-spray-penetrating-oil-rust-remover-and-m-7e
 Category: Automotive
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
-Meta Title: Three Guys Anti-Rust Lubricant Spray – Penetrating Oil Rust Remover
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/239e05eefde9762edcf7ec3868cb1c96.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/239e05eefde9762edcf7ec3868cb1c96.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/0be2aed17efbdc24de8e67e44843de1a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/2ec0d160905dbebee53e3a5c9d728b2b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/4a15a173f2b839f01d7643aaff892ab9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/bd696fe0a00c8afe761526ae71c206ae.jpg
+Meta Title: Three Guys Anti-Rust Lubricant Spray – Penetrating Oil Rust Remover 
 Meta Description: Buy Three Guys Anti-Rust Lubricant Spray – Penetrating Oil Rust Remover And Multi-Purpose De-Rust Spray German Engineered online in Pakistan from ASM VEO. Premi
 Description: Premium German-Engineered 4-In-1 Spray That Removes Rust, Lubricates, Protects, And Prevents Corrosion On All Metal Surfaces.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

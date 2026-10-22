@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Erasable & Reusable Doodle Magic Blackboard Book with 3 Color Markers – Kids Drawing & Learning Activity Book (Random Color)
 Product ID: hhc-3756129
 SKU: hhc-3756129
@@ -7,11 +8,16 @@ Slug: erasable-reusable-doodle-magic-blackboard-book-with-3-color-markers-kid-73
 Category: Books & Stationery
 Subcategory: Art & Craft Materials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/b127455f7d46048affff43b001c5e054.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/b127455f7d46048affff43b001c5e054.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/f51714f90de9ac5fe0917f068debba5d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/033266383029c62b462c321aade83f79.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/50d8aca1f79c4efcc20c7cce011135a0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/eaf6c7b3d66e1e78647035536a1d7427.jpg
 Meta Title: Erasable & Reusable Doodle Magic Blackboard Book with 3 Color Marker
 Meta Description: Buy Erasable & Reusable Doodle Magic Blackboard Book with 3 Color Markers – Kids Drawing & Learning Activity Book (Random Color) online in Pakistan from ASM VEO
 Description: 🎨✨ A fun, mess-free doodle book for kids! This reusable magic blackboard book comes with 3 colorful markers, letting children draw, write, erase, and reuse again and again—perfect for learning and creative play.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

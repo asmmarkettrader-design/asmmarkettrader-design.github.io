@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Infrared Motion Sensor Lamp Holder – 360° Smart Light Socket with Automatic On/Off Detection
 Product ID: hhc-3754409
 SKU: hhc-3754409
@@ -7,11 +8,16 @@ Slug: infrared-motion-sensor-lamp-holder-360-smart-light-socket-with-automati-2e
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/5b8d3450ac888fbe13fedb302c00de21.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/5b8d3450ac888fbe13fedb302c00de21.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/8ffada9d6ef9d4e131a19dfee8b957b9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/52f82a3a1e309f9b2109f780242c03da.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/10358d4605acff0df86567b2b3ad0c33.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/4748d586163b1a96824a5e1feed62c48.jpg
 Meta Title: Infrared Motion Sensor Lamp Holder – 360° Smart Light Socket with Au
 Meta Description: Buy Infrared Motion Sensor Lamp Holder – 360° Smart Light Socket with Automatic On/Off Detection online in Pakistan from ASM VEO. Infrared Motion Sensor Lamp Ho
 Description: Infrared Motion Sensor Lamp Holder – 360° Smart Light Socket with Automatic On/Off Detection
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

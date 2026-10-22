@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Straightener Iron Brush Straight Hair Comb 2-in-1 Hair Straightener Curling Professional Styling Brush Hair Curler &amp; Straightener For Women (Random Color)
 Product ID: hhc-1948174
 SKU: hhc-1948174
@@ -7,11 +8,16 @@ Slug: hair-straightener-iron-brush-straight-hair-comb-2-in-1-hair-straightene-95
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/img_3_Alisador-de-pelo-profesional-cepillo-rizador-de-pelo-de-cer-mica-de-turmalina-peine-alisadores-plancha.jpg_.webp.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/img_3_Alisador-de-pelo-profesional-cepillo-rizador-de-pelo-de-cer-mica-de-turmalina-peine-alisadores-plancha.jpg_.webp.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/img_2_Alisador-de-pelo-profesional-cepillo-rizador-de-pelo-de-cer-mica-de-turmalina-peine-alisadores-plancha.jpg_.webp.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/img_1_Alisador-de-pelo-profesional-cepillo-rizador-de-pelo-de-cer-mica-de-turmalina-peine-alisadores-plancha.jpg_.webp.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/img_0_Alisador-de-pelo-profesional-cepillo-rizador-de-pelo-de-cer-mica-de-turmalina-peine-alisadores-plancha.jpg_.webp.jpg
 Meta Title: Hair Straightener Iron Brush Straight Hair Comb 2-in-1 Hair Straight
 Meta Description: Buy Hair Straightener Iron Brush Straight Hair Comb 2-in-1 Hair Straightener Curling Professional Styling Brush Hair Curler &amp; Straightener For Women (Random
 Description: Hair Straightener Iron Brush Straight Hair Comb 2-in-1 Hair Straightener Curling Professional Styling Brush Hair Curler &amp; Straightener For Women (Random Color)
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

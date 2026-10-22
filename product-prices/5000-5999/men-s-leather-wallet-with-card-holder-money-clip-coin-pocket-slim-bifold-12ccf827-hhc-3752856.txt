@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men’s Leather Wallet with Card Holder, Money Clip & Coin Pocket – Slim Bifold Design for Daily Use, Premium Quality Wallet for Men
 Product ID: hhc-3752856
 SKU: hhc-3752856
@@ -7,11 +8,16 @@ Slug: men-s-leather-wallet-with-card-holder-money-clip-coin-pocket-slim-bifol-12
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/19/a48d9e0e3f284fc0ff02d5521c846c8a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/19/a48d9e0e3f284fc0ff02d5521c846c8a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/19/488d97b67f438d1c9c585f36a0694844.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/19/e37f20f4acbcdd74f1d2e8c313feba1c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/19/ec714cb8beeb5c516be68f6f6d3c18b7.jpg
 Meta Title: Men’s Leather Wallet with Card Holder, Money Clip & Coin Pocket – Sl
 Meta Description: Buy Men’s Leather Wallet with Card Holder, Money Clip & Coin Pocket – Slim Bifold Design for Daily Use, Premium Quality Wallet for Men online in Pakistan from A
 Description: Stay organized with this sleek men’s wallet featuring a secure money clip, multiple card slots, and a coin pocket. Crafted from premium leather, it’s slim, stylish, and perfect for everyday use or gifting.
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

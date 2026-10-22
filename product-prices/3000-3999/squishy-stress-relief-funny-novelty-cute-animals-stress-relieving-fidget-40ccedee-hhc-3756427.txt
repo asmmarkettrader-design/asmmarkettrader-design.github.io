@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Squishy Stress Relief Funny Novelty Cute Animals Stress Relieving Fidget for Boys Girls Birthday Party Gifts Anxiety&Relaxation for Kids Teenage (White)
 Product ID: hhc-3756427
 SKU: hhc-3756427
@@ -7,11 +8,16 @@ Slug: squishy-stress-relief-funny-novelty-cute-animals-stress-relieving-fidge-40
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/d6c8a8638e9687c81192f3306cc1f8db.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/d6c8a8638e9687c81192f3306cc1f8db.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/a67e5f98431ffc41922fc53affd51c5b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/830968c753f7df32e8fa8e3faac10233.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/79b1932c5006bd95c4e297d38e95ccca.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/8207ee41ab55d61b68d110b8b91f3e87.jpeg
 Meta Title: Squishy Stress Relief Funny Novelty Cute Animals Stress Relieving Fi
 Meta Description: Buy Squishy Stress Relief Funny Novelty Cute Animals Stress Relieving Fidget for Boys Girls Birthday Party Gifts Anxiety&Relaxation for Kids Teenage (White) onl
 Description: Adorable white animal squishy fidget toy designed for stress relief, anxiety reduction, and sensory fun. Made from soft, safe, and durable material—perfect for kids, teens, and party gifts.
-Regular Price: 635
-Sale Price: 635
+Wholesale Price: 585
+Regular Price: 1140
+Sale Price: 908
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

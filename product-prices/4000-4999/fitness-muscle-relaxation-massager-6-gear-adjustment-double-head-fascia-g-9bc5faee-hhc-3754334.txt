@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fitness Muscle Relaxation Massager 6-Gear Adjustment Double Head Fascia Gun Electric Massage Gun
 Product ID: hhc-3754334
 SKU: hhc-3754334
@@ -7,11 +8,16 @@ Slug: fitness-muscle-relaxation-massager-6-gear-adjustment-double-head-fascia-9b
 Category: Home & Kitchen
 Subcategory: Fitness & Gym
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/027bbe42fa3551b63dd3ff5becb89a19.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/027bbe42fa3551b63dd3ff5becb89a19.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/6780f739fe93acb7337728e2ead7aa08.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/0f30d674bc8594c5cc6aa8949a848693.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/2f236158c72e38c3684fa1ec67a36d9b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/0374f29389c0df9a5556aec2f79208c2.jpg
 Meta Title: Fitness Muscle Relaxation Massager 6-Gear Adjustment Double Head Fas
 Meta Description: Buy Fitness Muscle Relaxation Massager 6-Gear Adjustment Double Head Fascia Gun Electric Massage Gun online in Pakistan from ASM VEO. This is a Double Head Mass
 Description: This is a Double Head Massage Gun designed for deep tissue percussion massage to help relax muscles. It is typically used for muscle recovery after exercise, reducing soreness, and improving blood circulation.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

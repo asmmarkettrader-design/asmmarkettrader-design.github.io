@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Better Root Organic Cardio Boost Superfood Blend (120g)
 Product ID: hhc-3764202
 SKU: hhc-3764202
@@ -7,11 +8,16 @@ Slug: better-root-organic-cardio-boost-superfood-blend-120g-hhc-3764202
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/68834562241af5e75083b51e96493eae.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/68834562241af5e75083b51e96493eae.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/97c3c7b1f2c2563572d5511b5fb6c0e8.jpg
 Meta Title: Better Root Organic Cardio Boost Superfood Blend (120g) | Buy Online
 Meta Description: Buy Better Root Organic Cardio Boost Superfood Blend (120g) online in Pakistan from ASM VEO. Better Root Organic Cardio Boost Superfood Blend. A premium plant-b
 Description: Better Root Organic Cardio Boost Superfood Blend. A premium plant-based powder containing a nutritious mix of Beetroot, Cinnamon, and Pomegranate. Designed to support heart health and boost circulation. Net weight: 120g (4.2 oz).
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

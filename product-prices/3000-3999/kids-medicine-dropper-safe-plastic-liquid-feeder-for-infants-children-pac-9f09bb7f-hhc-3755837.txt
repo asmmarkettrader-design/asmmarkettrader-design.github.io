@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Medicine Dropper – Safe Plastic Liquid Feeder for Infants & Children (Pack of 10Pcs)
 Product ID: hhc-3755837
 SKU: hhc-3755837
@@ -7,11 +8,16 @@ Slug: kids-medicine-dropper-safe-plastic-liquid-feeder-for-infants-children-p-9f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/38b71cfc02b3637cb82f56a15f4c3c7c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/38b71cfc02b3637cb82f56a15f4c3c7c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/52f326a00be59ad078d62bbf263d2dc2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/24e983d6a771cefaa0426ba4979f0deb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/3fcefa06ccab2834950dbd5a185a4408.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/b691ff45aa761974dc5b820e2cc12b92.jpeg
 Meta Title: Kids Medicine Dropper – Safe Plastic Liquid Feeder for Infants & Chi
 Meta Description: Buy Kids Medicine Dropper – Safe Plastic Liquid Feeder for Infants & Children (Pack of 10Pcs) online in Pakistan from ASM VEO. High-quality kids medicine droppe
 Description: High-quality kids medicine dropper for easy, accurate, and hygienic feeding of liquid medicine, vitamins, and syrups for babies and children.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

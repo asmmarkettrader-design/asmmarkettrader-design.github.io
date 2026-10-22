@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mobile Speaker Dust Protector Net Sticker (Pack of 10)
 Product ID: hhc-3765238
 SKU: hhc-3765238
@@ -7,11 +8,16 @@ Slug: mobile-speaker-dust-protector-net-sticker-pack-of-10-hhc-3765238
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/24ad2bf469f0e764b8a815284facf152.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/24ad2bf469f0e764b8a815284facf152.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/55e24e8d299141c1b18125f8372bb049.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/44cfdd145e6fea055f55fd96f295330a.mp4
 Meta Title: Mobile Speaker Dust Protector Net Sticker (Pack of 10) | Buy Online
 Meta Description: Buy Mobile Speaker Dust Protector Net Sticker (Pack of 10) online in Pakistan from ASM VEO. Mobile Speaker Dust Protector Net Sticker (Anti-Dust Proof Adhesive
 Description: Mobile Speaker Dust Protector Net Sticker (Anti-Dust Proof Adhesive Jali). Protects your smartphone speakers from dust and debris accumulation. - Pack contains 10 stickers + cleaning kit. - Compatible with most Android, Tablets &amp; Smartphones. - Easy to apply. - Weight: Approx 0.02kg per pack.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

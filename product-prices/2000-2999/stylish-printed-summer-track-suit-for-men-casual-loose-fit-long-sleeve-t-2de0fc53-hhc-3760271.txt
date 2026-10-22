@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish Printed Summer Track Suit for Men – Casual Loose Fit Long Sleeve T-Shirt & Pants Set
 Product ID: hhc-3760271
 SKU: hhc-3760271
@@ -7,11 +8,16 @@ Slug: stylish-printed-summer-track-suit-for-men-casual-loose-fit-long-sleeve-2de
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/1e921702fc61bef24f4fe1e9aabb6566.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/1e921702fc61bef24f4fe1e9aabb6566.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/fdfba96ce63c7d92e3037decd4180d50.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/56f190322f9182efea8ecba18f5cb79a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/10a7b6a48e05619e3aefb748c3f41b93.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/89e9cf2486e9953f26a8914e0a4a9b24.jpeg
 Meta Title: Stylish Printed Summer Track Suit for Men – Casual Loose Fit Long Sl
 Meta Description: Buy Stylish Printed Summer Track Suit for Men – Casual Loose Fit Long Sleeve T-Shirt & Pants Set online in Pakistan from ASM VEO. Premium summer track suit for
 Description: Premium summer track suit for men made with export-quality fabric. Lightweight, breathable, and comfortable for daily wear, gym workouts, jogging, sports, and casual outings. Designed to keep you cool during hot weather while providing a stylish look.
-Regular Price: 1137
-Sale Price: 1137
+Wholesale Price: 1087
+Regular Price: 2000
+Sale Price: 1604
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

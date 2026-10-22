@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AWJ-166 Bow Shape Korean Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women
 Product ID: hhc-3754010
 SKU: hhc-3754010
@@ -7,11 +8,16 @@ Slug: awj-166-bow-shape-korean-earrings-elegant-fashion-jewellery-stylish-acc-67
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/f81063bdb29af2dc73b19fb765e587a1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/f81063bdb29af2dc73b19fb765e587a1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/4bcf5f2aa7c483c8262839695532624a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/1c1a289b595ddb5c24fe3d04b483dd96.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/0da92b4f4451b1ba311e1e0faaf9d026.jpeg
 Meta Title: AWJ-166 Bow Shape Korean Earrings – Elegant Fashion Jewellery, Styli
 Meta Description: Buy AWJ-166 Bow Shape Korean Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women online in Pakistan from ASM VEO. AWJ-166 bow shape Korean earring
 Description: AWJ-166 bow shape Korean earrings, stylish design for women, perfect for fashion and daily wear.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

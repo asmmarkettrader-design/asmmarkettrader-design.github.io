@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4-in-1 Gun Massager With 5 Speed Modes | Rechargeable Massage Gun Machine For Foot and Neck Massage | Gun Massager Machine
 Product ID: hhc-3764868
 SKU: hhc-3764868
@@ -7,11 +8,16 @@ Slug: 4-in-1-gun-massager-with-5-speed-modes-rechargeable-massage-gun-machine-ac
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/bfc73923d75c3bb3904bf55591b1fc3d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/bfc73923d75c3bb3904bf55591b1fc3d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/d53c76cbb0b62f87fc1732168717f62c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/142202cf740da3be336241ff4b9c24f9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/8723772c5ef8fb3279fd3786cb61c301.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/0afea238c48c0c931f4f7e2100a09b0b.webp
 Meta Title: 4-in-1 Gun Massager With 5 Speed Modes | Rechargeable Massage Gun Ma
 Meta Description: Buy 4-in-1 Gun Massager With 5 Speed Modes | Rechargeable Massage Gun Machine For Foot and Neck Massage | Gun Massager Machine online in Pakistan from ASM VEO.
 Description: 4-in-1 rechargeable gun massager with 5 speed modes for adjustable comfort. Ideal for neck, feet, shoulders, and back, it offers convenient cordless massage for relaxation after busy days.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gears Building Blocks Toy | Puzzle Construction Set | Creative Learning Blocks for Kids 3+ | Boys & Girls
 Product ID: hhc-3756822
 SKU: hhc-3756822
@@ -7,11 +8,16 @@ Slug: gears-building-blocks-toy-puzzle-construction-set-creative-learning-blo-c9
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/f4c81d1ff7ec61b3c524b7858c0377dd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/f4c81d1ff7ec61b3c524b7858c0377dd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/01809c987daa7da6809e3642fdf8081c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/6fad4ae4a4369ab32d910714755e9334.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/2c71088a6eb205e11d6a3b288309de75.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/a61cf096e343f2a72916af5dcc597a56.jpeg
 Meta Title: Gears Building Blocks Toy | Puzzle Construction Set | Creative Learn
 Meta Description: Buy Gears Building Blocks Toy | Puzzle Construction Set | Creative Learning Blocks for Kids 3+ | Boys & Girls online in Pakistan from ASM VEO. Colourful gears b
 Description: Colourful gears building blocks toy for kids. Fun puzzle construction set that develops creativity, problem-solving & motor skills. Suitable for ages 3+.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

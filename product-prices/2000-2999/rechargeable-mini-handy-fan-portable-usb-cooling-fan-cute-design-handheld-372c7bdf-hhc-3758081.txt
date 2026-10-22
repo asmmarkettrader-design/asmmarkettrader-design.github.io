@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Mini Handy Fan Portable USB Cooling Fan Cute Design Handheld Fan for Kids and Travel - With Cable (Random Color)
 Product ID: hhc-3758081
 SKU: hhc-3758081
@@ -7,11 +8,16 @@ Slug: rechargeable-mini-handy-fan-portable-usb-cooling-fan-cute-design-handhe-37
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/421b8964f40d05347fbd7f673d0f148a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/421b8964f40d05347fbd7f673d0f148a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/5937e1e2afddf45bb41056cadb67f81b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/fec2b4f3f94efc4700e23339cf4a9bf7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/18578df48f07de44f16839a825c7b8d9.jpeg
 Meta Title: Rechargeable Mini Handy Fan Portable USB Cooling Fan Cute Design Han
 Meta Description: Buy Rechargeable Mini Handy Fan Portable USB Cooling Fan Cute Design Handheld Fan for Kids and Travel - With Cable (Random Color) online in Pakistan from ASM VE
 Description: Cute design mini rechargeable fan, perfect for personal cooling. Lightweight, portable, and easy to carry anywhere.
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

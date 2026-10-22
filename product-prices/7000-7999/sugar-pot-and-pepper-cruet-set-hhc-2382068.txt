@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sugar Pot and Pepper Cruet Set
 Product ID: hhc-2382068
 SKU: hhc-2382068
@@ -7,11 +8,16 @@ Slug: sugar-pot-and-pepper-cruet-set-hhc-2382068
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.05.37-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.05.37-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-28-at-12.05.37-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsAppImage2022-01-20at9.30.54AM-2_870dccdb-b8b3-4107-a6c2-0fe3765f7257-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsAppImage2022-01-20at9.30.54AM_94f034ad-ec7e-4914-bfe4-c834d88f9a45.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsAppImage2022-01-20at9.30.54AM-2_870dccdb-b8b3-4107-a6c2-0fe3765f7257.webp
 Meta Title: Sugar Pot and Pepper Cruet Set | Buy Online in Pakistan
 Meta Description: Buy Sugar Pot and Pepper Cruet Set online in Pakistan from ASM VEO. Product Details: Imported acrylic plastic material without poison and smell to satisfy the C
 Description: Product Details: Imported acrylic plastic material without poison and smell to satisfy the modern life needs on environment and health Feels like rock crystal brightly, hardly broken and older, and looks new after washing Package 1 x Sugar Pot without spoon 1 x Pepper Pot and 1 x Salt Pot 1 x stainless steel frame (original product picture )
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

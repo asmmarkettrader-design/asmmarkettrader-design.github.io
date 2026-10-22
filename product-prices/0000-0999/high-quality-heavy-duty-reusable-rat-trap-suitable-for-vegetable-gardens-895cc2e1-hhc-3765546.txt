@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High-Quality Heavy-Duty Reusable Rat Trap Suitable for Vegetable Gardens Kitchens Households Warehouses
 Product ID: hhc-3765546
 SKU: hhc-3765546
@@ -7,11 +8,16 @@ Slug: high-quality-heavy-duty-reusable-rat-trap-suitable-for-vegetable-garden-89
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/dd26e39bcdc810194f1f2ed3e42be2ce.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/dd26e39bcdc810194f1f2ed3e42be2ce.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/a1d5de511bccf2facfe6afa239225593.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/23e1ecb4258dbb898f88f83d7c6b6cee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/fbbbfafc74c7c2be3b16f8dea1db23b4.jpeg
 Meta Title: High-Quality Heavy-Duty Reusable Rat Trap Suitable for Vegetable Gar
 Meta Description: Buy High-Quality Heavy-Duty Reusable Rat Trap Suitable for Vegetable Gardens Kitchens Households Warehouses online in Pakistan from ASM VEO. High-quality reusab
 Description: High-quality reusable Rat Trap. Easy to set up, heavy-duty construction, and safe bait loading. Comes with a user manual. Efficient and durable solution for rodent control.
-Regular Price: 573
-Sale Price: 573
+Wholesale Price: 523
+Regular Price: 1020
+Sale Price: 818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

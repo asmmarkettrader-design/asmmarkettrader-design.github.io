@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tiger Aura Watch Stylish Design Durable Build Comfortable Strap Clear Display Perfect For Daily Wear And Special Occasions
 Product ID: hhc-3753843
 SKU: hhc-3753843
@@ -7,11 +8,16 @@ Slug: tiger-aura-watch-stylish-design-durable-build-comfortable-strap-clear-d-1f
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/5535ba066b8a207ae5d169ea654b524d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/5535ba066b8a207ae5d169ea654b524d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/867fafdf44bd1a11ba6dc10d272945cd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/b170db5fde9a45d2474620f8bdfbe157.png
 Meta Title: Tiger Aura Watch Stylish Design Durable Build Comfortable Strap Clea
 Meta Description: Buy Tiger Aura Watch Stylish Design Durable Build Comfortable Strap Clear Display Perfect For Daily Wear And Special Occasions online in Pakistan from ASM VEO.
 Description: Tiger Aura Watch Provides Stylish Design Durable Build Comfortable Strap And Clear Display For Daily Wear
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Meter Self-Adhesive Door Sealing Tape | Weatherproof Door & Window Seal Strip | Wind & Dust Protection
 Product ID: hhc-3763647
 SKU: hhc-3763647
@@ -7,11 +8,16 @@ Slug: 1-meter-self-adhesive-door-sealing-tape-weatherproof-door-window-seal-s-65
 Category: Tools & DIY
 Subcategory: Plumbing Fixtures
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/8412f4b5815265672af860b61720bc64.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/8412f4b5815265672af860b61720bc64.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/188c51ba2531609e29b7324523a6b1b3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/b1b4806cd5e1b693ffbebec52650de93.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/367a3eff74f0bd6f1465376942985166.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/d971741f1878271e1817285778ad7141.jpg
 Meta Title: 1 Meter Self-Adhesive Door Sealing Tape | Weatherproof Door & Window
 Meta Description: Buy 1 Meter Self-Adhesive Door Sealing Tape | Weatherproof Door & Window Seal Strip | Wind & Dust Protection online in Pakistan from ASM VEO. Protect your doors
 Description: Protect your doors and windows with this 1 Meter Self-Adhesive Sealing Tape. Designed to help block drafts, dust, noise, and insects, it provides an easy and effective sealing solution for gaps around doors and windows.
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

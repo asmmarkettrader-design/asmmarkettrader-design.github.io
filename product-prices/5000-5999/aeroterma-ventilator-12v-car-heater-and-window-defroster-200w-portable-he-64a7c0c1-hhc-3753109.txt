@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aeroterma Ventilator 12V Car Heater And Window Defroster 200W – Portable Heating And Cooling Fan For Fast Defrosting And Comfortable Driving
 Product ID: hhc-3753109
 SKU: hhc-3753109
@@ -7,11 +8,16 @@ Slug: aeroterma-ventilator-12v-car-heater-and-window-defroster-200w-portable-64a
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/eb3fd2d5974d68c539f8dcfb38d942d5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/eb3fd2d5974d68c539f8dcfb38d942d5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/67666a387c935487dea44e69869de740.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/a332be0402af1a1a54b3bbe181c9a796.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/d3c9e3b6f3db149d9a71c41ac639ece0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/52db6f32fe43ab776d01d923fb1637ea.jpeg
 Meta Title: Aeroterma Ventilator 12V Car Heater And Window Defroster 200W – Port
 Meta Description: Buy Aeroterma Ventilator 12V Car Heater And Window Defroster 200W – Portable Heating And Cooling Fan For Fast Defrosting And Comfortable Driving online in Pakis
 Description: 12V 200W Aeroterma Car Heater And Defroster Provides Quick Heating, Efficient Window Defrosting, And Comfortable Airflow For All Seasons.
-Regular Price: 2488
-Sale Price: 2488
+Wholesale Price: 2488
+Regular Price: 4420
+Sale Price: 3539
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

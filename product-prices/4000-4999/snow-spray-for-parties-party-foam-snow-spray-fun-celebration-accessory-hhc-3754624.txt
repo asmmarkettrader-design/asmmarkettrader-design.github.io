@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Snow Spray for Parties | Party Foam Snow Spray | Fun Celebration Accessory |
 Product ID: hhc-3754624
 SKU: hhc-3754624
@@ -7,11 +8,16 @@ Slug: snow-spray-for-parties-party-foam-snow-spray-fun-celebration-accessory-hhc
 Category: Events & Gifting
 Subcategory: Party Decorations
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/f5e3641e046d4e3595a1196a0d2cf10a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/f5e3641e046d4e3595a1196a0d2cf10a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/af576b0097aba7da25d588150f9e837c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/4053632c66b0d32b17514c5546b63e32.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/518a0b43f6209b4333acf3f5b0d19ce0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/09d6342eb9bff8962f15fcf968e9c987.jpeg
 Meta Title: Snow Spray for Parties | Party Foam Snow Spray | Fun Celebration Acc
 Meta Description: Buy Snow Spray for Parties | Party Foam Snow Spray | Fun Celebration Accessory | online in Pakistan from ASM VEO. Party foam snow spray, perfect for birthdays,
 Description: Party foam snow spray, perfect for birthdays, weddings, New Year, and festive celebrations.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

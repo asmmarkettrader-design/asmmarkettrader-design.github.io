@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Panasonic Style Deluxe Automatic Electric Iron – Heavy Weight | Non-Stick Soleplate
 Product ID: hhc-3756275
 SKU: hhc-3756275
@@ -7,11 +8,16 @@ Slug: panasonic-style-deluxe-automatic-electric-iron-heavy-weight-non-stick-sole
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/ff5a24599f67804b471ca75cf33a8e70.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/ff5a24599f67804b471ca75cf33a8e70.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/8242042f3b3fb44f7709ce7d5e46c490.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/be6134846860e55d1cae3207b4e4f97e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/db16d30cfa5ca8520d14e28c0f6b7056.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/2add6e7e70e088a5ba2933d49d3ca81f.png
 Meta Title: Panasonic Style Deluxe Automatic Electric Iron – Heavy Weight | Non-
 Meta Description: Buy Panasonic Style Deluxe Automatic Electric Iron – Heavy Weight | Non-Stick Soleplate online in Pakistan from ASM VEO. High-performance deluxe automatic dry i
 Description: High-performance deluxe automatic dry iron made with imported China parts and locally assembled for durability and smooth ironing. Heavyweight body with non-stick soleplate ensures fast and wrinkle-free results.
-Regular Price: 4551
-Sale Price: 4551
+Wholesale Price: 4551
+Regular Price: 7620
+Sale Price: 6096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

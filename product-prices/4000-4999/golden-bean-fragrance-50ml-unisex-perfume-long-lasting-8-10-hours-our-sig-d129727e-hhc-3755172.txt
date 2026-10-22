@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Golden Bean Fragrance | 50ml | Unisex Perfume | Long Lasting 8–10 Hours | Our Signature | Made in Pakistan
 Product ID: hhc-3755172
 SKU: hhc-3755172
 Slug: golden-bean-fragrance-50ml-unisex-perfume-long-lasting-8-10-hours-our-s-d129727e-hhc-3755172
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/04/a771fc6d2a012a75692694f3318e5114.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/04/a771fc6d2a012a75692694f3318e5114.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/04/9807d57ae23ed25215d09c83bb843adb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/04/6e380034a3ce98cfea2c747a38312adb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/04/c5cbbfe5ab5cb2875eda331194e58f4b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/04/5f459296a62eb7eb044eb69b05d57dbb.jpeg
 Meta Title: Golden Bean Fragrance | 50ml | Unisex Perfume | Long Lasting 8–10 Ho
 Meta Description: Buy Golden Bean Fragrance | 50ml | Unisex Perfume | Long Lasting 8–10 Hours | Our Signature | Made in Pakistan online in Pakistan from ASM VEO. Golden Bean unis
 Description: Golden Bean unisex fragrance. 50ml bottle, long lasting 8–10 hours. Signature scent, made in Pakistan.
-Regular Price: 3031
-Sale Price: 3031
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

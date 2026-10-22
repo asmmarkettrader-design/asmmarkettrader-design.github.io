@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 GREEN Flowers Wall Art Wooden Frames for Home Decoration / Sticky Photo Tiles
 Product ID: hhc-3252945
 SKU: hhc-3252945
@@ -7,11 +8,16 @@ Slug: set-of-3-green-flowers-wall-art-wooden-frames-for-home-decoration-stick-6c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 3 GREEN Flowers Wall Art Wooden Frames for Home Decoration /
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/010d72ab8ae9757fd5e752160db2b9d0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/010d72ab8ae9757fd5e752160db2b9d0.jpeg
+Meta Title: Set of 3 GREEN Flowers Wall Art Wooden Frames for Home Decoration / 
 Meta Description: Buy Set of 3 GREEN Flowers Wall Art Wooden Frames for Home Decoration / Sticky Photo Tiles online in Pakistan from ASM VEO. Size per frame : 8×11 inches Full wa
 Description: Size per frame : 8×11 inches Full wall art size : 28×11 inches Wooden MDF Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Beautiful islamic designs which will give your exterior a spiritual vibe. High quality Finishing
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Professional Rice Soft Nourish Beauty Cream Gentle Hydration Brightening Care - 150g
 Product ID: hhc-3755049
 SKU: hhc-3755049
@@ -7,11 +8,16 @@ Slug: yardlie-professional-rice-soft-nourish-beauty-cream-gentle-hydration-br-7f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/36c1b88735879b5f8f1c937ce6389820.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/36c1b88735879b5f8f1c937ce6389820.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/6184952fec00f2a257cb815b994e9f58.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/6573ef7b9a8eada2aff1866c2651e63f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/3c9c4d6c83267d635a7d6530807040c6.jpeg
 Meta Title: Yardlie Professional Rice Soft Nourish Beauty Cream Gentle Hydration
 Meta Description: Buy Yardlie Professional Rice Soft Nourish Beauty Cream Gentle Hydration Brightening Care - 150g online in Pakistan from ASM VEO. Rice enriched beauty cream tha
 Description: Rice enriched beauty cream that nourishes and hydrates skin leaving it soft bright and refreshed.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

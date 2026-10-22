@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Schoolbag New Car Design | Primary School Backpack for Boys | Durable Children’s Student Bag
 Product ID: hhc-3756164
 SKU: hhc-3756164
@@ -7,11 +8,16 @@ Slug: schoolbag-new-car-design-primary-school-backpack-for-boys-durable-child-31
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/754cad2b2549c514b05bd0f1274a97bf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/754cad2b2549c514b05bd0f1274a97bf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/e7015695ae421c75107f4b5af4ff56a7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/02b1385e789801578596d8df6d3fc787.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/57eff7d5366e5cd1d5f1516c60270c5e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/41eb3eede256f6d54de8128e9f501d89.jpeg
 Meta Title: Schoolbag New Car Design | Primary School Backpack for Boys | Durabl
 Meta Description: Buy Schoolbag New Car Design | Primary School Backpack for Boys | Durable Children’s Student Bag online in Pakistan from ASM VEO. Durable car-themed schoolbag f
 Description: Durable car-themed schoolbag for boys. Spacious, lightweight, and comfortable backpack for primary school students
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

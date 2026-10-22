@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Umrah Saving Box | Premium Money Box with 210,000 Goal Tracker | Elegant Islamic Design for Charity, Donations & Umrah Fund
 Product ID: hhc-3753312
 SKU: hhc-3753312
@@ -7,11 +8,16 @@ Slug: wooden-umrah-saving-box-premium-money-box-with-210-000-goal-tracker-ele-62
 Category: Islamic & Cultural
 Subcategory: Islamic Essentials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/f92ebd104babf0b17ba3270988ccf112.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/f92ebd104babf0b17ba3270988ccf112.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/48f12a12b2ddc53e7bd8eb41235f215c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/e20efb60e6a64c77d943b40b751ee1ec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/b3fe6f050759e8ddfcf640fcf3688b14.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/07/2e03c66b6f792882e34ea1a9178ea115.jpg
 Meta Title: Wooden Umrah Saving Box | Premium Money Box with 210,000 Goal Tracke
 Meta Description: Buy Wooden Umrah Saving Box | Premium Money Box with 210,000 Goal Tracker | Elegant Islamic Design for Charity, Donations & Umrah Fund online in Pakistan from A
 Description: Elegant Wooden Umrah Saving Box designed for 210,000 goal savings — perfect for Umrah funds, charity, or personal donations.
-Regular Price: 350
-Sale Price: 350
+Wholesale Price: 300
+Regular Price: 660
+Sale Price: 510
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Honda Civic 2016–2022 Fender Light (Right & Left Side) – Direct Fit Replacement
 Product ID: hhc-3756179
 SKU: hhc-3756179
@@ -7,11 +8,16 @@ Slug: honda-civic-2016-2022-fender-light-right-left-side-direct-fit-replacement-
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Honda Civic 2016–2022 Fender Light (Right & Left Side) – Direct Fit
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/06816b1b049ca5188c5e9f7c76cffd32.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/06816b1b049ca5188c5e9f7c76cffd32.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/94e918ea3564e27d905e2fa7a74d2bd5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/8731c625960f45b5dbf3c292c9e3b747.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/eb50d889728b0fe35bbcbadba43d0ffe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/d9704937b03269914bdca45c95bb6c7f.png
+Meta Title: Honda Civic 2016–2022 Fender Light (Right & Left Side) – Direct Fit 
 Meta Description: Buy Honda Civic 2016–2022 Fender Light (Right & Left Side) – Direct Fit Replacement online in Pakistan from ASM VEO. Restore your Honda Civic’s factory look and
 Description: Restore your Honda Civic’s factory look and visibility with this high-quality fender light, designed to fit 2016–2022 models. Built for a precise OEM-style fit, it installs easily on either the right or left side and delivers reliable illumination and long-lasting performance.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

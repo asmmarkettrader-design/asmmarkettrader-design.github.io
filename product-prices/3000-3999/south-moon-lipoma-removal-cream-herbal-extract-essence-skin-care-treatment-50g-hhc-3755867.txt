@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: South Moon Lipoma Removal Cream – Herbal Extract Essence Skin Care Treatment (50g)
 Product ID: hhc-3755867
 SKU: hhc-3755867
@@ -7,11 +8,16 @@ Slug: south-moon-lipoma-removal-cream-herbal-extract-essence-skin-care-treatment
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/995222110421b0881a8a51ca5d1a8d63.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/995222110421b0881a8a51ca5d1a8d63.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/eea2b6013956dec4445bfe651725da9b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/98675e7856c2d7ef1b9f30e598e655f4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/d2b843f89c574b3cf40b68f577afd13a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/9a11f560a98f621577b77c10bc300e78.png
 Meta Title: South Moon Lipoma Removal Cream – Herbal Extract Essence Skin Care T
 Meta Description: Buy South Moon Lipoma Removal Cream – Herbal Extract Essence Skin Care Treatment (50g) online in Pakistan from ASM VEO. Effective herbal lipoma removal cream wi
 Description: Effective herbal lipoma removal cream with natural plant extracts that helps reduce fatty lumps, soften skin, and improve appearance safely and gently.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 20 Meters Clothesline Laundry Wet Rope PVC Coated Strong Metal Wire For Clothes Rope Wire( with hooks )
 Product ID: hhc-798116
 SKU: hhc-798116
@@ -7,11 +8,16 @@ Slug: 20-meters-clothesline-laundry-wet-rope-pvc-coated-strong-metal-wire-for-12
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 20 Meters Clothesline Laundry Wet Rope PVC Coated Strong Metal Wire
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/489ff1f8e9f6d5a54b8f1fab57ea1056.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/489ff1f8e9f6d5a54b8f1fab57ea1056.jpeg
+Meta Title: 20 Meters Clothesline Laundry Wet Rope PVC Coated Strong Metal Wire 
 Meta Description: Buy 20 Meters Clothesline Laundry Wet Rope PVC Coated Strong Metal Wire For Clothes Rope Wire( with hooks ) online in Pakistan from ASM VEO. Extra Strong PVC Co
 Description: Extra Strong PVC Coated Metal wires Flexible and Easy To Cut for Adjusting The Length.The PVC Coated metal Rope with a length of 20 meter can be used for hanging clothes.Washing Clothes Line which is Flexible for Home, Travel, Camping, Hiking, Indoor &amp; Outdoor Use, Can be Coiled for Storage &amp; Easily Cut for Adjusting Length, For HangingMade with Lightweight Durable Material, Long Lasting Life, Tough Laundry Rope, Double Strength Makes a Strong Washing / Clothes Line.
-Regular Price: 344
-Sale Price: 344
+Wholesale Price: 294
+Regular Price: 651
+Sale Price: 501
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

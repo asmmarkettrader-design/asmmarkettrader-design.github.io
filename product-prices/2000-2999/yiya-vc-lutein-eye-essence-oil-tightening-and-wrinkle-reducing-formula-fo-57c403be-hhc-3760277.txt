@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yiya VC Lutein Eye Essence Oil Tightening And Wrinkle Reducing Formula For Eye Care
 Product ID: hhc-3760277
 SKU: hhc-3760277
@@ -7,11 +8,16 @@ Slug: yiya-vc-lutein-eye-essence-oil-tightening-and-wrinkle-reducing-formula-57c
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/f7d140d772612fd6009b1be5faf4d927.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/f7d140d772612fd6009b1be5faf4d927.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/9992da613e4432c6abbb797c088c9b9a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/b008dd4dd6c58d525d9d19b8632996d6.jpeg
 Meta Title: Yiya VC Lutein Eye Essence Oil Tightening And Wrinkle Reducing Formu
 Meta Description: Buy Yiya VC Lutein Eye Essence Oil Tightening And Wrinkle Reducing Formula For Eye Care online in Pakistan from ASM VEO. Yiya VC Lutein Eye Essence Oil Best Qua
 Description: Yiya VC Lutein Eye Essence Oil Best Quality Formula For Tightening And Reducing Eye Wrinkles.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

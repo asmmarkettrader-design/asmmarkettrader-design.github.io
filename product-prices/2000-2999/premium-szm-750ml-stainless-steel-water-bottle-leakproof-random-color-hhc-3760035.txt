@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium SZM 750ml Stainless Steel Water Bottle Leakproof | Random Color
 Product ID: hhc-3760035
 SKU: hhc-3760035
@@ -7,11 +8,16 @@ Slug: premium-szm-750ml-stainless-steel-water-bottle-leakproof-random-color-hhc-
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/146733e33e1663a94e2254a316d34548.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/146733e33e1663a94e2254a316d34548.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/2a368ba5253dce95764b07d75bc8d7cb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/0d1577c693b0ffe600a1273016dd33a9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/33fef03a4dcca780ad4a1c9e548d09b4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/b057c66d85223e64e9b5de6e96db2379.jpeg
 Meta Title: Premium SZM 750ml Stainless Steel Water Bottle Leakproof | Random Co
 Meta Description: Buy Premium SZM 750ml Stainless Steel Water Bottle Leakproof | Random Color online in Pakistan from ASM VEO. Stay hydrated wherever you go with the Premium SZM
 Description: Stay hydrated wherever you go with the Premium SZM 750ml Stainless Steel Water Bottle. Designed with durable stainless steel construction and a secure leakproof lid, this bottle is perfect for daily use, travel, office, gym, school, and outdoor activities.
-Regular Price: 2276
-Sale Price: 2276
+Wholesale Price: 2276
+Regular Price: 4070
+Sale Price: 3253
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

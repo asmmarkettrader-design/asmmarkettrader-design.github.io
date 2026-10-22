@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Professional Raspberry Whitening & Moisturizing Body Lotion: Enhanced Hydration and Radiance Formula with Hyaluronic Acid and Collagen
 Product ID: hhc-3754290
 SKU: hhc-3754290
@@ -7,11 +8,16 @@ Slug: yardlie-professional-raspberry-whitening-moisturizing-body-lotion-enhan-7a
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/c16b8893f090bede0bca0b57dfee4108.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/c16b8893f090bede0bca0b57dfee4108.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/c1b3e8f25d8ea7138672cc9d043b4208.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/af7cbefbfd98a0084b34bd73adb30b47.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/d03fb228927eaa4d2c0b002078c89332.jpeg
 Meta Title: Yardlie Professional Raspberry Whitening & Moisturizing Body Lotion:
 Meta Description: Buy Yardlie Professional Raspberry Whitening & Moisturizing Body Lotion: Enhanced Hydration and Radiance Formula with Hyaluronic Acid and Collagen online in Pak
 Description: This is the Yardlie Professional Raspberry Whitening & Moisturizing Body Lotion, a skin treatment enriched with 2x Hyaluronic Acid and 3x Collagen. It is formulated to whiten, deeply moisturize, and improve water retention for all skin types, leaving skin smooth and radiant with a raspberry scent.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

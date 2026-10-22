@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hello Master 480ml Frosted Glass Water Bottle - Transparent Leak-Proof Portable Drinkware with Carrying Strap (Random Color)
 Product ID: hhc-3758147
 SKU: hhc-3758147
@@ -7,11 +8,16 @@ Slug: hello-master-480ml-frosted-glass-water-bottle-transparent-leak-proof-po-9e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/5decca1e0b965c4ae68fa429f625feda.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/5decca1e0b965c4ae68fa429f625feda.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/270428be805f65696f5ed7223f20848a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/ef365c6f8e5dcd66f0ac3ec0666f487f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/f521d7d3b9d2dfdc6dc8e9eafb417ea8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/7af7551ee70349a63f5f69883565e875.jpeg
 Meta Title: Hello Master 480ml Frosted Glass Water Bottle - Transparent Leak-Pro
 Meta Description: Buy Hello Master 480ml Frosted Glass Water Bottle - Transparent Leak-Proof Portable Drinkware with Carrying Strap (Random Color) online in Pakistan from ASM VEO
 Description: Stay hydrated in style with the Hello Master 480ml Glass Water Bottle. Featuring a sleek frosted transparent finish and a handy carrying strap, it's perfect for the gym, office, or travel. Made from high-quality glass, it’s an eco-friendly and reusable choice for your daily beverages.
-Regular Price: 523
-Sale Price: 523
+Wholesale Price: 473
+Regular Price: 960
+Sale Price: 770
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

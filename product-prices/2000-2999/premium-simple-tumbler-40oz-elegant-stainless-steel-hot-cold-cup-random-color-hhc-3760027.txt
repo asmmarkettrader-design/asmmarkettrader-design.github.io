@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Simple Tumbler 40oz – Elegant Stainless Steel Hot & Cold Cup (Random Color)
 Product ID: hhc-3760027
 SKU: hhc-3760027
@@ -7,11 +8,16 @@ Slug: premium-simple-tumbler-40oz-elegant-stainless-steel-hot-cold-cup-random-co
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/9617837140641a70cbb3c0f4c17c4bf4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/9617837140641a70cbb3c0f4c17c4bf4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/bfddd2b76bd373ef4366d53bc4dc1175.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/7eca6c891663f224bc7e89c7d297a92b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/48dd86e0210e998177a89ced1ae1f4b8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/6174ac08757f3a0744c58654d22d2f52.jpeg
 Meta Title: Premium Simple Tumbler 40oz – Elegant Stainless Steel Hot & Cold Cup
 Meta Description: Buy Premium Simple Tumbler 40oz – Elegant Stainless Steel Hot & Cold Cup (Random Color) online in Pakistan from ASM VEO. Stay hydrated in style with the Premium
 Description: Stay hydrated in style with the Premium Simple Tumbler 40oz. Designed with high-quality stainless steel insulation, this large-capacity tumbler keeps your beverages hot or cold for extended periods. Its sleek, elegant design and convenient handle make it perfect for home, office, travel, and outdoor
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

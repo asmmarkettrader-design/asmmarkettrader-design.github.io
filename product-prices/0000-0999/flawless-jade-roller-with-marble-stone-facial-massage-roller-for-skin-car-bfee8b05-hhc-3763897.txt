@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flawless Jade Roller With Marble Stone | Facial Massage Roller for Skin Care, Relaxation & Daily Beauty Routine
 Product ID: hhc-3763897
 SKU: hhc-3763897
@@ -7,11 +8,16 @@ Slug: flawless-jade-roller-with-marble-stone-facial-massage-roller-for-skin-c-bf
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/97afa814cae54060f5bb66d4c718290e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/97afa814cae54060f5bb66d4c718290e.jpg
 Meta Title: Flawless Jade Roller With Marble Stone | Facial Massage Roller for S
 Meta Description: Buy Flawless Jade Roller With Marble Stone | Facial Massage Roller for Skin Care, Relaxation & Daily Beauty Routine online in Pakistan from ASM VEO. A stylish m
 Description: A stylish marble stone jade roller designed for gentle facial massage, relaxation, and an easy daily skincare routine.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

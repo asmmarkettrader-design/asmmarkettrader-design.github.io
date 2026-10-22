@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Everglow Moisturize Extra Care White Glow Soft Skin Lotion 200ml
 Product ID: hhc-3756220
 SKU: hhc-3756220
@@ -7,11 +8,16 @@ Slug: everglow-moisturize-extra-care-white-glow-soft-skin-lotion-200ml-hhc-37562
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/7558d1063525483c2af41df5e42bbe3a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/7558d1063525483c2af41df5e42bbe3a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/bd32e57995f4a43e3a6dca8fa9c790af.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/9fa381c2aa41bc1fae96ad326c2f6ecd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/366e29e02434f9b853668a0214a913f1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/d2001133f914402935320898d471ddc6.png
 Meta Title: Everglow Moisturize Extra Care White Glow Soft Skin Lotion 200ml | B
 Meta Description: Buy Everglow Moisturize Extra Care White Glow Soft Skin Lotion 200ml online in Pakistan from ASM VEO. Everglow Moisturizer Lotion deeply hydrates and nourishes
 Description: Everglow Moisturizer Lotion deeply hydrates and nourishes skin, helping maintain a soft, smooth, and healthy glow with long-lasting moisture.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lily Glow Whitening Serum for Face, Hands & Feet – Glutathione, Brightening Formula | For Men, Women, Oily & Dry Skin 30ml
 Product ID: hhc-3752982
 SKU: hhc-3752982
@@ -7,11 +8,16 @@ Slug: lily-glow-whitening-serum-for-face-hands-feet-glutathione-brightening-f-fa
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/c1b86be8d83be85e0834c88fffa0998b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/c1b86be8d83be85e0834c88fffa0998b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/7a6ee59f1ab0751ed1df960273c0e682.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/abc9da8ed0f8b1f95c35816aa95fefa8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/2c317d8b61c36864ffb802afbe89f018.jpg
 Meta Title: Lily Glow Whitening Serum for Face, Hands & Feet – Glutathione, Brig
 Meta Description: Buy Lily Glow Whitening Serum for Face, Hands & Feet – Glutathione, Brightening Formula | For Men, Women, Oily & Dry Skin 30ml online in Pakistan from ASM VEO.
 Description: Brighten and even out your skin tone with this powerful blend of 10% Niacinamide and 2% Alpha Arbutin. Enriched with Panthenol, Glycerin, Allantoin, and Sodium Hyaluronate to deeply hydrate, soothe, and reveal a luminous, healthier-looking complexion.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

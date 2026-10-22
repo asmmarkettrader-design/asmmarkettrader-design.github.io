@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Couple Silk Night Suit / Sleepwear Set – Shirt & Shorts with Slip Dress | SKU DC-C013 (3 Pcs)
 Product ID: hhc-3756308
 SKU: hhc-3756308
@@ -7,11 +8,16 @@ Slug: couple-silk-night-suit-sleepwear-set-shirt-shorts-with-slip-dress-sku-d-61
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/628460cf6fbcd7e8d9f084b73d70f735.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/628460cf6fbcd7e8d9f084b73d70f735.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/f2d6b2b094e2c2ce3603359307f03846.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/cbf083c378344f6c4a37b9021d001287.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/405c312a1e07ba356154faa20e3b9505.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/df0f49c851c2c2ce98d5b40bef332a84.png
 Meta Title: Couple Silk Night Suit / Sleepwear Set – Shirt & Shorts with Slip Dr
 Meta Description: Buy Couple Silk Night Suit / Sleepwear Set – Shirt & Shorts with Slip Dress | SKU DC-C013 (3 Pcs) online in Pakistan from ASM VEO. Luxurious 3-piece silk sleepw
 Description: Luxurious 3-piece silk sleepwear set for couples, featuring a shirt and shorts for him and a matching slip dress for her. Available in Maroon, Blue, and Black.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

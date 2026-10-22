@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RAF Electric Iron R.1108 – Professional Dry Iron with Non‑Stick Soleplate
 Product ID: hhc-3754444
 SKU: hhc-3754444
@@ -7,11 +8,16 @@ Slug: raf-electric-iron-r-1108-professional-dry-iron-with-non-stick-soleplate-hh
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/19c45d36d3cd14859d782228b434b008.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/19c45d36d3cd14859d782228b434b008.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/bb44cd0718b1a64dccca905066ceba50.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/ea3e6835f1f7d02b072bc2d6ad278407.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/dd1ea7114e9bd90a68a73e049104be95.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/5a2d6bd62871d941fdd5c8bfbd6f2099.jpg
 Meta Title: RAF Electric Iron R.1108 – Professional Dry Iron with Non‑Stick Sole
 Meta Description: Buy RAF Electric Iron R.1108 – Professional Dry Iron with Non‑Stick Soleplate online in Pakistan from ASM VEO. RAF R.1108 is a professional dry iron featuring a
 Description: RAF R.1108 is a professional dry iron featuring a non‑stick soleplate for smooth and easy ironing.
-Regular Price: 3358
-Sale Price: 3358
+Wholesale Price: 3358
+Regular Price: 5680
+Sale Price: 4545
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

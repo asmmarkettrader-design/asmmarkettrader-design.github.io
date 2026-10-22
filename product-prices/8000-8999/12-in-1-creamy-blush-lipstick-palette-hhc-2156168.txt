@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 12 in 1 creamy blush lipstick palette
 Product ID: hhc-2156168
 SKU: hhc-2156168
@@ -7,11 +8,16 @@ Slug: 12-in-1-creamy-blush-lipstick-palette-hhc-2156168
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.38.22-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.38.22-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.38.22-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.38.22-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.38.21-PM.jpeg
 Meta Title: 12 in 1 creamy blush lipstick palette | Buy Online in Pakistan
 Meta Description: Buy 12 in 1 creamy blush lipstick palette online in Pakistan from ASM VEO. product details 12 in 1 creamy blush lipstick palette • Material: Cream • Product Fea
 Description: product details 12 in 1 creamy blush lipstick palette • Material: Cream • Product Feature: All Skin Types • Package Includes: 1 x Blush Palette • Disclaimer: Before using a new cosmetic product, conduct a test on a small area of your skin. If you have a specific allergy or sensitivity, check the ingredients to avoid a reaction. Always read the warning labels and directions on the package for using any cosmetic products.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

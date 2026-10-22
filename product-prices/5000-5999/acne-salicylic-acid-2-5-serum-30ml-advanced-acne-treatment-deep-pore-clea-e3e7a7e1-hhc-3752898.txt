@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acne Salicylic Acid 2.5% Serum 30ml | Advanced Acne Treatment | Deep Pore Cleansing, Oil Control, And Skin Clarifying Face Serum For All Skin Types
 Product ID: hhc-3752898
 SKU: hhc-3752898
@@ -7,11 +8,16 @@ Slug: acne-salicylic-acid-2-5-serum-30ml-advanced-acne-treatment-deep-pore-cl-e3
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/46a8ea16512b5c4a04fa73eaf002709d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/46a8ea16512b5c4a04fa73eaf002709d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/2610b886606fa715efd99c64663f5549.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/2b0296a9fe5a64c97fd09e3333baf3db.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/d744fadcf661073bb438ae911802d308.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/36238159f67b61a2227186ac6dbf3141.png
 Meta Title: Acne Salicylic Acid 2.5% Serum 30ml | Advanced Acne Treatment | Deep
 Meta Description: Buy Acne Salicylic Acid 2.5% Serum 30ml | Advanced Acne Treatment | Deep Pore Cleansing, Oil Control, And Skin Clarifying Face Serum For All Skin Types online i
 Description: Powerful Acne Treatment Serum With 2.5% Salicylic Acid That Helps Reduce Acne, Control Oil, And Cleanse Pores For Clear, Smooth, And Healthy-Looking Skin.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

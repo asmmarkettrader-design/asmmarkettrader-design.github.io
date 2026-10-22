@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Seat Back Relief Lumbar Pain Back Support Pillow Headrest Waist Safety Chair Cushion For Auto Vehicle - High Quality
 Product ID: hhc-3760338
 SKU: hhc-3760338
@@ -7,11 +8,16 @@ Slug: car-seat-back-relief-lumbar-pain-back-support-pillow-headrest-waist-saf-03
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Car Seat Back Relief Lumbar Pain Back Support Pillow Headrest Waist
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/f4ce8d5e9ca075d6b2a14859ffe690ec.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/f4ce8d5e9ca075d6b2a14859ffe690ec.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/f6fe5a56f73444ae115f4ce5a707243b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/8153b6c4d58c85895140b02bfebaee61.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/4d690858edea00c703650f95cef13f55.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/f4dd57c109b87d0c4b6e3c113dcc1dde.jpg
+Meta Title: Car Seat Back Relief Lumbar Pain Back Support Pillow Headrest Waist 
 Meta Description: Buy Car Seat Back Relief Lumbar Pain Back Support Pillow Headrest Waist Safety Chair Cushion For Auto Vehicle - High Quality online in Pakistan from ASM VEO. Ca
 Description: Car Seat Back Relief Lumbar Pain Back Support Pillow Headrest Waist Safety Chair Cushion For Auto Vehicle - High Quality
-Regular Price: 1401
-Sale Price: 1401
+Wholesale Price: 1351
+Regular Price: 2470
+Sale Price: 1978
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

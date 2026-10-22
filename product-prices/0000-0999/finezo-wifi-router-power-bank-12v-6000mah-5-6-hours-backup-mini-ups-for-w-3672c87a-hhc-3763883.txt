@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Finezo WiFi Router Power Bank 12V 6000mAh – 5-6 Hours Backup Mini UPS for WiFi Router & Modem – Portable Power Backup for Internet During Load Shedding
 Product ID: hhc-3763883
 SKU: hhc-3763883
@@ -7,11 +8,16 @@ Slug: finezo-wifi-router-power-bank-12v-6000mah-5-6-hours-backup-mini-ups-for-36
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/e1e8a822dd27eba057c3af4e20cd8eb1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/e1e8a822dd27eba057c3af4e20cd8eb1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/8399f61d09a4b4808296140081e23470.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/efef9bff9824e081a957d0fa92e59747.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/7935ae672e4dfaf72cc51bce79fd426b.png
 Meta Title: Finezo WiFi Router Power Bank 12V 6000mAh – 5-6 Hours Backup Mini UP
 Meta Description: Buy Finezo WiFi Router Power Bank 12V 6000mAh – 5-6 Hours Backup Mini UPS for WiFi Router & Modem – Portable Power Backup for Internet During Load Shedding onli
 Description: Finezo WiFi Router Power Bank 12V 6000mAh is a compact Mini UPS that provides 5–6 hours of backup for compatible WiFi routers and modems. It helps maintain internet connectivity during load shedding and power outages with reliable portable power backup for home and office use.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

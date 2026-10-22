@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fresh Rose Face Toner Mist (100ml)
 Product ID: hhc-1960863
 SKU: hhc-1960863
@@ -7,11 +8,16 @@ Slug: fresh-rose-face-toner-mist-100ml-hhc-1960863
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/FreshRoseFaceToner120ml.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/FreshRoseFaceToner120ml.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsAppImage2022-07-17at3.35.22PM_1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsAppImage2022-07-17at4.00.22PM.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/fresh_toner.webp
 Meta Title: Fresh Rose Face Toner Mist (100ml) | Buy Online in Pakistan
 Meta Description: Buy Fresh Rose Face Toner Mist (100ml) online in Pakistan from ASM VEO. product details This Fresh Face Toner Ltr contains a unique blend of ingredients that wo
 Description: product details This Fresh Face Toner Ltr contains a unique blend of ingredients that work to remove impurities and balance the skin. It helps to tighten pores, control excess oil, and leave your skin feeling refreshed and rejuvenated. With regular use, you can expect a smoother, clearer, and more radiant complexion.
-Regular Price: 692
-Sale Price: 692
+Wholesale Price: 642
+Regular Price: 1240
+Sale Price: 991
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pc - Shoe Bags For Travel Dust Proof Storage Organizer With Clear Window Non Woven Packing Pouch - Size: 12.5x16.5
 Product ID: hhc-3761970
 SKU: hhc-3761970
@@ -7,11 +8,16 @@ Slug: 1-pc-shoe-bags-for-travel-dust-proof-storage-organizer-with-clear-windo-b5
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: 1 Pc - Shoe Bags For Travel Dust Proof Storage Organizer With Clear
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/8058e0d7fc13fc2fea5a9e07e598180f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/8058e0d7fc13fc2fea5a9e07e598180f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/16d990438f7810c3b6305fc416884fb5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/4829a8b2d3956624362f9f8b60b36ebe.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/62e871bc4a5efc8eafaf803645bd83f2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/361478b272ba4c112f8023a4ba48e9b3.jpeg
+Meta Title: 1 Pc - Shoe Bags For Travel Dust Proof Storage Organizer With Clear 
 Meta Description: Buy 1 Pc - Shoe Bags For Travel Dust Proof Storage Organizer With Clear Window Non Woven Packing Pouch - Size: 12.5x16.5 online in Pakistan from ASM VEO. Shoe B
 Description: Shoe Bags For Travel Dust Proof Storage Organizer With Clear Window Non Woven Packing Pouch Size 12.5x16.5 Durable Lightweight And Portable.
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

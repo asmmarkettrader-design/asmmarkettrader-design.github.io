@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Stainless Steel Magnetic Ball Watch Providing Modern Design Everyday Style Support - With Box
 Product ID: hhc-3755365
 SKU: hhc-3755365
@@ -7,11 +8,16 @@ Slug: black-stainless-steel-magnetic-ball-watch-providing-modern-design-every-6a
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/8612b701470b8a70705d2efd25f7245d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/8612b701470b8a70705d2efd25f7245d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/451556c6b934169824880580a484a17d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/746eb3c7d0d7474707c1f0f8db8a9e16.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/63561b9b980cce8429c660c6fb6f496e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/c70c19a745f3ed6b0c768431bf710014.jpeg
 Meta Title: Black Stainless Steel Magnetic Ball Watch Providing Modern Design Ev
 Meta Description: Buy Black Stainless Steel Magnetic Ball Watch Providing Modern Design Everyday Style Support - With Box online in Pakistan from ASM VEO. Black Stainless Steel M
 Description: Black Stainless Steel Magnetic Ball Watch Offering Modern Design Durable Quality Reliable Performance Comfortable Use And Daily Style Support
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

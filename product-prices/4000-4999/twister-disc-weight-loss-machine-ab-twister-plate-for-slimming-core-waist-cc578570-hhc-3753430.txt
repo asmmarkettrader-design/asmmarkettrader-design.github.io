@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Twister Disc Weight Loss Machine | AB Twister Plate for Slimming, Core & Waist Exercise – Home Fitness Slim Machine
 Product ID: hhc-3753430
 SKU: hhc-3753430
@@ -7,11 +8,16 @@ Slug: twister-disc-weight-loss-machine-ab-twister-plate-for-slimming-core-wai-cc
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/fe5dfb4188ad45c600e3dd85415ea0ca.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/fe5dfb4188ad45c600e3dd85415ea0ca.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/72698171f1909edf0c8a765ea3d5c9d1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/4cb072974244bf40773700f677c71d6e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/3c0f20d104be3780d28aad380fcb262a.png
 Meta Title: Twister Disc Weight Loss Machine | AB Twister Plate for Slimming, Co
 Meta Description: Buy Twister Disc Weight Loss Machine | AB Twister Plate for Slimming, Core & Waist Exercise – Home Fitness Slim Machine online in Pakistan from ASM VEO. 360° ro
 Description: 360° rotating Twister Disc for weight loss, waist shaping, and core toning. Ideal home fitness tool for daily exercise and fat burn.
-Regular Price: 565
-Sale Price: 565
+Wholesale Price: 515
+Regular Price: 1010
+Sale Price: 807
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

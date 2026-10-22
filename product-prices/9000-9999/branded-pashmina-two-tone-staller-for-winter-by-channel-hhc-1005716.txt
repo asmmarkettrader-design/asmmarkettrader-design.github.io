@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Branded Pashmina two Tone Staller for Winter by Channel
 Product ID: hhc-1005716
 SKU: hhc-1005716
@@ -7,11 +8,16 @@ Slug: branded-pashmina-two-tone-staller-for-winter-by-channel-hhc-1005716
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-02-at-1.29.21-PM-1-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-02-at-1.29.21-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-02-at-1.29.21-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-02-at-1.29.20-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-02-at-1.29.20-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-02-at-1.29.19-PM-2.jpeg
 Meta Title: Branded Pashmina two Tone Staller for Winter by Channel | Buy Online
 Meta Description: Buy Branded Pashmina two Tone Staller for Winter by Channel online in Pakistan from ASM VEO. DESCRIPTION: • Size: 70/180cm, Color: 4 . • Made of high-quality pa
 Description: DESCRIPTION: • Size: 70/180cm, Color: 4 . • Made of high-quality pashmina silk material. • Perfect for winter season, hand wash only. • Ideal for traditional clothing occasions. • Complementary Original Picture:
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

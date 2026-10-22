@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multipurpose Electric Coffee Beater & Milk Frother | Handheld Mini Blender & Egg Whisk (Portable, Random Color)
 Product ID: hhc-3752639
 SKU: hhc-3752639
@@ -7,11 +8,16 @@ Slug: multipurpose-electric-coffee-beater-milk-frother-handheld-mini-blender-acc
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/652718e51b40ad3f471aed551ed6c738.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/652718e51b40ad3f471aed551ed6c738.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/dfbbae7ffdd800eaa9efb506ddb9a577.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/45fbb83d9fe7e5e8790da76317a8b0bb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/4926f7e82703e4d78ccfc22733655b18.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/eb53fdd8ae986dd771ecab16fefe05f1.jpg
 Meta Title: Multipurpose Electric Coffee Beater & Milk Frother | Handheld Mini B
 Meta Description: Buy Multipurpose Electric Coffee Beater & Milk Frother | Handheld Mini Blender & Egg Whisk (Portable, Random Color) online in Pakistan from ASM VEO. Compact ele
 Description: Compact electric coffee beater and milk frother – perfect for blending coffee, frothing milk, or whisking eggs anytime, anywhere.
-Regular Price: 369
-Sale Price: 369
+Wholesale Price: 319
+Regular Price: 688
+Sale Price: 538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

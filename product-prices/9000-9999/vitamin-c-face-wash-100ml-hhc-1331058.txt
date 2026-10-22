@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vitamin C Face Wash - 100ml
 Product ID: hhc-1331058
 SKU: hhc-1331058
@@ -7,11 +8,16 @@ Slug: vitamin-c-face-wash-100ml-hhc-1331058
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2023-02-25at10.32.03PM.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2023-02-25at10.32.03PM.webp
 Meta Title: Vitamin C Face Wash - 100ml | Buy Online in Pakistan
 Meta Description: Buy Vitamin C Face Wash - 100ml online in Pakistan from ASM VEO. about this item Vitamin C Face Wash By Moon Touch Brightening: Vitamin C is known for its Cash
 Description: about this item Vitamin C Face Wash By Moon Touch Brightening: Vitamin C is known for its ability to brighten the skin and improve the appearance of dullness or uneven skin tone. A vitamin C face wash can help promote a more radiant complexion by reducing the appearance of dark spots, hyperpigmentation, and sun damage. Antioxidant Protection: Vitamin C is a powerful antioxidant that helps protect the skin from free radical damage caused by environmental stressors like pollution and UV rays. This can contribute to a healthier and more youthful-looking skin. Collagen Production: Vitamin C plays a key role in collagen synthesis, which is essential for maintaining the skin's elasticity and firmness. Regular use of a vitamin C face wash can support collagen production, helping to reduce the appearance of fine lines and wrinkles.
-Regular Price: 713
-Sale Price: 713
+Wholesale Price: 663
+Regular Price: 1280
+Sale Price: 1021
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

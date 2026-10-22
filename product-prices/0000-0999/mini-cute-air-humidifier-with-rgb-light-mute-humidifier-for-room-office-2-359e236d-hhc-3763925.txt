@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Cute Air Humidifier With RGB Light | Mute Humidifier For Room & Office | 220ML Water Capacity
 Product ID: hhc-3763925
 SKU: hhc-3763925
@@ -7,11 +8,16 @@ Slug: mini-cute-air-humidifier-with-rgb-light-mute-humidifier-for-room-office-35
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/6110e2b5a8236207b294dc963c3d24ec.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/6110e2b5a8236207b294dc963c3d24ec.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/d1081cde0644537d7fb8eaf6cf7a1010.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/fc0abbef593ab3ab2f85c7eca8cbb3e4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/917541e5d285c8797adee377b51a4a92.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/536b252e2df36a936d183aac8f3da133.jpg
 Meta Title: Mini Cute Air Humidifier With RGB Light | Mute Humidifier For Room &
 Meta Description: Buy Mini Cute Air Humidifier With RGB Light | Mute Humidifier For Room & Office | 220ML Water Capacity online in Pakistan from ASM VEO. Enjoy fresh, comfortable
 Description: Enjoy fresh, comfortable air anywhere with this Mini Cute Air Humidifier. Its 220ML capacity, quiet operation, and RGB light make it perfect for bedrooms, offices, and study spaces.
-Regular Price: 616
-Sale Price: 616
+Wholesale Price: 566
+Regular Price: 1100
+Sale Price: 881
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

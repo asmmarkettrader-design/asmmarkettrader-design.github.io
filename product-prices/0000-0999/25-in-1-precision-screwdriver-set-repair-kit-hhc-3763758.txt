@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 25-in-1 Precision Screwdriver Set Repair Kit
 Product ID: hhc-3763758
 SKU: hhc-3763758
@@ -7,11 +8,16 @@ Slug: 25-in-1-precision-screwdriver-set-repair-kit-hhc-3763758
 Category: Tools & DIY
 Subcategory: Power Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/5e840d85c28943747e198d4d3496e34c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/5e840d85c28943747e198d4d3496e34c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/12975aa01b3749cb5294383ebf2600c0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/cf33c1b8deb68d87ae0a0cdcf146c28c.jpeg
 Meta Title: 25-in-1 Precision Screwdriver Set Repair Kit | Buy Online in Pakista
 Meta Description: Buy 25-in-1 Precision Screwdriver Set Repair Kit online in Pakistan from ASM VEO. Professional 25-in-1 Precision Screwdriver Set. Includes 24 interchangeable ma
 Description: Professional 25-in-1 Precision Screwdriver Set. Includes 24 interchangeable magnetic heads and an ergonomic handle, perfect for repairing phones, laptops, watches, glasses, and other small electronic devices. Compact storage case included.
-Regular Price: 505
-Sale Price: 505
+Wholesale Price: 455
+Regular Price: 930
+Sale Price: 742
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

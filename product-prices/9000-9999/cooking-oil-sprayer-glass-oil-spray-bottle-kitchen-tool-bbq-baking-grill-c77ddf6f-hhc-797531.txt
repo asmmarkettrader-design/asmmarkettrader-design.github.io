@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cooking Oil Sprayer Glass Oil Spray Bottle Kitchen Tool BBQ Baking Grill Vinegar Oil Sauce Bottle (Made in China)
 Product ID: hhc-797531
 SKU: hhc-797531
@@ -7,11 +8,16 @@ Slug: cooking-oil-sprayer-glass-oil-spray-bottle-kitchen-tool-bbq-baking-gril-c7
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/2-41.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/09/2-41.jpg
 Meta Title: Cooking Oil Sprayer Glass Oil Spray Bottle Kitchen Tool BBQ Baking G
 Meta Description: Buy Cooking Oil Sprayer Glass Oil Spray Bottle Kitchen Tool BBQ Baking Grill Vinegar Oil Sauce Bottle (Made in China) online in Pakistan from ASM VEO. Cooking O
 Description: Cooking Oil Sprayer Glass Oil Spray Bottle Kitchen Tool BBQ Baking Grill Vinegar Oil Sauce Bottle (Made in China)
-Regular Price: 515
-Sale Price: 515
+Wholesale Price: 465
+Regular Price: 950
+Sale Price: 758
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

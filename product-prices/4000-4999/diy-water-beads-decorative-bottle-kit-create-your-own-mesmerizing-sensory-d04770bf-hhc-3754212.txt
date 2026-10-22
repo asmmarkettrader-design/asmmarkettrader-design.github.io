@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DIY Water Beads Decorative Bottle Kit: Create Your Own Mesmerizing Sensory Art Piece.
 Product ID: hhc-3754212
 SKU: hhc-3754212
@@ -7,11 +8,16 @@ Slug: diy-water-beads-decorative-bottle-kit-create-your-own-mesmerizing-senso-d0
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/d8190944f801de73ae739c64c84eda67.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/d8190944f801de73ae739c64c84eda67.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/c76bdecae4406d3df95df2182bdc7f4c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/37b688ee903cad19bae109db10a5b1a2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/f8dd54a0265a01c4bfdd8d755524a41e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/0c523e8c2413ce079f70847ff605f2fc.png
 Meta Title: DIY Water Beads Decorative Bottle Kit: Create Your Own Mesmerizing S
 Meta Description: Buy DIY Water Beads Decorative Bottle Kit: Create Your Own Mesmerizing Sensory Art Piece. online in Pakistan from ASM VEO. Unleash your creativity with the Make
 Description: Unleash your creativity with the Make Your Own Water Beads Decorative Bottle Kit. This fun, all-inclusive DIY set provides everything needed to craft a mesmerizing, personalized sensory bottle or decorative jar. Simply hydrate the non-toxic water beads, layer them with included decorative accents (gl
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

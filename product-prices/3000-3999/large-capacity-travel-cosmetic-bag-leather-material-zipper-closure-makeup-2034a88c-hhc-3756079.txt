@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Large Capacity Travel Cosmetic Bag | Leather Material | Zipper Closure | Makeup & Toiletry Organizer ~ Synthetic leather
 Product ID: hhc-3756079
 SKU: hhc-3756079
@@ -7,11 +8,16 @@ Slug: large-capacity-travel-cosmetic-bag-leather-material-zipper-closure-make-20
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/5c6a55731e6be496c3e7e30ac1889789.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/5c6a55731e6be496c3e7e30ac1889789.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/9817bd3e39f4d0468d9f33c36fbf2dcc.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/f945ec400b36f05a179a7b82110b3fc9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/65c5a9cddb51bd45aba49acf626d9c50.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/ab51362b6100c9dfc80fcf074e9dd711.jpg
 Meta Title: Large Capacity Travel Cosmetic Bag | Leather Material | Zipper Closu
 Meta Description: Buy Large Capacity Travel Cosmetic Bag | Leather Material | Zipper Closure | Makeup & Toiletry Organizer ~ Synthetic leather online in Pakistan from ASM VEO. Sp
 Description: Spacious leather travel cosmetic bag with zipper. Perfect for organizing makeup, toiletries & essentials on the go.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

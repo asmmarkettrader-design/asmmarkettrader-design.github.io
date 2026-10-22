@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Alaxzar Premium Leather Key Organizer – Sleek & Compact
 Product ID: hhc-3754615
 SKU: hhc-3754615
@@ -7,11 +8,16 @@ Slug: alaxzar-premium-leather-key-organizer-sleek-compact-hhc-3754615
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/162f3e961f307cb3e483ce3a6c3d06b0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/162f3e961f307cb3e483ce3a6c3d06b0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/0985ab1ba625e93d25297b70d2f2d6d8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/72a957d7c17e66ff6020e7384d9da20e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/5bd74413c44a4c4114050168923201e5.jpeg
 Meta Title: Alaxzar Premium Leather Key Organizer – Sleek & Compact | Buy Online
 Meta Description: Buy Alaxzar Premium Leather Key Organizer – Sleek & Compact online in Pakistan from ASM VEO. Keep your keys organized and your pockets silent with the Alaxzar P
 Description: Keep your keys organized and your pockets silent with the Alaxzar Premium Leather Key Holder. Crafted from high-quality black leather with a minimalist "X" embossed logo, this sleek accessory eliminates key jingle and protects your phone and other valuables from scratches.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

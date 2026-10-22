@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 5 Hijab With 1Pc 4-in-1 Inner Cap – Gift Set (Mix Colors Without Box)
 Product ID: hhc-3757452
 SKU: hhc-3757452
@@ -7,11 +8,16 @@ Slug: pack-of-5-hijab-with-1pc-4-in-1-inner-cap-gift-set-mix-colors-without-box-
 Category: Fashion
 Subcategory: Hijabs & Scarves (Chiffon)
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/af4fe1fc2e809bc3821d4f231fa489b0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/af4fe1fc2e809bc3821d4f231fa489b0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/ea98375ac63eae4ba635008316aa3906.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/660c35a4ff239e38b3cb82bcc1d38b21.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/8d80c2cb5becedd2fbaab2accc7aed80.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/08/23d1034a2c825dee9333b1678173c52b.jpeg
 Meta Title: Pack of 5 Hijab With 1Pc 4-in-1 Inner Cap – Gift Set (Mix Colors Wit
 Meta Description: Buy Pack of 5 Hijab With 1Pc 4-in-1 Inner Cap – Gift Set (Mix Colors Without Box) online in Pakistan from ASM VEO. Pack of 5 hijabs 4-in-1 inner cap in mixed co
 Description: Pack of 5 hijabs 4-in-1 inner cap in mixed colors. Comfortable fabric, suitable for daily wear. Gift set without box.
-Regular Price: 2726
-Sale Price: 2726
+Wholesale Price: 2726
+Regular Price: 4820
+Sale Price: 3860
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

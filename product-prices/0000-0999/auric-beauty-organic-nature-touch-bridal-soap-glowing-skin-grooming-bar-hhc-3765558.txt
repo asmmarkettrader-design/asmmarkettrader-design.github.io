@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Auric Beauty Organic Nature Touch Bridal Soap – Glowing Skin & Grooming Bar
 Product ID: hhc-3765558
 SKU: hhc-3765558
@@ -7,11 +8,16 @@ Slug: auric-beauty-organic-nature-touch-bridal-soap-glowing-skin-grooming-bar-hh
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/e6845f0143fbb5597017462ce7aee510.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/e6845f0143fbb5597017462ce7aee510.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/fb775d63c929d6f81a6a5075aa1cc3d5.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/8c84afc9bd2ae929e3d6bee73e33c5af.jfif
 Meta Title: Auric Beauty Organic Nature Touch Bridal Soap – Glowing Skin & Groom
 Meta Description: Buy Auric Beauty Organic Nature Touch Bridal Soap – Glowing Skin & Grooming Bar online in Pakistan from ASM VEO. Prepare your skin for your special day or eleva
 Description: Prepare your skin for your special day or elevate your everyday skincare routine with the Auric Beauty Organic Nature Touch Bridal Soap. Expertly crafted with a rich blend of natural oils, organic floral extracts, and skin-loving vitamins, this premium beauty bar works deep to remove impurities while preserving your skin's natural moisture balance.Designed to enhance radiance and even out skin texture, it delivers a gentle exfoliating and nourishing lather that leaves skin feeling remarkably soft, smooth, and luminous. Free from harsh chemicals and synthetic detergents, it provides a spa-like cleansing experience that pampers your complexion with pure, natural care.Key Features:Radiant Bridal Glow: Infused with brightening botanical extracts to enhance natural luminosity and skin clarity.Deep Nourishing Cleanse: Rich lather effectively washes away dirt, excess oil, and impurities without stripping vital moisture.Organic Botanicals: Formulated with pure, skin-friendly ingredients that soothe and revitalize dull or tired skin.Soft &amp; Smooth Texture: Helps improve skin softness and promotes a refined, even complexion with regular use.Gentle Daily Formula: Free from harsh sulfates and parabens, making it safe for all skin types, including sensitive skin.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

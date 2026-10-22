@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hot Shaper Neoprene Body Suit - Black for Women
 Product ID: hhc-1088049
 SKU: hhc-1088049
@@ -7,11 +8,16 @@ Slug: hot-shaper-neoprene-body-suit-black-for-women-hhc-1088049
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/afc2866b58584164b9f961847f3a4e22.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/afc2866b58584164b9f961847f3a4e22.jpeg
 Meta Title: Hot Shaper Neoprene Body Suit - Black for Women | Buy Online in Paki
 Meta Description: Buy Hot Shaper Neoprene Body Suit - Black for Women online in Pakistan from ASM VEO. DESCRIPTION: Whether you're hitting the gym, going for a run, or engaging i
 Description: DESCRIPTION: Whether you're hitting the gym, going for a run, or engaging in home workouts, the Hot Shaper Neoprene Body Suit is a stylish and functional addition to your fitness wardrobe. Elevate your training sessions, enhance calorie burn, and sculpt your body with this innovative and fashion-forward neoprene body suit. It's time to redefine your fitness journey and unleash your full potential with the Hot Shaper Neoprene Body Suit.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

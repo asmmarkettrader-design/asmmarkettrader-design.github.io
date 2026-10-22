@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Moroccan Beauty Nila Powder | Blue Nila Skin Whitening Powder 120g | Best Quality Nila Powder
 Product ID: hhc-3752885
 SKU: hhc-3752885
@@ -7,11 +8,16 @@ Slug: moroccan-beauty-nila-powder-blue-nila-skin-whitening-powder-120g-best-q-31
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/bbacc6d7871e9c79a7f6be810b63005d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/bbacc6d7871e9c79a7f6be810b63005d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/3529b67229a59a1830313777e7a91809.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/743a523a779c38b19a0474d6dd6972c8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/451062efd49923e0c7cfe144b578102f.png
 Meta Title: Moroccan Beauty Nila Powder | Blue Nila Skin Whitening Powder 120g |
 Meta Description: Buy Moroccan Beauty Nila Powder | Blue Nila Skin Whitening Powder 120g | Best Quality Nila Powder online in Pakistan from ASM VEO. Moroccan Beauty Nila Powder |
 Description: Moroccan Beauty Nila Powder | Blue Nila Skin Whitening Powder 120g | Best Quality Nila Powder
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

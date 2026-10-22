@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: A9 Pro ANC/ENC Touch Screen Wireless Earbuds – Noise Reduction Bluetooth Earbuds for Android & iOS
 Product ID: hhc-3523014
 SKU: hhc-3523014
@@ -7,11 +8,16 @@ Slug: a9-pro-anc-enc-touch-screen-wireless-earbuds-noise-reduction-bluetooth-4b9
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/132a73d3cfc7bb8e871e08464bb5539f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/132a73d3cfc7bb8e871e08464bb5539f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/0-7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/Untitled-design-3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/8-5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/7-6.jpg
 Meta Title: A9 Pro ANC/ENC Touch Screen Wireless Earbuds – Noise Reduction Bluet
 Meta Description: Buy A9 Pro ANC/ENC Touch Screen Wireless Earbuds – Noise Reduction Bluetooth Earbuds for Android & iOS online in Pakistan from ASM VEO. Experience premium sound
 Description: Experience premium sound with A9 Pro Wireless Earbuds featuring ANC & ENC noise reduction technology, a smart touch screen display, Bluetooth connectivity, and a comfortable ergonomic design. Compatible with Android and iOS devices for seamless wireless listening.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

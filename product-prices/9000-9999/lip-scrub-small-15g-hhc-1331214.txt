@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lip Scrub Small (15g)
 Product ID: hhc-1331214
 SKU: hhc-1331214
@@ -7,11 +8,16 @@ Slug: lip-scrub-small-15g-hhc-1331214
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2024-02-03at3.34.23PM.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2024-02-03at3.34.23PM.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/2-28.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/1-30.webp
 Meta Title: Lip Scrub Small (15g) | Buy Online in Pakistan
 Meta Description: Buy Lip Scrub Small (15g) online in Pakistan from ASM VEO. Description Lip Scrub Small By Moon Touch Lip scrubs are a type of mechanical exfoliation¹ Cash on De
 Description: Description Lip Scrub Small By Moon Touch Lip scrubs are a type of mechanical exfoliation¹, meaning it physically removes dead skin cells (vs. chemically). Properly exfoliated lips better absorb moisturizing agents and protectants such as lip balm. Make Your Lips Soft &amp; Smooth Remove Dryness &amp; Roughness
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

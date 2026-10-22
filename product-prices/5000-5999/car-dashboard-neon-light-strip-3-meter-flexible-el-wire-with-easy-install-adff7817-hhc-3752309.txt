@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Dashboard Neon Light Strip – 3 Meter Flexible EL Wire with Easy Installation, Random Color
 Product ID: hhc-3752309
 SKU: hhc-3752309
@@ -7,11 +8,16 @@ Slug: car-dashboard-neon-light-strip-3-meter-flexible-el-wire-with-easy-insta-ad
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Car Dashboard Neon Light Strip – 3 Meter Flexible EL Wire with Easy
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/2d50d26c1365c7ba069c3c1693f720f0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/2d50d26c1365c7ba069c3c1693f720f0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/7ca43b9a61a8a62f43f7e898c04f954f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/9d2e7275c28ee301a3d2f0ac6c6fa507.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/bafab6d708f495a56b5683f1f6e62952.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/257719ecab08f9404958e920e7a57b50.jpg
+Meta Title: Car Dashboard Neon Light Strip – 3 Meter Flexible EL Wire with Easy 
 Meta Description: Buy Car Dashboard Neon Light Strip – 3 Meter Flexible EL Wire with Easy Installation, Random Color online in Pakistan from ASM VEO. Car Dashboard Neon Light Str
 Description: Car Dashboard Neon Light Strip – 3 Meter Flexible EL Wire with Easy Installation, Random Color
-Regular Price: 866
-Sale Price: 866
+Wholesale Price: 816
+Regular Price: 1550
+Sale Price: 1243
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

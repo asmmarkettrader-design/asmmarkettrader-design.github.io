@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Arencia Vitamin C Booster Shot - Skincare Product Designed For Skincare And Daily Care Routine - 30ML
 Product ID: hhc-3764403
 SKU: hhc-3764403
@@ -7,11 +8,16 @@ Slug: arencia-vitamin-c-booster-shot-skincare-product-designed-for-skincare-a-78
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/b186bb66f68993afc3429c5a7b054b20.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/b186bb66f68993afc3429c5a7b054b20.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/8d57f345c683f61530aa26f691252145.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/19e7d97ca160c3a7fb17573f896ff586.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/26/404447f66a615f0c15a1528015b9857a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/bc7a608404246430267d570bc1d2972b.jpg
 Meta Title: Arencia Vitamin C Booster Shot - Skincare Product Designed For Skinc
 Meta Description: Buy Arencia Vitamin C Booster Shot - Skincare Product Designed For Skincare And Daily Care Routine - 30ML online in Pakistan from ASM VEO. This Arencia Vitamin
 Description: This Arencia Vitamin C Booster Shot Provides A Reliable Solution For Skincare Products And Routine Skincare Needs. Formulated To Deliver Care Benefits While Supporting Arencia Vitamin C Booster Shot Utility, It Fits Seamlessly Into Your Regular Skincare Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Skincare Requirements, This Arencia Vitamin C Booster Shot Serves As An Essential Skincare Accessory For Daily Life.Key FeaturesArencia Vitamin C Booster Shot Formulated For Skincare ProductsDelivers Skincare And Supports Daily Care UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Skincare And Care RoutinesDesigned For Easy Operation And Convenient UseEssential Skincare Accessory For Everyday MaintenanceQuality : Copy
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

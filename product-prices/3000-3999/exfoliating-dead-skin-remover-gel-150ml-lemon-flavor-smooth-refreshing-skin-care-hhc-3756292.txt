@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Exfoliating Dead Skin Remover Gel | 150ml | Lemon Flavor | Smooth & Refreshing Skin Care
 Product ID: hhc-3756292
 SKU: hhc-3756292
@@ -7,11 +8,16 @@ Slug: exfoliating-dead-skin-remover-gel-150ml-lemon-flavor-smooth-refreshing-ski
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/77431240b4114cef2eb9ae21f0d1349b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/77431240b4114cef2eb9ae21f0d1349b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/ec153b0cc4b75e7e33072c2251c7a0fe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/2bfe38fc084097074946231e5db0ac50.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/ef02d36f36654b6cad107c055d0a0f73.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/f0df64012b6b179e2f273777bd2a3bed.jpeg
 Meta Title: Exfoliating Dead Skin Remover Gel | 150ml | Lemon Flavor | Smooth &
 Meta Description: Buy Exfoliating Dead Skin Remover Gel | 150ml | Lemon Flavor | Smooth & Refreshing Skin Care online in Pakistan from ASM VEO. 150ml lemon-flavored exfoliating g
 Description: 150ml lemon-flavored exfoliating gel removes dead skin gently, leaving skin smooth, refreshed, and radiant. Perfect for daily skincare.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

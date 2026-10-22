@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable USB Rechargeable Blender & Juicer – Personal Wireless Mini Smoothie Maker with Stainless Steel Blades for Shakes & Juices
 Product ID: hhc-3757071
 SKU: hhc-3757071
@@ -7,11 +8,16 @@ Slug: portable-usb-rechargeable-blender-juicer-personal-wireless-mini-smoothi-55
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Portable USB Rechargeable Blender & Juicer – Personal Wireless Mini
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/735062ccbfc390af48ddb9c200fa18a1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/735062ccbfc390af48ddb9c200fa18a1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/d5fffbb8d86cc2c7298e1e144538c178.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/0c740873dd34cd118694ccbb509d41d8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/9885cf521a98e6e9c6a5f35b42fa4228.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/fb1aa27269c88cee77e4b53724a2789f.jpeg
+Meta Title: Portable USB Rechargeable Blender & Juicer – Personal Wireless Mini 
 Meta Description: Buy Portable USB Rechargeable Blender & Juicer – Personal Wireless Mini Smoothie Maker with Stainless Steel Blades for Shakes & Juices online in Pakistan from A
 Description: Portable USB Rechargeable Blender & Juicer – Personal Wireless Mini Smoothie Maker with Stainless Steel Blades for Shakes & Juices
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

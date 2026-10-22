@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Serenity Sculpt 5-Point Head Massage Tool (Random colors)
 Product ID: hhc-3764737
 SKU: hhc-3764737
@@ -7,11 +8,16 @@ Slug: serenity-sculpt-5-point-head-massage-tool-random-colors-hhc-3764737
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/2a121819413095d458bae0afd4980c3a.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/2a121819413095d458bae0afd4980c3a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/6a637b71488901d8ffac75f01352acfd.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/0c72ec3ecba775686b2cf3f6783ad3a4.png
 Meta Title: Serenity Sculpt 5-Point Head Massage Tool (Random colors) | Buy Onli
 Meta Description: Buy Serenity Sculpt 5-Point Head Massage Tool (Random colors) online in Pakistan from ASM VEO. A 5-point handheld head massager tool featuring smooth rolling me
 Description: A 5-point handheld head massager tool featuring smooth rolling metal beads. Designed to stimulate the scalp, relieve tension, and promote deep relaxation at home or on the go.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

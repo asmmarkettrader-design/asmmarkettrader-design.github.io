@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 7 Hello Kitty Makeup Brush Set | Makeup Foundation Powder Eye Shadow Brushes Set (Pink)
 Product ID: hhc-2867571
 SKU: hhc-2867571
@@ -7,11 +8,16 @@ Slug: pack-of-7-hello-kitty-makeup-brush-set-makeup-foundation-powder-eye-sha-4f
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-29-at-11.57.01-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-29-at-11.57.01-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-29-at-11.57.02-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-29-at-11.57.02-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-29-at-11.57.03-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsApp-Image-2024-03-29-at-11.57.03-AM-1.jpeg
 Meta Title: Pack of 7 Hello Kitty Makeup Brush Set | Makeup Foundation Powder Ey
 Meta Description: Buy Pack of 7 Hello Kitty Makeup Brush Set | Makeup Foundation Powder Eye Shadow Brushes Set (Pink) online in Pakistan from ASM VEO. Pack of 7 Hello Kitty Makeu
 Description: Pack of 7 Hello Kitty Makeup Brush Set | Makeup Foundation Powder Eye Shadow Brushes Set Hello Kitty Makeup Brush Set, Pack of 7• Material: Synthetic Fibre • Product Type: Makeup Brush Set • Product Details: Soft Fibres, Easy To Carry, Smooth Strokes, Suitable For All Type Of Skins, Soft Synthetic Bristle And Durable Handle • Package Includes: 7 x Brushes Kit Original Video [video width="480" height="864" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Video-2025-03-10-at-1.29.05-PM.mp4"][/video]
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

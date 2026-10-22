@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Seven Girl Whitening Scrub Strawberry Moisturise Care – Big Size
 Product ID: hhc-3754447
 SKU: hhc-3754447
@@ -7,11 +8,16 @@ Slug: seven-girl-whitening-scrub-strawberry-moisturise-care-big-size-hhc-3754447
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/9cd6be3c97794205ffbaa46acb84ec10.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/9cd6be3c97794205ffbaa46acb84ec10.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/a27781843adf737ddba0acd4ea0a4446.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/05680a5856fc5522214b073d3f4988e7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/ea1dec119f2431c9ec760462341c4a36.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/f1b482e042997e3993cd63f95831ddf3.jpeg
 Meta Title: Seven Girl Whitening Scrub Strawberry Moisturise Care – Big Size | B
 Meta Description: Buy Seven Girl Whitening Scrub Strawberry Moisturise Care – Big Size online in Pakistan from ASM VEO. A strawberry whitening scrub from Seven Girl with moisturi
 Description: A strawberry whitening scrub from Seven Girl with moisturise care in a big size pack.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

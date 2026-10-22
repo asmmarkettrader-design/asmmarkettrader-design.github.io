@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Plain Peshawari Cap Traditional Design Durable Quality Comfortable Fit Stylish Look Perfect Choice For Cultural Events (Random Color)
 Product ID: hhc-3753964
 SKU: hhc-3753964
@@ -7,11 +8,16 @@ Slug: plain-peshawari-cap-traditional-design-durable-quality-comfortable-fit-452
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/f2d4e8976e261ff68f7354c22e9433d9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/f2d4e8976e261ff68f7354c22e9433d9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/24e527f4acdf1df55d4e9fe447426e5e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/8c744261c3ff8c051e37ff23fb0fa458.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/dd9c49be52dcadbeb25c2942a773a63f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/6a052c748f16d1493fb9cd516237067f.jpeg
 Meta Title: Plain Peshawari Cap Traditional Design Durable Quality Comfortable F
 Meta Description: Buy Plain Peshawari Cap Traditional Design Durable Quality Comfortable Fit Stylish Look Perfect Choice For Cultural Events (Random Color) online in Pakistan fro
 Description: Plain Peshawari Cap Provides Traditional Design Durable Quality Comfortable Fit And Stylish Look
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 In 1 Spoon Set Durable Quality Stylish Design Easy To Use Perfect Choice For Kitchen (Plastic)
 Product ID: hhc-3753884
 SKU: hhc-3753884
@@ -7,11 +8,16 @@ Slug: 5-in-1-spoon-set-durable-quality-stylish-design-easy-to-use-perfect-cho-c6
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: 5 In 1 Spoon Set Durable Quality Stylish Design Easy To Use Perfect
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/b9a5e1cd7e142ee24bafbe30f37e5f58.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/b9a5e1cd7e142ee24bafbe30f37e5f58.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/457b30f98f59318d7620378072baac06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/9665e1a58215c3158499e2911a748d60.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/1aa6d200630f7d5b4d984444e8f67aef.jpeg
+Meta Title: 5 In 1 Spoon Set Durable Quality Stylish Design Easy To Use Perfect 
 Meta Description: Buy 5 In 1 Spoon Set Durable Quality Stylish Design Easy To Use Perfect Choice For Kitchen (Plastic) online in Pakistan from ASM VEO. 5 In 1 Spoon Set Provides
 Description: 5 In 1 Spoon Set Provides Durable Quality Stylish Design Easy Use And Reliable Performance
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

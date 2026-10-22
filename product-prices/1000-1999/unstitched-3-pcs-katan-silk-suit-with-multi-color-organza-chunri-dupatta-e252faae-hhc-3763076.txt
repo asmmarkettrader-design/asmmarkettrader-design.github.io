@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Unstitched 3-Pcs Katan Silk Suit with Multi-Color Organza Chunri Dupatta for Women – Premium Party Wear Dress Material
 Product ID: hhc-3763076
 SKU: hhc-3763076
@@ -7,11 +8,16 @@ Slug: unstitched-3-pcs-katan-silk-suit-with-multi-color-organza-chunri-dupatt-e2
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/bb9d098f9c57d4b7823a7a6935d0562a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/bb9d098f9c57d4b7823a7a6935d0562a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/daea0c4d124fc946ae5a2f8e4e49cd1d.jpeg
 Meta Title: Unstitched 3-Pcs Katan Silk Suit with Multi-Color Organza Chunri Dup
 Meta Description: Buy Unstitched 3-Pcs Katan Silk Suit with Multi-Color Organza Chunri Dupatta for Women – Premium Party Wear Dress Material online in Pakistan from ASM VEO. Make
 Description: Make every occasion special with this 3-Piece Unstitched Katan Silk Suit featuring a solid-colored Katan Silk shirt and trouser paired with a vibrant multi-color Organza Chunri dupatta. Crafted from premium-quality fabric, this elegant suit is perfect for festive events, parties, family gatherings,
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

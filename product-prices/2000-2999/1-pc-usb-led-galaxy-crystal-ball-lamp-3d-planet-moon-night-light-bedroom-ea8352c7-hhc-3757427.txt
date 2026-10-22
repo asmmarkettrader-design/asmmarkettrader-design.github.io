@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pc USB LED Galaxy Crystal Ball Lamp | 3D Planet Moon Night Light | Bedroom & Party Home Decor | Kids Birthday Gift (Moon Shape Only)
 Product ID: hhc-3757427
 SKU: hhc-3757427
@@ -7,11 +8,16 @@ Slug: 1-pc-usb-led-galaxy-crystal-ball-lamp-3d-planet-moon-night-light-bedroo-ea
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/fb69620464c2949b7fd54c5570ef0c9c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/fb69620464c2949b7fd54c5570ef0c9c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/ddab361c4ce2bdceccc297b7214117b2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/07/0945759dd6905e43c009b6bfb48bfcfa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/b2338b0ae24c263e3cfbe4c37bf749d1.jpeg
 Meta Title: 1 Pc USB LED Galaxy Crystal Ball Lamp | 3D Planet Moon Night Light |
 Meta Description: Buy 1 Pc USB LED Galaxy Crystal Ball Lamp | 3D Planet Moon Night Light | Bedroom & Party Home Decor | Kids Birthday Gift (Moon Shape Only) online in Pakistan fr
 Description: USB LED crystal ball night lamp with 3D planet moon design. Perfect for bedroom, kids, parties, and birthday gifts.
-Regular Price: 804
-Sale Price: 804
+Wholesale Price: 754
+Regular Price: 1440
+Sale Price: 1153
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

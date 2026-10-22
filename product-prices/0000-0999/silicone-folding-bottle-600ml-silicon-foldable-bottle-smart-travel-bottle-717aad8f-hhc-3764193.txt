@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Folding Bottle | 600ML Silicon Foldable Bottle | Smart Travel Bottle Collapsible Design (Random Color)
 Product ID: hhc-3764193
 SKU: hhc-3764193
@@ -7,11 +8,16 @@ Slug: silicone-folding-bottle-600ml-silicon-foldable-bottle-smart-travel-bott-71
 Category: Travel & Outdoor
 Subcategory: Sports Equipment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/27fcb2e739b2d5afbd416031600f4c68.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/27fcb2e739b2d5afbd416031600f4c68.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/cd5ae39ade3f8c378d25400a993b6565.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/290a186666eaae38e3f02f75d0f7f0e1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/b51d7dffe321d5b118504d1f47242498.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/31eb5e99098fb243a9bd63b089d19135.webp
 Meta Title: Silicone Folding Bottle | 600ML Silicon Foldable Bottle | Smart Trav
 Meta Description: Buy Silicone Folding Bottle | 600ML Silicon Foldable Bottle | Smart Travel Bottle Collapsible Design (Random Color) online in Pakistan from ASM VEO. Silicone Fo
 Description: Silicone Folding Bottle | 600ML Silicon Foldable Bottle | Smart Travel Bottle Collapsible Design (Random Color)
-Regular Price: 712
-Sale Price: 712
+Wholesale Price: 662
+Regular Price: 1280
+Sale Price: 1020
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

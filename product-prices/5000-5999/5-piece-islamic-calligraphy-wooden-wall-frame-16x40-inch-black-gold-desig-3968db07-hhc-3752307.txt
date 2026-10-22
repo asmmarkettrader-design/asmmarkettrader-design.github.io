@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5-Piece Islamic Calligraphy Wooden Wall Frame – 16x40 Inch Black & Gold Design with Sticky Tiles
 Product ID: hhc-3752307
 SKU: hhc-3752307
@@ -7,11 +8,16 @@ Slug: 5-piece-islamic-calligraphy-wooden-wall-frame-16x40-inch-black-gold-des-39
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/40ad75d12b1f5c962ce58fa399ae9795.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/40ad75d12b1f5c962ce58fa399ae9795.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/a4176eb731b93f89ac42ed9b02411412.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/06c2564d7d17da81b6f650f480bdfe3c.mp4
 Meta Title: 5-Piece Islamic Calligraphy Wooden Wall Frame – 16x40 Inch Black & G
 Meta Description: Buy 5-Piece Islamic Calligraphy Wooden Wall Frame – 16x40 Inch Black & Gold Design with Sticky Tiles online in Pakistan from ASM VEO. Premium 5-piece Islamic ca
 Description: Premium 5-piece Islamic calligraphy wall frame set in black and gold design, crafted with wooden sticky tiles. Easy wall mounting with included adhesive tape.
-Regular Price: 980
-Sale Price: 980
+Wholesale Price: 930
+Regular Price: 1760
+Sale Price: 1408
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

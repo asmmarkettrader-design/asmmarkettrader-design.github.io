@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Paint Roller Handle – Durable Frame for Roller Refill
 Product ID: hhc-3757551
 SKU: hhc-3757551
@@ -7,11 +8,16 @@ Slug: mini-paint-roller-handle-durable-frame-for-roller-refill-hhc-3757551
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/a1aa980e9c757376fbacd9887e50ec09.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/a1aa980e9c757376fbacd9887e50ec09.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/025e0bddbcec7ce59a6af435c4ac08d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/e1ab818322418b316f2f0f184c2c1eed.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/7a2812750440c7608e036c1d2fbe1f91.jpeg
 Meta Title: Mini Paint Roller Handle – Durable Frame for Roller Refill | Buy Onl
 Meta Description: Buy Mini Paint Roller Handle – Durable Frame for Roller Refill online in Pakistan from ASM VEO. Strong and durable mini roller handle designed for paint roller
 Description: Strong and durable mini roller handle designed for paint roller refills. Comfortable grip for smooth and easy painting.
-Regular Price: 200
-Sale Price: 200
+Wholesale Price: 150
+Regular Price: 435
+Sale Price: 285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

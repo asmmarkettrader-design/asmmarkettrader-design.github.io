@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rubber Pull Tummy Trimmer Resistance Training Band
 Product ID: hhc-3765545
 SKU: hhc-3765545
@@ -7,11 +8,16 @@ Slug: rubber-pull-tummy-trimmer-resistance-training-band-hhc-3765545
 Category: Health & Wellness
 Subcategory: Fitness Equipment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/71ed33b7c81e8aec4ae14a69b24f3381.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/71ed33b7c81e8aec4ae14a69b24f3381.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/fce9e858148be2e991e6b61b7cacca8a.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/92e188e24ae361a1e5ddc7a0f0dc93d4.webp
 Meta Title: Rubber Pull Tummy Trimmer Resistance Training Band | Buy Online in P
 Meta Description: Buy Rubber Pull Tummy Trimmer Resistance Training Band online in Pakistan from ASM VEO. Rubber Pull Tummy Trimmer Resistance Training Band for men and women. Pe
 Description: Rubber Pull Tummy Trimmer Resistance Training Band for men and women. Perfect for home workouts, abdominal exercises, and toning. Versatile equipment for a full-body fitness routine.
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

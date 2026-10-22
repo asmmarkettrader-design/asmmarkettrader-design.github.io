@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stitched Suit with Trouser | Best Quality Stitched Suit For Men | Stitches Suit For Boys - Black Color - Printed Suit
 Product ID: hhc-3305886
 SKU: hhc-3305886
@@ -7,11 +8,16 @@ Slug: stitched-suit-with-trouser-best-quality-stitched-suit-for-men-stitches-709
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-21-at-5.29.28-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-21-at-5.29.28-PM.jpeg
 Meta Title: Stitched Suit with Trouser | Best Quality Stitched Suit For Men | St
 Meta Description: Buy Stitched Suit with Trouser | Best Quality Stitched Suit For Men | Stitches Suit For Boys - Black Color - Printed Suit online in Pakistan from ASM VEO. Stitc
 Description: Stitched Suit with Trouser | Best Quality Stitched Suit For Men | Stitches Suit For Boys - Black Color - Printed Suit
-Regular Price: 1441
-Sale Price: 1441
+Wholesale Price: 1391
+Regular Price: 2540
+Sale Price: 2035
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

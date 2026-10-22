@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VIZO VPB -16 FAST Powerbank for smartphones, speakers &amp; rechargeables
 Product ID: hhc-1517442
 SKU: hhc-1517442
@@ -7,11 +8,16 @@ Slug: vizo-vpb-16-fast-powerbank-for-smartphones-speakers-amp-rechargeables-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-11.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-11.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/3-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WEBTECH-VIZO-DETAIL-20TH-AUGUST_page-0003_cleanup-1.png
 Meta Title: VIZO VPB -16 FAST Powerbank for smartphones, speakers &amp; recharge
 Meta Description: Buy VIZO VPB -16 FAST Powerbank for smartphones, speakers &amp; rechargeables online in Pakistan from ASM VEO. Littel But Faster10000MAH Quick SupportDual Ports
 Description: Littel But Faster10000MAH Quick SupportDual Ports Both Supported FAST CHARGINGMetal BodyDigital DisplayDevice With Type C, Android &amp; iPhone Wire5v / 2AMicro USB, type C, iPhone, lightening cableType: Power bankCompatible with all mobile phones, music players, portable gaming devices and rechargeable speakersOn the coming holidays, birthdays, festivals and occasions, they will be one of the best gifts for your family and friends.Color Only Green
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

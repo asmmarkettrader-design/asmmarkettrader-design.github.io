@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Jenpharm Dermive Sensitive Moisturizer 100ml | Gentle, Hydrating, Non-Greasy Cream for Dry, Irritated & Sensitive Skin | Ceramides + Hyaluronic Acid Formula
 Product ID: hhc-3753716
 SKU: hhc-3753716
@@ -7,11 +8,16 @@ Slug: jenpharm-dermive-sensitive-moisturizer-100ml-gentle-hydrating-non-greas-34
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/bfd6548f0ebd0d27da2daf94b724e8de.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/bfd6548f0ebd0d27da2daf94b724e8de.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/1de4051116b098d1dbc1454cf1aabcaa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/84520014c3872e24ffcd35e7e6dce8e1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/f2c19e0fdc9fed84019087cbf6ea6567.jpg
 Meta Title: Jenpharm Dermive Sensitive Moisturizer 100ml | Gentle, Hydrating, No
 Meta Description: Buy Jenpharm Dermive Sensitive Moisturizer 100ml | Gentle, Hydrating, Non-Greasy Cream for Dry, Irritated & Sensitive Skin | Ceramides + Hyaluronic Acid Formula
 Description: Dermive Sensitive Moisturizer by Jenpharm provides gentle, lightweight hydration for sensitive, dry, and irritated skin. Its soothing formula helps strengthen the skin barrier, calm redness, and lock in long-lasting moisture without clogging pores.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

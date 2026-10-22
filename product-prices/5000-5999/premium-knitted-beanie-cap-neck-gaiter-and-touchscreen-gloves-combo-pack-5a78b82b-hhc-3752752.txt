@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Knitted Beanie Cap, Neck Gaiter And Touchscreen Gloves Combo Pack | Complete Winter Essentials For Cold Weather Protection (Random Color)
 Product ID: hhc-3752752
 SKU: hhc-3752752
@@ -7,11 +8,16 @@ Slug: premium-knitted-beanie-cap-neck-gaiter-and-touchscreen-gloves-combo-pac-5a
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/18c721d039f4a3414707fab6f207f4a7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/18c721d039f4a3414707fab6f207f4a7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/5106cde1cd1d61128d32112ac1dae168.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/65e4d5df6d1cf129bcbc5a5cb2465ab1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/afcdf90507e623e2e59849599d293bb0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/c400cdefe902099368a8ce587d6b609f.jpeg
 Meta Title: Premium Knitted Beanie Cap, Neck Gaiter And Touchscreen Gloves Combo
 Meta Description: Buy Premium Knitted Beanie Cap, Neck Gaiter And Touchscreen Gloves Combo Pack | Complete Winter Essentials For Cold Weather Protection (Random Color) online in
 Description: Stay Warm And Stylish With This Premium Knitted Winter Combo Pack Including A Wool Cap, Neck Warmer, And Touchscreen Gloves For Ultimate Comfort.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (Pack Of 6) Professional Hair Sectioning Crocodile Hairdressing Clips For Women
 Product ID: hhc-1997629
 SKU: hhc-1997629
@@ -7,11 +8,16 @@ Slug: pack-of-6-professional-hair-sectioning-crocodile-hairdressing-clips-for-wo
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/51EumUgoOuL._SL1001_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/51EumUgoOuL._SL1001_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/61Mvcp1lYvL._SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/61p4TfXIyUL._SL1001_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/41vcrOPqYXL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/41HfkiMnbKL.jpg
 Meta Title: (Pack Of 6) Professional Hair Sectioning Crocodile Hairdressing Clip
 Meta Description: Buy (Pack Of 6) Professional Hair Sectioning Crocodile Hairdressing Clips For Women online in Pakistan from ASM VEO. About this item (Pack Of 6) Professional Ha
 Description: About this item (Pack Of 6) Professional Hair Sectioning Crocodile Hairdressing Clips For Women, Hair Styling Clips-Sectioning Plastic Alligator Hair Clip For Thick Hair-Non-Slip DIY Accessories Hairgrip for Women and Men Black Each hair clip is made of a heavy duty plastic that is sturdy and durable enough to handle any length or type of hair. These large hair clips for men and women can be angled to keep hair out of your way, giving you more room to work with as you style
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

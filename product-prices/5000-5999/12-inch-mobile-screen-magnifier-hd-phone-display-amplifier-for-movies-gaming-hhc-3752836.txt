@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 12-Inch Mobile Screen Magnifier – HD Phone Display Amplifier for Movies & Gaming
 Product ID: hhc-3752836
 SKU: hhc-3752836
@@ -7,11 +8,16 @@ Slug: 12-inch-mobile-screen-magnifier-hd-phone-display-amplifier-for-movies-gami
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/77e57eceb7a81aadebf50481ecf7c972.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/77e57eceb7a81aadebf50481ecf7c972.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/ceabc8cb24f8db67ccec0ba658075fbf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/9e4f679c7b17d57d11dd33b8cb6cdd36.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/1bc3bbfe51006ec5ca108dc27af499af.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/39c9f95d620d6ab406d191de161cd525.jpg
 Meta Title: 12-Inch Mobile Screen Magnifier – HD Phone Display Amplifier for Mov
 Meta Description: Buy 12-Inch Mobile Screen Magnifier – HD Phone Display Amplifier for Movies & Gaming online in Pakistan from ASM VEO. Experience cinematic viewing on your smart
 Description: Experience cinematic viewing on your smartphone with this 12-inch HD mobile screen magnifier. Designed to enlarge your phone display for movies, gaming, and reading—no power or apps needed!
-Regular Price: 657
-Sale Price: 657
+Wholesale Price: 607
+Regular Price: 1180
+Sale Price: 940
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

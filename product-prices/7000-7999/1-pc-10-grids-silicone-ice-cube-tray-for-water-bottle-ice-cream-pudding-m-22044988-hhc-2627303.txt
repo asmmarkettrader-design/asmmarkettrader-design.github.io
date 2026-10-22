@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 PC 10 Grids Silicone Ice Cube Tray for Water Bottle Ice Cream Pudding Maker Mold (Random Color)
 Product ID: hhc-2627303
 SKU: hhc-2627303
@@ -7,11 +8,16 @@ Slug: 1-pc-10-grids-silicone-ice-cube-tray-for-water-bottle-ice-cream-pudding-22
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/10-grid-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/10-grid-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/10-grid-3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/10-grid-4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/10-grid-5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/10-grid.png
 Meta Title: 1 PC 10 Grids Silicone Ice Cube Tray for Water Bottle Ice Cream Pudd
 Meta Description: Buy 1 PC 10 Grids Silicone Ice Cube Tray for Water Bottle Ice Cream Pudding Maker Mold (Random Color) online in Pakistan from ASM VEO. Material: Silicone Colors
 Description: Material: Silicone Colors: Green, Blue, Red, Grey Tray Dimensions: 11 3/4"L x 4 ½"W x .75"H This 10 Grid Easy Pop out Ice Cube Tray is the perfect addition to your kitchen for keeping your drinks cold during the summer season. With its easy pop out design, you can effortlessly remove the ice cubes without any hassle. The tray features 10 grids, allowing you to make plenty of ice cubes at once. Made from high-quality materials, this tray is durable and long-lasting. Its compact size makes it easy to store in your freezer without taking up too much space. Ideal for use at home or for parties, this ice cube tray is a must-have for any kitchen.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

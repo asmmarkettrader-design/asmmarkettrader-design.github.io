@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 In 1 Miracle Peeler Green
 Product ID: hhc-1260287
 SKU: hhc-1260287
@@ -7,11 +8,16 @@ Slug: 2-in-1-miracle-peeler-green-hhc-1260287
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/8a504275f6336dda7cc31b3f05eaf95b.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/8a504275f6336dda7cc31b3f05eaf95b.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/daa551e6312ffe1d9387bd8739fb56d8.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/1e5d300e170c08a0aba1dcf9df01c446.jpg_750x750.jpg_.webp
 Meta Title: 2 In 1 Miracle Peeler Green | Buy Online in Pakistan
 Meta Description: Buy 2 In 1 Miracle Peeler Green online in Pakistan from ASM VEO. sharp bladehigh quality stainless-steel bladesWorks in both directionsRubberized gripGood Cash
 Description: sharp bladehigh quality stainless-steel bladesWorks in both directionsRubberized gripGood QualityDesigned for effortless removal of the outer skin or peel from fruits and vegetables.Features a sharp, curved or straight blade for efficient and smooth peeling.Equipped with an ergonomic handle for a comfortable and secure grip during use.Suitable for peeling a variety of fruits and vegetables, such as apples, potatoes, and carrots.Streamlines the preparation process, saving time and effort compared to using a knife.Typically compact and easy to store in the kitchen, taking up minimal space.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

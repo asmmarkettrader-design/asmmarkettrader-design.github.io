@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Motorbike Three Piece Lock Set Lock Kit Switch Designed For Motorcycles Providing Durable Quality
 Product ID: hhc-3754799
 SKU: hhc-3754799
@@ -7,11 +8,16 @@ Slug: motorbike-three-piece-lock-set-lock-kit-switch-designed-for-motorcycles-66
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/fb3942e0f7cf518da79ba363c47112cf.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/fb3942e0f7cf518da79ba363c47112cf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/6df50c43e97012108d0d23265a1ca2fe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/c00149d86014f795914393930064f198.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/b2b76efd4174503cd3ff645b24dd233f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/0a3a2affef5f68caee3864c9b9580f7c.jpeg
 Meta Title: Motorbike Three Piece Lock Set Lock Kit Switch Designed For Motorcyc
 Meta Description: Buy Motorbike Three Piece Lock Set Lock Kit Switch Designed For Motorcycles Providing Durable Quality online in Pakistan from ASM VEO. Motorbike Three Piece Loc
 Description: Motorbike Three Piece Lock Set With Switch Offering Durable Quality Reliable Security And Convenient Daily Use
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

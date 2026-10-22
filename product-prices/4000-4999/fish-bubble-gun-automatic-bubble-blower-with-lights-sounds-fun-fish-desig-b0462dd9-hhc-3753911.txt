@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fish Bubble Gun – Automatic Bubble Blower with Lights, Sounds & Fun Fish Design for Kids
 Product ID: hhc-3753911
 SKU: hhc-3753911
@@ -7,11 +8,16 @@ Slug: fish-bubble-gun-automatic-bubble-blower-with-lights-sounds-fun-fish-des-b0
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
-Meta Title: Fish Bubble Gun – Automatic Bubble Blower with Lights, Sounds & Fun
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/c5d4536fc1760a4e49de6001b882ba48.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/c5d4536fc1760a4e49de6001b882ba48.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/ee948e6c94cbcb99cad21ecc299e03fa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6e012c8480a6532b563d98d12b0eff0e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/bcd096fc3a24a0af560e5d4f7537a0b0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/df8acb581b263a444dfa8bf6dd6248f1.jpg
+Meta Title: Fish Bubble Gun – Automatic Bubble Blower with Lights, Sounds & Fun 
 Meta Description: Buy Fish Bubble Gun – Automatic Bubble Blower with Lights, Sounds & Fun Fish Design for Kids online in Pakistan from ASM VEO. Automatic fish bubble gun with lig
 Description: Automatic fish bubble gun with lights and sounds, creating endless bubbles for kids’ fun playtime.
-Regular Price: 1730
-Sale Price: 1730
+Wholesale Price: 1730
+Regular Price: 3140
+Sale Price: 2516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

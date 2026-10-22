@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: F1 racing car set pull back (12 pcs)
 Product ID: hhc-818688
 SKU: hhc-818688
@@ -7,11 +8,16 @@ Slug: f1-racing-car-set-pull-back-12-pcs-hhc-818688
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/17d7d626-6a33-4731-9e19-80859ac140e8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/17d7d626-6a33-4731-9e19-80859ac140e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/e0324ea7-b822-4aba-8196-7099a1967dca.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/38db4f05-6289-4d6e-b701-9be0b96dc484.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/3a46d958-659f-4e79-ad64-b6bb43303f1f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/ce00995c-1ae9-4dc4-aa9f-58511a158715.jpeg
 Meta Title: F1 racing car set pull back (12 pcs) | Buy Online in Pakistan
 Meta Description: Buy F1 racing car set pull back (12 pcs) online in Pakistan from ASM VEO. F1 racing car set pull back .. best gift for kids 12pcs best quality (Random color) Ca
 Description: F1 racing car set pull back .. best gift for kids 12pcs best quality (Random color)
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

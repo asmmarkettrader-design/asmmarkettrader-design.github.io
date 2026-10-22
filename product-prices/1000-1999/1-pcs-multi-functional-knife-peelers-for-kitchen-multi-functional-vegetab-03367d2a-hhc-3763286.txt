@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 PCs Multi-Functional Knife Peelers For Kitchen, Multi Functional Vegetable Peeler, 3 In 1 Multi Functional Wooden Handle Peeler And Bottle Opener
 Product ID: hhc-3763286
 SKU: hhc-3763286
@@ -7,11 +8,16 @@ Slug: 1-pcs-multi-functional-knife-peelers-for-kitchen-multi-functional-veget-03
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/63b6f10468137d9232ff01c1e38e76c1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/63b6f10468137d9232ff01c1e38e76c1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/e142cbec3bd652020dd8ec1638182b33.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/3536de2e552e839dd455667c80c814da.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/defb799bcabc7b8cf4b17115dd34b562.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/24726b2602edb24333d6d423c2641b65.jpeg
 Meta Title: 1 PCs Multi-Functional Knife Peelers For Kitchen, Multi Functional V
 Meta Description: Buy 1 PCs Multi-Functional Knife Peelers For Kitchen, Multi Functional Vegetable Peeler, 3 In 1 Multi Functional Wooden Handle Peeler And Bottle Opener online i
 Description: The Multi-Functional Knife Peelers For Kitchen, Multi Functional Vegetable Peeler, 3 In 1 Multi Functional Wooden Handle Peeler And Bottle Opener Is A Kitchen Appliance Formulated To Help Provide Food Preparation And Daily Cooking Utility During Use.
-Regular Price: 517
-Sale Price: 517
+Wholesale Price: 467
+Regular Price: 950
+Sale Price: 760
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Nature Art Wall Frames – Room Decoration, 8x11 Inches with Double Tape for Easy Mounting
 Product ID: hhc-3752431
 SKU: hhc-3752431
@@ -7,11 +8,16 @@ Slug: set-of-3-nature-art-wall-frames-room-decoration-8x11-inches-with-double-b0
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 3 Nature Art Wall Frames – Room Decoration, 8x11 Inches with
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/b6ed71e96cb8c6f7a6129bf06eb5c9f1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/b6ed71e96cb8c6f7a6129bf06eb5c9f1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/6c6038e3bbb7567017f334a8ec1cd453.jpg
+Meta Title: Set of 3 Nature Art Wall Frames – Room Decoration, 8x11 Inches with 
 Meta Description: Buy Set of 3 Nature Art Wall Frames – Room Decoration, 8x11 Inches with Double Tape for Easy Mounting online in Pakistan from ASM VEO. Elegant set of 3 wall fra
 Description: Elegant set of 3 wall frames featuring nature art prints. Each 8x11 inch frame comes with double tape for easy wall mounting, perfect for home or office décor.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

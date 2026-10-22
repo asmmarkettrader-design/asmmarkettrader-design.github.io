@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: USB Rechargeable Mosquito Killer Racket | Portable Mosquito Repellent Racket With UV Light For Home Office Use
 Product ID: hhc-3756556
 SKU: hhc-3756556
@@ -7,11 +8,16 @@ Slug: usb-rechargeable-mosquito-killer-racket-portable-mosquito-repellent-rac-a2
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/3f9ad29b93e9340e35a0210b589c290a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/3f9ad29b93e9340e35a0210b589c290a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/7ff5e653be08d3a9e3e3c2b2df203239.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/7110b8ad157a851afcbc9aaed22bdaa6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/0439c60fecc501314ae41cf50ea8ba60.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/705835fae8e050417d61346f5d936a17.jpg
 Meta Title: USB Rechargeable Mosquito Killer Racket | Portable Mosquito Repellen
 Meta Description: Buy USB Rechargeable Mosquito Killer Racket | Portable Mosquito Repellent Racket With UV Light For Home Office Use online in Pakistan from ASM VEO. USB Recharge
 Description: USB Rechargeable Mosquito Killer Racket with UV light attracts and eliminates mosquitoes instantly. Portable, lightweight, and easy to recharge. Ideal mosquito repellent solution for home and office use.
-Regular Price: 725
-Sale Price: 725
+Wholesale Price: 675
+Regular Price: 1300
+Sale Price: 1039
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

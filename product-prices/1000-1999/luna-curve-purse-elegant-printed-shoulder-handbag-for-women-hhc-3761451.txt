@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luna Curve Purse – Elegant Printed Shoulder Handbag for Women
 Product ID: hhc-3761451
 SKU: hhc-3761451
@@ -7,11 +8,16 @@ Slug: luna-curve-purse-elegant-printed-shoulder-handbag-for-women-hhc-3761451
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/ca5bdfbbb0399dbcc2316085aefa2a1b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/ca5bdfbbb0399dbcc2316085aefa2a1b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/9d1565d89350fb83107074556a3435e7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/c7fe317615091e23d59fac21e4464d43.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/b4372ff5245e3a1d19c121eec5125692.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/07/c1bf94a5c74a49a94cc5041165a89d38.jpeg
 Meta Title: Luna Curve Purse – Elegant Printed Shoulder Handbag for Women | Buy
 Meta Description: Buy Luna Curve Purse – Elegant Printed Shoulder Handbag for Women online in Pakistan from ASM VEO. Upgrade your everyday style with the Luna Curve Purse, design
 Description: Upgrade your everyday style with the Luna Curve Purse, designed with a sleek curved silhouette and a fashionable all-over printed pattern. Featuring premium stitching, polished gold-tone hardware, and a comfortable single shoulder strap, this elegant handbag is perfect for daily outings, shopping, wo
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

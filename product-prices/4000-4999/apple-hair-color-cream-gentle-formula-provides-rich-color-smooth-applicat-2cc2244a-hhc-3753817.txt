@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Apple Hair Color Cream Gentle Formula Provides Rich Color Smooth Application Long Lasting Shine Nourishes Hair  - 1000ML
 Product ID: hhc-3753817
 SKU: hhc-3753817
@@ -7,11 +8,16 @@ Slug: apple-hair-color-cream-gentle-formula-provides-rich-color-smooth-applic-2c
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/a768297738ed012ce3befa2a45564b4b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/a768297738ed012ce3befa2a45564b4b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/c8ce4afac6206605eb93fff5c3a473a3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/24738f20f7566a220bf9c5ac6f3e877b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/b3ec155f50740df6af4fec0a43deaf4e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/1ecba1d09c8fb0eabf73b70d90a8d794.jpeg
 Meta Title: Apple Hair Color Cream Gentle Formula Provides Rich Color Smooth App
 Meta Description: Buy Apple Hair Color Cream Gentle Formula Provides Rich Color Smooth Application Long Lasting Shine Nourishes Hair - 1000ML online in Pakistan from ASM VEO. App
 Description: Apple Hair Color Cream Provides Gentle Formula Rich Color Smooth Application Long Lasting Shine And Nourishes Hair
-Regular Price: 2053
-Sale Price: 2053
+Wholesale Price: 2053
+Regular Price: 3690
+Sale Price: 2952
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

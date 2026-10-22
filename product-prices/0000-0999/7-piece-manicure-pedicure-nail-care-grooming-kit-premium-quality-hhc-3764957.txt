@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7-Piece Manicure & Pedicure Nail Care Grooming Kit - Premium Quality
 Product ID: hhc-3764957
 SKU: hhc-3764957
@@ -7,11 +8,16 @@ Slug: 7-piece-manicure-pedicure-nail-care-grooming-kit-premium-quality-hhc-37649
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/bb1f0b4601a9308b4b06c00123f3d5c1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/bb1f0b4601a9308b4b06c00123f3d5c1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/4fc4b344185d380b50e759b3452ca296.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/03b55303652296e3584b598e94b88a81.jpg
 Meta Title: 7-Piece Manicure & Pedicure Nail Care Grooming Kit - Premium Quality
 Meta Description: Buy 7-Piece Manicure & Pedicure Nail Care Grooming Kit - Premium Quality online in Pakistan from ASM VEO. 7-Piece Professional Manicure &amp; Pedicure Grooming
 Description: 7-Piece Professional Manicure &amp; Pedicure Grooming Kit. Includes essential tools for hand and foot care. Premium stainless steel, rust-proof, compact, and travel-friendly design. Ideal for personal use or gifting.
-Regular Price: 727
-Sale Price: 727
+Wholesale Price: 677
+Regular Price: 1300
+Sale Price: 1042
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Oud Al Layl Eau De Parfum Perfume for Men & Women – 100ml Long Lasting Luxury Fragrance
 Product ID: hhc-3762553
 SKU: hhc-3762553
 Slug: oud-al-layl-eau-de-parfum-perfume-for-men-women-100ml-long-lasting-luxu-72ee0143-hhc-3762553
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/568856eb5ac1b56c083b556644bdd985.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/568856eb5ac1b56c083b556644bdd985.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/e0e6c7060df0a03a9d8e1eaaaf93555c.jpeg
 Meta Title: Oud Al Layl Eau De Parfum Perfume for Men & Women – 100ml Long Lasti
 Meta Description: Buy Oud Al Layl Eau De Parfum Perfume for Men & Women – 100ml Long Lasting Luxury Fragrance online in Pakistan from ASM VEO. Experience the rich and luxurious a
 Description: Experience the rich and luxurious aroma of Oud Al Layl Eau De Parfum.
-Regular Price: 965
-Sale Price: 965
+Wholesale Price: 480
+Regular Price: 1270
+Sale Price: 1015
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

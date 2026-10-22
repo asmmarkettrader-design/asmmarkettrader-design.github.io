@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Currency Note Checking Pen | Fake Note Detector Pen | Counterfeit Money Detector Pen For Identifying Real And Fake Notes (Random Color)
 Product ID: hhc-3752672
 SKU: hhc-3752672
@@ -7,11 +8,16 @@ Slug: currency-note-checking-pen-fake-note-detector-pen-counterfeit-money-det-68
 Category: Books & Stationery
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/e392042622c340424e2131e6866a8918.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/e392042622c340424e2131e6866a8918.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/312053f3acc1ad5facc3093301f37ae4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/b7125144e9ccf867608fb1b567947db7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/6279415baee45b635d8849bf4892ad96.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/2ebe7f56887fae6a3d3817cd9eeca359.jpg
 Meta Title: Currency Note Checking Pen | Fake Note Detector Pen | Counterfeit Mo
 Meta Description: Buy Currency Note Checking Pen | Fake Note Detector Pen | Counterfeit Money Detector Pen For Identifying Real And Fake Notes (Random Color) online in Pakistan f
 Description: High-Quality Currency Note Checking Pen For Quick And Easy Detection Of Fake Notes. Ideal For Shops, Banks, And Offices. Available In Random Colors.
-Regular Price: 369
-Sale Price: 369
+Wholesale Price: 319
+Regular Price: 688
+Sale Price: 538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

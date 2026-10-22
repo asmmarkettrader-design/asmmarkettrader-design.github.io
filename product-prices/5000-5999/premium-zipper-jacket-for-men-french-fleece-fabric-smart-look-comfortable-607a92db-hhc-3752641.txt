@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Zipper Jacket For Men | French Fleece Fabric | Smart Look, Comfortable Wear, Easy Wash
 Product ID: hhc-3752641
 SKU: hhc-3752641
@@ -7,11 +8,16 @@ Slug: premium-zipper-jacket-for-men-french-fleece-fabric-smart-look-comfortab-60
 Category: Fashion
 Subcategory: Jackets & Hoodies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/db1c6b13719a285c629dba90a047986e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/db1c6b13719a285c629dba90a047986e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/1919f70dd96a6bba425382df4ce329ae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/e67da70384f188e5f37179e04a109654.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/0f1ca0eccb3e78ecb9fe7843669d931d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/e2b8196fa7926cc33e6b2ef4da6e4eed.png
 Meta Title: Premium Zipper Jacket For Men | French Fleece Fabric | Smart Look, C
 Meta Description: Buy Premium Zipper Jacket For Men | French Fleece Fabric | Smart Look, Comfortable Wear, Easy Wash online in Pakistan from ASM VEO. Stylish Zipper Jacket For Me
 Description: Stylish Zipper Jacket For Men Made With French Fleece Fabric. Comfortable, Smart Looking, And Premium Quality | Available In Medium, Large, Extra Large
-Regular Price: 1089
-Sale Price: 1089
+Wholesale Price: 1039
+Regular Price: 1920
+Sale Price: 1535
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

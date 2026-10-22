@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS Plastic & Trim Restorer 250ml | German Engineered | Restores Faded Plastic, Trim & Bumpers
 Product ID: hhc-3756906
 SKU: hhc-3756906
@@ -7,11 +8,16 @@ Slug: three-guys-plastic-trim-restorer-250ml-german-engineered-restores-faded-51
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/65f5e4c4534e1d9f43b7ae0a7bf7c06b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/65f5e4c4534e1d9f43b7ae0a7bf7c06b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/176bfb5e147fd7403aa8565b68e94083.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/fad62efd6a66adf9975bbe731a481dff.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/ae9b913401819cdf3ca5b51e0999bde2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/0a37613ca357b97765b8199fb79cdc7c.jpg
 Meta Title: THREE GUYS Plastic & Trim Restorer 250ml | German Engineered | Resto
 Meta Description: Buy THREE GUYS Plastic & Trim Restorer 250ml | German Engineered | Restores Faded Plastic, Trim & Bumpers online in Pakistan from ASM VEO. THREE GUYS Plastic &
 Description: THREE GUYS Plastic & Trim Restorer is specially formulated to restore faded plastic, trim, and bumpers, bringing back a deep black shine. Its German engineered formula helps protect exterior plastic surfaces and keeps them looking clean, fresh, and like new.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

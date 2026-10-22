@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wart Remover Gel Pen – Powerful Wart Removal Treatment for Hands, Feet & Skin | Wart Care Ointment for Common Warts | Easy Apply Skin Treatment
 Product ID: hhc-3765513
 SKU: hhc-3765513
@@ -7,11 +8,16 @@ Slug: wart-remover-gel-pen-powerful-wart-removal-treatment-for-hands-feet-ski-ee
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/01bc24946251aab436b73ac17b12fab0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/01bc24946251aab436b73ac17b12fab0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/9e737b726e2a6bb6dc8c6ec0cd2556f5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/5e51fb58f7e1ee56cd1d74074656f714.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/6edbcda2e1415558f222105ce39d05df.jpeg
 Meta Title: Wart Remover Gel Pen – Powerful Wart Removal Treatment for Hands, Fe
 Meta Description: Buy Wart Remover Gel Pen – Powerful Wart Removal Treatment for Hands, Feet & Skin | Wart Care Ointment for Common Warts | Easy Apply Skin Treatment online in Pa
 Description: Wart Remover Gel Pen is a convenient and easy-to-use solution designed for targeted wart care. The pen-style applicator allows you to apply the gel precisely to the desired area without unnecessary mess.Key FeaturesOriginal Wart Remover Gel PenConvenient pen-style applicatorEasy and precise applicationDesigned for common hand &amp; foot wartsSuitable for targeted skin applicationCompact, portable and easy to carrySimple addition to your personal skincare routine
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Motivational Wall Art – MDF Wooden Phototile Frames (8x11") with Adhesive Back
 Product ID: hhc-3754680
 SKU: hhc-3754680
@@ -7,11 +8,16 @@ Slug: set-of-3-motivational-wall-art-mdf-wooden-phototile-frames-8x11-with-ad-ae
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/9c96f8522e70721a343c7e80872a3dae.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/9c96f8522e70721a343c7e80872a3dae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/727121b0b63b729b23248b59999e03e5.webp
 Meta Title: Set of 3 Motivational Wall Art – MDF Wooden Phototile Frames (8x11")
 Meta Description: Buy Set of 3 Motivational Wall Art – MDF Wooden Phototile Frames (8x11") with Adhesive Back online in Pakistan from ASM VEO. Set of 3 motivational wall art fram
 Description: Set of 3 motivational wall art frames made from MDF wood, each 8x11". Includes adhesive tape for easy wall mounting. Designed to add a spiritual and reflective touch to your space.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

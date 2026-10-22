@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Wall Decor – Trio of MDF Frames Featuring Allah, Muhammad & Shahada Calligraphy – 8x11" with Sticky Tape
 Product ID: hhc-3754684
 SKU: hhc-3754684
@@ -7,11 +8,16 @@ Slug: islamic-wall-decor-trio-of-mdf-frames-featuring-allah-muhammad-shahada-480
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Islamic Wall Decor – Trio of MDF Frames Featuring Allah, Muhammad &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/4b6ad4d15977be913256aabd5539c945.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/4b6ad4d15977be913256aabd5539c945.jpg
+Meta Title: Islamic Wall Decor – Trio of MDF Frames Featuring Allah, Muhammad & 
 Meta Description: Buy Islamic Wall Decor – Trio of MDF Frames Featuring Allah, Muhammad & Shahada Calligraphy – 8x11" with Sticky Tape online in Pakistan from ASM VEO. Elevate yo
 Description: Elevate your space with this elegant set of 3 Islamic calligraphy wall art frames. Crafted from high-quality MDF wood and featuring abstract gold-accented backgrounds, each 8x11" frame comes ready to mount with adhesive backing—bringing a serene, spiritual touch to your interior.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

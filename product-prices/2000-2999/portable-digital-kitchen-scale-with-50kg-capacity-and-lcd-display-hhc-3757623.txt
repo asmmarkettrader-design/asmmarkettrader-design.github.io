@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Digital Kitchen Scale With 50kg Capacity And LCD Display
 Product ID: hhc-3757623
 SKU: hhc-3757623
@@ -7,11 +8,16 @@ Slug: portable-digital-kitchen-scale-with-50kg-capacity-and-lcd-display-hhc-3757
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/26bd5a099b0db8c1698c5e833c155a02.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/26bd5a099b0db8c1698c5e833c155a02.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/35633f64968f28ba5c5c697f31fe3c04.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/6b8f60c77f27f24265828c9afe5d4928.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/46a6eb75074df96a874ca670081908de.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/2e117d3828fbc4709ae082e14c58eefb.jpeg
 Meta Title: Portable Digital Kitchen Scale With 50kg Capacity And LCD Display |
 Meta Description: Buy Portable Digital Kitchen Scale With 50kg Capacity And LCD Display online in Pakistan from ASM VEO. Portable Digital Kitchen Scale With 50kg Capacity LCD Dis
 Description: Portable Digital Kitchen Scale With 50kg Capacity LCD Display And Easy To Use Features
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

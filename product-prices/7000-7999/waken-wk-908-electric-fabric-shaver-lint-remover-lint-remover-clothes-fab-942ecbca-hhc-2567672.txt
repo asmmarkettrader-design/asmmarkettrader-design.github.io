@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Waken WK-908 Electric Fabric Shaver/Lint Remover Lint Remover Clothes Fabric Shaver Lint Remover
 Product ID: hhc-2567672
 SKU: hhc-2567672
@@ -7,11 +8,16 @@ Slug: waken-wk-908-electric-fabric-shaver-lint-remover-lint-remover-clothes-f-94
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/waken-lint-remover-wk-908-4-shoppingjin.pk_.jpg.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/waken-lint-remover-wk-908-4-shoppingjin.pk_.jpg.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/waken-lint-remover-wk-908-6-shoppingjin.pk_.jpg.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/waken-lint-remover-wk-908-3-shoppingjin.pk_.jpg.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/sokany-rechargeable-lint-remover-sk-877-10-shoppingjin.pk_.jpg.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/sokany-rechargeable-lint-remover-sk-877-8-shoppingjin.pk_.jpg.webp
 Meta Title: Waken WK-908 Electric Fabric Shaver/Lint Remover Lint Remover Clothe
 Meta Description: Buy Waken WK-908 Electric Fabric Shaver/Lint Remover Lint Remover Clothes Fabric Shaver Lint Remover online in Pakistan from ASM VEO. Product DescriptionEasy re
 Description: Product DescriptionEasy removal of fabric fluff on a variety of garments and fabrics.Voltage (110v—220v) 50HZCompact size, lightweight and ergonomic body design, convenient to carry and comfortable to grip.5W PowerMetal Grille1.4 m Cable LengthYou can easily wash and empty it by detaching from the shaver.The detachable lint storeroom contains all the debris.Just switch on the device and slide over the fabric to wipe out the lint.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

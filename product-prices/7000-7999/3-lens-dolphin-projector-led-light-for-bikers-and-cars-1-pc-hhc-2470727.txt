@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Lens Dolphin Projector LED Light for bikers and Cars (1 pc)
 Product ID: hhc-2470727
 SKU: hhc-2470727
@@ -7,11 +8,16 @@ Slug: 3-lens-dolphin-projector-led-light-for-bikers-and-cars-1-pc-hhc-2470727
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-2.45.41-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-2.45.41-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/rn-image_picker_lib_temp_10d92866-c155-4c8e-ab1e-953d5e8a1cb7-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/rn-image_picker_lib_temp_dcc526e5-46a2-4685-9c87-8217eac26d35-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/rn-image_picker_lib_temp_5fa23102-648a-49c6-bf03-f4769166aba2-1.webp
 Meta Title: 3 Lens Dolphin Projector LED Light for bikers and Cars (1 pc) | Buy
 Meta Description: Buy 3 Lens Dolphin Projector LED Light for bikers and Cars (1 pc) online in Pakistan from ASM VEO. Description: Age Preferred: 5+year Material : Metal Main func
 Description: Description: Age Preferred: 5+year Material : Metal Main functions. LED White Yellow Worm and Flashing . Blue Red and Police Flashing Main category: Car Bikes , Truks Sub category: Electric Item for Vehicles Weight : 150 grams Size: Standard Package Includes: 1x 3 Lens Projector Dolphin led
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

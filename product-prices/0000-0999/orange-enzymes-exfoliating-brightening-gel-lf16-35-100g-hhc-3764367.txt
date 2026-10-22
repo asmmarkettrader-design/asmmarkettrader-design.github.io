@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Orange Enzymes Exfoliating Brightening Gel LF16-35 - 100g
 Product ID: hhc-3764367
 SKU: hhc-3764367
@@ -7,11 +8,16 @@ Slug: orange-enzymes-exfoliating-brightening-gel-lf16-35-100g-hhc-3764367
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/285a20aca7b665c905b33e50d5af8123.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/285a20aca7b665c905b33e50d5af8123.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/72aeb7e062708b2fe1d7cbb20cdec33a.jpeg
 Meta Title: Orange Enzymes Exfoliating Brightening Gel LF16-35 - 100g | Buy Onli
 Meta Description: Buy Orange Enzymes Exfoliating Brightening Gel LF16-35 - 100g online in Pakistan from ASM VEO. A high-activity, mildly exfoliating gel designed to refine the sk
 Description: A high-activity, mildly exfoliating gel designed to refine the skin. Formulated with orange enzymes, it works to brighten skin tone, remove cutin, and target skin blemishes.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

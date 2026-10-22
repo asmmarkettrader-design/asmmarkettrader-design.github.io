@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Waterproof Terry Mattress Protector – King Size (72 x 78 Inches, Fits Up To 8" Depth)
 Product ID: hhc-3764787
 SKU: hhc-3764787
@@ -7,11 +8,16 @@ Slug: waterproof-terry-mattress-protector-king-size-72-x-78-inches-fits-up-to-8-
 Category: Home & Kitchen
 Subcategory: Bedding & Linen
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/a8b90133c40eea7e5c20748164120652.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/a8b90133c40eea7e5c20748164120652.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/ecd575d367dcb3c5ceca75ac8d3ce829.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/7b03693c02ef798df708f048457a2b6c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/c2fc9b6ce00ebd6532ecb95d3870c5e8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/675abdf2b6e76e2c0d7358241abf35e4.jpg
 Meta Title: Waterproof Terry Mattress Protector – King Size (72 x 78 Inches, Fit
 Meta Description: Buy Waterproof Terry Mattress Protector – King Size (72 x 78 Inches, Fits Up To 8" Depth) online in Pakistan from ASM VEO. Waterproof Terry Mattress Protector –
 Description: Waterproof Terry Mattress Protector – King Size (72 x 78 Inches, Fits Up To 8" Depth)
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

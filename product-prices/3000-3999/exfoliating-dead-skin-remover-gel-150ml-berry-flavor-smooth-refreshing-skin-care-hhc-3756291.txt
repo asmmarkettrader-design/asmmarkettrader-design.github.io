@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Exfoliating Dead Skin Remover Gel | 150ml | Berry Flavor | Smooth & Refreshing Skin Care
 Product ID: hhc-3756291
 SKU: hhc-3756291
@@ -7,11 +8,16 @@ Slug: exfoliating-dead-skin-remover-gel-150ml-berry-flavor-smooth-refreshing-ski
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/db442e714e4fd39e296565b36b249998.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/db442e714e4fd39e296565b36b249998.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/3912625ca1552795017c3bd0936441e3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/bc2015622909879a3b5fa7c8a416a2e7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/a0bf4412d1f0fb5ab8df8a0435b718e7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/a487820bb859ef24ca76276a84024b4a.jpeg
 Meta Title: Exfoliating Dead Skin Remover Gel | 150ml | Berry Flavor | Smooth &
 Meta Description: Buy Exfoliating Dead Skin Remover Gel | 150ml | Berry Flavor | Smooth & Refreshing Skin Care online in Pakistan from ASM VEO. 150ml berry-flavored exfoliating g
 Description: 150ml berry-flavored exfoliating gel removes dead skin gently, leaving skin smooth, refreshed, and radiant. Perfect for daily skincare.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

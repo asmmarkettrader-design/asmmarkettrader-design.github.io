@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 32 in 1 Precision Screwdriver Set with Handle – Multi-Bit Repair Tool Kit
 Product ID: hhc-3757155
 SKU: hhc-3757155
@@ -7,11 +8,16 @@ Slug: 32-in-1-precision-screwdriver-set-with-handle-multi-bit-repair-tool-kit-hh
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/b7114a4d3a1b58a2b7af07474c871b60.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/b7114a4d3a1b58a2b7af07474c871b60.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/f138367a0c6efbb67771985ab1046678.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/8e77fe301ee1c78aaa8bedace3d14321.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/08f8c40e4921e9ca3365f219252c2935.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/fbf705272ff27199617f8a9fdf2844aa.jpeg
 Meta Title: 32 in 1 Precision Screwdriver Set with Handle – Multi-Bit Repair Too
 Meta Description: Buy 32 in 1 Precision Screwdriver Set with Handle – Multi-Bit Repair Tool Kit online in Pakistan from ASM VEO. Compact and versatile 32 in 1 precision screwdriv
 Description: Compact and versatile 32 in 1 precision screwdriver set featuring a comfortable handle and multiple interchangeable bits, ideal for electronics, gadgets, and small repair tasks.
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

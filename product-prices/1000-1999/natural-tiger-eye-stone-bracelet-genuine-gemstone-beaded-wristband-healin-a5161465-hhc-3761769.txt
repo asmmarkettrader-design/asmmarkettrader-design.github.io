@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Natural Tiger Eye Stone Bracelet - Genuine Gemstone Beaded Wristband Healing Crystal Jewelry For Men And Women Fashion Accessory
 Product ID: hhc-3761769
 SKU: hhc-3761769
@@ -7,11 +8,16 @@ Slug: natural-tiger-eye-stone-bracelet-genuine-gemstone-beaded-wristband-heal-a5
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/c534992efecb5c0d0e3515d3ede047be.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/c534992efecb5c0d0e3515d3ede047be.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/e9abad0f7a7ac0b10ecdf48a0ffead55.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/672f52011800f8494974fa30a1c8d64c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/65e96c5272725bc21190c39ab6a0a843.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/0d016d30d9f897162f15163d84f8f3ba.jpeg
 Meta Title: Natural Tiger Eye Stone Bracelet - Genuine Gemstone Beaded Wristband
 Meta Description: Buy Natural Tiger Eye Stone Bracelet - Genuine Gemstone Beaded Wristband Healing Crystal Jewelry For Men And Women Fashion Accessory online in Pakistan from ASM
 Description: The Natural Tiger Eye Stone Bracelet Is A Beautifully Crafted Piece Of Genuine Gemstone Jewelry Designed For Everyday Style And Elegant Personal Wear.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

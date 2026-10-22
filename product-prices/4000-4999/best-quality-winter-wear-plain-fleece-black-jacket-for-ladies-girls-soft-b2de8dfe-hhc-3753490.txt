@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Best Quality Winter Wear Plain Fleece Black Jacket for Ladies & Girls | Soft, Warm & Stylish Winter Outfit
 Product ID: hhc-3753490
 SKU: hhc-3753490
@@ -7,11 +8,16 @@ Slug: best-quality-winter-wear-plain-fleece-black-jacket-for-ladies-girls-sof-b2
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/bf0155d93d7ec34ac92c6e489899cbc7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/bf0155d93d7ec34ac92c6e489899cbc7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/0d71604d7231cace99c8f06c3cb1b0ec.jpeg
 Meta Title: Best Quality Winter Wear Plain Fleece Black Jacket for Ladies & Girl
 Meta Description: Buy Best Quality Winter Wear Plain Fleece Black Jacket for Ladies & Girls | Soft, Warm & Stylish Winter Outfit online in Pakistan from ASM VEO. Premium black fl
 Description: Premium black fleece winter jacket for ladies and girls. Soft, warm, and stylish — perfect for comfort and elegance in cold weather.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

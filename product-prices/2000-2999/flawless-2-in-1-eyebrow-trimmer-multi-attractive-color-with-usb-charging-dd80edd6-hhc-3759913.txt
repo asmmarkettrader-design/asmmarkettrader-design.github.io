@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flawless 2 In 1 Eyebrow Trimmer Multi Attractive Color With USB Charging Cable And Cleaning Brush
 Product ID: hhc-3759913
 SKU: hhc-3759913
@@ -7,11 +8,16 @@ Slug: flawless-2-in-1-eyebrow-trimmer-multi-attractive-color-with-usb-chargin-dd
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/6937bd2eb91f7a30e833a51f6a0c5ac2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/6937bd2eb91f7a30e833a51f6a0c5ac2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/8745079369774b4048a9131409abafd1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/c0662913cad6bbb9dc320f7a1b18ec39.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/cf9b345ac7d066181d530d6666e405e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/d4ed6af151fca6c74e2e0127c31c6cc2.jpeg
 Meta Title: Flawless 2 In 1 Eyebrow Trimmer Multi Attractive Color With USB Char
 Meta Description: Buy Flawless 2 In 1 Eyebrow Trimmer Multi Attractive Color With USB Charging Cable And Cleaning Brush online in Pakistan from ASM VEO. Flawless 2 In 1 Eyebrow T
 Description: Flawless 2 In 1 Eyebrow Trimmer Multi Attractive Color With USB Charging Cable And Cleaning Brush.
-Regular Price: 986
-Sale Price: 986
+Wholesale Price: 936
+Regular Price: 1770
+Sale Price: 1417
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

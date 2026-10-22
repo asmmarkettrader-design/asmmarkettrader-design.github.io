@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 PCs Plastic Blender Puff Holder Multipurpose Sauce Bowl Makeup Sponge Storage Container Mini Bowl Organizer (Random Color)
 Product ID: hhc-3758078
 SKU: hhc-3758078
@@ -7,11 +8,16 @@ Slug: 1-pcs-plastic-blender-puff-holder-multipurpose-sauce-bowl-makeup-sponge-1e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/49c547db189e9dd17e80a33cdccf9910.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/49c547db189e9dd17e80a33cdccf9910.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/5969f8c314054fea98a7070d0510a04e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/c619a4ea46e82e8c5bc09842cc33bc7d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/2ee76d91ea5745bca07b404a63ef79d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/c68d3b6c78ede4599e04594b7047f4b7.jpeg
 Meta Title: 1 PCs Plastic Blender Puff Holder Multipurpose Sauce Bowl Makeup Spo
 Meta Description: Buy 1 PCs Plastic Blender Puff Holder Multipurpose Sauce Bowl Makeup Sponge Storage Container Mini Bowl Organizer (Random Color) online in Pakistan from ASM VEO
 Description: Multi-purpose plastic bowl that can be used as a blender puff holder or sauce bowl. Compact, lightweight, and perfect for makeup storage or kitchen use.
-Regular Price: 207
-Sale Price: 207
+Wholesale Price: 157
+Regular Price: 446
+Sale Price: 296
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

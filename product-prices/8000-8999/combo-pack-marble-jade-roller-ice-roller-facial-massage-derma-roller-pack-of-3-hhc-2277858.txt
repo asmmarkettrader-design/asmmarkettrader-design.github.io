@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Combo pack Marble Jade Roller | Ice Roller Facial Massage | Derma Roller [Pack of 3]
 Product ID: hhc-2277858
 SKU: hhc-2277858
@@ -7,11 +8,16 @@ Slug: combo-pack-marble-jade-roller-ice-roller-facial-massage-derma-roller-pack-
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/519Kdod26oL._SX679_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/519Kdod26oL._SX679_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-03-18-at-10.58.09-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-03-14-at-10.49.29-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/71XgzADxElL._SY450_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/61OQX0JE6QL._SY450_.jpg
 Meta Title: Combo pack Marble Jade Roller | Ice Roller Facial Massage | Derma Ro
 Meta Description: Buy Combo pack Marble Jade Roller | Ice Roller Facial Massage | Derma Roller [Pack of 3] online in Pakistan from ASM VEO. Combo pack Marble Jade Roller | Ice Ro
 Description: Combo pack Marble Jade Roller | Ice Roller Facial Massage | Derma Roller [Pack of 3]
-Regular Price: 1064
-Sale Price: 1064
+Wholesale Price: 1014
+Regular Price: 1880
+Sale Price: 1500
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

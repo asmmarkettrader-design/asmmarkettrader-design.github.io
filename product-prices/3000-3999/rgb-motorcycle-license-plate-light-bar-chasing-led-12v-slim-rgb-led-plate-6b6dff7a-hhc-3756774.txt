@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RGB Motorcycle License Plate Light Bar – Chasing LED 12V Slim RGB LED Plate Bar for Motorcycles
 Product ID: hhc-3756774
 SKU: hhc-3756774
@@ -7,11 +8,16 @@ Slug: rgb-motorcycle-license-plate-light-bar-chasing-led-12v-slim-rgb-led-pla-6b
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/81ac2696d180414c9f52610ac05a02f3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/81ac2696d180414c9f52610ac05a02f3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/7db570a105d325fd64cbc460b8712bce.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/3bc3356c5db6429dc1ac26c8d468ad9b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/a8a3f3864b925e62d15a2ca5cb3aa2a9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/5af2a9bcf15ddbc16ac962ddbd8a3398.png
 Meta Title: RGB Motorcycle License Plate Light Bar – Chasing LED 12V Slim RGB LE
 Meta Description: Buy RGB Motorcycle License Plate Light Bar – Chasing LED 12V Slim RGB LED Plate Bar for Motorcycles online in Pakistan from ASM VEO. A slim RGB motorcycle licen
 Description: A slim RGB motorcycle license plate light bar designed to enhance visibility and style. Featuring bright chasing LED effects and 12V compatibility, it delivers vibrant multi-color lighting while maintaining a compact, durable design suitable for most motorcycles.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Disposable Surgical Cap – Breathable Non-Woven Head Cover for Medical & Hygiene Use (Pack of 100Pcs)
 Product ID: hhc-3755760
 SKU: hhc-3755760
@@ -7,11 +8,16 @@ Slug: disposable-surgical-cap-breathable-non-woven-head-cover-for-medical-hyg-46
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/b4261072ed20cbba79aeada393e6c591.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/b4261072ed20cbba79aeada393e6c591.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/fa8254f7f581b93ab32817144fd3ff7c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/b20a84585b82f7b99c6aaec0556160b9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/59f681d197795329ecc2caf5531d6681.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/f7c99d9c166a05830470b038e0d33ff2.jpeg
 Meta Title: Disposable Surgical Cap – Breathable Non-Woven Head Cover for Medica
 Meta Description: Buy Disposable Surgical Cap – Breathable Non-Woven Head Cover for Medical & Hygiene Use (Pack of 100Pcs) online in Pakistan from ASM VEO. Lightweight and breath
 Description: Lightweight and breathable disposable surgical cap designed to keep hair securely covered during medical, laboratory, and hygiene procedures.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

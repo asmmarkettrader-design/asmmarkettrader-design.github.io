@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital Sports Watch with Stopwatch, Waterproof Design, LED Display, Alarm & Durable Outdoor Performance for Men & Women
 Product ID: hhc-3755728
 SKU: hhc-3755728
@@ -7,11 +8,16 @@ Slug: digital-sports-watch-with-stopwatch-waterproof-design-led-display-alarm-4e
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/a48e08b0411218808e26a5b3c467a751.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/a48e08b0411218808e26a5b3c467a751.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/1a69d67cdeb67301a4d7c6c061dd040c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/472cc9d8ce5a6094a0aec4f4779b375a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/74c32b72766e366177dd45387c78071a.png
 Meta Title: Digital Sports Watch with Stopwatch, Waterproof Design, LED Display,
 Meta Description: Buy Digital Sports Watch with Stopwatch, Waterproof Design, LED Display, Alarm & Durable Outdoor Performance for Men & Women online in Pakistan from ASM VEO. A
 Description: A durable and stylish digital sports watch designed for athletes and everyday users. Featuring LED display, waterproof build, stopwatch, alarm, and long-lasting battery.
-Regular Price: 783
-Sale Price: 783
+Wholesale Price: 733
+Regular Price: 1400
+Sale Price: 1123
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

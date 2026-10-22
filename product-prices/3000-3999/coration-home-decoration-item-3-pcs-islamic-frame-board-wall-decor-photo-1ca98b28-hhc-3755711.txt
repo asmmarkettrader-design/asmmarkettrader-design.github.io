@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: coration home decoration item 3 pcs iSLAMIC fRAME board wall decor photo on wall PHOTO TILE canvas art decor for home easy set up with both side tape
 Product ID: hhc-3755711
 SKU: hhc-3755711
@@ -7,11 +8,16 @@ Slug: coration-home-decoration-item-3-pcs-islamic-frame-board-wall-decor-phot-1c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/65f5bcf4e6bc413f469dd425aae00df3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/65f5bcf4e6bc413f469dd425aae00df3.jpeg
 Meta Title: coration home decoration item 3 pcs iSLAMIC fRAME board wall decor p
 Meta Description: Buy coration home decoration item 3 pcs iSLAMIC fRAME board wall decor photo on wall PHOTO TILE canvas art decor for home easy set up with both side tape online
 Description: coration home decoration item 3 pcs iSLAMIC fRAME board wall decor photo on wall PHOTO TILE canvas art decor for home easy set up with both side tape
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

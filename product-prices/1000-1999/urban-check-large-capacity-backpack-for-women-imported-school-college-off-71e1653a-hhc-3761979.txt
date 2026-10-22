@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Urban Check Large Capacity Backpack for Women – Imported School, College, Office & Travel Bag
 Product ID: hhc-3761979
 SKU: hhc-3761979
@@ -7,11 +8,16 @@ Slug: urban-check-large-capacity-backpack-for-women-imported-school-college-o-71
 Category: Backpacks & Duffel Bags
 Subcategory: Travel Backpacks
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/32bc8d6cccb4eece98b37c78b95f8dec.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/32bc8d6cccb4eece98b37c78b95f8dec.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/25e64aba556de81c6f75ac4992abaf28.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/2a42e17d59fcc3d896188d20603a045c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/5e16e254e091d39c66d834287b6ac91e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/afec9c54dda1f193e33743bd927e7ef8.jpeg
 Meta Title: Urban Check Large Capacity Backpack for Women – Imported School, Col
 Meta Description: Buy Urban Check Large Capacity Backpack for Women – Imported School, College, Office & Travel Bag online in Pakistan from ASM VEO. This imported quality backpac
 Description: This imported quality backpack is made in China and is designed for everyday use. It has a roomy interior and useful pockets to keep your belongings arranged and easy to reach. Ideal for university, college, office, and daily activities, making it a great choice for women
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7CF Furniture Polish 550ml | Multi-Surface Shine & Protection Spray for Wood Furniture
 Product ID: hhc-3757587
 SKU: hhc-3757587
@@ -7,11 +8,16 @@ Slug: 7cf-furniture-polish-550ml-multi-surface-shine-protection-spray-for-woo-99
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/d6ff65049bd561e70b4f264881eb6327.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/d6ff65049bd561e70b4f264881eb6327.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/846f3c2e444a1366ac637744cc076c96.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/52340e94ce65b689d9aed7cb20fa3b22.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/aa01a990ad028becf5e152c47be482d9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/d48c6231375f37a46df0db3b32f71756.jpeg
 Meta Title: 7CF Furniture Polish 550ml | Multi-Surface Shine & Protection Spray
 Meta Description: Buy 7CF Furniture Polish 550ml | Multi-Surface Shine & Protection Spray for Wood Furniture online in Pakistan from ASM VEO. Enhance the look of your furniture w
 Description: Enhance the look of your furniture with 7CF Furniture Polish. This 550ml spray cleans, shines, and protects wooden surfaces, leaving a smooth, dust-resistant finish.
-Regular Price: 691
-Sale Price: 691
+Wholesale Price: 641
+Regular Price: 1240
+Sale Price: 989
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

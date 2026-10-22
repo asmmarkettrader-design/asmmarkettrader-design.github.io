@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula 30Ml Serum
 Product ID: hhc-3756586
 SKU: hhc-3756586
@@ -7,11 +8,16 @@ Slug: the-ordinary-hyaluronic-acid-2-b5-hydration-support-formula-30ml-serum-hhc
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula 30Ml
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/2280117541a6f2b26288c300e2293891.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/2280117541a6f2b26288c300e2293891.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/e2848d0e78ea01af9c9bf457580d5794.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/13e5b72a5efbdacef3470093de9d4039.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/10f4709d2ce82af8edf5079fa450924f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/0a94139e02a47031c11159dd216fc29d.jpg
+Meta Title: The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula 30Ml 
 Meta Description: Buy The Ordinary Hyaluronic Acid 2% + B5 Hydration Support Formula 30Ml Serum online in Pakistan from ASM VEO. The Ordinary Hyaluronic Acid 2% + B5 Is A Hydrati
 Description: The Ordinary Hyaluronic Acid 2% + B5 Is A Hydration Support Formula With Ultra Pure Vegan Hyaluronic Acid For Smoother And Plumper Looking Skin.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

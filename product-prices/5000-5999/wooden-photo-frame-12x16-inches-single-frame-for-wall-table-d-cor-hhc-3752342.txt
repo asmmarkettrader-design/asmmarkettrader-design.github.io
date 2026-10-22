@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Photo Frame – 12x16 Inches, Single Frame for Wall & Table Décor
 Product ID: hhc-3752342
 SKU: hhc-3752342
@@ -7,11 +8,16 @@ Slug: wooden-photo-frame-12x16-inches-single-frame-for-wall-table-d-cor-hhc-3752
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/882411e230d73a18d6e5e6cf943e932d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/882411e230d73a18d6e5e6cf943e932d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/6d06923cba388fa8ff687f7d28e834ef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/363026743aacf98d688287508d2bb60d.jpg
 Meta Title: Wooden Photo Frame – 12x16 Inches, Single Frame for Wall & Table Déc
 Meta Description: Buy Wooden Photo Frame – 12x16 Inches, Single Frame for Wall & Table Décor online in Pakistan from ASM VEO. Durable 12x16 inch wooden photo frame, perfect for d
 Description: Durable 12x16 inch wooden photo frame, perfect for displaying pictures, posters, or artwork. Elegant design for home or office use.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Auto Lak Car Paint Tester Pen – Magnetic Paint Thickness Meter Gauge Car Body Damage Detector & Accident Crash Checker
 Product ID: hhc-3756937
 SKU: hhc-3756937
@@ -7,11 +8,16 @@ Slug: auto-lak-car-paint-tester-pen-magnetic-paint-thickness-meter-gauge-car-0ca
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/a1dcc79b9cd2d4b3e81beb6b7f75e1c3.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/a1dcc79b9cd2d4b3e81beb6b7f75e1c3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/892888aee91aba4f9ccd9fa0aa0c4e7d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/79851f6290c0be8ca53f13809ae91eb9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/7e2ed31e0a8accb695d4403ed3adec66.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/036a053ea69d02483ef18dafc94c5b47.jpeg
 Meta Title: Auto Lak Car Paint Tester Pen – Magnetic Paint Thickness Meter Gauge
 Meta Description: Buy Auto Lak Car Paint Tester Pen – Magnetic Paint Thickness Meter Gauge Car Body Damage Detector & Accident Crash Checker online in Pakistan from ASM VEO. The
 Description: The Auto Lak Car Paint Tester Pen is a simple and effective tool used to check car paint thickness and detect repaint or body repairs. With its magnetic tip, it helps identify accident damage, filler work, or repainted panels quickly and easily.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

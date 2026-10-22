@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 40 Pcs Kitchen Wipes Durable Quality Reliable Utility Strong Absorption Comfortable Use
 Product ID: hhc-3754071
 SKU: hhc-3754071
@@ -7,11 +8,16 @@ Slug: 40-pcs-kitchen-wipes-durable-quality-reliable-utility-strong-absorption-e5
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/06/25a509d8a99a198032417de9ac1ff812.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/06/25a509d8a99a198032417de9ac1ff812.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/72d3e3dc40199e36b35ee9753c249537.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/0528349c77c3695674e6ff28cad6df9c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/dbf4656124121b4d7113c338c522436c.jpeg
 Meta Title: 40 Pcs Kitchen Wipes Durable Quality Reliable Utility Strong Absorpt
 Meta Description: Buy 40 Pcs Kitchen Wipes Durable Quality Reliable Utility Strong Absorption Comfortable Use online in Pakistan from ASM VEO. 40 Pcs Kitchen Wipes Provide Durabl
 Description: 40 Pcs Kitchen Wipes Provide Durable Quality Reliable Utility Strong Absorption Comfortable Use And Compact Design
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

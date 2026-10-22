@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Cleaning Brush With Multiple Attachments For Efficient Home Cleaning – 360° Rotating Scrubber With Sponge, Brush, And Steel Wool Heads
 Product ID: hhc-3753346
 SKU: hhc-3753346
@@ -7,11 +8,16 @@ Slug: electric-cleaning-brush-with-multiple-attachments-for-efficient-home-cl-31
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/6e3f87f8db8ea19b677fb8288d70a677.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/6e3f87f8db8ea19b677fb8288d70a677.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/8e43a7efef98a1cdd94248a48269d08b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/18dbd2be2e74d5a78e9227f8b5332961.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/45cbfd67f2241adf29178ad82436752c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/affe4a3fb1461e1965fe2e30507b879b.png
 Meta Title: Electric Cleaning Brush With Multiple Attachments For Efficient Home
 Meta Description: Buy Electric Cleaning Brush With Multiple Attachments For Efficient Home Cleaning – 360° Rotating Scrubber With Sponge, Brush, And Steel Wool Heads online in Pa
 Description: Electric Cleaning Brush With Interchangeable Heads For Effortless Cleaning Of Kitchen, Bathroom, And Household Surfaces.
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

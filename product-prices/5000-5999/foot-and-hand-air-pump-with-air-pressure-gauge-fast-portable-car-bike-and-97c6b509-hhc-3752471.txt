@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foot And Hand Air Pump With Air Pressure Gauge – Fast Portable Car Bike And Cycle Inflator For Tires Balls And Inflatables
 Product ID: hhc-3752471
 SKU: hhc-3752471
@@ -7,11 +8,16 @@ Slug: foot-and-hand-air-pump-with-air-pressure-gauge-fast-portable-car-bike-a-97
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/ac5ded6a589867169b7d5b8833d8bd31.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/ac5ded6a589867169b7d5b8833d8bd31.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/d14e11db125841b68ae4289c10de61c2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/bb85c2e22614300de5fb5b4e3d0e246e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/3a09f6139f6aa2df674dd3af4e049a48.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/e8a95d22457a349284eaabbe1b60883d.jpg
 Meta Title: Foot And Hand Air Pump With Air Pressure Gauge – Fast Portable Car B
 Meta Description: Buy Foot And Hand Air Pump With Air Pressure Gauge – Fast Portable Car Bike And Cycle Inflator For Tires Balls And Inflatables online in Pakistan from ASM VEO.
 Description: Inflate Car Tires, Bike Tires, And Sports Equipment Quickly With This Portable Foot And Hand Air Pump Featuring A Built In Pressure Gauge.
-Regular Price: 1155
-Sale Price: 1155
+Wholesale Price: 1105
+Regular Price: 2040
+Sale Price: 1629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

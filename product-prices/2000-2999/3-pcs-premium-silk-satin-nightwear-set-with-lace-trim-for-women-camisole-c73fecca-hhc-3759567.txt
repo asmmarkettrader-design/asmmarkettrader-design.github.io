@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pcs Premium Silk Satin Nightwear Set with Lace Trim for Women – Camisole, Shorts & Robe | Free Size
 Product ID: hhc-3759567
 SKU: hhc-3759567
@@ -7,11 +8,16 @@ Slug: 3-pcs-premium-silk-satin-nightwear-set-with-lace-trim-for-women-camisol-c7
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/d697314553a444734917e3793c567ca9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/d697314553a444734917e3793c567ca9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/71b4ae4a3b2d0b362a07a334f983ba11.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/83f7db1de6956ccfe130e5ab8b76f4ea.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/088172b964cf8be7b6be6513b7d59aec.jpeg
 Meta Title: 3 Pcs Premium Silk Satin Nightwear Set with Lace Trim for Women – Ca
 Meta Description: Buy 3 Pcs Premium Silk Satin Nightwear Set with Lace Trim for Women – Camisole, Shorts & Robe | Free Size online in Pakistan from ASM VEO. Upgrade your nighttim
 Description: Upgrade your nighttime comfort with this elegant 3-piece satin nightwear set featuring a silky smooth finish and delicate lace detailing. Includes a matching camisole, shorts, and robe designed for a stylish and comfortable fit. Available in Red, Maroon, Black, and Blue colors.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

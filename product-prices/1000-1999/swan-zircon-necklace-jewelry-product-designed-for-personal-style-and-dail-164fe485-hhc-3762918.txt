@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Swan Zircon Necklace - Jewelry Product Designed For Personal Style And Daily Fashion Routine
 Product ID: hhc-3762918
 SKU: hhc-3762918
@@ -7,11 +8,16 @@ Slug: swan-zircon-necklace-jewelry-product-designed-for-personal-style-and-da-16
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/a6642e626a51008c46ca30637a764946.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/a6642e626a51008c46ca30637a764946.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/890fbd5cb62ef261d77c352855915014.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/e92059ddbc41d9aec5d4960cdc2e95e2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/1b7f93ff96b26e5c99ee402c17517024.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/d86fe110a1fef113ee47d180ac1a44db.jpeg
 Meta Title: Swan Zircon Necklace - Jewelry Product Designed For Personal Style A
 Meta Description: Buy Swan Zircon Necklace - Jewelry Product Designed For Personal Style And Daily Fashion Routine online in Pakistan from ASM VEO. The Swan Zircon Necklace Is A
 Description: The Swan Zircon Necklace Is A Jewelry Product Formulated To Help Provide Personal Style And Elegant Charm During Daily Use.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

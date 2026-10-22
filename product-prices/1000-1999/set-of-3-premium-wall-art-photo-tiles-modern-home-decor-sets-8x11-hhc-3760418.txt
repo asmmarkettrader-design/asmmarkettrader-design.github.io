@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Premium Wall Art Photo Tiles – Modern Home Decor Sets  8x11
 Product ID: hhc-3760418
 SKU: hhc-3760418
@@ -7,11 +8,16 @@ Slug: set-of-3-premium-wall-art-photo-tiles-modern-home-decor-sets-8x11-hhc-3760
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set of 3 Premium Wall Art Photo Tiles – Modern Home Decor Sets 8x11
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/97b7ac4ccc66d2097979eabead3514b3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/97b7ac4ccc66d2097979eabead3514b3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/9813d66c5f0f7ed9abc44e2bc9191872.jpg
+Meta Title: Set of 3 Premium Wall Art Photo Tiles – Modern Home Decor Sets 8x11 
 Meta Description: Buy Set of 3 Premium Wall Art Photo Tiles – Modern Home Decor Sets 8x11 online in Pakistan from ASM VEO. Transform your walls with this beautiful Set of 3 Wall
 Description: Transform your walls with this beautiful Set of 3 Wall Art Frames designed to inspire productivity and positivity in your home or office. These modern sticky canvas frames are perfect for decorating bedrooms, offices, study rooms, and living spaces.
-Regular Price: 483
-Sale Price: 483
+Wholesale Price: 433
+Regular Price: 890
+Sale Price: 710
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

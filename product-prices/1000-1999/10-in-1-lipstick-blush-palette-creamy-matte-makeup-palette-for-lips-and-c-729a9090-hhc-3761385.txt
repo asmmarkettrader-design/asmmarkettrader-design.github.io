@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 in 1 Lipstick & Blush Palette Creamy Matte Makeup Palette for Lips and Cheeks - Multi Color
 Product ID: hhc-3761385
 SKU: hhc-3761385
@@ -7,11 +8,16 @@ Slug: 10-in-1-lipstick-blush-palette-creamy-matte-makeup-palette-for-lips-and-72
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/9f11b5be09685bcbc15eab3cec329af8.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/9f11b5be09685bcbc15eab3cec329af8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/2f796b1f97a4fee0871181ad456292b5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/fa31b074c0101c31d37769ce3df32ea2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/27ddc693b62fee7289f2fa6084597d02.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/cdbf351eee5b2025b0df91fcbf17eff1.jpeg
 Meta Title: 10 in 1 Lipstick & Blush Palette Creamy Matte Makeup Palette for Lip
 Meta Description: Buy 10 in 1 Lipstick & Blush Palette Creamy Matte Makeup Palette for Lips and Cheeks - Multi Color online in Pakistan from ASM VEO. 10 in 1 creamy matte lipstic
 Description: 10 in 1 creamy matte lipstick and blush palette for creating a variety of lip and cheek looks.
-Regular Price: 922
-Sale Price: 922
+Wholesale Price: 872
+Regular Price: 1660
+Sale Price: 1324
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

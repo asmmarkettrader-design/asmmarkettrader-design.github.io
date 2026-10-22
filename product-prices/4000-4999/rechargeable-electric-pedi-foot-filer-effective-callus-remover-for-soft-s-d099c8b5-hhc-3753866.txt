@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Electric Pedi Foot Filer – Effective Callus Remover For Soft, Smooth Feet
 Product ID: hhc-3753866
 SKU: hhc-3753866
@@ -7,11 +8,16 @@ Slug: rechargeable-electric-pedi-foot-filer-effective-callus-remover-for-soft-d0
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/aa695bf1171346841531b6980db3c711.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/aa695bf1171346841531b6980db3c711.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/cd11bc1c8f8d43dde0d99340aee578be.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/369a6912b1d599580f4b156524d43d4d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/b526f9b5fb97634cb13a43eaef590a24.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/b5dea27456fa1958f27167a66efc14e9.webp
 Meta Title: Rechargeable Electric Pedi Foot Filer – Effective Callus Remover For
 Meta Description: Buy Rechargeable Electric Pedi Foot Filer – Effective Callus Remover For Soft, Smooth Feet online in Pakistan from ASM VEO. Get smooth, clean, and refreshed fee
 Description: Get smooth, clean, and refreshed feet with our Foot Pedi treatment—removes dead skin, softens heels, and gives your feet a fresh glow.
-Regular Price: 924
-Sale Price: 924
+Wholesale Price: 874
+Regular Price: 1660
+Sale Price: 1327
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

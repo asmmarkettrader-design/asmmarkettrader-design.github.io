@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Galaxy Crystal Ball Night Light for Kids with USB Table Colorful LED Wooden Light Base, Birthday Gift for Teens Boys and Girls/ Crystal Ball for Home Decoration (Random Design)
 Product ID: hhc-1537535
 SKU: hhc-1537535
@@ -7,11 +8,16 @@ Slug: 3d-galaxy-crystal-ball-night-light-for-kids-with-usb-table-colorful-led-b8
 Category: Home & Kitchen
 Subcategory: Laptops & Computers
 Brand: ASM VEO
-Meta Title: 3D Galaxy Crystal Ball Night Light for Kids with USB Table Colorful
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/2c7d80ab040fe721d81f852c94966d7d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/2c7d80ab040fe721d81f852c94966d7d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/8ed45cffe67e1a3672bef8011ad24622.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/f1c5f87532fb5d962e88cf7aba7acf81.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/bad9fdce072972bd9c65ebcca40e636c.jpg
+Meta Title: 3D Galaxy Crystal Ball Night Light for Kids with USB Table Colorful 
 Meta Description: Buy 3D Galaxy Crystal Ball Night Light for Kids with USB Table Colorful LED Wooden Light Base, Birthday Gift for Teens Boys and Girls/ Crystal Ball for Home Dec
 Description: 1 Pc USB LED Galaxy Crystal Ball Lamp | 3D Planet Moon Night Light | Bedroom & Party Home Decor | Kids Birthday Gift (Random Design
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

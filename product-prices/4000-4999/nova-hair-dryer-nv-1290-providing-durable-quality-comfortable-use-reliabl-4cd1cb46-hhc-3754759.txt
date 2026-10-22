@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nova Hair Dryer NV 1290 Providing Durable Quality Comfortable Use Reliable Performance Smooth Handling (Random Color)
 Product ID: hhc-3754759
 SKU: hhc-3754759
@@ -7,11 +8,16 @@ Slug: nova-hair-dryer-nv-1290-providing-durable-quality-comfortable-use-relia-4c
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/b83dbebc24f46fadae52f1f60a11b60f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/b83dbebc24f46fadae52f1f60a11b60f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/a7c30b4dbb03539f3cfc981c566d505d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/1493e116b28ec9215e3d75826073b7cc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/d9e1298fce63512a7be10fe45af91d23.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/910e98c2202a0bd5b853b2a39357cdae.jpg
 Meta Title: Nova Hair Dryer NV 1290 Providing Durable Quality Comfortable Use Re
 Meta Description: Buy Nova Hair Dryer NV 1290 Providing Durable Quality Comfortable Use Reliable Performance Smooth Handling (Random Color) online in Pakistan from ASM VEO. Nova
 Description: Nova Hair Dryer NV 1290 Offering Durable Quality Comfortable Use Reliable Performance And Smooth Daily Styling
-Regular Price: 1035
-Sale Price: 1035
+Wholesale Price: 985
+Regular Price: 1860
+Sale Price: 1488
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

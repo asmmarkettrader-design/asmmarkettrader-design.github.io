@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 24 Pcs Professional Manicure Artificial Nails – Salon-Quality Press-On Nail Set
 Product ID: hhc-3756353
 SKU: hhc-3756353
@@ -7,11 +8,16 @@ Slug: 24-pcs-professional-manicure-artificial-nails-salon-quality-press-on-nail-
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/017ba3e03659bb8822b28e791e318af8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/017ba3e03659bb8822b28e791e318af8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/ddb1b351df77ccf12b2b6bcd466ecc87.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/a74816145c7d4c4f0b012bab2755afac.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/09be4c0b6a5ec7a6367c994132b2e5b2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/e9e95c5d6494534e6aaa1cc1866e1754.jpeg
 Meta Title: 24 Pcs Professional Manicure Artificial Nails – Salon-Quality Press-
 Meta Description: Buy 24 Pcs Professional Manicure Artificial Nails – Salon-Quality Press-On Nail Set online in Pakistan from ASM VEO. Get flawless, salon-style nails in minutes
 Description: Get flawless, salon-style nails in minutes with this 24-piece professional artificial nail set. Designed for durability, comfort, and a natural look, these easy-to-apply press-on nails are perfect for everyday wear, parties, weddings, and special occasions.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

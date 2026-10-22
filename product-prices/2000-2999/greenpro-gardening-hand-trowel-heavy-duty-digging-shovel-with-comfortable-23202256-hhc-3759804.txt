@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: GreenPro Gardening Hand Trowel – Heavy Duty Digging Shovel with Comfortable Anti-Slip Grip Handle
 Product ID: hhc-3759804
 SKU: hhc-3759804
@@ -7,11 +8,16 @@ Slug: greenpro-gardening-hand-trowel-heavy-duty-digging-shovel-with-comfortab-23
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/5421ba96ba87141275f23bce9007a0c9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/5421ba96ba87141275f23bce9007a0c9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/9a8ffff26555cf1257c86f4ff722d970.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/67fa8be6efb3f87156d35c3b1f15d46e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/1fecffbc446be3f86a9f125402dda0aa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/2198bdad297798b58646c68e4570aac5.jpeg
 Meta Title: GreenPro Gardening Hand Trowel – Heavy Duty Digging Shovel with Comf
 Meta Description: Buy GreenPro Gardening Hand Trowel – Heavy Duty Digging Shovel with Comfortable Anti-Slip Grip Handle online in Pakistan from ASM VEO. Make your planting effort
 Description: Make your planting effortless with the GreenPro Hand Trowel. Built with a strong, rust-resistant body and a comfortable anti-slip grip handle, this lightweight shovel is the perfect tool for digging, potting, and managing home gardens or nurseries.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

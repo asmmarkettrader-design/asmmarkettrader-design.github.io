@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Mini Paper Soap Sheets in Test Tube Bottle – Travel-Friendly Disposable Handwash Sheets for Kids & Adults | Pocket Soap Flakes for School, Office, Outdoor, Camping & Travel
 Product ID: hhc-3753922
 SKU: hhc-3753922
@@ -7,11 +8,16 @@ Slug: portable-mini-paper-soap-sheets-in-test-tube-bottle-travel-friendly-dis-60
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/2b3e9285d0336b4ce81badeb3f465949.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/2b3e9285d0336b4ce81badeb3f465949.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/20ee5870e248d1acff9ad55e06cd810c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/fb55f1dbccd52d8565ccee0845aa78c8.jpg
 Meta Title: Portable Mini Paper Soap Sheets in Test Tube Bottle – Travel-Friendl
 Meta Description: Buy Portable Mini Paper Soap Sheets in Test Tube Bottle – Travel-Friendly Disposable Handwash Sheets for Kids & Adults | Pocket Soap Flakes for School, Office,
 Description: Compact and hygienic mini paper soap sheets packed in a test tube bottle—perfect for quick handwashing anywhere. Ideal for school, office, travelling, outdoor use, camping & everyday carry.
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric V-Comb Anti Lice Machine  (with Box)
 Product ID: hhc-2262934
 SKU: hhc-2262934
@@ -7,11 +8,16 @@ Slug: electric-v-comb-anti-lice-machine-with-box-hhc-2262934
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/3-4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/3-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/2-6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/04/f6b9d916171ad42235bc75b1952f0585.jpeg
 Meta Title: Electric V-Comb Anti Lice Machine (with Box) | Buy Online in Pakista
 Meta Description: Buy Electric V-Comb Anti Lice Machine (with Box) online in Pakistan from ASM VEO. Electric V-Comb Anti Lice Machine (with Box) Cash on Delivery, Rs 180 standard
 Description: Electric V-Comb Anti Lice Machine (with Box)
-Regular Price: 1947
-Sale Price: 1947
+Wholesale Price: 1947
+Regular Price: 3510
+Sale Price: 2808
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

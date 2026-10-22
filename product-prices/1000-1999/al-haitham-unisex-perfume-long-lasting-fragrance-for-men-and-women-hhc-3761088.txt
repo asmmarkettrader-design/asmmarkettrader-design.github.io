@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Al Haitham Unisex Perfume | Long Lasting Fragrance For Men And Women
 Product ID: hhc-3761088
 SKU: hhc-3761088
 Slug: al-haitham-unisex-perfume-long-lasting-fragrance-for-men-and-women-hhc-3761088
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Perfumes
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/598c5b96efe45d027abb67c1872d2abd.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/598c5b96efe45d027abb67c1872d2abd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/d0410e479b3fc71395575829b151180d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/ea70e257e81c238fae0af361a0e5ffb7.jpeg
 Meta Title: Al Haitham Unisex Perfume | Long Lasting Fragrance For Men And Women
 Meta Description: Buy Al Haitham Unisex Perfume | Long Lasting Fragrance For Men And Women online in Pakistan from ASM VEO. Al Haitham Unisex Perfume Offers A Balanced Fragrance
 Description: Al Haitham Unisex Perfume Offers A Balanced Fragrance Suitable For Both Men And Women. Designed For Everyday Wear With A Stylish Presentation.
-Regular Price: 1576
-Sale Price: 1576
+Wholesale Price: 1126
+Regular Price: 2070
+Sale Price: 1659
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

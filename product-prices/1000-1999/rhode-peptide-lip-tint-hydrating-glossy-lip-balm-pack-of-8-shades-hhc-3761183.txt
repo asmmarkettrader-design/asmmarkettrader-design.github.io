@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rhode Peptide Lip Tint – Hydrating Glossy Lip Balm Pack of 8 Shades
 Product ID: hhc-3761183
 SKU: hhc-3761183
@@ -7,11 +8,16 @@ Slug: rhode-peptide-lip-tint-hydrating-glossy-lip-balm-pack-of-8-shades-hhc-3761
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Rhode Peptide Lip Tint – Hydrating Glossy Lip Balm Pack of 8 Shades
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/8969a11564181d683118024514a06822.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/8969a11564181d683118024514a06822.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/89b0c973c58310ce3faefb563d99508f.jpeg
+Meta Title: Rhode Peptide Lip Tint – Hydrating Glossy Lip Balm Pack of 8 Shades 
 Meta Description: Buy Rhode Peptide Lip Tint – Hydrating Glossy Lip Balm Pack of 8 Shades online in Pakistan from ASM VEO. Rhode Peptide Lip Tint – Naturally Plump, Deeply Nouris
 Description: Rhode Peptide Lip Tint – Naturally Plump, Deeply Nourished Lips Where clean beauty meets everyday glow.Say hello to smooth, hydrated, and naturally tinted lips – all in one swipe. The Rhode Peptide Lip Tint, created by Hailey Bieber’s viral skincare brand, is more than just a pretty tint. It’s packed with skin-loving ingredients that care for your lips while giving them a soft, radiant touch of color. Why You'll Love It: Deep Hydration: Powered by Shea Butter, Babassu Oil, and Hyaluronic Acid to lock in moisture and soothe dryness. Peptide Boost: Peptides help restore and strengthen your lips, giving a naturally plump and healthy look. Color + Care: Lightweight tint enhances your lips without overpowering – perfect for daily wear or no-makeup makeup days. Clean &amp; Conscious: Free from parabens, fragrance, and harsh chemicals. Vegan, cruelty-free, and dermatologist-tested.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

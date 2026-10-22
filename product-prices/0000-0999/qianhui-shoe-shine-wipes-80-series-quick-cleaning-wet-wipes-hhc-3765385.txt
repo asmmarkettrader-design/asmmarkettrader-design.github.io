@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Qianhui Shoe Shine Wipes (80 Series) - Quick Cleaning Wet Wipes
 Product ID: hhc-3765385
 SKU: hhc-3765385
@@ -7,11 +8,16 @@ Slug: qianhui-shoe-shine-wipes-80-series-quick-cleaning-wet-wipes-hhc-3765385
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/95ebd6817743d04a4fafac0efc89f3fd.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/95ebd6817743d04a4fafac0efc89f3fd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/77029c02ecd2cd64e55848ea0e8e1628.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/9f102ec46ab3fe865584a1e438c70ff9.jpeg
 Meta Title: Qianhui Shoe Shine Wipes (80 Series) - Quick Cleaning Wet Wipes | Bu
 Meta Description: Buy Qianhui Shoe Shine Wipes (80 Series) - Quick Cleaning Wet Wipes online in Pakistan from ASM VEO. Qianhui Shoe Shine Wipes (80 Series). Powerful formula for
 Description: Qianhui Shoe Shine Wipes (80 Series). Powerful formula for quick and easy cleaning of all types of shoes. Portable pack, perfect for on-the-go maintenance. Keep your footwear looking brand new with these convenient wet wipes. 80 wipes per pack.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

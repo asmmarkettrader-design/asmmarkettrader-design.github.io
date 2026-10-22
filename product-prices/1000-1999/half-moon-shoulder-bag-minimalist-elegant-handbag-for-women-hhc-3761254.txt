@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Half Moon Shoulder Bag Minimalist Elegant Handbag for Women
 Product ID: hhc-3761254
 SKU: hhc-3761254
@@ -7,11 +8,16 @@ Slug: half-moon-shoulder-bag-minimalist-elegant-handbag-for-women-hhc-3761254
 Category: Fashion
 Subcategory: Handbags & Clutches
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/01a6a84cae0a58ca46adc3585f87ed43.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/01a6a84cae0a58ca46adc3585f87ed43.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/e54cc69c5615d6dcb19597be682cd667.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/24167c753f85f3ef822250be3be66e90.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/1b0d7c2c8f41bc7ae1f346b8344dc37f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/dfcae3ae77a71bfdf7383270f710d7b2.jpeg
 Meta Title: Half Moon Shoulder Bag Minimalist Elegant Handbag for Women | Buy On
 Meta Description: Buy Half Moon Shoulder Bag Minimalist Elegant Handbag for Women online in Pakistan from ASM VEO. A timeless half-moon handbag designed with a sleek silhouette a
 Description: A timeless half-moon handbag designed with a sleek silhouette and a smooth premium finish. Its elegant shape and minimalist look make it a perfect addition to any wardrobe.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

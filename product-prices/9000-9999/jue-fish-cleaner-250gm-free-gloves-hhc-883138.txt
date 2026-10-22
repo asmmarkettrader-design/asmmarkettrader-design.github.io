@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Jue Fish Cleaner 250gm Free Gloves
 Product ID: hhc-883138
 SKU: hhc-883138
@@ -7,11 +8,16 @@ Slug: jue-fish-cleaner-250gm-free-gloves-hhc-883138
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-01-at-6.21.13-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-01-at-6.21.13-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-01-at-6.21.13-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-01-at-6.21.14-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-01-at-6.21.15-PM-1.jpeg
 Meta Title: Jue Fish Cleaner 250gm Free Gloves | Buy Online in Pakistan
 Meta Description: Buy Jue Fish Cleaner 250gm Free Gloves online in Pakistan from ASM VEO. [video width="480" height="864" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploa
 Description: [video width="480" height="864" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Video-2023-12-01-at-6.21.32-PM.mp4"][/video]
-Regular Price: 622
-Sale Price: 622
+Wholesale Price: 572
+Regular Price: 1110
+Sale Price: 889
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

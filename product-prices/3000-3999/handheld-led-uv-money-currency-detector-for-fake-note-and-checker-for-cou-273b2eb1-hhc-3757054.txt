@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Handheld LED UV Money Currency Detector for Fake Note and Checker for Counterfeit Fake Banknotes
 Product ID: hhc-3757054
 SKU: hhc-3757054
@@ -7,11 +8,16 @@ Slug: handheld-led-uv-money-currency-detector-for-fake-note-and-checker-for-c-27
 Category: Electronics
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/f0f6f80f93a96c92cbfd3c9ff2c7e383.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/f0f6f80f93a96c92cbfd3c9ff2c7e383.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/14a717b8bf2596bdf3074b01fd0c5738.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/7e1f9f0fb01e8f012131d7e7afd5069f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/84b581a9f4bdaa399f0bc212783274ef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/62fb158867f44ec8a4d0f81979908942.jpeg
 Meta Title: Handheld LED UV Money Currency Detector for Fake Note and Checker fo
 Meta Description: Buy Handheld LED UV Money Currency Detector for Fake Note and Checker for Counterfeit Fake Banknotes online in Pakistan from ASM VEO. Detect counterfeit banknot
 Description: Detect counterfeit banknotes instantly with this handheld LED money detector. Features a bright violet UV lamp for quick verification, lightweight design for easy portability, and ideal for shops, offices, and personal use. Never risk fake currency again!
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

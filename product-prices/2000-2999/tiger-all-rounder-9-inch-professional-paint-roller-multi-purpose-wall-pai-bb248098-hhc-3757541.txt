@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tiger All-Rounder 9-Inch Professional Paint Roller – Multi-Purpose Wall Painting Tool with Ergonomic Green Handle – High-Absorbency 9" Roller for Smooth & Textured Walls
 Product ID: hhc-3757541
 SKU: hhc-3757541
@@ -7,11 +8,16 @@ Slug: tiger-all-rounder-9-inch-professional-paint-roller-multi-purpose-wall-p-bb
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/1b05a6a73e32254497b962c9b0802aa2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/1b05a6a73e32254497b962c9b0802aa2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/6a226fec797938225c9cb033fb5318e0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/b6ddeb9fda431cbd673894293f569eb6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/2c7bd2ff4ca6db4126b615cf702da9ce.jpeg
 Meta Title: Tiger All-Rounder 9-Inch Professional Paint Roller – Multi-Purpose W
 Meta Description: Buy Tiger All-Rounder 9-Inch Professional Paint Roller – Multi-Purpose Wall Painting Tool with Ergonomic Green Handle – High-Absorbency 9" Roller for Smooth & T
 Description: The Tiger All-Rounder 9-Inch Paint Roller is the ultimate tool for achieving a professional, streak-free finish. Its wide 9-inch surface coverage allows you to complete painting projects faster, while the premium fabric ensures even paint distribution on any wall type. Equipped with a heavy-duty gree
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

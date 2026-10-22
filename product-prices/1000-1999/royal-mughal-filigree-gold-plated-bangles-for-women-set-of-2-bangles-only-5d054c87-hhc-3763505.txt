@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Mughal Filigree Gold Plated Bangles for Women – Set of 2 Bangles Only | Traditional Bridal & Party Wear Jewelry
 Product ID: hhc-3763505
 SKU: hhc-3763505
@@ -7,11 +8,16 @@ Slug: royal-mughal-filigree-gold-plated-bangles-for-women-set-of-2-bangles-on-5d
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/09/f06e0be5cb63df212bccdc557e74ed74.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/09/f06e0be5cb63df212bccdc557e74ed74.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/09/0a959f4afd24df7a3ad9fc24ce2b9d2d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/09/31162bd4b4478c518a5ab95c224c8062.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/09/3e2185fcb554a9bb9d03c12bcc81ae14.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/09/0a6fe0ca17a3e9e9a7fdf207c9d1e2f3.jpeg
 Meta Title: Royal Mughal Filigree Gold Plated Bangles for Women – Set of 2 Bangl
 Meta Description: Buy Royal Mughal Filigree Gold Plated Bangles for Women – Set of 2 Bangles Only | Traditional Bridal & Party Wear Jewelry online in Pakistan from ASM VEO. Add t
 Description: Add timeless elegance to your look with these Royal Mughal Filigree Gold Plated Bangles. Designed with intricate detailing and a luxurious golden finish, this set of 2 bangles is perfect for weddings, festive occasions, parties, traditional outfits, and everyday ethnic styling.
-Regular Price: 1168
-Sale Price: 1168
+Wholesale Price: 1118
+Regular Price: 2060
+Sale Price: 1648
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

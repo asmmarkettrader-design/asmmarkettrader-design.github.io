@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Sticky Wall Tiles – Ready to Install with Adhesive Tape
 Product ID: hhc-3752299
 SKU: hhc-3752299
@@ -7,11 +8,16 @@ Slug: wooden-sticky-wall-tiles-ready-to-install-with-adhesive-tape-hhc-3752299
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/d98aebcdff47d729f69671f527ed458a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/d98aebcdff47d729f69671f527ed458a.jpeg
 Meta Title: Wooden Sticky Wall Tiles – Ready to Install with Adhesive Tape | Buy
 Meta Description: Buy Wooden Sticky Wall Tiles – Ready to Install with Adhesive Tape online in Pakistan from ASM VEO. Upgrade your space with these 16x40 inch ready-size wooden s
 Description: Upgrade your space with these 16x40 inch ready-size wooden sticky wall tiles. Designed for quick and hassle-free installation, each tile comes with strong sticky tape included, so no extra tools or glue are required. The high-quality wooden finish adds a modern and natural touch to your walls, making
-Regular Price: 922
-Sale Price: 922
+Wholesale Price: 872
+Regular Price: 1660
+Sale Price: 1324
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Oil Applicator comb bottle | Best Professional hair oil applicator bottle with comb | 130 ml
 Product ID: hhc-3753364
 SKU: hhc-3753364
@@ -7,11 +8,16 @@ Slug: hair-oil-applicator-comb-bottle-best-professional-hair-oil-applicator-b-c9
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/601b957d2946b75fb20f117fe20005a1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/601b957d2946b75fb20f117fe20005a1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/cb16316ef2ed0ec734bc10e66d848a39.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/14bcd1f555a2e5a92010cc48922621eb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/f22b77231cfecc47b1502301bc68d3ea.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/e86a71524572b2377bf3543d0dc082b7.png
 Meta Title: Hair Oil Applicator comb bottle | Best Professional hair oil applica
 Meta Description: Buy Hair Oil Applicator comb bottle | Best Professional hair oil applicator bottle with comb | 130 ml online in Pakistan from ASM VEO. COMB BOTTLE FOR OIL AND M
 Description: COMB BOTTLE FOR OIL AND MULTI PURPOSE HAIR AND ROOT APPLICATOR
-Regular Price: 188
-Sale Price: 188
+Wholesale Price: 138
+Regular Price: 417
+Sale Price: 267
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

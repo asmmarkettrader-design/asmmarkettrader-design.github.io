@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Leaf And Deer Design Stickytiles Frame Providing Unique Nature Inspired Artwork Elegant Look
 Product ID: hhc-3755263
 SKU: hhc-3755263
@@ -7,11 +8,16 @@ Slug: 3pcs-leaf-and-deer-design-stickytiles-frame-providing-unique-nature-ins-5d
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 3pcs Leaf And Deer Design Stickytiles Frame Providing Unique Nature
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/5115629b38f04c5a17fef1dba28980af.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/5115629b38f04c5a17fef1dba28980af.jpeg
+Meta Title: 3pcs Leaf And Deer Design Stickytiles Frame Providing Unique Nature 
 Meta Description: Buy 3pcs Leaf And Deer Design Stickytiles Frame Providing Unique Nature Inspired Artwork Elegant Look online in Pakistan from ASM VEO. 3pcs Leaf And Deer Design
 Description: 3pcs Leaf And Deer Design Stickytiles Frame Offering Unique Nature Inspired Artwork Elegant Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

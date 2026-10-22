@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Quite Hanging Desk Fan, Mini USB Rechargeable Fan, Quiet Mini Desktop Cooling Fan for Indoor Outdoor(random color )
 Product ID: hhc-1477006
 SKU: hhc-1477006
@@ -7,11 +8,16 @@ Slug: quite-hanging-desk-fan-mini-usb-rechargeable-fan-quiet-mini-desktop-coo-34
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/p7_90bb49e1-674f-4b84-b52a-70a9b464d71e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/p7_90bb49e1-674f-4b84-b52a-70a9b464d71e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/p4_227de533-3887-42f0-8fe6-8c069e91dfe4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/p2_0dcd92ef-7c1d-47df-99e3-742a8017bf76.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/p5_73948196-ce3d-4711-a552-460c2d96cf13.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/p8_ffc70d79-f1df-4b10-83ad-9a5fbe029292.jpg
 Meta Title: Quite Hanging Desk Fan, Mini USB Rechargeable Fan, Quiet Mini Deskto
 Meta Description: Buy Quite Hanging Desk Fan, Mini USB Rechargeable Fan, Quiet Mini Desktop Cooling Fan for Indoor Outdoor(random color ) online in Pakistan from ASM VEO. This po
 Description: This portable cooling fan is activated by touch sensor. 3 available speeds: touch it once for weak airflow, touch it twice for strong airflow, touch it again for mini table fan stronger airflow, turn the fan off by touching it for the 4th time. It is a desk fan in your home/office, also stand still beside you when you are camping, fishing, picnic, barbecue, on beach. Relieve your burden and cost in buying different fans for different use.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

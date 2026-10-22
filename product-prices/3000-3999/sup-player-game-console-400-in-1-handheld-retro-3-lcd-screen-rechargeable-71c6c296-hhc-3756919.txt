@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SUP Player Game Console | 400 in 1 Handheld Retro | 3" LCD Screen | Rechargeable Battery | TV Compatible  (Random Colour)
 Product ID: hhc-3756919
 SKU: hhc-3756919
@@ -7,11 +8,16 @@ Slug: sup-player-game-console-400-in-1-handheld-retro-3-lcd-screen-rechargeab-71
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/878335613939f2ee1b5b5f60d26d6611.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/878335613939f2ee1b5b5f60d26d6611.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/d2bbbbcd1c10ed89a18792c70454c3a5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/222b6e2c97f8164e78508558c095f1de.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/a5fc6da455bae046be8ef0531c53b90f.webp
 Meta Title: SUP Player Game Console | 400 in 1 Handheld Retro | 3" LCD Screen |
 Meta Description: Buy SUP Player Game Console | 400 in 1 Handheld Retro | 3" LCD Screen | Rechargeable Battery | TV Compatible (Random Colour) online in Pakistan from ASM VEO. SU
 Description: SUP handheld retro gaming console with 400 classic games, 3‑inch LCD screen, rechargeable battery, and TV compatibility.
-Regular Price: 1997
-Sale Price: 1997
+Wholesale Price: 1997
+Regular Price: 3600
+Sale Price: 2876
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

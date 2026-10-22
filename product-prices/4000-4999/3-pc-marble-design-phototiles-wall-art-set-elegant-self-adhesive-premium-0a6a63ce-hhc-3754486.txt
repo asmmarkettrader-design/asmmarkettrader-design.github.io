@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pc Marble Design Phototiles Wall Art Set | Elegant Self‑Adhesive | Premium Smooth Finish | Size 8x11
 Product ID: hhc-3754486
 SKU: hhc-3754486
@@ -7,11 +8,16 @@ Slug: 3-pc-marble-design-phototiles-wall-art-set-elegant-self-adhesive-premiu-0a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4f2163392f1c969384e1a171dd5ffa13.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/4f2163392f1c969384e1a171dd5ffa13.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/5c857a263a3f06997fa3d8f5992ab861.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/8bd22dad7e29f77b4940527e61f7fe62.jpeg
 Meta Title: 3 Pc Marble Design Phototiles Wall Art Set | Elegant Self‑Adhesive |
 Meta Description: Buy 3 Pc Marble Design Phototiles Wall Art Set | Elegant Self‑Adhesive | Premium Smooth Finish | Size 8x11 online in Pakistan from ASM VEO. Elegant 3 Pc marble
 Description: Elegant 3 Pc marble design phototiles wall art set, ready to hang with self‑adhesive backing, premium smooth finish, size 8x11.
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashees BB HD Matte And Poreless 2 In 1 Face Powder – Smooth Finish, Oil Free, Long Lasting All Day Wear Compact Powder For Flawless Skin
 Product ID: hhc-3753137
 SKU: hhc-3753137
@@ -7,11 +8,16 @@ Slug: kashees-bb-hd-matte-and-poreless-2-in-1-face-powder-smooth-finish-oil-f-93
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/2fb9ae803ba8f7499ff6af6a81a13024.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/2fb9ae803ba8f7499ff6af6a81a13024.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/98d5436f4b29749e38d220480a583ed1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/97a5540475836853bd30265b2ecc54f6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/e53fca2ce3d0f9effe415e4e69262037.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/eac293d7739be448a56c24f9e0a86c3e.jpeg
 Meta Title: Kashees BB HD Matte And Poreless 2 In 1 Face Powder – Smooth Finish,
 Meta Description: Buy Kashees BB HD Matte And Poreless 2 In 1 Face Powder – Smooth Finish, Oil Free, Long Lasting All Day Wear Compact Powder For Flawless Skin online in Pakistan
 Description: Kashees BB HD Matte And Poreless 2 In 1 Face Powder Gives A Smooth, Oil Free Finish With Long Lasting Coverage For A Naturally Flawless Look.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

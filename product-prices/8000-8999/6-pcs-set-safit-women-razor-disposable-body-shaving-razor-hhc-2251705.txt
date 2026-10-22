@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Pcs Set  Safit  Women Razor Disposable Body Shaving Razor
 Product ID: hhc-2251705
 SKU: hhc-2251705
@@ -7,11 +8,16 @@ Slug: 6-pcs-set-safit-women-razor-disposable-body-shaving-razor-hhc-2251705
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/0f3a9cb113e76387e631baed1805d897.jpg_720x720q80.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/0f3a9cb113e76387e631baed1805d897.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/439320f38f67c8e13186103b40a7def1.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/2348a1c1f00f640c677c60215f6dda1b.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/567b223a9f832dfe89ac296fb2b0915d.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/444cd58b4ce94a03f324db28f5d067e4.jpg_720x720q80.jpg_.webp
 Meta Title: 6 Pcs Set Safit Women Razor Disposable Body Shaving Razor | Buy Onli
 Meta Description: Buy 6 Pcs Set Safit Women Razor Disposable Body Shaving Razor online in Pakistan from ASM VEO. Introducing the Safit Woman Razor, a pack of 6 disposable ladies
 Description: Introducing the Safit Woman Razor, a pack of 6 disposable ladies hygiene body razors. Perfect for maintaining a smooth and hair-free body, these razors are a must-have for any beauty routine. The ergonomic design ensures a comfortable grip, while the sharp blades provide a close and precise shave. Ideal for use on legs, underarms, and bikini area, these razors are a convenient and affordable solution for hair removal. Trust Safit to keep you feeling confident and beautiful.• Safit Woman Razor, Disposable Ladies Hygiene Shave Body Razor• Pack of 6 for convenient use• Perfect for hair removal on sensitive areas• Easy to use and dispose of• Ideal for maintaining personal hygiene• Suitable for all skin types and hair textures
-Regular Price: 248
-Sale Price: 248
+Wholesale Price: 198
+Regular Price: 507
+Sale Price: 357
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Alhaitham Pure Perfume by Kahramana Perfumes – Luxury Long-Lasting Arabic Fragrance Spraymium Fragrance Spray - 100ml
 Product ID: hhc-3760465
 SKU: hhc-3760465
 Slug: alhaitham-pure-perfume-by-kahramana-perfumes-luxury-long-lasting-arabic-8f03b581-hhc-3760465
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/bf77d26df6610694807113443c504225.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/bf77d26df6610694807113443c504225.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/62aa37d3f41baf79445ca8c322470786.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/84b6900337cef55ca0823bc811ba3e57.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/533d692fa9bf3b5097f47c74a152e5cf.jpeg
 Meta Title: Alhaitham Pure Perfume by Kahramana Perfumes – Luxury Long-Lasting A
 Meta Description: Buy Alhaitham Pure Perfume by Kahramana Perfumes – Luxury Long-Lasting Arabic Fragrance Spraymium Fragrance Spray - 100ml online in Pakistan from ASM VEO. Immer
 Description: Immerse yourself in the rich oriental heritage with Alhaitham Pure Perfume by Kahramana Perfumes (100ml).
-Regular Price: 1576
-Sale Price: 1576
+Wholesale Price: 1126
+Regular Price: 2070
+Sale Price: 1659
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

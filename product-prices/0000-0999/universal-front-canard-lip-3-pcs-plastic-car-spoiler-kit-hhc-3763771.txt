@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Front Canard Lip – 3 Pcs Plastic Car Spoiler Kit
 Product ID: hhc-3763771
 SKU: hhc-3763771
@@ -7,11 +8,16 @@ Slug: universal-front-canard-lip-3-pcs-plastic-car-spoiler-kit-hhc-3763771
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/44d26567fda89a8354717447cc68b788.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/44d26567fda89a8354717447cc68b788.jpeg
 Meta Title: Universal Front Canard Lip – 3 Pcs Plastic Car Spoiler Kit | Buy Onl
 Meta Description: Buy Universal Front Canard Lip – 3 Pcs Plastic Car Spoiler Kit online in Pakistan from ASM VEO. Give your car a sporty and aggressive front-end look with this 3
 Description: Give your car a sporty and aggressive front-end look with this 3-piece universal plastic canard lip spoiler kit.
-Regular Price: 4271
-Sale Price: 4271
+Wholesale Price: 4271
+Regular Price: 7160
+Sale Price: 5732
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

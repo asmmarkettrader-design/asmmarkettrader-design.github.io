@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zidello Soft Non-Scratch Cleaning Sponges & Scourers for Kitchen Washing (Random Design)
 Product ID: hhc-3756159
 SKU: hhc-3756159
@@ -7,11 +8,16 @@ Slug: zidello-soft-non-scratch-cleaning-sponges-scourers-for-kitchen-washing-54f
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/c37144aa51148d56ce411c4e22fb3956.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/c37144aa51148d56ce411c4e22fb3956.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/6d890d9b9e0132dc04bb96ca4d5eabba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/75756332c9b8bbffca96ac060125318a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/4ddb042f0e27b64df575f3ea475107e5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/d638e52a0c047795824043568654ba49.jpeg
 Meta Title: Zidello Soft Non-Scratch Cleaning Sponges & Scourers for Kitchen Was
 Meta Description: Buy Zidello Soft Non-Scratch Cleaning Sponges & Scourers for Kitchen Washing (Random Design) online in Pakistan from ASM VEO. Gentle yet effective kitchen clean
 Description: Gentle yet effective kitchen cleaning sponges designed to remove grease and dirt without scratching delicate surfaces. Durable, easy to grip, and safe for everyday use.
-Regular Price: 424
-Sale Price: 424
+Wholesale Price: 374
+Regular Price: 780
+Sale Price: 621
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

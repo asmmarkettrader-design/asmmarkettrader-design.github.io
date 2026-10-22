@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: One-Press Deep Cleaning Brush For Kitchen & Dining - Household Product Designed For Washing And Daily Dish Cleaning Routine (With 50 Disposable Sheets)
 Product ID: hhc-3764057
 SKU: hhc-3764057
@@ -7,11 +8,16 @@ Slug: one-press-deep-cleaning-brush-for-kitchen-dining-household-product-desi-6e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/dbc5f8e999b0f96a7dc9f4e5f326b7b9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/dbc5f8e999b0f96a7dc9f4e5f326b7b9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/e8344a32a6e94b5c36896a1f81390511.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/aa6ff158a44d3fef51617b423538ddef.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/053f7cf79e7de93ac428d907824c97c7.jpg
 Meta Title: One-Press Deep Cleaning Brush For Kitchen & Dining - Household Produ
 Meta Description: Buy One-Press Deep Cleaning Brush For Kitchen & Dining - Household Product Designed For Washing And Daily Dish Cleaning Routine (With 50 Disposable Sheets) onli
 Description: The One-Press Deep Cleaning Brush For Kitchen & Dining Is A Household Product Formulated To Help Provide Washing And Daily Dish Cleaning Utility During Use.
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

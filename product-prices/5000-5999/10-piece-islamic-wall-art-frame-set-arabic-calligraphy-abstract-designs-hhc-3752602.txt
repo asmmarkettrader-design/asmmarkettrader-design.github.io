@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10-Piece Islamic Wall Art Frame Set – Arabic Calligraphy & Abstract Designs
 Product ID: hhc-3752602
 SKU: hhc-3752602
@@ -7,11 +8,16 @@ Slug: 10-piece-islamic-wall-art-frame-set-arabic-calligraphy-abstract-designs-hh
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 10-Piece Islamic Wall Art Frame Set – Arabic Calligraphy & Abstract
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/fbe6dee208edb80e040450fdd3d6f3ff.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/fbe6dee208edb80e040450fdd3d6f3ff.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/d6e93c92c567ee75beaa5e2a89bfe4bd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/02/d9ff147d9f8524820da27d48a1dbd686.jpeg
+Meta Title: 10-Piece Islamic Wall Art Frame Set – Arabic Calligraphy & Abstract 
 Meta Description: Buy 10-Piece Islamic Wall Art Frame Set – Arabic Calligraphy & Abstract Designs online in Pakistan from ASM VEO. Transform your space with this 10-piece Islamic
 Description: Transform your space with this 10-piece Islamic Wall Art Frame Set, featuring elegant Arabic calligraphy and abstract designs in mixed sizes. Includes double tape for easy wall mounting—perfect for modern, spiritual home décor.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

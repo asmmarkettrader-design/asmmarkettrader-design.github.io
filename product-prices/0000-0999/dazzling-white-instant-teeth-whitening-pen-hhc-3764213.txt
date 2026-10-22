@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dazzling White Instant Teeth Whitening Pen
 Product ID: hhc-3764213
 SKU: hhc-3764213
@@ -7,11 +8,16 @@ Slug: dazzling-white-instant-teeth-whitening-pen-hhc-3764213
 Category: Beauty & Personal Care
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/a905ed09c013d3a03a351c79a66ed9a2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/a905ed09c013d3a03a351c79a66ed9a2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/55a23dc79372c3983f0eb91a55480dcc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/8b4c30f4e8fde7c57860f6be05d3f0b0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/421b57736ad4d1532ddde279652a33bc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/100d9197e9d290b13206eff84b598ab4.jpg
 Meta Title: Dazzling White Instant Teeth Whitening Pen | Buy Online in Pakistan
 Meta Description: Buy Dazzling White Instant Teeth Whitening Pen online in Pakistan from ASM VEO. Achieve a brighter, whiter smile effortlessly with the Instant Teeth Whitening P
 Description: Achieve a brighter, whiter smile effortlessly with the Instant Teeth Whitening Pen. This fast-acting formula removes stains from coffee, tea, wine, smoking, and more, giving you a dazzling smile in just a few applications.Key BenefitsInstantly brightens teeth by removing stainsFast &amp; easy to use – no mess, no traysSafe &amp; enamel-friendly formulaPortable &amp; travel-friendlyHow to UseTwist the pen to release the whitening gelApply a thin layer evenly on dry teethLeave for 30 seconds to dry, avoid eating/drinking for 30 minutesUse once or twice daily for best results
-Regular Price: 311
-Sale Price: 311
+Wholesale Price: 261
+Regular Price: 602
+Sale Price: 452
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

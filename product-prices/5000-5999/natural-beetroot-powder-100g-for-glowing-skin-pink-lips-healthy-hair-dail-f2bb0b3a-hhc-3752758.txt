@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Natural Beetroot Powder 100g | For Glowing Skin, Pink Lips, Healthy Hair & Daily Nutrition | Pure And Organic Drink Mix Superfood
 Product ID: hhc-3752758
 SKU: hhc-3752758
@@ -7,11 +8,16 @@ Slug: natural-beetroot-powder-100g-for-glowing-skin-pink-lips-healthy-hair-da-f2
 Category: Groceries
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/b5b10e8f4478179102a93ef4f92ffc8b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/b5b10e8f4478179102a93ef4f92ffc8b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/511403d9299168dbe6074ebb92ad2bda.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/14/986d30f5078cdb741a6fe8e5cdf181e0.png
 Meta Title: Natural Beetroot Powder 100g | For Glowing Skin, Pink Lips, Healthy
 Meta Description: Buy Natural Beetroot Powder 100g | For Glowing Skin, Pink Lips, Healthy Hair & Daily Nutrition | Pure And Organic Drink Mix Superfood online in Pakistan from AS
 Description: Enhance Your Beauty And Health With Natural Beetroot Powder, Perfect For Glowing Skin, Pink Lips, Healthy Hair, And Daily Nutritional Support.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

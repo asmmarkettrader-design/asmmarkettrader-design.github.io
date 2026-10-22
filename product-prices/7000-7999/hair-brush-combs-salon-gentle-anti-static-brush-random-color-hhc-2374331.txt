@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Brush Combs Salon Gentle Anti-static Brush (random color)
 Product ID: hhc-2374331
 SKU: hhc-2374331
@@ -7,11 +8,16 @@ Slug: hair-brush-combs-salon-gentle-anti-static-brush-random-color-hhc-2374331
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/07b5c23477750a681d6bbbe709bcfb21.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/07b5c23477750a681d6bbbe709bcfb21.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/aa77a1f029dcc7f38d8075e09fb97c3e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/484aae28eadbeeb3c598d0b7b1325ccd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/a754ba812d8dd13e32130d2b2f5a0ce5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-26-at-4.36.09-PM.jpeg
 Meta Title: Hair Brush Combs Salon Gentle Anti-static Brush (random color) | Buy
 Meta Description: Buy Hair Brush Combs Salon Gentle Anti-static Brush (random color) online in Pakistan from ASM VEO. Painless Soft bristles, not sharp tips, do not hurt or dig i
 Description: Painless Soft bristles, not sharp tips, do not hurt or dig into the scalp. not easy to bend or break off. detangles your hair perfectly. The brush bristles are short from inside, long from the outside, separate the hair sideways, does not rip through and pull out the knotted hair. designed for smooth brushing. Gives a good enough grip while brushing your hair to get it tangled easily Light weight handle, prfect to hold, use slowly will not snags or pulls the hair.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

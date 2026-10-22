@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Baby Girl Record Books - Memory Book for Girl - My First Picture Book (Pink)
 Product ID: hhc-710631
 SKU: hhc-710631
@@ -7,11 +8,16 @@ Slug: baby-girl-record-books-memory-book-for-girl-my-first-picture-book-pink-hhc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/dc586ab5f0a0525a0e05cc1afbe58af3.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/dc586ab5f0a0525a0e05cc1afbe58af3.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/bc45592aee6b0c502925f632f0bbca44.jpg_750x750.jpg_-1.webp
 Meta Title: Baby Girl Record Books - Memory Book for Girl - My First Picture Boo
 Meta Description: Buy Baby Girl Record Books - Memory Book for Girl - My First Picture Book (Pink) online in Pakistan from ASM VEO. Product details Quality Product Baby Record Bo
 Description: Product details Quality Product Baby Record Book Collect record of your babies its become memories when they Grew
-Regular Price: 924
-Sale Price: 924
+Wholesale Price: 874
+Regular Price: 1660
+Sale Price: 1327
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

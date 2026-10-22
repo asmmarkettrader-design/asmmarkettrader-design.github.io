@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rhode Cream Blush Stick Pack of 3
 Product ID: hhc-3759576
 SKU: hhc-3759576
@@ -7,11 +8,16 @@ Slug: rhode-cream-blush-stick-pack-of-3-hhc-3759576
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/a84636c7cbf5713dffe21aaffa90ebea.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/a84636c7cbf5713dffe21aaffa90ebea.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/27aab4874fed05fc3611e2b179b6c5b2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/6073953b60fbcde95aff7d000dae47f9.png
 Meta Title: Rhode Cream Blush Stick Pack of 3 | Buy Online in Pakistan
 Meta Description: Buy Rhode Cream Blush Stick Pack of 3 online in Pakistan from ASM VEO. A pack of 3 creamy blush sticks designed to give cheeks a smooth, natural-looking flush w
 Description: A pack of 3 creamy blush sticks designed to give cheeks a smooth, natural-looking flush with easy blendability and a radiant finish.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AYRO Self Locking Workout Weight Lifting Gym Belt Extra Large Premium Quality With Metal Buckle For Core Stability Back Support Deadlift Squat Powerlifting Strength Training
 Product ID: hhc-3763349
 SKU: hhc-3763349
@@ -7,11 +8,16 @@ Slug: ayro-self-locking-workout-weight-lifting-gym-belt-extra-large-premium-q-0d
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/f21c88dbfcf30663fa01aea3cdcca61f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/f21c88dbfcf30663fa01aea3cdcca61f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/1d5006f3d451281b8d0de382e2a3310d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/1e5d109675d49ade6206d19fb17fcc78.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/d1664eef8fa2aaefcc318141ba10530c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/40e2ecfad2bcdcd9f02f58a62fc547f1.jpeg
 Meta Title: AYRO Self Locking Workout Weight Lifting Gym Belt Extra Large Premiu
 Meta Description: Buy AYRO Self Locking Workout Weight Lifting Gym Belt Extra Large Premium Quality With Metal Buckle For Core Stability Back Support Deadlift Squat Powerlifting
 Description: AYRO Self Locking Workout Weight Lifting Gym Belt Extra Large Premium Quality With Metal Buckle For Core Stability Back Support Deadlift Squat Powerlifting Strength Training.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Derma Smooth – A Refined And Elegant Personal Care Product Designed For Daily Use
 Product ID: hhc-3753576
 SKU: hhc-3753576
@@ -7,11 +8,16 @@ Slug: derma-smooth-a-refined-and-elegant-personal-care-product-designed-for-dail
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Derma Smooth – A Refined And Elegant Personal Care Product Designed
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/84370bece1ffbd853161080e55e240a3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/84370bece1ffbd853161080e55e240a3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/5da640c088bf8de4b823c250c88fae1d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/280923da907699e9cb912b65fe371038.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/bbec174956b2cf4e536bc59378eb5c26.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/d4d90bfa98c68f748df84c88ae6fa485.webp
+Meta Title: Derma Smooth – A Refined And Elegant Personal Care Product Designed 
 Meta Description: Buy Derma Smooth – A Refined And Elegant Personal Care Product Designed For Daily Use online in Pakistan from ASM VEO. Derma Smooth Offers A Simple And Clean Pe
 Description: Derma Smooth Offers A Simple And Clean Personal Care Experience With A Focus On Comfort And Ease Of Use.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

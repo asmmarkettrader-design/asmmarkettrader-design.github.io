@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Labbaik Ya Hussain Wall Clock – Elegant Wooden Decorative Wall Clock Ideal For Home, Office, And Religious Spaces (With Light)
 Product ID: hhc-3753210
 SKU: hhc-3753210
@@ -7,11 +8,16 @@ Slug: labbaik-ya-hussain-wall-clock-elegant-wooden-decorative-wall-clock-idea-f7
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/b15520bf5a6153048c15bfb19ed2c63c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/b15520bf5a6153048c15bfb19ed2c63c.jpeg
 Meta Title: Labbaik Ya Hussain Wall Clock – Elegant Wooden Decorative Wall Clock
 Meta Description: Buy Labbaik Ya Hussain Wall Clock – Elegant Wooden Decorative Wall Clock Ideal For Home, Office, And Religious Spaces (With Light) online in Pakistan from ASM V
 Description: Labbaik Ya Hussain Wall Clock – Elegant Wooden Decorative Wall Clock Ideal For Home, Office, And Religious Spaces (With Light)
-Regular Price: 684
-Sale Price: 684
+Wholesale Price: 634
+Regular Price: 1220
+Sale Price: 979
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Airpods Pro 2 Anc Durable Quality Comfortable Fit Compact Design Active Noise Cancellation Perfect Choice For Daily Music Calls And Travel Needs
 Product ID: hhc-3754215
 SKU: hhc-3754215
@@ -7,11 +8,16 @@ Slug: airpods-pro-2-anc-durable-quality-comfortable-fit-compact-design-active-5d
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/6ca38c6f8ef434bd93ba3d032fef934b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/6ca38c6f8ef434bd93ba3d032fef934b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/e416a1db6f72c66cff47adfdd9541cc7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/8d470a64fcdc8f2aa256803632a4c618.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/29aee197f009369f07a33d6a13663faa.jpeg
 Meta Title: Airpods Pro 2 Anc Durable Quality Comfortable Fit Compact Design Act
 Meta Description: Buy Airpods Pro 2 Anc Durable Quality Comfortable Fit Compact Design Active Noise Cancellation Perfect Choice For Daily Music Calls And Travel Needs online in P
 Description: Airpods Pro 2 Anc Provides Durable Quality Reliable Utility Comfortable Fit Compact Design And Active Noise Cancellation
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

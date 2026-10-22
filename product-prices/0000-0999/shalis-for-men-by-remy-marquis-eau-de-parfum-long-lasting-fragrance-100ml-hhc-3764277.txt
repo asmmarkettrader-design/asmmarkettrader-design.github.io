@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shalis for Men by Remy Marquis Eau de Parfum – Long Lasting Fragrance - 100ml
 Product ID: hhc-3764277
 SKU: hhc-3764277
 Slug: shalis-for-men-by-remy-marquis-eau-de-parfum-long-lasting-fragrance-100ml-hhc-3764277
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/dfb7859fa2c2d642ca2f86806f9ec860.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/dfb7859fa2c2d642ca2f86806f9ec860.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/699fd3ea5ad907b9010da0b1292f0026.jpg
 Meta Title: Shalis for Men by Remy Marquis Eau de Parfum – Long Lasting Fragranc
 Meta Description: Buy Shalis for Men by Remy Marquis Eau de Parfum – Long Lasting Fragrance - 100ml online in Pakistan from ASM VEO. Shalis for Men by Remy Marquis, a 100ml Eau d
 Description: Shalis for Men by Remy Marquis, a 100ml Eau de Parfum with a long-lasting fragrance and natural spray.
-Regular Price: 973
-Sale Price: 973
+Wholesale Price: 634
+Regular Price: 1220
+Sale Price: 979
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

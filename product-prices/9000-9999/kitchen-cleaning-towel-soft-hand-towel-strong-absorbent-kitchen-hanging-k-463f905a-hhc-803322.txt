@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Cleaning Towel, Soft Hand Towel Strong Absorbent Kitchen Hanging Kitchen Towel (Random colours)
 Product ID: hhc-803322
 SKU: hhc-803322
@@ -7,11 +8,16 @@ Slug: kitchen-cleaning-towel-soft-hand-towel-strong-absorbent-kitchen-hanging-46
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/521569843853acec9b96698dadbe628d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/521569843853acec9b96698dadbe628d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/1587a257843862f5c234c7c0e28ec5c2.jpeg
 Meta Title: Kitchen Cleaning Towel, Soft Hand Towel Strong Absorbent Kitchen Han
 Meta Description: Buy Kitchen Cleaning Towel, Soft Hand Towel Strong Absorbent Kitchen Hanging Kitchen Towel (Random colours) online in Pakistan from ASM VEO. product detailsThic
 Description: product detailsThick material, can be used to expose the lid, wipes, cleaning cloth, etc.Super waterproof, wipe dryWrapped around the thin and fine uniform of pinDouble-sided coral cashmere, super absorbent, thick and softDue to the light and screen difference, the color of the item may be slightly different from the pictures, thanks for understanding
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

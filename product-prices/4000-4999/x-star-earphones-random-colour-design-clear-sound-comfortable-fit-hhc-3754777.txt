@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: X‑Star Earphones | Random Colour & Design | Clear Sound | Comfortable Fit
 Product ID: hhc-3754777
 SKU: hhc-3754777
@@ -7,11 +8,16 @@ Slug: x-star-earphones-random-colour-design-clear-sound-comfortable-fit-hhc-3754
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/80325126cf564a39438e169f6e714ba0.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/80325126cf564a39438e169f6e714ba0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/1ef5f4b5259f95b2624e3af4f9700abe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/a9b2ecc79c679ea3d6e2da6fb387ddbb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/d128e43da6f4c523a447bc713088a3ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/864777242dde8e7ffa95fc34480ac3c8.mp4
 Meta Title: X‑Star Earphones | Random Colour & Design | Clear Sound | Comfortabl
 Meta Description: Buy X‑Star Earphones | Random Colour & Design | Clear Sound | Comfortable Fit online in Pakistan from ASM VEO. X‑Star Earphones with random colour and design. D
 Description: X‑Star Earphones with random colour and design. Delivers clear sound and comfortable wear for daily use.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

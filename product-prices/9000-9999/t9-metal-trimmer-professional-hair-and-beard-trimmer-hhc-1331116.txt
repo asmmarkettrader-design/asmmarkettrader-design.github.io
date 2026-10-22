@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: T9 (Metal ) TRIMMER Professional Hair and Beard Trimmer
 Product ID: hhc-1331116
 SKU: hhc-1331116
@@ -7,11 +8,16 @@ Slug: t9-metal-trimmer-professional-hair-and-beard-trimmer-hhc-1331116
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/3-8-600x826-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/3-8-600x826-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/1-14-600x603-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/2996a400d59d8d354528ed27012b0065.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/9d4eb8c896539466c3d79e4b690316a5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/01/d5ea2826717fc7b5dfff350d75b90fb0.jpg
 Meta Title: T9 (Metal ) TRIMMER Professional Hair and Beard Trimmer | Buy Online
 Meta Description: Buy T9 (Metal ) TRIMMER Professional Hair and Beard Trimmer online in Pakistan from ASM VEO. Specification:Power: 5WVoltage: DC5VCharging time: Approx. 3 hoursU
 Description: Specification:Power: 5WVoltage: DC5VCharging time: Approx. 3 hoursUsing time: Approx. 60 minutesCharging indicator: red light on while charging, green light on when fully chargedFeature:Superior Blade: Precise steel cutter head made of titanium material is safe and sharp, not easy to heat up, ensuring efficiency and durability.
-Regular Price: 895
-Sale Price: 895
+Wholesale Price: 845
+Regular Price: 1610
+Sale Price: 1285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

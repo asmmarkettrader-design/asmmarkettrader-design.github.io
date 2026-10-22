@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 1 pair(2pcs) - Audi Flow Style Led Motorcycle Turn Signals Indicator Amber Light
 Product ID: hhc-708384
 SKU: hhc-708384
@@ -7,11 +8,16 @@ Slug: pack-of-1-pair-2pcs-audi-flow-style-led-motorcycle-turn-signals-indicat-ac
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.25.54-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.25.54-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.25.54-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.25.53-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.25.53-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.25.52-PM.jpeg
 Meta Title: Pack of 1 pair(2pcs) - Audi Flow Style Led Motorcycle Turn Signals I
 Meta Description: Buy Pack of 1 pair(2pcs) - Audi Flow Style Led Motorcycle Turn Signals Indicator Amber Light online in Pakistan from ASM VEO. Discription ■Item Type: Left Right
 Description: Discription ■Item Type: Left Right Turn Signal Lights ■Suitable for: Universal for all motorcycle ■Light Color: Yellow Housing color: Black ■ Voltage: DC-12V Package Include: 1 Pair Left Right Turn Signal Lights Flexible meterial Material: ABS Plastic High Quality + Rubber H/Dut■Type: Motorbike Accessories Parts Modify
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

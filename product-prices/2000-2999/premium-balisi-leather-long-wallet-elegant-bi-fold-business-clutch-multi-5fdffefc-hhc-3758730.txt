@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Balisi Leather Long Wallet – Elegant Bi-Fold Business Clutch & Multi-Card Travel Organizer for Men
 Product ID: hhc-3758730
 SKU: hhc-3758730
@@ -7,11 +8,16 @@ Slug: premium-balisi-leather-long-wallet-elegant-bi-fold-business-clutch-mult-5f
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/a7d962524576a24f5a30158becdfb3e7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/a7d962524576a24f5a30158becdfb3e7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/a52cf0e1477729525413ad62c1cdede3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/c8484705ebe87e28760ccbbc475af8ad.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/48490efcbff83a5b83e1b937e2532450.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/d9b83e48dbedaf427cd916114ccacaf9.png
 Meta Title: Premium Balisi Leather Long Wallet – Elegant Bi-Fold Business Clutch
 Meta Description: Buy Premium Balisi Leather Long Wallet – Elegant Bi-Fold Business Clutch & Multi-Card Travel Organizer for Men online in Pakistan from ASM VEO. Experience the p
 Description: Experience the perfect blend of style and security with the Balisi Leather Long Wallet. Featuring a classic vertical bi-fold design with a secure strap closure, this premium wallet provides ample space for your cards, cash, and smartphone in a sleek, professional profile.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

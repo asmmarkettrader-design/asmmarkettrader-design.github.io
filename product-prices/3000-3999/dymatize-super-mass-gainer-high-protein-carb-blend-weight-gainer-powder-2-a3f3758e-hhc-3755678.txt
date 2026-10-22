@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dymatize Super Mass Gainer – High Protein & Carb Blend Weight Gainer Powder (2 lbs, 29 Servings)
 Product ID: hhc-3755678
 SKU: hhc-3755678
@@ -7,11 +8,16 @@ Slug: dymatize-super-mass-gainer-high-protein-carb-blend-weight-gainer-powder-a3
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/32ac1fee3a7639c308210a5ea5605cdb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/32ac1fee3a7639c308210a5ea5605cdb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/098422f01fb18b99da9f549d2e24983a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/7920bb68274361178ebc5ab941004577.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/70b2fc22b2eed72bfab730e5a186ceed.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/5f159ef574c16f0a398f6b9de7d0911e.png
 Meta Title: Dymatize Super Mass Gainer – High Protein & Carb Blend Weight Gainer
 Meta Description: Buy Dymatize Super Mass Gainer – High Protein & Carb Blend Weight Gainer Powder (2 lbs, 29 Servings) online in Pakistan from ASM VEO. Dymatize Super Mass Gainer
 Description: Dymatize Super Mass Gainer is a high-calorie, high-protein weight gainer designed to support muscle growth and size. Each serving delivers 1280 calories, 52g protein, and a powerful carb blend with BCAAs for intense training and recovery.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

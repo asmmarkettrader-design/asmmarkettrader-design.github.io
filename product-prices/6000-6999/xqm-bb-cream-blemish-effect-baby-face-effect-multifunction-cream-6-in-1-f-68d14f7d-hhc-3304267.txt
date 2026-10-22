@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: XQM BB Cream Blemish Effect | Baby Face Effect | Multifunction Cream 6 In 1 For Perfectly Smooth Skin
 Product ID: hhc-3304267
 SKU: hhc-3304267
@@ -7,11 +8,16 @@ Slug: xqm-bb-cream-blemish-effect-baby-face-effect-multifunction-cream-6-in-1-68
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-03-at-5.02.07-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-03-at-5.02.07-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/7f4089d34b341da2cf4f27de221edeed.jpg_720x720q80.jpg_.webp
 Meta Title: XQM BB Cream Blemish Effect | Baby Face Effect | Multifunction Cream
 Meta Description: Buy XQM BB Cream Blemish Effect | Baby Face Effect | Multifunction Cream 6 In 1 For Perfectly Smooth Skin online in Pakistan from ASM VEO. DescriptionSun-Kissed
 Description: DescriptionSun-Kissed Protection: Guard your skin against harmful UV rays with built-in sun protection. XQM BB Cream includes SPF to shield your complexion from the sun's damaging effects, ensuring you look radiant while safeguarding your skin.Time-saving Beauty: Simplify your routine with a multi-functional BB cream that eliminates the need for multiple products. Enjoy the convenience of a primer, moisturizer, and light foundation all in one.QUALITY : Original
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Summer Collection Full Grey Hoodie Emoji Printed For Men And Boys
 Product ID: hhc-3752545
 SKU: hhc-3752545
@@ -7,11 +8,16 @@ Slug: new-summer-collection-full-grey-hoodie-emoji-printed-for-men-and-boys-hhc-
 Category: Fashion
 Subcategory: Trucksuits & Activewear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/f9e0034ead0e9caf6c68196d6b4641d3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/f9e0034ead0e9caf6c68196d6b4641d3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/4ab7d4aa342e2748717d965d00aa10d8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/8f30eb447cef4a08f129e9b26328b7a7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/fbb6a2b152be193f7b416b9458141d1e.jpeg
 Meta Title: New Summer Collection Full Grey Hoodie Emoji Printed For Men And Boy
 Meta Description: Buy New Summer Collection Full Grey Hoodie Emoji Printed For Men And Boys online in Pakistan from ASM VEO. Available in Medium, Large, and XL Sizes. Cash on Del
 Description: Available in Medium, Large, and XL Sizes.
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

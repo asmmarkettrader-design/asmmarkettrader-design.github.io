@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BioAqua Pink Magic Skin Care Whitening Cream (30g)
 Product ID: hhc-1992368
 SKU: hhc-1992368
@@ -7,11 +8,16 @@ Slug: bioaqua-pink-magic-skin-care-whitening-cream-30g-hhc-1992368
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.30.17-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.30.17-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-11.30.16-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/1-6.jpeg
 Meta Title: BioAqua Pink Magic Skin Care Whitening Cream (30g) | Buy Online in P
 Meta Description: Buy BioAqua Pink Magic Skin Care Whitening Cream (30g) online in Pakistan from ASM VEO. BioAqua Pink Magic Skin Care Whitening Cream &nbsp; BioAqua Pink Magic S
 Description: BioAqua Pink Magic Skin Care Whitening Cream &nbsp; BioAqua Pink Magic Skin Care Whitening Cream • Material: Cream • Product Type: Underarm Whitening Cream • Product Details: Gives A Natural Glow To Your Skin, Improve Complexion, Can Be Used On Private Parts • Package Includes: 1 x Cream • Weight: 30g
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

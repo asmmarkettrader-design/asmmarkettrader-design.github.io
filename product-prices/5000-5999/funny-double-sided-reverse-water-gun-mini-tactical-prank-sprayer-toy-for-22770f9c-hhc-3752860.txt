@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Funny Double-Sided Reverse Water Gun – Mini Tactical Prank Sprayer Toy for Kids & Adults | Summer Pool & Beach Water Fight Blaster (Random Color)
 Product ID: hhc-3752860
 SKU: hhc-3752860
@@ -7,11 +8,16 @@ Slug: funny-double-sided-reverse-water-gun-mini-tactical-prank-sprayer-toy-fo-22
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/2dcfe8cccbb9f130f1375592cd8b7df4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/2dcfe8cccbb9f130f1375592cd8b7df4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/76f459c7af6fe96e651d8e011b7fbb3b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/d6b9d2c167b2ee16da023b5c8da8606d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/13e6becbda20add892299bea75323250.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/b47afcec76ecc3ec3d25f3d699f1f401.jpg
 Meta Title: Funny Double-Sided Reverse Water Gun – Mini Tactical Prank Sprayer T
 Meta Description: Buy Funny Double-Sided Reverse Water Gun – Mini Tactical Prank Sprayer Toy for Kids & Adults | Summer Pool & Beach Water Fight Blaster (Random Color) online in
 Description: Bring laughter to your summer battles with the Funny Double-Sided Reverse Water Gun! This mini prank sprayer surprises opponents by spraying backward—perfect for kids and adults at the pool, beach, or backyard fun.
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

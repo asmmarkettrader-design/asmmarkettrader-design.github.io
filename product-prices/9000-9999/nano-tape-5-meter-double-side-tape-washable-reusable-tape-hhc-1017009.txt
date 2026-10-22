@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nano Tape 5 Meter Double Side Tape |washable Reusable Tape
 Product ID: hhc-1017009
 SKU: hhc-1017009
@@ -7,11 +8,16 @@ Slug: nano-tape-5-meter-double-side-tape-washable-reusable-tape-hhc-1017009
 Category: Electronics
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/71JU68MA83L._SL1500_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/71JU68MA83L._SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/51g6rVz6cL._SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/61ze7XAcBfL._SL1500_.jpg
 Meta Title: Nano Tape 5 Meter Double Side Tape |washable Reusable Tape | Buy Onl
 Meta Description: Buy Nano Tape 5 Meter Double Side Tape |washable Reusable Tape online in Pakistan from ASM VEO. Washable, Can Be Reused More Than 600 Times. The Gel Super Stron
 Description: Washable, Can Be Reused More Than 600 Times. The Gel Super Strong And Washable And There Are An Infinite Amount Of Potential Uses. It Is Easily Removable And Traceless Will Not Damage Your Walls Or Surfaces. Strong Adhesive-Strong Adhesion, High Transparency, Not Easy To Break When Pulled. Keep Items In Place Without Slipping. It Can Be Mechanically Fixed Instead Of Rivets, Screws, Etc. Main Material: Nano PU Gel 1 X Double Sided Traceless Nano Tape
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

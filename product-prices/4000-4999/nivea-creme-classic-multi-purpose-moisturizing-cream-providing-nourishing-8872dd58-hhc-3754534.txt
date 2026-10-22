@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nivea Creme Classic Multi Purpose Moisturizing Cream Providing Nourishing Care And Long Lasting Hydration For Skin - 150ML
 Product ID: hhc-3754534
 SKU: hhc-3754534
@@ -7,11 +8,16 @@ Slug: nivea-creme-classic-multi-purpose-moisturizing-cream-providing-nourishi-88
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/ddf821437adf291b39b81562593495da.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/ddf821437adf291b39b81562593495da.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/6fa4e74223a50cda773cfab6cff733f1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/a05b85f31cb142e5f7ba14cb9ddf94e6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/904f565b1b2cf1eb02cf53db3a6ea1b0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/351f1b2e9bdbff3ac0d36c926e00210c.jpeg
 Meta Title: Nivea Creme Classic Multi Purpose Moisturizing Cream Providing Nouri
 Meta Description: Buy Nivea Creme Classic Multi Purpose Moisturizing Cream Providing Nourishing Care And Long Lasting Hydration For Skin - 150ML online in Pakistan from ASM VEO.
 Description: Nivea Creme Classic Multi Purpose Moisturizing Cream Offering Gentle Care And Reliable Hydration
-Regular Price: 994
-Sale Price: 994
+Wholesale Price: 944
+Regular Price: 1790
+Sale Price: 1429
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

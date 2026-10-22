@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shake n take electric bottle (2 bottles)
 Product ID: hhc-1119516
 SKU: hhc-1119516
@@ -7,11 +8,16 @@ Slug: shake-n-take-electric-bottle-2-bottles-hhc-1119516
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-25-at-12.44.56-AM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-25-at-12.44.56-AM-2.jpeg
 Meta Title: Shake n take electric bottle (2 bottles) | Buy Online in Pakistan
 Meta Description: Buy Shake n take electric bottle (2 bottles) online in Pakistan from ASM VEO. Shake n take electric bottle (2 bottles) Cash on Delivery, Rs 180 standard deliver
 Description: Shake n take electric bottle (2 bottles)
-Regular Price: 5675
-Sale Price: 5675
+Wholesale Price: 5675
+Regular Price: 9450
+Sale Price: 7558
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Colourful Islamic Calligraphy Wall Art Frames 12 Pcs Set Wooden Sticky Tiles 5x7 Inches Easy Mounting
 Product ID: hhc-3759766
 SKU: hhc-3759766
@@ -7,11 +8,16 @@ Slug: colourful-islamic-calligraphy-wall-art-frames-12-pcs-set-wooden-sticky-e7e
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/02204ce562e2be2610e64004dc48915d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/02204ce562e2be2610e64004dc48915d.jpeg
 Meta Title: Colourful Islamic Calligraphy Wall Art Frames 12 Pcs Set Wooden Stic
 Meta Description: Buy Colourful Islamic Calligraphy Wall Art Frames 12 Pcs Set Wooden Sticky Tiles 5x7 Inches Easy Mounting online in Pakistan from ASM VEO. Colourful Islamic Cal
 Description: Colourful Islamic Calligraphy Wall Art Frames 12 Pcs Set Wooden Sticky Tiles 5x7 Inches With Tape For Easy Mounting.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

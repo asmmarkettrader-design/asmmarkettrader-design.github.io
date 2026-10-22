@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 5 italian mediterranean vintage homes aesthetic art themed wall art wooden sticky Phototile frames for wall home and girls room decoration
 Product ID: hhc-3276143
 SKU: hhc-3276143
@@ -7,11 +8,16 @@ Slug: set-of-5-italian-mediterranean-vintage-homes-aesthetic-art-themed-wall-798
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/1ced9739691356907a6400cba54a60f2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/1ced9739691356907a6400cba54a60f2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/69873cede1f94fb105412e78c92c0026.jpeg
 Meta Title: Set of 5 italian mediterranean vintage homes aesthetic art themed wa
 Meta Description: Buy Set of 5 italian mediterranean vintage homes aesthetic art themed wall art wooden sticky Phototile frames for wall home and girls room decoration online in
 Description: Size: 8x11inch Material: Wooden High quality Sticky tape attached on the wall for sticking on the wall. High quality Digital Printing.Laminated prints so thar Colours will not fade away.Product Original Video[video width="848" height="478" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Video-2025-07-02-at-1.00.32-PM.mp4"][/video]
-Regular Price: 796
-Sale Price: 796
+Wholesale Price: 746
+Regular Price: 1430
+Sale Price: 1142
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

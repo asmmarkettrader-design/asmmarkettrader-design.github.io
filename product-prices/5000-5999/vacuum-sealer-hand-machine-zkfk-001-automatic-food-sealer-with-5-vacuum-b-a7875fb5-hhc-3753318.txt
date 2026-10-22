@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vacuum Sealer Hand Machine ZKFK-001 | Automatic Food Sealer with 5 Vacuum Bags for Fresh Food Storage & Kitchen Organization
 Product ID: hhc-3753318
 SKU: hhc-3753318
@@ -7,11 +8,16 @@ Slug: vacuum-sealer-hand-machine-zkfk-001-automatic-food-sealer-with-5-vacuum-a7
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/b5caf2e95dbd4b5f1e93bd7247a1d3e3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/b5caf2e95dbd4b5f1e93bd7247a1d3e3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/c771eb518c8ba6581ce9902a3086b85c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/852ee95be5b728d92d2b54a9dab795cd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/b7c805dd42b87210042a0253bb747692.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/94a934b4060d6c7acd65743a05e62997.jpg
 Meta Title: Vacuum Sealer Hand Machine ZKFK-001 | Automatic Food Sealer with 5 V
 Meta Description: Buy Vacuum Sealer Hand Machine ZKFK-001 | Automatic Food Sealer with 5 Vacuum Bags for Fresh Food Storage & Kitchen Organization online in Pakistan from ASM VEO
 Description: Keep your food fresh longer with the ZKFK-001 Vacuum Sealer Hand Machine — includes 5 reusable vacuum bags for easy storage.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

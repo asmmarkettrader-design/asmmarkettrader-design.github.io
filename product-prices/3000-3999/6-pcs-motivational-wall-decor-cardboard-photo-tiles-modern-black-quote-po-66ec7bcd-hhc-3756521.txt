@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Pcs Motivational Wall Decor Cardboard Photo Tiles – Modern Black Quote Posters with Double Tape
 Product ID: hhc-3756521
 SKU: hhc-3756521
@@ -7,11 +8,16 @@ Slug: 6-pcs-motivational-wall-decor-cardboard-photo-tiles-modern-black-quote-66e
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/aa6aadade77987779ffe93d1fd7b0d4c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/aa6aadade77987779ffe93d1fd7b0d4c.jpeg
 Meta Title: 6 Pcs Motivational Wall Decor Cardboard Photo Tiles – Modern Black Q
 Meta Description: Buy 6 Pcs Motivational Wall Decor Cardboard Photo Tiles – Modern Black Quote Posters with Double Tape online in Pakistan from ASM VEO. Upgrade your room with th
 Description: Upgrade your room with this 6 PC Motivational Wall Decor Set featuring stylish black quote designs. Made from durable cardboard and available in two sizes, these easy-to-stick tiles come with double tape for quick wall installation.
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

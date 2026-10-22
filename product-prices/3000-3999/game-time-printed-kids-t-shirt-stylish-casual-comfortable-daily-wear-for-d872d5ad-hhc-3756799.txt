@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Game Time Printed Kids T Shirt Stylish Casual Comfortable Daily Wear For Boys And Girls
 Product ID: hhc-3756799
 SKU: hhc-3756799
@@ -7,11 +8,16 @@ Slug: game-time-printed-kids-t-shirt-stylish-casual-comfortable-daily-wear-fo-d8
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/afa0038d7c4490c3037709b0592988f9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/afa0038d7c4490c3037709b0592988f9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/2badb6aebe51c3dcaff7c40cfb6c877b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/4b41bc2a796e2d9476eff93308f632dc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/02f76daa4f374e6765ce5067b4554242.jpeg
 Meta Title: Game Time Printed Kids T Shirt Stylish Casual Comfortable Daily Wear
 Meta Description: Buy Game Time Printed Kids T Shirt Stylish Casual Comfortable Daily Wear For Boys And Girls online in Pakistan from ASM VEO. Game Time Printed Kids T Shirt Desi
 Description: Game Time Printed Kids T Shirt Designed For Comfortable Daily Wear With A Stylish Printed Design Perfect For Casual Use.
-Regular Price: 579
-Sale Price: 579
+Wholesale Price: 529
+Regular Price: 1030
+Sale Price: 827
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

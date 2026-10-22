@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: UDV Ulric De Varens Perfume 100ml – Premium Fragrancesuitable for daily wear and special occasions
 Product ID: hhc-3760861
 SKU: hhc-3760861
 Slug: udv-ulric-de-varens-perfume-100ml-premium-fragrancesuitable-for-daily-w-1758f202-hhc-3760861
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/10ec0da9a64093294b4cb235019d08bd.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/10ec0da9a64093294b4cb235019d08bd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/1ec57eeaed9954033ad7e3a45714f679.jpeg
 Meta Title: UDV Ulric De Varens Perfume 100ml – Premium Fragrancesuitable for da
 Meta Description: Buy UDV Ulric De Varens Perfume 100ml – Premium Fragrancesuitable for daily wear and special occasions online in Pakistan from ASM VEO. UDV Ulric De Varens Perf
 Description: UDV Ulric De Varens Perfume 100ml offers a refreshing and elegant fragrance suitable for daily wear and special occasions. Its balanced scent provides a pleasant and sophisticated experience throughout the day.
-Regular Price: 900
-Sale Price: 900
+Wholesale Price: 550
+Regular Price: 1190
+Sale Price: 950
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

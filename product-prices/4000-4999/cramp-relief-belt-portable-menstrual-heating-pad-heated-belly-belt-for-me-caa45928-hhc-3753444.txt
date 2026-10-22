@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cramp Relief Belt -Portable Menstrual Heating Pad, Heated Belly Belt For Menstrual Cramp Relief With 3 Heat Levels And 4 Modes, Electric Belt Massage For Women And Girls
 Product ID: hhc-3753444
 SKU: hhc-3753444
@@ -7,11 +8,16 @@ Slug: cramp-relief-belt-portable-menstrual-heating-pad-heated-belly-belt-for-caa
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/09c6b4c7171aa2335659b9bdfdea2db8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/09c6b4c7171aa2335659b9bdfdea2db8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/08c1ee86278f908926fc1163b13fa4a9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/2a31bce3c4f2e84cb8f010385c168d09.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/ae08a5f2b89ed15bde1bed79825bcce1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/69925e16eb6211e527752f0b6ca6f21d.jpg
 Meta Title: Cramp Relief Belt -Portable Menstrual Heating Pad, Heated Belly Belt
 Meta Description: Buy Cramp Relief Belt -Portable Menstrual Heating Pad, Heated Belly Belt For Menstrual Cramp Relief With 3 Heat Levels And 4 Modes, Electric Belt Massage For Wo
 Description: Comfortable And Portable Cramp Relief Belt With Adjustable Heat And Massage Modes Designed To Relieve Menstrual Pain And Abdominal Discomfort.
-Regular Price: 1306
-Sale Price: 1306
+Wholesale Price: 1256
+Regular Price: 2300
+Sale Price: 1844
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

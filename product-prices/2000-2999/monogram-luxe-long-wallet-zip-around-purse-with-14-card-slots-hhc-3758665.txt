@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Monogram Luxe Long Wallet – Zip Around Purse with 14 Card Slots
 Product ID: hhc-3758665
 SKU: hhc-3758665
@@ -7,11 +8,16 @@ Slug: monogram-luxe-long-wallet-zip-around-purse-with-14-card-slots-hhc-3758665
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/69698b4c639231008fc11073aa6e63ae.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/69698b4c639231008fc11073aa6e63ae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/10/72154ec9bee5f40663c0df9be469d4b0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/10/1d706c6db999a1b92a8504a396d3810d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/10/c00f11c403ab4bf8374df13b921269af.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/10/818f99fdfcd41462b703e87578a722f0.png
 Meta Title: Monogram Luxe Long Wallet – Zip Around Purse with 14 Card Slots | Bu
 Meta Description: Buy Monogram Luxe Long Wallet – Zip Around Purse with 14 Card Slots online in Pakistan from ASM VEO. Elegant Monogram Luxe Wallet featuring embossed monogram de
 Description: Elegant Monogram Luxe Wallet featuring embossed monogram design, 14 card slots, zipper pocket, ID window, and spacious cash compartments. Slim lightweight wallet perfect for daily use, travel, and gifting.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

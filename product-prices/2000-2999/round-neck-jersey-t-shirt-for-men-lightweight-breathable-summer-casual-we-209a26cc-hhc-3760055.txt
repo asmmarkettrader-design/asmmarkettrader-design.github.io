@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Round Neck Jersey T-Shirt for Men – Lightweight Breathable Summer Casual Wear, Soft Comfortable Daily Use Tee
 Product ID: hhc-3760055
 SKU: hhc-3760055
@@ -7,11 +8,16 @@ Slug: round-neck-jersey-t-shirt-for-men-lightweight-breathable-summer-casual-209
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/5160c46c40dc127db384c4dcc3c9b783.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/5160c46c40dc127db384c4dcc3c9b783.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/02328f1eadf80cf35e0bdeaaeb8d10bc.jpeg
 Meta Title: Round Neck Jersey T-Shirt for Men – Lightweight Breathable Summer Ca
 Meta Description: Buy Round Neck Jersey T-Shirt for Men – Lightweight Breathable Summer Casual Wear, Soft Comfortable Daily Use Tee online in Pakistan from ASM VEO. Stay cool and
 Description: Stay cool and comfortable this summer with this premium round neck jersey T-shirt for men. Made from soft and breathable fabric, it offers a lightweight feel and a stylish casual look perfect for daily wear, outings, gym sessions, and summer activities.
-Regular Price: 535
-Sale Price: 535
+Wholesale Price: 485
+Regular Price: 980
+Sale Price: 788
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

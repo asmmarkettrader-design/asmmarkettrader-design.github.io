@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Mickey Mouse Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trouser Set for Boys & Girls – Warm & Stylish Outfit  FOR BABY AND KIDS
 Product ID: hhc-3753447
 SKU: hhc-3753447
@@ -7,11 +8,16 @@ Slug: black-mickey-mouse-printed-kids-tracksuit-winter-fleece-sweatshirt-trou-72
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/fb4fe8236f6810e18fe216cb13bb3138.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/fb4fe8236f6810e18fe216cb13bb3138.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/8060c8bbeae4d7a29340ddb4d26aa857.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/7760320dc4f1eae93375c9141700b35b.jpeg
 Meta Title: Black Mickey Mouse Printed Kids Tracksuit | Winter Fleece Sweatshirt
 Meta Description: Buy Black Mickey Mouse Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trouser Set for Boys & Girls – Warm & Stylish Outfit FOR BABY AND KIDS online in Paki
 Description: Trendy Mickey Mouse printed black winter tracksuit for kids. Cozy fleece sweatshirt and trouser set – soft, warm, and perfect for cold days.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

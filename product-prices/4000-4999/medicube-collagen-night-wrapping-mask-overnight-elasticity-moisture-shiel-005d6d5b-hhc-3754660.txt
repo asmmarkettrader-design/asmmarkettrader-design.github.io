@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Medicube Collagen Night Wrapping Mask Overnight Elasticity & Moisture Shield (Made In China)
 Product ID: hhc-3754660
 SKU: hhc-3754660
@@ -7,11 +8,16 @@ Slug: medicube-collagen-night-wrapping-mask-overnight-elasticity-moisture-shi-00
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/3c113028af85aa97c19e403512e1f291.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/3c113028af85aa97c19e403512e1f291.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/05616440fcea643d0990435f7119a091.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/b0a78824326931eec4e42e98721b7a57.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/297499e608b27a7e5d2a447f79f1b90b.png
 Meta Title: Medicube Collagen Night Wrapping Mask Overnight Elasticity & Moistur
 Meta Description: Buy Medicube Collagen Night Wrapping Mask Overnight Elasticity & Moisture Shield (Made In China) online in Pakistan from ASM VEO. Wake up to visibly firmer, glo
 Description: Wake up to visibly firmer, glowing skin with this innovative peel-off sleeping mask. Formulated to lock in hydration and boost elasticity while you sleep, it creates a "collagen wrap" that prevents moisture loss and enhances skin texture overnight.
-Regular Price: 2865
-Sale Price: 2865
+Wholesale Price: 2865
+Regular Price: 5060
+Sale Price: 4048
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

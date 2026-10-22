@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Metal Body Adjustable Phone Holder – Foldable Desktop Stand for Mobile Phones
 Product ID: hhc-3757559
 SKU: hhc-3757559
@@ -7,11 +8,16 @@ Slug: metal-body-adjustable-phone-holder-foldable-desktop-stand-for-mobile-phone
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/fb26325a539d63e999941c0e7877129e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/fb26325a539d63e999941c0e7877129e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/d25c15533e5f0a1a03ea951eff61116a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/fe6b32b1d6a60136b5425529831c55a4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/5d6fd819caedd9d77c92d1b6404eaca3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/f51a4484366d49fbe9f48ecf6a15c0b7.jpeg
 Meta Title: Metal Body Adjustable Phone Holder – Foldable Desktop Stand for Mobi
 Meta Description: Buy Metal Body Adjustable Phone Holder – Foldable Desktop Stand for Mobile Phones online in Pakistan from ASM VEO. Premium metal phone holder with adjustable an
 Description: Premium metal phone holder with adjustable angle. Foldable, stable, and perfect for desk use, video watching, and hands-free calls.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

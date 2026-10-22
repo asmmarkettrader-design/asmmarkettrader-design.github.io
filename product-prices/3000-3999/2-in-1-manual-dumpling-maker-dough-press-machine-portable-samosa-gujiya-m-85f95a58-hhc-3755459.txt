@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa & Gujiya Mould Tool | Easy Kitchen DIY Pastry Accessory
 Product ID: hhc-3755459
 SKU: hhc-3755459
@@ -7,11 +8,16 @@ Slug: 2-in-1-manual-dumpling-maker-dough-press-machine-portable-samosa-gujiya-85
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/2af6f930e3c3e32f9b30423802431e2b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/2af6f930e3c3e32f9b30423802431e2b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/331afbb899601e77a4eb5d64451d2c17.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/f3119006ccfc6cca7582831f2520dfd4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/9b291c99adc58e1348a18155866a155f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/6ff9493d2a219b9324af9c96cbba3795.jpg
 Meta Title: 2-in-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa
 Meta Description: Buy 2-in-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa & Gujiya Mould Tool | Easy Kitchen DIY Pastry Accessory online in Pakistan from ASM VEO
 Description: Effortlessly create perfect dumplings and samosas in seconds! This innovative 2-in-1 tool features a built-in dough press and a folding mould. Made from food-grade, BPA-free material, it ensures uniform shapes and tight seals every time, making it a must-have for busy kitchens and DIY cooking enthusi
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

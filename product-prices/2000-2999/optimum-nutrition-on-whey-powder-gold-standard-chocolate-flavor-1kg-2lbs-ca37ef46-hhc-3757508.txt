@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Optimum Nutrition ON Whey Powder Gold Standard Chocolate Flavor 1kg 2lbs Pouch For Muscle Gain
 Product ID: hhc-3757508
 SKU: hhc-3757508
@@ -7,11 +8,16 @@ Slug: optimum-nutrition-on-whey-powder-gold-standard-chocolate-flavor-1kg-2lb-ca
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Optimum Nutrition ON Whey Powder Gold Standard Chocolate Flavor 1kg
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/5a1df692d29ab267a56752964ecb92d0.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/5a1df692d29ab267a56752964ecb92d0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/179067ace5a87900638f816fc615ee23.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/12e2d58d66d13499914f6a944b793884.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/19c751d1c2ba9bf320100c9f4504b4b4.jpeg
+Meta Title: Optimum Nutrition ON Whey Powder Gold Standard Chocolate Flavor 1kg 
 Meta Description: Buy Optimum Nutrition ON Whey Powder Gold Standard Chocolate Flavor 1kg 2lbs Pouch For Muscle Gain online in Pakistan from ASM VEO. Optimum Nutrition ON Whey Po
 Description: Optimum Nutrition ON Whey Powder Gold Standard Chocolate Flavor 1kg 2lbs Pouch For Muscle Gain And Recovery.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 909 Hair Straightener Brush | 6 Heating Modes Electric Hair Straightener Comb (Random Color)
 Product ID: hhc-3754428
 SKU: hhc-3754428
@@ -7,11 +8,16 @@ Slug: 909-hair-straightener-brush-6-heating-modes-electric-hair-straightener-287
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/5ed700ba0ba9ef07d6c82c1a7676d64b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/5ed700ba0ba9ef07d6c82c1a7676d64b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/721c5025c5af7423f2c1d1e9b836814c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/475b61f469e2cc449b4aeb1774fe301e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/ed1b7572fbc53bcfd38e3b511e7291fe.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/9a91452217effa574bc1f4f078a871ab.webp
 Meta Title: 909 Hair Straightener Brush | 6 Heating Modes Electric Hair Straight
 Meta Description: Buy 909 Hair Straightener Brush | 6 Heating Modes Electric Hair Straightener Comb (Random Color) online in Pakistan from ASM VEO. The 909 Hair Straightener Brus
 Description: The 909 Hair Straightener Brush with 6 heating modes smooths hair quickly, reduces frizz, and adds shine. Electric straightener comb design suits all hair types, random color included.
-Regular Price: 933
-Sale Price: 933
+Wholesale Price: 883
+Regular Price: 1680
+Sale Price: 1340
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

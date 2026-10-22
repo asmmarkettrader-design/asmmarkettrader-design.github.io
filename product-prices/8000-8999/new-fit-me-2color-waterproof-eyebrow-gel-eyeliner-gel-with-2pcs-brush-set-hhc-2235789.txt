@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Fit me 2color Waterproof Eyebrow Gel Eyeliner gel with 2pcs Brush set
 Product ID: hhc-2235789
 SKU: hhc-2235789
@@ -7,11 +8,16 @@ Slug: new-fit-me-2color-waterproof-eyebrow-gel-eyeliner-gel-with-2pcs-brush-set-
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/973f8fbb0b13b4188a556e625246f8b9.jpg_2200x2200q80.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/973f8fbb0b13b4188a556e625246f8b9.jpg_2200x2200q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/07861961be18a8c189a20a3ff26bb127.jpg_2200x2200q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/0629858dc700fb50767732e9e7dd916e.jpg_2200x2200q80.jpg_.webp
 Meta Title: New Fit me 2color Waterproof Eyebrow Gel Eyeliner gel with 2pcs Brus
 Meta Description: Buy New Fit me 2color Waterproof Eyebrow Gel Eyeliner gel with 2pcs Brush set online in Pakistan from ASM VEO. Fit me 2color Waterproof Eyebrow Gel Eyeliner gel
 Description: Fit me 2color Waterproof Eyebrow Gel Eyeliner gel with 2pcs Brush set #eyeliner #gel eyeliner #eye makeup Introducing the Fitme 2 in 1 Gel Eye Liner, perfect for girls who want a long-lasting and smudge-proof eye makeup look. This gel liner is designed to stay put for up to 24 hours, ensuring that your eyes look flawless all day long. The smooth and creamy formula glides on effortlessly, allowing you to create precise lines and bold looks with ease. The gel liner comes in a sleek and compact packaging, making it easy to carry in your makeup bag. Whether you're going for a natural or dramatic look, this liner is a must-have in your makeup collection. &nbsp;
-Regular Price: 573
-Sale Price: 573
+Wholesale Price: 523
+Regular Price: 1020
+Sale Price: 818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

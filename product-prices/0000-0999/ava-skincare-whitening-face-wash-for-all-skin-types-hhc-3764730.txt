@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AVA SKINCARE Whitening Face Wash for All Skin Types
 Product ID: hhc-3764730
 SKU: hhc-3764730
@@ -7,11 +8,16 @@ Slug: ava-skincare-whitening-face-wash-for-all-skin-types-hhc-3764730
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/0d85eff5938fbf6c0fef9bd762827e59.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/0d85eff5938fbf6c0fef9bd762827e59.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/1affb5a9f82b83b56daac99d7f0acd8c.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/de76be3173b56f2d2468555ce369dc6a.jfif
 Meta Title: AVA SKINCARE Whitening Face Wash for All Skin Types | Buy Online in
 Meta Description: Buy AVA SKINCARE Whitening Face Wash for All Skin Types online in Pakistan from ASM VEO. AVA SKINCARE Whitening Face Wash for all skin types. Suitable for Men &
 Description: AVA SKINCARE Whitening Face Wash for all skin types. Suitable for Men &amp; Women. Cleanses and removes impurities, provides gentle exfoliation, fades dark spots, enhances skin radiance, and soothes the skin.Quality : Copy
-Regular Price: 233
-Sale Price: 233
+Wholesale Price: 183
+Regular Price: 484
+Sale Price: 334
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

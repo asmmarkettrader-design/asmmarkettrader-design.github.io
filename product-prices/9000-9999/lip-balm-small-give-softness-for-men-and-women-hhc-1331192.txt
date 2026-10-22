@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lip Balm Small Give softness for Men and women
 Product ID: hhc-1331192
 SKU: hhc-1331192
@@ -7,11 +8,16 @@ Slug: lip-balm-small-give-softness-for-men-and-women-hhc-1331192
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2022-11-27at4.48.45AM.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2022-11-27at4.48.45AM.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2022-11-27at4.48.42AM.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2022-11-18at7.03.00AM_1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2024-02-03at3.34.46PM.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/lipbalmmain.webp
 Meta Title: Lip Balm Small Give softness for Men and women | Buy Online in Pakis
 Meta Description: Buy Lip Balm Small Give softness for Men and women online in Pakistan from ASM VEO. Description Lip Balm Small By Moon Touch Lip balm is a soft wax-like substan
 Description: Description Lip Balm Small By Moon Touch Lip balm is a soft wax-like substance you apply to saturate and ease the soreness caused by having dry or chapped lips. Because the skin on your lips is thin, it is more prone to dryness compared to other areas of the skin.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

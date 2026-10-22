@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5-Piece Printed Lawn Hijab Bundle with 4-in-1 Multi-Color Inner Cap – Soft Premium Lawn Scarves for Women | Random Color Mix Print
 Product ID: hhc-3759952
 SKU: hhc-3759952
@@ -7,11 +8,16 @@ Slug: 5-piece-printed-lawn-hijab-bundle-with-4-in-1-multi-color-inner-cap-sof-75
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: 5-Piece Printed Lawn Hijab Bundle with 4-in-1 Multi-Color Inner Cap
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/54fbd80fd38d15545d7f2b1154e0c973.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/54fbd80fd38d15545d7f2b1154e0c973.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/220b05ac734c72475d24bbdfad44e65f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/f7174aff8227026ac862aeaace45cb23.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/9de001a1066eb7187b9aa5cff9d6f0cd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/8c3c1b4e38154471a42140bd1c4fa221.jpeg
+Meta Title: 5-Piece Printed Lawn Hijab Bundle with 4-in-1 Multi-Color Inner Cap 
 Meta Description: Buy 5-Piece Printed Lawn Hijab Bundle with 4-in-1 Multi-Color Inner Cap – Soft Premium Lawn Scarves for Women | Random Color Mix Print online in Pakistan from A
 Description: Upgrade your everyday hijab collection with this 5-piece printed lawn hijab bundle made from premium soft lawn fabric. Designed for comfort and elegant styling, each hijab features trendy prints and lightweight material perfect for summer wear. Comes with a 4-in-1 multi-color inner cap including
-Regular Price: 3428
-Sale Price: 3428
+Wholesale Price: 3428
+Regular Price: 5800
+Sale Price: 4636
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

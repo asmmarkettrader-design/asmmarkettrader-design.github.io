@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Calligraphy Wall Art Set – 3 Wooden Frames (8x11) with Alhamdulillah, Allahu Akbar & Subhan Allah | Easy Wall Mounting
 Product ID: hhc-3752440
 SKU: hhc-3752440
@@ -7,11 +8,16 @@ Slug: islamic-calligraphy-wall-art-set-3-wooden-frames-8x11-with-alhamdulilla-d8
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/d3ae33aa9e51c8ae66a14bd362050b71.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/d3ae33aa9e51c8ae66a14bd362050b71.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/7f79138bbc6315cb08a95c0c5e733174.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/e41f3cc3262ecbaf3399774735d955f9.jpeg
 Meta Title: Islamic Calligraphy Wall Art Set – 3 Wooden Frames (8x11) with Alham
 Meta Description: Buy Islamic Calligraphy Wall Art Set – 3 Wooden Frames (8x11) with Alhamdulillah, Allahu Akbar & Subhan Allah | Easy Wall Mounting online in Pakistan from ASM V
 Description: Enhance your space with this elegant 3-piece Islamic wall art set, featuring “Alhamdulillah,” “Allahu Akbar,” and “Subhan Allah.” Each piece is framed in durable wood, sized at 8x11 inches, and includes double-sided tape for easy wall mounting. A perfect blend of faith and modern design.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

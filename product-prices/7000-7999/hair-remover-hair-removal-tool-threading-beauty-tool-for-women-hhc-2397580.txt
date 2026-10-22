@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Remover, Hair Removal Tool, threading Beauty Tool For Women
 Product ID: hhc-2397580
 SKU: hhc-2397580
@@ -7,11 +8,16 @@ Slug: hair-remover-hair-removal-tool-threading-beauty-tool-for-women-hhc-2397580
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/slique-facial-hair-remover-depil-2_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/slique-facial-hair-remover-depil-2_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/b9b6758ee8804934b6b09d98de94af4d.jpg
 Meta Title: Hair Remover, Hair Removal Tool, threading Beauty Tool For Women | B
 Meta Description: Buy Hair Remover, Hair Removal Tool, threading Beauty Tool For Women online in Pakistan from ASM VEO. It can remove facial hair from the roots without damaging
 Description: It can remove facial hair from the roots without damaging your skin.You can use this epilator to remove not only facial hair but also neck hair.You can change the cotton line to make sure that you can enjoy the removing process.Portable size is convenience to carry.This tool has high and durable quality.Specifications:Item Type: Facial EpilatorThreading Material: CottonHandle Material: ABSColor: PurpleFunction: Removing Facial Hair and Neck Hair, Health CareWeight: 400 gram
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS Anti-Rust Spray | Rust Remover & Corrosion Protector | Premium German Engineered Formula (250ml)
 Product ID: hhc-3756938
 SKU: hhc-3756938
 Slug: three-guys-anti-rust-spray-rust-remover-corrosion-protector-premium-ger-288504bb-hhc-3756938
-Category: Automotive
+Category: Beauty & Personal Care
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/0848f196ae4ec8c0f219d27aec802f71.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/0848f196ae4ec8c0f219d27aec802f71.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/fb5491b1321debc570c6098a99da7f66.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/e2e19c236db5cbd5ca17d0982ebd94c5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/7920ac68753217241787c3646bb34f0f.jpg
 Meta Title: THREE GUYS Anti-Rust Spray | Rust Remover & Corrosion Protector | Pr
 Meta Description: Buy THREE GUYS Anti-Rust Spray | Rust Remover & Corrosion Protector | Premium German Engineered Formula (250ml) online in Pakistan from ASM VEO. Protect metal p
 Description: Protect metal parts from rust and corrosion with THREE GUYS Anti-Rust Spray 250ml. This premium German engineered formula helps remove existing rust while creating a protective layer to prevent future corrosion. Ideal for cars, bikes, tools, and metal surfaces.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

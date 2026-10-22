@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: G200 Magnetic RGB Bluetooth Speaker – 5W Ultra-Portable Wireless Sound Box & Magnetic Phone Stand
 Product ID: hhc-3758540
 SKU: hhc-3758540
@@ -7,11 +8,16 @@ Slug: g200-magnetic-rgb-bluetooth-speaker-5w-ultra-portable-wireless-sound-bo-39
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/d912b98046e178e6bf9f8e978f48aec4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/d912b98046e178e6bf9f8e978f48aec4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/17f735ae176a32105b03ed0624d9a568.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/1011f49f2f083105db0891fa60d84e3a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/75836966c7768586af42b241e2b984b5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/fb3674eb04abd8dad3a0e0e782113eca.png
 Meta Title: G200 Magnetic RGB Bluetooth Speaker – 5W Ultra-Portable Wireless Sou
 Meta Description: Buy G200 Magnetic RGB Bluetooth Speaker – 5W Ultra-Portable Wireless Sound Box & Magnetic Phone Stand online in Pakistan from ASM VEO. Experience powerful sound
 Description: Experience powerful sound in a compact design with the G200 Magnetic Bluetooth Speaker. This 5W ultra-portable speaker features vibrant RGB lighting, high-quality wireless audio, and a unique magnetic surface that doubles as a phone stand for hands-free entertainment.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Basic Round Neck Full Sleeves T-Shirt For Women – Soft & Comfortable Casual Wear (Random Color)
 Product ID: hhc-3760404
 SKU: hhc-3760404
@@ -7,11 +8,16 @@ Slug: basic-round-neck-full-sleeves-t-shirt-for-women-soft-comfortable-casual-65
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/dd46a8850ab363f218c51840a5cfb3ba.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/dd46a8850ab363f218c51840a5cfb3ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/95283c445a605e7c7afcc46d7521df65.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/c87f267097b77cfc67932a07ddf25051.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/2e5991ed7830372c3163b81b1dd438a5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/96dc13eb00ae81391cb41390045b571a.jpeg
 Meta Title: Basic Round Neck Full Sleeves T-Shirt For Women – Soft & Comfortable
 Meta Description: Buy Basic Round Neck Full Sleeves T-Shirt For Women – Soft & Comfortable Casual Wear (Random Color) online in Pakistan from ASM VEO. A stylish and comfortable f
 Description: A stylish and comfortable full-sleeve round-neck T-shirt for women. Made from soft, breathable fabric, perfect for casual wear, daily use, outings, and layering in every season.
-Regular Price: 645
-Sale Price: 645
+Wholesale Price: 595
+Regular Price: 1150
+Sale Price: 923
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

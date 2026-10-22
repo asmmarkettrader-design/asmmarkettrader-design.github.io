@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Eidi Card Pack of 9 – Festive Money & Gift Giving Cards for Eid
 Product ID: hhc-3756479
 SKU: hhc-3756479
@@ -7,11 +8,16 @@ Slug: eidi-card-pack-of-9-festive-money-gift-giving-cards-for-eid-hhc-3756479
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/1259d4c2e5405d788d154093f2b3b780.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/1259d4c2e5405d788d154093f2b3b780.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/305ee8f4a55e66c033b1144df81a95df.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/94d4e160a956887c143daa6ce79fbeac.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/2f478133006898ac2f894b0f95394131.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/c667623874c1fc15ad08d2ec17a90eaf.png
 Meta Title: Eidi Card Pack of 9 – Festive Money & Gift Giving Cards for Eid | Bu
 Meta Description: Buy Eidi Card Pack of 9 – Festive Money & Gift Giving Cards for Eid online in Pakistan from ASM VEO. Celebrate Eid with joy and generosity using this elegant Ei
 Description: Celebrate Eid with joy and generosity using this elegant Eidi Card Pack of 9. Perfect for gifting money or small notes to children, family, and loved ones during Eid celebrations.
-Regular Price: 215
-Sale Price: 215
+Wholesale Price: 165
+Regular Price: 458
+Sale Price: 308
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

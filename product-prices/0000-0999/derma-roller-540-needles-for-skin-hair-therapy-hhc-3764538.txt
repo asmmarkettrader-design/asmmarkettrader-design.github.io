@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Derma Roller 540 Needles for Skin & Hair Therapy
 Product ID: hhc-3764538
 SKU: hhc-3764538
@@ -7,11 +8,16 @@ Slug: derma-roller-540-needles-for-skin-hair-therapy-hhc-3764538
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/870f4678b8afc267b470f40009ff95ea.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/870f4678b8afc267b470f40009ff95ea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/e84a3a0b3176d142b42f8f7a612498e3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/fbb8add09ac335299451a812252da9e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/fa208e9b2bd7e768ebb0942ed9858e19.png
 Meta Title: Derma Roller 540 Needles for Skin & Hair Therapy | Buy Online in Pak
 Meta Description: Buy Derma Roller 540 Needles for Skin & Hair Therapy online in Pakistan from ASM VEO. Derma Roller 540 Needles System. Efficient for anti-aging, skin regenerati
 Description: Derma Roller 540 Needles System. Efficient for anti-aging, skin regeneration, skin tightening, and collagen stimulation. Suitable for face, hair therapy, and reducing wrinkles or stretch marks. High-quality micro-needles for effective therapy.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

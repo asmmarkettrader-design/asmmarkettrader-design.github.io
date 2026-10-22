@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Senior Stethoscope – High-Sensitivity Dual-Head Medical Stethoscope for Professionals
 Product ID: hhc-3754077
 SKU: hhc-3754077
@@ -7,11 +8,16 @@ Slug: senior-stethoscope-high-sensitivity-dual-head-medical-stethoscope-for-p-3c
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
-Meta Title: Senior Stethoscope – High-Sensitivity Dual-Head Medical Stethoscope
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/95c4347afa382445f349c46d46f43dde.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/95c4347afa382445f349c46d46f43dde.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/b794f8ffdfc40a55883c4c17177e725f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/936e0c434b46f236104f7bf334a279f2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/a728449f000ca85b14cd5aed70f04853.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/03fbcb51f7eb5d1134e6791eca280eeb.jpg
+Meta Title: Senior Stethoscope – High-Sensitivity Dual-Head Medical Stethoscope 
 Meta Description: Buy Senior Stethoscope – High-Sensitivity Dual-Head Medical Stethoscope for Professionals online in Pakistan from ASM VEO. A high-quality senior stethoscope des
 Description: A high-quality senior stethoscope designed for doctors, nurses, and medical students. Features a dual-head chest piece, clear acoustic performance, and durable tubing for accurate auscultation.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

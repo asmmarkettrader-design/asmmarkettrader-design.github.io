@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 120W Digital Display Fast Charging Cable – Full Original High Speed Braided Charging & Data Cable
 Product ID: hhc-3757258
 SKU: hhc-3757258
@@ -7,11 +8,16 @@ Slug: 120w-digital-display-fast-charging-cable-full-original-high-speed-braid-cc
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
-Meta Title: 120W Digital Display Fast Charging Cable – Full Original High Speed
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/f61c7d3608ac6792d33b26f9182c96c3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/f61c7d3608ac6792d33b26f9182c96c3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/eca4b5357f4eb039ab8ab086f790fdea.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/5ee63dc926402749dd8be57bf8e63ff2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/34bbca1ac40b892d1ef9cf2460860f91.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/54f93cb1651d1f3ace5577ea1d3ef741.jpeg
+Meta Title: 120W Digital Display Fast Charging Cable – Full Original High Speed 
 Meta Description: Buy 120W Digital Display Fast Charging Cable – Full Original High Speed Braided Charging & Data Cable online in Pakistan from ASM VEO. 120W digital display fast
 Description: 120W digital display fast charging cable with real-time power monitoring. Full original quality with durable braided design for fast charging and stable performance.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

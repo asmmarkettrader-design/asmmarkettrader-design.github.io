@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SEOUL 1988 Retinal Repair Eye Cream – Advanced Korean Eye Therapy for Dark Circles, Puffiness & Fine Lines - 36g
 Product ID: hhc-3757586
 SKU: hhc-3757586
@@ -7,11 +8,16 @@ Slug: seoul-1988-retinal-repair-eye-cream-advanced-korean-eye-therapy-for-dar-13
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/828f67faeb4c239877e0af7f49ec654a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/828f67faeb4c239877e0af7f49ec654a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/51352d0818f856353c59ca30622ef1af.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/74e9f7207ae2d33d47bc74dd5d03e14e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4d81eaa5948121072cb3e93da9b24559.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/ec964e82459280eb36c04444a69080c7.jpeg
 Meta Title: SEOUL 1988 Retinal Repair Eye Cream – Advanced Korean Eye Therapy fo
 Meta Description: Buy SEOUL 1988 Retinal Repair Eye Cream – Advanced Korean Eye Therapy for Dark Circles, Puffiness & Fine Lines - 36g online in Pakistan from ASM VEO. Revitalize
 Description: Revitalize tired eyes with SEOUL 1988 Retinal Repair Eye Cream, a powerful Korean skincare formula designed to reduce dark circles, puffiness, and fine lines. Enriched with advanced retinal technology, this lightweight cream helps restore firmness, brighten the under-eye area, and promote a youthful,
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

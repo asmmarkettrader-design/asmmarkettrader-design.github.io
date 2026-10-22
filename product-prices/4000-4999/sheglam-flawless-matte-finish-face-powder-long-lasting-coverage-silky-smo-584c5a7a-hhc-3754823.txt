@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sheglam Flawless Matte Finish face powder,Long-Lasting coverage,Silky Smooth Texture,Oil control Formula,Invisible Finish
 Product ID: hhc-3754823
 SKU: hhc-3754823
@@ -7,11 +8,16 @@ Slug: sheglam-flawless-matte-finish-face-powder-long-lasting-coverage-silky-s-58
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/aaa752f76e479718d06c1fdea4931b9f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/aaa752f76e479718d06c1fdea4931b9f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/3bcc01bd4edb7722ca9052e21451f3fe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/49348c82a9cc1d8dbb8668543c2ddbd2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/948fd7aba5b403c5849da2a71b7a59e4.jpeg
 Meta Title: Sheglam Flawless Matte Finish face powder,Long-Lasting coverage,Silk
 Meta Description: Buy Sheglam Flawless Matte Finish face powder,Long-Lasting coverage,Silky Smooth Texture,Oil control Formula,Invisible Finish online in Pakistan from ASM VEO. A
 Description: Achieve a flawless, shine-free complexion with the Matte Fusion Compact Face Powder. This lightweight formula seamlessly blends into the skin, providing long-lasting coverage and a smooth, velvety matte finish. Perfect for all-day wear, it controls oil and minimizes the appearance of pores, leaving
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

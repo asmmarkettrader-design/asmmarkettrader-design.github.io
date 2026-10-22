@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Handsfree Baby Feeding Bottle 240ml with Silicone Tube & Nipple | BPA-Free | Random Color
 Product ID: hhc-3764042
 SKU: hhc-3764042
@@ -7,11 +8,16 @@ Slug: handsfree-baby-feeding-bottle-240ml-with-silicone-tube-nipple-bpa-free-737
 Category: Kids Accessories
 Subcategory: Mobile Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/8fbc6698e4717347ebe3bd1c51675e45.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/8fbc6698e4717347ebe3bd1c51675e45.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/396f227fa6b85be653c53dd998b9a2e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/ec42a1f4bd068d7fef023e6dff4f3aca.jpeg
 Meta Title: Handsfree Baby Feeding Bottle 240ml with Silicone Tube & Nipple | BP
 Meta Description: Buy Handsfree Baby Feeding Bottle 240ml with Silicone Tube & Nipple | BPA-Free | Random Color online in Pakistan from ASM VEO. Make feeding time more convenient
 Description: Make feeding time more convenient with the Handsfree Baby Feeding Bottle. Featuring a 240ml bottle, soft silicone nipple, and flexible feeding tube
-Regular Price: 1898
-Sale Price: 1898
+Wholesale Price: 1898
+Regular Price: 3430
+Sale Price: 2742
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

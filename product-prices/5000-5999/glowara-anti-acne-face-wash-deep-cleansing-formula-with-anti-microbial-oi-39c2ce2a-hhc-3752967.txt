@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Glowara Anti Acne Face Wash – Deep Cleansing Formula with Anti-Microbial & Oil-Control Ingredients for Clear, Smooth & Acne-Free Skin
 Product ID: hhc-3752967
 SKU: hhc-3752967
@@ -7,11 +8,16 @@ Slug: glowara-anti-acne-face-wash-deep-cleansing-formula-with-anti-microbial-39c
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/975c8248bb51d9131690204018027eb2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/975c8248bb51d9131690204018027eb2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/291cc020a43777a4466020d881972f90.jpg
 Meta Title: Glowara Anti Acne Face Wash – Deep Cleansing Formula with Anti-Micro
 Meta Description: Buy Glowara Anti Acne Face Wash – Deep Cleansing Formula with Anti-Microbial & Oil-Control Ingredients for Clear, Smooth & Acne-Free Skin online in Pakistan fro
 Description: Glowara Anti Acne Face Wash is a balanced blend of supportive ingredients that are well known to have anti-microbial and oil-controlling properties, help exfoliate the skin, cure acne, and give a clear and clean complexion.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

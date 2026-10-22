@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: A Radiant Oasis of Hydration: Dove Rich Care Body Cream – 48h Moisture & Deep Nourishment Captured in Nature's Light
 Product ID: hhc-3754301
 SKU: hhc-3754301
@@ -7,11 +8,16 @@ Slug: a-radiant-oasis-of-hydration-dove-rich-care-body-cream-48h-moisture-dee-67
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: Dove
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/1dc9b7df8087aeaaf357b5acbb12ff5d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/1dc9b7df8087aeaaf357b5acbb12ff5d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/be323d0c777c2bac3f0618326ab8a37d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/bde1582be435a6238accba3c10bb8c75.png
 Meta Title: A Radiant Oasis of Hydration: Dove Rich Care Body Cream – 48h Moistu
 Meta Description: Buy A Radiant Oasis of Hydration: Dove Rich Care Body Cream – 48h Moisture & Deep Nourishment Captured in Nature's Light online in Pakistan from ASM VEO. A visu
 Description: A visually stunning, vertical-format photograph capturing the Dove Rich Care Body Cream jar nestled among smooth, wet river stones, backlit by soft sunlight filtering through lush greenery and white flowers.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

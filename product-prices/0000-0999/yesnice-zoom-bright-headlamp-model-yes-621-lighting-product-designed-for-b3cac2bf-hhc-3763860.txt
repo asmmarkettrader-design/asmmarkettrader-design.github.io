@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yesnice Zoom Bright Headlamp (Model YES-621) - Lighting Product Designed For Illumination And Daily Lighting Routine
 Product ID: hhc-3763860
 SKU: hhc-3763860
@@ -7,11 +8,16 @@ Slug: yesnice-zoom-bright-headlamp-model-yes-621-lighting-product-designed-fo-b3
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/938f316d676d180b46eb6505748e65a6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/938f316d676d180b46eb6505748e65a6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/b365a0e43a9cd630444f5964b9809c8a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/7f7497fc9446501ec8ee405e412108f9.jpeg
 Meta Title: Yesnice Zoom Bright Headlamp (Model YES-621) - Lighting Product Desi
 Meta Description: Buy Yesnice Zoom Bright Headlamp (Model YES-621) - Lighting Product Designed For Illumination And Daily Lighting Routine online in Pakistan from ASM VEO. The Ye
 Description: The Yesnice Zoom Bright Headlamp (Model YES-621) Is A Lighting Product Formulated To Help Provide Illumination And Daily Lighting Utility During Use.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

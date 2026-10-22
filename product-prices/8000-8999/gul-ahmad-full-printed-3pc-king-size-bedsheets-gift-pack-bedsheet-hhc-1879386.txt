@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gul Ahmad  Full Printed 3pc King Size  Bedsheets Gift Pack Bedsheet
 Product ID: hhc-1879386
 SKU: hhc-1879386
@@ -7,11 +8,16 @@ Slug: gul-ahmad-full-printed-3pc-king-size-bedsheets-gift-pack-bedsheet-hhc-1879
 Category: Home & Kitchen
 Subcategory: Bedding & Linen
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-05-at-2.34.49-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-05-at-2.34.49-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-05-at-2.34.46-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-05-at-2.34.46-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-05-at-2.34.46-AM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-05-at-2.34.47-AM.jpeg
 Meta Title: Gul Ahmad Full Printed 3pc King Size Bedsheets Gift Pack Bedsheet |
 Meta Description: Buy Gul Ahmad Full Printed 3pc King Size Bedsheets Gift Pack Bedsheet online in Pakistan from ASM VEO. &nbsp; &nbsp; Gift Pack Bedsheet*Gul Ahmad Most Demanding
 Description: &nbsp; &nbsp; Gift Pack Bedsheet*Gul Ahmad Most Demanding Collection Cotton Mix Bedsheets Full Printed 3pc 1 Sheet 2 Pillow Covers Fabric = Cotton Mix Size = King Size 92/94 &nbsp;
-Regular Price: 1505
-Sale Price: 1505
+Wholesale Price: 1505
+Regular Price: 2760
+Sale Price: 2212
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

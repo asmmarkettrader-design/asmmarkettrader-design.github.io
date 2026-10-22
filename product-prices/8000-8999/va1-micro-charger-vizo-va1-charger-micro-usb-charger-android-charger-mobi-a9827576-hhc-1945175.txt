@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Va1 Micro Charger | Vizo VA1 Charger Micro USB Charger | Android Charger | Mobile Phone Charger - 1.5A Output Charger
 Product ID: hhc-1945175
 SKU: hhc-1945175
@@ -7,11 +8,16 @@ Slug: va1-micro-charger-vizo-va1-charger-micro-usb-charger-android-charger-mo-a9
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WEBTECH_VIZO_DETAIL_20TH_AUGUST_page-0010_cleanup-removebg-preview-2-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WEBTECH_VIZO_DETAIL_20TH_AUGUST_page-0010_cleanup-removebg-preview-2-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WEBTECH-VIZO-DETAIL-20TH-AUGUST_page-0010_cleanup-2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WEBTECH_VIZO_DETAIL_20TH_AUGUST_page-0010_cleanup-removebg-preview-1-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/VA1-1024x1024_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Img-13-1536x1536_cleanup.png
 Meta Title: Va1 Micro Charger | Vizo VA1 Charger Micro USB Charger | Android Cha
 Meta Description: Buy Va1 Micro Charger | Vizo VA1 Charger Micro USB Charger | Android Charger | Mobile Phone Charger - 1.5A Output Charger online in Pakistan from ASM VEO. Va1 M
 Description: Va1 Micro Charger | Vizo VA1 Charger Micro USB Charger | Android Charger | Mobile Phone Charger - 1.5A Output ChargerProduct Details:Micro USB Wall Charger – 1.5A Output:Output Power:1.5A Standard ChargingPort Type:Micro USBInput Voltage:AC 100–240V (Universal Voltage Support)Key Features:Overcharge &amp; Over-current ProtectionSafe and stable charging performanceCable sold separatelyCompatibility:Compatible with all USB-supported devices (Micro USB)
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Exfoliating Bath Set: Loofah Gloves, Back Scrubber Belt & Loofah Sponge - Bathing Combo
 Product ID: hhc-2567611
 SKU: hhc-2567611
@@ -7,11 +8,16 @@ Slug: exfoliating-bath-set-loofah-gloves-back-scrubber-belt-loofah-sponge-bat-bd
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/glove-lofa-4.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/glove-lofa-4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/glove-lofa-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/glove-lofa-2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/glove-lofa-1.webp
 Meta Title: Exfoliating Bath Set: Loofah Gloves, Back Scrubber Belt & Loofah Spo
 Meta Description: Buy Exfoliating Bath Set: Loofah Gloves, Back Scrubber Belt & Loofah Sponge - Bathing Combo online in Pakistan from ASM VEO. Royal Exfoliating Bath Set – Comple
 Description: Royal Exfoliating Bath Set – Complete bathing combo including loofah gloves, back scrubber belt, and soft loofah sponge for full-body cleansing and exfoliation. Designed to gently remove dead skin, dirt, and excess oil while creating a rich lather for a refreshing shower experience.
-Regular Price: 645
-Sale Price: 645
+Wholesale Price: 595
+Regular Price: 1150
+Sale Price: 923
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Adjustable Desktop Phone Holder Stand – Universal Mobile Stand with Angle & Height Adjustment | Foldable Anti-Slip Cell Phone Holder for All Smartphones
 Product ID: hhc-3757067
 SKU: hhc-3757067
@@ -7,11 +8,16 @@ Slug: adjustable-desktop-phone-holder-stand-universal-mobile-stand-with-angle-c1
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
-Meta Title: Adjustable Desktop Phone Holder Stand – Universal Mobile Stand with
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/074f1086df0951fc8b25d8698b5ee5f1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/074f1086df0951fc8b25d8698b5ee5f1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/d3db4d42c114d97c45dda3a5a2d89c47.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/34e5756e40a0f9750cc99d4a77311532.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/4ebc190ad5f4d20d8a862cc8bb9696ea.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/6ed97c8a93a63e04f5d42228ead1cc07.jpeg
+Meta Title: Adjustable Desktop Phone Holder Stand – Universal Mobile Stand with 
 Meta Description: Buy Adjustable Desktop Phone Holder Stand – Universal Mobile Stand with Angle & Height Adjustment | Foldable Anti-Slip Cell Phone Holder for All Smartphones onl
 Description: Keep your phone stable and hands-free with this adjustable desktop stand. Perfect for watching videos, video calls, and daily use.
-Regular Price: 284
-Sale Price: 284
+Wholesale Price: 234
+Regular Price: 561
+Sale Price: 411
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

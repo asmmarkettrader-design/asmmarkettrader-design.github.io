@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aimée, a fragrance inspired by the enchanting beauty of Gucci Flora 50ml Bottle
 Product ID: hhc-2587611
 SKU: hhc-2587611
@@ -7,11 +8,16 @@ Slug: aim-e-a-fragrance-inspired-by-the-enchanting-beauty-of-gucci-flora-50ml-bo
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Aimée, a fragrance inspired by the enchanting beauty of Gucci Flora
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/f6a23349b9cd4d8cc5fa36b36118307a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/f6a23349b9cd4d8cc5fa36b36118307a.jpeg
+Meta Title: Aimée, a fragrance inspired by the enchanting beauty of Gucci Flora 
 Meta Description: Buy Aimée, a fragrance inspired by the enchanting beauty of Gucci Flora 50ml Bottle online in Pakistan from ASM VEO. 50ml Bottle Celebrate the essence of romanc
 Description: 50ml Bottle Celebrate the essence of romance and youthful charm with Aimée, a fragrance inspired by the enchanting beauty of Gucci Flora. This delightful scent is a harmonious blend of vibrant floral and fresh fruity notes, evoking feelings of joy and elegance. Perfect fragrance for those who embody elegance and a touch of whimsy. Its vibrant and graceful character makes it ideal for daytime wear, whether you’re strolling through a garden or attending a lively celebration.Fragrance Pyramid Top Notes: Pear Blossom, Red Berries and Italian Mandarin Middle Notes: Gardenia, Jasmine and Frangipani Base Notes: Brown sugar and Patchouli
-Regular Price: 3504
-Sale Price: 3504
+Wholesale Price: 2503
+Regular Price: 4450
+Sale Price: 3559
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

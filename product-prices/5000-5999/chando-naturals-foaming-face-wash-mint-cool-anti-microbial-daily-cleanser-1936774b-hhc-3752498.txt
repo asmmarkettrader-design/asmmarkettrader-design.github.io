@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CHANDO Naturals Foaming Face Wash Mint Cool – Anti-Microbial Daily Cleanser for Oily & Acne-Prone Skin (100ml)
 Product ID: hhc-3752498
 SKU: hhc-3752498
@@ -7,11 +8,16 @@ Slug: chando-naturals-foaming-face-wash-mint-cool-anti-microbial-daily-cleans-19
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/463c73d919204d29ccf337160d7d2df8.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/463c73d919204d29ccf337160d7d2df8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/dfd26e88a6eedee8f3050202d7861f84.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/7d905811081d83361c1e9c038f7b6a53.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/7407b775652cdde1496303b58c2905bf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/0804ea24df75c2d94551d48f2238e5b7.webp
 Meta Title: CHANDO Naturals Foaming Face Wash Mint Cool – Anti-Microbial Daily C
 Meta Description: Buy CHANDO Naturals Foaming Face Wash Mint Cool – Anti-Microbial Daily Cleanser for Oily & Acne-Prone Skin (100ml) online in Pakistan from ASM VEO. CHANDO Natur
 Description: CHANDO Naturals Foaming Face Wash Mint Cool deeply cleanses, controls oil, and fights acne-causing bacteria while leaving skin fresh, smooth, and energized.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

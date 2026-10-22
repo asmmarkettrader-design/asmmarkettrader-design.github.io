@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Motivational Wooden Wall Art Frame Set of 10 | Inspirational Quotes & Modern Decor Frames in Multi Sizes for Home, Office & Study Room Decoration
 Product ID: hhc-3752341
 SKU: hhc-3752341
@@ -7,11 +8,16 @@ Slug: motivational-wooden-wall-art-frame-set-of-10-inspirational-quotes-moder-0f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/f88ffec4c4c080685ef667a36982e05d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/f88ffec4c4c080685ef667a36982e05d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/31e87517d5c1e3460bd86c48cdcdab0f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/972136fa33020c191ca343fb75c8b4ca.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/6a7bb7f963dcd8dc90b550348c4bddaa.mp4
 Meta Title: Motivational Wooden Wall Art Frame Set of 10 | Inspirational Quotes
 Meta Description: Buy Motivational Wooden Wall Art Frame Set of 10 | Inspirational Quotes & Modern Decor Frames in Multi Sizes for Home, Office & Study Room Decoration online in
 Description: Motivational Wooden Wall Art Frame Set of 10
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

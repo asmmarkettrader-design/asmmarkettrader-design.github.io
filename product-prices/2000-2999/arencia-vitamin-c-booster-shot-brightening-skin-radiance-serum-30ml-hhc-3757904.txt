@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Arencia Vitamin C Booster Shot | Brightening & Skin Radiance Serum (30ml)
 Product ID: hhc-3757904
 SKU: hhc-3757904
@@ -7,11 +8,16 @@ Slug: arencia-vitamin-c-booster-shot-brightening-skin-radiance-serum-30ml-hhc-37
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/584459310eb3f2a67ea9fbb821b0d49a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/584459310eb3f2a67ea9fbb821b0d49a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/e757b5d45636b9d9b4f85f7515074c25.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/ad550d3012375ebabac2b8589d705472.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/1e195269ebea92a742590190e2410cfc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/3c0c81ae04569a68aa0fe653ca6143a7.jpeg
 Meta Title: Arencia Vitamin C Booster Shot | Brightening & Skin Radiance Serum (
 Meta Description: Buy Arencia Vitamin C Booster Shot | Brightening & Skin Radiance Serum (30ml) online in Pakistan from ASM VEO. Powerful Vitamin C booster serum that helps brigh
 Description: Powerful Vitamin C booster serum that helps brighten skin, reduce dullness, and improve overall glow. Lightweight and fast-absorbing formula.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

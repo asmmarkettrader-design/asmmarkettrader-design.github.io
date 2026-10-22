@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 2 | The Health Healer Night Cream - Wake Up to Radiant, Revitalized Skin
 Product ID: hhc-2252946
 SKU: hhc-2252946
@@ -7,11 +8,16 @@ Slug: pack-of-2-the-health-healer-night-cream-wake-up-to-radiant-revitalized-ski
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-29-at-7.17.08-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-29-at-7.17.08-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-29-at-7.17.05-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-08-16-at-9.23.14-PM-300x300-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-02-at-3.17.43-PM.jpeg
 Meta Title: Pack of 2 | The Health Healer Night Cream - Wake Up to Radiant, Revi
 Meta Description: Buy Pack of 2 | The Health Healer Night Cream - Wake Up to Radiant, Revitalized Skin online in Pakistan from ASM VEO. The Health Healer Whitening Night CreamPac
 Description: The Health Healer Whitening Night CreamPack: 2 pc cream Indulge in the luxurious care of Night Cream and wake up to your most radiant skin yet!Key Ingredients:Shea Butter: Deeply nourishes and hydrates. Vitamin E: Provides antioxidant protection and combats free radical damage. Vitamin C: Brightens skin tone and promotes collagen production. Almond Oil: Soothes and softens skin. Beeswax: Creates a protective barrier and locks in moisture. Coconut Oil: Provides intense hydration and antimicrobial benefits. Rosemary Oil: Stimulates circulation and promotes a healthy scalp. Jojoba Oil: Mimics your skin's natural sebum for optimal balance. Vitamin B3: Minimizes pores and evens skin tone.
-Regular Price: 690
-Sale Price: 690
+Wholesale Price: 640
+Regular Price: 1240
+Sale Price: 988
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

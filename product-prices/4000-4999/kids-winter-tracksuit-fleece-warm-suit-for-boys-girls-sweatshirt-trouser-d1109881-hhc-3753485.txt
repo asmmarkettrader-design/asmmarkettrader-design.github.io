@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Winter Tracksuit | Fleece Warm Suit for Boys & Girls | Sweatshirt + Trouser Set | Cozy & Stylish Winter Outfit
 Product ID: hhc-3753485
 SKU: hhc-3753485
@@ -7,11 +8,16 @@ Slug: kids-winter-tracksuit-fleece-warm-suit-for-boys-girls-sweatshirt-trouse-d1
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/f98a37ee193d130cd4d0b0e340ef7b9b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/f98a37ee193d130cd4d0b0e340ef7b9b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/65796c4a764623be407347104addab1c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/9bab255c40478a1b6eb9f1ec15a5235d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/519b322b68086d357917446488602add.jpeg
 Meta Title: Kids Winter Tracksuit | Fleece Warm Suit for Boys & Girls | Sweatshi
 Meta Description: Buy Kids Winter Tracksuit | Fleece Warm Suit for Boys & Girls | Sweatshirt + Trouser Set | Cozy & Stylish Winter Outfit online in Pakistan from ASM VEO. Soft fl
 Description: Soft fleece kids winter tracksuit with sweatshirt and trouser. Keeps boys and girls warm, comfy, and stylish all winter.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

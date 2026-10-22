@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Super slime 200ml Pack of Six Colors
 Product ID: hhc-286812
 SKU: hhc-286812
@@ -7,11 +8,16 @@ Slug: super-slime-200ml-pack-of-six-colors-hhc-286812
 Category: Baby & Kids Accessories
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/715JLvCOoyL._AC_SY450_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/715JLvCOoyL._AC_SY450_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/c-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/a-1.webp
 Meta Title: Super slime 200ml Pack of Six Colors | Buy Online in Pakistan
 Meta Description: Buy Super slime 200ml Pack of Six Colors online in Pakistan from ASM VEO. Amount of color Plasticine: 6 Colors Type: PLASTICINE Gender: Unisex Age Range: 0 to 2
 Description: Amount of color Plasticine: 6 Colors Type: PLASTICINE Gender: Unisex Age Range: 0 to 24 Months, 2 to 4 Years, 5 to 7 years Place of Origin: Zhejiang, China Product name: Toys
-Regular Price: 783
-Sale Price: 783
+Wholesale Price: 733
+Regular Price: 1400
+Sale Price: 1123
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

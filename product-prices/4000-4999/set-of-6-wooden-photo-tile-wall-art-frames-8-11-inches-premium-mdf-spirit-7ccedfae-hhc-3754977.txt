@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 6 Wooden Photo Tile Wall Art Frames (8×11 Inches) – Premium MDF Spiritual Wall Décor with Easy Stick Back
 Product ID: hhc-3754977
 SKU: hhc-3754977
@@ -7,11 +8,16 @@ Slug: set-of-6-wooden-photo-tile-wall-art-frames-8-11-inches-premium-mdf-spir-7c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/cd98710e7b39f079f974146655d6c62f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/cd98710e7b39f079f974146655d6c62f.jpeg
 Meta Title: Set of 6 Wooden Photo Tile Wall Art Frames (8×11 Inches) – Premium M
 Meta Description: Buy Set of 6 Wooden Photo Tile Wall Art Frames (8×11 Inches) – Premium MDF Spiritual Wall Décor with Easy Stick Back online in Pakistan from ASM VEO. Enhance yo
 Description: Enhance your interior with this elegant set of 6 wooden photo tile frames made from high-quality MDF. Featuring beautiful spiritual designs and pre-attached sticky tape, these frames offer effortless installation and a calm, decorative vibe for any space.
-Regular Price: 755
-Sale Price: 755
+Wholesale Price: 705
+Regular Price: 1350
+Sale Price: 1082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

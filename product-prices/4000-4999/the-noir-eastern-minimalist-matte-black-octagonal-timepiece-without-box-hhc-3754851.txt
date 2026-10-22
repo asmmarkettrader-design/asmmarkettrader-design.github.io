@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Noir Eastern Minimalist – Matte Black Octagonal Timepiece ( without box)
 Product ID: hhc-3754851
 SKU: hhc-3754851
@@ -7,11 +8,16 @@ Slug: the-noir-eastern-minimalist-matte-black-octagonal-timepiece-without-box-hh
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/53e9853d03f808beb1723efa4fe82351.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/53e9853d03f808beb1723efa4fe82351.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/39eebb0724f522f92299a15c0f352c33.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/b1116d47ec2cd12bd8baff6976d065c4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/93ab5f5efb5df6a071d4a76972de53e6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/7d2aeaacbe3076013caba0597a03fa76.jpeg
 Meta Title: The Noir Eastern Minimalist – Matte Black Octagonal Timepiece ( with
 Meta Description: Buy The Noir Eastern Minimalist – Matte Black Octagonal Timepiece ( without box) online in Pakistan from ASM VEO. A sleek, all-black luxury sports watch featuri
 Description: A sleek, all-black luxury sports watch featuring a signature octagonal bezel and a minimalist dial. This timepiece replaces standard indices with elegant Eastern Arabic numerals, offering a sophisticated "stealth" look that bridges the gap between contemporary industrial design and heritage-inspired
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

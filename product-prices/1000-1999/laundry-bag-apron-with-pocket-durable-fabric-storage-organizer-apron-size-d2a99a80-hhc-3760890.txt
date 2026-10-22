@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Laundry Bag Apron With Pocket Durable Fabric Storage Organizer Apron Size 21x22 Cm Pocket Size 22x14 Cm | Random Color
 Product ID: hhc-3760890
 SKU: hhc-3760890
@@ -7,11 +8,16 @@ Slug: laundry-bag-apron-with-pocket-durable-fabric-storage-organizer-apron-si-d2
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/664d83a75a8bb7691c13bfe70ee9e568.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/664d83a75a8bb7691c13bfe70ee9e568.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/4aa53cd792469a223c04a7db76931048.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/66a8aec517a30235c4937c8c39e0e841.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/64bc6cbfe3bfa865a07096853f0db09e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/5e25dba1b4c72dbbab768c55721bafb3.jpeg
 Meta Title: Laundry Bag Apron With Pocket Durable Fabric Storage Organizer Apron
 Meta Description: Buy Laundry Bag Apron With Pocket Durable Fabric Storage Organizer Apron Size 21x22 Cm Pocket Size 22x14 Cm | Random Color online in Pakistan from ASM VEO. Laun
 Description: Laundry Bag Apron With Pocket Durable Fabric Storage Organizer Apron Size 21x22 Cm Pocket Size 22x14 Cm.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

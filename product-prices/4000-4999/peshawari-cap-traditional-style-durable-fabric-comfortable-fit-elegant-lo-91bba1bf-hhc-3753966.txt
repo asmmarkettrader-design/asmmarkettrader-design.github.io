@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Peshawari Cap Traditional Style Durable Fabric Comfortable Fit Elegant Look Perfect Choice For Daily Wear Travel And Household Needs (Random Color)
 Product ID: hhc-3753966
 SKU: hhc-3753966
@@ -7,11 +8,16 @@ Slug: peshawari-cap-traditional-style-durable-fabric-comfortable-fit-elegant-91b
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/3881a047f3516f2082f069fd2c1dc09b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/3881a047f3516f2082f069fd2c1dc09b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/45baec1267f4442e9f51e043e4620fd8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/2cd1c2c726bae02d7d1d93590ba23f1c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/5ca64adc0da9cc9b179f43a7b5c3af97.jpeg
 Meta Title: Peshawari Cap Traditional Style Durable Fabric Comfortable Fit Elega
 Meta Description: Buy Peshawari Cap Traditional Style Durable Fabric Comfortable Fit Elegant Look Perfect Choice For Daily Wear Travel And Household Needs (Random Color) online i
 Description: Peshawari Cap Provides Traditional Style Durable Fabric Comfortable Fit And Elegant Look
-Regular Price: 713
-Sale Price: 713
+Wholesale Price: 663
+Regular Price: 1280
+Sale Price: 1021
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

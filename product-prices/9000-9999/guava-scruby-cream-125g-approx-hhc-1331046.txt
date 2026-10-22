@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Guava Scruby Cream 125g Approx.
 Product ID: hhc-1331046
 SKU: hhc-1331046
@@ -7,11 +8,16 @@ Slug: guava-scruby-cream-125g-approx-hhc-1331046
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2023-10-17at7.11.44PM.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/WhatsAppImage2023-10-17at7.11.44PM.webp
 Meta Title: Guava Scruby Cream 125g Approx. | Buy Online in Pakistan
 Meta Description: Buy Guava Scruby Cream 125g Approx. online in Pakistan from ASM VEO. about this item Guava Scruby Cream By Moon Touch Discover the wonders of Guava Scruby Crea
 Description: about this item Guava Scruby Cream By Moon Touch Discover the wonders of Guava Scruby Cream, a revitalizing skincare gem enriched with the goodness of guava. This exfoliating cream gently buffs away dull, dead skin cells, revealing a fresh and radiant complexion. Our guava-infused formula is designed to hydrate and rejuvenate, leaving your skin silky smooth. Embrace the tropical magic of guava for a vibrant, natural glow. Experience the transformative benefits of Guava Scruby Cream today.
-Regular Price: 713
-Sale Price: 713
+Wholesale Price: 663
+Regular Price: 1280
+Sale Price: 1021
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

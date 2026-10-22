@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mosquito Magic Mesh Hands-Free Screen Door Curtain – Magnetic Self-Closing Net with 20pcs Double Tape & 12pcs Hooks for Easy Installation
 Product ID: hhc-3758255
 SKU: hhc-3758255
@@ -7,11 +8,16 @@ Slug: mosquito-magic-mesh-hands-free-screen-door-curtain-magnetic-self-closin-37
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/ae741104a9b35cc62b8aefff832adc8b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/ae741104a9b35cc62b8aefff832adc8b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/0fa849ab1c03a9d98c4ce664a2da5c6c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/07c043ed59df49668b0acefdbe5960e8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/a471ebda4ea28dd9ddd691fcb8059e9d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/90bbebb9295d8b14d3e1af6b40a1f956.jpeg
 Meta Title: Mosquito Magic Mesh Hands-Free Screen Door Curtain – Magnetic Self-C
 Meta Description: Buy Mosquito Magic Mesh Hands-Free Screen Door Curtain – Magnetic Self-Closing Net with 20pcs Double Tape & 12pcs Hooks for Easy Installation online in Pakistan
 Description: Keep fresh air in and annoying bugs out with the Magic Mesh Hands-Free Screen Door. This magnetic curtain opens easily when you walk through and clicks shut automatically behind you. Perfect for homes with pets and kids, it installs in seconds without any tools.
-Regular Price: 808
-Sale Price: 808
+Wholesale Price: 758
+Regular Price: 1450
+Sale Price: 1159
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

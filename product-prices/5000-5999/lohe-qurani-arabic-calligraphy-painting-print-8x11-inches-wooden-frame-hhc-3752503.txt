@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lohe Qurani Arabic Calligraphy Painting Print – 8x11 inches Wooden Frame
 Product ID: hhc-3752503
 SKU: hhc-3752503
@@ -7,11 +8,16 @@ Slug: lohe-qurani-arabic-calligraphy-painting-print-8x11-inches-wooden-frame-hhc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/f768fb143bb4437e492c6c66685dc90d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/f768fb143bb4437e492c6c66685dc90d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/6b4674366a9f2fed2cde04b02daa12d9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/b8613c326191aa67462f550f38f70048.mp4
 Meta Title: Lohe Qurani Arabic Calligraphy Painting Print – 8x11 inches Wooden F
 Meta Description: Buy Lohe Qurani Arabic Calligraphy Painting Print – 8x11 inches Wooden Frame online in Pakistan from ASM VEO. Elegant Lohe Qurani calligraphy wall art on sticky
 Description: Elegant Lohe Qurani calligraphy wall art on sticky tile with a wooden frame, easy to mount with included double tape.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Pigmented Fluffy Velvet Matte Lipstick – Pack of 6 | Soft Matte Finish | Long-Lasting Bold Shades
 Product ID: hhc-3756084
 SKU: hhc-3756084
@@ -7,11 +8,16 @@ Slug: high-pigmented-fluffy-velvet-matte-lipstick-pack-of-6-soft-matte-finish-40
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/9751613011635de4a1c8cf2d9072ded4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/9751613011635de4a1c8cf2d9072ded4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/fad1f81b14904f687cee99956fabe982.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/d7355523105de95eee2ccb7b87143661.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/0a4d3e2f4e3188c3db79fdce8706d2db.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/30/15cf2a08c84ee9de6fc54fcc65dd6520.jpeg
 Meta Title: High Pigmented Fluffy Velvet Matte Lipstick – Pack of 6 | Soft Matte
 Meta Description: Buy High Pigmented Fluffy Velvet Matte Lipstick – Pack of 6 | Soft Matte Finish | Long-Lasting Bold Shades online in Pakistan from ASM VEO. Upgrade your makeup
 Description: Upgrade your makeup game with this Pack of 6 Fluffy Velvet Matte Lipsticks, featuring high pigmentation, a soft matte finish, and cute fluffy holders for a luxe touch. Perfect for daily wear and special occasions.
-Regular Price: 1856
-Sale Price: 1856
+Wholesale Price: 1856
+Regular Price: 3360
+Sale Price: 2686
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

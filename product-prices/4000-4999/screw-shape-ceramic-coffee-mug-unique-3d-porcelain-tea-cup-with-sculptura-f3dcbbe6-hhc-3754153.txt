@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Screw Shape Ceramic Coffee Mug: Unique 3D Porcelain Tea Cup with Sculptural Twist Design.
 Product ID: hhc-3754153
 SKU: hhc-3754153
@@ -7,11 +8,16 @@ Slug: screw-shape-ceramic-coffee-mug-unique-3d-porcelain-tea-cup-with-sculptu-f3
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/57e15236c23782a0ac7910b024cf58ec.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/57e15236c23782a0ac7910b024cf58ec.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/a3f52189315a47037f29da9ffe6eda23.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/f1dbfb8d9b2175bcc68de90352feca3b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/3681727e9a6de626a2a87ab827f8759e.jpg
 Meta Title: Screw Shape Ceramic Coffee Mug: Unique 3D Porcelain Tea Cup with Scu
 Meta Description: Buy Screw Shape Ceramic Coffee Mug: Unique 3D Porcelain Tea Cup with Sculptural Twist Design. online in Pakistan from ASM VEO. The Screw Shape Ceramic Coffee Mu
 Description: The Screw Shape Ceramic Coffee Mug is a piece of artful, novelty drinkware. Crafted from high-quality porcelain, its exterior features a striking 3D screw thread design, giving it a unique, sculptural look. This durable mug is perfect for enjoying coffee, tea, or hot cocoa, offering excellent heat re
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

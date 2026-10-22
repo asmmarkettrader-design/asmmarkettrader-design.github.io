@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 Pcs Adjustable Alloy Rings Set for Women & Girls – Stackable Fashion Jewelry Collection
 Product ID: hhc-3756443
 SKU: hhc-3756443
@@ -7,11 +8,16 @@ Slug: 10-pcs-adjustable-alloy-rings-set-for-women-girls-stackable-fashion-jew-c5
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/e04db0bbb5730dcea77d8e7cba2e61e7.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/e04db0bbb5730dcea77d8e7cba2e61e7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/ffdceb8ed48c91e5c99fbd93a5a6af12.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/6332bb3b9c79d8f87cb2ac46710c57ed.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/2e3077174584251008537b85dadbed83.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/01111fac2bd04a5a4d32caa9464ead96.jpeg
 Meta Title: 10 Pcs Adjustable Alloy Rings Set for Women & Girls – Stackable Fash
 Meta Description: Buy 10 Pcs Adjustable Alloy Rings Set for Women & Girls – Stackable Fashion Jewelry Collection online in Pakistan from ASM VEO. Upgrade your accessory collectio
 Description: Upgrade your accessory collection with this stylish 10-piece adjustable rings set. Crafted from durable alloy and available in black, gold, and silver tones, these versatile rings are perfect for everyday wear and special occasions.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

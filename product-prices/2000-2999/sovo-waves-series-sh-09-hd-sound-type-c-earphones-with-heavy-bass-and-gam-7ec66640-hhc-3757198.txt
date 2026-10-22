@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SOVO Waves Series SH-09 HD Sound Type-C Earphones with Heavy Bass and Gaming Support
 Product ID: hhc-3757198
 SKU: hhc-3757198
@@ -7,11 +8,16 @@ Slug: sovo-waves-series-sh-09-hd-sound-type-c-earphones-with-heavy-bass-and-g-7e
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/26a135c294d4826bc243ccbecbe2db65.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/26a135c294d4826bc243ccbecbe2db65.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/cc25a6c1b13588bb4e91ff85391b2084.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/d8fefa636c476975feaa22644e6ff740.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/ad65dd9ba139c3d56f866a98eb57149e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/21600f9d7f8af258ca81a5a5b1396069.jpeg
 Meta Title: SOVO Waves Series SH-09 HD Sound Type-C Earphones with Heavy Bass an
 Meta Description: Buy SOVO Waves Series SH-09 HD Sound Type-C Earphones with Heavy Bass and Gaming Support online in Pakistan from ASM VEO. Experience powerful HD sound with the
 Description: Experience powerful HD sound with the SOVO SH-09 earphones, featuring a Type-C connector, deep bass performance, and a durable 1.2m cable, perfect for music, gaming, and everyday use.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

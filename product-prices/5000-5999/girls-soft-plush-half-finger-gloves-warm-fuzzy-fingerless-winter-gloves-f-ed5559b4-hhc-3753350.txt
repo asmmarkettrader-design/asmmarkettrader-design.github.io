@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Girls Soft Plush Half Finger Gloves | Warm Fuzzy Fingerless Winter Gloves for Writing, Typing & Outdoor Use  random colours
 Product ID: hhc-3753350
 SKU: hhc-3753350
@@ -7,11 +8,16 @@ Slug: girls-soft-plush-half-finger-gloves-warm-fuzzy-fingerless-winter-gloves-ed
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/0d8f9f362cd005e5983d80a78448ebf6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/0d8f9f362cd005e5983d80a78448ebf6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/91d8ddc48d65140a1a942836303e558d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/15443aa094e17530640fe38d4d010195.png
 Meta Title: Girls Soft Plush Half Finger Gloves | Warm Fuzzy Fingerless Winter G
 Meta Description: Buy Girls Soft Plush Half Finger Gloves | Warm Fuzzy Fingerless Winter Gloves for Writing, Typing & Outdoor Use random colours online in Pakistan from ASM VEO.
 Description: Soft plush half-finger gloves for girls — warm, cozy, and perfect for winter writing, typing, or outdoor activities.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

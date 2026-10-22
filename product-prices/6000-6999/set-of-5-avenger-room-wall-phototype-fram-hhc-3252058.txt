@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 5 AVENGER ROOM WALL PHOTOTYPE FRAM
 Product ID: hhc-3252058
 SKU: hhc-3252058
@@ -7,11 +8,16 @@ Slug: set-of-5-avenger-room-wall-phototype-fram-hhc-3252058
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/7338d2c238f47b079b9b2696c9a3db95.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/7338d2c238f47b079b9b2696c9a3db95.jpeg
 Meta Title: Set Of 5 AVENGER ROOM WALL PHOTOTYPE FRAM | Buy Online in Pakistan
 Meta Description: Buy Set Of 5 AVENGER ROOM WALL PHOTOTYPE FRAM online in Pakistan from ASM VEO. No of Frames: 5 Size 8x11inches Wooden Material High Quality Digital Printing. St
 Description: No of Frames: 5 Size 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. designs which will give your enterior a spiritual vibe.
-Regular Price: 705
-Sale Price: 705
+Wholesale Price: 655
+Regular Price: 1260
+Sale Price: 1010
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

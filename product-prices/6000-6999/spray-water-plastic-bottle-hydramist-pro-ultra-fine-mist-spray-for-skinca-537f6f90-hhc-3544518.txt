@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Spray water Plastic bottle HydraMist Pro – Ultra-fine mist spray for skincare, cleaning, or gardening. GlowSpritz – Gentle hydration with a stylish touch for everyday refreshment - 500ml | With Box (Random Color)
 Product ID: hhc-3544518
 SKU: hhc-3544518
@@ -7,11 +8,16 @@ Slug: spray-water-plastic-bottle-hydramist-pro-ultra-fine-mist-spray-for-skin-53
 Category: Travel & Outdoor
 Subcategory: Fitness Gear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/51PxcOfTtL._UF10001000_QL80_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/51PxcOfTtL._UF10001000_QL80_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/1616160606_spray_bottle_1-20210414131617_oczkczobqqgt6afb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/61mDozmWOZL._UF10001000_QL80_.jpg
 Meta Title: Spray water Plastic bottle HydraMist Pro – Ultra-fine mist spray for
 Meta Description: Buy Spray water Plastic bottle HydraMist Pro – Ultra-fine mist spray for skincare, cleaning, or gardening. GlowSpritz – Gentle hydration with a stylish touch fo
 Description: spray water bottle HydraMist Pro – Ultra-fine mist spray for skincare, cleaning, or gardening. GlowSpritz – Gentle hydration with a stylish touch for everyday refreshment -500ml (Random Color)Product Original Picture and Video[video width="480" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/07/WhatsApp-Video-2025-07-28-at-5.11.13-PM-1.mp4"][/video]
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

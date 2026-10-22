@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Health Healer Height Growth Powder | Nutritional Supplement | Wellness & Fitness Support 70g
 Product ID: hhc-3756877
 SKU: hhc-3756877
 Slug: the-health-healer-height-growth-powder-nutritional-supplement-wellness-5e7ca875-hhc-3756877
-Category: Beauty & Personal Care
-Subcategory: Health & Wellness
+Category: Health & Wellness
+Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/ab12deebadd616b2775d22e7eebe038b.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/ab12deebadd616b2775d22e7eebe038b.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/acbde9b7d22e30594bd268cde3fca53d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/676035b7c0088ed1f2c3993a001a7fe3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/c779c88cff5ba48fdbae7fe3343f39ca.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/6bc1f851412291cd69e346f7fc8214ee.jpeg
 Meta Title: The Health Healer Height Growth Powder | Nutritional Supplement | We
 Meta Description: Buy The Health Healer Height Growth Powder | Nutritional Supplement | Wellness & Fitness Support 70g online in Pakistan from ASM VEO. Height Growth Powder by Th
 Description: Height Growth Powder by The Health Healer. Marketed as a nutritional wellness supplement. Supports general health and fitness.
-Regular Price: 235
-Sale Price: 235
+Wholesale Price: 185
+Regular Price: 488
+Sale Price: 338
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

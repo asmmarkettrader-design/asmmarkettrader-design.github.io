@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Minimalist Analog Wrist Aura Watch With Stainless Steel Strap And Butterfly Lock
 Product ID: hhc-3761730
 SKU: hhc-3761730
@@ -7,11 +8,16 @@ Slug: black-minimalist-analog-wrist-aura-watch-with-stainless-steel-strap-and-d8
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Black Minimalist Analog Wrist Aura Watch With Stainless Steel Strap
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/378407b0045911b0d2000eae349f436e.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/378407b0045911b0d2000eae349f436e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/0233d2be64eb2335afde217fce9f126d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/9f06326700ebce0ab26f21b041ed341d.jpg
+Meta Title: Black Minimalist Analog Wrist Aura Watch With Stainless Steel Strap 
 Meta Description: Buy Black Minimalist Analog Wrist Aura Watch With Stainless Steel Strap And Butterfly Lock online in Pakistan from ASM VEO. Black Minimalist Analog Wrist Aura W
 Description: Black Minimalist Analog Wrist Aura Watch With Stainless Steel Strap And Butterfly Lock
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

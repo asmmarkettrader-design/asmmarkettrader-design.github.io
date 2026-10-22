@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Moisturizing Gel Socks & Gloves Pack (64g) | Deep Repair for Dry Hands & Feet | Winter Care Deal
 Product ID: hhc-3755151
 SKU: hhc-3755151
@@ -7,11 +8,16 @@ Slug: silicone-moisturizing-gel-socks-gloves-pack-64g-deep-repair-for-dry-han-e4
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/27dbede3aa090385b961680bd9036647.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/27dbede3aa090385b961680bd9036647.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/a4c62dfc4534b111939f4d59c5a62623.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/c56e3a4683a59f2f54f8c4a03dca11b2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/ec971cbf8bdff5876e9b113c3408b971.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/ea376f184a9dfa7869261232b49fff63.jpg
 Meta Title: Silicone Moisturizing Gel Socks & Gloves Pack (64g) | Deep Repair fo
 Meta Description: Buy Silicone Moisturizing Gel Socks & Gloves Pack (64g) | Deep Repair for Dry Hands & Feet | Winter Care Deal online in Pakistan from ASM VEO. Reusable silicone
 Description: Reusable silicone gel gloves and socks that deeply moisturize dry hands and feet, leaving skin soft, smooth, and nourished—perfect for winter care.
-Regular Price: 733
-Sale Price: 733
+Wholesale Price: 683
+Regular Price: 1310
+Sale Price: 1050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

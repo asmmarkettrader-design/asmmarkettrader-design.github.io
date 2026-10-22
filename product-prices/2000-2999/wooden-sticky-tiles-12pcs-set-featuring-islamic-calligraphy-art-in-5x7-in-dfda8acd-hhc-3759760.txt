@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden Sticky Tiles 12Pcs Set Featuring Islamic Calligraphy Art In 5x7 Inches Frame Size
 Product ID: hhc-3759760
 SKU: hhc-3759760
@@ -7,11 +8,16 @@ Slug: wooden-sticky-tiles-12pcs-set-featuring-islamic-calligraphy-art-in-5x7-dfd
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/96001e95b5dc4e2993c83c5e83454890.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/96001e95b5dc4e2993c83c5e83454890.jpeg
 Meta Title: Wooden Sticky Tiles 12Pcs Set Featuring Islamic Calligraphy Art In 5
 Meta Description: Buy Wooden Sticky Tiles 12Pcs Set Featuring Islamic Calligraphy Art In 5x7 Inches Frame Size online in Pakistan from ASM VEO. Decorate Your Walls With This 12Pc
 Description: Decorate Your Walls With This 12Pcs Set Of Wooden Sticky Tiles. Each 5x7 Inches Tile Showcases Unique Islamic Calligraphy Designs To Enhance Your Home Decor.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

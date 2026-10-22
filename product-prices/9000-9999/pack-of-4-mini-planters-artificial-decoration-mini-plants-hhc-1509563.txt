@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 4 Mini Planters | Artificial Decoration mini Plants
 Product ID: hhc-1509563
 SKU: hhc-1509563
@@ -7,11 +8,16 @@ Slug: pack-of-4-mini-planters-artificial-decoration-mini-plants-hhc-1509563
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/AP0102-G1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/AP0102-G1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/AP0102-8PCS.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/AP0102-4-PCS-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/AP0102-4PCS.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/AP0102-B.webp
 Meta Title: Pack of 4 Mini Planters | Artificial Decoration mini Plants | Buy On
 Meta Description: Buy Pack of 4 Mini Planters | Artificial Decoration mini Plants online in Pakistan from ASM VEO. Pack of 4 Mini Plant Artificial Decoration Piece, perfect for a
 Description: Pack of 4 Mini Plant Artificial Decoration Piece, perfect for adding a touch of greenery to any space. These lifelike artificial plants are ideal for home decor, office settings, or special events. The pack includes four mini plants, each intricately designed to mimic the beauty of real plants without the need for maintenance. Whether placed on a shelf, desk, or coffee table, these artificial plants bring a refreshing and natural ambiance to any room Plastic pot Length 4.5 Inches width 1.5 Inches [video width="1280" height="720" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Video-2024-10-26-at-1.16.28-PM.mp4"][/video]
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

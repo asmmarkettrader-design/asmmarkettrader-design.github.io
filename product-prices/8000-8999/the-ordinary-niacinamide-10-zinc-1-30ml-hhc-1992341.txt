@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Ordinary Niacinamide 10% + Zinc 1 % (30ML )
 Product ID: hhc-1992341
 SKU: hhc-1992341
@@ -7,11 +8,16 @@ Slug: the-ordinary-niacinamide-10-zinc-1-30ml-hhc-1992341
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-11.07.49-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-11.07.49-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-11.07.48-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-02-at-11.04.55-PM.jpeg
 Meta Title: The Ordinary Niacinamide 10% + Zinc 1 % (30ML ) | Buy Online in Paki
 Meta Description: Buy The Ordinary Niacinamide 10% + Zinc 1 % (30ML ) online in Pakistan from ASM VEO. &nbsp; The Ordinary Niacinamide Skin Brightening Serum Niacinamide 10% + Zi
 Description: &nbsp; The Ordinary Niacinamide Skin Brightening Serum Niacinamide 10% + Zinc 1 % 30ML High Strength Vitamin &amp; Mineral Blemish Formula Out Class Quality &nbsp; Original Product Video [video width="480" height="864" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Video-2024-09-18-at-6.13.30-PM-1.mp4"][/video] Product Pictures &nbsp; [video width="480" height="864" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Video-2024-09-16-at-7.16.42-PM.mp4"][/video]
-Regular Price: 825
-Sale Price: 825
+Wholesale Price: 775
+Regular Price: 1480
+Sale Price: 1184
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

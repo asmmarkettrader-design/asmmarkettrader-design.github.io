@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: TBM The Bag Master Luxury Handbag – Elegant Two-Tone Designer Tote for Women
 Product ID: hhc-3758543
 SKU: hhc-3758543
@@ -7,11 +8,16 @@ Slug: tbm-the-bag-master-luxury-handbag-elegant-two-tone-designer-tote-for-women
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/a4c4ffddb96b852a2ccebf7c940e8671.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/a4c4ffddb96b852a2ccebf7c940e8671.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/20b98ce1fd0a0be88be98ba6e06759db.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/78bc90eb03a1962707fd42df5507712a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/b0c5990e9096fb705e3afc96adad7a9e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/060694a7cb166c32812152b9340fc91d.jpeg
 Meta Title: TBM The Bag Master Luxury Handbag – Elegant Two-Tone Designer Tote f
 Meta Description: Buy TBM The Bag Master Luxury Handbag – Elegant Two-Tone Designer Tote for Women online in Pakistan from ASM VEO. Elevate your style with this TBM Luxury Handba
 Description: Elevate your style with this TBM Luxury Handbag. Featuring a sophisticated navy blue and peach two-tone design, this premium tote comes with a stylish pearl pom-pom charm and a versatile shoulder strap for the perfect blend of fashion and functionality.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

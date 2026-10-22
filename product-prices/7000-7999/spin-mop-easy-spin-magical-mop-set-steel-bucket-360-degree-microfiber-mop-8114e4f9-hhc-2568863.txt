@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Spin Mop - Easy Spin Magical Mop Set [Steel Bucket] - 360 Degree Microfiber Mop Head Home Clean Tools Microfiber(Steel Bucket)
 Product ID: hhc-2568863
 SKU: hhc-2568863
@@ -7,11 +8,16 @@ Slug: spin-mop-easy-spin-magical-mop-set-steel-bucket-360-degree-microfiber-m-81
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7c5b7c16f81ec1ac3afb10e143659096.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7c5b7c16f81ec1ac3afb10e143659096.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/e1fc4ae8c5c8a99e88ca9c1ff5ac4c8d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/854afb438d5c4d33a9ae40bcdea66166.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/89efb7970a5c9302319a04e8900707b0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/acb87149d2e605db1b7f66527cb80949.jpeg
 Meta Title: Spin Mop - Easy Spin Magical Mop Set [Steel Bucket] - 360 Degree Mic
 Meta Description: Buy Spin Mop - Easy Spin Magical Mop Set [Steel Bucket] - 360 Degree Microfiber Mop Head Home Clean Tools Microfiber(Steel Bucket) online in Pakistan from ASM V
 Description: Spin Mop - Easy Spin Magical Mop Set [Steel Bucket] - 360 Degree Microfiber Mop Head Home Clean Tools Microfiber(Steel Bucket)
-Regular Price: 3077
-Sale Price: 3077
+Wholesale Price: 3077
+Regular Price: 5220
+Sale Price: 4180
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

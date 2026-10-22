@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: I20 Ultra Max Suit (10-in-1 Set) – Premium Smartwatch with 7 Interchangeable Straps & AirPods | Complete Combo for Men & Women (Random Color)
 Product ID: hhc-2356197
 SKU: hhc-2356197
@@ -7,11 +8,16 @@ Slug: i20-ultra-max-suit-10-in-1-set-premium-smartwatch-with-7-interchangeabl-ea
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/3f6adbb1-a88f-4ca8-8802-64980629ec13_1024x1024@2x.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/3f6adbb1-a88f-4ca8-8802-64980629ec13_1024x1024@2x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/3371afd4-5b10-47ae-8682-69f747402c7f_1024x1024@2x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/8ae6677d-5b8d-4b75-89fc-f43a8888ea1c_1024x1024@2x.webp
 Meta Title: I20 Ultra Max Suit (10-in-1 Set) – Premium Smartwatch with 7 Interch
 Meta Description: Buy I20 Ultra Max Suit (10-in-1 Set) – Premium Smartwatch with 7 Interchangeable Straps & AirPods | Complete Combo for Men & Women (Random Color) online in Paki
 Description: The I20 Ultra Max Suit (10-in-1 Set) is a complete smartwatch combo with 7 color straps and AirPods, offering smart connectivity, fitness tracking, and stylish versatility — perfect for everyday use by men and women.
-Regular Price: 2656
-Sale Price: 2656
+Wholesale Price: 2656
+Regular Price: 4710
+Sale Price: 3766
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

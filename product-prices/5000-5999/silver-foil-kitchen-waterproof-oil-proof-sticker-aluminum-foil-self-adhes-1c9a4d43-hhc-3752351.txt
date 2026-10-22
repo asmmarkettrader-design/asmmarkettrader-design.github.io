@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silver Foil Kitchen Waterproof & Oil Proof Sticker | Aluminum Foil Self-Adhesive Sheet for Stove, Cabinets & Walls – Heat Resistant Wallpaper (60×200cm)
 Product ID: hhc-3752351
 SKU: hhc-3752351
@@ -7,11 +8,16 @@ Slug: silver-foil-kitchen-waterproof-oil-proof-sticker-aluminum-foil-self-adh-1c
 Category: Kitchen & Dining
 Subcategory: Kitchen Storage
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/06179f9ce80f6241e09ec543be9b26d0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/06179f9ce80f6241e09ec543be9b26d0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/44e0fa5504ba49350ea01a6e7f05a0e5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/32bf2aac9d318e31e7b8408e604d2a91.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/3afcac699bad0fb00e89ea2f9f055c01.jpg
 Meta Title: Silver Foil Kitchen Waterproof & Oil Proof Sticker | Aluminum Foil S
 Meta Description: Buy Silver Foil Kitchen Waterproof & Oil Proof Sticker | Aluminum Foil Self-Adhesive Sheet for Stove, Cabinets & Walls – Heat Resistant Wallpaper (60×200cm) onl
 Description: Silver Foil Kitchen Waterproof & Oil Proof Sticker | Aluminum Foil Self-Adhesive Sheet for Stove, Cabinets & Walls – Heat Resistant Wallpaper (60×200cm)
-Regular Price: 318
-Sale Price: 318
+Wholesale Price: 268
+Regular Price: 612
+Sale Price: 462
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

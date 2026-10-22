@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Time is Money Wall Art Frame – Inch Wooden Sticky Tile with Watch & Dollar Design, Self-Adhesive Home Decor
 Product ID: hhc-3752290
 SKU: hhc-3752290
@@ -7,11 +8,16 @@ Slug: time-is-money-wall-art-frame-inch-wooden-sticky-tile-with-watch-dollar-cc3
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Time is Money Wall Art Frame – Inch Wooden Sticky Tile with Watch &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/ced5da238bb75b180e495882a4e14f45.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/ced5da238bb75b180e495882a4e14f45.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/e07ce3a38c739a0c6ffbebe354d3d076.mp4
+Meta Title: Time is Money Wall Art Frame – Inch Wooden Sticky Tile with Watch & 
 Meta Description: Buy Time is Money Wall Art Frame – Inch Wooden Sticky Tile with Watch & Dollar Design, Self-Adhesive Home Decor online in Pakistan from ASM VEO. Enhance your sp
 Description: Enhance your space with this stylish ‘Time is Money’ wall art frame. Made from durable wooden sticky tiles, it comes in 8x11 inch and 12x16 inch size with self-adhesive tape for easy wall mounting.
-Regular Price: 109
-Sale Price: 109
+Wholesale Price: 59
+Regular Price: 298
+Sale Price: 148
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

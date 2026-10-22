@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 In 1 Charcoal + Scrub Face Wash 120ml | Deep Detox And Gentle Exfoliation | Removes Dirt, Blackheads, And Dead Skin For A Fresh, Clear, And Glowing Face
 Product ID: hhc-3752984
 SKU: hhc-3752984
@@ -7,11 +8,16 @@ Slug: 2-in-1-charcoal-scrub-face-wash-120ml-deep-detox-and-gentle-exfoliation-b9
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/ef34d8738f1e29b6ce36a195ad272aee.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/ef34d8738f1e29b6ce36a195ad272aee.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/90b1fe7b3e8c37164eae466ff7cc4a34.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/d2bb0e9076c7037e4829ed87eaf27b7d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/79a388216c5ecf4197f3b8df3be1f913.png
 Meta Title: 2 In 1 Charcoal + Scrub Face Wash 120ml | Deep Detox And Gentle Exfo
 Meta Description: Buy 2 In 1 Charcoal + Scrub Face Wash 120ml | Deep Detox And Gentle Exfoliation | Removes Dirt, Blackheads, And Dead Skin For A Fresh, Clear, And Glowing Face o
 Description: 2 In 1 Charcoal + Scrub Face Wash 120ml Deeply Cleanses And Exfoliates The Skin, Removing Dirt, Blackheads, And Impurities For A Smooth, Clear, And Radiant Look.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

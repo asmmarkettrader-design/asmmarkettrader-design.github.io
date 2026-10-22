@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 In 1 Blackhead Remover Machine Rechargeable Pore Cleaner - Skincare Device Designed For Pore Cleansing And Daily Beauty Routine
 Product ID: hhc-3764266
 SKU: hhc-3764266
@@ -7,11 +8,16 @@ Slug: 5-in-1-blackhead-remover-machine-rechargeable-pore-cleaner-skincare-dev-15
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/b8a12a4e9f7f93916b88112bd7bbaf7b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/b8a12a4e9f7f93916b88112bd7bbaf7b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/af4717d66d0fd945921ee1572422c8c3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/ea7ab5b28d81822566ff4a1117215d70.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/cfcea418ee71d55494647b2525b82d81.jpg
 Meta Title: 5 In 1 Blackhead Remover Machine Rechargeable Pore Cleaner - Skincar
 Meta Description: Buy 5 In 1 Blackhead Remover Machine Rechargeable Pore Cleaner - Skincare Device Designed For Pore Cleansing And Daily Beauty Routine online in Pakistan from AS
 Description: The 5 In 1 Blackhead Remover Machine Rechargeable Pore Cleaner Is A Skincare Device Formulated To Help Provide Pore Cleansing And Daily Beauty Utility During Use.
-Regular Price: 1008
-Sale Price: 1008
+Wholesale Price: 958
+Regular Price: 1810
+Sale Price: 1449
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

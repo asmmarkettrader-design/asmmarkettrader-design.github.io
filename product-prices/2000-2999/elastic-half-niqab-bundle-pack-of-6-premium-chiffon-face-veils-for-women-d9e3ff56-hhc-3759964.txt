@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Elastic Half Niqab Bundle – Pack of 6 Premium Chiffon Face Veils for Women | Soft Breathable Daily Wear Niqab | Random Color
 Product ID: hhc-3759964
 SKU: hhc-3759964
@@ -7,11 +8,16 @@ Slug: elastic-half-niqab-bundle-pack-of-6-premium-chiffon-face-veils-for-wome-d9
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/60a512a89798524fc299da7c500f47f2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/60a512a89798524fc299da7c500f47f2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/2b98d2f0df03803756edb8851ef601ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/de6e7c4ad2fbda044bed87caf13fc2a2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/08623550b862d1d7c197504d11cb7427.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/22/c94f88716960a796b58fb4f64aae62ef.jpeg
 Meta Title: Elastic Half Niqab Bundle – Pack of 6 Premium Chiffon Face Veils for
 Meta Description: Buy Elastic Half Niqab Bundle – Pack of 6 Premium Chiffon Face Veils for Women | Soft Breathable Daily Wear Niqab | Random Color online in Pakistan from ASM VEO
 Description: Upgrade your modest wear collection with this Pack of 6 Elastic Half Niqab Bundle made from premium chiffon fabric. Lightweight, breathable, and comfortable for daily use, these niqabs come in beautiful assorted colors with a soft elastic design for a secure and easy fit.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

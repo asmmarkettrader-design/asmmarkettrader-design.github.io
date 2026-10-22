@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Xiaomi Mi 20000Mah 12V Router Power Bank – Mini UPS Battery Backup for Wi-Fi Routers
 Product ID: hhc-3759717
 SKU: hhc-3759717
@@ -7,11 +8,16 @@ Slug: xiaomi-mi-20000mah-12v-router-power-bank-mini-ups-battery-backup-for-wi-5f
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Xiaomi
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/690dffb3d068516f92916b38fb025343.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/690dffb3d068516f92916b38fb025343.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/488fb052d21f1ddd5878899c36e8bf11.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/acf2ef847b74d44148c6e23295e6c83a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/fa5e3d7b9e7afaddb376ce4fbec4cd1b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/9aa4cac384edfef44518f583119b62cc.jpeg
 Meta Title: Xiaomi Mi 20000Mah 12V Router Power Bank – Mini UPS Battery Backup f
 Meta Description: Buy Xiaomi Mi 20000Mah 12V Router Power Bank – Mini UPS Battery Backup for Wi-Fi Routers online in Pakistan from ASM VEO. Keep your internet running during load
 Description: Keep your internet running during load shedding with the Xiaomi Mi Router Power Bank. This high-power 12V mini UPS offers a simple plug-and-play setup to provide stable backup power for Wi-Fi routers and modems.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

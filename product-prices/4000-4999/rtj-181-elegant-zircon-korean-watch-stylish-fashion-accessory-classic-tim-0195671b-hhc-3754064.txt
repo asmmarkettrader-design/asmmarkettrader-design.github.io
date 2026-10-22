@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RTJ-181 Elegant Zircon Korean Watch – Stylish Fashion Accessory, Classic Timepiece for Women
 Product ID: hhc-3754064
 SKU: hhc-3754064
@@ -7,11 +8,16 @@ Slug: rtj-181-elegant-zircon-korean-watch-stylish-fashion-accessory-classic-t-01
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/64973a1e65f69d9980ac21a618564334.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/64973a1e65f69d9980ac21a618564334.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/a4eeb0b2ad49957286af302065bafd1b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/1b2efb2a3751c98cf005eddb1955d6f1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/b629cceb9cb7fe4415882856b085f6fa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/d42e42fc651119f72ab2e70278a4f7bd.jpeg
 Meta Title: RTJ-181 Elegant Zircon Korean Watch – Stylish Fashion Accessory, Cla
 Meta Description: Buy RTJ-181 Elegant Zircon Korean Watch – Stylish Fashion Accessory, Classic Timepiece for Women online in Pakistan from ASM VEO. Elegant RTJ-181 zircon Korean
 Description: Elegant RTJ-181 zircon Korean watch, stylish design for women, perfect for fashion and daily wear.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bella Bow Shoulder Bag – Fashion Mini Handbag with Decorative Bow Design
 Product ID: hhc-3761428
 SKU: hhc-3761428
@@ -7,11 +8,16 @@ Slug: bella-bow-shoulder-bag-fashion-mini-handbag-with-decorative-bow-design-hhc
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/73216f9816b23ab71909767d7ff0e73b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/73216f9816b23ab71909767d7ff0e73b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/d33077ef41ef816c1babd0d6e04864e2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/d802c9e506c7cdf2b2d1bd0c5ca21c2a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/517c753e9fbc02466cb497d9917fbbcd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/ae03a0c3834755f4e3bed17e1c62f87b.jpeg
 Meta Title: Bella Bow Shoulder Bag – Fashion Mini Handbag with Decorative Bow De
 Meta Description: Buy Bella Bow Shoulder Bag – Fashion Mini Handbag with Decorative Bow Design online in Pakistan from ASM VEO. Meet the Bella Bow Shoulder Bag – a stylish handba
 Description: Meet the Bella Bow Shoulder Bag – a stylish handbag with a beautiful bow design and elegant gold details. Made with premium-quality material, it is lightweight, durable, and comfortable to carry. A perfect blend of fashion and quality for your everyday style.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ruilang Model RL-6006S Rechargeable LED Flashlight And Emergency Work Light - Lighting Product Designed For Illumination And Daily Lighting Routine
 Product ID: hhc-3763300
 SKU: hhc-3763300
@@ -7,11 +8,16 @@ Slug: ruilang-model-rl-6006s-rechargeable-led-flashlight-and-emergency-work-l-5e
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/020f1cb8e63b5909f091ce4b0b4ee0a9.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/020f1cb8e63b5909f091ce4b0b4ee0a9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/ef0b793fd403b6b5eea4d10c605f4901.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/b0f9106b54d34cfadda9e97dba89c5d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/8d21d5802dabb9df44c52471f9fcf168.jpeg
 Meta Title: Ruilang Model RL-6006S Rechargeable LED Flashlight And Emergency Wor
 Meta Description: Buy Ruilang Model RL-6006S Rechargeable LED Flashlight And Emergency Work Light - Lighting Product Designed For Illumination And Daily Lighting Routine online i
 Description: The Ruilang Model RL-6006S Rechargeable LED Flashlight And Emergency Work Light Is A Lighting Product Formulated To Help Provide Illumination And Daily Lighting Utility During Use.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

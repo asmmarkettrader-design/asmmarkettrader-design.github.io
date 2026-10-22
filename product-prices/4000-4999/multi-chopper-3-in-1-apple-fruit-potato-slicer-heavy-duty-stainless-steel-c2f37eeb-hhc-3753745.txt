@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi-Chopper 3 in 1 Apple, Fruit & Potato Slicer – Heavy-Duty Stainless Steel Cutter for Quick, Even Slicing | Kitchen Gadget for Fast Food Prep
 Product ID: hhc-3753745
 SKU: hhc-3753745
@@ -7,11 +8,16 @@ Slug: multi-chopper-3-in-1-apple-fruit-potato-slicer-heavy-duty-stainless-ste-c2
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/2866d908a586e2cee908bd2263b0da2c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/2866d908a586e2cee908bd2263b0da2c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/a3ace0fba2c8583a2540a3dacae5c112.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/403af7b278a0694088278e7a4c735f57.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/3175bde0fc16f1ceee4dbf61f51576e7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/ea202d4f8c032682cfa414d833c2e186.jpeg
 Meta Title: Multi-Chopper 3 in 1 Apple, Fruit & Potato Slicer – Heavy-Duty Stain
 Meta Description: Buy Multi-Chopper 3 in 1 Apple, Fruit & Potato Slicer – Heavy-Duty Stainless Steel Cutter for Quick, Even Slicing | Kitchen Gadget for Fast Food Prep online in
 Description: A convenient 3-in-1 chopper designed for apples, fruits, and potatoes. Features sharp stainless-steel blades for fast, even slicing, making food prep easier and quicker. Ideal for everyday cooking and kitchen efficiency.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

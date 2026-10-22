@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Eye Lash Curler - Cosmetic Product Designed For Eye Care And Daily Makeup Routine (Random Color)
 Product ID: hhc-3763957
 SKU: hhc-3763957
@@ -7,11 +8,16 @@ Slug: professional-eye-lash-curler-cosmetic-product-designed-for-eye-care-and-07
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/b363de86c22c37f0ed2c853053e29d9f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/b363de86c22c37f0ed2c853053e29d9f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/06760f463133229d169405f9aadf3c41.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/c60c0b1b24ff4fe11c2f55dd2e31cabf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/5e3ddcf874ea666762ca896ba49762fe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/c1a89bb94fd891b3af5e0681886018cb.jpeg
 Meta Title: Professional Eye Lash Curler - Cosmetic Product Designed For Eye Car
 Meta Description: Buy Professional Eye Lash Curler - Cosmetic Product Designed For Eye Care And Daily Makeup Routine (Random Color) online in Pakistan from ASM VEO. The Professio
 Description: The Professional Eye Lash Curler Is A Cosmetic Product Formulated To Help Provide Eye Care And Daily Makeup Utility During Use.
-Regular Price: 326
-Sale Price: 326
+Wholesale Price: 276
+Regular Price: 624
+Sale Price: 474
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ABS Rear Trunk Lip Spoiler for Toyota Mark X (2004–2009 Models) – Simple Flush Profile
 Product ID: hhc-3764282
 SKU: hhc-3764282
@@ -7,11 +8,16 @@ Slug: abs-rear-trunk-lip-spoiler-for-toyota-mark-x-2004-2009-models-simple-fl-e6
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/f2a9b22b1043befc9526aacc61b3e7bf.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/f2a9b22b1043befc9526aacc61b3e7bf.jpeg
 Meta Title: ABS Rear Trunk Lip Spoiler for Toyota Mark X (2004–2009 Models) – Si
 Meta Description: Buy ABS Rear Trunk Lip Spoiler for Toyota Mark X (2004–2009 Models) – Simple Flush Profile online in Pakistan from ASM VEO. A sleek ABS plastic rear trunk lip s
 Description: A sleek ABS plastic rear trunk lip spoiler custom-designed for 2004–2009 Toyota Mark X (X120). Features a simple, low-profile flush fit that elevates rear exterior styling with a subtle, sporty look.
-Regular Price: 4551
-Sale Price: 4551
+Wholesale Price: 4551
+Regular Price: 7620
+Sale Price: 6096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

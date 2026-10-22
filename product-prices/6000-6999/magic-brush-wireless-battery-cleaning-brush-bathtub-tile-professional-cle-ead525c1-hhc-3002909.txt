@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magic Brush Wireless Battery Cleaning Brush Bathtub Tile Professional Cleaning Brush Rechargeable
 Product ID: hhc-3002909
 SKU: hhc-3002909
@@ -7,11 +8,16 @@ Slug: magic-brush-wireless-battery-cleaning-brush-bathtub-tile-professional-c-ea
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/c9cd30e76d78c1d3480cd5728884c2c7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/c9cd30e76d78c1d3480cd5728884c2c7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/1-52.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/51e-vroIcFL._AC_SX679_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/41kDavLQgeL._AC_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/51WefVweKKL._AC_.jpg
 Meta Title: Magic Brush Wireless Battery Cleaning Brush Bathtub Tile Professiona
 Meta Description: Buy Magic Brush Wireless Battery Cleaning Brush Bathtub Tile Professional Cleaning Brush Rechargeable online in Pakistan from ASM VEO. Magic Brush Wireless Batt
 Description: Magic Brush Wireless Battery Cleaning Brush Bathtub Tile Professional Cleaning Brush Rechargeable
-Regular Price: 1401
-Sale Price: 1401
+Wholesale Price: 1351
+Regular Price: 2470
+Sale Price: 1978
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

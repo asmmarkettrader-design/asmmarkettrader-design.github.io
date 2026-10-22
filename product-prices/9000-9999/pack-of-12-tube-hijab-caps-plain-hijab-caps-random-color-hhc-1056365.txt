@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 12 tube hijab caps plain hijab caps (random color)
 Product ID: hhc-1056365
 SKU: hhc-1056365
@@ -7,11 +8,16 @@ Slug: pack-of-12-tube-hijab-caps-plain-hijab-caps-random-color-hhc-1056365
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/4829ee27-54c8-452f-9d59-8f571c929cfd-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/4829ee27-54c8-452f-9d59-8f571c929cfd-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/0b5768a5-4554-4887-967e-402db96a27f3-1.jpeg
 Meta Title: Pack of 12 tube hijab caps plain hijab caps (random color) | Buy Onl
 Meta Description: Buy Pack of 12 tube hijab caps plain hijab caps (random color) online in Pakistan from ASM VEO. Pack of 12 tube hijab caps plain hijab caps (random color) Cash
 Description: Pack of 12 tube hijab caps plain hijab caps (random color)
-Regular Price: 1260
-Sale Price: 1260
+Wholesale Price: 1210
+Regular Price: 2220
+Sale Price: 1778
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

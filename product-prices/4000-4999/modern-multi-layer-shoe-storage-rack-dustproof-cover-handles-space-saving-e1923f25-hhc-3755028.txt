@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern Multi‑Layer Shoe Storage Rack | Dustproof Cover & Handles | Space‑Saving Organizer
 Product ID: hhc-3755028
 SKU: hhc-3755028
@@ -7,11 +8,16 @@ Slug: modern-multi-layer-shoe-storage-rack-dustproof-cover-handles-space-savi-e1
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/ec4cf9f01a73abb74dc253b1f2e480f8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/ec4cf9f01a73abb74dc253b1f2e480f8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/03/88a1d15335bc65ede9b73b46ef75d3a5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/69404fc6a575d1de05946a65a0718820.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/cf41856504f48da24ba857d62f93049b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/47bf35c6d41fc3985a083bd22bfba7f3.jpg
 Meta Title: Modern Multi‑Layer Shoe Storage Rack | Dustproof Cover & Handles | S
 Meta Description: Buy Modern Multi‑Layer Shoe Storage Rack | Dustproof Cover & Handles | Space‑Saving Organizer online in Pakistan from ASM VEO. Multi‑layer shoe storage rack wit
 Description: Multi‑layer shoe storage rack with dustproof cover and side handles. Modern design for organized, clean, and space‑saving storage.
-Regular Price: 3961
-Sale Price: 3961
+Wholesale Price: 3961
+Regular Price: 6660
+Sale Price: 5329
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

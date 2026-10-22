@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Structured Croc-Embossed Faux Leather Shoulder Bag with Gold-Tone Chain Accent and Geometric Clasp
 Product ID: hhc-3754451
 SKU: hhc-3754451
@@ -7,11 +8,16 @@ Slug: structured-croc-embossed-faux-leather-shoulder-bag-with-gold-tone-chain-9e
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/a67681ddd93cc9b288076101c4f14f03.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/a67681ddd93cc9b288076101c4f14f03.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/818139aeff8d81e7ad3e4d5ae42e5e90.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/01a02e1e9a0f197e30ac14d74614e4b0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/859034e41b2e0b6c715210865da1dbbe.jpeg
 Meta Title: Structured Croc-Embossed Faux Leather Shoulder Bag with Gold-Tone Ch
 Meta Description: Buy Structured Croc-Embossed Faux Leather Shoulder Bag with Gold-Tone Chain Accent and Geometric Clasp online in Pakistan from ASM VEO. A chic and stylish shoul
 Description: A chic and stylish shoulder bag featuring a luxurious crocodile-skin texture, a prominent front flap secured by a unique geometric gold-tone buckle, and a strap that elegantly combines smooth faux leather and an eye-catching gold chain. Perfect for adding a touch of sophistication to any outfit.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

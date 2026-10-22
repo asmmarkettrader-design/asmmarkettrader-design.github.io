@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 67W Pd 4.0 Qc3.0 Usb-C Fast Charger – High-Speed Charging Adapter With Compact And Durable Design
 Product ID: hhc-3755755
 SKU: hhc-3755755
@@ -7,11 +8,16 @@ Slug: 67w-pd-4-0-qc3-0-usb-c-fast-charger-high-speed-charging-adapter-with-co-e6
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/602bf632f1b9fc5575f21b5bf0ff853e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/602bf632f1b9fc5575f21b5bf0ff853e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/040c9d7061c30d76ccbb05e87c268101.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/b66dcada52c1679ab515bcd25303c12b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/fe93708dfc47a2d8cd4e043db5cf84db.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/e8240351db460697c440c40795793cab.png
 Meta Title: 67W Pd 4.0 Qc3.0 Usb-C Fast Charger – High-Speed Charging Adapter Wi
 Meta Description: Buy 67W Pd 4.0 Qc3.0 Usb-C Fast Charger – High-Speed Charging Adapter With Compact And Durable Design online in Pakistan from ASM VEO. 67W Pd 4.0 Qc3.0 Usb-C Fa
 Description: 67W Pd 4.0 Qc3.0 Usb-C Fast Charger Provides Efficient, Stable, And Quick Charging With A Compact And Durable Build.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

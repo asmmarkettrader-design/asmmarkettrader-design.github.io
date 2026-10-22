@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: set of 6 Motivational wooden canvas frames for wall decore / sticky phototiles frames
 Product ID: hhc-3289056
 SKU: hhc-3289056
@@ -7,11 +8,16 @@ Slug: set-of-6-motivational-wooden-canvas-frames-for-wall-decore-sticky-photo-3d
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: set of 6 Motivational wooden canvas frames for wall decore / sticky
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/8c5b6905bda87d6bf46f18fae9a7d965.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/8c5b6905bda87d6bf46f18fae9a7d965.jpeg
+Meta Title: set of 6 Motivational wooden canvas frames for wall decore / sticky 
 Meta Description: Buy set of 6 Motivational wooden canvas frames for wall decore / sticky phototiles frames online in Pakistan from ASM VEO. No of Frames: 8 Size 8x11inches Woode
 Description: No of Frames: 8 Size 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Beautiful islamic calligraphy designs which will give your enterior a spiritual vibe.
-Regular Price: 868
-Sale Price: 868
+Wholesale Price: 818
+Regular Price: 1560
+Sale Price: 1246
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

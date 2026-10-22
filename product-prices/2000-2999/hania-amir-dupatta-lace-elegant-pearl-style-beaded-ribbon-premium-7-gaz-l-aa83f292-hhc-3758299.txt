@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hania Amir Dupatta Lace | Elegant Pearl-Style Beaded Ribbon | Premium 7 Gaz Length For Bridal & Party Wear
 Product ID: hhc-3758299
 SKU: hhc-3758299
@@ -7,11 +8,16 @@ Slug: hania-amir-dupatta-lace-elegant-pearl-style-beaded-ribbon-premium-7-gaz-aa
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/849974588edf4b1b26af854fc7f09562.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/849974588edf4b1b26af854fc7f09562.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/575abc988e962851bfc3bba824061855.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/1bb6aeeb3d739de1382cbd9eb8ed9e12.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/30/37aa768f0af25d46d69d411aa40cb3c1.jpeg
 Meta Title: Hania Amir Dupatta Lace | Elegant Pearl-Style Beaded Ribbon | Premiu
 Meta Description: Buy Hania Amir Dupatta Lace | Elegant Pearl-Style Beaded Ribbon | Premium 7 Gaz Length For Bridal & Party Wear online in Pakistan from ASM VEO. Hania Amir Dupat
 Description: Hania Amir Dupatta Lace 7 Gaz With Pearl-Style Beads On Sheer Ribbon For Elegant Borders & Dress Embellishments
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

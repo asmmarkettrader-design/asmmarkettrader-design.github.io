@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Urdu Huroof Tracing Board – MDF Wood Alphabet Learning & Writing Practice Toy
 Product ID: hhc-3763819
 SKU: hhc-3763819
@@ -7,11 +8,16 @@ Slug: urdu-huroof-tracing-board-mdf-wood-alphabet-learning-writing-practice-toy-
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/e723f2fa7a4dbf60b26c2b7294d38df6.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/e723f2fa7a4dbf60b26c2b7294d38df6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/735ed497644afe61df7c7dc51d3944e1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/efba0f9683630ef859401bf3d16a77d8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/14/45053a0d947bc41fa49424d869ca2070.png
 Meta Title: Urdu Huroof Tracing Board – MDF Wood Alphabet Learning & Writing Pra
 Meta Description: Buy Urdu Huroof Tracing Board – MDF Wood Alphabet Learning & Writing Practice Toy online in Pakistan from ASM VEO. A wooden Urdu alphabet tracing board designed
 Description: A wooden Urdu alphabet tracing board designed to help kids learn, recognize, and practice Urdu Huroof through hands-on writing activities.
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

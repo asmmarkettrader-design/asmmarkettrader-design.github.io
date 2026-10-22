@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M90 Pro Gaming Earbuds – Bluetooth 5.3 Wireless Earphones with ENC Noise Reduction
 Product ID: hhc-3752812
 SKU: hhc-3752812
@@ -7,11 +8,16 @@ Slug: m90-pro-gaming-earbuds-bluetooth-5-3-wireless-earphones-with-enc-noise-red
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/5f8bc9ad17712da6fd95ab25e5af0e93.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/5f8bc9ad17712da6fd95ab25e5af0e93.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/9438c4420c33c71a8135cec2cfca359e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/5e795c8b286ca6e15f2fa08bade23624.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/d996c61896a21bfafee9ff6796a2a846.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/c42b1bcb1a8f4b8d6b7e819b8f681647.png
 Meta Title: M90 Pro Gaming Earbuds – Bluetooth 5.3 Wireless Earphones with ENC N
 Meta Description: Buy M90 Pro Gaming Earbuds – Bluetooth 5.3 Wireless Earphones with ENC Noise Reduction online in Pakistan from ASM VEO. Experience next-level sound with M90 Pro
 Description: Experience next-level sound with M90 Pro Gaming Earbuds — featuring Bluetooth 5.3, ENC noise reduction, IPX5 waterproofing, and a smart digital display for real-time battery tracking. Designed for gamers who demand performance, comfort, and style.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 PCs Bridal Satin Nighty Set with Matching Thong & Bralette Free Size
 Product ID: hhc-3759733
 SKU: hhc-3759733
@@ -7,11 +8,16 @@ Slug: 6-pcs-bridal-satin-nighty-set-with-matching-thong-bralette-free-size-hhc-3
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/f3cdcc4a1c3a58174718b125458bb182.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/22/f3cdcc4a1c3a58174718b125458bb182.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/716de26c966314ee6f37a3e6769e4b3e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/3a1b085a917226e1bfe3280f1da3666d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/b479ae295799b5cae6876f8aaac21c73.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/155320008de5b8400543a06887feea49.jpeg
 Meta Title: 6 PCs Bridal Satin Nighty Set with Matching Thong & Bralette Free Si
 Meta Description: Buy 6 PCs Bridal Satin Nighty Set with Matching Thong & Bralette Free Size online in Pakistan from ASM VEO. Feel elegant and confident with this luxurious 6-pie
 Description: Feel elegant and confident with this luxurious 6-piece bridal nighty set made from soft satin fabric. Designed with a stylish bralette, matching thong, and elegant nightwear pieces, this set offers both comfort and beauty for special nights and everyday glamour.
-Regular Price: 3920
-Sale Price: 3920
+Wholesale Price: 3920
+Regular Price: 6600
+Sale Price: 5276
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

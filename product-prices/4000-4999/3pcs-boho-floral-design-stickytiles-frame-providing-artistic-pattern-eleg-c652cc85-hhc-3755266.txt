@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Boho Floral Design Stickytiles Frame Providing Artistic Pattern Elegant Look Durable Quality
 Product ID: hhc-3755266
 SKU: hhc-3755266
@@ -7,11 +8,16 @@ Slug: 3pcs-boho-floral-design-stickytiles-frame-providing-artistic-pattern-el-c6
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/0e37428660eb726042f5ae40c722aac2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/0e37428660eb726042f5ae40c722aac2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/a12beffb762e3316141592408b1e8f22.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/cf29e29e8859e3c0ba5dffd8229d406d.jpeg
 Meta Title: 3pcs Boho Floral Design Stickytiles Frame Providing Artistic Pattern
 Meta Description: Buy 3pcs Boho Floral Design Stickytiles Frame Providing Artistic Pattern Elegant Look Durable Quality online in Pakistan from ASM VEO. 3pcs Boho Floral Design S
 Description: 3pcs Boho Floral Design Stickytiles Frame Offering Artistic Pattern Elegant Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 586
-Sale Price: 586
+Wholesale Price: 536
+Regular Price: 1050
+Sale Price: 837
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

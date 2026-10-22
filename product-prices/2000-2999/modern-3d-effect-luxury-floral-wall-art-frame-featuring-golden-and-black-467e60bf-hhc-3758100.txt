@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern 3D Effect Luxury Floral Wall Art Frame Featuring Golden and Black Tulips Abstract Oil Painting Style Decor Size 12x16 with Double Sided Tape
 Product ID: hhc-3758100
 SKU: hhc-3758100
@@ -7,11 +8,16 @@ Slug: modern-3d-effect-luxury-floral-wall-art-frame-featuring-golden-and-blac-46
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/9e754a5a19f127ba6dedcc73a236177e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/9e754a5a19f127ba6dedcc73a236177e.jpeg
 Meta Title: Modern 3D Effect Luxury Floral Wall Art Frame Featuring Golden and B
 Meta Description: Buy Modern 3D Effect Luxury Floral Wall Art Frame Featuring Golden and Black Tulips Abstract Oil Painting Style Decor Size 12x16 with Double Sided Tape online i
 Description: Enhance your home interior with this premium 12x16 inch luxury floral wall frame. Featuring a stunning 3D-effect design of golden, black, and white tulips, this single-piece artwork adds a sophisticated and artistic touch to any modern living room or office space.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

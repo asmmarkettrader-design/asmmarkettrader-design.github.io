@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ASOS 45W USB Adapter – Fast & Reliable Charging Power
 Product ID: hhc-3756375
 SKU: hhc-3756375
@@ -7,11 +8,16 @@ Slug: asos-45w-usb-adapter-fast-reliable-charging-power-hhc-3756375
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/12363ec42b61d36fc43ea0b31b60e63b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/12363ec42b61d36fc43ea0b31b60e63b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/a41320e1e8a84179d4236b442343ecae.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/3ce9cae82dbb11cb7aeccba76c824d49.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/50148dc7d1ff7ccb07b44171605efd2f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/1cfd76bbc9212709b81592d168a50195.jpeg
 Meta Title: ASOS 45W USB Adapter – Fast & Reliable Charging Power | Buy Online i
 Meta Description: Buy ASOS 45W USB Adapter – Fast & Reliable Charging Power online in Pakistan from ASM VEO. Compact and powerful 45W USB adapter made in China, designed for fast
 Description: Compact and powerful 45W USB adapter made in China, designed for fast, safe, and efficient charging of smartphones, tablets, and compatible USB-powered devices.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

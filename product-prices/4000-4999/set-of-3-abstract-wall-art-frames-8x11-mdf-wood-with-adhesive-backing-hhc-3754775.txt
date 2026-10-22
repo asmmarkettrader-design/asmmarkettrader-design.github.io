@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Abstract Wall Art Frames – 8x11" MDF Wood with Adhesive Backing
 Product ID: hhc-3754775
 SKU: hhc-3754775
@@ -7,11 +8,16 @@ Slug: set-of-3-abstract-wall-art-frames-8x11-mdf-wood-with-adhesive-backing-hhc-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/bd35d1e662d92b64e73adfd06ac1413f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/bd35d1e662d92b64e73adfd06ac1413f.jpg
 Meta Title: Set of 3 Abstract Wall Art Frames – 8x11" MDF Wood with Adhesive Bac
 Meta Description: Buy Set of 3 Abstract Wall Art Frames – 8x11" MDF Wood with Adhesive Backing online in Pakistan from ASM VEO. Set of 3 abstract MDF wood wall art frames with ad
 Description: Set of 3 abstract MDF wood wall art frames with adhesive backing. Ready to mount, 8x11" each.
-Regular Price: 473
-Sale Price: 473
+Wholesale Price: 423
+Regular Price: 870
+Sale Price: 694
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

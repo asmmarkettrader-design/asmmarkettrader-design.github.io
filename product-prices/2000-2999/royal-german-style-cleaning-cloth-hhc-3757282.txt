@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal German Style Cleaning Cloth
 Product ID: hhc-3757282
 SKU: hhc-3757282
@@ -7,11 +8,16 @@ Slug: royal-german-style-cleaning-cloth-hhc-3757282
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/395cdb353fd47bfcb7f43112bc7ae1a6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/395cdb353fd47bfcb7f43112bc7ae1a6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/ed863ac893bb988c0c0d66156a0066af.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/85447bf447968082bf68d53b14b50363.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/1716a784feaccc0b0129a6c666c0011e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/618f839a9a7df61a57ed46f1c00b9f37.jpg
 Meta Title: Royal German Style Cleaning Cloth | Buy Online in Pakistan
 Meta Description: Buy Royal German Style Cleaning Cloth online in Pakistan from ASM VEO. Upgrade your cleaning routine with this premium German-style cleaning cloth, designed for
 Description: Upgrade your cleaning routine with this premium German-style cleaning cloth, designed for powerful absorption and streak-free results. Made from high-quality material, it easily wipes away dirt, grease, and spills from kitchen surfaces, dishes, glass, and more.
-Regular Price: 285
-Sale Price: 285
+Wholesale Price: 235
+Regular Price: 562
+Sale Price: 412
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

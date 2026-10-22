@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pearl Latkan Hanging Lace Border for Dupatta & Dress Decoration – 1 Gaz (Approx. 1 Yard)
 Product ID: hhc-3752461
 SKU: hhc-3752461
@@ -7,11 +8,16 @@ Slug: pearl-latkan-hanging-lace-border-for-dupatta-dress-decoration-1-gaz-app-b6
 Category: Beauty & Personal Care
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Pearl Latkan Hanging Lace Border for Dupatta & Dress Decoration – 1
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/bd521c67c31526a172585a7442d7d3f4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/bd521c67c31526a172585a7442d7d3f4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/605ffa7724fb2adbf730a5e61b025020.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/546b4dff025ec340d965d4f9d03a9bd8.png
+Meta Title: Pearl Latkan Hanging Lace Border for Dupatta & Dress Decoration – 1 
 Meta Description: Buy Pearl Latkan Hanging Lace Border for Dupatta & Dress Decoration – 1 Gaz (Approx. 1 Yard) online in Pakistan from ASM VEO. Elegant Pearl Latkan Hanging Lace
 Description: Elegant Pearl Latkan Hanging Lace – 1 Gaz (Approx. 1 Yard). Perfect for dupattas, saree borders, shirts & dresses. Easy to stitch, durable, and adds a graceful festive touch.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Elegant 3-Piece Floral Wall Frame Set – White Blossoms & Teal Vase Art
 Product ID: hhc-3757978
 SKU: hhc-3757978
@@ -7,11 +8,16 @@ Slug: elegant-3-piece-floral-wall-frame-set-white-blossoms-teal-vase-art-hhc-375
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/bc30ca5db53940af330392ce9e4f0f81.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/bc30ca5db53940af330392ce9e4f0f81.jpeg
 Meta Title: Elegant 3-Piece Floral Wall Frame Set – White Blossoms & Teal Vase A
 Meta Description: Buy Elegant 3-Piece Floral Wall Frame Set – White Blossoms & Teal Vase Art online in Pakistan from ASM VEO. Add timeless charm to your home with this 3-piece fl
 Description: Add timeless charm to your home with this 3-piece flower wall frame set. Featuring delicate white blossoms, lush green leaves, and teal vase accents, these ready-to-hang frames bring sophistication to living rooms, bedrooms, or lounges.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

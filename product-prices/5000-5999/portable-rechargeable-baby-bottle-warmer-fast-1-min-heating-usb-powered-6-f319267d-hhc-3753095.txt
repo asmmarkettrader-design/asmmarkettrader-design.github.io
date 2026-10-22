@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Rechargeable Baby Bottle Warmer | Fast 1-Min Heating, USB Powered, 6 Temperature Levels – Mini & Travel-Friendly Milk Heater for Babies
 Product ID: hhc-3753095
 SKU: hhc-3753095
@@ -7,11 +8,16 @@ Slug: portable-rechargeable-baby-bottle-warmer-fast-1-min-heating-usb-powered-f3
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/d0f8a78fcd02194c6e1b761e03aacb61.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/14/d0f8a78fcd02194c6e1b761e03aacb61.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/8b017043deca9a6878704c745ba59e25.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/6ca7ed1c489f00fb5014f053e70f8e52.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/ec1420d52d11e528d908b41dd9138071.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/30/be55b985afe4ca683520a24c0424f97f.jpg
 Meta Title: Portable Rechargeable Baby Bottle Warmer | Fast 1-Min Heating, USB P
 Meta Description: Buy Portable Rechargeable Baby Bottle Warmer | Fast 1-Min Heating, USB Powered, 6 Temperature Levels – Mini & Travel-Friendly Milk Heater for Babies online in P
 Description: Fast 1-min heating, 6 temperature levels, and USB rechargeable design make this portable baby bottle warmer perfect for home or travel — easy, quick, and convenient feeding anywhere.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

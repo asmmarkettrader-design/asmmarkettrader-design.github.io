@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Anti Wrinkle Vitamin Urea Cream For Smooth Skin, Gentle Care, Easy Application, And Daily Use At Home Or Travel (150 gm)
 Product ID: hhc-3753662
 SKU: hhc-3753662
@@ -7,11 +8,16 @@ Slug: anti-wrinkle-vitamin-urea-cream-for-smooth-skin-gentle-care-easy-applic-cc
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/9ad27492124b964c1c1cbf4f3ef29725.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/9ad27492124b964c1c1cbf4f3ef29725.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/e2d43752a23313b5fa91997c6d4cc20c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/bc1db81d2686f79b6c5c6575c1febc90.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/f43003453f2fd7cd932b60111a578610.jpeg
 Meta Title: Anti Wrinkle Vitamin Urea Cream For Smooth Skin, Gentle Care, Easy A
 Meta Description: Buy Anti Wrinkle Vitamin Urea Cream For Smooth Skin, Gentle Care, Easy Application, And Daily Use At Home Or Travel (150 gm) online in Pakistan from ASM VEO. An
 Description: Anti Wrinkle Vitamin Urea Cream Designed For Gentle And Effective Daily Skin Care
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

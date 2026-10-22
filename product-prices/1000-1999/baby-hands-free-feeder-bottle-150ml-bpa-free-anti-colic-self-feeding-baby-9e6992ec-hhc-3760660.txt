@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Baby Hands-Free Feeder Bottle 150ml | BPA-Free Anti-Colic Self Feeding Baby Bottle with Straw Brush (Random Color)
 Product ID: hhc-3760660
 SKU: hhc-3760660
@@ -7,11 +8,16 @@ Slug: baby-hands-free-feeder-bottle-150ml-bpa-free-anti-colic-self-feeding-ba-9e
 Category: Kids Accessories
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/6e8328dc4eb700856d2084555d9a7918.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/6e8328dc4eb700856d2084555d9a7918.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/9838ee8049504e69f12d3f88d634429e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/d0a9672928ac207a28410e32adcb2798.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/be884a2cd08d85442472ee69378eed27.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/4faf3caa5faf4bf0055c424c81c79dee.jpeg
 Meta Title: Baby Hands-Free Feeder Bottle 150ml | BPA-Free Anti-Colic Self Feedi
 Meta Description: Buy Baby Hands-Free Feeder Bottle 150ml | BPA-Free Anti-Colic Self Feeding Baby Bottle with Straw Brush (Random Color) online in Pakistan from ASM VEO. Make fee
 Description: Make feeding easier with this Hands-Free Baby Feeder Bottle. Designed for busy parents, travel, stroller use, and car rides, it features a BPA-free anti-colic design, 150ml capacity, and comfortable feeding system for babies 3 months and above. Includes a cleaning brush for easy maintenance.
-Regular Price: 1520
-Sale Price: 1520
+Wholesale Price: 1520
+Regular Price: 2790
+Sale Price: 2232
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Matte Lipstick Set, Pack of 6
 Product ID: hhc-1922016
 SKU: hhc-1922016
@@ -7,11 +8,16 @@ Slug: matte-lipstick-set-pack-of-6-hhc-1922016
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-9.51.59-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-9.51.59-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-16-at-9.51.59-PM.jpeg
 Meta Title: Matte Lipstick Set, Pack of 6 | Buy Online in Pakistan
 Meta Description: Buy Matte Lipstick Set, Pack of 6 online in Pakistan from ASM VEO. Matte Lipstick Set, Pack of 6 * Texture: Matte * Elevate Your Look with Heng Fang 6 pcs Ma Ca
 Description: Matte Lipstick Set, Pack of 6 * Texture: Matte * Elevate Your Look with Heng Fang 6 pcs Matte Lipstick Set! * 6 stunning shades for every occasion * Package Includes: 6 × Matte Lipstick
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

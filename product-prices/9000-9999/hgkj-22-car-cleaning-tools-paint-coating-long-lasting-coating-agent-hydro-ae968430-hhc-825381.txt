@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HGKJ-22 Car Cleaning Tools, Paint Coating, Long-lasting Coating Agent, Hydrophobic Coating - 50Ml
 Product ID: hhc-825381
 SKU: hhc-825381
@@ -7,11 +8,16 @@ Slug: hgkj-22-car-cleaning-tools-paint-coating-long-lasting-coating-agent-hyd-ae
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/58bfd916-3f2c-414d-ac2a-197644fa9952.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/58bfd916-3f2c-414d-ac2a-197644fa9952.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/5b9f3563-b3e6-42ad-b18c-636400822f24.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/3cc7620f-bc37-45f4-9974-107bb43a50d1.jpeg
 Meta Title: HGKJ-22 Car Cleaning Tools, Paint Coating, Long-lasting Coating Agen
 Meta Description: Buy HGKJ-22 Car Cleaning Tools, Paint Coating, Long-lasting Coating Agent, Hydrophobic Coating - 50Ml online in Pakistan from ASM VEO. HGKJ-22 Hydrophobic Coati
 Description: HGKJ-22 Hydrophobic Coating Agent delivers long-lasting shine and water-repellent protection for your car’s paint, tires, and exterior surfaces. Easy to apply and perfect for maintaining a clean glossy finish.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

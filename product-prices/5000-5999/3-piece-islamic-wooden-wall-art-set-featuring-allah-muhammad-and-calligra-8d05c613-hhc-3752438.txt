@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-Piece Islamic Wooden Wall Art Set Featuring Allah, Muhammad And Calligraphy Design | Available In 8x11 And 12x16 Inches | Double Tape Included For Easy Mounting
 Product ID: hhc-3752438
 SKU: hhc-3752438
@@ -7,11 +8,16 @@ Slug: 3-piece-islamic-wooden-wall-art-set-featuring-allah-muhammad-and-callig-8d
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/9b228598d9757168741c8db7e1b73a0b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/9b228598d9757168741c8db7e1b73a0b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/10/82bc29d020d6688f3ed14be19c18a1ca.mp4
 Meta Title: 3-Piece Islamic Wooden Wall Art Set Featuring Allah, Muhammad And Ca
 Meta Description: Buy 3-Piece Islamic Wooden Wall Art Set Featuring Allah, Muhammad And Calligraphy Design | Available In 8x11 And 12x16 Inches | Double Tape Included For Easy Mo
 Description: Elegant 3-Piece Islamic Wall Art With “Allah”, “Muhammad”, And Intricate Calligraphy, Crafted On Wooden Frames With Easy-To-Install Double Tape
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

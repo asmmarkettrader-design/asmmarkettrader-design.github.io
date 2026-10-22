@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Professional Apple Finger Wax For Hair Removal Comfortable Use Smooth Application For Grooming Needs - 300ML
 Product ID: hhc-3754252
 SKU: hhc-3754252
@@ -7,11 +8,16 @@ Slug: yardlie-professional-apple-finger-wax-for-hair-removal-comfortable-use-89c
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/2e87b4cc109a5dd789589161508f0c7a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/2e87b4cc109a5dd789589161508f0c7a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/1193a34fa382cd0a4fdf92a773526b69.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/df3d5229b95eb8ef9095888c20f6afef.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/71a756184744904b2d254e7deb32a428.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/01beeb97fb21d1ab949927c3d4d3222c.jpeg
 Meta Title: Yardlie Professional Apple Finger Wax For Hair Removal Comfortable U
 Meta Description: Buy Yardlie Professional Apple Finger Wax For Hair Removal Comfortable Use Smooth Application For Grooming Needs - 300ML online in Pakistan from ASM VEO. Yardli
 Description: Yardlie Professional Apple Finger Wax Provides Durable Quality Reliable Utility Comfortable Use Smooth Application And Compact Design
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

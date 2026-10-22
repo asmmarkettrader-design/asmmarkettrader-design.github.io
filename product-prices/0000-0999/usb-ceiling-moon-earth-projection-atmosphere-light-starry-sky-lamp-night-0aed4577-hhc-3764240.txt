@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: USB Ceiling Moon Earth Projection Atmosphere Light Starry Sky Lamp Night Light Romantic Bedroom Decoration Projector With 3 Lenses
 Product ID: hhc-3764240
 SKU: hhc-3764240
@@ -7,11 +8,16 @@ Slug: usb-ceiling-moon-earth-projection-atmosphere-light-starry-sky-lamp-nigh-0a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/f6144ed4667e366fb42428060cfc85c5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/f6144ed4667e366fb42428060cfc85c5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/2a47b996028556dffd17b5b394403aa0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/a9822545279541a6b877ccb417c14b3a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/247e35c1f9c1ba801db06c3fdd45812d.jpg
 Meta Title: USB Ceiling Moon Earth Projection Atmosphere Light Starry Sky Lamp N
 Meta Description: Buy USB Ceiling Moon Earth Projection Atmosphere Light Starry Sky Lamp Night Light Romantic Bedroom Decoration Projector With 3 Lenses online in Pakistan from A
 Description: Compact and stylish, this lamp is ideal for romantic settings, children’s rooms, or creative décor. A practical choice for individuals seeking both aesthetic appeal and soothing illumination.
-Regular Price: 760
-Sale Price: 760
+Wholesale Price: 710
+Regular Price: 1360
+Sale Price: 1090
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

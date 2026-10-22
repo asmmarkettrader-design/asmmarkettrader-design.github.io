@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kpop Korean Style Very Light Weight Earrings Pair For Kpop Fans
 Product ID: hhc-3763006
 SKU: hhc-3763006
@@ -7,11 +8,16 @@ Slug: kpop-korean-style-very-light-weight-earrings-pair-for-kpop-fans-hhc-376300
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/9640acde50075919ef826a4f4dde382e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/9640acde50075919ef826a4f4dde382e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/7d6c369a4775f9efeb54cf245f563e71.jpg
 Meta Title: Kpop Korean Style Very Light Weight Earrings Pair For Kpop Fans | Bu
 Meta Description: Buy Kpop Korean Style Very Light Weight Earrings Pair For Kpop Fans online in Pakistan from ASM VEO. These Earrings are specialy made for them who cant wear hea
 Description: These Earrings are specialy made for them who cant wear heavyweight earrgins they are very light and no wieght
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

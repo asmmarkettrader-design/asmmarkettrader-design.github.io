@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Holydeer 7.5% nHAP Nano-Hydroxyapatite Recovery + Toothpaste – Fluoride-Free Sensitivity & Whitening Care - 120g
 Product ID: hhc-3758465
 SKU: hhc-3758465
@@ -7,11 +8,16 @@ Slug: holydeer-7-5-nhap-nano-hydroxyapatite-recovery-toothpaste-fluoride-free-21
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/62f3763aaa4b72d5998b484d66023510.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/62f3763aaa4b72d5998b484d66023510.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/315926f6657311a1e7ecb9c0b981a414.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/131dde9776c9a09243d3e4668b2f35ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/bba4e210ca15c1fca853d349695c5694.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/28cc8fd11c177af55b05dfeda90b4e9f.jpeg
 Meta Title: Holydeer 7.5% nHAP Nano-Hydroxyapatite Recovery + Toothpaste – Fluor
 Meta Description: Buy Holydeer 7.5% nHAP Nano-Hydroxyapatite Recovery + Toothpaste – Fluoride-Free Sensitivity & Whitening Care - 120g online in Pakistan from ASM VEO. Revitalize
 Description: Revitalize your oral health with Holydeer Nano-Hydroxyapatite Toothpaste. Featuring a 7.5% nHAP concentration, this fluoride-free formula is designed to strengthen enamel, reduce sensitivity, and naturally whiten teeth with a refreshing mint flavor.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

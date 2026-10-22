@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Car Windshield Sun Shade Umbrella – Foldable UV Reflector & Heat Insulation Cover
 Product ID: hhc-3758645
 SKU: hhc-3758645
@@ -7,11 +8,16 @@ Slug: premium-car-windshield-sun-shade-umbrella-foldable-uv-reflector-heat-in-7e
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Premium Car Windshield Sun Shade Umbrella – Foldable UV Reflector &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/264a16154b5ad8fba08ec55bc9506a41.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/264a16154b5ad8fba08ec55bc9506a41.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/3f2e7e9f4308929a03c6697393322c4f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/be7023e73d735f3ec938d70847a6cab3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/1bd1cef3fe4179ddb0fdc8d475a817bf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/d30acfa4c22a7fe8410272c0f0c82d4d.jpeg
+Meta Title: Premium Car Windshield Sun Shade Umbrella – Foldable UV Reflector & 
 Meta Description: Buy Premium Car Windshield Sun Shade Umbrella – Foldable UV Reflector & Heat Insulation Cover online in Pakistan from ASM VEO. Keep your car cool even in the ho
 Description: Keep your car cool even in the hottest weather with this Car Sun Shade Umbrella. Designed like a traditional umbrella for easy use, it blocks harmful UV rays and reflects heat to protect your car’s interior from aging and overheating.
-Regular Price: 1211
-Sale Price: 1211
+Wholesale Price: 1161
+Regular Price: 2140
+Sale Price: 1709
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

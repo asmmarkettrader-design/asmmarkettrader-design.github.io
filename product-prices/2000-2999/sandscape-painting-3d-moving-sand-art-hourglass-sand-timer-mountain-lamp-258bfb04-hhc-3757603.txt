@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sandscape Painting 3D Moving Sand Art Hourglass Sand Timer Mountain Lamp With Metal Stand Home Decoration | Random Color
 Product ID: hhc-3757603
 SKU: hhc-3757603
@@ -7,11 +8,16 @@ Slug: sandscape-painting-3d-moving-sand-art-hourglass-sand-timer-mountain-lam-25
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Sandscape Painting 3D Moving Sand Art Hourglass Sand Timer Mountain
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/d9e3ea0b4d3d913ebeb64ec29d231516.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/d9e3ea0b4d3d913ebeb64ec29d231516.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/f4477052b9c8338c7a8ec9b6822bafee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/40970bb80ae8353bcc7d97d4f391d29a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/3b4275530a08332f43e03617b4d92bc3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/ac76f9db800580bfe50e52f23aa64210.jpg
+Meta Title: Sandscape Painting 3D Moving Sand Art Hourglass Sand Timer Mountain 
 Meta Description: Buy Sandscape Painting 3D Moving Sand Art Hourglass Sand Timer Mountain Lamp With Metal Stand Home Decoration | Random Color online in Pakistan from ASM VEO. Sa
 Description: Sandscape Painting 3D Moving Sand Art Hourglass Sand Timer Mountain Lamp With Metal Stand Home Decoration.
-Regular Price: 1182
-Sale Price: 1182
+Wholesale Price: 1132
+Regular Price: 2080
+Sale Price: 1667
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

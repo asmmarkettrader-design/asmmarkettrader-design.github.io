@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Oil Bottle Set 4 Piece Daisy Glass Spice Set With 3 Spice Jars 180ml And 1 Oil Bottle 750ml
 Product ID: hhc-3757085
 SKU: hhc-3757085
@@ -7,11 +8,16 @@ Slug: oil-bottle-set-4-piece-daisy-glass-spice-set-with-3-spice-jars-180ml-an-51
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/ee7e16f3574c75f044950218fb464449.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/ee7e16f3574c75f044950218fb464449.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/1b06038cd9329b2f7d77655da5c3e0a9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/dc46fe3d69c6e625897ccd1c8196c7c9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/5a84a159c64917da4f6c36e5477b9220.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/25a6604b372148534c1318731ef5c1a2.webp
 Meta Title: Oil Bottle Set 4 Piece Daisy Glass Spice Set With 3 Spice Jars 180ml
 Meta Description: Buy Oil Bottle Set 4 Piece Daisy Glass Spice Set With 3 Spice Jars 180ml And 1 Oil Bottle 750ml online in Pakistan from ASM VEO. Elegant Daisy Glass Spice Set W
 Description: Elegant Daisy Glass Spice Set With 3 Spice Jars And 1 Oil Bottle Perfect For Organizing Seasonings And Enhancing Kitchen Style.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

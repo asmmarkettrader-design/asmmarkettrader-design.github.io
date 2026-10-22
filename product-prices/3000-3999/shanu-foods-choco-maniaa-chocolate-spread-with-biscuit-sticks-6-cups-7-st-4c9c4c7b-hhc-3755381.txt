@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shanu Foods Choco Maniaa | Chocolate Spread with Biscuit Sticks | 6 Cups | 7 Sticks in 1 Cup
 Product ID: hhc-3755381
 SKU: hhc-3755381
@@ -7,11 +8,16 @@ Slug: shanu-foods-choco-maniaa-chocolate-spread-with-biscuit-sticks-6-cups-7-4c9
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/f01a4bda69b530d8cde3844c753218e3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/f01a4bda69b530d8cde3844c753218e3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/2f962485a777b8bb6f6fcf44fa0995be.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/f68dd38c261f314208c8de37526f7b30.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/ee42aa8000132960c36f46e6c7335686.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/de5bac801a026ad2a42ddafc81189152.jpeg
 Meta Title: Shanu Foods Choco Maniaa | Chocolate Spread with Biscuit Sticks | 6
 Meta Description: Buy Shanu Foods Choco Maniaa | Chocolate Spread with Biscuit Sticks | 6 Cups | 7 Sticks in 1 Cup online in Pakistan from ASM VEO. Choco Maniaa by Shanu Foods. C
 Description: Choco Maniaa by Shanu Foods. Chocolate spread with biscuit sticks, 6 cups per box, available in flavors, 7 Sticks in 1 Cup
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

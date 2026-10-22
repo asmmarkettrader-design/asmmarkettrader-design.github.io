@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MONEY SAFE / BANK Creative Money Box ATM
 Product ID: hhc-2397298
 SKU: hhc-2397298
@@ -7,11 +8,16 @@ Slug: money-safe-bank-creative-money-box-atm-hhc-2397298
 Category: Toys & Games
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/3_cec6e328-6d34-4504-a892-5fefa0328753.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/3_cec6e328-6d34-4504-a892-5fefa0328753.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/6_eac30c1e-3429-48b5-acec-6242f8112688_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/IMG_20241202_113452_029-scaled-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/IMG_20241202_113407_495-scaled-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/3_8157a01c-e306-4567-86f0-054ceb611ba7_cleanup.png
 Meta Title: MONEY SAFE / BANK Creative Money Box ATM | Buy Online in Pakistan
 Meta Description: Buy MONEY SAFE / BANK Creative Money Box ATM online in Pakistan from ASM VEO. Money bank Cash on Delivery, Rs 180 standard delivery, and easy returns.
 Description: Money bank
-Regular Price: 2726
-Sale Price: 2726
+Wholesale Price: 2726
+Regular Price: 4820
+Sale Price: 3860
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MUSCLETECH NITRO-TECH 100% Whey Gold Protein Powder 2lbs – Premium Whey Blend for Muscle Recovery & Lean Muscle Support
 Product ID: hhc-3759628
 SKU: hhc-3759628
@@ -7,11 +8,16 @@ Slug: muscletech-nitro-tech-100-whey-gold-protein-powder-2lbs-premium-whey-bl-f2
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/6d779d2060598fad374d0022c58c770d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/6d779d2060598fad374d0022c58c770d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/f4338f24a0d3e53823dbd389fe2efd0e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/c2b51a2aac42f492b323637104dba8d4.jpeg
 Meta Title: MUSCLETECH NITRO-TECH 100% Whey Gold Protein Powder 2lbs – Premium W
 Meta Description: Buy MUSCLETECH NITRO-TECH 100% Whey Gold Protein Powder 2lbs – Premium Whey Blend for Muscle Recovery & Lean Muscle Support online in Pakistan from ASM VEO. MUS
 Description: MUSCLETECH NITRO-TECH 100% Whey Gold Protein is a high-quality protein supplement designed to support muscle growth, strength, and post-workout recovery. Featuring a premium whey protein blend with fast absorption, this 2lbs pack is ideal for athletes, gym enthusiasts, and active lifestyles.
-Regular Price: 2865
-Sale Price: 2865
+Wholesale Price: 2865
+Regular Price: 5060
+Sale Price: 4048
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

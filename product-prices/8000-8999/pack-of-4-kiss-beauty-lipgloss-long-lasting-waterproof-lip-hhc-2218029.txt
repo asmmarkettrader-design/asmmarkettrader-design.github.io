@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 4 Kiss Beauty Lipgloss long lasting waterproof Lip
 Product ID: hhc-2218029
 SKU: hhc-2218029
@@ -7,11 +8,16 @@ Slug: pack-of-4-kiss-beauty-lipgloss-long-lasting-waterproof-lip-hhc-2218029
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/kissbeauty-74824-2064251-071024032849179.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/kissbeauty-74824-2064251-071024032849179.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/capture-74824-2064251-071024032443763.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/kissbeautylipgloss-74824-0-010524090901339.png
 Meta Title: Pack of 4 Kiss Beauty Lipgloss long lasting waterproof Lip | Buy Onl
 Meta Description: Buy Pack of 4 Kiss Beauty Lipgloss long lasting waterproof Lip online in Pakistan from ASM VEO. Product Detail Kiss Beauty Pack of 4 velvet texture and soft to
 Description: Product Detail Kiss Beauty Pack of 4 velvet texture and soft to the touch long lasting waterproof Lip Gloss high color saturation Matte velvet texture Smooth, soft, light, easy to blend with Durabie lipstick, long-lasting, waterproof, making your every day appear. perfect lips
-Regular Price: 783
-Sale Price: 783
+Wholesale Price: 733
+Regular Price: 1400
+Sale Price: 1123
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

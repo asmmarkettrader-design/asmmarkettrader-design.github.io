@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hudamoji Multi-Shade Butter Cocoa Matte Lip Gloss – Lightweight & Rich Color Collection (Pack Of 2)
 Product ID: hhc-3758418
 SKU: hhc-3758418
@@ -7,11 +8,16 @@ Slug: hudamoji-multi-shade-butter-cocoa-matte-lip-gloss-lightweight-rich-colo-3d
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/1e7d4884fde407807dee91c2cf3a2e6a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/1e7d4884fde407807dee91c2cf3a2e6a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/41bcefa694848a60a2d3e09205633017.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/d8aef6c141d5bdbadf8954222f24d7e3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/88b008d1af3f1a708cc684907c5a81b2.jpeg
 Meta Title: Hudamoji Multi-Shade Butter Cocoa Matte Lip Gloss – Lightweight & Ri
 Meta Description: Buy Hudamoji Multi-Shade Butter Cocoa Matte Lip Gloss – Lightweight & Rich Color Collection (Pack Of 2) online in Pakistan from ASM VEO. Achieve a smooth, velve
 Description: Achieve a smooth, velvety look with the Hudamoji Multi-Shade Butter Cocoa Matte Lip Gloss. This collection features a variety of buttery, lightweight shades that deliver rich color and a comfortable matte finish for effortless daily wear.
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

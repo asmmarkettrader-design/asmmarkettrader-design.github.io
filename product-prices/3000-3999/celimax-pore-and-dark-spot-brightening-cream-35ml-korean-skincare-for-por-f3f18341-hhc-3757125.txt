@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Celimax Pore And Dark Spot Brightening Cream 35ml Korean Skincare For Pore Refining Radiant Glow And Spot Removal - Made In Korea
 Product ID: hhc-3757125
 SKU: hhc-3757125
@@ -7,11 +8,16 @@ Slug: celimax-pore-and-dark-spot-brightening-cream-35ml-korean-skincare-for-p-f3
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/4eb14f126f901e6d1c1e4e640c56c5ab.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/4eb14f126f901e6d1c1e4e640c56c5ab.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/4395bf75118a2ba6aaf9fe47f005c425.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/18322837d5276ac7ffc26d24154086a0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/e2b113c26eefe15c2f6e7f94093e5309.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/4e3265a10fdd13c8037049c31dd736ed.jpg
 Meta Title: Celimax Pore And Dark Spot Brightening Cream 35ml Korean Skincare Fo
 Meta Description: Buy Celimax Pore And Dark Spot Brightening Cream 35ml Korean Skincare For Pore Refining Radiant Glow And Spot Removal - Made In Korea online in Pakistan from AS
 Description: Celimax Brightening Cream 35ml Korean Skincare Formula Designed For Pore Refining Dark Spot Removal And Achieving A Radiant Glow.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

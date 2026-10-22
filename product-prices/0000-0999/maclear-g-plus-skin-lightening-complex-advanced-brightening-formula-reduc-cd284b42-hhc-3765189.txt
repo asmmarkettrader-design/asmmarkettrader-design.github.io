@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Maclear G Plus Skin Lightening Complex Advanced Brightening Formula Reduces Dark Spots Restores Natural Glow Healthy Radiant Skin |30g
 Product ID: hhc-3765189
 SKU: hhc-3765189
@@ -7,11 +8,16 @@ Slug: maclear-g-plus-skin-lightening-complex-advanced-brightening-formula-red-cd
 Category: Beauty & Personal Care
 Subcategory: Skin Care
 Brand: ASM VEO
-Meta Title: Maclear G Plus Skin Lightening Complex Advanced Brightening Formula
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/4afed1f59833ffb3dac8ca27f20af232.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/4afed1f59833ffb3dac8ca27f20af232.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/6ab10afcee78d50c6637b19a9a4a4f2b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/2e83ac17958a0d90aa508454eea40f2c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/5eac5f1699fea0a7314126404359df12.jpg
+Meta Title: Maclear G Plus Skin Lightening Complex Advanced Brightening Formula 
 Meta Description: Buy Maclear G Plus Skin Lightening Complex Advanced Brightening Formula Reduces Dark Spots Restores Natural Glow Healthy Radiant Skin |30g online in Pakistan fr
 Description: Maclear G+ Skin Lightening Complex is an advanced formula designed to brighten tone, reduce dark spots, and restore natural glow. Packed with skin-loving ingredients, it promotes an even, radiant complexion while maintaining essential moisture for healthy, smooth-looking skin.
-Regular Price: 1451
-Sale Price: 1451
+Wholesale Price: 1401
+Regular Price: 2560
+Sale Price: 2049
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Racing-Control Speed X Car Toy (1:16 Scale RC Car)
 Product ID: hhc-3756414
 SKU: hhc-3756414
@@ -7,11 +8,16 @@ Slug: racing-control-speed-x-car-toy-1-16-scale-rc-car-hhc-3756414
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/4d471326e200385057adaeab473744df.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/4d471326e200385057adaeab473744df.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/ffe261d58360bd5edf869fb44219edfc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/1ecfae6ad74e5d211b248b800a00c94c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/54d930081b59f7defc774fbe5613e888.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/84c0f022bcf082a27a5e6af052f9ebd0.jpeg
 Meta Title: Racing-Control Speed X Car Toy (1:16 Scale RC Car) | Buy Online in P
 Meta Description: Buy Racing-Control Speed X Car Toy (1:16 Scale RC Car) online in Pakistan from ASM VEO. Experience high-speed action with the Racing-Control Speed X Car Toy! Bu
 Description: Experience high-speed action with the Racing-Control Speed X Car Toy! Built with durable ABS material and powerful performance components, this 1:16 scale remote control car is designed to conquer multiple terrains while delivering thrilling racing fun with lights and musical road signals.
-Regular Price: 4692
-Sale Price: 4692
+Wholesale Price: 4692
+Regular Price: 7850
+Sale Price: 6280
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

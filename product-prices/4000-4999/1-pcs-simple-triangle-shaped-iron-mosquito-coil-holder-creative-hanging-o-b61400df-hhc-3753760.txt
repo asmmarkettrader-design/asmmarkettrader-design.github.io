@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pcs Simple Triangle-shaped Iron Mosquito Coil Holder Creative Hanging Or Standing Incense Burner
 Product ID: hhc-3753760
 SKU: hhc-3753760
@@ -7,11 +8,16 @@ Slug: 1-pcs-simple-triangle-shaped-iron-mosquito-coil-holder-creative-hanging-b6
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/dbaedac204eab1705df91f8b7a3531cc.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/dbaedac204eab1705df91f8b7a3531cc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/d34f33e6ed93148034648b9e6f885a24.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/880daa9747f07f8ed288906150e253f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/3d0913e36e625d251bb918832c6b5db3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/f0111d95fe61d734d68569551d303001.jpg
 Meta Title: 1 Pcs Simple Triangle-shaped Iron Mosquito Coil Holder Creative Hang
 Meta Description: Buy 1 Pcs Simple Triangle-shaped Iron Mosquito Coil Holder Creative Hanging Or Standing Incense Burner online in Pakistan from ASM VEO. The Mosquito Coil Stand
 Description: The Mosquito Coil Stand is a safe and durable holder designed to keep mosquito coils stable while burning. Its heat-resistant metal design ensures clean smoke circulation and protects surfaces from burns, making it ideal for indoor and outdoor use.
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

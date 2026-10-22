@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MELODINE Japanese Soothing Massage Gel | Fast-Absorbing Herbal Pain Relief Cream for Shoulder, Neck, Back & Knee
 Product ID: hhc-3753524
 SKU: hhc-3753524
@@ -7,11 +8,16 @@ Slug: melodine-japanese-soothing-massage-gel-fast-absorbing-herbal-pain-relie-10
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/3e8efe16fcf38892af9dae763be5460f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/3e8efe16fcf38892af9dae763be5460f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/a8de86a0e34b3b5bae83bc5c221f5911.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/1a5757815526e315a43e6bebec7671c2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/147337f253114297c3684afc2d70249f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/998cca3e5826832392e2bdb1c4fe0ea7.jpeg
 Meta Title: MELODINE Japanese Soothing Massage Gel | Fast-Absorbing Herbal Pain
 Meta Description: Buy MELODINE Japanese Soothing Massage Gel | Fast-Absorbing Herbal Pain Relief Cream for Shoulder, Neck, Back & Knee online in Pakistan from ASM VEO. Relieve pa
 Description: Relieve pain and relax muscles with MELODINE Japanese Soothing Massage Gel — a fast-absorbing herbal formula for effective joint and muscle comfort.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

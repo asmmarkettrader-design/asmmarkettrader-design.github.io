@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Trendy Markhor Printed Track Suit for Men & Boys | Soft & Comfortable Summer Wear | Lightweight Breathable Fabric
 Product ID: hhc-3760061
 SKU: hhc-3760061
@@ -7,11 +8,16 @@ Slug: black-trendy-markhor-printed-track-suit-for-men-boys-soft-comfortable-s-cd
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/e6ec7b17499d63c6f01c417f6b44c471.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/01/e6ec7b17499d63c6f01c417f6b44c471.jpeg
 Meta Title: Black Trendy Markhor Printed Track Suit for Men & Boys | Soft & Comf
 Meta Description: Buy Black Trendy Markhor Printed Track Suit for Men & Boys | Soft & Comfortable Summer Wear | Lightweight Breathable Fabric online in Pakistan from ASM VEO. Sta
 Description: Stay comfortable and stylish with this Black Markhor Printed Track Suit for Men & Boys. Made from soft, lightweight, and breathable fabric, it is perfect for summer wear, casual outings, workouts, jogging, and daily use. Trendy printed design with a comfortable fit for all-day wear.
-Regular Price: 1041
-Sale Price: 1041
+Wholesale Price: 991
+Regular Price: 1870
+Sale Price: 1497
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

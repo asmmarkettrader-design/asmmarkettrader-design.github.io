@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hello Kitty Themed Pink Children School Bag Stylish Durable And Spacious Design For Daily School Use
 Product ID: hhc-3755732
 SKU: hhc-3755732
@@ -7,11 +8,16 @@ Slug: hello-kitty-themed-pink-children-school-bag-stylish-durable-and-spaciou-4c
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/50b259d1107758767b1a4b2a9a61f1a3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/50b259d1107758767b1a4b2a9a61f1a3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/ef7f3cfcd7dfbb5226399d074be12b17.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/b1716c8b2c00dd2f9085ab2f4e71009b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/79e818f94734682241c2835b0c696d39.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/98de7b19cd4b8bb4134da601f3570a79.jpeg
 Meta Title: Hello Kitty Themed Pink Children School Bag Stylish Durable And Spac
 Meta Description: Buy Hello Kitty Themed Pink Children School Bag Stylish Durable And Spacious Design For Daily School Use online in Pakistan from ASM VEO. Hello Kitty Themed Pin
 Description: Hello Kitty Themed Pink Children School Bag Provides Stylish Durable And Spacious Design For Kids
-Regular Price: 2445
-Sale Price: 2445
+Wholesale Price: 2445
+Regular Price: 4350
+Sale Price: 3481
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

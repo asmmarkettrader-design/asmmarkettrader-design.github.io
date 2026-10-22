@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AirPods Pro 2 Buzzer Edition Earbuds | Bluetooth Earphones
 Product ID: hhc-3757861
 SKU: hhc-3757861
@@ -7,11 +8,16 @@ Slug: airpods-pro-2-buzzer-edition-earbuds-bluetooth-earphones-hhc-3757861
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/0e3def937ad033a84d09595e27cb1d3f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/0e3def937ad033a84d09595e27cb1d3f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/3968fb7731af95244e59a08ce0a10a09.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/8987a8d0a21c4216316d28053717f6e5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/d22cf2f31e40807e123fb421e7f59eda.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/d79b9ae759780fcc1913294d1a81d37d.jpeg
 Meta Title: AirPods Pro 2 Buzzer Edition Earbuds | Bluetooth Earphones | Buy Onl
 Meta Description: Buy AirPods Pro 2 Buzzer Edition Earbuds | Bluetooth Earphones online in Pakistan from ASM VEO. AirPods Pro 2 buzzer edition earbuds with smart charging . Featu
 Description: AirPods Pro 2 buzzer edition earbuds with smart charging . Features Bluetooth connectivity, touch controls, and clear audio for everyday use.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

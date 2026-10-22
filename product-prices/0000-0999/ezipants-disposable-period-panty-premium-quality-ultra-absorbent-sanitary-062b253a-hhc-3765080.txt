@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: EziPants Disposable Period Panty – Premium Quality Ultra Absorbent Sanitary Pants, Leak-Proof & Comfortable Period Underwear, 10 Pcs Packet
 Product ID: hhc-3765080
 SKU: hhc-3765080
 Slug: ezipants-disposable-period-panty-premium-quality-ultra-absorbent-sanita-062b253a-hhc-3765080
-Category: Beauty & Personal Care
-Subcategory: Personal Care
+Category: Fashion
+Subcategory: Underwear & Innerwear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/d9362b227ce2084c9d08cb30078a7b55.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/d9362b227ce2084c9d08cb30078a7b55.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/4963736afd1327d48dab1ece2eab5124.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/f4e034325d6c751725cf64bf4335ec3a.jpg
 Meta Title: EziPants Disposable Period Panty – Premium Quality Ultra Absorbent S
 Meta Description: Buy EziPants Disposable Period Panty – Premium Quality Ultra Absorbent Sanitary Pants, Leak-Proof & Comfortable Period Underwear, 10 Pcs Packet online in Pakist
 Description: EziPants Disposable Period Panties provide reliable protection during periods with an ultra-absorbent design, comfortable fit and leak-resistant coverage. Available in Small, Medium and Large sizes, with 10 pieces per pack.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

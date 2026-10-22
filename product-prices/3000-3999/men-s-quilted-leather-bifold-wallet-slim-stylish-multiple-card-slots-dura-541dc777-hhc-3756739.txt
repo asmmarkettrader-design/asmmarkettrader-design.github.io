@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men’s Quilted Leather Bifold Wallet | Slim & Stylish | Multiple Card Slots | Durable Everyday Accessory
 Product ID: hhc-3756739
 SKU: hhc-3756739
@@ -7,11 +8,16 @@ Slug: men-s-quilted-leather-bifold-wallet-slim-stylish-multiple-card-slots-du-54
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/bd55799600f25327c6a27beb91869ef1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/bd55799600f25327c6a27beb91869ef1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/8d9c64ed4a34e44c0ecc4f447bdd4a1e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/4cdcc8c3a38293fac5e00243e5818550.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/aa83f32afc22613a048d839458bc66ef.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/d3cc412a608261502c937c8e5092fb81.jpeg
 Meta Title: Men’s Quilted Leather Bifold Wallet | Slim & Stylish | Multiple Card
 Meta Description: Buy Men’s Quilted Leather Bifold Wallet | Slim & Stylish | Multiple Card Slots | Durable Everyday Accessory online in Pakistan from ASM VEO. Slim bifold wallet
 Description: Slim bifold wallet for men with quilted texture. Stylish design, multiple card slots, and durable leather finish for everyday use.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

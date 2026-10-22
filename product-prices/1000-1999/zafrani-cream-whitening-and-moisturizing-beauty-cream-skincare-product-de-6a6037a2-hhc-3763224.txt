@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Cream Whitening And Moisturizing Beauty Cream - Skincare Product Designed For Beauty And Daily Skincare Routine - 250ML
 Product ID: hhc-3763224
 SKU: hhc-3763224
@@ -7,11 +8,16 @@ Slug: zafrani-cream-whitening-and-moisturizing-beauty-cream-skincare-product-6a6
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/3e1969bb133b684e5ae5133b82443eee.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/3e1969bb133b684e5ae5133b82443eee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/f10a943c8cd28ba6334e83e5b9a8ebaf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/2f821d7a672d1d589833785be715d95b.jpeg
 Meta Title: Zafrani Cream Whitening And Moisturizing Beauty Cream - Skincare Pro
 Meta Description: Buy Zafrani Cream Whitening And Moisturizing Beauty Cream - Skincare Product Designed For Beauty And Daily Skincare Routine - 250ML online in Pakistan from ASM
 Description: The Zafrani Cream Whitening And Moisturizing Beauty Cream Is A Skincare Product Formulated To Help Provide Beauty And Daily Skincare Utility During Use.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

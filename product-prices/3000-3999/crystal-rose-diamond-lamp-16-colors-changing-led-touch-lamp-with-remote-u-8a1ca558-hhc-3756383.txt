@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Crystal Rose Diamond Lamp – 16 Colors Changing LED Touch Lamp with Remote & USB Charging
 Product ID: hhc-3756383
 SKU: hhc-3756383
@@ -7,11 +8,16 @@ Slug: crystal-rose-diamond-lamp-16-colors-changing-led-touch-lamp-with-remote-8a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/e70843af3ce03ae99d1c63ef0e64af8c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/e70843af3ce03ae99d1c63ef0e64af8c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/d983016802bc38bd55abedeb5e4726b5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/366765743daf279f7a946f2ac1d89a44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/508d50a68bdc5c99b40273b32cc068f7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/cc2f33b1ea050039c32d175a8c91ee06.jpg
 Meta Title: Crystal Rose Diamond Lamp – 16 Colors Changing LED Touch Lamp with R
 Meta Description: Buy Crystal Rose Diamond Lamp – 16 Colors Changing LED Touch Lamp with Remote & USB Charging online in Pakistan from ASM VEO. Add elegance and romance to any sp
 Description: Add elegance and romance to any space with this Crystal Rose Diamond Lamp featuring 16 vibrant color options, touch control, remote operation, and convenient USB charging. Perfect for home décor, bedside tables, and thoughtful gifting.
-Regular Price: 1484
-Sale Price: 1484
+Wholesale Price: 1434
+Regular Price: 2620
+Sale Price: 2096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

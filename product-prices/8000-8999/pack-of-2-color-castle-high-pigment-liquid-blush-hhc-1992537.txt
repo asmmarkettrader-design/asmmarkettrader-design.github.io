@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (Pack of 2 ) Color Castle High Pigment Liquid Blush
 Product ID: hhc-1992537
 SKU: hhc-1992537
@@ -7,11 +8,16 @@ Slug: pack-of-2-color-castle-high-pigment-liquid-blush-hhc-1992537
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.48.24-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.48.24-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.48.23-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.48.23-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-02-at-11.15.28-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-02-at-11.15.29-PM.jpeg
 Meta Title: (Pack of 2 ) Color Castle High Pigment Liquid Blush | Buy Online in
 Meta Description: Buy (Pack of 2 ) Color Castle High Pigment Liquid Blush online in Pakistan from ASM VEO. High Pigment Liquid Blush, Pack of 2 * Material: Liquid * These blushes
 Description: High Pigment Liquid Blush, Pack of 2 * Material: Liquid * These blushes come in 6 shades: coral, pink, and red. * Their pigmentation is wonderful and they blend really well. Package Includes: 2 × Liquid Blush of Different Colors.
-Regular Price: 798
-Sale Price: 798
+Wholesale Price: 748
+Regular Price: 1430
+Sale Price: 1145
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

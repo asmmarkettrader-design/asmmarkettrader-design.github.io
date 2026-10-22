@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Collection Women’s Red & Green Lining Print Jacket | Stylish & Warm Outerwear | Trendy Winter Fashion for Ladies
 Product ID: hhc-3753496
 SKU: hhc-3753496
@@ -7,11 +8,16 @@ Slug: winter-collection-women-s-red-green-lining-print-jacket-stylish-warm-ou-96
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/03571fa7afa487227e50653d066b9c89.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/03571fa7afa487227e50653d066b9c89.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/04246694c94fde01c8cd99abc79530b7.jpeg
 Meta Title: Winter Collection Women’s Red & Green Lining Print Jacket | Stylish
 Meta Description: Buy Winter Collection Women’s Red & Green Lining Print Jacket | Stylish & Warm Outerwear | Trendy Winter Fashion for Ladies online in Pakistan from ASM VEO. Chi
 Description: Chic red and green lining print winter jacket for women. Soft, cozy, and stylish — perfect for casual wear, outings, and winter layering.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

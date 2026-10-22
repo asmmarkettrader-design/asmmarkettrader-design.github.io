@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5pcs Islamic Set Wooden Material Decorative Pieces Elegant Design For Home And Office Display
 Product ID: hhc-3753730
 SKU: hhc-3753730
@@ -7,11 +8,16 @@ Slug: 5pcs-islamic-set-wooden-material-decorative-pieces-elegant-design-for-h-3d
 Category: Islamic & Cultural
 Subcategory: Islamic Essentials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/7ac444f32781b230c9e73a2c1eb7141e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/7ac444f32781b230c9e73a2c1eb7141e.jpeg
 Meta Title: 5pcs Islamic Set Wooden Material Decorative Pieces Elegant Design Fo
 Meta Description: Buy 5pcs Islamic Set Wooden Material Decorative Pieces Elegant Design For Home And Office Display online in Pakistan from ASM VEO. 5pcs Islamic Set Wooden Mater
 Description: 5pcs Islamic Set Wooden Material Decorative Pieces With Elegant Design For Home And Office
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

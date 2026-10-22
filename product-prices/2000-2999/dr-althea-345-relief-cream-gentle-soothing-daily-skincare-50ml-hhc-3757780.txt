@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dr Althea 345 Relief Cream – Gentle Soothing Daily Skincare – 50ML
 Product ID: hhc-3757780
 SKU: hhc-3757780
@@ -7,11 +8,16 @@ Slug: dr-althea-345-relief-cream-gentle-soothing-daily-skincare-50ml-hhc-3757780
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/828d84477007c0f8f386c87c5c1bcd8e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/828d84477007c0f8f386c87c5c1bcd8e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/6b284787c3c96e21f838d89c6ee6f12a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/8a6196b8e0cf7fe7c929e0ef98f0cd01.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/e87917fdbe22438e507e33e9f4cfb678.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/1de58a2057cd6ca28d42d0579837f50e.jpeg
 Meta Title: Dr Althea 345 Relief Cream – Gentle Soothing Daily Skincare – 50ML |
 Meta Description: Buy Dr Althea 345 Relief Cream – Gentle Soothing Daily Skincare – 50ML online in Pakistan from ASM VEO. Gentle and soothing cream designed for daily skin care.
 Description: Gentle and soothing cream designed for daily skin care. Provides lasting relief, durable quality, and comfortable application for all skin types.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

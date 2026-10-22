@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Buds Pro 9 TWS Wireless Earbuds – High-Fidelity True Wireless Stereo Earphones with ANC/ENC Double Dark Noise Reduction & Intelligent Touch Control - Random Color
 Product ID: hhc-3761281
 SKU: hhc-3761281
@@ -7,11 +8,16 @@ Slug: buds-pro-9-tws-wireless-earbuds-high-fidelity-true-wireless-stereo-earp-15
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/aa2d14e58d3db61f272a2f7acc465396.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/aa2d14e58d3db61f272a2f7acc465396.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/d55cc03716e31cff0efa6ce284c16d5a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/1209c933d2793ebe7e5594636dcb3e11.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/7a19ad64e4e3df5c127fc926bb6cae5c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/2a2725e518c1f16a0ca385efc1d3c2fd.jpeg
 Meta Title: Buds Pro 9 TWS Wireless Earbuds – High-Fidelity True Wireless Stereo
 Meta Description: Buy Buds Pro 9 TWS Wireless Earbuds – High-Fidelity True Wireless Stereo Earphones with ANC/ENC Double Dark Noise Reduction & Intelligent Touch Control - Random
 Description: Experience premium sound quality and absolute audio clarity with the Buds Pro 9 TWS Wireless Earbuds.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

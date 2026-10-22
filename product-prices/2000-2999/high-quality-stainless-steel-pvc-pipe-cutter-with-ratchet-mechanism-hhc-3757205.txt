@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality Stainless Steel PVC Pipe Cutter with Ratchet Mechanism
 Product ID: hhc-3757205
 SKU: hhc-3757205
@@ -7,11 +8,16 @@ Slug: high-quality-stainless-steel-pvc-pipe-cutter-with-ratchet-mechanism-hhc-37
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
-Meta Title: High Quality Stainless Steel PVC Pipe Cutter with Ratchet Mechanism
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/32a3eaaaaa039f2b703e6b4eaa2d4f50.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/32a3eaaaaa039f2b703e6b4eaa2d4f50.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/35d3bd106952c6bc9cd1a19f426a736c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/9c367060c09d678c3497fed96aa27cc2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/009798bec9f529948815dee5da39452d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/01d95f78b0188d553b91e8d303b27696.jpeg
+Meta Title: High Quality Stainless Steel PVC Pipe Cutter with Ratchet Mechanism 
 Meta Description: Buy High Quality Stainless Steel PVC Pipe Cutter with Ratchet Mechanism online in Pakistan from ASM VEO. A durable and efficient hand tool designed for clean an
 Description: A durable and efficient hand tool designed for clean and precise cutting of PVC and PPR pipes. Features a sharp stainless steel blade and ratchet mechanism for smooth, low-effort operation.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

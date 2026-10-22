@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Original 2-in-1 Type-C and Lightning to 3.5mm Headphone Jack Adapter Dual Connector Handfree Audio Converter Direct Plug and Play No Bluetooth Required
 Product ID: hhc-3758108
 SKU: hhc-3758108
@@ -7,11 +8,16 @@ Slug: original-2-in-1-type-c-and-lightning-to-3-5mm-headphone-jack-adapter-du-93
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/5ef7d0ba8b2eb6e5a8bbc521056bc9fb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/5ef7d0ba8b2eb6e5a8bbc521056bc9fb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/a41444242ae9c265f5b30ad44e3e2953.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/a8610f4c5b2fbc1e82016b28c275ef3f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/b4c02dfeb41a5ed7674f6c8446dc6fdc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/22325d7b88100a8afe4cb9f7b2b705af.jpeg
 Meta Title: Original 2-in-1 Type-C and Lightning to 3.5mm Headphone Jack Adapter
 Meta Description: Buy Original 2-in-1 Type-C and Lightning to 3.5mm Headphone Jack Adapter Dual Connector Handfree Audio Converter Direct Plug and Play No Bluetooth Required onli
 Description: Original 2-in-1 Type-C and Lightning to 3.5mm adapter for seamless audio. Direct plug-and-play design—no Bluetooth or apps required. Features a durable braided cable and metal shells for high-quality, lag-free sound. Perfect for connecting wired handfree to any iPhone or Android device instantly.
-Regular Price: 488
-Sale Price: 488
+Wholesale Price: 438
+Regular Price: 900
+Sale Price: 717
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

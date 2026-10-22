@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wellice Romantic Perfume Shampoo – Luxurious Fragrance & Soft Shine (400ml
 Product ID: hhc-3753298
 SKU: hhc-3753298
@@ -7,11 +8,16 @@ Slug: wellice-romantic-perfume-shampoo-luxurious-fragrance-soft-shine-400ml-hhc-
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
-Meta Title: Wellice Romantic Perfume Shampoo – Luxurious Fragrance & Soft Shine
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/48ca5a4882b3b3a09e09726451356b72.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/48ca5a4882b3b3a09e09726451356b72.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/b78424b746c58028e8671cabc9648fa2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/06/3b98179cc6e859646ea940549016933c.jpeg
+Meta Title: Wellice Romantic Perfume Shampoo – Luxurious Fragrance & Soft Shine 
 Meta Description: Buy Wellice Romantic Perfume Shampoo – Luxurious Fragrance & Soft Shine (400ml online in Pakistan from ASM VEO. Indulge your hair with the enchanting scent of W
 Description: Indulge your hair with the enchanting scent of Wellice Romantic Perfume Shampoo. This luxurious formula gently cleanses while leaving hair soft, shiny, and infused with a long-lasting romantic fragrance.
-Regular Price: 2537
-Sale Price: 2537
+Wholesale Price: 1812
+Regular Price: 3280
+Sale Price: 2626
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

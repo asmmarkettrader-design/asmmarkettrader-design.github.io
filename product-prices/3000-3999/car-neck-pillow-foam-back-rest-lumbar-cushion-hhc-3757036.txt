@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Neck Pillow Foam Back Rest Lumbar Cushion
 Product ID: hhc-3757036
 SKU: hhc-3757036
@@ -7,11 +8,16 @@ Slug: car-neck-pillow-foam-back-rest-lumbar-cushion-hhc-3757036
 Category: Automotive
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/44678ace73c71556418895abf9d78912.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/44678ace73c71556418895abf9d78912.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/9bec520f58d3ec4a8a0fb07212d48060.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/0ce7f50b42897c48dc57c152428f7719.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/fc5111f3b55b6f6d0ef911656d3edc26.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/24/38ec53ad532b30cb83a5c4034ecaf38d.png
 Meta Title: Car Neck Pillow Foam Back Rest Lumbar Cushion | Buy Online in Pakist
 Meta Description: Buy Car Neck Pillow Foam Back Rest Lumbar Cushion online in Pakistan from ASM VEO. Premium Quality exterior for durability and a touch of elegance Breathable, o
 Description: Premium Quality exterior for durability and a touch of elegance Breathable, odorless, and environmentally friendly materials Versatile use: doubles as a lumbar support for enhanced comfort Easy installation and maintenance, with a detachable cover for effortless cleaning Certainl
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

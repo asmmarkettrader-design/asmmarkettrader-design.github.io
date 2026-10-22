@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Infinix Copper Fast Charging Micro USB Data Cable – Durable White Charging & Sync Cable for Android Devices
 Product ID: hhc-3757853
 SKU: hhc-3757853
@@ -7,11 +8,16 @@ Slug: infinix-copper-fast-charging-micro-usb-data-cable-durable-white-chargin-f9
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/0376863839c158ac5551c24036a12482.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/0376863839c158ac5551c24036a12482.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/aff99f425882643d6ec791ab6139eec4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/9167d8f91fb3faeec8ed38343f644510.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/39191d0ceb32abea23f320125edbf322.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/68d6914637b15434017d297d86081248.webp
 Meta Title: Infinix Copper Fast Charging Micro USB Data Cable – Durable White Ch
 Meta Description: Buy Infinix Copper Fast Charging Micro USB Data Cable – Durable White Charging & Sync Cable for Android Devices online in Pakistan from ASM VEO. Reliable and ef
 Description: Reliable and efficient Infinix Micro USB cable with copper core for fast charging and stable data transfer, designed for everyday use with Android devices.
-Regular Price: 228
-Sale Price: 228
+Wholesale Price: 178
+Regular Price: 477
+Sale Price: 327
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

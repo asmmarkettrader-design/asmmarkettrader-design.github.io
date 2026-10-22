@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Mesh Nebulizer – Quiet & Rechargeable for Kids and Adults
 Product ID: hhc-3754762
 SKU: hhc-3754762
@@ -7,11 +8,16 @@ Slug: portable-mesh-nebulizer-quiet-rechargeable-for-kids-and-adults-hhc-3754762
 Category: Beauty & Personal Care
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/f8734380b2cf19d78d01a5a80452a61e.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/f8734380b2cf19d78d01a5a80452a61e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/834b4dbff1c49ecf46a9acfe7e0daadc.webp
 Meta Title: Portable Mesh Nebulizer – Quiet & Rechargeable for Kids and Adults |
 Meta Description: Buy Portable Mesh Nebulizer – Quiet & Rechargeable for Kids and Adults online in Pakistan from ASM VEO. Portable Mesh Nebulizer USB And Battery Operated Mini Ne
 Description: Portable Mesh Nebulizer USB And Battery Operated Mini Nebulizer With Mask Personal Inhaler For Efficient Respiratory Care
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

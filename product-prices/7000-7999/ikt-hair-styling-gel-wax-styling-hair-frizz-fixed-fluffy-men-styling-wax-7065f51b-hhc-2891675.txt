@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: IKT Hair Styling Gel Wax | Styling Hair Frizz Fixed Fluffy  Men Styling Wax Edge Control 130g
 Product ID: hhc-2891675
 SKU: hhc-2891675
@@ -7,11 +8,16 @@ Slug: ikt-hair-styling-gel-wax-styling-hair-frizz-fixed-fluffy-men-styling-wa-70
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.41.42-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.41.42-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.41.40-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.41.40-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.41.39-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.41.39-PM.jpeg
 Meta Title: IKT Hair Styling Gel Wax | Styling Hair Frizz Fixed Fluffy Men Styli
 Meta Description: Buy IKT Hair Styling Gel Wax | Styling Hair Frizz Fixed Fluffy Men Styling Wax Edge Control 130g online in Pakistan from ASM VEO. IKT Hair Styling Gel Wax | Sty
 Description: IKT Hair Styling Gel Wax | Styling Hair Frizz Fixed Fluffy Men Styling Wax Edge Control • Material: Gel • Texture: Smooth • Hair Types: All Hair Types • Color: White • Product Feature: Style, Volume, Hair Thickness, Shine • Package Includes: 1 x Hair Wax • Weight: 130 Gram Original Video [video width="720" height="1280" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Video-2025-03-14-at-12.41.41-PM.mp4"][/video]
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

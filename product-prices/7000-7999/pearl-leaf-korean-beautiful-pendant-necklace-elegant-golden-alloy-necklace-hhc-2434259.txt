@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pearl & Leaf Korean Beautiful Pendant Necklace – Elegant Golden Alloy Necklace
 Product ID: hhc-2434259
 SKU: hhc-2434259
 Slug: pearl-leaf-korean-beautiful-pendant-necklace-elegant-golden-alloy-necklace-hhc-2434259
-Category: Home & Kitchen
+Category: Beauty & Personal Care
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-07-at-8.38.48-PM_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-07-at-8.38.48-PM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/IMG-20230130-WA0192_1024x1024.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/IMG-20230130-WA0200_1024x1024.webp
 Meta Title: Pearl & Leaf Korean Beautiful Pendant Necklace – Elegant Golden Allo
 Meta Description: Buy Pearl & Leaf Korean Beautiful Pendant Necklace – Elegant Golden Alloy Necklace online in Pakistan from ASM VEO. Elegant Korean-style pearl and leaf pendant
 Description: Elegant Korean-style pearl and leaf pendant necklace in golden alloy, perfect for adding subtle sparkle to everyday outfits.
-Regular Price: 458
-Sale Price: 458
+Wholesale Price: 408
+Regular Price: 840
+Sale Price: 672
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

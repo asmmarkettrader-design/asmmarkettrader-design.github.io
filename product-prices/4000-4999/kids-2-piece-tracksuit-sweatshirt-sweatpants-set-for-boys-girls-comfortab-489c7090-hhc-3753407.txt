@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids 2-Piece Tracksuit | Sweatshirt & Sweatpants Set for Boys & Girls – Comfortable Outfit for Spring, Fall & Winter FOR BABY AND KIDS
 Product ID: hhc-3753407
 SKU: hhc-3753407
@@ -7,11 +8,16 @@ Slug: kids-2-piece-tracksuit-sweatshirt-sweatpants-set-for-boys-girls-comfort-48
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/aa44b942af44304d7665e0a49c031b00.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/aa44b942af44304d7665e0a49c031b00.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/785d8c5a9f4d30592f73a143391f05d5.png
 Meta Title: Kids 2-Piece Tracksuit | Sweatshirt & Sweatpants Set for Boys & Girl
 Meta Description: Buy Kids 2-Piece Tracksuit | Sweatshirt & Sweatpants Set for Boys & Girls – Comfortable Outfit for Spring, Fall & Winter FOR BABY AND KIDS online in Pakistan fr
 Description: Soft 2-piece tracksuit for kids — sweatshirt and sweatpants set designed for comfort, warmth, and style in all seasons.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

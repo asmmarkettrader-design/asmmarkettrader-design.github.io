@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ( Pack of 6) Crazy Girl 24 Hours High Pigment Lipgloss,
 Product ID: hhc-2052410
 SKU: hhc-2052410
@@ -7,11 +8,16 @@ Slug: pack-of-6-crazy-girl-24-hours-high-pigment-lipgloss-hhc-2052410
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-15-at-12.02.39-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-15-at-12.02.39-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-15-at-12.02.39-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-15-at-12.02.38-PM-1.jpeg
 Meta Title: ( Pack of 6) Crazy Girl 24 Hours High Pigment Lipgloss, | Buy Online
 Meta Description: Buy ( Pack of 6) Crazy Girl 24 Hours High Pigment Lipgloss, online in Pakistan from ASM VEO. product details Crazy Girl 24 Hours High Pigment Lipgloss, Pack of
 Description: product details Crazy Girl 24 Hours High Pigment Lipgloss, Pack of 6 • Material: Cream • Product Type: Lipgloss • Product Details: Highly Pigmented, Soft And Smooth Texture Gives A Perfect Application, Rich Color Hydrating Lipsticks, Beautiful Velvety Texture, Matte Finish • Color: Matte • Package Includes: 6 x Lipgloss
-Regular Price: 1123
-Sale Price: 1123
+Wholesale Price: 1073
+Regular Price: 1980
+Sale Price: 1584
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

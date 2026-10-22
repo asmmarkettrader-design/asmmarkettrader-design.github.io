@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Waterproof Mobile Phone Pouch | Protects Against Water, Dust, Sand & Snow | Durable & Safe (Random Colour)
 Product ID: hhc-3756289
 SKU: hhc-3756289
@@ -7,11 +8,16 @@ Slug: universal-waterproof-mobile-phone-pouch-protects-against-water-dust-san-23
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/b1382b8c3732435f08f6221278e10c56.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/b1382b8c3732435f08f6221278e10c56.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/23e42935cbf239dc6592bd0db33bb649.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/15fe3566c8404a35f67630eec4dd7537.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/725db1c94a324bf13c3fedac09e1ecad.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/b4a01a9e4de53f54e6cf5af766b9994a.jpg
 Meta Title: Universal Waterproof Mobile Phone Pouch | Protects Against Water, Du
 Meta Description: Buy Universal Waterproof Mobile Phone Pouch | Protects Against Water, Dust, Sand & Snow | Durable & Safe (Random Colour) online in Pakistan from ASM VEO. Univer
 Description: Universal waterproof pouch for smartphones. Protects against water, dust, sand, and snow. Perfect for outdoor use and travel.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

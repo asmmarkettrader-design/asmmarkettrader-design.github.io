@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lenovo HE05X Wireless Bluetooth Neckband Earphones – Magnetic Sports Earbuds with HD Sound & Built-in Mic
 Product ID: hhc-3762935
 SKU: hhc-3762935
@@ -7,11 +8,16 @@ Slug: lenovo-he05x-wireless-bluetooth-neckband-earphones-magnetic-sports-earb-4e
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/62fac3f453f5443b90ebf8e9e0779c93.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/62fac3f453f5443b90ebf8e9e0779c93.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/098ea1b0ba484904d006f3fc254ee90e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/71f731257b70902720b62f27c56addfa.mp4
 Meta Title: Lenovo HE05X Wireless Bluetooth Neckband Earphones – Magnetic Sports
 Meta Description: Buy Lenovo HE05X Wireless Bluetooth Neckband Earphones – Magnetic Sports Earbuds with HD Sound & Built-in Mic online in Pakistan from ASM VEO. Enjoy crystal-cle
 Description: Enjoy crystal-clear audio and all-day comfort with the Lenovo HE05X Wireless Bluetooth Neckband. Featuring magnetic earbuds, Bluetooth connectivity, built-in microphone, and a lightweight ergonomic design, it's perfect for music, calls, workouts, and everyday use.
-Regular Price: 1230
-Sale Price: 1230
+Wholesale Price: 1180
+Regular Price: 2170
+Sale Price: 1736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

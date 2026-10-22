@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Satin Silk Camisole & Pajama with Bikini Set – Dual Style Nightwear for Women (DC-4003)
 Product ID: hhc-3699024
 SKU: hhc-3699024
@@ -7,11 +8,16 @@ Slug: satin-silk-camisole-pajama-with-bikini-set-dual-style-nightwear-for-wom-e9
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: Satin Silk Camisole & Pajama with Bikini Set – Dual Style Nightwear
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_182704.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_182704.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_183314.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_183847.png
+Meta Title: Satin Silk Camisole & Pajama with Bikini Set – Dual Style Nightwear 
 Meta Description: Buy Satin Silk Camisole & Pajama with Bikini Set – Dual Style Nightwear for Women (DC-4003) online in Pakistan from ASM VEO. Satin Silk Camisole & Pajama with B
 Description: Satin Silk Camisole & Pajama with Bikini Set – Dual Style Nightwear for Women
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

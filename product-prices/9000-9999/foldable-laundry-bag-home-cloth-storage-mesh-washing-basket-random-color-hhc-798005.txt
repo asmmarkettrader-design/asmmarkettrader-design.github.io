@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foldable Laundry Bag Home Cloth Storage Mesh Washing Basket - Random Color
 Product ID: hhc-798005
 SKU: hhc-798005
@@ -7,11 +8,16 @@ Slug: foldable-laundry-bag-home-cloth-storage-mesh-washing-basket-random-color-h
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/08d8a70baa281baae5a518b4eee277dc.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/08d8a70baa281baae5a518b4eee277dc.jpg
 Meta Title: Foldable Laundry Bag Home Cloth Storage Mesh Washing Basket - Random
 Meta Description: Buy Foldable Laundry Bag Home Cloth Storage Mesh Washing Basket - Random Color online in Pakistan from ASM VEO. [video width="1280" height="720" mp4="https://hh
 Description: [video width="1280" height="720" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2022/04/video-3.mp4"][/video]Product details of Foldable Laundry Bag Home Cloth Storage Mesh Washing Basket Bin Hamper100% Brand new and well packed in retail packing as purchased from manufacturerThis product is highly recommended by many customers around the globeColor could not be specified for this product because the specific colors are very short in the marketVery cost effective, available in really cheap price as compare to the market in Pakistan
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

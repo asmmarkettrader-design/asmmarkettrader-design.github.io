@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Noorinex Ultra Clean & Fresh Washing Powder 500 Gram Pack For Effective Laundry Cleaning
 Product ID: hhc-3763947
 SKU: hhc-3763947
@@ -7,11 +8,16 @@ Slug: noorinex-ultra-clean-fresh-washing-powder-500-gram-pack-for-effective-l-2b
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/0e5eb8b7573735237082c737015c3e79.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/17/0e5eb8b7573735237082c737015c3e79.png
 Meta Title: Noorinex Ultra Clean & Fresh Washing Powder 500 Gram Pack For Effect
 Meta Description: Buy Noorinex Ultra Clean & Fresh Washing Powder 500 Gram Pack For Effective Laundry Cleaning online in Pakistan from ASM VEO. Noorinex Ultra Clean & Fresh Washi
 Description: Noorinex Ultra Clean & Fresh Washing Powder Comes In A Convenient 500 Gram Pack For Everyday Laundry Cleaning And A Fresh Washing Experience.
-Regular Price: 326
-Sale Price: 326
+Wholesale Price: 276
+Regular Price: 624
+Sale Price: 474
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

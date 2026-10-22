@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: USB Starry Projector Light | Ocean Wave & Star Sky Night Lamp With Bluetooth Speaker
 Product ID: hhc-3758096
 SKU: hhc-3758096
@@ -7,11 +8,16 @@ Slug: usb-starry-projector-light-ocean-wave-star-sky-night-lamp-with-bluetooth-s
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/bc650b28fadfe6ee654c226f17d24324.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/bc650b28fadfe6ee654c226f17d24324.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/838e79927690c008ab0f9ebeb265a62b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/486e5c99a5d0d46be60424ea274baa41.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/bdafe487ddfdf7e8e6f67dcebdedb98d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/08e85cecaffadc9bd0bb0ef82aeffc39.jpeg
 Meta Title: USB Starry Projector Light | Ocean Wave & Star Sky Night Lamp With B
 Meta Description: Buy USB Starry Projector Light | Ocean Wave & Star Sky Night Lamp With Bluetooth Speaker online in Pakistan from ASM VEO. Multi-Function USB Starry Projector |
 Description: Multi-Function USB Starry Projector | Ocean Wave & Star Sky Night Light With Bluetooth Music Speaker
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rockstyle Women’s White Lining Winter Jacket | Stylish, Warm & Comfortable Outerwear for Ladies – Premium Quality
 Product ID: hhc-3753491
 SKU: hhc-3753491
@@ -7,11 +8,16 @@ Slug: rockstyle-women-s-white-lining-winter-jacket-stylish-warm-comfortable-o-39
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/561c0183d0a50e12419e9031195c652a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/561c0183d0a50e12419e9031195c652a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/e85a82e40366abbcc272ee9df76573a5.jpeg
 Meta Title: Rockstyle Women’s White Lining Winter Jacket | Stylish, Warm & Comfo
 Meta Description: Buy Rockstyle Women’s White Lining Winter Jacket | Stylish, Warm & Comfortable Outerwear for Ladies – Premium Quality online in Pakistan from ASM VEO. Trendy Ro
 Description: Trendy Rockstyle white lining jacket for women. Soft, warm, and elegant — perfect for daily wear and winter fashion.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

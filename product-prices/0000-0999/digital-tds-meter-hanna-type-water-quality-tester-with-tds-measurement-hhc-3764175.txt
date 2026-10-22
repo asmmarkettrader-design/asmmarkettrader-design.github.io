@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital TDS Meter Hanna Type – Water Quality Tester with  TDS Measurement
 Product ID: hhc-3764175
 SKU: hhc-3764175
@@ -7,11 +8,16 @@ Slug: digital-tds-meter-hanna-type-water-quality-tester-with-tds-measurement-hhc
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/6e96e7cb367e60cf82795809f2c0e90a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/6e96e7cb367e60cf82795809f2c0e90a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/6f01cdd97ab680fe31d3e79116360e99.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/09971066bf9f0fec5aa06c18c5b54a0c.jpg
 Meta Title: Digital TDS Meter Hanna Type – Water Quality Tester with TDS Measure
 Meta Description: Buy Digital TDS Meter Hanna Type – Water Quality Tester with TDS Measurement online in Pakistan from ASM VEO. Digital TDS meter for measuring Total Dissolved So
 Description: Digital TDS meter for measuring Total Dissolved Solids (TDS) and electrical conductivity in water with an easy-to-read display.
-Regular Price: 4551
-Sale Price: 4551
+Wholesale Price: 4551
+Regular Price: 7620
+Sale Price: 6096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

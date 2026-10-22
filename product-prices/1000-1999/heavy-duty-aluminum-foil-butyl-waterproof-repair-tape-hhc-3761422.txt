@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heavy Duty Aluminum Foil Butyl Waterproof Repair Tape
 Product ID: hhc-3761422
 SKU: hhc-3761422
@@ -7,11 +8,16 @@ Slug: heavy-duty-aluminum-foil-butyl-waterproof-repair-tape-hhc-3761422
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/edb0591487b270245b4a9ae0de3ae048.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/edb0591487b270245b4a9ae0de3ae048.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/aedec777afea26d6c3debdb18ba0b2fd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/98b4b60834eb863bb03be0aff456ac2e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/86808bc632cf8845d1fce47c60d67349.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/3dfec043b7ff576ff137ddc40b060183.jpeg
 Meta Title: Heavy Duty Aluminum Foil Butyl Waterproof Repair Tape | Buy Online i
 Meta Description: Buy Heavy Duty Aluminum Foil Butyl Waterproof Repair Tape online in Pakistan from ASM VEO. Seal leaks and cracks quickly with this Heavy Duty Aluminum Foil Buty
 Description: Seal leaks and cracks quickly with this Heavy Duty Aluminum Foil Butyl Waterproof Repair Tape. Its strong adhesive provides a durable, weather-resistant seal for roofs, pipes, windows, metal sheets, and other repair applications. Easy to apply and designed for long-lasting performance.
-Regular Price: 417
-Sale Price: 417
+Wholesale Price: 367
+Regular Price: 760
+Sale Price: 610
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

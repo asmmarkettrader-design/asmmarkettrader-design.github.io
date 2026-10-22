@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aisun + Mofeich Portable Mini Blender - Kitchen Appliance Product Designed For Food Blending And Daily Beverage Preparation Routine (Random Color)
 Product ID: hhc-3764054
 SKU: hhc-3764054
@@ -7,11 +8,16 @@ Slug: aisun-mofeich-portable-mini-blender-kitchen-appliance-product-designed-70f
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/df1430f3ebbbd940b69eff159a35dbc6.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/df1430f3ebbbd940b69eff159a35dbc6.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/40919d18b2ef6243908ff1e853c59b3c.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/7e1a4b499756d60d6e8e008053201b1b.jpeg
 Meta Title: Aisun + Mofeich Portable Mini Blender - Kitchen Appliance Product De
 Meta Description: Buy Aisun + Mofeich Portable Mini Blender - Kitchen Appliance Product Designed For Food Blending And Daily Beverage Preparation Routine (Random Color) online in
 Description: The Aisun + Mofeich Portable Mini Blender Is A Kitchen Appliance Product Formulated To Help Provide Food Blending And Daily Beverage Preparation Utility During Use.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

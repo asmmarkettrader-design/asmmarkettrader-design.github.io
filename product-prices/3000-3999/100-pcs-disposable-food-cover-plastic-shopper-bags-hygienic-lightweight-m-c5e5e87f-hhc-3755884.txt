@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100 Pcs Disposable Food Cover Plastic Shopper Bags | Hygienic & Lightweight | Multi‑Purpose Use
 Product ID: hhc-3755884
 SKU: hhc-3755884
@@ -7,11 +8,16 @@ Slug: 100-pcs-disposable-food-cover-plastic-shopper-bags-hygienic-lightweight-c5
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/bd5cb096aeb4197f7392fbc86ec11b6b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/bd5cb096aeb4197f7392fbc86ec11b6b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/bf423f3ace12761b15ac30108e87559b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/740c0453770674f6410b7544752b0df8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/e4d906933f418553ec186fbbd1d67cf2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/a46c15110b41b4dd95fd4f6e4de023ba.jpeg
 Meta Title: 100 Pcs Disposable Food Cover Plastic Shopper Bags | Hygienic & Ligh
 Meta Description: Buy 100 Pcs Disposable Food Cover Plastic Shopper Bags | Hygienic & Lightweight | Multi‑Purpose Use online in Pakistan from ASM VEO. Pack of 100 disposable plas
 Description: Pack of 100 disposable plastic shopper bags. Ideal for food covering, storage, and hygienic everyday use.
-Regular Price: 255
-Sale Price: 255
+Wholesale Price: 205
+Regular Price: 518
+Sale Price: 368
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

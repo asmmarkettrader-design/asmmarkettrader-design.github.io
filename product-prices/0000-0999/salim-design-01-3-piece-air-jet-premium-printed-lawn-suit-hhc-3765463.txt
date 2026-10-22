@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Salim Design 01 – 3 Piece Air Jet Premium Printed Lawn Suit
 Product ID: hhc-3765463
 SKU: hhc-3765463
@@ -7,11 +8,16 @@ Slug: salim-design-01-3-piece-air-jet-premium-printed-lawn-suit-hhc-3765463
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/33b01eb21d707b7323d34bb50c4c29fb.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/33b01eb21d707b7323d34bb50c4c29fb.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/c03d505f3d1c2a4d42b2e98838e9a3c9.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/84f43d0d2c846f0bc56aa6b01ed85aa3.jpg
 Meta Title: Salim Design 01 – 3 Piece Air Jet Premium Printed Lawn Suit | Buy On
 Meta Description: Buy Salim Design 01 – 3 Piece Air Jet Premium Printed Lawn Suit online in Pakistan from ASM VEO. Salim Design 01 is a beautiful 3-piece premium printed lawn sui
 Description: Salim Design 01 is a beautiful 3-piece premium printed lawn suit featuring an elegant rust-brown and teal color combination with intricate floral motifs and a stylish printed border.Fabric &amp; Details:3 Piece Printed SuitDigital Air Jet Printed Lawn ShirtDigital Printed Lawn Voil DupattaDyed Cambric TrouserPremium Lawn FabricSoft &amp; ComfortableElegant Digital Printed DesignPerfect for Everyday &amp; Casual Wear
-Regular Price: 3288
-Sale Price: 3288
+Wholesale Price: 3288
+Regular Price: 5570
+Sale Price: 4454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

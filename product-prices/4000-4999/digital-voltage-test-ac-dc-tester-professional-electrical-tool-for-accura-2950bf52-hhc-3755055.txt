@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital Voltage Test AC DC Tester Professional Electrical Tool for Accurate Measurement
 Product ID: hhc-3755055
 SKU: hhc-3755055
@@ -7,11 +8,16 @@ Slug: digital-voltage-test-ac-dc-tester-professional-electrical-tool-for-accu-29
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/cc6c0f60eea365caa345fe610af81827.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/cc6c0f60eea365caa345fe610af81827.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/047c27ec1088513f835bd0518156566f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/5b81e36122e391b3d18efc495721ec5d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/e1d11446be2bba6315573c49f9b1b050.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/9f8dc6df2b50bb4895ace24ddbfc6875.jpeg
 Meta Title: Digital Voltage Test AC DC Tester Professional Electrical Tool for A
 Meta Description: Buy Digital Voltage Test AC DC Tester Professional Electrical Tool for Accurate Measurement online in Pakistan from ASM VEO. High quality digital tester for AC
 Description: High quality digital tester for AC DC voltage measurement with accurate results and safe usage.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 In 1 Whitening + Age Reversal + Melasma Face Wash 120ml | Glow, Rewind, Repair Formula With Vitamin A, Niacinamide, And Vitamin C For Spot-Free Radiant Skin
 Product ID: hhc-3752985
 SKU: hhc-3752985
@@ -7,11 +8,16 @@ Slug: 3-in-1-whitening-age-reversal-melasma-face-wash-120ml-glow-rewind-repai-00
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/9c11182037245462758ba0a0a26301b8.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/9c11182037245462758ba0a0a26301b8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/9751ae4899e5f7d9ba4510a198557ad2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/94139e8db216d2dfe2e970c37c180c26.png
 Meta Title: 3 In 1 Whitening + Age Reversal + Melasma Face Wash 120ml | Glow, Re
 Meta Description: Buy 3 In 1 Whitening + Age Reversal + Melasma Face Wash 120ml | Glow, Rewind, Repair Formula With Vitamin A, Niacinamide, And Vitamin C For Spot-Free Radiant Sk
 Description: 3 In 1 Face Wash 120ml Targets Spots, Smooths Wrinkles, And Revives Glow With A Powerful Blend Of Vitamin A, Niacinamide, And Vitamin C For Youthful, Bright Skin.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: BIOPLEX Istanbul Hair Care New Protein Anti Orange Anti Yellow Treatment 50g
 Product ID: hhc-3761411
 SKU: hhc-3761411
@@ -7,11 +8,16 @@ Slug: bioplex-istanbul-hair-care-new-protein-anti-orange-anti-yellow-treatment-5
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/a926867651a9facc364e368a63bfece9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/a926867651a9facc364e368a63bfece9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/9879c530c3216d730ef7065f0d9457f0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/a287e3df3d5723f15167efd6ef147845.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/c255fcdaeca675906fc49d546a94a77c.jpeg
 Meta Title: BIOPLEX Istanbul Hair Care New Protein Anti Orange Anti Yellow Treat
 Meta Description: Buy BIOPLEX Istanbul Hair Care New Protein Anti Orange Anti Yellow Treatment 50g online in Pakistan from ASM VEO. BIOPLEX Istanbul New Protein Hair Care Treatme
 Description: BIOPLEX Istanbul New Protein Hair Care Treatment is a 50g protein-specific hair care formula designed to help reduce unwanted orange and yellow tones while leaving hair looking smoother and more manageable.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

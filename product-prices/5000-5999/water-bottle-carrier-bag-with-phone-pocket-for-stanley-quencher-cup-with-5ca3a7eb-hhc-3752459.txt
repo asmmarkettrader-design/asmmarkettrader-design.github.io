@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Water Bottle Carrier Bag with Phone Pocket for Stanley Quencher Cup with Handle Water Bottle Holder Pouch - For 1200 ML Bottle
 Product ID: hhc-3752459
 SKU: hhc-3752459
@@ -7,11 +8,16 @@ Slug: water-bottle-carrier-bag-with-phone-pocket-for-stanley-quencher-cup-wit-5c
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
-Meta Title: Water Bottle Carrier Bag with Phone Pocket for Stanley Quencher Cup
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/45064e7cc203262d94a305e284b1e756.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/45064e7cc203262d94a305e284b1e756.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/f6a52183fb0644382e54da58038f5df7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/368529dd028636e651499527a6113ba2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/045b0dc9d00526f9534b7e2207c55c86.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/6f3c0d8608fc17c2df2bb01f90e8966c.jpg
+Meta Title: Water Bottle Carrier Bag with Phone Pocket for Stanley Quencher Cup 
 Meta Description: Buy Water Bottle Carrier Bag with Phone Pocket for Stanley Quencher Cup with Handle Water Bottle Holder Pouch - For 1200 ML Bottle online in Pakistan from ASM V
 Description: Stay hydrated in style with this multifunctional water bottle carrier bag, featuring a keychain attachment, adjustable strap, and extra storage compartments. Made from durable, waterproof neoprene, it’s perfect for outdoor adventures and everyday convenience.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

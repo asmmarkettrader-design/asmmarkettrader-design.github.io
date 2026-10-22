@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Summer Collection Full Grey Hoodie TWO HEART ONE LOVE Printed For Girl And Boys
 Product ID: hhc-3752561
 SKU: hhc-3752561
@@ -7,11 +8,16 @@ Slug: new-summer-collection-full-grey-hoodie-two-heart-one-love-printed-for-g-63
 Category: Fashion
 Subcategory: Trucksuits & Activewear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/e9ddb11376eba0afd9c17e290191f29e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/e9ddb11376eba0afd9c17e290191f29e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/a7ec8ef0f9c831d48af79a09ba8b017c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/be7716a838faf1ea98c596c82b07db50.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/6e65c79b6073b5fc9b4ca18567dcd718.jpeg
 Meta Title: New Summer Collection Full Grey Hoodie TWO HEART ONE LOVE Printed Fo
 Meta Description: Buy New Summer Collection Full Grey Hoodie TWO HEART ONE LOVE Printed For Girl And Boys online in Pakistan from ASM VEO. New Summer Collection Full Grey Hoodie
 Description: New Summer Collection Full Grey Hoodie TWO HEART ONE LOVE Printed For Girl And Boys
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

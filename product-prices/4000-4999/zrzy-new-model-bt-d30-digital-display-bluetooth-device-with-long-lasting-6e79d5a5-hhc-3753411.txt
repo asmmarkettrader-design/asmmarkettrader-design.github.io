@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zrzy New Model BT D30 | Digital Display Bluetooth Device with Long-Lasting Battery – Reliable, Modern & Portable
 Product ID: hhc-3753411
 SKU: hhc-3753411
@@ -7,11 +8,16 @@ Slug: zrzy-new-model-bt-d30-digital-display-bluetooth-device-with-long-lastin-6e
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/7e644de45bd94412f67f6dc4eced3425.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/7e644de45bd94412f67f6dc4eced3425.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/c663c7258f178a20489148adbaf0bea4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/d787d06c126cbb7dfe139c1855116cbd.png
 Meta Title: Zrzy New Model BT D30 | Digital Display Bluetooth Device with Long-L
 Meta Description: Buy Zrzy New Model BT D30 | Digital Display Bluetooth Device with Long-Lasting Battery – Reliable, Modern & Portable online in Pakistan from ASM VEO. Zrzy BT D3
 Description: Zrzy BT D30 with digital display and extended battery life — sleek, reliable, and perfect for long-lasting Bluetooth performance.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

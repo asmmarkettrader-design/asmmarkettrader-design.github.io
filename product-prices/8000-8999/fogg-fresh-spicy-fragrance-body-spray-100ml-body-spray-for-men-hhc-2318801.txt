@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FOGG Fresh Spicy Fragrance Body Spray - 100ml Body Spray - For Men
 Product ID: hhc-2318801
 SKU: hhc-2318801
@@ -7,11 +8,16 @@ Slug: fogg-fresh-spicy-fragrance-body-spray-100ml-body-spray-for-men-hhc-2318801
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/120-fresh-spicy-fragrance-body-spray-120ml-1-body-spray-fogg-men-original-imagtykmsbmub2qb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/120-fresh-spicy-fragrance-body-spray-120ml-1-body-spray-fogg-men-original-imagtykmsbmub2qb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/120-fresh-spicy-fragrance-body-spray-120ml-1-body-spray-fogg-men-original-imagtykmf4my63hs.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/120-fresh-spicy-fragrance-body-spray-120ml-1-body-spray-fogg-men-original-imagtykm4wskkggn.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-14-at-4.25.28-PM.jpeg
 Meta Title: FOGG Fresh Spicy Fragrance Body Spray - 100ml Body Spray - For Men |
 Meta Description: Buy FOGG Fresh Spicy Fragrance Body Spray - 100ml Body Spray - For Men online in Pakistan from ASM VEO. Brand FOGG Model Name Fresh Spicy Fragrance Body Spray -
 Description: Brand FOGG Model Name Fresh Spicy Fragrance Body Spray - 100ml Ideal For Men Type Body Spray Quantity 100ml Maximum Shelf Life
-Regular Price: 1557
-Sale Price: 1557
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

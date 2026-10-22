@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tint &amp; Liner Deal, Pack of 2
 Product ID: hhc-2007267
 SKU: hhc-2007267
@@ -7,11 +8,16 @@ Slug: tint-amp-liner-deal-pack-of-2-hhc-2007267
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-06-at-12.50.36-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-06-at-12.50.36-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-06-at-12.50.35-PM.jpeg
 Meta Title: Tint &amp; Liner Deal, Pack of 2 | Buy Online in Pakistan
 Meta Description: Buy Tint &amp; Liner Deal, Pack of 2 online in Pakistan from ASM VEO. Tint &amp; Liner Deal, Pack of 2 &nbsp; The Benefit BENETINT is a versatile and innovative
 Description: Tint &amp; Liner Deal, Pack of 2 &nbsp; The Benefit BENETINT is a versatile and innovative product that offers a wide range of benefits for your beauty routine Benefit BENETINT is a long-lasting lip and cheek stain that provides a natural and flushed look to your complexion Its smudge-proof and kiss-proof formulation, this product ensures that your lip and cheek color stays put all day long &nbsp; Package Includes: 1× Tint , 1× 36H Eye Liner &nbsp;
-Regular Price: 505
-Sale Price: 505
+Wholesale Price: 455
+Regular Price: 930
+Sale Price: 742
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

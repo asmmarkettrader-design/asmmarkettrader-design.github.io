@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lexi Beauty Soap Providing Gentle Care With Soft Texture Refreshing Cleanse Everyday Skin Care - 125g
 Product ID: hhc-3754642
 SKU: hhc-3754642
@@ -7,11 +8,16 @@ Slug: lexi-beauty-soap-providing-gentle-care-with-soft-texture-refreshing-cle-b5
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Lexi Beauty Soap Providing Gentle Care With Soft Texture Refreshing
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/5754bcb87b5bf0920b7bbecb90ee9a0b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/5754bcb87b5bf0920b7bbecb90ee9a0b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/1b36402bd2f5cc001018f3286ae53ba0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/896c994ecfb01dfd5ece46afb84b1632.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/fbc92c60e0c8f3f895a8fa7ea8befb2a.jpeg
+Meta Title: Lexi Beauty Soap Providing Gentle Care With Soft Texture Refreshing 
 Meta Description: Buy Lexi Beauty Soap Providing Gentle Care With Soft Texture Refreshing Cleanse Everyday Skin Care - 125g online in Pakistan from ASM VEO. Lexi Beauty Soap Offe
 Description: Lexi Beauty Soap Offering Gentle Cleanse With Soft Texture And Refreshing Daily Care
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

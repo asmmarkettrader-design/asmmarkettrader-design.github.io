@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 66W Fast Charging 20,000mAh Power Bank with Built-in Cables (White)
 Product ID: hhc-3760837
 SKU: hhc-3760837
@@ -7,11 +8,16 @@ Slug: 66w-fast-charging-20-000mah-power-bank-with-built-in-cables-white-hhc-3760
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
-Meta Title: 66W Fast Charging 20,000mAh Power Bank with Built-in Cables (White)
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/3c5fb3d6d7a256cd913953146ce9f360.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/3c5fb3d6d7a256cd913953146ce9f360.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/9f83f01af4fed3c36ea3531450c961c9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/c989ba7e3d8e600196e9f3206843540a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/e2e30508691989646a9b0c58273ec4c9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/065fa35436abf816f4ef3c1b9541a012.jpeg
+Meta Title: 66W Fast Charging 20,000mAh Power Bank with Built-in Cables (White) 
 Meta Description: Buy 66W Fast Charging 20,000mAh Power Bank with Built-in Cables (White) online in Pakistan from ASM VEO. Never run out of power again with the Ultimate 20,000mA
 Description: Never run out of power again with the Ultimate 20,000mAh Super-Fast Charging Power Bank.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

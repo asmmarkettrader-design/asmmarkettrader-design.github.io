@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS Antifreeze Coolant Blue – Premium Grade HOAT Coolant | Long-Life Radiator Fluid | Engine Overheat & Freeze Protection | Ready-to-Use Formula (1000) ML
 Product ID: hhc-3756968
 SKU: hhc-3756968
@@ -7,11 +8,16 @@ Slug: three-guys-antifreeze-coolant-blue-premium-grade-hoat-coolant-long-life-1b
 Category: Oils & Lubricants
 Subcategory: Brake Fluid
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/60b6c5c47e8c23225924ab8cff1b50e5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/60b6c5c47e8c23225924ab8cff1b50e5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/5f750d47f69619ecefd0e6813731ac80.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/afb01cdb6cfd82657117905d2b22e0f5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/fda7edf1a3493c547d6c9063fffeb9f9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/f74e7f939928550971bdf2eb2be74434.jpeg
 Meta Title: THREE GUYS Antifreeze Coolant Blue – Premium Grade HOAT Coolant | Lo
 Meta Description: Buy THREE GUYS Antifreeze Coolant Blue – Premium Grade HOAT Coolant | Long-Life Radiator Fluid | Engine Overheat & Freeze Protection | Ready-to-Use Formula (100
 Description: THREE GUYS Antifreeze Coolant Blue is a premium HOAT-based radiator fluid designed to protect your engine from overheating and freezing. The ready-to-use formula provides long-lasting corrosion protection, improves heat transfer, and keeps the cooling system running smoothly in all weather condition.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

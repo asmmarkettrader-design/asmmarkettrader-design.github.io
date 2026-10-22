@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels with Adhesive Tape for Easy Mounting
 Product ID: hhc-3752296
 SKU: hhc-3752296
@@ -7,11 +8,16 @@ Slug: butterfly-floral-wall-art-3-piece-8x11-wooden-sticky-tile-panels-with-a-53
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/18d48b0c4ef542d6d7a8ab35a672fa29.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/18d48b0c4ef542d6d7a8ab35a672fa29.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/ebfbba5718c418fc1aa6945541656c4d.jpeg
+Meta Title: Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels 
 Meta Description: Buy Butterfly Floral Wall Art – 3-Piece 8x11” Wooden Sticky Tile Panels with Adhesive Tape for Easy Mounting online in Pakistan from ASM VEO. Add a touch of ele
 Description: Add a touch of elegance to your space with this 3-piece butterfly floral wall art set. Each 8x11” wooden sticky tile features golden butterflies and blooming flowers on a rich teal background. Easy to mount with included adhesive tape—no tools required.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Special Decoration Fancy Stylish Skull Shape Motorcycle Indicators
 Product ID: hhc-3756451
 SKU: hhc-3756451
@@ -7,11 +8,16 @@ Slug: special-decoration-fancy-stylish-skull-shape-motorcycle-indicators-hhc-375
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/2bc6e6fac5a3d510fa1084b35f374114.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/2bc6e6fac5a3d510fa1084b35f374114.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/6250ea01c6aabbae26a169b2dd79c318.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/30b06ca5b675d75f08ed4f2e7316d0b3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/063bc74c3bfe0c2679284756baab360a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/e17d78cdbc486f688dd892ac2fca0092.jpeg
 Meta Title: Special Decoration Fancy Stylish Skull Shape Motorcycle Indicators |
 Meta Description: Buy Special Decoration Fancy Stylish Skull Shape Motorcycle Indicators online in Pakistan from ASM VEO. Add a bold and edgy look to your motorcycle with these s
 Description: Add a bold and edgy look to your motorcycle with these skull-shaped LED indicators available in white and black finishes. Perfect for riders who want to stand out on the road with style and safety.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

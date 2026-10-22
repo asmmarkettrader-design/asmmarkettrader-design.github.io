@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FT-2031 Subwoofer Pairs Speaker Premium Sound USB Powered for Laptop, Mobile & Computer - Set Of 2pc
 Product ID: hhc-3757324
 SKU: hhc-3757324
@@ -7,11 +8,16 @@ Slug: ft-2031-subwoofer-pairs-speaker-premium-sound-usb-powered-for-laptop-mo-5f
 Category: Audio & Entertainment
 Subcategory: Bluetooth Speakers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/01b343bbc7148eb2058b4bc3537f2b58.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/01b343bbc7148eb2058b4bc3537f2b58.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/ab270b33c5fb92fac8900f7b46ff982b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/a0f0cf0a0dedabd854d2e43a063dbe71.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/b4b5719f94b6496e6a139b821495ab4a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/22a05a373ba2e124cbd834a8548fbb18.jpeg
 Meta Title: FT-2031 Subwoofer Pairs Speaker Premium Sound USB Powered for Laptop
 Meta Description: Buy FT-2031 Subwoofer Pairs Speaker Premium Sound USB Powered for Laptop, Mobile & Computer - Set Of 2pc online in Pakistan from ASM VEO. FT-2031 Subwoofer Pair
 Description: FT-2031 Subwoofer Pairs Speaker delivers premium sound quality with deep bass, perfect for laptops, mobiles, and desktop computers. Compact size with USB power support makes it ideal for everyday use.
-Regular Price: 1401
-Sale Price: 1401
+Wholesale Price: 1351
+Regular Price: 2470
+Sale Price: 1978
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Extreme Rubbing Compound – Scratch & Swirl Remover | THREE GUYS | German Engineered (250g)
 Product ID: hhc-3756908
 SKU: hhc-3756908
@@ -7,11 +8,16 @@ Slug: extreme-rubbing-compound-scratch-swirl-remover-three-guys-german-engineere
 Category: Automotive
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/4190040fbd20b199c5c56d94dade7df7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/4190040fbd20b199c5c56d94dade7df7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/d8866ddcf7f13301be0264acd2d51762.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/ddf2dd0eea9c2f7a44cb465fb98edf50.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/457700a262482f2d2c16777d74200ca8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/b3251df34e022fe8a346366cc5df8457.webp
 Meta Title: Extreme Rubbing Compound – Scratch & Swirl Remover | THREE GUYS | Ge
 Meta Description: Buy Extreme Rubbing Compound – Scratch & Swirl Remover | THREE GUYS | German Engineered (250g) online in Pakistan from ASM VEO. THREE GUYS Extreme Rubbing Compo
 Description: THREE GUYS Extreme Rubbing Compound helps remove scratches, swirl marks, oxidation, and stains from car paint. The German engineered formula restores smoothness and shine, giving your vehicle a clean and refreshed look. Net Weight: 250g.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

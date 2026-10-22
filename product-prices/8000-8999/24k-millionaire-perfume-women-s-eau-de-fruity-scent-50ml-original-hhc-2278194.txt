@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 24K  Millionaire Perfume Women's Eau de Fruity Scent 50ml (original)
 Product ID: hhc-2278194
 SKU: hhc-2278194
@@ -7,11 +8,16 @@ Slug: 24k-millionaire-perfume-women-s-eau-de-fruity-scent-50ml-original-hhc-2278
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: 24K Millionaire Perfume Women's Eau de Fruity Scent 50ml (original)
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/51whph8xjaL._AC_SX569_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/51whph8xjaL._AC_SX569_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/20240912_212225.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/8c7de16292c6e69f4a588810264edecf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/4b57782f-3b1e-4387-8e8c-eaa9a9b5ea3a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/3045308a-ad21-42cc-866c-5d78e02e7159.webp
+Meta Title: 24K Millionaire Perfume Women's Eau de Fruity Scent 50ml (original) 
 Meta Description: Buy 24K Millionaire Perfume Women's Eau de Fruity Scent 50ml (original) online in Pakistan from ASM VEO. DescriptionLight and Refreshing: Infused with a delicat
 Description: DescriptionLight and Refreshing: Infused with a delicate blend of natural essential oils, this body splash offers a refreshing and lightweight fragrance, perfect for daily wear and suitable for all skin types.Versatile Use: Ideal for both romantic dates and daily wear, making it a versatile addition to your fragrance collection.Size: 50ml FragranceType: Eau de Parfum (EDP)levate your fragrance game with the luxurious 24K MILLIONAIRE Perfume 50ml. A luxurious fragrance for special occasions and everyday wear.
-Regular Price: 1557
-Sale Price: 1557
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

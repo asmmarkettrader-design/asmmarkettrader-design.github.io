@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sunisa 3 in 1 Air Cushion BB and CC Cream Foundation
 Product ID: hhc-1948802
 SKU: hhc-1948802
@@ -7,11 +8,16 @@ Slug: sunisa-3-in-1-air-cushion-bb-and-cc-cream-foundation-hhc-1948802
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-10.38.11-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-10.38.11-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-23-at-10.38.15-PM.jpeg
 Meta Title: Sunisa 3 in 1 Air Cushion BB and CC Cream Foundation | Buy Online in
 Meta Description: Buy Sunisa 3 in 1 Air Cushion BB and CC Cream Foundation online in Pakistan from ASM VEO. 3 in 1 air cushion cc cream and foundation. Foundation + Concealer Wat
 Description: 3 in 1 air cushion cc cream and foundation. Foundation + Concealer Waterproof and sweat + scratch-resistant. Comfortable to wear all-day Superb Oil control suitable for any skin type at any age. Compact design for quick Full coverage and Natural dewy finish.
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

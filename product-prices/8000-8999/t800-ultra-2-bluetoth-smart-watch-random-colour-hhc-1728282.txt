@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: T800 Ultra 2 Bluetoth Smart Watch (Random Colour)
 Product ID: hhc-1728282
 SKU: hhc-1728282
@@ -7,11 +8,16 @@ Slug: t800-ultra-2-bluetoth-smart-watch-random-colour-hhc-1728282
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/YZC23121901B_20231219145449546_3AF.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/YZC23121901B_20231219145449546_3AF.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/WhatsApp-Image-2024-06-04-at-12.43.45-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/H680acc78c76f4bc49952bc1ea115c40b0.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/YZC23121901B_20231219145445526_1TS.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/YZC23121901B_20231219145445554_W2e.jpg
 Meta Title: T800 Ultra 2 Bluetoth Smart Watch (Random Colour) | Buy Online in Pa
 Meta Description: Buy T800 Ultra 2 Bluetoth Smart Watch (Random Colour) online in Pakistan from ASM VEO. Specifications Specifications of the T800 Ultra 2 Smart Watch: Top qualit
 Description: Specifications Specifications of the T800 Ultra 2 Smart Watch: Top quality T800 Ultra 2 Smart Watch Comes with several tracking features Features IP67 rated waterproof Features Bluetooth Comes with the 240 x 240 Touch screen display Easy to use Comfortable to wear Record your sleep quality and sleep cycle (deep sleep, light sleep, etc.) to help you understand and improve your sleep quality and achieve high-quality sleep. Precise measurement and health protection Original Picture &nbsp;
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Firming Massage Roller Face Slimmer Massager Body Neck Arms Face
 Product ID: hhc-1077766
 SKU: hhc-1077766
@@ -7,11 +8,16 @@ Slug: 3d-firming-massage-roller-face-slimmer-massager-body-neck-arms-face-hhc-10
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: 3D Firming Massage Roller Face Slimmer Massager Body Neck Arms Face
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/deb10932822598944e00fe07535b0ee0.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/deb10932822598944e00fe07535b0ee0.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/671023cc22c874afc3b5d66bb0e5b195.jpg_750x750.jpg_.webp
+Meta Title: 3D Firming Massage Roller Face Slimmer Massager Body Neck Arms Face 
 Meta Description: Buy 3D Firming Massage Roller Face Slimmer Massager Body Neck Arms Face online in Pakistan from ASM VEO. product details 3D FIRMING MASSAGE ROLLER • Unique Body
 Description: product details 3D FIRMING MASSAGE ROLLER • Unique Body Slimmer, 3D body massager as seen on tv. • Strong while soft silicon wheel for strong massage and cellulite reduction . • Strong while soft enough silicon teeth shape rollers, deeply grasp your muscle and rotate at very high frequency to break fat tissues underneath • Metal Gear box, pretty quite during usage, pleasant for usage feeling. • Durable design and high quality materials provide reliable quality,
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

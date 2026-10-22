@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 16-In-1 Multifunctional Vegetable Chopper & Slicer with Colander Basket and Storage Container – Heavy Duty Manual Food Cutter & Dicer
 Product ID: hhc-3756582
 SKU: hhc-3756582
@@ -7,11 +8,16 @@ Slug: 16-in-1-multifunctional-vegetable-chopper-slicer-with-colander-basket-a-7c
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/5d7bda1c0948f5508c62cf77d4d4afbc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/5d7bda1c0948f5508c62cf77d4d4afbc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/4e3be7df536477c757d2da08592a70dd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/a6f1ee0bcfbf4363db2cdf80d0a4e8d9.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/a33bb4206b8cecd4bfe2bb9791504706.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/4be04731fad4f6fa7767c150dd1424e9.webp
 Meta Title: 16-In-1 Multifunctional Vegetable Chopper & Slicer with Colander Bas
 Meta Description: Buy 16-In-1 Multifunctional Vegetable Chopper & Slicer with Colander Basket and Storage Container – Heavy Duty Manual Food Cutter & Dicer online in Pakistan fro
 Description: Upgrade your kitchen efficiency with this 16-in-1 multifunctional vegetable chopper and slicer. Designed for quick, safe, and precise cutting, it comes with interchangeable blades, a built-in colander basket, and a storage container for mess-free meal preparation.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

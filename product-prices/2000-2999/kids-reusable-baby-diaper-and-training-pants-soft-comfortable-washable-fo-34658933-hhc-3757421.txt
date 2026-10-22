@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Reusable Baby Diaper And Training Pants Soft Comfortable Washable For Daily Use | Random Colour
 Product ID: hhc-3757421
 SKU: hhc-3757421
@@ -7,11 +8,16 @@ Slug: kids-reusable-baby-diaper-and-training-pants-soft-comfortable-washable-346
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/9c67c6652ce72bff38f26862eec2bcc0.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/9c67c6652ce72bff38f26862eec2bcc0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/a46fbdfe81744c1cdc1676616b7e0977.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/0dda54eb8bacad9ce05784df9de62637.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/62ed6a43d58d23eb685ba0e8b539d1b1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/5dd7d482300aab7e959fb7531f5a7238.jpeg
 Meta Title: Kids Reusable Baby Diaper And Training Pants Soft Comfortable Washab
 Meta Description: Buy Kids Reusable Baby Diaper And Training Pants Soft Comfortable Washable For Daily Use | Random Colour online in Pakistan from ASM VEO. Kids Reusable Baby Dia
 Description: Kids Reusable Baby Diaper And Training Pants Soft Comfortable Washable And Easy To Use.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

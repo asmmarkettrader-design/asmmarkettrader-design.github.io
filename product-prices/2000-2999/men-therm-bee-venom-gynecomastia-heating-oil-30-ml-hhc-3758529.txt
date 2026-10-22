@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men Therm Bee Venom Gynecomastia Heating Oil - 30 ml
 Product ID: hhc-3758529
 SKU: hhc-3758529
@@ -7,11 +8,16 @@ Slug: men-therm-bee-venom-gynecomastia-heating-oil-30-ml-hhc-3758529
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/e854afaddd54b53f0d58871e0767de63.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/e854afaddd54b53f0d58871e0767de63.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/ce77b53fa46295bfa4b323b94ac3b95c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/90a36b1b6ec7787c6a92acd3280dfa56.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/36e4f980a3c2d0d1a65cd23cc1ffb436.jpeg
 Meta Title: Men Therm Bee Venom Gynecomastia Heating Oil - 30 ml | Buy Online in
 Meta Description: Buy Men Therm Bee Venom Gynecomastia Heating Oil - 30 ml online in Pakistan from ASM VEO. Men Therm is a specialized heating oil designed to target the appearan
 Description: Men Therm is a specialized heating oil designed to target the appearance of Gynecomastia and help shape the male chest area. Enriched with bee venom extract, this formula creates a warming effect on the skin.
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

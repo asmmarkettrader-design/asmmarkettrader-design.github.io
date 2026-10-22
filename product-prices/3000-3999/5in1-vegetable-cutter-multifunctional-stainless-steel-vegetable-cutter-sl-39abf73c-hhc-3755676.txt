@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5in1 Vegetable Cutter | Multifunctional Stainless Steel Vegetable Cutter & Slicer | 5-in-1 Kitchen Tool - 12 Inch | Vegetable Cutter Peeler Slicer Dicer Grater
 Product ID: hhc-3755676
 SKU: hhc-3755676
@@ -7,11 +8,16 @@ Slug: 5in1-vegetable-cutter-multifunctional-stainless-steel-vegetable-cutter-39a
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/80a277b29b62bd13bcfaaaca298070ae.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/19/80a277b29b62bd13bcfaaaca298070ae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/fac39fb25bd908ecbca9963e07252c1d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/a1a49ff18ee8b5f8cd4f4949f41e1d7d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/57d55aa7475d63ee0cec4d7d7f997706.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/38a9e47d90e80e523488113374880e79.jpg
 Meta Title: 5in1 Vegetable Cutter | Multifunctional Stainless Steel Vegetable Cu
 Meta Description: Buy 5in1 Vegetable Cutter | Multifunctional Stainless Steel Vegetable Cutter & Slicer | 5-in-1 Kitchen Tool - 12 Inch | Vegetable Cutter Peeler Slicer Dicer Gra
 Description: Make food preparation faster and easier with the 5in1 Vegetable Cutter. Designed with sharp stainless steel blades, it slices, dices, chops, and shreds vegetables effortlessly. This multifunctional kitchen tool saves time, ensures uniform cuts, and is perfect for everyday cooking needs.
-Regular Price: 577
-Sale Price: 577
+Wholesale Price: 527
+Regular Price: 1030
+Sale Price: 824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

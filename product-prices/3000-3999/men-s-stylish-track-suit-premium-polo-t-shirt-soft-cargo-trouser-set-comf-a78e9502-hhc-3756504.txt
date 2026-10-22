@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men’s Stylish Track Suit – Premium Polo T-Shirt & Soft Cargo Trouser Set | Comfortable Casual Sportswear for Gym, Travel & Daily Wear
 Product ID: hhc-3756504
 SKU: hhc-3756504
@@ -7,11 +8,16 @@ Slug: men-s-stylish-track-suit-premium-polo-t-shirt-soft-cargo-trouser-set-co-a7
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/5dc6e609d1df6cd065886ba2340f6ccd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/5dc6e609d1df6cd065886ba2340f6ccd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/c45c648b38ce63d6d575412c3ed60b54.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/9af8221961844899399316520d690ad2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/6c4619da011263322b8cafb981e9270e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/21/f329f4e901ee7a459fa9e3da9ae8fee2.jpeg
 Meta Title: Men’s Stylish Track Suit – Premium Polo T-Shirt & Soft Cargo Trouser
 Meta Description: Buy Men’s Stylish Track Suit – Premium Polo T-Shirt & Soft Cargo Trouser Set | Comfortable Casual Sportswear for Gym, Travel & Daily Wear online in Pakistan fro
 Description: Upgrade your everyday style with this modern men’s track suit featuring a comfortable polo t-shirt and soft cargo trousers, designed for both casual wear and active lifestyles.
-Regular Price: 1741
-Sale Price: 1741
+Wholesale Price: 1741
+Regular Price: 3160
+Sale Price: 2530
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

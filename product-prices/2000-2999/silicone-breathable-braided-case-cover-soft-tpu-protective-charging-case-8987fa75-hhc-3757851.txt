@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Breathable Braided Case Cover – Soft TPU Protective Charging Case (Random Color)
 Product ID: hhc-3757851
 SKU: hhc-3757851
@@ -7,11 +8,16 @@ Slug: silicone-breathable-braided-case-cover-soft-tpu-protective-charging-cas-89
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/dd618cdea22bbd8d3a329746b27d0ae7.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/dd618cdea22bbd8d3a329746b27d0ae7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/a3cda1358a741d6751d4dadb900ffe43.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/426bb8c1a312b448a93527fd1bc9b7df.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/0a65f75914bf63a93215c096a306300f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/d1c17887815f4bb81bf4f5b42abd229a.jpeg
 Meta Title: Silicone Breathable Braided Case Cover – Soft TPU Protective Chargin
 Meta Description: Buy Silicone Breathable Braided Case Cover – Soft TPU Protective Charging Case (Random Color) online in Pakistan from ASM VEO. Durable and stylish braided silic
 Description: Durable and stylish braided silicone case designed. Provides full protection with a breathable design and easy access to charging.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

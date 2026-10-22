@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vaseline New Formula With Natural Moisturizing Care, Nourishing Petroleum Jelly For Smooth, Soft And Hydrated Skin Protection (100g)
 Product ID: hhc-3752858
 SKU: hhc-3752858
@@ -7,11 +8,16 @@ Slug: vaseline-new-formula-with-natural-moisturizing-care-nourishing-petroleu-0e
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/35f57fc913d98d9503d511e2af60ce0a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/35f57fc913d98d9503d511e2af60ce0a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/2791692e6ab961b5ebb9d1579d7180f6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/406aaf8181cb3d96f8328e1755fa8717.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/06853ac4aec29258ebd0f22bde560957.png
 Meta Title: Vaseline New Formula With Natural Moisturizing Care, Nourishing Petr
 Meta Description: Buy Vaseline New Formula With Natural Moisturizing Care, Nourishing Petroleum Jelly For Smooth, Soft And Hydrated Skin Protection (100g) online in Pakistan from
 Description: Vaseline New Formula Provides Deep Moisturization, Protects Dry Skin, And Leaves It Soft, Smooth, And Healthy With Natural Hydrating Ingredients.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

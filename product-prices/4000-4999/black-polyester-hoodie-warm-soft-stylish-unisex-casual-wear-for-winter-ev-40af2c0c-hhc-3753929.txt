@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Polyester Hoodie – Warm, Soft & Stylish | Unisex Casual Wear for Winter & Everyday Comfort
 Product ID: hhc-3753929
 SKU: hhc-3753929
@@ -7,11 +8,16 @@ Slug: black-polyester-hoodie-warm-soft-stylish-unisex-casual-wear-for-winter-40a
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/a13070a49f9546ce47987a97375d8872.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/a13070a49f9546ce47987a97375d8872.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/01e0318051a071e99d91b44f298f9b37.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/528e40e60b65a40bc403f4b90c8cd20d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/7548d7dccd7ff33ae72fb69983f7afaa.png
 Meta Title: Black Polyester Hoodie – Warm, Soft & Stylish | Unisex Casual Wear f
 Meta Description: Buy Black Polyester Hoodie – Warm, Soft & Stylish | Unisex Casual Wear for Winter & Everyday Comfort online in Pakistan from ASM VEO. Stay warm and stylish with
 Description: Stay warm and stylish with this Black Polyester Hoodie, designed for everyday comfort, durability, and a perfect casual look. Ideal for winter, outdoor wear, gym, travel, and daily use.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

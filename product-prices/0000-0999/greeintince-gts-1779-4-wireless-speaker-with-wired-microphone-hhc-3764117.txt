@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Greeintince GTS-1779 4" Wireless Speaker with Wired Microphone
 Product ID: hhc-3764117
 SKU: hhc-3764117
@@ -7,11 +8,16 @@ Slug: greeintince-gts-1779-4-wireless-speaker-with-wired-microphone-hhc-3764117
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/f3d757f7bd224f07917cd1c6edb2b45d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/f3d757f7bd224f07917cd1c6edb2b45d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/86defd65d2b201e329a91eebb9502e87.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/f5aee6ba610eccb8af89f3a248342ef2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/1376b259a457200de25374cdcc60ea8a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/406d99e28731972bbb7b5244b0809969.jpg
 Meta Title: Greeintince GTS-1779 4" Wireless Speaker with Wired Microphone | Buy
 Meta Description: Buy Greeintince GTS-1779 4" Wireless Speaker with Wired Microphone online in Pakistan from ASM VEO. A portable 4-inch 5W wireless Bluetooth speaker featuring ba
 Description: A portable 4-inch 5W wireless Bluetooth speaker featuring bass-boosted clear audio, dynamic LED light effects, and a wired microphone for karaoke. Equipped with USB, TF card, FM radio, AUX support, and a rechargeable 1200mAh battery.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Natural Smooth Whitening CC Foundation Spf 50 With Mushroom Head Air Cushion
 Product ID: hhc-2029540
 SKU: hhc-2029540
@@ -7,11 +8,16 @@ Slug: natural-smooth-whitening-cc-foundation-spf-50-with-mushroom-head-air-cushi
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-10-at-8.07.00-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-10-at-8.07.00-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-10-at-8.07.00-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-10-at-8.06.59-PM-1.jpeg
 Meta Title: Natural Smooth Whitening CC Foundation Spf 50 With Mushroom Head Air
 Meta Description: Buy Natural Smooth Whitening CC Foundation Spf 50 With Mushroom Head Air Cushion online in Pakistan from ASM VEO. &nbsp; &nbsp; Natural Smooth Whitening CC Foun
 Description: &nbsp; &nbsp; Natural Smooth Whitening CC Foundation Spf 50 With Mushroom Head Air Cushion Skin Type: All Skin Types Size Type: Regular size
-Regular Price: 798
-Sale Price: 798
+Wholesale Price: 748
+Regular Price: 1430
+Sale Price: 1145
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

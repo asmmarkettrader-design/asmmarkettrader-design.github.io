@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Quilted Plain Refrigerator Cover – Dustproof Fridge Top Protector (random color)
 Product ID: hhc-3764997
 SKU: hhc-3764997
@@ -7,11 +8,16 @@ Slug: quilted-plain-refrigerator-cover-dustproof-fridge-top-protector-random-col
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/9eb9a7b9e92850655e094356f3087d35.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/9eb9a7b9e92850655e094356f3087d35.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/800ed0ef798163fc8622768c99c88e70.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/bd3c54e2b27b549c71fff45aa0a8b7d1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/76d439d3d457083c1e556c94a763d4dc.jpg
 Meta Title: Quilted Plain Refrigerator Cover – Dustproof Fridge Top Protector (r
 Meta Description: Buy Quilted Plain Refrigerator Cover – Dustproof Fridge Top Protector (random color) online in Pakistan from ASM VEO. Protect your kitchen appliance in style wi
 Description: Protect your kitchen appliance in style with the Quilted Plain Refrigerator Cover. Featuring a sleek, quilted design with convenient side storage pockets, this dustproof and waterproof top cover shields your fridge from scratches, dust, and daily kitchen grime.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Juicer Blender 6 Blade – Portable Fruit Blender
 Product ID: hhc-3764438
 SKU: hhc-3764438
@@ -7,11 +8,16 @@ Slug: juicer-blender-6-blade-portable-fruit-blender-hhc-3764438
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/d9b10c922b6fdd08da954956c7d6a9d8.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/d9b10c922b6fdd08da954956c7d6a9d8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/3755a644a73f105cdc0f9dec0d60ec69.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/4c8b61096e93896236622ce5bfb829b8.webp
 Meta Title: Juicer Blender 6 Blade – Portable Fruit Blender | Buy Online in Paki
 Meta Description: Buy Juicer Blender 6 Blade – Portable Fruit Blender online in Pakistan from ASM VEO. 6-blade juicer blender with a compact design and transparent blending conta
 Description: 6-blade juicer blender with a compact design and transparent blending container.
-Regular Price: 1275
-Sale Price: 1275
+Wholesale Price: 1225
+Regular Price: 2250
+Sale Price: 1800
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Child Safety Lock Durable Quality Reliable Performance Easy Installation Effective Protection (Random Color)
 Product ID: hhc-3753932
 SKU: hhc-3753932
@@ -7,11 +8,16 @@ Slug: child-safety-lock-durable-quality-reliable-performance-easy-installatio-a8
 Category: Travel Accessories
 Subcategory: Locks
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/92bc2d7864554fff296b20fb13add4ce.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/92bc2d7864554fff296b20fb13add4ce.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/f4ca77e5dc2572143a20b4bf276f4595.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/ebf614e7190df6ed3e8372abdd1dfb4a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/10aeaf05939bbd04a5b4d2e74026db3f.jpeg
 Meta Title: Child Safety Lock Durable Quality Reliable Performance Easy Installa
 Meta Description: Buy Child Safety Lock Durable Quality Reliable Performance Easy Installation Effective Protection (Random Color) online in Pakistan from ASM VEO. Child Safety L
 Description: Child Safety Lock Provides Durable Quality Reliable Performance Easy Installation And Effective Protection
-Regular Price: 172
-Sale Price: 172
+Wholesale Price: 122
+Regular Price: 393
+Sale Price: 243
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

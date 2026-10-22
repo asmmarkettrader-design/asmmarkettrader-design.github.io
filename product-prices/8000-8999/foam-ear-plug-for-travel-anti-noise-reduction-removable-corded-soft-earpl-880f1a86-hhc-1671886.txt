@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foam Ear Plug for travel Anti Noise Reduction Removable Corded Soft Earplugs For Sleeping Hearing Ear Protection Earmuffs Noise Prevention For Airplane Travel (Pack Of 5)
 Product ID: hhc-1671886
 SKU: hhc-1671886
@@ -7,11 +8,16 @@ Slug: foam-ear-plug-for-travel-anti-noise-reduction-removable-corded-soft-ear-88
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
-Meta Title: Foam Ear Plug for travel Anti Noise Reduction Removable Corded Soft
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/5-7.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/5-7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/4-15.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/3-20.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/2-28.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/1-33.webp
+Meta Title: Foam Ear Plug for travel Anti Noise Reduction Removable Corded Soft 
 Meta Description: Buy Foam Ear Plug for travel Anti Noise Reduction Removable Corded Soft Earplugs For Sleeping Hearing Ear Protection Earmuffs Noise Prevention For Airplane Trav
 Description: 【Noise Reduction &amp; Ear Protection】:(Noise Reduction Rating), protects your hearing from loud noise and high damaging decibel levels, avoiding depression and tinnitus. 【Safety Silicone Material】: These earplugs are made of soft Foam material, designed with a comfortable shape that adjusts to your ear; reusable, safe, and comfortable to use. 【Comfortable Ear Plugs】: Earplugs are easier to put in, more comfortable, and they stayed put. They do a better job of lowering the decibel level. 【Multiple Occasions】: Noise Cancelling Ear Plugs are perfect for noise reduction for work, home, and sleeping, bringing you a quiet environment in noisy places airplanes.
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

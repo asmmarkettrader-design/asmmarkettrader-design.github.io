@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Whitening Cream Natural Skin Care Formula Brightens Complexion Reduces Dark Spots Enhances Smooth Radiant Glow - 200g
 Product ID: hhc-3754108
 SKU: hhc-3754108
@@ -7,11 +8,16 @@ Slug: zafrani-whitening-cream-natural-skin-care-formula-brightens-complexion-0e1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/7483a5fa8f05ea35abc49988c136a4ee.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/7483a5fa8f05ea35abc49988c136a4ee.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/cfa8b520ccd99dfd61b51e5ab38c19b6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/881710f4fc1eae35c2fefa4f9f7acc08.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/df66689d8c4f2da844299c545d316e02.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/5bde339645c0aa7bfdfa736f73421fa8.jpeg
 Meta Title: Zafrani Whitening Cream Natural Skin Care Formula Brightens Complexi
 Meta Description: Buy Zafrani Whitening Cream Natural Skin Care Formula Brightens Complexion Reduces Dark Spots Enhances Smooth Radiant Glow - 200g online in Pakistan from ASM VE
 Description: Zafrani Whitening Cream Provides Natural Skin Care Formula Brightens Complexion Reduces Dark Spots And Radiant Glow
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

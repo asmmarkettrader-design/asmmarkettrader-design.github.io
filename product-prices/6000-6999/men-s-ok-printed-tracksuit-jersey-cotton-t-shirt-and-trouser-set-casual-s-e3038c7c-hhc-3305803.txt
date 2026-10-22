@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men's OK Printed Tracksuit Jersey Cotton T-Shirt And Trouser Set Casual Summer Sportswear
 Product ID: hhc-3305803
 SKU: hhc-3305803
@@ -7,11 +8,16 @@ Slug: men-s-ok-printed-tracksuit-jersey-cotton-t-shirt-and-trouser-set-casual-e3
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/4ca8cb648d7fc81c44a4532a639a3c76.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/4ca8cb648d7fc81c44a4532a639a3c76.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/c62cec2f74d751013ea548c112ac44f9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/4ca8cb648d7fc81c44a4532a639a3c76.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/ae04ad43cb30ce2cf4623d9c30af7783.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/c62cec2f74d751013ea548c112ac44f9.jpg
 Meta Title: Men's OK Printed Tracksuit Jersey Cotton T-Shirt And Trouser Set Cas
 Meta Description: Buy Men's OK Printed Tracksuit Jersey Cotton T-Shirt And Trouser Set Casual Summer Sportswear online in Pakistan from ASM VEO. Men's OK Printed Tracksuit Featur
 Description: Men's OK Printed Tracksuit Featuring A Premium Jersey Cotton T-Shirt And Matching Trouser For Everyday Wear.
-Regular Price: 1368
-Sale Price: 1368
+Wholesale Price: 1318
+Regular Price: 2420
+Sale Price: 1932
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

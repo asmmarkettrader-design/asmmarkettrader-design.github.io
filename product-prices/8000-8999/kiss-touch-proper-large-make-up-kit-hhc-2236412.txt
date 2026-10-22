@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: KISS TOUCH PROPER LARGE MAKE UP KIT
 Product ID: hhc-2236412
 SKU: hhc-2236412
@@ -7,11 +8,16 @@ Slug: kiss-touch-proper-large-make-up-kit-hhc-2236412
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/S82fb49e5ccd04c3da5ee4fcce55a37f6c.jpg_720x720q80.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/S82fb49e5ccd04c3da5ee4fcce55a37f6c.jpg_720x720q80.jpg_.webp
 Meta Title: KISS TOUCH PROPER LARGE MAKE UP KIT | Buy Online in Pakistan
 Meta Description: Buy KISS TOUCH PROPER LARGE MAKE UP KIT online in Pakistan from ASM VEO. Eye shadow can add depth and dimension to one's eyes, complement one's eye color, make
 Description: Eye shadow can add depth and dimension to one's eyes, complement one's eye color, make one's eyes appear larger, or simply draw attention to the eyes Cosmetic Organizer box Clear acrylic makeup organizer Keep your makeup neat and tidy Sleek and compact fits perfectly Made in high quality acrylic material Crystal Clear and Transparent Attractive design
-Regular Price: 1415
-Sale Price: 1415
+Wholesale Price: 1365
+Regular Price: 2500
+Sale Price: 1998
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

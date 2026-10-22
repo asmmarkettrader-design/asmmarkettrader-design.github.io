@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi Color Soft Cotton Slippers For Men And Women Free Size (Random Color)
 Product ID: hhc-3756691
 SKU: hhc-3756691
@@ -7,11 +8,16 @@ Slug: multi-color-soft-cotton-slippers-for-men-and-women-free-size-random-color-
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/461819b803f6662fd7c65b06de657f43.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/461819b803f6662fd7c65b06de657f43.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/11216eba62ac78c2aad6a4461a1cc738.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/10c2fe1f724546009fa69cc15710177a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/f406aecba86d060eabae3d43fb4447dd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/6230c63a71b4bf872cb92f8f90b45901.jpg
 Meta Title: Multi Color Soft Cotton Slippers For Men And Women Free Size (Random
 Meta Description: Buy Multi Color Soft Cotton Slippers For Men And Women Free Size (Random Color) online in Pakistan from ASM VEO. Lightweight and breathable cotton slippers desi
 Description: Lightweight and breathable cotton slippers designed for all-day indoor comfort with a soft-touch feel and durable sole support.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

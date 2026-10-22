@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pc Mini Heat Sealing Machine 2-In-1 Cutter & Sealer With USB Cable – Compact USB Rechargeable Food Bag Sealer For Snacks And Storage (Random Color)
 Product ID: hhc-3753267
 SKU: hhc-3753267
@@ -7,11 +8,16 @@ Slug: 1-pc-mini-heat-sealing-machine-2-in-1-cutter-sealer-with-usb-cable-comp-af
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/eb31bb2822dac1ddef9831490de52064.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/eb31bb2822dac1ddef9831490de52064.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/fe1c01d5d1923032108a3e472e43c164.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/25630121a055d8136353cf70e8960557.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/bf7e28d8c8375ae174ee8939546584ca.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/2497d40981375fd8a3968cfacf6abeea.jpg
 Meta Title: 1 Pc Mini Heat Sealing Machine 2-In-1 Cutter & Sealer With USB Cable
 Meta Description: Buy 1 Pc Mini Heat Sealing Machine 2-In-1 Cutter & Sealer With USB Cable – Compact USB Rechargeable Food Bag Sealer For Snacks And Storage (Random Color) online
 Description: 1 Pc Mini Heat Sealing Machine 2-In-1 Cutter & Sealer With USB Cable – Compact USB Rechargeable Food Bag Sealer For Snacks And Storage (Random Color)
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

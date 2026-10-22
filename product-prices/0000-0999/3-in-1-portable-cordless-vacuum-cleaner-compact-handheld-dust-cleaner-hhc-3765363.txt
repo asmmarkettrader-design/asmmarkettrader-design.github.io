@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-in-1 Portable Cordless Vacuum Cleaner | Compact Handheld Dust Cleaner
 Product ID: hhc-3765363
 SKU: hhc-3765363
@@ -7,11 +8,16 @@ Slug: 3-in-1-portable-cordless-vacuum-cleaner-compact-handheld-dust-cleaner-hhc-
 Category: Electronics
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/c95788e3702323884534f92d79dae543.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/c95788e3702323884534f92d79dae543.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/a9c71ff90b07992fb462d9304730a570.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/8001dee6fa394b1e768f7ba0c3eb81da.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/94ad5113f4a380f52d786ead8bff6be7.webp
 Meta Title: 3-in-1 Portable Cordless Vacuum Cleaner | Compact Handheld Dust Clea
 Meta Description: Buy 3-in-1 Portable Cordless Vacuum Cleaner | Compact Handheld Dust Cleaner online in Pakistan from ASM VEO. 3-in-1 Portable Cordless Vacuum Cleaner ek compact
 Description: 3-in-1 Portable Cordless Vacuum Cleaner ek compact aur lightweight cleaning solution hai jo home, office aur car ke liye useful hai. Cordless design ki wajah se aap isay easily kahin bhi use kar sakte hain. Ye dust, crumbs aur chhoti debris ko clean karne mein madad karta hai, jabke removable dust box empty aur clean karna easy banata hai.Key Features:3-in-1 portable cordless designCompact &amp; lightweightEasy-to-empty removable dust boxSuitable for car, home &amp; officeHelps clean dust, crumbs &amp; small debrisEasy to carry and storeMultiple cleaning attachments
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Waterproof Kitchen Mat Shelf Liner 45×150 | Easy To Clean, Oil Proof, Anti Slip Multipurpose Drawer And Shelf Cover (Random Color)
 Product ID: hhc-3752660
 SKU: hhc-3752660
@@ -7,11 +8,16 @@ Slug: waterproof-kitchen-mat-shelf-liner-45-150-easy-to-clean-oil-proof-anti-be0
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/ec21384946b6902c0b9c2e0cbcbe0c24.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/ec21384946b6902c0b9c2e0cbcbe0c24.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/a660811479cd796212afc156034218a0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/3c533c57aee31d1a6ae62e827b24abec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/ed386092e09ac3e1d2f1086e151c5768.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/085f0eb832bae46ad6790717a3d12fc7.png
 Meta Title: Waterproof Kitchen Mat Shelf Liner 45×150 | Easy To Clean, Oil Proof
 Meta Description: Buy Waterproof Kitchen Mat Shelf Liner 45×150 | Easy To Clean, Oil Proof, Anti Slip Multipurpose Drawer And Shelf Cover (Random Color) online in Pakistan from A
 Description: Waterproof Kitchen Mat Shelf Liner 45×150 – Easy To Clean, Oil Proof, Anti Slip Multipurpose Drawer And Shelf Cover (Random Color)
-Regular Price: 538
-Sale Price: 538
+Wholesale Price: 488
+Regular Price: 990
+Sale Price: 792
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

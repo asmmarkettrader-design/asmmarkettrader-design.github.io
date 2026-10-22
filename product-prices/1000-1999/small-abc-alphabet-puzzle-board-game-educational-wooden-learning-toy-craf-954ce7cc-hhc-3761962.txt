@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Small Abc Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills
 Product ID: hhc-3761962
 SKU: hhc-3761962
@@ -7,11 +8,16 @@ Slug: small-abc-alphabet-puzzle-board-game-educational-wooden-learning-toy-cr-95
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/9c7c2a0eeb2c1bf6ae6ae3000a2d8272.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/9c7c2a0eeb2c1bf6ae6ae3000a2d8272.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/dcc7d572f05acfa5c115e6ae0f0c4a90.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/2287534eeaf00653c71adc8ae94ec3cd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/80b8ea647358d37715fc3b7ceda5aefd.jpeg
 Meta Title: Small Abc Alphabet Puzzle Board Game - Educational Wooden Learning T
 Meta Description: Buy Small Abc Alphabet Puzzle Board Game - Educational Wooden Learning Toy Crafted From MDF Wood For Children And Early Literacy Skills online in Pakistan from
 Description: The Small Abc Alphabet Puzzle Board Game Is An Educational Toy Designed To Help Children Learn The Alphabet Through Engaging Hands On Puzzle Play.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

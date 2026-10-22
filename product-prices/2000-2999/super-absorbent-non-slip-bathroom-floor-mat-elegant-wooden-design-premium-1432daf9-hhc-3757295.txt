@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Super Absorbent Non Slip Bathroom Floor Mat Elegant Wooden Design Premium Quality 23 × 15 Inch
 Product ID: hhc-3757295
 SKU: hhc-3757295
@@ -7,11 +8,16 @@ Slug: super-absorbent-non-slip-bathroom-floor-mat-elegant-wooden-design-premi-14
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/a0ea8331aa8896a2153b7a7033b56b8a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/a0ea8331aa8896a2153b7a7033b56b8a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/ae7321bab29c5432fdd734a1ae3df292.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/9bfb83d893949d28c001f8e4d7caf5a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/02/265a0da7aabaf9c8ab0be714ce1958c9.jpeg
 Meta Title: Super Absorbent Non Slip Bathroom Floor Mat Elegant Wooden Design Pr
 Meta Description: Buy Super Absorbent Non Slip Bathroom Floor Mat Elegant Wooden Design Premium Quality 23 × 15 Inch online in Pakistan from ASM VEO. Super Absorbent Non Slip Bat
 Description: Super Absorbent Non Slip Bathroom Floor Mat With Elegant Wooden Design Premium Quality 23 × 15 Inch Size.
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

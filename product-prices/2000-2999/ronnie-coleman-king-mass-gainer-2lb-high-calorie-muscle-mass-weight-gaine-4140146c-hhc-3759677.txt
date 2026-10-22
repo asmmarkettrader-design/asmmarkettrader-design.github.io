@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ronnie Coleman King Mass Gainer 2LB - High Calorie Muscle Mass Weight Gainer Protein Powder
 Product ID: hhc-3759677
 SKU: hhc-3759677
@@ -7,11 +8,16 @@ Slug: ronnie-coleman-king-mass-gainer-2lb-high-calorie-muscle-mass-weight-gai-41
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/ddd12179fee07ffb745ba0e2c813b36c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/ddd12179fee07ffb745ba0e2c813b36c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/3bcf6a253b52a0ab09a0e9fc457bdea7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/17/db0e317e2b3fba0104f3a2e08515b354.jpeg
 Meta Title: Ronnie Coleman King Mass Gainer 2LB - High Calorie Muscle Mass Weigh
 Meta Description: Buy Ronnie Coleman King Mass Gainer 2LB - High Calorie Muscle Mass Weight Gainer Protein Powder online in Pakistan from ASM VEO. Ronnie Coleman King Mass Gainer
 Description: Ronnie Coleman King Mass Gainer 2LB is a high-calorie muscle-building supplement designed to support weight gain, muscle recovery, and strength development. Packed with quality protein, carbohydrates, and essential nutrients, it is ideal for athletes, bodybuilders, and fitness enthusiasts aiming to i
-Regular Price: 2865
-Sale Price: 2865
+Wholesale Price: 2865
+Regular Price: 5060
+Sale Price: 4048
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

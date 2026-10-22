@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MARCO POLO Cover Me Purple Fragrance Perfume for women - Eau de Parfum Natural Spray, 100ml (3.4 fl.oz.) Specially for ladies
 Product ID: hhc-2515103
 SKU: hhc-2515103
@@ -7,11 +8,16 @@ Slug: marco-polo-cover-me-purple-fragrance-perfume-for-women-eau-de-parfum-na-ef
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/0-7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/0-7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/1-10.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/2-9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-28-at-1.41.23-PM-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-28-at-1.41.23-PM-2.jpeg
 Meta Title: MARCO POLO Cover Me Purple Fragrance Perfume for women - Eau de Parf
 Meta Description: Buy MARCO POLO Cover Me Purple Fragrance Perfume for women - Eau de Parfum Natural Spray, 100ml (3.4 fl.oz.) Specially for ladies online in Pakistan from ASM VE
 Description: Timeless Elegance: MARCO POLO Unisex Fragrance Perfume exudes a sense of timeless elegance. Long-Lasting Fragrance: Enjoy the enduring appeal of this Eau de Parfum throughout the day and night. Cautionary Note: Please be aware of its flammable nature and follow safety precautions. French/EU-Origin Ingredients: The fragrance oil and preservatives used in this product are sourced from French/EU origins. Indulge in the timeless elegance of MARCO POLO's Unisex Fragrance Perfume, available in five captivating variants: Creek, Royal, Darrk Noir, Oben, and Loy. Crafted especially for men, each variant presents a unique and alluring scent experience. This 100ml (3.4 fl.oz.) bottle is an embodiment of sophistication and style. AROMA CENTER presents this fine Eau de Parfum, with a blend of high-quality ingredients that create an unforgettable fragrance. With its natural spray application, MARCO POLO Unisex Fragrance Perfume offers a convenient and even distribution of the fragrance.
-Regular Price: 1261
-Sale Price: 1261
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

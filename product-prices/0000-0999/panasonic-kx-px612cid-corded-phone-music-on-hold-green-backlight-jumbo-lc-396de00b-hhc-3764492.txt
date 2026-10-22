@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Panasonic KX PX612CID Corded Phone Music On Hold Green Backlight Jumbo LCD Display 32 Digit PABX Exit Code Speakerphone 250 Entries
 Product ID: hhc-3764492
 SKU: hhc-3764492
@@ -7,11 +8,16 @@ Slug: panasonic-kx-px612cid-corded-phone-music-on-hold-green-backlight-jumbo-396
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/8667bd21069ed805b152162f5251ccf9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/8667bd21069ed805b152162f5251ccf9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/c2bba3982a47a2fa50f578434cd7e476.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/c38aadaebe1bda8144133b409a18ddc0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/4313756dc7660d57fc77351b4ac22b17.jpeg
 Meta Title: Panasonic KX PX612CID Corded Phone Music On Hold Green Backlight Jum
 Meta Description: Buy Panasonic KX PX612CID Corded Phone Music On Hold Green Backlight Jumbo LCD Display 32 Digit PABX Exit Code Speakerphone 250 Entries online in Pakistan from
 Description: Panasonic KX PX612CID Corded Phone Music On Hold Green Backlight Jumbo LCD Display 32 Digit PABX Exit Code Speakerphone 250 Entries.
-Regular Price: 5675
-Sale Price: 5675
+Wholesale Price: 5675
+Regular Price: 9450
+Sale Price: 7558
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

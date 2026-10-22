@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acrylic Eid Mubarak Eidi Envelope / Eidi Box for Cash Gifts – Premium Festive Money Holder (Random Design)
 Product ID: hhc-3756828
 SKU: hhc-3756828
@@ -7,11 +8,16 @@ Slug: acrylic-eid-mubarak-eidi-envelope-eidi-box-for-cash-gifts-premium-festi-a3
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/8ad1e4de15ac40a38e8ec89f5bbb6ad0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/8ad1e4de15ac40a38e8ec89f5bbb6ad0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/891303a1d023de963462b3249c81a09f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/4eafbd5fc3e6c21fa973fd12c97d9122.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/cda762059d6cbfc275411685876d2138.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/817caec28c673ef55a7d920eb6cc053e.jpeg
 Meta Title: Acrylic Eid Mubarak Eidi Envelope / Eidi Box for Cash Gifts – Premiu
 Meta Description: Buy Acrylic Eid Mubarak Eidi Envelope / Eidi Box for Cash Gifts – Premium Festive Money Holder (Random Design) online in Pakistan from ASM VEO. Celebrate Eid wi
 Description: Celebrate Eid with a unique and elegant way of giving Eidi. This premium acrylic Eid Mubarak envelope box is a stylish alternative to traditional paper envelopes, designed to make your gift memorable and presentable for your loved ones.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Summer Tracksuit T-Shirt & Trouser Set for Kids – Soft Comfortable Fabric Casual Sportswear Outfit for Boys & Girls
 Product ID: hhc-3760261
 SKU: hhc-3760261
@@ -7,11 +8,16 @@ Slug: new-summer-tracksuit-t-shirt-trouser-set-for-kids-soft-comfortable-fabr-6a
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/71a12e709b83b5d882483f279ae9585e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/71a12e709b83b5d882483f279ae9585e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/bf3e97ae9d5979aa8026e1a1b5a444d6.jpeg
 Meta Title: New Summer Tracksuit T-Shirt & Trouser Set for Kids – Soft Comfortab
 Meta Description: Buy New Summer Tracksuit T-Shirt & Trouser Set for Kids – Soft Comfortable Fabric Casual Sportswear Outfit for Boys & Girls online in Pakistan from ASM VEO. Kee
 Description: Keep your kids comfortable and active with this stylish summer tracksuit featuring a soft T-shirt and matching trouser. Perfect for daily wear, playtime, sports activities, and outdoor adventures.
-Regular Price: 877
-Sale Price: 877
+Wholesale Price: 827
+Regular Price: 1570
+Sale Price: 1259
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

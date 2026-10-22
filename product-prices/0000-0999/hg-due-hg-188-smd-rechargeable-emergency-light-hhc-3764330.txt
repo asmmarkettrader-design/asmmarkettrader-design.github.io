@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HG DUE HG-188 SMD Rechargeable Emergency Light
 Product ID: hhc-3764330
 SKU: hhc-3764330
@@ -7,11 +8,16 @@ Slug: hg-due-hg-188-smd-rechargeable-emergency-light-hhc-3764330
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/96a0547d22f4c3ab6155c2c40cf2c810.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/96a0547d22f4c3ab6155c2c40cf2c810.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/bb67fc699be27f75caa43f0817535f9a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/4f88645a8fb2906e662a0ee84c93f1b3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/cdf8297e303ef3ef613b6c7d71b97dd3.jpg
 Meta Title: HG DUE HG-188 SMD Rechargeable Emergency Light | Buy Online in Pakis
 Meta Description: Buy HG DUE HG-188 SMD Rechargeable Emergency Light online in Pakistan from ASM VEO. HG DUE HG 188 SMD Rechargeable Emergency Light Durable Bright Portable Pract
 Description: HG DUE HG 188 SMD Rechargeable Emergency Light Durable Bright Portable Practical Choice For Home Office Outdoor And Power Outages.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

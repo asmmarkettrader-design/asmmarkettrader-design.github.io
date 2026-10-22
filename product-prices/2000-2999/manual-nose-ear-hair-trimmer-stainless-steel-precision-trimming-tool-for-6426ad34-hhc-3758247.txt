@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Manual Nose & Ear Hair Trimmer – Stainless Steel Precision Trimming Tool for Safe and Painless Grooming
 Product ID: hhc-3758247
 SKU: hhc-3758247
@@ -7,11 +8,16 @@ Slug: manual-nose-ear-hair-trimmer-stainless-steel-precision-trimming-tool-fo-64
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Manual Nose & Ear Hair Trimmer – Stainless Steel Precision Trimming
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/a95dabc9a247b4f60e00d39dd3b73099.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/a95dabc9a247b4f60e00d39dd3b73099.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/d7970a5ac25fa8e856ad533fe1214228.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/9894b4d1970b91426da65c2eaa6ac961.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/90bc8eb8d3eed32bec3809b89d28bda1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/83d8f3ba2cbb30a18729a930592b0c2b.jpg
+Meta Title: Manual Nose & Ear Hair Trimmer – Stainless Steel Precision Trimming 
 Meta Description: Buy Manual Nose & Ear Hair Trimmer – Stainless Steel Precision Trimming Tool for Safe and Painless Grooming online in Pakistan from ASM VEO. Groom with confiden
 Description: Groom with confidence using the Manual Nose & Ear Hair Trimmer. This battery-free, stainless steel tool is designed to catch and trim unwanted hair easily and safely without any noise.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

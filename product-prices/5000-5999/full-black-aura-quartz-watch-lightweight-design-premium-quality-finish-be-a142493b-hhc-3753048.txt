@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Full BLACK AURA Quartz Watch – Lightweight Design, , Premium Quality & Finish - Best Quality Analog Watch For Boys - Watch For Men | Full Black Color Watch - (Without Box)
 Product ID: hhc-3753048
 SKU: hhc-3753048
@@ -7,11 +8,16 @@ Slug: full-black-aura-quartz-watch-lightweight-design-premium-quality-finish-a14
 Category: Gadgets
 Subcategory: Smart Watches
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/f7353fd8998c3e770095be746f8e6ee0.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/f7353fd8998c3e770095be746f8e6ee0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/d60b63d3d787e3c6a080d10c78d1b5b1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/6ed46ef1c6fa8de1cf6a25610a3cf02a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/30570637a731c0bbef0e3a0ea6a3b91b.jpeg
 Meta Title: Full BLACK AURA Quartz Watch – Lightweight Design, , Premium Quality
 Meta Description: Buy Full BLACK AURA Quartz Watch – Lightweight Design, , Premium Quality & Finish - Best Quality Analog Watch For Boys - Watch For Men | Full Black Color Watch
 Description: Best Quality Analog Watch For Boys - Watch For Men | Full Black Color Watch - (Without Box)
-Regular Price: 798
-Sale Price: 798
+Wholesale Price: 748
+Regular Price: 1430
+Sale Price: 1145
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

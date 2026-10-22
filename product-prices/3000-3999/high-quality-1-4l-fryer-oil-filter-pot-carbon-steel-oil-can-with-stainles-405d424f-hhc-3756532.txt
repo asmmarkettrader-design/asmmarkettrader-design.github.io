@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality 1.4L Fryer Oil Filter Pot – Carbon Steel Oil Can with Stainless Steel Strainer Kitchen Storage Jug (Without Box)
 Product ID: hhc-3756532
 SKU: hhc-3756532
@@ -7,11 +8,16 @@ Slug: high-quality-1-4l-fryer-oil-filter-pot-carbon-steel-oil-can-with-stainl-40
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/d59e812efb8ed14be946489b10d7ef1a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/d59e812efb8ed14be946489b10d7ef1a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/20baa78a79beff04a466fbcc3d70b5d2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/212bd89338da1251a64932f92f6bf77a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/16fd59ae26811828eca9b33e37a72673.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/8b0de443edc429500a1d8b437b82fb0f.jpeg
 Meta Title: High Quality 1.4L Fryer Oil Filter Pot – Carbon Steel Oil Can with S
 Meta Description: Buy High Quality 1.4L Fryer Oil Filter Pot – Carbon Steel Oil Can with Stainless Steel Strainer Kitchen Storage Jug (Without Box) online in Pakistan from ASM VE
 Description: Premium 1.4L fryer oil filter pot made with durable carbon steel body and stainless steel strainer. Ideal for filtering, storing, and reusing cooking oil safely and conveniently.
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

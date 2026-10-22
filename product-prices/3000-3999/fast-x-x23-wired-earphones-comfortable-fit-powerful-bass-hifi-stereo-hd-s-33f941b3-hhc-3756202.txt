@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fast X X23 Wired Earphones | Comfortable Fit | Powerful Bass | HiFi Stereo | HD Sound | Voice Calling
 Product ID: hhc-3756202
 SKU: hhc-3756202
@@ -7,11 +8,16 @@ Slug: fast-x-x23-wired-earphones-comfortable-fit-powerful-bass-hifi-stereo-hd-33
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/49ac306183a3e7a8636a654a4635a485.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/49ac306183a3e7a8636a654a4635a485.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/ffd927b52ee1554d678adc4cba900df2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/8bace55f1368e1dcb83186d0a4370421.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/410a6ebb640074e0f0f61000de39a8af.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/662c1a6e8ba6c5ceefc8a6f1235d9387.jpeg
 Meta Title: Fast X X23 Wired Earphones | Comfortable Fit | Powerful Bass | HiFi
 Meta Description: Buy Fast X X23 Wired Earphones | Comfortable Fit | Powerful Bass | HiFi Stereo | HD Sound | Voice Calling online in Pakistan from ASM VEO. Fast X X23 wired earp
 Description: Fast X X23 wired earphones with amplified chamber design for powerful bass, HiFi stereo sound, HD clarity, and built-in mic for calls.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Soft Microfiber Flower Cap Towel for Women – Quick Dry Hair Wrap with Cute Bow Design, Super Absorbent Shower & Bath Turban for Smooth, Frizz-Free Hair (Random Color)
 Product ID: hhc-3752688
 SKU: hhc-3752688
@@ -7,11 +8,16 @@ Slug: soft-microfiber-flower-cap-towel-for-women-quick-dry-hair-wrap-with-cut-b4
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/8cffb8c2fe7dd70daf3233e11ad4b50a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/8cffb8c2fe7dd70daf3233e11ad4b50a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/2fd824ff15a743ea3932cf227fb3138f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/9630bdd3622b9ce5b3d3ad4f9b732c06.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/546e05a6a783b32ece1e3e3f492d91fe.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/6beca87f1d40e80dd98179aeeb699bf1.jpg
 Meta Title: Soft Microfiber Flower Cap Towel for Women – Quick Dry Hair Wrap wit
 Meta Description: Buy Soft Microfiber Flower Cap Towel for Women – Quick Dry Hair Wrap with Cute Bow Design, Super Absorbent Shower & Bath Turban for Smooth, Frizz-Free Hair (Ran
 Description: Soft, absorbent & stylish hair-drying cap with cute bow design — quick-dry microfiber perfect for daily use or travel.
-Regular Price: 341
-Sale Price: 341
+Wholesale Price: 291
+Regular Price: 646
+Sale Price: 496
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

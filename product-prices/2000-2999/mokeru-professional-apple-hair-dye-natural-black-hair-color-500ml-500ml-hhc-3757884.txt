@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MOKERU Professional Apple Hair Dye | Natural Black Hair Color 500ml + 500ml
 Product ID: hhc-3757884
 SKU: hhc-3757884
@@ -7,11 +8,16 @@ Slug: mokeru-professional-apple-hair-dye-natural-black-hair-color-500ml-500ml-hh
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/30766de95bbc76a51c0b63091665ddf6.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/30766de95bbc76a51c0b63091665ddf6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/64a09adbfc369cd14025f720f39b1f6d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/4e1d7ff906f640bf25d9b67d99d532e7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/73fb71d9e92833d42d4d969bfc42b358.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/03c69d98efcca15968e24c9cbed48ef9.jpeg
 Meta Title: MOKERU Professional Apple Hair Dye | Natural Black Hair Color 500ml
 Meta Description: Buy MOKERU Professional Apple Hair Dye | Natural Black Hair Color 500ml + 500ml online in Pakistan from ASM VEO. MOKERU Apple Hair Dye Infused With Apple Extrac
 Description: MOKERU Apple Hair Dye Infused With Apple Extract & Vitamin C, Ammonia-Free Formula For Fast Gray Coverage In 5–10 Minutes
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

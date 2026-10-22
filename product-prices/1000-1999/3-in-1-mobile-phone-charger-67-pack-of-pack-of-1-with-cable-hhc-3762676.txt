@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 in 1 Mobile Phone Charger 67 Pack Of Pack Of 1 with cable
 Product ID: hhc-3762676
 SKU: hhc-3762676
@@ -7,11 +8,16 @@ Slug: 3-in-1-mobile-phone-charger-67-pack-of-pack-of-1-with-cable-hhc-3762676
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/e2e2059b8c4e35c9e164ee7b67fee2bf.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/e2e2059b8c4e35c9e164ee7b67fee2bf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/81c243dfad1d18cbe0784c8d98a43e75.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/ce1b4806861e9b79a79791d9a4bb3f0a.webp
 Meta Title: 3 in 1 Mobile Phone Charger 67 Pack Of Pack Of 1 with cable | Buy On
 Meta Description: Buy 3 in 1 Mobile Phone Charger 67 Pack Of Pack Of 1 with cable online in Pakistan from ASM VEO. 3 in 1 Mobile Phone Charger 67 Pack Of Pack Of 1 Brand: lot 2.
 Description: 3 in 1 Mobile Phone Charger 67 Pack Of Pack Of 1 Brand: lot 2. Type: Super Fast Charger 3. Model: GoN67W (as indicated on one of the boxes) 4. Color: Yellow casing with black plugs 5. Features: Super Fast Charging (as indicated on the boxes)
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

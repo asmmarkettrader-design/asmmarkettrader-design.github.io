@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Neck & Face Massager with EMS Microcurrent – 3 Color Light Therapy, Hot Compress & Vibration Facial Skin Care Device (Type-C Charging)
 Product ID: hhc-3762449
 SKU: hhc-3762449
@@ -7,11 +8,16 @@ Slug: rechargeable-neck-face-massager-with-ems-microcurrent-3-color-light-the-0d
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/4fd8cc8328170b52a088667574d0dda5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/4fd8cc8328170b52a088667574d0dda5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/84a3fb295a42e8d737a3fa370866e206.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/f2edf1d87a857a32b178ea7b5a205a02.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/2ccefb1d6ce1bf9a0317f93444ca2ade.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/4b1a26ad91b68c0ac2bc216bf34caf5e.jpeg
 Meta Title: Rechargeable Neck & Face Massager with EMS Microcurrent – 3 Color Li
 Meta Description: Buy Rechargeable Neck & Face Massager with EMS Microcurrent – 3 Color Light Therapy, Hot Compress & Vibration Facial Skin Care Device (Type-C Charging) online i
 Description: Rejuvenate your skin with this Rechargeable Neck & Face Massager featuring EMS microcurrent technology, 3-color LED light therapy,
-Regular Price: 2053
-Sale Price: 2053
+Wholesale Price: 2053
+Regular Price: 3690
+Sale Price: 2952
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

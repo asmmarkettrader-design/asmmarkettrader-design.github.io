@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Baby Finger Toothbrush Silicon Toothbrush+Box Children Teeth Clear Soft Silicone Infant Tooth Brush Rubber Cleaning Baby Brush
 Product ID: hhc-721211
 SKU: hhc-721211
@@ -7,11 +8,16 @@ Slug: baby-finger-toothbrush-silicon-toothbrush-box-children-teeth-clear-soft-5a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/6-9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/6-9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/5-14.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/4-17.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/3-23.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/2-29.jpg
 Meta Title: Baby Finger Toothbrush Silicon Toothbrush+Box Children Teeth Clear S
 Meta Description: Buy Baby Finger Toothbrush Silicon Toothbrush+Box Children Teeth Clear Soft Silicone Infant Tooth Brush Rubber Cleaning Baby Brush online in Pakistan from ASM V
 Description: Features: Silicone Baby Finger Brush. It is a great way for parents to ensure oral hygiene for their babies . Massage gums and promote the development of teeth. Using food-grade silicone material, soft, protective mouth, clean simple, not hidden dirt, health and safety, non-toxic, more peace of mind. Perfect for soothing baby’s teething gums by giving them a gentle massage. Essential travel anywhere, anytime clean mouth. Item is Without Box Becuase mostly box are damage while in Shipping. [video width="480" height="360" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2022/10/videoplayback-2.mp4"][/video]
-Regular Price: 207
-Sale Price: 207
+Wholesale Price: 157
+Regular Price: 446
+Sale Price: 296
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

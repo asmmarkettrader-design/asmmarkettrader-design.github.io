@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cheek & Chin Hand & Foot Care Cream Moisturizing Repair Cream For Dry & Rough Skin - 100ml
 Product ID: hhc-3761414
 SKU: hhc-3761414
@@ -7,11 +8,16 @@ Slug: cheek-chin-hand-foot-care-cream-moisturizing-repair-cream-for-dry-rough-04
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/5560da94b1919c1972d83bddfb97e95b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/5560da94b1919c1972d83bddfb97e95b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/0c2c0e2a361fc2a97f632d4f4bab08fa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/75fd06962786f35834c3c08529c57a70.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/da131b970fd30df496f5ce82b89cb5c1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/307c7935ab996828c302e9cd945ab7d6.jpeg
 Meta Title: Cheek & Chin Hand & Foot Care Cream Moisturizing Repair Cream For Dr
 Meta Description: Buy Cheek & Chin Hand & Foot Care Cream Moisturizing Repair Cream For Dry & Rough Skin - 100ml online in Pakistan from ASM VEO. Cheek & Chin Hand & Foot Care Cr
 Description: Cheek & Chin Hand & Foot Care Cream 100ml is a deeply moisturizing cream formulated to nourish dry, rough, and tired skin. It helps keep hands and feet soft, smooth, and hydrated while supporting healthy-looking nails. Suitable for all skin types.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

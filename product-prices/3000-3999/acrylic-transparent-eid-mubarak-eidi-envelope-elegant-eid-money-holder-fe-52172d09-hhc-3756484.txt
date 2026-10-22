@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acrylic Transparent EID Mubarak Eidi Envelope – Elegant Eid Money Holder & Festive Decoration
 Product ID: hhc-3756484
 SKU: hhc-3756484
@@ -7,11 +8,16 @@ Slug: acrylic-transparent-eid-mubarak-eidi-envelope-elegant-eid-money-holder-521
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/7fc7b94cc061022bad563379a1fa16c6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/7fc7b94cc061022bad563379a1fa16c6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/4db7f659949047e751183466640dbd39.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/f2d8fe3f3bde2130ff69a396f5265b1c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/1e675059b7243d15bceb1939e29f4235.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/2f84c146e2257ae8625b3f626bd84b04.jpg
 Meta Title: Acrylic Transparent EID Mubarak Eidi Envelope – Elegant Eid Money Ho
 Meta Description: Buy Acrylic Transparent EID Mubarak Eidi Envelope – Elegant Eid Money Holder & Festive Decoration online in Pakistan from ASM VEO. Celebrate Eid in style with t
 Description: Celebrate Eid in style with this premium transparent acrylic EID Mubarak Eidi envelope. A modern and elegant way to present Eidi cash gifts, perfect for Eid celebrations, decorations, and thoughtful gifting.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

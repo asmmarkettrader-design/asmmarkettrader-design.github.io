@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Muscletech Mass Tech Xtreme 2000 Mass Gainer Powder – 2.03 lbs High-Calorie Muscle Builder Supplement
 Product ID: hhc-3759619
 SKU: hhc-3759619
@@ -7,11 +8,16 @@ Slug: muscletech-mass-tech-xtreme-2000-mass-gainer-powder-2-03-lbs-high-calor-33
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/f4329c9d72e641f12d39a25e7d3e0162.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/f4329c9d72e641f12d39a25e7d3e0162.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/d1deb9ea4c2be1940b5ffc72e870c0de.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/9f51b5f17e0f0b0232c4f525f9a7f986.jpeg
 Meta Title: Muscletech Mass Tech Xtreme 2000 Mass Gainer Powder – 2.03 lbs High-
 Meta Description: Buy Muscletech Mass Tech Xtreme 2000 Mass Gainer Powder – 2.03 lbs High-Calorie Muscle Builder Supplement online in Pakistan from ASM VEO. Mass Tech Xtreme 2000
 Description: Mass Tech Xtreme 2000 by Muscletech is a powerful mass gainer formula designed to support muscle growth, strength, and recovery. Packed with high-quality protein, carbohydrates, and essential nutrients, this supplement helps athletes and fitness enthusiasts achieve their bulking goals effectively.
-Regular Price: 2865
-Sale Price: 2865
+Wholesale Price: 2865
+Regular Price: 5060
+Sale Price: 4048
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

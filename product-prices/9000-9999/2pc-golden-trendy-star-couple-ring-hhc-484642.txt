@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2pc Golden Trendy Star Couple Ring
 Product ID: hhc-484642
 SKU: hhc-484642
@@ -7,11 +8,16 @@ Slug: 2pc-golden-trendy-star-couple-ring-hhc-484642
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-05-at-12.48.39-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-05-at-12.48.39-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/WhatsApp-Image-2023-08-05-at-12.47.53-PM-1.jpeg
 Meta Title: 2pc Golden Trendy Star Couple Ring | Buy Online in Pakistan
 Meta Description: Buy 2pc Golden Trendy Star Couple Ring online in Pakistan from ASM VEO. Detail Material Alloy Quantity 2pc Keep Away From Water available in 2 colour (golden &a
 Description: Detail Material Alloy Quantity 2pc Keep Away From Water available in 2 colour (golden &amp; silver)
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

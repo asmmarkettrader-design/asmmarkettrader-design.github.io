@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 In 1 Lipstick And Lip Liner Set
 Product ID: hhc-2319393
 SKU: hhc-2319393
@@ -7,11 +8,16 @@ Slug: 2-in-1-lipstick-and-lip-liner-set-hhc-2319393
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-14-at-11.47.06-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-14-at-11.47.06-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-14-at-11.47.06-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-14-at-11.47.05-PM-1.jpeg
 Meta Title: 2 In 1 Lipstick And Lip Liner Set | Buy Online in Pakistan
 Meta Description: Buy 2 In 1 Lipstick And Lip Liner Set online in Pakistan from ASM VEO. 2 In 1 Lipstick And Lip Liner Set Kit that includes lipstick and eyeliner, for those emer
 Description: 2 In 1 Lipstick And Lip Liner Set Kit that includes lipstick and eyeliner, for those emergency cases where beauty is paramount. You will love them, you will not hesitate to buy another one Package Includes: 1 × Lipstick, 1 × Lipgloss &nbsp;
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

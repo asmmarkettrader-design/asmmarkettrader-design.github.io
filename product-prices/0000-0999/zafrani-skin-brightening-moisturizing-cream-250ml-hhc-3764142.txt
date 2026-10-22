@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Skin Brightening & Moisturizing Cream – 250ml
 Product ID: hhc-3764142
 SKU: hhc-3764142
@@ -7,11 +8,16 @@ Slug: zafrani-skin-brightening-moisturizing-cream-250ml-hhc-3764142
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/498ac4079b4e5289aa2e4df131a0d178.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/498ac4079b4e5289aa2e4df131a0d178.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/d92656801496cd9303d3c943def63669.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/6c27d2f5975428e84960690375f8db9e.jpg
 Meta Title: Zafrani Skin Brightening & Moisturizing Cream – 250ml | Buy Online i
 Meta Description: Buy Zafrani Skin Brightening & Moisturizing Cream – 250ml online in Pakistan from ASM VEO. A 250ml deeply moisturizing Zafrani body and face cream featuring a u
 Description: A 250ml deeply moisturizing Zafrani body and face cream featuring a unique dual-tone layered formula. Infused with saffron extracts to brighten skin, lock in hydration, and improve natural glow.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

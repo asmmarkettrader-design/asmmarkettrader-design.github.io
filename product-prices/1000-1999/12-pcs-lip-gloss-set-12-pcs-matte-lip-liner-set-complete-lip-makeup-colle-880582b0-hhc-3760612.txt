@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 12 Pcs Lip Gloss Set + 12 Pcs Matte Lip Liner Set | Complete Lip Makeup Collection l Different Brand
 Product ID: hhc-3760612
 SKU: hhc-3760612
@@ -7,11 +8,16 @@ Slug: 12-pcs-lip-gloss-set-12-pcs-matte-lip-liner-set-complete-lip-makeup-col-88
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/35b68fede5ef890a12ea99e6e487c39c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/35b68fede5ef890a12ea99e6e487c39c.jpeg
 Meta Title: 12 Pcs Lip Gloss Set + 12 Pcs Matte Lip Liner Set | Complete Lip Mak
 Meta Description: Buy 12 Pcs Lip Gloss Set + 12 Pcs Matte Lip Liner Set | Complete Lip Makeup Collection l Different Brand online in Pakistan from ASM VEO. Create stunning lip lo
 Description: Create stunning lip looks with this 24-piece makeup combo featuring 12 vibrant lip gloss shades and 12 matte lip liners. Perfect for everyday wear, parties, weddings, and professional makeup applications.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

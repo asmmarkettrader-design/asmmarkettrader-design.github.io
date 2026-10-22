@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal Round Garbage Bin With Pedal - Standard size Trash Can with Lid for Kitchen, Bathroom & Office
 Product ID: hhc-3757375
 SKU: hhc-3757375
@@ -7,11 +8,16 @@ Slug: royal-round-garbage-bin-with-pedal-standard-size-trash-can-with-lid-for-77
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/04998f5e935f58895b9d0512c17d1ad1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/04998f5e935f58895b9d0512c17d1ad1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/7e87663be859db45e4b0ff67eb4ce70b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/32a3a0309f7bee02c39d917612fe804c.png
 Meta Title: Royal Round Garbage Bin With Pedal - Standard size Trash Can with Li
 Meta Description: Buy Royal Round Garbage Bin With Pedal - Standard size Trash Can with Lid for Kitchen, Bathroom & Office online in Pakistan from ASM VEO. Keep your space clean
 Description: Keep your space clean and hands-free with this stylish round garbage bin. Designed with a convenient foot pedal, it allows easy, touchless operation—perfect for maintaining hygiene in your kitchen, office, or bedroom. Ideal for everyday use with a compact yet spacious capacity.
-Regular Price: 4271
-Sale Price: 4271
+Wholesale Price: 4271
+Regular Price: 7160
+Sale Price: 5732
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

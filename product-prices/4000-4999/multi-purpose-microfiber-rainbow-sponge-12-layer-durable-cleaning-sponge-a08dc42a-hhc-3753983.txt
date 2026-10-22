@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multi-Purpose Microfiber Rainbow Sponge – 12 Layer Durable Cleaning Sponge for Kitchen & Household Use
 Product ID: hhc-3753983
 SKU: hhc-3753983
@@ -7,11 +8,16 @@ Slug: multi-purpose-microfiber-rainbow-sponge-12-layer-durable-cleaning-spong-a0
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
-Meta Title: Multi-Purpose Microfiber Rainbow Sponge – 12 Layer Durable Cleaning
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/c5882b9813861c5ebe5daae90574f33d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/c5882b9813861c5ebe5daae90574f33d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/d476f7a4b88ff17e3a09f0fca64912d6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/f4cc2842aaca595520e0ffd840d746e1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/3838d832f37e30b230dc5f57b3e15200.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/30/a79f767c3d9ffadba5c1a709de1fef34.jpeg
+Meta Title: Multi-Purpose Microfiber Rainbow Sponge – 12 Layer Durable Cleaning 
 Meta Description: Buy Multi-Purpose Microfiber Rainbow Sponge – 12 Layer Durable Cleaning Sponge for Kitchen & Household Use online in Pakistan from ASM VEO. Durable 12-layer mic
 Description: Durable 12-layer microfiber rainbow sponge, multi-purpose design for kitchen and household cleaning.
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

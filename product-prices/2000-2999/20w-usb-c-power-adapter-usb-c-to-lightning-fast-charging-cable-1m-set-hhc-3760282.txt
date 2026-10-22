@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 20W USB-C Power Adapter + USB-C to Lightning Fast Charging Cable (1m) Set
 Product ID: hhc-3760282
 SKU: hhc-3760282
@@ -7,11 +8,16 @@ Slug: 20w-usb-c-power-adapter-usb-c-to-lightning-fast-charging-cable-1m-set-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/e0f1c4297fbc842009227cb021ed4e8c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/e0f1c4297fbc842009227cb021ed4e8c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/1b27eb90add99793f9594c74bc855559.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/656c019d9d11f8d15d4400ca955d1b40.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/d4080770b0822be67d87eae61875fc59.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/7ef49831af7251025028629a7f05456f.jpeg
 Meta Title: 20W USB-C Power Adapter + USB-C to Lightning Fast Charging Cable (1m
 Meta Description: Buy 20W USB-C Power Adapter + USB-C to Lightning Fast Charging Cable (1m) Set online in Pakistan from ASM VEO. Power up your iOS devices at lightning speed with
 Description: Power up your iOS devices at lightning speed with this premium 20W USB-C Power Adapter and USB-C to Lightning Cable combo set. This perfectly matched pair supports high-velocity Power Delivery (PD) fast charging and stable data synchronization.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Wooden Butterfly Buy One (Pack of 30) Get One Free ( Pack Off 30 ) Wooden Wall Decoration Items for Home, Bedrooms Inspire Kids and Look Decent
 Product ID: hhc-2730793
 SKU: hhc-2730793
@@ -7,11 +8,16 @@ Slug: 3d-wooden-butterfly-buy-one-pack-of-30-get-one-free-pack-off-30-wooden-a46
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 3D Wooden Butterfly Buy One (Pack of 30) Get One Free ( Pack Off 30
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-16-at-11.41.42-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-16-at-11.41.42-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-12-at-12.00.55-AM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-12-at-12.00.54-AM_cleanup.png
+Meta Title: 3D Wooden Butterfly Buy One (Pack of 30) Get One Free ( Pack Off 30 
 Meta Description: Buy 3D Wooden Butterfly Buy One (Pack of 30) Get One Free ( Pack Off 30 ) Wooden Wall Decoration Items for Home, Bedrooms Inspire Kids and Look Decent online in
 Description: 3D Wooden Butterfly Buy One (Pack of 30) Get One Free ( Pack Off 30 ) Wooden Wall Decoration Items for Home, Bedrooms Inspire Kids and Look Decent Description: Material: Wooden Size different size of butterfly like 3 inch 2 inch 1.5 inch Thickness 3mm wooden Buy One ( Pack Off 30 ) &amp; Get One ( Pack Off 30 ) = Total 60pcs
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

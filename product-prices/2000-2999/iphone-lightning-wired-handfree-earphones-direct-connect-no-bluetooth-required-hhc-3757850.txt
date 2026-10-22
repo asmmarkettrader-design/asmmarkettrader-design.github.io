@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: iPhone Lightning Wired Handfree Earphones Direct Connect No Bluetooth Required
 Product ID: hhc-3757850
 SKU: hhc-3757850
@@ -7,11 +8,16 @@ Slug: iphone-lightning-wired-handfree-earphones-direct-connect-no-bluetooth-requ
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/6ad0a9f9c03008720910a522ea6db713.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/6ad0a9f9c03008720910a522ea6db713.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/fd0f23e1dacd681adb6530708922478d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/84eaf461122ffd5b84386b9bfaa9572d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/b16e9a9fbb088fbdf650825de1770c5b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/cd339dfba903156039d48a9909c841b1.jpeg
 Meta Title: iPhone Lightning Wired Handfree Earphones Direct Connect No Bluetoot
 Meta Description: Buy iPhone Lightning Wired Handfree Earphones Direct Connect No Bluetooth Required online in Pakistan from ASM VEO. High-quality wired handfree earphones design
 Description: High-quality wired handfree earphones designed for iPhone devices with direct Lightning connection, delivering clear sound without the need for Bluetooth or charging.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Body Accel Niacinamide Whitening Toothpaste 100ml – Advanced Stain Removal With Probiotics For Bright Smile & Fresh Breath
 Product ID: hhc-3752815
 SKU: hhc-3752815
@@ -7,11 +8,16 @@ Slug: body-accel-niacinamide-whitening-toothpaste-100ml-advanced-stain-remova-9c
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/0110afea06298a3adf7bc80da539a33d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/0110afea06298a3adf7bc80da539a33d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/7c6220b7e9d4aff327c314a2d28a490a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/a0a79aa1814373b8239196fde766cf5f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/c4a77b395ce45e2807884fb75d7d840f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/dffc9218e2a9f445fb31d8a54a6efd78.jpg
 Meta Title: Body Accel Niacinamide Whitening Toothpaste 100ml – Advanced Stain R
 Meta Description: Buy Body Accel Niacinamide Whitening Toothpaste 100ml – Advanced Stain Removal With Probiotics For Bright Smile & Fresh Breath online in Pakistan from ASM VEO.
 Description: Body Accel Niacinamide Whitening Toothpaste 100ml – Advanced Stain Removal With Probiotics For Bright Smile & Fresh Breath
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

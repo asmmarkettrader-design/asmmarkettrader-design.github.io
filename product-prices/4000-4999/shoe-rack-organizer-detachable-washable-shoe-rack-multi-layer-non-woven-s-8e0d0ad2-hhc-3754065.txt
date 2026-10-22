@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shoe Rack Organizer Detachable Washable Shoe Rack Multi Layer Non Woven Shoe Cabinet
 Product ID: hhc-3754065
 SKU: hhc-3754065
@@ -7,11 +8,16 @@ Slug: shoe-rack-organizer-detachable-washable-shoe-rack-multi-layer-non-woven-8e
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/0ccd6738f4fbd7ebeed12311eea0d17f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/0ccd6738f4fbd7ebeed12311eea0d17f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/b023a99f4632472697aaa6020c2b7c7a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/702d7e92ca90b6c82898a4635dc43436.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/93973f90c06493a164b94e28e6b00591.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/39790c72f165e15f2a1c6b3fba5a2e36.jpeg
 Meta Title: Shoe Rack Organizer Detachable Washable Shoe Rack Multi Layer Non Wo
 Meta Description: Buy Shoe Rack Organizer Detachable Washable Shoe Rack Multi Layer Non Woven Shoe Cabinet online in Pakistan from ASM VEO. Shoe Rack Organizer Detachable Shoe Ra
 Description: Shoe Rack Organizer Detachable Shoe Rack Multi Layer Non Woven Shoe Cabinet Provides Durable Quality Reliable Utility Comfortable Use And Large Capacity
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Labrada Nutrition Muscle Mass Gainer 2lbs Chocolate Flavor High-Calorie Weight & Muscle Gain Powder
 Product ID: hhc-3759613
 SKU: hhc-3759613
@@ -7,11 +8,16 @@ Slug: labrada-nutrition-muscle-mass-gainer-2lbs-chocolate-flavor-high-calorie-82
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/3385392f1077d6364c597195de0af947.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/3385392f1077d6364c597195de0af947.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/9574f59eaf14a0cc3dd4317a00a7eadb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/16/8b25293a1a4a0015f47cc4f4aa785593.jpeg
 Meta Title: Labrada Nutrition Muscle Mass Gainer 2lbs Chocolate Flavor High-Calo
 Meta Description: Buy Labrada Nutrition Muscle Mass Gainer 2lbs Chocolate Flavor High-Calorie Weight & Muscle Gain Powder online in Pakistan from ASM VEO. Labrada Nutrition Muscl
 Description: Labrada Nutrition Muscle Mass Gainer is a premium high-calorie supplement designed to support muscle growth, strength, and healthy weight gain. Featuring a rich chocolate flavor, this 2lbs formula delivers protein, carbohydrates, and essential nutrients to fuel intense workouts and recovery.
-Regular Price: 2865
-Sale Price: 2865
+Wholesale Price: 2865
+Regular Price: 5060
+Sale Price: 4048
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

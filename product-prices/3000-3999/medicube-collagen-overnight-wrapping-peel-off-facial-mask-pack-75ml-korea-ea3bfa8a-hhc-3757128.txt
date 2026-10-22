@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Medicube Collagen Overnight Wrapping Peel Off Facial Mask Pack 75ml Korean Skincare For Radiant Hydrated Skin - Made In Korea
 Product ID: hhc-3757128
 SKU: hhc-3757128
@@ -7,11 +8,16 @@ Slug: medicube-collagen-overnight-wrapping-peel-off-facial-mask-pack-75ml-kor-ea
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Medicube Collagen Overnight Wrapping Peel Off Facial Mask Pack 75ml
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/e09fe476a2fe40144d072905f7ef92d2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/e09fe476a2fe40144d072905f7ef92d2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/63101d755bf04e220be86a622ca48d06.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/cdc40382eabbb6175cc43738fe7c8c76.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/0a6c19d135ffb2ecc18d9c9850b5108b.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/a4400f6233b9bbdf0b5571b8985a6a36.jpg
+Meta Title: Medicube Collagen Overnight Wrapping Peel Off Facial Mask Pack 75ml 
 Meta Description: Buy Medicube Collagen Overnight Wrapping Peel Off Facial Mask Pack 75ml Korean Skincare For Radiant Hydrated Skin - Made In Korea online in Pakistan from ASM VE
 Description: Medicube Collagen Overnight Wrapping Peel Off Mask 75ml Korean Skincare Designed To Hydrate Brighten And Revitalize Skin While You Sleep.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

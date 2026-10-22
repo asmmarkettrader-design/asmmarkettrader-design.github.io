@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 14-in-1 / 16-in-1 Multifunctional Vegetable Chopper & Slicer with Colander Basket and Storage Container – Heavy-Duty Food Cutter & Dicer for Onion, Potato, Carrot, Garlic & More
 Product ID: hhc-3756299
 SKU: hhc-3756299
@@ -7,11 +8,16 @@ Slug: 14-in-1-16-in-1-multifunctional-vegetable-chopper-slicer-with-colander-95e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/9eff407cffa0dc502acecaf6063ef2a3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/9eff407cffa0dc502acecaf6063ef2a3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/2f677a80e3005ffe4ed41e462c82cbda.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/e2d53b924e7129465c1ae7dc33098641.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/c6290aab35c46bdd6544edf145a69671.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/59f7d5a84cf6c891d7d201512766e259.jpeg
 Meta Title: 14-in-1 / 16-in-1 Multifunctional Vegetable Chopper & Slicer with Co
 Meta Description: Buy 14-in-1 / 16-in-1 Multifunctional Vegetable Chopper & Slicer with Colander Basket and Storage Container – Heavy-Duty Food Cutter & Dicer for Onion, Potato,
 Description: Make meal prep faster and easier with this 16-in-1 multifunctional vegetable chopper. Designed with multiple interchangeable blades, a built-in colander basket, and a large storage container, this heavy-duty veggie cutter lets you slice, dice, chop, and grate in seconds—perfect for salads, onions, po
-Regular Price: 1506
-Sale Price: 1506
+Wholesale Price: 1456
+Regular Price: 2660
+Sale Price: 2128
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

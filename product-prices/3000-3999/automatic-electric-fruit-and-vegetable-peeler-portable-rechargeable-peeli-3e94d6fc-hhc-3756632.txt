@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Automatic Electric Fruit and Vegetable Peeler – Portable Rechargeable Peeling Machine for Home and Commercial Use
 Product ID: hhc-3756632
 SKU: hhc-3756632
@@ -7,11 +8,16 @@ Slug: automatic-electric-fruit-and-vegetable-peeler-portable-rechargeable-pee-3e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/a1718d098fee758845af6969972496f8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/a1718d098fee758845af6969972496f8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/159836718ba3751648cda07472200fe7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/6ece68b54e6e5247db78b05e18cf4ae9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/e6d8f8e53d89fdf57f14d46f45cf6d79.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/2cda4cd1ba41f2909a9d5db9d8efc92e.jpg
 Meta Title: Automatic Electric Fruit and Vegetable Peeler – Portable Rechargeabl
 Meta Description: Buy Automatic Electric Fruit and Vegetable Peeler – Portable Rechargeable Peeling Machine for Home and Commercial Use online in Pakistan from ASM VEO. Effortles
 Description: Effortlessly peel fruits and vegetables with this automatic electric peeler. Portable, rechargeable, and suitable for home or commercial kitchens. Ideal for grapes, tomatoes, and more.
-Regular Price: 5113
-Sale Price: 5113
+Wholesale Price: 5113
+Regular Price: 8530
+Sale Price: 6827
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

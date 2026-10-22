@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Neck and Back Massager With Handle - Premium Quality Pain Relief
 Product ID: hhc-1092322
 SKU: hhc-1092322
@@ -7,11 +8,16 @@ Slug: neck-and-back-massager-with-handle-premium-quality-pain-relief-hhc-1092322
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-19-at-12.16.14-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-19-at-12.16.14-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/5b0b2e25-42ef-4f15-bee3-b0a0871e0ac5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/mage_2f69d31f-3660-4db7-aed5-774fc3344e7d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/image_0f40eaaf-29e6-43df-9177-00e3fefffd21.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/mage_96033e0d-97c5-4cac-a642-d5a95b44b295.jpg
 Meta Title: Neck and Back Massager With Handle - Premium Quality Pain Relief | B
 Meta Description: Buy Neck and Back Massager With Handle - Premium Quality Pain Relief online in Pakistan from ASM VEO. DESCRIPTION: Almost all adults experience pain in the back
 Description: DESCRIPTION: Almost all adults experience pain in the back and neck, which is related to changing habits in our environment, life and work. Massage can inhibit and regulate the nervous system, play analgesic effect, can remove muscle spasm, improve blood circulation, promote inflammation around the nerve to subside, and remove nerve root compression. 2. Suitable for people who work with hands for a long time. For example: driver, long - term office staff, IT personnel, etc. 3. Suitable for people with frequent soreness in waist, shoulder, neck and other relevant parts.
-Regular Price: 7079
-Sale Price: 7079
+Wholesale Price: 7079
+Regular Price: 11730
+Sale Price: 9383
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

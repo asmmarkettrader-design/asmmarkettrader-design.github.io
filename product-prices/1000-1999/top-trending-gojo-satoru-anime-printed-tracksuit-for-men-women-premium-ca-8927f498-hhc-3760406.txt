@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Top Trending Gojo Satoru Anime Printed Tracksuit for Men & Women – Premium Casual T-Shirt & Trouser Set (Random Color)
 Product ID: hhc-3760406
 SKU: hhc-3760406
@@ -7,11 +8,16 @@ Slug: top-trending-gojo-satoru-anime-printed-tracksuit-for-men-women-premium-892
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/3938697ab5ceb2d0f3cd2611d1e73c0b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/3938697ab5ceb2d0f3cd2611d1e73c0b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/814647846f3f647b5b811764b653c354.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/c6e16e23352ff65a265435cc4b8e9fc4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/456e3d27ec1eb494f00c125c6b8cf17a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/016db4558bf874bc86aeb5b0f3e2d24e.jpeg
 Meta Title: Top Trending Gojo Satoru Anime Printed Tracksuit for Men & Women – P
 Meta Description: Buy Top Trending Gojo Satoru Anime Printed Tracksuit for Men & Women – Premium Casual T-Shirt & Trouser Set (Random Color) online in Pakistan from ASM VEO. Show
 Description: Show off your anime fandom with this stylish Gojo Satoru printed tracksuit. Designed for both men and women, this comfortable T-shirt and trouser set is perfect for casual wear, outings, gaming sessions, and everyday fashion. Inspired by the iconic character from the popular anime series Jujutsu Kais
-Regular Price: 1124
-Sale Price: 1124
+Wholesale Price: 1074
+Regular Price: 1980
+Sale Price: 1585
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

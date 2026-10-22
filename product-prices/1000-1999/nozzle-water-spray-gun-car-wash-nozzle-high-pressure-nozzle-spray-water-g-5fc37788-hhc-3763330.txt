@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nozzle Water Spray Gun, Car Wash Nozzle, High Pressure Nozzle Spray Water Gun, Water Jet Hose Nozzles Pipe For Gardening, Bike,Car Wash,Window Cleaning
 Product ID: hhc-3763330
 SKU: hhc-3763330
@@ -7,11 +8,16 @@ Slug: nozzle-water-spray-gun-car-wash-nozzle-high-pressure-nozzle-spray-water-5f
 Category: Automotive
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
-Meta Title: Nozzle Water Spray Gun, Car Wash Nozzle, High Pressure Nozzle Spray
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/494a743a1a415c2f96eeae2e8c2fd0dc.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/494a743a1a415c2f96eeae2e8c2fd0dc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/bc48340da19e454a61a8def9ab83dc0d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/c46282d08bd2e944b08919dadd755b3f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/aece5fc9ce753a687a3bdecf69903138.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/cc6cd9c3eea59476658f060b0cc82625.jpg
+Meta Title: Nozzle Water Spray Gun, Car Wash Nozzle, High Pressure Nozzle Spray 
 Meta Description: Buy Nozzle Water Spray Gun, Car Wash Nozzle, High Pressure Nozzle Spray Water Gun, Water Jet Hose Nozzles Pipe For Gardening, Bike,Car Wash,Window Cleaning onli
 Description: Multi-Purpose: Versatile nozzles for gardening, car washing, bike cleaning, and window cleaning.
-Regular Price: 289
-Sale Price: 289
+Wholesale Price: 239
+Regular Price: 568
+Sale Price: 418
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

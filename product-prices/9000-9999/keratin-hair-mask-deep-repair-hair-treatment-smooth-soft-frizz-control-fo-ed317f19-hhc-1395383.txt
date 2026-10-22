@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Keratin Hair Mask | Deep Repair Hair Treatment | Smooth, Soft & Frizz Control for Dry & Damaged Hair - 500ml
 Product ID: hhc-1395383
 SKU: hhc-1395383
@@ -7,11 +8,16 @@ Slug: keratin-hair-mask-deep-repair-hair-treatment-smooth-soft-frizz-control-ed3
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/k4_b2e57019-25bc-4ea6-bf02-7c9e44002678_720x.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/k4_b2e57019-25bc-4ea6-bf02-7c9e44002678_720x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/k2_502886db-aef7-43b4-9957-77bacf5e8e3f_720x.webp
 Meta Title: Keratin Hair Mask | Deep Repair Hair Treatment | Smooth, Soft & Friz
 Meta Description: Buy Keratin Hair Mask | Deep Repair Hair Treatment | Smooth, Soft & Frizz Control for Dry & Damaged Hair - 500ml online in Pakistan from ASM VEO. Restore dry, d
 Description: Restore dry, damaged, and frizzy hair with this Keratin Hair Mask 500ml. Its nourishing formula helps repair hair damage, reduce frizz, improve softness, and add a healthy shine. Suitable for all hair types and perfect for regular hair care.
-Regular Price: 385
-Sale Price: 385
+Wholesale Price: 335
+Regular Price: 712
+Sale Price: 562
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

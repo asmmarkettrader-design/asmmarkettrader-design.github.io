@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shinon Face Steamer & Inhaler 2-in-1 | Steam Facial Machine Electric | Sauna Spa Nebulizer Home Facial
 Product ID: hhc-3754411
 SKU: hhc-3754411
@@ -7,11 +8,16 @@ Slug: shinon-face-steamer-inhaler-2-in-1-steam-facial-machine-electric-sauna-f86
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/23b3a74b73f8c47b5d22d906c12af938.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/23b3a74b73f8c47b5d22d906c12af938.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/b547b29f6510dc37ffce5f05e6be74db.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/151d13260d312f9b9e28bc96cb15161c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/c762bcb28214539cd88b8422266f4bd4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/8696c11efe6b555bf46a1e9f5841d6ab.png
 Meta Title: Shinon Face Steamer & Inhaler 2-in-1 | Steam Facial Machine Electric
 Meta Description: Buy Shinon Face Steamer & Inhaler 2-in-1 | Steam Facial Machine Electric | Sauna Spa Nebulizer Home Facial online in Pakistan from ASM VEO. Enjoy spa-like skinc
 Description: Enjoy spa-like skincare at home with Shinon 2-in-1 Face Steamer & Inhaler. Electric steam hydrates skin, opens pores, and supports relaxation with gentle inhalation therapy.
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (buy one get 1 free) 3D Wooden calligraphy Loh-e-qurani + Round Aytul kursi+ Fabi
 Product ID: hhc-2767398
 SKU: hhc-2767398
@@ -7,11 +8,16 @@ Slug: buy-one-get-1-free-3d-wooden-calligraphy-loh-e-qurani-round-aytul-kursi-fa
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsAppImage2022-11-30at3.45.08PM_1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsAppImage2022-11-30at3.45.08PM_1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/7.webp
 Meta Title: (buy one get 1 free) 3D Wooden calligraphy Loh-e-qurani + Round Aytu
 Meta Description: Buy (buy one get 1 free) 3D Wooden calligraphy Loh-e-qurani + Round Aytul kursi+ Fabi online in Pakistan from ASM VEO. 3D Wooden calligraphy Loh-e-qurani + Roun
 Description: 3D Wooden calligraphy Loh-e-qurani + Round Aytul kursi+ Fabi buy one get 1 free Description Metrial Wooden Size 16 inch size each Thickness 3mm wooden Abbreviated Letters At The Beginning Of Chapters Of Quran-E-Kareem (Koran/Quran). Theses Letters In The Beginning Of The Chapters In Quran-E-Kareem Are Rumooz Means Codes, ALLAH Subhanahu Wata Â€˜Ala Is The Only One Who Has The Knowledge Of Their Meanings. We The Muslims Believe In Whatsoever Their Meanings Are. Elevate your home with the Loh e Qurani Wooden Calligraphy Decor. Crafted from premium wood, this elegant piece features intricate Arabic calligraphy known for its spiritual and protective benefits. Perfect for living rooms, prayer rooms, or study areas, this decor item embodies the timeless beauty of Islamic art
-Regular Price: 950
-Sale Price: 950
+Wholesale Price: 900
+Regular Price: 1710
+Sale Price: 1365
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

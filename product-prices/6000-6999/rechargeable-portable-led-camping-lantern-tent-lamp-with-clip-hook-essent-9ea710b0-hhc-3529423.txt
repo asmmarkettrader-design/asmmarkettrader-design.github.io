@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Portable LED Camping Lantern, Tent Lamp with Clip Hook, Essentials Tent Accessories Emergency Camping Lights for Backpacking Camping Hiking Fishing Hurricane Outage type -c charging-Rechargeable Led Light
 Product ID: hhc-3529423
 SKU: hhc-3529423
@@ -7,11 +8,16 @@ Slug: rechargeable-portable-led-camping-lantern-tent-lamp-with-clip-hook-esse-9e
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/61cPVGSTH1L._SX466_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/61cPVGSTH1L._SX466_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/71T2cC9KceL._SY445_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/51SLMOeBkXL._SX466_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/07/714I5zu1VgL._SX342_.jpg
 Meta Title: Rechargeable Portable LED Camping Lantern, Tent Lamp with Clip Hook,
 Meta Description: Buy Rechargeable Portable LED Camping Lantern, Tent Lamp with Clip Hook, Essentials Tent Accessories Emergency Camping Lights for Backpacking Camping Hiking Fis
 Description: Rechargeable Portable LED Camping Lantern, Tent Lamp with Clip Hook, Essentials Tent Accessories Emergency Camping.
-Regular Price: 712
-Sale Price: 712
+Wholesale Price: 662
+Regular Price: 1280
+Sale Price: 1020
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

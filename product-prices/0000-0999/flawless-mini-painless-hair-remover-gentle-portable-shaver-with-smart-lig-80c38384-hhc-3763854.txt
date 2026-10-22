@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flawless Mini Painless Hair Remover – Gentle Portable Shaver with Smart Light for Easy Hair Removal
 Product ID: hhc-3763854
 SKU: hhc-3763854
@@ -7,11 +8,16 @@ Slug: flawless-mini-painless-hair-remover-gentle-portable-shaver-with-smart-l-80
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/a96fd059d73a3a2927071e6a60e256d8.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/a96fd059d73a3a2927071e6a60e256d8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/233950abe1de928c83562baa88c164db.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/54834755a5bcbf5e22d4ed1ef7878c70.png
 Meta Title: Flawless Mini Painless Hair Remover – Gentle Portable Shaver with Sm
 Meta Description: Buy Flawless Mini Painless Hair Remover – Gentle Portable Shaver with Smart Light for Easy Hair Removal online in Pakistan from ASM VEO. Compact mini hair remov
 Description: Compact mini hair remover designed for quick and gentle hair removal with a built-in smart light.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Autumn Mountain River Canvas Art | Scenic Nature Landscape Wall Decor | Artistic Forest Painting for Home | 12x16 Inches
 Product ID: hhc-3757886
 SKU: hhc-3757886
@@ -7,11 +8,16 @@ Slug: autumn-mountain-river-canvas-art-scenic-nature-landscape-wall-decor-art-3a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/7aaef0ed88a5555bd8eb97a7006a258f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/7aaef0ed88a5555bd8eb97a7006a258f.jpeg
 Meta Title: Autumn Mountain River Canvas Art | Scenic Nature Landscape Wall Deco
 Meta Description: Buy Autumn Mountain River Canvas Art | Scenic Nature Landscape Wall Decor | Artistic Forest Painting for Home | 12x16 Inches online in Pakistan from ASM VEO. Br
 Description: Bring the beauty of nature indoors with the Autumn Mountain River Canvas Art. This 12x16 inch piece features a vibrant autumn forest, a flowing river, and majestic snow-capped mountains. Printed on premium canvas with easy-to-install double tape for a modern, drill-free look.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

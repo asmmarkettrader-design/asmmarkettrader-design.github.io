@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M4 LED Headlight Bulb for Bikes – High Brightness China Imported Motorcycle Headlight Lamp
 Product ID: hhc-3756773
 SKU: hhc-3756773
@@ -7,11 +8,16 @@ Slug: m4-led-headlight-bulb-for-bikes-high-brightness-china-imported-motorcyc-70
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/a045cfae6a64cddb5523a46eb1683626.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/a045cfae6a64cddb5523a46eb1683626.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/c41958708de16d7991833c31067c6962.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/887fb7d674929868e22e478897ac7cf2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/53ba385ea32d9883209bf1d30e59ad54.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/05/2a504cc2bdc5867237bb63fd49088112.jpeg
 Meta Title: M4 LED Headlight Bulb for Bikes – High Brightness China Imported Mot
 Meta Description: Buy M4 LED Headlight Bulb for Bikes – High Brightness China Imported Motorcycle Headlight Lamp online in Pakistan from ASM VEO. Upgrade your bike’s lighting wit
 Description: Upgrade your bike’s lighting with the M4 LED Headlight Bulb. This high-brightness China imported LED bulb delivers powerful illumination, low power consumption, and long-lasting performance for safer night riding on all motorcycles.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

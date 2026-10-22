@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Believe, Dream, Faith – 3-Piece Inspirational Butterfly Wall Art Set (8x11 inch)
 Product ID: hhc-3752292
 SKU: hhc-3752292
@@ -7,11 +8,16 @@ Slug: believe-dream-faith-3-piece-inspirational-butterfly-wall-art-set-8x11-inch
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/cdee22ba6a977358d5e7a12431e35c77.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/cdee22ba6a977358d5e7a12431e35c77.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/3f7701b3d59a58dd8ec2e9c349530930.jpeg
 Meta Title: Believe, Dream, Faith – 3-Piece Inspirational Butterfly Wall Art Set
 Meta Description: Buy Believe, Dream, Faith – 3-Piece Inspirational Butterfly Wall Art Set (8x11 inch) online in Pakistan from ASM VEO. 3-piece inspirational wall art featuring m
 Description: 3-piece inspirational wall art featuring motivational quotes and butterfly illustrations. Each 8x11 inch wooden sticky tile includes tape for effortless wall placement.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 10 Travel Soap Outdoor Portable Mini Paper Soap Paper Washing Hand Bath (Random Color)
 Product ID: hhc-2070878
 SKU: hhc-2070878
@@ -7,11 +8,16 @@ Slug: pack-of-10-travel-soap-outdoor-portable-mini-paper-soap-paper-washing-h-a2
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/Sd38863e70d7c47e1bd7076ef53429af0N.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/Sd38863e70d7c47e1bd7076ef53429af0N.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/Sd75c0d0b99794ddc80fe65a920ed84dfh.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/S473f245c3f024cc69d99df5eace34434A.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/S2b814a21f8ee43c098192155111387e4u.webp
 Meta Title: Pack of 10 Travel Soap Outdoor Portable Mini Paper Soap Paper Washin
 Meta Description: Buy Pack of 10 Travel Soap Outdoor Portable Mini Paper Soap Paper Washing Hand Bath (Random Color) online in Pakistan from ASM VEO. Description: Useful design a
 Description: Description: Useful design and high qualityConvenient to take and easy to useGood for travel, camping, hiking, BBQ or other outdoor activitiesMade from soap with plastic boxGood item in daily life20 pcs paper in 1 boxSpecifications:Material: High quality PP5Style: Disinfecting soap paper
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

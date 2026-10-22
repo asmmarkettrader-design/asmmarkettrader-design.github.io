@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Orange Enzyme Exfoliating Gel Natural Skin Care Formula Brightens Complexion Removes Dead Skin Cells Enhances Smooth Radiant Glow
 Product ID: hhc-3754213
 SKU: hhc-3754213
@@ -7,11 +8,16 @@ Slug: orange-enzyme-exfoliating-gel-natural-skin-care-formula-brightens-compl-b2
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/bb8ad53c683c746d19d7fb73eede072d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/bb8ad53c683c746d19d7fb73eede072d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/170c618080296fbd0656c116abf528a9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/dd12ef5e841837ee26a34fd0eff7f7d9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/cf0582b41a645df6d497e5e7b39c813e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/daf7daa4a6f1415101d8a4d67d8e6c44.jpeg
 Meta Title: Orange Enzyme Exfoliating Gel Natural Skin Care Formula Brightens Co
 Meta Description: Buy Orange Enzyme Exfoliating Gel Natural Skin Care Formula Brightens Complexion Removes Dead Skin Cells Enhances Smooth Radiant Glow online in Pakistan from AS
 Description: Orange Enzyme Exfoliating Gel Provides Natural Skin Care Formula Brightens Complexion Removes Dead Skin Cells And Radiant Glow
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

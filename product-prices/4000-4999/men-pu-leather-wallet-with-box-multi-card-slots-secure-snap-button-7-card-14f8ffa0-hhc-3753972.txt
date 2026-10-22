@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men PU Leather Wallet with Box | Multi Card Slots & Secure Snap Button | 7 Card Holders & 3 Note Compartments
 Product ID: hhc-3753972
 SKU: hhc-3753972
@@ -7,11 +8,16 @@ Slug: men-pu-leather-wallet-with-box-multi-card-slots-secure-snap-button-7-ca-14
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/2ccb34438bd4663b52780b5ea83f38d1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/2ccb34438bd4663b52780b5ea83f38d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/08c369fe1b0f2459f5aa8aa9a0a9e271.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/d73696c4d7af047fb7f7fa64f2aef043.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/e20e8a2f654ef0565dc8d4ddf84e7717.jpeg
 Meta Title: Men PU Leather Wallet with Box | Multi Card Slots & Secure Snap Butt
 Meta Description: Buy Men PU Leather Wallet with Box | Multi Card Slots & Secure Snap Button | 7 Card Holders & 3 Note Compartments online in Pakistan from ASM VEO. Upgrade your
 Description: Upgrade your everyday style with this Men’s PU Leather Wallet, designed for elegance, practicality, and durability. Crafted from premium-quality PU leather, it offers a sleek, professional look while ensuring long-lasting performance.
-Regular Price: 713
-Sale Price: 713
+Wholesale Price: 663
+Regular Price: 1280
+Sale Price: 1021
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

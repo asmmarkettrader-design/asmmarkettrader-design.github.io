@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1pcs Bath Bombs for Kids Gift Set, Colorful Bath Bomb with Surprise Gift Inside, Ocean Theme Fizzing Tub Fun, Moisturizing Foam for Soft Skin, Cute Toy Filled Bath Time Treat
 Product ID: hhc-3764028
 SKU: hhc-3764028
@@ -7,11 +8,16 @@ Slug: 1pcs-bath-bombs-for-kids-gift-set-colorful-bath-bomb-with-surprise-gift-47
 Category: Personal Care
 Subcategory: Bath & Body (Soaps)
 Brand: ASM VEO
-Meta Title: 1pcs Bath Bombs for Kids Gift Set, Colorful Bath Bomb with Surprise
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/aca8f87a24c490cde783a5b095492d25.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/aca8f87a24c490cde783a5b095492d25.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/8c799232f2493a9cdf6e4b3641251060.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/5e8d461ea985c26789ec84420796f187.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/f62f98a27c0a3ad2e5c75735953bd914.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/c1c847692d8165e93e3d4e31891d1c34.jpg
+Meta Title: 1pcs Bath Bombs for Kids Gift Set, Colorful Bath Bomb with Surprise 
 Meta Description: Buy 1pcs Bath Bombs for Kids Gift Set, Colorful Bath Bomb with Surprise Gift Inside, Ocean Theme Fizzing Tub Fun, Moisturizing Foam for Soft Skin, Cute Toy Fill
 Description: Make bath time more exciting with Hidden Surprise Bath Bombs for Kids. Each colorful bath bomb fizzes and dissolves in water while revealing a fun hidden surprise inside.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

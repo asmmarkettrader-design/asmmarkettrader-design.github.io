@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mouse and Rat Glue Board  (Book Type)
 Product ID: hhc-776088
 SKU: hhc-776088
@@ -7,11 +8,16 @@ Slug: mouse-and-rat-glue-board-book-type-hhc-776088
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2023-11-15-at-1.51.02-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2023-11-15-at-1.51.02-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2023-11-15-at-1.51.02-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2023-11-15-at-1.51.03-PM-2.jpeg
 Meta Title: Mouse and Rat Glue Board (Book Type) | Buy Online in Pakistan
 Meta Description: Buy Mouse and Rat Glue Board (Book Type) online in Pakistan from ASM VEO. product details THICKER CARDBOARD: The Expert catch mouse glue traps use special cardb
 Description: product details THICKER CARDBOARD: The Expert catch mouse glue traps use special cardboard that is thicker and harder. Catch more effectively with this stickiest, strongest trap. Easier to catch, unlike other glue traps that allow insects to escape. Catch it in one second. FOLDABLE DESIGN: Foldable design makes this sticky board easier to catch. The Superglue board could be Placed, "L" Placed, and “U" Placed and "0" Placed. Especially suitable for the placement in narrow space. &nbsp;
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

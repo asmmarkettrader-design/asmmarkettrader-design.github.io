@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Huda Beauty Professional Paint Stick
 Product ID: hhc-2104361
 SKU: hhc-2104361
@@ -7,11 +8,16 @@ Slug: huda-beauty-professional-paint-stick-hhc-2104361
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-27-at-3.55.26-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-27-at-3.55.26-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-27-at-3.55.26-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-27-at-3.55.25-PM.jpeg
 Meta Title: Huda Beauty Professional Paint Stick | Buy Online in Pakistan
 Meta Description: Buy Huda Beauty Professional Paint Stick online in Pakistan from ASM VEO. Material: Liquid Product Type: Paint stick Package Include: 1 × paint stick Shade: Ivo
 Description: Material: Liquid Product Type: Paint stick Package Include: 1 × paint stick Shade: Ivory
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

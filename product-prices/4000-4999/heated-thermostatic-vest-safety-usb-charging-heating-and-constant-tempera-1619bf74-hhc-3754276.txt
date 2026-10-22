@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heated Thermostatic Vest Safety USB Charging Heating And Constant Temperature Comfortable Wear
 Product ID: hhc-3754276
 SKU: hhc-3754276
@@ -7,11 +8,16 @@ Slug: heated-thermostatic-vest-safety-usb-charging-heating-and-constant-tempe-16
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/b22e87fdc7bdfcf807beefd2c797f5bf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/b22e87fdc7bdfcf807beefd2c797f5bf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/7f296b2c6324c70a63a55171c6ca8def.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/1fbb28c33e25a4a4472ca21e927752b8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/ca50d478262bbaa40d29d40242195612.jpeg
 Meta Title: Heated Thermostatic Vest Safety USB Charging Heating And Constant Te
 Meta Description: Buy Heated Thermostatic Vest Safety USB Charging Heating And Constant Temperature Comfortable Wear online in Pakistan from ASM VEO. Heated Thermostatic Vest Pro
 Description: Heated Thermostatic Vest Provides Safety USB Charging Heating Constant Temperature Durable Quality And Comfortable Wear
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

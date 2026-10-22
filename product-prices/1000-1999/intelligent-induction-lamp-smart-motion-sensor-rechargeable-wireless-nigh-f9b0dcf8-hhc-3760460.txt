@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Intelligent Induction Lamp – Smart Motion Sensor Rechargeable Wireless Night Light l Sensor With Button
 Product ID: hhc-3760460
 SKU: hhc-3760460
@@ -7,11 +8,16 @@ Slug: intelligent-induction-lamp-smart-motion-sensor-rechargeable-wireless-ni-f9
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/1e8423b35842b77f41464a2a548f7428.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/1e8423b35842b77f41464a2a548f7428.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/b24c2fb88ee1ee969a69f70e7767c17d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/b097b3f8195e752e6bf0e6bf452e3a66.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/10/61a081ae5d74ff05a6d457959d722cd6.jpeg
 Meta Title: Intelligent Induction Lamp – Smart Motion Sensor Rechargeable Wirele
 Meta Description: Buy Intelligent Induction Lamp – Smart Motion Sensor Rechargeable Wireless Night Light l Sensor With Button online in Pakistan from ASM VEO. Illuminate your hom
 Description: Illuminate your home effortlessly with the Intelligent Induction Lamp. Featuring an advanced smart motion sensor, a completely wireless rechargeable battery design, and quick-stick magnetic mounting plates,
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

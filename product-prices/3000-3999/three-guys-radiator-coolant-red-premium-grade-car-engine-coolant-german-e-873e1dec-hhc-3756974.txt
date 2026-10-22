@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS Radiator Coolant Red – Premium Grade | Car Engine Coolant | German Engineered (4L)
 Product ID: hhc-3756974
 SKU: hhc-3756974
@@ -7,11 +8,16 @@ Slug: three-guys-radiator-coolant-red-premium-grade-car-engine-coolant-german-87
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/3d9b2b96fef24d16a14501535ebf5489.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/3d9b2b96fef24d16a14501535ebf5489.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/a09fc191d2f694e07a53a4a776ddd912.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/daafffd2a3e21fd3830e195d759d580c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/2aac692d0b8a9908a0c1d285dcbacd5a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/a132c5b5f8736e6c32319ad2050107e4.jpg
 Meta Title: THREE GUYS Radiator Coolant Red – Premium Grade | Car Engine Coolant
 Meta Description: Buy THREE GUYS Radiator Coolant Red – Premium Grade | Car Engine Coolant | German Engineered (4L) online in Pakistan from ASM VEO. HREE GUYS Radiator Coolant Re
 Description: HREE GUYS Radiator Coolant Red – Premium Grade is a high-quality engine coolant designed to protect your car from overheating, rust, and corrosion. Its advanced formula ensures efficient heat transfer and long-lasting cooling system performance, keeping your engine running smoothly in all driving .
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Engine cleaner 70ml
 Product ID: hhc-2100119
 SKU: hhc-2100119
@@ -7,11 +8,16 @@ Slug: engine-cleaner-70ml-hhc-2100119
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.22.32-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-26-at-11.22.32-PM.jpeg
 Meta Title: Engine cleaner 70ml | Buy Online in Pakistan
 Meta Description: Buy Engine cleaner 70ml online in Pakistan from ASM VEO. Fast Acting Formulation - cleans oils, greases, hard to remove dirt on engine.Restores to Cash on Deliv
 Description: Fast Acting Formulation - cleans oils, greases, hard to remove dirt on engine.Restores to a factory original look, cleans engine compartment of all oils, grease, coolant marks. Does not damage plastic or rubber.Can be used as a hard cleaner/degreaser elsewhere on car exterior. Fast Acting Formulation - cleans oils, greases, hard to remove dirt on engine.Restores to a factory original look, cleans engine compartment of all oils, grease, coolant marks. Does not damage plastic or rubber.Can be used as a hard cleaner/degreaser elsewhere on car exterior. Specifications of Harris Engine Cleaner 70ml
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

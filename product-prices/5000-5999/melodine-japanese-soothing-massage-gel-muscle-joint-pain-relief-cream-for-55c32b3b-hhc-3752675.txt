@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MELODINE Japanese Soothing Massage Gel – Muscle & Joint Pain Relief Cream For Shoulder, Neck, Back & Knee – Fast-Absorbing Herbal Formula
 Product ID: hhc-3752675
 SKU: hhc-3752675
@@ -7,11 +8,16 @@ Slug: melodine-japanese-soothing-massage-gel-muscle-joint-pain-relief-cream-f-55
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: MELODINE Japanese Soothing Massage Gel – Muscle & Joint Pain Relief
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/d5c0bc7b707a1c504297114c1ed00838.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/d5c0bc7b707a1c504297114c1ed00838.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/6062170c213d72928f2247f95f0651bc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/5bc3ad4e5050927fb9d50e6f00bacb80.png
+Meta Title: MELODINE Japanese Soothing Massage Gel – Muscle & Joint Pain Relief 
 Meta Description: Buy MELODINE Japanese Soothing Massage Gel – Muscle & Joint Pain Relief Cream For Shoulder, Neck, Back & Knee – Fast-Absorbing Herbal Formula online in Pakistan
 Description: Experience deep relief with MELODINE Japanese Soothing Massage Gel, specially formulated to ease muscle stiffness, joint pain, and body fatigue.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

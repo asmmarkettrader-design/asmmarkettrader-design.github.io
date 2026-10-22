@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Waffle Knit Texture Sando For Boys And Men - Summers Trendy New Sando For Men / Sando For Boys / Men'S Sando / Boys Sando
 Product ID: hhc-3755892
 SKU: hhc-3755892
@@ -7,11 +8,16 @@ Slug: waffle-knit-texture-sando-for-boys-and-men-summers-trendy-new-sando-for-43
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/f94f26a5dc49557664921d27d5bb2df2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/f94f26a5dc49557664921d27d5bb2df2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/25/5568caeee7cf1e06ab926e55e5d6f41f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/25/6aa932ab88a6fe7e3cd025d8d37cd645.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/25/a1029f1101676ecb65669e3aa1caab67.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/25/6c2a5bc4e18b658a73d4d8d649f75d69.jpeg
 Meta Title: Waffle Knit Texture Sando For Boys And Men - Summers Trendy New Sand
 Meta Description: Buy Waffle Knit Texture Sando For Boys And Men - Summers Trendy New Sando For Men / Sando For Boys / Men'S Sando / Boys Sando online in Pakistan from ASM VEO. W
 Description: Waffle Knit Texture Sando For Boys And Men - Summers Trendy New Sando For Men / Sando For Boys / Men'S Sando / Boys Sando
-Regular Price: 752
-Sale Price: 752
+Wholesale Price: 702
+Regular Price: 1350
+Sale Price: 1078
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

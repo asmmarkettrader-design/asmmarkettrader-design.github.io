@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zoom Water Gun 11cm Full pack of 6 Pcs(random color )
 Product ID: hhc-287141
 SKU: hhc-287141
@@ -7,11 +8,16 @@ Slug: zoom-water-gun-11cm-full-pack-of-6-pcs-random-color-hhc-287141
 Category: Baby & Kids Accessories
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/s-l500-3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/s-l500-3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/s-l500-2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/s-l500-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/03/s-l500.jpg
 Meta Title: Zoom Water Gun 11cm Full pack of 6 Pcs(random color ) | Buy Online i
 Meta Description: Buy Zoom Water Gun 11cm Full pack of 6 Pcs(random color ) online in Pakistan from ASM VEO. Excellent party bag and stocking filler, a classic squirting water pi
 Description: Excellent party bag and stocking filler, a classic squirting water pistol. This is for 1 x Water pistol (you will receive 1 of the pictured pistols - color is sent at random) Made of Plastic Assorted Neon Colors: Please note, we send at random and cannot take specific requests for colors. Measures 11cm x 8cm As with ALL types of water pistol, you may experience slight leaks in the joins and trigger, etc. This is normal with this type of product. pack of 6 &nbsp;
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

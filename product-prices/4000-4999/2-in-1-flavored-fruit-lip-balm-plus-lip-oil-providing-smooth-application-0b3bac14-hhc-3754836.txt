@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 In 1 Flavored Fruit Lip Balm Plus Lip Oil Providing Smooth Application Gentle Care - Multicolor
 Product ID: hhc-3754836
 SKU: hhc-3754836
@@ -7,11 +8,16 @@ Slug: 2-in-1-flavored-fruit-lip-balm-plus-lip-oil-providing-smooth-applicatio-0b
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/0a223a20718bbaa67184e6bbb689d96f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/0a223a20718bbaa67184e6bbb689d96f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/894392ba5203840734c0d7e3416d49c2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/25ef565af75020f6ad62947ed70eef87.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/5cef0df766ca01a2a92445727451ea57.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/ffa4746aee5b6831f33cf2cb81469524.jpeg
 Meta Title: 2 In 1 Flavored Fruit Lip Balm Plus Lip Oil Providing Smooth Applica
 Meta Description: Buy 2 In 1 Flavored Fruit Lip Balm Plus Lip Oil Providing Smooth Application Gentle Care - Multicolor online in Pakistan from ASM VEO. 2 In 1 Flavored Fruit Lip
 Description: 2 In 1 Flavored Fruit Lip Balm Plus Lip Oil Offering Smooth Application Gentle Care And Reliable Daily Lip Care
-Regular Price: 388
-Sale Price: 388
+Wholesale Price: 338
+Regular Price: 717
+Sale Price: 567
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

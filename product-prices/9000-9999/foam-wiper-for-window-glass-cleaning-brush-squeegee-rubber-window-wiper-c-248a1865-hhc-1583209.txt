@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foam Wiper for window| Glass Cleaning Brush / Squeegee Rubber Window Wiper Cleaner(random color )
 Product ID: hhc-1583209
 SKU: hhc-1583209
@@ -7,11 +8,16 @@ Slug: foam-wiper-for-window-glass-cleaning-brush-squeegee-rubber-window-wiper-24
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/S2b3dc87561fc41a39a84c67a0532a2f2u.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/S2b3dc87561fc41a39a84c67a0532a2f2u.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/S3191983df755415c8b11e9c7cf2c8692l.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/S8f22ad475e594320bb5c2d8a728f710aX.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/S9558de9f193b439ebcfb226718ab1f67C.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/d78c05f44858b0567d93478312b7901f.jpg
 Meta Title: Foam Wiper for window| Glass Cleaning Brush / Squeegee Rubber Window
 Meta Description: Buy Foam Wiper for window| Glass Cleaning Brush / Squeegee Rubber Window Wiper Cleaner(random color ) online in Pakistan from ASM VEO. Fomic wiper 2 IN 1 Squeeg
 Description: Fomic wiper 2 IN 1 Squeegee Rubber Window Wiper Cleaner Washer for Car Glass &amp; Kitchen Mini Wiper 4. Innovative Corner Cleaning: With its unique, modern design window cleaner can clean into narrow areas of your windows and clean corners more thoroughly. Original Picture
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: LED Work Light Driving Fog Light Red Blue Auxiliary Hi/Lo beam White Amber Spotlight Universal for ATV SUV for all bikes/car/trucks/jeep
 Product ID: hhc-1571014
 SKU: hhc-1571014
@@ -7,11 +8,16 @@ Slug: led-work-light-driving-fog-light-red-blue-auxiliary-hi-lo-beam-white-am-8e
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-15-at-11.50.52-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-15-at-11.50.52-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/S5f730fe18c8347f48094f5a73d475714q.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/S8766a5ff8f2c435083b120a7754928f6m.jpg_640x640.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-15-at-11.40.16-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-15-at-11.40.17-AM.jpeg
 Meta Title: LED Work Light Driving Fog Light Red Blue Auxiliary Hi/Lo beam White
 Meta Description: Buy LED Work Light Driving Fog Light Red Blue Auxiliary Hi/Lo beam White Amber Spotlight Universal for ATV SUV for all bikes/car/trucks/jeep online in Pakistan
 Description: Material: PC+ led Product voltage: DC9V-80V source power: 15W Waterproof level: IP67 Life span: 50000H Light color: white yellow,red blue flash Applicable models: for motorcycles, 4x4 off-road vehicles, etc Package Included:1/2 x LED work lightsFeatures: Metal body 1. Aluminum alloy shell, fast heat dissipation 2. LED chip, lights up instantly, strong resistance to light decay 3. Easy to install
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

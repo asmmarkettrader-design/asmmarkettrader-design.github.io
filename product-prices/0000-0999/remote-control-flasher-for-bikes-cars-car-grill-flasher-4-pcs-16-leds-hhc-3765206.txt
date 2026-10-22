@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Remote Control Flasher For Bikes & Cars Car Grill Flasher 4 Pcs 16 leds
 Product ID: hhc-3765206
 SKU: hhc-3765206
@@ -7,11 +8,16 @@ Slug: remote-control-flasher-for-bikes-cars-car-grill-flasher-4-pcs-16-leds-hhc-
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/bd7ef99cd4bcf616ef680d2e4ff37bee.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/bd7ef99cd4bcf616ef680d2e4ff37bee.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/d6e4f7068b5256e45de4925ea60dd79f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/ffbef5ea434370992d7bb14ded05d343.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/6ed76092310c542e598ab6a5c9533e03.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/d033ab5119cfbb0ac861dab96734457e.png
 Meta Title: Remote Control Flasher For Bikes & Cars Car Grill Flasher 4 Pcs 16 l
 Meta Description: Buy Remote Control Flasher For Bikes & Cars Car Grill Flasher 4 Pcs 16 leds online in Pakistan from ASM VEO. Remote Control Flasher For Bikes & Cars | Car Grill
 Description: Remote Control Flasher For Bikes & Cars | Car Grill Flasher, White Flasher For All Cars & Jeep 4x4, Strobe Light-4 Pcs 16 leds with Remote
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

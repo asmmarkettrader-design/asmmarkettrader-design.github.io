@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cloth fuzz remover (Random color)
 Product ID: hhc-766606
 SKU: hhc-766606
@@ -7,11 +8,16 @@ Slug: cloth-fuzz-remover-random-color-hhc-766606
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/7ccb49c2a22be7cb0548b4417ed7d3db.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/7ccb49c2a22be7cb0548b4417ed7d3db.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/cab3de4431da86fd715c12cc3f6c24ba.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/1a2c676a5a5dc2b5090c31db39c38e72.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/0e8b75b6f7fc3e84634a9c28a6696053.webp
 Meta Title: Cloth fuzz remover (Random color) | Buy Online in Pakistan
 Meta Description: Buy Cloth fuzz remover (Random color) online in Pakistan from ASM VEO. Cloth fuzz Remover Fuzz Fabric Shaver for Clothing Carpet Sweater Fluff Fabric Shaver Bru
 Description: Cloth fuzz Remover Fuzz Fabric Shaver for Clothing Carpet Sweater Fluff Fabric Shaver Brush Clean ToolProducts with electrical plugs are designed for use. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foot Filer Effective Tool For Removing Dead Skin And Achieving Smooth Soft Feet With Ease
 Product ID: hhc-3753715
 SKU: hhc-3753715
@@ -7,11 +8,16 @@ Slug: foot-filer-effective-tool-for-removing-dead-skin-and-achieving-smooth-s-3c
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/e568a3712b0239efd27d37c14de03a66.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/e568a3712b0239efd27d37c14de03a66.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/d761e7eaa2777af850c8aa8d384a08d1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/934fd5e49c8d69b5fd149821f055c2e2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/e5e5319ae43bf846fc8eb4df581b03cc.jpeg
 Meta Title: Foot Filer Effective Tool For Removing Dead Skin And Achieving Smoot
 Meta Description: Buy Foot Filer Effective Tool For Removing Dead Skin And Achieving Smooth Soft Feet With Ease online in Pakistan from ASM VEO. Foot Filer Helps Remove Dead Skin
 Description: Foot Filer Helps Remove Dead Skin And Provides Smooth Soft Feet With Simple Use
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

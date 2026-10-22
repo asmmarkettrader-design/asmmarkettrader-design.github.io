@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable USB Rechargeable Mini Handheld Fan | Lightweight Personal Cooling Fan | Strong Airflow | Portable Summer Cooling Fan (Random color)
 Product ID: hhc-3761704
 SKU: hhc-3761704
@@ -7,11 +8,16 @@ Slug: portable-usb-rechargeable-mini-handheld-fan-lightweight-personal-coolin-ca
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/cd84b6e0843a21434206e00d92e65ca8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/cd84b6e0843a21434206e00d92e65ca8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/5b0bf6a8d80b22d46b7745ed997b491f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/c42dd641791bc4ac55314a2e7db44e78.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/dff4563e757994741694e747eece8282.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/438e72d54861991035423760368adaf0.jpeg
 Meta Title: Portable USB Rechargeable Mini Handheld Fan | Lightweight Personal C
 Meta Description: Buy Portable USB Rechargeable Mini Handheld Fan | Lightweight Personal Cooling Fan | Strong Airflow | Portable Summer Cooling Fan (Random color) online in Pakis
 Description: Stay cool anywhere with this portable USB rechargeable mini handheld fan. Its lightweight design and strong airflow make it perfect for travel, office, home, school, and outdoor use. **Random color will be dispatched based on stock availability.**
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

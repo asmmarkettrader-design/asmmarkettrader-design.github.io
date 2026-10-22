@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SAPIL CHICHI PERFUME  FOR MEN 100ML | Best Quality Fragrances For Men
 Product ID: hhc-2568003
 SKU: hhc-2568003
@@ -7,11 +8,16 @@ Slug: sapil-chichi-perfume-for-men-100ml-best-quality-fragrances-for-men-hhc-256
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/chichmen_1024x1024.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/chichmen_1024x1024.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/d217ae7c7f7a3ba7d28a040244b1b2c9.jpg
 Meta Title: SAPIL CHICHI PERFUME FOR MEN 100ML | Best Quality Fragrances For Men
 Meta Description: Buy SAPIL CHICHI PERFUME FOR MEN 100ML | Best Quality Fragrances For Men online in Pakistan from ASM VEO. SAPIL CHICHI PERFUME FOR MEN 100ML | Best Quality Frag
 Description: SAPIL CHICHI PERFUME FOR MEN 100ML | Best Quality Fragrances For MenIndulge in the refreshing, invigorating scent of Sapil perfume. This marvelous fragrance is designed to give you a clean and zesty vibe, keeping you feeling fresh all day long. Perfect for both the spring and summer months, it combines the perfect balance of fresh citrus and musky woody notes for a captivating experience.Top Note: Fresh &amp; Citrus – Zesty and clean, this fragrance gives an energizing burst, ideal for a fresh start to your day.Heart Note: Light &amp; Inviting – A crisp, uplifting scent that adds a burst of citrusy freshness with every spray.Base Note: Musky Woody – Warm, earthy, and sensual, the musky woody base creates a rich, inviting finish that lingers throughout the day.
-Regular Price: 1557
-Sale Price: 1557
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

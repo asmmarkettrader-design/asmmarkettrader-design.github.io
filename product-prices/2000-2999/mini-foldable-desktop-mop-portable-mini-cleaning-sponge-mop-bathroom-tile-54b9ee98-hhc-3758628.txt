@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Foldable Desktop Mop – Portable Mini Cleaning Sponge Mop bathroom tiles, and small spaces
 Product ID: hhc-3758628
 SKU: hhc-3758628
@@ -7,11 +8,16 @@ Slug: mini-foldable-desktop-mop-portable-mini-cleaning-sponge-mop-bathroom-ti-54
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/9883906f1f86dc4dae4419a1728c7f95.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/9883906f1f86dc4dae4419a1728c7f95.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/a0ff4b38a6f2cd8d9720c241b1833300.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/fd261c7671ceaa90e3bc87ef650b031a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/b0b437c5cc05c0db4116d8e0df9481bf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/09/99691cd8b74b1be4784a4442e84a9c7e.jpeg
 Meta Title: Mini Foldable Desktop Mop – Portable Mini Cleaning Sponge Mop bathro
 Meta Description: Buy Mini Foldable Desktop Mop – Portable Mini Cleaning Sponge Mop bathroom tiles, and small spaces online in Pakistan from ASM VEO. Compact and foldable mini sp
 Description: Compact and foldable mini sponge mop designed for quick wet and dry cleaning on desks, countertops, kitchen surfaces, glass, bathroom tiles, and small spaces.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

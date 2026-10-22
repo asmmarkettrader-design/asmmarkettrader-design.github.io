@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 2 Meow Wax Powder - Hair Removal Solution For Smooth Skin Easy And Painless Depilatory Treatment For Body And Face
 Product ID: hhc-3761813
 SKU: hhc-3761813
@@ -7,11 +8,16 @@ Slug: pack-of-2-meow-wax-powder-hair-removal-solution-for-smooth-skin-easy-an-4e
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/4777c1989c808a944273e140d3649dfe.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/4777c1989c808a944273e140d3649dfe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/b8912f6659c2aeb508d98306e27b9fc4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/9b7a9f8e3a0cbc7de8bb23215ceb39d8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/ac7db0f5732ca263c037814edc250bdf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/a93db8365bcb4359692cb407abe50f18.jpeg
 Meta Title: Pack Of 2 Meow Wax Powder - Hair Removal Solution For Smooth Skin Ea
 Meta Description: Buy Pack Of 2 Meow Wax Powder - Hair Removal Solution For Smooth Skin Easy And Painless Depilatory Treatment For Body And Face online in Pakistan from ASM VEO.
 Description: The Meow Wax Powder Offers An Effective Hair Removal Experience Available In A Special Promotional Package For Smooth Results.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

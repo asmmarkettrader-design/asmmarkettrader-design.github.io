@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Soapex Nourishing Moisturizing Cream with Avocado Oil – Deep Hydration Face & Hand Cream for Soft, Smooth & Healthy Skin
 Product ID: hhc-3756587
 SKU: hhc-3756587
@@ -7,11 +8,16 @@ Slug: soapex-nourishing-moisturizing-cream-with-avocado-oil-deep-hydration-fa-04
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/bb82354f782138acb3b465c140e1f271.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/bb82354f782138acb3b465c140e1f271.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/7fe50d36d5b6dfc25bcdccbca6795574.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/7dd08b24fbabc866e47bcb744770f18b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/d62340c3ee7d2daef79d571c73940ac0.jpeg
 Meta Title: Soapex Nourishing Moisturizing Cream with Avocado Oil – Deep Hydrati
 Meta Description: Buy Soapex Nourishing Moisturizing Cream with Avocado Oil – Deep Hydration Face & Hand Cream for Soft, Smooth & Healthy Skin online in Pakistan from ASM VEO. So
 Description: Soapex Nourishing Moisturizing Cream with Avocado Oil deeply hydrates and nourishes your skin, leaving it soft, smooth, and refreshed all day.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Automatic Door Closer - Hardware Device Designed For Door Control And Daily Safety Routine (Big Size)
 Product ID: hhc-3764263
 SKU: hhc-3764263
@@ -7,11 +8,16 @@ Slug: automatic-door-closer-hardware-device-designed-for-door-control-and-dai-a5
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/a39c2529b3b1166aaaf01edbcd4355ae.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/a39c2529b3b1166aaaf01edbcd4355ae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/9f7d373e89c4a29c92c4b0da3cf90b5b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/a795fe4404c6841c75aea8245f17928d.jpg
 Meta Title: Automatic Door Closer - Hardware Device Designed For Door Control An
 Meta Description: Buy Automatic Door Closer - Hardware Device Designed For Door Control And Daily Safety Routine (Big Size) online in Pakistan from ASM VEO. The Automatic Door Cl
 Description: The Automatic Door Closer Is A Hardware Device Formulated To Help Provide Door Control And Daily Safety Utility During Use.
-Regular Price: 587
-Sale Price: 587
+Wholesale Price: 537
+Regular Price: 1050
+Sale Price: 839
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

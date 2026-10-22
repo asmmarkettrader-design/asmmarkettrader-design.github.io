@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Energizing Posture Support - Back Pain Relief Belt.
 Product ID: hhc-1092296
 SKU: hhc-1092296
@@ -7,11 +8,16 @@ Slug: energizing-posture-support-back-pain-relief-belt-hhc-1092296
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/121029451_61104ea40e4597-124659891628458632131_2048x2048.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/121029451_61104ea40e4597-124659891628458632131_2048x2048.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/121029451_61104ea40a9727-393695831628458632458_2048x2048.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/121029451_61104ea40c31d2-051852231628458632293_2048x2048.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/121029451_61104effbc2445-394395851628458746953_360x-1.webp
 Meta Title: Energizing Posture Support - Back Pain Relief Belt. | Buy Online in
 Meta Description: Buy Energizing Posture Support - Back Pain Relief Belt. online in Pakistan from ASM VEO. DESCRIPTION: Belt for straightening shoulders, spine and whole back It
 Description: DESCRIPTION: Belt for straightening shoulders, spine and whole back It effectively pulls your shoulders into the correct position and corrects your posture, whether you're sitting, walking, or running. It is extremely easy to install and replace, there is no unwanted fumbling, cutting of belts in the skin, etc., as with some other models. You yourself adjust the force with which the belt will pull the shoulders. It is possible to wear it everyday without clothes under clothes.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

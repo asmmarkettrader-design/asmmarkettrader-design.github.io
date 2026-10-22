@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 2 Silicone Back Scrubber Bath Belts – Double-Sided Exfoliating Body Scrubbers for Gentle, Deep Cleansing & Smooth Skin
 Product ID: hhc-3753644
 SKU: hhc-3753644
@@ -7,11 +8,16 @@ Slug: pack-of-2-silicone-back-scrubber-bath-belts-double-sided-exfoliating-bo-c7
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/fb992b20635e773f7647ca30aa448c83.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/fb992b20635e773f7647ca30aa448c83.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/a451f5e962758119d9a54dda9deed7cd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/9701259a53651cf108003b1cbb44bbe1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/d73e6d0500efe0349053c7b12bc9dda8.webp
 Meta Title: Pack of 2 Silicone Back Scrubber Bath Belts – Double-Sided Exfoliati
 Meta Description: Buy Pack of 2 Silicone Back Scrubber Bath Belts – Double-Sided Exfoliating Body Scrubbers for Gentle, Deep Cleansing & Smooth Skin online in Pakistan from ASM V
 Description: This pack of 2 silicone bath scrubber belts offers an easy and effective way to cleanse, exfoliate, and refresh the skin. The flexible design reaches hard-to-clean areas, while soft bristles gently remove dirt, oil, and dead skin for a smoother feel.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

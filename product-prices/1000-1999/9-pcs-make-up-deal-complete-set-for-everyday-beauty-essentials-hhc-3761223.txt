@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 9 Pcs Make-Up Deal Complete Set For Everyday Beauty Essentials
 Product ID: hhc-3761223
 SKU: hhc-3761223
@@ -7,11 +8,16 @@ Slug: 9-pcs-make-up-deal-complete-set-for-everyday-beauty-essentials-hhc-3761223
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/4098631d94a4aa2f72b22338333e3d27.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/4098631d94a4aa2f72b22338333e3d27.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/94cb8217a75706551b19c746197f3e6f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/eab1d47120b00ec1daab2941805af36b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/3f822572bc4c2eda64147edcc73e0227.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/80990e567ec0e52a163e434fbe8e69e3.jpeg
 Meta Title: 9 Pcs Make-Up Deal Complete Set For Everyday Beauty Essentials | Buy
 Meta Description: Buy 9 Pcs Make-Up Deal Complete Set For Everyday Beauty Essentials online in Pakistan from ASM VEO. 9 Pcs Make-Up Deal Provides A Complete Collection Of Essenti
 Description: 9 Pcs Make-Up Deal Provides A Complete Collection Of Essential Beauty Products For Daily Use.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Large Storage Bag Organizers – Heavy-Duty Clothes & Blanket Storage Solution | Foldable, Spacious, Durable
 Product ID: hhc-3753862
 SKU: hhc-3753862
@@ -7,11 +8,16 @@ Slug: large-storage-bag-organizers-heavy-duty-clothes-blanket-storage-solutio-3f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Large Storage Bag Organizers – Heavy-Duty Clothes & Blanket Storage
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/e8c26578ca675f1bb36b8197c3554957.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/e8c26578ca675f1bb36b8197c3554957.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/5df69a6a285f24ebf5cc6d64e315bb4a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/f582e8346576e377cba73867af845053.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/25/5f68d2d969fe9b5916ad989a6e89ff59.png
+Meta Title: Large Storage Bag Organizers – Heavy-Duty Clothes & Blanket Storage 
 Meta Description: Buy Large Storage Bag Organizers – Heavy-Duty Clothes & Blanket Storage Solution | Foldable, Spacious, Durable online in Pakistan from ASM VEO. High-capacity st
 Description: High-capacity storage bags designed to organize clothes, blankets, bedding, and more—perfect for home, wardrobe, and seasonal storage.
-Regular Price: 265
-Sale Price: 265
+Wholesale Price: 215
+Regular Price: 532
+Sale Price: 382
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

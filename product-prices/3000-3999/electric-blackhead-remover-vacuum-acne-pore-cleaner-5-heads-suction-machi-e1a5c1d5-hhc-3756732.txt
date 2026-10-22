@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Blackhead Remover | Vacuum Acne & Pore Cleaner | 5 Heads Suction Machine | Skin Care & Exfoliating Tool
 Product ID: hhc-3756732
 SKU: hhc-3756732
@@ -7,11 +8,16 @@ Slug: electric-blackhead-remover-vacuum-acne-pore-cleaner-5-heads-suction-mac-e1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/cbc8bf4f95ca5ff92c2fa6b27aa302e2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/cbc8bf4f95ca5ff92c2fa6b27aa302e2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/433a9ac77ebee58b958a1506bd1114f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/1cef08632d8c09eabd37ad67a07eb077.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/354f678207b58416be850e1a700b4534.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/03/6fbce1ba4208f01c8573b2a9f1bd8e52.jpeg
 Meta Title: Electric Blackhead Remover | Vacuum Acne & Pore Cleaner | 5 Heads Su
 Meta Description: Buy Electric Blackhead Remover | Vacuum Acne & Pore Cleaner | 5 Heads Suction Machine | Skin Care & Exfoliating Tool online in Pakistan from ASM VEO. Electric b
 Description: Electric blackhead remover with 5 suction heads. Removes acne, black spots & clogged pores. Portable facial pore cleaner for smooth, clear skin.
-Regular Price: 944
-Sale Price: 944
+Wholesale Price: 894
+Regular Price: 1700
+Sale Price: 1356
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

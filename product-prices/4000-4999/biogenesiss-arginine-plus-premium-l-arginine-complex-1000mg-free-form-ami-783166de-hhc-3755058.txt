@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Biogenesiss Arginine Plus Premium L-Arginine Complex – 1000mg Free Form Amino Acid with Vitamins E & D3 for Nitric Oxide Boost, Circulation, and Muscle Recovery (60 Tablets)
 Product ID: hhc-3755058
 SKU: hhc-3755058
@@ -7,11 +8,16 @@ Slug: biogenesiss-arginine-plus-premium-l-arginine-complex-1000mg-free-form-a-78
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/b0f3ca4ebb742a6340b36bdce921dff3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/b0f3ca4ebb742a6340b36bdce921dff3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/cebab8a6106f1279207508854b662492.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/41052df6fb15c32ef994000048ae4614.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/4b0c74409599a753331c055d50c8892e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/dd4f3f9b1133b9db8c9a263b44c37329.jpeg
 Meta Title: Biogenesiss Arginine Plus Premium L-Arginine Complex – 1000mg Free F
 Meta Description: Buy Biogenesiss Arginine Plus Premium L-Arginine Complex – 1000mg Free Form Amino Acid with Vitamins E & D3 for Nitric Oxide Boost, Circulation, and Muscle Reco
 Description: Elevate your performance with Biogenesiss Arginine Plus. This high-potency formula delivers 1000mg of pure L-Arginine per serving, enhanced with Vitamin E and D3 to support healthy blood flow, cardiovascular health, and peak athletic endurance. Designed for those who want to push their limits and rec
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

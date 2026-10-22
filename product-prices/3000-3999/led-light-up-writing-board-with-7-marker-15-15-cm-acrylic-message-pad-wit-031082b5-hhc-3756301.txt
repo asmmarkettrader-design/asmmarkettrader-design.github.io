@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message Pad with Stand | Colorful DIY Notes & Erasable Neon Pens
 Product ID: hhc-3756301
 SKU: hhc-3756301
@@ -7,11 +8,16 @@ Slug: led-light-up-writing-board-with-7-marker-15-15-cm-acrylic-message-pad-w-03
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/d4c3547287366e16130c9d011c5a49b4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/d4c3547287366e16130c9d011c5a49b4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/14/e67a15457e42246f287610ec470666cf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/ab4214dfe090e5c095dada880ff21e8e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/50cea899df28134ad99e31bb18d863c7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/8d11e84d2e07f55badd9514d90ce8897.jpeg
+Meta Title: LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message 
 Meta Description: Buy LED Light-Up Writing Board With 7 Marker – 15×15 cm Acrylic Message Pad with Stand | Colorful DIY Notes & Erasable Neon Pens online in Pakistan from ASM VEO
 Description: Brighten your messages with this LED Light-Up Writing Board! Featuring a 15×15 cm transparent acrylic pad, vibrant LED glow, and erasable neon pens, it’s perfect for notes, reminders, doodles, and creative displays at home or office.
-Regular Price: 1007
-Sale Price: 1007
+Wholesale Price: 957
+Regular Price: 1810
+Sale Price: 1448
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

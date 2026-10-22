@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ladies Round Dial Digital Watch Elegant Design Clear Display Comfortable Strap Easy To Use Reliable Performance Perfect For Daily Wear
 Product ID: hhc-3753814
 SKU: hhc-3753814
@@ -7,11 +8,16 @@ Slug: ladies-round-dial-digital-watch-elegant-design-clear-display-comfortabl-40
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/c0bedf1f05dd7ad060fc7fab32864142.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/c0bedf1f05dd7ad060fc7fab32864142.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/f253b171f6ef93a83e1587723b7a2504.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/0e253072f6d62af988709c17fe837671.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/b472e3b6f956db7ac016abb663ecfced.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/b930cacd635995d7996e65490a71dc77.jpeg
 Meta Title: Ladies Round Dial Digital Watch Elegant Design Clear Display Comfort
 Meta Description: Buy Ladies Round Dial Digital Watch Elegant Design Clear Display Comfortable Strap Easy To Use Reliable Performance Perfect For Daily Wear online in Pakistan fr
 Description: Ladies Round Dial Digital Watch Provides Elegant Design Clear Display Comfortable Strap And Reliable Performance
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

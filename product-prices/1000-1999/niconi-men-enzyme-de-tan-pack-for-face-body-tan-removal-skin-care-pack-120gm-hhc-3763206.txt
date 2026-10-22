@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: NICONI MEN Enzyme De-Tan Pack for Face & Body – Tan Removal & Skin Care Pack 120gm
 Product ID: hhc-3763206
 SKU: hhc-3763206
@@ -7,11 +8,16 @@ Slug: niconi-men-enzyme-de-tan-pack-for-face-body-tan-removal-skin-care-pack-120
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/c543bfc4ea621d32ec1a271d553873db.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/c543bfc4ea621d32ec1a271d553873db.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/8d5cf89d17a2cd293e3e5fa27d240a7a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/e4dbc9e0651b14f7fcc9a4c335c0fa73.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/3ae972e6b774802bd621a536cfe2b446.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/4f2872f56525474980e041a047c9f17c.jpeg
 Meta Title: NICONI MEN Enzyme De-Tan Pack for Face & Body – Tan Removal & Skin C
 Meta Description: Buy NICONI MEN Enzyme De-Tan Pack for Face & Body – Tan Removal & Skin Care Pack 120gm online in Pakistan from ASM VEO. NICONI MEN Enzyme De-Tan Pack is designe
 Description: NICONI MEN Enzyme De-Tan Pack is designed for face and body care, helping refresh the skin and improve the appearance of tanning for a cleaner and brighter-looking complexion.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

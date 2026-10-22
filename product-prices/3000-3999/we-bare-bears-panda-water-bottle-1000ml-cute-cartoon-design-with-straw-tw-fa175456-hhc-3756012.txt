@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: We Bare Bears Panda Water Bottle 1000ml – Cute Cartoon Design with Straw & Two Caps | Durable Reusable Bottle for Daily Hydration - Plastic (Random Design)
 Product ID: hhc-3756012
 SKU: hhc-3756012
@@ -7,11 +8,16 @@ Slug: we-bare-bears-panda-water-bottle-1000ml-cute-cartoon-design-with-straw-fa1
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/d0a47745e857419c37a80d7e14a3e9f4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/d0a47745e857419c37a80d7e14a3e9f4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/d45f81bd2ca238626198bd37f09bc111.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/69e94a3523d9808204f2d66e9b973723.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/6cb13bcb5199f2d5b34f296735a54f03.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/2d681fe87942c39ceb3f9d8a2d7efb44.jpg
 Meta Title: We Bare Bears Panda Water Bottle 1000ml – Cute Cartoon Design with S
 Meta Description: Buy We Bare Bears Panda Water Bottle 1000ml – Cute Cartoon Design with Straw & Two Caps | Durable Reusable Bottle for Daily Hydration - Plastic (Random Design)
 Description: Stay hydrated in style with the We Bare Bears Panda Water Bottle. Featuring a cute cartoon design, large 1000ml capacity, two interchangeable caps, and a built-in straw—perfect for school, office, gym, or travel. (Design sent randomly)
-Regular Price: 866
-Sale Price: 866
+Wholesale Price: 816
+Regular Price: 1550
+Sale Price: 1243
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

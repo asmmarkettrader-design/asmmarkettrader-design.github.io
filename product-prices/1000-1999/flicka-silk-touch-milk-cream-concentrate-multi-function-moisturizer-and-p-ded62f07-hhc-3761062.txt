@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flicka Silk Touch Milk Cream Concentrate Multi Function Moisturizer And Primer With Aloe Vera And Shea Butter
 Product ID: hhc-3761062
 SKU: hhc-3761062
@@ -7,11 +8,16 @@ Slug: flicka-silk-touch-milk-cream-concentrate-multi-function-moisturizer-and-de
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Flicka Silk Touch Milk Cream Concentrate Multi Function Moisturizer
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/842d263f88fb71540387cbac439f3226.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/842d263f88fb71540387cbac439f3226.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/31074ac92a7f2c0e94e9dcdc4e13c4c8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/839c14093af34a9a6c0ae4be185a2a4e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/e633f0d688cef40e510c6bb226b1dc06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/548dba7f9d3334176aa92dd915aa313f.jpeg
+Meta Title: Flicka Silk Touch Milk Cream Concentrate Multi Function Moisturizer 
 Meta Description: Buy Flicka Silk Touch Milk Cream Concentrate Multi Function Moisturizer And Primer With Aloe Vera And Shea Butter online in Pakistan from ASM VEO. Flicka Silk T
 Description: Flicka Silk Touch Milk Cream Concentrate Multi Function Moisturizer And Primer Hydrates Smooths And Preps Skin.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aloe Vera Gel (100g)
 Product ID: hhc-1875617
 SKU: hhc-1875617
@@ -7,11 +8,16 @@ Slug: aloe-vera-gel-100g-hhc-1875617
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/AloeVeraGel100g.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/AloeVeraGel100g.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/AloeVeraGel-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/AloeVeraGel01-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Aloe_vera_gel_100g-moontouch.webp
 Meta Title: Aloe Vera Gel (100g) | Buy Online in Pakistan
 Meta Description: Buy Aloe Vera Gel (100g) online in Pakistan from ASM VEO. Aloe Vera Gel (100g) By Moon Touch Cash on Delivery, Rs 180 standard delivery, and easy returns.
 Description: Aloe Vera Gel (100g) By Moon Touch
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

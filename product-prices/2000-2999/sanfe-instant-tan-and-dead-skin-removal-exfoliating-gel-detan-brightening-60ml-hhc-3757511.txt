@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sanfe Instant Tan And Dead Skin Removal Exfoliating Gel Detan Brightening 60ml
 Product ID: hhc-3757511
 SKU: hhc-3757511
@@ -7,11 +8,16 @@ Slug: sanfe-instant-tan-and-dead-skin-removal-exfoliating-gel-detan-brightening-
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/0f597afed06b0151bc5e887c9d1fd1f9.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/0f597afed06b0151bc5e887c9d1fd1f9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/c4071d80995d07812d8b0e745fec9af7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/27834d13ca53e2672ea2112761de2b04.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/2f0744b6c4c5228569fb5c7cbaea58ea.jpeg
 Meta Title: Sanfe Instant Tan And Dead Skin Removal Exfoliating Gel Detan Bright
 Meta Description: Buy Sanfe Instant Tan And Dead Skin Removal Exfoliating Gel Detan Brightening 60ml online in Pakistan from ASM VEO. Sanfe Instant Tan And Dead Skin Removal Exfo
 Description: Sanfe Instant Tan And Dead Skin Removal Exfoliating Gel 60ml For Detan And Brightening.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ladies Velvet Pump Shoes – Comfortable 2 Inch Heel Casual & Party Wear Stylish Coat Pumps for Women
 Product ID: hhc-3756685
 SKU: hhc-3756685
@@ -7,11 +8,16 @@ Slug: ladies-velvet-pump-shoes-comfortable-2-inch-heel-casual-party-wear-styl-2c
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/26ee8ce52a29983da5390d882628ab8a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/26ee8ce52a29983da5390d882628ab8a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/7bf68bbbe0e3c6525409821d908a0a90.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/e6616af1849cf577061497fafe2ca522.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/fb73a5f92058cd8a4583e88a90f1c9e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/b305bbb5b4027450cc31cd5df5d5f090.jpg
 Meta Title: Ladies Velvet Pump Shoes – Comfortable 2 Inch Heel Casual & Party We
 Meta Description: Buy Ladies Velvet Pump Shoes – Comfortable 2 Inch Heel Casual & Party Wear Stylish Coat Pumps for Women online in Pakistan from ASM VEO. Elegant and comfortable
 Description: Elegant and comfortable ladies pump shoes with stylish velvet work and 2-inch heel, perfect for casual outings, parties, and events.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

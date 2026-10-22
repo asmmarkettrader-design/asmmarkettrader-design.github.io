@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Apple Ammonia-Free Black Hair Shampoo (30ml x 10 Sachets)
 Product ID: hhc-3755006
 SKU: hhc-3755006
@@ -7,11 +8,16 @@ Slug: apple-ammonia-free-black-hair-shampoo-30ml-x-10-sachets-hhc-3755006
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/de1061e6d82ba9965fb4064462ba0dab.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/de1061e6d82ba9965fb4064462ba0dab.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/094ce269dbae601d881b6e27fbb27d30.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/ed8e1d2864c3b3f12cb0b07df4787a73.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/998e65e98625bc42304870bfb8bd5662.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/c0214adf0f7a5ded75e4d196d48dcb8c.jpg
 Meta Title: Apple Ammonia-Free Black Hair Shampoo (30ml x 10 Sachets) | Buy Onli
 Meta Description: Buy Apple Ammonia-Free Black Hair Shampoo (30ml x 10 Sachets) online in Pakistan from ASM VEO. Revitalize your look in minutes with Apple Ammonia-Free Black Hai
 Description: Revitalize your look in minutes with Apple Ammonia-Free Black Hair Shampoo. This convenient, 2-in-1 sachet formula provides a rich, natural black color while nourishing your hair. Designed for ease of use, it is a lead-free, non-toxic solution that eliminates the need for towels or collars, ensuring
-Regular Price: 1190
-Sale Price: 1190
+Wholesale Price: 1140
+Regular Price: 2100
+Sale Price: 1679
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

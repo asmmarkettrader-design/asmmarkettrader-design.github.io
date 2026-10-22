@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tummy Tuck Miracle Slimming System Kit
 Product ID: hhc-1096527
 SKU: hhc-1096527
@@ -7,11 +8,16 @@ Slug: tummy-tuck-miracle-slimming-system-kit-hhc-1096527
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/3284_1549904815-370x370-1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/3284_1549904815-370x370-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/3284_1549904945-370x370-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/3284_1549904761-1-300x300-1.webp
 Meta Title: Tummy Tuck Miracle Slimming System Kit | Buy Online in Pakistan
 Meta Description: Buy Tummy Tuck Miracle Slimming System Kit online in Pakistan from ASM VEO. Product details of Tummy Tuck Miracle Slimming System KitGradually slims away belly
 Description: Product details of Tummy Tuck Miracle Slimming System KitGradually slims away belly fat even without significant weight lossNo added exercise or dietDesigned forboth women and menSimply follow the 10 minute Tummy tuck method:Revolutionary tummy tuck belt
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

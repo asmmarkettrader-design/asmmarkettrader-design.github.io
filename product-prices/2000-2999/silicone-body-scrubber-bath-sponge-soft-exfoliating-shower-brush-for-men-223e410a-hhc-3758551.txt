@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Body Scrubber Bath Sponge – Soft Exfoliating Shower Brush for Men & Women (Random Color)
 Product ID: hhc-3758551
 SKU: hhc-3758551
@@ -7,11 +8,16 @@ Slug: silicone-body-scrubber-bath-sponge-soft-exfoliating-shower-brush-for-me-22
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/bfbb5e97cf6d0ac79cdd0c53bba8168c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/bfbb5e97cf6d0ac79cdd0c53bba8168c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/795b59b850d804f190d2a3145e94810c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/8238b7c02558eeda4cded02110fdd786.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/643d802cae5b1ffac6ed75e8a2911cdb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/8629b98f9f34f16b058c34bed740626f.jpeg
 Meta Title: Silicone Body Scrubber Bath Sponge – Soft Exfoliating Shower Brush f
 Meta Description: Buy Silicone Body Scrubber Bath Sponge – Soft Exfoliating Shower Brush for Men & Women (Random Color) online in Pakistan from ASM VEO. Soft silicone bath scrubb
 Description: Soft silicone bath scrubber designed for deep cleansing, gentle exfoliation, and smooth healthy skin. Hygienic, quick-drying, and suitable for daily shower use.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

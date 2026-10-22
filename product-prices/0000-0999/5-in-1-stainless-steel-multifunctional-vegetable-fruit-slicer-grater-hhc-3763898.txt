@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 in 1 Stainless Steel Multifunctional Vegetable Fruit Slicer & Grater
 Product ID: hhc-3763898
 SKU: hhc-3763898
@@ -7,11 +8,16 @@ Slug: 5-in-1-stainless-steel-multifunctional-vegetable-fruit-slicer-grater-hhc-3
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/19dbd090f175b8c20b3746cba611c3b3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/19dbd090f175b8c20b3746cba611c3b3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/68e0a234d938ad3e0498490d150de577.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/e8b858a584e00e513156b1e1a9ab501d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/b43db9b5f59a8efb0be7d662cd736cfd.webp
 Meta Title: 5 in 1 Stainless Steel Multifunctional Vegetable Fruit Slicer & Grat
 Meta Description: Buy 5 in 1 Stainless Steel Multifunctional Vegetable Fruit Slicer & Grater online in Pakistan from ASM VEO. Manual Food Grater, 5 in 1 Grater and Slicer with St
 Description: Manual Food Grater, 5 in 1 Grater and Slicer with Stainless Steel Blade. Versatile, multi-functional tool perfect for slicing vegetables, fruits, and crushing garlic in the kitchen. Includes interchangeable blades for various cutting styles: thin/thick shredded, flower-shaped, thin slices, and crushed.
-Regular Price: 634
-Sale Price: 634
+Wholesale Price: 584
+Regular Price: 1130
+Sale Price: 907
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

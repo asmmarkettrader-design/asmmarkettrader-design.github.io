@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 800ML Rechargeable Desktop Humidification Fan Portable Foldable Spray Misting Fan With Blue Light (Random Colour)
 Product ID: hhc-3757217
 SKU: hhc-3757217
@@ -7,11 +8,16 @@ Slug: 800ml-rechargeable-desktop-humidification-fan-portable-foldable-spray-m-72
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/8cbb79e07ea9e60f20557330ac05f7f7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/8cbb79e07ea9e60f20557330ac05f7f7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/7910caaa61cd4c4e4ced599fc0e2097c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/3a2461fc1b40519da56f8e481ff7baa0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/be3644bc524db9b5f42bde50e0762497.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/c18cdab2205a811152e5ca9cf7a94f88.jpg
 Meta Title: 800ML Rechargeable Desktop Humidification Fan Portable Foldable Spra
 Meta Description: Buy 800ML Rechargeable Desktop Humidification Fan Portable Foldable Spray Misting Fan With Blue Light (Random Colour) online in Pakistan from ASM VEO. 800ML Rec
 Description: 800ML Rechargeable Desktop Humidification Fan With Foldable Spray Function Bendable Head And Blue Light For Cooling Comfort.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

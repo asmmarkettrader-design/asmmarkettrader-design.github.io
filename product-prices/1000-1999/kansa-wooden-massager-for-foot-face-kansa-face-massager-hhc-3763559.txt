@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kansa Wooden Massager For Foot & Face | Kansa Face Massager
 Product ID: hhc-3763559
 SKU: hhc-3763559
@@ -7,11 +8,16 @@ Slug: kansa-wooden-massager-for-foot-face-kansa-face-massager-hhc-3763559
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/45cf74dc582df84b308b6b0e06ed000e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/45cf74dc582df84b308b6b0e06ed000e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/c0ec53b9ad39ed20bf781edf8b133275.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/24e920f3accae6951c58342459722851.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/64b3ed004bef54da33982eae13d1ee9c.jpg
 Meta Title: Kansa Wooden Massager For Foot & Face | Kansa Face Massager | Buy On
 Meta Description: Buy Kansa Wooden Massager For Foot & Face | Kansa Face Massager online in Pakistan from ASM VEO. Kansa Wooden Massager for Face and Feet offers a relaxing massa
 Description: Kansa Wooden Massager for Face and Feet offers a relaxing massage experience with its smooth wooden design. Easy to use, hold, and carry, it is ideal for everyday self-care.
-Regular Price: 616
-Sale Price: 616
+Wholesale Price: 566
+Regular Price: 1100
+Sale Price: 881
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

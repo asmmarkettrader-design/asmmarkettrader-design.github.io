@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: WAXZAA Professional Barber Scissors Kit – Premium Hair Cutting Accessories
 Product ID: hhc-3756585
 SKU: hhc-3756585
@@ -7,11 +8,16 @@ Slug: waxzaa-professional-barber-scissors-kit-premium-hair-cutting-accessories-h
 Category: Tools & DIY
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/2c1e3e7a75c8119899ff2a8b27459ac4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/2c1e3e7a75c8119899ff2a8b27459ac4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/c01dff6b4b3c0d66b34967722a3c3dad.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/709194d28a12d14e08ffc4003c432053.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/f68f41b09c6abcdc33ff93f4899e7223.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/25/e28c655b451f164c4e8887233f2ebb37.webp
 Meta Title: WAXZAA Professional Barber Scissors Kit – Premium Hair Cutting Acces
 Meta Description: Buy WAXZAA Professional Barber Scissors Kit – Premium Hair Cutting Accessories online in Pakistan from ASM VEO. WAXZAA Professional Barber Scissors Kit is built
 Description: WAXZAA Professional Barber Scissors Kit is built for barbers and hair stylists who demand precision, comfort, and long-lasting performance. Made from 100% Japanese stainless steel,
-Regular Price: 978
-Sale Price: 978
+Wholesale Price: 928
+Regular Price: 1760
+Sale Price: 1406
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

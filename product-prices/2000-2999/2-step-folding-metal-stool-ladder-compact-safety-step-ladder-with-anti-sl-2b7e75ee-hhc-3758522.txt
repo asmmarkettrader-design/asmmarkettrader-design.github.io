@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-Step Folding Metal Stool Ladder | Compact Safety Step Ladder With Anti-Slip Treads | Frame Metal & Step Plastic - Random Colour
 Product ID: hhc-3758522
 SKU: hhc-3758522
@@ -7,11 +8,16 @@ Slug: 2-step-folding-metal-stool-ladder-compact-safety-step-ladder-with-anti-2b7
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/d7e9c0b0c95dafa5c63ef2ff99bad3dc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/d7e9c0b0c95dafa5c63ef2ff99bad3dc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/9e2de1af2e6c5026cdbed246521e9626.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/31c108985daa5e510bac6e12acb0ffdc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/a6e5c0402590fa1387260b3737d98b8b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/e46b0dea020d7f5c08a4b747b3c10bec.jpeg
 Meta Title: 2-Step Folding Metal Stool Ladder | Compact Safety Step Ladder With
 Meta Description: Buy 2-Step Folding Metal Stool Ladder | Compact Safety Step Ladder With Anti-Slip Treads | Frame Metal & Step Plastic - Random Colour online in Pakistan from AS
 Description: Durable 2-Step Folding Metal Ladder | Anti-Slip Treads | Portable & Space-Saving Design For Home & Office
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

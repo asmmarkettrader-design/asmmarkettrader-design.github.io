@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Itel 18w QC3.0 Fast charge Adapter with Fast charging with Micro Cable
 Product ID: hhc-2614003
 SKU: hhc-2614003
@@ -7,11 +8,16 @@ Slug: itel-18w-qc3-0-fast-charge-adapter-with-fast-charging-with-micro-cable-hhc
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-20-at-4.14.11-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-20-at-4.14.11-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-20-at-4.13.55-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-20-at-4.13.43-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-20-at-4.13.31-PM.jpeg
 Meta Title: Itel 18w QC3.0 Fast charge Adapter with Fast charging with Micro Cab
 Meta Description: Buy Itel 18w QC3.0 Fast charge Adapter with Fast charging with Micro Cable online in Pakistan from ASM VEO. &nbsp; Itel 18w QC3.0 Fast charge Adapter with Fast
 Description: &nbsp; Itel 18w QC3.0 Fast charge Adapter with Fast charging with Micro Cable 18W Travel Adapter ENG 41 1/20 Charger Model Name: ICW-181E Input: 100-240V-50/60Hz 500mA Output USB1 : 5V-3A, 9V-2A, 12V-1.5A Output USB2 :5V-3A, 9V-2A. 12V 1.5A USB1+US82: 5V-3A Cable Model Name : M11P Length: 1M Current 2A Interface: Micro to USB
-Regular Price: 1359
-Sale Price: 1359
+Wholesale Price: 1309
+Regular Price: 2400
+Sale Price: 1919
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

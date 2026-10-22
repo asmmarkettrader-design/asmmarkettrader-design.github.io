@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men Therm Bee Venom Warming Body Massage Oil 30ml
 Product ID: hhc-3764947
 SKU: hhc-3764947
@@ -7,11 +8,16 @@ Slug: men-therm-bee-venom-warming-body-massage-oil-30ml-hhc-3764947
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/cb23fb4bff781a107c44bf5d86c06fa9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/cb23fb4bff781a107c44bf5d86c06fa9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/9e2c888d4ac61543e637da98ded03d32.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/6bdd71ea66c78b15fb7f8876d741cdbe.jpeg
 Meta Title: Men Therm Bee Venom Warming Body Massage Oil 30ml | Buy Online in Pa
 Meta Description: Buy Men Therm Bee Venom Warming Body Massage Oil 30ml online in Pakistan from ASM VEO. Men Therm Bee Venom Warming Body Massage Oil, 30ml. Lightweight formula d
 Description: Men Therm Bee Venom Warming Body Massage Oil, 30ml. Lightweight formula designed for daily skin massage and body care.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

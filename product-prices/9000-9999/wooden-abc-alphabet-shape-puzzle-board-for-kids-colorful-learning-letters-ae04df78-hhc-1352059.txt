@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wooden ABC Alphabet & Shape Puzzle Board For Kids | Colorful Learning Letters Educational Toy
 Product ID: hhc-1352059
 SKU: hhc-1352059
@@ -7,11 +8,16 @@ Slug: wooden-abc-alphabet-shape-puzzle-board-for-kids-colorful-learning-lette-ae
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/c80c876cde951834525858c97a66374f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/c80c876cde951834525858c97a66374f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/a681e14ad899b425935aece98e64fc3c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/582d65ddbc6494c35e5bf35802f7c7cc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/d51dc8f1d7815a841c4406ca1c99f10b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/cf50de78c57ee7d454e2e1c3f914e8e1.png
 Meta Title: Wooden ABC Alphabet & Shape Puzzle Board For Kids | Colorful Learnin
 Meta Description: Buy Wooden ABC Alphabet & Shape Puzzle Board For Kids | Colorful Learning Letters Educational Toy online in Pakistan from ASM VEO. Wooden ABC Alphabet & Shape P
 Description: Wooden ABC Alphabet & Shape Puzzle Board With Bright Colors To Help Kids Learn Letters, Improve Recognition And Develop Early Learning Skills.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

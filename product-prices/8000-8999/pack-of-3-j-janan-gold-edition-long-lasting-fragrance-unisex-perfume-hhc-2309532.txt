@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (Pack Of 3 ) J. Janan Gold Edition Long Lasting Fragrance Unisex Perfume
 Product ID: hhc-2309532
 SKU: hhc-2309532
@@ -7,11 +8,16 @@ Slug: pack-of-3-j-janan-gold-edition-long-lasting-fragrance-unisex-perfume-hhc-2
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-12-at-6.18.11-PM-1-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-12-at-6.18.11-PM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-12-at-6.18.11-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-12-at-6.18.10-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-12-at-6.18.10-PM.jpeg
 Meta Title: (Pack Of 3 ) J. Janan Gold Edition Long Lasting Fragrance Unisex Per
 Meta Description: Buy (Pack Of 3 ) J. Janan Gold Edition Long Lasting Fragrance Unisex Perfume online in Pakistan from ASM VEO. Product Name: Unisex Perfume, Pack Of 3 Product De
 Description: Product Name: Unisex Perfume, Pack Of 3 Product Details:Material: Liquid Product Feature: Refreshing, Mood Enhancing, Long Lasting Fragrance, Comes With A Pocket Perfume Gender Type: Unisex Package Includes: 1 x Perfume(100ml), 1 x Pocket Perfume(20ml), 1 x Tester Perfume(35ml)
-Regular Price: 1457
-Sale Price: 1457
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

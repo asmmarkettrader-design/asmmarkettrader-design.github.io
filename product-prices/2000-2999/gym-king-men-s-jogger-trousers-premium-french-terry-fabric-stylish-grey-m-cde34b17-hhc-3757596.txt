@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: GYM KING Men’s Jogger Trousers | Premium French Terry Fabric | Stylish Grey Melange Slim-Fit Sweatpants for Gym, Sports & Casual Wear
 Product ID: hhc-3757596
 SKU: hhc-3757596
@@ -7,11 +8,16 @@ Slug: gym-king-men-s-jogger-trousers-premium-french-terry-fabric-stylish-grey-cd
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/ec2b854eb524ebf2d6eec08c04146ec8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/ec2b854eb524ebf2d6eec08c04146ec8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/1f6e98f8fa9a3503f5a695542fcbfb08.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/e8018e3d255cab7a614c079ed1ba1507.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/3a55927790cd4d5c6c5e89a2e32d82cd.jpeg
 Meta Title: GYM KING Men’s Jogger Trousers | Premium French Terry Fabric | Styli
 Meta Description: Buy GYM KING Men’s Jogger Trousers | Premium French Terry Fabric | Stylish Grey Melange Slim-Fit Sweatpants for Gym, Sports & Casual Wear online in Pakistan fro
 Description: Level up your comfort and style with these Super Dry Panel Trousers. Crafted from high-quality French Terry fabric, these trousers feature a modern contrast panel design and a comfortable adjustable fit. Perfect for gym sessions, morning runs, or a relaxed casual day out.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

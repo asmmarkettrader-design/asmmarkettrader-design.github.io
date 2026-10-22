@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kokila Organics Natural Black Hair Colour Shampoo 200ml – Instant Herbal Hair Dye
 Product ID: hhc-3765523
 SKU: hhc-3765523
@@ -7,11 +8,16 @@ Slug: kokila-organics-natural-black-hair-colour-shampoo-200ml-instant-herbal-hai
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/05d926939df418b06ee4094b2087ffa2.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/05d926939df418b06ee4094b2087ffa2.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/774b8bd50b777d1bbd841a444bcaa56b.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/3ac1c92efd9d27510906ffa0531be67e.jfif
 Meta Title: Kokila Organics Natural Black Hair Colour Shampoo 200ml – Instant He
 Meta Description: Buy Kokila Organics Natural Black Hair Colour Shampoo 200ml – Instant Herbal Hair Dye online in Pakistan from ASM VEO. Transform your gray hair into a rich, glo
 Description: Transform your gray hair into a rich, glossy black effortlessly with the Kokila Organics Natural Black Hair Colour Shampoo. Designed for quick and convenient home application, this innovative herbal shampoo combines coloring, cleansing, and conditioning into a single simple step.Formulated with plant-based extracts and botanical ingredients, it covers gray hairs completely while being gentle on your scalp and hair follicles. Unlike traditional permanent hair dyes, it avoids harsh ammonia fumes and scalp irritation, leaving your hair feeling soft, shiny, and deeply nourished after every wash.Key Features:Instant Hair Coloring: Colors gray and white hair effectively to a natural black shade in just 10 to 15 minutes.3-in-1 Formula: Cleanses like a shampoo, colors like a dye, and conditions like a hair mask all at once.Herbal &amp; Ammonia-Free: Enriched with botanical extracts that are gentle on the scalp and minimize chemical damage.Long-Lasting Shine: Seals color deep into the hair cuticle for vibrant, fade-resistant results that last for weeks.Easy Application: Works just like a regular shampoo—no messy bowls, brushes, or professional salon skills required.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

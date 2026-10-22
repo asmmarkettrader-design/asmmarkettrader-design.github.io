@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 In 1 Ultra Smart Watch Is A Premium Wearable Designed To Combine Style, Functionality, And Convenience.
 Product ID: hhc-3762407
 SKU: hhc-3762407
@@ -7,11 +8,16 @@ Slug: 7-in-1-ultra-smart-watch-is-a-premium-wearable-designed-to-combine-styl-c3
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/eb2698caa39d95e3c2f5a269a0578fed.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/eb2698caa39d95e3c2f5a269a0578fed.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/ff212587c880a386bc98ef6a2177fada.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/d5a2c2ea9258447a566e2d99791eaafa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/4035ef175946722d862cdea010251385.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/c23152b36089c5a6eee971c87ac41cd7.jpeg
 Meta Title: 7 In 1 Ultra Smart Watch Is A Premium Wearable Designed To Combine S
 Meta Description: Buy 7 In 1 Ultra Smart Watch Is A Premium Wearable Designed To Combine Style, Functionality, And Convenience. online in Pakistan from ASM VEO. 7 In 1 Ultra Smar
 Description: 7 In 1 Ultra Smart Watch Durable Stylish Comfortable Affordable Practical Choice Reliable Performance Perfect For Fitness Communication Entertainment And Daily Use.
-Regular Price: 2094
-Sale Price: 2094
+Wholesale Price: 2094
+Regular Price: 3760
+Sale Price: 3007
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

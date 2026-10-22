@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Professional Whitening Moisturizing Body Lotion with Rice, Hyaluronic Acid, and Collagen: Intense Hydration and Brightening Care
 Product ID: hhc-3754292
 SKU: hhc-3754292
@@ -7,11 +8,16 @@ Slug: yardlie-professional-whitening-moisturizing-body-lotion-with-rice-hyalu-c1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/77e73bb8902fdcfb363d8cb6a7c4b9af.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/77e73bb8902fdcfb363d8cb6a7c4b9af.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/3377840f1a42730176538c7ba3214f4b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/6a7e28f66447893da95ac9286e9cf7cd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/99f3269b48ce1314c551b3ba02bf6ff2.jpeg
 Meta Title: Yardlie Professional Whitening Moisturizing Body Lotion with Rice, H
 Meta Description: Buy Yardlie Professional Whitening Moisturizing Body Lotion with Rice, Hyaluronic Acid, and Collagen: Intense Hydration and Brightening Care online in Pakistan
 Description: This is the Yardlie Professional Whitening Moisturizing Body Lotion featuring Rice extract. It's formulated for all skin types, promising both whitening and intense moisturizing
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

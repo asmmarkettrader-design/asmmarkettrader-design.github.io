@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100 Pcs Disposable Flower Paper Soap With Portable Tube Multi Color Travel Sheets For Hand Washing And Outdoor Use Premium Quality (Random Color)
 Product ID: hhc-3756852
 SKU: hhc-3756852
@@ -7,11 +8,16 @@ Slug: 100-pcs-disposable-flower-paper-soap-with-portable-tube-multi-color-tra-2d
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: 100 Pcs Disposable Flower Paper Soap With Portable Tube Multi Color
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/198fedd7a80ad29f541188928b0a6229.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/198fedd7a80ad29f541188928b0a6229.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/921a63a92399578534255723585602a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/8f715ae3450c9d9ee09dc47f6c3f04d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/8bb7993c09874013b7ab5dae88072ab5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/08/5dc0cf9e6793c28764e717905d97c433.jpeg
+Meta Title: 100 Pcs Disposable Flower Paper Soap With Portable Tube Multi Color 
 Meta Description: Buy 100 Pcs Disposable Flower Paper Soap With Portable Tube Multi Color Travel Sheets For Hand Washing And Outdoor Use Premium Quality (Random Color) online in
 Description: 100 Pcs Disposable Flower Paper Soap With Portable Tube Provides Premium Quality Multi Color Travel Sheets Easy Carry Reliable Utility And Comfortable Use
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

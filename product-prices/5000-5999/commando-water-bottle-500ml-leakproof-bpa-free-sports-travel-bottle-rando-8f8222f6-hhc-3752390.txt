@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Commando Water Bottle – 500ml Leakproof BPA-Free Sports & Travel Bottle (Random Color & Design)
 Product ID: hhc-3752390
 SKU: hhc-3752390
@@ -7,11 +8,16 @@ Slug: commando-water-bottle-500ml-leakproof-bpa-free-sports-travel-bottle-ran-8f
 Category: Home & Kitchen
 Subcategory: Fitness & Gym
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/ed540a4486a55c9a1ab6ae1e1c6033b3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/ed540a4486a55c9a1ab6ae1e1c6033b3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/84d3db51ffdf3314114add6ef92dfe44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/0c2ae9ded3ea2766c6f60f17c59eb404.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/cde9a7e29fb60782af315c52bbd350d3.webp
 Meta Title: Commando Water Bottle – 500ml Leakproof BPA-Free Sports & Travel Bot
 Meta Description: Buy Commando Water Bottle – 500ml Leakproof BPA-Free Sports & Travel Bottle (Random Color & Design) online in Pakistan from ASM VEO. Durable 500ml Commando wate
 Description: Durable 500ml Commando water bottle with leakproof design, BPA-free material, and easy-to-carry strap. Perfect for school, office, gym, and travel. Available in random colors and designs.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

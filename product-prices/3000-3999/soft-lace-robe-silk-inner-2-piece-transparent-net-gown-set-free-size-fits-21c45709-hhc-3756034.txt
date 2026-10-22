@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Soft Lace Robe & Silk Inner – 2 Piece Transparent Net Gown Set | Free Size (Fits Up to 38” Chest)
 Product ID: hhc-3756034
 SKU: hhc-3756034
@@ -7,11 +8,16 @@ Slug: soft-lace-robe-silk-inner-2-piece-transparent-net-gown-set-free-size-fi-21
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/1e825fa197ea232852f8b27c81d8015f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/1e825fa197ea232852f8b27c81d8015f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/e4087dd85348827f28a9c8666b60912b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/ee6335b5f38ad2cdb836183d8598db2d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/0c4d9e031e8a0e66a16d323f92fb84e2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/f2bf5884b03fe5a39851927d55ccbaf2.jpeg
 Meta Title: Soft Lace Robe & Silk Inner – 2 Piece Transparent Net Gown Set | Fre
 Meta Description: Buy Soft Lace Robe & Silk Inner – 2 Piece Transparent Net Gown Set | Free Size (Fits Up to 38” Chest) online in Pakistan from ASM VEO. Elegant 2-piece lingerie
 Description: Elegant 2-piece lingerie set featuring a soft lace transparent net robe with a smooth silk inner slip. Designed for comfort, style, and a flattering fit.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

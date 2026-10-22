@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Color Castle Velvet Matte Long Lasting Lip Gloss Set – Pack of 5 - Multi Color
 Product ID: hhc-3761388
 SKU: hhc-3761388
@@ -7,11 +8,16 @@ Slug: color-castle-velvet-matte-long-lasting-lip-gloss-set-pack-of-5-multi-color
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/aa3b70baadc0add82139b736d4afa1e8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/aa3b70baadc0add82139b736d4afa1e8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/f0257faa85f66195a12ab53bc702ff20.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/649afe639f4dbefe286b321be71549f9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/924ae6adc09e6936fc6a657ce0bd3e95.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/230d999d4e7933e02ae57d04eb670908.jpeg
 Meta Title: Color Castle Velvet Matte Long Lasting Lip Gloss Set – Pack of 5 - M
 Meta Description: Buy Color Castle Velvet Matte Long Lasting Lip Gloss Set – Pack of 5 - Multi Color online in Pakistan from ASM VEO. Upgrade your makeup collection with the Colo
 Description: Upgrade your makeup collection with the Color Castle Velvet Matte Long Lasting Lip Gloss Set.
-Regular Price: 796
-Sale Price: 796
+Wholesale Price: 746
+Regular Price: 1430
+Sale Price: 1142
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

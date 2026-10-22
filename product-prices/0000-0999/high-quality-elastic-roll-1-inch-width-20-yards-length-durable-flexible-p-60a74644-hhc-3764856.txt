@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality Elastic Roll 1 Inch Width 20 Yards Length Durable Flexible Perfect For Tailoring Garments And DIY Sewing Projects
 Product ID: hhc-3764856
 SKU: hhc-3764856
@@ -7,11 +8,16 @@ Slug: high-quality-elastic-roll-1-inch-width-20-yards-length-durable-flexible-60
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/2df81e7278280cda6709a8e9a4065738.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/2df81e7278280cda6709a8e9a4065738.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/af6cbbdbde7114d2baec6925b03dc433.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/b8514a876af25be9da33b2efd6385838.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/0b36febea3a094ba47dd895d0a3e7819.jpg
 Meta Title: High Quality Elastic Roll 1 Inch Width 20 Yards Length Durable Flexi
 Meta Description: Buy High Quality Elastic Roll 1 Inch Width 20 Yards Length Durable Flexible Perfect For Tailoring Garments And DIY Sewing Projects online in Pakistan from ASM V
 Description: High Quality Elastic Roll 1 Inch Width 20 Yards Length Durable Flexible Perfect For Tailoring Garments And DIY Sewing Projects.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

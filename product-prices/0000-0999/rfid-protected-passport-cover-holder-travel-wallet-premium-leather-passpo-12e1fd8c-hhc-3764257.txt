@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RFID Protected Passport Cover Holder & Travel Wallet Premium Leather Passport & Card Wallet for Men & Women Made In Chine High Quality (Ranom Color)
 Product ID: hhc-3764257
 SKU: hhc-3764257
@@ -7,11 +8,16 @@ Slug: rfid-protected-passport-cover-holder-travel-wallet-premium-leather-pass-12
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/1b01a5e78ff899f833acae4e2f2e36e0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/1b01a5e78ff899f833acae4e2f2e36e0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/0cdd5ea7787494b911320f2045f1d9e2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/125bebac63ae1c3fb5139c027912e10f.jpeg
 Meta Title: RFID Protected Passport Cover Holder & Travel Wallet Premium Leather
 Meta Description: Buy RFID Protected Passport Cover Holder & Travel Wallet Premium Leather Passport & Card Wallet for Men & Women Made In Chine High Quality (Ranom Color) online
 Description: Premium leather-style finish, sleek and durable. Keeps passport, cards, tickets, and travel essentials organized. Includes multiple compartments for passport, cards, tickets, documents, and SIM cards. Compact and lightweight design. Suitable for both men and women. RFID-blocking protection included.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

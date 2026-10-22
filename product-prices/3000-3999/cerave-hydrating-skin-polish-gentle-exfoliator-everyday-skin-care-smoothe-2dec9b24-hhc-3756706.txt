@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CeraVe Hydrating Skin Polish | Gentle Exfoliator | Everyday Skin Care | Smoother & Healthier Skin
 Product ID: hhc-3756706
 SKU: hhc-3756706
@@ -7,11 +8,16 @@ Slug: cerave-hydrating-skin-polish-gentle-exfoliator-everyday-skin-care-smoot-2d
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/b62f86b68b0acb5b31804516a27482e8.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/b62f86b68b0acb5b31804516a27482e8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/2eda5d78ffa6e024af2883a96d21b03e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/61c1f8a331052f49509406e08a02fae4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/e64acad4de078c0c7ff5f9e99b0d1b39.jpeg
 Meta Title: CeraVe Hydrating Skin Polish | Gentle Exfoliator | Everyday Skin Car
 Meta Description: Buy CeraVe Hydrating Skin Polish | Gentle Exfoliator | Everyday Skin Care | Smoother & Healthier Skin online in Pakistan from ASM VEO. Gentle hydrating skin pol
 Description: Gentle hydrating skin polish by CeraVe. Exfoliates, smooths, and nourishes skin with a moisturizing formula for everyday care.
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nail Glue Strong Glue for Nail Polish, Soft Adhesive Nails, No Damage to Nails and Cuticles
 Product ID: hhc-3301918
 SKU: hhc-3301918
@@ -7,11 +8,16 @@ Slug: nail-glue-strong-glue-for-nail-polish-soft-adhesive-nails-no-damage-to-673
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/711PWwgzx7L._SL1134_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/711PWwgzx7L._SL1134_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/71R98-rEBTL._SL1462_.jpg
 Meta Title: Nail Glue Strong Glue for Nail Polish, Soft Adhesive Nails, No Damag
 Meta Description: Buy Nail Glue Strong Glue for Nail Polish, Soft Adhesive Nails, No Damage to Nails and Cuticles online in Pakistan from ASM VEO. HIGH ADHESIVE STRENGTH: Provide
 Description: HIGH ADHESIVE STRENGTH: Provides excellent adhesion strength to securely and permanently fix false nails and jewelry. SOFTNESS ON Nails &amp; SKIN: soft formula keeps natural nails and skin safe without causing damage or irritation. Suitable for home and professional use:can be easily used at home or in beauty salon for arts and jewelry fastening. HIGH QUALITY AND SAFE TO USE: Advanced design provides excellent adhesion strength without causing any unwanted side effects. [video width="582" height="292" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Video-2025-05-26-at-3.14.42-PM.mp4"][/video]
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

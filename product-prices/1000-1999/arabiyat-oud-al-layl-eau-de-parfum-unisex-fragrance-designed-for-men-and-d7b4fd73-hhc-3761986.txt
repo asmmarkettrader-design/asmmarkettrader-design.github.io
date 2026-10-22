@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Arabiyat Oud Al Layl Eau De Parfum - Unisex Fragrance Designed For Men And Women Seeking A Sophisticated And Long Lasting Scent - 100ML
 Product ID: hhc-3761986
 SKU: hhc-3761986
 Slug: arabiyat-oud-al-layl-eau-de-parfum-unisex-fragrance-designed-for-men-an-d7b4fd73-hhc-3761986
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: Arabiyat
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/521d84e99cd37906e253db6da2b0da38.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/521d84e99cd37906e253db6da2b0da38.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/b5ea59551b905c4711bea689b1bbe2b1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/412f6ecd959074ce6defa065173d9c74.jpeg
 Meta Title: Arabiyat Oud Al Layl Eau De Parfum - Unisex Fragrance Designed For M
 Meta Description: Buy Arabiyat Oud Al Layl Eau De Parfum - Unisex Fragrance Designed For Men And Women Seeking A Sophisticated And Long Lasting Scent - 100ML online in Pakistan f
 Description: Arabiyat Oud Al Layl Is A Unisex Eau De Parfum Crafted To Provide A Distinctive And Enduring Fragrance Experience For Men And Women.
-Regular Price: 1498
-Sale Price: 1498
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

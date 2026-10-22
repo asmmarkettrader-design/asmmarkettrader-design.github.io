@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Whole Body Cold White Skin Brightening Body Lotion – Deep Whitening Cream Spout Pouch
 Product ID: hhc-3760306
 SKU: hhc-3760306
@@ -7,11 +8,16 @@ Slug: whole-body-cold-white-skin-brightening-body-lotion-deep-whitening-cream-fb
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Whole Body Cold White Skin Brightening Body Lotion – Deep Whitening
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/e48b8b259d4a9e8d6d5a4383e5e23654.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/e48b8b259d4a9e8d6d5a4383e5e23654.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/bb60b91d9b4b45a0bd05f3d68e3f983e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/f1d7eff49fcabb04c4dbb6cf5655a1cf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/c79ae642a829bb1f847a5d30631b9e8b.jpeg
+Meta Title: Whole Body Cold White Skin Brightening Body Lotion – Deep Whitening 
 Meta Description: Buy Whole Body Cold White Skin Brightening Body Lotion – Deep Whitening Cream Spout Pouch online in Pakistan from ASM VEO. Transform your skincare routine with
 Description: Transform your skincare routine with the Whole Body Cold White Skin Brightening Body Lotion. Specifically engineered to break down stubborn epidermal pigments across layers, this advanced formulation leverages Niacinamide and active skincare agents to reveal a radiant, translucent complexion.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Summer Collection Full Grey Hoodie  Printed For men And Boys
 Product ID: hhc-3752563
 SKU: hhc-3752563
@@ -7,11 +8,16 @@ Slug: new-summer-collection-full-grey-hoodie-printed-for-men-and-boys-hhc-375256
 Category: Fashion
 Subcategory: Trucksuits & Activewear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/bb5037a406caeeee7e38eb968bca7505.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/bb5037a406caeeee7e38eb968bca7505.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/8381bc9ae7f28e95f8375bf7aa57c2de.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/92f922dbca199f461d44489c480981c0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/b056a4cd343ff9a5cbce8c2ee7a943e9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/6e65c79b6073b5fc9b4ca18567dcd718.jpeg
 Meta Title: New Summer Collection Full Grey Hoodie Printed For men And Boys | Bu
 Meta Description: Buy New Summer Collection Full Grey Hoodie Printed For men And Boys online in Pakistan from ASM VEO. Elevate your everyday with this full grey hoodie from our N
 Description: Elevate your everyday with this full grey hoodie from our New Summer Collection. Featuring a bold front print and clean silhouette, it's designed for men and boys who value comfort with edge. Lightweight, breathable, and effortlessly cool—this piece transitions from streetwear to statement with ease.
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

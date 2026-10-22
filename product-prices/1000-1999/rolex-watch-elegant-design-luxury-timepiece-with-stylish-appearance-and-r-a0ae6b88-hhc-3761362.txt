@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rolex Watch Elegant Design Luxury Timepiece With Stylish Appearance And Reliable Performance For Everyday Wear
 Product ID: hhc-3761362
 SKU: hhc-3761362
@@ -7,11 +8,16 @@ Slug: rolex-watch-elegant-design-luxury-timepiece-with-stylish-appearance-and-a0
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Rolex Watch Elegant Design Luxury Timepiece With Stylish Appearance
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/2cca4a575b46dd9010f9c03bc8816cbe.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/16/2cca4a575b46dd9010f9c03bc8816cbe.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/e3f18732c355f360ff25f4b19a95198f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/fa7cb800b69ea0736b50bb7c724229bb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/2a7b8dcfc98f9b10e56364322791048c.jpeg
+Meta Title: Rolex Watch Elegant Design Luxury Timepiece With Stylish Appearance 
 Meta Description: Buy Rolex Watch Elegant Design Luxury Timepiece With Stylish Appearance And Reliable Performance For Everyday Wear online in Pakistan from ASM VEO. Rolex Watch
 Description: Rolex Watch Combines Classic Style With Durable Build And Reliable Functionality
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

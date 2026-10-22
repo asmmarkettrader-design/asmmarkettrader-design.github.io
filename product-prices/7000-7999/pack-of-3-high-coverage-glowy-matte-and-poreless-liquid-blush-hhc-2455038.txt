@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 - High Coverage Glowy, Matte And Poreless Liquid Blush
 Product ID: hhc-2455038
 SKU: hhc-2455038
@@ -7,11 +8,16 @@ Slug: pack-of-3-high-coverage-glowy-matte-and-poreless-liquid-blush-hhc-2455038
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-12-at-6.13.02-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-12-at-6.13.02-PM-2.jpeg
 Meta Title: Pack of 3 - High Coverage Glowy, Matte And Poreless Liquid Blush | B
 Meta Description: Buy Pack of 3 - High Coverage Glowy, Matte And Poreless Liquid Blush online in Pakistan from ASM VEO. Product description • Material: Liquid • Texture: High Pig
 Description: Product description • Material: Liquid • Texture: High Pigmented • Product Feature: High Coverage, Glowy, Matte And Poreless • Package Includes: 3 x Blush A high-coverage liquid blush that delivers a radiant, glowy finish with a matte, poreless look. Its lightweight formula blends seamlessly, enhancing your natural flush while smoothing the skin for a flawless, long-lasting effect.
-Regular Price: 1401
-Sale Price: 1401
+Wholesale Price: 1351
+Regular Price: 2470
+Sale Price: 1978
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

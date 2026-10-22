@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HD Pro High Coverage Concealer, Pack of 3
 Product ID: hhc-2007273
 SKU: hhc-2007273
@@ -7,11 +8,16 @@ Slug: hd-pro-high-coverage-concealer-pack-of-3-hhc-2007273
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-06-at-12.53.24-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-06-at-12.53.24-PM.jpeg
 Meta Title: HD Pro High Coverage Concealer, Pack of 3 | Buy Online in Pakistan
 Meta Description: Buy HD Pro High Coverage Concealer, Pack of 3 online in Pakistan from ASM VEO. HD Pro High Coverage Concealer, Pack of 3 &nbsp; Material: Liquid Product Type: H
 Description: HD Pro High Coverage Concealer, Pack of 3 &nbsp; Material: Liquid Product Type: High Coverage Concealer Product Details: Concealer Liquid With A Smooth And Quick Drying Formula That Sets To A Lightweight, Matte Finish, High Quality Pigments For Superior Coverage Shade: Natural, Fair, Ivory Weight: 0.28 Oz Package Includes: 3 x Concealers
-Regular Price: 638
-Sale Price: 638
+Wholesale Price: 588
+Regular Price: 1140
+Sale Price: 913
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

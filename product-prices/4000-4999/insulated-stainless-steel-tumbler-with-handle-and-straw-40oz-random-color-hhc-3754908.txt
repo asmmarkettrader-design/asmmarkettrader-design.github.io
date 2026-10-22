@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Insulated Stainless Steel Tumbler with Handle and Straw - 40oz (Random Color)
 Product ID: hhc-3754908
 SKU: hhc-3754908
@@ -7,11 +8,16 @@ Slug: insulated-stainless-steel-tumbler-with-handle-and-straw-40oz-random-color-
 Category: Home & Kitchen
 Subcategory: Fitness & Gym
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/65a50305fb294930b6cbf57400bf39cc.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/65a50305fb294930b6cbf57400bf39cc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/b68e23da2cff54a3088ce54de0a67da8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/4d174af675f3a160657d2c051b8282bf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/6a05ec14ba0b66d0807542fc71034cac.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/30/6659636c34cd7404a55a961cafe7ae9a.jpeg
 Meta Title: Insulated Stainless Steel Tumbler with Handle and Straw - 40oz (Rand
 Meta Description: Buy Insulated Stainless Steel Tumbler with Handle and Straw - 40oz (Random Color) online in Pakistan from ASM VEO. This 40oz insulated tumbler is the ultimate h
 Description: This 40oz insulated tumbler is the ultimate hydration companion. Featuring double-wall vacuum insulation, a sturdy ergonomic handle, and a splash-resistant lid with a reusable straw, it’s built to fit into most car cup holders while keeping your beverages ice-cold or piping hot all day long.
-Regular Price: 2348
-Sale Price: 2348
+Wholesale Price: 2348
+Regular Price: 4190
+Sale Price: 3350
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

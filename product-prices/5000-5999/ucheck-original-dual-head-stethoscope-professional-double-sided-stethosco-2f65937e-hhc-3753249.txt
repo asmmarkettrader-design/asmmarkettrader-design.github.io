@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ucheck Original Dual Head Stethoscope – Professional Double-Sided Stethoscope for Doctors, Nurses & Medical Students
 Product ID: hhc-3753249
 SKU: hhc-3753249
@@ -7,11 +8,16 @@ Slug: ucheck-original-dual-head-stethoscope-professional-double-sided-stethos-2f
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/8cc5809c9743413f390a9ccef2b66c1e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/8cc5809c9743413f390a9ccef2b66c1e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/81327f9e3a662306171f757b466fe4da.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/79cbb449367e3650432fb60b41d9660e.mp4
 Meta Title: Ucheck Original Dual Head Stethoscope – Professional Double-Sided St
 Meta Description: Buy Ucheck Original Dual Head Stethoscope – Professional Double-Sided Stethoscope for Doctors, Nurses & Medical Students online in Pakistan from ASM VEO. High-q
 Description: High-quality dual head stethoscope from Ucheck — delivers clear sound for accurate diagnosis and professional use.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

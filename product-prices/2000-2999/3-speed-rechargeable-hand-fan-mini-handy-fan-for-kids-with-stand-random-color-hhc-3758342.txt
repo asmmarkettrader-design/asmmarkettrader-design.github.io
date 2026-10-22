@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Speed Rechargeable Hand Fan – Mini Handy Fan For Kids With Stand (Random Color)
 Product ID: hhc-3758342
 SKU: hhc-3758342
@@ -7,11 +8,16 @@ Slug: 3-speed-rechargeable-hand-fan-mini-handy-fan-for-kids-with-stand-random-co
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/96e64a58fa3547bc506e3b90580a9661.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/96e64a58fa3547bc506e3b90580a9661.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/233f9a7157bc8a73ce94cb9186827bfd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/79332e23dcde029288de692ebc478d07.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/4d8d44096e92cb1b8bcb646ee8c25e43.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/e1fe9ba8f1a25a93e20d6fc75b1408b5.png
 Meta Title: 3 Speed Rechargeable Hand Fan – Mini Handy Fan For Kids With Stand (
 Meta Description: Buy 3 Speed Rechargeable Hand Fan – Mini Handy Fan For Kids With Stand (Random Color) online in Pakistan from ASM VEO. Keep cool with this portable 3 Speed Rech
 Description: Keep cool with this portable 3 Speed Rechargeable Hand Fan. Perfect for kids and everyday use, this handy fan features 3 speed modes, a built-in rechargeable battery, and a convenient stand for desk use.
-Regular Price: 603
-Sale Price: 603
+Wholesale Price: 553
+Regular Price: 1080
+Sale Price: 862
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

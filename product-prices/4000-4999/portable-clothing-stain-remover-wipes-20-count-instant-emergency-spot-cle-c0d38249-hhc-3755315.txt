@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Clothing Stain Remover Wipes (20 Count) – Instant Emergency Spot Cleaner for Food, Grease & Coffee Stains on Jackets & Cotton
 Product ID: hhc-3755315
 SKU: hhc-3755315
@@ -7,11 +8,16 @@ Slug: portable-clothing-stain-remover-wipes-20-count-instant-emergency-spot-c-c0
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/d0919bcf57fdd9f30e2d0e8cf21ada78.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/d0919bcf57fdd9f30e2d0e8cf21ada78.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/f1c18dc4d9d5f425e01a34436ce76023.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/260cef0e6a77633650f4f40635990452.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/24ff53f2a0f7f134619de7118aac98f3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/8145f7cf29ef6a32c7f25a2b5d196de7.png
 Meta Title: Portable Clothing Stain Remover Wipes (20 Count) – Instant Emergency
 Meta Description: Buy Portable Clothing Stain Remover Wipes (20 Count) – Instant Emergency Spot Cleaner for Food, Grease & Coffee Stains on Jackets & Cotton online in Pakistan fr
 Description: Keep your clothes looking brand new with our Portable Clothing Stain Removal Wipes. This 20-pack of individually moistened wipes is designed to tackle emergency spills like coffee, oil, and food stains instantly. The gentle, bleach-free formula is safe for most fabrics and fits perfectly in your bag
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

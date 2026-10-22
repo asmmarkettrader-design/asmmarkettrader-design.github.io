@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Orange Enzyme Exfoliating Gel | Brightening, Nourishing & Citrus Skincare For Radiant, Glowing, Healthy Skin 50ml
 Product ID: hhc-3753530
 SKU: hhc-3753530
@@ -7,11 +8,16 @@ Slug: orange-enzyme-exfoliating-gel-brightening-nourishing-citrus-skincare-fo-c7
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/c64401ed33f597a4c7374287fd9db5b0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/19/c64401ed33f597a4c7374287fd9db5b0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/58834dde855e7f0f99c6cd46fc49ab2d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/e7fec080ac58d1eddd5da0a1a92bbdb9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/6dc3b46710088497e7cc8137af5f2a93.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/c7c04a5ff4c59519f71cb11f7f38be0d.jpg
 Meta Title: Orange Enzyme Exfoliating Gel | Brightening, Nourishing & Citrus Ski
 Meta Description: Buy Orange Enzyme Exfoliating Gel | Brightening, Nourishing & Citrus Skincare For Radiant, Glowing, Healthy Skin 50ml online in Pakistan from ASM VEO. Reveal fr
 Description: Reveal fresh, glowing skin with Orange Enzyme Exfoliating Gel — gently removes dead cells, brightens complexion, and nourishes your skin naturally.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

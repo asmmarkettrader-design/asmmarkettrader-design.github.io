@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Etoile Daisy Age Defying Blueberry & Grapefruit Hand Wash 500ml – First Time in Pakistan Anti-Aging Hand Care
 Product ID: hhc-3761622
 SKU: hhc-3761622
@@ -7,11 +8,16 @@ Slug: etoile-daisy-age-defying-blueberry-grapefruit-hand-wash-500ml-first-tim-3b
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/65067aa08ed196181fc1e0d8c5bf49ee.PNG
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/65067aa08ed196181fc1e0d8c5bf49ee.PNG
 Meta Title: Etoile Daisy Age Defying Blueberry & Grapefruit Hand Wash 500ml – Fi
 Meta Description: Buy Etoile Daisy Age Defying Blueberry & Grapefruit Hand Wash 500ml – First Time in Pakistan Anti-Aging Hand Care online in Pakistan from ASM VEO. A premium age
 Description: A premium age-defying hand wash enriched with blueberry and grapefruit extracts to cleanse, hydrate, and help maintain youthful, soft hands.
-Regular Price: 506
-Sale Price: 506
+Wholesale Price: 456
+Regular Price: 930
+Sale Price: 744
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: South Moon Lipoma Removal And Body Smoothing Cream 50g Herbal Natural Lump And Skin Knot Relief Ointment
 Product ID: hhc-3757189
 SKU: hhc-3757189
@@ -7,11 +8,16 @@ Slug: south-moon-lipoma-removal-and-body-smoothing-cream-50g-herbal-natural-l-30
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/b0962c0a667fe4d197943faab145e262.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/b0962c0a667fe4d197943faab145e262.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/b290f6e1a46a4963e9fe7b9efc98b0a2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/f64ed15f5021a3953dcd586388bb4055.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/868660c90113c6ace0d00670b40c2b96.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/a816a843bfc5a3ab376d676b0d5f1bb3.jpeg
 Meta Title: South Moon Lipoma Removal And Body Smoothing Cream 50g Herbal Natura
 Meta Description: Buy South Moon Lipoma Removal And Body Smoothing Cream 50g Herbal Natural Lump And Skin Knot Relief Ointment online in Pakistan from ASM VEO. Herbal Natural Lip
 Description: Herbal Natural Lipoma Removal And Body Smoothing Cream That Helps Reduce Lumps Knots And Promotes Healthier Skin Texture.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

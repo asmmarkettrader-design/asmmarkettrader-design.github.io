@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Allahu Akbar | Alhumdulillah | SubhanAllah Wooden Sticky Wall Art – 3 Piece Islamic Calligraphy Frame Set, 8x11 inch Each with Easy Wall Mount
 Product ID: hhc-3752306
 SKU: hhc-3752306
@@ -7,11 +8,16 @@ Slug: allahu-akbar-alhumdulillah-subhanallah-wooden-sticky-wall-art-3-piece-i-f7
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/d17506dd63bc079cf2c0cc3968e89fb7.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/d17506dd63bc079cf2c0cc3968e89fb7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/8fa859b511f75e47aa04bf78aab6e6f4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/93ce03f3cd94ff20e2ee4f36d21f94c1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/c5d64f5686ffb0fc960ce846bef4a6f0.png
 Meta Title: Allahu Akbar | Alhumdulillah | SubhanAllah Wooden Sticky Wall Art –
 Meta Description: Buy Allahu Akbar | Alhumdulillah | SubhanAllah Wooden Sticky Wall Art – 3 Piece Islamic Calligraphy Frame Set, 8x11 inch Each with Easy Wall Mount online in Pak
 Description: Allahu Akbar | Alhumdulillah | SubhanAllah Wooden Sticky Wall Art – 3 Piece Islamic Calligraphy Frame Set, 8x11 inch Each with Easy Wall Mount
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

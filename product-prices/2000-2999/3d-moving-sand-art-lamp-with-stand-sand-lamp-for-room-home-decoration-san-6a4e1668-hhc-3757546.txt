@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Moving Sand Art Lamp With Stand | Sand Lamp For Room & Home Decoration | Sandscapes Frame For Table
 Product ID: hhc-3757546
 SKU: hhc-3757546
@@ -7,11 +8,16 @@ Slug: 3d-moving-sand-art-lamp-with-stand-sand-lamp-for-room-home-decoration-s-6a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/5d4224d32ba1b15b26b4304679b6cdb8.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/5d4224d32ba1b15b26b4304679b6cdb8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/3a03a2171b5d3effdadd540930b13728.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/e1067d2556f8acde7618ba59afa6722e.webp
 Meta Title: 3D Moving Sand Art Lamp With Stand | Sand Lamp For Room & Home Decor
 Meta Description: Buy 3D Moving Sand Art Lamp With Stand | Sand Lamp For Room & Home Decoration | Sandscapes Frame For Table online in Pakistan from ASM VEO. 3D Moving Sand Art L
 Description: 3D Moving Sand Art Lamp with Stand creates relaxing sandscapes. Perfect for home décor, desks, and side tables. Stylish, calming, and ideal for adding an artistic touch.
-Regular Price: 1048
-Sale Price: 1048
+Wholesale Price: 998
+Regular Price: 1880
+Sale Price: 1507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

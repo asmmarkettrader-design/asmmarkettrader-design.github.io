@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: WIKI Special Skincare Brighter Power 24K Gold & 2 in 1 Polish with Peeling Cream – Ultra Whitening
 Product ID: hhc-3752228
 SKU: hhc-3752228
@@ -7,11 +8,16 @@ Slug: wiki-special-skincare-brighter-power-24k-gold-2-in-1-polish-with-peelin-9d
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758014272-68c92b40d0f70-imgi_78_WhatsAppImage2025-08-10at17.31.43_5fb46d0d_d5a37d89-5fe1-463b-aea7-d16b79377af0.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758014272-68c92b40d0f70-imgi_78_WhatsAppImage2025-08-10at17.31.43_5fb46d0d_d5a37d89-5fe1-463b-aea7-d16b79377af0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758014091-68c92a8b5143b-imgi_63_df192b97fb44bc614a0de3bc00e16ccc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758014089-68c92a89e1fe7-imgi_64_a387763f9788c1f775141d446fb66586.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758014614-68c92c963dae1-imgi_31_WhatsAppImage2025-08-10at17.31.43_d6ed9632.jpg
 Meta Title: WIKI Special Skincare Brighter Power 24K Gold & 2 in 1 Polish with P
 Meta Description: Buy WIKI Special Skincare Brighter Power 24K Gold & 2 in 1 Polish with Peeling Cream – Ultra Whitening online in Pakistan from ASM VEO. WIKI Special Skincare Br
 Description: WIKI Special Skincare Brighter Power 24K Gold and 2 in 1 Ultra Whitening Polish Cream – brightens, exfoliates, and smooths skin for a natural radiant glow.
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

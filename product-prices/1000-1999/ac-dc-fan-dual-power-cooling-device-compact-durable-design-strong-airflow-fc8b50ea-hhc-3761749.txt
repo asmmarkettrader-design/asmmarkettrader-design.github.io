@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AC DC Fan Dual Power Cooling Device Compact Durable Design Strong Airflow Energy Efficient | Random Design And Random Company
 Product ID: hhc-3761749
 SKU: hhc-3761749
@@ -7,11 +8,16 @@ Slug: ac-dc-fan-dual-power-cooling-device-compact-durable-design-strong-airfl-fc
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/00bbdf46d56d330e1fb550bd97420cd7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/00bbdf46d56d330e1fb550bd97420cd7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/203b669696a2573164046f6ac4c6e81d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/3fb3bb38dd6a00a1eff8147b097dbd2f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/e6f7566656b5df0a25cc945f405b410a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/0c093dec8608a5dab06a943da061cc62.jpeg
 Meta Title: AC DC Fan Dual Power Cooling Device Compact Durable Design Strong Ai
 Meta Description: Buy AC DC Fan Dual Power Cooling Device Compact Durable Design Strong Airflow Energy Efficient | Random Design And Random Company online in Pakistan from ASM VE
 Description: AC DC Fan Dual Power Cooling Device Compact Design With Strong Airflow For Home Office And Travel.
-Regular Price: 10589
-Sale Price: 10589
+Wholesale Price: 10589
+Regular Price: 17430
+Sale Price: 13946
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

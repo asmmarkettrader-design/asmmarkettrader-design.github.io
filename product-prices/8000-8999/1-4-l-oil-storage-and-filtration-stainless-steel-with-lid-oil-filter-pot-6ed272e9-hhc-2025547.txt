@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: (1.4 L) - Oil Storage and Filtration Stainless Steel with Lid | Oil Filter Pot with Handle for Kitchen (Box Packing)
 Product ID: hhc-2025547
 SKU: hhc-2025547
@@ -7,11 +8,16 @@ Slug: 1-4-l-oil-storage-and-filtration-stainless-steel-with-lid-oil-filter-po-6e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/61ttVTqhCL._AC_SX679_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/61ttVTqhCL._AC_SX679_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/71nep2Vo4pL._AC_SX679_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/81i1Kem2VSL._AC_SX679_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/7ad485b9-66a3-4807-ac08-0745f3a03a73-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-03-12-at-3.38.21-AM-1.jpeg
 Meta Title: (1.4 L) - Oil Storage and Filtration Stainless Steel with Lid | Oil
 Meta Description: Buy (1.4 L) - Oil Storage and Filtration Stainless Steel with Lid | Oil Filter Pot with Handle for Kitchen (Box Packing) online in Pakistan from ASM VEO. (1.4 L
 Description: (1.4 L) - Oil Storage and Filtration Stainless Steel with Lid | Oil Filter Pot with Handle for Kitchen (Box Packing)
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

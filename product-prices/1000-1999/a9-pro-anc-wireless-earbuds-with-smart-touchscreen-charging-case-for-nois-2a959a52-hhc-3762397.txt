@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: A9 Pro ANC Wireless Earbuds With Smart Touchscreen Charging Case For Noise Reduction And Ambient Sound Control
 Product ID: hhc-3762397
 SKU: hhc-3762397
@@ -7,11 +8,16 @@ Slug: a9-pro-anc-wireless-earbuds-with-smart-touchscreen-charging-case-for-no-2a
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/34338dc6a750f49baaa23af5b8f94a1c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/34338dc6a750f49baaa23af5b8f94a1c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/6cfff4a1824a437d576c7904cef47f47.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/f9bf9264b580a63273bbde58136d3de7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/fb3862b00668103140130148c558f9b7.gif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/c609174d6d9d2768953d5e2c60614946.jpeg
 Meta Title: A9 Pro ANC Wireless Earbuds With Smart Touchscreen Charging Case For
 Meta Description: Buy A9 Pro ANC Wireless Earbuds With Smart Touchscreen Charging Case For Noise Reduction And Ambient Sound Control online in Pakistan from ASM VEO. A9 Pro ANC W
 Description: A9 Pro ANC Wireless Earbuds With Smart Touchscreen Charging Case Durable Comfortable Stylish Affordable Practical Choice Reliable Performance Perfect For Music Calls Travel And Daily Use.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Dynamic Moving Sand Art Table Lamp with Wooden/Metal Stand: LED Sandscape Quicksand Night Light for Relaxing Home Decor. This Mesmerizing
 Product ID: hhc-3754106
 SKU: hhc-3754106
@@ -7,11 +8,16 @@ Slug: 3d-dynamic-moving-sand-art-table-lamp-with-wooden-metal-stand-led-sands-5f
 Category: Electronics
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/730f6f1ba027ef0bc77a4fc6d0b08e71.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/09/730f6f1ba027ef0bc77a4fc6d0b08e71.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/7fa296be2a1ad71fc2ea29d75e647300.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/54cfe73a58f38fe2d6d1f940e41b1541.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/248caf583db800115866b6a5cb52a235.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/1906ea4035f92d1575d08f6c95f9e9f1.jpeg
 Meta Title: 3D Dynamic Moving Sand Art Table Lamp with Wooden/Metal Stand: LED S
 Meta Description: Buy 3D Dynamic Moving Sand Art Table Lamp with Wooden/Metal Stand: LED Sandscape Quicksand Night Light for Relaxing Home Decor. This Mesmerizing online in Pakis
 Description: Experience tranquility with the 3D Moving Sand Mountain Lamp. This unique table lamp features a sealed glass frame filled with colored sand and liquid
-Regular Price: 1281
-Sale Price: 1281
+Wholesale Price: 1231
+Regular Price: 2260
+Sale Price: 1808
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

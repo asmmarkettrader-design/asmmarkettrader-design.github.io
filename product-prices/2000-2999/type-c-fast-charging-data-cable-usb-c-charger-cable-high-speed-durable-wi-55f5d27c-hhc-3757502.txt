@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Type C Fast Charging Data Cable USB-C Charger Cable High Speed Durable Wire (Random Color Without Box)
 Product ID: hhc-3757502
 SKU: hhc-3757502
@@ -7,11 +8,16 @@ Slug: type-c-fast-charging-data-cable-usb-c-charger-cable-high-speed-durable-55f
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/6222a1edb7e9d699c27aa62ea4836e32.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/6222a1edb7e9d699c27aa62ea4836e32.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/2840520339956459fb0ec2d4865532dc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/6e1532ef2e71e07fd1e7b9d532cb09c2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/7d9e41a17f42702a18ab844c9507e222.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/44743e0edc1628bbe1d365985cae64c8.jpeg
 Meta Title: Type C Fast Charging Data Cable USB-C Charger Cable High Speed Durab
 Meta Description: Buy Type C Fast Charging Data Cable USB-C Charger Cable High Speed Durable Wire (Random Color Without Box) online in Pakistan from ASM VEO. Fast charging Type C
 Description: Fast charging Type C data cable with high-speed data transfer. Durable and reliable for daily use.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

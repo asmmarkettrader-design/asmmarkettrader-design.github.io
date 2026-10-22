@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Collagen Ultra Protect Sunblock: High SPF 60+ PA+++, 3-in-1 Natural Care for Lasting, Moisturizing, and Waterproof Protection
 Product ID: hhc-3754319
 SKU: hhc-3754319
@@ -7,11 +8,16 @@ Slug: collagen-ultra-protect-sunblock-high-spf-60-pa-3-in-1-natural-care-for-eb1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Collagen Ultra Protect Sunblock: High SPF 60+ PA+++, 3-in-1 Natural
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/b453c3910c425938a00cc00b67603f6c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/b453c3910c425938a00cc00b67603f6c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/9dafd05b7848b51486058fbf681ae1b5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/16613fafb9fd7d6f018c509990d10fa5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/c1b0f0d023a573eb29eaa4d9fb71163c.png
+Meta Title: Collagen Ultra Protect Sunblock: High SPF 60+ PA+++, 3-in-1 Natural 
 Meta Description: Buy Collagen Ultra Protect Sunblock: High SPF 60+ PA+++, 3-in-1 Natural Care for Lasting, Moisturizing, and Waterproof Protection online in Pakistan from ASM VE
 Description: Collagen Ultra Protect Sunblock SPF 60+ PA+++ offers 3-in-1 Natural Care with very high protection against UV rays. Its dry-touch, waterproof formula ensures lasting defense, keeps skin soft and smooth, and provides moisturizing antioxidant benefits. Dermatologist-tested for safety and efficacy.
-Regular Price: 1484
-Sale Price: 1484
+Wholesale Price: 1434
+Regular Price: 2620
+Sale Price: 2096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

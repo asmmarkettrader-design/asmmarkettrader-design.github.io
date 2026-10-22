@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heart Printed Kids T-Shirt – Soft Cotton Casual Tee for Toddlers & Kids
 Product ID: hhc-3756798
 SKU: hhc-3756798
@@ -7,11 +8,16 @@ Slug: heart-printed-kids-t-shirt-soft-cotton-casual-tee-for-toddlers-kids-hhc-37
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/5e8b1916730f2eccd7e8cb985208f4eb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/5e8b1916730f2eccd7e8cb985208f4eb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/0603ae65b124f3e73804a0613e311a64.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/eb4f7cf46ed20a1de16050a1c6ba7c28.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/6e5eb624281f010c3557727e94013988.jpeg
 Meta Title: Heart Printed Kids T-Shirt – Soft Cotton Casual Tee for Toddlers & K
 Meta Description: Buy Heart Printed Kids T-Shirt – Soft Cotton Casual Tee for Toddlers & Kids online in Pakistan from ASM VEO. A cute and comfortable heart printed t-shirt design
 Description: A cute and comfortable heart printed t-shirt designed for toddlers and young kids. Made with soft breathable fabric, this stylish tee is perfect for everyday wear, playtime, and casual outings.
-Regular Price: 579
-Sale Price: 579
+Wholesale Price: 529
+Regular Price: 1030
+Sale Price: 827
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Huda Beauty Matte Color Lipstick Pencils Set Of 12 Long Lasting Waterproof Non Sticky Smooth Application For All Occasions
 Product ID: hhc-3761127
 SKU: hhc-3761127
@@ -7,11 +8,16 @@ Slug: huda-beauty-matte-color-lipstick-pencils-set-of-12-long-lasting-waterpr-25
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/a14178c773ca18f40b9206aa06825ccf.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/a14178c773ca18f40b9206aa06825ccf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/a4f11e5124d86dd077d303a0bcd690a8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/84422f304d37d435d0b13fd431476713.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/6222d1d02b9f75d29c169d3cd6d90451.jpeg
 Meta Title: Huda Beauty Matte Color Lipstick Pencils Set Of 12 Long Lasting Wate
 Meta Description: Buy Huda Beauty Matte Color Lipstick Pencils Set Of 12 Long Lasting Waterproof Non Sticky Smooth Application For All Occasions online in Pakistan from ASM VEO.
 Description: Huda Beauty Matte Color Lipstick Pencils Set Of 12 Waterproof Non Sticky Long Lasting Formula With Smooth Application.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

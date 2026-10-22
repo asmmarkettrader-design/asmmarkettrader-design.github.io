@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rain Ponchos for Adults Reusable - Raincoats Survival Emergency Heavy Duty Rain Coat with Drawstring Hood (Random colors)
 Product ID: hhc-1830177
 SKU: hhc-1830177
@@ -7,11 +8,16 @@ Slug: rain-ponchos-for-adults-reusable-raincoats-survival-emergency-heavy-dut-11
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-25-at-4.45.00-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-25-at-4.45.00-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-25-at-4.45.00-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-25-at-4.44.59-PM-1.jpeg
 Meta Title: Rain Ponchos for Adults Reusable - Raincoats Survival Emergency Heav
 Meta Description: Buy Rain Ponchos for Adults Reusable - Raincoats Survival Emergency Heavy Duty Rain Coat with Drawstring Hood (Random colors) online in Pakistan from ASM VEO. p
 Description: product details Its compact and foldable design makes it easy to carry a waterproof material will keep your clothing dry and warm. Breathable and comfortable: don't worry, it won't make you hot as the armholes at the bottom are loose enough to allow air circulation
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

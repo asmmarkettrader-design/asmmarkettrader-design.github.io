@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Handy Stitch Portable Sewing Machine | Battery Operated Handheld Sewing Handy Stitch | Handy Stich
 Product ID: hhc-3755880
 SKU: hhc-3755880
@@ -7,11 +8,16 @@ Slug: handy-stitch-portable-sewing-machine-battery-operated-handheld-sewing-h-43
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/0fb1193e32eef91e28b7f6d44ddf8615.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/0fb1193e32eef91e28b7f6d44ddf8615.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/7d5a8913abe461df03016d62746f5571.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/4e9bf563128b9d87e49eee40bc1d3211.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/64001ee5b7575b810fa9d8a9d8069869.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/24/c47b0ae26c6415ab5dca9fc6633c52d4.jpg
 Meta Title: Handy Stitch Portable Sewing Machine | Battery Operated Handheld Sew
 Meta Description: Buy Handy Stitch Portable Sewing Machine | Battery Operated Handheld Sewing Handy Stitch | Handy Stich online in Pakistan from ASM VEO. The Handy Stich Portable
 Description: The Handy Stich Portable Sewing Machine is a compact, battery-operated handheld tool for quick stitching and minor repairs. Ideal for home or travel, it sews fabrics easily without setup, making instant clothing fixes simple and convenient.
-Regular Price: 1016
-Sale Price: 1016
+Wholesale Price: 966
+Regular Price: 1830
+Sale Price: 1461
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

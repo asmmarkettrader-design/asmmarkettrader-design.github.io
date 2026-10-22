@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Airpods pro case, Silicon Case, Protective Case (Random Color)
 Product ID: hhc-1728205
 SKU: hhc-1728205
@@ -7,11 +8,16 @@ Slug: airpods-pro-case-silicon-case-protective-case-random-color-hhc-1728205
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/3-47.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/3-47.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/2-55.webp
 Meta Title: Airpods pro case, Silicon Case, Protective Case (Random Color) | Buy
 Meta Description: Buy Airpods pro case, Silicon Case, Protective Case (Random Color) online in Pakistan from ASM VEO. Silicone sealing waterproof wrap Impact resistance to milita
 Description: Silicone sealing waterproof wrap Impact resistance to military standard Lightning connector access Carabiner included Original Picture
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

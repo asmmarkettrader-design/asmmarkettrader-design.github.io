@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Beauty Bag Makeup Organizer Pouch Travel Cosmetic Storage Bag for Women
 Product ID: hhc-3757522
 SKU: hhc-3757522
@@ -7,11 +8,16 @@ Slug: beauty-bag-makeup-organizer-pouch-travel-cosmetic-storage-bag-for-women-hh
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/d1f2b9ab0f91484445608513c8c39a64.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/d1f2b9ab0f91484445608513c8c39a64.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/8ced72e6f41beab2c7de40f79fdf4b2d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/0d65fa2bf67a7e0b7f120bf3ca9ff665.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/b8a62f8834b25c810f6b8f207a87ae39.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/951f3db38bec7ce22f9ef9bec7550eb1.png
 Meta Title: Beauty Bag Makeup Organizer Pouch Travel Cosmetic Storage Bag for Wo
 Meta Description: Buy Beauty Bag Makeup Organizer Pouch Travel Cosmetic Storage Bag for Women online in Pakistan from ASM VEO. Stylish beauty bag for makeup and essentials. Light
 Description: Stylish beauty bag for makeup and essentials. Lightweight, spacious, and perfect for travel and daily use.
-Regular Price: 4095
-Sale Price: 4095
+Wholesale Price: 4095
+Regular Price: 6880
+Sale Price: 5504
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

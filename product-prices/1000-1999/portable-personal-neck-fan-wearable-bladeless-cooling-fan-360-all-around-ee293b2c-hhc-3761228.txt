@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Personal Neck Fan – Wearable Bladeless Cooling Fan, 360° All-Around Airflow, 3-Speed Adjustment USB Rechargeable for Outdoor & Indoor Use
 Product ID: hhc-3761228
 SKU: hhc-3761228
@@ -7,11 +8,16 @@ Slug: portable-personal-neck-fan-wearable-bladeless-cooling-fan-360-all-aroun-ee
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/96f363d5976f007079ee1eae2263c3cf.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/96f363d5976f007079ee1eae2263c3cf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/ff37eb65c1f887d5ac97fb7d06882ada.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/216252309ec38029d1964b45732728cd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/8218053cf1359c82f2f9fa243e80bd58.jpeg
 Meta Title: Portable Personal Neck Fan – Wearable Bladeless Cooling Fan, 360° Al
 Meta Description: Buy Portable Personal Neck Fan – Wearable Bladeless Cooling Fan, 360° All-Around Airflow, 3-Speed Adjustment USB Rechargeable for Outdoor & Indoor Use online in
 Description: Stay refreshed anywhere with the Portable Wearable Bladeless Neck Fan. Featuring a stylish,
-Regular Price: 938
-Sale Price: 938
+Wholesale Price: 888
+Regular Price: 1680
+Sale Price: 1348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

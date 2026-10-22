@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ice Genie Silicone Ice Cube Maker Bucket with Airtight Lid
 Product ID: hhc-3764233
 SKU: hhc-3764233
@@ -7,11 +8,16 @@ Slug: ice-genie-silicone-ice-cube-maker-bucket-with-airtight-lid-hhc-3764233
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/df1c5ddc11e954885af97d2da2a0de8a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/df1c5ddc11e954885af97d2da2a0de8a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/bf922141f4c17073c9600d1716b56644.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/41d4528b3fe1fcb37b92526c5ac42ef3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/8b590529c1d3f249f1e65d9754d312a7.jpg
 Meta Title: Ice Genie Silicone Ice Cube Maker Bucket with Airtight Lid | Buy Onl
 Meta Description: Buy Ice Genie Silicone Ice Cube Maker Bucket with Airtight Lid online in Pakistan from ASM VEO. A space-saving silicone ice cube maker featuring a unique double
 Description: A space-saving silicone ice cube maker featuring a unique double-chamber design. Freezes ice cubes in the outer ring while storing them in the inner bucket. Comes with an airtight lid for fresh, odor-free ice.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Miki Mouse Shape Wooden Wall Art – Cute Animal Design Decorative Wooden Piece For Home, Kids Room, Or Office Wall Decor (5 Inches)
 Product ID: hhc-3753052
 SKU: hhc-3753052
@@ -7,11 +8,16 @@ Slug: miki-mouse-shape-wooden-wall-art-cute-animal-design-decorative-wooden-p-2a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/f124b006cd5a0559e453962447b8ddb0.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/f124b006cd5a0559e453962447b8ddb0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/b617b5111b1126786a0891569f2ea077.jpeg
 Meta Title: Miki Mouse Shape Wooden Wall Art – Cute Animal Design Decorative Woo
 Meta Description: Buy Miki Mouse Shape Wooden Wall Art – Cute Animal Design Decorative Wooden Piece For Home, Kids Room, Or Office Wall Decor (5 Inches) online in Pakistan from A
 Description: Adorable Mouse Shape Wooden Wall Art Crafted From Premium Wood, Perfect For Adding A Fun And Artistic Touch To Any Space.
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

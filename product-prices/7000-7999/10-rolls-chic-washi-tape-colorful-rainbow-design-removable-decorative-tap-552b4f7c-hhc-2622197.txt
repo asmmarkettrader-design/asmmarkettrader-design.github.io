@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 Rolls Chic Washi Tape Colorful Rainbow Design Removable Decorative Tape for DIY Stationery Wrapping Photo Album (Random Color)
 Product ID: hhc-2622197
 SKU: hhc-2622197
@@ -7,11 +8,16 @@ Slug: 10-rolls-chic-washi-tape-colorful-rainbow-design-removable-decorative-t-55
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-21-at-9.21.42-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-21-at-9.21.42-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-21-at-9.21.42-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-21-at-9.21.41-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-21-at-9.21.41-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-21-at-9.21.40-PM.jpeg
 Meta Title: 10 Rolls Chic Washi Tape Colorful Rainbow Design Removable Decorativ
 Meta Description: Buy 10 Rolls Chic Washi Tape Colorful Rainbow Design Removable Decorative Tape for DIY Stationery Wrapping Photo Album (Random Color) online in Pakistan from AS
 Description: Product Description Rainbow tape - washi tape allows you to decorate anything you want, example , greeting cards, walls, appliances, mobile phone cases, etc. Washi tape set will not damage walls or furniture; you can easily remove and paste again without leaving any files. No need to worry if you get to them. Wrapping Washi Tape-can be used to border computer monitors, walls, frames, books, keyboards, crafts, wrapping pens and pencils and highlight those important dates in your schedule. Kraft tape - If you have one with our multi-coloured line tape, don't hesitate. we will offer you a satisfactory solution, and we will reply you 24 . Home Decor-Great design, looks comfortable, cute. Color: Assorted color Size: 3.5*0.7cm
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

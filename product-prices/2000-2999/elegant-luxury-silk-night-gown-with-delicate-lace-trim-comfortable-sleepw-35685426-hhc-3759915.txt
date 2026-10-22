@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Elegant Luxury Silk Night Gown with Delicate Lace Trim - Comfortable Sleepwear for Women Free Size -  Sku : R-016
 Product ID: hhc-3759915
 SKU: hhc-3759915
@@ -7,11 +8,16 @@ Slug: elegant-luxury-silk-night-gown-with-delicate-lace-trim-comfortable-slee-35
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/af980d84276cc9be0154eae41299929a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/af980d84276cc9be0154eae41299929a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/2e8b63d04507bcde0e155d417e7761ae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/45f3a653870535b97abc747c8779c5d7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/04e3beca1500c24e39c15f9d78a3475f.jpeg
 Meta Title: Elegant Luxury Silk Night Gown with Delicate Lace Trim - Comfortable
 Meta Description: Buy Elegant Luxury Silk Night Gown with Delicate Lace Trim - Comfortable Sleepwear for Women Free Size - Sku : R-016 online in Pakistan from ASM VEO. Indulge in
 Description: Indulge in comfort with this Luxury Silk Night Gown, featuring sophisticated lace trim on the sleeves and hem. Crafted from high-quality silk fabric, this elegant robe offers a soft, smooth feel against the skin, making it perfect for relaxing at home or a peaceful night's sleep.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

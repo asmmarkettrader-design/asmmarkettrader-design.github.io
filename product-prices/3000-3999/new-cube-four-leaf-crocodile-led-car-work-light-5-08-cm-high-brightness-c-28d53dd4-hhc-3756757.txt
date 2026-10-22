@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Cube Four-Leaf Crocodile LED Car Work Light – 5.08 cm High Brightness Combination Beam, 12–24V Hardwired, Adjustable Bracket for ATV, SUV, UTV, Off-Road Truck and Boat
 Product ID: hhc-3756757
 SKU: hhc-3756757
@@ -7,11 +8,16 @@ Slug: new-cube-four-leaf-crocodile-led-car-work-light-5-08-cm-high-brightness-28
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/16c939b680a3da1cb6894aab0363e84f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/16c939b680a3da1cb6894aab0363e84f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/41e8be1d8a3b0b65f89948234f5856fc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/01644b7409c1665d53b70468a283fdfc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/cbc02c5e98f86698e68c9b1fa8f1c188.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/b9b4bcc05e2464515dc8559b9c5d8f7e.jpeg
 Meta Title: New Cube Four-Leaf Crocodile LED Car Work Light – 5.08 cm High Brigh
 Meta Description: Buy New Cube Four-Leaf Crocodile LED Car Work Light – 5.08 cm High Brightness Combination Beam, 12–24V Hardwired, Adjustable Bracket for ATV, SUV, UTV, Off-Road
 Description: Compact yet powerful 5.08 cm cube LED work light featuring a four-leaf crocodile lens design and combination beam pattern for enhanced visibility. Designed for 12–24V systems, this durable hardwired light is ideal for ATVs, SUVs, UTVs, off-road trucks, and boats.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

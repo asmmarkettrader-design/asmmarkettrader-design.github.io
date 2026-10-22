@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Moroccan Beauty Soap Handmade Natural Brightening & Deep Cleansing Soap for Face & Body | Nourishing Daily Skincare for All Skin Types
 Product ID: hhc-3762626
 SKU: hhc-3762626
@@ -7,11 +8,16 @@ Slug: moroccan-beauty-soap-handmade-natural-brightening-deep-cleansing-soap-f-94
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/b9fc0ab21fe2f82b6dc90cb163e697ae.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/b9fc0ab21fe2f82b6dc90cb163e697ae.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/90c73c93a3c8f09b90fa3f1c3713ae07.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/8a6fc3ed4301a4d35b33a6804bfdbe44.webp
 Meta Title: Moroccan Beauty Soap Handmade Natural Brightening & Deep Cleansing S
 Meta Description: Buy Moroccan Beauty Soap Handmade Natural Brightening & Deep Cleansing Soap for Face & Body | Nourishing Daily Skincare for All Skin Types online in Pakistan fr
 Description: Reveal naturally radiant skin with Moroccan Beauty Soap. Inspired by traditional Moroccan skincare, this handmade bar gently cleanses, nourishes, and helps improve your skin's natural glow while leaving it feeling soft, fresh, and hydrated. Suitable for daily use on all skin types.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

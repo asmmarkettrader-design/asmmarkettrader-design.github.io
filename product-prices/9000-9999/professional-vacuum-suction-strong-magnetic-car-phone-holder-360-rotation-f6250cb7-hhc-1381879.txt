@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Vacuum Suction Strong Magnetic Car Phone Holder 360° Rotation For All Phone Mobile Holder
 Product ID: hhc-1381879
 SKU: hhc-1381879
@@ -7,11 +8,16 @@ Slug: professional-vacuum-suction-strong-magnetic-car-phone-holder-360-rotati-f6
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/74d39874bbb4335363d3ea987df57296.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/74d39874bbb4335363d3ea987df57296.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/ed0f5a977d38679f9fc3be75148fac31.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/d98aa7031b05c3d1f818ee1ee24d1eb6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/ac42846f8650eef6f45da4ba95c6deb5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/63a1539937dec8e6314e8be835f6c65c.png
 Meta Title: Professional Vacuum Suction Strong Magnetic Car Phone Holder 360° Ro
 Meta Description: Buy Professional Vacuum Suction Strong Magnetic Car Phone Holder 360° Rotation For All Phone Mobile Holder online in Pakistan from ASM VEO. Professional Vacuum
 Description: Professional Vacuum Suction Strong Magnetic Car Phone Holder 360° Rotation For All Phone Mobile Holder
-Regular Price: 1349
-Sale Price: 1349
+Wholesale Price: 1299
+Regular Price: 2380
+Sale Price: 1905
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

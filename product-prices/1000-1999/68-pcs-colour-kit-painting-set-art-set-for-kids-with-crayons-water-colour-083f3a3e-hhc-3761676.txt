@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 68 Pcs Colour Kit Painting Set Art Set For Kids With Crayons Water Colour Pens Oil Pastels And Art Accessories (Random Characters)
 Product ID: hhc-3761676
 SKU: hhc-3761676
@@ -7,11 +8,16 @@ Slug: 68-pcs-colour-kit-painting-set-art-set-for-kids-with-crayons-water-colo-08
 Category: Books & Stationery
 Subcategory: Art & Craft Materials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/88f5d4fb8ccec1b25c3b320ffa5e3934.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/88f5d4fb8ccec1b25c3b320ffa5e3934.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/2dd7ee49b8b20523eee8b7bb5769cb76.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/d9e044d0cd23787f102317c0fdfc2605.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/2dbb36ba5b3793fb5a4e449c700187c1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/36eca1cc32fc757e14c80c21019d1587.jpeg
 Meta Title: 68 Pcs Colour Kit Painting Set Art Set For Kids With Crayons Water C
 Meta Description: Buy 68 Pcs Colour Kit Painting Set Art Set For Kids With Crayons Water Colour Pens Oil Pastels And Art Accessories (Random Characters) online in Pakistan from A
 Description: 68 Pcs Colour Kit For Kids Includes Crayons, Water Colour Pens, Oil Pastels, Powder Cakes, Sketch Papers, And Essential Art Accessories For Coloring And School Projects.
-Regular Price: 1246
-Sale Price: 1246
+Wholesale Price: 1196
+Regular Price: 2200
+Sale Price: 1758
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3d wall clock Wooden Wall Clock I Wall clocks for bedroom I Quartz Watch DIY Design
 Product ID: hhc-2116071
 SKU: hhc-2116071
@@ -7,11 +8,16 @@ Slug: 3d-wall-clock-wooden-wall-clock-i-wall-clocks-for-bedroom-i-quartz-watc-09
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-6.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-6.webp
 Meta Title: 3d wall clock Wooden Wall Clock I Wall clocks for bedroom I Quartz W
 Meta Description: Buy 3d wall clock Wooden Wall Clock I Wall clocks for bedroom I Quartz Watch DIY Design online in Pakistan from ASM VEO. The New Premium Wooden Wall Clock Light
 Description: The New Premium Wooden Wall Clock Light Big Size I Wall Clock Wooden Wall Clock I Wall clocks for bedroom I Quartz Watch DIY Design Decoration Piece for Home Decor I Offices and for Gift items Metrial wood Size 20 inch Thickness 3mm lasani wood
-Regular Price: 573
-Sale Price: 573
+Wholesale Price: 523
+Regular Price: 1020
+Sale Price: 818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

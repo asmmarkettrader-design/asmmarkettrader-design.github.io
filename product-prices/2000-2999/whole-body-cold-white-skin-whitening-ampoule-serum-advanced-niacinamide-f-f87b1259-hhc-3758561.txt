@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Whole Body Cold White Skin Whitening Ampoule Serum – Advanced Niacinamide Formula - 120gm
 Product ID: hhc-3758561
 SKU: hhc-3758561
@@ -7,11 +8,16 @@ Slug: whole-body-cold-white-skin-whitening-ampoule-serum-advanced-niacinamide-f8
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/eaebd235af4633075c0026324e04ecc2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/eaebd235af4633075c0026324e04ecc2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/2d7d4bb51fba1fdac66cb4588b02e944.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/45cf9801141d846108954d5990b248ff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/60c26d3981a7550f81504cf123f5e53e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/19a95cfaa25b5b298a51b82c54f4ddb2.jpeg
 Meta Title: Whole Body Cold White Skin Whitening Ampoule Serum – Advanced Niacin
 Meta Description: Buy Whole Body Cold White Skin Whitening Ampoule Serum – Advanced Niacinamide Formula - 120gm online in Pakistan from ASM VEO. Achieve a radiant, even-toned com
 Description: Achieve a radiant, even-toned complexion with the Whole Body Cold White Skin Whitening Ampoule Serum. Infused with high-potency Niacinamide and advanced pigment-breakdown technology, this 120gm serum is designed to brighten and smooth your skin from head to toe.
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fast Car Charger High Speed Charging Accessory For Reliable Power Supply In Vehicle
 Product ID: hhc-3755397
 SKU: hhc-3755397
@@ -7,11 +8,16 @@ Slug: fast-car-charger-high-speed-charging-accessory-for-reliable-power-suppl-39
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/cf4c4616cb18873438e4124f73852ea0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/cf4c4616cb18873438e4124f73852ea0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/b711ce7918f4fc212b0cde313e0d4819.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/e072c502c07a7e74062fe57d2b3a3ff7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/3acd026203f794a24ddddd1f5911f623.jpeg
 Meta Title: Fast Car Charger High Speed Charging Accessory For Reliable Power Su
 Meta Description: Buy Fast Car Charger High Speed Charging Accessory For Reliable Power Supply In Vehicle online in Pakistan from ASM VEO. Fast Car Charger Provides Quick And Sta
 Description: Fast Car Charger Provides Quick And Stable Charging For Devices While Driving
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

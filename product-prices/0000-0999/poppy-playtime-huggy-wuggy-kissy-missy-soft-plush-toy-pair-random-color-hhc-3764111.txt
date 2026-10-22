@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Poppy Playtime Huggy Wuggy & Kissy Missy Soft Plush Toy Pair - Random Color
 Product ID: hhc-3764111
 SKU: hhc-3764111
@@ -7,11 +8,16 @@ Slug: poppy-playtime-huggy-wuggy-kissy-missy-soft-plush-toy-pair-random-color-hh
 Category: Kids Accessories
 Subcategory: Toys & Stuff
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/60084cb032d67c7401fd7df10a8ed044.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/60084cb032d67c7401fd7df10a8ed044.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/58d9f573336312ef5482d01837a6f551.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/b207087dc629064cc2c27445a4a97b0d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/aa7cd0bfa072885be046944e0a3cb534.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/baad1aa552f69a0bb1c7cddfd5147272.png
 Meta Title: Poppy Playtime Huggy Wuggy & Kissy Missy Soft Plush Toy Pair - Rando
 Meta Description: Buy Poppy Playtime Huggy Wuggy & Kissy Missy Soft Plush Toy Pair - Random Color online in Pakistan from ASM VEO. A pair of ultra-soft Huggy Wuggy and Kissy Miss
 Description: A pair of ultra-soft Huggy Wuggy and Kissy Missy plush stuffed toys. Crafted with high-quality plush fabric, vibrant blue and pink colors, and flexible limbs for play, room decor, and gaming fan collection.
-Regular Price: 1273
-Sale Price: 1273
+Wholesale Price: 1223
+Regular Price: 2250
+Sale Price: 1797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rout Renew Revitalizing And Hair Growth Serum Nourishes - 50mlScalp Strengthens Roots Promotes Growth Smooth Texture Provides Healthy And Shiny Hair -
 Product ID: hhc-3753800
 SKU: hhc-3753800
@@ -7,11 +8,16 @@ Slug: rout-renew-revitalizing-and-hair-growth-serum-nourishes-50mlscalp-stren-2d
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
-Meta Title: Rout Renew Revitalizing And Hair Growth Serum Nourishes - 50mlScalp
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/513d9ed043b3610b92f1bec924494ec5.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/513d9ed043b3610b92f1bec924494ec5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/902de989a71ecf851e43eb7d887046c4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/34219e16234e429b2eb25f357fc9320c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/d8523c322d56e5695d887966a60f06c9.jpeg
+Meta Title: Rout Renew Revitalizing And Hair Growth Serum Nourishes - 50mlScalp 
 Meta Description: Buy Rout Renew Revitalizing And Hair Growth Serum Nourishes - 50mlScalp Strengthens Roots Promotes Growth Smooth Texture Provides Healthy And Shiny Hair - onlin
 Description: Rout Renew Revitalizing And Hair Growth Serum Provides Nourishment Strengthens Roots Promotes Growth And Smooth Texture
-Regular Price: 1541
-Sale Price: 1541
+Wholesale Price: 1491
+Regular Price: 2720
+Sale Price: 2177
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

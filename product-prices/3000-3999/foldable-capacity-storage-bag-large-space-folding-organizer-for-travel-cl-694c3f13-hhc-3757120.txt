@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foldable Capacity Storage Bag – Large Space Folding Organizer for Travel, Clothes & Home Use
 Product ID: hhc-3757120
 SKU: hhc-3757120
@@ -7,11 +8,16 @@ Slug: foldable-capacity-storage-bag-large-space-folding-organizer-for-travel-694
 Category: Beauty & Personal Care
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/987ecd74fe77121c48f563512de96d50.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/987ecd74fe77121c48f563512de96d50.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/a5d66b8f82a129142c5be15f2150206c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/3bd9f622637a7f6fdae7b70f223225be.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/27f5ef06da019aa978c591f72d091125.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/2bfb121d25fd7900007a24cf8ae918b8.jpeg
 Meta Title: Foldable Capacity Storage Bag – Large Space Folding Organizer for Tr
 Meta Description: Buy Foldable Capacity Storage Bag – Large Space Folding Organizer for Travel, Clothes & Home Use online in Pakistan from ASM VEO. Ideal for everyday use, the Fo
 Description: Ideal for everyday use, the Foldable Storage Bag combines convenience, durability, and functionality, making it a must-have for every home.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

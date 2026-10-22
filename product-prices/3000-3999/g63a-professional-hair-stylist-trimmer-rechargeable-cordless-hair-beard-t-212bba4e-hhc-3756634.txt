@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: G63A Professional Hair Stylist Trimmer – Rechargeable Cordless Hair & Beard Trimmer with Charging Base and Guide Combs
 Product ID: hhc-3756634
 SKU: hhc-3756634
@@ -7,11 +8,16 @@ Slug: g63a-professional-hair-stylist-trimmer-rechargeable-cordless-hair-beard-21
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: G63A Professional Hair Stylist Trimmer – Rechargeable Cordless Hair
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/66195aae1c0fe298543ba3d1dd803a40.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/66195aae1c0fe298543ba3d1dd803a40.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/da2be1a15cf40a31f45a38c2596d6e4e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/2f3aa48a5e9bf0a18ee060764127b545.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/97c10d4d58a6af781bfc84714fb2510e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/27/a0fcaa31924d314abf2bf28b1e13f1a2.png
+Meta Title: G63A Professional Hair Stylist Trimmer – Rechargeable Cordless Hair 
 Meta Description: Buy G63A Professional Hair Stylist Trimmer – Rechargeable Cordless Hair & Beard Trimmer with Charging Base and Guide Combs online in Pakistan from ASM VEO. G63A
 Description: G63A Professional Hair Stylist Trimmer is a powerful and stylish cordless grooming tool designed for precise hair and beard trimming. Featuring multiple guide combs, fast charging base, and easy-to-clean design, it is perfect for home and professional use.
-Regular Price: 2796
-Sale Price: 2796
+Wholesale Price: 2796
+Regular Price: 4940
+Sale Price: 3955
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

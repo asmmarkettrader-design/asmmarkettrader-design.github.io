@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shanu Foods Hello Buddy Surprise Heart Candies | 100pcs Box | Sweet Treats for Kids & Parties
 Product ID: hhc-3755232
 SKU: hhc-3755232
@@ -7,11 +8,16 @@ Slug: shanu-foods-hello-buddy-surprise-heart-candies-100pcs-box-sweet-treats-841
 Category: Events & Gifting
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/d4f69d41eb1723b44326b0eb3904d284.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/d4f69d41eb1723b44326b0eb3904d284.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/11b46682e95d01766c50c043ac1ec479.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/61da3050633efdbd7d6e5da771e7cd09.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/cd2e74e4c703e9d7980296ea734db6d5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/1f9c6ee7f996b22a51462e6a65bb3931.jpeg
 Meta Title: Shanu Foods Hello Buddy Surprise Heart Candies | 100pcs Box | Sweet
 Meta Description: Buy Shanu Foods Hello Buddy Surprise Heart Candies | 100pcs Box | Sweet Treats for Kids & Parties online in Pakistan from ASM VEO. Shanu Foods “Hello Buddy” sur
 Description: Shanu Foods “Hello Buddy” surprise heart candies. 100pcs in one box. Fun, tasty treats perfect for kids, parties, and gifting.
-Regular Price: 2163
-Sale Price: 2163
+Wholesale Price: 2163
+Regular Price: 3880
+Sale Price: 3100
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

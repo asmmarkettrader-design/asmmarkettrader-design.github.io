@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: set of 4 Motivational sticky canvas frames for wall decore / sticky phototiles for office and home workplace
 Product ID: hhc-3251778
 SKU: hhc-3251778
@@ -7,11 +8,16 @@ Slug: set-of-4-motivational-sticky-canvas-frames-for-wall-decore-sticky-photo-37
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: set of 4 Motivational sticky canvas frames for wall decore / sticky
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/8bbcee9c32fa62dd58b3ec8537d78a44.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/8bbcee9c32fa62dd58b3ec8537d78a44.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/19c2e339c8857be82979669ba25c0f33-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/e7f910fabbd7a13e8f534774148eae81-1.jpg
+Meta Title: set of 4 Motivational sticky canvas frames for wall decore / sticky 
 Meta Description: Buy set of 4 Motivational sticky canvas frames for wall decore / sticky phototiles for office and home workplace online in Pakistan from ASM VEO. No of Frames:
 Description: No of Frames: 4 Size 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Beautiful designs which will give your enterior a spiritual vibe.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

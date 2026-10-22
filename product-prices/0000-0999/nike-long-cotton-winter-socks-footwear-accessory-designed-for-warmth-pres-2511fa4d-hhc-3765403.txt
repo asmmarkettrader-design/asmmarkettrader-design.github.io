@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nike Long Cotton Winter Socks - Footwear Accessory Designed For Warmth Preservation And Daily Winter Routine - Mix Colours (Pack of 3 Pairs)
 Product ID: hhc-3765403
 SKU: hhc-3765403
@@ -7,11 +8,16 @@ Slug: nike-long-cotton-winter-socks-footwear-accessory-designed-for-warmth-pr-25
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/0ea391d7ece5b4b7281d9c0f0ca206aa.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/0ea391d7ece5b4b7281d9c0f0ca206aa.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/ff8cd3980ef8ca2745df49a89a324e3b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/13/22a3c1a3e58fc947c92621aa35bc2b58.jfif
 Meta Title: Nike Long Cotton Winter Socks - Footwear Accessory Designed For Warm
 Meta Description: Buy Nike Long Cotton Winter Socks - Footwear Accessory Designed For Warmth Preservation And Daily Winter Routine - Mix Colours (Pack of 3 Pairs) online in Pakis
 Description: This Nike Long Cotton Winter Socks Provides A Reliable Solution For Footwear Accessories And Routine Warmth Preservation Needs. Formulated To Deliver Winter Benefits While Supporting Nike Long Cotton Winter Socks Utility, It Fits Seamlessly Into Your Regular Warmth Preservation Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Warmth Preservation Requirements, This Nike Long Cotton Winter Socks Serves As An Essential Footwear Accessory For Daily Life.Key FeaturesNike Long Cotton Winter Socks Formulated For Footwear AccessoriesDelivers Warmth Preservation And Supports Daily Winter UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Warmth Preservation And Winter RoutinesDesigned For Easy Operation And Convenient UseEssential Footwear Accessory For Everyday Maintenance
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

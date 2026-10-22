@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Stainless Steel Straw Reusable Durable Rust Resistant Eco Friendly Drinking Straw For Daily Hydration | Random Color
 Product ID: hhc-3761000
 SKU: hhc-3761000
@@ -7,11 +8,16 @@ Slug: premium-stainless-steel-straw-reusable-durable-rust-resistant-eco-frien-58
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/c0a0ebe22270af229d7f85a94b8b4af9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/c0a0ebe22270af229d7f85a94b8b4af9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/7c7e9cc303c7b916647207e881cc2246.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/0c9b12902a6cb5b33d138ae60ee0e648.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/23/02567adb6bcbc6f880ca932521663166.jpeg
 Meta Title: Premium Stainless Steel Straw Reusable Durable Rust Resistant Eco Fr
 Meta Description: Buy Premium Stainless Steel Straw Reusable Durable Rust Resistant Eco Friendly Drinking Straw For Daily Hydration | Random Color online in Pakistan from ASM VEO
 Description: Premium Stainless Steel Straw Reusable Durable Rust Resistant Eco Friendly Design For Safe And Sustainable Use.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

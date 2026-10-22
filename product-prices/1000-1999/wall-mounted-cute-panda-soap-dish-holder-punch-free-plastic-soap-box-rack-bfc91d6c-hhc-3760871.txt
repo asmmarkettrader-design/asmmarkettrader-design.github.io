@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wall Mounted Cute Panda Soap Dish Holder  – Punch-Free Plastic Soap Box Rack for Bathroom & Kitchen Storage (Random color)
 Product ID: hhc-3760871
 SKU: hhc-3760871
@@ -7,11 +8,16 @@ Slug: wall-mounted-cute-panda-soap-dish-holder-punch-free-plastic-soap-box-ra-bf
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/9e6eddb1f25f13fb8fe4811e567c1437.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/9e6eddb1f25f13fb8fe4811e567c1437.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/a68405f3dfcc225764f9a0f07456f253.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/8b0c9f33fdcd9b91c381220559f8d972.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/908051d30f9b0b8410f734c1f519d7e7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/470cf224ddb87194fcdc0f6c9234f200.jpeg
 Meta Title: Wall Mounted Cute Panda Soap Dish Holder – Punch-Free Plastic Soap B
 Meta Description: Buy Wall Mounted Cute Panda Soap Dish Holder – Punch-Free Plastic Soap Box Rack for Bathroom & Kitchen Storage (Random color) online in Pakistan from ASM VEO. C
 Description: Cute panda wall-mounted soap dish holder and drainage system. Punch-free installation, perfect for bathroom and kitchen use.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

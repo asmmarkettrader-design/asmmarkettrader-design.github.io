@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: E27 Infrared PIR Motion Sensor Light Bulb Socket Adapter
 Product ID: hhc-3764155
 SKU: hhc-3764155
@@ -7,11 +8,16 @@ Slug: e27-infrared-pir-motion-sensor-light-bulb-socket-adapter-hhc-3764155
 Category: Cameras & Photography
 Subcategory: Lighting & Studio Equipment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/20ef8597cb2797ff59d929f91a0f635c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/20ef8597cb2797ff59d929f91a0f635c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/5103c2afbd9f74841c2a94cd8db53934.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/8400f1c55758ae6a503754cef6215162.jpeg
 Meta Title: E27 Infrared PIR Motion Sensor Light Bulb Socket Adapter | Buy Onlin
 Meta Description: Buy E27 Infrared PIR Motion Sensor Light Bulb Socket Adapter online in Pakistan from ASM VEO. An E27 motion sensor lamp holder adapter featuring 360-degree PIR
 Description: An E27 motion sensor lamp holder adapter featuring 360-degree PIR motion detection. Screw-in design automatically turns connected E27 light bulbs on upon detecting movement and off after a set delay for energy efficiency.
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

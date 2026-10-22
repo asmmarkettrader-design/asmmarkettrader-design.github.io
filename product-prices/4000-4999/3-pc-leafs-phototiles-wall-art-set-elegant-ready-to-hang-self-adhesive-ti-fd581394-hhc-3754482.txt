@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pc Leafs Phototiles Wall Art Set Elegant Ready To Hang Self Adhesive Tiles Premium Quality For Home And Office Decor
 Product ID: hhc-3754482
 SKU: hhc-3754482
@@ -7,11 +8,16 @@ Slug: 3-pc-leafs-phototiles-wall-art-set-elegant-ready-to-hang-self-adhesive-fd5
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/6ce43e667f90b134c05c7d83e30026c5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/6ce43e667f90b134c05c7d83e30026c5.jpeg
 Meta Title: 3 Pc Leafs Phototiles Wall Art Set Elegant Ready To Hang Self Adhesi
 Meta Description: Buy 3 Pc Leafs Phototiles Wall Art Set Elegant Ready To Hang Self Adhesive Tiles Premium Quality For Home And Office Decor online in Pakistan from ASM VEO. 3 Pc
 Description: 3 Pc Leafs Phototiles Wall Art Set Provides Elegant Ready To Hang Self Adhesive Tiles Premium Quality Smooth Finish Durable Construction And Reliable Utility
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

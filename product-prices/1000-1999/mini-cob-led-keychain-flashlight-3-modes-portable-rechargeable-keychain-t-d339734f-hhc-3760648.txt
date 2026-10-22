@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini COB LED Keychain Flashlight 3 Modes | Portable Rechargeable Keychain Torch | Emergency Pocket Light (Random Color)
 Product ID: hhc-3760648
 SKU: hhc-3760648
@@ -7,11 +8,16 @@ Slug: mini-cob-led-keychain-flashlight-3-modes-portable-rechargeable-keychain-d3
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/66e984d53f96f98643994989b06f01fd.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/66e984d53f96f98643994989b06f01fd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/aebc6d90125c5a4fd059317c5eb558b5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/416844e52261242e4bd9f5c3dbe4f48f.jpeg
 Meta Title: Mini COB LED Keychain Flashlight 3 Modes | Portable Rechargeable Key
 Meta Description: Buy Mini COB LED Keychain Flashlight 3 Modes | Portable Rechargeable Keychain Torch | Emergency Pocket Light (Random Color) online in Pakistan from ASM VEO. Com
 Description: Compact and powerful Mini COB LED Keychain Flashlight featuring 3 lighting modes, lightweight design, and easy keychain attachment. Perfect for daily use, emergencies, camping, travel, and outdoor activities.
-Regular Price: 340
-Sale Price: 340
+Wholesale Price: 290
+Regular Price: 645
+Sale Price: 495
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

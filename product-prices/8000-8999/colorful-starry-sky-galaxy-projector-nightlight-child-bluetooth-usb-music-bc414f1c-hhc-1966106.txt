@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Colorful Starry Sky Galaxy Projector Nightlight Child Bluetooth USB Music Player Star Night Light Romantic Projection Lamp Gifts(with remote )
 Product ID: hhc-1966106
 SKU: hhc-1966106
@@ -7,11 +8,16 @@ Slug: colorful-starry-sky-galaxy-projector-nightlight-child-bluetooth-usb-mus-bc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Colorful Starry Sky Galaxy Projector Nightlight Child Bluetooth USB
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/10/31740bf5-31ea-4a14-b65d-e3ea915da4fa.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/10/31740bf5-31ea-4a14-b65d-e3ea915da4fa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/3-13.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/2-14.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/1-12.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/9-2.jpg
+Meta Title: Colorful Starry Sky Galaxy Projector Nightlight Child Bluetooth USB 
 Meta Description: Buy Colorful Starry Sky Galaxy Projector Nightlight Child Bluetooth USB Music Player Star Night Light Romantic Projection Lamp Gifts(with remote ) online in Pak
 Description: Colorful Starry Sky Galaxy Projector Nightlight Child Bluetooth USB Music Player Star Night Light Romantic Projection Lamp Gifts(with remote )
-Regular Price: 2516
-Sale Price: 2516
+Wholesale Price: 2516
+Regular Price: 4470
+Sale Price: 3577
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

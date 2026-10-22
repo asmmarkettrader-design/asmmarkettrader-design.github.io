@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Elegant Korean Gold Foil Earrings with White Stone (PXT-115)
 Product ID: hhc-3752529
 SKU: hhc-3752529
@@ -7,11 +8,16 @@ Slug: elegant-korean-gold-foil-earrings-with-white-stone-pxt-115-hhc-3752529
 Category: Fashion
 Subcategory: Jewelry
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/6a66e075afc9b88ce7384dd544497651.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/6a66e075afc9b88ce7384dd544497651.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/9d846102b7321f09eb09a4a58bc389d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/caa09c096b9ade11adc65f2401b20aca.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/200148fe3a71a62f7559c2fa1ca4e1c5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/ea0f43f8c2a8f983ac5e0e13bfb07ff5.jpeg
 Meta Title: Elegant Korean Gold Foil Earrings with White Stone (PXT-115) | Buy O
 Meta Description: Buy Elegant Korean Gold Foil Earrings with White Stone (PXT-115) online in Pakistan from ASM VEO. Add a touch of elegance with these Korean-style gold foil earr
 Description: Add a touch of elegance with these Korean-style gold foil earrings featuring a sculpted white stone center. Available in silver and golden finishes, their unique textured design brings timeless charm to any look.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

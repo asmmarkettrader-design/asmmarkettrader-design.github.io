@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DANDRIGONE Anti Dandruff Shampoo Advanced Scalp Therapy With Clinical Actives
 Product ID: hhc-3759988
 SKU: hhc-3759988
@@ -7,11 +8,16 @@ Slug: dandrigone-anti-dandruff-shampoo-advanced-scalp-therapy-with-clinical-acti
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/4f165b7c14f99176c021e3ea99cd9bd5.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/4f165b7c14f99176c021e3ea99cd9bd5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/9c24d411e347ccf5248bf2fb6fac7adc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/b0824ddeab725b7d63fd3a469be8a922.png
 Meta Title: DANDRIGONE Anti Dandruff Shampoo Advanced Scalp Therapy With Clinica
 Meta Description: Buy DANDRIGONE Anti Dandruff Shampoo Advanced Scalp Therapy With Clinical Actives online in Pakistan from ASM VEO. DANDRIGONE Anti Dandruff Shampoo Advanced Sca
 Description: DANDRIGONE Anti Dandruff Shampoo Advanced Scalp Therapy With Clinical Actives For Flake Free Healthy Hair.
-Regular Price: 1414
-Sale Price: 1414
+Wholesale Price: 1364
+Regular Price: 2500
+Sale Price: 1997
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

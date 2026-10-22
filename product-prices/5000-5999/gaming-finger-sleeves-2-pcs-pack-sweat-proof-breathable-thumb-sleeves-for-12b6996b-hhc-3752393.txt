@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gaming Finger Sleeves – 2 Pcs Pack Sweat-Proof Breathable Thumb Sleeves for Mobile Gaming
 Product ID: hhc-3752393
 SKU: hhc-3752393
@@ -7,11 +8,16 @@ Slug: gaming-finger-sleeves-2-pcs-pack-sweat-proof-breathable-thumb-sleeves-f-12
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/8b7c887820879e17364dc9a449183775.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/8b7c887820879e17364dc9a449183775.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/fc7545b253e71c2ed988ee9aabc099e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/4781b99196e119c21916298fe82f5b15.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/23/b676066e6fb425ab2a6614f285b4939f.jpg
 Meta Title: Gaming Finger Sleeves – 2 Pcs Pack Sweat-Proof Breathable Thumb Slee
 Meta Description: Buy Gaming Finger Sleeves – 2 Pcs Pack Sweat-Proof Breathable Thumb Sleeves for Mobile Gaming online in Pakistan from ASM VEO. Enhance your mobile gaming perfor
 Description: Enhance your mobile gaming performance with these high-quality gaming finger sleeves. Sweat-proof, breathable, and responsive touch design ensures smooth control and comfort during long gaming sessions.
-Regular Price: 149
-Sale Price: 149
+Wholesale Price: 99
+Regular Price: 358
+Sale Price: 208
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

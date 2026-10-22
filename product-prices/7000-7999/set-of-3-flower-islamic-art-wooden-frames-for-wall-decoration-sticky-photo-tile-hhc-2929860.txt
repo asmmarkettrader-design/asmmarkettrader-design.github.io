@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: set of 3 Flower Islamic art wooden frames for wall decoration / sticky photo tile
 Product ID: hhc-2929860
 SKU: hhc-2929860
@@ -7,11 +8,16 @@ Slug: set-of-3-flower-islamic-art-wooden-frames-for-wall-decoration-sticky-photo
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/75593916783a124940a6f23d6837a605.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/75593916783a124940a6f23d6837a605.jpeg
 Meta Title: set of 3 Flower Islamic art wooden frames for wall decoration / stic
 Meta Description: Buy set of 3 Flower Islamic art wooden frames for wall decoration / sticky photo tile online in Pakistan from ASM VEO. Size : 8x11inches Wooden Material High Qu
 Description: Size : 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Beautiful islamic calligraphy designs which will give your enterior a spiritual vibe.High quality Finishing
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

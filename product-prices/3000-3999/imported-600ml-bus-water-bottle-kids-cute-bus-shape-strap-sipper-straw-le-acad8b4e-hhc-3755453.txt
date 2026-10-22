@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Imported 600ml Bus Water Bottle | Kids Cute Bus Shape | Strap, Sipper & Straw | Leakproof BPA Free (Random Colour)
 Product ID: hhc-3755453
 SKU: hhc-3755453
@@ -7,11 +8,16 @@ Slug: imported-600ml-bus-water-bottle-kids-cute-bus-shape-strap-sipper-straw-aca
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/fbf84ec4a626f7e6308d2e295404f15b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/fbf84ec4a626f7e6308d2e295404f15b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/376570bbbd60a31b661308f70fe1837a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/ed97b66c3be327c1919d335145ab9ebf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/4d1ae60afff7b1e8bb1d0fcf579ed387.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/939f15fb7dd40643a793ad87f09adca4.jpeg
 Meta Title: Imported 600ml Bus Water Bottle | Kids Cute Bus Shape | Strap, Sippe
 Meta Description: Buy Imported 600ml Bus Water Bottle | Kids Cute Bus Shape | Strap, Sipper & Straw | Leakproof BPA Free (Random Colour) online in Pakistan from ASM VEO. Cute bus
 Description: Cute bus‑shaped 600ml kids water bottle with strap, sipper, straw, and lock. Leakproof & BPA free.
-Regular Price: 1484
-Sale Price: 1484
+Wholesale Price: 1434
+Regular Price: 2620
+Sale Price: 2096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Piece Unstitched Digital Swiss Lawn Shirt For Girls & Women 2.5 Yard Shirt Cutting
 Product ID: hhc-3762385
 SKU: hhc-3762385
@@ -7,11 +8,16 @@ Slug: 1-piece-unstitched-digital-swiss-lawn-shirt-for-girls-women-2-5-yard-sh-3d
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/74a5a092bfa5a7d4bb2c28db62475bae.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/74a5a092bfa5a7d4bb2c28db62475bae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/14669dcc5e307ecf3966fad043be8e33.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/b89050cf0fb77bff9f857372878b0fb6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/fe3ba912638288151be6023855f1c03f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/097844d8a4d81b6278c94ba8fb61b287.jpeg
 Meta Title: 1 Piece Unstitched Digital Swiss Lawn Shirt For Girls & Women 2.5 Ya
 Meta Description: Buy 1 Piece Unstitched Digital Swiss Lawn Shirt For Girls & Women 2.5 Yard Shirt Cutting online in Pakistan from ASM VEO. Unstitched Digital Swiss Lawn Shirt Fo
 Description: Unstitched Digital Swiss Lawn Shirt For Girls & Women. Includes One Shirt Piece With 2.5 Yard Shirt Cutting.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

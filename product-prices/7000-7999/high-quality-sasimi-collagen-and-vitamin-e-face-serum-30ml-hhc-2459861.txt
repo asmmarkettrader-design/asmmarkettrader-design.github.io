@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality SASIMI Collagen And Vitamin E Face Serum - 30ml
 Product ID: hhc-2459861
 SKU: hhc-2459861
@@ -7,11 +8,16 @@ Slug: high-quality-sasimi-collagen-and-vitamin-e-face-serum-30ml-hhc-2459861
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-14-at-11.32.18-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-14-at-11.32.18-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/th-11134207-7qul1-lf2emlabupyl4d.jpeg
 Meta Title: High Quality SASIMI Collagen And Vitamin E Face Serum - 30ml | Buy O
 Meta Description: Buy High Quality SASIMI Collagen And Vitamin E Face Serum - 30ml online in Pakistan from ASM VEO. Product description SASIMI SERUM is light and highly effective
 Description: Product description SASIMI SERUM is light and highly effective. It will help fade sun spots &amp; discoloration, refine skin texture. * Allows skin to look natural * Moisturizing * Makes your skin perfect This is very helpful for those who are a little older. If you use this product, your skin will remain young. No wrinkles. if your skin has shriveled with age or creams have damaged you, come and take this wonder serum Sasimi vitamin c serum contains hyaluronic acid which gives glow and whitening removes spots and marks skin look younger and whiter
-Regular Price: 713
-Sale Price: 713
+Wholesale Price: 663
+Regular Price: 1280
+Sale Price: 1021
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

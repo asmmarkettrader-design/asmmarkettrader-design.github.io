@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Safwa Organics Vitamin C Soap | Organic Handmade Glow Bar Soap | Best Quality Soap
 Product ID: hhc-3072757
 SKU: hhc-3072757
@@ -7,11 +8,16 @@ Slug: safwa-organics-vitamin-c-soap-organic-handmade-glow-bar-soap-best-quality-
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/Untitled-Project-2-4.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/Untitled-Project-2-4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-22-at-8.04.07-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-22-at-8.04.07-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-22-at-8.04.06-AM.jpeg
 Meta Title: Safwa Organics Vitamin C Soap | Organic Handmade Glow Bar Soap | Bes
 Meta Description: Buy Safwa Organics Vitamin C Soap | Organic Handmade Glow Bar Soap | Best Quality Soap online in Pakistan from ASM VEO. Safwa Organics Vitamin C Soap | Organic
 Description: Safwa Organics Vitamin C Soap | Organic Handmade Glow Bar Soap | Best Quality Soap Discover the power of Vitamin C with Safwa Organic. This luxurious soap is enriched with natural brightening agents and antioxidants that promote an even skin tone, reduce dark spon, and enhance your natural glow Pun Promotes skin brightness and rechiles dark spots nourishes Deeply hydrates and Lacks is moisture for a smooth Gearly cleanses without stripping Wet your hunds or bedy, lather the soup, and rinse thoroughly Suitable for all skin types 100% Organic Ingredients from Parabens and Sulfates Gentle on Sensitive Ske Quality: Made In China &nbsp; &nbsp; &nbsp; &nbsp;
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

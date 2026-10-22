@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flamebeater Portable Fire Extinguishers Auto And Home Use Compact Safe And Reliable Design | Random Color
 Product ID: hhc-3760435
 SKU: hhc-3760435
@@ -7,11 +8,16 @@ Slug: flamebeater-portable-fire-extinguishers-auto-and-home-use-compact-safe-235
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/3927b6f3a2d77134dc8a2bea231ab8be.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/3927b6f3a2d77134dc8a2bea231ab8be.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/12411791d88e478129875810cec3cb37.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/cd6ee753d1bca64615b100161a5c211f.jpeg
 Meta Title: Flamebeater Portable Fire Extinguishers Auto And Home Use Compact Sa
 Meta Description: Buy Flamebeater Portable Fire Extinguishers Auto And Home Use Compact Safe And Reliable Design | Random Color online in Pakistan from ASM VEO. Flamebeater Porta
 Description: Flamebeater Portable Fire Extinguishers Specifically Labeled For Auto And Home Use Compact And Reliable Safety Tool.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

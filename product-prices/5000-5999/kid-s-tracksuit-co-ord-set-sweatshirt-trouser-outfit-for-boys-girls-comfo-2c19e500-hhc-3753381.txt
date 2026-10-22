@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kid’s Tracksuit Co-Ord Set | Sweatshirt & Trouser Outfit for Boys & Girls | Comfortable, Stylish & Warm Winter Clothing FOR BABY AND KIDS
 Product ID: hhc-3753381
 SKU: hhc-3753381
@@ -7,11 +8,16 @@ Slug: kid-s-tracksuit-co-ord-set-sweatshirt-trouser-outfit-for-boys-girls-com-2c
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/ca06a0e5b582e02f8e97023788f71919.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/ca06a0e5b582e02f8e97023788f71919.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/54bed10d2ac97e956c0621bcd7a340e5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/018aa2e29f8f6a93faf64307eff7e77c.png
 Meta Title: Kid’s Tracksuit Co-Ord Set | Sweatshirt & Trouser Outfit for Boys &
 Meta Description: Buy Kid’s Tracksuit Co-Ord Set | Sweatshirt & Trouser Outfit for Boys & Girls | Comfortable, Stylish & Warm Winter Clothing FOR BABY AND KIDS online in Pakistan
 Description: Kid’s tracksuit co-ord set with sweatshirt and trousers — soft, cozy, and perfect for casual wear, school, or outdoor play.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

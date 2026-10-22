@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Foldable Desktop Storage Basket | Waterproof Cotton Linen Organizer | Mini Square with Handles (Random Colour And Design)
 Product ID: hhc-3755450
 SKU: hhc-3755450
@@ -7,11 +8,16 @@ Slug: foldable-desktop-storage-basket-waterproof-cotton-linen-organizer-mini-6ce
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/58d6a143c860c4cd2308734a88ecdc6a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/58d6a143c860c4cd2308734a88ecdc6a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/9b88e22f04ef9df5b032de38bb1e1275.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/75cc0f37ecca6f40100b15e80ad6224e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/60407d1a9d317566b5ad21fe0a1927cd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/e29d7333ebb8af901d52013ce545763a.jpg
 Meta Title: Foldable Desktop Storage Basket | Waterproof Cotton Linen Organizer
 Meta Description: Buy Foldable Desktop Storage Basket | Waterproof Cotton Linen Organizer | Mini Square with Handles (Random Colour And Design) online in Pakistan from ASM VEO. C
 Description: Compact foldable storage basket made of cotton linen. Waterproof, mini square design with handles for household use.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

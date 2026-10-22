@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kangaroo Long Bifold Wallet with RFID Protection – Slim Stylish Wallet for Men & Women
 Product ID: hhc-3758533
 SKU: hhc-3758533
@@ -7,11 +8,16 @@ Slug: kangaroo-long-bifold-wallet-with-rfid-protection-slim-stylish-wallet-fo-c1
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/f44fd56644d9b877390ba17848d0a14d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/f44fd56644d9b877390ba17848d0a14d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/7da2eeb57e6ea91d9edd71d699c54481.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/d36d86c3d9836e3debd1956a5a664597.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/98f5249bbaed1a725ff5c98b70161fff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/57af7a63a07ee0e9eff50ae2ba90bb7c.jpeg
 Meta Title: Kangaroo Long Bifold Wallet with RFID Protection – Slim Stylish Wall
 Meta Description: Buy Kangaroo Long Bifold Wallet with RFID Protection – Slim Stylish Wallet for Men & Women online in Pakistan from ASM VEO. Elegant long bifold wallet with RFID
 Description: Elegant long bifold wallet with RFID protection, multiple compartments, and a sleek design—ideal for daily and formal use.
-Regular Price: 488
-Sale Price: 488
+Wholesale Price: 438
+Regular Price: 900
+Sale Price: 717
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

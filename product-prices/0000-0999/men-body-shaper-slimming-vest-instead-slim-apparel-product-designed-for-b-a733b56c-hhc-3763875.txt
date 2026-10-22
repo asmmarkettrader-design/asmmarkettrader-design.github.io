@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men Body Shaper Slimming Vest Instead Slim - Apparel Product Designed For Body Shaping And Daily Wear Routine
 Product ID: hhc-3763875
 SKU: hhc-3763875
@@ -7,11 +8,16 @@ Slug: men-body-shaper-slimming-vest-instead-slim-apparel-product-designed-for-a7
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/6870f6a43545e5ba067b2fadfcbca3d6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/6870f6a43545e5ba067b2fadfcbca3d6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/01a21ccfeb4438136a04915531561af1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/25951597ed41453004d60737339478a5.jpeg
 Meta Title: Men Body Shaper Slimming Vest Instead Slim - Apparel Product Designe
 Meta Description: Buy Men Body Shaper Slimming Vest Instead Slim - Apparel Product Designed For Body Shaping And Daily Wear Routine online in Pakistan from ASM VEO. The Men Body
 Description: The Men Body Shaper Slimming Vest Instead Slim Is An Apparel Product Formulated To Help Provide Body Shaping And Daily Wear Utility During Use.
-Regular Price: 1133
-Sale Price: 1133
+Wholesale Price: 1083
+Regular Price: 2000
+Sale Price: 1598
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

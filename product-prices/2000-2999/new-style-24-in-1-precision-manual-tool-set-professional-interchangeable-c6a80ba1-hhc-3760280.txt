@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Style 24-in-1 Precision Manual Tool Set – Professional Interchangeable Multi-Bit Toolkit with Slim Slider Housing
 Product ID: hhc-3760280
 SKU: hhc-3760280
@@ -7,11 +8,16 @@ Slug: new-style-24-in-1-precision-manual-tool-set-professional-interchangeabl-c6
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/5663bcd52b8ba36980402318e2f9bf98.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/5663bcd52b8ba36980402318e2f9bf98.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/e371191daa8e34cb2192c61bea939d6e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/a0bd4cc0cef75f962d3b766c97ecea29.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/94110a46e74459cadcc8d1786d9a0bb2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/de10b70abc93e1b40ab669838a8e7211.jpeg
 Meta Title: New Style 24-in-1 Precision Manual Tool Set – Professional Interchan
 Meta Description: Buy New Style 24-in-1 Precision Manual Tool Set – Professional Interchangeable Multi-Bit Toolkit with Slim Slider Housing online in Pakistan from ASM VEO. Fix y
 Description: Fix your electronics with ease using this 24-in-1 Precision Screwdriver Set. It includes 24 precision bits along with built-in magnetic storage in a durable, high-end slider housing for everyday repairs.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

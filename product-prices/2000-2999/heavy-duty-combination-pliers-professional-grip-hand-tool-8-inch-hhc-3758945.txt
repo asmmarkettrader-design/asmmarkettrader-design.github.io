@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heavy-Duty Combination Pliers – Professional Grip Hand Tool 8 Inch
 Product ID: hhc-3758945
 SKU: hhc-3758945
@@ -7,11 +8,16 @@ Slug: heavy-duty-combination-pliers-professional-grip-hand-tool-8-inch-hhc-37589
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/e92ee15f65c314cea061386b3451084b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/e92ee15f65c314cea061386b3451084b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/a81eca0bf9e1ce1a27ee6f53ea430869.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/8e352841023a278825b7179bfd6454dd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/f30dcdc59d2aac96bdf91c2d6b3825aa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/5c1b4377256a028be4fe1ef3bb79299c.png
 Meta Title: Heavy-Duty Combination Pliers – Professional Grip Hand Tool 8 Inch |
 Meta Description: Buy Heavy-Duty Combination Pliers – Professional Grip Hand Tool 8 Inch online in Pakistan from ASM VEO. Crafted from high-quality hardened steel, the sturdy jaw
 Description: Crafted from high-quality hardened steel, the sturdy jaws provide powerful holding strength while the ergonomic anti-slip handle ensures comfortable use during long working hours. Its durable construction makes it perfect for home maintenance, workshop tasks, and industrial applications.
-Regular Price: 756
-Sale Price: 756
+Wholesale Price: 706
+Regular Price: 1360
+Sale Price: 1084
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

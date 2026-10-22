@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dimmable LED Vanity Mirror Lights Kit – 10 LED Hollywood Style Bulbs for Makeup Dressing Table & Bathroom Mirror
 Product ID: hhc-3754535
 SKU: hhc-3754535
@@ -7,11 +8,16 @@ Slug: dimmable-led-vanity-mirror-lights-kit-10-led-hollywood-style-bulbs-for-97b
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/b4562008ce9c26d8db1a2380116b96cf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/b4562008ce9c26d8db1a2380116b96cf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/0f69e3bff666ba852d7a6a8525204e86.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/7154a536b0a602f1972b4a5cd6f8eaf4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/ef587e2307b560935d9052f27e5bbf3c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/e9b4b184b47109e615d6cb345811f110.jpg
 Meta Title: Dimmable LED Vanity Mirror Lights Kit – 10 LED Hollywood Style Bulbs
 Meta Description: Buy Dimmable LED Vanity Mirror Lights Kit – 10 LED Hollywood Style Bulbs for Makeup Dressing Table & Bathroom Mirror online in Pakistan from ASM VEO. Transform
 Description: Transform any mirror into a professional makeup station with these 10 high-quality LED bulbs. Featuring adjustable brightness levels and three color modes, this easy-to-install kit provides the perfect lighting for flawless makeup application, grooming, and photoshoots.
-Regular Price: 1106
-Sale Price: 1106
+Wholesale Price: 1056
+Regular Price: 1950
+Sale Price: 1560
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

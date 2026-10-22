@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Trendy Korean Cross Pearl Earrings – Sculpted Design (AVT-114)
 Product ID: hhc-3752533
 SKU: hhc-3752533
@@ -7,11 +8,16 @@ Slug: trendy-korean-cross-pearl-earrings-sculpted-design-avt-114-hhc-3752533
 Category: Fashion
 Subcategory: Jewelry
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/c8c5434e9687015e25ed337f8b51df87.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/c8c5434e9687015e25ed337f8b51df87.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/c2add8dde63a40dc3ec11f3f220cf603.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/d40c3571e7f64f562e3c3265c51bec9f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/30/caf2faef78979e7a7f8124ad02f606c6.jpeg
 Meta Title: Trendy Korean Cross Pearl Earrings – Sculpted Design (AVT-114) | Buy
 Meta Description: Buy Trendy Korean Cross Pearl Earrings – Sculpted Design (AVT-114) online in Pakistan from ASM VEO. Trendy alloy hand cuff ring set with floral design, availabl
 Description: Trendy alloy hand cuff ring set with floral design, available in silver and golden colors – a perfect accessory for everyday style or special occasions.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

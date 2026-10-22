@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Genuine Black Leather Long Wallet – Elegant Bi-Fold Business Clutch & Travel Organizer for Men
 Product ID: hhc-3758718
 SKU: hhc-3758718
@@ -7,11 +8,16 @@ Slug: premium-genuine-black-leather-long-wallet-elegant-bi-fold-business-clut-30
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/372133f98e9bd1bb610671ed6310c364.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/372133f98e9bd1bb610671ed6310c364.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/19c40b01b07895e3e387876a0f0acb61.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/64bc14efaa313739ca6bd0a2c9f3270d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/9ba43deccff9a7d9ee3f529a81fd4996.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/31ad1c19d8f3c3aba7d5a6dddd48c8f7.jpeg
 Meta Title: Premium Genuine Black Leather Long Wallet – Elegant Bi-Fold Business
 Meta Description: Buy Premium Genuine Black Leather Long Wallet – Elegant Bi-Fold Business Clutch & Travel Organizer for Men online in Pakistan from ASM VEO. Elevate your style w
 Description: Elevate your style with this Premium Genuine Leather Long Wallet. Designed for the modern professional, this elegant clutch offers a slim profile with high-capacity storage for your cash, cards, and smartphone, making it the perfect accessory for business and travel.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

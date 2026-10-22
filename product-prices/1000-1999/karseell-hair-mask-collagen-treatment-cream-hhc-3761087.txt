@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Karseell Hair Mask Collagen Treatment Cream
 Product ID: hhc-3761087
 SKU: hhc-3761087
@@ -7,11 +8,16 @@ Slug: karseell-hair-mask-collagen-treatment-cream-hhc-3761087
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/aae0b82d8d60750fc3a1acf15188c6ea.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/aae0b82d8d60750fc3a1acf15188c6ea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/973d5c66c2a99a2fe55648c7147366c1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/26/0f8edcb13747182831a0daf660344386.jpg
 Meta Title: Karseell Hair Mask Collagen Treatment Cream | Buy Online in Pakistan
 Meta Description: Buy Karseell Hair Mask Collagen Treatment Cream online in Pakistan from ASM VEO. Karseell Hair Mask Collagen Treatment Cream Is Designed To Nourish And Help Imp
 Description: Karseell Hair Mask Collagen Treatment Cream Is Designed To Nourish And Help Improve The Appearance Of Dry And Damaged Hair With A Collagen-Enriched Formula.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

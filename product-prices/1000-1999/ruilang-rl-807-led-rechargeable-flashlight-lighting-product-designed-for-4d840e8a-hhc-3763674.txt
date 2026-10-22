@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ruilang RL-807 LED Rechargeable Flashlight - Lighting Product Designed For Illumination And Daily Lighting Routine (Random Color)
 Product ID: hhc-3763674
 SKU: hhc-3763674
@@ -7,11 +8,16 @@ Slug: ruilang-rl-807-led-rechargeable-flashlight-lighting-product-designed-fo-4d
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/19daa0451098f26dc41e1aa7a1615900.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/19daa0451098f26dc41e1aa7a1615900.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/1511dbd92e57579c5185a2c69c3f3306.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/12/1239a229f22db0d40f0db9d75e95fa32.jpeg
 Meta Title: Ruilang RL-807 LED Rechargeable Flashlight - Lighting Product Design
 Meta Description: Buy Ruilang RL-807 LED Rechargeable Flashlight - Lighting Product Designed For Illumination And Daily Lighting Routine (Random Color) online in Pakistan from AS
 Description: The Ruilang RL-807 LED Rechargeable Flashlight Is A Lighting Product Formulated To Help Provide Illumination And Daily Lighting Utility During Use.
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

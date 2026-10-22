@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Xiaomi Mi 120W Fast Charger with USB Type-C Turbo Charging Cable
 Product ID: hhc-3763616
 SKU: hhc-3763616
@@ -7,11 +8,16 @@ Slug: xiaomi-mi-120w-fast-charger-with-usb-type-c-turbo-charging-cable-hhc-37636
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Xiaomi
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/85fcc92359b219e0b5bc81fde091f1f7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/85fcc92359b219e0b5bc81fde091f1f7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/0b677ac8e298f9b58a3c0120bd0ed545.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/11/b0f051ff29a9f6c58e97f8aea70ace58.png
 Meta Title: Xiaomi Mi 120W Fast Charger with USB Type-C Turbo Charging Cable | B
 Meta Description: Buy Xiaomi Mi 120W Fast Charger with USB Type-C Turbo Charging Cable online in Pakistan from ASM VEO. Powerful 120W fast charger with a USB Type-C cable, design
 Description: Powerful 120W fast charger with a USB Type-C cable, designed for quick and efficient charging of compatible Android devices.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

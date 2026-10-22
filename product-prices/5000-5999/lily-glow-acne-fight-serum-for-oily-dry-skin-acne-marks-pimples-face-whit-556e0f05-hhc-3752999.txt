@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lily Glow Acne Fight Serum – For Oily & Dry Skin, Acne Marks, Pimples & Face Whitening (30ml)
 Product ID: hhc-3752999
 SKU: hhc-3752999
@@ -7,11 +8,16 @@ Slug: lily-glow-acne-fight-serum-for-oily-dry-skin-acne-marks-pimples-face-wh-55
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/181d8f3a9b5dfc3505aebb20fbcde4c0.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/181d8f3a9b5dfc3505aebb20fbcde4c0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/56a9b36d1e50294bac769afaed3c673e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/24/13a7d951a14885eff21e7abd5324c9bc.jpg
 Meta Title: Lily Glow Acne Fight Serum – For Oily & Dry Skin, Acne Marks, Pimple
 Meta Description: Buy Lily Glow Acne Fight Serum – For Oily & Dry Skin, Acne Marks, Pimples & Face Whitening (30ml) online in Pakistan from ASM VEO. Say goodbye to pimples and ac
 Description: Say goodbye to pimples and acne scars with Lily Glow Acne Fight Serum – your ultimate skincare solution for clear, smooth & glowing skin. Specially designed for oily skin, dry skin, and acne-prone faces, this serum reduces pimples, acne marks, and redness while preventing future breakouts.
-Regular Price: 1349
-Sale Price: 1349
+Wholesale Price: 1299
+Regular Price: 2380
+Sale Price: 1905
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

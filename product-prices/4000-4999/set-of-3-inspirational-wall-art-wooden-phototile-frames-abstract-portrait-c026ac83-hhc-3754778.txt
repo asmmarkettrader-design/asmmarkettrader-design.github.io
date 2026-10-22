@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Inspirational Wall Art Wooden Phototile Frames – Abstract Portraits with Gold Accents, 8x11 Inch MDF, Ready to Stick
 Product ID: hhc-3754778
 SKU: hhc-3754778
@@ -7,11 +8,16 @@ Slug: set-of-3-inspirational-wall-art-wooden-phototile-frames-abstract-portra-c0
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/6afffad0947a0b745925f1eaadd61d68.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/6afffad0947a0b745925f1eaadd61d68.png
 Meta Title: Set of 3 Inspirational Wall Art Wooden Phototile Frames – Abstract P
 Meta Description: Buy Set of 3 Inspirational Wall Art Wooden Phototile Frames – Abstract Portraits with Gold Accents, 8x11 Inch MDF, Ready to Stick online in Pakistan from ASM VE
 Description: A trio of abstract portrait frames designed to inspire. Crafted from durable MDF wood with adhesive backing, these pieces bring depth and meaning to any space.
-Regular Price: 473
-Sale Price: 473
+Wholesale Price: 423
+Regular Price: 870
+Sale Price: 694
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

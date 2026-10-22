@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Glowara Intense Brightening Face Wash – Deep Cleanse for Radiant, Smooth & Blemish-Free Skin with Moisturizing and Anti-Aging Benefits
 Product ID: hhc-3752966
 SKU: hhc-3752966
@@ -7,11 +8,16 @@ Slug: glowara-intense-brightening-face-wash-deep-cleanse-for-radiant-smooth-b-11
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/d717a35b4a29a8e1e6f7a6048044a4ed.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/d717a35b4a29a8e1e6f7a6048044a4ed.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/abd411d00f7d1deb61fcb8f17e341e0a.png
 Meta Title: Glowara Intense Brightening Face Wash – Deep Cleanse for Radiant, Sm
 Meta Description: Buy Glowara Intense Brightening Face Wash – Deep Cleanse for Radiant, Smooth & Blemish-Free Skin with Moisturizing and Anti-Aging Benefits online in Pakistan fr
 Description: GLOWARA Intense Brightening face wash makes skin brighter, and smoother & blemishes free. Glowara face wash also moisturizes the skin, revealing intense glowing and younger skin with anti-aging properties.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

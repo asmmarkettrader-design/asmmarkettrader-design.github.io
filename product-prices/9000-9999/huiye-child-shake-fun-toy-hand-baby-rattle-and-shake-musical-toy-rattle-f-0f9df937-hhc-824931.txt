@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Huiye Child Shake Fun Toy Hand Baby Rattle  And Shake Musical Toy Rattle For Kids ( 2PCS SET)
 Product ID: hhc-824931
 SKU: hhc-824931
@@ -7,11 +8,16 @@ Slug: huiye-child-shake-fun-toy-hand-baby-rattle-and-shake-musical-toy-rattle-0f
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/d98836b5-e756-405a-9a18-b4268f08c184.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/d98836b5-e756-405a-9a18-b4268f08c184.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/913c9b3e-4cb4-44ff-83dc-29eb8ac84a38.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/0e6dd2df-e583-447a-a975-837e1a1ae16b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/1243d715-c0fb-4ee4-9edc-250813ed3f98.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/85c2fd28-8b9b-4060-9965-4a054f6a6cfe.jpeg
 Meta Title: Huiye Child Shake Fun Toy Hand Baby Rattle And Shake Musical Toy Rat
 Meta Description: Buy Huiye Child Shake Fun Toy Hand Baby Rattle And Shake Musical Toy Rattle For Kids ( 2PCS SET) online in Pakistan from ASM VEO. Baby Activity Rattle Set 2 Pcs
 Description: Baby Activity Rattle Set 2 PcsNew DesignExclusively Available on our storeHigh Quality Durable PlasticINCREASE HAND-EYE COORDINATION IN BABYAttractive Colours
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital Blood Pressure Monitor – Fully Automatic Upper Arm BP Machine with Heart Rate Detection, Accurate Readings, Easy-to-Use Home Health Device (Without Cell)
 Product ID: hhc-3752145
 SKU: hhc-3752145
@@ -7,11 +8,16 @@ Slug: digital-blood-pressure-monitor-fully-automatic-upper-arm-bp-machine-wit-4d
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757764519-68c55ba78c9b1-imgi_52_5c562118557d37628b9888fead997719_cleanup.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757764519-68c55ba78c9b1-imgi_52_5c562118557d37628b9888fead997719_cleanup.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757764473-68c55b7911756-imgi_53_4a6c4029359acbd86f5e4aeb00baead8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757764470-68c55b76e65b5-imgi_54_a477b88bf49f370f7a559af3ffb94980.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757764691-68c55c53ac6a8-imgi_54_Sa63e5d3caef342af8890b2e5c80c57c4O_cleanup.jpg
 Meta Title: Digital Blood Pressure Monitor – Fully Automatic Upper Arm BP Machin
 Meta Description: Buy Digital Blood Pressure Monitor – Fully Automatic Upper Arm BP Machine with Heart Rate Detection, Accurate Readings, Easy-to-Use Home Health Device (Without
 Description: Digital Blood Pressure Monitor – Fully Automatic Upper Arm BP Machine with Heart Rate Detection, Accurate Readings, Easy-to-Use Home Health Device
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

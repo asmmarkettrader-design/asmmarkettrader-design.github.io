@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gift Pack Bedsheet Cotton Mix Full Printed 3PC Set With King Size Sheet And 2 Pillow Covers
 Product ID: hhc-3765128
 SKU: hhc-3765128
@@ -7,11 +8,16 @@ Slug: gift-pack-bedsheet-cotton-mix-full-printed-3pc-set-with-king-size-sheet-1d
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/dbca9872cbd273866c39d354a05aeb0d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/dbca9872cbd273866c39d354a05aeb0d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/6f7beb2c2161b1cf0d65c92a03ee4061.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/192a7ef57a69b9a3e10f506853932421.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/607abcbb2b992708f229b437c5c618d0.jfif
 Meta Title: Gift Pack Bedsheet Cotton Mix Full Printed 3PC Set With King Size Sh
 Meta Description: Buy Gift Pack Bedsheet Cotton Mix Full Printed 3PC Set With King Size Sheet And 2 Pillow Covers online in Pakistan from ASM VEO. The Gift Pack Bedsheet AY001001
 Description: The Gift Pack Bedsheet AY0010011 Is A 3PC Bedsheet Set Made From Cotton Mix Fabric. The Set Includes 1 King Size Sheet And 2 Pillow Covers, Providing A Complete Bedsheet Set With Matching Pillow Covers.The King Size Sheet Measures 90/92 And Is Designed With A Full Printed Pattern. Along With The Sheet, The Set Includes 2 Pillow Covers To Complete The 3PC Set.This Bedsheet Set Comes In Gift Box Packing, Making The Product Available In A Gift Pack Format. The Product Is Listed As Part Of A Demanding Collection.The Gift Pack Bedsheet AY0010011 Includes The Following Items In The Set:Key Features:• AY0010011 Product Code• Cotton Mix Fabric• Full Printed Design• 3PC Set• 1 King Size Sheet• King Size Sheet 90/92• 2 Pillow Covers• Gift Box PackingPackage Includes:• 1x King Size Sheet 90/92• 2x Pillow Covers
-Regular Price: 1716
-Sale Price: 1716
+Wholesale Price: 1716
+Regular Price: 3120
+Sale Price: 2497
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

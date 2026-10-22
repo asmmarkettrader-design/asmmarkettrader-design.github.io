@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Pcs Islamic Calligraphy Home Décor Photo Tiles – 8x11 Inch with Double Tape 6 Pcs, Easy Wall Mount & Stylish Display
 Product ID: hhc-3754360
 SKU: hhc-3754360
@@ -7,11 +8,16 @@ Slug: 6-pcs-islamic-calligraphy-home-d-cor-photo-tiles-8x11-inch-with-double-648
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/ce4e5fc3c56dcd3a0b9a3a9edde82139.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/ce4e5fc3c56dcd3a0b9a3a9edde82139.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/d5c4b3e9d1e64986f29a1ce4236d2a2c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/1fef4038875baad168d49740fd6db688.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/389bb1317ab024b43e80dd7ef2657ffc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/68407cd4ad8a4d45a4587cd6a72fd238.jpeg
 Meta Title: 6 Pcs Islamic Calligraphy Home Décor Photo Tiles – 8x11 Inch with Do
 Meta Description: Buy 6 Pcs Islamic Calligraphy Home Décor Photo Tiles – 8x11 Inch with Double Tape 6 Pcs, Easy Wall Mount & Stylish Display online in Pakistan from ASM VEO. 6 Pc
 Description: 6 Pcs Islamic Calligraphy Home décor photo tiles 8x11 inch 6 pcs, with strong double tape for easy wall mounting, stylish and reusable display.
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Best Posture belt, Posture corrector belt, Back support belt, Backbone Belt, Spine Support Belt, Back Pain Relief Shoulder Back Support Belt | Posture Corrector Belt For Men &amp; Women
 Product ID: hhc-3362403
 SKU: hhc-3362403
@@ -7,11 +8,16 @@ Slug: best-posture-belt-posture-corrector-belt-back-support-belt-backbone-bel-33
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/7d5de88d11b9923a6b3c014e793d2c82.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/7d5de88d11b9923a6b3c014e793d2c82.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/c54cb9d7a07a6daf1a585686984f0bae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/download-11-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/download-10-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/download-9-1.png
 Meta Title: Best Posture belt, Posture corrector belt, Back support belt, Backbo
 Meta Description: Buy Best Posture belt, Posture corrector belt, Back support belt, Backbone Belt, Spine Support Belt, Back Pain Relief Shoulder Back Support Belt | Posture Corre
 Description: Best Posture belt, Posture corrector belt, Back support belt, Backbone Belt, Spine Support Belt, Back Pain Relief Shoulder Back Support Belt | Posture Corrector Belt For Men &amp; Women
-Regular Price: 938
-Sale Price: 938
+Wholesale Price: 888
+Regular Price: 1680
+Sale Price: 1348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

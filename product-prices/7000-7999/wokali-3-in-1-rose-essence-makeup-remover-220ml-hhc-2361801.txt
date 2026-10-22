@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wokali 3 in 1 Rose Essence Makeup Remover  220ml
 Product ID: hhc-2361801
 SKU: hhc-2361801
@@ -7,11 +8,16 @@ Slug: wokali-3-in-1-rose-essence-makeup-remover-220ml-hhc-2361801
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/Untitleddesign_36.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/Untitleddesign_36.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-21-at-11.42.33-PM.jpeg
 Meta Title: Wokali 3 in 1 Rose Essence Makeup Remover 220ml | Buy Online in Paki
 Meta Description: Buy Wokali 3 in 1 Rose Essence Makeup Remover 220ml online in Pakistan from ASM VEO. Wokali 3 in 1 Rose Essence Makeup Remover Size: 220ml * Remove your makeup
 Description: Wokali 3 in 1 Rose Essence Makeup Remover Size: 220ml * Remove your makeup with this 3 in 1 Makeup Remover. This multi-functional solution gently cleanses, tones, and moisturizes in one step. * The effective formula eliminates impurities without irritating the skin, leaving it fresh and revitalized. Natural Finish: Provides a healthy, radiant glow that looks natural on the skin. Blendable Formula: Smooth and creamy texture that blends seamlessly for a flawless finish. Long-Lasting Wear: Stays put throughout the day without fading. Versatile Shades: Includes six diverse shades to suit all skin tones and occasions.
-Regular Price: 669
-Sale Price: 669
+Wholesale Price: 619
+Regular Price: 1200
+Sale Price: 958
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

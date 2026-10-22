@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100 PCS Disposable Food Cover Plastic Bags – Transparent Fresh Food Storage & Wrap Bags
 Product ID: hhc-3756009
 SKU: hhc-3756009
@@ -7,11 +8,16 @@ Slug: 100-pcs-disposable-food-cover-plastic-bags-transparent-fresh-food-stora-82
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: 100 PCS Disposable Food Cover Plastic Bags – Transparent Fresh Food
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/d599ea42ff08ea23bdeab024b2578058.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/d599ea42ff08ea23bdeab024b2578058.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/0e62593b46641a9f995175016f4fb203.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/7bc289c0f717e3ba585a5c01b478c46c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/540149d33eca9d103fc1218df20480b2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/ebc4e929ec5cb87d2fccb5df9b1eda64.webp
+Meta Title: 100 PCS Disposable Food Cover Plastic Bags – Transparent Fresh Food 
 Meta Description: Buy 100 PCS Disposable Food Cover Plastic Bags – Transparent Fresh Food Storage & Wrap Bags online in Pakistan from ASM VEO. Keep your food fresh and protected
 Description: Keep your food fresh and protected with these disposable transparent food cover bags. Ideal for fruits, vegetables, bowls, and leftovers—easy to use, hygienic, and convenient for daily kitchen needs.
-Regular Price: 237
-Sale Price: 237
+Wholesale Price: 187
+Regular Price: 490
+Sale Price: 340
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

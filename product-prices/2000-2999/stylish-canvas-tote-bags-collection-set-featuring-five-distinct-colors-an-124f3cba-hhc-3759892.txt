@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stylish Canvas Tote Bags Collection Set Featuring Five Distinct Colors And Elegant Typography For Modern Fashion
 Product ID: hhc-3759892
 SKU: hhc-3759892
@@ -7,11 +8,16 @@ Slug: stylish-canvas-tote-bags-collection-set-featuring-five-distinct-colors-124
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/c6dc6d6a9579c71ea1155ad81c868a2b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/c6dc6d6a9579c71ea1155ad81c868a2b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/5afe41a14e3d7cff40f3a92c9b4d6b8d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/6f2e42e04625c27920fd272b3e29c925.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/3d04db6ad5431a3f9b68cafefc13a506.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/731d54e4aa8acc4aef3071a2d29556ee.jpeg
 Meta Title: Stylish Canvas Tote Bags Collection Set Featuring Five Distinct Colo
 Meta Description: Buy Stylish Canvas Tote Bags Collection Set Featuring Five Distinct Colors And Elegant Typography For Modern Fashion online in Pakistan from ASM VEO. Upgrade Yo
 Description: Upgrade Your Accessory Collection With This Premium Set Of Canvas Tote Bags. Featuring Five Gorgeous Color Options And Sophisticated Lettering, These Durable Bags Blend Practical Functionality With Elegant Style Perfect For Daily Use.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

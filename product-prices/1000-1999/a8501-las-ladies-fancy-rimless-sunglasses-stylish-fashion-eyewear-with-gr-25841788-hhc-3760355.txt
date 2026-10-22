@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: A8501 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear With Gradient Lenses And Metal Frame
 Product ID: hhc-3760355
 SKU: hhc-3760355
@@ -7,11 +8,16 @@ Slug: a8501-las-ladies-fancy-rimless-sunglasses-stylish-fashion-eyewear-with-258
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: A8501 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/20178fa50db6baa8321205340e129e58.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/20178fa50db6baa8321205340e129e58.jpeg
+Meta Title: A8501 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear 
 Meta Description: Buy A8501 LAS - Ladies Fancy Rimless Sunglasses Stylish Fashion Eyewear With Gradient Lenses And Metal Frame online in Pakistan from ASM VEO. Trendy Ladies Riml
 Description: Trendy Ladies Rimless Sunglasses Featuring Gradient Lenses And Elegant Metal Temples. Available In Multiple Fashionable Color Variations.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

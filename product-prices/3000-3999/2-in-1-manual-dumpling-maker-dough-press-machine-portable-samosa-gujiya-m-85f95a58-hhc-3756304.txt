@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-In-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa & Gujiya Mould Tool | Easy Kitchen DIY Pastry Accessory
 Product ID: hhc-3756304
 SKU: hhc-3756304
@@ -7,11 +8,16 @@ Slug: 2-in-1-manual-dumpling-maker-dough-press-machine-portable-samosa-gujiya-85
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/f7b1c5f539ec4992d1aa1ea8b5d42c46.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/f7b1c5f539ec4992d1aa1ea8b5d42c46.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/0b8a10079ab1717e0bbfdddc59c6a013.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/251def57adbd7e91ae41554fc9ad2756.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/c43f1b6c82fb3405c9763412eddc2b68.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/3dde14772fee1325009a53f0c13bcdd4.jpg
 Meta Title: 2-In-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa
 Meta Description: Buy 2-In-1 Manual Dumpling Maker & Dough Press Machine | Portable Samosa & Gujiya Mould Tool | Easy Kitchen DIY Pastry Accessory online in Pakistan from ASM VEO
 Description: Make perfectly shaped dumplings, samosas, and gujiyas in seconds with this 2-in-1 manual dumpling maker and dough press. Designed for convenience and precision, this easy-to-use kitchen tool helps you create beautifully sealed pastries with minimal effort.
-Regular Price: 318
-Sale Price: 318
+Wholesale Price: 268
+Regular Price: 612
+Sale Price: 462
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

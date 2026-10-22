@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Motorcycles Bike Fancy Tail Light 70cc And 125cc LED Fancy Tail Light Stop Turn Signal with Scanning Dynamic Animation Breathing DRL
 Product ID: hhc-1496848
 SKU: hhc-1496848
@@ -7,11 +8,16 @@ Slug: motorcycles-bike-fancy-tail-light-70cc-and-125cc-led-fancy-tail-light-s-5f
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-26-at-11.34.49-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-26-at-11.34.49-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-26-at-11.34.44-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-26-at-11.34.44-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-26-at-11.34.45-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/WhatsApp-Image-2024-04-26-at-11.34.45-PM-2.jpeg
 Meta Title: Motorcycles Bike Fancy Tail Light 70cc And 125cc LED Fancy Tail Ligh
 Meta Description: Buy Motorcycles Bike Fancy Tail Light 70cc And 125cc LED Fancy Tail Light Stop Turn Signal with Scanning Dynamic Animation Breathing DRL online in Pakistan from
 Description: Motorcycles Bike Fancy Tail Light 70cc And 125cc LED Fancy Tail Light Stop Turn Signal with Scanning Dynamic Animation Breathing DRL
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

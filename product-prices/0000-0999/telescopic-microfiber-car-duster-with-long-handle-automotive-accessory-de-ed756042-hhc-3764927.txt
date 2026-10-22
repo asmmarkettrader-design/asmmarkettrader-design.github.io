@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Telescopic Microfiber Car Duster With Long Handle - Automotive Accessory Designed For Dust Removal And Daily Vehicle Maintenance Routine
 Product ID: hhc-3764927
 SKU: hhc-3764927
@@ -7,11 +8,16 @@ Slug: telescopic-microfiber-car-duster-with-long-handle-automotive-accessory-ed7
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/d565a1155b26e867a3c41e8ed786ac6e.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/d565a1155b26e867a3c41e8ed786ac6e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/fe8c7552db9bd34c10d50d3517abf93a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/fb3eb19eeb9340a223e59608357a0cd8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/6e13bb96fe3fbcc95579789b4aae8c19.jpg
 Meta Title: Telescopic Microfiber Car Duster With Long Handle - Automotive Acces
 Meta Description: Buy Telescopic Microfiber Car Duster With Long Handle - Automotive Accessory Designed For Dust Removal And Daily Vehicle Maintenance Routine online in Pakistan
 Description: Big Size
-Regular Price: 965
-Sale Price: 965
+Wholesale Price: 915
+Regular Price: 1730
+Sale Price: 1387
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

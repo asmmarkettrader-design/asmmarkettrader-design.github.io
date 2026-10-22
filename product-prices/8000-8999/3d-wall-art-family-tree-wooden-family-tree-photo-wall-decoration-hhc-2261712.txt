@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3d wall art family tree |  Wooden Family Tree Photo Wall decoration
 Product ID: hhc-2261712
 SKU: hhc-2261712
@@ -7,11 +8,16 @@ Slug: 3d-wall-art-family-tree-wooden-family-tree-photo-wall-decoration-hhc-22617
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-02-at-8.10.53-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-02-at-8.10.53-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-02-at-8.10.54-PM.jpeg
 Meta Title: 3d wall art family tree | Wooden Family Tree Photo Wall decoration |
 Meta Description: Buy 3d wall art family tree | Wooden Family Tree Photo Wall decoration online in Pakistan from ASM VEO. Material: wood Size: 20 inch Thickness: 3mm lasani wood
 Description: Material: wood Size: 20 inch Thickness: 3mm lasani wood pictures are not included
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

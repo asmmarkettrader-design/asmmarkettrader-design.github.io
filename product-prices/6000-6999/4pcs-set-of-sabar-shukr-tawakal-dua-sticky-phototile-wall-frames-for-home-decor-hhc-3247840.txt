@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4Pcs set of sabar, shukr, tawakal, dua sticky phototile wall frames for home decor
 Product ID: hhc-3247840
 SKU: hhc-3247840
@@ -7,11 +8,16 @@ Slug: 4pcs-set-of-sabar-shukr-tawakal-dua-sticky-phototile-wall-frames-for-home-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 4Pcs set of sabar, shukr, tawakal, dua sticky phototile wall frames
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/c8eec78b56ffb46692ad29d0b1368151.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/c8eec78b56ffb46692ad29d0b1368151.jpg
+Meta Title: 4Pcs set of sabar, shukr, tawakal, dua sticky phototile wall frames 
 Meta Description: Buy 4Pcs set of sabar, shukr, tawakal, dua sticky phototile wall frames for home decor online in Pakistan from ASM VEO. No of Frames: 4Size : 8x11inches Wooden
 Description: No of Frames: 4Size : 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Laminated print to protect colors. Beautiful islamic calligraphy designs which will give your enterior a spiritual vibe. Can be customised with you own pictures.High quality Finishing
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

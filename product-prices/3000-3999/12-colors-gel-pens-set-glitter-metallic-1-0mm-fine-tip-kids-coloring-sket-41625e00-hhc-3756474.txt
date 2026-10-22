@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 12 Colors Gel Pens Set – Glitter & Metallic 1.0mm Fine Tip | Kids Coloring, Sketching & Drawing Gift Set
 Product ID: hhc-3756474
 SKU: hhc-3756474
@@ -7,11 +8,16 @@ Slug: 12-colors-gel-pens-set-glitter-metallic-1-0mm-fine-tip-kids-coloring-sk-41
 Category: Books & Stationery
 Subcategory: Office Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/79645ce10eac1d69a3920029af514b70.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/79645ce10eac1d69a3920029af514b70.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/6243bd1e706f5d0d33027c713379b2fb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/65c703466713861058c7a26d443ce4b6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/d9aff3735a2064a073ef57a6f9de2086.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/595eb1ea840a63da150f68a12bb6a66e.png
 Meta Title: 12 Colors Gel Pens Set – Glitter & Metallic 1.0mm Fine Tip | Kids Co
 Meta Description: Buy 12 Colors Gel Pens Set – Glitter & Metallic 1.0mm Fine Tip | Kids Coloring, Sketching & Drawing Gift Set online in Pakistan from ASM VEO. Brighten every art
 Description: Brighten every artwork with this 12 Colors Gel Pens Set featuring glitter and metallic shades. Designed with a smooth 1.0mm fine tip, these pens are perfect for kids and adults for coloring, sketching, painting, journaling, and creative crafts.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

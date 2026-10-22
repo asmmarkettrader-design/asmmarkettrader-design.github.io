@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Folding Makeup Mirror Jewellery Box – 3-Color LED Beauty Mirror, Multi-Function Personal Care Organizer
 Product ID: hhc-3754207
 SKU: hhc-3754207
@@ -7,11 +8,16 @@ Slug: portable-folding-makeup-mirror-jewellery-box-3-color-led-beauty-mirror-0d6
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/10d10fb0ebdf80b2532178bd63b66297.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/10d10fb0ebdf80b2532178bd63b66297.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/adc56c980e15c885af2af8bfb93004de.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/39b77387a2a21c2170e87b485fe770c8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/0e7ccdc8373deb313c3756d48241c9ef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/0b652e603bc2e56486ab368dbfc71a1d.jpeg
 Meta Title: Portable Folding Makeup Mirror Jewellery Box – 3-Color LED Beauty Mi
 Meta Description: Buy Portable Folding Makeup Mirror Jewellery Box – 3-Color LED Beauty Mirror, Multi-Function Personal Care Organizer online in Pakistan from ASM VEO. Portable f
 Description: Portable folding makeup mirror jewellery box with 3-color LED light, multifunctional design for personal care.
-Regular Price: 2305
-Sale Price: 2305
+Wholesale Price: 2305
+Regular Price: 4120
+Sale Price: 3292
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

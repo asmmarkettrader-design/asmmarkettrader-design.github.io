@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Self Adhesive White Marble Sheet For Kitchen – Waterproof, Heat And Oil Resistant Wallpap er For Countertops, Cabinets, And Furniture(60x200)
 Product ID: hhc-3753185
 SKU: hhc-3753185
@@ -7,11 +8,16 @@ Slug: self-adhesive-white-marble-sheet-for-kitchen-waterproof-heat-and-oil-re-a7
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Self Adhesive White Marble Sheet For Kitchen – Waterproof, Heat And
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/ec33d73780a07a2fe67dd5c699606044.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/ec33d73780a07a2fe67dd5c699606044.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/3ceb1d9fc510bbda0829982247b87ed0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/5c97442c889f0f61065bf4d148b5b060.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/5c38c0f92f728fff8dfa9d6b1160a901.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/35120139e2691e7bf8cfce0c5a2228d2.jpg
+Meta Title: Self Adhesive White Marble Sheet For Kitchen – Waterproof, Heat And 
 Meta Description: Buy Self Adhesive White Marble Sheet For Kitchen – Waterproof, Heat And Oil Resistant Wallpap er For Countertops, Cabinets, And Furniture(60x200) online in Paki
 Description: Self Adhesive White Marble Sheet For Kitchen Offers A Stylish And Practical Way To Upgrade Your Space With Waterproof, Heat, And Oil Resistant Design.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Trendy Black Tracksuit for Men – Premium Comfortable Sports & Casual Wear Set
 Product ID: hhc-3756316
 SKU: hhc-3756316
@@ -7,11 +8,16 @@ Slug: new-trendy-black-tracksuit-for-men-premium-comfortable-sports-casual-wear-
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/2048f4205f3fe7124feb25bc0ebd65a3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/2048f4205f3fe7124feb25bc0ebd65a3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/27c2ee8422b47e56aebcfdcc67fe9fdb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/c0c140d9b6dd05e17cee934bc86564e7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/0f4440ff859a339f275cf07606dba10e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/ecfdcb4400653edbc392beef05c5b2a9.jpeg
 Meta Title: New Trendy Black Tracksuit for Men – Premium Comfortable Sports & Ca
 Meta Description: Buy New Trendy Black Tracksuit for Men – Premium Comfortable Sports & Casual Wear Set online in Pakistan from ASM VEO. Upgrade your everyday style with this New
 Description: Upgrade your everyday style with this New Trendy Black Tracksuit for Men, designed for comfort, flexibility, and a modern athletic look.
-Regular Price: 1483
-Sale Price: 1483
+Wholesale Price: 1433
+Regular Price: 2620
+Sale Price: 2095
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

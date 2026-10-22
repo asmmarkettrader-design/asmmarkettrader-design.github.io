@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Winter Tracksuit | Designer 2-Piece Shirt & Trouser Set for Boys & Girls | Stylish, Warm & Comfy Winter Outfit FOR BABY AND KIDS
 Product ID: hhc-3753380
 SKU: hhc-3753380
@@ -7,11 +8,16 @@ Slug: kids-winter-tracksuit-designer-2-piece-shirt-trouser-set-for-boys-girls-53
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/95b0fda5bf3dea892607c4ad9e25dae4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/95b0fda5bf3dea892607c4ad9e25dae4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/5b8aaadd636f78b44b913e43bae5055d.png
 Meta Title: Kids Winter Tracksuit | Designer 2-Piece Shirt & Trouser Set for Boy
 Meta Description: Buy Kids Winter Tracksuit | Designer 2-Piece Shirt & Trouser Set for Boys & Girls | Stylish, Warm & Comfy Winter Outfit FOR BABY AND KIDS online in Pakistan fro
 Description: Keep kids stylish and warm with this 2-piece winter tracksuit — cozy shirt and trousers designed for comfort and everyday wear.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

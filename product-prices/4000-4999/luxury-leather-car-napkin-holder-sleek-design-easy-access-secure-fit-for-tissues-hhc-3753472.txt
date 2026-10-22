@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury Leather Car Napkin Holder – Sleek Design, Easy Access & Secure Fit for Tissues
 Product ID: hhc-3753472
 SKU: hhc-3753472
@@ -7,11 +8,16 @@ Slug: luxury-leather-car-napkin-holder-sleek-design-easy-access-secure-fit-for-t
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/f28fe8f44ebc4da821c6ecdf7cd34f8b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/18/f28fe8f44ebc4da821c6ecdf7cd34f8b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/67a3c91dd227453a578f511658922c37.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/368324d52fbfb5445812f3fdde2a3125.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/42b0ae7b95dc84929c18d608fc2a2e30.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/01fa93cd641e81519b922efd8e9e00d8.jpeg
 Meta Title: Luxury Leather Car Napkin Holder – Sleek Design, Easy Access & Secur
 Meta Description: Buy Luxury Leather Car Napkin Holder – Sleek Design, Easy Access & Secure Fit for Tissues online in Pakistan from ASM VEO. Stylish leather napkin holder for car
 Description: Stylish leather napkin holder for cars – quick access, secure fit, and elegant design for a clutter-free interior.
-Regular Price: 965
-Sale Price: 965
+Wholesale Price: 915
+Regular Price: 1730
+Sale Price: 1387
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

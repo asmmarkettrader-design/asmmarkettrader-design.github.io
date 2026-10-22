@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Soft Desire Perfume Tester – Glass Spray Vial - 5ml
 Product ID: hhc-3764435
 SKU: hhc-3764435
 Slug: soft-desire-perfume-tester-glass-spray-vial-5ml-hhc-3764435
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Perfumes
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/4bf7f7688a7d581944f8684ef267ae21.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/4bf7f7688a7d581944f8684ef267ae21.webp
 Meta Title: Soft Desire Perfume Tester – Glass Spray Vial - 5ml | Buy Online in
 Meta Description: Buy Soft Desire Perfume Tester – Glass Spray Vial - 5ml online in Pakistan from ASM VEO. A compact perfume tester for the "Soft Desire" fragrance. Packaged in a
 Description: A compact perfume tester for the "Soft Desire" fragrance. Packaged in a transparent cylindrical glass vial with a black cap and built-in spray pump, perfect for sampling or travel use.
-Regular Price: 927
-Sale Price: 927
+Wholesale Price: 480
+Regular Price: 1220
+Sale Price: 977
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

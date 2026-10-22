@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Barkat Buffalo Desi Ghee – Premium Traditional Pure Ghee for Cooking, Frying & Sweets | Rich Aroma Natural Taste Airtight Jar
 Product ID: hhc-3756850
 SKU: hhc-3756850
@@ -7,11 +8,16 @@ Slug: barkat-buffalo-desi-ghee-premium-traditional-pure-ghee-for-cooking-fryi-cf
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/07802802d080201b7c165c297d5c21d1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/07802802d080201b7c165c297d5c21d1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/52876889b322430ea8bc9cc0a6c4cde5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/788c194da7fa9d4a523ef48dcb6a6a2f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/6cf060ec1566e14b2300037098a5482e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/f7fd68bc5257568fd36969b2019f4d8a.png
 Meta Title: Barkat Buffalo Desi Ghee – Premium Traditional Pure Ghee for Cooking
 Meta Description: Buy Barkat Buffalo Desi Ghee – Premium Traditional Pure Ghee for Cooking, Frying & Sweets | Rich Aroma Natural Taste Airtight Jar online in Pakistan from ASM VE
 Description: Barkat Buffalo Desi Ghee is made from high-quality buffalo milk using traditional methods. It delivers rich aroma, natural taste, and golden color, perfect for Pakistani dishes, sweets, frying, and daily cooking.
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

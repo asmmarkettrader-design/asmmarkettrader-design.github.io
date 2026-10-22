@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fontec Glow Wireless Earbuds – Bluetooth 5.3 Gaming Earphones with ENC Noise Cancellation & Transparent Charging Case
 Product ID: hhc-3759773
 SKU: hhc-3759773
@@ -7,11 +8,16 @@ Slug: fontec-glow-wireless-earbuds-bluetooth-5-3-gaming-earphones-with-enc-no-25
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/6387d0e9d9df4f0428a972ecc4c834f7.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/6387d0e9d9df4f0428a972ecc4c834f7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/db06cae8fe04ac1cea4bcf160eb650d7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/05c88015565a378dd8375a8c1678f32f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/227d71457e20aee54b81707cb4b92cf5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/f0680673d283e1e4a07ac0c8fce3dd8f.jpeg
 Meta Title: Fontec Glow Wireless Earbuds – Bluetooth 5.3 Gaming Earphones with E
 Meta Description: Buy Fontec Glow Wireless Earbuds – Bluetooth 5.3 Gaming Earphones with ENC Noise Cancellation & Transparent Charging Case online in Pakistan from ASM VEO. Spark
 Description: Spark up your audio experience with the Fontec Glow Wireless Earbuds. Powered by Bluetooth 5.3, these sleek in-ear headphones offer environmental noise cancellation (ENC), a ultra-low 50ms latency gaming mode, and a distinctive transparent top charging case layout.
-Regular Price: 3358
-Sale Price: 3358
+Wholesale Price: 3358
+Regular Price: 5680
+Sale Price: 4545
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

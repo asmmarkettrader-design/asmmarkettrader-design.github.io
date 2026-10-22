@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flamingo Foam Cleaner 650ML – Multi-Purpose Deep Cleaning Spray for Upholstery, Carpets, Leather & Hard Surfaces
 Product ID: hhc-3757737
 SKU: hhc-3757737
@@ -7,11 +8,16 @@ Slug: flamingo-foam-cleaner-650ml-multi-purpose-deep-cleaning-spray-for-uphol-ec
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Flamingo Foam Cleaner 650ML – Multi-Purpose Deep Cleaning Spray for
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/2f6d5d217d0b97d37761ec9495511885.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/2f6d5d217d0b97d37761ec9495511885.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/9a7cfd8a58a3b4d763d784afba5d4ad1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/87083bdef0a781575fceda39887cbf52.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/9f0d332b0228f10c65bdd23bf9fdc4f8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/17/eda8536081c2707ea8ebac96b53f30ab.jpeg
+Meta Title: Flamingo Foam Cleaner 650ML – Multi-Purpose Deep Cleaning Spray for 
 Meta Description: Buy Flamingo Foam Cleaner 650ML – Multi-Purpose Deep Cleaning Spray for Upholstery, Carpets, Leather & Hard Surfaces online in Pakistan from ASM VEO. Powerful f
 Description: Powerful foam cleaner that removes dirt, stains, and odors from upholstery, carpets, leather, and more. Its deep-cleaning formula lifts grime and restores original color while leaving a fresh finish on washable and painted surfaces.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

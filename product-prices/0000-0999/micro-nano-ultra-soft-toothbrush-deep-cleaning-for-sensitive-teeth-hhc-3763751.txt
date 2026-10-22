@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Micro-Nano Ultra Soft Toothbrush - Deep Cleaning for Sensitive Teeth
 Product ID: hhc-3763751
 SKU: hhc-3763751
@@ -7,11 +8,16 @@ Slug: micro-nano-ultra-soft-toothbrush-deep-cleaning-for-sensitive-teeth-hhc-376
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/3f98678853c305680dbc120e33eef7b7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/3f98678853c305680dbc120e33eef7b7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/4f8e1138ad979180e66de19333a5d1f5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/f30220cb348eee999a43fbeb1ca69ca6.jpg
 Meta Title: Micro-Nano Ultra Soft Toothbrush - Deep Cleaning for Sensitive Teeth
 Meta Description: Buy Micro-Nano Ultra Soft Toothbrush - Deep Cleaning for Sensitive Teeth online in Pakistan from ASM VEO. Micro Nano Ultra Soft Toothbrush Deep Cleaning For Sen
 Description: Micro Nano Ultra Soft Toothbrush Deep Cleaning For Sensitive Teeth Gentle Effective Durable Best Quality Practical Choice For Oral Care.
-Regular Price: 206
-Sale Price: 206
+Wholesale Price: 156
+Regular Price: 444
+Sale Price: 294
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

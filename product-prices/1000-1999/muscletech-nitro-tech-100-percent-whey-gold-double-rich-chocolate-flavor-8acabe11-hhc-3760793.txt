@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: MuscleTech Nitro Tech 100 Percent Whey Gold Double Rich Chocolate Flavor 2.2 Pounds 1 Kg Protein Powder
 Product ID: hhc-3760793
 SKU: hhc-3760793
@@ -7,11 +8,16 @@ Slug: muscletech-nitro-tech-100-percent-whey-gold-double-rich-chocolate-flavo-8a
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/169c2dba28b129d0e5a13496b6233b07.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/169c2dba28b129d0e5a13496b6233b07.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/8161255daf6fe74927dc6bd186c21c34.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/5110ee7180f1a7ca026398319ca7bed5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/92a908e7770568b2eec3809b8d5f1b3d.jpeg
 Meta Title: MuscleTech Nitro Tech 100 Percent Whey Gold Double Rich Chocolate Fl
 Meta Description: Buy MuscleTech Nitro Tech 100 Percent Whey Gold Double Rich Chocolate Flavor 2.2 Pounds 1 Kg Protein Powder online in Pakistan from ASM VEO. MuscleTech Nitro Te
 Description: MuscleTech Nitro Tech 100 Percent Whey Gold Double Rich Chocolate Flavor 2.2 Pounds 1 Kg High Quality Protein Supplement.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

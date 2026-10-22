@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 Oil Spray Jug - 470ml (Random Color)
 Product ID: hhc-2138075
 SKU: hhc-2138075
@@ -7,11 +8,16 @@ Slug: 2-in-1-oil-spray-jug-470ml-random-color-hhc-2138075
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/7-1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/7-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/6-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/5-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/4-5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/3-9.webp
 Meta Title: 2 in 1 Oil Spray Jug - 470ml (Random Color) | Buy Online in Pakistan
 Meta Description: Buy 2 in 1 Oil Spray Jug - 470ml (Random Color) online in Pakistan from ASM VEO. 2 in 1 Glass Oil Kettle, a versatile kitchen essential. This premium oil dispen
 Description: 2 in 1 Glass Oil Kettle, a versatile kitchen essential. This premium oil dispenser simplifies your cooking process, offering both spraying and pouring functions. Made from high-quality borosilicate glass, it ensures durability and a clear view of oil levels. The ergonomic handle and BPA-free lid enhance the user experience. With its dual functionality, it's perfect for various cooking styles. The spill-free design and easy cleaning make it a must-have for modern kitchens. Upgrade your culinary experience with our stylish and convenient Glass Oil Kettle!Original Picture
-Regular Price: 669
-Sale Price: 669
+Wholesale Price: 619
+Regular Price: 1200
+Sale Price: 958
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

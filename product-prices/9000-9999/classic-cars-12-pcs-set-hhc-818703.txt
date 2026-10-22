@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: classic cars (12 pcs Set )
 Product ID: hhc-818703
 SKU: hhc-818703
@@ -7,11 +8,16 @@ Slug: classic-cars-12-pcs-set-hhc-818703
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/25ac224f-8dc6-43d1-b5f6-118f32831eb7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/25ac224f-8dc6-43d1-b5f6-118f32831eb7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/413a028c-bb27-4f07-bdbf-01d62d8c1a18.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/17b426e8-8b76-4d9f-aef2-d0897452126a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/70c65a29-24fe-4365-83be-137674c2820e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/e0df7db4-d60b-40f6-a132-424fede16e5f.jpeg
 Meta Title: classic cars (12 pcs Set ) | Buy Online in Pakistan
 Meta Description: Buy classic cars (12 pcs Set ) online in Pakistan from ASM VEO. classic cars Toy for kids .. pull back function classic models 12pcs best quality (Random Cash o
 Description: classic cars Toy for kids .. pull back function classic models 12pcs best quality (Random color)
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

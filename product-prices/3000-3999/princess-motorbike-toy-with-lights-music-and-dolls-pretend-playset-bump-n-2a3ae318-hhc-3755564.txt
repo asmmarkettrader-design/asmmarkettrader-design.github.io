@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Princess Motorbike Toy With Lights Music And Dolls Pretend Playset Bump N Go Vehicle For Girls Kids Age 3 Plus (Random Color)
 Product ID: hhc-3755564
 SKU: hhc-3755564
@@ -7,11 +8,16 @@ Slug: princess-motorbike-toy-with-lights-music-and-dolls-pretend-playset-bump-2a
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/475bc8312b3095000cb57723462a2339.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/475bc8312b3095000cb57723462a2339.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/97311bbea7b526075123361c5593c899.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/342078a53c938f2faa175a6d39e02c40.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/b5ad2b8537df9d8576988be731ad0676.jpeg
 Meta Title: Princess Motorbike Toy With Lights Music And Dolls Pretend Playset B
 Meta Description: Buy Princess Motorbike Toy With Lights Music And Dolls Pretend Playset Bump N Go Vehicle For Girls Kids Age 3 Plus (Random Color) online in Pakistan from ASM VE
 Description: Princess Motorbike Toy With Lights Music And Dolls Pretend Playset For Girls Kids Age 3 Plus
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

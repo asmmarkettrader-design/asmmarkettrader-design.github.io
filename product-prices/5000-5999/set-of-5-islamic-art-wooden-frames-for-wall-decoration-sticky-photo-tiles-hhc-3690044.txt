@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 5 Islamic Art Wooden Frames For Wall Decoration / Sticky Photo Tiles
 Product ID: hhc-3690044
 SKU: hhc-3690044
@@ -7,11 +8,16 @@ Slug: set-of-5-islamic-art-wooden-frames-for-wall-decoration-sticky-photo-tiles-
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/e9387484636e009e02da98cb18840554.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/12/e9387484636e009e02da98cb18840554.jpeg
 Meta Title: Set Of 5 Islamic Art Wooden Frames For Wall Decoration / Sticky Phot
 Meta Description: Buy Set Of 5 Islamic Art Wooden Frames For Wall Decoration / Sticky Photo Tiles online in Pakistan from ASM VEO. Wall frame for room decoration Material : Woode
 Description: Wall frame for room decoration Material : Wooden Board and Photopaper Sticky Poster Size : 11 inches height and 8 Inches wide You can al6so send any picture of your choice Frames are stickable you can easily stick them on wallAfter Packeging Dimension. Length-Width: (8-11inches)Weight: 500gram
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

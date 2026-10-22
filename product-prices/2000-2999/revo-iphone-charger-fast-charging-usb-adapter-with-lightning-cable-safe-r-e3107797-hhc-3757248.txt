@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: REVO iPhone Charger – Fast Charging USB Adapter with Lightning Cable – Safe & Reliable Power Charging
 Product ID: hhc-3757248
 SKU: hhc-3757248
@@ -7,11 +8,16 @@ Slug: revo-iphone-charger-fast-charging-usb-adapter-with-lightning-cable-safe-e3
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/6b05f43268a92fc9942317cd6d860c58.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/6b05f43268a92fc9942317cd6d860c58.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/f4aaac460bf76a3b088cfe63561dea20.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/5dbe0eae8d7c96e8f7ff9dd398446961.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/2973262724cc455c63522a7532715dd3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/58576f09c437b1b2642bbdd8ee7912ad.jpeg
 Meta Title: REVO iPhone Charger – Fast Charging USB Adapter with Lightning Cable
 Meta Description: Buy REVO iPhone Charger – Fast Charging USB Adapter with Lightning Cable – Safe & Reliable Power Charging online in Pakistan from ASM VEO. REVO iPhone Charger o
 Description: REVO iPhone Charger offers fast and stable charging with a compatible Lightning cable. Designed for safe and efficient performance, it is ideal for daily use at home, office, or travel.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

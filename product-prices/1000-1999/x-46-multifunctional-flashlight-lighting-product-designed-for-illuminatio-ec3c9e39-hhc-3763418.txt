@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: X-46 Multifunctional Flashlight - Lighting Product Designed For Illumination And Daily Lighting Routine
 Product ID: hhc-3763418
 SKU: hhc-3763418
@@ -7,11 +8,16 @@ Slug: x-46-multifunctional-flashlight-lighting-product-designed-for-illuminat-ec
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/40b539ef8789bdbb0365994951076728.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/40b539ef8789bdbb0365994951076728.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/3f0d7ab07954b63b419dd3d1b7329d08.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/06cf80f60247dab871c4ff25b4dcf50a.jpeg
 Meta Title: X-46 Multifunctional Flashlight - Lighting Product Designed For Illu
 Meta Description: Buy X-46 Multifunctional Flashlight - Lighting Product Designed For Illumination And Daily Lighting Routine online in Pakistan from ASM VEO. The X-46 Multifunct
 Description: The X-46 Multifunctional Flashlight Is A Lighting Product Formulated To Help Provide Illumination And Daily Lighting Utility During Use.
-Regular Price: 4551
-Sale Price: 4551
+Wholesale Price: 4551
+Regular Price: 7620
+Sale Price: 6096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

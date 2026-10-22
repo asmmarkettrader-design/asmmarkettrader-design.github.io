@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Height Growth Wellness Nutrition Powder Daily Health Supplement Drink 75g Nutritional Support For Fitness And Wellbeing
 Product ID: hhc-3760614
 SKU: hhc-3760614
 Slug: height-growth-wellness-nutrition-powder-daily-health-supplement-drink-7-1adc179a-hhc-3760614
-Category: Beauty & Personal Care
-Subcategory: Health & Wellness
+Category: Health & Wellness
+Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/dd192f976dacecea90bba88f7c1167ee.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/dd192f976dacecea90bba88f7c1167ee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/786842190d28d5f0cf988cb6f819e5ef.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/59484f13299e6a5a10978bdaf718c6b9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/997cae7949c4177f60cc8bdb7de69ebf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/ad503235910cc31ef8bd926759510dd0.jpeg
 Meta Title: Height Growth Wellness Nutrition Powder Daily Health Supplement Drin
 Meta Description: Buy Height Growth Wellness Nutrition Powder Daily Health Supplement Drink 75g Nutritional Support For Fitness And Wellbeing online in Pakistan from ASM VEO. Hei
 Description: Height Growth Wellness Nutrition Powder Daily Health Supplement Drink 75g Nutritional Support For Fitness And General Health.
-Regular Price: 220
-Sale Price: 220
+Wholesale Price: 170
+Regular Price: 465
+Sale Price: 315
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

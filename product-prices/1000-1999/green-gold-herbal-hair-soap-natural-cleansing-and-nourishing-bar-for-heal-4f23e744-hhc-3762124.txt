@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Green Gold Herbal Hair Soap - Natural Cleansing And Nourishing Bar For Healthy Hair And Scalp Maintenance
 Product ID: hhc-3762124
 SKU: hhc-3762124
@@ -7,11 +8,16 @@ Slug: green-gold-herbal-hair-soap-natural-cleansing-and-nourishing-bar-for-he-4f
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/d54acf55bf44032ceca5c0f42379a3bd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/d54acf55bf44032ceca5c0f42379a3bd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/d3c66809d452b6dadeafee3f141f015c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/690f95b0eb289dfffa5653e5839ea25d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/4bd8163abfe2f80e34300facb7996504.png
 Meta Title: Green Gold Herbal Hair Soap - Natural Cleansing And Nourishing Bar F
 Meta Description: Buy Green Gold Herbal Hair Soap - Natural Cleansing And Nourishing Bar For Healthy Hair And Scalp Maintenance online in Pakistan from ASM VEO. The Green Gold He
 Description: The Green Gold Herbal Hair Soap Is A Natural Cleansing Bar Formulated To Gently Clean And Nourish The Hair While Supporting Scalp Health.
-Regular Price: 1203
-Sale Price: 1203
+Wholesale Price: 1153
+Regular Price: 2120
+Sale Price: 1697
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

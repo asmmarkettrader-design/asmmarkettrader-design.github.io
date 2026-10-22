@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 Pc Touch Screen Finger Sleeve, Mobile Game Fingering Sleeve, Anti-slip Anti-sweat Ultra-thin Breathable Touch Screen Finger Sleeves for Android Mobile Games
 Product ID: hhc-2746890
 SKU: hhc-2746890
@@ -7,11 +8,16 @@ Slug: 2-pc-touch-screen-finger-sleeve-mobile-game-fingering-sleeve-anti-slip-a89
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/wanzhow-presenting-a-new-lightweight-and-stylish-design-finger-original-imafud3yaqhjgmrw.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/03/wanzhow-presenting-a-new-lightweight-and-stylish-design-finger-original-imafud3yaqhjgmrw.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/61u5UkqMWrL._AC_SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/61SL9H3yq1L._AC_SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/6193Alnh76L._AC_SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/617AHQ04mbL._AC_SL1000_.jpg
 Meta Title: 2 Pc Touch Screen Finger Sleeve, Mobile Game Fingering Sleeve, Anti-
 Meta Description: Buy 2 Pc Touch Screen Finger Sleeve, Mobile Game Fingering Sleeve, Anti-slip Anti-sweat Ultra-thin Breathable Touch Screen Finger Sleeves for Android Mobile Gam
 Description: Product Description Breathable: Thanks to the advanced technology, we have reduced the thickness of the finger beds, which fit closer to your fingertip, suitable for most finger sizes. No need to worry about sharpening hands or fingers sultry when playing Easy to carry: no tools or driver required. Lightweight, easy to carry on the pocket and bag, which allows you to use it when you want to play games. Smooth Game Operation Experience: Insulation of hand sweat and screen contact, anti-slip, anti-fall, oil-resistant, anti-fingerprint, can also improve the skills of the game and avoid operational errors. Wide compatibility: this mobile phone case supports almost games on Android or IOS phone and also perfectly compatible for shooting games. Full finger screen, sensitive, let you enjoy a more efficient gaming experience
-Regular Price: 141
-Sale Price: 141
+Wholesale Price: 91
+Regular Price: 346
+Sale Price: 196
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

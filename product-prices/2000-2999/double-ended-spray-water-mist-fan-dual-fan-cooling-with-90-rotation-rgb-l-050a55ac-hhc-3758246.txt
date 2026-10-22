@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Double-Ended Spray Water Mist Fan – Dual Fan Cooling with 90° Rotation, RGB Lights, and Strong Brushless Motor – USB Powered Desktop Air Cooler | 16 Inches
 Product ID: hhc-3758246
 SKU: hhc-3758246
@@ -7,11 +8,16 @@ Slug: double-ended-spray-water-mist-fan-dual-fan-cooling-with-90-rotation-rgb-05
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/2ebb6f4ab12972af05bbd5f605b3f44f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/2ebb6f4ab12972af05bbd5f605b3f44f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/0b2986fa6ece165f0474fd0dc26514a3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/815ec9603e967df7cf45bfb0c2c14b04.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/55e0a090b4b8e0d85923ccff292e240e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/f93c0432c99a171ad2d28bb5b247d42f.jpg
 Meta Title: Double-Ended Spray Water Mist Fan – Dual Fan Cooling with 90° Rotati
 Meta Description: Buy Double-Ended Spray Water Mist Fan – Dual Fan Cooling with 90° Rotation, RGB Lights, and Strong Brushless Motor – USB Powered Desktop Air Cooler | 16 Inches
 Description: Experience double the cooling with the Double-Ended Spray Water Mist Fan. Featuring two powerful fans and a cool mist spray, this device uses a strong brushless motor and $90^{\circ}$ rotation to chill your personal space instantly.
-Regular Price: 4551
-Sale Price: 4551
+Wholesale Price: 4551
+Regular Price: 7620
+Sale Price: 6096
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

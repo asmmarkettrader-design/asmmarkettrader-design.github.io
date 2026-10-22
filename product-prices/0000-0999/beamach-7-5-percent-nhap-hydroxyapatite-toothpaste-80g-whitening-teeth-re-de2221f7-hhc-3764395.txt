@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Beamach 7.5 Percent nHAP Hydroxyapatite Toothpaste 80g Whitening Teeth Repair Sensitivity Protection Fresh Breath Up To 16 Hours
 Product ID: hhc-3764395
 SKU: hhc-3764395
@@ -7,11 +8,16 @@ Slug: beamach-7-5-percent-nhap-hydroxyapatite-toothpaste-80g-whitening-teeth-de2
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/68fdce90fd11e88cad803307059dc10e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/68fdce90fd11e88cad803307059dc10e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/7ed9e8b1876cb65a695efa525b64b36c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/f97fe78a704347cae22b35d990ed5943.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/b2db83546679863f789b6588d28012f8.jpeg
 Meta Title: Beamach 7.5 Percent nHAP Hydroxyapatite Toothpaste 80g Whitening Tee
 Meta Description: Buy Beamach 7.5 Percent nHAP Hydroxyapatite Toothpaste 80g Whitening Teeth Repair Sensitivity Protection Fresh Breath Up To 16 Hours online in Pakistan from ASM
 Description: Beamach 7.5 Percent nHAP Hydroxyapatite Toothpaste 80g Whitening Teeth Repair Sensitivity Protection Fresh Breath Up To 16 Hours.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

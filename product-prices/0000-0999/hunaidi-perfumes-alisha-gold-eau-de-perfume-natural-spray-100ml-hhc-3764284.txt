@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hunaidi Perfumes Alisha Gold Eau De Perfume Natural Spray (100ml)
 Product ID: hhc-3764284
 SKU: hhc-3764284
 Slug: hunaidi-perfumes-alisha-gold-eau-de-perfume-natural-spray-100ml-hhc-3764284
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/a32f1a3bd9f5ffcbcf388356434c67ae.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/a32f1a3bd9f5ffcbcf388356434c67ae.jpg
 Meta Title: Hunaidi Perfumes Alisha Gold Eau De Perfume Natural Spray (100ml) |
 Meta Description: Buy Hunaidi Perfumes Alisha Gold Eau De Perfume Natural Spray (100ml) online in Pakistan from ASM VEO. An elegant 100ml Eau De Perfume natural spray presented i
 Description: An elegant 100ml Eau De Perfume natural spray presented in a frosted glass silhouette bottle with gold accents. Features an enchanting blend of warm floral and oriental notes for a long-lasting fragrance.
-Regular Price: 970
-Sale Price: 970
+Wholesale Price: 550
+Regular Price: 1280
+Sale Price: 1020
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

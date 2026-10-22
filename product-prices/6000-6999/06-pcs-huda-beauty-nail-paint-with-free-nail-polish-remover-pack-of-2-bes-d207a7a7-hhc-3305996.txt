@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 06 Pcs Huda Beauty Nail Paint With Free Nail Polish Remover, Pack of 2 | Best Quality Nail Polish with Nail Polish Remover - Multicolor
 Product ID: hhc-3305996
 SKU: hhc-3305996
@@ -7,11 +8,16 @@ Slug: 06-pcs-huda-beauty-nail-paint-with-free-nail-polish-remover-pack-of-2-b-d2
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-26-at-4.17.15-PM_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-26-at-4.17.15-PM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-26-at-4.17.13-PM_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-26-at-4.17.14-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-26-at-4.17.14-PM.jpeg
 Meta Title: 06 Pcs Huda Beauty Nail Paint With Free Nail Polish Remover, Pack of
 Meta Description: Buy 06 Pcs Huda Beauty Nail Paint With Free Nail Polish Remover, Pack of 2 | Best Quality Nail Polish with Nail Polish Remover - Multicolor online in Pakistan f
 Description: 06 Pcs Huda Beauty Nail Paint With Free Nail Polish Remover, Pack of 2 | Best Quality Nail Polish with Nail Polish Remover - Multicolor Material: Liquid Color: Multicolor Product Feature: Smooth and Even Coverage, Nail Shaper, Endless Creativity, Resists Fading, Professional Manicure Package Includes: 6 x Nail Polish, 1 x Nail Polish Remover
-Regular Price: 809
-Sale Price: 809
+Wholesale Price: 759
+Regular Price: 1450
+Sale Price: 1161
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

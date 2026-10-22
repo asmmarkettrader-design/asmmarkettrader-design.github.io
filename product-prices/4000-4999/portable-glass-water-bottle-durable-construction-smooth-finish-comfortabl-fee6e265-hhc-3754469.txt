@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Glass Water Bottle Durable Construction Smooth Finish Comfortable Grip Easy Carry Premium Quality
 Product ID: hhc-3754469
 SKU: hhc-3754469
@@ -7,11 +8,16 @@ Slug: portable-glass-water-bottle-durable-construction-smooth-finish-comforta-fe
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/5341ced36d979003968c87f61ab6dc2c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/5341ced36d979003968c87f61ab6dc2c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/7f17c214ee4bae60a93671b9e08d0ee2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/df6053fdab5fbd6287f47ded895cea85.jpeg
 Meta Title: Portable Glass Water Bottle Durable Construction Smooth Finish Comfo
 Meta Description: Buy Portable Glass Water Bottle Durable Construction Smooth Finish Comfortable Grip Easy Carry Premium Quality online in Pakistan from ASM VEO. Portable Glass W
 Description: Portable Glass Water Bottle Provides Durable Construction Smooth Finish Comfortable Grip Easy Carry Premium Quality And Reliable Utility
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

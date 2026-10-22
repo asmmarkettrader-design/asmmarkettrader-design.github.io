@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bareeze Digital Classic 3-Piece Lawn Unstitched Suit (PR-7602)
 Product ID: hhc-3764082
 SKU: hhc-3764082
@@ -7,11 +8,16 @@ Slug: bareeze-digital-classic-3-piece-lawn-unstitched-suit-pr-7602-hhc-3764082
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/e7c41cae21bd39ce73a5398ca0757b40.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/e7c41cae21bd39ce73a5398ca0757b40.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/b8417164c24e6554972fb638404c5972.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/ee8531ff227c36e23b1794276289808d.jpg
 Meta Title: Bareeze Digital Classic 3-Piece Lawn Unstitched Suit (PR-7602) | Buy
 Meta Description: Buy Bareeze Digital Classic 3-Piece Lawn Unstitched Suit (PR-7602) online in Pakistan from ASM VEO. A stylish 3-piece unstitched summer lawn suit featuring a le
 Description: A stylish 3-piece unstitched summer lawn suit featuring a leaf-printed fancy lawn shirt in lime green and indigo, a matching printed fancy voil dupatta, and dyed lawn trousers. Light, breathable, and vibrant for summer.
-Regular Price: 3218
-Sale Price: 3218
+Wholesale Price: 3218
+Regular Price: 5450
+Sale Price: 4363
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

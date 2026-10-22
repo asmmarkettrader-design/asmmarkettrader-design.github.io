@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Deluxe Skin Quench Derma Vital Skincare, for Puffy eyes |Saggy Skin.
 Product ID: hhc-1168825
 SKU: hhc-1168825
@@ -7,11 +8,16 @@ Slug: deluxe-skin-quench-derma-vital-skincare-for-puffy-eyes-saggy-skin-hhc-1168
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/41czUqxnwPL.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/41czUqxnwPL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/41mwl5Lq19L.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/41yr0KZLHAL-1-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/71qB6MlGFcL._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/8d63143e-e5b3-4e4a-9849-d8248b9be56c.jpeg
 Meta Title: Deluxe Skin Quench Derma Vital Skincare, for Puffy eyes |Saggy Skin.
 Meta Description: Buy Deluxe Skin Quench Derma Vital Skincare, for Puffy eyes |Saggy Skin. online in Pakistan from ASM VEO. Wrinkles provides smooth texture to skin. Wrinkles fir
 Description: Wrinkles provides smooth texture to skin. Wrinkles firms and lifts your skin. Wrinkles removes wrinkles without use of any creams or chemicals. Combines the radio frequency effects of thermal energy and instant massaging stimulation This helps the skin appear more toned and tightened, smoothing out the appearance of fine lines and wrinkles Derma Wand For Wrinkles | Puffy Eyes | Saggy Skin | Non-Surgical Face Lift | High Frequency Machine
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

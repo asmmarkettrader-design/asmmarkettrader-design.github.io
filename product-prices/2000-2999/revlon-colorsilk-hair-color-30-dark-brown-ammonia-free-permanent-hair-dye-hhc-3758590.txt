@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Revlon ColorSilk Hair Color #30 Dark Brown – Ammonia Free Permanent Hair Dye
 Product ID: hhc-3758590
 SKU: hhc-3758590
@@ -7,11 +8,16 @@ Slug: revlon-colorsilk-hair-color-30-dark-brown-ammonia-free-permanent-hair-dye-
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
-Meta Title: Revlon ColorSilk Hair Color #30 Dark Brown – Ammonia Free Permanent
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/3420b6cbf1311b1cf8a839980e2100ee.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/3420b6cbf1311b1cf8a839980e2100ee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/12c05b419266ece712284f684ab3d415.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/848801859295348cbdd207ae3bc97a12.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/ec041b72aadcf146fa59e28197f73610.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/5f4162dd371470f21edb0eefcf78aa6f.jpeg
+Meta Title: Revlon ColorSilk Hair Color #30 Dark Brown – Ammonia Free Permanent 
 Meta Description: Buy Revlon ColorSilk Hair Color #30 Dark Brown – Ammonia Free Permanent Hair Dye online in Pakistan from ASM VEO. Rich dark brown hair color with a smooth, natu
 Description: Rich dark brown hair color with a smooth, natural-looking finish. Infused with nourishing silk proteins for soft, shiny, and healthy-looking hair.
-Regular Price: 1217
-Sale Price: 1217
+Wholesale Price: 1167
+Regular Price: 2150
+Sale Price: 1717
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

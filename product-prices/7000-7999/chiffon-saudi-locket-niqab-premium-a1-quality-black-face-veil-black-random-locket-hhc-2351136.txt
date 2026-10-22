@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Chiffon Saudi Locket Niqab – Premium A1 Quality Black Face Veil (Black) (Random Locket )
 Product ID: hhc-2351136
 SKU: hhc-2351136
@@ -7,11 +8,16 @@ Slug: chiffon-saudi-locket-niqab-premium-a1-quality-black-face-veil-black-ran-72
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-17-at-12.13.45-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-17-at-12.13.45-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-17-at-12.13.45-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-17-at-12.13.44-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-17-at-12.13.44-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-21-at-2.48.31-PM_cleanup.png
 Meta Title: Chiffon Saudi Locket Niqab – Premium A1 Quality Black Face Veil (Bla
 Meta Description: Buy Chiffon Saudi Locket Niqab – Premium A1 Quality Black Face Veil (Black) (Random Locket ) online in Pakistan from ASM VEO. Enhance your modest style with thi
 Description: Enhance your modest style with this premium chiffon Saudi niqab, crafted from soft, breathable fabric for all-day comfort. Designed with an elegant random locket detail, it adds a subtle touch of beauty while maintaining full coverage. Lightweight, durable, and perfect for daily wear.
-Regular Price: 515
-Sale Price: 515
+Wholesale Price: 465
+Regular Price: 950
+Sale Price: 758
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

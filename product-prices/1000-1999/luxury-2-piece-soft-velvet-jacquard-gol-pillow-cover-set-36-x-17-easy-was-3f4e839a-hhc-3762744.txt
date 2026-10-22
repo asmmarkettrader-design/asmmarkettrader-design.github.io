@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury 2 Piece Soft Velvet Jacquard Gol Pillow Cover Set 36 x 17 Easy Washable Floral Design
 Product ID: hhc-3762744
 SKU: hhc-3762744
@@ -7,11 +8,16 @@ Slug: luxury-2-piece-soft-velvet-jacquard-gol-pillow-cover-set-36-x-17-easy-w-3f
 Category: Home & Kitchen
 Subcategory: Bedding & Linen
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/fa31b516aae2458446fff5b24e2ee316.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/fa31b516aae2458446fff5b24e2ee316.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/79152cfe6bf7322263c81482786f9ed8.jpeg
 Meta Title: Luxury 2 Piece Soft Velvet Jacquard Gol Pillow Cover Set 36 x 17 Eas
 Meta Description: Buy Luxury 2 Piece Soft Velvet Jacquard Gol Pillow Cover Set 36 x 17 Easy Washable Floral Design online in Pakistan from ASM VEO. Luxury 2 Piece Gol Pillow Cove
 Description: Luxury 2 Piece Gol Pillow Cover Set Made With Soft Velvet Jacquard Stuff. Easy Washable With A Beautiful Floral Design.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

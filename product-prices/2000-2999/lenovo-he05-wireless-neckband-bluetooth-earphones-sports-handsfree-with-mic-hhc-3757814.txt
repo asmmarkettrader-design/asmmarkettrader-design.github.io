@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lenovo HE05 Wireless Neckband Bluetooth Earphones | Sports Handsfree with Mic
 Product ID: hhc-3757814
 SKU: hhc-3757814
@@ -7,11 +8,16 @@ Slug: lenovo-he05-wireless-neckband-bluetooth-earphones-sports-handsfree-with-mi
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/2301c4550872c1f83a4d2c1980aa03aa.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/2301c4550872c1f83a4d2c1980aa03aa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/397632cbf5b3d4d622a8d264f2313c37.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/124296ddd8ab7a2ed2b178260ed8e89d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/6367b89d690fc314cd2b4eb29e1fa250.jpeg
 Meta Title: Lenovo HE05 Wireless Neckband Bluetooth Earphones | Sports Handsfree
 Meta Description: Buy Lenovo HE05 Wireless Neckband Bluetooth Earphones | Sports Handsfree with Mic online in Pakistan from ASM VEO. Lenovo HE05 neckband is a budget-friendly wir
 Description: Lenovo HE05 neckband is a budget-friendly wireless earphone with Bluetooth 5.0, strong bass sound, and comfortable design—perfect for daily use and workouts.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

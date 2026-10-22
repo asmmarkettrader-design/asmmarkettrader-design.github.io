@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Rechargeable LED Flashlight – Waterproof Torch with USB Fast Charging & Side Lamp (Metal Body)
 Product ID: hhc-3752150
 SKU: hhc-3752150
@@ -7,11 +8,16 @@ Slug: mini-rechargeable-led-flashlight-waterproof-torch-with-usb-fast-chargin-93
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757835503-68c670ef182ee-imgi_4_WhatsApp-Image-2024-10-31-at-6.25.28-PM.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757835503-68c670ef182ee-imgi_4_WhatsApp-Image-2024-10-31-at-6.25.28-PM.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757835503-68c670ef84bf7-imgi_6_WhatsApp-Image-2024-10-31-at-6.25.27-PM.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757835502-68c670eea508b-imgi_2_WhatsApp-Image-2024-10-31-at-6.25.26-PM.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1757835501-68c670ed06bf7-imgi_3_WhatsApp-Image-2024-10-31-at-6.25.27-PM-2_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/d4284e5198ccb3bff123bdcd0c5b2063.jpeg
 Meta Title: Mini Rechargeable LED Flashlight – Waterproof Torch with USB Fast Ch
 Meta Description: Buy Mini Rechargeable LED Flashlight – Waterproof Torch with USB Fast Charging & Side Lamp (Metal Body) online in Pakistan from ASM VEO. Compact Mini LED Flashl
 Description: Compact Mini LED Flashlight with USB fast charging, waterproof build, and side lamp display. Ideal for camping, hiking, emergencies, and daily use.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Nail Art Set &amp; Shimmer
 Product ID: hhc-2188476
 SKU: hhc-2188476
@@ -7,11 +8,16 @@ Slug: kids-nail-art-set-amp-shimmer-hhc-2188476
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-18-at-6.03.49-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-18-at-6.03.49-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-18-at-6.03.49-PM.jpeg
 Meta Title: Kids Nail Art Set &amp; Shimmer | Buy Online in Pakistan
 Meta Description: Buy Kids Nail Art Set &amp; Shimmer online in Pakistan from ASM VEO. Kids Nail Art Set &amp; Shimmer Material: kid's set Product Type: Kids Nail Art Set &amp; C
 Description: Kids Nail Art Set &amp; Shimmer Material: kid's set Product Type: Kids Nail Art Set &amp; Shimmer Package include: 1 × set(4 Shimmer ,Glue, 12 Nails) &nbsp;
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

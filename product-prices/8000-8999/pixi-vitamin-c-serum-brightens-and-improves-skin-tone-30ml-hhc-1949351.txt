@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pixi Vitamin C Serum | Brightens and Improves Skin Tone - 30ml
 Product ID: hhc-1949351
 SKU: hhc-1949351
@@ -7,11 +8,16 @@ Slug: pixi-vitamin-c-serum-brightens-and-improves-skin-tone-30ml-hhc-1949351
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/66b749f9-6412-4aec-bae5-0f20b2ec991f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/66b749f9-6412-4aec-bae5-0f20b2ec991f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/bad788d3-a1cb-45f0-82fc-56c18fbdee0b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/b964ed3b-339a-4ab1-b423-f08d99cde689.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/7b1f34c8-308c-44d3-a74f-43f79104e07c.jpeg
 Meta Title: Pixi Vitamin C Serum | Brightens and Improves Skin Tone - 30ml | Buy
 Meta Description: Buy Pixi Vitamin C Serum | Brightens and Improves Skin Tone - 30ml online in Pakistan from ASM VEO. Pixi Vitamin C Serum &nbsp; Beneficial In: Suitable in summe
 Description: Pixi Vitamin C Serum &nbsp; Beneficial In: Suitable in summer season protect your skin from Sunlight Make skin glowy and hydrated gives extra glow Helps In: Pixi Beauty Vitamin-C Serum provides brightening Gives Glow and Antioxidants to skin for a boost of both immediate and long-term radiance &nbsp; Material: Liquid Weight: 30 ML &nbsp; Package Includes: 1 × Serum
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

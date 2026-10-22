@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Quick Push Game 30 Level
 Product ID: hhc-710582
 SKU: hhc-710582
@@ -7,11 +8,16 @@ Slug: quick-push-game-30-level-hhc-710582
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/940d138584110cb70b4f716990662c4c.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/940d138584110cb70b4f716990662c4c.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/3d474994c030b8522544d5e0a25c678d.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/af5213ce5273b28cbc61e6e180b21994.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/41e5c9137df09faa64435a8d6261ecd4.jpg_750x750.jpg_.webp
 Meta Title: Quick Push Game 30 Level | Buy Online in Pakistan
 Meta Description: Buy Quick Push Game 30 Level online in Pakistan from ASM VEO. Description: Name: Decompression Toys Packing: color box Applicable age: children (4-6 yea Cash on
 Description: Description: Name: Decompression Toys Packing: color box Applicable age: children (4-6 years old) Material: ABS
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

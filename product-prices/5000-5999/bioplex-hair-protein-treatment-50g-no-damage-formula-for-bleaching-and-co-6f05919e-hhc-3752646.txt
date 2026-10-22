@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bioplex Hair Protein Treatment 50g – No Damage Formula For Bleaching And Coloring | Protein Balls For Soft, Shiny, And Healthy Blonde Hair
 Product ID: hhc-3752646
 SKU: hhc-3752646
@@ -7,11 +8,16 @@ Slug: bioplex-hair-protein-treatment-50g-no-damage-formula-for-bleaching-and-6f0
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/dceb91e2a7bce16792521987d9bc8bf1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/dceb91e2a7bce16792521987d9bc8bf1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/6b9d3483447e7e2dd214889e122ca80e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/5db1265f3881e33ade3f91d77bb4802f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/6451e7fb8cc9a5a68e94d2fd722377a1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/7fbdbe13d785b2da380833e80e8d8a0a.png
 Meta Title: Bioplex Hair Protein Treatment 50g – No Damage Formula For Bleaching
 Meta Description: Buy Bioplex Hair Protein Treatment 50g – No Damage Formula For Bleaching And Coloring | Protein Balls For Soft, Shiny, And Healthy Blonde Hair online in Pakista
 Description: Bioplex Hair Protein Treatment Strengthens And Protects Hair During Bleaching And Coloring, Giving You Smooth, Shiny, And Damage-Free Blonde Hair.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

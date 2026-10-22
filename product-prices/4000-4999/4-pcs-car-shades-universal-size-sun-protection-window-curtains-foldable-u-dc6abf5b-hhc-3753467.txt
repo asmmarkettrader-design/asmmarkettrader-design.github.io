@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4 Pcs Car Shades Universal Size Sun Protection Window Curtains Foldable UV Blocking Car Sunshades For Front And Rear Windows
 Product ID: hhc-3753467
 SKU: hhc-3753467
@@ -7,11 +8,16 @@ Slug: 4-pcs-car-shades-universal-size-sun-protection-window-curtains-foldable-dc
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/63ffaa773812719fd2164844b468591b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/63ffaa773812719fd2164844b468591b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/37eac2590dcdc2fc03228522e7596533.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/a1762409371f3c39601331e15dc3b501.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/c2d3d3a131949a8336528dfb1e558099.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/a28b27543b4aafea9ca97eac57a2f2de.png
 Meta Title: 4 Pcs Car Shades Universal Size Sun Protection Window Curtains Folda
 Meta Description: Buy 4 Pcs Car Shades Universal Size Sun Protection Window Curtains Foldable UV Blocking Car Sunshades For Front And Rear Windows online in Pakistan from ASM VEO
 Description: 4 Pcs Universal Size Car Shades Provide Effective Sun Protection And UV Blocking To Keep Your Vehicle Cool And Comfortable.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

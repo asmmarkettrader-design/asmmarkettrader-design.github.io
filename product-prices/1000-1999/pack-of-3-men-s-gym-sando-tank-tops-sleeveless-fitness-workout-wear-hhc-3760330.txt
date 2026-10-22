@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 Men's Gym Sando Tank Tops – Sleeveless Fitness & Workout Wear
 Product ID: hhc-3760330
 SKU: hhc-3760330
@@ -7,11 +8,16 @@ Slug: pack-of-3-men-s-gym-sando-tank-tops-sleeveless-fitness-workout-wear-hhc-37
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/8ad6fd560183778a8bea15ccf46b7e1f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/8ad6fd560183778a8bea15ccf46b7e1f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/179b1d40ada3a03fd0d8f8f631325a47.jpeg
 Meta Title: Pack of 3 Men's Gym Sando Tank Tops – Sleeveless Fitness & Workout W
 Meta Description: Buy Pack of 3 Men's Gym Sando Tank Tops – Sleeveless Fitness & Workout Wear online in Pakistan from ASM VEO. Pack of 3 Men's Sando Tank Tops – Sleeveless Gym Ve
 Description: Pack of 3 Men's Sando Tank Tops – Sleeveless Gym Vest for Fitness, Workout, Bodybuilding, Training, Running & Daily Wear – Comfortable and Breathable Fabric
-Regular Price: 1177
-Sale Price: 1177
+Wholesale Price: 1127
+Regular Price: 2080
+Sale Price: 1660
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

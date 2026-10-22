@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dove Face Body Cream Providing Gentle Care Durable Quality Comfortable Use Everyday Skin Nourishment Support - 150g
 Product ID: hhc-3754837
 SKU: hhc-3754837
@@ -7,11 +8,16 @@ Slug: dove-face-body-cream-providing-gentle-care-durable-quality-comfortable-690
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: Dove
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/523fb20037741fe48f125f5f0f0182d2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/523fb20037741fe48f125f5f0f0182d2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/96af55b9a953d2d9dcca922ed49295d8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/45eaface6863fc8d35434b2df4713dbe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/4ed78b188f498ec9f14ae821089bc746.jpeg
 Meta Title: Dove Face Body Cream Providing Gentle Care Durable Quality Comfortab
 Meta Description: Buy Dove Face Body Cream Providing Gentle Care Durable Quality Comfortable Use Everyday Skin Nourishment Support - 150g online in Pakistan from ASM VEO. Dove Fa
 Description: Dove Face Body Cream Offering Gentle Care Comfortable Use And Reliable Daily Skin Nourishment
-Regular Price: 388
-Sale Price: 388
+Wholesale Price: 338
+Regular Price: 717
+Sale Price: 567
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

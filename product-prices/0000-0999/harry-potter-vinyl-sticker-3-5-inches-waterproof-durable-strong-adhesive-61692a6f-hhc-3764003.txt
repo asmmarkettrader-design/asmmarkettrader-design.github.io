@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Harry Potter Vinyl Sticker 3.5 Inches Waterproof Durable Strong Adhesive High Quality PVC Practical Choice For Fans Laptop Notebook And Bottle Decoration
 Product ID: hhc-3764003
 SKU: hhc-3764003
@@ -7,11 +8,16 @@ Slug: harry-potter-vinyl-sticker-3-5-inches-waterproof-durable-strong-adhesiv-61
 Category: Books & Stationery
 Subcategory: Laptops & Computers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/5547b594eeb12f74e2068e71c8fb6019.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/5547b594eeb12f74e2068e71c8fb6019.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/2648950c01958299f801f5a18cdc9a34.jpg
 Meta Title: Harry Potter Vinyl Sticker 3.5 Inches Waterproof Durable Strong Adhe
 Meta Description: Buy Harry Potter Vinyl Sticker 3.5 Inches Waterproof Durable Strong Adhesive High Quality PVC Practical Choice For Fans Laptop Notebook And Bottle Decoration on
 Description: Harry Potter Vinyl Sticker 3.5 Inches Waterproof Durable Strong Adhesive High Quality PVC Practical Choice For Fans Laptop Notebook And Bottle Decoration.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

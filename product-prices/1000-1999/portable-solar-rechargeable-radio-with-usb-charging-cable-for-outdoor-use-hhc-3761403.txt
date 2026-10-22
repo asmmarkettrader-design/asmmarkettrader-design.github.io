@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Solar Rechargeable Radio With USB Charging Cable For Outdoor Use
 Product ID: hhc-3761403
 SKU: hhc-3761403
@@ -7,11 +8,16 @@ Slug: portable-solar-rechargeable-radio-with-usb-charging-cable-for-outdoor-use-
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/483a0b847ec25c23ba69f6d681769dba.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/483a0b847ec25c23ba69f6d681769dba.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/94db24f08639e4b1693d4167ef63293a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/2244ea76abfb55ad80e7341c9d137eb9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/53e801c05bd76ee4bbb56f1155a24534.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/05/62999ad68376f38e37884447b8655f9d.jpg
 Meta Title: Portable Solar Rechargeable Radio With USB Charging Cable For Outdoo
 Meta Description: Buy Portable Solar Rechargeable Radio With USB Charging Cable For Outdoor Use online in Pakistan from ASM VEO. Portable Solar Rechargeable Radio With USB Chargi
 Description: Portable Solar Rechargeable Radio With USB Charging Cable For Outdoor Use
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

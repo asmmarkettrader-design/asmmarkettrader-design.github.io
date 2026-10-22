@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: School Bag Class 5 To 8 Durable Quality Comfortable Carry Reliable Utility Stylish Design For Students Daily School Use
 Product ID: hhc-3754067
 SKU: hhc-3754067
@@ -7,11 +8,16 @@ Slug: school-bag-class-5-to-8-durable-quality-comfortable-carry-reliable-util-74
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/92a7912b0931f2838c296b25291192f3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/92a7912b0931f2838c296b25291192f3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/390166db39edcb1ff855183f28f1aaa6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/24805ea07c0d713636b710a7c80d976a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/358df8fb771eda0de35debec7b982f9c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/5e1b6ee91798785304f5664bd7b973f6.jpeg
 Meta Title: School Bag Class 5 To 8 Durable Quality Comfortable Carry Reliable U
 Meta Description: Buy School Bag Class 5 To 8 Durable Quality Comfortable Carry Reliable Utility Stylish Design For Students Daily School Use online in Pakistan from ASM VEO. Sch
 Description: School Bag Class 5 To 8 Provides Durable Quality Comfortable Carry Reliable Utility Stylish Design And Compact Build
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

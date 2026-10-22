@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Eventone-C Glutathione & Vitamin C Cream – Intensive Skin Fairness & Dark Spot Care for Men & Women
 Product ID: hhc-3755854
 SKU: hhc-3755854
@@ -7,11 +8,16 @@ Slug: eventone-c-glutathione-vitamin-c-cream-intensive-skin-fairness-dark-spo-a6
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/f4551d1b7d5de84b0cc222dc8fc18329.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/f4551d1b7d5de84b0cc222dc8fc18329.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/1a0643b33089b55af859b9e527d5f201.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/82f3f30fd27dd78e0c5e8ad471eb5493.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/4d745180252a1ea8b2f8cb14ad244681.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/cf2ef60b8e1be4db1611613d21e8d2dc.png
 Meta Title: Eventone-C Glutathione & Vitamin C Cream – Intensive Skin Fairness &
 Meta Description: Buy Eventone-C Glutathione & Vitamin C Cream – Intensive Skin Fairness & Dark Spot Care for Men & Women online in Pakistan from ASM VEO. Eventone-C Cream with G
 Description: Eventone-C Cream with Glutathione & Vitamin C helps treat skin darkness and supports brighter, more even-toned skin. Suitable for men and women.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

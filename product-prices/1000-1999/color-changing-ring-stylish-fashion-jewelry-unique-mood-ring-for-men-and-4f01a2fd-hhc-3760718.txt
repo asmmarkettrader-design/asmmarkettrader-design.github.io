@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring For Men And Women Everyday Wear | Random Design And Color
 Product ID: hhc-3760718
 SKU: hhc-3760718
@@ -7,11 +8,16 @@ Slug: color-changing-ring-stylish-fashion-jewelry-unique-mood-ring-for-men-an-4f
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/041fa05542d8600507d96a7bbc480d98.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/041fa05542d8600507d96a7bbc480d98.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/8fb8b25543d6716463a778c2e3c39dda.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/54a71110404a6eac31766186bb98da84.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/3136e44617166a6c274b19525801bef9.jpeg
 Meta Title: Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring For Men
 Meta Description: Buy Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring For Men And Women Everyday Wear | Random Design And Color online in Pakistan from ASM VEO. Colo
 Description: Color Changing Ring Stylish Fashion Jewelry Unique Mood Ring Perfect For Daily Wear And Special Occasions.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

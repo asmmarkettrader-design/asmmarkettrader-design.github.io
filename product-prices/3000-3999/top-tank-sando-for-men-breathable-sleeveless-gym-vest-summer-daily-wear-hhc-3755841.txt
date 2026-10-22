@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Top Tank Sando for Men – Breathable Sleeveless Gym Vest | Summer Daily Wear
 Product ID: hhc-3755841
 SKU: hhc-3755841
@@ -7,11 +8,16 @@ Slug: top-tank-sando-for-men-breathable-sleeveless-gym-vest-summer-daily-wear-hh
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/fc9ba3562407333f874994b0dca4e898.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/fc9ba3562407333f874994b0dca4e898.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/ccfa4720a2b3843ecb39a56907b925d2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/4804eedeab9d658240191bd5ac0c0d0e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/23/de34785124c8750330b6ee95b6fd510f.jpeg
 Meta Title: Top Tank Sando for Men – Breathable Sleeveless Gym Vest | Summer Dai
 Meta Description: Buy Top Tank Sando for Men – Breathable Sleeveless Gym Vest | Summer Daily Wear online in Pakistan from ASM VEO. Top Tank Sando for Men – Breathable Sleeveless
 Description: Top Tank Sando for Men – Breathable Sleeveless Gym Vest | Summer Daily Wear
-Regular Price: 526
-Sale Price: 526
+Wholesale Price: 476
+Regular Price: 970
+Sale Price: 774
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

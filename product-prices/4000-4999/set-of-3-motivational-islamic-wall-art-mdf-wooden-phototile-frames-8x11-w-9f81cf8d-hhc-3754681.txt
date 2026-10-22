@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Motivational Islamic Wall Art – MDF Wooden Phototile Frames (8x11") with Adhesive Back
 Product ID: hhc-3754681
 SKU: hhc-3754681
@@ -7,11 +8,16 @@ Slug: set-of-3-motivational-islamic-wall-art-mdf-wooden-phototile-frames-8x11-9f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/51441e6cdc9fb937318c09d91c7adb8f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/51441e6cdc9fb937318c09d91c7adb8f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/21/a7451baa1576e489e1d0452e2cd0b13e.png
 Meta Title: Set of 3 Motivational Islamic Wall Art – MDF Wooden Phototile Frames
 Meta Description: Buy Set of 3 Motivational Islamic Wall Art – MDF Wooden Phototile Frames (8x11") with Adhesive Back online in Pakistan from ASM VEO. Set of 3 motivational Islam
 Description: Set of 3 motivational Islamic wall art frames made from MDF wood, each 8x11". Includes adhesive tape for easy wall mounting. Designed to add a spiritual and uplifting touch to your space.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

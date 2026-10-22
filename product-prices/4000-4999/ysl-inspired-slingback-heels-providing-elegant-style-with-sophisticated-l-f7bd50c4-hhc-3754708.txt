@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: YSL Inspired Slingback Heels Providing Elegant Style With Sophisticated Look Durable Quality Comfortable Wear
 Product ID: hhc-3754708
 SKU: hhc-3754708
@@ -7,11 +8,16 @@ Slug: ysl-inspired-slingback-heels-providing-elegant-style-with-sophisticated-f7
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/cdf79d0c1dca99490bc504a6c565f7b3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/cdf79d0c1dca99490bc504a6c565f7b3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/f051c845cbd21712564fffaaff1e315e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/05725c86156161177891c22939ccd5f6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/0700e3cf594fd2b53931477ee71fee80.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/52dda6df7208f8d012e0c41d9b031ca4.jpeg
 Meta Title: YSL Inspired Slingback Heels Providing Elegant Style With Sophistica
 Meta Description: Buy YSL Inspired Slingback Heels Providing Elegant Style With Sophisticated Look Durable Quality Comfortable Wear online in Pakistan from ASM VEO. YSL Inspired
 Description: YSL Inspired Slingback Heels Offering Elegant Style With Durable Quality And Comfortable Daily Wear
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

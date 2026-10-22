@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multicolors Lipstick Set For Daily Use – Liquid Lipstick Collection With Smooth Shade Of Red  Texture
 Product ID: hhc-3753537
 SKU: hhc-3753537
@@ -7,11 +8,16 @@ Slug: multicolors-lipstick-set-for-daily-use-liquid-lipstick-collection-with-705
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Multicolors Lipstick Set For Daily Use – Liquid Lipstick Collection
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/8f19e21bb5dd48e3bef8f10e21060cce.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/8f19e21bb5dd48e3bef8f10e21060cce.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/cbdbc293b9e1e8ce17ee2319dde15744.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/112ec73fa873095266c10f7744347fce.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/7d996f1f7b42dac70bb75ebfae513eed.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/40e70891223c9964a9612ef21b54d310.jpeg
+Meta Title: Multicolors Lipstick Set For Daily Use – Liquid Lipstick Collection 
 Meta Description: Buy Multicolors Lipstick Set For Daily Use – Liquid Lipstick Collection With Smooth Shade Of Red Texture online in Pakistan from ASM VEO. Multicolors Lipstick S
 Description: Multicolors Lipstick Set For Daily Use Features Liquid Lipsticks With A Smooth Texture And Vibrant Shades For A Long-Lasting, Beautiful Look.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

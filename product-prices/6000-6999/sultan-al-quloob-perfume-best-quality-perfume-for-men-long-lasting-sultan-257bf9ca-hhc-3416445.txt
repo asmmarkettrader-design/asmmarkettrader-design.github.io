@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sultan Al Quloob Perfume | Best Quality Perfume For Men | Long Lasting Sultan Al Quloob Perfume | Perfume For Men | Eau De Parfum - 100 ml
 Product ID: hhc-3416445
 SKU: hhc-3416445
@@ -7,11 +8,16 @@ Slug: sultan-al-quloob-perfume-best-quality-perfume-for-men-long-lasting-sult-25
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/Web_Photo_Editor-2-8.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/Web_Photo_Editor-2-8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-28-at-9.13.28-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-28-at-9.13.29-PM.jpeg
 Meta Title: Sultan Al Quloob Perfume | Best Quality Perfume For Men | Long Lasti
 Meta Description: Buy Sultan Al Quloob Perfume | Best Quality Perfume For Men | Long Lasting Sultan Al Quloob Perfume | Perfume For Men | Eau De Parfum - 100 ml online in Pakista
 Description: Sultan Al Quloob Perfume | Best Quality Perfume For Men | Long Lasting Sultan Al Quloob Perfume | Perfume For Men | Eau De Parfum - 100 mlProduct Details:Lasting: 02 to 03 HoursSize: 100 mlQuality: CopyType: Eau De ParfumTargeted Gender: Men'sProduct Original Picture &amp; Video [video width="720" height="1280" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Video-2025-06-28-at-11.38.51-AM-online-video-cutter.com-2.mp4"][/video]
-Regular Price: 987
-Sale Price: 987
+Wholesale Price: 480
+Regular Price: 1300
+Sale Price: 1037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

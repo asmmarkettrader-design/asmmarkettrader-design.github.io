@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Balance Car Doll With Rotation Musical Sound 3d Lighting Universal Movement And Battery Operated Princess Toy
 Product ID: hhc-3755569
 SKU: hhc-3755569
@@ -7,11 +8,16 @@ Slug: balance-car-doll-with-rotation-musical-sound-3d-lighting-universal-move-7d
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/8f3824c09e73894106685dd48bf37faa.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/8f3824c09e73894106685dd48bf37faa.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/6586d814a5c95a197b22849130afcf81.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/781d1cc364d6eb541885d1a1b77caa38.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/76f2659a8165a7b76ed99d21978d0830.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/b1aa2a046a17fd5273bd077cd2eabadf.jpeg
 Meta Title: Balance Car Doll With Rotation Musical Sound 3d Lighting Universal M
 Meta Description: Buy Balance Car Doll With Rotation Musical Sound 3d Lighting Universal Movement And Battery Operated Princess Toy online in Pakistan from ASM VEO. Balance Car D
 Description: Balance Car Doll With Rotation Musical Sound And 3d Lighting For Kids Fun And Safe Play
-Regular Price: 2023
-Sale Price: 2023
+Wholesale Price: 2023
+Regular Price: 3640
+Sale Price: 2911
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

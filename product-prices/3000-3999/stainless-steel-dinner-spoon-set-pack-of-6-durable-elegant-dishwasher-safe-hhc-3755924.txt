@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Dinner Spoon Set | Pack of 6 | Durable, Elegant & Dishwasher Safe
 Product ID: hhc-3755924
 SKU: hhc-3755924
@@ -7,11 +8,16 @@ Slug: stainless-steel-dinner-spoon-set-pack-of-6-durable-elegant-dishwasher-safe
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/ac941b690dd603f5abcf1e4df006310f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/ac941b690dd603f5abcf1e4df006310f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/a1231fb19c2fc26b18172efffd49b7e2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/f1be40185efdfa95efb8286668dc8c42.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/0921c3ba5bddcc47d344b1997d216e82.jpeg
 Meta Title: Stainless Steel Dinner Spoon Set | Pack of 6 | Durable, Elegant & Di
 Meta Description: Buy Stainless Steel Dinner Spoon Set | Pack of 6 | Durable, Elegant & Dishwasher Safe online in Pakistan from ASM VEO. Premium stainless steel dinner spoon set
 Description: Premium stainless steel dinner spoon set (6 pcs). Durable, rust‑resistant, elegant design with gift box.
-Regular Price: 509
-Sale Price: 509
+Wholesale Price: 459
+Regular Price: 940
+Sale Price: 748
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: K35 High Quality Wireless Dual Microphone For Mobile Phone And Camera
 Product ID: hhc-3765503
 SKU: hhc-3765503
@@ -7,11 +8,16 @@ Slug: k35-high-quality-wireless-dual-microphone-for-mobile-phone-and-camera-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/648198d1379b2f22f274371e5a81bff6.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/648198d1379b2f22f274371e5a81bff6.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/7c4cc66e41f39a5183080f4896d1de47.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/a4874898d8f2e98554d042fbffe0affa.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/6537b594bc1af475d1c42b97d5a49480.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/0f16d0641194e8fe54f05ab5d0a84125.webp
 Meta Title: K35 High Quality Wireless Dual Microphone For Mobile Phone And Camer
 Meta Description: Buy K35 High Quality Wireless Dual Microphone For Mobile Phone And Camera online in Pakistan from ASM VEO. K35 Wireless Microphone. Professional wireless lavali
 Description: K35 Wireless Microphone. Professional wireless lavalier microphone system, perfect for mobile recording, vlogging, streaming, and interviews. Plug-and-play design, compact, and easy to use. Compatible with most smartphones and cameras. Package includes transmitter and receiver.
-Regular Price: 1485
-Sale Price: 1485
+Wholesale Price: 1435
+Regular Price: 2620
+Sale Price: 2098
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

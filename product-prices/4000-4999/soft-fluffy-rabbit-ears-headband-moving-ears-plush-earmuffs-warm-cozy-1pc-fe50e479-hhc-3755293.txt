@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Soft Fluffy Rabbit Ears Headband | Moving Ears Plush Earmuffs | Warm & Cozy – 1Pc Random Colour
 Product ID: hhc-3755293
 SKU: hhc-3755293
@@ -7,11 +8,16 @@ Slug: soft-fluffy-rabbit-ears-headband-moving-ears-plush-earmuffs-warm-cozy-1-fe
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/4465e7d915819514efe478c5fe2b4f04.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/4465e7d915819514efe478c5fe2b4f04.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/bb190fb74b895455e5608b907cf2d90e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/b8ce63c3770a861be8435318ba4e705f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/14894ef36c182301d61f14f98b228d5a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/0f66195e3ebbb2cfb6b419b2ebdcc6a5.jpg
 Meta Title: Soft Fluffy Rabbit Ears Headband | Moving Ears Plush Earmuffs | Warm
 Meta Description: Buy Soft Fluffy Rabbit Ears Headband | Moving Ears Plush Earmuffs | Warm & Cozy – 1Pc Random Colour online in Pakistan from ASM VEO. 1Pc soft fluffy rabbit ears
 Description: 1Pc soft fluffy rabbit ears headband with moving ears. Plush earmuffs design, warm and cozy. Random colour.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

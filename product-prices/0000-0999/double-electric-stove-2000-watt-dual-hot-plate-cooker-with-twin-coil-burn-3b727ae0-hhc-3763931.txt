@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Double Electric Stove – 2000 Watt Dual Hot Plate Cooker with Twin Coil Burners | Fast Heating, Energy-Efficient Electric Cooking Stove for Home, Hostels & Outdoor Use
 Product ID: hhc-3763931
 SKU: hhc-3763931
@@ -7,11 +8,16 @@ Slug: double-electric-stove-2000-watt-dual-hot-plate-cooker-with-twin-coil-bu-3b
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/2a69670fc6229b429e20e96db6f2a3e7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/2a69670fc6229b429e20e96db6f2a3e7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/c4beb8962565d2b59b70d2663bdcf034.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/9599ca221ac464195df539af19341b00.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/5301297854ad596b8987a2a9b3566b37.png
 Meta Title: Double Electric Stove – 2000 Watt Dual Hot Plate Cooker with Twin Co
 Meta Description: Buy Double Electric Stove – 2000 Watt Dual Hot Plate Cooker with Twin Coil Burners | Fast Heating, Energy-Efficient Electric Cooking Stove for Home, Hostels & O
 Description: This Double Electric Stove with Dual Hot Plates is designed for efficient and convenient cooking. Equipped with twin coil burners, it delivers rapid heat-up and consistent temperature control, making it perfect for boiling, frying, simmering, and reheating.
-Regular Price: 2782
-Sale Price: 2782
+Wholesale Price: 2782
+Regular Price: 4920
+Sale Price: 3936
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

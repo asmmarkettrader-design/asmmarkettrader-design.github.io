@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: IKT Hair Wax Stick Gel Cream Styling Hair Frizz Fixed Fluffy Children Men and Women Styling Wax Edge Control
 Product ID: hhc-2890867
 SKU: hhc-2890867
@@ -7,11 +8,16 @@ Slug: ikt-hair-wax-stick-gel-cream-styling-hair-frizz-fixed-fluffy-children-m-3a
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/a19beaa31ab21a5df3b46278df2f8461.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/12/a19beaa31ab21a5df3b46278df2f8461.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-22-at-10.39.49-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-22-at-10.39.49-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-22-at-10.39.49-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-22-at-10.39.48-PM.jpeg
 Meta Title: IKT Hair Wax Stick Gel Cream Styling Hair Frizz Fixed Fluffy Childre
 Meta Description: Buy IKT Hair Wax Stick Gel Cream Styling Hair Frizz Fixed Fluffy Children Men and Women Styling Wax Edge Control online in Pakistan from ASM VEO. IKT Hair Wax S
 Description: IKT Hair Wax Stick Gel Cream Styling Hair Frizz Fixed Fluffy Children Men and Women Styling Wax Edge ControlMaterial: SyntheticTexture: SmoothHair Types: All Hair TypesProduct Feature: Frizz Control, Style, NourishVolume: 75 g,2.7 fl.ozMade in China
-Regular Price: 889
-Sale Price: 889
+Wholesale Price: 839
+Regular Price: 1600
+Sale Price: 1277
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

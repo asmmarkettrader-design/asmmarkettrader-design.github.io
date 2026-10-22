@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Digital Weight Scale - Cell Operated
 Product ID: hhc-1642310
 SKU: hhc-1642310
@@ -7,11 +8,16 @@ Slug: kitchen-digital-weight-scale-cell-operated-hhc-1642310
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/125.01-600x600-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/125.01-600x600-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/04/125.03.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/result-15.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/result-14.png
 Meta Title: Kitchen Digital Weight Scale - Cell Operated | Buy Online in Pakista
 Meta Description: Buy Kitchen Digital Weight Scale - Cell Operated online in Pakistan from ASM VEO. Best Quality Kitchen Scale. 1gram To 10kg Capacity. Support Kg + Grams + Oz. 0
 Description: Best Quality Kitchen Scale. 1gram To 10kg Capacity. Support Kg + Grams + Oz. 0.6″ Inch Digital LCD Display. Automatic Zero Resetting. Automatic Switch Off. 1gram Sensitivity. Low Power Indicator. Auto Power ON/Off. Over Load Indicator. Easy &amp; Hygienic Care. Strong Structure.
-Regular Price: 1113
-Sale Price: 1113
+Wholesale Price: 1063
+Regular Price: 1960
+Sale Price: 1569
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

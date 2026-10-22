@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flamingo Leather Polish 500ML – Premium Shine & Protection for All Leather Surfaces
 Product ID: hhc-3757473
 SKU: hhc-3757473
@@ -7,11 +8,16 @@ Slug: flamingo-leather-polish-500ml-premium-shine-protection-for-all-leather-sur
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/cbc90bee9630877fe48d53416c9bc35c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/cbc90bee9630877fe48d53416c9bc35c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/8282f4d4d82e79ece4dfcf3c4ba14591.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/e54c7ba964cfdd8fd75adf270152bc79.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/81031db6e3fdf314a6ccfbe2dc29fb2d.jpg
 Meta Title: Flamingo Leather Polish 500ML – Premium Shine & Protection for All L
 Meta Description: Buy Flamingo Leather Polish 500ML – Premium Shine & Protection for All Leather Surfaces online in Pakistan from ASM VEO. Flamingo Leather Polish 500ML restores
 Description: Flamingo Leather Polish 500ML restores shine, nourishes leather, and protects against cracks, fading, and dryness for long-lasting care.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

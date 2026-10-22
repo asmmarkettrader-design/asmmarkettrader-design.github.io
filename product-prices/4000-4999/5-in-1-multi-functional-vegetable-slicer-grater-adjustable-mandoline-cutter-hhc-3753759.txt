@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5-in-1 Multi-Functional Vegetable Slicer & Grater – Adjustable Mandoline Cutter
 Product ID: hhc-3753759
 SKU: hhc-3753759
@@ -7,11 +8,16 @@ Slug: 5-in-1-multi-functional-vegetable-slicer-grater-adjustable-mandoline-cutte
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/e52c674e5e29014ada331719dbc9789f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/e52c674e5e29014ada331719dbc9789f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/be6382b25233be97183db4f2c33c140d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/4eecf33743f568e3723006fb52dddc32.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/176665cdc22726328ad62e986d5ee6cd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/187c090bf5b4a0ff1d96b491419583fa.jpeg
 Meta Title: 5-in-1 Multi-Functional Vegetable Slicer & Grater – Adjustable Mando
 Meta Description: Buy 5-in-1 Multi-Functional Vegetable Slicer & Grater – Adjustable Mandoline Cutter online in Pakistan from ASM VEO. The 5-in-1 Manual Vegetable Cutter & Slicer
 Description: The 5-in-1 Manual Vegetable Cutter & Slicer is a multifunction kitchen tool designed for quick and effortless slicing, shredding, grating, and cutting. With five interchangeable blades, a safe hand guard, and a compact design, it makes food prep faster, easier, and safer.
-Regular Price: 727
-Sale Price: 727
+Wholesale Price: 677
+Regular Price: 1300
+Sale Price: 1042
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gold Beauty Cream for All skin
 Product ID: hhc-1875661
 SKU: hhc-1875661
@@ -7,11 +8,16 @@ Slug: gold-beauty-cream-for-all-skin-hhc-1875661
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Gold-cream.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Gold-cream.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/GoldBeautyCream-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsAppImage2024-01-16at8.44.05PM.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/GoldBeautyCream01.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsAppImage2024-01-16at8.33.41PM.webp
 Meta Title: Gold Beauty Cream for All skin | Buy Online in Pakistan
 Meta Description: Buy Gold Beauty Cream for All skin online in Pakistan from ASM VEO. Gold Beauty Cream By Moon Touch Introduction: Enhance your skin's radiance with Moon Touch C
 Description: Gold Beauty Cream By Moon Touch Introduction: Enhance your skin's radiance with Moon Touch Gold Beauty Cream. This luxurious cosmetic treatment is infused with moisturizers, antioxidants, and vitamins to nourish your skin and give it a luminous glow. How To Use: In general, it is recommended to first cleanse and dry your face before applying the cream. You can then take a small amount of the cream and apply it to your face, massaging it gently into your skin using upward circular motions. It is important to avoid getting the cream into your eyes or mouth. Gold Beauty Cream is typically used once or twice a day, as part of a regular skincare routine. It is always advisable to read the instructions and follow them carefully to ensure safe and effective use of the product. Benefits: Get ready to achieve a luminous glow in just a few days with Gold Beauty Cream. Expertly formulated with scientifically proven ingredients, this cream will leave your skin looking radiant and refreshed. Enjoy the many benefits of this luxurious product and reveal your best skin yet.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

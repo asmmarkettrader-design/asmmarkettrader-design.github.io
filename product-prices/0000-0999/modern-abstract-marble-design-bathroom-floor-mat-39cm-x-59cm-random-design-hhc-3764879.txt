@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern Abstract Marble Design Bathroom Floor Mat (39cm x 59cm) - Random Design
 Product ID: hhc-3764879
 SKU: hhc-3764879
@@ -7,11 +8,16 @@ Slug: modern-abstract-marble-design-bathroom-floor-mat-39cm-x-59cm-random-design
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/aeafde4937b0eb51c73609a186222873.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/aeafde4937b0eb51c73609a186222873.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/1e003bad7dd2d694d3b58b78910c63d1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/22594e3d70dcaafb0e956615a90eb042.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/503ae6763120f50e067ddd9d528839ba.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/63c479174fb26e437feb90f366a6934a.jpg
 Meta Title: Modern Abstract Marble Design Bathroom Floor Mat (39cm x 59cm) - Ran
 Meta Description: Buy Modern Abstract Marble Design Bathroom Floor Mat (39cm x 59cm) - Random Design online in Pakistan from ASM VEO. Stylish marble-patterned floor mat with a mo
 Description: Stylish marble-patterned floor mat with a modern abstract design, ideal for bathrooms and living areas.
-Regular Price: 608
-Sale Price: 608
+Wholesale Price: 558
+Regular Price: 1090
+Sale Price: 869
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Optimum Nutrition Serious Mass – High-Calorie Chocolate Weight Gainer Protein Powder for Muscle Building, Strength & Healthy Weight Gain -  2lbs
 Product ID: hhc-3755672
 SKU: hhc-3755672
@@ -7,11 +8,16 @@ Slug: optimum-nutrition-serious-mass-high-calorie-chocolate-weight-gainer-pro-dc
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/a194a0efff940d72e9449f78e3073a99.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/a194a0efff940d72e9449f78e3073a99.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/faacbf020e49c00945b43f96a0ef11f8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/5ead9c22174713488b7de83b7c5f23c3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/770308d11c90c8e98fa2ed2432e2f7b1.jpeg
 Meta Title: Optimum Nutrition Serious Mass – High-Calorie Chocolate Weight Gaine
 Meta Description: Buy Optimum Nutrition Serious Mass – High-Calorie Chocolate Weight Gainer Protein Powder for Muscle Building, Strength & Healthy Weight Gain - 2lbs online in Pa
 Description: Optimum Nutrition Serious Mass (2lbs, Chocolate) is a high-calorie weight gainer designed to support muscle growth, strength, and healthy weight gain.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

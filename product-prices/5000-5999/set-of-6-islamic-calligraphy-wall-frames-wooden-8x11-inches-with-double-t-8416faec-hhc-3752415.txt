@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 6 Islamic Calligraphy Wall Frames – Wooden 8x11 Inches with Double Tape for Easy Mounting
 Product ID: hhc-3752415
 SKU: hhc-3752415
@@ -7,11 +8,16 @@ Slug: set-of-6-islamic-calligraphy-wall-frames-wooden-8x11-inches-with-double-84
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/454c3b82d6e2a72458d3f2fd9635ccbb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/454c3b82d6e2a72458d3f2fd9635ccbb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/852e74768242d506b16c79a2f0d8ebe7.jpeg
 Meta Title: Set of 6 Islamic Calligraphy Wall Frames – Wooden 8x11 Inches with D
 Meta Description: Buy Set of 6 Islamic Calligraphy Wall Frames – Wooden 8x11 Inches with Double Tape for Easy Mounting online in Pakistan from ASM VEO. Enhance your home décor wi
 Description: Enhance your home décor with this set of 6 beautifully designed Islamic calligraphy wall frames. Crafted on durable wooden material in 8x11 inches size, these vibrant artworks come with double tape for easy wall mounting, making them a perfect blend of spirituality and modern elegance.
-Regular Price: 922
-Sale Price: 922
+Wholesale Price: 872
+Regular Price: 1660
+Sale Price: 1324
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

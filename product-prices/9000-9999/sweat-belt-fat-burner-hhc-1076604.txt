@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sweat Belt Fat Burner
 Product ID: hhc-1076604
 SKU: hhc-1076604
@@ -7,11 +8,16 @@ Slug: sweat-belt-fat-burner-hhc-1076604
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/5-2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/2-7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/1-16.jpeg
 Meta Title: Sweat Belt Fat Burner | Buy Online in Pakistan
 Meta Description: Buy Sweat Belt Fat Burner online in Pakistan from ASM VEO. Sweat Belt.fat burner Waist trimmer belt. easy to wear adjustable.. Burn unwanted fat.. Pr Cash on De
 Description: Sweat Belt.fat burner Waist trimmer belt. easy to wear adjustable.. Burn unwanted fat.. Premium Waist trimmer. Great for any activity. Stretchable Fat burner For men and women A very effective fat burner 💥Gym 💥jogging 💥home workout
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

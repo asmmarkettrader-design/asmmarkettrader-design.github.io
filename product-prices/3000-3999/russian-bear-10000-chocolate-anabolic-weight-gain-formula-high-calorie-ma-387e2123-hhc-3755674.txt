@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Russian Bear 10000 – Chocolate Anabolic Weight Gain Formula | High-Calorie Mass Gainer for Extreme Muscle - 2lbs Growth & Strength
 Product ID: hhc-3755674
 SKU: hhc-3755674
@@ -7,11 +8,16 @@ Slug: russian-bear-10000-chocolate-anabolic-weight-gain-formula-high-calorie-387
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/53196a48c40157551ba191e4dc55953f.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/53196a48c40157551ba191e4dc55953f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/90c555f3761cedd13c32c4236d1c4632.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/f62c3c9446a4779f9c50e75508b59bda.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/bd0216663593cc7b4dc8ebb72b04467a.jpeg
 Meta Title: Russian Bear 10000 – Chocolate Anabolic Weight Gain Formula | High-C
 Meta Description: Buy Russian Bear 10000 – Chocolate Anabolic Weight Gain Formula | High-Calorie Mass Gainer for Extreme Muscle - 2lbs Growth & Strength online in Pakistan from A
 Description: Russian Bear 10000 (2 lbs, Chocolate) is a powerful anabolic weight gain formula designed to support extreme muscle growth, increased size, and superior strength.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

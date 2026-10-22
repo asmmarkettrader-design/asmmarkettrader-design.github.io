@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VC Vitamin C Serum Brightening Hydrating Facial Serum 10ml Moisturizing Anti Aging Formula For Glowing Healthy Looking Skin (10ml)
 Product ID: hhc-3764396
 SKU: hhc-3764396
@@ -7,11 +8,16 @@ Slug: vc-vitamin-c-serum-brightening-hydrating-facial-serum-10ml-moisturizing-5f
 Category: Skincare
 Subcategory: Toners & Serums
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/26/f5340d127294a6c91699609c07af65de.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/26/f5340d127294a6c91699609c07af65de.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/26/54096944a0be02eca1843e2c850ef4b0.jpeg
 Meta Title: VC Vitamin C Serum Brightening Hydrating Facial Serum 10ml Moisturiz
 Meta Description: Buy VC Vitamin C Serum Brightening Hydrating Facial Serum 10ml Moisturizing Anti Aging Formula For Glowing Healthy Looking Skin (10ml) online in Pakistan from A
 Description: VC Vitamin C Serum Brightening Hydrating Facial Serum 10ml Moisturizing Anti Aging Formula For Glowing Healthy Looking Skin.
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

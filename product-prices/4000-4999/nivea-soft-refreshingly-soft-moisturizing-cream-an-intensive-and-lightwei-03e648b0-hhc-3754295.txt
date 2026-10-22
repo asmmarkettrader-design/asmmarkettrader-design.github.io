@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: NIVEA Soft: Refreshingly Soft Moisturizing Cream - An Intensive and Lightweight Solution for All-Day Hydration
 Product ID: hhc-3754295
 SKU: hhc-3754295
@@ -7,11 +8,16 @@ Slug: nivea-soft-refreshingly-soft-moisturizing-cream-an-intensive-and-lightw-03
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: NIVEA Soft: Refreshingly Soft Moisturizing Cream - An Intensive and
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/4d66dde567c65938b77d635b43579b9c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/4d66dde567c65938b77d635b43579b9c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/6ee5dcf30679ddecd9fae6027cb9d31d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/e837c719b12b6c985efe8150abda4a21.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/28a99ca9364a92fff940f646a2c31df3.jpeg
+Meta Title: NIVEA Soft: Refreshingly Soft Moisturizing Cream - An Intensive and 
 Meta Description: Buy NIVEA Soft: Refreshingly Soft Moisturizing Cream - An Intensive and Lightweight Solution for All-Day Hydration online in Pakistan from ASM VEO. NIVEA Soft i
 Description: NIVEA Soft is a refreshingly soft moisturizing cream that provides intensive, long-lasting hydration for your face, body, and hands. Its lightweight, non-greasy formula absorbs quickly, leaving your skin feeling supple, soft, and refreshed instantly.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

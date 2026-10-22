@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hand Press Button Plier – Heavy Duty Metal Body with 50 Snap Buttons | Manual Fastener Tool for Tailoring - With Lock
 Product ID: hhc-3753892
 SKU: hhc-3753892
@@ -7,11 +8,16 @@ Slug: hand-press-button-plier-heavy-duty-metal-body-with-50-snap-buttons-manu-2a
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/463a517c6be2789dcdba1f9e3342e86d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/463a517c6be2789dcdba1f9e3342e86d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/b9eb8aad76311f7d7c4d6a072bd0adf3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/5c43a39bd202adbe16b12b8aa2fdf7b7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6c47e54685bd468e88e0253e57745028.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/0cc7c4bb21e70a8911c817b0bf523e8b.webp
 Meta Title: Hand Press Button Plier – Heavy Duty Metal Body with 50 Snap Buttons
 Meta Description: Buy Hand Press Button Plier – Heavy Duty Metal Body with 50 Snap Buttons | Manual Fastener Tool for Tailoring - With Lock online in Pakistan from ASM VEO. Durab
 Description: Durable metal body hand press plier with 50 buttons included. Ideal for installing snaps on clothing, bags, denim, leather, kids wear, and DIY fabric projects.
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

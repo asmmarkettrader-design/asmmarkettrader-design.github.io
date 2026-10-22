@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Veet Pure Hair Removal Cream For Normal Skin 100g Tube Gentle Effective Reliable Smooth Finish Practical Choice For Daily Beauty Care
 Product ID: hhc-3763480
 SKU: hhc-3763480
@@ -7,11 +8,16 @@ Slug: veet-pure-hair-removal-cream-for-normal-skin-100g-tube-gentle-effective-68
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/1b24e66dd92877af7cd60a4da2641ec7.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/1b24e66dd92877af7cd60a4da2641ec7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/052657188047b6ba89c2b97e85abef06.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/534dd4b7a32a66f8ab7fad8571caec67.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/a2f935d3d5d03a5e2dbf8b67b8d907ed.jpeg
 Meta Title: Veet Pure Hair Removal Cream For Normal Skin 100g Tube Gentle Effect
 Meta Description: Buy Veet Pure Hair Removal Cream For Normal Skin 100g Tube Gentle Effective Reliable Smooth Finish Practical Choice For Daily Beauty Care online in Pakistan fro
 Description: Veet Pure Hair Removal Cream For Normal Skin 100g Tube Gentle Effective Reliable Smooth Finish Practical Choice For Daily Beauty Care.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

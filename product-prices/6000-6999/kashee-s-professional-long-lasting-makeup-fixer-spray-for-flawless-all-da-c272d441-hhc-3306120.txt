@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashee's Professional Long-Lasting Makeup Fixer Spray for Flawless All-Day Wear | Best Quality Makeup Fixer Spray For Bridal | Makeup Fixer Spray For Girls - 160ml
 Product ID: hhc-3306120
 SKU: hhc-3306120
@@ -7,11 +8,16 @@ Slug: kashee-s-professional-long-lasting-makeup-fixer-spray-for-flawless-all-c27
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp_Image_2025-05-26_at_4.15.55_PM__2_-removebg-preview.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp_Image_2025-05-26_at_4.15.55_PM__2_-removebg-preview.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/Web_Photo_Editor-2-2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-26-at-4.15.55-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/vsd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-05-26-at-4.15.55-PM-1.jpeg
 Meta Title: Kashee's Professional Long-Lasting Makeup Fixer Spray for Flawless A
 Meta Description: Buy Kashee's Professional Long-Lasting Makeup Fixer Spray for Flawless All-Day Wear | Best Quality Makeup Fixer Spray For Bridal | Makeup Fixer Spray For Girls
 Description: Kashee's Professional Long-Lasting Makeup Fixer Spray for Flawless All-Day Wear | Best Quality Makeup Fixer Spray For Bridal | Makeup Fixer Spray For Girls - 160mlProduct Details:Material: LiquidProduct Feature: Matte And PorelessPackage Includes: 1 x Makeup FixerVolume: 160 Ml Product Original Picture
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

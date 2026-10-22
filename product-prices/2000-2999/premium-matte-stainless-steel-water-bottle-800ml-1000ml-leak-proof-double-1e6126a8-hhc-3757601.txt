@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Matte Stainless Steel Water Bottle 800ml 1000ml Leak Proof Double Wall Insulated Hot Cold Flask
 Product ID: hhc-3757601
 SKU: hhc-3757601
@@ -7,11 +8,16 @@ Slug: premium-matte-stainless-steel-water-bottle-800ml-1000ml-leak-proof-doub-1e
 Category: Travel & Outdoor
 Subcategory: Sports Equipment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/c308e9b1f9899dc15fe379c4a0b29558.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/c308e9b1f9899dc15fe379c4a0b29558.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/be1a3866261e2017cbcf46bfd60fbd90.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/876889dc9a42410fb32dd8aa25b6785f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/998ae4e2910d1315ff1f7bdeb7a73008.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/c8acb2f29f106cd08eb2a5beaf49956e.jpeg
 Meta Title: Premium Matte Stainless Steel Water Bottle 800ml 1000ml Leak Proof D
 Meta Description: Buy Premium Matte Stainless Steel Water Bottle 800ml 1000ml Leak Proof Double Wall Insulated Hot Cold Flask online in Pakistan from ASM VEO. Premium Matte Stain
 Description: Premium Matte Stainless Steel Water Bottle 800ml 1000ml Leak Proof Double Wall Insulated Hot Cold Flask.
-Regular Price: 1541
-Sale Price: 1541
+Wholesale Price: 1491
+Regular Price: 2720
+Sale Price: 2177
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

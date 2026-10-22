@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Mini Facial Gun – Portable Deep Muscle & Face Massager for Gym and Home Use
 Product ID: hhc-3606230
 SKU: hhc-3606230
@@ -7,11 +8,16 @@ Slug: black-mini-facial-gun-portable-deep-muscle-face-massager-for-gym-and-home-
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/e0696594-68ff-45f5-a595-784a4680dc6b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/e0696594-68ff-45f5-a595-784a4680dc6b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/Sc55771502aec42d984a31e135d82bacfi.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/S1a2ed10536364d06a9df4c363f546a31p.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/WhatsApp-Image-2024-09-09-at-4.24.42-PM.jpeg
 Meta Title: Black Mini Facial Gun – Portable Deep Muscle & Face Massager for Gym
 Meta Description: Buy Black Mini Facial Gun – Portable Deep Muscle & Face Massager for Gym and Home Use online in Pakistan from ASM VEO. Black Mini Facial Gun – Portable Deep Mus
 Description: Black Mini Facial Gun – Portable Deep Muscle & Face Massager for Gym and Home Use
-Regular Price: 804
-Sale Price: 804
+Wholesale Price: 754
+Regular Price: 1440
+Sale Price: 1153
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

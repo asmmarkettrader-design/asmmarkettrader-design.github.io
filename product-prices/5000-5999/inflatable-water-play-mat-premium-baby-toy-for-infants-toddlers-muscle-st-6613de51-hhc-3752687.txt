@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Inflatable Water Play Mat – Premium Baby Toy For Infants & Toddlers, Muscle Strengthening & Sensory Development
 Product ID: hhc-3752687
 SKU: hhc-3752687
@@ -7,11 +8,16 @@ Slug: inflatable-water-play-mat-premium-baby-toy-for-infants-toddlers-muscle-661
 Category: Toys & Games
 Subcategory: Outdoor & Sports Toys
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/c4df1c5005ef05d7cb402863f3370332.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/c4df1c5005ef05d7cb402863f3370332.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/3e8cb78cbf6d8613f57f62584ab8bacf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/45cb1ed408e68bea2d6ab055e0609bc8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/7e19083104b5691a49f3688ca165a8fd.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/08/605fa96a264994b6870aaa9b5f5878b9.webp
 Meta Title: Inflatable Water Play Mat – Premium Baby Toy For Infants & Toddlers,
 Meta Description: Buy Inflatable Water Play Mat – Premium Baby Toy For Infants & Toddlers, Muscle Strengthening & Sensory Development online in Pakistan from ASM VEO. Inflatable
 Description: Inflatable Water Play Mat – Premium Baby Toy For Infants & Toddlers, Muscle Strengthening & Sensory Development
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

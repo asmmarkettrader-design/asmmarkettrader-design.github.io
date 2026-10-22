@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Motorcycle LED Turn Signal Light Supports 12V To 24V Flashing Indicator DRL Brake Tail Lamp
 Product ID: hhc-3757052
 SKU: hhc-3757052
@@ -7,11 +8,16 @@ Slug: motorcycle-led-turn-signal-light-supports-12v-to-24v-flashing-indicator-c7
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/0031c09b2e405c9a8d85fca58420a5b0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/0031c09b2e405c9a8d85fca58420a5b0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/a8d39b90d1f54961a3306650c518c463.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/8f52f569db0a0c5ecbbf8fc15a2dfea4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/4aa524b02af2a633d6f1698978676474.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/2b1298551f66ea203698dfdb1278196c.jpeg
 Meta Title: Motorcycle LED Turn Signal Light Supports 12V To 24V Flashing Indica
 Meta Description: Buy Motorcycle LED Turn Signal Light Supports 12V To 24V Flashing Indicator DRL Brake Tail Lamp online in Pakistan from ASM VEO. Universal Motorcycle LED Turn S
 Description: Universal Motorcycle LED Turn Signal Light 12V/24V – Flashing Indicator Lamp with DRL, Tail & Brake Light Function – High Brightness, Waterproof Design, Energy Saving, Easy Installation, Durable Decorative Lighting for Bikes & Scooters
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

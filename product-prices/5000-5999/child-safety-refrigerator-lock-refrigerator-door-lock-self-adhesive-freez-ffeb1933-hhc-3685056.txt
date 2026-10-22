@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Child Safety Refrigerator Lock, Refrigerator Door Lock, Self Adhesive Freezer Door, Refrigerator Door, Double Safety Button, Home Safe Design, Child Proof Refrigerator Door Lock Multicolor
 Product ID: hhc-3685056
 SKU: hhc-3685056
@@ -7,11 +8,16 @@ Slug: child-safety-refrigerator-lock-refrigerator-door-lock-self-adhesive-fre-ff
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/61dMpy1DnL._AC_SX569_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/61dMpy1DnL._AC_SX569_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/71BBQUvSyL._AC_SX569_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/61qXn7EucnL._AC_SX569_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/711rcCNxDeL._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/81yf6NwxGpL._AC_SL1500_.jpg
 Meta Title: Child Safety Refrigerator Lock, Refrigerator Door Lock, Self Adhesiv
 Meta Description: Buy Child Safety Refrigerator Lock, Refrigerator Door Lock, Self Adhesive Freezer Door, Refrigerator Door, Double Safety Button, Home Safe Design, Child Proof R
 Description: Child Safety Refrigerator Lock, Refrigerator Door Lock, Self Adhesive Freezer Door, Refrigerator Door, Double Safety Button, Home Safe Design, Child Proof Refrigerator Door Lock Multicolor
-Regular Price: 439
-Sale Price: 439
+Wholesale Price: 389
+Regular Price: 800
+Sale Price: 644
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

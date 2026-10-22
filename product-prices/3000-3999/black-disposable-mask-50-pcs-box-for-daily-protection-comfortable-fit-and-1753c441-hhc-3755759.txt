@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Disposable Mask 50 Pcs Box For Daily Protection Comfortable Fit And Easy Breathing
 Product ID: hhc-3755759
 SKU: hhc-3755759
@@ -7,11 +8,16 @@ Slug: black-disposable-mask-50-pcs-box-for-daily-protection-comfortable-fit-a-17
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/44b21486c969a57b38c2723bd163bd28.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/44b21486c969a57b38c2723bd163bd28.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/4d855ac8a769bb91e7db81d4d4f336c3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/d3e637c66cfc17c366d3d741e28b520e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/a4cd3b6e4a5583a3483c9d1a663e244d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/75ac22947dc701b6d7fb810b20afd2cc.jpeg
 Meta Title: Black Disposable Mask 50 Pcs Box For Daily Protection Comfortable Fi
 Meta Description: Buy Black Disposable Mask 50 Pcs Box For Daily Protection Comfortable Fit And Easy Breathing online in Pakistan from ASM VEO. Black Disposable Mask 50 Pcs Box P
 Description: Black Disposable Mask 50 Pcs Box Provides Easy Breathing And Comfortable Fit For Daily Use.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

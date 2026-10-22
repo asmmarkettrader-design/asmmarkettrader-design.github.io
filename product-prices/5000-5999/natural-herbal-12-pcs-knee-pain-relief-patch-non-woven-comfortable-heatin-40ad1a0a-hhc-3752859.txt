@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Natural Herbal 12 Pcs Knee Pain Relief Patch, Non-Woven Comfortable Heating Pads For Joint, Muscle, And Arthritis Pain Relief Therapy
 Product ID: hhc-3752859
 SKU: hhc-3752859
@@ -7,11 +8,16 @@ Slug: natural-herbal-12-pcs-knee-pain-relief-patch-non-woven-comfortable-heat-40
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
-Meta Title: Natural Herbal 12 Pcs Knee Pain Relief Patch, Non-Woven Comfortable
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/0b76e4e284756894f57e1e486fdd7f86.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/0b76e4e284756894f57e1e486fdd7f86.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/0cca563b76be0dcca3ca9d05fe713797.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/e92b9bb859a3d2508e1e3b0725579486.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/cc48bdd9833b602d2fb60aac9ad5114f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/20/cb98b18210643a436f7fac9482abf957.jpeg
+Meta Title: Natural Herbal 12 Pcs Knee Pain Relief Patch, Non-Woven Comfortable 
 Meta Description: Buy Natural Herbal 12 Pcs Knee Pain Relief Patch, Non-Woven Comfortable Heating Pads For Joint, Muscle, And Arthritis Pain Relief Therapy online in Pakistan fro
 Description: Natural Herbal Knee Pain Relief Patches Provide Soothing Warmth, Reduce Joint Discomfort, And Help Improve Mobility With Non-Woven Skin-Friendly Material.
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

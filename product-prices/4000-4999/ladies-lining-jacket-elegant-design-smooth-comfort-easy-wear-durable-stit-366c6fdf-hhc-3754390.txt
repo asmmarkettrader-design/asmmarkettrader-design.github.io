@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ladies Lining Jacket Elegant Design Smooth Comfort Easy Wear Durable Stitching Lightweight (Only Jacket)
 Product ID: hhc-3754390
 SKU: hhc-3754390
@@ -7,11 +8,16 @@ Slug: ladies-lining-jacket-elegant-design-smooth-comfort-easy-wear-durable-st-36
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/ce625275335238bece69a6ab40d6a8f4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/ce625275335238bece69a6ab40d6a8f4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/39e8636b797b0e1116b31c90a3edce06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/78fdb97658c542d3edab3a951ef5c759.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/69e40c895e3ee0f4a257d781f98c5c23.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/15/b0c0d85e743173fa09f4b46adddfa27a.jpeg
 Meta Title: Ladies Lining Jacket Elegant Design Smooth Comfort Easy Wear Durable
 Meta Description: Buy Ladies Lining Jacket Elegant Design Smooth Comfort Easy Wear Durable Stitching Lightweight (Only Jacket) online in Pakistan from ASM VEO. Ladies Lining Jack
 Description: Ladies Lining Jacket Provides Elegant Design Smooth Comfort Easy Wear Durable Stitching And Reliable Utility
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

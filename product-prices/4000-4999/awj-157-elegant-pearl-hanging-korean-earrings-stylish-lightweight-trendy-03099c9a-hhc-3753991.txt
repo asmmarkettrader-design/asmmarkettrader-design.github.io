@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AWJ-157 Elegant Pearl Hanging Korean Earrings – Stylish, Lightweight & Trendy Fashion Jewelry for Women
 Product ID: hhc-3753991
 SKU: hhc-3753991
@@ -7,11 +8,16 @@ Slug: awj-157-elegant-pearl-hanging-korean-earrings-stylish-lightweight-trend-03
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/852ed8c0f8b4e190ad3367ad6af6130f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/852ed8c0f8b4e190ad3367ad6af6130f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/74fcba56bb5866d2d1a5d3b942a8e857.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/b007aac8f9b0dd344c2e989ef1d30a42.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/18c330ba64e897c3c2f3ead3ce30eea8.jpeg
 Meta Title: AWJ-157 Elegant Pearl Hanging Korean Earrings – Stylish, Lightweight
 Meta Description: Buy AWJ-157 Elegant Pearl Hanging Korean Earrings – Stylish, Lightweight & Trendy Fashion Jewelry for Women online in Pakistan from ASM VEO. Grace your look wit
 Description: Grace your look with premium Pearl Hanging Korean Earrings, designed with a modern minimalist style and smooth pearl shine. Lightweight, comfortable, and timeless—perfect for everyday wear or special occasions.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

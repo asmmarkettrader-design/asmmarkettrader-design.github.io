@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SX9 Wireless Microphone For Android, PC, Laptop, Tablet & Camera | 360° Noise Reduction HD | Long Battery Life Vlog & Live Recording Mic
 Product ID: hhc-3752734
 SKU: hhc-3752734
@@ -7,11 +8,16 @@ Slug: sx9-wireless-microphone-for-android-pc-laptop-tablet-camera-360-noise-r-21
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/2db2d347c0b76c6ef7b87f307a5982dd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/2db2d347c0b76c6ef7b87f307a5982dd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/b4d843b7885378ac7b6ca46da5a4c2ee.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/695697506269e23a79496574aaaeeda2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/c40dee0a18816fc9ecc5280fdbf45b33.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/b887728e7214b4a881be538500164198.png
 Meta Title: SX9 Wireless Microphone For Android, PC, Laptop, Tablet & Camera | 3
 Meta Description: Buy SX9 Wireless Microphone For Android, PC, Laptop, Tablet & Camera | 360° Noise Reduction HD | Long Battery Life Vlog & Live Recording Mic online in Pakistan
 Description: SX9 Wireless Microphone Delivers Clear HD Sound With 360° Noise Reduction, Long Battery Life, And Wide Compatibility For Vlogging, Live Streaming, And Recording.
-Regular Price: 2375
-Sale Price: 2375
+Wholesale Price: 2375
+Regular Price: 4230
+Sale Price: 3386
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dew White Skin Brightening Cream Gentle Formula Improves Skin Tone Reduces Dullness Provides Radiant Glow And Smooth Texture For Daily Use - 30g
 Product ID: hhc-3753799
 SKU: hhc-3753799
@@ -7,11 +8,16 @@ Slug: dew-white-skin-brightening-cream-gentle-formula-improves-skin-tone-redu-95
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/a58b4dc480855bd380d3c0b0ee034577.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/a58b4dc480855bd380d3c0b0ee034577.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/e02217f103ad2fa32900fd0dd28914f8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/57740467081890687ba717ec7d958071.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/41fec3a89e0b58ab737b7183612db72f.jpeg
 Meta Title: Dew White Skin Brightening Cream Gentle Formula Improves Skin Tone R
 Meta Description: Buy Dew White Skin Brightening Cream Gentle Formula Improves Skin Tone Reduces Dullness Provides Radiant Glow And Smooth Texture For Daily Use - 30g online in P
 Description: Dew White Skin Brightening Cream Provides Gentle Formula Improves Skin Tone Reduces Dullness And Provides Radiant Glow
-Regular Price: 1471
-Sale Price: 1471
+Wholesale Price: 1421
+Regular Price: 2600
+Sale Price: 2078
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

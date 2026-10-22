@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Scentia Your Story Black Signature Perfume – Everglow Edition Long-Lasting Luxury Fragrance ~ 50 ML
 Product ID: hhc-3756190
 SKU: hhc-3756190
@@ -7,11 +8,16 @@ Slug: scentia-your-story-black-signature-perfume-everglow-edition-long-lastin-75
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/1153edccd223ebc2a5485598b5885793.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/1153edccd223ebc2a5485598b5885793.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/6805e940f6dcca69d16e5eff309a82f3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/54fb4d33a5b2d8ef7b3bb4c588b5ac46.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/90c8ae856c5a6f7accc647a633bd2d73.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/06/c7da8bf9fa762fe0fd45d8d35ed6bdf1.jpeg
 Meta Title: Scentia Your Story Black Signature Perfume – Everglow Edition Long-L
 Meta Description: Buy Scentia Your Story Black Signature Perfume – Everglow Edition Long-Lasting Luxury Fragrance ~ 50 ML online in Pakistan from ASM VEO. A bold and elegant frag
 Description: A bold and elegant fragrance crafted to leave a lasting impression, Black Signature is where mystery meets sophistication.
-Regular Price: 3620
-Sale Price: 3620
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 Piece Islamic Calligraphic Wall Art Set Dua Design Purple And Gold Abstract Marble Wooden MDF Frames | Double Tape Include
 Product ID: hhc-3757140
 SKU: hhc-3757140
@@ -7,11 +8,16 @@ Slug: 10-piece-islamic-calligraphic-wall-art-set-dua-design-purple-and-gold-a-30
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/8716de2233432a3471402cf15667e6bf.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/8716de2233432a3471402cf15667e6bf.jpeg
 Meta Title: 10 Piece Islamic Calligraphic Wall Art Set Dua Design Purple And Gol
 Meta Description: Buy 10 Piece Islamic Calligraphic Wall Art Set Dua Design Purple And Gold Abstract Marble Wooden MDF Frames | Double Tape Include online in Pakistan from ASM VE
 Description: Elegant 10 Piece Islamic Calligraphic Wall Art Set Featuring Purple And Gold Abstract Marble Designs On Wooden MDF Frames With Double Tape.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

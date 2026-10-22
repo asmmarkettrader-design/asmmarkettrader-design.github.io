@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wiki Special Natural Pink Lip Balm | Hydrating, Nourishing & Long-Lasting Lip Care with Soft Pink Tint for 24-Hour Moisture
 Product ID: hhc-3755399
 SKU: hhc-3755399
@@ -7,11 +8,16 @@ Slug: wiki-special-natural-pink-lip-balm-hydrating-nourishing-long-lasting-li-84
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/ab52f30fda8d3130c38fa7e91a0dc8ee.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/ab52f30fda8d3130c38fa7e91a0dc8ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/13ddea1fc3f5d456500d8000849a963c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/1c6bea4c60fb2e8c7b6e656fe07b4f8e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/d0b6895479c59059f321a76a346665c3.jpeg
 Meta Title: Wiki Special Natural Pink Lip Balm | Hydrating, Nourishing & Long-La
 Meta Description: Buy Wiki Special Natural Pink Lip Balm | Hydrating, Nourishing & Long-Lasting Lip Care with Soft Pink Tint for 24-Hour Moisture online in Pakistan from ASM VEO.
 Description: Achieve soft, naturally tinted lips with Wiki Special Pink Lip Balm. Its hydrating formula provides long-lasting moisture, nourishment, and a sheer pink glow for daily wear.
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

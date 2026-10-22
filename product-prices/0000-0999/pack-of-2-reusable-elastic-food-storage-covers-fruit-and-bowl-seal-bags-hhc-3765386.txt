@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 2 Reusable Elastic Food Storage Covers - Fruit and Bowl Seal Bags
 Product ID: hhc-3765386
 SKU: hhc-3765386
@@ -7,11 +8,16 @@ Slug: pack-of-2-reusable-elastic-food-storage-covers-fruit-and-bowl-seal-bags-hh
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/b7af555581e8539b997018935f83825e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/12/b7af555581e8539b997018935f83825e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/a92916eeaf3cfae3885c81c9f9334f58.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/a900c2d966277875cce737afdbfac6f8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/dc119f83178b143a8da82ddab28f5b8a.jpeg
 Meta Title: Pack Of 2 Reusable Elastic Food Storage Covers - Fruit and Bowl Seal
 Meta Description: Buy Pack Of 2 Reusable Elastic Food Storage Covers - Fruit and Bowl Seal Bags online in Pakistan from ASM VEO. Reusable elastic food storage covers are perfect
 Description: Reusable elastic food storage covers are perfect for keeping fruits, vegetables, and leftovers fresh. These elastic bowl covers fit various bowl sizes, making them a convenient alternative to plastic wrap. Pack contains multiple sizes.
-Regular Price: 387
-Sale Price: 387
+Wholesale Price: 337
+Regular Price: 716
+Sale Price: 566
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids' Pocket Watercolor Painting Book – 3-in-1 Creative Coloring Set with Built-in Paints, Brush & Keychain
 Product ID: hhc-3758975
 SKU: hhc-3758975
@@ -7,11 +8,16 @@ Slug: kids-pocket-watercolor-painting-book-3-in-1-creative-coloring-set-with-c29
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/e6151fa0cf89f73ceed4cc7511298f45.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/e6151fa0cf89f73ceed4cc7511298f45.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/5c32da3ee43c0e4e5521111b0b441470.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/3470d3e7816d9aa95b636901581a9f69.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/12647cb707cfa66f474b94c1cc3a0ba6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/74f67a4c6df93ae9cd8a188667efd292.jpeg
 Meta Title: Kids' Pocket Watercolor Painting Book – 3-in-1 Creative Coloring Set
 Meta Description: Buy Kids' Pocket Watercolor Painting Book – 3-in-1 Creative Coloring Set with Built-in Paints, Brush & Keychain online in Pakistan from ASM VEO. Encourage your
 Description: Encourage your child's inner artist with this All-in-One Watercolor Painting Book. Each page comes with its own set of vibrant paints and a brush, making it a mess-free and portable way for kids to enjoy coloring anytime, anywhere. Perfect for travel and creative play!
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

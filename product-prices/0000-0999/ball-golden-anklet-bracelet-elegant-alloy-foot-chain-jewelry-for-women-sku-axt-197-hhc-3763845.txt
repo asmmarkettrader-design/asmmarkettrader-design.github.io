@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ball Golden Anklet Bracelet – Elegant Alloy Foot Chain Jewelry for Women - Sku AxT-197
 Product ID: hhc-3763845
 SKU: hhc-3763845
@@ -7,11 +8,16 @@ Slug: ball-golden-anklet-bracelet-elegant-alloy-foot-chain-jewelry-for-women-f07
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/5f74545bfedc5e514e29f46d8962bca1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/5f74545bfedc5e514e29f46d8962bca1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/700006f64c4b99a6dd9dbc640fc0afbf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/a64747bd5c4230aedc1ba7bc56bea561.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/f44a31fbcbd64c1ebd2b535ebc06a831.jpeg
 Meta Title: Ball Golden Anklet Bracelet – Elegant Alloy Foot Chain Jewelry for W
 Meta Description: Buy Ball Golden Anklet Bracelet – Elegant Alloy Foot Chain Jewelry for Women - Sku AxT-197 online in Pakistan from ASM VEO. Elegant golden alloy anklet featurin
 Description: Elegant golden alloy anklet featuring a delicate ball design for a simple and stylish look.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

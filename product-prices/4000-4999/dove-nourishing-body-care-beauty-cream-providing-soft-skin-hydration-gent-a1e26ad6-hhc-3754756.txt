@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dove Nourishing Body Care Beauty Cream Providing Soft Skin Hydration Gentle Touch - 150ML
 Product ID: hhc-3754756
 SKU: hhc-3754756
@@ -7,11 +8,16 @@ Slug: dove-nourishing-body-care-beauty-cream-providing-soft-skin-hydration-ge-a1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: Dove
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/533ee43da8a3dc5a55a83c57a3826f0c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/533ee43da8a3dc5a55a83c57a3826f0c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/1fe2e7cde9dde0018a97638cefda0d49.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/91f648b5a576c6eb47345aeff8174fe9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/570cde6450155f9601a3330673682779.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/fdc97a4b3558252f3fd89e6185e7e7c4.jpeg
 Meta Title: Dove Nourishing Body Care Beauty Cream Providing Soft Skin Hydration
 Meta Description: Buy Dove Nourishing Body Care Beauty Cream Providing Soft Skin Hydration Gentle Touch - 150ML online in Pakistan from ASM VEO. Dove Nourishing Body Care Beauty
 Description: Dove Nourishing Body Care Beauty Cream Offering Soft Skin Hydration Gentle Touch And Comfortable Daily Use
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

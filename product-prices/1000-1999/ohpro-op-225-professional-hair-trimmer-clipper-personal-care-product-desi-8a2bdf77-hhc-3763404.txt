@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: OHPRO OP-225 Professional Hair Trimmer Clipper - Personal Care Product Designed For Grooming And Daily Hygiene Routine
 Product ID: hhc-3763404
 SKU: hhc-3763404
@@ -7,11 +8,16 @@ Slug: ohpro-op-225-professional-hair-trimmer-clipper-personal-care-product-de-8a
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/3895cb6303409adbdae4e3547e84efc0.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/3895cb6303409adbdae4e3547e84efc0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/9a13ab0aa32a9ebe403702a1119f41a0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/a6464f0b7e284537d2afff138daf649b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/b739eb9440c7874ed2b187cf2de1ed81.jpeg
 Meta Title: OHPRO OP-225 Professional Hair Trimmer Clipper - Personal Care Produ
 Meta Description: Buy OHPRO OP-225 Professional Hair Trimmer Clipper - Personal Care Product Designed For Grooming And Daily Hygiene Routine online in Pakistan from ASM VEO. The
 Description: The OHPRO OP-225 Professional Hair Trimmer Clipper Is A Personal Care Product Formulated To Help Provide Grooming And Daily Hygiene Utility During Use.
-Regular Price: 3288
-Sale Price: 3288
+Wholesale Price: 3288
+Regular Price: 5570
+Sale Price: 4454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

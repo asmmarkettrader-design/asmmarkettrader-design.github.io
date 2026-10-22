@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Transparent Geometry Box 1 Piece Geometry Box Pencil Pouch With Zipper Closure For School And Office Use (Random Color)
 Product ID: hhc-3756435
 SKU: hhc-3756435
@@ -7,11 +8,16 @@ Slug: transparent-geometry-box-1-piece-geometry-box-pencil-pouch-with-zipper-8de
 Category: Books & Stationery
 Subcategory: Office Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/9e72ce17caaca5da056032cc8c45363c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/9e72ce17caaca5da056032cc8c45363c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/a3a65ec7dc1cf5fa7ce1d9a641cf49da.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/f3a63d1bca01cba637731963a6090e22.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/c612d9993fd440fd3efdb55f73ab8267.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/a29037d40bdbb939860b1942d8da8b95.jpeg
 Meta Title: Transparent Geometry Box 1 Piece Geometry Box Pencil Pouch With Zipp
 Meta Description: Buy Transparent Geometry Box 1 Piece Geometry Box Pencil Pouch With Zipper Closure For School And Office Use (Random Color) online in Pakistan from ASM VEO. Tra
 Description: Transparent Geometry Box Pencil Pouch With Zipper Closure Ideal For Storing Pens Pencils And Stationery Items
-Regular Price: 166
-Sale Price: 166
+Wholesale Price: 116
+Regular Price: 384
+Sale Price: 234
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

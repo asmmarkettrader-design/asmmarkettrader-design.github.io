@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Silicone Menstrual Cup – Small, Medium & Large Sizes | Reusable Menstrual Hygiene Cup – Color Random
 Product ID: hhc-3763486
 SKU: hhc-3763486
@@ -7,11 +8,16 @@ Slug: premium-silicone-menstrual-cup-small-medium-large-sizes-reusable-menstr-f6
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/61ccc401d7bbf784a9844e12f81dda7a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/08/61ccc401d7bbf784a9844e12f81dda7a.jpeg
 Meta Title: Premium Silicone Menstrual Cup – Small, Medium & Large Sizes | Reusa
 Meta Description: Buy Premium Silicone Menstrual Cup – Small, Medium & Large Sizes | Reusable Menstrual Hygiene Cup – Color Random online in Pakistan from ASM VEO. Soft and flexi
 Description: Soft and flexible silicone menstrual cup designed for comfortable, reusable menstrual care. Available in Small, Medium, and Large sizes, with color selected randomly.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

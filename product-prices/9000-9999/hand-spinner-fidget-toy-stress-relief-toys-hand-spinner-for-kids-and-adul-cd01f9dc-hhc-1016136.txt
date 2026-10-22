@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hand Spinner Fidget Toy Stress Relief Toys Hand Spinner For Kids And Adult Fidget Spinner Metal BoDy metal balls with box .. mix random colours and design
 Product ID: hhc-1016136
 SKU: hhc-1016136
@@ -7,11 +8,16 @@ Slug: hand-spinner-fidget-toy-stress-relief-toys-hand-spinner-for-kids-and-ad-cd
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/fed01e1a-9ecc-412b-8594-713d11d06cee-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/fed01e1a-9ecc-412b-8594-713d11d06cee-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/4b124770-c2c4-4cb8-ae1b-e1db4f3af8ee-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/54946a97-7729-4982-b8ea-34cccf82e1e2-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/5646adde-52ff-451f-ae91-309a879d8c5a-1.jpeg
 Meta Title: Hand Spinner Fidget Toy Stress Relief Toys Hand Spinner For Kids And
 Meta Description: Buy Hand Spinner Fidget Toy Stress Relief Toys Hand Spinner For Kids And Adult Fidget Spinner Metal BoDy metal balls with box .. mix random colours and design o
 Description: Hand Spinner Fidget Toy Stress Relief Toys Hand Spinner For Kids And Adult Fidget Spinner Metal BoDy metal balls with box .. mix random colours and design [video width="480" height="704" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Video-2024-01-04-at-1.44.17-PM.mp4"][/video]
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Full White Aura Watch Elegant Design Durable Build Comfortable Strap Clear Display Perfect For Daily Wear And Special Occasions
 Product ID: hhc-3753748
 SKU: hhc-3753748
@@ -7,11 +8,16 @@ Slug: full-white-aura-watch-elegant-design-durable-build-comfortable-strap-cl-51
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/a172f887479883791ce235f4befda320.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/a172f887479883791ce235f4befda320.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/2b054a1937c5146ec94b0ffc76d6f27c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/c2a41d5cbeed9c90a7b56d7e75b90cce.png
 Meta Title: Full White Aura Watch Elegant Design Durable Build Comfortable Strap
 Meta Description: Buy Full White Aura Watch Elegant Design Durable Build Comfortable Strap Clear Display Perfect For Daily Wear And Special Occasions online in Pakistan from ASM
 Description: Full White Aura Watch Provides Elegant Design Durable Build Comfortable Strap And Clear Display For Daily Wear
-Regular Price: 684
-Sale Price: 684
+Wholesale Price: 634
+Regular Price: 1220
+Sale Price: 979
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ankle socks for womens pack Of 10 pairs - MultiColor
 Product ID: hhc-3764732
 SKU: hhc-3764732
@@ -7,11 +8,16 @@ Slug: ankle-socks-for-womens-pack-of-10-pairs-multicolor-hhc-3764732
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/551aadb612855d80c6118e3d3c59f1fe.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/551aadb612855d80c6118e3d3c59f1fe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/855103fa9dd279fc340d78e899ea850e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/0204496c60642e8379d55627c17badcc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/aff475c3ebbbb15b638727390840a1cd.jpg
 Meta Title: Ankle socks for womens pack Of 10 pairs - MultiColor | Buy Online in
 Meta Description: Buy Ankle socks for womens pack Of 10 pairs - MultiColor online in Pakistan from ASM VEO. Comfortable ankle-length socks for women, available in assorted colors
 Description: Comfortable ankle-length socks for women, available in assorted colors and designs. Pack includes 10 pairs.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

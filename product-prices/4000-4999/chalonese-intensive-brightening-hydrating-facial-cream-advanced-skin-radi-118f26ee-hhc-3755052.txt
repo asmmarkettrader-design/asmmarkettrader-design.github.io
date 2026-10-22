@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Chalonese Intensive Brightening & Hydrating Facial Cream – Advanced Skin Radiance Formula for Deep Moisturization
 Product ID: hhc-3755052
 SKU: hhc-3755052
@@ -7,11 +8,16 @@ Slug: chalonese-intensive-brightening-hydrating-facial-cream-advanced-skin-ra-11
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Chalonese Intensive Brightening & Hydrating Facial Cream – Advanced
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/a1946261d5b2c19cab5604f7d0f53279.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/a1946261d5b2c19cab5604f7d0f53279.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/911bd4ee5615a81b06956c2c76277469.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/9732fd1eb358227177390a8cb11289d4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/31/01f343c9a7e9d4274519f69c3bc676b4.png
+Meta Title: Chalonese Intensive Brightening & Hydrating Facial Cream – Advanced 
 Meta Description: Buy Chalonese Intensive Brightening & Hydrating Facial Cream – Advanced Skin Radiance Formula for Deep Moisturization online in Pakistan from ASM VEO. A dual-ac
 Description: A dual-action daily moisturizer designed to transform dull, tired skin into a radiant, glowing complexion. This lightweight formula penetrates deeply to provide 24-hour hydration while actively working to even out skin tone and restore a youthful luminosity.
-Regular Price: 244
-Sale Price: 244
+Wholesale Price: 194
+Regular Price: 501
+Sale Price: 351
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

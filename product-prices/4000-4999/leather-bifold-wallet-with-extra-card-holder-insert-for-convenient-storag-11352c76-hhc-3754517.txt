@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Leather Bifold Wallet With Extra Card Holder Insert For Convenient Storage And Classic Style
 Product ID: hhc-3754517
 SKU: hhc-3754517
@@ -7,11 +8,16 @@ Slug: leather-bifold-wallet-with-extra-card-holder-insert-for-convenient-stor-11
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/9dc9a00c9ea8118afe7217993afdfdb8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/9dc9a00c9ea8118afe7217993afdfdb8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/6ae98a77cf2f73153576e05d7f3200b7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/6ae98a77cf2f73153576e05d7f3200b7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/dadab302d476dd9a919303779b6369e4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/aa29b328ecd09b9c692dcdc7d87acdb0.jpeg
 Meta Title: Leather Bifold Wallet With Extra Card Holder Insert For Convenient S
 Meta Description: Buy Leather Bifold Wallet With Extra Card Holder Insert For Convenient Storage And Classic Style online in Pakistan from ASM VEO. Leather Bifold Wallet With Ext
 Description: Leather Bifold Wallet With Extra Card Holder Insert Offering Practical Design And Timeless Look
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

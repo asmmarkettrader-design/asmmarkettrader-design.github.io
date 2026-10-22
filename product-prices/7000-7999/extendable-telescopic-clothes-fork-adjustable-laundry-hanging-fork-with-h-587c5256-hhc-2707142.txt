@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Extendable Telescopic Clothes Fork, Adjustable Laundry Hanging Fork with Hook (random color)
 Product ID: hhc-2707142
 SKU: hhc-2707142
@@ -7,11 +8,16 @@ Slug: extendable-telescopic-clothes-fork-adjustable-laundry-hanging-fork-with-58
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: Extendable Telescopic Clothes Fork, Adjustable Laundry Hanging Fork
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/51ygpYFyNML._AC_SL1242_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/51ygpYFyNML._AC_SL1242_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/615WYSYc69L._AC_SL1395_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-01-13-at-6.41.23-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-01-13-at-6.41.22-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-01-13-at-6.41.22-PM-1.jpeg
+Meta Title: Extendable Telescopic Clothes Fork, Adjustable Laundry Hanging Fork 
 Meta Description: Buy Extendable Telescopic Clothes Fork, Adjustable Laundry Hanging Fork with Hook (random color) online in Pakistan from ASM VEO. Product Description Retractabl
 Description: Product Description Retractable: reasonable design, easy to use and simple, is a good helper in life. Long-lasting: High quality plastic material, light weight, not easy to damage. Comfortable Grip: Non-slip design, the ergonomics are more comfortable. Space-saving: make the clothes rod can be stuck in the cabinet, more convenient storage. Ideal for hanging shirts, pants, jackets and other clothes. Size: 36 inches without extension, 62 inches With extension
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

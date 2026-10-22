@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Three Guys Furniture Polish Wood Cleaner And Shine Protector German Engineered Revive Protect And Shine Like New
 Product ID: hhc-3756986
 SKU: hhc-3756986
@@ -7,11 +8,16 @@ Slug: three-guys-furniture-polish-wood-cleaner-and-shine-protector-german-eng-07
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
-Meta Title: Three Guys Furniture Polish Wood Cleaner And Shine Protector German
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/327ea2ffe2d0c3d64d376139f6b78892.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/327ea2ffe2d0c3d64d376139f6b78892.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/685e4ae34d2b862e99dd60f656df8279.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/8528fdceaadc0d68b9f250d864a5c605.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/7c30f0cfab591203c64574a7954af87d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/bab12a20dc4179a7087a9209ab79b985.jpg
+Meta Title: Three Guys Furniture Polish Wood Cleaner And Shine Protector German 
 Meta Description: Buy Three Guys Furniture Polish Wood Cleaner And Shine Protector German Engineered Revive Protect And Shine Like New online in Pakistan from ASM VEO. Premium Ge
 Description: Premium German-Engineered Furniture Polish That Cleans Dust Restores Natural Shine And Protects Wooden Surfaces From Damage.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black AirPods Pro 2 ANC Wireless Bluetooth Earbuds With Charging Case - Audio Accessory Made For Wireless Listening And Daily Music Routine
 Product ID: hhc-3385179
 SKU: hhc-3385179
@@ -7,11 +8,16 @@ Slug: black-airpods-pro-2-anc-wireless-bluetooth-earbuds-with-charging-case-a-cf
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/724d710a0cc6f1c19ce7ba926cb27637.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/22/724d710a0cc6f1c19ce7ba926cb27637.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/f235b8f04c9212a4c2bfde7933706506.jpg_720x720q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/101-2048x2048-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/105-2048x2048-1.jpg
 Meta Title: Black AirPods Pro 2 ANC Wireless Bluetooth Earbuds With Charging Cas
 Meta Description: Buy Black AirPods Pro 2 ANC Wireless Bluetooth Earbuds With Charging Case - Audio Accessory Made For Wireless Listening And Daily Music Routine online in Pakist
 Description: The Black AirPods Pro 2 ANC Wireless Bluetooth Earbuds With Charging Case Is An Audio Accessory Formulated To Support Wireless Listening And Daily Music Function During Use.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

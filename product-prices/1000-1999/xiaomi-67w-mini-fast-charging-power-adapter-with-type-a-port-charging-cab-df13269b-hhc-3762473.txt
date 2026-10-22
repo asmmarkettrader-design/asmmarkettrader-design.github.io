@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Xiaomi 67W Mini Fast Charging Power Adapter with Type-A Port & Charging Cable | Compact 67W Wall Charger for Smartphones & Devices
 Product ID: hhc-3762473
 SKU: hhc-3762473
@@ -7,11 +8,16 @@ Slug: xiaomi-67w-mini-fast-charging-power-adapter-with-type-a-port-charging-c-df
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Xiaomi
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/fc1dcc79755a8828175f39744df1bc80.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/fc1dcc79755a8828175f39744df1bc80.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/efec4e4bb94be1e3333909ccf618684d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/23/d67597f997598cdf27ea5e6f1bb2338e.webp
 Meta Title: Xiaomi 67W Mini Fast Charging Power Adapter with Type-A Port & Charg
 Meta Description: Buy Xiaomi 67W Mini Fast Charging Power Adapter with Type-A Port & Charging Cable | Compact 67W Wall Charger for Smartphones & Devices online in Pakistan from A
 Description: Xiaomi 67W Mini Fast Charging Power Adapter with Type-A Port & Charging Cable | Compact 67W Wall Charger for Smartphones & Devices
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

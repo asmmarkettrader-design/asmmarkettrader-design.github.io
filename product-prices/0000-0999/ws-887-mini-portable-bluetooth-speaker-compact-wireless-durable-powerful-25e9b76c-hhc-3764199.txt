@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: WS 887 Mini Portable Bluetooth Speaker Compact Wireless Durable Powerful Practical Choice For Music Travel Outdoor And Home Use
 Product ID: hhc-3764199
 SKU: hhc-3764199
@@ -7,11 +8,16 @@ Slug: ws-887-mini-portable-bluetooth-speaker-compact-wireless-durable-powerfu-25
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/5f92ca73a076779924e4829d9f534761.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/5f92ca73a076779924e4829d9f534761.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/15b4ae282691effb6fa5db1643ddef97.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/750c999ea0a19981e459a333b7a6f89c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/59c991ce0a4d134c0fa5fb74be81ca6c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/6f85ccf06a4e92a394483c5fc12175c2.jpg
 Meta Title: WS 887 Mini Portable Bluetooth Speaker Compact Wireless Durable Powe
 Meta Description: Buy WS 887 Mini Portable Bluetooth Speaker Compact Wireless Durable Powerful Practical Choice For Music Travel Outdoor And Home Use online in Pakistan from ASM
 Description: WS 887 Mini Portable Bluetooth Speaker Compact Wireless Durable Powerful Practical Choice For Music Travel Outdoor And Home Use.
-Regular Price: 895
-Sale Price: 895
+Wholesale Price: 845
+Regular Price: 1610
+Sale Price: 1285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

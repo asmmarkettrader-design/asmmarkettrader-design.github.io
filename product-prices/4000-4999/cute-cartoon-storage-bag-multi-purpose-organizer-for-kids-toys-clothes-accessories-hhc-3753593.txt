@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cute Cartoon Storage Bag | Multi-Purpose Organizer for Kids’ Toys, Clothes & Accessories
 Product ID: hhc-3753593
 SKU: hhc-3753593
@@ -7,11 +8,16 @@ Slug: cute-cartoon-storage-bag-multi-purpose-organizer-for-kids-toys-clothes-cf5
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6fa2eb73fb7eeb4c9878463016443c48.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6fa2eb73fb7eeb4c9878463016443c48.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/923ea1a9180da257e86d2b48281b7507.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/2990be6fd3867a22d6da650f73ef7f07.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/d4d53b1ea28ef9d07b6c7046a365d777.jpeg
 Meta Title: Cute Cartoon Storage Bag | Multi-Purpose Organizer for Kids’ Toys, C
 Meta Description: Buy Cute Cartoon Storage Bag | Multi-Purpose Organizer for Kids’ Toys, Clothes & Accessories online in Pakistan from ASM VEO. Adorable cartoon storage bag desig
 Description: Adorable cartoon storage bag designed to keep toys, clothes, and daily essentials organized. Lightweight, spacious, and perfect for kids’ rooms.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

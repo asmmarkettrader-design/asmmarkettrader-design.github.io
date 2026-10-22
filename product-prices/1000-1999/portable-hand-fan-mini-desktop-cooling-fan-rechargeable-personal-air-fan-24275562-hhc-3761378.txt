@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Hand Fan Mini Desktop Cooling Fan Rechargeable Personal Air Fan Random Color
 Product ID: hhc-3761378
 SKU: hhc-3761378
@@ -7,11 +8,16 @@ Slug: portable-hand-fan-mini-desktop-cooling-fan-rechargeable-personal-air-fa-24
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/19447990921c42653ea2fbf6cc4fb2af.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/19447990921c42653ea2fbf6cc4fb2af.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/13667d83b4cf8ba48eef881fd7e48754.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/da35aac3adae741aa135ac9f13c6e0c4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/e8c3c0845f82d60f8c0f32b885b00e57.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/396b941b8b84007198b8ee2fe0f0ff02.jpeg
 Meta Title: Portable Hand Fan Mini Desktop Cooling Fan Rechargeable Personal Air
 Meta Description: Buy Portable Hand Fan Mini Desktop Cooling Fan Rechargeable Personal Air Fan Random Color online in Pakistan from ASM VEO. Portable hand fan with a compact desi
 Description: Portable hand fan with a compact design for personal cooling. Available in random colors.
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

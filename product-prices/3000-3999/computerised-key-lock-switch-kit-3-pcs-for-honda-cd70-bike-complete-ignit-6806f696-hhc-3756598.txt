@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Computerised Key Lock Switch Kit 3 Pcs for Honda CD70 Bike – Complete Ignition, Handle & Fuel Tank Lock Set
 Product ID: hhc-3756598
 SKU: hhc-3756598
@@ -7,11 +8,16 @@ Slug: computerised-key-lock-switch-kit-3-pcs-for-honda-cd70-bike-complete-ign-68
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/4d0b4b288cf4f00217cfe0f1b5751170.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/4d0b4b288cf4f00217cfe0f1b5751170.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/fc1d8bdc79487b765936ce71257ad8e8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/e6cc2fe64f07676fc26cdee4fe730a9a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/9b686eb45028b79d06247ddbe90efd0b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/f5b3513fa73c9110c6669821d32e2731.jpeg
 Meta Title: Computerised Key Lock Switch Kit 3 Pcs for Honda CD70 Bike – Complet
 Meta Description: Buy Computerised Key Lock Switch Kit 3 Pcs for Honda CD70 Bike – Complete Ignition, Handle & Fuel Tank Lock Set online in Pakistan from ASM VEO. High-quality 3-
 Description: High-quality 3-piece computerized lock kit for Honda CD70 bikes, including ignition switch, handle lock, and fuel tank lock with special folding and straight computerized keys for enhanced security and durability.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

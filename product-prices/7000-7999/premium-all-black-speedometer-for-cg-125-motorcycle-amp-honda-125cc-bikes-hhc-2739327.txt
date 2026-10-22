@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium All-Black Speedometer for CG 125 Motorcycle &amp; Honda 125cc Bikes
 Product ID: hhc-2739327
 SKU: hhc-2739327
@@ -7,11 +8,16 @@ Slug: premium-all-black-speedometer-for-cg-125-motorcycle-amp-honda-125cc-bikes-
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-15-at-2.38.14-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/WhatsApp-Image-2025-02-15-at-2.38.14-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/38a80c531908dbb7c243d57599e8bcf1.jpg
 Meta Title: Premium All-Black Speedometer for CG 125 Motorcycle &amp; Honda 125c
 Meta Description: Buy Premium All-Black Speedometer for CG 125 Motorcycle &amp; Honda 125cc Bikes online in Pakistan from ASM VEO. Product Description: Meter Speedometer for CG 1
 Description: Product Description: Meter Speedometer for CG 125 Motorcycle High Quality of Meter Movement Machine for Perfect Speed Measurement. Long Lasting and Durable Digital speedometer for cg125 bike fully digital meter for motorcycle Meter with bulb not led &nbsp;
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

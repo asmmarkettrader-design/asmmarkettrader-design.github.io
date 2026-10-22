@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multifunctional Vegetable Slicer Cutter Chopper | Manual Kitchen Food Chopper
 Product ID: hhc-3761179
 SKU: hhc-3761179
@@ -7,11 +8,16 @@ Slug: multifunctional-vegetable-slicer-cutter-chopper-manual-kitchen-food-choppe
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/2ef643fe4e1abdb59eb4c4ec45f20d83.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/2ef643fe4e1abdb59eb4c4ec45f20d83.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/ae03ae651d6b89c841a7806f4ab58da1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/8d7c800d9a942e723f48dde597b639c8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/30/c5d7770af5ef8710c4c171e7e7fa5378.jpeg
 Meta Title: Multifunctional Vegetable Slicer Cutter Chopper | Manual Kitchen Foo
 Meta Description: Buy Multifunctional Vegetable Slicer Cutter Chopper | Manual Kitchen Food Chopper online in Pakistan from ASM VEO. Prepare meals faster and easier with the Mult
 Description: Prepare meals faster and easier with the Multifunctional Vegetable Slicer Cutter Chopper. Designed with sharp stainless steel blades and multiple cutting attachments, it slices, dices, chops, and grates vegetables and fruits in seconds. A perfect kitchen tool for quick, safe, and hassle-free food pre
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

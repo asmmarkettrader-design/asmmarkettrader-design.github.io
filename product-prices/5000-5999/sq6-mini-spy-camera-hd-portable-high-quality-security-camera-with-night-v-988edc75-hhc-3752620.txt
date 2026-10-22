@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SQ6 Mini Spy Camera – HD Portable High Quality Security Camera with Night Vision & Two Stand Holders
 Product ID: hhc-3752620
 SKU: hhc-3752620
@@ -7,11 +8,16 @@ Slug: sq6-mini-spy-camera-hd-portable-high-quality-security-camera-with-night-98
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: SQ6 Mini Spy Camera – HD Portable High Quality Security Camera with
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/bd65267a30eeaa3e9e175837f54cc98c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/bd65267a30eeaa3e9e175837f54cc98c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/667a10864969353896f2dc3f5eb62961.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/f86adb8e238e354d161cce29c2d3b5f4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/6e9474980fda604147accab392545f1e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/6646dcd7f88ee170c4ae5e7b55e19b0c.jpg
+Meta Title: SQ6 Mini Spy Camera – HD Portable High Quality Security Camera with 
 Meta Description: Buy SQ6 Mini Spy Camera – HD Portable High Quality Security Camera with Night Vision & Two Stand Holders online in Pakistan from ASM VEO. Compact SQ6 Mini Spy C
 Description: Compact SQ6 Mini Spy Camera with HD recording, night vision, and two stand holders – perfect for discreet security and monitoring.
-Regular Price: 1819
-Sale Price: 1819
+Wholesale Price: 1819
+Regular Price: 3300
+Sale Price: 2636
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

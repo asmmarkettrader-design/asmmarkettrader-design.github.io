@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cute Panda Night Light - Rechargeable Silicone 7-Color RGB Lamp light
 Product ID: hhc-3764162
 SKU: hhc-3764162
@@ -7,11 +8,16 @@ Slug: cute-panda-night-light-rechargeable-silicone-7-color-rgb-lamp-light-hhc-37
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/c46ac0a7444481385860d103165280a4.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/c46ac0a7444481385860d103165280a4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/4d2beb4e45ee367673549f0d4e7279b9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/9a95661c46ac48d3cfc182a2eefacedb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/4d1ee4356a3b63407959c19e5537f8bc.png
 Meta Title: Cute Panda Night Light - Rechargeable Silicone 7-Color RGB Lamp ligh
 Meta Description: Buy Cute Panda Night Light - Rechargeable Silicone 7-Color RGB Lamp light online in Pakistan from ASM VEO. Add a cute and cozy touch to your space with this Cut
 Description: Add a cute and cozy touch to your space with this Cute Panda Night Light. Made from soft silicone, this adorable panda lamp provides soothing 7-color RGB lighting to create a relaxing atmosphere. Its rechargeable design makes it convenient to use without constantly replacing batteries.Key Features:Cute panda-shaped designSoft and durable silicone body7-color RGB changing lightRechargeable batteryPortable and easy to usePerfect for bedrooms, kids’ rooms, and bedside tablesGreat decorative and gift option
-Regular Price: 2023
-Sale Price: 2023
+Wholesale Price: 2023
+Regular Price: 3640
+Sale Price: 2911
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

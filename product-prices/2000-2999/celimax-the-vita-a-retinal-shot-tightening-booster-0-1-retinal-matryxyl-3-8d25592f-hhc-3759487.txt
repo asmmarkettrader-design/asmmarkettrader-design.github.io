@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Celimax The Vita A Retinal Shot Tightening Booster – 0.1% Retinal, Matryxyl 3% | Pore Minimizer, Anti-Wrinkle, Firming Booster|
 Product ID: hhc-3759487
 SKU: hhc-3759487
@@ -7,11 +8,16 @@ Slug: celimax-the-vita-a-retinal-shot-tightening-booster-0-1-retinal-matryxyl-8d
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/2b59b41908b9ed9111f77c0bee5812d1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/2b59b41908b9ed9111f77c0bee5812d1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/15/cf8826762383fd11c8854fcabb14df35.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/3018685f3248d16c12c4f7820de12851.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/2bc623658a7ff1299b068297a8ad847b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/88732212fd99c716b1a85f889b04f211.jpeg
 Meta Title: Celimax The Vita A Retinal Shot Tightening Booster – 0.1% Retinal, M
 Meta Description: Buy Celimax The Vita A Retinal Shot Tightening Booster – 0.1% Retinal, Matryxyl 3% | Pore Minimizer, Anti-Wrinkle, Firming Booster| online in Pakistan from ASM
 Description: A powerful retinal tightening booster designed to improve skin elasticity, reduce fine lines, and give firmer, smoother-looking skin. Perfect for achieving a youthful glow with advanced retinal care.
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

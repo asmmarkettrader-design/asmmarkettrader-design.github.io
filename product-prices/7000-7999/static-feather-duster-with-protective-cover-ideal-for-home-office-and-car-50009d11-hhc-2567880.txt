@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Static Feather Duster with Protective Cover – Ideal for Home, Office, and Car Dust Cleaning
 Product ID: hhc-2567880
 SKU: hhc-2567880
@@ -7,11 +8,16 @@ Slug: static-feather-duster-with-protective-cover-ideal-for-home-office-and-c-50
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/feather-duster-3.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/feather-duster-3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/feather-duster-2.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/feather-duster-1.webp
 Meta Title: Static Feather Duster with Protective Cover – Ideal for Home, Office
 Meta Description: Buy Static Feather Duster with Protective Cover – Ideal for Home, Office, and Car Dust Cleaning online in Pakistan from ASM VEO. Royal Static Feather Duster – L
 Description: Royal Static Feather Duster – Lightweight and effective dust cleaning tool designed to attract and trap dust quickly. Features soft static fibers with a protective cover for easy storage and long-lasting use.
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

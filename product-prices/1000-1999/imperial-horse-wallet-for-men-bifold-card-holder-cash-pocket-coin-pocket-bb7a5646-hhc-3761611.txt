@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Imperial Horse Wallet for Men Bifold Card Holder Cash Pocket Coin Pocket Premium Men's Wallet
 Product ID: hhc-3761611
 SKU: hhc-3761611
@@ -7,11 +8,16 @@ Slug: imperial-horse-wallet-for-men-bifold-card-holder-cash-pocket-coin-pocke-bb
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/08e6cf37ab31c854728b6781b4e4d1ca.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/08e6cf37ab31c854728b6781b4e4d1ca.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/b5b9f83d266f46c6792f1c043bf089d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/bccdba512d148584b50d0fb32463d1df.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/51c00a09c7db0a4cc3899333fa9309aa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/44d1dc6f738ce4bc3d44d061119fa061.jpeg
 Meta Title: Imperial Horse Wallet for Men Bifold Card Holder Cash Pocket Coin Po
 Meta Description: Buy Imperial Horse Wallet for Men Bifold Card Holder Cash Pocket Coin Pocket Premium Men's Wallet online in Pakistan from ASM VEO. The Imperial Horse Wallet is
 Description: The Imperial Horse Wallet is crafted from premium genuine leather for a stylish and durable everyday carry. Its slim bifold design offers multiple card slots, a cash compartment, and a coin pocket, making it perfect for daily use or gifting.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

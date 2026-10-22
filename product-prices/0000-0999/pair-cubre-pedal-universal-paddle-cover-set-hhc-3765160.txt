@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pair Cubre-pedal Universal Paddle Cover Set
 Product ID: hhc-3765160
 SKU: hhc-3765160
@@ -7,11 +8,16 @@ Slug: pair-cubre-pedal-universal-paddle-cover-set-hhc-3765160
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/f7cd24d1e00a248e006e04e98821d987.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/f7cd24d1e00a248e006e04e98821d987.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/07/0f8a5554be7903459e8055604f87b1bd.png
 Meta Title: Pair Cubre-pedal Universal Paddle Cover Set | Buy Online in Pakistan
 Meta Description: Buy Pair Cubre-pedal Universal Paddle Cover Set online in Pakistan from ASM VEO. Non-Slip Aluminum Alloy Pedal Cover Set | Universal Automatic (2 pedals) Cash o
 Description: Non-Slip Aluminum Alloy Pedal Cover Set | Universal Automatic (2 pedals)
-Regular Price: 1043
-Sale Price: 1043
+Wholesale Price: 993
+Regular Price: 1880
+Sale Price: 1500
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

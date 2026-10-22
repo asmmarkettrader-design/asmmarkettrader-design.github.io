@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Seven Girl Whitening & Facial Scrub – Big Size, Made in UK
 Product ID: hhc-3754446
 SKU: hhc-3754446
@@ -7,11 +8,16 @@ Slug: seven-girl-whitening-facial-scrub-big-size-made-in-uk-hhc-3754446
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/67f47ed361b30ce3b446273be332b2f3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/67f47ed361b30ce3b446273be332b2f3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/2cbb8587fb1d3804e6f0489f54aafb50.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/3767642380f99b416e3f6c6ccf1e9565.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/7f8ee3e89ab86d3d9c9a3cd9f880fad1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/c9b20a09ca411ecc6b10d6f650fcb1bd.jpeg
 Meta Title: Seven Girl Whitening & Facial Scrub – Big Size, Made in UK | Buy Onl
 Meta Description: Buy Seven Girl Whitening & Facial Scrub – Big Size, Made in UK online in Pakistan from ASM VEO. A whitening and facial scrub from Seven Girl, available in big s
 Description: A whitening and facial scrub from Seven Girl, available in big size and made in the UK
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

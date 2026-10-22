@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Red chili flakes, 100% natural and organic also known as crushed red pepper 250 G
 Product ID: hhc-3756526
 SKU: hhc-3756526
@@ -7,11 +8,16 @@ Slug: red-chili-flakes-100-natural-and-organic-also-known-as-crushed-red-pepper-
 Category: Groceries
 Subcategory: Baking and Cooking
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/c7a92e31a96b3e7fccd2485a4841f549.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/23/c7a92e31a96b3e7fccd2485a4841f549.jpeg
 Meta Title: Red chili flakes, 100% natural and organic also known as crushed red
 Meta Description: Buy Red chili flakes, 100% natural and organic also known as crushed red pepper 250 G online in Pakistan from ASM VEO. Chilli flakes Red chilli flakes Crushed r
 Description: Chilli flakes Red chilli flakes Crushed red pepper Dried chilli flakes Spicy chilli flakes Organic chilli flakes for cooking Hot and spicy red pepper flakes Crushed chilli flakes for pizza Chilli flakes with seeds Non-GMO dried
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

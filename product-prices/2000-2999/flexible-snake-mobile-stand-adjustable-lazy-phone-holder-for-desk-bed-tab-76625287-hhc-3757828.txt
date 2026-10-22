@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flexible Snake Mobile Stand – Adjustable Lazy Phone Holder for Desk, Bed & Table | Random Color
 Product ID: hhc-3757828
 SKU: hhc-3757828
@@ -7,11 +8,16 @@ Slug: flexible-snake-mobile-stand-adjustable-lazy-phone-holder-for-desk-bed-t-76
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/45644a0faa3f66b051a61fd80aa74d3e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/45644a0faa3f66b051a61fd80aa74d3e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/4c1f411827a318834a5c9a2044b52118.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/5488599c1761daf1efa42e79b64b5378.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/9585e4c0b300776264cc779a10014813.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/591df4b0a1a4867282ffbe6892c4e460.jpeg
 Meta Title: Flexible Snake Mobile Stand – Adjustable Lazy Phone Holder for Desk,
 Meta Description: Buy Flexible Snake Mobile Stand – Adjustable Lazy Phone Holder for Desk, Bed & Table | Random Color online in Pakistan from ASM VEO. The Snake Mobile Stand is a
 Description: The Snake Mobile Stand is a flexible and adjustable phone holder designed for comfortable hands-free mobile use. Its bendable snake-style arm allows you to set your phone at the perfect viewing angle for watching videos, video calls, online classes, or browsing.
-Regular Price: 415
-Sale Price: 415
+Wholesale Price: 365
+Regular Price: 760
+Sale Price: 608
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

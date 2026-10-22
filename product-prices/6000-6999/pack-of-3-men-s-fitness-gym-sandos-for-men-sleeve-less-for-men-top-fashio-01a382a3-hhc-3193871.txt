@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: [Pack of 3] Men’s Fitness Gym Sandos for Men Sleeve less for Men Top Fashion Wear Shirt Hoodie Sleeve less for Men
 Product ID: hhc-3193871
 SKU: hhc-3193871
@@ -7,11 +8,16 @@ Slug: pack-of-3-men-s-fitness-gym-sandos-for-men-sleeve-less-for-men-top-fash-01
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-3.26.35-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-3.26.35-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-3.26.34-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-3.26.34-PM.jpeg
 Meta Title: [Pack of 3] Men’s Fitness Gym Sandos for Men Sleeve less for Men Top
 Meta Description: Buy [Pack of 3] Men’s Fitness Gym Sandos for Men Sleeve less for Men Top Fashion Wear Shirt Hoodie Sleeve less for Men online in Pakistan from ASM VEO. Pack of
 Description: Pack of 3 – Men’s Fitness Gym Sandos for Men Sleeve less for Men Top Fashion Wear Shirt Hoodie Sleeve less MenSizes:MediumLargeExtra LargeNote: We recommend hand wash for long lasting life. ⦁ 100% New &amp; Good Quality ⦁ Round Neck ⦁ Look Smart ⦁ Good Stitched ⦁ Ready to Wear ⦁ Easy Wash ⦁ Premium Quality ⦁ Fashionable DesignSize Chart:Original Images of All 3 Shirt's Set:
-Regular Price: 1357
-Sale Price: 1357
+Wholesale Price: 1307
+Regular Price: 2400
+Sale Price: 1916
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

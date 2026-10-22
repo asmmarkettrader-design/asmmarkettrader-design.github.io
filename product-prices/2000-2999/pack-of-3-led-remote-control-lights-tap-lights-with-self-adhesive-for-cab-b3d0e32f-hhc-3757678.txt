@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 LED Remote Control Lights – Tap Lights with Self Adhesive for Cabinet, Wardrobe & Kitchen
 Product ID: hhc-3757678
 SKU: hhc-3757678
@@ -7,11 +8,16 @@ Slug: pack-of-3-led-remote-control-lights-tap-lights-with-self-adhesive-for-c-b3
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
-Meta Title: Pack of 3 LED Remote Control Lights – Tap Lights with Self Adhesive
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/eb51c907092211cca11512f8de4b3842.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/eb51c907092211cca11512f8de4b3842.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/ec9d3acaabeebc2970a26c0053f64412.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/7c968e1c6a9bcf482b083389bbc52e99.gif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/ce249e96140d31de891753d8896f0b87.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/2961956161bf3908d4ab00a00bf189e5.jpeg
+Meta Title: Pack of 3 LED Remote Control Lights – Tap Lights with Self Adhesive 
 Meta Description: Buy Pack of 3 LED Remote Control Lights – Tap Lights with Self Adhesive for Cabinet, Wardrobe & Kitchen online in Pakistan from ASM VEO. Upgrade your space with
 Description: Upgrade your space with this Pack of 3 LED Remote Control Lights. Easy tap operation and remote access make them perfect for cabinets, wardrobes, kitchens, offices, and dark corners.
-Regular Price: 1207
-Sale Price: 1207
+Wholesale Price: 1157
+Regular Price: 2130
+Sale Price: 1703
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

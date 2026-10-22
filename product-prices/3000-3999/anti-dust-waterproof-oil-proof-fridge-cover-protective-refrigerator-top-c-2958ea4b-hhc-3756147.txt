@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Anti-dust Waterproof Oil-proof Fridge Cover | Protective Refrigerator Top Cover | Random Design
 Product ID: hhc-3756147
 SKU: hhc-3756147
@@ -7,11 +8,16 @@ Slug: anti-dust-waterproof-oil-proof-fridge-cover-protective-refrigerator-top-29
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/856ac64db9aa3d033eac01c9acfc7713.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/856ac64db9aa3d033eac01c9acfc7713.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/85db23668970cadf74df467abcc7ec0c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/01e23c5861ee3116083babe137a08aff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/dd2b3a82e2705097e372678064609a03.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/03/b705d3f2a2a4482d4e24513bc4b4ca03.jpeg
 Meta Title: Anti-dust Waterproof Oil-proof Fridge Cover | Protective Refrigerato
 Meta Description: Buy Anti-dust Waterproof Oil-proof Fridge Cover | Protective Refrigerator Top Cover | Random Design online in Pakistan from ASM VEO. Durable fridge cover with w
 Description: Durable fridge cover with waterproof, oil-proof, and anti-dust design. Keeps refrigerator clean and protected with random stylish patterns.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

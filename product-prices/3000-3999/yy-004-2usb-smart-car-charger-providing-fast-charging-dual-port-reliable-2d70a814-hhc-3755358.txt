@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: YY 004 2USB Smart Car Charger Providing Fast Charging Dual Port Reliable Performance Durable Quality (Random Color)
 Product ID: hhc-3755358
 SKU: hhc-3755358
@@ -7,11 +8,16 @@ Slug: yy-004-2usb-smart-car-charger-providing-fast-charging-dual-port-reliabl-2d
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/e1e274279fc6bdcdd8b7977b1179f60f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/e1e274279fc6bdcdd8b7977b1179f60f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/5bf8606181016a8686794c65c28f655e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/73c67f5480d207387d3b75e7c74b7982.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/7bb8cf9bcdcced452dc61baf3a73a77f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/67424eb411130dc4a1b6eb0c1030b52a.jpeg
 Meta Title: YY 004 2USB Smart Car Charger Providing Fast Charging Dual Port Reli
 Meta Description: Buy YY 004 2USB Smart Car Charger Providing Fast Charging Dual Port Reliable Performance Durable Quality (Random Color) online in Pakistan from ASM VEO. YY 004
 Description: YY 004 2USB Smart Car Charger Offering Fast Charging Dual Port Reliable Performance Durable Quality And Daily Convenience
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

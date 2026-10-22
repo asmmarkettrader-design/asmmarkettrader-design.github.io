@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: All Purpose Chrome Shine Cleaner 200ml – Powerful Stain, Rust And Grease Removal For Bright And Shiny Stainless Steel Surfaces
 Product ID: hhc-3752624
 SKU: hhc-3752624
@@ -7,11 +8,16 @@ Slug: all-purpose-chrome-shine-cleaner-200ml-powerful-stain-rust-and-grease-r-d9
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/a8aaa41593d887018b9e7952b18e4d84.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/a8aaa41593d887018b9e7952b18e4d84.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/2ceff750975f4c21d338941660d61702.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/5d74890e75d7d678aa19532a6cf0dda4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/ef4209f42a1ba6e4b30e1aa01171f853.jpeg
 Meta Title: All Purpose Chrome Shine Cleaner 200ml – Powerful Stain, Rust And Gr
 Meta Description: Buy All Purpose Chrome Shine Cleaner 200ml – Powerful Stain, Rust And Grease Removal For Bright And Shiny Stainless Steel Surfaces online in Pakistan from ASM V
 Description: A multipurpose chrome shine cleaner designed to remove stains, rust and grease, restoring brightness to stainless steel and household surfaces.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

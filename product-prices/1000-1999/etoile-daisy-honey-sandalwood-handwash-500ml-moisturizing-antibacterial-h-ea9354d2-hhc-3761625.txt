@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Etoile Daisy Honey & Sandalwood Handwash 500ml – Moisturizing Antibacterial Hand Wash in Pakistan
 Product ID: hhc-3761625
 SKU: hhc-3761625
@@ -7,11 +8,16 @@ Slug: etoile-daisy-honey-sandalwood-handwash-500ml-moisturizing-antibacterial-ea
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/c0089e588c145723cf569a2a4c892c2a.PNG
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/10/c0089e588c145723cf569a2a4c892c2a.PNG
 Meta Title: Etoile Daisy Honey & Sandalwood Handwash 500ml – Moisturizing Antiba
 Meta Description: Buy Etoile Daisy Honey & Sandalwood Handwash 500ml – Moisturizing Antibacterial Hand Wash in Pakistan online in Pakistan from ASM VEO. Etoile Daisy Honey & Sand
 Description: Etoile Daisy Honey & Sandalwood Handwash 500ml gently cleanses and protects your hands while keeping them soft and moisturized. Infused with the nourishing goodness of honey and the calming fragrance of sandalwood, it effectively removes dirt and germs, leaving your hands fresh, clean, and beautiful
-Regular Price: 506
-Sale Price: 506
+Wholesale Price: 456
+Regular Price: 930
+Sale Price: 744
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

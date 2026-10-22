@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stanley Style Blue Floral Print Tumbler - Drinkware Accessory Designed For Liquid Hydration And Daily Travel Routine - 600ML
 Product ID: hhc-3765482
 SKU: hhc-3765482
@@ -7,11 +8,16 @@ Slug: stanley-style-blue-floral-print-tumbler-drinkware-accessory-designed-fo-6a
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/401977d31ee9db9fcece2918eeca2115.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/401977d31ee9db9fcece2918eeca2115.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/2d594ee93f986dbc28f8f8171ad6bffc.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/e4a20d755515e144293f9c8638e6f2ff.jfif
 Meta Title: Stanley Style Blue Floral Print Tumbler - Drinkware Accessory Design
 Meta Description: Buy Stanley Style Blue Floral Print Tumbler - Drinkware Accessory Designed For Liquid Hydration And Daily Travel Routine - 600ML online in Pakistan from ASM VEO
 Description: This Stanley Style Blue Floral Print Tumbler Provides A Reliable Solution For Drinkware Accessories And Routine Liquid Hydration Needs. Formulated To Deliver Travel Benefits While Supporting Stanley Style Blue Floral Print Tumbler Utility, It Fits Seamlessly Into Your Regular Liquid Hydration Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Liquid Hydration Requirements, This Stanley Style Blue Floral Print Tumbler Serves As An Essential Drinkware Accessory For Daily Life.Key FeaturesStanley Style Blue Floral Print Tumbler Formulated For Drinkware AccessoriesDelivers Liquid Hydration And Supports Daily Travel UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Liquid Hydration And Travel RoutinesDesigned For Easy Operation And Convenient UseEssential Drinkware Accessory For Everyday MaintenanceCapacity: 600ml.
-Regular Price: 2362
-Sale Price: 2362
+Wholesale Price: 2362
+Regular Price: 4210
+Sale Price: 3369
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

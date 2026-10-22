@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Translucent Leaf Triptych – Set of 3 Wooden Frame Wall Art Panels with Double Tape for Easy Mounting (Available in Two Sizes)
 Product ID: hhc-3752442
 SKU: hhc-3752442
@@ -7,11 +8,16 @@ Slug: translucent-leaf-triptych-set-of-3-wooden-frame-wall-art-panels-with-do-81
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/c4f0e5b45f988553dc9aeb02d86f66dc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/c4f0e5b45f988553dc9aeb02d86f66dc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/1f92cd335d946fc0e04dab254ddaee06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/6c49fdc82a031b930fb0702f1c3dd5a6.jpeg
 Meta Title: Translucent Leaf Triptych – Set of 3 Wooden Frame Wall Art Panels wi
 Meta Description: Buy Translucent Leaf Triptych – Set of 3 Wooden Frame Wall Art Panels with Double Tape for Easy Mounting (Available in Two Sizes) online in Pakistan from ASM VE
 Description: Three-panel leaf artwork in wooden frames. Available in two sizes. Includes double-sided tape for easy wall mounting.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

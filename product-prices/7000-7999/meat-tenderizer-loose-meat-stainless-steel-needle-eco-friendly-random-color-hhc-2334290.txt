@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Meat Tenderizer Loose Meat  Stainless Steel Needle Eco-Friendly (random color)
 Product ID: hhc-2334290
 SKU: hhc-2334290
@@ -7,11 +8,16 @@ Slug: meat-tenderizer-loose-meat-stainless-steel-needle-eco-friendly-random-colo
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-07-at-2.09.29-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-07-at-2.09.29-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-07-at-2.09.29-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-07-at-2.09.28-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/61WpCmb7DOL._AC_SL1000_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/51jxXCncZ5L._AC_SL1000_.jpg
 Meta Title: Meat Tenderizer Loose Meat Stainless Steel Needle Eco-Friendly (rand
 Meta Description: Buy Meat Tenderizer Loose Meat Stainless Steel Needle Eco-Friendly (random color) online in Pakistan from ASM VEO. Product detailsStainless Steel Sharp Needles
 Description: Product detailsStainless Steel Sharp Needles Meat TenderizerShorten the cooking timefHigh-quality materialLightweight, easy to useWaterproof and firm, durable and wear-resistantStrong structure, good durability, simple and practicalSuitable for beef steak, mutton, chicken and so onMaterial: ABS+ Stainless steel needle[video width="720" height="720" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Video-2024-10-04-at-4.44.36-PM.mp4"][/video]
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

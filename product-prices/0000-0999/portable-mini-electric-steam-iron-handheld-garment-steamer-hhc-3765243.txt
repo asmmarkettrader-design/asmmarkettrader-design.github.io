@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Mini Electric Steam Iron - Handheld Garment Steamer
 Product ID: hhc-3765243
 SKU: hhc-3765243
@@ -7,11 +8,16 @@ Slug: portable-mini-electric-steam-iron-handheld-garment-steamer-hhc-3765243
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/d13e855edc72fb719cacda0d48f3d010.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/d13e855edc72fb719cacda0d48f3d010.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/b91644ae805615c1cdac61e36d9075ed.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/a8be5fa760f04ec1ef3a688c3ff6f386.jpg
 Meta Title: Portable Mini Electric Steam Iron - Handheld Garment Steamer | Buy O
 Meta Description: Buy Portable Mini Electric Steam Iron - Handheld Garment Steamer online in Pakistan from ASM VEO. Portable Mini Electric Steam Iron for clothes. Features wet an
 Description: Portable Mini Electric Steam Iron for clothes. Features wet and dry ironing modes, fast heating, and a compact design. Lightweight and easy to use. Suitable for home, travel, and quick touch-ups. Weight is approx 0.4kg per unit.
-Regular Price: 3250
-Sale Price: 1899
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

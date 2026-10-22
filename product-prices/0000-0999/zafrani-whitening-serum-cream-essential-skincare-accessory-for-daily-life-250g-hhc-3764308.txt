@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Whitening Serum Cream Essential Skincare Accessory For Daily Life 250g
 Product ID: hhc-3764308
 SKU: hhc-3764308
@@ -7,11 +8,16 @@ Slug: zafrani-whitening-serum-cream-essential-skincare-accessory-for-daily-life-
 Category: Beauty & Personal Care
 Subcategory: Skin Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/e6c56d10c57057e8707ead28ce5f7e03.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/e6c56d10c57057e8707ead28ce5f7e03.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/1f0ae03f5c5092f57562bc85790ce0b0.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/98e60d80620a001df488c4a17a69f60a.jpg
 Meta Title: Zafrani Whitening Serum Cream Essential Skincare Accessory For Daily
 Meta Description: Buy Zafrani Whitening Serum Cream Essential Skincare Accessory For Daily Life 250g online in Pakistan from ASM VEO. This Zafrani Cream Whitening And Moisturizin
 Description: This Zafrani Cream Whitening And Moisturizing Beauty Cream Provides A Reliable Solution For Skincare Products And Routine Beauty Needs
-Regular Price: 439
-Sale Price: 439
+Wholesale Price: 389
+Regular Price: 800
+Sale Price: 644
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

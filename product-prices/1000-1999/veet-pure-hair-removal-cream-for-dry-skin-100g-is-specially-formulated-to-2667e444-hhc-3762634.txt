@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Veet Pure Hair Removal Cream For Dry Skin 100g Is Specially Formulated To Provide Gentle And Effective Hair Removal
 Product ID: hhc-3762634
 SKU: hhc-3762634
@@ -7,11 +8,16 @@ Slug: veet-pure-hair-removal-cream-for-dry-skin-100g-is-specially-formulated-266
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/beb592acccda674c538df2b30c9f4ebd.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/beb592acccda674c538df2b30c9f4ebd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/31405f2de64ab67b07419f70e79b3e87.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/bbd354b1484b7527a6208a5e17156fcc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/27/930ba2a77318d85875e569b4b4335f22.jpeg
 Meta Title: Veet Pure Hair Removal Cream For Dry Skin 100g Is Specially Formulat
 Meta Description: Buy Veet Pure Hair Removal Cream For Dry Skin 100g Is Specially Formulated To Provide Gentle And Effective Hair Removal online in Pakistan from ASM VEO. Veet Pu
 Description: Veet Pure Hair Removal Cream For Dry Skin 100g Gentle Effective Affordable Practical Choice Reliable Performance Perfect For Smooth Skin And Daily Beauty Care.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality 3D Concealer Stick Highlighter Face Contour Pen - 1 pc
 Product ID: hhc-2474269
 SKU: hhc-2474269
@@ -7,11 +8,16 @@ Slug: high-quality-3d-concealer-stick-highlighter-face-contour-pen-1-pc-hhc-2474
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: High Quality 3D Concealer Stick Highlighter Face Contour Pen - 1 pc
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.19.35-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.19.35-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.19.35-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.19.34-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-16-at-6.19.33-PM.jpeg
+Meta Title: High Quality 3D Concealer Stick Highlighter Face Contour Pen - 1 pc 
 Meta Description: Buy High Quality 3D Concealer Stick Highlighter Face Contour Pen - 1 pc online in Pakistan from ASM VEO. Product Description 100% Brand New and high quality. Hi
 Description: Product Description 100% Brand New and high quality. High-gloss shadow double-head combination, fine texture, long-lasting effect without blooming, light-colored T-zone highlights, dark V-zone shadows. Create a three-dimensional V face, no dead ends. Weight: about 32g Product effect: brighten the outline, create a small small V face. Suitable for skin type: any skin type. Package includes: 1x 3D Concealer Stick Highlighter Face Contour Pen
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

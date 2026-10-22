@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Micro Men’s Tracksuit Markhor Print Comfortable Sportswear For Gym Workout Training And Daily Wear
 Product ID: hhc-3762490
 SKU: hhc-3762490
@@ -7,11 +8,16 @@ Slug: premium-micro-men-s-tracksuit-markhor-print-comfortable-sportswear-for-a97
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/50a6b32a5fe71c84139c66e02fe89766.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/50a6b32a5fe71c84139c66e02fe89766.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/578234b6b411f383c77369ab2011e1aa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/07592fc3f5b862b39e82ad32d2e058c6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/b05fc6d54d23e57892407eb7f6d16dd2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/3613bec68b68226900923105e6b1a34c.jpeg
 Meta Title: Premium Micro Men’s Tracksuit Markhor Print Comfortable Sportswear F
 Meta Description: Buy Premium Micro Men’s Tracksuit Markhor Print Comfortable Sportswear For Gym Workout Training And Daily Wear online in Pakistan from ASM VEO. Stay Comfortable
 Description: Stay Comfortable With This Premium Micro Men’s Tracksuit Featuring A Stylish Markhor Print. Ideal For Gym, Workout, Sports, And Everyday Wear. Available In Medium, Large, And XL Sizes.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

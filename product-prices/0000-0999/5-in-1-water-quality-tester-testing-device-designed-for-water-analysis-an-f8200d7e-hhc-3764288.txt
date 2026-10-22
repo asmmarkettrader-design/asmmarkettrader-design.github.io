@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 In 1 Water Quality Tester - Testing Device Designed For Water Analysis And Daily Quality Testing Routine
 Product ID: hhc-3764288
 SKU: hhc-3764288
@@ -7,11 +8,16 @@ Slug: 5-in-1-water-quality-tester-testing-device-designed-for-water-analysis-f82
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/8ce5822eca8dc4a7f77f290ad7a1d0df.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/8ce5822eca8dc4a7f77f290ad7a1d0df.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/3842004db8b6a2f00865ae9e18e92d18.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/5aeaeaea6ba6378c23e986a9ca769a09.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/24/b508adbe44e4b9b43e410e9ec819ff54.jpg
 Meta Title: 5 In 1 Water Quality Tester - Testing Device Designed For Water Anal
 Meta Description: Buy 5 In 1 Water Quality Tester - Testing Device Designed For Water Analysis And Daily Quality Testing Routine online in Pakistan from ASM VEO. The 5 In 1 Water
 Description: The 5 In 1 Water Quality Tester Is A Testing Device Formulated To Help Provide Water Analysis And Daily Quality Testing Utility During Use.
-Regular Price: 6517
-Sale Price: 6517
+Wholesale Price: 6517
+Regular Price: 10820
+Sale Price: 8652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

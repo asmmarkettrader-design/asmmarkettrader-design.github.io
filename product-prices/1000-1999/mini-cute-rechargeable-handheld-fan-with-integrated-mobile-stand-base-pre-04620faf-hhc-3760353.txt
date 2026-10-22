@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Cute Rechargeable Handheld Fan with Integrated Mobile Stand Base – Premium Single-Speed Portable Desktop Fan
 Product ID: hhc-3760353
 SKU: hhc-3760353
@@ -7,11 +8,16 @@ Slug: mini-cute-rechargeable-handheld-fan-with-integrated-mobile-stand-base-p-04
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/24d5f2de4bffee2188a01a2a9d5ec2be.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/24d5f2de4bffee2188a01a2a9d5ec2be.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/099410a3b88c6e746b07d2709b97267b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/460b3e0a4d957b76682d4c694c475172.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/4340f5f0a071a94cf270f6810e9a50c6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/06/0e7954ef983315a661adfcfdf73ecb79.png
 Meta Title: Mini Cute Rechargeable Handheld Fan with Integrated Mobile Stand Bas
 Meta Description: Buy Mini Cute Rechargeable Handheld Fan with Integrated Mobile Stand Base – Premium Single-Speed Portable Desktop Fan online in Pakistan from ASM VEO. Stay cool
 Description: Stay cool during school days and outdoor trips with this ultra-cute Rechargeable Mini Hand Fan. Featuring a dual-purpose design with a removable desktop dock that doubles as a mobile phone stand, this single-speed handy fan provides a refreshing personal breeze wherever you go.
-Regular Price: 616
-Sale Price: 616
+Wholesale Price: 566
+Regular Price: 1100
+Sale Price: 881
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

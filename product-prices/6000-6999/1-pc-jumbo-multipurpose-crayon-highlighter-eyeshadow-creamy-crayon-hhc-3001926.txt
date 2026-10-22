@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pc Jumbo Multipurpose Crayon – Highlighter + Eyeshadow Creamy Crayon
 Product ID: hhc-3001926
 SKU: hhc-3001926
@@ -7,11 +8,16 @@ Slug: 1-pc-jumbo-multipurpose-crayon-highlighter-eyeshadow-creamy-crayon-hhc-300
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.17.32-AM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.17.32-AM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.17.32-AM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.17.30-AM-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/04/WhatsApp-Image-2025-04-12-at-1.17.31-AM-2.jpeg
 Meta Title: 1 Pc Jumbo Multipurpose Crayon – Highlighter + Eyeshadow Creamy Cray
 Meta Description: Buy 1 Pc Jumbo Multipurpose Crayon – Highlighter + Eyeshadow Creamy Crayon online in Pakistan from ASM VEO. 1 Pc Jumbo Multipurpose Crayon – Highlighter + Eyesh
 Description: 1 Pc Jumbo Multipurpose Crayon – Highlighter + Eyeshadow Creamy Crayon Unleash your creativity with this Jumbo Creamy Crayon, your all-in-one beauty essential! Perfect as a highlighter, eyeshadow, or even a luminous touch for cheeks — its buttery-soft texture glides effortlessly, blending like a dream for a radiant, dewy glow. ✅ Multipurpose Use – Highlighter, Eyeshadow, &amp; More✅ Smooth Creamy Formula – Easy to Blend✅ Highly Pigmented with a Shimmer Finish✅ Perfect for On-the-Go Glow-Ups✅ Long-Lasting &amp; Lightweight Feel Whether you're glowing up your lids or adding sparkle to your cheekbones, this jumbo crayon does it all – with zero fuss and all the glam! Material: liquid Product Type: jumbo crayon Net:2g Shades: white,yellow,pink,golden,blue,brown Original Picture
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

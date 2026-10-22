@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M11 Bluetooth Wireless Earbuds – Touch Control, High Quality Sound & Charging Case (Random Color)
 Product ID: hhc-3757560
 SKU: hhc-3757560
@@ -7,11 +8,16 @@ Slug: m11-bluetooth-wireless-earbuds-touch-control-high-quality-sound-chargin-a4
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/3e7035c9343823dbc87be9c772d0bd11.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/3e7035c9343823dbc87be9c772d0bd11.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/9c10e11269376cd293321abe89702c92.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/da096586ec733abf94ce6ae0a6d7b09c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/73d14434276776f3d34ef45394e3a2e3.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/c5b32e8dd55d0819dcc1bffa5ac3db62.jpeg
 Meta Title: M11 Bluetooth Wireless Earbuds – Touch Control, High Quality Sound &
 Meta Description: Buy M11 Bluetooth Wireless Earbuds – Touch Control, High Quality Sound & Charging Case (Random Color) online in Pakistan from ASM VEO. M11 wireless Bluetooth ea
 Description: M11 wireless Bluetooth earbuds with clear sound, touch control, and portable charging case. Perfect for music, calls, and daily use.
-Regular Price: 474
-Sale Price: 474
+Wholesale Price: 424
+Regular Price: 870
+Sale Price: 696
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

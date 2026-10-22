@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 02 Double Sided Glue Dots for Balloons - Removable Adhesive Tape for Birthdays Weddings Parties
 Product ID: hhc-2742562
 SKU: hhc-2742562
@@ -7,11 +8,16 @@ Slug: pack-of-02-double-sided-glue-dots-for-balloons-removable-adhesive-tape-8fc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Pack of 02 Double Sided Glue Dots for Balloons - Removable Adhesive
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/Glue-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/Glue-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/Glue-2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/Glue-3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/Glue-4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/02/Glue-5.png
+Meta Title: Pack of 02 Double Sided Glue Dots for Balloons - Removable Adhesive 
 Meta Description: Buy Pack of 02 Double Sided Glue Dots for Balloons - Removable Adhesive Tape for Birthdays Weddings Parties online in Pakistan from ASM VEO. Product Description
 Description: Product Description Packing Include: 100 Glue Dots in a Roll Glue Dots Shape Is Round You Will Receive Only Balloons Dot Glue Not Balloons. It Is Use For Multi-Purpose Like Paste Balloons, Paste Butterfly, Photos, Posters, Wedding Decoration, and Gift Wrapping Etc. If you want to have the balloon at the ceiling without helium gas Or stick at the wall by using it to stick on the wall Put glue points on the place you want, peel off the white protective film, easy to fix balloons, also these invisible points will not affect the beauty of crafts, easy to clean off.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

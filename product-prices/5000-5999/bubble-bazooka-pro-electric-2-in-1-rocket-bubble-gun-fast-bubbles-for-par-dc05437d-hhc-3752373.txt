@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bubble Bazooka Pro Electric 2-in-1 Rocket Bubble Gun — Fast Bubbles for Parties, Beach & Backyard Fun
 Product ID: hhc-3752373
 SKU: hhc-3752373
@@ -7,11 +8,16 @@ Slug: bubble-bazooka-pro-electric-2-in-1-rocket-bubble-gun-fast-bubbles-for-p-dc
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
-Meta Title: Bubble Bazooka Pro Electric 2-in-1 Rocket Bubble Gun — Fast Bubbles
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/c951adba9f01971e6c45ec31fe98705f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/c951adba9f01971e6c45ec31fe98705f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/44cd03c67c31ec55d404f0677ba3ee92.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/22/eae5ce5cebb1ad9a16a6392e9f306170.png
+Meta Title: Bubble Bazooka Pro Electric 2-in-1 Rocket Bubble Gun — Fast Bubbles 
 Meta Description: Buy Bubble Bazooka Pro Electric 2-in-1 Rocket Bubble Gun — Fast Bubbles for Parties, Beach & Backyard Fun online in Pakistan from ASM VEO. Bubble Bazooka Pro: E
 Description: Bubble Bazooka Pro: Electric 2-in-1 Rocket Bubble Gun — Fast Bubbles for Parties, Beach & Backyard Fun
-Regular Price: 895
-Sale Price: 895
+Wholesale Price: 845
+Regular Price: 1610
+Sale Price: 1285
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

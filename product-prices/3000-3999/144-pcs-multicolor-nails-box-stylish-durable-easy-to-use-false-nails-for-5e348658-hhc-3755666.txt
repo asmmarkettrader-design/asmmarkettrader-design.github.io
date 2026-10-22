@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 144 Pcs Multicolor Nails Box – Stylish, Durable & Easy-to-Use False Nails for Everyday Fashion, Parties & Nail Art Designs
 Product ID: hhc-3755666
 SKU: hhc-3755666
@@ -7,11 +8,16 @@ Slug: 144-pcs-multicolor-nails-box-stylish-durable-easy-to-use-false-nails-fo-5e
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: 144 Pcs Multicolor Nails Box – Stylish, Durable & Easy-to-Use False
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/84b872ae78db0ff4b1692680e7b7275b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/84b872ae78db0ff4b1692680e7b7275b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/e6700a98983ff25dddd20fb99ff95531.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/5d6fe41ddec1138565fba8e7c89c987e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/2ba8a23f6a884c16907799e21f64e796.jpeg
+Meta Title: 144 Pcs Multicolor Nails Box – Stylish, Durable & Easy-to-Use False 
 Meta Description: Buy 144 Pcs Multicolor Nails Box – Stylish, Durable & Easy-to-Use False Nails for Everyday Fashion, Parties & Nail Art Designs online in Pakistan from ASM VEO.
 Description: A pack of 144 multicolor false nails offering vibrant, durable, and stylish nail designs. Perfect for everyday wear, parties, and creative nail art.
-Regular Price: 809
-Sale Price: 809
+Wholesale Price: 759
+Regular Price: 1450
+Sale Price: 1161
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Feast Boom Bubble Feast Gun for Kids
 Product ID: hhc-3764906
 SKU: hhc-3764906
@@ -7,11 +8,16 @@ Slug: feast-boom-bubble-feast-gun-for-kids-hhc-3764906
 Category: Pet Toys & Beds
 Subcategory: Pet Toys
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/538448f12b147d715540a7bae6ac351a.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/538448f12b147d715540a7bae6ac351a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/bd9d042ea74fbb09e146b986f38d7b4c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/f179338c7afca1e7c0d0f7608ba2d205.jpeg
 Meta Title: Feast Boom Bubble Feast Gun for Kids | Buy Online in Pakistan
 Meta Description: Buy Feast Boom Bubble Feast Gun for Kids online in Pakistan from ASM VEO. Bring endless fun to playtime with the Feast Boom Bubble Feast Gun for Kids. Featuring
 Description: Bring endless fun to playtime with the Feast Boom Bubble Feast Gun for Kids. Featuring a powerful electric motor and multi-hole nozzle design, this automatic bubble gun shoots hundreds of rich bubbles per minute. Lightweight, durable, and easy to operate, it is the perfect outdoor toy for birthday
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

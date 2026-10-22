@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashee's 3 In 1 Foundation, Fixer And 2 In1 Face Powder Deal, Pack Of 3
 Product ID: hhc-3764818
 SKU: hhc-3764818
@@ -7,11 +8,16 @@ Slug: kashee-s-3-in-1-foundation-fixer-and-2-in1-face-powder-deal-pack-of-3-hhc-
 Category: Beauty & Personal Care
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/d9264765c62054c8b0156171c7e99831.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/d9264765c62054c8b0156171c7e99831.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/a5df5de4d1b4bcb01986276ed8f7c9bb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/df8212c56ed9bca6b3cf6f3772b9947c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/369ce913331411c6d1414ef39d1b3f1f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/f56982ea169f5de33bac8daeb9305877.jpg
 Meta Title: Kashee's 3 In 1 Foundation, Fixer And 2 In1 Face Powder Deal, Pack O
 Meta Description: Buy Kashee's 3 In 1 Foundation, Fixer And 2 In1 Face Powder Deal, Pack Of 3 online in Pakistan from ASM VEO. Simplify your daily beauty routine with Kashee’s 3-
 Description: Simplify your daily beauty routine with Kashee’s 3-In-1 Essential Base Makeup Deal. This core 3-piece kit combines liquid foundation, a versatile 2-in-1 compact face powder, and a long-wearing makeup fixer spray. Formulated to deliver smooth, oil-controlled coverage that sets effortlessly and stays
-Regular Price: 1716
-Sale Price: 1716
+Wholesale Price: 1716
+Regular Price: 3120
+Sale Price: 2497
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

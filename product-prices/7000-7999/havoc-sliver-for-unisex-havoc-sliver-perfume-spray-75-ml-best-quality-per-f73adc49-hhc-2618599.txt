@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Havoc Sliver for Unisex ( Havoc Sliver Perfume Spray ) 75 ML | Best Quality Perfume | Havoc Silver Eau De Perfume 75ml
 Product ID: hhc-2618599
 SKU: hhc-2618599
@@ -7,11 +8,16 @@ Slug: havoc-sliver-for-unisex-havoc-sliver-perfume-spray-75-ml-best-quality-p-f7
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61x4ZjM0SPL._AC_SX569_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/61x4ZjM0SPL._AC_SX569_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/71SselRqaL._AC_SX679_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/2fc063712f74060827e0f2c1629eb567_637x.jpg
 Meta Title: Havoc Sliver for Unisex ( Havoc Sliver Perfume Spray ) 75 ML | Best
 Meta Description: Buy Havoc Sliver for Unisex ( Havoc Sliver Perfume Spray ) 75 ML | Best Quality Perfume | Havoc Silver Eau De Perfume 75ml online in Pakistan from ASM VEO. Havo
 Description: Havoc Sliver for Unisex ( Havoc Sliver Perfume Spray ) 75 ML | Best Quality Perfume | Havoc Silver Eau De Perfume 75ml Havoc Silver Perfume Spray for Men (75ml) Brand: Havoc Capacity: 75ml Fragrance: Unique, long-lasting, and fresh ( 5 Hours Of long lasting ) Quality: Copy Key Features: Elegant and sophisticated scent Iconic and highly sought-after fragrance Sexy and timeless aroma High-quality and reliable Perfect For: Daily wear or special occasions Gifting someone special
-Regular Price: 1359
-Sale Price: 1359
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

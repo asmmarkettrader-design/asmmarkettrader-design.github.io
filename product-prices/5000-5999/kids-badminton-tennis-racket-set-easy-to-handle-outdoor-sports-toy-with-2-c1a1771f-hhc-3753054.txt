@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Badminton & Tennis Racket Set – Easy-To-Handle Outdoor Sports Toy With 2 Rackets, 1 Ball, And 1 Shuttlecock For Fun Indoor & Outdoor Play (Random Color)
 Product ID: hhc-3753054
 SKU: hhc-3753054
@@ -7,11 +8,16 @@ Slug: kids-badminton-tennis-racket-set-easy-to-handle-outdoor-sports-toy-with-c1
 Category: Toys & Games
 Subcategory: Outdoor & Sports Toys
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/48308b3b0be98b566647d24d3713579a.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/48308b3b0be98b566647d24d3713579a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/4da64b8a6eb038fed5b9bfdb3e5cd0d3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/f2b4f6be060638705e6989b0e8a9a88a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/5a2e09a0e6d4b0be08d43ce7360b94ab.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/332ce73c108668d290907425b00b8e75.jpg
 Meta Title: Kids Badminton & Tennis Racket Set – Easy-To-Handle Outdoor Sports T
 Meta Description: Buy Kids Badminton & Tennis Racket Set – Easy-To-Handle Outdoor Sports Toy With 2 Rackets, 1 Ball, And 1 Shuttlecock For Fun Indoor & Outdoor Play (Random Color
 Description: Lightweight And Easy-To-Use Kids Badminton And Tennis Racket Set Designed For Safe, Fun, And Active Play Indoors Or Outdoors.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1Pc Cell Phone Stand For Desk (Random Colour)
 Product ID: hhc-927825
 SKU: hhc-927825
@@ -7,11 +8,16 @@ Slug: 1pc-cell-phone-stand-for-desk-random-colour-hhc-927825
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-13-at-8.30.53-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-13-at-8.30.53-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-13-at-8.30.52-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/6f2a7ac243f8213886adf3cbfc60db5c.png_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/d3d838513296f5f8fbd8c22599d64bfb.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/f89f57be7fa090da909bb975e1b16dbf.jpg_750x750.jpg_.webp
 Meta Title: 1Pc Cell Phone Stand For Desk (Random Colour) | Buy Online in Pakist
 Meta Description: Buy 1Pc Cell Phone Stand For Desk (Random Colour) online in Pakistan from ASM VEO. Product details Charger: No Magnetic: No Use: Desk Has Speaker: No Model Numb
 Description: Product details Charger: No Magnetic: No Use: Desk Has Speaker: No Model Number: Holder Tablet Material: ABS Style: Simple Folded Tablet Mobile Phone Holder Mount Type: Adjustable Display Angle Stand Support Material: Durable Hard Plastic Size: 6cm x 4.5cm Colors: Red, Light Blue, Yellow and Orange (Color might vary on availability) Universal compact design Easy to carry and Use Washable
-Regular Price: 179
-Sale Price: 179
+Wholesale Price: 129
+Regular Price: 404
+Sale Price: 254
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids & Baby Sweatshirt and Pajama Tracksuit | Imported Winter Warm 2-Piece Set for Boys & Girls – Cozy, Comfy Outfit FOR BABY AND KIDS
 Product ID: hhc-3753387
 SKU: hhc-3753387
@@ -7,11 +8,16 @@ Slug: kids-baby-sweatshirt-and-pajama-tracksuit-imported-winter-warm-2-piece-0ab
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/4cef7a68d8a63788fc5a14ac9a8669f4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/4cef7a68d8a63788fc5a14ac9a8669f4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/d024454b1da8743d317a2e5c1697a394.png
 Meta Title: Kids & Baby Sweatshirt and Pajama Tracksuit | Imported Winter Warm 2
 Meta Description: Buy Kids & Baby Sweatshirt and Pajama Tracksuit | Imported Winter Warm 2-Piece Set for Boys & Girls – Cozy, Comfy Outfit FOR BABY AND KIDS online in Pakistan fr
 Description: Imported kids and baby tracksuit keeps boys and girls warm and comfy — soft sweatshirt and pajama trousers perfect for winter.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

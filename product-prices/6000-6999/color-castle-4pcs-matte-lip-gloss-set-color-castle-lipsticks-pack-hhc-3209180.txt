@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Color Castle [4pcs] Matte Lip Gloss Set | Color castle lipsticks Pack
 Product ID: hhc-3209180
 SKU: hhc-3209180
@@ -7,11 +8,16 @@ Slug: color-castle-4pcs-matte-lip-gloss-set-color-castle-lipsticks-pack-hhc-3209
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.29.02-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.29.02-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.29.01-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.29.00-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.29.00-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.28.59-PM.jpeg
 Meta Title: Color Castle [4pcs] Matte Lip Gloss Set | Color castle lipsticks Pac
 Meta Description: Buy Color Castle [4pcs] Matte Lip Gloss Set | Color castle lipsticks Pack online in Pakistan from ASM VEO. Color Castle [4pcs] Matte Lip Gloss Set | Color castl
 Description: Color Castle [4pcs] Matte Lip Gloss Set | Color castle lipsticks Pack High Coverage &amp; Long Lasting Lipgloss | Pack of 4: 24H Long Lasting LipGloss Kit • Material: Liquid • Texture: Matte • Color: Multicolor • Shade: Multicolor • Product Feature: Long Lasting • Package Includes: 4 x Lipgloss &nbsp; Product's Pictures:
-Regular Price: 930
-Sale Price: 930
+Wholesale Price: 880
+Regular Price: 1670
+Sale Price: 1336
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kit 2 Pcs Deep Facial Cleanser And Repairer With Rice Extract Eliminates Fats And Impurities 150ML Yardlie Clarifying Hyaluronic Acid Rice Scrub + Collagen Beauty Cream
 Product ID: hhc-2539683
 SKU: hhc-2539683
@@ -7,11 +8,16 @@ Slug: kit-2-pcs-deep-facial-cleanser-and-repairer-with-rice-extract-eliminate-38
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-02-at-7.53.22-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-02-at-7.53.22-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-02-at-7.53.22-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-02-at-7.53.21-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-02-at-7.52.56-AM.jpeg
 Meta Title: Kit 2 Pcs Deep Facial Cleanser And Repairer With Rice Extract Elimin
 Meta Description: Buy Kit 2 Pcs Deep Facial Cleanser And Repairer With Rice Extract Eliminates Fats And Impurities 150ML Yardlie Clarifying Hyaluronic Acid Rice Scrub + Collagen
 Description: Kit 2 Pcs Deep Facial Cleanser And Repairer With Rice Extract Eliminates Fats And Impurities 150ML, Clarifying Hyaluronic Acid Rice Scrub Protects The Skin From The First Application For All Skin Types + Rice Whitening Repair Facial Cream Collagen Beauty Cream, a luxurious blend of natural ingredients that nourish and rejuvenate your skin. Pamper your skin with the rich, hydrating texture of Yardlie Clarifying Hyaluronic Acid Rice Scrub + Collagen Beauty Cream and unveil a smoother, more luminous complexion. Say hello to healthier, glowing skin &nbsp; [video width="478" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Video-2025-01-02-at-7.53.23-AM.mp4"][/video]
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

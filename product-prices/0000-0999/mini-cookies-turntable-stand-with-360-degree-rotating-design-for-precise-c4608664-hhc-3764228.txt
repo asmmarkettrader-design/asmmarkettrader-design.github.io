@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Cookies Turntable Stand With 360-Degree Rotating Design For Precise Icing And Decorating Of Cookies Cupcakes And Small Pastries
 Product ID: hhc-3764228
 SKU: hhc-3764228
@@ -7,11 +8,16 @@ Slug: mini-cookies-turntable-stand-with-360-degree-rotating-design-for-precis-c4
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/7b0ab118dd19de98332ec02e59393f8b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/7b0ab118dd19de98332ec02e59393f8b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/6de1ff9715d1cee0ff109d0b14703c68.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/22bdf4021a43b2bca62bb01d8740c5d9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/23/0fbad8c890a83344edc913354b2a7200.png
 Meta Title: Mini Cookies Turntable Stand With 360-Degree Rotating Design For Pre
 Meta Description: Buy Mini Cookies Turntable Stand With 360-Degree Rotating Design For Precise Icing And Decorating Of Cookies Cupcakes And Small Pastries online in Pakistan from
 Description: Mini Cookies Turntable Stand With 360-Degree Rotating Design For Precise Icing And Decorating Of Cookies Cupcakes And Small Pastries
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

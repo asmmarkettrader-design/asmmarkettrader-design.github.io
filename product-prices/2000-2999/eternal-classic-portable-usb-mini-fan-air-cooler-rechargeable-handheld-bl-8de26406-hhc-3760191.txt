@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Eternal Classic Portable USB Mini Fan Air Cooler Rechargeable Handheld Bladeless Fan | Multiple Colours
 Product ID: hhc-3760191
 SKU: hhc-3760191
@@ -7,11 +8,16 @@ Slug: eternal-classic-portable-usb-mini-fan-air-cooler-rechargeable-handheld-8de
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/6660e3d04e8d165b7017dd322d8b141b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/6660e3d04e8d165b7017dd322d8b141b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/4a8f7cb2c9bdb33c297223a20112cc89.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/7baffb26c768f5ab852b6eff7f02abd8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/c39a160b57ada3b65b0eb84048605d99.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/ea5c4f5359d5da6f1c75b7891a67b685.jpeg
 Meta Title: Eternal Classic Portable USB Mini Fan Air Cooler Rechargeable Handhe
 Meta Description: Buy Eternal Classic Portable USB Mini Fan Air Cooler Rechargeable Handheld Bladeless Fan | Multiple Colours online in Pakistan from ASM VEO. Eternal Classic Por
 Description: Eternal Classic Portable USB Mini Fan Air Cooler Rechargeable Handheld Bladeless Fan Available In Multiple Colours.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

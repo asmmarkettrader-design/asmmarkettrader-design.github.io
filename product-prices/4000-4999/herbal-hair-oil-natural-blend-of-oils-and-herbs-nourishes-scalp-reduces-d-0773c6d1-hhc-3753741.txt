@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Herbal Hair Oil Natural Blend Of Oils And Herbs Nourishes Scalp Reduces Dandruff Strengthens Roots And Adds Shine - 200ml
 Product ID: hhc-3753741
 SKU: hhc-3753741
@@ -7,11 +8,16 @@ Slug: herbal-hair-oil-natural-blend-of-oils-and-herbs-nourishes-scalp-reduces-07
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/d1a487401f1a5a3fd40b123afe08cc70.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/d1a487401f1a5a3fd40b123afe08cc70.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/89dbe7e858201dd21191818c32fa25de.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/328231a3c05bdc75376cfbd908b9e5c3.jpeg
 Meta Title: Herbal Hair Oil Natural Blend Of Oils And Herbs Nourishes Scalp Redu
 Meta Description: Buy Herbal Hair Oil Natural Blend Of Oils And Herbs Nourishes Scalp Reduces Dandruff Strengthens Roots And Adds Shine - 200ml online in Pakistan from ASM VEO. H
 Description: Herbal Hair Oil Provides Natural Blend Of Oils And Herbs That Nourish Scalp Reduce Dandruff And Add Shine
-Regular Price: 809
-Sale Price: 809
+Wholesale Price: 759
+Regular Price: 1450
+Sale Price: 1161
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

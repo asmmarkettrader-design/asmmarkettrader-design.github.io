@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magic Hanger Multipurpose 9 Hole Space Saving Closet Organizer – Multicolor
 Product ID: hhc-776315
 SKU: hhc-776315
@@ -7,11 +8,16 @@ Slug: magic-hanger-multipurpose-9-hole-space-saving-closet-organizer-multicolor-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/2c267667b870de18e30ad860c03cbfd8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/2c267667b870de18e30ad860c03cbfd8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/61iJLJ5L9TL._SX466_-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/51PiqtPixNL._SX355_-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/51dc572b-e367-4842-ad39-1d5943b06b3b-1.jpeg
 Meta Title: Magic Hanger Multipurpose 9 Hole Space Saving Closet Organizer – Mul
 Meta Description: Buy Magic Hanger Multipurpose 9 Hole Space Saving Closet Organizer – Multicolor online in Pakistan from ASM VEO. Magic Hanger Multipurpose 9 Hole Space Saving C
 Description: Magic Hanger Multipurpose 9 Hole Space Saving Closet Organizer – Multicolor
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

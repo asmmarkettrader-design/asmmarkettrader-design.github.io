@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Decorative Showpiece KD-8213 – Elegant Home & Office Decoration Piece (Size 13.5x4.6x19.8cm)
 Product ID: hhc-3760497
 SKU: hhc-3760497
@@ -7,11 +8,16 @@ Slug: decorative-showpiece-kd-8213-elegant-home-office-decoration-piece-size-489
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/2260572b36311d9942fbbbe725ab582c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/2260572b36311d9942fbbbe725ab582c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/1a1dc0a70d7e22a750c65a066b9fc1e3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/6b4b9836474a2a94cc01cf4f66d6e102.jpeg
 Meta Title: Decorative Showpiece KD-8213 – Elegant Home & Office Decoration Piec
 Meta Description: Buy Decorative Showpiece KD-8213 – Elegant Home & Office Decoration Piece (Size 13.5x4.6x19.8cm) online in Pakistan from ASM VEO. Enhance your living space with
 Description: Enhance your living space with the KD-8213 Decorative Showpiece. Designed with a stylish and modern look, this elegant decoration piece adds sophistication to homes, offices, shelves, side tables, and display cabinets. Its compact size makes it a perfect accent piece for contemporary and classic inte
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Portable Passport Holder Pouch & Multi-Functional Travel Wallet - Size 6*4 inch  - Random color
 Product ID: hhc-3761119
 SKU: hhc-3761119
@@ -7,11 +8,16 @@ Slug: premium-portable-passport-holder-pouch-multi-functional-travel-wallet-s-f1
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/057620828fd1ca360b0cac5b11ce2fcf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/057620828fd1ca360b0cac5b11ce2fcf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/c8be740965bf134b0ff04a0e2033cb68.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/0bea1922ac44a3ed61ac721b2bf32117.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/27/f5409b56df10e3a37902bc57091f833b.jpeg
 Meta Title: Premium Portable Passport Holder Pouch & Multi-Functional Travel Wal
 Meta Description: Buy Premium Portable Passport Holder Pouch & Multi-Functional Travel Wallet - Size 6*4 inch - Random color online in Pakistan from ASM VEO. Streamline your airp
 Description: Streamline your airport experience with the Premium Portable Passport Holder Pouch. Perfectly sized at $6 \times 4$ inches, this compact travel wallet keeps your passport, boarding passes, bank cards, cash,
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

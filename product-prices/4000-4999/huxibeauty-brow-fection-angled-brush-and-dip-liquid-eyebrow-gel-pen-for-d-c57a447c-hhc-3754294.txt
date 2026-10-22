@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Huxibeauty Brow Fection Angled Brush And Dip Liquid Eyebrow Gel Pen For Daily Makeup Needs
 Product ID: hhc-3754294
 SKU: hhc-3754294
@@ -7,11 +8,16 @@ Slug: huxibeauty-brow-fection-angled-brush-and-dip-liquid-eyebrow-gel-pen-for-c5
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Huxibeauty Brow Fection Angled Brush And Dip Liquid Eyebrow Gel Pen
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/e98d499a35110a4737bf4e9e0d58fdee.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/e98d499a35110a4737bf4e9e0d58fdee.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/84d4a08e9d274867d37088369f097ef6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/f588bdcc1b1976bf7338a97310e8d87c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/939139444aa7a7ae67776df18977e8a2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/effde4d6df00cd19c2b2825b5f3f87c0.jpeg
+Meta Title: Huxibeauty Brow Fection Angled Brush And Dip Liquid Eyebrow Gel Pen 
 Meta Description: Buy Huxibeauty Brow Fection Angled Brush And Dip Liquid Eyebrow Gel Pen For Daily Makeup Needs online in Pakistan from ASM VEO. Huxibeauty Brow Fection Angled B
 Description: Huxibeauty Brow Fection Angled Brush And Dip Liquid Eyebrow Gel Pen Provides Durable Quality Reliable Utility Comfortable Use Smooth Application And Compact Design
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

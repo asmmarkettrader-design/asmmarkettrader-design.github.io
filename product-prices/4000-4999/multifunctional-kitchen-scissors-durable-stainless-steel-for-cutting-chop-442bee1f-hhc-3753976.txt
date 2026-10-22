@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multifunctional Kitchen Scissors – Durable Stainless Steel,  for Cutting, Chopping & Everyday Use.(Random Colour)
 Product ID: hhc-3753976
 SKU: hhc-3753976
@@ -7,11 +8,16 @@ Slug: multifunctional-kitchen-scissors-durable-stainless-steel-for-cutting-ch-44
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/0232b13f18d62365c919fb93699bbff8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/0232b13f18d62365c919fb93699bbff8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/389acd050d225624a94535e60a8ece68.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/3f168f71538d2d1ac51f20e28856f9af.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/ac2e05d94bf788f21e9b99df1330b342.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/e1fd837d7070cc1166293a44cd64f360.jpg
 Meta Title: Multifunctional Kitchen Scissors – Durable Stainless Steel, for Cutt
 Meta Description: Buy Multifunctional Kitchen Scissors – Durable Stainless Steel, for Cutting, Chopping & Everyday Use.(Random Colour) online in Pakistan from ASM VEO. Durable mu
 Description: Durable multifunctional kitchen scissors in random colour, ideal for cutting, chopping, and daily kitchen use.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

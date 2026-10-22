@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable & Foldable Aluminium Laptop Stand - Black
 Product ID: hhc-3765502
 SKU: hhc-3765502
@@ -7,11 +8,16 @@ Slug: portable-foldable-aluminium-laptop-stand-black-hhc-3765502
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/10fe97b1905913e6acf451a3d3d42a09.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/10fe97b1905913e6acf451a3d3d42a09.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/b6c7a155e586f1c135d295c5551f47cc.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/b1a0533d09043cb59e192d31e32392e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/f581611c4f09c855f33d92c2295b8d23.jpg
 Meta Title: Portable & Foldable Aluminium Laptop Stand - Black | Buy Online in P
 Meta Description: Buy Portable & Foldable Aluminium Laptop Stand - Black online in Pakistan from ASM VEO. Portable and foldable laptop stand made of premium aluminium alloy. Feat
 Description: Portable and foldable laptop stand made of premium aluminium alloy. Features adjustable height and angle settings for ergonomic comfort. Compatible with most laptops, notebooks, and tablets. Lightweight, easy to carry, and comes with a storage pouch. Prevents overheating with its open design. Weight approx 0.3kg per unit.
-Regular Price: 909
-Sale Price: 909
+Wholesale Price: 859
+Regular Price: 1630
+Sale Price: 1306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

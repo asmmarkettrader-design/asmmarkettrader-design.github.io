@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Herbal Knee Pain Relief Patch – Heat Therapy for Joint & Muscle Comfort, Natural Ingredients Pack Of 10 Pcs
 Product ID: hhc-3752405
 SKU: hhc-3752405
@@ -7,11 +8,16 @@ Slug: herbal-knee-pain-relief-patch-heat-therapy-for-joint-muscle-comfort-nat-9c
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/5d253e0b958a650ff7d6b8668c8347b0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/5d253e0b958a650ff7d6b8668c8347b0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/24/52a13f8c23fc366b367b94005760bce1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/24/f520f338799a049c2a08012a9fa57910.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/24/2b4f598c3ac6f67afe2d1ca14a8182da.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/24/2d4f0baebc89477fdf9e2e1b2cde69a1.jpg
 Meta Title: Herbal Knee Pain Relief Patch – Heat Therapy for Joint & Muscle Comf
 Meta Description: Buy Herbal Knee Pain Relief Patch – Heat Therapy for Joint & Muscle Comfort, Natural Ingredients Pack Of 10 Pcs online in Pakistan from ASM VEO. A natural herba
 Description: A natural herbal knee patch that delivers soothing heat therapy and pain relief for knees and other joints.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

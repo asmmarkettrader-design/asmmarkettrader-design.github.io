@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acne Defense Face Mask 50g – Natural Deep Cleansing Mask for Acne, Oil Control, Blemishes & Clear Skin
 Product ID: hhc-3762027
 SKU: hhc-3762027
@@ -7,11 +8,16 @@ Slug: acne-defense-face-mask-50g-natural-deep-cleansing-mask-for-acne-oil-con-4b
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/cc5cac19aeea3464a35bf11b4e53eae8.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/cc5cac19aeea3464a35bf11b4e53eae8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/17/53ca504745ca19ff96c85ac0ec3f95f3.jpg
 Meta Title: Acne Defense Face Mask 50g – Natural Deep Cleansing Mask for Acne, O
 Meta Description: Buy Acne Defense Face Mask 50g – Natural Deep Cleansing Mask for Acne, Oil Control, Blemishes & Clear Skin online in Pakistan from ASM VEO. Acne Defense Face Ma
 Description: Acne Defense Face Mask is a 100% natural, handmade powder mask designed to deeply cleanse pores, control excess oil, and help reduce acne and blemishes. Made with natural ingredients, it leaves your skin feeling refreshed, smoother, and healthier with regular use.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

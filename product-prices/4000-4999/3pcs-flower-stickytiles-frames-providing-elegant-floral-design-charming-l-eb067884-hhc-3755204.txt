@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Flower Stickytiles Frames Providing Elegant Floral Design Charming Look Durable Quality
 Product ID: hhc-3755204
 SKU: hhc-3755204
@@ -7,11 +8,16 @@ Slug: 3pcs-flower-stickytiles-frames-providing-elegant-floral-design-charming-eb
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/937dcd916dfcabeb8ea3ae2b18f0c802.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/937dcd916dfcabeb8ea3ae2b18f0c802.jpeg
 Meta Title: 3pcs Flower Stickytiles Frames Providing Elegant Floral Design Charm
 Meta Description: Buy 3pcs Flower Stickytiles Frames Providing Elegant Floral Design Charming Look Durable Quality online in Pakistan from ASM VEO. 3pcs Flower Stickytiles Frames
 Description: 3pcs Flower Stickytiles Frames Offering Elegant Floral Design Charming Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

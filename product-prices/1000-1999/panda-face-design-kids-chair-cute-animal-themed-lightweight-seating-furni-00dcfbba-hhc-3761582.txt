@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Panda Face Design Kids Chair - Cute Animal Themed Lightweight Seating Furniture Durable Comfortable Miniature Seat For Toddler Playroom (Random Color)
 Product ID: hhc-3761582
 SKU: hhc-3761582
 Slug: panda-face-design-kids-chair-cute-animal-themed-lightweight-seating-fur-00dcfbba-hhc-3761582
-Category: Home & Kitchen
+Category: Beauty & Personal Care
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/ae23c81ef30b7aebfb03ba0be293a8c2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/ae23c81ef30b7aebfb03ba0be293a8c2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/57e3d3c60a9504f0ae23e5c608ba1e31.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/788d1008ade693a2bfad2d774a01803c.png
 Meta Title: Panda Face Design Kids Chair - Cute Animal Themed Lightweight Seatin
 Meta Description: Buy Panda Face Design Kids Chair - Cute Animal Themed Lightweight Seating Furniture Durable Comfortable Miniature Seat For Toddler Playroom (Random Color) onlin
 Description: A Delightful Panda Face Design Kids Chair Featuring An Adorable Character Backrest Perfectly Crafted For Safe Toddler Seating And Playrooms.
-Regular Price: 669
-Sale Price: 669
+Wholesale Price: 619
+Regular Price: 1200
+Sale Price: 958
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

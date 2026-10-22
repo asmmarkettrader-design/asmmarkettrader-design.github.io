@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Floral Fabric Roti Box – Insulated Nan Keeper with Zipper Closure
 Product ID: hhc-3764600
 SKU: hhc-3764600
@@ -7,11 +8,16 @@ Slug: floral-fabric-roti-box-insulated-nan-keeper-with-zipper-closure-hhc-376460
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/50ff87a4c11aeb7213385e5c4f020e83.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/50ff87a4c11aeb7213385e5c4f020e83.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/30/afc9be5b94ffb01d129635f5d9d7c07c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/393bc0c6b12264bf53573a94f1e630e7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/4a95d1128dd178b5a852e5daf652d1a5.jpg
 Meta Title: Floral Fabric Roti Box – Insulated Nan Keeper with Zipper Closure |
 Meta Description: Buy Floral Fabric Roti Box – Insulated Nan Keeper with Zipper Closure online in Pakistan from ASM VEO. A beautifully crafted fabric roti box featuring a vibrant
 Description: A beautifully crafted fabric roti box featuring a vibrant floral pattern, insulated lining, and wraparound zipper. Designed to keep rotis, nans, and flatbreads warm, soft, and fresh at the dining table.
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

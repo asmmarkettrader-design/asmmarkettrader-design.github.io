@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 Tinkle Eyebrow & Facial Hair Razor for Women
 Product ID: hhc-3754372
 SKU: hhc-3754372
@@ -7,11 +8,16 @@ Slug: pack-of-3-tinkle-eyebrow-facial-hair-razor-for-women-hhc-3754372
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/dd25ca83c96b87fb7953a2ee2e6f89f9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/dd25ca83c96b87fb7953a2ee2e6f89f9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/ae54452e0aa4a806ef9c3a2a389a45c2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/3da7b8d4ccb26a11807c6178bf5f1e38.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/8310c3f2d955ce2d3abac6efe841907c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/e3f80acbd20438992497cbfcfb93ccc2.jpeg
 Meta Title: Pack of 3 Tinkle Eyebrow & Facial Hair Razor for Women | Buy Online
 Meta Description: Buy Pack of 3 Tinkle Eyebrow & Facial Hair Razor for Women online in Pakistan from ASM VEO. Get smooth, fuzz-free skin instantly with this 3-pack of Original Ti
 Description: Get smooth, fuzz-free skin instantly with this 3-pack of Original Tinkle Razors. Designed for precision dermaplaning and safe shaving of eyebrows, facial hair (peach fuzz), and delicate body areas. A gentle, effective hair remover and exfoliating tool for a brighter complexion.
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

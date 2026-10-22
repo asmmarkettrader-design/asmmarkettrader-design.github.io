@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Neck Fan USB Rechargeable Adjustable Personal Fan for Indoor & Outdoor Use (Random Color)
 Product ID: hhc-3761689
 SKU: hhc-3761689
@@ -7,11 +8,16 @@ Slug: portable-neck-fan-usb-rechargeable-adjustable-personal-fan-for-indoor-o-89
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/6cd2c4b1d50076fe21fcd44d4375841a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/6cd2c4b1d50076fe21fcd44d4375841a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/fe3205ae0e58034c3636742985bc853d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/11/285c24178a55c32633bcf4836268781b.jpeg
 Meta Title: Portable Neck Fan USB Rechargeable Adjustable Personal Fan for Indoo
 Meta Description: Buy Portable Neck Fan USB Rechargeable Adjustable Personal Fan for Indoor & Outdoor Use (Random Color) online in Pakistan from ASM VEO. Stay cool wherever you g
 Description: Stay cool wherever you go with the Portable Neck Fan. Featuring a lightweight hands-free design, 3 adjustable speed levels, USB rechargeable battery, and bladeless technology for safe and comfortable cooling. Ideal for travel, office, walking, workouts, and outdoor activities.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

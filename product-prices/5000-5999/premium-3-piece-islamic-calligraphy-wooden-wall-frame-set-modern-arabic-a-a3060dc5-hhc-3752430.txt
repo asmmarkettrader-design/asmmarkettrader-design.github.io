@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium 3-Piece Islamic Calligraphy Wooden Wall Frame Set | Modern Arabic Art for Home & Office Decoration | Available in 2 Sizes
 Product ID: hhc-3752430
 SKU: hhc-3752430
@@ -7,11 +8,16 @@ Slug: premium-3-piece-islamic-calligraphy-wooden-wall-frame-set-modern-arabic-a3
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/047ab89c8bfde842e3b78ab9d62536b6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/047ab89c8bfde842e3b78ab9d62536b6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/858d21e94c012387794f23139bc0d191.jpeg
 Meta Title: Premium 3-Piece Islamic Calligraphy Wooden Wall Frame Set | Modern A
 Meta Description: Buy Premium 3-Piece Islamic Calligraphy Wooden Wall Frame Set | Modern Arabic Art for Home & Office Decoration | Available in 2 Sizes online in Pakistan from AS
 Description: 3-piece Islamic calligraphy wall frame set made from premium wood. Available in 8x11 and 12x16 inches with double tape for easy wall mounting—perfect for home, office, or prayer room décor.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 Pcs Bee Venom Detoxing Foot Patch - Natural Herbal Cleansing Adhesive Pads For Foot Care Wellness Relaxation And Revitalization Support
 Product ID: hhc-3761765
 SKU: hhc-3761765
@@ -7,11 +8,16 @@ Slug: 10-pcs-bee-venom-detoxing-foot-patch-natural-herbal-cleansing-adhesive-c00
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/fd53e77b843ed64ce615604ce0173d4e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/fd53e77b843ed64ce615604ce0173d4e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/6a620891dfba89119e441eb6cbad177b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/f23d88ea1f6369bd5cf14d01eb597a81.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/3cc26bd111b73a7da14bd091e8648e25.jpeg
 Meta Title: 10 Pcs Bee Venom Detoxing Foot Patch - Natural Herbal Cleansing Adhe
 Meta Description: Buy 10 Pcs Bee Venom Detoxing Foot Patch - Natural Herbal Cleansing Adhesive Pads For Foot Care Wellness Relaxation And Revitalization Support online in Pakista
 Description: The 10 Pcs Bee Venom Detoxing Foot Patch Is A Natural Herbal Cleansing Set Designed To Provide Foot Care Wellness Support And Promote Relaxation.
-Regular Price: 518
-Sale Price: 518
+Wholesale Price: 468
+Regular Price: 950
+Sale Price: 762
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

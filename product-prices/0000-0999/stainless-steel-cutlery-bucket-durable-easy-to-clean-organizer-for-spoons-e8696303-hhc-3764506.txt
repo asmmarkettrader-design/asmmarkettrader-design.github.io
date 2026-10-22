@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Cutlery Bucket Durable Easy To Clean Organizer For Spoons Forks Knives Space Saving Kitchen Counter Storage
 Product ID: hhc-3764506
 SKU: hhc-3764506
@@ -7,11 +8,16 @@ Slug: stainless-steel-cutlery-bucket-durable-easy-to-clean-organizer-for-spoo-e8
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/e40845aae01b99d655516aab9e01257a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/e40845aae01b99d655516aab9e01257a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/7afaeadb6caf6563c01bd1b641d78fd7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/b514505350361bff4f0648dda76bf852.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/813ea40ecaf134cde28dcfdb76d35815.jpg
 Meta Title: Stainless Steel Cutlery Bucket Durable Easy To Clean Organizer For S
 Meta Description: Buy Stainless Steel Cutlery Bucket Durable Easy To Clean Organizer For Spoons Forks Knives Space Saving Kitchen Counter Storage online in Pakistan from ASM VEO.
 Description: Stainless Steel Cutlery Bucket Durable Easy To Clean Organizer For Spoons Forks Knives Space Saving Kitchen Counter Storage.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

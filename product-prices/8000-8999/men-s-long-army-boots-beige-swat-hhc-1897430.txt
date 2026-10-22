@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men's Long Army Boots, Beige Swat
 Product ID: hhc-1897430
 SKU: hhc-1897430
@@ -7,11 +8,16 @@ Slug: men-s-long-army-boots-beige-swat-hhc-1897430
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-09-at-6.59.54-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-09-at-6.59.54-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-09-at-6.59.45-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-09-at-6.59.44-PM.jpeg
 Meta Title: Men's Long Army Boots, Beige Swat | Buy Online in Pakistan
 Meta Description: Buy Men's Long Army Boots, Beige Swat online in Pakistan from ASM VEO. Men's Long Army Boots, Beige Swat Upgrade Your Collection With These Army Boots Collectio
 Description: Men's Long Army Boots, Beige Swat Upgrade Your Collection With These Army Boots Collection Outsole Material: Rubber Army Boots Boot Height: Ankle Sizes Available: 40, 41, 42, 43, 44 Note: There might be slight color difference due to photographic impacts Tags: Army Boots , Rubber , Men , Affordable , Daily Wear , Winter
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cotton Woolen Warm Winter Socks - Apparel Product Designed For Winter Wear And Daily Comfort Routine - Pack of 12 Pairs (Multi-color)
 Product ID: hhc-3764399
 SKU: hhc-3764399
@@ -7,11 +8,16 @@ Slug: cotton-woolen-warm-winter-socks-apparel-product-designed-for-winter-wea-36
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/a05dfb73f096007aff9d5fda593a9322.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/a05dfb73f096007aff9d5fda593a9322.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/a479dea609f0aef0809f75745682d916.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/6b4c343eb25acba796abc13a9ed94758.jpg
 Meta Title: Cotton Woolen Warm Winter Socks - Apparel Product Designed For Winte
 Meta Description: Buy Cotton Woolen Warm Winter Socks - Apparel Product Designed For Winter Wear And Daily Comfort Routine - Pack of 12 Pairs (Multi-color) online in Pakistan fro
 Description: This Cotton Woolen Warm Winter Socks Provides A Reliable Solution For Apparel Products And Routine Winter Wear Needs. Formulated To Deliver Comfort Benefits While Supporting Cotton Woolen Warm Winter Socks Utility, It Fits Seamlessly Into Your Regular Winter Wear Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Winter Wear Requirements, This Cotton Woolen Warm Winter Socks Serves As An Essential Apparel Accessory For Daily Life.Key FeaturesCotton Woolen Warm Winter Socks Formulated For Apparel ProductsDelivers Winter Wear And Supports Daily Comfort UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Winter Wear And Comfort RoutinesDesigned For Easy Operation And Convenient UseEssential Apparel Accessory For Everyday Maintenance
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

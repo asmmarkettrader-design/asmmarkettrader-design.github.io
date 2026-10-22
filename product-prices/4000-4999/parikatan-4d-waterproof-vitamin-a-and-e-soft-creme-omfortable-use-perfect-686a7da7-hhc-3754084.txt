@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Parikatan 4D Waterproof Vitamin A And E Soft Creme omfortable Use Perfect Choice For Daily Skincare Needs - 45ML
 Product ID: hhc-3754084
 SKU: hhc-3754084
@@ -7,11 +8,16 @@ Slug: parikatan-4d-waterproof-vitamin-a-and-e-soft-creme-omfortable-use-perfe-68
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/8b78d04cb85d4fcc10043ccdb1595bf8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/8b78d04cb85d4fcc10043ccdb1595bf8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/a0a66644cb070bcc1022472d8a74e11f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/54326314c6242852cfff21b374d575d9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/d5f62d64a5d3ddd9ba1581fce78c786d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/f218ef26bca7ebcafdb8ca743faf91f7.jpeg
 Meta Title: Parikatan 4D Waterproof Vitamin A And E Soft Creme omfortable Use Pe
 Meta Description: Buy Parikatan 4D Waterproof Vitamin A And E Soft Creme omfortable Use Perfect Choice For Daily Skincare Needs - 45ML online in Pakistan from ASM VEO. Parikatan
 Description: Parikatan 4D Waterproof Vitamin A And E Soft Creme Provides Durable Quality Reliable Utility Comfortable Use And Compact Design
-Regular Price: 2656
-Sale Price: 2656
+Wholesale Price: 2656
+Regular Price: 4710
+Sale Price: 3766
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

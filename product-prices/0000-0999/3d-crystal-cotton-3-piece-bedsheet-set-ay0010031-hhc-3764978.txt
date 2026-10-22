@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Crystal Cotton 3-piece Bedsheet Set AY0010031
 Product ID: hhc-3764978
 SKU: hhc-3764978
@@ -7,11 +8,16 @@ Slug: 3d-crystal-cotton-3-piece-bedsheet-set-ay0010031-hhc-3764978
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/62a5d9ed826bc3d05365b6197e93ff92.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/62a5d9ed826bc3d05365b6197e93ff92.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/99a323f01c92c817157bdf9d54e37cb4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/7d81e9703c967ebbf760caa4caa7c833.jpeg
 Meta Title: 3D Crystal Cotton 3-piece Bedsheet Set AY0010031 | Buy Online in Pak
 Meta Description: Buy 3D Crystal Cotton 3-piece Bedsheet Set AY0010031 online in Pakistan from ASM VEO. Bring vibrant style and premium comfort to your bedroom with the 3D Crysta
 Description: Bring vibrant style and premium comfort to your bedroom with the 3D Crystal Cotton 3-Piece Bedsheet Set (AY0010031). Crafted from ultra-soft, breathable crystal cotton, this set features high-definition 3D prints that offer long-lasting color brightness and a cozy feel night after night.
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trouser Set – Warm, Soft & Stylish Winter Garments for Boys & Girls FOR BABY AND KIDs
 Product ID: hhc-3753442
 SKU: hhc-3753442
@@ -7,11 +8,16 @@ Slug: black-printed-kids-tracksuit-winter-fleece-sweatshirt-trouser-set-warm-dd5
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/fb2083d3428402bc8b45f9dd8d2ea529.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/fb2083d3428402bc8b45f9dd8d2ea529.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/91d5e16c9684dc58a9cbff6cbcf3c389.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/633e7c55a19ab2200446fe4bc4c0b39a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/c1905d87b87d754c45a288f48f62f87d.jpeg
 Meta Title: Black Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trouser Se
 Meta Description: Buy Black Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trouser Set – Warm, Soft & Stylish Winter Garments for Boys & Girls FOR BABY AND KIDs online in Pa
 Description: Trendy black printed winter tracksuit for kids — warm fleece sweatshirt and trouser set perfect for boys and girls.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

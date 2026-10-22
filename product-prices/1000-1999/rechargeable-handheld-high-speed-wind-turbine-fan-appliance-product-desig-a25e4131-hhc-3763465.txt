@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Handheld High-Speed Wind Turbine Fan - Appliance Product Designed For Cooling And Daily Ventilation Routine (Random Color)
 Product ID: hhc-3763465
 SKU: hhc-3763465
@@ -7,11 +8,16 @@ Slug: rechargeable-handheld-high-speed-wind-turbine-fan-appliance-product-des-a2
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/ae3801c5b1136152ca5f357ee4448299.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/ae3801c5b1136152ca5f357ee4448299.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/6a7e9fc0bd36987f4944087a4fb0c93d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/8d965e1590f36090a1d16a26805a0062.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/50d35adb282864a13754565f464e87a5.jpeg
 Meta Title: Rechargeable Handheld High-Speed Wind Turbine Fan - Appliance Produc
 Meta Description: Buy Rechargeable Handheld High-Speed Wind Turbine Fan - Appliance Product Designed For Cooling And Daily Ventilation Routine (Random Color) online in Pakistan f
 Description: The Rechargeable Handheld High-Speed Wind Turbine Fan Is An Appliance Product Formulated To Help Provide Cooling And Daily Ventilation Utility During Use.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

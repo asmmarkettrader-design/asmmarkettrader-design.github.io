@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional BOAT 3.1 L-HP11 Wireless Neckband Earphones (With Box)
 Product ID: hhc-3755756
 SKU: hhc-3755756
@@ -7,11 +8,16 @@ Slug: professional-boat-3-1-l-hp11-wireless-neckband-earphones-with-box-hhc-3755
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: Professional BOAT 3.1 L-HP11 Wireless Neckband Earphones (With Box)
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/a2ca84adf0225864270815b068bc7ede.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/a2ca84adf0225864270815b068bc7ede.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/20ca9c99d8bdcdc5099f18861efd9195.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/75c8fc7b597d114dd6505389a53d9548.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/7be0fb0a3a04035f699e773694efe637.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/aa969302cd6d573daeced702a6b7adf7.png
+Meta Title: Professional BOAT 3.1 L-HP11 Wireless Neckband Earphones (With Box) 
 Meta Description: Buy Professional BOAT 3.1 L-HP11 Wireless Neckband Earphones (With Box) online in Pakistan from ASM VEO. Enjoy powerful sound and all-day comfort with the boAt+
 Description: Enjoy powerful sound and all-day comfort with the boAt+ L-HP11 wireless neckband. Featuring noise reduction, and lightweight design, it’s perfect for music, calls, and daily use.
-Regular Price: 829
-Sale Price: 829
+Wholesale Price: 779
+Regular Price: 1490
+Sale Price: 1190
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

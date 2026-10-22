@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pro 2 Silicone Case - Textured Design
 Product ID: hhc-3765371
 SKU: hhc-3765371
@@ -7,11 +8,16 @@ Slug: pro-2-silicone-case-textured-design-hhc-3765371
 Category: Cameras & Photography
 Subcategory: Camera Bags & Cases
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/fc28421cf40f08c31b31b24b3907f42b.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/fc28421cf40f08c31b31b24b3907f42b.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/993f58396e95b0764b48baaae9019f4c.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/d3f99b8da16d63372295bffd21ef2f7f.jfif
 Meta Title: Pro 2 Silicone Case - Textured Design | Buy Online in Pakistan
 Meta Description: Buy Pro 2 Silicone Case - Textured Design online in Pakistan from ASM VEO. High-quality Silicone Case for Pro 2 Earbuds. Durable, shock-resistant material with
 Description: High-quality Silicone Case for Pro 2 Earbuds. Durable, shock-resistant material with a textured design. Protects your earbuds from scratches and drops. Color: Random. Weight: 0.05kg.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

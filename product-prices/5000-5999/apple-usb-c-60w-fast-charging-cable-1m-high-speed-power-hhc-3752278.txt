@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Apple USB-C 60W Fast Charging Cable (1m) – High-Speed Power
 Product ID: hhc-3752278
 SKU: hhc-3752278
@@ -7,11 +8,16 @@ Slug: apple-usb-c-60w-fast-charging-cable-1m-high-speed-power-hhc-3752278
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/2ad7466a0b449c1d0ff00f8ba2f00fff.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/2ad7466a0b449c1d0ff00f8ba2f00fff.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/84ed56430bb83a1beba4d142ece513ac.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/6b2d95af3304b8a2f80076f4f7def2af.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/da1837e3502a22021eec9188636531c0.jpg
 Meta Title: Apple USB-C 60W Fast Charging Cable (1m) – High-Speed Power | Buy On
 Meta Description: Buy Apple USB-C 60W Fast Charging Cable (1m) – High-Speed Power online in Pakistan from ASM VEO. Experience rapid charging with the Apple USB-C 60W Fast Chargin
 Description: Experience rapid charging with the Apple USB-C 60W Fast Charging Cable (1m). Built with a strong braided design for durability and long life. Perfect for fast, safe, and efficient power transfer with any compatible USB-C device.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

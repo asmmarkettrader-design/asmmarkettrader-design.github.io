@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 12 Pcs Mini Lipstick Set – Multicolor Mini Lipsticks for Everyday Makeup, Compact Lip Color Collection for Women
 Product ID: hhc-3765492
 SKU: hhc-3765492
@@ -7,11 +8,16 @@ Slug: 12-pcs-mini-lipstick-set-multicolor-mini-lipsticks-for-everyday-makeup-392
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/15054def1fbee3a1a5e342fe9a5e74e3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/15054def1fbee3a1a5e342fe9a5e74e3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/6537d52787ae193e89fb6e75582c7c40.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/6108e7ea58a52ef2ad1149cf85ca28e3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/31c96bd405e7d28f74e80dc1d9dbd854.jpg
 Meta Title: 12 Pcs Mini Lipstick Set – Multicolor Mini Lipsticks for Everyday Ma
 Meta Description: Buy 12 Pcs Mini Lipstick Set – Multicolor Mini Lipsticks for Everyday Makeup, Compact Lip Color Collection for Women online in Pakistan from ASM VEO. Add variet
 Description: Add variety to your makeup collection with this 12 Pcs Mini Lipstick Set, featuring multiple beautiful lipstick shades in compact sizes. The mini design makes these lipsticks easy to carry in a handbag, makeup pouch, or travel kit.Ideal for everyday use, parties, events, and experimenting with different lip colors. The assorted shades allow you to choose a suitable color for different outfits and occasions.
-Regular Price: 869
-Sale Price: 869
+Wholesale Price: 819
+Regular Price: 1560
+Sale Price: 1248
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

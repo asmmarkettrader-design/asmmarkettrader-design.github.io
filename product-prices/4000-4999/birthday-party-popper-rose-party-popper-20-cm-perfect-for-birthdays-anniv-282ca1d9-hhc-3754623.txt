@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Birthday Party Popper | Rose Party Popper | 20 cm | Perfect for Birthdays, Anniversaries & New Year Celebrations (20CM)
 Product ID: hhc-3754623
 SKU: hhc-3754623
@@ -7,11 +8,16 @@ Slug: birthday-party-popper-rose-party-popper-20-cm-perfect-for-birthdays-ann-28
 Category: Events & Gifting
 Subcategory: Party Decorations
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/9a7a0bec98e9dd0971eab5440b0c56a7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/9a7a0bec98e9dd0971eab5440b0c56a7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/cbcd2ea22e70adc4378b3e4e529dca15.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/aabdfdf452f400e95becbc5c26276d46.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/9d941c5d0c98ec80549f662f2bd62292.jpeg
 Meta Title: Birthday Party Popper | Rose Party Popper | 20 cm | Perfect for Birt
 Meta Description: Buy Birthday Party Popper | Rose Party Popper | 20 cm | Perfect for Birthdays, Anniversaries & New Year Celebrations (20CM) online in Pakistan from ASM VEO. Par
 Description: Party Popper 20 cm, ideal for birthdays, anniversaries, New Year, and festive celebrations.
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

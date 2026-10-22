@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: PJX-121 Crystal Sparkling Korean Earrings – Elegant Shine, Premium Style & Stunning Feminine Charm
 Product ID: hhc-3753994
 SKU: hhc-3753994
@@ -7,11 +8,16 @@ Slug: pjx-121-crystal-sparkling-korean-earrings-elegant-shine-premium-style-s-f5
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/74e60b280dc610d300aa4528a32e8a6d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/74e60b280dc610d300aa4528a32e8a6d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/bc5f8286ee1324692ff9863435abfb03.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/06ee7f2c4ed3f1679ca40e5aa38b045c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/760f833651bd53cb0b70f5a86798613e.jpeg
 Meta Title: PJX-121 Crystal Sparkling Korean Earrings – Elegant Shine, Premium S
 Meta Description: Buy PJX-121 Crystal Sparkling Korean Earrings – Elegant Shine, Premium Style & Stunning Feminine Charm online in Pakistan from ASM VEO. Add a touch of luxury to
 Description: Add a touch of luxury to your look with these Crystal Sparkling Korean Earrings, crafted to shimmer beautifully from every angle. Lightweight, modern, and perfect for daily wear or special occasions.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

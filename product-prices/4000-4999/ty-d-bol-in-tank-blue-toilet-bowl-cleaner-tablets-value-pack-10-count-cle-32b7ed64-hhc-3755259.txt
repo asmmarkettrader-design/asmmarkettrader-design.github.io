@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ty-D-Bol In-Tank Blue Toilet Bowl Cleaner Tablets, Value Pack (10 Count) – Cleans, Deodorizes & Provides Continuous Blue Water Every Flush
 Product ID: hhc-3755259
 SKU: hhc-3755259
@@ -7,11 +8,16 @@ Slug: ty-d-bol-in-tank-blue-toilet-bowl-cleaner-tablets-value-pack-10-count-c-32
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/12de6583e02995143a0707688078b950.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/12de6583e02995143a0707688078b950.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/7056101680249dc1691a917de8fd06a7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/2168f2bb29de57d855af13d9515a99d8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/26562250abf6b611d8c4bb4257551533.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/06/6955061c2d04f4db05caad2ecd05436a.jpeg
 Meta Title: Ty-D-Bol In-Tank Blue Toilet Bowl Cleaner Tablets, Value Pack (10 Co
 Meta Description: Buy Ty-D-Bol In-Tank Blue Toilet Bowl Cleaner Tablets, Value Pack (10 Count) – Cleans, Deodorizes & Provides Continuous Blue Water Every Flush online in Pakista
 Description: Keep your bathroom fresh and sparkling with Ty-D-Bol Blue Toilet Tablets. This 10-count value pack provides a continuous "Clean You Can See," automatically cleaning and deodorizing your toilet with every flush while turning the water a brilliant blue.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Quality Mosquito Magic Mesh Set With 20 Wood Tacks 12 Hocks And 2 Mesh Panels 83x19.5 Inches
 Product ID: hhc-3757185
 SKU: hhc-3757185
@@ -7,11 +8,16 @@ Slug: premium-quality-mosquito-magic-mesh-set-with-20-wood-tacks-12-hocks-and-1f
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: Premium Quality Mosquito Magic Mesh Set With 20 Wood Tacks 12 Hocks
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/fb2bbc8684026a3054ba76f8c91ffb14.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/fb2bbc8684026a3054ba76f8c91ffb14.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/4238ad0867c78db813e5437a82fdbc00.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/f6e79e96436a93e9d30d5a3da29d0538.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/a2a80caf803c40e8dc9d25aaac203118.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/4fdfb21cd245d339139677182e9fb3bb.jpg
+Meta Title: Premium Quality Mosquito Magic Mesh Set With 20 Wood Tacks 12 Hocks 
 Meta Description: Buy Premium Quality Mosquito Magic Mesh Set With 20 Wood Tacks 12 Hocks And 2 Mesh Panels 83x19.5 Inches online in Pakistan from ASM VEO. Premium Quality Mosqui
 Description: Premium Quality Mosquito Magic Mesh In Hard Box Includes 20 Wood Tacks 12 Hocks And 2 Mesh Panels Sized 83x19.5 Inches For Easy Installation.
-Regular Price: 968
-Sale Price: 968
+Wholesale Price: 918
+Regular Price: 1740
+Sale Price: 1391
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

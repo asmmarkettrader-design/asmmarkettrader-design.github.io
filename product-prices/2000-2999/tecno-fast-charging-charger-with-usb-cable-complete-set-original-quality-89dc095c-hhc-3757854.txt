@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tecno Fast Charging Charger with USB Cable Complete Set | Original Quality Power Adapter for Tecno Mobile Phones
 Product ID: hhc-3757854
 SKU: hhc-3757854
@@ -7,11 +8,16 @@ Slug: tecno-fast-charging-charger-with-usb-cable-complete-set-original-qualit-89
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/4d56266b9aebf2a7d3eb0f0bf556c04e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/4d56266b9aebf2a7d3eb0f0bf556c04e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/30c5efaa0afe9c2dcf8f278f34dc2cd2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/e4a0e1737dd08e85cb6bae099272498f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/33ec502b2d79c53112afd8c95ea9054b.jpeg
 Meta Title: Tecno Fast Charging Charger with USB Cable Complete Set | Original Q
 Meta Description: Buy Tecno Fast Charging Charger with USB Cable Complete Set | Original Quality Power Adapter for Tecno Mobile Phones online in Pakistan from ASM VEO. High-quali
 Description: High-quality Tecno charger with USB cable complete pair designed for fast and stable charging. Compatible with all Tecno smartphones, durable build, and reliable performance for everyday use.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

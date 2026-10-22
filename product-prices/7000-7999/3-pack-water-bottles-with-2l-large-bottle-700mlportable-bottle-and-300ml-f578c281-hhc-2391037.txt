@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Pack Water Bottles With 2l Large Bottle 700mlportable Bottle And 300ml Mini Bottle Motivational (random Color)
 Product ID: hhc-2391037
 SKU: hhc-2391037
@@ -7,11 +8,16 @@ Slug: 3-pack-water-bottles-with-2l-large-bottle-700mlportable-bottle-and-300m-f5
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/2994ac4c43034eb795eda583e60b10d3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/2994ac4c43034eb795eda583e60b10d3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/db9be0ad6936b7bbd289b7e8e2526e66.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/b5d06ff4450b44ff50ae78cc64fa7ae2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/4e0cabd269ca2da230bb43d369ee9f77.jpg
 Meta Title: 3 Pack Water Bottles With 2l Large Bottle 700mlportable Bottle And 3
 Meta Description: Buy 3 Pack Water Bottles With 2l Large Bottle 700mlportable Bottle And 300ml Mini Bottle Motivational (random Color) online in Pakistan from ASM VEO. 3 Pack Wat
 Description: 3 Pack Water Bottles with 2L Large Bottle 700MLPortable Bottle and 300ML Mini Bottle Motivational Drinks Bottle with Time Marker Water Jug with Handle and Straw Leak-Proof Gradient Drink Bottles Set of 3 motivational bottles. Motivational bottle with timer of 2l, 750ml and another of 300ml. The bottles have an easy grip so they can be transported, so we can take them with us for outdoor sports. In addition, the bottles have phrases with time measurements to motivate you to drink the necessary liquid during the day. These bottles with straw are BPA-free and free of toxins.[video width="540" height="540" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/3-pack-water-bottles-with-2l-large-bottle-700mlportable-bottle-and-300ml-mini-bottle-motivational-random-color-1.mp4"][/video]
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

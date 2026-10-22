@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FEG PLUS Hair Growth Serum & Spray – 50ml Advanced Formula for Men & Women, Stronger, Thicker Hair
 Product ID: hhc-3754274
 SKU: hhc-3754274
@@ -7,11 +8,16 @@ Slug: feg-plus-hair-growth-serum-spray-50ml-advanced-formula-for-men-women-st-c7
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/b2327a0d3040536970ac63e5edc81f8e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/b2327a0d3040536970ac63e5edc81f8e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/39916f81eb168fbea760403ea1acb851.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/532af343c2abe0de57ce62d0938476e0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/062a03162a751f7d3ee0164aa8ee007f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/63fa7ff0229f871c0f7ed758f29e84cb.webp
 Meta Title: FEG PLUS Hair Growth Serum & Spray – 50ml Advanced Formula for Men &
 Meta Description: Buy FEG PLUS Hair Growth Serum & Spray – 50ml Advanced Formula for Men & Women, Stronger, Thicker Hair online in Pakistan from ASM VEO. FEG PLUS hair growth ser
 Description: FEG PLUS hair growth serum and spray 50ml, advanced formula supports stronger, thicker hair growth for men and women, easy daily use.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

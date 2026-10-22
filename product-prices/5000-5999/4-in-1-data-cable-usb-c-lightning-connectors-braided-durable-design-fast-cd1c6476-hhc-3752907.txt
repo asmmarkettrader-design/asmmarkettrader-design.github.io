@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 4 In 1 Data Cable – USB-C & Lightning Connectors, Braided Durable Design, Fast Charging (Without Box)
 Product ID: hhc-3752907
 SKU: hhc-3752907
@@ -7,11 +8,16 @@ Slug: 4-in-1-data-cable-usb-c-lightning-connectors-braided-durable-design-fas-cd
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/f4f5ee8be1356284ddf770ace4457034.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/f4f5ee8be1356284ddf770ace4457034.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/211b4c9a12e347e4422fe0b589184f2f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/8dab3f7956cfedcad8fbe648ebd52785.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/c46e9d2d91d7a6761cba611d826952da.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/22/6d073c17eba499643c6f03a4bf4f9ef7.jpg
 Meta Title: 4 In 1 Data Cable – USB-C & Lightning Connectors, Braided Durable De
 Meta Description: Buy 4 In 1 Data Cable – USB-C & Lightning Connectors, Braided Durable Design, Fast Charging (Without Box) online in Pakistan from ASM VEO. 4 In 1 Data Cable – U
 Description: 4 In 1 Data Cable – USB-C & Lightning Connectors, Braided Durable Design, Fast Charging & Data Transfer, Black With Yellow Connectors
-Regular Price: 289
-Sale Price: 289
+Wholesale Price: 239
+Regular Price: 568
+Sale Price: 418
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

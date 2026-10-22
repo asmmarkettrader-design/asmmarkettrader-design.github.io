@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ehmznv Hair Color Wand | Hairdressing Dye Hairdressing Wand Instant Root Touch-Up – Natural Hair Color Stick for Hair Coverage - Black & Brown (20g)
 Product ID: hhc-3763402
 SKU: hhc-3763402
@@ -7,11 +8,16 @@ Slug: ehmznv-hair-color-wand-hairdressing-dye-hairdressing-wand-instant-root-f82
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/7c8e1cb6c38dc905bfa98204c7f85b94.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/7c8e1cb6c38dc905bfa98204c7f85b94.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/ddeb3f6fba8dc27e5cd04f7a0869b8be.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/63b06c9c1f1f732bdcebba7ce8c82ae3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/e263dde9343d443fb27e34699b2725ac.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/d70507daabf0386e9770c998c0b29a03.png
 Meta Title: Ehmznv Hair Color Wand | Hairdressing Dye Hairdressing Wand Instant
 Meta Description: Buy Ehmznv Hair Color Wand | Hairdressing Dye Hairdressing Wand Instant Root Touch-Up – Natural Hair Color Stick for Hair Coverage - Black & Brown (20g) online
 Description: Ehmznv Hair Color Wand provides quick root touch-up and gray hair coverage. Easy to apply, compact, and convenient for everyday use. Available in Black and Brown, 20g.
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

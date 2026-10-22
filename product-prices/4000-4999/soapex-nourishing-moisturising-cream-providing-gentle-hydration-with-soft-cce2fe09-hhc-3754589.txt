@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Soapex Nourishing Moisturising Cream Providing Gentle Hydration With Softening Care And Reliable | 220ML
 Product ID: hhc-3754589
 SKU: hhc-3754589
@@ -7,11 +8,16 @@ Slug: soapex-nourishing-moisturising-cream-providing-gentle-hydration-with-so-cc
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/3542339351e26711644e344cf0cc6fdf.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/3542339351e26711644e344cf0cc6fdf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/2d073425cbd510c5fd63e6809a72ecef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/99b28c1136f36bc5830167465394930d.jpeg
 Meta Title: Soapex Nourishing Moisturising Cream Providing Gentle Hydration With
 Meta Description: Buy Soapex Nourishing Moisturising Cream Providing Gentle Hydration With Softening Care And Reliable | 220ML online in Pakistan from ASM VEO. Soapex Nourishing
 Description: Soapex Nourishing Moisturising Cream Offering Gentle Hydration With Smooth And Comfortable Skin Care
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kitchen Polka Foamic Sheet – Waterproof & Oil Resistant Decorative Cover for Walls and Counters.45x150cm. Random Colors
 Product ID: hhc-3753951
 SKU: hhc-3753951
@@ -7,11 +8,16 @@ Slug: kitchen-polka-foamic-sheet-waterproof-oil-resistant-decorative-cover-fo-99
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/e79fdccb6c530e441ec9c02a58f10dcf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/e79fdccb6c530e441ec9c02a58f10dcf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/e5e94e0859e1c71eb66e904b05d6deae.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/637b2aac1c4498367fb26b236bfe6b34.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/60ee58ba47ff60e6a444da6ef4db9ee4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/28/0d115b0f0e7a91a9328648d09badb29d.jpg
 Meta Title: Kitchen Polka Foamic Sheet – Waterproof & Oil Resistant Decorative C
 Meta Description: Buy Kitchen Polka Foamic Sheet – Waterproof & Oil Resistant Decorative Cover for Walls and Counters.45x150cm. Random Colors online in Pakistan from ASM VEO. Pol
 Description: Polka foamic sheet with waterproof and oil-resistant surface, adds stylish decorative touch to kitchen walls and counters.
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

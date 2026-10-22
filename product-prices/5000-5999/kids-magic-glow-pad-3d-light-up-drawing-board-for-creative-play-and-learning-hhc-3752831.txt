@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids Magic Glow Pad: 3D Light-Up Drawing Board for Creative Play and Learning
 Product ID: hhc-3752831
 SKU: hhc-3752831
@@ -7,11 +8,16 @@ Slug: kids-magic-glow-pad-3d-light-up-drawing-board-for-creative-play-and-learni
 Category: Toys & Games
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/db5e1042fafd5242e968531dff807e48.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/18/db5e1042fafd5242e968531dff807e48.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/877041afb29bcdca7906422cd6fe0448.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/e4bc94980aed65a0254656a917cfa6f4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/65c963c00ab1ae264f7b5cb91bcf9233.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/17/ff6df66d6ad226906b8a20a289e35d93.jpg
 Meta Title: Kids Magic Glow Pad: 3D Light-Up Drawing Board for Creative Play and
 Meta Description: Buy Kids Magic Glow Pad: 3D Light-Up Drawing Board for Creative Play and Learning online in Pakistan from ASM VEO. Kids Magic Glow Pad: 3D Light-Up Drawing Boar
 Description: Kids Magic Glow Pad: 3D Light-Up Drawing Board for Creative Play and Learning
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

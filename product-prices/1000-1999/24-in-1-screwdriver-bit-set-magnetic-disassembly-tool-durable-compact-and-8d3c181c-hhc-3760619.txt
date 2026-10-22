@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 24 In 1 Screwdriver Bit Set Magnetic Disassembly Tool Durable Compact And Versatile Repair Kit For Daily Use
 Product ID: hhc-3760619
 SKU: hhc-3760619
@@ -7,11 +8,16 @@ Slug: 24-in-1-screwdriver-bit-set-magnetic-disassembly-tool-durable-compact-a-8d
 Category: Tools & DIY
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/8d013ba6f26bb2e1e3d80a45bf46ff63.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/8d013ba6f26bb2e1e3d80a45bf46ff63.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/16b4d6d2894a616235f2d650d2023041.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/7e1e8768755d312ab82028d74d37b9d9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/b3e7b49b1bab337457bce0a481369de6.jpg
 Meta Title: 24 In 1 Screwdriver Bit Set Magnetic Disassembly Tool Durable Compac
 Meta Description: Buy 24 In 1 Screwdriver Bit Set Magnetic Disassembly Tool Durable Compact And Versatile Repair Kit For Daily Use online in Pakistan from ASM VEO. 24 In 1 Screwd
 Description: 24 In 1 Screwdriver Bit Set Magnetic Disassembly Tool Durable Compact And Versatile Repair Kit For Electronics And Household.
-Regular Price: 457
-Sale Price: 457
+Wholesale Price: 407
+Regular Price: 840
+Sale Price: 670
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

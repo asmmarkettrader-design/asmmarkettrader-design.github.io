@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Self-Feeding
 Product ID: hhc-3754514
 SKU: hhc-3754514
@@ -7,11 +8,16 @@ Slug: portable-kids-stainless-steel-cutlery-set-ergonomic-cartoon-spoon-and-f-65
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/2fae67e2fead3c7343a12e454ba4c5fa.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/2fae67e2fead3c7343a12e454ba4c5fa.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/4a0f1d0c45f74e85c6e0e5f086ee217c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/e4b1816b861e0a936a756e04ce1fa403.jpeg
 Meta Title: Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon
 Meta Description: Buy Portable Kids' Stainless Steel Cutlery Set – Ergonomic Cartoon Spoon and Fork with Slim-Fit Travel Storage Case for School Lunches, Picnics, and Toddler Sel
 Description: Make mealtime fun and hygienic on the go! This durable, child-sized stainless steel spoon and fork set features adorable cartoon characters and a compact carrying case, perfect for school bags, travel, or dining out.
-Regular Price: 109
-Sale Price: 109
+Wholesale Price: 59
+Regular Price: 298
+Sale Price: 148
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

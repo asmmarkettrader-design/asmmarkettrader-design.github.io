@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Crystal Cotton Bedsheet Set Multicoloured Premium Fabric Lifetime Guarantee Includes Bedsheet And Pipping Pillow Covers
 Product ID: hhc-3764703
 SKU: hhc-3764703
@@ -7,11 +8,16 @@ Slug: 3d-crystal-cotton-bedsheet-set-multicoloured-premium-fabric-lifetime-gu-18
 Category: Home & Kitchen
 Subcategory: Bedding & Linen
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/79d928c0b3739c488b163ff9966680b5.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/79d928c0b3739c488b163ff9966680b5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/107ad579188d1d8ebfdf50bbc69c8838.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/bd0b32acb2253068a44c0ec4a9ea376a.jpg
 Meta Title: 3D Crystal Cotton Bedsheet Set Multicoloured Premium Fabric Lifetime
 Meta Description: Buy 3D Crystal Cotton Bedsheet Set Multicoloured Premium Fabric Lifetime Guarantee Includes Bedsheet And Pipping Pillow Covers online in Pakistan from ASM VEO.
 Description: 3D Crystal Cotton Bedsheet Set Offers A Premium Blend Of Comfort And Durability With Its High Quality Crystal Cotton Fabric. Guaranteed for lifetime color and fabric strength, this set ensures long lasting use while maintaining vibrant appeal. The 3 piece set includes one bedsheet (89/92) and two pipping pillow covers (19/29), featuring a multicoloured design that enhances bedroom décor. Soft, stylish, and practical, it provides both elegance and reliability for everyday bedding needs.Key Features:3D Crystal Cotton Bedsheet Set With Lifetime GuaranteeIncludes One Bedsheet (89/92) And Two Pipping Pillow Covers (19/29)Premium Crystal Cotton Fabric Ensures Durability And ComfortMulticoloured Design Adds Vibrant Style To Bedroom DécorGuaranteed Colour And Fabric Life For Long Term UsePractical Elegant Choice For Everyday Bedding
-Regular Price: 1617
-Sale Price: 1617
+Wholesale Price: 1617
+Regular Price: 2950
+Sale Price: 2363
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

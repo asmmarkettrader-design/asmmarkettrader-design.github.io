@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1pc Kawaii Rainbow Color Keyring Coin Purse for Girls – Cute and Portable Storage Accessory- Random Colour
 Product ID: hhc-3753902
 SKU: hhc-3753902
@@ -7,11 +8,16 @@ Slug: 1pc-kawaii-rainbow-color-keyring-coin-purse-for-girls-cute-and-portable-8b
 Category: Tools & DIY
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6ba9c92e04d817849d915c723dc04825.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6ba9c92e04d817849d915c723dc04825.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/9af1c455e6f8c79c082f8988abc8bc0c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/72d44e426fd5b205c537a7baf190e511.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/a999e07556ca5d10234f46d40e21dbbf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/c4a1cefe9e2caf36e91fd422765a627d.jpeg
 Meta Title: 1pc Kawaii Rainbow Color Keyring Coin Purse for Girls – Cute and Por
 Meta Description: Buy 1pc Kawaii Rainbow Color Keyring Coin Purse for Girls – Cute and Portable Storage Accessory- Random Colour online in Pakistan from ASM VEO. Cute rainbow col
 Description: Cute rainbow color coin purse with keyring, perfect for girls to carry coins, cash, and small essentials easily.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

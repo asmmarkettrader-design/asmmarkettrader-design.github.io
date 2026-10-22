@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Story Toy Qin Piano – Educational Musical Toy for Kids with Fun Learning and Play Features
 Product ID: hhc-3753912
 SKU: hhc-3753912
@@ -7,11 +8,16 @@ Slug: story-toy-qin-piano-educational-musical-toy-for-kids-with-fun-learning-46b
 Category: Toys & Games
 Subcategory: Educational & Creative
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/ae1bea525bbe4a3ec19ec89896338db5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/ae1bea525bbe4a3ec19ec89896338db5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/4a043c4d98d008d788abf8a6f052b799.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/7f18aea31eb02b1e05a4c24412ec1704.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/2852c4af6beb3c46a79c0052b8dea2f0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/a6db0bf18a88392e07cbebd31bc0e3e0.jpeg
 Meta Title: Story Toy Qin Piano – Educational Musical Toy for Kids with Fun Lear
 Meta Description: Buy Story Toy Qin Piano – Educational Musical Toy for Kids with Fun Learning and Play Features online in Pakistan from ASM VEO. Story Toy Qin Piano is an intera
 Description: Story Toy Qin Piano is an interactive musical toy for kids, combining fun play with learning, music, and early development.
-Regular Price: 1672
-Sale Price: 1672
+Wholesale Price: 1672
+Regular Price: 3050
+Sale Price: 2437
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

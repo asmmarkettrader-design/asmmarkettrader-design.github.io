@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ProvidinChalonese Brightening Creamg Radiant Glow Gentle Care Everyday Skin Brightening Support - 20g
 Product ID: hhc-3755017
 SKU: hhc-3755017
@@ -7,11 +8,16 @@ Slug: providinchalonese-brightening-creamg-radiant-glow-gentle-care-everyday-e78
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/6b984d932fe6e00e901af3ec97b6195a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/6b984d932fe6e00e901af3ec97b6195a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/a981507effb5523bc4e1231477608847.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/d0297dc20c168b6431a260dc08cb14ef.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/6c560b743967a95e260d700dd1afc29c.jpeg
 Meta Title: ProvidinChalonese Brightening Creamg Radiant Glow Gentle Care Everyd
 Meta Description: Buy ProvidinChalonese Brightening Creamg Radiant Glow Gentle Care Everyday Skin Brightening Support - 20g online in Pakistan from ASM VEO. Chalonese Brightening
 Description: Chalonese Brightening Cream Offering Radiant Glow Gentle Care Durable Quality Reliable Performance And Stylish Daily Skin Brightening Support
-Regular Price: 235
-Sale Price: 235
+Wholesale Price: 185
+Regular Price: 488
+Sale Price: 338
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

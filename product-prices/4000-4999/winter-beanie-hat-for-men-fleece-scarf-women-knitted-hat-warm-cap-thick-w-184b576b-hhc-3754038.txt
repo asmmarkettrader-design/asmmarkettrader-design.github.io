@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Beanie Hat For Men Fleece Scarf Women Knitted Hat Warm Cap Thick Wool Neck Warmer Scarf Balaclava Mask Skullies Beanies (Random Color)
 Product ID: hhc-3754038
 SKU: hhc-3754038
@@ -7,11 +8,16 @@ Slug: winter-beanie-hat-for-men-fleece-scarf-women-knitted-hat-warm-cap-thick-18
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/260d8c132070a86ddac597f3e7308dc7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/260d8c132070a86ddac597f3e7308dc7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/8a20f36869d2c6001b9c9f2e4d0e10f7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/95ae1b4a5db00e0d6f5382fdd551878d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/37d6102c795365de38ff23c9b7160571.jpeg
 Meta Title: Winter Beanie Hat For Men Fleece Scarf Women Knitted Hat Warm Cap Th
 Meta Description: Buy Winter Beanie Hat For Men Fleece Scarf Women Knitted Hat Warm Cap Thick Wool Neck Warmer Scarf Balaclava Mask Skullies Beanies (Random Color) online in Paki
 Description: Winter Beanie Hat And Fleece Scarf Provide Durable Quality Comfortable Fit Stylish Design Reliable Utility And Warm Protection
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

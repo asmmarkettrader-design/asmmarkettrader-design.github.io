@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tecno 45W Original Fast Charging Power Adapter | USB Type-A Wall Charger for Tecno Smartphones | 45W Fast Charger
 Product ID: hhc-3762481
 SKU: hhc-3762481
@@ -7,11 +8,16 @@ Slug: tecno-45w-original-fast-charging-power-adapter-usb-type-a-wall-charger-d32
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/e9985b9d48a001445b2f54537ad6cf26.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/e9985b9d48a001445b2f54537ad6cf26.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/c92894d7635da979b86c20b93e53aec7.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/06/05cfe4bf7a25cae209ad27b7ad6dc4a0.webp
 Meta Title: Tecno 45W Original Fast Charging Power Adapter | USB Type-A Wall Cha
 Meta Description: Buy Tecno 45W Original Fast Charging Power Adapter | USB Type-A Wall Charger for Tecno Smartphones | 45W Fast Charger online in Pakistan from ASM VEO. Power up
 Description: Power up your Tecno smartphone quickly with the Tecno 45W Original Fast Charging Power Adapter. Designed for fast, safe, and reliable charging, this compact USB Type-A wall charger is ideal for home, office, and travel.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

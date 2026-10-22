@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DIRHAM BODY PERFUME | Best Quality Perfume For Men | Long Lasting Dirham Perfume | Perfume For Men | Eau De Parfum - 100 ml
 Product ID: hhc-3416218
 SKU: hhc-3416218
@@ -7,11 +8,16 @@ Slug: dirham-body-perfume-best-quality-perfume-for-men-long-lasting-dirham-pe-93
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/imgi_50_a1e376dae952690e2c9894669f35f685.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/imgi_50_a1e376dae952690e2c9894669f35f685.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/imgi_51_b05c807b65817d7bdbcac204c35a42ac.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-28-at-8.11.45-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-28-at-8.11.44-PM.jpeg
 Meta Title: DIRHAM BODY PERFUME | Best Quality Perfume For Men | Long Lasting Di
 Meta Description: Buy DIRHAM BODY PERFUME | Best Quality Perfume For Men | Long Lasting Dirham Perfume | Perfume For Men | Eau De Parfum - 100 ml online in Pakistan from ASM VEO.
 Description: DIRHAM BODY PERFUME | Best Quality Perfume For Men | Long Lasting Dirham Perfume | Perfume For Men | Eau De Parfum - 100 mlProduct Details:Lasting: 02 to 03 HoursSize: 100 mlQuality: CopyType: Eau De ParfumTargeted Gender: Men's Product Original Picture
-Regular Price: 931
-Sale Price: 931
+Wholesale Price: 480
+Regular Price: 1230
+Sale Price: 981
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

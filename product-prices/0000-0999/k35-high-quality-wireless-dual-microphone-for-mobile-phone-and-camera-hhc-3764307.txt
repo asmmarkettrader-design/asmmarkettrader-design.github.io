@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: K35 High Quality Wireless Dual Microphone For Mobile Phone And Camera
 Product ID: hhc-3764307
 SKU: hhc-3764307
@@ -7,11 +8,16 @@ Slug: k35-high-quality-wireless-dual-microphone-for-mobile-phone-and-camera-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/0abf9a0ffe2f72f6207388fb29754fdd.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/0abf9a0ffe2f72f6207388fb29754fdd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/012cdfb08f6f6dcdf5c3bd44549619d2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/39c538cc56afa5f622a942c7e9a27855.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/59d406584c2623fa2c7801901a93a90c.jpg
 Meta Title: K35 High Quality Wireless Dual Microphone For Mobile Phone And Camer
 Meta Description: Buy K35 High Quality Wireless Dual Microphone For Mobile Phone And Camera online in Pakistan from ASM VEO. High Quality Wireless Dual Microphone Designed For Mo
 Description: High Quality Wireless Dual Microphone Designed For Mobile Phone And Camera Recording
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

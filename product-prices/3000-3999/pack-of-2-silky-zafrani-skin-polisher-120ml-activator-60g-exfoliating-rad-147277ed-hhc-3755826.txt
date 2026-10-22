@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 2 Silky Zafrani Skin Polisher 120ml + Activator 60g | Exfoliating & Radiance Boosting
 Product ID: hhc-3755826
 SKU: hhc-3755826
@@ -7,11 +8,16 @@ Slug: pack-of-2-silky-zafrani-skin-polisher-120ml-activator-60g-exfoliating-r-14
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/085b3ab608d58aefaad8c1c73e75f0c9.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/085b3ab608d58aefaad8c1c73e75f0c9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/a9d97024799632c0a364e454cfbefbe7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/402194ec90931dbc9e63726b8b654b75.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/b2c432854b597d3657b45fc52587e0af.jpeg
 Meta Title: Pack of 2 Silky Zafrani Skin Polisher 120ml + Activator 60g | Exfoli
 Meta Description: Buy Pack of 2 Silky Zafrani Skin Polisher 120ml + Activator 60g | Exfoliating & Radiance Boosting online in Pakistan from ASM VEO. Silky Zafrani skin polish set
 Description: Silky Zafrani skin polish set with 120ml polisher & 60g activator. Suitable for all skin types, exfoliating & brightening.
-Regular Price: 765
-Sale Price: 765
+Wholesale Price: 715
+Regular Price: 1370
+Sale Price: 1097
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

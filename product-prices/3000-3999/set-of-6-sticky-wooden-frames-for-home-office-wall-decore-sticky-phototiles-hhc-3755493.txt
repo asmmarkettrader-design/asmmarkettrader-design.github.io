@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: set of 6  sticky wooden frames for home office wall decore / sticky phototiles
 Product ID: hhc-3755493
 SKU: hhc-3755493
@@ -7,11 +8,16 @@ Slug: set-of-6-sticky-wooden-frames-for-home-office-wall-decore-sticky-phototile
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/1103c1fa716e2b606346e8746ae7ad35.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/1103c1fa716e2b606346e8746ae7ad35.jpeg
 Meta Title: set of 6 sticky wooden frames for home office wall decore / sticky p
 Meta Description: Buy set of 6 sticky wooden frames for home office wall decore / sticky phototiles online in Pakistan from ASM VEO. set of 6 sticky wooden frames for home office
 Description: set of 6 sticky wooden frames for home office wall decore / sticky phototiles
-Regular Price: 756
-Sale Price: 756
+Wholesale Price: 706
+Regular Price: 1360
+Sale Price: 1084
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

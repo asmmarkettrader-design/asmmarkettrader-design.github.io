@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashee Paint Stick Foundation - Makeup Product Designed For Face Coverage And Daily Beauty Routine - 30ML (Ivory)
 Product ID: hhc-3764811
 SKU: hhc-3764811
@@ -7,11 +8,16 @@ Slug: kashee-paint-stick-foundation-makeup-product-designed-for-face-coverage-51
 Category: Beauty & Personal Care
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/dba6f5a300719077d881b7bfaf05f632.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/dba6f5a300719077d881b7bfaf05f632.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/27cd3d929180c44ffbe67169d3963995.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/07708dc416929ae8aa2ace66ab6467b6.jpg
 Meta Title: Kashee Paint Stick Foundation - Makeup Product Designed For Face Cov
 Meta Description: Buy Kashee Paint Stick Foundation - Makeup Product Designed For Face Coverage And Daily Beauty Routine - 30ML (Ivory) online in Pakistan from ASM VEO. This Kash
 Description: This Kashee Paint Stick Foundation Provides A Reliable Solution For Makeup Products And Routine Face Coverage Needs. Formulated To Deliver Coverage Benefits While Supporting Kashee Paint Stick Foundation Utility, It Fits Seamlessly Into Your Regular Face Coverage Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Face Coverage Requirements, This Kashee Paint Stick Foundation Serves As An Essential Makeup Accessory For Daily Life.Key FeaturesKashee Paint Stick Foundation Formulated For Makeup ProductsDelivers Face Coverage And Supports Daily Beauty UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Face Coverage And Beauty RoutinesDesigned For Easy Operation And Convenient UseEssential Makeup Accessory For Everyday Maintenance
-Regular Price: 518
-Sale Price: 518
+Wholesale Price: 468
+Regular Price: 950
+Sale Price: 762
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

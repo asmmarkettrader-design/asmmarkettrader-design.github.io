@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sticker Remover | Premium Adhesive Cleaner | THREE GUYS | German Engineered (250ml)
 Product ID: hhc-3756951
 SKU: hhc-3756951
@@ -7,11 +8,16 @@ Slug: sticker-remover-premium-adhesive-cleaner-three-guys-german-engineered-250m
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/a8350c17d67beb4171f1f84159865e17.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/a8350c17d67beb4171f1f84159865e17.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/1f02bbf22b1195c2659250fe2ba35932.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/83b73716b438c3e4495e30f9f360467c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/555cea5688c2d43bab9d1d27c49b39ec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/411d923d0e029ae676d837bf76e56f82.jpg
 Meta Title: Sticker Remover | Premium Adhesive Cleaner | THREE GUYS | German Eng
 Meta Description: Buy Sticker Remover | Premium Adhesive Cleaner | THREE GUYS | German Engineered (250ml) online in Pakistan from ASM VEO. Premium German-Engineered Sticker Remov
 Description: Premium German-Engineered Sticker Remover That Dissolves Adhesives Labels And Stickers Quickly Leaving Surfaces Clean And Residue-Free.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

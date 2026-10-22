@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Golden Rope Bracelet / Anklet – Unisex Stylish Chain
 Product ID: hhc-3763843
 SKU: hhc-3763843
@@ -7,11 +8,16 @@ Slug: golden-rope-bracelet-anklet-unisex-stylish-chain-hhc-3763843
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/1d6475a75f797c6fb2c67f7ff41c6d20.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/1d6475a75f797c6fb2c67f7ff41c6d20.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/a0fd922a34ea1b06e328bb55ef1ca0c5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/b91be6235acd611e1604605901046257.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/f6a4c3f92facf42790c0b766270352cd.jpeg
 Meta Title: Golden Rope Bracelet / Anklet – Unisex Stylish Chain | Buy Online in
 Meta Description: Buy Golden Rope Bracelet / Anklet – Unisex Stylish Chain online in Pakistan from ASM VEO. A stylish golden rope-design chain suitable for both men and women, fe
 Description: A stylish golden rope-design chain suitable for both men and women, featuring a twisted woven pattern and adjustable clasp for a comfortable fit.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

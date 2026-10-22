@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: S11 Mini Portable Bluetooth Speaker with Phone Holder, RGB Lights, Super Bass & 10-Hour Playtime – Compact Travel Wireless Speaker (Random Color)
 Product ID: hhc-3756932
 SKU: hhc-3756932
@@ -7,11 +8,16 @@ Slug: s11-mini-portable-bluetooth-speaker-with-phone-holder-rgb-lights-super-b5b
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/d377191099de3a8b160e6770f6192260.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/d377191099de3a8b160e6770f6192260.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/4ef2db91d039c9fda43c4e4a323d93d2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/e6222c44ea1c2a76fede3d15344f46c6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/94020cee18682e1968b60ad75272e66c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/f94e838e93b085ee8de9be44369b9f2c.jpeg
 Meta Title: S11 Mini Portable Bluetooth Speaker with Phone Holder, RGB Lights, S
 Meta Description: Buy S11 Mini Portable Bluetooth Speaker with Phone Holder, RGB Lights, Super Bass & 10-Hour Playtime – Compact Travel Wireless Speaker (Random Color) online in
 Description: A compact and powerful mini Bluetooth speaker designed for travel and everyday use. Featuring built-in RGB lights, super bass sound, and an integrated phone holder, this portable speaker delivers clear audio and convenient hands-free viewing with up to 10 hours of playtime.
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

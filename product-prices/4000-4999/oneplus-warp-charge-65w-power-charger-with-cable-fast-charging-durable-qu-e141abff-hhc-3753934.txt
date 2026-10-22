@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: OnePlus Warp Charge 65W Power Charger With Cable Fast Charging Durable Quality Reliable Performance
 Product ID: hhc-3753934
 SKU: hhc-3753934
@@ -7,11 +8,16 @@ Slug: oneplus-warp-charge-65w-power-charger-with-cable-fast-charging-durable-e14
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/2e78920d2f00d30204edb7a8ca632b88.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/2e78920d2f00d30204edb7a8ca632b88.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/5935007c3e534eaefe548cbfa652ebe8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/4ce9a4cd2666a36bfcaf63a885c043f2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/3558666d10665fb9d2408c60b4c84393.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/27/67b350f4033b6fba96aeddb9ba8ac828.jpeg
 Meta Title: OnePlus Warp Charge 65W Power Charger With Cable Fast Charging Durab
 Meta Description: Buy OnePlus Warp Charge 65W Power Charger With Cable Fast Charging Durable Quality Reliable Performance online in Pakistan from ASM VEO. OnePlus Warp Charge 65W
 Description: OnePlus Warp Charge 65W Power Charger With Cable Provides Fast Charging Durable Quality And Reliable Performance
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

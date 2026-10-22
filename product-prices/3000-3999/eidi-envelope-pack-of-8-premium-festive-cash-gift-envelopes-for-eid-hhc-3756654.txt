@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Eidi Envelope Pack of 8 – Premium Festive Cash Gift Envelopes for Eid
 Product ID: hhc-3756654
 SKU: hhc-3756654
@@ -7,11 +8,16 @@ Slug: eidi-envelope-pack-of-8-premium-festive-cash-gift-envelopes-for-eid-hhc-37
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/303f5cb369eed250204495bb643b7ccf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/303f5cb369eed250204495bb643b7ccf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/3d85668cdd8d70b1475b7d1e109cbe1c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/f7a49a6ef2cfa6cb44646359436f410f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/a845ac4c26e926e16603657e9301dfa3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/c769101d7988d45af0dffd013e110a04.png
 Meta Title: Eidi Envelope Pack of 8 – Premium Festive Cash Gift Envelopes for Ei
 Meta Description: Buy Eidi Envelope Pack of 8 – Premium Festive Cash Gift Envelopes for Eid online in Pakistan from ASM VEO. Beautifully designed Eidi envelopes perfect for gifti
 Description: Beautifully designed Eidi envelopes perfect for gifting cash to kids, family, and friends on Eid. Pack of 8 high-quality festive envelopes with elegant prints.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

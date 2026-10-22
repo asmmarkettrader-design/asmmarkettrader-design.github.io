@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Vintage T9 Trimmer – Cordless Hair Clipper
 Product ID: hhc-3764074
 SKU: hhc-3764074
@@ -7,11 +8,16 @@ Slug: professional-vintage-t9-trimmer-cordless-hair-clipper-hhc-3764074
 Category: Fashion
 Subcategory: Vests & Undergarments
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/4374dcb72d6a24b94db209216ce1ab47.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/4374dcb72d6a24b94db209216ce1ab47.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/327ff43bb937f982f57f1b1ab2c36d12.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/b485008ea126830cadcd34717b5680c8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/7f8e8fa6c4af30f0e5691b6ddec6ec10.jpg
 Meta Title: Professional Vintage T9 Trimmer – Cordless Hair Clipper | Buy Online
 Meta Description: Buy Professional Vintage T9 Trimmer – Cordless Hair Clipper online in Pakistan from ASM VEO. A cordless vintage-style T9 hair trimmer featuring an engraved meta
 Description: A cordless vintage-style T9 hair trimmer featuring an engraved metallic body and zero-gapped T-blade. Comes with USB charging cable and multiple guide combs for precise hair cutting, beard lining, and close trimming.
-Regular Price: 924
-Sale Price: 924
+Wholesale Price: 874
+Regular Price: 1660
+Sale Price: 1327
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

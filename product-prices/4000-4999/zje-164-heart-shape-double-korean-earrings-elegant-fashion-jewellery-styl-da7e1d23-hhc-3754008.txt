@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ZJE-164 Heart Shape Double Korean Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women
 Product ID: hhc-3754008
 SKU: hhc-3754008
@@ -7,11 +8,16 @@ Slug: zje-164-heart-shape-double-korean-earrings-elegant-fashion-jewellery-st-da
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/6c5b15da11a4ab4352d99c9031361ebd.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/6c5b15da11a4ab4352d99c9031361ebd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/e229782e47fad342dc75ad033ec42468.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/7c7f9261b280cf6492da472f6de9dea0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/01/0a1b5a11b6ccec5ef6eedf969aed6af9.jpeg
 Meta Title: ZJE-164 Heart Shape Double Korean Earrings – Elegant Fashion Jewelle
 Meta Description: Buy ZJE-164 Heart Shape Double Korean Earrings – Elegant Fashion Jewellery, Stylish Accessory for Women online in Pakistan from ASM VEO. ZJE-164 heart shape dou
 Description: ZJE-164 heart shape double Korean earrings, stylish design for women, perfect for fashion and daily wear.
-Regular Price: 404
-Sale Price: 404
+Wholesale Price: 354
+Regular Price: 741
+Sale Price: 591
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

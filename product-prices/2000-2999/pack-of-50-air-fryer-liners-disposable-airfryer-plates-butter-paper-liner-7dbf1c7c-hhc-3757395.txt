@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 50 Air Fryer Liners | Disposable AirFryer Plates | Butter Paper Liner For Air Fryer
 Product ID: hhc-3757395
 SKU: hhc-3757395
@@ -7,11 +8,16 @@ Slug: pack-of-50-air-fryer-liners-disposable-airfryer-plates-butter-paper-lin-7d
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/fa0d153c26a4242db1627e43d8124980.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/fa0d153c26a4242db1627e43d8124980.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/36ee4888c393254b44cc48950ef2c233.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/d41db1197c0e2b1c374b2379385f6bd3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/f749956fa28c4a0682eff4c7ac836f84.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/ef7f808028897461e276dda3a505aa3f.jpg
 Meta Title: Pack Of 50 Air Fryer Liners | Disposable AirFryer Plates | Butter Pa
 Meta Description: Buy Pack Of 50 Air Fryer Liners | Disposable AirFryer Plates | Butter Paper Liner For Air Fryer online in Pakistan from ASM VEO. Keep your air fryer clean with
 Description: Keep your air fryer clean with this pack of 50 disposable liners. Heat-resistant, non-stick butter paper plates ensure easy cooking, less mess, and hassle-free cleanup every time.
-Regular Price: 401
-Sale Price: 401
+Wholesale Price: 351
+Regular Price: 736
+Sale Price: 586
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Water Heating Faucet Tap for Kitchens and Bathrooms Digital Temp° Display | Hot Water(without shower )
 Product ID: hhc-2423748
 SKU: hhc-2423748
@@ -7,11 +8,16 @@ Slug: electric-water-heating-faucet-tap-for-kitchens-and-bathrooms-digital-te-ce
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-31-at-11.17.05-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-31-at-11.17.05-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-07-at-12.09.18-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-07-at-12.09.19-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-07-at-12.09.19-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-07-at-12.09.20-PM.jpeg
 Meta Title: Electric Water Heating Faucet Tap for Kitchens and Bathrooms Digital
 Meta Description: Buy Electric Water Heating Faucet Tap for Kitchens and Bathrooms Digital Temp° Display | Hot Water(without shower ) online in Pakistan from ASM VEO. Description
 Description: Description:Finishing: ChromeNumber of Handles: Single HandleStyle: ContemporaryHot Water: YesProduct material: Stainless steelPower cord specification:Rated voltage: 220V/50HzPower Consumption: 3000 WattsWaterproof grade: IPX4Instant water heating technology Quick heat: 3 seconds Energy-efficient performance Designed for low pressure Protection class IPX4 LED display for convenience High-quality build and design 3000W powerwithout shower
-Regular Price: 3709
-Sale Price: 3709
+Wholesale Price: 3709
+Regular Price: 6250
+Sale Price: 5002
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

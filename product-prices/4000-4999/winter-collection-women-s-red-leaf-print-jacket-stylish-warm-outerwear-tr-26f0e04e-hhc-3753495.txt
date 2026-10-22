@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Collection Women’s Red Leaf Print Jacket | Stylish & Warm Outerwear | Trendy Winter Fashion for Ladies
 Product ID: hhc-3753495
 SKU: hhc-3753495
@@ -7,11 +8,16 @@ Slug: winter-collection-women-s-red-leaf-print-jacket-stylish-warm-outerwear-26f
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/a6b89d29dcedf0ca003dc5f2fab07c81.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/a6b89d29dcedf0ca003dc5f2fab07c81.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/12/932dd9e5996a155e66235091e76daadb.jpeg
 Meta Title: Winter Collection Women’s Red Leaf Print Jacket | Stylish & Warm Out
 Meta Description: Buy Winter Collection Women’s Red Leaf Print Jacket | Stylish & Warm Outerwear | Trendy Winter Fashion for Ladies online in Pakistan from ASM VEO. Elegant red l
 Description: Elegant red leaf print winter jacket for women. Soft, warm, and stylish — perfect for casual wear, outings, and winter fashion.
-Regular Price: 1292
-Sale Price: 1292
+Wholesale Price: 1242
+Regular Price: 2280
+Sale Price: 1824
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

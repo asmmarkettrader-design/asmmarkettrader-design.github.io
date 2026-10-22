@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Star Printed Sweatshirt & Pajama Trouser Tracksuit for Kids | Winter Warm Fleece Clothing Set Outfit for Boys & Girls – Cozy & Stylish | FOR BABY AND KIDS
 Product ID: hhc-3753471
 SKU: hhc-3753471
@@ -7,11 +8,16 @@ Slug: star-printed-sweatshirt-pajama-trouser-tracksuit-for-kids-winter-warm-f-02
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/b12b31d781e46c9ab1e2f5ff2b75a8c2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/b12b31d781e46c9ab1e2f5ff2b75a8c2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/c35fce11a19d7f5c8b474f5fc9930ae1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/436349dcd448e1fe9c21abacfc80b911.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/d31a588eb55011fd2262a7a6cb485219.jpeg
 Meta Title: Star Printed Sweatshirt & Pajama Trouser Tracksuit for Kids | Winter
 Meta Description: Buy Star Printed Sweatshirt & Pajama Trouser Tracksuit for Kids | Winter Warm Fleece Clothing Set Outfit for Boys & Girls – Cozy & Stylish | FOR BABY AND KIDS o
 Description: Adorable star printed winter tracksuit for kids. Soft fleece sweatshirt and pajama trouser set — warm, comfy, and perfect for boys and girls.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

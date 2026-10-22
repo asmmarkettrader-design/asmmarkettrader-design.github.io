@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stanley 40 Oz (1200ML) Stainless Steel Vacuum Insulated Tumbler with Straw –Random Colors | Stanley |
 Product ID: hhc-3752742
 SKU: hhc-3752742
@@ -7,11 +8,16 @@ Slug: stanley-40-oz-1200ml-stainless-steel-vacuum-insulated-tumbler-with-stra-45
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/cbf1ddd8584a2c024cc0e692a64f241e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/cbf1ddd8584a2c024cc0e692a64f241e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/aa92e257b4a3997278d77bbe5fb5c1fc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/42bb39b6ea023fcfe4f9b9904655e50e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/fc344b0089805f42300d79705b0386b0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/13/2479154268bbd5cb8c1af2582bd2f569.jpg
 Meta Title: Stanley 40 Oz (1200ML) Stainless Steel Vacuum Insulated Tumbler with
 Meta Description: Buy Stanley 40 Oz (1200ML) Stainless Steel Vacuum Insulated Tumbler with Straw –Random Colors | Stanley | online in Pakistan from ASM VEO. Stanley 40 Oz (1200ML
 Description: Stanley 40 Oz (1200ML) Stainless Steel Vacuum Insulated Tumbler with Straw – Leak-Proof Quencher Cup for Hot &amp; Cold Beverages, Travel Mug, Gym Water Bottle, Coffee Thermos -Random Colors | Stanley |
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

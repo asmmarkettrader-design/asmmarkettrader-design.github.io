@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Neck Fan - 360 Degree Free Rotation Hands Free Personal Hanging Neck Sports Fan USB Rechargeable Wearable Cooling Fan For Traveling (Random Color)
 Product ID: hhc-3762134
 SKU: hhc-3762134
@@ -7,11 +8,16 @@ Slug: portable-neck-fan-360-degree-free-rotation-hands-free-personal-hanging-7dc
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/60e7d3cf47c439427a1abe39966617b1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/60e7d3cf47c439427a1abe39966617b1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/02df322d66da4e14c5578b29a8c4a581.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/e3f56fd19dbad36c8fac6174557bd5c3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/0cb0493c9eac78faaafd06954c80f13f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/d081be30f20e2cc70268f654f9232f11.jpeg
 Meta Title: Portable Neck Fan - 360 Degree Free Rotation Hands Free Personal Han
 Meta Description: Buy Portable Neck Fan - 360 Degree Free Rotation Hands Free Personal Hanging Neck Sports Fan USB Rechargeable Wearable Cooling Fan For Traveling (Random Color)
 Description: The Portable Neck Fan Features A 360 Degree Free Rotation Design And Hands Free Functionality For Convenient Cooling During Sports, Travel, Or Office Use.
-Regular Price: 505
-Sale Price: 505
+Wholesale Price: 455
+Regular Price: 930
+Sale Price: 742
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

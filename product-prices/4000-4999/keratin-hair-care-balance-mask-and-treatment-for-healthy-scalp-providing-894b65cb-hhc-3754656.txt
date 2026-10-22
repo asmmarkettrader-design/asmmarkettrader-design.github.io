@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Keratin Hair Care Balance Mask And Treatment For Healthy Scalp Providing Nourishing Effect With Reliable Quality - 500ML
 Product ID: hhc-3754656
 SKU: hhc-3754656
@@ -7,11 +8,16 @@ Slug: keratin-hair-care-balance-mask-and-treatment-for-healthy-scalp-providin-89
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/39d4d0a7a1da625735dffffef0c2fb6b.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/39d4d0a7a1da625735dffffef0c2fb6b.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/ac17130d5de818a6fe5581cf19edbeaf.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/1341548815c061a7207c422ce52db1b4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/7d5302b776238efada4b4f4464c4a1e0.jpeg
 Meta Title: Keratin Hair Care Balance Mask And Treatment For Healthy Scalp Provi
 Meta Description: Buy Keratin Hair Care Balance Mask And Treatment For Healthy Scalp Providing Nourishing Effect With Reliable Quality - 500ML online in Pakistan from ASM VEO. Ke
 Description: Keratin Hair Mask Treatment Offering Hair Care Balance With Nourishing Effect And Healthy Scalp Support
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

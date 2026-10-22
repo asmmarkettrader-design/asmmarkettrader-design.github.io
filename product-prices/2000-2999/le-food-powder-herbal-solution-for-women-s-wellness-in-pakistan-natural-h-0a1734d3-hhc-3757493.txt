@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Le Food Powder Herbal Solution For Women’s Wellness In Pakistan Natural Health Support (100gram)
 Product ID: hhc-3757493
 SKU: hhc-3757493
@@ -7,11 +8,16 @@ Slug: le-food-powder-herbal-solution-for-women-s-wellness-in-pakistan-natural-0a
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/e5c5e3cee26a3837a3ebee625cd7b793.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/e5c5e3cee26a3837a3ebee625cd7b793.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/2809112a929c22da9109cc8d6541d08e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/ba5dc5f72360653244cfd3d41e882118.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/b0a991da978ad9d1cdbb7dd6cf3f8b4a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/d780eaa36a7ff1be6aff2732190e5fb8.jpeg
 Meta Title: Le Food Powder Herbal Solution For Women’s Wellness In Pakistan Natu
 Meta Description: Buy Le Food Powder Herbal Solution For Women’s Wellness In Pakistan Natural Health Support (100gram) online in Pakistan from ASM VEO. Le Food Powder Herbal Solu
 Description: Le Food Powder Herbal Solution For Women’s Wellness In Pakistan Natural And Effective Health Support.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

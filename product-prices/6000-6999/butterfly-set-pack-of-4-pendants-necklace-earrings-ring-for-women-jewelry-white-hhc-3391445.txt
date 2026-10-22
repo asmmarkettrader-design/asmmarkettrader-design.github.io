@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Butterfly Set, Pack Of 4 / Pendants Necklace Earrings Ring For Women Jewelry -white
 Product ID: hhc-3391445
 SKU: hhc-3391445
@@ -7,11 +8,16 @@ Slug: butterfly-set-pack-of-4-pendants-necklace-earrings-ring-for-women-jewelry-
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/96ddf0d0f43cdf8e73730bb4b330529b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/96ddf0d0f43cdf8e73730bb4b330529b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/06/WhatsApp-Image-2025-06-23-at-6.49.36-AM.jpeg
 Meta Title: Butterfly Set, Pack Of 4 / Pendants Necklace Earrings Ring For Women
 Meta Description: Buy Butterfly Set, Pack Of 4 / Pendants Necklace Earrings Ring For Women Jewelry -white online in Pakistan from ASM VEO. Feature: Simple style, showing temperam
 Description: Feature: Simple style, showing temperament. It can be used for daily commuting and going out on the street. It can be used as a fashionable matching item whether you qre shopping or dating. Use For: Gifts, Party, Daily, Dance,birthday party ,anniversary. Gift for:Girl Friend/Wife/Mom/Woman/ Girls. Description: Name:Jewelry Set Style:Fashion Material:Alloy Color:As picture shows
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

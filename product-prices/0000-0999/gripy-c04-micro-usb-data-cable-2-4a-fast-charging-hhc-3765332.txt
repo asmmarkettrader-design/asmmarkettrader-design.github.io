@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gripy C04 Micro USB Data Cable 2.4A Fast Charging
 Product ID: hhc-3765332
 SKU: hhc-3765332
@@ -7,11 +8,16 @@ Slug: gripy-c04-micro-usb-data-cable-2-4a-fast-charging-hhc-3765332
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/2608e18331c5fbc039123b3361084360.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/2608e18331c5fbc039123b3361084360.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/179f3104334b6540942a03b9538bb6cc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/ef355220e6959b791733893ddf7d80af.jpeg
 Meta Title: Gripy C04 Micro USB Data Cable 2.4A Fast Charging | Buy Online in Pa
 Meta Description: Buy Gripy C04 Micro USB Data Cable 2.4A Fast Charging online in Pakistan from ASM VEO. Gripy Model C04 Micro USB Data Cable. Features: 2.4A Fast Charging, High-
 Description: Gripy Model C04 Micro USB Data Cable. Features: 2.4A Fast Charging, High-Speed Data Sync (480Mbps), Durable Tangle-free design, Premium Copper core for stable performance, Universal compatibility with Micro USB devices. 100% Safe device protection.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

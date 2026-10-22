@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Embroidered Peshawari Cap Classic Heritage Elegant Craftsmanship Comfortable Fit Durable Fabric Perfect Choice For Cultural Gatherings (Random Color)
 Product ID: hhc-3753965
 SKU: hhc-3753965
@@ -7,11 +8,16 @@ Slug: embroidered-peshawari-cap-classic-heritage-elegant-craftsmanship-comfor-ee
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/62e515087c6c09a93a4ba58112cb7e8e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/62e515087c6c09a93a4ba58112cb7e8e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/4c77920425a458b750d88e4d11c7cda2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/30f93d11e9e0c30dbe720f82f24b0eb2.jpeg
 Meta Title: Embroidered Peshawari Cap Classic Heritage Elegant Craftsmanship Com
 Meta Description: Buy Embroidered Peshawari Cap Classic Heritage Elegant Craftsmanship Comfortable Fit Durable Fabric Perfect Choice For Cultural Gatherings (Random Color) online
 Description: Embroidered Peshawari Cap Offers Classic Heritage Elegant Craftsmanship Comfortable Fit And Durable Fabric
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

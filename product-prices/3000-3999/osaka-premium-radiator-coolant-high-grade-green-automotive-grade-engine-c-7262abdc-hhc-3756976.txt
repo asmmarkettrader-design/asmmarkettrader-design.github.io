@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: OSAKA Premium Radiator Coolant  - High Grade Green (Automotive Grade) | Engine Cooling System Protector | Metal Corrosion Prevention (1L)
 Product ID: hhc-3756976
 SKU: hhc-3756976
@@ -7,11 +8,16 @@ Slug: osaka-premium-radiator-coolant-high-grade-green-automotive-grade-engine-72
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/f51c472014ef09605c9301ee423c094f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/f51c472014ef09605c9301ee423c094f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/5a1e2e8b4da453c4a54f38ad22e93397.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/5540ea106c69bc645a48a2ecf5294042.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/2185c02ebfb4795a793d52eb2a4a9304.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/14/8b6cf9410fc783b501a18a12a985eecf.jpeg
 Meta Title: OSAKA Premium Radiator Coolant - High Grade Green (Automotive Grade)
 Meta Description: Buy OSAKA Premium Radiator Coolant - High Grade Green (Automotive Grade) | Engine Cooling System Protector | Metal Corrosion Prevention (1L) online in Pakistan
 Description: OSAKA Premium Radiator Coolant Red is a high-grade Green coolant that protects the engine cooling system from overheating, rust, and metal corrosion. Helps maintain stable engine temperature and smooth performance. 1L.
-Regular Price: 424
-Sale Price: 424
+Wholesale Price: 374
+Regular Price: 780
+Sale Price: 621
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

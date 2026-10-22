@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Manual Hand Press Pump Water Dispenser  (china made)
 Product ID: hhc-781709
 SKU: hhc-781709
@@ -7,11 +8,16 @@ Slug: manual-hand-press-pump-water-dispenser-china-made-hhc-781709
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/img_6_HTB1YPuqmRmWBuNkSndVq6AsApXaa.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/img_6_HTB1YPuqmRmWBuNkSndVq6AsApXaa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/img_4_HTB1cL7fu49YBuNjy0Ffq6xIsVXaG.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/img_3_HTB1S8yAmLuSBuNkHFqDq6xfhVXaf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/img_2_HTB1dkfvuVuWBuNjSszbq6AS7FXav.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/05/img_0_HTB1A3jLuY1YBuNjSszhq6AUsFXav.jpg
 Meta Title: Manual Hand Press Pump Water Dispenser (china made) | Buy Online in
 Meta Description: Buy Manual Hand Press Pump Water Dispenser (china made) online in Pakistan from ASM VEO. Manual water dispenser pump with easy function Innovative vacuum action
 Description: Manual water dispenser pump with easy function Innovative vacuum action for easy pumping Fits most 20 to 25 litre water bottles Features a removable tube for easy cleaning Colour: White and blue Material: Plastic Easy Water Pump It's quite an hassle to fix the bottle upside down on the dispenser. This water pump is the perfect solution for you, it's not to heavy and easy on your pocket. It can be easily installed on regular bottles, converting them into manual dispensers.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

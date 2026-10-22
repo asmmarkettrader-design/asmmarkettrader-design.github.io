@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3Pcs Home Decor Photo Tiles Elegant Design Compact Build Perfect Choice For Home Office And Gift Use
 Product ID: hhc-3754197
 SKU: hhc-3754197
@@ -7,11 +8,16 @@ Slug: 3pcs-home-decor-photo-tiles-elegant-design-compact-build-perfect-choice-1e
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/7f279dfa5c7ed4e8e1864d6e42675f2c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/20/7f279dfa5c7ed4e8e1864d6e42675f2c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/b33e6e55dce50a744bd72558bcc3ec01.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/2cd68101feb2d7fc398c79dc1d4ae498.jpeg
 Meta Title: 3Pcs Home Decor Photo Tiles Elegant Design Compact Build Perfect Cho
 Meta Description: Buy 3Pcs Home Decor Photo Tiles Elegant Design Compact Build Perfect Choice For Home Office And Gift Use online in Pakistan from ASM VEO. Home Decor Photo Tiles
 Description: Home Decor Photo Tiles Provide Durable Quality Reliable Utility Comfortable Use Elegant Design And Compact Build
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

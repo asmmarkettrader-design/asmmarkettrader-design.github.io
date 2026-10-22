@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Pairs Double Sided Adhesive Wall Mounted Hooks Invisible Traceless Wall Hook
 Product ID: hhc-635785
 SKU: hhc-635785
@@ -7,11 +8,16 @@ Slug: 6-pairs-double-sided-adhesive-wall-mounted-hooks-invisible-traceless-wall-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/d059ec720a4ebd6ed2f298a5230026ed.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/d059ec720a4ebd6ed2f298a5230026ed.jpg_750x750.jpg_.webp
 Meta Title: 6 Pairs Double Sided Adhesive Wall Mounted Hooks Invisible Traceless
 Meta Description: Buy 6 Pairs Double Sided Adhesive Wall Mounted Hooks Invisible Traceless Wall Hook online in Pakistan from ASM VEO. Product Details :Material: PlasticColor: Tra
 Description: Product Details :Material: PlasticColor: TransparentPacking: 6 PairsDimensions: 60MM*60MMWeight: About 40g~80g.Specifications: Material: PP Size: 6*6cm Color: transparent Quantity: Snap button (a pair)
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

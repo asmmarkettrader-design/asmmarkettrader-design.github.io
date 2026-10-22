@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: C6 4 In 1 Multi Functional Car Charger Fast Charging With Star Light Providing Durable Quality - 20 Watt
 Product ID: hhc-3754834
 SKU: hhc-3754834
@@ -7,11 +8,16 @@ Slug: c6-4-in-1-multi-functional-car-charger-fast-charging-with-star-light-pr-8e
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/f0d776decd60111ebdcb126e656618da.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/f0d776decd60111ebdcb126e656618da.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/46eceb5d0bfc5b3b48aec23cf60c5543.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/46eceb5d0bfc5b3b48aec23cf60c5543.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/03/bfc975c49558ad848c0d3fa37d6ad959.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/f28a260c59bbc48e212d04f6564b58ab.mp4
 Meta Title: C6 4 In 1 Multi Functional Car Charger Fast Charging With Star Light
 Meta Description: Buy C6 4 In 1 Multi Functional Car Charger Fast Charging With Star Light Providing Durable Quality - 20 Watt online in Pakistan from ASM VEO. C6 4 In 1 Multi Fu
 Description: C6 4 In 1 Multi Functional Car Charger Fast Charging With Star Light Offering Durable Quality Reliable Performance And Convenient Daily Use
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

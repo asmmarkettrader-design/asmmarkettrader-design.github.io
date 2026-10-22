@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Novelty Airplane & Helicopter Pens | Cool Gel Pen | Fun Stationery for School, Office & Parties (Random Color)
 Product ID: hhc-3755928
 SKU: hhc-3755928
@@ -7,11 +8,16 @@ Slug: novelty-airplane-helicopter-pens-cool-gel-pen-fun-stationery-for-school-e3
 Category: Books & Stationery
 Subcategory: Office Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/5c16503cbe568f3f8efd11d086600645.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/5c16503cbe568f3f8efd11d086600645.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/1ac4d70380602eeab7c99056b550974f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/04d48095883352357b1daaa40f037991.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/9544ff517be92c367e41d04f847d1eb6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/26/6e1d80517e033d8ed87f5d6eebd5ae7a.jpg
 Meta Title: Novelty Airplane & Helicopter Pens | Cool Gel Pen | Fun Stationery f
 Meta Description: Buy Novelty Airplane & Helicopter Pens | Cool Gel Pen | Fun Stationery for School, Office & Parties (Random Color) online in Pakistan from ASM VEO. Creative air
 Description: Creative airplane & helicopter shape gel pens. Fun novelty stationery for school, office, parties & birthdays.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

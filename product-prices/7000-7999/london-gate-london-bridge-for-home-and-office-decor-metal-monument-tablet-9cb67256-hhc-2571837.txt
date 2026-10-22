@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: London Gate, London Bridge for home and office decor - Metal monument Tabletop Decoration
 Product ID: hhc-2571837
 SKU: hhc-2571837
@@ -7,11 +8,16 @@ Slug: london-gate-london-bridge-for-home-and-office-decor-metal-monument-tabl-9c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-12.56.33-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-12.56.33-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-12.56.34-AM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-12.56.34-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-12.56.34-AM.jpeg
 Meta Title: London Gate, London Bridge for home and office decor - Metal monumen
 Meta Description: Buy London Gate, London Bridge for home and office decor - Metal monument Tabletop Decoration online in Pakistan from ASM VEO. metal Golden Gate Bridge statue m
 Description: metal Golden Gate Bridge statue model decoration gift. The new Golden Gate Bridge model because of its return to the basics and the old and simple, so that more fans and friends can't put it down. vintage metal Golden Gate Bridge statue model decoration gift. Very great be placed in bedroom, home, bars, cafes, restaurants, wedding, party or other romantic places for decoration.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

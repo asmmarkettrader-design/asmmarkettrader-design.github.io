@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Windshield Sun Shade Umbrella – Foldable UV & Heat Protection
 Product ID: hhc-3763760
 SKU: hhc-3763760
@@ -7,11 +8,16 @@ Slug: car-windshield-sun-shade-umbrella-foldable-uv-heat-protection-hhc-3763760
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/590f01e190ec6302813ae5b7c673ee49.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/590f01e190ec6302813ae5b7c673ee49.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/815127195961cb8197254c0146ac5fbb.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/3b29ff3c4cdc1339775cb00c6bf7249d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/cb333781d01ca5d5d7d8d3e658e59403.webp
 Meta Title: Car Windshield Sun Shade Umbrella – Foldable UV & Heat Protection |
 Meta Description: Buy Car Windshield Sun Shade Umbrella – Foldable UV & Heat Protection online in Pakistan from ASM VEO. Foldable car windshield sun shade designed to help block
 Description: Foldable car windshield sun shade designed to help block sunlight, reduce heat buildup, and protect your car interior during hot weather.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mesh Breathable Baseball Cap – Lightweight Summer Sun Hat (Jali Material)
 Product ID: hhc-3758473
 SKU: hhc-3758473
@@ -7,11 +8,16 @@ Slug: mesh-breathable-baseball-cap-lightweight-summer-sun-hat-jali-material-hhc-
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/f3c1dd65ac92ab4a7eee2c3fa2942694.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/f3c1dd65ac92ab4a7eee2c3fa2942694.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/d3d427f444122013b856ccebac71b0f0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/c75c1dcaf7836de6c51b9b3a53dd26f5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/2be93f23989d25baa709fe0b95d94bfa.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/05/eedcfd3910f6c0590359b40b8cf0bb8e.jpeg
 Meta Title: Mesh Breathable Baseball Cap – Lightweight Summer Sun Hat (Jali Mate
 Meta Description: Buy Mesh Breathable Baseball Cap – Lightweight Summer Sun Hat (Jali Material) online in Pakistan from ASM VEO. Stay cool and comfortable with this Mesh Breathab
 Description: Stay cool and comfortable with this Mesh Breathable Baseball Cap. Made with a high-quality "Jali" (mesh) material, it provides maximum ventilation, making it the perfect choice for hot summer days and outdoor activities.
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

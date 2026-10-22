@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Stainless Steel Quartz Watch PRX Style Elegant Durable Timepiece With Stainless Steel Strap And Precise Quartz Mechanism
 Product ID: hhc-3764876
 SKU: hhc-3764876
@@ -7,11 +8,16 @@ Slug: premium-stainless-steel-quartz-watch-prx-style-elegant-durable-timepiec-35
 Category: Mobile & Accessories
 Subcategory: Smartwatches & Fitness Bands
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/39346cc28fde926c51b99ade997f1550.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/39346cc28fde926c51b99ade997f1550.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/4eff508e4e0bb264eb98a23da3672517.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/8532eed8249eb4f51a50d8531b220ba5.jpeg
 Meta Title: Premium Stainless Steel Quartz Watch PRX Style Elegant Durable Timep
 Meta Description: Buy Premium Stainless Steel Quartz Watch PRX Style Elegant Durable Timepiece With Stainless Steel Strap And Precise Quartz Mechanism online in Pakistan from ASM
 Description: Premium Stainless Steel Quartz Watch PRX Style Elegant Durable Timepiece With Stainless Steel Strap And Precise Quartz Mechanism.
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

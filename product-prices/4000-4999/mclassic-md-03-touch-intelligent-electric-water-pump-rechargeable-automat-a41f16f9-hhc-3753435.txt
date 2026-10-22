@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mclassic MD-03 Touch Intelligent Electric Water Pump – Rechargeable Automatic Dispenser For Bottled Water With One-Touch Operation (Random Color)
 Product ID: hhc-3753435
 SKU: hhc-3753435
@@ -7,11 +8,16 @@ Slug: mclassic-md-03-touch-intelligent-electric-water-pump-rechargeable-autom-a4
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
-Meta Title: Mclassic MD-03 Touch Intelligent Electric Water Pump – Rechargeable
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/d997ca49f40e3f0c9957e731657c7353.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/d997ca49f40e3f0c9957e731657c7353.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/77db3144a755d1c598ed3b283eb79901.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/b3c442ea826391b4a7b5d74fc94bb1f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/73eb1845311e7a69453ea5bb74e347b6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/2e4c3a61b06657befb4afae8c5ec3e01.jpg
+Meta Title: Mclassic MD-03 Touch Intelligent Electric Water Pump – Rechargeable 
 Meta Description: Buy Mclassic MD-03 Touch Intelligent Electric Water Pump – Rechargeable Automatic Dispenser For Bottled Water With One-Touch Operation (Random Color) online in
 Description: Mclassic MD-03 Touch Intelligent Electric Water Pump Offers Easy One-Touch Operation, Rechargeable Design, And Effortless Water Dispensing.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

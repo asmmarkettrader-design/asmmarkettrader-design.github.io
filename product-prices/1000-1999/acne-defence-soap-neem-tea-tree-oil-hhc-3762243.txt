@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Acne Defence Soap – Neem & Tea Tree Oil
 Product ID: hhc-3762243
 SKU: hhc-3762243
@@ -7,11 +8,16 @@ Slug: acne-defence-soap-neem-tea-tree-oil-hhc-3762243
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/e3002505450aacd5c99f209ec20fc292.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/e3002505450aacd5c99f209ec20fc292.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/699d7737c0389fffafbceedafd8f6fc5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/21/b1699391fd50fde5a2a70b5f52535f7e.png
 Meta Title: Acne Defence Soap – Neem & Tea Tree Oil | Buy Online in Pakistan
 Meta Description: Buy Acne Defence Soap – Neem & Tea Tree Oil online in Pakistan from ASM VEO. 4X Acne Control. Extra Protection. Clear Skin Every Day. Fight acne at its root wit
 Description: 4X Acne Control. Extra Protection. Clear Skin Every Day. Fight acne at its root with the Instant Glow Acne Defence Soap — a powerful, 100% natural clarifying bar soap enriched with Neem Leaf Extract and Tea Tree Essential Oil. Designed for acne-prone skin, this soap delivers deep cleansing, spot
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Sink Splash Guard With Suction – Flexible Water Splash Stopper for Kitchen & Bathroom Faucets, Countertops & Cleaning Protection (Random Color)
 Product ID: hhc-3753776
 SKU: hhc-3753776
@@ -7,11 +8,16 @@ Slug: silicone-sink-splash-guard-with-suction-flexible-water-splash-stopper-f-b8
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/0fd2b8bb2089901d5fdc8391475f9e7c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/0fd2b8bb2089901d5fdc8391475f9e7c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/a6b81537c24db8b59d0c69c1c21f1fae.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/c88177f56f0910f0a4759af6590a78cd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/71d769ca45eb9063154a817c8d2db7c8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/602a4a2aadfa334925abe63eb24e3fbe.jpeg
 Meta Title: Silicone Sink Splash Guard With Suction – Flexible Water Splash Stop
 Meta Description: Buy Silicone Sink Splash Guard With Suction – Flexible Water Splash Stopper for Kitchen & Bathroom Faucets, Countertops & Cleaning Protection (Random Color) onl
 Description: A flexible silicone splash guard designed to prevent water from splashing around your sink. Features a strong suction base, easy installation, and durable waterproof material—perfect for kitchens, bathrooms, and daily cleaning use.
-Regular Price: 409
-Sale Price: 409
+Wholesale Price: 359
+Regular Price: 750
+Sale Price: 598
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

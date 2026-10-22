@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Foot Callus Remover With 1 Extra Head | Foot Pedi | Grinder For Soft Skin | Find Back Feet Care
 Product ID: hhc-3754113
 SKU: hhc-3754113
@@ -7,11 +8,16 @@ Slug: rechargeable-foot-callus-remover-with-1-extra-head-foot-pedi-grinder-fo-61
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/2803f3660f9946c2c7f94fb0a868b7cb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/2803f3660f9946c2c7f94fb0a868b7cb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/ace2cd05304ff67b54bd8b3c6884dfee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/976a2701c69a1a3468936fb51095376d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/fde414e9e9312905dad18190ac247685.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/05/2e54ae89b5f4560489963d43ae5fc1d9.jpeg
 Meta Title: Rechargeable Foot Callus Remover With 1 Extra Head | Foot Pedi | Gri
 Meta Description: Buy Rechargeable Foot Callus Remover With 1 Extra Head | Foot Pedi | Grinder For Soft Skin | Find Back Feet Care online in Pakistan from ASM VEO. A powerful rec
 Description: A powerful rechargeable foot callus remover designed to smooth rough, dry, and cracked heels. Comes with an extra replacement head for long-term use and salon-quality results at home.
-Regular Price: 879
-Sale Price: 879
+Wholesale Price: 829
+Regular Price: 1580
+Sale Price: 1262
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

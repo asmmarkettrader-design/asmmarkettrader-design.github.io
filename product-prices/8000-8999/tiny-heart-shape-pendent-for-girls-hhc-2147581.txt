@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tiny Heart Shape Pendent For Girls
 Product ID: hhc-2147581
 SKU: hhc-2147581
@@ -7,11 +8,16 @@ Slug: tiny-heart-shape-pendent-for-girls-hhc-2147581
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.45.44-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.45.44-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.45.44-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.45.44-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-09-at-1.45.39-PM.jpeg
 Meta Title: Tiny Heart Shape Pendent For Girls | Buy Online in Pakistan
 Meta Description: Buy Tiny Heart Shape Pendent For Girls online in Pakistan from ASM VEO. Tiny Heart Shape Pendent For Girls Cash on Delivery, Rs 180 standard delivery, and easy
 Description: Tiny Heart Shape Pendent For Girls
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

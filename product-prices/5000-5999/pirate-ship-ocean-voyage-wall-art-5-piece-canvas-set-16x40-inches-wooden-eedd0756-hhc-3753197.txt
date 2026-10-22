@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pirate Ship Ocean Voyage Wall Art – 5-Piece Canvas Set (16x40 inches) | Wooden Sticky Tile Frames with Double Tape
 Product ID: hhc-3753197
 SKU: hhc-3753197
@@ -7,11 +8,16 @@ Slug: pirate-ship-ocean-voyage-wall-art-5-piece-canvas-set-16x40-inches-woode-ee
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/bba5307941668dfb588270c20cd0517d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/bba5307941668dfb588270c20cd0517d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/04/ca2848d6113580fab10a6c27779aade5.jpeg
 Meta Title: Pirate Ship Ocean Voyage Wall Art – 5-Piece Canvas Set (16x40 inches
 Meta Description: Buy Pirate Ship Ocean Voyage Wall Art – 5-Piece Canvas Set (16x40 inches) | Wooden Sticky Tile Frames with Double Tape online in Pakistan from ASM VEO. 5-piece
 Description: 5-piece Pirate Ship Wall Art | 16x40" Wooden Sticky Tile Frames with Double Tape | Nautical Adventure Home Decor
-Regular Price: 938
-Sale Price: 938
+Wholesale Price: 888
+Regular Price: 1680
+Sale Price: 1348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

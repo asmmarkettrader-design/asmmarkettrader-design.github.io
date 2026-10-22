@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 12 Piece Wall Art Set Colorful Textured Landscape Paintings Wooden Sticky Tiles 5x7 Inches Easy Mounting12 Pcs Set 5x7 Inches Easy Mounting 5x7 Inches Easy Mountingen Sticky Tiles 5x7 Inches Easy Mounting
 Product ID: hhc-3759785
 SKU: hhc-3759785
@@ -7,11 +8,16 @@ Slug: 12-piece-wall-art-set-colorful-textured-landscape-paintings-wooden-stic-92
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/ef5fa220aba948c9094c7aeb4e304fba.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/18/ef5fa220aba948c9094c7aeb4e304fba.jpeg
 Meta Title: 12 Piece Wall Art Set Colorful Textured Landscape Paintings Wooden S
 Meta Description: Buy 12 Piece Wall Art Set Colorful Textured Landscape Paintings Wooden Sticky Tiles 5x7 Inches Easy Mounting12 Pcs Set 5x7 Inches Easy Mounting 5x7 Inches Easy
 Description: 12 Piece Wall Art Set Colorful Textured Landscape Paintings Wooden Sticky Tiles 5x7 Inches With Tape For Easy Mounting
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fine Roots Hair Oil Providing Gentle Care Nourishing Formula Strengthening  Healthy Scalp Support And Everyday Use
 Product ID: hhc-3755352
 SKU: hhc-3755352
@@ -7,11 +8,16 @@ Slug: fine-roots-hair-oil-providing-gentle-care-nourishing-formula-strengthen-25
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/2868f20ffadaf5a482f6c153da6c4baf.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/2868f20ffadaf5a482f6c153da6c4baf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/dccecc1133c12acff2c40d94ac3175b5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/a65e7841d6c171ef42827c814d7511d4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/09/80c2b98d33cab595de66d968a2a06049.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/e0fabe1d6d4935b57f45a670b37084ad.jpeg
 Meta Title: Fine Roots Hair Oil Providing Gentle Care Nourishing Formula Strengt
 Meta Description: Buy Fine Roots Hair Oil Providing Gentle Care Nourishing Formula Strengthening Healthy Scalp Support And Everyday Use online in Pakistan from ASM VEO. Fine Root
 Description: Fine Roots Hair Oil Offering Gentle Care Nourishing Formula Strengthening Quality Reliable Performance And Daily Use
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

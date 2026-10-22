@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: English Learning E Book for Kids - Early Education E Book for Kids
 Product ID: hhc-726693
 SKU: hhc-726693
@@ -7,11 +8,16 @@ Slug: english-learning-e-book-for-kids-early-education-e-book-for-kids-hhc-72669
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/829e46797c60de8188d7f2cf885af430.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/14/829e46797c60de8188d7f2cf885af430.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/ac308626d2031e7dd8bcb800f9d8d1c9.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/946aa8d7dc9a64ebb4c77c99fb2240e2.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/39d29a63eb89205124ce622104c6856a.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-27-at-7.08.47-PM-1.jpeg
 Meta Title: English Learning E Book for Kids - Early Education E Book for Kids |
 Meta Description: Buy English Learning E Book for Kids - Early Education E Book for Kids online in Pakistan from ASM VEO. Product detailsEbookE LEARNING book for kidsPerfect educ
 Description: Product detailsEbookE LEARNING book for kidsPerfect educational toy
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

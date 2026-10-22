@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dr.Rashel Black Charcoal Purifying Face Wash - 100g
 Product ID: hhc-2653514
 SKU: hhc-2653514
@@ -7,11 +8,16 @@ Slug: dr-rashel-black-charcoal-purifying-face-wash-100g-hhc-2653514
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/347124036_1409519246478088_1768811444642378618_n.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/347124036_1409519246478088_1768811444642378618_n.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/347115842_143747608604576_2835249093837999880_n.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-29-at-10.43.19-AM.jpeg
 Meta Title: Dr.Rashel Black Charcoal Purifying Face Wash - 100g | Buy Online in
 Meta Description: Buy Dr.Rashel Black Charcoal Purifying Face Wash - 100g online in Pakistan from ASM VEO. &nbsp; Dr.Rashel Black Charcoal Purifying Face Wash - 100g Benefits: Ma
 Description: &nbsp; Dr.Rashel Black Charcoal Purifying Face Wash - 100g Benefits: Made from natural ingredients, the black charcoal face wash enables to obtain quickly a healthy-looking skin, pure and clear With charcoal's great absorption and cleansing power the gentle cleanser will remove makeup blackheads and dirt from your pores. It is suitable for all skin types, notably acne-prone skin with spots and imperfections. Directions: Use twice a day squeeze small amount into hands and work into rich lather. Massage onto wet face,avoid contact with eyes, rinse thoroughly with water weight : 145 gram .
-Regular Price: 762
-Sale Price: 762
+Wholesale Price: 712
+Regular Price: 1360
+Sale Price: 1092
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

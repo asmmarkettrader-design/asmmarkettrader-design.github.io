@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Manual Hair Remover Coat Roller Hair Remover Double-sided Shaving Knife Pet Hair Cleaning Brush Sofa Shaving Ball Too
 Product ID: hhc-1259700
 SKU: hhc-1259700
@@ -7,11 +8,16 @@ Slug: portable-manual-hair-remover-coat-roller-hair-remover-double-sided-shav-9b
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/363dfd5a6bf0cb0491df66fb14f8fbf7.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/363dfd5a6bf0cb0491df66fb14f8fbf7.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/22c3c05e758bb398a3aa34c92cd28dfb.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/ee8c9c28-5805-4727-8cf7-0efd8036b1bd-225x300-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/7146aF1dDgL._SX679_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/6-1-1.jpg
 Meta Title: Portable Manual Hair Remover Coat Roller Hair Remover Double-sided S
 Meta Description: Buy Portable Manual Hair Remover Coat Roller Hair Remover Double-sided Shaving Knife Pet Hair Cleaning Brush Sofa Shaving Ball Too online in Pakistan from ASM V
 Description: Description:Name: Lint RemoverMaterial: Wood, CopperColor:As showPackage Include: 1 Piece x Lint RemoverNote:1. Due to the different monitor and light effect, the actual color of the item might be slightly different from the color which is showed on the pictures. Thank you!2. Please forgive slight measuring deviation due to manualThe hair remover coat roller is likely a handheld or compact roller device designed for removing pet hair and lint from clothing.Equipped with a rolling mechanism, often covered with a sticky or adhesive surface, that effectively lifts and captures loose hairs and lint.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

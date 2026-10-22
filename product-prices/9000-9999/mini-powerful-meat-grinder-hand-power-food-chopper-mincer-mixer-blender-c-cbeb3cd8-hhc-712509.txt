@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Powerful Meat Grinder Hand-power Food Chopper Mincer Mixer Blender Chop Meat Fruit Vegetable Nuts Shredder
 Product ID: hhc-712509
 SKU: hhc-712509
@@ -7,11 +8,16 @@ Slug: mini-powerful-meat-grinder-hand-power-food-chopper-mincer-mixer-blender-cb
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/09/1-2-12.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/09/1-2-12.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/09/1-3-11.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2021/09/2-7-1.jpg
 Meta Title: Mini Powerful Meat Grinder Hand-power Food Chopper Mincer Mixer Blen
 Meta Description: Buy Mini Powerful Meat Grinder Hand-power Food Chopper Mincer Mixer Blender Chop Meat Fruit Vegetable Nuts Shredder online in Pakistan from ASM VEO. Package Inc
 Description: Package Included:1x Multifunction Food ChopperSize: Approx. 8.5 x 7 cm/ 3.35 x 2.76"Material: Plastic + 304 stainless steelFunction: Make fruits and vegetables salad western-style food, usual vegetables can be choppe, you can use it to do chili sauce, garlic, ginger, celery and so on.
-Regular Price: 424
-Sale Price: 424
+Wholesale Price: 374
+Regular Price: 780
+Sale Price: 621
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

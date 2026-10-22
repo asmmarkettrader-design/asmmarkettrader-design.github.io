@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury 3-Piece Butterfly & Floral Wall Frame Set – Textured Gold & Blue Art for Modern Bedrooms
 Product ID: hhc-3757976
 SKU: hhc-3757976
@@ -7,11 +8,16 @@ Slug: luxury-3-piece-butterfly-floral-wall-frame-set-textured-gold-blue-art-f-3a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/761112c0cba14a13d6dc6403aa5ad5ff.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/22/761112c0cba14a13d6dc6403aa5ad5ff.jpg
 Meta Title: Luxury 3-Piece Butterfly & Floral Wall Frame Set – Textured Gold & B
 Meta Description: Buy Luxury 3-Piece Butterfly & Floral Wall Frame Set – Textured Gold & Blue Art for Modern Bedrooms online in Pakistan from ASM VEO. Brighten your walls with th
 Description: Brighten your walls with this 3-piece butterfly and flower wall frame set. Featuring textured golden butterflies, vivid blue accents, and elegant floral motifs, these ready-to-hang frames add luxury and charm to bedrooms, living rooms, or lounges.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

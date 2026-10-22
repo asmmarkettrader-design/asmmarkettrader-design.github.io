@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Gionee Original Handsfree – High Bass Quality Wired Earphones with Mic & 3.5mm Jack
 Product ID: hhc-3752472
 SKU: hhc-3752472
@@ -7,11 +8,16 @@ Slug: gionee-original-handsfree-high-bass-quality-wired-earphones-with-mic-3-5mm
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/cab2d16e61c31ea9958586a395f02185.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/cab2d16e61c31ea9958586a395f02185.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/f5eabf5063c546ddbd2a75e6e90af515.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/479f6bc15bbfd4831e15f14eebf6da52.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/26/04c6a45a45bb56c4fe3d3e20ba98c28a.png
 Meta Title: Gionee Original Handsfree – High Bass Quality Wired Earphones with M
 Meta Description: Buy Gionee Original Handsfree – High Bass Quality Wired Earphones with Mic & 3.5mm Jack online in Pakistan from ASM VEO. Gionee Original Handsfree with deep bas
 Description: Gionee Original Handsfree with deep bass, clear sound, and built-in mic. Comfortable design with 3.5mm universal jack, ideal for music and calls.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

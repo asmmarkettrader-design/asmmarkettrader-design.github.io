@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Ordinary Glycolic Acid 7% Toning Solution | Exfoliating Brightening Face & Body Toner - 240ml
 Product ID: hhc-3762909
 SKU: hhc-3762909
@@ -7,11 +8,16 @@ Slug: the-ordinary-glycolic-acid-7-toning-solution-exfoliating-brightening-fa-f7
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/7223a5a791aa9acacd5b12e313268e74.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/7223a5a791aa9acacd5b12e313268e74.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/5b8571127b40bf0bca02e5a674295d5a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/8c430124b7d7309ae6a16f6b561471a0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/9c288b67af903d46b33695a15fafe9ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/01e195db3db2f123e3a9d09add135c2f.jpeg
 Meta Title: The Ordinary Glycolic Acid 7% Toning Solution | Exfoliating Brighten
 Meta Description: Buy The Ordinary Glycolic Acid 7% Toning Solution | Exfoliating Brightening Face & Body Toner - 240ml online in Pakistan from ASM VEO. Reveal smoother, brighter
 Description: Reveal smoother, brighter-looking skin with The Ordinary Glycolic Acid 7% Toning Solution.
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

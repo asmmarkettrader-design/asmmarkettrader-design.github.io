@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Inspire Desi – Pure & Natural Traditional Cow Ghee for Cooking, Baking & Daily Use (1 KG)
 Product ID: hhc-3764135
 SKU: hhc-3764135
@@ -7,11 +8,16 @@ Slug: inspire-desi-pure-natural-traditional-cow-ghee-for-cooking-baking-daily-us
 Category: Baking and Cooking
 Subcategory: Cooking Ingredients
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/6df8b154965e6bc982d3ff7cf492846c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/6df8b154965e6bc982d3ff7cf492846c.jpg
 Meta Title: Inspire Desi – Pure & Natural Traditional Cow Ghee for Cooking, Baki
 Meta Description: Buy Inspire Desi – Pure & Natural Traditional Cow Ghee for Cooking, Baking & Daily Use (1 KG) online in Pakistan from ASM VEO. Enjoy the rich taste and natural
 Description: Enjoy the rich taste and natural goodness of Inspire Desi Ghee. Made from high-quality ingredients, this 1 KG pack offers a pure and aromatic ghee ideal for cooking, frying, baking, and traditional recipes. Its smooth texture and authentic flavor make it a perfect addition to everyday meals.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: String Ball Lamp - Home Decor Product Designed For Lighting And Daily Interior Decoration Routine (Random Color))
 Product ID: hhc-3764000
 SKU: hhc-3764000
@@ -7,11 +8,16 @@ Slug: string-ball-lamp-home-decor-product-designed-for-lighting-and-daily-int-2f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/5ba1832dff926a3aaea1674ab06ea9df.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/5ba1832dff926a3aaea1674ab06ea9df.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/5dfc295175aaa7e41ded33f5bdef7a5d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/d7424d5975ad3309f7a8d9337645ad8c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/a96e9e08efae9de7efd04c3cc07bd774.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/1ca31a771a34ee8f9f25a544f68de47c.jpg
 Meta Title: String Ball Lamp - Home Decor Product Designed For Lighting And Dail
 Meta Description: Buy String Ball Lamp - Home Decor Product Designed For Lighting And Daily Interior Decoration Routine (Random Color)) online in Pakistan from ASM VEO. The Strin
 Description: The String Ball Lamp Is A Home Decor Product Formulated To Help Provide Lighting And Daily Interior Decoration Utility During Use.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wall-Mounted Corner Storage Rack | Multifunctional Bathroom Organizer | Strong Carbon Steel | Random Colour
 Product ID: hhc-3758519
 SKU: hhc-3758519
@@ -7,11 +8,16 @@ Slug: wall-mounted-corner-storage-rack-multifunctional-bathroom-organizer-str-cf
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/ee4840f9eaf97ed2b428da0d239124bb.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/ee4840f9eaf97ed2b428da0d239124bb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/9668078b8696d6d6da4b0617f9e0bf6c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/bc3e2fc512149502e45fb1815792d9ef.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/c1f81792157630ca891c3969a88617ee.jpeg
 Meta Title: Wall-Mounted Corner Storage Rack | Multifunctional Bathroom Organize
 Meta Description: Buy Wall-Mounted Corner Storage Rack | Multifunctional Bathroom Organizer | Strong Carbon Steel | Random Colour online in Pakistan from ASM VEO. Durable Corner
 Description: Durable Corner Storage Rack | Thickened Carbon Steel | Strong Load-Bearing | Elegant Bathroom Organizer (Black/White)
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

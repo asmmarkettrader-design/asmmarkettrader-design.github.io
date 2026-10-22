@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electroginal Blueidea Deep Rolling Massager 5 in 1 Rechargeable Rotating massager machine
 Product ID: hhc-1110923
 SKU: hhc-1110923
@@ -7,11 +8,16 @@ Slug: electroginal-blueidea-deep-rolling-massager-5-in-1-rechargeable-rotatin-98
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/38eff1fdb8b61f80017abc44348eeeb3.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/38eff1fdb8b61f80017abc44348eeeb3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/7d174cd68d9fc1680e5d601661f63cf9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/result-6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-23-at-3.07.08-PM-1-1-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/51zQd2Dx3WL._SX569_.jpg
 Meta Title: Electroginal Blueidea Deep Rolling Massager 5 in 1 Rechargeable Rota
 Meta Description: Buy Electroginal Blueidea Deep Rolling Massager 5 in 1 Rechargeable Rotating massager machine online in Pakistan from ASM VEO. product details The Blueidea Deep
 Description: product details The Blueidea Deep Rolling Massager offers a 5-in-1 massage experience. Equipped with five interchangeable massage heads for a versatile massage. Rechargeable battery for convenient and cordless use. Targets muscle tension and promotes deep tissue relaxation. Enhances circulation and aids in pain relief for a rejuvenated feeling. easy operation and changing heads
-Regular Price: 4692
-Sale Price: 4692
+Wholesale Price: 4692
+Regular Price: 7850
+Sale Price: 6280
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

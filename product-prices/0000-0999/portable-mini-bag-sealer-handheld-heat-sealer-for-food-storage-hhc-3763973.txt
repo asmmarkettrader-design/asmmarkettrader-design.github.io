@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Mini Bag Sealer - Handheld Heat Sealer for Food Storage
 Product ID: hhc-3763973
 SKU: hhc-3763973
@@ -7,11 +8,16 @@ Slug: portable-mini-bag-sealer-handheld-heat-sealer-for-food-storage-hhc-3763973
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/968759402e07bb5eff6423df0e9f0b31.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/968759402e07bb5eff6423df0e9f0b31.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/1969432c3a9d2f0e0c448b0bda58bdb4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/cde07f411b995e00b5224ceadd932fb5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/18/1007da0b58aa604d47564ccba7939de9.jpg
 Meta Title: Portable Mini Bag Sealer - Handheld Heat Sealer for Food Storage | B
 Meta Description: Buy Portable Mini Bag Sealer - Handheld Heat Sealer for Food Storage online in Pakistan from ASM VEO. Portable Rechargeable Mini Sealer For Plastic Bags | Handh
 Description: Portable Rechargeable Mini Sealer For Plastic Bags | Handheld Heat Sealing Machine
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

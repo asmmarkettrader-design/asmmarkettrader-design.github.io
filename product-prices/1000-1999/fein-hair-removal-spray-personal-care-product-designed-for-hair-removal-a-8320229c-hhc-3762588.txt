@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fein Hair Removal Spray - Personal Care Product Designed For Hair Removal And Skin Maintenance Routine - 150ML
 Product ID: hhc-3762588
 SKU: hhc-3762588
@@ -7,11 +8,16 @@ Slug: fein-hair-removal-spray-personal-care-product-designed-for-hair-removal-83
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/fd764814f6b7ba79e0e77f6821d26df5.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/fd764814f6b7ba79e0e77f6821d26df5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/3b2ff56214a0d945c11b8da22e416b9d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/25/6d4b529a10ebf626faee91ad50ed7511.jpeg
 Meta Title: Fein Hair Removal Spray - Personal Care Product Designed For Hair Re
 Meta Description: Buy Fein Hair Removal Spray - Personal Care Product Designed For Hair Removal And Skin Maintenance Routine - 150ML online in Pakistan from ASM VEO. The Fein Hai
 Description: The Fein Hair Removal Spray Is A Personal Care Product Formulated To Help Provide Hair Removal And Skin Maintenance During Daily Use.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

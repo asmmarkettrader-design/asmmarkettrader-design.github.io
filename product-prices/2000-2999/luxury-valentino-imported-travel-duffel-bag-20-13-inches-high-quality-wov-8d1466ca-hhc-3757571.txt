@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury Valentino Imported Travel Duffel Bag (20 × 13 Inches) – High-Quality Woven Texture Handbag | Premium Large Capacity Weekender Bag (without box)
 Product ID: hhc-3757571
 SKU: hhc-3757571
@@ -7,11 +8,16 @@ Slug: luxury-valentino-imported-travel-duffel-bag-20-13-inches-high-quality-w-8d
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4e764c2c9427123a58c1cb4d2bb18efb.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4e764c2c9427123a58c1cb4d2bb18efb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/b72dbd562f099b0a4cb91760e0fc1167.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/c600ac7dc143b5b81b1862798cf961e7.mp4
 Meta Title: Luxury Valentino Imported Travel Duffel Bag (20 × 13 Inches) – High-
 Meta Description: Buy Luxury Valentino Imported Travel Duffel Bag (20 × 13 Inches) – High-Quality Woven Texture Handbag | Premium Large Capacity Weekender Bag (without box) onlin
 Description: Experience ultimate luxury with this Valentino imported high-quality travel bag (20 × 13 inches). Featuring a sophisticated woven texture and premium gold-tone accents, this spacious black bag combines high-end fashion with practical durability, making it the perfect choice for stylish travelers.
-Regular Price: 5955
-Sale Price: 5955
+Wholesale Price: 5955
+Regular Price: 9900
+Sale Price: 7922
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

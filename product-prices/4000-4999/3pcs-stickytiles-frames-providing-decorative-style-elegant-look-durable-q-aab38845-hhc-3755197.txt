@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Stickytiles Frames Providing Decorative Style Elegant Look Durable Quality Home Decoration
 Product ID: hhc-3755197
 SKU: hhc-3755197
@@ -7,11 +8,16 @@ Slug: 3pcs-stickytiles-frames-providing-decorative-style-elegant-look-durable-aa
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/32cfa552d8d072737f29528bcf6683a6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/32cfa552d8d072737f29528bcf6683a6.jpeg
 Meta Title: 3pcs Stickytiles Frames Providing Decorative Style Elegant Look Dura
 Meta Description: Buy 3pcs Stickytiles Frames Providing Decorative Style Elegant Look Durable Quality Home Decoration online in Pakistan from ASM VEO. 3pcs Stickytiles Frames Off
 Description: 3pcs Stickytiles Frames Offering Decorative Style Elegant Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

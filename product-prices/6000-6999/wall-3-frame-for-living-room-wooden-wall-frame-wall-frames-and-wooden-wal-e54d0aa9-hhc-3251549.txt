@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wall 3 frame for living room wooden wall frame wall frames and wooden wall art (material mdf)
 Product ID: hhc-3251549
 SKU: hhc-3251549
@@ -7,11 +8,16 @@ Slug: wall-3-frame-for-living-room-wooden-wall-frame-wall-frames-and-wooden-w-e5
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/bb3de0c8b9a4aeb8ce4411fa4f4b32b5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/bb3de0c8b9a4aeb8ce4411fa4f4b32b5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/e59e142f3b4a480cd3163fd1e9b1a938.jpeg
 Meta Title: Wall 3 frame for living room wooden wall frame wall frames and woode
 Meta Description: Buy Wall 3 frame for living room wooden wall frame wall frames and wooden wall art (material mdf) online in Pakistan from ASM VEO. Wall frame for room decoratio
 Description: Wall frame for room decoration Material : Wooden Board and Photopaper Size : 11 inches height and 8 Inches wide You can also send any picture of your choice Frames are stickable you can easily stick them on wall [video width="848" height="478"
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Orthopedic Memory Foam Donut Ring Seat Cushion – Coccyx & Tailbone Pain Relief Chair Cushion for Office Chair, Car Seat, Wheelchair, Pregnancy & Hemorrhoid Support
 Product ID: hhc-3763082
 SKU: hhc-3763082
@@ -7,11 +8,16 @@ Slug: orthopedic-memory-foam-donut-ring-seat-cushion-coccyx-tailbone-pain-rel-1a
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/7322f8a09f0109d02dd5ecedb6230549.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/7322f8a09f0109d02dd5ecedb6230549.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/c904b9c46baaa84a1c9df045f448e6c1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/35e0232e15d433dcd370ad5a62504463.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/01/cec5558d19f1e9a657147fdcb88bfab8.webp
 Meta Title: Orthopedic Memory Foam Donut Ring Seat Cushion – Coccyx & Tailbone P
 Meta Description: Buy Orthopedic Memory Foam Donut Ring Seat Cushion – Coccyx & Tailbone Pain Relief Chair Cushion for Office Chair, Car Seat, Wheelchair, Pregnancy & Hemorrhoid
 Description: Enjoy superior comfort with this Orthopedic Memory Foam Donut Ring Cushion. Designed to reduce pressure on the tailbone, hips, and lower back, it provides excellent support for long sitting hours. Ideal for office workers, drivers, students, pregnant women, seniors, and people recovering
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

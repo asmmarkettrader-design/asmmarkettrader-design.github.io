@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Escape – Impression of Hugo Boss Bottled | Woody Spicy Extrait de Parfum for Men | 50ml with Premium Box & Carry Bag
 Product ID: hhc-3761519
 SKU: hhc-3761519
 Slug: escape-impression-of-hugo-boss-bottled-woody-spicy-extrait-de-parfum-fo-02f392a0-hhc-3761519
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/dac5eaffc66e294f42c35416bfab0996.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/dac5eaffc66e294f42c35416bfab0996.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/3994de71b2d6d623b31220b5da1791b8.png
 Meta Title: Escape – Impression of Hugo Boss Bottled | Woody Spicy Extrait de Pa
 Meta Description: Buy Escape – Impression of Hugo Boss Bottled | Woody Spicy Extrait de Parfum for Men | 50ml with Premium Box & Carry Bag online in Pakistan from ASM VEO. Discov
 Description: Discover the refined character of Escape, inspired by Hugo Boss Bottled. This long-lasting Extrait de Parfum combines crisp apple, warm cinnamon, and smooth woody notes to create a timeless masculine fragrance. Comes with a premium box and carry bag, making it perfect for everyday wear or gifting.
-Regular Price: 3993
-Sale Price: 3993
+Wholesale Price: 2852
+Regular Price: 5040
+Sale Price: 4030
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

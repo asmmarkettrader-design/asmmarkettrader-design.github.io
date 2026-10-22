@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ear Cleaner,The Most Professional Ear Cleaning Master Ear Cleaning Kit,Ear Cleaner Earwax Removal Tools with Pu Leather Case
 Product ID: hhc-3753709
 SKU: hhc-3753709
@@ -7,11 +8,16 @@ Slug: ear-cleaner-the-most-professional-ear-cleaning-master-ear-cleaning-kit-537
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/29b8d876da87bcbf1a1090ffc4d7700b.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/29b8d876da87bcbf1a1090ffc4d7700b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/54aceee9c33cb9881687012fec4c12cb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/66d9c736737cb9bc6b783454ffc33ee0.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/078daeceb4e7a8d8be296c2a76c0c3f5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/44f0779c6772b754f58be4beea9b297c.jpg
 Meta Title: Ear Cleaner,The Most Professional Ear Cleaning Master Ear Cleaning K
 Meta Description: Buy Ear Cleaner,The Most Professional Ear Cleaning Master Ear Cleaning Kit,Ear Cleaner Earwax Removal Tools with Pu Leather Case online in Pakistan from ASM VEO
 Description: Ergonomic Handle and Groove Design: The threaded design prevents it slipping during use; Comfortable to hold, helping you to easily clean the earwax; Fully polished tool with a smooth and round surface that will not harm your ear canal.Ergonomic Handle and Groove Design: The threaded design prevents
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

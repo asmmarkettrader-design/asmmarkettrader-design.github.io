@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Elixovia Vitamin C Plus Face Serum – Brightening & Hydrating Formula with Alpha Arbutin, Glutathione & Hyaluronic Acid (30ml)
 Product ID: hhc-3752799
 SKU: hhc-3752799
@@ -7,11 +8,16 @@ Slug: elixovia-vitamin-c-plus-face-serum-brightening-hydrating-formula-with-a-2b
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/d45f4fc9b0a7aacd984e991ef9ea208e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/d45f4fc9b0a7aacd984e991ef9ea208e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/b2eb84260852d26eb135d8d7d49022f0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/d8b26ec70cc19b5887e2e216c6048a64.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/16/445061be0b25800ba8ead80f039ce02f.jpeg
 Meta Title: Elixovia Vitamin C Plus Face Serum – Brightening & Hydrating Formula
 Meta Description: Buy Elixovia Vitamin C Plus Face Serum – Brightening & Hydrating Formula with Alpha Arbutin, Glutathione & Hyaluronic Acid (30ml) online in Pakistan from ASM VE
 Description: Reveal radiant, hydrated skin with Elixovia Vitamin C Plus Face Serum. Powered by Alpha Arbutin, Glutathione, and Hyaluronic Acid, this 30ml serum targets dark spots, boosts glow, and locks in moisture.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

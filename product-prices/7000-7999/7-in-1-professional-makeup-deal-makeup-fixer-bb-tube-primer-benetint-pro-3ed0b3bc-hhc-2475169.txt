@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 In 1 Professional Makeup Deal - Makeup Fixer, BB Tube,  Primer,  Benetint, Pro Concealer, Mascara, Liner
 Product ID: hhc-2475169
 SKU: hhc-2475169
@@ -7,11 +8,16 @@ Slug: 7-in-1-professional-makeup-deal-makeup-fixer-bb-tube-primer-benetint-pr-3e
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-11.57.43-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-11.57.43-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-11.57.42-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-11.57.42-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-11.57.41-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-15-at-11.57.41-PM.jpeg
 Meta Title: 7 In 1 Professional Makeup Deal - Makeup Fixer, BB Tube, Primer, Ben
 Meta Description: Buy 7 In 1 Professional Makeup Deal - Makeup Fixer, BB Tube, Primer, Benetint, Pro Concealer, Mascara, Liner online in Pakistan from ASM VEO. Package Includes:1
 Description: Package Includes:1 x Makeup Fixer 1 x BB Tube 1 x Primer 1 x Benetint 1 x Pro Concealer 1 x Mascara 1 x Liner
-Regular Price: 1371
-Sale Price: 1371
+Wholesale Price: 1321
+Regular Price: 2420
+Sale Price: 1936
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

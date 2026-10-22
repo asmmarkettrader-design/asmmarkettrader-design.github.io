@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bare Anatomy Rosemary Water Spray for Hair Growth & Thickness with Rice Water – 200ml
 Product ID: hhc-3756873
 SKU: hhc-3756873
@@ -7,11 +8,16 @@ Slug: bare-anatomy-rosemary-water-spray-for-hair-growth-thickness-with-rice-w-8f
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/c462537c82e51ea152d8ef545b824aff.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/c462537c82e51ea152d8ef545b824aff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/bf2d82de9928c487fefa658161421292.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/cdadcf23db1e1847cb4ef0097d982278.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/10/af09e20ad71228800e4ed50780ab3fef.jpeg
 Meta Title: Bare Anatomy Rosemary Water Spray for Hair Growth & Thickness with R
 Meta Description: Buy Bare Anatomy Rosemary Water Spray for Hair Growth & Thickness with Rice Water – 200ml online in Pakistan from ASM VEO. Bare Anatomy Rosemary Water Spray hel
 Description: Bare Anatomy Rosemary Water Spray helps promote hair growth and thickness with the power of Rosemary and Rice Water. It nourishes the scalp, strengthens hair roots, and supports healthier, fuller-looking hair. Suitable for daily hair care.
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

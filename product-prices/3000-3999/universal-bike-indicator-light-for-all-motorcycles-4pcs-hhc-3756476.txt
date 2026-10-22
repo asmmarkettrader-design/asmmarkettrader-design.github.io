@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Bike Indicator Light for All Motorcycles 4pcs
 Product ID: hhc-3756476
 SKU: hhc-3756476
@@ -7,11 +8,16 @@ Slug: universal-bike-indicator-light-for-all-motorcycles-4pcs-hhc-3756476
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/06b9827b1b21cce4d5a0ea2da206c492.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/06b9827b1b21cce4d5a0ea2da206c492.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/858e82e22c6feb9074981e9793216da9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/83849090c69e188526415fdff569d75b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/88b9a0871e933b932e2492fc97f22330.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/d3b3e88da2e1a0b6e0a0ffb6db463b64.jpeg
 Meta Title: Universal Bike Indicator Light for All Motorcycles 4pcs | Buy Online
 Meta Description: Buy Universal Bike Indicator Light for All Motorcycles 4pcs online in Pakistan from ASM VEO. A durable and high-visibility indicator light designed to fit all t
 Description: A durable and high-visibility indicator light designed to fit all types of bikes, ensuring safer turns and a stylish look on every ride.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Digital Kitchen Weight Scale | 10 kg Capacity | Measures in g & oz | Without LED
 Product ID: hhc-3755425
 SKU: hhc-3755425
@@ -7,11 +8,16 @@ Slug: digital-kitchen-weight-scale-10-kg-capacity-measures-in-g-oz-without-led-h
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/007d011af58bf4eb412408faddb50223.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/007d011af58bf4eb412408faddb50223.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/bcec5f0bde957e946c1087b6be4f8950.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/53aeb08b03e40f361019f75b5168828a.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/074586dc8a5d9285ab23464c2032c850.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/4fa69134e776b4da20b6135446f1c5e0.jpeg
 Meta Title: Digital Kitchen Weight Scale | 10 kg Capacity | Measures in g & oz |
 Meta Description: Buy Digital Kitchen Weight Scale | 10 kg Capacity | Measures in g & oz | Without LED online in Pakistan from ASM VEO. Digital kitchen weight scale without LED.
 Description: Digital kitchen weight scale without LED. Capacity up to 10 kg. Displays in grams (g) and ounces (oz).
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

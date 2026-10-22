@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 4 Stylized Automotive Canvas Prints | Wooden Sticky Wall Tiles | 8x16" & 8x11" | Double Tape Included
 Product ID: hhc-3755886
 SKU: hhc-3755886
@@ -7,11 +8,16 @@ Slug: set-of-4-stylized-automotive-canvas-prints-wooden-sticky-wall-tiles-8x1-c5
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/17/edf533199e4c013dd7055db30db18d95.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/17/edf533199e4c013dd7055db30db18d95.jpeg
 Meta Title: Set of 4 Stylized Automotive Canvas Prints | Wooden Sticky Wall Tile
 Meta Description: Buy Set of 4 Stylized Automotive Canvas Prints | Wooden Sticky Wall Tiles | 8x16" & 8x11" | Double Tape Included online in Pakistan from ASM VEO. Pack of 4 canv
 Description: Pack of 4 canvas prints featuring stylized automotive artwork. Wooden sticky tiles with easy wall pasting.
-Regular Price: 909
-Sale Price: 909
+Wholesale Price: 859
+Regular Price: 1630
+Sale Price: 1306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

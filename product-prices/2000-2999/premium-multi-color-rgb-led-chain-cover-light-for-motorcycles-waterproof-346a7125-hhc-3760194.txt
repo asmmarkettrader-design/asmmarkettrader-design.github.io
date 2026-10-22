@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Multi Color RGB LED Chain Cover Light For Motorcycles Waterproof Flexible Strip Light 45CM
 Product ID: hhc-3760194
 SKU: hhc-3760194
@@ -7,11 +8,16 @@ Slug: premium-multi-color-rgb-led-chain-cover-light-for-motorcycles-waterproo-34
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/28a02bd2569d48a7cec9e1d66a1fb4a9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/28a02bd2569d48a7cec9e1d66a1fb4a9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/f1e88ac91daf1214cf30733f86edd529.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/a2154ac314a5dbd6b80cc7936a163d17.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/88b92713606c97f4c671eb1513197316.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/67fda38ddfee8464227c5e2d502c9c95.jpeg
 Meta Title: Premium Multi Color RGB LED Chain Cover Light For Motorcycles Waterp
 Meta Description: Buy Premium Multi Color RGB LED Chain Cover Light For Motorcycles Waterproof Flexible Strip Light 45CM online in Pakistan from ASM VEO. Premium Multi Color RGB
 Description: Premium Multi Color RGB LED Chain Cover Light Waterproof Flexible Strip 45CM For Motorcycle Decoration.
-Regular Price: 361
-Sale Price: 361
+Wholesale Price: 311
+Regular Price: 676
+Sale Price: 526
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

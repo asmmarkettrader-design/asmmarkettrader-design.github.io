@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bia Aqua Exfoliating Gel – Original China, 110ML
 Product ID: hhc-3752321
 SKU: hhc-3752321
@@ -7,11 +8,16 @@ Slug: bia-aqua-exfoliating-gel-original-china-110ml-hhc-3752321
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/7fa06db5234904864a57e64c0e25502d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/7fa06db5234904864a57e64c0e25502d.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/19/f0cb8f824dd45337aa589975b48c4bf0.png
 Meta Title: Bia Aqua Exfoliating Gel – Original China, 110ML | Buy Online in Pak
 Meta Description: Buy Bia Aqua Exfoliating Gel – Original China, 110ML online in Pakistan from ASM VEO. Reveal fresh, smooth, and radiant skin with Bia Aqua Exfoliating Gel. Spec
 Description: Reveal fresh, smooth, and radiant skin with Bia Aqua Exfoliating Gel. Specially formulated in China, this gentle exfoliator effectively removes dead skin cells, excess oil, and impurities without causing irritation. Its lightweight gel texture deeply cleanses pores, enhances skin clarity, and promote
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

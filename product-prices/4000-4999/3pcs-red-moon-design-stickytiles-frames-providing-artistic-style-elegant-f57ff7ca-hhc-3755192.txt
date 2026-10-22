@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3pcs Red Moon Design Stickytiles Frames Providing Artistic Style Elegant Look Modern Appearance
 Product ID: hhc-3755192
 SKU: hhc-3755192
@@ -7,11 +8,16 @@ Slug: 3pcs-red-moon-design-stickytiles-frames-providing-artistic-style-elegan-f5
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/127872859c2817ff8a44fb5b5049a04c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/127872859c2817ff8a44fb5b5049a04c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/1a7e6266f152de88d67a27ce342fec5c.jpeg
 Meta Title: 3pcs Red Moon Design Stickytiles Frames Providing Artistic Style Ele
 Meta Description: Buy 3pcs Red Moon Design Stickytiles Frames Providing Artistic Style Elegant Look Modern Appearance online in Pakistan from ASM VEO. 3pcs Red Moon Design Sticky
 Description: 3pcs Red Moon Design Stickytiles Frames Offering Artistic Style Elegant Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 586
-Sale Price: 586
+Wholesale Price: 536
+Regular Price: 1050
+Sale Price: 837
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

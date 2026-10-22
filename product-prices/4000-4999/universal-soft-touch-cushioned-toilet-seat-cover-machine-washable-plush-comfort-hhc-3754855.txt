@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Soft-Touch Cushioned Toilet Seat Cover – Machine Washable Plush Comfort
 Product ID: hhc-3754855
 SKU: hhc-3754855
@@ -7,11 +8,16 @@ Slug: universal-soft-touch-cushioned-toilet-seat-cover-machine-washable-plush-co
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
-Meta Title: Universal Soft-Touch Cushioned Toilet Seat Cover – Machine Washable
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/4d831bfd872c855602d07093416da680.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/4d831bfd872c855602d07093416da680.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/e9bc2b4a474417a2ee42781e6cca14f0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/d6c45df3ab288e97004d4e70e6aed2ba.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/deab86929dfebe2b07ca29342cd3fd72.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/2e9775242751b782347706cb77fe32e1.jpg
+Meta Title: Universal Soft-Touch Cushioned Toilet Seat Cover – Machine Washable 
 Meta Description: Buy Universal Soft-Touch Cushioned Toilet Seat Cover – Machine Washable Plush Comfort online in Pakistan from ASM VEO. Upgrade your bathroom experience with thi
 Description: Upgrade your bathroom experience with this ultra-soft, padded toilet seat cover. Designed for warmth and comfort, this elasticized cover fits most standard round and oval toilets, providing a cozy barrier against cold surfaces and adding a touch of color to your bathroom décor.
-Regular Price: 362
-Sale Price: 362
+Wholesale Price: 312
+Regular Price: 678
+Sale Price: 528
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

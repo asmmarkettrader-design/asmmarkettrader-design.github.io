@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flormar 2-In-1 Mascara & Eyeliner | Volumizing Lashes & Precise Eye Definition
 Product ID: hhc-3754958
 SKU: hhc-3754958
@@ -7,11 +8,16 @@ Slug: flormar-2-in-1-mascara-eyeliner-volumizing-lashes-precise-eye-definition-h
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/7d20a225286dcf30dbeb542ae6379119.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/7d20a225286dcf30dbeb542ae6379119.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/d422219b844657d5397b4ec1e1033899.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/0b29f914ec69bb09fb2d2c326a179740.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/29/c6938a36c77ac9fef6c34697a1caf63d.jpeg
 Meta Title: Flormar 2-In-1 Mascara & Eyeliner | Volumizing Lashes & Precise Eye
 Meta Description: Buy Flormar 2-In-1 Mascara & Eyeliner | Volumizing Lashes & Precise Eye Definition online in Pakistan from ASM VEO. Flormar 2-In-1 Mascara Liner combines a volu
 Description: Flormar 2-In-1 Mascara Liner combines a volumizing mascara and precision eyeliner in one convenient product. Designed to define eyes effortlessly, it delivers bold lashes and sharp lines for a flawless, long-lasting look.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

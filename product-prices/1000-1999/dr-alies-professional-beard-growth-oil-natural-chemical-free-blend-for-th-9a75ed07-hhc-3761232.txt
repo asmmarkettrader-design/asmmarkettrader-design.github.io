@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dr Alies Professional Beard Growth Oil Natural Chemical Free Blend For Thicker Stronger Beard Growth | 30ml
 Product ID: hhc-3761232
 SKU: hhc-3761232
@@ -7,11 +8,16 @@ Slug: dr-alies-professional-beard-growth-oil-natural-chemical-free-blend-for-9a7
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/166d422c31824e4187320e9f90e407d0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/166d422c31824e4187320e9f90e407d0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/d7fb72ed1cd0ef7904f12de2b048fc52.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/f96381ec3fa69783645e78e3f68b6193.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/73d44253177a999987a35a8caa6d577c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/01/d01cc6f937db01d129234a781835ade3.jpeg
 Meta Title: Dr Alies Professional Beard Growth Oil Natural Chemical Free Blend F
 Meta Description: Buy Dr Alies Professional Beard Growth Oil Natural Chemical Free Blend For Thicker Stronger Beard Growth | 30ml online in Pakistan from ASM VEO. Dr Alies Profes
 Description: Dr Alies Professional Beard Growth Oil Natural Chemical Free Blend Promotes Thicker Beard Growth With Nourishing Care.
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Crazy Girl - Bottle Shape Tinted Jelly Lip Oil | Moisturizing tinted lip gloss (Pink Shade)
 Product ID: hhc-2836402
 SKU: hhc-2836402
@@ -7,11 +8,16 @@ Slug: crazy-girl-bottle-shape-tinted-jelly-lip-oil-moisturizing-tinted-lip-gl-74
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-3.03.27-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-3.03.27-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-05-at-3.03.26-PM.jpeg
 Meta Title: Crazy Girl - Bottle Shape Tinted Jelly Lip Oil | Moisturizing tinted
 Meta Description: Buy Crazy Girl - Bottle Shape Tinted Jelly Lip Oil | Moisturizing tinted lip gloss (Pink Shade) online in Pakistan from ASM VEO. Crazy Girl - Bottle Shape Tinte
 Description: Crazy Girl - Bottle Shape Tinted Jelly Lip Oil | moisturizing tinted lip gloss Indulge in the perfect combination of cuteness and convenience with our Yummy Bottle Shape Tinted Jelly Lip Oil! This moisturizing tinted lip gloss will keep your lips hydrated and shining all day long. You won't want to leave the house without it! Material: Liquid Product Type: color changing lip oil shiny Shade:shades of pink Package Includes: 2 x Lip Gloss [video width="476" height="848" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Video-2025-03-05-at-3.03.31-PM.mp4"][/video]
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Handle Grip Switch for Bike (1pcs)
 Product ID: hhc-2478854
 SKU: hhc-2478854
@@ -7,11 +8,16 @@ Slug: handle-grip-switch-for-bike-1pcs-hhc-2478854
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/24344a7ec04724f37dab412080d049c9.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/24344a7ec04724f37dab412080d049c9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/83adc15d4c28c3e85130165d668399e2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/031c490d97397df39919f6ed73015bae.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/12/WhatsApp-Image-2024-12-17-at-4.20.13-PM.jpeg
 Meta Title: Handle Grip Switch for Bike (1pcs) | Buy Online in Pakistan
 Meta Description: Buy Handle Grip Switch for Bike (1pcs) online in Pakistan from ASM VEO. Description: Age Preferred: 5+year Material : plastic Main functions. HEADLIGHTS switch
 Description: Description: Age Preferred: 5+year Material : plastic Main functions. HEADLIGHTS switch for bikes Main category: Bike Sub category: Electric Item for Vehicles Weight : 50 grams Size: Standard Package Includes: 1x 1 pc Grip
-Regular Price: 306
-Sale Price: 306
+Wholesale Price: 256
+Regular Price: 594
+Sale Price: 444
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

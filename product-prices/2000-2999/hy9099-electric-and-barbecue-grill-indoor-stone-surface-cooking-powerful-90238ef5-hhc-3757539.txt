@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HY9099 Electric And Barbecue Grill Indoor Stone Surface Cooking Powerful Food Grilling Appliance
 Product ID: hhc-3757539
 SKU: hhc-3757539
@@ -7,11 +8,16 @@ Slug: hy9099-electric-and-barbecue-grill-indoor-stone-surface-cooking-powerfu-90
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/475ef34f0c96fdadb899bed221e3e80f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/21/475ef34f0c96fdadb899bed221e3e80f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/26ec772b2766ca3be170a39d96a966f9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/abc70559f95d791a7fed257bdc0623b0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/8b11e285ac0d76d543d2076d7369acb4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/3da172e04addde505f7f5900f242a3b9.jpeg
 Meta Title: HY9099 Electric And Barbecue Grill Indoor Stone Surface Cooking Powe
 Meta Description: Buy HY9099 Electric And Barbecue Grill Indoor Stone Surface Cooking Powerful Food Grilling Appliance online in Pakistan from ASM VEO. HY9099 Electric And Barbec
 Description: HY9099 Electric And Barbecue Grill Indoor Stone Surface Cooking Appliance For Grilling And Cooking Dishes.
-Regular Price: 5675
-Sale Price: 5675
+Wholesale Price: 5675
+Regular Price: 9450
+Sale Price: 7558
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

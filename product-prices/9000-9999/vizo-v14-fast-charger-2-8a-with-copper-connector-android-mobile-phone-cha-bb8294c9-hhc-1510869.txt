@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VIZO V14 Fast Charger 2.8A With Copper Connector | Android Mobile Phone Charging Adapter with Usb Data cable
 Product ID: hhc-1510869
 SKU: hhc-1510869
@@ -7,11 +8,16 @@ Slug: vizo-v14-fast-charger-2-8a-with-copper-connector-android-mobile-phone-c-bb
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/2-12.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/2-12.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/3png.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/4-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/png-charget.png
 Meta Title: VIZO V14 Fast Charger 2.8A With Copper Connector | Android Mobile Ph
 Meta Description: Buy VIZO V14 Fast Charger 2.8A With Copper Connector | Android Mobile Phone Charging Adapter with Usb Data cable online in Pakistan from ASM VEO. Fast Charging
 Description: Fast Charging 2.8A Max Speed Copper Connector Metallic Pin 1 Meter Cable Dual USB Product Original Video [video width="474" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Video-2025-05-27-at-5.16.55-PM-1.mp4"][/video]
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 55 Litre Capacity Bag Zipper (random Colors)
 Product ID: hhc-737850
 SKU: hhc-737850
@@ -7,11 +8,16 @@ Slug: 55-litre-capacity-bag-zipper-random-colors-hhc-737850
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/storage-organizer-55-litre-in-pakistan-just-e-store-40699217707329_540x.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/storage-organizer-55-litre-in-pakistan-just-e-store-40699217707329_540x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/storage-organizer-55-litre-in-pakistan-just-e-store-40699217740097_540x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/storage-organizer-55-litre-in-pakistan-just-e-store-40699217805633_540x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/storage-organizer-55-litre-in-pakistan-just-e-store-40699217772865_540x.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/storage-organizer-55-litre-in-pakistan-just-e-store-40699217871169_540x-1.webp
 Meta Title: 55 Litre Capacity Bag Zipper (random Colors) | Buy Online in Pakista
 Meta Description: Buy 55 Litre Capacity Bag Zipper (random Colors) online in Pakistan from ASM VEO. product detailsSuitable for storing linen, blankets, clothes, laundry, toys, c
 Description: product detailsSuitable for storing linen, blankets, clothes, laundry, toys, cushions, books, etc.Material: Waterproof oxford cloth with Stable Lightweight Stainless Steel FrameworkPerfect for protect from moths, damp, mildew, and dust.Waterproof, dust and damp-proof.but Foldable.With a transparent window, easy to see inside.Easy to take the Bottom cloth.Keeps clothes and accessories tidy and organised.
-Regular Price: 1021
-Sale Price: 1021
+Wholesale Price: 971
+Regular Price: 1840
+Sale Price: 1468
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

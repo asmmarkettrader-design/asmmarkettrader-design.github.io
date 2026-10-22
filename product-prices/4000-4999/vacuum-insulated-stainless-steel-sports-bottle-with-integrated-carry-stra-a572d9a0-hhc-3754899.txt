@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Vacuum Insulated Stainless Steel Sports Bottle with Integrated Carry Strap and Leak-Proof Lid ( RANDOM COLOUR )
 Product ID: hhc-3754899
 SKU: hhc-3754899
@@ -7,11 +8,16 @@ Slug: vacuum-insulated-stainless-steel-sports-bottle-with-integrated-carry-st-a5
 Category: Travel & Outdoor
 Subcategory: Travel Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/865e4b3214302e40e0ff224120eb50df.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/865e4b3214302e40e0ff224120eb50df.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/b0695696ddb56e73430f95d88a553fd1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/4930e810906ddd275266a36f207a1d06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/baf20db69061bc7347dcd077f931ff05.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/6519f769b663c157082fa4204338ac36.jpeg
 Meta Title: Vacuum Insulated Stainless Steel Sports Bottle with Integrated Carry
 Meta Description: Buy Vacuum Insulated Stainless Steel Sports Bottle with Integrated Carry Strap and Leak-Proof Lid ( RANDOM COLOUR ) online in Pakistan from ASM VEO. Stay hydrat
 Description: Stay hydrated on the go with this high-performance, double-walled vacuum insulated sports bottle. Engineered to maintain your beverage's temperature for hours, it features a sleek metallic finish, a durable carrying loop, and a secure, leak-proof design perfect for the gym, office, or outdoor adventu
-Regular Price: 1288
-Sale Price: 1288
+Wholesale Price: 1238
+Regular Price: 2270
+Sale Price: 1818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

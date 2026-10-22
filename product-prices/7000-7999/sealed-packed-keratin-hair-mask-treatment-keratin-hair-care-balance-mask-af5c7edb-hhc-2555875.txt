@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sealed Packed | Keratin Hair Mask Treatment ,Keratin Hair Care Balance Mask And Treatment For Healthy Scalp 500ml
 Product ID: hhc-2555875
 SKU: hhc-2555875
@@ -7,11 +8,16 @@ Slug: sealed-packed-keratin-hair-mask-treatment-keratin-hair-care-balance-mas-af
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/keratin-hair-care-balance-mask-and-treatment-for-healthy-scalp-1000-ml-494829.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/keratin-hair-care-balance-mask-and-treatment-for-healthy-scalp-1000-ml-494829.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/keratin-hair-care-balance-mask-and-treatment-for-healthy-scalp-1000-ml-374925.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/keratin-hair-care-balance-mask-and-treatment-for-healthy-scalp-1000-ml-864002.webp
 Meta Title: Sealed Packed | Keratin Hair Mask Treatment ,Keratin Hair Care Balan
 Meta Description: Buy Sealed Packed | Keratin Hair Mask Treatment ,Keratin Hair Care Balance Mask And Treatment For Healthy Scalp 500ml online in Pakistan from ASM VEO. Sealed Pa
 Description: Sealed Packed | Keratin Hair Mask Treatment ,Keratin Hair Care Balance Mask And Treatment For Healthy Scalp 500ml
-Regular Price: 391
-Sale Price: 391
+Wholesale Price: 341
+Regular Price: 722
+Sale Price: 572
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

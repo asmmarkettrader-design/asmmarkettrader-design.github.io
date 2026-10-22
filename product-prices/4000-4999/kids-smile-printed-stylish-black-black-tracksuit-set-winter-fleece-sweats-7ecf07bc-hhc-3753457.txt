@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kids SMILE Printed Stylish Black & Black Tracksuit Set | Winter Fleece Sweatshirt & Trouser Outfit for Boys & Girls – Warm & Trendy FOR BABY AND KIDS
 Product ID: hhc-3753457
 SKU: hhc-3753457
@@ -7,11 +8,16 @@ Slug: kids-smile-printed-stylish-black-black-tracksuit-set-winter-fleece-swea-7e
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/5db34d27d0ebb4875408dacfb52b7c1f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/5db34d27d0ebb4875408dacfb52b7c1f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/b52c91e87682cc35f982ab298a47312f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/dc5bc8e2bb16ba787ad03018a9e9d392.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/0d72166c6126768838ec34a8717fb612.jpeg
 Meta Title: Kids SMILE Printed Stylish Black & Black Tracksuit Set | Winter Flee
 Meta Description: Buy Kids SMILE Printed Stylish Black & Black Tracksuit Set | Winter Fleece Sweatshirt & Trouser Outfit for Boys & Girls – Warm & Trendy FOR BABY AND KIDS online
 Description: Adorable SMILE printed black & black winter tracksuit for kids. Cozy fleece sweatshirt and trouser set — soft, warm, and stylish for all-day comfort.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

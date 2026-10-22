@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 8 Pieces Cute Brushes With Leather Pouch  (random color)
 Product ID: hhc-2111602
 SKU: hhc-2111602
@@ -7,11 +8,16 @@ Slug: 8-pieces-cute-brushes-with-leather-pouch-random-color-hhc-2111602
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.57.55-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.57.55-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.57.54-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-30-at-1.57.54-PM-1.jpeg
 Meta Title: 8 Pieces Cute Brushes With Leather Pouch (random color) | Buy Online
 Meta Description: Buy 8 Pieces Cute Brushes With Leather Pouch (random color) online in Pakistan from ASM VEO. Cute Brushes With Leather Pouch • Material: Plastic • No. of Pieces
 Description: Cute Brushes With Leather Pouch • Material: Plastic • No. of Pieces: 08 • Package Includes: 8 x Makeup Brushes • Color: Random • Disclaimer: Before using a new cosmetic product, conduct a test on a small area of your skin. If you have a specific allergy or sensitivity, check the ingredients to avoid a reaction. Always read the warning labels and directions on the package for using any cosmetic products.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

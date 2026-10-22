@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ( Pack of 2 ) Waterproof Mascara &amp; Liner Deal,
 Product ID: hhc-1932845
 SKU: hhc-1932845
@@ -7,11 +8,16 @@ Slug: pack-of-2-waterproof-mascara-amp-liner-deal-hhc-1932845
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-6.08.54-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-6.08.54-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-6.08.53-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-6.07.56-PM.jpeg
 Meta Title: ( Pack of 2 ) Waterproof Mascara &amp; Liner Deal, | Buy Online in P
 Meta Description: Buy ( Pack of 2 ) Waterproof Mascara &amp; Liner Deal, online in Pakistan from ASM VEO. Waterproof Mascara &amp; Liner Deal, Pack of 2 Material: Liquid Package
 Description: Waterproof Mascara &amp; Liner Deal, Pack of 2 Material: Liquid Package Includes: 1 × Mascara, 1 × Eyeliner [video width="480" height="480" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Video-2025-07-12-at-4.18.50-PM.mp4"][/video]
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

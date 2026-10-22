@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Hot Cold Coffee Mug With Air Tight Lid (random color)
 Product ID: hhc-2225758
 SKU: hhc-2225758
@@ -7,11 +8,16 @@ Slug: stainless-steel-hot-cold-coffee-mug-with-air-tight-lid-random-color-hhc-22
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/hotncold-stainless-steel-airtight-coffee-mug-648680.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/hotncold-stainless-steel-airtight-coffee-mug-648680.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/hotncold-stainless-steel-airtight-coffee-mug-309696.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/hotncold-stainless-steel-airtight-coffee-mug-229894.jpg
 Meta Title: Stainless Steel Hot Cold Coffee Mug With Air Tight Lid (random color
 Meta Description: Buy Stainless Steel Hot Cold Coffee Mug With Air Tight Lid (random color) online in Pakistan from ASM VEO. stainless steel insulation for exceptional temperatur
 Description: stainless steel insulation for exceptional temperature retentionAir-tight lid for leak-proof performance and freshnessComfortable handle for easy carryingPerfect for hot or cold beveragesDurable and easy to clean
-Regular Price: 866
-Sale Price: 866
+Wholesale Price: 816
+Regular Price: 1550
+Sale Price: 1243
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

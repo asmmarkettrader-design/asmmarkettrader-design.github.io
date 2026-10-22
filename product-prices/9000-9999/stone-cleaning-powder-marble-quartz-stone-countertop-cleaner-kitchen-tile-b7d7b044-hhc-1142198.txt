@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stone cleaning powder Marble quartz stone countertop cleaner kitchen tile strong decontamination powder renovation polishing
 Product ID: hhc-1142198
 SKU: hhc-1142198
@@ -7,11 +8,16 @@ Slug: stone-cleaning-powder-marble-quartz-stone-countertop-cleaner-kitchen-ti-b7
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/802135a3-aa52-4a29-b62a-aaa7865ea04d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/802135a3-aa52-4a29-b62a-aaa7865ea04d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/9ae8f807-f728-42b2-8a27-72a5b72ed5ff.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/132abcbe-09a6-4863-a243-a4cf9065094c.jpeg
 Meta Title: Stone cleaning powder Marble quartz stone countertop cleaner kitchen
 Meta Description: Buy Stone cleaning powder Marble quartz stone countertop cleaner kitchen tile strong decontamination powder renovation polishing online in Pakistan from ASM VEO
 Description: Stone cleaning powder Marble quartz stone countertop cleaner kitchen tile strong decontamination powder renovation polishing1142198
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

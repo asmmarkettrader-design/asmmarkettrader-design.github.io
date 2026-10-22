@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Shrink wrap  Width 12 (inch)
 Product ID: hhc-708373
 SKU: hhc-708373
@@ -7,11 +8,16 @@ Slug: shrink-wrap-width-12-inch-hhc-708373
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.20.26-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.20.26-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-1.20.25-PM.jpeg
 Meta Title: Shrink wrap Width 12 (inch) | Buy Online in Pakistan
 Meta Description: Buy Shrink wrap Width 12 (inch) online in Pakistan from ASM VEO. Shrink wrap Width 12 (inch) Cash on Delivery, Rs 180 standard delivery, and easy returns.
 Description: Shrink wrap Width 12 (inch)
-Regular Price: 811
-Sale Price: 811
+Wholesale Price: 761
+Regular Price: 1450
+Sale Price: 1163
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

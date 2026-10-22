@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dymatize Super Mass Gainer Rich Chocolate Flavor High Calorie Protein Powder For Muscle Growth And Recovery 1 Kg
 Product ID: hhc-3760794
 SKU: hhc-3760794
@@ -7,11 +8,16 @@ Slug: dymatize-super-mass-gainer-rich-chocolate-flavor-high-calorie-protein-p-c3
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/576128ef2c72297d587027ecc3ef78b1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/576128ef2c72297d587027ecc3ef78b1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/6c5a3e5e26c0feb1995e63fd3e10d9db.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/7872014437ae4c29907a2c0b22118632.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/b5e253dd5d0af6c57cdf01316b1de7b4.jpeg
 Meta Title: Dymatize Super Mass Gainer Rich Chocolate Flavor High Calorie Protei
 Meta Description: Buy Dymatize Super Mass Gainer Rich Chocolate Flavor High Calorie Protein Powder For Muscle Growth And Recovery 1 Kg online in Pakistan from ASM VEO. Dymatize S
 Description: Dymatize Super Mass Gainer Rich Chocolate Flavor High Calorie Protein Powder Designed For Muscle Growth Strength And Recovery.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 10 In 1 Lipstick Blush Palette - Multi Functional High Pigmented Creamy Material Makeup Collection Kit For Beautiful Lips And Cheeks (Random Shades)
 Product ID: hhc-3761526
 SKU: hhc-3761526
@@ -7,11 +8,16 @@ Slug: 10-in-1-lipstick-blush-palette-multi-functional-high-pigmented-creamy-m-56
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/bb1304109e3940d67a3bcd0ed435ebb1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/bb1304109e3940d67a3bcd0ed435ebb1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/19ee523930b683fa878b7b984e16306c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/1149c14438c73ea4f34cff5518e86ab1.jpeg
 Meta Title: 10 In 1 Lipstick Blush Palette - Multi Functional High Pigmented Cre
 Meta Description: Buy 10 In 1 Lipstick Blush Palette - Multi Functional High Pigmented Creamy Material Makeup Collection Kit For Beautiful Lips And Cheeks (Random Shades) online
 Description: A Versatile Ten In One Makeup Palette Featuring A Smooth Creamy Material Formulation For Easy Application On Both Lips And Cheeks.
-Regular Price: 922
-Sale Price: 922
+Wholesale Price: 872
+Regular Price: 1660
+Sale Price: 1324
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

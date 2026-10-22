@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Wash Brush & Scalp Massage Comb – Anti-Dandruff Silicone Shampoo Brush | Deep Scalp Cleanser, Hair Growth Massager, Anti-Itch & Anti-Hair Fall Tool | Random Color
 Product ID: hhc-3756283
 SKU: hhc-3756283
@@ -7,11 +8,16 @@ Slug: hair-wash-brush-scalp-massage-comb-anti-dandruff-silicone-shampoo-brush-3e
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/a2647351ba35bbbeef2f82362cec0d05.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/a2647351ba35bbbeef2f82362cec0d05.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/3115e1a060f5ab6be234e989984766b3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/128edbacb4a609d3cd5496db5cc70022.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/449008ef28a9f139434feb318e42e0e9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/11/2dfe01baa53b1d6d441abbac2554266d.png
 Meta Title: Hair Wash Brush & Scalp Massage Comb – Anti-Dandruff Silicone Shampo
 Meta Description: Buy Hair Wash Brush & Scalp Massage Comb – Anti-Dandruff Silicone Shampoo Brush | Deep Scalp Cleanser, Hair Growth Massager, Anti-Itch & Anti-Hair Fall Tool | R
 Description: Upgrade your haircare routine with this soft silicone Hair Wash Brush & Scalp Massage Comb. Designed to deeply cleanse the scalp, reduce dandruff, control hair fall, and promote healthy hair growth — all while giving you a relaxing scalp massage.
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

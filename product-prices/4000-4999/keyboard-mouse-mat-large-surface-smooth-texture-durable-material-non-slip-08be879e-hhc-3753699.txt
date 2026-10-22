@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Keyboard Mouse Mat Large Surface Smooth Texture Durable Material Non Slip Base Comfortable Daily Use
 Product ID: hhc-3753699
 SKU: hhc-3753699
@@ -7,11 +8,16 @@ Slug: keyboard-mouse-mat-large-surface-smooth-texture-durable-material-non-sl-08
 Category: Electronics
 Subcategory: Computers & Laptops
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/31387a46fde95cae62cc4700424b31dc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/31387a46fde95cae62cc4700424b31dc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/ca84347431116ec18cc4c76ba74fef78.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/b44afeaa935c2afa84a01878fb96806e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/0441217f0c05835af10336a0f0228891.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/307a70e5cfb5f1e61db99285ff145ffc.jpg
 Meta Title: Keyboard Mouse Mat Large Surface Smooth Texture Durable Material Non
 Meta Description: Buy Keyboard Mouse Mat Large Surface Smooth Texture Durable Material Non Slip Base Comfortable Daily Use online in Pakistan from ASM VEO. Keyboard Mouse Mat Pro
 Description: Keyboard Mouse Mat Provides Large Surface With Smooth Texture And Durable Material
-Regular Price: 726
-Sale Price: 726
+Wholesale Price: 676
+Regular Price: 1300
+Sale Price: 1040
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

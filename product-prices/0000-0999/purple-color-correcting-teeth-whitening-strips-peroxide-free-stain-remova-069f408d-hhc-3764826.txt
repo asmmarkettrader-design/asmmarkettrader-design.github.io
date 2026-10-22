@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Purple Color-Correcting Teeth Whitening Strips – Peroxide-Free Stain Removal & Instant Smile Brightening Set
 Product ID: hhc-3764826
 SKU: hhc-3764826
@@ -7,11 +8,16 @@ Slug: purple-color-correcting-teeth-whitening-strips-peroxide-free-stain-remo-06
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7d01766646bef99aa3ea53aa4df0e2f2.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/7d01766646bef99aa3ea53aa4df0e2f2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/e18a8159b1fa76aefc665566de8242b3.jpg
 Meta Title: Purple Color-Correcting Teeth Whitening Strips – Peroxide-Free Stain
 Meta Description: Buy Purple Color-Correcting Teeth Whitening Strips – Peroxide-Free Stain Removal & Instant Smile Brightening Set online in Pakistan from ASM VEO. Achieve a visi
 Description: Achieve a visibly brighter smile without enamel damage or gum sensitivity using Purple Teeth Whitening Strips. Utilizing advanced color-correcting technology (V34 color wheel theory), these deep-purple strips counter yellow undertones in your teeth to deliver an instantly whiter look.
-Regular Price: 727
-Sale Price: 727
+Wholesale Price: 677
+Regular Price: 1300
+Sale Price: 1042
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

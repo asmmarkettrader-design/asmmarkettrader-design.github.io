@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mens Hoodie High Quality Imported Casual Pull Over Hoodie French Fleece Fabric Smart Look Premium Quality Ready To Wear
 Product ID: hhc-3754246
 SKU: hhc-3754246
@@ -7,11 +8,16 @@ Slug: mens-hoodie-high-quality-imported-casual-pull-over-hoodie-french-fleece-62
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/bf2ba97dbf4e22aedaff770e5f935df8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/bf2ba97dbf4e22aedaff770e5f935df8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/bf2ba97dbf4e22aedaff770e5f935df8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/eb495bd8d01bd540664acf9b6b4449a5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/2653c7542b4896dacf15803ead1b6a02.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/b9822946526a1c2f7c7f86eb0df21816.jpeg
 Meta Title: Mens Hoodie High Quality Imported Casual Pull Over Hoodie French Fle
 Meta Description: Buy Mens Hoodie High Quality Imported Casual Pull Over Hoodie French Fleece Fabric Smart Look Premium Quality Ready To Wear online in Pakistan from ASM VEO. Men
 Description: Mens Hoodie Provides High Quality Imported Casual Pull Over Durable Comfortable Stylish Smart Look And Premium Quality
-Regular Price: 1077
-Sale Price: 1077
+Wholesale Price: 1027
+Regular Price: 1900
+Sale Price: 1518
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

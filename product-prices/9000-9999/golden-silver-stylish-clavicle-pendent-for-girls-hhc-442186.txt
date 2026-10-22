@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Golden / Silver Stylish Clavicle Pendent For Girls
 Product ID: hhc-442186
 SKU: hhc-442186
@@ -7,11 +8,16 @@ Slug: golden-silver-stylish-clavicle-pendent-for-girls-hhc-442186
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/WhatsApp-Image-2023-07-22-at-8.46.55-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/WhatsApp-Image-2023-07-22-at-8.46.55-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/WhatsApp-Image-2023-07-22-at-8.43.27-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/WhatsApp-Image-2023-07-22-at-8.43.27-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/WhatsApp-Image-2023-07-22-at-8.43.26-PM.jpeg
 Meta Title: Golden / Silver Stylish Clavicle Pendent For Girls | Buy Online in P
 Meta Description: Buy Golden / Silver Stylish Clavicle Pendent For Girls online in Pakistan from ASM VEO. Cash on Delivery, Rs 180 standard delivery, and easy returns.
 Description: 
-Regular Price: 298
-Sale Price: 298
+Wholesale Price: 248
+Regular Price: 582
+Sale Price: 432
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

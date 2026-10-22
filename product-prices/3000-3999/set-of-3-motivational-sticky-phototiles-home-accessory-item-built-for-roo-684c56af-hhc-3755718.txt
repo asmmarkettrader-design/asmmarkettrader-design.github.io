@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 3 Motivational Sticky Phototiles - Home Accessory Item Built For Room Aesthetics And Daily Space Enhancement Practice - Size 8x11
 Product ID: hhc-3755718
 SKU: hhc-3755718
@@ -7,11 +8,16 @@ Slug: set-of-3-motivational-sticky-phototiles-home-accessory-item-built-for-r-68
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set Of 3 Motivational Sticky Phototiles - Home Accessory Item Built
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/e0da265ca41f14829eb464b86b21277b.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/20/e0da265ca41f14829eb464b86b21277b.jfif
+Meta Title: Set Of 3 Motivational Sticky Phototiles - Home Accessory Item Built 
 Meta Description: Buy Set Of 3 Motivational Sticky Phototiles - Home Accessory Item Built For Room Aesthetics And Daily Space Enhancement Practice - Size 8x11 online in Pakistan
 Description: The Set Of 3 Motivational Sticky Phototiles Is A Home Accessory Item Engineered To Assist With Room Aesthetics And Daily Space Enhancement Purpose During Application.
-Regular Price: 488
-Sale Price: 488
+Wholesale Price: 438
+Regular Price: 900
+Sale Price: 717
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

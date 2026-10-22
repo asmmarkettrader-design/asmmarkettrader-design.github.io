@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Hot Bowl Clip – Anti-Scald Tableware Lifter, Foldable Hot Dish Holder for Microwave, Oven & Cooking Use | Durable Kitchen Tool
 Product ID: hhc-3753881
 SKU: hhc-3753881
@@ -7,11 +8,16 @@ Slug: stainless-steel-hot-bowl-clip-anti-scald-tableware-lifter-foldable-hot-914
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/f2902d3995c2b77c1def3a7a842b6d34.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/f2902d3995c2b77c1def3a7a842b6d34.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/14a765eb8e887a2b9b20ca0d67648312.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/29dee500aea0ed69128e450810684887.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/c538064f07a85af5957e14481c52db43.jpeg
 Meta Title: Stainless Steel Hot Bowl Clip – Anti-Scald Tableware Lifter, Foldabl
 Meta Description: Buy Stainless Steel Hot Bowl Clip – Anti-Scald Tableware Lifter, Foldable Hot Dish Holder for Microwave, Oven & Cooking Use | Durable Kitchen Tool online in Pak
 Description: Heat-resistant stainless steel bowl clip for safely lifting hot plates, bowls and utensils from microwave, oven or stove without burning hands.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

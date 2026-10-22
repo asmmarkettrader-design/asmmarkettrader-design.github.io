@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Seamless Heavy Duty Transparent Sticky Hooks Strip | Strong Double-Sided Self Adhesive Wall Hanger | Waterproof Multipurpose Hook for Bathroom & Kitchen
 Product ID: hhc-3757490
 SKU: hhc-3757490
@@ -7,11 +8,16 @@ Slug: seamless-heavy-duty-transparent-sticky-hooks-strip-strong-double-sided-a68
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/bd12c0325623bb8112c3b7f3efd164d4.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/bd12c0325623bb8112c3b7f3efd164d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/dadd0f1b5d9f5ec8beb0193b3e0766ae.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/345c0a5e9db84eef8b9e1d412ffbbfb9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/09/0afe752b147c42b45ca8e93a8d55dfae.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/28/e75ab2b6b52056e8bb7b2125b1c17a99.jpeg
 Meta Title: Seamless Heavy Duty Transparent Sticky Hooks Strip | Strong Double-S
 Meta Description: Buy Seamless Heavy Duty Transparent Sticky Hooks Strip | Strong Double-Sided Self Adhesive Wall Hanger | Waterproof Multipurpose Hook for Bathroom & Kitchen onl
 Description: Durable and transparent adhesive hook strip designed for strong wall mounting without drilling. Ideal for organizing bathroom and kitchen items with a waterproof and seamless finish.
-Regular Price: 175
-Sale Price: 175
+Wholesale Price: 125
+Regular Price: 398
+Sale Price: 248
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

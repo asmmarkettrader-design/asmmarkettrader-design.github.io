@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: AA Traders Tv Wall Mount Bracket 32 To 42 Inch Heavy Duty Led Lcd Tv Stand With Bubble Level And Complete Fitting Kit
 Product ID: hhc-3762508
 SKU: hhc-3762508
@@ -7,11 +8,16 @@ Slug: aa-traders-tv-wall-mount-bracket-32-to-42-inch-heavy-duty-led-lcd-tv-st-76
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/578132c172e12ffe31aacbff57fa6eaf.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/578132c172e12ffe31aacbff57fa6eaf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/64b50320769ea6a465be49464aa40c45.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/24/60476f7c9f1bff6ecd22ab2e50fd0346.jpeg
 Meta Title: AA Traders Tv Wall Mount Bracket 32 To 42 Inch Heavy Duty Led Lcd Tv
 Meta Description: Buy AA Traders Tv Wall Mount Bracket 32 To 42 Inch Heavy Duty Led Lcd Tv Stand With Bubble Level And Complete Fitting Kit online in Pakistan from ASM VEO. The A
 Description: The AA Traders Tv Wall Mount Bracket 32 To 42 Inch Heavy Duty Led Lcd Tv Stand With Bubble Level And Complete Fitting Kit Is A Mounting Accessory Formulated To Help Provide Tv Installation And Secure Wall Support During Daily Use.
-Regular Price: 509
-Sale Price: 509
+Wholesale Price: 459
+Regular Price: 940
+Sale Price: 748
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

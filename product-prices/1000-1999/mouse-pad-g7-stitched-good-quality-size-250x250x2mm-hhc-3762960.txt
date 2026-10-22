@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mouse Pad G7 Stitched Good Quality Size 250x250x2mm
 Product ID: hhc-3762960
 SKU: hhc-3762960
@@ -7,11 +8,16 @@ Slug: mouse-pad-g7-stitched-good-quality-size-250x250x2mm-hhc-3762960
 Category: Electronics
 Subcategory: Laptops & Computers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/621fd50b53d3054a4dda7261971e4208.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/621fd50b53d3054a4dda7261971e4208.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/527be2abc953e871ef8667ba5f0af579.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/bb65558aababf9a3e33f3ffb7adcb6ec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/31/db3647e83e21901cf6397326140c9ec4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/5029e1c402b6b643b871702c14374049.jpeg
 Meta Title: Mouse Pad G7 Stitched Good Quality Size 250x250x2mm | Buy Online in
 Meta Description: Buy Mouse Pad G7 Stitched Good Quality Size 250x250x2mm online in Pakistan from ASM VEO. SpecificationAnti-slipRound250*250*2mm Thickness About 3mmPackage Inclu
 Description: SpecificationAnti-slipRound250*250*2mm Thickness About 3mmPackage Includes1 * Mouse pad
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

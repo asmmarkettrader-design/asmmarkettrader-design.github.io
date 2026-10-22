@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: T-Shirt, Easy to Wash & Lightweight Breathable Fabric, for Men - XL
 Product ID: hhc-3753245
 SKU: hhc-3753245
@@ -7,11 +8,16 @@ Slug: t-shirt-easy-to-wash-lightweight-breathable-fabric-for-men-xl-hhc-3753245
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: T-Shirt, Easy to Wash & Lightweight Breathable Fabric, for Men - XL
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/61da6451d3177a37b79fd3f67386fb3b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/61da6451d3177a37b79fd3f67386fb3b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/05/c84ad64f4bcd4baf058ceea453efe5c3.png
+Meta Title: T-Shirt, Easy to Wash & Lightweight Breathable Fabric, for Men - XL 
 Meta Description: Buy T-Shirt, Easy to Wash & Lightweight Breathable Fabric, for Men - XL online in Pakistan from ASM VEO. This stylish men's t-shirt offers all-day comfort with
 Description: This stylish men's t-shirt offers all-day comfort with lightweight breathable fabric. Fade-resistant and shrink-free for easy care. Ideal for casual wear.
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

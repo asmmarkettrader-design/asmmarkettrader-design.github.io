@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 in 1 Professional Makeup Deal
 Product ID: hhc-3765088
 SKU: hhc-3765088
@@ -7,11 +8,16 @@ Slug: 7-in-1-professional-makeup-deal-hhc-3765088
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/df20d03eb320aa2a6ef32bfccbf4e5af.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/df20d03eb320aa2a6ef32bfccbf4e5af.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/b9c8b7da33561fe6e9ce8138071e7ccc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/01420a507ee1d2aa297cb206564e62e7.jpg
 Meta Title: 7 in 1 Professional Makeup Deal | Buy Online in Pakistan
 Meta Description: Buy 7 in 1 Professional Makeup Deal online in Pakistan from ASM VEO. 7 in 1 Complete Makeup Deal for a professional look. Package Includes: - 1 Foundation - 1 C
 Description: 7 in 1 Complete Makeup Deal for a professional look. Package Includes: - 1 Foundation - 1 Concealer - 1 Highlighter - 1 Pencil - 1 Eyeliner - 1 Beauty Blender - 1 Tint Material: Liquid. Perfect for daily makeup routines.
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

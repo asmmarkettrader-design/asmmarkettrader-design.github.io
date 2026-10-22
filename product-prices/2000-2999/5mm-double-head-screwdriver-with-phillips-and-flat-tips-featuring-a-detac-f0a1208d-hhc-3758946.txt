@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5mm double-head screwdriver with Phillips and flat tips, featuring a detachable handle for easy repair, maintenance, and DIY tasks. Durable, compact, and easy to handle.
 Product ID: hhc-3758946
 SKU: hhc-3758946
@@ -7,11 +8,16 @@ Slug: 5mm-double-head-screwdriver-with-phillips-and-flat-tips-featuring-a-det-f0
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/796f4ce3bbb1966114e9efa7ef056627.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/14/796f4ce3bbb1966114e9efa7ef056627.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/634c640f581891f825b2539b10590277.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/ce37476b91d29fe03d052d16deb14054.jpg
 Meta Title: 5mm double-head screwdriver with Phillips and flat tips, featuring a
 Meta Description: Buy 5mm double-head screwdriver with Phillips and flat tips, featuring a detachable handle for easy repair, maintenance, and DIY tasks. Durable, compact, and ea
 Description: Versatile 5mm double-head screwdriver with Phillips and flat tips, featuring a detachable handle for easy repair, maintenance, and DIY work. Durable, compact, and comfortable to use.
-Regular Price: 599
-Sale Price: 599
+Wholesale Price: 549
+Regular Price: 1070
+Sale Price: 856
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

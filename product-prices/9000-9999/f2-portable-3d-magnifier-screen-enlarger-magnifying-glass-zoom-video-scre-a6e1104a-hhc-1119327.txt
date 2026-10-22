@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: F2 Portable 3D Magnifier Screen Enlarger / Magnifying Glass Zoom Video Screen HD all Mobile Phone random color
 Product ID: hhc-1119327
 SKU: hhc-1119327
@@ -7,11 +8,16 @@ Slug: f2-portable-3d-magnifier-screen-enlarger-magnifying-glass-zoom-video-sc-a6
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/5379ec9e795235c18d9e64501d3c1e6d.jpg_720x720.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/5379ec9e795235c18d9e64501d3c1e6d.jpg_720x720.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/88fd436c0b7af91fc9d54c2ffd0b1cd5.jpg_720x720.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/e3a118c319784784cca495fbf250669d.jpg_720x720.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/08/82614f88a9e098846281ec80d35d027c.jpg_720x720.jpg_-1.webp
 Meta Title: F2 Portable 3D Magnifier Screen Enlarger / Magnifying Glass Zoom Vid
 Meta Description: Buy F2 Portable 3D Magnifier Screen Enlarger / Magnifying Glass Zoom Video Screen HD all Mobile Phone random color online in Pakistan from ASM VEO. F2 Portable
 Description: F2 Portable 3D Magnifier Screen Enlarger / Magnifying Glass Zoom Video Screen HD all Mobile Phone random color
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

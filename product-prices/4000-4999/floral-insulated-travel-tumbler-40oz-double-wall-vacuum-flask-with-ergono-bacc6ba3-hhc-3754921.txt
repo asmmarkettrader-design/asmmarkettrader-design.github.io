@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Floral Insulated Travel Tumbler 40oz – Double-Wall Vacuum Flask with Ergonomic Handle & Leak-Resistant Lid (Random Colour)
 Product ID: hhc-3754921
 SKU: hhc-3754921
@@ -7,11 +8,16 @@ Slug: floral-insulated-travel-tumbler-40oz-double-wall-vacuum-flask-with-ergo-ba
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/d8a4ba7f97b877315b147d658ec9e49e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/d8a4ba7f97b877315b147d658ec9e49e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/e752c89b4f150bb6f038587fd182ca74.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/066bbadeee92219311dbe16c66fb70c2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/27/4cd7365b0e9da51c0869ef7574accabd.png
 Meta Title: Floral Insulated Travel Tumbler 40oz – Double-Wall Vacuum Flask with
 Meta Description: Buy Floral Insulated Travel Tumbler 40oz – Double-Wall Vacuum Flask with Ergonomic Handle & Leak-Resistant Lid (Random Colour) online in Pakistan from ASM VEO.
 Description: Stylish 40oz floral insulated tumbler with double-wall vacuum insulation to keep drinks hot or cold for hours. Features a comfortable handle and leak-resistant straw lid—perfect for travel, office, or daily use.
-Regular Price: 2867
-Sale Price: 2867
+Wholesale Price: 2867
+Regular Price: 5060
+Sale Price: 4050
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

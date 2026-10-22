@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Neofit Ortho Support Series Wrist Support Brace For Joint Stability And Pain Relief
 Product ID: hhc-3757836
 SKU: hhc-3757836
@@ -7,11 +8,16 @@ Slug: neofit-ortho-support-series-wrist-support-brace-for-joint-stability-and-96
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Neofit Ortho Support Series Wrist Support Brace For Joint Stability
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/3f0dd79c5cb7e5ed12feb338dec18c34.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/3f0dd79c5cb7e5ed12feb338dec18c34.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/3761df9783d44ef08bfa172a87e1df11.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/878e727271e71b7f7f0e28474596bba3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/14834519e04177e0be068e419c8766d4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/045e107b7898cc58b026dccd7ec46e32.jpeg
+Meta Title: Neofit Ortho Support Series Wrist Support Brace For Joint Stability 
 Meta Description: Buy Neofit Ortho Support Series Wrist Support Brace For Joint Stability And Pain Relief online in Pakistan from ASM VEO. Neofit Wrist Support Brace From The Ort
 Description: Neofit Wrist Support Brace From The Ortho Support Series Designed For Stability Comfort And Pain Relief
-Regular Price: 431
-Sale Price: 431
+Wholesale Price: 381
+Regular Price: 790
+Sale Price: 632
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: PRJ-183 Hollow Heart Pendant – Elegant Stainless Steel Necklace, Stylish Jewellery Accessory for Women
 Product ID: hhc-3754087
 SKU: hhc-3754087
@@ -7,11 +8,16 @@ Slug: prj-183-hollow-heart-pendant-elegant-stainless-steel-necklace-stylish-j-0c
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/6cf94b5546a43a93146142f1e987e33d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/6cf94b5546a43a93146142f1e987e33d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/b4120ffc614678bc2bd5889418626b3d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/e02f7fd9e6121d32b91615c33505f371.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/c2401b19351121a57d3f7fc3e6528a9e.jpeg
 Meta Title: PRJ-183 Hollow Heart Pendant – Elegant Stainless Steel Necklace, Sty
 Meta Description: Buy PRJ-183 Hollow Heart Pendant – Elegant Stainless Steel Necklace, Stylish Jewellery Accessory for Women online in Pakistan from ASM VEO. Elegant PRJ-183 holl
 Description: Elegant PRJ-183 hollow heart pendant necklace, stylish stainless steel design, perfect for fashion and daily wear.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

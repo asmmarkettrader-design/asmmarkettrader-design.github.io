@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Washing Machine Cleaner Tablets – 12 Tablet | Deep Cleaning & Deodorizing for Front Load, Top Load & HE Washers
 Product ID: hhc-3752348
 SKU: hhc-3752348
@@ -7,11 +8,16 @@ Slug: washing-machine-cleaner-tablets-12-tablet-deep-cleaning-deodorizing-for-b4
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/a68d57ac4e35cbe9d733cd3befb5cedb.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/a68d57ac4e35cbe9d733cd3befb5cedb.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/bcd7e892ae29ab03c9ea9ffeda63fd47.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/3596d9b869559b973bc302e1e8ead8a0.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/8504eaab5c61b462e018cbe4fd23d85f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/ef1767899da380e6df57b3d9a7cd78e6.webp
 Meta Title: Washing Machine Cleaner Tablets – 12 Tablet | Deep Cleaning & Deodor
 Meta Description: Buy Washing Machine Cleaner Tablets – 12 Tablet | Deep Cleaning & Deodorizing for Front Load, Top Load & HE Washers online in Pakistan from ASM VEO. Keep your w
 Description: Keep your washing machine fresh and clean with these 12 powerful cleaner tablets. Designed for front load, top load, and HE washers, they remove odor, residue, and buildup for a deep clean and long-lasting freshness.
-Regular Price: 280
-Sale Price: 280
+Wholesale Price: 230
+Regular Price: 555
+Sale Price: 405
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

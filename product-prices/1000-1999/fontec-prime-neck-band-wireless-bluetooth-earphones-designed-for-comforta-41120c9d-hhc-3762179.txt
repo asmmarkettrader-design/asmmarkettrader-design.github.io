@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fontec Prime Neck Band - Wireless Bluetooth Earphones Designed For Comfortable Daily Audio Listening And Reliable Performance
 Product ID: hhc-3762179
 SKU: hhc-3762179
@@ -7,11 +8,16 @@ Slug: fontec-prime-neck-band-wireless-bluetooth-earphones-designed-for-comfor-41
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/08f7b69f64b26c03f51cdf6ea695ddd5.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/08f7b69f64b26c03f51cdf6ea695ddd5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/95794672079b58e7636dd8c48f8307eb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/c871cb5c2c511efdf96312eb73e617b2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/d83caa7eaf649bd45fa0fb24ea3ed61a.jpeg
 Meta Title: Fontec Prime Neck Band - Wireless Bluetooth Earphones Designed For C
 Meta Description: Buy Fontec Prime Neck Band - Wireless Bluetooth Earphones Designed For Comfortable Daily Audio Listening And Reliable Performance online in Pakistan from ASM VE
 Description: The Fontec Prime Neck Band Offers A Comfortable Wireless Audio Solution Designed For Consistent Daily Listening Performance.
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

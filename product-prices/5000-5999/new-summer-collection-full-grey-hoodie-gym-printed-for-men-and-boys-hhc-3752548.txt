@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Summer Collection Full Grey Hoodie GYM Printed For Men And Boys
 Product ID: hhc-3752548
 SKU: hhc-3752548
@@ -7,11 +8,16 @@ Slug: new-summer-collection-full-grey-hoodie-gym-printed-for-men-and-boys-hhc-37
 Category: Fashion
 Subcategory: Fitness & Gym
 Brand: ASM VEO
-Meta Title: New Summer Collection Full Grey Hoodie GYM Printed For Men And Boys
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/f173d6a01d30bb487250b70e70f83c1a.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/f173d6a01d30bb487250b70e70f83c1a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/46ab30a03179c7e206bb2f66f1c53af6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/1c6590da0390f13737f0b7506c817862.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/01/4789ac6b27ba58dc4cb32ea4cbb04b77.jpeg
+Meta Title: New Summer Collection Full Grey Hoodie GYM Printed For Men And Boys 
 Meta Description: Buy New Summer Collection Full Grey Hoodie GYM Printed For Men And Boys online in Pakistan from ASM VEO. New Summer Collection Full Grey Hoodie GYM Printed For
 Description: New Summer Collection Full Grey Hoodie GYM Printed For Men And Boys. Available in Medium, Large, and XL Sizes
-Regular Price: 1019
-Sale Price: 1019
+Wholesale Price: 969
+Regular Price: 1830
+Sale Price: 1465
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

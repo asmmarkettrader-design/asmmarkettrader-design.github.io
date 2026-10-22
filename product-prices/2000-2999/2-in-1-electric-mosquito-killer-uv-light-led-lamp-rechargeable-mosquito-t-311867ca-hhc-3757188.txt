@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 In 1 Electric Mosquito Killer UV Light LED Lamp Rechargeable Mosquito Trap Racket Anti Insect Bug Zapper
 Product ID: hhc-3757188
 SKU: hhc-3757188
@@ -7,11 +8,16 @@ Slug: 2-in-1-electric-mosquito-killer-uv-light-led-lamp-rechargeable-mosquito-31
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/85b9fd28c495420e9cdc7af981e93672.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/85b9fd28c495420e9cdc7af981e93672.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/5dd3fec81d5be866c6b459e6ba6cfb68.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/0c41ea81d82c173d01e02b336b76477f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/b6102ea25a27d3567c9d7d2ae5d1df2e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/2038f7695da86f9954d5e140e9bfc61f.jpeg
 Meta Title: 2 In 1 Electric Mosquito Killer UV Light LED Lamp Rechargeable Mosqu
 Meta Description: Buy 2 In 1 Electric Mosquito Killer UV Light LED Lamp Rechargeable Mosquito Trap Racket Anti Insect Bug Zapper online in Pakistan from ASM VEO. 2 In 1 Electric
 Description: 2 In 1 Electric Mosquito Killer With UV Light LED Lamp Rechargeable Design Works As Mosquito Trap And Racket For Effective Bug Control.
-Regular Price: 1799
-Sale Price: 1799
+Wholesale Price: 1799
+Regular Price: 3260
+Sale Price: 2609
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

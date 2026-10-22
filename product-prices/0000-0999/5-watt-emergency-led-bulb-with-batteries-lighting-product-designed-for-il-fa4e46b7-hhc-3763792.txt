@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 5 Watt - Emergency LED Bulb With Batteries - Lighting Product Designed For Illumination And Daily Lighting Routine
 Product ID: hhc-3763792
 SKU: hhc-3763792
@@ -7,11 +8,16 @@ Slug: 5-watt-emergency-led-bulb-with-batteries-lighting-product-designed-for-fa4
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/d14cfd6ef11dbc8517da136fcd671d55.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/d14cfd6ef11dbc8517da136fcd671d55.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/53102677278e00151793ece01d9c24dc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/66b13276b8c3257b13fe9698b16ef476.jpeg
 Meta Title: 5 Watt - Emergency LED Bulb With Batteries - Lighting Product Design
 Meta Description: Buy 5 Watt - Emergency LED Bulb With Batteries - Lighting Product Designed For Illumination And Daily Lighting Routine online in Pakistan from ASM VEO. The Emer
 Description: The Emergency LED Bulb With Batteries Is A Lighting Product Formulated To Help Provide Illumination And Daily Lighting Utility During Use.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

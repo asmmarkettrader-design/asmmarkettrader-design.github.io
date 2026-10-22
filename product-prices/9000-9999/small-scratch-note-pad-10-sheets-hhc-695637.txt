@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Small Scratch Note Pad  10 sheets
 Product ID: hhc-695637
 SKU: hhc-695637
@@ -7,11 +8,16 @@ Slug: small-scratch-note-pad-10-sheets-hhc-695637
 Category: Books & Stationery
 Subcategory: Diaries & Journals
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/3ccedbdf21796163f96a81027b3182f5.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/3ccedbdf21796163f96a81027b3182f5.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/87c55a03293dfafc23bc7e93fbc4afde.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/958ac02351a97d7a08e0d85f2cd15c84.jpg_750x750.jpg_-1.webp
 Meta Title: Small Scratch Note Pad 10 sheets | Buy Online in Pakistan
 Meta Description: Buy Small Scratch Note Pad 10 sheets online in Pakistan from ASM VEO. Product details 10 Sheets in a Pad SCRATCH NOTE PAD Small 10 cm x 14 c Scratch Sketch Colo
 Description: Product details 10 Sheets in a Pad SCRATCH NOTE PAD Small 10 cm x 14 c Scratch Sketch Colours behind Made in China (product real video ) [video width="474" height="850" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Video-2024-06-11-at-11.37.40-AM.mp4"][/video] &nbsp;
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

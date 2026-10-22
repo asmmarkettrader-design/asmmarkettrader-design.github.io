@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Procten M Lotion Gentle Formula Smooth Application Nourishes Skin Provides Comfort Hydrates Effectively And Supports Daily Skincare Needs - 100ml
 Product ID: hhc-3753801
 SKU: hhc-3753801
@@ -7,11 +8,16 @@ Slug: procten-m-lotion-gentle-formula-smooth-application-nourishes-skin-provi-07
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/9924988d712b6318b8fa0b393e8286cf.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/9924988d712b6318b8fa0b393e8286cf.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/f2eff44e44399ea92a7fd47688541012.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/ca151413fd55afa246fcb28717d7cd18.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/ca5492838606f17535261535a0f212df.jpeg
 Meta Title: Procten M Lotion Gentle Formula Smooth Application Nourishes Skin Pr
 Meta Description: Buy Procten M Lotion Gentle Formula Smooth Application Nourishes Skin Provides Comfort Hydrates Effectively And Supports Daily Skincare Needs - 100ml online in
 Description: Procten M Lotion Provides Gentle Formula Smooth Application Nourishes Skin Comfort And Hydration For Daily Use
-Regular Price: 657
-Sale Price: 657
+Wholesale Price: 607
+Regular Price: 1180
+Sale Price: 940
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

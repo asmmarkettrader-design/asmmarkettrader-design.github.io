@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 111pc Tie Balloons (Water Balloons)
 Product ID: hhc-775448
 SKU: hhc-775448
@@ -7,11 +8,16 @@ Slug: 111pc-tie-balloons-water-balloons-hhc-775448
 Category: Pets & Animals
 Subcategory: Pet Toys & Beds
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-07-at-1.46.03-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-07-at-1.46.03-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-07-at-1.46.02-PM.jpeg
 Meta Title: 111pc Tie Balloons (Water Balloons) | Buy Online in Pakistan
 Meta Description: Buy 111pc Tie Balloons (Water Balloons) online in Pakistan from ASM VEO. This exciting assortment of multi coloured balloons Makes any occasion beautiful as it
 Description: This exciting assortment of multi coloured balloons Makes any occasion beautiful as it inflated within 60 seconds Provide you amazing decoration and saves you a lot of time. Bunch Of Ballons Fill Up Within 60 Seconds Helps To Save Time While Inflating And Deflating Colour: Multicolor / Material: Rubber Assorted colors of balloons easy and safe to kids to use and play / Age 3+ 111pc Tie Balloons (Water Balloons) &nbsp;
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

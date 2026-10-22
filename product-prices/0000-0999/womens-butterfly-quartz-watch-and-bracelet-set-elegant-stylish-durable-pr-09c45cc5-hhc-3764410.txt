@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Womens Butterfly Quartz Watch And Bracelet Set Elegant Stylish Durable Practical Choice For Fashion Accessories And Gift Occasions
 Product ID: hhc-3764410
 SKU: hhc-3764410
@@ -7,11 +8,16 @@ Slug: womens-butterfly-quartz-watch-and-bracelet-set-elegant-stylish-durable-09c
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/d0293a0839cc8fc423858528d5659e0a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/d0293a0839cc8fc423858528d5659e0a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/cfe0c6308634e5d1395efbdcc1d7aa34.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/439fb667262f696d12842195f54e27ce.jpeg
 Meta Title: Womens Butterfly Quartz Watch And Bracelet Set Elegant Stylish Durab
 Meta Description: Buy Womens Butterfly Quartz Watch And Bracelet Set Elegant Stylish Durable Practical Choice For Fashion Accessories And Gift Occasions online in Pakistan from A
 Description: Womens Butterfly Quartz Watch And Bracelet Set Elegant Stylish Durable Practical Choice For Fashion Accessories And Gift Occasions.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

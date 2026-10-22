@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Honda Civic Reborn 2007 Carbon Fiber Console Gear Shift Panel Cover Trim
 Product ID: hhc-3763776
 SKU: hhc-3763776
@@ -7,11 +8,16 @@ Slug: honda-civic-reborn-2007-carbon-fiber-console-gear-shift-panel-cover-trim-h
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Honda Civic Reborn 2007 Carbon Fiber Console Gear Shift Panel Cover
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/0980b4bb6571c506ada676fa4dfcfad6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/13/0980b4bb6571c506ada676fa4dfcfad6.jpeg
+Meta Title: Honda Civic Reborn 2007 Carbon Fiber Console Gear Shift Panel Cover 
 Meta Description: Buy Honda Civic Reborn 2007 Carbon Fiber Console Gear Shift Panel Cover Trim online in Pakistan from ASM VEO. Enhance your Honda Civic Reborn 2007 interior with
 Description: Enhance your Honda Civic Reborn 2007 interior with this stylish carbon fiber gear shift console panel cover, designed for a sporty and modern look.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

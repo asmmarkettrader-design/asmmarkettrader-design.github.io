@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Suit for Boys, Girls & Babies | Warm Pajama & Shirt Set for Kids | Cozy Winter Nightwear & Daily Outfit FOR BABY AND KIDS
 Product ID: hhc-3753377
 SKU: hhc-3753377
@@ -7,11 +8,16 @@ Slug: winter-suit-for-boys-girls-babies-warm-pajama-shirt-set-for-kids-cozy-w-bb
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/52d8a6d77bf43a2823297c8a7ebbd21b.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/52d8a6d77bf43a2823297c8a7ebbd21b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/10/dde1af1dddd2929f1dc24fb27ce1d634.png
 Meta Title: Winter Suit for Boys, Girls & Babies | Warm Pajama & Shirt Set for K
 Meta Description: Buy Winter Suit for Boys, Girls & Babies | Warm Pajama & Shirt Set for Kids | Cozy Winter Nightwear & Daily Outfit FOR BABY AND KIDS online in Pakistan from ASM
 Description: Soft and cozy winter suit for kids and babies — includes a warm pajama and shirt set perfect for bedtime or daily wear.
-Regular Price: 894
-Sale Price: 894
+Wholesale Price: 844
+Regular Price: 1600
+Sale Price: 1284
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

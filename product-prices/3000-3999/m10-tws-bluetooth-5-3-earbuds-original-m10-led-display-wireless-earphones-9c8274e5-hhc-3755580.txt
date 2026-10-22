@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M10 TWS Bluetooth 5.3 Earbuds | Original M10 | LED Display | Wireless Earphones with Microphone
 Product ID: hhc-3755580
 SKU: hhc-3755580
@@ -7,11 +8,16 @@ Slug: m10-tws-bluetooth-5-3-earbuds-original-m10-led-display-wireless-earphon-9c
 Category: Mobile & Accessories
 Subcategory: Earphones & Bluetooth Devices
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/5410d345f357a923ca62010ba0a3f75f.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/5410d345f357a923ca62010ba0a3f75f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/e81af0a18d998fdf428f08d8fcd60e98.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/ee5c8154297e9c4f849a0792699638f3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/7ea75710f70d5d46ab0d699580002ffa.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/15/2805b65b4bfc4d0f176d797587004d17.jpeg
 Meta Title: M10 TWS Bluetooth 5.3 Earbuds | Original M10 | LED Display | Wireles
 Meta Description: Buy M10 TWS Bluetooth 5.3 Earbuds | Original M10 | LED Display | Wireless Earphones with Microphone online in Pakistan from ASM VEO. Original M10 TWS Bluetooth
 Description: Original M10 TWS Bluetooth 5.3 earbuds. LED display, wireless earphones with microphone. Clear sound, stable connection, and portable design.
-Regular Price: 846
-Sale Price: 846
+Wholesale Price: 796
+Regular Price: 1520
+Sale Price: 1214
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

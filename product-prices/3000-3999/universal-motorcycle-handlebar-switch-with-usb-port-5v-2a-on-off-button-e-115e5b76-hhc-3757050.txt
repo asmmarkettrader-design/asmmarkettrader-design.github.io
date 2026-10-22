@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Motorcycle Handlebar Switch with USB Port 5V 2A – ON/OFF Button & Extra Lights Control Switch for Bikes
 Product ID: hhc-3757050
 SKU: hhc-3757050
@@ -7,11 +8,16 @@ Slug: universal-motorcycle-handlebar-switch-with-usb-port-5v-2a-on-off-button-11
 Category: Automotive
 Subcategory: Motorbike Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/e02e9c697db5b1e2248515aa600609de.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/e02e9c697db5b1e2248515aa600609de.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/58fe764fa2b23de470764e6a8703afc9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/0e9f6e6b76f40697cc2aea7b5497cf8b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/eca8e286a7d12648eb5768091aaa2b6b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/25/d06b5a0d5d3351a219148784f192991c.jpeg
 Meta Title: Universal Motorcycle Handlebar Switch with USB Port 5V 2A – ON/OFF B
 Meta Description: Buy Universal Motorcycle Handlebar Switch with USB Port 5V 2A – ON/OFF Button & Extra Lights Control Switch for Bikes online in Pakistan from ASM VEO. Universal
 Description: Universal bike handlebar switch with 5V 2A USB charging port and ON/OFF button. Perfect for controlling extra lights and charging devices while riding. Durable, easy to install, and suitable for most motorcycles.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

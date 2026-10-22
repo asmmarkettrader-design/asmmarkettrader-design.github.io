@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Retro Design 3D Wooden wall clock for Living Room Retro Decor Wall Clock
 Product ID: hhc-2575217
 SKU: hhc-2575217
@@ -7,11 +8,16 @@ Slug: retro-design-3d-wooden-wall-clock-for-living-room-retro-decor-wall-clock-h
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/IMG_2663.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/IMG_2663.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/IMG_2662.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/IMG_2643.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/IMG_2635.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-10-at-10.49.25-PM.jpeg
 Meta Title: Retro Design 3D Wooden wall clock for Living Room Retro Decor Wall C
 Meta Description: Buy Retro Design 3D Wooden wall clock for Living Room Retro Decor Wall Clock online in Pakistan from ASM VEO. 3D Wooden wall clock Description Metrial Wooden Si
 Description: 3D Wooden wall clock Description Metrial Wooden Size 12 inch Thickness 3mm wooden Retro Design: Features a classic vintage-inspired design with elegant numerals and a refined finish. Timeless Charm: Adds a nostalgic touch to your home decor, complementing both traditional and modern styles. Accurate Timekeeping: Ensures precise timekeeping while enhancing your space with stylish decor. Versatile Decoration: Ideal for living rooms, offices, and any area where a touch of retro elegance is desired. Quality Craftsmanship: Made with attention to detail, ensuring durability and a sophisticated look.
-Regular Price: 544
-Sale Price: 544
+Wholesale Price: 494
+Regular Price: 1000
+Sale Price: 801
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

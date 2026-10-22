@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Outdoor Travel Soap Paper Washing Hand Bath Clean Scented Slice Sheets Disposable Boxes Soap Mini Paper Soap - Each
 Product ID: hhc-647995
 SKU: hhc-647995
@@ -7,11 +8,16 @@ Slug: portable-outdoor-travel-soap-paper-washing-hand-bath-clean-scented-slic-1a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/04/a-16.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/04/a-16.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/04/b-15.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/04/c-10.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/04/d-6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/04/g-3.webp
 Meta Title: Portable Outdoor Travel Soap Paper Washing Hand Bath Clean Scented S
 Meta Description: Buy Portable Outdoor Travel Soap Paper Washing Hand Bath Clean Scented Slice Sheets Disposable Boxes Soap Mini Paper Soap - Each online in Pakistan from ASM VEO
 Description: SpecificationsFunctions: Anti-Inflammation MoisturizingIngredient: toilet soapFunction: CleansingType: For Body Toilet SoapUsage: Home Hotel Traveling SoapProduct name: Portable Outdoor Travel Soap PaperForm: SolidCategory: Handmade SoapApprox 20pcs in one box
-Regular Price: 158
-Sale Price: 158
+Wholesale Price: 108
+Regular Price: 372
+Sale Price: 222
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fontec Fast4 4-in-1 Data Cable - 65W High-Speed Charging & Data Transmission Braided Cable
 Product ID: hhc-3760015
 SKU: hhc-3760015
@@ -7,11 +8,16 @@ Slug: fontec-fast4-4-in-1-data-cable-65w-high-speed-charging-data-transmissio-48
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/c332256028ab9fd2b44cc15525b365b6.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/c332256028ab9fd2b44cc15525b365b6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/25/2aa87d0ac354f3050675f64e4d5ea6df.jpeg
 Meta Title: Fontec Fast4 4-in-1 Data Cable - 65W High-Speed Charging & Data Tran
 Meta Description: Buy Fontec Fast4 4-in-1 Data Cable - 65W High-Speed Charging & Data Transmission Braided Cable online in Pakistan from ASM VEO. Upgrade your charging experience
 Description: Upgrade your charging experience with the Fontec Fast4 4-in-1 Data Cable, designed for universal compatibility and high-speed performance. This single cable features a versatile multi-connector design, providing up to 65W of power for your smartphones and tablets.
-Regular Price: 755
-Sale Price: 755
+Wholesale Price: 705
+Regular Price: 1350
+Sale Price: 1082
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

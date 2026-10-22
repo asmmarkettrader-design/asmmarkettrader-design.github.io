@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Miss Rose Peel Off Nail Polish – Easy to Apply, Long-Lasting | Best Nail Polish For Girls | Nail Paint | Nail Paint For Girls ( Random Color )
 Product ID: hhc-2567120
 SKU: hhc-2567120
@@ -7,11 +8,16 @@ Slug: miss-rose-peel-off-nail-polish-easy-to-apply-long-lasting-best-nail-pol-31
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.39.08-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.39.08-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.39.08-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-31-at-11.39.07-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.39.41-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-11-at-4.39.40-PM.jpeg
 Meta Title: Miss Rose Peel Off Nail Polish – Easy to Apply, Long-Lasting | Best
 Meta Description: Buy Miss Rose Peel Off Nail Polish – Easy to Apply, Long-Lasting | Best Nail Polish For Girls | Nail Paint | Nail Paint For Girls ( Random Color ) online in Pak
 Description: Miss Rose Peel Off Nail Polish Material: Liquid Pack Options:Pack of 06: Includes 6 x Nail PolishesPack of 12: Includes 12 x Nail PolishesThis Miss Rose Peel Off Nail Polish offers a hassle-free application with easy removal. Available in two convenient pack sizes, the pack of 06 includes 6 beautiful shades of nail polish, while the pack of 12 provides even more variety for your collection. Perfect for achieving long-lasting, chip-resistant color that peels off effortlessly. Disclaimer: Before using any new cosmetic product, always conduct a test on a small area of your skin. If you have known allergies or sensitivities, be sure to check the ingredients list. Always read the warning labels and directions on the packaging before use.
-Regular Price: 614
-Sale Price: 614
+Wholesale Price: 564
+Regular Price: 1100
+Sale Price: 878
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

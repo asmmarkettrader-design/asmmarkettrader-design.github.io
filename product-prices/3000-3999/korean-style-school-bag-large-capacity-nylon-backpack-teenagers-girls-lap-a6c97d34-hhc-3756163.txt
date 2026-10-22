@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Korean Style School Bag | Large Capacity Nylon Backpack | Teenagers Girls Laptop Work School
 Product ID: hhc-3756163
 SKU: hhc-3756163
@@ -7,11 +8,16 @@ Slug: korean-style-school-bag-large-capacity-nylon-backpack-teenagers-girls-l-a6
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/6b844e7d258370bdb934e0e5602d8f39.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/6b844e7d258370bdb934e0e5602d8f39.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/4e66d432f2de207ca8bf803581bfd454.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/949c381e4769558b62dbfae14195c18a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/7b409601a4ad2a348999c60a53840b56.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/84cbcf3738e2811b74e015654b0ff8c9.jpeg
 Meta Title: Korean Style School Bag | Large Capacity Nylon Backpack | Teenagers
 Meta Description: Buy Korean Style School Bag | Large Capacity Nylon Backpack | Teenagers Girls Laptop Work School online in Pakistan from ASM VEO. Stylish Korean-style nylon bac
 Description: Stylish Korean-style nylon backpack with large capacity. Perfect for school, college, work, and carrying laptops or essentials.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

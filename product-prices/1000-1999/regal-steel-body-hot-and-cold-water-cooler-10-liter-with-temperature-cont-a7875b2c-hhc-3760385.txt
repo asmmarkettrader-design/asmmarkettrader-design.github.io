@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Regal Steel Body Hot And Cold Water Cooler 10 Liter With Temperature Control And Elegant Floral Design
 Product ID: hhc-3760385
 SKU: hhc-3760385
@@ -7,11 +8,16 @@ Slug: regal-steel-body-hot-and-cold-water-cooler-10-liter-with-temperature-co-a7
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/55f8f4918de2fc0a91a1799fb2db793d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/55f8f4918de2fc0a91a1799fb2db793d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/e7d42c1bbaebb08e6ae314333d2555a7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/57791d501f2608091deb046d0ee81972.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/7a23e45a85730bfa0c76dab86e183584.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/2df563a0d00debcaf3fecede5783e89a.jpeg
 Meta Title: Regal Steel Body Hot And Cold Water Cooler 10 Liter With Temperature
 Meta Description: Buy Regal Steel Body Hot And Cold Water Cooler 10 Liter With Temperature Control And Elegant Floral Design online in Pakistan from ASM VEO. Regal Steel Body Hot
 Description: Regal Steel Body Hot And Cold Water Cooler 10 Liter Premium Quality With Temperature Control And Portability.
-Regular Price: 11010
-Sale Price: 11010
+Wholesale Price: 11010
+Regular Price: 18120
+Sale Price: 14493
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

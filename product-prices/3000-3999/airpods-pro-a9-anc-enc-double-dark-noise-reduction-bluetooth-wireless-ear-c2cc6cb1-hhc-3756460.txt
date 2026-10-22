@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Airpods Pro A9 ANC ENC Double Dark Noise Reduction Bluetooth Wireless Earbuds With Battery Display Touch Control For Android And IOS
 Product ID: hhc-3756460
 SKU: hhc-3756460
@@ -7,11 +8,16 @@ Slug: airpods-pro-a9-anc-enc-double-dark-noise-reduction-bluetooth-wireless-e-c2
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/f318e3f8147c3b73f99f80ef8648068a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/f318e3f8147c3b73f99f80ef8648068a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/bcf7e43ea65227dd78e5b5628d7e22ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/7bed1436d9a250a16378f9febdbd5a10.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/e31629e86a9fff770b239074e17e9484.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/19/9c81dfd04339d6dea8e82bcd59f3d554.jpeg
 Meta Title: Airpods Pro A9 ANC ENC Double Dark Noise Reduction Bluetooth Wireles
 Meta Description: Buy Airpods Pro A9 ANC ENC Double Dark Noise Reduction Bluetooth Wireless Earbuds With Battery Display Touch Control For Android And IOS online in Pakistan from
 Description: Bluetooth Wireless Earbuds With ANC ENC Double Dark Noise Reduction Bass Boosted Sound Quality And Battery Display For Android And IOS
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

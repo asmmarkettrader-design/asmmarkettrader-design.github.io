@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Spiffy Stainless Steel Cookware Cleaning Cream – 400ml Powerful Kitchen Utensil & Cookware Cleaner
 Product ID: hhc-528210
 SKU: hhc-528210
@@ -7,11 +8,16 @@ Slug: spiffy-stainless-steel-cookware-cleaning-cream-400ml-powerful-kitchen-u-c6
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/9ca413ff58a595772035ce54baa89a73.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/9ca413ff58a595772035ce54baa89a73.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/8780ba9324c014653a9fd3d6b089c522.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/03/f224fbc6073ed03ae1c73a87b0c14d41.mp4
 Meta Title: Spiffy Stainless Steel Cookware Cleaning Cream – 400ml Powerful Kitc
 Meta Description: Buy Spiffy Stainless Steel Cookware Cleaning Cream – 400ml Powerful Kitchen Utensil & Cookware Cleaner online in Pakistan from ASM VEO. Spiffy Stainless Steel C
 Description: Spiffy Stainless Steel Cookware Cleaning Cream (400ml) is a powerful formula designed to remove tough stains, grease, and burn marks from pots, pans, and kitchen utensils.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

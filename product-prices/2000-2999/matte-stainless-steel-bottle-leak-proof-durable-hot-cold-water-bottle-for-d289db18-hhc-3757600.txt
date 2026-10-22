@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Matte Stainless Steel Bottle Leak Proof Durable Hot Cold Water Bottle For Office Gym Travel
 Product ID: hhc-3757600
 SKU: hhc-3757600
@@ -7,11 +8,16 @@ Slug: matte-stainless-steel-bottle-leak-proof-durable-hot-cold-water-bottle-f-d2
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/019fdfe0a8434d948b62427139a94a93.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/019fdfe0a8434d948b62427139a94a93.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/dc590f454084db767cfd3454e7c1bfc5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/0547bf172a1983d6ff2a6bda32d2676c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/ac22c31ac391991c389864911912aad2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/7477fb4b130c7e30622aebea269f455b.png
 Meta Title: Matte Stainless Steel Bottle Leak Proof Durable Hot Cold Water Bottl
 Meta Description: Buy Matte Stainless Steel Bottle Leak Proof Durable Hot Cold Water Bottle For Office Gym Travel online in Pakistan from ASM VEO. Matte Stainless Steel Bottle Le
 Description: Matte Stainless Steel Bottle Leak Proof Durable Hot Cold Water Bottle For Office Gym Travel.
-Regular Price: 1422
-Sale Price: 1422
+Wholesale Price: 1372
+Regular Price: 2510
+Sale Price: 2008
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cooling Gel Patch – Instant Cooling Relief for Fever, Headache, Migraine & Heat Stress | Long-Lasting, Safe, Soft & Skin-Friendly Cooling Pad
 Product ID: hhc-3755648
 SKU: hhc-3755648
 Slug: cooling-gel-patch-instant-cooling-relief-for-fever-headache-migraine-he-21551cef-hhc-3755648
-Category: Beauty & Personal Care
-Subcategory: Health & Wellness
+Category: Health & Wellness
+Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/eef662f70a5a3d39c82c2d864a8e9aa1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/eef662f70a5a3d39c82c2d864a8e9aa1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/5ed02bcf36e1104e8aabe0e4cee0f45e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/17/89fa6b86b7ec0c5731aaf3441cae8f7c.png
 Meta Title: Cooling Gel Patch – Instant Cooling Relief for Fever, Headache, Migr
 Meta Description: Buy Cooling Gel Patch – Instant Cooling Relief for Fever, Headache, Migraine & Heat Stress | Long-Lasting, Safe, Soft & Skin-Friendly Cooling Pad online in Paki
 Description: A soft, skin-friendly cooling gel patch that provides instant relief from fever, headache, migraine, and heat stress. Gentle, safe, and long-lasting.
-Regular Price: 172
-Sale Price: 172
+Wholesale Price: 122
+Regular Price: 393
+Sale Price: 243
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

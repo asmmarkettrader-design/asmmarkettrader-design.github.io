@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Kitchen Instant Water Heater Tap – Instant Hot Water Faucet | Fast Heating Tankless Faucet
 Product ID: hhc-3753547
 SKU: hhc-3753547
@@ -7,11 +8,16 @@ Slug: electric-kitchen-instant-water-heater-tap-instant-hot-water-faucet-fast-b9
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/040347e826ed5e13611188fc0acec512.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/040347e826ed5e13611188fc0acec512.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/5fff4873ee554a05bc368d9f448a67ce.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/23ecc85a03932da16a84b1733d590ee1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/70bd3ec817b2061b7c586962bbc45bf2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/4b238b11426ad3bbbae1278366b4556b.jpg
 Meta Title: Electric Kitchen Instant Water Heater Tap – Instant Hot Water Faucet
 Meta Description: Buy Electric Kitchen Instant Water Heater Tap – Instant Hot Water Faucet | Fast Heating Tankless Faucet online in Pakistan from ASM VEO. Electric Kitchen Instan
 Description: Electric Kitchen Instant Water Heater Tap – Instant Hot Water Faucet | Fast Heating Tankless Faucet
-Regular Price: 3067
-Sale Price: 3067
+Wholesale Price: 3067
+Regular Price: 5210
+Sale Price: 4167
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

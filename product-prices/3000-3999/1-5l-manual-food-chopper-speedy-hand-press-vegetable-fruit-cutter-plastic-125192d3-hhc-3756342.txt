@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1.5L Manual Food Chopper – Speedy Hand Press Vegetable & Fruit Cutter - Plastic Body (Random Color)
 Product ID: hhc-3756342
 SKU: hhc-3756342
@@ -7,11 +8,16 @@ Slug: 1-5l-manual-food-chopper-speedy-hand-press-vegetable-fruit-cutter-plast-12
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/865e83c02cec3c83d8805b2d9e6410d3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/865e83c02cec3c83d8805b2d9e6410d3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/b1a8278dfab4761ebac0024327f0eec4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/03882dc79eab1362a229741912f5358a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/e47b318450a5080d3fd623a8be64fae6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/13/c3230e26808a7f28b4a88e33db0203e7.jpeg
 Meta Title: 1.5L Manual Food Chopper – Speedy Hand Press Vegetable & Fruit Cutte
 Meta Description: Buy 1.5L Manual Food Chopper – Speedy Hand Press Vegetable & Fruit Cutter - Plastic Body (Random Color) online in Pakistan from ASM VEO. Make food prep quick an
 Description: Make food prep quick and effortless with this 1.5L Manual Food Chopper. Featuring 3 sharp curved stainless steel blades and an easy hand-press design, it quickly chops fruits, vegetables, nuts, herbs, and more—no electricity required.
-Regular Price: 938
-Sale Price: 938
+Wholesale Price: 888
+Regular Price: 1680
+Sale Price: 1348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

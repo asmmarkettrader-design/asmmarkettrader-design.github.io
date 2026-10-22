@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Botanical Wall Art Frames – 8x11" MDF Wood with Adhesive Backing
 Product ID: hhc-3754769
 SKU: hhc-3754769
@@ -7,11 +8,16 @@ Slug: set-of-3-botanical-wall-art-frames-8x11-mdf-wood-with-adhesive-backing-hhc
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/2419808694b5a7643de4f6a15c666f99.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/2419808694b5a7643de4f6a15c666f99.png
 Meta Title: Set of 3 Botanical Wall Art Frames – 8x11" MDF Wood with Adhesive Ba
 Meta Description: Buy Set of 3 Botanical Wall Art Frames – 8x11" MDF Wood with Adhesive Backing online in Pakistan from ASM VEO. Set of 3 MDF wood wall art frames featuring botan
 Description: Set of 3 MDF wood wall art frames featuring botanical designs. Ready to mount, 8x11" each.
-Regular Price: 473
-Sale Price: 473
+Wholesale Price: 423
+Regular Price: 870
+Sale Price: 694
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

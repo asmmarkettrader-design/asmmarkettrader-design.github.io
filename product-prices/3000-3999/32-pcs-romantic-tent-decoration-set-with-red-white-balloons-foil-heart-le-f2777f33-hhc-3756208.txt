@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 32 Pcs Romantic Tent Decoration Set With Red & White Balloons, Foil Heart, LED Lights & White Curtain Backdrop For Bedroom
 Product ID: hhc-3756208
 SKU: hhc-3756208
@@ -7,11 +8,16 @@ Slug: 32-pcs-romantic-tent-decoration-set-with-red-white-balloons-foil-heart-f27
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 32 Pcs Romantic Tent Decoration Set With Red & White Balloons, Foil
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/135e75d7d627d5c279ef8d5ab884f9e1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/135e75d7d627d5c279ef8d5ab884f9e1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/da5cf2eca3dddcb8f06d8fec84f35dd4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/42b4123fe3fcb0e78560552bda002940.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/04eb6964cb8e5129ae50f3b2b0c2f541.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/07/69210fa10f8b9f91abcc32075176d6d0.png
+Meta Title: 32 Pcs Romantic Tent Decoration Set With Red & White Balloons, Foil 
 Meta Description: Buy 32 Pcs Romantic Tent Decoration Set With Red & White Balloons, Foil Heart, LED Lights & White Curtain Backdrop For Bedroom online in Pakistan from ASM VEO.
 Description: Create A Dreamy And Romantic Bedroom Setup With This 32 Pcs Romantic Tent Decoration Set, Perfect For Proposals, Anniversaries, Valentine’s Day, And Surprise Celebrations.
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

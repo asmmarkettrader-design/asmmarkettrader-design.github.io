@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Resistance Bands Set - 11pcs Latex Pull Rope With Door Anchor, Handles, And Ankle Straps For Effective Home And Gym Workout Routines
 Product ID: hhc-3762193
 SKU: hhc-3762193
@@ -7,11 +8,16 @@ Slug: resistance-bands-set-11pcs-latex-pull-rope-with-door-anchor-handles-and-71
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/29cef4576562d1ad1856ff13fc02bd35.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/29cef4576562d1ad1856ff13fc02bd35.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/eb3bc800ed2896fc3e17d493e55ef69a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/303c19fb52e73f55c706d5ac52a609dc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/7da755dec84d56e0e8d03fe430832ce5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/20/85c6454e21d27491b31f1f2ef5dda4e3.jpg
 Meta Title: Resistance Bands Set - 11pcs Latex Pull Rope With Door Anchor, Handl
 Meta Description: Buy Resistance Bands Set - 11pcs Latex Pull Rope With Door Anchor, Handles, And Ankle Straps For Effective Home And Gym Workout Routines online in Pakistan from
 Description: The Resistance Bands Set Includes 11 Pieces Of Latex Pull Ropes, Door Anchor, Handles, And Ankle Straps Designed For Versatile Home And Gym Workouts.
-Regular Price: 1134
-Sale Price: 1134
+Wholesale Price: 1084
+Regular Price: 2000
+Sale Price: 1599
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

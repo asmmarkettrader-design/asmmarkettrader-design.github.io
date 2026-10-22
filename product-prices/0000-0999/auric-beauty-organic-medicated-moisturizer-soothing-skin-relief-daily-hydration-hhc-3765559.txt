@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Auric Beauty Organic Medicated Moisturizer – Soothing Skin Relief & Daily Hydration
 Product ID: hhc-3765559
 SKU: hhc-3765559
@@ -7,11 +8,16 @@ Slug: auric-beauty-organic-medicated-moisturizer-soothing-skin-relief-daily-hydr
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
-Meta Title: Auric Beauty Organic Medicated Moisturizer – Soothing Skin Relief &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/bf18d062a0fd940a920ba43fdf7fef71.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/bf18d062a0fd940a920ba43fdf7fef71.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/05c2d960e4d9bd283defe8f0e5d1c76d.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/8c4b3a2f2fb7fed193db487ce3f3c3d0.jfif
+Meta Title: Auric Beauty Organic Medicated Moisturizer – Soothing Skin Relief & 
 Meta Description: Buy Auric Beauty Organic Medicated Moisturizer – Soothing Skin Relief & Daily Hydration online in Pakistan from ASM VEO. Provide your skin with advanced therape
 Description: Provide your skin with advanced therapeutic care using the Auric Beauty Organic Medicated Moisturizer. Expertly designed to address sensitive, dry, or irritated skin conditions, this medicated formula combines the purity of certified organic ingredients with powerful soothing agents to calm inflammation and repair the skin barrier.The lightweight, non-greasy cream absorbs rapidly into the skin, delivering deep hydration without clogging pores. Whether you are dealing with seasonal dryness, minor irritation, or everyday environmental stress, this dermatologist-tested botanical moisturizer leaves your face and body feeling soft, protected, and deeply nourished.Key Features:Therapeutic Organic Formula: Blends certified organic botanicals with active soothing ingredients to calm irritation and redness.Intensive Moisture Repair: Penetrates deep into the skin layers to restore the natural moisture barrier and eliminate flaking.Lightweight &amp; Non-Greasy: Fast-absorbing cream leaves a clean, breathable finish without a heavy residue.Gentle on Sensitive Skin: Formulated without harsh chemicals or synthetic fragrances, making it safe for daily use.Multi-Purpose Hydration: Ideal for soothing dry patches, irritated skin areas, and everyday facial or body moisturizing.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

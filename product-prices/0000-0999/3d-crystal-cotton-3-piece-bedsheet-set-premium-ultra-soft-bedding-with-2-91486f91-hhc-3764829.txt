@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Crystal Cotton 3-Piece Bedsheet Set – Premium Ultra-Soft Bedding with 2 Matching Pillowcases (AY0010020)
 Product ID: hhc-3764829
 SKU: hhc-3764829
@@ -7,11 +8,16 @@ Slug: 3d-crystal-cotton-3-piece-bedsheet-set-premium-ultra-soft-bedding-with-914
 Category: Furniture
 Subcategory: Bedroom Furniture
 Brand: ASM VEO
-Meta Title: 3D Crystal Cotton 3-Piece Bedsheet Set – Premium Ultra-Soft Bedding
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/66e702650ae9711fed9f2204cf15b07c.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/66e702650ae9711fed9f2204cf15b07c.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/c96032fe47b06356a24df21c32f1b61c.png
+Meta Title: 3D Crystal Cotton 3-Piece Bedsheet Set – Premium Ultra-Soft Bedding 
 Meta Description: Buy 3D Crystal Cotton 3-Piece Bedsheet Set – Premium Ultra-Soft Bedding with 2 Matching Pillowcases (AY0010020) online in Pakistan from ASM VEO. Elevate your be
 Description: Elevate your bedroom with the 3D Crystal Cotton 3-Piece Bedsheet Set (AY0010020). Crafted from ultra-soft, breathable crystal cotton, this premium bed set features high-definition 3D print technology for vibrant, fade-resistant color. Designed for all-season comfort, exceptional durability, and effor
-Regular Price: 1673
-Sale Price: 1673
+Wholesale Price: 1673
+Regular Price: 3050
+Sale Price: 2439
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

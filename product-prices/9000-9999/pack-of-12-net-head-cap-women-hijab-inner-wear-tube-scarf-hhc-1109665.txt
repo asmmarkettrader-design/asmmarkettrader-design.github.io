@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 12 net head cap women hijab inner wear tube scarf
 Product ID: hhc-1109665
 SKU: hhc-1109665
@@ -7,11 +8,16 @@ Slug: pack-of-12-net-head-cap-women-hijab-inner-wear-tube-scarf-hhc-1109665
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-23-at-9.20.10-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/01/WhatsApp-Image-2024-01-23-at-9.20.10-AM-1.jpeg
 Meta Title: Pack of 12 net head cap women hijab inner wear tube scarf | Buy Onli
 Meta Description: Buy Pack of 12 net head cap women hijab inner wear tube scarf online in Pakistan from ASM VEO. product detailsPack of 12 net head cap women hijab inner wear tub
 Description: product detailsPack of 12 net head cap women hijab inner wear tube scarf. • Perfect for semi-formal occasions. • Free size, suitable for all ages. • Made of high-quality net material. • Ideal for year-round use. • Complementary product: hand wash only.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

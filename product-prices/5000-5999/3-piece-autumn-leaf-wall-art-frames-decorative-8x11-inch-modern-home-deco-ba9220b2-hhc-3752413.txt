@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-Piece Autumn Leaf Wall Art Frames – Decorative 8x11 Inch Modern Home Decor Set with Double Tape for Easy Wall Mounting
 Product ID: hhc-3752413
 SKU: hhc-3752413
@@ -7,11 +8,16 @@ Slug: 3-piece-autumn-leaf-wall-art-frames-decorative-8x11-inch-modern-home-de-ba
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/e9f5dc5fb5be8365cf832ac6432326d1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/e9f5dc5fb5be8365cf832ac6432326d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/f702534430b1c834f2918dc532ace5ad.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/5a3156d73329a2586b320e3a3cdad74e.png
 Meta Title: 3-Piece Autumn Leaf Wall Art Frames – Decorative 8x11 Inch Modern Ho
 Meta Description: Buy 3-Piece Autumn Leaf Wall Art Frames – Decorative 8x11 Inch Modern Home Decor Set with Double Tape for Easy Wall Mounting online in Pakistan from ASM VEO. St
 Description: Stylish 3-piece autumn leaf design wall art frames. Each 8x11 inch frame comes with double tape for hassle-free wall mounting. Perfect for modern home décor.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

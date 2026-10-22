@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Winter Fleece Poncho with High Neck, Tassel Design & Adjustable Short Sleeves – For Girls/Princess Free Sizes
 Product ID: hhc-3753592
 SKU: hhc-3753592
@@ -7,11 +8,16 @@ Slug: winter-fleece-poncho-with-high-neck-tassel-design-adjustable-short-slee-86
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/9b297504c05796d7a6c4aafc60bf3fb2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/9b297504c05796d7a6c4aafc60bf3fb2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/d0a1b55e0d9f47086af2ddd683a0203f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/2ceefc4940568feb40ab165683c86b44.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/15/c7e676fadb1b4647bb7fe437ae80afe7.jpeg
 Meta Title: Winter Fleece Poncho with High Neck, Tassel Design & Adjustable Shor
 Meta Description: Buy Winter Fleece Poncho with High Neck, Tassel Design & Adjustable Short Sleeves – For Girls/Princess Free Sizes online in Pakistan from ASM VEO. A warm and st
 Description: A warm and stylish winter fleece poncho designed with a high neck, cute tassels, and adjustable short sleeves—perfect for your little princess.
-Regular Price: 1020
-Sale Price: 1020
+Wholesale Price: 970
+Regular Price: 1830
+Sale Price: 1466
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

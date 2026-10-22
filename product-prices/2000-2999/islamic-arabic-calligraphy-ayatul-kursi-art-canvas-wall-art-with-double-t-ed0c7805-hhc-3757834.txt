@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Arabic Calligraphy Ayatul Kursi Art Canvas Wall Art With Double Tape | 12x16 Inches
 Product ID: hhc-3757834
 SKU: hhc-3757834
@@ -7,11 +8,16 @@ Slug: islamic-arabic-calligraphy-ayatul-kursi-art-canvas-wall-art-with-double-ed
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/3d9e16050b360dc350a9b8df32343cc8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/3d9e16050b360dc350a9b8df32343cc8.jpeg
 Meta Title: Islamic Arabic Calligraphy Ayatul Kursi Art Canvas Wall Art With Dou
 Meta Description: Buy Islamic Arabic Calligraphy Ayatul Kursi Art Canvas Wall Art With Double Tape | 12x16 Inches online in Pakistan from ASM VEO. Bring Spiritual Beauty To Your
 Description: Bring Spiritual Beauty To Your Home With This Islamic Arabic Calligraphy Ayatul Kursi Art Canvas Measuring 12x16 Inches And Including Double Tape For Easy Hanging.
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

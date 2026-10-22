@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 3 Decorative Wall Art Canvas Frames – Modern 3 Pcs Wall Frame Set 8x16 Inch
 Product ID: hhc-3759314
 SKU: hhc-3759314
@@ -7,11 +8,16 @@ Slug: set-of-3-decorative-wall-art-canvas-frames-modern-3-pcs-wall-frame-set-8x1
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/15/26ca11e7da842da3ca8b85f2a361c16e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/15/26ca11e7da842da3ca8b85f2a361c16e.jpeg
 Meta Title: Set of 3 Decorative Wall Art Canvas Frames – Modern 3 Pcs Wall Frame
 Meta Description: Buy Set of 3 Decorative Wall Art Canvas Frames – Modern 3 Pcs Wall Frame Set 8x16 Inch online in Pakistan from ASM VEO. Enhance your interior décor with this mo
 Description: Enhance your interior décor with this modern 3-piece wall art canvas frame set. Designed with stylish artwork and premium-quality canvas printing, these decorative frames add an elegant touch to living rooms, bedrooms, offices, and hallways. Each frame measures 8x16 inches, making them perfect for cr
-Regular Price: 782
-Sale Price: 782
+Wholesale Price: 732
+Regular Price: 1400
+Sale Price: 1121
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

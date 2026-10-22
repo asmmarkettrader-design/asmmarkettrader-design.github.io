@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pc Shopper Bags Handle Grip Click &amp; Carry Grocery Bag Carrier, 1 Pack,
 Product ID: hhc-783028
 SKU: hhc-783028
@@ -7,11 +8,16 @@ Slug: 1-pc-shopper-bags-handle-grip-click-amp-carry-grocery-bag-carrier-1-pack-h
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-07-at-5.12.26-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-07-at-5.12.26-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-07-at-5.12.25-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/319148_2774759_OR.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/319148_2774758_HD.webp
 Meta Title: 1 Pc Shopper Bags Handle Grip Click &amp; Carry Grocery Bag Carrier,
 Meta Description: Buy 1 Pc Shopper Bags Handle Grip Click &amp; Carry Grocery Bag Carrier, 1 Pack, online in Pakistan from ASM VEO. product details Multipurpose: Carry groceries,
 Description: product details Multipurpose: Carry groceries, paint cans, sports gear, and other heavy objects with handles. Carry in your hands or wear over your shoulders for a hands-free carry. Our handy grocery bag carrier can also be used to easily carry dry cleaning, construction pails, ski boots and multiple dog leashes at once. It’s great for seniors with dexterity issues, busy moms, Carry more heavy items with less effort
-Regular Price: 798
-Sale Price: 798
+Wholesale Price: 748
+Regular Price: 1430
+Sale Price: 1145
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

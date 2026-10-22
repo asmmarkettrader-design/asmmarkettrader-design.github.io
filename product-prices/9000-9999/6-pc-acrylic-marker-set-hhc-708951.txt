@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 pc acrylic marker set
 Product ID: hhc-708951
 SKU: hhc-708951
@@ -7,11 +8,16 @@ Slug: 6-pc-acrylic-marker-set-hhc-708951
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-4.48.25-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-24-at-4.48.25-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/91459e5ccd356ebf79f874f9aa49875e.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/49c4e9d0fd68882cbae0ad465cd1d8b9.jpg_750x750.jpg_.webp
 Meta Title: 6 pc acrylic marker set | Buy Online in Pakistan
 Meta Description: Buy 6 pc acrylic marker set online in Pakistan from ASM VEO. Product details Write on all surfaces including Plastic, Ceramic, Paper, Rock, Canvas, Por Cash on
 Description: Product details Write on all surfaces including Plastic, Ceramic, Paper, Rock, Canvas, Porcelain, Wood, Metal &amp; glass 6 attractive colours Quick drying Fade &amp; Water resistant ink Non-toxic Bullet Tip
-Regular Price: 692
-Sale Price: 692
+Wholesale Price: 642
+Regular Price: 1240
+Sale Price: 991
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

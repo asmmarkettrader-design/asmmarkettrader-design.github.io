@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: High Quality Silicone Foot Care Socks – Anti-Cracking Moisturizing Gel Socks 62gram (1 Pair)
 Product ID: hhc-3752485
 SKU: hhc-3752485
@@ -7,11 +8,16 @@ Slug: high-quality-silicone-foot-care-socks-anti-cracking-moisturizing-gel-so-e4
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/9a430c6d4c58bf6532f55367295c8dbe.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/9a430c6d4c58bf6532f55367295c8dbe.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/10/bd7c0e7741f6925bf51c85306c24643e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/95f32faca9f1a4c9fbdc60fab8b8c855.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/081251adbbf12f435423558078e4fcf9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/843127d0c5a4a80c613d5bfc1ba68461.jpeg
 Meta Title: High Quality Silicone Foot Care Socks – Anti-Cracking Moisturizing G
 Meta Description: Buy High Quality Silicone Foot Care Socks – Anti-Cracking Moisturizing Gel Socks 62gram (1 Pair) online in Pakistan from ASM VEO. 1 Pair of silicone moisturizin
 Description: 1 Pair of silicone moisturizing gel socks designed to repair cracked heels, soften rough skin, and lock in hydration for smooth, healthy feet.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

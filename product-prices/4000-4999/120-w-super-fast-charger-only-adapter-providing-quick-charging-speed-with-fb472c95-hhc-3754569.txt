@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 120 W Super Fast Charger Only Adapter Providing Quick Charging Speed With Reliable Performance And Durable Design - Mix Color (Without Box and Cable)
 Product ID: hhc-3754569
 SKU: hhc-3754569
@@ -7,11 +8,16 @@ Slug: 120-w-super-fast-charger-only-adapter-providing-quick-charging-speed-wi-fb
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/bc338d4f9fae8ff8c004368d002e6ded.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/bc338d4f9fae8ff8c004368d002e6ded.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/60d3296e49ce2be2ca88d8369edb57de.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/9b27a4885b06934f72a05aa3aae595b9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/b5d47b7bfc5a4c66ff2b5938b5db8e34.png
 Meta Title: 120 W Super Fast Charger Only Adapter Providing Quick Charging Speed
 Meta Description: Buy 120 W Super Fast Charger Only Adapter Providing Quick Charging Speed With Reliable Performance And Durable Design - Mix Color (Without Box and Cable) online
 Description: 120 W Super Fast Charger Only Adapter Offering Quick Power Delivery With Efficient Use
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

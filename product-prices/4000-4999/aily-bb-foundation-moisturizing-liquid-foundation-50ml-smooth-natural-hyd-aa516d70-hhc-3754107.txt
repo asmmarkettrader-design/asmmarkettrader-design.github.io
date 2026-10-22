@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Aily BB Foundation – Moisturizing Liquid Foundation | 50ml | Smooth, Natural & Hydrating Coverage
 Product ID: hhc-3754107
 SKU: hhc-3754107
@@ -7,11 +8,16 @@ Slug: aily-bb-foundation-moisturizing-liquid-foundation-50ml-smooth-natural-h-aa
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/550377b52c0139c402df3cdfc9fe8758.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/550377b52c0139c402df3cdfc9fe8758.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/abc76ae659f26989ec4df2423d7bb1da.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/cb6b5a48bf45bcd92916b2345878ad8a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/1ae4e7f7e99d9bb6b563d539bb61e8e2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/1aa7ba5f843614f117ce8d52a42d51fb.jpeg
 Meta Title: Aily BB Foundation – Moisturizing Liquid Foundation | 50ml | Smooth,
 Meta Description: Buy Aily BB Foundation – Moisturizing Liquid Foundation | 50ml | Smooth, Natural & Hydrating Coverage online in Pakistan from ASM VEO. A lightweight, moisturizi
 Description: A lightweight, moisturizing BB foundation that delivers smooth, natural coverage while keeping your skin hydrated all day. Perfect for daily wear.
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

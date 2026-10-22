@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Electric Stainless Steel Coffee & Masala Grinder Machine – Multipurpose Spice, Dry Fruit & Herb Grinder
 Product ID: hhc-3762937
 SKU: hhc-3762937
@@ -7,11 +8,16 @@ Slug: electric-stainless-steel-coffee-masala-grinder-machine-multipurpose-spi-1f
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/3101b33eacb02de401e0160c842bae7f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/05/3101b33eacb02de401e0160c842bae7f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/ff305b88eebab63bf866e70121b85324.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/285e9b8ac32cd6b3583cbcdea5ccbe41.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/592122ecca59eec61c1e70100925aa40.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/30/35d43deaa45269378c28361eea3e63a2.jpeg
 Meta Title: Electric Stainless Steel Coffee & Masala Grinder Machine – Multipurp
 Meta Description: Buy Electric Stainless Steel Coffee & Masala Grinder Machine – Multipurpose Spice, Dry Fruit & Herb Grinder online in Pakistan from ASM VEO. Grind coffee beans,
 Description: Grind coffee beans, spices, herbs, dry fruits, nuts, and seeds effortlessly with this Electric Stainless Steel Masala Grinder. Featuring sharp stainless steel blades, one-touch operation, and a compact design, it delivers fast and consistent grinding for everyday kitchen use.
-Regular Price: 1814
-Sale Price: 1814
+Wholesale Price: 1814
+Regular Price: 3290
+Sale Price: 2629
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

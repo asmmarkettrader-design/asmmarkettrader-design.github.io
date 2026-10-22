@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Wall Frame 12x16 Inches – Allah Calligraphy Art with Double Tape for Easy Mounting
 Product ID: hhc-3752421
 SKU: hhc-3752421
@@ -7,11 +8,16 @@ Slug: islamic-wall-frame-12x16-inches-allah-calligraphy-art-with-double-tape-234
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Islamic Wall Frame 12x16 Inches – Allah Calligraphy Art with Double
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/e4198ee6db22114f2ed8436c43eb7507.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/29/e4198ee6db22114f2ed8436c43eb7507.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/c0322cf05e159b91da2378a21dea9c8f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/25/368fec37ebffda43bb6a3e9b8e3c97ff.png
+Meta Title: Islamic Wall Frame 12x16 Inches – Allah Calligraphy Art with Double 
 Meta Description: Buy Islamic Wall Frame 12x16 Inches – Allah Calligraphy Art with Double Tape for Easy Mounting online in Pakistan from ASM VEO. Elegant 12x16 inch Islamic wall
 Description: Elegant 12x16 inch Islamic wall frame featuring Allah calligraphy artwork. Comes with double tape for easy wall mounting, perfect for home décor or gifting.
-Regular Price: 502
-Sale Price: 502
+Wholesale Price: 452
+Regular Price: 920
+Sale Price: 738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

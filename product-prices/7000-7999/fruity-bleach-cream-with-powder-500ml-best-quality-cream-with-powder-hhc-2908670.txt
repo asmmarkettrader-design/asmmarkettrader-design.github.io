@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fruity Bleach Cream With Powder 500ml | Best Quality Cream with Powder
 Product ID: hhc-2908670
 SKU: hhc-2908670
@@ -7,11 +8,16 @@ Slug: fruity-bleach-cream-with-powder-500ml-best-quality-cream-with-powder-hhc-2
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/fruity_bleach-moontouch.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/fruity_bleach-moontouch.jpg
 Meta Title: Fruity Bleach Cream With Powder 500ml | Best Quality Cream with Powd
 Meta Description: Buy Fruity Bleach Cream With Powder 500ml | Best Quality Cream with Powder online in Pakistan from ASM VEO. Fruity Bleach Cream With Powder 500ml | Best Quality
 Description: Fruity Bleach Cream With Powder 500ml | Best Quality Cream with Powder Fruity Bleach Cream With Powder By Moon Touch This Fruity Bleach Cream With Powder is the perfect addition to your skincare routine. With its powerful formula, it effectively lightens and brightens your skin for a glowing complexion. this cream will leave you feeling refreshed and rejuvenated. Try it now for visible results!
-Regular Price: 1525
-Sale Price: 1525
+Wholesale Price: 1525
+Regular Price: 2800
+Sale Price: 2239
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

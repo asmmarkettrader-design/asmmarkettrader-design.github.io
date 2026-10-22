@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Outdoor Portable Multitool Plier Knife Key Chain Screwdriver Mini Multi Tools With Leather Pouch For Camping, Hiking, And Everyday Use
 Product ID: hhc-3752640
 SKU: hhc-3752640
@@ -7,11 +8,16 @@ Slug: stainless-steel-outdoor-portable-multitool-plier-knife-key-chain-screwd-48
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/7108ced195554548f5df2de7b05191c0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/07/7108ced195554548f5df2de7b05191c0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/d396cdc0a108867cbc8f7d7bd00e198b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/09f983ed98712fdd79a5cc2040c95a28.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/d23606d0c87cfe75b21e549788670abf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/e7ecad44777ad41fc32e91b4fdb040a9.png
 Meta Title: Stainless Steel Outdoor Portable Multitool Plier Knife Key Chain Scr
 Meta Description: Buy Stainless Steel Outdoor Portable Multitool Plier Knife Key Chain Screwdriver Mini Multi Tools With Leather Pouch For Camping, Hiking, And Everyday Use onlin
 Description: High Quality Stainless Steel Outdoor Portable Multitool Featuring Plier, Knife, Screwdriver, And Key Chain, Packed In A Premium Leather Pouch For Easy Carrying.
-Regular Price: 629
-Sale Price: 629
+Wholesale Price: 579
+Regular Price: 1120
+Sale Price: 900
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

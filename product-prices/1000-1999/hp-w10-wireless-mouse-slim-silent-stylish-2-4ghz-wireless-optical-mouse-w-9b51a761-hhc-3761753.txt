@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HP W10 Wireless Mouse - Slim Silent Stylish 2.4GHz Wireless Optical Mouse With Ergonomic Design Plug And Play USB Receiver For Laptop PC (Random Color)
 Product ID: hhc-3761753
 SKU: hhc-3761753
@@ -7,11 +8,16 @@ Slug: hp-w10-wireless-mouse-slim-silent-stylish-2-4ghz-wireless-optical-mouse-9b
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: HP W10 Wireless Mouse - Slim Silent Stylish 2.4GHz Wireless Optical
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/deb23ba37d3b9e8e858e91d632638f33.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/deb23ba37d3b9e8e858e91d632638f33.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/6fea9b3612712d8981ad904650fe7cec.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/89400777e5fcfefbf9a21c4e982f51fa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/c45e1430c3952d008885816cb9bd6c33.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/43ead5aaefe908bc34d6e6cd2b320108.jpeg
+Meta Title: HP W10 Wireless Mouse - Slim Silent Stylish 2.4GHz Wireless Optical 
 Meta Description: Buy HP W10 Wireless Mouse - Slim Silent Stylish 2.4GHz Wireless Optical Mouse With Ergonomic Design Plug And Play USB Receiver For Laptop PC (Random Color) onli
 Description: The HP W10 Wireless Mouse Features A Slim Ultra-Lightweight Design With Silent Click Buttons And A High-Precision Optical Sensor For Smooth Performance.
-Regular Price: 887
-Sale Price: 887
+Wholesale Price: 837
+Regular Price: 1590
+Sale Price: 1274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

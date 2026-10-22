@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flamingo Tire Gel F353 – Long Lasting High Gloss Tire Shine & Protection Formula 500ML
 Product ID: hhc-3756559
 SKU: hhc-3756559
@@ -7,11 +8,16 @@ Slug: flamingo-tire-gel-f353-long-lasting-high-gloss-tire-shine-protection-fo-02
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/d26c581e09b5003cd1d3a97ffd29b709.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/04/d26c581e09b5003cd1d3a97ffd29b709.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/656b91281637878fe2313abaa5f5b791.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/e0055a3c04978e7db74fbc480e3ef381.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/f78108cd3652c6d952ecd15b2d41e093.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/b8463a5d2405d874f910f2eee05b6294.jpeg
 Meta Title: Flamingo Tire Gel F353 – Long Lasting High Gloss Tire Shine & Protec
 Meta Description: Buy Flamingo Tire Gel F353 – Long Lasting High Gloss Tire Shine & Protection Formula 500ML online in Pakistan from ASM VEO. Premium waterproof polymer tire gel
 Description: Premium waterproof polymer tire gel that restores deep black shine, protects against cracking and fading, and keeps tires looking new with a long-lasting glossy finish.
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

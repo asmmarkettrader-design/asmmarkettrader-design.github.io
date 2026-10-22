@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Refillable Gas Kitchen BBQ Candle Lighter with Gas Refill Bottle – Long Nozzle Multipurpose Flame Lighter
 Product ID: hhc-3761779
 SKU: hhc-3761779
@@ -7,11 +8,16 @@ Slug: refillable-gas-kitchen-bbq-candle-lighter-with-gas-refill-bottle-long-n-e3
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/e3690c8c61e7a30665fc569ca8b5aeb1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/e3690c8c61e7a30665fc569ca8b5aeb1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/e5ceb162d6e1378b55006789edf72cee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/f364ebdcb9ddacfa4665efae9213a4fc.jpeg
 Meta Title: Refillable Gas Kitchen BBQ Candle Lighter with Gas Refill Bottle – L
 Meta Description: Buy Refillable Gas Kitchen BBQ Candle Lighter with Gas Refill Bottle – Long Nozzle Multipurpose Flame Lighter online in Pakistan from ASM VEO. Long nozzle refil
 Description: Long nozzle refillable gas lighter with refill bottle, ideal for lighting gas stoves, candles, BBQ grills, and more.
-Regular Price: 558
-Sale Price: 558
+Wholesale Price: 508
+Regular Price: 1000
+Sale Price: 797
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

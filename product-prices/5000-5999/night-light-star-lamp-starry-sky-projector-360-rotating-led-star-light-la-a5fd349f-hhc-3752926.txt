@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Night Light Star Lamp Starry Sky Projector | 360° Rotating LED Star Light Lamp With Multicolor Projection | Perfect Table Night Lamp Gift For Babies And Children (Random Color)
 Product ID: hhc-3752926
 SKU: hhc-3752926
@@ -7,11 +8,16 @@ Slug: night-light-star-lamp-starry-sky-projector-360-rotating-led-star-light-a5f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/873e08237ab91aabfebe9572e54c2c01.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/873e08237ab91aabfebe9572e54c2c01.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/bc7db7b56f2c4de46591a4b0572f5281.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/de1ad4e47902d0c898ecfbbb9cb97778.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/034c64e453c749f13039784b398f776f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/7b067df0b30180a20e0055ed25dcfc2d.jpg
 Meta Title: Night Light Star Lamp Starry Sky Projector | 360° Rotating LED Star
 Meta Description: Buy Night Light Star Lamp Starry Sky Projector | 360° Rotating LED Star Light Lamp With Multicolor Projection | Perfect Table Night Lamp Gift For Babies And Chi
 Description: Magical 360° Rotating LED Star Night Light Projector With Multicolor Options, Creating A Soothing Starry Sky Ambience Perfect For Babies, Kids, And Bedrooms.
-Regular Price: 1147
-Sale Price: 1147
+Wholesale Price: 1097
+Regular Price: 2020
+Sale Price: 1618
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

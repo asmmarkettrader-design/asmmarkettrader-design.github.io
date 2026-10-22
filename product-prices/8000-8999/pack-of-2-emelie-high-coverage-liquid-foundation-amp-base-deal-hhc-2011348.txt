@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 2 Emelie High Coverage Liquid Foundation &amp; Base Deal
 Product ID: hhc-2011348
 SKU: hhc-2011348
@@ -7,11 +8,16 @@ Slug: pack-of-2-emelie-high-coverage-liquid-foundation-amp-base-deal-hhc-2011348
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-06-at-10.22.00-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/09/WhatsApp-Image-2024-09-06-at-10.22.00-PM.jpeg
 Meta Title: Pack of 2 Emelie High Coverage Liquid Foundation &amp; Base Deal | B
 Meta Description: Buy Pack of 2 Emelie High Coverage Liquid Foundation &amp; Base Deal online in Pakistan from ASM VEO. Brand Name: Emelie Formulation: Liquid, Matte Sunblock: Ye
 Description: Brand Name: Emelie Formulation: Liquid, Matte Sunblock: Yes Benefit: Moisturizer,Concealer NET WT:40ml Size: Full Size Ingredient: Mineral
-Regular Price: 925
-Sale Price: 925
+Wholesale Price: 875
+Regular Price: 1660
+Sale Price: 1329
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

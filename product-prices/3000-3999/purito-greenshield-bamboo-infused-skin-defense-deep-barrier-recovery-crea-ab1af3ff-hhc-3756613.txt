@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Purito GreenShield Bamboo Infused Skin Defense & Deep Barrier Recovery Cream – 120g Moisturizing and Protective Face Cream
 Product ID: hhc-3756613
 SKU: hhc-3756613
@@ -7,11 +8,16 @@ Slug: purito-greenshield-bamboo-infused-skin-defense-deep-barrier-recovery-cr-ab
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/6409a3116a7cb52d10b607b4b45fb843.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/6409a3116a7cb52d10b607b4b45fb843.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/5d1523068ff58c18399e9093803c96f4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/67bc527d35e75a780054fc42cfdcba1d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/4869d750a2d7b3023ea866a0e92ac4a9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/eec2858202bc978cfe1c2db056694e43.jpeg
 Meta Title: Purito GreenShield Bamboo Infused Skin Defense & Deep Barrier Recove
 Meta Description: Buy Purito GreenShield Bamboo Infused Skin Defense & Deep Barrier Recovery Cream – 120g Moisturizing and Protective Face Cream online in Pakistan from ASM VEO.
 Description: Purito GreenShield Bamboo Infused Skin Defense Cream is a nourishing and protective moisturizer designed to strengthen the skin barrier, deeply hydrate, and protect against environmental stressors for healthy, smooth, and balanced skin.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

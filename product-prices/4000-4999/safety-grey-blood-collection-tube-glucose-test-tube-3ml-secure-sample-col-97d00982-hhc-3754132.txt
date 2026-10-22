@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Safety Grey Blood Collection Tube – Glucose Test Tube 3ML, Secure Sample Collection for Laboratory Use
 Product ID: hhc-3754132
 SKU: hhc-3754132
@@ -7,11 +8,16 @@ Slug: safety-grey-blood-collection-tube-glucose-test-tube-3ml-secure-sample-c-97
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/223bf21f6167f1b90bb89b0c9026663e.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/223bf21f6167f1b90bb89b0c9026663e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/ff098d48591705cb5bff3c73565e5439.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/04/0a8ecdf979fbf8906eeba7ff2482a75a.png
 Meta Title: Safety Grey Blood Collection Tube – Glucose Test Tube 3ML, Secure Sa
 Meta Description: Buy Safety Grey Blood Collection Tube – Glucose Test Tube 3ML, Secure Sample Collection for Laboratory Use online in Pakistan from ASM VEO. Reliable safety grey
 Description: Reliable safety grey glucose blood collection tube, 3ML capacity, durable design for secure lab sample handling.
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

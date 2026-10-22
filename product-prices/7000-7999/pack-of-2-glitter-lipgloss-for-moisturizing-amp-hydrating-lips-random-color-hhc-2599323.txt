@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 2 Glitter Lipgloss For Moisturizing &amp; Hydrating Lips (random color)
 Product ID: hhc-2599323
 SKU: hhc-2599323
@@ -7,11 +8,16 @@ Slug: pack-of-2-glitter-lipgloss-for-moisturizing-amp-hydrating-lips-random-colo
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-1.11.23-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-1.11.23-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-11-at-1.11.22-PM-1.jpeg
 Meta Title: Pack of 2 Glitter Lipgloss For Moisturizing &amp; Hydrating Lips (ra
 Meta Description: Buy Pack of 2 Glitter Lipgloss For Moisturizing &amp; Hydrating Lips (random color) online in Pakistan from ASM VEO. Product Description Pack of 2 Glitter Lipgl
 Description: Product Description Pack of 2 Glitter Lipgloss For Moisturizing &amp; Hydrating Lips (random color) Material: Liquid Texture: Glossy Color: Multicolor Product Feature: Glossy Finish Package Includes: 2 x Lip Gloss Original Picture
-Regular Price: 625
-Sale Price: 625
+Wholesale Price: 575
+Regular Price: 1120
+Sale Price: 894
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

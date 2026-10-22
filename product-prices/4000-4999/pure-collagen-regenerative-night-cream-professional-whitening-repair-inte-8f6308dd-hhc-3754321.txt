@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pure Collagen Regenerative Night Cream - Professional Whitening, Repair & Intense Moisturizing Formula
 Product ID: hhc-3754321
 SKU: hhc-3754321
@@ -7,11 +8,16 @@ Slug: pure-collagen-regenerative-night-cream-professional-whitening-repair-in-8f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/a06bb51959bdc89de74876dfc1e62cdb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/a06bb51959bdc89de74876dfc1e62cdb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3df97c52f4cd7a26a7c590bfbaa17e36.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/26cca61e7e52162f194210a78ed57277.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/ea7025111e9a2f3c296034df46d39fa5.png
 Meta Title: Pure Collagen Regenerative Night Cream - Professional Whitening, Rep
 Meta Description: Buy Pure Collagen Regenerative Night Cream - Professional Whitening, Repair & Intense Moisturizing Formula online in Pakistan from ASM VEO. This powerful Regene
 Description: This powerful Regenerative Night Cream is formulated with 100% pure collagen to work while you sleep. It intensively repairs, deeply moisturizes, and supports a Professional Whitening Program that visibly makes your skin lighter and more radiant day by day. Wake up to smoother, rejuvenated skin.
-Regular Price: 1120
-Sale Price: 1120
+Wholesale Price: 1070
+Regular Price: 1970
+Sale Price: 1579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

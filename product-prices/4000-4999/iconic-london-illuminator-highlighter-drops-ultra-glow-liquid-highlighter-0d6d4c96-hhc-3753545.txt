@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Iconic London Illuminator Highlighter Drops – Ultra Glow Liquid Highlighter For Radiant, Luminous Skin Finish
 Product ID: hhc-3753545
 SKU: hhc-3753545
@@ -7,11 +8,16 @@ Slug: iconic-london-illuminator-highlighter-drops-ultra-glow-liquid-highlight-0d
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/d693000b1024514459402c8f056131e5.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/d693000b1024514459402c8f056131e5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/e3e60264910303ed12fa0f34e030e532.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/e160237c5e22ac60e4d8c3e8bac4e073.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/ddd3a35ecaca293fdf93b376a287fcb8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/13/00185baaf3067d614f9395c80150d0a6.jpeg
 Meta Title: Iconic London Illuminator Highlighter Drops – Ultra Glow Liquid High
 Meta Description: Buy Iconic London Illuminator Highlighter Drops – Ultra Glow Liquid Highlighter For Radiant, Luminous Skin Finish online in Pakistan from ASM VEO. Iconic London
 Description: Iconic London Illuminator Delivers A Radiant, Dewy Glow With Lightweight Liquid Formula That Enhances Your Natural Beauty For A Stunning Luminous Finish.
-Regular Price: 375
-Sale Price: 375
+Wholesale Price: 325
+Regular Price: 698
+Sale Price: 548
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

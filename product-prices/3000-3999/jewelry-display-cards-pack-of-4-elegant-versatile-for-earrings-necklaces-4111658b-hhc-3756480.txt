@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Jewelry Display Cards – Pack of 4 | Elegant & Versatile for Earrings, Necklaces & Bracelets (Without Jewelry)
 Product ID: hhc-3756480
 SKU: hhc-3756480
@@ -7,11 +8,16 @@ Slug: jewelry-display-cards-pack-of-4-elegant-versatile-for-earrings-necklace-41
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/3e0f8aa063a7556f1bda52f3c61e1b2e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/3e0f8aa063a7556f1bda52f3c61e1b2e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/67f967047e6cd17cf3f6661c2bcb2d51.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/819fa9c34f357fabbc8a533b580cf205.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/20/ab09f9371a12ed24a2cd27d2331b7516.jpeg
 Meta Title: Jewelry Display Cards – Pack of 4 | Elegant & Versatile for Earrings
 Meta Description: Buy Jewelry Display Cards – Pack of 4 | Elegant & Versatile for Earrings, Necklaces & Bracelets (Without Jewelry) online in Pakistan from ASM VEO. Showcase your
 Description: Showcase your jewelry in style with this set of 4 high-quality display cards. Perfect for earrings, necklaces, and bracelets, these cards enhance your presentation for retail, craft shows, or personal organization.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

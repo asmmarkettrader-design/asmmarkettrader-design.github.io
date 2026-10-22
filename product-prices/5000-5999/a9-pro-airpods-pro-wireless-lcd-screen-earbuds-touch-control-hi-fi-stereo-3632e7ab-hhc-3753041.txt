@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: A9 Pro AirPods Pro – Wireless LCD Screen Earbuds | Touch Control, Hi-Fi Stereo Sound, Bluetooth 5.3 Earphones with Charging Case
 Product ID: hhc-3753041
 SKU: hhc-3753041
@@ -7,11 +8,16 @@ Slug: a9-pro-airpods-pro-wireless-lcd-screen-earbuds-touch-control-hi-fi-ster-36
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/43d538fc90c26ff2b96e028af2564485.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/43d538fc90c26ff2b96e028af2564485.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/4a85f86ac8870fdc2883b3c31c8e2b8b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/7093be2d1f757657318ef277ae802c19.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/dc3f12ac893650a5534497aacf4bc8be.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/25/f16980bc74320920579531798654aebd.png
 Meta Title: A9 Pro AirPods Pro – Wireless LCD Screen Earbuds | Touch Control, Hi
 Meta Description: Buy A9 Pro AirPods Pro – Wireless LCD Screen Earbuds | Touch Control, Hi-Fi Stereo Sound, Bluetooth 5.3 Earphones with Charging Case online in Pakistan from ASM
 Description: Experience premium sound and style with the A9 Pro AirPods Pro. Featuring an LCD display for battery status, advanced Bluetooth 5.3 connectivity, touch control, noise reduction, and a sleek ergonomic design. Perfect for music, calls, and workouts.
-Regular Price: 2516
-Sale Price: 2516
+Wholesale Price: 2516
+Regular Price: 4470
+Sale Price: 3577
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

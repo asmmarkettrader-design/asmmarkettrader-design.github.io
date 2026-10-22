@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dolphin Paint Brush Super | High Quality Wall & Paint Brush (4 Inch)
 Product ID: hhc-3757847
 SKU: hhc-3757847
@@ -7,11 +8,16 @@ Slug: dolphin-paint-brush-super-high-quality-wall-paint-brush-4-inch-hhc-3757847
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/e58a2bac135327f3fa21fad3775be596.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/e58a2bac135327f3fa21fad3775be596.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/93119f25c40850d2127689ddf5d879ce.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/62f54ad1ecadad041982c7b2abcc8f1f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/20/d81ed6361fdd79cbc5b04647a02e269d.jpeg
 Meta Title: Dolphin Paint Brush Super | High Quality Wall & Paint Brush (4 Inch)
 Meta Description: Buy Dolphin Paint Brush Super | High Quality Wall & Paint Brush (4 Inch) online in Pakistan from ASM VEO. Dolphin 4” Super paint brush designed for smooth and e
 Description: Dolphin 4” Super paint brush designed for smooth and even paint application. Ideal for walls, wood, and furniture work.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

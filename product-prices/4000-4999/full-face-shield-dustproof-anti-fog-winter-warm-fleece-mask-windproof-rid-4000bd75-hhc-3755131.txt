@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Full Face Shield | Dustproof Anti‑Fog | Winter Warm Fleece Mask | Windproof Riding HD Shield – 1Pc Random Colour
 Product ID: hhc-3755131
 SKU: hhc-3755131
@@ -7,11 +8,16 @@ Slug: full-face-shield-dustproof-anti-fog-winter-warm-fleece-mask-windproof-r-40
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/81dbfa26a5e5b134eb4f4053a7ef7bf3.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/16/81dbfa26a5e5b134eb4f4053a7ef7bf3.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/6791292299afaf9118188f8f46997cc1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/6ca78a57141cbdebbbac88609056b375.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/fb7feb5b21f377359e23df62a0eb549f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/f1d663212b173e0ec547a1167ca7758d.jpeg
 Meta Title: Full Face Shield | Dustproof Anti‑Fog | Winter Warm Fleece Mask | Wi
 Meta Description: Buy Full Face Shield | Dustproof Anti‑Fog | Winter Warm Fleece Mask | Windproof Riding HD Shield – 1Pc Random Colour online in Pakistan from ASM VEO. Full face
 Description: Full face shield with dustproof, anti‑fog design. Winter warm fleece mask, windproof for riding. 1Pc random colour.
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

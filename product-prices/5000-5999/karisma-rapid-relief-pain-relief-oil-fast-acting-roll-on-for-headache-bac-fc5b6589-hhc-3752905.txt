@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: KARISMA Rapid Relief Pain Relief Oil – Fast Acting Roll-On for Headache, Backache, Arthritis & Muscle Pain
 Product ID: hhc-3752905
 SKU: hhc-3752905
@@ -7,11 +8,16 @@ Slug: karisma-rapid-relief-pain-relief-oil-fast-acting-roll-on-for-headache-b-fc
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/abbd0962f783af011234ac6ad2b6fcd7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/abbd0962f783af011234ac6ad2b6fcd7.jpg
 Meta Title: KARISMA Rapid Relief Pain Relief Oil – Fast Acting Roll-On for Heada
 Meta Description: Buy KARISMA Rapid Relief Pain Relief Oil – Fast Acting Roll-On for Headache, Backache, Arthritis & Muscle Pain online in Pakistan from ASM VEO. Just 2 drops for
 Description: Just 2 drops for fast comfort. KARISMA Rapid Relief Oil helps ease headache, backache, joint and muscle pain with a soothing roll-on formula that works quickly and is easy to apply.
-Regular Price: 1820
-Sale Price: 1820
+Wholesale Price: 1820
+Regular Price: 3300
+Sale Price: 2637
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

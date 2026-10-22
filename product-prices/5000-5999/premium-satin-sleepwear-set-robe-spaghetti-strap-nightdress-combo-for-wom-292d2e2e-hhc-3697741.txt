@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Satin Sleepwear Set – Robe & Spaghetti Strap Nightdress Combo for Women – Free Size (DC-2004)
 Product ID: hhc-3697741
 SKU: hhc-3697741
@@ -7,11 +8,16 @@ Slug: premium-satin-sleepwear-set-robe-spaghetti-strap-nightdress-combo-for-w-29
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/wmremove-transformed-1_cleanup-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/wmremove-transformed-1_cleanup-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/wmremove-transformed_cleanup-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250829_102631.png
 Meta Title: Premium Satin Sleepwear Set – Robe & Spaghetti Strap Nightdress Comb
 Meta Description: Buy Premium Satin Sleepwear Set – Robe & Spaghetti Strap Nightdress Combo for Women – Free Size (DC-2004) online in Pakistan from ASM VEO. The Premium Satin Sle
 Description: The Premium Satin Sleepwear Set – Robe & Spaghetti Strap Nightdress Combo for Women – Free Size, Featuring a sleek short robe and a matching spaghetti strap nightdress
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

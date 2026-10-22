@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Tree Doctor Tooth Powder – Mint Clean Whitening Formula with Hyaluronic Acid | Plaque Removal & Fresh Breath | 50g
 Product ID: hhc-3756049
 SKU: hhc-3756049
@@ -7,11 +8,16 @@ Slug: tree-doctor-tooth-powder-mint-clean-whitening-formula-with-hyaluronic-a-cd
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/a554c5b6636e56bea27bf8b385b3def8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/a554c5b6636e56bea27bf8b385b3def8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/dcf979781459e740352b95bc3ce96d8f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/16a4c10e4f4cdbeac50fefd91c214cae.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/5c8f7b24641baa5a7cac4893a953bad3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/29/939e348c87bd3754d4661e1f14b7aeda.jpg
 Meta Title: Tree Doctor Tooth Powder – Mint Clean Whitening Formula with Hyaluro
 Meta Description: Buy Tree Doctor Tooth Powder – Mint Clean Whitening Formula with Hyaluronic Acid | Plaque Removal & Fresh Breath | 50g online in Pakistan from ASM VEO. Tree Doc
 Description: Tree Doctor Tooth Powder Mint helps remove plaque, reduce oral bacteria, and whiten teeth naturally. Enriched with mint and hyaluronic acid for fresh breath and gentle daily oral care.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: SALOON NAILS KIT (RECHARGEABLE)
 Product ID: hhc-879960
 SKU: hhc-879960
@@ -7,11 +8,16 @@ Slug: saloon-nails-kit-rechargeable-hhc-879960
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/Flawless-Nail-Buff-Kit-9.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/10/Flawless-Nail-Buff-Kit-9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/2-27.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/11/1-21.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-11-30-at-10.06.35-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2024-06-04-at-1.53.38-PM.jpeg
 Meta Title: SALOON NAILS KIT (RECHARGEABLE) | Buy Online in Pakistan
 Meta Description: Buy SALOON NAILS KIT (RECHARGEABLE) online in Pakistan from ASM VEO. This at home manicure and pedicure nail kit includes 6 attachment heads that: buff, shine,
 Description: This at home manicure and pedicure nail kit includes 6 attachment heads that: buff, shine, shape and file!Rechargeable and cordless: this unit has forward and reverse settings, low and high power modes as well as an LED light to illuminate the nailDesigned with precision control which allows for easy use around your nails. Just like at your favorite salon!Have a safe and hygienic manicure in the safety of your own home[video width="512" height="640" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Video-2023-11-30-at-10.06.34-PM.mp4"][/video]
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

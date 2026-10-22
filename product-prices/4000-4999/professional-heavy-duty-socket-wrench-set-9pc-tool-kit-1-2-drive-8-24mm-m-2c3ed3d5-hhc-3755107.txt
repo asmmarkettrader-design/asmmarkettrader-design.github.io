@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Professional Heavy Duty Socket Wrench Set | 9Pc Tool Kit | 1/2″ Drive | 8‑24mm Metric Sockets + L Wrench
 Product ID: hhc-3755107
 SKU: hhc-3755107
@@ -7,11 +8,16 @@ Slug: professional-heavy-duty-socket-wrench-set-9pc-tool-kit-1-2-drive-8-24mm-2c
 Category: Tools & DIY
 Subcategory: Hand Tools
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/a0bb4d3c8e7b1cfe63ff8c151ec877b1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/a0bb4d3c8e7b1cfe63ff8c151ec877b1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/767b312cd4a516924cfe2f96499c7208.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/b94f4101de2291732cf66a71791e5c1e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/54b7d66de002bf8a267f9ef2f9828ab5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/3f42d81aa9b0c7bd355d43953fddbb3e.jpeg
 Meta Title: Professional Heavy Duty Socket Wrench Set | 9Pc Tool Kit | 1/2″ Driv
 Meta Description: Buy Professional Heavy Duty Socket Wrench Set | 9Pc Tool Kit | 1/2″ Drive | 8‑24mm Metric Sockets + L Wrench online in Pakistan from ASM VEO. Durable 9Pc heavy‑
 Description: Durable 9Pc heavy‑duty socket wrench set. Includes 1/2″ drive sockets (8‑24mm) with “L” wrench in box.
-Regular Price: 1511
-Sale Price: 1511
+Wholesale Price: 1461
+Regular Price: 2670
+Sale Price: 2135
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

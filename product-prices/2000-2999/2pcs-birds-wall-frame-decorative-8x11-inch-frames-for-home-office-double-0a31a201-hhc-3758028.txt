@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2Pcs Birds Wall Frame | Decorative 8x11 Inch Frames For Home & Office | Double Tape Included
 Product ID: hhc-3758028
 SKU: hhc-3758028
@@ -7,11 +8,16 @@ Slug: 2pcs-birds-wall-frame-decorative-8x11-inch-frames-for-home-office-doubl-0a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/45f3209d6f6fe06dfbe5f753f906c353.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/23/45f3209d6f6fe06dfbe5f753f906c353.jpeg
 Meta Title: 2Pcs Birds Wall Frame | Decorative 8x11 Inch Frames For Home & Offic
 Meta Description: Buy 2Pcs Birds Wall Frame | Decorative 8x11 Inch Frames For Home & Office | Double Tape Included online in Pakistan from ASM VEO. Elegant 2Pcs Birds Wall Frame
 Description: Elegant 2Pcs Birds Wall Frame Set | 8x11 Inch Size With Easy Mounting
-Regular Price: 445
-Sale Price: 445
+Wholesale Price: 395
+Regular Price: 820
+Sale Price: 652
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

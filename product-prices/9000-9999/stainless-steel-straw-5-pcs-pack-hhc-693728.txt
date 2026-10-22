@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: stainless steel straw 5 pcs pack
 Product ID: hhc-693728
 SKU: hhc-693728
@@ -7,11 +8,16 @@ Slug: stainless-steel-straw-5-pcs-pack-hhc-693728
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-18-at-12.46.06-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-18-at-12.46.06-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/935f9e21e8949f4175106626f3af8556.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/f252d07e7f1280c6ff7c06e35c38203c.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/3310df1374b870e086ab1b3cfe05deb6.jpg_750x750.jpg_.webp
 Meta Title: stainless steel straw 5 pcs pack | Buy Online in Pakistan
 Meta Description: Buy stainless steel straw 5 pcs pack online in Pakistan from ASM VEO. Product details Made from Stainless Steel , This straws are naturally food grade and BPA f
 Description: Product details Made from Stainless Steel , This straws are naturally food grade and BPA free. They are cleaned using UV rays and sterilized ensuring you take every sip without a worry. Be it your bag or dashboard of your car, carrying your Metal Straws around is easier . The cleaning brush along with the pack makes cleaning the straws hassle free and easy ensuring that every usage is as good as using a new straw that every sip of yours deserve. Reusable straws are dishwasher friendly and can be cleaned in a dishwasher. Weighing just 10 grams, this is the lightest Metal straw ever made. Its durable, compact, long, odorless, portable, lightweight, and won’t degrade over time! Complement any table decor and make your next party or function a hoot with these metallic straws
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

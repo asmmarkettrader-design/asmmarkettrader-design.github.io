@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use
 Product ID: hhc-3752652
 SKU: hhc-3752652
@@ -7,11 +8,16 @@ Slug: hair-drying-towel-cap-quick-dry-soft-absorbent-turban-wrap-for-women-an-d2
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
-Meta Title: Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/e027958bfc518da114ca6e4c8d10421d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/e027958bfc518da114ca6e4c8d10421d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/72b530e3872fc8c40bbec22869835e87.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/f5f95e58ccdd22902ca8ce3244ebcb09.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/84058a3f77ba1a83860bb94920e8aff6.jpeg
+Meta Title: Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for 
 Meta Description: Buy Hair Drying Towel Cap – Quick Dry, Soft & Absorbent Turban Wrap for Women | Anti-Frizz Hair Wrap Towel for Bathroom & Salon Use online in Pakistan from ASM
 Description: Experience quick and gentle hair drying with our Microfiber Hair Drying Towel Cap. Made from ultra-soft, super-absorbent microfiber material, it reduces frizz, prevents hair damage, and dries your hair faster than regular towels. Perfect for daily use at home, gym, or salon.
-Regular Price: 214
-Sale Price: 214
+Wholesale Price: 164
+Regular Price: 456
+Sale Price: 306
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

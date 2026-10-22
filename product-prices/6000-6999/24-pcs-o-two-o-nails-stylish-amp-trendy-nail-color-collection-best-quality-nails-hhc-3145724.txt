@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 24 Pcs O.TWO.O Nails | Stylish &amp; Trendy Nail Color Collection | Best Quality Nails
 Product ID: hhc-3145724
 SKU: hhc-3145724
@@ -7,11 +8,16 @@ Slug: 24-pcs-o-two-o-nails-stylish-amp-trendy-nail-color-collection-best-quality
 Category: Fashion
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/images-6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/images-6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/images-5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/download-1-2.jpeg
 Meta Title: 24 Pcs O.TWO.O Nails | Stylish &amp; Trendy Nail Color Collection |
 Meta Description: Buy 24 Pcs O.TWO.O Nails | Stylish &amp; Trendy Nail Color Collection | Best Quality Nails online in Pakistan from ASM VEO. Get salon-quality nails at home with
 Description: Get salon-quality nails at home with the O.TWO.O Nails – Stylish &amp; Trendy Nail Color Collection. Designed for beauty lovers who crave bold color and lasting shine, this collection features a range of vibrant, on-trend shades to suit every mood and moment. Whether you're going for a chic everyday look or a dramatic statement style, O.TWO.O delivers flawless color payoff with every stroke. Formulated for a smooth, streak-free application, each polish glides on effortlessly and dries quickly to a glossy, chip-resistant finish. With a stylish bottle design and rich pigments, this collection is perfect for self-expression, gifting, or building your ultimate nail wardrobe. Key Features: 🎨 Trendy, Vibrant Colors – A wide selection of stylish shades for any occasion 💅 Smooth Application – Easy-glide formula for a flawless finish ✨ High-Gloss Shine – Salon-worthy nails with a long-lasting, glossy effect 💪 Chip-Resistant Formula – Durable color that stays fresh for days 🎁 Perfect for Gifting or Collecting – A must-have for every nail enthusiast
-Regular Price: 1071
-Sale Price: 1071
+Wholesale Price: 1021
+Regular Price: 1890
+Sale Price: 1510
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

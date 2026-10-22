@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VIKI Special Skincare Brighter Power 24K Gold & Polish Peeling Cream – Ultra Whitening Set (Black)
 Product ID: hhc-3752230
 SKU: hhc-3752230
@@ -7,11 +8,16 @@ Slug: viki-special-skincare-brighter-power-24k-gold-polish-peeling-cream-ultr-e3
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758016339-68c9335304b40-Copilot_20250916_144109_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758016339-68c9335304b40-Copilot_20250916_144109_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758016339-68c93353620ac-20240906_234748.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/1758016647-68c9348701fbb-20240906_234748_cleanup.webp
 Meta Title: VIKI Special Skincare Brighter Power 24K Gold & Polish Peeling Cream
 Meta Description: Buy VIKI Special Skincare Brighter Power 24K Gold & Polish Peeling Cream – Ultra Whitening Set (Black) online in Pakistan from ASM VEO. VIKI Special Skincare Br
 Description: VIKI Special Skincare Brighter Power 24K Gold & Polish Peeling Cream (Black) set helps brighten, exfoliate, and whiten skin for a radiant, smooth glow. Suitable for all skin types.
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

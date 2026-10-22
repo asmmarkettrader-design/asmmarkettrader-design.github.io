@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sour Berry Candle - Sour, Sweet, and Oh-So-Irresistible – Handmade Berry Fusion Soy Wax Candle -100 gram
 Product ID: hhc-2901771
 SKU: hhc-2901771
@@ -7,11 +8,16 @@ Slug: sour-berry-candle-sour-sweet-and-oh-so-irresistible-handmade-berry-fusi-36
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Sour-Berry.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/Sour-Berry.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/sour-berry.jpg
 Meta Title: Sour Berry Candle - Sour, Sweet, and Oh-So-Irresistible – Handmade B
 Meta Description: Buy Sour Berry Candle - Sour, Sweet, and Oh-So-Irresistible – Handmade Berry Fusion Soy Wax Candle -100 gram online in Pakistan from ASM VEO. Sour Berry Candle
 Description: Sour Berry Candle - Sour, Sweet, and Oh-So-Irresistible – Handmade Berry Fusion Soy Wax Candle -100 gram Product Notes: Rich, fruity, and slightly tangy aroma Blend of sweet and sour notes Let the bold aroma of sour/sweet Berries awaken your senses! Product Description: Net weight 100 grams (exclusive of jar weight) Made with 100% pure Soy Wax. Eco friendly Burn time upto 25 hours Purely handmade
-Regular Price: 2024
-Sale Price: 2024
+Wholesale Price: 2024
+Regular Price: 3640
+Sale Price: 2912
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

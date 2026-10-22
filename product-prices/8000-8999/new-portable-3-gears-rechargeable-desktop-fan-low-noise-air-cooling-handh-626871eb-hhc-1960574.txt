@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New portable 3 gears rechargeable desktop fan low noise air cooling handheld clipped circulator table fan Clip Fan USB Rechargeable Desk Fan with Sturdy Clamp, Quiet Operation, Strong Airflow with 360° Rotation for Home, Stroller, Office, Outdoor
 Product ID: hhc-1960574
 SKU: hhc-1960574
@@ -7,11 +8,16 @@ Slug: new-portable-3-gears-rechargeable-desktop-fan-low-noise-air-cooling-han-62
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: New portable 3 gears rechargeable desktop fan low noise air cooling
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/f6dfc3736723aa4aa1ff440543a4931d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/f6dfc3736723aa4aa1ff440543a4931d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/7-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/6-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/4-2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/3-4.jpg
+Meta Title: New portable 3 gears rechargeable desktop fan low noise air cooling 
 Meta Description: Buy New portable 3 gears rechargeable desktop fan low noise air cooling handheld clipped circulator table fan Clip Fan USB Rechargeable Desk Fan with Sturdy Cla
 Description: New portable 3 gears rechargeable desktop fan low noise air cooling handheld clipped circulator table fan Clip Fan USB Rechargeable Desk Fan with Sturdy Clamp, Quiet Operation, Strong Airflow with 360° Rotation for Home, Stroller, Office, Outdoor
-Regular Price: 1533
-Sale Price: 1533
+Wholesale Price: 1533
+Regular Price: 2810
+Sale Price: 2250
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

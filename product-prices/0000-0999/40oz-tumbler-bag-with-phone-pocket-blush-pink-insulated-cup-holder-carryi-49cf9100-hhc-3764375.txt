@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 40oz Tumbler Bag with Phone Pocket – Blush Pink Insulated Cup Holder Carrying Bag with Adjustable Strap (Color Pink)
 Product ID: hhc-3764375
 SKU: hhc-3764375
@@ -7,11 +8,16 @@ Slug: 40oz-tumbler-bag-with-phone-pocket-blush-pink-insulated-cup-holder-carr-49
 Category: Travel & Outdoor
 Subcategory: Backpacks & Duffel Bags
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/824f2856fab9ba0e66c2c5c225302f0f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/824f2856fab9ba0e66c2c5c225302f0f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/d0ef9215a8b0036f88ac39ee42632902.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/10e0b59b4ef3588801274fca2918781e.jpeg
 Meta Title: 40oz Tumbler Bag with Phone Pocket – Blush Pink Insulated Cup Holder
 Meta Description: Buy 40oz Tumbler Bag with Phone Pocket – Blush Pink Insulated Cup Holder Carrying Bag with Adjustable Strap (Color Pink) online in Pakistan from ASM VEO. Stylis
 Description: Stylish 40oz Tumbler Bag in Blush Pink with a convenient phone pocket. Designed to carry your large tumbler securely while keeping your phone and small essentials within easy reach.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

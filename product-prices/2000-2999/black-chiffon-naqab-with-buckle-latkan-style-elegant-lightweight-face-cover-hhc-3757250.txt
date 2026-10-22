@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Chiffon Naqab with Buckle Latkan Style – Elegant Lightweight Face Cover
 Product ID: hhc-3757250
 SKU: hhc-3757250
@@ -7,11 +8,16 @@ Slug: black-chiffon-naqab-with-buckle-latkan-style-elegant-lightweight-face-cove
 Category: Fashion
 Subcategory: Hijabs & Scarves (Chiffon)
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/a0dbb1f3fe1624f70c66347f09dd1e9a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/a0dbb1f3fe1624f70c66347f09dd1e9a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/cfe11a76b42bee007d6b4a4a6ba8c1b6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/c6d98f030c5f21173262e3c0d7dbb198.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/01/503f0182875ff67acc2b3deb51bfdd0e.jpeg
 Meta Title: Black Chiffon Naqab with Buckle Latkan Style – Elegant Lightweight F
 Meta Description: Buy Black Chiffon Naqab with Buckle Latkan Style – Elegant Lightweight Face Cover online in Pakistan from ASM VEO. Elegant black chiffon naqab featuring a buckl
 Description: Elegant black chiffon naqab featuring a buckle latkan style. Designed with size 13 width, 13 length, and 2 inch matha patti for comfortable and stylish coverage.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

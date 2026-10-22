@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3d wall calligraphy round aytul kursi  16 inch
 Product ID: hhc-2282614
 SKU: hhc-2282614
@@ -7,11 +8,16 @@ Slug: 3d-wall-calligraphy-round-aytul-kursi-16-inch-hhc-2282614
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-06-at-11.33.47-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-06-at-11.33.47-PM.jpeg
 Meta Title: 3d wall calligraphy round aytul kursi 16 inch | Buy Online in Pakist
 Meta Description: Buy 3d wall calligraphy round aytul kursi 16 inch online in Pakistan from ASM VEO. 3d wall calligraphy round aytul kursi Description Metrial wood Size 16 inch T
 Description: 3d wall calligraphy round aytul kursi Description Metrial wood Size 16 inch Thickness 3mm lasani wood
-Regular Price: 599
-Sale Price: 599
+Wholesale Price: 549
+Regular Price: 1070
+Sale Price: 856
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

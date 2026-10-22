@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2 in 1 Coffee Beater Rechargeable Smooth Mixing Easy Use Compact Design Comfortable Handling
 Product ID: hhc-3754333
 SKU: hhc-3754333
@@ -7,11 +8,16 @@ Slug: 2-in-1-coffee-beater-rechargeable-smooth-mixing-easy-use-compact-design-0c
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/51e4afcadd90962678c76bd1d8987bbc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/51e4afcadd90962678c76bd1d8987bbc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/a57943ba0ced53239ab0538dbd28a3e5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/7dc2e3a25d1c6d9a85888c75a286ee5b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/6c1cfbdb03137f31c6441cf8c087e87c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/57a5a5edd2c576353888c7ed00963015.jpg
 Meta Title: 2 in 1 Coffee Beater Rechargeable Smooth Mixing Easy Use Compact Des
 Meta Description: Buy 2 in 1 Coffee Beater Rechargeable Smooth Mixing Easy Use Compact Design Comfortable Handling online in Pakistan from ASM VEO. Coffee Beater Rechargeable Pro
 Description: Coffee Beater Rechargeable Provides Smooth Mixing Easy Use Compact Design Comfortable Handling And Reliable Utility
-Regular Price: 947
-Sale Price: 947
+Wholesale Price: 897
+Regular Price: 1700
+Sale Price: 1361
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

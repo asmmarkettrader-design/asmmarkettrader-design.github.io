@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wool Cap With Neck Warmer | Beanie And Scarf Set With Fleece Mask | Winter Thermal Wool Cap For Men And Women
 Product ID: hhc-3752659
 SKU: hhc-3752659
@@ -7,11 +8,16 @@ Slug: wool-cap-with-neck-warmer-beanie-and-scarf-set-with-fleece-mask-winter-001
 Category: Fashion
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/0d85b269147311734592b1e9bc1b67b2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/0d85b269147311734592b1e9bc1b67b2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/d16dc9ca66906dfb2196abd1f750dcc7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/37307f4084965439f54335384c132bfd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/c189f80fe86a3fe8458536d9aacdf874.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/ae3a8fdc3ab97a245dcda99d47d5a02e.jpeg
 Meta Title: Wool Cap With Neck Warmer | Beanie And Scarf Set With Fleece Mask |
 Meta Description: Buy Wool Cap With Neck Warmer | Beanie And Scarf Set With Fleece Mask | Winter Thermal Wool Cap For Men And Women online in Pakistan from ASM VEO. Wool Cap With
 Description: Wool Cap With Neck Warmer And Fleece Mask Provides Complete Winter Protection. Soft, Warm, And Stylish Beanie Scarf Set Perfect For Cold Weather.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

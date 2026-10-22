@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Men's Stainless Steel Quartz Watch – Classic Dial Luxury Business Watch with Date Display ~ Without Box
 Product ID: hhc-3758957
 SKU: hhc-3758957
@@ -7,11 +8,16 @@ Slug: premium-men-s-stainless-steel-quartz-watch-classic-dial-luxury-business-28
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/105e20523e965711fb08c39c4d2afebe.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/04/105e20523e965711fb08c39c4d2afebe.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/c72deac977301166a185f83040ac7b74.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/84843962c6b2cacbf6efedafc969ab4f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/8a9e72e20ecc54e602e3ce0c4c162cb5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/13/48ae36beb83cc472430c975870e7fca5.png
 Meta Title: Premium Men's Stainless Steel Quartz Watch – Classic Dial Luxury Bus
 Meta Description: Buy Premium Men's Stainless Steel Quartz Watch – Classic Dial Luxury Business Watch with Date Display ~ Without Box online in Pakistan from ASM VEO. Elevate you
 Description: Elevate your style with this Premium Men's Quartz Watch. Featuring a sophisticated dial, a durable stainless steel silver chain, and a convenient date display, this watch is the perfect balance of professional elegance and everyday durability.
-Regular Price: 2586
-Sale Price: 2586
+Wholesale Price: 2586
+Regular Price: 4590
+Sale Price: 3671
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 7 Pcs HUDA BEAUTY Makeup Brush Set
 Product ID: hhc-2240877
 SKU: hhc-2240877
@@ -7,11 +8,16 @@ Slug: 7-pcs-huda-beauty-makeup-brush-set-hhc-2240877
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/professional-makeup-brushes-set-of-6-ultra-soft-brushes-hb-07-original-imafh8asafwykjhh.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/professional-makeup-brushes-set-of-6-ultra-soft-brushes-hb-07-original-imafh8asafwykjhh.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-158.webp
 Meta Title: 7 Pcs HUDA BEAUTY Makeup Brush Set | Buy Online in Pakistan
 Meta Description: Buy 7 Pcs HUDA BEAUTY Makeup Brush Set online in Pakistan from ASM VEO. This Makeup Brushes set contains 7 HUDA makeup brushes which include fluffy stuff blush,
 Description: This Makeup Brushes set contains 7 HUDA makeup brushes which include fluffy stuff blush, angled contour, Mascara brushes. A Complete Makeup Brushes set is manufactured by Huda Beauty to fulfill your Makeup Brushes needs. This version of the Makeup Brushes comes in Piece Count: 7 Pieces. Handle Material: Wood. Brush Material: Fluffy Goat Hairs. Application 1 Concealer brush: 1 Blush brush: 1 lush &amp; brow brush: 1 Foundation Brush: 1 contouring brush, 1 eye-blending brush, 1 eyeliner gel brush. Best And High-Quality Bags Makeup Brushes Pack.
-Regular Price: 699
-Sale Price: 699
+Wholesale Price: 649
+Regular Price: 1250
+Sale Price: 1001
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

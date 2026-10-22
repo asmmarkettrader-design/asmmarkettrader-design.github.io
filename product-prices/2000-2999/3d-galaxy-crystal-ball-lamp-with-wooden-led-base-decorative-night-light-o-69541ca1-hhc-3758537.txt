@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3D Galaxy Crystal Ball Lamp with Wooden LED Base – Decorative Night Light (Only Moon Shape)
 Product ID: hhc-3758537
 SKU: hhc-3758537
@@ -7,11 +8,16 @@ Slug: 3d-galaxy-crystal-ball-lamp-with-wooden-led-base-decorative-night-light-69
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 3D Galaxy Crystal Ball Lamp with Wooden LED Base – Decorative Night
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/ddc36db748c9e856e84df97019ec68fc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/ddc36db748c9e856e84df97019ec68fc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/5c459aa76c451aff7256f3c726adbb2e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/7c70e2a5d46418e6e2261a6eaaaafa88.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/7533fbd65da4c6e8d8cefb7c57e7aceb.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/02165d5a3c73d0b3a0f9b01a2445910d.jpg
+Meta Title: 3D Galaxy Crystal Ball Lamp with Wooden LED Base – Decorative Night 
 Meta Description: Buy 3D Galaxy Crystal Ball Lamp with Wooden LED Base – Decorative Night Light (Only Moon Shape) online in Pakistan from ASM VEO. Illuminate your space with this
 Description: Illuminate your space with this enchanting 3D Crystal Ball Lamp. Featuring a precision laser-engraved moon design inside a clear crystal sphere, it sits on a warm LED wooden base to create a magical atmosphere in any room.
-Regular Price: 807
-Sale Price: 807
+Wholesale Price: 757
+Regular Price: 1450
+Sale Price: 1158
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

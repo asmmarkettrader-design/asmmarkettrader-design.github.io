@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Refill Hair Removal Wax Roller,( random flavor)
 Product ID: hhc-1230626
 SKU: hhc-1230626
@@ -7,11 +8,16 @@ Slug: refill-hair-removal-wax-roller-random-flavor-hhc-1230626
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/61BB7XTb3GL._AC_SL1500_.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/61BB7XTb3GL._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/71HO00ITQxL._AC_SL1500_.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/61bzpjYt8IL._SL1500_.jpg
 Meta Title: Refill Hair Removal Wax Roller,( random flavor) | Buy Online in Paki
 Meta Description: Buy Refill Hair Removal Wax Roller,( random flavor) online in Pakistan from ASM VEO. product details 100% Natural Material: Seopri Roll on wax is made of 100% n
 Description: product details 100% Natural Material: Seopri Roll on wax is made of 100% natural ingredients, which protects your skin from damage to the greatest extent. With it, you will have a painless hair removal experience. Professional and Home Use: Seopri Wax Roll On for Hair removal can be used with your friends at home, Enjoy your happy hair removal time. This plant combination roll on wax can also be used professionally using, Sealed packaging, Clean and sanitary, such as in beauty salons, salons, spas (original picture )
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Men’s Lightweight Breathable Mesh Sneakers – Casual Walking & Everyday Comfort Shoes
 Product ID: hhc-3756401
 SKU: hhc-3756401
@@ -7,11 +8,16 @@ Slug: men-s-lightweight-breathable-mesh-sneakers-casual-walking-everyday-comfort
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/60791f2160440b4d340a329ae3ca3a53.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/60791f2160440b4d340a329ae3ca3a53.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/c8e3c19204bba7198209383e0d10bb3c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/f1a401fbc649225a4ce29ffc818ed63e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/a5448a6d48d4293a9ea681063dd3f5c1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/17/86ff615b209f987a9a2d4ec6f60adcff.png
 Meta Title: Men’s Lightweight Breathable Mesh Sneakers – Casual Walking & Everyd
 Meta Description: Buy Men’s Lightweight Breathable Mesh Sneakers – Casual Walking & Everyday Comfort Shoes online in Pakistan from ASM VEO. Stylish, lightweight, and ultra-comfor
 Description: Stylish, lightweight, and ultra-comfortable sneakers designed for everyday wear. Featuring breathable mesh fabric, cushioned soles, and a modern minimalist design, these shoes are perfect for walking, casual outings, and daily activities.
-Regular Price: 4271
-Sale Price: 4271
+Wholesale Price: 4271
+Regular Price: 7160
+Sale Price: 5732
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

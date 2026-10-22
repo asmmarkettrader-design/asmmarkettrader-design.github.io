@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Exquisite Modern Islamic Calligraphy Wall Art Set (9 PhotoTiles, 8"x11") with Effortless Double-Tape Mounting
 Product ID: hhc-3754371
 SKU: hhc-3754371
@@ -7,11 +8,16 @@ Slug: exquisite-modern-islamic-calligraphy-wall-art-set-9-phototiles-8-x11-wi-e2
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/3d69d7db723cc840d6bb23e777280833.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/3d69d7db723cc840d6bb23e777280833.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/13/66293658afb0bf236a43bfe4c500be7c.mp4
 Meta Title: Exquisite Modern Islamic Calligraphy Wall Art Set (9 PhotoTiles, 8"x
 Meta Description: Buy Exquisite Modern Islamic Calligraphy Wall Art Set (9 PhotoTiles, 8"x11") with Effortless Double-Tape Mounting online in Pakistan from ASM VEO. Elevate your
 Description: Elevate your living space with this beautiful set of nine modern Islamic calligraphy photo tiles. Each large 8"x11" tile features vibrant, abstract backgrounds and powerful Arabic scripts, ready for instant, damage-free wall mounting via pre-attached double-sided tape. Perfect for creating a stunning
-Regular Price: 1301
-Sale Price: 1301
+Wholesale Price: 1251
+Regular Price: 2300
+Sale Price: 1836
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

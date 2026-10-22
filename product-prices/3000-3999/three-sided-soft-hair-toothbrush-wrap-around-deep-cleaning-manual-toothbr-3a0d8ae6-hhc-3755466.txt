@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Three Sided Soft Hair Toothbrush Wrap Around Deep Cleaning Manual Toothbrush For Adults And Children Comfortable Grip
 Product ID: hhc-3755466
 SKU: hhc-3755466
@@ -7,11 +8,16 @@ Slug: three-sided-soft-hair-toothbrush-wrap-around-deep-cleaning-manual-tooth-3a
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/a3baef581917fdafcb03800547606bbf.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/a3baef581917fdafcb03800547606bbf.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/d7610ca232c35cabf9ccc3a77b37d134.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/2cd9a59e9188835f0433916902ad2fa3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/e480690d4c621ba232a92bf456023e99.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/13/143354cf1931200446cdfa5da5b29778.jpg
 Meta Title: Three Sided Soft Hair Toothbrush Wrap Around Deep Cleaning Manual To
 Meta Description: Buy Three Sided Soft Hair Toothbrush Wrap Around Deep Cleaning Manual Toothbrush For Adults And Children Comfortable Grip online in Pakistan from ASM VEO. Three
 Description: Three Sided Soft Hair Toothbrush Provides Effective Wrap Around Deep Cleaning For Adults And Children
-Regular Price: 333
-Sale Price: 333
+Wholesale Price: 283
+Regular Price: 634
+Sale Price: 484
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

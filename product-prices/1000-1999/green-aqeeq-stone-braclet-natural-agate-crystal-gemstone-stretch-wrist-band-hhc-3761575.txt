@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Green Aqeeq Stone Braclet - Natural Agate Crystal Gemstone Stretch Wrist Band
 Product ID: hhc-3761575
 SKU: hhc-3761575
@@ -7,11 +8,16 @@ Slug: green-aqeeq-stone-braclet-natural-agate-crystal-gemstone-stretch-wrist-ban
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/89e7e2af1442a6548213bc90610d04aa.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/89e7e2af1442a6548213bc90610d04aa.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/26d33a5f7cedb8d3c6e865e7ec5c9d81.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/4bbb2607a03a68823b028126af53a672.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/09/b47a49dca8feb4cbaf89ba490e163445.png
 Meta Title: Green Aqeeq Stone Braclet - Natural Agate Crystal Gemstone Stretch W
 Meta Description: Buy Green Aqeeq Stone Braclet - Natural Agate Crystal Gemstone Stretch Wrist Band online in Pakistan from ASM VEO. A Beautiful Green Aqeeq Stone Braclet Crafted
 Description: A Beautiful Green Aqeeq Stone Braclet Crafted For Daily Wearing Accessories Fashion Elegance And Natural Crystal Gemstone Appeal.
-Regular Price: 1372
-Sale Price: 1372
+Wholesale Price: 1322
+Regular Price: 2420
+Sale Price: 1937
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

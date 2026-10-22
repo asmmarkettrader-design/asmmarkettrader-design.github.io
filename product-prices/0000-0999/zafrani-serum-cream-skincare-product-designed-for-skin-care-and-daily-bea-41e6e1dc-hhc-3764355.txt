@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Serum Cream - Skincare Product Designed For Skin Care And Daily Beauty Routine - 250ML
 Product ID: hhc-3764355
 SKU: hhc-3764355
@@ -7,11 +8,16 @@ Slug: zafrani-serum-cream-skincare-product-designed-for-skin-care-and-daily-b-41
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/6c4017f165dc74d06e0ccd84aa0fc4f1.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/6c4017f165dc74d06e0ccd84aa0fc4f1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/9ed60f35f40cc5e291ae8ddfc5aee3b8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/f4c09db0b3d9a626669a8c18a3e7f4c6.png
 Meta Title: Zafrani Serum Cream - Skincare Product Designed For Skin Care And Da
 Meta Description: Buy Zafrani Serum Cream - Skincare Product Designed For Skin Care And Daily Beauty Routine - 250ML online in Pakistan from ASM VEO. The Zafrani Serum Cream Is A
 Description: The Zafrani Serum Cream Is A Skincare Product Formulated To Help Provide Skin Care And Daily Beauty Utility During Use.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

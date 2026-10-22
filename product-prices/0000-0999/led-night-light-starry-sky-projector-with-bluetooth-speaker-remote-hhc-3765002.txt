@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: LED Night Light Starry Sky Projector with Bluetooth Speaker & Remote
 Product ID: hhc-3765002
 SKU: hhc-3765002
@@ -7,11 +8,16 @@ Slug: led-night-light-starry-sky-projector-with-bluetooth-speaker-remote-hhc-376
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/de3e4e056dd71d93577c23469f033d76.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/de3e4e056dd71d93577c23469f033d76.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/624c9e00da7d29d2650cce9f7eaf375c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/36324a5b4328a30fa6186e9ff6a0fecd.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/7ebd47d68ece5a070cdde337b06192ab.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/46f188a55fccf748a62da00166a620dc.webp
 Meta Title: LED Night Light Starry Sky Projector with Bluetooth Speaker & Remote
 Meta Description: Buy LED Night Light Starry Sky Projector with Bluetooth Speaker & Remote online in Pakistan from ASM VEO. This Starry Sky Projector creates a beautiful galaxy a
 Description: This Starry Sky Projector creates a beautiful galaxy atmosphere in your room. Features: - Bluetooth speaker for music playback. - Remote control for light/music settings. - Adjustable brightness, water ripple modes, and speed. - Timer function (1h/2h). - Includes USB power input (5V/2A). Perfect for bedroom decoration, parties, and gifts for children and adults.
-Regular Price: 2796
-Sale Price: 2796
+Wholesale Price: 2796
+Regular Price: 4940
+Sale Price: 3955
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

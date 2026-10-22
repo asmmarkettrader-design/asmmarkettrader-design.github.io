@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Doraemon Musical Piano for Kids – Fun & Educational Piano Toy for Babies & Toddlers
 Product ID: hhc-3756318
 SKU: hhc-3756318
@@ -7,11 +8,16 @@ Slug: doraemon-musical-piano-for-kids-fun-educational-piano-toy-for-babies-toddl
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/34fe898bf73db8fb23dbcd09f8f03ce6.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/34fe898bf73db8fb23dbcd09f8f03ce6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/ce7e8611734b8ac9a7ed2fe49ac0ded2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/b25c81f2ab0844cf676c14429a1c5bcc.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/80aba8bf1ed1d8c830d8c896d96f0bea.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/fb124dc69fe0f8fbb1642344b2204cfe.jpeg
 Meta Title: Doraemon Musical Piano for Kids – Fun & Educational Piano Toy for Ba
 Meta Description: Buy Doraemon Musical Piano for Kids – Fun & Educational Piano Toy for Babies & Toddlers online in Pakistan from ASM VEO. Introduce your child to the joy of musi
 Description: Introduce your child to the joy of music with the Doraemon Musical Piano! Perfect for kids 18 months to 4 years, this safe and colorful piano toy encourages creativity, learning, and sensory development.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

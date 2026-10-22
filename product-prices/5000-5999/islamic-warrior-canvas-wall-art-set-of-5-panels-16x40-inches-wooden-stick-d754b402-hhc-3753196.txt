@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Islamic Warrior Canvas Wall Art – Set of 5 Panels (16x40 inches) | Wooden Sticky Tile Frames with Double Tape
 Product ID: hhc-3753196
 SKU: hhc-3753196
@@ -7,11 +8,16 @@ Slug: islamic-warrior-canvas-wall-art-set-of-5-panels-16x40-inches-wooden-sti-d7
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/5cac0fcfbb9e21ac537b39ef5b2fc129.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/5cac0fcfbb9e21ac537b39ef5b2fc129.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/f1b037f42789ee29b5c52b178f65a21e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/03/50606b5485a958fdcf1010faa9b42eef.jpeg
 Meta Title: Islamic Warrior Canvas Wall Art – Set of 5 Panels (16x40 inches) | W
 Meta Description: Buy Islamic Warrior Canvas Wall Art – Set of 5 Panels (16x40 inches) | Wooden Sticky Tile Frames with Double Tape online in Pakistan from ASM VEO. 5-piece Islam
 Description: 5-piece Islamic Warrior Wall Art | 16x40" Wooden Sticky Tile Frames with Double Tape | Bold & Easy-to-Install Home Decor
-Regular Price: 937
-Sale Price: 937
+Wholesale Price: 887
+Regular Price: 1680
+Sale Price: 1346
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

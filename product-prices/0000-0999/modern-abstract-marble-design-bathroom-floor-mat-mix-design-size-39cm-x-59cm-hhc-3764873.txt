@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Modern Abstract Marble Design Bathroom Floor Mat (Mix Design Size 39cm x 59cm)
 Product ID: hhc-3764873
 SKU: hhc-3764873
@@ -7,11 +8,16 @@ Slug: modern-abstract-marble-design-bathroom-floor-mat-mix-design-size-39cm-x-59
 Category: Automotive
 Subcategory: Mats
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/6e1c53da514802059cf74e0adc7a533e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/6e1c53da514802059cf74e0adc7a533e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/2bcc3c9a28f62a717d40faf13fa80cdf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/809872f30c5dece12a493dd021376116.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/16ee2f3a29b8a7ee4cee9ff6a7d7e2f2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/0c661d979a4b7fa94284b5568c1d6fdb.jpg
 Meta Title: Modern Abstract Marble Design Bathroom Floor Mat (Mix Design Size 39
 Meta Description: Buy Modern Abstract Marble Design Bathroom Floor Mat (Mix Design Size 39cm x 59cm) online in Pakistan from ASM VEO. Elegant Marble and Abstract Pattern Bathroom
 Description: Elegant Marble and Abstract Pattern Bathroom/Floor Mat. Features a beautiful, modern design that adds style to any room. Specifications: - Size: 39cm x 59cm - Material: Soft, absorbent material (easy to clean) - Design: Modern abstract marble style - Usage: Bathroom, bedroom, living area, or kitchen entrance. Note: Provides great anti-slip comfort for your home.
-Regular Price: 608
-Sale Price: 608
+Wholesale Price: 558
+Regular Price: 1090
+Sale Price: 869
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Women’s Shoulder Bag With Vibrant Floral Print And Practical Detachable Shoulder Strap
 Product ID: hhc-3760379
 SKU: hhc-3760379
@@ -7,11 +8,16 @@ Slug: women-s-shoulder-bag-with-vibrant-floral-print-and-practical-detachable-98
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/02d696fb11799a081c8d7f982ca06304.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/02d696fb11799a081c8d7f982ca06304.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/09/834cf9555b65dd79c88b26d052250034.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/85aad608b9aaec7de1103dea7875b277.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/b90a7f85728fdccefa9ea2192db5589a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/08/46df1206a3c3669c61c5c22f53606738.jpeg
 Meta Title: Women’s Shoulder Bag With Vibrant Floral Print And Practical Detacha
 Meta Description: Buy Women’s Shoulder Bag With Vibrant Floral Print And Practical Detachable Shoulder Strap online in Pakistan from ASM VEO. Women’s Shoulder Bag With Vibrant Fl
 Description: Women’s Shoulder Bag With Vibrant Floral Print And Detachable Shoulder Strap Stylish And Functional Design.
-Regular Price: 2445
-Sale Price: 2445
+Wholesale Price: 2445
+Regular Price: 4350
+Sale Price: 3481
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

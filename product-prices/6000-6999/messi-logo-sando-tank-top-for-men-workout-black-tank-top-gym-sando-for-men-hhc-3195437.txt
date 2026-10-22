@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Messi Logo Sando Tank Top for Men Workout [Black] | Tank top gym sando for MEN
 Product ID: hhc-3195437
 SKU: hhc-3195437
@@ -7,11 +8,16 @@ Slug: messi-logo-sando-tank-top-for-men-workout-black-tank-top-gym-sando-for-men
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/3553d656b3804c15be9f69990769053a.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/01/3553d656b3804c15be9f69990769053a.jpeg
 Meta Title: Messi Logo Sando Tank Top for Men Workout [Black] | Tank top gym san
 Meta Description: Buy Messi Logo Sando Tank Top for Men Workout [Black] | Tank top gym sando for MEN online in Pakistan from ASM VEO. Sando tank top for Men Workout Tank top gym
 Description: Sando tank top for Men Workout Tank top gym sando for menTrendy, Stylish &amp; Comfortable Printed Gym Sando Tanks Top For Men Sizes:MediumLargeExtra LargeNote: We recommend hand wash for long lasting life.Size Chart:Product's Picture:
-Regular Price: 523
-Sale Price: 523
+Wholesale Price: 473
+Regular Price: 960
+Sale Price: 770
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

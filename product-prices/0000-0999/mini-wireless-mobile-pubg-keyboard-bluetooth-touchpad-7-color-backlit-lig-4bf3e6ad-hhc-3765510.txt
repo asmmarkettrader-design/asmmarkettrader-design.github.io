@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Wireless Mobile PUBG Keyboard + bluetooth Touchpad 7 Color Backlit Light 2.4ghz Rechargeable with Nokia Bettery
 Product ID: hhc-3765510
 SKU: hhc-3765510
@@ -7,11 +8,16 @@ Slug: mini-wireless-mobile-pubg-keyboard-bluetooth-touchpad-7-color-backlit-l-4b
 Category: Toys & Games
 Subcategory: Laptops & Computers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/d18a4752ecfa703f86cc5cb38cac952d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/d18a4752ecfa703f86cc5cb38cac952d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/5b5efd6ca9114ca60731cb63676219d4.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/cd63c8ab9eb7cfe95bbf2f1fa9eb11ce.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/7010f22d1bff2e7297b51341ef40a2e3.jfif
 Meta Title: Mini Wireless Mobile PUBG Keyboard + bluetooth Touchpad 7 Color Back
 Meta Description: Buy Mini Wireless Mobile PUBG Keyboard + bluetooth Touchpad 7 Color Backlit Light 2.4ghz Rechargeable with Nokia Bettery online in Pakistan from ASM VEO. Mini W
 Description: Mini Wireless Keyboard with Touchpad, perfect for PUBG and mobile gaming. Features 7-color RGB backlight, 2.4GHz wireless connectivity, and a built-in rechargeable battery. Compact, portable, and compatible with phones, TVs, and PCs. Enhances your control and typing during intense gaming sessions.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

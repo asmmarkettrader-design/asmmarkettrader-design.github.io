@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Frames Kalima Alhamdulillah Calligraphy Islamic Wooden Material  Home Office Wall Decor Photo Frame (8x11inches)
 Product ID: hhc-3256983
 SKU: hhc-3256983
@@ -7,11 +8,16 @@ Slug: 6-frames-kalima-alhamdulillah-calligraphy-islamic-wooden-material-home-8c4
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/2ac616347f196520d3a938cebb5a1796.png_2200x2200q80.png_.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/2ac616347f196520d3a938cebb5a1796.png_2200x2200q80.png_.jpeg
 Meta Title: 6 Frames Kalima Alhamdulillah Calligraphy Islamic Wooden Material Ho
 Meta Description: Buy 6 Frames Kalima Alhamdulillah Calligraphy Islamic Wooden Material Home Office Wall Decor Photo Frame (8x11inches) online in Pakistan from ASM VEO. No of Fra
 Description: No of Frames: 6Size : 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Laminated print to protect colors. Beautiful islamic calligraphy designs which will give your enterior a spiritual vibe. Can be customised with you own pictures.High quality Finishing
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

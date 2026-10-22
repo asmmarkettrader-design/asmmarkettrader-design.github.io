@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nirvana Botanics- Vitamin C &amp; E Serum 15ml
 Product ID: hhc-2369009
 SKU: hhc-2369009
@@ -7,11 +8,16 @@ Slug: nirvana-botanics-vitamin-c-amp-e-serum-15ml-hhc-2369009
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-23-at-3.30.48-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-23-at-3.30.48-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-23-at-3.30.47-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-23-at-3.30.46-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-23-at-3.30.46-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-23-at-3.30.45-PM.jpeg
 Meta Title: Nirvana Botanics- Vitamin C &amp; E Serum 15ml | Buy Online in Pakis
 Meta Description: Buy Nirvana Botanics- Vitamin C &amp; E Serum 15ml online in Pakistan from ASM VEO. product detailsThe serum is for all skin types. ingredients promotes collage
 Description: product detailsThe serum is for all skin types. ingredients promotes collagen production.Helps fight most common signs of ageing. Vitamin C &amp; E Serum helps achieve brightness, firmness, fine lines, wrinkles, dark spots &amp; sunspots.Vitamin C &amp; Esize ; 15mlSerum
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lipstick/blush powder puff lip cream ( 12 Ml)
 Product ID: hhc-2121933
 SKU: hhc-2121933
@@ -7,11 +8,16 @@ Slug: lipstick-blush-powder-puff-lip-cream-12-ml-hhc-2121933
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.45.01-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.45.01-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.45.01-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.45.00-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-8.44.59-PM-1.jpeg
 Meta Title: Lipstick/blush powder puff lip cream ( 12 Ml) | Buy Online in Pakist
 Meta Description: Buy Lipstick/blush powder puff lip cream ( 12 Ml) online in Pakistan from ASM VEO. &nbsp; Lipstick/blush powder puff lip cream • Material: Cream • Texture: Matt
 Description: &nbsp; Lipstick/blush powder puff lip cream • Material: Cream • Texture: Matte • Color: Multicolor • Shade: 1, 2, 3, 4, 5, 6 • Product Feature: Bold Coverage • Package Includes: 1 x powder puff • Volume: 12 Ml • Note: Before using any new cosmetic product, perform a patch test on a small skin area. Verify ingredients for allergies and follow package warnings and directions.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

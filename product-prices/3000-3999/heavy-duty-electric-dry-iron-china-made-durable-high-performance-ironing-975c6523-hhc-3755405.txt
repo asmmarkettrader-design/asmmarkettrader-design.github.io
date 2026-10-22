@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Heavy-Duty Electric Dry Iron | China-Made | Durable, High-Performance Ironing for Home & Commercial Use - 1000 Watt
 Product ID: hhc-3755405
 SKU: hhc-3755405
@@ -7,11 +8,16 @@ Slug: heavy-duty-electric-dry-iron-china-made-durable-high-performance-ironin-97
 Category: Electronics
 Subcategory: Home Appliances
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/d6bb39150c3eb6a0f59bdc4cf5474ec0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/d6bb39150c3eb6a0f59bdc4cf5474ec0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/177eaddd28cc84359d1d916cfc20bc07.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/5e7ac1d6a84933c18524af7590fd662c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/27010e0ad63d70f1d22cda6e0e7a75d6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/10/440c2a1a8467aeb89c25879cb1cc2c58.jpeg
 Meta Title: Heavy-Duty Electric Dry Iron | China-Made | Durable, High-Performanc
 Meta Description: Buy Heavy-Duty Electric Dry Iron | China-Made | Durable, High-Performance Ironing for Home & Commercial Use - 1000 Watt online in Pakistan from ASM VEO. A robus
 Description: A robust, China-made electric dry iron built for demanding use. Offers powerful steam, quick heating, and a durable soleplate for efficient wrinkle removal on all fabrics. Ideal for both household and light commercial applications.
-Regular Price: 4973
-Sale Price: 4973
+Wholesale Price: 4973
+Regular Price: 8310
+Sale Price: 6645
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

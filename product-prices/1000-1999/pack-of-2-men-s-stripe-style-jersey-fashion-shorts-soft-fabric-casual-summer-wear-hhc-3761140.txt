@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 2 Men's Stripe Style Jersey Fashion Shorts | Soft Fabric Casual Summer Wear
 Product ID: hhc-3761140
 SKU: hhc-3761140
@@ -7,11 +8,16 @@ Slug: pack-of-2-men-s-stripe-style-jersey-fashion-shorts-soft-fabric-casual-s-c7
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/c8e6a0bac5405735d5576c1479c3ae4c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/c8e6a0bac5405735d5576c1479c3ae4c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/29/6f68de2ca2ec251c0877c4502bdbf779.jpg
 Meta Title: Pack Of 2 Men's Stripe Style Jersey Fashion Shorts | Soft Fabric Cas
 Meta Description: Buy Pack Of 2 Men's Stripe Style Jersey Fashion Shorts | Soft Fabric Casual Summer Wear online in Pakistan from ASM VEO. Pack Of 2 Men's Stripe Style Fashion Sh
 Description: Pack Of 2 Men's Stripe Style Fashion Shorts Made From Soft Jersey Fabric. Comfortable, Ready To Wear, And Perfect For Everyday Casual Summer Wear.
-Regular Price: 986
-Sale Price: 986
+Wholesale Price: 936
+Regular Price: 1770
+Sale Price: 1417
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

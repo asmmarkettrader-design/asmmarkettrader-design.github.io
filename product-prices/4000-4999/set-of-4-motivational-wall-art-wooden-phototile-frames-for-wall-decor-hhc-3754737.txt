@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set of 4 Motivational Wall Art Wooden Phototile Frames for Wall Decor
 Product ID: hhc-3754737
 SKU: hhc-3754737
@@ -7,11 +8,16 @@ Slug: set-of-4-motivational-wall-art-wooden-phototile-frames-for-wall-decor-hhc-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/21e30c1cf5eb4d7832ef23ffa67c1691.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/21e30c1cf5eb4d7832ef23ffa67c1691.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/23/50e4f02a29832a0ca37ee634f3e9ea5c.jpeg
 Meta Title: Set of 4 Motivational Wall Art Wooden Phototile Frames for Wall Deco
 Meta Description: Buy Set of 4 Motivational Wall Art Wooden Phototile Frames for Wall Decor online in Pakistan from ASM VEO. Set Of 4 Motivational Wall Art Wooden Phototile Frame
 Description: Set Of 4 Motivational Wall Art Wooden Phototile Frames Offering Elegant Style With Durable Quality And Com Size : 8x11 inches each Frame Material : high quality mdf wooden Sticky Tape Attached at the back for sticking on wall Beautiful Designs Which will give your interior a spiritual vibe
-Regular Price: 587
-Sale Price: 587
+Wholesale Price: 537
+Regular Price: 1050
+Sale Price: 839
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

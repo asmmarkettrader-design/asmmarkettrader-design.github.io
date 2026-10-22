@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Combo Deal – 2 Pcs Metal Wire Cleaning Cloths with 1 Bear Design Food Cover Packet – Kitchen Cleaning & Food Protection Set
 Product ID: hhc-3756592
 SKU: hhc-3756592
@@ -7,11 +8,16 @@ Slug: combo-deal-2-pcs-metal-wire-cleaning-cloths-with-1-bear-design-food-cov-58
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/7f1bddc69026c163f5f14c8e80e1551c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/7f1bddc69026c163f5f14c8e80e1551c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/bbd435ea8061744369a396fc1870b482.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/0007e74fbcb840bb1c40d2328ece71c5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/d62fd1b10e7e874e7f0923efe43b9367.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/26/d95bed4b4d5953629fd89693fbcaed19.webp
 Meta Title: Combo Deal – 2 Pcs Metal Wire Cleaning Cloths with 1 Bear Design Foo
 Meta Description: Buy Combo Deal – 2 Pcs Metal Wire Cleaning Cloths with 1 Bear Design Food Cover Packet – Kitchen Cleaning & Food Protection Set online in Pakistan from ASM VEO.
 Description: Practical kitchen combo including 2 durable metal wire cleaning cloths for tough stain removal and 1 reusable bear design food cover packet to keep food fresh and protected. Ideal for daily household use.
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

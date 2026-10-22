@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yardlie Body Wash | Olive & Camellia | Bio‑Organic | 500 ml | Gentle Cleansing & Nourishing Care
 Product ID: hhc-3754817
 SKU: hhc-3754817
@@ -7,11 +8,16 @@ Slug: yardlie-body-wash-olive-camellia-bio-organic-500-ml-gentle-cleansing-no-5e
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/d6c239d33693c2cfc6c8ac3466f2f18c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/d6c239d33693c2cfc6c8ac3466f2f18c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/4cdd4cd6e3fa01a113f61159c6900588.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/61f49beedbe74d829f3bca67b6a29739.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/f52edb738f25e6f6c0499416bcede513.jpeg
 Meta Title: Yardlie Body Wash | Olive & Camellia | Bio‑Organic | 500 ml | Gentle
 Meta Description: Buy Yardlie Body Wash | Olive & Camellia | Bio‑Organic | 500 ml | Gentle Cleansing & Nourishing Care online in Pakistan from ASM VEO. Yardlie Bio‑Organic Body W
 Description: Yardlie Bio‑Organic Body Wash, Olive & Camellia, 500 ml. Gentle cleansing with nourishing hydration for soft, refreshed skin.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

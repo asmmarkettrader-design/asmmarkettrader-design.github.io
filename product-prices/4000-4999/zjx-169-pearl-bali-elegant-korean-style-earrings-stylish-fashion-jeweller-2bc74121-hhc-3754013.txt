@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ZJX-169 Pearl Bali – Elegant Korean Style Earrings, Stylish Fashion Jewellery for Women
 Product ID: hhc-3754013
 SKU: hhc-3754013
@@ -7,11 +8,16 @@ Slug: zjx-169-pearl-bali-elegant-korean-style-earrings-stylish-fashion-jewell-2b
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
-Meta Title: ZJX-169 Pearl Bali – Elegant Korean Style Earrings, Stylish Fashion
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/7ed65de1a2ec5ef545f2ff0cca0981b3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/7ed65de1a2ec5ef545f2ff0cca0981b3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/5981b2db6d638a25253dea361eca8cfa.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/0ab6d4fa7a1a98abf91ff30173282a27.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/02/0d3ac639310035433bb3604ac988da33.jpeg
+Meta Title: ZJX-169 Pearl Bali – Elegant Korean Style Earrings, Stylish Fashion 
 Meta Description: Buy ZJX-169 Pearl Bali – Elegant Korean Style Earrings, Stylish Fashion Jewellery for Women online in Pakistan from ASM VEO. ZJX-169 pearl bali earrings, stylis
 Description: ZJX-169 pearl bali earrings, stylish accessory for women, perfect for fashion and daily wear.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

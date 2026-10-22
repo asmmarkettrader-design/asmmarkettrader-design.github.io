@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mountain Mist – Impression of Creed Silver Mountain Water | Aromatic Marine Extrait de Parfum for Men & Women | 50ml with Premium Box & Carry Bag
 Product ID: hhc-3761511
 SKU: hhc-3761511
 Slug: mountain-mist-impression-of-creed-silver-mountain-water-aromatic-marine-faab78f0-hhc-3761511
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/c028f145fa22364b3b6b6039859b88c4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/c028f145fa22364b3b6b6039859b88c4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/08/1fcb65f8a03540b7ea42c706fba8dccd.png
 Meta Title: Mountain Mist – Impression of Creed Silver Mountain Water | Aromatic
 Meta Description: Buy Mountain Mist – Impression of Creed Silver Mountain Water | Aromatic Marine Extrait de Parfum for Men & Women | 50ml with Premium Box & Carry Bag online in
 Description: Experience the refreshing essence of crisp mountain air with Mountain Mist, inspired by Creed Silver Mountain Water. This long-lasting Extrait de Parfum blends sparkling citrus, soothing green tea, and warm woody musk to create a clean, sophisticated fragrance. Presented in a premium perfume box with
-Regular Price: 3797
-Sale Price: 3797
+Wholesale Price: 2712
+Regular Price: 4800
+Sale Price: 3841
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

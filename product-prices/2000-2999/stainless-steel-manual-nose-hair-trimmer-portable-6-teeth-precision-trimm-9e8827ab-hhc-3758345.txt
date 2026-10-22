@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Manual Nose Hair Trimmer – Portable 6-Teeth Precision Trimming Tool with Drawstring Bag and Brush
 Product ID: hhc-3758345
 SKU: hhc-3758345
@@ -7,11 +8,16 @@ Slug: stainless-steel-manual-nose-hair-trimmer-portable-6-teeth-precision-tri-9e
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/636f1638d3e0a3550ec4382cfeb59d2c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/636f1638d3e0a3550ec4382cfeb59d2c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/f867b7336517549dee488fa34594caca.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/fd83c4d4ab65780c263d8b7e88635e4e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/06dff28e2c0932a7ef27a12723e43c1c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/02/e2cdf359f4b29be183d8c8e1928b5133.jpg
 Meta Title: Stainless Steel Manual Nose Hair Trimmer – Portable 6-Teeth Precisio
 Meta Description: Buy Stainless Steel Manual Nose Hair Trimmer – Portable 6-Teeth Precision Trimming Tool with Drawstring Bag and Brush online in Pakistan from ASM VEO. Keep your
 Description: Keep your grooming neat and simple with this Stainless Steel Manual Nose Hair Trimmer. Operating completely without batteries, this portable trimmer features a 6-teeth design for a safe and painless trimming experience.
-Regular Price: 354
-Sale Price: 354
+Wholesale Price: 304
+Regular Price: 666
+Sale Price: 516
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

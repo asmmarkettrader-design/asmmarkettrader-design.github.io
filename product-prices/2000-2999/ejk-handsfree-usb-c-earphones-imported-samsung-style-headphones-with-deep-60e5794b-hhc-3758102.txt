@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: EJK Handsfree USB-C Earphones | Imported Samsung-Style Headphones With Deep Bass |  Without Box
 Product ID: hhc-3758102
 SKU: hhc-3758102
@@ -7,11 +8,16 @@ Slug: ejk-handsfree-usb-c-earphones-imported-samsung-style-headphones-with-de-60
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Samsung
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/1a652bc5461d0506d0a66bbd2c0331b4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/1a652bc5461d0506d0a66bbd2c0331b4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/97159564e887f7cdeddc219b96aa6e09.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/6803b094d2d6570076e22a57791e66ee.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/24/d2e730594f5e974dbe00ce739b90e9ad.jpeg
 Meta Title: EJK Handsfree USB-C Earphones | Imported Samsung-Style Headphones Wi
 Meta Description: Buy EJK Handsfree USB-C Earphones | Imported Samsung-Style Headphones With Deep Bass | Without Box online in Pakistan from ASM VEO. High-Quality EJK Handsfree |
 Description: High-Quality EJK Handsfree | USB-C Type Jack | Deep Bass Sound | Imported Samsung Earphones Without Box
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

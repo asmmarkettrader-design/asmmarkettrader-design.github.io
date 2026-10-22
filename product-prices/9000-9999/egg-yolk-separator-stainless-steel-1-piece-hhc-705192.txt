@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Egg Yolk Separator Stainless Steel - 1 Piece
 Product ID: hhc-705192
 SKU: hhc-705192
@@ -7,11 +8,16 @@ Slug: egg-yolk-separator-stainless-steel-1-piece-hhc-705192
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/f1b73cfbdfbe5574f915e71f6e694845.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/f1b73cfbdfbe5574f915e71f6e694845.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/00bebe934b6aef67ee23f4d02c253eb3.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/6e86e1e52c618dca093811a29b9844bc.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/0bcc6d697f2bd7ea51b6420f33f3bcb2.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/WhatsApp-Image-2023-10-21-at-5.59.23-PM-1.jpeg
 Meta Title: Egg Yolk Separator Stainless Steel - 1 Piece | Buy Online in Pakista
 Meta Description: Buy Egg Yolk Separator Stainless Steel - 1 Piece online in Pakistan from ASM VEO. Product details Egg Yolk Separator Stainless Steel - 1 Piece Good Quality &amp
 Description: Product details Egg Yolk Separator Stainless Steel - 1 Piece Good Quality &amp; Product
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1Pc Air Inflator Portable Hand Held Birthday Party Balloon Pump (Random Colour)
 Product ID: hhc-3756131
 SKU: hhc-3756131
@@ -7,11 +8,16 @@ Slug: 1pc-air-inflator-portable-hand-held-birthday-party-balloon-pump-random-col
 Category: Events & Gifting
 Subcategory: Party Decorations
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/3e8841798a7666dc2f2b3ea0d7d73c3b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/3e8841798a7666dc2f2b3ea0d7d73c3b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/21337aaa55b9f3d890da72542aef176a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/c8cd0f5f3c81f36e7d93a1e5b42dea46.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/9c9ccd10a2153e18f9ae99935eeb3f06.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/02/3f75ff6505c284e39dff2e18d8b3a9b2.jpeg
 Meta Title: 1Pc Air Inflator Portable Hand Held Birthday Party Balloon Pump (Ran
 Meta Description: Buy 1Pc Air Inflator Portable Hand Held Birthday Party Balloon Pump (Random Colour) online in Pakistan from ASM VEO. Easy-to-use balloon pump with chain accesso
 Description: Easy-to-use balloon pump with chain accessories for stunning party décor at weddings, birthdays, and celebrations.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: L-T21 LED Highlight USB Headlight - Lighting Product Designed For Illumination And Daily Lighting Routine
 Product ID: hhc-3763420
 SKU: hhc-3763420
@@ -7,11 +8,16 @@ Slug: l-t21-led-highlight-usb-headlight-lighting-product-designed-for-illumin-07
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/a5ca9bd493c6648ac0f569cb62ecbd9d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/a5ca9bd493c6648ac0f569cb62ecbd9d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/c4b6c0ed113bac89802d9d12225ca886.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/eb9594aae0702229fb34fda613b40fe2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/0809eef367cb5d92f9aefccf8eff67c4.jpeg
 Meta Title: L-T21 LED Highlight USB Headlight - Lighting Product Designed For Il
 Meta Description: Buy L-T21 LED Highlight USB Headlight - Lighting Product Designed For Illumination And Daily Lighting Routine online in Pakistan from ASM VEO. The L-T21 LED Hig
 Description: The L-T21 LED Highlight USB Headlight Is A Lighting Product Formulated To Help Provide Illumination And Daily Lighting Utility During Use.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

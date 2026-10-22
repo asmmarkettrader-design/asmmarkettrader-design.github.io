@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sydonic Permanent Facial Hair Treatment – 30ml | Advanced Hair Reduction Solution for Men & Women
 Product ID: hhc-3756171
 SKU: hhc-3756171
@@ -7,11 +8,16 @@ Slug: sydonic-permanent-facial-hair-treatment-30ml-advanced-hair-reduction-so-a1
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/0c7f0e68fe082e61ec4107cb66f8a415.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/0c7f0e68fe082e61ec4107cb66f8a415.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/6bfbfab79b9400582a86f427ee6993db.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/bb681e923ee92ae3d4690a6ccf7a1d69.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/41c914181d825c9030c10635ae6eae24.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/017ac44c1e8cf9bc587fd235df835c50.jpeg
 Meta Title: Sydonic Permanent Facial Hair Treatment – 30ml | Advanced Hair Reduc
 Meta Description: Buy Sydonic Permanent Facial Hair Treatment – 30ml | Advanced Hair Reduction Solution for Men & Women online in Pakistan from ASM VEO. Sydonic Permanent Facial
 Description: Sydonic Permanent Facial Hair Treatment is a targeted formula designed to help reduce unwanted facial hair and slow regrowth over time. Suitable for both men and women, it supports smoother, clearer-looking skin with regular use.
-Regular Price: 586
-Sale Price: 586
+Wholesale Price: 536
+Regular Price: 1050
+Sale Price: 837
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

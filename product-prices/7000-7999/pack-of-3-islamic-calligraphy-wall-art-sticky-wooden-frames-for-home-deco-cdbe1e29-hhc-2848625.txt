@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 3 islamic calligraphy wall art sticky wooden frames for home decore / sticky phototiles
 Product ID: hhc-2848625
 SKU: hhc-2848625
@@ -7,11 +8,16 @@ Slug: pack-of-3-islamic-calligraphy-wall-art-sticky-wooden-frames-for-home-de-cd
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/56fccd15e30e873e42693670de225b64.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/56fccd15e30e873e42693670de225b64.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/b1fe3eb19263cc68f39346214a4c3777.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/f2fc3bbacea41b672b383b5f9d02b1fc.jpg
 Meta Title: Pack of 3 islamic calligraphy wall art sticky wooden frames for home
 Meta Description: Buy Pack of 3 islamic calligraphy wall art sticky wooden frames for home decore / sticky phototiles online in Pakistan from ASM VEO. Size : 8x11inches Wooden Ma
 Description: Size : 8x11inches Wooden Material High Quality Digital Printing. Sticky tape attached at the back for sticking on the wall. Beautiful islamic calligraphy designs which will give your enterior a spiritual vibe.High quality Finishing
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

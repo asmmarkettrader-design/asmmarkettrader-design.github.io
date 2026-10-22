@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Roti Mat - Baking Sheet (Large size  50x40cm) ( Random color)
 Product ID: hhc-722069
 SKU: hhc-722069
@@ -7,11 +8,16 @@ Slug: roti-mat-baking-sheet-large-size-50x40cm-random-color-hhc-722069
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/6e9b937bb3aba5081d16a01b320b349f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/29/6e9b937bb3aba5081d16a01b320b349f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/c5ed338af5e3ece4ba60ce77f1cd75a7.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/eb57aa4362a3700b0ce70ed6503aeeef.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/c41156105548e82e100b77789891f865.jpg_750x750.jpg_.webp
 Meta Title: Roti Mat - Baking Sheet (Large size 50x40cm) ( Random color) | Buy O
 Meta Description: Buy Roti Mat - Baking Sheet (Large size 50x40cm) ( Random color) online in Pakistan from ASM VEO. Product Details :VERSATILILE USES: Our pastry mats can be used
 Description: Product Details :VERSATILILE USES: Our pastry mats can be used as a countertop protectors,table mats, or dinner mats. Ideal for kneading,baking,cooking,dough rolling,shaping bread rolls. They can also be used to prepare pizza,pastas, pie crusts, fondants and so on.KEEPS YOUR WORKTOP GOOD AS NEW: Baking is almost always a messy business,but not anymore.DURABLE&amp;SAFE: We used the highest quality food-grade silicone material to make this baking mat.It is 100% BPA free,easy to clean,and fade resistant.Despite it being so soft,it is very durable and will serve you for years before you ever need a replacement
-Regular Price: 447
-Sale Price: 447
+Wholesale Price: 397
+Regular Price: 820
+Sale Price: 656
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

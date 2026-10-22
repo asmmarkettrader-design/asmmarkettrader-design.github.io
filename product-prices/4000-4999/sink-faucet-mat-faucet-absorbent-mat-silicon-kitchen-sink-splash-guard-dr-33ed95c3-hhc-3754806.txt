@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sink Faucet Mat | Faucet Absorbent Mat Silicon Kitchen Sink Splash Guard Drain Pad | Soap Holder (Random Color)
 Product ID: hhc-3754806
 SKU: hhc-3754806
@@ -7,11 +8,16 @@ Slug: sink-faucet-mat-faucet-absorbent-mat-silicon-kitchen-sink-splash-guard-33e
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/33a385bce4114eb4c9ab429c5e98bf93.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/33a385bce4114eb4c9ab429c5e98bf93.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/ec6c0448b51e76652500c83f00ce035f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/8c185231fdfb06220441113179ad1561.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/547d5c515e422f7b50486b4ba4c900fc.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/5d6ebc4b8d277d336c95a8cce5dd19e3.jpeg
 Meta Title: Sink Faucet Mat | Faucet Absorbent Mat Silicon Kitchen Sink Splash G
 Meta Description: Buy Sink Faucet Mat | Faucet Absorbent Mat Silicon Kitchen Sink Splash Guard Drain Pad | Soap Holder (Random Color) online in Pakistan from ASM VEO. Sink Faucet
 Description: Sink Faucet Mat is a soft silicone absorbent pad that prevents water splashes around your sink. Keeps countertops dry, clean, and stain-free while also serving as a convenient soap holder. Flexible, durable, and easy to clean.
-Regular Price: 458
-Sale Price: 458
+Wholesale Price: 408
+Regular Price: 840
+Sale Price: 672
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

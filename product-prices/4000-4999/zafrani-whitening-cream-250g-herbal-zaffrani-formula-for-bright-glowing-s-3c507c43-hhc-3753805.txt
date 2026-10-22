@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zafrani Whitening Cream 250g – Herbal Zaffrani Formula for Bright, Glowing, Soft & Even-Toned Skin | Daily Moisturizing & Skin-Polishing Cream
 Product ID: hhc-3753805
 SKU: hhc-3753805
@@ -7,11 +8,16 @@ Slug: zafrani-whitening-cream-250g-herbal-zaffrani-formula-for-bright-glowing-3c
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/b737034de49ca34206718df8efe4330e.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/b737034de49ca34206718df8efe4330e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/ea4871d2b73930d41f15ee8b83ca1e70.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/d8309b1fa3f876d101b14c058fd237e9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/1e3f335d5c8e67bc9307f97ea0f69384.jpeg
 Meta Title: Zafrani Whitening Cream 250g – Herbal Zaffrani Formula for Bright, G
 Meta Description: Buy Zafrani Whitening Cream 250g – Herbal Zaffrani Formula for Bright, Glowing, Soft & Even-Toned Skin | Daily Moisturizing & Skin-Polishing Cream online in Pak
 Description: A rich 250g Zafrani cream formulated with herbal saffron extract to brighten, moisturize, and smooth the skin for a natural, radiant glow.
-Regular Price: 263
-Sale Price: 263
+Wholesale Price: 213
+Regular Price: 530
+Sale Price: 380
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

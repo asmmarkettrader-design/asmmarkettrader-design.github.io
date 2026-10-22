@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cerave Hydrating Facial Cleanser 237ml – Gentle Moisturizing Face Wash With Hyaluronic Acid And Ceramides For Normal To Dry Skin
 Product ID: hhc-3753062
 SKU: hhc-3753062
@@ -7,11 +8,16 @@ Slug: cerave-hydrating-facial-cleanser-237ml-gentle-moisturizing-face-wash-wi-09
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/b190601f90f5e966229823cc6efc975d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/b190601f90f5e966229823cc6efc975d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/cc1065b56ade7773d9c200f555f34afb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/9b6c9f26343a80f2074ff92e41c08e2c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/ad26f5468f2c7fac6266132f058ed416.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/27/3b5511be12bf4d2bf79627aef66a9e7d.jpeg
 Meta Title: Cerave Hydrating Facial Cleanser 237ml – Gentle Moisturizing Face Wa
 Meta Description: Buy Cerave Hydrating Facial Cleanser 237ml – Gentle Moisturizing Face Wash With Hyaluronic Acid And Ceramides For Normal To Dry Skin online in Pakistan from ASM
 Description: Cerave Hydrating Facial Cleanser Gently Cleanses While Restoring Moisture And Strengthening The Skin Barrier For Soft, Healthy-Looking Skin.
-Regular Price: 530
-Sale Price: 530
+Wholesale Price: 480
+Regular Price: 980
+Sale Price: 780
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

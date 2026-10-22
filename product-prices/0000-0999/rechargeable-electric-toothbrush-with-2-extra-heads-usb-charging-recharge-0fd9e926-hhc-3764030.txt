@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rechargeable Electric Toothbrush With 2 Extra Heads |  USB Charging Rechargeable Total Washable Electronic Whitening Teeth Brush for Oral Care | Teethbrush
 Product ID: hhc-3764030
 SKU: hhc-3764030
@@ -7,11 +8,16 @@ Slug: rechargeable-electric-toothbrush-with-2-extra-heads-usb-charging-rechar-0f
 Category: Beauty & Personal Care
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/8ae66b8edda7c9f0135787dc140bf103.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/8ae66b8edda7c9f0135787dc140bf103.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/0818d606674b54c6fcb70b7740c7713f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/7dfc7619b68cb653f63dce19d51f6c37.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/04a3bf4bd752e5754377101889fd50ff.jpg
 Meta Title: Rechargeable Electric Toothbrush With 2 Extra Heads | USB Charging R
 Meta Description: Buy Rechargeable Electric Toothbrush With 2 Extra Heads | USB Charging Rechargeable Total Washable Electronic Whitening Teeth Brush for Oral Care | Teethbrush o
 Description: Rechargeable Electric Toothbrush with 2 extra heads for convenient daily oral care. USB rechargeable, washable, and designed for effective teeth cleaning, plaque removal, and a fresh, bright smile.
-Regular Price: 739
-Sale Price: 739
+Wholesale Price: 689
+Regular Price: 1320
+Sale Price: 1059
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

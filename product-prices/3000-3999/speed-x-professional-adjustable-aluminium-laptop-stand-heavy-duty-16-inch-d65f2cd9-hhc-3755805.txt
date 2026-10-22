@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Speed-X Professional Adjustable Aluminium Laptop Stand – Heavy Duty 16 Inch Height, Foldable & Portable (6 Angles)
 Product ID: hhc-3755805
 SKU: hhc-3755805
@@ -7,11 +8,16 @@ Slug: speed-x-professional-adjustable-aluminium-laptop-stand-heavy-duty-16-in-d6
 Category: Computers & Laptops
 Subcategory: Laptops & Desktops
 Brand: ASM VEO
-Meta Title: Speed-X Professional Adjustable Aluminium Laptop Stand – Heavy Duty
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/5fd2f5c74a7419cb9813b90c681eecb3.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/08/5fd2f5c74a7419cb9813b90c681eecb3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/fdc62bf9053cdd14fec4b26ae0494eac.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/b192f7f0028a579abf330df4f0731c48.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/e43dbdeb2affdab3699801c691a97599.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/22/c237e1828310fe406b965e8d089b6aa0.mp4
+Meta Title: Speed-X Professional Adjustable Aluminium Laptop Stand – Heavy Duty 
 Meta Description: Buy Speed-X Professional Adjustable Aluminium Laptop Stand – Heavy Duty 16 Inch Height, Foldable & Portable (6 Angles) online in Pakistan from ASM VEO. Upgrade
 Description: Upgrade your workspace with the Speed-X Professional Laptop Stand. Made from durable aluminium alloy, this heavy-duty stand offers 6 adjustable angles, a foldable design, and comes with a pouch cover for easy portability and ergonomic comfort.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

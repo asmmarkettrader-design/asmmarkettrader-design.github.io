@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: LED Light-up Acrylic Dry Erase Board with Markers | Colorful DIY Notes & Erasable Neon Pens 15x15 Cm
 Product ID: hhc-3764864
 SKU: hhc-3764864
@@ -7,11 +8,16 @@ Slug: led-light-up-acrylic-dry-erase-board-with-markers-colorful-diy-notes-er-4a
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/230784302b63cf0143e4a6fee279ee02.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/230784302b63cf0143e4a6fee279ee02.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/4aa32ea1c205e19ca34d2a99de12c950.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/64445660d78484e8020b4c314fef9571.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/2a5ce8f1fef9af2966b77ef4913e4a50.webp
 Meta Title: LED Light-up Acrylic Dry Erase Board with Markers | Colorful DIY Not
 Meta Description: Buy LED Light-up Acrylic Dry Erase Board with Markers | Colorful DIY Notes & Erasable Neon Pens 15x15 Cm online in Pakistan from ASM VEO. LED Light-up Acrylic D
 Description: LED Light-up Acrylic Dry Erase Board, perfect for notes, reminders, and creative drawings. Includes markers and cleaning cloth.Features 15x15 cm size option.
-Regular Price: 986
-Sale Price: 986
+Wholesale Price: 936
+Regular Price: 1770
+Sale Price: 1417
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

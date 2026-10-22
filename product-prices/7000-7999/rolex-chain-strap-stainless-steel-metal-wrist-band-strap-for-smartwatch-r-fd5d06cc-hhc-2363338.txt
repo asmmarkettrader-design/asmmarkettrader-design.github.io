@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rolex Chain Strap Stainless Steel Metal Wrist Band Strap For Smartwatch ( Random Color )
 Product ID: hhc-2363338
 SKU: hhc-2363338
@@ -7,11 +8,16 @@ Slug: rolex-chain-strap-stainless-steel-metal-wrist-band-strap-for-smartwatch-fd
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/b827481a2eb31a0e2ced427d5de9d704.jpg_2200x2200q80.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/b827481a2eb31a0e2ced427d5de9d704.jpg_2200x2200q80.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-20-at-1.36.54-PM-1_cleanup-1.png
 Meta Title: Rolex Chain Strap Stainless Steel Metal Wrist Band Strap For Smartwa
 Meta Description: Buy Rolex Chain Strap Stainless Steel Metal Wrist Band Strap For Smartwatch ( Random Color ) online in Pakistan from ASM VEO. Rolex Chain Strap Stainless Steel
 Description: Rolex Chain Strap Stainless Steel Metal Wrist Band Strap For Smartwatch ( Random Color )3. Easy to assemble, no harm to the watch4. The strap length is easy to adjust to fit your wrist5. Bright colors, fashionable and beautifulNote: The product only has the strap, not the body
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VS700 Gaming Handsfree | Ear Phone for Mobile Phones
 Product ID: hhc-1948067
 SKU: hhc-1948067
@@ -7,11 +8,16 @@ Slug: vs700-gaming-handsfree-ear-phone-for-mobile-phones-hhc-1948067
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WEBTECH_VIZO_DETAIL_20TH_AUGUST_page-0012-removebg-preview-1-1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WEBTECH_VIZO_DETAIL_20TH_AUGUST_page-0012-removebg-preview-1-1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/Untitled-design-4.png
 Meta Title: VS700 Gaming Handsfree | Ear Phone for Mobile Phones | Buy Online in
 Meta Description: Buy VS700 Gaming Handsfree | Ear Phone for Mobile Phones online in Pakistan from ASM VEO. Gaming HandsfreeMetal Smart JackSuper Bass 5u Plus Two Speaker Cash on
 Description: Gaming HandsfreeMetal Smart JackSuper Bass 5u Plus Two Speaker
-Regular Price: 410
-Sale Price: 410
+Wholesale Price: 360
+Regular Price: 750
+Sale Price: 600
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mini Jet Fan Brushless Turbine Vacuum + Blour Portable Cleaning Device - Compact Brushless Mini Jet Fan Vacuum + Blour For Quick And Efficient Cleaning Tasks
 Product ID: hhc-3752961
 SKU: hhc-3752961
@@ -7,11 +8,16 @@ Slug: mini-jet-fan-brushless-turbine-vacuum-blour-portable-cleaning-device-co-c8
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/e9196fc874cbf685a226f3a843f22972.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/20/e9196fc874cbf685a226f3a843f22972.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/16/6c72bb290baa56b959579cf5f01bf8c0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/b6364ee91c3938c8e5cc83b40982fbe5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/23/7b3ef3a9c7257063ceebee2fbc2b0d99.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/c10ad4728f6072f07236faad5ff38798.png
 Meta Title: Mini Jet Fan Brushless Turbine Vacuum + Blour Portable Cleaning Devi
 Meta Description: Buy Mini Jet Fan Brushless Turbine Vacuum + Blour Portable Cleaning Device - Compact Brushless Mini Jet Fan Vacuum + Blour For Quick And Efficient Cleaning Task
 Description: Compact Brushless Mini Jet Fan Vacuum + Blour For Quick And Efficient Cleaning Tasks
-Regular Price: 3205
-Sale Price: 3205
+Wholesale Price: 3205
+Regular Price: 5430
+Sale Price: 4346
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

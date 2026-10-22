@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Oil Spray Bottle | Adjustable Mist & Dispenser | 470ml Leak-Proof Glass Container | For Cooking, BBQ, Baking & Air Fryer 380ml (Random Color)
 Product ID: hhc-3757086
 SKU: hhc-3757086
@@ -7,11 +8,16 @@ Slug: 2-in-1-oil-spray-bottle-adjustable-mist-dispenser-470ml-leak-proof-glas-0c
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/649f040a8418040a9514104fb067d64d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/649f040a8418040a9514104fb067d64d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/bc30c86589be46e984d33d6bd4b632f2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/71c46272bd5b4a0d77df19ab7cdf9a66.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/d0fd77d40cc90be366e5fcc17c6fb352.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/ece86d34f35d0278bafa8b9d1b3c9a14.jpg
 Meta Title: 2-in-1 Oil Spray Bottle | Adjustable Mist & Dispenser | 470ml Leak-P
 Meta Description: Buy 2-in-1 Oil Spray Bottle | Adjustable Mist & Dispenser | 470ml Leak-Proof Glass Container | For Cooking, BBQ, Baking & Air Fryer 380ml (Random Color) online
 Description: 2-in-1 oil spray bottle with adjustable mist and dispenser. Leak-proof refillable glass container for cooking, BBQ, baking, salad & air fryer use.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

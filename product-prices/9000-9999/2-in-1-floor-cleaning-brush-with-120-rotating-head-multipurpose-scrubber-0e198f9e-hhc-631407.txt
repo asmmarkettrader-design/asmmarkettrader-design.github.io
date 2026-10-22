@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 2-in-1 Floor Cleaning Brush with 120° Rotating Head | Multipurpose Scrubber for Bathroom, Tiles & Windows
 Product ID: hhc-631407
 SKU: hhc-631407
@@ -7,11 +8,16 @@ Slug: 2-in-1-floor-cleaning-brush-with-120-rotating-head-multipurpose-scrubbe-0e
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/6-18.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/6-18.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/5-23.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2022/12/1-42.jpeg
 Meta Title: 2-in-1 Floor Cleaning Brush with 120° Rotating Head | Multipurpose S
 Meta Description: Buy 2-in-1 Floor Cleaning Brush with 120° Rotating Head | Multipurpose Scrubber for Bathroom, Tiles & Windows online in Pakistan from ASM VEO. 2-in-1 Floor Clea
 Description: 2-in-1 Floor Cleaning Brush with 120° Rotating Head | Multipurpose Scrubber for Bathroom, Tiles & Windows
-Regular Price: 517
-Sale Price: 517
+Wholesale Price: 467
+Regular Price: 950
+Sale Price: 760
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

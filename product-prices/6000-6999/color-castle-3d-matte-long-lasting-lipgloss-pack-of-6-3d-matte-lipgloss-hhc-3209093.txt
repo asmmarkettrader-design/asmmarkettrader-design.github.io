@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Color Castle 3D Matte Long Lasting Lipgloss [Pack of 6] | 3D Matte Lipgloss
 Product ID: hhc-3209093
 SKU: hhc-3209093
@@ -7,11 +8,16 @@ Slug: color-castle-3d-matte-long-lasting-lipgloss-pack-of-6-3d-matte-lipgloss-hh
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.25.46-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.25.46-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.25.46-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.25.45-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.25.44-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/05/WhatsApp-Image-2025-05-14-at-10.25.43-PM.jpeg
 Meta Title: Color Castle 3D Matte Long Lasting Lipgloss [Pack of 6] | 3D Matte L
 Meta Description: Buy Color Castle 3D Matte Long Lasting Lipgloss [Pack of 6] | 3D Matte Lipgloss online in Pakistan from ASM VEO. Color Castle 3D Matte Long Lasting Lipgloss [Pa
 Description: Color Castle 3D Matte Long Lasting Lipgloss [Pack of 6] | 3D Matte Lipgloss Material: Cream Texture: Matte Color: Multicolor Shade: Multicolor Feature: Matte Finish Includes: 6 x Lipstick Material: Cream Texture: Matte Color: Multicolor Shade: Multicolor Product Feature: Matte Finish Package Includes: 6 x Lipstick Pictures of the Product:
-Regular Price: 930
-Sale Price: 930
+Wholesale Price: 880
+Regular Price: 1670
+Sale Price: 1336
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

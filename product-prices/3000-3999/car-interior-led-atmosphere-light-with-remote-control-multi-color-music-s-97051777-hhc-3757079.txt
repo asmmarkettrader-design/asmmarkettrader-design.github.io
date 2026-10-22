@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Car Interior LED Atmosphere Light with Remote Control – Multi-Color Music Sync Ambient Strip Lamp (12V)
 Product ID: hhc-3757079
 SKU: hhc-3757079
@@ -7,11 +8,16 @@ Slug: car-interior-led-atmosphere-light-with-remote-control-multi-color-music-97
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Car Interior LED Atmosphere Light with Remote Control – Multi-Color
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/88ad9d38bb7825b90cb6375746de50fd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/27/88ad9d38bb7825b90cb6375746de50fd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/170b9766c221a41effead8da4fe7187c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/f1acfece3806e19ef94775c0eda1d25b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/c0f872d4b7b0770f9a171d8418f876a3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/26/28a09387716f2a465ac791506e76d8ac.jpg
+Meta Title: Car Interior LED Atmosphere Light with Remote Control – Multi-Color 
 Meta Description: Buy Car Interior LED Atmosphere Light with Remote Control – Multi-Color Music Sync Ambient Strip Lamp (12V) online in Pakistan from ASM VEO. Upgrade your drivin
 Description: Upgrade your driving experience with this stylish Car Interior Atmosphere LED Light. Designed to instantly enhance your car’s interior, this plug-and-play lighting system features vibrant multi-color modes, music sync technology, and easy remote control operation for a personalized ambiance.
-Regular Price: 1162
-Sale Price: 1162
+Wholesale Price: 1112
+Regular Price: 2050
+Sale Price: 1639
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

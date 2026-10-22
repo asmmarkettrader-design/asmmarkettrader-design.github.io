@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack of 6 Bob Super Stay Matte Lipstick Set | Best Quality Matte Lipsticks for Women (random shades)
 Product ID: hhc-2860132
 SKU: hhc-2860132
@@ -7,11 +8,16 @@ Slug: pack-of-6-bob-super-stay-matte-lipstick-set-best-quality-matte-lipstick-dc
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/451245867_467870475865780_7450873527385920818_n.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/451245867_467870475865780_7450873527385920818_n.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/440125959_1451299755593072_771348668974648783_n.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-10-at-11.49.30-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsAppImage2024-03-21at2.47.14AM_1-1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsAppImage2024-03-21at2.47.13AM_400x-1.jpg
 Meta Title: Pack of 6 Bob Super Stay Matte Lipstick Set | Best Quality Matte Lip
 Meta Description: Buy Pack of 6 Bob Super Stay Matte Lipstick Set | Best Quality Matte Lipsticks for Women (random shades) online in Pakistan from ASM VEO. Pack of 6 Bob Super St
 Description: Pack of 6 Bob Super Stay Matte Lipstick Set | Best Quality Matte Lipsticks for Women (random shades) • Material: Cream • Texture: High Pigmented, Matte • Color/Shade Name: Random Shades • Pack Of: Pack Of 6 • Package Includes: 6 x Lipsticks Original Video [video width="848" height="480" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Video-2025-03-10-at-11.50.01-AM.mp4"][/video] &nbsp;
-Regular Price: 1035
-Sale Price: 1035
+Wholesale Price: 985
+Regular Price: 1860
+Sale Price: 1488
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

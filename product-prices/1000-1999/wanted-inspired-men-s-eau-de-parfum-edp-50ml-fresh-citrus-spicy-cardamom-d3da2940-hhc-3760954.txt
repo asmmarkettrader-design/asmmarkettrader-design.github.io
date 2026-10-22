@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wanted Inspired Men's Eau De Parfum (EDP) 50ML – Fresh Citrus, Spicy Cardamom & Warm Tonka Bean Long-Lasting Fragrance
 Product ID: hhc-3760954
 SKU: hhc-3760954
 Slug: wanted-inspired-men-s-eau-de-parfum-edp-50ml-fresh-citrus-spicy-cardamo-d3da2940-hhc-3760954
-Category: Fashion
+Category: Beauty & Personal Care
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/21/32f30eceb9d7f7cb9aa1e37067137ca0.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/21/32f30eceb9d7f7cb9aa1e37067137ca0.jpg
 Meta Title: Wanted Inspired Men's Eau De Parfum (EDP) 50ML – Fresh Citrus, Spicy
 Meta Description: Buy Wanted Inspired Men's Eau De Parfum (EDP) 50ML – Fresh Citrus, Spicy Cardamom & Warm Tonka Bean Long-Lasting Fragrance online in Pakistan from ASM VEO. A bo
 Description: A bold and refreshing men's Eau De Parfum inspired by the iconic Wanted fragrance. This 50ML scent opens with vibrant lemon, ginger, lavender, and mint, followed by crisp apple and aromatic spices, finishing with rich tonka bean, vetiver, and amberwood for a long-lasting masculine impression.
-Regular Price: 3797
-Sale Price: 3797
+Wholesale Price: 2712
+Regular Price: 4800
+Sale Price: 3841
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

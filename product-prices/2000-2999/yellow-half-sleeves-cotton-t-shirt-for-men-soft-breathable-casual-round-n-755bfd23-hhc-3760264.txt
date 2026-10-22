@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yellow Half Sleeves Cotton T-Shirt for Men – Soft Breathable Casual Round Neck Summer Wear Tee
 Product ID: hhc-3760264
 SKU: hhc-3760264
@@ -7,11 +8,16 @@ Slug: yellow-half-sleeves-cotton-t-shirt-for-men-soft-breathable-casual-round-75
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
-Meta Title: Yellow Half Sleeves Cotton T-Shirt for Men – Soft Breathable Casual
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/6d184e5ed8bb7259ca842ad988d172f7.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/6d184e5ed8bb7259ca842ad988d172f7.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/05/ab5aae23b8ee02c52d9bfe48faab7df4.jpeg
+Meta Title: Yellow Half Sleeves Cotton T-Shirt for Men – Soft Breathable Casual 
 Meta Description: Buy Yellow Half Sleeves Cotton T-Shirt for Men – Soft Breathable Casual Round Neck Summer Wear Tee online in Pakistan from ASM VEO. Stay cool and stylish with t
 Description: Stay cool and stylish with this men's O-neck short sleeve T-shirt. Made from soft and breathable fabric, it is perfect for summer, beach outings, casual wear, gym sessions, and everyday use. Designed for comfort and a modern look.
-Regular Price: 535
-Sale Price: 535
+Wholesale Price: 485
+Regular Price: 980
+Sale Price: 788
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

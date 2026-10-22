@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Single DIY Beads Set With Bunny Shape Storage Box For Bracelet And Locket Making With Different Beads In One
 Product ID: hhc-3756424
 SKU: hhc-3756424
@@ -7,11 +8,16 @@ Slug: single-diy-beads-set-with-bunny-shape-storage-box-for-bracelet-and-lock-2a
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/f1a85fa0fdf2a4cafd1d6e2e69446fc1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/f1a85fa0fdf2a4cafd1d6e2e69446fc1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/c5405b4483b25fdec9640fe5cbc96e58.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/34e2f874b279a946b4cac9f2defbfc5e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/02feee95d13ff2da6288b16e4e581c1a.jpeg
 Meta Title: Single DIY Beads Set With Bunny Shape Storage Box For Bracelet And L
 Meta Description: Buy Single DIY Beads Set With Bunny Shape Storage Box For Bracelet And Locket Making With Different Beads In One online in Pakistan from ASM VEO. Single DIY Bea
 Description: Single DIY Beads Set With Bunny Shape Box Containing Different Beads For Bracelet And Locket Making
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

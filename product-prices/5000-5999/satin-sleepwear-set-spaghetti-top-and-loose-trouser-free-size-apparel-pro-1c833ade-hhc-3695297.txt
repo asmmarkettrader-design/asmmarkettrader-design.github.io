@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Satin Sleepwear Set - Spaghetti Top And Loose Trouser - Free Size - Apparel Product Designed For Sleep And Daily Lounging Routine
 Product ID: hhc-3695297
 SKU: hhc-3695297
@@ -7,11 +8,16 @@ Slug: satin-sleepwear-set-spaghetti-top-and-loose-trouser-free-size-apparel-p-1c
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
-Meta Title: Satin Sleepwear Set - Spaghetti Top And Loose Trouser - Free Size -
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/WhatsApp-Image-2025-08-27-at-7.09.34-PM-1_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/WhatsApp-Image-2025-08-27-at-7.09.34-PM-1_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/aiease_1756386047988.jpg
+Meta Title: Satin Sleepwear Set - Spaghetti Top And Loose Trouser - Free Size - 
 Meta Description: Buy Satin Sleepwear Set - Spaghetti Top And Loose Trouser - Free Size - Apparel Product Designed For Sleep And Daily Lounging Routine online in Pakistan from AS
 Description: The Satin Sleepwear Set - Spaghetti Top And Loose Trouser - Free Size Is An Apparel Product Formulated To Help Provide Sleep And Daily Lounging Utility During Use.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

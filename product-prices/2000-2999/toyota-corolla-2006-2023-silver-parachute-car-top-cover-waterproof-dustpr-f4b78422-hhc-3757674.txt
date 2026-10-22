@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Toyota Corolla (2006–2023) Silver Parachute Car Top Cover – Waterproof, Dustproof, Heat Resistant Full Body Protection
 Product ID: hhc-3757674
 SKU: hhc-3757674
@@ -7,11 +8,16 @@ Slug: toyota-corolla-2006-2023-silver-parachute-car-top-cover-waterproof-dust-f4
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/e35b2e0f098101b88568367c891256d1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/e35b2e0f098101b88568367c891256d1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/16/80af957772c41fee3f5fc4d37c4e5059.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/16/0c59061c3ec206fa23fb33d2c5f088fe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/16/9ed55dcc2c27adc5ae8334ad42dcc319.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/16/190f64de285f78985934f2c00121ccc5.png
 Meta Title: Toyota Corolla (2006–2023) Silver Parachute Car Top Cover – Waterpro
 Meta Description: Buy Toyota Corolla (2006–2023) Silver Parachute Car Top Cover – Waterproof, Dustproof, Heat Resistant Full Body Protection online in Pakistan from ASM VEO. Prem
 Description: Premium silver parachute car cover designed for Toyota Corolla 2006–2023 models. Provides complete protection from dust, rain, heat, and scratches with a secure elastic fit and durable waterproof material.
-Regular Price: 2726
-Sale Price: 2726
+Wholesale Price: 2726
+Regular Price: 4820
+Sale Price: 3860
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

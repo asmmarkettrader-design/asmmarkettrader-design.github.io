@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3-in-1 Hot Air Brush – Professional One-Step Hair Dryer, Straightener, and Curler
 Product ID: hhc-3758536
 SKU: hhc-3758536
@@ -7,11 +8,16 @@ Slug: 3-in-1-hot-air-brush-professional-one-step-hair-dryer-straightener-and-cur
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/fad8a9ff0e81eecf399c7dcd07799811.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/07/fad8a9ff0e81eecf399c7dcd07799811.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/736a746bae6537562d5a0f61752d5b83.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/06cb36ee6a3a77a4653d359cde363a9e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/cd2f696091b25c965e86404a793be265.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/49fda2362d3678d5c678a41cb3036a99.png
 Meta Title: 3-in-1 Hot Air Brush – Professional One-Step Hair Dryer, Straightene
 Meta Description: Buy 3-in-1 Hot Air Brush – Professional One-Step Hair Dryer, Straightener, and Curler online in Pakistan from ASM VEO. Revitalize your hairstyling routine with
 Description: Revitalize your hairstyling routine with the 3-in-1 Hot Air Brush. This versatile tool combines a hair dryer, straightener, and curler into one device, allowing you to dry and style your hair simultaneously for salon-quality results at home.
-Regular Price: 1940
-Sale Price: 1940
+Wholesale Price: 1940
+Regular Price: 3500
+Sale Price: 2799
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

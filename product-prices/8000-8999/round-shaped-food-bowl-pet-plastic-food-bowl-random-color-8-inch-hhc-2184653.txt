@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: round  Shaped food bowl Pet Plastic food bowl (Random Color)  8 inch
 Product ID: hhc-2184653
 SKU: hhc-2184653
@@ -7,11 +8,16 @@ Slug: round-shaped-food-bowl-pet-plastic-food-bowl-random-color-8-inch-hhc-21846
 Category: Baby & Kids Accessories
 Subcategory: Safety & Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/null-1.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/null-1.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/null.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-9.21.18-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-17-at-9.21.18-PM.jpeg
 Meta Title: round Shaped food bowl Pet Plastic food bowl (Random Color) 8 inch |
 Meta Description: Buy round Shaped food bowl Pet Plastic food bowl (Random Color) 8 inch online in Pakistan from ASM VEO. New Shape Cat Shaped Double Food Bowl Pet Plastic Food B
 Description: New Shape Cat Shaped Double Food Bowl Pet Plastic Food Bowl Foodie Puppies Non-Slip, Non-Toxic Pet Feeding Plastic Bear Face Shaped Double Bowl Food &amp; Water Feeder 2-In-1 Bowl For Dogs, Puppies, Cats &amp; Kittens - Multi Colour size 8 inch
-Regular Price: 278
-Sale Price: 278
+Wholesale Price: 228
+Regular Price: 552
+Sale Price: 402
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

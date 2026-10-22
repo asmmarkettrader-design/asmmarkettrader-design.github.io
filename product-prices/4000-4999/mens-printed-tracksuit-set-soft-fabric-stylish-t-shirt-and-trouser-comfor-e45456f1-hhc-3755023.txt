@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mens Printed Tracksuit Set Soft Fabric Stylish T Shirt and Trouser Comfortable Fashionable Outfit
 Product ID: hhc-3755023
 SKU: hhc-3755023
@@ -7,11 +8,16 @@ Slug: mens-printed-tracksuit-set-soft-fabric-stylish-t-shirt-and-trouser-comf-e4
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3503347f841f0d9cdfbd55f40be26098.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3503347f841f0d9cdfbd55f40be26098.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/c6ebf7cea9fd31a5b274a2c2fc4e90b6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/d18a7f82b75016b8c5ff56990084c841.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/11/c66915b0ad3ebcc1f96846076ad25774.jpg
 Meta Title: Mens Printed Tracksuit Set Soft Fabric Stylish T Shirt and Trouser C
 Meta Description: Buy Mens Printed Tracksuit Set Soft Fabric Stylish T Shirt and Trouser Comfortable Fashionable Outfit online in Pakistan from ASM VEO. Premium quality printed t
 Description: Premium quality printed tracksuit with soft jersey shirt and terry trouser for style and comfort.
-Regular Price: 1368
-Sale Price: 1368
+Wholesale Price: 1318
+Regular Price: 2420
+Sale Price: 1932
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

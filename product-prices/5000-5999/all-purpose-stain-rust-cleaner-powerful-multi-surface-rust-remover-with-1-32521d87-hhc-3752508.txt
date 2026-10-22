@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: All Purpose Stain & Rust Cleaner – Powerful Multi-Surface Rust Remover with 100% Guaranteed Results - 30ML
 Product ID: hhc-3752508
 SKU: hhc-3752508
@@ -7,11 +8,16 @@ Slug: all-purpose-stain-rust-cleaner-powerful-multi-surface-rust-remover-with-32
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/db92ef8aa4cb874ab311e9503f67ff5c.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/db92ef8aa4cb874ab311e9503f67ff5c.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/18/c0cd11578eb1caa86780e8c82f94ea4e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/5f8f1be6985ffcf34fdbbf25b73fe5a0.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/eaaf0aed9172d54f91a8d14b4d164117.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/29/e8398ccfbc142537ef196b3967bb1bc2.jpeg
 Meta Title: All Purpose Stain & Rust Cleaner – Powerful Multi-Surface Rust Remov
 Meta Description: Buy All Purpose Stain & Rust Cleaner – Powerful Multi-Surface Rust Remover with 100% Guaranteed Results - 30ML online in Pakistan from ASM VEO. Effectively remo
 Description: Effectively remove tough stains and rust from multiple surfaces with our all-purpose cleaner, delivering 100% guaranteed results for a spotless finish.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

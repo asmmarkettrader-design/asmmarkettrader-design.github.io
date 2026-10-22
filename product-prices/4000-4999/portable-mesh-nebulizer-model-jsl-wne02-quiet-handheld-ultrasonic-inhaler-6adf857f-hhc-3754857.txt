@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Mesh Nebulizer (Model JSL-WNE02) – Quiet, Handheld Ultrasonic Inhaler for Respiratory Relief, Kids and Adults
 Product ID: hhc-3754857
 SKU: hhc-3754857
@@ -7,11 +8,16 @@ Slug: portable-mesh-nebulizer-model-jsl-wne02-quiet-handheld-ultrasonic-inhal-6a
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/2c61fd19429147fdf5b5cefa4aae8089.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/2c61fd19429147fdf5b5cefa4aae8089.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/ac3c87293e5651602948ed87232c8ce2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/0ab1938f2a07bacc186a35ce0e36777f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/51651154aad750224e56fa6bbc0882ec.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/26/9d8404b2181e6434b04ee83a9c5afa48.jpg
 Meta Title: Portable Mesh Nebulizer (Model JSL-WNE02) – Quiet, Handheld Ultrason
 Meta Description: Buy Portable Mesh Nebulizer (Model JSL-WNE02) – Quiet, Handheld Ultrasonic Inhaler for Respiratory Relief, Kids and Adults online in Pakistan from ASM VEO. Expe
 Description: Experience fast and effective respiratory support on the go with the JSL-WNE02 Mesh Nebulizer. This compact, handheld device uses advanced vibrating mesh technology to deliver a fine mist of medication directly to the lungs. Designed for quiet operation and ease of use, it is the perfect travel-frien
-Regular Price: 1204
-Sale Price: 1204
+Wholesale Price: 1154
+Regular Price: 2120
+Sale Price: 1699
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

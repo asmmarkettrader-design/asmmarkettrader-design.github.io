@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: LED musicBULB Bluetooth speaker with multi lights
 Product ID: hhc-1215834
 SKU: hhc-1215834
@@ -7,11 +8,16 @@ Slug: led-musicbulb-bluetooth-speaker-with-multi-lights-hhc-1215834
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/c5dee3ba-4c52-43e1-859b-9a006fa781d6.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/c5dee3ba-4c52-43e1-859b-9a006fa781d6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/c5dee3ba-4c52-43e1-859b-9a006fa781d6-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/02/1-min_be6616ad-b4be-4216-9c99-4c6e02450e29_1024x1024@2x.webp
 Meta Title: LED musicBULB Bluetooth speaker with multi lights | Buy Online in Pa
 Meta Description: Buy LED musicBULB Bluetooth speaker with multi lights online in Pakistan from ASM VEO. Description 1.【Built-in Bluetooth speaker】 It can connect your mobile pho
 Description: Description 1.【Built-in Bluetooth speaker】 It can connect your mobile phone or laptop or computer or any other blue tooth recognition devices to make some noise for great party. Support SD card, AUX, USB and music in MP3 format, MP4 format 2.【7 Magic Colors】 Enjoy your romantic night with colorful lights. High brightness, colorful and romantic lighting effect 3.【Suitable For Many Scenes】Family party, garden party, Halloween parties, birthdays parties, disco parties, dance parties, Christmas parties, pool parties, Holidays, Weddings, ballroom, KTV, children room,shopping malls, squares, parks and other occasions &nbsp; &nbsp;
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

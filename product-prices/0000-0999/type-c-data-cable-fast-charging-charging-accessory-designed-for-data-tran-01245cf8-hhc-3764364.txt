@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Type C Data Cable Fast Charging - Charging Accessory Designed For Data Transfer And Daily Power Routine
 Product ID: hhc-3764364
 SKU: hhc-3764364
@@ -7,11 +8,16 @@ Slug: type-c-data-cable-fast-charging-charging-accessory-designed-for-data-tr-01
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/0e27653c970389df67770434232d76ac.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/0e27653c970389df67770434232d76ac.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/70ea52a65756929794aa895dce828fca.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/25/37501f7ab014da9a2e9f64f724bc9235.jpg
 Meta Title: Type C Data Cable Fast Charging - Charging Accessory Designed For Da
 Meta Description: Buy Type C Data Cable Fast Charging - Charging Accessory Designed For Data Transfer And Daily Power Routine online in Pakistan from ASM VEO. The Type C Data Cab
 Description: The Type C Data Cable Fast Charging Is A Charging Accessory Formulated To Help Provide Data Transfer And Daily Power Utility During Use.
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Cute Cartoon Duck Thermal Insulated Lunch Bag - Carry Bag Designed For Food Storage And Daily Meal Routine
 Product ID: hhc-3764780
 SKU: hhc-3764780
@@ -7,11 +8,16 @@ Slug: cute-cartoon-duck-thermal-insulated-lunch-bag-carry-bag-designed-for-fo-be
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/9baaf357ab3787ee8c5ab3aba66f5714.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/9baaf357ab3787ee8c5ab3aba66f5714.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/03/f1d4080c2bcd76b045e3cd042d1a0d4d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/3737caa8ed16a1b0cdc29b014be8943a.jfif
 Meta Title: Cute Cartoon Duck Thermal Insulated Lunch Bag - Carry Bag Designed F
 Meta Description: Buy Cute Cartoon Duck Thermal Insulated Lunch Bag - Carry Bag Designed For Food Storage And Daily Meal Routine online in Pakistan from ASM VEO. This Cute Cartoo
 Description: This Cute Cartoon Duck Thermal Insulated Lunch Bag Provides A Reliable Solution For Carry Bags And Routine Food Storage Needs. Formulated To Deliver Storage Benefits While Supporting Cute Cartoon Duck Thermal Insulated Lunch Bag Utility, It Fits Seamlessly Into Your Regular Food Storage Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Food Storage Requirements, This Cute Cartoon Duck Thermal Insulated Lunch Bag Serves As An Essential Carry Bag Accessory For Daily Life.Key FeaturesCute Cartoon Duck Thermal Insulated Lunch Bag Formulated For Carry BagsDelivers Food Storage And Supports Daily Meal UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Food Storage And Meal RoutinesDesigned For Easy Operation And Convenient UseEssential Carry Bag Accessory For Everyday MaintenanceCute cartoon duck design thermal lunch bag. Keeps food warm or cool for up to 12 hours. Size: 13 inches x 14 inches. Durable and insulated, perfect for kids or adults.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

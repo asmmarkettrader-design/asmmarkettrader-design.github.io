@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Wireless EMS Mini Body Massager – Portable Butterfly Massager for Blood Circulation & Pain Relief
 Product ID: hhc-3752499
 SKU: hhc-3752499
@@ -7,11 +8,16 @@ Slug: wireless-ems-mini-body-massager-portable-butterfly-massager-for-blood-c-5f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/93e34af373c3a5fc1ce9f3c1e1f501c8.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/93e34af373c3a5fc1ce9f3c1e1f501c8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/958b0dc703707b7f235c62239e3d97cd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/203a7ecd85ff2933e4627b15da41505c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/9c8ed420294902e9f4f76778fc7100ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/27/8a47b312f064dff2abfcbb063b6b0177.mp4
 Meta Title: Wireless EMS Mini Body Massager – Portable Butterfly Massager for Bl
 Meta Description: Buy Wireless EMS Mini Body Massager – Portable Butterfly Massager for Blood Circulation & Pain Relief online in Pakistan from ASM VEO. Ems Butterfly Portable Ne
 Description: Ems Butterfly Portable Neck Massager | Best Quality EMS Butterfly Massager – EMS Butterfly Rechargeable Massager – MS Foot Massager Pad Improve Blood Circulation
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

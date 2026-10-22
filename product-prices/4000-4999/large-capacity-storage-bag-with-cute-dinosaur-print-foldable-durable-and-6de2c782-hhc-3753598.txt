@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Large Capacity Storage Bag With Cute Dinosaur Print – Foldable, Durable, And Perfect For Toys, Clothes, And Everyday Organization (Random Color)
 Product ID: hhc-3753598
 SKU: hhc-3753598
@@ -7,11 +8,16 @@ Slug: large-capacity-storage-bag-with-cute-dinosaur-print-foldable-durable-an-6d
 Category: Cleaning & Organization
 Subcategory: Storage Boxes & Organizers
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/028d265775ef11cf463a255cee3dd9ec.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/028d265775ef11cf463a255cee3dd9ec.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/251daf3a38ebbc5a264bc8e5aa507e66.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/e8dbc24eba69b4fd746e7ca7644bbdec.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/2ef9aa13adf85911f7712f453543a41a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/17/e6a74203ad5fb813fd33410fdfc7196c.png
 Meta Title: Large Capacity Storage Bag With Cute Dinosaur Print – Foldable, Dura
 Meta Description: Buy Large Capacity Storage Bag With Cute Dinosaur Print – Foldable, Durable, And Perfect For Toys, Clothes, And Everyday Organization (Random Color) online in P
 Description: A Spacious And Durable Kids Storage Bag Designed With A Fun Dinosaur Print, Ideal For Organizing Toys, Clothes, And Essentials In Any Room.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

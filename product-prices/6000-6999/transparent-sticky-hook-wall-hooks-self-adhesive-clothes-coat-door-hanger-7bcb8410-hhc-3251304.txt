@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Transparent Sticky Hook | Wall Hooks Self Adhesive Clothes Coat | Door Hanger Towel Key Holder Bathroom Kitchen Storage Sticker Hook
 Product ID: hhc-3251304
 SKU: hhc-3251304
@@ -7,11 +8,16 @@ Slug: transparent-sticky-hook-wall-hooks-self-adhesive-clothes-coat-door-hang-7b
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-27-at-5.25.39-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-27-at-5.25.39-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-27-at-5.25.39-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/WhatsApp-Image-2023-12-27-at-5.25.38-PM-1.jpeg
 Meta Title: Transparent Sticky Hook | Wall Hooks Self Adhesive Clothes Coat | Do
 Meta Description: Buy Transparent Sticky Hook | Wall Hooks Self Adhesive Clothes Coat | Door Hanger Towel Key Holder Bathroom Kitchen Storage Sticker Hook online in Pakistan from
 Description: Transparent Sticky Hook | Wall Hooks Self Adhesive Clothes Coat | Door Hanger Towel Key Holder Bathroom Kitchen Storage Sticker Hook
-Regular Price: 218
-Sale Price: 218
+Wholesale Price: 168
+Regular Price: 462
+Sale Price: 312
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

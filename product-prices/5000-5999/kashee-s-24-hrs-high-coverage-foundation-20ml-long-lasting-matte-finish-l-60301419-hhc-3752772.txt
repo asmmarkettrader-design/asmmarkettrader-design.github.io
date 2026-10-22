@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Kashee’s 24 Hrs High Coverage Foundation 20ml | Long Lasting Matte Finish | Lightweight Full Coverage Liquid Foundation For Flawless Skin
 Product ID: hhc-3752772
 SKU: hhc-3752772
@@ -7,11 +8,16 @@ Slug: kashee-s-24-hrs-high-coverage-foundation-20ml-long-lasting-matte-finish-60
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/296fb432e7f65a87cb4c20a8e5f6b8e9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/296fb432e7f65a87cb4c20a8e5f6b8e9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/773ffa523fde68ac6f5355cb4df9888e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/b3ad652bef7856ccaeca4bc4a6d2c99b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/153c1a35d84bc74c31db5ed01d7a58f2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/15/38e3a271640327691486eaa379a22fd9.png
 Meta Title: Kashee’s 24 Hrs High Coverage Foundation 20ml | Long Lasting Matte F
 Meta Description: Buy Kashee’s 24 Hrs High Coverage Foundation 20ml | Long Lasting Matte Finish | Lightweight Full Coverage Liquid Foundation For Flawless Skin online in Pakistan
 Description: Kashee’s 24 Hrs High Coverage Foundation Provides Smooth, Long-Lasting, And Flawless Coverage With A Lightweight Matte Finish That Lasts All Day.
-Regular Price: 1219
-Sale Price: 1219
+Wholesale Price: 1169
+Regular Price: 2150
+Sale Price: 1720
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Triangular Mosquito Coil Holder, Spiral Mosquito Coil Holder Insect Repellent Incense Rack (random color)
 Product ID: hhc-1929688
 SKU: hhc-1929688
@@ -7,11 +8,16 @@ Slug: triangular-mosquito-coil-holder-spiral-mosquito-coil-holder-insect-repe-18
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Triangular Mosquito Coil Holder, Spiral Mosquito Coil Holder Insect
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/484e88c00275035dc602775503af4a67.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/484e88c00275035dc602775503af4a67.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-1.55.02-PM-2-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/08/WhatsApp-Image-2024-08-19-at-1.55.03-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/11/957a6f865746fc910304fded23e93170.jpeg
+Meta Title: Triangular Mosquito Coil Holder, Spiral Mosquito Coil Holder Insect 
 Meta Description: Buy Triangular Mosquito Coil Holder, Spiral Mosquito Coil Holder Insect Repellent Incense Rack (random color) online in Pakistan from ASM VEO. About this itemCu
 Description: About this itemCute Mosquito Coil Holder Burner Stand with ash catcher for safety using and keeps floor clean.Metal structure with finished surface-rustproof, solid, durable and safety using.Also can be used as home desktop decoration more refined.Can be combined with other retro home accessories to create a romantic atmosphere.Suitable for indoors and outdoors such as living room, bedroom, shopping
-Regular Price: 232
-Sale Price: 232
+Wholesale Price: 182
+Regular Price: 483
+Sale Price: 333
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

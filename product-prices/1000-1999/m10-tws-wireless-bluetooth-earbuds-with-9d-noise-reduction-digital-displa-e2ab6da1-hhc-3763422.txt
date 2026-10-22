@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: M10 TWS Wireless Bluetooth Earbuds with 9D Noise Reduction & Digital Display Charging Case
 Product ID: hhc-3763422
 SKU: hhc-3763422
@@ -7,11 +8,16 @@ Slug: m10-tws-wireless-bluetooth-earbuds-with-9d-noise-reduction-digital-disp-e2
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/cd176fad47bd94e5abecea6b63ea7703.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/cd176fad47bd94e5abecea6b63ea7703.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/ee6bacd6247614959511aa85dcbcf7e3.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/64b48973d9da8d6ef96fe4c690eedb2f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/8d3630483f5b04d8d104f6a981720159.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/249ef0cb49fadcefba437177236b6bff.jpg
 Meta Title: M10 TWS Wireless Bluetooth Earbuds with 9D Noise Reduction & Digital
 Meta Description: Buy M10 TWS Wireless Bluetooth Earbuds with 9D Noise Reduction & Digital Display Charging Case online in Pakistan from ASM VEO. M10 TWS Wireless Bluetooth Earbu
 Description: M10 TWS Wireless Bluetooth Earbuds featuring 9D noise reduction, clear sound, comfortable in-ear design, and a stylish charging case with digital battery display. Ideal for music, calls, gaming, and everyday use.
-Regular Price: 922
-Sale Price: 922
+Wholesale Price: 872
+Regular Price: 1660
+Sale Price: 1324
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

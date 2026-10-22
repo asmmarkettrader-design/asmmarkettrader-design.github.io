@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: GUANJING Hyaluronic Acid Deep Cleansing Face Gel – Refreshing, Moisturizing & Anti-Aging (125g)
 Product ID: hhc-3754579
 SKU: hhc-3754579
@@ -7,11 +8,16 @@ Slug: guanjing-hyaluronic-acid-deep-cleansing-face-gel-refreshing-moisturizin-25
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/b623363971cfd842b42bd639c918c07b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/b623363971cfd842b42bd639c918c07b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/141f5bda8e494502cd04bb98906733a9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/fee2f2b6504cf1cebaff5f81c410cce3.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/19/f24b567689f78315263d9760361c1d6a.jpeg
 Meta Title: GUANJING Hyaluronic Acid Deep Cleansing Face Gel – Refreshing, Moist
 Meta Description: Buy GUANJING Hyaluronic Acid Deep Cleansing Face Gel – Refreshing, Moisturizing & Anti-Aging (125g) online in Pakistan from ASM VEO. Revitalize your complexion
 Description: Revitalize your complexion with the GUANJING Hyaluronic Acid Deep Cleansing Gel. This high-concentration active formula penetrates deep to remove impurities while flooding the skin with essential moisture.
-Regular Price: 853
-Sale Price: 853
+Wholesale Price: 803
+Regular Price: 1530
+Sale Price: 1224
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

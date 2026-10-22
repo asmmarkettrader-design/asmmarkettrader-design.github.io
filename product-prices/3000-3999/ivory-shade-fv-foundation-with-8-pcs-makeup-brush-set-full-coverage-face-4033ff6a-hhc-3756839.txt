@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Ivory Shade FV Foundation With 8 Pcs Makeup Brush Set – Full Coverage Face Makeup Kit For Women
 Product ID: hhc-3756839
 SKU: hhc-3756839
@@ -7,11 +8,16 @@ Slug: ivory-shade-fv-foundation-with-8-pcs-makeup-brush-set-full-coverage-fac-40
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/d7f0a7777797c19ad753f2de7f055988.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/d7f0a7777797c19ad753f2de7f055988.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/142597b78c369a46a631997bedc164ab.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/d7fb7de0828a70f4c1f52d4a3158a07c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/ef59a173acb70cd6e0b1f38f89ce3ab4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/04698e34498342e5602b9ee1c44e5763.jpeg
 Meta Title: Ivory Shade FV Foundation With 8 Pcs Makeup Brush Set – Full Coverag
 Meta Description: Buy Ivory Shade FV Foundation With 8 Pcs Makeup Brush Set – Full Coverage Face Makeup Kit For Women online in Pakistan from ASM VEO. Upgrade your makeup routine
 Description: Upgrade your makeup routine with this FV Makeup Bundle. Includes 1 FV Foundation for flawless coverage and an 8-piece brush set for precise and professional application.
-Regular Price: 950
-Sale Price: 950
+Wholesale Price: 900
+Regular Price: 1710
+Sale Price: 1365
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Almas Multani Mitti Jar - Beauty Accessory Designed For Skin Cleansing And Daily Skincare Routine - 100ML
 Product ID: hhc-3764734
 SKU: hhc-3764734
@@ -7,11 +8,16 @@ Slug: almas-multani-mitti-jar-beauty-accessory-designed-for-skin-cleansing-an-0f
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/f4d763fb8ecdead5072d918fa87c0128.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/f4d763fb8ecdead5072d918fa87c0128.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/01/9723fbf8a5828b453d5add8bd111f813.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/05/660167e682174500fe6d34bbb956a8fd.jfif
 Meta Title: Almas Multani Mitti Jar - Beauty Accessory Designed For Skin Cleansi
 Meta Description: Buy Almas Multani Mitti Jar - Beauty Accessory Designed For Skin Cleansing And Daily Skincare Routine - 100ML online in Pakistan from ASM VEO. A 100ml jar of Al
 Description: A 100ml jar of Almas Multani Mitti (Fuller's Earth). Formulated to deep-cleanse pores, absorb excess oil, and revitalize the skin for a smooth, natural glow.
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

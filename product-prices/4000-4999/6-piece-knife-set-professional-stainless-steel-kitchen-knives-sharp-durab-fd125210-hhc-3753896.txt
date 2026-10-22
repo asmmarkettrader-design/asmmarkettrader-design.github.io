@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6 Piece Knife Set | Professional Stainless Steel Kitchen Knives | Sharp Durable Blades for Meat, Vegetables, Fruits & Daily Cooking | Comfortable Grip – Chef Knife, Bread Knife, Utility Knife & More
 Product ID: hhc-3753896
 SKU: hhc-3753896
@@ -7,11 +8,16 @@ Slug: 6-piece-knife-set-professional-stainless-steel-kitchen-knives-sharp-dur-fd
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6e6bc425c68851fb2f339e4d0dfdbcb2.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/6e6bc425c68851fb2f339e4d0dfdbcb2.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/281c92070964238b83c534eeeb311f2e.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/bc5637484aa1661ba962b1f51fba6810.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/26/cfc38418dca6911ffe64c31677417ff0.png
 Meta Title: 6 Piece Knife Set | Professional Stainless Steel Kitchen Knives | Sh
 Meta Description: Buy 6 Piece Knife Set | Professional Stainless Steel Kitchen Knives | Sharp Durable Blades for Meat, Vegetables, Fruits & Daily Cooking | Comfortable Grip – Che
 Description: A premium 6-piece stainless steel knife set designed for smooth cutting, slicing, chopping, and meal prep. Durable, sharp, rust-resistant and perfect for home or professional kitchen use.
-Regular Price: 523
-Sale Price: 523
+Wholesale Price: 473
+Regular Price: 960
+Sale Price: 770
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

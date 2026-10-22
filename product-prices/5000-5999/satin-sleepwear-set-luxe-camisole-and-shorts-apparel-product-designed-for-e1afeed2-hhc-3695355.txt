@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Satin Sleepwear Set - Luxe Camisole And Shorts - Apparel Product Designed For Sleep And Daily Lounging Routine - Free Size (DC-2003)
 Product ID: hhc-3695355
 SKU: hhc-3695355
@@ -7,11 +8,16 @@ Slug: satin-sleepwear-set-luxe-camisole-and-shorts-apparel-product-designed-f-e1
 Category: Events & Gifting
 Subcategory: Personalized Gifts
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250828_180541.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250828_180541.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250828_180156.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/08/Copilot_20250828_180154.png
 Meta Title: Satin Sleepwear Set - Luxe Camisole And Shorts - Apparel Product Des
 Meta Description: Buy Satin Sleepwear Set - Luxe Camisole And Shorts - Apparel Product Designed For Sleep And Daily Lounging Routine - Free Size (DC-2003) online in Pakistan from
 Description: The Satin Sleepwear Set - Luxe Camisole And Shorts Is An Apparel Product Formulated To Help Provide Sleep And Daily Lounging Utility During Use.
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

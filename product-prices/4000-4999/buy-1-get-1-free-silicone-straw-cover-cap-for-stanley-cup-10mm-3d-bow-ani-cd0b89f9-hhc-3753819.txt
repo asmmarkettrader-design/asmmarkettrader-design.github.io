@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Buy 1 Get 1 Free – Silicone Straw Cover Cap for Stanley Cup | 10mm 3D Bow & Animal Straw Topper | Dust-Proof, Reusable Drinking Straw Tips
 Product ID: hhc-3753819
 SKU: hhc-3753819
@@ -7,11 +8,16 @@ Slug: buy-1-get-1-free-silicone-straw-cover-cap-for-stanley-cup-10mm-3d-bow-a-cd
 Category: Kitchen & Dining
 Subcategory: Water Dispensers & Filters
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/0cd305c08be83d0cc518c7d7f4bfe6b3.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/0cd305c08be83d0cc518c7d7f4bfe6b3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/78c4f5955ef1dc02049a9ae5695fb81c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/555adab6d2815afa70067783d4e4366f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/57bead3fd981faa627ad10841da4cc1e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/24/4e9db3ba803ec4f2444079ea0c495049.jpeg
 Meta Title: Buy 1 Get 1 Free – Silicone Straw Cover Cap for Stanley Cup | 10mm 3
 Meta Description: Buy Buy 1 Get 1 Free – Silicone Straw Cover Cap for Stanley Cup | 10mm 3D Bow & Animal Straw Topper | Dust-Proof, Reusable Drinking Straw Tips online in Pakista
 Description: Cute 3D silicone straw caps designed for 10mm Stanley straws. Dust-proof, reusable, and secure—perfect for keeping drinks clean and stylish.
-Regular Price: 348
-Sale Price: 348
+Wholesale Price: 298
+Regular Price: 657
+Sale Price: 507
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

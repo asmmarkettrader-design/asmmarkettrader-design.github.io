@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Markaway Stretch Mark Serum , Advanced Stretch Mark Serum 30ml Hydrating Repairing Formula Reduces Scars Fades Marks Evens Skin Tone Daily Skincare
 Product ID: hhc-3765026
 SKU: hhc-3765026
@@ -7,11 +8,16 @@ Slug: markaway-stretch-mark-serum-advanced-stretch-mark-serum-30ml-hydrating-d80
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/5476a56edbd79d7ea9d086f01933dd4f.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/5476a56edbd79d7ea9d086f01933dd4f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/5d3c3bb50e6939fa695330a30b3664d5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/d8309b8626c72b88b42c5aa997839bcb.jpg
 Meta Title: Markaway Stretch Mark Serum , Advanced Stretch Mark Serum 30ml Hydra
 Meta Description: Buy Markaway Stretch Mark Serum , Advanced Stretch Mark Serum 30ml Hydrating Repairing Formula Reduces Scars Fades Marks Evens Skin Tone Daily Skincare online i
 Description: Advanced Stretch Mark Serum 30ml Is A Daily Skincare Solution Designed To Fade Stretch Marks And Improve Overall Skin Appearance. Its hydrating and repairing formula helps reduce scars, lighten marks, and even out skin tone, leaving the skin smooth, clear, and radiant. Lightweight and safe for all skin types, this serum absorbs quickly without residue, making it suitable for both men and women. With consistent daily use, it supports skin renewal and enhances confidence through visible results.Key Features:Advanced Stretch Mark Serum 30mlHydrating Repairing Formula For Skin RenewalReduces Scars And Fades Stretch MarksEvens Skin Tone For Clear Radiant ComplexionLightweight Non Greasy Texture Safe For All Skin TypesSuitable For Daily Skincare Routine For Men And Women
-Regular Price: 292
-Sale Price: 292
+Wholesale Price: 242
+Regular Price: 573
+Sale Price: 423
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

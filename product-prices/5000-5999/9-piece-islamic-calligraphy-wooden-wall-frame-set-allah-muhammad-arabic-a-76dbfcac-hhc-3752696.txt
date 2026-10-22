@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 9-Piece Islamic Calligraphy Wooden Wall Frame Set – Allah & Muhammad Arabic Art Prints for Home Decor
 Product ID: hhc-3752696
 SKU: hhc-3752696
@@ -7,11 +8,16 @@ Slug: 9-piece-islamic-calligraphy-wooden-wall-frame-set-allah-muhammad-arabic-76
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/28463d98875607e701b7dd63e3e12b1d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/28463d98875607e701b7dd63e3e12b1d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/102a7547eae811391f9fec91cdcc9fa6.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/09/e542ff3cfd6d39bf10032e9afa5c5ac8.jpeg
 Meta Title: 9-Piece Islamic Calligraphy Wooden Wall Frame Set – Allah & Muhammad
 Meta Description: Buy 9-Piece Islamic Calligraphy Wooden Wall Frame Set – Allah & Muhammad Arabic Art Prints for Home Decor online in Pakistan from ASM VEO. 9-piece Islamic woode
 Description: 9-piece Islamic wooden wall frame set featuring Allah and Muhammad calligraphy. Premium 8x11" frames with artistic prints, lightweight (1kg), and easy to mount with included double tape — perfect for home or prayer decor.
-Regular Price: 1442
-Sale Price: 1442
+Wholesale Price: 1392
+Regular Price: 2550
+Sale Price: 2037
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

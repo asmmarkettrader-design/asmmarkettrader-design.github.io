@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: V007 – Type-C Fast Charger | Vizo V007 Type-C Charger | Charger For Android | Mobile Phone Charger - 18W - Without Cable
 Product ID: hhc-1510152
 SKU: hhc-1510152
@@ -7,11 +8,16 @@ Slug: v007-type-c-fast-charger-vizo-v007-type-c-charger-charger-for-android-m-1c
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/Img-32-1536x1536_cleanup.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/Img-32-1536x1536_cleanup.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/08/411ac89ddffb054a7b6a5f4cc82555de.jpeg
 Meta Title: V007 – Type-C Fast Charger | Vizo V007 Type-C Charger | Charger For
 Meta Description: Buy V007 – Type-C Fast Charger | Vizo V007 Type-C Charger | Charger For Android | Mobile Phone Charger - 18W - Without Cable online in Pakistan from ASM VEO. V0
 Description: V007 – Type-C Fast Charger | Vizo V007 Type-C Charger | Charger For Android | Mobile Phone ChargerCompact Fast Charger – Type-C Output:Output Power:18W Max OutputOptimized Performance at 15WPort Configuration:1 x Type-C PortInput Voltage:AC 100–240V (Universal Voltage Support)Key Features:Stable and Safe Fast ChargingOvercharge &amp; Overcurrent ProtectionReliable Performance with Efficient Power DeliveryCompatibility:Compatible with all Type-C supported devicesOptimized for 15W Fast Charging performance
-Regular Price: 571
-Sale Price: 571
+Wholesale Price: 521
+Regular Price: 1020
+Sale Price: 815
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Apple 20W USB-C Power Adapter 3-Pin Original NFC Enabled Fast Charger
 Product ID: hhc-3757503
 SKU: hhc-3757503
@@ -7,11 +8,16 @@ Slug: apple-20w-usb-c-power-adapter-3-pin-original-nfc-enabled-fast-charger-hhc-
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: Apple
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/6a7e87d4b5da2c7d623084f593126e03.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/6a7e87d4b5da2c7d623084f593126e03.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/97baf31c0cc7e80be28951288ea299fe.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/17b76d0a146c74ccc5112b1d7fd7fdff.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/c2f86513676236a4b22f8df59464ccc5.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/10/7f0d7f115bf02f9fdea0f80a777b9156.jpeg
 Meta Title: Apple 20W USB-C Power Adapter 3-Pin Original NFC Enabled Fast Charge
 Meta Description: Buy Apple 20W USB-C Power Adapter 3-Pin Original NFC Enabled Fast Charger online in Pakistan from ASM VEO. Original Apple 20W USB-C Power Adapter with 3-pin plu
 Description: Original Apple 20W USB-C Power Adapter with 3-pin plug and NFC authentication. Compact, reliable, and designed for fast and efficient charging of Apple devices.
-Regular Price: 3218
-Sale Price: 3218
+Wholesale Price: 3218
+Regular Price: 5450
+Sale Price: 4363
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

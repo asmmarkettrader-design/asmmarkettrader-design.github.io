@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bismillah & Alhamdulillah" Mountain Scene Wall Art – 2-Piece Islamic Decor Set
 Product ID: hhc-3752281
 SKU: hhc-3752281
@@ -7,11 +8,16 @@ Slug: bismillah-alhamdulillah-mountain-scene-wall-art-2-piece-islamic-decor-set-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/8041ecc26d30dea526a573101154616f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/8041ecc26d30dea526a573101154616f.jpeg
 Meta Title: Bismillah & Alhamdulillah" Mountain Scene Wall Art – 2-Piece Islamic
 Meta Description: Buy Bismillah & Alhamdulillah" Mountain Scene Wall Art – 2-Piece Islamic Decor Set online in Pakistan from ASM VEO. 2-piece Islamic wall art featuring “Bismilla
 Description: 2-piece Islamic wall art featuring “Bismillah” and “Alhamdulillah” mountain scenes. Made from wooden sticky tiles with tape included for easy wall mounting.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

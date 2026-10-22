@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dimax  Wireless Bluetooth Earbuds with LED Display Charging Case – Deep Bass, Touch Control & Long Battery Life
 Product ID: hhc-3757194
 SKU: hhc-3757194
@@ -7,11 +8,16 @@ Slug: dimax-wireless-bluetooth-earbuds-with-led-display-charging-case-deep-ba-4e
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/858e45bb9123fc126912040ef6218773.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/858e45bb9123fc126912040ef6218773.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/1b956da54a583efa49eb32bc284fe295.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/20d48c99cc81da7a3d1454c467dc0e28.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/159b18ecd412013d194b3289ed209780.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/31/ca4f2693886cd9ba206e75de48449b6d.jpeg
 Meta Title: Dimax Wireless Bluetooth Earbuds with LED Display Charging Case – De
 Meta Description: Buy Dimax Wireless Bluetooth Earbuds with LED Display Charging Case – Deep Bass, Touch Control & Long Battery Life online in Pakistan from ASM VEO. Dimax Wirele
 Description: Dimax Wireless Earbuds offer clear sound quality, deep bass, and a stylish LED display charging case. Designed for daily use, these earbuds provide stable Bluetooth connectivity, long battery backup, and comfortable fit for music, calls, and gaming.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Magical Unicorn Paw-Shaped Glitter Hair Brush & Scalp Massager ( random colour)
 Product ID: hhc-3755016
 SKU: hhc-3755016
@@ -7,11 +8,16 @@ Slug: magical-unicorn-paw-shaped-glitter-hair-brush-scalp-massager-random-colour
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/fbf4e5beeeac4d721fe4cb948a8df7b8.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/fbf4e5beeeac4d721fe4cb948a8df7b8.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/bceb23fd03816b1f597740bb7acbe079.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/95f7a62a0660a13d998384b20f7a5415.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/30/0e10c9ccab190e26586fa08e4045a5ed.png
 Meta Title: Magical Unicorn Paw-Shaped Glitter Hair Brush & Scalp Massager ( ran
 Meta Description: Buy Magical Unicorn Paw-Shaped Glitter Hair Brush & Scalp Massager ( random colour) online in Pakistan from ASM VEO. A whimsical, blue-glitter-filled hair comb
 Description: A whimsical, blue-glitter-filled hair comb designed in a playful paw shape featuring a unicorn motif. This dual-purpose tool gently detangles hair while providing a soothing scalp massage, making it a perfect accessory for kids and teens.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

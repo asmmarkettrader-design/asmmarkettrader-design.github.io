@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Multicolor 10 In 1 Cartoon Character Ballpoint Pen Random Colour Beautiful Attracted Colors Gift Item For Kids Great Writing Experience Office Use
 Product ID: hhc-3763173
 SKU: hhc-3763173
@@ -7,11 +8,16 @@ Slug: multicolor-10-in-1-cartoon-character-ballpoint-pen-random-colour-beauti-39
 Category: Books & Stationery
 Subcategory: Art & Craft Materials
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/a9a0eaa0a2d8bce9fc8692d2029790b4.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/a9a0eaa0a2d8bce9fc8692d2029790b4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/b26c7f945f679dc344072ab93b17b1ad.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/165ecb1f59b3a5d660363693f622c1d8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/03/b95abe68e16810140126486062f3f06a.jpg
 Meta Title: Multicolor 10 In 1 Cartoon Character Ballpoint Pen Random Colour Bea
 Meta Description: Buy Multicolor 10 In 1 Cartoon Character Ballpoint Pen Random Colour Beautiful Attracted Colors Gift Item For Kids Great Writing Experience Office Use online in
 Description: Multicolor 10 In 1 Cartoon Character Ballpoint Pen Random Colour Beautiful Attracted Colors Gift Item For Kids Great Writing Experience Office Use.
-Regular Price: 255
-Sale Price: 255
+Wholesale Price: 205
+Regular Price: 518
+Sale Price: 368
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

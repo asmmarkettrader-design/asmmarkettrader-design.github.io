@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Elegant Zircon Black Bow Tie Earrings (AXJ-112)
 Product ID: hhc-3752644
 SKU: hhc-3752644
@@ -7,11 +8,16 @@ Slug: elegant-zircon-black-bow-tie-earrings-axj-112-hhc-3752644
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/e415ab3a049cdbe16dd38f6d46e76a97.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/e415ab3a049cdbe16dd38f6d46e76a97.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/560814e962f7a0d468419ade302f585f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/1c5472d9bf7373d961dbe26b31d847c5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/06/cfec89e0c318d737026b622be25e7e4d.jpeg
 Meta Title: Elegant Zircon Black Bow Tie Earrings (AXJ-112) | Buy Online in Paki
 Meta Description: Buy Elegant Zircon Black Bow Tie Earrings (AXJ-112) online in Pakistan from ASM VEO. Add a touch of timeless elegance to your jewelry collection with our Elegan
 Description: Add a touch of timeless elegance to your jewelry collection with our Elegant Zircon Bow Shape Earrings – a perfect blend of sophistication and charm.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

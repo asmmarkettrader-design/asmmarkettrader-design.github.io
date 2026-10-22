@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: RGB Ringlight 26 CM MJ26 With Mobile Holder Adjustable Lighting For Photography Video Recording Makeup And Live Streaming
 Product ID: hhc-3761059
 SKU: hhc-3761059
@@ -7,11 +8,16 @@ Slug: rgb-ringlight-26-cm-mj26-with-mobile-holder-adjustable-lighting-for-pho-3b
 Category: Electronics
 Subcategory: Cameras & Photography
 Brand: ASM VEO
-Meta Title: RGB Ringlight 26 CM MJ26 With Mobile Holder Adjustable Lighting For
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/879b4452960d7bffc84505680894ae3d.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/879b4452960d7bffc84505680894ae3d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/4c74ff506d68df9086285f7a240303f4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/1e3194d534069f68b5add0ef7cccaf37.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/02c8b63028789b10e29587f5c08ae1a3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/598b16a43aac50f91f0dbb113605d16a.jpg
+Meta Title: RGB Ringlight 26 CM MJ26 With Mobile Holder Adjustable Lighting For 
 Meta Description: Buy RGB Ringlight 26 CM MJ26 With Mobile Holder Adjustable Lighting For Photography Video Recording Makeup And Live Streaming online in Pakistan from ASM VEO. R
 Description: RGB Ringlight 26 CM MJ26 With Mobile Holder Provides Adjustable Lighting For Photography Makeup Video Recording And Streaming.
-Regular Price: 1344
-Sale Price: 1344
+Wholesale Price: 1294
+Regular Price: 2370
+Sale Price: 1897
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Magic Green Stick Mask – Green Tea Oil Control Cleansing & Blackhead Mud Mask
 Product ID: hhc-3760863
 SKU: hhc-3760863
@@ -7,11 +8,16 @@ Slug: the-magic-green-stick-mask-green-tea-oil-control-cleansing-blackhead-mud-m
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/4789d7583ccc70139456004f67cfe39c.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/4789d7583ccc70139456004f67cfe39c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/806dc7aa60e424c85cab66bdd997ce60.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/e9f63b14162c33a2d23e6cbcd971e639.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/141459dea02954177d726a99ba89f2fc.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/19/e9e91b7934bd70eea134b76f480bcbc0.jpeg
 Meta Title: The Magic Green Stick Mask – Green Tea Oil Control Cleansing & Black
 Meta Description: Buy The Magic Green Stick Mask – Green Tea Oil Control Cleansing & Blackhead Mud Mask online in Pakistan from ASM VEO. The Magic Green Stick Mask is designed to
 Description: The Magic Green Stick Mask is designed to help cleanse the skin, remove impurities, and leave your face feeling fresh and smooth. Its convenient stick format makes application quick and mess-free.
-Regular Price: 515
-Sale Price: 515
+Wholesale Price: 465
+Regular Price: 950
+Sale Price: 758
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

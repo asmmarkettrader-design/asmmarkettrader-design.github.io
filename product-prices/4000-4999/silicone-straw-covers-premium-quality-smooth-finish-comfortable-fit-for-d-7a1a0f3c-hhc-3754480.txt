@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Straw Covers Premium Quality Smooth Finish Comfortable Fit For Daily Drinking Travel And Outdoor Utility
 Product ID: hhc-3754480
 SKU: hhc-3754480
@@ -7,11 +8,16 @@ Slug: silicone-straw-covers-premium-quality-smooth-finish-comfortable-fit-for-7a
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Silicone Straw Covers Premium Quality Smooth Finish Comfortable Fit
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/175695ccdd3453479962aec9a4dec400.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/175695ccdd3453479962aec9a4dec400.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/e807d6a32f924604f44dcbcf81946bb5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/1877a33f929a32332e0b3a8601a23d91.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/b364c914d39ed12b8f7deab506149b0c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/17/a0bee63b944eb726ec1890f01ee68210.jpeg
+Meta Title: Silicone Straw Covers Premium Quality Smooth Finish Comfortable Fit 
 Meta Description: Buy Silicone Straw Covers Premium Quality Smooth Finish Comfortable Fit For Daily Drinking Travel And Outdoor Utility online in Pakistan from ASM VEO. Silicone
 Description: Silicone Straw Covers Provide Premium Quality Smooth Finish Comfortable Fit Durable Construction Easy Use And Reliable Utility
-Regular Price: 236
-Sale Price: 236
+Wholesale Price: 186
+Regular Price: 489
+Sale Price: 339
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

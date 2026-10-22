@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Afshan Eau De Parfum Spray for Women 100ml
 Product ID: hhc-2278261
 SKU: hhc-2278261
@@ -7,11 +8,16 @@ Slug: afshan-eau-de-parfum-spray-for-women-100ml-hhc-2278261
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/516r4pN-exL.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/516r4pN-exL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/41TrImOFFAL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/31KBC8MLzL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/41stoA-NiDL.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/326093411_502574755354051_7501156658716298346_n.jpg
 Meta Title: Afshan Eau De Parfum Spray for Women 100ml | Buy Online in Pakistan
 Meta Description: Buy Afshan Eau De Parfum Spray for Women 100ml online in Pakistan from ASM VEO. About this itemABOUT AFSHAN: Afshan is a typical oriental fragrance that offers
 Description: About this itemABOUT AFSHAN: Afshan is a typical oriental fragrance that offers irresistible aura of floral and spicy notes. The composition is characterized by intense shades of fresh herbs. Over time, they are a bit weaker, revealing the diversity of tree agar framing sound, which gradually ripen sweet notes. This elixir is suitable for young people who love and appreciate the interesting combination of luxury of the East. [video width="1920" height="1080" mp4="https://hhcnewapp.blr1.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Video-2024-11-07-at-3.29.11-PM.mp4"][/video]
-Regular Price: 1753
-Sale Price: 1753
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

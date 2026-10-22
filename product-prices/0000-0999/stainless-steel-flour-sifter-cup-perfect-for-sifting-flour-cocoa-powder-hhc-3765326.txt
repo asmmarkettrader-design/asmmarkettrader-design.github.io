@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Flour Sifter Cup Perfect for Sifting Flour Cocoa Powder
 Product ID: hhc-3765326
 SKU: hhc-3765326
@@ -7,11 +8,16 @@ Slug: stainless-steel-flour-sifter-cup-perfect-for-sifting-flour-cocoa-powder-hh
 Category: Kitchen & Dining
 Subcategory: Kitchen Storage
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/b64991e412e9122c0d63e07e78901132.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/b64991e412e9122c0d63e07e78901132.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/632dc22886e7ace50dad2821289b4ea1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/66c871ca8546a49f0f0648d3a7b47edd.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/28605f375a6a45604cb7728e4f2e73f6.jpeg
 Meta Title: Stainless Steel Flour Sifter Cup Perfect for Sifting Flour Cocoa Pow
 Meta Description: Buy Stainless Steel Flour Sifter Cup Perfect for Sifting Flour Cocoa Powder online in Pakistan from ASM VEO. Stainless steel flour sifter for baking. Perfect fo
 Description: Stainless steel flour sifter for baking. Perfect for sifting flour, cocoa powder, and other dry ingredients to ensure a smooth texture. Durable, rust-resistant, and easy to use with a hand-squeeze handle mechanism. Approx weight: 0.2kg.
-Regular Price: 617
-Sale Price: 617
+Wholesale Price: 567
+Regular Price: 1100
+Sale Price: 882
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

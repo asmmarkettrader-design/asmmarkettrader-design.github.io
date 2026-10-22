@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Remington Professional Silk Rebounding  Advanced Silk Ceramatic Technology Type 8215
 Product ID: hhc-1485042
 SKU: hhc-1485042
@@ -7,11 +8,16 @@ Slug: remington-professional-silk-rebounding-advanced-silk-ceramatic-technolo-b6
 Category: Pets & Animals
 Subcategory: Grooming Products
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/2-14.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/2-14.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/5-5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/4-4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/04/3-8.jpeg
 Meta Title: Remington Professional Silk Rebounding Advanced Silk Ceramatic Techn
 Meta Description: Buy Remington Professional Silk Rebounding Advanced Silk Ceramatic Technology Type 8215 online in Pakistan from ASM VEO. The premium Ceramic coated plates ensur
 Description: The premium Ceramic coated plates ensure the heat distributes evenly throughout the straightener, keeping it at the temperature selected with no hot spots. It creates an easy and effortless glide during straightening with no snagging, flattening your hair cuticles for silky, smooth and shiny results. And it ensures long-life plate wear, protecting the plates against styling products and scratching FEATURES:Mini Straightener908ºF high heat upReady in 30 seconds908ºF professional Heating systemSuper Ionic Technology 2x more ionsAdvanced Silk Ceramatic Technology5x shine enhancing technologiesInstantly smooth hairModel No. R-S-(1016)Type 8215 Super Straight Syles, never Stick To The HairPtc Heater With Fast Heat UpFor All Hair Types Temprature Control 160-220°c Power Indicator LightAll Day StylesOPT Heat
-Regular Price: 3288
-Sale Price: 3288
+Wholesale Price: 3288
+Regular Price: 5570
+Sale Price: 4454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

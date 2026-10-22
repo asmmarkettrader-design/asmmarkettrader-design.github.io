@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal PVC Kitchen & Fridge Mat – (45cm x 150cm) RANDOM DESIGNS
 Product ID: hhc-3757362
 SKU: hhc-3757362
@@ -7,11 +8,16 @@ Slug: royal-pvc-kitchen-fridge-mat-45cm-x-150cm-random-designs-hhc-3757362
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/dc96dc4d691dfcc88ac248eb325ff3c1.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/dc96dc4d691dfcc88ac248eb325ff3c1.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/eb94f5886bee5cb4f271617f9549b036.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/09d27ad8b972bba5b4ae521c592c19c0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/632fbf468fb07731268759a5708d7507.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/60aa6b7f0d1c28fa0ff7d15f4a724435.png
 Meta Title: Royal PVC Kitchen & Fridge Mat – (45cm x 150cm) RANDOM DESIGNS | Buy
 Meta Description: Buy Royal PVC Kitchen & Fridge Mat – (45cm x 150cm) RANDOM DESIGNS online in Pakistan from ASM VEO. Keep your kitchen and fridge clean with Royal's PVC Kitchen
 Description: Keep your kitchen and fridge clean with Royal's PVC Kitchen & Fridge Mat. Made from durable, waterproof material, it protects shelves from spills, stains, and scratches. Its anti-slip surface keeps items stable, while the colorful design adds a fresh, hygienic look.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 250ML Natural Micro-molecular Spray – Multipurpose Beeswax Furniture Polish Spray For Wood Polish Furniture Care Bee Wax Spray Essential Oil Wax
 Product ID: hhc-1829084
 SKU: hhc-1829084
@@ -7,11 +8,16 @@ Slug: 250ml-natural-micro-molecular-spray-multipurpose-beeswax-furniture-poli-e4
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-18-at-4.17.20-PM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-18-at-4.17.20-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/11/WhatsApp-Image-2023-11-18-at-4.17.19-PM.jpeg
 Meta Title: 250ML Natural Micro-molecular Spray – Multipurpose Beeswax Furniture
 Meta Description: Buy 250ML Natural Micro-molecular Spray – Multipurpose Beeswax Furniture Polish Spray For Wood Polish Furniture Care Bee Wax Spray Essential Oil Wax online in P
 Description: Premium Wood Care: Restore Brilliance to Your Furniture Polish – Table, Chair, and Floor Cleaner!All-Natural Formula: Protect and Beautify Your Wood Surfaces Furniture Polish
-Regular Price: 424
-Sale Price: 424
+Wholesale Price: 374
+Regular Price: 780
+Sale Price: 621
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

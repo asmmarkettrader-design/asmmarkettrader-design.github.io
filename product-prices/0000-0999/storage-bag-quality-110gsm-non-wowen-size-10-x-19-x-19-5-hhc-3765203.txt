@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Storage Bag  (Quality: 110GSM Non Wowen)  Size: 10" x 19" x 19.5"
 Product ID: hhc-3765203
 SKU: hhc-3765203
@@ -7,11 +8,16 @@ Slug: storage-bag-quality-110gsm-non-wowen-size-10-x-19-x-19-5-hhc-3765203
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/7d2fc461cdcc47f4a418020ea7e539e6.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/7d2fc461cdcc47f4a418020ea7e539e6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/1717b1b79ea1c9f14dd98b8f6f135b32.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/6fc031376e363bea15b696777992216f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/81b63a992fe554a2bdd103f11dded5ba.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/e994a92937090e5b82276fd58984358e.jpeg
 Meta Title: Storage Bag (Quality: 110GSM Non Wowen) Size: 10" x 19" x 19.5" | Bu
 Meta Description: Buy Storage Bag (Quality: 110GSM Non Wowen) Size: 10" x 19" x 19.5" online in Pakistan from ASM VEO. Keep your seasonal wardrobe, heavy blankets, quilts, and ex
 Description: Keep your seasonal wardrobe, heavy blankets, quilts, and extra bedding neatly organized and protected with our premium 110GSM Non-Woven Storage Bags. Designed for maximum durability and convenience, these spacious storage organizers help you reclaim your closet space while keeping your textiles fres
-Regular Price: 376
-Sale Price: 376
+Wholesale Price: 326
+Regular Price: 699
+Sale Price: 549
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

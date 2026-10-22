@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Roop Shingar Beauty Cream – 5 in 1 Lightning Radiance & Natural Glow Formula (Made in India)
 Product ID: hhc-3756546
 SKU: hhc-3756546
@@ -7,11 +8,16 @@ Slug: roop-shingar-beauty-cream-5-in-1-lightning-radiance-natural-glow-formul-e6
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/b43c50769aa89e70b775acec233cbc22.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/b43c50769aa89e70b775acec233cbc22.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/9040c2a194e3165ecf1cd3f9ee37608a.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/2ad513b586fc8e4f0e5e52051b610457.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/1ee83ec84bb0c21963ea17fd9d23af32.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/24/8aa3a14801c700df8babf31a17ec8aa2.jpeg
 Meta Title: Roop Shingar Beauty Cream – 5 in 1 Lightning Radiance & Natural Glow
 Meta Description: Buy Roop Shingar Beauty Cream – 5 in 1 Lightning Radiance & Natural Glow Formula (Made in India) online in Pakistan from ASM VEO. Roop Shingar Beauty Cream is a
 Description: Roop Shingar Beauty Cream is an original 5 in 1 skincare formula designed to enhance lightning radiance, promote natural glow, and help reduce acne, pimples, and dark spots for clearer and smoother-looking skin.
-Regular Price: 635
-Sale Price: 635
+Wholesale Price: 585
+Regular Price: 1140
+Sale Price: 908
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

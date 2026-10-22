@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicon Ice Cube Tray With Lid | 36-Cube Honeycomb Shape Ice Mold | Durable Freezer Tray With Cover | Random Color
 Product ID: hhc-3758528
 SKU: hhc-3758528
@@ -7,11 +8,16 @@ Slug: silicon-ice-cube-tray-with-lid-36-cube-honeycomb-shape-ice-mold-durable-25
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/f93a8cd6fa2eb701b2e3bafa28bc1a82.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/f93a8cd6fa2eb701b2e3bafa28bc1a82.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/0556f91adeaf095e18edb94662d74691.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/07d5a2934439767a1a7fa53c6f8ed595.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/99c02ce217bdd9af1a118b59a8d653e2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/cb0b81d75ae35f3cce363e1d56d05207.jpg
 Meta Title: Silicon Ice Cube Tray With Lid | 36-Cube Honeycomb Shape Ice Mold |
 Meta Description: Buy Silicon Ice Cube Tray With Lid | 36-Cube Honeycomb Shape Ice Mold | Durable Freezer Tray With Cover | Random Color online in Pakistan from ASM VEO. Premium
 Description: Premium Silicon Ice Cube Tray With Lid | 36 Honeycomb Cubes | Easy Release, Durable & Space-Saving Freezer Mold
-Regular Price: 388
-Sale Price: 388
+Wholesale Price: 338
+Regular Price: 717
+Sale Price: 567
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 576 Pcs Artificial Nails Set with Free Glue + 12 Peel Off Nail Paints + 12 Jumbo Pencils Combo Pack for Girls & Kids
 Product ID: hhc-3760613
 SKU: hhc-3760613
@@ -7,11 +8,16 @@ Slug: 576-pcs-artificial-nails-set-with-free-glue-12-peel-off-nail-paints-12-6cf
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/62c56279c1b1ea39ce743a45120ff215.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/62c56279c1b1ea39ce743a45120ff215.jpeg
 Meta Title: 576 Pcs Artificial Nails Set with Free Glue + 12 Peel Off Nail Paint
 Meta Description: Buy 576 Pcs Artificial Nails Set with Free Glue + 12 Peel Off Nail Paints + 12 Jumbo Pencils Combo Pack for Girls & Kids online in Pakistan from ASM VEO. Comple
 Description: Complete beauty and creativity combo featuring 576 artificial nails with free glue, 12 peel-off nail paints, and a 12-piece jumbo pencil set. Perfect for kids, girls, gifting, and creative play.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

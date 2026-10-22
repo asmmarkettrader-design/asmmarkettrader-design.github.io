@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Urapra Glycolic Acid 7% Toning Solution – Exfoliating Toner for Bright & Smooth Skin (100ml)
 Product ID: hhc-3760617
 SKU: hhc-3760617
@@ -7,11 +8,16 @@ Slug: urapra-glycolic-acid-7-toning-solution-exfoliating-toner-for-bright-smo-93
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/acd7f22a0b50cc29e6597300be60aa36.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/acd7f22a0b50cc29e6597300be60aa36.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/3bb5283b6d3f188cac070335c5b9871b.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/7cd9ae377b86787235093ae4914f4d19.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/98fc2e91ae04d13d8ad7822ccf91d1ff.jpeg
 Meta Title: Urapra Glycolic Acid 7% Toning Solution – Exfoliating Toner for Brig
 Meta Description: Buy Urapra Glycolic Acid 7% Toning Solution – Exfoliating Toner for Bright & Smooth Skin (100ml) online in Pakistan from ASM VEO. Glycolic Acid 7% toner for exf
 Description: Glycolic Acid 7% toner for exfoliation, brighter skin, and improved texture. Helps remove dead skin and even skin tone.
-Regular Price: 305
-Sale Price: 305
+Wholesale Price: 255
+Regular Price: 592
+Sale Price: 442
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

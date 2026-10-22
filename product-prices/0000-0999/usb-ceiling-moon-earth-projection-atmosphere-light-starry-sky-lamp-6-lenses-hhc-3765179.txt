@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: USB Ceiling Moon Earth Projection Atmosphere Light Starry Sky Lamp - 6 Lenses
 Product ID: hhc-3765179
 SKU: hhc-3765179
@@ -7,11 +8,16 @@ Slug: usb-ceiling-moon-earth-projection-atmosphere-light-starry-sky-lamp-6-lense
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/54097d9053df3f82370df80dadaf8321.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/09/54097d9053df3f82370df80dadaf8321.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/56b80c381d6ab71b7a53965ac97a5b65.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/de43412c9316535e30332de81decdc34.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/fe66a0544da2c289804a83557290607f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/cda27a40f00f75e2d78fe6f61755b069.jpeg
 Meta Title: USB Ceiling Moon Earth Projection Atmosphere Light Starry Sky Lamp -
 Meta Description: Buy USB Ceiling Moon Earth Projection Atmosphere Light Starry Sky Lamp - 6 Lenses online in Pakistan from ASM VEO. USB powered planet projector lamp for bedroom
 Description: USB powered planet projector lamp for bedroom. Features 6 interchangeable lenses to project different planets and starry sky effects. Creates an immersive, relaxing atmosphere perfect for sleep and decoration. Portable, plug-and-play USB design, gentle on eyes. Weight approx 0.2kg per unit.
-Regular Price: 808
-Sale Price: 808
+Wholesale Price: 758
+Regular Price: 1450
+Sale Price: 1159
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

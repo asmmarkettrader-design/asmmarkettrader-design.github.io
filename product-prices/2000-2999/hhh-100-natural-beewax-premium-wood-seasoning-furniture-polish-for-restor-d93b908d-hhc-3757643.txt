@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HHH 100% Natural Beewax - Premium Wood Seasoning & Furniture Polish for Restoration and Protection l 85g
 Product ID: hhc-3757643
 SKU: hhc-3757643
@@ -7,11 +8,16 @@ Slug: hhh-100-natural-beewax-premium-wood-seasoning-furniture-polish-for-rest-d9
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
-Meta Title: HHH 100% Natural Beewax - Premium Wood Seasoning & Furniture Polish
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/57d80e1acf74e9bc9432439b496f550f.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/57d80e1acf74e9bc9432439b496f550f.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/37611cde0f94fca8b265f1f8cb2d07d2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/3d428da1166b1e0e5d7f71cbe4a19fbe.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/25af56bcc8fbe3497336373c642fb269.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/15/efd324578880630e4dfafeeeca9bc4ab.png
+Meta Title: HHH 100% Natural Beewax - Premium Wood Seasoning & Furniture Polish 
 Meta Description: Buy HHH 100% Natural Beewax - Premium Wood Seasoning & Furniture Polish for Restoration and Protection l 85g online in Pakistan from ASM VEO. Revive your old fu
 Description: Revive your old furniture with HHH 100% Natural Beewax. This premium wood seasoning wax penetrates deep into wood fibers to remove years of dirt and grime, leaving a protective moisture-resistant layer and a beautiful natural shine.
-Regular Price: 233
-Sale Price: 233
+Wholesale Price: 183
+Regular Price: 484
+Sale Price: 334
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

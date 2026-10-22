@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: X-3 Sonic Electric Toothbrush with Replacement Heads
 Product ID: hhc-3764529
 SKU: hhc-3764529
@@ -7,11 +8,16 @@ Slug: x-3-sonic-electric-toothbrush-with-replacement-heads-hhc-3764529
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/5f750cc9848424dbe68911ac68c8228c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/28/5f750cc9848424dbe68911ac68c8228c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/7ecf6182616676c28a00a00df7a6b76d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/55d7ff6304f1a0fe94d02575a2c3f55f.webp
 Meta Title: X-3 Sonic Electric Toothbrush with Replacement Heads | Buy Online in
 Meta Description: Buy X-3 Sonic Electric Toothbrush with Replacement Heads online in Pakistan from ASM VEO. X-3 Sonic Electric Toothbrush. Deep cleaning sonic action removes plaq
 Description: X-3 Sonic Electric Toothbrush. Deep cleaning sonic action removes plaque and food residue. Features USB fast charging, slim ergonomic handle, and multiple replacement brush heads. Perfect for daily oral care, travel, and home use. Includes: 1 rechargeable handle and multiple brush heads.
-Regular Price: 851
-Sale Price: 851
+Wholesale Price: 801
+Regular Price: 1530
+Sale Price: 1221
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: CR7 Zipper Trouser For Men French Terry Fabric Adjustable Waist 28 To 34 Inches Length 40 Inches
 Product ID: hhc-3757589
 SKU: hhc-3757589
@@ -7,11 +8,16 @@ Slug: cr7-zipper-trouser-for-men-french-terry-fabric-adjustable-waist-28-to-3-93
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4a03f694678d4e6d57800eaabd4cecaa.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4a03f694678d4e6d57800eaabd4cecaa.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4f64e1bcdecbcde5455ace5c16c78205.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/96dd12e25242299e83c77a7235cb7c12.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/13/4a937d2f488159f502f74afd2acb2803.jpeg
 Meta Title: CR7 Zipper Trouser For Men French Terry Fabric Adjustable Waist 28 T
 Meta Description: Buy CR7 Zipper Trouser For Men French Terry Fabric Adjustable Waist 28 To 34 Inches Length 40 Inches online in Pakistan from ASM VEO. CR7 Zipper Trouser For Men
 Description: CR7 Zipper Trouser For Men French Terry Fabric Adjustable Waist 28 To 34 Inches Length 40 Inches.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: HJG Motorcycle Remote Security Lock Anti Theft Alarm System For Bike Motorcycle Self Start Function for 70cc and cg125 and all bikes
 Product ID: hhc-1521247
 SKU: hhc-1521247
@@ -7,11 +8,16 @@ Slug: hjg-motorcycle-remote-security-lock-anti-theft-alarm-system-for-bike-mo-72
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-03-at-11.05.44-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-03-at-11.05.44-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-03-at-12.20.38-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-03-at-12.20.38-AM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-03-at-12.20.37-AM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/WhatsApp-Image-2024-05-03-at-12.20.37-AM.jpeg
 Meta Title: HJG Motorcycle Remote Security Lock Anti Theft Alarm System For Bike
 Meta Description: Buy HJG Motorcycle Remote Security Lock Anti Theft Alarm System For Bike Motorcycle Self Start Function for 70cc and cg125 and all bikes online in Pakistan from
 Description: HJG Motorcycle Remote Security Lock Anti Theft Alarm System For Bike Motorcycle Self Start Function for 70cc and cg125 and all bikes
-Regular Price: 2347
-Sale Price: 2347
+Wholesale Price: 2347
+Regular Price: 4180
+Sale Price: 3348
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

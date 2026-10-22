@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel 4 Piece Bracelet, Watch And Bangle Combo - Jewelry Product Designed For Styling And Daily Outfit Routine
 Product ID: hhc-3763228
 SKU: hhc-3763228
@@ -7,11 +8,16 @@ Slug: stainless-steel-4-piece-bracelet-watch-and-bangle-combo-jewelry-product-b1
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/9587b2ca4c60e2322c9660be2503f010.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/07/9587b2ca4c60e2322c9660be2503f010.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/75cedad0ff87ee0a5091ebd0a8e363ee.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/3e47b60d5bf4a7f5e6fc19c2d445dbe6.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/04/55212bf25c2317f435c2bc45ecf240ff.png
 Meta Title: Stainless Steel 4 Piece Bracelet, Watch And Bangle Combo - Jewelry P
 Meta Description: Buy Stainless Steel 4 Piece Bracelet, Watch And Bangle Combo - Jewelry Product Designed For Styling And Daily Outfit Routine online in Pakistan from ASM VEO. Th
 Description: The Stainless Steel 4 Piece Bracelet, Watch And Bangle Combo Is A Jewelry Product Formulated To Help Provide Styling And Daily Outfit Utility During Use.
-Regular Price: 1743
-Sale Price: 1743
+Wholesale Price: 1743
+Regular Price: 3170
+Sale Price: 2533
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

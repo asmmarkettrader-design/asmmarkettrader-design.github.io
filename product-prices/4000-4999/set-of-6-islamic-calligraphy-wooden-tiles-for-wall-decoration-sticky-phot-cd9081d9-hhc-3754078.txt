@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 6 Islamic Calligraphy Wooden Tiles For Wall Decoration Sticky Photo Tiles With Double Tape Perfect Choice For Household Decoration Needs
 Product ID: hhc-3754078
 SKU: hhc-3754078
@@ -7,11 +8,16 @@ Slug: set-of-6-islamic-calligraphy-wooden-tiles-for-wall-decoration-sticky-ph-cd
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/a95b6e5e7d5f5249ff5d4acc38f172b7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/08/a95b6e5e7d5f5249ff5d4acc38f172b7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/03/1d0ec5e72ad84eda7798f122dbe9ec4c.jpeg
 Meta Title: Set Of 6 Islamic Calligraphy Wooden Tiles For Wall Decoration Sticky
 Meta Description: Buy Set Of 6 Islamic Calligraphy Wooden Tiles For Wall Decoration Sticky Photo Tiles With Double Tape Perfect Choice For Household Decoration Needs online in Pa
 Description: Set Of 6 Islamic Calligraphy Wooden Frames Provide Durable Quality Reliable Utility Comfortable Use Compact Design And Double Tape
-Regular Price: 769
-Sale Price: 769
+Wholesale Price: 719
+Regular Price: 1380
+Sale Price: 1103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

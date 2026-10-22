@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Scale 50Kg 5g LCD Digital Display Handheld Mini Electronic Weighting Scale Fishing And Travel Luggage Scale
 Product ID: hhc-3760575
 SKU: hhc-3760575
@@ -7,11 +8,16 @@ Slug: scale-50kg-5g-lcd-digital-display-handheld-mini-electronic-weighting-sc-af
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/3f26e65bbf02d50faf030b6d265a4ceb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/02/3f26e65bbf02d50faf030b6d265a4ceb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/74b8f7747f1f3f4e4492214286f702d1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/565d1a0526382a14b2453b37c99917e4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/12/3986e26e4b94015579f32dd585a91aba.jpeg
 Meta Title: Scale 50Kg 5g LCD Digital Display Handheld Mini Electronic Weighting
 Meta Description: Buy Scale 50Kg 5g LCD Digital Display Handheld Mini Electronic Weighting Scale Fishing And Travel Luggage Scale online in Pakistan from ASM VEO. Scale 50Kg 5g L
 Description: Scale 50Kg 5g LCD Digital Display Handheld Mini Electronic Weighting Scale Compact Durable And Easy To Use For Travel And Fishing.
-Regular Price: 881
-Sale Price: 881
+Wholesale Price: 831
+Regular Price: 1580
+Sale Price: 1265
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 360 Degree Rotating Cosmetic Organizer (black )
 Product ID: hhc-1662567
 SKU: hhc-1662567
@@ -7,11 +8,16 @@ Slug: 360-degree-rotating-cosmetic-organizer-black-hhc-1662567
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/5-6.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/5-6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/4-12.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/3-17.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/2-26.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/06/1-28.webp
 Meta Title: 360 Degree Rotating Cosmetic Organizer (black ) | Buy Online in Paki
 Meta Description: Buy 360 Degree Rotating Cosmetic Organizer (black ) online in Pakistan from ASM VEO. The Basic wise Rotating Makeup Organizer easily rotates on a smooth lazy Su
 Description: The Basic wise Rotating Makeup Organizer easily rotates on a smooth lazy Susan style base. Allows to access the contents on all sides, even in tight spaces. The side shelves can be easily adjusted to fit cosmetics of different sizes organized and standing upright. Easy to be assembled and disassembled according to the User Manual guidelines. Ideal gadget for giveaway gift. Can be put on your dressing table, bathroom, bedroom , desk or any type of countertop. color , black
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Celimax Real Noni Ultimate Eye Cream 20ml Korean Skincare For Dark Circles Fine Lines And Hydration - Made In Korea
 Product ID: hhc-3757126
 SKU: hhc-3757126
@@ -7,11 +8,16 @@ Slug: celimax-real-noni-ultimate-eye-cream-20ml-korean-skincare-for-dark-circ-b4
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/33a7353f6889673c7abdef1310b357ee.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/33a7353f6889673c7abdef1310b357ee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/c05aca42d48975439c4ee6826c877a4f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/54e9b4490263fce1d906850e5dd1396e.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/0c997c1c532f0a570ffa50c96719dca4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/28/b5ccbd422ee0a4bbdd7b6b4088a57c36.jpeg
 Meta Title: Celimax Real Noni Ultimate Eye Cream 20ml Korean Skincare For Dark C
 Meta Description: Buy Celimax Real Noni Ultimate Eye Cream 20ml Korean Skincare For Dark Circles Fine Lines And Hydration - Made In Korea online in Pakistan from ASM VEO. Celimax
 Description: Celimax Real Noni Ultimate Eye Cream 20ml Made In Korea Targets Dark Circles Fine Lines And Provides Deep Hydration For Radiant Eyes.
-Regular Price: 1884
-Sale Price: 1884
+Wholesale Price: 1884
+Regular Price: 3400
+Sale Price: 2723
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

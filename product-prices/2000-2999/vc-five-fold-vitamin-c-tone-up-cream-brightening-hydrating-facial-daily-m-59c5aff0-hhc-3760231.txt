@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: VC Five Fold Vitamin C Tone-Up Cream – Brightening & Hydrating Facial Daily Moisturizer
 Product ID: hhc-3760231
 SKU: hhc-3760231
@@ -7,11 +8,16 @@ Slug: vc-five-fold-vitamin-c-tone-up-cream-brightening-hydrating-facial-daily-59
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/86200525eabeaca086c3ea359a4c81e4.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/86200525eabeaca086c3ea359a4c81e4.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/4b80ff3b63ba430bd7afd11e8055693c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/3b6db2d78c71642e043b4b40eff40760.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/04/6f0fc77af02035e1dd0bdeccc5e360cf.jpeg
 Meta Title: VC Five Fold Vitamin C Tone-Up Cream – Brightening & Hydrating Facia
 Meta Description: Buy VC Five Fold Vitamin C Tone-Up Cream – Brightening & Hydrating Facial Daily Moisturizer online in Pakistan from ASM VEO. Revitalize your complexion with the
 Description: Revitalize your complexion with the VC Five Fold Vitamin C Tone-Up Cream by Saintmelin Beauty. Formulated to provide an instant brightening effect, this nourishing facial cream deeply hydrates the skin, evens out skin tone, and restores a youthful, radiant glow.
-Regular Price: 501
-Sale Price: 501
+Wholesale Price: 451
+Regular Price: 920
+Sale Price: 736
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

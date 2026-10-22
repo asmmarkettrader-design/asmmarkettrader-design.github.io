@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Turbo Twist Towel Hair Towel Wrap For Women
 Product ID: hhc-420425
 SKU: hhc-420425
@@ -7,11 +8,16 @@ Slug: turbo-twist-towel-hair-towel-wrap-for-women-hhc-420425
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/8.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/07/4.jpg
 Meta Title: Turbo Twist Towel Hair Towel Wrap For Women | Buy Online in Pakistan
 Meta Description: Buy Turbo Twist Towel Hair Towel Wrap For Women online in Pakistan from ASM VEO. MATERIAL:- They are made of absorbent and soft materials such as cotton, which
 Description: MATERIAL:- They are made of absorbent and soft materials such as cotton, which can absorb more water from hair in a shorter amount of time.SIZE:- SIZE:- Measures in at (Lx W) 68.58cm x 21.59cm.QUICK RESPONSE:- Highly absorbent for quick and efficient hair dryingSOFT:- Soft and comfortable to wearSUITABLE:- Suitable for all hair types and lengths
-Regular Price: 222
-Sale Price: 222
+Wholesale Price: 172
+Regular Price: 468
+Sale Price: 318
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Ice Roller for Face & Eye Puffiness Relief | Reusable Facial Contouring & Skin Cooling Tool | Pore Shrinking & Soothing Massager
 Product ID: hhc-3757809
 SKU: hhc-3757809
@@ -7,11 +8,16 @@ Slug: silicone-ice-roller-for-face-eye-puffiness-relief-reusable-facial-conto-3f
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/55df3f1d42dfbdfe176fd2cff53b778e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/55df3f1d42dfbdfe176fd2cff53b778e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/e9037c9685e0f825cec83f52d4afffd9.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/f33070fa4b669228006f8f72dae83e62.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/4f9653cf955b6937f4bbceb022ac2143.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/18/12823a5fd996c7fa0119c929cf23904b.png
 Meta Title: Silicone Ice Roller for Face & Eye Puffiness Relief | Reusable Facia
 Meta Description: Buy Silicone Ice Roller for Face & Eye Puffiness Relief | Reusable Facial Contouring & Skin Cooling Tool | Pore Shrinking & Soothing Massager online in Pakistan
 Description: Revitalize your skin with the Silicone Ice Roller. This reusable facial tool helps de-puff eyes, shrink pores, and contour your face for a natural lift. Simply fill with water or custom recipes like rose water or cucumber for a refreshing, cooling skincare treatment at home.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

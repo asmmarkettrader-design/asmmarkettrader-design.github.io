@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Perseids Remote Control Bulldozer – 1/16 Scale 11 Channel Heavy RC Construction Toy with Lights & Sound, Yellow
 Product ID: hhc-3754358
 SKU: hhc-3754358
@@ -7,11 +8,16 @@ Slug: the-perseids-remote-control-bulldozer-1-16-scale-11-channel-heavy-rc-co-ea
 Category: Toys & Games
 Subcategory: Indoor Games
 Brand: ASM VEO
-Meta Title: The Perseids Remote Control Bulldozer – 1/16 Scale 11 Channel Heavy
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/97d9aaf68be6a00de2527f01915f1fa9.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/97d9aaf68be6a00de2527f01915f1fa9.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/7611d5929dfcc313bf65300f47f53066.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/cef5af47f3341612e8708d5726455701.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/680116feef4524242b017459d0a70d8a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/7248dcd111508adf056e67f5d0c3b220.jpeg
+Meta Title: The Perseids Remote Control Bulldozer – 1/16 Scale 11 Channel Heavy 
 Meta Description: Buy The Perseids Remote Control Bulldozer – 1/16 Scale 11 Channel Heavy RC Construction Toy with Lights & Sound, Yellow online in Pakistan from ASM VEO. The Per
 Description: The Perseids RC bulldozer 1/16 scale, 11 channel heavy construction toy with 2.4GHz control, lights & sound, perfect for boys & adults.
-Regular Price: 5675
-Sale Price: 5675
+Wholesale Price: 5675
+Regular Price: 9450
+Sale Price: 7558
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

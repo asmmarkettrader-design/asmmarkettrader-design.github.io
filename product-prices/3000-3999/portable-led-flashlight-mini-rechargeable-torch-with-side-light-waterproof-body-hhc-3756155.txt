@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable LED Flashlight – Mini Rechargeable Torch with Side Light & Waterproof Body
 Product ID: hhc-3756155
 SKU: hhc-3756155
@@ -7,11 +8,16 @@ Slug: portable-led-flashlight-mini-rechargeable-torch-with-side-light-waterproof
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: Portable LED Flashlight – Mini Rechargeable Torch with Side Light &
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/e6ab6f6fdf1f34669020844886238850.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/e6ab6f6fdf1f34669020844886238850.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/05/4601948fdd8ca30bfe2407920640d691.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/83aa3d469105180235b7a5f81bccb2ba.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/317f126d6acdf0b58b7eed90b9af82e2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/04/aa5938a5324165e42e3ae17578671886.jpeg
+Meta Title: Portable LED Flashlight – Mini Rechargeable Torch with Side Light & 
 Meta Description: Buy Portable LED Flashlight – Mini Rechargeable Torch with Side Light & Waterproof Body online in Pakistan from ASM VEO. Compact, powerful, and built for everyd
 Description: Compact, powerful, and built for everyday use, this mini rechargeable LED flashlight features a bright main beam, a practical side light, and a durable waterproof plastic body—perfect for home, travel, and emergencies.
-Regular Price: 396
-Sale Price: 396
+Wholesale Price: 346
+Regular Price: 729
+Sale Price: 579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

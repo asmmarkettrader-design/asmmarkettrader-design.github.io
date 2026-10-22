@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Luxury Decorative Showpiece Size 8.5x4.6x20cm – Elegant Home & Office Decoration Piece for Table, Shelf & Living Room
 Product ID: hhc-3760496
 SKU: hhc-3760496
@@ -7,11 +8,16 @@ Slug: luxury-decorative-showpiece-size-8-5x4-6x20cm-elegant-home-office-decor-77
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/aa6f17bd8a620900f7e75e9adb67106b.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/aa6f17bd8a620900f7e75e9adb67106b.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/71f8d3c8de0300e103826dec0e09c460.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/11/c4f28380434ae661772bff12f8e2decc.jpeg
 Meta Title: Luxury Decorative Showpiece Size 8.5x4.6x20cm – Elegant Home & Offic
 Meta Description: Buy Luxury Decorative Showpiece Size 8.5x4.6x20cm – Elegant Home & Office Decoration Piece for Table, Shelf & Living Room online in Pakistan from ASM VEO. Enhan
 Description: Enhance your living space with this stylish decorative showpiece, designed to add elegance and charm to any room. Its compact size makes it perfect for display on shelves, tables, consoles, desks, or cabinets. A beautiful accent piece for modern and classic interiors alike. Decorative accessories are
-Regular Price: 1232
-Sale Price: 1232
+Wholesale Price: 1182
+Regular Price: 2170
+Sale Price: 1738
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

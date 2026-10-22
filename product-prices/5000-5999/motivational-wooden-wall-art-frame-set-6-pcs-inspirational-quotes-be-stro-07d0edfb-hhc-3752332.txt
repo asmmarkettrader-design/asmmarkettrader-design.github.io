@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Motivational Wooden Wall Art Frame Set – 6 Pcs Inspirational Quotes | Be Strong, Think Big, Never Stop, Do or Die | Premium Quality Wooden Frames for Home & Office
 Product ID: hhc-3752332
 SKU: hhc-3752332
@@ -7,11 +8,16 @@ Slug: motivational-wooden-wall-art-frame-set-6-pcs-inspirational-quotes-be-st-07
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Motivational Wooden Wall Art Frame Set – 6 Pcs Inspirational Quotes
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/466b33684425c6f426eaf52a00179ac9.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/466b33684425c6f426eaf52a00179ac9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/e570b16235789f923955ab7798e54b47.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/82da32c7978edcdbe286d2583b29ec67.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/20/1d58c1d6ef0fd02b12d51b370901f766.png
+Meta Title: Motivational Wooden Wall Art Frame Set – 6 Pcs Inspirational Quotes 
 Meta Description: Buy Motivational Wooden Wall Art Frame Set – 6 Pcs Inspirational Quotes | Be Strong, Think Big, Never Stop, Do or Die | Premium Quality Wooden Frames for Home &
 Description: Motivational Wooden Wall Art Frame Set – 6 Pcs Inspirational Quotes
-Regular Price: 951
-Sale Price: 951
+Wholesale Price: 901
+Regular Price: 1710
+Sale Price: 1366
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

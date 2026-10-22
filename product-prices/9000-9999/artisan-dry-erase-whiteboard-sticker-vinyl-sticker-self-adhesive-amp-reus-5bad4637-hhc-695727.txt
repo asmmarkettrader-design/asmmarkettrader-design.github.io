@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Artisan - Dry Erase Whiteboard Sticker Vinyl Sticker, Self-adhesive &amp; reusable White Board Peel Stick for School,Office,Home,Kids Drawing with 2 erasable markers(good quality )
 Product ID: hhc-695727
 SKU: hhc-695727
@@ -7,11 +8,16 @@ Slug: artisan-dry-erase-whiteboard-sticker-vinyl-sticker-self-adhesive-amp-re-5b
 Category: Books & Stationery
 Subcategory: Art & Craft Materials
 Brand: ASM VEO
-Meta Title: Artisan - Dry Erase Whiteboard Sticker Vinyl Sticker, Self-adhesive
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/81445adcd6b3b17958d94a3822bf181f.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/81445adcd6b3b17958d94a3822bf181f.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/d5407df36e562dff4fafd5efa1afff40.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/6820c29e4d946ed43994e5de96730cac.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/10/f22fbc3a106e7ea03f7f9eefeb8b0ab1.jpg_750x750.jpg_-2.webp
+Meta Title: Artisan - Dry Erase Whiteboard Sticker Vinyl Sticker, Self-adhesive 
 Meta Description: Buy Artisan - Dry Erase Whiteboard Sticker Vinyl Sticker, Self-adhesive &amp; reusable White Board Peel Stick for School,Office,Home,Kids Drawing with 2 erasabl
 Description: Artisan - Dry Erase Whiteboard Sticker Vinyl Sticker, Self-adhesive &amp; reusable White Board Peel Stick for School,Office,Home,Kids Drawing with 2 erasable markers(good quality )
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

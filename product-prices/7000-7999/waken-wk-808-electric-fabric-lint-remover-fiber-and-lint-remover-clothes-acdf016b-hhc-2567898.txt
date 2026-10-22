@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Waken WK-808 Electric Fabric Lint Remover Fiber and lint remover Clothes Fabric Shaver Lint Remover
 Product ID: hhc-2567898
 SKU: hhc-2567898
@@ -7,11 +8,16 @@ Slug: waken-wk-808-electric-fabric-lint-remover-fiber-and-lint-remover-clothe-ac
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-09-at-1.03.25-AM.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/01/WhatsApp-Image-2025-01-09-at-1.03.25-AM.jpeg
 Meta Title: Waken WK-808 Electric Fabric Lint Remover Fiber and lint remover Clo
 Meta Description: Buy Waken WK-808 Electric Fabric Lint Remover Fiber and lint remover Clothes Fabric Shaver Lint Remover online in Pakistan from ASM VEO. Product DescriptionElec
 Description: Product DescriptionElectric Lint RemoverSafe and efficientRestore clothesGives a fresh new lookEasy to useOriginal Picture
-Regular Price: 2165
-Sale Price: 2165
+Wholesale Price: 2165
+Regular Price: 3880
+Sale Price: 3103
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

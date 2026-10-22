@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Reusable Silicone Spa Gel Socks For Dry Feet And Cracked Heel Treatment – Moisturizing Hydrating Softening And Skin Smoothing Overnight Foot Care (Random Color)
 Product ID: hhc-3753676
 SKU: hhc-3753676
@@ -7,11 +8,16 @@ Slug: reusable-silicone-spa-gel-socks-for-dry-feet-and-cracked-heel-treatment-0f
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/7f41ac40ef02a1c45fa51af17864b9c5.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/7f41ac40ef02a1c45fa51af17864b9c5.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/21/d4b6682d7eb8c356b59e9460c8622756.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/bdf6f4a6761dff475fff68cbeb9735b4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/e71d8cd971a88843ddafeebe7e3d469e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/19/1564c1e61b8f7b890e58720c65797e8b.jpg
 Meta Title: Reusable Silicone Spa Gel Socks For Dry Feet And Cracked Heel Treatm
 Meta Description: Buy Reusable Silicone Spa Gel Socks For Dry Feet And Cracked Heel Treatment – Moisturizing Hydrating Softening And Skin Smoothing Overnight Foot Care (Random Co
 Description: Pamper Your Feet With Reusable Silicone Spa Gel Socks That Moisturize, Soften, And Smooth Dry Heels For Overnight Foot Therapy And Home Spa Care.
-Regular Price: 600
-Sale Price: 600
+Wholesale Price: 550
+Regular Price: 1070
+Sale Price: 858
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

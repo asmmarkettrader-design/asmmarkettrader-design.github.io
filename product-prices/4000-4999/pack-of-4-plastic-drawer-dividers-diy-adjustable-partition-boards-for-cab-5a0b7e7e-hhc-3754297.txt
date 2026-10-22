@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Pack Of 4 Plastic Drawer Dividers DIY Adjustable Partition Boards For Cabinets Wardrobes And Household Storage (Random Color)
 Product ID: hhc-3754297
 SKU: hhc-3754297
@@ -7,11 +8,16 @@ Slug: pack-of-4-plastic-drawer-dividers-diy-adjustable-partition-boards-for-c-5a
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/1a711633483eadb33d5c2b582146f682.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/1a711633483eadb33d5c2b582146f682.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/8d7f0289934d09f31a4d836c134eb318.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/97fbff7a1dfdcd39c440a086542c66fe.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/9eed7dd9e6a8ebe65d587a71bde0af15.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/d26a0f6593eb2d4903679c0dc9d0def8.jpeg
 Meta Title: Pack Of 4 Plastic Drawer Dividers DIY Adjustable Partition Boards Fo
 Meta Description: Buy Pack Of 4 Plastic Drawer Dividers DIY Adjustable Partition Boards For Cabinets Wardrobes And Household Storage (Random Color) online in Pakistan from ASM VE
 Description: Pack Of 4 Plastic Drawer Dividers Provides Durable Quality Reliable Utility Comfortable Use Compact Design And Effective Organization
-Regular Price: 207
-Sale Price: 207
+Wholesale Price: 157
+Regular Price: 446
+Sale Price: 296
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

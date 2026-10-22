@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Rustic Finish Long Wallet with Vintage Texture Design | 12 Card Slots 2 Cash Compartments Zipper Pocket ID Window | Lightweight Elegant Everyday Use
 Product ID: hhc-3759914
 SKU: hhc-3759914
@@ -7,11 +8,16 @@ Slug: rustic-finish-long-wallet-with-vintage-texture-design-12-card-slots-2-c-0b
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/7c6afcb095c9bbc881a4cb2681fb4742.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/23/7c6afcb095c9bbc881a4cb2681fb4742.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/59c4e27176f0e49c32ba4e8d20a37fc8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/b3715bcd57030567ee623378acd89bf6.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/6500be3dc029c4073cbc1678e222fa57.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/21/3cfb576661649267c460c24472888f0e.jpg
 Meta Title: Rustic Finish Long Wallet with Vintage Texture Design | 12 Card Slot
 Meta Description: Buy Rustic Finish Long Wallet with Vintage Texture Design | 12 Card Slots 2 Cash Compartments Zipper Pocket ID Window | Lightweight Elegant Everyday Use online
 Description: Rustic Finish Wallet with a timeless vintage-inspired design made for everyday use. Features 12 card slots, 2 cash compartments, 1 zipper pocket, and a clear ID window in a lightweight and stylish long wallet format.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

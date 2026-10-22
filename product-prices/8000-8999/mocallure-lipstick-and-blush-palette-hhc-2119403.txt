@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mocallure Lipstick and Blush palette
 Product ID: hhc-2119403
 SKU: hhc-2119403
@@ -7,11 +8,16 @@ Slug: mocallure-lipstick-and-blush-palette-hhc-2119403
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-1.58.23-PM-2.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-1.58.23-PM-2.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-1.58.23-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-1.58.23-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-1.58.22-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/WhatsApp-Image-2024-10-02-at-1.58.22-PM.jpeg
 Meta Title: Mocallure Lipstick and Blush palette | Buy Online in Pakistan
 Meta Description: Buy Mocallure Lipstick and Blush palette online in Pakistan from ASM VEO. Lipstick and Blush palette Material:Creamy Product Type: Lipstick and blush palette Pa
 Description: Lipstick and Blush palette Material:Creamy Product Type: Lipstick and blush palette Package Include: 1 × palette Shades: Nude and dark
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

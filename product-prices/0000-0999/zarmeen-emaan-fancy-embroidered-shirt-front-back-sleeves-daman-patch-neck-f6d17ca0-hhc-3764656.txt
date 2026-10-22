@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Zarmeen Emaan Fancy Embroidered Shirt Front Back Sleeves Daman Patch Neckline With Premium Viscose Trouser And Printed Embroidered Dupatta
 Product ID: hhc-3764656
 SKU: hhc-3764656
@@ -7,11 +8,16 @@ Slug: zarmeen-emaan-fancy-embroidered-shirt-front-back-sleeves-daman-patch-ne-f6
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/7968f168c4140deb724a61da04ec3b27.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/7968f168c4140deb724a61da04ec3b27.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/1eb436a0ec167b8c14f47abbf9110e89.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/31/4e2e3e22a1de37eaae75f4c60bc9a785.jpg
 Meta Title: Zarmeen Emaan Fancy Embroidered Shirt Front Back Sleeves Daman Patch
 Meta Description: Buy Zarmeen Emaan Fancy Embroidered Shirt Front Back Sleeves Daman Patch Neckline With Premium Viscose Trouser And Printed Embroidered Dupatta online in Pakista
 Description: Zarmeen Emaan Featuring Fancy Embroidered Shirt Front, Back, Sleeves, Daman Patch, Neckline, Premium Viscose Trouser, And Printed Embroidered Dupatta.
-Regular Price: 8061
-Sale Price: 8061
+Wholesale Price: 8061
+Regular Price: 13320
+Sale Price: 10659
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

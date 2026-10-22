@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Lenovo Neckband Wireless Bluetooth Earbuds Stereo Earphones bluetooth In-Ear Headphones Airpods Premium Quality
 Product ID: hhc-3761733
 SKU: hhc-3761733
@@ -7,11 +8,16 @@ Slug: lenovo-neckband-wireless-bluetooth-earbuds-stereo-earphones-bluetooth-i-7f
 Category: Electronics
 Subcategory: Audio & Entertainment
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/12/828c85ba6c8fa558a9ccb507052c4b2c.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/12/828c85ba6c8fa558a9ccb507052c4b2c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/e4ef0d680d855defe5f07a27b3fe3692.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/18/05468a8212cc069a26e9ff81a819793d.jpg
 Meta Title: Lenovo Neckband Wireless Bluetooth Earbuds Stereo Earphones bluetoot
 Meta Description: Buy Lenovo Neckband Wireless Bluetooth Earbuds Stereo Earphones bluetooth In-Ear Headphones Airpods Premium Quality online in Pakistan from ASM VEO. Lenovo HE05
 Description: Lenovo HE05X Bluetooth Headphones Wireless BT5.0 Ergonomic Magnetic Sports Running Waterproof Earphones Noise Reduction It uses BT 5.0 technology to connect you to your smartphone, with a CVC noise-canceling microphone that eliminates static electricity and ambient noise during a call, so you can ge
-Regular Price: 882
-Sale Price: 882
+Wholesale Price: 832
+Regular Price: 1580
+Sale Price: 1266
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

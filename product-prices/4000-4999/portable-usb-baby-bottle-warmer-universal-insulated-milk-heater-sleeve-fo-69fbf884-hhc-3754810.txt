@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable USB Baby Bottle Warmer – Universal Insulated Milk Heater Sleeve for Travel and Home Use (Without Feeder)
 Product ID: hhc-3754810
 SKU: hhc-3754810
@@ -7,11 +8,16 @@ Slug: portable-usb-baby-bottle-warmer-universal-insulated-milk-heater-sleeve-69f
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/74b26da872c81d175a384406c3a50bd7.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/74b26da872c81d175a384406c3a50bd7.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/ee4ba02eb8c577d7d086d1e08119c9d1.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/9f9b21238a3ef32b6d7c498bafbd5d3c.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/5cf7fb04dbdb949f198f16502e5490b2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/24/eafbbe5e83daf54f46345bf3fce6b955.jpg
 Meta Title: Portable USB Baby Bottle Warmer – Universal Insulated Milk Heater Sl
 Meta Description: Buy Portable USB Baby Bottle Warmer – Universal Insulated Milk Heater Sleeve for Travel and Home Use (Without Feeder) online in Pakistan from ASM VEO. Ensure yo
 Description: Ensure your baby’s milk stays at the perfect temperature anywhere you go. This lightweight, USB-powered bottle warmer wraps around most standard baby bottles and connects to power banks, car chargers, or wall adapters. It is the ideal solution for travel, late-night feedings, and outdoor adventures.
-Regular Price: 1004
-Sale Price: 1004
+Wholesale Price: 954
+Regular Price: 1800
+Sale Price: 1443
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Bamboo Trending Korean Bangle - Jewelry Product Designed For Wrist Wear And Daily Ornament Routine (SKU: QRT-201)
 Product ID: hhc-3763880
 SKU: hhc-3763880
@@ -7,11 +8,16 @@ Slug: bamboo-trending-korean-bangle-jewelry-product-designed-for-wrist-wear-a-62
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/ff2009c9282e26c8d52c6f2801cfc653.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/ff2009c9282e26c8d52c6f2801cfc653.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/d2295f830cda3440aa10c8381abf972d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/8792cbc58e0f8cf99fde478ac00c1c87.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/fcf76d17ac27256cfe5bdd0317fd6472.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/15/c889b731856bbbda0bcbc6a20b3d7cfa.jpeg
 Meta Title: Bamboo Trending Korean Bangle - Jewelry Product Designed For Wrist W
 Meta Description: Buy Bamboo Trending Korean Bangle - Jewelry Product Designed For Wrist Wear And Daily Ornament Routine (SKU: QRT-201) online in Pakistan from ASM VEO. The Bambo
 Description: The Bamboo Trending Korean Bangle Is A Jewelry Product Formulated To Help Provide Wrist Wear And Daily Ornament Utility During Use.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

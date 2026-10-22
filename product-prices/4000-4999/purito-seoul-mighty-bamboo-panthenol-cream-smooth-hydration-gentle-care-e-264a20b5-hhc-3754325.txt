@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Purito Seoul Mighty Bamboo Panthenol Cream Smooth Hydration Gentle Care Easy Absorption - 100ML
 Product ID: hhc-3754325
 SKU: hhc-3754325
@@ -7,11 +8,16 @@ Slug: purito-seoul-mighty-bamboo-panthenol-cream-smooth-hydration-gentle-care-26
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/095a3b694ea6e7afce37e6a1fe6d6977.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/095a3b694ea6e7afce37e6a1fe6d6977.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/47f1299cdaba6b3f382ee15656a14720.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/26f61cd85a3cafc82da967658bdb03b7.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/cfdb078a255955e6bf801d3ccf74cab4.png
 Meta Title: Purito Seoul Mighty Bamboo Panthenol Cream Smooth Hydration Gentle C
 Meta Description: Buy Purito Seoul Mighty Bamboo Panthenol Cream Smooth Hydration Gentle Care Easy Absorption - 100ML online in Pakistan from ASM VEO. Purito Seoul Mighty Bamboo
 Description: Purito Seoul Mighty Bamboo Panthenol Cream Provides Smooth Hydration Gentle Care Easy Absorption Long Lasting Moisture And Comfortable Use
-Regular Price: 298
-Sale Price: 298
+Wholesale Price: 248
+Regular Price: 582
+Sale Price: 432
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

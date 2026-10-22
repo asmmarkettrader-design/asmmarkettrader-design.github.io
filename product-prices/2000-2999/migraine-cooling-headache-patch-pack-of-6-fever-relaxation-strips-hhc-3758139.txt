@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Migraine Cooling Headache Patch | Pack Of 6 Fever & Relaxation Strips
 Product ID: hhc-3758139
 SKU: hhc-3758139
@@ -7,11 +8,16 @@ Slug: migraine-cooling-headache-patch-pack-of-6-fever-relaxation-strips-hhc-3758
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/085a71f6577f6fb16326dd8e2d3277eb.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/085a71f6577f6fb16326dd8e2d3277eb.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/a6f58409b8a28694f2d86e53a3be1f0d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/4d861f8348f69333eb19b9de4c6aceea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/ac1e81ef32c297b885fa17f77cbe953b.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/25/d87db05aae796af3f1d67f402728e723.jpg
 Meta Title: Migraine Cooling Headache Patch | Pack Of 6 Fever & Relaxation Strip
 Meta Description: Buy Migraine Cooling Headache Patch | Pack Of 6 Fever & Relaxation Strips online in Pakistan from ASM VEO. Pack Of 6 Cooling Headache Patches | Instant Relief F
 Description: Pack Of 6 Cooling Headache Patches | Instant Relief For Migraine, Fever & Relaxation
-Regular Price: 656
-Sale Price: 656
+Wholesale Price: 606
+Regular Price: 1170
+Sale Price: 939
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

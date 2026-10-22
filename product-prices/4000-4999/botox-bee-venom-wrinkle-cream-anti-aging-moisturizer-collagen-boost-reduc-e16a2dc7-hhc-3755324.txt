@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Botox Bee Venom Wrinkle Cream | Anti‑Aging Moisturizer | Collagen Boost | Reduce Wrinkles & Fine Lines 20gm
 Product ID: hhc-3755324
 SKU: hhc-3755324
@@ -7,11 +8,16 @@ Slug: botox-bee-venom-wrinkle-cream-anti-aging-moisturizer-collagen-boost-red-e1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/0aebc96bd28836c9619e60b3a44177ee.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/0aebc96bd28836c9619e60b3a44177ee.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/40799c2fa3f92f1f448f05806401b101.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/68054108e72d8a2376b399c6bee352eb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/7d787d7ca813fba712a90c2d20b198a9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/07/c18141e9d5cd7d309724b1ecf65bcbf5.jpg
 Meta Title: Botox Bee Venom Wrinkle Cream | Anti‑Aging Moisturizer | Collagen Bo
 Meta Description: Buy Botox Bee Venom Wrinkle Cream | Anti‑Aging Moisturizer | Collagen Boost | Reduce Wrinkles & Fine Lines 20gm online in Pakistan from ASM VEO. Botox Bee Venom
 Description: Botox Bee Venom Wrinkle Cream, anti‑aging moisturizer that boosts collagen, reduces wrinkles, and fine lines.
-Regular Price: 249
-Sale Price: 249
+Wholesale Price: 199
+Regular Price: 508
+Sale Price: 358
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

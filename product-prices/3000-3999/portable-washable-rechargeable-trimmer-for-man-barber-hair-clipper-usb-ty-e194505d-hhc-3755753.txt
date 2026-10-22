@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable Washable Rechargeable Trimmer For Man Barber Hair Clipper USB Type C (Random Color)
 Product ID: hhc-3755753
 SKU: hhc-3755753
@@ -7,11 +8,16 @@ Slug: portable-washable-rechargeable-trimmer-for-man-barber-hair-clipper-usb-e19
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/8a9884e7122ea8dc6011a1e6a7220339.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/8a9884e7122ea8dc6011a1e6a7220339.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/8769cba458663f59e0fa02420f9ea6d1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/2d4c5b8a33aaf1727d103afdbd1a8d41.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/21/1688ec8d932421c523787e64a7ddeecf.jpeg
 Meta Title: Portable Washable Rechargeable Trimmer For Man Barber Hair Clipper U
 Meta Description: Buy Portable Washable Rechargeable Trimmer For Man Barber Hair Clipper USB Type C (Random Color) online in Pakistan from ASM VEO. Electric trimer Provides Long
 Description: Electric trimer Provides Long Lasting Portable Washable And Rechargeable Design With USB Type C For Men
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: panjatan pak Islamic Calligraphy 3D  Wall Decor
 Product ID: hhc-2282992
 SKU: hhc-2282992
@@ -7,11 +8,16 @@ Slug: panjatan-pak-islamic-calligraphy-3d-wall-decor-hhc-2282992
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-07-at-12.57.08-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/11/WhatsApp-Image-2024-11-07-at-12.57.08-AM-1.jpeg
 Meta Title: panjatan pak Islamic Calligraphy 3D Wall Decor | Buy Online in Pakis
 Meta Description: Buy panjatan pak Islamic Calligraphy 3D Wall Decor online in Pakistan from ASM VEO. 3d wall calligraphy panjatan pak Description Metrial wood Size 16 inch Thick
 Description: 3d wall calligraphy panjatan pak Description Metrial wood Size 16 inch Thickness 3mm lasani wood
-Regular Price: 599
-Sale Price: 599
+Wholesale Price: 549
+Regular Price: 1070
+Sale Price: 856
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

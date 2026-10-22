@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 in 1 Deal Karseell Hair Mask Collagen Treatment Cream + Reusable 576 Pcs Fake Nails + Fake Nails Glue | Makeup And Hair Care Deal
 Product ID: hhc-2901274
 SKU: hhc-2901274
@@ -7,11 +8,16 @@ Slug: 3-in-1-deal-karseell-hair-mask-collagen-treatment-cream-reusable-576-pc-1c
 Category: Beauty & Personal Care
 Subcategory: Beauty & Cosmetics
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.21.27-PM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.21.27-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.21.27-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2025-03-14-at-12.21.26-PM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2024-12-16-at-10.04.44-PM.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/03/WhatsApp-Image-2024-10-20-at-2.13.36-AM-1.jpeg
 Meta Title: 3 in 1 Deal Karseell Hair Mask Collagen Treatment Cream + Reusable 5
 Meta Description: Buy 3 in 1 Deal Karseell Hair Mask Collagen Treatment Cream + Reusable 576 Pcs Fake Nails + Fake Nails Glue | Makeup And Hair Care Deal online in Pakistan from
 Description: 3 in 1 Deal Karseell Hair Mask Collagen Treatment Cream + Reusable 576 Pcs Fake Nails + Fake Nails Glue | Makeup And Hair Care DealMaterial: Plastic, Cream, LiquidPackage Includes: 1 × Karseell Mask, 1 × 576Pcs Nails, 1 × Nail Glue
-Regular Price: 1477
-Sale Price: 1477
+Wholesale Price: 1427
+Regular Price: 2610
+Sale Price: 2086
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

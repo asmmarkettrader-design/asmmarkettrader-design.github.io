@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Good Vibes Only Printed Kids T-Shirt
 Product ID: hhc-3756801
 SKU: hhc-3756801
@@ -7,11 +8,16 @@ Slug: good-vibes-only-printed-kids-t-shirt-hhc-3756801
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/c5ac8c5941142eda39f778253c71aae5.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/c5ac8c5941142eda39f778253c71aae5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/4672341cc728644d585a7725e15ae6c8.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/cbbba86ff0300cc1ec2e62a8f51c649c.jpeg
 Meta Title: Good Vibes Only Printed Kids T-Shirt | Buy Online in Pakistan
 Meta Description: Buy Good Vibes Only Printed Kids T-Shirt online in Pakistan from ASM VEO. A stylish and comfortable kids’ t-shirt featuring a positive “Good Vibes Only” print.
 Description: A stylish and comfortable kids’ t-shirt featuring a positive “Good Vibes Only” print. Made from soft, breathable fabric for all-day comfort and available in three versatile colors: Red, Grey, and Black.
-Regular Price: 579
-Sale Price: 579
+Wholesale Price: 529
+Regular Price: 1030
+Sale Price: 827
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

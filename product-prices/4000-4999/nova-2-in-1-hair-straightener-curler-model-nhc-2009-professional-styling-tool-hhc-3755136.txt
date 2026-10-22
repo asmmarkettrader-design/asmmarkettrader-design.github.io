@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Nova 2‑in‑1 Hair Straightener & Curler | Model NHC‑2009 | Professional Styling Tool
 Product ID: hhc-3755136
 SKU: hhc-3755136
@@ -7,11 +8,16 @@ Slug: nova-2-in-1-hair-straightener-curler-model-nhc-2009-professional-styling-t
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/e612d2a82e559af9ccfd7fdcb8450244.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/e612d2a82e559af9ccfd7fdcb8450244.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/f67c017f65eb9bd455071deae4dae942.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/2bb743cca49dbd6bc422a1b48013b3d9.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/fb8f321c4a50044001c8a7607666df51.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/02/80c34e051df5500f6c4fbfc95f530b54.jpeg
 Meta Title: Nova 2‑in‑1 Hair Straightener & Curler | Model NHC‑2009 | Profession
 Meta Description: Buy Nova 2‑in‑1 Hair Straightener & Curler | Model NHC‑2009 | Professional Styling Tool online in Pakistan from ASM VEO. Nova NHC‑2009 2‑in‑1 hair straightener
 Description: Nova NHC‑2009 2‑in‑1 hair straightener and curler. Easy to use, durable, and perfect for smooth straightening or curls.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

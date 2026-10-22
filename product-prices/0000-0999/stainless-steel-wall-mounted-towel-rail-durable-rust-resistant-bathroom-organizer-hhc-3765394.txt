@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stainless Steel Wall Mounted Towel Rail | Durable Rust Resistant Bathroom Organizer
 Product ID: hhc-3765394
 SKU: hhc-3765394
@@ -7,11 +8,16 @@ Slug: stainless-steel-wall-mounted-towel-rail-durable-rust-resistant-bathroom-27
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/db66a894415c2292598cec904377cceb.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/db66a894415c2292598cec904377cceb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/77269b14089db6710b32ac71760968f5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/11/5a739d1cfcdb929dbdeac08718eb1bcb.jpg
 Meta Title: Stainless Steel Wall Mounted Towel Rail | Durable Rust Resistant Bat
 Meta Description: Buy Stainless Steel Wall Mounted Towel Rail | Durable Rust Resistant Bathroom Organizer online in Pakistan from ASM VEO. The Stainless Steel Wall Mounted Towel
 Description: The Stainless Steel Wall Mounted Towel Rail is a practical and stylish solution for keeping towels neatly organized. Made from high-quality stainless steel, it is durable, rust resistant, and designed to withstand daily use in humid bathroom environments.Its wall-mounted design saves space while adding a modern touch to your bathroom décor. Easy to install and maintain, this towel rail ensures convenience and long-lasting performance, making it an essential accessory for any home.
-Regular Price: 657
-Sale Price: 657
+Wholesale Price: 607
+Regular Price: 1180
+Sale Price: 940
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Suzuki Mehran Full Car Top Cover – Dustproof & Durable Protective Car Body Cover
 Product ID: hhc-3757391
 SKU: hhc-3757391
@@ -7,11 +8,16 @@ Slug: suzuki-mehran-full-car-top-cover-dustproof-durable-protective-car-body-cov
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/e623ad4588ee52afb13947160295987d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/e623ad4588ee52afb13947160295987d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/89e399c1543e85ae2cdae25c72b90b05.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/48c641eae2354e7a33887fbf879ac25e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/06/352defeda3699c1be2dd56f021ca1fc6.jpeg
 Meta Title: Suzuki Mehran Full Car Top Cover – Dustproof & Durable Protective Ca
 Meta Description: Buy Suzuki Mehran Full Car Top Cover – Dustproof & Durable Protective Car Body Cover online in Pakistan from ASM VEO. Durable and dustproof full car cover for S
 Description: Durable and dustproof full car cover for Suzuki Mehran, designed to protect your vehicle from dirt, sun, and external damage while ensuring a perfect fit.
-Regular Price: 2235
-Sale Price: 2235
+Wholesale Price: 2235
+Regular Price: 4000
+Sale Price: 3197
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

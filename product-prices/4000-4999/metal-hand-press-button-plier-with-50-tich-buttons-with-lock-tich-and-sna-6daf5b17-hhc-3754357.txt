@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Metal Hand Press Button Plier With 50 Tich Buttons with lock | Tich and Snap Button Press Tool DIY
 Product ID: hhc-3754357
 SKU: hhc-3754357
@@ -7,11 +8,16 @@ Slug: metal-hand-press-button-plier-with-50-tich-buttons-with-lock-tich-and-s-6d
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/a239c469ffc16794d39df1a501c4444a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/16/a239c469ffc16794d39df1a501c4444a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/dd1e4b3e50b7020568badba3470a36d2.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/12/3d3b7cdc2035ca415f4e3253333a81f1.jpg
 Meta Title: Metal Hand Press Button Plier With 50 Tich Buttons with lock | Tich
 Meta Description: Buy Metal Hand Press Button Plier With 50 Tich Buttons with lock | Tich and Snap Button Press Tool DIY online in Pakistan from ASM VEO. Sturdy Metal Hand Press
 Description: Sturdy Metal Hand Press Button Plier for easy tich and snap button fixing. Includes 50 buttons, ideal for clothing, crafts, and DIY stitching work. Comfortable grip ensures smooth and precise pressing.
-Regular Price: 588
-Sale Price: 588
+Wholesale Price: 538
+Regular Price: 1050
+Sale Price: 840
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

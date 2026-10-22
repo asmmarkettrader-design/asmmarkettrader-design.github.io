@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Balisi Men’s Premium Wallet Stylish Durable Leather Slim Practical Choice For Cash Cards Everyday Use Casual And Formal Occasions
 Product ID: hhc-3763535
 SKU: hhc-3763535
@@ -7,11 +8,16 @@ Slug: balisi-men-s-premium-wallet-stylish-durable-leather-slim-practical-choi-08
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/6b611964403f8c33da54e34a976e7b17.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/10/6b611964403f8c33da54e34a976e7b17.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/ad7cbb8bcc3ed737b0a15cdd61e166e8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/16/709b50f6f411ad6b5b6b7f0bb16c93a8.jpg
 Meta Title: Balisi Men’s Premium Wallet Stylish Durable Leather Slim Practical C
 Meta Description: Buy Balisi Men’s Premium Wallet Stylish Durable Leather Slim Practical Choice For Cash Cards Everyday Use Casual And Formal Occasions online in Pakistan from AS
 Description: Balisi Men’s Premium Wallet Stylish Durable Leather Slim Practical Choice For Cash Cards Everyday Use Casual And Formal Occasions.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

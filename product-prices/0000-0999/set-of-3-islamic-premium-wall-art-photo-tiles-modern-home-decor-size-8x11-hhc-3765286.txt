@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Set Of 3 Islamic Premium Wall Art Photo Tiles – Modern Home Decor - Size: 8x11
 Product ID: hhc-3765286
 SKU: hhc-3765286
@@ -7,11 +8,16 @@ Slug: set-of-3-islamic-premium-wall-art-photo-tiles-modern-home-decor-size-8x11-
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: Set Of 3 Islamic Premium Wall Art Photo Tiles – Modern Home Decor -
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/94eafdea19b52a8edb5dbf924fec1d85.jfif
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/10/94eafdea19b52a8edb5dbf924fec1d85.jfif
+Meta Title: Set Of 3 Islamic Premium Wall Art Photo Tiles – Modern Home Decor - 
 Meta Description: Buy Set Of 3 Islamic Premium Wall Art Photo Tiles – Modern Home Decor - Size: 8x11 online in Pakistan from ASM VEO. Product Features✔ Set of 3 Premium Wall Art
 Description: Product Features✔ Set of 3 Premium Wall Art Frames✔ High resolution HD printing✔ Durable MDF wooden board✔ Easy wall installation (no drilling needed)✔ Perfect for home, office, study room, bedroomAvailable Sizes• 8x11 inches each framePerfect For✔ Office decoration✔ Bedroom wall decor✔ Study room inspiration✔ Gift for friends
-Regular Price: 509
-Sale Price: 509
+Wholesale Price: 459
+Regular Price: 940
+Sale Price: 748
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

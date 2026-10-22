@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hidden Magnetic Door Closer Set – Automatic Silent Door Closing System
 Product ID: hhc-3757167
 SKU: hhc-3757167
@@ -7,11 +8,16 @@ Slug: hidden-magnetic-door-closer-set-automatic-silent-door-closing-system-hhc-3
 Category: Tools & DIY
 Subcategory: Paint & Renovation
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/ac9bf8f47c473746a105d86af4b9fb43.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/ac9bf8f47c473746a105d86af4b9fb43.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/e1042e7c59ea23f78e461f6c4dc4bdab.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/7bf39bdb8b730e71b46593fc100511cf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/72ed8ccee08433d494d2d80b9ff9b44d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/30/e301b8e1b8c1ac06a81a33769a8eec3a.jpeg
 Meta Title: Hidden Magnetic Door Closer Set – Automatic Silent Door Closing Syst
 Meta Description: Buy Hidden Magnetic Door Closer Set – Automatic Silent Door Closing System online in Pakistan from ASM VEO. Keep your doors closed quietly and securely with thi
 Description: Keep your doors closed quietly and securely with this hidden magnetic door closer set. Easy to install, strong magnetic hold, and perfect for home or office use.
-Regular Price: 193
-Sale Price: 193
+Wholesale Price: 143
+Regular Price: 424
+Sale Price: 274
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

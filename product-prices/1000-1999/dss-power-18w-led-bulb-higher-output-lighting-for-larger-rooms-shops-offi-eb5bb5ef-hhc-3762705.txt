@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: DSS Power 18W LED Bulb Higher-Output Lighting For Larger Rooms, Shops, Offices And Indoor Spaces
 Product ID: hhc-3762705
 SKU: hhc-3762705
@@ -7,11 +8,16 @@ Slug: dss-power-18w-led-bulb-higher-output-lighting-for-larger-rooms-shops-of-eb
 Category: Electrical Supplies
 Subcategory: Bulbs
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/0aa66b475b85f5d34a27c14174e84c2d.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/0aa66b475b85f5d34a27c14174e84c2d.png
 Meta Title: DSS Power 18W LED Bulb Higher-Output Lighting For Larger Rooms, Shop
 Meta Description: Buy DSS Power 18W LED Bulb Higher-Output Lighting For Larger Rooms, Shops, Offices And Indoor Spaces online in Pakistan from ASM VEO. A practical and affordable
 Description: A practical and affordable higher-output LED lighting solution for larger rooms, shops, offices, and other indoor spaces. The DSS Power 18W LED Bulb is designed for customers who need brighter everyday lighting with the efficiency of LED technology.
-Regular Price: 593
-Sale Price: 593
+Wholesale Price: 543
+Regular Price: 1060
+Sale Price: 847
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

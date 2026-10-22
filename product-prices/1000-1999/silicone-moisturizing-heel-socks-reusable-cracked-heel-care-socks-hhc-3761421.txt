@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Moisturizing Heel Socks – Reusable Cracked Heel Care Socks
 Product ID: hhc-3761421
 SKU: hhc-3761421
@@ -7,11 +8,16 @@ Slug: silicone-moisturizing-heel-socks-reusable-cracked-heel-care-socks-hhc-3761
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
-Meta Title: Silicone Moisturizing Heel Socks – Reusable Cracked Heel Care Socks
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/de55d38c74c2797fc1eb6ed419542fab.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/de55d38c74c2797fc1eb6ed419542fab.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/5d77dafa906b60706c9b3db211072939.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/a28afb2b4a260cd9e49fdd00080c9c3f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/9bb1b2beff4ce3d979bd11f368b15895.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/06/58255d75615cd1443b0f7e49b13847d7.jpg
+Meta Title: Silicone Moisturizing Heel Socks – Reusable Cracked Heel Care Socks 
 Meta Description: Buy Silicone Moisturizing Heel Socks – Reusable Cracked Heel Care Socks online in Pakistan from ASM VEO. Keep your feet soft, smooth, and hydrated with these Si
 Description: Keep your feet soft, smooth, and hydrated with these Silicone Moisturizing Heel Socks. Designed to help reduce dry, rough, and cracked heels, these reusable silicone socks lock in moisture and enhance the effectiveness of your favorite foot cream. Soft, flexible, and comfortable for daily use.
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

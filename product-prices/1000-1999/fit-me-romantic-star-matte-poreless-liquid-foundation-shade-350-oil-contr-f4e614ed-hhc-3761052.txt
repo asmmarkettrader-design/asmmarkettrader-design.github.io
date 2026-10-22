@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fit Me! Romantic Star Matte + Poreless Liquid Foundation (Shade 350) – Oil-Controlling, Pore-Blurring Long-Wear Foundation for Normal to Oily Skin
 Product ID: hhc-3761052
 SKU: hhc-3761052
@@ -7,11 +8,16 @@ Slug: fit-me-romantic-star-matte-poreless-liquid-foundation-shade-350-oil-con-f4
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/2b1e75c5d79d83fc7394d8990803b290.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/2b1e75c5d79d83fc7394d8990803b290.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/f1a124973d3f72ad0c417cc2ab437137.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/25/0edd57826cac72eca2c345c6483cc5d8.jpeg
 Meta Title: Fit Me! Romantic Star Matte + Poreless Liquid Foundation (Shade 350)
 Meta Description: Buy Fit Me! Romantic Star Matte + Poreless Liquid Foundation (Shade 350) – Oil-Controlling, Pore-Blurring Long-Wear Foundation for Normal to Oily Skin online in
 Description: Achieve a natural, shine-free finish with Fit Me! Romantic Star Matte + Poreless Liquid Foundation.
-Regular Price: 389
-Sale Price: 389
+Wholesale Price: 339
+Regular Price: 718
+Sale Price: 568
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

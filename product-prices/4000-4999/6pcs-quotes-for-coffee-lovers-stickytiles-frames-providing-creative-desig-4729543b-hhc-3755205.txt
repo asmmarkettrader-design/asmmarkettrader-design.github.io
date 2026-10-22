@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 6pcs Quotes For Coffee Lovers Stickytiles Frames Providing Creative Design Motivational Look - Size: 8*11
 Product ID: hhc-3755205
 SKU: hhc-3755205
@@ -7,11 +8,16 @@ Slug: 6pcs-quotes-for-coffee-lovers-stickytiles-frames-providing-creative-des-47
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
-Meta Title: 6pcs Quotes For Coffee Lovers Stickytiles Frames Providing Creative
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/63529f33be6a0063ab0425cad6707b4b.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/05/63529f33be6a0063ab0425cad6707b4b.jpeg
+Meta Title: 6pcs Quotes For Coffee Lovers Stickytiles Frames Providing Creative 
 Meta Description: Buy 6pcs Quotes For Coffee Lovers Stickytiles Frames Providing Creative Design Motivational Look - Size: 8*11 online in Pakistan from ASM VEO. 6pcs Quotes For C
 Description: 6pcs Quotes For Coffee Lovers Stickytiles Frames Offering Creative Design Motivational Look Durable Quality Reliable Performance Modern Appearance And Daily Home Decoration Support
-Regular Price: 922
-Sale Price: 922
+Wholesale Price: 872
+Regular Price: 1660
+Sale Price: 1324
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

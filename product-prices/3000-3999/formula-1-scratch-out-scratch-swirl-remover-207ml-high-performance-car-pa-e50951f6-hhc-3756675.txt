@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Formula 1 Scratch Out Scratch & Swirl Remover 207ML – High Performance Car Paint Scratch Remover & Gloss Restorer
 Product ID: hhc-3756675
 SKU: hhc-3756675
@@ -7,11 +8,16 @@ Slug: formula-1-scratch-out-scratch-swirl-remover-207ml-high-performance-car-e50
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/b02fe5cf1372b231336e089ec8849564.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/02/b02fe5cf1372b231336e089ec8849564.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/f89c55b1bfdab506b15287b8ea97ed7d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/e340afff08ea304d6fccff16e53b9aad.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/eeae7a2db07a247545ed1c89ba68342d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/28/22257c3213034a368cfcf00087ee93c3.jpeg
 Meta Title: Formula 1 Scratch Out Scratch & Swirl Remover 207ML – High Performan
 Meta Description: Buy Formula 1 Scratch Out Scratch & Swirl Remover 207ML – High Performance Car Paint Scratch Remover & Gloss Restorer online in Pakistan from ASM VEO. For best
 Description: For best results: Not recommended for use on vinyl tops, metallized plastic trim, decals, or simulated wood panels. Do not use on cracked or extremely worn paint finishes. Will not remove deep Scratches or scratches that have penetrated the clear coat. Keep from freezing.
-Regular Price: 1954
-Sale Price: 1954
+Wholesale Price: 1954
+Regular Price: 3520
+Sale Price: 2818
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

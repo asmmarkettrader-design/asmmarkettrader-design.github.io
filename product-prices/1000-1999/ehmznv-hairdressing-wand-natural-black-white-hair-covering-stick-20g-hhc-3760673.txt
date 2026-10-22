@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ehmznv Hairdressing Wand Natural Black White Hair Covering Stick 20g
 Product ID: hhc-3760673
 SKU: hhc-3760673
@@ -7,11 +8,16 @@ Slug: ehmznv-hairdressing-wand-natural-black-white-hair-covering-stick-20g-hhc-3
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/5b1b48419fffb7a4890fda7638b5d08a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/5b1b48419fffb7a4890fda7638b5d08a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/3f4d8ab317a8ac6d5f8935dae1acd3df.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/067af7c62ccd73a6be7490bb0142d593.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/bc35ccd3e09c7d5a0ed112f64e888bc4.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/15/3e07d2cc7eadef667c1be577a9b21c0d.jpeg
 Meta Title: ehmznv Hairdressing Wand Natural Black White Hair Covering Stick 20g
 Meta Description: Buy ehmznv Hairdressing Wand Natural Black White Hair Covering Stick 20g online in Pakistan from ASM VEO. Natural Black Hairdressing Wand for covering white hai
 Description: Natural Black Hairdressing Wand for covering white hair. Simple and convenient to use.
-Regular Price: 586
-Sale Price: 586
+Wholesale Price: 536
+Regular Price: 1050
+Sale Price: 837
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

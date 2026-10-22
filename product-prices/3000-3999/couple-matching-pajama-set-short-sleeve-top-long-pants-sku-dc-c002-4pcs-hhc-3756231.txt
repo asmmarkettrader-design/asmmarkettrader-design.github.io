@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Couple Matching Pajama Set – Short Sleeve Top & Long Pants | SKU DC-C002 ~ (4Pcs)
 Product ID: hhc-3756231
 SKU: hhc-3756231
@@ -7,11 +8,16 @@ Slug: couple-matching-pajama-set-short-sleeve-top-long-pants-sku-dc-c002-4pcs-hh
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/fddbbeb2ff526829c1e833a2dd068576.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/fddbbeb2ff526829c1e833a2dd068576.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/61761a63d76a5387247d143fff08aee1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/5e6ef42f0cd68b1da3624cbc55683860.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/03b6f4cd553a9150bd293a90b3ee2b6e.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/09/36f02a45d6b85d6041821e88be50ed8a.png
 Meta Title: Couple Matching Pajama Set – Short Sleeve Top & Long Pants | SKU DC-
 Meta Description: Buy Couple Matching Pajama Set – Short Sleeve Top & Long Pants | SKU DC-C002 ~ (4Pcs) online in Pakistan from ASM VEO. A luxurious matching pajama set for coupl
 Description: A luxurious matching pajama set for couples, designed for ultimate comfort and effortless style. Perfect for cozy nights and elegant lounging together.
-Regular Price: 3498
-Sale Price: 3498
+Wholesale Price: 3498
+Regular Price: 5910
+Sale Price: 4727
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

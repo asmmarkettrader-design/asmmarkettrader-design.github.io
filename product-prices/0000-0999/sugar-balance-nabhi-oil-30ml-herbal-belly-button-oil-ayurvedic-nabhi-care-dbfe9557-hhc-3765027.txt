@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Sugar Balance Nabhi Oil 30ml Herbal Belly Button Oil Ayurvedic Nabhi Care Natural Extracts Lightweight Non Greasy Daily Wellness
 Product ID: hhc-3765027
 SKU: hhc-3765027
@@ -7,11 +8,16 @@ Slug: sugar-balance-nabhi-oil-30ml-herbal-belly-button-oil-ayurvedic-nabhi-ca-db
 Category: Beauty & Cosmetics
 Subcategory: Nail Care (Polish)
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/16840b585995e428c51e5e8017e904ba.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/06/16840b585995e428c51e5e8017e904ba.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/97e4f937b604da22a0cd10b9e0b9404d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/04/45a8e9463353d76bd16af26d58857dd4.jpeg
 Meta Title: Sugar Balance Nabhi Oil 30ml Herbal Belly Button Oil Ayurvedic Nabhi
 Meta Description: Buy Sugar Balance Nabhi Oil 30ml Herbal Belly Button Oil Ayurvedic Nabhi Care Natural Extracts Lightweight Non Greasy Daily Wellness online in Pakistan from ASM
 Description: Sugar Balance Nabhi Oil 30ml Is A Herbal Belly Button Oil Specially Formulated For Daily Wellness And Self Care. Inspired by Ayurvedic traditions, it combines natural herbal extracts to support balance, relaxation, and overall wellbeing. The lightweight non greasy formula absorbs quickly, making it comfortable for everyday use. Designed with an easy dropper application, it ensures precise and hygienic usage. Suitable for both men and women, this oil provides gentle Ayurvedic Nabhi Care, promoting a holistic approach to health and self care.Key Features:Sugar Balance Nabhi Oil 30ml Herbal Belly Button OilAyurvedic Nabhi Care With Natural Herbal ExtractsLightweight Non Greasy Formula For Daily UseEasy Dropper Application For ConvenienceSupports Daily Wellness And RelaxationSuitable For Men And Women Self Care Routine
-Regular Price: 319
-Sale Price: 319
+Wholesale Price: 269
+Regular Price: 614
+Sale Price: 464
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

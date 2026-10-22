@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Classic Flap Crossbody Shoulder Bag for Women – Premium Leather Look Handbag with Adjustable Strap & Gold Lock Closure
 Product ID: hhc-3762703
 SKU: hhc-3762703
@@ -7,11 +8,16 @@ Slug: classic-flap-crossbody-shoulder-bag-for-women-premium-leather-look-hand-94
 Category: Fashion
 Subcategory: Women's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/7e51e0a214461d8a0c428200bcb511a1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/7e51e0a214461d8a0c428200bcb511a1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/e22415897877fe402f333e1890c03adb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/09c75bfcf9e3aa8968aa43cd1bcf80ac.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/49d67fe9f2f14ca0f9f4de0c3cf1f84f.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/28/07df772945367a8571a1b19f9c11fdf3.jpg
 Meta Title: Classic Flap Crossbody Shoulder Bag for Women – Premium Leather Look
 Meta Description: Buy Classic Flap Crossbody Shoulder Bag for Women – Premium Leather Look Handbag with Adjustable Strap & Gold Lock Closure online in Pakistan from ASM VEO. Upgr
 Description: Upgrade your everyday style with the Classic Flap Crossbody Bag. Featuring a sleek flap design, premium leather-look finish, adjustable shoulder strap, spacious main compartment, and elegant gold-tone lock, this versatile handbag is perfect for work, shopping, travel, and casual outings.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Royal 2-in-1 Soap Pump Dispenser with Sponge
 Product ID: hhc-3757285
 SKU: hhc-3757285
@@ -7,11 +8,16 @@ Slug: royal-2-in-1-soap-pump-dispenser-with-sponge-hhc-3757285
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/57adb3a007176c54f83e55f90ade40b4.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/57adb3a007176c54f83e55f90ade40b4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/f7f763e48e250254accabbaedbf20676.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/1ee1b108080a872f99c8a30bf3ea2b7c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/58c2ba05d0713acd0e415695e8fa1fac.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/04/b0fb08350c10896c53d7f7c5c07cbf1c.png
 Meta Title: Royal 2-in-1 Soap Pump Dispenser with Sponge | Buy Online in Pakista
 Meta Description: Buy Royal 2-in-1 Soap Pump Dispenser with Sponge online in Pakistan from ASM VEO. Royal 2-in-1 Soap Pump Dispenser with Sponge is a smart and convenient cleanin
 Description: Royal 2-in-1 Soap Pump Dispenser with Sponge is a smart and convenient cleaning solution that combines a soap dispenser and sponge holder in one compact design. Simply press the sponge on top to dispense the perfect amount of liquid soap, reducing waste and mess. Ideal for kitchens and bathrooms.
-Regular Price: 740
-Sale Price: 740
+Wholesale Price: 690
+Regular Price: 1320
+Sale Price: 1060
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

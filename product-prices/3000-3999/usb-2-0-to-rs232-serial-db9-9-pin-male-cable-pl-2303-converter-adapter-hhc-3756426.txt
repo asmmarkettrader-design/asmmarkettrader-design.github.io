@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Usb 2.0 To Rs232 Serial Db9 9 Pin Male Cable Pl-2303 Converter Adapter
 Product ID: hhc-3756426
 SKU: hhc-3756426
@@ -7,11 +8,16 @@ Slug: usb-2-0-to-rs232-serial-db9-9-pin-male-cable-pl-2303-converter-adapter-hhc
 Category: Electronics
 Subcategory: Computers & Laptops
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/8c8397389e3202e61d99c41fc5460f4c.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/8c8397389e3202e61d99c41fc5460f4c.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/f387d07f8ded573472f39da0ff492a56.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/561793eafb8ea2376f41d48696e42f74.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/18/cc775659c515da9f052472f61cdd807c.jpeg
 Meta Title: Usb 2.0 To Rs232 Serial Db9 9 Pin Male Cable Pl-2303 Converter Adapt
 Meta Description: Buy Usb 2.0 To Rs232 Serial Db9 9 Pin Male Cable Pl-2303 Converter Adapter online in Pakistan from ASM VEO. Usb 2.0 To Rs232 Serial Db9 9 Pin Male Cable With Pl
 Description: Usb 2.0 To Rs232 Serial Db9 9 Pin Male Cable With Pl-2303 Chipset For Serial Communication
-Regular Price: 1511
-Sale Price: 1511
+Wholesale Price: 1461
+Regular Price: 2670
+Sale Price: 2135
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

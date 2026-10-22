@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Flour Sifter Stainless Steel – Double Layer Fine Mesh Baking Sifter with One-Hand Press Crank for Cakes & Pastries
 Product ID: hhc-3755619
 SKU: hhc-3755619
@@ -7,11 +8,16 @@ Slug: flour-sifter-stainless-steel-double-layer-fine-mesh-baking-sifter-with-24c
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: Flour Sifter Stainless Steel – Double Layer Fine Mesh Baking Sifter
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/8b67b0fd101f979035cadfea1a85161e.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/8b67b0fd101f979035cadfea1a85161e.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/be440a888ce3afec20d02aee9e9fa761.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/22ec70ba3134fd0f897d24cef33e4a1c.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/6e808c288dddaa7c158ca47bae02805d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/6e581500d5a96455c2baf68accab9226.webp
+Meta Title: Flour Sifter Stainless Steel – Double Layer Fine Mesh Baking Sifter 
 Meta Description: Buy Flour Sifter Stainless Steel – Double Layer Fine Mesh Baking Sifter with One-Hand Press Crank for Cakes & Pastries online in Pakistan from ASM VEO. Premium
 Description: Premium stainless steel flour sifter with double-layer fine mesh for smooth, lump-free baking. Easy one-hand press crank design, perfect for flour, powdered sugar, and cocoa.
-Regular Price: 621
-Sale Price: 621
+Wholesale Price: 571
+Regular Price: 1110
+Sale Price: 888
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

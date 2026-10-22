@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Black Duck Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trouser Set – Warm, Soft & Stylish Garments for Boys & Girls FOR BABY AND KIDS
 Product ID: hhc-3753443
 SKU: hhc-3753443
@@ -7,11 +8,16 @@ Slug: black-duck-printed-kids-tracksuit-winter-fleece-sweatshirt-trouser-set-473
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/9fd312fba46d4bee99bf50c25fd95a51.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/9fd312fba46d4bee99bf50c25fd95a51.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/cce5e53fefd1f46de5c38dc179809981.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/11/1daadae5ce73cc6442c99e6898522118.jpeg
 Meta Title: Black Duck Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trous
 Meta Description: Buy Black Duck Printed Kids Tracksuit | Winter Fleece Sweatshirt & Trouser Set – Warm, Soft & Stylish Garments for Boys & Girls FOR BABY AND KIDS online in Paki
 Description: Adorable black duck-printed winter tracksuit for kids — cozy fleece sweatshirt and trouser set for warmth and everyday comfort.
-Regular Price: 892
-Sale Price: 892
+Wholesale Price: 842
+Regular Price: 1600
+Sale Price: 1281
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

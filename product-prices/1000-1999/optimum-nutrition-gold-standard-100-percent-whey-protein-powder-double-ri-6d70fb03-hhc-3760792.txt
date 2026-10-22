@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Optimum Nutrition Gold Standard 100 Percent Whey Protein Powder Double Rich Chocolate Flavor 2 Pounds 907g
 Product ID: hhc-3760792
 SKU: hhc-3760792
@@ -7,11 +8,16 @@ Slug: optimum-nutrition-gold-standard-100-percent-whey-protein-powder-double-6d7
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/6868d284bf7a6f1d4759e296b870ddf0.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/6868d284bf7a6f1d4759e296b870ddf0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/a06776c8696e84a179824e46861ccdbf.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/cd11c7fcd9e8342612421d691d66d41a.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/18/24f9baa8f971f243d3bddd9cc5415351.jpeg
 Meta Title: Optimum Nutrition Gold Standard 100 Percent Whey Protein Powder Doub
 Meta Description: Buy Optimum Nutrition Gold Standard 100 Percent Whey Protein Powder Double Rich Chocolate Flavor 2 Pounds 907g online in Pakistan from ASM VEO. Optimum Nutritio
 Description: Optimum Nutrition Gold Standard 100 Percent Whey Protein Powder Double Rich Chocolate Flavor 2 Pounds 907g High Quality Supplement.
-Regular Price: 3147
-Sale Price: 3147
+Wholesale Price: 3147
+Regular Price: 5340
+Sale Price: 4271
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

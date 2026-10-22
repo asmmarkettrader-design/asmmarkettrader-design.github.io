@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Scoop Disposable 100 Food Cover – Elastic Stretchable Bowl & Plate Covers – Universal Fit Plastic Covers for Kitchen Food Preservation
 Product ID: hhc-3764068
 SKU: hhc-3764068
@@ -7,11 +8,16 @@ Slug: scoop-disposable-100-food-cover-elastic-stretchable-bowl-plate-covers-u-19
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/3c6be07f1999dd67973dab59dc0fe4d2.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/3c6be07f1999dd67973dab59dc0fe4d2.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/4e683d5da8c8f2e4609fb8ccc716e92f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/913601f33646f9e593e0267fe37dc351.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/7609ca6f14c2439125d4897fca2f3758.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/19/7e71c0bf9f11f29b057ce3d4da861ed4.jpeg
 Meta Title: Scoop Disposable 100 Food Cover – Elastic Stretchable Bowl & Plate C
 Meta Description: Buy Scoop Disposable 100 Food Cover – Elastic Stretchable Bowl & Plate Covers – Universal Fit Plastic Covers for Kitchen Food Preservation online in Pakistan fr
 Description: Keep your food fresh and protected with Scoop Disposable Food Covers. These elastic, stretchable covers easily fit over bowls, plates, and containers of various sizes. A convenient, dust-proof, and hygienic solution for leftover storage and outdoor picnics.
-Regular Price: 418
-Sale Price: 418
+Wholesale Price: 368
+Regular Price: 762
+Sale Price: 612
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

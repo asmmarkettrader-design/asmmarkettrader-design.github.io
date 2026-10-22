@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Couple Night Dress Silk Sleepwear Set – 4-Piece Pajama & Robe Set | SKU: DC-C012
 Product ID: hhc-3756311
 SKU: hhc-3756311
@@ -7,11 +8,16 @@ Slug: couple-night-dress-silk-sleepwear-set-4-piece-pajama-robe-set-sku-dc-c012-
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/c0fa96df348870028d7f53aa4c3acd5d.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/c0fa96df348870028d7f53aa4c3acd5d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/afcfde584dc057dd88edeb14deee3acb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/d1a041238339c394c90e879ce6bf8f9a.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/64de3c8016a329fad62c82e6ca1539ed.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/02/12/72f3870cb2a54cc588cb990d0d09427a.png
 Meta Title: Couple Night Dress Silk Sleepwear Set – 4-Piece Pajama & Robe Set |
 Meta Description: Buy Couple Night Dress Silk Sleepwear Set – 4-Piece Pajama & Robe Set | SKU: DC-C012 online in Pakistan from ASM VEO. Luxury silk sleepwear for couples, combini
 Description: Luxury silk sleepwear for couples, combining comfort, style, and elegance in a matching 4-piece set. Available in Maroon, Blue, Black, and Red.
-Regular Price: 3639
-Sale Price: 3639
+Wholesale Price: 3639
+Regular Price: 6140
+Sale Price: 4911
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

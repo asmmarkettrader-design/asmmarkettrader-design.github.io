@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Universal Ceiling Fan Blade & Motor Cover Set – Dustproof, Washable Fabric Protection for Home & Office Fans
 Product ID: hhc-3753131
 SKU: hhc-3753131
@@ -7,11 +8,16 @@ Slug: universal-ceiling-fan-blade-motor-cover-set-dustproof-washable-fabric-p-66
 Category: Home & Kitchen
 Subcategory: Furniture
 Brand: ASM VEO
-Meta Title: Universal Ceiling Fan Blade & Motor Cover Set – Dustproof, Washable
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/4312cd847dca4e7db1f673d6f54051b1.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/4312cd847dca4e7db1f673d6f54051b1.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/9cb707d623ab549bbd3f8f3fc6ea6ff2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/15fa4507a8dbe80650689e9b142892cd.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/31/5b35a989e07235a27c7eba99e1f2222d.jpeg
+Meta Title: Universal Ceiling Fan Blade & Motor Cover Set – Dustproof, Washable 
 Meta Description: Buy Universal Ceiling Fan Blade & Motor Cover Set – Dustproof, Washable Fabric Protection for Home & Office Fans online in Pakistan from ASM VEO. Keep your ceil
 Description: Keep your ceiling fan clean and dust-free with this universal fan cover set. Designed to fit all standard fans, it includes washable blade and motor covers made from durable, dustproof fabric for long-lasting protection and easy maintenance.
-Regular Price: 291
-Sale Price: 291
+Wholesale Price: 241
+Regular Price: 572
+Sale Price: 422
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

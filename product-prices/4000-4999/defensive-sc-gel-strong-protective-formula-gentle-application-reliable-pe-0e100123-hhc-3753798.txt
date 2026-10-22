@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Defensive SC Gel Strong Protective Formula Gentle Application Reliable Performance Easy Absorption Provides Comfort And Support For Daily Use - 40g
 Product ID: hhc-3753798
 SKU: hhc-3753798
@@ -7,11 +8,16 @@ Slug: defensive-sc-gel-strong-protective-formula-gentle-application-reliable-0e1
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/1ef8e4e87c3179bbb93cec3159382dc8.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/1ef8e4e87c3179bbb93cec3159382dc8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/9cab7cc82772390c427aa126e78c2438.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/b9fceb7688eee0ea654482dea9098f64.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/30193170a350fffb6db1ff082e0d9ad8.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/22/456a412125aa52b28f5a27ca7d01d7dc.jpeg
 Meta Title: Defensive SC Gel Strong Protective Formula Gentle Application Reliab
 Meta Description: Buy Defensive SC Gel Strong Protective Formula Gentle Application Reliable Performance Easy Absorption Provides Comfort And Support For Daily Use - 40g online i
 Description: Defensive SC Gel Provides Strong Protective Formula Gentle Application Reliable Performance And Easy Absorption
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

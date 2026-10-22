@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Stanley Printed Tumbler 40oz | Premium Insulated Stainless Steel Cup | 1200ml
 Product ID: hhc-3755630
 SKU: hhc-3755630
@@ -7,11 +8,16 @@ Slug: stanley-printed-tumbler-40oz-premium-insulated-stainless-steel-cup-1200ml-
 Category: Home & Kitchen
 Subcategory: Other
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/bdc26a1b12a28ea5f2007f233bb91d24.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/bdc26a1b12a28ea5f2007f233bb91d24.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/b55ee3bae6a2a9e2f5e9dc57e25abda5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/d5afd2691a1f4a8ef43b07d70f8e731f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/afb926808bf2e17aca80e0da6025a54d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/16/b25c0e57f407d584a44bad54d03ca046.jpeg
 Meta Title: Stanley Printed Tumbler 40oz | Premium Insulated Stainless Steel Cup
 Meta Description: Buy Stanley Printed Tumbler 40oz | Premium Insulated Stainless Steel Cup | 1200ml online in Pakistan from ASM VEO. Stanley printed tumbler, 40oz/1200ml. Premium
 Description: Stanley printed tumbler, 40oz/1200ml. Premium insulated stainless steel cup keeps drinks hot or cold for hours.
-Regular Price: 3682
-Sale Price: 3682
+Wholesale Price: 3682
+Regular Price: 6210
+Sale Price: 4967
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

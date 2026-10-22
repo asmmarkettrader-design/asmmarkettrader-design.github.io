@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 100pc Disposable Cling Film Cover Household Refrigerator Food Fruit Preservation Cover Dust-proof Plastic Fresh-keeping Cover.
 Product ID: hhc-1961065
 SKU: hhc-1961065
@@ -7,11 +8,16 @@ Slug: 100pc-disposable-cling-film-cover-household-refrigerator-food-fruit-pre-88
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
-Meta Title: 100pc Disposable Cling Film Cover Household Refrigerator Food Fruit
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/6dec633eff831bb75d574798fbd08142.jpg_750x750.jpg_.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/6dec633eff831bb75d574798fbd08142.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/09/b6351788080030f319d552b9553f94fb.jpg_750x750.jpg_.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2023/12/a188ee24-caa9-4519-bdca-7a10a2af0dba.jpeg
+Meta Title: 100pc Disposable Cling Film Cover Household Refrigerator Food Fruit 
 Meta Description: Buy 100pc Disposable Cling Film Cover Household Refrigerator Food Fruit Preservation Cover Dust-proof Plastic Fresh-keeping Cover. online in Pakistan from ASM V
 Description: Product details Reusable Food Covers: Our reusable food storage covers preserve their quality and shield your dishes from exposure. Instead of using disposable plastic wrap to cover your leftovers, use something a little more eco-friendly. These reusable food covers are great accessories to add to your kitchen gadgets. There is no fussing with clingy edges.
-Regular Price: 259
-Sale Price: 259
+Wholesale Price: 209
+Regular Price: 524
+Sale Price: 374
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

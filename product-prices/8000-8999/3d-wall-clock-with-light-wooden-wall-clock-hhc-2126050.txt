@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3d wall clock with light Wooden Wall Clock
 Product ID: hhc-2126050
 SKU: hhc-2126050
@@ -7,11 +8,16 @@ Slug: 3d-wall-clock-with-light-wooden-wall-clock-hhc-2126050
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-7.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/10/1-7.webp
 Meta Title: 3d wall clock with light Wooden Wall Clock | Buy Online in Pakistan
 Meta Description: Buy 3d wall clock with light Wooden Wall Clock online in Pakistan from ASM VEO. New Creative 3D DIY Wooden Wall Clock Quartz Watch Laser Cut Design Decoration P
 Description: New Creative 3D DIY Wooden Wall Clock Quartz Watch Laser Cut Design Decoration Piece for Home Decor Living Room and for Gift Items Wooden Heart Clock with Lights Metrial wood Size 12 inch Thickness 3mm lasani wood
-Regular Price: 657
-Sale Price: 657
+Wholesale Price: 607
+Regular Price: 1180
+Sale Price: 940
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: ABS Painted Rear Roof Spoiler Wing for Suzuki Alto (2019–2024 Models)
 Product ID: hhc-3764152
 SKU: hhc-3764152
@@ -7,11 +8,16 @@ Slug: abs-painted-rear-roof-spoiler-wing-for-suzuki-alto-2019-2024-models-hhc-37
 Category: Automotive
 Subcategory: Car Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/32546931e9707344c9e0868549f7e1dc.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/21/32546931e9707344c9e0868549f7e1dc.jpeg
 Meta Title: ABS Painted Rear Roof Spoiler Wing for Suzuki Alto (2019–2024 Models
 Meta Description: Buy ABS Painted Rear Roof Spoiler Wing for Suzuki Alto (2019–2024 Models) online in Pakistan from ASM VEO. A high-quality painted ABS plastic rear roof spoiler
 Description: A high-quality painted ABS plastic rear roof spoiler custom-molded for Suzuki Alto (660cc). Features a factory-painted finish, sleek aerodynamic design, and perfect roofline fitment to enhance rear exterior styling.
-Regular Price: 3218
-Sale Price: 3218
+Wholesale Price: 3218
+Regular Price: 5450
+Sale Price: 4363
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

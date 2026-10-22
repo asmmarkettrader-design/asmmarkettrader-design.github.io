@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Balebaily Croc Texture Bifold Wallet – Compact Card Holder with ID Window, Cash Pocket & Tuck Lock
 Product ID: hhc-3764381
 SKU: hhc-3764381
@@ -7,11 +8,16 @@ Slug: balebaily-croc-texture-bifold-wallet-compact-card-holder-with-id-window-b2
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/e36831ed158d9326cb0e99e35965de3c.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/e36831ed158d9326cb0e99e35965de3c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/13/3b7caf14e45e9cf413d40ff46f270a40.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/9af1471a05044a436d810e1f9675e8b9.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/b319daaaa2ab4a553f788b1dd6b189b3.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/29/778af9fe8bac3d9a41376e290e70f1ae.jpeg
 Meta Title: Balebaily Croc Texture Bifold Wallet – Compact Card Holder with ID W
 Meta Description: Buy Balebaily Croc Texture Bifold Wallet – Compact Card Holder with ID Window, Cash Pocket & Tuck Lock online in Pakistan from ASM VEO. Keep your everyday essen
 Description: Keep your everyday essentials organized in a compact bifold wallet designed for convenience and easy carrying. Featuring a stylish croc texture, 4 card slots, a transparent ID window, hidden compartments, a spacious cash pocket, and a secure tuck lock.
-Regular Price: 670
-Sale Price: 670
+Wholesale Price: 620
+Regular Price: 1200
+Sale Price: 959
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

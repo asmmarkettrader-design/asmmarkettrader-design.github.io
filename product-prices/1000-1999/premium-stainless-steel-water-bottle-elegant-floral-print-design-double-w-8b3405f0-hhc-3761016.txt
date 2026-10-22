@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Stainless Steel Water Bottle – Elegant Floral Print Design | Double Wall Insulated | Hot & Cold Flask (Random Color)
 Product ID: hhc-3761016
 SKU: hhc-3761016
@@ -7,11 +8,16 @@ Slug: premium-stainless-steel-water-bottle-elegant-floral-print-design-double-8b
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/3b064c1a2ce872ce9d566c90fe4cc1ea.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/3b064c1a2ce872ce9d566c90fe4cc1ea.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/ee1f2200943ce2e5c60b937120f7be14.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/31c9c791b754c5eb5233b2945e1a67af.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/24/22e687f892cd430d2772797a80a1b045.jpeg
 Meta Title: Premium Stainless Steel Water Bottle – Elegant Floral Print Design |
 Meta Description: Buy Premium Stainless Steel Water Bottle – Elegant Floral Print Design | Double Wall Insulated | Hot & Cold Flask (Random Color) online in Pakistan from ASM VEO
 Description: Stay refreshed in style with this 550ml Premium Stainless Steel Water Bottle. Featuring a beautiful,
-Regular Price: 2334
-Sale Price: 2334
+Wholesale Price: 2334
+Regular Price: 4160
+Sale Price: 3331
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

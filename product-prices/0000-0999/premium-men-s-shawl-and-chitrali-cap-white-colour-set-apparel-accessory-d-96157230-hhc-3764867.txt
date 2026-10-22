@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium Men's Shawl And Chitrali Cap White Colour Set - Apparel Accessory Designed For Traditional Styling And Daily Wardrobe Routine
 Product ID: hhc-3764867
 SKU: hhc-3764867
@@ -7,11 +8,16 @@ Slug: premium-men-s-shawl-and-chitrali-cap-white-colour-set-apparel-accessory-96
 Category: Fashion
 Subcategory: Men's Fashion
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/c073d986351e7e3e74729577b9540b19.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/c073d986351e7e3e74729577b9540b19.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/01957ff2f79d8da104c108f903868ad8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/02/4302663430cfb3b7704c8af5c5fe8468.webp
 Meta Title: Premium Men's Shawl And Chitrali Cap White Colour Set - Apparel Acce
 Meta Description: Buy Premium Men's Shawl And Chitrali Cap White Colour Set - Apparel Accessory Designed For Traditional Styling And Daily Wardrobe Routine online in Pakistan fro
 Description: This Premium Men's Shawl And Chitrali Cap White Colour Set Provides A Reliable Solution For Apparel Accessories And Routine Traditional Styling Needs. Formulated To Deliver Wardrobe Benefits While Supporting Premium Men's Shawl And Chitrali Cap White Colour Set Utility, It Fits Seamlessly Into Your Regular Traditional Styling Or Daily Regimen. Designed For Easy Operation And Convenient Use, It Offers Consistent Performance That Lasts Throughout The Day. Built To Support Everyday Traditional Styling Requirements, This Premium Men's Shawl And Chitrali Cap White Colour Set Serves As An Essential Apparel Accessory For Daily Life.Key FeaturesPremium Men's Shawl And Chitrali Cap White Colour Set Formulated For Apparel AccessoriesDelivers Traditional Styling And Supports Daily Wardrobe UtilityOffers Consistent Performance For Daily NeedsSuitable For Regular Traditional Styling And Wardrobe RoutinesDesigned For Easy Operation And Convenient UseEssential Apparel Accessory For Everyday MaintenancePremium Quality Men's Shawl and Chitrali Cap White Colour Set. Traditional design, soft material, perfect for winter. Each set contains 1 Shawl and 1 Cap.
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

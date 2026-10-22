@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Fivfivgo™ VitiGO Bee Venom Correcting Cream (30g) Support for Skin Pigmentation Recovery and Even Skin Tone
 Product ID: hhc-3756841
 SKU: hhc-3756841
@@ -7,11 +8,16 @@ Slug: fivfivgo-vitigo-bee-venom-correcting-cream-30g-support-for-skin-pigment-47
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/c52623bc577fde41dac3b64b4496e281.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/c52623bc577fde41dac3b64b4496e281.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/6187b2eae3855c1a28841aca8013f7a8.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/b61e6b558a5437a9b960b9dd68af0feb.jfif, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/07/b78f1b7b68b7aa9534a0275c46e10146.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/09/1d04954b7ab36f64223cebd6b28147bc.jpeg
 Meta Title: Fivfivgo™ VitiGO Bee Venom Correcting Cream (30g) Support for Skin P
 Meta Description: Buy Fivfivgo™ VitiGO Bee Venom Correcting Cream (30g) Support for Skin Pigmentation Recovery and Even Skin Tone online in Pakistan from ASM VEO. Restore your sk
 Description: Restore your skin’s natural look with Vitiligo Bee Venom Cream . Its powerful formula helps support skin repigmentation, improve uneven skin tone, and nourish affected areas for healthier, smoother-looking skin. Use regularly for better results and renewed confidence.
-Regular Price: 258
-Sale Price: 258
+Wholesale Price: 208
+Regular Price: 522
+Sale Price: 372
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Traditional Truck Art Decorative Glass Bottle Vase – Handcrafted Multicolor Home Decor (750ml)
 Product ID: hhc-3753308
 SKU: hhc-3753308
@@ -7,11 +8,16 @@ Slug: traditional-truck-art-decorative-glass-bottle-vase-handcrafted-multicol-1f
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/5c7ddca13dcd6a00e1d2d62d74986ccc.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/5c7ddca13dcd6a00e1d2d62d74986ccc.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/071676fd39dd0799862dce00036d413b.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/4e2b630ae72771e4f8b984b1663acc8f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/b144fe071a1ef683316777cb347f867f.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/0f24d53387c2abcafed31e844199f328.png
 Meta Title: Traditional Truck Art Decorative Glass Bottle Vase – Handcrafted Mul
 Meta Description: Buy Traditional Truck Art Decorative Glass Bottle Vase – Handcrafted Multicolor Home Decor (750ml) online in Pakistan from ASM VEO. Traditional Truck Art Decora
 Description: Traditional Truck Art Decorative Glass Bottle Vase Adds A Splash Of Vibrant Colors To Your Home Decor, Perfect For Fresh Flowers Or As A Standalone Piece.
-Regular Price: 1513
-Sale Price: 1513
+Wholesale Price: 1463
+Regular Price: 2670
+Sale Price: 2137
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

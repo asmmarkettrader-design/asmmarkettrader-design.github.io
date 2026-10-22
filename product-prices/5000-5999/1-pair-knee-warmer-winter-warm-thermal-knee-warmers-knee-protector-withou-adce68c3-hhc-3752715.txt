@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 1 Pair Knee Warmer | Winter Warm Thermal Knee Warmers | Knee Protector - Without Belt (Random Color)
 Product ID: hhc-3752715
 SKU: hhc-3752715
@@ -7,11 +8,16 @@ Slug: 1-pair-knee-warmer-winter-warm-thermal-knee-warmers-knee-protector-with-ad
 Category: Events & Gifting
 Subcategory: Seasonal Items
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/b9d5d94d3bd7be41b4adf52fb3d7b4cd.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/b9d5d94d3bd7be41b4adf52fb3d7b4cd.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/3b07d208b1df47509c72d7d2c9410297.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/f7598bac387d7b34138df043d0522d11.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/8f480a1c06f12657e16e3d0da4b409b4.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/10/11/6fa580730753dad0dcd9ba22d88f141d.webp
 Meta Title: 1 Pair Knee Warmer | Winter Warm Thermal Knee Warmers | Knee Protect
 Meta Description: Buy 1 Pair Knee Warmer | Winter Warm Thermal Knee Warmers | Knee Protector - Without Belt (Random Color) online in Pakistan from ASM VEO. 1 Pair Knee Warmer | W
 Description: 1 Pair Knee Warmer | Winter Warm Thermal Knee Warmers | Knee Protector (Random Color)
-Regular Price: 582
-Sale Price: 582
+Wholesale Price: 532
+Regular Price: 1040
+Sale Price: 831
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

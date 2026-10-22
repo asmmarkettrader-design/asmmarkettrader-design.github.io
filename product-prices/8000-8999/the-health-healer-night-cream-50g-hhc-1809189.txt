@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: The Health Healer Night Cream - 50g
 Product ID: hhc-1809189
 SKU: hhc-1809189
@@ -7,11 +8,16 @@ Slug: the-health-healer-night-cream-50g-hhc-1809189
 Category: Beauty & Personal Care
 Subcategory: Skincare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-20-at-3.20.19-AM-1.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-20-at-3.20.19-AM-1.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/07/WhatsApp-Image-2024-07-20-at-3.20.19-AM.jpeg
 Meta Title: The Health Healer Night Cream - 50g | Buy Online in Pakistan
 Meta Description: Buy The Health Healer Night Cream - 50g online in Pakistan from ASM VEO. Rejuvenate Overnight: Repairs and nourishes while you sleep. Deep Hydration: Hyaluronic
 Description: Rejuvenate Overnight: Repairs and nourishes while you sleep. Deep Hydration: Hyaluronic acid for plump, hydrated skin. Anti-Aging: Retinol reduces fine lines and wrinkles. Brightens Skin: Vitamin C evens tone and reduces dark spots. Boosts Collagen: Peptides enhance firmness and elasticity. Natural Hydration: Jojoba oil mimics skin's sebum. Soothes: Green tea extract calms and protects. Nourishes: Shea butter repairs and softens skin. Easy Use: Cleanse, tone, apply nightly for best results. For All Skin Types: Suitable for sensitive skin, free from parabens and sulfates. Product Pictures
-Regular Price: 289
-Sale Price: 289
+Wholesale Price: 239
+Regular Price: 568
+Sale Price: 418
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

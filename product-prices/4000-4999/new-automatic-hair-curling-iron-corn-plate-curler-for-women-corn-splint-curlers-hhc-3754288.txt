@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: New Automatic Hair Curling Iron Corn Plate Curler For Women Corn Splint Curlers
 Product ID: hhc-3754288
 SKU: hhc-3754288
@@ -7,11 +8,16 @@ Slug: new-automatic-hair-curling-iron-corn-plate-curler-for-women-corn-splint-cu
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/a5e4e05f8f48e385f2e7afd937e67b5d.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/a5e4e05f8f48e385f2e7afd937e67b5d.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/12/11/56981ba5ca38584ca6af4f4d093142b7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/a64789d29c8466fc93aa2b41836f54c7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/a7af5ab982060292e9fe580038f602f4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/06/13/8a78cbdc2a49800c6326e030422645bd.jpg
 Meta Title: New Automatic Hair Curling Iron Corn Plate Curler For Women Corn Spl
 Meta Description: Buy New Automatic Hair Curling Iron Corn Plate Curler For Women Corn Splint Curlers online in Pakistan from ASM VEO. Create beautiful corn plate curls and styli
 Description: Create beautiful corn plate curls and stylish hairstyles effortlessly with this automatic hair curling iron. Designed for quick heating and easy use, it helps you achieve salon-like results at home.
-Regular Price: 3498
-Sale Price: 3498
+Wholesale Price: 3498
+Regular Price: 5910
+Sale Price: 4727
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

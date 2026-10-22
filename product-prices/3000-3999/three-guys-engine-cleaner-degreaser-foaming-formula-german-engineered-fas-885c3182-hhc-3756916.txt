@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: THREE GUYS Engine Cleaner & Degreaser | Foaming Formula | German Engineered Fast-Dry Spray (250ml)
 Product ID: hhc-3756916
 SKU: hhc-3756916
@@ -7,11 +8,16 @@ Slug: three-guys-engine-cleaner-degreaser-foaming-formula-german-engineered-f-88
 Category: Automotive
 Subcategory: Vehicle Cleaning Supplies
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/3e97f132c5ebbe030ea535984715a298.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/3e97f132c5ebbe030ea535984715a298.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/6a902378549c0c876129ab533bec0d27.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/0ed4c75a094e99d801c295d05a3d3e08.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/7f76b2b0edde62d4422b14d51e75fada.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/2fa2e8d9d890c8d1a32cdf69e5cfc904.jpg
 Meta Title: THREE GUYS Engine Cleaner & Degreaser | Foaming Formula | German Eng
 Meta Description: Buy THREE GUYS Engine Cleaner & Degreaser | Foaming Formula | German Engineered Fast-Dry Spray (250ml) online in Pakistan from ASM VEO. Keep your engine bay cle
 Description: Keep your engine bay clean and grease-free with THREE GUYS Engine Cleaner & Degreaser 250ml. Its powerful foaming formula quickly breaks down oil, dirt, and stubborn grease while the fast-dry spray leaves no messy residue. German engineered for effective and safe engine cleaning.
-Regular Price: 1091
-Sale Price: 1091
+Wholesale Price: 1041
+Regular Price: 1920
+Sale Price: 1538
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

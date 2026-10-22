@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Silicone Baking Roti Mat | Heat Resistant | Non‑Stick Dough Pad with Measurements | Random Color
 Product ID: hhc-3756043
 SKU: hhc-3756043
@@ -7,11 +8,16 @@ Slug: silicone-baking-roti-mat-heat-resistant-non-stick-dough-pad-with-measur-99
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/853d78265a6d3dff682fc7a0a9960cb4.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/853d78265a6d3dff682fc7a0a9960cb4.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/9c20d3c86c9d421adad5ef2a7b7dfaba.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/27e5051662326b72eec6f03bc279e4a6.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/84716f26cbed1e92c62d1d938daed94d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/01/28/51cf195ae12629ea20344d7a1676d251.jpg
 Meta Title: Silicone Baking Roti Mat | Heat Resistant | Non‑Stick Dough Pad with
 Meta Description: Buy Silicone Baking Roti Mat | Heat Resistant | Non‑Stick Dough Pad with Measurements | Random Color online in Pakistan from ASM VEO. Premium silicone baking ro
 Description: Premium silicone baking roti mat with measurements. Heat resistant, non‑stick, perfect for rolling flour & kneading dough.
-Regular Price: 396
-Sale Price: 396
+Wholesale Price: 346
+Regular Price: 729
+Sale Price: 579
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

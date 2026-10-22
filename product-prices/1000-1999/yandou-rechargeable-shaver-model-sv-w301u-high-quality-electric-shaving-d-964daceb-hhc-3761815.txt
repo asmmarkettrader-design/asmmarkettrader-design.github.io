@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Yandou Rechargeable Shaver Model SV-W301U - High Quality Electric Shaving Device With Charging Connector Cleaning Brush And Manual Guide
 Product ID: hhc-3761815
 SKU: hhc-3761815
@@ -7,11 +8,16 @@ Slug: yandou-rechargeable-shaver-model-sv-w301u-high-quality-electric-shaving-96
 Category: Beauty & Personal Care
 Subcategory: Personal Care
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/675da9ff6107a1fee9ee978d86d9cc79.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/675da9ff6107a1fee9ee978d86d9cc79.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/7f30fab11795710ebf7a9c9bed1022d5.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/14d223374d27a833d6229af9a2bb52b2.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/5fd44ba9bd45cd2daa4692567b03a37e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/07/14/b129d3d1af72965560e6191236b22359.jpg
 Meta Title: Yandou Rechargeable Shaver Model SV-W301U - High Quality Electric Sh
 Meta Description: Buy Yandou Rechargeable Shaver Model SV-W301U - High Quality Electric Shaving Device With Charging Connector Cleaning Brush And Manual Guide online in Pakistan
 Description: The Yandou Rechargeable Shaver Model SV-W301U Is A High Quality Grooming Tool That Comes With A Cleaning Brush Charging Connector And User Manual.
-Regular Price: 1603
-Sale Price: 1603
+Wholesale Price: 1603
+Regular Price: 2930
+Sale Price: 2344
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

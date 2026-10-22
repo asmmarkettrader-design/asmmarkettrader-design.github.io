@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 In 1 Electric Makeup Brush Cleaner | Automatic Make Up Brush Holder Cleaner Machine
 Product ID: hhc-2148071
 SKU: hhc-2148071
@@ -7,11 +8,16 @@ Slug: 3-in-1-electric-makeup-brush-cleaner-automatic-make-up-brush-holder-cle-f0
 Category: Home & Kitchen
 Subcategory: Cleaning & Organization
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/6-7.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/6-7.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/5-8.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/4-12.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/3-20.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2024/05/2-34.jpg
 Meta Title: 3 In 1 Electric Makeup Brush Cleaner | Automatic Make Up Brush Holde
 Meta Description: Buy 3 In 1 Electric Makeup Brush Cleaner | Automatic Make Up Brush Holder Cleaner Machine online in Pakistan from ASM VEO. 3 In 1 Electric Makeup Brush Cleaner
 Description: 3 In 1 Electric Makeup Brush Cleaner | Automatic Make Up Brush Holder Cleaner Machine
-Regular Price: 1302
-Sale Price: 1302
+Wholesale Price: 1252
+Regular Price: 2300
+Sale Price: 1838
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

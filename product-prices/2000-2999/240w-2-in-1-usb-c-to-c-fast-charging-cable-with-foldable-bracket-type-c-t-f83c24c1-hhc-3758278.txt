@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 240W 2-in-1 USB-C to C Fast Charging Cable With Foldable Bracket | Type-C to Type-C Data Cable & Desktop Holder
 Product ID: hhc-3758278
 SKU: hhc-3758278
@@ -7,11 +8,16 @@ Slug: 240w-2-in-1-usb-c-to-c-fast-charging-cable-with-foldable-bracket-type-c-f8
 Category: Electronics
 Subcategory: Mobile & Accessories
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/853897724ad90d9de65d025461f31dfa.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/853897724ad90d9de65d025461f31dfa.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/ea03731de7074957183a98c6492c8d24.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/a1d35baf464e49d5e338e467d68a3f0e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/fdf86eecbb8edb75b17628b5842e5fbf.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/04/29/c1556d571ff69e6141609b388ff471f8.webp
 Meta Title: 240W 2-in-1 USB-C to C Fast Charging Cable With Foldable Bracket | T
 Meta Description: Buy 240W 2-in-1 USB-C to C Fast Charging Cable With Foldable Bracket | Type-C to Type-C Data Cable & Desktop Holder online in Pakistan from ASM VEO. 240W USB-C
 Description: 240W USB-C Fast Charging Cable With Built-In Foldable Stand For Hands-Free Use & Stable Data Transfer
-Regular Price: 1085
-Sale Price: 1085
+Wholesale Price: 1035
+Regular Price: 1910
+Sale Price: 1530
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

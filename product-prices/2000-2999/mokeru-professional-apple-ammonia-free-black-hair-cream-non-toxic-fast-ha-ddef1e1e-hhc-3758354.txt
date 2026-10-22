@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Mokeru Professional Apple Ammonia-Free Black Hair Cream – Non-Toxic Fast Hair Dye for Men and Women
 Product ID: hhc-3758354
 SKU: hhc-3758354
@@ -7,11 +8,16 @@ Slug: mokeru-professional-apple-ammonia-free-black-hair-cream-non-toxic-fast-dde
 Category: Beauty & Personal Care
 Subcategory: Haircare
 Brand: Apple
-Meta Title: Mokeru Professional Apple Ammonia-Free Black Hair Cream – Non-Toxic
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/7cb08fd477c833df154d90e2141229d5.png
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/7cb08fd477c833df154d90e2141229d5.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/f372827899428e5d59f9e61e25c0c2bb.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/b56d1956076778e134b27893d25e5271.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/e0e674db30f7f7ba292dd08bef7eb3d5.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/03/8b871df26196e83322e83afb8dcfab94.jpeg
+Meta Title: Mokeru Professional Apple Ammonia-Free Black Hair Cream – Non-Toxic 
 Meta Description: Buy Mokeru Professional Apple Ammonia-Free Black Hair Cream – Non-Toxic Fast Hair Dye for Men and Women online in Pakistan from ASM VEO. Get naturally black, sh
 Description: Get naturally black, shiny hair in minutes with Mokeru Professional Apple Black Hair Cream. This safe, ammonia-free formula provides fast grey hair coverage while nourishing your scalp with apple essence.
-Regular Price: 3569
-Sale Price: 3569
+Wholesale Price: 3569
+Regular Price: 6020
+Sale Price: 4820
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Amazing Mickey Printed T-Shirt for Kids
 Product ID: hhc-3756800
 SKU: hhc-3756800
@@ -7,11 +8,16 @@ Slug: amazing-mickey-printed-t-shirt-for-kids-hhc-3756800
 Category: Fashion
 Subcategory: Kids & Baby Wear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ec664780f9b951a2155a81acc313db47.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/ec664780f9b951a2155a81acc313db47.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/17ded0c6fb4b8ea29416b485d268c78c.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/1c543bd7820f3a14e541cbf4208c0f70.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/06/31f1e61fda686176ec92cdb46c21d43a.jpeg
 Meta Title: Amazing Mickey Printed T-Shirt for Kids | Buy Online in Pakistan
 Meta Description: Buy Amazing Mickey Printed T-Shirt for Kids online in Pakistan from ASM VEO. Comfortable and stylish kids’ T-shirt featuring a fun Mickey print. Made with soft,
 Description: Comfortable and stylish kids’ T-shirt featuring a fun Mickey print. Made with soft, breathable fabric and available in multiple colors and sizes for toddlers and young children.
-Regular Price: 579
-Sale Price: 579
+Wholesale Price: 529
+Regular Price: 1030
+Sale Price: 827
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

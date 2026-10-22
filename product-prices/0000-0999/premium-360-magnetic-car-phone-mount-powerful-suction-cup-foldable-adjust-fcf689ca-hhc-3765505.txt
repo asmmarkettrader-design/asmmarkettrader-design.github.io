@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Premium 360° Magnetic Car Phone Mount – Powerful Suction Cup, Foldable Adjustable Dashboard Holder for All Smartphones
 Product ID: hhc-3765505
 SKU: hhc-3765505
@@ -7,11 +8,16 @@ Slug: premium-360-magnetic-car-phone-mount-powerful-suction-cup-foldable-adju-fc
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/3a21878d6661cc08f27b7ffd3e4842d0.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/15/3a21878d6661cc08f27b7ffd3e4842d0.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/31370ae052991adaa0cac7f78634630f.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/5332a249147e70a531cdb2ff23fad8a0.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/14/124eb9a0d82126a2c4ee2719273f3437.webp
 Meta Title: Premium 360° Magnetic Car Phone Mount – Powerful Suction Cup, Foldab
 Meta Description: Buy Premium 360° Magnetic Car Phone Mount – Powerful Suction Cup, Foldable Adjustable Dashboard Holder for All Smartphones online in Pakistan from ASM VEO. Prem
 Description: Premium 360° Magnetic Car Phone Mount. Features 720° rotation, powerful suction cup for secure mounting, and a foldable adjustable design. Compatible with all smartphones. Ideal for dashboard use. Specifications: 720-degree rotation, magnetic base, sturdy suction.
-Regular Price: 839
-Sale Price: 839
+Wholesale Price: 789
+Regular Price: 1500
+Sale Price: 1204
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

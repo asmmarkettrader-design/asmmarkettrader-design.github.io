@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Dr. Harleys Women Multivitamin Gummies (60s)
 Product ID: hhc-3756891
 SKU: hhc-3756891
@@ -7,11 +8,16 @@ Slug: dr-harleys-women-multivitamin-gummies-60s-hhc-3756891
 Category: Beauty & Personal Care
 Subcategory: Health & Wellness
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/48f92e855d4e40d47161edc82925abb4.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/48f92e855d4e40d47161edc82925abb4.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/e3f66fcddcf14a9208a5080a0bf80188.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/13/9b7fcf9968dbdfd8213df59e4bf09331.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/12/614d73cb98148e28147615b635c9203d.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/03/11/4d5d756741fa0daacbce4388deee7243.jpeg
 Meta Title: Dr. Harleys Women Multivitamin Gummies (60s) | Buy Online in Pakista
 Meta Description: Buy Dr. Harleys Women Multivitamin Gummies (60s) online in Pakistan from ASM VEO. A complete daily supplement designed for women that helps support energy level
 Description: A complete daily supplement designed for women that helps support energy levels, immunity, hormonal balance, and bone health with essential vitamins and minerals. Dr. Harleys
-Regular Price: 2163
-Sale Price: 2163
+Wholesale Price: 2163
+Regular Price: 3880
+Sale Price: 3100
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

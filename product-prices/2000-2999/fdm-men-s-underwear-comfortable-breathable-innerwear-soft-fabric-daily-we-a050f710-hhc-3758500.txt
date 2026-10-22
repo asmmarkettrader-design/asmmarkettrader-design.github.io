@@ -1,17 +1,23 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: FDM Men's Underwear Comfortable Breathable Innerwear Soft Fabric Daily Wear Stretchable and Durable Design (Random Color)
 Product ID: hhc-3758500
 SKU: hhc-3758500
 Slug: fdm-men-s-underwear-comfortable-breathable-innerwear-soft-fabric-daily-a050f710-hhc-3758500
 Category: Fashion
-Subcategory: Men's Fashion
+Subcategory: Underwear & Innerwear
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/cc6e2f1ee3cb808dd19c1b6fa7dd0072.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/cc6e2f1ee3cb808dd19c1b6fa7dd0072.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/c158456150f3330a280d45a891dbd1dd.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/8dbee04805649b5163462aa6dc9f6e19.png, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/05/06/443244851d5a21b815d3370070abee3a.jpeg
 Meta Title: FDM Men's Underwear Comfortable Breathable Innerwear Soft Fabric Dai
 Meta Description: Buy FDM Men's Underwear Comfortable Breathable Innerwear Soft Fabric Daily Wear Stretchable and Durable Design (Random Color) online in Pakistan from ASM VEO. C
 Description: Comfortable FDM men's underwear for daily wear with soft and breathable fabric.
-Regular Price: 642
-Sale Price: 642
+Wholesale Price: 592
+Regular Price: 1150
+Sale Price: 918
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

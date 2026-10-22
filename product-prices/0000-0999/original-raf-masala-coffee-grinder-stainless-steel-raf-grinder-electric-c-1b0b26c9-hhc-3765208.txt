@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Original RAF Masala & Coffee Grinder | Stainless Steel RAF Grinder Electric | Coffee Grinder For Kitchen
 Product ID: hhc-3765208
 SKU: hhc-3765208
@@ -7,11 +8,16 @@ Slug: original-raf-masala-coffee-grinder-stainless-steel-raf-grinder-electric-1b
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/335c90cdcb8689bee8471bcbaf42ffeb.jpg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/335c90cdcb8689bee8471bcbaf42ffeb.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/ced0cee140820cfee7ed9f50a24eba3d.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/09/08/4a1083b81b426c1ff13a6e560ec6fc2e.jpg
 Meta Title: Original RAF Masala & Coffee Grinder | Stainless Steel RAF Grinder E
 Meta Description: Buy Original RAF Masala & Coffee Grinder | Stainless Steel RAF Grinder Electric | Coffee Grinder For Kitchen online in Pakistan from ASM VEO. Original RAF Masal
 Description: Original RAF Masala & Coffee Grinder with a durable stainless steel grinding cup. Powerful electric motor efficiently grinds coffee beans, spices, nuts, and dry ingredients for convenient everyday kitchen use.
-Regular Price: 1723
-Sale Price: 1723
+Wholesale Price: 1723
+Regular Price: 3130
+Sale Price: 2506
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

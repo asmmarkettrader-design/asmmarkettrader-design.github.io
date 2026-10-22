@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: 3 Piece Tree & Butterfly Wall Art – Wooden Sticky Tile Frames with Self-Adhesive Tape for Easy Home Decoration
 Product ID: hhc-3752291
 SKU: hhc-3752291
@@ -7,11 +8,16 @@ Slug: 3-piece-tree-butterfly-wall-art-wooden-sticky-tile-frames-with-self-adh-6c
 Category: Home & Kitchen
 Subcategory: Home Decor
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/75fc06cedf53001768e17bf9f904d58f.jpeg
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/75fc06cedf53001768e17bf9f904d58f.jpeg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/09/18/c506cd6e465ef1435606ada6e634e640.jpeg
 Meta Title: 3 Piece Tree & Butterfly Wall Art – Wooden Sticky Tile Frames with S
 Meta Description: Buy 3 Piece Tree & Butterfly Wall Art – Wooden Sticky Tile Frames with Self-Adhesive Tape for Easy Home Decoration online in Pakistan from ASM VEO. Bring elegan
 Description: Bring elegance to your space with this 3-piece Tree & Butterfly wall art set. Each wooden sticky tile frame comes with self-adhesive tape for easy wall mounting and lasting décor.
-Regular Price: 460
-Sale Price: 460
+Wholesale Price: 410
+Regular Price: 840
+Sale Price: 675
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

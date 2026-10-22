@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Hand Pressure Semi-Automatic Egg Beater Kitchen Accessories Tools Self Turning Cream Utensils Whisk Manual Mixer
 Product ID: hhc-3753370
 SKU: hhc-3753370
@@ -7,11 +8,16 @@ Slug: hand-pressure-semi-automatic-egg-beater-kitchen-accessories-tools-self-d26
 Category: Home & Kitchen
 Subcategory: Kitchen & Dining
 Brand: ASM VEO
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/68e7e5f19762487d3c773317653abf0a.mp4
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/68e7e5f19762487d3c773317653abf0a.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/ebf00d439822fd7cb612f0b362c0b267.mp4, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/a7a6ebef0d1297e71f23423d7e51690e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/426a0cf7a7eb780696c3036e6643df9d.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2025/11/08/2a0b948a50c8d1bee335d5e6ed10e7c2.jpeg
 Meta Title: Hand Pressure Semi-Automatic Egg Beater Kitchen Accessories Tools Se
 Meta Description: Buy Hand Pressure Semi-Automatic Egg Beater Kitchen Accessories Tools Self Turning Cream Utensils Whisk Manual Mixer online in Pakistan from ASM VEO. Hand Press
 Description: Hand Pressure Semi-Automatic Egg Beater Kitchen Accessories Tools Self Turning Cream Utensils Whisk Manual Mixer
-Regular Price: 313
-Sale Price: 313
+Wholesale Price: 263
+Regular Price: 604
+Sale Price: 454
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 

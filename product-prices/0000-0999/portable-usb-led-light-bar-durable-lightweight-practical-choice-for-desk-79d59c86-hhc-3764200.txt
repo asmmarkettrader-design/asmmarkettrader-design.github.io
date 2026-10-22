@@ -1,5 +1,6 @@
 # ASM VEO individual product control file — edit values after the colon.
 # Keep Product ID and Slug unchanged so the next build matches this product.
+# Set Manual Price Lock: true if you want your custom Sale Price to bypass automatic HHC margin rules.
 Product Name: Portable USB LED Light Bar Durable Lightweight Practical Choice For Desk Lighting Reading Night Use Easy Power With Any USB Port
 Product ID: hhc-3764200
 SKU: hhc-3764200
@@ -7,11 +8,16 @@ Slug: portable-usb-led-light-bar-durable-lightweight-practical-choice-for-des-79
 Category: Electronics
 Subcategory: Gadgets
 Brand: ASM VEO
-Meta Title: Portable USB LED Light Bar Durable Lightweight Practical Choice For
+Image: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/63d5d5049ef73020b44b1185f47a0b57.webp
+Images: https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/63d5d5049ef73020b44b1185f47a0b57.webp, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/0980967d7c7acf4ada47867587c178be.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/27/a8d869ce654042cbcb5050b7172f8a0e.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/c83bd8684a93d042eaa94dbd76c37cea.jpg, https://hhcnewapp.blr1.cdn.digitaloceanspaces.com/uploads/2026/08/22/5b2a92dc1088487570a52d74a432decb.jpg
+Meta Title: Portable USB LED Light Bar Durable Lightweight Practical Choice For 
 Meta Description: Buy Portable USB LED Light Bar Durable Lightweight Practical Choice For Desk Lighting Reading Night Use Easy Power With Any USB Port online in Pakistan from ASM
 Description: Portable USB LED Light Bar Durable Lightweight Practical Choice For Desk Lighting Reading Night Use Easy Power With Any USB Port.
-Regular Price: 248
-Sale Price: 248
+Wholesale Price: 198
+Regular Price: 507
+Sale Price: 357
+Manual Price Lock: false
 Stock Status: In Stock
+Out of Stock Reason: 
 Tags: 
 Attributes: 
