@@ -1283,13 +1283,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
                 <i class="fas fa-times text-xl" aria-hidden="true"></i>
             </button>
             <i class="fas fa-gift text-6xl text-[#087443] mb-4" aria-hidden="true"></i>
-            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Wait! Here's 10% OFF</h2>
-            <p class="text-gray-600 dark:text-gray-400 mb-6">Don't leave empty-handed. Use this code at checkout for an instant 10% discount on your order!</p>
-            <div class="bg-gray-50 border-2 border-dashed border-[#087443] rounded-xl py-4 mb-6">
-                <span class="text-3xl font-black text-[#087443] tracking-widest">ASM10</span>
-            </div>
-            <a href="/index.html#products" onclick="document.getElementById('exitModal').classList.add('hidden')" class="block bg-[#087443] text-white py-3 rounded-xl font-bold hover:bg-[#065C35] transition">
-                Continue Shopping
+            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-2">Looking for a Great Deal?</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">Ask our team about current promotions and confirm offer eligibility before placing your order. We do not apply unverified promo codes automatically at checkout.</p>
+            <a href="/contact.html" onclick="document.getElementById('exitModal').classList.add('hidden')" class="block bg-[#087443] text-white py-3 rounded-xl font-bold hover:bg-[#065C35] transition">
+                Check Current Offers
             </a>
         </div>
     </div>
@@ -3470,7 +3467,7 @@ def process_woocommerce_csv():
         "beauty & personal care": "Beauty & Personal Care", "beauty & cosmetics": "Beauty & Personal Care", "beauty": "Beauty & Personal Care", "health & beauty": "Beauty & Personal Care", "personal care": "Beauty & Personal Care",
         "home & kitchen": "Home & Kitchen", "home & living": "Home & Kitchen", "home": "Home & Kitchen", "baking and cooking": "Home & Kitchen", "kitchen & dining": "Home & Kitchen", "bedding & linen": "Home & Kitchen", "cleaning & organization": "Home & Kitchen", "home decor": "Home & Kitchen", "bathroom accessories": "Home & Kitchen", "furniture": "Home & Kitchen", "lighting": "Home & Kitchen",
         "kids & baby": "Games & Toys", "kids, baby & toys": "Games & Toys", "baby & kids accessories": "Games & Toys", "toys": "Games & Toys", "toys & games": "Games & Toys", "games & toys": "Games & Toys",
-        "books & stationery": "Learning & Education", "books": "Learning & Education", "stationery": "Learning & Education", "school supplies": "Learning & Education", "arts & crafts": "Learning & Education",
+        "books & stationery": "Learning & Education", "learning & education": "Learning & Education", "education": "Learning & Education", "books": "Learning & Education", "stationery": "Learning & Education", "school supplies": "Learning & Education", "arts & crafts": "Learning & Education",
         "health & fitness": "Health & Wellness", "health & wellness": "Health & Wellness", "health": "Health & Wellness", "sports & fitness": "Health & Wellness", "sports": "Health & Wellness", "medical supplies": "Health & Wellness",
         "automotive": "Automotive Parts", "car accessories": "Automotive Parts", "automotive parts": "Automotive Parts", "auto parts": "Automotive Parts",
     }
@@ -3510,12 +3507,15 @@ def process_woocommerce_csv():
         group = _asm_home_group(pp)
         if group not in _asm_grouped_products:
             continue
-        identity = (re.sub(r"\s+", " ", str(pp.get("name", "") or "").strip().lower()), round(float(pp.get("final_price") or 0), 2))
-        if not identity[0] or identity in _asm_seen_group_identity:
+        identity = re.sub(r"\s+", " ", str(pp.get("name", "") or "").strip().lower())
+        if not identity or identity in _asm_seen_group_identity:
             continue
         _asm_seen_group_identity.add(identity)
         _asm_grouped_products[group].append(pp)
-    fixed_home = [(name, pool) for name, pool in _asm_grouped_products.items() if pool]
+    fixed_home = [
+        (name, pool) for name, pool in _asm_grouped_products.items()
+        if len(pool) >= 6 and name != "Automotive Parts"
+    ]
     valid_home_cats = fixed_home
 
     valid_home_cats = [(cat, list(prods)) for cat, prods in valid_home_cats if len(prods) > 0]
@@ -3524,7 +3524,7 @@ def process_woocommerce_csv():
 
     all_categories_list = valid_home_cats
 
-    # ================= FINAL 8 MAIN CATEGORY ALIASES =================
+    # ================= PRIMARY CATEGORY LANDING PAGES =================
     # Use the single primary group assigned above; do not use broad title substring
     # matching here because it overwrites real category pages with unrelated products.
     for main_name, main_words in HOME_MAIN_CATEGORY_RULES:
@@ -3661,7 +3661,7 @@ def process_woocommerce_csv():
             """
             
             # Fixed seven main categories on the first homepage; all other categories remain inside Categories/next pages.
-            unique_top_cats = [name for name, _words in HOME_MAIN_CATEGORY_RULES]
+            unique_top_cats = [name for name, _words in HOME_MAIN_CATEGORY_RULES if name != "Automotive Parts"][:7]
 
             rule_map = {name: words for name, words in HOME_MAIN_CATEGORY_RULES}
             for cat in unique_top_cats:
@@ -3679,7 +3679,7 @@ def process_woocommerce_csv():
             home_html += "</div></div></div>"
 
             # ===== FLASH SALE: TRENDING PRODUCTS RS 500–1,500 =====
-            flash_candidates=[]; flash_seen=set()
+            flash_candidates=[]; flash_seen=set(); flash_seen_names=set()
             def flash_score(p):
                 try:
                     reg=float(p.get('regular_price') or 0); fin=float(p.get('final_price') or 0); disc=((reg-fin)/reg*100) if reg>fin>0 else 0
@@ -3687,9 +3687,15 @@ def process_woocommerce_csv():
                 fin=float(p.get('final_price') or 0)
                 return (1 if p.get('stock',True) is not False else 0, 1 if 700<=fin<=1300 else 0, round(disc,2), -fin)
             for p in products_list:
-                fin=float(p.get('final_price') or 0)
-                if 500<=fin<=1500 and p.get('image') and p.get('slug') and p.get('slug') not in flash_seen:
-                    flash_candidates.append(p); flash_seen.add(p.get('slug'))
+                base=float(p.get('final_price') or 0)
+                effective_flash_price=round(base*1.40+100)
+                name_key=re.sub(r"\s+", " ", str(p.get('name', '') or '').strip().lower())
+                slug_key=str(p.get('slug') or '').strip().lower()
+                if (500 <= effective_flash_price <= 1500 and p.get('image') and slug_key
+                        and name_key and slug_key not in flash_seen and name_key not in flash_seen_names):
+                    flash_candidates.append(p)
+                    flash_seen.add(slug_key)
+                    flash_seen_names.add(name_key)
             flash_candidates.sort(key=flash_score,reverse=True)
             flash_cards=[]
             for p in flash_candidates[:80]:
