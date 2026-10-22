@@ -3461,21 +3461,62 @@ def process_woocommerce_csv():
         ("Health & Wellness", ["health","wellness","medical","fitness","supplement","vitamin","exercise","gym","healthcare","massage","nebulizer","weight machine"]),
         ("Automotive Parts", ["automotive","automobile","car","cars","vehicle","bike","motorcycle","motorbike","auto","car accessory","car accessories","spare part","spare parts","tools"]),
     ]
-    fixed_home=[]
-    for cname,words in HOME_MAIN_CATEGORY_RULES:
-        pool=[]
-        for sc,sp in sections_dict.items():
-            if any(w in str(sc).lower() for w in words): pool.extend(sp)
-        if len(pool)<6:
-            for pp in products_list:
-                hay=(str(pp.get("name", "")) + " " + str(pp.get("category", "")) + " " + str(pp.get("subcategory", ""))).lower()
-                if any(w in hay for w in words) and pp not in pool: pool.append(pp)
-        ded=[];seen=set()
-        for pp in pool:
-            if pp.get("slug") not in seen and pp.get("image"):
-                ded.append(pp);seen.add(pp.get("slug"))
-        if ded: fixed_home.append((cname,ded))
-    valid_home_cats=fixed_home
+    # Assign every product to ONE primary homepage group. Do not classify the same
+    # product into multiple groups just because its title contains generic words.
+    _HOME_ROOT_GROUPS = {
+        "fashion": "Fashion", "men's fashion": "Fashion", "women's fashion": "Fashion", "fashion & apparel": "Fashion",
+        "backpacks & duffel bags": "Fashion", "bags & luggage": "Fashion", "footwear": "Fashion", "shoes & footwear": "Fashion", "jewelry": "Fashion", "jewellery": "Fashion", "fashion accessories": "Fashion",
+        "electronics": "Electronics", "electronic": "Electronics", "mobile accessories": "Electronics", "audio & entertainment": "Electronics", "cameras & photography": "Electronics", "computer accessories": "Electronics", "mobile phones": "Electronics", "electrical equipment": "Electronics",
+        "beauty & personal care": "Beauty & Personal Care", "beauty & cosmetics": "Beauty & Personal Care", "beauty": "Beauty & Personal Care", "health & beauty": "Beauty & Personal Care", "personal care": "Beauty & Personal Care",
+        "home & kitchen": "Home & Kitchen", "home & living": "Home & Kitchen", "home": "Home & Kitchen", "baking and cooking": "Home & Kitchen", "kitchen & dining": "Home & Kitchen", "bedding & linen": "Home & Kitchen", "cleaning & organization": "Home & Kitchen", "home decor": "Home & Kitchen", "bathroom accessories": "Home & Kitchen", "furniture": "Home & Kitchen", "lighting": "Home & Kitchen",
+        "kids & baby": "Games & Toys", "kids, baby & toys": "Games & Toys", "baby & kids accessories": "Games & Toys", "toys": "Games & Toys", "toys & games": "Games & Toys", "games & toys": "Games & Toys",
+        "books & stationery": "Learning & Education", "books": "Learning & Education", "stationery": "Learning & Education", "school supplies": "Learning & Education", "arts & crafts": "Learning & Education",
+        "health & fitness": "Health & Wellness", "health & wellness": "Health & Wellness", "health": "Health & Wellness", "sports & fitness": "Health & Wellness", "sports": "Health & Wellness", "medical supplies": "Health & Wellness",
+        "automotive": "Automotive Parts", "car accessories": "Automotive Parts", "automotive parts": "Automotive Parts", "auto parts": "Automotive Parts",
+    }
+    _HOME_FALLBACK_TERMS = [
+        ("Automotive Parts", ["motorcycle", "motorbike", "car accessory", "car accessories", "vehicle", "spare part", "spare parts", "automotive"]),
+        ("Electronics", ["electronic", "mobile phone", "smartphone", "laptop", "computer", "earbud", "headphone", "charger", "keyboard", "mouse", "camera", "speaker", "gadget"]),
+        ("Beauty & Personal Care", ["cosmetic", "makeup", "skincare", "skin care", "moisturizer", "serum", "shampoo", "perfume", "fragrance", "beauty"]),
+        ("Health & Wellness", ["health", "fitness", "wellness", "medical", "vitamin", "supplement", "exercise", "gym", "massage"]),
+        ("Learning & Education", ["stationery", "school", "book", "copybook", "pencil", "pen", "educational", "learning toy"]),
+        ("Games & Toys", ["toy", "toys", "puzzle", "doll", "board game", "kids game"]),
+        ("Home & Kitchen", ["kitchen", "cookware", "home decor", "wall decor", "cleaning", "storage", "curtain", "bedsheet", "utensil", "household"]),
+        ("Fashion", ["fashion", "clothing", "dress", "shirt", "trouser", "shoe", "shoes", "handbag", "wallet", "jewelry", "jewellery", "abaya", "kurta", "apparel"]),
+    ]
+    def _asm_home_group(product):
+        raw_cat = re.sub(r"\s+", " ", str(product.get("category", "") or "").strip().lower())
+        if raw_cat in _HOME_ROOT_GROUPS:
+            return _HOME_ROOT_GROUPS[raw_cat]
+        # Prefer a root/category match before using title-based fallback. This prevents
+        # e.g. an Electronics product named "portable iron" entering Home & Kitchen.
+        cat_context = " ".join(str(product.get(k, "") or "") for k in ("category", "subcategory", "childcategory")).lower()
+        for group, terms in _HOME_FALLBACK_TERMS:
+            if any(re.search(r"(?<![a-z0-9])" + re.escape(term) + r"(?![a-z0-9])", cat_context) for term in terms):
+                return group
+        if raw_cat and raw_cat not in {"other products", "uncategorized", "other"}:
+            return None
+        title_context = str(product.get("name", "") or "").lower()
+        for group, terms in _HOME_FALLBACK_TERMS:
+            if any(re.search(r"(?<![a-z0-9])" + re.escape(term) + r"(?![a-z0-9])", title_context) for term in terms):
+                return group
+        return None
+
+    _asm_grouped_products = {name: [] for name, _words in HOME_MAIN_CATEGORY_RULES}
+    _asm_seen_group_identity = set()
+    for pp in products_list:
+        if not pp.get("slug") or not pp.get("image"):
+            continue
+        group = _asm_home_group(pp)
+        if group not in _asm_grouped_products:
+            continue
+        identity = (re.sub(r"\s+", " ", str(pp.get("name", "") or "").strip().lower()), round(float(pp.get("final_price") or 0), 2))
+        if not identity[0] or identity in _asm_seen_group_identity:
+            continue
+        _asm_seen_group_identity.add(identity)
+        _asm_grouped_products[group].append(pp)
+    fixed_home = [(name, pool) for name, pool in _asm_grouped_products.items() if pool]
+    valid_home_cats = fixed_home
 
     valid_home_cats = [(cat, list(prods)) for cat, prods in valid_home_cats if len(prods) > 0]
     fixed_order={name:i for i,(name,_words) in enumerate(HOME_MAIN_CATEGORY_RULES)}
@@ -3484,11 +3525,16 @@ def process_woocommerce_csv():
     all_categories_list = valid_home_cats
 
     # ================= FINAL 8 MAIN CATEGORY ALIASES =================
+    # Use the single primary group assigned above; do not use broad title substring
+    # matching here because it overwrites real category pages with unrelated products.
     for main_name, main_words in HOME_MAIN_CATEGORY_RULES:
-        main_slug=category_slug(main_name); matched=[]; seen=set()
-        for p in products_list:
-            hay=' '.join([str(p.get('name','')),str(p.get('category','')),str(p.get('subcategory','')),str(p.get('childcategory',''))]).lower()
-            if any(w in hay for w in main_words) and p.get('slug') not in seen: matched.append(p); seen.add(p.get('slug'))
+        main_slug=category_slug(main_name); matched=[]; seen=set(); seen_names=set()
+        for p in _asm_grouped_products.get(main_name, []):
+            slug_key = str(p.get('slug') or '').strip().lower()
+            name_key = re.sub(r"\s+", " ", str(p.get('name', '') or '').strip().lower())
+            if not slug_key or not name_key or slug_key in seen or name_key in seen_names:
+                continue
+            matched.append(p); seen.add(slug_key); seen_names.add(name_key)
         if not matched: continue
         total=max(1,math.ceil(len(matched)/PRODUCTS_PER_PAGE))
         for pg in range(1,total+1):
@@ -3503,31 +3549,19 @@ def process_woocommerce_csv():
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page) if all_categories_list else 1
 
     def build_home_display_products(cat_name, prods, limit=6):
-        chosen, seen = [], set()
+        # Keep each category shelf relevant: no borrowing from other categories and
+        # never repeat a card merely to fill a visual row.
+        chosen, seen_slugs, seen_names = [], set(), set()
         for p in prods:
-            if p['slug'] not in seen:
-                chosen.append(p); seen.add(p['slug'])
-                if len(chosen) >= limit: return chosen
-
-        target_priority = get_cat_priority((cat_name, prods))
-        fallback_pool = []
-        for other_cat, other_prods in valid_home_cats:
-            if other_cat != cat_name and get_cat_priority((other_cat, other_prods)) == target_priority:
-                fallback_pool.extend(other_prods)
-        for other_cat, other_prods in valid_home_cats:
-            if other_cat != cat_name:
-                fallback_pool.extend(other_prods)
-
-        for p in fallback_pool:
-            if p['slug'] not in seen:
-                chosen.append(p); seen.add(p['slug'])
-                if len(chosen) >= limit: return chosen
-
-        # Absolute last resort: keep the six-card layout even for tiny categories.
-        if chosen:
-            i=0
-            while len(chosen)<limit:
-                chosen.append(chosen[i % len(chosen)]); i+=1
+            slug_key = str(p.get('slug') or '').strip().lower()
+            name_key = re.sub(r"\s+", " ", str(p.get('name', '') or '').strip().lower())
+            if not slug_key or not name_key or not p.get('image'):
+                continue
+            if slug_key in seen_slugs or name_key in seen_names:
+                continue
+            chosen.append(p); seen_slugs.add(slug_key); seen_names.add(name_key)
+            if len(chosen) >= limit:
+                break
         return chosen
 
     for h_page in range(1, total_home_pages + 1):
@@ -3537,7 +3571,12 @@ def process_woocommerce_csv():
         
         if h_page == 1:
             # ===== PAKISTAN-THEMED MAIN HERO BANNERS =====
-            def hero_products(words, count=3):
+            def hero_products(words, count=3, group_name=None):
+                # Prefer the primary assigned category. This avoids showing beauty
+                # products in fashion banners or electronics in home banners.
+                if group_name in _asm_grouped_products:
+                    return [pp for pp in _asm_grouped_products[group_name]
+                            if pp.get('image') and pp.get('slug')][:count]
                 pool=[]; seen=set()
                 for pp in products_list:
                     hay=' '.join([str(pp.get('name','')),str(pp.get('category','')),str(pp.get('subcategory','')),str(pp.get('childcategory',''))]).lower()
@@ -3553,7 +3592,7 @@ def process_woocommerce_csv():
             ]
             hero_slides=[]
             for hi,(title,kicker,sub,cat,words) in enumerate(hero_sets):
-                hprods=hero_products(words,3)
+                hprods=hero_products(words,3,cat)
                 if not hprods: hprods=[pp for pp in products_list if pp.get('image') and pp.get('slug')][:3]
                 product_visuals=[]
                 for pp in hprods:
@@ -3561,7 +3600,7 @@ def process_woocommerce_csv():
                     loading='eager' if hi==0 else 'lazy'
                     product_visuals.append(f'<a href="/product/{pp.get("slug")}.html" class="hero-product"><img src="{img}" alt="{nm}" loading="{loading}" decoding="async"><span>{nm}</span></a>')
                 flag='<span class="pk-flag"><i></i><b></b></span>'
-                cat_has_products=bool(hero_products(words,1))
+                cat_has_products=bool(hero_products(words,1,cat))
                 hero_href=f'/category/{category_slug(cat)}.html' if cat_has_products else '/categories.html'
                 hero_slides.append(f'''<div class="asm-hero-slide {"is-active" if hi==0 else ""}" aria-hidden="{"false" if hi==0 else "true"}">
                     <div class="hero-greenwash"></div><div class="hero-pattern"></div>
@@ -3665,10 +3704,10 @@ def process_woocommerce_csv():
             promo_cards=[]
             for title,sub,cat,img in promo_data:
                 words=[w.lower() for w in cat.split()] + [cat.lower()]
-                cands=hero_products(words,3)
+                cands=hero_products(words,3,cat)
                 if not cands: cands=[pp for pp in products_list if pp.get('image') and pp.get('slug')][:3]
                 mini=''.join(f'<a href="/product/{pp.get("slug")}.html" class="promo-product"><img src="{html_lib.escape(str(pp.get("image","")),quote=True)}" alt="{html_lib.escape(str(pp.get("name","")))}" loading="lazy"></a>' for pp in cands)
-                promo_href=f'/category/{category_slug(cat)}.html' if hero_products(words,1) else '/categories.html'
+                promo_href=f'/category/{category_slug(cat)}.html' if hero_products(words,1,cat) else '/categories.html'
                 promo_cards.append(f'<div class="promo-card"><img class="promo-bg" src="{img}" alt="{html_lib.escape(title)}" loading="lazy"><div class="promo-flag">PAKISTAN</div><div class="promo-product-row">{mini}</div><div class="promo-overlay"><span>{html_lib.escape(sub)}</span><h3>{html_lib.escape(title)}</h3><a href="{promo_href}">Shop Now <i class="fas fa-arrow-right"></i></a></div></div>')
             home_html += '<section class="container mx-auto px-4 py-8"><div class="promo-grid">'+''.join(promo_cards)+'</div></section><style>.promo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.promo-card{height:210px;border-radius:20px;overflow:hidden;position:relative;background:#0a4d31;border:1px solid #d7e8dd;box-shadow:0 8px 25px rgba(6,92,53,.09)}.promo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.88)}.promo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,48,30,.05),rgba(2,35,20,.88))}.promo-flag{position:absolute;z-index:3;top:10px;left:10px;background:#fff;color:#087443;font-size:8px;font-weight:950;padding:5px 8px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.14)}.promo-flag:before{content:"";display:inline-block;width:12px;height:8px;background:#087443;margin-right:4px;vertical-align:-1px;box-shadow:inset 3px 0 #fff}.promo-product-row{position:absolute;z-index:3;right:10px;top:10px;display:flex;gap:4px}.promo-product{width:38px;height:38px;border-radius:10px;background:#fff;padding:3px;box-shadow:0 3px 10px rgba(0,0,0,.18);display:block}.promo-product img{width:100%;height:100%;object-fit:contain;border-radius:7px}.promo-overlay{position:absolute;z-index:4;inset:auto 0 0;padding:46px 15px 13px;background:linear-gradient(transparent,rgba(2,35,20,.96));color:#fff}.promo-overlay span{font-size:9px;font-weight:800}.promo-overlay h3{font-size:20px;font-weight:950;margin:3px 0 8px}.promo-overlay a{display:inline-flex;gap:6px;background:#f4c542;color:#123c28;padding:7px 12px;border-radius:999px;font-size:10px;font-weight:950}@media(max-width:767px){.promo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.promo-card{height:165px;border-radius:15px}.promo-product-row{right:7px;top:7px}.promo-product{width:29px;height:29px}.promo-flag{top:7px;left:7px;font-size:7px;padding:4px 6px}.promo-overlay{padding:34px 9px 9px}.promo-overlay h3{font-size:14px}.promo-overlay span{font-size:7px}.promo-overlay a{font-size:8px;padding:6px 9px}}</style>'
             best_candidates=[]
@@ -3676,21 +3715,34 @@ def process_woocommerce_csv():
                 try: reg=float(p.get('regular_price') or 0); fin=float(p.get('final_price') or 0); disc=((reg-fin)/reg*100) if reg>fin>0 else 0
                 except Exception: disc=0
                 return (1 if p.get('stock',True) is not False else 0,round(disc,2),-float(p.get('final_price') or 0))
-            for cname,cwords in HOME_MAIN_CATEGORY_RULES:
-                pool=[];seen=set()
-                for p in products_list:
-                    hay=' '.join([str(p.get('name','')),str(p.get('category','')),str(p.get('subcategory','')),str(p.get('childcategory',''))]).lower()
-                    if any(w in hay for w in cwords) and p.get('image') and p.get('slug') and p.get('slug') not in seen: pool.append(p);seen.add(p.get('slug'))
+            # A product can enter exactly one category pool. Deduplicate by both slug
+            # and normalized title so repeated WooCommerce rows do not reappear.
+            for cname,_cwords in HOME_MAIN_CATEGORY_RULES:
+                pool=[];seen_slugs=set();seen_names=set()
+                for p in _asm_grouped_products.get(cname, []):
+                    slug_key=str(p.get('slug') or '').strip().lower()
+                    name_key=re.sub(r"\s+", " ", str(p.get('name','') or '').strip().lower())
+                    if not p.get('image') or not slug_key or not name_key or slug_key in seen_slugs or name_key in seen_names:
+                        continue
+                    pool.append(p);seen_slugs.add(slug_key);seen_names.add(name_key)
                 best_candidates.append((cname,sorted(pool,key=best_score,reverse=True)[:10]))
-            best_mix=[]
+            best_mix=[];global_best_slugs=set();global_best_names=set()
             for i in range(10):
                 for cname,pool in best_candidates:
-                    if i<len(pool): best_mix.append((cname,pool[i]))
+                    if i >= len(pool):
+                        continue
+                    p=pool[i]
+                    slug_key=str(p.get('slug') or '').strip().lower()
+                    name_key=re.sub(r"\s+", " ", str(p.get('name','') or '').strip().lower())
+                    if not slug_key or not name_key or slug_key in global_best_slugs or name_key in global_best_names:
+                        continue
+                    best_mix.append((cname,p));global_best_slugs.add(slug_key);global_best_names.add(name_key)
             best_cards=[]
             for cname,p in best_mix:
                 safe=html_lib.escape(str(p.get('name','')));img=html_lib.escape(str(p.get('image','')),quote=True);slug=p.get('slug','')
-                best_cards.append(f'<a href="/product/{slug}.html" class="best-item"><div class="best-image"><img src="{img}" alt="{safe}" loading="lazy"></div><span class="best-cat">{html_lib.escape(cname)}</span><span class="best-name">{safe}</span><strong>Rs {float(p.get("final_price") or 0):,.0f}</strong></a>')
-            home_html += '<section class="container mx-auto px-4 py-8"><div class="section-head"><div><p>TOP PICKS</p><h2>Best Sellers</h2></div><span>80 MIXED PRODUCTS</span></div><div class="best-viewport"><div class="best-track"><div class="best-group">'+''.join(best_cards)+'</div><div class="best-group" aria-hidden="true">'+''.join(best_cards)+'</div></div></div></section><style>.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}.section-head p{font-size:10px;letter-spacing:2px;font-weight:900;color:#087443;margin:0}.section-head h2{font-size:28px;font-weight:900;margin:2px 0 0;color:#101828}.section-head>span{font-size:9px;font-weight:900;color:#087443;border:1px solid #cfe1d5;border-radius:999px;padding:6px 9px}.best-viewport{overflow:hidden;width:100%}.best-track{display:flex;width:max-content;animation:asmBest 150s linear infinite;will-change:transform}.best-group{display:flex;gap:12px;padding-right:12px}.best-item{width:150px;min-width:150px;background:#fff;border:1px solid #e4eee8;border-radius:16px;padding:10px;text-decoration:none;color:#101828}.best-image{height:120px;border-radius:12px;background:#f7faf8;display:flex;align-items:center;justify-content:center;overflow:hidden}.best-image img{width:100%;height:100%;object-fit:contain;padding:7px}.best-cat{display:block;font-size:8px;font-weight:900;color:#087443;text-transform:uppercase;margin-top:8px}.best-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;line-height:14px;font-weight:700;height:28px;margin-top:3px}.best-item strong{display:block;color:#087443;font-size:13px;margin-top:6px}@keyframes asmBest{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}@media(max-width:767px){.section-head h2{font-size:22px}.best-item{width:120px;min-width:120px}.best-image{height:95px}.best-group{gap:9px}.best-track{animation-duration:120s}}@media(prefers-reduced-motion:reduce){.best-track{animation:none;overflow-x:auto}}</style>'
+                best_cards.append(f'<a href="/product/{slug}.html" class="best-item"><div class="best-image"><img src="{img}" alt="{safe}" loading="lazy" decoding="async"></div><span class="best-cat">{html_lib.escape(cname)}</span><span class="best-name">{safe}</span><strong>Rs {float(p.get("final_price") or 0):,.0f}</strong></a>')
+            best_count=len(best_mix)
+            home_html += f'<section class="container mx-auto px-4 py-8"><div class="section-head"><div><p>TOP PICKS</p><h2>Best Sellers</h2></div><span>{best_count} UNIQUE PRODUCTS</span></div><div class="best-viewport"><div class="best-track"><div class="best-group">'+''.join(best_cards)+'</div><div class="best-group" aria-hidden="true">'+''.join(best_cards)+'</div></div></div></section><style>.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}.section-head p{font-size:10px;letter-spacing:2px;font-weight:900;color:#087443;margin:0}.section-head h2{font-size:28px;font-weight:900;margin:2px 0 0;color:#101828}.section-head>span{font-size:9px;font-weight:900;color:#087443;border:1px solid #cfe1d5;border-radius:999px;padding:6px 9px}.best-viewport{overflow:hidden;width:100%}.best-track{display:flex;width:max-content;animation:asmBest 150s linear infinite;will-change:transform}.best-group{display:flex;gap:12px;padding-right:12px}.best-item{width:150px;min-width:150px;background:#fff;border:1px solid #e4eee8;border-radius:16px;padding:10px;text-decoration:none;color:#101828}.best-image{height:120px;border-radius:12px;background:#f7faf8;display:flex;align-items:center;justify-content:center;overflow:hidden}.best-image img{width:100%;height:100%;object-fit:contain;padding:7px}.best-cat{display:block;font-size:8px;font-weight:900;color:#087443;text-transform:uppercase;margin-top:8px}.best-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;line-height:14px;font-weight:700;height:28px;margin-top:3px}.best-item strong{display:block;color:#087443;font-size:13px;margin-top:6px}@keyframes asmBest{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}@media(max-width:767px){.section-head h2{font-size:22px}.best-item{width:120px;min-width:120px}.best-image{height:95px}.best-group{gap:9px}.best-track{animation-duration:120s}}@media(prefers-reduced-motion:reduce){.best-track{animation:none;overflow-x:auto}}</style>'
 
             home_html += """
             <div class="container mx-auto px-4 py-6">
