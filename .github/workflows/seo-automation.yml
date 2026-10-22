@@ -78,6 +78,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add product-prices/ product-prices.txt
+          if [ -f out-of-stock-products.txt ]; then git add out-of-stock-products.txt; fi
+          if [ -f out-of-stock-products.csv ]; then git add out-of-stock-products.csv; fi
 
           if git diff --cached --quiet; then
             echo "Product control files are unchanged; no repository commit needed."
