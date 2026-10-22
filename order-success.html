@@ -213,19 +213,9 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-M4J4YTPZPQ');
 </script><script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '123456789012345');
-fbq('track', 'PageView');
-</script><noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
-/></noscript><script>
+window.ASM_FREE_DELIVERY_THRESHOLD = 1500;
+window.ASM_FREE_DELIVERY_MIN_ITEMS = 3;
+</script><script>
 (function(w,d,s,r,n){
 w.TrustpilotObject=n;
 w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)};
@@ -463,8 +453,9 @@ document.getElementById('qvPrice').innerText = "Rs " + price;
 document.getElementById('qvDesc').innerText = desc.substring(0, 150) + '...';
 let safeName = name.replace(/'/g, "\\'");
 let safeImage = image.replace(/'/g, "\\'");
-document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event, slug); closeQuickView();`);
-document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event, slug);`);
+let safeSlug = String(slug || '').replace(/'/g, "\'");
+document.getElementById('qvAddCart').setAttribute('onclick', `addToCart('${safeName}', ${price}, '${safeImage}', event, '${safeSlug}'); closeQuickView();`);
+document.getElementById('qvBuyNow').setAttribute('onclick', `buyNow('${safeName}', ${price}, '${safeImage}', event, '${safeSlug}');`);
 document.getElementById('qvLink').href = '/product/' + slug + '.html';
 modal.classList.remove('hidden');
 modal.classList.add('flex');
@@ -514,8 +505,7 @@ window.addEventListener('scroll', checkReveals);
 checkReveals();
 let searchInput = document.getElementById('searchInput');
 if(searchInput) {
-loadSearchSuggestions();
-searchInput.addEventListener('focus', function() { loadSearchSuggestions(showSearchSuggestions); });
+searchInput.addEventListener('focus', function() { loadSearchSuggestions(showSearchSuggestions); }, {once: false});
 searchInput.addEventListener('input', function() { loadSearchSuggestions(showSearchSuggestions); });
 searchInput.addEventListener('blur', hideSearchSuggestions);
 }
@@ -529,7 +519,7 @@ menu.classList.add('hidden');
 }
 });
 };
-</script></head><body class="text-gray-900 dark:text-gray-100"><div class="asm-top-strip text-white text-[11px] py-2 hidden md:block"><div class="container mx-auto px-4 flex justify-between items-center"><div class="flex items-center gap-8 font-semibold"><span><i class="fas fa-truck mr-2"></i> Fast Delivery Across Pakistan</span><span><i class="fas fa-box mr-2"></i> Cash on Delivery Available</span><span><i class="fas fa-shield-halved mr-2"></i> Secure Shopping</span></div><div class="flex gap-4"><span>PKR</span><a href="/contact.html">Support</a></div></div></div><header class="asm-main-header sticky top-0 z-50"><div class="md:hidden bg-[#087443] text-white text-xs py-2"><div class="container mx-auto px-4 flex justify-between"><a href="/index.html" class="font-semibold"><i class="fas fa-home mr-1"></i> Home</a><button onclick="toggleMobileCats()" class="font-semibold"><i class="fas fa-list mr-1"></i> Categories</button></div></div><div id="mobileCatMenu" class="hidden md:hidden bg-white border-b border-gray-100"><div class="container mx-auto px-4 py-3 grid grid-cols-2 gap-2 max-h-64 overflow-y-auto"><a href="/category/audio-entertainment.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#087443] hover:text-white transition-colors">
+</script></head><body class="text-gray-900 dark:text-gray-100"><div class="asm-top-strip text-white text-[11px] py-2 hidden md:block"><div class="container mx-auto px-4 flex justify-between items-center"><div class="flex items-center gap-6 font-semibold"><span><i class="fas fa-truck-fast mr-1.5 text-[#F7B733]"></i> FREE Delivery on Orders Rs 1,500+ or Any 3 Products!</span><span><i class="fas fa-box mr-1.5"></i> Cash on Delivery Nationwide</span><span><i class="fas fa-rotate-left mr-1.5"></i> 7-Day Easy Returns</span></div><div class="flex gap-4"><a href="/flash-sale.html" class="text-[#F7B733] font-black hover:underline">⚡ Flash Sale (Pick 3 Free Delivery)</a><a href="/contact.html">Support</a></div></div></div><header class="asm-main-header sticky top-0 z-50"><div class="md:hidden bg-[#087443] text-white text-xs py-2"><div class="container mx-auto px-4 flex justify-between"><a href="/index.html" class="font-semibold"><i class="fas fa-home mr-1"></i> Home</a><button onclick="toggleMobileCats()" class="font-semibold"><i class="fas fa-list mr-1"></i> Categories</button></div></div><div id="mobileCatMenu" class="hidden md:hidden bg-white border-b border-gray-100"><div class="container mx-auto px-4 py-3 grid grid-cols-2 gap-2 max-h-64 overflow-y-auto"><a href="/category/audio-entertainment.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#087443] hover:text-white transition-colors">
 Audio & Entertainment
 </a><a href="/category/automotive.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#087443] hover:text-white transition-colors">
 Automotive
@@ -577,7 +567,7 @@ Cameras & Photography
 Chemicals & Raw Materials
 </a><a href="/category/cleaning-organization.html" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#087443] hover:text-white transition-colors">
 Cleaning & Organization
-</a></div></div><a href="/index.html" class="h-full px-4 flex items-center text-sm font-bold">Home</a><a href="/categories.html" class="h-full px-4 flex items-center text-sm font-bold">Categories</a><a href="/index.html#products" class="h-full px-4 flex items-center text-sm font-bold">Shop</a><a href="/blog.html" class="h-full px-4 flex items-center text-sm font-bold">Blogs</a><a href="/contact.html" class="h-full px-4 flex items-center text-sm font-bold">Contact</a><div class="ml-auto h-full flex items-center px-4 text-xs font-bold bg-white/10">🇵🇰 Pakistan</div></div></nav></header><div id="compareBar" class="compare-bar hidden fixed bottom-0 left-0 right-0 z-[70] bg-gray-950 text-white shadow-2xl border-t border-gray-800"><div class="container mx-auto px-4 py-3 flex flex-wrap items-center gap-3"><div class="font-black text-sm flex items-center gap-2"><i class="fas fa-code-compare text-[#087443]"></i> Compare <span class="compare-count bg-[#087443] rounded-full px-2 py-0.5 text-xs">0</span></div><div id="compareChips" class="flex-1 flex flex-wrap gap-2"></div><a href="/compare.html" class="bg-[#087443] text-white px-4 py-2 rounded-lg font-bold text-xs">Compare Now</a><button onclick="clearCompare()" class="text-gray-300 hover:text-white text-xs font-bold px-2 py-2">Clear</button></div></div><nav class="asm-mobile-nav fixed bottom-0 left-0 right-0 bg-white flex justify-around py-2 md:hidden z-50"><a href="/index.html" class="flex flex-col items-center text-[#087443] text-xs font-bold"><i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home
+</a></div></div><a href="/index.html" class="h-full px-4 flex items-center text-sm font-bold">Home</a><a href="/categories.html" class="h-full px-4 flex items-center text-sm font-bold">Categories</a><a href="/flash-sale.html" class="h-full px-4 flex items-center text-sm font-bold text-[#F7B733]">⚡ Pick 3 Free Delivery</a><a href="/category/free-delivery-deals.html" class="h-full px-4 flex items-center text-sm font-bold">🚚 Free Delivery (Rs 1500+)</a><a href="/category/trending-deals.html" class="h-full px-4 flex items-center text-sm font-bold">🔥 Trending</a><a href="/blog.html" class="h-full px-4 flex items-center text-sm font-bold">Guides</a><a href="/contact.html" class="h-full px-4 flex items-center text-sm font-bold">Contact</a><div class="ml-auto h-full flex items-center px-4 text-xs font-bold bg-white/10">🇵🇰 Pakistan</div></div></nav></header><div id="compareBar" class="compare-bar hidden fixed bottom-0 left-0 right-0 z-[70] bg-gray-950 text-white shadow-2xl border-t border-gray-800"><div class="container mx-auto px-4 py-3 flex flex-wrap items-center gap-3"><div class="font-black text-sm flex items-center gap-2"><i class="fas fa-code-compare text-[#087443]"></i> Compare <span class="compare-count bg-[#087443] rounded-full px-2 py-0.5 text-xs">0</span></div><div id="compareChips" class="flex-1 flex flex-wrap gap-2"></div><a href="/compare.html" class="bg-[#087443] text-white px-4 py-2 rounded-lg font-bold text-xs">Compare Now</a><button onclick="clearCompare()" class="text-gray-300 hover:text-white text-xs font-bold px-2 py-2">Clear</button></div></div><nav class="asm-mobile-nav fixed bottom-0 left-0 right-0 bg-white flex justify-around py-2 md:hidden z-50"><a href="/index.html" class="flex flex-col items-center text-[#087443] text-xs font-bold"><i class="fas fa-home text-lg mb-1" aria-hidden="true"></i> Home
 </a><button onclick="toggleMobileCats()" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold" aria-label="Open Categories"><i class="fas fa-th-large text-lg mb-1" aria-hidden="true"></i> Categories
 </button><a href="/checkout.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative"><i class="fas fa-shopping-cart text-lg mb-1" aria-hidden="true"></i> Cart
 <span class="cart-badge absolute -top-1 right-2 bg-[#087443] text-white text-[8px] font-black px-1 py-0.5 rounded-full">0</span></a><a href="/wishlist.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 text-xs font-bold relative"><i class="fas fa-heart text-lg mb-1" aria-hidden="true"></i> Wishlist
@@ -593,7 +583,13 @@ class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full sh
 aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i></a><button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#087443] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#065C35] transition z-50" aria-label="Back to top"><i class="fas fa-arrow-up text-xl" aria-hidden="true"></i></button><main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl"><div class="container mx-auto px-4 py-12 flex justify-center"><div class="max-w-3xl w-full bg-white dark:bg-gray-800 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-gray-700 reveal active"><div class="bg-gradient-to-r from-green-500 to-emerald-600 p-8 text-center text-white relative"><div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-lg animate-bounce"><i class="fas fa-check text-4xl text-green-500" aria-hidden="true"></i></div><h1 class="text-3xl md:text-4xl font-extrabold mb-2">Order Confirmed!</h1><p class="text-green-100 font-semibold text-lg">Thank you for shopping with ASM VEO.</p></div><div class="p-8"><div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 mb-8 text-center border border-gray-200 dark:border-gray-600"><p class="text-xs text-gray-500 dark:text-gray-400 mb-1 uppercase tracking-widest font-bold">Your Order ID</p><p id="orderId" class="text-3xl font-black text-[#087443] tracking-wider"></p></div><div class="flex items-center justify-between mb-10 relative px-2 md:px-8"><div class="absolute left-6 right-6 top-1/2 transform -translate-y-1/2 h-1 bg-gray-200 dark:bg-gray-600 z-0"></div><div class="absolute left-6 top-1/2 transform -translate-y-1/2 w-1/3 h-1 bg-green-500 z-0"></div><div class="relative z-10 flex flex-col items-center"><div class="w-10 h-10 md:w-12 md:h-12 bg-green-500 text-white rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div><span class="text-[10px] md:text-xs font-bold mt-2 text-gray-800 dark:text-gray-200">Placed</span></div><div class="relative z-10 flex flex-col items-center"><div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 dark:bg-gray-600 text-gray-400 rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-box" aria-hidden="true"></i></div><span class="text-[10px] md:text-xs font-bold mt-2 text-gray-500 dark:text-gray-400">Processing</span></div><div class="relative z-10 flex flex-col items-center"><div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 dark:bg-gray-600 text-gray-400 rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-truck" aria-hidden="true"></i></div><span class="text-[10px] md:text-xs font-bold mt-2 text-gray-500 dark:text-gray-400">Shipped</span></div><div class="relative z-10 flex flex-col items-center"><div class="w-10 h-10 md:w-12 md:h-12 bg-gray-200 dark:bg-gray-600 text-gray-400 rounded-full flex items-center justify-center font-bold shadow-md"><i class="fas fa-home" aria-hidden="true"></i></div><span class="text-[10px] md:text-xs font-bold mt-2 text-gray-500 dark:text-gray-400">Delivered</span></div></div><div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="/index.html#products" class="bg-[#087443] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#065C35] transition-all shadow-md text-center flex-1 sm:flex-none"><i class="fas fa-shopping-bag mr-2" aria-hidden="true"></i> Continue Shopping
 </a><a href="https://wa.me/923425478683" target="_blank" class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white px-8 py-3.5 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all shadow-sm border border-gray-200 dark:border-gray-600 text-center flex-1 sm:flex-none"><i class="fab fa-whatsapp text-green-500 text-lg mr-2" aria-hidden="true"></i> Support
 </a></div></div><div class="bg-blue-50 dark:bg-blue-900/30 p-6 border-t border-blue-100 dark:border-blue-800 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="w-10 h-10"><div><h4 class="font-bold text-gray-900 dark:text-white text-sm">Google Customer Reviews</h4><p class="text-xs text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">A Google survey prompt will appear shortly. Please opt-in to rate your experience with ASM VEO once your order arrives!</p></div></div></div></div><script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script><script>
-let oId = 'ASM-' + Math.floor(100000 + Math.random() * 900000);
+const urlOrder = new URLSearchParams(window.location.search).get('order');
+let savedLastId = '';
+try {
+const savedOrders = JSON.parse(localStorage.getItem('asm_orders') || '[]');
+if (savedOrders.length && savedOrders[0].orderId) savedLastId = savedOrders[0].orderId;
+} catch(e) {}
+let oId = urlOrder || savedLastId || ('ASM-' + Math.floor(100000 + Math.random() * 900000));
 document.getElementById('orderId').innerText = oId;
 localStorage.removeItem('asm_cart');
 if(typeof updateCartBadge === 'function') updateCartBadge();
