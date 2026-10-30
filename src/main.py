@@ -2177,14 +2177,16 @@ def generate_product_card(prod, lazy=True, show_wishlist=True):
             <img src="{primary_img}" data-fallbacks="{fallback_imgs}" alt="{alt_name}" width="280" height="280" {img_loading} class="w-full h-full object-contain p-1.5" onerror="asmImgError(this)">
         </div>
         <div class="p-2.5 flex flex-col flex-grow">
-            <span class="text-[9px] font-bold text-[#087443] dark:text-emerald-300 uppercase tracking-wider mb-0.5 line-clamp-1">{prod['category']}</span>
+            <div class="flex items-center justify-between gap-1 mb-0.5">
+                <span class="text-[9px] font-bold text-[#087443] dark:text-emerald-300 uppercase tracking-wider truncate">{prod['category']}</span>
+                <span class="text-[8px] font-black whitespace-nowrap flex-shrink-0 {('text-green-700 bg-green-50 px-1.5 py-0.5 rounded' if is_in_stock else 'text-red-600 bg-red-50 px-1.5 py-0.5 rounded')}">{('In Stock' if is_in_stock else 'Out of Stock')}</span>
+            </div>
             <h3 class="text-[11px] md:text-xs font-bold text-gray-900 dark:text-gray-100 leading-snug mb-1 line-clamp-2">{prod['name']}</h3>
             {offer_badge}
             <div class="mt-auto">
-                <div class="flex items-center justify-between gap-1.5 mb-2">
-                    <span class="text-xs md:text-sm font-black text-[#087443] dark:text-white">Rs {prod['final_price']:g}</span>
-                    <span class="text-[8px] font-black {('text-green-700' if is_in_stock else 'text-red-600')}">{('In Stock' if is_in_stock else 'Out of Stock')}</span>
-                    <span class="text-[9px] text-gray-400 font-bold line-through">Rs {prod['regular_price']:g}</span>
+                <div class="flex items-baseline justify-between gap-1.5 mb-2">
+                    <span class="text-xs md:text-sm font-black text-[#087443] dark:text-white whitespace-nowrap">Rs {prod['final_price']:g}</span>
+                    <span class="text-[10px] text-gray-400 font-bold line-through whitespace-nowrap">Rs {prod['regular_price']:g}</span>
                 </div>
                 {action_btn}
             </div>
@@ -2329,19 +2331,92 @@ def category_slug(value, max_length=70):
     return f"{base[:max_length-9].rstrip('-')}-{digest}"
 
 def build_subcategory_sliders(cat_name, prods, cat_subs):
-    if not cat_subs: return ''
-    sub_visuals={'Perfume & Fragrance':'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=85','Hair Accessories':'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=300&q=85','Formal Shoes':'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=85','Skin Care':'https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=300&q=85'}
-    pills=[];sections=[]
+    if not cat_subs:
+        return ''
+    sub_visuals = {
+        'Perfume & Fragrance': 'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=85',
+        'Hair Accessories': 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=300&q=85',
+        'Formal Shoes': 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=85',
+        'Skin Care': 'https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=300&q=85'
+    }
+    pills = []
+    sections = []
+    root_s = category_slug(cat_name, 50)
     for sub in cat_subs:
-        sp=[p for p in prods if p.get('subcategory')==sub]
-        if not sp: continue
-        root_s=category_slug(cat_name, 50); slug=category_slug(sub, 50)
+        all_sp = [p for p in prods if p.get('subcategory') == sub]
+        if not all_sp:
+            continue
+        in_stock_sp = [p for p in all_sp if p.get('stock', True) is not False]
+        sp = in_stock_sp if in_stock_sp else all_sp
+        total_sub_count = len(all_sp)
+        slug = category_slug(sub, 50)
+        sub_url = f"/category/{root_s}/{slug}/"
         first_prod_img = next((p.get('image') for p in sp if p.get('image')), None)
         img = first_prod_img or sub_visuals.get(sub, '/icon.png')
-        pills.append(f'<a href="/category/{root_s}/{slug}/" class="subcat-pill"><span class="subcat-circle"><img src="{html_lib.escape(img, quote=True)}" alt="{html_lib.escape(sub)}" loading="lazy" onerror="this.onerror=null;this.src=\'/icon.png\';"></span><span class="subcat-pill-title">{html_lib.escape(sub)}</span><span class="subcat-pill-viewall">View All ({len(sp)}) →</span></a>')
-        cards=''.join(generate_product_card(p,lazy=True) for p in sp[:18])
-        sections.append(f'<section class="subcat-product-section"><div class="subcat-section-header"><div><span class="subcat-eyebrow">{html_lib.escape(cat_name)} Subcategory</span><h2>{html_lib.escape(sub)} <span>({len(sp)} Products)</span></h2></div><a href="/category/{root_s}/{slug}/" class="subcat-view-all-btn">View All {html_lib.escape(sub)} <i class="fas fa-arrow-right"></i></a></div><div class="subcat-product-viewport"><div class="subcat-product-track">{cards}</div></div></section>')
-    return '<div class="subcat-strip-wrap"><div class="subcat-strip-head"><span>Browse Subcategories</span><span>Click any subcategory to View All</span></div><div class="subcat-image-strip">'+''.join(pills)+'</div></div>'+''.join(sections)+'<style>.subcat-strip-wrap{background:#fff;border:1px solid #dcebe2;border-radius:18px;padding:14px 16px;margin-bottom:22px;box-shadow:0 4px 14px rgba(6,92,53,.04)}.subcat-strip-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:12px;font-weight:900;color:#087443;text-transform:uppercase;letter-spacing:.06em}.subcat-image-strip{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 8px}.subcat-pill{min-width:128px;max-width:145px;background:#f7fbf8;border:1px solid #d9eadf;border-radius:14px;padding:10px 8px;display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:#15251d;transition:all .2s ease}.subcat-pill:hover{border-color:#087443;background:#eaf7f0;transform:translateY(-2px)}.subcat-circle{width:64px;height:64px;border-radius:50%;overflow:hidden;border:2px solid #087443;background:#fff;display:flex;align-items:center;justify-content:center}.subcat-circle img{width:100%;height:100%;object-fit:contain;padding:4px}.subcat-pill-title{font-size:11px;font-weight:800;text-align:center;line-height:1.25;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.subcat-pill-viewall{font-size:10px;font-weight:900;color:#fff;background:#087443;padding:3px 9px;border-radius:999px;white-space:nowrap}.subcat-product-section{margin:0 0 28px;overflow:hidden;background:#fff;border:1px solid #e3ece6;border-radius:18px;padding:16px}.subcat-section-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #edf3ef}.subcat-eyebrow{display:block;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:#087443;margin-bottom:2px}.subcat-product-section h2{font-size:19px;font-weight:900;color:#101828;margin:0}.subcat-product-section h2 span{font-size:12px;color:#087443;font-weight:800}.subcat-view-all-btn{display:inline-flex;align-items:center;gap:6px;background:#087443;color:#fff!important;font-size:12px;font-weight:900;padding:8px 16px;border-radius:999px;box-shadow:0 4px 12px rgba(8,116,67,.18);transition:all .2s ease;white-space:nowrap}.subcat-view-all-btn:hover{background:#065c35;transform:translateY(-1px)}.subcat-product-viewport{overflow:hidden;width:100%}.subcat-product-track{display:flex;gap:12px;width:max-content;animation:asmSubcat 42s linear infinite}.subcat-product-track .product-card{width:185px;min-width:185px}.subcat-product-track .product-card .image-zoom{height:165px}.subcat-product-track:hover{animation-play-state:paused}@keyframes asmSubcat{from{transform:translate3d(0,0,0)}to{transform:translate3d(-45%,0,0)}}@media(max-width:767px){.subcat-product-track .product-card{width:150px;min-width:150px}.subcat-product-track .product-card .image-zoom{height:135px}.subcat-view-all-btn{font-size:11px;padding:6px 12px}}</style>'
+        pills.append(
+            f'<a href="{sub_url}" class="subcat-pill">'
+            f'<span class="subcat-circle"><img src="{html_lib.escape(img, quote=True)}" alt="{html_lib.escape(sub)}" loading="lazy" onerror="this.onerror=null;this.src=\'/icon.png\';"></span>'
+            f'<span class="subcat-pill-title">{html_lib.escape(sub)}</span>'
+            f'<span class="subcat-pill-viewall">View All ({total_sub_count}) →</span>'
+            f'</a>'
+        )
+        # Rule requested by user: ONLY slide/drag when a subcategory has MORE THAN 8 products!
+        # If 8 or fewer products, render a static non-sliding grid so 1-8 items never slide or get cut off.
+        is_sliding = len(sp) > 8
+        display_slice = sp[:18] if is_sliding else sp[:8]
+        cards = ''.join(generate_product_card(p, lazy=True) for p in display_slice)
+        if is_sliding:
+            body_html = f'<div class="subcat-product-viewport"><div class="subcat-product-track is-sliding">{cards}</div></div>'
+        else:
+            body_html = f'<div class="subcat-static-grid">{cards}</div>'
+        sections.append(
+            f'<section class="subcat-product-section">'
+            f'<div class="subcat-section-header">'
+            f'<div class="subcat-title-group">'
+            f'<h2>{html_lib.escape(sub)} <span class="subcat-count">({total_sub_count})</span></h2>'
+            f'<a href="{sub_url}" class="subcat-inline-viewall">View All <i class="fas fa-arrow-right"></i></a>'
+            f'</div>'
+            f'<a href="{sub_url}" class="subcat-view-all-btn">View All {html_lib.escape(sub)} ({total_sub_count}) <i class="fas fa-arrow-right"></i></a>'
+            f'</div>'
+            f'{body_html}'
+            f'</section>'
+        )
+    return (
+        '<div class="subcat-strip-wrap">'
+        '<div class="subcat-strip-head"><span><i class="fas fa-layer-group mr-1"></i> Subcategories in ' + html_lib.escape(cat_name) + '</span><span>Click any Subcategory to View All</span></div>'
+        '<div class="subcat-image-strip">' + ''.join(pills) + '</div>'
+        '</div>'
+        + ''.join(sections)
+        + '<style>'
+        '.subcat-strip-wrap{background:#fff;border:1px solid #dcebe2;border-radius:18px;padding:14px 16px;margin-bottom:22px;box-shadow:0 4px 14px rgba(6,92,53,.04);max-width:100%;overflow:hidden}'
+        '.subcat-strip-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px;font-size:12px;font-weight:900;color:#087443;text-transform:uppercase;letter-spacing:.05em}'
+        '.subcat-image-strip{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 8px;max-width:100%}'
+        '.subcat-pill{min-width:126px;max-width:145px;flex:0 0 auto;background:#f7fbf8;border:1px solid #d9eadf;border-radius:14px;padding:10px 8px;display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:#15251d;transition:all .2s ease}'
+        '.subcat-pill:hover{border-color:#087443;background:#eaf7f0;transform:translateY(-2px)}'
+        '.subcat-circle{width:62px;height:62px;border-radius:50%;overflow:hidden;border:2px solid #087443;background:#fff;display:flex;align-items:center;justify-content:center}'
+        '.subcat-circle img{width:100%;height:100%;object-fit:contain;padding:4px}'
+        '.subcat-pill-title{font-size:11px;font-weight:800;text-align:center;line-height:1.25;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}'
+        '.subcat-pill-viewall{font-size:10px;font-weight:900;color:#fff;background:#087443;padding:3px 10px;border-radius:999px;white-space:nowrap}'
+        '.subcat-product-section{margin:0 0 26px;overflow:hidden;background:#fff;border:1px solid #e3ece6;border-radius:18px;padding:16px;max-width:100%}'
+        '.subcat-section-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #edf3ef;width:100%}'
+        '.subcat-title-group{display:flex;flex-wrap:wrap;align-items:center;gap:10px;min-width:0}'
+        '.subcat-product-section h2{font-size:19px;font-weight:900;color:#101828;margin:0;display:flex;align-items:center;gap:6px}'
+        '.subcat-product-section h2 .subcat-count{font-size:13px;color:#087443;font-weight:800}'
+        '.subcat-inline-viewall{display:inline-flex;align-items:center;gap:5px;background:#eaf7f0;color:#087443!important;border:1.5px solid #087443;font-size:11px;font-weight:900;padding:4px 12px;border-radius:999px;text-decoration:none;white-space:nowrap;transition:all .2s ease}'
+        '.subcat-inline-viewall:hover{background:#087443;color:#fff!important}'
+        '.subcat-view-all-btn{display:inline-flex;align-items:center;gap:6px;background:#087443;color:#fff!important;font-size:12px;font-weight:900;padding:7px 15px;border-radius:999px;box-shadow:0 4px 12px rgba(8,116,67,.18);transition:all .2s ease;white-space:nowrap;text-decoration:none}'
+        '.subcat-view-all-btn:hover{background:#065c35;transform:translateY(-1px)}'
+        '.subcat-static-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;width:100%}'
+        '.subcat-product-viewport{overflow-x:auto;overflow-y:hidden;width:100%;padding-bottom:4px}'
+        '.subcat-product-track.is-sliding{display:flex;gap:12px;width:max-content;animation:asmSubcat 45s linear infinite}'
+        '.subcat-product-track.is-sliding .product-card{width:190px;min-width:190px}'
+        '.subcat-product-track.is-sliding .product-card .image-zoom{height:170px}'
+        '.subcat-product-track.is-sliding:hover{animation-play-state:paused}'
+        '@keyframes asmSubcat{from{transform:translate3d(0,0,0)}to{transform:translate3d(-45%,0,0)}}'
+        '@media(max-width:1100px){.subcat-static-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}'
+        '@media(max-width:767px){.subcat-static-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.subcat-product-track.is-sliding .product-card{width:155px;min-width:155px}.subcat-product-track.is-sliding .product-card .image-zoom{height:140px}.subcat-view-all-btn{font-size:11px;padding:6px 12px}}'
+        '</style>'
+    )
 
 def directory_pagination_html(current_page, total_pages, base_path):
     if total_pages <= 1:
@@ -3956,7 +4031,8 @@ def process_woocommerce_csv():
             merged.sort(key=lambda x: (0 if x.get("stock", True) is not False else 1))
             sections_dict[main_name] = merged
 
-    # Build Comprehensive Best Sellers Collection (2,000+ Products) + Upsell Collections
+    # Build Best Sellers Collection: Strictly High-Value Products Priced >= Rs 2,500 (as requested by user)
+    BEST_SELLER_MIN_PRICE = float(os.environ.get("BEST_SELLER_MIN_PRICE", "2500"))
     def _global_best_seller_score(p):
         try:
             reg = float(p.get("regular_price") or 0)
@@ -3966,12 +4042,14 @@ def process_woocommerce_csv():
             disc = 0
             fin = 0
         has_sub = 1 if (p.get("subcategory") and p.get("subcategory") != "Other") else 0
-        return (1 if p.get("stock", True) is not False else 0, has_sub, round(disc, 1), -abs(fin - 1800))
+        return (1 if p.get("stock", True) is not False else 0, 1 if fin >= BEST_SELLER_MIN_PRICE else 0, has_sub, round(disc, 1), fin)
 
     best_sellers_all = []
     seen_bs_names = set()
     for p in sorted(products_list, key=_global_best_seller_score, reverse=True):
         if p.get("stock", True) is False or not p.get("image") or not p.get("slug"):
+            continue
+        if float(p.get("final_price") or 0) < BEST_SELLER_MIN_PRICE:
             continue
         nk = re.sub(r"\s+", " ", str(p.get("name") or "").strip().lower())
         if not nk or nk in seen_bs_names:
@@ -3980,6 +4058,18 @@ def process_woocommerce_csv():
         best_sellers_all.append(p)
         if len(best_sellers_all) >= 3500:
             break
+    # Fallback only if the entire catalog has fewer than 12 products >= Rs 2,500
+    if len(best_sellers_all) < 12:
+        for p in sorted(products_list, key=lambda x: float(x.get("final_price") or 0), reverse=True):
+            if p.get("stock", True) is False or not p.get("image") or not p.get("slug"):
+                continue
+            nk = re.sub(r"\s+", " ", str(p.get("name") or "").strip().lower())
+            if not nk or nk in seen_bs_names:
+                continue
+            seen_bs_names.add(nk)
+            best_sellers_all.append(p)
+            if len(best_sellers_all) >= 24:
+                break
 
     free_delivery_prods = [p for p in products_list if float(p.get("final_price") or 0) >= 1500 and p.get("stock", True) is not False]
     under_1500_prods = [p for p in products_list if 0 < float(p.get("final_price") or 0) <= 1500 and p.get("stock", True) is not False]
@@ -4018,15 +4108,17 @@ def process_woocommerce_csv():
         } for p in prods], ensure_ascii=False, separators=(",", ":"))
         Path(cat_json_path).write_text(f"window.categoryProductsData = {all_prods_json};", encoding="utf-8")
 
+        in_stock_cat_prods = [p for p in prods if p.get('stock', True) is not False]
+        display_cat_pool = in_stock_cat_prods if in_stock_cat_prods else prods
         prods_per_page = PRODUCTS_PER_PAGE
-        total_pages = max(1, math.ceil(len(prods) / prods_per_page))
-        min_price = min(p['final_price'] for p in prods)
-        max_price = max(p['final_price'] for p in prods)
+        total_pages = max(1, math.ceil(len(display_cat_pool) / prods_per_page))
+        min_price = min(p['final_price'] for p in display_cat_pool)
+        max_price = max(p['final_price'] for p in display_cat_pool)
         
         for page_num in range(1, total_pages + 1):
             start_idx = (page_num - 1) * prods_per_page
             end_idx = start_idx + prods_per_page
-            current_prods = prods[start_idx:end_idx]
+            current_prods = display_cat_pool[start_idx:end_idx]
             
             file_slug = cat_slug if page_num == 1 else f"{cat_slug}-{page_num}"
             page_title = f"Buy {cat_name} Online in Pakistan | ASM VEO" if page_num == 1 else f"{cat_name} - Page {page_num} | ASM VEO"
@@ -4114,7 +4206,7 @@ def process_woocommerce_csv():
                         </div>
                     </aside>
                     
-                    <div class="flex-1">
+                    <div class="flex-1 min-w-0 overflow-hidden">
                         {build_subcategory_sliders(cat_name, prods, cat_subs) if page_num == 1 else ''}
                         <div id="productGrid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2.5 md:gap-4">
             """
@@ -4193,13 +4285,16 @@ def process_woocommerce_csv():
                             <img src="${{p.image}}" alt="${{htmlSafeName}}" width="250" height="250" loading="lazy" decoding="async" class="w-full h-full object-contain p-2" onerror="this.onerror=null;this.src='/assets/product-placeholder.svg';">
                         </div>
                         <div class="p-3 flex flex-col flex-grow">
-                            <span class="text-[10px] font-bold text-[#087443] uppercase tracking-wider mb-1 line-clamp-1">${{p.category}}</span>
-                            <h3 class="text-xs md:text-sm font-bold text-gray-900 dark:text-white leading-tight mb-1.5 line-clamp-2">${{htmlSafeName}}</h3>
+                            <div class="flex items-center justify-between gap-1 mb-0.5">
+                                <span class="text-[9px] font-bold text-[#087443] uppercase tracking-wider truncate">${{p.category}}</span>
+                                <span class="text-[8px] font-black whitespace-nowrap ${{p.stock!==false?'text-green-700 bg-green-50':'text-red-600 bg-red-50'}} px-1.5 py-0.5 rounded">${{p.stock!==false?'In Stock':'Out of Stock'}}</span>
+                            </div>
+                            <h3 class="text-[11px] md:text-xs font-bold text-gray-900 dark:text-white leading-snug mb-1 line-clamp-2">${{htmlSafeName}}</h3>
                             ${{freeBadge}}
                             <div class="mt-auto">
-                                <div class="flex items-center justify-between gap-2 mb-2">
-                                    <span class="text-sm md:text-base font-black text-[#087443] dark:text-white">Rs ${{p.final_price}}</span>
-                                    <span class="text-[10px] text-gray-400 line-through">Rs ${{p.regular_price}}</span>
+                                <div class="flex items-baseline justify-between gap-1.5 mb-2">
+                                    <span class="text-xs md:text-sm font-black text-[#087443] dark:text-white whitespace-nowrap">Rs ${{p.final_price}}</span>
+                                    <span class="text-[10px] text-gray-400 font-bold line-through whitespace-nowrap">Rs ${{p.regular_price}}</span>
                                 </div>
                                 <button onclick="addToCart('${{jsSafeName}}', ${{p.final_price}}, '${{p.image}}', event, '${{p.slug}}')" class="w-full bg-[#087443] text-white py-2.5 rounded-lg text-xs font-black hover:bg-[#065C35] transition flex justify-center items-center gap-2"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
                             </div>
@@ -4534,24 +4629,30 @@ def process_woocommerce_csv():
             home_html += '<section class="container mx-auto px-4 py-8"><div class="promo-grid">'+''.join(promo_cards)+'</div></section><style>.promo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.promo-card{height:210px;border-radius:20px;overflow:hidden;position:relative;background:#0a4d31;border:1px solid #d7e8dd;box-shadow:0 8px 25px rgba(6,92,53,.09)}.promo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.88)}.promo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,48,30,.05),rgba(2,35,20,.88))}.promo-flag{position:absolute;z-index:3;top:10px;left:10px;background:#fff;color:#087443;font-size:8px;font-weight:950;padding:5px 8px;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.14)}.promo-flag:before{content:"";display:inline-block;width:12px;height:8px;background:#087443;margin-right:4px;vertical-align:-1px;box-shadow:inset 3px 0 #fff}.promo-product-row{position:absolute;z-index:3;right:10px;top:10px;display:flex;gap:4px}.promo-product{width:38px;height:38px;border-radius:10px;background:#fff;padding:3px;box-shadow:0 3px 10px rgba(0,0,0,.18);display:block}.promo-product img{width:100%;height:100%;object-fit:contain;border-radius:7px}.promo-overlay{position:absolute;z-index:4;inset:auto 0 0;padding:46px 15px 13px;background:linear-gradient(transparent,rgba(2,35,20,.96));color:#fff}.promo-overlay span{font-size:9px;font-weight:800}.promo-overlay h3{font-size:20px;font-weight:950;margin:3px 0 8px}.promo-overlay a{display:inline-flex;gap:6px;background:#f4c542;color:#123c28;padding:7px 12px;border-radius:999px;font-size:10px;font-weight:950}@media(max-width:767px){.promo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.promo-card{height:165px;border-radius:15px}.promo-product-row{right:7px;top:7px}.promo-product{width:29px;height:29px}.promo-flag{top:7px;left:7px;font-size:7px;padding:4px 6px}.promo-overlay{padding:34px 9px 9px}.promo-overlay h3{font-size:14px}.promo-overlay span{font-size:7px}.promo-overlay a{font-size:8px;padding:6px 9px}}</style>'
             best_candidates=[]
             def best_score(p):
-                try: reg=float(p.get('regular_price') or 0); fin=float(p.get('final_price') or 0); disc=((reg-fin)/reg*100) if reg>fin>0 else 0
-                except Exception: disc=0
-                return (1 if p.get('stock',True) is not False else 0,round(disc,2),-float(p.get('final_price') or 0))
-            # A product can enter exactly one category pool. Deduplicate by both slug
-            # and normalized title so repeated WooCommerce rows do not reappear.
+                try:
+                    reg=float(p.get('regular_price') or 0)
+                    fin=float(p.get('final_price') or 0)
+                    disc=((reg-fin)/reg*100) if reg>fin>0 else 0
+                except Exception:
+                    disc=0
+                    fin=0
+                # Strictly prioritize Rs 2,500+ products and sort by higher value/discount (NEVER -final_price!)
+                return (1 if p.get('stock',True) is not False else 0, 1 if fin >= BEST_SELLER_MIN_PRICE else 0, round(disc,2), fin)
             for cname,_cwords in HOME_MAIN_CATEGORY_RULES:
                 pool=[];seen_slugs=set();seen_names=set()
                 for p in _asm_grouped_products.get(cname, []):
                     if p.get('stock', True) is False:
+                        continue
+                    if float(p.get('final_price') or 0) < BEST_SELLER_MIN_PRICE:
                         continue
                     slug_key=str(p.get('slug') or '').strip().lower()
                     name_key=re.sub(r"\s+", " ", str(p.get('name','') or '').strip().lower())
                     if not p.get('image') or not slug_key or not name_key or slug_key in seen_slugs or name_key in seen_names:
                         continue
                     pool.append(p);seen_slugs.add(slug_key);seen_names.add(name_key)
-                best_candidates.append((cname,sorted(pool,key=best_score,reverse=True)[:10]))
+                best_candidates.append((cname,sorted(pool,key=best_score,reverse=True)[:12]))
             best_mix=[];global_best_slugs=set();global_best_names=set()
-            for i in range(10):
+            for i in range(12):
                 for cname,pool in best_candidates:
                     if i >= len(pool):
                         continue
@@ -4561,6 +4662,15 @@ def process_woocommerce_csv():
                     if not slug_key or not name_key or slug_key in global_best_slugs or name_key in global_best_names:
                         continue
                     best_mix.append((cname,p));global_best_slugs.add(slug_key);global_best_names.add(name_key)
+            # Supplement from best_sellers_all (Rs 2,500+) if needed
+            for p in best_sellers_all:
+                if len(best_mix) >= 60:
+                    break
+                slug_key=str(p.get('slug') or '').strip().lower()
+                name_key=re.sub(r"\s+", " ", str(p.get('name','') or '').strip().lower())
+                if slug_key and name_key and slug_key not in global_best_slugs and name_key not in global_best_names:
+                    best_mix.append((p.get('category','Best Sellers'), p))
+                    global_best_slugs.add(slug_key); global_best_names.add(name_key)
             best_cards=[]
             for cname,p in best_mix[:60]:
                 safe=html_lib.escape(str(p.get('name','')));img=html_lib.escape(str(p.get('image','')),quote=True);slug=p.get('slug','')
