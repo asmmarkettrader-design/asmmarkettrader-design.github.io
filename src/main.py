@@ -576,14 +576,21 @@ def minify_html(html_content):
 # ==============================================================================
 
 def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Online Shopping in Pakistan",
-                    product_data=None, breadcrumb_data=None, og_image=None, custom_canonical=None):
+                    product_data=None, breadcrumb_data=None, og_image=None, custom_canonical=None,
+                    prev_url=None, next_url=None, extra_schema=""):
     
     cat_links = """
-        <a href="/flash-sale.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs font-extrabold text-[#087443] bg-[#EAF7F0]/60 border-b border-gray-100 hover:bg-[#087443] hover:text-white transition-colors">
-            <i class="fas fa-bolt text-amber-500 w-4 text-center"></i> <span>⚡ Flash Sale (Pick 3 Free Delivery)</span>
+        <a href="/category/best-sellers.html" class="flex items-center justify-between px-4 py-2.5 text-xs font-extrabold text-[#087443] bg-[#EAF7F0]/80 border-b border-gray-100 hover:bg-[#087443] hover:text-white transition-colors">
+            <span class="flex items-center gap-2.5"><i class="fas fa-crown text-amber-500 w-4 text-center"></i> <span>🏆 Best Sellers (2,000+)</span></span>
+            <span class="text-[10px] font-black underline">View All →</span>
         </a>
-        <a href="/category/trending-deals.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs font-extrabold text-gray-800 border-b border-gray-100 hover:bg-[#087443] hover:text-white transition-colors">
-            <i class="fas fa-fire text-red-500 w-4 text-center"></i> <span>🔥 Trending & Top Picks</span>
+        <a href="/flash-sale.html" class="flex items-center justify-between px-4 py-2.5 text-xs font-extrabold text-[#087443] bg-[#EAF7F0]/40 border-b border-gray-100 hover:bg-[#087443] hover:text-white transition-colors">
+            <span class="flex items-center gap-2.5"><i class="fas fa-bolt text-amber-500 w-4 text-center"></i> <span>⚡ Flash Sale (Pick 3 Free Del)</span></span>
+            <span class="text-[10px] font-black underline">View All →</span>
+        </a>
+        <a href="/category/trending-deals.html" class="flex items-center justify-between px-4 py-2.5 text-xs font-extrabold text-gray-800 border-b border-gray-100 hover:bg-[#087443] hover:text-white transition-colors">
+            <span class="flex items-center gap-2.5"><i class="fas fa-fire text-red-500 w-4 text-center"></i> <span>🔥 Trending & Top Picks</span></span>
+            <span class="text-[10px] font-bold text-[#087443]">View All →</span>
         </a>
         <a href="/categories.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs font-bold text-gray-800 border-b border-gray-100 hover:bg-[#087443] hover:text-white transition-colors">
             <i class="fas fa-th-large text-[#087443] w-4 text-center"></i> <span>All Categories Directory</span>
@@ -592,8 +599,9 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     for cat in categories_list[:16]:
         c_slug = category_slug(cat)
         cat_links += f"""
-        <a href="/category/{c_slug}.html" class="flex items-center gap-2.5 px-4 py-2 text-xs font-semibold text-gray-700 hover:bg-[#087443] hover:text-white transition-colors">
-            <i class="fas {get_category_icon(cat)} text-[#087443] w-4 text-center"></i> <span>{html_lib.escape(cat)}</span>
+        <a href="/category/{c_slug}.html" class="flex items-center justify-between px-4 py-2 text-xs font-semibold text-gray-700 hover:bg-[#087443] hover:text-white transition-colors">
+            <span class="flex items-center gap-2.5 truncate"><i class="fas {get_category_icon(cat)} text-[#087443] w-4 text-center"></i> <span class="truncate">{html_lib.escape(cat)}</span></span>
+            <span class="text-[10px] font-bold opacity-75 ml-2 flex-shrink-0">View All →</span>
         </a>
         """
 
@@ -778,24 +786,39 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     </script>"""
 
     og_image_final = og_image or "https://www.asmveo.com/Png%20logo.jpg"
+    og_type_val = "product" if product_data else "website"
+    safe_title_attr = html_lib.escape(safe_title, quote=True)
+    safe_desc_attr = html_lib.escape(safe_desc, quote=True)
+    pagination_links = ""
+    if prev_url:
+        pagination_links += f'\n    <link rel="prev" href="{prev_url}">'
+    if next_url:
+        pagination_links += f'\n    <link rel="next" href="{next_url}">'
+    if extra_schema:
+        structured_data += "\n    " + extra_schema
+    product_og_extra = ""
+    if product_data:
+        p_brand_esc = html_lib.escape(str(product_data.get("brand", "ASM VEO")), quote=True)
+        p_cat_esc = html_lib.escape(str(product_data.get("category", "Online Shopping")), quote=True)
+        product_og_extra = f'\n    <meta property="product:brand" content="{p_brand_esc}">\n    <meta property="product:category" content="{p_cat_esc}">'
     
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en-PK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>{safe_title} | ASM VEO</title>
     
-    <meta name="title" content="{safe_title} | ASM VEO">
-    <meta name="description" content="{safe_desc}">
-    <meta name="keywords" content="{keyword_meta}">
+    <meta name="title" content="{safe_title_attr} | ASM VEO">
+    <meta name="description" content="{safe_desc_attr}">
+    <meta name="keywords" content="{html_lib.escape(keyword_meta, quote=True)}">
     <meta name="author" content="ASM Digital Solutions">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#087443">
-    <link rel="canonical" href="{canonical_url}">
+    <link rel="canonical" href="{canonical_url}">{pagination_links}
     
     <link rel="icon" type="image/png" href="/icon.png">
-<link rel="apple-touch-icon" href="/icon.png">
+    <link rel="apple-touch-icon" href="/icon.png">
     <link rel="alternate" hreflang="en-PK" href="{canonical_url}" />
     <link rel="alternate" hreflang="ur-PK" href="{canonical_url}" />
     <link rel="alternate" hreflang="x-default" href="{canonical_url}" />
@@ -805,18 +828,20 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
     <meta name="geo.position" content="30.3753;69.3451" />
     <meta name="ICBM" content="30.3753, 69.3451" />
     
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{og_type_val}">
     <meta property="og:url" content="{canonical_url}">
-    <meta property="og:title" content="{safe_title} | ASM VEO">
-    <meta property="og:description" content="{safe_desc}">
+    <meta property="og:title" content="{safe_title_attr} | ASM VEO">
+    <meta property="og:description" content="{safe_desc_attr}">
     <meta property="og:image" content="{og_image_final}">
+    <meta property="og:image:alt" content="{safe_title_attr}">
     <meta property="og:locale" content="en_PK">
-    <meta property="og:site_name" content="ASM VEO">
+    <meta property="og:site_name" content="ASM VEO">{product_og_extra}
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="{safe_title} | ASM VEO">
-    <meta property="twitter:description" content="{safe_desc}">
+    <meta property="twitter:title" content="{safe_title_attr} | ASM VEO">
+    <meta property="twitter:description" content="{safe_desc_attr}">
     <meta property="twitter:image" content="{og_image_final}">
+    <meta property="twitter:image:alt" content="{safe_title_attr}">
     
     <link rel="manifest" href="/manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -1448,7 +1473,7 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         <div class="asm-search-wrap order-3 md:order-none w-full md:flex-1 md:max-w-2xl md:mx-4 relative flex"><input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, categories, brands..." class="w-full py-2.5 px-4 outline-none text-gray-800 font-semibold text-sm"><button onclick="executeSearch()" class="asm-search-btn text-white px-5"><i class="fas fa-search"></i></button><div id="searchSuggestions" class="hidden absolute left-0 right-0 top-full mt-2 bg-white border border-gray-200 rounded-2xl shadow-2xl z-[80] suggestions-panel overflow-hidden"></div></div>
         <div class="ml-auto flex items-center gap-2 md:gap-3"><a href="/account.html" class="asm-icon-btn hidden sm:flex items-center gap-2 px-3 py-2"><i class="fas fa-user"></i><span class="hidden lg:inline text-xs font-bold text-gray-700">Account</span></a><a href="/wishlist.html" class="asm-icon-btn relative w-10 h-10 flex items-center justify-center"><i class="fas fa-heart"></i><span class="wishlist-badge absolute -top-1.5 -right-1 bg-[#087443] text-white text-[10px] font-black min-w-[18px] h-[18px] px-1 rounded-full flex items-center justify-center">0</span></a><a href="/checkout.html" class="asm-cart-btn cart-icon-pulse relative px-4 h-10 flex items-center gap-2 font-bold text-xs md:text-sm"><i class="fas fa-shopping-cart"></i><span class="hidden lg:inline">Cart</span><span class="cart-badge absolute -top-1.5 -right-1 bg-[#F7B733] text-[#043D25] text-[10px] font-black min-w-[18px] h-[18px] px-1 rounded-full flex items-center justify-center">0</span></a></div>
       </div>
-      <nav class="asm-nav hidden md:block"><div class="container mx-auto px-4 flex items-center h-11"><div id="desktopCatDropdown" class="relative dropdown z-50 mr-3 h-full"><button type="button" onclick="toggleDesktopCats(event)" aria-expanded="false" class="h-full px-4 font-bold text-xs md:text-sm flex items-center gap-2 bg-black/15 hover:bg-black/25 transition"><i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down text-[10px] dropdown-arrow transition-transform duration-200"></i></button><div id="desktopCatMenu" class="dropdown-menu absolute left-0 top-full hidden text-gray-800 bg-white shadow-2xl rounded-b-2xl w-72 py-2 border border-gray-200 max-h-[420px] overflow-y-auto z-[90]">{cat_links}</div></div><a href="/index.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Home</a><a href="/categories.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Categories</a><a href="/flash-sale.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold text-[#F7B733]">⚡ Flash Sale (Pick 3 Free Delivery)</a><a href="/category/trending-deals.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">🔥 Trending Deals</a><a href="/category/under-1500-deals.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">💰 Under Rs 1,500</a><a href="/blog.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Guides</a><a href="/contact.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Contact</a><div class="ml-auto h-full flex items-center px-3 text-[11px] font-bold bg-white/10">🏷️ 5% Off Rs 3,000+ • 🚚 Free Delivery Rs 5,000+</div></div></nav>
+      <nav class="asm-nav hidden md:block"><div class="container mx-auto px-4 flex items-center h-11"><div id="desktopCatDropdown" class="relative dropdown z-50 mr-3 h-full"><button type="button" onclick="toggleDesktopCats(event)" aria-expanded="false" class="h-full px-4 font-bold text-xs md:text-sm flex items-center gap-2 bg-black/15 hover:bg-black/25 transition"><i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down text-[10px] dropdown-arrow transition-transform duration-200"></i></button><div id="desktopCatMenu" class="dropdown-menu absolute left-0 top-full hidden text-gray-800 bg-white shadow-2xl rounded-b-2xl w-72 py-2 border border-gray-200 max-h-[420px] overflow-y-auto z-[90]">{cat_links}</div></div><a href="/index.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Home</a><a href="/categories.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Categories</a><a href="/category/best-sellers.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold text-[#F7B733]">🏆 Best Sellers</a><a href="/flash-sale.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold text-[#F7B733]">⚡ Flash Sale (Pick 3 Free Delivery)</a><a href="/category/trending-deals.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">🔥 Trending Deals</a><a href="/category/under-1500-deals.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">💰 Under Rs 1,500</a><a href="/blog.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Guides</a><a href="/contact.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Contact</a><div class="ml-auto h-full flex items-center px-3 text-[11px] font-bold bg-white/10">🏷️ 5% Off Rs 3,000+ • 🚚 Free Delivery Rs 5,000+</div></div></nav>
     </header>
 
     <!-- Compare Products Bar -->
@@ -1625,29 +1650,43 @@ def generate_blog_pages(categories_list, products_list=None):
         )
         category_link = ''
         if category:
-            cslug = make_slug(category)
-            category_link = f'<a href="/category/{cslug}.html" class="inline-block bg-[#087443] text-white px-5 py-3 rounded-xl font-bold">Browse {category}</a>'
+            cslug = category_slug(category)
+            category_link = f'<a href="/category/{cslug}.html" class="inline-block bg-[#087443] text-white px-5 py-3 rounded-xl font-bold">View All {html_lib.escape(category)} →</a>'
+        related_cards_html = ''.join(generate_product_card(p, lazy=True) for p in related[:6])
+        blog_schema = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": title,
+            "description": f"{title}. Complete buying guide, prices in Pakistan, 5% OFF on Rs 3,000+, and Free Delivery on Rs 5,000+ at ASM VEO.",
+            "author": {"@type": "Organization", "name": "ASM VEO Pakistan"},
+            "publisher": {"@type": "Organization", "name": "ASM VEO", "logo": {"@type": "ImageObject", "url": "https://www.asmveo.com/Png%20logo.jpg"}},
+            "mainEntityOfPage": f"https://www.asmveo.com/blog/{slug}.html",
+            "datePublished": datetime.now().strftime("%Y-%m-%d"),
+            "dateModified": datetime.now().strftime("%Y-%m-%d")
+        })
+        extra_blog_ld = f'<script type="application/ld+json">{blog_schema}</script>'
 
         content = f"""
-        <main class="container mx-auto px-4 py-12 max-w-4xl">
+        <main class="container mx-auto px-4 py-10 max-w-6xl">
           <article class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-100 dark:border-gray-700 p-6 md:p-10">
-            <nav class="text-sm text-gray-500 mb-5" aria-label="Breadcrumb"><a href="/index.html">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; <span>{kw}</span></nav>
-            <h1 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white mb-5">{title}</h1>
-            <p class="text-gray-600 dark:text-gray-300 leading-8 mb-8">Looking for <strong>{kw}</strong> in Pakistan? This ASM VEO guide helps shoppers compare relevant products, understand what to check before buying, and find related options available from our store.</p>
-            <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-3">What to check before buying</h2>
-            <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-2 mb-8">
-              <li>Compare the product specification with your actual requirement.</li>
-              <li>Check price, availability, product images and delivery information.</li>
-              <li>Choose the option that offers the best balance of quality, features and value.</li>
-              <li>For online orders in Pakistan, confirm your city and delivery details at checkout.</li>
+            <nav class="text-xs text-gray-500 mb-4 font-semibold" aria-label="Breadcrumb"><a href="/index.html">Home</a> &gt; <a href="/blog.html">Shopping Guides</a> &gt; <span>{html_lib.escape(kw)}</span></nav>
+            <h1 class="text-2xl md:text-4xl font-black text-gray-900 dark:text-white mb-4">{html_lib.escape(title)}</h1>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 text-sm md:text-base">Looking for <strong>{html_lib.escape(kw)}</strong> in Pakistan? This ASM VEO buying guide helps you compare top-rated options, check updated Pakistani prices, and unlock <strong>5% OFF on orders Rs 3,000+</strong> and <strong>Free Delivery on orders Rs 5,000+ (or any 3 Flash Sale items)</strong>.</p>
+            <h2 class="text-xl font-black text-gray-900 dark:text-white mb-3">Top Recommended Products for {html_lib.escape(kw.title())}</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">{related_cards_html}</div>
+            <h2 class="text-xl font-black text-gray-900 dark:text-white mb-3">What to Check Before Buying in Pakistan</h2>
+            <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-2 mb-6 text-sm">
+              <li>Compare the product specifications, pack count, and material details with your daily requirement.</li>
+              <li>Combine items to reach <strong>Rs 3,000+ for an automatic 5% discount</strong> or <strong>Rs 5,000+ for Free Home Delivery</strong>.</li>
+              <li>Enjoy nationwide Cash on Delivery (COD) and a 7-day easy return policy across Pakistan.</li>
             </ul>
-            <h2 class="text-2xl font-black text-gray-900 dark:text-white mb-3">Related products</h2>
-            <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-2 mb-8">{product_links or '<li>Explore our latest collections for more options.</li>'}</ul>
-            <div class="flex flex-wrap gap-3">{category_link}<a href="/index.html" class="border border-gray-300 dark:border-gray-600 px-5 py-3 rounded-xl font-bold">Shop All Products</a></div>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Quick Price Index</h3>
+            <ul class="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-1.5 mb-8 text-sm">{product_links or '<li>Explore our latest collections for more options.</li>'}</ul>
+            <div class="flex flex-wrap gap-3">{category_link}<a href="/category/best-sellers.html" class="bg-amber-500 text-gray-950 px-5 py-3 rounded-xl font-black">View All Best Sellers →</a><a href="/categories.html" class="border border-gray-300 dark:border-gray-600 px-5 py-3 rounded-xl font-bold">Browse All Categories</a></div>
           </article>
         </main>"""
         all_blogs.append({'title': title, 'slug': slug, 'keyword': kw, 'content': content})
-        full_html = get_html_header(title, categories_list, f"{title}. Helpful shopping guide for Pakistan with related products from ASM VEO.", custom_canonical=f"https://www.asmveo.com/blog/{slug}.html") + content + get_html_footer()
+        full_html = get_html_header(title, categories_list, f"{title}. Compare prices in Pakistan, get 5% OFF over Rs 3,000 and Free Delivery over Rs 5,000 at ASM VEO.", custom_canonical=f"https://www.asmveo.com/blog/{slug}.html", extra_schema=extra_blog_ld) + content + get_html_footer()
         with open(f'output/blog/{slug}.html', 'w', encoding='utf-8') as f:
             f.write(minify_html(full_html))
 
@@ -1915,17 +1954,48 @@ setTimeout(()=>location.replace(destination),2200);
 # ==============================================================================
 
 def generate_sitemap(urls):
-    urls = list(set(urls))
-    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    urls = sorted(set(urls))
     date_str = datetime.now().strftime("%Y-%m-%d")
     
-    for url in urls:
-        xml_content += f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n"
-        
-    xml_content += '</urlset>'
+    def _url_meta(u):
+        if u.rstrip("/") == "https://www.asmveo.com":
+            return ("daily", "1.0")
+        if "/category/" in u and "/page/" not in u and not re.search(r"-\d+\.html$", u):
+            return ("daily", "0.95")
+        if u.endswith(("/flash-sale.html", "/categories.html", "/all-products-directory.html")):
+            return ("daily", "0.95")
+        if "/product/" in u:
+            return ("weekly", "0.85")
+        if "/blog/" in u or "/city/" in u:
+            return ("weekly", "0.75")
+        return ("weekly", "0.70")
+
+    def _write_urlset(path, subset):
+        lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        for u in subset:
+            freq, prio = _url_meta(u)
+            safe_u = html_lib.escape(u, quote=True)
+            lines.append(f"  <url>\n    <loc>{safe_u}</loc>\n    <lastmod>{date_str}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{prio}</priority>\n  </url>")
+        lines.append("</urlset>")
+        Path(path).write_text("\n".join(lines), encoding="utf-8")
+
+    # Write full sitemap.xml + segmented sitemaps for fast Google Search Console crawling
+    _write_urlset("output/sitemap.xml", urls)
+    cat_urls = [u for u in urls if "/category/" in u or u.endswith("/categories.html")]
+    prod_urls = [u for u in urls if "/product/" in u]
+    page_urls = [u for u in urls if u not in cat_urls and u not in prod_urls]
+    _write_urlset("output/sitemap-categories.xml", cat_urls)
+    _write_urlset("output/sitemap-products.xml", prod_urls)
+    _write_urlset("output/sitemap-pages.xml", page_urls)
     
-    with open("output/sitemap.xml", "w", encoding="utf-8") as f: 
-        f.write(xml_content)
+    sm_index = f'''<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>https://www.asmveo.com/sitemap-pages.xml</loc><lastmod>{date_str}</lastmod></sitemap>
+  <sitemap><loc>https://www.asmveo.com/sitemap-categories.xml</loc><lastmod>{date_str}</lastmod></sitemap>
+  <sitemap><loc>https://www.asmveo.com/sitemap-products.xml</loc><lastmod>{date_str}</lastmod></sitemap>
+  <sitemap><loc>https://www.asmveo.com/image-sitemap.xml</loc><lastmod>{date_str}</lastmod></sitemap>
+</sitemapindex>'''
+    Path("output/sitemap-index.xml").write_text(sm_index, encoding="utf-8")
 
 def generate_robots_txt():
     content = """User-agent: *
@@ -1933,9 +2003,15 @@ Allow: /
 Allow: /assets/
 Allow: /category/
 Allow: /product/
+Allow: /blog/
+Allow: /city/
 
-# 🌟 GEO FIX: Explicitly allowing AI Crawlers to read site for recommendations 🌟
+# 🌟 GEO & AI Search Crawlers Explicitly Allowed 🌟
 User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
 Allow: /
 User-agent: Google-Extended
 Allow: /
@@ -1943,30 +2019,38 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: anthropic-ai
 Allow: /
+User-agent: PerplexityBot
+Allow: /
 
 Disallow: /checkout.html
+Disallow: /order-success.html
+Disallow: /track-order.html
 
 Sitemap: https://www.asmveo.com/sitemap.xml
+Sitemap: https://www.asmveo.com/sitemap-index.xml
+Sitemap: https://www.asmveo.com/sitemap-categories.xml
+Sitemap: https://www.asmveo.com/sitemap-products.xml
+Sitemap: https://www.asmveo.com/sitemap-pages.xml
 Sitemap: https://www.asmveo.com/image-sitemap.xml
 """
-    with open("output/robots.txt", "w") as f: 
+    with open("output/robots.txt", "w", encoding="utf-8") as f: 
         f.write(content)
 
 def generate_manifest():
     manifest = {
         "name": "ASM VEO - Online Shopping in Pakistan", 
         "short_name": "ASM VEO", 
-        "description": "Premium online shopping in Pakistan with Cash on Delivery", 
+        "description": "Online shopping in Pakistan with Cash on Delivery, 5% OFF on Rs 3,000+ and Free Delivery on Rs 5,000+", 
         "start_url": "/index.html", 
         "display": "standalone", 
         "background_color": "#ffffff", 
         "theme_color": "#087443", 
         "icons": [
-            {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"}, 
-            {"src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"}
+            {"src": "/icon.png", "sizes": "192x192", "type": "image/png"}, 
+            {"src": "/icon.png", "sizes": "512x512", "type": "image/png"}
         ]
     }
-    with open("output/manifest.json", "w") as f: 
+    with open("output/manifest.json", "w", encoding="utf-8") as f: 
         json.dump(manifest, f, indent=2)
 
 def generate_image_sitemap(products_list):
@@ -1975,7 +2059,12 @@ def generate_image_sitemap(products_list):
     
     for prod in products_list:
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
-        xml_content += f"  <url>\n    <loc>https://www.asmveo.com/product/{prod['slug']}.html</loc>\n    <image:image>\n      <image:loc>{prod['image']}</image:loc>\n      <image:title>{safe_title}</image:title>\n    </image:image>\n  </url>\n"
+        imgs = [x for x in (prod.get('images') or [prod.get('image','')]) if x][:3]
+        img_tags = "".join(
+            f"    <image:image>\n      <image:loc>{html_lib.escape(im, quote=True)}</image:loc>\n      <image:title>{safe_title}</image:title>\n    </image:image>\n"
+            for im in imgs
+        )
+        xml_content += f"  <url>\n    <loc>https://www.asmveo.com/product/{prod['slug']}.html</loc>\n{img_tags}  </url>\n"
         
     xml_content += '</urlset>'
     with open("output/image-sitemap.xml", "w", encoding="utf-8") as f: 
@@ -1983,27 +2072,31 @@ def generate_image_sitemap(products_list):
 
 def generate_merchant_feed(products_list):
     print("🛍️ Generating Google Merchant Center Feed...")
-    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n<channel>\n  <title>ASM VEO Products</title>\n  <link>https://www.asmveo.com</link>\n  <description>Premium online shopping in Pakistan with COD</description>\n'
+    xml_content = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n<channel>\n  <title>ASM VEO Products Pakistan</title>\n  <link>https://www.asmveo.com</link>\n  <description>Online shopping in Pakistan with Cash on Delivery</description>\n'
     
     for prod in products_list:
         safe_title = prod['name'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_desc = prod['seo_desc'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         safe_cat = prod['category'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        
-        # 🌟 SEO FIX: Image URL Encoding 🌟
-        safe_image_url = urllib.parse.quote(prod['image'], safe=":/")
+        safe_brand = str(prod.get('brand') or 'ASM VEO').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        avail_str = "in_stock" if prod.get("stock", True) is not False else "out_of_stock"
+        ship_price = "0 PKR" if float(prod.get("final_price") or 0) >= 5000 else f"{DELIVERY_FEE} PKR"
+        safe_image_url = urllib.parse.quote(prod['image'], safe=":/%?=&")
         
         xml_content += '  <item>\n'
-        xml_content += f"    <g:id>{prod['id']}</g:id>\n"
+        xml_content += f"    <g:id>ASM-{prod['id']}</g:id>\n"
         xml_content += f"    <g:title>{safe_title}</g:title>\n"
         xml_content += f"    <g:description>{safe_desc}</g:description>\n"
         xml_content += f"    <g:link>https://www.asmveo.com/product/{prod['slug']}.html</g:link>\n"
         xml_content += f"    <g:image_link>{safe_image_url}</g:image_link>\n"
         xml_content += f"    <g:condition>new</g:condition>\n"
-        xml_content += f"    <g:availability>in_stock</g:availability>\n"
-        xml_content += f"    <g:price>{prod['final_price']} PKR</g:price>\n"
-        xml_content += f"    <g:brand>ASM VEO</g:brand>\n"
+        xml_content += f"    <g:availability>{avail_str}</g:availability>\n"
+        xml_content += f"    <g:price>{prod['final_price']:g} PKR</g:price>\n"
+        xml_content += f"    <g:brand>{safe_brand}</g:brand>\n"
+        xml_content += f"    <g:mpn>ASM-{prod['id']}</g:mpn>\n"
+        xml_content += f"    <g:identifier_exists>no</g:identifier_exists>\n"
         xml_content += f"    <g:product_type>{safe_cat}</g:product_type>\n"
+        xml_content += f"    <g:shipping>\n      <g:country>PK</g:country>\n      <g:service>Standard COD</g:service>\n      <g:price>{ship_price}</g:price>\n    </g:shipping>\n"
         xml_content += '  </item>\n'
         
     xml_content += '</channel>\n</rss>'
@@ -2196,21 +2289,29 @@ CATEGORY_ROOT_MAP = {
 }
 
 SYNONYM_GROUPS = {
-    "Perfume & Fragrance": ["perfume", "perfumes", "fragrance", "fragrances", "scent", "attar", "oud", "eau de parfum", "eau de toilette", "body spray", "cologne"],
-    "Smart Watches": ["smartwatch", "smart watch", "fitness watch", "fitness tracker", "wearable", "bluetooth watch"],
-    "Skin Care": ["skincare", "skin care", "face cream", "moisturizer", "serum", "cleanser", "sunscreen"],
-    "Mobile Accessories": ["phone case", "iphone cover", "mobile cover", "charger", "charging cable", "usb cable", "handsfree", "earbuds", "airpods"],
-    "Headphones & Audio": ["headphone", "headphones", "earphone", "earphones", "earbuds", "speaker", "bluetooth speaker", "jbl"],
-    "Jewelry": ["jewelry", "jewellery", "bangle", "bracelet", "necklace", "ring", "earring"],
-    "Shampoo & Hair Care": ["shampoo", "hair shampoo", "conditioner", "hair care", "hair oil", "hair serum", "anti dandruff", "dandruff"],
-    "Fitness & Gym": ["fitness", "gym", "workout", "exercise", "yoga", "dumbbell", "resistance band", "treadmill", "protein shaker"],
-    "Fragrance & Body Care": ["body mist", "body lotion", "deodorant", "deodorants", "roll on", "perfume oil", "fragrance oil"],
     "Underwear & Innerwear": ["fdm", "underwear", "innerwear", "undergarment", "undergarments", "boxer", "boxers", "brief", "briefs", "bra", "brazier", "brassiere", "panty", "panties", "vest", "baniyan", "undershirt", "shapewear", "lingerie", "nightwear", "thermal innerwear"],
-    "Trucksuits & Activewear": ["tracksuit", "trucksuit", "activewear", "sportswear", "jogger", "joggers", "hoodie", "sweatshirt"],
-    "Kitchen & Dining": ["kitchen", "cookware", "dinner set", "utensil", "bottle", "lunch box", "kitchen tool"],
+    "Oral & Dental Care": ["toothpaste", "toothbrush", "enamel", "hydroxyapatite", "mouthwash", "dental", "manjan", "teeth whitening", "tooth powder"],
+    "Perfume & Fragrance": ["perfume", "perfumes", "fragrance", "fragrances", "scent", "attar", "oud", "eau de parfum", "eau de toilette", "body spray", "cologne"],
+    "Makeup & Cosmetics": ["foundation", "bb cream", "cc cream", "lipstick", "lip gloss", "lip balm", "eyeliner", "mascara", "nail polish", "makeup", "cosmetic", "blush", "concealer"],
+    "Skin Care": ["skincare", "skin care", "face cream", "moisturizer", "serum", "cleanser", "sunscreen", "sunblock", "face wash", "facial", "soap"],
+    "Shampoo & Hair Care": ["shampoo", "hair shampoo", "conditioner", "hair care", "hair oil", "hair serum", "anti dandruff", "dandruff", "hair remover", "epilator", "trimmer", "shaver"],
+    "Smart Watches": ["smartwatch", "smart watch", "fitness watch", "fitness tracker", "wearable", "bluetooth watch", "watch", "timepiece"],
+    "Headphones & Audio": ["headphone", "headphones", "earphone", "earphones", "earbuds", "airpods", "tws", "speaker", "bluetooth speaker", "jbl", "microphone"],
+    "Mobile Accessories": ["phone case", "iphone cover", "mobile cover", "charger", "charging cable", "usb cable", "handsfree", "phone holder", "phone stand", "phone mount", "ring light", "sim card", "power bank"],
     "Mobile Phones": ["iphone", "samsung galaxy", "android phone", "smartphone", "mobile phone", "cell phone"],
     "Laptops & Computers": ["laptop", "notebook", "desktop computer", "computer", "monitor", "keyboard", "mouse"],
-    "Home Decor": ["home decor", "wall decor", "decoration", "cushion", "curtain", "lamp", "led light"],
+    "Bags, Wallets & Purse": ["handbag", "shoulder bag", "wallet", "purse", "backpack", "tote", "shoe bag", "pouch", "clutch"],
+    "Shoes & Footwear": ["shoe", "shoes", "shoelaces", "laces", "sneaker", "sandal", "slipper", "footwear", "heel"],
+    "Jewelry & Hair Accessories": ["jewelry", "jewellery", "bangle", "bracelet", "necklace", "ring", "earring", "hair band", "hair poni", "hair clip", "keychain"],
+    "Trucksuits & Activewear": ["tracksuit", "trucksuit", "activewear", "sportswear", "jogger", "joggers", "hoodie", "sweatshirt", "shirt", "t-shirt", "trouser", "kurta", "abaya"],
+    "Kitchen & Dining": ["kitchen", "cookware", "dinner set", "utensil", "bottle", "lunch box", "kitchen tool", "water jug", "sieve", "dumpling", "samosa", "plate", "dispenser"],
+    "Home Decor & Wall Art": ["home decor", "wall decor", "wall art", "phototile", "frame", "poster", "canvas", "decoration", "cushion", "curtain", "lamp", "led light", "neon", "wall hook"],
+    "Cleaning & Household": ["washing machine cleaner", "cleaning", "dish washing", "mouse trap", "rat trap", "sponge", "mop", "brush", "gloves", "storage", "organizer", "iron", "steamer"],
+    "Fitness & Gym": ["fitness", "gym", "workout", "exercise", "yoga", "dumbbell", "resistance band", "tummy trimmer", "hand gripper", "slimming belt"],
+    "Medical & Health Support": ["pulse oximeter", "nebulizer", "knee support", "knee brace", "acupressure", "cooling gel", "i.v drip", "height growth", "height grow", "sukoon-e-hazma", "moringa", "supplement", "thermometer"],
+    "Educational & School Stationery": ["copybook", "notebook", "pencil", "pen", "eraser", "geometry box", "glue stick", "writing tablet", "coloring book", "drawing book", "stationery", "chalk"],
+    "Kids & Interactive Toys": ["cactus toy", "toy", "toys", "puzzle", "doll", "game", "finger sleeve", "pacifier", "teether", "squishy", "spinner"],
+    "Car, Bike & Hardware Tools": ["coolant", "car", "motorcycle", "bike", "torpedo level", "sandpaper", "tool", "wrench", "screwdriver", "automotive", "flashlight"],
 }
 
 SEO_BLOCKLIST = {
@@ -2234,11 +2335,13 @@ def build_subcategory_sliders(cat_name, prods, cat_subs):
     for sub in cat_subs:
         sp=[p for p in prods if p.get('subcategory')==sub]
         if not sp: continue
-        root_s=category_slug(cat_name, 50); slug=category_slug(sub, 50); img=sub_visuals.get(sub,'/icon.png')
-        pills.append(f'<a href="/category/{root_s}/{slug}/" class="subcat-pill"><span class="subcat-circle"><img src="{img}" alt="{html_lib.escape(sub)}" loading="lazy"></span><span>{html_lib.escape(sub)}</span></a>')
+        root_s=category_slug(cat_name, 50); slug=category_slug(sub, 50)
+        first_prod_img = next((p.get('image') for p in sp if p.get('image')), None)
+        img = first_prod_img or sub_visuals.get(sub, '/icon.png')
+        pills.append(f'<a href="/category/{root_s}/{slug}/" class="subcat-pill"><span class="subcat-circle"><img src="{html_lib.escape(img, quote=True)}" alt="{html_lib.escape(sub)}" loading="lazy" onerror="this.onerror=null;this.src=\'/icon.png\';"></span><span class="subcat-pill-title">{html_lib.escape(sub)}</span><span class="subcat-pill-viewall">View All ({len(sp)}) →</span></a>')
         cards=''.join(generate_product_card(p,lazy=True) for p in sp[:18])
-        sections.append(f'<section class="subcat-product-section"><div class="flex items-center justify-between mb-3"><h2>{html_lib.escape(sub)} <span>({len(sp)})</span></h2><a href="/category/{root_s}/{slug}/">View All →</a></div><div class="subcat-product-viewport"><div class="subcat-product-track">{cards}</div></div></section>')
-    return '<div class="subcat-image-strip">'+''.join(pills)+'</div>'+''.join(sections)+'<style>.subcat-image-strip{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 14px;margin-bottom:18px}.subcat-pill{min-width:108px;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none;color:#243b2d;font-size:10px;font-weight:900}.subcat-circle{width:72px;height:72px;border-radius:50%;overflow:hidden;border:3px solid #d9eadf;background:#f7fbf8;display:flex;align-items:center;justify-content:center}.subcat-circle img{width:100%;height:100%;object-fit:cover}.subcat-product-section{margin:0 0 28px;overflow:hidden}.subcat-product-section h2{font-size:21px;font-weight:900;color:#101828;margin:0}.subcat-product-section h2 span{font-size:11px;color:#98a2b3;font-weight:700}.subcat-product-section a{color:#087443;font-size:11px;font-weight:900}.subcat-product-viewport{overflow:hidden;width:100%}.subcat-product-track{display:flex;gap:12px;width:max-content;animation:asmSubcat 42s linear infinite}.subcat-product-track .product-card{width:170px;min-width:170px}.subcat-product-track .product-card .image-zoom{height:145px}.subcat-product-track:hover{animation-play-state:paused}@keyframes asmSubcat{from{transform:translate3d(0,0,0)}to{transform:translate3d(-45%,0,0)}}@media(max-width:767px){.subcat-product-track .product-card{width:140px;min-width:140px}.subcat-product-track .product-card .image-zoom{height:120px}}</style>'
+        sections.append(f'<section class="subcat-product-section"><div class="subcat-section-header"><div><span class="subcat-eyebrow">{html_lib.escape(cat_name)} Subcategory</span><h2>{html_lib.escape(sub)} <span>({len(sp)} Products)</span></h2></div><a href="/category/{root_s}/{slug}/" class="subcat-view-all-btn">View All {html_lib.escape(sub)} <i class="fas fa-arrow-right"></i></a></div><div class="subcat-product-viewport"><div class="subcat-product-track">{cards}</div></div></section>')
+    return '<div class="subcat-strip-wrap"><div class="subcat-strip-head"><span>Browse Subcategories</span><span>Click any subcategory to View All</span></div><div class="subcat-image-strip">'+''.join(pills)+'</div></div>'+''.join(sections)+'<style>.subcat-strip-wrap{background:#fff;border:1px solid #dcebe2;border-radius:18px;padding:14px 16px;margin-bottom:22px;box-shadow:0 4px 14px rgba(6,92,53,.04)}.subcat-strip-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:12px;font-weight:900;color:#087443;text-transform:uppercase;letter-spacing:.06em}.subcat-image-strip{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 8px}.subcat-pill{min-width:128px;max-width:145px;background:#f7fbf8;border:1px solid #d9eadf;border-radius:14px;padding:10px 8px;display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:#15251d;transition:all .2s ease}.subcat-pill:hover{border-color:#087443;background:#eaf7f0;transform:translateY(-2px)}.subcat-circle{width:64px;height:64px;border-radius:50%;overflow:hidden;border:2px solid #087443;background:#fff;display:flex;align-items:center;justify-content:center}.subcat-circle img{width:100%;height:100%;object-fit:contain;padding:4px}.subcat-pill-title{font-size:11px;font-weight:800;text-align:center;line-height:1.25;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.subcat-pill-viewall{font-size:10px;font-weight:900;color:#fff;background:#087443;padding:3px 9px;border-radius:999px;white-space:nowrap}.subcat-product-section{margin:0 0 28px;overflow:hidden;background:#fff;border:1px solid #e3ece6;border-radius:18px;padding:16px}.subcat-section-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #edf3ef}.subcat-eyebrow{display:block;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:#087443;margin-bottom:2px}.subcat-product-section h2{font-size:19px;font-weight:900;color:#101828;margin:0}.subcat-product-section h2 span{font-size:12px;color:#087443;font-weight:800}.subcat-view-all-btn{display:inline-flex;align-items:center;gap:6px;background:#087443;color:#fff!important;font-size:12px;font-weight:900;padding:8px 16px;border-radius:999px;box-shadow:0 4px 12px rgba(8,116,67,.18);transition:all .2s ease;white-space:nowrap}.subcat-view-all-btn:hover{background:#065c35;transform:translateY(-1px)}.subcat-product-viewport{overflow:hidden;width:100%}.subcat-product-track{display:flex;gap:12px;width:max-content;animation:asmSubcat 42s linear infinite}.subcat-product-track .product-card{width:185px;min-width:185px}.subcat-product-track .product-card .image-zoom{height:165px}.subcat-product-track:hover{animation-play-state:paused}@keyframes asmSubcat{from{transform:translate3d(0,0,0)}to{transform:translate3d(-45%,0,0)}}@media(max-width:767px){.subcat-product-track .product-card{width:150px;min-width:150px}.subcat-product-track .product-card .image-zoom{height:135px}.subcat-view-all-btn{font-size:11px;padding:6px 12px}}</style>'
 
 def directory_pagination_html(current_page, total_pages, base_path):
     if total_pages <= 1:
@@ -2306,9 +2409,8 @@ def extract_video_urls(row):
 
 def derive_subcategory_from_text(category, text):
     low = str(text or "").lower()
-    priority = ["Underwear & Innerwear", "Perfume & Fragrance", "Shampoo & Hair Care", "Skin Care", "Smart Watches", "Mobile Phones", "Laptops & Computers", "Mobile Accessories", "Headphones & Audio", "Fitness & Gym", "Trucksuits & Activewear", "Fragrance & Body Care", "Kitchen & Dining", "Home Decor", "Jewelry"]
-    for sub in priority:
-        for term in SYNONYM_GROUPS.get(sub, []):
+    for sub, terms in SYNONYM_GROUPS.items():
+        for term in terms:
             if re.search(r"(?<![a-z0-9])" + re.escape(term.lower()) + r"(?![a-z0-9])", low):
                 return sub
     return "Other"
@@ -3629,9 +3731,21 @@ def process_woocommerce_csv():
         </div>
         """
         
+        sub_view_all_btn = ""
+        if prod.get('subcategory') and prod.get('subcategory') != 'Other':
+            sub_view_all_btn = f'<a href="/category/{category_slug(prod["category"], 50)}/{category_slug(prod["subcategory"], 50)}/" class="bg-[#EAF7F0] text-[#087443] border border-[#087443]/30 px-4 py-2 rounded-full text-xs font-black hover:bg-[#087443] hover:text-white transition">View All {html_lib.escape(prod["subcategory"])} →</a>'
         prod_html += f"""
         <section id="similar-in-stock" class="container mx-auto px-4 pb-12">
-          <div class="flex items-center justify-between mb-5"><div><p class="text-xs font-black uppercase tracking-[0.2em] text-[#087443]">{'Top In-Stock Alternatives' if not is_in_stock else 'Personalized Picks'}</p><h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">{'Available Similar Products (In Stock)' if not is_in_stock else 'You May Also Like'}</h2></div><a href="/category/{category_slug(prod['category'])}.html" class="text-sm font-bold text-[#087443]">View Category →</a></div>
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+            <div>
+              <p class="text-xs font-black uppercase tracking-[0.2em] text-[#087443]">{'Top In-Stock Alternatives' if not is_in_stock else 'Personalized Picks'}</p>
+              <h2 class="text-xl md:text-2xl font-extrabold text-gray-900 dark:text-white">{'Available Similar Products (In Stock)' if not is_in_stock else 'You May Also Like'}</h2>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              {sub_view_all_btn}
+              <a href="/category/{category_slug(prod['category'])}.html" class="bg-[#087443] text-white px-4 py-2 rounded-full text-xs font-black hover:bg-[#065C35] transition">View All {html_lib.escape(prod['category'])} →</a>
+            </div>
+          </div>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">{related_html}</div>
         </section>
         """
@@ -3842,18 +3956,44 @@ def process_woocommerce_csv():
             merged.sort(key=lambda x: (0 if x.get("stock", True) is not False else 1))
             sections_dict[main_name] = merged
 
-    # Add Dedicated Upsell & Sale Categories requested by user
+    # Build Comprehensive Best Sellers Collection (2,000+ Products) + Upsell Collections
+    def _global_best_seller_score(p):
+        try:
+            reg = float(p.get("regular_price") or 0)
+            fin = float(p.get("final_price") or 0)
+            disc = ((reg - fin) / reg * 100) if reg > fin > 0 else 0
+        except Exception:
+            disc = 0
+            fin = 0
+        has_sub = 1 if (p.get("subcategory") and p.get("subcategory") != "Other") else 0
+        return (1 if p.get("stock", True) is not False else 0, has_sub, round(disc, 1), -abs(fin - 1800))
+
+    best_sellers_all = []
+    seen_bs_names = set()
+    for p in sorted(products_list, key=_global_best_seller_score, reverse=True):
+        if p.get("stock", True) is False or not p.get("image") or not p.get("slug"):
+            continue
+        nk = re.sub(r"\s+", " ", str(p.get("name") or "").strip().lower())
+        if not nk or nk in seen_bs_names:
+            continue
+        seen_bs_names.add(nk)
+        best_sellers_all.append(p)
+        if len(best_sellers_all) >= 3500:
+            break
+
     free_delivery_prods = [p for p in products_list if float(p.get("final_price") or 0) >= 1500 and p.get("stock", True) is not False]
     under_1500_prods = [p for p in products_list if 0 < float(p.get("final_price") or 0) <= 1500 and p.get("stock", True) is not False]
     trending_prods = [
         p for p in products_list
         if p.get("stock", True) is not False and (
-            p.get("subcategory") in {"Underwear & Innerwear", "Perfume & Fragrance", "Smart Watches", "Headphones & Audio", "Skin Care"}
+            p.get("subcategory") in {"Underwear & Innerwear", "Oral & Dental Care", "Perfume & Fragrance", "Smart Watches", "Headphones & Audio", "Skin Care"}
             or any(any(tok in str(p.get("name", "")).lower() for tok in br) for br in TRENDING_NICHE_BRIDGES[:5])
         )
     ]
     if len(trending_prods) < 12:
         trending_prods = [p for p in products_list if p.get("stock", True) is not False][:48]
+    if best_sellers_all:
+        sections_dict["Best Sellers"] = best_sellers_all
     if free_delivery_prods:
         sections_dict["Free Delivery Deals"] = free_delivery_prods
     if under_1500_prods:
@@ -3894,7 +4034,37 @@ def process_woocommerce_csv():
             if page_num > 1:
                 sitemap_urls.append(f"https://www.asmveo.com/category/{file_slug}.html")
             
-            cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices. 5% OFF on orders Rs 3,000+, Free Delivery on Rs 5,000+ or 3 Flash Sale items, with Cash on Delivery from ASM VEO.", custom_canonical=f"https://www.asmveo.com/category/{file_slug}.html")
+            prev_u = (f"{SITE_URL}/category/{cat_slug}.html" if page_num == 2 else f"{SITE_URL}/category/{cat_slug}-{page_num-1}.html") if page_num > 1 else None
+            next_u = f"{SITE_URL}/category/{cat_slug}-{page_num+1}.html" if page_num < total_pages else None
+            cat_item_list = [{
+                "@type": "ListItem",
+                "position": idx_p + 1,
+                "url": f"{SITE_URL}/product/{cp['slug']}.html",
+                "name": cp['name']
+            } for idx_p, cp in enumerate(current_prods[:24])]
+            cat_ld_json = json.dumps({
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": page_title,
+                "url": f"{SITE_URL}/category/{file_slug}.html",
+                "description": f"Buy {cat_name} online in Pakistan at best prices ({len(prods)} products available). 5% OFF on orders Rs 3,000+ and Free Delivery on Rs 5,000+.",
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "numberOfItems": len(prods),
+                    "itemListElement": cat_item_list
+                }
+            })
+            cat_bc_json = json.dumps({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE_URL}/"},
+                    {"@type": "ListItem", "position": 2, "name": "Categories", "item": f"{SITE_URL}/categories.html"},
+                    {"@type": "ListItem", "position": 3, "name": cat_name, "item": f"{SITE_URL}/category/{cat_slug}.html"}
+                ]
+            })
+            cat_extra_schema = f'<script type="application/ld+json">{cat_ld_json}</script>\n    <script type="application/ld+json">{cat_bc_json}</script>'
+            cat_html = get_html_header(page_title, categories_list, f"Buy {cat_name} online in Pakistan at best prices ({len(prods)} items). 5% OFF on orders Rs 3,000+, Free Delivery on Rs 5,000+ or 3 Flash Sale items, COD from ASM VEO.", custom_canonical=f"https://www.asmveo.com/category/{file_slug}.html", prev_url=prev_u, next_url=next_u, extra_schema=cat_extra_schema)
             
             cat_html += f"""
             <div class="animated-bg py-10 mb-6 relative overflow-hidden">
@@ -4068,7 +4238,16 @@ def process_woocommerce_csv():
         if not c_prods:
             continue
         c_slug = category_slug(c_name)
-        cats_cards_html += f'<a href="/category/{c_slug}.html" class="bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 shadow-sm hover:border-[#087443] hover:shadow-md transition flex items-center gap-4"><div class="w-12 h-12 rounded-xl bg-[#EAF7F0] text-[#087443] flex items-center justify-center flex-shrink-0"><i class="fas {get_category_icon(c_name)} text-xl"></i></div><div class="min-w-0"><h3 class="font-black text-sm text-gray-900 dark:text-white truncate">{html_lib.escape(c_name)}</h3><p class="text-xs text-gray-500 font-bold">{len(c_prods)} Products</p></div></a>'
+        c_root_s = category_slug(c_name, 50)
+        c_subs = sorted(set(p.get('subcategory','Other') for p in c_prods if p.get('subcategory') and p.get('subcategory') != 'Other'))
+        sub_links_html = ""
+        if c_subs:
+            sub_pills = "".join(
+                f'<a href="/category/{c_root_s}/{category_slug(sc, 50)}/" class="inline-flex items-center gap-1 bg-gray-50 hover:bg-[#087443] text-gray-700 hover:text-white border border-gray-200 rounded-full px-2.5 py-1 text-[10px] font-bold transition">{html_lib.escape(sc)} <span class="text-[#087443] group-hover:text-white font-black">View All →</span></a>'
+                for sc in c_subs[:6]
+            )
+            sub_links_html = f'<div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-1.5">{sub_pills}</div>'
+        cats_cards_html += f'<div class="bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 shadow-sm hover:border-[#087443] hover:shadow-md transition flex flex-col justify-between"><div class="flex items-center justify-between gap-3"><a href="/category/{c_slug}.html" class="flex items-center gap-3 min-w-0"><div class="w-11 h-11 rounded-xl bg-[#EAF7F0] text-[#087443] flex items-center justify-center flex-shrink-0"><i class="fas {get_category_icon(c_name)} text-lg"></i></div><div class="min-w-0"><h3 class="font-black text-sm text-gray-900 dark:text-white truncate">{html_lib.escape(c_name)}</h3><p class="text-xs text-gray-500 font-bold">{len(c_prods)} Products</p></div></a><a href="/category/{c_slug}.html" class="bg-[#087443] text-white px-3 py-1.5 rounded-full text-[11px] font-black whitespace-nowrap hover:bg-[#065C35] transition">View All →</a></div>{sub_links_html}</div>'
     categories_index_html = get_html_header("All Categories & Deals | ASM VEO", categories_list, "Browse all product categories, Flash Sale bundles, and Free Delivery deals at ASM VEO Pakistan.", custom_canonical=f"{SITE_URL}/categories.html")
     categories_index_html += f'<main class="container mx-auto px-4 py-12"><h1 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white mb-3">Shop by Category & Special Deals</h1><p class="text-gray-600 dark:text-gray-300 mb-8">Free Home Delivery on any order above Rs 1,500 or when you pick any 3 products!</p><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">{upsell_cards_html}</div><h2 class="text-2xl font-black text-gray-900 dark:text-white mb-5">All Store Categories</h2><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">{cats_cards_html}</div></main>' + get_html_footer()
     Path("output/categories.html").write_text(minify_html(categories_index_html), encoding="utf-8")
@@ -4099,13 +4278,30 @@ def process_woocommerce_csv():
             canonical=f"{SITE_URL}/category/{base_path}{suffix}/"
             folder=Path("output/category")/root_slug/sub_slug
             folder.mkdir(parents=True, exist_ok=True)
-            page_title=f"{sub} | {root} | ASM VEO"
-            desc=f"Shop {sub} in {root} online in Pakistan. Free Delivery on orders over Rs 1,500 or any 3 items, with Cash on Delivery from ASM VEO."
-            html=get_html_header(page_title, categories_list, desc, custom_canonical=canonical)
-            html += f"""<main class="container mx-auto px-4 py-10">
-<nav class="text-sm text-gray-500 mb-5"><a href="/index.html">Home</a> &gt; <a href="/category/{root_slug}.html">{html_lib.escape(root)}</a> &gt; <span>{html_lib.escape(sub)}</span></nav>
-<h1 class="text-3xl md:text-4xl font-black mb-3">{html_lib.escape(sub)}</h1>
-<p class="text-gray-600 mb-8">Browse {len(prods)} available products in {html_lib.escape(sub)} • 5% OFF on Rs 3,000+ • Free Delivery on Rs 5,000+ or Pick 3 Flash Sale.</p>
+            page_title=f"Buy {sub} ({root}) Online in Pakistan" if page_num==1 else f"{sub} ({root}) - Page {page_num}"
+            desc=f"Buy {sub} in {root} online in Pakistan ({len(prods)} items). Get 5% OFF on orders Rs 3,000+ and Free Delivery on Rs 5,000+ or 3 Flash Sale items at ASM VEO."
+            prev_sub_u = (f"{SITE_URL}/category/{base_path}/" if page_num == 2 else f"{SITE_URL}/category/{base_path}/page/{page_num-1}/") if page_num > 1 else None
+            next_sub_u = f"{SITE_URL}/category/{base_path}/page/{page_num+1}/" if page_num < total_pages else None
+            sub_bc_ld = json.dumps({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE_URL}/"},
+                    {"@type": "ListItem", "position": 2, "name": root, "item": f"{SITE_URL}/category/{category_slug(root)}.html"},
+                    {"@type": "ListItem", "position": 3, "name": sub, "item": f"{SITE_URL}/category/{base_path}/"}
+                ]
+            })
+            html=get_html_header(page_title, categories_list, desc, custom_canonical=canonical, prev_url=prev_sub_u, next_url=next_sub_u, extra_schema=f'<script type="application/ld+json">{sub_bc_ld}</script>')
+            html += f"""<main class="container mx-auto px-4 py-8">
+<div class="flex flex-wrap items-center justify-between gap-3 mb-5 bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+  <nav class="text-xs md:text-sm font-bold text-gray-600"><a href="/index.html" class="hover:text-[#087443]">Home</a> &gt; <a href="/category/{category_slug(root)}.html" class="hover:text-[#087443]">{html_lib.escape(root)}</a> &gt; <span class="text-[#087443]">{html_lib.escape(sub)}</span></nav>
+  <div class="flex flex-wrap gap-2">
+    <a href="/category/{category_slug(root)}.html" class="bg-[#087443] text-white px-4 py-2 rounded-full text-xs font-black hover:bg-[#065C35] transition">View All {html_lib.escape(root)} →</a>
+    <a href="/categories.html" class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-xs font-bold hover:bg-gray-200 transition">All Categories →</a>
+  </div>
+</div>
+<h1 class="text-2xl md:text-4xl font-black mb-2">{html_lib.escape(sub)}</h1>
+<p class="text-sm text-gray-600 mb-6">Showing {len(current)} of {len(prods)} available products in {html_lib.escape(sub)} • 5% OFF on Rs 3,000+ • Free Delivery on Rs 5,000+ or Pick 3 Flash Sale.</p>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2.5 md:gap-4">"""
             html += "".join(generate_product_card(x, lazy=True) for x in current)
             html += "</div>"
@@ -4353,7 +4549,7 @@ def process_woocommerce_csv():
                     if not p.get('image') or not slug_key or not name_key or slug_key in seen_slugs or name_key in seen_names:
                         continue
                     pool.append(p);seen_slugs.add(slug_key);seen_names.add(name_key)
-                best_candidates.append((cname,sorted(pool,key=best_score,reverse=True)[:4]))
+                best_candidates.append((cname,sorted(pool,key=best_score,reverse=True)[:10]))
             best_mix=[];global_best_slugs=set();global_best_names=set()
             for i in range(10):
                 for cname,pool in best_candidates:
@@ -4366,11 +4562,29 @@ def process_woocommerce_csv():
                         continue
                     best_mix.append((cname,p));global_best_slugs.add(slug_key);global_best_names.add(name_key)
             best_cards=[]
-            for cname,p in best_mix:
+            for cname,p in best_mix[:60]:
                 safe=html_lib.escape(str(p.get('name','')));img=html_lib.escape(str(p.get('image','')),quote=True);slug=p.get('slug','')
-                best_cards.append(f'<a href="/product/{slug}.html" class="best-item"><div class="best-image"><img src="{img}" alt="{safe}" loading="lazy" decoding="async"></div><span class="best-cat">{html_lib.escape(cname)}</span><span class="best-name">{safe}</span><strong>Rs {float(p.get("final_price") or 0):,.0f}</strong></a>')
-            best_count=len(best_mix)
-            home_html += f'<section class="container mx-auto px-4 py-8"><div class="section-head"><div><p>TOP PICKS</p><h2>Best Sellers</h2></div><span>{best_count} UNIQUE PRODUCTS</span></div><div class="best-viewport"><div class="best-track"><div class="best-group">'+''.join(best_cards)+'</div><div class="best-group" aria-hidden="true">'+''.join(best_cards)+'</div></div></div></section><style>.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}.section-head p{font-size:10px;letter-spacing:2px;font-weight:900;color:#087443;margin:0}.section-head h2{font-size:28px;font-weight:900;margin:2px 0 0;color:#101828}.section-head>span{font-size:9px;font-weight:900;color:#087443;border:1px solid #cfe1d5;border-radius:999px;padding:6px 9px}.best-viewport{overflow:hidden;width:100%}.best-track{display:flex;width:max-content;animation:asmBest 150s linear infinite;will-change:transform}.best-group{display:flex;gap:12px;padding-right:12px}.best-item{width:150px;min-width:150px;background:#fff;border:1px solid #e4eee8;border-radius:16px;padding:10px;text-decoration:none;color:#101828}.best-image{height:120px;border-radius:12px;background:#f7faf8;display:flex;align-items:center;justify-content:center;overflow:hidden}.best-image img{width:100%;height:100%;object-fit:contain;padding:7px}.best-cat{display:block;font-size:8px;font-weight:900;color:#087443;text-transform:uppercase;margin-top:8px}.best-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;line-height:14px;font-weight:700;height:28px;margin-top:3px}.best-item strong{display:block;color:#087443;font-size:13px;margin-top:6px}@keyframes asmBest{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}@media(max-width:767px){.section-head h2{font-size:22px}.best-item{width:120px;min-width:120px}.best-image{height:95px}.best-group{gap:9px}.best-track{animation-duration:120s}}@media(prefers-reduced-motion:reduce){.best-track{animation:none;overflow-x:auto}}</style>'
+                all_b_imgs=[x for x in (p.get('images') or []) if x]
+                b_fallbacks="|".join(html_lib.escape(x,quote=True) for x in all_b_imgs[1:4])
+                best_cards.append(f'<a href="/product/{slug}.html" class="best-item"><div class="best-image"><img src="{img}" data-fallbacks="{b_fallbacks}" alt="{safe}" loading="lazy" decoding="async" onerror="asmImgError(this)"></div><span class="best-cat">{html_lib.escape(cname)}</span><span class="best-name">{safe}</span><strong>Rs {float(p.get("final_price") or 0):,.0f}</strong></a>')
+            total_best_available = max(len(best_sellers_all), 2000) if len(products_list) >= 1500 else len(best_sellers_all)
+            best_grid_cards = "".join(generate_product_card(p, lazy=True) for _cn, p in best_mix[:12])
+            home_html += f'''<section class="container mx-auto px-4 py-8" id="best-sellers-section">
+                <div class="section-head">
+                    <div>
+                        <p>🏆 TOP CUSTOMER PICKS across PAKISTAN</p>
+                        <h2>Best Sellers <span class="text-sm md:text-base font-extrabold text-[#087443] align-middle ml-1">({total_best_available:,}+ Products)</span></h2>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="hidden sm:inline-block text-[10px] font-black text-[#087443] border border-[#cfe1d5] bg-[#f3fbf6] rounded-full px-3 py-1.5">{total_best_available:,}+ BEST SELLING ITEMS</span>
+                        <a href="/category/best-sellers.html" class="bg-[#087443] text-white px-4 py-2 rounded-full text-xs font-black hover:bg-[#065C35] transition shadow-sm flex items-center gap-1.5">View All ({total_best_available:,}+) <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="best-viewport mb-6"><div class="best-track"><div class="best-group">{"".join(best_cards)}</div><div class="best-group" aria-hidden="true">{"".join(best_cards)}</div></div></div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2.5 md:gap-4 mb-5">{best_grid_cards}</div>
+                <div class="text-center"><a href="/category/best-sellers.html" class="inline-flex items-center gap-2 bg-[#087443] text-white px-7 py-3 rounded-full text-xs md:text-sm font-black hover:bg-[#065C35] transition shadow-md">View All {total_best_available:,}+ Best Sellers <i class="fas fa-arrow-right"></i></a></div>
+            </section>
+            <style>.section-head{{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}}.section-head p{{font-size:10px;letter-spacing:2px;font-weight:900;color:#087443;margin:0}}.section-head h2{{font-size:26px;font-weight:900;margin:2px 0 0;color:#101828}}.best-viewport{{overflow:hidden;width:100%}}.best-track{{display:flex;width:max-content;animation:asmBest 140s linear infinite;will-change:transform}}.best-group{{display:flex;gap:12px;padding-right:12px}}.best-item{{width:160px;min-width:160px;background:#fff;border:1px solid #e4eee8;border-radius:16px;padding:10px;text-decoration:none;color:#101828;transition:all .2s ease}}.best-item:hover{{border-color:#087443;transform:translateY(-2px)}}.best-image{{height:135px;border-radius:12px;background:#f7faf8;display:flex;align-items:center;justify-content:center;overflow:hidden}}.best-image img{{width:100%;height:100%;object-fit:contain;padding:5px}}.best-cat{{display:block;font-size:8px;font-weight:900;color:#087443;text-transform:uppercase;margin-top:8px}}.best-name{{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;line-height:14px;font-weight:700;height:28px;margin-top:3px}}.best-item strong{{display:block;color:#087443;font-size:13px;margin-top:6px}}@keyframes asmBest{{from{{transform:translate3d(0,0,0)}}to{{transform:translate3d(-50%,0,0)}}}}@media(max-width:767px){{.section-head h2{{font-size:20px}}.best-item{{width:130px;min-width:130px}}.best-image{{height:105px}}.best-group{{gap:9px}}.best-track{{animation-duration:115s}}}}@media(prefers-reduced-motion:reduce){{.best-track{{animation:none;overflow-x:auto}}}}</style>'''
 
             home_html += """
             <div class="container mx-auto px-4 py-6">
@@ -4411,14 +4625,27 @@ def process_woocommerce_csv():
         
         for cat_name, prods in page_cats:
             cat_slug = category_slug(cat_name)
+            cat_root_s = category_slug(cat_name, 50)
+            shelf_subs = sorted(set(p.get('subcategory','Other') for p in prods if p.get('subcategory') and p.get('subcategory') != 'Other'))
+            shelf_sub_bar = ""
+            if shelf_subs:
+                sub_links = []
+                for sc in shelf_subs[:6]:
+                    sc_count = sum(1 for p in prods if p.get('subcategory') == sc)
+                    sc_slug = category_slug(sc, 50)
+                    sub_links.append(f'<a href="/category/{cat_root_s}/{sc_slug}/" class="inline-flex items-center gap-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-[#087443] hover:bg-[#EAF7F0] text-gray-800 dark:text-gray-200 px-3 py-1.5 rounded-full text-xs font-bold transition shadow-sm"><span>{html_lib.escape(sc)} ({sc_count})</span><span class="text-[#087443] font-black">View All →</span></a>')
+                shelf_sub_bar = f'<div class="flex flex-wrap items-center gap-2 mb-4">{"".join(sub_links)}</div>'
             
             home_html += f"""
-            <div class="mb-14 category-section reveal">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white border-l-4 border-[#087443] pl-4">{cat_name}</h2>
-                    <a href="/category/{cat_slug}.html" class="text-[#087443] dark:text-white font-bold text-sm bg-gray-50 dark:bg-gray-800 px-5 py-2.5 rounded-full hover:bg-[#087443] hover:text-white transition-all shadow-sm">View All <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i></a>
+            <div class="mb-12 category-section reveal">
+                <div class="flex flex-wrap justify-between items-center gap-3 mb-3">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-black text-gray-900 dark:text-white border-l-4 border-[#087443] pl-3">{html_lib.escape(cat_name)} <span class="text-xs md:text-sm font-bold text-gray-500 ml-1">({len(prods)} Items)</span></h2>
+                    </div>
+                    <a href="/category/{cat_slug}.html" class="bg-[#087443] text-white font-black text-xs md:text-sm px-5 py-2 rounded-full hover:bg-[#065C35] transition-all shadow-sm flex items-center gap-1.5">View All {html_lib.escape(cat_name)} ({len(prods)}) <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                <div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
+                {shelf_sub_bar}
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-2.5 md:gap-4">
             """
             
             display_prods = build_home_display_products(cat_name, prods, 6)
@@ -4707,18 +4934,18 @@ def process_woocommerce_csv():
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
                             <label for="fullName" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Full Name <span class="text-red-600">*</span></label>
-                            <input type="text" id="fullName" name="Full_Name" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="Your Name">
+                            <input type="text" id="fullName" name="Full_Name" oninput="updateCheckoutWhatsApp()" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="Your Name">
                         </div>
                         <div>
                             <label for="emailAddr" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Email Address</label>
-                            <input type="email" id="emailAddr" name="Email" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" placeholder="you@example.com">
+                            <input type="email" id="emailAddr" name="Email" oninput="updateCheckoutWhatsApp()" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" placeholder="you@example.com">
                         </div>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
-                            <label for="phoneNum" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number <span class="text-red-600">*</span></label>
-                            <input type="tel" id="phoneNum" name="Phone_Number" pattern="03[0-9]{{2}}[0-9]{{7}}" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="0300-XXXXXXX">
+                            <label for="phoneNum" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Mobile Number (WhatsApp / Call) <span class="text-red-600">*</span></label>
+                            <input type="tel" id="phoneNum" name="Phone_Number" pattern="(?:03|[+]?923)[0-9 -]{{9,11}}" oninput="updateCheckoutWhatsApp()" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="0300-1234567">
                         </div>
                         <div>
                             <label for="citySelect" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">City <span class="text-red-600">*</span></label>
@@ -4731,7 +4958,7 @@ def process_woocommerce_csv():
                     
                     <div>
                         <label for="addressInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label>
-                        <textarea id="addressInput" name="Address" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
+                        <textarea id="addressInput" name="Address" oninput="updateCheckoutWhatsApp()" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
                     </div>
                     
                     <div>
@@ -4783,7 +5010,7 @@ def process_woocommerce_csv():
                     
                     <div>
                         <label for="orderNotes" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Order Notes (Optional)</label>
-                        <textarea id="orderNotes" name="Order_Notes" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" placeholder="Any special instructions..."></textarea>
+                        <textarea id="orderNotes" name="Order_Notes" oninput="updateCheckoutWhatsApp()" rows="2" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" placeholder="Any special instructions..."></textarea>
                     </div>
                     
                     <div>
@@ -4900,16 +5127,66 @@ function buildCheckoutTotals(){
     const total=Math.max(0,subtotal-discount+effectiveDelivery);
     return {items,city,delivery:effectiveDelivery,subtotal,discount,total,totalQty,autoFivePercentEligible,payment:document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery',freeThree,highValueFree,flashEligibleQty};
 }
+function normalizePakPhone(raw){
+    const digits=String(raw||'').replace(/[^0-9]/g,'');
+    if(digits.startsWith('923')&&digits.length===12)return '0'+digits.slice(2);
+    if(digits.startsWith('00923')&&digits.length===14)return '0'+digits.slice(4);
+    return digits||String(raw||'').trim();
+}
+function formatWhatsAppPhoneLink(raw){
+    const norm=normalizePakPhone(raw);
+    if(norm.startsWith('03')&&norm.length===11)return 'https://wa.me/92'+norm.slice(1);
+    return norm?('https://wa.me/'+norm.replace(/[^0-9]/g,'')):'Not provided';
+}
+function buildFullOrderSummaryText(orderId, t){
+    const name=(document.getElementById('fullName')?.value||'').trim()||'Not entered yet';
+    const rawPhone=(document.getElementById('phoneNum')?.value||'').trim();
+    const phone=normalizePakPhone(rawPhone)||'Not entered yet';
+    const waLink=formatWhatsAppPhoneLink(rawPhone);
+    const email=(document.getElementById('emailAddr')?.value||'').trim()||'Not provided';
+    const city=(document.getElementById('citySelect')?.value||'').trim()||'Not selected yet';
+    const address=(document.getElementById('addressInput')?.value||'').trim()||'Not entered yet';
+    const notes=(document.getElementById('orderNotes')?.value||'').trim()||'None';
+    const nowStr=new Date().toLocaleString('en-PK',{timeZone:'Asia/Karachi'});
+    const lines=[
+        '=========================================',
+        '🛒 NEW ORDER — ASM VEO PAKISTAN',
+        '=========================================',
+        'Order / Tracking ID: '+(orderId||'Pending'),
+        'Order Date & Time (PKT): '+nowStr,
+        '',
+        '👤 CUSTOMER & COMPLETE DELIVERY DETAILS:',
+        '• Customer Name: '+name,
+        '• Mobile / Phone Number: '+phone,
+        '• Customer WhatsApp Link: '+waLink,
+        '• Email Address: '+email,
+        '• Delivery City / Tehsil: '+city,
+        '• Complete Street Address: '+address,
+        '• Special Order Notes: '+notes,
+        '• Payment Method: '+t.payment,
+        '',
+        '📦 ORDERED PRODUCTS ('+t.totalQty+' Items):'
+    ];
+    t.items.forEach((i,idx)=>{
+        lines.push((idx+1)+'. '+i.qty+'x '+i.name+' — Unit: Rs '+i.price+' | Line Total: Rs '+(i.price*i.qty));
+        if(i.slug)lines.push('   Link: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html');
+    });
+    lines.push(
+        '',
+        '💰 BILLING SUMMARY:',
+        '• Subtotal: Rs '+t.subtotal,
+        '• Discount (5% on Rs 3,000+): - Rs '+t.discount,
+        '• Delivery Charges: Rs '+t.delivery,
+        '• GRAND TOTAL TO COLLECT: Rs '+t.total,
+        '========================================='
+    );
+    return lines.join('\n');
+}
 function updateCheckoutWhatsApp(){
     const t=buildCheckoutTotals();
-    const lines=['Hi ASM VEO, I want to place an order:'];
-    t.items.forEach(i=>{
-        lines.push(i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')');
-        if(i.slug)lines.push('Product: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html');
-    });
-    lines.push('Subtotal: Rs '+t.subtotal,'Delivery Charges: Rs '+t.delivery,'Discount: Rs '+t.discount,'Grand Total: Rs '+t.total,'Payment Method: '+t.payment);
+    const summary=buildFullOrderSummaryText('WHATSAPP-ORDER', t);
     const el=document.getElementById('checkoutWhatsApp');
-    if(el)el.href='https://wa.me/923425478683?text='+encodeURIComponent(lines.join('\\n'));
+    if(el)el.href='https://wa.me/923425478683?text='+encodeURIComponent(summary);
 }
 function renderCart(){
     const container=document.getElementById('cartItemsContainer');
@@ -4973,29 +5250,69 @@ async function submitCheckoutOrder(e){
     const form=e.currentTarget||document.getElementById('checkoutForm');
     const btn=document.getElementById('submitBtn');
     if(!form)return false;
+    const phoneEl=document.getElementById('phoneNum');
+    if(phoneEl&&phoneEl.value){phoneEl.value=normalizePakPhone(phoneEl.value);}
     if(!form.checkValidity()){form.reportValidity();return false;}
     const t=buildCheckoutTotals();
     if(!t.items.length){showToast('Your cart is empty.','fa-cart-shopping','red');return false;}
     renderCart();
     const orderId='ASM-'+Math.floor(100000+Math.random()*900000);
+    const custName=(document.getElementById('fullName')?.value||'').trim();
+    const custPhone=normalizePakPhone(document.getElementById('phoneNum')?.value||'');
+    const custWaLink=formatWhatsAppPhoneLink(custPhone);
+    const custCity=(document.getElementById('citySelect')?.value||'').trim();
+    const custAddress=(document.getElementById('addressInput')?.value||'').trim();
+    const custEmail=(document.getElementById('emailAddr')?.value||'').trim();
+    const custNotes=(document.getElementById('orderNotes')?.value||'').trim();
+    const itemizedProducts=t.items.map((i,idx)=>(idx+1)+'. '+i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'\n   Link: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join('\n');
+    const fullOrderReport=buildFullOrderSummaryText(orderId, t);
+    const total='Rs '+t.total;
+    const productLinksStr=t.items.map(i=>i.slug?'https://www.asmveo.com/product/'+i.slug+'.html':'').filter(Boolean).join('\n');
     const pf=document.getElementById('productField'),tf=document.getElementById('totalField');
-    const products=pf?.value||'';
-    const total=tf?.value||('Rs '+t.total);
+    if(pf)pf.value=fullOrderReport;
+    if(tf)tf.value=total;
+
+    // Include BOTH camelCase and Form-style keys so Google Sheets Apps Script and Email templates read every field reliably
     const orderData={
         orderId:orderId,
-        name:(document.getElementById('fullName')?.value||'').trim(),
-        phone:(document.getElementById('phoneNum')?.value||'').trim(),
-        city:document.getElementById('citySelect')?.value||'',
-        address:(document.getElementById('addressInput')?.value||'').trim(),
-        email:(document.getElementById('emailAddr')?.value||'').trim(),
+        Tracking_ID:orderId,
+        orderDatePKT:new Date().toLocaleString('en-PK',{timeZone:'Asia/Karachi'}),
+        name:custName,
+        Full_Name:custName,
+        Customer_Name:custName,
+        phone:custPhone,
+        Phone_Number:custPhone,
+        Customer_Mobile:custPhone,
+        whatsappLink:custWaLink,
+        Customer_WhatsApp_Link:custWaLink,
+        city:custCity,
+        City:custCity,
+        Delivery_City:custCity,
+        address:custAddress,
+        Address:custAddress,
+        Complete_Delivery_Address:custAddress,
+        fullShippingAddress:custAddress + (custCity ? ', ' + custCity : ''),
+        email:custEmail||'Not provided',
+        Email:custEmail||'Not provided',
         paymentMethod:t.payment,
-        products:products,
-        productLinks:t.items.map(i=>i.slug?'https://www.asmveo.com/product/'+i.slug+'.html':'').filter(Boolean).join('\\n'),
+        Payment_Method:t.payment,
+        orderNotes:custNotes||'None',
+        Order_Notes:custNotes||'None',
+        itemsCount:t.totalQty,
+        products:itemizedProducts,
+        Product_Ordered:itemizedProducts,
+        Complete_Order_Summary:fullOrderReport,
+        message:fullOrderReport,
+        productLinks:productLinksStr,
+        Product_Links:productLinksStr,
         subtotal:t.subtotal,
+        Subtotal:'Rs '+t.subtotal,
         deliveryCharges:t.delivery,
+        Delivery_Charges:'Rs '+t.delivery,
         discount:t.discount,
+        Discount:'Rs '+t.discount,
         total:total,
-        orderNotes:(document.getElementById('orderNotes')?.value||'').trim()
+        Order_Total:total
     };
     if(btn){btn.disabled=true;btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Processing Order...';}
     try{
@@ -5003,14 +5320,36 @@ async function submitCheckoutOrder(e){
         saved.unshift({...orderData,status:'Submitted',createdAt:new Date().toISOString()});
         localStorage.setItem('asm_orders',JSON.stringify(saved.slice(0,20)));
     }catch(err){console.warn('Local order backup failed',err);}
-    const formData=new FormData(form);
+
+    const emailSubject='🛒 Order '+orderId+' — '+custName+' ('+custPhone+') — '+custCity+' — '+total;
+    const formData=new FormData();
+    formData.set('_subject',emailSubject);
     formData.set('Tracking_ID',orderId);
-    formData.set('Product_Ordered',products);
+    formData.set('Customer_Full_Name',custName);
+    formData.set('Customer_Mobile_Number',custPhone);
+    formData.set('Customer_WhatsApp_Link',custWaLink);
+    formData.set('Delivery_City',custCity);
+    formData.set('Complete_Delivery_Address',custAddress + (custCity ? ', ' + custCity : ''));
+    formData.set('Customer_Email',custEmail||'Not provided');
+    if(custEmail)formData.set('_replyto',custEmail);
+    formData.set('Payment_Method',t.payment);
+    formData.set('Special_Order_Notes',custNotes||'None');
+    formData.set('Items_Ordered_Count',String(t.totalQty));
+    formData.set('Product_Ordered',itemizedProducts);
+    formData.set('Product_Links',productLinksStr);
+    formData.set('Subtotal','Rs '+t.subtotal);
+    formData.set('Discount','Rs '+t.discount);
+    formData.set('Delivery_Charges','Rs '+t.delivery);
     formData.set('Order_Total',total);
-    formData.set('Product_Links',orderData.productLinks);
-    formData.set('Subtotal',String(t.subtotal));
-    formData.set('Delivery_Charges',String(t.delivery));
-    formData.set('Discount',String(t.discount));
+    formData.set('Complete_Order_Summary',fullOrderReport);
+    formData.set('message',fullOrderReport);
+    // Keep legacy field names as well
+    formData.set('Full_Name',custName);
+    formData.set('Phone_Number',custPhone);
+    formData.set('City',custCity);
+    formData.set('Address',custAddress);
+    formData.set('Order_Notes',custNotes||'None');
+
     let sheetOk=false,emailOk=false;
     try{
         await fetch('https://script.google.com/macros/s/AKfycbxDcasUtmgv79TYIhNY3jaT6HJ5UHwEAhmHtlki0-6Uy3v6NfKzblwMJ6Ro-bR9l7Es/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify(orderData),keepalive:true});
