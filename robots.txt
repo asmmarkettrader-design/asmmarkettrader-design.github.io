@@ -3,9 +3,15 @@ Allow: /
 Allow: /assets/
 Allow: /category/
 Allow: /product/
+Allow: /blog/
+Allow: /city/
 
-# 🌟 GEO FIX: Explicitly allowing AI Crawlers to read site for recommendations 🌟
+# 🌟 GEO & AI Search Crawlers Explicitly Allowed 🌟
 User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
 Allow: /
 User-agent: Google-Extended
 Allow: /
@@ -13,8 +19,16 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: anthropic-ai
 Allow: /
+User-agent: PerplexityBot
+Allow: /
 
 Disallow: /checkout.html
+Disallow: /order-success.html
+Disallow: /track-order.html
 
 Sitemap: https://www.asmveo.com/sitemap.xml
+Sitemap: https://www.asmveo.com/sitemap-index.xml
+Sitemap: https://www.asmveo.com/sitemap-categories.xml
+Sitemap: https://www.asmveo.com/sitemap-products.xml
+Sitemap: https://www.asmveo.com/sitemap-pages.xml
 Sitemap: https://www.asmveo.com/image-sitemap.xml
