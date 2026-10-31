@@ -1232,28 +1232,141 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
         function clearCompare() {{ localStorage.removeItem('asm_compare'); updateCompareBar(); updateCompareButtons(); }}
         function escapeHtml(value) {{ return String(value || '').replace(/[&<>"']/g, function(ch) {{ return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[ch]; }}); }}
+        const ASM_SEARCH_SYNONYMS = {{
+            mobile:['smartphone','phone','cell'],
+            phone:['mobile','smartphone','holder','charger'],
+            watch:['smartwatch','timepiece','clock','wrist','ghari'],
+            smartwatch:['smart watch','fitness watch','watch'],
+            earbuds:['earphone','airpods','tws','handsfree','headphone','bluetooth'],
+            airpods:['earbuds','tws','earphone'],
+            perfume:['fragrance','cologne','attar','oud','scent','body spray','khushboo'],
+            shoes:['shoe','footwear','sneaker','sandal','slipper','laces','jutay'],
+            bag:['handbag','backpack','purse','wallet','tote','pouch'],
+            wallet:['purse','card holder','leather wallet'],
+            suit:['unstitched','dress','kurta','shalwar','apparel','kapray'],
+            underwear:['innerwear','boxer','brief','bra','vest','fdm','undergarment'],
+            toothpaste:['dental','teeth','whitening','mouthwash','toothbrush','manjan'],
+            cream:['moisturizer','serum','lotion','face wash','skincare','whitening'],
+            kitchen:['cookware','bottle','dispenser','utensil','plate','sieve','home']
+        }};
+        function buildSearchQueryTokens(query) {{
+            const q = String(query || '').toLowerCase().trim();
+            if (!q) return {{ q: '', compact: '', rawTerms: [], expandedTerms: [] }};
+            const compact = q.replace(/\\s+/g, '');
+            const rawTerms = q.split(/\\s+/).filter(t => t.length >= 2);
+            const expanded = new Set(rawTerms);
+            if (compact.length >= 4) expanded.add(compact);
+            rawTerms.forEach(t => {{
+                (ASM_SEARCH_SYNONYMS[t] || []).forEach(s => expanded.add(s));
+            }});
+            if (ASM_SEARCH_SYNONYMS[compact]) {{
+                ASM_SEARCH_SYNONYMS[compact].forEach(s => expanded.add(s));
+            }}
+            return {{ q, compact, rawTerms, expandedTerms: Array.from(expanded) }};
+        }}
+        function scoreSearchProduct(p, parsed) {{
+            if (!p || !parsed.q) return 0;
+            const nameLow = String(p.name || '').toLowerCase();
+            const nameCompact = nameLow.replace(/\\s+/g, '');
+            const catLow = String(p.category || '').toLowerCase();
+            const brandLow = String(p.brand || '').toLowerCase();
+            const hay = nameLow + ' ' + catLow + ' ' + brandLow;
+            let score = 0;
+            if (nameLow.includes(parsed.q) || nameCompact.includes(parsed.compact)) score += 60;
+            else if (hay.includes(parsed.q)) score += 35;
+            let matchedRaw = 0;
+            parsed.rawTerms.forEach(t => {{
+                const wordRe = new RegExp('(^|[^a-z0-9])' + t.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&'), 'i');
+                if (wordRe.test(nameLow)) {{ score += 22; matchedRaw += 1; }}
+                else if (nameLow.includes(t)) {{ score += 14; matchedRaw += 1; }}
+                else if (catLow.includes(t) || brandLow.includes(t)) {{ score += 10; matchedRaw += 1; }}
+            }});
+            if (parsed.rawTerms.length > 1 && matchedRaw === parsed.rawTerms.length) score += 35;
+            parsed.expandedTerms.forEach(t => {{
+                if (!parsed.rawTerms.includes(t) && hay.includes(t)) score += 8;
+            }});
+            if (p.stock !== false && score > 0) score += 4;
+            return score;
+        }}
+        function smartSearchResults(query) {{
+            const parsed = buildSearchQueryTokens(query);
+            if (!parsed.q) return [];
+            const source = window.searchIndex || window.searchSuggestIndex || [];
+            return source
+                .map(p => ({{ p, score: scoreSearchProduct(p, parsed) }}))
+                .filter(x => x.score >= 12)
+                .sort((a, b) => b.score - a.score)
+                .map(x => x.p);
+        }}
+        function getRelatedSearchKeywords(query, matchedProducts, limit=10) {{
+            const parsed = buildSearchQueryTokens(query);
+            const stop = new Set(['the','and','for','with','from','pack','pcs','piece','pieces','set','in','of','to','on','by','new','best','online','pakistan','random','color','colour','size','use','daily','routine','designed','accessory']);
+            const freq = new Map();
+            const addPhrase = (phrase, weight=1) => {{
+                const clean = String(phrase || '').toLowerCase().replace(/[^a-z0-9 &+-]/g, ' ').replace(/\\s+/g, ' ').trim();
+                if (!clean || clean.length < 3 || clean === parsed.q || clean.length > 34) return;
+                freq.set(clean, (freq.get(clean) || 0) + weight);
+            }};
+            // Add curated synonym expansions first
+            parsed.rawTerms.forEach(t => {{
+                (ASM_SEARCH_SYNONYMS[t] || []).forEach(syn => addPhrase(syn, 8));
+            }});
+            if (ASM_SEARCH_SYNONYMS[parsed.compact]) {{
+                ASM_SEARCH_SYNONYMS[parsed.compact].forEach(syn => addPhrase(syn, 8));
+            }}
+            (matchedProducts || []).slice(0, 35).forEach((p, idx) => {{
+                const w = Math.max(1, 6 - Math.floor(idx / 6));
+                if (p.category) addPhrase(p.category, w * 2);
+                if (p.brand && p.brand !== 'ASM VEO') addPhrase(p.brand + ' ' + (parsed.rawTerms[0] || ''), w * 2);
+                const words = String(p.name || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\\s+/).filter(x => x.length >= 3 && !stop.has(x) && !/^\\d+$/.test(x));
+                for (let i = 0; i < words.length; i++) {{
+                    if (parsed.rawTerms.some(rt => words[i].includes(rt) || rt.includes(words[i]))) {{
+                        if (i > 0) addPhrase(words[i - 1] + ' ' + words[i], w * 3);
+                        if (i + 1 < words.length) addPhrase(words[i] + ' ' + words[i + 1], w * 3);
+                    }}
+                }}
+                if (words.length >= 2) addPhrase(words.slice(0, 2).join(' '), w);
+                if (words.length >= 3) addPhrase(words.slice(0, 3).join(' '), w);
+            }});
+            return Array.from(freq.entries())
+                .sort((a, b) => b[1] - a[1])
+                .map(e => e[0])
+                .slice(0, limit);
+        }}
         function showSearchSuggestions() {{
-            let input=document.getElementById('searchInput'), panel=document.getElementById('searchSuggestions');
-            if(!input || !panel) return;
-            let index = window.searchSuggestIndex || window.searchIndex || [];
-            let q=input.value.toLowerCase().trim(); if(q.length<2) {{ panel.classList.add('hidden'); return; }}
-            let results=index.filter(p=>(p.name||'').toLowerCase().includes(q)||(p.category||'').toLowerCase().includes(q)||(p.brand||'').toLowerCase().includes(q)).slice(0,8);
-            if(!results.length) {{ panel.classList.add('hidden'); return; }}
-            panel.innerHTML=results.map(p=>'<a href="/product/'+encodeURIComponent(p.slug)+'.html" class="flex items-center gap-3 p-3 hover:bg-gray-50 dark:hover:bg-gray-700 transition"><div class="w-10 h-10 rounded-lg bg-red-50 text-[#087443] flex items-center justify-center flex-shrink-0"><i class="fas fa-magnifying-glass text-sm"></i></div><div class="min-w-0"><div class="font-bold text-xs text-gray-900 dark:text-white truncate">'+escapeHtml(p.name)+'</div><div class="text-[11px] text-[#087443] font-black">Rs '+p.final_price+'</div></div></a>').join('');
+            let input = document.getElementById('searchInput'), panel = document.getElementById('searchSuggestions');
+            if (!input || !panel) return;
+            let index = window.searchIndex || window.searchSuggestIndex || [];
+            let q = input.value.trim();
+            if (q.length < 2) {{ panel.classList.add('hidden'); return; }}
+            const parsed = buildSearchQueryTokens(q);
+            const scored = index
+                .map(p => ({{ p, score: scoreSearchProduct(p, parsed) }}))
+                .filter(x => x.score >= 12)
+                .sort((a, b) => b.score - a.score);
+            const results = scored.slice(0, 7).map(x => x.p);
+            const relatedWords = getRelatedSearchKeywords(q, results, 8);
+            if (!results.length && !relatedWords.length) {{ panel.classList.add('hidden'); return; }}
+            let html = '';
+            if (relatedWords.length) {{
+                html += '<div class="p-3 bg-[#F7FCF8] border-b border-gray-100"><div class="text-[10px] font-black uppercase tracking-wider text-[#087443] mb-2"><i class="fas fa-sparkles mr-1"></i> Related Words & Searches</div><div class="flex flex-wrap gap-1.5">' +
+                    relatedWords.map(w => '<a href="/index.html?search=' + encodeURIComponent(w) + '" class="inline-flex items-center gap-1 bg-white border border-[#cfe1d5] hover:border-[#087443] hover:bg-[#087443] hover:text-white text-gray-800 px-2.5 py-1 rounded-full text-[11px] font-bold transition"><i class="fas fa-magnifying-glass text-[9px] opacity-70"></i> ' + escapeHtml(w) + '</a>').join('') +
+                    '</div></div>';
+            }}
+            if (results.length) {{
+                html += '<div class="divide-y divide-gray-100">' + results.map(p => {{
+                    const imgTag = p.image ? '<img src="' + escapeHtml(p.image) + '" class="w-11 h-11 rounded-lg object-contain bg-gray-50 border border-gray-100 p-0.5 flex-shrink-0" alt="" onerror="this.src=\\'/icon.png\\'">' : '<div class="w-11 h-11 rounded-lg bg-[#EAF7F0] text-[#087443] flex items-center justify-center flex-shrink-0"><i class="fas fa-box text-sm"></i></div>';
+                    return '<a href="/product/' + encodeURIComponent(p.slug) + '.html" class="flex items-center gap-3 p-2.5 hover:bg-gray-50 transition">' +
+                        imgTag +
+                        '<div class="min-w-0 flex-1"><div class="text-[10px] font-bold text-[#087443] uppercase">' + escapeHtml(p.category || '') + '</div><div class="font-bold text-xs text-gray-900 truncate">' + escapeHtml(p.name) + '</div></div>' +
+                        '<div class="text-xs text-[#087443] font-black whitespace-nowrap">Rs ' + p.final_price + '</div></a>';
+                }}).join('') + '</div>';
+                html += '<a href="/index.html?search=' + encodeURIComponent(q) + '" class="block text-center bg-[#087443] text-white py-2.5 text-xs font-black hover:bg-[#065C35] transition">View All Search Results for "' + escapeHtml(q) + '" (' + scored.length + ') →</a>';
+            }}
+            panel.innerHTML = html;
             panel.classList.remove('hidden');
         }}
-        function hideSearchSuggestions() {{ let p=document.getElementById('searchSuggestions'); if(p) setTimeout(()=>p.classList.add('hidden'),180); }}
-        function smartSearchResults(query) {{
-            query=String(query||'').toLowerCase().trim(); if(!query) return [];
-            const synonyms={{mobile:'smartphone',phone:'mobile',earbuds:'earphone',perfume:'fragrance',ladies:'women',men:'mens',laptop:'computer'}};
-            const terms=query.split(/\\s+/).map(t=>synonyms[t]||t);
-            function sim(a,b){{if(a===b)return 1;if(a.includes(b)||b.includes(a))return .8;return 0;}}
-            return (typeof searchIndex==='undefined'?[]:searchIndex.map(p=>{{
-                let hay=(p.name+' '+p.category+' '+(p.brand||'')).toLowerCase(),score=0;
-                terms.forEach(t=>{{if(hay.includes(t))score+=10;else hay.split(/\\s+/).forEach(w=>score+=Math.round(sim(t,w)*3));}});
-                if(hay.includes(query))score+=20; return {{p,score}};
-            }}).filter(x=>x.score>=4).sort((a,b)=>b.score-a.score).map(x=>x.p));
-        }}
+        function hideSearchSuggestions() {{ let p=document.getElementById('searchSuggestions'); if(p) setTimeout(()=>p.classList.add('hidden'),220); }}
 
         function addToRecentlyViewed(product) {{
             let recent = JSON.parse(localStorage.getItem('asm_recent')) || [];
@@ -1462,18 +1575,90 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 </head>
 <body class="text-gray-900 dark:text-gray-100">
 
-    <div class="asm-top-strip text-white text-[11px] py-2 hidden md:block">
-      <div class="container mx-auto px-4 flex justify-between items-center"><div class="flex items-center gap-6 font-semibold"><span><i class="fas fa-tags mr-1.5 text-[#F7B733]"></i> 5% OFF on Shopping Rs 3,000+</span><span><i class="fas fa-truck-fast mr-1.5 text-[#F7B733]"></i> FREE Delivery on Shopping Rs 5,000+ or Pick 3 Flash Sale!</span><span><i class="fas fa-box mr-1.5"></i> Cash on Delivery Nationwide</span></div><div class="flex gap-4"><a href="/flash-sale.html" class="text-[#F7B733] font-black hover:underline">⚡ Flash Sale (Pick 3 Free Delivery)</a><a href="/contact.html">Support</a></div></div>
+    <div class="asm-top-strip text-white text-[11px] py-1.5 hidden md:block border-b border-white/10">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center gap-5 font-semibold">
+          <span class="inline-flex items-center gap-1.5 bg-white/10 px-2.5 py-0.5 rounded-full"><i class="fas fa-tags text-[#F7B733]"></i> 5% OFF on Orders Rs 3,000+</span>
+          <span class="inline-flex items-center gap-1.5 bg-white/10 px-2.5 py-0.5 rounded-full"><i class="fas fa-truck-fast text-[#F7B733]"></i> FREE Delivery on Rs 5,000+ or Pick 3 Flash Sale</span>
+          <span class="inline-flex items-center gap-1.5"><i class="fas fa-shield-halved text-emerald-300"></i> Cash on Delivery Nationwide</span>
+        </div>
+        <div class="flex items-center gap-4 font-bold">
+          <a href="/track-order.html" class="hover:text-[#F7B733] transition"><i class="fas fa-location-dot mr-1"></i> Track Order</a>
+          <a href="/flash-sale.html" class="text-[#F7B733] font-black hover:underline">⚡ Flash Sale</a>
+          <a href="/contact.html" class="hover:text-[#F7B733] transition"><i class="fab fa-whatsapp mr-1"></i> Support</a>
+        </div>
+      </div>
     </div>
     <header class="asm-main-header sticky top-0 z-50">
-      <div class="md:hidden bg-[#087443] text-white text-xs py-2"><div class="container mx-auto px-4 flex justify-between"><a href="/index.html" class="font-semibold"><i class="fas fa-home mr-1"></i> Home</a><button type="button" onclick="toggleMobileCats()" class="font-semibold"><i class="fas fa-list mr-1"></i> All Categories <i class="fas fa-chevron-down text-[10px] ml-0.5"></i></button></div></div>
+      <div class="md:hidden bg-[#087443] text-white text-xs py-2"><div class="container mx-auto px-4 flex justify-between items-center"><a href="/index.html" class="font-bold flex items-center gap-1"><i class="fas fa-home"></i> Home</a><span class="text-[10px] font-extrabold text-[#F7B733]">5% Off Rs 3000+ • Free Del Rs 5000+</span><button type="button" onclick="toggleMobileCats()" class="font-bold flex items-center gap-1"><i class="fas fa-list"></i> Categories <i class="fas fa-chevron-down text-[10px]"></i></button></div></div>
       <div id="mobileCatMenu" class="hidden md:hidden bg-white border-b border-gray-100 shadow-lg"><div class="container mx-auto px-4 py-3 grid grid-cols-2 gap-1.5 max-h-72 overflow-y-auto">{cat_links}</div></div>
-      <div class="container mx-auto px-4 py-2.5 md:py-3.5 flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-5">
-        <a href="/index.html" class="flex items-center gap-2 min-w-max"><img src="/icon.png" alt="ASM VEO Logo" class="h-11 md:h-12 w-11 md:w-12 object-contain rounded-xl"><div class="leading-none"><div class="asm-brand-title text-lg md:text-xl font-black">ASM VEO</div><div class="text-[9px] tracking-[.28em] text-[#087443] font-black mt-1">PAKISTAN</div></div></a>
-        <div class="asm-search-wrap order-3 md:order-none w-full md:flex-1 md:max-w-2xl md:mx-4 relative flex"><input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, categories, brands..." class="w-full py-2.5 px-4 outline-none text-gray-800 font-semibold text-sm"><button onclick="executeSearch()" class="asm-search-btn text-white px-5"><i class="fas fa-search"></i></button><div id="searchSuggestions" class="hidden absolute left-0 right-0 top-full mt-2 bg-white border border-gray-200 rounded-2xl shadow-2xl z-[80] suggestions-panel overflow-hidden"></div></div>
-        <div class="ml-auto flex items-center gap-2 md:gap-3"><a href="/account.html" class="asm-icon-btn hidden sm:flex items-center gap-2 px-3 py-2"><i class="fas fa-user"></i><span class="hidden lg:inline text-xs font-bold text-gray-700">Account</span></a><a href="/wishlist.html" class="asm-icon-btn relative w-10 h-10 flex items-center justify-center"><i class="fas fa-heart"></i><span class="wishlist-badge absolute -top-1.5 -right-1 bg-[#087443] text-white text-[10px] font-black min-w-[18px] h-[18px] px-1 rounded-full flex items-center justify-center">0</span></a><a href="/checkout.html" class="asm-cart-btn cart-icon-pulse relative px-4 h-10 flex items-center gap-2 font-bold text-xs md:text-sm"><i class="fas fa-shopping-cart"></i><span class="hidden lg:inline">Cart</span><span class="cart-badge absolute -top-1.5 -right-1 bg-[#F7B733] text-[#043D25] text-[10px] font-black min-w-[18px] h-[18px] px-1 rounded-full flex items-center justify-center">0</span></a></div>
+      <div class="container mx-auto px-4 py-2.5 md:py-3 flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-5">
+        <a href="/index.html" class="flex items-center gap-2.5 min-w-max group">
+          <div class="p-1 rounded-xl bg-gradient-to-br from-[#EAF7F0] to-white border border-[#cfe1d5] shadow-sm group-hover:border-[#087443] transition">
+            <img src="/icon.png" alt="ASM VEO Logo" class="h-10 md:h-11 w-10 md:w-11 object-contain rounded-lg">
+          </div>
+          <div class="leading-none">
+            <div class="asm-brand-title text-lg md:text-2xl font-black tracking-tight">ASM VEO</div>
+            <div class="text-[9px] tracking-[.26em] text-[#087443] font-black mt-0.5">PAKISTAN STORE</div>
+          </div>
+        </a>
+        <div class="asm-search-wrap order-3 md:order-none w-full md:flex-1 md:max-w-2xl md:mx-4 relative flex items-center">
+          <i class="fas fa-magnifying-glass text-gray-400 pl-4 text-sm hidden sm:inline"></i>
+          <input type="text" id="searchInput" onkeypress="handleSearch(event)" placeholder="Search products, watches, perfumes, electronics..." class="w-full py-2.5 px-3.5 outline-none text-gray-800 font-semibold text-sm">
+          <button onclick="executeSearch()" class="asm-search-btn text-white px-5 h-11 font-bold text-xs md:text-sm flex items-center gap-1.5 flex-shrink-0"><i class="fas fa-search"></i> <span class="hidden sm:inline">Search</span></button>
+          <div id="searchSuggestions" class="hidden absolute left-0 right-0 top-full mt-2 bg-white border border-gray-200 rounded-2xl shadow-2xl z-[80] suggestions-panel overflow-hidden"></div>
+        </div>
+        <div class="ml-auto flex items-center gap-2 md:gap-2.5">
+          <a href="/track-order.html" class="asm-header-pill hidden xl:flex" title="Track Order">
+            <span class="asm-header-pill-icon"><i class="fas fa-truck-fast"></i></span>
+            <span class="asm-header-pill-text"><small>Order</small><b>Track</b></span>
+          </a>
+          <a href="/account.html" class="asm-header-pill hidden sm:flex" title="My Account">
+            <span class="asm-header-pill-icon"><i class="fas fa-user"></i></span>
+            <span class="asm-header-pill-text hidden lg:flex"><small>Sign In</small><b>Account</b></span>
+          </a>
+          <a href="/wishlist.html" class="asm-header-pill relative" title="My Wishlist">
+            <span class="asm-header-pill-icon"><i class="fas fa-heart text-rose-500"></i></span>
+            <span class="asm-header-pill-text hidden lg:flex"><small>Saved</small><b>Wishlist</b></span>
+            <span class="wishlist-badge absolute -top-1.5 -right-1 bg-[#087443] text-white text-[10px] font-black min-w-[19px] h-[19px] px-1 rounded-full flex items-center justify-center shadow">0</span>
+          </a>
+          <a href="/checkout.html" class="asm-cart-pill cart-icon-pulse relative" title="Cart & Checkout">
+            <span class="asm-cart-pill-icon"><i class="fas fa-bag-shopping"></i></span>
+            <span class="asm-header-pill-text text-left"><small class="text-emerald-100">Checkout</small><b class="text-white">My Cart</b></span>
+            <span class="cart-badge absolute -top-1.5 -right-1 bg-[#F7B733] text-[#043D25] text-[10px] font-black min-w-[20px] h-[20px] px-1 rounded-full flex items-center justify-center shadow">0</span>
+          </a>
+        </div>
       </div>
-      <nav class="asm-nav hidden md:block"><div class="container mx-auto px-4 flex items-center h-11"><div id="desktopCatDropdown" class="relative dropdown z-50 mr-3 h-full"><button type="button" onclick="toggleDesktopCats(event)" aria-expanded="false" class="h-full px-4 font-bold text-xs md:text-sm flex items-center gap-2 bg-black/15 hover:bg-black/25 transition"><i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down text-[10px] dropdown-arrow transition-transform duration-200"></i></button><div id="desktopCatMenu" class="dropdown-menu absolute left-0 top-full hidden text-gray-800 bg-white shadow-2xl rounded-b-2xl w-72 py-2 border border-gray-200 max-h-[420px] overflow-y-auto z-[90]">{cat_links}</div></div><a href="/index.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Home</a><a href="/categories.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Categories</a><a href="/category/best-sellers.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold text-[#F7B733]">🏆 Best Sellers</a><a href="/flash-sale.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold text-[#F7B733]">⚡ Flash Sale (Pick 3 Free Delivery)</a><a href="/category/trending-deals.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">🔥 Trending Deals</a><a href="/category/under-1500-deals.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">💰 Under Rs 1,500</a><a href="/blog.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Guides</a><a href="/contact.html" class="h-full px-3.5 flex items-center text-xs md:text-sm font-bold">Contact</a><div class="ml-auto h-full flex items-center px-3 text-[11px] font-bold bg-white/10">🏷️ 5% Off Rs 3,000+ • 🚚 Free Delivery Rs 5,000+</div></div></nav>
+      <nav class="asm-nav hidden md:block">
+        <div class="container mx-auto px-4 flex items-center h-11 gap-1">
+          <div id="desktopCatDropdown" class="relative dropdown z-50 mr-2 h-full flex-shrink-0">
+            <button type="button" onclick="toggleDesktopCats(event)" aria-expanded="false" class="h-full px-4 font-extrabold text-xs md:text-sm flex items-center gap-2 bg-[#F7B733] text-[#043D25] hover:bg-[#f5c24c] transition rounded-none" style="color:#043D25!important">
+              <i class="fas fa-bars"></i> <span>All Categories</span> <i class="fas fa-chevron-down text-[10px] dropdown-arrow transition-transform duration-200"></i>
+            </button>
+            <div id="desktopCatMenu" class="dropdown-menu absolute left-0 top-full hidden text-gray-800 bg-white shadow-2xl rounded-b-2xl w-72 py-2 border border-gray-200 max-h-[420px] overflow-y-auto z-[90]">{cat_links}</div>
+          </div>
+          <a href="/index.html" class="h-full px-3 flex items-center text-xs md:text-sm font-bold whitespace-nowrap">Home</a>
+          <a href="/categories.html" class="h-full px-3 flex items-center text-xs md:text-sm font-bold whitespace-nowrap">Categories</a>
+          <a href="/category/best-sellers.html" class="h-full px-3 flex items-center text-xs md:text-sm font-extrabold text-[#F7B733] whitespace-nowrap">🏆 Best Sellers</a>
+          <a href="/flash-sale.html" class="h-full px-3 flex items-center text-xs md:text-sm font-extrabold text-[#F7B733] whitespace-nowrap">⚡ Flash Sale (Pick 3 Free Del)</a>
+          <a href="/category/trending-deals.html" class="h-full px-3 flex items-center text-xs md:text-sm font-bold whitespace-nowrap">🔥 Trending</a>
+          <a href="/category/under-1500-deals.html" class="h-full px-3 flex items-center text-xs md:text-sm font-bold whitespace-nowrap">💰 Under Rs 1,500</a>
+          <a href="/blog.html" class="h-full px-3 flex items-center text-xs md:text-sm font-bold whitespace-nowrap">Guides</a>
+          <a href="/contact.html" class="h-full px-3 flex items-center text-xs md:text-sm font-bold whitespace-nowrap">Contact</a>
+          <div class="ml-auto h-8 flex items-center px-3 rounded-full text-[11px] font-extrabold bg-white/12 border border-white/20 whitespace-nowrap flex-shrink-0">🇵🇰 5% Off Rs 3,000+ • Free Del Rs 5,000+</div>
+        </div>
+      </nav>
+      <style>
+        .asm-header-pill{{display:inline-flex;align-items:center;gap:8px;padding:5px 11px 5px 6px;border-radius:999px;background:#fff;border:1.5px solid #dce9e1;color:#15251d;box-shadow:0 3px 10px rgba(6,92,53,.05);transition:all .2s ease}}
+        .asm-header-pill:hover{{border-color:#087443;background:#f3fbf6;transform:translateY(-1px)}}
+        .asm-header-pill-icon{{width:32px;height:32px;border-radius:50%;background:#eaf7f0;color:#087443;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}}
+        .asm-header-pill-text{{display:flex;flex-direction:column;line-height:1.1}}
+        .asm-header-pill-text small{{font-size:9px;font-weight:700;color:#64748b}}
+        .asm-header-pill-text b{{font-size:11px;font-weight:900;color:#0f172a}}
+        .asm-cart-pill{{display:inline-flex;align-items:center;gap:8px;padding:5px 14px 5px 6px;border-radius:999px;background:linear-gradient(135deg,#087443,#04452a);color:#fff!important;box-shadow:0 6px 16px rgba(8,116,67,.22);transition:all .2s ease}}
+        .asm-cart-pill:hover{{transform:translateY(-1px);box-shadow:0 8px 20px rgba(8,116,67,.3)}}
+        .asm-cart-pill-icon{{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.16);color:#F7B733;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}}
+      </style>
     </header>
 
     <!-- Compare Products Bar -->
@@ -3237,6 +3422,8 @@ def process_woocommerce_csv():
     os.makedirs("output/assets", exist_ok=True)
     placeholder_svg = """<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800"><rect width="800" height="800" fill="#f3f4f6"/><rect x="170" y="170" width="460" height="360" rx="30" fill="#e5e7eb"/><circle cx="310" cy="310" r="65" fill="#d1d5db"/><path d="M220 470l105-105 90 90 65-65 100 80H220z" fill="#9ca3af"/><text x="400" y="620" text-anchor="middle" font-family="Arial" font-size="34" fill="#6b7280">ASM VEO</text></svg>"""
     Path("output/assets/product-placeholder.svg").write_text(placeholder_svg, encoding="utf-8")
+    pk_flag_b64 = "/9j/4AAQSkZJRgABAQEBLAEsAAD/4QCgRXhpZgAASUkqAAgAAAAEAA4BAgBEAAAAPgAAAJiCAgAGAAAAggAAABoBBQABAAAAiAAAABsBBQABAAAAkAAAAAAAAABmbGFnIG9mIFBha2lzdGFuIHdhdmluZyB3aXRoIGhpZ2hseSBkZXRhaWxlZCB0ZXh0aWxlIHRleHR1cmUgcGF0dGVybkJ1bnlvcywBAAABAAAALAEAAAEAAAD/4QXPaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIj4KCTxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CgkJPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczpJcHRjNHhtcENvcmU9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBDb3JlLzEuMC94bWxucy8iICAgeG1sbnM6R2V0dHlJbWFnZXNHSUZUPSJodHRwOi8veG1wLmdldHR5aW1hZ2VzLmNvbS9naWZ0LzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94bXAvMS4wLyIgIHhtbG5zOmlwdGNFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnhtcFJpZ2h0cz0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3JpZ2h0cy8iIGRjOlJpZ2h0cz0iQnVueW9zIiBwaG90b3Nob3A6Q3JlZGl0PSJHZXR0eSBJbWFnZXMvaVN0b2NrcGhvdG8iIEdldHR5SW1hZ2VzR0lGVDpBc3NldElEPSIxNzg4ODU0NTYiIHhtcFJpZ2h0czpXZWJTdGF0ZW1lbnQ9Imh0dHBzOi8vd3d3LmlzdG9ja3Bob3RvLmNvbS9sZWdhbC9saWNlbnNlLWFncmVlbWVudD91dG1fbWVkaXVtPW9yZ2FuaWMmYW1wO3V0bV9zb3VyY2U9Z29vZ2xlJmFtcDt1dG1fY2FtcGFpZ249aXB0Y3VybCIgcGx1czpEYXRhTWluaW5nPSJodHRwOi8vbnMudXNlcGx1cy5vcmcvbGRmL3ZvY2FiL0RNSS1QUk9ISUJJVEVELUVYQ0VQVFNFQVJDSEVOR0lORUlOREVYSU5HIiA+CjxkYzpjcmVhdG9yPjxyZGY6U2VxPjxyZGY6bGk+QnVueW9zPC9yZGY6bGk+PC9yZGY6U2VxPjwvZGM6Y3JlYXRvcj48ZGM6ZGVzY3JpcHRpb24+PHJkZjpBbHQ+PHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5mbGFnIG9mIFBha2lzdGFuIHdhdmluZyB3aXRoIGhpZ2hseSBkZXRhaWxlZCB0ZXh0aWxlIHRleHR1cmUgcGF0dGVybjwvcmRmOmxpPjwvcmRmOkFsdD48L2RjOmRlc2NyaXB0aW9uPgo8cGx1czpMaWNlbnNvcj48cmRmOlNlcT48cmRmOmxpIHJkZjpwYXJzZVR5cGU9J1Jlc291cmNlJz48cGx1czpMaWNlbnNvclVSTD5odHRwczovL3d3dy5pc3RvY2twaG90by5jb20vcGhvdG8vbGljZW5zZS1nbTE3ODg4NTQ1Ni0/dXRtX21lZGl1bT1vcmdhbmljJmFtcDt1dG1fc291cmNlPWdvb2dsZSZhbXA7dXRtX2NhbXBhaWduPWlwdGN1cmw8L3BsdXM6TGljZW5zb3JVUkw+PC9yZGY6bGk+PC9yZGY6U2VxPjwvcGx1czpMaWNlbnNvcj4KCQk8L3JkZjpEZXNjcmlwdGlvbj4KCTwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InciPz4K/+0AoFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAACEHAFaAAMbJUccAlAABkJ1bnlvcxwCeABEZmxhZyBvZiBQYWtpc3RhbiB3YXZpbmcgd2l0aCBoaWdobHkgZGV0YWlsZWQgdGV4dGlsZSB0ZXh0dXJlIHBhdHRlcm4cAnQABkJ1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"
+    Path("output/assets/pk-flag-silk.jpg").write_bytes(__import__("base64").b64decode(pk_flag_b64))
     
     # 🌟 FIX 1: Copying Logo to output folder 🌟
     if os.path.exists("icon.png"):
@@ -4459,19 +4646,34 @@ def process_woocommerce_csv():
     total_home_pages = math.ceil(len(all_categories_list) / cats_per_home_page) if all_categories_list else 1
 
     def build_home_display_products(cat_name, prods, limit=6):
-        # Keep each category shelf relevant: no borrowing from other categories and
-        # never repeat a card merely to fill a visual row.
-        chosen, seen_slugs, seen_names = [], set(), set()
+        # Deduplicate by both full normalized title AND base product prefix (first 26 chars)
+        # so 6 color variants of the same suit/product do not fill the entire homepage row.
+        chosen, seen_slugs, seen_names, seen_prefixes = [], set(), set(), set()
         for p in prods:
+            if p.get('stock', True) is False:
+                continue
             slug_key = str(p.get('slug') or '').strip().lower()
             name_key = re.sub(r"\s+", " ", str(p.get('name', '') or '').strip().lower())
+            prefix_key = re.sub(r"[^a-z0-9]+", " ", name_key).strip()[:26].strip()
             if not slug_key or not name_key or not p.get('image'):
                 continue
-            if slug_key in seen_slugs or name_key in seen_names:
+            if slug_key in seen_slugs or name_key in seen_names or (len(prefix_key) >= 12 and prefix_key in seen_prefixes):
                 continue
             chosen.append(p); seen_slugs.add(slug_key); seen_names.add(name_key)
+            if len(prefix_key) >= 12:
+                seen_prefixes.add(prefix_key)
             if len(chosen) >= limit:
                 break
+        if len(chosen) < limit:
+            for p in prods:
+                if p.get('stock', True) is False:
+                    continue
+                slug_key = str(p.get('slug') or '').strip().lower()
+                name_key = re.sub(r"\s+", " ", str(p.get('name', '') or '').strip().lower())
+                if slug_key and name_key and p.get('image') and slug_key not in seen_slugs and name_key not in seen_names:
+                    chosen.append(p); seen_slugs.add(slug_key); seen_names.add(name_key)
+                    if len(chosen) >= limit:
+                        break
         return chosen
 
     for h_page in range(1, total_home_pages + 1):
@@ -4480,87 +4682,228 @@ def process_woocommerce_csv():
         home_html = get_html_header(page_title, categories_list, "Shop Electronics, Fashion, Home Appliances, Beauty Products and Accessories online in Pakistan. Fast Delivery, Cash on Delivery and Secure Shopping at ASM VEO.", custom_canonical=f"https://www.asmveo.com/{home_filename}")
         
         if h_page == 1:
-            # ===== PAKISTAN-THEMED MAIN HERO BANNERS =====
-            def hero_products(words, count=3, group_name=None):
-                # Prefer the primary assigned category. This avoids showing beauty
-                # products in fashion banners or electronics in home banners.
-                if group_name in _asm_grouped_products:
-                    return [pp for pp in _asm_grouped_products[group_name]
-                            if pp.get('image') and pp.get('slug')][:count]
-                pool=[]; seen=set()
-                for pp in products_list:
-                    hay=' '.join([str(pp.get('name','')),str(pp.get('category','')),str(pp.get('subcategory','')),str(pp.get('childcategory',''))]).lower()
-                    if pp.get('image') and pp.get('slug') and any(w in hay for w in words) and pp.get('slug') not in seen:
-                        pool.append(pp); seen.add(pp.get('slug'))
+            # ===== 5 PRO-MAX LUXURY DESIGNER HERO BANNERS (2 PAKISTAN FLAG + 3 EXCLUSIVE CURATION PODIUMS) =====
+            def hero_products(words, count=4, group_name=None, min_price=0):
+                pool = []
+                seen = set()
+                seen_pref = set()
+                source_list = _asm_grouped_products.get(group_name, []) if (group_name and group_name in _asm_grouped_products) else products_list
+                for pp in source_list:
+                    if pp.get('stock', True) is False or not pp.get('image') or not pp.get('slug'):
+                        continue
+                    if min_price and float(pp.get('final_price') or 0) < min_price:
+                        continue
+                    hay = ' '.join([str(pp.get('name','')), str(pp.get('category','')), str(pp.get('subcategory',''))]).lower()
+                    if not group_name and words and not any(w in hay for w in words):
+                        continue
+                    pref = re.sub(r'[^a-z0-9]+', ' ', str(pp.get('name','')).lower()).strip()[:24]
+                    if pp.get('slug') not in seen and pref not in seen_pref:
+                        pool.append(pp); seen.add(pp.get('slug')); seen_pref.add(pref)
+                        if len(pool) >= count:
+                            break
+                if len(pool) < count:
+                    for pp in products_list:
+                        if pp.get('stock', True) is not False and pp.get('image') and pp.get('slug') and pp.get('slug') not in seen:
+                            pool.append(pp); seen.add(pp.get('slug'))
+                            if len(pool) >= count:
+                                break
                 return pool[:count]
 
-            hero_sets=[
-                ("Pakistan Shopping Festival","Shop Smart • Live Better","Fashion & everyday picks","Fashion",["fashion","apparel","clothing","dress","wear","bag","shoe"]),
-                ("Pakistan Tech Deals","Smart Tech • Better Living","Gadgets & electronics for everyday use","Electronics",["electronic","laptop","computer","earbud","headphone","smartwatch","gadget","camera","speaker"]),
-                ("Beauty & Care Edit","Beauty • Care • Confidence","Beauty and personal-care essentials","Beauty & Personal Care",["beauty","cosmetic","makeup","skin","skincare","hair care","perfume","fragrance"]),
-                ("Home & Kitchen Picks","Made for Pakistani Homes","Kitchen, home and daily essentials","Home & Kitchen",["home","kitchen","living","furniture","decor","cookware","appliance","storage","cleaning"]),
+            hero_sets = [
+                {
+                    "theme": "pk-flag-1",
+                    "eyebrow": "🇵🇰 ASM VEO PAKISTAN • OFFICIAL FLAGSHIP STORE",
+                    "script_line": "Pakistan Grand Edition",
+                    "headline": "PAKISTAN SHOPPING FESTIVAL",
+                    "sub": "Nationwide Cash on Delivery • Automatic 5% OFF on Orders Rs 3,000+ • Free Delivery on Orders Rs 5,000+",
+                    "cta_text": "EXPLORE BEST SELLERS",
+                    "cta_href": "/category/best-sellers.html",
+                    "group": None,
+                    "words": ["watch", "perfume", "earbud", "handbag", "serum"],
+                    "min_price": 2500,
+                    "badges": ["🇵🇰 All Pakistan COD", "🏷️ 5% OFF Rs 3,000+", "🚚 Free Delivery Rs 5,000+"]
+                },
+                {
+                    "theme": "pk-flag-2",
+                    "eyebrow": "🇵🇰 PAKISTAN MEGA BUNDLE OFFER • LIMITED TIME",
+                    "script_line": "Azadi & Everyday Value Deals",
+                    "headline": "PICK ANY 3 ITEMS = FREE DELIVERY",
+                    "sub": "Choose any 3 eligible Flash Sale products (Rs 500–1,500) and unlock 100% Free Home Delivery anywhere in Pakistan.",
+                    "cta_text": "OPEN FLASH SALE (PICK 3)",
+                    "cta_href": "/flash-sale.html",
+                    "group": "Home & Kitchen",
+                    "words": ["kitchen", "home", "bottle", "decor", "lamp"],
+                    "min_price": 500,
+                    "badges": ["⚡ Pick Any 3 = Free Delivery", "💰 Rs 500–1,500 Range", "✅ 7-Day Easy Returns"]
+                },
+                {
+                    "theme": "crimson-luxe",
+                    "eyebrow": "✨ LUXURY DESIGNER SERIES • TOP RATED",
+                    "script_line": "Premium Bazar",
+                    "headline": "EXCLUSIVE CURATIONS",
+                    "sub": "Handpicked luxury timepieces, signature perfumes, smart gadgets, and premium fashion curated for discerning shoppers.",
+                    "cta_text": "SHOP EXCLUSIVE CURATIONS",
+                    "cta_href": "/category/best-sellers.html",
+                    "group": "Fashion",
+                    "words": ["watch", "perfume", "handbag", "shoe", "luxury"],
+                    "min_price": 2500,
+                    "badges": ["👑 Premium Quality", "🏷️ 5% Instant Discount Rs 3,000+", "🚚 Free Shipping Rs 5,000+"]
+                },
+                {
+                    "theme": "sapphire-tech",
+                    "eyebrow": "🔥 NEXT-GEN ELECTRONICS & GADGETS",
+                    "script_line": "Smart Living Pakistan",
+                    "headline": "SMART WATCHES & PRO AUDIO",
+                    "sub": "Upgrade your daily routine with noise-cancelling TWS earbuds, Bluetooth smartwatches, fast chargers, and studio ring lights.",
+                    "cta_text": "SHOP ELECTRONICS",
+                    "cta_href": "/category/electronics.html",
+                    "group": "Electronics",
+                    "words": ["watch", "earbud", "charger", "speaker", "microphone"],
+                    "min_price": 1200,
+                    "badges": ["🎧 Pro Audio & Wearables", "⚡ Fast Dispatch", "🛡️ Quality Checked"]
+                },
+                {
+                    "theme": "velvet-beauty",
+                    "eyebrow": "💎 GLOW, GROOMING & FRAGRANCE EDIT",
+                    "script_line": "Beauty & Confidence",
+                    "headline": "SKINCARE & SIGNATURE SCENTS",
+                    "sub": "Discover organic serums, long-lasting Arabic & French perfumes, dental care, and daily grooming essentials.",
+                    "cta_text": "SHOP BEAUTY & CARE",
+                    "cta_href": "/category/beauty-personal-care.html",
+                    "group": "Beauty & Personal Care",
+                    "words": ["perfume", "serum", "cream", "beauty", "fragrance"],
+                    "min_price": 900,
+                    "badges": ["🌸 Long-Lasting Scents", "✨ Skincare Essentials", "🇵🇰 Nationwide Delivery"]
+                },
             ]
-            hero_slides=[]
-            for hi,(title,kicker,sub,cat,words) in enumerate(hero_sets):
-                hprods=hero_products(words,3,cat)
-                if not hprods: hprods=[pp for pp in products_list if pp.get('image') and pp.get('slug')][:3]
-                product_visuals=[]
-                for pp in hprods:
-                    img=html_lib.escape(str(pp.get('image','')),quote=True); nm=html_lib.escape(str(pp.get('name','')))
-                    loading='eager' if hi==0 else 'lazy'
-                    product_visuals.append(f'<a href="/product/{pp.get("slug")}.html" class="hero-product"><img src="{img}" alt="{nm}" loading="{loading}" decoding="async"><span>{nm}</span></a>')
-                flag='<span class="pk-flag"><i></i><b></b></span>'
-                cat_has_products=bool(hero_products(words,1,cat))
-                hero_href=f'/category/{category_slug(cat)}.html' if cat_has_products else '/categories.html'
-                hero_slides.append(f'''<div class="asm-hero-slide {"is-active" if hi==0 else ""}" aria-hidden="{"false" if hi==0 else "true"}">
-                    <div class="hero-greenwash"></div><div class="hero-pattern"></div>
-                    <div class="hero-copy"><div class="hero-topline">{flag}<span>ASM VEO • PAKISTAN</span></div>
-                    <span class="hero-kicker">{html_lib.escape(kicker)}</span><h2>{html_lib.escape(title)}</h2><p>{html_lib.escape(sub)}</p>
-                    <div class="hero-badges"><span>Cash on Delivery</span><span>All Pakistan</span><span>Flat Rs 180 Delivery</span></div>
-                    <a href="{hero_href}" class="hero-cta">SHOP {html_lib.escape(cat.upper())} <i class="fas fa-arrow-right"></i></a></div>
-                    <div class="hero-products">{"".join(product_visuals)}</div>
+            hero_slides = []
+            for hi, hcfg in enumerate(hero_sets):
+                hprods = hero_products(hcfg["words"], 4, hcfg["group"], min_price=hcfg.get("min_price", 0))
+                podium_items = []
+                for pi, pp in enumerate(hprods[:4]):
+                    img = html_lib.escape(str(pp.get('image','')), quote=True)
+                    nm = html_lib.escape(clean_hhc_title(str(pp.get('name',''))))
+                    all_p_imgs = [x for x in (pp.get('images') or []) if x]
+                    p_fb = "|".join(html_lib.escape(x, quote=True) for x in all_p_imgs[1:4])
+                    loading = 'eager' if hi == 0 else 'lazy'
+                    price_v = float(pp.get('final_price') or 0)
+                    podium_items.append(
+                        f'<a href="/product/{pp.get("slug")}.html" class="pro-podium-card pos-{pi+1}">'
+                        f'<div class="pro-podium-item-box">'
+                        f'<img src="{img}" data-fallbacks="{p_fb}" alt="{nm}" loading="{loading}" decoding="async" onerror="asmImgError(this)">'
+                        f'<span class="pro-podium-price">Rs {price_v:,.0f}</span>'
+                        f'</div>'
+                        f'<div class="pro-podium-base"><span class="pro-podium-title">{nm}</span></div>'
+                        f'</a>'
+                    )
+                badges_html = "".join(f'<span>{html_lib.escape(b)}</span>' for b in hcfg["badges"])
+                hero_slides.append(f'''<div class="asm-hero-slide theme-{hcfg["theme"]} {"is-active" if hi==0 else ""}" aria-hidden="{"false" if hi==0 else "true"}">
+                    <div class="pro-hero-bg"></div>
+                    <div class="pro-hero-ribbon"></div>
+                    <div class="pro-hero-bokeh"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                    <div class="container mx-auto px-4 pro-hero-inner">
+                        <div class="pro-hero-copy">
+                            <div class="pro-hero-eyebrow">{hcfg["eyebrow"]}</div>
+                            <div class="pro-hero-script">{html_lib.escape(hcfg["script_line"])}</div>
+                            <h2>{html_lib.escape(hcfg["headline"])}</h2>
+                            <p>{html_lib.escape(hcfg["sub"])}</p>
+                            <div class="pro-hero-badges">{badges_html}</div>
+                            <div class="pro-hero-actions">
+                                <a href="{hcfg["cta_href"]}" class="pro-hero-cta">{html_lib.escape(hcfg["cta_text"])} <i class="fas fa-arrow-right"></i></a>
+                                <a href="/flash-sale.html" class="pro-hero-secondary-cta">⚡ Pick 3 Free Delivery</a>
+                            </div>
+                        </div>
+                        <div class="pro-hero-stage">
+                            <div class="pro-stage-glow"></div>
+                            <div class="pro-podium-grid">{"".join(podium_items)}</div>
+                        </div>
+                    </div>
                 </div>''')
 
             home_html += f'''
             <h1 class="sr-only">Pakistan's Trusted Online Shopping Store - ASM VEO</h1>
-            <section id="heroCarousel" class="asm-hero" aria-label="ASM VEO Pakistan promotions">
+            <!-- Search Results Section Placed at VERY TOP of Main Content so Searches Show Immediately Above the Fold! -->
+            <section id="searchResultsSection" class="hidden container mx-auto px-4 py-6">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 shadow-sm mb-6">
+                    <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-gray-100 dark:border-gray-700">
+                        <div>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-[#087443]">ASM VEO Smart Search</span>
+                            <h2 id="searchResultsHeading" class="text-xl md:text-2xl font-black text-gray-900 dark:text-white mt-0.5"></h2>
+                            <p id="searchResultsCount" class="text-gray-500 text-xs font-bold mt-0.5"></p>
+                        </div>
+                        <button type="button" onclick="clearSearchAndRestoreHome()" class="bg-gray-100 hover:bg-[#087443] text-gray-800 hover:text-white px-4 py-2 rounded-full text-xs font-black transition flex items-center gap-1.5"><i class="fas fa-arrow-left"></i> Back to All Categories</button>
+                    </div>
+                    <div id="searchRelatedWords" class="mt-3 pt-1"></div>
+                </div>
+                <div id="searchResultsGridWrap"></div>
+            </section>
+            <div id="homeTopSections">
+            <section id="heroCarousel" class="asm-hero" aria-label="ASM VEO Pakistan 5 Designer Promotions">
                 <div class="asm-hero-track">{"".join(hero_slides)}</div>
                 <button type="button" onclick="asmHeroPrev()" class="asm-hero-nav left" aria-label="Previous banner"><i class="fas fa-chevron-left"></i></button>
                 <button type="button" onclick="asmHeroNext()" class="asm-hero-nav right" aria-label="Next banner"><i class="fas fa-chevron-right"></i></button>
                 <div id="asmHeroDots" class="asm-hero-dots"></div>
             </section>
             <style>
-            .asm-hero{{position:relative;overflow:hidden;margin:0 auto;min-height:255px;background:#063d27;border-bottom:4px solid #f3c542}}
-            .asm-hero-track{{display:flex;width:100%;transition:transform .45s ease;will-change:transform}}
-            .asm-hero-slide{{min-width:100%;min-height:255px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(115deg,#063d27 0%,#087443 55%,#f4f8f2 100%);color:#fff}}
-            .hero-greenwash{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,48,30,.98) 0%,rgba(8,116,67,.88) 50%,rgba(255,255,255,.08) 100%)}}
-            .hero-pattern{{position:absolute;right:-80px;top:-120px;width:360px;height:360px;border-radius:50%;border:70px solid rgba(255,255,255,.08);box-shadow:0 0 0 55px rgba(255,255,255,.04)}}
-            .hero-copy{{position:relative;z-index:3;width:52%;padding:24px 20px 24px 7%;max-width:700px}}
-            .hero-topline{{display:flex;align-items:center;gap:7px;font-size:9px;font-weight:900;letter-spacing:1.8px;margin-bottom:8px}}
-            .pk-flag{{width:27px;height:18px;background:#fff;border-radius:2px;position:relative;display:inline-block;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,.2)}}
-            .pk-flag:before{{content:"";position:absolute;left:0;top:0;width:7px;height:18px;background:#fff}}
-            .pk-flag:after{{content:"";position:absolute;left:7px;top:0;width:20px;height:18px;background:#087443}}
-            .pk-flag i{{position:absolute;z-index:2;left:14px;top:4px;width:8px;height:8px;border:1px solid #fff;border-radius:50%}}
-            .pk-flag b{{position:absolute;z-index:3;left:17px;top:3px;width:6px;height:6px;background:#087443;border-radius:50%}}
-            .hero-kicker{{display:inline-block;background:#f3c542;color:#123c28;padding:5px 9px;border-radius:999px;font-size:9px;font-weight:900;text-transform:uppercase;margin-bottom:7px}}
-            .hero-copy h2{{font-size:31px;line-height:.96;font-weight:950;letter-spacing:-1px;margin:0 0 7px;text-transform:uppercase}}
-            .hero-copy p{{font-size:11px;font-weight:700;color:#e8f5ee;max-width:330px;margin:0 0 10px}}
-            .hero-badges{{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}}
-            .hero-badges span{{font-size:8px;font-weight:900;padding:5px 7px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.1)}}
-            .hero-cta{{display:inline-flex;align-items:center;gap:7px;background:#fff;color:#087443;padding:9px 14px;border-radius:999px;font-size:10px;font-weight:950;box-shadow:0 6px 18px rgba(0,0,0,.18)}}
-            .hero-products{{position:relative;z-index:3;width:48%;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 5% 12px 0}}
-            .hero-product{{width:29%;max-width:145px;text-decoration:none;color:#123c28;background:#fff;border:2px solid rgba(255,255,255,.75);border-radius:18px;padding:7px;box-shadow:0 12px 28px rgba(0,0,0,.18);transform:rotate(-2deg)}}
-            .hero-product:nth-child(2){{transform:translateY(-8px) rotate(2deg)}}.hero-product:nth-child(3){{transform:rotate(4deg)}}
-            .hero-product img{{width:100%;height:115px;object-fit:contain;border-radius:12px;background:#f7faf8}}
-            .hero-product span{{display:block;font-size:8px;line-height:10px;font-weight:800;margin:6px 2px 2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
-            .asm-hero-nav{{position:absolute;z-index:6;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.18);color:#fff;backdrop-filter:blur(5px)}}
-            .asm-hero-nav.left{{left:10px}}.asm-hero-nav.right{{right:10px}}
-            .asm-hero-dots{{position:absolute;z-index:6;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:5px}}
-            .asm-hero-dots button{{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.45);padding:0}}.asm-hero-dots button.active{{background:#f3c542;transform:scale(1.25)}}
-            @media(max-width:767px){{.asm-hero,.asm-hero-slide{{min-height:230px}}.hero-copy{{width:58%;padding:18px 7px 20px 18px}}.hero-copy h2{{font-size:23px}}.hero-copy p{{font-size:9px;max-width:220px}}.hero-badges span{{font-size:7px;padding:4px 5px}}.hero-cta{{font-size:8px;padding:8px 10px}}.hero-products{{width:42%;gap:4px;padding-right:8px}}.hero-product{{width:45%;padding:4px;border-radius:11px}}.hero-product:nth-child(3){{display:none}}.hero-product img{{height:82px}}.hero-product span{{font-size:7px;line-height:8px;margin-top:4px}}.hero-topline{{font-size:7px;letter-spacing:1px}}.pk-flag{{width:22px;height:15px}}.pk-flag:after{{height:15px;left:6px;width:16px}}.pk-flag:before{{height:15px}}.pk-flag i{{left:11px;top:3px;width:7px;height:7px}}.pk-flag b{{left:14px;top:2px;width:5px;height:5px}}}}
+            .asm-hero{{position:relative;overflow:hidden;margin:0 auto;min-height:340px;background:#042417;border-bottom:4px solid #f3c542}}
+            .asm-hero-track{{display:flex;width:100%;transition:transform .55s cubic-bezier(.22,1,.36,1);will-change:transform}}
+            .asm-hero-slide{{min-width:100%;min-height:340px;position:relative;display:flex;align-items:center;overflow:hidden;color:#fff}}
+            .pro-hero-bg{{position:absolute;inset:0;z-index:1;background-size:cover;background-position:center}}
+            /* Slide 1 & 2: Uploaded Wavy Silk Pakistan Flag Background with Pro-Max Cinematic Overlay */
+            .theme-pk-flag-1 .pro-hero-bg{{background-image:linear-gradient(92deg,rgba(2,28,17,.94) 0%,rgba(4,58,35,.82) 48%,rgba(3,40,24,.68) 100%),url('/assets/pk-flag-silk.jpg');background-size:cover;background-position:center}}
+            .theme-pk-flag-2 .pro-hero-bg{{background-image:linear-gradient(92deg,rgba(3,36,22,.93) 0%,rgba(8,100,58,.78) 50%,rgba(4,32,20,.72) 100%),url('/assets/pk-flag-silk.jpg');background-size:cover;background-position:center}}
+            /* Slide 3: Deep Ruby-Crimson & Gold Silk Wave modeled directly on 99-1-1.jpg */
+            .theme-crimson-luxe .pro-hero-bg{{background:radial-gradient(circle at 78% 28%,rgba(247,183,51,.28),transparent 42%),linear-gradient(115deg,#2b0307 0%,#6e0b14 48%,#9e1420 76%,#3b040a 100%)}}
+            /* Slide 4: Midnight Sapphire & Cyber Gold */
+            .theme-sapphire-tech .pro-hero-bg{{background:radial-gradient(circle at 75% 30%,rgba(56,189,248,.25),transparent 45%),linear-gradient(115deg,#040d21 0%,#0b2559 52%,#133b7a 78%,#071636 100%)}}
+            /* Slide 5: Royal Velvet Plum & Rose Gold */
+            .theme-velvet-beauty .pro-hero-bg{{background:radial-gradient(circle at 75% 28%,rgba(244,114,182,.26),transparent 45%),linear-gradient(115deg,#1d0626 0%,#461157 50%,#6b1d7a 78%,#24072e 100%)}}
+            .pro-hero-ribbon{{position:absolute;inset:-30% -10%;z-index:2;background:radial-gradient(ellipse at 85% 85%,rgba(247,183,51,.26) 0%,rgba(247,183,51,.05) 38%,transparent 65%),radial-gradient(ellipse at 15% 110%,rgba(247,183,51,.2) 0%,transparent 50%);pointer-events:none;transform:rotate(-6deg)}}
+            .pro-hero-bokeh{{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}}
+            .pro-hero-bokeh i{{position:absolute;border-radius:50%;background:radial-gradient(circle,#ffe484 0%,rgba(247,183,51,0) 70%);opacity:.65;animation:asmBokeh 6s ease-in-out infinite}}
+            .pro-hero-bokeh i:nth-child(1){{width:18px;height:18px;left:8%;top:18%}}
+            .pro-hero-bokeh i:nth-child(2){{width:26px;height:26px;left:44%;top:14%;animation-delay:1.2s}}
+            .pro-hero-bokeh i:nth-child(3){{width:14px;height:14px;left:52%;bottom:18%;animation-delay:2.1s}}
+            .pro-hero-bokeh i:nth-child(4){{width:32px;height:32px;right:12%;top:16%;animation-delay:.7s}}
+            .pro-hero-bokeh i:nth-child(5){{width:20px;height:20px;right:6%;bottom:22%;animation-delay:1.8s}}
+            .pro-hero-bokeh i:nth-child(6){{width:12px;height:12px;left:28%;bottom:14%;animation-delay:2.9s}}
+            @keyframes asmBokeh{{0%,100%{{transform:translateY(0) scale(1);opacity:.45}}50%{{transform:translateY(-10px) scale(1.25);opacity:.85}}}}
+            .pro-hero-inner{{position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:26px;padding-bottom:32px;width:100%}}
+            .pro-hero-copy{{width:50%;max-width:640px}}
+            .pro-hero-eyebrow{{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(247,183,51,.5);color:#ffe484;padding:5px 12px;border-radius:999px;font-size:10px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;backdrop-filter:blur(6px);margin-bottom:10px}}
+            .pro-hero-script{{font-size:20px;font-weight:600;color:#fff5d6;letter-spacing:.4px;margin-bottom:2px;text-shadow:0 2px 10px rgba(0,0,0,.35)}}
+            .pro-hero-copy h2{{font-size:38px;line-height:1.02;font-weight:900;letter-spacing:-.8px;margin:0 0 10px;text-transform:uppercase;color:#ffffff;text-shadow:0 6px 22px rgba(0,0,0,.45)}}
+            .pro-hero-copy p{{font-size:13px;line-height:1.5;font-weight:600;color:rgba(255,255,255,.9);max-width:520px;margin:0 0 14px}}
+            .pro-hero-badges{{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}}
+            .pro-hero-badges span{{font-size:10px;font-weight:800;padding:5px 11px;border-radius:999px;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.24);color:#fff}}
+            .pro-hero-actions{{display:flex;flex-wrap:wrap;align-items:center;gap:10px}}
+            .pro-hero-cta{{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#F7B733,#f59e0b);color:#111827!important;padding:11px 22px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.4px;box-shadow:0 10px 25px rgba(247,183,51,.35);transition:all .2s ease}}
+            .pro-hero-cta:hover{{transform:translateY(-2px);box-shadow:0 14px 30px rgba(247,183,51,.5)}}
+            .pro-hero-secondary-cta{{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);color:#fff!important;padding:10px 16px;border-radius:999px;font-size:11px;font-weight:800;backdrop-filter:blur(6px);transition:all .2s ease}}
+            .pro-hero-secondary-cta:hover{{background:rgba(255,255,255,.24)}}
+            /* 3D Luxury Podium Showcase on Right Side (Inspired by 99-1-1.jpg) */
+            .pro-hero-stage{{width:48%;position:relative;display:flex;align-items:center;justify-content:center}}
+            .pro-stage-glow{{position:absolute;width:85%;height:85%;border-radius:50%;background:radial-gradient(circle,rgba(247,183,51,.26) 0%,transparent 70%);filter:blur(12px);pointer-events:none}}
+            .pro-podium-grid{{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:end;width:100%}}
+            .pro-podium-card{{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#fff;transition:transform .3s ease}}
+            .pro-podium-card:hover{{transform:translateY(-8px)}}
+            .pro-podium-card.pos-1,.pro-podium-card.pos-3{{margin-bottom:14px}}
+            .pro-podium-item-box{{width:100%;height:148px;background:rgba(255,255,255,.97);border:2px solid rgba(247,183,51,.75);border-radius:18px 18px 8px 8px;padding:8px;position:relative;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 32px rgba(0,0,0,.35)}}
+            .pro-podium-item-box img{{width:100%;height:100%;object-fit:contain}}
+            .pro-podium-price{{position:absolute;top:6px;right:6px;background:#087443;color:#fff;font-size:9px;font-weight:900;padding:2px 7px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.2)}}
+            .theme-crimson-luxe .pro-podium-price{{background:#8f111e}}
+            .pro-podium-base{{width:106%;background:linear-gradient(180deg,#f3c542 0%,#b8860b 100%);color:#111827;padding:6px 8px;border-radius:6px 6px 12px 12px;box-shadow:0 10px 20px rgba(0,0,0,.4);text-align:center;margin-top:-2px}}
+            .pro-podium-title{{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;font-size:9px;font-weight:900;line-height:1.2}}
+            .asm-hero-nav{{position:absolute;z-index:6;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:rgba(0,0,0,.35);color:#fff;backdrop-filter:blur(6px);transition:all .2s ease}}
+            .asm-hero-nav:hover{{background:#F7B733;color:#043D25;border-color:#F7B733}}
+            .asm-hero-nav.left{{left:12px}}.asm-hero-nav.right{{right:12px}}
+            .asm-hero-dots{{position:absolute;z-index:6;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:7px;background:rgba(0,0,0,.3);padding:5px 10px;border-radius:999px;backdrop-filter:blur(4px)}}
+            .asm-hero-dots button{{width:8px;height:8px;border-radius:999px;border:0;background:rgba(255,255,255,.5);padding:0;transition:all .25s ease}}.asm-hero-dots button.active{{width:24px;background:#f3c542}}
+            @media(max-width:1023px){{.pro-hero-copy h2{{font-size:28px}}.pro-podium-grid{{grid-template-columns:repeat(2,minmax(0,1fr))}}.pro-podium-card.pos-3,.pro-podium-card.pos-4{{display:none}}.pro-podium-item-box{{height:130px}}}}
+            @media(max-width:767px){{.asm-hero,.asm-hero-slide{{min-height:270px}}.pro-hero-inner{{flex-direction:column;align-items:flex-start;gap:14px;padding-top:16px;padding-bottom:28px}}.pro-hero-copy{{width:100%}}.pro-hero-script{{font-size:14px}}.pro-hero-copy h2{{font-size:22px}}.pro-hero-copy p{{font-size:11px;margin-bottom:10px}}.pro-hero-badges{{margin-bottom:10px}}.pro-hero-badges span{{font-size:8px;padding:3px 8px}}.pro-hero-cta{{font-size:10px;padding:8px 14px}}.pro-hero-secondary-cta{{font-size:10px;padding:8px 12px}}.pro-hero-stage{{width:100%}}.pro-podium-grid{{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}}.pro-podium-card.pos-3{{display:flex;margin-bottom:0}}.pro-podium-card.pos-1{{margin-bottom:0}}.pro-podium-item-box{{height:96px;padding:5px}}.pro-podium-base{{width:100%;padding:4px 5px}}.pro-podium-title{{font-size:8px}}}}
             </style>
             <script>
-            (function(){{const root=document.getElementById('heroCarousel');if(!root)return;const track=root.querySelector('.asm-hero-track');const slides=[...root.querySelectorAll('.asm-hero-slide')];const dots=document.getElementById('asmHeroDots');let i=0,timer;slides.forEach((_,n)=>{{const b=document.createElement('button');b.type='button';b.onclick=()=>go(n);dots.appendChild(b);}});function paint(){{track.style.transform='translate3d(-'+(i*100)+'%,0,0)';slides.forEach((sl,n)=>sl.setAttribute('aria-hidden',n===i?'false':'true'));dots.querySelectorAll('button').forEach((b,n)=>b.classList.toggle('active',n===i));}}function go(n){{i=(n+slides.length)%slides.length;paint();}}window.asmHeroNext=()=>go(i+1);window.asmHeroPrev=()=>go(i-1);function start(){{clearInterval(timer);timer=setInterval(()=>go(i+1),6000)}}paint();start();root.addEventListener('mouseenter',()=>clearInterval(timer));root.addEventListener('mouseleave',start);}})();
+            (function(){{const root=document.getElementById('heroCarousel');if(!root)return;const track=root.querySelector('.asm-hero-track');const slides=[...root.querySelectorAll('.asm-hero-slide')];const dots=document.getElementById('asmHeroDots');let i=0,timer;slides.forEach((_,n)=>{{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Banner '+(n+1));b.onclick=()=>go(n);dots.appendChild(b);}});function paint(){{track.style.transform='translate3d(-'+(i*100)+'%,0,0)';slides.forEach((sl,n)=>sl.setAttribute('aria-hidden',n===i?'false':'true'));dots.querySelectorAll('button').forEach((b,n)=>b.classList.toggle('active',n===i));}}function go(n){{i=(n+slides.length)%slides.length;paint();}}window.asmHeroNext=()=>go(i+1);window.asmHeroPrev=()=>go(i-1);function start(){{clearInterval(timer);timer=setInterval(()=>go(i+1),5500)}}paint();start();root.addEventListener('mouseenter',()=>clearInterval(timer));root.addEventListener('mouseleave',start);}})();
             </script>
             '''
 
@@ -4677,22 +5020,15 @@ def process_woocommerce_csv():
                 all_b_imgs=[x for x in (p.get('images') or []) if x]
                 b_fallbacks="|".join(html_lib.escape(x,quote=True) for x in all_b_imgs[1:4])
                 best_cards.append(f'<a href="/product/{slug}.html" class="best-item"><div class="best-image"><img src="{img}" data-fallbacks="{b_fallbacks}" alt="{safe}" loading="lazy" decoding="async" onerror="asmImgError(this)"></div><span class="best-cat">{html_lib.escape(cname)}</span><span class="best-name">{safe}</span><strong>Rs {float(p.get("final_price") or 0):,.0f}</strong></a>')
-            total_best_available = max(len(best_sellers_all), 2000) if len(products_list) >= 1500 else len(best_sellers_all)
-            best_grid_cards = "".join(generate_product_card(p, lazy=True) for _cn, p in best_mix[:12])
             home_html += f'''<section class="container mx-auto px-4 py-8" id="best-sellers-section">
                 <div class="section-head">
                     <div>
-                        <p>🏆 TOP CUSTOMER PICKS across PAKISTAN</p>
-                        <h2>Best Sellers <span class="text-sm md:text-base font-extrabold text-[#087443] align-middle ml-1">({total_best_available:,}+ Products)</span></h2>
+                        <p>🏆 TOP SELLING PRODUCTS (RS 2,500+)</p>
+                        <h2>Best Sellers</h2>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <span class="hidden sm:inline-block text-[10px] font-black text-[#087443] border border-[#cfe1d5] bg-[#f3fbf6] rounded-full px-3 py-1.5">{total_best_available:,}+ BEST SELLING ITEMS</span>
-                        <a href="/category/best-sellers.html" class="bg-[#087443] text-white px-4 py-2 rounded-full text-xs font-black hover:bg-[#065C35] transition shadow-sm flex items-center gap-1.5">View All ({total_best_available:,}+) <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <a href="/category/best-sellers.html" class="bg-[#087443] text-white px-5 py-2.5 rounded-full text-xs md:text-sm font-black hover:bg-[#065C35] transition shadow-sm flex items-center gap-1.5">View All <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="best-viewport mb-6"><div class="best-track"><div class="best-group">{"".join(best_cards)}</div><div class="best-group" aria-hidden="true">{"".join(best_cards)}</div></div></div>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2.5 md:gap-4 mb-5">{best_grid_cards}</div>
-                <div class="text-center"><a href="/category/best-sellers.html" class="inline-flex items-center gap-2 bg-[#087443] text-white px-7 py-3 rounded-full text-xs md:text-sm font-black hover:bg-[#065C35] transition shadow-md">View All {total_best_available:,}+ Best Sellers <i class="fas fa-arrow-right"></i></a></div>
+                <div class="best-viewport"><div class="best-track"><div class="best-group">{"".join(best_cards)}</div><div class="best-group" aria-hidden="true">{"".join(best_cards)}</div></div></div>
             </section>
             <style>.section-head{{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}}.section-head p{{font-size:10px;letter-spacing:2px;font-weight:900;color:#087443;margin:0}}.section-head h2{{font-size:26px;font-weight:900;margin:2px 0 0;color:#101828}}.best-viewport{{overflow:hidden;width:100%}}.best-track{{display:flex;width:max-content;animation:asmBest 140s linear infinite;will-change:transform}}.best-group{{display:flex;gap:12px;padding-right:12px}}.best-item{{width:160px;min-width:160px;background:#fff;border:1px solid #e4eee8;border-radius:16px;padding:10px;text-decoration:none;color:#101828;transition:all .2s ease}}.best-item:hover{{border-color:#087443;transform:translateY(-2px)}}.best-image{{height:135px;border-radius:12px;background:#f7faf8;display:flex;align-items:center;justify-content:center;overflow:hidden}}.best-image img{{width:100%;height:100%;object-fit:contain;padding:5px}}.best-cat{{display:block;font-size:8px;font-weight:900;color:#087443;text-transform:uppercase;margin-top:8px}}.best-name{{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:11px;line-height:14px;font-weight:700;height:28px;margin-top:3px}}.best-item strong{{display:block;color:#087443;font-size:13px;margin-top:6px}}@keyframes asmBest{{from{{transform:translate3d(0,0,0)}}to{{transform:translate3d(-50%,0,0)}}}}@media(max-width:767px){{.section-head h2{{font-size:20px}}.best-item{{width:130px;min-width:130px}}.best-image{{height:105px}}.best-group{{gap:9px}}.best-track{{animation-duration:115s}}}}@media(prefers-reduced-motion:reduce){{.best-track{{animation:none;overflow-x:auto}}}}</style>'''
 
@@ -4717,15 +5053,12 @@ def process_woocommerce_csv():
                     </div>
                 </div>
             </div>
+            </div>
             """
 
         # 🌟 یھاں سے وہ حصہ شروع ہوتا ہے جو ہر پیج (Page 1, 2, 3...) پر پراڈکٹس دکھائے گا 🌟
         home_html += f"""
         <div class='container mx-auto px-4 py-4' id="products">
-            <div id="searchResultsSection" class="hidden mb-6">
-                <h2 id="searchResultsHeading" class="text-2xl font-extrabold text-[#087443] dark:text-white mb-2 border-b pb-2"></h2>
-                <p id="searchResultsCount" class="text-gray-600 text-sm"></p>
-            </div>
             <div id="defaultContent">
         """
         
@@ -4735,26 +5068,13 @@ def process_woocommerce_csv():
         
         for cat_name, prods in page_cats:
             cat_slug = category_slug(cat_name)
-            cat_root_s = category_slug(cat_name, 50)
-            shelf_subs = sorted(set(p.get('subcategory','Other') for p in prods if p.get('subcategory') and p.get('subcategory') != 'Other'))
-            shelf_sub_bar = ""
-            if shelf_subs:
-                sub_links = []
-                for sc in shelf_subs[:6]:
-                    sc_count = sum(1 for p in prods if p.get('subcategory') == sc)
-                    sc_slug = category_slug(sc, 50)
-                    sub_links.append(f'<a href="/category/{cat_root_s}/{sc_slug}/" class="inline-flex items-center gap-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-[#087443] hover:bg-[#EAF7F0] text-gray-800 dark:text-gray-200 px-3 py-1.5 rounded-full text-xs font-bold transition shadow-sm"><span>{html_lib.escape(sc)} ({sc_count})</span><span class="text-[#087443] font-black">View All →</span></a>')
-                shelf_sub_bar = f'<div class="flex flex-wrap items-center gap-2 mb-4">{"".join(sub_links)}</div>'
             
             home_html += f"""
             <div class="mb-12 category-section reveal">
-                <div class="flex flex-wrap justify-between items-center gap-3 mb-3">
-                    <div>
-                        <h2 class="text-xl md:text-2xl font-black text-gray-900 dark:text-white border-l-4 border-[#087443] pl-3">{html_lib.escape(cat_name)} <span class="text-xs md:text-sm font-bold text-gray-500 ml-1">({len(prods)} Items)</span></h2>
-                    </div>
-                    <a href="/category/{cat_slug}.html" class="bg-[#087443] text-white font-black text-xs md:text-sm px-5 py-2 rounded-full hover:bg-[#065C35] transition-all shadow-sm flex items-center gap-1.5">View All {html_lib.escape(cat_name)} ({len(prods)}) <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                <div class="flex justify-between items-center gap-3 mb-5">
+                    <h2 class="text-xl md:text-2xl font-black text-gray-900 dark:text-white border-l-4 border-[#087443] pl-3">{html_lib.escape(cat_name)}</h2>
+                    <a href="/category/{cat_slug}.html" class="bg-[#087443] text-white font-black text-xs md:text-sm px-5 py-2.5 rounded-full hover:bg-[#065C35] transition-all shadow-sm flex items-center gap-1.5">View All <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                {shelf_sub_bar}
                 <div class="grid grid-cols-2 md:grid-cols-6 gap-2.5 md:gap-4">
             """
             
@@ -4801,50 +5121,73 @@ def process_woocommerce_csv():
             
             home_script = """
             <script>
+                function clearSearchAndRestoreHome() {
+                    const url = new URL(window.location.href);
+                    url.searchParams.delete('search');
+                    window.history.replaceState({}, '', url.pathname);
+                    const si = document.getElementById('searchInput');
+                    if (si) si.value = '';
+                    document.getElementById('homeTopSections')?.classList.remove('hidden');
+                    document.getElementById('defaultContent')?.classList.remove('hidden');
+                    document.getElementById('searchResultsSection')?.classList.add('hidden');
+                    renderRecentlyViewed();
+                }
                 function performSearch(query) {
-                    if (typeof searchIndex === 'undefined') {
-                        loadSearchData();
-                        setTimeout(() => performSearch(query), 500);
+                    if (typeof window.searchIndex === 'undefined') {
+                        loadSearchData(() => performSearch(query));
                         return;
                     }
-                    
-                    query = query.toLowerCase().trim();
+                    query = String(query || '').trim();
                     if (!query) {
-                        document.getElementById('defaultContent').classList.remove('hidden');
-                        document.getElementById('searchResultsSection').classList.add('hidden');
-                        document.getElementById('recentlyViewedSection').classList.remove('hidden');
+                        clearSearchAndRestoreHome();
                         return;
                     }
-                    
                     let results = smartSearchResults(query);
-                    
-                    document.getElementById('defaultContent').classList.add('hidden');
-                    document.getElementById('recentlyViewedSection').classList.add('hidden');
-                    document.getElementById('searchResultsSection').classList.remove('hidden');
+                    const relatedWords = getRelatedSearchKeywords(query, results, 12);
+                    document.getElementById('homeTopSections')?.classList.add('hidden');
+                    document.getElementById('defaultContent')?.classList.add('hidden');
+                    document.getElementById('recentlyViewedSection')?.classList.add('hidden');
+                    const srSection = document.getElementById('searchResultsSection');
+                    if (srSection) srSection.classList.remove('hidden');
                     document.getElementById('searchResultsHeading').innerText = 'Search Results for "' + query + '"';
-                    document.getElementById('searchResultsCount').innerText = results.length + ' products found';
+                    document.getElementById('searchResultsCount').innerText = results.length + ' matching products found in Pakistan';
                     
-                    let html = '<div class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 mt-6">';
-                    results.forEach(p => {
+                    const relBox = document.getElementById('searchRelatedWords');
+                    if (relBox) {
+                        if (relatedWords.length) {
+                            relBox.innerHTML = '<div class="flex flex-wrap items-center gap-1.5"><span class="text-[11px] font-black text-[#087443] mr-1"><i class="fas fa-tags mr-1"></i> Related Words:</span>' +
+                                relatedWords.map(w => '<button type="button" onclick="document.getElementById(\\'searchInput\\').value=\\'' + escapeHtml(w).replace(/'/g, "\\\\'") + '\\';performSearch(\\'' + escapeHtml(w).replace(/'/g, "\\\\'") + '\\')" class="bg-[#F3FBF6] hover:bg-[#087443] text-[#087443] hover:text-white border border-[#cfe1d5] px-3 py-1 rounded-full text-xs font-bold transition">' + escapeHtml(w) + '</button>').join('') +
+                                '</div>';
+                        } else {
+                            relBox.innerHTML = '';
+                        }
+                    }
+                    
+                    let html = '<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2.5 md:gap-4">';
+                    results.slice(0, 96).forEach(p => {
                         let discount = Math.ceil(((p.regular_price - p.final_price) / p.regular_price) * 100);
                         if (isNaN(discount)) discount = 0;
-                        
-                        let htmlSafeName = p.name.replace(/"/g, '&quot;');
+                        let htmlSafeName = String(p.name || '').replace(/"/g, '&quot;');
                         let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
-                        
-                        html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
-                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#087443] text-white text-[10px] font-black px-1.5 py-0.5 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}
-                            <div class="image-zoom h-32 md:h-40 bg-gray-50 dark:bg-gray-700 overflow-hidden relative border-b border-gray-200 dark:border-gray-700 flex justify-center items-center">
-                                <img src="${p.image}" alt="${htmlSafeName}" width="200" height="200" loading="lazy" decoding="async" class="w-full h-full object-contain p-1" onerror="this.closest('.product-card').remove();">
+                        let isStock = p.stock !== false;
+                        html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-lg border border-[#E3ECE6] overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
+                            ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#087443] text-white text-[9px] font-black px-2 py-0.5 rounded z-10 shadow">-${discount}% OFF</div>` : ''}
+                            <div class="image-zoom h-44 md:h-52 bg-[#FBFDFB] overflow-hidden relative border-b border-gray-100 flex justify-center items-center">
+                                <img src="${p.image}" alt="${htmlSafeName}" width="250" height="250" loading="lazy" decoding="async" class="w-full h-full object-contain p-1.5" onerror="this.onerror=null;this.src='/assets/product-placeholder.svg';">
                             </div>
-                            <div class="p-2 flex flex-col flex-grow">
-                                <span class="text-[9px] font-bold text-[#087443] uppercase tracking-wider mb-1 line-clamp-1">${p.category}</span>
-                                <h3 class="text-[10px] md:text-xs font-bold text-gray-900 dark:text-white leading-tight mb-1 line-clamp-2">${htmlSafeName}</h3>
+                            <div class="p-2.5 flex flex-col flex-grow">
+                                <div class="flex items-center justify-between gap-1 mb-0.5">
+                                    <span class="text-[9px] font-bold text-[#087443] uppercase tracking-wider truncate">${p.category || ''}</span>
+                                    <span class="text-[8px] font-black whitespace-nowrap ${isStock ? 'text-green-700 bg-green-50' : 'text-red-600 bg-red-50'} px-1.5 py-0.5 rounded">${isStock ? 'In Stock' : 'Out of Stock'}</span>
+                                </div>
+                                <h3 class="text-[11px] md:text-xs font-bold text-gray-900 dark:text-white leading-snug mb-1 line-clamp-2">${htmlSafeName}</h3>
+                                <div class="text-[9px] font-semibold text-gray-500 mb-1">5% Off Rs 3,000+ • Free Del Rs 5,000+</div>
                                 <div class="mt-auto">
-                                    <div class="flex items-center gap-1 mb-1">
-                                        <span class="text-xs md:text-sm font-black text-[#087443] dark:text-white">Rs ${p.final_price}</span>
+                                    <div class="flex items-baseline justify-between gap-1.5 mb-2">
+                                        <span class="text-xs md:text-sm font-black text-[#087443] dark:text-white whitespace-nowrap">Rs ${p.final_price}</span>
+                                        <span class="text-[10px] text-gray-400 font-bold line-through whitespace-nowrap">Rs ${p.regular_price || p.final_price}</span>
                                     </div>
-                                    <button aria-label="Add Searched Item to Cart" onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event, '${p.slug}')" class="w-full bg-gray-50 text-[#087443] py-1.5 rounded-md text-[10px] font-bold border border-gray-200 hover:bg-[#087443] hover:text-white transition flex justify-center items-center"><i class="fas fa-cart-plus" aria-hidden="true"></i></button>
+                                    <button aria-label="Add Searched Item to Cart" onclick="addToCart('${jsSafeName}', ${p.final_price}, '${p.image}', event, '${p.slug}')" class="w-full bg-[#087443] text-white py-2 rounded-lg text-[11px] font-extrabold hover:bg-[#065C35] transition flex justify-center items-center gap-1.5"><i class="fas fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
                                 </div>
                             </div>
                         </div>`;
@@ -4852,25 +5195,21 @@ def process_woocommerce_csv():
                     html += '</div>';
                     
                     if (results.length === 0) {
-                        html = '<div class="text-center py-16 text-gray-600"><i class="fas fa-search text-6xl mb-4 opacity-30" aria-hidden="true"></i><p class="text-lg font-bold">No products found</p><p class="text-sm mt-2">Try different keywords</p></div>';
+                        html = '<div class="bg-white rounded-2xl border p-12 text-center text-gray-600"><i class="fas fa-search text-5xl mb-3 text-gray-300" aria-hidden="true"></i><p class="text-lg font-black text-gray-900">No exact products found for "' + escapeHtml(query) + '"</p><p class="text-xs mt-1 mb-4">Try clicking one of the categories below or browse our Best Sellers:</p><a href="/category/best-sellers.html" class="inline-block bg-[#087443] text-white px-5 py-2.5 rounded-full text-xs font-black">Browse Best Sellers →</a></div>';
                     }
-                    
-                    let resultsDiv = document.createElement('div');
-                    resultsDiv.innerHTML = html;
-                    let srSection = document.getElementById('searchResultsSection');
-                    let elements = srSection.children;
-                    for(let i = elements.length - 1; i >= 2; i--) {
-                        srSection.removeChild(elements[i]);
-                    }
-                    srSection.appendChild(resultsDiv);
+                    const wrap = document.getElementById('searchResultsGridWrap');
+                    if (wrap) wrap.innerHTML = html;
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
                 
                 const urlParams = new URLSearchParams(window.location.search);
                 const searchQuery = urlParams.get('search');
                 if (searchQuery) {
-                    document.getElementById('searchInput').value = searchQuery;
-                    loadSearchData();
-                    setTimeout(() => performSearch(searchQuery), 1000);
+                    const si = document.getElementById('searchInput');
+                    if (si) si.value = searchQuery;
+                    document.getElementById('homeTopSections')?.classList.add('hidden');
+                    document.getElementById('defaultContent')?.classList.add('hidden');
+                    loadSearchData(() => performSearch(searchQuery));
                 }
                 
                 function renderRecentlyViewed() {
