@@ -72,31 +72,79 @@ def calculate_hhc_profitable_price(base_price, is_perfume=False, product_id="1")
     regular = max(round(sale * 1.25 / 10) * 10, sale + 150)
     return float(sale), float(regular)
 
+_RELATED_CACHE_STATE = {"id": None, "by_cat_sub": {}, "by_cat": {}, "fallback": []}
+
+def _ensure_related_index(products):
+    list_id = (id(products), len(products))
+    if _RELATED_CACHE_STATE["id"] == list_id:
+        return
+    by_cat_sub = {}
+    by_cat = {}
+    fallback = []
+    for p in products:
+        if "_rel_tokens" not in p:
+            p["_rel_tokens"] = set(re.findall(r'[a-z0-9]+', (str(p.get('name','')) + ' ' + str(p.get('tags','')) + ' ' + str(p.get('subcategory',''))).lower()))
+            p["_name_norm"] = re.sub(r'\s+', ' ', str(p.get('name','')).strip().lower())
+            p["_cat_low"] = str(p.get('category','')).lower()
+            p["_sub_low"] = str(p.get('subcategory','')).lower()
+        c_low = p["_cat_low"]
+        s_low = p["_sub_low"]
+        by_cat_sub.setdefault((c_low, s_low), []).append(p)
+        by_cat.setdefault(c_low, []).append(p)
+        if len(fallback) < 120 and p.get('stock', True) is not False:
+            fallback.append(p)
+    _RELATED_CACHE_STATE["id"] = list_id
+    _RELATED_CACHE_STATE["by_cat_sub"] = by_cat_sub
+    _RELATED_CACHE_STATE["by_cat"] = by_cat
+    _RELATED_CACHE_STATE["fallback"] = fallback
+
 def smart_related_products(products, current, limit=6, prefer_in_stock=True):
-    ct = set(re.findall(r'[a-z0-9]+', (str(current.get('name','')) + ' ' + str(current.get('tags','')) + ' ' + str(current.get('subcategory',''))).lower()))
-    cc = str(current.get('category','')).lower()
-    csub = str(current.get('subcategory','')).lower()
+    _ensure_related_index(products)
+    ct = current.get("_rel_tokens") or set(re.findall(r'[a-z0-9]+', (str(current.get('name','')) + ' ' + str(current.get('tags','')) + ' ' + str(current.get('subcategory',''))).lower()))
+    cc = current.get("_cat_low") or str(current.get('category','')).lower()
+    csub = current.get("_sub_low") or str(current.get('subcategory','')).lower()
     c_bridges = [b for b in TRENDING_NICHE_BRIDGES if ct & b]
+    curr_name_norm = current.get("_name_norm") or re.sub(r'\s+', ' ', str(current.get('name','')).strip().lower())
+
+    # Gather high-relevance candidate pool (bounded for O(1) speed on 17,000+ products)
+    pool = []
+    seen_slugs = {current.get('slug')}
+    for cand in _RELATED_CACHE_STATE["by_cat_sub"].get((cc, csub), [])[:140]:
+        s = cand.get('slug')
+        if s not in seen_slugs:
+            seen_slugs.add(s)
+            pool.append(cand)
+    if len(pool) < 100:
+        for cand in _RELATED_CACHE_STATE["by_cat"].get(cc, [])[:140]:
+            s = cand.get('slug')
+            if s not in seen_slugs:
+                seen_slugs.add(s)
+                pool.append(cand)
+    if len(pool) < 40:
+        for cand in _RELATED_CACHE_STATE["fallback"]:
+            s = cand.get('slug')
+            if s not in seen_slugs:
+                seen_slugs.add(s)
+                pool.append(cand)
+
     scored = []
     seen_names = set()
-    curr_name_norm = re.sub(r'\s+', ' ', str(current.get('name','')).strip().lower())
-    for p in products:
-        if p.get('slug') == current.get('slug'):
-            continue
-        p_name_norm = re.sub(r'\s+', ' ', str(p.get('name','')).strip().lower())
+    curr_price = max(float(current.get('final_price', 1) or 1), 1.0)
+    for p in pool:
+        p_name_norm = p.get("_name_norm") or ""
         if not p_name_norm or p_name_norm == curr_name_norm or p_name_norm in seen_names:
             continue
         if prefer_in_stock and p.get('stock', True) is False:
             continue
-        pt = set(re.findall(r'[a-z0-9]+', (str(p.get('name','')) + ' ' + str(p.get('tags','')) + ' ' + str(p.get('subcategory',''))).lower()))
-        score = 14 if str(p.get('category','')).lower() == cc else 0
-        if csub and csub != 'other' and str(p.get('subcategory','')).lower() == csub:
+        pt = p.get("_rel_tokens") or set()
+        score = 14 if p.get("_cat_low") == cc else 0
+        if csub and csub != 'other' and p.get("_sub_low") == csub:
             score += 10
         score += min(12, len(ct & pt) * 3)
         if c_bridges and any(pt & b for b in c_bridges):
             score += 12
         try:
-            gap = abs(float(p.get('final_price',0)) - float(current.get('final_price',0))) / max(float(current.get('final_price',1)), 1)
+            gap = abs(float(p.get('final_price', 0) or 0) - curr_price) / curr_price
             score += 5 if gap <= .25 else 2 if gap <= .50 else 0
         except Exception:
             pass
@@ -483,6 +531,64 @@ def extract_clean_images(images_raw, row=None):
             valid.append(u)
     return valid
 
+def get_pakistan_niche_intelligence(name, cat="", sub=""):
+    hay = f"{name} {cat} {sub}".lower()
+    if re.search(r'\b(3\s*pc|3\s*piece|2\s*pc|unstitched|khaddar|dhanak|sussi|marina|katan|silk|organza|lawn|embroidered|suit|shalwar|kameez|mexi|maxi|gown|kurti|hijab|scarf|staller|dupatta|pashmina)\b', hay):
+        return {
+            "niche_label": "Pakistani Unstitched & Ethnic Fashion",
+            "roman_kws": ["ladies 3 piece suit price in pakistan", "unstitched khaddar dhanak lawn suit", "boutique style dress online pakistan", "hijab scarf dupatta online"],
+            "use_case": "Tailored for Pakistani summer & winter seasons — ideal for casual daily wear, office/university wear, dawats, and Eid gifting across Karachi, Lahore, Islamabad & Faisalabad.",
+            "care_tip": "Hand wash or gentle machine wash in cold water; iron on medium heat to maintain fabric softness and vibrant print quality."
+        }
+    if re.search(r'\b(motorcycle|motorbike|70cc|cd\s*70|cg\s*125|125cc|bike|mudguard|indicator|chain cover|silencer|fog light|headlight|car |windshield|hgkj)\b', hay):
+        return {
+            "niche_label": "Motorbike (CD70 / CG125) & Car Accessories Pakistan",
+            "roman_kws": ["70cc cg125 bike fancy parts pakistan", "motorcycle led indicator fog light", "car interior exterior accessories pakistan", "pindi mudguard chain cover"],
+            "use_case": "Engineered for Honda CD 70, CG 125, Yamaha, Suzuki, United, Road Prince bikes and cars on Pakistani roads with dust & rain protection.",
+            "care_tip": "Connect securely to standard 12V wiring and wipe clean with a dry microfiber cloth."
+        }
+    if re.search(r'\b(novel|book\b|urdu|umera|umaira|nimra|nemra|jaun|john elia|manto|bano|colleen|ana huang|tahereh|roald dahl|khaled|elif shafak|alchemist|ikigai|atomic habits|peer e kamil)\b', hay):
+        return {
+            "niche_label": "Best-Selling Urdu & English Novels in Pakistan",
+            "roman_kws": ["best selling urdu novels in pakistan", "english novels price in pakistan", "online books cash on delivery pakistan", "umera ahmed nimra ahmed novels"],
+            "use_case": "Printed with crisp, eye-friendly typography and durable binding for Pakistani readers, students, book clubs, and gifting.",
+            "care_tip": "Keep away from moisture and direct sunlight for long-lasting bookshelf preservation."
+        }
+    if re.search(r'\b(trimmer|shaver|clipper|dingling|kemei|shinon|nikai|remington|straightener|curler|crimper|hair dryer|wax heater|wax|epilator|flawless|derma|blackhead|facial|polisher|sunscreen|sunblock|serum|face wash|whitening|lipstick|foundation|makeup|keratin|toppik|caboki|massager)\b', hay):
+        return {
+            "niche_label": "Salon, Beauty, Skincare & Personal Grooming Pakistan",
+            "roman_kws": ["hair straightener trimmer price in pakistan", "parlor facial & wax heater machine", "skin glowing whitening serum pakistan", "original makeup & grooming kit cod"],
+            "use_case": "Delivers salon and beauty-parlor results at home for men and women in Pakistan — great for daily grooming, wedding/party prep, and skincare.",
+            "care_tip": "Clean grooming blades/plates after use and store in a dry pouch; patch-test skincare items before application."
+        }
+    if re.search(r'\b(smart watch|t800|t900|s100|n8 ultra|watch strap|iwatch|earbuds|airpods|air 31|air31|headphone|neckband|speaker|microphone|ring light|tripod|power bank|charger|data cable|power strip|wifi|camera|a9 mini|sq8|sq-11|neck fan|folding fan|air cooler|humidifier)\b', hay):
+        return {
+            "niche_label": "Smart Watches, Audio & Mobile Gadgets Pakistan",
+            "roman_kws": ["smart watch price in pakistan", "wireless bluetooth earbuds airpods pakistan", "fast charger power bank data cable", "rechargeable fan & mini wifi camera"],
+            "use_case": "Built for Pakistani smartphone users, TikTok/YouTube creators, students, and load-shedding backup across all cities of Pakistan.",
+            "care_tip": "Charge using a certified 5V adapter and avoid moisture exposure."
+        }
+    if re.search(r'\b(kitchen|cutter|chopper|slicer|grater|peeler|knife|oil|spice|masala|beater|grinder|waffle|stove|hot plate|pan|roti|baking|samosa|dumpling|garlic|dispenser|bottle|flask|food|sealer|soap|sponge|faucet|sink|drain|mop|broom|cleaner|laundry|hanger|organizer|storage|mat)\b', hay):
+        return {
+            "niche_label": "Smart Kitchen, Home & Storage Organizers Pakistan",
+            "roman_kws": ["smart kitchen gadgets price in pakistan", "vegetable chopper slicer masala rack", "home cleaning & wardrobe organizers", "kitchen tools cash on delivery pakistan"],
+            "use_case": "Saves time and space in Pakistani kitchens and homes — ideal for daily cooking, Ramadan meal prep, dishwashing, and neat wardrobe organization.",
+            "care_tip": "Wash food-contact parts with mild dish soap and dry thoroughly after use."
+        }
+    if re.search(r'\b(kids|toddlers|baby|infant|pacifier|teether|feeder|mummy bag|diaper|playdough|clay|slime|puzzle|yoyo|lato|cactus|bubble gun|fidget|car set|magic water|lcd writing|magic pad|fairy wings|rattle)\b', hay):
+        return {
+            "niche_label": "Kids Educational Toys & Baby Care Pakistan",
+            "roman_kws": ["kids educational toys price in pakistan", "baby feeder pacifier mummy bag pakistan", "lcd writing tablet & magic water book", "bachon ke khilone cash on delivery"],
+            "use_case": "Designed with child-safe, non-toxic materials to boost early learning, screen-free creativity, and convenient baby care for Pakistani parents.",
+            "care_tip": "Wipe clean with a damp cloth; sanitize baby feeding items in warm water before use."
+        }
+    return {
+        "niche_label": "Daily Lifestyle & Household Essentials Pakistan",
+        "roman_kws": ["online shopping in pakistan cash on delivery", "best quality home & lifestyle gadgets", "daraz alternative wholesale prices pakistan"],
+        "use_case": "Practical, durable everyday essential curated for homes and families across Karachi, Lahore, Islamabad, Rawalpindi, and all Pakistan.",
+        "care_tip": "Follow standard usage guidelines and store in a clean, dry environment."
+    }
+
 def build_rich_product_overview(prod):
     """Generate structured, AI-quality SEO/GEO/AEO buying guide & feature highlights for every product."""
     name = clean_hhc_title(prod.get('name', 'Product'))
@@ -492,21 +598,23 @@ def build_rich_product_overview(prod):
     price = float(prod.get('final_price') or 0)
     reg = float(prod.get('regular_price') or price)
     raw_desc = re.sub(r'\s+', ' ', str(prod.get('full_desc') or '')).strip()
-    kws = [k for k in (prod.get('seo_keywords') or []) if k][:5]
-    # Extract size/pack/weight/capacity specs from title
+    # Filter out broken/pidgin/robotic supplier descriptions
+    if any(bad in raw_desc.lower() for bad in ['iv yu iphone', 'devis dem', 'formulated to deliver wear benefits']):
+        raw_desc = ''
+    niche_info = get_pakistan_niche_intelligence(name, cat, sub)
     specs_found = re.findall(r'\b(\d+(?:\.\d+)?\s*(?:ml|g|gram|grams|kg|pcs|pc|pack|piece|pieces|inch|mm|cm|w|watt|mah|liter|l|oz|pair|pairs|set))\b', name, flags=re.I)
     spec_badge = ", ".join(dict.fromkeys(s.strip() for s in specs_found)) if specs_found else "Standard Retail Pack"
     
-    intro_p = raw_desc if len(raw_desc) >= 90 else (
-        f"{name} by {brand} is a high-demand {sub if (sub and sub != 'Other') else cat} essential available online in Pakistan at ASM VEO. "
-        f"Designed for reliable everyday performance and practical convenience, it offers verified quality at an affordable price of Rs {price:g} PKR."
+    base_intro = raw_desc[:420] if len(raw_desc) >= 90 else (
+        f"{name} by {brand} is a top-rated {sub if (sub and sub != 'Other') else cat} product available online in Pakistan at ASM VEO for Rs {price:g} PKR."
     )
+    intro_p = f"{base_intro} {niche_info['use_case']} Care & Usage Tip: {niche_info['care_tip']}"
     highlights = [
-        f"<strong>Verified Value in Pakistan:</strong> Priced at <strong>Rs {price:g}</strong> (Regular Rs {reg:g}) with quality inspection before dispatch.",
-        f"<strong>Category & Classification:</strong> {html_lib.escape(cat)}{' › ' + html_lib.escape(sub) if (sub and sub != 'Other') else ''} ({html_lib.escape(spec_badge)}).",
+        f"<strong>Best Price in Pakistan:</strong> Available at <strong>Rs {price:g} PKR</strong> (Regular Rs {reg:g}) with pre-dispatch quality verification.",
+        f"<strong>Pakistani Market Fit ({html_lib.escape(niche_info['niche_label'])}):</strong> {html_lib.escape(niche_info['use_case'])}",
+        f"<strong>Category & Pack Spec:</strong> {html_lib.escape(cat)}{' › ' + html_lib.escape(sub) if (sub and sub != 'Other') else ''} ({html_lib.escape(spec_badge)}).",
         "<strong>5% Instant Discount:</strong> Automatically get <strong>5% OFF</strong> at checkout when your shopping cart reaches <strong>Rs 3,000 or above</strong>.",
-        "<strong>Free Home Delivery Options:</strong> Enjoy <strong>FREE Delivery</strong> across Pakistan on orders of <strong>Rs 5,000+</strong> OR when you pick <strong>any 3 selected Flash Sale items</strong> (standard delivery Rs 180).",
-        "<strong>Nationwide Cash on Delivery (COD):</strong> Pay at your doorstep in Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Quetta, and 200+ cities with a 7-day easy return policy."
+        "<strong>Free Home Delivery & Nationwide COD:</strong> Enjoy <strong>FREE Delivery</strong> on orders of <strong>Rs 5,000+</strong> OR any 3 Flash Sale items (standard Rs 180) with Cash on Delivery in Karachi, Lahore, Islamabad & 200+ cities."
     ]
     return intro_p, highlights, spec_badge
 
@@ -1113,27 +1221,50 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
             document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
         }}
 
+        function _withSelectedVar(name) {{
+            const base = String(name || '').trim();
+            if (window.selectedAsmVar && window.location.pathname.includes('/product/')) {{
+                const tag = ' [Option: ' + window.selectedAsmVar + ']';
+                if (!base.includes('[Option:')) return base + tag;
+            }}
+            return base;
+        }}
+        function asmTrackEvent(eventName, payload) {{
+            try {{
+                if (typeof window.gtag === 'function') window.gtag('event', eventName, payload || {{}});
+                if (typeof window.fbq === 'function') window.fbq('track', eventName, payload || {{}});
+                if (typeof window.ttq === 'object' && window.ttq && typeof window.ttq.track === 'function') window.ttq.track(eventName, payload || {{}});
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({{event: eventName, ...payload}});
+            }} catch(e) {{}}
+        }}
+
         function addToCart(name, price, image, event, slug) {{
             if(event) event.stopPropagation();
+            const fullName = _withSelectedVar(name);
             let cart = getCart();
-            let existing = cart.find(item => item.name === name);
+            let existing = cart.find(item => item.name === fullName);
             if (existing) {{ 
                 existing.qty = (existing.qty || 1) + 1; 
             }}
             else {{ 
-                cart.push({{name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:1,bundleDiscount:0,flashEligible:false}}); 
+                cart.push({{name:fullName,price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:1,bundleDiscount:0,flashEligible:false,variation:window.selectedAsmVar||''}}); 
             }}
             saveCart(cart);
-            showToast('Added to Cart!', 'fa-cart-plus', 'pk');
+            asmTrackEvent('AddToCart', {{content_name: fullName, value: parseFloat(price)||0, currency: 'PKR'}});
+            showToast('Added to Cart!' + (window.selectedAsmVar ? ' (' + window.selectedAsmVar + ')' : ''), 'fa-cart-plus', 'pk');
             pulseCartIcon();
         }}
 
         function addBundleToCart(name, price, image, slug, qty, saving) {{
+            const fullName = _withSelectedVar(name);
             let cart=getCart();
-            let existing=cart.find(item=>item.name===name);
+            let existing=cart.find(item=>item.name===fullName);
             if(existing) {{ existing.qty=Math.max(existing.qty||1, qty); existing.bundleDiscount=Math.max(existing.bundleDiscount||0, saving||0); }}
-            else {{ cart.push({{name:String(name||''),price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:qty,bundleDiscount:parseFloat(saving)||0,flashEligible:false}}); }}
-            saveCart(cart); showToast(qty+' item bundle added — save Rs '+(saving||0), 'fa-tags', 'pk'); pulseCartIcon();
+            else {{ cart.push({{name:fullName,price:parseFloat(price)||0,image:image||'',slug:slug||'',qty:qty,bundleDiscount:parseFloat(saving)||0,flashEligible:false,variation:window.selectedAsmVar||''}}); }}
+            saveCart(cart);
+            asmTrackEvent('AddToCart', {{content_name: fullName, value: (parseFloat(price)||0)*qty, currency: 'PKR'}});
+            showToast(qty+' item bundle added — save Rs '+(saving||0), 'fa-tags', 'pk'); pulseCartIcon();
         }}
 
         function addFlashSelection(items){{
@@ -1170,8 +1301,10 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
 
         function buyNow(name, price, image, event, slug) {{
             if(event) event.stopPropagation();
-            const item = {{name: String(name || ''), price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1}};
+            const fullName = _withSelectedVar(name);
+            const item = {{name: fullName, price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1, variation: window.selectedAsmVar || ''}};
             if (!item.name || item.price <= 0) {{ showToast('Product information is unavailable.', 'fa-exclamation-circle', 'red'); return; }}
+            asmTrackEvent('InitiateCheckout', {{content_name: fullName, value: item.price, currency: 'PKR'}});
             try {{ localStorage.setItem('asm_buy_now', JSON.stringify(item)); }} catch(e) {{}}
             window.location.href = '/checkout.html?buy_now=true';
         }}
@@ -1233,21 +1366,95 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function clearCompare() {{ localStorage.removeItem('asm_compare'); updateCompareBar(); updateCompareButtons(); }}
         function escapeHtml(value) {{ return String(value || '').replace(/[&<>"']/g, function(ch) {{ return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[ch]; }}); }}
         const ASM_SEARCH_SYNONYMS = {{
-            mobile:['smartphone','phone','cell'],
-            phone:['mobile','smartphone','holder','charger'],
-            watch:['smartwatch','timepiece','clock','wrist','ghari'],
-            smartwatch:['smart watch','fitness watch','watch'],
-            earbuds:['earphone','airpods','tws','handsfree','headphone','bluetooth'],
-            airpods:['earbuds','tws','earphone'],
-            perfume:['fragrance','cologne','attar','oud','scent','body spray','khushboo'],
-            shoes:['shoe','footwear','sneaker','sandal','slipper','laces','jutay'],
-            bag:['handbag','backpack','purse','wallet','tote','pouch'],
-            wallet:['purse','card holder','leather wallet'],
-            suit:['unstitched','dress','kurta','shalwar','apparel','kapray'],
-            underwear:['innerwear','boxer','brief','bra','vest','fdm','undergarment'],
-            toothpaste:['dental','teeth','whitening','mouthwash','toothbrush','manjan'],
-            cream:['moisturizer','serum','lotion','face wash','skincare','whitening'],
-            kitchen:['cookware','bottle','dispenser','utensil','plate','sieve','home']
+            mobile:['smartphone','phone','cell','stand','holder','charger','cable'],
+            phone:['mobile','smartphone','holder','charger','cover','stand'],
+            watch:['smartwatch','timepiece','clock','wrist','ghari','ghadi','t800','t900','strap','chain'],
+            ghari:['watch','smartwatch','clock','strap','t800','t900','ultra'],
+            ghadi:['watch','smartwatch','clock','strap','t800','t900'],
+            smartwatch:['smart watch','fitness watch','watch','t800','t900','s100','ultra'],
+            earbuds:['earphone','airpods','tws','handsfree','handfree','headphone','bluetooth','toti'],
+            handfree:['earbuds','earphones','handsfree','airpods','headphone','neckband','vizo','lenovo'],
+            handsfree:['earbuds','earphones','handfree','airpods','headphone','neckband'],
+            toti:['earbuds','airpods','earphones','bluetooth','wireless'],
+            airpods:['earbuds','tws','earphone','air 31','air31','pro'],
+            baja:['speaker','bluetooth speaker','karaoke','sound'],
+            speaker:['bluetooth speaker','karaoke','audio','jbl','joyroom','lamp'],
+            perfume:['fragrance','cologne','attar','oud','scent','body spray','khushboo','itr'],
+            khushboo:['perfume','fragrance','attar','body spray','diffuser','humidifier'],
+            attar:['perfume','fragrance','oud','islamic'],
+            shoes:['shoe','footwear','sneaker','sandal','slipper','laces','jutay','jootay','chappal','insole','heel'],
+            jutay:['shoes','shoe','slipper','sandal','footwear','shoe organizer','shoe brush','shoe cleaner'],
+            jootay:['shoes','shoe','slipper','sandal','footwear','shoe organizer','shoe brush'],
+            chappal:['slipper','shoes','sandal','carpet slipper'],
+            bag:['handbag','backpack','purse','wallet','tote','pouch','mummy bag','storage bag','thaila'],
+            basta:['bag','backpack','mummy bag','school'],
+            wallet:['purse','card holder','leather wallet','batwa','aluma'],
+            batwa:['wallet','purse','card holder','men wallet'],
+            suit:['unstitched','dress','kurta','shalwar','kameez','apparel','kapray','3pc','3 piece','2pc','khaddar','dhanak','lawn','silk','gown','mexi','maxi'],
+            kapray:['suit','unstitched','dress','shalwar','kameez','khaddar','dhanak','lawn','silk','women fashion','clothing'],
+            kapde:['suit','unstitched','dress','shalwar','kameez','khaddar','lawn','hanger','organizer'],
+            khaddar:['unstitched','suit','winter','3 piece','3pc','dhanak','shawl'],
+            dhanak:['unstitched','suit','winter','3 piece','3pc','khaddar'],
+            lawn:['unstitched','suit','summer','3 piece','3pc','dupatta','scarf'],
+            dupatta:['hijab','scarf','staller','shawl','organza','chiffon','chadar'],
+            hijab:['scarf','dupatta','staller','cap','tube cap','abaya','naqab'],
+            chadar:['bed sheet','comforter','shawl','staller','dupatta','hijab'],
+            underwear:['innerwear','boxer','brief','bra','vest','fdm','undergarment','baniyan','banyan','shapewear'],
+            baniyan:['vest','shaper','slim n fit','underwear','tummy','body shaper'],
+            banyan:['vest','shaper','slim n fit','underwear','body shaper'],
+            jurab:['socks','sock','anklet','silicone socks','heel'],
+            socks:['jurab','anklet','foot','heel','silicone'],
+            shaper:['shapewear','body shaper','tummy','waist','slim','belt','hot shaper','sweat belt'],
+            pait:['tummy','belly','waist','shaper','slimming','belt','hot shaper','trimmer'],
+            motapa:['weight loss','slimming','sweat belt','hot shaper','tummy trimmer','fitness'],
+            wazan:['weight','scale','kitchen scale','slimming','fitness','belt'],
+            dard:['pain','relief','massager','massage gun','posture','knee','belt','plaster','patch','hot water bag'],
+            kamar:['back','spine','posture','waist','belt','support','massager'],
+            ghutna:['knee','knee support','knee pad','knee patch','joint','pain'],
+            toothpaste:['dental','teeth','whitening','mouthwash','toothbrush','manjan','daant','v34','charcoal'],
+            daant:['teeth','tooth','toothbrush','toothpaste','whitening','dental'],
+            manjan:['teeth whitening','charcoal','tooth powder',' toothpaste'],
+            cream:['moisturizer','serum','lotion','face wash','skincare','whitening','polisher','facial','sunblock','sunscreen','foundation','bb cream'],
+            gora:['whitening','brightening','glow','polisher','facial','serum','glutathione','vitamin c','cream'],
+            rang:['whitening','skin','glow','facial','polisher','foundation','makeup','color'],
+            baal:['hair','straightener','curler','crimper','trimmer','dryer','shampoo','keratin','hair oil','toppik','caboki','comb','kangi','joo','lice'],
+            kangi:['comb','brush','hair straightener','lice comb','hair oil bottle'],
+            joo:['lice','anti lice','v-comb','nit comb','hair comb'],
+            machine:['trimmer','shaver','wax heater','sewing machine','washing machine','massager','chopper','straightener'],
+            trimmer:['shaver','clipper','dingling','kemei','shinon','nikai','t9','beard','hair','eyebrow','flawless'],
+            shaver:['trimmer','razor','epilator','kemei','dingling','lady shaver','flawless'],
+            parlor:['salon','wax','facial','polisher','straightener','crimper','curler','manicure','pedicure','eyelash'],
+            makeup:['lipstick','foundation','sunisa','huda','eyeliner','mascara','eyeshadow','brush','beauty','cosmetic'],
+            surkhi:['lipstick','lip','tint','balm','gloss','makeup'],
+            kitchen:['cookware','bottle','dispenser','utensil','plate','sieve','home','chopper','cutter','slicer','peeler','knife','masala','spice','oil','stove','pan','bartan','bawarchi'],
+            bartan:['kitchen','dish','plate','pan','pot','cookware','sponge','soap','cleaner','sink','utensil'],
+            sabzi:['vegetable','cutter','chopper','slicer','mandoline','peeler','grater','basket','kitchen'],
+            churi:['knife','sharpener','cutter','peeler','cleaver','kitchen'],
+            masala:['spice','jar','rack','seasoning','kitchen','box','grinder'],
+            chulha:['stove','hot plate','electric stove','burner','gas','simmer'],
+            anda:['egg','boiler','beater','omelette','pan','mold','whisk'],
+            samosa:['dumpling','maker','mold','press','roti','kitchen'],
+            roti:['mat','baking','dough','rolling','kitchen'],
+            pani:['water','bottle','dispenser','pump','filter','faucet','tap','kettle','flask','cooler'],
+            safai:['cleaning','cleaner','mop','broom','brush','sponge','wiper','duster','stain','vacuum','pochha','jharu'],
+            pochha:['mop','floor cleaner','triangle mop','x mop','spin mop','cleaning'],
+            jharu:['broom','mop','brush','duster','cleaning'],
+            machar:['mosquito','killer','lamp','racket','repellent','mesh','net'],
+            chuha:['mouse','rat','trap','glue','repeller'],
+            pankha:['fan','neck fan','folding fan','cooler','usb fan','mini fan','rechargeable'],
+            garmi:['summer','fan','air cooler','neck fan','AC','ice roller','sunblock'],
+            sardi:['winter','heater','hot water bag','scarf','shawl','pashmina','khaddar','beanie','cap','water heater'],
+            batti:['light','led','lamp','night light','bulb','ring light','indicator','fog light'],
+            camera:['mini camera','a9','sq8','sq11','wifi camera','bulb camera','security','ring light','tripod'],
+            bachon:['kids','baby','children','toddler','toy','khilone','book','lcd','feeder','pacifier','diaper'],
+            khilone:['toy','toys','kids','puzzle','car','cactus','bubble','slime','clay','yoyo','lato','board'],
+            chosni:['pacifier','feeder','teether','nibbler','baby','silicon'],
+            kitab:['book','novel','urdu novel','english novel','magic book','activity book','copybook','quran'],
+            novel:['book','urdu novel','umera ahmed','nimra ahmed','jaun elia','colleen hoover','ana huang','manto'],
+            islamic:['tasbeeh','counter','janamaz','decor','quran','arabic','hijab','abaya'],
+            bike:['motorcycle','motorbike','70cc','cd70','125cc','cg125','indicator','mudguard','headlight','fog light','chain cover','silencer','alarm'],
+            ishara:['indicator','turn signal','bike indicator','led indicator','70cc','125cc'],
+            gari:['car','auto','vehicle','vacuum','holder','charger','cleaner','polish','scratch','led']
         }};
         function buildSearchQueryTokens(query) {{
             const q = String(query || '').toLowerCase().trim();
@@ -2038,12 +2245,18 @@ setTimeout(()=>location.replace(destination),2200);
                             </div>
                         </div>
 
+                        <div class="mb-6 p-4 rounded-2xl bg-green-50 dark:bg-green-900/20 border-2 border-green-400 text-center">
+                            <p class="text-xs font-extrabold text-green-900 dark:text-green-200 mb-3"><i class="fas fa-bolt text-amber-500 mr-1"></i> Want Same-Day Priority Dispatch? Click below to send your confirmed Order ID on WhatsApp:</p>
+                            <a id="waConfirmOrderBtn" href="https://wa.me/923425478683" target="_blank" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-green-500 text-white px-8 py-4 rounded-xl font-black text-base hover:bg-green-600 transition-all shadow-lg">
+                                <i class="fab fa-whatsapp text-2xl" aria-hidden="true"></i> Confirm My Order on WhatsApp for Fast Dispatch
+                            </a>
+                        </div>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
                             <a href="/index.html#products" class="bg-[#087443] text-white px-8 py-3.5 rounded-xl font-bold hover:bg-[#065C35] transition-all shadow-md text-center flex-1 sm:flex-none">
                                 <i class="fas fa-shopping-bag mr-2" aria-hidden="true"></i> Continue Shopping
                             </a>
-                            <a href="https://wa.me/923425478683" target="_blank" class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white px-8 py-3.5 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all shadow-sm border border-gray-200 dark:border-gray-600 text-center flex-1 sm:flex-none">
-                                <i class="fab fa-whatsapp text-green-500 text-lg mr-2" aria-hidden="true"></i> Support
+                            <a href="/track-order.html" class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-white px-8 py-3.5 rounded-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-600 transition-all shadow-sm border border-gray-200 dark:border-gray-600 text-center flex-1 sm:flex-none">
+                                <i class="fas fa-truck-fast text-[#087443] text-lg mr-2" aria-hidden="true"></i> Track Order Status
                             </a>
                         </div>
                     </div>
@@ -2068,6 +2281,17 @@ setTimeout(()=>location.replace(destination),2200);
                 } catch(e) {}
                 let oId = urlOrder || savedLastId || ('ASM-' + Math.floor(100000 + Math.random() * 900000));
                 document.getElementById('orderId').innerText = oId;
+                try {
+                    const savedOrders = JSON.parse(localStorage.getItem('asm_orders') || '[]');
+                    const matchedOrd = savedOrders.find(x => x.orderId === oId) || savedOrders[0];
+                    const waConfirm = document.getElementById('waConfirmOrderBtn');
+                    if (waConfirm) {
+                        const msg = matchedOrd && matchedOrd.Complete_Order_Summary
+                            ? ("Hi ASM VEO! Please confirm my order for Priority Dispatch:\n\n" + matchedOrd.Complete_Order_Summary)
+                            : ("Hi ASM VEO! Please confirm my Order ID: " + oId + " for fast dispatch.");
+                        waConfirm.href = "https://wa.me/923425478683?text=" + encodeURIComponent(msg);
+                    }
+                } catch(e) {}
                 
                 localStorage.removeItem('asm_cart');
                 if(typeof updateCartBadge === 'function') updateCartBadge();
@@ -2739,8 +2963,17 @@ def normalize_category_hierarchy(raw, product_text=""):
         root = "Home & Kitchen"
     elif re.search(r"\b(pulse oximeter|slimming belt|tummy trimmer|resistance band|knee support|knee brace|acupressure|cooling gel patch|i\.v drip|height growth|height grow|sukoon-e-hazma|moringa)\b", pt_low):
         root = "Health & Wellness"
-    elif re.search(r"\b(torpedo level|radiator coolant|fuel cock|car trash|car dashboard|sandpaper)\b", pt_low):
+    elif re.search(r"\b(torpedo level|radiator coolant|fuel cock|car trash|car dashboard|sandpaper|motorcycle|motorbike|70cc|cd70|cg125|125cc|bike indicator|pindi mudguard|chain cover|magnet cover)\b", pt_low):
         root = "Automotive"
+    elif re.search(r"\b(3\s*pc|3\s*piece|unstitched|khaddar|dhanak|sussi|marina|katan silk|organza dupatta|embroidered shirt|mexi|maxi|fancy gown|hijab|staller|pashmina)\b", pt_low):
+        root = "Fashion"
+        sub = "Women's Unstitched & Ethnic Wear"
+    elif re.search(r"\b(urdu novel|by umera|by umaira|by nimra|by nemra|jaun elia|john elia|saadat hasan manto|bano qudsia|colleen hoover|ana huang|tahereh mafi|roald dahl|khaled hosseini|elif shafak|diwan e ghalib|peer e kamil|jannat ke pattey)\b", pt_low):
+        root = "Books & Stationery"
+        sub = "Novels & Literature"
+    elif re.search(r"\b(playdough|polymer clay|slime kit|super slime|dancing cactus|gatling bubble gun|lato-lato|yoyo|yo-yo|wooden puzzle|magic water book|lcd writing tablet)\b", pt_low):
+        root = "Toys & Baby"
+        sub = "Kids Educational & Creative Toys" 
     if root != old_root and sub not in {"Oral & Dental Care", "Underwear & Innerwear"}:
         sub = derive_subcategory_from_text(root, product_text)
         child = ""
@@ -2905,7 +3138,17 @@ def seo_keywords_for_product(name, category, subcategory="", limit=7):
         if score >= 8:
             scored.append((score, meta.get("volume",0), meta.get("kd",100), meta.get("keyword",low)))
     scored.sort(key=lambda x: (-x[0], -x[1], x[2], x[3]))
-    return [x[3] for x in scored[:limit]]
+    matched = [x[3] for x in scored[:limit]]
+    if len(matched) < limit:
+        clean_short = _truncate_at_word(clean_hhc_title(name), 38).lower()
+        niche_info = get_pakistan_niche_intelligence(name, category, subcategory)
+        fallbacks = [f"{clean_short} price in pakistan", f"buy {clean_short} online pakistan"] + niche_info.get("roman_kws", [])
+        for fb in fallbacks:
+            if fb and fb.lower() not in {m.lower() for m in matched}:
+                matched.append(fb)
+                if len(matched) >= limit:
+                    break
+    return matched[:limit]
 
 def keyword_intent_label(intent, keyword):
     low = f"{intent} {keyword}".lower()
@@ -3374,6 +3617,30 @@ def _copy_price_list_to_output(path=PRICE_LIST_PATH):
 
 def process_woocommerce_csv():
     file_path = os.environ.get("PRODUCT_CSV", "woocommerce-products-export.csv")
+    if not os.path.exists(file_path):
+        # Auto-extract from woocommerce-products-export.zip if uploaded as a <25MB zip archive on GitHub
+        for zip_cand in ["woocommerce-products-export.zip", "products.zip"]:
+            if os.path.exists(zip_cand):
+                import zipfile as _zf
+                with _zf.ZipFile(zip_cand, "r") as z:
+                    for member in z.namelist():
+                        if member.lower().endswith(".csv"):
+                            z.extract(member, ".")
+                            if member != file_path and not os.path.exists(file_path):
+                                shutil.move(member, file_path)
+                            print(f"📦 Extracted {file_path} from {zip_cand}!")
+                            break
+    if not os.path.exists(file_path):
+        part_files = sorted(glob.glob("woocommerce-products-part*.csv"))
+        if part_files:
+            with open(file_path, "w", encoding="utf-8", newline="") as out_f:
+                for idx_p, pf in enumerate(part_files):
+                    with open(pf, "r", encoding="utf-8-sig", errors="ignore") as in_f:
+                        for line_i, line in enumerate(in_f):
+                            if idx_p > 0 and line_i == 0:
+                                continue
+                            out_f.write(line)
+            print(f"🧩 Merged {len(part_files)} split CSV parts into {file_path}!")
     if not os.path.exists(file_path):
         print("❌ CSV File Not Found!")
         return
@@ -3871,6 +4138,35 @@ def process_woocommerce_csv():
                 </a>
             </div>"""
         )
+        raw_attrs_list = [opt.strip() for opt in str(prod.get("attributes", "")).split("|") if opt.strip()]
+        if raw_attrs_list:
+            btns_html = "".join(
+                f'<button type="button" onclick="selectAsmVariation(this, \'{html_lib.escape(opt, quote=True)}\')" class="asm-var-pill px-3 py-1 rounded-lg text-xs font-bold border border-gray-300 bg-white text-gray-800 hover:border-[#087443] transition">{html_lib.escape(opt)}</button>'
+                for opt in raw_attrs_list[:20]
+            )
+            variation_pills_html = f'<div class="mb-3 p-3 rounded-xl bg-[#F7FCF8] border border-[#D8E9DF]"><div class="text-[11px] font-black uppercase tracking-wider text-[#087443] mb-2">Available Options / Variations:</div><div class="flex flex-wrap gap-1.5" id="asmVarPills">{btns_html}</div></div>'
+        else:
+            variation_pills_html = ""
+        hay_sc = f"{prod.get('name','')} {prod.get('category','')} {prod.get('subcategory','')}".lower()
+        if re.search(r'\b(suit|unstitched|3\s*pc|3\s*piece|2\s*pc|khaddar|dhanak|lawn|silk|gown|mexi|maxi|kurti|shapewear|body shaper|waist|tummy|belt|vest|bra|posture)\b', hay_sc):
+            size_chart_html = (
+                '<details class="mb-4 rounded-xl border border-emerald-200 bg-emerald-50/60 dark:bg-gray-700 p-3 text-xs">'
+                '<summary class="cursor-pointer font-black text-[#087443] dark:text-emerald-300 flex items-center justify-between list-none">'
+                '<span><i class="fas fa-ruler-combined mr-1.5"></i> Pakistani Size &amp; Cutting Guide (Click to View)</span>'
+                '<i class="fas fa-chevron-down text-[10px]"></i></summary>'
+                '<div class="mt-2.5 overflow-x-auto">'
+                '<table class="w-full text-[11px] border border-gray-200 bg-white dark:bg-gray-800 rounded-lg text-left">'
+                '<thead><tr class="bg-gray-100 dark:bg-gray-900 font-bold"><th class="p-1.5">Size / Type</th><th class="p-1.5">Waist / Chest</th><th class="p-1.5">Pakistani Standard Fit</th></tr></thead>'
+                '<tbody>'
+                '<tr class="border-t"><td class="p-1.5 font-bold">Small (S)</td><td class="p-1.5">26"–29" Waist / 36" Chest</td><td class="p-1.5">Slim / Teen &amp; Regular Fit</td></tr>'
+                '<tr class="border-t"><td class="p-1.5 font-bold">Medium (M)</td><td class="p-1.5">30"–32" Waist / 38"–39" Chest</td><td class="p-1.5">Standard Pakistani Medium</td></tr>'
+                '<tr class="border-t"><td class="p-1.5 font-bold">Large (L)</td><td class="p-1.5">33"–35" Waist / 40"–42" Chest</td><td class="p-1.5">Standard Pakistani Large</td></tr>'
+                '<tr class="border-t"><td class="p-1.5 font-bold">XL / 2XL / 3XL</td><td class="p-1.5">36"–44" Waist / 43"–48" Chest</td><td class="p-1.5">Plus Size / Relaxed Comfort</td></tr>'
+                '<tr class="border-t bg-emerald-50/40"><td class="p-1.5 font-bold">3-Pc Unstitched</td><td class="p-1.5">Shirt 2.5–3m • Trouser 2.5m</td><td class="p-1.5">Dupatta 2.25–2.5m (Stitches S to XXL)</td></tr>'
+                '</tbody></table></div></details>'
+            )
+        else:
+            size_chart_html = ""
         prod_html += f"""
         <div class="container mx-auto px-4 py-6">
             <nav class="text-xs text-gray-600 dark:text-gray-400 mb-4 font-semibold bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg inline-block" aria-label="Breadcrumb">
@@ -3906,12 +4202,13 @@ def process_woocommerce_csv():
                         {f'<span class="bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-lg">Save Rs {prod["regular_price"] - prod["final_price"]:g}</span>' if discount_pct > 0 else ''}
                     </div>
                     <div class="mb-3 text-xs font-black text-[#087443] flex items-center gap-2"><i class="fas fa-money-bill-wave" aria-hidden="true"></i> Cash on Delivery Available All Over Pakistan • SKU: ASM-{html_lib.escape(str(prod['id']))}</div>
-                    
+                    {variation_pills_html}
                     {main_buttons_html}
                     
-                    <a href="{wa_link}" target="_blank" class="w-full bg-green-500 text-white font-bold py-2.5 rounded-xl hover:bg-green-600 transition flex items-center justify-center gap-2 mb-4 shadow-sm text-sm">
+                    <a id="productWhatsAppBtn" data-base-wa="https://wa.me/923425478683?text={urllib.parse.quote(wa_text)}" href="{wa_link}" target="_blank" class="w-full bg-green-500 text-white font-bold py-2.5 rounded-xl hover:bg-green-600 transition flex items-center justify-center gap-2 mb-4 shadow-sm text-sm">
                         <i class="fab fa-whatsapp text-lg" aria-hidden="true"></i> Quick Order via WhatsApp
                     </a>
+                    {size_chart_html}
 
                     {f'''<div class="bundle-offers mb-4 rounded-2xl border border-[#D8E9DF] bg-[#F7FCF8] p-3.5">
                         <div class="flex items-center justify-between gap-2 mb-2"><h3 class="font-black text-xs text-gray-900">Buy More & Save</h3><span class="text-[10px] font-black uppercase tracking-wider text-[#087443]">Bundle Deal</span></div>
@@ -3954,9 +4251,21 @@ def process_woocommerce_csv():
                                 <tr class="border-b border-gray-100 dark:border-gray-700"><td class="p-2.5 font-bold bg-gray-50 dark:bg-gray-900">Sale Price in Pakistan</td><td class="p-2.5 font-black text-[#087443]">Rs {prod['final_price']:g} PKR</td></tr>
                                 <tr class="border-b border-gray-100 dark:border-gray-700"><td class="p-2.5 font-bold bg-gray-50 dark:bg-gray-900">Shopping Discount</td><td class="p-2.5">5% OFF on Orders Rs 3,000+</td></tr>
                                 <tr class="border-b border-gray-100 dark:border-gray-700"><td class="p-2.5 font-bold bg-gray-50 dark:bg-gray-900">Delivery Policy</td><td class="p-2.5">Free on Rs 5,000+ or Pick 3 Flash Sale (Standard Rs {DELIVERY_FEE})</td></tr>
-                                <tr><td class="p-2.5 font-bold bg-gray-50 dark:bg-gray-900">Payment & Returns</td><td class="p-2.5">Cash on Delivery (COD) • 7-Day Easy Return</td></tr>
+                                <tr><td class="p-2.5 font-bold bg-gray-50 dark:bg-gray-900">Payment & Returns</td><td class="p-2.5">Cash on Delivery (COD) • Extra Rs 100 OFF on Easypaisa/JazzCash • 7-Day Return</td></tr>
                             </tbody>
                         </table>
+                        <div class="mt-4 rounded-xl border border-[#D8E9DF] bg-[#F7FCF8] dark:bg-gray-900 p-3.5">
+                            <h3 class="text-xs font-black uppercase tracking-wider text-[#087443] mb-2"><i class="fas fa-award mr-1"></i> Why Buy from ASM VEO vs Local Market (AI &amp; Buyer Comparison)</h3>
+                            <table class="w-full text-[11px] border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-lg overflow-hidden">
+                                <thead><tr class="bg-[#087443] text-white font-bold"><th class="p-2 text-left">Feature</th><th class="p-2 text-left">ASM VEO Pakistan</th><th class="p-2 text-left">Other Local Pages</th></tr></thead>
+                                <tbody>
+                                    <tr class="border-t"><td class="p-2 font-bold">Verified Price</td><td class="p-2 font-black text-[#087443]">Rs {prod['final_price']:g} PKR (Direct Value)</td><td class="p-2 text-gray-500">Rs {prod['regular_price']:g}+ (High Markup)</td></tr>
+                                    <tr class="border-t"><td class="p-2 font-bold">Cart Discounts</td><td class="p-2 font-semibold text-emerald-700">5% OFF (Rs 3,000+) + Rs 100 OFF Advance Pay</td><td class="p-2 text-gray-500">No Cart Discount</td></tr>
+                                    <tr class="border-t"><td class="p-2 font-bold">Delivery Offer</td><td class="p-2 font-semibold">FREE on Rs 5,000+ or 3 Flash Items (Std Rs {DELIVERY_FEE})</td><td class="p-2 text-gray-500">Rs 250–350 Per Item</td></tr>
+                                    <tr class="border-t"><td class="p-2 font-bold">Buyer Protection</td><td class="p-2 font-semibold text-emerald-700">7-Day Easy Return &amp; Pre-Dispatch Check</td><td class="p-2 text-gray-500">No Return Guarantee</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -4024,6 +4333,26 @@ def process_woocommerce_csv():
         prod_script = f"""
         <script>
             addToRecentlyViewed({recent_json}); 
+            window.selectedAsmVar = "";
+            function selectAsmVariation(btn, val) {{
+                window.selectedAsmVar = val;
+                document.querySelectorAll(".asm-var-pill").forEach(b => {{
+                    b.classList.remove("bg-[#087443]", "text-white", "border-[#087443]");
+                    b.classList.add("bg-white", "text-gray-800");
+                }});
+                if (btn) {{
+                    btn.classList.remove("bg-white", "text-gray-800");
+                    btn.classList.add("bg-[#087443]", "text-white", "border-[#087443]");
+                }}
+                const waBtn = document.getElementById("productWhatsAppBtn");
+                if (waBtn && waBtn.dataset.baseWa) {{
+                    waBtn.href = waBtn.dataset.baseWa + encodeURIComponent(" (Selected Option: " + val + ")");
+                }}
+            }}
+            document.addEventListener("DOMContentLoaded", function() {{
+                const firstPill = document.querySelector(".asm-var-pill");
+                if (firstPill) firstPill.click();
+            }});
             function changeMainImage(thumb) {{ 
                 const oldVideo = document.getElementById('mainProductVideo');
                 if (oldVideo) oldVideo.remove();
@@ -5405,9 +5734,19 @@ def process_woocommerce_csv():
                         </div>
                     </div>
                     
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="landmarkInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Nearest Famous Landmark (مشہور قریبی جگہ) <span class="text-red-600">*</span></label>
+                            <input type="text" id="landmarkInput" name="Nearest_Landmark" oninput="updateCheckoutWhatsApp()" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="Near Masjid, School, Market, Chowk...">
+                        </div>
+                        <div>
+                            <label for="altPhoneNum" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">2nd / Alternate Phone (متبادل نمبر - Optional)</label>
+                            <input type="tel" id="altPhoneNum" name="Alternate_Phone" oninput="updateCheckoutWhatsApp()" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" placeholder="03XX-XXXXXXX (For Courier Rider)">
+                        </div>
+                    </div>
                     <div>
-                        <label for="addressInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address <span class="text-red-600">*</span></label>
-                        <textarea id="addressInput" name="Address" oninput="updateCheckoutWhatsApp()" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="House No, Street, Area, Landmark..."></textarea>
+                        <label for="addressInput" class="block text-sm font-bold text-gray-800 dark:text-gray-200 mb-2">Complete Delivery Address (مکمل پتہ: مکان/گلی/محلہ) <span class="text-red-600">*</span></label>
+                        <textarea id="addressInput" name="Address" oninput="updateCheckoutWhatsApp()" rows="3" class="w-full border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white p-3 rounded-xl bg-gray-50 focus:bg-white focus:border-[#087443] outline-none" required placeholder="House No, Street No, Mohalla / Sector / Phase..."></textarea>
                     </div>
                     
                     <div>
@@ -5421,8 +5760,8 @@ def process_woocommerce_csv():
                                 <label class="cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:border-[#087443] p-4 rounded-xl flex items-center gap-3 transition-all" id="labelAdv">
                                     <input type="radio" name="Payment_Method" value="Advance Payment" class="w-5 h-5 text-[#087443] focus:ring-[#087443]" onchange="togglePaymentDetails()">
                                     <div class="flex flex-col">
-                                        <span class="font-bold text-gray-900 dark:text-white leading-tight">Advance Payment</span>
-                                        <span class="text-[10px] font-semibold text-gray-500">Easypaisa / JazzCash</span>
+                                        <span class="font-bold text-gray-900 dark:text-white leading-tight">Advance Payment <span class="bg-emerald-100 text-[#087443] text-[10px] font-black px-2 py-0.5 rounded-full ml-1">Extra Rs 100 OFF</span></span>
+                                        <span class="text-[10px] font-semibold text-gray-500">Easypaisa / JazzCash Instant Discount</span>
                                     </div>
                                 </label>
                             </div>
@@ -5572,9 +5911,11 @@ function buildCheckoutTotals(){
     const freeThree=(flashEligibleQty>=3);
     const highValueFree=(subtotal>=5000);
     const effectiveDelivery=(items.length===0)?0:((freeThree||highValueFree)?0:z.charge);
-    const discount=bundleDiscount+couponDiscount;
+    const paymentMethod=document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery';
+    const advBonusDiscount=(paymentMethod==='Advance Payment' && subtotal>0)?Math.min(100, subtotal):0;
+    const discount=bundleDiscount+couponDiscount+advBonusDiscount;
     const total=Math.max(0,subtotal-discount+effectiveDelivery);
-    return {items,city,delivery:effectiveDelivery,subtotal,discount,total,totalQty,autoFivePercentEligible,payment:document.querySelector('input[name="Payment_Method"]:checked')?.value||'Cash on Delivery',freeThree,highValueFree,flashEligibleQty};
+    return {items,city,delivery:effectiveDelivery,subtotal,discount,advBonusDiscount,total,totalQty,autoFivePercentEligible,payment:paymentMethod,freeThree,highValueFree,flashEligibleQty};
 }
 function normalizePakPhone(raw){
     const digits=String(raw||'').replace(/[^0-9]/g,'');
@@ -5593,8 +5934,11 @@ function buildFullOrderSummaryText(orderId, t){
     const phone=normalizePakPhone(rawPhone)||'Not entered yet';
     const waLink=formatWhatsAppPhoneLink(rawPhone);
     const email=(document.getElementById('emailAddr')?.value||'').trim()||'Not provided';
+    const altPhone=(document.getElementById('altPhoneNum')?.value||'').trim()||'None';
+    const landmark=(document.getElementById('landmarkInput')?.value||'').trim()||'Not entered yet';
     const city=(document.getElementById('citySelect')?.value||'').trim()||'Not selected yet';
-    const address=(document.getElementById('addressInput')?.value||'').trim()||'Not entered yet';
+    const rawAddr=(document.getElementById('addressInput')?.value||'').trim()||'Not entered yet';
+    const address=rawAddr + (landmark && landmark !== 'Not entered yet' ? ' (Near Landmark: ' + landmark + ')' : '') + (altPhone && altPhone !== 'None' ? ' [Alt Phone: ' + altPhone + ']' : '');
     const notes=(document.getElementById('orderNotes')?.value||'').trim()||'None';
     const nowStr=new Date().toLocaleString('en-PK',{timeZone:'Asia/Karachi'});
     const lines=[
@@ -5710,7 +6054,11 @@ async function submitCheckoutOrder(e){
     const custPhone=normalizePakPhone(document.getElementById('phoneNum')?.value||'');
     const custWaLink=formatWhatsAppPhoneLink(custPhone);
     const custCity=(document.getElementById('citySelect')?.value||'').trim();
-    const custAddress=(document.getElementById('addressInput')?.value||'').trim();
+    const custLandmark=(document.getElementById('landmarkInput')?.value||'').trim();
+    const custAltPhone=normalizePakPhone(document.getElementById('altPhoneNum')?.value||'');
+    const rawAddress=(document.getElementById('addressInput')?.value||'').trim();
+    const custAddress=rawAddress + (custLandmark ? ' (Landmark: ' + custLandmark + ')' : '') + (custAltPhone ? ' [Alt Phone: ' + custAltPhone + ']' : '');
+    asmTrackEvent('Purchase', {value: t.total, currency: 'PKR', transaction_id: orderId});
     const custEmail=(document.getElementById('emailAddr')?.value||'').trim();
     const custNotes=(document.getElementById('orderNotes')?.value||'').trim();
     const itemizedProducts=t.items.map((i,idx)=>(idx+1)+'. '+i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'\n   Link: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join('\n');
