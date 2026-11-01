@@ -253,6 +253,12 @@ updateCartBadge();
 function updateCartBadge() {
 let cart = getCart();
 let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+if (cartCount === 0 && window.location.search.includes('buy_now=true')) {
+try {
+const bn = JSON.parse(localStorage.getItem('asm_buy_now') || 'null');
+if (bn && bn.name && Number(bn.price) > 0) cartCount = Number(bn.qty) || 1;
+} catch(e) {}
+}
 document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
 }
 function _withSelectedVar(name) {
@@ -330,11 +336,27 @@ if (typeof renderCart === 'function') renderCart();
 function buyNow(name, price, image, event, slug) {
 if(event) event.stopPropagation();
 const fullName = _withSelectedVar(name);
-const item = {name: fullName, price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1, variation: window.selectedAsmVar || ''};
+const numPrice = parseFloat(price) || 0;
+const item = {name: fullName, price: numPrice, image: image || '', slug: slug || '', qty: 1, bundleDiscount: 0, flashEligible: false, variation: window.selectedAsmVar || ''};
 if (!item.name || item.price <= 0) { showToast('Product information is unavailable.', 'fa-exclamation-circle', 'red'); return; }
 asmTrackEvent('InitiateCheckout', {content_name: fullName, value: item.price, currency: 'PKR'});
-try { localStorage.setItem('asm_buy_now', JSON.stringify(item)); } catch(e) {}
-window.location.href = '/checkout.html?buy_now=true';
+try {
+localStorage.setItem('asm_buy_now', JSON.stringify(item));
+let cart = getCart();
+let existing = cart.find(x => x.name === fullName);
+if (!existing) {
+cart.push(item);
+saveCart(cart);
+}
+} catch(e) {}
+const q = new URLSearchParams({
+buy_now: 'true',
+product: fullName,
+price: String(numPrice),
+image: String(image || ''),
+slug: String(slug || '')
+});
+window.location.href = '/checkout.html?' + q.toString();
 }
 function getWishlist() {
 return JSON.parse(localStorage.getItem('asm_wishlist')) || [];
@@ -630,31 +652,80 @@ setTimeout(() => cartIcon.classList.remove('scale-125'), 200);
 }
 }
 let searchLoaded = false;
+let searchCallbacks = [];
 let searchSuggestionsLoaded = false;
+let suggestCallbacks = [];
 function loadSearchData(callback) {
-if (window.searchIndex) { if (callback) callback(); return; }
-if (searchLoaded) { if (callback) setTimeout(callback, 80); return; }
+if (window.searchIndex && Array.isArray(window.searchIndex)) {
+if (callback) callback();
+return;
+}
+if (callback) searchCallbacks.push(callback);
+if (searchLoaded) return;
 searchLoaded = true;
 let script = document.createElement('script');
 script.src = '/search-data.js';
-script.onload = function() { if (callback) callback(); };
-script.onerror = function() { searchLoaded = false; if (callback) callback(); };
+script.onload = function() {
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) { console.error(e); } });
+};
+script.onerror = function() {
+searchLoaded = false;
+// Fallback to searchSuggestIndex if available
+if (window.searchSuggestIndex && !window.searchIndex) {
+window.searchIndex = window.searchSuggestIndex;
+} else {
+loadSearchSuggestions(function() {
+if (window.searchSuggestIndex && !window.searchIndex) window.searchIndex = window.searchSuggestIndex;
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+});
+return;
+}
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
 document.head.appendChild(script);
 }
 function loadSearchSuggestions(callback) {
-if (window.searchSuggestIndex) { if (callback) callback(); return; }
-if (searchSuggestionsLoaded) { if (callback) setTimeout(callback, 50); return; }
+if (window.searchSuggestIndex || window.searchIndex) {
+if (callback) callback();
+return;
+}
+if (callback) suggestCallbacks.push(callback);
+if (searchSuggestionsLoaded) return;
 searchSuggestionsLoaded = true;
 let script = document.createElement('script');
 script.src = '/search-suggest-data.js';
-script.onload = function() { if (callback) callback(); };
-script.onerror = function() { searchSuggestionsLoaded = false; if (callback) callback(); };
+script.onload = function() {
+const cbs = suggestCallbacks.slice();
+suggestCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
+script.onerror = function() {
+searchSuggestionsLoaded = false;
+const cbs = suggestCallbacks.slice();
+suggestCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
 document.head.appendChild(script);
 }
 function executeSearch() {
-let val = document.getElementById('searchInput').value;
-if(val.trim() !== "") {
+let input = document.getElementById('searchInput');
+let val = input ? input.value.trim() : '';
+if (val !== "") {
+hideSearchSuggestions();
+if (typeof performSearch === 'function') {
+const url = new URL(window.location.href);
+url.searchParams.set('search', val);
+window.history.pushState({}, '', url.pathname + '?' + url.searchParams.toString());
+performSearch(val);
+} else {
 window.location.href = '/index.html?search=' + encodeURIComponent(val);
+}
 }
 }
 function handleSearch(e) {
@@ -801,4 +872,4 @@ Check Current Offers
 View Full Details
 </a></div></div></div></div><a href="https://wa.me/923425478683?text=Hi,%20I%20want%20to%20know%20about%20your%20products" target="_blank"
 class="fixed bottom-24 right-4 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-600 transition-all z-50 hover:scale-110 pulse-ring"
-aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i></a><button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#087443] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#065C35] transition z-50" aria-label="Back to top"><i class="fas fa-arrow-up text-xl" aria-hidden="true"></i></button><main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl"><div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#087443] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#087443]"><button onclick="trackLocalOrder()" class="bg-[#087443] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#065C35]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>window.addEventListener('load',()=>{const q=new URLSearchParams(location.search).get('id');if(q)document.getElementById('trackOrderInput').value=q});function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Submitted','Confirmed','Shipped','Delivered'];const rawSt=(o.status||'Submitted');const status=(rawSt==='Pending'?'Submitted':rawSt);const idx=Math.max(0,steps.indexOf(status));r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#087443]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">City: <strong>'+(o.city||'Pakistan')+'</strong> • Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div></main><section class="asm-trust-strip mt-14"><div class="container mx-auto px-4 py-6 grid grid-cols-2 lg:grid-cols-4 gap-5"><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-shield-halved"></i></div><div><div class="font-black text-sm">Secure Payments</div><div class="text-[11px] text-white/70">Protected checkout</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-truck-fast"></i></div><div><div class="font-black text-sm">Fast Delivery</div><div class="text-[11px] text-white/70">Across Pakistan</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-rotate-left"></i></div><div><div class="font-black text-sm">Easy Returns</div><div class="text-[11px] text-white/70">7-day return policy</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-headset"></i></div><div><div class="font-black text-sm">Customer Support</div><div class="text-[11px] text-white/70">WhatsApp assistance</div></div></div></div></section><footer class="asm-footer pt-10 pb-24 md:pb-8"><div class="container mx-auto px-4"><div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-9"><div class="col-span-2 md:col-span-1"><div class="flex items-center gap-2 mb-4"><img src="/icon.png" alt="ASM VEO" class="w-12 h-12 object-contain rounded-xl bg-white p-1"><div><div class="text-xl font-black text-white">ASM VEO</div><div class="text-[9px] tracking-[.25em] text-emerald-200 font-bold">PAKISTAN</div></div></div><p class="footer-muted text-xs leading-6">Online shopping across Pakistan with Cash on Delivery, useful product information and customer support.</p></div><div><h3 class="font-black mb-4 pb-2 border-b">Shop</h3><ul class="space-y-2 text-xs"><li><a href="/index.html#products">All Products</a></li><li><a href="/categories.html">Categories</a></li><li><a href="/all-products-directory.html">All Products Index</a></li><li><a href="/wishlist.html">Wishlist</a></li><li><a href="/checkout.html">Cart & Checkout</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Support</h3><ul class="space-y-2 text-xs"><li><a href="/faq.html">Help Center</a></li><li><a href="/track-order.html">Track Order</a></li><li><a href="/return-policy.html">Returns</a></li><li><a href="/shipping-policy.html">Shipping</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Company</h3><ul class="space-y-2 text-xs"><li><a href="/about.html">About Us</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/blog.html">Blogs</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Contact</h3><div class="space-y-3 text-xs footer-muted"><a class="flex items-center gap-2" href="https://wa.me/923425478683"><i class="fab fa-whatsapp text-emerald-300 text-lg"></i> 0342 54 786 83</a><div class="asm-pakistan-note rounded-xl p-3 text-white font-bold leading-5">🇵🇰 پاکستان کی ہر ضرورت<br>اب ایک جگہ!</div></div></div></div><div class="border-t border-white/10 pt-5 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] footer-muted"><span>© 2026 ASM Digital Solutions. All Rights Reserved.</span><span>Made for shoppers across Pakistan 🇵🇰</span></div></div></footer></body></html>
+aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp text-3xl" aria-hidden="true"></i></a><button id="backToTop" onclick="scrollTop()" class="hidden fixed bottom-24 left-4 bg-[#087443] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center hover:bg-[#065C35] transition z-50" aria-label="Back to top"><i class="fas fa-arrow-up text-xl" aria-hidden="true"></i></button><main id="main-content" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 shadow-2xl"><div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#087443] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#087443]"><button onclick="trackLocalOrder()" class="bg-[#087443] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#065C35]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>window.addEventListener('load',()=>{const q=new URLSearchParams(location.search).get('id');if(q)document.getElementById('trackOrderInput').value=q});function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Submitted','Confirmed','Shipped','Delivered'];const rawSt=(o.status||'Submitted');const status=(rawSt==='Pending'?'Submitted':rawSt);const idx=Math.max(0,steps.indexOf(status));r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#087443]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">City: <strong>'+(o.city||'Pakistan')+'</strong> • Total: <strong>'+(o.total||'—')+'</strong></p></div>';}</script></div></main><section class="asm-trust-strip mt-14"><div class="container mx-auto px-4 py-6 grid grid-cols-2 lg:grid-cols-4 gap-5"><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-shield-halved"></i></div><div><div class="font-black text-sm">Secure Payments</div><div class="text-[11px] text-white/70">Protected checkout</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-truck-fast"></i></div><div><div class="font-black text-sm">Fast Delivery</div><div class="text-[11px] text-white/70">Across Pakistan</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-rotate-left"></i></div><div><div class="font-black text-sm">Easy Returns</div><div class="text-[11px] text-white/70">7-day return policy</div></div></div><div class="asm-trust-item"><div class="asm-trust-icon"><i class="fas fa-headset"></i></div><div><div class="font-black text-sm">Customer Support</div><div class="text-[11px] text-white/70">WhatsApp assistance</div></div></div></div></section><footer class="asm-footer pt-10 pb-24 md:pb-8"><div class="container mx-auto px-4"><div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-9"><div class="col-span-2 md:col-span-1"><div class="flex items-center gap-2 mb-4"><img src="/icon.png" alt="ASM VEO" class="w-12 h-12 object-contain rounded-xl bg-white p-1"><div><div class="text-xl font-black text-white">ASM VEO</div><div class="text-[9px] tracking-[.25em] text-emerald-200 font-bold">PAKISTAN</div></div></div><p class="footer-muted text-xs leading-6">Online shopping across Pakistan with Cash on Delivery, useful product information and customer support.</p></div><div><h3 class="font-black mb-4 pb-2 border-b">Shop</h3><ul class="space-y-2 text-xs"><li><a href="/index.html#products">All Products</a></li><li><a href="/categories.html">Categories</a></li><li><a href="/all-products-directory.html">All Products Index</a></li><li><a href="/wishlist.html">Wishlist</a></li><li><a href="/checkout.html">Cart & Checkout</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Support</h3><ul class="space-y-2 text-xs"><li><a href="/faq.html">Help Center</a></li><li><a href="/track-order.html">Track Order</a></li><li><a href="/return-policy.html">Returns</a></li><li><a href="/shipping-policy.html">Shipping</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Company</h3><ul class="space-y-2 text-xs"><li><a href="/about.html">About Us</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/blog.html">Blogs</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div><div><h3 class="font-black mb-4 pb-2 border-b">Contact</h3><div class="space-y-3 text-xs footer-muted"><a class="flex items-center gap-2" href="https://wa.me/923425478683"><i class="fab fa-whatsapp text-emerald-300 text-lg"></i> 0342 54 786 83</a><div class="asm-pakistan-note rounded-xl p-3 text-white font-bold leading-5">🇵🇰 پاکستان کی ہر ضرورت<br>اب ایک جگہ!</div></div></div></div><div class="border-t border-white/10 pt-5 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] footer-muted"><span>© 2026 ASM Digital Solutions. All Rights Reserved.</span><span>Made for shoppers across Pakistan 🇵🇰</span></div></div></footer></body></html>

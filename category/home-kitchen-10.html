@@ -253,6 +253,12 @@ updateCartBadge();
 function updateCartBadge() {
 let cart = getCart();
 let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+if (cartCount === 0 && window.location.search.includes('buy_now=true')) {
+try {
+const bn = JSON.parse(localStorage.getItem('asm_buy_now') || 'null');
+if (bn && bn.name && Number(bn.price) > 0) cartCount = Number(bn.qty) || 1;
+} catch(e) {}
+}
 document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
 }
 function _withSelectedVar(name) {
@@ -330,11 +336,27 @@ if (typeof renderCart === 'function') renderCart();
 function buyNow(name, price, image, event, slug) {
 if(event) event.stopPropagation();
 const fullName = _withSelectedVar(name);
-const item = {name: fullName, price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1, variation: window.selectedAsmVar || ''};
+const numPrice = parseFloat(price) || 0;
+const item = {name: fullName, price: numPrice, image: image || '', slug: slug || '', qty: 1, bundleDiscount: 0, flashEligible: false, variation: window.selectedAsmVar || ''};
 if (!item.name || item.price <= 0) { showToast('Product information is unavailable.', 'fa-exclamation-circle', 'red'); return; }
 asmTrackEvent('InitiateCheckout', {content_name: fullName, value: item.price, currency: 'PKR'});
-try { localStorage.setItem('asm_buy_now', JSON.stringify(item)); } catch(e) {}
-window.location.href = '/checkout.html?buy_now=true';
+try {
+localStorage.setItem('asm_buy_now', JSON.stringify(item));
+let cart = getCart();
+let existing = cart.find(x => x.name === fullName);
+if (!existing) {
+cart.push(item);
+saveCart(cart);
+}
+} catch(e) {}
+const q = new URLSearchParams({
+buy_now: 'true',
+product: fullName,
+price: String(numPrice),
+image: String(image || ''),
+slug: String(slug || '')
+});
+window.location.href = '/checkout.html?' + q.toString();
 }
 function getWishlist() {
 return JSON.parse(localStorage.getItem('asm_wishlist')) || [];
@@ -630,31 +652,80 @@ setTimeout(() => cartIcon.classList.remove('scale-125'), 200);
 }
 }
 let searchLoaded = false;
+let searchCallbacks = [];
 let searchSuggestionsLoaded = false;
+let suggestCallbacks = [];
 function loadSearchData(callback) {
-if (window.searchIndex) { if (callback) callback(); return; }
-if (searchLoaded) { if (callback) setTimeout(callback, 80); return; }
+if (window.searchIndex && Array.isArray(window.searchIndex)) {
+if (callback) callback();
+return;
+}
+if (callback) searchCallbacks.push(callback);
+if (searchLoaded) return;
 searchLoaded = true;
 let script = document.createElement('script');
 script.src = '/search-data.js';
-script.onload = function() { if (callback) callback(); };
-script.onerror = function() { searchLoaded = false; if (callback) callback(); };
+script.onload = function() {
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) { console.error(e); } });
+};
+script.onerror = function() {
+searchLoaded = false;
+// Fallback to searchSuggestIndex if available
+if (window.searchSuggestIndex && !window.searchIndex) {
+window.searchIndex = window.searchSuggestIndex;
+} else {
+loadSearchSuggestions(function() {
+if (window.searchSuggestIndex && !window.searchIndex) window.searchIndex = window.searchSuggestIndex;
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+});
+return;
+}
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
 document.head.appendChild(script);
 }
 function loadSearchSuggestions(callback) {
-if (window.searchSuggestIndex) { if (callback) callback(); return; }
-if (searchSuggestionsLoaded) { if (callback) setTimeout(callback, 50); return; }
+if (window.searchSuggestIndex || window.searchIndex) {
+if (callback) callback();
+return;
+}
+if (callback) suggestCallbacks.push(callback);
+if (searchSuggestionsLoaded) return;
 searchSuggestionsLoaded = true;
 let script = document.createElement('script');
 script.src = '/search-suggest-data.js';
-script.onload = function() { if (callback) callback(); };
-script.onerror = function() { searchSuggestionsLoaded = false; if (callback) callback(); };
+script.onload = function() {
+const cbs = suggestCallbacks.slice();
+suggestCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
+script.onerror = function() {
+searchSuggestionsLoaded = false;
+const cbs = suggestCallbacks.slice();
+suggestCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
 document.head.appendChild(script);
 }
 function executeSearch() {
-let val = document.getElementById('searchInput').value;
-if(val.trim() !== "") {
+let input = document.getElementById('searchInput');
+let val = input ? input.value.trim() : '';
+if (val !== "") {
+hideSearchSuggestions();
+if (typeof performSearch === 'function') {
+const url = new URL(window.location.href);
+url.searchParams.set('search', val);
+window.history.pushState({}, '', url.pathname + '?' + url.searchParams.toString());
+performSearch(val);
+} else {
 window.location.href = '/index.html?search=' + encodeURIComponent(val);
+}
 }
 }
 function handleSearch(e) {
@@ -837,8 +908,8 @@ function generateCard(p) {
 let discount = Math.ceil(((p.regular_price - p.final_price) / p.regular_price) * 100);
 if (isNaN(discount)) discount = 0;
 let htmlSafeName = String(p.name||'').replace(/"/g, '&quot;');
-let jsSafeName = htmlSafeName.replace(/\/g, "\\").replace(/'/g, "\'");
-let jsSafeDesc = p.seo_desc ? String(p.seo_desc).replace(/"/g, '&quot;').replace(/\/g, "\\").replace(/'/g, "\'") : '';
+let jsSafeName = htmlSafeName.split(String.fromCharCode(92)).join("").split(String.fromCharCode(39)).join("");
+let jsSafeDesc = p.seo_desc ? String(p.seo_desc).replace(/"/g, "&quot;").split(String.fromCharCode(92)).join("").split(String.fromCharCode(39)).join("") : "";
 let freeBadge = Number(p.final_price||0)>=5000 ? '<div class="text-[9px] font-black text-emerald-800 bg-emerald-50 border border-emerald-200 rounded px-1.5 py-0.5 mb-1 inline-flex items-center gap-1 w-fit"><i class="fas fa-truck-fast text-[8px]"></i> FREE DELIVERY + 5% OFF</div>' : (Number(p.final_price||0)>=3000 ? '<div class="text-[9px] font-black text-amber-900 bg-amber-50 border border-amber-200 rounded px-1.5 py-0.5 mb-1 inline-flex items-center gap-1 w-fit"><i class="fas fa-tags text-[8px]"></i> 5% OFF UNLOCKED</div>' : '<div class="text-[9px] font-semibold text-gray-500 mb-1">5% Off Rs 3,000+ • Free Del Rs 5,000+</div>');
 return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'"><button onclick="toggleWishlist('${jsSafeName}', ${p.final_price}, '${p.image}', event)" class="absolute top-2 right-2 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500 text-sm"></i></button><button onclick="event.stopPropagation(); quickView('${jsSafeName}', ${p.final_price}, '${p.image}', '${jsSafeDesc}', '${p.slug}')" class="absolute top-2 right-12 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-eye text-[#087443] text-sm"></i></button><button data-compare-slug="${p.slug}" onclick="toggleCompare('${jsSafeName}', ${p.final_price}, '${p.image}', '${p.slug}', '${p.category}', event)" class="absolute top-2 right-24 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 transition z-10"><i class="fas fa-code-compare text-[#087443] text-xs"></i></button>
 ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#087443] text-white text-[10px] font-black px-2 py-1 rounded z-10 shadow-md">-${discount}% OFF</div>` : ''}

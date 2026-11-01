@@ -253,6 +253,12 @@ updateCartBadge();
 function updateCartBadge() {
 let cart = getCart();
 let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+if (cartCount === 0 && window.location.search.includes('buy_now=true')) {
+try {
+const bn = JSON.parse(localStorage.getItem('asm_buy_now') || 'null');
+if (bn && bn.name && Number(bn.price) > 0) cartCount = Number(bn.qty) || 1;
+} catch(e) {}
+}
 document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
 }
 function _withSelectedVar(name) {
@@ -330,11 +336,27 @@ if (typeof renderCart === 'function') renderCart();
 function buyNow(name, price, image, event, slug) {
 if(event) event.stopPropagation();
 const fullName = _withSelectedVar(name);
-const item = {name: fullName, price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1, variation: window.selectedAsmVar || ''};
+const numPrice = parseFloat(price) || 0;
+const item = {name: fullName, price: numPrice, image: image || '', slug: slug || '', qty: 1, bundleDiscount: 0, flashEligible: false, variation: window.selectedAsmVar || ''};
 if (!item.name || item.price <= 0) { showToast('Product information is unavailable.', 'fa-exclamation-circle', 'red'); return; }
 asmTrackEvent('InitiateCheckout', {content_name: fullName, value: item.price, currency: 'PKR'});
-try { localStorage.setItem('asm_buy_now', JSON.stringify(item)); } catch(e) {}
-window.location.href = '/checkout.html?buy_now=true';
+try {
+localStorage.setItem('asm_buy_now', JSON.stringify(item));
+let cart = getCart();
+let existing = cart.find(x => x.name === fullName);
+if (!existing) {
+cart.push(item);
+saveCart(cart);
+}
+} catch(e) {}
+const q = new URLSearchParams({
+buy_now: 'true',
+product: fullName,
+price: String(numPrice),
+image: String(image || ''),
+slug: String(slug || '')
+});
+window.location.href = '/checkout.html?' + q.toString();
 }
 function getWishlist() {
 return JSON.parse(localStorage.getItem('asm_wishlist')) || [];
@@ -630,31 +652,80 @@ setTimeout(() => cartIcon.classList.remove('scale-125'), 200);
 }
 }
 let searchLoaded = false;
+let searchCallbacks = [];
 let searchSuggestionsLoaded = false;
+let suggestCallbacks = [];
 function loadSearchData(callback) {
-if (window.searchIndex) { if (callback) callback(); return; }
-if (searchLoaded) { if (callback) setTimeout(callback, 80); return; }
+if (window.searchIndex && Array.isArray(window.searchIndex)) {
+if (callback) callback();
+return;
+}
+if (callback) searchCallbacks.push(callback);
+if (searchLoaded) return;
 searchLoaded = true;
 let script = document.createElement('script');
 script.src = '/search-data.js';
-script.onload = function() { if (callback) callback(); };
-script.onerror = function() { searchLoaded = false; if (callback) callback(); };
+script.onload = function() {
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) { console.error(e); } });
+};
+script.onerror = function() {
+searchLoaded = false;
+// Fallback to searchSuggestIndex if available
+if (window.searchSuggestIndex && !window.searchIndex) {
+window.searchIndex = window.searchSuggestIndex;
+} else {
+loadSearchSuggestions(function() {
+if (window.searchSuggestIndex && !window.searchIndex) window.searchIndex = window.searchSuggestIndex;
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+});
+return;
+}
+const cbs = searchCallbacks.slice();
+searchCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
 document.head.appendChild(script);
 }
 function loadSearchSuggestions(callback) {
-if (window.searchSuggestIndex) { if (callback) callback(); return; }
-if (searchSuggestionsLoaded) { if (callback) setTimeout(callback, 50); return; }
+if (window.searchSuggestIndex || window.searchIndex) {
+if (callback) callback();
+return;
+}
+if (callback) suggestCallbacks.push(callback);
+if (searchSuggestionsLoaded) return;
 searchSuggestionsLoaded = true;
 let script = document.createElement('script');
 script.src = '/search-suggest-data.js';
-script.onload = function() { if (callback) callback(); };
-script.onerror = function() { searchSuggestionsLoaded = false; if (callback) callback(); };
+script.onload = function() {
+const cbs = suggestCallbacks.slice();
+suggestCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
+script.onerror = function() {
+searchSuggestionsLoaded = false;
+const cbs = suggestCallbacks.slice();
+suggestCallbacks = [];
+cbs.forEach(fn => { try { fn(); } catch(e) {} });
+};
 document.head.appendChild(script);
 }
 function executeSearch() {
-let val = document.getElementById('searchInput').value;
-if(val.trim() !== "") {
+let input = document.getElementById('searchInput');
+let val = input ? input.value.trim() : '';
+if (val !== "") {
+hideSearchSuggestions();
+if (typeof performSearch === 'function') {
+const url = new URL(window.location.href);
+url.searchParams.set('search', val);
+window.history.pushState({}, '', url.pathname + '?' + url.searchParams.toString());
+performSearch(val);
+} else {
 window.location.href = '/index.html?search=' + encodeURIComponent(val);
+}
 }
 }
 function handleSearch(e) {
@@ -831,11 +902,17 @@ if(saved)return [saved];
 }catch(e){}
 const name=u.get('product')||'',price=Number(u.get('price'))||0,image=u.get('image')||'',slug=u.get('slug')||'';
 const fallback=normalizeCheckoutItem({name,price,image,slug,qty:1});
-return fallback?[fallback]:[];
+if(fallback)return [fallback];
 }
 let cart=[];
 try{cart=JSON.parse(localStorage.getItem('asm_cart')||'[]');}catch(e){cart=[];}
-return Array.isArray(cart)?cart.map(normalizeCheckoutItem).filter(Boolean):[];
+const validCart=Array.isArray(cart)?cart.map(normalizeCheckoutItem).filter(Boolean):[];
+if(validCart.length)return validCart;
+try{
+const savedBn=normalizeCheckoutItem(JSON.parse(localStorage.getItem('asm_buy_now')||'null'));
+if(savedBn)return [savedBn];
+}catch(e){}
+return [];
 }
 function updateDeliveryEstimate(){
 const city=document.getElementById('citySelect')?.value||'';
@@ -849,9 +926,12 @@ const r=document.querySelector('input[name="Payment_Method"]:checked');
 if(!r)return;
 const adv=r.value==='Advance Payment';
 const d=document.getElementById('advancePaymentDetails'),c=document.getElementById('labelCOD'),a=document.getElementById('labelAdv');
-if(d)d.classList.toggle('hidden',!adv);
-if(a){a.classList.toggle('border-[#087443]',adv);a.classList.toggle('bg-red-50',adv);}
-if(c){c.classList.toggle('border-[#087443]',!adv);c.classList.toggle('bg-red-50',!adv);}
+if(d){
+if(adv){d.classList.remove('hidden');d.style.display='block';}
+else{d.classList.add('hidden');d.style.display='none';}
+}
+if(a){a.classList.toggle('border-[#087443]',adv);a.classList.toggle('bg-emerald-50',adv);a.classList.toggle('border-gray-200',!adv);}
+if(c){c.classList.toggle('border-[#087443]',!adv);c.classList.toggle('bg-red-50',!adv);c.classList.toggle('border-gray-200',adv);}
 renderCart();
 }
 function applyCoupon(){
@@ -938,8 +1018,7 @@ lines.push(
 '• GRAND TOTAL TO COLLECT: Rs '+t.total,
 '========================================='
 );
-return lines.join('
-');
+return lines.join(String.fromCharCode(10));
 }
 function updateCheckoutWhatsApp(){
 const t=buildCheckoutTotals();
@@ -996,7 +1075,21 @@ flashNote.innerHTML='<span>💡 Add <strong>Rs '+needDisc+'</strong> more for <s
 if(subEl)subEl.innerText='Rs '+t.subtotal;
 if(delEl)delEl.innerText='Rs '+t.delivery;
 if(totalEl)totalEl.innerText='Rs '+t.total;
-if(discRow){if(t.discount>0){discRow.classList.remove('hidden');if(discEl)discEl.innerText='- Rs '+t.discount;}else discRow.classList.add('hidden');}
+if(discRow){
+const dLbl=document.getElementById('discountLabel');
+if(t.discount>0){
+discRow.classList.remove('hidden');
+if(discEl)discEl.innerText='- Rs '+t.discount;
+if(dLbl){
+const parts=[];
+if(t.autoFivePercentEligible)parts.push('5% OFF Rs 3,000+');
+if(t.advBonusDiscount>0)parts.push('Rs 100 OFF Advance Pay');
+dLbl.innerText=parts.length?('Discount ('+parts.join(' + ')+')'):'Discount Applied';
+}
+}else{
+discRow.classList.add('hidden');
+}
+}
 const productText=t.items.map(i=>i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'\nProduct: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join('\n');
 const pf=document.getElementById('productField'),tf=document.getElementById('totalField');
 if(pf)pf.value=productText+'\nSubtotal: Rs '+t.subtotal+'\nDelivery Charges: Rs '+t.delivery+'\nDiscount: Rs '+t.discount+'\nGrand Total: Rs '+t.total+'\nPayment Method: '+t.payment;
@@ -1027,13 +1120,10 @@ const custAddress=rawAddress + (custLandmark ? ' (Landmark: ' + custLandmark + '
 asmTrackEvent('Purchase', {value: t.total, currency: 'PKR', transaction_id: orderId});
 const custEmail=(document.getElementById('emailAddr')?.value||'').trim();
 const custNotes=(document.getElementById('orderNotes')?.value||'').trim();
-const itemizedProducts=t.items.map((i,idx)=>(idx+1)+'. '+i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'
-Link: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join('
-');
+const itemizedProducts=t.items.map((i,idx)=>(idx+1)+'. '+i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?String.fromCharCode(10)+'   Link: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join(String.fromCharCode(10));
 const fullOrderReport=buildFullOrderSummaryText(orderId, t);
 const total='Rs '+t.total;
-const productLinksStr=t.items.map(i=>i.slug?'https://www.asmveo.com/product/'+i.slug+'.html':'').filter(Boolean).join('
-');
+const productLinksStr=t.items.map(i=>i.slug?'https://www.asmveo.com/product/'+i.slug+'.html':'').filter(Boolean).join(String.fromCharCode(10));
 const pf=document.getElementById('productField'),tf=document.getElementById('totalField');
 if(pf)pf.value=fullOrderReport;
 if(tf)tf.value=total;
