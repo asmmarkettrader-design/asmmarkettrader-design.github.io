@@ -1218,6 +1218,12 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function updateCartBadge() {{
             let cart = getCart();
             let cartCount = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+            if (cartCount === 0 && window.location.search.includes('buy_now=true')) {{
+                try {{
+                    const bn = JSON.parse(localStorage.getItem('asm_buy_now') || 'null');
+                    if (bn && bn.name && Number(bn.price) > 0) cartCount = Number(bn.qty) || 1;
+                }} catch(e) {{}}
+            }}
             document.querySelectorAll('.cart-badge').forEach(el => el.innerText = cartCount);
         }}
 
@@ -1302,11 +1308,27 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         function buyNow(name, price, image, event, slug) {{
             if(event) event.stopPropagation();
             const fullName = _withSelectedVar(name);
-            const item = {{name: fullName, price: parseFloat(price) || 0, image: image || '', slug: slug || '', qty: 1, variation: window.selectedAsmVar || ''}};
+            const numPrice = parseFloat(price) || 0;
+            const item = {{name: fullName, price: numPrice, image: image || '', slug: slug || '', qty: 1, bundleDiscount: 0, flashEligible: false, variation: window.selectedAsmVar || ''}};
             if (!item.name || item.price <= 0) {{ showToast('Product information is unavailable.', 'fa-exclamation-circle', 'red'); return; }}
             asmTrackEvent('InitiateCheckout', {{content_name: fullName, value: item.price, currency: 'PKR'}});
-            try {{ localStorage.setItem('asm_buy_now', JSON.stringify(item)); }} catch(e) {{}}
-            window.location.href = '/checkout.html?buy_now=true';
+            try {{
+                localStorage.setItem('asm_buy_now', JSON.stringify(item));
+                let cart = getCart();
+                let existing = cart.find(x => x.name === fullName);
+                if (!existing) {{
+                    cart.push(item);
+                    saveCart(cart);
+                }}
+            }} catch(e) {{}}
+            const q = new URLSearchParams({{
+                buy_now: 'true',
+                product: fullName,
+                price: String(numPrice),
+                image: String(image || ''),
+                slug: String(slug || '')
+            }});
+            window.location.href = '/checkout.html?' + q.toString();
         }}
 
         function getWishlist() {{ 
@@ -1611,32 +1633,81 @@ def get_html_header(title, categories_list=[], seo_desc="ASM VEO - Premium Onlin
         }}
 
         let searchLoaded = false;
+        let searchCallbacks = [];
         let searchSuggestionsLoaded = false;
+        let suggestCallbacks = [];
         function loadSearchData(callback) {{
-            if (window.searchIndex) {{ if (callback) callback(); return; }}
-            if (searchLoaded) {{ if (callback) setTimeout(callback, 80); return; }}
+            if (window.searchIndex && Array.isArray(window.searchIndex)) {{
+                if (callback) callback();
+                return;
+            }}
+            if (callback) searchCallbacks.push(callback);
+            if (searchLoaded) return;
             searchLoaded = true;
             let script = document.createElement('script');
             script.src = '/search-data.js';
-            script.onload = function() {{ if (callback) callback(); }};
-            script.onerror = function() {{ searchLoaded = false; if (callback) callback(); }};
+            script.onload = function() {{
+                const cbs = searchCallbacks.slice();
+                searchCallbacks = [];
+                cbs.forEach(fn => {{ try {{ fn(); }} catch(e) {{ console.error(e); }} }});
+            }};
+            script.onerror = function() {{
+                searchLoaded = false;
+                // Fallback to searchSuggestIndex if available
+                if (window.searchSuggestIndex && !window.searchIndex) {{
+                    window.searchIndex = window.searchSuggestIndex;
+                }} else {{
+                    loadSearchSuggestions(function() {{
+                        if (window.searchSuggestIndex && !window.searchIndex) window.searchIndex = window.searchSuggestIndex;
+                        const cbs = searchCallbacks.slice();
+                        searchCallbacks = [];
+                        cbs.forEach(fn => {{ try {{ fn(); }} catch(e) {{}} }});
+                    }});
+                    return;
+                }}
+                const cbs = searchCallbacks.slice();
+                searchCallbacks = [];
+                cbs.forEach(fn => {{ try {{ fn(); }} catch(e) {{}} }});
+            }};
             document.head.appendChild(script);
         }}
         function loadSearchSuggestions(callback) {{
-            if (window.searchSuggestIndex) {{ if (callback) callback(); return; }}
-            if (searchSuggestionsLoaded) {{ if (callback) setTimeout(callback, 50); return; }}
+            if (window.searchSuggestIndex || window.searchIndex) {{
+                if (callback) callback();
+                return;
+            }}
+            if (callback) suggestCallbacks.push(callback);
+            if (searchSuggestionsLoaded) return;
             searchSuggestionsLoaded = true;
             let script = document.createElement('script');
             script.src = '/search-suggest-data.js';
-            script.onload = function() {{ if (callback) callback(); }};
-            script.onerror = function() {{ searchSuggestionsLoaded = false; if (callback) callback(); }};
+            script.onload = function() {{
+                const cbs = suggestCallbacks.slice();
+                suggestCallbacks = [];
+                cbs.forEach(fn => {{ try {{ fn(); }} catch(e) {{}} }});
+            }};
+            script.onerror = function() {{
+                searchSuggestionsLoaded = false;
+                const cbs = suggestCallbacks.slice();
+                suggestCallbacks = [];
+                cbs.forEach(fn => {{ try {{ fn(); }} catch(e) {{}} }});
+            }};
             document.head.appendChild(script);
         }}
 
         function executeSearch() {{
-            let val = document.getElementById('searchInput').value;
-            if(val.trim() !== "") {{
-                window.location.href = '/index.html?search=' + encodeURIComponent(val);
+            let input = document.getElementById('searchInput');
+            let val = input ? input.value.trim() : '';
+            if (val !== "") {{
+                hideSearchSuggestions();
+                if (typeof performSearch === 'function') {{
+                    const url = new URL(window.location.href);
+                    url.searchParams.set('search', val);
+                    window.history.pushState({{}}, '', url.pathname + '?' + url.searchParams.toString());
+                    performSearch(val);
+                }} else {{
+                    window.location.href = '/index.html?search=' + encodeURIComponent(val);
+                }}
             }}
         }}
         
@@ -2176,7 +2247,7 @@ setTimeout(()=>location.replace(destination),2200);
         "terms.html": ("Terms & Conditions", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#087443] dark:text-white">Terms & Conditions</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Orders & Payments</h2><p>All orders are subject to availability. We accept Cash on Delivery (COD) only.</p><h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Delivery</h2><p>We deliver nationwide within 3-5 business days.</p></div></div>"""),
         "shipping-policy.html": ("Shipping Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#087443] dark:text-white">Shipping Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We offer nationwide shipping across Pakistan.</p><ul class="list-disc pl-6 space-y-2"><li>Delivery time is 3-5 business days for major cities.</li><li>Delivery time is 3-6 business days for remote areas.</li><li>Standard delivery charges are Rs 180.</li></ul></div></div>"""),
         "return-policy.html": ("Return Policy", """<div class="container mx-auto px-4 py-16 max-w-4xl"><h1 class="text-4xl font-extrabold mb-8 text-[#087443] dark:text-white">Return Policy</h1><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 dark:border-gray-700 space-y-6 text-gray-600 dark:text-gray-300 text-sm leading-relaxed"><p>We have a hassle-free 7-day return policy.</p><ul class="list-disc pl-6 space-y-2"><li>Product must be in its original condition and packaging.</li><li>Please contact us via WhatsApp to initiate a return.</li></ul></div></div>"""),
-        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#087443] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#087443]"><button onclick="trackLocalOrder()" class="bg-[#087443] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#065C35]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>window.addEventListener('load',()=>{const q=new URLSearchParams(location.search).get('id');if(q)document.getElementById('trackOrderInput').value=q});function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Submitted','Confirmed','Shipped','Delivered'];const rawSt=(o.status||'Submitted');const status=(rawSt==='Pending'?'Submitted':rawSt);const idx=Math.max(0,steps.indexOf(status));r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#087443]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">City: <strong>'+(o.city||'Pakistan')+'</strong> • Total: <strong>'+(o.total||'—')+'</strong></p></div>';}}</script></div>"""),
+        "track-order.html": ("Track Order", """<div class="container mx-auto px-4 py-16 max-w-4xl"><div class="text-center mb-10"><div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 flex items-center justify-center text-[#087443] text-3xl mb-4"><i class="fas fa-truck-fast"></i></div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3">Track Your Order</h1><p class="text-gray-600 dark:text-gray-300">Enter your ASM order ID to check the status saved on this device, or contact us on WhatsApp for live assistance.</p></div><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8"><div class="flex flex-col sm:flex-row gap-3"><input id="trackOrderInput" type="text" placeholder="Example: ASM-123456" class="flex-1 border-2 border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-[#087443]"><button onclick="trackLocalOrder()" class="bg-[#087443] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#065C35]">Track Order</button></div><div id="trackResult" class="mt-6"></div><div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700"><p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Need live help?</p><a href="https://wa.me/923425478683" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-600"><i class="fab fa-whatsapp"></i> Track via WhatsApp</a></div></div><script>window.addEventListener('load',()=>{const q=new URLSearchParams(location.search).get('id');if(q)document.getElementById('trackOrderInput').value=q});function trackLocalOrder(){const id=(document.getElementById('trackOrderInput').value||'').trim().toUpperCase();const r=document.getElementById('trackResult');if(!id){r.innerHTML='<p class="text-red-600 font-bold">Please enter your Order ID.</p>';return;}let orders=[];try{orders=JSON.parse(localStorage.getItem('asm_orders'))||[];}catch(e){}const o=orders.find(x=>String(x.orderId).toUpperCase()===id);if(!o){r.innerHTML='<div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800"><strong>Order not found on this device.</strong><br>For a live update, contact ASM VEO on WhatsApp with your Order ID.</div>';return;}const steps=['Submitted','Confirmed','Shipped','Delivered'];const rawSt=(o.status||'Submitted');const status=(rawSt==='Pending'?'Submitted':rawSt);const idx=Math.max(0,steps.indexOf(status));r.innerHTML='<div class="bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><div class="flex justify-between items-center gap-3 mb-5"><div><div class="text-xs text-gray-500">Order ID</div><div class="font-black text-gray-900 dark:text-white">'+o.orderId+'</div></div><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-black">'+status+'</span></div><div class="grid grid-cols-4 gap-2">'+steps.map((s,i)=>'<div class="text-center"><div class="h-2 rounded-full '+(idx>=i?'bg-[#087443]':'bg-gray-200')+'"></div><div class="text-[10px] font-bold mt-2 text-gray-600">'+s+'</div></div>').join('')+'</div><p class="mt-5 text-sm text-gray-600 dark:text-gray-300">City: <strong>'+(o.city||'Pakistan')+'</strong> • Total: <strong>'+(o.total||'—')+'</strong></p></div>';}</script></div>"""),
         "account.html": ("My Account", """<div class="container mx-auto px-4 py-12 max-w-5xl"><div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 border border-gray-200 dark:border-gray-700"><div class="text-center mb-8"><i class="fas fa-user-circle text-5xl text-[#087443]"></i><h1 class="text-3xl font-black text-gray-900 dark:text-white mt-3">My ASM VEO Account</h1><p class="text-gray-500 mt-2">Save your details and view your order history on this device.</p></div><form id="accountForm" class="grid md:grid-cols-2 gap-4"><input id="accName" required placeholder="Full Name" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accEmail" type="email" placeholder="Email" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accPhone" required placeholder="03XXXXXXXXX" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><input id="accAddress" placeholder="Default Delivery Address" class="border rounded-xl p-3 dark:bg-gray-700 dark:text-white"><button class="md:col-span-2 bg-[#087443] text-white py-3 rounded-xl font-bold">Save Profile</button></form><div class="mt-8 bg-gray-50 dark:bg-gray-700 rounded-2xl p-5"><h2 class="font-black text-xl mb-3 text-gray-900 dark:text-white">Recent Orders</h2><div id="accountOrders" class="space-y-3"></div></div><p class="text-xs text-gray-400 mt-5">This static-site account uses browser storage and is not a server-authenticated login.</p></div><script>function renderAccount(){let u=JSON.parse(localStorage.getItem('asm_account')||'null');if(u){accName.value=u.name||'';accEmail.value=u.email||'';accPhone.value=u.phone||'';accAddress.value=u.address||''}let os=JSON.parse(localStorage.getItem('asm_orders')||'[]');accountOrders.innerHTML=os.length?os.slice(0,10).map(o=>'<div class="flex items-center justify-between gap-3 p-3 bg-white dark:bg-gray-800 rounded-xl"><span class="font-bold">'+o.orderId+'</span><span>'+o.total+'</span><a class="text-[#087443] font-bold text-xs" href="/track-order.html?id='+encodeURIComponent(o.orderId)+'">Track</a></div>').join(''):'<p class="text-gray-500">No local orders yet.</p>'}accountForm.addEventListener('submit',e=>{e.preventDefault();localStorage.setItem('asm_account',JSON.stringify({name:accName.value,email:accEmail.value,phone:accPhone.value,address:accAddress.value}));renderAccount();alert('Profile saved successfully.')});window.addEventListener('load',renderAccount)</script></div>"""),
         "compare.html": ("Compare Products", """<div class="container mx-auto px-4 py-16 max-w-6xl"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8"><div><h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">Compare Products</h1><p class="text-gray-600 dark:text-gray-300 mt-2">Compare up to 4 products side by side.</p></div><button onclick="clearCompare();renderComparePage();" class="border border-gray-300 dark:border-gray-600 px-5 py-2.5 rounded-xl font-bold text-sm">Clear All</button></div><div id="comparePageContent"></div><script>function renderComparePage(){let items=[];try{items=JSON.parse(localStorage.getItem('asm_compare'))||[];}catch(e){}const box=document.getElementById('comparePageContent');if(!items.length){box.innerHTML='<div class="bg-white dark:bg-gray-800 rounded-3xl p-12 text-center border border-gray-200 dark:border-gray-700"><i class="fas fa-code-compare text-6xl text-gray-300 mb-5"></i><h2 class="text-2xl font-black text-gray-900 dark:text-white mb-2">Nothing to compare yet</h2><p class="text-gray-500 mb-6">Add products using the compare icon on product cards.</p><a href="/index.html#products" class="inline-block bg-[#087443] text-white px-6 py-3 rounded-xl font-bold">Browse Products</a></div>';return;}const esc=v=>String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const row=(label,fn)=>'<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black text-gray-700 dark:text-gray-300">'+label+'</td>'+items.map(p=>'<td class="p-5 text-center text-gray-600 dark:text-gray-300">'+fn(p)+'</td>').join('')+'</tr>';let html='<div class="overflow-x-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700"><table class="w-full min-w-[760px] text-sm"><thead><tr><th class="text-left p-5 bg-gray-50 dark:bg-gray-700">Feature</th>'+items.map(p=>'<th class="p-5 text-center bg-gray-50 dark:bg-gray-700"><img src="'+p.image+'" class="w-24 h-24 mx-auto object-contain rounded-xl" alt=""><div class="font-bold mt-2 text-gray-900 dark:text-white">'+esc(p.name)+'</div></th>').join('')+'</tr></thead><tbody>';html+=row('Price',p=>'<span class="text-[#087443] font-black text-lg">Rs '+p.price+'</span>');html+=row('Category',p=>esc(p.category));html+=row('Availability',p=>'<span class="text-green-600 font-bold"><i class="fas fa-check-circle"></i> In Stock</span>');html+=row('Delivery',p=>'3–5 business days');html+=row('Returns',p=>'7-day returns');html+='<tr class="border-t border-gray-100 dark:border-gray-700"><td class="p-5 font-black">Action</td>'+items.map(p=>'<td class="p-5 text-center"><a href="/product/'+p.slug+'.html" class="inline-block bg-[#087443] text-white px-4 py-2 rounded-lg font-bold">View Product</a></td>').join('')+'</tr></tbody></table></div>';box.innerHTML=html;}window.addEventListener('load',renderComparePage);</script></div>"""),
         "404.html": ("Finding Product...", smart_404_html),
@@ -2287,7 +2358,7 @@ setTimeout(()=>location.replace(destination),2200);
                     const waConfirm = document.getElementById('waConfirmOrderBtn');
                     if (waConfirm) {
                         const msg = matchedOrd && matchedOrd.Complete_Order_Summary
-                            ? ("Hi ASM VEO! Please confirm my order for Priority Dispatch:\n\n" + matchedOrd.Complete_Order_Summary)
+                            ? ("Hi ASM VEO! Please confirm my order for Priority Dispatch: " + matchedOrd.Complete_Order_Summary)
                             : ("Hi ASM VEO! Please confirm my Order ID: " + oId + " for fast dispatch.");
                         waConfirm.href = "https://wa.me/923425478683?text=" + encodeURIComponent(msg);
                     }
@@ -3985,9 +4056,9 @@ def process_woocommerce_csv():
     
     search_index_json = json.dumps([{
         "name": p['name'], "slug": p['slug'], "category": p['category'], "brand": p.get('brand', infer_brand(p['name'])),
-        "final_price": p['final_price'], "regular_price": p['regular_price'], "image": p['image'], "rating": p.get('rating'), "stock": p.get('stock', True),
+        "final_price": p['final_price'], "regular_price": p['regular_price'], "image": p['image'], "stock": p.get('stock', True),
         "discount": math.ceil(((p['regular_price']-p['final_price'])/p['regular_price'])*100) if p['regular_price'] else 0
-    } for p in products_list])
+    } for p in products_list], ensure_ascii=True, separators=(",", ":"))
     
     with open("output/search-data.js", "w", encoding="utf-8") as f: 
         f.write(f"window.searchIndex = {search_index_json};")
@@ -4789,8 +4860,8 @@ def process_woocommerce_csv():
                     let discount = Math.ceil(((p.regular_price - p.final_price) / p.regular_price) * 100);
                     if (isNaN(discount)) discount = 0;
                     let htmlSafeName = String(p.name||'').replace(/"/g, '&quot;');
-                    let jsSafeName = htmlSafeName.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
-                    let jsSafeDesc = p.seo_desc ? String(p.seo_desc).replace(/"/g, '&quot;').replace(/\\/g, "\\\\").replace(/'/g, "\\'") : '';
+                    let jsSafeName = htmlSafeName.split(String.fromCharCode(92)).join("").split(String.fromCharCode(39)).join("");
+                    let jsSafeDesc = p.seo_desc ? String(p.seo_desc).replace(/"/g, "&quot;").split(String.fromCharCode(92)).join("").split(String.fromCharCode(39)).join("") : "";
                     let freeBadge = Number(p.final_price||0)>=5000 ? '<div class="text-[9px] font-black text-emerald-800 bg-emerald-50 border border-emerald-200 rounded px-1.5 py-0.5 mb-1 inline-flex items-center gap-1 w-fit"><i class="fas fa-truck-fast text-[8px]"></i> FREE DELIVERY + 5% OFF</div>' : (Number(p.final_price||0)>=3000 ? '<div class="text-[9px] font-black text-amber-900 bg-amber-50 border border-amber-200 rounded px-1.5 py-0.5 mb-1 inline-flex items-center gap-1 w-fit"><i class="fas fa-tags text-[8px]"></i> 5% OFF UNLOCKED</div>' : '<div class="text-[9px] font-semibold text-gray-500 mb-1">5% Off Rs 3,000+ • Free Del Rs 5,000+</div>');
                     return `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${{p.slug}}.html'">
                         <button onclick="toggleWishlist('${{jsSafeName}}', ${{p.final_price}}, '${{p.image}}', event)" class="absolute top-2 right-2 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-pink-50 transition z-10"><i class="fas fa-heart text-pink-500 text-sm"></i></button>
@@ -5417,8 +5488,6 @@ def process_woocommerce_csv():
                 
             home_html += "</div></div>"
         
-        home_html += "</div></div>"
-        
         home_html += generate_pagination_html(h_page, total_home_pages, "index")
         
         if h_page == 1:
@@ -5449,6 +5518,7 @@ def process_woocommerce_csv():
             """
             
             home_script = """
+            <script src="/search-data.js" defer></script>
             <script>
                 function clearSearchAndRestoreHome() {
                     const url = new URL(window.location.href);
@@ -5462,23 +5532,26 @@ def process_woocommerce_csv():
                     renderRecentlyViewed();
                 }
                 function performSearch(query) {
-                    if (typeof window.searchIndex === 'undefined') {
-                        loadSearchData(() => performSearch(query));
-                        return;
-                    }
                     query = String(query || '').trim();
                     if (!query) {
                         clearSearchAndRestoreHome();
                         return;
                     }
-                    let results = smartSearchResults(query);
-                    const relatedWords = getRelatedSearchKeywords(query, results, 12);
                     document.getElementById('homeTopSections')?.classList.add('hidden');
                     document.getElementById('defaultContent')?.classList.add('hidden');
                     document.getElementById('recentlyViewedSection')?.classList.add('hidden');
                     const srSection = document.getElementById('searchResultsSection');
                     if (srSection) srSection.classList.remove('hidden');
                     document.getElementById('searchResultsHeading').innerText = 'Search Results for "' + query + '"';
+                    if (typeof window.searchIndex === 'undefined' && typeof window.searchSuggestIndex === 'undefined') {
+                        document.getElementById('searchResultsCount').innerText = 'Loading matching products...';
+                        const wrapLoad = document.getElementById('searchResultsGridWrap');
+                        if (wrapLoad) wrapLoad.innerHTML = '<div class="bg-white rounded-2xl border p-12 text-center text-[#087443] font-bold"><i class="fas fa-spinner fa-spin text-3xl mb-3"></i><p>Searching products for "' + escapeHtml(query) + '"...</p></div>';
+                        loadSearchData(() => performSearch(query));
+                        return;
+                    }
+                    let results = smartSearchResults(query);
+                    const relatedWords = getRelatedSearchKeywords(query, results, 12);
                     document.getElementById('searchResultsCount').innerText = results.length + ' matching products found in Pakistan';
                     
                     const relBox = document.getElementById('searchRelatedWords');
@@ -5497,7 +5570,7 @@ def process_woocommerce_csv():
                         let discount = Math.ceil(((p.regular_price - p.final_price) / p.regular_price) * 100);
                         if (isNaN(discount)) discount = 0;
                         let htmlSafeName = String(p.name || '').replace(/"/g, '&quot;');
-                        let jsSafeName = htmlSafeName.replace(/\\\\/g, "\\\\\\\\").replace(/'/g, "\\\\'");
+                        let jsSafeName = htmlSafeName.split(String.fromCharCode(92)).join("").split(String.fromCharCode(39)).join("");
                         let isStock = p.stock !== false;
                         html += `<div class="product-card reveal active bg-white dark:bg-gray-800 rounded-2xl shadow-sm hover:shadow-lg border border-[#E3ECE6] overflow-hidden flex flex-col relative cursor-pointer" onclick="window.location.href='/product/${p.slug}.html'">
                             ${discount > 0 ? `<div class="absolute top-2 left-2 bg-[#087443] text-white text-[9px] font-black px-2 py-0.5 rounded z-10 shadow">-${discount}% OFF</div>` : ''}
@@ -5536,9 +5609,7 @@ def process_woocommerce_csv():
                 if (searchQuery) {
                     const si = document.getElementById('searchInput');
                     if (si) si.value = searchQuery;
-                    document.getElementById('homeTopSections')?.classList.add('hidden');
-                    document.getElementById('defaultContent')?.classList.add('hidden');
-                    loadSearchData(() => performSearch(searchQuery));
+                    performSearch(searchQuery);
                 }
                 
                 function renderRecentlyViewed() {
@@ -5572,7 +5643,8 @@ def process_woocommerce_csv():
             </script>
             """
             home_html += home_script
-            
+        # Close #defaultContent and #products AFTER pagination, Shop by City, and Customer Reviews
+        home_html += "</div></div>"
         home_html += get_html_footer()
         
         file_name = "index.html" if h_page == 1 else f"index-{h_page}.html"
@@ -5866,11 +5938,17 @@ function getCheckoutItems(){
         }catch(e){}
         const name=u.get('product')||'',price=Number(u.get('price'))||0,image=u.get('image')||'',slug=u.get('slug')||'';
         const fallback=normalizeCheckoutItem({name,price,image,slug,qty:1});
-        return fallback?[fallback]:[];
+        if(fallback)return [fallback];
     }
     let cart=[];
     try{cart=JSON.parse(localStorage.getItem('asm_cart')||'[]');}catch(e){cart=[];}
-    return Array.isArray(cart)?cart.map(normalizeCheckoutItem).filter(Boolean):[];
+    const validCart=Array.isArray(cart)?cart.map(normalizeCheckoutItem).filter(Boolean):[];
+    if(validCart.length)return validCart;
+    try{
+        const savedBn=normalizeCheckoutItem(JSON.parse(localStorage.getItem('asm_buy_now')||'null'));
+        if(savedBn)return [savedBn];
+    }catch(e){}
+    return [];
 }
 function updateDeliveryEstimate(){
     const city=document.getElementById('citySelect')?.value||'';
@@ -5884,9 +5962,12 @@ function togglePaymentDetails(){
     if(!r)return;
     const adv=r.value==='Advance Payment';
     const d=document.getElementById('advancePaymentDetails'),c=document.getElementById('labelCOD'),a=document.getElementById('labelAdv');
-    if(d)d.classList.toggle('hidden',!adv);
-    if(a){a.classList.toggle('border-[#087443]',adv);a.classList.toggle('bg-red-50',adv);}
-    if(c){c.classList.toggle('border-[#087443]',!adv);c.classList.toggle('bg-red-50',!adv);}
+    if(d){
+        if(adv){d.classList.remove('hidden');d.style.display='block';}
+        else{d.classList.add('hidden');d.style.display='none';}
+    }
+    if(a){a.classList.toggle('border-[#087443]',adv);a.classList.toggle('bg-emerald-50',adv);a.classList.toggle('border-gray-200',!adv);}
+    if(c){c.classList.toggle('border-[#087443]',!adv);c.classList.toggle('bg-red-50',!adv);c.classList.toggle('border-gray-200',adv);}
     renderCart();
 }
 function applyCoupon(){
@@ -5973,7 +6054,7 @@ function buildFullOrderSummaryText(orderId, t){
         '• GRAND TOTAL TO COLLECT: Rs '+t.total,
         '========================================='
     );
-    return lines.join('\n');
+    return lines.join(String.fromCharCode(10));
 }
 function updateCheckoutWhatsApp(){
     const t=buildCheckoutTotals();
@@ -6030,7 +6111,21 @@ function renderCart(){
     if(subEl)subEl.innerText='Rs '+t.subtotal;
     if(delEl)delEl.innerText='Rs '+t.delivery;
     if(totalEl)totalEl.innerText='Rs '+t.total;
-    if(discRow){if(t.discount>0){discRow.classList.remove('hidden');if(discEl)discEl.innerText='- Rs '+t.discount;}else discRow.classList.add('hidden');}
+    if(discRow){
+        const dLbl=document.getElementById('discountLabel');
+        if(t.discount>0){
+            discRow.classList.remove('hidden');
+            if(discEl)discEl.innerText='- Rs '+t.discount;
+            if(dLbl){
+                const parts=[];
+                if(t.autoFivePercentEligible)parts.push('5% OFF Rs 3,000+');
+                if(t.advBonusDiscount>0)parts.push('Rs 100 OFF Advance Pay');
+                dLbl.innerText=parts.length?('Discount ('+parts.join(' + ')+')'):'Discount Applied';
+            }
+        }else{
+            discRow.classList.add('hidden');
+        }
+    }
     const productText=t.items.map(i=>i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'\\nProduct: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join('\\n');
     const pf=document.getElementById('productField'),tf=document.getElementById('totalField');
     if(pf)pf.value=productText+'\\nSubtotal: Rs '+t.subtotal+'\\nDelivery Charges: Rs '+t.delivery+'\\nDiscount: Rs '+t.discount+'\\nGrand Total: Rs '+t.total+'\\nPayment Method: '+t.payment;
@@ -6061,10 +6156,10 @@ async function submitCheckoutOrder(e){
     asmTrackEvent('Purchase', {value: t.total, currency: 'PKR', transaction_id: orderId});
     const custEmail=(document.getElementById('emailAddr')?.value||'').trim();
     const custNotes=(document.getElementById('orderNotes')?.value||'').trim();
-    const itemizedProducts=t.items.map((i,idx)=>(idx+1)+'. '+i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?'\n   Link: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join('\n');
+    const itemizedProducts=t.items.map((i,idx)=>(idx+1)+'. '+i.qty+'x '+i.name+' (Unit Rs '+i.price+', Line Rs '+(i.price*i.qty)+')'+(i.slug?String.fromCharCode(10)+'   Link: https://www.asmveo.com/product/'+encodeURIComponent(i.slug)+'.html':'')).join(String.fromCharCode(10));
     const fullOrderReport=buildFullOrderSummaryText(orderId, t);
     const total='Rs '+t.total;
-    const productLinksStr=t.items.map(i=>i.slug?'https://www.asmveo.com/product/'+i.slug+'.html':'').filter(Boolean).join('\n');
+    const productLinksStr=t.items.map(i=>i.slug?'https://www.asmveo.com/product/'+i.slug+'.html':'').filter(Boolean).join(String.fromCharCode(10));
     const pf=document.getElementById('productField'),tf=document.getElementById('totalField');
     if(pf)pf.value=fullOrderReport;
     if(tf)tf.value=total;
